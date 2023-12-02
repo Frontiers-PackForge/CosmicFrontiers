@@ -23,6 +23,8 @@
 	notify_amadron_offer_updates = true
 	#Should Pressure Chambers show air particle effects inside themselves when pressurized?
 	pressure_chamber_particles = true
+	#Should the Jackhammer continually show a HUD indicating break modes other than basic single-block? If false, the mode HUD will show only when switching modes
+	jackhammer_hud = true
 
 [armor]
 	#Intensity of the FOV modification when using Pneumatic Leggings speed boost: 0.0 for no FOV modification, higher values zoom out more.  Note: non-zero values may cause FOV clashes with other mods.

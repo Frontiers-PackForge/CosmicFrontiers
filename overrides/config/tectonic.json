@@ -1,0 +1,4 @@
+{
+  "__": "Legacy mode should only be enabled for upgraded Tectonic v1 worlds to v2. Once a world is upgraded, turn off legacy mode.",
+  "legacy_mode": false
+}

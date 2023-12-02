@@ -1,0 +1,28 @@
+{
+  "mob": {
+    "classic_cockatrices": "modern",
+    "classic_moas": "modern",
+    "better_aechor_plants": true
+  },
+  "item": {
+    "swet_ball_type": "gel"
+  },
+  "nature": {
+    "alternate_enchanted_grass": true,
+    "better_skyroots": true,
+    "blue_icestone": true,
+    "classic_blight": "modern",
+    "better_aerclouds": true,
+    "better_saplings": true,
+    "better_crystal_leaves": true,
+    "better_flowers": true
+  },
+  "use_jappafied_textures": false,
+  "gui": {
+    "smelter_menu_type": "modern",
+    "menu_panorama": true
+  },
+  "dungeon": {
+    "dungeon_type": "ancient"
+  }
+}

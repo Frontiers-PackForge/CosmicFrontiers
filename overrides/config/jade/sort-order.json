@@ -69,6 +69,9 @@
   "pneumaticcraft:tube_module": null,
   "pneumaticcraft:entity": null,
   "pneumaticcraft:camo": null,
+  "supplementaries:present": null,
+  "supplementaries:safe": null,
+  "supplementaries:hat_stand": null,
   "waystones:waystone": null,
   "pneumaticcraft:pneumatic": null,
   "pneumaticcraft:semiblock": null,
@@ -80,9 +83,7 @@
   "gtceu:workable_provider": null,
   "gtceu:controllable_provider": null,
   "gtceu:recipe_logic_provider": null,
-  "supplementaries:present": null,
-  "supplementaries:safe": null,
-  "supplementaries:hat_stand": null,
+  "ars_nouveau:mob_jar": null,
   "minecraft:brewing_stand": null,
   "minecraft:beehive": null,
   "minecraft:command_block": null,
@@ -137,6 +138,5 @@
   "ae2:part_name": null,
   "ae2:part_icon": null,
   "ae2:part_tooltip": null,
-  "ae2:part_mod_name": null,
-  "ars_nouveau:mob_jar": null
+  "ae2:part_mod_name": null
 }
