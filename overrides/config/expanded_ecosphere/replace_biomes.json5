@@ -1,0 +1,22 @@
+/*
+Expanded Ecosphere Replace Config
+
+===========
+This config is only for replacing biomes, the main Expanded Ecosphere config is in the other file.
+*/
+{
+	// Enable biome replacing
+	"enableBiomes": false,
+	/* Enter all Expanded Ecosphere biomes that should be replaced into this map.
+	   As the key put the biome you want to replace and as value the biome you want to replace it with.
+	   Here is an example:
+	   "replace": {
+	       "minecraft:plains": "minecraft:basalt_deltas",
+	       "wythers:bayou": "minecraft:river"
+	   }
+	   Only biomes which are added trough Expanded Ecosphere will work.
+	   Also on compatible mode you can only replace Expanded Ecosphere biomes and only replace them with non vanilla biomes.
+	   If a biome doesn't exist, the game will crash!
+	*/
+	"replace": { }
+}

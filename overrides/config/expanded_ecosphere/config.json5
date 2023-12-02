@@ -1,0 +1,31 @@
+/*
+Expanded Ecosphere Main Config
+
+===========
+Discord: https://discord.com/invite/yJng7sC44x
+Modrinth: https://modrinth.com/mod/expanded-ecosphere
+CurseForge: https://www.curseforge.com/minecraft/mc-mods/expanded-ecosphere
+*/
+{
+	// Whether updates should be announced in chat when entering a world
+	"showUpdates": true,
+	// Whether to announce important updates even if the above setting is disabled.
+	"showBigUpdates": true,
+	// Selects the background block in the config screen. Only makes sense in-game.
+	"backGroundBlock": {
+		"Name": "minecraft:calcite"
+	},
+	/* Type DEFAULT or COMPATIBLE, for changing modes.
+	   COMPATIBLE allows compat with Terralith and disabling biomes in banned_biomes.json5,
+	   but it requires Terrablender and is a bit unstable.
+	*/
+	"mode": "DEFAULT",
+	/* Whether to force Minecraft to generate Large Biomes or not.
+	   This option forces Minecraft to generate Large Biomes, this setting was introduced,
+	   because the default presets do not work (correctly).
+	   This option will probably not work with Compatible mode, or other biome mods.
+	*/
+	"forceLargeBiomes": false,
+	// Removes underground ores (andesite, diorite, granite, gravel and dirt)
+	"removeOreBlobs": true
+}

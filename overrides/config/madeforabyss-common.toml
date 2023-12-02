@@ -1,0 +1,48 @@
+#The limit beyond which you cannot go back up.
+#Range: > -512
+returnLimit = -512
+#The limit beyond which sanity mechanics take effect.
+#Range: > -512
+insanityLimit = 0
+insanityEnabled = true
+#The limit beyond which hunger gain is increased slightly.
+#Range: > -512
+hungerLimit = -50
+hungerEnabled = true
+#The limit beyond which you cannot sleep.
+#Range: > -512
+insomniaLimit = -100
+insomniaEnabled = true
+#The limit beyond which you get weakness and enemies get strength.
+#Range: > -512
+powerCreepLimit = -150
+powerCreepEnabled = true
+#The limit beyond which you need a gas mask to breathe.
+#Range: > -512
+toxicGasLimit = -200
+toxicGasEnabled = true
+#The limit beyond which you cannot regenerate health, and crops cannot grow.
+#Range: > -512
+barrenLimit = -250
+barrenEnabled = true
+#The limit beyond which golems and magma cubes >:( can spawn.
+#Range: > -512
+golemSpawnLimit = -300
+golemSpawnEnabled = true
+#The limit beyond which you begin to take damage when not wearing copper-braced armor.
+#Range: > -512
+crushingDepthLimit = -350
+crushingDepthEnabled = true
+#The limit beyond which blazes spawn around the player, regardless of light level. Mobs below this height also spawn as a nether equivalent.
+#Range: > -512
+blazeSpawnLimit = -400
+blazeSpawnEnabled = true
+#The limit beyond which you instantly ignite unless wearing netherite armor.
+#Range: > -512
+burningLimit = -450
+burningEnabled = true
+#The limit beyond which you take massive damage when not wearing netherite-braced armor.
+#Range: > -512
+instantCrushLimit = -500
+instantCrushEnabled = true
+

@@ -1,0 +1,5 @@
+#Removes the "Allow Cheats" button in the "Open to LAN" screen, if set to "true".
+removeButtonInOpenToLANScreen = true
+#Removes the "Allow Cheats" button in the "Create New World" screen, if set to "true".
+removeButtonInCreateNewWorldScreen = false
+
