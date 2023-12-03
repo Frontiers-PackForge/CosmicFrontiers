@@ -1,0 +1,19 @@
+
+["Entity Settings"]
+	#List of entities that will insulate the player when riding them
+	#The rate at which the player's temperature changes is divided by the resistance value
+	#Format: ["entity_id", coldResistance, hotResistance]
+	"Insulated Mounts" = []
+	#Defines how often a goat will try to grow its fur, the growth cooldown after shearing, and the chance of it succeeding
+	#Format: [ticks, cooldown, chance]
+	"Goat Fur Growth Timings" = [1200, 2400, 0.2]
+
+["Mob Spawning"]
+	#Defines the biomes that Chameleons can spawn in
+	#Format: [["biome_id", weight], ["biome_id", weight], etc...]
+	"Chameleon Spawn Biomes" = [["minecraft:bamboo_jungle", 80], ["minecraft:jungle", 80], ["minecraft:sparse_jungle", 35], ["minecraft:desert", 1], ["biomesoplenty:lush_desert", 3], ["biomesoplenty:rainforest", 40], ["biomesoplenty:rocky_rainforest", 15], ["biomesoplenty:fungal_jungle", 10], ["biomesoplenty:tropics", 8], ["biomesoplenty:outback", 2], ["terralith:red_oasis", 3], ["terralith:desert_oasis", 3], ["terralith:tropical_jungle", 80], ["terralith:arid_highlands", 1.5], ["terralith:rocky_jungle", 80], ["terralith:brushland", 1.5]]
+	#Defines additional biomes that goats can spawn in
+	#Format: [["biome_id", weight], ["biome_id", weight], etc...]
+	#Not affected by the "Increase Goat Spawns" option
+	"Goat Spawn Biomes" = [["minecraft:frozen_peaks", 8], ["minecraft:jagged_peaks", 8], ["minecraft:snowy_slopes", 8], ["minecraft:meadow", 3], ["minecraft:windswept_hills", 6], ["minecraft:windswept_forest", 6], ["minecraft:windswept_gravelly_hills", 4], ["minecraft:grove", 5], ["minecraft:stony_peaks", 8], ["biomesoplenty:boreal_forest", 5], ["biomesoplenty:jade_cliffs", 4], ["biomesoplenty:crag", 3], ["terralith:blooming_plateau", 5], ["terralith:rocky_mountains", 6], ["terralith:alpine_grove", 6], ["terralith:scarlet_mountains", 4], ["terralith:windswept_spires", 16], ["terralith:cloud_forest", 4], ["terralith:haze_mountain", 4]]
+

@@ -1,0 +1,46 @@
+
+#Format: [["dimension_1", temperature1, *units], ["dimension_2", temperature2, *units]... etc]
+#Common dimension IDs: minecraft:overworld, minecraft:the_nether, minecraft:the_end
+[Dimensions]
+	#Applies an offset to the world's temperature across an entire dimension
+	"Dimension Temperature Offsets" = [["minecraft:the_nether", 1.0], ["minecraft:the_end", -0.1]]
+	#Overrides existing dimension temperatures & offsets
+	#Also overrides temperatures of all biomes in the dimension
+	"Dimension Temperatures" = []
+
+#Format: [["biome_1", tempLow, tempHigh, *units], ["biome_2", tempLow, tempHigh, *units]... etc]
+#temp-low: The temperature of the biome at midnight
+#temp-high: The temperature of the biome at noon
+#units: Optional. The units of the temperature ("C" or "F". Defaults to MC units)
+[Biomes]
+	#Applies an offset to the temperature of a biome
+	"Biome Temperature Offsets" = []
+	#Defines the temperature of a biome, overriding existing biome temperatures & offsets.
+	"Biome Temperatures" = [["minecraft:soul_sand_valley", 53, 53, "F"], ["minecraft:old_growth_birch_forest", 58, 72, "F"], ["minecraft:river", 60, 70, "F"], ["minecraft:swamp", 72, 84, "F"], ["minecraft:savanna", 70, 95, "F"], ["minecraft:savanna_plateau", 76, 98, "F"], ["minecraft:windswept_savanna", 67, 90, "F"], ["minecraft:taiga", 44, 62, "F"], ["minecraft:snowy_taiga", 19, 48, "F"], ["minecraft:old_growth_pine_taiga", 48, 62, "F"], ["minecraft:old_growth_spruce_taiga", 48, 62, "F"], ["minecraft:desert", 48, 115, "F"], ["minecraft:stony_shore", 50, 64, "F"], ["minecraft:snowy_beach", 38, 52, "F"], ["minecraft:snowy_slopes", 24, 38, "F"], ["minecraft:windswept_forest", 48, 66, "F"], ["minecraft:frozen_peaks", 15, 33, "F"], ["minecraft:warm_ocean", 67, 76, "F"], ["minecraft:deep_frozen_ocean", 56, 65, "F"], ["minecraft:jungle", 76, 87, "F"], ["minecraft:bamboo_jungle", 76, 87, "F"], ["minecraft:badlands", 84, 120, "F"], ["minecraft:wooded_badlands", 80, 108, "F"], ["minecraft:eroded_badlands", 88, 120, "F"], ["minecraft:deep_dark", 63, 63, "F"], ["biomesoplenty:bayou", 67, 78, "F"], ["biomesoplenty:bog", 62, 73, "F"], ["biomesoplenty:fir_clearing", 56, 68, "F"], ["biomesoplenty:marsh", 76, 87, "F"], ["biomesoplenty:wetland", 63, 74, "F"], ["biomesoplenty:field", 64, 85, "F"], ["biomesoplenty:ominous_woods", 65, 72, "F"], ["biomesoplenty:coniferous_forest", 44, 58, "F"], ["biomesoplenty:seasonal_forest", 52, 64, "F"], ["biomesoplenty:pumpkin_patch", 57, 78, "F"], ["biomesoplenty:woodland", 67, 80, "F"], ["biomesoplenty:mediterranean_forest", 64, 78, "F"], ["biomesoplenty:dune_beach", 67, 78, "F"], ["biomesoplenty:rocky_rainforest", 73, 86, "F"], ["biomesoplenty:old_growth_woodland", 65, 78, "F"], ["biomesoplenty:forested_field", 64, 78, "F"], ["biomesoplenty:fungal_jungle", 73, 86, "F"], ["biomesoplenty:highland", 57, 70, "F"], ["biomesoplenty:highland_moor", 54, 68, "F"], ["biomesoplenty:grassland", 58, 82, "F"], ["biomesoplenty:clover_patch", 56, 78, "F"], ["biomesoplenty:jade_cliffs", 57, 70, "F"], ["biomesoplenty:lush_desert", 72, 94, "F"], ["biomesoplenty:dryland", 67, 97, "F"], ["biomesoplenty:maple_woods", 58, 68, "F"], ["biomesoplenty:mystic_grove", 65, 72, "F"], ["biomesoplenty:orchard", 58, 78, "F"], ["biomesoplenty:prairie", 66, 82, "F"], ["biomesoplenty:origin_valley", 65, 80, "F"], ["biomesoplenty:snowy_coniferous_forest", 28, 48, "F"], ["biomesoplenty:snowy_fir_clearing", 32, 51, "F"], ["biomesoplenty:snowy_maple_woods", 32, 48, "F"], ["biomesoplenty:spider_nest", 75, 75, "F"], ["biomesoplenty:volcanic_plains", 82, 95, "F"], ["biomesoplenty:volcano", 94, 120, "F"], ["biomesoplenty:wooded_wasteland", 78, 95, "F"], ["terralith:moonlight_valley", 57, 76, "F"], ["terralith:rocky_mountains", 45, 73, "F"], ["terralith:blooming_plateau", 49, 78, "F"], ["terralith:alpine_grove", 16, 53, "F"], ["terralith:yellowstone", 47, 68, "F"], ["terralith:forested_highlands", 43, 70, "F"], ["terralith:temperate_highlands", 54, 80, "F"], ["terralith:amethyst_rainforest", 69, 84, "F"], ["terralith:sandstone_valley", 78, 114, "F"], ["terralith:ancient_sands", 83, 130, "F"], ["terralith:arid_highlands", 74, 102, "F"], ["terralith:volcanic_crater", 96, 162, "F"], ["terralith:volcanic_peaks", 76, 122, "F"], ["terralith:basalt_cliffs", 76, 122, "F"], ["terralith:birch_taiga", 40, 62, "F"], ["terralith:brushland", 64, 89, "F"], ["terralith:bryce_canyon", 72, 110, "F"], ["terralith:caldera", 58, 71, "F"], ["terralith:cloud_forest", 38, 58, "F"], ["terralith:desert_canyon", 73, 121, "F"], ["terralith:desert_spires", 60, 121, "F"], ["terralith:orchid_swamp", 62, 81, "F"], ["terralith:fractured_savanna", 65, 92, "F"], ["terralith:savanna_badlands", 68, 99, "F"], ["terralith:granite_cliffs", 65, 85, "F"], ["terralith:granite_cliffs", 65, 85, "F"], ["terralith:haze_mountain", 62, 74, "F"], ["terralith:highlands", 62, 74, "F"], ["terralith:lavender_valley", 59, 76, "F"], ["terralith:lavender_forest", 56, 75, "F"], ["terralith:red_oasis", 58, 94, "F"], ["terralith:shield", 48, 68, "F"], ["terralith:shield_clearing", 28, 80, "F"], ["terralith:steppe", 44, 78, "F"], ["terralith:warped_mesa", 66, 84, "F"]]
+
+["Block Temperature"]
+	#Allows for adding simple BlockTemps without the use of Java mods
+	#Format (All temperatures are in Minecraft units):
+	#[["block-ids", <temperature>, <range (max 7)>, <*true/false: falloff>, <*max effect>, <*predicates>], [etc...], [etc...]]
+	#(* = optional) (1 °MC = 42 °F/ 23.33 °C)
+	#
+	#Arguments:
+	#block-ids: multiple IDs can be used by separating them with commas (i.e: "minecraft:torch,minecraft:wall_torch")
+	#temperature: the temperature of the block, in Minecraft units
+	#falloff: the block is less effective as distance increases
+	#max effect: the maximum temperature change this block can cause to a player (even with multiple blocks)
+	#predicates: the state that the block has to be in for the temperature to be applied (lit=true for a campfire, for example).
+	#Multiple predicates can be used by separating them with commas (i.e: "lit=true,waterlogged=false")
+	BlockTemps = [["minecraft:soul_fire", -0.476, 7, true, 0.8], ["minecraft:fire", 0.476, 7, true, 0.8], ["minecraft:magma_block", 0.5, 3, true, 0.6], ["minecraft:soul_campfire", -0.476, 3, true, 0.6, "lit=true"], ["minecraft:ice", -0.15, 4, true, 0.5], ["minecraft:packed_ice", -0.25, 4, true, 1.0], ["minecraft:blue_ice", -0.35, 4, true, 1.0], ["gtceu:cupronickel_coil_block", 66, 4, true, 1.0, "active=true"]]
+	#The maximum range of blocks' area of effect
+	#Note: This will not change anything unless blocks are configured to utilize the expanded range
+	#This value is capped at 16 for performance reasons
+	#Range: 1 ~ 16
+	"Block Range" = 7
+
+[Misc]
+	#The amount of temperature normalization from being deep underground
+	#0.0 = no insulation, 1.0 = full insulation
+	#Range: 0.0 ~ 1.0
+	"Cave Insulation Strength" = 1.0
+
