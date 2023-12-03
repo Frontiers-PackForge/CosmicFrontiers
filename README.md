@@ -1,4 +1,4 @@
-![Frontiers-Banner](https://github.com/Ghostipedia/GregTechFrontiers/assets/46772882/f6b446c2-45f0-44c4-9c9e-9cc7697e4163)
+![Frontiers-BannerNew](https://github.com/Ghostipedia/CosmicFrontiers/assets/46772882/765e06d8-72ed-4733-b94d-a09e00b4ccc1)
 # What is GregTech: Frontiers
 
 ## GregTech: Frontiers is a 1.20.1 mod pack centered around interactions between many mods and GregTech CEu Modern.
