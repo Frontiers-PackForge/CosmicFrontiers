@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "forgotten_memories"
+	group: "3189B6C95DDE02C3"
+	icon: {
+		Count: 1b
+		id: "minecraft:written_book"
+		tag: {
+			AntiqueInk: 1b
+			generation: 3
+			pages: [ ]
+			resolved: 1b
+		}
+	}
+	id: "7F9FD1B33BC2641F"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Forgotten Memories"
+}

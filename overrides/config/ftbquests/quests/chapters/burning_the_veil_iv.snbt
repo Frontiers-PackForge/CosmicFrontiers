@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "burning_the_veil_iv"
+	group: "3EC91AC584FC0BC3"
+	icon: "gtceu:alloy_blast_smelter"
+	id: "435C67C6C672A96B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Burning the Veil [IV]"
+}

@@ -50,7 +50,7 @@ Difficulty = 2
 ["Grace Period Details"]
 	#The number of ticks after the player spawns during which they are immune to temperature effects
 	#Range: > 0
-	"Grace Period Length" = 6000
+	"Grace Period Length" = 18000
 	#Enables the grace period
 	"Grace Period Enabled" = true
 

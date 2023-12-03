@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "safe_travels__ev"
+	group: "473CC3AD40832CD0"
+	icon: "ad_astra:desh_ingot"
+	id: "6048ED915FA8486C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Safe Travels - [EV]"
+}

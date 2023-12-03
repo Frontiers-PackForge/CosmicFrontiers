@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dominance"
+	group: "67BE70C11B6638CD"
+	icon: "arseng:creative_source_cell"
+	id: "2249A5F5EA3FB267"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Dominance"
+}

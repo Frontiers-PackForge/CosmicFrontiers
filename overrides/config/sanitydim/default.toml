@@ -1,0 +1,221 @@
+
+#Sanity configuration
+#NOTE: all sanity values are measured in percentages (i.e. 40.0 is equal to 40% of sanity bar)
+#NOTE: each subsequent usage of an active source or item has its effectiveness multiplied by (timeSinceLastUsage / cooldown) (capped at 1.0)
+[sanity]
+	#For balancing purposes: the effectiveness of all positive sanity sources will be multiplied by this number
+	#Range: 1.401298464324817E-45 ~ 3.4028234663852886E38
+	positive_multiplier = 1.0
+	#For balancing purposes: the effectiveness of all negative sanity sources will be multiplied by this number
+	#Range: 1.401298464324817E-45 ~ 3.4028234663852886E38
+	negative_multiplier = 1.0
+
+	#Configuration for passive sanity sources
+	[sanity.passive]
+		#This value will be added to sanity each second regardless of any other factors
+		#Range: -100.0 ~ 100.0
+		passive = 0.0
+		#Sanity gain per second during rainy weather or in water
+		#Range: -100.0 ~ 100.0
+		raining = -0.2
+		#Players' sanity will start getting affected with food levels at and below this threshold (in half-drumsticks)
+		#Range: 0 ~ 20
+		hunger_threshold = 8
+		#Players with food levels at and below <hunger_threshold> gain this amount of sanity per second
+		#Range: -100.0 ~ 100.0
+		hungry = -0.2
+		#Players will gain this amount of sanity per second for 5 seconds after looking at an enderman
+		#Range: -100.0 ~ 100.0
+		ender_man_anger = -5.0
+		#Players will gain this amount of sanity per second while being near their pets
+		#Range: -100.0 ~ 100.0
+		pet = 0.15
+		#Players will gain this amount of sanity per second while being near any monsters
+		#This value is doubled if the monster is aggressive towards the player
+		#Range: -100.0 ~ 100.0
+		monster = -0.1
+		#Players will gain this amount of sanity per second while being in the dark
+		#Range: -100.0 ~ 100.0
+		darkness = -0.20
+		#Maximum light level considered to be darkness (inclusive)
+		#Range: 0 ~ 15
+		darkness_threshold = 4
+		#Players will gain this amount of sanity per second while being in the light
+		#Range: -100.0 ~ 100.0
+		lightness = 0.1
+		#Minimum light level considered to be lightness (inclusive)
+		#Range: 0 ~ 15
+		lightness_threshold = 8
+		#Players who are stuck in blocks (such as cobweb) and have their movement restricted gain this amount of sanity per second
+		#Range: -100.0 ~ 100.0
+		block_stuck = -0.09
+		#Players moving on a dirt path or a carpet receive this amount of sanity per second
+		#Range: -100.0 ~ 100.0
+		dirt_path = 0.09
+		#Nearby jukebox playing a pleasant melody gives this amount of sanity per second
+		#Range: -100.0 ~ 100.0
+		jukebox_pleasant = 0.08
+		#Nearby jukebox playing an unsettling melody gives this amount of sanity per second (this takes priority over pleasant melodies)
+		#Range: -100.0 ~ 100.0
+		jukebox_unsettling = -0.11
+		#Define a list of blocks that affect sanity of players standing near them
+		#A block should be included as follows: block_registry_name[property1=value1,property2=value2];A;B;C
+		#Where A is how much sanity is gained per second, B is a radius in blocks,
+		#C is whether a block needs to be naturally generated (not placed by player) (true/false)
+		#Supports boolean block state properties (can be omitted together with brackets)
+		#Prefix with TAG_ and follow with a tag registry name to define all blocks with the tag
+		#NOTE: not everything may work correctly with any configuration, e.g. multiblocks like tall flowers and beds; needs testing
+		blocks = ["minecraft:campfire[lit=true];0.1;4;false"]
+
+	#Configuration for active sanity sources
+	[sanity.active]
+		#Sleeping restores this amount of sanity
+		#Range: -100.0 ~ 100.0
+		sleeping = 50.0
+		#Sleeping cooldown (see notes above), real time in seconds
+		#Range: 0.0 ~ 3.4028234663852886E38
+		sleeping_cd = 1200.0
+		#Players will gain sanity based on the damage they take from any sources with the ratio of 1 to this number
+		#Range: -100.0 ~ 100.0
+		hurt_ratio = -1.0
+		#Spawning a baby chicken by throwing an egg restores this amount of sanity
+		#Range: -100.0 ~ 100.0
+		baby_chicken_spawn = 5.0
+		#Spawning a baby chicken cooldown (see notes above), real time in seconds
+		#Range: 0.0 ~ 3.4028234663852886E38
+		baby_chicken_spawn_cd = 300.0
+		#Earning an advancement gives this amount of sanity
+		#Range: -100.0 ~ 100.0
+		advancement = 20.0
+		#Breeding two animals together gives this amount of sanity
+		#Range: -100.0 ~ 100.0
+		animal_breeding = 9.0
+		#Breeding animals cooldown (see notes above), real time in seconds
+		#Range: 0.0 ~ 3.4028234663852886E38
+		animal_breeding_cd = 600.0
+		#Players gain this amount of sanity for every point of damage dealt to peaceful animals (incl. neutral ones)
+		#This value is doubled for baby animals
+		#Range: -100.0 ~ 100.0
+		animal_hurt_ratio = -0
+		#Players gain this amount of sanity upon their pets' death
+		#Range: -100.0 ~ 100.0
+		pet_death = -60.0
+		#Players gain this amount of sanity upon successfully trading with a villager
+		#Range: -100.0 ~ 100.0
+		villager_trade = 20.0
+		#Villager trade cooldown (see notes above), real time in seconds
+		#Range: 0.0 ~ 3.4028234663852886E38
+		villager_trade_cd = 600.0
+		#Shearing an animal gives this amount of sanity
+		#Range: -100.0 ~ 100.0
+		shearing = 5.0
+		#Shearing animals cooldown (see notes above), real time in seconds
+		#Range: 0.0 ~ 3.4028234663852886E38
+		shearing_cd = 300.0
+		#Consuming food gives this amount of sanity for every half-drumstick the meal restores
+		#Range: -100.0 ~ 100.0
+		eating = 0.8
+		#Eating cooldown (see notes above), real time in seconds
+		#Range: 0.0 ~ 3.4028234663852886E38
+		eating_cd = 300.0
+		#Fishing an item gives this amount of sanity
+		#Range: -100.0 ~ 100.0
+		fishing = 1.3
+		#Fishing cooldown (see notes above), real time in seconds
+		#Range: 0.0 ~ 3.4028234663852886E38
+		fishing_cd = 0.0
+		#Trampling a farmland gives this amount of sanity
+		#Range: -100.0 ~ 100.0
+		farmland_trample = -2.0
+		#Potting a flower gives this amount of sanity
+		#Range: -100.0 ~ 100.0
+		potting_flower = 4.0
+		#Potting a flower cooldown (see notes above), real time in seconds
+		#Range: 0.0 ~ 3.4028234663852886E38
+		potting_flower_cd = 300.0
+		#Teleporting to another dimension gives this amount of sanity
+		#Range: -100.0 ~ 100.0
+		changed_dimension = -10.0
+		#Players gain this amount of sanity upon being struck by lightning
+		#Range: -100.0 ~ 100.0
+		struck_by_lightning = -30.0
+		#Define a list of items that will affect sanity upon their usage
+		#An item should be included as follows: item_registry_name;A;B
+		#Where A is how much sanity is gained upon usage and B is a custom category
+		#Items with the same categories share the same cooldown
+		#The sanity gained will be multiplied by (timeSinceLastUsage / categoryCooldown) capping at 1.0
+		items = ["minecraft:pufferfish;-5;0", "minecraft:poisonous_potato;-5;0", "minecraft:spider_eye;-5;0", "minecraft:rotten_flesh;-5;0", "minecraft:chorus_fruit;-3;0", "minecraft:ender_pearl;-1;0", "minecraft:honey_bottle;6;1", "minecraft:golden_carrot;7;1", "minecraft:golden_apple;8;1", "minecraft:enchanted_golden_apple;13;1"]
+		#Define a list of custom categories for items specified in <items>
+		#A category should be included as follows: A;B
+		#Where A is a category id (integer) and B is a cooldown (in seconds) all items in this category share
+		item_categories = ["0;0", "1;800.0"]
+		#Define a list of blocks that will affect sanity of players breaking them
+		#A block should be included as follows: block_registry_name;A;B;C;D
+		#Where A is how much sanity is gained upon breakage, B is a custom category,
+		#C is whether a block has to be naturally generated (not placed by players) (true/false),
+		#D is whether a block has to be mined with a correct tool (aka resources should drop) (true/false)
+		#Prefix with TAG_ and follow with a tag registry name to define all blocks with the tag
+		#Blocks with the same categories share the same cooldown
+		#The sanity gained will be multiplied by (timeSinceLastUsage / categoryCooldown) capping at 1.0
+		#NOTE: not everything may work correctly with any configuration, e.g. multiblocks like tall flowers and beds need testing
+		broken_blocks = ["minecraft:infested_stone;-8;0;false;false", "minecraft:infested_cobblestone;-8;0;false;false", "minecraft:infested_stone_bricks;-8;0;false;false", "minecraft:infested_cracked_stone_bricks;-8;0;false;false", "minecraft:infested_mossy_stone_bricks;-8;0;false;false", "minecraft:infested_chiseled_stone_bricks;-8;0;false;false", "minecraft:infested_deepslate;-8;0;false;false"]
+		#Define a list of custom categories for blocks specified in <broken_blocks>
+		#A category should be included as follows: A;B
+		#Where A is a category id (integer) and B is a cooldown (in seconds) all blocks in this category share
+		broken_block_categories = ["0;0"]
+
+	#Multiplayer configuration
+	[sanity.multiplayer]
+		#Being around players with sanity higher than 50% gives this amount of sanity per second
+		#Range: -100.0 ~ 100.0
+		sane_player_company = 0.05
+		#Being around players with sanity lower than 50% gives this amount of sanity per second
+		#Range: -100.0 ~ 100.0
+		insane_player_company = -0.12
+
+	#Entities configuration
+	[sanity.entity]
+		#Whether sane players should be able to see and battle inner entities
+		#Mobs will still be there server-side and will count towards passive sanity
+		#Players who are targeted by inner entities see them regardless
+		sane_see_inner_entities = false
+
+	#Client configuration
+	[sanity.client]
+		#Whether to render sanity postprocessing effects
+		render_post = false
+		#Whether to enable sanity sound effects
+		play_sounds = true
+		#Insanity ambience max volume
+		#Range: 0.0 ~ 1.0
+		insanity_volume = 0.2
+
+		#Sanity indicator configuration
+		[sanity.client.indicator]
+			#Whether to render sanity indicator
+			render = false
+			#Whether to twitch sanity indicator at low sanity levels
+			twitch = false
+			#Sanity indicator scale
+			#Range: 0.0 ~ 3.4028234663852886E38
+			scale = 1.0
+			#Sanity indicator location
+			#Allowed Values: HOTBAR_LEFT, HOTBAR_RIGHT, TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+			location = "HOTBAR_LEFT"
+
+		#Inner monologue configuration
+		[sanity.client.hints]
+			#Whether to render inner monologue/random thoughts
+			render = true
+			#Whether to twitch inner monologue/random thoughts at low sanity levels
+			twitch = true
+
+		#Blood tendrils overlay configuration
+		[sanity.client.blood_tendrils]
+			#Whether to render blood tendrils overlay
+			render = false
+			#Whether to flash blood tendrils overlay upon losing sanity in a short burst
+			short_burst_flash = false
+			#Whether to render blood tendrils overlay when passively losing sanity
+			render_passive = false
+

@@ -1,0 +1,16 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "forged_in_galefury"
+	group: "4135A2BA7EBD719E"
+	icon: {
+		Count: 1b
+		id: "botania:manasteel_ingot"
+		tag: { }
+	}
+	id: "2AF6C950A3B12568"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Forged in Galefury [MV]"
+}

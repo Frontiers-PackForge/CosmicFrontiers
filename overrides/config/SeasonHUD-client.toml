@@ -1,0 +1,37 @@
+
+["Configs for SeasonHUD"]
+
+	["Configs for SeasonHUD"."HUD:"]
+		#Enable the mod? 
+		# (true/false)
+		enable_mod = true
+		#Require the Calender item to be in the players inventory to show the HUD? 
+		# (true/false)
+		need_calendar = false
+		#The horizontal offset of the HUD when no minimap is installed (in pixels)
+		# Default is 0
+		hud_x_position = 0
+		#The vertical offset of the HUD when no minimap is installed (in pixels)
+		# Default is 0
+		hud_y_position = 0
+		#Part of the screen to display the HUD when no minimap is installed
+		# Default is TOP_LEFT
+		#Allowed Values: TOP_LEFT, TOP_CENTER, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+		hud_location = "TOP_LEFT"
+		#Show sub-season (i.e. Early Winter, Late Autumn) instead of basic season? 
+		# (true/false)
+		enable_show_sub_season = true
+		#Show the current day of the season/sub-season? 
+		# (true/false)
+		enable_show_day = true
+		#Show the Tropical seasons (Wet/Dry) in Tropical Biomes
+		# Will not change the season behavior
+		# (true/false)
+		enable_show_tropical_season = true
+		#Show the default SeasonHUD when the Minimap is hidden 
+		# (true/false)
+		enable_show_minimap_hidden = false
+		#Show above the Journeymap map, instead of below. 
+		# (true/false)
+		enable_above_map = false
+

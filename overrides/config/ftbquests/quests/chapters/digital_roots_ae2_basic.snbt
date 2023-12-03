@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "digital_roots_ae2_basic"
+	group: "4135A2BA7EBD719E"
+	icon: "ae2:energy_acceptor"
+	id: "0C28466180A127C3"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Digital Roots"
+}

@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "boiling_sludgepits__undergarden"
+	group: "533DAA16C8D9D30C"
+	icon: "undergarden:ink_mushroom"
+	id: "0868F04BAE3AC9C0"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Boiling Sludgepits"
+}

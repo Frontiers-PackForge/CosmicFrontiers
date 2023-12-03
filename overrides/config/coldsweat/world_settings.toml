@@ -44,3 +44,11 @@
 	#Range: 0.0 ~ 1.0
 	"Cave Insulation Strength" = 1.0
 
+#Format: [season-start, season-mid, season-end]
+#Applied as an offset to the world's temperature
+["Season Temperatures"]
+	Summer = [0.4, 0.6, 0.4]
+	Autumn = [0.2, 0, -0.2]
+	Winter = [-0.4, -0.6, -0.4]
+	Spring = [-0.2, 0, 0.2]
+

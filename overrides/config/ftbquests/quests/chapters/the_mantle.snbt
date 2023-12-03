@@ -1,0 +1,19 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_mantle"
+	group: "43A79D0106662C02"
+	icon: {
+		Count: 1b
+		id: "cold_sweat:soulspring_lamp"
+		tag: {
+			fuel: 64.0d
+			isOn: 1b
+		}
+	}
+	id: "2B7EB6D7A4E81221"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "The Mantle"
+}

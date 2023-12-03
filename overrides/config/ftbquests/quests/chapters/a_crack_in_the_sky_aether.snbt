@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "a_crack_in_the_sky_aether"
+	group: "4135A2BA7EBD719E"
+	icon: "minecraft:glowstone"
+	id: "0177AB58CEDC8C8D"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "A Crack in the Sky..."
+}

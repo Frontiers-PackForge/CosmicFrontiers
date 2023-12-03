@@ -1,0 +1,16 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "navigation_online"
+	group: "533DAA16C8D9D30C"
+	icon: {
+		Count: 1b
+		id: "ad_astra:tier_1_rocket"
+		tag: { }
+	}
+	id: "4BD032111E85E14A"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Navigation Online"
+}

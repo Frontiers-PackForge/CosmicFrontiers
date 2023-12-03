@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "worth_every_ingot"
+	group: "4B9C53F35CAB9BEE"
+	icon: "gtceu:large_maceration_tower"
+	id: "653B8423C4F4FB7B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "A Great Factory...  - [LUV]"
+}

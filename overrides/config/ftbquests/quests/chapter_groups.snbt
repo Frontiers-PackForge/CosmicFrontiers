@@ -1,0 +1,14 @@
+{
+	chapter_groups: [
+		{ id: "43A79D0106662C02", title: "Exoplanet 03S9 - \"Earth\"" }
+		{ id: "4135A2BA7EBD719E", title: "Atmosphere 03S9 - Aether" }
+		{ id: "533DAA16C8D9D30C", title: "Exorealm UG39O - UnderGarden" }
+		{ id: "473CC3AD40832CD0", title: "Moon 03S10 - Luna" }
+		{ id: "3EC91AC584FC0BC3", title: "[WARNING] CONTACT" }
+		{ id: "4B9C53F35CAB9BEE", title: "Exorealm EB31S - Everbright" }
+		{ id: "7295A11F0DD1E8D1", title: "Exoplanet 02S7 - \"Venus\"" }
+		{ id: "34809FA43B03812C", title: "Exorealm ED44Q - Everdawn" }
+		{ id: "3189B6C95DDE02C3", title: "Kether" }
+		{ id: "67BE70C11B6638CD", title: "One Perfect Memory" }
+	]
+}

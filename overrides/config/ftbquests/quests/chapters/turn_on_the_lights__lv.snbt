@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "turn_on_the_lights__lv"
+	group: "43A79D0106662C02"
+	icon: {
+		Count: 1b
+		id: "minecraft:light"
+		tag: {
+			BlockStateTag: {
+				level: "1"
+			}
+		}
+	}
+	id: "452F4ECA9A54FC8F"
+	order_index: 3
+	quest_links: [ ]
+	quests: [ ]
+	title: "Turn on the Lights - [LV]"
+}
