@@ -1,7 +1,7 @@
 ![Frontiers-BannerNew](https://github.com/Ghostipedia/CosmicFrontiers/assets/46772882/765e06d8-72ed-4733-b94d-a09e00b4ccc1)
-# What is GregTech: Frontiers
+# What is Cosmic Frontiers
 
-## GregTech: Frontiers is a 1.20.1 mod pack centered around interactions between many mods and GregTech CEu Modern.
+## Cosmic Frontiers is a 1.20.1 mod pack centered around interactions between many mods and GregTech CEu Modern.
 
 ### Heavily Inspired by 1.12.2 Modpacks such as
 
@@ -10,7 +10,7 @@
 * FTB Interactions
 * SuperSymmetry
 
-### What to expect playing GregTech: Frontiers
+### What to expect playing Cosmic Frontiers
 
 1. An in-depth questbook to help you along your way
 2. Plenty of Worldgen overhauls to make each world feel alive and varied
