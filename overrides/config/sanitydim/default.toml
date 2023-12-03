@@ -36,7 +36,7 @@
 		monster = -0.1
 		#Players will gain this amount of sanity per second while being in the dark
 		#Range: -100.0 ~ 100.0
-		darkness = -0.20
+		darkness = -0.2
 		#Maximum light level considered to be darkness (inclusive)
 		#Range: 0 ~ 15
 		darkness_threshold = 4
@@ -96,7 +96,7 @@
 		#Players gain this amount of sanity for every point of damage dealt to peaceful animals (incl. neutral ones)
 		#This value is doubled for baby animals
 		#Range: -100.0 ~ 100.0
-		animal_hurt_ratio = -0
+		animal_hurt_ratio = 0
 		#Players gain this amount of sanity upon their pets' death
 		#Range: -100.0 ~ 100.0
 		pet_death = -60.0
