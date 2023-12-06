@@ -193,12 +193,12 @@
 		#Sanity indicator configuration
 		[sanity.client.indicator]
 			#Whether to render sanity indicator
-			render = false
+			render = true
 			#Whether to twitch sanity indicator at low sanity levels
-			twitch = false
+			twitch = true
 			#Sanity indicator scale
 			#Range: 0.0 ~ 3.4028234663852886E38
-			scale = 1.0
+			scale = 0.75
 			#Sanity indicator location
 			#Allowed Values: HOTBAR_LEFT, HOTBAR_RIGHT, TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
 			location = "HOTBAR_LEFT"

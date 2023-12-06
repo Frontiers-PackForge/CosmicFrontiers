@@ -11,7 +11,7 @@
 
 ["Temperature display preferences"]
 	#Sets all temperatures to be displayed in Celsius
-	Celsius = false
+	Celsius = true
 	#Visually offsets the world temperature to better match the user's definition of "hot" and "cold"
 	#Range: > 0
 	"Temperature Offset" = 0

@@ -1,0 +1,14 @@
+
+#Game settings
+[settings]
+	#Should fisherman buy/sell items related to this mods items (Seafood and pearls)
+	fishermanBuyCDItems = true
+	#Should the Wandering Trader sell items in exchange for pearls?
+	wanderingTraderDealsPearls = true
+	#Should seafood only be able to be cooked through the Farmer's Delight pot?
+	cookInPot = true
+	#Minimum ticks before seafood can be gathered by the crab trap. Default = 4000
+	minTicks = 4000
+	#Maximum ticks before seafood can be gathered by the crab trap. Default = 8000
+	maxTicks = 8000
+

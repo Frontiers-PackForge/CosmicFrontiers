@@ -5,8 +5,164 @@
 	group: "43A79D0106662C02"
 	icon: "gtceu:prospector.lv"
 	id: "706EB66D1162963D"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 3.0d
+		hover: [ ]
+		image: "frontiers:textures/questimages/firststeps/bannerwide.png"
+		order: 9999
+		rotation: 0.0d
+		width: 9.438805970149254d
+		x: 5.500340136054405d
+		y: -3.833163265306137d
+	}]
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"Booting Emergency Logs"
+				""
+				""
+				"—----- Subject #1216 —-----"
+				""
+				""
+				""
+				"CELESTIAL BODY DETECTED, CALIBRATING ONE-WAY WORMHOLE…"
+				""
+				""
+				"VERDICT - GUILTY"
+				""
+				"SENTENCE - ETERNITY"
+				""
+				"LOCATION - SOL SYSTEM LOCATED WITHIN UNIVERSE #[ERROR]"
+				""
+				"TERMINATING CONTACT"
+				""
+				"{image:frontiers:textures/questimages/firststeps/firstbackground.png width:100 height:100 align:1}"
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:hsse_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4D96DE63E82D8EAA"
+			shape: "hexagon"
+			subtitle: "\"Paying the Ultimate Price\""
+			tasks: [{
+				id: "1AE9E7415B27B019"
+				type: "checkmark"
+			}]
+			title: "JUDGEMENT"
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2F6DBFCBBC3A0827"
+				"5693AA8924634F44"
+				"78DFF9184296F7F6"
+			]
+			id: "4276E47E7CF85DF0"
+			shape: "hexagon"
+			tasks: [{
+				id: "0BAFDCF44C5C750D"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			id: "423EB7A96CB261A3"
+			tasks: [{
+				id: "7E6F7A6878D4F4C7"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			id: "283EFEAA64080D4D"
+			tasks: [{
+				id: "0C78F1FCA1D28261"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"&lInfo&r: The natural environment mimics that of your home planet Earth. "
+				"Your scanner can help you locate rich deposits of ore. "
+				""
+				"As luck would have it, you were sent along in a sturdy capsule equipped with a set of essential tools that would prove incredibly useful in your journey."
+				""
+				"&6Our sensors have detected the presence of unidentified physical and psionic entities within the vicinity.&r"
+				""
+				"&4Exercise extreme caution.&r"
+			]
+			icon: "gtceu:prospector.lv"
+			id: "78DFF9184296F7F6"
+			rewards: [
+				{
+					id: "288FB56F6F1C79E3"
+					item: {
+						Count: 1b
+						id: "gtceu:prospector.lv"
+						tag: {
+							Charge: 100000L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "053320D905EF39AF"
+					item: {
+						Count: 1b
+						id: "gtceu:energy_crystal"
+						tag: {
+							Charge: 6400000L
+							DischargeMode: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "006D430FCB0F5666"
+				type: "checkmark"
+			}]
+			title: "Emergency Supplies"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["283EFEAA64080D4D"]
+			id: "5693AA8924634F44"
+			tasks: [{
+				id: "3CB25EF8CA3B7B1E"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["423EB7A96CB261A3"]
+			id: "2F6DBFCBBC3A0827"
+			tasks: [{
+				id: "03BC2763A183D3B3"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+	]
 	title: "First Steps"
 }
