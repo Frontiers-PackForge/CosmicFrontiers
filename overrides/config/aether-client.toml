@@ -11,13 +11,13 @@
 
 [Gui]
 	#Adds a button to the top right of the main menu screen to toggle between the Aether and vanilla menu
-	"Enables Aether menu button" = true
+	"Enables Aether menu button" = false
 	#Changes the background panorama into a preview of the latest played world
 	"Enables world preview" = false
 	#Adds a button to the top right of the main menu screen to toggle between the panorama and world preview
-	"Enables toggle world button" = true
+	"Enables toggle world button" = false
 	#Adds a button to the top right of the main menu screen to allow quick loading into a world if the world preview is enabled
-	"Enables quick load button" = true
+	"Enables quick load button" = false
 	#Determines that menu elements will align left if the menu's world preview is active, if true, this overrides 'Align menu elements left'
 	"Align menu elements left with world preview" = false
 	#Determines the default Aether menu style to switch to with the menu theme button

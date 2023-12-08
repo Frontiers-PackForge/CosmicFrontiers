@@ -3,7 +3,7 @@
 	#
 	# Should blue skies override the title screen panorama.
 	# Default: true
-	custom_panorama = true
+	custom_panorama = false
 	#
 	# Whether or not brightness should be capped when inside the dimensions for aesthetic purposes.
 	# Default: true

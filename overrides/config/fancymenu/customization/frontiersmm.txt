@@ -1,0 +1,176 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.TitleScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = config/fancymenu/assets/FMenu/background.png
+  action = texturizebackground
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = mid-left
+  x = 6
+  action = movebutton
+  y = 9
+}
+
+customization {
+  identifier = %id=376322%
+  orientation = mid-left
+  x = 6
+  action = movebutton
+  y = 51
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = mid-left
+  x = 69
+  action = movebutton
+  y = 51
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 137
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = mid-left
+  x = 6
+  action = movebutton
+  y = -12
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  orientation = mid-left
+  x = 48
+  action = movebutton
+  y = 51
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = mid-left
+  x = 108
+  action = movebutton
+  y = 30
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = mid-left
+  x = 27
+  action = movebutton
+  y = 51
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = mid-left
+  x = 6
+  action = movebutton
+  y = 30
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 186
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = f4f845ac-fe1f-4f79-a917-b68d4158ae711701890455249
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 2
+  width = 122
+  action = deep_customization_element:title_screen_branding
+  actionid = 0560fb48-d5fa-4e39-9f18-981f6f75d3001701890455254
+  y = 303
+  height = 50
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 411
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 6868f344-722f-4265-a181-75a6ee5dedd81701890455254
+  y = 335
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 423
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = eeb2458c-6836-45d5-966f-6580687b3f9c1701890455254
+  y = 188
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 79
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 3b7fa647-4458-47e4-b450-dc0bc858c1cc1701890455254
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = mid-left
+  splash_color = #ffff00
+  hidden = false
+  x = 176
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = 33e70bf6-2c8c-4994-8454-e6873672d3301701890455254
+  y = -46
+  splash_file_path = config/fancymenu/assets/FMenu/Splash.txt
+  height = 30
+}
+
+customization {
+  path = config/fancymenu/assets/FMenu/logo.png
+  orientation = top-left
+  x = 1
+  width = 259
+  action = addtexture
+  actionid = 1e3e0b16-698c-481d-a8e1-8118d42e16351701891653385
+  y = 6
+  height = 105
+}
+

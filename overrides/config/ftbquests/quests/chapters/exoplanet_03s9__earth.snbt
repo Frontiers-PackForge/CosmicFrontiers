@@ -78,21 +78,82 @@
 		}
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"This world hosts a wide variety of biome diversity; this also entails a variety of temperature locales that may be undesirable for your fragile body."
+				""
+				"Your body temperature is affected by several factors."
+				""
+				"&eThe Time of Day"
+				"Season"
+				"Blocks nearby"
+				"Being outside or indoors"
+				"Being Dry or Wet&r"
+				""
+				"{@pagebreak}"
+				""
+				"Your PDA(*HUD) shows two values for temperature; to the right is the environment's temperature. Being in too hot or cold of an environment will make your Body Temperature start to climb (color indicating if you are freezing or overheating); as you become more afflicted by the temperature around you, your body will begin to shut down in various ways, either restricting your movement or vision. "
+				""
+				""
+				"You can insulate yourself with armor, and apply layers to any armor in the game with the sewing table."
+				""
+				"Valid Insulators are"
+				""
+				"Leather - &5Well-rounded Insulation&r"
+				"Goat Fur - &bStrong Cold Insulation&r"
+				"Hoglin Hide - &cStrong Heat Insulation&r"
+				"Chameleon Molt - &aAdaptive Insulation which adjusted slowly over time&r"
+				""
+				"Potions &6completely nullify&r any negatives applied by heat/cold"
+			]
+			icon: "cold_sweat:thermometer"
 			id: "423EB7A96CB261A3"
 			tasks: [{
 				id: "7E6F7A6878D4F4C7"
 				type: "checkmark"
 			}]
+			title: "Keeping Warm and Cool"
 			x: 4.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"Your mental well-being is volatile and is the only reason you avoided execution on the spot back on Earth-Prime."
+				""
+				"With that comes a whole host of issues: the invasive thoughts and impulses your mind emanates, unfortunately, linked with Psionic disturbances across the planet. They are manifesting some less than pleasant creatures."
+				""
+				"{@pagebreak}"
+				"DO. NOT. LET. THE. VOICES. BECOME. REAL. THEY. CAN. CAUSE. &lREAL&r. HARM."
+				""
+				"&eSTAY IN THE LIGHT&r."
+				"&aSTAY FULL&r."
+				"&cDO NOT FALL ILL OR EXPERIENCE PROLONGED PERIODS OF DAMAGE&r."
+				"&lLISTEN. TO. YOUR. MIND.&r"
+			]
+			icon: "forbidden_arcanus:sanity_meter"
 			id: "283EFEAA64080D4D"
+			rewards: [{
+				id: "7760E9131F4D5AE3"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "sanitydim:garland"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Don't Starve 1.5"
 			tasks: [{
 				id: "0C78F1FCA1D28261"
 				type: "checkmark"
 			}]
+			title: "Staying Sane"
 			x: 6.0d
 			y: -1.0d
 		}

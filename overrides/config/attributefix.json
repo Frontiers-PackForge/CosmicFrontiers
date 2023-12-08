@@ -286,7 +286,7 @@
         "value": 1024
       }
     },
-    "ars_nouveau:ars_nouveau.perk.wixie": {
+    "forge:swim_speed": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -297,7 +297,7 @@
         "value": 1024
       }
     },
-    "forge:swim_speed": {
+    "ars_nouveau:ars_nouveau.perk.wixie": {
       "enabled": false,
       "min": {
         "default": 0,
