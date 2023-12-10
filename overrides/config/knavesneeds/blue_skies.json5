@@ -1,0 +1,25 @@
+{
+	/* This file controls values specifically for Blue Skies.
+	   Material modifiers are set to the base damage of each material's tier.
+	   Values are ints, meaning you cannot have values with a decimal point.
+	   Valid:
+	   - '5'
+	   
+	   Invalid:
+	   - '3.4'
+	*/
+	"AETERNIUM_MOD": 0,
+	"BLUEBRIGHT_WOOD_MOD": 0,
+	"CHAROITE_MOD": 0,
+	"CHERRY_WOOD_MOD": 0,
+	"DIOPSIDE_MOD": 0,
+	"DUSK_WOOD_MOD": 0,
+	"FROSTBRIGHT_WOOD_MOD": 0,
+	"HORIZONITE_MOD": 0,
+	"LUNAR_STONE_MOD": 0,
+	"LUNAR_WOOD_MOD": 0,
+	"MAPLE_WOOD_MOD": 0,
+	"PYROPE_MOD": 0,
+	"STARLIT_WOOD_MOD": 0,
+	"TURQUOISE_STONE_MOD": 0
+}

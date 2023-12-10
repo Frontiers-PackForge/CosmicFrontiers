@@ -236,19 +236,21 @@
 		{
 			dependencies: ["283EFEAA64080D4D"]
 			description: [
-				"FTB Ultimine is a powerful collection tool, allowing you to harvest a large area in various shapes"
+				"FTB: Ultimine is a powerful collection tool, allowing you to harvest a large area in various shapes"
 				""
 				""
 				"FTB:Ultimine &4&lDOES NOT&r work on GTCEU Ores, this functionality has been disabled to encourage Hammers and Miners. A few other blocks have also been blacklisted."
 			]
 			id: "5693AA8924634F44"
 			rewards: [{
-				id: "7E3D259CC4D09571"
+				id: "664924EA20390F14"
 				item: {
 					Count: 1b
-					id: "gtceu:diamond_mining_hammer"
+					id: "gtceu:iron_mining_hammer"
 					tag: {
 						Damage: 0
+						Modifier: "forbidden_arcanus:eternal"
+						Repair: 1b
 					}
 				}
 				type: "item"
@@ -267,20 +269,19 @@
 				title: "Gather Any Raw Ore"
 				type: "item"
 			}]
-			title: "FTB:Ultimine and You"
+			title: "FTB: Ultimine and You"
 			x: 6.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["423EB7A96CB261A3"]
-			description: ["Btw, This pack as FTB:Ultimine"]
+			description: ["Btw, This pack as FTB: Ultimine"]
 			icon: "minecraft:oak_log"
 			id: "2F6DBFCBBC3A0827"
 			subtitle: "You'll need this"
 			tasks: [{
-				count: 64L
-				icon: "minecraft:oak_log"
-				id: "4D12ABDBF60AFCA0"
+				icon: { Count: 64b, id: "minecraft:oak_log" }
+				id: "218AC08A1B16AEA4"
 				item: {
 					Count: 1b
 					id: "ftbfiltersystem:smart_filter"
@@ -288,7 +289,7 @@
 						"ftbfiltersystem:filter": "item_tag(minecraft:logs)"
 					}
 				}
-				title: "Get Any Wood"
+				title: "Any Logs"
 				type: "item"
 			}]
 			title: "Get Some Bi- I mean Wood"
@@ -300,13 +301,13 @@
 			description: [
 				"You'll need several of the tools listed below, here's some of their basic functions."
 				""
-				"&6Hammers&r fare used to make ingots into plates."
+				"&6Hammers&r are used to make ingots into plates."
 				""
-				"&6Wrenches&r are used to break gregtech blocks, as well as to set the output face of machines."
+				"&6Wrenches&r are used to break GregTech blocks, as well as to set the output face of machines."
 				""
 				"&6Screwdrivers&r are used to interact with machine covers."
 				""
-				"&6Wire cutters&r are used to cut plates into wires as well as connect wires/cables.q6 "
+				"&6Wire cutters&r are used to cut plates into wires as well as connect wires/cables."
 				""
 				"&6Files&r are used to make ingots into rods."
 				""

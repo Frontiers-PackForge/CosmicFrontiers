@@ -1,0 +1,15 @@
+{
+	/* This file controls values specifically for The Undergarden.
+	   Material modifiers are set to the base damage of each material's tier.
+	   Values are ints, meaning you cannot have values with a decimal point.
+	   Valid:
+	   - '5'
+	   
+	   Invalid:
+	   - '3.4'
+	*/
+	"CLOGGRUM_MOD": 0,
+	"FORGOTTEN_MOD": 0,
+	"FROSTSTEEL_MOD": 0,
+	"UTHERIUM_MOD": 0
+}

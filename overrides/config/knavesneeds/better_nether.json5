@@ -1,0 +1,15 @@
+{
+	/* This file controls values specifically for BetterNether.
+	   Material modifiers are set to the base damage of each material's tier.
+	   Values are ints, meaning you cannot have values with a decimal point.
+	   Valid:
+	   - '5'
+	   
+	   Invalid:
+	   - '3.4'
+	*/
+	"CINCINNASITE_MOD": 0,
+	"CINCINNASITE_DIAMOND_MOD": 0,
+	"NETHER_RUBY_MOD": 0,
+	"FLAMING_RUBY_MOD": 0
+}

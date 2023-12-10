@@ -152,10 +152,6 @@ event.shaped('gtceu:hp_steam_masonry_oven', [
   B: 'minecraft:blast_furnace',
   S: 'minecraft:smooth_stone', 
 })
-
-
-
-
 //Custom Recipe Handler? - Reference - Otherwise just dump the recipe in questions JSON into event.custom()
   let drying = (dryingoutput, dryingInput, duration) => {
     event.custom({"type": "integrateddynamics:drying_basin",

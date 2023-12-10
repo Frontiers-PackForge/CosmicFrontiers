@@ -1,0 +1,14 @@
+{
+	/* This file controls values specifically for Forbidden & Arcanus.
+	   Material modifiers are set to the base damage of each material's tier.
+	   Values are ints, meaning you cannot have values with a decimal point.
+	   Valid:
+	   - '5'
+	   
+	   Invalid:
+	   - '3.4'
+	*/
+	"DEORUM_MOD": 0,
+	"DRACO_ARCANUS_MOD": 0,
+	"REINFORCED_DEORUM_MOD": 0
+}

@@ -1,0 +1,56 @@
+# Server-specific configuration for FTB Ultimine
+# This file is meant for server administrators to control user behaviour.
+# Changes in this file currently require a server restart to take effect
+
+{
+	# This is an advanced option, that you better leave alone This will stop ultimining on first block that it can't mine, rather than skipping it.
+	# Default: false
+	cancel_on_block_break_fail: false
+	
+	# Hunger multiplied for each block mined with ultimine
+	# Default: 20.0
+	# Range: 0.0 ~ 10000.0
+	exhaustion_per_block: 20.0d
+	
+	# Max amount of blocks that can be ultimined at once
+	# Default: 64
+	# Range: 0 ~ 32768
+	max_blocks: 64
+	
+	# These tags will be considered the same block when checking for blocks to Ultimine in shapeless mining mode
+	# Default: ["minecraft:base_stone_overworld", "c:*_ores", "forge:ores/*"]
+	merge_tags: [
+		"minecraft:base_stone_overworld"
+		"c:*_ores"
+		"forge:ores/*"
+	]
+	
+	# These tags will be considered the same block when checking for blocks to Ultimine in shaped mining modes
+	# Default: ["*"]
+	merge_tags_shaped: ["*"]
+	
+	# This will stop mining if tool reaches X durability. It's possible it won't work with special tool types.
+	# Default: 0
+	# Range: 0 ~ 100
+	prevent_tool_break: 0
+	
+	# Require a damageable tool, or an item in the ftbultimine:tools tag, to ultimine.
+	# Default: false
+	require_tool: false
+	
+	# Right-click with an axe with the Ultimine key held to strip multiple logs and scrape/unwax copper blocks
+	# Default: true
+	right_click_axe: true
+	
+	# Right-click crops with the Ultimine key held to harvest multiple crop blocks
+	# Default: true
+	right_click_harvesting: true
+	
+	# Right-click with a hoe with the Ultimine key held to till multiple grass/dirt blocks into farmland
+	# Default: true
+	right_click_hoe: true
+	
+	# Right-click with a shovel with the Ultimine key held to flatten multiple grass/dirt blocks into dirt paths
+	# Default: true
+	right_click_shovel: true
+}
