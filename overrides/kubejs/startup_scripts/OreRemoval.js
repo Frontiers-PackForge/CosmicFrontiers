@@ -13,6 +13,18 @@ WorldgenEvents.remove(event => {
       'forbidden_arcanus:runic_deepslate',
       'forbidden_arcanus:runic_stone',
       'occultism:silver_ore_deepslate',
-      'occultism:silver_ore']
+      'occultism:silver_ore',
+      'evilcraft:dark_ore',
+      'evilcraft:dark_ore_deepslate',
+      'embers:lead_ore',
+      'embers:deepslate_lead_ore',
+      'embers:silver_ore',
+      'embers:deepslate_silver_ore'
+    
+    
+    
+    
+    
+    ]
     }) 
 })

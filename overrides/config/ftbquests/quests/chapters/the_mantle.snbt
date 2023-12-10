@@ -12,8 +12,52 @@
 		}
 	}
 	id: "2B7EB6D7A4E81221"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0F8822EE409BED3C"
+				"5F460A1D5DB52638"
+			]
+			description: [
+				"Welcome to the mantle; Earth Prime calls this place the '&c&lNether&r.'"
+				""
+				"To fight against the flames of the endless inferno, I've devised a device to purge my body heat. The &bSoulspring lantern&r. I should craft one of these to weather the heat as soon as possible."
+				""
+				""
+				"&lNote:&r &6Fire Resistance&r potions also help. But the alchemy is too foreign the rudimentary tools the nether inhabitants once used"
+			]
+			id: "035D7CBD3AD14321"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Subude the Inferno."
+			tasks: [{
+				id: "01BB650F6C0E4665"
+				item: {
+					Count: 1b
+					id: "cold_sweat:soulspring_lamp"
+					tag: {
+						fuel: 64.0d
+						isOn: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "6EC0FEADC156A5F1"
+			subtitle: "Follow along in the discord!"
+			tasks: [{
+				id: "36FA029E2A059CC2"
+				title: "In Development!"
+				type: "custom"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+	]
 	title: "The Mantle"
 }

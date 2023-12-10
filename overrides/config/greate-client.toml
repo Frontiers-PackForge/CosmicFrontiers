@@ -1,0 +1,4 @@
+#.
+#Show/Hide conversion tooltip on certain create items
+warningTooltip = true
+

@@ -4,7 +4,7 @@
 	#Dimensions where hostile mobs will not spawn. Ex: ["minecraft:overworld", "undergarden:undergarden"]. . Run /forge dimensions for a list.
 	dimensionBlacklist = []
 	#Spawn a book in the players inventory on login
-	spawnBook = true
+	spawnBook = false
 	#How much mana whirlisprigs consume per generation
 	#Range: 0 ~ 10000
 	sylphManaCost = 250

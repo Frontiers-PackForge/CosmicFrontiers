@@ -95,6 +95,14 @@ customization {
 }
 
 customization {
+  identifier = %id=376346%
+  orientation = mid-left
+  x = 6
+  action = movebutton
+  y = 72
+}
+
+customization {
   orientation = top-left
   hidden = true
   x = 186
@@ -109,7 +117,7 @@ customization {
   orientation = top-left
   hidden = false
   x = 2
-  width = 122
+  width = 128
   action = deep_customization_element:title_screen_branding
   actionid = 0560fb48-d5fa-4e39-9f18-981f6f75d3001701890455254
   y = 303

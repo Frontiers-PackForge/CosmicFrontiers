@@ -5,19 +5,33 @@
 	group: "43A79D0106662C02"
 	icon: "gtceu:prospector.lv"
 	id: "706EB66D1162963D"
-	images: [{
-		click: ""
-		corner: false
-		dev: false
-		height: 3.0d
-		hover: [ ]
-		image: "frontiers:textures/questimages/firststeps/bannerwide.png"
-		order: 9999
-		rotation: 0.0d
-		width: 9.438805970149254d
-		x: 5.500340136054405d
-		y: -3.833163265306137d
-	}]
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: [ ]
+			image: "frontiers:textures/questimages/firststeps/bannerwide.png"
+			order: 9999
+			rotation: 0.0d
+			width: 9.438805970149254d
+			x: 5.500340136054405d
+			y: -3.833163265306137d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.0d
+			hover: [ ]
+			image: "frontiers:textures/questimages/miscicons/wingedborder.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 5.0513605442176726d
+			y: 5.488222789115632d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -67,12 +81,27 @@
 				"5693AA8924634F44"
 				"78DFF9184296F7F6"
 			]
+			description: [
+				""
+				"Find some Iron Ore and smelt it down!"
+				""
+				"Some common ore veins that contain Iron bearing ores"
+				""
+				"- Limonite"
+				"- Magnetite"
+				"- Chalcopyrite"
+				"- Basaltic/Granatic Mineral Sands"
+			]
+			icon: "minecraft:furnace"
 			id: "4276E47E7CF85DF0"
 			shape: "hexagon"
+			subtitle: "You'll need iron, lots of it!"
 			tasks: [{
-				id: "0BAFDCF44C5C750D"
-				type: "checkmark"
+				id: "595D1BBD97722943"
+				item: "minecraft:iron_ingot"
+				type: "item"
 			}]
+			title: "Basic Metallurgy #1"
 			x: 5.0d
 			y: 2.0d
 		}
@@ -206,23 +235,275 @@
 		}
 		{
 			dependencies: ["283EFEAA64080D4D"]
+			description: [
+				"FTB Ultimine is a powerful collection tool, allowing you to harvest a large area in various shapes"
+				""
+				""
+				"FTB:Ultimine &4&lDOES NOT&r work on GTCEU Ores, this functionality has been disabled to encourage Hammers and Miners. A few other blocks have also been blacklisted."
+			]
 			id: "5693AA8924634F44"
-			tasks: [{
-				id: "3CB25EF8CA3B7B1E"
-				type: "checkmark"
+			rewards: [{
+				id: "7E3D259CC4D09571"
+				item: {
+					Count: 1b
+					id: "gtceu:diamond_mining_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
 			}]
+			subtitle: "I don't care how you get it."
+			tasks: [{
+				icon: "minecraft:raw_iron"
+				id: "08E3DCD2ED0BDCD5"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(minecraft:logs)"
+					}
+				}
+				title: "Gather Any Raw Ore"
+				type: "item"
+			}]
+			title: "FTB:Ultimine and You"
 			x: 6.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["423EB7A96CB261A3"]
+			description: ["Btw, This pack as FTB:Ultimine"]
+			icon: "minecraft:oak_log"
 			id: "2F6DBFCBBC3A0827"
+			subtitle: "You'll need this"
 			tasks: [{
-				id: "03BC2763A183D3B3"
-				type: "checkmark"
+				count: 64L
+				icon: "minecraft:oak_log"
+				id: "4D12ABDBF60AFCA0"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(minecraft:logs)"
+					}
+				}
+				title: "Get Any Wood"
+				type: "item"
 			}]
+			title: "Get Some Bi- I mean Wood"
 			x: 4.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["4276E47E7CF85DF0"]
+			description: [
+				"You'll need several of the tools listed below, here's some of their basic functions."
+				""
+				"&6Hammers&r fare used to make ingots into plates."
+				""
+				"&6Wrenches&r are used to break gregtech blocks, as well as to set the output face of machines."
+				""
+				"&6Screwdrivers&r are used to interact with machine covers."
+				""
+				"&6Wire cutters&r are used to cut plates into wires as well as connect wires/cables.q6 "
+				""
+				"&6Files&r are used to make ingots into rods."
+				""
+				"&6Mortars&r are used to grind down metals and other materials."
+				""
+				"&6Saws&r are used to cut apart rods, planks, and other various things that need to be split apart."
+				""
+				"While there are several tools not mentioned here, these are the ones required to get through early game gregtech. Almost all the crafting functionality of these hand tools will be superceded by machines once you unlock LV and basic electricity, but some of the tools (screwdriver and wrench in particular) will become a mainstay in your inventory. While you are still using the tools for crafting, expect to go through them fairly quickly. Don't get too attached..."
+				""
+				"Remember your workplace safety! Don't lose your fingers.."
+			]
+			id: "2B84E90B712B6CD3"
+			subtitle: "Tools of the Trade"
+			tasks: [
+				{
+					icon: {
+						Count: 1b
+						id: "gtceu:iron_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "3CD086DF3214B1FB"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:tools/hammers)"
+						}
+					}
+					title: "Any Hammer"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1b
+						id: "gtceu:iron_wrench"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "1FCEBF1D7C6D4F12"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:tools/wrench)item_tag(forge:tools/files)"
+						}
+					}
+					title: "Any Wrench"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1b
+						id: "gtceu:iron_file"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "53845C521325E232"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:tools/files)"
+						}
+					}
+					title: "Any File"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1b
+						id: "gtceu:iron_saw"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "4BCF77A595638786"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:tools/saws)"
+						}
+					}
+					title: "Any Saw"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1b
+						id: "gtceu:iron_screwdriver"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "4A1A547444B29038"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:tools/screwdrivers)"
+						}
+					}
+					title: "Any Screwdriver"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1b
+						id: "gtceu:iron_mortar"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "32F31D914A67040F"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:tools/mortars)"
+						}
+					}
+					title: "Any Mortar"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1b
+						id: "gtceu:iron_wire_cutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "3F6E0509177C8A6F"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:tools/wire_cutters)"
+						}
+					}
+					title: "Any Wire Cutter"
+					type: "item"
+				}
+			]
+			title: "Tools fit for survival"
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2B84E90B712B6CD3"]
+			description: [
+				"This is the final quest for the starting chapter. "
+				""
+				"Please prove you are ready for the Era of Steam by presenting materials valid for progression"
+				""
+				""
+				"I wish you luck!"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "38DA0B4E0DBAC364"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Get ready."
+			tasks: [
+				{
+					count: 256L
+					id: "48ED4A3C61EEB9EF"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "75E94DE9FEC011EA"
+					item: "gtceu:tin_ingot"
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "034E3C426DF22587"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "02695B730CDEF81F"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			title: "The Road Ahead"
+			x: 5.0d
+			y: 5.5d
 		}
 	]
 	title: "First Steps"

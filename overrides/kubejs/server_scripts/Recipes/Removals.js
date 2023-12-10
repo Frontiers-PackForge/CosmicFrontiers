@@ -8,6 +8,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'embers:copper_plate' })
   event.remove({ output: 'embers:lead_plate' })
   event.remove({ output: 'embers:silver_plate' })
+  event.remove({ output: 'create:andesite_alloy' })
 })
 
 // Okay So basically. Tags
@@ -39,14 +40,17 @@ ServerEvents.tags('item', event => {
   event.add('c:hidden_from_recipe_viewers', 'ad_astra:iron_plate')
   event.add('c:hidden_from_recipe_viewers', 'ad_astra:steel_plate')
   event.add('c:hidden_from_recipe_viewers', 'ad_astra:steel_ingot')
-
+  
   //Blacklist Tags for Ore Mining
+
+})
+
+ServerEvents.tags('block', event => {
   GTRegistries.MATERIALS.forEach(id => {
     event.add('ftbultimine:excluded_blocks', [`gtceu:andesite_${id}_ore`, `gtceu:diorite_${id}_ore`, `gtceu:deepslate_${id}_ore`, `gtceu:${id}_ore`, `gtceu:granite_${id}_ore`, `gtceu:netherrack_${id}_ore`, `gtceu:endstone_${id}_ore`])
   })
+  event.add('ftbultimine:excluded_blocks', 'minecraft:powder_snow')
 })
-
-
 
 //Internal Erroring Recipe Removal
 ServerEvents.recipes(event => { 

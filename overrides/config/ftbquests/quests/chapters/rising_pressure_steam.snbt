@@ -5,8 +5,622 @@
 	group: "43A79D0106662C02"
 	icon: "gtceu:basic_electronic_circuit"
 	id: "788F1C99AB3A89FA"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["38DA0B4E0DBAC364"]
+			icon: "gtceu:bronze_ingot"
+			id: "52A46B052223551B"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Welcome to the steam age!"
+			tasks: [{
+				id: "3C983269A6F4ED4E"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"52A46B052223551B"
+				"5D0E280A5B25CDF5"
+				"40722F399FCF08E2"
+			]
+			id: "415FBE545845A4D4"
+			tasks: [{
+				id: "13ACC8FBEF57BCFD"
+				item: "gtceu:bronze_brick_casing"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"52A46B052223551B"
+				"5D0E280A5B25CDF5"
+				"40722F399FCF08E2"
+			]
+			id: "2A42583B975875D9"
+			tasks: [{
+				id: "5990C21E6E993687"
+				item: "gtceu:bronze_machine_casing"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A42583B975875D9"]
+			id: "7E4041C72E5CF03F"
+			tasks: [{
+				id: "39692C7AFFDA8AF7"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2A42583B975875D9"]
+			id: "2E761FE12F3D42DD"
+			tasks: [{
+				id: "31B9D5D90F87C5C9"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2A42583B975875D9"]
+			hide_dependent_lines: true
+			id: "45BED4AD7A6EFDDB"
+			tasks: [{
+				id: "65FDE214D5875556"
+				item: "gtceu:lp_steam_extractor"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2A42583B975875D9"]
+			id: "47E86D7A16ECA234"
+			tasks: [{
+				id: "38CF49225DF8D7A5"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52A46B052223551B"]
+			description: [
+				"You'll need lots of water."
+				""
+				""
+				""
+				"Questline for Prim pump"
+				""
+				""
+				""
+				"Placeholder quest desc..."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:water_bucket"
+			id: "2A51F6AE6D937B44"
+			subtitle: "Thirsty?"
+			tasks: [{
+				id: "6DB7E848C14119DA"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1B67E146DDF68FC8"]
+			id: "08088D5AA6E14B3E"
+			tasks: [{
+				id: "1789AC9BBB4E7E9F"
+				item: "gtceu:compressed_coke_clay"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2A51F6AE6D937B44"]
+			id: "1B67E146DDF68FC8"
+			tasks: [{
+				id: "548C608C0566CFED"
+				item: "gtceu:coke_oven_brick"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["08088D5AA6E14B3E"]
+			id: "686D8C69FBD0081B"
+			tasks: [{
+				id: "24C5D3BADBFFA660"
+				item: "gtceu:coke_oven"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["686D8C69FBD0081B"]
+			id: "5F5C12A721404DB1"
+			tasks: [{
+				id: "5713258E5EE13EA9"
+				item: "gtceu:creosote_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5F5C12A721404DB1"]
+			id: "47C88F418F023BC3"
+			tasks: [{
+				id: "773EB93BFA8130F2"
+				item: "gtceu:treated_wood_planks"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"47C88F418F023BC3"
+				"52A46B052223551B"
+			]
+			id: "5D0E280A5B25CDF5"
+			tasks: [{
+				id: "13824EDF529FB18C"
+				item: "gtceu:primitive_pump"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["52A46B052223551B"]
+			id: "40722F399FCF08E2"
+			tasks: [{
+				id: "7B03E1695BADCCC5"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"40722F399FCF08E2"
+				"415FBE545845A4D4"
+			]
+			id: "4F8AEBFDD09D31A4"
+			tasks: [{
+				id: "3A74C846B07549F5"
+				item: "gtceu:lp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"5580E63FE719DF53"
+				"3DECAF19BB8FE586"
+				"7230D99B541F664A"
+				"1736B53572205D7C"
+				"2816604F816E8D52"
+				"3387CFCFCE1AC164"
+			]
+			id: "0F8822EE409BED3C"
+			tasks: [{
+				id: "51415E9DD53CA770"
+				item: "nether_remastered:seal_of_the_underworld_item"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45BED4AD7A6EFDDB"]
+			id: "1736B53572205D7C"
+			tasks: [{
+				id: "5EC80C6743ADCDC3"
+				item: "nether_remastered:seal_piece_3"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["45BED4AD7A6EFDDB"]
+			id: "5580E63FE719DF53"
+			tasks: [{
+				id: "727348E19ACA6DF6"
+				item: "nether_remastered:seal_piece_4"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["45BED4AD7A6EFDDB"]
+			id: "7230D99B541F664A"
+			tasks: [{
+				id: "42821B2C10619AC7"
+				item: "nether_remastered:seal_piece_1"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["45BED4AD7A6EFDDB"]
+			id: "3DECAF19BB8FE586"
+			tasks: [{
+				id: "416E1939EB8CA4F5"
+				item: "nether_remastered:seal_piece_2"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7E4041C72E5CF03F"]
+			id: "3387CFCFCE1AC164"
+			subtitle: "This drops from normal mobs"
+			tasks: [{
+				id: "3203F860D367BECC"
+				item: "nether_remastered:nether_essence"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["47E86D7A16ECA234"]
+			id: "2816604F816E8D52"
+			subtitle: "Warden Slayer or Warp Stone"
+			tasks: [{
+				id: "39141ECB876FEEE7"
+				item: "nether_remastered:seal_crystal"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0F8822EE409BED3C"
+				"5F460A1D5DB52638"
+			]
+			id: "705099C9ED28CF14"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "6D741CC8E28326BB"
+				type: "dimension"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E761FE12F3D42DD"]
+			id: "63B61B5304D7A9F3"
+			shape: "gear"
+			subtitle: "This gets you plates at a 1.5:1 Ratio"
+			tasks: [{
+				id: "1BD6109B676DF150"
+				title: "Better Plates"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["705099C9ED28CF14"]
+			id: "3582EF7DF44D13A1"
+			tasks: [{
+				id: "164E29018B487230"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["415FBE545845A4D4"]
+			id: "187B8D213D49BD07"
+			tasks: [{
+				id: "317E535895C330BE"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3582EF7DF44D13A1"]
+			hide_dependent_lines: true
+			id: "780C59919F8B1FB0"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6FACF206708628D5"
+				item: "gtceu:rubber_ingot"
+				type: "item"
+			}]
+			title: "Finally! You can make rubber!"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["187B8D213D49BD07"]
+			id: "12AF008BC8C8F2F3"
+			tasks: [{
+				id: "6ECA77A123981972"
+				item: "gtceu:red_alloy_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["12AF008BC8C8F2F3"]
+			id: "0F27F6613D8BE6F0"
+			tasks: [{
+				id: "2799C1A34A1E3106"
+				item: "gtceu:red_alloy_single_wire"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"780C59919F8B1FB0"
+				"0F27F6613D8BE6F0"
+			]
+			id: "764A3822717A4E0D"
+			tasks: [{
+				id: "656A117DFC37182F"
+				item: "gtceu:red_alloy_single_cable"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0BB6B6D4990AB1CC"
+				"764A3822717A4E0D"
+				"7E9D9FF1101D1666"
+				"77EFA0C3D4D69285"
+				"1EE3271196DAF65F"
+				"64C6B4AAC9B7E8FB"
+			]
+			id: "421C1269B45BC404"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				id: "7E3DE00858824F37"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"780C59919F8B1FB0"
+				"187B8D213D49BD07"
+			]
+			id: "0BB6B6D4990AB1CC"
+			tasks: [{
+				id: "420FFEFA382FBE2C"
+				item: "gtceu:rubber_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"4F4AB465A829B20B"
+				"1FDBCDAA759B93F3"
+			]
+			id: "5F460A1D5DB52638"
+			tasks: [{
+				id: "3445124A8F9FFDDF"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "create:copper_backtank"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["52A46B052223551B"]
+			description: [
+				"Okay so"
+				""
+				"Temp quest desc"
+				""
+				"make this, it's heat resistant insulation, add it to your armor with the sewing table."
+				""
+				"I wrote this at 7 AM with no sleep holy hell"
+			]
+			hide_dependency_lines: true
+			id: "4F4AB465A829B20B"
+			tasks: [{
+				id: "2AF09F69B45D69DB"
+				item: "cosmiccore:waxed_leather"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5F460A1D5DB52638"]
+			id: "0A35EE6668FBF2EC"
+			tasks: [{
+				id: "0AB4DC710EE6365F"
+				item: "cold_sweat:thermometer"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"7E4041C72E5CF03F"
+				"375062ACFCDBC77A"
+			]
+			id: "7E9D9FF1101D1666"
+			tasks: [{
+				id: "2A0FCD34E630A9F5"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["187B8D213D49BD07"]
+			id: "1EE3271196DAF65F"
+			tasks: [{
+				id: "34855065F6FAD522"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7E4041C72E5CF03F"]
+			id: "77EFA0C3D4D69285"
+			tasks: [{
+				id: "2EEAB2B0D5E57DC9"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["415FBE545845A4D4"]
+			id: "7895FFB7F9EBD9C6"
+			tasks: [{
+				id: "0C8BFE6E462DBBD3"
+				item: "gtceu:lp_steam_masonry_oven"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2077DE64FC9EB247"]
+			id: "64C6B4AAC9B7E8FB"
+			tasks: [{
+				id: "4F0D96685A3DC466"
+				item: "gtceu:steel_plate"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7895FFB7F9EBD9C6"]
+			id: "0BE94AFE912DF509"
+			tasks: [{
+				id: "6530E46D3A4ECFEA"
+				item: "gtceu:compressed_fireclay"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0BE94AFE912DF509"]
+			id: "2077DE64FC9EB247"
+			tasks: [{
+				id: "061D17A354BCF47C"
+				item: "gtceu:primitive_blast_furnace"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"45BED4AD7A6EFDDB"
+				"47E86D7A16ECA234"
+			]
+			id: "375062ACFCDBC77A"
+			tasks: [{
+				id: "369FB767C403E7E8"
+				item: "gtceu:resin_circuit_board"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["64C6B4AAC9B7E8FB"]
+			id: "05353F9620520C27"
+			tasks: [{
+				id: "087B06A1F9E7299C"
+				item: "gtceu:hp_steam_forge_hammer"
+				type: "item"
+			}]
+			title: "Stronger Steam"
+			x: -5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7895FFB7F9EBD9C6"]
+			id: "1FDBCDAA759B93F3"
+			tasks: [{
+				id: "7DDAB484A313EE74"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			id: "4C8926A08B8CD7F0"
+			subtitle: "Follow along in the discord!"
+			tasks: [{
+				id: "680AC50F581AB252"
+				title: "In Development!"
+				type: "custom"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+	]
 	title: "Rising Pressure [Steam]"
 }
