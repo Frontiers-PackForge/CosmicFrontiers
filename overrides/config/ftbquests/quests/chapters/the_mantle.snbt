@@ -30,7 +30,7 @@
 			]
 			id: "035D7CBD3AD14321"
 			shape: "hexagon"
-			size: 3.0d
+			size: 2.0d
 			subtitle: "Subude the Inferno."
 			tasks: [{
 				id: "01BB650F6C0E4665"

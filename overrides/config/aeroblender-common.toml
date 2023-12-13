@@ -3,5 +3,5 @@
 	#The size of aether biome regions from each mod that uses AeroBlender.
 	"Aether Region Size" = 2
 	#The weighting of vanilla biome regions in the aether.
-	"Aether Region Weight" = 10
+	"Aether Region Weight" = 0
 

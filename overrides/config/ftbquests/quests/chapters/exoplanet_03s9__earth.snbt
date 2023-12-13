@@ -280,7 +280,8 @@
 			id: "2F6DBFCBBC3A0827"
 			subtitle: "You'll need this"
 			tasks: [{
-				icon: { Count: 64b, id: "minecraft:oak_log" }
+				count: 64L
+				icon: "minecraft:oak_log"
 				id: "218AC08A1B16AEA4"
 				item: {
 					Count: 1b

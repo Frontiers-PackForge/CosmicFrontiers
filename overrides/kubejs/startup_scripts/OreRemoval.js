@@ -19,7 +19,10 @@ WorldgenEvents.remove(event => {
       'embers:lead_ore',
       'embers:deepslate_lead_ore',
       'embers:silver_ore',
-      'embers:deepslate_silver_ore'
+      'embers:deepslate_silver_ore',
+      'aether:gravitite_ore',
+      'aether:ambrosium_ore',
+      'aether:zanite_ore',
     
     
     

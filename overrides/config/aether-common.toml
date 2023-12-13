@@ -13,7 +13,7 @@
 
 ["Data Pack"]
 	#Sets the Aether Temporary Freezing data pack to be added to new worlds automatically
-	"Add Temporary Freezing automatically" = false
+	"Add Temporary Freezing automatically" = true
 	#Sets the Aether Ruined Portals data pack to be added to new worlds automatically
-	"Add Ruined Portals automatically" = false
+	"Add Ruined Portals automatically" = true
 

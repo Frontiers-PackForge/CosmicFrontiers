@@ -1,0 +1,37 @@
+#List of in-game IDs of additional crops
+crops = []
+#Require holding a hoe (either hands) to right-click harvest
+"require hoe" = false
+#If [require hoe] is set to true, damage the hoe of the given amount (0 to disable, must be an integer)
+#Range: > 0
+"damage on harvest" = 0
+#Amount of experience to grant on harvest (0 to disable, must be an integer).
+#Range: > 0
+"exp on harvest" = 0
+#Play a sound when harvesting a crop.
+"play sound" = true
+#Tool tier starting from which it is possible to harvest multiple crops at once.
+#All tiers that cannot multi-harvest will have a 1x1 square area of effect (a single crop).
+#If [starting harvest area size] is set to "single" and [area increment step] to "none" multi-harvest will be effectively disabled, regardless of this config option value.
+#From lesser to greater, Vanilla tiers are: "wood", "gold", "stone", "iron", "diamond", "netherite".
+#Be aware that other mods may add other tiers and/or removing existing ones. Only the actual tiers available at runtime are allowed here.
+#When set to "none", the only value not in the tiers list, multi-harvest will be enabled without a tool too. Note that [require hoe] takes precedence.
+#The value in this config option can either be the name of the tier, e.g. "iron", or the id of the tier, e.g. "minecraft:iron".
+"multi-harvest starting tier" = "wood"
+#Starting multi-harvest area size (square side length).
+#The area is always a square centered on the right-clicked crop.
+#Setting this to "single" and [area increment step] to "none" will effectively disable multi-harvest.
+#"single" - single harvest area size, a 1x1 square.
+#"medium" - medium harvest area size, a 3x3 square.
+#"large" - large harvest area size, a 5x5 square.
+#Allowed Values: SINGLE, MEDIUM, LARGE
+"starting harvest area size" = "SINGLE"
+#Increment step for the harvest area size with higher tool tiers.
+#Setting this to "none" and [starting harvest area size] to "single" will effectively disable multi-harvest.
+#"none" - no increment, the area stays the same (as defined by [starting harvest area size]) regardless of the tool used, if any.
+#"small" - small increment, the size of the area, starting from [starting harvest area size], increases by 2 with each higher tier. E.g. 1x1 -> 3x3 -> 5x5 -> ...
+#"medium" - medium increment, the size of the area, starting from [starting harvest area size], increases by 4 with each higher tier. E.g. 1x1 -> 5x5 -> 9x9 -> ...
+#"large" - large increment, the size of the area, starting from [starting harvest area size], increases by 6 with each higher tier. E.g. 1x1 -> 7x7 -> 13x13 -> ...
+#Allowed Values: NONE, SMALL, MEDIUM, LARGE
+"area increment step" = "NONE"
+

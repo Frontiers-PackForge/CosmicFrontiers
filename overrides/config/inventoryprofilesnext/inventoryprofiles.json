@@ -1,5 +1,14 @@
 {
     "ModSettings": {
+        "sort_order": "ACCUMULATED_COUNT_DESCENDING",
+        "highlight_foused_items": {
+            "value": false
+        },
+        "highlight_foused_items_foreground": false,
+        "enable_profiles": {
+            "value": false
+        },
+        "highlight_clicking_slot": false,
         "first_run": false
     },
     "GuiSettings": {
@@ -16,9 +25,6 @@
             "value": false
         },
         "continuous_crafting_saved_value": false,
-        "show_regular_sort_button": {
-            "value": false
-        },
         "show_sort_in_columns_button": {
             "value": false
         },
@@ -26,6 +32,40 @@
             "value": false
         },
         "show_move_all_button": {
+            "value": false
+        }
+    },
+    "AutoRefillSettings": {
+        "disable_for_drop_item": {
+            "value": true
+        },
+        "ignore_locked_slots": false,
+        "refill_armor": {
+            "value": false
+        },
+        "refill_before_tool_break": {
+            "value": false
+        },
+        "disable_for_loyalty_items": false,
+        "auto_refill_match_custom_name": false,
+        "auto_refill_match_nbt": false,
+        "auto_refill_ignore_nbt_for_buckets": false,
+        "visual_durability_notification": {
+            "value": false
+        },
+        "audio_durability_notification": {
+            "value": false
+        },
+        "visual_replace_success_notification": {
+            "value": false
+        },
+        "audio_replace_success_notification": {
+            "value": false
+        },
+        "visual_replace_failed_notification": {
+            "value": false
+        },
+        "audio_replace_failed_notification": {
             "value": false
         }
     },

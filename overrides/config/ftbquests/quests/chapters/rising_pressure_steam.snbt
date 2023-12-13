@@ -10,12 +10,18 @@
 	quests: [
 		{
 			dependencies: ["38DA0B4E0DBAC364"]
+			description: [
+				"Welcome to the age of Steam. Your primary objectives are to produce steel and gain entry to the Mantle (Nether). "
+				""
+				"Start by making bronze, a mixture of tin and copper dust. Remember, you can make dust by using ingots and a Gregtech Mortar!"
+			]
 			icon: "gtceu:bronze_ingot"
 			id: "52A46B052223551B"
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "Welcome to the steam age!"
 			tasks: [{
+				count: 64L
 				id: "3C983269A6F4ED4E"
 				item: "gtceu:bronze_ingot"
 				type: "item"
@@ -29,7 +35,13 @@
 				"5D0E280A5B25CDF5"
 				"40722F399FCF08E2"
 			]
+			description: [
+				"Casings made of basic bricks and bronze."
+				""
+				"Used for making a variety of machines."
+			]
 			id: "415FBE545845A4D4"
+			subtitle: "Bronze Plated Bricked Sandwhich"
 			tasks: [{
 				id: "13ACC8FBEF57BCFD"
 				item: "gtceu:bronze_brick_casing"
@@ -44,7 +56,9 @@
 				"5D0E280A5B25CDF5"
 				"40722F399FCF08E2"
 			]
+			description: ["Casings made of solid bronze plates, used for a variety of active machines."]
 			id: "2A42583B975875D9"
+			subtitle: "Hope you made a lot of bronze."
 			tasks: [{
 				id: "5990C21E6E993687"
 				item: "gtceu:bronze_machine_casing"
@@ -66,7 +80,9 @@
 		}
 		{
 			dependencies: ["2A42583B975875D9"]
+			description: ["The steam forge hammer allows crafting plates at a better ratio than your hammer. As such, I recommend you craft this first!"]
 			id: "2E761FE12F3D42DD"
+			subtitle: "This gets you plates at a 1.5:1 Ratio"
 			tasks: [{
 				id: "31B9D5D90F87C5C9"
 				item: "gtceu:lp_steam_forge_hammer"
@@ -193,7 +209,14 @@
 		}
 		{
 			dependencies: ["52A46B052223551B"]
+			description: [
+				"The low-pressure solid-fueled boiler behaves by burning combustible fuel to produce steam."
+				"Make sure you &l&4never&r feed a hot and dry boiler water."
+				""
+				"Doing so will &ccause an explosion&r, so ensure your thirsty boilers are supplied with water."
+			]
 			id: "40722F399FCF08E2"
+			subtitle: "Toasty."
 			tasks: [{
 				id: "7B03E1695BADCCC5"
 				item: "gtceu:lp_steam_solid_boiler"
@@ -207,7 +230,12 @@
 				"40722F399FCF08E2"
 				"415FBE545845A4D4"
 			]
+			description: [
+				"The low-pressure liquid boiler behaves precisely like the solid-fueled boiler, Producing steam from heat."
+				"The only difference is the heat source; in this case, it is lava."
+			]
 			id: "4F8AEBFDD09D31A4"
+			subtitle: "Toasty but now there's lava."
 			tasks: [{
 				id: "3A74C846B07549F5"
 				item: "gtceu:lp_steam_liquid_boiler"
@@ -225,7 +253,13 @@
 				"2816604F816E8D52"
 				"3387CFCFCE1AC164"
 			]
+			description: [
+				"The &6Seal of the Underworld&r is an one of the keys of the jailer. By proving your worth you can demand entry into the deeper parts of this world."
+				""
+				"Consume the seal and craft a nether portal. We're Heading to hell."
+			]
 			id: "0F8822EE409BED3C"
+			subtitle: "You are worthy!"
 			tasks: [{
 				id: "51415E9DD53CA770"
 				item: "nether_remastered:seal_of_the_underworld_item"
@@ -317,19 +351,6 @@
 			}]
 			x: 8.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["2E761FE12F3D42DD"]
-			id: "63B61B5304D7A9F3"
-			shape: "gear"
-			subtitle: "This gets you plates at a 1.5:1 Ratio"
-			tasks: [{
-				id: "1BD6109B676DF150"
-				title: "Better Plates"
-				type: "checkmark"
-			}]
-			x: 1.0d
-			y: -2.0d
 		}
 		{
 			dependencies: ["705099C9ED28CF14"]
@@ -541,7 +562,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2077DE64FC9EB247"]
+			dependencies: ["398EFF1EA09FA4AA"]
 			id: "64C6B4AAC9B7E8FB"
 			tasks: [{
 				id: "4F0D96685A3DC466"
@@ -552,24 +573,56 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["7895FFB7F9EBD9C6"]
+			dependencies: ["65142662ED8019DD"]
+			description: [
+				"Nether Brick is plentiful inside the mantle of this planet. (The Nether)"
+				""
+				"You could scavange ruined portals for netherack - however it's advised you just collect them"
+				"from the nether."
+			]
 			id: "0BE94AFE912DF509"
-			tasks: [{
-				id: "6530E46D3A4ECFEA"
-				item: "gtceu:compressed_fireclay"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 66L
+					id: "49C4E17E825B2AB0"
+					item: "gtceu:nether_brick_dust_dust"
+					type: "item"
+				}
+				{
+					count: 66L
+					id: "71B6C457CC046035"
+					item: "gtceu:clay_dust"
+					type: "item"
+				}
+			]
+			title: "To forge in the fires of hell"
 			x: -4.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["0BE94AFE912DF509"]
+			dependencies: [
+				"0BE94AFE912DF509"
+				"187B8D213D49BD07"
+			]
+			description: [
+				"You will need &l33&r Firebricks. "
+				"32 for the structure"
+				"1 for the controller"
+			]
 			id: "2077DE64FC9EB247"
-			tasks: [{
-				id: "061D17A354BCF47C"
-				item: "gtceu:primitive_blast_furnace"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "061D17A354BCF47C"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "6F0D63D49A0062AA"
+					item: "gtceu:firebricks"
+					type: "item"
+				}
+			]
 			x: -4.0d
 			y: 4.5d
 		}
@@ -620,6 +673,49 @@
 			}]
 			x: 5.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["2077DE64FC9EB247"]
+			id: "398EFF1EA09FA4AA"
+			subtitle: "Finally! Steel!"
+			tasks: [{
+				id: "1F792E7EDD8A86FD"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7895FFB7F9EBD9C6"]
+			id: "65142662ED8019DD"
+			subtitle: "I'd advise going their first"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "5642CD9A6F0373AB"
+				type: "dimension"
+			}]
+			title: "Have you been to the nether yet?"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7895FFB7F9EBD9C6"]
+			description: [
+				"You can craft wrought iron in a variety of ways."
+				"However the best way you can make it right now is by throwing iron and charcoal dust into lava."
+				"Later on you can make Wrought Iron in an Arc Furnace. (LV)"
+				"There's a few other methods as well, check out REI!"
+			]
+			id: "6B114A53506FFDB0"
+			subtitle: "You want it?"
+			tasks: [{
+				id: "72544AF5646458EB"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
 		}
 	]
 	title: "Rising Pressure [Steam]"

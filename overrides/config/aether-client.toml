@@ -51,9 +51,9 @@
 
 [Audio]
 	#Sets the minimum delay for the Aether's music manager to use if needing to reset the song delay outside the Aether
-	"Set backup minimum music delay" = 12000
+	"Set backup minimum music delay" = 1
 	#Sets the maximum delay for the Aether's music manager to use if needing to reset the song delay outside the Aether
-	"Set backup maximum music delay" = 24000
+	"Set backup maximum music delay" = 2
 	#Disables the Aether's internal music manager, if true, this overrides all other audio configs
 	"Disables Aether music manager" = false
 	#Disables the Aether's menu music in case another mod implements its own, only works if 'Disables Aether music manager' is false
