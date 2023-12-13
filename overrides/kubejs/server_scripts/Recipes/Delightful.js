@@ -10,7 +10,7 @@ let yeet = (itemName) => {
         event.remove('forge:tools/scavenging', itemName)
     })
 }
-//Knives
+//Delightful Knives getting yeeted
 yeet('farmersdelight:flint_knife');
 yeet('farmersdelight:iron_knife');
 yeet('farmersdelight:golden_knife');
@@ -86,6 +86,9 @@ yeet('delightful:fiery_knife');
 yeet('delightful:amethyst_knife');
 yeet('delightful:lapis_lazuli_knife');
 yeet('delightful:bone_knife');
+//End Stove duplicate getting yeeted
+yeet('ends_delight:end_stove');
+
 
 //Functional Blocks, Gregified
 ServerEvents.recipes(event => { 
@@ -154,12 +157,6 @@ ServerEvents.recipes(event => {
     ], {
         B: 'minecraft:blackstone',
         F: 'minecraft:flint'
-    })
-    //Removing the stove from End's Delight. A similar one already exists in Ender's Delight
-    event.remove({ output:'ends_delight:end_stove' })
-    //Added Tag to hide from REI
-    ServerEvents.tags('item', event => {
-        event.add('forge:viewers/hidden_from_recipe', 'ends_delight:end_stove')
     })
     event.remove({ output:'endersdelight:endstone_stove' })
     event.shaped( 'endersdelight:endstone_stove', [
@@ -274,7 +271,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.compressor('gtceu:canvas_compress')
        .itemInputs('4x farmersdelight:straw')
        .itemOutputs('farmersdelight:canvas')
-       .duration(5)
+       .duration(50)
        .EUt(8)     
 })
 
