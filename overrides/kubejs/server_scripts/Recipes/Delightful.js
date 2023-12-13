@@ -157,6 +157,10 @@ ServerEvents.recipes(event => {
     })
     //Removing the stove from End's Delight. A similar one already exists in Ender's Delight
     event.remove({ output:'ends_delight:end_stove' })
+    //Added Tag to hide from REI
+    ServerEvents.tags('item', event => {
+        event.add('forge:viewers/hidden_from_recipe', 'ends_delight:end_stove')
+    })
     event.remove({ output:'endersdelight:endstone_stove' })
     event.shaped( 'endersdelight:endstone_stove', [
         'OOO',
@@ -276,6 +280,7 @@ ServerEvents.recipes(event => {
 
 //Removing some recipes that have a GT alternative
 ServerEvents.recipes(event => {
+    //We should fine more uses for bark as well as bring it back for paper recipes in the future, for now removing it is fine.
     event.remove({ id:'farmersdelight:paper_from_tree_bark' })
     event.remove({ id:'farmersdelight:painting_from_canvas' })
     event.remove({ id:'farmersdelight:book_from_canvas' })
