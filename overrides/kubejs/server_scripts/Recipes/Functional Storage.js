@@ -191,6 +191,15 @@ ServerEvents.recipes( e => {
            .itemOutputs('functionalstorage:netherite_upgrade')
            .duration(100)
            .EUt(1920);
+  e.shaped(`functionalstorage:iron_downgrade`, [
+      'AAA', 
+      'ABA', 
+      'AAA'  
+    ], {
+    A: 'gtceu:iron_plate', 
+    B: '#functionalstorage:drawer'
+    }
+    )
     e.shaped(`functionalstorage:armory_cabinet`, [
       'ABA', 
       'BCB', 
