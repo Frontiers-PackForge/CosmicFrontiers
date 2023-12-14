@@ -213,7 +213,7 @@ ServerEvents.recipes( e => {
     D: '#forge:tools/hammers'
     }
     )
-    e.shaped(`functionalstorage:redstone_upgrade`, [
+    e.shaped(`functionalstorage:void_upgrade`, [
       'ADA', 
       'BCB', 
       'ABA'  
@@ -250,7 +250,7 @@ ServerEvents.recipes( e => {
     F: '#forge:tools/wrenches'
     }
     )
-    e.shaped(`functionalstorage:pusher_upgrade`, [
+    e.shaped(`functionalstorage:collector_upgrade`, [
       'AAA', 
       'CDE', 
       'AAA'  
