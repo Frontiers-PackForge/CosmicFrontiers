@@ -26,7 +26,7 @@ ServerEvents.recipes( e => {
         'cherry'
     ]
     //removing all the recipes in functional storage
-    //e.remove({ output: /functionalstorage:(.*)/ })
+    e.remove({ output: /functionalstorage:(.*)/ })
 
     //
     woodtypes.forEach(item => { //runs this for every item in woodtypes
