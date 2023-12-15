@@ -489,7 +489,7 @@ ServerEvents.recipes(e => {
             ],
             {
                 T: 'betterend_jellyshroom_trapdoor',
-                P: 'betterend_jellyshroomplanks',
+                P: 'betterend_jellyshroom_planks',
                 B: 'gtceu:iron_ring',
                 S: 'gtceu:iron_screw',
                 D: '#forge:tools/saws',
@@ -566,8 +566,8 @@ ServerEvents.recipes(e => {
                 'PPD'
             ],
             {
-                T: 'etterend:terminite_trapdoor',
-                P: 'etterend:terminite_ingot',
+                T: 'betterend:terminite_trapdoor',
+                P: 'betterend:terminite_ingot',
                 B: 'gtceu:iron_ring',
                 S: 'gtceu:iron_screw',
                 D: '#forge:tools/saws',
@@ -970,7 +970,7 @@ ServerEvents.recipes(e => {
             })
 //Menril
         e.remove({output: 'integrateddynamics:menril_door'})
-        e.shaped('betternether:nether_reed_door', [
+        e.shaped('integrateddynamics:menril_door', [
                 'PPR',
                 'PBS',
                 'PPD'
