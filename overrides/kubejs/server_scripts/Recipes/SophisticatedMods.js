@@ -159,12 +159,6 @@ event.custom({
           'nbt': '{woodType:\'' + woodType + '\'}'
       }
   });
-
-  event.recipes.gtceu.assembler('sophisticatedstorage:' + nextTier + "_assembly") 
-  .itemInputs('2x minecraft:' + woodType + '_slab')
-  .itemInputs('4x minecraft:' + woodType + '_planks')
-  .itemInputs('sophisticatedstorage:' + previousTier)
-  .itemOutputs('sophisticatedstorage:' + nextTier)
 }
 
   let tierUpgrade = (materialOne, materialTwo, nextTier, previousTier) => {
