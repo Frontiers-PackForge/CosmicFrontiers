@@ -9,7 +9,10 @@ let yeet = (itemName) => {
 }
 
 yeet(/functionalstorage:fluid_(.*)/);
-
+yeet('functionalstorage:simple_compacting_drawer')
+yeet('functionalstorage:framed_simple_compacting_drawer')
+yeet('functionalstorage:compacting_framed_drawer')
+yeet('functionalstorage:compacting_drawer')
 ServerEvents.recipes( e => {
 
     //registering all the wood types in a variable
