@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Ghostipedia",
+      "uniqueId": "c43b3c3d-7da6-4c2b-b335-703fce2ed795"
+    },
+    "time": 1702457182283,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/zdpxcIxGgC"
+    }
+  }
+]

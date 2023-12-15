@@ -31,7 +31,7 @@
 	#max effect: the maximum temperature change this block can cause to a player (even with multiple blocks)
 	#predicates: the state that the block has to be in for the temperature to be applied (lit=true for a campfire, for example).
 	#Multiple predicates can be used by separating them with commas (i.e: "lit=true,waterlogged=false")
-	BlockTemps = [["minecraft:soul_fire", -0.476, 7, true, 0.8], ["minecraft:fire", 0.476, 7, true, 0.8], ["minecraft:magma_block", 0.5, 3, true, 0.6], ["minecraft:soul_campfire", -0.476, 3, true, 0.6, "lit=true"], ["minecraft:ice", -0.15, 4, true, 0.5], ["minecraft:packed_ice", -0.25, 4, true, 1.0], ["minecraft:blue_ice", -0.35, 4, true, 1.0], ["gtceu:cupronickel_coil_block", 66, 4, true, 1.0, "active=true"]]
+	BlockTemps = [["farmersdelight:stove", 0.676, 7, true, 0.7], ["minecraft:soul_fire", -0.476, 7, true, 0.8], ["minecraft:fire", 0.476, 7, true, 0.8], ["minecraft:magma_block", 0.5, 3, true, 0.6], ["minecraft:soul_campfire", -0.476, 3, true, 0.6, "lit=true"], ["minecraft:ice", -0.15, 4, true, 0.5], ["minecraft:packed_ice", -0.25, 4, true, 1.0], ["minecraft:blue_ice", -0.35, 4, true, 1.0], ["gtceu:cupronickel_coil_block", 66, 4, true, 1.0, "active=true"]]
 	#The maximum range of blocks' area of effect
 	#Note: This will not change anything unless blocks are configured to utilize the expanded range
 	#This value is capped at 16 for performance reasons

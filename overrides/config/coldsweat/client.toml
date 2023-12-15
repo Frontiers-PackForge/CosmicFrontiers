@@ -1,7 +1,7 @@
 #Show the config menu button in the Options menu
 "Enable In-Game Config" = true
 #The position (offset) of the config button on the screen
-"Config Button Position" = [0, 0]
+"Config Button Position" = [1, 0]
 #Displays areas that the Hearth is affecting when the F3 debug menu is open
 "Hearth Debug" = true
 #Enables visual distortion effects when the player is too hot or cold
@@ -22,7 +22,7 @@
 	"X Offset" = 0
 	#The y position of the icon relative to default
 	#Range: > -2147483648
-	"Y Offset" = 0
+	"Y Offset" = -3
 
 ["Position of the temperature readout below the icon"]
 	#The x position of the readout relative to default
@@ -30,7 +30,7 @@
 	"X Offset" = 0
 	#The y position of the readout relative to default
 	#Range: > -2147483648
-	"Y Offset" = 0
+	"Y Offset" = -3
 
 ["Position of the world temperature gauge beside the hotbar"]
 	#The x position of the gauge relative to default
