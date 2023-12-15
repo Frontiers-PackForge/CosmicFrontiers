@@ -204,17 +204,6 @@ event.custom({
               }
           }
       );
-
-      event.recipes.gtceu.assembler('sophisticatedstorage:' + nextTier + "_assembly") 
-         .itemInputs('2x #' + materialOne)
-         .itemInputs('4x ' + materialTwo)
-         .itemInputs('sophisticatedstorage:' + previousTier)
-         .itemOutputs('sophisticatedstorage:' + nextTier)
-
-// GHOSTI LOOK HERE!!!!!!!!!!!!!!
-// idk how gt values work to know what values should be here, so like, replace/fill in
-         .duration(40)
-         .EUt(16);
   }
 
   /* STORAGE */
