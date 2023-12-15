@@ -1,8 +1,5 @@
-//Don't use event.custom() unless it's needed by one of Sophs Mods
-
 ServerEvents.recipes(event => { 
     console.log('[SophisticatedMods.js loading]')
-    event.remove({ mod: 'sophisticatedstorage' })
 
 
 
@@ -123,7 +120,15 @@ event.custom({
     }
   })
 
-
+// event.shaped('sophisticatedbackpacks:iron_backpack', [
+    // 'PWP', 
+    // 'WBW', 
+    // 'PWP'  
+//   ], {
+    // P: 'gtceu:wrought_iron_plate',  
+    // B: 'sophisticatedbackpacks:backpack',
+    // W: 'cosmiccore:waxed_leather', 
+//   })
 
 
   })
