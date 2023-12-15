@@ -28,8 +28,8 @@
 			image: "frontiers:textures/questimages/miscicons/wingedborder.png"
 			rotation: 0.0d
 			width: 4.0d
-			x: 5.0513605442176726d
-			y: 5.488222789115632d
+			x: 5.071768707482974d
+			y: 5.488244047619027d
 		}
 	]
 	order_index: 0
@@ -355,7 +355,7 @@
 						Count: 1b
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "item_tag(forge:tools/wrench)item_tag(forge:tools/files)"
+							"ftbfiltersystem:filter": "item_tag(forge:tools/wrenches)"
 						}
 					}
 					title: "Any Wrench"
