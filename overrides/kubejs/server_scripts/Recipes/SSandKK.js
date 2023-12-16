@@ -29,21 +29,21 @@ ServerEvents.recipes( e => {
     
 
     
-//e.remove({ output: /(.*)longsword/ })
-//e.remove({ output: /(.*)twinblade/ })
-//e.remove({ output: /(.*)rapier/ })
-//e.remove({ output: /(.*)katana/ })
-//e.remove({ output: /(.*)sai/ })
-//e.remove({ output: /(.*)spear/ })
-//e.remove({ output: /(.*)glaive/ })
-//e.remove({ output: /(.*)warglaive/ })
-//e.remove({ output: /(.*)cutlass/ })
-//e.remove({ output: /(.*)claymore/ })
-//e.remove({ output: /(.*)greathammer/ })
-//e.remove({ output: /(.*)greataxe/ })
-//e.remove({ output: /(.*)chakram/ })
-//e.remove({ output: /(.*)scythe/ })
-//e.remove({ output: /(.*)halberd/ })
+e.remove({ output: /(.*)longsword/ })
+e.remove({ output: /(.*)twinblade/ })
+e.remove({ output: /(.*)rapier/ })
+e.remove({ output: /(.*)katana/ })
+e.remove({ output: /(.*)sai/ })
+e.remove({ output: /(.*)spear/ })
+e.remove({ output: /(.*)glaive/ })
+e.remove({ output: /(.*)warglaive/ })
+e.remove({ output: /(.*)cutlass/ })
+e.remove({ output: /(.*)claymore/ })
+e.remove({ output: /(.*)greathammer/ })
+e.remove({ output: /(.*)greataxe/ })
+e.remove({ output: /(.*)chakram/ })
+e.remove({ output: /(.*)scythe/ })
+e.remove({ output: /(.*)halberd/ })
 
 v_materials.forEach(item => {
     e.shaped(`simplyswords:${item}_longsword`, [ 
