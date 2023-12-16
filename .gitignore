@@ -40,3 +40,8 @@ package-lock.json
 .eslintrc
 package.json
 node-tail.js
+flame/
+libraries/
+minecraft/
+instance.cfg
+mmc-pack.json
