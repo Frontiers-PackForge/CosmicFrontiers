@@ -1887,7 +1887,7 @@ ServerEvents.recipes(e => {
             ' P '
         ],
         {
-            P: 'minecraft:bamboo_log'
+            P: 'minecraft:bamboo_block'
         })
 //Stalagnate
     e.remove({id: 'betternether:stalagnate_planks'})
@@ -3024,7 +3024,7 @@ ServerEvents.recipes(e => {
             ' P '
         ],
         {
-            P: '#aether_redux:springshroom_sprouts'
+            P: '#aether_redux:springshroom_stems'
         })
 //Crystal
     e.remove({id: 'aether_redux:crystal_planks'})
@@ -3043,7 +3043,7 @@ ServerEvents.recipes(e => {
             ' P '
         ],
         {
-            P: 'aether_redux:fieldsprout_log'
+            P: 'aether_redux:crystal_log'
         })
 //Glacia
     e.remove({id: 'aether_redux:glacia_planks'})
@@ -3138,7 +3138,7 @@ ServerEvents.recipes(e => {
             ' P '
         ],
         {
-            P: 'gtceu:rubber_wood_log'
+            P: 'gtceu:rubber_log'
         })
 //Fungyss
     e.remove({id: 'forbidden_arcanus:fungyss_planks'})
