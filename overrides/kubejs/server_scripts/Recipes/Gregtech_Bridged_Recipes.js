@@ -1854,18 +1854,18 @@ ServerEvents.recipes(e => {
 //Cherry Planks
     e.remove({id: 'minecraft:cherry_planks'})
     e.shaped('4x minecraft:cherry_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'minecraft:cherry_log'
         })
     e.shaped('2x minecraft:cherry_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'minecraft:cherry_log'
@@ -1873,18 +1873,18 @@ ServerEvents.recipes(e => {
 //Bamboo
     e.remove({id: 'minecraft:bamboo_planks'})
     e.shaped('4x minecraft:bamboo_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'minecraft:bamboo_block'
         })
     e.shaped('2x minecraft:bamboo_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'minecraft:bamboo_log'
@@ -1892,18 +1892,18 @@ ServerEvents.recipes(e => {
 //Stalagnate
     e.remove({id: 'betternether:stalagnate_planks'})
     e.shaped('4x betternether:stalagnate_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betternether:stalagnate_log'
         })
     e.shaped('2x betternether:stalagnate_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betternether:stalagnate_log'
@@ -1911,18 +1911,18 @@ ServerEvents.recipes(e => {
 //Willow
     e.remove({id: 'betternether:willow_planks'})
     e.shaped('4x betternether:willow_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betternether:willow_log'
         })
     e.shaped('2x betternether:willow_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betternether:willow_log'
@@ -1930,18 +1930,18 @@ ServerEvents.recipes(e => {
 //Wart
     e.remove({id: 'betternether:wart_planks'})
     e.shaped('4x betternether:wart_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betternether:wart_log'
         })
     e.shaped('2x betternether:wart_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betternether:wart_log'
@@ -1949,18 +1949,18 @@ ServerEvents.recipes(e => {
 //Rubeus
     e.remove({id: 'betternether:rubeus_planks'})
     e.shaped('4x betternether:rubeus_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betternether:rubeus_log'
         })
     e.shaped('2x betternether:rubeus_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betternether:rubeus_log'
@@ -1968,18 +1968,18 @@ ServerEvents.recipes(e => {
 //Mushroom Fir
     e.remove({id: 'betternether:mushroom_fir_planks'})
     e.shaped('4x betternether:mushroom_fir_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betternether:mushroom_fir_log'
         })
     e.shaped('2x betternether:mushroom_fir_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betternether:mushroom_fir_log'
@@ -1987,18 +1987,18 @@ ServerEvents.recipes(e => {
 //Mushroom
     e.remove({id: 'betternether:nether_mushroom_planks'})
     e.shaped('4x betternether:nether_mushroom_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betternether:nether_mushroom_stem'
         })
     e.shaped('2x betternether:nether_mushroom_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betternether:nether_mushroom_stem'
@@ -2006,18 +2006,18 @@ ServerEvents.recipes(e => {
 //Anchor
     e.remove({id: 'betternether:anchor_tree_planks'})
     e.shaped('4x betternether:anchor_tree_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betternether:anchor_tree_log'
         })
     e.shaped('2x betternether:anchor_tree_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betternether:anchor_tree_log'
@@ -2025,18 +2025,18 @@ ServerEvents.recipes(e => {
 //Nether Sakura
     e.remove({id: 'betternether:nether_sakura_planks'})
     e.shaped('4x betternether:nether_sakura_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betternether:nether_sakura_log'
         })
     e.shaped('2x betternether:nether_sakura_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betternether:nether_sakura_log'
@@ -2044,18 +2044,18 @@ ServerEvents.recipes(e => {
 //Mossy Glowshroom
     e.remove({id: 'betterend:mossy_glowshroom_planks'})
     e.shaped('4x betterend:mossy_glowshroom_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betterend:mossy_glowshroom_log'
         })
     e.shaped('2x betterend:mossy_glowshroom_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betterend:mossy_glowshroom_log'
@@ -2063,18 +2063,18 @@ ServerEvents.recipes(e => {
 //Pythadendron
     e.remove({id: 'betterend:pythadendron_planks'})
     e.shaped('4x betterend:pythadendron_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betterend:pythadendron_log'
         })
     e.shaped('2x betterend:pythadendron_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betterend:pythadendron_log'
@@ -2082,18 +2082,18 @@ ServerEvents.recipes(e => {
 //Endlotus
     e.remove({id: 'betterend:end_lotus_planks'})
     e.shaped('4x betterend:end_lotus_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betterend:end_lotus_log'
         })
     e.shaped('2x betterend:end_lotus_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betterend:end_lotus_log'
@@ -2101,18 +2101,18 @@ ServerEvents.recipes(e => {
 //Lacugrove
     e.remove({id: 'betterend:lacugrove_planks'})
     e.shaped('4x betterend:lacugrove_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betterend:lacugrove_log'
         })
     e.shaped('2x betterend:lacugrove_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betterend:lacugrove_log'
@@ -2120,18 +2120,18 @@ ServerEvents.recipes(e => {
 //Dragon Tree
     e.remove({id: 'betterend:dragon_tree_planks'})
     e.shaped('4x betterend:dragon_tree_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betterend:dragon_tree_log'
         })
     e.shaped('2x betterend:dragon_tree_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betterend:dragon_tree_log'
@@ -2139,18 +2139,18 @@ ServerEvents.recipes(e => {
 //Tenanea
     e.remove({id: 'betterend:tenanea_planks'})
     e.shaped('4x betterend:tenanea_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betterend:tenanea_log'
         })
     e.shaped('2x betterend:tenanea_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betterend:tenanea_log'
@@ -2158,18 +2158,18 @@ ServerEvents.recipes(e => {
 //Helix Tree
     e.remove({id: 'betterend:helix_tree_planks'})
     e.shaped('4x betterend:helix_tree_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betterend:helix_tree_log'
         })
     e.shaped('2x betterend:helix_tree_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betterend:helix_tree_log'
@@ -2177,18 +2177,18 @@ ServerEvents.recipes(e => {
 //Umbrella
     e.remove({id: 'betterend:umbrella_tree_planks'})
     e.shaped('4x betterend:umbrella_tree_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betterend:umbrella_tree_log'
         })
     e.shaped('2x betterend:umbrella_tree_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betterend:umbrella_tree_log'
@@ -2196,18 +2196,18 @@ ServerEvents.recipes(e => {
 //Anchor
     e.remove({id: 'betternether:anchor_tree_planks'})
     e.shaped('4x betternether:anchor_tree_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betternether:anchor_tree_log'
         })
     e.shaped('2x betternether:anchor_tree_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betternether:anchor_tree_log'
@@ -2215,18 +2215,18 @@ ServerEvents.recipes(e => {
 //Jellyshroom
     e.remove({id: 'betterend:jellyshroom_planks'})
     e.shaped('4x betterend:jellyshroom_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betterend:jellyshroom_log'
         })
     e.shaped('2x betterend:jellyshroom_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betterend:jellyshroom_log'
@@ -2234,18 +2234,18 @@ ServerEvents.recipes(e => {
 //Lucernia
     e.remove({id: 'betterend:lucernia_planks'})
     e.shaped('4x betterend:lucernia_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'betterend:lucernia_log'
         })
     e.shaped('2x betterend:lucernia_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'betterend:lucernia_log'
@@ -2253,18 +2253,18 @@ ServerEvents.recipes(e => {
 //Pream
     e.remove({id: 'phantasm:pream_planks'})
     e.shaped('4x phantasm:pream_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'phantasm:pream_log'
         })
     e.shaped('2x phantasm:pream_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'phantasm:pream_log'
@@ -2272,18 +2272,18 @@ ServerEvents.recipes(e => {
 //Undead
     e.remove({id: 'evilcraft:crafting/undead_planks'})
     e.shaped('4x evilcraft:undead_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'evilcraft:undead_log'
         })
     e.shaped('2x evilcraft:undead_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'evilcraft:undead_log'
@@ -2291,18 +2291,18 @@ ServerEvents.recipes(e => {
 //Livingwood
     e.remove({id: 'botania:livingwood_planks'})
     e.shaped('4x botania:livingwood_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'botania:livingwood_log'
         })
     e.shaped('2x botania:livingwood_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'botania:livingwood_log'
@@ -2310,18 +2310,18 @@ ServerEvents.recipes(e => {
 //Dreamwood
     e.remove({id: 'botania:dreamwood_planks'})
     e.shaped('4x botania:dreamwood_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'botania:dreamwood_log'
         })
     e.shaped('2x botania:dreamwood_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'botania:dreamwood_log'
@@ -2329,18 +2329,18 @@ ServerEvents.recipes(e => {
 //Fir
     e.remove({id: 'biomesoplenty:fir_planks'})
     e.shaped('4x biomesoplenty:fir_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'biomesoplenty:fir_log'
         })
     e.shaped('2x biomesoplenty:fir_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'biomesoplenty:fir_log'
@@ -2348,18 +2348,18 @@ ServerEvents.recipes(e => {
 //Redwood
     e.remove({id: 'biomesoplenty:redwood_planks'})
     e.shaped('4x biomesoplenty:redwood_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'biomesoplenty:redwood_log'
         })
     e.shaped('2x biomesoplenty:redwood_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'biomesoplenty:redwood_log'
@@ -2367,18 +2367,18 @@ ServerEvents.recipes(e => {
 //Mahogany
     e.remove({id: 'biomesoplenty:mahogany_planks'})
     e.shaped('4x biomesoplenty:mahogany_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'biomesoplenty:mahogany_log'
         })
     e.shaped('2x biomesoplenty:mahogany_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'biomesoplenty:mahogany_log'
@@ -2386,18 +2386,18 @@ ServerEvents.recipes(e => {
 //Jacaranda
     e.remove({id: 'biomesoplenty:jacaranda_planks'})
     e.shaped('4x biomesoplenty:jacaranda_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'biomesoplenty:jacaranda_log'
         })
     e.shaped('2x biomesoplenty:jacaranda_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'biomesoplenty:jacaranda_log'
@@ -2405,18 +2405,18 @@ ServerEvents.recipes(e => {
 //Palm
     e.remove({id: 'biomesoplenty:palm_planks'})
     e.shaped('4x biomesoplenty:palm_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'biomesoplenty:palm_log'
         })
     e.shaped('2x biomesoplenty:palm_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'biomesoplenty:palm_log'
@@ -2424,18 +2424,18 @@ ServerEvents.recipes(e => {
 //Willow
     e.remove({id: 'biomesoplenty:willow_planks'})
     e.shaped('4x biomesoplenty:willow_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'biomesoplenty:willow_log'
         })
     e.shaped('2x biomesoplenty:willow_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'biomesoplenty:willow_log'
@@ -2443,18 +2443,18 @@ ServerEvents.recipes(e => {
 //Dead
     e.remove({id: 'biomesoplenty:dead_planks'})
     e.shaped('4x biomesoplenty:dead_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'biomesoplenty:dead_log'
         })
     e.shaped('2x biomesoplenty:dead_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'biomesoplenty:dead_log'
@@ -2462,18 +2462,18 @@ ServerEvents.recipes(e => {
 //Magic
     e.remove({id: 'biomesoplenty:magic_planks'})
     e.shaped('4x biomesoplenty:magic_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'biomesoplenty:magic_log'
         })
     e.shaped('2x biomesoplenty:magic_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'biomesoplenty:magic_log'
@@ -2481,18 +2481,18 @@ ServerEvents.recipes(e => {
 //Umbran
     e.remove({id: 'biomesoplenty:umbran_planks'})
     e.shaped('4x biomesoplenty:umbran_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'biomesoplenty:umbran_log'
         })
     e.shaped('2x biomesoplenty:umbran_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'biomesoplenty:umbran_log'
@@ -2500,18 +2500,18 @@ ServerEvents.recipes(e => {
 //Hellbark
     e.remove({id: 'biomesoplenty:hellbark_planks'})
     e.shaped('4x biomesoplenty:hellbark_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'biomesoplenty:hellbark_log'
         })
     e.shaped('2x biomesoplenty:hellbark_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'biomesoplenty:jacaranda_log'
@@ -2519,18 +2519,18 @@ ServerEvents.recipes(e => {
 //Menril
     e.remove({id: 'integrateddynamics:crafting/menril_planks'})
     e.shaped('4x integrateddynamics:menril_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'integrateddynamics:menril_log'
         })
     e.shaped('2x integrateddynamics:menril_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'integrateddynamics:menril_log'
@@ -2538,18 +2538,18 @@ ServerEvents.recipes(e => {
 //Aeronos
     e.remove({id: 'ad_astra:recipes/aeronos_planks'})
     e.shaped('4x ad_astra:aeronos_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: '#ad_astra:aeronos_caps'
         })
     e.shaped('2x ad_astra:aeronos_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: '#ad_astra:aeronos_caps'
@@ -2557,18 +2557,18 @@ ServerEvents.recipes(e => {
 //Strophar
     e.remove({id: 'ad_astra:recipes/strophar_planks'})
     e.shaped('4x ad_astra:strophar_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: '#ad_astra:strophar_caps'
         })
     e.shaped('2x ad_astra:strophar_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: '#ad_astra:strophar_caps'
@@ -2576,18 +2576,18 @@ ServerEvents.recipes(e => {
 //Glacian
     e.remove({id: 'ad_astra:recipes/glacian_planks'})
     e.shaped('4x ad_astra:glacian_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'ad_astra:glacian_log'
         })
     e.shaped('2x ad_astra:glacian_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'ad_astra:glacian_log'
@@ -2595,18 +2595,18 @@ ServerEvents.recipes(e => {
 //Bluebright
     e.remove({id: 'blue_skies:bluebright_planks'})
     e.shaped('4x blue_skies:bluebright_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'blue_skies:bluebright_log'
         })
     e.shaped('2x blue_skies:bluebright_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'blue_skies:bluebright_log'
@@ -2614,18 +2614,18 @@ ServerEvents.recipes(e => {
 //Bluebright
     e.remove({id: 'blue_skies:bluebright_planks'})
     e.shaped('4x blue_skies:bluebright_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'blue_skies:bluebright_log'
         })
     e.shaped('2x blue_skies:bluebright_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'blue_skies:bluebright_log'
@@ -2633,18 +2633,18 @@ ServerEvents.recipes(e => {
 //Starlit
     e.remove({id: 'blue_skies:starlit_planks'})
     e.shaped('4x blue_skies:starlit_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'blue_skies:starlit_log'
         })
     e.shaped('2x blue_skies:starlit_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'blue_skies:starlit_log'
@@ -2652,18 +2652,18 @@ ServerEvents.recipes(e => {
 //Frostbright
     e.remove({id: 'blue_skies:frostbright_planks'})
     e.shaped('4x blue_skies:frostbright_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'blue_skies:frostbright_log'
         })
     e.shaped('2x blue_skies:frostbright_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'blue_skies:frostbright_log'
@@ -2671,18 +2671,18 @@ ServerEvents.recipes(e => {
 //Lunar
     e.remove({id: 'blue_skies:lunar_planks'})
     e.shaped('4x blue_skies:lunar_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'blue_skies:lunar_log'
         })
     e.shaped('2x blue_skies:lunar_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'blue_skies:lunar_log'
@@ -2690,18 +2690,18 @@ ServerEvents.recipes(e => {
 //Dusk
     e.remove({id: 'blue_skies:dusk_planks'})
     e.shaped('4x blue_skies:dusk_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'blue_skies:dusk_log'
         })
     e.shaped('2x blue_skies:dusk_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'blue_skies:dusk_log'
@@ -2709,18 +2709,18 @@ ServerEvents.recipes(e => {
 //Maple
     e.remove({id: 'blue_skies:maple_planks'})
     e.shaped('4x blue_skies:maple_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'blue_skies:maple_log'
         })
     e.shaped('2x blue_skies:maple_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'blue_skies:maple_log'
@@ -2728,18 +2728,18 @@ ServerEvents.recipes(e => {
 //Crystallized
     e.remove({id: 'blue_skies:crystallized_planks'})
     e.shaped('4x blue_skies:crystallized_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'blue_skies:crystallized_log'
         })
     e.shaped('2x blue_skies:crystallized_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'blue_skies:crystallized_log'
@@ -2747,56 +2747,110 @@ ServerEvents.recipes(e => {
 //Comet
     e.remove({id: 'blue_skies:comet_planks'})
     e.shaped('4x blue_skies:comet_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'blue_skies:comet_log'
         })
     e.shaped('2x blue_skies:comet_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'blue_skies:comet_log'
         })
-//Archwood
+//Blue Archwood
     e.remove({id: 'ars_nouveau:archwood_planks'})
     e.shaped('4x ars_nouveau:archwood_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
-            P: 'ars_nouveau:archwood_log'
+            P: 'ars_nouveau:blue_archwood_log'
         })
     e.shaped('2x ars_nouveau:archwood_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
-            P: 'ars_nouveau:archwood_log'
+            P: 'ars_nouveau:blue_archwood_log'
+        })
+//Red Archwood
+    e.shaped('4x ars_nouveau:archwood_planks', [
+            '   ',
+            ' T ',
+            ' P '
+        ],
+        {
+            T: '#forge:tools/saws',
+            P: 'ars_nouveau:red_archwood_log'
+        })
+    e.shaped('2x ars_nouveau:archwood_planks', [
+            '   ',
+            '   ',
+            ' P '
+        ],
+        {
+            P: 'ars_nouveau:red_archwood_log'
+        })
+//Purple Archwood
+    e.shaped('4x ars_nouveau:archwood_planks', [
+            '   ',
+            ' T ',
+            ' P '
+        ],
+        {
+            T: '#forge:tools/saws',
+            P: 'ars_nouveau:purple_archwood_log'
+        })
+    e.shaped('2x ars_nouveau:archwood_planks', [
+            '   ',
+            '   ',
+            ' P '
+        ],
+        {
+            P: 'ars_nouveau:purple_archwood_log'
+        })
+//Green Archwood
+    e.shaped('4x ars_nouveau:archwood_planks', [
+            '   ',
+            ' T ',
+            ' P '
+        ],
+        {
+            T: '#forge:tools/saws',
+            P: 'ars_nouveau:green_archwood_log'
+        })
+    e.shaped('2x ars_nouveau:archwood_planks', [
+            '   ',
+            '   ',
+            ' P '
+        ],
+        {
+            P: 'ars_nouveau:green_archwood_log'
         })
 //Skyroot
     e.remove({id: 'aether:skyroot_planks'})
     e.shaped('4x aether:skyroot_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'aether:skyroot_log'
         })
     e.shaped('2x aether:skyroot_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'aether:skyroot_log'
@@ -2804,18 +2858,18 @@ ServerEvents.recipes(e => {
 //Roseroot
     e.remove({id: 'deep_aether:roseroot_planks'})
     e.shaped('4x deep_aether:roseroot_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'deep_aether:roseroot_log'
         })
     e.shaped('2x deep_aether:roseroot_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'deep_aether:roseroot_log'
@@ -2823,18 +2877,18 @@ ServerEvents.recipes(e => {
 //Yagroot
     e.remove({id: 'deep_aether:yagroot_planks'})
     e.shaped('4x deep_aether:yagroot_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'deep_aether:yagroot_log'
         })
     e.shaped('2x deep_aether:yagroot_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'deep_aether:yagroot_log'
@@ -2842,18 +2896,18 @@ ServerEvents.recipes(e => {
 //Cruderoot
     e.remove({id: 'deep_aether:cruderoot_planks'})
     e.shaped('4x deep_aether:cruderoot_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'deep_aether:cruderoot_log'
         })
     e.shaped('2x deep_aether:cruderoot_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'deep_aether:cruderoot_log'
@@ -2861,18 +2915,18 @@ ServerEvents.recipes(e => {
 //Conberry
     e.remove({id: 'deep_aether:conberry_planks'})
     e.shaped('4x deep_aether:conberry_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'deep_aether:conberry_log'
         })
     e.shaped('2x deep_aether:conberry_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'deep_aether:conberry_log'
@@ -2880,18 +2934,18 @@ ServerEvents.recipes(e => {
 //Sunroot
     e.remove({id: 'deep_aether:sunroot_planks'})
     e.shaped('4x deep_aether:sunroot_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'deep_aether:sunroot_log'
         })
     e.shaped('2x deep_aether:sunroot_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'deep_aether:sunroot_log'
@@ -2899,18 +2953,18 @@ ServerEvents.recipes(e => {
 //Fieldsprout
     e.remove({id: 'aether_redux:fieldsprout_planks'})
     e.shaped('4x aether_redux:fieldsprout_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'aether_redux:fieldsprout_log'
         })
     e.shaped('2x aether_redux:fieldsprout_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'aether_redux:fieldsprout_log'
@@ -2918,18 +2972,18 @@ ServerEvents.recipes(e => {
 //Blightwillow
     e.remove({id: 'aether_redux:blightwillow_planks'})
     e.shaped('4x aether_redux:blightwillow_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'aether_redux:blightwillow_log'
         })
     e.shaped('2x aether_redux:blightwillow_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'aether_redux:blightwillow_log'
@@ -2937,18 +2991,18 @@ ServerEvents.recipes(e => {
 //Cloudcap
     e.remove({id: 'aether_redux:cloudcap_planks'})
     e.shaped('4x aether_redux:cloudcap_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: '#aether_redux:cloudcap_stems'
         })
     e.shaped('2x aether_redux:cloudcap_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: '#aether_redux:cloudcap_stems'
@@ -2956,18 +3010,18 @@ ServerEvents.recipes(e => {
 //Springshroom
     e.remove({id: 'aether_redux:springshroom_planks'})
     e.shaped('4x aether_redux:springshroom_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: '#aether_redux:springshroom_stems'
         })
     e.shaped('2x aether_redux:springshroom_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: '#aether_redux:springshroom_sprouts'
@@ -2975,18 +3029,18 @@ ServerEvents.recipes(e => {
 //Crystal
     e.remove({id: 'aether_redux:crystal_planks'})
     e.shaped('4x aether_redux:crystal_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'aether_redux:crystal_log'
         })
     e.shaped('2x aether_redux:crystal_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'aether_redux:fieldsprout_log'
@@ -2994,18 +3048,18 @@ ServerEvents.recipes(e => {
 //Glacia
     e.remove({id: 'aether_redux:glacia_planks'})
     e.shaped('4x aether_redux:glacia_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'aether_redux:glacia_log'
         })
     e.shaped('2x aether_redux:glacia_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'aether_redux:glacia_log'
@@ -3013,18 +3067,18 @@ ServerEvents.recipes(e => {
 //Smogstem
     e.remove({id: 'undergarden:smogstem_planks'})
     e.shaped('4x undergarden:smogstem_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'undergarden:smogstem_log'
         })
     e.shaped('2x undergarden:smogstem_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'undergarden:smogstem_log'
@@ -3032,18 +3086,18 @@ ServerEvents.recipes(e => {
 //Wigglewood
     e.remove({id: 'undergarden:wigglewood_planks'})
     e.shaped('4x undergarden:wigglewood_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'undergarden:wigglewood_log'
         })
     e.shaped('2x undergarden:wigglewood_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'undergarden:wigglewood_log'
@@ -3051,18 +3105,18 @@ ServerEvents.recipes(e => {
 //Grongle
     e.remove({id: 'undergarden:grongle_planks'})
     e.shaped('4x undergarden:grongle_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'undergarden:grongle_log'
         })
     e.shaped('2x undergarden:grongle_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'undergarden:grongle_log'
@@ -3070,18 +3124,18 @@ ServerEvents.recipes(e => {
 //Rubber
     e.remove({id: 'gtceu:shapeless/rubber_wood_planks'})
     e.shaped('4x gtceu:rubber_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
-            P: 'gtceu:rubber_wood_log'
+            P: 'gtceu:rubber_log'
         })
     e.shaped('2x gtceu:rubber_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'gtceu:rubber_wood_log'
@@ -3089,18 +3143,18 @@ ServerEvents.recipes(e => {
 //Fungyss
     e.remove({id: 'forbidden_arcanus:fungyss_planks'})
     e.shaped('4x forbidden_arcanus:fungyss_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: '#forbidden_arcanus:fungyss_stems'
         })
     e.shaped('2x forbidden_arcanus:fungyss_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: '#forbidden_arcanus:fungyss_stems'
@@ -3108,18 +3162,18 @@ ServerEvents.recipes(e => {
 //Aurum
     e.remove({id: 'forbidden_arcanus:aurum_planks'})
     e.shaped('4x forbidden_arcanus:aurum_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'forbidden_arcanus:aurum_log'
         })
     e.shaped('2x forbidden_arcanus:aurum_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'forbidden_arcanus:aurum_log'
@@ -3127,40 +3181,22 @@ ServerEvents.recipes(e => {
 //Edelwood
     e.remove({id: 'forbidden_arcanus:edelwood_planks'})
     e.shaped('4x forbidden_arcanus:edelwood_planks', [
-            'T  ',
-            'P  ',
-            '   '
+            '   ',
+            ' T ',
+            ' P '
         ],
         {
             T: '#forge:tools/saws',
             P: 'forbidden_arcanus:edelwood_log'
         })
     e.shaped('2x forbidden_arcanus:edelwood_planks', [
-            'P  ',
             '   ',
-            '   '
+            '   ',
+            ' P '
         ],
         {
             P: 'forbidden_arcanus:edelwood_log'
         })
-//Arcane Edelwood
-    e.remove({id: 'forbidden_arcanus:arcane_edelwood_planks'})
-    e.shaped('4x forbidden_arcanus:arcane_edelwood_planks', [
-            'T  ',
-            'P  ',
-            '   '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'forbidden_arcanus:arcane_edelwood_log'
-        })
-    e.shaped('2x forbidden_arcanus:arcane_edelwood_planks', [
-            'P  ',
-            '   ',
-            '   '
-        ],
-        {
-            P: 'forbidden_arcanus:arcane_edelwood_log'
-        })
+
 // PLANKS FINISHED
 })
