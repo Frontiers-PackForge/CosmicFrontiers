@@ -3200,3 +3200,104 @@ ServerEvents.recipes(e => {
 
 // PLANKS FINISHED
 })
+
+//CREATE SAW BRIDGING
+ServerEvents.recipes(e => {
+    //Stalagnate
+    e.recipes.create.cutting('betternether:stalagnate_stripped_log', 'betternether:stalagnate_log').processingTime(50)
+    e.recipes.create.cutting('6x betternether:stalagnate_planks', 'betternether:stalagnate_stripped_log').processingTime(50)
+    //Willow
+    e.recipes.create.cutting('betternether:willow_stripped_log', 'betternether:willow_log').processingTime(50)
+    e.recipes.create.cutting('6x betternether:willow_planks', 'betternether:willow_stripped_log').processingTime(50)
+    //Wart
+    e.recipes.create.cutting('betternether:wart_stripped_log', 'betternether:wart_log').processingTime(50)
+    e.recipes.create.cutting('6x betternether:wart_planks', 'betternether:wart_stripped_log').processingTime(50)
+    //Rubeus
+    e.recipes.create.cutting('betternether:rubeus_stripped_log', 'betternether:rubeus_log').processingTime(50)
+    e.recipes.create.cutting('6x betternether:rubeus_planks', 'betternether:rubeus_stripped_log').processingTime(50)
+    //Mushroom Fir
+    e.recipes.create.cutting('betternether:mushroom_fir_stripped_log', 'betternether:mushroom_fir_log').processingTime(50)
+    e.recipes.create.cutting('6x betternether:mushroom_fir_planks', 'betternether:mushroom_fir_stripped_log').processingTime(50)
+    //Anchor Tree
+    e.recipes.create.cutting('betternether:anchor_tree_stripped_log', 'betternether:anchor_tree_log').processingTime(50)
+    e.recipes.create.cutting('6x betternether:anchor_tree_planks', 'betternether:anchor_tree_stripped_log').processingTime(50)
+    //Nether Sakura
+    e.recipes.create.cutting('betternether:nether_sakura_stripped_log', 'betternether:nether_sakura_log').processingTime(50)
+    e.recipes.create.cutting('6x betternether:nether_sakura_planks', 'betternether:nether_sakura_stripped_log').processingTime(50)
+    //Mossy Glowshroom
+    e.recipes.create.cutting('betterend:mossy_glowshroom_stripped_log', 'betterend:mossy_glowshroom_log').processingTime(50)
+    e.recipes.create.cutting('6x betterend:mossy_glowshroom_planks', 'betterend:mossy_glowshroom_stripped_log').processingTime(50)
+    //Pythadendron
+    e.recipes.create.cutting('betterend:pythadendron_stripped_log', 'betterend:pythadendron_fir_log').processingTime(50)
+    e.recipes.create.cutting('6x betterend:pythadendron_planks', 'betterend:pythadendron_stripped_log').processingTime(50)
+    //End Lotus
+    e.recipes.create.cutting('betterend:end_lotus_stripped_log', 'betterend:end_lotus_log').processingTime(50)
+    e.recipes.create.cutting('6x betterend:end_lotus_planks', 'betterend:end_lotus_stripped_log').processingTime(50)
+    //Lacugrove
+    e.recipes.create.cutting('betterend:lacugrove_stripped_log', 'betterend:lacugrove_log').processingTime(50)
+    e.recipes.create.cutting('6x betterend:lacugrove_planks', 'betterend:lacugrove_stripped_log').processingTime(50)
+    //Dragon Tree
+    e.recipes.create.cutting('betterend:dragon_tree_stripped_log', 'betterend:dragon_tree_log').processingTime(50)
+    e.recipes.create.cutting('6x betterend:dragon_tree_planks', 'betterend:dragon_tree_stripped_log').processingTime(50)
+    //Tenanea
+    e.recipes.create.cutting('betterend:tenanea_stripped_log', 'betterend:tenanea_log').processingTime(50)
+    e.recipes.create.cutting('6x betterend:tenanea_planks', 'betterend:tenanea_stripped_log').processingTime(50)
+    //Helix Tree
+    e.recipes.create.cutting('betterend:helix_tree_stripped_log', 'betterend:helix_tree_log').processingTime(50)
+    e.recipes.create.cutting('6x betterend:helix_tree_planks', 'betterend:helix_tree_stripped_log').processingTime(50)
+    //Umbrella Tree
+    e.recipes.create.cutting('betterend:umbrella_tree_stripped_log', 'betterend:umbrella_tree_log').processingTime(50)
+    e.recipes.create.cutting('6x betterend:umbrella_tree_planks', 'betterend:umbrella_tree_stripped_log').processingTime(50)
+    //Jellyshroom
+    e.recipes.create.cutting('betterend:jellyshroom_stripped_log', 'betterend:jellyshroom_log').processingTime(50)
+    e.recipes.create.cutting('6x betterend:jellyshroom_planks', 'betterend:jellyshroom_stripped_log').processingTime(50)
+    //Lucernia
+    e.recipes.create.cutting('betterend:lucernia_stripped_log', 'betterend:lucernia_log').processingTime(50)
+    e.recipes.create.cutting('6x betterend:lucernia_planks', 'betterend:lucernia_stripped_log').processingTime(50)
+    //Pream
+    e.recipes.create.cutting('phantasm:stripped_pream_log', 'phantasm:pream_log').processingTime(50)
+    e.recipes.create.cutting('6x phantasm:pream_planks', 'phantasm:stripped_pream_log').processingTime(50)
+    //Undead
+    e.recipes.create.cutting('evilcraft:undead_stripped_log', 'evilcraft:undead_log').processingTime(50)
+    e.recipes.create.cutting('6x evilcraft:undead_planks', 'evilcraft:undead_stripped_log').processingTime(50)
+    //Roseroot
+    e.recipes.create.cutting('deep_aether:stripped_roseroot_log', 'deep_aether:roseroot_log').processingTime(50)
+    e.recipes.create.cutting('6x deep_aether:roseroot_planks', 'deep_aether:stripped_roseroot_log').processingTime(50)
+    //Yagroot
+    e.recipes.create.cutting('deep_aether:stripped_yagroot_log', 'deep_aether:yagroot_log').processingTime(50)
+    e.recipes.create.cutting('6x deep_aether:yagroot_planks', 'deep_aether:stripped_yagroot_log').processingTime(50)
+    //Cruderoot
+    e.recipes.create.cutting('deep_aether:stripped_cruderoot_log', 'deep_aether:cruderoot_log').processingTime(50)
+    e.recipes.create.cutting('6x deep_aether:cruderoot_planks', 'deep_aether:stripped_cruderoot_log').processingTime(50)
+    //Conberry
+    e.recipes.create.cutting('deep_aether:stripped_conberry_log', 'deep_aether:conberry_log').processingTime(50)
+    e.recipes.create.cutting('6x deep_aether:conberry_planks', 'deep_aether:stripped_conberry_log').processingTime(50)
+    //Sunroot
+    e.recipes.create.cutting('deep_aether:stripped_sunroot_log', 'deep_aether:sunroot_log').processingTime(50)
+    e.recipes.create.cutting('6x deep_aether:sunroot_planks', 'deep_aether:stripped_sunroot_log').processingTime(50)
+    //Fieldsprout
+    e.recipes.create.cutting('aether_redux:stripped_fieldsprout_log', 'aether_redux:fieldsprout_log').processingTime(50)
+    e.recipes.create.cutting('6x aether_redux:fieldsprout_planks', 'aether_redux:stripped_fieldsprout_log').processingTime(50)
+    //Blightwillow
+    e.recipes.create.cutting('aether_redux:stripped_blightwillow_log', 'aether_redux:blightwillow_log').processingTime(50)
+    e.recipes.create.cutting('6x aether_redux:blightwillow_planks', 'aether_redux:stripped_blightwillow_log').processingTime(50)
+    //Crystal
+    e.recipes.create.cutting('aether_redux:stripped_crystal_log', 'aether_redux:crystal_log').processingTime(50)
+    e.recipes.create.cutting('6x aether_redux:crystal_planks', 'aether_redux:stripped_crystal_log').processingTime(50)
+    //Glacia
+    e.recipes.create.cutting('aether_redux:stripped_glacia_log', 'aether_redux:glacia_log').processingTime(50)
+    e.recipes.create.cutting('6x aether_redux:glacia_planks', 'aether_redux:stripped_glacia_log').processingTime(50)
+    //Smogstem
+    e.recipes.create.cutting('undergarden:stripped_smogstem_log', 'undergarden:smogstem_log').processingTime(50)
+    e.recipes.create.cutting('6x undergarden:smogstem_planks', 'undergarden:stripped_smogstem_log').processingTime(50)
+    //Wigglewood
+    e.recipes.create.cutting('undergarden:stripped_wigglewood_log', 'undergarden:wigglewood_log').processingTime(50)
+    e.recipes.create.cutting('6x undergarden:wigglewood_planks', 'undergarden:stripped_wigglewood_log').processingTime(50)
+    //Grongle
+    e.recipes.create.cutting('undergarden:stripped_grongle_log', 'undergarden:grongle_log').processingTime(50)
+    e.recipes.create.cutting('6x undergarden:grongle_planks', 'undergarden:stripped_grongle_log').processingTime(50)
+    //Aurum
+    e.recipes.create.cutting('forbidden_arcanus:stripped_aurum_log', 'forbidden_arcanus:aurum_log').processingTime(50)
+    e.recipes.create.cutting('6x forbidden_arcanus:aurum_planks', 'forbidden_arcanus:stripped_aurum_log').processingTime(50)
+
+})
