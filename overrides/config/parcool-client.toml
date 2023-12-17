@@ -1,0 +1,207 @@
+
+["Possibility of Actions(Some do not have to work)"]
+	can_BreakfallReady = true
+	can_CatLeap = true
+	can_ClimbPoles = true
+	can_ClimbUp = true
+	can_ClingToCliff = true
+	can_Crawl = true
+	can_Dive = true
+	can_Dodge = true
+	can_FastRun = true
+	can_Flipping = true
+	can_HangDown = true
+	can_HorizontalWallRun = true
+	can_JumpFromBar = true
+	can_QuickTurn = true
+	can_Roll = true
+	can_SkyDive = true
+	can_Slide = true
+	can_Tap = true
+	can_Vault = true
+	can_VerticalWallRun = true
+	can_WallJump = true
+	can_WallSlide = true
+
+["Stamina HUD Configuration"]
+	#Allowed Values: Normal, Light, Hide
+	stamina_hud_type = "Light"
+	#horizontal alignment
+	#Allowed Values: Left, Right
+	align_h_s_hud = "Right"
+	#vertical alignment
+	#Allowed Values: Top, Bottom
+	align_v_s_hud = "Bottom"
+	hide_hud_if_stamina_infinite = true
+	#horizontal margin of normal HUD
+	#Range: 0 ~ 100
+	margin_h_stamina_hud = 3
+	#vertical margin of normal HUD
+	#Range: 0 ~ 100
+	margin_v_stamina_hud = 3
+
+[Animations]
+	#Enable custom animations
+	enable_animation = true
+	#Enable custom animation of falling
+	enable_falling_animation = true
+	#Enable first-person-view animations
+	enable_fov_animation = true
+	#Enable rotation of camera by Dodge
+	enable_camera_rotation_dodge = false
+	#Enable rotation of camera by Backward Wall-Jump
+	enable_camera_rotation_back_wall_jump = true
+	#Enable rotation of camera by Roll
+	enable_camera_rotation_roll = true
+	#Enable rotation of camera by Flipping
+	enable_camera_rotation_flipping = true
+	#Enable animation of camera by Vault
+	enable_camera_animation_vault = false
+	#Enable animation of camera by Horizontal-WallRun
+	enable_camera_animation_h-wall-run = true
+	#Enable animation of camera by Hang-Down
+	enable_camera_animation_hang-down = true
+
+	[Animations.Animators]
+		enable_BackwardWallJumpAnimator = true
+		enable_CatLeapAnimator = true
+		enable_ClimbUpAnimator = true
+		enable_ClingToCliffAnimator = true
+		enable_CrawlAnimator = true
+		enable_DiveAnimationHostAnimator = true
+		enable_DodgeAnimator = true
+		enable_FastRunningAnimator = true
+		enable_FlippingAnimator = true
+		enable_HorizontalWallRunAnimator = true
+		enable_JumpFromBarAnimator = true
+		enable_HangAnimator = true
+		enable_KongVaultAnimator = true
+		enable_RollAnimator = true
+		enable_SlidingAnimator = true
+		enable_SpeedVaultAnimator = true
+		enable_TapAnimator = true
+		enable_VerticalWallRunAnimator = true
+		enable_WallJumpAnimator = true
+		enable_WallSlideAnimator = true
+
+[Control]
+	#Control of FastRun
+	#Allowed Values: PressKey, Toggle, Auto
+	fast-run_control = "PressKey"
+	#Control of FastRun
+	#Allowed Values: PressKey, Toggle
+	crawl_control = "PressKey"
+	#Enable double-tapping ctrl for Dodge
+	enable_double_tapping_for_dodge = false
+	#Enable Crawl in air
+	enable_crawl_in_air = true
+	#Enable Vault in air
+	enable_vault_in_air = true
+	#Enable backward Wall-Jump when facing to wall
+	enable_wall_jump_backward = false
+	#Enable Roll when creative mode (experimental)
+	enable_roll_creative = false
+	#Make Vault Need Vault Key Pressed
+	vault_needs_key_pressed = false
+	#enable players to do actions needing Fast-Running by sprint
+	substitute_sprint = false
+	#How long duration of dodge is deal as successive dodge
+	#Range: > 0
+	successive_dodge_cool_time = 30
+	#Cool time of Dodge action
+	#Range: > 11
+	dodge_cool_time = 11
+	#Max number of times of successive Dodge action
+	#Range: > 1
+	successive_dodge_count = 3
+
+[Modifier]
+	#How long you can do Horizontal Wall Run
+	#Range: 15 ~ 40
+	wall-run_continuable_tick = 25
+	#How long you can do Slide
+	#Range: 10 ~ 30
+	sliding_continuable_tick = 15
+	#FastRun speed modifier
+	#Range: 0.001 ~ 4.0
+	fast-run_modifier = 2.0
+	#Dodge speed modifier
+	#Range: 0.5 ~ 1.5
+	dodge-speed_modifier = 1.0
+
+["Other Configuration"]
+	#Vault Animation(Dynamic is to select animation dynamically)
+	#Allowed Values: SpeedVault, KongVault, Dynamic
+	vault_animation_mode = "Dynamic"
+	#Color theme of Setting GUI
+	#Allowed Values: Red, Green, Blue, Yellow, Black
+	gui_color_theme = "Blue"
+	#Enable just timing effect of Breakfall
+	enable_just_time_effect_breakfall = true
+	#Enable sounds triggered by Action
+	enable_sounds = true
+	#Whether ParCool is active
+	parcool_activation = true
+
+[Stamina]
+
+	[Stamina.Consumption]
+		#Range: 0 ~ 10000
+		stamina_consumption_of_BreakfallReady = 0
+		#Range: 0 ~ 10000
+		stamina_consumption_of_CatLeap = 150
+		#Range: 0 ~ 10000
+		stamina_consumption_of_ClimbPoles = 0
+		#Range: 0 ~ 10000
+		stamina_consumption_of_ClimbUp = 150
+		#Range: 0 ~ 10000
+		stamina_consumption_of_ClingToCliff = 2
+		#Range: 0 ~ 10000
+		stamina_consumption_of_Crawl = 0
+		#Range: 0 ~ 10000
+		stamina_consumption_of_Dive = 0
+		#Range: 0 ~ 10000
+		stamina_consumption_of_Dodge = 80
+		#Range: 0 ~ 10000
+		stamina_consumption_of_FastRun = 2
+		#Range: 0 ~ 10000
+		stamina_consumption_of_Flipping = 80
+		#Range: 0 ~ 10000
+		stamina_consumption_of_HangDown = 3
+		#Range: 0 ~ 10000
+		stamina_consumption_of_HorizontalWallRun = 2
+		#Range: 0 ~ 10000
+		stamina_consumption_of_JumpFromBar = 100
+		#Range: 0 ~ 10000
+		stamina_consumption_of_QuickTurn = 0
+		#Range: 0 ~ 10000
+		stamina_consumption_of_Roll = 100
+		#Range: 0 ~ 10000
+		stamina_consumption_of_SkyDive = 0
+		#Range: 0 ~ 10000
+		stamina_consumption_of_Slide = 0
+		#Range: 0 ~ 10000
+		stamina_consumption_of_Tap = 100
+		#Range: 0 ~ 10000
+		stamina_consumption_of_Vault = 50
+		#Range: 0 ~ 10000
+		stamina_consumption_of_VerticalWallRun = 150
+		#Range: 0 ~ 10000
+		stamina_consumption_of_WallJump = 120
+		#Range: 0 ~ 10000
+		stamina_consumption_of_WallSlide = 2
+		#additional stamina mod dependency(only when it's installed)
+		#Allowed Values: None, Paraglider
+		external_stamina = "Paraglider"
+		#Infinite Stamina (this needs a permission from server, even if it is on single player's game. normally permitted)
+		#Please check 'parcool-server.toml' in 'serverconfig' directory
+		infinite_stamina = false
+		#Infinite Stamina while player is cretive mode
+		infinite_stamina_if_creative_mode = true
+		#ParCool consume hanger value instead of stamina
+		use_hanger_instead = false
+		#Range: 300 ~ 10000
+		max_stamina = 2000
+		#Range: 1 ~ 10000
+		stamina_recovery = 20
+

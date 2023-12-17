@@ -30,6 +30,19 @@ ServerEvents.recipes(event => {
            'gtceu:nether_brick_dust_dust',
            'gtceu:clay_dust'	
          ])
+    event.recipes.gtceu.flora_nurturer('gtceu:nurture_lucis_spore') 
+         .itemInputs('betternether:lucis_spore')
+         .inputFluids(Fluid.of('minecraft:water', 1000))
+         .itemOutputs('cosmiccore:engourged_spore')
+         .itemOutputs('betternether:lucis_spore')
+         .chancedOutput(Item.of('betternether:lucis_spore', 1), 5000, 500)     
+         .duration(160)
+         .EUt(16); 
+    event.recipes.gtceu.nether_catalyzer('gtceu:catalyze_spore') 
+         .itemInputs('cosmiccore:engourged_spore')
+         .outputFluids(Fluid.of('gtceu:ethanol', 288))   
+         .duration(80)
+         .EUt(16); 
 
 //Crafting Recipes
 //Wrought Iron Base Molds
@@ -93,3 +106,7 @@ ServerEvents.tags('block', event => {
     event.remove('aether:aether_portal_blocks', 'minecraft:glowstone'),
     event.add('aether:aether_portal_blocks', 'gtceu:frostproof_machine_casing')
   })
+
+
+
+

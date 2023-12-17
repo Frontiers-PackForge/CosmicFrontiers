@@ -1,3 +1,6 @@
 {
-    "tagprefix.holystone": "%s Holystone Ore"
+    "tagprefix.holystone": "%s Holystone Ore",
+    "block.gtceu.flora_nurturer": "Flora Nurturer",
+    "block.gtceu.nether_catalyzer": "Nether Catalyzer",
+    "block.gtceu.masonry_oven": "Masonry Oven"
   }

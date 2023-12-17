@@ -1,0 +1,31 @@
+{
+    "net.minecraft.client.gui.screens.inventory.InventoryScreen": {
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": 3,
+                "bottom": 1
+            },
+            "SORT_COLUMNS": {
+                "bottom": 24
+            },
+            "CONTINUOUS_CRAFTING": {
+                "bottom": -4
+            },
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 3
+            }
+        }
+    },
+    "com.lowdragmc.lowdraglib.gui.modular.ModularUIGuiContainer": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 299,
+                "bottom": 88
+            },
+            "SORT": {
+                "horizontalOffset": 310,
+                "bottom": 100
+            }
+        }
+    }
+}
