@@ -3,7 +3,7 @@
     "hintOverlayToggle": false,
     "hintNarratorToggle": true,
     "previewOverlay": true,
-    "displayTooltip": false,
+    "displayTooltip": true,
     "displayBlocks": true,
     "displayEntities": true,
     "displayBosses": true,

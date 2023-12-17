@@ -257,16 +257,16 @@
 			}]
 			subtitle: "I don't care how you get it."
 			tasks: [{
-				icon: "minecraft:raw_iron"
-				id: "08E3DCD2ED0BDCD5"
+				icon: "gtceu:raw_chalcopyrite"
+				id: "66CE60678CA958A4"
 				item: {
 					Count: 1b
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "item_tag(minecraft:logs)"
+						"ftbfiltersystem:filter": "item_tag(forge:raw_materials)item_tag(forge:ores)"
 					}
 				}
-				title: "Gather Any Raw Ore"
+				title: "Any Ores"
 				type: "item"
 			}]
 			title: "FTB: Ultimine and You"
