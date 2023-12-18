@@ -482,6 +482,16 @@ ServerEvents.recipes(event => {
         G: 'gtceu:iron_small_gear',
         S: 'minecraft:stick'
     })
+    event.remove({output:'supplementaries:present'})
+    event.shaped('supplementaries:present', [
+        'PRP',
+        'PKP',
+        'PPP'
+    ], {
+        P: 'minecraft:paper',
+        R: 'gtceu:sticky_resin',
+        K: '#forge:tools/knives'
+    })
 })
 
 //Function to add recipes for colored flags
@@ -555,8 +565,9 @@ ServerEvents.recipes(event => {
 //Function to unify recipes for each and every sign posts in existence (pain)
 ServerEvents.recipes(event => {
     let signpost = (outputSignPost ,inputWoodPlank) => {
+        //Removes the '3x ' from the outputs in the signpost functions so it does not error in event.remove
         let outputSignPostRemove = outputSignPost.replace('3x ', '');
-        event.remove({ output: outputSignPostRemove })
+        event.remove({ output: outputSignPostRemove }) 
         event.shaped(outputSignPost, [
             '   ',
             'PPP',
@@ -629,9 +640,5 @@ ServerEvents.recipes(event => {
     signpost('3x supplementaries:aether_redux/sign_post_springshroom', 'aether_redux:springshroom_planks');
     signpost('3x supplementaries:aether_redux/sign_post_crystal', 'aether_redux:crystal_planks');
     signpost('3x supplementaries:aether_redux/sign_post_glacia', 'aether_redux:glacia_planks');
-
-
-
-
 
 })
