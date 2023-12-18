@@ -55,7 +55,122 @@
 				title: "In Development!"
 				type: "custom"
 			}]
-			x: 5.5d
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["035D7CBD3AD14321"]
+			description: ["Collect some of these, or netherack and craft them."]
+			id: "7D9F8BA380D94F7B"
+			tasks: [{
+				id: "4E0DAD0BECAF53C6"
+				item: "minecraft:nether_bricks"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7D9F8BA380D94F7B"]
+			description: ["If you were crafty, you may have gotten enough of this from Ruined Portals."]
+			id: "0F895A75180EC20F"
+			tasks: [{
+				id: "34E2682A3B9A100B"
+				item: "gtceu:nether_brick_dust_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["035D7CBD3AD14321"]
+			icon: "nethersdelight:propelpearl"
+			id: "3F54627296879917"
+			title: "Flora of the Mantle"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F54627296879917"]
+			description: [
+				"These Reeds resemble a more barklike trait than their surface counterparts."
+				""
+				"Extracting them will yield a &anatural resin useful for circuit boards&r early on."
+				""
+				"These reeds can be used to yield paper as well when &adried out and cut&r."
+			]
+			id: "63D78D52A9D10C47"
+			subtitle: "Heat Resistant Filament"
+			tasks: [{
+				id: "04935300091EE108"
+				item: "betternether:nether_reed_stem"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3F54627296879917"]
+			icon: "biomesoplenty:blackstone_bulb"
+			id: "53AD20A15F4EE0BE"
+			subtitle: "Weird Bioluminescence"
+			tasks: [{
+				id: "360C5FED5984CB2D"
+				item: "biomesoplenty:blackstone_bulb"
+				type: "item"
+			}]
+			title: "Is this a plant?"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F54627296879917"]
+			id: "3888F3E02D9F1265"
+			subtitle: "Spore Catalyst Potential"
+			tasks: [{
+				id: "6E6DBADEC5C88449"
+				item: "betternether:lucis_spore"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["035D7CBD3AD14321"]
+			id: "6DACA7A55DBA5784"
+			tasks: [{
+				id: "73246F4013A6F05F"
+				item: "minecraft:ancient_debris"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6DACA7A55DBA5784"]
+			id: "3BAA5FCFF34296E6"
+			tasks: [{
+				id: "60A6BE5DA5CF5D1A"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"3888F3E02D9F1265"
+				"63D78D52A9D10C47"
+				"53AD20A15F4EE0BE"
+			]
+			id: "41449709FA81941B"
+			subtitle: "I would recommend returning once you start LV"
+			tasks: [{
+				id: "2A343EBE644981EB"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: -6.0d
 			y: 0.0d
 		}
 	]
