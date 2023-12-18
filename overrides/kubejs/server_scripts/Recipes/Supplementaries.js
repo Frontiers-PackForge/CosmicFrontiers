@@ -516,3 +516,38 @@ ServerEvents.recipes(event => {
     flag('supplementaries:flag_pink', 'minecraft:pink_wool');
 
 })
+
+//Function to add recipes for colored candle holders
+ServerEvents.recipes(event => {
+    let candle = (outputCandleholder ,inputCandle) => {
+        event.remove({ output: outputCandleholder })
+        event.shaped(outputCandleholder, [
+            'PCP',
+            'RI ',
+            ' P '
+        ],{
+            P: 'gtceu:iron_plate',
+            R: 'gtceu:iron_ring',
+            I: 'gtceu:iron_rod',
+            C: inputCandle
+        })
+    }
+    candle('supplementaries:candle_holder', 'minecraft:candle')
+    candle('supplementaries:candle_holder_white', 'minecraft:white_candle')
+    candle('supplementaries:candle_holder_light_gray', 'minecraft:light_gray_candle')
+    candle('supplementaries:candle_holder_gray', 'minecraft:gray_candle')
+    candle('supplementaries:candle_holder_black', 'minecraft:black_candle')
+    candle('supplementaries:candle_holder_brown', 'minecraft:brown_candle')
+    candle('supplementaries:candle_holder_red', 'minecraft:red_candle')
+    candle('supplementaries:candle_holder_orange', 'minecraft:orange_candle')
+    candle('supplementaries:candle_holder_yellow', 'minecraft:yellow_candle')
+    candle('supplementaries:candle_holder_lime', 'minecraft:lime_candle')
+    candle('supplementaries:candle_holder_green', 'minecraft:green_candle')
+    candle('supplementaries:candle_holder_cyan', 'minecraft:cyan_candle')
+    candle('supplementaries:candle_holder_light_blue', 'minecraft:light_blue_candle')
+    candle('supplementaries:candle_holder_blue', 'minecraft:blue_candle')
+    candle('supplementaries:candle_holder_purple', 'minecraft:purple_candle')
+    candle('supplementaries:candle_holder_magenta', 'minecraft:magenta_candle')
+    candle('supplementaries:candle_holder_pink', 'minecraft:pink_candle')
+
+})
