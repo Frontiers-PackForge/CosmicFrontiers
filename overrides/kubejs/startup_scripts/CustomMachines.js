@@ -48,6 +48,17 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .where('F', Predicates.blocks('gtceu:steel_frame'))
         .build())
         .workableCasingRenderer('gtceu:block/casings/steam/steel/side', 'gtceu:block/multiblock/generator/large_gas_turbine', false);
+
+
+    //Custom Spooling Machine for Ars
+       event.create('spooling_machine', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV)
+           .recipeType('spooling_machine', true, true)
+           .rotationState(RotationState.NON_Y_AXIS)
+           .workableTieredHullRenderer(GTCEu.id("block/machines/nether_catalyzer"))
+
+
+
+
 })
 
 //Recipe Map/type - DEFINE THESE OR THE GAME WILL CRASH
@@ -81,5 +92,14 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .setSound(GTSoundEntries.ELECTROLYZER)
         
      
-    
+    //Custom Spooling Machine for Ars
+        event.create('spooling_machine')
+            .category('frontiers')
+            .setMaxIOSize(2,2,1,0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+            .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+            .setEUIO('in')
+            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+            .setSound(GTSoundEntries.ELECTROLYZER)
+
+
     })
