@@ -23,6 +23,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .workableTieredHullRenderer(GTCEu.id("block/machines/flora_nurturer"))
 
+
         event.create('nether_catalyzer', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV,GTValues.LuV,GTValues.ZPM,GTValues.UV,GTValues.UHV)
         .recipeType('nether_catalyzer',true, true)
         .rotationState(RotationState.NON_Y_AXIS)
@@ -92,6 +93,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .setSound(GTSoundEntries.ELECTROLYZER)
         
      
+
     //Custom Spooling Machine for Ars
         event.create('spooling_machine')
             .category('frontiers')
@@ -100,6 +102,4 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .setEUIO('in')
             .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.ELECTROLYZER)
-
-
     })
