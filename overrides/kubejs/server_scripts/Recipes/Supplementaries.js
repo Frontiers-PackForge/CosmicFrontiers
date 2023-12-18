@@ -551,3 +551,87 @@ ServerEvents.recipes(event => {
     candle('supplementaries:candle_holder_pink', 'minecraft:pink_candle')
 
 })
+
+//Function to unify recipes for each and every sign posts in existence (pain)
+ServerEvents.recipes(event => {
+    let signpost = (outputSignPost ,inputWoodPlank) => {
+        let outputSignPostRemove = outputSignPost.replace('3x ', '');
+        event.remove({ output: outputSignPostRemove })
+        event.shaped(outputSignPost, [
+            '   ',
+            'PPP',
+            ' S '
+        ],{
+            P: inputWoodPlank,
+            S: 'minecraft:stick'
+        })
+    }
+    signpost('3x supplementaries:sign_post_oak', 'minecraft:oak_planks');
+    signpost('3x supplementaries:sign_post_spruce', 'minecraft:spruce_planks');
+    signpost('3x supplementaries:sign_post_birch', 'minecraft:birch_planks');
+    signpost('3x supplementaries:sign_post_jungle', 'minecraft:jungle_planks');
+    signpost('3x supplementaries:sign_post_acacia', 'minecraft:acacia_planks');
+    signpost('3x supplementaries:sign_post_dark_oak', 'minecraft:dark_oak_planks');
+    signpost('3x supplementaries:sign_post_mangrove', 'minecraft:mangrove_planks');
+    signpost('3x supplementaries:sign_post_cherry', 'minecraft:cherry_planks');
+    signpost('3x supplementaries:sign_post_bamboo', 'minecraft:bamboo_planks');
+    signpost('3x supplementaries:sign_post_crimson', 'minecraft:crimson_planks');
+    signpost('3x supplementaries:sign_post_warped', 'minecraft:warped_planks');
+    signpost('3x supplementaries:blue_skies/sign_post_bluebright', 'blue_skies:bluebright_planks');
+    signpost('3x supplementaries:blue_skies/sign_post_starlit', 'blue_skies:starlit_planks');
+    signpost('3x supplementaries:blue_skies/sign_post_frostbright', 'blue_skies:frostbright_planks');
+    signpost('3x supplementaries:blue_skies/sign_post_lunar', 'blue_skies:lunar_planks');
+    signpost('3x supplementaries:blue_skies/sign_post_dusk', 'blue_skies:dusk_planks');
+    signpost('3x supplementaries:blue_skies/sign_post_maple', 'blue_skies:maple_planks');
+    signpost('3x supplementaries:blue_skies/sign_post_comet', 'blue_skies:comet_planks');
+    signpost('3x supplementaries:betternether/sign_post_nether_reed', 'betternether:nether_reed_planks');
+    signpost('3x supplementaries:betternether/sign_post_stalagnate', 'betternether:stalagnate_planks');
+    signpost('3x supplementaries:betternether/sign_post_willow', 'betternether:willow_planks');
+    signpost('3x supplementaries:betternether/sign_post_wart', 'betternether:wart_planks');
+    signpost('3x supplementaries:betternether/sign_post_rubeus', 'betternether:rubeus_planks');
+    signpost('3x supplementaries:betternether/sign_post_mushroom_fir', 'betternether:mushroom_fir_planks');
+    signpost('3x supplementaries:betternether/sign_post_nether_mushroom', 'betternether:nether_mushroom_planks');
+    signpost('3x supplementaries:betternether/sign_post_anchor_tree', 'betternether:anchor_tree_planks');
+    signpost('3x supplementaries:betternether/sign_post_nether_sakura', 'betternether:nether_sakura_planks');
+    signpost('3x supplementaries:betterend/sign_post_mossy_glowshroom', 'betterend:mossy_glowshroom_planks');
+    signpost('3x supplementaries:betterend/sign_post_pythadendron', 'betterend:pythadendron_planks');
+    signpost('3x supplementaries:betterend/sign_post_end_lotus', 'betterend:end_lotus_planks');
+    signpost('3x supplementaries:betterend/sign_post_lacugrove', 'betterend:lacugrove_planks');
+    signpost('3x supplementaries:betterend/sign_post_dragon_tree', 'betterend:dragon_tree_planks');
+    signpost('3x supplementaries:betterend/sign_post_tenanea', 'betterend:tenanea_planks');
+    signpost('3x supplementaries:betterend/sign_post_helix_tree', 'betterend:helix_tree_planks');
+    signpost('3x supplementaries:betterend/sign_post_umbrella_tree', 'betterend:umbrella_tree_planks');
+    signpost('3x supplementaries:betterend/sign_post_jellyshroom', 'betterend:jellyshroom_planks');
+    signpost('3x supplementaries:betterend/sign_post_lucernia', 'betterend:lucernia_planks');
+    signpost('3x supplementaries:phantasm/sign_post_pream', 'phantasm:pream_planks');
+    signpost('3x supplementaries:biomesoplenty/sign_post_fir', 'biomesoplenty:fir_planks');
+    signpost('3x supplementaries:biomesoplenty/sign_post_redwood', 'biomesoplenty:redwood_planks');
+    signpost('3x supplementaries:biomesoplenty/sign_post_mahogany', 'biomesoplenty:mahogany_planks');
+    signpost('3x supplementaries:biomesoplenty/sign_post_jacaranda', 'biomesoplenty:jacaranda_planks');
+    signpost('3x supplementaries:biomesoplenty/sign_post_willow', 'biomesoplenty:willow_planks');
+    signpost('3x supplementaries:biomesoplenty/sign_post_dead', 'biomesoplenty:dead_planks');
+    signpost('3x supplementaries:biomesoplenty/sign_post_magic', 'biomesoplenty:magic_planks');
+    signpost('3x supplementaries:biomesoplenty/sign_post_umbran', 'biomesoplenty:umbran_planks');
+    signpost('3x supplementaries:biomesoplenty/sign_post_hellbark', 'biomesoplenty:hellbark_planks');
+    signpost('3x supplementaries:biomesoplenty/sign_post_palm', 'biomesoplenty:palm_planks');
+    signpost('3x supplementaries:ad_astra/sign_post_glacian', 'ad_astra:glacian_planks');
+    signpost('3x supplementaries:aether/sign_post_skyroot', 'aether:skyroot_planks');
+    signpost('3x supplementaries:deep_aether/sign_post_roseroot', 'deep_aether:roseroot_planks');
+    signpost('3x supplementaries:deep_aether/sign_post_cruderoot', 'deep_aether:cruderoot_planks');
+    signpost('3x supplementaries:deep_aether/sign_post_conberry', 'deep_aether:conberry_planks');
+    signpost('3x supplementaries:deep_aether/sign_post_sunroot', 'deep_aether:sunroot_planks');
+    signpost('3x supplementaries:undergarden/sign_post_smogstem', 'undergarden:smogstem_planks');
+    signpost('3x supplementaries:undergarden/sign_post_wigglewood', 'undergarden:wigglewood_planks');
+    signpost('3x supplementaries:undergarden/sign_post_grongle', 'undergarden:grongle_planks');
+    signpost('3x supplementaries:aether_redux/sign_post_fieldsprout', 'aether_redux:fieldsprout_planks');
+    signpost('3x supplementaries:aether_redux/sign_post_blightwillow', 'aether_redux:blightwillow_planks');
+    signpost('3x supplementaries:aether_redux/sign_post_cloudcap', 'aether_redux:cloudcap_planks');
+    signpost('3x supplementaries:aether_redux/sign_post_springshroom', 'aether_redux:springshroom_planks');
+    signpost('3x supplementaries:aether_redux/sign_post_crystal', 'aether_redux:crystal_planks');
+    signpost('3x supplementaries:aether_redux/sign_post_glacia', 'aether_redux:glacia_planks');
+
+
+
+
+
+})
