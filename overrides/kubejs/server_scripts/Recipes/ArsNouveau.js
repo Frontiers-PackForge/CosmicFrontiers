@@ -11,6 +11,7 @@ ServerEvents.recipes(event => {
 	    1000, // source cost
 	    // true // keep nbt of reagent, think like a smithing recipe
 	);
+
 })
 
 //Time to do some Gregification
