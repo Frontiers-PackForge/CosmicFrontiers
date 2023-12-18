@@ -1,20 +1,3 @@
-//A Simple "REMOVE AND HIDE" function akin to GroovyScript's Jei.yeet() function - This will tag the item for hiding from recipe viewers and remove the recipe
-//This one also has a tag removal function to remove the forge:tools/knives tag from what is removed so bear that in mind if you copy/paste this around
-let yeet = (itemName) => {
-    ServerEvents.recipes(event => { 
-        event.remove({ output: itemName })
-      })
-    ServerEvents.tags('item', event => {
-        event.add('forge:viewers/hidden_from_recipe', itemName)
-        event.remove('forge:tools/knives', itemName)
-        event.remove('forge:tools/scavenging', itemName)
-    })
-}
-//Ha get yoinked, also yeet functions below (Hopefully won't get to use it :) )
-
-
-
-
 //Item Recipes, gregified
 ServerEvents.recipes(event => {
     event.remove({output:'supplementaries:bomb'})
@@ -494,7 +477,7 @@ ServerEvents.recipes(event => {
     })
 })
 
-//Function to add recipes for colored flags
+//Function to gregify colored flags
 ServerEvents.recipes(event => {
     let flag = (outputFlag ,colorWool) => {
         event.remove({ output: outputFlag })
@@ -527,7 +510,7 @@ ServerEvents.recipes(event => {
 
 })
 
-//Function to add recipes for colored candle holders
+//Function to gregify colored candle holders
 ServerEvents.recipes(event => {
     let candle = (outputCandleholder ,inputCandle) => {
         event.remove({ output: outputCandleholder })
