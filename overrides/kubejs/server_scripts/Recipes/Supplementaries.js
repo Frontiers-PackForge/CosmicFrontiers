@@ -475,6 +475,16 @@ ServerEvents.recipes(event => {
         R: 'gtceu:sticky_resin',
         K: '#forge:tools/knives'
     })
+    event.remove({output:'supplementaries:sconce_soul'})
+    event.shaped('supplementaries:sconce_soul', [
+        'BTB',
+        ' R ',
+        '   '
+    ], {
+        B: 'gtceu:iron_bolt',
+        R: 'gtceu:iron_ring',
+        T: 'minecraft:soul_torch'
+    })
 })
 
 //Function to gregify colored flags
