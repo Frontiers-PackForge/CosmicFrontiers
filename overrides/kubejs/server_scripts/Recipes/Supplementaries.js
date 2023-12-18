@@ -482,5 +482,37 @@ ServerEvents.recipes(event => {
         G: 'gtceu:iron_small_gear',
         S: 'minecraft:stick'
     })
+})
+
+//Function to add recipes for colored flags
+ServerEvents.recipes(event => {
+    let flag = (outputFlag ,colorWool) => {
+        event.remove({ output: outputFlag })
+        event.shaped(outputFlag, [
+            'SWW',
+            'SWW',
+            'R  '
+        ],{
+            S: 'gtceu:treated_wood_rod',
+            R: '#forge:rope',
+            W: colorWool
+        })
+    }
+    flag('supplementaries:flag_white', 'minecraft:white_wool');
+    flag('supplementaries:flag_light_gray', 'minecraft:light_gray_wool');
+    flag('supplementaries:flag_gray', 'minecraft:gray_wool');
+    flag('supplementaries:flag_black', 'minecraft:black_wool');
+    flag('supplementaries:flag_brown', 'minecraft:brown_wool');
+    flag('supplementaries:flag_red', 'minecraft:red_wool');
+    flag('supplementaries:flag_orange', 'minecraft:orange_wool');
+    flag('supplementaries:flag_yellow', 'minecraft:yellow_wool');
+    flag('supplementaries:flag_lime', 'minecraft:lime_wool');
+    flag('supplementaries:flag_green', 'minecraft:green_wool');
+    flag('supplementaries:flag_cyan', 'minecraft:cyan_wool');
+    flag('supplementaries:flag_light_blue', 'minecraft:light_blue_wool');
+    flag('supplementaries:flag_blue', 'minecraft:blue_wool');
+    flag('supplementaries:flag_purple', 'minecraft:purple_wool');
+    flag('supplementaries:flag_magenta', 'minecraft:magenta_wool');
+    flag('supplementaries:flag_pink', 'minecraft:pink_wool');
 
 })
