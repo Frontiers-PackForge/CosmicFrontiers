@@ -1,6 +1,46 @@
 {
-    "tagprefix.holystone": "%s Holystone Ore",
-    "block.gtceu.flora_nurturer": "Flora Nurturer",
-    "block.gtceu.nether_catalyzer": "Nether Catalyzer",
-    "block.gtceu.masonry_oven": "Masonry Oven"
-  }
+  "block.gtceu.lp_steam_masonry_oven": "Steam Masonry Oven",
+  "block.gtceu.lv_masonry_oven": "LV Masonry Oven",
+  "block.gtceu.mv_masonry_oven": "MV Masonry Oven",
+  "block.gtceu.hv_masonry_oven": "HV Masonry Oven",
+  "block.gtceu.ev_masonry_oven": "EV Masonry Oven",
+  "block.gtceu.iv_masonry_oven": "IV Masonry Oven",
+  "block.gtceu.luv_masonry_oven": "LuV Masonry Oven",
+  "block.gtceu.zpm_masonry_oven": "ZPM Masonry Oven",
+  "block.gtceu.uv_masonry_oven": "UV Masonry Oven",
+  "block.gtceu.uhv_masonry_oven": "UHV Masonry Oven",
+
+
+  "block.gtceu.lv_flora_nurturer": "LV Flora Nurturer",
+  "block.gtceu.mv_flora_nurturer": "MV Flora Nurturer",
+  "block.gtceu.hv_flora_nurturer": "HV Flora Nurturer",
+  "block.gtceu.ev_flora_nurturer": "EV Flora Nurturer",
+  "block.gtceu.iv_flora_nurturer": "IV Flora Nurturer",
+  "block.gtceu.luv_flora_nurturer": "LuV Flora Nurturer",
+  "block.gtceu.zpm_flora_nurturer": "ZPM Flora Nurturer",
+  "block.gtceu.uv_flora_nurturer": "UV Flora Nurturer",
+  "block.gtceu.uhv_flora_nurturer": "UHV Flora Nurturer",
+
+
+  "block.gtceu.lv_spooling_machine": "LV Spooling Machine",
+  "block.gtceu.mv_spooling_machine": "MV Spooling Machine",
+  "block.gtceu.hv_spooling_machine": "HV Spooling Machine",
+  "block.gtceu.ev_spooling_machine": "EV Spooling Machine",
+  "block.gtceu.iv_spooling_machine": "IV Spooling Machine",
+  "block.gtceu.luv_spooling_machine": "LuV Spooling Machine",
+  "block.gtceu.zpm_spooling_machine": "ZPM Spooling Machine",
+  "block.gtceu.uv_spooling_machine": "UV Spooling Machine",
+  "block.gtceu.uhv_spooling_machine": "UHV Spooling Machine",
+  "block.gtceu.lv_nether_catalyzer": "LV Nether Catalyzer",
+  "block.gtceu.mv_nether_catalyzer": "MV Nether Catalyzer",
+  "block.gtceu.hv_nether_catalyzer": "HV Nether Catalyzer",
+  "block.gtceu.ev_nether_catalyzer": "EV Nether Catalyzer",
+  "block.gtceu.iv_nether_catalyzer": "IV Nether Catalyzer",
+  "block.gtceu.luv_nether_catalyzer": "LuV Nether Catalyzer",
+  "block.gtceu.zpm_nether_catalyzer": "ZPM Nether Catalyzer",
+  "block.gtceu.uv_nether_catalyzer": "UV Nether Catalyzer",
+  "block.gtceu.uhv_nether_catalyzer": "UHV Nether Catalyzer",
+
+
+  "block.gtceu.basic_alternator": "Basic Alternator"
+}
