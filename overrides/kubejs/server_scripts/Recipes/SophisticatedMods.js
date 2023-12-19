@@ -212,9 +212,9 @@ event.custom({
         })
   }
 
-  let upgradeSmile = (input, result) => {
-      upgradeUpgrade(input, '#forge:dusts/redstone', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:${result}_upgrade`);
-      upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', `sophisticatedstorage:${result}_upgrade`, `sophisticatedstorage:advanced_${result}_upgrade`);
+  let twoTierUpgrade = (input, result, storageModType) => {
+      upgradeUpgrade(input, '#forge:dusts/redstone', 'sophisticatedstorage:upgrade_base', `sophisticated${storageModType}:${result}_upgrade`);
+      upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', `sophisticated${storageModType}:${result}_upgrade`, `sophisticated${storageModType}:advanced_${result}_upgrade`);
 }
 
   let upgradeSmeltingStuff = (input, result) => {
@@ -248,17 +248,17 @@ event.custom({
 
 
 
-  upgradeSmile('minecraft:sticky_piston', 'pickup');
-  upgradeSmile('#forge:string', 'filter');
-  upgradeSmile('#forge:ender_pearls', 'magnet');
-  upgradeSmile('#forge:golden_apple', 'feeding');
-  upgradeSmile('minecraft:piston', 'compacting');
-  upgradeSmile('#forge:obsidian', 'void');
-  upgradeSmeltingStuff('minecraft:furnace', 'smelting');
-  upgradeSmeltingStuff('minecraft:smoker', 'smoking');
-  upgradeSmeltingStuff('minecraft:blast_furnace', 'blasting');
+    twoTierUpgrade('minecraft:sticky_piston', 'pickup', 'storage');
+    twoTierUpgrade('#forge:string', 'filter', 'storage');
+    twoTierUpgrade('#forge:ender_pearls', 'magnet', 'storage');
+    twoTierUpgrade('#forge:golden_apple', 'feeding', 'storage');
+    twoTierUpgrade('minecraft:piston', 'compacting', 'storage');
+    twoTierUpgrade('#forge:obsidian', 'void', 'storage');
+    upgradeSmeltingStuff('minecraft:furnace', 'smelting', 'storage');
+    upgradeSmeltingStuff('minecraft:smoker', 'smoking', 'storage');
+    upgradeSmeltingStuff('minecraft:blast_furnace', 'blasting', 'storage');
 
-  upgradeSmile('minecraft:hopper', 'hopper');
+    twoTierUpgrade('minecraft:hopper', 'hopper');
 
   upgradeUpgrade('minecraft:crafting_table', '#forge:dusts/redstone', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:crafting_upgrade`);
   upgradeUpgrade('minecraft:stonecutter', '#forge:dusts/redstone', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:stonecutter_upgrade`);
