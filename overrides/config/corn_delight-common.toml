@@ -1,0 +1,6 @@
+
+#General settings
+[general]
+	#Should this mod add some of its items (CORN!!!) as extra chest loot across Minecraft?
+	genCornLootModifier = true
+

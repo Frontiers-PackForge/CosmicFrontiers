@@ -1,8 +1,8 @@
 ServerEvents.recipes(event => { 
+//I Love Fixing Merge Conflicts ~Ghostipedia 2023
   console.log('[SophisticatedMods.js loading]')
   event.remove({ mod: 'sophisticatedstorage' })
   event.remove({ mod: 'sophisticatedbackpacks' })
-
    /* BACKPACKS */
 
 //Backpacks base tiers
@@ -110,17 +110,6 @@ event.custom({
     'item': 'sophisticatedbackpacks:diamond_backpack' // Same case as the Registry name
   }
 })
-
-// event.shaped('sophisticatedbackpacks:iron_backpack', [
-  // 'PWP',
-  // 'WBW',
-  // 'PWP'
-//   ], {
-  // P: 'gtceu:wrought_iron_plate',
-  // B: 'sophisticatedbackpacks:backpack',
-  // W: 'cosmiccore:waxed_leather',
-//   })
-
   /* METHODS & UTILS */
 
   const woodTypes = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'mangrove', 'crimson', 'warped'];
@@ -315,10 +304,6 @@ let upgradeSmeltingBackpacks = (input, result) => {
   upgradeUpgrade('gtceu:lv_super_tank', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:tank_upgrade`);
   upgradeUpgrade('gtceu:lv_sodium_battery', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:battery_upgrade`);
   upgradeUpgrade('minecraft:anvil', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:anvil_upgrade`);
-
-// YES, I GAME UP HERE!
-// I'M FUCKING TIRED AHHHHHHHHHHHHHH
-
   upgradeUpgrade('gtceu:wood_screw', 'cosmiccore:waxed_leather', `sophisticatedbackpacks:upgrade_base`, `sophisticatedbackpacks:stack_upgrade_tier_1`);
   upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', `sophisticatedbackpacks:stack_upgrade_tier_1`, `sophisticatedbackpacks:stack_upgrade_tier_2`);
   upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:rose_gold_plate', `sophisticatedbackpacks:stack_upgrade_tier_2`, `sophisticatedbackpacks:stack_upgrade_tier_3`);

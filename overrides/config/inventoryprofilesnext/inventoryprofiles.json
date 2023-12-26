@@ -1,13 +1,22 @@
 {
     "ModSettings": {
-        "sort_order": "ACCUMULATED_COUNT_DESCENDING",
         "highlight_foused_items": {
             "value": false
         },
-        "highlight_foused_items_foreground": false,
         "enable_profiles": {
             "value": false
         },
+        "enable_lock_slots": {
+            "value": false
+        },
+        "enable_lock_slots_per_server": false,
+        "enable_auto_refill": {
+            "value": false
+        },
+        "villager_trading_enable": {
+            "value": false
+        },
+        "enable_updates_check": false,
         "highlight_clicking_slot": false,
         "first_run": false
     },
@@ -15,23 +24,13 @@
         "enable_profiles_ui": {
             "value": false
         },
-        "enable_inventory_buttons": {
-            "value": false
-        },
-        "show_fast_rename_checkbox": {
-            "value": false
-        },
         "show_continuous_crafting_checkbox": {
             "value": false
         },
-        "continuous_crafting_saved_value": false,
         "show_sort_in_columns_button": {
             "value": false
         },
         "show_sort_in_rows_button": {
-            "value": false
-        },
-        "show_move_all_button": {
             "value": false
         }
     },
@@ -39,17 +38,14 @@
         "disable_for_drop_item": {
             "value": true
         },
-        "ignore_locked_slots": false,
         "refill_armor": {
             "value": false
         },
         "refill_before_tool_break": {
             "value": false
         },
-        "disable_for_loyalty_items": false,
         "auto_refill_match_custom_name": false,
         "auto_refill_match_nbt": false,
-        "auto_refill_ignore_nbt_for_buckets": false,
         "visual_durability_notification": {
             "value": false
         },
@@ -72,7 +68,7 @@
     "Hotkeys": {
         "sort_inventory": {
             "main": {
-                "keys": "KP_ADD"
+                "keys": "PAGE_DOWN"
             }
         }
     }

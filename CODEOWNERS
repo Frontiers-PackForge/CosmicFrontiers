@@ -1,0 +1,10 @@
+# Ghostipedia for now must approve all incoming merges, in the future this will be updated once I'm aware the repo won't light on fire by letting others review.
+* @Frontiers-PackForge/Frontiers-GameMasters
+# These Files will always require admin approval even after above safeguards are removed
+CODEOWNERS @Frontiers-PackForge/Frontiers-GameMasters
+LICENSE @Frontiers-PackForge/Frontiers-GameMasters
+manifest.json @Frontiers-PackForge/Frontiers-GameMasters
+modlist.html @Frontiers-PackForge/Frontiers-GameMasters
+README.md @Frontiers-PackForge/Frontiers-GameMasters
+# These Files can be Approved by Frontiers-Devs
+# TO BE ADDED

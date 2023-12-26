@@ -28,8 +28,8 @@
 			image: "frontiers:textures/questimages/miscicons/wingedborder.png"
 			rotation: 0.0d
 			width: 4.0d
-			x: 5.0513605442176726d
-			y: 5.488222789115632d
+			x: 5.071768707482974d
+			y: 5.488244047619027d
 		}
 	]
 	order_index: 0
@@ -257,16 +257,16 @@
 			}]
 			subtitle: "I don't care how you get it."
 			tasks: [{
-				icon: "minecraft:raw_iron"
-				id: "08E3DCD2ED0BDCD5"
+				icon: "gtceu:raw_chalcopyrite"
+				id: "66CE60678CA958A4"
 				item: {
 					Count: 1b
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "item_tag(minecraft:logs)"
+						"ftbfiltersystem:filter": "item_tag(forge:raw_materials)item_tag(forge:ores)"
 					}
 				}
-				title: "Gather Any Raw Ore"
+				title: "Any Ores"
 				type: "item"
 			}]
 			title: "FTB: Ultimine and You"
@@ -355,7 +355,7 @@
 						Count: 1b
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "item_tag(forge:tools/wrench)item_tag(forge:tools/files)"
+							"ftbfiltersystem:filter": "item_tag(forge:tools/wrenches)"
 						}
 					}
 					title: "Any Wrench"

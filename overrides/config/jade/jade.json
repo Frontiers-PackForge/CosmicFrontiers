@@ -1,6 +1,6 @@
 {
   "general": {
-    "hintOverlayToggle": true,
+    "hintOverlayToggle": false,
     "hintNarratorToggle": true,
     "previewOverlay": true,
     "displayTooltip": true,
