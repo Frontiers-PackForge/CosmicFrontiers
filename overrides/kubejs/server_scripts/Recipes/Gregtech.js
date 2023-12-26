@@ -29,8 +29,7 @@ ServerEvents.recipes(event => {
     event.shapeless('2x gtceu:fireclay_dust', [ 
            'gtceu:nether_brick_dust_dust',
            'gtceu:clay_dust'	
-         ])
-    //ad astra stuff
+      
     event.recipes.gtceu.bender('kubejs:stainless_steel_fin') 
          .itemInputs('6x gtceu:stainless_steel_plate')
          .circuit(4)
@@ -138,7 +137,13 @@ ServerEvents.recipes(event => {
          .itemInputs('4x gtceu:steel_plate')
          .itemOutputs('ad_astra:launch_pad')
          .duration(100)
-         .EUt(480);   
+         .EUt(480); 
+      
+      
+      
+      
+         ])
+ 
 
 //Crafting Recipes
 //Wrought Iron Base Molds
