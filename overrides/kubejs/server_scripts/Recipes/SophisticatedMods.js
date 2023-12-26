@@ -1,6 +1,7 @@
 ServerEvents.recipes(event => { 
   console.log('[SophisticatedMods.js loading]')
   event.remove({ mod: 'sophisticatedstorage' })
+  event.remove({ mod: 'sophisticatedbackpacks' })
 
    /* BACKPACKS */
 
@@ -212,16 +213,27 @@ event.custom({
         })
   }
 
-  let twoTierUpgrade = (input, result, storageModType) => {
-      upgradeUpgrade(input, '#forge:dusts/redstone', 'sophisticatedstorage:upgrade_base', `sophisticated${storageModType}:${result}_upgrade`);
-      upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', `sophisticated${storageModType}:${result}_upgrade`, `sophisticated${storageModType}:advanced_${result}_upgrade`);
-}
-
-  let upgradeSmeltingStuff = (input, result) => {
+  let upgradeStorage = (input, result) => {
       upgradeUpgrade(input, '#forge:dusts/redstone', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:${result}_upgrade`);
-      upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', `sophisticatedstorage:${result}_upgrade`, `sophisticatedstorage:auto_${result}_upgrade`);
+      upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', `sophisticatedstorage:${result}_upgrade`, `sophisticatedstorage:advanced_${result}_upgrade`);
   }
 
+  let upgradeSmeltingStorage = (input, result) => {
+    upgradeUpgrade(input, '#forge:dusts/redstone', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:${result}_upgrade`);
+    upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', `sophisticatedstorage:${result}_upgrade`, `sophisticatedstorage:auto_${result}_upgrade`);
+}
+
+
+
+  let upgradeBackpacks = (input, result) => {
+    upgradeUpgrade(input, 'cosmiccore:waxed_leather', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:${result}_upgrade`);
+    upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', `sophisticatedbackpacks:${result}_upgrade`, `sophisticatedbackpacks:advanced_${result}_upgrade`);
+}
+
+let upgradeSmeltingBackpacks = (input, result) => {
+  upgradeUpgrade(input, '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:${result}_upgrade`);
+  upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', `sophisticatedbackpacks:${result}_upgrade`, `sophisticatedbackpacks:auto_${result}_upgrade`);
+}
 
   /* STORAGE */
 
@@ -240,39 +252,76 @@ event.custom({
 
   /* UPGRADES */
 
+  // STORAGE UPGRADES
+
   upgradeUpgrade('gtceu:wood_screw', '#minecraft:planks', '#forge:tools/saws', 'sophisticatedstorage:upgrade_base');
   upgradeUpgrade('gtceu:wood_screw', 'gtceu:wood_plate', 'sophisticatedstorage:upgrade_base', 'sophisticatedstorage:basic_tier_upgrade');
   upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wood_plate', 'sophisticatedstorage:basic_tier_upgrade', 'sophisticatedstorage:basic_to_iron_tier_upgrade');
   upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:wrought_iron_plate', '#forge:tools/screwdrivers', 'sophisticatedstorage:iron_to_gold_tier_upgrade');
   upgradeUpgrade('gtceu:diamond_exquisite_gem', 'gtceu:rose_gold_plate', '#forge:tools/files', 'sophisticatedstorage:gold_to_diamond_tier_upgrade');
 
+  upgradeStorage('minecraft:sticky_piston', 'pickup');
+  upgradeStorage('#forge:string', 'filter');
+  upgradeStorage('#forge:ender_pearls', 'magnet');
+  upgradeStorage('#forge:golden_apple', 'feeding');
+  upgradeStorage('minecraft:piston', 'compacting');
+  upgradeStorage('#forge:obsidian', 'void');
+  upgradeSmeltingStorage('minecraft:furnace', 'smelting');
+  upgradeSmeltingStorage('minecraft:smoker', 'smoking');
+  upgradeSmeltingStorage('minecraft:blast_furnace', 'blasting');
 
-
-    twoTierUpgrade('minecraft:sticky_piston', 'pickup', 'storage');
-    twoTierUpgrade('#forge:string', 'filter', 'storage');
-    twoTierUpgrade('#forge:ender_pearls', 'magnet', 'storage');
-    twoTierUpgrade('#forge:golden_apple', 'feeding', 'storage');
-    twoTierUpgrade('minecraft:piston', 'compacting', 'storage');
-    twoTierUpgrade('#forge:obsidian', 'void', 'storage');
-    upgradeSmeltingStuff('minecraft:furnace', 'smelting', 'storage');
-    upgradeSmeltingStuff('minecraft:smoker', 'smoking', 'storage');
-    upgradeSmeltingStuff('minecraft:blast_furnace', 'blasting', 'storage');
-
-    twoTierUpgrade('minecraft:hopper', 'hopper');
+  upgradeStorage('minecraft:hopper', 'hopper');
 
   upgradeUpgrade('minecraft:crafting_table', '#forge:dusts/redstone', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:crafting_upgrade`);
   upgradeUpgrade('minecraft:stonecutter', '#forge:dusts/redstone', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:stonecutter_upgrade`);
   upgradeUpgrade('minecraft:jukebox', '#forge:dusts/redstone', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:jukebox_upgrade`);
   upgradeUpgrade('#forge:dusts/redstone', 'minecraft:piston', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:compression_upgrade`);
 
-
 // YES, I GAME UP HERE!
 // I'M FUCKING TIRED AHHHHHHHHHHHHHH
 
   upgradeUpgrade('gtceu:wood_screw', 'gtceu:wood_plate', `sophisticatedstorage:upgrade_base`, `sophisticatedstorage:stack_upgrade_tier_1`);
-  upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_platee', `sophisticatedstorage:stack_upgrade_tier_1`, `sophisticatedstorage:stack_upgrade_tier_2`);
+  upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', `sophisticatedstorage:stack_upgrade_tier_1`, `sophisticatedstorage:stack_upgrade_tier_2`);
   upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:rose_gold_plate', `sophisticatedstorage:stack_upgrade_tier_2`, `sophisticatedstorage:stack_upgrade_tier_3`);
   upgradeUpgrade('gtceu:diamond_exquisite_gem', 'gtceu:diamond_plate', `sophisticatedstorage:stack_upgrade_tier_3`, `sophisticatedstorage:stack_upgrade_tier_4`);
 
-  // will do later :3
+
+
+  // BACKPACK UPGRADES
+
+  upgradeBackpacks('minecraft:sticky_piston', 'pickup');
+  upgradeBackpacks('#forge:string', 'filter');
+  upgradeBackpacks('#forge:ender_pearls', 'magnet');
+  upgradeBackpacks('minecraft:golden_apple', 'feeding');
+  upgradeBackpacks('minecraft:piston', 'compacting');
+  upgradeBackpacks('#forge:obsidian', 'void');
+  upgradeBackpacks('gtceu:lv_electric_piston', 'restock');
+  upgradeBackpacks('minecraft:hopper', 'deposit');
+  upgradeBackpacks('#xd:i_dont_know_what_please_fill_in', 'refill');
+
+  upgradeBackpacks('#create:toolboxes', 'tool_swapper');
+
+  upgradeUpgrade('sophisticatedbackpacks:backpack', 'cosmiccore:waxed_leather', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:inception_upgrade`);
+  upgradeUpgrade('minecraft:nether_star', 'cosmiccore:waxed_leather', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:everlasting_upgrade`);
+
+  upgradeSmeltingBackpacks('minecraft:furnace', 'smelting');
+  upgradeSmeltingBackpacks('minecraft:smoker', 'smoking');
+  upgradeSmeltingBackpacks('minecraft:blast_furnace', 'blasting');
+
+  upgradeUpgrade('minecraft:crafting_table', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:crafting_upgrade`);
+  upgradeUpgrade('minecraft:stonecutter', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:stonecutter_upgrade`);
+  upgradeUpgrade('minecraft:jukebox', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:jukebox_upgrade`);
+
+  upgradeUpgrade('gtceu:lv_super_tank', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:tank_upgrade`);
+  upgradeUpgrade('gtceu:lv_sodium_battery', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:battery_upgrade`);
+  upgradeUpgrade('minecraft:anvil', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:anvil_upgrade`);
+
+// YES, I GAME UP HERE!
+// I'M FUCKING TIRED AHHHHHHHHHHHHHH
+
+  upgradeUpgrade('gtceu:wood_screw', 'cosmiccore:waxed_leather', `sophisticatedbackpacks:upgrade_base`, `sophisticatedbackpacks:stack_upgrade_tier_1`);
+  upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', `sophisticatedbackpacks:stack_upgrade_tier_1`, `sophisticatedbackpacks:stack_upgrade_tier_2`);
+  upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:rose_gold_plate', `sophisticatedbackpacks:stack_upgrade_tier_2`, `sophisticatedbackpacks:stack_upgrade_tier_3`);
+  upgradeUpgrade('gtceu:diamond_exquisite_gem', 'gtceu:diamond_plate', `sophisticatedbackpacks:stack_upgrade_tier_3`, `sophisticatedbackpacks:stack_upgrade_tier_4`);
+
 })
