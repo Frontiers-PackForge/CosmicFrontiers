@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'gtceu:fireclay_dust' })
     event.shapeless('2x gtceu:fireclay_dust', [ 
            'gtceu:nether_brick_dust_dust',
-           'gtceu:clay_dust'	
+           'gtceu:clay_dust']);	
       
     event.recipes.gtceu.bender('kubejs:stainless_steel_fin') 
          .itemInputs('6x gtceu:stainless_steel_plate')
