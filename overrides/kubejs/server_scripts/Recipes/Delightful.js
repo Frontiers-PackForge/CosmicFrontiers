@@ -92,6 +92,7 @@ yeet('ends_delight:end_stove');
 
 //Functional Blocks, Gregified
 ServerEvents.recipes(event => { 
+    //Farmer's Delight
     event.remove({ output:'farmersdelight:stove' })
     event.shaped( 'farmersdelight:stove', [
         'IGI',
@@ -137,6 +138,7 @@ ServerEvents.recipes(event => {
         S: '#forge:tools/mallets',
         P: 'gtceu:wood_plate'
     })
+    //Nether's Delight
     event.remove({ output:'nethersdelight:blackstone_stove' })
     event.shaped( 'nethersdelight:blackstone_stove', [
         'IGI',
@@ -158,6 +160,7 @@ ServerEvents.recipes(event => {
         B: 'minecraft:blackstone',
         F: 'minecraft:flint'
     })
+    //Ender's Delight
     event.remove({ output:'endersdelight:endstone_stove' })
     event.shaped( 'endersdelight:endstone_stove', [
         'OOO',
@@ -169,6 +172,144 @@ ServerEvents.recipes(event => {
         B: 'minecraft:dragon_breath',
         H: '#forge:tools/hammers'
     })
+    //Coffee's Delight
+    event.remove({ output:'coffee_delight:moka_bottom' })
+    event.shaped('coffee_delight:moka_bottom', [
+        'PRP',
+        'PHP',
+        ' P '
+    ], {
+        P: 'gtceu:iron_plate',
+        R: 'gtceu:iron_ring',
+        H: 'minecraft:hopper'
+    })
+    event.remove({ output:'coffee_delight:moka_top' })
+    event.shaped('coffee_delight:moka_top', [
+        ' P ',
+        'P P',
+        'PRP'
+    ], {
+        P: 'gtceu:iron_plate',
+        R: 'gtceu:iron_ring'
+    })
+    event.remove({ output:'coffee_delight:moka_pot' })
+    event.shaped('coffee_delight:moka_pot', [
+        ' T ',
+        'PWP',
+        ' B '
+    ], {
+        P: 'gtceu:iron_plate',
+        W: '#forge:tools/wrenches',
+        T: 'coffee_delight:moka_top',
+        B: 'coffee_delight:moka_bottom'
+    })
+    event.remove({ output:'coffee_delight:turkey_handel' })
+    event.shaped('coffee_delight:turkey_handel', [
+        'RSL',
+        'D  ',
+        '   '
+    ], {
+        R: 'gtceu:iron_rod',
+        S: 'gtceu:iron_screw',
+        L: 'betterend:leather_wrapped_stick',
+        D: '#forge:tools/screwdrivers'
+    })
+    event.remove({ output:'coffee_delight:turkey_pot_part' })
+    event.shaped('coffee_delight:turkey_pot_part', [
+        '   ',
+        'PHP',
+        'PPP'
+    ],{
+        P: 'gtceu:copper_plate',
+        H: '#forge:tools/hammers'
+    })
+    event.remove({ output:'coffee_delight:turkey_pot' })
+    event.shaped('coffee_delight:turkey_pot', [
+        'PSH',
+        'D  ',
+        '   '
+    ], {
+        H: 'coffee_delight:turkey_handel',
+        P: 'coffee_delight:turkey_pot_part',
+        S: 'gtceu:iron_screw',
+        D: '#forge:tools/screwdrivers'
+    })
+    event.remove({ output:'coffee_delight:coffee_cap'})
+    event.shaped('coffee_delight:coffee_cap', [
+        'P P',
+        ' P ',
+        '   '
+    ], {
+        P: 'gtceu:nether_quartz_plate'
+    })
+    //Miner's Delight
+    event.remove({ output:'miners_delight:copper_pot'})
+    event.shaped('miners_delight:copper_pot', [
+        'LSL',
+        'PHP',
+        'PPP'
+    ], {
+        L: 'betterend:leather_wrapped_stick',
+        S: 'minecraft:wooden_shovel',
+        P: 'gtceu:copper_plate',
+        H: '#forge:tools/hammers'
+    })
+    event.remove({ output:'miners_delight:copper_cup'})
+    event.shaped('miners_delight:copper_cup', [
+        'PHP',
+        ' P ',
+        '   '
+    ], {
+        P: 'gtceu:copper_plate',
+        H: '#forge:tools/hammers'
+    })
+    //Vintage Delight
+    event.remove({ output:'vintagedelight:cheese_mold' })
+    event.shaped('vintagedelight:cheese_mold', [
+        'PIP',
+        '   ',
+        '   '
+    ], {
+        P: 'gtceu:iron_plate',
+        I: 'minecraft:heavy_weighted_pressure_plate'
+    })
+    event.remove({ output:'vintagedelight:fermenting_jar' })
+    event.shaped('vintagedelight:fermenting_jar', [
+        'GSG',
+        'G G',
+        'GGG'
+    ], {
+        G: '#forge:glass',
+        S: '#minecraft:wooden_slabs'
+    })
+    event.remove({ output:'vintagedelight:evaporator' })
+    event.shaped('vintagedelight:evaporator', [
+        ' T ',
+        'TKT',
+        ' T '
+    ], {
+        T: 'gtceu:treated_wood_frame',
+        K: 'vintagedelight:salt_block'
+    })
+    //Adding a one-way conversion recipe for delight salt, giving players a way to skip the evaporator and use the GT salt they already have
+    event.shapeless('6x vintagedelight:salt_dust', [
+        '2x gtceu:salt_dust'
+    ])
+    //Crabber's Delight
+    event.remove({ output: 'crabbersdelight:crab_trap' })
+    event.shaped('crabbersdelight:crab_trap', [
+        'NFN',
+        'SDS',
+        'WWW'
+    ], {
+        N: 'farmersdelight:safety_net',
+        F: 'gtceu:treated_wood_frame',
+        S: 'gtceu:wood_screw',
+        D: '#forge:tools/screwdrivers',
+        W: '#minecraft:wooden_slabs'
+
+    })
+
 })
 
 //Cabinets, starting with the cabinet function
