@@ -69,6 +69,10 @@
 		}
 		{
 			dependencies: ["2A42583B975875D9"]
+			description: [
+				"The Steam Macerator allows you to grind things down more efficently using steam."
+				"Replaces the usage of the mortar."
+			]
 			id: "7E4041C72E5CF03F"
 			tasks: [{
 				id: "39692C7AFFDA8AF7"
@@ -139,22 +143,11 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["1B67E146DDF68FC8"]
+			dependencies: ["2A51F6AE6D937B44"]
 			id: "08088D5AA6E14B3E"
 			tasks: [{
 				id: "1789AC9BBB4E7E9F"
 				item: "gtceu:compressed_coke_clay"
-				type: "item"
-			}]
-			x: 0.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["2A51F6AE6D937B44"]
-			id: "1B67E146DDF68FC8"
-			tasks: [{
-				id: "548C608C0566CFED"
-				item: "gtceu:coke_oven_brick"
 				type: "item"
 			}]
 			x: -0.5d
@@ -162,6 +155,17 @@
 		}
 		{
 			dependencies: ["08088D5AA6E14B3E"]
+			id: "1B67E146DDF68FC8"
+			tasks: [{
+				id: "548C608C0566CFED"
+				item: "gtceu:coke_oven_brick"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1B67E146DDF68FC8"]
 			id: "686D8C69FBD0081B"
 			tasks: [{
 				id: "24C5D3BADBFFA660"
@@ -664,6 +668,10 @@
 			y: -3.0d
 		}
 		{
+			description: [
+				"QB Descriptions / Layout is TBD and Not going to be finalized to 1.0.0."
+				"Expect Frequent Revisions to things, not anything hugely breaking though."
+			]
 			id: "4C8926A08B8CD7F0"
 			subtitle: "Follow along in the discord!"
 			tasks: [{

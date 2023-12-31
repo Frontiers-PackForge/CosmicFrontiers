@@ -1,0 +1,22 @@
+
+#Balanced Flight Settings
+[Settings]
+
+	[Settings."Flight Options"]
+		"Ascended Ring Also Works As Elytra" = true
+		"Ascended Ring Gives Unlimited Creative Flight (will fall back to Basic tier inside range)" = true
+		"Flight Anchor Gives Creative Flight" = true
+		"Flight Anchor Gives Elytra Flight" = false
+
+	[Settings."Enhanced Elytra Mechanics"]
+		"Disable Elytra Damage" = true
+		"Enable Elytra Flight From Ground" = true
+		"Enable Take Off Mechanic" = true
+		"Infinite Rockets" = true
+
+	[Settings."Balancing Config"]
+		#Range: 0.0 ~ 10.0
+		"Anchor Distance Multiplier (0d -> 10d, default 1d)" = 1.0
+		"Disable Fall Damage Near Flight Anchor" = true
+		"Disable Fall Damage When Wearing Ascended Ring" = true
+

@@ -48,17 +48,6 @@
 			y: 0.0d
 		}
 		{
-			id: "6EC0FEADC156A5F1"
-			subtitle: "Follow along in the discord!"
-			tasks: [{
-				id: "36FA029E2A059CC2"
-				title: "In Development!"
-				type: "custom"
-			}]
-			x: 7.5d
-			y: 0.0d
-		}
-		{
 			dependencies: ["035D7CBD3AD14321"]
 			description: ["Collect some of these, or netherack and craft them."]
 			id: "7D9F8BA380D94F7B"
@@ -172,6 +161,34 @@
 			}]
 			x: -6.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["035D7CBD3AD14321"]
+			icon: "minecraft:basalt"
+			id: "47E063744D66BD0E"
+			tasks: [{
+				biome: "minecraft:basalt_deltas"
+				id: "42FD9B4F9780ABD2"
+				type: "biome"
+			}]
+			title: "The Crags of Cinders"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"QB Descriptions / Layout is TBD and Not going to be finalized to 1.0.0."
+				"Expect Frequent Revisions to things, not anything hugely breaking though."
+			]
+			id: "7AB48A3CB9DED90C"
+			subtitle: "Follow along in the discord!"
+			tasks: [{
+				id: "5FFEF8761A71DEF5"
+				title: "In Development!"
+				type: "custom"
+			}]
+			x: 1.0d
+			y: -1.0d
 		}
 	]
 	title: "The Mantle"

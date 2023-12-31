@@ -52,3 +52,14 @@
 	Winter = [-0.4, -0.6, -0.4]
 	Spring = [-0.2, 0, 0.2]
 
+[Hearth]
+	#How strong the hearth is
+	#Range: 0.0 ~ 1.0
+	"Hearth Strength" = 0.5
+	#List of additional blocks that the hearth can spread through
+	#Use this list if the hearth isn't spreading through particular blocks that it should
+	"Hearth Spread Whitelist" = ["minecraft:iron_bars", "#minecraft:leaves"]
+	#List of additional blocks that the hearth cannot spread through
+	#Use this list if the hearth is spreading through particular blocks that it shouldn't
+	"Hearth Spread Blacklist" = []
+
