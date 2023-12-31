@@ -42,5 +42,7 @@
   "block.gtceu.uhv_nether_catalyzer": "UHV Nether Catalyzer",
 
 
-  "block.gtceu.basic_alternator": "Basic Alternator"
+  "block.gtceu.basic_alternator": "Basic Alternator",
+  "material.mana_steel": "Mana Steel",
+  "material.zanite": "Zanite"
 }
