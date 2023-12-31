@@ -17,12 +17,12 @@
     "notifyForFinishedCraftingJobs_comment": "Show toast when long-running crafting jobs finish.",
     "notifyForFinishedCraftingJobs": true,
     "clearGridOnClose_comment": "Automatically clear the crafting/encoding grid when closing the terminal",
-    "clearGridOnClose": false,
+    "clearGridOnClose": true,
     "terminalMargin_comment": "The vertical margin to apply when sizing terminals. Used to make room for centered item mod search bars",
     "terminalMargin": 25
   },
   "terminals": {
-    "terminalStyle": "small",
+    "terminalStyle": "full",
     "pinAutoCraftedItems_comment": "Pin items that the player auto-crafts to the top of the terminal",
     "pinAutoCraftedItems": true
   },
@@ -40,7 +40,7 @@
     "rememberLastSearch_comment": "Remembers the last search term and restores it when the terminal opens",
     "rememberLastSearch": true,
     "autoFocusSearch_comment": "Automatically focuses the search field when the terminal opens",
-    "autoFocusSearch": false
+    "autoFocusSearch": true
   },
   "tooltips": {
     "showCellUpgrades_comment": "Show installed upgrades in the tooltips of storage cells, color applicators and matter cannons",
