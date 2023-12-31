@@ -1,242 +1,260 @@
-ServerEvents.recipes(event => { 
-//I Love Fixing Merge Conflicts ~Ghostipedia 2023
+//A Simple "REMOVE AND HIDE" function akin to GroovyScript's Jei.yeet() function - This will tag the item for hiding from recipe viewers and remove the recipe
+//This one also has a tag removal function to remove the forge:tools/knives tag from what is removed so bear that in mind if you copy/paste this around
+let yeet = (itemName) => {
+  ServerEvents.recipes(event => {
+    event.remove({ output: itemName })
+  })
+  ServerEvents.tags('item', event => {
+    event.add('forge:viewers/hidden_from_recipe', itemName)
+
+  })
+}
+let DONOTEXIST = ['sophisticatedstorage:stack_upgrade_tier_1', 'sophisticatedstorage:stack_upgrade_tier_2', 'sophisticatedstorage:stack_upgrade_tier_3', 'sophisticatedstorage:stack_upgrade_tier_4', 'sophisticatedbackpacks:stack_upgrade_tier_1', 'sophisticatedbackpacks:stack_upgrade_tier_2', 'sophisticatedbackpacks:stack_upgrade_tier_3', 'sophisticatedbackpacks:stack_upgrade_tier_4']
+
+ServerEvents.tags('item', event => {
+  event.add('forge:viewers/hidden_from_recipe', DONOTEXIST)
+
+})
+ServerEvents.recipes(event => {
+  //I Love Fixing Merge Conflicts ~Ghostipedia 2023
   console.log('[SophisticatedMods.js loading]')
-  event.remove({ mod: 'sophisticatedstorage' })
+  // event.remove({ mod: 'sophisticatedstorage' })
   event.remove({ mod: 'sophisticatedbackpacks' })
-   /* BACKPACKS */
+  /* BACKPACKS */
 
-//Backpacks base tiers
-//Base
-event.remove({ output: 'sophisticatedbackpacks:backpack' })
-event.shaped('sophisticatedbackpacks:backpack', [
-  'SWS', 
-  'SCS', 
-  'WWW'  
-], {
-  S: 'minecraft:string',  
-  C: 'gtceu:bronze_crate',
-  W: 'cosmiccore:waxed_leather', 
-})
+  event.remove({ output: DONOTEXIST })
+  //Backpacks base tiers
+  //Base
+  event.remove({ output: 'sophisticatedbackpacks:backpack' })
+  event.shaped('sophisticatedbackpacks:backpack', [
+    'SWS',
+    'SCS',
+    'WWW'
+  ], {
+    S: 'minecraft:string',
+    C: 'gtceu:bronze_crate',
+    W: 'cosmiccore:waxed_leather',
+  })
 
-//Yup, Upgrading Backpacks takes a special recipetype...
-event.remove({ output: 'sophisticatedbackpacks:iron_backpack' })
-event.custom({
-  'type': 'sophisticatedbackpacks:backpack_upgrade',
-  'conditions': [
-    {
-      'itemRegistryName': 'sophisticatedbackpacks:iron_backpack', //What tier it's being upgraded to
-      'type': 'sophisticatedcore:item_enabled'
-    }
-  ],
-  'pattern': [
-    'DWD',
-    'WBW',
-    'DWD'
-  ],
-  'key': {
-    'D': {
-      'item': 'gtceu:wrought_iron_plate'
+  //Yup, Upgrading Backpacks takes a special recipetype...
+  event.remove({ output: 'sophisticatedbackpacks:iron_backpack' })
+  event.custom({
+    'type': 'sophisticatedbackpacks:backpack_upgrade',
+    'conditions': [
+      {
+        'itemRegistryName': 'sophisticatedbackpacks:iron_backpack', //What tier it's being upgraded to
+        'type': 'sophisticatedcore:item_enabled'
+      }
+    ],
+    'pattern': [
+      'DWD',
+      'WBW',
+      'DWD'
+    ],
+    'key': {
+      'D': {
+        'item': 'gtceu:wrought_iron_plate'
+      },
+      'B': {
+        'item': 'sophisticatedbackpacks:backpack'
+      },
+      'W': {
+        'item': 'cosmiccore:waxed_leather'
+      }
     },
-    'B': {
-      'item': 'sophisticatedbackpacks:backpack'
-    },
-    'W': {
-      'item': 'cosmiccore:waxed_leather'
+    'result': {
+      'item': 'sophisticatedbackpacks:iron_backpack' // Same case as the Registry name
     }
-  },
-  'result': {
-    'item': 'sophisticatedbackpacks:iron_backpack' // Same case as the Registry name
-  }
-})
+  })
 
-//GOLD BACKPACK
-event.remove({ output: 'sophisticatedbackpacks:gold_backpack' })
-event.custom({
-  'type': 'sophisticatedbackpacks:backpack_upgrade',
-  'conditions': [
-    {
-      'itemRegistryName': 'sophisticatedbackpacks:gold_backpack', //What tier it's being upgraded to
-      'type': 'sophisticatedcore:item_enabled'
-    }
-  ],
-  'pattern': [
-    'DWD',
-    'WBW',
-    'DWD'
-  ],
-  'key': {
-    'D': {
-      'item': 'gtceu:rose_gold_plate'
+  //GOLD BACKPACK
+  event.remove({ output: 'sophisticatedbackpacks:gold_backpack' })
+  event.custom({
+    'type': 'sophisticatedbackpacks:backpack_upgrade',
+    'conditions': [
+      {
+        'itemRegistryName': 'sophisticatedbackpacks:gold_backpack', //What tier it's being upgraded to
+        'type': 'sophisticatedcore:item_enabled'
+      }
+    ],
+    'pattern': [
+      'DWD',
+      'WBW',
+      'DWD'
+    ],
+    'key': {
+      'D': {
+        'item': 'gtceu:rose_gold_plate'
+      },
+      'B': {
+        'item': 'sophisticatedbackpacks:iron_backpack'
+      },
+      'W': {
+        'item': 'cosmiccore:waxed_leather'
+      }
     },
-    'B': {
-      'item': 'sophisticatedbackpacks:iron_backpack'
-    },
-    'W': {
-      'item': 'cosmiccore:waxed_leather'
+    'result': {
+      'item': 'sophisticatedbackpacks:gold_backpack' // Same case as the Registry name
     }
-  },
-  'result': {
-    'item': 'sophisticatedbackpacks:gold_backpack' // Same case as the Registry name
-  }
-})
+  })
 
-//DIAMOND BACKPACK
-event.remove({ output: 'sophisticatedbackpacks:diamond_backpack' })
-event.custom({
-  'type': 'sophisticatedbackpacks:backpack_upgrade',
-  'conditions': [
-    {
-      'itemRegistryName': 'sophisticatedbackpacks:diamond_backpack', //What tier it's being upgraded to
-      'type': 'sophisticatedcore:item_enabled'
-    }
-  ],
-  'pattern': [
-    'DWD',
-    'WBW',
-    'DWD'
-  ],
-  'key': {
-    'D': {
-      'item': 'gtceu:diamond_exquisite_gem'
+  //DIAMOND BACKPACK
+  event.remove({ output: 'sophisticatedbackpacks:diamond_backpack' })
+  event.custom({
+    'type': 'sophisticatedbackpacks:backpack_upgrade',
+    'conditions': [
+      {
+        'itemRegistryName': 'sophisticatedbackpacks:diamond_backpack', //What tier it's being upgraded to
+        'type': 'sophisticatedcore:item_enabled'
+      }
+    ],
+    'pattern': [
+      'DWD',
+      'WBW',
+      'DWD'
+    ],
+    'key': {
+      'D': {
+        'item': 'gtceu:diamond_exquisite_gem'
+      },
+      'B': {
+        'item': 'sophisticatedbackpacks:gold_backpack'
+      },
+      'W': {
+        'item': 'cosmiccore:waxed_leather'
+      }
     },
-    'B': {
-      'item': 'sophisticatedbackpacks:gold_backpack'
-    },
-    'W': {
-      'item': 'cosmiccore:waxed_leather'
+    'result': {
+      'item': 'sophisticatedbackpacks:diamond_backpack' // Same case as the Registry name
     }
-  },
-  'result': {
-    'item': 'sophisticatedbackpacks:diamond_backpack' // Same case as the Registry name
-  }
-})
+  })
   /* METHODS & UTILS */
 
   const woodTypes = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'mangrove', 'crimson', 'warped'];
 
   let woodBarrel = (woodType) => {
 
-      // i didn't find a way to apply nbt data to an output
+    // i didn't find a way to apply nbt data to an output
     event.custom({
       'type': 'minecraft:crafting_shaped',
       'conditions': [
-          {
-              'type': 'sophisticatedcore:item_enabled',
-              'itemRegistryName': 'sophisticatedstorage:barrel'
-          }
+        {
+          'type': 'sophisticatedcore:item_enabled',
+          'itemRegistryName': 'sophisticatedstorage:barrel'
+        }
       ],
       'key': {
-          'C': {
-              'item': 'minecraft:barrel'
-          },
-          'S': {
-            'item': `minecraft:${woodType}_slab`
-          },
-          'E': {
-              'tag': 'forge:tools/saws'
-          },
-          'P': {
-              'item': `minecraft:${woodType}_planks`
-          }
+        'C': {
+          'item': 'minecraft:barrel'
+        },
+        'S': {
+          'item': `minecraft:${woodType}_slab`
+        },
+        'E': {
+          'tag': 'forge:tools/saws'
+        },
+        'P': {
+          'item': `minecraft:${woodType}_planks`
+        }
       },
       'pattern': [
-          'PEP',
-          'PCP',
-          'PSP'
+        'PEP',
+        'PCP',
+        'PSP'
       ],
       'result': {
-          'item': 'sophisticatedstorage:barrel',
-          'nbt': `{woodType:\'${woodType}\'}`
+        'item': 'sophisticatedstorage:barrel',
+        'nbt': `{woodType:\'${woodType}\'}`
       }
-  });
-}
+    });
+  }
 
   let containerTierUpgrade = (materialOne, materialTwo, nextTier, previousTier) => {
-      event.custom(
+    event.custom(
+      {
+        'type': 'sophisticatedstorage:storage_tier_upgrade',
+        'conditions': [
           {
-              'type': 'sophisticatedstorage:storage_tier_upgrade',
-              'conditions': [
-                {
-                  'type': 'sophisticatedcore:item_enabled',
-                  'itemRegistryName': `sophisticatedstorage:${nextTier}`
-                }
-              ],
-              'key': {
-                  'C': {
-                      'item': `sophisticatedstorage:${previousTier}`
-                  },
-                  'S': {
-                      'tag': 'forge:tools/saws'
-                  },
-                  'H': {
-                      'tag': 'forge:tools/hammers'
-                  },
-                  'R': {
-                      'tag': materialOne
-                  },
-                  'P': {
-                      'item': materialTwo
-                  }
-              },
-              'pattern': [
-                  'PRP',
-                  'SCH',
-                  'PRP'
-              ],
-              'result': {
-                  'item': `sophisticatedstorage:${nextTier}`
-              }
+            'type': 'sophisticatedcore:item_enabled',
+            'itemRegistryName': `sophisticatedstorage:${nextTier}`
           }
-      );
+        ],
+        'key': {
+          'C': {
+            'item': `sophisticatedstorage:${previousTier}`
+          },
+          'S': {
+            'tag': 'forge:tools/saws'
+          },
+          'H': {
+            'tag': 'forge:tools/hammers'
+          },
+          'R': {
+            'tag': materialOne
+          },
+          'P': {
+            'item': materialTwo
+          }
+        },
+        'pattern': [
+          'PRP',
+          'SCH',
+          'PRP'
+        ],
+        'result': {
+          'item': `sophisticatedstorage:${nextTier}`
+        }
+      }
+    );
   }
 
   let upgradeUpgrade = (materialOne, materialTwo, coreItem, result) => {
-      event.shaped(result, [
-          'OTO', 
-          'TCT', 
-          'OTO'  
-        ], {
-          O: materialOne,  
-          T: materialTwo,
-          C: coreItem
-        })
+    event.shaped(result, [
+      'OTO',
+      'TCT',
+      'OTO'
+    ], {
+      O: materialOne,
+      T: materialTwo,
+      C: coreItem
+    })
   }
 
   let upgradeStorage = (input, result) => {
-      upgradeUpgrade(input, '#forge:dusts/redstone', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:${result}_upgrade`);
-      upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', `sophisticatedstorage:${result}_upgrade`, `sophisticatedstorage:advanced_${result}_upgrade`);
+    upgradeUpgrade(input, '#forge:dusts/redstone', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:${result}_upgrade`);
+    upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', `sophisticatedstorage:${result}_upgrade`, `sophisticatedstorage:advanced_${result}_upgrade`);
   }
 
   let upgradeSmeltingStorage = (input, result) => {
     upgradeUpgrade(input, '#forge:dusts/redstone', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:${result}_upgrade`);
     upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', `sophisticatedstorage:${result}_upgrade`, `sophisticatedstorage:auto_${result}_upgrade`);
-}
+  }
 
 
 
   let upgradeBackpacks = (input, result) => {
     upgradeUpgrade(input, 'cosmiccore:waxed_leather', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:${result}_upgrade`);
     upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', `sophisticatedbackpacks:${result}_upgrade`, `sophisticatedbackpacks:advanced_${result}_upgrade`);
-}
+  }
 
-let upgradeSmeltingBackpacks = (input, result) => {
-  upgradeUpgrade(input, '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:${result}_upgrade`);
-  upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', `sophisticatedbackpacks:${result}_upgrade`, `sophisticatedbackpacks:auto_${result}_upgrade`);
-}
+  let upgradeSmeltingBackpacks = (input, result) => {
+    upgradeUpgrade(input, '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:${result}_upgrade`);
+    upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', `sophisticatedbackpacks:${result}_upgrade`, `sophisticatedbackpacks:auto_${result}_upgrade`);
+  }
 
   /* STORAGE */
 
-  woodTypes.forEach(function(woodType) {
-      woodBarrel(woodType);
+  woodTypes.forEach(function (woodType) {
+    woodBarrel(woodType);
   });
 
   containerTierUpgrade('forge:rings/wrought_iron', 'gtceu:wrought_iron_plate', 'iron_barrel', 'barrel');
   containerTierUpgrade('forge:rings/rose_gold', 'gtceu:rose_gold_plate', 'gold_barrel', 'iron_barrel');
-  containerTierUpgrade('forge:plates/diamond', 'gtceu:diamond_exquisite_gem' ,'diamond_barrel', 'gold_barrel');
+  containerTierUpgrade('forge:plates/diamond', 'gtceu:diamond_exquisite_gem', 'diamond_barrel', 'gold_barrel');
 
   containerTierUpgrade('forge:rings/wrought_iron', 'gtceu:wrought_iron_plate', 'iron_chest', 'chest');
   containerTierUpgrade('forge:rings/rose_gold', 'gtceu:rose_gold_plate', 'gold_chest', 'iron_chest');
-  containerTierUpgrade('forge:plates/diamond', 'gtceu:diamond_exquisite_gem' ,'diamond_chest', 'gold_chest');
+  containerTierUpgrade('forge:plates/diamond', 'gtceu:diamond_exquisite_gem', 'diamond_chest', 'gold_chest');
 
 
   /* UPGRADES */
@@ -266,13 +284,13 @@ let upgradeSmeltingBackpacks = (input, result) => {
   upgradeUpgrade('minecraft:jukebox', '#forge:dusts/redstone', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:jukebox_upgrade`);
   upgradeUpgrade('#forge:dusts/redstone', 'minecraft:piston', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:compression_upgrade`);
 
-// YES, I GAME UP HERE!
-// I'M FUCKING TIRED AHHHHHHHHHHHHHH
+  // YES, I GAME UP HERE!
+  // I'M FUCKING TIRED AHHHHHHHHHHHHHH
 
-  upgradeUpgrade('gtceu:wood_screw', 'gtceu:wood_plate', `sophisticatedstorage:upgrade_base`, `sophisticatedstorage:stack_upgrade_tier_1`);
-  upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', `sophisticatedstorage:stack_upgrade_tier_1`, `sophisticatedstorage:stack_upgrade_tier_2`);
-  upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:rose_gold_plate', `sophisticatedstorage:stack_upgrade_tier_2`, `sophisticatedstorage:stack_upgrade_tier_3`);
-  upgradeUpgrade('gtceu:diamond_exquisite_gem', 'gtceu:diamond_plate', `sophisticatedstorage:stack_upgrade_tier_3`, `sophisticatedstorage:stack_upgrade_tier_4`);
+  // upgradeUpgrade('gtceu:wood_screw', 'gtceu:wood_plate', `sophisticatedstorage:upgrade_base`, `sophisticatedstorage:stack_upgrade_tier_1`);
+  // upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', `sophisticatedstorage:stack_upgrade_tier_1`, `sophisticatedstorage:stack_upgrade_tier_2`);
+  // upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:rose_gold_plate', `sophisticatedstorage:stack_upgrade_tier_2`, `sophisticatedstorage:stack_upgrade_tier_3`);
+  // upgradeUpgrade('gtceu:diamond_exquisite_gem', 'gtceu:diamond_plate', `sophisticatedstorage:stack_upgrade_tier_3`, `sophisticatedstorage:stack_upgrade_tier_4`);
 
 
 
@@ -304,9 +322,9 @@ let upgradeSmeltingBackpacks = (input, result) => {
   upgradeUpgrade('gtceu:lv_super_tank', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:tank_upgrade`);
   upgradeUpgrade('gtceu:lv_sodium_battery', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:battery_upgrade`);
   upgradeUpgrade('minecraft:anvil', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:anvil_upgrade`);
-  upgradeUpgrade('gtceu:wood_screw', 'cosmiccore:waxed_leather', `sophisticatedbackpacks:upgrade_base`, `sophisticatedbackpacks:stack_upgrade_tier_1`);
-  upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', `sophisticatedbackpacks:stack_upgrade_tier_1`, `sophisticatedbackpacks:stack_upgrade_tier_2`);
-  upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:rose_gold_plate', `sophisticatedbackpacks:stack_upgrade_tier_2`, `sophisticatedbackpacks:stack_upgrade_tier_3`);
-  upgradeUpgrade('gtceu:diamond_exquisite_gem', 'gtceu:diamond_plate', `sophisticatedbackpacks:stack_upgrade_tier_3`, `sophisticatedbackpacks:stack_upgrade_tier_4`);
+  // upgradeUpgrade('gtceu:wood_screw', 'cosmiccore:waxed_leather', `sophisticatedbackpacks:upgrade_base`, `sophisticatedbackpacks:stack_upgrade_tier_1`);
+  // upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', `sophisticatedbackpacks:stack_upgrade_tier_1`, `sophisticatedbackpacks:stack_upgrade_tier_2`);
+  // upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:rose_gold_plate', `sophisticatedbackpacks:stack_upgrade_tier_2`, `sophisticatedbackpacks:stack_upgrade_tier_3`);
+  // upgradeUpgrade('gtceu:diamond_exquisite_gem', 'gtceu:diamond_plate', `sophisticatedbackpacks:stack_upgrade_tier_3`, `sophisticatedbackpacks:stack_upgrade_tier_4`);
 
 })
