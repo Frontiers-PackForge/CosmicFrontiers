@@ -7,9 +7,6 @@ ServerEvents.recipes(e => {
     e.remove({output: 'minecraft:iron_shovel'})
     e.remove({output: 'minecraft:iron_sword'})
     e.remove({output: 'minecraft:iron_axe'})
-
-
-
 })
 
 //Removal of vanilla charcoal recipes
@@ -20,4 +17,5 @@ ServerEvents.recipes(e => {
     e.remove({id: 'integrateddynamics:smelting/menril_log_coal'})
     e.remove({id: 'integrateddynamics:blasting/menril_log_filled_coal'})
     e.remove({id: 'integrateddynamics:blasting/menril_log_coal'})
+
 })
