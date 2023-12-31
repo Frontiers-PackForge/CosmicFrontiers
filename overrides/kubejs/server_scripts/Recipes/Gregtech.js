@@ -381,10 +381,10 @@ ServerEvents.recipes(event => {
       .EUt(GTValues.VA[GTValues.LV]);
 
 
-  event.recipes.gtceu.lathe('gtceu:steel_rod')
+  event.recipes.gtceu.lathe('gtceu:steel_ingot')
       .itemInputs('gtceu:steel_ingot')
-      .itemOutputs('gtceu:steel_rod')
-      .duration(600)
+      .itemOutputs('2x gtceu:steel_rod')
+      .duration(110)
       .EUt(GTValues.VA[GTValues.LV]);
 
 
