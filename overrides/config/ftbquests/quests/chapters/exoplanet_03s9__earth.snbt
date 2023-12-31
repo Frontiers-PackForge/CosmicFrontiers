@@ -97,6 +97,7 @@
 			shape: "hexagon"
 			subtitle: "You'll need iron, lots of it!"
 			tasks: [{
+				count: 64L
 				id: "595D1BBD97722943"
 				item: "minecraft:iron_ingot"
 				type: "item"
@@ -243,10 +244,10 @@
 			]
 			id: "5693AA8924634F44"
 			rewards: [{
-				id: "664924EA20390F14"
+				id: "156DF14D7C95421C"
 				item: {
 					Count: 1b
-					id: "gtceu:iron_mining_hammer"
+					id: "gtceu:steel_mining_hammer"
 					tag: {
 						Damage: 0
 						Modifier: "forbidden_arcanus:eternal"
@@ -257,16 +258,15 @@
 			}]
 			subtitle: "I don't care how you get it."
 			tasks: [{
-				icon: "gtceu:raw_chalcopyrite"
-				id: "66CE60678CA958A4"
+				id: "6CB970E0EDD5DCFA"
 				item: {
 					Count: 1b
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:raw_materials)item_tag(forge:ores)"
+						"ftbfiltersystem:filter": "item_tag(forge:raw_materials)"
 					}
 				}
-				title: "Any Ores"
+				title: "Any Ore"
 				type: "item"
 			}]
 			title: "FTB: Ultimine and You"
@@ -506,6 +506,33 @@
 			title: "The Road Ahead"
 			x: 5.0d
 			y: 5.5d
+		}
+		{
+			dependencies: ["4276E47E7CF85DF0"]
+			description: [
+				""
+				"&6These Chests have expanded storage slots and can be taped to move them around.&r"
+				""
+				""
+				""
+				"&7All Iron-Chest Quests will request an oak variant because for some reasons these things use NBT rather than tags. Sorry about that ~Ghost"
+			]
+			id: "3FEEC5324CD1774E"
+			optional: true
+			subtitle: "An Investment now.."
+			tasks: [{
+				id: "4FD31A8B131FC7D3"
+				item: {
+					Count: 1b
+					id: "sophisticatedstorage:iron_chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
 		}
 	]
 	title: "First Steps"

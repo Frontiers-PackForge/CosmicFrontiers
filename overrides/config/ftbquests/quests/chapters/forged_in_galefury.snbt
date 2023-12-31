@@ -11,6 +11,18 @@
 	id: "2AF6C950A3B12568"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "466C20EACAEF3394"
+		shape: "hexagon"
+		size: 2.5d
+		subtitle: "NYI - Thanks for Playing so far!"
+		tasks: [{
+			id: "35659F274F2AE61C"
+			item: "minecraft:barrier"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "Forged in Galefury [MV]"
 }

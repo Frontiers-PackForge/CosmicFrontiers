@@ -46,6 +46,12 @@
 	#Defines wearable items that cannot be insulated
 	#Format: ["item_id", "item_id", ...etc]
 	"Insulation Blacklist" = []
+	#Defines the items that provide insulation when worn in a curio slot
+	#Format: [["item_id", cold, hot], ["item_id", cold, hot], ...etc]
+	#"item_id": The item's ID (i.e. "minecraft:iron_ingot"). Accepts tags with "#" (i.e. "#minecraft:wool").
+	#"cold": The amount of cold insulation the item provides.
+	#"hot": The amount of heat insulation the item provides.
+	"Insulating Curios" = []
 
 [Consumables]
 	#Defines items that affect the player's temperature when consumed
