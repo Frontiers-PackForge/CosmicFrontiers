@@ -2514,7 +2514,7 @@ ServerEvents.recipes(e => {
             ' P '
         ],
         {
-            P: 'biomesoplenty:jacaranda_log'
+            P: 'biomesoplenty:hellbark_log'
         })
 //Menril
     e.remove({id: 'integrateddynamics:crafting/menril_planks'})
