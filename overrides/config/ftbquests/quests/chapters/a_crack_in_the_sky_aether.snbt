@@ -7,48 +7,6 @@
 	id: "0177AB58CEDC8C8D"
 	order_index: 0
 	quest_links: [ ]
-	quests: [
-		{
-			dependencies: ["5F0FB7A2F012B47E"]
-			description: [
-				"&l&4NYI - DO NOT ENTER THE AETHER LMAOOOO - There's no ores.&r"
-				""
-				"This earth seems to have some barrier from letting me get to the lofty clouds above."
-				""
-				"I will investigate a way to break through this barrier. The best option is a stable gateway."
-				""
-				"&o&6A Portal made of blue mana alloy and my new MV circuits may be just enough to locate a safe location to establish connections with."
-			]
-			id: "7E9BA1EC4CA7EEE8"
-			shape: "hexagon"
-			size: 2.5d
-			subtitle: "You can't keep me here forever"
-			tasks: [{
-				id: "032ACC05FA19FC5D"
-				item: "minecraft:barrier"
-				type: "item"
-			}]
-			title: "A Way up"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7E9BA1EC4CA7EEE8"]
-			description: [
-				"Like, this isn't a joke. you won't have any ores."
-				""
-				"That or be prepared to delete your aether dimension as the content comes out"
-			]
-			id: "0C291B84EB831F29"
-			subtitle: "DONT ENTER THE AETHER"
-			tasks: [{
-				id: "6C5C5FCEC3999227"
-				item: "botania:cosmetic_questgiver_mark"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -2.0d
-		}
-	]
+	quests: [ ]
 	title: "A Crack in the Sky..."
 }

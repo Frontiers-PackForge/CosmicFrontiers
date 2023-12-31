@@ -84,9 +84,6 @@
   "extendedcrafting:flux_crafter": null,
   "extendedcrafting:compressor": null,
   "tombstone:graves": null,
-  "minecraft:campfire": null,
-  "expatternprovider:tile_data": null,
-  "expatternprovider:jade_wireless": null,
   "supplementaries:present": null,
   "supplementaries:safe": null,
   "supplementaries:hat_stand": null,
@@ -131,7 +128,6 @@
   "minecraft:mob_breeding": null,
   "minecraft:chicken_egg": null,
   "minecraft:zombie_villager": null,
-  "minecraft:campfire": null,
   "minecraft:block_states": null,
   "minecraft:horse_stats": null,
   "minecraft:item_frame": null,
@@ -172,7 +168,5 @@
   "ae2:part_name": null,
   "ae2:part_icon": null,
   "ae2:part_tooltip": null,
-  "ae2:part_mod_name": null,
-  "expatternprovider:tile_data": null,
-  "expatternprovider:jade_wireless": null
+  "ae2:part_mod_name": null
 }

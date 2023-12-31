@@ -61,7 +61,6 @@
 		ticks_to_increase_power = 15
 		#do enderman heads work when looked from any side?
 		work_from_any_side = false
-		drop_head = true
 
 	[redstone.turn_table]
 		enabled = true
@@ -218,11 +217,7 @@
 	doormat = true
 	flint_block = true
 	candle_holder = true
-
-	[building.hat_stand]
-		enabled = true
-		#Allow all items to go on hat stand
-		unrestricted = false
+	hat_stand = true
 
 	[building.blackboard]
 		enabled = true
