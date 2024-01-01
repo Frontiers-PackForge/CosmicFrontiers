@@ -362,6 +362,33 @@ ServerEvents.recipes(e => {
     e.recipes.createDeploying(inter, [inter, 'gtceu:tin_spring']),
     e.recipes.createDeploying(inter, [inter, 'gtceu:rubber_plate']),
   ]).transitionalItem(inter).loops(2) // set the transitional item and the number of loops
+
+  //Hotfixes for Greg machine recipes
+
+
+
+
+
+
+
+})
+
+ServerEvents.recipes(event => {
+  event.recipes.gtceu.macerator('gtceu:obsidian_dust')
+      .itemInputs('minecraft:obsidian')
+      .itemOutputs('gtceu:obsidian_dust')
+      .duration(600)
+      .EUt(GTValues.VA[GTValues.LV]);
+
+
+  event.recipes.gtceu.lathe('gtceu:steel_ingot')
+      .itemInputs('gtceu:steel_ingot')
+      .itemOutputs('2x gtceu:steel_rod')
+      .duration(110)
+      .EUt(GTValues.VA[GTValues.LV]);
+
+
+
 })
 
 
