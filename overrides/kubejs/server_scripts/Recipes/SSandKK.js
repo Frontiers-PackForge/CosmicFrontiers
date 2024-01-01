@@ -398,12 +398,30 @@ bn_materials.forEach(item => {
     )
     })
 
-    //upgrading the cincinnatite items
+    //smithing stuff
     weapons.forEach(item => {
         e.smithing(
             `knavesneeds:betternether/cincinnasite_diamond/${item}`,  
-            'betternether:cincinnasite_diamond_upgrade_smithing_template' ,
+            'betternether:cincinnasite_diamond_upgrade_smithing_template',
             `knavesneeds:betternether/cincinnasite/${item}`, 
+            'minecraft:diamond' 
+          )
+          e.smithing(
+            `simplyswords:netherite_${item}`,  
+            'minecraft:netherite_upgrade_smithing_template',
+            `simplyswords:diamond_${item}`, 
+            'minecraft:netherite_ingot' 
+          )
+          e.smithing(
+            `simplyswords:runic_${item}`,  
+            'simplyswords:runic_tablet',
+            `simplyswords:netherite_${item}`, 
+            'minecraft:diamond' 
+          )
+          e.smithing(
+            `simplyswords:runic_${item}`,  
+            'simplyswords:runic_tablet',
+            `simplyswords:runic_${item}`, 
             'minecraft:diamond' 
           )
     })
