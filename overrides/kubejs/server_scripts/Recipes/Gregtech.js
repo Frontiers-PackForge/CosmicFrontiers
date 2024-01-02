@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
     .EUt(8);
   event.recipes.gtceu.masonry_oven('gtceu:andesite_alloy_masonry')
     .itemInputs('minecraft:andesite')
-    .itemInputs('gtceu:zinc_dust')
+    .itemInputs('gtceu:wrought_iron_dust')
     .itemOutputs('create:andesite_alloy')
     .notConsumable('gtceu:ingot_casting_mold')
     .duration(100)

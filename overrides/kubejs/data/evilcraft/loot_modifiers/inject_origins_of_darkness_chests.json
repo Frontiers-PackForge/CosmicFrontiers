@@ -1,0 +1,12 @@
+{
+  "type": "cyclopscore:inject_item",
+  "conditions": [
+    {
+      "condition": "random_chance",
+      "chance": 0.2
+    }
+  ],
+  "item": { "id": "evilcraft:origins_of_darkness", "Count": 1 },
+  "loot_tables": [
+  ]
+}

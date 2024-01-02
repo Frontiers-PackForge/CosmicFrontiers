@@ -18,7 +18,7 @@ ServerEvents.tags('item', event => {
 ServerEvents.recipes(event => {
   //I Love Fixing Merge Conflicts ~Ghostipedia 2023
   console.log('[SophisticatedMods.js loading]')
-  // event.remove({ mod: 'sophisticatedstorage' })
+  event.remove({ mod: 'sophisticatedstorage' })
   event.remove({ mod: 'sophisticatedbackpacks' })
   /* BACKPACKS */
 
