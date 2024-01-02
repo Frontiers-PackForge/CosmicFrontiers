@@ -14,8 +14,9 @@ let yeet_f = (itemName) => {
   ServerEvents.tags('fluid', event => {
       event.add('forge:viewers/hidden_from_recipe', itemName)
   })
-}
-    yeet(/ad_astra:(.*)_ingot/);
+}   //This regex is apparently messing with the CEU steel ingot as well we also don't wanna hide the AA higher tier ingots quite yet 
+    // yeet(/ad_astra:(.*)_ingot/);
+    yeet('ad_astra:steel_ingot')
     yeet(/ad_astra:(.*)_plate/)
     yeet(/ad_astra:(.*)_raw/)
     yeet(/ad_astra:(.*)_nugget/)
@@ -52,7 +53,7 @@ let yeet_f = (itemName) => {
     
       
     event.add('ad_astra:fuel', `gtceu:rocket_fuel`)
-      
+    event.remove('forge:ingots/steel', 'ad_astra:steel_ingot')
     })
     ServerEvents.recipes(event => { 
     event.remove({ output: 'ad_astra:tier_1_rocket' })
