@@ -395,6 +395,7 @@ ServerEvents.recipes(event => {
 
 //Netherite Line
 ServerEvents.recipes(event => { 
+  event.remove({output:'minecraft:netherite_scrap'})
   event.recipes.gtceu.macerator('gtceu:macerator/macerate_ancient_debris')
     .itemInputs('minecraft:ancient_debris')
     .itemOutputs('gtceu:ancient_debris_dust')
