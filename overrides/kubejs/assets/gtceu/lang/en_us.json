@@ -47,5 +47,8 @@
 
   "block.gtceu.basic_alternator": "Basic Alternator",
   "material.mana_steel": "Mana Steel",
-  "material.zanite": "Zanite"
+  "material.zanite": "Zanite",
+  "material.ancient_debris": "Ancient Debris",
+  "material.netherite_scrap": "Netherite Scrap",
+  "material.netherite_alloy": "Netherite Alloy"
 }
