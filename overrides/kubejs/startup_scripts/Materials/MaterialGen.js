@@ -35,4 +35,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
         .color(0x9f0b21).iconSet(GTMaterialIconSet.RUBY)
 
+//Netherite Line Materials
+    event.create('ancient_debris')
+        .dust()
+        .color(0x422a25)
+
+    
+    event.create('netherite_scrap')
+        .dust()
+        .color(0x53332b).iconSet(GTMaterialIconSet.SHINY)
+
+
+    event.create('netherite_alloy')
+        .dust()
+        .color(0x393435).iconSet(GTMaterialIconSet.SHINY)
+
 })

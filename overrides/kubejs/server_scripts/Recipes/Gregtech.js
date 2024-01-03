@@ -393,4 +393,44 @@ ServerEvents.recipes(event => {
 
 })
 
+//Netherite Line
+ServerEvents.recipes(event => { 
+  event.remove({output:'minecraft:netherite_scrap'})
+  event.recipes.gtceu.macerator('gtceu:macerator/macerate_ancient_debris')
+    .itemInputs('minecraft:ancient_debris')
+    .itemOutputs('gtceu:ancient_debris_dust')
+    .duration(400)
+    .EUt(GTValues.VA[GTValues.ULV]);
+
+
+  event.recipes.gtceu.chemical_bath('gtceu:chemical_bath/purify_ancient_debris')
+    .itemInputs('gtceu:ancient_debris_dust')
+    .inputFluids('gtceu:nether_sediment_sludge 250')
+    .itemOutputs('gtceu:netherite_scrap_dust')
+    .chance(0.1)
+    .itemOutputs('gtceu:netherite_scrap_dust')
+    .chance(0.6)
+    .itemOutputs('gtceu:gold_dust')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  
+  event.recipes.gtceu.mixer('gtceu:mixer/netherite_alloy')
+    .itemInputs('2x gtceu:netherite_scrap_dust')
+    .itemInputs('2x gtceu:rose_gold_dust')
+    .itemOutputs('gtceu:netherite_alloy_dust')
+    .duration(500)
+    .EUt(GTValues.VA[GTValues.LV]);
+  
+
+  event.remove({id:'minecraft:netherite_ingot'})
+  event.recipes.gtceu.electric_blast_furnace('gtceu:electric_blast_furnace/netherite_from_netherite_alloy')
+    .itemInputs('gtceu:netherite_alloy_dust')
+    .inputFluids('gtceu:nitrogen 1000')
+    .itemOutputs('minecraft:netherite_ingot')
+    .blastFurnaceTemp(1200)
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.MV]);
+
+})
 
