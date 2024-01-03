@@ -417,7 +417,7 @@ ServerEvents.recipes(event => {
   
   event.recipes.gtceu.mixer('gtceu:mixer/netherite_alloy')
     .itemInputs('2x gtceu:netherite_scrap_dust')
-    .itemInputs('2x gtceu:gold_dust')
+    .itemInputs('2x gtceu:rose_gold_dust')
     .itemOutputs('gtceu:netherite_alloy_dust')
     .duration(500)
     .EUt(GTValues.VA[GTValues.LV]);
