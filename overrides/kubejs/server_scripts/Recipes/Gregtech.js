@@ -381,13 +381,6 @@ ServerEvents.recipes(event => {
       .EUt(GTValues.VA[GTValues.LV]);
 
 
-  event.recipes.gtceu.lathe('gtceu:steel_ingot')
-      .itemInputs('gtceu:steel_ingot')
-      .itemOutputs('2x gtceu:steel_rod')
-      .duration(110)
-      .EUt(GTValues.VA[GTValues.LV]);
-
-  
   event.remove({id:'gtceu:mixer/rose_gold'})
   event.recipes.gtceu.mixer('gtceu:mixer/rose_gold')
       .itemInputs(['gtceu:copper_dust', '4x gtceu:gold_dust'])
@@ -395,9 +388,9 @@ ServerEvents.recipes(event => {
       .itemOutputs('5x gtceu:rose_gold_dust')
       .duration(500)
       .EUt(GTValues.VA[GTValues.LV]);
-    
-    
-    
+
+
+
 })
 
 
