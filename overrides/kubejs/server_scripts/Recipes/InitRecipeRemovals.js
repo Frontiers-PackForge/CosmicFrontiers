@@ -19,3 +19,8 @@ ServerEvents.recipes(e => {
     e.remove({id: 'integrateddynamics:blasting/menril_log_coal'})
 
 })
+
+ServerEvents.recipes(e => { 
+    e.remove({id: 'deep_aether:skyroot_crafting_table'})
+    e.remove({id: 'aether:skyroot_crafting_table'})
+})
