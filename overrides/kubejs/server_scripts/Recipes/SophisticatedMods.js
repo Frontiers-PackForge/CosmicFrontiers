@@ -259,6 +259,10 @@ ServerEvents.recipes(event => {
 
   /* UPGRADES */
 
+  //UPGRADE BASE
+
+  upgradeUpgrade('#forge:string', 'gtceu:wrought_iron_plate', 'cosmiccore:waxed_leather', 'sophisticatedbackpacks:upgrade_base')
+
   // STORAGE UPGRADES
 
   upgradeUpgrade('gtceu:wood_screw', '#minecraft:planks', '#forge:tools/saws', 'sophisticatedstorage:upgrade_base');
