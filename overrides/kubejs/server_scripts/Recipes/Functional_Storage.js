@@ -108,7 +108,7 @@ ServerEvents.recipes( e => {
       A: 'gtceu:stone_plate', 
       B: '#functionalstorage:drawer',  
       C: 'gtceu:red_alloy_quadruple_wire',
-      D: 'gtceu:certus_quartz_block'
+      D: 'minecraft:quartz_block'
     }
     )
     e.shaped('functionalstorage:framed_storage_controller', [
