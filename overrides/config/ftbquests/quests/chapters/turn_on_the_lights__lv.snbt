@@ -215,7 +215,6 @@
 		}
 		{
 			dependencies: [
-				"513835C4DE7B0F92"
 				"0C1480B359A12981"
 				"6157CEB8F4884CE2"
 			]
@@ -231,9 +230,8 @@
 		}
 		{
 			dependencies: ["75227B3B290C4F71"]
-			description: ["You could make the Cupronickle in your Steam Alloy Smelter, But I'd be better off creating the electric version now."]
+			description: ["I could make the Cupronickle in my Steam Alloy Smelter still, But I'd be better off creating the electric version now."]
 			id: "457F11DBC06A8046"
-			optional: true
 			tasks: [{
 				id: "74096C68110DC3E1"
 				item: "gtceu:lv_alloy_smelter"
@@ -243,14 +241,18 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["457F11DBC06A8046"]
+			dependencies: [
+				"187B8D213D49BD07"
+				"12EBF67C386AA4B6"
+			]
+			hide_dependency_lines: true
 			id: "6157CEB8F4884CE2"
 			tasks: [{
 				id: "5976267FC5B164F2"
 				item: "gtceu:cupronickel_ingot"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 4.0d
 			y: -1.25d
 		}
 		{
@@ -613,17 +615,6 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["31FB7A45D4B61ED3"]
-			id: "0C785E3445E62216"
-			tasks: [{
-				id: "694891E0214C9CE3"
-				item: "create:mechanical_mixer"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 1.5d
-		}
-		{
 			dependencies: [
 				"4A81DCCC6A0C6BA6"
 				"713E576BAB70EF4F"
@@ -810,10 +801,7 @@
 			y: 11.0d
 		}
 		{
-			dependencies: [
-				"0C785E3445E62216"
-				"715ABB7C7914E109"
-			]
+			dependencies: ["715ABB7C7914E109"]
 			id: "6023F7793EF0FC77"
 			tasks: [{
 				id: "0AC053C6034A359D"

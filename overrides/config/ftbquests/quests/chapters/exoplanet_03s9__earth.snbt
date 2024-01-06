@@ -235,12 +235,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["283EFEAA64080D4D"]
+			dependencies: ["0588F46F605A2E88"]
 			description: [
 				"FTB: Ultimine is a powerful collection tool, allowing you to harvest a large area in various shapes"
 				""
 				""
 				"FTB:Ultimine &4&lDOES NOT&r work on GTCEU Ores, this functionality has been disabled to encourage Hammers and Miners. A few other blocks have also been blacklisted."
+				""
+				"I'm also giving you some unbreakable starting tools to help with clearing of blocks"
+				"(The botania axe will be replaced once GTM axes share similar (not buggy) functionality)"
 			]
 			id: "5693AA8924634F44"
 			rewards: [{
@@ -274,8 +277,8 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["423EB7A96CB261A3"]
-			description: ["Btw, This pack as FTB: Ultimine"]
+			dependencies: ["012D3A0EBD06AEB3"]
+			description: ["Btw, This pack has FTB: Ultimine"]
 			icon: "minecraft:oak_log"
 			id: "2F6DBFCBBC3A0827"
 			subtitle: "You'll need this"
@@ -533,6 +536,230 @@
 			}]
 			x: 6.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["423EB7A96CB261A3"]
+			icon: "paraglider:stamina_vessel"
+			id: "012D3A0EBD06AEB3"
+			subtitle: "Configure GUI with CTRL+P"
+			tasks: [{
+				id: "0967F63809AE56C6"
+				type: "checkmark"
+			}]
+			title: "Stamina and You"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["423EB7A96CB261A3"]
+			description: [
+				"Don't like constantly freezing and overheating in your own base?"
+				""
+				"Make a hearth and give it some warm/cold blocks and fluids, it'll keep you nice and comfortable."
+			]
+			id: "536D3BFD33A78DBF"
+			optional: true
+			subtitle: "Keeping Places Livable"
+			tasks: [{
+				id: "668651F95B53D12F"
+				item: "cold_sweat:hearth"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["012D3A0EBD06AEB3"]
+			description: [
+				"Using an altar allows you to augment your stamina, allowing more sprinting and parkour actions."
+				""
+				"NYI : In the future, certain foods will allow you to reduce stamina consumption rate as well as potions."
+			]
+			id: "5E8484FF7701ACE3"
+			optional: true
+			rewards: [{
+				id: "3F359B22B7FC83E6"
+				item: "paraglider:goddess_statue"
+				type: "item"
+			}]
+			subtitle: "Spirit Orbs Galore"
+			tasks: [{
+				count: 4L
+				id: "1670C7288BF3A9EC"
+				item: "paraglider:spirit_orb"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["283EFEAA64080D4D"]
+			description: [
+				"Right off the bat, Nutrition is NOT needed to ward off negative buffs."
+				""
+				"Food and Nutrition/Diet Balance only serves to augment the player."
+				""
+				"While not outright required, eating a well balanced diet of the core foodgroups will help you greatly."
+				""
+				"Sub Foodgroups (Psi, Mana) are optional and augment your player even further, at a cost."
+				""
+				""
+				"Someone out there told me if you max all food groups, you may even be able to do the impossible."
+			]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 9
+					}
+				}
+				id: "solonion:lunchbox"
+			}
+			id: "0588F46F605A2E88"
+			rewards: [{
+				id: "7F77AA88929CD09E"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 9
+						}
+					}
+					id: "solonion:lunchbox"
+				}
+				type: "item"
+			}]
+			subtitle: "Wait, you'll actually like this."
+			tasks: [{
+				id: "7C6730621E6A72E9"
+				type: "checkmark"
+			}]
+			title: "Nutrition and You."
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0588F46F605A2E88"]
+			description: [
+				"Most crops have an 'ideal' season to grow in. "
+				"However, all plants will grow year-round at a slower speed outside of their proper season."
+				""
+				"You can ignore this mechanic entirely by growing your plants under a glass roof (Greenhouse)"
+			]
+			icon: "sereneseasons:calendar"
+			id: "5526F519E59B8C98"
+			optional: true
+			tasks: [{
+				id: "24A4404A7C2C330B"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5693AA8924634F44"]
+			description: [
+				"Certain Dimensions as well as Y Levels in the overworld are thin on oxygen."
+				"You can craft a &arespirator&r to overcome this. "
+				""
+				"In the future you will need to prepare oxygen tanks to travel to places that lack oxygen entirely."
+				""
+				"You managed to come across a bottle of &bfree breathing&r, this should help early on."
+				""
+				"&8Psst, did you know there's a vanilla way to get charcoal without a furnace, hint hint."
+			]
+			icon: {
+				Count: 1b
+				id: "thinair:respirator"
+				tag: {
+					Damage: 214
+					display: {
+						Name: "{\"text\":\"Oddly Damaged Respirator\"}"
+					}
+				}
+			}
+			id: "7C2BA4D773E57683"
+			optional: true
+			rewards: [{
+				id: "76D335B0BAE970B0"
+				item: {
+					Count: 1b
+					id: "botania:brew_vial"
+					tag: {
+						brewKey: "botania:water_breathing"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Hold your breath."
+			tasks: [{
+				id: "7E6F8B260B75D219"
+				title: "Low Oxygen"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"5693AA8924634F44"
+				"4276E47E7CF85DF0"
+				"3FEEC5324CD1774E"
+				"423EB7A96CB261A3"
+				"78DFF9184296F7F6"
+				"536D3BFD33A78DBF"
+				"38DA0B4E0DBAC364"
+				"283EFEAA64080D4D"
+				"4D96DE63E82D8EAA"
+				"0588F46F605A2E88"
+				"012D3A0EBD06AEB3"
+				"2B84E90B712B6CD3"
+				"5E8484FF7701ACE3"
+				"7C2BA4D773E57683"
+				"2F6DBFCBBC3A0827"
+				"5526F519E59B8C98"
+			]
+			description: [
+				"Your Verdict came with some bonus supplies trapped within your entry area."
+				""
+				"The Eternal Stella Can be used to make anything unbreakable. It's your choice what you do with it."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "forbidden_arcanus:eternal_stella"
+				tag: { }
+			}
+			id: "06408883200FAC36"
+			optional: true
+			rewards: [
+				{
+					id: "38C38E77683DDD23"
+					item: {
+						Count: 1b
+						id: "forbidden_arcanus:eternal_stella"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5704C28873320804"
+					item: "forbidden_arcanus:darkstone_upgrade_smithing_template"
+					type: "item"
+				}
+			]
+			subtitle: "100% The QB Page to unlock."
+			tasks: [{
+				id: "5C7A35C4DA090EDF"
+				title: "Checkmark"
+				type: "checkmark"
+			}]
+			title: "Full Clear Chapter Reward : An Eternal Dilemma"
+			x: 5.0d
+			y: 7.5d
 		}
 	]
 	title: "First Steps"

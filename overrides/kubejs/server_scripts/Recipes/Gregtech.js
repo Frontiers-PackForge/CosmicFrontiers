@@ -75,6 +75,18 @@ ServerEvents.recipes(event => {
   event.shapeless('2x gtceu:fireclay_dust', [
     'gtceu:nether_brick_dust_dust',
     'gtceu:clay_dust'
+
+
+
+
+
+
+
+
+
+
+
+  
   ])
 
   event.recipes.gtceu.bender('kubejs:stainless_steel_fin')
@@ -431,6 +443,87 @@ ServerEvents.recipes(event => {
     .blastFurnaceTemp(1200)
     .duration(600)
     .EUt(GTValues.VA[GTValues.MV]);
-
+    let machineTier = [
+      'lv',
+      'mv',
+      'hv',
+      'ev',
+      'iv',
+      'luv',
+      'zpm',
+      'uv'
+    ]
+    let tierQuadWire = [
+      'copper',
+      'cupronickel',
+      'kanthal',
+      'nichrome',
+      'tungsten_steel',
+      'hssg',
+      'naquadah',
+      'naquadah_alloy'
+    ]
+    let tierCable = [
+      'tin',
+      'copper',
+      'gold',
+      'aluminium',
+      'platinum',
+      'niobium_titanium',
+      'vanadium_gallium',
+      'yttrium_barium_cuprate'
+    ]
+    let coilTier = [
+      'cupronickel',
+      'kanthal',
+      'nichrome',
+      'tungstensteel',
+      'hssg',
+      'naquadah',
+      'trinium',
+      'tritanium'
+    ]
+    machineTier.forEach((tier, index) =>{
+     let cableMaterial = tierQuadWire[index]
+     let cableType = tierCable[index]
+     let coilType = coilTier[index]
+      event.shaped(`gtceu:${tier}_masonry_oven`, [ 
+          'CAC', 
+          'BHB', 
+          'ZAZ'  
+        ], {
+          A: `gtceu:${cableMaterial}_quadruple_wire`,
+          B: `gtceu:${tier}_conveyor_module`,
+          C: `#forge:circuits/${tier}`,
+          H: `gtceu:${tier}_machine_hull`,
+          Z: `gtceu:${cableType}_single_cable`
+        }
+      )
+      event.shaped(`gtceu:${tier}_flora_nurturer`, [ 
+          'CAC', 
+          'BHB', 
+          'ZBZ'  
+        ], {
+          A: 'minecraft:redstone_lamp',
+          B: `gtceu:${tier}_conveyor_module`,
+          C: `#forge:circuits/${tier}`,
+          H: `gtceu:${tier}_machine_hull`,
+          Z: `gtceu:${cableType}_single_cable`
+        }
+      )
+      event.shaped(`gtceu:${tier}_nether_catalyzer`, [ 
+          'CAC', 
+          'PHP', 
+          'ZBZ'  
+        ], {
+          A: `gtceu:${coilType}_coil_block`,
+          B: `gtceu:${tier}_conveyor_module`,
+          P: `gtceu:${tier}_electric_piston`,
+          C: `#forge:circuits/${tier}`,
+          H: `gtceu:${tier}_machine_hull`,
+          Z: `gtceu:${cableType}_single_cable`
+        }
+      )
+    })
 })
 

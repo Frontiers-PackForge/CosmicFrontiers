@@ -27,5 +27,19 @@
                 "bottom": 100
             }
         }
+    },
+    "com.tom.storagemod.gui.CraftingTerminalScreen": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "bottom": 25
+            },
+            "MOVE_TO_PLAYER": {
+                "top": 120
+            },
+            "SORT": {
+                "horizontalOffset": -12,
+                "top": 109
+            }
+        }
     }
 }

@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "star_housing_calculators"
+	group: "0AE0B3EFA57DABD2"
+	icon: "cosmiccore:macroverse_processor_mainframe"
+	id: "0045FE08F8BD3DC2"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Universe Calculators"
+}

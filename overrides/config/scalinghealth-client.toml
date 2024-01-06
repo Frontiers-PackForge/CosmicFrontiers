@@ -1,0 +1,117 @@
+
+[debug]
+
+	[debug.overlay]
+		#Position of debug overlay
+		#Allowed Values: TOP_LEFT, TOP_CENTER, TOP_RIGHT, CENTER_LEFT, CENTER, CENTER_RIGHT, BOTTOM_LEFT, BOTTOM_CENTER, BOTTOM_RIGHT
+		anchor = "TOP_RIGHT"
+		#Overlay text size, where 1 is standard-sized text
+		#Range: 0.01 ~ 1.7976931348623157E308
+		textScale = 0.75
+
+[hearts]
+
+	[hearts.health]
+
+		[hearts.health.icons]
+			#Heart style
+			#REPLACE_ALL: All rows replaced with Scaling Health style hearts
+			#REPLACE_AFTER_FIRST_ROW: Leave the first row vanilla style, Scaling Health style for additional rows
+			#VANILLA: Do not change heart rendering (use this if you want another mod to handle heart rendering)
+			#Allowed Values: REPLACE_ALL, REPLACE_AFTER_FIRST_ROW, VANILLA
+			style = "REPLACE_ALL"
+			#The color of each row of hearts. If the player has more rows than colors, it starts over from the beginning.
+			colors = ["#BF0000", "#E66000", "#E69900", "#E6D300", "#99E600", "#4CE600", "#00E699", "#00E6E6", "#0099E6", "#0000E6", "#9900E6", "#D580FF", "#8C8C8C", "#E6E6E6"]
+			#The player's highest heart will get an outline around it.
+			lastHeartOutline = true
+			#The color of the last heart outline, if enabled (see lastHeartOutline)
+			lastHeartOutlineColor = 16777215
+			#If true, heart colors will 'loop around' to the first color after going through the
+			#entire list. Set false to have every row after the last have the same color.
+			colorLooping = true
+
+		[hearts.health.tanks]
+			#Enable heart tanks, the small icons above your hearts which indicate the number of filled health rows
+			enabled = true
+
+		[hearts.health.text]
+			#Style of health text
+			#Allowed Values: DISABLED, ROWS, HEALTH_AND_MAX, HEALTH_ONLY
+			style = "ROWS"
+			#Health text scale, relative to its normal size (which varies by style)
+			#Range: 0.01 ~ 1.7976931348623157E308
+			scale = 1.0
+			#Fine-tune text position
+			#Range: > -2147483648
+			offsetX = 0
+			#Fine-tune text position
+			#Range: > -2147483648
+			offsetY = 0
+
+			[hearts.health.text.color]
+				#Health text color style.
+				#TRANSITION: Gradually goes from full color to empty color as health is lost
+				#PSYCHEDELIC: Taste the rainbow!
+				#SOLID: Just stays at full color regardless of health
+				#Allowed Values: TRANSITION, SOLID, PSYCHEDELIC
+				style = "TRANSITION"
+				#Color when health is full or style is SOLID
+				full = 5046092
+				#Color when health is empty and style is TRANSITION
+				empty = 16731212
+
+	[hearts.absorption]
+
+		[hearts.absorption.icons]
+			#Style of absorption icons
+			#Allowed Values: SHIELD, GOLD_OUTLINE, VANILLA
+			style = "SHIELD"
+			#The color of each row of absorption hearts. If the player has more rows than colors, it starts over from the beginning.
+			colors = ["#BF0000", "#E66000", "#E69900", "#E6D300", "#99E600", "#4CE600", "#00E699", "#00E6E6", "#0099E6", "#0000E6", "#9900E6", "#D580FF", "#8C8C8C", "#E6E6E6"]
+
+		[hearts.absorption.text]
+			#Style for absorption text. Because there is no 'max' value, the options are more limited.
+			#Allowed Values: DISABLED, ROWS, HEALTH_ONLY
+			style = "DISABLED"
+			#Fine-tune text position
+			#Range: > -2147483648
+			offsetX = 0
+			#Fine-tune text position
+			#Range: > -2147483648
+			offsetY = 0
+			#The color of the absorption text
+			color = 16777215
+
+[difficulty]
+	#Display a warning to players trying to sleep, to remind them their difficulty may change. Sleeping is still allowed.
+	warnWhenSleeping = true
+
+	[difficulty.meter]
+		#When to show the difficulty meter.
+		#Allowed Values: ALWAYS, SOMETIMES, NEVER
+		show = "SOMETIMES"
+		#Show the difficulty meter for this many seconds (only on SOMETIMES mode)
+		#Range: 0.0 ~ 1.7976931348623157E308
+		showDuration = 8.0
+
+		[difficulty.meter.position]
+			#Position of the difficulty meter.
+			#Allowed Values: TOP_LEFT, TOP_CENTER, TOP_RIGHT, CENTER_LEFT, CENTER, CENTER_RIGHT, BOTTOM_LEFT, BOTTOM_CENTER, BOTTOM_RIGHT
+			anchor = "BOTTOM_LEFT"
+			#Fine-tune the difficulty meter's position
+			#Range: > -2147483648
+			offsetX = 5
+			#Fine-tune the difficulty meter's position
+			#Range: > -2147483648
+			offsetY = -30
+
+		[difficulty.meter.text]
+			#Scale of text on the difficulty meter
+			#Range: 0.0 ~ 1.7976931348623157E308
+			scale = 0.6
+
+[blights]
+	#whether the purple flame should render on blights or not.
+	#This does not change whether the mob is a blight, only hides the effect.
+	render = true
+

@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "groups": [
+    "mana_group"
+  ],
+  "effects": [
+    {
+      "attributes": [
+        {
+          "name": "minecraft:generic.max_health",
+          "operation": "add",
+          "amount": 2.0
+        }
+      ],
+      "conditions": [
+        {
+          "groups": ["mana_group"],
+          "match": "all",
+          "above": 0.8,
+          "below": 1.0
+        }
+      ]
+    }
+  ]
+}

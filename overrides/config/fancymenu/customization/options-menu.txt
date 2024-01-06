@@ -1,0 +1,30 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.OptionsScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  audio_source:083d1c06-779c-4779-aadb-415874fa86711704208957977 = kubejs/assets/frontiers/audio/untitled-theme.ogg;EXTERNAL_LOCAL;100;0
+  orientation = top-left
+  loop = true
+  [loading_requirement:fancymenu_loading_requirement_is_world_loaded][requirement_mode:if_not][req_id:6504a476-d9b6-48fb-897c-dedf0a180ba71704213122050] = 
+  channel = master
+  x = 582
+  width = 50
+  action = custom_layout_element:fancymenu_extension:audio_item
+  actionid = 2644409f-07c6-4204-9eaa-dc44549f7c051704213815601
+  y = 27
+  once_per_session = false
+  height = 50
+}
+

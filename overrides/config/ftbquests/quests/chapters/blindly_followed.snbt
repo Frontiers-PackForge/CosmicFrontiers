@@ -1,0 +1,18 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "blindly_followed"
+	group: "492B135B053E111A"
+	icon: {
+		Count: 1b
+		id: "endrem:cursed_eye"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "1BFB87983943175D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Blindly Followed"
+}

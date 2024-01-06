@@ -1,0 +1,46 @@
+
+#All SH features can be disabled here. False to disable.
+[features]
+	#Enable player bonus hp by crystals.
+	crystalsAddHealth = false
+	#Enable player bonus hp by xp.
+	xpAddHealth = false
+	#Enable player regen hp by crystals.
+	crystalsRegenHealth = false
+	#Enable pet add hp by crystals.
+	crystalsAddPetHealth = false
+	#Enable player add damage by crystals.
+	crystalsAddDamage = false
+	#Enable ore gen of health crystals. Still drops as loot.
+	hpCrystalsOreGen = false
+	#Enable ore gen of power crystals. Still drops as loot.
+	powerCrystalsOreGen = false
+	#Mobs will gain bonus health with difficulty.
+	mobHpIncrease = true
+	#Mobs will gain bonus damage with difficulty.
+	mobDamageIncrease = true
+	#Enable player damage scaling.
+	playerDamageScaling = false
+	#Enable mob damage scaling.
+	mobDamageScaling = true
+	#Enable difficulty system. If disabled, everything will have 0 difficulty.
+	enableDifficulty = true
+	#Enable blights. If disabled, no blights will spawn.
+	enableBlights = false
+
+#Debug settings are intended for tuning configs or diagnosing issues.
+#They may decrease performance and should be disabled for normal play.
+[debug]
+	#Must be true for other debug settings to apply
+	masterSwitch = false
+	#Show some text in-game about player health, difficulty, and maybe other things.
+	showOverlay = true
+	#Log details of entity spawns, including effects of difficulty.
+	#This creates a lot of log spam, and will likely lag the game.
+	logEntitySpawns = false
+	#Logs details of potions effects added to mobs.
+	logApplyingMobPotions = false
+	#Log details of scaled damage, useful for fine-tuning damage scaling.
+	#May create a fair amount of log spam, but shouldn't slow down the game too much.
+	logDamageScaling = false
+

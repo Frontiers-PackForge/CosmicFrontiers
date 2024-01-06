@@ -1,0 +1,9 @@
+{
+  "icon": "cosmiccore:macroverse_processor_mainframe",
+  "color": "#19e079",
+  "order": 11,
+  "default_value": 0.0,
+  "gain_multiplier": 1.0,
+  "decay_multiplier": 1.0,
+  "beneficial": true
+}

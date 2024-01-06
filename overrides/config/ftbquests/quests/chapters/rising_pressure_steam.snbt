@@ -343,7 +343,7 @@
 		{
 			dependencies: [
 				"0F8822EE409BED3C"
-				"5F460A1D5DB52638"
+				"3A8E67C3BD23DEC7"
 			]
 			id: "705099C9ED28CF14"
 			shape: "hexagon"
@@ -467,8 +467,10 @@
 			dependencies: [
 				"4F4AB465A829B20B"
 				"1FDBCDAA759B93F3"
+				"3A8E67C3BD23DEC7"
 			]
 			id: "5F460A1D5DB52638"
+			shape: "gear"
 			tasks: [{
 				id: "3445124A8F9FFDDF"
 				item: {
@@ -533,7 +535,10 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["187B8D213D49BD07"]
+			dependencies: [
+				"187B8D213D49BD07"
+				"398EFF1EA09FA4AA"
+			]
 			id: "1EE3271196DAF65F"
 			tasks: [{
 				id: "34855065F6FAD522"
@@ -724,6 +729,25 @@
 			}]
 			x: -5.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["52A46B052223551B"]
+			hide_dependency_lines: true
+			id: "3A8E67C3BD23DEC7"
+			subtitle: "This will allow you to breath in the nether"
+			tasks: [{
+				id: "58D5CAC9B483002A"
+				item: {
+					Count: 1b
+					id: "thinair:respirator"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.75d
 		}
 	]
 	title: "Rising Pressure [Steam]"

@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "enlightenment"
+	group: "0AE0B3EFA57DABD2"
+	id: "45FF5B0C54C07476"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Enlightenment"
+}

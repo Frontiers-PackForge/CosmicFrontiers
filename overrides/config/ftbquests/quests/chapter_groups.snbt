@@ -8,7 +8,11 @@
 		{ id: "4B9C53F35CAB9BEE", title: "Exorealm EB31S - Everbright" }
 		{ id: "7295A11F0DD1E8D1", title: "Exoplanet 02S7 - \"Venus\"" }
 		{ id: "34809FA43B03812C", title: "Exorealm ED44Q - Everdawn" }
-		{ id: "3189B6C95DDE02C3", title: "Kether" }
-		{ id: "67BE70C11B6638CD", title: "One Perfect Memory" }
+		{ id: "492B135B053E111A", title: "Pulling Back the Veil - [UHV]" }
+		{ id: "05E791D3658E47D0", title: "My Infinite Hatred - [UEV]" }
+		{ id: "0FA2E8AE749DD85D", title: "Cries of a Lone Universe - [UXV]" }
+		{ id: "0AE0B3EFA57DABD2", title: "Reascend - [OPV]" }
+		{ id: "3189B6C95DDE02C3", title: "Kether - [MAX]" }
+		{ id: "67BE70C11B6638CD", title: "One Perfect Memory - [ERROR]" }
 	]
 }
