@@ -75,6 +75,14 @@ ServerEvents.recipes(event => {
   event.shapeless('2x gtceu:fireclay_dust', [
     'gtceu:nether_brick_dust_dust',
     'gtceu:clay_dust'
+  ])
+
+  event.recipes.gtceu.forming_press('gtceu:forming_press/waxed_leather')
+  .itemInputs('minecraft:leather')
+  .itemInputs('2x minecraft:honeycomb')
+  .itemOutputs('cosmiccore:waxed_leather')
+  .duration(100)
+  .EUt(GTValues.VA[GTValues.LV])
 
 
 
@@ -87,7 +95,7 @@ ServerEvents.recipes(event => {
 
 
   
-  ])
+
 
   event.recipes.gtceu.bender('kubejs:stainless_steel_fin')
     .itemInputs('6x gtceu:stainless_steel_plate')
@@ -400,6 +408,28 @@ ServerEvents.recipes(event => {
       .itemOutputs('5x gtceu:rose_gold_dust')
       .duration(500)
       .EUt(GTValues.VA[GTValues.LV]);
+
+      
+  event.remove({id:'gtceu:smelting/dust_blue_alloy__demagnetize_from_dust'})
+  event.remove({id:'gtceu:alloy_smelter/silver_ingot_and_electrotine_dust_into_blue_alloy'})
+  event.remove({id:'gtceu:alloy_smelter/silver_dust_and_electrotine_dust_into_blue_alloy'})
+  event.recipes.gtceu.electric_blast_furnace('gtceu:electric_blast_furnace/blue_alloy_nitrogen')
+  .itemInputs('gtceu:blue_alloy_dust')
+  .inputFluids('gtceu:nitrogen 1000')
+  .itemOutputs('gtceu:blue_alloy_ingot')
+  .circuit(2)
+  .blastFurnaceTemp(1200)
+  .duration(442)
+  .EUt(GTValues.VA[GTValues.MV]);
+
+
+  event.recipes.gtceu.electric_blast_furnace('gtceu:electric_blast_furnace/blue_alloy')
+  .itemInputs('gtceu:blue_alloy_dust')
+  .itemOutputs('gtceu:blue_alloy_ingot')
+  .circuit(1)
+  .blastFurnaceTemp(1200)
+  .duration(660)
+  .EUt(GTValues.VA[GTValues.MV]);
 
 
 
