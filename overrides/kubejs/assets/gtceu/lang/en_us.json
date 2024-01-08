@@ -57,5 +57,7 @@
   "material.sodium_carbonate_solution": "Sodium Carbonate Solution",
   "material.sodium_chromate_solution": "Sodium Chromate Solution",
   "material.sodium_dichromate_solution": "Sodium Dichromate Solution",
-  "material.sodium_sulfate": "Sodium Sulfate"
+  "material.sodium_sulfate": "Sodium Sulfate",
+  "material.livingrock": "Livingrock",
+  "material.livingwood": "Livingwood"
 }
