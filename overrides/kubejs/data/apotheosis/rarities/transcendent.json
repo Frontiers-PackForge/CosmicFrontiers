@@ -1,0 +1,89 @@
+{
+	"ordinal": 4,
+	"color": "rainbow",
+	"material": "cosmiccore:waxed_leather",
+	"weight": 0,
+	"quality": 0,
+	"rules": [
+		{
+			"type": "transcendent",
+			"chance": 1.0
+		},
+		{
+			"type": "stat",
+			"chance": 1.0
+		},
+		{
+			"type": "stat",
+			"chance": 1.0,
+			"backup": {
+				"type": "ability",
+				"chance": 1.0
+			}
+		},
+		{
+			"type": "stat",
+			"chance": 1.0,
+			"backup": {
+				"type": "ability",
+				"chance": 1.0
+			}
+		},
+		{
+			"type": "stat",
+			"chance": 1.0,
+			"backup": {
+				"type": "ability",
+				"chance": 1.0
+			}
+		},
+		{
+			"type": "stat",
+			"chance": 1.0,
+			"backup": {
+				"type": "ability",
+				"chance": 1.0
+			}
+		},
+		{
+			"type": "ability",
+			"chance": 1.0
+		},
+		{
+			"type": "ability",
+			"chance": 1.0
+		},
+		{
+			"type": "ability",
+			"chance": 1.0
+		},
+		{
+			"type": "ability",
+			"chance": 1.0
+		},
+		{
+			"type": "socket",
+			"chance": 1.0
+		},
+		{
+			"type": "socket",
+			"chance": 1.0
+		},
+		{
+			"type": "socket",
+			"chance": 1.0
+		},
+		{
+			"type": "socket",
+			"chance": 1.0
+		},
+		{
+			"type": "socket",
+			"chance": 1.0
+		},
+		{
+			"type": "durability",
+			"chance": 1.0
+		}
+	]
+}

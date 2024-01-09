@@ -21,6 +21,12 @@ STEP 4 : EBF @ MV 10 Seconds
 */
 
 ServerEvents.recipes(e => {
+    //Removal of Recipes that Violate this chain
+    
+    e.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromite'})
+    e.remove({ id : 'gtceu:centrifuge/ruby_slurry_centrifuging'})
+    e.remove({ id : 'gtceu:electrolyzer/decomposition_electrolyzing_ruby'})
+
     //Auxiliary Recipe 1
     e.recipes.gtceu.electric_blast_furnace('gtceu:electric_blast_furnace/alumina_to_aluminum')
     .itemInputs('10x gtceu:alumina_dust')

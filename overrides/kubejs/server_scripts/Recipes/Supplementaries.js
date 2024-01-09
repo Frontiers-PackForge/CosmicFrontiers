@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         'SBS',
         ' S '
     ], {
-        L: 'betterend:leather_stripe',
+        L: 'minecraft:leather',
         R: 'gtceu:rubber_plate',
         S: 'gtceu:treated_wood_rod',
         B: 'minecraft:slime_ball'
@@ -588,26 +588,26 @@ ServerEvents.recipes(event => {
     signpost('3x supplementaries:blue_skies/sign_post_dusk', 'blue_skies:dusk_planks');
     signpost('3x supplementaries:blue_skies/sign_post_maple', 'blue_skies:maple_planks');
     signpost('3x supplementaries:blue_skies/sign_post_comet', 'blue_skies:comet_planks');
-    signpost('3x supplementaries:betternether/sign_post_nether_reed', 'betternether:nether_reed_planks');
-    signpost('3x supplementaries:betternether/sign_post_stalagnate', 'betternether:stalagnate_planks');
-    signpost('3x supplementaries:betternether/sign_post_willow', 'betternether:willow_planks');
-    signpost('3x supplementaries:betternether/sign_post_wart', 'betternether:wart_planks');
-    signpost('3x supplementaries:betternether/sign_post_rubeus', 'betternether:rubeus_planks');
-    signpost('3x supplementaries:betternether/sign_post_mushroom_fir', 'betternether:mushroom_fir_planks');
-    signpost('3x supplementaries:betternether/sign_post_nether_mushroom', 'betternether:nether_mushroom_planks');
-    signpost('3x supplementaries:betternether/sign_post_anchor_tree', 'betternether:anchor_tree_planks');
-    signpost('3x supplementaries:betternether/sign_post_nether_sakura', 'betternether:nether_sakura_planks');
-    signpost('3x supplementaries:betterend/sign_post_mossy_glowshroom', 'betterend:mossy_glowshroom_planks');
-    signpost('3x supplementaries:betterend/sign_post_pythadendron', 'betterend:pythadendron_planks');
-    signpost('3x supplementaries:betterend/sign_post_end_lotus', 'betterend:end_lotus_planks');
-    signpost('3x supplementaries:betterend/sign_post_lacugrove', 'betterend:lacugrove_planks');
-    signpost('3x supplementaries:betterend/sign_post_dragon_tree', 'betterend:dragon_tree_planks');
-    signpost('3x supplementaries:betterend/sign_post_tenanea', 'betterend:tenanea_planks');
-    signpost('3x supplementaries:betterend/sign_post_helix_tree', 'betterend:helix_tree_planks');
-    signpost('3x supplementaries:betterend/sign_post_umbrella_tree', 'betterend:umbrella_tree_planks');
-    signpost('3x supplementaries:betterend/sign_post_jellyshroom', 'betterend:jellyshroom_planks');
-    signpost('3x supplementaries:betterend/sign_post_lucernia', 'betterend:lucernia_planks');
-    signpost('3x supplementaries:phantasm/sign_post_pream', 'phantasm:pream_planks');
+    // signpost('3x supplementaries:betternether/sign_post_nether_reed', 'betternether:nether_reed_planks');
+    // signpost('3x supplementaries:betternether/sign_post_stalagnate', 'betternether:stalagnate_planks');
+    // signpost('3x supplementaries:betternether/sign_post_willow', 'betternether:willow_planks');
+    // signpost('3x supplementaries:betternether/sign_post_wart', 'betternether:wart_planks');
+    // signpost('3x supplementaries:betternether/sign_post_rubeus', 'betternether:rubeus_planks');
+    // signpost('3x supplementaries:betternether/sign_post_mushroom_fir', 'betternether:mushroom_fir_planks');
+    // signpost('3x supplementaries:betternether/sign_post_nether_mushroom', 'betternether:nether_mushroom_planks');
+    // signpost('3x supplementaries:betternether/sign_post_anchor_tree', 'betternether:anchor_tree_planks');
+    // signpost('3x supplementaries:betternether/sign_post_nether_sakura', 'betternether:nether_sakura_planks');
+    // signpost('3x supplementaries:betterend/sign_post_mossy_glowshroom', 'betterend:mossy_glowshroom_planks');
+    // signpost('3x supplementaries:betterend/sign_post_pythadendron', 'betterend:pythadendron_planks');
+    // signpost('3x supplementaries:betterend/sign_post_end_lotus', 'betterend:end_lotus_planks');
+    // signpost('3x supplementaries:betterend/sign_post_lacugrove', 'betterend:lacugrove_planks');
+    // signpost('3x supplementaries:betterend/sign_post_dragon_tree', 'betterend:dragon_tree_planks');
+    // signpost('3x supplementaries:betterend/sign_post_tenanea', 'betterend:tenanea_planks');
+    // signpost('3x supplementaries:betterend/sign_post_helix_tree', 'betterend:helix_tree_planks');
+    // signpost('3x supplementaries:betterend/sign_post_umbrella_tree', 'betterend:umbrella_tree_planks');
+    // signpost('3x supplementaries:betterend/sign_post_jellyshroom', 'betterend:jellyshroom_planks');
+    // signpost('3x supplementaries:betterend/sign_post_lucernia', 'betterend:lucernia_planks');
+    // signpost('3x supplementaries:phantasm/sign_post_pream', 'phantasm:pream_planks');
     signpost('3x supplementaries:biomesoplenty/sign_post_fir', 'biomesoplenty:fir_planks');
     signpost('3x supplementaries:biomesoplenty/sign_post_redwood', 'biomesoplenty:redwood_planks');
     signpost('3x supplementaries:biomesoplenty/sign_post_mahogany', 'biomesoplenty:mahogany_planks');

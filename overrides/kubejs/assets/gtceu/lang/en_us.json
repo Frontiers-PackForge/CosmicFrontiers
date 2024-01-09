@@ -51,5 +51,11 @@
   "material.ancient_debris": "Ancient Debris",
   "material.netherite_scrap": "Netherite Scrap",
   "material.netherite_alloy": "Netherite Alloy",
-  "material.nether_sediment_sludge": "Nether Sediment Sludge"
+  "material.alumina": "Alumina",
+  "material.chromium_iii_oxide": "Chromium (III) Oxide",
+  "material.banded_iron": "Banded Iron",
+  "material.sodium_carbonate_solution": "Sodium Carbonate Solution",
+  "material.sodium_chromate_solution": "Sodium Chromate Solution",
+  "material.sodium_dichromate_solution": "Sodium Dichromate Solution",
+  "material.sodium_sulfate": "Sodium Sulfate"
 }

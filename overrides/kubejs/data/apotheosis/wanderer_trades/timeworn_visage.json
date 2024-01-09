@@ -1,0 +1,51 @@
+{
+  "conditions": [{
+    "type": "apotheosis:module",
+    "module": "village"
+  }],
+  "type": "apotheosis:basic_trade",
+  "rare": true,
+  "input_1": {
+    "item": "minecraft:diamond_helmet",
+    "count": 1
+  },
+  "input_2": {
+    "item": "minecraft:emerald",
+    "count": 34
+  },
+  "output": {
+    "item": "minecraft:diamond_helmet",
+    "count": 1,
+    "nbt": {
+        "Enchantments": [
+            {
+                "lvl": 5,
+                "id": "minecraft:protection"
+            },
+            {
+                "lvl": 1,
+                "id": "minecraft:mending"
+            },
+            {
+                "lvl": 5,
+                "id": "minecraft:unbreaking"
+            },
+            {
+                "lvl": 4,
+                "id": "minecraft:respiration"
+            },
+            {
+                "lvl": 1,
+                "id": "minecraft:aqua_affinity"
+            }
+        ],
+        "display": {
+            "Name": "{\"translate\":\"name.apotheosis.merch_helm\", \"italic\": false, \"color\": \"#1ABBE0\"}"
+        },
+        "Damage": 0
+    }
+  },
+  "max_trades": 1,
+  "xp": 500,
+  "price_mult": 1.0
+}

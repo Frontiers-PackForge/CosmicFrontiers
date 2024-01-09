@@ -222,190 +222,190 @@ v_materials.forEach(item => {
 
 })
 
-bn_materials.forEach(item => {
-    e.shaped(`knavesneeds:betternether/${item}/longsword`, [ 
-        ' DB', 
-        ' BC', 
-        'A  '  
-      ], {
-        A: 'betternether:nether_reed_stem',
-        B: `gtceu:${item}_plate`,
-        C: '#forge:tools/hammers',
-        D: '#forge:tools/files'
-      }
-    )
-    e.shaped(`knavesneeds:betternether/${item}/twinblade`, [ 
-        '  B', 
-        'DAC', 
-        'B  '  
-      ], {
-        A: 'betternether:nether_reed_stem',
-        B: `gtceu:${item}_plate`,
-        C: '#forge:tools/hammers',
-        D: '#forge:tools/files'
-      }
-    )
-    e.shaped(`knavesneeds:betternether/${item}/rapier`, [ 
-        ' DB', 
-        ' BC', 
-        'A  '  
-      ], {
-        A: 'betternether:nether_reed_stem',
-        B: `gtceu:${item}_rod`,
-        C: '#forge:tools/hammers',
-        D: '#forge:tools/files'
-      }
-    )
-    e.shaped(`knavesneeds:betternether/${item}/katana`, [ 
-        '  D', 
-        'ABB', 
-        '  C'  
-      ], {
-        A: 'betternether:nether_reed_stem',
-        B: `gtceu:${item}_plate`,
-        C: '#forge:tools/hammers',
-        D: '#forge:tools/files'
-      }
-    )
-    e.shaped(`knavesneeds:betternether/${item}/sai`, [ 
-        'DB ', 
-        'AC ', 
-        '   '  
-      ], {
-        A: 'betternether:nether_reed_stem',
-        B: `gtceu:${item}_rod`,
-        C: '#forge:tools/hammers',
-        D: '#forge:tools/files'
-      }
-    )
-    e.shaped(`knavesneeds:betternether/${item}/spear`, [ 
-        ' DB', 
-        ' AC', 
-        'A  '  
-      ], {
-        A: 'betternether:nether_reed_stem',
-        B: `gtceu:${item}_plate`,
-        C: '#forge:tools/hammers',
-        D: '#forge:tools/files'
-      }
-    )
-    e.shaped(`knavesneeds:betternether/${item}/glaive`, [ 
-        ' DB', 
-        ' AB', 
-        'A C'  
-      ], {
-        A: 'betternether:nether_reed_stem',
-        B: `gtceu:${item}_plate`,
-        C: '#forge:tools/hammers',
-        D: '#forge:tools/files'
-      }
-    )
-    e.shaped(`knavesneeds:betternether/${item}/warglaive`, [ 
-        ' ED', 
-        'BAB', 
-        'C  '  
-      ], {
-        A: 'betternether:nether_reed_stem',
-        B: `gtceu:${item}_plate`,
-        C: '#forge:tools/hammers',
-        D: '#forge:tools/files',
-        E: 'gtceu:wrought_iron_nugget'
-      }
-    )
-    e.shaped(`knavesneeds:betternether/${item}/cutlass`, [ 
-        'CED', 
-        'AA ', 
-        'B  '  
-      ], {
-        B: 'betternether:nether_reed_stem',
-        A: `gtceu:${item}_plate`,
-        C: '#forge:tools/hammers',
-        D: '#forge:tools/files',
-        E: 'gtceu:wrought_iron_nugget'
-      }
-    )
-    e.shaped(`knavesneeds:betternether/${item}/claymore`, [ 
-        'CEB', 
-        'EBE', 
-        'AED'  
-      ], {
-        A: 'betternether:nether_reed_stem',
-        B: `gtceu:${item}_plate`,
-        C: '#forge:tools/hammers',
-        D: '#forge:tools/files',
-        E: 'gtceu:wrought_iron_nugget'
-      }
-    )
-    e.shaped(`knavesneeds:betternether/${item}/greathammer`, [ 
-        'AAA', 
-        'EEE', 
-        'DBC'  
-      ], {
-        B: 'betternether:nether_reed_stem',
-        A: `gtceu:${item}_plate`,
-        C: '#forge:tools/hammers',
-        D: '#forge:tools/files',
-        E: 'gtceu:steel_nugget'
-      }
-    )
-    e.shaped(`knavesneeds:betternether/${item}/greataxe`, [ 
-        'AAA', 
-        'EBE', 
-        'DBC'  
-      ], {
-        B: 'betternether:nether_reed_stem',
-        A: `gtceu:${item}_plate`,
-        C: '#forge:tools/hammers',
-        D: '#forge:tools/files',
-        E: 'gtceu:steel_nugget'
-      }
-    )
-    e.shaped(`knavesneeds:betternether/${item}/chakram`, [ 
-        'DBC', 
-        'B B', 
-        'EAE'  
-      ], {
-        A: 'betternether:nether_reed_stem',
-        B: `gtceu:${item}_plate`,
-        C: '#forge:tools/hammers',
-        D: '#forge:tools/files',
-        E: 'minecraft:iron_nugget'
-      }
-    )
-    e.shaped(`knavesneeds:betternether/${item}/scythe`, [ 
-        'BBE', 
-        'BAC', 
-        'AD '  
-      ], {
-        A: 'betternether:nether_reed_stem',
-        B: `gtceu:${item}_plate`,
-        C: '#forge:tools/hammers',
-        D: '#forge:tools/files',
-        E: 'gtceu:steel_nugget'
-      }
-    )
-    e.shaped(`knavesneeds:betternether/${item}/halberd`, [ 
-        ' BE', 
-        'BAB', 
-        'ADC'  
-      ], {
-        A: 'betternether:nether_reed_stem',
-        B: `gtceu:${item}_plate`,
-        C: '#forge:tools/hammers',
-        D: '#forge:tools/files',
-        E: 'gtceu:steel_nugget'
-      }
-    )
-    })
+// bn_materials.forEach(item => {
+//     e.shaped(`knavesneeds:betternether/${item}/longsword`, [ 
+//         ' DB', 
+//         ' BC', 
+//         'A  '  
+//       ], {
+//         A: 'betternether:nether_reed_stem',
+//         B: `gtceu:${item}_plate`,
+//         C: '#forge:tools/hammers',
+//         D: '#forge:tools/files'
+//       }
+//     )
+//     e.shaped(`knavesneeds:betternether/${item}/twinblade`, [ 
+//         '  B', 
+//         'DAC', 
+//         'B  '  
+//       ], {
+//         A: 'betternether:nether_reed_stem',
+//         B: `gtceu:${item}_plate`,
+//         C: '#forge:tools/hammers',
+//         D: '#forge:tools/files'
+//       }
+//     )
+//     e.shaped(`knavesneeds:betternether/${item}/rapier`, [ 
+//         ' DB', 
+//         ' BC', 
+//         'A  '  
+//       ], {
+//         A: 'betternether:nether_reed_stem',
+//         B: `gtceu:${item}_rod`,
+//         C: '#forge:tools/hammers',
+//         D: '#forge:tools/files'
+//       }
+//     )
+//     e.shaped(`knavesneeds:betternether/${item}/katana`, [ 
+//         '  D', 
+//         'ABB', 
+//         '  C'  
+//       ], {
+//         A: 'betternether:nether_reed_stem',
+//         B: `gtceu:${item}_plate`,
+//         C: '#forge:tools/hammers',
+//         D: '#forge:tools/files'
+//       }
+//     )
+//     e.shaped(`knavesneeds:betternether/${item}/sai`, [ 
+//         'DB ', 
+//         'AC ', 
+//         '   '  
+//       ], {
+//         A: 'betternether:nether_reed_stem',
+//         B: `gtceu:${item}_rod`,
+//         C: '#forge:tools/hammers',
+//         D: '#forge:tools/files'
+//       }
+//     )
+//     e.shaped(`knavesneeds:betternether/${item}/spear`, [ 
+//         ' DB', 
+//         ' AC', 
+//         'A  '  
+//       ], {
+//         A: 'betternether:nether_reed_stem',
+//         B: `gtceu:${item}_plate`,
+//         C: '#forge:tools/hammers',
+//         D: '#forge:tools/files'
+//       }
+//     )
+//     e.shaped(`knavesneeds:betternether/${item}/glaive`, [ 
+//         ' DB', 
+//         ' AB', 
+//         'A C'  
+//       ], {
+//         A: 'betternether:nether_reed_stem',
+//         B: `gtceu:${item}_plate`,
+//         C: '#forge:tools/hammers',
+//         D: '#forge:tools/files'
+//       }
+//     )
+//     e.shaped(`knavesneeds:betternether/${item}/warglaive`, [ 
+//         ' ED', 
+//         'BAB', 
+//         'C  '  
+//       ], {
+//         A: 'betternether:nether_reed_stem',
+//         B: `gtceu:${item}_plate`,
+//         C: '#forge:tools/hammers',
+//         D: '#forge:tools/files',
+//         E: 'gtceu:wrought_iron_nugget'
+//       }
+//     )
+//     e.shaped(`knavesneeds:betternether/${item}/cutlass`, [ 
+//         'CED', 
+//         'AA ', 
+//         'B  '  
+//       ], {
+//         B: 'betternether:nether_reed_stem',
+//         A: `gtceu:${item}_plate`,
+//         C: '#forge:tools/hammers',
+//         D: '#forge:tools/files',
+//         E: 'gtceu:wrought_iron_nugget'
+//       }
+//     )
+//     e.shaped(`knavesneeds:betternether/${item}/claymore`, [ 
+//         'CEB', 
+//         'EBE', 
+//         'AED'  
+//       ], {
+//         A: 'betternether:nether_reed_stem',
+//         B: `gtceu:${item}_plate`,
+//         C: '#forge:tools/hammers',
+//         D: '#forge:tools/files',
+//         E: 'gtceu:wrought_iron_nugget'
+//       }
+//     )
+//     e.shaped(`knavesneeds:betternether/${item}/greathammer`, [ 
+//         'AAA', 
+//         'EEE', 
+//         'DBC'  
+//       ], {
+//         B: 'betternether:nether_reed_stem',
+//         A: `gtceu:${item}_plate`,
+//         C: '#forge:tools/hammers',
+//         D: '#forge:tools/files',
+//         E: 'gtceu:steel_nugget'
+//       }
+//     )
+//     e.shaped(`knavesneeds:betternether/${item}/greataxe`, [ 
+//         'AAA', 
+//         'EBE', 
+//         'DBC'  
+//       ], {
+//         B: 'betternether:nether_reed_stem',
+//         A: `gtceu:${item}_plate`,
+//         C: '#forge:tools/hammers',
+//         D: '#forge:tools/files',
+//         E: 'gtceu:steel_nugget'
+//       }
+//     )
+//     e.shaped(`knavesneeds:betternether/${item}/chakram`, [ 
+//         'DBC', 
+//         'B B', 
+//         'EAE'  
+//       ], {
+//         A: 'betternether:nether_reed_stem',
+//         B: `gtceu:${item}_plate`,
+//         C: '#forge:tools/hammers',
+//         D: '#forge:tools/files',
+//         E: 'minecraft:iron_nugget'
+//       }
+//     )
+//     e.shaped(`knavesneeds:betternether/${item}/scythe`, [ 
+//         'BBE', 
+//         'BAC', 
+//         'AD '  
+//       ], {
+//         A: 'betternether:nether_reed_stem',
+//         B: `gtceu:${item}_plate`,
+//         C: '#forge:tools/hammers',
+//         D: '#forge:tools/files',
+//         E: 'gtceu:steel_nugget'
+//       }
+//     )
+//     e.shaped(`knavesneeds:betternether/${item}/halberd`, [ 
+//         ' BE', 
+//         'BAB', 
+//         'ADC'  
+//       ], {
+//         A: 'betternether:nether_reed_stem',
+//         B: `gtceu:${item}_plate`,
+//         C: '#forge:tools/hammers',
+//         D: '#forge:tools/files',
+//         E: 'gtceu:steel_nugget'
+//       }
+//     )
+//     })
 
     //smithing stuff
     weapons.forEach(item => {
-        e.smithing(
-            `knavesneeds:betternether/cincinnasite_diamond/${item}`,  
-            'betternether:cincinnasite_diamond_upgrade_smithing_template',
-            `knavesneeds:betternether/cincinnasite/${item}`, 
-            'minecraft:diamond' 
-          )
+        // e.smithing(
+        //     `knavesneeds:betternether/cincinnasite_diamond/${item}`,  
+        //     'betternether:cincinnasite_diamond_upgrade_smithing_template',
+        //     `knavesneeds:betternether/cincinnasite/${item}`, 
+        //     'minecraft:diamond' 
+        //   )
           e.smithing(
             `simplyswords:netherite_${item}`,  
             'minecraft:netherite_upgrade_smithing_template',

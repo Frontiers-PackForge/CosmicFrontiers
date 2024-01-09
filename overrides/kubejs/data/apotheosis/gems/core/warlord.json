@@ -1,0 +1,87 @@
+{
+	"variant": "warlord",
+	"weight": 10,
+	"quality": 0,
+	"dimensions": [
+	],
+	"bonuses": [{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "light_ranged",
+				"types": [
+					"sword",
+					"trident",
+					"bow",
+					"crossbow"
+				]
+			},
+			"attribute": "attributeslib:crit_damage",
+			"operation": "ADDITION",
+			"values": {
+				"common": 0.05,
+				"uncommon": 0.10,
+				"rare": 0.15,
+				"epic": 0.20,
+				"mythic": 0.25,
+				"ancient": 0.30
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "heavy_weapon",
+				"types": [
+					"heavy_weapon"
+				]
+			},
+			"attribute": "attributeslib:crit_damage",
+			"operation": "ADDITION",
+			"values": {
+				"common": 0.075,
+				"uncommon": 0.15,
+				"rare": 0.225,
+				"epic": 0.3,
+				"mythic": 0.35,
+				"ancient": 0.4
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "chestplate",
+				"types": [
+					"chestplate"
+				]
+			},
+			"attribute": "minecraft:generic.max_health",
+			"operation": "MULTIPLY_BASE",
+			"values": {
+				"common": 0.06,
+				"uncommon": 0.07,
+				"rare": 0.08,
+				"epic": 0.09,
+				"mythic": 0.10,
+				"ancient": 0.20
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "helmet",
+				"types": [
+					"helmet"
+				]
+			},
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "MULTIPLY_TOTAL",
+			"values": {
+				"common": 0.02,
+				"uncommon": 0.04,
+				"rare": 0.06,
+				"epic": 0.08,
+				"mythic": 0.1,
+				"ancient": 0.15
+			}
+		}
+	]
+}

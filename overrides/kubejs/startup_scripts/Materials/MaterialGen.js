@@ -49,5 +49,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('netherite_alloy')
         .dust()
         .color(0x393435).iconSet(GTMaterialIconSet.SHINY)
-
+    //So Help me god please work
+    GTMaterials.get('redstone').addFlags(GTMaterialFlags.GENERATE_LENS)
 })
+//GENERATE_LENS

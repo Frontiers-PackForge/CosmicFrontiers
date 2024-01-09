@@ -28,7 +28,11 @@ let yeet = (itemName) => {
 // yeet('gtceu:plasma_large_turbine')
 // yeet('gtceu:turbine_rotor')
 
+ServerEvents.tags('item', event => {
+  event.add('forge:lenses/ruby', 'gtceu:redstone_lens')
+  event.add('forge:lenses/red', 'gtceu:redstone_lens')
 
+})
 
 
 ServerEvents.recipes(event => {

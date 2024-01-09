@@ -55,16 +55,16 @@ let yeet = (itemName) => {
            .duration(40)
            .circuit(2)
            .EUt(32);
-    event.recipes.gtceu.flora_nurturer('cosmiccore:lucis_spore_cultivation') 
-           .itemInputs('1x betternether:lucis_spore')
+    event.recipes.gtceu.flora_nurturer('cosmiccore:pearl_cultivation') 
+           .itemInputs('nethersdelight:propelpearl')
            .inputFluids(Fluid.of('gtceu:nether_sediment_sludge',500))
-           .itemOutputs('2x cosmiccore:engourged_spore')
-           .itemOutputs('2x betternether:lucis_spore')
-           .chancedOutput(Item.of('betternether:lucis_spore', 1), 5000, 500)
+           .itemOutputs('2x cosmiccore:overloaded_pearls')
+           .itemOutputs('2x nethersdelight:propelpearl')
+           .chancedOutput(Item.of('nethersdelight:propelpearl', 1), 5000, 500)
            .duration(160)
            .EUt(16);
-    event.recipes.gtceu.nether_catalyzer('cosmiccore:engourged_spore_catalyzing') 
-           .itemInputs('cosmiccore:engourged_spore')
+    event.recipes.gtceu.nether_catalyzer('cosmiccore:pearl_catalyzing') 
+           .itemInputs('cosmiccore:overloaded_pearls')
            .outputFluids(Fluid.of('gtceu:ethanol',250))
            .duration(240)
            .EUt(32);

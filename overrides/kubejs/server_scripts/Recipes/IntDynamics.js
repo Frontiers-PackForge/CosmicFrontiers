@@ -32,7 +32,7 @@ event.shaped('integrateddynamics:drying_basin', [
   })
 }
 
-drying('create:shaft','create:cogwheel',40)    
+// drying('create:shaft','create:cogwheel',40)    
  
 
 

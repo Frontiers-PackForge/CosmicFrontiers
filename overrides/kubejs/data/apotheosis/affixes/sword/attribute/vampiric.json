@@ -1,0 +1,41 @@
+{
+	"type": "apotheosis:attribute",
+	"attribute": "attributeslib:life_steal",
+	"operation": "ADDITION",
+	"values": {
+		"common": {
+			"min": 0.01,
+			"steps": 1,
+			"step": 0.01
+		},
+		"uncommon": {
+			"min": 0.02,
+			"steps": 1,
+			"step": 0.01
+		},
+		"rare": {
+			"min": 0.02,
+			"steps": 1,
+			"step": 0.01
+		},
+		"epic": {
+			"min": 0.03,
+			"steps": 1,
+			"step": 0.01
+		},
+		"mythic": {
+			"min": 0.03,
+			"steps": 1,
+			"step": 0.01
+		},
+		"ancient": {
+			"min": 0.05,
+			"steps": 1,
+			"step": 0.01
+		}
+	},
+	"types": [
+		"sword",
+		"trident"
+	]
+}

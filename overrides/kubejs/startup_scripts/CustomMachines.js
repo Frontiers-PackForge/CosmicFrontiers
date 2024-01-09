@@ -35,7 +35,11 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeType('spooling_machine', true, true)
         .rotationState(RotationState.NON_Y_AXIS)
         .workableTieredHullRenderer(GTCEu.id("block/machines/nether_catalyzer"))
-
+    //Tempering Autoclave
+    event.create('tempering_autoclave', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV)
+        .recipeType('tempering_autoclave', true, true)
+        .rotationState(RotationState.NON_Y_AXIS)
+        .workableTieredHullRenderer(GTCEu.id("block/machines/autoclave"))
 
     event.create('bronze_steam_turbine', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -93,6 +97,13 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('frontiers')
         .setMaxIOSize(2, 2, 1, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setEUIO('in')
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ELECTROLYZER)
+    event.create('tempering_autoclave')
+        .category('frontiers')
+        .setMaxIOSize(4, 3, 2, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+        .setSlotOverlay(false, false, GuiTextures.NEUTRAL_MATTER_OVERLAY)
         .setEUIO('in')
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)

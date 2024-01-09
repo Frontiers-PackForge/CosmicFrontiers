@@ -2,614 +2,614 @@
 
 //Nether Reed
 ServerEvents.recipes(e => {
-    e.remove({output: 'betternether:nether_reed_door'})
-    e.shaped('betternether:nether_reed_door', [
-            'PTR',
-            'PBS',
-            'PPD'
-        ],
-        {
-            T: 'betternether:nether_reed_trapdoor',
-            P: 'betternether:nether_reed_planks',
-            B: 'gtceu:iron_ring',
-            S: 'gtceu:iron_screw',
-            D: '#forge:tools/saws',
-            R: '#forge:tools/screwdrivers'
-        }
-    )
-    e.remove({output: 'betternether:nether_reed_trapdoor'})
-    e.shaped('betternether:nether_reed_trapdoor', [
-            'PTP',
-            'TTT',
-            'PTP'
-        ],
-        {
-            T: 'minecraft:stick',
-            P: 'betternether:nether_reed_slab'
-        })
-//Stalagnate
-        e.remove({output: 'betternether:stalagnate_door'})
-        e.shaped('betternether:stalagnate_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betternether:stalagnate_trapdoor',
-                P: 'betternether:stalagnate_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betternether:stalagnate_trapdoor'})
-        e.shaped('betternether:stalagnate_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betternether:stalagnate_slab'
-            })
+//     e.remove({output: 'betternether:nether_reed_door'})
+//     e.shaped('betternether:nether_reed_door', [
+//             'PTR',
+//             'PBS',
+//             'PPD'
+//         ],
+//         {
+//             T: 'betternether:nether_reed_trapdoor',
+//             P: 'betternether:nether_reed_planks',
+//             B: 'gtceu:iron_ring',
+//             S: 'gtceu:iron_screw',
+//             D: '#forge:tools/saws',
+//             R: '#forge:tools/screwdrivers'
+//         }
+//     )
+//     e.remove({output: 'betternether:nether_reed_trapdoor'})
+//     e.shaped('betternether:nether_reed_trapdoor', [
+//             'PTP',
+//             'TTT',
+//             'PTP'
+//         ],
+//         {
+//             T: 'minecraft:stick',
+//             P: 'betternether:nether_reed_slab'
+//         })
+// //Stalagnate
+//         e.remove({output: 'betternether:stalagnate_door'})
+//         e.shaped('betternether:stalagnate_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betternether:stalagnate_trapdoor',
+//                 P: 'betternether:stalagnate_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betternether:stalagnate_trapdoor'})
+//         e.shaped('betternether:stalagnate_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betternether:stalagnate_slab'
+//             })
 
-//Willow
-        e.remove({output: 'betternether:willow_door'})
-        e.shaped('betternether:willow_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betternether:willow_trapdoor',
-                P: 'betternether:willow_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betternether:willow_trapdoor'})
-        e.shaped('betternether:willow_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betternether:willow_slab'
-            })
-//Wart
-        e.remove({output: 'betternether:wart_door'})
-        e.shaped('betternether:wart_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betternether:wart_trapdoor',
-                P: 'betternether:wart_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betternether:wart_trapdoor'})
-        e.shaped('betternether:wart_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betternether:wart_slab'
-            })
-//Bone-Reed
-        e.remove({output: 'betternether:bone_reed_door'})
-        e.shaped('betternether:bone_reed_door', [
-                'PTR',
-                'WBS',
-                'PWD'
-            ],
-            {
-                T: 'betternether:nether_reed_trapdoor',
-                P: 'betternether:nether_reed_planks',
-                W: 'betternether:bone_block',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-//Bone-Cincinnasite
-        e.remove({output: 'betternether:bone_cincinnasite_door'})
-        e.shaped('betternether:bone_cincinnasite_door', [
-                'PTR',
-                'WBS',
-                'PWD'
-            ],
-            {
-                T: 'betternether:nether_reed_trapdoor',
-                P: 'betternether:nether_reed_planks',
-                W: 'betternether:cincinnasite_forged',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-//Rubeus
-        e.remove({output: 'betternether:rubeus_door'})
-        e.shaped('betternether:rubeus_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betternether:rubeus_trapdoor',
-                P: 'betternether:rubeus_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betternether:rubeus_trapdoor'})
-        e.shaped('betternether:rubeus_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betternether:rubeus_slab'
-            })
-//Mushroom Fir
-        e.remove({output: 'betternether:mushroom_fir_door'})
-        e.shaped('betternether:mushroom_fir_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betternether:mushroom_fir_trapdoor',
-                P: 'betternether:mushroom_fir_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betternether:mushroom_fir_trapdoor'})
-        e.shaped('betternether:mushroom_fir_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betternether:mushroom_fir_slab'
-            })
-//Mushroom
-        e.remove({output: 'betternether:nether_mushroom_door'})
-        e.shaped('betternether:nether_mushroom_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betternether:nether_mushroom_trapdoor',
-                P: 'betternether:nether_mushroom_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betternether:nether_mushroom_trapdoor'})
-        e.shaped('betternether:nether_mushroom_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betternether:nether_mushroom_slab'
-            })
-//Anchor Tree
-        e.remove({output: 'betternether:anchor_tree_door'})
-        e.shaped('betternether:anchor_tree_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betternether:anchor_tree_trapdoor',
-                P: 'betternether:anchor_tree_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betternether:anchor_tree_trapdoor'})
-        e.shaped('betternether:anchor_tree_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betternether:anchor_tree_slab'
-            })
+// //Willow
+//         e.remove({output: 'betternether:willow_door'})
+//         e.shaped('betternether:willow_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betternether:willow_trapdoor',
+//                 P: 'betternether:willow_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betternether:willow_trapdoor'})
+//         e.shaped('betternether:willow_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betternether:willow_slab'
+//             })
+// //Wart
+//         e.remove({output: 'betternether:wart_door'})
+//         e.shaped('betternether:wart_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betternether:wart_trapdoor',
+//                 P: 'betternether:wart_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betternether:wart_trapdoor'})
+//         e.shaped('betternether:wart_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betternether:wart_slab'
+//             })
+// //Bone-Reed
+//         e.remove({output: 'betternether:bone_reed_door'})
+//         e.shaped('betternether:bone_reed_door', [
+//                 'PTR',
+//                 'WBS',
+//                 'PWD'
+//             ],
+//             {
+//                 T: 'betternether:nether_reed_trapdoor',
+//                 P: 'betternether:nether_reed_planks',
+//                 W: 'betternether:bone_block',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+// //Bone-Cincinnasite
+//         e.remove({output: 'betternether:bone_cincinnasite_door'})
+//         e.shaped('betternether:bone_cincinnasite_door', [
+//                 'PTR',
+//                 'WBS',
+//                 'PWD'
+//             ],
+//             {
+//                 T: 'betternether:nether_reed_trapdoor',
+//                 P: 'betternether:nether_reed_planks',
+//                 W: 'betternether:cincinnasite_forged',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+// //Rubeus
+//         e.remove({output: 'betternether:rubeus_door'})
+//         e.shaped('betternether:rubeus_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betternether:rubeus_trapdoor',
+//                 P: 'betternether:rubeus_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betternether:rubeus_trapdoor'})
+//         e.shaped('betternether:rubeus_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betternether:rubeus_slab'
+//             })
+// //Mushroom Fir
+//         e.remove({output: 'betternether:mushroom_fir_door'})
+//         e.shaped('betternether:mushroom_fir_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betternether:mushroom_fir_trapdoor',
+//                 P: 'betternether:mushroom_fir_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betternether:mushroom_fir_trapdoor'})
+//         e.shaped('betternether:mushroom_fir_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betternether:mushroom_fir_slab'
+//             })
+// //Mushroom
+//         e.remove({output: 'betternether:nether_mushroom_door'})
+//         e.shaped('betternether:nether_mushroom_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betternether:nether_mushroom_trapdoor',
+//                 P: 'betternether:nether_mushroom_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betternether:nether_mushroom_trapdoor'})
+//         e.shaped('betternether:nether_mushroom_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betternether:nether_mushroom_slab'
+//             })
+// //Anchor Tree
+//         e.remove({output: 'betternether:anchor_tree_door'})
+//         e.shaped('betternether:anchor_tree_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betternether:anchor_tree_trapdoor',
+//                 P: 'betternether:anchor_tree_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betternether:anchor_tree_trapdoor'})
+//         e.shaped('betternether:anchor_tree_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betternether:anchor_tree_slab'
+//             })
 
-//Nether Sakura
-        e.remove({output: 'betternether:nether_sakura_door'})
-        e.shaped('betternether:nether_sakura_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betternether:nether_sakura_trapdoor',
-                P: 'betternether:nether_sakura_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betternether:nether_sakura_trapdoor'})
-        e.shaped('betternether:nether_sakura_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betternether:nether_sakura_slab'
-            })
+// //Nether Sakura
+//         e.remove({output: 'betternether:nether_sakura_door'})
+//         e.shaped('betternether:nether_sakura_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betternether:nether_sakura_trapdoor',
+//                 P: 'betternether:nether_sakura_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betternether:nether_sakura_trapdoor'})
+//         e.shaped('betternether:nether_sakura_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betternether:nether_sakura_slab'
+//             })
 //Mossy Glowshroom
-        e.remove({output: 'betterend:mossy_glowshroom_door'})
-        e.shaped('betterend:mossy_glowshroom_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betterend:mossy_glowshroom_trapdoor',
-                P: 'betterend:mossy_glowshroom_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betterend:mossy_glowshroom_trapdoor'})
-        e.shaped('betterend:mossy_glowshroom_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betterend:mossy_glowshroom_slab'
-            })
-//Pythadendron
-        e.remove({output: 'betterend:pythadendron_door'})
-        e.shaped('betterend:pythadendron_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betterend:pythadendron_trapdoor',
-                P: 'betterend:pythadendron_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betterend:pythadendron_trapdoor'})
-        e.shaped('betterend:pythadendron_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betterend:pythadendron_slab'
-            })
-//Endlotus
-        e.remove({output: 'betterend:end_lotus_door'})
-        e.shaped('betterend:end_lotus_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betterend:end_lotus_trapdoor',
-                P: 'betterend:end_lotus_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betterend:end_lotus_trapdoor'})
-        e.shaped('betterend:end_lotus_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betterend:end_lotus_slab'
-            })
-//Lacugrove
-        e.remove({output: 'betterend:lacugrove_door'})
-        e.shaped('betterend:lacugrove_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betterend:lacugrove_trapdoor',
-                P: 'betterend:lacugrove_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betterend:lacugrove_trapdoor'})
-        e.shaped('betterend:lacugrove_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betterend:lacugrove_slab'
-            })
+//         e.remove({output: 'betterend:mossy_glowshroom_door'})
+//         e.shaped('betterend:mossy_glowshroom_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betterend:mossy_glowshroom_trapdoor',
+//                 P: 'betterend:mossy_glowshroom_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betterend:mossy_glowshroom_trapdoor'})
+//         e.shaped('betterend:mossy_glowshroom_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betterend:mossy_glowshroom_slab'
+//             })
+// //Pythadendron
+//         e.remove({output: 'betterend:pythadendron_door'})
+//         e.shaped('betterend:pythadendron_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betterend:pythadendron_trapdoor',
+//                 P: 'betterend:pythadendron_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betterend:pythadendron_trapdoor'})
+//         e.shaped('betterend:pythadendron_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betterend:pythadendron_slab'
+//             })
+// //Endlotus
+//         e.remove({output: 'betterend:end_lotus_door'})
+//         e.shaped('betterend:end_lotus_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betterend:end_lotus_trapdoor',
+//                 P: 'betterend:end_lotus_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betterend:end_lotus_trapdoor'})
+//         e.shaped('betterend:end_lotus_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betterend:end_lotus_slab'
+//             })
+// //Lacugrove
+//         e.remove({output: 'betterend:lacugrove_door'})
+//         e.shaped('betterend:lacugrove_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betterend:lacugrove_trapdoor',
+//                 P: 'betterend:lacugrove_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betterend:lacugrove_trapdoor'})
+//         e.shaped('betterend:lacugrove_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betterend:lacugrove_slab'
+//             })
 
-//Dragon Tree
-        e.remove({output: 'betterend:dragon_tree_door'})
-        e.shaped('betterend:dragon_tree_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betterend:dragon_tree_trapdoor',
-                P: 'betterend:dragon_tree_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betterend:dragon_tree_trapdoor'})
-        e.shaped('betterend:dragon_tree_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betterend:dragon_tree_slab'
-            })
-//Tenanea
-        e.remove({output: 'betterend:tenanea_door'})
-        e.shaped('betterend:tenanea_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betterend:tenanea_trapdoor',
-                P: 'betterend:tenanea_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betterend:tenanea_trapdoor'})
-        e.shaped('betterend:tenanea_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betterend:tenanea_slab'
-            })
-//Helix Tree
-        e.remove({output: 'betterend:helix_tree_door'})
-        e.shaped('betterend:helix_tree_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betterend:helix_tree_trapdoor',
-                P: 'betterend:helix_tree_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betterend:helix_tree_trapdoor'})
-        e.shaped('betterend:helix_tree_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betterend:helix_tree_slab'
-            })
-//Umbrella Tree
-        e.remove({output: 'betterend:umbrella_tree_door'})
-        e.shaped('betterend:umbrella_tree_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betterend:umbrella_tree_trapdoor',
-                P: 'betterend:umbrella_tree_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betterend:umbrella_tree_trapdoor'})
-        e.shaped('betterend:umbrella_tree_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betterend:umbrella_tree_slab'
-            })
-//Jellyshroom
-        e.remove({output: 'betterend:jellyshroom_door'})
-        e.shaped('betterend:jellyshroom_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betterend_jellyshroom_trapdoor',
-                P: 'betterend_jellyshroom_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betterend:jellyshroom_trapdoor'})
-        e.shaped('betterend:jellyshroom_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betterend_jellyshroom_slab'
-            })
-//Lucernia
-        e.remove({output: 'betterend:lucernia_door'})
-        e.shaped('betterend:lucernia_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betterend:lucernia_trapdoor',
-                P: 'betterend:lucernia_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betterend:lucernia_trapdoor'})
-        e.shaped('betterend:lucernia_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betterend:lucernia_slab'
-            })
-//Thallasium
-        e.remove({output: 'betterend:thallasium_door'})
-        e.shaped('betterend:thallasium_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betterend:thallasium_trapdoor',
-                P: 'betterend:thallasium_ingot',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betterend:thallasium_trapdoor'})
-        e.shaped('betterend:thallasium_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betterend:thallasium_ingot'
-            })
-//Terminite
-        e.remove({output: 'betterend:terminite_door'})
-        e.shaped('betterend:terminite_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'betterend:terminite_trapdoor',
-                P: 'betterend:terminite_ingot',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'betterend:terminite_trapdoor'})
-        e.shaped('betterend:terminite_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'betterend:terminite_ingot'
-            })
-//Pream
-        e.remove({output: 'phantasm:pream_door'})
-        e.shaped('phantasm:pream_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'phantasm:pream_trapdoor',
-                P: 'phantasm:pream_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'phantasm:pream_trapdoor'})
-        e.shaped('phantasm:pream_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'phantasm:pream_slab'
-            })
+// //Dragon Tree
+//         e.remove({output: 'betterend:dragon_tree_door'})
+//         e.shaped('betterend:dragon_tree_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betterend:dragon_tree_trapdoor',
+//                 P: 'betterend:dragon_tree_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betterend:dragon_tree_trapdoor'})
+//         e.shaped('betterend:dragon_tree_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betterend:dragon_tree_slab'
+//             })
+// //Tenanea
+//         e.remove({output: 'betterend:tenanea_door'})
+//         e.shaped('betterend:tenanea_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betterend:tenanea_trapdoor',
+//                 P: 'betterend:tenanea_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betterend:tenanea_trapdoor'})
+//         e.shaped('betterend:tenanea_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betterend:tenanea_slab'
+//             })
+// //Helix Tree
+//         e.remove({output: 'betterend:helix_tree_door'})
+//         e.shaped('betterend:helix_tree_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betterend:helix_tree_trapdoor',
+//                 P: 'betterend:helix_tree_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betterend:helix_tree_trapdoor'})
+//         e.shaped('betterend:helix_tree_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betterend:helix_tree_slab'
+//             })
+// //Umbrella Tree
+//         e.remove({output: 'betterend:umbrella_tree_door'})
+//         e.shaped('betterend:umbrella_tree_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betterend:umbrella_tree_trapdoor',
+//                 P: 'betterend:umbrella_tree_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betterend:umbrella_tree_trapdoor'})
+//         e.shaped('betterend:umbrella_tree_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betterend:umbrella_tree_slab'
+//             })
+// //Jellyshroom
+//         e.remove({output: 'betterend:jellyshroom_door'})
+//         e.shaped('betterend:jellyshroom_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betterend_jellyshroom_trapdoor',
+//                 P: 'betterend_jellyshroom_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betterend:jellyshroom_trapdoor'})
+//         e.shaped('betterend:jellyshroom_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betterend_jellyshroom_slab'
+//             })
+// //Lucernia
+//         e.remove({output: 'betterend:lucernia_door'})
+//         e.shaped('betterend:lucernia_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betterend:lucernia_trapdoor',
+//                 P: 'betterend:lucernia_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betterend:lucernia_trapdoor'})
+//         e.shaped('betterend:lucernia_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betterend:lucernia_slab'
+//             })
+// //Thallasium
+//         e.remove({output: 'betterend:thallasium_door'})
+//         e.shaped('betterend:thallasium_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betterend:thallasium_trapdoor',
+//                 P: 'betterend:thallasium_ingot',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betterend:thallasium_trapdoor'})
+//         e.shaped('betterend:thallasium_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betterend:thallasium_ingot'
+//             })
+// //Terminite
+//         e.remove({output: 'betterend:terminite_door'})
+//         e.shaped('betterend:terminite_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'betterend:terminite_trapdoor',
+//                 P: 'betterend:terminite_ingot',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'betterend:terminite_trapdoor'})
+//         e.shaped('betterend:terminite_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'betterend:terminite_ingot'
+//             })
+// //Pream
+//         e.remove({output: 'phantasm:pream_door'})
+//         e.shaped('phantasm:pream_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'phantasm:pream_trapdoor',
+//                 P: 'phantasm:pream_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'phantasm:pream_trapdoor'})
+//         e.shaped('phantasm:pream_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'phantasm:pream_slab'
+//             })
 //Gold
         e.remove({output: 'supplementaries:gold_door'})
         e.shaped('supplementaries:gold_door', [
@@ -1715,139 +1715,139 @@ ServerEvents.recipes(e => {
             T: 'minecraft:stick',
             P: 'undergarden:grongle_slab'
         })
-//Deorum
-    e.remove({output: 'forbidden_arcanus:deorum_door'})
-    e.shaped('forbidden_arcanus:deorum_door', [
-            'PTR',
-            'PBS',
-            'PPD'
-        ],
-        {
-            T: 'forbidden_arcanus:deorum_trapdoor',
-            P: 'forbidden_arcanus:deorum_ingot',
-            B: 'gtceu:steel_ring',
-            S: 'gtceu:steel_screw',
-            D: '#forge:tools/screwdrivers',
-            R: '#forge:tools/hammers'
-        }
-    )
-    e.remove({output: 'forbidden_arcanus:deorum_trapdoor'})
-    e.shaped('forbidden_arcanus:deorum_trapdoor', [
-            'PTP',
-            'TOT',
-            'ETR'
-        ],
-        {
-            T: 'forbidden_arcanus:deorum_ingot',
-            P: 'gtceu:steel_screw',
-            E: '#forge:tools/saws',
-            R: '#forge:tools/screwdrivers',
-            O: '#minecraft:wooden_trapdoors'
-        })
-//Fungyss
-    e.remove({output: 'forbidden_arcanus:fungyss_door'})
-    e.shaped('forbidden_arcanus:fungyss_door', [
-            'PTR',
-            'PBS',
-            'PPD'
-        ],
-        {
-            T: 'forbidden_arcanus:fungyss_trapdoor',
-            P: 'forbidden_arcanus:fungyss_planks',
-            B: 'gtceu:iron_ring',
-            S: 'gtceu:iron_screw',
-            D: '#forge:tools/saws',
-            R: '#forge:tools/screwdrivers'
-        }
-    )
-    e.remove({output: 'forbidden_arcanus:fungyss_trapdoor'})
-    e.shaped('forbidden_arcanus:fungyss_trapdoor', [
-            'PTP',
-            'TTT',
-            'PTP'
-        ],
-        {
-            T: 'minecraft:stick',
-            P: 'forbidden_arcanus:fungyss_slab'
-        })
-//Aurum
-    e.remove({output: 'forbidden_arcanus:aurum_door'})
-    e.shaped('forbidden_arcanus:aurum_door', [
-            'PTR',
-            'PBS',
-            'PPD'
-        ],
-        {
-            T: 'forbidden_arcanus:aurum_trapdoor',
-            P: 'forbidden_arcanus:aurum_planks',
-            B: 'gtceu:iron_ring',
-            S: 'gtceu:iron_screw',
-            D: '#forge:tools/saws',
-            R: '#forge:tools/screwdrivers'
-        }
-    )
-    e.remove({output: 'forbidden_arcanus:aurum_trapdoor'})
-    e.shaped('forbidden_arcanus:aurum_trapdoor', [
-            'PTP',
-            'TTT',
-            'PTP'
-        ],
-        {
-            T: 'minecraft:stick',
-            P: 'forbidden_arcanus:aurum_slab'
-        })
-//Edelwood
-    e.remove({output: 'forbidden_arcanus:edelwood_door'})
-    e.shaped('forbidden_arcanus:edelwood_door', [
-            'PTR',
-            'PBS',
-            'PPD'
-        ],
-        {
-            T: 'forbidden_arcanus:edelwood_trapdoor',
-            P: 'forbidden_arcanus:edelwood_planks',
-            B: 'gtceu:iron_ring',
-            S: 'gtceu:iron_screw',
-            D: '#forge:tools/saws',
-            R: '#forge:tools/screwdrivers'
-        }
-    )
-    e.remove({output: 'forbidden_arcanus:edelwood_trapdoor'})
-    e.shaped('forbidden_arcanus:edelwood_trapdoor', [
-            'PTP',
-            'TTT',
-            'PTP'
-        ],
-        {
-            T: 'minecraft:stick',
-            P: 'forbidden_arcanus:edelwood_slab'
-        })
-//Arcane Edelwood
-    e.remove({output: 'forbidden_arcanus:arcane_edelwood_door'})
-    e.shaped('forbidden_arcanus:arcane_edelwood_door', [
-            'PTR',
-            'PBS',
-            'PPD'
-        ],
-        {
-            T: 'forbidden_arcanus:arcane_edelwood_trapdoor',
-            P: 'forbidden_arcanus:arcane_edelwood_planks',
-            B: 'gtceu:iron_ring',
-            S: 'gtceu:iron_screw',
-            D: '#forge:tools/saws',
-            R: '#forge:tools/screwdrivers'
-        }
-    )
-    e.remove({output: 'forbidden_arcanus:arcane_edelwood_trapdoor'})
-    e.shaped('forbidden_arcanus:arcane_edelwood_trapdoor', [
-            'PTP',
-            'TTT',
-            'PTP'
-        ],
-        {
-            T: 'minecraft:stick',
-            P: 'forbidden_arcanus:arcane_edelwood_slab'
-        })
+// //Deorum
+//     e.remove({output: 'forbidden_arcanus:deorum_door'})
+//     e.shaped('forbidden_arcanus:deorum_door', [
+//             'PTR',
+//             'PBS',
+//             'PPD'
+//         ],
+//         {
+//             T: 'forbidden_arcanus:deorum_trapdoor',
+//             P: 'forbidden_arcanus:deorum_ingot',
+//             B: 'gtceu:steel_ring',
+//             S: 'gtceu:steel_screw',
+//             D: '#forge:tools/screwdrivers',
+//             R: '#forge:tools/hammers'
+//         }
+//     )
+//     e.remove({output: 'forbidden_arcanus:deorum_trapdoor'})
+//     e.shaped('forbidden_arcanus:deorum_trapdoor', [
+//             'PTP',
+//             'TOT',
+//             'ETR'
+//         ],
+//         {
+//             T: 'forbidden_arcanus:deorum_ingot',
+//             P: 'gtceu:steel_screw',
+//             E: '#forge:tools/saws',
+//             R: '#forge:tools/screwdrivers',
+//             O: '#minecraft:wooden_trapdoors'
+//         })
+// //Fungyss
+//     e.remove({output: 'forbidden_arcanus:fungyss_door'})
+//     e.shaped('forbidden_arcanus:fungyss_door', [
+//             'PTR',
+//             'PBS',
+//             'PPD'
+//         ],
+//         {
+//             T: 'forbidden_arcanus:fungyss_trapdoor',
+//             P: 'forbidden_arcanus:fungyss_planks',
+//             B: 'gtceu:iron_ring',
+//             S: 'gtceu:iron_screw',
+//             D: '#forge:tools/saws',
+//             R: '#forge:tools/screwdrivers'
+//         }
+//     )
+//     e.remove({output: 'forbidden_arcanus:fungyss_trapdoor'})
+//     e.shaped('forbidden_arcanus:fungyss_trapdoor', [
+//             'PTP',
+//             'TTT',
+//             'PTP'
+//         ],
+//         {
+//             T: 'minecraft:stick',
+//             P: 'forbidden_arcanus:fungyss_slab'
+//         })
+// //Aurum
+//     e.remove({output: 'forbidden_arcanus:aurum_door'})
+//     e.shaped('forbidden_arcanus:aurum_door', [
+//             'PTR',
+//             'PBS',
+//             'PPD'
+//         ],
+//         {
+//             T: 'forbidden_arcanus:aurum_trapdoor',
+//             P: 'forbidden_arcanus:aurum_planks',
+//             B: 'gtceu:iron_ring',
+//             S: 'gtceu:iron_screw',
+//             D: '#forge:tools/saws',
+//             R: '#forge:tools/screwdrivers'
+//         }
+//     )
+//     e.remove({output: 'forbidden_arcanus:aurum_trapdoor'})
+//     e.shaped('forbidden_arcanus:aurum_trapdoor', [
+//             'PTP',
+//             'TTT',
+//             'PTP'
+//         ],
+//         {
+//             T: 'minecraft:stick',
+//             P: 'forbidden_arcanus:aurum_slab'
+//         })
+// //Edelwood
+//     e.remove({output: 'forbidden_arcanus:edelwood_door'})
+//     e.shaped('forbidden_arcanus:edelwood_door', [
+//             'PTR',
+//             'PBS',
+//             'PPD'
+//         ],
+//         {
+//             T: 'forbidden_arcanus:edelwood_trapdoor',
+//             P: 'forbidden_arcanus:edelwood_planks',
+//             B: 'gtceu:iron_ring',
+//             S: 'gtceu:iron_screw',
+//             D: '#forge:tools/saws',
+//             R: '#forge:tools/screwdrivers'
+//         }
+//     )
+//     e.remove({output: 'forbidden_arcanus:edelwood_trapdoor'})
+//     e.shaped('forbidden_arcanus:edelwood_trapdoor', [
+//             'PTP',
+//             'TTT',
+//             'PTP'
+//         ],
+//         {
+//             T: 'minecraft:stick',
+//             P: 'forbidden_arcanus:edelwood_slab'
+//         })
+// //Arcane Edelwood
+//     e.remove({output: 'forbidden_arcanus:arcane_edelwood_door'})
+//     e.shaped('forbidden_arcanus:arcane_edelwood_door', [
+//             'PTR',
+//             'PBS',
+//             'PPD'
+//         ],
+//         {
+//             T: 'forbidden_arcanus:arcane_edelwood_trapdoor',
+//             P: 'forbidden_arcanus:arcane_edelwood_planks',
+//             B: 'gtceu:iron_ring',
+//             S: 'gtceu:iron_screw',
+//             D: '#forge:tools/saws',
+//             R: '#forge:tools/screwdrivers'
+//         }
+//     )
+//     e.remove({output: 'forbidden_arcanus:arcane_edelwood_trapdoor'})
+//     e.shaped('forbidden_arcanus:arcane_edelwood_trapdoor', [
+//             'PTP',
+//             'TTT',
+//             'PTP'
+//         ],
+//         {
+//             T: 'minecraft:stick',
+//             P: 'forbidden_arcanus:arcane_edelwood_slab'
+//         })
 //Doors finished
 
 //Plank time
@@ -1889,386 +1889,386 @@ ServerEvents.recipes(e => {
         {
             P: 'minecraft:bamboo_block'
         })
-//Stalagnate
-    e.remove({id: 'betternether:stalagnate_planks'})
-    e.shaped('4x betternether:stalagnate_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betternether:stalagnate_log'
-        })
-    e.shaped('2x betternether:stalagnate_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betternether:stalagnate_log'
-        })
-//Willow
-    e.remove({id: 'betternether:willow_planks'})
-    e.shaped('4x betternether:willow_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betternether:willow_log'
-        })
-    e.shaped('2x betternether:willow_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betternether:willow_log'
-        })
-//Wart
-    e.remove({id: 'betternether:wart_planks'})
-    e.shaped('4x betternether:wart_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betternether:wart_log'
-        })
-    e.shaped('2x betternether:wart_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betternether:wart_log'
-        })
-//Rubeus
-    e.remove({id: 'betternether:rubeus_planks'})
-    e.shaped('4x betternether:rubeus_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betternether:rubeus_log'
-        })
-    e.shaped('2x betternether:rubeus_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betternether:rubeus_log'
-        })
-//Mushroom Fir
-    e.remove({id: 'betternether:mushroom_fir_planks'})
-    e.shaped('4x betternether:mushroom_fir_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betternether:mushroom_fir_log'
-        })
-    e.shaped('2x betternether:mushroom_fir_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betternether:mushroom_fir_log'
-        })
-//Mushroom
-    e.remove({id: 'betternether:nether_mushroom_planks'})
-    e.shaped('4x betternether:nether_mushroom_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betternether:nether_mushroom_stem'
-        })
-    e.shaped('2x betternether:nether_mushroom_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betternether:nether_mushroom_stem'
-        })
-//Anchor
-    e.remove({id: 'betternether:anchor_tree_planks'})
-    e.shaped('4x betternether:anchor_tree_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betternether:anchor_tree_log'
-        })
-    e.shaped('2x betternether:anchor_tree_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betternether:anchor_tree_log'
-        })
-//Nether Sakura
-    e.remove({id: 'betternether:nether_sakura_planks'})
-    e.shaped('4x betternether:nether_sakura_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betternether:nether_sakura_log'
-        })
-    e.shaped('2x betternether:nether_sakura_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betternether:nether_sakura_log'
-        })
+// //Stalagnate
+//     e.remove({id: 'betternether:stalagnate_planks'})
+//     e.shaped('4x betternether:stalagnate_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betternether:stalagnate_log'
+//         })
+//     e.shaped('2x betternether:stalagnate_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betternether:stalagnate_log'
+//         })
+// //Willow
+//     e.remove({id: 'betternether:willow_planks'})
+//     e.shaped('4x betternether:willow_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betternether:willow_log'
+//         })
+//     e.shaped('2x betternether:willow_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betternether:willow_log'
+//         })
+// //Wart
+//     e.remove({id: 'betternether:wart_planks'})
+//     e.shaped('4x betternether:wart_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betternether:wart_log'
+//         })
+//     e.shaped('2x betternether:wart_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betternether:wart_log'
+//         })
+// //Rubeus
+//     e.remove({id: 'betternether:rubeus_planks'})
+//     e.shaped('4x betternether:rubeus_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betternether:rubeus_log'
+//         })
+//     e.shaped('2x betternether:rubeus_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betternether:rubeus_log'
+//         })
+// //Mushroom Fir
+//     e.remove({id: 'betternether:mushroom_fir_planks'})
+//     e.shaped('4x betternether:mushroom_fir_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betternether:mushroom_fir_log'
+//         })
+//     e.shaped('2x betternether:mushroom_fir_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betternether:mushroom_fir_log'
+//         })
+// //Mushroom
+//     e.remove({id: 'betternether:nether_mushroom_planks'})
+//     e.shaped('4x betternether:nether_mushroom_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betternether:nether_mushroom_stem'
+//         })
+//     e.shaped('2x betternether:nether_mushroom_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betternether:nether_mushroom_stem'
+//         })
+// //Anchor
+//     e.remove({id: 'betternether:anchor_tree_planks'})
+//     e.shaped('4x betternether:anchor_tree_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betternether:anchor_tree_log'
+//         })
+//     e.shaped('2x betternether:anchor_tree_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betternether:anchor_tree_log'
+//         })
+// //Nether Sakura
+//     e.remove({id: 'betternether:nether_sakura_planks'})
+//     e.shaped('4x betternether:nether_sakura_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betternether:nether_sakura_log'
+//         })
+//     e.shaped('2x betternether:nether_sakura_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betternether:nether_sakura_log'
+//         })
 //Mossy Glowshroom
-    e.remove({id: 'betterend:mossy_glowshroom_planks'})
-    e.shaped('4x betterend:mossy_glowshroom_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betterend:mossy_glowshroom_log'
-        })
-    e.shaped('2x betterend:mossy_glowshroom_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betterend:mossy_glowshroom_log'
-        })
-//Pythadendron
-    e.remove({id: 'betterend:pythadendron_planks'})
-    e.shaped('4x betterend:pythadendron_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betterend:pythadendron_log'
-        })
-    e.shaped('2x betterend:pythadendron_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betterend:pythadendron_log'
-        })
-//Endlotus
-    e.remove({id: 'betterend:end_lotus_planks'})
-    e.shaped('4x betterend:end_lotus_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betterend:end_lotus_log'
-        })
-    e.shaped('2x betterend:end_lotus_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betterend:end_lotus_log'
-        })
-//Lacugrove
-    e.remove({id: 'betterend:lacugrove_planks'})
-    e.shaped('4x betterend:lacugrove_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betterend:lacugrove_log'
-        })
-    e.shaped('2x betterend:lacugrove_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betterend:lacugrove_log'
-        })
-//Dragon Tree
-    e.remove({id: 'betterend:dragon_tree_planks'})
-    e.shaped('4x betterend:dragon_tree_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betterend:dragon_tree_log'
-        })
-    e.shaped('2x betterend:dragon_tree_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betterend:dragon_tree_log'
-        })
-//Tenanea
-    e.remove({id: 'betterend:tenanea_planks'})
-    e.shaped('4x betterend:tenanea_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betterend:tenanea_log'
-        })
-    e.shaped('2x betterend:tenanea_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betterend:tenanea_log'
-        })
-//Helix Tree
-    e.remove({id: 'betterend:helix_tree_planks'})
-    e.shaped('4x betterend:helix_tree_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betterend:helix_tree_log'
-        })
-    e.shaped('2x betterend:helix_tree_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betterend:helix_tree_log'
-        })
-//Umbrella
-    e.remove({id: 'betterend:umbrella_tree_planks'})
-    e.shaped('4x betterend:umbrella_tree_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betterend:umbrella_tree_log'
-        })
-    e.shaped('2x betterend:umbrella_tree_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betterend:umbrella_tree_log'
-        })
-//Anchor
-    e.remove({id: 'betternether:anchor_tree_planks'})
-    e.shaped('4x betternether:anchor_tree_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betternether:anchor_tree_log'
-        })
-    e.shaped('2x betternether:anchor_tree_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betternether:anchor_tree_log'
-        })
+//     e.remove({id: 'betterend:mossy_glowshroom_planks'})
+//     e.shaped('4x betterend:mossy_glowshroom_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betterend:mossy_glowshroom_log'
+//         })
+//     e.shaped('2x betterend:mossy_glowshroom_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betterend:mossy_glowshroom_log'
+//         })
+// //Pythadendron
+//     e.remove({id: 'betterend:pythadendron_planks'})
+//     e.shaped('4x betterend:pythadendron_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betterend:pythadendron_log'
+//         })
+//     e.shaped('2x betterend:pythadendron_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betterend:pythadendron_log'
+//         })
+// //Endlotus
+//     e.remove({id: 'betterend:end_lotus_planks'})
+//     e.shaped('4x betterend:end_lotus_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betterend:end_lotus_log'
+//         })
+//     e.shaped('2x betterend:end_lotus_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betterend:end_lotus_log'
+//         })
+// //Lacugrove
+//     e.remove({id: 'betterend:lacugrove_planks'})
+//     e.shaped('4x betterend:lacugrove_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betterend:lacugrove_log'
+//         })
+//     e.shaped('2x betterend:lacugrove_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betterend:lacugrove_log'
+//         })
+// //Dragon Tree
+//     e.remove({id: 'betterend:dragon_tree_planks'})
+//     e.shaped('4x betterend:dragon_tree_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betterend:dragon_tree_log'
+//         })
+//     e.shaped('2x betterend:dragon_tree_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betterend:dragon_tree_log'
+//         })
+// //Tenanea
+//     e.remove({id: 'betterend:tenanea_planks'})
+//     e.shaped('4x betterend:tenanea_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betterend:tenanea_log'
+//         })
+//     e.shaped('2x betterend:tenanea_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betterend:tenanea_log'
+//         })
+// //Helix Tree
+//     e.remove({id: 'betterend:helix_tree_planks'})
+//     e.shaped('4x betterend:helix_tree_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betterend:helix_tree_log'
+//         })
+//     e.shaped('2x betterend:helix_tree_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betterend:helix_tree_log'
+//         })
+// //Umbrella
+//     e.remove({id: 'betterend:umbrella_tree_planks'})
+//     e.shaped('4x betterend:umbrella_tree_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betterend:umbrella_tree_log'
+//         })
+//     e.shaped('2x betterend:umbrella_tree_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betterend:umbrella_tree_log'
+//         })
+// //Anchor
+//     e.remove({id: 'betternether:anchor_tree_planks'})
+//     e.shaped('4x betternether:anchor_tree_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betternether:anchor_tree_log'
+//         })
+//     e.shaped('2x betternether:anchor_tree_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betternether:anchor_tree_log'
+//         })
 //Jellyshroom
-    e.remove({id: 'betterend:jellyshroom_planks'})
-    e.shaped('4x betterend:jellyshroom_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betterend:jellyshroom_log'
-        })
-    e.shaped('2x betterend:jellyshroom_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betterend:jellyshroom_log'
-        })
-//Lucernia
-    e.remove({id: 'betterend:lucernia_planks'})
-    e.shaped('4x betterend:lucernia_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'betterend:lucernia_log'
-        })
-    e.shaped('2x betterend:lucernia_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'betterend:lucernia_log'
-        })
-//Pream
-    e.remove({id: 'phantasm:pream_planks'})
-    e.shaped('4x phantasm:pream_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'phantasm:pream_log'
-        })
-    e.shaped('2x phantasm:pream_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'phantasm:pream_log'
-        })
+//     e.remove({id: 'betterend:jellyshroom_planks'})
+//     e.shaped('4x betterend:jellyshroom_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betterend:jellyshroom_log'
+//         })
+//     e.shaped('2x betterend:jellyshroom_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betterend:jellyshroom_log'
+//         })
+// //Lucernia
+//     e.remove({id: 'betterend:lucernia_planks'})
+//     e.shaped('4x betterend:lucernia_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'betterend:lucernia_log'
+//         })
+//     e.shaped('2x betterend:lucernia_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'betterend:lucernia_log'
+//         })
+// //Pream
+//     e.remove({id: 'phantasm:pream_planks'})
+//     e.shaped('4x phantasm:pream_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'phantasm:pream_log'
+//         })
+//     e.shaped('2x phantasm:pream_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'phantasm:pream_log'
+//         })
 //Undead
     e.remove({id: 'evilcraft:crafting/undead_planks'})
     e.shaped('4x evilcraft:undead_planks', [
@@ -3140,63 +3140,63 @@ ServerEvents.recipes(e => {
         {
             P: 'gtceu:rubber_log'
         })
-//Fungyss
-    e.remove({id: 'forbidden_arcanus:fungyss_planks'})
-    e.shaped('4x forbidden_arcanus:fungyss_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: '#forbidden_arcanus:fungyss_stems'
-        })
-    e.shaped('2x forbidden_arcanus:fungyss_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: '#forbidden_arcanus:fungyss_stems'
-        })
-//Aurum
-    e.remove({id: 'forbidden_arcanus:aurum_planks'})
-    e.shaped('4x forbidden_arcanus:aurum_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'forbidden_arcanus:aurum_log'
-        })
-    e.shaped('2x forbidden_arcanus:aurum_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'forbidden_arcanus:aurum_log'
-        })
-//Edelwood
-    e.remove({id: 'forbidden_arcanus:edelwood_planks'})
-    e.shaped('4x forbidden_arcanus:edelwood_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'forbidden_arcanus:edelwood_log'
-        })
-    e.shaped('2x forbidden_arcanus:edelwood_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'forbidden_arcanus:edelwood_log'
-        })
+// //Fungyss
+//     e.remove({id: 'forbidden_arcanus:fungyss_planks'})
+//     e.shaped('4x forbidden_arcanus:fungyss_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: '#forbidden_arcanus:fungyss_stems'
+//         })
+//     e.shaped('2x forbidden_arcanus:fungyss_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: '#forbidden_arcanus:fungyss_stems'
+//         })
+// //Aurum
+//     e.remove({id: 'forbidden_arcanus:aurum_planks'})
+//     e.shaped('4x forbidden_arcanus:aurum_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'forbidden_arcanus:aurum_log'
+//         })
+//     e.shaped('2x forbidden_arcanus:aurum_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'forbidden_arcanus:aurum_log'
+//         })
+// //Edelwood
+//     e.remove({id: 'forbidden_arcanus:edelwood_planks'})
+//     e.shaped('4x forbidden_arcanus:edelwood_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'forbidden_arcanus:edelwood_log'
+//         })
+//     e.shaped('2x forbidden_arcanus:edelwood_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'forbidden_arcanus:edelwood_log'
+//         })
 
 // PLANKS FINISHED
 })
@@ -3204,59 +3204,59 @@ ServerEvents.recipes(e => {
 //CREATE SAW BRIDGING
 ServerEvents.recipes(e => {
     //Stalagnate
-    e.recipes.create.cutting('betternether:stalagnate_stripped_log', 'betternether:stalagnate_log').processingTime(50)
-    e.recipes.create.cutting('6x betternether:stalagnate_planks', 'betternether:stalagnate_stripped_log').processingTime(50)
-    //Willow
-    e.recipes.create.cutting('betternether:willow_stripped_log', 'betternether:willow_log').processingTime(50)
-    e.recipes.create.cutting('6x betternether:willow_planks', 'betternether:willow_stripped_log').processingTime(50)
-    //Wart
-    e.recipes.create.cutting('betternether:wart_stripped_log', 'betternether:wart_log').processingTime(50)
-    e.recipes.create.cutting('6x betternether:wart_planks', 'betternether:wart_stripped_log').processingTime(50)
-    //Rubeus
-    e.recipes.create.cutting('betternether:rubeus_stripped_log', 'betternether:rubeus_log').processingTime(50)
-    e.recipes.create.cutting('6x betternether:rubeus_planks', 'betternether:rubeus_stripped_log').processingTime(50)
-    //Mushroom Fir
-    e.recipes.create.cutting('betternether:mushroom_fir_stripped_log', 'betternether:mushroom_fir_log').processingTime(50)
-    e.recipes.create.cutting('6x betternether:mushroom_fir_planks', 'betternether:mushroom_fir_stripped_log').processingTime(50)
-    //Anchor Tree
-    e.recipes.create.cutting('betternether:anchor_tree_stripped_log', 'betternether:anchor_tree_log').processingTime(50)
-    e.recipes.create.cutting('6x betternether:anchor_tree_planks', 'betternether:anchor_tree_stripped_log').processingTime(50)
-    //Nether Sakura
-    e.recipes.create.cutting('betternether:nether_sakura_stripped_log', 'betternether:nether_sakura_log').processingTime(50)
-    e.recipes.create.cutting('6x betternether:nether_sakura_planks', 'betternether:nether_sakura_stripped_log').processingTime(50)
+    // e.recipes.create.cutting('betternether:stalagnate_stripped_log', 'betternether:stalagnate_log').processingTime(50)
+    // e.recipes.create.cutting('6x betternether:stalagnate_planks', 'betternether:stalagnate_stripped_log').processingTime(50)
+    // //Willow
+    // e.recipes.create.cutting('betternether:willow_stripped_log', 'betternether:willow_log').processingTime(50)
+    // e.recipes.create.cutting('6x betternether:willow_planks', 'betternether:willow_stripped_log').processingTime(50)
+    // //Wart
+    // e.recipes.create.cutting('betternether:wart_stripped_log', 'betternether:wart_log').processingTime(50)
+    // e.recipes.create.cutting('6x betternether:wart_planks', 'betternether:wart_stripped_log').processingTime(50)
+    // //Rubeus
+    // e.recipes.create.cutting('betternether:rubeus_stripped_log', 'betternether:rubeus_log').processingTime(50)
+    // e.recipes.create.cutting('6x betternether:rubeus_planks', 'betternether:rubeus_stripped_log').processingTime(50)
+    // //Mushroom Fir
+    // e.recipes.create.cutting('betternether:mushroom_fir_stripped_log', 'betternether:mushroom_fir_log').processingTime(50)
+    // e.recipes.create.cutting('6x betternether:mushroom_fir_planks', 'betternether:mushroom_fir_stripped_log').processingTime(50)
+    // //Anchor Tree
+    // e.recipes.create.cutting('betternether:anchor_tree_stripped_log', 'betternether:anchor_tree_log').processingTime(50)
+    // e.recipes.create.cutting('6x betternether:anchor_tree_planks', 'betternether:anchor_tree_stripped_log').processingTime(50)
+    // //Nether Sakura
+    // e.recipes.create.cutting('betternether:nether_sakura_stripped_log', 'betternether:nether_sakura_log').processingTime(50)
+    // e.recipes.create.cutting('6x betternether:nether_sakura_planks', 'betternether:nether_sakura_stripped_log').processingTime(50)
     //Mossy Glowshroom
-    e.recipes.create.cutting('betterend:mossy_glowshroom_stripped_log', 'betterend:mossy_glowshroom_log').processingTime(50)
-    e.recipes.create.cutting('6x betterend:mossy_glowshroom_planks', 'betterend:mossy_glowshroom_stripped_log').processingTime(50)
-    //Pythadendron
-    e.recipes.create.cutting('betterend:pythadendron_stripped_log', 'betterend:pythadendron_fir_log').processingTime(50)
-    e.recipes.create.cutting('6x betterend:pythadendron_planks', 'betterend:pythadendron_stripped_log').processingTime(50)
-    //End Lotus
-    e.recipes.create.cutting('betterend:end_lotus_stripped_log', 'betterend:end_lotus_log').processingTime(50)
-    e.recipes.create.cutting('6x betterend:end_lotus_planks', 'betterend:end_lotus_stripped_log').processingTime(50)
-    //Lacugrove
-    e.recipes.create.cutting('betterend:lacugrove_stripped_log', 'betterend:lacugrove_log').processingTime(50)
-    e.recipes.create.cutting('6x betterend:lacugrove_planks', 'betterend:lacugrove_stripped_log').processingTime(50)
-    //Dragon Tree
-    e.recipes.create.cutting('betterend:dragon_tree_stripped_log', 'betterend:dragon_tree_log').processingTime(50)
-    e.recipes.create.cutting('6x betterend:dragon_tree_planks', 'betterend:dragon_tree_stripped_log').processingTime(50)
-    //Tenanea
-    e.recipes.create.cutting('betterend:tenanea_stripped_log', 'betterend:tenanea_log').processingTime(50)
-    e.recipes.create.cutting('6x betterend:tenanea_planks', 'betterend:tenanea_stripped_log').processingTime(50)
-    //Helix Tree
-    e.recipes.create.cutting('betterend:helix_tree_stripped_log', 'betterend:helix_tree_log').processingTime(50)
-    e.recipes.create.cutting('6x betterend:helix_tree_planks', 'betterend:helix_tree_stripped_log').processingTime(50)
-    //Umbrella Tree
-    e.recipes.create.cutting('betterend:umbrella_tree_stripped_log', 'betterend:umbrella_tree_log').processingTime(50)
-    e.recipes.create.cutting('6x betterend:umbrella_tree_planks', 'betterend:umbrella_tree_stripped_log').processingTime(50)
-    //Jellyshroom
-    e.recipes.create.cutting('betterend:jellyshroom_stripped_log', 'betterend:jellyshroom_log').processingTime(50)
-    e.recipes.create.cutting('6x betterend:jellyshroom_planks', 'betterend:jellyshroom_stripped_log').processingTime(50)
-    //Lucernia
-    e.recipes.create.cutting('betterend:lucernia_stripped_log', 'betterend:lucernia_log').processingTime(50)
-    e.recipes.create.cutting('6x betterend:lucernia_planks', 'betterend:lucernia_stripped_log').processingTime(50)
-    //Pream
-    e.recipes.create.cutting('phantasm:stripped_pream_log', 'phantasm:pream_log').processingTime(50)
-    e.recipes.create.cutting('6x phantasm:pream_planks', 'phantasm:stripped_pream_log').processingTime(50)
+    // e.recipes.create.cutting('betterend:mossy_glowshroom_stripped_log', 'betterend:mossy_glowshroom_log').processingTime(50)
+    // e.recipes.create.cutting('6x betterend:mossy_glowshroom_planks', 'betterend:mossy_glowshroom_stripped_log').processingTime(50)
+    // //Pythadendron
+    // e.recipes.create.cutting('betterend:pythadendron_stripped_log', 'betterend:pythadendron_fir_log').processingTime(50)
+    // e.recipes.create.cutting('6x betterend:pythadendron_planks', 'betterend:pythadendron_stripped_log').processingTime(50)
+    // //End Lotus
+    // e.recipes.create.cutting('betterend:end_lotus_stripped_log', 'betterend:end_lotus_log').processingTime(50)
+    // e.recipes.create.cutting('6x betterend:end_lotus_planks', 'betterend:end_lotus_stripped_log').processingTime(50)
+    // //Lacugrove
+    // e.recipes.create.cutting('betterend:lacugrove_stripped_log', 'betterend:lacugrove_log').processingTime(50)
+    // e.recipes.create.cutting('6x betterend:lacugrove_planks', 'betterend:lacugrove_stripped_log').processingTime(50)
+    // //Dragon Tree
+    // e.recipes.create.cutting('betterend:dragon_tree_stripped_log', 'betterend:dragon_tree_log').processingTime(50)
+    // e.recipes.create.cutting('6x betterend:dragon_tree_planks', 'betterend:dragon_tree_stripped_log').processingTime(50)
+    // //Tenanea
+    // e.recipes.create.cutting('betterend:tenanea_stripped_log', 'betterend:tenanea_log').processingTime(50)
+    // e.recipes.create.cutting('6x betterend:tenanea_planks', 'betterend:tenanea_stripped_log').processingTime(50)
+    // //Helix Tree
+    // e.recipes.create.cutting('betterend:helix_tree_stripped_log', 'betterend:helix_tree_log').processingTime(50)
+    // e.recipes.create.cutting('6x betterend:helix_tree_planks', 'betterend:helix_tree_stripped_log').processingTime(50)
+    // //Umbrella Tree
+    // e.recipes.create.cutting('betterend:umbrella_tree_stripped_log', 'betterend:umbrella_tree_log').processingTime(50)
+    // e.recipes.create.cutting('6x betterend:umbrella_tree_planks', 'betterend:umbrella_tree_stripped_log').processingTime(50)
+    // //Jellyshroom
+    // e.recipes.create.cutting('betterend:jellyshroom_stripped_log', 'betterend:jellyshroom_log').processingTime(50)
+    // e.recipes.create.cutting('6x betterend:jellyshroom_planks', 'betterend:jellyshroom_stripped_log').processingTime(50)
+    // //Lucernia
+    // e.recipes.create.cutting('betterend:lucernia_stripped_log', 'betterend:lucernia_log').processingTime(50)
+    // e.recipes.create.cutting('6x betterend:lucernia_planks', 'betterend:lucernia_stripped_log').processingTime(50)
+    // //Pream
+    // e.recipes.create.cutting('phantasm:stripped_pream_log', 'phantasm:pream_log').processingTime(50)
+    // e.recipes.create.cutting('6x phantasm:pream_planks', 'phantasm:stripped_pream_log').processingTime(50)
     //Undead
     e.recipes.create.cutting('evilcraft:undead_stripped_log', 'evilcraft:undead_log').processingTime(50)
     e.recipes.create.cutting('6x evilcraft:undead_planks', 'evilcraft:undead_stripped_log').processingTime(50)
@@ -3297,7 +3297,7 @@ ServerEvents.recipes(e => {
     e.recipes.create.cutting('undergarden:stripped_grongle_log', 'undergarden:grongle_log').processingTime(50)
     e.recipes.create.cutting('6x undergarden:grongle_planks', 'undergarden:stripped_grongle_log').processingTime(50)
     //Aurum
-    e.recipes.create.cutting('forbidden_arcanus:stripped_aurum_log', 'forbidden_arcanus:aurum_log').processingTime(50)
-    e.recipes.create.cutting('6x forbidden_arcanus:aurum_planks', 'forbidden_arcanus:stripped_aurum_log').processingTime(50)
+    // e.recipes.create.cutting('forbidden_arcanus:stripped_aurum_log', 'forbidden_arcanus:aurum_log').processingTime(50)
+    // e.recipes.create.cutting('6x forbidden_arcanus:aurum_planks', 'forbidden_arcanus:stripped_aurum_log').processingTime(50)
 
 })

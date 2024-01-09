@@ -1,0 +1,66 @@
+{
+	"weight": 5,
+	"quality": 1.5,
+	"dimensions": [
+		"overworld"
+	],
+	"unique": true,
+	"min_rarity": "rare",
+	"bonuses": [
+		{
+			"type": "apotheosis:enchantment",
+			"gem_class": {
+				"key": "melee_weapon",
+				"types": [
+					"sword",
+					"trident",
+					"heavy_weapon"
+				]
+			},
+			"enchantment": "sharpness",
+			"must_exist": true,
+			"values": {
+				"rare": 1,
+				"epic": 2,
+				"mythic": 3,
+				"ancient": 4
+			}
+		},
+		{
+			"type": "apotheosis:enchantment",
+			"gem_class": {
+				"key": "core_armor",
+				"types": [
+					"chestplate",
+					"leggings"
+				]
+			},
+			"enchantment": "protection",
+			"must_exist": true,
+			"values": {
+				"rare": 1,
+				"epic": 2,
+				"mythic": 3,
+				"ancient": 4
+			}
+		},
+		{
+			"type": "apotheosis:enchantment",
+			"gem_class": {
+				"key": "breaker",
+				"types": [
+					"shovel",
+					"pickaxe"
+				]
+			},
+			"enchantment": "fortune",
+			"must_exist": true,
+			"values": {
+				"rare": 1,
+				"epic": 2,
+				"mythic": 3,
+				"ancient": 4
+			}
+		}
+	]
+}

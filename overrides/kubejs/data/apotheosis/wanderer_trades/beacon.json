@@ -1,0 +1,23 @@
+{
+  "conditions": [{
+    "type": "apotheosis:module",
+    "module": "village"
+  }],
+  "type": "apotheosis:basic_trade",
+  "rare": true,
+  "input_1": {
+    "item": "minecraft:emerald",
+    "count": 64
+  },
+  "input_2": {
+    "item": "minecraft:emerald",
+    "count": 32
+  },
+  "output": {
+    "item": "minecraft:beacon",
+    "count": 1
+  },
+  "max_trades": 1,
+  "xp": 20,
+  "price_mult": 1.0
+}
