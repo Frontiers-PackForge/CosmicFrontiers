@@ -16,8 +16,8 @@
 			order: 9999
 			rotation: 0.0d
 			width: 9.438805970149254d
-			x: 5.500340136054405d
-			y: -3.833163265306137d
+			x: 5.498639455782303d
+			y: -5.324744897959196d
 		}
 		{
 			click: ""
@@ -62,6 +62,9 @@
 				id: "gtceu:hsse_hammer"
 				tag: {
 					Damage: 0
+					GT.Tool: {
+						Damage: 0
+					}
 				}
 			}
 			id: "4D96DE63E82D8EAA"
@@ -160,7 +163,18 @@
 				"&cDO NOT FALL ILL OR EXPERIENCE PROLONGED PERIODS OF DAMAGE&r."
 				"&lLISTEN. TO. YOUR. MIND.&r"
 			]
-			icon: "forbidden_arcanus:sanity_meter"
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
+				id: "sanitydim:garland"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "283EFEAA64080D4D"
 			rewards: [{
 				id: "7760E9131F4D5AE3"
@@ -247,14 +261,31 @@
 			]
 			id: "5693AA8924634F44"
 			rewards: [{
-				id: "156DF14D7C95421C"
+				id: "59BDAF6281D18447"
 				item: {
 					Count: 1b
 					id: "gtceu:steel_mining_hammer"
 					tag: {
-						Damage: 0
-						Modifier: "forbidden_arcanus:eternal"
-						Repair: 1b
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							AoEColumn: 1
+							AoELayer: 0
+							AoERow: 1
+							MaxAoEColumn: 1
+							MaxAoELayer: 0
+							MaxAoERow: 1
+						}
+						GT.Tool: {
+							Damage: 0
+							HarvestLevel: 3
+							MaxDamage: 1535
+							ToolSpeed: 6.0f
+						}
+						HideFlags: 2
+						Unbreakable: 1
+						display: {
+							Name: "{\"text\":\"Weirdly Durable Hammer\"}"
+						}
 					}
 				}
 				type: "item"
@@ -332,6 +363,9 @@
 						id: "gtceu:iron_hammer"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					id: "3CD086DF3214B1FB"
@@ -351,6 +385,9 @@
 						id: "gtceu:iron_wrench"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					id: "1FCEBF1D7C6D4F12"
@@ -370,6 +407,9 @@
 						id: "gtceu:iron_file"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					id: "53845C521325E232"
@@ -389,6 +429,9 @@
 						id: "gtceu:iron_saw"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					id: "4BCF77A595638786"
@@ -408,6 +451,9 @@
 						id: "gtceu:iron_screwdriver"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					id: "4A1A547444B29038"
@@ -427,6 +473,9 @@
 						id: "gtceu:iron_mortar"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					id: "32F31D914A67040F"
@@ -446,6 +495,9 @@
 						id: "gtceu:iron_wire_cutter"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					id: "3F6E0509177C8A6F"
@@ -725,7 +777,7 @@
 			description: [
 				"Your Verdict came with some bonus supplies trapped within your entry area."
 				""
-				"The Eternal Stella Can be used to make anything unbreakable. It's your choice what you do with it."
+				"The AUUUUUGH Can be used to make anything unbreakable. It's your choice what you do with it."
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -735,22 +787,6 @@
 			}
 			id: "06408883200FAC36"
 			optional: true
-			rewards: [
-				{
-					id: "38C38E77683DDD23"
-					item: {
-						Count: 1b
-						id: "forbidden_arcanus:eternal_stella"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "5704C28873320804"
-					item: "forbidden_arcanus:darkstone_upgrade_smithing_template"
-					type: "item"
-				}
-			]
 			subtitle: "100% The QB Page to unlock."
 			tasks: [{
 				id: "5C7A35C4DA090EDF"
@@ -760,6 +796,32 @@
 			title: "Full Clear Chapter Reward : An Eternal Dilemma"
 			x: 5.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				""
+				"\"&l&bFrontiers Monarch&r\" - Given to those who seek a true challenge, complete the pack in \"&l&eGlory Mode&r\" [NYI] - Will be Implemented in 1.X.0"
+				""
+				"\"&l&4Frontiers Dominator&r\" - Given to those who complete the pack with the &ndefault settings&r."
+				""
+				"Disabling Curated Configs/Difficulty Mods Will Invalidate this role."
+				""
+				"\"&l&aFrontiers Conqueror&r\" - Given to those who complete the pack with difficulty nerfs/changes"
+				"Your Prison was less hostile, your reward, partially hollow."
+			]
+			icon: "cosmiccore:donk"
+			id: "192AC19C353976D9"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&fCosmetic Discord Roles, And how to get them."
+			tasks: [{
+				id: "279E7A3098A3B6EF"
+				type: "checkmark"
+			}]
+			title: "Challenges/Victory Rewards"
+			x: 5.0d
+			y: -3.5d
 		}
 	]
 	title: "First Steps"

@@ -686,8 +686,8 @@
 			dependencies: ["2D7642351D7065A3"]
 			id: "54740829B8F28401"
 			tasks: [{
-				id: "26870A89429AC5FF"
-				item: "cosmiccore:engourged_spore"
+				id: "5AE5BAFFE2849CCF"
+				item: "cosmiccore:overloaded_pearls"
 				type: "item"
 			}]
 			x: -4.0d
@@ -709,8 +709,8 @@
 			dependencies: ["406B1095DAEC756F"]
 			id: "543805168AB3AE0D"
 			tasks: [{
-				id: "554BCF3FB9729F32"
-				item: "betternether:lucis_spore"
+				id: "3FB7C3AFA092B174"
+				item: "nethersdelight:propelpearl"
 				type: "item"
 			}]
 			x: -4.0d
@@ -1152,7 +1152,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["273905E80BA8D66D"]
+			dependencies: ["334FF51A5856D56F"]
 			id: "488B7EC1A4A15657"
 			tasks: [{
 				id: "680C5AE58C495DD7"
@@ -1406,6 +1406,58 @@
 			}]
 			x: -2.0d
 			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5F0FB7A2F012B47E"
+				"5E8833EBC718AE66"
+			]
+			id: "23110501EBFA6195"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Digital Beginnings "
+			tasks: [{
+				id: "2E726C09D7CA1113"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["273905E80BA8D66D"]
+			id: "334FF51A5856D56F"
+			subtitle: "This Ingot needs an EBF"
+			tasks: [{
+				id: "3778339A4F242B55"
+				item: "gtceu:electric_blast_furnace"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6AF31717A843B33C"]
+			id: "3E108A150B09D6D7"
+			tasks: [{
+				id: "0E0E293D0C037F9B"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			x: 4.75d
+			y: 1.75d
+		}
+		{
+			dependencies: ["75227B3B290C4F71"]
+			id: "7621523AEE196606"
+			subtitle: "Makes Sticks into Magnet Sticks lol"
+			tasks: [{
+				id: "76CEC508ECB06E5C"
+				item: "gtceu:lv_polarizer"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.5d
 		}
 	]
 	title: "Turn on the Lights - [LV]"

@@ -249,14 +249,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: [
-				"5580E63FE719DF53"
-				"3DECAF19BB8FE586"
-				"7230D99B541F664A"
-				"1736B53572205D7C"
-				"2816604F816E8D52"
-				"3387CFCFCE1AC164"
-			]
+			dependencies: ["42A86E7845F4CDF6"]
 			description: [
 				"The &6Seal of the Underworld&r is an one of the keys of the jailer. By proving your worth you can demand entry into the deeper parts of this world."
 				""
@@ -269,7 +262,7 @@
 				item: "nether_remastered:seal_of_the_underworld_item"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: 0.0d
 		}
 		{
@@ -748,6 +741,30 @@
 			}]
 			x: 8.0d
 			y: -1.75d
+		}
+		{
+			dependencies: [
+				"5580E63FE719DF53"
+				"3387CFCFCE1AC164"
+				"3DECAF19BB8FE586"
+				"7230D99B541F664A"
+				"1736B53572205D7C"
+				"2816604F816E8D52"
+			]
+			id: "42A86E7845F4CDF6"
+			tasks: [{
+				id: "202DADA7225C82CC"
+				item: {
+					Count: 1b
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:trial_of_the_overworld"
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
 		}
 	]
 	title: "Rising Pressure [Steam]"

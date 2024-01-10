@@ -1,0 +1,15 @@
+
+["Allowed Experience Fluids"]
+	#Add IDs of fluids you want the obelisk to support here in the form mod_id:fluid_name. Fluids have to be tagged forge:experience.
+	AllowedFluids = ["mob_grinding_utils:fluid_xp", "cofh_core:experience", "industrialforegoing:essence", "sophisticatedcore:xp_still", "enderio:xp_juice"]
+
+["Experience Obelisk Capacity"]
+	#The fluid capacity of the obelisk in mB. Default = 100000000. This is ~1072 levels' worth.
+	#Range: 20 ~ 2147483640
+	Capacity = 100000000
+
+["Enlightened Amulet Range"]
+	#The range of the enlightened amulet. Accepts decimals. Default = 8.0.
+	#Range: 1.0 ~ 32.0
+	Range = 8.0
+

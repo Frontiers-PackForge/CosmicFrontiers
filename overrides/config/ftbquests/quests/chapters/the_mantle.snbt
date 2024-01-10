@@ -75,28 +75,14 @@
 			dependencies: ["035D7CBD3AD14321"]
 			icon: "nethersdelight:propelpearl"
 			id: "3F54627296879917"
+			tasks: [{
+				id: "3CB079C1103F0D78"
+				item: "nethersdelight:propelpearl"
+				type: "item"
+			}]
 			title: "Flora of the Mantle"
 			x: -2.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["3F54627296879917"]
-			description: [
-				"These Reeds resemble a more barklike trait than their surface counterparts."
-				""
-				"Extracting them will yield a &anatural resin useful for circuit boards&r early on."
-				""
-				"These reeds can be used to yield paper as well when &adried out and cut&r."
-			]
-			id: "63D78D52A9D10C47"
-			subtitle: "Heat Resistant Filament"
-			tasks: [{
-				id: "04935300091EE108"
-				item: "betternether:nether_reed_stem"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -1.5d
 		}
 		{
 			dependencies: ["3F54627296879917"]
@@ -111,18 +97,6 @@
 			title: "Is this a plant?"
 			x: -4.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["3F54627296879917"]
-			id: "3888F3E02D9F1265"
-			subtitle: "Spore Catalyst Potential"
-			tasks: [{
-				id: "6E6DBADEC5C88449"
-				item: "betternether:lucis_spore"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 1.5d
 		}
 		{
 			dependencies: ["035D7CBD3AD14321"]
@@ -147,11 +121,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"3888F3E02D9F1265"
-				"63D78D52A9D10C47"
-				"53AD20A15F4EE0BE"
-			]
+			dependencies: ["53AD20A15F4EE0BE"]
 			id: "41449709FA81941B"
 			subtitle: "I would recommend returning once you start LV"
 			tasks: [{

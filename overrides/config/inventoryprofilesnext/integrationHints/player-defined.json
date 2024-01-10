@@ -19,12 +19,12 @@
     "com.lowdragmc.lowdraglib.gui.modular.ModularUIGuiContainer": {
         "buttonHints": {
             "MOVE_TO_CONTAINER": {
-                "horizontalOffset": 299,
-                "bottom": 88
+                "horizontalOffset": 85,
+                "bottom": 156
             },
             "SORT": {
-                "horizontalOffset": 310,
-                "bottom": 100
+                "horizontalOffset": 84,
+                "bottom": 156
             }
         }
     },

@@ -8,6 +8,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["4BF77C1C3449598E"]
 			id: "56557720CAFDA087"
 			shape: "octagon"
 			size: 5.0d
@@ -20,6 +21,12 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["06408883200FAC36"]
+			icon: {
+				Count: 1b
+				id: "forbidden_arcanus:eternal_stella"
+				tag: { }
+			}
 			id: "4BF77C1C3449598E"
 			tasks: [{
 				id: "6A13ADDD78EAEC52"

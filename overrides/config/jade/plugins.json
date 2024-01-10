@@ -114,6 +114,9 @@
   "ars_nouveau": {
     "mob_jar": true
   },
+  "autoleveling": {
+    "level": true
+  },
   "delightful": {
     "crop_progress": true
   },

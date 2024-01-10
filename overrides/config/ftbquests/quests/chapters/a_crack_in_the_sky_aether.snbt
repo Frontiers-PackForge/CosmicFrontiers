@@ -16,6 +16,9 @@
 				"This earth seems to have some barrier from letting me get to the lofty clouds above."
 				""
 				"I will investigate a way to break through this barrier. The best option is a stable gateway."
+				"However I do not have the materials."
+				"I will need to demand an audience with creatures of unexplored dimensions to muster enough casaulity to get what I need."
+				""
 				""
 				"&o&6A Portal made of blue mana alloy and my new MV circuits may be just enough to locate a safe location to establish connections with."
 			]
@@ -24,8 +27,14 @@
 			size: 2.5d
 			subtitle: "You can't keep me here forever"
 			tasks: [{
-				id: "032ACC05FA19FC5D"
-				item: "minecraft:barrier"
+				id: "5B12CDF9FDCAC92A"
+				item: {
+					Count: 1b
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:trial_of_the_skies"
+					}
+				}
 				type: "item"
 			}]
 			title: "A Way up"

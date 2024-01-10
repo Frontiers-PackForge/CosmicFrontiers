@@ -253,6 +253,17 @@
         "value": 100
       }
     },
+    "skilltree:exp_per_minute": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "ars_nouveau:ars_nouveau.perk.saturation": {
       "enabled": false,
       "min": {
@@ -407,6 +418,17 @@
         "value": 1024
       }
     },
+    "skilltree:regeneration": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "minecraft:generic.armor_toughness": {
       "enabled": true,
       "min": {
@@ -506,6 +528,17 @@
         "value": 1024
       }
     },
+    "skilltree:life_per_hit": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "obscure_api:parry": {
       "enabled": false,
       "min": {
@@ -561,6 +594,17 @@
         "value": 4
       }
     },
+    "skilltree:evasion": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 90,
+        "value": 90
+      }
+    },
     "ars_nouveau:ars_nouveau.perk.feather": {
       "enabled": false,
       "min": {
@@ -570,6 +614,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "skilltree:life_on_block": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "cold_sweat:world_temperature": {
@@ -625,6 +680,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "autoleveling:monster.explosion_damage_bonus": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
       }
     },
     "attributeslib:current_hp_damage": {
@@ -748,6 +814,28 @@
         "value": 1024
       }
     },
+    "skilltree:blocking": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 90,
+        "value": 90
+      }
+    },
+    "skilltree:stealth": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 90,
+        "value": 90
+      }
+    },
     "attributeslib:arrow_damage": {
       "enabled": false,
       "min": {
@@ -790,6 +878,17 @@
       "max": {
         "default": 10000,
         "value": 10000
+      }
+    },
+    "autoleveling:monster.projectile_damage_bonus": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
       }
     },
     "ars_nouveau:ars_nouveau.perk.warding": {
