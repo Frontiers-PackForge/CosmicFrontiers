@@ -513,6 +513,102 @@ ServerEvents.recipes(e => {
         M: 'gtceu:mana_steel_plate',
         H: '#forge:tools/hammers'
     })
+    //Elementium Helmet
+    e.remove({output:'botania:elementium_helmet'})
+    e.shaped('botania:elementium_helmet', [
+        'MMM',
+        'MHM',
+        '   '
+    ], {
+        M: 'gtceu:elementium_plate',
+        H: '#forge:tools/hammers'
+    })
+    //Elementium Chestplate
+    e.remove({output:'botania:elementium_chestplate'})
+    e.shaped('botania:elementium_chestplate', [
+        'MHM',
+        'MMM',
+        'MMM'
+    ], {
+        M: 'gtceu:elementium_plate',
+        H: '#forge:tools/hammers'
+    })
+    //Elementium Leggings
+    e.remove({output:'botania:elementium_leggings'})
+    e.shaped('botania:elementium_leggings', [
+        'MMM',
+        'MHM',
+        'M M'
+    ], {
+        M: 'gtceu:elementium_plate',
+        H: '#forge:tools/hammers'
+    })
+    //Elementium Boots
+    e.remove({output:'botania:elementium_boots'})
+    e.shaped('botania:elementium_boots', [
+        'M M',
+        'MHM',
+        '   '
+    ], {
+        M: 'gtceu:elementium_plate',
+        H: '#forge:tools/hammers'
+    })
+    //Terrasteel Helmet
+    e.remove({output:'botania:terrasteel_helmet'})
+    e.shaped('botania:terrasteel_helmet', [
+        'LRL',
+        'TMT',
+        'FTH'
+    ], {
+        L: 'botania:livingwood_twig',
+        T: 'gtceu:terrasteel_plate',
+        F: '#forge:tools/files',
+        H: '#forge:tools/hammers',
+        R: 'botania:rune_spring',
+        M: 'botania:manasteel_helmet'
+    })
+    //Terrasteel Chestplate
+    e.remove({output:'botania:terrasteel_chestplate'})
+    e.shaped('botania:terrasteel_chestplate', [
+        'LRL',
+        'TMT',
+        'FTH'
+    ], {
+        L: 'botania:livingwood_twig',
+        T: 'gtceu:terrasteel_plate',
+        F: '#forge:tools/files',
+        H: '#forge:tools/hammers',
+        R: 'botania:rune_summer',
+        M: 'botania:manasteel_chestplate'
+    })
+    //Terrasteel Leggings
+    e.remove({output:'botania:terrasteel_leggings'})
+    e.shaped('botania:terrasteel_leggings', [
+        'LRL',
+        'TMT',
+        'FTH'
+    ], {
+        L: 'botania:livingwood_twig',
+        T: 'gtceu:terrasteel_plate',
+        F: '#forge:tools/files',
+        H: '#forge:tools/hammers',
+        R: 'botania:rune_autumn',
+        M: 'botania:manasteel_leggings'
+    })
+    //Terrasteel Boots
+    e.remove({output:'botania:terrasteel_boots'})
+    e.shaped('botania:terrasteel_boots', [
+        'LRL',
+        'TMT',
+        'FTH'
+    ], {
+        L: 'botania:livingwood_twig',
+        T: 'gtceu:terrasteel_plate',
+        F: '#forge:tools/files',
+        H: '#forge:tools/hammers',
+        R: 'botania:rune_winter',
+        M: 'botania:manasteel_boots'
+    })
     //Manasteel Pickaxe
     e.remove({output:'botania:manasteel_pick'})
     e.shaped('botania:manasteel_pick', [
@@ -587,6 +683,158 @@ ServerEvents.recipes(e => {
         H: '#forge:tools/hammers',
         F: '#forge:tools/files'
     })
+    //Elementium Pickaxe
+    e.remove({output:'botania:elementium_pickaxe'})
+    e.shaped('botania:elementium_pickaxe', [
+        'MII',
+        'HTF',
+        ' T '
+    ], {
+        M: 'gtceu:elementium_plate',
+        I: 'botania:elementium_ingot',
+        T: 'botania:dreamwood_twig',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    })
+    //Elementium Shovel
+    e.remove({output:'botania:elementium_shovel'})
+    e.shaped('botania:elementium_shovel', [
+        ' M ',
+        'HTF',
+        ' T '
+    ], {
+        M: 'gtceu:elementium_plate',
+        T: 'botania:dreamwood_twig',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    })
+    //Elementium Axe
+    e.remove({output:'botania:elementium_axe'})
+    e.shaped('botania:elementium_axe', [
+        'MIF',
+        'MT ',
+        'HT '
+    ], {
+        M: 'gtceu:elementium_plate',
+        I: 'botania:elementium_ingot',
+        T: 'botania:dreamwood_twig',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    })
+    //Elementium Hoe
+    e.remove({output:'botania:elementium_hoe'})
+    e.shaped('botania:elementium_hoe', [
+        'MI ',
+        'HTF',
+        ' T '
+    ], {
+        M: 'gtceu:elementium_plate',
+        I: 'botania:elementium_ingot',
+        T: 'botania:dreamwood_twig',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    })
+    //Elementium Sword
+    e.remove({output:'botania:elementium_sword'})
+    e.shaped('botania:elementium_sword', [
+        ' M ',
+        'HMF',
+        ' T '
+    ], {
+        M: 'gtceu:elementium_plate',
+        T: 'botania:dreamwood_twig',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    })
+    //Elementium Shears
+    e.remove({output:'botania:elementium_shears'})
+    e.shaped('botania:elementium_shears', [
+        'HM ',
+        'MF ',
+        '   '
+    ], {
+        M: 'gtceu:elementium_plate',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    })
+    //Terra Shatterer
+    e.remove({output:'botania:terra_pick'})
+    e.shaped('botania:terra_pick', [
+        'PTP',
+        'SWS',
+        'HWF'
+    ], {
+        S: 'gtceu:terrasteel_plate',
+        T: 'botania:mana_tablet',
+        P: 'botania:terrasteel_ingot',
+        W: 'botania:livingwood_twig',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    })
+    //Terra Blade
+    e.remove({output:'botania:terra_sword'})
+    e.shaped('botania:terra_sword', [
+        ' M ',
+        'HMF',
+        ' T '
+    ], {
+        M: 'gtceu:terrasteel_plate',
+        T: 'botania:livingwood_twig',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    })
+    //Terra Truncator
+    e.remove({output:'botania:terra_axe'})
+    e.shaped('botania:terra_axe', [
+        'SPG',
+        'SWP',
+        'HWF'
+    ], {
+        S: 'gtceu:terrasteel_plate',
+        G: 'gtceu:glowstone_plate',
+        P: 'botania:terrasteel_ingot',
+        W: 'botania:livingwood_twig',
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files'
+    })
+    //Thorn Chakram
+    e.remove({output:'botania:thorn_chakram'})
+    e.shaped('botania:thorn_chakram', [
+        'VVV',
+        'VTV',
+        'VVV'
+    ], {
+        V: 'minecraft:vine',
+        T: 'gtceu:terrasteel_plate'
+    })
+    //Thundercaller
+    e.remove({output:'botania:thunder_sword'})
+    e.shaped('botania:thunder_sword', [
+        ' HE',
+        'ADF',
+        'TA '
+    ], {
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files',
+        E: 'gtceu:elementium_plate',
+        A: 'botania:ender_air_bottle',
+        D: 'botania:mana_diamond',
+        T: 'botania:terra_sword'
+    })
+    //Starcaller
+    e.remove({output:'botania:star_sword'})
+    e.shaped('botania:star_sword', [
+        ' HE',
+        'ADF',
+        'TA '
+    ], {
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files',
+        E: 'gtceu:elementium_plate',
+        A: 'botania:ender_air_bottle',
+        D: 'botania:dragonstone',
+        T: 'botania:terra_sword'
+    })
     //Manaweave Cowl
     e.remove({output:'botania:manaweave_helmet'})
     e.shaped('botania:manaweave_helmet', [
@@ -652,6 +900,20 @@ ServerEvents.recipes(e => {
         T: 'botania:livingwood_twig',
         S: 'botania:mana_string',
         R: 'gtceu:aluminium_ring'
+    })
+    //Crystal Bow
+    e.remove({output:'botania:crystal_bow'})
+    e.shaped('botania:crystal_bow', [
+        'HDS',
+        'TRS',
+        'FDS'
+    ], {
+        H: '#forge:tools/hammers',
+        F: '#forge:tools/files',
+        T: 'botania:livingwood_twig',
+        S: 'botania:mana_string',
+        R: 'gtceu:stainless_steel_ring',
+        D: 'botania:dragonstone'
     })
     //Mana Tablet
     e.remove({output:'botania:mana_tablet'})
