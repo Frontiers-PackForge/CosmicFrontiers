@@ -15,4 +15,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_BOLT_SCREW,
         )
 
+    event.create('terrasteel')
+        .color(0x55f609)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE
+        )
+
+    event.create('elementium')
+        .color(0xf472c6)
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE
+        )
+
     })
