@@ -920,6 +920,11 @@
 		}
 		{
 			dependencies: ["0490B78AADE4E955"]
+			description: [
+				"Check out mixing raw rubber pulp + sulfur dust for liquid rubber!"
+				""
+				"It's very useful for coating cables and other things."
+			]
 			id: "07EDE8AE061AF973"
 			shape: "gear"
 			subtitle: "Easier Rubber"

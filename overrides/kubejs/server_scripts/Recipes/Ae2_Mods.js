@@ -145,8 +145,47 @@ machineTier.forEach((tier, index) =>{
 })
 
 
+let ae2Components = [
+  '1',
+  '4',
+  '16',
+  '64',
+  '256'
+]
 
+ae2Components.forEach(ae2comp => {
+  event.shapeless(`ae2:item_storage_cell_${ae2comp}k`, [ 
+    'ae2:item_cell_housing',
+    `ae2:cell_component_${ae2comp}k`
 
+  ])
+  event.shapeless(`ae2:fluid_storage_cell_${ae2comp}k`, [ 
+    'ae2:fluid_cell_housing',
+    `ae2:cell_component_${ae2comp}k`
+
+  ])
+  event.shapeless(`appbot:mana_storage_cell_${ae2comp}k`, [ 
+    'appbot:mana_cell_housing',
+    `ae2:cell_component_${ae2comp}k`
+
+  ])
+  //Now the Mega Cells
+  event.shapeless(`megacells:item_storage_cell_${ae2comp}m`, [ 
+    'megacells:mega_item_cell_housing',
+    `megacells:cell_component_${ae2comp}m`
+
+  ])
+  event.shapeless(`megacells:fluid_storage_cell_${ae2comp}m`, [ 
+    'megacells:mega_fluid_cell_housing',
+    `megacells:cell_component_${ae2comp}m`
+
+  ])
+  event.shapeless(`megacells:mana_storage_cell_${ae2comp}m`, [ 
+    'megacells:mega_mana_cell_housing',
+    `megacells:cell_component_${ae2comp}m`
+
+  ])
+})
 
 
 

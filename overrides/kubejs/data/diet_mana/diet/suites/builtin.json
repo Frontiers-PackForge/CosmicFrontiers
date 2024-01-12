@@ -16,8 +16,178 @@
         {
           "groups": ["mana_group"],
           "match": "all",
-          "above": 0.8,
+          "above": 0.25,
           "below": 1.0
+        }
+      ]
+    },
+    {
+      "attributes": [
+        {
+          "name": "ars_nouveau:ars_nouveau.perk.max_mana",
+          "operation": "add",
+          "amount": 100
+        }
+      ],
+      "conditions": [
+        {
+          "groups": ["mana_group"],
+          "match": "all",
+          "above": 0.1,
+          "below": 0.2
+        }
+      ]
+    },
+    {
+      "attributes": [
+        {
+          "name": "ars_nouveau:ars_nouveau.perk.max_mana",
+          "operation": "add",
+          "amount": 200
+        }
+      ],
+      "conditions": [
+        {
+          "groups": ["mana_group"],
+          "match": "all",
+          "above": 0.2,
+          "below": 0.3
+        }
+      ]
+    },
+    {
+      "attributes": [
+        {
+          "name": "ars_nouveau:ars_nouveau.perk.max_mana",
+          "operation": "add",
+          "amount": 300
+        }
+      ],
+      "conditions": [
+        {
+          "groups": ["mana_group"],
+          "match": "all",
+          "above": 0.3,
+          "below": 0.4
+        }
+      ]
+    },
+    {
+      "attributes": [
+        {
+          "name": "ars_nouveau:ars_nouveau.perk.max_mana",
+          "operation": "add",
+          "amount": 400
+        }
+      ],
+      "conditions": [
+        {
+          "groups": ["mana_group"],
+          "match": "all",
+          "above": 0.4,
+          "below": 0.5
+        }
+      ]
+    },
+    {
+      "attributes": [
+        {
+          "name": "ars_nouveau:ars_nouveau.perk.max_mana",
+          "operation": "add",
+          "amount": 500
+        }
+      ],
+      "conditions": [
+        {
+          "groups": ["mana_group"],
+          "match": "all",
+          "above": 0.5,
+          "below": 0.6
+        }
+      ]
+    },
+    {
+      "attributes": [
+        {
+          "name": "ars_nouveau:ars_nouveau.perk.max_mana",
+          "operation": "add",
+          "amount": 600
+        }
+      ],
+      "conditions": [
+        {
+          "groups": ["mana_group"],
+          "match": "all",
+          "above": 0.6,
+          "below": 0.7
+        }
+      ]
+    },
+    {
+      "attributes": [
+        {
+          "name": "ars_nouveau:ars_nouveau.perk.max_mana",
+          "operation": "add",
+          "amount": 700
+        }
+      ],
+      "conditions": [
+        {
+          "groups": ["mana_group"],
+          "match": "all",
+          "above": 0.7,
+          "below": 0.8
+        }
+      ]
+    },
+    {
+      "attributes": [
+        {
+          "name": "ars_nouveau:ars_nouveau.perk.max_mana",
+          "operation": "add",
+          "amount": 800
+        }
+      ],
+      "conditions": [
+        {
+          "groups": ["mana_group"],
+          "match": "all",
+          "above": 0.7,
+          "below": 0.8
+        }
+      ]
+    },
+    {
+      "attributes": [
+        {
+          "name": "ars_nouveau:ars_nouveau.perk.max_mana",
+          "operation": "add",
+          "amount": 900
+        }
+      ],
+      "conditions": [
+        {
+          "groups": ["mana_group"],
+          "match": "all",
+          "above": 0.8,
+          "below": 0.9
+        }
+      ]
+    },
+    {
+      "attributes": [
+        {
+          "name": "ars_nouveau:ars_nouveau.perk.max_mana",
+          "operation": "add",
+          "amount": 1000
+        }
+      ],
+      "conditions": [
+        {
+          "groups": ["mana_group"],
+          "match": "all",
+          "above": 0.9,
+          "below": 1
         }
       ]
     }

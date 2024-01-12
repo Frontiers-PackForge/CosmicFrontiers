@@ -3,8 +3,8 @@
     "entries": [],
     "isWhitelist": false
   },
-  "trackCount": 32,
-  "resetOnDeath": true,
+  "trackCount": 64,
+  "resetOnDeath": false,
   "limitProgressionToSurvival": false,
   "minFoodsToActivate": 0,
   "benefits": [
@@ -32,7 +32,7 @@
     {
       "threshold": 10,
       "benefit": {
-        "effect": "minecraft:speed",
+        "effect": "cold_sweat:insulated",
         "value": 0
       }
     },
@@ -46,8 +46,8 @@
     {
       "threshold": 18,
       "benefit": {
-        "effect": "minecraft:strength",
-        "value": 1
+        "effect": "cold_sweat:insulated",
+        "value": 2
       }
     },
     {

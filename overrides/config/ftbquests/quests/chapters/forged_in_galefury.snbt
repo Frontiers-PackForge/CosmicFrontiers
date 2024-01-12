@@ -1,28 +1,1108 @@
 {
+	autofocus_id: "12E540563DD5C5A9"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "forged_in_galefury"
 	group: "4135A2BA7EBD719E"
-	icon: {
-		Count: 1b
-		id: "botania:manasteel_ingot"
-		tag: { }
-	}
+	icon: "gtceu:etherforged_steel_ingot"
 	id: "2AF6C950A3B12568"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		id: "466C20EACAEF3394"
-		shape: "hexagon"
-		size: 2.5d
-		subtitle: "NYI - Thanks for Playing so far!"
-		tasks: [{
-			id: "35659F274F2AE61C"
-			item: "minecraft:barrier"
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["5FFA303333C489F7"]
+			id: "466C20EACAEF3394"
+			shape: "hexagon"
+			size: 2.5d
+			subtitle: "Welcome to MV"
+			tasks: [{
+				id: "5B35A090EF46549B"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			title: "Voltage, UP!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["124FCFE63B0E5531"]
+			id: "7DB0DC421621FC05"
+			tasks: [{
+				id: "022A287715806A51"
+				item: "gtceu:mv_electrolyzer"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["124FCFE63B0E5531"]
+			description: [
+				"You can now Extrude a lot of crafting components in one step at MV."
+				""
+				"Some notable ones are"
+				""
+				"Rotors, Rings, Rods"
+			]
+			id: "18EADC9CAB943BF5"
+			subtitle: "Oh hey, easier recipes yet again!"
+			tasks: [{
+				id: "2DCACEF9042CCE2C"
+				item: "gtceu:mv_extruder"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["552C016EDCDE02B2"]
+			id: "0DA958E38153F414"
+			shape: "hexagon"
+			tasks: [{
+				id: "1B767105E5FC0C46"
+				item: "gtceu:mv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"213249274A0897C0"
+				"246B6FBFDDAE6748"
+			]
+			id: "3B327B774ABA8783"
+			shape: "hexagon"
+			tasks: [{
+				id: "68E8663C7C8589C4"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			id: "2CB636C76965CC37"
+			subtitle: "Yup, This quest is here twice."
+			tasks: [{
+				id: "43D1C50AD5406FD3"
+				item: "gtceu:mv_chemical_bath"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			id: "246B6FBFDDAE6748"
+			shape: "hexagon"
+			tasks: [{
+				id: "5FBECF1439FBD506"
+				item: "gtceu:mv_assembler"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4573B786F0ED6565"]
+			id: "00747791826B2FB8"
+			shape: "hexagon"
+			size: 2.5d
+			tasks: [{
+				id: "699ABF22006086C6"
+				item: "gtceu:mv_circuit_assembler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["658FAEAC28F212F2"]
+			id: "2292717C02E9CEBA"
+			subtitle: "Hot! Hot!"
+			tasks: [{
+				id: "4E6BF31465AFE0DE"
+				item: "gtceu:kanthal_hot_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			id: "0BAB0C4773CFFCA7"
+			tasks: [{
+				id: "14665C3F1D66FED5"
+				item: "gtceu:mv_mixer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0BAB0C4773CFFCA7"]
+			id: "658FAEAC28F212F2"
+			tasks: [{
+				id: "2C83F42FE2564BC0"
+				item: "gtceu:kanthal_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"2CB636C76965CC37"
+				"2292717C02E9CEBA"
+			]
+			id: "213249274A0897C0"
+			tasks: [{
+				id: "25427045895684FC"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["246B6FBFDDAE6748"]
+			id: "552C016EDCDE02B2"
+			tasks: [{
+				id: "2EBEE2E574DBDE8A"
+				item: "gtceu:mv_voltage_coil"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3B327B774ABA8783"
+				"0DA958E38153F414"
+			]
+			id: "12E540563DD5C5A9"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "26E624A6297FD332"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"12E540563DD5C5A9"
+				"7CA92A5D7A2300BC"
+			]
+			id: "44372CC42BD4ABEF"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "One Stable Alloy"
+			tasks: [{
+				id: "37EC5F8BF50EEF11"
+				item: "gtceu:etherforged_steel_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["44372CC42BD4ABEF"]
+			id: "2823B3BAEF820B50"
+			shape: "hexagon"
+			size: 2.5d
+			tasks: [{
+				id: "31A6572E4A197DC7"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			description: [
+				"Silicon Boules were craftable in LV, but you couldn't do anything with them until now."
+				""
+				"Let's focus on processing these down into usable circuits, as well as an MV Circuit Assembler."
+			]
+			id: "762AA097C2433B34"
+			subtitle: "Processing better circuits"
+			tasks: [{
+				id: "25CDA0138DBC2616"
+				item: "gtceu:silicon_boule"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7DB0DC421621FC05"]
+			id: "2522EC98EC5F1B73"
+			shape: "gear"
+			tasks: [{
+				id: "03E56265A87A9DAE"
+				item: "gtceu:gallium_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["762AA097C2433B34"]
+			id: "4EEB3A7642876547"
+			tasks: [{
+				id: "04191892D073AA6B"
+				item: "gtceu:mv_cutter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4EEB3A7642876547"]
+			id: "7C0CCAFCC3B869C2"
+			tasks: [{
+				id: "054AE86A70BBB0B7"
+				item: "gtceu:silicon_wafer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			hide_dependency_lines: true
+			id: "5C15FE49888BC50B"
+			tasks: [{
+				id: "36B84A3FA1146D92"
+				item: "gtceu:redstone_lens"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			hide_dependency_lines: true
+			id: "1A6BD129C2E65A35"
+			tasks: [{
+				id: "5B8DB8E3CEFA0E52"
+				item: "gtceu:emerald_lens"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5C15FE49888BC50B"
+				"7C0CCAFCC3B869C2"
+			]
+			id: "2122669781258E24"
+			tasks: [{
+				id: "00EF077C2B236751"
+				item: "gtceu:ilc_wafer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"1A6BD129C2E65A35"
+				"7C0CCAFCC3B869C2"
+			]
+			id: "2C4D1AD906D66496"
+			tasks: [{
+				id: "3231B91DDCDF6958"
+				item: "gtceu:ram_wafer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"0DB94D5D36DDB48E"
+				"31AFAD2FD1E20E11"
+				"63583107A604973F"
+			]
+			id: "0043370513B224E8"
+			tasks: [{
+				id: "27DD8486356EAE70"
+				item: "gtceu:good_integrated_circuit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"0282FBA66372D27F"
+				"0043370513B224E8"
+			]
+			id: "4573B786F0ED6565"
+			tasks: [{
+				id: "115C9F15C482E6C8"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2122669781258E24"]
+			id: "63583107A604973F"
+			tasks: [{
+				id: "05C6B907E1809AD4"
+				item: "gtceu:ilc_chip"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2C4D1AD906D66496"]
+			id: "0DB94D5D36DDB48E"
+			tasks: [{
+				id: "17B6ED5417CBC944"
+				item: "gtceu:ram_chip"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["63583107A604973F"]
+			id: "31AFAD2FD1E20E11"
+			tasks: [{
+				id: "02AC8EB4A736324B"
+				item: "gtceu:basic_integrated_circuit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["124FCFE63B0E5531"]
+			id: "51E0E978CB9D54FD"
+			subtitle: "You probably want this"
+			tasks: [{
+				id: "5D5E1DE00232DEE2"
+				item: "gtceu:mv_lathe"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			hide_dependency_lines: true
+			id: "2F69B0BBDBFFF588"
+			tasks: [{
+				id: "6726D968B91CC877"
+				item: "gtceu:silicon_hot_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2F69B0BBDBFFF588"
+				"6CF5091019AA768B"
+			]
+			id: "336D03FB8C8EF1CC"
+			tasks: [{
+				id: "3B5DDF117BBD0974"
+				item: "gtceu:silicon_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["336D03FB8C8EF1CC"]
+			id: "18D417A2E0D50FDB"
+			tasks: [{
+				id: "16FCE719973D05D9"
+				item: "gtceu:silicon_plate"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"53ECAB6ADA8126F9"
+				"18D417A2E0D50FDB"
+			]
+			id: "0282FBA66372D27F"
+			tasks: [{
+				id: "09F79FE76BF64F8C"
+				item: "gtceu:transistor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			icon: "gtceu:banded_iron_gear"
+			id: "124FCFE63B0E5531"
+			tasks: [{
+				id: "50C33901A547CC79"
+				type: "checkmark"
+			}]
+			title: "Yet More Useful Machines"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18EADC9CAB943BF5"]
+			id: "339B108584854A8C"
+			tasks: [{
+				id: "25BFB9ECCAE6FACE"
+				item: "gtceu:rod_extruder_mold"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18EADC9CAB943BF5"]
+			id: "47208DE3C3EC5E7B"
+			tasks: [{
+				id: "18905DCA8885637A"
+				item: "gtceu:rotor_extruder_mold"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["18EADC9CAB943BF5"]
+			id: "3814303F342C68F1"
+			tasks: [{
+				id: "552B1EB99B11E460"
+				item: "gtceu:small_gear_extruder_mold"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["18EADC9CAB943BF5"]
+			id: "494ABA86A18B783D"
+			tasks: [{
+				id: "156289A3D73039A7"
+				item: "gtceu:gear_extruder_mold"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["18EADC9CAB943BF5"]
+			id: "1C43736F80487881"
+			tasks: [{
+				id: "62FC9C07AB1BA640"
+				item: "gtceu:ring_extruder_mold"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2031072CF3844102"
+				"43C5977655A4460F"
+			]
+			id: "53ECAB6ADA8126F9"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "0C00FFF33CFAB846"
+				item: "gtceu:polyethylene_bucket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"43C5977655A4460F"
+				"7A7FF903F9600094"
+			]
+			description: [
+				"You have a few options to make Ethylene"
+				""
+				"The first and most likely more accessable for you is Ethanol + Sulfuric Acid."
+				"This is really only relevant because you have been producing Ethanol from Nether flora since LV"
+				""
+				"The Second Option is Steam Cracking Oils to make Ethylene, this will become your main source later on. but for now you can ignore it if you wish."
+				""
+				"There's also Glycerol, but that's better saved for elsewhere."
+			]
+			icon: "gtceu:ethylene_bucket"
+			id: "2031072CF3844102"
+			subtitle: "How to get your plastic"
+			tasks: [{
+				id: "2BB4D3CE1BB75E01"
+				type: "checkmark"
+			}]
+			title: "Ethylene"
+			x: -5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["124FCFE63B0E5531"]
+			id: "43C5977655A4460F"
+			tasks: [{
+				id: "490A756FB22405E8"
+				item: "gtceu:mv_chemical_reactor"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4D9425267F0C2AB4"]
+			icon: {
+				Count: 1b
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:sulfur_trioxide"
+					}
+				}
+			}
+			id: "310BA3D469D11050"
+			tasks: [
+				{
+					id: "769F4415F2B3F770"
+					item: {
+						Count: 1b
+						id: "gtceu:fluid_cell"
+						tag: {
+							Fluid: {
+								Amount: 1000
+								FluidName: "gtceu:sulfur_trioxide"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "21C862AC5682B5D2"
+					optional_task: true
+					title: "Checkmark - SKIP ME!"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:sulfur_dioxide"
+					}
+				}
+			}
+			id: "4D9425267F0C2AB4"
+			tasks: [
+				{
+					id: "112CFAF0DA51C1C2"
+					item: {
+						Count: 1b
+						id: "gtceu:fluid_cell"
+						tag: {
+							Fluid: {
+								Amount: 1000
+								FluidName: "gtceu:sulfur_dioxide"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2941220DC9EBB8F8"
+					optional_task: true
+					title: "Checkmark - SKIP ME!"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["310BA3D469D11050"]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1b
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:sulfuric_acid"
+					}
+				}
+			}
+			id: "7A7FF903F9600094"
+			tasks: [
+				{
+					id: "4ADC335F03D8C17C"
+					item: {
+						Count: 1b
+						id: "gtceu:fluid_cell"
+						tag: {
+							Fluid: {
+								Amount: 1000
+								FluidName: "gtceu:sulfuric_acid"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "391A86BDB2A3C2EF"
+					optional_task: true
+					title: "Checkmark - SKIP ME!"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			id: "6CF5091019AA768B"
+			subtitle: "Yup, This quest is here twice."
+			tasks: [{
+				id: "2897B121000936A5"
+				item: "gtceu:mv_chemical_bath"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["08683B015FBC10F2"]
+			id: "2B844CDAF9BD63C4"
+			shape: "hexagon"
+			size: 2.5d
+			subtitle: "Welcome to MV, Magic Style!"
+			tasks: [{
+				id: "086C86829DF7C9D5"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			title: "Mana, UP!"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0D9C29134B9081A6"
+				"65DF6E9AB9969803"
+			]
+			id: "067F1B88CE39C61C"
+			tasks: [{
+				id: "6A834A8E13F84431"
+				item: "botania:diluted_pool"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["067F1B88CE39C61C"]
+			id: "0A4982294F79EC64"
+			tasks: [{
+				id: "4A47332A9A8C3E5D"
+				item: "botania:mana_diamond"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0A4982294F79EC64"]
+			id: "235A2AE1AC57A5E3"
+			tasks: [{
+				id: "79332F366C76F3BD"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B844CDAF9BD63C4"]
+			id: "42BDF6C3C7DBE2E5"
+			tasks: [
+				{
+					id: "577D15F4F31F5D17"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "botania:manasteel_helmet"
+						tag: {
+							Damage: 0
+							affix_data: {
+								sockets: 0
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1283B48F14F4F627"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "botania:manasteel_chestplate"
+						tag: {
+							Damage: 0
+							affix_data: {
+								sockets: 0
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "47E807D5A558E946"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "botania:manasteel_leggings"
+						tag: {
+							Damage: 0
+							affix_data: {
+								sockets: 0
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46778B2B7740E5B6"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "botania:manasteel_boots"
+						tag: {
+							Damage: 0
+							affix_data: {
+								sockets: 0
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"415261B39AD0EFA8"
+				"2B844CDAF9BD63C4"
+				"43554DF922268633"
+				"325D1D73A1414437"
+			]
+			id: "18E59533B89D6005"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "47C0EBF50BAF8969"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2B844CDAF9BD63C4"]
+			id: "0D9C29134B9081A6"
+			shape: "hexagon"
+			tasks: [{
+				id: "1B747B8160E18458"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0D9C29134B9081A6"]
+			id: "65DF6E9AB9969803"
+			tasks: [
+				{
+					id: "38445BFD1545AB2C"
+					item: "botania:livingrock"
+					type: "item"
+				}
+				{
+					id: "347AE79E9AB0D143"
+					item: "botania:livingwood_log"
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["235A2AE1AC57A5E3"]
+			id: "43554DF922268633"
+			tasks: [{
+				id: "4D2B59B1CFAD8F17"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"18E59533B89D6005"
+				"4859FC0AAFBC1C06"
+				"62C2245ABBF054F3"
+			]
+			id: "673AB6E8C654D518"
+			tasks: [{
+				id: "644698C7AD81EDC5"
+				item: "gtceu:zanalate_compound_dust"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["235C063EE75D22F0"]
+			icon: "aether:zanite_gemstone"
+			id: "4859FC0AAFBC1C06"
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["33757BC3FFE5AD18"]
+			id: "167D8002070C9B69"
+			tasks: [{
+				id: "5C5FC0D17FCEDE80"
+				item: "gtceu:terrasteel_dust"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["067F1B88CE39C61C"]
+			id: "5B43AF700AA037C4"
+			tasks: [{
+				id: "182C74716BD399ED"
+				item: "botania:mana_pearl"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["235C063EE75D22F0"]
+			id: "62C2245ABBF054F3"
+			tasks: [{
+				id: "3F587CBAD4D7F00D"
+				item: "aether:ambrosium_shard"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			icon: "aether:aether_portal_frame"
+			id: "235C063EE75D22F0"
+			shape: "hexagon"
+			tasks: [{
+				dimension: "aether:the_aether"
+				id: "4EB59475591A5728"
+				type: "dimension"
+			}]
+			title: "Been to the Aether yet?"
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["167D8002070C9B69"]
+			id: "7CA92A5D7A2300BC"
+			tasks: [{
+				id: "34013B5E1CF65669"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["235A2AE1AC57A5E3"]
+			id: "325D1D73A1414437"
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Mana Conversion Pt.1"
+			tasks: [{
+				id: "7D460C26457D5491"
+				item: "botania:blacker_lotus"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["43554DF922268633"]
+			icon: "gtceu:mana_simulator"
+			id: "22EF1AEF0213682D"
+			subtitle: "Basic Mana Simulation"
+			tasks: [
+				{
+					id: "051F3158DA8AB3AD"
+					item: "gtceu:mana_simulator"
+					type: "item"
+				}
+				{
+					id: "70A2AB42FD1F44D4"
+					item: "gtceu:mv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "1A4AF3085B8CF88B"
+					item: "botania:mana_glass"
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5B43AF700AA037C4"]
+			icon: "gtceu:raw_mana_crystal_slurry_bucket"
+			id: "437582A970E60E97"
+			tasks: [
+				{
+					id: "223094C8A43FE68B"
+					item: "gtceu:raw_mana_crystal_slurry_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "16E335A4FAC3B319"
+					optional_task: true
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			id: "3FAA46555060C5BD"
+			tasks: [
+				{
+					id: "625D828AEB569379"
+					item: "gtceu:raw_mana_crystal_slurry_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "5BCA4475CB86D4F0"
+					optional_task: true
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 15.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["437582A970E60E97"]
+			icon: "gtceu:prepared_terrasteel_bucket"
+			id: "6BE64F9BD1F1F303"
+			tasks: [
+				{
+					id: "366C720AC1665255"
+					item: "gtceu:prepared_terrasteel_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "299A0A9D5C4563B5"
+					optional_task: true
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"6BE64F9BD1F1F303"
+				"673AB6E8C654D518"
+			]
+			icon: "gtceu:unstable_terrasteel_bucket"
+			id: "33757BC3FFE5AD18"
+			tasks: [
+				{
+					id: "17FE1AB4257178EF"
+					item: "gtceu:unstable_terrasteel_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "3D654A164AA80766"
+					optional_task: true
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 7.5d
+			y: 2.0d
+		}
+	]
 	title: "Forged in Galefury [MV]"
 }

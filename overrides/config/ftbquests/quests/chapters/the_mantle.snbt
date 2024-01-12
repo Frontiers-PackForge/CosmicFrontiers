@@ -75,6 +75,7 @@
 			dependencies: ["035D7CBD3AD14321"]
 			icon: "nethersdelight:propelpearl"
 			id: "3F54627296879917"
+			subtitle: "Pearls of Ethanol"
 			tasks: [{
 				id: "3CB079C1103F0D78"
 				item: "nethersdelight:propelpearl"
@@ -86,6 +87,7 @@
 		}
 		{
 			dependencies: ["3F54627296879917"]
+			description: ["These weird stonelike pustules can be nurtured for slurry rich in resources useful for growing plants."]
 			icon: "biomesoplenty:blackstone_bulb"
 			id: "53AD20A15F4EE0BE"
 			subtitle: "Weird Bioluminescence"
@@ -119,18 +121,6 @@
 			}]
 			x: 0.0d
 			y: 4.0d
-		}
-		{
-			dependencies: ["53AD20A15F4EE0BE"]
-			id: "41449709FA81941B"
-			subtitle: "I would recommend returning once you start LV"
-			tasks: [{
-				id: "2A343EBE644981EB"
-				item: "gtceu:lv_machine_hull"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 0.0d
 		}
 		{
 			dependencies: ["035D7CBD3AD14321"]

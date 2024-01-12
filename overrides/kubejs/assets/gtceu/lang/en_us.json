@@ -22,6 +22,16 @@
   "block.gtceu.uv_flora_nurturer": "§3Ultimate Flora Nurturer§r",
   "block.gtceu.uhv_flora_nurturer": "§4Epic Flora Nurturer§r",
 
+  "block.gtceu.lv_mana_fluidizer": "Basic Mana Fluidizer",
+  "block.gtceu.mv_mana_fluidizer": "§bAdvanced Mana Fluidizer§r",
+  "block.gtceu.hv_mana_fluidizer": "§6Advanced Mana Fluidizer II§r",
+  "block.gtceu.ev_mana_fluidizer": "§5Advanced Mana Fluidizer III§r",
+  "block.gtceu.iv_mana_fluidizer": "§1Elite Mana Fluidizer§r",
+  "block.gtceu.luv_mana_fluidizer": "§dElite Mana Fluidizer II§r",
+  "block.gtceu.zpm_mana_fluidizer": "§cElite Mana Fluidizer III§r",
+  "block.gtceu.uv_mana_fluidizer": "§3Ultimate Mana Fluidizer§r",
+  "block.gtceu.uhv_mana_fluidizer": "§4Epic Mana Fluidizer§r",
+
 
   "block.gtceu.lv_spooling_machine": "Basic Spooling Machine",
   "block.gtceu.mv_spooling_machine": "§bAdvanced Spooling Machine§b",
@@ -61,5 +71,11 @@
   "material.livingrock": "Livingrock",
   "material.livingwood": "Livingwood",
   "material.terrasteel": "Terrasteel",
-  "material.elementium": "Elementium"
+  "material.elementium": "Elementium",
+  "material.galvanized_ethersteel": "Galvanized Ethersteel",
+  "material.ambrosium": "Ambrosium",
+  "material.raw_mana_crystal_slurry": "Mana Crystal Slurry",
+  "material.prepared_terrasteel": "Prepared Terrasteel",
+  "material.unstable_terrasteel": "Unstable Terrasteel",
+  "material.zanosium_aluminate": "Zanosium Aluminate"
 }

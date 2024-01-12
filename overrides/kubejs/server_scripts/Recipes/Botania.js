@@ -1214,8 +1214,10 @@ ServerEvents.recipes(e => {
     //e.recipes.botania.mana_infusion('input', 'output', 'mana', 'catalyst')
     e.remove({id:'botania:mana_infusion/manasteel'})
     e.recipes.botania.mana_infusion('botania:manasteel_ingot', 'gtceu:blue_alloy_ingot', 4000)
-    e.recipes.botania.mana_infusion('botania:manasteel_ingot', 'gtceu:stainless_steel_ingot', 1000)
-
+    //Commented this out because I may be doing something with SS in MV and this may clash w/ it
+    // e.recipes.botania.mana_infusion('botania:manasteel_ingot', 'gtceu:stainless_steel_ingot', 1000)
+    e.recipes.botania.mana_infusion('botania:blacker_lotus','minecraft:wither_rose', 100000)
+   
     e.remove({id:'botania:mana_infusion/mana_diamond'})
     e.recipes.botania.mana_infusion('botania:mana_diamond', 'gtceu:diamond_flawless_gem', 10000)
 
@@ -1237,6 +1239,47 @@ ServerEvents.recipes(e => {
 
 //Elven Portal
     //e.recipes.botania.elven_trade(['output1'], ['input1'])
+
+    e.recipes.gtceu.mana_fluidizer('gtceu:mana_to_mana_fluid')
+    .itemInputs('botania:blacker_lotus')
+    .itemOutputs('minecraft:wither_rose')
+    .outputFluids(Fluid.of('gtceu:potent_mana',10000))
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.MV]);
+    e.recipes.gtceu.mana_fluidizer('gtceu:mana_fluid_to_mana_charge')
+    .itemOutputs('botania:blacker_lotus')
+    .itemInputs('minecraft:wither_rose')
+    .inputFluids(Fluid.of('gtceu:potent_mana',10000))
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.MV]);
+
+    //ManaSteel Ingots
+    e.recipes.gtceu.mana_fluidizer('gtceu:mana_steel_ingot')
+    .itemInputs('gtceu:stainless_steel_ingot')
+    .itemOutputs('botania:manasteel_ingot')
+    .inputFluids(Fluid.of('gtceu:potent_mana',250))
+    .duration(20)
+    .EUt(GTValues.VA[GTValues.MV]);
+    //Mana Pearl
+    e.recipes.gtceu.mana_fluidizer('gtceu:mana_pearl')
+    .itemInputs('minecraft:ender_pearl')
+    .itemOutputs('botania:mana_pearl')
+    .inputFluids(Fluid.of('gtceu:potent_mana',500))
+    .duration(20)
+    .EUt(GTValues.VA[GTValues.MV]);
+    //Mana Diamond
+     e.recipes.gtceu.mana_fluidizer('gtceu:mana_diamond')
+     .itemInputs('gtceu:diamond_flawless_gem')
+     .itemOutputs('botania:mana_diamond')
+     .inputFluids(Fluid.of('gtceu:potent_mana',1000))
+     .duration(20)
+     .EUt(GTValues.VA[GTValues.MV]);
+     e.recipes.gtceu.mana_fluidizer('gtceu:mana_powder')
+     .itemInputs('gtceu:electrotine_dust')
+     .itemOutputs('botania:mana_powder')
+     .inputFluids(Fluid.of('gtceu:potent_mana',50))
+     .duration(20)
+     .EUt(GTValues.VA[GTValues.MV]);
 
 })
 
