@@ -64,7 +64,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('unstable_terrasteel')
         .fluid()
         .color(0x00731f).iconSet(GTMaterialIconSet.SHINY)
-    event.create('zanosium_aluminate')
+    event.create('zano_aluminate')
         .dust()
         .color(0x8e46fa).iconSet(GTMaterialIconSet.SHINY)
     //So Help me god please work
