@@ -1,4 +1,5 @@
 {
+  "tagprefix.holystone": "Holystone %s Ore",
   "block.gtceu.lp_steam_masonry_oven": "Low Pressure Masonry Oven",
   "block.gtceu.hp_steam_masonry_oven": "High Pressure Masonry Oven",
   "block.gtceu.lv_masonry_oven": "Basic Masonry Oven",
@@ -77,5 +78,6 @@
   "material.raw_mana_crystal_slurry": "Mana Crystal Slurry",
   "material.prepared_terrasteel": "Prepared Terrasteel",
   "material.unstable_terrasteel": "Unstable Terrasteel",
-  "material.zanosium_aluminate": "Zanosium Aluminate"
+  "material.zano_aluminate": "Zano Aluminate",
+  "material.potent_mana": "Potent Mana"
 }

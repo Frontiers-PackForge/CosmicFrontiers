@@ -1,5 +1,4 @@
 //A Simple "REMOVE AND HIDE" function akin to GroovyScript's Jei.yeet() function - This will tag the item for hiding from recipe viewers and remove the recipe
-//This one also has a tag removal function to remove the forge:tools/knives tag from what is removed so bear that in mind if you copy/paste this around
 let yeet = (itemName) => {
   ServerEvents.recipes(event => {
     event.remove({ output: itemName })
@@ -10,23 +9,12 @@ let yeet = (itemName) => {
   })
 }
 
-//Generator Removal - WILL RETURN WITH UH, """BETTER""" CREATE FUNCTIONALITY
-// yeet('gtceu:lv_combustion')
-// yeet('gtceu:mv_combustion')
+
 // yeet('gtceu:hv_combustion')
-// yeet('gtceu:large_combustion_engine')
-// yeet('gtceu:extreme_combustion_engine')
-// yeet('gtceu:lv_gas_turbine')
-// yeet('gtceu:mv_gas_turbine')
 // yeet('gtceu:hv_gas_turbine')
-// yeet('gtceu:gas_large_turbine')
-// yeet('gtceu:lv_steam_turbine')
-// yeet('gtceu:mv_steam_turbine')
 // yeet('gtceu:hv_steam_turbine')
-// yeet('gtceu:lv_steam_turbine')
-// yeet('gtceu:steam_large_turbine')
-// yeet('gtceu:plasma_large_turbine')
-// yeet('gtceu:turbine_rotor')
+
+
 
 ServerEvents.tags('item', event => {
   event.add('forge:lenses/ruby', 'gtceu:redstone_lens')
