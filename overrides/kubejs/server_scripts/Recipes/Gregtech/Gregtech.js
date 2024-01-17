@@ -36,6 +36,7 @@ ServerEvents.recipes(event => {
 
 
 
+
   event.remove({ output: 'gtceu:firebrick' })
   event.recipes.gtceu.masonry_oven('gtceu:firebrick_masonry')
     .itemInputs('gtceu:compressed_fireclay')
@@ -228,6 +229,17 @@ ServerEvents.recipes(event => {
     .duration(26)
     .circuit(10)
     .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.lathe('gtceu:lathe_manasteel_ingot_to_rod')
+  .itemInputs('botania:manasteel_ingot')
+  .itemOutputs('2x gtceu:mana_steel_rod')
+  .duration(52)
+  .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.extruder('gtce:extrude_manasteel_ingot_to_rod')
+  .itemInputs('botania:manasteel_ingot')
+  .itemOutputs('2x gtceu:mana_steel_rod')
+  .notConsumable('gtceu:rod_extruder_mold')
+  .duration(26)
+  .EUt(GTValues.VA[GTValues.MV]);
   let manawires = ['gtceu:mana_steel_single_cable', 'gtceu:mana_steel_double_cable', 'gtceu:mana_steel_quadruple_cable', 'gtceu:mana_steel_octal_cable', 'gtceu:mana_steel_hex_cable']
   event.remove({ output: manawires })
   event.recipes.gtceu.spooling_machine('gtceu:mana_steel_single_cable_wrapping')
