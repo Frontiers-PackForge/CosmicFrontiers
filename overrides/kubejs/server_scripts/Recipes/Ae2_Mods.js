@@ -1,3 +1,24 @@
+let yeet = (itemName) => {
+  ServerEvents.recipes(event => { 
+      event.remove({ output: itemName })
+    })
+  ServerEvents.tags('item', event => {
+      event.add('forge:viewers/hidden_from_recipe', itemName)
+  })
+}
+yeet('ae2:fluix_glass_cable')
+yeet('ae2:fluix_covered_cable')
+yeet('ae2:fluix_covered_dense_cable')
+yeet('ae2:printed_calculation_processor')
+yeet('ae2:printed_calculation_processor')
+yeet('ae2:printed_logic_processor')
+yeet('ae2:printed_logic_processor')
+yeet('ae2:logic_processor')
+yeet('ae2:calculation_processor')
+yeet('ae2:engineering_processor')
+yeet('megacells:accumulation_processor_press')
+yeet('megacells:printed_accumulation_processor')
+yeet('megacells:accumulation_processor')
 ServerEvents.recipes(event => {
   event.remove({ mod: 'ae2' })
   event.remove({ mod: 'expatternprovider' })
@@ -72,7 +93,30 @@ ServerEvents.recipes(event => {
     .itemOutputs('8x ae2:interface')
     .duration(320)
     .EUt(8192);
-
+  event.recipes.gtceu.assembler('ae2:item_cell_housing')
+    .itemInputs(['3x gtceu:steel_plate', '2x gtceu:tempered_glass', '2x gtceu:red_alloy_single_cable','ae2:formation_core', 'ae2:annihilation_core'])
+    .inputFluids(`redstone 144`)
+    .itemOutputs('ae2:item_cell_housing')
+    .duration(80)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.assembler('ae2:fluid_cell_housing')
+    .itemInputs(['3x gtceu:annealed_copper_plate', '2x gtceu:tempered_glass', '2x gtceu:red_alloy_single_cable','ae2:formation_core', 'ae2:annihilation_core'])
+    .inputFluids(`redstone 144`)
+    .itemOutputs('ae2:fluid_cell_housing')
+    .duration(80)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.assembler('appbot:mana_cell_housing')
+    .itemInputs(['3x gtceu:mana_steel_plate', '2x gtceu:tempered_glass', '2x gtceu:red_alloy_single_cable','ae2:formation_core', 'ae2:annihilation_core'])
+    .inputFluids(`redstone 144`)
+    .itemOutputs('appbot:mana_cell_housing')
+    .duration(80)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.assembler('arseng:source_cell_housing')
+    .itemInputs(['3x gtceu:rose_gold_plate', '2x gtceu:tempered_glass', '2x gtceu:red_alloy_single_cable','ae2:formation_core', 'ae2:annihilation_core'])
+    .inputFluids(`redstone 144`)
+    .itemOutputs('arseng:source_cell_housing')
+    .duration(80)
+    .EUt(GTValues.VA[GTValues.LV]);
   //Interface Full to Thin and Thin to Full
   event.shapeless('ae2:cable_interface', [
     'ae2:interface'
@@ -242,11 +286,11 @@ ServerEvents.recipes(event => {
       .EUt(`${euType}`);
   })
 
-event.recipes.gtceu.lathe(`ae2:fiber`)
-.itemInputs('minecraft:quartz')
-.itemOutputs('ae2:quartz_fiber')
-.duration(20)
-.EUt(GTValues.VA[GTValues.LV])
+  event.recipes.gtceu.lathe(`ae2:fiber`)
+    .itemInputs('minecraft:quartz')
+    .itemOutputs('ae2:quartz_fiber')
+    .duration(20)
+    .EUt(GTValues.VA[GTValues.LV])
 
 
 
