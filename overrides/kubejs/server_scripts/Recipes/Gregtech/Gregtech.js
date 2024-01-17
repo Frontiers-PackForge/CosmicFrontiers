@@ -574,7 +574,7 @@ ServerEvents.recipes(event => {
     event.shaped(`gtceu:${tier}_laminator`, [
       'CAC',
       'BHB',
-      'Z Z'
+      'ZPZ'
     ], {
       A: `gtceu:${coilType}_coil_block`,
       B: `gtceu:${tier}_conveyor_module`,
