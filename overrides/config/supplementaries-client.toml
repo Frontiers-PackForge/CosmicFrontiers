@@ -207,10 +207,14 @@
 	#A scalar multiplier that will be applied to sign text making it brighter, supposedly more legible
 	#Range: 0.0 ~ 5.0
 	sign_text_color_multiplier = 1.2000000476837158
-	#Needs the server config with same name on. If on here it will ignore the server one and keep vanilla colors
-	tinted_blocks_on_maps = true
-	#Colors tall grass same color as grass
-	tall_grass_color = true
+
+	[tweaks.colored_maps]
+		#Needs the server config with same name on. If on here it will ignore the server one and keep vanilla colors
+		tinted_blocks_on_maps = true
+		#Colors tall grass same color as grass
+		tall_grass_color = true
+		#Makes colored maps a bit more accurate. Might affect performance
+		accurate_colors = false
 
 [items]
 

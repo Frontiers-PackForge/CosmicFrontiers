@@ -1,47 +1,35 @@
-#Show the config menu button in the Options menu
-"Enable In-Game Config" = true
-#The position (offset) of the config button on the screen
-"Config Button Position" = [0, 0]
-#Displays areas that the Hearth is affecting when the F3 debug menu is open
-"Hearth Debug" = true
-#Enables visual distortion effects when the player is too hot or cold
-"Distortion Effects" = true
-#Enables high contrast mode for UI elements
-"High Contrast" = false
 
 ["UI Options"]
 	"Custom hotbar layout" = true
 	#Controls whether UI elements will shake when in critical conditions
 	"Icon Bobbing" = true
+	#The position of the body temperature icon relative to default
+	"Body Temperature Icon Offset" = [0, 0]
+	#The position of the body temperature readout relative to default
+	"Body Temperature Readout Offset" = [0, 0]
+	#The position of the world temperature gauge relative to default
+	"World Temperature UI Offset" = [0, 0]
 
-["Temperature display preferences"]
+["Temperature Preferences"]
 	#Sets all temperatures to be displayed in Celsius
-	Celsius = false
+	Celsius = true
 	#Visually offsets the world temperature to better match the user's definition of "hot" and "cold"
 	#Range: > 0
 	"Temperature Offset" = 0
 
-["Position of the 'Steve Head' temperature icon above the hotbar"]
-	#The x position of the icon relative to default
-	#Range: > -2147483648
-	"X Offset" = 0
-	#The y position of the icon relative to default
-	#Range: > -2147483648
-	"Y Offset" = 0
+[Accessibility]
+	#Enables visual distortion effects when the player is too hot or cold
+	"Distortion Effects" = true
+	#Enables high contrast mode for UI elements
+	"High Contrast" = false
 
-["Position of the temperature readout below the icon"]
-	#The x position of the readout relative to default
-	#Range: > -2147483648
-	"X Offset" = 0
-	#The y position of the readout relative to default
-	#Range: > -2147483648
-	"Y Offset" = 0
-
-["Position of the world temperature gauge beside the hotbar"]
-	#The x position of the gauge relative to default
-	#Range: > -2147483648
-	"X Offset" = 0
-	#The y position of the gauge relative to default
-	#Range: > -2147483648
-	"Y Offset" = 0
+[Misc]
+	#Show the config menu button in the Options menu
+	"Enable In-Game Config" = true
+	#The position (offset) of the config button on the screen
+	"Config Button Position" = [0, 0]
+	#Warns the player about a bug that clears armor insulation when in creative mode
+	"Enable Creative Mode Warning" = false
+	#Displays areas that the Hearth is affecting when the F3 debug menu is open
+	"Hearth Debug" = true
 

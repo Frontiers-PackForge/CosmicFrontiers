@@ -45,19 +45,101 @@
 		{
 			dependencies: ["7E9BA1EC4CA7EEE8"]
 			description: [
-				"Like, this isn't a joke. you won't have any ores."
+				"The Aether, a hostile paradise above the surface of this earth."
+				"I should take care, as falling from this height down to earth would be potentially fatal."
 				""
-				"That or be prepared to delete your aether dimension as the content comes out"
+				"To Traverse the islands, I should consider making a &aGlider&r. Long Jumping and swiftly gliding should help me move around."
+				""
+				"It will most likely be &bVERY COLD&r. as well."
 			]
-			id: "0C291B84EB831F29"
-			subtitle: "DONT ENTER THE AETHER"
+			icon: "aether:aether_portal_frame"
+			id: "57A955955309A292"
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "An asteroid belt close to home. [LVL 10 - 40]"
 			tasks: [{
-				id: "6C5C5FCEC3999227"
-				item: "botania:cosmetic_questgiver_mark"
+				dimension: "aether:the_aether"
+				icon: "aether:aether_portal_frame"
+				id: "3AE1D75234A2A2F4"
+				title: "Visit the Aether"
+				type: "dimension"
+			}]
+			title: "Exploration Expedition 1"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["57A955955309A292"]
+			id: "797990C3066AD3FB"
+			tasks: [{
+				id: "4E08A4070C9F22D9"
+				item: "gtceu:zanite_gem"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["57A955955309A292"]
+			id: "436731F4DEA413B4"
+			tasks: [{
+				id: "034D1A62D431EBEB"
+				item: "aether:ambrosium_shard"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["57A955955309A292"]
+			id: "061A91DDA1032996"
+			tasks: [{
+				id: "6DF8BBF53A907F07"
+				item: "gtceu:raw_barite"
 				type: "item"
 			}]
 			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["57A955955309A292"]
+			id: "467DD8A59876EDFE"
+			tasks: [{
+				id: "048244CDA891718D"
+				type: "item"
+			}]
+			x: 2.5d
 			y: -2.0d
+		}
+		{
+			dependencies: ["57A955955309A292"]
+			id: "63FD7396CD8ACA36"
+			tasks: [{
+				id: "5D53D2C529BF1121"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["467DD8A59876EDFE"]
+			id: "7BB9382B7641FFDF"
+			tasks: [{
+				id: "63E2746731AB8D6F"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["63FD7396CD8ACA36"]
+			id: "67EC5AF9BC37E368"
+			tasks: [{
+				id: "3944DDE073E9B291"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.0d
 		}
 	]
 	title: "A Crack in the Sky..."

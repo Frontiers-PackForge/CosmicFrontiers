@@ -511,11 +511,20 @@
 				"0C1B34079019BB33"
 			]
 			id: "2CBB70834FEAF761"
-			tasks: [{
-				id: "5B2AD96F3B3F1136"
-				item: "gtceu:hydrochloric_acid_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5B2AD96F3B3F1136"
+					item: "gtceu:hydrochloric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "316A0E1F725E3C3F"
+					optional_task: true
+					title: "Substep - Skip me!"
+					type: "checkmark"
+				}
+			]
 			x: 7.0d
 			y: 6.0d
 		}

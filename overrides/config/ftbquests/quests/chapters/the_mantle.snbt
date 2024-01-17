@@ -150,6 +150,54 @@
 			x: 1.0d
 			y: -1.0d
 		}
+		{
+			dependencies: ["035D7CBD3AD14321"]
+			description: ["You may be able to cobble one together by shoving a horrid amount of wool into a book..."]
+			icon: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:silk_touch"
+						lvl: 1s
+					}]
+				}
+			}
+			id: "2D4AFE85385EF0A6"
+			rewards: [{
+				id: "7562A02157E6E973"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:silk_touch"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "You'll need a silk tool for Blackstone Bulbs"
+			tasks: [
+				{
+					consume_items: true
+					id: "5B7A4EFEC4EEAF47"
+					item: "minecraft:book"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "08081310FD691B7B"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
+			]
+			title: "Need Silk?"
+			x: -1.0d
+			y: -1.0d
+		}
 	]
 	title: "The Mantle"
 }

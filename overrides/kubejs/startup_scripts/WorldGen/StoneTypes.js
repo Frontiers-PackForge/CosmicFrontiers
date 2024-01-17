@@ -33,13 +33,14 @@
 // })
 
 
-GTCEuStartupEvents.registry('gtceu:tag_prefix', e => {
+GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
     let stoneTypes = [
-        'aether:holystone', 'aether_redux:frosted_holystone', 'aether_redux:blightmoss_holystone', 'aether:mossy_holystone'
+        'aether:holystone', 'aether_redux:frosted_holystone', 'aether_redux:blightmoss_holystone', 'aether:mossy_holystone',
+        'ad_astra:moon_stone'
     ]
 
     stoneTypes.forEach(type => {
-        e.create(type.split(':')[1], 'ore')
+        event.create(type.split(':')[1], 'ore')
             .stateSupplier(() => Block.getBlock(type).defaultBlockState())
             .unificationEnabled(true)
             .materialIconType(GTMaterialIconType.ore)

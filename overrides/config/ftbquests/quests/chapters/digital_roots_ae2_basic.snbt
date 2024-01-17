@@ -113,17 +113,17 @@
 			dependencies: ["30E09C21E7032519"]
 			description: ["The Tempering Autoclave is used to work basic types of quartz into Certus Quartz. Which is more favorable for AE2 hardware"]
 			id: "3F5949C80C9BAA79"
-			subtitle: "Specalized Machinery"
+			subtitle: "Specalized Machinery [NYI]"
 			tasks: [{
 				id: "69FD5CD285EB807A"
 				item: "gtceu:lv_tempering_autoclave"
 				type: "item"
 			}]
 			x: 2.0d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
-			dependencies: ["3F5949C80C9BAA79"]
+			dependencies: ["30E09C21E7032519"]
 			id: "36F6456638964564"
 			shape: "hexagon"
 			size: 1.5d
@@ -642,6 +642,7 @@
 		}
 		{
 			dependencies: ["30E09C21E7032519"]
+			description: ["This includes the Crafting Cores - Autocrafting is planned for HV."]
 			hide_dependency_lines: true
 			id: "3EBD99B276396DF9"
 			subtitle: "16k And Above Storages NYI - HV+ Content"

@@ -2,8 +2,8 @@
 console.info('[COSMIC MANAGER] - TEST TEST 123 WORLDGEN FILE FOR ORE REMOVALS HIT')
 
 WorldgenEvents.remove(event => {
-    event.removeOres(props => {
-      props.blocks = ['create:zinc_ore',
+  event.removeOres(props => {
+    props.blocks = ['create:zinc_ore',
       'create:deepslate_zinc_ore',
       'forbidden_arcanus:deepslate_arcane_crystal_ore',
       'forbidden_arcanus:arcane_crystal_ore',
@@ -20,14 +20,28 @@ WorldgenEvents.remove(event => {
       'embers:deepslate_lead_ore',
       'embers:silver_ore',
       'embers:deepslate_silver_ore',
-      'aether:gravitite_ore',
-      'aether:ambrosium_ore',
-      'aether:zanite_ore',
-    
-    
-    
-    
-    
+
     ]
-    }) 
+  })
+  event.removeFeatureById('raw_generation', [
+    //FOR SOME REASON ADASTRA GENERATES ORES AT THIS GENERATION STEP      
+    'ad_astra:moon_iron_ore',
+    'ad_astra:deepslate_desh_ore',
+    'ad_astra:moon_desh_ore',
+    'ad_astra:moon_cheese_ore',
+    'ad_astra:moon_ice_shard_ore'
+  ])
+  event.removeFeatureById('underground_ores', [
+    //FOR SOME REASON ADASTRA GENERATES ORES AT THIS GENERATION STEP      
+    'aether:gravitite_ore',
+    'aether:gravitite_ore_buried',
+    'aether:ambrosium_ore',
+    'aether:zanite_ore',
+    'aether_redux:veridium_ore',
+    'deep_aether:skyjade_ore',
+  ])
 })
+// WorldgenEvents.remove(event => {
+//   event.printFeatures('', 'aether_redux:the_blight') 
+//   event.printFeatures('', 'deep_aether:aerlavender_fields')
+// })

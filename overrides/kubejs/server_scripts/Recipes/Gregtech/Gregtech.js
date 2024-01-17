@@ -70,11 +70,11 @@ ServerEvents.recipes(event => {
   ])
 
   event.recipes.gtceu.forming_press('gtceu:forming_press/waxed_leather')
-  .itemInputs('minecraft:leather')
-  .itemInputs('2x minecraft:honeycomb')
-  .itemOutputs('cosmiccore:waxed_leather')
-  .duration(100)
-  .EUt(GTValues.VA[GTValues.LV])
+    .itemInputs('minecraft:leather')
+    .itemInputs('2x minecraft:honeycomb')
+    .itemOutputs('cosmiccore:waxed_leather')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV])
 
 
 
@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
 
 
 
-  
+
 
 
   event.recipes.gtceu.bender('kubejs:stainless_steel_fin')
@@ -387,49 +387,49 @@ ServerEvents.recipes(e => {
 
 ServerEvents.recipes(event => {
   event.recipes.gtceu.macerator('gtceu:obsidian_dust')
-      .itemInputs('minecraft:obsidian')
-      .itemOutputs('gtceu:obsidian_dust')
-      .duration(600)
-      .EUt(GTValues.VA[GTValues.LV]);
+    .itemInputs('minecraft:obsidian')
+    .itemOutputs('gtceu:obsidian_dust')
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.LV]);
 
 
-  event.remove({id:'gtceu:mixer/rose_gold'})
+  event.remove({ id: 'gtceu:mixer/rose_gold' })
   event.recipes.gtceu.mixer('gtceu:mixer/rose_gold')
-      .itemInputs(['gtceu:copper_dust', '4x gtceu:gold_dust'])
-      .circuit(3)
-      .itemOutputs('5x gtceu:rose_gold_dust')
-      .duration(500)
-      .EUt(GTValues.VA[GTValues.LV]);
+    .itemInputs(['gtceu:copper_dust', '4x gtceu:gold_dust'])
+    .circuit(3)
+    .itemOutputs('5x gtceu:rose_gold_dust')
+    .duration(500)
+    .EUt(GTValues.VA[GTValues.LV]);
 
-      
-  event.remove({id:'gtceu:smelting/dust_blue_alloy__demagnetize_from_dust'})
-  event.remove({id:'gtceu:alloy_smelter/silver_ingot_and_electrotine_dust_into_blue_alloy'})
-  event.remove({id:'gtceu:alloy_smelter/silver_dust_and_electrotine_dust_into_blue_alloy'})
+
+  event.remove({ id: 'gtceu:smelting/dust_blue_alloy__demagnetize_from_dust' })
+  event.remove({ id: 'gtceu:alloy_smelter/silver_ingot_and_electrotine_dust_into_blue_alloy' })
+  event.remove({ id: 'gtceu:alloy_smelter/silver_dust_and_electrotine_dust_into_blue_alloy' })
   event.recipes.gtceu.electric_blast_furnace('gtceu:electric_blast_furnace/blue_alloy_nitrogen')
-  .itemInputs('gtceu:blue_alloy_dust')
-  .inputFluids('gtceu:nitrogen 1000')
-  .itemOutputs('gtceu:blue_alloy_ingot')
-  .circuit(2)
-  .blastFurnaceTemp(1200)
-  .duration(442)
-  .EUt(GTValues.VA[GTValues.MV]);
+    .itemInputs('gtceu:blue_alloy_dust')
+    .inputFluids('gtceu:nitrogen 1000')
+    .itemOutputs('gtceu:blue_alloy_ingot')
+    .circuit(2)
+    .blastFurnaceTemp(1200)
+    .duration(442)
+    .EUt(GTValues.VA[GTValues.MV]);
 
 
   event.recipes.gtceu.electric_blast_furnace('gtceu:electric_blast_furnace/blue_alloy')
-  .itemInputs('gtceu:blue_alloy_dust')
-  .itemOutputs('gtceu:blue_alloy_ingot')
-  .circuit(1)
-  .blastFurnaceTemp(1200)
-  .duration(660)
-  .EUt(GTValues.VA[GTValues.MV]);
+    .itemInputs('gtceu:blue_alloy_dust')
+    .itemOutputs('gtceu:blue_alloy_ingot')
+    .circuit(1)
+    .blastFurnaceTemp(1200)
+    .duration(660)
+    .EUt(GTValues.VA[GTValues.MV]);
 
 
 
 })
 
 //Netherite Line
-ServerEvents.recipes(event => { 
-  event.remove({output:'minecraft:netherite_scrap'})
+ServerEvents.recipes(event => {
+  event.remove({ output: 'minecraft:netherite_scrap' })
   event.recipes.gtceu.macerator('gtceu:macerator/macerate_ancient_debris')
     .itemInputs('minecraft:ancient_debris')
     .itemOutputs('gtceu:ancient_debris_dust')
@@ -448,16 +448,16 @@ ServerEvents.recipes(event => {
     .duration(200)
     .EUt(GTValues.VA[GTValues.LV]);
 
-  
+
   event.recipes.gtceu.mixer('gtceu:mixer/netherite_alloy')
     .itemInputs('2x gtceu:netherite_scrap_dust')
     .itemInputs('2x gtceu:rose_gold_dust')
     .itemOutputs('gtceu:netherite_alloy_dust')
     .duration(500)
     .EUt(GTValues.VA[GTValues.LV]);
-  
 
-  event.remove({id:'minecraft:netherite_ingot'})
+
+  event.remove({ id: 'minecraft:netherite_ingot' })
   event.recipes.gtceu.electric_blast_furnace('gtceu:electric_blast_furnace/netherite_from_netherite_alloy')
     .itemInputs('gtceu:netherite_alloy_dust')
     .inputFluids('gtceu:nitrogen 1000')
@@ -465,87 +465,126 @@ ServerEvents.recipes(event => {
     .blastFurnaceTemp(1200)
     .duration(600)
     .EUt(GTValues.VA[GTValues.MV]);
-    let machineTier = [
-      'lv',
-      'mv',
-      'hv',
-      'ev',
-      'iv',
-      'luv',
-      'zpm',
-      'uv'
-    ]
-    let tierQuadWire = [
-      'copper',
-      'cupronickel',
-      'kanthal',
-      'nichrome',
-      'tungsten_steel',
-      'hssg',
-      'naquadah',
-      'naquadah_alloy'
-    ]
-    let tierCable = [
-      'tin',
-      'copper',
-      'gold',
-      'aluminium',
-      'platinum',
-      'niobium_titanium',
-      'vanadium_gallium',
-      'yttrium_barium_cuprate'
-    ]
-    let coilTier = [
-      'cupronickel',
-      'kanthal',
-      'nichrome',
-      'tungstensteel',
-      'hssg',
-      'naquadah',
-      'trinium',
-      'tritanium'
-    ]
-    machineTier.forEach((tier, index) =>{
-     let cableMaterial = tierQuadWire[index]
-     let cableType = tierCable[index]
-     let coilType = coilTier[index]
-      event.shaped(`gtceu:${tier}_masonry_oven`, [ 
-          'CAC', 
-          'BHB', 
-          'ZAZ'  
-        ], {
-          A: `gtceu:${cableMaterial}_quadruple_wire`,
-          B: `gtceu:${tier}_conveyor_module`,
-          C: `#forge:circuits/${tier}`,
-          H: `gtceu:${tier}_machine_hull`,
-          Z: `gtceu:${cableType}_single_cable`
-        }
-      )
-      event.shaped(`gtceu:${tier}_flora_nurturer`, [ 
-          'CAC', 
-          'BHB', 
-          'ZBZ'  
-        ], {
-          A: 'minecraft:redstone_lamp',
-          B: `gtceu:${tier}_conveyor_module`,
-          C: `#forge:circuits/${tier}`,
-          H: `gtceu:${tier}_machine_hull`,
-          Z: `gtceu:${cableType}_single_cable`
-        }
-      )
-      event.shaped(`gtceu:${tier}_nether_catalyzer`, [ 
-          'CAC', 
-          'PHP', 
-          'ZBZ'  
-        ], {
-          A: `gtceu:${coilType}_coil_block`,
-          B: `gtceu:${tier}_conveyor_module`,
-          P: `gtceu:${tier}_electric_piston`,
-          C: `#forge:circuits/${tier}`,
-          H: `gtceu:${tier}_machine_hull`,
-          Z: `gtceu:${cableType}_single_cable`
-        }
-      )
-    })
+  let machineTier = [
+    'lv',
+    'mv',
+    'hv',
+    'ev',
+    'iv',
+    'luv',
+    'zpm',
+    'uv'
+  ]
+  let tierQuadWire = [
+    'copper',
+    'cupronickel',
+    'kanthal',
+    'nichrome',
+    'tungsten_steel',
+    'hssg',
+    'naquadah',
+    'naquadah_alloy'
+  ]
+  let tierCable = [
+    'tin',
+    'copper',
+    'gold',
+    'aluminium',
+    'platinum',
+    'niobium_titanium',
+    'vanadium_gallium',
+    'yttrium_barium_cuprate'
+  ]
+  let coilTier = [
+    'cupronickel',
+    'kanthal',
+    'nichrome',
+    'tungstensteel',
+    'hssg',
+    'naquadah',
+    'trinium',
+    'tritanium'
+  ]
+  machineTier.forEach((tier, index) => {
+    let cableMaterial = tierQuadWire[index]
+    let cableType = tierCable[index]
+    let coilType = coilTier[index]
+    event.shaped(`gtceu:${tier}_masonry_oven`, [
+      'CAC',
+      'BHB',
+      'ZAZ'
+    ], {
+      A: `gtceu:${cableMaterial}_quadruple_wire`,
+      B: `gtceu:${tier}_conveyor_module`,
+      C: `#forge:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`
+    }
+    )
+    event.shaped(`gtceu:${tier}_flora_nurturer`, [
+      'CAC',
+      'BHB',
+      'ZBZ'
+    ], {
+      A: 'minecraft:redstone_lamp',
+      B: `gtceu:${tier}_conveyor_module`,
+      C: `#forge:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`
+    }
+    )
+    event.shaped(`gtceu:${tier}_nether_catalyzer`, [
+      'CAC',
+      'PHP',
+      'ZBZ'
+    ], {
+      A: `gtceu:${coilType}_coil_block`,
+      B: `gtceu:${tier}_conveyor_module`,
+      P: `gtceu:${tier}_electric_piston`,
+      C: `#forge:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`
+    }
+    )
+    event.shaped(`gtceu:${tier}_spooling_machine`, [
+      'CAC',
+      'RHP',
+      'ZAZ'
+    ], {
+      A: `gtceu:steel_rod`,
+      P: `gtceu:${tier}_electric_motor`,
+      R: `gtceu:${tier}_robot_arm`,
+      C: `#forge:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`
+    }
+    )
+    event.shaped(`gtceu:${tier}_mana_fluidizer`, [
+      'CPC',
+      'AHA',
+      'ZBZ'
+    ], {
+      A: `gtceu:mana_steel_plate`,
+      P: `gtceu:${tier}_electric_piston`,
+      B: `gtceu:${tier}_electric_pump`,
+      C: `#forge:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`
+    }
+    )
+    event.shaped(`gtceu:${tier}_laminator`, [
+      'CAC',
+      'BHB',
+      'Z Z'
+    ], {
+      A: `gtceu:${coilType}_coil_block`,
+      B: `gtceu:${tier}_conveyor_module`,
+      C: `#forge:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`,
+      P: `gtceu:${tier}_electric_pump`
+    }
+    )
+  })
 })
 

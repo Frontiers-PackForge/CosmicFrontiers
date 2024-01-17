@@ -51,9 +51,6 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "tombstone": {
-    "graves": true
-  },
   "pneumaticcraft": {
     "pneumatic": true,
     "tube_module": true,

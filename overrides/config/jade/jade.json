@@ -21,10 +21,10 @@
   "overlay": {
     "activeTheme": "jade:dark",
     "themesHash": -328442023,
-    "overlayPosX": 0.5,
+    "overlayPosX": 0.0,
     "overlayPosY": 1.0,
     "overlayScale": 0.65,
-    "overlayAnchorX": 0.5,
+    "overlayAnchorX": 0.0,
     "overlayAnchorY": 0.0,
     "overlaySquare": false,
     "flipMainHand": false,

@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "forged_in_galefury"
 	group: "4135A2BA7EBD719E"
-	icon: "gtceu:etherforged_steel_ingot"
+	icon: "gtceu:galvanized_ethersteel_ingot"
 	id: "2AF6C950A3B12568"
 	order_index: 1
 	quest_links: [ ]
@@ -203,8 +203,8 @@
 			size: 2.0d
 			subtitle: "One Stable Alloy"
 			tasks: [{
-				id: "37EC5F8BF50EEF11"
-				item: "gtceu:etherforged_steel_ingot"
+				id: "7130323F6D02C333"
+				item: "gtceu:galvanized_ethersteel_ingot"
 				type: "item"
 			}]
 			x: 5.0d
@@ -844,9 +844,11 @@
 				"43554DF922268633"
 				"325D1D73A1414437"
 			]
+			description: ["You'll need the Runic Altar Later on for more powerful Magitech, but for now it helps you unlock the mana s imulator."]
 			id: "18E59533B89D6005"
 			shape: "hexagon"
 			size: 2.0d
+			subtitle: "A surprise tool for later!"
 			tasks: [{
 				id: "47C0EBF50BAF8969"
 				item: "botania:runic_altar"
@@ -897,14 +899,13 @@
 		}
 		{
 			dependencies: [
-				"18E59533B89D6005"
 				"4859FC0AAFBC1C06"
 				"62C2245ABBF054F3"
 			]
 			id: "673AB6E8C654D518"
 			tasks: [{
-				id: "644698C7AD81EDC5"
-				item: "gtceu:zanalate_compound_dust"
+				id: "2FC0BB03B98EF48F"
+				item: "gtceu:zano_aluminate_dust"
 				type: "item"
 			}]
 			x: 8.5d
@@ -989,7 +990,16 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["43554DF922268633"]
+			dependencies: [
+				"43554DF922268633"
+				"18E59533B89D6005"
+			]
+			description: [
+				"Digitally Calculating Floral Behaviors to produce raw, undiluted mana. 10x stronger than what's found in mana pools (Potent Mana : Mana is 1:10)"
+				""
+				"The best digital flower you'll have access to currently is the entropynium"
+				"by now I would forego making an actual mana setup and just use these guys."
+			]
 			icon: "gtceu:mana_simulator"
 			id: "22EF1AEF0213682D"
 			subtitle: "Basic Mana Simulation"
@@ -1028,7 +1038,6 @@
 				{
 					disable_toast: true
 					id: "16E335A4FAC3B319"
-					optional_task: true
 					title: "Chain Quest - Skip me!"
 					type: "checkmark"
 				}

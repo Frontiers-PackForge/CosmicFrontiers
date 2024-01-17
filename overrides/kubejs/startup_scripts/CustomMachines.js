@@ -17,13 +17,17 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('masonry_oven', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV)
         .recipeType('masonry_oven', true, true)
         .rotationState(RotationState.NON_Y_AXIS)
-        .workableTieredHullRenderer(GTCEu.id("block/machines/masonry_oven")) //add this to the kube folder - Though, let Ghostipedia make these textures pls & ty
+        .workableTieredHullRenderer(GTCEu.id("block/machines/masonry_oven"))
+    event.create('laminator', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV)
+        .recipeType('laminator', true, true)
+        .rotationState(RotationState.NON_Y_AXIS)
+        .workableTieredHullRenderer(GTCEu.id("block/machines/flora_nurturer")) //add this to the kube folder - Though, let Ghostipedia make these textures pls & ty
     //Mana Fluidizer
     event.create('mana_fluidizer', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV)
         .recipeType('mana_fluidizer', true, true)
         .rotationState(RotationState.NON_Y_AXIS)
         .tankScalingFunction(tier => tier * 64000)
-        .workableTieredHullRenderer(GTCEu.id("block/machines/nether_catalyzer"))
+        .workableTieredHullRenderer(GTCEu.id("block/machines/mana_fluidizer"))
 
     event.create('flora_nurturer', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV)
         .recipeType('flora_nurturer', true, true)
@@ -41,7 +45,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('spooling_machine', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV)
         .recipeType('spooling_machine', true, true)
         .rotationState(RotationState.NON_Y_AXIS)
-        .workableTieredHullRenderer(GTCEu.id("block/machines/nether_catalyzer"))
+        .workableTieredHullRenderer(GTCEu.id("block/machines/spooling_machine"))
     //Tempering Autoclave
     event.create('tempering_autoclave', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV)
         .recipeType('tempering_autoclave', true, true)
@@ -69,7 +73,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .where('G', Predicates.blocks('botania:mana_glass'))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_frost_proof', 'gtceu:block/multiblock/power_substation', false);
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_frost_proof', 'gtceu:block/machines/mana_fluidizer', false);
 
 
 })
@@ -118,6 +122,13 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('in')
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
+    event.create('laminator')
+        .category('frontiers')
+        .setMaxIOSize(2, 2, 2, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+        .setSlotOverlay(false, false, GuiTextures.NEUTRAL_MATTER_OVERLAY)
+        .setEUIO('in')
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.MIXER)
     event.create('mana_fluidizer')
         .category('frontiers')
         .setMaxIOSize(1, 1, 1, 1) //Max Item in, max item out, max fluid in, max fluid out (in slots)

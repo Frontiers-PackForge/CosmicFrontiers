@@ -20,6 +20,7 @@ yeet('create:brass_nugget')
 yeet('create:copper_nugget')
 yeet("create:zinc_ingot")
 yeet('create:zinc_nugget')
+yeet('balancedflight:ascended_flight_ring')
 
 ServerEvents.tags('item', event => {
   console.log('Hello! The item tags event has fired!')
