@@ -50,13 +50,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:terrasteel_dust')
         .duration(120)
         .EUt(GTValues.VA[GTValues.MV]);
-    event.recipes.gtceu.chemical_dehydrator('gtceu:ebf/terrasteel_ingot_recipe')
-        .itemInputs('gtceu:terrasteel_dust')
-        .inputFluids('gtceu:nitrogen 1000')
-        .itemOutputs('botania:terrasteel_ingot')
-        .duration(2400)
-        .EUt(GTValues.VA[GTValues.MV]);
-    event.recipes.gtceu.chemical_dehydrator('gtceu:ebf/ethersteel_ingot_recipe')
+    event.recipes.gtceu.electric_blast_furnace('gtceu:ebf/ethersteel_ingot_recipe')
         .itemInputs('gtceu:terrasteel_dust')
         .inputFluids('gtceu:potent_mana 1000')
         .itemOutputs('botania:terrasteel_ingot')
