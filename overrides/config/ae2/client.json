@@ -17,7 +17,7 @@
     "notifyForFinishedCraftingJobs_comment": "Show toast when long-running crafting jobs finish.",
     "notifyForFinishedCraftingJobs": true,
     "clearGridOnClose_comment": "Automatically clear the crafting/encoding grid when closing the terminal",
-    "clearGridOnClose": true,
+    "clearGridOnClose": false,
     "terminalMargin_comment": "The vertical margin to apply when sizing terminals. Used to make room for centered item mod search bars",
     "terminalMargin": 25
   },

@@ -24,13 +24,22 @@
         "enable_profiles_ui": {
             "value": false
         },
+        "enable_inventory_buttons": {
+            "value": false
+        },
         "show_continuous_crafting_checkbox": {
+            "value": false
+        },
+        "show_regular_sort_button": {
             "value": false
         },
         "show_sort_in_columns_button": {
             "value": false
         },
         "show_sort_in_rows_button": {
+            "value": false
+        },
+        "show_move_all_button": {
             "value": false
         }
     },

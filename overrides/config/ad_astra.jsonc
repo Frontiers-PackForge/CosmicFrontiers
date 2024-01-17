@@ -76,7 +76,7 @@
         "jetSuitArmorToughness": 5,
         "spawnJetSuitParticles": true,
         // Custom hand rendering may interfere with Shaders
-        "renderCustomFirstPersonHand": false
+        "renderCustomFirstPersonHand": true
     },
     "vehicles": {
         /*

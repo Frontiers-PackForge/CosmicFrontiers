@@ -98,10 +98,42 @@
 		#Maximum lifetime in ticks of projectile.
 		lifetime = 160
 
+	[parameters.dawnstone_anvil]
+		#The amount of hits required to perform one recipe on a dawnstone anvil.
+		max_hits = 40
+
+	[parameters.ashen]
+
+		[parameters.ashen.goggles]
+			#How many inflictor gems can fit in the ashen goggles.
+			gem_slots = 2
+
+		[parameters.ashen.cloak]
+			#How many inflictor gems can fit in the ashen cloak.
+			gem_slots = 7
+
+		[parameters.ashen.leggings]
+			#How many inflictor gems can fit in the ashen leggings.
+			gem_slots = 5
+
+		[parameters.ashen.boots]
+			#How many inflictor gems can fit in the ashen boots.
+			gem_slots = 3
+
+	[parameters.shiftingScales]
+		#Syntax is 'damagetype:rate'. Determines which damage types are partially unaffected by the shifting scales augment.
+		damagePasses = ["drown:1.0", "starve:1.0"]
+		#Syntax is 'damagetype:rate'. Specifies a separate damage rate for depleting the scales.
+		damageRates = []
+
 #Miscellaneous settings
 [misc]
 	#Codex entries need to be completed before the next one unlocks.
 	codexProgression = true
-	#Which domains are preferred for tag output recipes.
+	#Which domains are preferred for recipes with dynamic outputs.
 	tagPreferences = ["minecraft", "embers"]
+	#If true, Embers homing projectiles will go for neutral players.
+	everybodyIsEnemy = false
+	#Which items are preferred as the result of breaking down a tool on an anvil.
+	itemPreferences = ["minecraft:oak_planks", "minecraft:cobblestone"]
 
