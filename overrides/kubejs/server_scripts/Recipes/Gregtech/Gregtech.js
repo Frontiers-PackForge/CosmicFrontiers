@@ -36,7 +36,6 @@ ServerEvents.recipes(event => {
 
 
 
-
   event.remove({ output: 'gtceu:firebrick' })
   event.recipes.gtceu.masonry_oven('gtceu:firebrick_masonry')
     .itemInputs('gtceu:compressed_fireclay')
