@@ -7,7 +7,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x09474a).iconSet(GTMaterialIconSet.DULL)
     event.create('chromium_iii_oxide')
         .dust()
-        .color(0x3dc34d).iconSet(GTMaterialIconSet.DULL)    
+        .color(0x3dc34d).iconSet(GTMaterialIconSet.DULL)
     event.create('sodium_carbonate_solution')
     .fluid()
     .color(0x636389)
