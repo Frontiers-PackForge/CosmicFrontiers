@@ -76,11 +76,4 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1200)
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV]);
-    //Recycling for Sodium Sulfate Na_2SO_4
-    event.recipes.gtceu.electrolyzer('gtceu:electrolyzer/decomposition_electrolyzing_sodium_sulfate')
-        .itemInputs('7x gtceu:sodium_sulfate_dust')
-        .itemOutputs(['2x gtceu:sodium_dust', 'gtceu:sulfur_dust'])
-        .outputFluids('gtceu:oxygen 4000')
-        .duration(60)
-        .EUt(GTValues.VA[GTValues.LV]);
 })
