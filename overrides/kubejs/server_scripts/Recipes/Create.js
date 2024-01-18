@@ -3,7 +3,7 @@ let yeet = (itemName) => {
     event.remove({ output: itemName })
   })
   ServerEvents.tags('item', event => {
-    event.add('forge:viewers/hidden_from_recipe', itemName)
+    event.add('c:hidden_from_recipe_viewers', itemName)
   })
 }
 

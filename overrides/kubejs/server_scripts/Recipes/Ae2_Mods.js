@@ -3,15 +3,15 @@ let yeet = (itemName) => {
       event.remove({ output: itemName })
     })
   ServerEvents.tags('item', event => {
-      event.add('forge:viewers/hidden_from_recipe', itemName)
+      event.add('c:hidden_from_recipe_viewers', itemName)
   })
 }
 yeet('ae2:fluix_glass_cable')
 yeet('ae2:fluix_covered_cable')
 yeet('ae2:fluix_covered_dense_cable')
 yeet('ae2:printed_calculation_processor')
-yeet('ae2:printed_calculation_processor')
-yeet('ae2:printed_logic_processor')
+yeet('ae2:printed_silicon')
+yeet('ae2:printed_engineering_processor')
 yeet('ae2:printed_logic_processor')
 yeet('ae2:logic_processor')
 yeet('ae2:calculation_processor')
@@ -293,7 +293,11 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LV])
 
 
-
+    event.recipes.gtceu.assembler('ae2:storage_bus')
+    .itemInputs(['ae2:cable_interface','#forge:chests','ae2:formation_core', 'ae2:annihilation_core'])
+    .itemOutputs('ae2:storage_bus')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.LV]);
 
 
 

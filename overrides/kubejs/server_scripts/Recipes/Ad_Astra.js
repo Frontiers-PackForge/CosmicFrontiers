@@ -3,7 +3,7 @@ let yeet = (itemName) => {
       event.remove({ output: itemName })
     })
   ServerEvents.tags('item', event => {
-      event.add('forge:viewers/hidden_from_recipe', itemName)
+      event.add('c:hidden_from_recipe_viewers', itemName)
       event.remove('forge:tools/hammers', itemName)
   })
 }
@@ -12,7 +12,7 @@ let yeet_f = (itemName) => {
       event.remove({ output: Fluid.of(itemName) })
     })
   ServerEvents.tags('fluid', event => {
-      event.add('forge:viewers/hidden_from_recipe', itemName)
+      event.add('c:hidden_from_recipe_viewers', itemName)
   })
 }   //This regex is apparently messing with the CEU steel ingot as well we also don't wanna hide the AA higher tier ingots quite yet 
     // yeet(/ad_astra:(.*)_ingot/);

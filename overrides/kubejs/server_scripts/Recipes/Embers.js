@@ -6,6 +6,7 @@ let yeet = (itemName) => {
     })
   ServerEvents.tags('item', event => {
       event.remove('forge:tools/hammers', itemName)
+      event.add('c:hidden_from_recipe_viewers', itemName)
   })
 }
 

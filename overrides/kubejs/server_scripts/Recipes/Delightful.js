@@ -8,6 +8,8 @@ let yeet = (itemName) => {
         event.add('forge:viewers/hidden_from_recipe', itemName)
         event.remove('forge:tools/knives', itemName)
         event.remove('forge:tools/scavenging', itemName)
+        event.add('c:hidden_from_recipe_viewers', itemName)
+    
     })
 }
 //Delightful Knives getting yeeted
