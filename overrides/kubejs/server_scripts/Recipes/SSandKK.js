@@ -51,7 +51,7 @@ v_materials.forEach(item => {
         ' BC', 
         'A  '  
       ], {
-        A: '#forge:sticks/wood',
+        A: '#forge:rods/wooden',
         B: `gtceu:${item}_plate`,
         C: '#forge:tools/hammers',
         D: '#forge:tools/files'
@@ -62,7 +62,7 @@ v_materials.forEach(item => {
         'DAC', 
         'B  '  
       ], {
-        A: '#forge:sticks/wood',
+        A: '#forge:rods/wooden',
         B: `gtceu:${item}_plate`,
         C: '#forge:tools/hammers',
         D: '#forge:tools/files'
@@ -73,7 +73,7 @@ v_materials.forEach(item => {
         ' BC', 
         'A  '  
       ], {
-        A: '#forge:sticks/wood',
+        A: '#forge:rods/wooden',
         B: `gtceu:${item}_rod`,
         C: '#forge:tools/hammers',
         D: '#forge:tools/files'
@@ -84,7 +84,7 @@ v_materials.forEach(item => {
         'ABB', 
         '  C'  
       ], {
-        A: '#forge:sticks/wood',
+        A: '#forge:rods/wooden',
         B: `gtceu:${item}_plate`,
         C: '#forge:tools/hammers',
         D: '#forge:tools/files'
@@ -95,7 +95,7 @@ v_materials.forEach(item => {
         'AC ', 
         '   '  
       ], {
-        A: '#forge:sticks/wood',
+        A: '#forge:rods/wooden',
         B: `gtceu:${item}_rod`,
         C: '#forge:tools/hammers',
         D: '#forge:tools/files'
@@ -106,7 +106,7 @@ v_materials.forEach(item => {
         ' AC', 
         'A  '  
       ], {
-        A: '#forge:sticks/wood',
+        A: '#forge:rods/wooden',
         B: `gtceu:${item}_plate`,
         C: '#forge:tools/hammers',
         D: '#forge:tools/files'
@@ -117,7 +117,7 @@ v_materials.forEach(item => {
         ' AB', 
         'A C'  
       ], {
-        A: '#forge:sticks/wood',
+        A: '#forge:rods/wooden',
         B: `gtceu:${item}_plate`,
         C: '#forge:tools/hammers',
         D: '#forge:tools/files'
@@ -128,7 +128,7 @@ v_materials.forEach(item => {
         'BAB', 
         'C  '  
       ], {
-        A: '#forge:sticks/wood',
+        A: '#forge:rods/wooden',
         B: `gtceu:${item}_plate`,
         C: '#forge:tools/hammers',
         D: '#forge:tools/files',
@@ -140,7 +140,7 @@ v_materials.forEach(item => {
         'AA ', 
         'B  '  
       ], {
-        B: '#forge:sticks/wood',
+        B: '#forge:rods/wooden',
         A: `gtceu:${item}_plate`,
         C: '#forge:tools/hammers',
         D: '#forge:tools/files',
@@ -152,7 +152,7 @@ v_materials.forEach(item => {
         'EBE', 
         'AED'  
       ], {
-        A: '#forge:sticks/wood',
+        A: '#forge:rods/wooden',
         B: `gtceu:${item}_plate`,
         C: '#forge:tools/hammers',
         D: '#forge:tools/files',
@@ -164,7 +164,7 @@ v_materials.forEach(item => {
         'EEE', 
         'DBC'  
       ], {
-        B: '#forge:sticks/wood',
+        B: '#forge:rods/wooden',
         A: `gtceu:${item}_plate`,
         C: '#forge:tools/hammers',
         D: '#forge:tools/files',
@@ -176,7 +176,7 @@ v_materials.forEach(item => {
         'EBE', 
         'DBC'  
       ], {
-        B: '#forge:sticks/wood',
+        B: '#forge:rods/wooden',
         A: `gtceu:${item}_plate`,
         C: '#forge:tools/hammers',
         D: '#forge:tools/files',
@@ -188,7 +188,7 @@ v_materials.forEach(item => {
         'B B', 
         'EAE'  
       ], {
-        A: '#forge:sticks/wood',
+        A: '#forge:rods/wooden',
         B: `gtceu:${item}_plate`,
         C: '#forge:tools/hammers',
         D: '#forge:tools/files',
@@ -200,7 +200,7 @@ v_materials.forEach(item => {
         'BAC', 
         'AD '  
       ], {
-        A: '#forge:sticks/wood',
+        A: '#forge:rods/wooden',
         B: `gtceu:${item}_plate`,
         C: '#forge:tools/hammers',
         D: '#forge:tools/files',
@@ -212,7 +212,7 @@ v_materials.forEach(item => {
         'BAB', 
         'ADC'  
       ], {
-        A: '#forge:sticks/wood',
+        A: '#forge:rods/wooden',
         B: `gtceu:${item}_plate`,
         C: '#forge:tools/hammers',
         D: '#forge:tools/files',
