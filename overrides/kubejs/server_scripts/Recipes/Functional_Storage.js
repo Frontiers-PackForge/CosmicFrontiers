@@ -42,7 +42,7 @@ ServerEvents.recipes( e => {
           ], {
             B: `minecraft:${item}_planks`, 
             A: 'gtceu:iron_screw',  
-            C: '#forge:chest'   
+            C: '#forge:chests'   
           }
         )
         //using the woodtypes variable to make all the 1x2 drawers
@@ -53,7 +53,7 @@ ServerEvents.recipes( e => {
           ], {
             B: `minecraft:${item}_planks`, 
             A: 'gtceu:iron_screw',  
-            C: '#forge:chest'   
+            C: '#forge:chests'   
           }
         )
         //^^ 2x2 drawers
@@ -64,7 +64,7 @@ ServerEvents.recipes( e => {
         ], {
           C: `minecraft:${item}_planks`, 
           B: 'gtceu:iron_screw',  
-          A: '#forge:chest'   
+          A: '#forge:chests'   
         }
       )
     })
@@ -77,7 +77,7 @@ ServerEvents.recipes( e => {
     ], {
       B: `gtceu:steel_frame`, 
       A: 'gtceu:iron_screw',  
-      C: '#forge:chest'   
+      C: '#forge:chests'   
     }
     )
     e.shaped(`functionalstorage:framed_2`, [
@@ -87,7 +87,7 @@ ServerEvents.recipes( e => {
     ], {
       B: `gtceu:steel_frame`, 
       A: 'gtceu:iron_screw',  
-      C: '#forge:chest'   
+      C: '#forge:chests'   
     }
     )
     e.shaped(`functionalstorage:framed_4`, [
@@ -97,7 +97,7 @@ ServerEvents.recipes( e => {
     ], {
       C: `gtceu:steel_frame`, 
       B: 'gtceu:iron_screw',  
-      A: '#forge:chest'   
+      A: '#forge:chests'   
     }
     )
     e.shaped('functionalstorage:storage_controller', [
@@ -162,7 +162,7 @@ ServerEvents.recipes( e => {
       'AAA'  
     ], {
       A: `gtceu:annealed_copper_plate`, 
-      B: 'minecraft:chest',  
+      B: 'minecraft:chests',  
       C: '#functionalstorage:drawer',
       D: '#forge:tools/hammers'
     }
