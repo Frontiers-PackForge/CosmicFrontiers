@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
   upgradeStorage('minecraft:sticky_piston', 'pickup');
   upgradeStorage('#forge:string', 'filter');
   upgradeStorage('#forge:ender_pearls', 'magnet');
-  upgradeStorage('#forge:golden_apple', 'feeding');
+  upgradeStorage('minecraft:golden_apple', 'feeding');
   upgradeStorage('minecraft:piston', 'compacting');
   upgradeStorage('#forge:obsidian', 'void');
   upgradeSmeltingStorage('minecraft:furnace', 'smelting');
