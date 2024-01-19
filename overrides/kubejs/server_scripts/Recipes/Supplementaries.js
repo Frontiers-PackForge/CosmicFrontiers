@@ -202,7 +202,7 @@ ServerEvents.recipes(event => {
         ' T '
     ], {
         P: '#minecraft:planks',
-        S: '#forge:sticks/wood',
+        S: '#forge:rods/wooden',
         T: 'gtceu:stone_plate'
     })
     event.remove({output:'supplementaries:safe'})
