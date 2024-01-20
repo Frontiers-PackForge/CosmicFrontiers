@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
         .itemInputs('7x gtceu:chromite_dust')
         .inputFluids('gtceu:oxygen 7000')
         .inputFluids('gtceu:sodium_carbonate_solution 7000')
-        .itemOutputs('5x gtceu:hematite_dust')
+        .itemOutputs('5x gtceu:banded_iron_dust')
         .outputFluids('gtceu:carbon_dioxide 4000')
         .outputFluids('gtceu:sodium_chromate_solution 4000')
         .duration(120)
@@ -76,4 +76,27 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1200)
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV]);
+
+    event.recipes.gtceu.chemical_reactor('gtceu:chemical_reactor/sodium_sulfide_from_sodium_sulfate')
+        .itemInputs('7x gtceu:sodium_sulfate_dust')
+        .itemInputs('2x gtceu:carbon_dust')
+        .itemOutputs('3x gtceu:sodium_sulfide_dust')
+        .outputFluids('gtceu:carbon_dioxide 2000')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.MV]);
+
+    event.recipes.gtceu.chemical_reactor('gtceu:chemical_reactor/soda_ash_from_sodium_sulfide')
+        .itemInputs('3x gtceu:sodium_sulfide_dust')
+        .itemInputs('5x gtceu:quicklime_dust')
+        .itemOutputs('6x gtceu:soda_ash_dust')
+        .itemOutputs('2x gtceu:calcium_sulfide_dust')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.MV]);
+
+    event.recipes.gtceu.chemical_reactor('gtceu:electrolyzer/calcium_sulfide_decomp')
+        .itemInputs('2x gtceu:calcium_sulfide_dust')
+        .itemOutputs('1x gtceu:calcium_dust')
+        .itemOutputs('1x gtceu:sulfur_dust')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.LV]);
 })
