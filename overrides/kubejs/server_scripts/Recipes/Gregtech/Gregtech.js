@@ -257,6 +257,44 @@ ServerEvents.recipes(event => {
     .duration(60)
     .EUt(GTValues.VA[GTValues.LV]);
 
+  //Redstone Lense and removal of Ruby Lense
+  event.remove({ output: 'gtceu:ruby_lens' })
+  event.recipes.gtceu.lathe('gtceu:zanite_lens_creation')
+    .itemInputs('gtceu:zanite_plate')
+    .itemOutputs('gtceu:zanite_lens')
+    .duration(1200)
+    .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.lathe('gtceu:zanite_lens_creation_exq')
+    .itemInputs('gtceu:exquisite_zanite_gem')
+    .itemOutputs('gtceu:zanite_lens')
+    .duration(2400)
+    .EUt(GTValues.VA[GTValues.LV]);
+    event.remove({ output: 'gtceu:ilc_wafer' })
+    event.recipes.gtceu.laser_engraver('gtceu:ilc_1x')
+    .itemInputs('gtceu:silicon_wafer')
+    .notConsumable('gtceu:zanite_lens')
+    .itemOutputs('gtceu:ilc_wafer')
+    .duration(900)
+    .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.laser_engraver('gtceu:ilc_4x')
+    .itemInputs('gtceu:phosphorus_wafer')
+    .notConsumable('gtceu:zanite_lens')
+    .itemOutputs('4x gtceu:ilc_wafer')
+    .duration(500)
+    .EUt(GTValues.VA[GTValues.HV]);
+    event.recipes.gtceu.laser_engraver('gtceu:ilc_8x')
+    .itemInputs('gtceu:naquadah_wafer')
+    .notConsumable('gtceu:zanite_lens')
+    .itemOutputs('8x gtceu:ilc_wafer')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.laser_engraver('gtceu:ilc_16x')
+    .itemInputs('gtceu:neutronium_wafer')
+    .notConsumable('gtceu:zanite_lens')
+    .itemOutputs('16x gtceu:ilc_wafer')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.IV]);
+  
   //LV EMITTER
   event.remove({ output: 'gtceu:lv_emitter' })
   event.recipes.gtceu.assembler('gtceu:lv_emitter_recipe')
@@ -342,22 +380,8 @@ ServerEvents.recipes(event => {
   }
   drying('create:shaft', 'create:cogwheel', 40)
 })
-ServerEvents.tags('item', event => {
-  //Exclude Hammers
-  GTRegistries.MATERIALS.forEach(id => {
-    event.add('ftbultimine:excluded_tools', [`gtceu:${id}_mining_hammer`])
-  })
-  GTRegistries.MATERIALS.forEach(id => {
-    event.add('forge:viewers/hidden_from_recipe', [`gtceu:${id}_turbine_blade`])
-  })
-})
 
 ServerEvents.tags('block', event => {
-  GTRegistries.MATERIALS.forEach(id => {
-    event.add('ftbultimine:excluded_blocks', [`gtceu:andesite_${id}_ore`, `gtceu:diorite_${id}_ore`, `gtceu:deepslate_${id}_ore`, `gtceu:${id}_ore`, `gtceu:granite_${id}_ore`, `gtceu:netherrack_${id}_ore`, `gtceu:endstone_${id}_ore`])
-  })
-  event.add('ftbultimine:excluded_blocks', 'minecraft:powder_snow')
-
   event.remove('aether:aether_portal_blocks', 'minecraft:glowstone'),
     event.add('aether:aether_portal_blocks', 'gtceu:frostproof_machine_casing')
 })
@@ -374,13 +398,6 @@ ServerEvents.recipes(e => {
     e.recipes.createDeploying(inter, [inter, 'gtceu:tin_spring']),
     e.recipes.createDeploying(inter, [inter, 'gtceu:rubber_plate']),
   ]).transitionalItem(inter).loops(2) // set the transitional item and the number of loops
-
-  //Hotfixes for Greg machine recipes
-
-
-
-
-
 
 
 })

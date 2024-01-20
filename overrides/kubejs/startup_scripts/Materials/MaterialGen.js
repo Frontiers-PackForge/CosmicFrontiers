@@ -10,6 +10,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('zanite')
         .gem()
         .ore()
+        .flags(GTMaterialFlags.GENERATE_LENS,GTMaterialFlags.GENERATE_PLATE)
         .color(0xa521fc).iconSet(GTMaterialIconSet.DIAMOND)
     event.create('ambrosium')
         .ore()
