@@ -79,5 +79,9 @@
   "material.gtceu.prepared_terrasteel": "Prepared Terrasteel",
   "material.gtceu.unstable_terrasteel": "Unstable Terrasteel",
   "material.gtceu.zano_aluminate": "Zano Aluminate",
-  "material.gtceu.potent_mana": "Potent Mana"
+  "material.gtceu.potent_mana": "Potent Mana",
+  "material.gtceu.nether_sediment_sludge": "Nether Sediment Sludge",
+  "material.gtceu.source_oils": "Source Oil Extract",
+  "material.gtceu.source_enhanced_bio_fuel": "Source Diesel",
+  "material.gtceu.calcium_sulfide": "Calcium Sulfide"
 }
