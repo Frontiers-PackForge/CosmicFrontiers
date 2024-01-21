@@ -264,37 +264,41 @@ ServerEvents.recipes(event => {
     .itemOutputs('gtceu:zanite_lens')
     .duration(1200)
     .EUt(GTValues.VA[GTValues.MV]);
-    event.recipes.gtceu.lathe('gtceu:zanite_lens_creation_exq')
+  event.recipes.gtceu.lathe('gtceu:zanite_lens_creation_exq')
     .itemInputs('gtceu:exquisite_zanite_gem')
     .itemOutputs('gtceu:zanite_lens')
     .duration(2400)
     .EUt(GTValues.VA[GTValues.LV]);
-    event.remove({ output: 'gtceu:ilc_wafer' })
-    event.recipes.gtceu.laser_engraver('gtceu:ilc_1x')
+  event.remove({ output: 'gtceu:ilc_wafer' })
+  event.recipes.gtceu.laser_engraver('gtceu:ilc_1x')
     .itemInputs('gtceu:silicon_wafer')
     .notConsumable('gtceu:zanite_lens')
     .itemOutputs('gtceu:ilc_wafer')
     .duration(900)
     .EUt(GTValues.VA[GTValues.MV]);
-    event.recipes.gtceu.laser_engraver('gtceu:ilc_4x')
+  event.recipes.gtceu.laser_engraver('gtceu:ilc_4x')
     .itemInputs('gtceu:phosphorus_wafer')
     .notConsumable('gtceu:zanite_lens')
     .itemOutputs('4x gtceu:ilc_wafer')
     .duration(500)
     .EUt(GTValues.VA[GTValues.HV]);
-    event.recipes.gtceu.laser_engraver('gtceu:ilc_8x')
+  event.recipes.gtceu.laser_engraver('gtceu:ilc_8x')
     .itemInputs('gtceu:naquadah_wafer')
     .notConsumable('gtceu:zanite_lens')
     .itemOutputs('8x gtceu:ilc_wafer')
     .duration(200)
     .EUt(GTValues.VA[GTValues.EV]);
-    event.recipes.gtceu.laser_engraver('gtceu:ilc_16x')
+  event.recipes.gtceu.laser_engraver('gtceu:ilc_16x')
     .itemInputs('gtceu:neutronium_wafer')
     .notConsumable('gtceu:zanite_lens')
     .itemOutputs('16x gtceu:ilc_wafer')
     .duration(50)
     .EUt(GTValues.VA[GTValues.IV]);
+
+//Source Oil Atm
+
   
+
   //LV EMITTER
   event.remove({ output: 'gtceu:lv_emitter' })
   event.recipes.gtceu.assembler('gtceu:lv_emitter_recipe')
