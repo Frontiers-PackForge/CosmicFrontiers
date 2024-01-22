@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
       .duration(100)
       .EUt(`${euType}`);
     event.recipes.gtceu.laminator(`ae2:${tier}_smart_dense_cable`)
-      .itemInputs([`gtceu:${tier}_quad_cable`, `8x gtceu:${tier}_foil`])
+      .itemInputs([`gtceu:${tier}_quadruple_cable`, `8x gtceu:${tier}_foil`])
       .inputFluids(`tin_alloy 144`)
       .itemOutputs(`${output}x ae2:fluix_smart_dense_cable`)
       .duration(100)
