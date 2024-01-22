@@ -93,10 +93,10 @@ ServerEvents.recipes(event => {
         .duration(40)
         .EUt(GTValues.VA[GTValues.MV]);
 
-    event.recipes.gtceu.chemical_reactor('gtceu:electrolyzer/calcium_sulfide_decomp')
-        .itemInputs('2x gtceu:calcium_sulfide_dust')
-        .itemOutputs('1x gtceu:calcium_dust')
-        .itemOutputs('1x gtceu:sulfur_dust')
-        .duration(40)
-        .EUt(GTValues.VA[GTValues.LV]);
+    // event.recipes.gtceu.chemical_reactor('gtceu:electrolyzer/calcium_sulfide_decomp')
+    //     .itemInputs('2x gtceu:calcium_sulfide_dust')
+    //     .itemOutputs('1x gtceu:calcium_dust')
+    //     .itemOutputs('1x gtceu:sulfur_dust')
+    //     .duration(40)
+    //     .EUt(GTValues.VA[GTValues.LV]);
 })
