@@ -138,8 +138,15 @@ ServerEvents.recipes(event => {
 
 
 
-
-       event.recipes.botania.runic_altar('gtceu:mana_simulator', ['botania:blacker_lotus', 'gtceu:good_integrated_circuit', 'gtceu:mana_steel_plate','gtceu:mana_steel_plate','gtceu:mana_steel_plate','gtceu:mana_steel_plate','gtceu:mana_steel_octal_wire','gtceu:mana_steel_octal_wire'], 250000)
+//TODO - Mechanical Flower Recipes
+       event.recipes.botania.runic_altar('gtceu:mana_simulator', ['botania:blacker_lotus', '#gtceu:circuits/mv', 'gtceu:mana_steel_plate','gtceu:mana_steel_plate','gtceu:mana_steel_plate','gtceu:mana_steel_plate','gtceu:mana_steel_octal_wire','gtceu:mana_steel_octal_wire'], 250000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_thermalily', ['botania:thermalily','botania:blacker_lotus','#gtceu:circuits/mv','botania:rune_mana','gtceu:mana_steel_plate','gtceu:mana_steel_plate','#gtceu:circuits/mv' ], 50000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_munchdew', ['botania:munchdew','botania:blacker_lotus','#gtceu:circuits/mv','botania:rune_mana','gtceu:mana_steel_plate','gtceu:mana_steel_plate','#gtceu:circuits/mv' ], 50000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_kekimurus', ['botania:kekimurus','botania:blacker_lotus','#gtceu:circuits/mv','botania:rune_mana','gtceu:mana_steel_plate','gtceu:mana_steel_plate','#gtceu:circuits/mv' ], 50000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_entropinnyum', ['botania:entropinnyum','botania:blacker_lotus','#gtceu:circuits/mv','botania:rune_mana','gtceu:mana_steel_plate','gtceu:mana_steel_plate','#gtceu:circuits/mv' ], 50000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_rosa_arcana', ['botania:rosa_arcana','botania:blacker_lotus','#gtceu:circuits/mv','botania:rune_mana','gtceu:mana_steel_plate','gtceu:mana_steel_plate','#gtceu:circuits/mv' ], 50000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_rafflowsia', ['botania:rafflowsia','botania:blacker_lotus','#gtceu:circuits/mv','botania:rune_mana','gtceu:mana_steel_plate','gtceu:mana_steel_plate','#gtceu:circuits/mv' ], 50000)
+       
 
 
 
