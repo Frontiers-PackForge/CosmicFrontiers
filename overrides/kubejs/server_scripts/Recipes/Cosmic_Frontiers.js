@@ -125,12 +125,21 @@ ServerEvents.recipes(event => {
               .outputFluids(Fluid.of('gtceu:potent_mana', 3000))
               .duration(120)
               .EUt(GTValues.VA[GTValues.HV]);
+       event.shaped('gtceu:hp_steam_masonry_oven', [
+              'WWW',
+              'PBP',
+              'SSS'
+       ], {
+              W: 'gtceu:wrought_iron_plate',
+              P: 'gtceu:steel_small_fluid_pipe',
+              B: 'minecraft:blast_furnace',
+              S: 'minecraft:smooth_stone',
+       })
 
-       
 
 
 
-
+       event.recipes.botania.runic_altar('gtceu:mana_simulator', ['botania:blacker_lotus', 'gtceu:good_integrated_circuit', 'gtceu:mana_steel_plate','gtceu:mana_steel_plate','gtceu:mana_steel_plate','gtceu:mana_steel_plate','gtceu:mana_steel_octal_wire','gtceu:mana_steel_octal_wire'], 250000)
 
 
 
