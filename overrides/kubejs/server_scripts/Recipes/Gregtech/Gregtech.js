@@ -302,7 +302,7 @@ ServerEvents.recipes(event => {
   //LV EMITTER
   event.remove({ output: 'gtceu:lv_emitter' })
   event.recipes.gtceu.assembler('gtceu:lv_emitter_recipe')
-    .itemInputs(['2x gtceu:mana_steel_single_cable', '4x gtceu:mana_steel_rod', 'gtceu:quartzite_gem', '2x #forge:circuits/lv'])
+    .itemInputs(['2x gtceu:mana_steel_single_cable', '4x gtceu:mana_steel_rod', 'gtceu:quartzite_gem', '2x #gtceu:circuits/lv'])
     .itemOutputs('gtceu:lv_emitter')
     .duration(40)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -369,7 +369,7 @@ ServerEvents.recipes(event => {
     W: 'gtceu:mana_steel_double_cable',
     R: 'gtceu:lv_robot_arm',
     H: 'gtceu:lv_machine_hull',
-    C: '#forge:circuits/mv',
+    C: '#gtceu:circuits/mv',
     E: 'gtceu:lv_emitter',
     O: 'gtceu:lv_conveyor_module',
   })
@@ -537,7 +537,7 @@ ServerEvents.recipes(event => {
     ], {
       A: `gtceu:${cableMaterial}_quadruple_wire`,
       B: `gtceu:${tier}_conveyor_module`,
-      C: `#forge:circuits/${tier}`,
+      C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`
     }
@@ -549,7 +549,7 @@ ServerEvents.recipes(event => {
     ], {
       A: 'minecraft:redstone_lamp',
       B: `gtceu:${tier}_conveyor_module`,
-      C: `#forge:circuits/${tier}`,
+      C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`
     }
@@ -562,7 +562,7 @@ ServerEvents.recipes(event => {
       A: `gtceu:${coilType}_coil_block`,
       B: `gtceu:${tier}_conveyor_module`,
       P: `gtceu:${tier}_electric_piston`,
-      C: `#forge:circuits/${tier}`,
+      C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`
     }
@@ -575,7 +575,7 @@ ServerEvents.recipes(event => {
       A: `gtceu:steel_rod`,
       P: `gtceu:${tier}_electric_motor`,
       R: `gtceu:${tier}_robot_arm`,
-      C: `#forge:circuits/${tier}`,
+      C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`
     }
@@ -588,7 +588,7 @@ ServerEvents.recipes(event => {
       A: `gtceu:mana_steel_plate`,
       P: `gtceu:${tier}_electric_piston`,
       B: `gtceu:${tier}_electric_pump`,
-      C: `#forge:circuits/${tier}`,
+      C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`
     }
@@ -598,9 +598,22 @@ ServerEvents.recipes(event => {
       'BHB',
       'ZPZ'
     ], {
-      A: `gtceu:${coilType}_coil_block`,
+      A: `gtceu:${coilType}_spring`,
       B: `gtceu:${tier}_conveyor_module`,
-      C: `#forge:circuits/${tier}`,
+      C: `#gtceu:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`,
+      P: `gtceu:${tier}_electric_pump`
+    }
+    )
+    event.shaped(`gtceu:${tier}_chemical_dehydrator`, [
+      'CAC',
+      'BHB',
+      'ZPZ'
+    ], {
+      A: `gtceu:${coilType}_spring`,
+      B: `gtceu:${tier}_electric_motor`,
+      C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`,
       P: `gtceu:${tier}_electric_pump`

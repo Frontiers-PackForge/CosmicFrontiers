@@ -21,8 +21,8 @@ TerraSteel Chain
 */
 ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('gtceu:mixer/zano_aluminate_creation')
-        .itemInputs(['4x gtceu:zanite_dust', '4x gtceu:ambrosium_dust', '4x gtceu:aluminium_dust'])
-        .inputFluids('deep_aether:poison 2000', 'gtceu:sodium_carbonate_solution 2000')
+        .itemInputs(['4x gtceu:zanite_dust', '4x gtceu:ambrosium_dust'])
+        .inputFluids('gtceu:aluminium 576')
         .itemOutputs('12x gtceu:zano_aluminate_dust')
         .duration(390)
         .EUt(GTValues.VA[GTValues.MV]);

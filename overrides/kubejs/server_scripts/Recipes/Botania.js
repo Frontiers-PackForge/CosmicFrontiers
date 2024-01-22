@@ -6,7 +6,7 @@ ServerEvents.tags('item', event => {
 
 //Adding recipes for registered materials
 ServerEvents.recipes(e => {
-//Livingrock
+    //Livingrock
     e.recipes.gtceu.cutter('gtceu:cutter/cut_livingrock_block_to_plate_water')
         .itemInputs('botania:livingrock')
         .inputFluids('minecraft:water 17')
@@ -25,8 +25,8 @@ ServerEvents.recipes(e => {
         .itemOutputs('9x gtceu:livingrock_plate')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(184)
-    
-//Livingwood
+
+    //Livingwood
     //Bolt
     e.recipes.gtceu.cutter('gtceu:cutter/cut_livingwood_twig_to_bolt_water')
         .itemInputs('botania:livingwood_twig')
@@ -74,9 +74,9 @@ ServerEvents.recipes(e => {
 
 
 
-//Actually starting botania recipes
+    //Actually starting botania recipes
     //Petal Apothecary
-    e.remove({output:'botania:apothecary_default'})
+    e.remove({ output: 'botania:apothecary_default' })
     e.shaped('botania:apothecary_default', [
         'SPS',
         ' C ',
@@ -87,7 +87,7 @@ ServerEvents.recipes(e => {
         C: 'minecraft:cobblestone'
     })
     //Petal Apothecary Deepslate
-    e.remove({output:'botania:apothecary_deepslate'})
+    e.remove({ output: 'botania:apothecary_deepslate' })
     e.shaped('botania:apothecary_deepslate', [
         'SPS',
         ' C ',
@@ -98,7 +98,7 @@ ServerEvents.recipes(e => {
         C: 'minecraft:cobbled_deepslate'
     })
     //Petal Apothecary Mossy, leaving the rest as vanilla recipes. They are gated deep into botania anyways.
-    e.remove({output:'botania:apothecary_mossy'})
+    e.remove({ output: 'botania:apothecary_mossy' })
     e.shaped('botania:apothecary_mossy', [
         'SPS',
         ' C ',
@@ -109,7 +109,7 @@ ServerEvents.recipes(e => {
         C: 'minecraft:mossy_cobblestone'
     })
     //Mana Spreader
-    e.remove({output:'botania:mana_spreader'})
+    e.remove({ output: 'botania:mana_spreader' })
     e.shaped('botania:mana_spreader', [
         'LLL',
         'CPG',
@@ -121,8 +121,8 @@ ServerEvents.recipes(e => {
         G: 'gtceu:glass_lens'
     })
     //Diluted Mana Pool
-    e.remove({output:'botania:diluted_pool'})
-    e.shaped('botania:diluted_pool',[
+    e.remove({ output: 'botania:diluted_pool' })
+    e.shaped('botania:diluted_pool', [
         'PMP',
         'SSS',
         '   '
@@ -132,7 +132,7 @@ ServerEvents.recipes(e => {
         S: 'botania:livingrock_slab'
     })
     //Mana Pool. Made it possible after diluted pool, but can be changed.
-    e.remove({output:'botania:mana_pool'})
+    e.remove({ output: 'botania:mana_pool' })
     e.shaped('botania:mana_pool', [
         'PDP',
         'LLL',
@@ -143,7 +143,7 @@ ServerEvents.recipes(e => {
         L: 'botania:livingrock'
     })
     //Alchemy Catalyst
-    e.remove({output:'botania:alchemy_catalyst'})
+    e.remove({ output: 'botania:alchemy_catalyst' })
     e.shaped('botania:alchemy_catalyst', [
         'LCL',
         'BPB',
@@ -156,8 +156,8 @@ ServerEvents.recipes(e => {
         C: '#forge:circuits/mv'
     })
     //Runic Altar
-    e.remove({output:'botania:runic_altar'})
-    e.shaped('botania:runic_altar',[
+    e.remove({ output: 'botania:runic_altar' })
+    e.shaped('botania:runic_altar', [
         'PMP',
         'LDL',
         'LCL'
@@ -169,7 +169,7 @@ ServerEvents.recipes(e => {
         L: 'botania:livingrock'
     })
     //Botanical Brewery
-    e.remove({output:'botania:brewery'})
+    e.remove({ output: 'botania:brewery' })
     e.shaped('botania:brewery', [
         'PBP',
         'CRC',
@@ -183,7 +183,7 @@ ServerEvents.recipes(e => {
         C: '#forge:circuits/lv'
     })
     //Mana Pylon
-    e.remove({output:'botania:mana_pylon'})
+    e.remove({ output: 'botania:mana_pylon' })
     e.shaped('botania:mana_pylon', [
         ' G ',
         'MDM',
@@ -194,7 +194,7 @@ ServerEvents.recipes(e => {
         D: 'botania:mana_diamond'
     })
     //Mana Distributor
-    e.remove({output:'botania:mana_distributor'})
+    e.remove({ output: 'botania:mana_distributor' })
     e.shaped('botania:mana_distributor', [
         'LPL',
         'M M',
@@ -205,7 +205,7 @@ ServerEvents.recipes(e => {
         M: 'gtceu:mana_steel_plate'
     })
     //Mana Void
-    e.remove({output:'botania:mana_void'})
+    e.remove({ output: 'botania:mana_void' })
     e.shaped('botania:mana_void', [
         'LPL',
         'M M',
@@ -216,8 +216,8 @@ ServerEvents.recipes(e => {
         M: 'minecraft:obsidian'
     })
     //Mana Detector
-    e.remove({output:'botania:mana_detector'})
-    e.shaped('botania:mana_detector',[
+    e.remove({ output: 'botania:mana_detector' })
+    e.shaped('botania:mana_detector', [
         'RLR',
         'PTP',
         'RLR'
@@ -228,7 +228,7 @@ ServerEvents.recipes(e => {
         P: 'gtceu:livingrock_plate'
     })
     //Spreader Turntable
-    e.remove({output:'botania:turntable'})
+    e.remove({ output: 'botania:turntable' })
     e.shaped('botania:turntable', [
         'PDP',
         'SGS',
@@ -241,7 +241,7 @@ ServerEvents.recipes(e => {
         X: 'minecraft:sticky_piston'
     })
     //Tiny Planet Charm
-    e.remove({output:'botania:tiny_planet'})
+    e.remove({ output: 'botania:tiny_planet' })
     e.shaped('botania:tiny_planet', [
         'LSL',
         'SPS',
@@ -252,7 +252,7 @@ ServerEvents.recipes(e => {
         P: 'botania:mana_pearl'
     })
     //Tiny Planet Block
-    e.remove({output:'botania:tiny_planet_block'})
+    e.remove({ output: 'botania:tiny_planet_block' })
     e.shaped('botania:tiny_planet_block', [
         'SSS',
         'SPS',
@@ -262,8 +262,8 @@ ServerEvents.recipes(e => {
         P: 'botania:tiny_planet'
     })
     //Drum of the Wild
-    e.remove({output:'botania:drum_wild'})
-    e.shaped('botania:drum_wild',[
+    e.remove({ output: 'botania:drum_wild' })
+    e.shaped('botania:drum_wild', [
         'LWL',
         'SHS',
         'LDL'
@@ -275,8 +275,8 @@ ServerEvents.recipes(e => {
         H: 'botania:horn_grass'
     })
     //Drum of the Canopy
-    e.remove({output:'botania:drum_canopy'})
-    e.shaped('botania:drum_canopy',[
+    e.remove({ output: 'botania:drum_canopy' })
+    e.shaped('botania:drum_canopy', [
         'LWL',
         'SHS',
         'LDL'
@@ -288,8 +288,8 @@ ServerEvents.recipes(e => {
         H: 'botania:horn_leaves'
     })
     //Mana Fluxfield
-    e.remove({output:'botania:mana_fluxfield'})
-    e.shaped('botania:mana_fluxfield',[
+    e.remove({ output: 'botania:mana_fluxfield' })
+    e.shaped('botania:mana_fluxfield', [
         'LRL',
         'RMR',
         'LRL'
@@ -299,7 +299,7 @@ ServerEvents.recipes(e => {
         M: 'gtceu:mana_steel_quadruple_wire'
     })
     //Mana Pump
-    e.remove({output:'botania:pump'})
+    e.remove({ output: 'botania:pump' })
     e.shaped('botania:pump', [
         'LLL',
         'MPM',
@@ -310,7 +310,7 @@ ServerEvents.recipes(e => {
         P: 'gtceu:mv_electric_pump'
     })
     //Manatide Bellows
-    e.remove({output:'botania:bellows'})
+    e.remove({ output: 'botania:bellows' })
     e.shaped('botania:bellows', [
         'LLL',
         'APW',
@@ -322,7 +322,7 @@ ServerEvents.recipes(e => {
         W: 'cosmiccore:waxed_leather'
     })
     //Open Crate
-    e.remove({output:'botania:open_crate'})
+    e.remove({ output: 'botania:open_crate' })
     e.shaped('botania:open_crate', [
         'LLL',
         'LSL',
@@ -333,7 +333,7 @@ ServerEvents.recipes(e => {
         L: 'botania:livingwood_planks'
     })
     //Eye of the Ancients
-    e.remove({output:'botania:forest_eye'})
+    e.remove({ output: 'botania:forest_eye' })
     e.shaped('botania:forest_eye', [
         'MLM',
         'LPL',
@@ -344,7 +344,7 @@ ServerEvents.recipes(e => {
         P: 'minecraft:ender_eye'
     })
     //Ender Overseer
-    e.remove({output:'botania:ender_eye_block'})
+    e.remove({ output: 'botania:ender_eye_block' })
     e.shaped('botania:ender_eye_block', [
         'RER',
         'EOE',
@@ -355,7 +355,7 @@ ServerEvents.recipes(e => {
         O: 'minecraft:obsidian'
     })
     //Hovering Hourglass
-    e.remove({output:'botania:hourglass'})
+    e.remove({ output: 'botania:hourglass' })
     e.shaped('botania:hourglass', [
         'RGR',
         'BMB',
@@ -367,7 +367,7 @@ ServerEvents.recipes(e => {
         M: 'gtceu:mana_steel_fine_wire'
     })
     //Livingwood Avatar
-    e.remove({output:'botania:avatar'})
+    e.remove({ output: 'botania:avatar' })
     e.shaped('botania:avatar', [
         ' L ',
         'LCL',
@@ -378,7 +378,7 @@ ServerEvents.recipes(e => {
         D: 'botania:mana_diamond'
     })
     //Rod of the Lands
-    e.remove({output:'botania:dirt_rod'})
+    e.remove({ output: 'botania:dirt_rod' })
     e.shaped('botania:dirt_rod', [
         ' SD',
         ' TS',
@@ -390,7 +390,7 @@ ServerEvents.recipes(e => {
         R: 'botania:rune_earth'
     })
     //Rod of the Seas
-    e.remove({output:'botania:water_rod'})
+    e.remove({ output: 'botania:water_rod' })
     e.shaped('botania:water_rod', [
         ' SD',
         ' TS',
@@ -402,7 +402,7 @@ ServerEvents.recipes(e => {
         R: 'botania:rune_water'
     })
     //Rod of the Skies
-    e.remove({output:'botania:tornado_rod'})
+    e.remove({ output: 'botania:tornado_rod' })
     e.shaped('botania:tornado_rod', [
         ' SD',
         ' TS',
@@ -414,7 +414,7 @@ ServerEvents.recipes(e => {
         R: 'botania:rune_air'
     })
     //Rod of the Hells
-    e.remove({output:'botania:fire_rod'})
+    e.remove({ output: 'botania:fire_rod' })
     e.shaped('botania:fire_rod', [
         ' SD',
         ' TS',
@@ -426,7 +426,7 @@ ServerEvents.recipes(e => {
         R: 'botania:rune_fire'
     })
     //Rod of the Depths
-    e.remove({output:'botania:cobble_rod'})
+    e.remove({ output: 'botania:cobble_rod' })
     e.shaped('botania:cobble_rod', [
         ' RC',
         'STE',
@@ -439,7 +439,7 @@ ServerEvents.recipes(e => {
         E: 'botania:rune_water'
     })
     //Rod of the Plentiful Mantle
-    e.remove({output:'botania:divining_rod'})
+    e.remove({ output: 'botania:divining_rod' })
     e.shaped('botania:divining_rod', [
         ' TC',
         'STT',
@@ -450,7 +450,7 @@ ServerEvents.recipes(e => {
         C: 'botania:mana_diamond',
     })
     //Rod of the Molten Core
-    e.remove({output:'botania:smelt_rod'})
+    e.remove({ output: 'botania:smelt_rod' })
     e.shaped('botania:smelt_rod', [
         ' BF',
         'STB',
@@ -460,9 +460,9 @@ ServerEvents.recipes(e => {
         S: 'gtceu:aluminium_screw',
         B: 'minecraft:blaze_rod',
         F: 'botania:rune_fire',
-    })    
+    })
     //Rod of the Shifting Crust
-    e.remove({output:'botania:exchange_rod'})
+    e.remove({ output: 'botania:exchange_rod' })
     e.shaped('botania:exchange_rod', [
         ' BF',
         'STB',
@@ -474,7 +474,7 @@ ServerEvents.recipes(e => {
         F: 'botania:rune_sloth',
     })
     //Manasteel Helmet
-    e.remove({output:'botania:manasteel_helmet'})
+    e.remove({ output: 'botania:manasteel_helmet' })
     e.shaped('botania:manasteel_helmet', [
         'MMM',
         'MHM',
@@ -484,7 +484,7 @@ ServerEvents.recipes(e => {
         H: '#forge:tools/hammers'
     })
     //Manasteel Chestplate
-    e.remove({output:'botania:manasteel_chestplate'})
+    e.remove({ output: 'botania:manasteel_chestplate' })
     e.shaped('botania:manasteel_chestplate', [
         'MHM',
         'MMM',
@@ -494,7 +494,7 @@ ServerEvents.recipes(e => {
         H: '#forge:tools/hammers'
     })
     //Manasteel Leggings
-    e.remove({output:'botania:manasteel_leggings'})
+    e.remove({ output: 'botania:manasteel_leggings' })
     e.shaped('botania:manasteel_leggings', [
         'MMM',
         'MHM',
@@ -504,7 +504,7 @@ ServerEvents.recipes(e => {
         H: '#forge:tools/hammers'
     })
     //Manasteel Boots
-    e.remove({output:'botania:manasteel_boots'})
+    e.remove({ output: 'botania:manasteel_boots' })
     e.shaped('botania:manasteel_boots', [
         'M M',
         'MHM',
@@ -514,7 +514,7 @@ ServerEvents.recipes(e => {
         H: '#forge:tools/hammers'
     })
     //Elementium Helmet
-    e.remove({output:'botania:elementium_helmet'})
+    e.remove({ output: 'botania:elementium_helmet' })
     e.shaped('botania:elementium_helmet', [
         'MMM',
         'MHM',
@@ -524,7 +524,7 @@ ServerEvents.recipes(e => {
         H: '#forge:tools/hammers'
     })
     //Elementium Chestplate
-    e.remove({output:'botania:elementium_chestplate'})
+    e.remove({ output: 'botania:elementium_chestplate' })
     e.shaped('botania:elementium_chestplate', [
         'MHM',
         'MMM',
@@ -534,7 +534,7 @@ ServerEvents.recipes(e => {
         H: '#forge:tools/hammers'
     })
     //Elementium Leggings
-    e.remove({output:'botania:elementium_leggings'})
+    e.remove({ output: 'botania:elementium_leggings' })
     e.shaped('botania:elementium_leggings', [
         'MMM',
         'MHM',
@@ -544,7 +544,7 @@ ServerEvents.recipes(e => {
         H: '#forge:tools/hammers'
     })
     //Elementium Boots
-    e.remove({output:'botania:elementium_boots'})
+    e.remove({ output: 'botania:elementium_boots' })
     e.shaped('botania:elementium_boots', [
         'M M',
         'MHM',
@@ -554,7 +554,7 @@ ServerEvents.recipes(e => {
         H: '#forge:tools/hammers'
     })
     //Terrasteel Helmet
-    e.remove({output:'botania:terrasteel_helmet'})
+    e.remove({ output: 'botania:terrasteel_helmet' })
     e.shaped('botania:terrasteel_helmet', [
         'LRL',
         'TMT',
@@ -568,7 +568,7 @@ ServerEvents.recipes(e => {
         M: 'botania:manasteel_helmet'
     })
     //Terrasteel Chestplate
-    e.remove({output:'botania:terrasteel_chestplate'})
+    e.remove({ output: 'botania:terrasteel_chestplate' })
     e.shaped('botania:terrasteel_chestplate', [
         'LRL',
         'TMT',
@@ -582,7 +582,7 @@ ServerEvents.recipes(e => {
         M: 'botania:manasteel_chestplate'
     })
     //Terrasteel Leggings
-    e.remove({output:'botania:terrasteel_leggings'})
+    e.remove({ output: 'botania:terrasteel_leggings' })
     e.shaped('botania:terrasteel_leggings', [
         'LRL',
         'TMT',
@@ -596,7 +596,7 @@ ServerEvents.recipes(e => {
         M: 'botania:manasteel_leggings'
     })
     //Terrasteel Boots
-    e.remove({output:'botania:terrasteel_boots'})
+    e.remove({ output: 'botania:terrasteel_boots' })
     e.shaped('botania:terrasteel_boots', [
         'LRL',
         'TMT',
@@ -610,7 +610,7 @@ ServerEvents.recipes(e => {
         M: 'botania:manasteel_boots'
     })
     //Manasteel Pickaxe
-    e.remove({output:'botania:manasteel_pick'})
+    e.remove({ output: 'botania:manasteel_pick' })
     e.shaped('botania:manasteel_pick', [
         'MII',
         'HTF',
@@ -623,7 +623,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Manasteel Shovel
-    e.remove({output:'botania:manasteel_shovel'})
+    e.remove({ output: 'botania:manasteel_shovel' })
     e.shaped('botania:manasteel_shovel', [
         ' M ',
         'HTF',
@@ -635,7 +635,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Manasteel Axe
-    e.remove({output:'botania:manasteel_axe'})
+    e.remove({ output: 'botania:manasteel_axe' })
     e.shaped('botania:manasteel_axe', [
         'MIF',
         'MT ',
@@ -648,7 +648,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Manasteel Hoe
-    e.remove({output:'botania:manasteel_hoe'})
+    e.remove({ output: 'botania:manasteel_hoe' })
     e.shaped('botania:manasteel_hoe', [
         'MI ',
         'HTF',
@@ -661,7 +661,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Manasteel Sword
-    e.remove({output:'botania:manasteel_sword'})
+    e.remove({ output: 'botania:manasteel_sword' })
     e.shaped('botania:manasteel_sword', [
         ' M ',
         'HMF',
@@ -673,7 +673,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Manasteel Shears
-    e.remove({output:'botania:manasteel_shears'})
+    e.remove({ output: 'botania:manasteel_shears' })
     e.shaped('botania:manasteel_shears', [
         'HM ',
         'MF ',
@@ -684,7 +684,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Elementium Pickaxe
-    e.remove({output:'botania:elementium_pickaxe'})
+    e.remove({ output: 'botania:elementium_pickaxe' })
     e.shaped('botania:elementium_pickaxe', [
         'MII',
         'HTF',
@@ -697,7 +697,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Elementium Shovel
-    e.remove({output:'botania:elementium_shovel'})
+    e.remove({ output: 'botania:elementium_shovel' })
     e.shaped('botania:elementium_shovel', [
         ' M ',
         'HTF',
@@ -709,7 +709,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Elementium Axe
-    e.remove({output:'botania:elementium_axe'})
+    e.remove({ output: 'botania:elementium_axe' })
     e.shaped('botania:elementium_axe', [
         'MIF',
         'MT ',
@@ -722,7 +722,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Elementium Hoe
-    e.remove({output:'botania:elementium_hoe'})
+    e.remove({ output: 'botania:elementium_hoe' })
     e.shaped('botania:elementium_hoe', [
         'MI ',
         'HTF',
@@ -735,7 +735,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Elementium Sword
-    e.remove({output:'botania:elementium_sword'})
+    e.remove({ output: 'botania:elementium_sword' })
     e.shaped('botania:elementium_sword', [
         ' M ',
         'HMF',
@@ -747,7 +747,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Elementium Shears
-    e.remove({output:'botania:elementium_shears'})
+    e.remove({ output: 'botania:elementium_shears' })
     e.shaped('botania:elementium_shears', [
         'HM ',
         'MF ',
@@ -758,7 +758,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Terra Shatterer
-    e.remove({output:'botania:terra_pick'})
+    e.remove({ output: 'botania:terra_pick' })
     e.shaped('botania:terra_pick', [
         'PTP',
         'SWS',
@@ -772,7 +772,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Terra Blade
-    e.remove({output:'botania:terra_sword'})
+    e.remove({ output: 'botania:terra_sword' })
     e.shaped('botania:terra_sword', [
         ' M ',
         'HMF',
@@ -784,7 +784,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Terra Truncator
-    e.remove({output:'botania:terra_axe'})
+    e.remove({ output: 'botania:terra_axe' })
     e.shaped('botania:terra_axe', [
         'SPG',
         'SWP',
@@ -798,7 +798,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Thorn Chakram
-    e.remove({output:'botania:thorn_chakram'})
+    e.remove({ output: 'botania:thorn_chakram' })
     e.shaped('botania:thorn_chakram', [
         'VVV',
         'VTV',
@@ -808,7 +808,7 @@ ServerEvents.recipes(e => {
         T: 'gtceu:terrasteel_plate'
     })
     //Thundercaller
-    e.remove({output:'botania:thunder_sword'})
+    e.remove({ output: 'botania:thunder_sword' })
     e.shaped('botania:thunder_sword', [
         ' HE',
         'ADF',
@@ -822,7 +822,7 @@ ServerEvents.recipes(e => {
         T: 'botania:terra_sword'
     })
     //Starcaller
-    e.remove({output:'botania:star_sword'})
+    e.remove({ output: 'botania:star_sword' })
     e.shaped('botania:star_sword', [
         ' HE',
         'ADF',
@@ -836,7 +836,7 @@ ServerEvents.recipes(e => {
         T: 'botania:terra_sword'
     })
     //Manaweave Cowl
-    e.remove({output:'botania:manaweave_helmet'})
+    e.remove({ output: 'botania:manaweave_helmet' })
     e.shaped('botania:manaweave_helmet', [
         'MMM',
         'MHM',
@@ -846,7 +846,7 @@ ServerEvents.recipes(e => {
         H: '#forge:tools/knives'
     })
     //Manaweave Robe Top
-    e.remove({output:'botania:manaweave_chestplate'})
+    e.remove({ output: 'botania:manaweave_chestplate' })
     e.shaped('botania:manaweave_chestplate', [
         'MHM',
         'MMM',
@@ -856,7 +856,7 @@ ServerEvents.recipes(e => {
         H: '#forge:tools/knives'
     })
     //Manaweave Robe Bottom
-    e.remove({output:'botania:manaweave_leggings'})
+    e.remove({ output: 'botania:manaweave_leggings' })
     e.shaped('botania:manaweave_leggings', [
         'MMM',
         'MHM',
@@ -866,7 +866,7 @@ ServerEvents.recipes(e => {
         H: '#forge:tools/knives'
     })
     //Manaweave Boots
-    e.remove({output:'botania:manaweave_boots'})
+    e.remove({ output: 'botania:manaweave_boots' })
     e.shaped('botania:manaweave_boots', [
         'M M',
         'MHM',
@@ -876,7 +876,7 @@ ServerEvents.recipes(e => {
         H: '#forge:tools/knives'
     })
     //Soulscribe
-    e.remove({output:'botania:ender_dagger'})
+    e.remove({ output: 'botania:ender_dagger' })
     e.shaped('botania:ender_dagger', [
         ' P ',
         'HMF',
@@ -889,7 +889,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Livingwood Bow
-    e.remove({output:'botania:livingwood_bow'})
+    e.remove({ output: 'botania:livingwood_bow' })
     e.shaped('botania:livingwood_bow', [
         'HTS',
         'TRS',
@@ -902,7 +902,7 @@ ServerEvents.recipes(e => {
         R: 'gtceu:aluminium_ring'
     })
     //Crystal Bow
-    e.remove({output:'botania:crystal_bow'})
+    e.remove({ output: 'botania:crystal_bow' })
     e.shaped('botania:crystal_bow', [
         'HDS',
         'TRS',
@@ -916,8 +916,8 @@ ServerEvents.recipes(e => {
         D: 'botania:dragonstone'
     })
     //Mana Tablet
-    e.remove({output:'botania:mana_tablet'})
-    e.shaped('botania:mana_tablet',[
+    e.remove({ output: 'botania:mana_tablet' })
+    e.shaped('botania:mana_tablet', [
         'LLL',
         'LDL',
         'LLL'
@@ -926,8 +926,8 @@ ServerEvents.recipes(e => {
         D: 'botania:mana_diamond'
     })
     //Hand of Ender
-    e.remove({output:'botania:ender_hand'})
-    e.shaped('botania:ender_hand',[
+    e.remove({ output: 'botania:ender_hand' })
+    e.shaped('botania:ender_hand', [
         'PLO',
         'LCL',
         'OL '
@@ -938,7 +938,7 @@ ServerEvents.recipes(e => {
         C: 'minecraft:ender_chest'
     })
     //Assembly Halo
-    e.remove({output:'botania:crafting_halo'})
+    e.remove({ output: 'botania:crafting_halo' })
     e.shaped('botania:crafting_halo', [
         ' P ',
         'MCM',
@@ -949,7 +949,7 @@ ServerEvents.recipes(e => {
         C: 'minecraft:crafting_table'
     })
     //Worldshaper's Sextant
-    e.remove({output:'botania:sextant'})
+    e.remove({ output: 'botania:sextant' })
     e.shaped('botania:sextant', [
         'HTR',
         'FTT',
@@ -962,7 +962,7 @@ ServerEvents.recipes(e => {
         F: '#forge:tools/files'
     })
     //Trinket Case
-    e.remove({output:'botania:bauble_box'})
+    e.remove({ output: 'botania:bauble_box' })
     e.shaped('botania:bauble_box', [
         ' M ',
         'MCR',
@@ -973,47 +973,47 @@ ServerEvents.recipes(e => {
         C: '#forge:chests'
     })
     //Band of Mana
-    e.remove({output:'botania:mana_ring'})
+    e.remove({ output: 'botania:mana_ring' })
     e.shaped('botania:mana_ring', [
         'IM ',
         'M M',
         ' M '
     ], {
         M: 'gtceu:mana_steel_plate',
-        I: 'botania:mana_tablet' 
+        I: 'botania:mana_tablet'
     })
     //Band of Aura
-    e.remove({output:'botania:aura_ring'})
+    e.remove({ output: 'botania:aura_ring' })
     e.shaped('botania:aura_ring', [
         'IM ',
         'M M',
         ' M '
     ], {
         M: 'gtceu:mana_steel_plate',
-        I: 'botania:rune_mana' 
+        I: 'botania:rune_mana'
     })
     //Ring of Magnetization
-    e.remove({output:'botania:magnet_ring'})
+    e.remove({ output: 'botania:magnet_ring' })
     e.shaped('botania:magnet_ring', [
         'IM ',
         'M M',
         ' M '
     ], {
         M: 'gtceu:mana_steel_plate',
-        I: 'botania:lens_magnet' 
+        I: 'botania:lens_magnet'
     })
     //Ring of Correction
-    e.remove({output:'botania:swap_ring'})
+    e.remove({ output: 'botania:swap_ring' })
     e.shaped('botania:swap_ring', [
         'IM ',
         'M M',
         ' M '
     ], {
         M: 'gtceu:mana_steel_plate',
-        I: 'minecraft:clay' 
+        I: 'minecraft:clay'
     })
     //Ring of Dextrous Motion
-    e.remove({output:'botania:dodge_ring'})
+    e.remove({ output: 'botania:dodge_ring' })
     e.shaped('botania:dodge_ring', [
         'IM ',
         'M M',
@@ -1021,10 +1021,10 @@ ServerEvents.recipes(e => {
     ], {
         M: 'gtceu:mana_steel_plate',
         I: 'minecraft:emerald',
-        O: 'botania:rune_air' 
+        O: 'botania:rune_air'
     })
     //Ring of the Mantle
-    e.remove({output:'botania:mining_ring'})
+    e.remove({ output: 'botania:mining_ring' })
     e.shaped('botania:mining_ring', [
         'IMO',
         'M M',
@@ -1032,10 +1032,10 @@ ServerEvents.recipes(e => {
     ], {
         M: 'gtceu:mana_steel_plate',
         O: 'minecraft:golden_pickaxe',
-        I: 'botania:rune_earth' 
+        I: 'botania:rune_earth'
     })
     //Ring of Chordata
-    e.remove({output:'botania:water_ring'})
+    e.remove({ output: 'botania:water_ring' })
     e.shaped('botania:water_ring', [
         'IMU',
         'MPM',
@@ -1044,10 +1044,10 @@ ServerEvents.recipes(e => {
         M: 'gtceu:mana_steel_plate',
         I: 'botania:rune_water',
         O: 'minecraft:cod',
-        U: 'minecraft:pufferfish' 
+        U: 'minecraft:pufferfish'
     })
     //Mana Lens
-    e.remove({output:'botania:lens_normal'})
+    e.remove({ output: 'botania:lens_normal' })
     e.shaped('botania:lens_normal', [
         ' M ',
         'MLM',
@@ -1057,7 +1057,7 @@ ServerEvents.recipes(e => {
         L: 'gtceu:glass_lens'
     })
     //Bore Lens
-    e.remove({output:'botania:lens_mine'})
+    e.remove({ output: 'botania:lens_mine' })
     e.shaped('botania:lens_mine', [
         ' D ',
         'LML',
@@ -1069,7 +1069,7 @@ ServerEvents.recipes(e => {
         B: 'gtceu:red_alloy_bolt'
     })
     //Magnetizing Lens
-    e.remove({output:'botania:lens_magnet'})
+    e.remove({ output: 'botania:lens_magnet' })
     e.shaped('botania:lens_magnet', [
         'LSI',
         '   ',
@@ -1080,7 +1080,7 @@ ServerEvents.recipes(e => {
         I: 'gtceu:magnetic_iron_rod'
     })
     //Flash Lens
-    e.remove({output:'botania:lens_light'})
+    e.remove({ output: 'botania:lens_light' })
     e.shaped('botania:lens_light', [
         'FGF',
         'GLG',
@@ -1091,7 +1091,7 @@ ServerEvents.recipes(e => {
         L: 'botania:lens_normal'
     })
     //Sojourner's Sash
-    e.remove({output:'botania:travel_belt'})
+    e.remove({ output: 'botania:travel_belt' })
     e.shaped('botania:travel_belt', [
         'ELS',
         'L L',
@@ -1104,7 +1104,7 @@ ServerEvents.recipes(e => {
         A: 'botania:rune_air'
     })
     //Tectonic Girdle
-    e.remove({output:'botania:knockback_belt'})
+    e.remove({ output: 'botania:knockback_belt' })
     e.shaped('botania:knockback_belt', [
         'ELS',
         'L L',
@@ -1117,7 +1117,7 @@ ServerEvents.recipes(e => {
         A: 'botania:rune_earth'
     })
     //Snowflake Pendant
-    e.remove({output:'botania:ice_pendant'})
+    e.remove({ output: 'botania:ice_pendant' })
     e.shaped('botania:ice_pendant', [
         'ELS',
         'L L',
@@ -1130,7 +1130,7 @@ ServerEvents.recipes(e => {
         A: 'botania:rune_water'
     })
     //Pyroclast Pendant
-    e.remove({output:'botania:lava_pendant'})
+    e.remove({ output: 'botania:lava_pendant' })
     e.shaped('botania:lava_pendant', [
         'ELS',
         'L L',
@@ -1143,7 +1143,7 @@ ServerEvents.recipes(e => {
         A: 'botania:rune_fire'
     })
     //Cirrus Amulet
-    e.remove({output:'botania:cloud_pendant'})
+    e.remove({ output: 'botania:cloud_pendant' })
     e.shaped('botania:cloud_pendant', [
         'ELS',
         'L L',
@@ -1156,7 +1156,7 @@ ServerEvents.recipes(e => {
         A: 'botania:rune_air'
     })
     //The Spectator
-    e.remove({output:'botania:itemfinder'})
+    e.remove({ output: 'botania:itemfinder' })
     e.shaped('botania:itemfinder', [
         'SDS',
         'PEP',
@@ -1169,7 +1169,7 @@ ServerEvents.recipes(e => {
         L: 'gtceu:emerald_lens'
     })
     //Spark
-    e.remove({output:'botania:spark'})
+    e.remove({ output: 'botania:spark' })
     e.shaped('botania:spark', [
         'FPF',
         'BRB',
@@ -1181,7 +1181,7 @@ ServerEvents.recipes(e => {
         R: 'gtceu:rose_gold_ring'
     })
     //Managlass Vial
-    e.remove({output:'botania:vial'})
+    e.remove({ output: 'botania:vial' })
     e.recipes.gtceu.alloy_smelter('gtceu:alloy_smelter/manavial')
         .itemInputs('botania:mana_glass')
         .notConsumable('gtceu:bottle_casting_mold')
@@ -1195,7 +1195,7 @@ ServerEvents.recipes(e => {
         .duration(32)
         .EUt(GTValues.VA[GTValues.LV])
     //Alfglass Flask
-    e.remove({output:'botania:flask'})
+    e.remove({ output: 'botania:flask' })
     e.recipes.gtceu.alloy_smelter('gtceu:extruder/alfflask')
         .itemInputs('botania:elf_glass')
         .notConsumable('gtceu:bottle_casting_mold')
@@ -1209,77 +1209,78 @@ ServerEvents.recipes(e => {
         .duration(32)
         .EUt(GTValues.VA[GTValues.LV])
 
-//Mana Infusion Recipes
+    //Mana Infusion Recipes
     //Dumping this example here for mana infusions, took me a while to figure it out. Will do the same for all recipe types.
     //e.recipes.botania.mana_infusion('input', 'output', 'mana', 'catalyst')
-    e.remove({id:'botania:mana_infusion/manasteel'})
+    e.remove({ id: 'botania:mana_infusion/manasteel' })
     e.recipes.botania.mana_infusion('botania:manasteel_ingot', 'gtceu:blue_alloy_ingot', 4000)
     //Commented this out because I may be doing something with SS in MV and this may clash w/ it
     // e.recipes.botania.mana_infusion('botania:manasteel_ingot', 'gtceu:stainless_steel_ingot', 1000)
-    e.recipes.botania.mana_infusion('botania:blacker_lotus','minecraft:wither_rose', 100000)
-   
-    e.remove({id:'botania:mana_infusion/mana_diamond'})
+    e.recipes.botania.mana_infusion('botania:blacker_lotus', 'minecraft:wither_rose', 100000)
+
+    e.remove({ id: 'botania:mana_infusion/mana_diamond' })
     e.recipes.botania.mana_infusion('botania:mana_diamond', 'gtceu:diamond_flawless_gem', 10000)
 
-    e.remove({output:'botania:mana_powder'})
+    e.remove({ output: 'botania:mana_powder' })
     e.recipes.botania.mana_infusion('botania:mana_powder', 'gtceu:electrotine_dust', 500)
 
-//Pure Daisy Recipes
+    //Pure Daisy Recipes
     //e.recipes.botania.pure_daisy('output', 'input', time)
 
-//Petal Apothecary Recipes
+    //Petal Apothecary Recipes
     //e.recipes.botania.petal_apothecary('input', ['input1'])
 
-//Runic Altar Recipes
+    //Runic Altar Recipes
     //e.recipes.botania.runic_altar('output', ['input1'], mana)
 
-//Terrasteel
-    e.remove({output:'botania:terrasteel_ingot'})
+    //Terrasteel
+    e.remove({ output: 'botania:terrasteel_ingot' })
     //e.recipes.botania.terra_plate('botania:terrasteel_ingot', ['input1'], 100000)
 
-//Elven Portal
+    //Elven Portal
     //e.recipes.botania.elven_trade(['output1'], ['input1'])
 
     e.recipes.gtceu.mana_fluidizer('gtceu:mana_to_mana_fluid')
-    .itemInputs('botania:blacker_lotus')
-    .itemOutputs('minecraft:wither_rose')
-    .outputFluids(Fluid.of('gtceu:potent_mana',10000))
-    .duration(200)
-    .EUt(GTValues.VA[GTValues.MV]);
+        .itemInputs('botania:blacker_lotus')
+        .itemOutputs('minecraft:wither_rose')
+        .outputFluids(Fluid.of('gtceu:potent_mana', 10000))
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV]);
     e.recipes.gtceu.mana_fluidizer('gtceu:mana_fluid_to_mana_charge')
-    .itemOutputs('botania:blacker_lotus')
-    .itemInputs('minecraft:wither_rose')
-    .inputFluids(Fluid.of('gtceu:potent_mana',10000))
-    .duration(200)
-    .EUt(GTValues.VA[GTValues.MV]);
+        .itemOutputs('botania:blacker_lotus')
+        .itemInputs('minecraft:wither_rose')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 10000))
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV]);
 
     //ManaSteel Ingots
     e.recipes.gtceu.mana_fluidizer('gtceu:mana_steel_ingot')
-    .itemInputs('gtceu:stainless_steel_ingot')
-    .itemOutputs('botania:manasteel_ingot')
-    .inputFluids(Fluid.of('gtceu:potent_mana',250))
-    .duration(20)
-    .EUt(GTValues.VA[GTValues.MV]);
+        .itemInputs('gtceu:stainless_steel_ingot')
+        .itemOutputs('botania:manasteel_ingot')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 250))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
     //Mana Pearl
     e.recipes.gtceu.mana_fluidizer('gtceu:mana_pearl')
-    .itemInputs('minecraft:ender_pearl')
-    .itemOutputs('botania:mana_pearl')
-    .inputFluids(Fluid.of('gtceu:potent_mana',500))
-    .duration(20)
-    .EUt(GTValues.VA[GTValues.MV]);
+        .itemInputs('minecraft:ender_pearl')
+        .itemOutputs('botania:mana_pearl')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 500))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
     //Mana Diamond
-     e.recipes.gtceu.mana_fluidizer('gtceu:mana_diamond')
-     .itemInputs('gtceu:diamond_flawless_gem')
-     .itemOutputs('botania:mana_diamond')
-     .inputFluids(Fluid.of('gtceu:potent_mana',1000))
-     .duration(20)
-     .EUt(GTValues.VA[GTValues.MV]);
-     e.recipes.gtceu.mana_fluidizer('gtceu:mana_powder')
-     .itemInputs('gtceu:electrotine_dust')
-     .itemOutputs('botania:mana_powder')
-     .inputFluids(Fluid.of('gtceu:potent_mana',50))
-     .duration(20)
-     .EUt(GTValues.VA[GTValues.MV]);
+    e.recipes.gtceu.mana_fluidizer('gtceu:mana_diamond')
+        .itemInputs('gtceu:diamond_flawless_gem')
+        .itemOutputs('botania:mana_diamond')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 1000))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
+    e.recipes.gtceu.mana_fluidizer('gtceu:mana_powder')
+        .itemInputs('gtceu:electrotine_dust')
+        .itemOutputs('botania:mana_powder')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 50))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
+    
 
 })
 

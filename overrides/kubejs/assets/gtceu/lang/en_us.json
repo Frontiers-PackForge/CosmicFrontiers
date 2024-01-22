@@ -83,5 +83,7 @@
   "material.gtceu.nether_sediment_sludge": "Nether Sediment Sludge",
   "material.gtceu.source_oils": "Source Oil Extract",
   "material.gtceu.source_enhanced_bio_fuel": "Source Diesel",
-  "material.gtceu.calcium_sulfide": "Calcium Sulfide"
+  "material.gtceu.calcium_sulfide": "Calcium Sulfide",
+  "gtceu.mana_simulator": "Mana Simulator",
+  "block.gtceu.mana_simulator": "Mana Simulator"
 }

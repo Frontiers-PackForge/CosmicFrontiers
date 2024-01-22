@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
        event.recipes.gtceu.nether_catalyzer('cosmiccore:pearl_catalyzing')
               .itemInputs('cosmiccore:overloaded_pearls')
               .outputFluids(Fluid.of('gtceu:ethanol', 250))
-              .duration(240)
+              .duration(120)
               .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.flora_nurturer('cosmiccore:magebloom_cultivation')
               .notConsumable('ars_nouveau:magebloom_crop')
@@ -89,7 +89,44 @@ ServerEvents.recipes(event => {
               .outputFluids(Fluid.of('gtceu:salt_water', 2000))
               .duration(160)
               .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_thermalily')
+              .notConsumable('kubejs:mechanical_thermalily')
+              .inputFluids('minecraft:lava 1000')
+              .outputFluids(Fluid.of('gtceu:potent_mana', 2000))
+              .duration(900)
+              .EUt(GTValues.VA[GTValues.HV]);
+       event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_rafflowsia')
+              .notConsumable('kubejs:mechanical_rafflowsia')
+              .itemInputs('10x #minecraft:flowers')
+              .outputFluids(Fluid.of('gtceu:potent_mana', 2500))
+              .duration(900)
+              .EUt(GTValues.VA[GTValues.HV]);
+       event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_munchdew')
+              .notConsumable('kubejs:mechanical_munchdew')
+              .itemInputs('100x #minecraft:leaves')
+              .outputFluids(Fluid.of('gtceu:potent_mana', 2000))
+              .duration(1600)
+              .EUt(GTValues.VA[GTValues.HV]);
+       event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_kekimurus')
+              .notConsumable('kubejs:mechanical_kekimurus')
+              .itemInputs('minecraft:cake')
+              .outputFluids(Fluid.of('gtceu:potent_mana', 3000))
+              .duration(450)
+              .EUt(GTValues.VA[GTValues.HV]);
+       event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_arcana')
+              .notConsumable('kubejs:mechanical_rosa_arcana')
+              .inputFluids('experienceobelisk:cognitium 500')
+              .outputFluids(Fluid.of('gtceu:potent_mana', 2000))
+              .duration(900)
+              .EUt(GTValues.VA[GTValues.EV]);
+       event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_entropinnyum')
+              .notConsumable('kubejs:mechanical_entropinnyum')
+              .itemInputs('4x minecraft:tnt')
+              .outputFluids(Fluid.of('gtceu:potent_mana', 3000))
+              .duration(120)
+              .EUt(GTValues.VA[GTValues.HV]);
 
+       
 
 
 
