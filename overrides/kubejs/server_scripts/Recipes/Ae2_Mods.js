@@ -29,19 +29,19 @@ ServerEvents.recipes(event => {
   //Every Recipe is Removed by default, Additions only from this point forward
   //Acceptor
   event.recipes.gtceu.assembler('ae2:acceptor_assembly')
-    .itemInputs(['6x gtceu:steel_plate', '4x gtceu:lv_voltage_coil', '4x #forge:circuits/lv', 'gtceu:lv_machine_hull'])
+    .itemInputs(['6x gtceu:steel_plate', '4x gtceu:lv_voltage_coil', '4x #gtceu:circuits/lv', 'gtceu:lv_machine_hull'])
     .itemOutputs('ae2:energy_acceptor')
     .duration(160)
     .EUt(32);
   //Controller
   event.recipes.gtceu.assembler('ae2:controller_assembly')
-    .itemInputs(['8x gtceu:mana_steel_hex_wire', '4x #forge:circuits/mv', 'ae2:energy_acceptor'])
+    .itemInputs(['8x gtceu:mana_steel_hex_wire', '4x #gtceu:circuits/mv', 'ae2:energy_acceptor'])
     .itemOutputs('ae2:controller')
     .duration(160)
     .EUt(32);
   //Drive Bay
   event.recipes.gtceu.assembler('ae2:drive_assembly')
-    .itemInputs(['8x gtceu:steel_plate', '4x ae2:fluix_smart_cable', '2x #forge:circuits/lv', 'gtceu:steel_frame'])
+    .itemInputs(['8x gtceu:steel_plate', '4x ae2:fluix_smart_cable', '2x #gtceu:circuits/lv', 'gtceu:steel_frame'])
     .itemOutputs('ae2:drive')
     .duration(160)
     .EUt(32);
@@ -77,19 +77,19 @@ ServerEvents.recipes(event => {
     .EUt(32);
   //Interface 1x Craft
   event.recipes.gtceu.assembler('ae2:interface_assembly_t1')
-    .itemInputs(['4x gtceu:steel_plate', '2x #forge:circuits/lv', '2x gtceu:lv_robot_arm', 'gtceu:lv_machine_hull'])
+    .itemInputs(['4x gtceu:steel_plate', '2x #gtceu:circuits/lv', '2x gtceu:lv_robot_arm', 'gtceu:lv_machine_hull'])
     .itemOutputs('ae2:interface')
     .duration(320)
     .EUt(32);
   //Interface 4x Craft
   event.recipes.gtceu.assembler('ae2:interface_assembly_t2')
-    .itemInputs(['4x gtceu:stainless_steel_plate', '2x #forge:circuits/hv', '2x gtceu:hv_robot_arm', 'gtceu:hv_machine_hull'])
+    .itemInputs(['4x gtceu:stainless_steel_plate', '2x #gtceu:circuits/hv', '2x gtceu:hv_robot_arm', 'gtceu:hv_machine_hull'])
     .itemOutputs('4x ae2:interface')
     .duration(320)
     .EUt(512);
   //Interface 8x Craft
   event.recipes.gtceu.assembler('ae2:interface_assembly_t3')
-    .itemInputs(['4x gtceu:tungsten_steel_plate', '2x #forge:circuits/iv', '2x gtceu:iv_robot_arm', 'gtceu:iv_machine_hull'])
+    .itemInputs(['4x gtceu:tungsten_steel_plate', '2x #gtceu:circuits/iv', '2x gtceu:iv_robot_arm', 'gtceu:iv_machine_hull'])
     .itemOutputs('8x ae2:interface')
     .duration(320)
     .EUt(8192);
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
     let euType = euScale[index]
 
     event.recipes.gtceu.assembler(`ae2:${tier}_component_assembly`)
-      .itemInputs(`32x gtceu:${fineWireMaterial}_fine_wire`, `4x #forge:circuits/${tier}`, `4x gtceu:${plateType}_plate`, 'ae2:formation_core', 'ae2:annihilation_core')
+      .itemInputs(`32x gtceu:${fineWireMaterial}_fine_wire`, `4x #gtceu:circuits/${tier}`, `4x gtceu:${plateType}_plate`, 'ae2:formation_core', 'ae2:annihilation_core')
       .inputFluids('gtceu:redstone 288')
       .itemOutputs(`${componentType}`)
       .duration(100)
