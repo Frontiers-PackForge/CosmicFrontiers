@@ -257,10 +257,52 @@ ServerEvents.recipes(event => {
     .duration(60)
     .EUt(GTValues.VA[GTValues.LV]);
 
+  //Redstone Lense and removal of Ruby Lense
+  event.remove({ output: 'gtceu:ruby_lens' })
+  event.recipes.gtceu.lathe('gtceu:zanite_lens_creation')
+    .itemInputs('gtceu:zanite_plate')
+    .itemOutputs('gtceu:zanite_lens')
+    .duration(1200)
+    .EUt(GTValues.VA[GTValues.MV]);
+  event.recipes.gtceu.lathe('gtceu:zanite_lens_creation_exq')
+    .itemInputs('gtceu:exquisite_zanite_gem')
+    .itemOutputs('gtceu:zanite_lens')
+    .duration(2400)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.remove({ output: 'gtceu:ilc_wafer' })
+  event.recipes.gtceu.laser_engraver('gtceu:ilc_1x')
+    .itemInputs('gtceu:silicon_wafer')
+    .notConsumable('gtceu:zanite_lens')
+    .itemOutputs('gtceu:ilc_wafer')
+    .duration(900)
+    .EUt(GTValues.VA[GTValues.MV]);
+  event.recipes.gtceu.laser_engraver('gtceu:ilc_4x')
+    .itemInputs('gtceu:phosphorus_wafer')
+    .notConsumable('gtceu:zanite_lens')
+    .itemOutputs('4x gtceu:ilc_wafer')
+    .duration(500)
+    .EUt(GTValues.VA[GTValues.HV]);
+  event.recipes.gtceu.laser_engraver('gtceu:ilc_8x')
+    .itemInputs('gtceu:naquadah_wafer')
+    .notConsumable('gtceu:zanite_lens')
+    .itemOutputs('8x gtceu:ilc_wafer')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.EV]);
+  event.recipes.gtceu.laser_engraver('gtceu:ilc_16x')
+    .itemInputs('gtceu:neutronium_wafer')
+    .notConsumable('gtceu:zanite_lens')
+    .itemOutputs('16x gtceu:ilc_wafer')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.IV]);
+
+//Source Oil Atm
+
+  
+
   //LV EMITTER
   event.remove({ output: 'gtceu:lv_emitter' })
   event.recipes.gtceu.assembler('gtceu:lv_emitter_recipe')
-    .itemInputs(['2x gtceu:mana_steel_single_cable', '4x gtceu:mana_steel_rod', 'gtceu:quartzite_gem', '2x #forge:circuits/lv'])
+    .itemInputs(['2x gtceu:mana_steel_single_cable', '4x gtceu:mana_steel_rod', 'gtceu:quartzite_gem', '2x #gtceu:circuits/lv'])
     .itemOutputs('gtceu:lv_emitter')
     .duration(40)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -279,6 +321,24 @@ ServerEvents.recipes(event => {
   ], {
     A: 'gtceu:aluminium_double_plate',
     M: 'gtceu:mana_steel_plate',
+    W: '#forge:tools/wrenches'
+  }
+  )
+  //HV HULLS AND CASINGS
+  //MV MACHINE HULL AND CASING
+  event.remove({ output: 'gtceu:hv_machine_casing' })
+  event.recipes.gtceu.assembler('gtceu:hv_machine_casing_assembler')
+    .itemInputs(['4x gtceu:double_stainless_steel_plate', '4x gtceu:galvanized_ethersteel_plate'])
+    .itemOutputs('gtceu:hv_machine_casing')
+    .duration(40)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:hv_machine_casing', [
+    'AMA',
+    'MWM',
+    'AMA'
+  ], {
+    A: 'gtceu:double_stainless_steel_plate',
+    M: 'gtceu:galvanized_ethersteel_plate',
     W: '#forge:tools/wrenches'
   }
   )
@@ -327,7 +387,7 @@ ServerEvents.recipes(event => {
     W: 'gtceu:mana_steel_double_cable',
     R: 'gtceu:lv_robot_arm',
     H: 'gtceu:lv_machine_hull',
-    C: '#forge:circuits/mv',
+    C: '#gtceu:circuits/mv',
     E: 'gtceu:lv_emitter',
     O: 'gtceu:lv_conveyor_module',
   })
@@ -342,22 +402,8 @@ ServerEvents.recipes(event => {
   }
   drying('create:shaft', 'create:cogwheel', 40)
 })
-ServerEvents.tags('item', event => {
-  //Exclude Hammers
-  GTRegistries.MATERIALS.forEach(id => {
-    event.add('ftbultimine:excluded_tools', [`gtceu:${id}_mining_hammer`])
-  })
-  GTRegistries.MATERIALS.forEach(id => {
-    event.add('forge:viewers/hidden_from_recipe', [`gtceu:${id}_turbine_blade`])
-  })
-})
 
 ServerEvents.tags('block', event => {
-  GTRegistries.MATERIALS.forEach(id => {
-    event.add('ftbultimine:excluded_blocks', [`gtceu:andesite_${id}_ore`, `gtceu:diorite_${id}_ore`, `gtceu:deepslate_${id}_ore`, `gtceu:${id}_ore`, `gtceu:granite_${id}_ore`, `gtceu:netherrack_${id}_ore`, `gtceu:endstone_${id}_ore`])
-  })
-  event.add('ftbultimine:excluded_blocks', 'minecraft:powder_snow')
-
   event.remove('aether:aether_portal_blocks', 'minecraft:glowstone'),
     event.add('aether:aether_portal_blocks', 'gtceu:frostproof_machine_casing')
 })
@@ -374,13 +420,6 @@ ServerEvents.recipes(e => {
     e.recipes.createDeploying(inter, [inter, 'gtceu:tin_spring']),
     e.recipes.createDeploying(inter, [inter, 'gtceu:rubber_plate']),
   ]).transitionalItem(inter).loops(2) // set the transitional item and the number of loops
-
-  //Hotfixes for Greg machine recipes
-
-
-
-
-
 
 
 })
@@ -516,7 +555,7 @@ ServerEvents.recipes(event => {
     ], {
       A: `gtceu:${cableMaterial}_quadruple_wire`,
       B: `gtceu:${tier}_conveyor_module`,
-      C: `#forge:circuits/${tier}`,
+      C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`
     }
@@ -528,7 +567,7 @@ ServerEvents.recipes(event => {
     ], {
       A: 'minecraft:redstone_lamp',
       B: `gtceu:${tier}_conveyor_module`,
-      C: `#forge:circuits/${tier}`,
+      C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`
     }
@@ -541,7 +580,7 @@ ServerEvents.recipes(event => {
       A: `gtceu:${coilType}_coil_block`,
       B: `gtceu:${tier}_conveyor_module`,
       P: `gtceu:${tier}_electric_piston`,
-      C: `#forge:circuits/${tier}`,
+      C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`
     }
@@ -554,7 +593,7 @@ ServerEvents.recipes(event => {
       A: `gtceu:steel_rod`,
       P: `gtceu:${tier}_electric_motor`,
       R: `gtceu:${tier}_robot_arm`,
-      C: `#forge:circuits/${tier}`,
+      C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`
     }
@@ -567,7 +606,7 @@ ServerEvents.recipes(event => {
       A: `gtceu:mana_steel_plate`,
       P: `gtceu:${tier}_electric_piston`,
       B: `gtceu:${tier}_electric_pump`,
-      C: `#forge:circuits/${tier}`,
+      C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`
     }
@@ -577,9 +616,22 @@ ServerEvents.recipes(event => {
       'BHB',
       'ZPZ'
     ], {
-      A: `gtceu:${coilType}_coil_block`,
+      A: `gtceu:${coilType}_spring`,
       B: `gtceu:${tier}_conveyor_module`,
-      C: `#forge:circuits/${tier}`,
+      C: `#gtceu:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`,
+      P: `gtceu:${tier}_electric_pump`
+    }
+    )
+    event.shaped(`gtceu:${tier}_chemical_dehydrator`, [
+      'CAC',
+      'BHB',
+      'ZPZ'
+    ], {
+      A: `gtceu:${coilType}_spring`,
+      B: `gtceu:${tier}_electric_motor`,
+      C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`,
       P: `gtceu:${tier}_electric_pump`

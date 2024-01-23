@@ -10,9 +10,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('zanite')
         .gem()
         .ore()
+        .element(GTElements.get('zanite'))
+        .flags(GTMaterialFlags.GENERATE_LENS,GTMaterialFlags.GENERATE_PLATE)
         .color(0xa521fc).iconSet(GTMaterialIconSet.DIAMOND)
     event.create('ambrosium')
+        .gem()
         .ore()
+        .element(GTElements.get('ambrosium'))
         .color(0xfbff00).iconSet(GTMaterialIconSet.CERTUS)
     event.create('nether_sediment_sludge')
         .fluid()
@@ -20,26 +24,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('potent_mana')
         .fluid()
         .color(0x457bd1)
-    event.create('mana_steel')
-        // .ingot()
-        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
-        .fluid()
-        .color(0x67b9ee)
-        .cableProperties(GTValues.V[GTValues.LV], 8, 0, false)
-        .iconSet(GTMaterialIconSet.getByName('mana'))
-    //nether materials, no ore veins yet 
-    event.create('cincinnasite')
-        .ingot()
-        .ore()
-        .color(0xeebb63).iconSet(GTMaterialIconSet.SHINY)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
-
-
-    event.create('nether_ruby')
-        .gem()
-        .ore()
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
-        .color(0x9f0b21).iconSet(GTMaterialIconSet.RUBY)
+    
 
     //Netherite Line Materials
     event.create('ancient_debris')
@@ -67,6 +52,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('zano_aluminate')
         .dust()
         .color(0x8e46fa).iconSet(GTMaterialIconSet.SHINY)
+        .element(GTElements.get('zano_alumate'))
     //So Help me god please work
     GTMaterials.get('redstone').addFlags(GTMaterialFlags.GENERATE_LENS)
 })

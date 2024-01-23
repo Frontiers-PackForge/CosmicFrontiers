@@ -101,4 +101,10 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('cosmiccore:macroverse_processor_mainframe', (item, advanced, text) => {
     text.add(2, Text.of('MAX-Tier Circuit')) 
   })
+  event.addAdvanced('botania:terrasteel_ingot', (item, advanced, text) => {
+    text.add(1, Text.of('Ma2(Si(FeS2)5(CrAl2O3)Hg3)(AuAg)').yellow()) 
+  })
+  event.addAdvanced('botania:manasteel_ingot', (item, advanced, text) => {
+    text.add(1, Text.of('Ma*(Si(FeS2)5(CrAl2O3)Hg3)(AuAg)').yellow()) 
+  })
 })
