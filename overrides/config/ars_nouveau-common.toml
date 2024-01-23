@@ -62,6 +62,9 @@
 	#How much source a melder takes per cycle
 	#Range: > 0
 	melderSourceCost = 300
+	#The max potion level the enchanted flask can grant. This isnt needed unless you have an infinite potion leveling exploit.
+	#Range: > 2
+	enchantedFlaskCap = 255
 
 #Debug
 [debug]

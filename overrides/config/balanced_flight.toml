@@ -10,9 +10,9 @@
 
 	[Settings."Enhanced Elytra Mechanics"]
 		"Disable Elytra Damage" = true
-		"Enable Elytra Flight From Ground" = true
-		"Enable Take Off Mechanic" = true
-		"Infinite Rockets" = true
+		"Enable Elytra Flight From Ground" = false
+		"Enable Take Off Mechanic" = false
+		"Infinite Rockets" = false
 
 	[Settings."Balancing Config"]
 		#Range: 0.0 ~ 10.0

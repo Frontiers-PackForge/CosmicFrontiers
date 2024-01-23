@@ -7,6 +7,29 @@
 	id: "124E2C5B9FAD4967"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "1E72D62913EEB4EE"
+		subtitle: "Got it all? Then Good Luck!"
+		tasks: [
+			{
+				id: "1305C5CEEDE937A2"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}
+			{
+				id: "3203C9E9EA6939D6"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}
+			{
+				id: "12A729FA63B54AA4"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}
+		]
+		title: "HV Chapter Unlocked!"
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "Gloomper Chemistry [HV]"
 }

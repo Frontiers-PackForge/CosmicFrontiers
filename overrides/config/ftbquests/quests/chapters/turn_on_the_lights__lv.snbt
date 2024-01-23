@@ -716,7 +716,15 @@
 		}
 		{
 			dependencies: ["406B1095DAEC756F"]
+			description: [
+				"These peculiar pearls house enough ethanol under pressure to resist the nethers heat. Almost."
+				""
+				"Touching the reeds of this plant will cause them to detonate."
+				""
+				"&o&7I could make use of the ethanol inside these, for production reasons of course...&r"
+			]
 			id: "543805168AB3AE0D"
+			subtitle: "Spicy Water"
 			tasks: [{
 				id: "3FB7C3AFA092B174"
 				item: "nethersdelight:propelpearl"
@@ -753,7 +761,13 @@
 		}
 		{
 			dependencies: ["543805168AB3AE0D"]
+			description: [
+				"Used to grow the exotic flora of the nether. And uh, food."
+				""
+				"WIP Recipes so check back each update!"
+			]
 			id: "2D7642351D7065A3"
+			subtitle: "Tiny Greenhouse in a box!"
 			tasks: [{
 				id: "43599B4DB62592C3"
 				item: "gtceu:lv_flora_nurturer"
@@ -830,8 +844,6 @@
 				"By combining my &aPsionic Mastery&r and &bTechnological Prowess&r, I now have hull strength capable of supporting higher &evoltage&r."
 				""
 				"It's time to move forward with my plans."
-				""
-				"&l&4[ NOTICE ; MV+ IS IN DEV - YOU CAN'T/SHOULDN'T ACCESS THE AETHER RIGHT NOW ] &r"
 			]
 			id: "5F0FB7A2F012B47E"
 			rewards: [
@@ -1472,6 +1484,31 @@
 			}]
 			x: -7.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["40797EBBFA968D8D"]
+			dependency_requirement: "one_started"
+			description: [
+				"Without any particular logistics used, GTCEU pipes go to the closest inventory first."
+				""
+				"You can (ab)use this to always keep &l&6Overloaded Pearl&r and &l&5Blackstone Pustule&r"
+				"production running issue-free."
+				""
+				"Looping items like this is essential to learn, as you'll utilize this a lot in automation later."
+				""
+				"Conveyor Modules and Robot arms can \"Round Robin\", which will divide the input evenly. Machine Auto-Output does not do this and defaults to the nearest first, as mentioned above."
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "428891C9D165CCA9"
+			shape: "gear"
+			subtitle: "Priority is Important"
+			tasks: [{
+				id: "300FB714E5192D12"
+				title: "Looping Materials and You."
+				type: "checkmark"
+			}]
+			x: -4.75d
+			y: 3.25d
 		}
 	]
 	title: "Turn on the Lights - [LV]"

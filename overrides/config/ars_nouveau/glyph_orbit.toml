@@ -20,4 +20,7 @@
 	#How much an augment should cost when used on this effect or form. This overrides the default cost in the augment config.
 	#Example entry: "glyph_amplify=50"
 	augment_cost_overrides = []
+	#Prevents the given glyph from being used in the same spell as the given glyph
+	#Example entry: "glyph_burst"
+	invalid_combos = []
 

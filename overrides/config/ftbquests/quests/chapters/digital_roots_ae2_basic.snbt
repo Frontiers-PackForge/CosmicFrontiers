@@ -129,7 +129,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "70ED0773A2D68A45"
-				item: "gtceu:certus_quartz_flawless_gem"
+				item: "gtceu:flawless_certus_quartz_gem"
 				type: "item"
 			}]
 			x: 4.0d
@@ -144,7 +144,7 @@
 			subtitle: "Annoying, but doable."
 			tasks: [{
 				id: "587FC61832470B57"
-				item: "gtceu:certus_quartz_exquisite_gem"
+				item: "gtceu:exquisite_certus_quartz_gem"
 				type: "item"
 			}]
 			x: 8.0d
@@ -254,10 +254,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"1C8C8F4FF32530E3"
-				"4817E34DFF27D15B"
-			]
+			dependencies: ["1C8C8F4FF32530E3"]
 			id: "052DE4D0FE546DE4"
 			tasks: [{
 				id: "4CE712A8EC424B95"
@@ -268,10 +265,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"1C8C8F4FF32530E3"
-				"5FFACBB7FCDBBB3D"
-			]
+			dependencies: ["1C8C8F4FF32530E3"]
 			id: "71AC8E7AD09AC194"
 			tasks: [{
 				id: "49C28419A3F18FB8"
@@ -282,10 +276,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"1C8C8F4FF32530E3"
-				"46755A626488597D"
-			]
+			dependencies: ["1C8C8F4FF32530E3"]
 			id: "3F167371F12B53A9"
 			tasks: [{
 				id: "6A1A07F4E04746FE"
@@ -296,10 +287,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"1C8C8F4FF32530E3"
-				"7F352E9028635040"
-			]
+			dependencies: ["1C8C8F4FF32530E3"]
 			id: "7EC6D3EE16F2BD41"
 			tasks: [{
 				id: "7CF1F61E61CC4302"
@@ -310,10 +298,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"1C8C8F4FF32530E3"
-				"39E3120BE243C2E4"
-			]
+			dependencies: ["1C8C8F4FF32530E3"]
 			id: "5E78BC4FC913EFB7"
 			tasks: [{
 				id: "074D22F5A1234322"
@@ -388,7 +373,7 @@
 					Count: 1b
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:circuits/lv)"
+						"ftbfiltersystem:filter": "item_tag(gtceu:circuits/lv)"
 					}
 				}
 				title: "LV Circuits"
@@ -408,7 +393,7 @@
 					Count: 1b
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:circuits/mv)"
+						"ftbfiltersystem:filter": "item_tag(gtceu:circuits/mv)"
 					}
 				}
 				title: "MV Circuits"
@@ -428,9 +413,10 @@
 					Count: 1b
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:circuits/hv)"
+						"ftbfiltersystem:filter": "item_tag(gtceu:circuits/hv)"
 					}
 				}
+				title: "HV Circuits"
 				type: "item"
 			}]
 			x: 3.0d
@@ -446,9 +432,10 @@
 					Count: 1b
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:circuits/ev)"
+						"ftbfiltersystem:filter": "item_tag(gtceu:circuits/ev)"
 					}
 				}
+				title: "EV Circuits"
 				type: "item"
 			}]
 			x: 3.0d
@@ -465,9 +452,10 @@
 					Count: 1b
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:circuits/iv)"
+						"ftbfiltersystem:filter": "item_tag(gtceu:circuits/iv)"
 					}
 				}
+				title: "IV Circuits"
 				type: "item"
 			}]
 			x: 3.0d
@@ -548,96 +536,6 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["30E09C21E7032519"]
-			hide_dependency_lines: true
-			id: "4817E34DFF27D15B"
-			tasks: [{
-				id: "63EF9F0FD87646A6"
-				item: {
-					Count: 1b
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:circuits/luv)"
-					}
-				}
-				type: "item"
-			}]
-			x: 7.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["30E09C21E7032519"]
-			hide_dependency_lines: true
-			id: "5FFACBB7FCDBBB3D"
-			tasks: [{
-				id: "564D44EEBD2A1F7F"
-				item: {
-					Count: 1b
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:circuits/zpm)"
-					}
-				}
-				type: "item"
-			}]
-			x: 7.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["30E09C21E7032519"]
-			hide_dependency_lines: true
-			id: "46755A626488597D"
-			tasks: [{
-				id: "48D0A571D3D25E7E"
-				item: {
-					Count: 1b
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:circuits/uv)"
-					}
-				}
-				type: "item"
-			}]
-			x: 7.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["30E09C21E7032519"]
-			hide_dependency_lines: true
-			id: "7F352E9028635040"
-			tasks: [{
-				id: "5AC005FEF41E3B94"
-				item: {
-					Count: 1b
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:circuits/uhv)"
-					}
-				}
-				type: "item"
-			}]
-			x: 7.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["30E09C21E7032519"]
-			hide_dependency_lines: true
-			id: "39E3120BE243C2E4"
-			tasks: [{
-				id: "3680844D271118B5"
-				item: {
-					Count: 1b
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:circuits/uev)"
-					}
-				}
-				type: "item"
-			}]
-			x: 7.0d
 			y: 6.0d
 		}
 		{

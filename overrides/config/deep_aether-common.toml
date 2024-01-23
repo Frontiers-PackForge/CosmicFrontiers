@@ -4,8 +4,8 @@
 	"Skyjade Enchant" = false
 	#Always Enable halloween content, excluding the halloween slider
 	"Always Enable Halloween Content" = false
-	#Enabling this removes Deep Aether's creative mode tab, and adds Deep Aether's items to Aether's tabs
-	"Use Aether's Creative Mode Tabs" = false
+	#Disable Flawless Boss drops from dropping
+	"Disable Flawless Boss Drops" = false
 
 [Biomes]
 	#Disables Roseroot Forest biomes from generating. Might make some content unobtainable

@@ -45,4 +45,6 @@
 	disable_skyweave = false
 	#Enables transparent/opaque rendering of elements in the book GUI. Disable if it leads to crash with Sodium derivatives
 	gui_transparency = true
+	#Disables translucent particles. Disable if your particles are invisible with shaders.
+	opaque_particles = false
 

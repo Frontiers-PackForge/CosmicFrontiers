@@ -16,3 +16,28 @@
   STEP THREE : CHEMICAL DEHYDRATOR
   3000 Source Leeched Solution + ??? => 1000MB of I'll do the rest Later -Ghost This Evening 
 */
+
+
+
+
+ServerEvents.recipes(event => {
+
+  event.recipes.gtceu.centrifuge('gtceu:centrifuge/source_oil_spinny')
+    .itemInputs('4x ars_nouveau:magebloom')
+    .inputFluids('water 1000')
+    .outputFluids('gtceu:source_oils 1000')
+    .duration(160)
+    .EUt(8);
+  event.recipes.gtceu.chemical_reactor('gtceu:centrifuge/source_enhanced_bio_fuel')
+    .itemInputs('gtceu:tiny_sodium_hydroxide_dust')
+    .inputFluids('gtceu:source_oils 6000')
+    .inputFluids('gtceu:ethanol 1000')
+    .outputFluids('gtceu:source_enhanced_bio_fuel 6000')
+    .outputFluids('gtceu:glycerol 1000')
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.combustion_generator('combustion_source_fuel')
+    .inputFluids('gtceu:source_enhanced_bio_fuel 1')
+    .duration(15)
+    .EUt(-32)
+})

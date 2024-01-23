@@ -1,7 +1,7 @@
 
 [Gameplay]
 	#Use the default Curios menu instead of the Aether's Accessories Menu. WARNING: Do not enable this without emptying your equipped accessories
-	"Use default Curios' menu" = false
+	"Use default Curios' menu" = true
 	#On world creation, the player is given an Aether Portal Frame item to automatically go to the Aether with
 	"Gives player Aether Portal Frame item" = false
 	#When the player enters the Aether, they are given a Book of Lore and Golden Parachutes as starting loot

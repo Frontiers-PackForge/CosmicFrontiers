@@ -103,7 +103,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.CHEMICAL);
     event.create('mana_simulator')
         .category('frontiers')
-        .setMaxIOSize(0, 0, 1, 0)
+        .setMaxIOSize(2, 2, 2, 2)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.TURBINE)
 

@@ -39,7 +39,7 @@
 		darkness = -0.2
 		#Maximum light level considered to be darkness (inclusive)
 		#Range: 0 ~ 15
-		darkness_threshold = 4
+		darkness_threshold = 1
 		#Players will gain this amount of sanity per second while being in the light
 		#Range: -100.0 ~ 100.0
 		lightness = 0.1

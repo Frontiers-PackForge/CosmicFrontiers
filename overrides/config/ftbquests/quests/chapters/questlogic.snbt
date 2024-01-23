@@ -1,0 +1,31 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "questlogic"
+	group: ""
+	id: "11F4C9727AB4FD82"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"This Chapter (If you can see it) means you have Edit mode enabled in the questbook."
+			""
+			"Hi It's Ghost, this chapter here is for questbook logic/quests that would make other pages look messy. This isn't an actual quest chapter but moreso a place for logicgates to be placed."
+			""
+			""
+			"Now Turn off Edit mode and get to playing :P"
+		]
+		id: "6022F9D216B741CD"
+		shape: "gear"
+		subtitle: "Dev Zone Ahead. Danger"
+		tasks: [{
+			id: "683AB6D197C8B112"
+			title: "Wtf is this?"
+			type: "custom"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "QuestLogic"
+}

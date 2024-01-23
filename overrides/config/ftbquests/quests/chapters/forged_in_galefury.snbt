@@ -11,6 +11,11 @@
 	quests: [
 		{
 			dependencies: ["5FFA303333C489F7"]
+			description: [
+				"Welcome to MV, Your Goals are to Produce &bEthersteel&r and &bHV Circuits&r."
+				"You have a winding road ahead of you, make sure to visit the &aAether&r!"
+				"And remember, don't plug &bMV&r Power into &7LV&r machines unless you like things exploding!"
+			]
 			id: "466C20EACAEF3394"
 			shape: "hexagon"
 			size: 2.5d
@@ -124,7 +129,7 @@
 			subtitle: "Hot! Hot!"
 			tasks: [{
 				id: "4E6BF31465AFE0DE"
-				item: "gtceu:kanthal_hot_ingot"
+				item: "gtceu:hot_kanthal_ingot"
 				type: "item"
 			}]
 			x: 2.5d
@@ -197,6 +202,12 @@
 			dependencies: [
 				"12E540563DD5C5A9"
 				"7CA92A5D7A2300BC"
+				"673AB6E8C654D518"
+			]
+			description: [
+				"With a comically long chemical name."
+				""
+				"Ethersteel will be widely used in HV and EV, so I'd recommend setting up automation or batching large batches of it..."
 			]
 			id: "44372CC42BD4ABEF"
 			shape: "hexagon"
@@ -212,16 +223,22 @@
 		}
 		{
 			dependencies: ["44372CC42BD4ABEF"]
+			description: [
+				"With Ethersteel and Stainless Steel, you can produce Hulls of expanded Arcane Prowess as well as Voltage."
+				""
+				"&l&bWelcome to HV&r"
+			]
 			id: "2823B3BAEF820B50"
 			shape: "hexagon"
 			size: 2.5d
+			subtitle: "Supercharged!"
 			tasks: [{
 				id: "31A6572E4A197DC7"
 				item: "gtceu:hv_machine_hull"
 				type: "item"
 			}]
 			x: 5.0d
-			y: 10.5d
+			y: 6.25d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -404,9 +421,10 @@
 			dependencies: ["466C20EACAEF3394"]
 			hide_dependency_lines: true
 			id: "2F69B0BBDBFFF588"
+			subtitle: "You'll need Kanthal Coils"
 			tasks: [{
 				id: "6726D968B91CC877"
-				item: "gtceu:silicon_hot_ingot"
+				item: "gtceu:hot_silicon_ingot"
 				type: "item"
 			}]
 			x: -2.0d
@@ -841,7 +859,6 @@
 			dependencies: [
 				"415261B39AD0EFA8"
 				"2B844CDAF9BD63C4"
-				"43554DF922268633"
 				"325D1D73A1414437"
 			]
 			description: ["You'll need the Runic Altar Later on for more powerful Magitech, but for now it helps you unlock the mana s imulator."]
@@ -888,19 +905,9 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["235A2AE1AC57A5E3"]
-			id: "43554DF922268633"
-			tasks: [{
-				id: "4D2B59B1CFAD8F17"
-				type: "item"
-			}]
-			x: 12.5d
-			y: 3.0d
-		}
-		{
 			dependencies: [
 				"4859FC0AAFBC1C06"
-				"62C2245ABBF054F3"
+				"4D73ECB2608CBE31"
 			]
 			id: "673AB6E8C654D518"
 			tasks: [{
@@ -909,14 +916,19 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["235C063EE75D22F0"]
-			icon: "aether:zanite_gemstone"
+			icon: "gtceu:zanite_gem"
 			id: "4859FC0AAFBC1C06"
-			x: 8.5d
-			y: 1.0d
+			tasks: [{
+				id: "0D15857F24035EA7"
+				item: "gtceu:zanite_gem"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["33757BC3FFE5AD18"]
@@ -941,15 +953,16 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["235C063EE75D22F0"]
+			dependencies: ["4D73ECB2608CBE31"]
+			hide_dependency_lines: true
 			id: "62C2245ABBF054F3"
 			tasks: [{
 				id: "3F587CBAD4D7F00D"
 				item: "aether:ambrosium_shard"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 3.0d
+			x: 5.5d
+			y: -1.5d
 		}
 		{
 			icon: "aether:aether_portal_frame"
@@ -962,10 +975,13 @@
 			}]
 			title: "Been to the Aether yet?"
 			x: 8.5d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["167D8002070C9B69"]
+			dependencies: [
+				"167D8002070C9B69"
+				"5284106D3A924B36"
+			]
 			id: "7CA92A5D7A2300BC"
 			tasks: [{
 				id: "34013B5E1CF65669"
@@ -987,12 +1003,12 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
-				"43554DF922268633"
 				"18E59533B89D6005"
+				"325D1D73A1414437"
 			]
 			description: [
 				"Digitally Calculating Floral Behaviors to produce raw, undiluted mana. 10x stronger than what's found in mana pools (Potent Mana : Mana is 1:10)"
@@ -1002,6 +1018,7 @@
 			]
 			icon: "gtceu:mana_simulator"
 			id: "22EF1AEF0213682D"
+			shape: "hexagon"
 			subtitle: "Basic Mana Simulation"
 			tasks: [
 				{
@@ -1057,7 +1074,6 @@
 				{
 					disable_toast: true
 					id: "5BCA4475CB86D4F0"
-					optional_task: true
 					title: "Chain Quest - Skip me!"
 					type: "checkmark"
 				}
@@ -1079,7 +1095,6 @@
 				{
 					disable_toast: true
 					id: "299A0A9D5C4563B5"
-					optional_task: true
 					title: "Chain Quest - Skip me!"
 					type: "checkmark"
 				}
@@ -1091,6 +1106,7 @@
 			dependencies: [
 				"6BE64F9BD1F1F303"
 				"673AB6E8C654D518"
+				"5284106D3A924B36"
 			]
 			icon: "gtceu:unstable_terrasteel_bucket"
 			id: "33757BC3FFE5AD18"
@@ -1104,13 +1120,94 @@
 				{
 					disable_toast: true
 					id: "3D654A164AA80766"
-					optional_task: true
 					title: "Chain Quest - Skip me!"
 					type: "checkmark"
 				}
 			]
 			x: 7.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["235C063EE75D22F0"]
+			id: "4D73ECB2608CBE31"
+			tasks: [{
+				id: "5B008367DD57CDF9"
+				item: "gtceu:ambrosium_gem"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"18E59533B89D6005"
+				"22EF1AEF0213682D"
+			]
+			description: [
+				"Mechanical flowers are augmented with manasteel and circuitry to withstand the demanding enviroments of Mana Simulators."
+				""
+				"&o&7From my observations, these mechanical flora are argubly more efficent than their biological counterparts... I should invest heavily into these.&r"
+			]
+			id: "55FEFCA7B9B0A473"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Magictech Plantlife"
+			tasks: [{
+				id: "0FF799E7FDEE89BF"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:mechanical_rafflowsia)item(kubejs:mechanical_entropinnyum)item(kubejs:mechanical_thermalily)item(kubejs:mechanical_rosa_arcana)item(kubejs:mechanical_munchdew)item(kubejs:mechanical_kekimurus))"
+					}
+				}
+				title: "Any Mechanical Flower"
+				type: "item"
+			}]
+			title: "Mechanical Botany!"
+			x: 10.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["55FEFCA7B9B0A473"]
+			description: [
+				"Potent mana allows for the gregification of many botania materials, allowing ease of automation."
+				"You can finally dismantle your cheesey FPS shredding Endoflame setup now..."
+			]
+			icon: "gtceu:potent_mana_bucket"
+			id: "5284106D3A924B36"
+			subtitle: "Mana Potency 10x"
+			tasks: [
+				{
+					id: "3D7A339B20C5A6D0"
+					item: "gtceu:potent_mana_bucket"
+					type: "item"
+				}
+				{
+					id: "6C3FEBD8E4FADB42"
+					title: "Fluid Quest - Checkmark"
+					type: "checkmark"
+				}
+			]
+			x: 7.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"2823B3BAEF820B50"
+				"4573B786F0ED6565"
+			]
+			id: "051AAFDB824640E1"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "54C5B93B577957A9"
+				item: "ae2:pattern_provider"
+				type: "item"
+			}]
+			title: "Autocrafting, Unlocked!"
+			x: 5.0d
+			y: 8.5d
 		}
 	]
 	title: "Forged in Galefury [MV]"
