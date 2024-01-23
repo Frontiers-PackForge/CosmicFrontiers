@@ -324,6 +324,24 @@ ServerEvents.recipes(event => {
     W: '#forge:tools/wrenches'
   }
   )
+  //HV HULLS AND CASINGS
+  //MV MACHINE HULL AND CASING
+  event.remove({ output: 'gtceu:hv_machine_casing' })
+  event.recipes.gtceu.assembler('gtceu:hv_machine_casing_assembler')
+    .itemInputs(['4x gtceu:double_stainless_steel_plate', '4x gtceu:galvanized_ethersteel_plate'])
+    .itemOutputs('gtceu:hv_machine_casing')
+    .duration(40)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:hv_machine_casing', [
+    'AMA',
+    'MWM',
+    'AMA'
+  ], {
+    A: 'gtceu:double_stainless_steel_plate',
+    M: 'gtceu:galvanized_ethersteel_plate',
+    W: '#forge:tools/wrenches'
+  }
+  )
   //Crafting Recipes
   //Wrought Iron Base Molds 'gtceu:mv_machine_casing'
   event.remove({ output: 'gtceu:empty_mold' })
