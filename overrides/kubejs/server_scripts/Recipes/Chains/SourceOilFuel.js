@@ -22,10 +22,11 @@
 
 ServerEvents.recipes(event => {
 
-  event.recipes.gtceu.centrifuge('gtceu:centrifuge/source_oil_spinny')
+  event.recipes.gtceu.chemical_reactor('gtceu:centrifuge/source_oil_spinny')
     .itemInputs('4x ars_nouveau:magebloom')
-    .inputFluids('water 1000')
-    .outputFluids('gtceu:source_oils 1000')
+    .inputFluids('gtceu:potent_mana 1000')
+    .inputFluids('water 3000')
+    .outputFluids('gtceu:source_oils 4000')
     .duration(160)
     .EUt(8);
   event.recipes.gtceu.chemical_reactor('gtceu:centrifuge/source_enhanced_bio_fuel')

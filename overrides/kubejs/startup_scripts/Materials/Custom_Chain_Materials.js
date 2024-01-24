@@ -33,5 +33,5 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('source_enhanced_bio_fuel')
         .fluid()
         .color(0xe642f5).iconSet(GTMaterialIconSet.DULL)
-
+    
 })

@@ -629,7 +629,7 @@ ServerEvents.recipes(event => {
       'BHB',
       'ZPZ'
     ], {
-      A: `gtceu:${coilType}_spring`,
+      A: `gtceu:${cableMaterial}_spring`,
       B: `gtceu:${tier}_electric_motor`,
       C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
