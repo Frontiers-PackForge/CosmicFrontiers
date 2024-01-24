@@ -189,12 +189,6 @@
 	[functional.flax]
 		enabled = true
 		wild_flax = true
-		#How many trades to give to wandering trader
-		#Range: 0 ~ 10
-		wandering_trader_trades = 2
-		#How many trades to give to farmers
-		#Range: 0 ~ 10
-		farmer_trades = 1
 
 [building]
 	lapis_bricks = true
@@ -306,9 +300,6 @@
 	[building.globe]
 		enabled = true
 		sepia_globe = true
-		#How many globe trades to give to the wandering trader. This will effectively increase the chance of him having a globe trader. Increase this if you have other mods that add stuff to that trader
-		#Range: 0 ~ 50
-		wandering_trader_trades = 2
 
 	[building.sign_post]
 		enabled = true
@@ -325,7 +316,6 @@
 
 	[building.ash_bricks]
 		enabled = true
-		mason_trades = true
 
 [tools]
 	candy = true
@@ -437,7 +427,6 @@
 
 	[tools.antique_ink]
 		enabled = true
-		cartographer_trades = true
 
 #General settings
 [general]
@@ -563,12 +552,6 @@
 		quill_adventurer_maps = true
 		#If Quark is installed replaces buried treasure and mansion maps with their equivalent quill form. This removes the lag spike they create when generating
 		quill_vanilla_maps = true
-		#These maps will roll a difference structure every time. Increase their price to balance them
-		#Range: 1.0 ~ 10.0
-		map_trade_price_multiplier = 2.0
-		#These maps will roll a difference structure every time. Decrease their max trades to balance them
-		#Range: 1 ~ 12
-		map_trade_max_trades = 2
 		#Miminum search radius for quill. Used to incrase the radius of vanilla searches. For reference buried treasures are at 50 and locate is at 100 chunks
 		#Range: 10 ~ 600
 		min_search_radius = 75

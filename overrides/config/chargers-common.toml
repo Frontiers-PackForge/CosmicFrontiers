@@ -1,0 +1,9 @@
+
+#Common configs
+[common]
+
+	#Compat configs
+	[common.compat]
+		#If curios compat should be enabled
+		curios_compat = true
+
