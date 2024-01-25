@@ -4,6 +4,7 @@ let yeet = (itemName) => {
   })
   ServerEvents.tags('item', event => {
     event.add('c:hidden_from_recipe_viewers', itemName)
+    event.add('forge:viewers/hidden_from_recipe', itemName)
   })
 }
 //Oh jeebus AE2 Recipe Yeeting
@@ -68,9 +69,45 @@ yeet('megacells:cable_mega_interface')
 yeet('megacells:cable_mega_pattern_provider')
 yeet('megacells:mega_interface')
 yeet('megacells:mega_pattern_provider')
+yeet('ae2:vibration_chamber')
+//Purging Recipes Containing these - JEI moment
+// This is Incredibly Destructive, but due to how AE2 Nests/Autogens Recipes and The Migration to JEI from REI due to stability, there's some extra work I've needed to do.
 
+let denseCoverHidding = ['ae2:black_covered_dense_cable', 'ae2:red_covered_dense_cable', 'ae2:green_covered_dense_cable', 'ae2:brown_covered_dense_cable', 'ae2:blue_covered_dense_cable', 'ae2:purple_covered_dense_cable', 'ae2:cyan_covered_dense_cable', 'ae2:light_gray_covered_dense_cable', 'ae2:gray_covered_dense_cable', 'ae2:pink_covered_dense_cable', 'ae2:lime_covered_dense_cable', 'ae2:yellow_covered_dense_cable', 'ae2:light_blue_covered_dense_cable', 'ae2:magenta_covered_dense_cable', 'ae2:orange_covered_dense_cable', 'ae2:white_covered_dense_cable']
+let quartzCableHidding = ['ae2:black_glass_cable', 'ae2:red_glass_cable', 'ae2:green_glass_cable', 'ae2:brown_glass_cable', 'ae2:blue_glass_cable', 'ae2:purple_glass_cable', 'ae2:cyan_glass_cable', 'ae2:light_gray_glass_cable', 'ae2:gray_glass_cable', 'ae2:pink_glass_cable', 'ae2:lime_glass_cable', 'ae2:yellow_glass_cable', 'ae2:light_blue_glass_cable', 'ae2:magenta_glass_cable', 'ae2:orange_glass_cable', 'ae2:white_glass_cable']
+let coveredCableHidding= ['ae2:black_covered_cable', 'ae2:red_covered_cable', 'ae2:green_covered_cable', 'ae2:brown_covered_cable', 'ae2:blue_covered_cable', 'ae2:purple_covered_cable', 'ae2:cyan_covered_cable', 'ae2:light_gray_covered_cable', 'ae2:gray_covered_cable', 'ae2:pink_covered_cable', 'ae2:lime_covered_cable', 'ae2:yellow_covered_cable', 'ae2:light_blue_covered_cable', 'ae2:magenta_covered_cable', 'ae2:orange_covered_cable', 'ae2:white_covered_cable']
+let processors = ['ae2:logic_processor', 'ae2:calculation_processor', 'ae2:engineering_processor', 'megacells:accumulation_processor']
+ServerEvents.recipes(event => {
+  event.remove({ output: 'ae2:fluix_glass_cable' })
+  event.remove({ input: 'ae2:fluix_glass_cable' })
+  event.remove({ output: 'ae2:fluix_crystal' })
+  event.remove({ input: 'ae2:fluix_crystal' })
+  event.remove({ output: 'ae2:fluix_dust'})
+  event.remove({ input: 'ae2:fluix_dust' })
 
+  event.remove({ output: processors })
+  event.remove({ input: processors })
+  event.remove({ output: denseCoverHidding })
+  event.remove({ output: quartzCableHidding })
+  event.remove({ output: coveredCableHidding })
+  event.remove({ input: denseCoverHidding })
+  event.remove({ input: quartzCableHidding })
+  event.remove({ input: coveredCableHidding })
+})
 
+ServerEvents.tags('item', event => {
+  event.add('forge:viewers/hidden_from_recipe', denseCoverHidding)
+  event.add('c:hidden_from_recipe_viewers', denseCoverHidding)
+
+  event.add('forge:viewers/hidden_from_recipe', quartzCableHidding)
+  event.add('c:hidden_from_recipe_viewers', quartzCableHidding)
+
+  event.add('forge:viewers/hidden_from_recipe', coveredCableHidding)
+  event.add('c:hidden_from_recipe_viewers', coveredCableHidding)
+
+  // event.add('forge:viewers/hidden_from_recipe', denseCoverHidding)
+  // event.add('c:hidden_from_recipe_viewers', denseCoverHidding)
+})
 
 ServerEvents.recipes(event => {
   event.remove({ output: 'ae2:item_cell_housing' })
@@ -98,19 +135,8 @@ ServerEvents.recipes(event => {
   )
   .duration(500)
   .EUt(GTValues.VA[GTValues.LuV])
-  event.remove({ output: 'botania:travel_belt' })
-  event.shaped('botania:travel_belt', [
-      'ELS',
-      'L L',
-      'MLA'
-  ], {
-      E: 'botania:rune_earth',
-      L: 'cosmiccore:waxed_leather',
-      S: 'gtceu:aluminium_screw',
-      M: 'gtceu:mana_steel_plate',
-      A: 'botania:rune_air'
-  })
 
+  event.remove({ id: 'ars_nouveau:novice_spell_book' })
   event.recipes.gtceu.compressor('gtceu:compressor/certus_block_squish')
     .itemInputs('2x gtceu:netherite_scrap_dust')
     .itemInputs('2x gtceu:rose_gold_dust')
@@ -119,6 +145,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LV]);
 
   //Acceptor
+  event.remove({ output: 'ae2:energy_acceptor' })
   event.recipes.gtceu.assembler('ae2:acceptor_assembly')
     .itemInputs(['6x gtceu:steel_plate', '4x gtceu:lv_voltage_coil', '4x #gtceu:circuits/lv', 'gtceu:lv_machine_hull'])
     .itemOutputs('ae2:energy_acceptor')
