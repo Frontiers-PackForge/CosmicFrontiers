@@ -162,7 +162,7 @@ ServerEvents.recipes( e => {
       'AAA'  
     ], {
       A: `gtceu:annealed_copper_plate`, 
-      B: 'minecraft:chests',  
+      B: '#forge:chests',  
       C: '#functionalstorage:drawer',
       D: '#forge:tools/hammers'
     }
