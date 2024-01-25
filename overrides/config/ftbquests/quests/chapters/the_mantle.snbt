@@ -103,13 +103,14 @@
 		{
 			dependencies: ["035D7CBD3AD14321"]
 			id: "6DACA7A55DBA5784"
+			subtitle: "Hidden in the Depths."
 			tasks: [{
 				id: "73246F4013A6F05F"
 				item: "minecraft:ancient_debris"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6DACA7A55DBA5784"]
@@ -119,20 +120,7 @@
 				item: "minecraft:netherite_scrap"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["035D7CBD3AD14321"]
-			icon: "minecraft:basalt"
-			id: "47E063744D66BD0E"
-			tasks: [{
-				biome: "minecraft:basalt_deltas"
-				id: "42FD9B4F9780ABD2"
-				type: "biome"
-			}]
-			title: "The Crags of Cinders"
-			x: 2.5d
+			x: 4.0d
 			y: 0.0d
 		}
 		{

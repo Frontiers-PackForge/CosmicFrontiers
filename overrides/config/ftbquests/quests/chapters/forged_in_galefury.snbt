@@ -232,7 +232,7 @@
 			id: "2823B3BAEF820B50"
 			shape: "hexagon"
 			size: 2.5d
-			subtitle: "Supercharged!"
+			subtitle: "Time to subdue the depths."
 			tasks: [{
 				id: "31A6572E4A197DC7"
 				item: "gtceu:hv_machine_hull"

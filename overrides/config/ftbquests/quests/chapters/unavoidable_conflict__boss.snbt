@@ -7,6 +7,18 @@
 	id: "1B78020199D8F415"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
-	title: "Unavoidable Conflict - UOY"
+	quests: [{
+		description: ["May the angels have mercy on your soul."]
+		hide_details_until_startable: true
+		id: "20BA7E36774780C1"
+		subtitle: "ABSOLUTE RULING"
+		tasks: [{
+			id: "0989C8D793091438"
+			item: "botania:gaia_head"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Unavoidable Conflict - &aV&r.&eI&r.&bR&r.&cT&r.&dU&r.&aE&r"
 }
