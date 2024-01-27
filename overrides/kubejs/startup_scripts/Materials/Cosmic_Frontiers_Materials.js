@@ -7,6 +7,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('nether_brick_dust')
         .dust()
         .color(0x511515)
+    event.create('fluix')
+        .gem()
+        .dust()
+        .flags(GTMaterialFlags.CRYSTALLIZABLE)
+        .color(0x7921c2).iconSet(GTMaterialIconSet.DIAMOND)
     event.create('zanite')
         .gem()
         .ore()
@@ -83,5 +88,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         )
     //So Help me god please work
     GTMaterials.get('redstone').addFlags(GTMaterialFlags.GENERATE_LENS)
+    // GTMaterials.get('certus').fluid()
 })
-//GENERATE_LENS
+
