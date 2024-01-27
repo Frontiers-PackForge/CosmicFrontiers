@@ -1,13 +1,14 @@
 //none of the materials that have ores generate atm because i still don't understand kubejs gt ore generation, i (would)/(will) (if i could)/(when i can)
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('alumina')
-        .ingot()
         .dust()
         .ore()
         .color(0x09474a).iconSet(GTMaterialIconSet.DULL)
+        .element(GTElements.get('alumina'))
     event.create('chromium_iii_oxide')
         .dust()
         .color(0x3dc34d).iconSet(GTMaterialIconSet.DULL)
+        .element(GTElements.get('chromium_iii_oxide'))
     event.create('banded_iron')
         .ingot()
         .ore()
@@ -36,6 +37,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xe642f5).iconSet(GTMaterialIconSet.DULL)
     event.create('source_enhanced_bio_fuel')
+        .fluid()
+        .color(0xe642f5).iconSet(GTMaterialIconSet.DULL)
+
+    event.create('sodium_hydroxide_bauxite')
+        .fluid()
+        .color(0xC86400)
+    event.create('heated_sodium_hydroxide_bauxite')
         .fluid()
         .color(0xe642f5).iconSet(GTMaterialIconSet.DULL)
     event.create('sodium_hydroxide_bauxite')
@@ -87,6 +95,5 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('sodium_hydroxide_solution')
         .fluid()
         .color(0xC86420)
-
 
 })
