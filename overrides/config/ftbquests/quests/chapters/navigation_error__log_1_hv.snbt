@@ -9,6 +9,13 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"This chapter will be developed between 0.3.1 -> 0.4.0 (MV Major Update to HV Major update)"
+				""
+				"There's some work you can already start doing in HV but I wouldn't go too far ahead."
+				""
+				"As your processing lines may risk breaking within new patches."
+			]
 			id: "1E72D62913EEB4EE"
 			shape: "hexagon"
 			size: 3.0d
@@ -46,6 +53,45 @@
 			}]
 			x: 3.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["1E72D62913EEB4EE"]
+			id: "22693418B45740CB"
+			shape: "hexagon"
+			subtitle: "NYI - Expect it in 0.3.1"
+			tasks: [
+				{
+					dimension: "undergarden:undergarden"
+					id: "1B7D7F44E2E3F81B"
+					type: "dimension"
+				}
+				{
+					id: "38BCE9B1D5D30523"
+					item: "undergarden:catalyst"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["22693418B45740CB"]
+			description: [
+				"This actually has nothing to do with gloompers, but the Virulent Mixture found deep within the undergarden. Toxic and Hot Slag containing various rare earths."
+				""
+				"You'll only be able to extract the light REE's for now, but with some EV Circuits you'll be able to extract more."
+			]
+			id: "705DE606D5A96A72"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Gloomper Chemistry - REE Extraction"
+			tasks: [{
+				id: "27DA4A0A3B63DB56"
+				item: "undergarden:virulent_mix_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
 		}
 	]
 	title: "Gloomper Chemistry [HV]"

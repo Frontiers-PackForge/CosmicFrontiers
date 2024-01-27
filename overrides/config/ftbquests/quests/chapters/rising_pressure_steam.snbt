@@ -657,7 +657,9 @@
 		}
 		{
 			dependencies: ["7895FFB7F9EBD9C6"]
+			description: ["Andesite alloy is used for a lot of create's hardware. As well as the copper backtank"]
 			id: "1FDBCDAA759B93F3"
+			subtitle: "Useful!"
 			tasks: [{
 				id: "7DDAB484A313EE74"
 				item: "create:andesite_alloy"
@@ -696,7 +698,7 @@
 		{
 			dependencies: ["7895FFB7F9EBD9C6"]
 			id: "65142662ED8019DD"
-			subtitle: "I'd advise going their first"
+			subtitle: "I'd advise going there first"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "5642CD9A6F0373AB"

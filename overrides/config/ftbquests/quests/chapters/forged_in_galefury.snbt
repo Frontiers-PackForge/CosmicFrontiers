@@ -47,7 +47,7 @@
 				""
 				"Some notable ones are"
 				""
-				"Rotors, Rings, Rods"
+				"Rotors, Rings, Rods, and Gears."
 			]
 			id: "18EADC9CAB943BF5"
 			subtitle: "Oh hey, easier recipes yet again!"
@@ -76,8 +76,14 @@
 				"213249274A0897C0"
 				"246B6FBFDDAE6748"
 			]
+			description: [
+				"Kanthal Coils allow you to smelt silicon ingots and stainless steel."
+				""
+				"You probably only need to make one set of coils for now until you have a Vacuum Freezer"
+			]
 			id: "3B327B774ABA8783"
 			shape: "hexagon"
+			subtitle: "Turn the heat up to 12!"
 			tasks: [{
 				id: "68E8663C7C8589C4"
 				item: "gtceu:kanthal_coil_block"
@@ -88,6 +94,7 @@
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
+			description: [""]
 			id: "2CB636C76965CC37"
 			subtitle: "Yup, This quest is here twice."
 			tasks: [{
@@ -125,6 +132,11 @@
 		}
 		{
 			dependencies: ["658FAEAC28F212F2"]
+			description: [
+				"Ingots cooked past a certain temp in an EBF become 'hot ingots' and must be cooled down."
+				""
+				"In the future you will have access to the multiblock &aVacuum Freezer&r, but for now you can cool &eSilicon&r and &eKanthal&r in a &aChemical Bath&r"
+			]
 			id: "2292717C02E9CEBA"
 			subtitle: "Hot! Hot!"
 			tasks: [{
@@ -138,31 +150,42 @@
 		{
 			dependencies: ["466C20EACAEF3394"]
 			id: "0BAB0C4773CFFCA7"
+			subtitle: "Required to produce &eStainless Steel Dust"
 			tasks: [{
 				id: "14665C3F1D66FED5"
 				item: "gtceu:mv_mixer"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -1.5d
+			x: 0.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["0BAB0C4773CFFCA7"]
+			dependencies: [
+				"0BAB0C4773CFFCA7"
+				"2C615AE7B76CE145"
+			]
+			description: ["Kanthal is second EBF Coil material after Cupronickel, and will require some special effort to get for now"]
 			id: "658FAEAC28F212F2"
+			subtitle: "Yummy"
 			tasks: [{
 				id: "2C83F42FE2564BC0"
 				item: "gtceu:kanthal_dust"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.5d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
 				"2CB636C76965CC37"
 				"2292717C02E9CEBA"
 			]
+			description: [
+				"Take your &eHot Kanthal ingots&r and cool them down with water in your &aMV Chemical Bath&r"
+				"You will need 128 Ingots to proceed making your Kanthal Coils."
+			]
 			id: "213249274A0897C0"
+			subtitle: "Cooling down."
 			tasks: [{
 				id: "25427045895684FC"
 				item: "gtceu:kanthal_ingot"
@@ -260,13 +283,22 @@
 		}
 		{
 			dependencies: ["7DB0DC421621FC05"]
+			description: [
+				"With an MV electrolyzer you can seperate a wide variety of materials. Check out JEI for an exhaustive list."
+				""
+				"Some Notable ones to mention"
+				""
+				"Silicon and Aluminum from clay dust"
+				"[play testers I request more data - I am working with too much data I forgot lol]"
+			]
+			icon: "gtceu:gallium_dust"
 			id: "2522EC98EC5F1B73"
 			shape: "gear"
 			tasks: [{
-				id: "03E56265A87A9DAE"
-				item: "gtceu:gallium_dust"
-				type: "item"
+				id: "615C1912AB062E6E"
+				type: "checkmark"
 			}]
+			title: "Electrolyzing at MV"
 			x: -2.0d
 			y: -2.5d
 		}
@@ -475,8 +507,14 @@
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
-			icon: "gtceu:banded_iron_gear"
+			description: [
+				"Some of these machines LV counterparts were too weak to provide functionality. In MV that has changed, check them out!"
+				""
+				"And remember, every tier a machine is above a recipe, it will &ldouble the speed of the recipe&r"
+			]
+			icon: "gtceu:rhodium_gear"
 			id: "124FCFE63B0E5531"
+			subtitle: "Useful finally!"
 			tasks: [{
 				id: "50C33901A547CC79"
 				type: "checkmark"
@@ -1413,20 +1451,31 @@
 		}
 		{
 			dependencies: ["0D2BAB45D2503E60"]
+			description: [
+				"Last step! Take your &eChromium (III) Oxide&r and some &eAluminium&r and toss it into an &aEBF&r."
+				"You'll get your &bChromium&r and some &bAlumina&r! Congrats, you've now (hopefully) automated Chromium"
+			]
 			id: "2C615AE7B76CE145"
+			subtitle: "Nice! Chrome! (But Firefox is better)"
 			tasks: [{
 				id: "427A357B2FE2E5E2"
 				item: "gtceu:chromium_dust"
 				type: "item"
 			}]
 			x: 5.0d
-			y: -1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["159750F7321A983A"]
-			description: ["[PlaceHolder]"]
+			description: [
+				"First up we need to make the chromite a solution."
+				"Take &eChromite&r, &eOxygen&r, and &eSodium Cabonate Solution&r and react them in a &achemical reactor&r."
+				""
+				"This will give you &bSodium Chromate Solution&r, as well as &6Magnetite&r and &6CO2&r as Byproducts."
+			]
 			icon: "gtceu:sodium_chromate_solution_bucket"
 			id: "308F457E26E57039"
+			subtitle: "Solutions for chrome problems!"
 			tasks: [
 				{
 					id: "32BFDD1F6AF018E5"
@@ -1440,13 +1489,14 @@
 				}
 			]
 			x: 5.0d
-			y: -4.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["308F457E26E57039"]
-			description: ["[PlaceHolder]"]
+			description: ["Next, Take your &eSodium Chromate Soltion&r and some &eSulfuric Acid&r and slap that inside a &aChemical Dehydrator&r. You'll end up with &bSodium Dichromate Solution&r and some S&6odium Sulfate&r as a byproduct."]
 			icon: "gtceu:sodium_dichromate_solution_bucket"
 			id: "1C64908E1A380A95"
+			subtitle: "Time to concentrate it."
 			tasks: [
 				{
 					id: "4AE9C0009BA882BB"
@@ -1460,30 +1510,42 @@
 				}
 			]
 			x: 5.0d
-			y: -3.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1C64908E1A380A95"]
+			description: ["After that get your &eSodium Dichromate Solution&r, and add some &eCarbon&r with it inside a &achemical dehydrator&r again. This should yield you some &bChromium (III) Oxide&r as well as byproducts of &6Soda Ash&r and &6Carbon Monoxide&r"]
 			id: "0D2BAB45D2503E60"
+			subtitle: "Time to dry it out"
 			tasks: [{
 				id: "67ECD41B8D227632"
 				item: "gtceu:chromium_iii_oxide_dust"
 				type: "item"
 			}]
 			x: 5.0d
-			y: -2.5d
+			y: -4.5d
 		}
 		{
+			description: [
+				"Welcome to your first significant chemical setup, &bChromium&r."
+				""
+				"This chain aims to teach you basic automation skills like recycling and looping intermediate products. While also giving you time to get adjusted to AE2. "
+				""
+				"I can't stress how vital AE2 is for GregTech automation. You'll use it often from here on out, so get familiar with it!"
+				""
+				"&o&7This dust seems to have a much more valuable material trapped inside it, I should process this.&r"
+			]
 			id: "159750F7321A983A"
 			shape: "hexagon"
 			size: 1.5d
+			subtitle: "The path to Chrome"
 			tasks: [{
 				id: "225A175FF43A5A15"
 				item: "gtceu:chromite_dust"
 				type: "item"
 			}]
 			x: 5.0d
-			y: -6.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["50C0A5DD402583A2"]
@@ -1538,6 +1600,60 @@
 			}]
 			x: 3.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["55FEFCA7B9B0A473"]
+			description: [
+				"The subtly of mechanical flora rings a bell within the depths of my mind."
+				"Why aren't their fields of metallic flowers catalyzing and terraforming this empty world? This place must be under the jurisdiction of an Angel. It's Weird not to see a Virtue govern this stellar body or the skies above."
+				""
+				"{@pagebreak}"
+				"I need to jot down what I remember before my memories fade once again, or worse, someone realizes I'm remembering things I shouldn't."
+				""
+				"In the Avarice of Humanity, there are three bodies of authority."
+				""
+				"{@pagebreak}"
+				"&lThe Overseers&r: I only ever knew them by name, but they live in the original universe with the ability to manipulate time and even the multiverse itself. - Their rulings are absolute, and anyone found breaking them will be punished without mercy. However, they are far from gods written in fictional past writings. They are nothing but humans with unfathomable power, and you might as well consider them one."
+				""
+				"{@pagebreak}"
+				"&lThe Scripture&r: While the Overseers stuff their mouths and indulge in their desires at a galactic scale, they tend to lack the omnipresence to observe entire contained universes. They created \"The Scripture\". Scriptures are vast computational arrays hanging outside the flow of standard time that can influence a whole universe if they choose to. Their purpose is to observe and flag errant behavior by default."
+				""
+				"{@pagebreak}"
+				"&lThe Virtues&r: Something I wish never to meet—the Sword of the Scriptures. Virtues enact the wills of the Scriptures while staying within the universe's allowed rules of causality. They are terrifying, and I've seen entire planets turned to rubble by them on the news. They are one entity armies hellbent on following orders. "
+			]
+			hide: true
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			icon: "botania:gaia_head"
+			id: "192F5200CDB94397"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "&r&l&cStory"
+			tasks: [{
+				id: "3685BADE31EAED87"
+				title: "Read Logs - Click to reveal"
+				type: "checkmark"
+			}]
+			title: "&f&lHigher Beings - Your Executioners"
+			x: 8.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			description: [
+				"QB Descriptions / Layout is TBD and Not going to be finalized until 1.0.0."
+				"Expect Frequent Revisions to things, not anything hugely breaking though."
+			]
+			id: "3C01BF614DEA12C9"
+			optional: true
+			subtitle: "Follow along in the discord!"
+			tasks: [{
+				id: "55A6C86AF7A96D08"
+				title: "In Development!"
+				type: "custom"
+			}]
+			x: -1.5d
+			y: -1.0d
 		}
 	]
 	title: "Forged in Galefury [MV]"

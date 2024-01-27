@@ -1,18 +1,18 @@
 {
 	chapter_groups: [
-		{ id: "43A79D0106662C02", title: "&eExoplanet &b03S9 &r- \"&3E&ka&r&3r&kt&r&3h&r\" - [&rLV&r]" }
-		{ id: "4135A2BA7EBD719E", title: "&eAtmosphere &b03S9 &r- &eAether&r - [&bMV&r]" }
-		{ id: "533DAA16C8D9D30C", title: "&eExorealm &bUG39O&r - &2UnderGarden&r - [&6HV&r]" }
-		{ id: "473CC3AD40832CD0", title: "&eMoon &b03S10&r - &bLuna&r - [&5EV&r]" }
+		{ id: "43A79D0106662C02", title: "&fExoplanet &b03S9 &r- \"&3E&ka&r&3r&kt&r&3h&r\" - [&rLV&r]" }
+		{ id: "4135A2BA7EBD719E", title: "&fAtmosphere &b03S9 &r- &fAether&r - [&bMV&r]" }
+		{ id: "533DAA16C8D9D30C", title: "&fExorealm &bUG39O&r - &fUnderGarden&r - [&6HV&r]" }
+		{ id: "473CC3AD40832CD0", title: "&fMoon &b03S10&r - &fLuna&r - [&5EV&r]" }
 		{ id: "3EC91AC584FC0BC3", title: "[&c&lWARNING&r] &cCONTACT&r - [&9IV&r]" }
-		{ id: "4B9C53F35CAB9BEE", title: "&eExorealm &bEB31S &r- &b&lEverbright&r - [&dLuV&r]" }
-		{ id: "7295A11F0DD1E8D1", title: "&eExoplanet &b02S7 - &5\"Venus\"&r - [&cZPM&r]" }
-		{ id: "34809FA43B03812C", title: "&eExorealm &bED44Q&r - &6Everdawn &r- [&9UV&r]" }
-		{ id: "492B135B053E111A", title: "Pulling Back the Veil - [UHV]" }
-		{ id: "05E791D3658E47D0", title: "My Infinite Hatred - [&2UEV&r]" }
-		{ id: "0FA2E8AE749DD85D", title: "Cries of a Lone Universe - [&eUXV&r]" }
-		{ id: "0AE0B3EFA57DABD2", title: "Reascend - [&9&lOPV&r]" }
-		{ id: "3189B6C95DDE02C3", title: "&fKether &r- [&f&lMAX&r]" }
+		{ id: "4B9C53F35CAB9BEE", title: "&fExorealm &bEB31S &r- &fEverbright&r - [&dLuV&r]" }
+		{ id: "7295A11F0DD1E8D1", title: "&fExoplanet &b02S7&r - \"&fVenus&r\" - [&cZPM&r]" }
+		{ id: "34809FA43B03812C", title: "&fExorealm &bED44Q&r - &fEverdawn &r- [&9UV&r]" }
+		{ id: "492B135B053E111A", title: "&fPulling Back the Veil&r - [&4UHV&r]" }
+		{ id: "05E791D3658E47D0", title: "&fMy &c&nInfinite&r &fHatred&r - [&2UEV&r]" }
+		{ id: "0FA2E8AE749DD85D", title: "&fCries of a &3Lone Universe&r - [&eUXV&r]" }
+		{ id: "0AE0B3EFA57DABD2", title: "&6&lReascend&r - [&9&lOPV&r]" }
+		{ id: "3189B6C95DDE02C3", title: "&f&lKether &r- [&f&lMAX&r]" }
 		{ id: "67BE70C11B6638CD", title: "&f&lOne Perfect Memory &r- [&4&lERROR&r]" }
 	]
 }

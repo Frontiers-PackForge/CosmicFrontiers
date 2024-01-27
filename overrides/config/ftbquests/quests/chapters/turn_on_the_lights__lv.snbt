@@ -1397,6 +1397,7 @@
 				"Expect Frequent Revisions to things, not anything hugely breaking though."
 			]
 			id: "37EF79BCAE3BF64C"
+			optional: true
 			subtitle: "Follow along in the discord!"
 			tasks: [{
 				id: "73E2CB2B0D93FE49"
@@ -1510,5 +1511,6 @@
 			y: 3.25d
 		}
 	]
+	subtitle: ["Finally! Energy!"]
 	title: "Turn on the Lights - [LV]"
 }
