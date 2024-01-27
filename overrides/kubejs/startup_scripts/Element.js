@@ -1,8 +1,13 @@
-GTCEuStartupEvents.registry('gtceu:element', event => {
-    event.create('ether_steel', 27, 177, -1, null, 'Ma2FeMnNi(Si(Fe2S2)5(Cr2ZiAbAl)Hg3)', false) // 
-    event.create('mana_steel', 27, 177, -1, null, 'Ma*(Si(FeS2)5(CrAl2O3)Hg3)(AuAg)', false)
-    event.create('terrasteel', 27, 177, -1, null, 'Ma2(Si(FeS2)5(CrAl2O3)Hg3)(AuAg)', false)
-    event.create('zanite', 27, 177, -1, null, 'Zi', false)
-    event.create('ambrosium', 27, 177, -1, null, 'Ab', false)
-    event.create('zano_alumate', 27, 177, -1, null, '(ZiAbAl)', false)
+ GTCEuStartupEvents.registry('gtceu:element', event => {
+    event.create('ether_steel', 27, 177, -1, null, 'Ma₂FeMnNi(Si(Fe₂S₂)₅(Cr₂ZiAbAl)Hg₃)', false) // 
+    event.create('mana_steel', 69, 420, -1, null, 'Ma*(Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AuAg)', false)
+    event.create('terrasteel', 69, 420, -1, null, 'Ma₂(Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AuAg)', false)
+    event.create('zanite', 134, 335, -1, null, 'Zi', false)
+    event.create('ambrosium', 135, 338, -1, null, 'Ab', false)
+    event.create('zano_alumate', 69, 420, -1, null, '(ZiAbAl)', false)
+    event.create('chromium_iii_oxide', 69, 420, -1, null, 'Cr₂O₃', false)
+    event.create('alumina', 69, 420, -1, null, 'Al₂O₃', false)
+    event.create('prism_tungstensteel', 69, 157, -1, null, 'PiFeW', false)
+    event.create('virtue', 999, 999, -1, null, 'ERROR₉₉₉₉₉', false)
+    //subsript (copy and paste) ₂₃₄₅₆₇₈₉₀
  })

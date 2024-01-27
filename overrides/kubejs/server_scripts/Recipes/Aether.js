@@ -5,5 +5,9 @@ ServerEvents.tags('block', event => {
 ServerEvents.recipes(event => { 
     console.log('Hello! Correcting Errored Recipes in [AETHER!')
     event.remove({ id: 'aether:skyroot_piston' })
-    
+    event.recipes.gtceu.assembler(`cosmiccore:plated_aerocloud_assembly`)
+    .itemInputs(['4x gtceu:mana_steel_plate', '4x gtceu:blue_alloy_screw', 'deep_aether:sterling_aercloud'])
+    .itemOutputs('cosmiccore:plated_aerocloud')
+    .duration(40)
+    .EUt(GTValues.VA[GTValues.MV]);
   })

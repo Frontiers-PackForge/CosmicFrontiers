@@ -96,7 +96,7 @@
 		#Players gain this amount of sanity for every point of damage dealt to peaceful animals (incl. neutral ones)
 		#This value is doubled for baby animals
 		#Range: -100.0 ~ 100.0
-		animal_hurt_ratio = 0
+		animal_hurt_ratio = 0.0
 		#Players gain this amount of sanity upon their pets' death
 		#Range: -100.0 ~ 100.0
 		pet_death = -60.0

@@ -824,5 +824,6 @@
 			y: -3.5d
 		}
 	]
+	subtitle: ["It all starts here"]
 	title: "First Steps"
 }

@@ -114,7 +114,9 @@
 		{
 			dependencies: ["57A955955309A292"]
 			id: "467DD8A59876EDFE"
+			subtitle: "NYI - More Content Coming HV!"
 			tasks: [{
+				icon: "ftbquests:barrier"
 				id: "048244CDA891718D"
 				type: "item"
 			}]
@@ -123,7 +125,9 @@
 		}
 		{
 			dependencies: ["57A955955309A292"]
+			icon: "ftbquests:barrier"
 			id: "63FD7396CD8ACA36"
+			subtitle: "NYI - More Content Coming HV!"
 			tasks: [{
 				id: "5D53D2C529BF1121"
 				type: "item"
@@ -133,7 +137,9 @@
 		}
 		{
 			dependencies: ["467DD8A59876EDFE"]
+			icon: "ftbquests:barrier"
 			id: "7BB9382B7641FFDF"
+			subtitle: "NYI - More Content Coming HV!"
 			tasks: [{
 				id: "63E2746731AB8D6F"
 				type: "item"
@@ -143,7 +149,9 @@
 		}
 		{
 			dependencies: ["63FD7396CD8ACA36"]
+			icon: "ftbquests:barrier"
 			id: "67EC5AF9BC37E368"
+			subtitle: "NYI - More Content Coming HV! "
 			tasks: [{
 				id: "3944DDE073E9B291"
 				type: "item"

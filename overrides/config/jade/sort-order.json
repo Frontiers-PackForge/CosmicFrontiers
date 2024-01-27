@@ -125,6 +125,10 @@
   "endertanks:hud": null,
   "delightful:crop_progress": null,
   "waystones:waystone": null,
+  "gtceu:electric_container_provider": null,
+  "gtceu:workable_provider": null,
+  "gtceu:controllable_provider": null,
+  "gtceu:recipe_logic_provider": null,
   "minecraft:brewing_stand": null,
   "minecraft:beehive": null,
   "minecraft:command_block": null,
@@ -183,9 +187,5 @@
   "ae2:part_mod_name": null,
   "expatternprovider:tile_data": null,
   "expatternprovider:jade_wireless": null,
-  "gtceu:electric_container_provider": null,
-  "gtceu:workable_provider": null,
-  "gtceu:controllable_provider": null,
-  "gtceu:recipe_logic_provider": null,
   "enderchests:hud": null
 }

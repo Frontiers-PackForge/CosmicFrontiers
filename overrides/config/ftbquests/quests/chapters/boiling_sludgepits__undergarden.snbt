@@ -7,6 +7,16 @@
 	id: "0868F04BAE3AC9C0"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "78D513D9C170187B"
+		subtitle: "NYI - SOON"
+		tasks: [{
+			id: "3CE188B399B2F15D"
+			item: "ftbquests:barrier"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "Boiling Sludgepits"
 }

@@ -1,17 +1,17 @@
 ServerEvents.recipes(event => {
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        [
-            "minecraft:sand",
-            "minecraft:sand",
-            "minecraft:sand",
-            "minecraft:sand",
-        ], // input items
-        "minecraft:gunpowder", // reagent
-        "minecraft:tnt", // output
-        1000, // source cost
-        // true // keep nbt of reagent, think like a smithing recipe
-    );
+    event.remove({ output: 'ars_nouveau:archwood_chest' })
 
+    event.shaped('ars_nouveau:archwood_chest', [
+        'ABA',
+        'BRB',
+        'ABA'
+    ],
+        {
+            A: '#forge:logs/archwood',
+            B: '#forge:planks/archwood',
+            R: 'minecraft:flint',
+        }
+    )
 })
 
 //Time to do some Gregification
@@ -141,12 +141,12 @@ ServerEvents.recipes(e => {
     )
     e.remove({ output: 'ars_nouveau:imbuement_chamber' })
     e.shaped('ars_nouveau:imbuement_chamber', [
-      'ARA',
-      'A A',
-      'ARA'
+        'ARA',
+        'A A',
+        'ARA'
     ], {
-      A: 'ars_nouveau:archwood_planks',
-      R: 'gtceu:rose_gold_plate'
+        A: 'ars_nouveau:archwood_planks',
+        R: 'gtceu:rose_gold_plate'
     }
     )
 })

@@ -75,6 +75,8 @@ ServerEvents.recipes(e => {
 
 
     //Actually starting botania recipes
+    e.remove({ id: 'gtceu:wiremill/mill_terrasteel_wire' })
+    e.remove({ id: 'gtceu:extruder/extrude_terrasteel_wire' })
     //Petal Apothecary
     e.remove({ output: 'botania:apothecary_default' })
     e.shaped('botania:apothecary_default', [

@@ -552,6 +552,32 @@
 			x: 6.0d
 			y: 1.0d
 		}
+		{
+			dependencies: [
+				"2AE5AE000D2A1FAD"
+				"44C6CF0F083218B0"
+			]
+			id: "655957A65CA77C53"
+			tasks: [{
+				id: "084279A42975538A"
+				item: "ae2:pattern_provider"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["655957A65CA77C53"]
+			id: "07F1D4FBEBF172AE"
+			tasks: [{
+				id: "6D58D054C1739EBC"
+				item: "expatternprovider:ex_pattern_provider"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.5d
+		}
 	]
+	subtitle: ["AE2 and You!"]
 	title: "Digital Roots"
 }

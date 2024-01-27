@@ -9,17 +9,19 @@ let yeet = (itemName) => {
 
   })
 }
-let DONOTEXIST = ['sophisticatedstorage:stack_upgrade_tier_1', 'sophisticatedstorage:stack_upgrade_tier_2', 'sophisticatedstorage:stack_upgrade_tier_3', 'sophisticatedstorage:stack_upgrade_tier_4', 'sophisticatedbackpacks:stack_upgrade_tier_1', 'sophisticatedbackpacks:stack_upgrade_tier_2', 'sophisticatedbackpacks:stack_upgrade_tier_3', 'sophisticatedbackpacks:stack_upgrade_tier_4']
+let DONOTEXIST = ['sophisticatedstorage:basic_to_gold_tier_upgrade', 'sophisticatedstorage:basic_to_diamond_tier_upgrade', 'sophisticatedstorage:basic_to_netherite_tier_upgrade', 'sophisticatedstorage:iron_to_diamond_tier_upgrade', 'sophisticatedstorage:iron_to_netherite_tier_upgrade', 'sophisticatedstorage:gold_to_netherite_tier_upgrade','sophisticatedstorage:stack_upgrade_tier_3', 'sophisticatedstorage:stack_upgrade_tier_4', 'sophisticatedbackpacks:stack_upgrade_tier_1', 'sophisticatedbackpacks:stack_upgrade_tier_2', 'sophisticatedbackpacks:stack_upgrade_tier_3', 'sophisticatedbackpacks:stack_upgrade_tier_4']
 
 ServerEvents.tags('item', event => {
   event.add('forge:viewers/hidden_from_recipe', DONOTEXIST)
-
+  event.add('c:hidden_from_recipe_viewers', DONOTEXIST)
 })
 ServerEvents.recipes(event => {
   //I Love Fixing Merge Conflicts ~Ghostipedia 2023
   console.log('[SophisticatedMods.js loading]')
   event.remove({ mod: 'sophisticatedstorage' })
   event.remove({ mod: 'sophisticatedbackpacks' })
+  event.remove({ id: 'aether:skyroot_chest' })
+  //aether:skyroot_chest
   /* BACKPACKS */
 
   event.remove({ output: DONOTEXIST })
@@ -35,7 +37,44 @@ ServerEvents.recipes(event => {
     C: 'gtceu:bronze_crate',
     W: 'cosmiccore:waxed_leather',
   })
+  //For the Actual Default Soph Storage Chests because their recipe is either missing, the script is broken, or they just were never added.
+  let basicWoodType = [
+    'oak',
+    'jungle',
+    'birch',
+    'mangrove',
+    'spruce',
+    'dark_oak',
+    'acacia',
+  ]
 
+  basicWoodType.forEach(woodType => {
+    event.shaped(Item.of(`sophisticatedstorage:chest`, `{woodType:"${woodType}"}`), [
+      'ABA',
+      'BRB',
+      'ABA'
+    ], {
+      A: `#minecraft:${woodType}_logs`,
+      B: `minecraft:${woodType}_planks`,
+      R: `minecraft:chest`,
+    })
+  })
+  let basicStemType = [
+    'crimson',
+    'warped'
+  ]
+
+  basicStemType.forEach(woodType => {
+    event.shaped(Item.of(`sophisticatedstorage:chest`, `{woodType:"${woodType}"}`), [
+      'ABA',
+      'BRB',
+      'ABA'
+    ], {
+      A: `#minecraft:${woodType}_logs`,
+      B: `minecraft:${woodType}_planks`,
+      R: `minecraft:chest`,
+    })
+  })
   //Yup, Upgrading Backpacks takes a special recipetype...
   event.remove({ output: 'sophisticatedbackpacks:iron_backpack' })
   event.custom({
@@ -267,9 +306,9 @@ ServerEvents.recipes(event => {
 
   upgradeUpgrade('gtceu:wood_screw', '#minecraft:planks', '#forge:tools/saws', 'sophisticatedstorage:upgrade_base');
   upgradeUpgrade('gtceu:wood_screw', 'gtceu:wood_plate', 'sophisticatedstorage:upgrade_base', 'sophisticatedstorage:basic_tier_upgrade');
-  upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wood_plate', 'sophisticatedstorage:basic_tier_upgrade', 'sophisticatedstorage:basic_to_iron_tier_upgrade');
-  upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:wrought_iron_plate', '#forge:tools/screwdrivers', 'sophisticatedstorage:iron_to_gold_tier_upgrade');
-  upgradeUpgrade('gtceu:diamond_exquisite_gem', 'gtceu:rose_gold_plate', '#forge:tools/files', 'sophisticatedstorage:gold_to_diamond_tier_upgrade');
+  upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', 'sophisticatedstorage:basic_tier_upgrade', 'sophisticatedstorage:basic_to_iron_tier_upgrade');
+  upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:rose_gold_plate', '#forge:tools/screwdrivers', 'sophisticatedstorage:iron_to_gold_tier_upgrade');
+  upgradeUpgrade('gtceu:diamond_exquisite_gem', 'gtceu:diamond_plate', '#forge:tools/files', 'sophisticatedstorage:gold_to_diamond_tier_upgrade');
 
   upgradeStorage('minecraft:sticky_piston', 'pickup');
   upgradeStorage('#forge:string', 'filter');
@@ -291,8 +330,8 @@ ServerEvents.recipes(event => {
   // YES, I GAME UP HERE!
   // I'M FUCKING TIRED AHHHHHHHHHHHHHH
 
-  // upgradeUpgrade('gtceu:wood_screw', 'gtceu:wood_plate', `sophisticatedstorage:upgrade_base`, `sophisticatedstorage:stack_upgrade_tier_1`);
-  // upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', `sophisticatedstorage:stack_upgrade_tier_1`, `sophisticatedstorage:stack_upgrade_tier_2`);
+  upgradeUpgrade('gtceu:wood_screw', 'gtceu:wood_plate', `sophisticatedstorage:upgrade_base`, `sophisticatedstorage:stack_upgrade_tier_1`);
+  upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', `sophisticatedstorage:stack_upgrade_tier_1`, `sophisticatedstorage:stack_upgrade_tier_2`);
   // upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:rose_gold_plate', `sophisticatedstorage:stack_upgrade_tier_2`, `sophisticatedstorage:stack_upgrade_tier_3`);
   // upgradeUpgrade('gtceu:diamond_exquisite_gem', 'gtceu:diamond_plate', `sophisticatedstorage:stack_upgrade_tier_3`, `sophisticatedstorage:stack_upgrade_tier_4`);
 
@@ -326,7 +365,7 @@ ServerEvents.recipes(event => {
   upgradeUpgrade('gtceu:lv_super_tank', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:tank_upgrade`);
   upgradeUpgrade('gtceu:lv_sodium_battery', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:battery_upgrade`);
   upgradeUpgrade('minecraft:anvil', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:anvil_upgrade`);
-  // upgradeUpgrade('gtceu:wood_screw', 'cosmiccore:waxed_leather', `sophisticatedbackpacks:upgrade_base`, `sophisticatedbackpacks:stack_upgrade_tier_1`);
+  upgradeUpgrade('gtceu:wood_screw', 'cosmiccore:waxed_leather', `sophisticatedbackpacks:upgrade_base`, `sophisticatedbackpacks:stack_upgrade_tier_1`);
   // upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', `sophisticatedbackpacks:stack_upgrade_tier_1`, `sophisticatedbackpacks:stack_upgrade_tier_2`);
   // upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:rose_gold_plate', `sophisticatedbackpacks:stack_upgrade_tier_2`, `sophisticatedbackpacks:stack_upgrade_tier_3`);
   // upgradeUpgrade('gtceu:diamond_exquisite_gem', 'gtceu:diamond_plate', `sophisticatedbackpacks:stack_upgrade_tier_3`, `sophisticatedbackpacks:stack_upgrade_tier_4`);
