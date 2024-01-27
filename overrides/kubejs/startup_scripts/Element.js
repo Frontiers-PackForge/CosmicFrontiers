@@ -7,8 +7,7 @@
     event.create('zano_alumate', 69, 420, -1, null, '(ZiAbAl)', false)
     event.create('chromium_iii_oxide', 69, 420, -1, null, 'Cr₂O₃', false)
     event.create('alumina', 69, 420, -1, null, 'Al₂O₃', false)
-    event.create('zano_alumate', 69, 420, -1, null, '(ZiAbAl)', false)
     event.create('prism_tungstensteel', 69, 157, -1, null, 'PiFeW', false)
-    event.create('virtue', 999, 999, -1, null, 'ERROR', false)
+    event.create('virtue', 999, 999, -1, null, 'ERROR₉₉₉₉₉', false)
     //subsript (copy and paste) ₂₃₄₅₆₇₈₉₀
  })
