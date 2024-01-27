@@ -5,4 +5,6 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('zanite', 27, 177, -1, null, 'Zi', false)
     event.create('ambrosium', 27, 177, -1, null, 'Ab', false)
     event.create('zano_alumate', 27, 177, -1, null, '(ZiAbAl)', false)
+    event.create('prism_tungstensteel', 49, 157, -1, null, 'PiFeW', false)
+    event.create('virtue', 999, 999, -1, null, 'ERROR', false)
  })

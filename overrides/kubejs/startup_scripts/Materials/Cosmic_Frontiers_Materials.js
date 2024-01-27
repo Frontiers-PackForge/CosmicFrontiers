@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .gem()
         .ore()
         .element(GTElements.get('zanite'))
-        .flags(GTMaterialFlags.GENERATE_LENS,GTMaterialFlags.GENERATE_PLATE)
+        .flags(GTMaterialFlags.GENERATE_LENS, GTMaterialFlags.GENERATE_PLATE)
         .color(0xa521fc).iconSet(GTMaterialIconSet.DIAMOND)
     event.create('ambrosium')
         .gem()
@@ -24,7 +24,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('potent_mana')
         .fluid()
         .color(0x457bd1)
-    
+
 
     //Netherite Line Materials
     event.create('ancient_debris')
@@ -53,6 +53,34 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0x8e46fa).iconSet(GTMaterialIconSet.SHINY)
         .element(GTElements.get('zano_alumate'))
+    event.create('prismatic_tungstensteel')
+        .color(0x6f42cf)
+        .ingot()
+        .element(GTElements.get('prism_tungstensteel'))
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING
+        )
+    event.create('virtue_meld')
+        .color(0xff8400)
+        .ingot()
+        .element(GTElements.get('virtue'))
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING
+        )
     //So Help me god please work
     GTMaterials.get('redstone').addFlags(GTMaterialFlags.GENERATE_LENS)
 })

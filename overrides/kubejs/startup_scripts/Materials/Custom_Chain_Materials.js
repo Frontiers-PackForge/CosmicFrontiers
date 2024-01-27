@@ -88,4 +88,5 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xC86420)
 
+
 })

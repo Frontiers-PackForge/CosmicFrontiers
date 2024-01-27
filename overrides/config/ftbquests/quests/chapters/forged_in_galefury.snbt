@@ -186,6 +186,7 @@
 			dependencies: [
 				"3B327B774ABA8783"
 				"0DA958E38153F414"
+				"2C615AE7B76CE145"
 			]
 			id: "12E540563DD5C5A9"
 			shape: "hexagon"
@@ -231,7 +232,7 @@
 			id: "2823B3BAEF820B50"
 			shape: "hexagon"
 			size: 2.5d
-			subtitle: "Supercharged!"
+			subtitle: "Time to subdue the depths."
 			tasks: [{
 				id: "31A6572E4A197DC7"
 				item: "gtceu:hv_machine_hull"
@@ -270,7 +271,10 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["762AA097C2433B34"]
+			dependencies: [
+				"762AA097C2433B34"
+				"47338E363C32FF42"
+			]
 			id: "4EEB3A7642876547"
 			tasks: [{
 				id: "04191892D073AA6B"
@@ -296,8 +300,8 @@
 			hide_dependency_lines: true
 			id: "5C15FE49888BC50B"
 			tasks: [{
-				id: "36B84A3FA1146D92"
-				item: "gtceu:redstone_lens"
+				id: "112850E70727CE95"
+				item: "gtceu:zanite_lens"
 				type: "item"
 			}]
 			x: -1.0d
@@ -961,8 +965,8 @@
 				item: "aether:ambrosium_shard"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -1.5d
+			x: 6.5d
+			y: 1.0d
 		}
 		{
 			icon: "aether:aether_portal_frame"
@@ -1011,10 +1015,11 @@
 				"325D1D73A1414437"
 			]
 			description: [
-				"Digitally Calculating Floral Behaviors to produce raw, undiluted mana. 10x stronger than what's found in mana pools (Potent Mana : Mana is 1:10)"
+				"Digitally Calculating Floral Behaviors to produce raw, undiluted mana. 10x more robust than what's found in mana pools (Potent Mana : Mana is 1:10)"
 				""
-				"The best digital flower you'll have access to currently is the entropynium"
-				"by now I would forego making an actual mana setup and just use these guys."
+				"I would forego making an actual mana setup and use these guys."
+				""
+				"&o&7Huh, I guess this really is a tech mod after all...&r"
 			]
 			icon: "gtceu:mana_simulator"
 			id: "22EF1AEF0213682D"
@@ -1144,9 +1149,9 @@
 				"22EF1AEF0213682D"
 			]
 			description: [
-				"Mechanical flowers are augmented with manasteel and circuitry to withstand the demanding enviroments of Mana Simulators."
+				"Mechanical flowers are augmented with manasteel and circuitry to withstand the demanding environments of Mana Simulators."
 				""
-				"&o&7From my observations, these mechanical flora are argubly more efficent than their biological counterparts... I should invest heavily into these.&r"
+				"&o&7From my observations, these mechanical florae are arguably more efficient than their biological counterparts... I should invest heavily in these.&r"
 			]
 			id: "55FEFCA7B9B0A473"
 			shape: "hexagon"
@@ -1172,7 +1177,7 @@
 			dependencies: ["55FEFCA7B9B0A473"]
 			description: [
 				"Potent mana allows for the gregification of many botania materials, allowing ease of automation."
-				"You can finally dismantle your cheesey FPS shredding Endoflame setup now..."
+				"You can finally dismantle your cheesy FPS shredding Endoflame setup now..."
 			]
 			icon: "gtceu:potent_mana_bucket"
 			id: "5284106D3A924B36"
@@ -1208,6 +1213,331 @@
 			title: "Autocrafting, Unlocked!"
 			x: 5.0d
 			y: 8.5d
+		}
+		{
+			dependencies: ["4D9425267F0C2AB4"]
+			description: [
+				"You can collect air using Gas Collectors."
+				""
+				"Nether Air has some useful stuff, like a passive source of sulfur."
+				""
+				"Once you have HV Circuits you can make Ender Tanks to pipe fuel to the nether and nether air to your base for processing."
+			]
+			id: "57244A33FB03141D"
+			optional: true
+			shape: "gear"
+			subtitle: "Nether Air"
+			tasks: [{
+				id: "434B11E0384EDE2B"
+				item: "gtceu:nether_air_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4573B786F0ED6565"]
+			description: ["With HV Circuits you can make the parts needed for ender tanks and chests."]
+			id: "4EB50D5DE689465A"
+			subtitle: "Dimensional Logistics"
+			tasks: [
+				{
+					id: "34463A6D05137EB4"
+					item: {
+						Count: 1b
+						id: "endertanks:ender_tank"
+						tag: {
+							code: "000"
+							owner: "all"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0F47A22475CD73D1"
+					item: {
+						Count: 1b
+						id: "enderchests:ender_chest"
+						tag: {
+							code: "000"
+							owner: "all"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"5284106D3A924B36"
+				"3B8E55A57B977480"
+				"01923DB115EF2910"
+				"7C9C7718AAC2972E"
+			]
+			description: ["&bSource Diesel&r, through combining the &aoil found in Mageblooms&r and &eEthanol&r (or &eMethanol&r), and a tiny amount of &esodium hydroxide&r you can produce a suitable fuel for powering your base."]
+			icon: "gtceu:source_enhanced_bio_fuel_bucket"
+			id: "25F3B982600DA479"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Power of the Oily Flowers!"
+			tasks: [
+				{
+					id: "05D317F7F63537FE"
+					item: "gtceu:source_enhanced_bio_fuel_bucket"
+					type: "item"
+				}
+				{
+					id: "787D271EEB4F8E44"
+					title: "Fluid Quest - Checkmark"
+					type: "checkmark"
+				}
+			]
+			x: 7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			description: ["These things are covered in a slick oil, you may be able to make use of this..."]
+			hide_dependency_lines: true
+			id: "048310EB0EFC4086"
+			subtitle: "Suprisingly Lewd"
+			tasks: [{
+				id: "621763D6B0AECCD3"
+				item: "ars_nouveau:magebloom"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["048310EB0EFC4086"]
+			description: ["Some &eWater, Potent Mana, and Mageblooms&r makes &bSource Oil Extract&r. Needed for &6Source Diesel&r."]
+			icon: "gtceu:source_enhanced_bio_fuel_bucket"
+			id: "3B8E55A57B977480"
+			subtitle: "\"Essential Oils\" for combustion."
+			tasks: [
+				{
+					id: "04CDD0C66419D033"
+					item: "gtceu:source_oils_bucket"
+					type: "item"
+				}
+				{
+					id: "6F188C1C062728B9"
+					title: "Fluid Quest - Checkmark"
+					type: "checkmark"
+				}
+			]
+			x: 10.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			description: ["&eSoul sprouts&r blossom in the nether in the presence of crying ghasts, there must be a way to get some useful products out of them.."]
+			hide_dependency_lines: true
+			id: "78EA8FE634ECDC35"
+			subtitle: "Salty Chill"
+			tasks: [{
+				id: "006AA62DDE47D3AC"
+				item: "cold_sweat:soul_sprout"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["78EA8FE634ECDC35"]
+			description: ["You were right, there's an absurd amount of salt in these sprouts, and all you needed to do was mix them in &bwater&r"]
+			icon: "gtceu:salt_water_bucket"
+			id: "38C69387B3B1C20E"
+			subtitle: "Average League Player"
+			tasks: [
+				{
+					id: "0C968A90CC598388"
+					item: "gtceu:salt_water_bucket"
+					type: "item"
+				}
+				{
+					id: "3784F1431C60AAF5"
+					title: "Fluid Quest - Checkmark"
+					type: "checkmark"
+				}
+			]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["38C69387B3B1C20E"]
+			description: [
+				"One of the many useful byproducts of &aelecytolyzing&r &esaltwater&r."
+				"Some other notable products are &6chlorine&r and &6hydrogen&r"
+			]
+			id: "01923DB115EF2910"
+			subtitle: "What we're really after"
+			tasks: [{
+				id: "3291F60C2328399B"
+				item: "gtceu:sodium_hydroxide_dust"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			description: [
+				"I'm really not sure what to say if you don't have a backlog of Ethanol by now."
+				""
+				"Please heavily consider automating it."
+				""
+				"&o&7I wonder if I can drink this&r (Do not actually drink pure ethanol, it's not fun)"
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:ethanol_bucket"
+			id: "7C9C7718AAC2972E"
+			subtitle: "You've been making this... right?"
+			tasks: [
+				{
+					id: "2A1F78B4D6A054DB"
+					item: "gtceu:ethanol_bucket"
+					type: "item"
+				}
+				{
+					id: "11C38EBB1962BB62"
+					title: "Fluid Quest - Checkmark"
+					type: "checkmark"
+				}
+			]
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0D2BAB45D2503E60"]
+			id: "2C615AE7B76CE145"
+			tasks: [{
+				id: "427A357B2FE2E5E2"
+				item: "gtceu:chromium_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["159750F7321A983A"]
+			description: ["[PlaceHolder]"]
+			icon: "gtceu:sodium_chromate_solution_bucket"
+			id: "308F457E26E57039"
+			tasks: [
+				{
+					id: "32BFDD1F6AF018E5"
+					item: "gtceu:sodium_chromate_solution_bucket"
+					type: "item"
+				}
+				{
+					id: "6CEFF0AAA05476F9"
+					title: "Fluid Quest - Checkmark"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["308F457E26E57039"]
+			description: ["[PlaceHolder]"]
+			icon: "gtceu:sodium_dichromate_solution_bucket"
+			id: "1C64908E1A380A95"
+			tasks: [
+				{
+					id: "4AE9C0009BA882BB"
+					item: "gtceu:sodium_dichromate_solution_bucket"
+					type: "item"
+				}
+				{
+					id: "51E79256B947EEBE"
+					title: "Fluid Quest - Checkmark"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1C64908E1A380A95"]
+			id: "0D2BAB45D2503E60"
+			tasks: [{
+				id: "67ECD41B8D227632"
+				item: "gtceu:chromium_iii_oxide_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			id: "159750F7321A983A"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "225A175FF43A5A15"
+				item: "gtceu:chromite_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["50C0A5DD402583A2"]
+			description: [
+				"Now that you've made some chromium, you can work on making &eVanadium steel&r."
+				"&eVanadium steel&r is required to make a sawblade strong enough to cut your boules into wafers and wafers into chips."
+			]
+			id: "3615F22984D425AD"
+			subtitle: "A pretty good tool material"
+			tasks: [{
+				id: "19D31FDBC6B4F6FE"
+				item: "gtceu:vanadium_steel_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D1EC6AD28F03DED"]
+			description: ["Onwards to making that buzzsaw, you can finally work on getting those MV Hatches now!"]
+			id: "47338E363C32FF42"
+			subtitle: "Got those ingots now?"
+			tasks: [{
+				id: "7A14C8E3708E0940"
+				item: "gtceu:vanadium_steel_buzz_saw_blade"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3615F22984D425AD"]
+			description: ["Now that you have your vanadiumsteel, toss it in any free EBF and let it smelt."]
+			id: "0D1EC6AD28F03DED"
+			subtitle: "Ebf Time"
+			tasks: [{
+				id: "1491357613C654B5"
+				item: "gtceu:vanadium_steel_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0D2BAB45D2503E60"]
+			hide_dependency_lines: true
+			id: "50C0A5DD402583A2"
+			tasks: [{
+				id: "5221DB66CCAB05BC"
+				item: "gtceu:chromium_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
 		}
 	]
 	title: "Forged in Galefury [MV]"

@@ -12,4 +12,13 @@ ServerEvents.recipes(event => {
         E: 'nether_remastered:nether_essence',
         C: 'nether_remastered:seal_crystal',
     })
+    event.shaped(Item.of('gateways:gate_pearl', '{gateway:"gateways:trial_of_the_skies"}'), [
+        'EPE',
+        'POP',
+        'EPE'
+    ], {
+        O: 'cosmiccore:overloaded_pearls',
+        E: 'minecraft:echo_shard',
+        P: 'gtceu:mana_steel_plate',
+    })
 })
