@@ -1,3 +1,9 @@
+
+let i = 0
+let fookinlong = '';
+  for (i = 0; i < 19; ++i) fookinlong += Math.floor(Math.random() * 10);
+
+
 let yeet = (itemName) => {
   ServerEvents.recipes(event => {
     event.remove({ output: itemName })
@@ -39,7 +45,6 @@ yeet('ae2:fluix_sword')
 yeet('ae2:fluix_crystal')
 yeet('ae2:fluix_dust')
 yeet('ae2:certus_quartz_crystal')
-yeet('ae2:charged_certus_quartz_crystal')
 yeet('ae2:certus_quartz_dust')
 yeet('ae2:quartz_cluster')
 yeet('ae2:large_quartz_bud')
@@ -72,19 +77,21 @@ yeet('megacells:mega_pattern_provider')
 yeet('ae2:vibration_chamber')
 //Purging Recipes Containing these - JEI moment
 // This is Incredibly Destructive, but due to how AE2 Nests/Autogens Recipes and The Migration to JEI from REI due to stability, there's some extra work I've needed to do.
-
+let miscRemovals = ['ae2:growth_accelerator', 'ae2:condenser', 'ae2:spatial_io_port', 'ae2:spatial_pylon']
 let denseCoverHidding = ['ae2:black_covered_dense_cable', 'ae2:red_covered_dense_cable', 'ae2:green_covered_dense_cable', 'ae2:brown_covered_dense_cable', 'ae2:blue_covered_dense_cable', 'ae2:purple_covered_dense_cable', 'ae2:cyan_covered_dense_cable', 'ae2:light_gray_covered_dense_cable', 'ae2:gray_covered_dense_cable', 'ae2:pink_covered_dense_cable', 'ae2:lime_covered_dense_cable', 'ae2:yellow_covered_dense_cable', 'ae2:light_blue_covered_dense_cable', 'ae2:magenta_covered_dense_cable', 'ae2:orange_covered_dense_cable', 'ae2:white_covered_dense_cable']
 let quartzCableHidding = ['ae2:black_glass_cable', 'ae2:red_glass_cable', 'ae2:green_glass_cable', 'ae2:brown_glass_cable', 'ae2:blue_glass_cable', 'ae2:purple_glass_cable', 'ae2:cyan_glass_cable', 'ae2:light_gray_glass_cable', 'ae2:gray_glass_cable', 'ae2:pink_glass_cable', 'ae2:lime_glass_cable', 'ae2:yellow_glass_cable', 'ae2:light_blue_glass_cable', 'ae2:magenta_glass_cable', 'ae2:orange_glass_cable', 'ae2:white_glass_cable']
-let coveredCableHidding= ['ae2:black_covered_cable', 'ae2:red_covered_cable', 'ae2:green_covered_cable', 'ae2:brown_covered_cable', 'ae2:blue_covered_cable', 'ae2:purple_covered_cable', 'ae2:cyan_covered_cable', 'ae2:light_gray_covered_cable', 'ae2:gray_covered_cable', 'ae2:pink_covered_cable', 'ae2:lime_covered_cable', 'ae2:yellow_covered_cable', 'ae2:light_blue_covered_cable', 'ae2:magenta_covered_cable', 'ae2:orange_covered_cable', 'ae2:white_covered_cable']
+let coveredCableHidding = ['ae2:black_covered_cable', 'ae2:red_covered_cable', 'ae2:green_covered_cable', 'ae2:brown_covered_cable', 'ae2:blue_covered_cable', 'ae2:purple_covered_cable', 'ae2:cyan_covered_cable', 'ae2:light_gray_covered_cable', 'ae2:gray_covered_cable', 'ae2:pink_covered_cable', 'ae2:lime_covered_cable', 'ae2:yellow_covered_cable', 'ae2:light_blue_covered_cable', 'ae2:magenta_covered_cable', 'ae2:orange_covered_cable', 'ae2:white_covered_cable']
 let processors = ['ae2:logic_processor', 'ae2:calculation_processor', 'ae2:engineering_processor', 'megacells:accumulation_processor']
 ServerEvents.recipes(event => {
   event.remove({ output: 'ae2:fluix_glass_cable' })
   event.remove({ input: 'ae2:fluix_glass_cable' })
   event.remove({ output: 'ae2:fluix_crystal' })
   event.remove({ input: 'ae2:fluix_crystal' })
-  event.remove({ output: 'ae2:fluix_dust'})
+  event.remove({ output: 'ae2:fluix_dust' })
   event.remove({ input: 'ae2:fluix_dust' })
 
+  event.remove({ output: miscRemovals })
+  event.remove({ input: miscRemovals })
   event.remove({ output: processors })
   event.remove({ input: processors })
   event.remove({ output: denseCoverHidding })
@@ -123,27 +130,108 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'ae2:quartz_fiber' })
   event.remove({ output: 'ae2:quartz_glass' })
   event.remove({ output: 'ae2:interface' })
+  event.remove({ id: 'ae2:network/parts/panels_semi_dark_monitor' })
   // event.remove({ output:  })
   // event.remove({ output:  })
   event.recipes.gtceu.assembly_line('gtceu:assline/create_cell_recipe')
-  .itemInputs('64x megacells:mega_energy_cell', '8x #gtceu:circuits/luv', '16x gtceu:superconducting_coil', '64x ae2:fluix_smart_dense_cable','64x ae2:fluix_smart_dense_cable','32x gtceu:neutron_reflector')
-  .itemOutputs('ae2:creative_energy_cell')
-  .inputFluids(
+    .itemInputs('64x megacells:mega_energy_cell', '8x #gtceu:circuits/luv', '16x gtceu:superconducting_coil', '64x ae2:fluix_smart_dense_cable', '64x ae2:fluix_smart_dense_cable', '32x gtceu:neutron_reflector')
+    .itemOutputs('ae2:creative_energy_cell')
+    .inputFluids(
       Fluid.of('gtceu:uu_matter', 666),
       Fluid.of('gtceu:titanium_tungsten_carbide', 4608),
       Fluid.of('gtceu:soldering_alloy', 8192),
-  )
-  .duration(500)
-  .EUt(GTValues.VA[GTValues.LuV])
-
-  event.remove({ id: 'ars_nouveau:novice_spell_book' })
-  event.recipes.gtceu.compressor('gtceu:compressor/certus_block_squish')
-    .itemInputs('2x gtceu:netherite_scrap_dust')
-    .itemInputs('2x gtceu:rose_gold_dust')
-    .itemOutputs('gtceu:netherite_alloy_dust')
+    )
     .duration(500)
-    .EUt(GTValues.VA[GTValues.LV]);
+    .EUt(GTValues.VA[GTValues.LuV])
 
+  event.recipes.gtceu.assembler(`ae2:singularity_creation`)
+    .itemInputs(['ae2:dense_energy_cell', '4x gtceu:hv_emitter', '4x gtceu:hv_sensor', 'gtceu:hv_field_generator'])
+    .itemOutputs('ae2:singularity')
+    .duration(12000)
+    .EUt(GTValues.VA[GTValues.HV]);
+
+  //Lord forgive me for what I'm about to make
+  
+  //This just doesn't work, will be disabled and have to make them in world for now... Entangled gates are only needed to be done rarely so it's not a huge issue imo...
+  // event.recipes.gtceu.assembler(`ae2:singularity_creation_entangled`)
+  //   .itemInputs(['ae2:singularity'])
+  //   .itemOutputs(Item.of('2x ae2:quantum_entangled_singularity', `{freq:${fookinlong}L}`))
+  //   .duration(10)
+  //   .EUt(GTValues.VA[GTValues.HV]);
+  event.recipes.gtceu.laminator(`ae2:fluix_pearl_lamination`)
+    .itemInputs(['2x minecraft:ender_pearl', '8x gtceu:fluix_dust'])
+    .itemOutputs('2x ae2:fluix_pearl')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.MV]);
+  event.recipes.gtceu.laminator(`ae2:quartz_glass_lamination`)
+    .itemInputs('gtceu:tempered_glass', 'gtceu:certus_quartz_dust')
+    .itemOutputs('ae2:quartz_glass')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.MV]);
+
+  event.remove({ output: 'ae2:charged_certus_quartz_crystal' })
+  event.remove({ input: 'ae2:charged_certus_quartz_crystal' })
+  event.recipes.gtceu.polarizer('ae2:fuck_it_we_ball')
+    .itemInputs('gtceu:certus_quartz_gem')
+    .itemOutputs('ae2:charged_certus_quartz_crystal')
+    .duration(80)
+    .EUt(GTValues.VA[GTValues.HV]);
+  //Craft Core Blank
+  event.recipes.gtceu.assembler('ae2:crafting_core_empty')
+    .itemInputs(['gtceu:stainless_steel_frame', '4x gtceu:stainless_steel_plate', '4x gtceu:galvanized_ethersteel_plate', '4x gtceu:galvanized_ethersteel_screw', 'gtceu:advanced_integrated_circuit'])
+    .itemOutputs('ae2:crafting_unit')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.HV]);
+  //Molec Assem
+  event.recipes.gtceu.assembler('ae2:molecular_assembler_assembly')
+    .itemInputs(['gtceu:stainless_steel_frame', '6x gtceu:glass_plate', '4x gtceu:galvanized_ethersteel_screw', 'gtceu:hv_robot_arm', 'gtceu:crafting_table_cover'])
+    .itemOutputs('ae2:molecular_assembler')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.HV]);
+  //Pattern Crafting Terminal
+  event.recipes.gtceu.assembler('ae2:pattern_crafting_terminal')
+    .itemInputs(['32x gtceu:fine_red_alloy_wire', '32x gtceu:fine_mana_steel_wire', 'ae2:terminal', 'botania:auto_crafting_halo', 'gtceu:hv_emitter'])
+    .itemOutputs('ae2:pattern_encoding_terminal')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.HV]);
+  //Quantum Ring
+  event.recipes.gtceu.assembler('ae2:quantum_ring_outside_assem')
+    .itemInputs(['ae2:dense_energy_cell', '4x gtceu:galvanized_ethersteel_plate', '3x #gtceu:circuits/hv', 'ae2:fluix_smart_dense_cable'])
+    .itemOutputs('ae2:quantum_ring')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.HV]);
+  //Energy Cell
+  event.recipes.gtceu.assembler('ae2:cell_assem')
+    .itemInputs(['4x gtceu:galvanized_ethersteel_plate', '4x ae2:charged_certus_quartz_crystal', 'ae2:energy_acceptor', 'gtceu:lv_sodium_battery'])
+    .itemOutputs('ae2:energy_cell')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.HV]);
+  //Dense cell
+  event.recipes.gtceu.assembler('ae2:dense_cell_assem')
+    .itemInputs(['8x ae2:energy_cell', '16x gtceu:galvanized_ethersteel_plate', '32x gtceu:electrum_foil', '8x gtceu:terrasteel_double_wire'])
+    .itemOutputs('ae2:dense_energy_cell')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.HV]);
+  //Pattern Crafting Terminal
+  //Pattern Terminal
+  event.recipes.gtceu.assembler('ae2:data_terminal')
+    .itemInputs(['32x gtceu:electrum_fine_wire', 'ae2:blank_pattern', 'ae2:terminal', 'gtceu:computer_monitor_cover'])
+    .itemOutputs('ae2:pattern_access_terminal')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.HV]);
+  //Adv Pattern Terminal
+  event.recipes.gtceu.assembler('ae2:extended_data_terminal')
+    .itemInputs(['32x gtceu:electrum_fine_wire', 'ae2:pattern_access_terminal', 'gtceu:data_stick'])
+    .itemOutputs('expatternprovider:ex_pattern_access_part')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.HV]);
+  //P2P Tunnel
+  event.remove({ output: 'ae2:me_p2p_tunnel' })
+  event.recipes.gtceu.assembler('ae2:p2p_assembly')
+    .itemInputs(['4x gtceu:stainless_steel_plate', '4x ae2:charged_certus_quartz_crystal', '2x ae2:semi_dark_monitor', 'gtceu:good_electronic_circuit', 'ae2:formation_core', 'ae2:annihilation_core'])
+    .itemOutputs('4x ae2:me_p2p_tunnel')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.MV]);
   //Acceptor
   event.remove({ output: 'ae2:energy_acceptor' })
   event.recipes.gtceu.assembler('ae2:acceptor_assembly')
@@ -254,6 +342,18 @@ ServerEvents.recipes(event => {
     .itemOutputs('arseng:source_cell_housing')
     .duration(80)
     .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.assembler('arseng:basic_card_craft')
+    .itemInputs(['16x gtceu:fine_red_alloy_wire','4x gtceu:steel_plate', '4x gtceu:rose_gold_plate', 'gtceu:good_electronic_circuit'])
+    .inputFluids(`gtceu:soldering_alloy 144`)
+    .itemOutputs('4x ae2:basic_card')
+    .duration(80)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.assembler('arseng:adv_card_craft')
+    .itemInputs(['16x gtceu:fine_red_alloy_wire','4x gtceu:steel_plate', '3x gtceu:diamond_plate', 'gtceu:good_electronic_circuit'])
+    .inputFluids(`gtceu:soldering_alloy 144`)
+    .itemOutputs('4x ae2:advanced_card')
+    .duration(80)
+    .EUt(GTValues.VA[GTValues.LV]);
   //Interface Full to Thin and Thin to Full
   event.shapeless('ae2:cable_interface', [
     'ae2:interface'
@@ -263,6 +363,12 @@ ServerEvents.recipes(event => {
   ])
   event.shapeless('ae2:pattern_provider', [
     'ae2:cable_pattern_provider'
+  ])
+  event.shapeless('ae2:crafting_accelerator', [
+    'ae2:crafting_unit', 'gtceu:micro_processor_computer'
+  ])
+  event.shapeless('ae2:view_cell', [
+    'ae2:item_cell_housing', 'gtceu:certus_quartz_gem'
   ])
   //Storage Components (Automatic Recipe Generation)
   let machineTier = [
