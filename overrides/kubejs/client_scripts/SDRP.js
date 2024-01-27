@@ -102,9 +102,19 @@ ItemEvents.tooltip(event => {
     text.add(2, Text.of('MAX-Tier Circuit')) 
   })
   event.addAdvanced('botania:terrasteel_ingot', (item, advanced, text) => {
-    text.add(1, Text.of('Ma2(Si(FeS2)5(CrAl2O3)Hg3)(AuAg)').yellow()) 
+    text.add(1, Text.of('Ma₂(Si(FeS₂)₅(CrAl₂O3)Hg₃)(AuAg)').yellow()) 
   })
   event.addAdvanced('botania:manasteel_ingot', (item, advanced, text) => {
-    text.add(1, Text.of('Ma*(Si(FeS2)5(CrAl2O3)Hg3)(AuAg)').yellow()) 
+    text.add(1, Text.of('Ma*(Si(FeS₂)₅(CrAl₂O3)Hg₃)(AuAg)').yellow()) 
   })
+  event.addAdvanced('botania:mana_diamond', (item, advanced, text) => {
+    text.add(1, Text.of('MaC₄').yellow()) 
+  })
+  event.addAdvanced('botania:mana_pearl', (item, advanced, text) => {
+    text.add(1, Text.of('Ma(BeK₄N₅)').yellow())
+  })
+  event.addAdvanced('botania:mana_quartz', (item, advanced, text) => {
+    text.add(1, Text.of('Ma(SiO₂)').yellow()) 
+  })
+  //subscript (copy and paste) ₂₃₄₅₆₇₈₉₀
 })
