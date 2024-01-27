@@ -1,7 +1,7 @@
 
 let i = 0
 let fookinlong = '';
-  for (i = 0; i < 19; ++i) fookinlong += Math.floor(Math.random() * 10);
+for (i = 0; i < 19; ++i) fookinlong += Math.floor(Math.random() * 10);
 
 
 let yeet = (itemName) => {
@@ -150,8 +150,31 @@ ServerEvents.recipes(event => {
     .duration(12000)
     .EUt(GTValues.VA[GTValues.HV]);
 
+  event.shaped('ae2:io_port', [
+    'SCS',
+    'BDB',
+    'SSS'
+  ], {
+    S: 'gtceu:aluminium_plate',
+    C: '#gtceu:circuits/mv',
+    D: 'ae2:drive',
+    B: 'gtceu:mv_conveyor_module'
+  })
+  event.shaped('ae2:chest', [
+    'SCS',
+    'SDS',
+    'SSS'
+  ], {
+    S: 'gtceu:aluminium_plate',
+    C: 'ae2:terminal',
+    D: 'ae2:drive',
+    B: 'gtceu:mv_conveyor_module'
+  })
+
+
+
   //Lord forgive me for what I'm about to make
-  
+
   //This just doesn't work, will be disabled and have to make them in world for now... Entangled gates are only needed to be done rarely so it's not a huge issue imo...
   // event.recipes.gtceu.assembler(`ae2:singularity_creation_entangled`)
   //   .itemInputs(['ae2:singularity'])
@@ -228,7 +251,7 @@ ServerEvents.recipes(event => {
   //P2P Tunnel
   event.remove({ output: 'ae2:me_p2p_tunnel' })
   event.recipes.gtceu.assembler('ae2:p2p_assembly')
-    .itemInputs(['4x gtceu:stainless_steel_plate', '4x ae2:charged_certus_quartz_crystal', '2x ae2:semi_dark_monitor', 'gtceu:good_electronic_circuit', 'ae2:formation_core', 'ae2:annihilation_core'])
+    .itemInputs(['4x gtceu:stainless_steel_plate', '4x ae2:charged_certus_quartz_crystal', '2x ae2:semi_dark_monitor', '#gtceu:circuits/mv', 'ae2:formation_core', 'ae2:annihilation_core'])
     .itemOutputs('4x ae2:me_p2p_tunnel')
     .duration(160)
     .EUt(GTValues.VA[GTValues.MV]);
@@ -343,17 +366,29 @@ ServerEvents.recipes(event => {
     .duration(80)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.assembler('arseng:basic_card_craft')
-    .itemInputs(['16x gtceu:fine_red_alloy_wire','4x gtceu:steel_plate', '4x gtceu:rose_gold_plate', 'gtceu:good_electronic_circuit'])
+    .itemInputs(['16x gtceu:fine_red_alloy_wire', '4x gtceu:steel_plate', '4x gtceu:rose_gold_plate', 'gtceu:good_electronic_circuit'])
     .inputFluids(`gtceu:soldering_alloy 144`)
     .itemOutputs('4x ae2:basic_card')
     .duration(80)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.assembler('arseng:adv_card_craft')
-    .itemInputs(['16x gtceu:fine_red_alloy_wire','4x gtceu:steel_plate', '3x gtceu:diamond_plate', 'gtceu:good_electronic_circuit'])
+    .itemInputs(['16x gtceu:fine_red_alloy_wire', '4x gtceu:steel_plate', '3x gtceu:diamond_plate', 'gtceu:good_electronic_circuit'])
     .inputFluids(`gtceu:soldering_alloy 144`)
     .itemOutputs('4x ae2:advanced_card')
     .duration(80)
     .EUt(GTValues.VA[GTValues.LV]);
+  //The Wireless thingy
+  event.recipes.gtceu.assembler('ae2:wap')
+    .itemInputs(['ae2:wireless_receiver', 'gtceu:galvanized_ethersteel_plate', 'ae2:cable_anchor'])
+    .inputFluids(`gtceu:soldering_alloy 144`)
+    .itemOutputs('ae2:wireless_access_point')
+    .duration(15)
+    .EUt(GTValues.VA[GTValues.HV]);
+  event.recipes.gtceu.mixer('ae2:gt_fluix')
+    .itemInputs(['gtceu:certus_quartz_dust', 'gtceu:nether_quartz_dust', 'minecraft:redstone'])
+    .itemOutputs('2x gtceu:fluix_dust')
+    .duration(15)
+    .EUt(GTValues.VA[GTValues.HV]);
   //Interface Full to Thin and Thin to Full
   event.shapeless('ae2:cable_interface', [
     'ae2:interface'
@@ -369,6 +404,24 @@ ServerEvents.recipes(event => {
   ])
   event.shapeless('ae2:view_cell', [
     'ae2:item_cell_housing', 'gtceu:certus_quartz_gem'
+  ])
+  event.shapeless('2x ae2:speed_card', [
+    'ae2:advanced_card', 'gtceu:flawless_fluix_gem'
+  ])
+  event.shapeless('ae2:void_card', [
+    'ae2:basic_card', 'trashcans:item_trash_can'
+  ])
+  event.shapeless('ae2:equal_distribution_card', [
+    'ae2:advanced_card', 'gtceu:lv_robot_arm'
+  ])
+  event.shapeless('ae2:memory_card', [
+    'ae2:basic_card', 'ae2:cell_component_1k'
+  ])
+  event.shapeless('ae2:wireless_booster', [
+    'gtceu:mv_emitter', 'gtceu:flawless_fluix_gem', 'gtceu:flawless_fluix_gem'
+  ])
+  event.shapeless('ae2:cell_workbench', [
+    'ae2:item_cell_housing', 'minecraft:crafting_table'
   ])
   //Storage Components (Automatic Recipe Generation)
   let machineTier = [
