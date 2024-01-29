@@ -1221,7 +1221,7 @@ ServerEvents.recipes(e => {
     e.recipes.botania.mana_infusion('botania:blacker_lotus', 'minecraft:wither_rose', 100000)
 
     e.remove({ id: 'botania:mana_infusion/mana_diamond' })
-    e.recipes.botania.mana_infusion('botania:mana_diamond', 'gtceu:diamond_flawless_gem', 10000)
+    e.recipes.botania.mana_infusion('botania:mana_diamond', 'gtceu:flawless_diamond_gem', 10000)
 
     e.remove({ output: 'botania:mana_powder' })
     e.recipes.botania.mana_infusion('botania:mana_powder', 'gtceu:electrotine_dust', 500)
@@ -1271,7 +1271,7 @@ ServerEvents.recipes(e => {
         .EUt(GTValues.VA[GTValues.MV]);
     //Mana Diamond
     e.recipes.gtceu.mana_fluidizer('gtceu:mana_diamond')
-        .itemInputs('gtceu:diamond_flawless_gem')
+        .itemInputs('gtceu:flawless_diamond_gem')
         .itemOutputs('botania:mana_diamond')
         .inputFluids(Fluid.of('gtceu:potent_mana', 1000))
         .duration(20)

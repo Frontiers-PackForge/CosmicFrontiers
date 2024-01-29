@@ -9,13 +9,6 @@ let yeet = (itemName) => {
   })
 }
 
-
-// yeet('gtceu:hv_combustion')
-// yeet('gtceu:hv_gas_turbine')
-// yeet('gtceu:hv_steam_turbine')
-
-
-
 ServerEvents.tags('item', event => {
   event.add('forge:lenses/ruby', 'gtceu:redstone_lens')
   event.add('forge:lenses/red', 'gtceu:redstone_lens')
@@ -198,8 +191,6 @@ ServerEvents.recipes(event => {
     .duration(100)
     .EUt(480);
   //ManaSteel Stuff
-  event.remove({ id: 'gtceu:wiremill/mill_mana_steel_wire' })
-  event.remove({ id: 'gtceu:extruder/extrude_mana_steel_wire' })
   event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe')
     .itemInputs('botania:manasteel_ingot')
     .itemOutputs('2x gtceu:mana_steel_single_wire')
@@ -208,9 +199,11 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.wiremill('gtceu:manasteel_fine_wire_recipe')
     .itemInputs('gtceu:mana_steel_single_wire')
-    .itemOutputs('4x gtceu:mana_steel_fine_wire')
+    .itemOutputs('4x gtceu:fine_mana_steel_wire')
     .duration(26)
     .EUt(GTValues.VA[GTValues.LV]);
+
+
   event.recipes.gtceu.bender('gtceu:manasteel_plate')
     .itemInputs('botania:manasteel_ingot')
     .itemOutputs('gtceu:mana_steel_plate')
