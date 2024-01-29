@@ -22,6 +22,17 @@
 
 ServerEvents.recipes(event => {
 
+    event.recipes.gtceu.ore_washer('magebloom_washing')
+    .itemInputs('ars_nouveau:magebloom')
+    .inputFluids('water 100')
+    .itemOutputs('kubejs:washed_magebloom')
+    .duration(20)
+    .EUt(8);
+    event.recipes.gtceu.macerator('magebloom_shredding')
+    .itemInputs('kubejs:washed_magebloom')
+    .itemOutputs('kubejs:shredded_magebloom')
+    .duration(20)
+    .EUt(8);
   event.recipes.gtceu.chemical_reactor('gtceu:centrifuge/source_oil_spinny')
     .itemInputs('4x ars_nouveau:magebloom')
     .inputFluids('gtceu:potent_mana 1000')

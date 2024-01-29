@@ -11,4 +11,6 @@ StartupEvents.registry('item', e => {
     e.create('americium_nose_cone')
     e.create('americium_fin')
     e.create('americium_engine')
+    e.create('shredded_magebloom')
+    e.create('washed_magebloom')
 })
