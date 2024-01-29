@@ -1,83 +1,70 @@
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    //PMP
-    event.create('platinum_metallic')
-        .ore()
+    event.create('roasted_cooperite')
         .dust()
-        .element(GTElements.get('platinum_metallic_powder'))
-        .color(0xbcc28c).iconSet(GTMaterialIconSet.DULL)
+        .element(GTElements.get('roasted_cooperite'))
+        .color(0x99a37a).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-    //PEA
-    event.create('palladium_enriched_ammonia')
-        .ore()
+    event.create('nickel_depleted_cooperite')
         .dust()
-        .element(GTElements.get('palladium_enriched_ammonia'))
-        .color(0x9e9e9e).iconSet(GTMaterialIconSet.DULL)
+        .element(GTElements.get('nickel_depleted_cooperite'))
+        .color(0x988B88).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-    //PSD
-    event.create('platinum_salts_dust')
-        .ore()
-        .dust()
-        .element(GTElements.get('platinum_salts_dust'))
-        .color(0xbcc28c).iconSet(GTMaterialIconSet.DULL)
+    event.create('nickel_carbonyl')
+        .fluid()
+        .element(GTElements.get('nickel_carbonyl'))
+        .color(0x666A72).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-    //RPD
-    event.create('reprecipitated_platinum_dust')
-        .ore()
-        .dust()
-        .element(GTElements.get('reprecipitated_platinum_dust'))
-        .color(0xbcc28c).iconSet(GTMaterialIconSet.DULL)
+    event.create('cooperite_solution')
+        .fluid()
+        .element(GTElements.get('cooperite_solution'))
+        .color(0xe9ffa7).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-    //platinum residue
-    event.create('platinum_residue_dust')
-        .ore()
-        .dust()
-        .element(GTElements.get('platinum_residue_dust'))
-        .color(0xbcc28c).iconSet(GTMaterialIconSet.DULL)
+    event.create('plat_depleted_cooperite_solution')
+        .fluid()
+        .element(GTElements.get('plat_depleted_cooperite_solution'))
+        .color(0x766D6B).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-    //palladium salts
-    event.create('palladium_salts')
-        .ore()
+    event.create('ammonium_hexachloroplatinate')
         .dust()
-        .element(GTElements.get('palladium_salts'))
-        .color(0x9e9e9e).iconSet(GTMaterialIconSet.DULL)
+        .element(GTElements.get('ammonium_hexachloroplatinate'))
+        .color(0xCDC8A6).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-    //PdMp
-    event.create('palladium_metallic')
-        .ore()
+    event.create('ammonium_hexachloropalladate')
         .dust()
-        .element(GTElements.get('palladium_metallic_powder'))
-        .color(0x9e9e9e).iconSet(GTMaterialIconSet.DULL)
+        .element(GTElements.get('ammonium_hexachloropalladate'))
+        .color(0x8E9190).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+    event.create('tetraammine_palladium_chloride')
+        .dust()
+        .element(GTElements.get('tetraammine_palladium_chloride'))
+        .color(0xE9FFA7).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+
 })
 
 
 
-/* event.create('platinum_metallic_powder', 78, 78, -1, null, 'Ptᵪ', false) // 
-    event.create('palladium_enriched_ammonia', 78, 78, -1, null, 'Ptᵪ', false) // 
-    event.create('platinum_salts_dust', 78, 78, -1, null, 'Ptᵪ', false) // 
-    event.create('reprecipitated_platinum_dust', 78, 78, -1, null, 'Ptᵪ', false) // 
-    event.create('platinum_residue_dust', 78, 78, -1, null, 'Ptᵪ', false) // 
-    event.create('palladium_salts', 78, 78, -1, null, 'Pdᵪ', false) // 
-    event.create('palladium_metallic_powder', 78, 78, -1, null, 'Pdᵪ', false) // 
-*/

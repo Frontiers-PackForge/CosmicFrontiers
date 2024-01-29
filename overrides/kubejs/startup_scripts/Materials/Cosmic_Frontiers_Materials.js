@@ -29,7 +29,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('potent_mana')
         .fluid()
         .color(0x457bd1)
-
+    event.create('hydrogen_peroxide')
+        .fluid()
+        .color(0xa7f0fa)
+    event.create('hydrazine')
+        .fluid()
+        .color(0xff2e51)
 
     //Netherite Line Materials
     event.create('ancient_debris')
