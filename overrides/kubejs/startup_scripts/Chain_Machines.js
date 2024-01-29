@@ -8,7 +8,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('chemical_dehydrator')
         .category('frontiers')
         .setEUIO('in')
-        .setMaxIOSize(1, 2, 2, 1) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+        .setMaxIOSize(2, 9, 2, 2) //Max Item in, max item out, max fluid in, max fluid out (in slots)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         
