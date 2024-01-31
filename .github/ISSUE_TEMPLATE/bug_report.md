@@ -2,7 +2,6 @@
 name: Bug report
 about: Bug Report Related to Mod / Pack behavior
 title: "[ISSUE] - "
-labels: Quest Bug
 assignees: Ghostipedia
 
 ---
