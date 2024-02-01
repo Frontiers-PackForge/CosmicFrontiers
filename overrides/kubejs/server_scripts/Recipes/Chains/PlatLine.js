@@ -4,6 +4,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_cooperite' })
     event.remove({ id: 'gtceu:chemical_bath/bathe_nickel_crushed_ore_to_purified_ore' })
     event.remove({ id: 'gtceu:centrifuge/pgs_separation' })
+    event.remove({ id: 'gtceu:electrolyzer/bauxite_electrolysis' })
     event.recipes.gtceu.chemical_bath('gtceu:chemical_bath/bathe_nickel_crushed_ore_to_purified_ore')
         .itemInputs('gtceu:crushed_nickel_ore')
         .inputFluids('gtceu:mercury 100')
