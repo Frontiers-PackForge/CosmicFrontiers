@@ -20,7 +20,20 @@ WorldgenEvents.remove(event => {
       'embers:deepslate_lead_ore',
       'embers:silver_ore',
       'embers:deepslate_silver_ore',
-
+      'undergarden:depthrock_coal_ore',
+      'undergarden:shiverstone_coal_ore',
+      'undergarden:depthrock_iron_ore',
+      'undergarden:shiverstone_iron_ore',
+      'undergarden:depthrock_gold_ore',
+      'undergarden:depthrock_diamond_ore',
+      'undergarden:shiverstone_diamond_ore',
+      'undergarden:depthrock_cloggrum_ore',
+      'undergarden:shiverstone_cloggrum_ore',
+      'undergarden:shiverstone_froststeel_ore',
+      'undergarden:depthrock_utherium_ore',
+      'undergarden:shiverstone_utherium_ore',
+      'undergarden:depthrock_regalium_ore',
+      'undergarden:shiverstone_regalium_ore'
     ]
   })
   event.removeFeatureById('raw_generation', [
@@ -39,9 +52,23 @@ WorldgenEvents.remove(event => {
     'aether:zanite_ore',
     'aether_redux:veridium_ore',
     'deep_aether:skyjade_ore',
+    'undergarden:depthrock_coal_ore',
+    'undergarden:shiverstone_coal_ore',
+    'undergarden:depthrock_iron_ore',
+    'undergarden:shiverstone_iron_ore',
+    'undergarden:depthrock_gold_ore',
+    'undergarden:depthrock_diamond_ore',
+    'undergarden:shiverstone_diamond_ore',
+    'undergarden:depthrock_cloggrum_ore',
+    'undergarden:shiverstone_cloggrum_ore',
+    'undergarden:shiverstone_froststeel_ore',
+    'undergarden:depthrock_utherium_ore',
+    'undergarden:shiverstone_utherium_ore',
+    'undergarden:depthrock_regalium_ore',
+    'undergarden:shiverstone_regalium_ore'
   ])
 })
 // WorldgenEvents.remove(event => {
-//   event.printFeatures('', 'aether_redux:the_blight') 
+//   event.printFeatures('', 'aether_redux:the_blight')
 //   event.printFeatures('', 'deep_aether:aerlavender_fields')
 // })
