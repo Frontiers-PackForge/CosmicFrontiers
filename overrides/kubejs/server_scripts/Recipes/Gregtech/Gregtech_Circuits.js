@@ -7,12 +7,14 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 72')
         .itemOutputs('2x gtceu:micro_processor')
         .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.circuit_assembler('frontier:circuit_assembler/processor_mv')
         .itemInputs(['gtceu:plastic_printed_circuit_board', 'gtceu:cpu_chip', '4x gtceu:smd_resistor', '4x gtceu:smd_transistor', '4x gtceu:smd_capacitor', '4x gtceu:fine_red_alloy_wire'])
         .inputFluids('gtceu:tin 144')
         .itemOutputs('2x gtceu:micro_processor')
         .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.MV]);
     event.remove({ id: 'gtceu:circuit_assembler/processor_assembly_hv_soldering_alloy' })
     event.remove({ id: 'gtceu:circuit_assembler/processor_assembly_hv' })
@@ -21,12 +23,14 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:tin 288')
         .itemOutputs('gtceu:micro_processor_assembly')
         .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.circuit_assembler('frontier:circuit_assembler/processor_assembly_hv_soldering_alloy')
         .itemInputs(['gtceu:plastic_printed_circuit_board', '4x gtceu:micro_processor', '4x gtceu:smd_inductor', '8x gtceu:smd_capacitor', '4x gtceu:ram_chip', '4x gtceu:fine_red_alloy_wire'])
         .inputFluids('gtceu:soldering_alloy 144')
         .itemOutputs('gtceu:micro_processor_assembly')
         .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.MV]);
     event.remove({ id: 'gtceu:circuit_assembler/workstation_ev_soldering_alloy' })
     event.remove({ id: 'gtceu:circuit_assembler/workstation_ev' })
