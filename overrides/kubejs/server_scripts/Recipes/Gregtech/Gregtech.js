@@ -288,9 +288,14 @@ ServerEvents.recipes(event => {
     .duration(50)
     .EUt(GTValues.VA[GTValues.IV]);
 
-//Source Oil Atm
 
-  
+  event.recipes.gtceu.assembler('ethersteel_smd_diode')
+    .itemInputs(['gtceu:gallium_arsenide_dust', '16x gtceu:fine_galvanized_ethersteel_wire'])
+    .itemOutputs('16x gtceu:smd_diode')
+    .inputFluids('gtceu:polyethylene 576')
+    .duration(400)
+    .EUt(GTValues.VA[GTValues.HV]);
+
 
   //LV EMITTER
   event.remove({ output: 'gtceu:lv_emitter' })
