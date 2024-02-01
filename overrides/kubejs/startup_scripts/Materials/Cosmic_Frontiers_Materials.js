@@ -1,8 +1,3 @@
-
-GTCEuStartupEvents.registry('gtceu:material_icon_set', (event) => {
-    event.create('mana').parent(GTMaterialIconSet.DULL)
-})
-
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('nether_brick_dust')
         .dust()
@@ -26,6 +21,24 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('nether_sediment_sludge')
         .fluid()
         .color(0x511515)
+    event.create('aether_air')
+        .fluid()
+        .color(0x75bfff)
+    event.create('liquid_aether_air')
+        .fluid()
+        .color(0x75bfff)
+    event.create('tears_of_the_sky')
+        .fluid()
+        .color(0x2e76e8)
+    event.create('thundering_aerocloud_solution')
+        .fluid()
+        .color(0x154085)
+    event.create('ammonia_rich_aerocloud_solution')
+        .fluid()
+        .color(0x9368e3)
+    event.create('aether_augmented_sediment')
+        .fluid()
+        .color(0x00c4b7)
     event.create('potent_mana')
         .fluid()
         .color(0x457bd1)
