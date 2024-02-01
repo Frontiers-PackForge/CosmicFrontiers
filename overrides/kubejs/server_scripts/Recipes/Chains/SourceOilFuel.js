@@ -22,14 +22,29 @@
 
 ServerEvents.recipes(event => {
 
-  event.recipes.gtceu.chemical_reactor('gtceu:centrifuge/source_oil_spinny')
+  event.recipes.gtceu.chemical_reactor('source_oil_extract')
     .itemInputs('4x ars_nouveau:magebloom')
-    .inputFluids('gtceu:potent_mana 1000')
-    .inputFluids('water 3000')
+    .inputFluids('gtceu:potent_mana 500')
+    .inputFluids('water 3500')
+    .outputFluids('gtceu:source_oils 4000')
+    .duration(160)
+    .EUt(8);
+  event.recipes.gtceu.large_chemical_reactor('source_oil_extract')
+    .itemInputs('4x ars_nouveau:magebloom')
+    .inputFluids('gtceu:potent_mana 500')
+    .inputFluids('water 3500')
     .outputFluids('gtceu:source_oils 4000')
     .duration(160)
     .EUt(8);
   event.recipes.gtceu.chemical_reactor('gtceu:centrifuge/source_enhanced_bio_fuel')
+    .itemInputs('gtceu:tiny_sodium_hydroxide_dust')
+    .inputFluids('gtceu:source_oils 6000')
+    .inputFluids('gtceu:ethanol 1000')
+    .outputFluids('gtceu:source_enhanced_bio_fuel 6000')
+    .outputFluids('gtceu:glycerol 1000')
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.large_chemical_reactor('gtceu:centrifuge/source_enhanced_bio_fuel')
     .itemInputs('gtceu:tiny_sodium_hydroxide_dust')
     .inputFluids('gtceu:source_oils 6000')
     .inputFluids('gtceu:ethanol 1000')
