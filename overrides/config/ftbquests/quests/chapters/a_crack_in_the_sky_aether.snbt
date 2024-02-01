@@ -113,13 +113,16 @@
 		}
 		{
 			dependencies: ["57A955955309A292"]
+			description: ["Come back here once you've unlocked Distillation Towers."]
+			icon: "gtceu:distillation_tower"
 			id: "467DD8A59876EDFE"
-			subtitle: "NYI - More Content Coming HV!"
+			subtitle: "Cracking the Sky, Literally"
 			tasks: [{
-				icon: "ftbquests:barrier"
+				icon: "gtceu:distillation_tower"
 				id: "048244CDA891718D"
 				type: "item"
 			}]
+			title: "Aether Air Distillation"
 			x: 2.5d
 			y: -2.0d
 		}
@@ -136,18 +139,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["467DD8A59876EDFE"]
-			icon: "ftbquests:barrier"
-			id: "7BB9382B7641FFDF"
-			subtitle: "NYI - More Content Coming HV!"
-			tasks: [{
-				id: "63E2746731AB8D6F"
-				type: "item"
-			}]
-			x: 5.5d
-			y: -3.0d
-		}
-		{
 			dependencies: ["63FD7396CD8ACA36"]
 			icon: "ftbquests:barrier"
 			id: "67EC5AF9BC37E368"
@@ -156,8 +147,8 @@
 				id: "3944DDE073E9B291"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -3.0d
+			x: -4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["57A955955309A292"]
@@ -208,13 +199,17 @@
 		}
 		{
 			dependencies: ["696EA94AB22229DA"]
+			description: [
+				"You still have those keys, right?"
+				"You didn't waste the free keys I gave you in the quests &o&lRIGHT&r"
+			]
 			id: "62CC9117B051D7D4"
 			shape: "hexagon"
 			size: 2.5d
-			subtitle: "HV is a WIP"
+			subtitle: "Trial of the outer world guardians"
 			tasks: [{
-				id: "53E18A94B1BEF8F3"
-				item: "ftbquests:barrier"
+				id: "795A44BA66C15782"
+				item: "undergarden:catalyst"
 				type: "item"
 			}]
 			title: "NYI - TRIAL OF THE DEPTHS"
@@ -234,6 +229,89 @@
 				type: "custom"
 			}]
 			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["467DD8A59876EDFE"]
+			description: ["You'll need a stronger gas collector to exploit the air of the aether. While the air is thinner up here, it certainly has unique composition due to the presence of flora and fauna this high above the groudn"]
+			icon: "gtceu:hv_gas_collector"
+			id: "1DDC620CBE8B3653"
+			subtitle: "To drink the tears of the world"
+			tasks: [{
+				id: "4FBDD305CF318413"
+				item: "gtceu:hv_gas_collector"
+				optional_task: true
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1DDC620CBE8B3653"]
+			description: [
+				"But yes I'm going to make you hold the outputs :)"
+				"Could have done this the other way around, felt a little evil. Have fun! Don't worry I won't make you hold the common fluids, only the important ones!"
+				""
+				"&o&7Aeroclouds exhibit properties of a fluid and a gas at once even under very little pressure. I wonder if I can utilize this to create solutions with unique properties.&r"
+			]
+			icon: "gtceu:liquid_aether_air_bucket"
+			id: "22495EC28729468F"
+			subtitle: "No you don't need to hold this."
+			tasks: [
+				{
+					icon: "gtceu:liquid_aether_air_bucket"
+					id: "53B8B729A1EF546A"
+					item: "gtceu:sodium_hydroxide_bauxite_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "6C2EA5CB592B0429"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["22495EC28729468F"]
+			icon: "gtceu:tears_of_the_sky_bucket"
+			id: "65D3AF64EB06AADF"
+			tasks: [{
+				id: "5C994EA5BCB64AC6"
+				item: "gtceu:tears_of_the_sky_bucket"
+				optional_task: true
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["22495EC28729468F"]
+			icon: "gtceu:ammonia_rich_aerocloud_solution_bucket"
+			id: "250E8B3A238E39B7"
+			tasks: [{
+				id: "7B279B6B3E3A6796"
+				item: "gtceu:sodium_hydroxide_bauxite_bucket"
+				optional_task: true
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["22495EC28729468F"]
+			icon: "gtceu:thundering_aerocloud_solution_bucket"
+			id: "4FECDEFA391F9521"
+			tasks: [{
+				id: "05CF59A475E990CE"
+				item: "gtceu:thundering_aerocloud_solution_bucket"
+				optional_task: true
+				type: "item"
+			}]
+			x: 7.0d
 			y: -1.0d
 		}
 	]

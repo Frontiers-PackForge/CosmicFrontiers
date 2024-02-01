@@ -1,4 +1,5 @@
 {
+	autofocus_id: "1E72D62913EEB4EE"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "navigation_error__log_1_hv"
@@ -18,7 +19,7 @@
 			]
 			id: "1E72D62913EEB4EE"
 			shape: "hexagon"
-			size: 3.0d
+			size: 2.0d
 			subtitle: "Got it all? Then Good Luck!"
 			tasks: [
 				{
@@ -45,6 +46,8 @@
 			dependencies: ["1E72D62913EEB4EE"]
 			description: ["Time for an HV Assembler. Which unlocks plenty of powerful recipes."]
 			id: "1B7405FD959C65B3"
+			shape: "hexagon"
+			size: 1.5d
 			subtitle: "You know the drill."
 			tasks: [{
 				id: "6B8650819C825840"
@@ -72,7 +75,7 @@
 				}
 			]
 			x: 0.0d
-			y: -3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["22693418B45740CB"]
@@ -91,7 +94,431 @@
 				type: "item"
 			}]
 			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1E72D62913EEB4EE"]
+			id: "1FCA1401D0AD6DA9"
+			shape: "hexagon"
+			subtitle: "The journey to better Circuits!"
+			tasks: [{
+				id: "7AEE882B573B5A04"
+				item: "gtceu:plastic_printed_circuit_board"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1FCA1401D0AD6DA9"]
+			id: "3B8346823C7FFDD0"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "keeping things clean"
+			tasks: [{
+				id: "6F21219CB8BEB64E"
+				item: "gtceu:cleanroom"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3B8346823C7FFDD0"]
+			hide_dependency_lines: true
+			id: "4CE07138618F3066"
+			tasks: [{
+				id: "39C6E45C13982BB5"
+				item: "gtceu:smd_transistor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3B8346823C7FFDD0"]
+			hide_dependency_lines: true
+			id: "59EB991DF52596F0"
+			tasks: [{
+				id: "6518B0AC2D833DAE"
+				item: "gtceu:smd_resistor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3B8346823C7FFDD0"]
+			hide_dependency_lines: true
+			id: "282A154B3983C3A9"
+			tasks: [{
+				id: "00A2726967C5CC48"
+				item: "gtceu:smd_capacitor"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3B8346823C7FFDD0"]
+			hide_dependency_lines: true
+			id: "655BE837B92A39B4"
+			tasks: [{
+				id: "079090481764E46A"
+				item: "gtceu:smd_diode"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["3B8346823C7FFDD0"]
+			hide_dependency_lines: true
+			id: "6A4E5F072511B6FC"
+			tasks: [{
+				id: "1CA6530196A43153"
+				item: "gtceu:smd_inductor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"4CE07138618F3066"
+				"59EB991DF52596F0"
+				"282A154B3983C3A9"
+				"3B8346823C7FFDD0"
+			]
+			id: "1007F13C9C6952A8"
+			tasks: [{
+				id: "6A7E15A8F9758CB2"
+				item: "gtceu:micro_processor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"6A4E5F072511B6FC"
+				"1007F13C9C6952A8"
+			]
+			id: "3A2AD8FCB13B7A29"
+			tasks: [{
+				id: "0B11CDF87221E0C3"
+				item: "gtceu:micro_processor_assembly"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"655BE837B92A39B4"
+				"3A2AD8FCB13B7A29"
+			]
+			id: "0594F9E432881E41"
+			shape: "hexagon"
+			tasks: [{
+				id: "6868B2C4EF71FF9D"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			title: "Your First EV Circuits!"
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0594F9E432881E41"]
+			id: "1CA4C29ADA4BF7F3"
+			shape: "hexagon"
+			tasks: [{
+				id: "2E91C531A769962C"
+				item: "gtceu:hv_circuit_assembler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["1CA4C29ADA4BF7F3"]
+			id: "5F0B8C3DC264D3C4"
+			tasks: [{
+				id: "6E0C7209CF918138"
+				item: "gtceu:micro_processor_mainframe"
+				type: "item"
+			}]
+			title: "Your First IV Circuit!"
+			x: 7.0d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"5F0B8C3DC264D3C4"
+				"19B3D686A4E2FFC9"
+			]
+			id: "7A4E57267B19D462"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "WARNING - The Moon is NYI - Please Don't Venture forward!"
+			tasks: [{
+				id: "5EF7DC14648BCC16"
+				item: "ad_astra:nasa_workbench"
+				type: "item"
+			}]
+			x: 7.0d
 			y: -6.0d
+		}
+		{
+			dependencies: ["0594F9E432881E41"]
+			id: "755ACD1022FDEF6E"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "15906F3644B7FC51"
+				item: "gtceu:vacuum_freezer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"755ACD1022FDEF6E"
+				"7AFC8C5272154CC5"
+			]
+			id: "23108D54BAC916D6"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "3A12365157C04727"
+				item: "gtceu:nichrome_ingot"
+				type: "item"
+			}]
+			title: "Nichrome! Finally!"
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2A90C8E25677F950"]
+			description: [
+				"You'll need a &aVacuum Freezer&r from here on out to cool down &bany hot ingot&r you make."
+				"&bKanthal&r and &bSilicon&r are the only exception to this rule, however &aVac Freezers&r are generally faster than their chem bath routes."
+			]
+			id: "7AFC8C5272154CC5"
+			subtitle: "Hot hot hot hot!"
+			tasks: [{
+				id: "4249F172CC777F93"
+				item: "gtceu:hot_nichrome_ingot"
+				type: "item"
+			}]
+			title: "Water won't work"
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1E72D62913EEB4EE"]
+			id: "2A90C8E25677F950"
+			tasks: [{
+				id: "2D12071AE38D8001"
+				item: "gtceu:nichrome_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"23108D54BAC916D6"
+				"1B7405FD959C65B3"
+			]
+			id: "1D892089AEFF9132"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Your Third EBF Coil"
+			tasks: [{
+				count: 16L
+				id: "6C7882F9FB2AC542"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			title: "Hot and Ready"
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3E3FC0BD89309EA1"]
+			id: "63F231B11135ACF9"
+			subtitle: "Time for Titanium!"
+			tasks: [{
+				id: "1B3AA468C509C60B"
+				item: "gtceu:rutile_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -7.199999999999999d
+		}
+		{
+			dependencies: [
+				"1B7405FD959C65B3"
+				"40435C47E1FA5619"
+			]
+			description: ["While not explictly needed for &bTitanium&r"]
+			id: "5D3C31DAD5216175"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Stronger smelting"
+			tasks: [{
+				id: "55760A5DAE7B334F"
+				item: "gtceu:hv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E72D62913EEB4EE"]
+			hide_dependency_lines: true
+			id: "40435C47E1FA5619"
+			tasks: [{
+				id: "44C7FEE74AF34309"
+				item: "gtceu:sodium_potassium_bucket"
+				type: "item"
+			}]
+			x: 4.25d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"63F231B11135ACF9"
+				"1D892089AEFF9132"
+			]
+			id: "19B3D686A4E2FFC9"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "40038C1D65694ADB"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["16DA590C11F655A1"]
+			icon: "gtceu:red_mud_slurry_bucket"
+			id: "3E3FC0BD89309EA1"
+			tasks: [
+				{
+					id: "3CAB4687214ACC18"
+					item: "gtceu:red_mud_slurry_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "0299ADBFBD06755B"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: -8.2d
+		}
+		{
+			dependencies: ["678C427D77B09119"]
+			icon: "gtceu:red_mud_slurry_bucket"
+			id: "16DA590C11F655A1"
+			tasks: [
+				{
+					id: "00F1626A2D1AACF9"
+					item: "gtceu:neutralised_red_mud_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "1072509DF9FEF4AD"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 5.5d
+			y: -9.2d
+		}
+		{
+			dependencies: ["4ED823D396945C2A"]
+			icon: "gtceu:red_mud_bucket"
+			id: "678C427D77B09119"
+			tasks: [
+				{
+					id: "24815ECEA5DE58B0"
+					item: "gtceu:red_mud_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "73AEADDC16E10FFE"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 4.5d
+			y: -9.2d
+		}
+		{
+			dependencies: ["27078B056DB05DB9"]
+			icon: "gtceu:heated_sodium_hydroxide_bauxite_bucket"
+			id: "4ED823D396945C2A"
+			tasks: [
+				{
+					id: "6D7EBCAC9D7760B6"
+					item: "gtceu:heated_sodium_hydroxide_bauxite_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7AF9DB3D40B772E0"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 5.5d
+			y: -10.2d
+		}
+		{
+			dependencies: ["0545E9231494F424"]
+			icon: "gtceu:red_mud_slurry_bucket"
+			id: "27078B056DB05DB9"
+			tasks: [
+				{
+					id: "474F143BF7BC350C"
+					item: "gtceu:sodium_hydroxide_bauxite_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7A2B3A0B418D3F5C"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 4.5d
+			y: -10.2d
+		}
+		{
+			id: "0545E9231494F424"
+			tasks: [{
+				id: "3EE2FFE133581598"
+				item: "gtceu:bauxite_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -11.2d
 		}
 	]
 	title: "Gloomper Chemistry [HV]"

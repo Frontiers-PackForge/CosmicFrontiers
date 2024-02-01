@@ -17,6 +17,12 @@
     "atmosphereLeave": 600,
     // A comma-separated list of planet IDs that should be hidden from the planets screen. e.g. minecraft:overworld,ad_astra:moon,ad_astra:mars,ad_astra:venus,ad_astra:mercury,ad_astra:glacio
     "disabledPlanets": "",
+    // Disables oxygen damage.
+    "disableOxygen": false,
+    // Disables temperature damage.
+    "disableTemperature": false,
+    // Uses normal gravity for all planets.
+    "disableGravity": false,
     "cryoFreezer": {
         // Type: Long
         "ironTierMaxEnergyInOut": 100,
