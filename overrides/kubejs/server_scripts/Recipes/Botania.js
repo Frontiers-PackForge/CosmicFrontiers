@@ -155,7 +155,7 @@ ServerEvents.recipes(e => {
         L: 'gtceu:livingrock_plate',
         G: 'gtceu:rose_gold_plate',
         P: 'botania:mana_pearl',
-        C: '#forge:circuits/mv'
+        C: '#gtceu:circuits/mv'
     })
     //Runic Altar
     e.remove({ output: 'botania:runic_altar' })
@@ -164,7 +164,7 @@ ServerEvents.recipes(e => {
         'LDL',
         'LCL'
     ], {
-        C: '#forge:circuits/mv',
+        C: '#gtceu:circuits/mv',
         P: 'gtceu:livingrock_plate',
         D: 'botania:mana_diamond',
         M: 'gtceu:mana_steel_plate',
@@ -182,7 +182,7 @@ ServerEvents.recipes(e => {
         L: 'botania:livingrock',
         R: 'botania:rune_mana',
         M: 'botania:manasteel_block',
-        C: '#forge:circuits/lv'
+        C: '#gtceu:circuits/lv'
     })
     //Mana Pylon
     e.remove({ output: 'botania:mana_pylon' })
@@ -376,7 +376,7 @@ ServerEvents.recipes(e => {
         'LDL'
     ], {
         L: '#botania:livingwood_logs',
-        C: '#forge:circuits/lv',
+        C: '#gtceu:circuits/lv',
         D: 'botania:mana_diamond'
     })
     //Rod of the Lands

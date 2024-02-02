@@ -87,7 +87,7 @@ ServerEvents.recipes(e => {
         {
             A: 'ars_nouveau:sourcestone',
             B: 'gtceu:gold_rod',
-            C: '#forge:circuits/mv',
+            C: '#gtceu:circuits/mv',
             D: 'ars_nouveau:source_gem',
         }
     )
