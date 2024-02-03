@@ -618,6 +618,7 @@ ServerEvents.recipes(event => {
     signpost('3x supplementaries:biomesoplenty/sign_post_umbran', 'biomesoplenty:umbran_planks');
     signpost('3x supplementaries:biomesoplenty/sign_post_hellbark', 'biomesoplenty:hellbark_planks');
     signpost('3x supplementaries:biomesoplenty/sign_post_palm', 'biomesoplenty:palm_planks');
+    signpost('3x supplementaries:ad_astra/sign_post_glacian', 'ad_astra:glacian_planks');
     signpost('3x supplementaries:aether/sign_post_skyroot', 'aether:skyroot_planks');
     signpost('3x supplementaries:deep_aether/sign_post_roseroot', 'deep_aether:roseroot_planks');
     signpost('3x supplementaries:deep_aether/sign_post_cruderoot', 'deep_aether:cruderoot_planks');
