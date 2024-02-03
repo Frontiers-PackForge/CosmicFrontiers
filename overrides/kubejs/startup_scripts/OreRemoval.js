@@ -38,11 +38,11 @@ WorldgenEvents.remove(event => {
   })
   event.removeFeatureById('raw_generation', [
     //FOR SOME REASON ADASTRA GENERATES ORES AT THIS GENERATION STEP      
-    'ad_astra:moon_iron_ore',
-    'ad_astra:deepslate_desh_ore',
-    'ad_astra:moon_desh_ore',
-    'ad_astra:moon_cheese_ore',
-    'ad_astra:moon_ice_shard_ore'
+    // 'ad_astra:moon_iron_ore',
+    // 'ad_astra:deepslate_desh_ore',
+    // 'ad_astra:moon_desh_ore',
+    // 'ad_astra:moon_cheese_ore',
+    // 'ad_astra:moon_ice_shard_ore'
   ])
   event.removeFeatureById('underground_ores', [
     //FOR SOME REASON ADASTRA GENERATES ORES AT THIS GENERATION STEP      
