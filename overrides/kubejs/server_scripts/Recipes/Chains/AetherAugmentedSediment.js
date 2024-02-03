@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.gas_collector('aether_air_collection')
-        .outputFluids('gtceu:aether_air 1000')
+        .outputFluids('gtceu:aether_air 10000')
         .duration(200)
         .circuit(4)
         .dimension('aether:the_aether')

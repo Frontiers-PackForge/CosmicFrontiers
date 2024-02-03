@@ -692,21 +692,6 @@ ServerEvents.recipes(e => {
                 T: 'framedblocks:framed_cube',
                 P: 'gtceu:iron_plate'
             })
-//Pneumatic
-        e.remove({output: 'pneumaticcraft:pneumatic_door'})
-        e.shaped('pneumaticcraft:pneumatic_door', [
-                'PPR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                P: 'pneumaticcraft:ingot_iron_compressed',
-                B: 'gtceu:steel_ring',
-                S: 'gtceu:steel_screw',
-                D: '#forge:tools/screwdrivers',
-                R: '#forge:tools/hammers'
-            }
-        )
 //Fir
         e.remove({output: 'biomesoplenty:fir_door'})
         e.shaped('biomesoplenty:fir_door', [
