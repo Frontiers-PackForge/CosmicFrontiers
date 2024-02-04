@@ -2254,25 +2254,25 @@ ServerEvents.recipes(e => {
 //         {
 //             P: 'phantasm:pream_log'
 //         })
-//Undead
-    e.remove({id: 'evilcraft:crafting/undead_planks'})
-    e.shaped('4x evilcraft:undead_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'evilcraft:undead_log'
-        })
-    e.shaped('2x evilcraft:undead_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'evilcraft:undead_log'
-        })
+// //Undead
+//     e.remove({id: 'evilcraft:crafting/undead_planks'})
+//     e.shaped('4x evilcraft:undead_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'evilcraft:undead_log'
+//         })
+//     e.shaped('2x evilcraft:undead_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'evilcraft:undead_log'
+//         })
 //Livingwood
     e.remove({id: 'botania:livingwood_planks'})
     e.shaped('4x botania:livingwood_planks', [
