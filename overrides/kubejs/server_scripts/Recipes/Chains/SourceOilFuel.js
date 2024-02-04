@@ -17,43 +17,55 @@
   3000 Source Leeched Solution + ??? => 1000MB of I'll do the rest Later -Ghost This Evening 
 */
 
+ServerEvents.recipes((event) => {
+  //Magebloom preparation
+  event.recipes.gtceu.ore_washer("magebloom_washing")
+    .itemInputs("ars_nouveau:magebloom")
+    .inputFluids("water 100")
+    .itemOutputs("kubejs:washed_magebloom")
+    .duration(20)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.macerator("magebloom_shredding")
+    .itemInputs("kubejs:washed_magebloom")
+    .itemOutputs("kubejs:shredded_magebloom")
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
 
-
-
-ServerEvents.recipes(event => {
-
-  event.recipes.gtceu.chemical_reactor('source_oil_extract')
-    .itemInputs('4x ars_nouveau:magebloom')
-    .inputFluids('gtceu:potent_mana 500')
-    .inputFluids('water 3500')
-    .outputFluids('gtceu:source_oils 4000')
+  //Extraction
+  event.recipes.gtceu.chemical_reactor("gtceu:centrifuge/source_oil_spinny")
+    .itemInputs("4x kubejs:shredded_magebloom")
+    .inputFluids("gtceu:potent_mana 1000")
+    .inputFluids("water 3000")
+    .outputFluids("gtceu:dirty_magebloom_slurry 4000")
     .duration(160)
-    .EUt(8);
-  event.recipes.gtceu.large_chemical_reactor('source_oil_extract')
-    .itemInputs('4x ars_nouveau:magebloom')
-    .inputFluids('gtceu:potent_mana 500')
-    .inputFluids('water 3500')
-    .outputFluids('gtceu:source_oils 4000')
-    .duration(160)
-    .EUt(8);
-  event.recipes.gtceu.chemical_reactor('gtceu:centrifuge/source_enhanced_bio_fuel')
-    .itemInputs('gtceu:tiny_sodium_hydroxide_dust')
-    .inputFluids('gtceu:source_oils 6000')
-    .inputFluids('gtceu:ethanol 1000')
-    .outputFluids('gtceu:source_enhanced_bio_fuel 6000')
-    .outputFluids('gtceu:glycerol 1000')
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.mixer("benzene_extraction")
+    .inputFluids("gtceu:dirty_magebloom_slurry 4000")
+    .inputFluids("gtceu:benzene 1000")
+    .outputFluids("gtceu:two_phase_source_benzene_mixture 5000")
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.centrifuge("biphasic_source_mixture_separation")
+    .inputFluids("gtceu:two_phase_source_benzene_mixture 1000")
+    .outputFluids("gtceu:source_oils 700")
+    .outputFluids("gtceu:benzene 200")
+    .outputFluids("gtceu:source_waste_water 100")
     .duration(600)
     .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.large_chemical_reactor('gtceu:centrifuge/source_enhanced_bio_fuel')
-    .itemInputs('gtceu:tiny_sodium_hydroxide_dust')
-    .inputFluids('gtceu:source_oils 6000')
-    .inputFluids('gtceu:ethanol 1000')
-    .outputFluids('gtceu:source_enhanced_bio_fuel 6000')
-    .outputFluids('gtceu:glycerol 1000')
+
+  //TODO - Waste water recycling
+
+  //Transestrification
+  event.recipes.gtceu.chemical_reactor("gtceu:centrifuge/source_enhanced_bio_fuel")
+    .itemInputs("gtceu:tiny_sodium_hydroxide_dust")
+    .inputFluids("gtceu:source_oils 6000")
+    .inputFluids("gtceu:ethanol 1000")
+    .outputFluids("gtceu:source_enhanced_bio_fuel 6000")
+    .outputFluids("gtceu:glycerol 1000")
     .duration(600)
     .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.combustion_generator('combustion_source_fuel')
-    .inputFluids('gtceu:source_enhanced_bio_fuel 1')
+  event.recipes.gtceu.combustion_generator("combustion_source_fuel")
+    .inputFluids("gtceu:source_enhanced_bio_fuel 1")
     .duration(15)
-    .EUt(-32)
-})
+    .EUt(-32);
+});
