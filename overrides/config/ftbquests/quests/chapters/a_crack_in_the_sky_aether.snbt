@@ -261,7 +261,7 @@
 				{
 					icon: "gtceu:liquid_aether_air_bucket"
 					id: "53B8B729A1EF546A"
-					item: "gtceu:sodium_hydroxide_bauxite_bucket"
+					item: "gtceu:liquid_aether_air_bucket"
 					optional_task: true
 					type: "item"
 				}
@@ -294,7 +294,7 @@
 			id: "250E8B3A238E39B7"
 			tasks: [{
 				id: "7B279B6B3E3A6796"
-				item: "gtceu:sodium_hydroxide_bauxite_bucket"
+				item: "gtceu:ammonia_rich_aerocloud_solution_bucket"
 				optional_task: true
 				type: "item"
 			}]

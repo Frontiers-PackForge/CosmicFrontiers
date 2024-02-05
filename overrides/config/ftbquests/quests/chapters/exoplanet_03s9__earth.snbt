@@ -151,59 +151,6 @@
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
 			description: [
-				"Your mental well-being is volatile and is the only reason you avoided execution on the spot back on Earth-Prime."
-				""
-				"With that comes a whole host of issues: the invasive thoughts and impulses your mind emanates, unfortunately, linked with Psionic disturbances across the planet. They are manifesting some less than pleasant creatures."
-				""
-				"{@pagebreak}"
-				"DO. NOT. LET. THE. VOICES. BECOME. REAL. THEY. CAN. CAUSE. &lREAL&r. HARM."
-				""
-				"&eSTAY IN THE LIGHT&r."
-				"&aSTAY FULL&r."
-				"&cDO NOT FALL ILL OR EXPERIENCE PROLONGED PERIODS OF DAMAGE&r."
-				"&lLISTEN. TO. YOUR. MIND.&r"
-			]
-			icon: {
-				Count: 1b
-				ForgeCaps: {
-					"cold_sweat:item_insulation": {
-						Insulation: [ ]
-					}
-				}
-				id: "sanitydim:garland"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "283EFEAA64080D4D"
-			rewards: [{
-				id: "7760E9131F4D5AE3"
-				item: {
-					Count: 1b
-					ForgeCaps: {
-						"cold_sweat:item_insulation": {
-							Insulation: [ ]
-						}
-					}
-					id: "sanitydim:garland"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "Don't Starve 1.5"
-			tasks: [{
-				id: "0C78F1FCA1D28261"
-				type: "checkmark"
-			}]
-			title: "Staying Sane"
-			x: 6.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["4D96DE63E82D8EAA"]
-			description: [
 				"&lInfo&r: The natural environment mimics that of your home planet Earth. "
 				"Your scanner can help you locate rich deposits of ore. "
 				""
@@ -645,7 +592,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["283EFEAA64080D4D"]
+			dependencies: ["4D96DE63E82D8EAA"]
 			description: [
 				"Right off the bat, Nutrition is NOT needed to ward off negative buffs."
 				""
@@ -658,16 +605,7 @@
 				""
 				"Someone out there told me if you max all food groups, you may even be able to do the impossible."
 			]
-			icon: {
-				Count: 1b
-				ForgeCaps: {
-					Parent: {
-						Items: [ ]
-						Size: 9
-					}
-				}
-				id: "solonion:lunchbox"
-			}
+			icon: "solonion:lunchbox"
 			id: "0588F46F605A2E88"
 			rewards: [{
 				id: "7F77AA88929CD09E"
@@ -690,7 +628,7 @@
 			}]
 			title: "Nutrition and You."
 			x: 6.0d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0588F46F605A2E88"]
@@ -709,7 +647,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5693AA8924634F44"]
@@ -764,7 +702,6 @@
 				"78DFF9184296F7F6"
 				"536D3BFD33A78DBF"
 				"38DA0B4E0DBAC364"
-				"283EFEAA64080D4D"
 				"4D96DE63E82D8EAA"
 				"0588F46F605A2E88"
 				"012D3A0EBD06AEB3"

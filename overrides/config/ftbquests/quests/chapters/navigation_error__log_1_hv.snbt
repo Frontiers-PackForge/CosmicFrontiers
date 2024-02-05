@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "navigation_error__log_1_hv"
 	group: "533DAA16C8D9D30C"
-	icon: "botania:terrasteel_ingot"
+	icon: "gtceu:titanium_ingot"
 	id: "124E2C5B9FAD4967"
 	order_index: 1
 	quest_links: [ ]
@@ -428,7 +428,7 @@
 		}
 		{
 			dependencies: ["678C427D77B09119"]
-			icon: "gtceu:red_mud_slurry_bucket"
+			icon: "gtceu:neutralised_red_mud_bucket"
 			id: "16DA590C11F655A1"
 			tasks: [
 				{
@@ -491,7 +491,7 @@
 		}
 		{
 			dependencies: ["0545E9231494F424"]
-			icon: "gtceu:red_mud_slurry_bucket"
+			icon: "gtceu:sodium_hydroxide_bauxite_bucket"
 			id: "27078B056DB05DB9"
 			tasks: [
 				{
