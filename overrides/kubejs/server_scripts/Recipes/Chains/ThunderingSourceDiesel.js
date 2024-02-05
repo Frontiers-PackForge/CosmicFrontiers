@@ -1,6 +1,8 @@
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor('thundering_aerocloud_concentrate')
+        .notConsumable('48x gtceu:zano_aluminate_dust')
+        .notConsumable(Fluid.of('gtceu:ammonia', 2000))
         .inputFluids('gtceu:thundering_aerocloud_solution 2000')
         .inputFluids('gtceu:toluene 1000')
         .inputFluids('gtceu:refinery_gas 2000')
@@ -8,6 +10,7 @@ ServerEvents.recipes(event => {
         .duration(160)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.large_chemical_reactor('thundering_mana')
+        .itemInputs('2x gtceu:sodium_hydroxide')
         .inputFluids('gtceu:thundering_aerocloud_concentration 1000')
         .inputFluids('gtceu:potent_mana 3000')
         .outputFluids('gtceu:thundering_mana 4000')

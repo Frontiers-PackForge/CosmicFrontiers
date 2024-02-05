@@ -5,7 +5,7 @@
         {
             "entities": [
                 {
-                    "entity": "blue_skies:infested_swarmer",
+                    "entity": "undergarden:sploogie",
                     "count": 5
                 }
             ],
@@ -26,7 +26,7 @@
                     "count": 3
                 },
                 {
-                    "entity": "blue_skies:spewter",
+                    "entity": "undergarden:sploogie",
                     "count": 5
                 },
                 {
@@ -71,7 +71,7 @@
                     "count": 3
                 },
                 {
-                    "entity": "blue_skies:spewter",
+                    "entity": "undergarden:sploogie",
                     "count": 5
                 },
                 {
@@ -79,7 +79,7 @@
                     "count": 3
                 },
                 {
-                    "entity": "blue_skies:infested_swarmer",
+                    "entity": "minecraft:phantom",
                     "count": 5
                 }
             ],

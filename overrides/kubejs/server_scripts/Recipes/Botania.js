@@ -71,7 +71,18 @@ ServerEvents.recipes(e => {
         .itemOutputs('4x gtceu:livingwood_plate')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(120)
-
+    //ManaSteel Rods
+    e.recipes.gtceu.lathe('ingot_to_rod')
+        .itemInputs('botania:manasteel_ingot')
+        .itemOutputs('2x gtceu:mana_steel_rod')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(12)
+    e.recipes.gtceu.extractor('ingot_to_rod')
+        .itemInputs('botania:manasteel_ingot')
+        .notConsumable('gtceu:rod_extruder_mold')
+        .itemOutputs('2x gtceu:mana_steel_rod')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(12)
 
 
     //Actually starting botania recipes
@@ -1282,7 +1293,7 @@ ServerEvents.recipes(e => {
         .inputFluids(Fluid.of('gtceu:potent_mana', 50))
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
-    
+
 
 })
 

@@ -30,7 +30,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         )
 
     event.create('mana_steel')
-        .ingot()
         .fluid()
         .color(0x67b9ee)
         .element(GTElements.get('mana_steel'))

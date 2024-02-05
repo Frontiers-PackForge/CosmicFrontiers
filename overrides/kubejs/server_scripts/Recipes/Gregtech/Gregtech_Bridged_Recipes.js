@@ -1075,214 +1075,214 @@ ServerEvents.recipes(e => {
                 T: 'minecraft:stick',
                 P: 'ad_astra:glacian_slab'
             })
-//Bluebright
-        e.remove({output: 'blue_skies:bluebright_door'})
-        e.shaped('blue_skies:bluebright_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'blue_skies:bluebright_trapdoor',
-                P: 'blue_skies:bluebright_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'blue_skies:bluebright_trapdoor'})
-        e.shaped('blue_skies:bluebright_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'blue_skies:bluebright_slab'
-            })
-//Starlit
-        e.remove({output: 'blue_skies:starlit_door'})
-        e.shaped('blue_skies:starlit_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'blue_skies:starlit_trapdoor',
-                P: 'blue_skies:starlit_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'blue_skies:starlit_trapdoor'})
-        e.shaped('blue_skies:starlit_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'blue_skies:starlit_slab'
-            })
-//Frostbright
-        e.remove({output: 'blue_skies:frostbright_door'})
-        e.shaped('blue_skies:frostbright_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'blue_skies:frostbright_trapdoor',
-                P: 'blue_skies:frostbright_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'blue_skies:frostbright_trapdoor'})
-        e.shaped('blue_skies:frostbright_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'blue_skies:frostbright_slab'
-            })
-//Lunar
-        e.remove({output: 'blue_skies:lunar_door'})
-        e.shaped('blue_skies:lunar_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'blue_skies:lunar_trapdoor',
-                P: 'blue_skies:lunar_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'blue_skies:lunar_trapdoor'})
-        e.shaped('blue_skies:lunar_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'blue_skies:lunar_slab'
-            })
-//Dusk
-        e.remove({output: 'blue_skies:dusk_door'})
-        e.shaped('blue_skies:dusk_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'blue_skies:dusk_trapdoor',
-                P: 'blue_skies:dusk_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'blue_skies:dusk_trapdoor'})
-        e.shaped('blue_skies:dusk_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'blue_skies:dusk_slab'
-            })
-//Maple
-        e.remove({output: 'blue_skies:maple_door'})
-        e.shaped('blue_skies:maple_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'blue_skies:maple_trapdoor',
-                P: 'blue_skies:maple_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'blue_skies:maple_trapdoor'})
-        e.shaped('blue_skies:maple_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'blue_skies:maple_slab'
-            })
-//Comet
-        e.remove({output: 'blue_skies:comet_door'})
-        e.shaped('blue_skies:comet_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'blue_skies:comet_trapdoor',
-                P: 'blue_skies:comet_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'blue_skies:comet_trapdoor'})
-        e.shaped('blue_skies:comet_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'bblue_skies:comet_slab'
-            })
-//Crystallized
-        e.remove({output: 'blue_skies:crystallized_door'})
-        e.shaped('blue_skies:crystallized_door', [
-                'PTR',
-                'PBS',
-                'PPD'
-            ],
-            {
-                T: 'blue_skies:crystallized_trapdoor',
-                P: 'blue_skies:crystallized_planks',
-                B: 'gtceu:iron_ring',
-                S: 'gtceu:iron_screw',
-                D: '#forge:tools/saws',
-                R: '#forge:tools/screwdrivers'
-            }
-        )
-        e.remove({output: 'blue_skies:crystallized_trapdoor'})
-        e.shaped('blue_skies:crystallized_trapdoor', [
-                'PTP',
-                'TTT',
-                'PTP'
-            ],
-            {
-                T: 'minecraft:stick',
-                P: 'blue_skies:crystallized_slab'
-            })
+// //Bluebright
+//         e.remove({output: 'blue_skies:bluebright_door'})
+//         e.shaped('blue_skies:bluebright_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'blue_skies:bluebright_trapdoor',
+//                 P: 'blue_skies:bluebright_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'blue_skies:bluebright_trapdoor'})
+//         e.shaped('blue_skies:bluebright_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'blue_skies:bluebright_slab'
+//             })
+// //Starlit
+//         e.remove({output: 'blue_skies:starlit_door'})
+//         e.shaped('blue_skies:starlit_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'blue_skies:starlit_trapdoor',
+//                 P: 'blue_skies:starlit_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'blue_skies:starlit_trapdoor'})
+//         e.shaped('blue_skies:starlit_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'blue_skies:starlit_slab'
+//             })
+// //Frostbright
+//         e.remove({output: 'blue_skies:frostbright_door'})
+//         e.shaped('blue_skies:frostbright_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'blue_skies:frostbright_trapdoor',
+//                 P: 'blue_skies:frostbright_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'blue_skies:frostbright_trapdoor'})
+//         e.shaped('blue_skies:frostbright_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'blue_skies:frostbright_slab'
+//             })
+// //Lunar
+//         e.remove({output: 'blue_skies:lunar_door'})
+//         e.shaped('blue_skies:lunar_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'blue_skies:lunar_trapdoor',
+//                 P: 'blue_skies:lunar_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'blue_skies:lunar_trapdoor'})
+//         e.shaped('blue_skies:lunar_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'blue_skies:lunar_slab'
+//             })
+// //Dusk
+//         e.remove({output: 'blue_skies:dusk_door'})
+//         e.shaped('blue_skies:dusk_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'blue_skies:dusk_trapdoor',
+//                 P: 'blue_skies:dusk_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'blue_skies:dusk_trapdoor'})
+//         e.shaped('blue_skies:dusk_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'blue_skies:dusk_slab'
+//             })
+// //Maple
+//         e.remove({output: 'blue_skies:maple_door'})
+//         e.shaped('blue_skies:maple_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'blue_skies:maple_trapdoor',
+//                 P: 'blue_skies:maple_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'blue_skies:maple_trapdoor'})
+//         e.shaped('blue_skies:maple_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'blue_skies:maple_slab'
+//             })
+// //Comet
+//         e.remove({output: 'blue_skies:comet_door'})
+//         e.shaped('blue_skies:comet_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'blue_skies:comet_trapdoor',
+//                 P: 'blue_skies:comet_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'blue_skies:comet_trapdoor'})
+//         e.shaped('blue_skies:comet_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'bblue_skies:comet_slab'
+//             })
+// //Crystallized
+//         e.remove({output: 'blue_skies:crystallized_door'})
+//         e.shaped('blue_skies:crystallized_door', [
+//                 'PTR',
+//                 'PBS',
+//                 'PPD'
+//             ],
+//             {
+//                 T: 'blue_skies:crystallized_trapdoor',
+//                 P: 'blue_skies:crystallized_planks',
+//                 B: 'gtceu:iron_ring',
+//                 S: 'gtceu:iron_screw',
+//                 D: '#forge:tools/saws',
+//                 R: '#forge:tools/screwdrivers'
+//             }
+//         )
+//         e.remove({output: 'blue_skies:crystallized_trapdoor'})
+//         e.shaped('blue_skies:crystallized_trapdoor', [
+//                 'PTP',
+//                 'TTT',
+//                 'PTP'
+//             ],
+//             {
+//                 T: 'minecraft:stick',
+//                 P: 'blue_skies:crystallized_slab'
+//             })
 //Archwood
         e.remove({output: 'ars_nouveau:archwood_door'})
         e.shaped('ars_nouveau:archwood_door', [
@@ -2577,177 +2577,177 @@ ServerEvents.recipes(e => {
         {
             P: 'ad_astra:glacian_log'
         })
-//Bluebright
-    e.remove({id: 'blue_skies:bluebright_planks'})
-    e.shaped('4x blue_skies:bluebright_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'blue_skies:bluebright_log'
-        })
-    e.shaped('2x blue_skies:bluebright_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'blue_skies:bluebright_log'
-        })
-//Bluebright
-    e.remove({id: 'blue_skies:bluebright_planks'})
-    e.shaped('4x blue_skies:bluebright_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'blue_skies:bluebright_log'
-        })
-    e.shaped('2x blue_skies:bluebright_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'blue_skies:bluebright_log'
-        })
-//Starlit
-    e.remove({id: 'blue_skies:starlit_planks'})
-    e.shaped('4x blue_skies:starlit_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'blue_skies:starlit_log'
-        })
-    e.shaped('2x blue_skies:starlit_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'blue_skies:starlit_log'
-        })
-//Frostbright
-    e.remove({id: 'blue_skies:frostbright_planks'})
-    e.shaped('4x blue_skies:frostbright_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'blue_skies:frostbright_log'
-        })
-    e.shaped('2x blue_skies:frostbright_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'blue_skies:frostbright_log'
-        })
-//Lunar
-    e.remove({id: 'blue_skies:lunar_planks'})
-    e.shaped('4x blue_skies:lunar_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'blue_skies:lunar_log'
-        })
-    e.shaped('2x blue_skies:lunar_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'blue_skies:lunar_log'
-        })
-//Dusk
-    e.remove({id: 'blue_skies:dusk_planks'})
-    e.shaped('4x blue_skies:dusk_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'blue_skies:dusk_log'
-        })
-    e.shaped('2x blue_skies:dusk_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'blue_skies:dusk_log'
-        })
-//Maple
-    e.remove({id: 'blue_skies:maple_planks'})
-    e.shaped('4x blue_skies:maple_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'blue_skies:maple_log'
-        })
-    e.shaped('2x blue_skies:maple_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'blue_skies:maple_log'
-        })
-//Crystallized
-    e.remove({id: 'blue_skies:crystallized_planks'})
-    e.shaped('4x blue_skies:crystallized_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'blue_skies:crystallized_log'
-        })
-    e.shaped('2x blue_skies:crystallized_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'blue_skies:crystallized_log'
-        })
-//Comet
-    e.remove({id: 'blue_skies:comet_planks'})
-    e.shaped('4x blue_skies:comet_planks', [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-        {
-            T: '#forge:tools/saws',
-            P: 'blue_skies:comet_log'
-        })
-    e.shaped('2x blue_skies:comet_planks', [
-            '   ',
-            '   ',
-            ' P '
-        ],
-        {
-            P: 'blue_skies:comet_log'
-        })
+// //Bluebright
+//     e.remove({id: 'blue_skies:bluebright_planks'})
+//     e.shaped('4x blue_skies:bluebright_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'blue_skies:bluebright_log'
+//         })
+//     e.shaped('2x blue_skies:bluebright_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'blue_skies:bluebright_log'
+//         })
+// //Bluebright
+//     e.remove({id: 'blue_skies:bluebright_planks'})
+//     e.shaped('4x blue_skies:bluebright_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'blue_skies:bluebright_log'
+//         })
+//     e.shaped('2x blue_skies:bluebright_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'blue_skies:bluebright_log'
+//         })
+// //Starlit
+//     e.remove({id: 'blue_skies:starlit_planks'})
+//     e.shaped('4x blue_skies:starlit_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'blue_skies:starlit_log'
+//         })
+//     e.shaped('2x blue_skies:starlit_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'blue_skies:starlit_log'
+//         })
+// //Frostbright
+//     e.remove({id: 'blue_skies:frostbright_planks'})
+//     e.shaped('4x blue_skies:frostbright_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'blue_skies:frostbright_log'
+//         })
+//     e.shaped('2x blue_skies:frostbright_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'blue_skies:frostbright_log'
+//         })
+// //Lunar
+//     e.remove({id: 'blue_skies:lunar_planks'})
+//     e.shaped('4x blue_skies:lunar_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'blue_skies:lunar_log'
+//         })
+//     e.shaped('2x blue_skies:lunar_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'blue_skies:lunar_log'
+//         })
+// //Dusk
+//     e.remove({id: 'blue_skies:dusk_planks'})
+//     e.shaped('4x blue_skies:dusk_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'blue_skies:dusk_log'
+//         })
+//     e.shaped('2x blue_skies:dusk_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'blue_skies:dusk_log'
+//         })
+// //Maple
+//     e.remove({id: 'blue_skies:maple_planks'})
+//     e.shaped('4x blue_skies:maple_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'blue_skies:maple_log'
+//         })
+//     e.shaped('2x blue_skies:maple_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'blue_skies:maple_log'
+//         })
+// //Crystallized
+//     e.remove({id: 'blue_skies:crystallized_planks'})
+//     e.shaped('4x blue_skies:crystallized_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'blue_skies:crystallized_log'
+//         })
+//     e.shaped('2x blue_skies:crystallized_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'blue_skies:crystallized_log'
+//         })
+// //Comet
+//     e.remove({id: 'blue_skies:comet_planks'})
+//     e.shaped('4x blue_skies:comet_planks', [
+//             '   ',
+//             ' T ',
+//             ' P '
+//         ],
+//         {
+//             T: '#forge:tools/saws',
+//             P: 'blue_skies:comet_log'
+//         })
+//     e.shaped('2x blue_skies:comet_planks', [
+//             '   ',
+//             '   ',
+//             ' P '
+//         ],
+//         {
+//             P: 'blue_skies:comet_log'
+//         })
 //Blue Archwood
     e.remove({id: 'ars_nouveau:archwood_planks'})
     e.shaped('4x ars_nouveau:archwood_planks', [

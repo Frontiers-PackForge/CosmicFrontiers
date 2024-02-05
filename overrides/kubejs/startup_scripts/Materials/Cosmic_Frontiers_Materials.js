@@ -40,7 +40,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         // .color(0x154085)
         .liquid(new GTFluidBuilder().customStill())
     event.create('thunder_boosted_source_diesel')
-        // .color(0x154085)
+        .color(0xe642f5)
         .liquid(new GTFluidBuilder().customStill())
     event.create('ammonia_rich_aerocloud_solution')
         .fluid()
