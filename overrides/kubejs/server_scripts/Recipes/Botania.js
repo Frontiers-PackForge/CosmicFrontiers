@@ -71,7 +71,18 @@ ServerEvents.recipes(e => {
         .itemOutputs('4x gtceu:livingwood_plate')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(120)
-
+    //ManaSteel Rods
+    e.recipes.gtceu.lathe('ingot_to_rod')
+        .itemInputs('botania:manasteel_ingot')
+        .itemOutputs('2x gtceu:mana_steel_rod')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(12)
+    e.recipes.gtceu.extractor('ingot_to_rod')
+        .itemInputs('botania:manasteel_ingot')
+        .notConsumable('gtceu:rod_extruder_mold')
+        .itemOutputs('2x gtceu:mana_steel_rod')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(12)
 
 
     //Actually starting botania recipes
@@ -155,7 +166,7 @@ ServerEvents.recipes(e => {
         L: 'gtceu:livingrock_plate',
         G: 'gtceu:rose_gold_plate',
         P: 'botania:mana_pearl',
-        C: '#forge:circuits/mv'
+        C: '#gtceu:circuits/mv'
     })
     //Runic Altar
     e.remove({ output: 'botania:runic_altar' })
@@ -164,7 +175,7 @@ ServerEvents.recipes(e => {
         'LDL',
         'LCL'
     ], {
-        C: '#forge:circuits/mv',
+        C: '#gtceu:circuits/mv',
         P: 'gtceu:livingrock_plate',
         D: 'botania:mana_diamond',
         M: 'gtceu:mana_steel_plate',
@@ -182,7 +193,7 @@ ServerEvents.recipes(e => {
         L: 'botania:livingrock',
         R: 'botania:rune_mana',
         M: 'botania:manasteel_block',
-        C: '#forge:circuits/lv'
+        C: '#gtceu:circuits/lv'
     })
     //Mana Pylon
     e.remove({ output: 'botania:mana_pylon' })
@@ -376,7 +387,7 @@ ServerEvents.recipes(e => {
         'LDL'
     ], {
         L: '#botania:livingwood_logs',
-        C: '#forge:circuits/lv',
+        C: '#gtceu:circuits/lv',
         D: 'botania:mana_diamond'
     })
     //Rod of the Lands
@@ -1221,7 +1232,7 @@ ServerEvents.recipes(e => {
     e.recipes.botania.mana_infusion('botania:blacker_lotus', 'minecraft:wither_rose', 100000)
 
     e.remove({ id: 'botania:mana_infusion/mana_diamond' })
-    e.recipes.botania.mana_infusion('botania:mana_diamond', 'gtceu:diamond_flawless_gem', 10000)
+    e.recipes.botania.mana_infusion('botania:mana_diamond', 'gtceu:flawless_diamond_gem', 10000)
 
     e.remove({ output: 'botania:mana_powder' })
     e.recipes.botania.mana_infusion('botania:mana_powder', 'gtceu:electrotine_dust', 500)
@@ -1271,7 +1282,7 @@ ServerEvents.recipes(e => {
         .EUt(GTValues.VA[GTValues.MV]);
     //Mana Diamond
     e.recipes.gtceu.mana_fluidizer('gtceu:mana_diamond')
-        .itemInputs('gtceu:diamond_flawless_gem')
+        .itemInputs('gtceu:flawless_diamond_gem')
         .itemOutputs('botania:mana_diamond')
         .inputFluids(Fluid.of('gtceu:potent_mana', 1000))
         .duration(20)
@@ -1282,7 +1293,7 @@ ServerEvents.recipes(e => {
         .inputFluids(Fluid.of('gtceu:potent_mana', 50))
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
-    
+
 
 })
 

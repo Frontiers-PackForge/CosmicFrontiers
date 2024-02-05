@@ -1,4 +1,16 @@
 ServerEvents.recipes(event => {
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            'aether:bronze_dungeon_key',
+            'aether:silver_dungeon_key',
+            'aether:gold_dungeon_key',
+            '#gtceu:circuits/hv',
+        ], // input items
+	    'minecraft:heart_of_the_sea', // reagent
+	    'undergarden:catalyst', // output
+	    15000, // source cost
+	    // true // keep nbt of reagent, think like a smithing recipe
+	);
     event.remove({ output: 'ars_nouveau:archwood_chest' })
 
     event.shaped('ars_nouveau:archwood_chest', [
@@ -87,7 +99,7 @@ ServerEvents.recipes(e => {
         {
             A: 'ars_nouveau:sourcestone',
             B: 'gtceu:gold_rod',
-            C: '#forge:circuits/mv',
+            C: '#gtceu:circuits/mv',
             D: 'ars_nouveau:source_gem',
         }
     )

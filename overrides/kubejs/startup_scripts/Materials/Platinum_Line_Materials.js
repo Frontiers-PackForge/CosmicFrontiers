@@ -1,0 +1,70 @@
+GTCEuStartupEvents.registry('gtceu:material', event => {
+    event.create('roasted_cooperite')
+        .dust()
+        .element(GTElements.get('roasted_cooperite'))
+        .color(0x99a37a).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('nickel_depleted_cooperite')
+        .dust()
+        .element(GTElements.get('nickel_depleted_cooperite'))
+        .color(0x988B88).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('nickel_carbonyl')
+        .fluid()
+        .element(GTElements.get('nickel_carbonyl'))
+        .color(0x666A72).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('cooperite_solution')
+        .fluid()
+        .element(GTElements.get('cooperite_solution'))
+        .color(0xe9ffa7).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('plat_depleted_cooperite_solution')
+        .fluid()
+        .element(GTElements.get('plat_depleted_cooperite_solution'))
+        .color(0x766D6B).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('ammonium_hexachloroplatinate')
+        .dust()
+        .element(GTElements.get('ammonium_hexachloroplatinate'))
+        .color(0xCDC8A6).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('ammonium_hexachloropalladate')
+        .dust()
+        .element(GTElements.get('ammonium_hexachloropalladate'))
+        .color(0x8E9190).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('tetraammine_palladium_chloride')
+        .dust()
+        .element(GTElements.get('tetraammine_palladium_chloride'))
+        .color(0xE9FFA7).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+
+})
+
+
+

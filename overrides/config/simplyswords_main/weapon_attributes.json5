@@ -99,6 +99,11 @@
 	"sunfire_damageModifier": 3.0,
 	"harbinger_damageModifier": 3.0,
 	"whisperwind_damageModifier": 3.0,
+	"emberlash_damageModifier": 0.0,
+	"waxweaver_damageModifier": 6.0,
+	"hiveheart_damageModifier": 7.0,
+	"starsedge_damageModifier": 3.0,
+	"wickpiercer_damageModifier": 4.0,
 	"brimstone_attackSpeed": -2.799999952316284,
 	"thewatcher_attackSpeed": -2.799999952316284,
 	"stormsedge_attackSpeed": -2.0,
@@ -125,5 +130,10 @@
 	"shadowsting_attackSpeed": -1.7000000476837158,
 	"sunfire_attackSpeed": -2.4000000953674316,
 	"harbinger_attackSpeed": -2.4000000953674316,
-	"whisperwind_attackSpeed": -2.0
+	"whisperwind_attackSpeed": -2.0,
+	"emberlash_attackSpeed": -1.5,
+	"waxweaver_attackSpeed": -2.9000000953674316,
+	"hiveheart_attackSpeed": -3.0,
+	"starsedge_attackSpeed": -2.0,
+	"wickpiercer_attackSpeed": -1.7000000476837158
 }

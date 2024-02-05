@@ -28,6 +28,9 @@ convert_trapped_chests = true
 decay_structures = []
 #lootr will automatically log all unresolved tables (i.e., for containers that have a loot table associated with them but, for whatever reason, the lookup for this table returns empty). setting this option to true additionally informs players when they open containers.
 report_unresolved_tables = false
+#list of dimensions by modid that loot chests should not be replaced in (default: blank, allowing all modids, format e.g., ["minecraft
+#othermod"])
+modid_dimension_blacklist = []
 #list of loot tables which shouldn't be converted (in the format of ["modid:loot_table", "othermodid:other_loot_table"])
 loot_table_blacklist = []
 #list of dimensions where loot chests should automatically refresh (default: blank, e.g., ["minecraft:overworld", "othermod:otherdimension"])
@@ -36,9 +39,8 @@ refresh_dimensions = []
 refresh_modids = []
 #determine whether or not loot generated is the same for all players using the provided seed, or randomised per player
 randomise_seed = true
-#the maximum age for containers; entries above this age will be discarded [default: 180 * 20, 3 minutes]
-#Range: > 0
-maximum_age = 3600
+#when true, custom inventories will act like trapped chests when opened
+trapped_custom = false
 #whether or not quark chests used in world generation for loot purposes should be replaced with Lootr chests
 convert_quark = true
 #how long (in ticks) a decaying loot containers should take to decay (default 5 minutes = 5 * 60 * 20)
@@ -46,6 +48,9 @@ convert_quark = true
 decay_value = 6000
 #list of loot tables which will refresh (default blank, meaning no chests refresh, in the format of ["modid:loot_table", "othermodid:loot_table"])
 refresh_loot_tables = []
+#list of dimensions by modid that loot chest should be replaced in (default: blank, allowing all modids, format e.g., ["minecraft
+#othermod"])
+modid_dimension_whitelist = []
 #prevent notifications of decaying or refreshed chests
 disable_notifications = false
 #overriding refresh_loot_tables, refresh_modids and refresh_dimensions: all chests will refresh after being opened for the first time
@@ -58,6 +63,9 @@ blast_resistant = false
 dimension_blacklist = []
 #allow the destruction of Lootr chests regardless. overrides `disable_break`
 enable_break = false
+#the maximum age for containers; entries above this age will be discarded [default: 180 * 20, 3 minutes]
+#Range: > 0
+max_age = 6000
 #prevent the destruction of Lootr chests except while sneaking in creative mode
 disable_break = false
 #whether or not mineshaft chest minecarts should be converted to standard loot chests
@@ -67,6 +75,8 @@ power_comparators = true
 #maximum time (in ticks) remaining on a chest before a notification for refreshing or decaying is sent to a player (default 30 seconds, -1 for no delay)
 #Range: > -1
 notification_delay = 600
+#if true, no chests will be converted
+disable = false
 #how long (in ticks) a refreshing loot containers should take to refresh their contents (default 20 minutes = 20 * 60 * 20)
 #Range: > 0
 refresh_value = 24000

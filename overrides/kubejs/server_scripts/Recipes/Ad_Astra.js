@@ -401,7 +401,7 @@ let yeet_f = (itemName) => {
           ], {
             A: 'gtceu:hv_robot_arm',  
             B: 'gtceu:stainless_steel_screwdriver',
-            C: '#forge:circuits/hv',
+            C: '#gtceu:circuits/iv',
             H: 'gtceu:hv_machine_hull',
             D: 'minecraft:redstone_lamp',
             M: 'gtceu:computer_monitor_cover', 
@@ -413,7 +413,7 @@ let yeet_f = (itemName) => {
           ], {
             A: 'gtceu:hv_electric_motor',  
             B: 'gtceu:stainless_steel_plate',
-            C: '#forge:circuits/hv',
+            C: '#gtceu:circuits/hv',
             D: 'gtceu:stainless_steel_rotor',
             H: 'gtceu:hv_machine_hull'
           })
@@ -424,7 +424,7 @@ let yeet_f = (itemName) => {
           ], {
             A: 'gtceu:ostrum_plate',  
             B: 'minecraft:redstone',
-            C: '#forge:circuits/hv',
+            C: '#gtceu:circuits/hv',
             D: 'gtceu:assembly_line_grating',
             H: 'gtceu:hv_machine_hull'
           })

@@ -109,5 +109,21 @@
 	"fatalFlickerChance": 15.0,
 	"fatalFlickerRadius": 3.0,
 	"fatalFlickerMaxStacks": 99.0,
-	"fatalFlickerDashVelocity": 3.0
+	"fatalFlickerDashVelocity": 3.0,
+	"smoulderCooldown": 80.0,
+	"smoulderMaxStacks": 5.0,
+	"smoulderHeal": 15.0,
+	"smoulderSpellScaling": 1.0,
+	"waxweaveCooldown": 1200.0,
+	"waxweaveMaxStacks": 3.0,
+	"hivemindCooldown": 60.0,
+	"hivemindDuration": 450.0,
+	"celestialSurgeCooldown": 120.0,
+	"celestialSurgeDuration": 120.0,
+	"celestialSurgeStacks": 6.0,
+	"celestialSurgeDamageModifier": 0.4000000059604645,
+	"celestialSurgeLifestealModifier": 0.10000000149011612,
+	"flickerFuryCooldown": 220.0,
+	"flickerFuryDuration": 40.0,
+	"flickerFuryDamage": 1.0
 }

@@ -24,12 +24,12 @@ ServerEvents.recipes((event) => {
     .inputFluids("water 100")
     .itemOutputs("kubejs:washed_magebloom")
     .duration(20)
-    .EUt(GTValues.VA[GTValues.LV]);
+    .EUt(16);
   event.recipes.gtceu.macerator("magebloom_shredding")
     .itemInputs("kubejs:washed_magebloom")
     .itemOutputs("kubejs:shredded_magebloom")
     .duration(100)
-    .EUt(GTValues.VA[GTValues.LV]);
+    .EUt(2);
 
   //Extraction
   event.recipes.gtceu.chemical_reactor("gtceu:centrifuge/source_oil_spinny")
@@ -38,19 +38,19 @@ ServerEvents.recipes((event) => {
     .inputFluids("water 3000")
     .outputFluids("gtceu:dirty_magebloom_slurry 4000")
     .duration(160)
-    .EUt(GTValues.VA[GTValues.LV]);
+    .EUt(24);
   event.recipes.gtceu.mixer("benzene_extraction")
     .inputFluids("gtceu:dirty_magebloom_slurry 4000")
     .inputFluids("gtceu:benzene 1000")
     .outputFluids("gtceu:two_phase_source_benzene_mixture 5000")
     .duration(100)
-    .EUt(GTValues.VA[GTValues.LV]);
+    .EUt(16);
   event.recipes.gtceu.centrifuge("biphasic_source_mixture_separation")
     .inputFluids("gtceu:two_phase_source_benzene_mixture 1000")
     .outputFluids("gtceu:source_oils 700")
     .outputFluids("gtceu:benzene 200")
     .outputFluids("gtceu:source_waste_water 100")
-    .duration(600)
+    .duration(200)
     .EUt(GTValues.VA[GTValues.LV]);
 
   //TODO - Waste water recycling

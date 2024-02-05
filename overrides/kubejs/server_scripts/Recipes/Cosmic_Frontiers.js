@@ -9,7 +9,14 @@ let yeet = (itemName) => {
 
        })
 }
+ServerEvents.tags('item', event => {
+       event.add('thinair:heavy_breathing_utility', 'kubejs:nano_respirator')
+       event.add('thinair:breathing_equipment', 'kubejs:nano_respirator')
+       event.add('curios:head', 'kubejs:nano_respirator')
+       event.add('curios:charm', 'gtceu:hv_item_magnet')
+       event.add('curios:charm', 'gtceu:lv_item_magnet')
 
+})
 //Generator Removal - WILL RETURN WITH UH, """BETTER""" CREATE FUNCTIONALITY
 // yeet('gtceu:lv_combustion')
 // yeet('gtceu:mv_combustion')
@@ -26,7 +33,7 @@ let yeet = (itemName) => {
 // yeet('gtceu:lv_steam_turbine')
 // yeet('gtceu:steam_large_turbine')
 // yeet('gtceu:plasma_large_turbine')
-// yeet('gtceu:turbine_rotor')
+// yeet('gtceu:turbine_rotor') 
 
 ServerEvents.recipes(event => {
        // event.remove({ output: 'gtceu:firebrick' })
@@ -94,37 +101,37 @@ ServerEvents.recipes(event => {
               .inputFluids('minecraft:lava 1000')
               .outputFluids(Fluid.of('gtceu:potent_mana', 2000))
               .duration(900)
-              .EUt(GTValues.VA[GTValues.HV]);
+              .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_rafflowsia')
               .notConsumable('kubejs:mechanical_rafflowsia')
               .itemInputs('10x #minecraft:flowers')
               .outputFluids(Fluid.of('gtceu:potent_mana', 2500))
               .duration(900)
-              .EUt(GTValues.VA[GTValues.HV]);
+              .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_munchdew')
               .notConsumable('kubejs:mechanical_munchdew')
               .itemInputs('100x #minecraft:leaves')
               .outputFluids(Fluid.of('gtceu:potent_mana', 2000))
               .duration(1600)
-              .EUt(GTValues.VA[GTValues.HV]);
+              .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_kekimurus')
               .notConsumable('kubejs:mechanical_kekimurus')
               .itemInputs('minecraft:cake')
               .outputFluids(Fluid.of('gtceu:potent_mana', 3000))
               .duration(450)
-              .EUt(GTValues.VA[GTValues.HV]);
+              .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_arcana')
               .notConsumable('kubejs:mechanical_rosa_arcana')
               .inputFluids('experienceobelisk:cognitium 500')
               .outputFluids(Fluid.of('gtceu:potent_mana', 2000))
               .duration(900)
-              .EUt(GTValues.VA[GTValues.EV]);
+              .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_entropinnyum')
               .notConsumable('kubejs:mechanical_entropinnyum')
               .itemInputs('4x minecraft:tnt')
               .outputFluids(Fluid.of('gtceu:potent_mana', 3000))
               .duration(120)
-              .EUt(GTValues.VA[GTValues.HV]);
+              .EUt(GTValues.VA[GTValues.LV]);
        event.shaped('gtceu:hp_steam_masonry_oven', [
               'WWW',
               'PBP',

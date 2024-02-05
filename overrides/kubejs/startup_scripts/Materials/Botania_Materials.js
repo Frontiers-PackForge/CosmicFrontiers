@@ -56,6 +56,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .element(GTElements.get('ether_steel'))
         .iconSet(GTMaterialIconSet.SHINY)
+        .cableProperties(GTValues.V[GTValues.HV], 2, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -63,7 +64,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.NO_SMELTING
+
         )
 
 })

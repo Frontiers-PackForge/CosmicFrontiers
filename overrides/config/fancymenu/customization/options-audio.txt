@@ -1,30 +1,26 @@
-type = menu
+type = fancymenu_layout
 
-customization-meta {
-  identifier = net.minecraft.client.gui.screens.SoundOptionsScreen
-  randomgroup = 1
-  renderorder = foreground
+layout-meta {
+  identifier = sound_options_screen
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1706528496658
+  is_enabled = true
   randommode = false
+  randomgroup = 1
   randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:4e6fc931-5478-4091-a2f6-1e6fff37999f-1706528496658] = [groups:][instances:]
 }
 
 customization {
-  keepaspectratio = false
   action = backgroundoptions
+  keepaspectratio = false
 }
 
-customization {
-  audio_source:083d1c06-779c-4779-aadb-415874fa86711704208957977 = kubejs/assets/frontiers/audio/untitled-theme.ogg;EXTERNAL_LOCAL;100;0
-  orientation = top-left
-  loop = true
-  [loading_requirement:fancymenu_loading_requirement_is_world_loaded][requirement_mode:if_not][req_id:6504a476-d9b6-48fb-897c-dedf0a180ba71704213122050] = 
-  channel = music
-  x = 582
-  width = 50
-  action = custom_layout_element:fancymenu_extension:audio_item
-  actionid = ac2b8e84-eb0a-4889-ad83-2c5db3061a151704213340774
-  y = 27
-  once_per_session = false
-  height = 50
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
 }
 

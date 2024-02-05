@@ -9,13 +9,6 @@ let yeet = (itemName) => {
   })
 }
 
-
-// yeet('gtceu:hv_combustion')
-// yeet('gtceu:hv_gas_turbine')
-// yeet('gtceu:hv_steam_turbine')
-
-
-
 ServerEvents.tags('item', event => {
   event.add('forge:lenses/ruby', 'gtceu:redstone_lens')
   event.add('forge:lenses/red', 'gtceu:redstone_lens')
@@ -75,131 +68,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('cosmiccore:waxed_leather')
     .duration(100)
     .EUt(GTValues.VA[GTValues.LV])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  event.recipes.gtceu.bender('kubejs:stainless_steel_fin')
-    .itemInputs('6x gtceu:stainless_steel_plate')
-    .circuit(4)
-    .itemOutputs('kubejs:stainless_steel_fin')
-    .duration(100)
-    .EUt(480);
-  event.recipes.gtceu.assembler('kubejs:stainless_steel_nose_cone')
-    .itemInputs('4x gtceu:stainless_steel_plate')
-    .itemInputs('gtceu:annealed_copper_rod')
-    .itemInputs('gtceu:annealed_copper_nugget')
-    .inputFluids('gtceu:polytetrafluoroethylene 288')
-    .itemOutputs('kubejs:stainless_steel_nose_cone')
-    .duration(100)
-    .EUt(480);
-  event.recipes.gtceu.assembler('kubejs:stainless_steel_engine')
-    .itemInputs('4x gtceu:stainless_steel_plate')
-    .itemInputs('gtceu:stainless_steel_rotor')
-    .itemInputs('gtceu:stainless_steel_drum')
-    .itemInputs('gtceu:hv_electric_motor')
-    .inputFluids('gtceu:polytetrafluoroethylene 432')
-    .itemOutputs('kubejs:stainless_steel_engine')
-    .duration(100)
-    .EUt(480);
-  event.recipes.gtceu.bender('kubejs:hsse_fin')
-    .itemInputs('6x gtceu:hsse_plate')
-    .circuit(4)
-    .itemOutputs('kubejs:hsse_fin')
-    .duration(100)
-    .EUt(4046);
-  event.recipes.gtceu.assembler('kubejs:hsse_nose_cone')
-    .itemInputs('4x gtceu:hsse_plate')
-    .itemInputs('gtceu:annealed_copper_rod')
-    .itemInputs('gtceu:annealed_copper_nugget')
-    .inputFluids('gtceu:polytetrafluoroethylene 288')
-    .itemOutputs('kubejs:hsse_nose_cone')
-    .duration(100)
-    .EUt(4046);
-  event.recipes.gtceu.assembler('kubejs:hsse_engine')
-    .itemInputs('4x gtceu:hsse_plate')
-    .itemInputs('gtceu:stainless_steel_rotor')
-    .itemInputs('gtceu:iv_quantum_tank')
-    .itemInputs('gtceu:iv_electric_motor')
-    .inputFluids('gtceu:polytetrafluoroethylene 432')
-    .itemOutputs('kubejs:hsse_engine')
-    .duration(100)
-    .EUt(4046);
-  event.recipes.gtceu.bender('kubejs:osmiridium_fin')
-    .itemInputs('6x gtceu:osmiridium_plate')
-    .circuit(4)
-    .itemOutputs('kubejs:osmiridium_fin')
-    .duration(100)
-    .EUt(30720);
-  event.recipes.gtceu.assembler('kubejs:osmiridium_nose_cone')
-    .itemInputs('4x gtceu:osmiridium_plate')
-    .itemInputs('gtceu:annealed_copper_rod')
-    .itemInputs('gtceu:annealed_copper_nugget')
-    .inputFluids('gtceu:styrene_butadiene_rubber 288')
-    .itemOutputs('kubejs:osmiridium_nose_cone')
-    .duration(100)
-    .EUt(30720);
-  event.recipes.gtceu.assembly_line('kubejs:osmiridium_engine')
-    .itemInputs('4x gtceu:osmiridium_plate')
-    .itemInputs('2x gtceu:osmiridium_round')
-    .itemInputs('gtceu:stainless_steel_rotor')
-    .itemInputs('gtceu:niobium_titanium_small_fluid_pipe')
-    .itemInputs('gtceu:luv_quantum_tank')
-    .itemInputs('gtceu:luv_electric_motor')
-    .itemInputs('4x gtceu:hsss_screw')
-    .inputFluids('gtceu:styrene_butadiene_rubber 288')
-    .inputFluids('gtceu:soldering_alloy 432')
-    .itemOutputs('kubejs:osmiridium_engine')
-    .duration(100)
-    .EUt(30720);
-  event.recipes.gtceu.bender('kubejs:americium_fin')
-    .itemInputs('6x gtceu:americium_plate')
-    .circuit(4)
-    .itemOutputs('kubejs:americium_fin')
-    .duration(100)
-    .EUt(122800);
-  event.recipes.gtceu.assembler('kubejs:americium_nose_cone')
-    .itemInputs('4x gtceu:americium_plate')
-    .itemInputs('2x gtceu:americium_round')
-    .itemInputs('gtceu:annealed_copper_rod')
-    .itemInputs('gtceu:annealed_copper_nugget')
-    .itemInputs('4x gtceu:osmiridium_screw')
-    .inputFluids('gtceu:styrene_butadiene_rubber 288')
-    .itemOutputs('kubejs:americium_nose_cone')
-    .duration(100)
-    .EUt(122800);
-  event.recipes.gtceu.assembly_line('kubejs:americium_engine')
-    .itemInputs('4x gtceu:americium_plate')
-    .itemInputs('gtceu:stainless_steel_rotor')
-    .itemInputs('gtceu:vanadium_gallium_single_cable')
-    .itemInputs('gtceu:zpm_quantum_tank')
-    .itemInputs('gtceu:zpm_electric_motor')
-    .itemInputs('4x gtceu:osmiridium_screw')
-    .itemInputs('4x gtceu:osmiridium_round')
-    .inputFluids('gtceu:styrene_butadiene_rubber 288')
-    .inputFluids('gtceu:soldering_alloy 432')
-    .itemOutputs('kubejs:americium_engine')
-    .duration(100)
-    .EUt(122800);
-  event.recipes.gtceu.assembler('ad_astra:launch_pad')
-    .itemInputs('4x gtceu:stainless_steel_plate')
-    .itemInputs('4x gtceu:steel_plate')
-    .itemOutputs('ad_astra:launch_pad')
-    .duration(100)
-    .EUt(480);
   //ManaSteel Stuff
-  event.remove({ id: 'gtceu:wiremill/mill_mana_steel_wire' })
-  event.remove({ id: 'gtceu:extruder/extrude_mana_steel_wire' })
   event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe')
     .itemInputs('botania:manasteel_ingot')
     .itemOutputs('2x gtceu:mana_steel_single_wire')
@@ -208,9 +77,11 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.wiremill('gtceu:manasteel_fine_wire_recipe')
     .itemInputs('gtceu:mana_steel_single_wire')
-    .itemOutputs('4x gtceu:mana_steel_fine_wire')
+    .itemOutputs('4x gtceu:fine_mana_steel_wire')
     .duration(26)
     .EUt(GTValues.VA[GTValues.LV]);
+
+
   event.recipes.gtceu.bender('gtceu:manasteel_plate')
     .itemInputs('botania:manasteel_ingot')
     .itemOutputs('gtceu:mana_steel_plate')
@@ -295,9 +166,14 @@ ServerEvents.recipes(event => {
     .duration(50)
     .EUt(GTValues.VA[GTValues.IV]);
 
-//Source Oil Atm
 
-  
+  event.recipes.gtceu.assembler('ethersteel_smd_diode')
+    .itemInputs(['gtceu:gallium_arsenide_dust', '16x gtceu:fine_galvanized_ethersteel_wire'])
+    .itemOutputs('16x gtceu:smd_diode')
+    .inputFluids('gtceu:polyethylene 576')
+    .duration(400)
+    .EUt(GTValues.VA[GTValues.HV]);
+
 
   //LV EMITTER
   event.remove({ output: 'gtceu:lv_emitter' })
