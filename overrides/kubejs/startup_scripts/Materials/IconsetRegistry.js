@@ -1,10 +1,12 @@
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('mana')
-        .parent('shiny') // optional
+        .parent('shiny')
     event.create('fluid_a')
         .parent('shiny')
     event.create('fluid_b')
-        .parent('shiny') 
+        .parent('shiny')
     event.create('fluid_c')
-        .parent('shiny') 
+        .parent('shiny')
+    event.create('starry')
+    .parent('dull')
 })

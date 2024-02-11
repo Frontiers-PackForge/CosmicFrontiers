@@ -24,11 +24,6 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', e => {
             .generationCondition(ItemGenerationCondition.hasOreProperty)
     }
 
-    createStoneTypeOre('blue_skies:lunar_stone')
-    createStoneTypeOre('blue_skies:umber')
-    createStoneTypeOre('blue_skies:turquoise_stone')
-    createStoneTypeOre('blue_skies:taratite')
-
     createStoneTypeOre('undergarden:depthrock')
     createStoneTypeOre('undergarden:shiverstone')
     createStoneTypeOre('undergarden:sediment')

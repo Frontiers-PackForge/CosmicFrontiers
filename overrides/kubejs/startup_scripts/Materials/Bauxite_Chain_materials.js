@@ -23,7 +23,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('sodium_aluminate_solution')
         .fluid()
         .iconSet(GTMaterialIconSet.getByName('fluid_a'))
-        .color(0x713800)
+        .color(0x136e5e)
     event.create('sodium_aluminate')
         .dust()
         .color(0x19c2a9)

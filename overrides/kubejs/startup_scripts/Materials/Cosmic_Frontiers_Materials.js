@@ -85,12 +85,25 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0x8e46fa).iconSet(GTMaterialIconSet.SHINY)
         .element(GTElements.get('zano_alumate'))
+    event.create('luminite')
+        .color(0x85ffad)
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .ingot()
+        .ore()
+        .dust()
+        .flags(
+            GTMaterialFlags.NO_UNIFICATION,
+            GTMaterialFlags.NO_SMELTING
+        )
+        // .element(GTElements.get('prism_tungstensteel'))
+        .iconSet(GTMaterialIconSet.getByName('starry'))
     event.create('prismatic_tungstensteel')
         .color(0x6f42cf)
         .ingot()
         .element(GTElements.get('prism_tungstensteel'))
         .iconSet(GTMaterialIconSet.SHINY)
         .flags(
+            GTMaterialFlags.NO_UNIFICATION,
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_ROD,
