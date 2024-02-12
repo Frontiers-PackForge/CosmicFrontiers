@@ -2,7 +2,7 @@
 
 # What is Cosmic Frontiers
 Join the discord https://discord.com/invite/fkxPAq9VQp
-## Cosmic Frontiers is a 1.20.1 mod pack centered around Gretech Community Edition Modern and the interactions of many mods with plenty of custom content.
+## Cosmic Frontiers is a 1.20.1 mod pack centered around Gregtech Community Edition Modern and the interactions of many mods with plenty of custom content.
 
 ### Heavily Inspired by 1.12.2 Modpacks such as
 
