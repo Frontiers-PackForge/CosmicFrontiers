@@ -97,11 +97,38 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         )
         // .element(GTElements.get('prism_tungstensteel'))
         .iconSet(GTMaterialIconSet.getByName('starry'))
+    event.create('desh')
+        .color(0x85ffad)
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .ingot()
+        .ore()
+        .dust()
+        .flags(
+            GTMaterialFlags.NO_UNIFICATION,
+            GTMaterialFlags.NO_SMELTING
+        )
+        // .element(GTElements.get('prism_tungstensteel'))
+        .iconSet(GTMaterialIconSet.getByName('starry'))
     event.create('prismatic_tungstensteel')
         .color(0x6f42cf)
         .ingot()
         .element(GTElements.get('prism_tungstensteel'))
         .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.NO_UNIFICATION,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING
+        )
+        event.create('utherium')
+        .color(0xc3434c)
+        .gem()
+        .ore()
+        .iconSet(GTMaterialIconSet.getByName('utherium'))
         .flags(
             GTMaterialFlags.NO_UNIFICATION,
             GTMaterialFlags.GENERATE_PLATE,
