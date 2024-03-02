@@ -5,9 +5,9 @@
     // Type: Integer
     "oxygenBarX": 5,
     // Type: Integer
-    "oxygenBarY": 25,
+    "oxygenBarY": 635,
     // Type: Float
-    "oxygenBarScale": 1.0,
+    "oxygenBarScale": 0.5,
     // Type: Integer
     "energyBarX": 11,
     // Type: Integer

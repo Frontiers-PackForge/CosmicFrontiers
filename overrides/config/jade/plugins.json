@@ -60,14 +60,6 @@
     "hud.status": true,
     "hud.contents": true
   },
-  "pneumaticcraft": {
-    "pneumatic": true,
-    "tube_module": true,
-    "entity": true,
-    "redstone": true,
-    "camo": true,
-    "semiblock": true
-  },
   "gtceu": {
     "recipe_logic_provider": true,
     "workable_provider": true,

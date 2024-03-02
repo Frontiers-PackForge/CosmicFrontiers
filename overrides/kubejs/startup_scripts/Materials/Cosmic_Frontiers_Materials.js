@@ -130,7 +130,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ore()
         .iconSet(GTMaterialIconSet.getByName('utherium'))
         .flags(
-            GTMaterialFlags.NO_UNIFICATION,
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_ROD,

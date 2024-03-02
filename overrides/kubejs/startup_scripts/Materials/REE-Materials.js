@@ -31,6 +31,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('xenotime_slag')
         .fluid()
         .color(0x149f2).iconSet(GTMaterialIconSet.DULL)
+    event.create('undergarden_virulent_cloggrum_mixture')
+        .fluid()
+        .color(0x4f462b).iconSet(GTMaterialIconSet.DULL)
 
 
 })

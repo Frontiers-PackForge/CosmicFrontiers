@@ -8,7 +8,7 @@ GTCEuServerEvents.oreVeins(event => {
             .buildLayerPattern(pattern => pattern
                 .layer(l => l.weight(3).block(() => Block.getBlock('ad_astra:moon_ice_shard_ore')).size(2, 4))
                 .layer(l => l.weight(2).block(() => Block.getBlock('ad_astra:moon_desh_ore')).size(1, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.Silver).size(1, 3))
+                .layer(l => l.weight(1).mat(GTMaterials.get('luminite')).size(1, 3))
             )
         )
         .surfaceIndicatorGenerator(indicator => indicator

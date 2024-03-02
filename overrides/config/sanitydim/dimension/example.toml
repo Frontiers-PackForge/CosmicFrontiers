@@ -1,0 +1,8 @@
+# Dimensions to apply this config to, e.g. minecraft:overworld, minecraft:the_nether, minecraft:the_end
+applied_dimensions = [ "minecraft:example_dimension1", "someothermodid:example_dimension2" ]
+
+# Anything that is not present in this config will default to whatever is set in default.toml
+[sanity]
+	[sanity.passive]
+		# Now that's what I call hardcore
+		monster = -100.0

@@ -16,6 +16,7 @@
     "uploadToVBODirectly": true,
     "showTooltip": true,
     "itemCacheDuration": 5000,
-    "entityCacheBuildThreads": 1
+    "entityCacheBuildThreads": 1,
+    "connectedShapeBlocksLimit": 128
   }
 }

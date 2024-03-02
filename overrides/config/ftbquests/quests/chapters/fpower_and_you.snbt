@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "fpower_and_you"
+	group: "49DCE46B3EB22AEA"
+	icon: "gtceu:max_battery"
+	id: "7B9F27B55F8F19E2"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "&fPower and You"
+}
