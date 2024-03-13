@@ -9,9 +9,49 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV]);
 
 
-
-
-
+    event.recipes.gtceu.chemical_dehydrator()
+        .outputFluids('gtceu:xenotime_phosphates_concentrate 1000')
+        .inputFluids('gtceu:xenotime_phosphates_slag 1000')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.chemical_reactor()
+        .outputFluids('gtceu:mixed_lre_leachate 1000')
+        .inputFluids('gtceu:xenotime_phosphates_concentrate 1000')
+        .itemInputs('4x gtceu:sodium_hydroxide_dust') //can also add recipe for the fluid NaOH
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.centrifuge()
+        .outputFluids('gtceu:leached_lre_liquor 200')
+        .outputItems('8x gtceu:leached_lre_residue')
+        .inputFluids('gtceu:mixed_lre_leachate 1000')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.chemical_reactor()
+        .outputFluids('gtceu:leached_lre_liqour 1000')
+        .inputFluids('gtceu:mixed_lre_leachate 800')
+        .inputFluids('gtceu:nitric_acid 200')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.chemical_reactor()
+        .outputFluids('gtceu:wet_lre_precipitate 1000')
+        // .outputFluids('gtceu:waste_water') - idk if we wanna add that
+        .inputFluids('gtceu:leached_lre_liqour 700')
+        .inputFluids('gtceu:oxalic_acid 300')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.chemical_dehydrator()
+        .outputItems('5x gtceu:dried_mixed_lre_precipitate')
+        .inputFluids('gtceu:wet_lre_precipitate 1000')        
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.centrifuge()
+        .itemInputs('16x gtceu:dried_mixed_lre_precipitate')
+        .itemOutputs('gtceu:lanthanum_dust')
+        .itemOutputs('gtceu:cerium_dust')
+        .itemOutputs('gtceu:praseodymium_dust')
+        .itemOutputs('gtceu:neodymium_dust')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.HV])        
 
 
 })

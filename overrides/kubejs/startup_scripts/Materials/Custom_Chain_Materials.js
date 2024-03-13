@@ -49,4 +49,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('source_waste_water')
         .fluid()
         .color(0x485b95).iconSet(GTMaterialIconSet.DULL)
+//LRE line
+    event.create('oxalic_acid')
+        .fluid()        
 })
