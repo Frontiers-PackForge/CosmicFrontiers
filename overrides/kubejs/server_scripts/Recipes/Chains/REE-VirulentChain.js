@@ -1,14 +1,15 @@
 //Removing Byproducts from particular ore steps
 ServerEvents.recipes(event => {
-    
-    // event.recipes.gtceu.chemical_dehydrator('virulent_mixture_sep')
-    //     .itemOutputs('16x gtceu:crushed_nickel_ore')
-    //     .inputFluids('gtceu:nitric_acid 16000')
-    //     .inputFluids('undergarden:virulent_mix_source 4000')
-    //     .duration(200)
-    //     .EUt(GTValues.VA[GTValues.HV]);
-
-
+// Oxalic Acid
+    event.recipes.gtceu.chemical_reactor('oxalic_acid')
+        .inputFluids("gtceu:ethylene_bucket 1000")
+        .inputFluids("gtceu:oxygen_bucket 4000")
+        .itemInputs("4x gtceu:potassium_dichromate_dust")
+        .outputFluids("gtceu:oxalic_acid 1000")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+        
+// Xenotime extraction tier 1
     event.recipes.gtceu.chemical_dehydrator("xenotime_concentration")
         .inputFluids('gtceu:xenotime_phosphates_slag 1000')
         .outputFluids('gtceu:xenotime_phosphates_concentrate 1000')
@@ -18,7 +19,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:xenotime_phosphates_concentrate 1000')
         .itemInputs('4x gtceu:sodium_hydroxide_dust') //can also add recipe for the fluid NaOH
         .outputFluids('gtceu:mixed_lre_leachate 1000')
-        .duration(200)
+        .duration(400)
         .EUt(GTValues.VA[GTValues.HV])
     event.recipes.gtceu.centrifuge("xenotime_leachate_separation_1")
         .inputFluids('gtceu:mixed_lre_leachate 1000')
@@ -41,15 +42,15 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
     event.recipes.gtceu.chemical_dehydrator("lre_precipitate_drying_1")
         .inputFluids('gtceu:wet_lre_precipitate 1000')        
-        .itemOutputs('5x gtceu:dried_mixed_lre_precipitate_dust')
+        .itemOutputs('4x gtceu:dried_mixed_lre_precipitate_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
     event.recipes.gtceu.centrifuge("mixed_lre_dust_spinny_1")
         .itemInputs('16x gtceu:dried_mixed_lre_precipitate_dust')
-        .itemOutputs('gtceu:lanthanum_dust')
-        .itemOutputs('gtceu:cerium_dust')
-        .itemOutputs('gtceu:praseodymium_dust')
-        .itemOutputs('gtceu:neodymium_dust')
+        .chancedOutput('gtceu:lanthanum_dust', 1000, 500)
+        .chancedOutput('gtceu:cerium_dust', 1000, 500)
+        .chancedOutput('gtceu:praseodymium_dust', 1000, 500)
+        .chancedOutput('2x gtceu:neodymium_dust', 6000, 500)
         .duration(600)
         .EUt(GTValues.VA[GTValues.HV])        
 
