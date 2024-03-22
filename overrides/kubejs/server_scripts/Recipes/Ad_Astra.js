@@ -173,7 +173,18 @@ ServerEvents.recipes(event => {
     D: 'minecraft:redstone_lamp',
     M: 'gtceu:computer_monitor_cover',
   })
-  
+  event.shaped('ad_astra:space_suit', [
+    'DAB',
+    'AHA',
+    'CMC'
+  ], {
+    A: 'gtceu:hv_robot_arm',
+    B: 'gtceu:stainless_steel_screwdriver',
+    C: '#gtceu:circuits/iv',
+    H: 'gtceu:hv_machine_hull',
+    D: 'minecraft:redstone_lamp',
+    M: 'gtceu:computer_monitor_cover',
+  })
   event.shaped('ad_astra:wheel', [
     'HBS',
     'BCB',
