@@ -6,7 +6,7 @@
 	group: "533DAA16C8D9D30C"
 	icon: "gtceu:titanium_ingot"
 	id: "124E2C5B9FAD4967"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -77,26 +77,8 @@
 					type: "item"
 				}
 			]
-			x: 14.0d
+			x: 15.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["22693418B45740CB"]
-			description: [
-				"This actually has nothing to do with gloompers, but the Virulent Mixture found deep within the undergarden. Toxic and Hot Slag containing various rare earths."
-				""
-				"You'll only be able to extract the light REE's for now, but with some EV Circuits you'll be able to extract more."
-			]
-			id: "705DE606D5A96A72"
-			shape: "hexagon"
-			subtitle: "Gloomper Chemistry - REE Extraction"
-			tasks: [{
-				id: "27DA4A0A3B63DB56"
-				item: "undergarden:virulent_mix_bucket"
-				type: "item"
-			}]
-			x: 14.0d
-			y: 2.5d
 		}
 		{
 			dependencies: ["1E72D62913EEB4EE"]
@@ -548,7 +530,7 @@
 				item: "gtceu:raw_cooperite"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 15.0d
 			y: -1.5d
 		}
 		{
@@ -562,12 +544,13 @@
 			shape: "hexagon"
 			subtitle: "Gloomper Chemistry - REE Extraction"
 			tasks: [{
-				id: "4557375577AC6EFF"
-				item: "undergarden:virulent_mix_bucket"
+				id: "3692959D963C7794"
+				item: "gtceu:undergarden_virulent_cloggrum_mixture_bucket"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 0.0d
+			title: "Gloomper Chemistry"
+			x: 15.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1E72D62913EEB4EE"]
@@ -730,16 +713,24 @@
 				"19B3D686A4E2FFC9"
 				"6D0B9D44B257407B"
 				"1B7405FD959C65B3"
+				"26E530EE80A932EB"
 			]
 			id: "7C8367D922103E19"
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "To EV and Beyond!"
-			tasks: [{
-				id: "7F5E3BB7347B9FBF"
-				item: "gtceu:ev_machine_hull"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7F5E3BB7347B9FBF"
+					item: "gtceu:ev_machine_hull"
+					type: "item"
+				}
+				{
+					id: "067AD7FA89B4C4FA"
+					item: "gtceu:neodymium_ingot"
+					type: "item"
+				}
+			]
 			x: 5.5d
 			y: 0.0d
 		}
@@ -807,7 +798,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "5350D6DE87FB4249"
-				item: "gtceu:prismatic_tungstensteel_ingot"
+				item: "gtceu:luminescent_utherium_gem"
 				type: "item"
 			}]
 			x: 7.5d
@@ -1247,30 +1238,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"0637462EF72C1E66"
-				"265232E548876F66"
-			]
-			icon: "gtceu:hydrofluoric_acid_bucket"
-			id: "390E4FB19338D800"
-			tasks: [
-				{
-					id: "75BF063BB83153AF"
-					item: "gtceu:hydrofluoric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "38BFB9846E66A756"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 12.0d
-			y: 1.5d
-		}
-		{
 			dependencies: ["7C280469C5926E0A"]
 			id: "454F8A2DEB069C26"
 			tasks: [{
@@ -1278,7 +1245,7 @@
 				item: "gtceu:cooperite_dust"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.5d
 			y: -1.5d
 		}
 		{
@@ -1289,7 +1256,7 @@
 				item: "gtceu:roasted_cooperite_dust"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.0d
 			y: -1.5d
 		}
 		{
@@ -1300,7 +1267,7 @@
 				item: "gtceu:nickel_depleted_cooperite_dust"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.0d
 			y: -3.0d
 		}
 		{
@@ -1321,7 +1288,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 11.0d
+			x: 12.0d
 			y: -4.5d
 		}
 		{
@@ -1342,7 +1309,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 12.5d
+			x: 13.5d
 			y: -4.5d
 		}
 		{
@@ -1353,7 +1320,7 @@
 				item: "gtceu:ammonium_hexachloroplatinate_dust"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.0d
 			y: -6.0d
 		}
 		{
@@ -1364,7 +1331,7 @@
 				item: "gtceu:platinum_dust"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.0d
 			y: -7.5d
 		}
 		{
@@ -1378,7 +1345,7 @@
 				id: "7C15A93D65EA6CE4"
 				type: "checkmark"
 			}]
-			x: 9.5d
+			x: 10.5d
 			y: -7.5d
 		}
 		{
@@ -1399,7 +1366,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 9.5d
+			x: 10.5d
 			y: -1.5d
 		}
 		{
@@ -1410,7 +1377,7 @@
 				item: "gtceu:nickel_dust"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 10.5d
 			y: -3.0d
 		}
 		{
@@ -1421,7 +1388,7 @@
 				item: "gtceu:ammonium_hexachloropalladate_dust"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.5d
 			y: -6.0d
 		}
 		{
@@ -1432,7 +1399,7 @@
 				item: "gtceu:tetraammine_palladium_chloride_dust"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.5d
 			y: -7.5d
 		}
 		{
@@ -1443,7 +1410,7 @@
 				item: "gtceu:palladium_dust"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.5d
 			y: -9.0d
 		}
 		{
@@ -1456,7 +1423,7 @@
 				item: "gtceu:platinum_group_sludge_dust"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 15.0d
 			y: -4.5d
 		}
 		{
@@ -1693,7 +1660,7 @@
 				}
 				type: "item"
 			}]
-			x: 9.5d
+			x: 10.5d
 			y: -6.0d
 		}
 		{
@@ -1707,7 +1674,7 @@
 				title: "Visit the Moon!"
 				type: "dimension"
 			}]
-			x: 9.5d
+			x: 10.5d
 			y: -4.0d
 		}
 		{
@@ -1732,222 +1699,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["705DE606D5A96A72"]
-			icon: "gtceu:hydrofluoric_acid_bucket"
-			id: "265232E548876F66"
-			tasks: [
-				{
-					id: "4CBE6AF27E5A388F"
-					item: "gtceu:hydrofluoric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "72C0C27A13A951FA"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 13.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["705DE606D5A96A72"]
-			icon: "gtceu:hydrofluoric_acid_bucket"
-			id: "0637462EF72C1E66"
-			tasks: [
-				{
-					id: "6B15B22B5BFB5EE4"
-					item: "gtceu:hydrofluoric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "0DAD65E5036BBD2E"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 13.0d
-			y: 3.5d
-		}
-		{
-			dependencies: [
-				"0637462EF72C1E66"
-				"265232E548876F66"
-			]
-			icon: "gtceu:hydrofluoric_acid_bucket"
-			id: "7BDBE6FBAB85541A"
-			tasks: [
-				{
-					id: "1AF59C9FA3032C9C"
-					item: "gtceu:hydrofluoric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "7C501252985C6317"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 12.0d
-			y: 2.5d
-		}
-		{
-			dependencies: [
-				"0637462EF72C1E66"
-				"265232E548876F66"
-			]
-			icon: "gtceu:hydrofluoric_acid_bucket"
-			id: "196769BEB5DB953B"
-			tasks: [
-				{
-					id: "2BA9391508955CA7"
-					item: "gtceu:hydrofluoric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "283786A210430C48"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 12.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["390E4FB19338D800"]
-			icon: "gtceu:hydrofluoric_acid_bucket"
-			id: "0FB508B8EA533F8A"
-			tasks: [
-				{
-					id: "5EBC7D91CE2A26E5"
-					item: "gtceu:hydrofluoric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "4A6DE1DB20149862"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 10.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["0FB508B8EA533F8A"]
-			icon: "gtceu:hydrofluoric_acid_bucket"
-			id: "7A1F8D5B15D6D390"
-			tasks: [
-				{
-					id: "61FEA786CA9A44AF"
-					item: "gtceu:hydrofluoric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "38506A0063F958E5"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 9.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7BDBE6FBAB85541A"]
-			icon: "gtceu:hydrofluoric_acid_bucket"
-			id: "178A1B0A285C2303"
-			tasks: [
-				{
-					id: "4125A9AF028B3350"
-					item: "gtceu:hydrofluoric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "0613696AFA50B17E"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 10.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["178A1B0A285C2303"]
-			icon: "gtceu:hydrofluoric_acid_bucket"
-			id: "2170F3E55B9B8B0B"
-			tasks: [
-				{
-					id: "668754FF2D56BBA9"
-					item: "gtceu:hydrofluoric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "20B0DFEE6DDC6809"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 9.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["196769BEB5DB953B"]
-			icon: "gtceu:hydrofluoric_acid_bucket"
-			id: "3D2618FC4F2C0F0E"
-			tasks: [
-				{
-					id: "0F091A7C2D9CEEB0"
-					item: "gtceu:hydrofluoric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "253B290EAFA37663"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 10.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["3D2618FC4F2C0F0E"]
-			icon: "gtceu:hydrofluoric_acid_bucket"
-			id: "01DC4C9D2EF8F525"
-			tasks: [
-				{
-					id: "1F4E509531A874ED"
-					item: "gtceu:hydrofluoric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "3C85439ABCF5553F"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 9.0d
-			y: 3.5d
-		}
-		{
 			icon: "gtceu:hydrofluoric_acid_bucket"
 			id: "6904FB06349492BA"
 			tasks: [
@@ -1964,8 +1715,212 @@
 					type: "checkmark"
 				}
 			]
-			x: 16.5d
+			x: 17.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["78F9D5E55175D63B"]
+			id: "26E530EE80A932EB"
+			shape: "hexagon"
+			tasks: [{
+				id: "2FC08AD3B7CD9801"
+				item: "gtceu:neodymium_dust"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["639BCEB8D8598E15"]
+			id: "78F9D5E55175D63B"
+			tasks: [{
+				count: 64L
+				id: "4F8426F45A4EB507"
+				item: { Count: 64b, id: "gtceu:dried_mixed_lre_precipitate_dust" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["38032C6144C06B2B"]
+			id: "483EDAD71360C4C4"
+			tasks: [{
+				count: 64L
+				id: "63EE6EB3A825DC57"
+				item: { Count: 64b, id: "gtceu:leached_lre_residue_dust" }
+				type: "item"
+			}]
+			x: 11.75d
+			y: 3.5d
+		}
+		{
+			dependencies: ["78F9D5E55175D63B"]
+			id: "1D45DD161ABA718C"
+			shape: "rsquare"
+			tasks: [{
+				count: 64L
+				id: "4093068F10DD02A0"
+				item: { Count: 64b, id: "gtceu:praseodymium_dust" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["78F9D5E55175D63B"]
+			id: "1C7C2E342E8A9654"
+			shape: "rsquare"
+			tasks: [{
+				count: 64L
+				id: "4F52C03F72E2345C"
+				item: { Count: 64b, id: "gtceu:cerium_dust" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["78F9D5E55175D63B"]
+			id: "050F8CA5E095DFD3"
+			shape: "rsquare"
+			tasks: [{
+				count: 64L
+				id: "14EA11E226A744BE"
+				item: { Count: 64b, id: "gtceu:lanthanum_dust" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3302CF516C57AC40"]
+			icon: "gtceu:xenotime_slag_bucket"
+			id: "638AE7406935FF84"
+			tasks: [
+				{
+					id: "7224C47FF1D9722C"
+					item: "gtceu:xenotime_slag_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "621781C7291DFCC7"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["638AE7406935FF84"]
+			icon: "gtceu:xenotime_concentrate_bucket"
+			id: "3EF7D47E41C41475"
+			tasks: [
+				{
+					id: "44324CBABBEF910B"
+					item: "gtceu:xenotime_concentrate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "507E8E4571C62F3F"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3EF7D47E41C41475"]
+			icon: "gtceu:lre_slag_bucket"
+			id: "38032C6144C06B2B"
+			tasks: [
+				{
+					id: "11E3656D15E5A039"
+					item: "gtceu:lre_slag_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "0A6ACB8FF03F1B99"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["38032C6144C06B2B"]
+			icon: "gtceu:mixed_lre_leachate_bucket"
+			id: "3B6079B88AB61576"
+			tasks: [
+				{
+					id: "055D50D90E9D917B"
+					item: "gtceu:mixed_lre_leachate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "03933F1576500CAA"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 11.75d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"483EDAD71360C4C4"
+				"3B6079B88AB61576"
+			]
+			icon: "gtceu:leached_lre_liquor_bucket"
+			id: "5BB7CCEA34AF431E"
+			tasks: [
+				{
+					id: "761E4B5F309CB291"
+					item: "gtceu:mixed_lre_leachate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "08D6B22853FEEB39"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5BB7CCEA34AF431E"]
+			icon: "gtceu:hydrofluoric_acid_bucket"
+			id: "639BCEB8D8598E15"
+			tasks: [
+				{
+					id: "30F378ECF9451C43"
+					item: "gtceu:wet_lre_precipitate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "3C6BE5D61A30073C"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 9.5d
+			y: 3.0d
 		}
 	]
 	title: "Gloomper Chemistry [HV]"

@@ -11,6 +11,7 @@
 		id: "5837A875D09D3E35"
 		shape: "hexagon"
 		size: 2.5d
+		subtitle: "The stars cry of isolation"
 		tasks: [{
 			id: "1B22C23AB26126C6"
 			item: "gtceu:ev_machine_hull"
