@@ -63,6 +63,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+    event.create('insoluble_plat_group_residue')
+        .dust()
+        .element(GTElements.get('insoluble_plat_group_residue'))
+        .color(0xE9FFA7).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
 
 })
 

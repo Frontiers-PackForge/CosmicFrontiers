@@ -21,7 +21,7 @@
 	#Determines that menu elements will align left if the menu's world preview is active, if true, this overrides 'Align menu elements left'
 	"Align menu elements left with world preview" = false
 	#Determines the default Aether menu style to switch to with the menu theme button
-	"Default Aether menu style" = "aether:the_aether_left"
+	"Default Aether menu style" = "cumulus_menus:minecraft"
 	#Determines the default Minecraft menu style to switch to with the menu theme button
 	"Default Minecraft menu style" = "cumulus_menus:minecraft"
 	#Adds random trivia and tips to the bottom of loading screens
@@ -48,6 +48,8 @@
 	"Layout x-coordinate in pause menu" = -116
 	#The y-coordinate of the perks button layout when in the pause menu
 	"Layout y-coordinate in pause menu" = 0
+	#Enables the overlay at the top of the screen for the Hammer of Kingbdogz' cooldown
+	"Enables Hammer of Kingbdogz' cooldown overlay" = true
 
 [Audio]
 	#Sets the minimum delay for the Aether's music manager to use if needing to reset the song delay outside the Aether
@@ -55,13 +57,13 @@
 	#Sets the maximum delay for the Aether's music manager to use if needing to reset the song delay outside the Aether
 	"Set backup maximum music delay" = 2
 	#Disables the Aether's internal music manager, if true, this overrides all other audio configs
-	"Disables Aether music manager" = false
+	"Disables Aether music manager" = true
 	#Disables the Aether's menu music in case another mod implements its own, only works if 'Disables Aether music manager' is false
-	"Disables Aether menu music" = false
+	"Disables Aether menu music" = true
 	#Disables the menu music on the vanilla world preview menu, only works if 'Disables Aether music manager' is false
-	"Disables vanilla world preview menu music" = false
+	"Disables vanilla world preview menu music" = true
 	#Disables the menu music on the Aether world preview menu, only works if 'Disables Aether music manager' is false
-	"Disables Aether world preview menu music" = false
+	"Disables Aether world preview menu music" = true
 
 [Miscellaneous]
 	#Disables the Cumulus menu selection screen button on launch

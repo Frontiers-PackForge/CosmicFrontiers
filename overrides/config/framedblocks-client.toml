@@ -21,6 +21,24 @@
 	#If true, all possible recipes of the Framing Saw will be added to EMI, else only the permutations using the Framed Cube will be added
 	#This setting only has an effect when EMI is installed
 	showAllRecipePermutationsInEmi = true
+	#Configures the verbosity of messages displayed when a block cannot be used as a camo
+	#If NONE, no message will be shown
+	#If DEFAULT, a message will be shown when the block has a BlockEntity and isn't explicitly allowed or the block is explicitly disallowed
+	#If DETAILED, a message will be shown as above or when a block is non-solid and not explicitly allowed
+	#Allowed Values: NONE, DEFAULT, DETAILED
+	camoMessageVerbosity = "DEFAULT"
+	#Configures in which cases a framed block without a camo gets a solid model
+	#If NEVER, the default frame texture will always be used
+	#If DEFAULT, certain blocks will use the default frame texture with a solid background texture
+	#If ALWAYS, all blocks will use the default frame texture with a solid background texture
+	#Allowed Values: NEVER, DEFAULT, ALWAYS
+	solidFrameMode = "DEFAULT"
+	#If enabled, non-wooden buttons and pressure plates will show a material overlay when a camo is applied
+	#Requires resource reload to take effect
+	showButtonPlateTypeOverlay = true
+	#If enabled, special cube blocks will show a type overlay when a camo is applied
+	#Requires resource reload to take effect
+	showSpecialCubeTypeOverlay = true
 
 [overlay]
 	#If set to HIDDEN, the State Lock overlay will be completely hidden

@@ -3,6 +3,22 @@
 #Range: 0 ~ 4
 Difficulty = 2
 
+["Temperature Effects"]
+
+	["Temperature Effects".Hot]
+		#When set to true, the player's view distance will decrease when they are too hot
+		"Heatstroke Fog" = true
+
+	["Temperature Effects".Cold]
+		#When set to true, some of the player's hearts will freeze when they are too cold, preventing regeneration
+		"Freezing Hearts" = true
+		#When set to true, the player's attack knockback will be reduced when they are too cold
+		"Cold Knockback Reduction" = true
+		#When set to true, the player's movement speed will be reduced when they are too cold
+		"Cold Slowness" = true
+		#When set to true, the player's mining speed will be reduced when they are too cold
+		"Cold Mining Fatigue" = true
+
 ["Details about how the player is affected by temperature"]
 	#Defines the minimum habitable temperature
 	#Range: -Infinity ~ Infinity
@@ -31,26 +47,10 @@ Difficulty = 2
 	#When set to true, players cannot sleep if they are cold or hot enough to die
 	"Prevent Sleep When in Danger" = true
 
-["Temperature Effects"]
-
-	["Temperature Effects".Hot]
-		#When set to true, the player's view distance will decrease when they are too hot
-		"Heatstroke Fog" = true
-
-	["Temperature Effects".Cold]
-		#When set to true, some of the player's hearts will freeze when they are too cold, preventing regeneration
-		"Freezing Hearts" = true
-		#When set to true, the player's attack knockback will be reduced when they are too cold
-		"Cold Knockback Reduction" = true
-		#When set to true, the player's movement speed will be reduced when they are too cold
-		"Cold Slowness" = true
-		#When set to true, the player's mining speed will be reduced when they are too cold
-		"Cold Mining Fatigue" = true
-
 ["Grace Period Details"]
 	#The number of ticks after the player spawns during which they are immune to temperature effects
 	#Range: > 0
-	"Grace Period Length" = 18000
+	"Grace Period Length" = 6000
 	#Enables the grace period
 	"Grace Period Enabled" = true
 

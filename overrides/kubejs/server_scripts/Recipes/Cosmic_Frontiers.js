@@ -33,10 +33,16 @@ ServerEvents.tags('item', event => {
 // yeet('gtceu:lv_steam_turbine')
 // yeet('gtceu:steam_large_turbine')
 // yeet('gtceu:plasma_large_turbine')
-// yeet('gtceu:turbine_rotor') 
+yeet('vintagedelight:ghost_charcoal') 
 
 ServerEvents.recipes(event => {
-       // event.remove({ output: 'gtceu:firebrick' })
+       event.remove({ output: 'architects_palette:charcoal_block' })
+       event.shaped('architects_palette:charcoal_block', [
+              'CC',
+              'CC',
+       ], {
+              C: 'minecraft:charcoal'
+       })
        event.recipes.gtceu.nether_catalyzer('cosmiccore:blackstone_pustule_growth')
               .itemInputs('biomesoplenty:blackstone_bulb')
               .itemOutputs('cosmiccore:blackstone_pustule')
@@ -145,15 +151,15 @@ ServerEvents.recipes(event => {
 
 
 
-//TODO - Mechanical Flower Recipes
-       event.recipes.botania.runic_altar('gtceu:mana_simulator', ['botania:blacker_lotus', '#gtceu:circuits/mv', 'gtceu:mana_steel_plate','gtceu:mana_steel_plate','gtceu:mana_steel_plate','gtceu:mana_steel_plate','gtceu:mana_steel_octal_wire','gtceu:mana_steel_octal_wire'], 250000)
-       event.recipes.botania.runic_altar('kubejs:mechanical_thermalily', ['botania:thermalily','botania:blacker_lotus','#gtceu:circuits/mv','botania:rune_mana','gtceu:mana_steel_plate','gtceu:mana_steel_plate','#gtceu:circuits/mv' ], 50000)
-       event.recipes.botania.runic_altar('kubejs:mechanical_munchdew', ['botania:munchdew','botania:blacker_lotus','#gtceu:circuits/mv','botania:rune_mana','gtceu:mana_steel_plate','gtceu:mana_steel_plate','#gtceu:circuits/mv' ], 50000)
-       event.recipes.botania.runic_altar('kubejs:mechanical_kekimurus', ['botania:kekimurus','botania:blacker_lotus','#gtceu:circuits/mv','botania:rune_mana','gtceu:mana_steel_plate','gtceu:mana_steel_plate','#gtceu:circuits/mv' ], 50000)
-       event.recipes.botania.runic_altar('kubejs:mechanical_entropinnyum', ['botania:entropinnyum','botania:blacker_lotus','#gtceu:circuits/mv','botania:rune_mana','gtceu:mana_steel_plate','gtceu:mana_steel_plate','#gtceu:circuits/mv' ], 50000)
-       event.recipes.botania.runic_altar('kubejs:mechanical_rosa_arcana', ['botania:rosa_arcana','botania:blacker_lotus','#gtceu:circuits/mv','botania:rune_mana','gtceu:mana_steel_plate','gtceu:mana_steel_plate','#gtceu:circuits/mv' ], 50000)
-       event.recipes.botania.runic_altar('kubejs:mechanical_rafflowsia', ['botania:rafflowsia','botania:blacker_lotus','#gtceu:circuits/mv','botania:rune_mana','gtceu:mana_steel_plate','gtceu:mana_steel_plate','#gtceu:circuits/mv' ], 50000)
-       
+       //TODO - Mechanical Flower Recipes
+       event.recipes.botania.runic_altar('gtceu:mana_simulator', ['botania:blacker_lotus', '#gtceu:circuits/mv', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_octal_wire', 'gtceu:mana_steel_octal_wire'], 250000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_thermalily', ['botania:thermalily', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', '#gtceu:circuits/mv'], 50000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_munchdew', ['botania:munchdew', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', '#gtceu:circuits/mv'], 50000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_kekimurus', ['botania:kekimurus', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', '#gtceu:circuits/mv'], 50000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_entropinnyum', ['botania:entropinnyum', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', '#gtceu:circuits/mv'], 50000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_rosa_arcana', ['botania:rosa_arcana', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', '#gtceu:circuits/mv'], 50000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_rafflowsia', ['botania:rafflowsia', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', '#gtceu:circuits/mv'], 50000)
+
 
 
 

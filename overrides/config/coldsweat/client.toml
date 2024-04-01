@@ -10,13 +10,6 @@
 	#The position of the world temperature gauge relative to default
 	"World Temperature UI Offset" = [0, 0]
 
-["Temperature Preferences"]
-	#Sets all temperatures to be displayed in Celsius
-	Celsius = true
-	#Visually offsets the world temperature to better match the user's definition of "hot" and "cold"
-	#Range: > 0
-	"Temperature Offset" = 0
-
 [Accessibility]
 	#Enables visual distortion effects when the player is too hot or cold
 	"Distortion Effects" = true
@@ -32,4 +25,11 @@
 	"Enable Creative Mode Warning" = false
 	#Displays areas that the Hearth is affecting when the F3 debug menu is open
 	"Hearth Debug" = true
+
+["Temperature Preferences"]
+	#Sets all temperatures to be displayed in Celsius
+	Celsius = false
+	#Visually offsets the world temperature to better match the user's definition of "hot" and "cold"
+	#Range: > 0
+	"Temperature Offset" = 0
 

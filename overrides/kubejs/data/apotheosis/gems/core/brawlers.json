@@ -16,12 +16,12 @@
 			"attribute": "minecraft:generic.attack_speed",
 			"operation": "MULTIPLY_BASE",
 			"values": {
-				"common": 0.2,
-				"uncommon": 0.4,
-				"rare": 0.6,
-				"epic": 0.8,
-				"mythic": 0.12,
-				"ancient": 0.20
+				"common": 0.1,
+				"uncommon": 0.2,
+				"rare": 0.3,
+				"epic": 0.4,
+				"mythic": 0.5,
+				"ancient": 0.7
 			}
 		},
 		{

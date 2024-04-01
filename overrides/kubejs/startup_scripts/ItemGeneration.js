@@ -1,7 +1,7 @@
 StartupEvents.registry('item', e => {
-    e.create('stainless_steel_nose_cone')
-    e.create('stainless_steel_fin')
-    e.create('stainless_steel_engine')
+
+    e.create('t1_rocket_plating')
+    e.create('welded_rocket_plating')
     e.create('hsse_nose_cone')
     e.create('hsse_fin')
     e.create('hsse_engine')

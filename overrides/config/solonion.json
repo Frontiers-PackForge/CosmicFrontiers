@@ -16,52 +16,38 @@
       }
     },
     {
-      "threshold": 5,
-      "benefit": {
-        "effect": "minecraft:strength",
-        "value": 0
-      }
-    },
-    {
-      "threshold": 7,
-      "benefit": {
-        "effect": "minecraft:regeneration",
-        "value": 0
-      }
-    },
-    {
       "threshold": 10,
       "benefit": {
         "effect": "cold_sweat:insulated",
-        "value": 0
+        "value": 1
       }
     },
     {
-      "threshold": 13,
-      "benefit": {
-        "attribute": "minecraft:generic.armor_toughness",
-        "value": 2
-      }
-    },
-    {
-      "threshold": 18,
+      "threshold": 20,
       "benefit": {
         "effect": "cold_sweat:insulated",
-        "value": 2
+        "value": 3
       }
     },
     {
-      "threshold": 25,
+      "threshold": 30,
       "benefit": {
-        "attribute": "minecraft:generic.max_health",
-        "value": 4
+        "effect": "cold_sweat:insulated",
+        "value": 5
       }
     },
     {
-      "threshold": 31,
+      "threshold": 40,
       "benefit": {
         "attribute": "minecraft:generic.max_health",
-        "value": 6
+        "value": 7
+      }
+    },
+    {
+      "threshold": 50,
+      "benefit": {
+        "effect": "cold_sweat:insulated",
+        "value": 9
       }
     }
   ],
@@ -71,18 +57,5 @@
   "complexityBenefitEffectModifier": 0.2,
   "complexityNeutralEffectModifier": 0,
   "complexityHarmEffectModifier": -0.2,
-  "foodDiversity": [
-    {
-      "ingredient": "{id:\"item\",item:\"minecraft:golden_carrot\"}",
-      "diversity": 2
-    },
-    {
-      "ingredient": "{id:\"item\",item:\"minecraft:golden_apple\"}",
-      "diversity": 2
-    },
-    {
-      "ingredient": "{id:\"item\",item:\"minecraft:enchanted_golden_apple\"}",
-      "diversity": 5
-    }
-  ]
+  "foodDiversity": []
 }

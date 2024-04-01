@@ -12,7 +12,7 @@
 		#Set Fullscreen mode
 		#Borderless let you change between screens more faster and move your mouse across monitors
 		#Allowed Values: WINDOWED, BORDERLESS, FULLSCREEN
-		fullscreen = "WINDOWED"
+		fullscreen = "FULLSCREEN"
 		#Configure FPS Display gravity
 		#Places counter on specified corner of your screen
 		#Allowed Values: LEFT, CENTER, RIGHT
@@ -45,37 +45,37 @@
 				#Toggles distance culling for entities
 				#Maybe you use another mod for that :(
 				enable = true
-				#Configure horizontal max distance before cull entities
-				#Value is squared, default was 64^2 (or 64x64)
-				#Range: > 0
-				cullingDistanceX = 4096
 				#List of all Entities to be ignored by distance culling
 				#Uses ResourceLocation to identify it
 				#Example 1: "minecraft:bat" - Ignores bats only
 				#Example 2: "alexsmobs:*" - ignores all entities for alexmobs mod
 				whitelist = []
+				#Configure horizontal max distance before cull entities
+				#Value is squared, default was 64^2 (or 64x64)
+				#Range: > 0
+				cullingMaxDistanceX = 4096
 				#Configure vertical max distance before cull entities
 				#Value is raw
 				#Range: 0 ~ 512
-				cullingDistanceY = 32
+				cullingMaxDistanceY = 32
 
 			[embeddiumplus.performance.distanceCulling.tileEntities]
 				#Toggles distance culling for Block Entities
 				#Maybe you use another mod for that :(
 				enable = true
-				#Configure horizontal max distance before cull Block entities
-				#Value is squared, default was 64^2 (or 64x64)
-				#Range: > 0
-				cullingDistanceX = 4096
 				#List of all Block Entities to be ignored by distance culling
 				#Uses ResourceLocation to identify it
 				#Example 1: "minecraft:chest" - Ignores chests only
 				#Example 2: "ae2:*" - ignores all Block entities from Applied Energetics 2
 				whitelist = []
+				#Configure horizontal max distance before cull Block entities
+				#Value is squared, default was 64^2 (or 64x64)
+				#Range: > 0
+				cullingMaxDistanceX = 4096
 				#Configure vertical max distance before cull Block entities
 				#Value is raw
 				#Range: 0 ~ 512
-				cullingDistanceY = 32
+				cullingMaxDistanceY = 32
 
 	[embeddiumplus.dynlights]
 		#Toggle if Block Entities should have dynamic lights
@@ -102,7 +102,7 @@
 		chunkFadeSpeed = "SLOW"
 		#Raise clouds
 		#Modify clouds height perfect for a adaptative world experience
-		#Range: 0 ~ 320
+		#Range: 0 ~ 512
 		cloudsHeight = 128
 		#Toggle fog feature
 		#Fog was a vanilla feature, toggling off may increases performance
@@ -134,11 +134,13 @@
 			#Toggle Darkness on End dimension
 			enableOnEnd = false
 			#Toggle Darkness default mode for modded dimensions
-			#This option will be replaced with a whitelist in a near future
 			valueByDefault = false
 			#Disables all bright sources of darkness like moon or fog
 			#Only affects darkness effect
 			enableBlockLightOnly = false
 			#Toggle Darkness on Overworld dimension
 			enableOnOverworld = true
+			#List of all dimensions to use True Darkness
+			#This option overrides 'valueByDefault' state
+			dimensionWhitelist = []
 

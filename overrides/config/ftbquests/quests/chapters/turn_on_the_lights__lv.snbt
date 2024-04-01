@@ -14,7 +14,7 @@
 		}
 	}
 	id: "452F4ECA9A54FC8F"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -1389,23 +1389,6 @@
 			}]
 			x: 1.0d
 			y: 8.5d
-		}
-		{
-			dependencies: ["12EBF67C386AA4B6"]
-			description: [
-				"QB Descriptions / Layout is TBD and Not going to be finalized to 1.0.0."
-				"Expect Frequent Revisions to things, not anything hugely breaking though."
-			]
-			id: "37EF79BCAE3BF64C"
-			optional: true
-			subtitle: "Follow along in the discord!"
-			tasks: [{
-				id: "73E2CB2B0D93FE49"
-				title: "In Development!"
-				type: "custom"
-			}]
-			x: 1.5d
-			y: 0.0d
 		}
 		{
 			dependencies: ["6622E68A73AAD137"]
