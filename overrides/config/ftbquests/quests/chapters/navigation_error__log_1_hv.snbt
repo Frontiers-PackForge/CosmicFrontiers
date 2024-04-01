@@ -372,7 +372,7 @@
 				item: "gtceu:rutile_dust"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.5d
 			y: -7.199999999999999d
 		}
 		{
@@ -443,7 +443,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 3.5d
+			x: 5.5d
 			y: -8.2d
 		}
 		{
@@ -464,7 +464,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 3.0d
+			x: 5.0d
 			y: -9.0d
 		}
 		{
@@ -485,7 +485,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: -9.0d
 		}
 		{
@@ -506,7 +506,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 3.0d
+			x: 5.0d
 			y: -10.0d
 		}
 		{
@@ -527,7 +527,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: -10.0d
 		}
 		{
@@ -537,7 +537,7 @@
 				item: "gtceu:bauxite_dust"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.5d
 			y: -11.0d
 		}
 		{
@@ -568,86 +568,6 @@
 			}]
 			x: 15.5d
 			y: 0.0d
-		}
-		{
-			dependencies: ["19B3D686A4E2FFC9"]
-			description: [
-				"For some unholy reason JEI simply refsuses to believe the space suit recipes exist."
-				""
-				"&bThrow the exact same items as above&r in an &eHV+ assembler&r and it'll make a suit. Or if you want I'll give you one on the house."
-			]
-			icon: {
-				Count: 1b
-				ForgeCaps: {
-					"cold_sweat:item_insulation": {
-						Insulation: [ ]
-					}
-				}
-				id: "ad_astra:space_suit"
-				tag: {
-					Damage: 0
-					affix_data: {
-						sockets: 0
-					}
-				}
-			}
-			id: "0DA02335D96E14C2"
-			optional: true
-			rewards: [{
-				id: "14CAD37BF63FC643"
-				item: {
-					Count: 1b
-					ForgeCaps: {
-						"cold_sweat:item_insulation": {
-							Insulation: [ ]
-						}
-					}
-					id: "ad_astra:space_suit"
-					tag: {
-						Damage: 0
-						affix_data: {
-							sockets: 0
-						}
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "&fIt's a bug, yup."
-			tasks: [
-				{
-					consume_items: false
-					count: 4L
-					id: "303386ABCE1AED4D"
-					item: "gtceu:stainless_steel_plate"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "650C5EEAB813F940"
-					item: {
-						Count: 1b
-						id: "ad_astra:gas_tank"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					consume_items: false
-					count: 32L
-					id: "72064EB95265D44E"
-					item: { Count: 32b, id: "gtceu:polytetrafluoroethylene_plate" }
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "680423CAD589DF27"
-					item: "gtceu:titanium_plate"
-					type: "item"
-				}
-			]
-			title: "Space Suit Woes"
-			x: 5.5d
-			y: -8.0d
 		}
 		{
 			dependencies: ["1E72D62913EEB4EE"]
@@ -1092,7 +1012,7 @@
 				}
 			]
 			title: "Steam Cracking."
-			x: -4.5d
+			x: -6.0d
 			y: -10.5d
 		}
 		{
@@ -1117,7 +1037,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -3.0d
+			x: -5.5d
 			y: -8.5d
 		}
 		{
@@ -1138,7 +1058,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -5.5d
+			x: -7.0d
 			y: -12.5d
 		}
 		{
@@ -1159,7 +1079,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -6.5d
+			x: -8.0d
 			y: -12.5d
 		}
 		{
@@ -1180,7 +1100,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.5d
+			x: -6.0d
 			y: -12.5d
 		}
 		{
@@ -1205,7 +1125,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.0d
+			x: -4.5d
 			y: -8.5d
 		}
 		{
@@ -1226,7 +1146,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.5d
+			x: -4.0d
 			y: -12.5d
 		}
 		{
@@ -1251,7 +1171,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -6.0d
+			x: -7.5d
 			y: -8.5d
 		}
 		{
@@ -1276,7 +1196,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -5.0d
+			x: -6.5d
 			y: -8.5d
 		}
 		{
@@ -1297,7 +1217,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -3.5d
+			x: -5.0d
 			y: -12.5d
 		}
 		{
@@ -1310,7 +1230,7 @@
 				item: "gtceu:pyrolyse_oven"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.0d
 			y: -6.5d
 		}
 		{
@@ -1558,7 +1478,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -7.0d
+			x: -8.5d
 			y: -4.5d
 		}
 		{
@@ -1580,7 +1500,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -7.0d
+			x: -8.5d
 			y: -6.5d
 		}
 		{
@@ -1602,7 +1522,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.0d
+			x: -3.5d
 			y: -6.5d
 		}
 		{
@@ -1624,7 +1544,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.0d
+			x: -3.5d
 			y: -4.5d
 		}
 		{
@@ -1646,7 +1566,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.0d
+			x: -3.5d
 			y: -5.5d
 		}
 		{
@@ -1668,7 +1588,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -3.0d
+			x: -4.5d
 			y: -4.5d
 		}
 		{
@@ -1690,7 +1610,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -6.0d
+			x: -7.5d
 			y: -4.5d
 		}
 		{
@@ -1712,7 +1632,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -7.0d
+			x: -8.5d
 			y: -5.5d
 		}
 		{
@@ -1734,7 +1654,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -5.0d
+			x: -6.5d
 			y: -4.5d
 		}
 		{
@@ -1756,7 +1676,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.0d
+			x: -5.5d
 			y: -4.5d
 		}
 		{

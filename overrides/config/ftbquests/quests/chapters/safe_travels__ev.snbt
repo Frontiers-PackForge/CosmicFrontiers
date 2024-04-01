@@ -7,6 +7,17 @@
 	id: "6048ED915FA8486C"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "5837A875D09D3E35"
+		shape: "hexagon"
+		size: 2.5d
+		tasks: [{
+			id: "1B22C23AB26126C6"
+			item: "gtceu:ev_machine_hull"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "Safe Travels - [EV]"
 }

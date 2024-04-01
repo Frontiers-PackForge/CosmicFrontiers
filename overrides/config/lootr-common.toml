@@ -1,5 +1,3 @@
-#skip unloaded block entities that are eligible for conversion, set to false to potentially resolve issues with containers that aren't being converted [default: true]
-skip_unloaded = true
 #whether or not the entire forge:chests/wooden tag should be added to the conversion list for structures (if they are backed by RandomizableContainerBlockEntity)
 convert_wooden_chests = true
 #list of loot tables which will decay (default blank, meaning no chests decay, in the format of (in the format of ["modid:loot_table", "othermodid:other_loot_table"])
@@ -8,8 +6,6 @@ decay_loot_tables = []
 additional_chests = []
 #list of mod IDs whose loot tables will decay (default blank, meaning no chests decay, in the format ["modid", "othermodid"])
 decay_modids = []
-#list of structures in which contains shouldn't be converted (in the format of ["modid:structure_name", "othermodid:other_structure_name"])
-loot_structure_blacklist = []
 #list of modids whose loot tables shouldn't be converted (in the format of ["modid", "other_modid"])
 loot_modid_blacklist = []
 #allows fake players to destroy Lootr chests without having to sneak, overrides the `disable_break` option for fake players
@@ -41,8 +37,6 @@ refresh_modids = []
 randomise_seed = true
 #when true, custom inventories will act like trapped chests when opened
 trapped_custom = false
-#whether or not quark chests used in world generation for loot purposes should be replaced with Lootr chests
-convert_quark = true
 #how long (in ticks) a decaying loot containers should take to decay (default 5 minutes = 5 * 60 * 20)
 #Range: > 0
 decay_value = 6000
@@ -63,9 +57,9 @@ blast_resistant = false
 dimension_blacklist = []
 #allow the destruction of Lootr chests regardless. overrides `disable_break`
 enable_break = false
-#the maximum age for containers; entries above this age will be discarded [default: 180 * 20, 3 minutes]
+#the maximum age for containers; entries above this age will be discarded [default: 60 * 20 * 15, fifteen minutes] [note: the value 6000 will be corrected to 18000. if you wish to use 6000, please use 6001 or 5999.]
 #Range: > 0
-max_age = 6000
+max_age = 18000
 #prevent the destruction of Lootr chests except while sneaking in creative mode
 disable_break = false
 #whether or not mineshaft chest minecarts should be converted to standard loot chests
@@ -84,4 +78,8 @@ refresh_value = 24000
 check_world_border = false
 #list of structures in which loot chests should automatically refresh (in the format of ["modid:structure_name", "othermodid:other_structure_name"])
 refresh_structures = []
+#whether or not the Elytra item frame should be converted into a standard loot chest with a guaranteed elytra
+convert_elytras = true
+#disables styling of breaking, decaying and refreshing messages sent to players
+disable_message_styles = false
 

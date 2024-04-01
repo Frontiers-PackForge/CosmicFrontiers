@@ -1,6 +1,6 @@
 
-#Game settings
-[settings]
+#Game Settings
+[Settings]
 	#Should fisherman buy/sell items related to this mods items (Seafood and pearls)
 	fishermanBuyCDItems = true
 	#Should the Wandering Trader sell items in exchange for pearls?

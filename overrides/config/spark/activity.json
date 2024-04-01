@@ -24,31 +24,5 @@
       "type": "url",
       "value": "https://spark.lucko.me/FWH09J32fC"
     }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "Ghostipedia",
-      "uniqueId": "c43b3c3d-7da6-4c2b-b335-703fce2ed795"
-    },
-    "time": 1704671404989,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/sgnVR1JsV6"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "Ghostipedia",
-      "uniqueId": "c43b3c3d-7da6-4c2b-b335-703fce2ed795"
-    },
-    "time": 1704664197949,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/tNLF94zpPo"
-    }
   }
 ]
