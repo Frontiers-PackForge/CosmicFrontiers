@@ -1,33 +1,33 @@
 GTCEuStartupEvents.registry('gtceu:material', event => {
-//Chlorides
-//     event.create('mre_chlorides')
-//         .dust()
-//         .color(0x108277).iconSet(GTMaterialIconSet.DULL)
-//     event.create('hre_chlorides')
-//         .dust()
-//         .color(0xb55d1f).iconSet(GTMaterialIconSet.DULL)
-// //Oxides
-//     event.create('lre_oxides')
-//         .dust()
-//         .color(0x15b35c).iconSet(GTMaterialIconSet.DULL)
-//     event.create('mre_oxides')
-//         .dust()
-//         .color(0x108277).iconSet(GTMaterialIconSet.DULL)
-//     event.create('hre_oxides')
-//         .dust()
-//         .color(0xb55d1f).iconSet(GTMaterialIconSet.DULL)
-// Nitrate Solution
-//     event.create('lre_nitrate_solution')
-//         .fluid()
-//         .color(0x15b35c).iconSet(GTMaterialIconSet.DULL)
-//     event.create('mre_nitrate_solution')
-//         .fluid()
-//         .color(0x108277).iconSet(GTMaterialIconSet.DULL)
-//     event.create('hre_nitrate_solution')
-//         .fluid()
-//         .color(0xb55d1f).iconSet(GTMaterialIconSet.DULL)
+    //Chlorides
+    //     event.create('mre_chlorides')
+    //         .dust()
+    //         .color(0x108277).iconSet(GTMaterialIconSet.DULL)
+    //     event.create('hre_chlorides')
+    //         .dust()
+    //         .color(0xb55d1f).iconSet(GTMaterialIconSet.DULL)
+    // //Oxides
+    //     event.create('lre_oxides')
+    //         .dust()
+    //         .color(0x15b35c).iconSet(GTMaterialIconSet.DULL)
+    //     event.create('mre_oxides')
+    //         .dust()
+    //         .color(0x108277).iconSet(GTMaterialIconSet.DULL)
+    //     event.create('hre_oxides')
+    //         .dust()
+    //         .color(0xb55d1f).iconSet(GTMaterialIconSet.DULL)
+    // Nitrate Solution
+    //     event.create('lre_nitrate_solution')
+    //         .fluid()
+    //         .color(0x15b35c).iconSet(GTMaterialIconSet.DULL)
+    //     event.create('mre_nitrate_solution')
+    //         .fluid()
+    //         .color(0x108277).iconSet(GTMaterialIconSet.DULL)
+    //     event.create('hre_nitrate_solution')
+    //         .fluid()
+    //         .color(0xb55d1f).iconSet(GTMaterialIconSet.DULL)
 
-//Slags from undergarden
+    //Slags from undergarden
     event.create('monasite_slag')
         .fluid()
         .color(0xf22f11).iconSet(GTMaterialIconSet.DULL)
@@ -46,7 +46,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('hre_slag')
         .fluid()
         .color(0x836234).iconSet(GTMaterialIconSet.DULL)
-//Xenotime extraction tier 1
+    //Xenotime extraction tier 1
     event.create('xenotime_concentrate')
         .fluid()
         .color(0x000F75).iconSet(GTMaterialIconSet.DULL)
@@ -65,9 +65,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('dried_mixed_lre_precipitate')
         .dust()
         .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
-//Xenotime extraction tier 2
+    event.create('chromate_waste_water')
+        .fluid()
+        .color().iconSet(GTMaterialIconSet.DULL)
+    //Xenotime extraction tier 2
 
-//Xenotime extraction tier 3
+    //Xenotime extraction tier 3
 
-    
+
 })

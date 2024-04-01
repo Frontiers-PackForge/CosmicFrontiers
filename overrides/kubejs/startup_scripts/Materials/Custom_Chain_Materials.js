@@ -33,7 +33,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xd8e09b)
         .components('1x calcium', '1x sulfur')
         .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
-//Source line
+    //Source line
     event.create('source_oils')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .color(0xe642f5)
@@ -49,8 +49,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('source_waste_water')
         .fluid()
         .color(0x485b95).iconSet(GTMaterialIconSet.DULL)
-//LRE line
-    event.create('oxalic_acid')
+    //LRE line
+    event.create('dirty_oxalic_acid')
         .fluid()
         .color(0x747680).iconSet(GTMaterialIconSet.DULL)
     event.create('di(2-ethylhexyl)phosphoric_acid')
