@@ -218,6 +218,23 @@ ServerEvents.recipes(event => {
     W: '#forge:tools/wrenches'
   }
   )
+  //EV MACHINE HULL AND CASING
+  event.remove({ output: 'gtceu:ev_machine_casing' })
+  event.recipes.gtceu.assembler('gtceu:ev_machine_casing_assembler')
+    .itemInputs(['4x gtceu:double_titanium_plate', '4x gtceu:luminescent_utherium_plate'])
+    .itemOutputs('gtceu:ev_machine_casing')
+    .duration(40)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:ev_machine_casing', [
+    'AMA',
+    'MWM',
+    'AMA'
+  ], {
+    A: 'gtceu:double_titanium_plate',
+    M: 'gtceu:luminescent_utherium_plate',
+    W: '#forge:tools/wrenches'
+  }
+  )
   //Crafting Recipes
   //Wrought Iron Base Molds 'gtceu:mv_machine_casing'
   event.remove({ output: 'gtceu:empty_mold' })

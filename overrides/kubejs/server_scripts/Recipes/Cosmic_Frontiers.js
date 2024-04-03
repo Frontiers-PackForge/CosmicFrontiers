@@ -33,7 +33,7 @@ ServerEvents.tags('item', event => {
 // yeet('gtceu:lv_steam_turbine')
 // yeet('gtceu:steam_large_turbine')
 // yeet('gtceu:plasma_large_turbine')
-yeet('vintagedelight:ghost_charcoal') 
+yeet('vintagedelight:ghost_charcoal')
 
 ServerEvents.recipes(event => {
        event.remove({ output: 'architects_palette:charcoal_block' })
@@ -138,6 +138,38 @@ ServerEvents.recipes(event => {
               .outputFluids(Fluid.of('gtceu:potent_mana', 3000))
               .duration(120)
               .EUt(GTValues.VA[GTValues.LV]);
+       event.recipes.gtceu.extractor('luminite_fluid_extract')
+              .itemInputs('gtceu:luminite_ingot')
+              .outputFluids(Fluid.of('gtceu:luminite', 144))
+              .duration(48)
+              .EUt(GTValues.VA[GTValues.HV]);
+       event.recipes.gtceu.autoclave('lumi_utherium_bad')
+              .inputFluids('gtceu:luminite 432')
+              .itemInputs('2x gtceu:utherium_dust')
+              .itemOutputs('gtceu:luminescent_utherium_gem')
+              .duration(480)
+              .EUt(GTValues.VA[GTValues.HV]);
+       event.recipes.gtceu.autoclave('lumi_utherium_good')
+              .inputFluids('gtceu:luminite 144')
+              .itemInputs('gtceu:utherium_gem')
+              .itemOutputs('gtceu:luminescent_utherium_gem')
+              .duration(120)
+              .EUt(GTValues.VA[GTValues.HV]);
+       event.recipes.gtceu.electric_blast_furnace('luminite_blasting_slow')
+              .itemInputs('gtceu:luminite_dust')
+              .itemOutputs('gtceu:luminite_ingot')
+              .circuit(1)
+              .blastFurnaceTemp(3600)
+              .duration(2400)
+              .EUt(GTValues.VA[GTValues.HV]);
+       event.recipes.gtceu.electric_blast_furnace('luminite_blasting_fast')
+              .itemInputs('gtceu:luminite_dust')
+              .inputFluids('gtceu:helium 1000')
+              .itemOutputs('gtceu:luminite_ingot')
+              .circuit(2)
+              .blastFurnaceTemp(3600)
+              .duration(1800)
+              .EUt(GTValues.VA[GTValues.HV]);
        event.shaped('gtceu:hp_steam_masonry_oven', [
               'WWW',
               'PBP',

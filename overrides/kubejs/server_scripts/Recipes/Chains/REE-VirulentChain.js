@@ -10,6 +10,12 @@ ServerEvents.recipes((event) => {
         .EUt(GTValues.VA[GTValues.HV]);
 
     //Slag separation
+    event.recipes.gtceu.centrifuge('cloggurm_mix_spinny')
+        .inputFluids('gtceu:undergarden_virulent_cloggrum_mixture 5000')
+        .outputFluids('gtceu:xenotime_concentrate 500')
+        .outputFluids('gtceu:hydrofluoric_acid 4500')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.centrifuge('xeno_spinny')
         .inputFluids('gtceu:xenotime_concentrate 1000')
         .outputFluids('gtceu:lre_slag 700')
