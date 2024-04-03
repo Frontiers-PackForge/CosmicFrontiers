@@ -65,7 +65,12 @@ WorldgenEvents.remove(event => {
     'undergarden:depthrock_utherium_ore',
     'undergarden:shiverstone_utherium_ore',
     'undergarden:depthrock_regalium_ore',
-    'undergarden:shiverstone_regalium_ore'
+    'undergarden:shiverstone_regalium_ore',
+    'ad_astra:moon_iron_ore',
+    'ad_astra:deepslate_desh_ore',
+    'ad_astra:moon_desh_ore',
+    'ad_astra:moon_cheese_ore',
+    'ad_astra:moon_ice_shard_ore'
   ])
 })
 // WorldgenEvents.remove(event => {

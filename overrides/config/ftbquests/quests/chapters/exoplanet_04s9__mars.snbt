@@ -5,7 +5,7 @@
 	group: "3EC91AC584FC0BC3"
 	icon: "ad_astra:mars_stone"
 	id: "76B1D6069B800973"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [ ]
 	title: "&fExoplanet &b04S9&r - &fMars"

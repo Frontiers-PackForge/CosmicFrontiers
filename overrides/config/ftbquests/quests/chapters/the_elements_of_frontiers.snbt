@@ -1,0 +1,1341 @@
+{
+	autofocus_id: "52FBB8C491793A0F"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_elements_of_frontiers"
+	group: "49DCE46B3EB22AEA"
+	icon: "aquamirae:ship_graveyard_echo"
+	id: "78A238438B986DB5"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 5.0d
+		hover: [ ]
+		image: "frontiers:textures/questimages/miscicons/table.png"
+		rotation: 0.0d
+		width: 13.91836734693878d
+		x: 6.0d
+		y: -6.5d
+	}]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1CC036B045A39FEC"
+			tasks: [{
+				id: "3CE79BA786B83764"
+				item: "gtceu:manganese_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			id: "4A6F8AC5127DEEFC"
+			tasks: [{
+				id: "08B2BD1C4B404E1D"
+				item: "gtceu:chromium_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			id: "671EF1292AEC49B5"
+			tasks: [{
+				id: "09CD0EA9F7D0FEF7"
+				item: "gtceu:vanadium_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			id: "32C4513E70767DE7"
+			tasks: [{
+				id: "1D31060954A6136E"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			id: "254C6AF63F84A120"
+			tasks: [{
+				id: "6B44A81A1B66BFFE"
+				item: "gtceu:yttrium_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			id: "06721AC034A51BDE"
+			tasks: [{
+				id: "68ED2A88185B46A7"
+				item: "gtceu:lanthanum_dust"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			id: "7CC3287D2B4EF6AF"
+			tasks: [{
+				id: "1124D19DC1EA2C24"
+				item: "gtceu:niobium_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			id: "58AF8B156582EC69"
+			tasks: [{
+				id: "159DF1D63EA06513"
+				item: "gtceu:tantalum_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			id: "695F39282A7B382D"
+			tasks: [{
+				id: "04A4C53741215192"
+				item: "gtceu:darmstadtium_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			id: "6262F9F2719F8AEF"
+			tasks: [{
+				id: "5903EFD601F0FE28"
+				item: "gtceu:flerovium_ingot"
+				type: "item"
+			}]
+			title: "Ψ-Flerovium"
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			id: "2F6D750E23F4CF87"
+			tasks: [{
+				id: "37A4E274D87E6551"
+				item: "gtceu:barium_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			id: "51C25E186AD8C777"
+			tasks: [{
+				id: "4DA969C672F29A27"
+				item: "gtceu:calcium_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			id: "7CEC96D866D122FB"
+			tasks: [{
+				id: "446DB715DD126ABC"
+				item: "gtceu:magnesium_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			id: "55EC8C84C03C129F"
+			tasks: [{
+				id: "7C04592C8818FF79"
+				item: "gtceu:beryllium_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			id: "39E565BF26C07C1F"
+			tasks: [{
+				id: "062BE7D53CA75290"
+				item: "gtceu:hydrogen_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			id: "14DEC4A23E4A7A9A"
+			tasks: [{
+				id: "28C47B4D478F4E0E"
+				item: "gtceu:lithium_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			id: "2B0565B48150FA33"
+			tasks: [{
+				id: "25596A90240497D4"
+				item: "gtceu:sodium_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			id: "3EC9D1664E79A77C"
+			tasks: [{
+				id: "636306E9CA7CCF1B"
+				item: "gtceu:potassium_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			id: "3E379B6749BA0426"
+			tasks: [{
+				id: "557D12A7B4E553CF"
+				item: "gtceu:tungsten_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			id: "25EA1BBFA93761A5"
+			tasks: [{
+				id: "2659BED656382F01"
+				item: "gtceu:molybdenum_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			id: "3AB3CE2C29CCCD97"
+			tasks: [{
+				id: "21244C430F77B7D9"
+				item: "gtceu:osmium_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			id: "1825430FC04AC390"
+			tasks: [{
+				id: "4B918C772E76FD79"
+				item: "gtceu:ruthenium_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			id: "27188CBB1ADCD0B5"
+			tasks: [{
+				id: "2B8C46158717450E"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			id: "67373185B48978E2"
+			tasks: [{
+				id: "6BE6C8F6F9B8A45E"
+				item: "gtceu:cobalt_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			id: "52FBB8C491793A0F"
+			tasks: [{
+				id: "4FAA9D988F8ACC66"
+				item: "gtceu:rhodium_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			id: "1D6C8E20048B6070"
+			tasks: [{
+				id: "3638E98A9C7EE219"
+				item: "gtceu:iridium_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			id: "5D0EB833C94BFF95"
+			tasks: [{
+				id: "1FCF961DC270E679"
+				item: "gtceu:platinum_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			id: "622A60B8614B646E"
+			tasks: [{
+				id: "7B45F0B1219187DB"
+				item: "gtceu:palladium_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			id: "05F788104E2DABA4"
+			tasks: [{
+				id: "48B53D6935F6978F"
+				item: "gtceu:nickel_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			id: "06982729BD4846C1"
+			tasks: [{
+				id: "61B709874CF2C311"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			id: "24D88F014B834608"
+			tasks: [{
+				id: "51E8C786253033F4"
+				item: "gtceu:silver_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			id: "0FCF11D858FC6385"
+			tasks: [{
+				id: "676790F6A25DC28E"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			id: "79629B4D69735073"
+			tasks: [{
+				id: "4DC8AA1CAB0D2764"
+				item: "gtceu:mercury_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			id: "1C0450275C9B4388"
+			tasks: [{
+				id: "4BBEDCB8F4A4A8AC"
+				item: "gtceu:cadmium_dust"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			id: "3E35805B6CE987CC"
+			tasks: [{
+				id: "75074C0EB81D097C"
+				item: "gtceu:zinc_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			id: "41006D0013FEFECC"
+			tasks: [{
+				id: "7E565465F2F471F2"
+				item: "gtceu:gallium_ingot"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			id: "087DFE2DDB522579"
+			tasks: [{
+				id: "7471946325C6F068"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.5d
+		}
+		{
+			id: "458A44B02B1090F7"
+			tasks: [{
+				id: "772C1C936307076B"
+				item: "gtceu:boron_dust"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -3.5d
+		}
+		{
+			id: "58F6E0EF7B1371DE"
+			tasks: [{
+				id: "2E29D2EEC4DC900E"
+				item: "gtceu:carbon_dust"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.5d
+		}
+		{
+			id: "3F07D287B32D3228"
+			tasks: [{
+				id: "27D04218EA7BA76E"
+				item: "gtceu:nitrogen_bucket"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -3.5d
+		}
+		{
+			id: "79694EB5AE8D94AA"
+			tasks: [{
+				id: "01E9C95388817220"
+				item: "gtceu:oxygen_bucket"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -3.5d
+		}
+		{
+			id: "1B161B1D68EA7CC9"
+			tasks: [{
+				id: "3503A3A9A30E2CB7"
+				item: "gtceu:fluorine_bucket"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -3.5d
+		}
+		{
+			id: "2E87AA19FB111236"
+			tasks: [{
+				id: "7500623213175ECC"
+				item: "gtceu:neon_bucket"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -3.5d
+		}
+		{
+			id: "409B6B09459BBCBE"
+			tasks: [{
+				id: "01D14C4C762BC97F"
+				item: "gtceu:helium_bucket"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -4.5d
+		}
+		{
+			id: "555CF72EB998ED98"
+			tasks: [{
+				id: "6C6C4524F7C7F1CD"
+				item: "gtceu:argon_bucket"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -2.5d
+		}
+		{
+			id: "53B4B247884A0B8E"
+			tasks: [{
+				id: "56BCF621006C16A0"
+				item: "gtceu:krypton_bucket"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -1.5d
+		}
+		{
+			id: "015F0C2D28F86DF2"
+			tasks: [{
+				id: "709A7F9DC4D83959"
+				item: "gtceu:xenon_bucket"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -0.5d
+		}
+		{
+			id: "5BA0B75C45D170F3"
+			tasks: [{
+				id: "2D3AAD687BB0FDDA"
+				item: "gtceu:radon_bucket"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 0.5d
+		}
+		{
+			id: "182AE5465B291FF3"
+			tasks: [{
+				id: "3B9BB5FEB5ED432F"
+				item: "gtceu:oganesson_ingot"
+				type: "item"
+			}]
+			title: "Ψ-Oganesson"
+			x: 14.5d
+			y: 1.5d
+		}
+		{
+			id: "793B3D24067F6087"
+			tasks: [{
+				id: "417C799B908EC1C8"
+				item: "gtceu:chlorine_bucket"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -2.5d
+		}
+		{
+			id: "613AFB0CC76A57CE"
+			tasks: [{
+				id: "5EB272F5803B7A13"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -2.5d
+		}
+		{
+			id: "529177E191A01FF2"
+			tasks: [{
+				id: "269311DB2DC76569"
+				item: "gtceu:phosphorus_dust"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -2.5d
+		}
+		{
+			id: "44FE7CEF98C2680E"
+			tasks: [{
+				id: "2AEB2A330156C24C"
+				item: "gtceu:silicon_ingot"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -2.5d
+		}
+		{
+			id: "083DA8082879ED85"
+			tasks: [{
+				id: "13DD487B7422CD1F"
+				item: "gtceu:tin_ingot"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			id: "0D822881C7B59003"
+			tasks: [{
+				id: "0F28CB580B1E4086"
+				item: "gtceu:lead_ingot"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			id: "0160A7D1854461F1"
+			tasks: [{
+				id: "113001D48D89CAA6"
+				item: "gtceu:indium_dust"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -0.5d
+		}
+		{
+			id: "35926F6BFE458C60"
+			tasks: [{
+				id: "56977594D277D64C"
+				item: "gtceu:arsenic_dust"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.5d
+		}
+		{
+			id: "5EAE476F6A45ADB3"
+			tasks: [{
+				id: "5396F14F48AAF53D"
+				item: "gtceu:antimony_dust"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -0.5d
+		}
+		{
+			id: "76425D7A278ACD9B"
+			tasks: [{
+				id: "419C6F2D0F7C46B8"
+				item: "gtceu:bismuth_dust"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.5d
+		}
+		{
+			id: "0B2C5F787A27AC2E"
+			tasks: [{
+				id: "1774F1F14DFDBDAD"
+				item: "gtceu:neodymium_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			id: "7A610413992D7D70"
+			tasks: [{
+				id: "16E865273A87BE3C"
+				item: "gtceu:samarium_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			id: "6377B8AA23137AE7"
+			tasks: [{
+				id: "7971BF00DFF2AC41"
+				item: "gtceu:europium_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.0d
+		}
+		{
+			id: "0F644433D687D828"
+			tasks: [{
+				id: "1D4D7B1511F3AD90"
+				item: "gtceu:lutetium_dust"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 5.0d
+		}
+		{
+			id: "7492A1DDFBFF1B99"
+			tasks: [{
+				id: "6903380E1D5E29BD"
+				item: "gtceu:cerium_dust"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			id: "1017B1674F50A233"
+			tasks: [{
+				id: "00FE27F84CADDED4"
+				item: "gtceu:thorium_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			id: "1C4B5A947402F6A4"
+			tasks: [{
+				id: "2E56AC7E9436E90E"
+				item: "gtceu:uranium_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			id: "390642066F013C78"
+			tasks: [{
+				id: "18F57538BFA10B6D"
+				item: "gtceu:plutonium_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			id: "4F763C3D5A661E7E"
+			tasks: [{
+				id: "4D23FAAE0E4E8180"
+				item: "gtceu:americium_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.0d
+		}
+		{
+			id: "6B8BEBF27612A4FB"
+			subtitle: "119"
+			tasks: [{
+				id: "5676A8BDEA761A1C"
+				item: "gtceu:duranium_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			id: "59D0AC0583C9EFA6"
+			subtitle: "141"
+			tasks: [{
+				id: "47BE3712E64E5E7C"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			id: "6D086B0A125139A2"
+			subtitle: "184"
+			tasks: [{
+				id: "73F7045B0C57C968"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			id: "6BFBCC3677DB54EC"
+			subtitle: "210"
+			tasks: [{
+				id: "5F67AAFB6E68FE97"
+				item: "gtceu:trinium_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			id: "5C4AB6607BF06EB2"
+			subtitle: "351"
+			tasks: [{
+				id: "7FBC88A2D1394C67"
+				type: "item"
+			}]
+			title: "Adamantium"
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			id: "7B8C8D2633A9EE07"
+			subtitle: "451"
+			tasks: [{
+				id: "76C4EACC2B29CBF3"
+				type: "item"
+			}]
+			title: "Vibranium"
+			x: 7.5d
+			y: 9.0d
+		}
+		{
+			id: "7568DFF5649B1EAA"
+			subtitle: "121"
+			tasks: [{
+				id: "7594FD033EDDDAD2"
+				item: "gtceu:luminite_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"QB Descriptions / Layout is TBD and Not going to be finalized to 1.0.0."
+				"Expect Frequent Revisions to things, not anything hugely breaking though."
+				""
+				"This Page is reserved for showing the perodic table as well as any other exotic frontiers elements/materials. expect future expansions."
+			]
+			id: "5602EE40208F0F5E"
+			optional: true
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Follow along in the discord!"
+			tasks: [{
+				id: "215267F15898C86F"
+				title: "In Development!"
+				type: "custom"
+			}]
+			x: -3.0d
+			y: -7.0d
+		}
+		{
+			id: "4C7D76915D570C4B"
+			tasks: [{
+				id: "01BBF66E64F8A133"
+				item: "gtceu:scandium_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			id: "77A2F105980DCF78"
+			tasks: [{
+				id: "6A625F738AA2FE28"
+				item: "gtceu:strontium_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			id: "7D5306BA96B7A85A"
+			tasks: [{
+				id: "3164CBF183455762"
+				item: "gtceu:caesium_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			id: "6F2C0B5FA1A20C92"
+			tasks: [{
+				id: "450518161F08931D"
+				item: "gtceu:francium_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			id: "0EF73B37A3C6DFCC"
+			tasks: [{
+				id: "11A3140D2E94B4AB"
+				item: "gtceu:radium_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			id: "5513127FC6A5AA90"
+			tasks: [{
+				id: "3DAD6965C5332535"
+				item: "gtceu:actinium_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			id: "170C0EB514C46168"
+			tasks: [{
+				id: "219A4C67EA599A58"
+				item: "gtceu:zirconium_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			id: "5F649AB090BC5EC3"
+			tasks: [{
+				id: "1E4488CD81444E79"
+				item: "gtceu:hafnium_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			id: "79393F3306615FE8"
+			tasks: [{
+				id: "39C011F181EFF4BA"
+				item: "gtceu:technetium_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			id: "69623F26E294256E"
+			tasks: [{
+				id: "5CA43ECD04E0F0CE"
+				item: "gtceu:bohrium_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			id: "3D93E464FAC15565"
+			tasks: [{
+				id: "5421A44319937378"
+				item: "gtceu:rhenium_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			id: "5AA1DC46A975EB47"
+			tasks: [{
+				id: "01ECAB23A125E108"
+				item: "gtceu:rutherfordium_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			id: "157B09ED7604F948"
+			tasks: [{
+				id: "216492E34B6FA3B6"
+				item: "gtceu:dubnium_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			id: "0DCBCB4B93D411EC"
+			tasks: [{
+				id: "2ABBFE5D55B28996"
+				item: "gtceu:seaborgium_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			id: "72CA5592E36B5F55"
+			tasks: [{
+				id: "6B1774C823B059F2"
+				item: "gtceu:hassium_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			id: "354D529896D40143"
+			tasks: [{
+				id: "147DCF80D6018BB1"
+				item: "gtceu:roentgenium_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			id: "64E0B4350363D995"
+			tasks: [{
+				id: "564B6D0F430A2850"
+				item: "gtceu:meitnerium_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			id: "1E3EE20BA318F79A"
+			tasks: [{
+				id: "29E548FC42C7105A"
+				item: "gtceu:copernicium_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			id: "563FE7EC3EB7E840"
+			tasks: [{
+				id: "317E88AB8C15D704"
+				item: "gtceu:nihonium_ingot"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			id: "672D26FB61E2EA4B"
+			tasks: [{
+				id: "4EC1FD3C081A7664"
+				item: "gtceu:thallium_ingot"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			id: "0329F3565A24E95F"
+			tasks: [{
+				id: "126F26422081EA1A"
+				item: "gtceu:praseodymium_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			id: "3A50DCE05D464422"
+			tasks: [{
+				id: "7EDD2BE1C6DFCCFB"
+				item: "gtceu:protactinium_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			id: "14A40B3D7BC19287"
+			tasks: [{
+				id: "1FC6D823800EF19B"
+				item: "gtceu:promethium_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			id: "58AC4D3A689D9F66"
+			tasks: [{
+				id: "0E988F5C90C276A0"
+				item: "gtceu:neptunium_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			id: "5EBFBD3E9F272244"
+			tasks: [{
+				id: "084A682D668E8339"
+				item: "gtceu:curium_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			id: "0FBCFA8FD94418C4"
+			tasks: [{
+				id: "15C699BDF283DC98"
+				item: "gtceu:gadolinium_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.0d
+		}
+		{
+			id: "0C15498487A909AB"
+			tasks: [{
+				id: "47DE35B5113733F0"
+				item: "gtceu:terbium_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			id: "735352688F42AD9E"
+			tasks: [{
+				id: "6BAA5964B407BD7E"
+				item: "gtceu:berkelium_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			id: "6F4C822A82802573"
+			tasks: [{
+				id: "466358034AA5C6ED"
+				item: "gtceu:rubidium_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			id: "198705D189FC9024"
+			tasks: [{
+				id: "4AC8E05D61C93E6E"
+				item: "gtceu:moscovium_ingot"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			id: "4658376EE6D1BF50"
+			tasks: [{
+				id: "7C71174B15839DED"
+				item: "gtceu:dysprosium_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 5.0d
+		}
+		{
+			id: "0BFA5685873A2D83"
+			tasks: [{
+				id: "67A17162145D6415"
+				item: "gtceu:holmium_ingot"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 5.0d
+		}
+		{
+			id: "166A0392FC10814F"
+			tasks: [{
+				id: "27083351FA3C31F7"
+				item: "gtceu:erbium_ingot"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 5.0d
+		}
+		{
+			id: "45CC7214769D8D2C"
+			tasks: [{
+				id: "42D6D4958D18CA9E"
+				item: "gtceu:thulium_ingot"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 5.0d
+		}
+		{
+			id: "25652AB002DE2B4F"
+			tasks: [{
+				id: "284EFDC2D1CB2FD4"
+				item: "gtceu:ytterbium_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 5.0d
+		}
+		{
+			id: "078F919157E2F06C"
+			tasks: [{
+				id: "0B2DEDD48FF0B4A2"
+				item: "gtceu:californium_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			id: "2AEF6EE8A18DEC3F"
+			tasks: [{
+				id: "7097B02C437EA74A"
+				item: "gtceu:einsteinium_ingot"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 6.0d
+		}
+		{
+			id: "045ECEAF8B8CA91F"
+			tasks: [{
+				id: "5B2E7D77C86842C1"
+				item: "gtceu:fermium_ingot"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 6.0d
+		}
+		{
+			id: "60A9AB369D2F1E3F"
+			tasks: [{
+				id: "45692AEB97961919"
+				item: "gtceu:mendelevium_ingot"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.0d
+		}
+		{
+			id: "1E20F3AD6BAB067C"
+			tasks: [{
+				id: "0906F276AC8B9305"
+				item: "gtceu:nobelium_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 6.0d
+		}
+		{
+			id: "09487A37EB470272"
+			tasks: [{
+				id: "1A09A19102DE4E63"
+				item: "gtceu:lawrencium_ingot"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 6.0d
+		}
+		{
+			id: "1E55DA67B090E610"
+			tasks: [{
+				id: "07AB8559FCBB99BD"
+				item: "gtceu:germanium_ingot"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			id: "7EF7A46D4C7E441E"
+			tasks: [{
+				id: "3F67DF869F80FBBA"
+				item: "gtceu:livermorium_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 1.5d
+		}
+		{
+			id: "2AD8FBDF476E952F"
+			tasks: [{
+				id: "01E3ECF892C3CB8B"
+				item: "gtceu:tennessine_bucket"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.5d
+		}
+		{
+			id: "753D77FF5C5FD4F8"
+			tasks: [{
+				id: "1F2622A1B27BF3CE"
+				item: "gtceu:polonium_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.5d
+		}
+		{
+			id: "2C8546D09C344661"
+			tasks: [{
+				id: "518A8FEA7BE18C0B"
+				item: "gtceu:astatine_ingot"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.5d
+		}
+		{
+			id: "04915FE56BD0E314"
+			tasks: [{
+				id: "15F081CA0ECD7594"
+				item: "gtceu:iodine_ingot"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -0.5d
+		}
+		{
+			id: "0AB94BFF43962E42"
+			tasks: [{
+				id: "7BE07297075654B3"
+				item: "gtceu:bromine_bucket"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			id: "6C398780691CA0A6"
+			tasks: [{
+				id: "19B4CB40D7B801DB"
+				item: "gtceu:selenium_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -1.5d
+		}
+		{
+			id: "3CBEE9787D484B3E"
+			tasks: [{
+				id: "5E6A7EA8C665F5AA"
+				item: "gtceu:tellurium_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"Electron wave soup, I guess. what the hell."
+				""
+				"While willingly ready to blow up a small family of 4. Mana in a \"LIQUID????\" state just wants to burn and melt things, like some weird acid. Potent Mana is much stronger than the vapor form of Mana, which apparently people can have in their bodies JUST FINE...??"
+				""
+				"WHAT."
+			]
+			id: "28CD1DD14AA5BF6A"
+			subtitle: "WTF is this stuff..?"
+			tasks: [{
+				id: "60CB899B77DEEA9D"
+				item: "gtceu:potent_mana_bucket"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"My Research still needs to be completed, and I must continue down this path."
+				""
+				"Psi, short for Strong Psion Force. - A wave force within the model of our multiverse. Psi acts like a compass and glue for things, potentially even directing chemical bonds or the accumulation of quarks to make more complex particles. However, unlike other forces within a standard universe, this one permeates through things more frequently on the edge of chaos. Which is why it's most commonly found residing around living beings. A state of chaos that is unique in every universe."
+				""
+				"There is a high chance this contributes to the vast empty spaces between different universes or glues them all together in a way I have yet to understand. All I know is it has the potential to change everything."
+			]
+			id: "194448C3AF079A53"
+			subtitle: "A new fundemental contender"
+			tasks: [{
+				id: "48DE2E04E3A081C5"
+				type: "checkmark"
+			}]
+			title: "Ψ"
+			x: -5.5d
+			y: -4.5d
+		}
+	]
+	title: "&fCosmic Frontiers Periodic Table"
+}

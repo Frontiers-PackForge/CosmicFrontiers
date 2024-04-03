@@ -1,0 +1,471 @@
+{
+	autofocus_id: "6146E12078CCA5D3"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "fpower_and_you"
+	group: "49DCE46B3EB22AEA"
+	icon: "gtceu:max_battery"
+	id: "7B9F27B55F8F19E2"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Placeholder desc"
+				""
+				"left - Sources of power/Generators/Recommended Setups"
+				""
+				"right - multiblocks assorted by first possible tier they're unlocked"
+				""
+				"down - ?????"
+			]
+			id: "6146E12078CCA5D3"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "There's a lot here."
+			tasks: [{
+				id: "718E558A6F3FCE76"
+				title: "How to Navigate this page"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6146E12078CCA5D3"]
+			id: "31D607A0E640C8D8"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "5A3F0422FC8E6D56"
+				item: "embers:steam_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31D607A0E640C8D8"]
+			id: "0BB1B009E21A8D73"
+			tasks: [{
+				id: "3C87619324B2DA97"
+				item: "gtceu:lp_steam_solar_boiler"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["31D607A0E640C8D8"]
+			id: "3B12EDE4D85AF194"
+			tasks: [{
+				id: "68B89F24E990572D"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["31D607A0E640C8D8"]
+			id: "4863B9E3983A5463"
+			tasks: [{
+				id: "4AEC33B37FB4C22B"
+				item: "gtceu:lp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3B12EDE4D85AF194"]
+			id: "7786A4BDC9C62461"
+			tasks: [{
+				id: "0E0D152491235E72"
+				item: "gtceu:hp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4863B9E3983A5463"]
+			id: "59BA549EAC602E63"
+			tasks: [{
+				id: "1091FDF0B76C8264"
+				item: "gtceu:hp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0BB1B009E21A8D73"]
+			id: "7666C59B2C2A9C54"
+			tasks: [{
+				id: "14947C012D3A9AF2"
+				item: "gtceu:hp_steam_solar_boiler"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["31D607A0E640C8D8"]
+			id: "7B925E716025A4B6"
+			tasks: [{
+				id: "520ABDE7F6E508C8"
+				item: "gtceu:bronze_large_boiler"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["31D607A0E640C8D8"]
+			id: "2ACAE0A625C441F6"
+			tasks: [{
+				id: "4CB743EB6F4C18E7"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["31D607A0E640C8D8"]
+			id: "4E1DA6A7F7A2FFC0"
+			tasks: [{
+				id: "03256D84AACB7025"
+				item: "gtceu:mv_steam_turbine"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["31D607A0E640C8D8"]
+			id: "7A2CDFC8A3B23671"
+			tasks: [{
+				id: "65098CCB9E298D64"
+				item: "gtceu:hv_steam_turbine"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["31D607A0E640C8D8"]
+			description: ["This chonky Multiblock may be more relevant in the future. but for now you'll most likely be off steam after LV"]
+			id: "623B30FFF67B8E82"
+			subtitle: "This... Exists???"
+			tasks: [{
+				id: "763426A27172E46C"
+				item: "gtceu:steam_large_turbine"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6146E12078CCA5D3"]
+			id: "51FA210D5FCB8FF0"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "0BC1B254F21F6450"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51FA210D5FCB8FF0"]
+			description: [
+				"You can self sustain your ethanol production... off ethanol?"
+				""
+				"I didn't intend for this at first but it's a pretty nifty earlygame solution"
+			]
+			id: "7250EED57A87F0AF"
+			subtitle: "Power Positive"
+			tasks: [{
+				id: "3C0CE4881EE95232"
+				item: "gtceu:ethanol_bucket"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"4ECB7E470EED0932"
+				"7250EED57A87F0AF"
+			]
+			id: "020B8BDB99E667FC"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "The Staple Early Fuel"
+			tasks: [{
+				id: "70285B9A9852AB24"
+				item: "gtceu:source_enhanced_bio_fuel_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["51FA210D5FCB8FF0"]
+			id: "5F977625E0059F00"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "51F44444A46F62F2"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F977625E0059F00"]
+			icon: "createdeco:decal_fluid"
+			id: "4ECB7E470EED0932"
+			title: "Liquid Fuels"
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5F977625E0059F00"]
+			icon: "createdeco:decal_fire"
+			id: "014A136E4FDA0552"
+			title: "Gas Fuels"
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["014A136E4FDA0552"]
+			description: [
+				"Benzene in LV is possible, but not ideal."
+				""
+				"With Access to a Pyrolyze Oven now, that changes."
+				""
+				"Get ready to farm a LOT of wood."
+			]
+			id: "369BF5B29AD2921A"
+			subtitle: "Wasn't very viable til now"
+			tasks: [{
+				id: "0ABB914A13E90AFE"
+				item: "gtceu:benzene_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["173C518F075DE29A"]
+			id: "18BF6D245A7F7803"
+			tasks: [{
+				id: "08857F9058DC0220"
+				item: "gtceu:lv_combustion"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["173C518F075DE29A"]
+			id: "6D7A6CE2330371AB"
+			tasks: [{
+				id: "466EF9A2F4440FE6"
+				item: "gtceu:mv_combustion"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["173C518F075DE29A"]
+			id: "57A39A31913B2F2F"
+			tasks: [{
+				id: "50ECFF26E787BD39"
+				item: "gtceu:hv_combustion"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["79F43C17F6618C30"]
+			id: "237C5B775B855CB4"
+			tasks: [{
+				id: "59B1BEA945AA2D34"
+				item: "gtceu:lv_gas_turbine"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["79F43C17F6618C30"]
+			id: "09B96E2BEE09C7C0"
+			tasks: [{
+				id: "4F8567AEC9F61578"
+				item: "gtceu:mv_gas_turbine"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["79F43C17F6618C30"]
+			id: "2B90AED89AFB2187"
+			tasks: [{
+				id: "7F8289383F0E51A0"
+				item: "gtceu:hv_gas_turbine"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"5F977625E0059F00"
+				"51FA210D5FCB8FF0"
+			]
+			dependency_requirement: "one_started"
+			icon: "createdeco:decal_fluid"
+			id: "173C518F075DE29A"
+			tasks: [{
+				id: "3FF8E539F8378FD3"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5F977625E0059F00"]
+			icon: "createdeco:decal_fire"
+			id: "79F43C17F6618C30"
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5F977625E0059F00"]
+			id: "1E224019910AE6C7"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "2752FD4381812892"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1E224019910AE6C7"
+				"369BF5B29AD2921A"
+			]
+			description: [
+				"Your source fuel production is probably holding out well enough."
+				""
+				"The benefit to nitrobenzene is it's cheap to scale and produce"
+				"as well as the turbines being cheaper on resources."
+				""
+				"Nitrobenzene is also the precursor to Specalized EV Fuels."
+			]
+			id: "2D890A90DC16FF25"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "The Era of Gas"
+			tasks: [{
+				id: "24CA043B3C73365E"
+				item: "gtceu:nitrobenzene_bucket"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1E224019910AE6C7"]
+			id: "23AEF543AA92119E"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "3E2D50FEF939D9A2"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["23AEF543AA92119E"]
+			id: "0537993AD8D37102"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "4E77E85BE81F66BB"
+				item: "gtceu:gas_large_turbine"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["23AEF543AA92119E"]
+			id: "00797AA0C0F4AC06"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "5E41DB99814BAA62"
+				item: "gtceu:large_combustion_engine"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0537993AD8D37102"]
+			id: "636BBD84AF9B125B"
+			tasks: [{
+				id: "730B51DDE16E0877"
+				item: {
+					Count: 1b
+					id: "gtceu:turbine_rotor"
+					tag: { }
+				}
+				match_nbt: false
+				title: "\"Any Turbine Rotor\""
+				type: "item"
+			}]
+			x: -11.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0537993AD8D37102"
+				"636BBD84AF9B125B"
+			]
+			description: ["The higher the tier above EV, the more efficient the recipe becomes"]
+			id: "478C629140D9453B"
+			tasks: [{
+				id: "07EE6A6AED712682"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:hv_rotor_holder)item(gtceu:ev_rotor_holder)item(gtceu:iv_rotor_holder)item(gtceu:luv_rotor_holder)item(gtceu:zpm_rotor_holder)item(gtceu:uv_rotor_holder))"
+					}
+				}
+				title: "Any Rotor Holder (HV-UV)"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 4.5d
+		}
+	]
+	title: "&fPower and Multiblocks"
+}

@@ -85,11 +85,65 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0x8e46fa).iconSet(GTMaterialIconSet.SHINY)
         .element(GTElements.get('zano_alumate'))
+    event.create('luminite')
+        .color(0x85ffad)
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .ingot()
+        .ore()
+        .dust()
+        .toolStats(ToolProperty.Builder.of(6.0, 7.0, 768, 3).attackSpeed(0.1).enchantability(18).build())
+        .flags(
+            GTMaterialFlags.NO_UNIFICATION,
+            GTMaterialFlags.NO_SMELTING
+        )
+        // .element(GTElements.get('prism_tungstensteel'))
+        .iconSet(GTMaterialIconSet.getByName('starry'))
+    event.create('desh')
+        .color(0xeb9b34)
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .iconSet(GTMaterialIconSet.getByName('utherium'))
+        .ingot()
+        .ore()
+        .dust()
+        .flags(
+            GTMaterialFlags.NO_UNIFICATION,
+            GTMaterialFlags.NO_SMELTING
+        )
+        // .element(GTElements.get('prism_tungstensteel'))
+        .iconSet(GTMaterialIconSet.getByName('starry'))
     event.create('prismatic_tungstensteel')
         .color(0x6f42cf)
         .ingot()
         .element(GTElements.get('prism_tungstensteel'))
         .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.NO_UNIFICATION,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING
+        )
+        event.create('utherium')
+        .color(0xc3434c)
+        .gem()
+        .ore()
+        .iconSet(GTMaterialIconSet.getByName('utherium'))
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING
+        )
+        event.create('luminescent_utherium')
+        .color(0x6A40B8)
+        .gem()
+        .iconSet(GTMaterialIconSet.getByName('utherium'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,

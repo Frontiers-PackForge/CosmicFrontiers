@@ -186,7 +186,7 @@ ServerEvents.recipes(event => {
   //MV MACHINE HULL AND CASING
   event.remove({ output: 'gtceu:mv_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:mv_machine_casing_assembler')
-    .itemInputs(['4x gtceu:aluminium_double_plate', '4x gtceu:mana_steel_plate'])
+    .itemInputs(['4x gtceu:double_aluminium_plate', '4x gtceu:mana_steel_plate'])
     .itemOutputs('gtceu:mv_machine_casing')
     .duration(40)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
     'MWM',
     'AMA'
   ], {
-    A: 'gtceu:aluminium_double_plate',
+    A: 'gtceu:double_aluminium_plate',
     M: 'gtceu:mana_steel_plate',
     W: '#forge:tools/wrenches'
   }
@@ -215,6 +215,23 @@ ServerEvents.recipes(event => {
   ], {
     A: 'gtceu:double_stainless_steel_plate',
     M: 'gtceu:galvanized_ethersteel_plate',
+    W: '#forge:tools/wrenches'
+  }
+  )
+  //EV MACHINE HULL AND CASING
+  event.remove({ output: 'gtceu:ev_machine_casing' })
+  event.recipes.gtceu.assembler('gtceu:ev_machine_casing_assembler')
+    .itemInputs(['4x gtceu:double_titanium_plate', '4x gtceu:luminescent_utherium_plate'])
+    .itemOutputs('gtceu:ev_machine_casing')
+    .duration(40)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:ev_machine_casing', [
+    'AMA',
+    'MWM',
+    'AMA'
+  ], {
+    A: 'gtceu:double_titanium_plate',
+    M: 'gtceu:luminescent_utherium_plate',
     W: '#forge:tools/wrenches'
   }
   )

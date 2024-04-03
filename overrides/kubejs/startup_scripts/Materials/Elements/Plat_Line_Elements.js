@@ -7,5 +7,6 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('ammonium_hexachloroplatinate', 78, 78, -1, null, '(NH₄)₂PtCl₆', false) // 
     event.create('ammonium_hexachloropalladate', 78, 78, -1, null, '(NH₄)₂PdCl₆', false) // 
     event.create('tetraammine_palladium_chloride', 78, 78, -1, null, 'Pd(NH₃)₄Cl₂', false) // 
+    event.create('insoluble_plat_group_residue', 78, 78, -1, null, '(RhRuOsIr)', false) // 
     //subsript (copy and paste) ₂₃₄₅₆₇₈₉₀
  })

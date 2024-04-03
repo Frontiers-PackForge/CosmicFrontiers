@@ -164,6 +164,11 @@
 		{
 			dependencies: ["57A955955309A292"]
 			id: "2501BE8FAD0FD89B"
+			rewards: [{
+				id: "7AD12FC7E8FC328B"
+				item: "aether:bronze_dungeon_key"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "27BB007B27F8E57B"
@@ -176,6 +181,11 @@
 		{
 			dependencies: ["2501BE8FAD0FD89B"]
 			id: "50401BF5E3938AE9"
+			rewards: [{
+				id: "15D9E7DD5F412FDF"
+				item: "aether:silver_dungeon_key"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "2169BC92AE58B60D"
@@ -188,6 +198,11 @@
 		{
 			dependencies: ["50401BF5E3938AE9"]
 			id: "696EA94AB22229DA"
+			rewards: [{
+				id: "58812ED4EB18639B"
+				item: "aether:gold_dungeon_key"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "3579E811420BF9D5"
@@ -212,7 +227,7 @@
 				item: "undergarden:catalyst"
 				type: "item"
 			}]
-			title: "NYI - TRIAL OF THE DEPTHS"
+			title: "To the deepest depths"
 			x: 0.0d
 			y: -11.0d
 		}
@@ -313,6 +328,17 @@
 			}]
 			x: 7.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["436731F4DEA413B4"]
+			id: "48525FDB778385BF"
+			tasks: [{
+				id: "767B4AF7D92E030C"
+				item: "aether:ambrosium_shard"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.0d
 		}
 	]
 	title: "A Crack in the Sky..."

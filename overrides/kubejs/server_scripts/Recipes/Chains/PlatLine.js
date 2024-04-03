@@ -34,8 +34,13 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:water 2000')
         .duration(320)
         .EUt(GTValues.VA[GTValues.MV]);
-
-
+    //Bad Plat Recipe
+    event.recipes.gtceu.electric_blast_furnace('bad_plat')
+        .itemInputs('6x gtceu:cooperite_dust')
+        .itemOutputs('4x gtceu:platinum_nugget')
+        .duration(600)
+        .blastFurnaceTemp(2700)
+        .EUt(GTValues.VA[GTValues.HV]);
     //Roasted Cooperite
     event.recipes.gtceu.electric_blast_furnace('cooperite_roasting')
         .itemInputs('4x gtceu:cooperite_dust')
@@ -43,6 +48,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('5x gtceu:roasted_cooperite_dust')
         .outputFluids('gtceu:sulfur_dioxide 8000')
         .duration(1200)
+        .blastFurnaceTemp(2700)
         .EUt(GTValues.VA[GTValues.MV]);
     //Nickel Depleted Cooperite    
     event.recipes.gtceu.chemical_bath('cooperite_nickel_removal')

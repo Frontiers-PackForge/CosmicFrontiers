@@ -1,0 +1,16 @@
+{
+  "heartEntries": {
+    "red": {
+      "hostile": 0.00
+    },
+    "green": {
+      "dragon": 0
+    },
+    "blue": {
+      "minecraft:warden": 0
+    },
+    "yellow": {
+      "boss": 0
+    }
+  }
+}

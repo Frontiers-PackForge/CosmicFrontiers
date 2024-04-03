@@ -104,6 +104,10 @@
 	"hiveheart_damageModifier": 7.0,
 	"starsedge_damageModifier": 3.0,
 	"wickpiercer_damageModifier": 4.0,
+	"dreadtide_damageModifier": 3.0,
+	"tempest_damageModifier": 0.0,
+	"flamewind_damageModifier": 3.0,
+	"ribboncleaver_damageModifier": 7.0,
 	"brimstone_attackSpeed": -2.799999952316284,
 	"thewatcher_attackSpeed": -2.799999952316284,
 	"stormsedge_attackSpeed": -2.0,
@@ -135,5 +139,9 @@
 	"waxweaver_attackSpeed": -2.9000000953674316,
 	"hiveheart_attackSpeed": -3.0,
 	"starsedge_attackSpeed": -2.0,
-	"wickpiercer_attackSpeed": -1.7000000476837158
+	"wickpiercer_attackSpeed": -1.7000000476837158,
+	"dreadtide_attackSpeed": -2.0,
+	"tempest_attackSpeed": -2.5,
+	"flamewind_attackSpeed": -2.5999999046325684,
+	"ribboncleaver_attackSpeed": -3.200000047683716
 }

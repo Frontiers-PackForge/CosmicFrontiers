@@ -7,6 +7,65 @@
 	id: "6048ED915FA8486C"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome forth to the age of &5EV&r"
+				""
+				"This is where your &eautomation skills&r will be put to the test, as &bprocessing chains&r and &bgeneral chemistry&r grow more complex as your revenge plans unfold."
+				""
+				"&3&oYour lamentations are known solely to the stars, while the void beyond remains oblivious to your motivations.&r"
+				"&c&oFor now.&r"
+			]
+			id: "5837A875D09D3E35"
+			shape: "hexagon"
+			size: 2.5d
+			subtitle: "The stars cry of isolation"
+			tasks: [{
+				id: "1B22C23AB26126C6"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5837A875D09D3E35"]
+			id: "13B5F6C9B02E51A0"
+			tasks: [{
+				id: "6B92AEAF16D843CF"
+				item: "gtceu:neodymium_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5837A875D09D3E35"]
+			icon: "createdeco:decal_electrical"
+			id: "3CC0B57321E8DD80"
+			subtitle: "Pick your Poison"
+			tasks: [{
+				id: "42079C449C6796BC"
+				type: "checkmark"
+			}]
+			title: "Better Power Options"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5837A875D09D3E35"]
+			icon: "createdeco:decal_radioactive"
+			id: "24E786091D4DD690"
+			tasks: [{
+				id: "2081CE0B64E50131"
+				item: "createdeco:decal_radioactive"
+				type: "item"
+			}]
+			title: "The Road to Nuclear"
+			x: -3.0d
+			y: 0.0d
+		}
+	]
 	title: "Safe Travels - [EV]"
 }

@@ -1,4 +1,7 @@
 {
+  "framedblocks": {
+    "framed_item_frame": true
+  },
   "enderchests": {
     "hud": true
   },
@@ -60,14 +63,6 @@
     "hud.status": true,
     "hud.contents": true
   },
-  "pneumaticcraft": {
-    "pneumatic": true,
-    "tube_module": true,
-    "entity": true,
-    "redstone": true,
-    "camo": true,
-    "semiblock": true
-  },
   "gtceu": {
     "recipe_logic_provider": true,
     "workable_provider": true,
@@ -83,6 +78,7 @@
     "mod_name": true
   },
   "expatternprovider": {
+    "jade_chamber": true,
     "jade_wireless": true
   },
   "apotheosis": {
@@ -129,7 +125,8 @@
     "level": true
   },
   "delightful": {
-    "crop_progress": true
+    "crop_progress": true,
+    "pie_icons": true
   },
   "supplementaries": {
     "hat_stand": true

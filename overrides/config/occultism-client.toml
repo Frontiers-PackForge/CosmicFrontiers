@@ -37,4 +37,6 @@
 	#The scan range in blocks for the divination rod. Too high might cause lags
 	#Range: > 1
 	divinationRodScanRange = 129
+	#Disables the sound played when a spirit fire successfully crafted an item.
+	disableSpiritFireSuccessSound = false
 

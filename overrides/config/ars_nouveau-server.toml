@@ -47,11 +47,11 @@
 	#Enable warp portals?
 	enableWarpPortals = true
 
-	#Beta Features
-	[warp_portals.beta]
-		#Allow crafting infinite spells. This is a beta feature and may cause crashes.
-		infiniteSpells = false
-		#Limits the crafting infinite spells beta, set a cap to the number of additional glyphs. This is a beta feature and may cause crashes.
-		#Range: 10 ~ 1000
-		infiniteSpellLimit = 30
+#Beta Features
+[beta]
+	#Allow crafting infinite spells. This is a beta feature and may cause crashes.
+	infiniteSpells = false
+	#Limits the crafting infinite spells beta, set a cap to the number of additional glyphs. This is a beta feature and may cause crashes.
+	#Range: 10 ~ 1000
+	infiniteSpellLimit = 30
 

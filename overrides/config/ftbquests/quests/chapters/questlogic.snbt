@@ -3,9 +3,9 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "questlogic"
-	group: ""
+	group: "49DCE46B3EB22AEA"
 	id: "11F4C9727AB4FD82"
-	order_index: 0
+	order_index: 4
 	quest_links: [ ]
 	quests: [{
 		description: [
@@ -27,5 +27,5 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	title: "QuestLogic"
+	title: "&4Dev - QuestLogic"
 }

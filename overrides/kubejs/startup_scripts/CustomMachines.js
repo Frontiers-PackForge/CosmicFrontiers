@@ -22,6 +22,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeType('laminator', true, true)
         .rotationState(RotationState.NON_Y_AXIS)
         .workableTieredHullRenderer(GTCEu.id("block/machines/flora_nurturer")) //add this to the kube folder - Though, let Ghostipedia make these textures pls & ty
+    event.create('aio_lithopgraphy_processor', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV)
+        .recipeType('aio_lithopgraphy_processor', true, true)
+        .rotationState(RotationState.NON_Y_AXIS)
+        .workableTieredHullRenderer(GTCEu.id("block/machines/flora_nurturer")) //add this to the kube folder - Though, let Ghostipedia make these textures pls & ty
     //Mana Fluidizer
     event.create('mana_fluidizer', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV)
         .recipeType('mana_fluidizer', true, true)
@@ -109,6 +113,13 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('frontiers')
         .setEUIO('in')
         .setMaxIOSize(3, 3, 0, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COOLING);
+    event.create('aio_lithopgraphy_processor')
+        .category('frontiers')
+        .setEUIO('in')
+        .setMaxIOSize(6, 3, 2, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);

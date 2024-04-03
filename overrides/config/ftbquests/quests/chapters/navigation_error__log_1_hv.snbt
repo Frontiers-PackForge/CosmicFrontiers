@@ -6,7 +6,7 @@
 	group: "533DAA16C8D9D30C"
 	icon: "gtceu:titanium_ingot"
 	id: "124E2C5B9FAD4967"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -59,9 +59,12 @@
 		}
 		{
 			dependencies: ["1E72D62913EEB4EE"]
+			hide_dependency_lines: true
+			icon: "undergarden:catalyst"
 			id: "22693418B45740CB"
 			shape: "hexagon"
-			subtitle: "NYI - Expect it in 0.3.1"
+			size: 2.0d
+			subtitle: "Welcome to the hot swamp"
 			tasks: [
 				{
 					dimension: "undergarden:undergarden"
@@ -74,38 +77,32 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["22693418B45740CB"]
-			description: [
-				"This actually has nothing to do with gloompers, but the Virulent Mixture found deep within the undergarden. Toxic and Hot Slag containing various rare earths."
-				""
-				"You'll only be able to extract the light REE's for now, but with some EV Circuits you'll be able to extract more."
-			]
-			id: "705DE606D5A96A72"
-			shape: "hexagon"
-			size: 2.0d
-			subtitle: "Gloomper Chemistry - REE Extraction"
-			tasks: [{
-				id: "27DA4A0A3B63DB56"
-				item: "undergarden:virulent_mix_bucket"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 3.0d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1E72D62913EEB4EE"]
+			description: [
+				"Your Next tier of circuits will require new boards."
+				""
+				"Check out JEI on how to craft these."
+			]
+			icon: "gtceu:plastic_printed_circuit_board"
 			id: "1FCA1401D0AD6DA9"
 			shape: "hexagon"
 			subtitle: "The journey to better Circuits!"
-			tasks: [{
-				id: "7AEE882B573B5A04"
-				item: "gtceu:plastic_printed_circuit_board"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7AEE882B573B5A04"
+					item: "gtceu:plastic_printed_circuit_board"
+					type: "item"
+				}
+				{
+					id: "6F24F06EBA0CAC96"
+					item: "gtceu:plastic_circuit_board"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: -1.5d
 		}
@@ -169,7 +166,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -8.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["3B8346823C7FFDD0"]
@@ -239,7 +236,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -12.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["1CA4C29ADA4BF7F3"]
@@ -250,24 +247,25 @@
 				type: "item"
 			}]
 			title: "Your First IV Circuit!"
-			x: 7.0d
-			y: -12.0d
+			x: 7.5d
+			y: -12.5d
 		}
 		{
 			dependencies: [
 				"5F0B8C3DC264D3C4"
 				"19B3D686A4E2FFC9"
 			]
+			description: ["The gravity of this planet is possible to escape.. I should be able to leave the atmosphere quite easily with a rocket. let's get to making one."]
 			id: "7A4E57267B19D462"
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "WARNING - The Moon is NYI - Please Don't Venture forward!"
+			subtitle: "To the Stars Above.."
 			tasks: [{
 				id: "5EF7DC14648BCC16"
 				item: "ad_astra:nasa_workbench"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 7.5d
 			y: -6.0d
 		}
 		{
@@ -356,7 +354,7 @@
 				item: "gtceu:rutile_dust"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 5.5d
 			y: -7.199999999999999d
 		}
 		{
@@ -364,7 +362,11 @@
 				"1B7405FD959C65B3"
 				"40435C47E1FA5619"
 			]
-			description: ["While not explictly needed for &bTitanium&r"]
+			description: [
+				"While not explictly needed for &bTitanium&r, is quite useful."
+				""
+				"You can use this to run EV Chemical recipes in an LCR, see the quest below for more info."
+			]
 			id: "5D3C31DAD5216175"
 			shape: "hexagon"
 			size: 1.5d
@@ -374,8 +376,8 @@
 				item: "gtceu:hv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1E72D62913EEB4EE"]
@@ -386,8 +388,8 @@
 				item: "gtceu:sodium_potassium_bucket"
 				type: "item"
 			}]
-			x: 4.25d
-			y: 1.0d
+			x: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -402,7 +404,7 @@
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 5.5d
 			y: -6.0d
 		}
 		{
@@ -423,7 +425,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 5.0d
+			x: 5.5d
 			y: -8.2d
 		}
 		{
@@ -444,8 +446,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 5.5d
-			y: -9.2d
+			x: 5.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["4ED823D396945C2A"]
@@ -465,8 +467,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.5d
-			y: -9.2d
+			x: 6.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["27078B056DB05DB9"]
@@ -486,8 +488,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 5.5d
-			y: -10.2d
+			x: 5.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["0545E9231494F424"]
@@ -507,8 +509,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.5d
-			y: -10.2d
+			x: 6.0d
+			y: -10.0d
 		}
 		{
 			id: "0545E9231494F424"
@@ -517,8 +519,1419 @@
 				item: "gtceu:bauxite_dust"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -11.2d
+			x: 5.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["22693418B45740CB"]
+			id: "7C280469C5926E0A"
+			tasks: [{
+				id: "30494223155AC3F9"
+				item: "gtceu:raw_cooperite"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["22693418B45740CB"]
+			description: [
+				"This actually has nothing to do with gloompers, but the Virulent Mixture found deep within the undergarden. Toxic and Hot Slag containing various rare earths."
+				""
+				"You'll only be able to extract the light REE's for now, but with some EV Circuits you'll be able to extract more."
+			]
+			id: "3302CF516C57AC40"
+			shape: "hexagon"
+			subtitle: "Gloomper Chemistry - REE Extraction"
+			tasks: [{
+				id: "3692959D963C7794"
+				item: "gtceu:undergarden_virulent_cloggrum_mixture_bucket"
+				type: "item"
+			}]
+			title: "Gloomper Chemistry"
+			x: 15.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1E72D62913EEB4EE"]
+			description: [
+				"If you've been keen, you've been collecting exotic ender eyes throughout the world."
+				""
+				"&aUse them to unlock the end portal, and be prepared for a fight!&r"
+				"Yes, you need to kill the dragon."
+				""
+				""
+				"If you need help finding more eyes, refer to the &bnext pages&r."
+				"[Credit : Directly from the Curseforge Page of End Remastered]"
+				""
+				""
+				"{@pagebreak}"
+				""
+				"1. Old Eye - Found in Desert Pyramids"
+				""
+				"2. Nether Eye - Found in Nether Fortresses"
+				""
+				"3. Cold Eye - Found in Igloos"
+				""
+				"4. Rogue Eye - Found in Jungle Pyramids"
+				"{@pagebreak}"
+				""
+				"5. Black Eye - Found in Buried Chests"
+				""
+				"6. Magical Eye - Dropped by Evokers"
+				""
+				"7. Lost Eye - Found in Mineshafts"
+				""
+				"8. Corrupted Eye - Found in Pillager Outposts"
+				"{@pagebreak}"
+				""
+				"9. Wither Eye - Dropped by The Wither"
+				""
+				"10. Guardian Eye - Get it by Killing Elder Guardian"
+				""
+				"11. Witch Eye - Craft it using the witch pupil"
+				""
+				"12. Cursed Eye - Found in Bastions treasure chest"
+				"{@pagebreak}"
+				""
+				"13. Exotic Eye - Craft it using aquatic items"
+				""
+				"14. Evil Eye - Buy it from a master cleric"
+				""
+				"15. Undead Eye - Craft it using an Undead Soul"
+				""
+				"16. Cryptic Eye - Have a small chance to get it when enchanting"
+			]
+			icon: "minecraft:ender_dragon_spawn_egg"
+			id: "2F7CA5340B77F058"
+			shape: "hexagon"
+			subtitle: "Get to the End"
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "383C105ADEC74236"
+					type: "dimension"
+				}
+				{
+					entity: "minecraft:ender_dragon"
+					id: "62F812212025E6D8"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F7CA5340B77F058"]
+			description: ["You can't process tungsten quite yet, but this vein is mentioned as it's the first location you can get tungsten."]
+			id: "6995E63851268FF9"
+			subtitle: "Your First Source of Tungsten"
+			tasks: [
+				{
+					id: "68D3873961FD8F01"
+					item: "gtceu:raw_scheelite"
+					type: "item"
+				}
+				{
+					id: "238A6738497E93E6"
+					item: "gtceu:raw_tungstate"
+					type: "item"
+				}
+				{
+					id: "05447A99908D704B"
+					item: "gtceu:raw_lithium"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2F7CA5340B77F058"]
+			id: "75D695A6DC21520C"
+			tasks: [
+				{
+					id: "47A42C11D11285A1"
+					item: "gtceu:raw_uraninite"
+					type: "item"
+				}
+				{
+					id: "4BBE1C2874F44327"
+					item: "gtceu:raw_pitchblende"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75D695A6DC21520C"]
+			icon: "gtceu:uranium_hexafluoride_bucket"
+			id: "7AB5E3EF5432B1F6"
+			tasks: [
+				{
+					id: "16AE3AFE8274E8D0"
+					item: "gtceu:uranium_hexafluoride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "3D8BC8C5EB557761"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7AB5E3EF5432B1F6"]
+			icon: "gtceu:depleted_uranium_hexafluoride_bucket"
+			id: "43879AAA41015110"
+			tasks: [
+				{
+					id: "2981D233CC1C7937"
+					item: "gtceu:depleted_uranium_hexafluoride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "270EDC98582AA320"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"23A933976858723B"
+				"19B3D686A4E2FFC9"
+				"6D0B9D44B257407B"
+				"1B7405FD959C65B3"
+				"26E530EE80A932EB"
+			]
+			id: "7C8367D922103E19"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "To EV and Beyond!"
+			tasks: [{
+				id: "7F5E3BB7347B9FBF"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0594F9E432881E41"]
+			description: [
+				"From this point forward, you should more or less ONLY use DT's for recipes. As they allow you to get multiple products from an input verses only one."
+				""
+				"I would recommend setting up Oil and Charcoal Product DT's Asap, as you will need plenty of Petrochem products for EV."
+			]
+			id: "7C29D7AE8F569CA1"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Big Boy Distillery"
+			tasks: [{
+				id: "1DB615D29508D911"
+				item: "gtceu:distillation_tower"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["7CC21CF138C1355B"]
+			id: "504D0A68967D9CEE"
+			tasks: [{
+				id: "1073234F9E64F8D5"
+				item: "gtceu:uranium_235_dust"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["43879AAA41015110"]
+			id: "69C238710AC5E0F5"
+			tasks: [{
+				id: "7ACF88B84594385C"
+				item: "gtceu:uranium_dust"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["22693418B45740CB"]
+			id: "38D3B895535F1DCA"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6D8AEAE6171A5837"
+				item: "gtceu:utherium_gem"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"38D3B895535F1DCA"
+				"7BAC6172AE03B4A9"
+				"26E530EE80A932EB"
+			]
+			id: "23A933976858723B"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "5350D6DE87FB4249"
+				item: "gtceu:luminescent_utherium_gem"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7A4E57267B19D462"
+				"54A449DEE9748513"
+			]
+			description: [
+				"&bLuminite Ingots&r only require an EBF to process. The downside is that melting things down takes a lot of time. I recommend passive EBFS for Luminite."
+				"Or Not; I'm not your overseer."
+				""
+				"&7&oA strange material I've come across is Luminite, I've heard of it being used to make impossibly strong alloys in different dimensions. Maybe It'll be of use to me.&r"
+			]
+			id: "7BAC6172AE03B4A9"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Charged with starpower"
+			tasks: [{
+				id: "35D5533D9E210055"
+				item: "gtceu:luminite_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1E72D62913EEB4EE"]
+			description: ["By this stage you can break down a handful of dusts into flourine. But I'd recommend setting up virulent mixture processing, it gives you a huge amount of flourine to use."]
+			hide_dependency_lines: true
+			id: "44BCFD1B26D87A81"
+			shape: "gear"
+			subtitle: "Sources of Flourine"
+			tasks: [{
+				id: "425368D046382354"
+				item: "gtceu:fluorine_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["303DEBD374B86108"]
+			id: "6D0B9D44B257407B"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6572A7723D94225E"
+				item: "gtceu:polytetrafluoroethylene_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3C09EB9B9644BA39"
+				"13753646456DBC21"
+			]
+			icon: "gtceu:tetrafluoroethylene_bucket"
+			id: "303DEBD374B86108"
+			tasks: [
+				{
+					id: "0E6705CCDA5AF034"
+					item: "gtceu:tetrafluoroethylene_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "2ABBA49A52784030"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7AB5E3EF5432B1F6"]
+			icon: "gtceu:enriched_uranium_hexafluoride_bucket"
+			id: "7CC21CF138C1355B"
+			tasks: [
+				{
+					id: "25F9066BC3D5E17F"
+					item: "gtceu:enriched_uranium_hexafluoride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "2824AFED2E986452"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["44BCFD1B26D87A81"]
+			icon: "gtceu:hydrofluoric_acid_bucket"
+			id: "3C09EB9B9644BA39"
+			tasks: [
+				{
+					id: "5A847D8BDB6C79A7"
+					item: "gtceu:hydrofluoric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "39DC4A960ABDE08C"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7FFF8B89953F25EA"]
+			id: "13753646456DBC21"
+			tasks: [{
+				id: "06607EEAB8F3BA2C"
+				item: "gtceu:chloroform_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1E72D62913EEB4EE"]
+			description: [
+				"You can get huge amounts of methane from processing many petrochemical products."
+				""
+				"Natural Gas / Refinery Gas you can even drill for and that's a great source."
+				"Just don't use it all if you're running Thundering Source Fuel."
+			]
+			hide_dependency_lines: true
+			id: "7FFF8B89953F25EA"
+			shape: "gear"
+			subtitle: "Sources of Flourine"
+			tasks: [{
+				id: "2C8981D210862C7B"
+				item: "gtceu:methane_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"504D0A68967D9CEE"
+				"69C238710AC5E0F5"
+			]
+			icon: "createdeco:decal_radioactive"
+			id: "7E60BE0010F3512E"
+			subtitle: "NYI - 0.4.1+ Content"
+			tasks: [{
+				id: "65B303CCBB487DBE"
+				item: "ftbquests:barrier"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6D0B9D44B257407B"
+				"431BE27F4F577A4E"
+			]
+			id: "0AB9891920FDD799"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The Chemistry King"
+			tasks: [{
+				id: "024CE492B4ECB8E6"
+				item: "gtceu:large_chemical_reactor"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7C29D7AE8F569CA1"]
+			icon: "gtceu:cracker"
+			id: "274838D1F067A8E3"
+			subtitle: "OH JESUS F-"
+			tasks: [
+				{
+					id: "4CAC84DBA78EBC68"
+					item: "gtceu:steam_bucket"
+					type: "item"
+				}
+				{
+					id: "0A0A45FB9795FA8E"
+					item: "gtceu:cracker"
+					type: "item"
+				}
+			]
+			title: "Steam Cracking."
+			x: -6.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"274838D1F067A8E3"
+				"4197F5A76B7A03D5"
+			]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:ethylene_bucket"
+			id: "691377C5C3787A50"
+			tasks: [
+				{
+					id: "031B88E0E04DD233"
+					item: "gtceu:ethylene_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "41E98CA0A5C20405"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -5.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["274838D1F067A8E3"]
+			icon: "gtceu:propane_bucket"
+			id: "241E2706F0186731"
+			tasks: [
+				{
+					id: "0C3F2E6500574E24"
+					item: "gtceu:propane_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "1175894FE8E13C4D"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -7.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["274838D1F067A8E3"]
+			icon: "gtceu:ethane_bucket"
+			id: "3B8A5E82553FB0FF"
+			tasks: [
+				{
+					id: "5B767939585E9899"
+					item: "gtceu:ethane_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "3957BD7C49733699"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -8.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["274838D1F067A8E3"]
+			icon: "gtceu:butene_bucket"
+			id: "6358F8CE1FAEAFF2"
+			tasks: [
+				{
+					id: "079148F2C7138801"
+					item: "gtceu:butene_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "195DEB378BB69E66"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -6.0d
+			y: -12.5d
+		}
+		{
+			dependencies: [
+				"274838D1F067A8E3"
+				"4197F5A76B7A03D5"
+			]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:toluene_bucket"
+			id: "3B2EAE9EC8B3B342"
+			tasks: [
+				{
+					id: "395072D9A70F20EB"
+					item: "gtceu:toluene_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "5562222C761391CE"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["274838D1F067A8E3"]
+			icon: "gtceu:butadiene_bucket"
+			id: "0B1889B50C5A8FC8"
+			tasks: [
+				{
+					id: "7EC9139ADD8AF701"
+					item: "gtceu:butadiene_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "6CF3B8A3DA720A89"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: -12.5d
+		}
+		{
+			dependencies: [
+				"274838D1F067A8E3"
+				"4197F5A76B7A03D5"
+			]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:benzene_bucket"
+			id: "5B19B165E9C825FD"
+			tasks: [
+				{
+					id: "33C9C9A688FEE9C8"
+					item: "gtceu:benzene_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "78D0657C31CFF0BF"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -7.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"274838D1F067A8E3"
+				"4197F5A76B7A03D5"
+			]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:methane_bucket"
+			id: "2C2A6A717A3BB457"
+			tasks: [
+				{
+					id: "7DB76E6727804470"
+					item: "gtceu:methane_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "5A930EF1D04F06FC"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -6.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["274838D1F067A8E3"]
+			icon: "gtceu:propene_bucket"
+			id: "7BEC66B0CABEA6FB"
+			tasks: [
+				{
+					id: "309F7EB0092DB548"
+					item: "gtceu:propene_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "65AC5E84319879DF"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["7C29D7AE8F569CA1"]
+			description: ["This side of the Questbook just shows you all the useful products charcoal byproducts can yield. You probably have a handful of these chemicals in large amounts."]
+			id: "4197F5A76B7A03D5"
+			subtitle: "You probably already made this."
+			tasks: [{
+				id: "1F956B8F93A41645"
+				item: "gtceu:pyrolyse_oven"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1E72D62913EEB4EE"]
+			id: "431BE27F4F577A4E"
+			shape: "gear"
+			subtitle: "More Useful Machines, at HV!"
+			tasks: [{
+				id: "3D692CCFCBB0E9AB"
+				item: "gtceu:rhodium_gear"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7C280469C5926E0A"]
+			id: "454F8A2DEB069C26"
+			tasks: [{
+				id: "441BFFE4DB71E494"
+				item: "gtceu:cooperite_dust"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["454F8A2DEB069C26"]
+			id: "1A6DAD732EC9541E"
+			tasks: [{
+				id: "767CCB77A01D92BC"
+				item: "gtceu:roasted_cooperite_dust"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1A6DAD732EC9541E"]
+			id: "700F6083C17F8E54"
+			tasks: [{
+				id: "7FC738F79BDC1FCF"
+				item: "gtceu:nickel_depleted_cooperite_dust"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["700F6083C17F8E54"]
+			icon: "gtceu:cooperite_solution_bucket"
+			id: "2A4595776BBB557E"
+			tasks: [
+				{
+					id: "2D680160BB1CD978"
+					item: "gtceu:cooperite_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "421C75C4A37E334D"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 12.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2A4595776BBB557E"]
+			icon: "gtceu:plat_depleted_cooperite_solution_bucket"
+			id: "4EC8F27E38E63EE5"
+			tasks: [
+				{
+					id: "5484DCF72C6A05CC"
+					item: "gtceu:plat_depleted_cooperite_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "689165DFBA75CEDD"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 13.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2A4595776BBB557E"]
+			id: "328F029F5E97C3A6"
+			tasks: [{
+				id: "271761016AC78630"
+				item: "gtceu:ammonium_hexachloroplatinate_dust"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["328F029F5E97C3A6"]
+			id: "0F5C6CF27684D6D7"
+			tasks: [{
+				id: "28EECC58A8A38C89"
+				item: "gtceu:platinum_dust"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0F5C6CF27684D6D7"]
+			description: ["Now that you have a consistent source of plat, you can switch away from ethersteel SMD diodes!"]
+			icon: "gtceu:smd_diode"
+			id: "0075B6BE685ABCEE"
+			shape: "gear"
+			subtitle: "Cheaper SMD Diodes"
+			tasks: [{
+				id: "7C15A93D65EA6CE4"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1A6DAD732EC9541E"]
+			icon: "gtceu:nickel_carbonyl_bucket"
+			id: "73653425C6E1A617"
+			tasks: [
+				{
+					id: "11A121CAC0D1EECD"
+					item: "gtceu:nickel_carbonyl_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7FB74B8B30BC41F2"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["73653425C6E1A617"]
+			id: "0B6658382C48F4CC"
+			tasks: [{
+				id: "5E501C16AC3FC36F"
+				item: "gtceu:nickel_dust"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4EC8F27E38E63EE5"]
+			id: "07E724D8A99B34B3"
+			tasks: [{
+				id: "1289E423924B2DE3"
+				item: "gtceu:ammonium_hexachloropalladate_dust"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["07E724D8A99B34B3"]
+			id: "500137095EE1378D"
+			tasks: [{
+				id: "2521EB27CA999621"
+				item: "gtceu:tetraammine_palladium_chloride_dust"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["500137095EE1378D"]
+			id: "7C2579488595C534"
+			tasks: [{
+				id: "72284FF61084ADDF"
+				item: "gtceu:palladium_dust"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["4EC8F27E38E63EE5"]
+			id: "7DA6522EFD0A624F"
+			shape: "hexagon"
+			subtitle: "EV CONTENT - 0.4.1+"
+			tasks: [{
+				id: "267939F6E28221E9"
+				item: "gtceu:platinum_group_sludge_dust"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4197F5A76B7A03D5"]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:methyl_acetate_bucket"
+			id: "3E071BDCB7047EC1"
+			tasks: [
+				{
+					id: "3D7C3F1F42D16F2C"
+					item: "gtceu:methyl_acetate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "1CA8111AF8183500"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4197F5A76B7A03D5"]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:methanol_bucket"
+			id: "216FDC5CAF13EEB9"
+			tasks: [
+				{
+					id: "7D83022363F52956"
+					item: "gtceu:methanol_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "58837885A654FF1C"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -8.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4197F5A76B7A03D5"]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:phenol_bucket"
+			id: "6007EF5ECC0D9F62"
+			tasks: [
+				{
+					id: "1BB5E3AFD1714FB9"
+					item: "gtceu:phenol_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "51BAA6710FBED618"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -3.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4197F5A76B7A03D5"]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:carbon_dioxide_bucket"
+			id: "6152CBE29302313E"
+			tasks: [
+				{
+					id: "6950814444FE4145"
+					item: "gtceu:carbon_dioxide_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "66993F9E947EF67C"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4197F5A76B7A03D5"]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:creosote_bucket"
+			id: "30027F5C3C7856E7"
+			tasks: [
+				{
+					id: "629D075FD09BD5E2"
+					item: "gtceu:creosote_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "261BC08FF27F1060"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4197F5A76B7A03D5"]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:carbon_monoxide_bucket"
+			id: "744EE1FDF82E9214"
+			tasks: [
+				{
+					id: "6EFDBD5D434E2DED"
+					item: "gtceu:carbon_monoxide_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "13B2B1277A774C25"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4197F5A76B7A03D5"]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:ethanol_bucket"
+			id: "31B57A8B6C941113"
+			tasks: [
+				{
+					id: "2301DEC971377924"
+					item: "gtceu:ethanol_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "303251C01823DFC4"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4197F5A76B7A03D5"]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:acetic_acid_bucket"
+			id: "46657DA7A32BBE18"
+			tasks: [
+				{
+					id: "6E1828C62625C3FC"
+					item: "gtceu:acetic_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "265C017E5345B7C8"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -8.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4197F5A76B7A03D5"]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:acetone_bucket"
+			id: "5E631E8E186309DF"
+			tasks: [
+				{
+					id: "5EBE5414FB1D0B3F"
+					item: "gtceu:acetone_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "0BDF7DBCFC9A6B33"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4197F5A76B7A03D5"]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:hydrogen_bucket"
+			id: "3AD7921E0D088FDE"
+			tasks: [
+				{
+					id: "14A0C92CF0E61FE0"
+					item: "gtceu:hydrogen_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "0B409D190B767CEE"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7A4E57267B19D462"]
+			id: "45823A74FF2F334D"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "41D26221F332667F"
+				item: {
+					Count: 1b
+					id: "ad_astra:tier_1_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["45823A74FF2F334D"]
+			id: "54A449DEE9748513"
+			subtitle: "One small step for revenge"
+			tasks: [{
+				dimension: "ad_astra:moon"
+				icon: "botania:tiny_planet"
+				id: "505BBBA89B5B9081"
+				title: "Visit the Moon!"
+				type: "dimension"
+			}]
+			x: 10.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1FCA1401D0AD6DA9"]
+			description: [
+				"For now, you can freely use Sodium Persulfate or Iron III Chloride to make your circuit boards."
+				""
+				"Iron III is useful if you have a surplus of iron and Chlorine."
+				""
+				"Sodium Persulfate is useful if you have a stockpile of sodium hydroxide from industrial processes."
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "4798D38C16770CC6"
+			shape: "gear"
+			subtitle: "Pick your Etching Poison"
+			tasks: [{
+				id: "051BEB42E31855EF"
+				title: "Persulfate or Iron III"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			icon: "gtceu:hydrofluoric_acid_bucket"
+			id: "6904FB06349492BA"
+			tasks: [
+				{
+					id: "6CC3E4E05D1A90F3"
+					item: "gtceu:hydrofluoric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "36C70CA2C4439AC5"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 27.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["78F9D5E55175D63B"]
+			id: "26E530EE80A932EB"
+			shape: "hexagon"
+			tasks: [{
+				id: "2FC08AD3B7CD9801"
+				item: "gtceu:neodymium_dust"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["639BCEB8D8598E15"]
+			id: "78F9D5E55175D63B"
+			tasks: [{
+				count: 64L
+				id: "4F8426F45A4EB507"
+				item: { Count: 64b, id: "gtceu:dried_mixed_lre_precipitate_dust" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["38032C6144C06B2B"]
+			id: "483EDAD71360C4C4"
+			tasks: [{
+				count: 64L
+				id: "63EE6EB3A825DC57"
+				item: { Count: 64b, id: "gtceu:leached_lre_residue_dust" }
+				type: "item"
+			}]
+			x: 11.75d
+			y: 3.5d
+		}
+		{
+			dependencies: ["78F9D5E55175D63B"]
+			id: "1D45DD161ABA718C"
+			shape: "rsquare"
+			tasks: [{
+				id: "4093068F10DD02A0"
+				item: "gtceu:praseodymium_dust"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["78F9D5E55175D63B"]
+			id: "1C7C2E342E8A9654"
+			shape: "rsquare"
+			tasks: [{
+				id: "4F52C03F72E2345C"
+				item: "gtceu:cerium_dust"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["78F9D5E55175D63B"]
+			id: "050F8CA5E095DFD3"
+			shape: "rsquare"
+			tasks: [{
+				id: "14EA11E226A744BE"
+				item: "gtceu:lanthanum_dust"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3302CF516C57AC40"]
+			icon: "gtceu:xenotime_slag_bucket"
+			id: "638AE7406935FF84"
+			tasks: [
+				{
+					id: "7224C47FF1D9722C"
+					item: "gtceu:xenotime_slag_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "621781C7291DFCC7"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["638AE7406935FF84"]
+			icon: "gtceu:xenotime_concentrate_bucket"
+			id: "3EF7D47E41C41475"
+			tasks: [
+				{
+					id: "44324CBABBEF910B"
+					item: "gtceu:xenotime_concentrate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "507E8E4571C62F3F"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3EF7D47E41C41475"]
+			icon: "gtceu:lre_slag_bucket"
+			id: "38032C6144C06B2B"
+			tasks: [
+				{
+					id: "11E3656D15E5A039"
+					item: "gtceu:lre_slag_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "0A6ACB8FF03F1B99"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["38032C6144C06B2B"]
+			icon: "gtceu:mixed_lre_leachate_bucket"
+			id: "3B6079B88AB61576"
+			tasks: [
+				{
+					id: "055D50D90E9D917B"
+					item: "gtceu:mixed_lre_leachate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "03933F1576500CAA"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 11.75d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"483EDAD71360C4C4"
+				"3B6079B88AB61576"
+			]
+			icon: "gtceu:leached_lre_liquor_bucket"
+			id: "5BB7CCEA34AF431E"
+			tasks: [
+				{
+					id: "761E4B5F309CB291"
+					item: "gtceu:mixed_lre_leachate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "08D6B22853FEEB39"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5BB7CCEA34AF431E"]
+			icon: "gtceu:hydrofluoric_acid_bucket"
+			id: "639BCEB8D8598E15"
+			tasks: [
+				{
+					id: "30F378ECF9451C43"
+					item: "gtceu:wet_lre_precipitate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "3C6BE5D61A30073C"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7C280469C5926E0A"]
+			description: [
+				"Platinum and Palladium Production isn't really needed in HV - However it's listed here be cause this is the earliest you CAN do it. - It's useful for SMD diodes."
+				""
+				"Platinum is required for EV+"
+				"same with palladium."
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "5BF71F8ED9059891"
+			shape: "gear"
+			subtitle: "Heads up!"
+			tasks: [{
+				id: "74D95E478FE50492"
+				type: "checkmark"
+			}]
+			title: "About Platinum/Palladium"
+			x: 15.0d
+			y: -3.0d
 		}
 	]
 	title: "Gloomper Chemistry [HV]"
