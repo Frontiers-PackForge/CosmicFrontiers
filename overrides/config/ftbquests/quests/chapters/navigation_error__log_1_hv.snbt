@@ -719,18 +719,11 @@
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "To EV and Beyond!"
-			tasks: [
-				{
-					id: "7F5E3BB7347B9FBF"
-					item: "gtceu:ev_machine_hull"
-					type: "item"
-				}
-				{
-					id: "067AD7FA89B4C4FA"
-					item: "gtceu:neodymium_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F5E3BB7347B9FBF"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
 			x: 5.5d
 			y: 0.0d
 		}
@@ -792,6 +785,7 @@
 			dependencies: [
 				"38D3B895535F1DCA"
 				"7BAC6172AE03B4A9"
+				"26E530EE80A932EB"
 			]
 			id: "23A933976858723B"
 			shape: "hexagon"
@@ -1715,8 +1709,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 17.5d
-			y: 0.0d
+			x: 27.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["78F9D5E55175D63B"]
@@ -1759,9 +1753,8 @@
 			id: "1D45DD161ABA718C"
 			shape: "rsquare"
 			tasks: [{
-				count: 64L
 				id: "4093068F10DD02A0"
-				item: { Count: 64b, id: "gtceu:praseodymium_dust" }
+				item: "gtceu:praseodymium_dust"
 				type: "item"
 			}]
 			x: 7.5d
@@ -1772,9 +1765,8 @@
 			id: "1C7C2E342E8A9654"
 			shape: "rsquare"
 			tasks: [{
-				count: 64L
 				id: "4F52C03F72E2345C"
-				item: { Count: 64b, id: "gtceu:cerium_dust" }
+				item: "gtceu:cerium_dust"
 				type: "item"
 			}]
 			x: 7.5d
@@ -1785,9 +1777,8 @@
 			id: "050F8CA5E095DFD3"
 			shape: "rsquare"
 			tasks: [{
-				count: 64L
 				id: "14EA11E226A744BE"
-				item: { Count: 64b, id: "gtceu:lanthanum_dust" }
+				item: "gtceu:lanthanum_dust"
 				type: "item"
 			}]
 			x: 8.5d
@@ -1921,6 +1912,26 @@
 			]
 			x: 9.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["7C280469C5926E0A"]
+			description: [
+				"Platinum and Palladium Production isn't really needed in HV - However it's listed here be cause this is the earliest you CAN do it. - It's useful for SMD diodes."
+				""
+				"Platinum is required for EV+"
+				"same with palladium."
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "5BF71F8ED9059891"
+			shape: "gear"
+			subtitle: "Heads up!"
+			tasks: [{
+				id: "74D95E478FE50492"
+				type: "checkmark"
+			}]
+			title: "About Platinum/Palladium"
+			x: 15.0d
+			y: -3.0d
 		}
 	]
 	title: "Gloomper Chemistry [HV]"
