@@ -51,28 +51,28 @@ ServerEvents.recipes((event) => {
 
     //Quantum Deposited Wafers - Add more tiers as they're needed for the phosphor/naq/neutronium
     event.recipes.gtceu.chemical_reactor('thundering_mana_deposited_wafer_cr_1')
-        .inputFluids('gtceu:potent_mana 1000')
+        .inputFluids('gtceu:thundering_mana 1000')
         .itemInputs('gtceu:silicon_wafer')
         .itemOutputs('kubejs:thundering_mana_deposited_wafer')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(120)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.chemical_reactor('thundering_mana_deposited_wafer_cr_2')
-        .inputFluids('gtceu:potent_mana 2000')
+        .inputFluids('gtceu:thundering_mana 2000')
         .itemInputs('gtceu:phosphorus_wafer')
         .itemOutputs('4x kubejs:thundering_mana_deposited_wafer')
         .duration(120)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.EV]);
     event.recipes.gtceu.chemical_reactor('thundering_mana_deposited_wafer_cr_3')
-        .inputFluids('gtceu:potent_mana 4000')
+        .inputFluids('gtceu:thundering_mana 4000')
         .itemInputs('gtceu:naquadah_wafer')
         .itemOutputs('8x kubejs:thundering_mana_deposited_wafer')
         .duration(120)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.IV]);
         event.recipes.gtceu.chemical_reactor('thundering_mana_deposited_wafer_cr_4')
-        .inputFluids('gtceu:potent_mana 8000')
+        .inputFluids('gtceu:thundering_mana 8000')
         .itemInputs('gtceu:neutronium_wafer')
         .itemOutputs('16x kubejs:thundering_mana_deposited_wafer')
         .duration(120)
