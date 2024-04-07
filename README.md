@@ -23,8 +23,8 @@ Join the discord https://discord.com/invite/fkxPAq9VQp
 9. A background narrative to help you feel the carefully built universe of Frontiers. 
 
 
-# Current Pack Status: ALPHA 
-## Presently you can progress to the start of HV through our own custom content. 
+# Current Pack Status: In Dev
+## Presently you can progress to the start of EV through our own custom content. 
 Plenty of patches/updates/new content added on the github releases as I work towards each major update!
 Come join the discord to follow dev closely!
 
