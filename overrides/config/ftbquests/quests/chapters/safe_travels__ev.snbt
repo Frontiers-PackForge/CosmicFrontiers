@@ -5,7 +5,7 @@
 	group: "473CC3AD40832CD0"
 	icon: "ad_astra:desh_ingot"
 	id: "6048ED915FA8486C"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -26,6 +26,7 @@
 				item: "gtceu:ev_machine_hull"
 				type: "item"
 			}]
+			title: "EV CHAPTER WIP "
 			x: 0.0d
 			y: 0.0d
 		}
@@ -37,8 +38,8 @@
 				item: "gtceu:neodymium_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5837A875D09D3E35"]
@@ -50,20 +51,669 @@
 				type: "checkmark"
 			}]
 			title: "Better Power Options"
-			x: -2.0d
-			y: -1.5d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5837A875D09D3E35"]
-			icon: "createdeco:decal_radioactive"
-			id: "24E786091D4DD690"
+			id: "413DBCE12C126205"
 			tasks: [{
-				id: "2081CE0B64E50131"
-				item: "createdeco:decal_radioactive"
+				id: "2BCAD7F89DD99022"
+				item: "kubejs:mana_deposited_wafer"
 				type: "item"
 			}]
-			title: "The Road to Nuclear"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["413DBCE12C126205"]
+			id: "06F4BDD255BB8D0F"
+			tasks: [{
+				id: "447A553FFD0BBE16"
+				item: "kubejs:prepared_nano_cpu_wafer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["06F4BDD255BB8D0F"]
+			id: "3DA27217BDFDE615"
+			tasks: [{
+				id: "23AE11A34D96F7CF"
+				item: "gtceu:nano_cpu_wafer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3DA27217BDFDE615"]
+			id: "2B03866847349B9D"
+			tasks: [{
+				id: "1AF5FED5952FFE27"
+				item: "gtceu:nano_cpu_chip"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5837A875D09D3E35"]
+			id: "5177EBAEC06D1F27"
+			tasks: [{
+				id: "161EEF72F6883229"
+				item: "gtceu:uranium_235_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["55791C262EB37FB7"]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:uv_fusion_reactor"
+			id: "74309E61E59DB15E"
+			shape: "hexagon"
+			size: 1.25d
+			title: "FUUUUS- Wait... FISSSSION!"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2D8D515852B1107E"]
+			id: "4E624B18AFD31904"
+			shape: "hexagon"
+			tasks: [{
+				id: "7A0FDEB58B2455D0"
+				item: "gtceu:neptunium_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4E624B18AFD31904"]
+			id: "726C3FB991868CF4"
+			tasks: [{
+				id: "3B2CB908CF1FF729"
+				item: "gtceu:fine_neptunium_wire"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["50ADEFE7F2587791"]
+			id: "5E2D93FAA0E33E3D"
+			tasks: [{
+				id: "20E3ABFE5745EE07"
+				item: "gtceu:plutonium_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"726C3FB991868CF4"
+				"2B03866847349B9D"
+			]
+			id: "2F9A455A45B89627"
+			tasks: [{
+				id: "099770A867A00747"
+				item: "gtceu:nano_processor"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"2F9A455A45B89627"
+				"726C3FB991868CF4"
+			]
+			id: "2480C3B3F10F70EF"
+			tasks: [{
+				id: "6881FB5E0DAA12D0"
+				item: "gtceu:nano_processor_assembly"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5E2D93FAA0E33E3D"]
+			id: "3631A4B5AA4AD349"
+			tasks: [{
+				id: "461C59C8C1949705"
+				item: "gtceu:fine_plutonium_wire"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5837A875D09D3E35"]
+			description: [
+				"Whatever powers the Overseers have put on this world prevents the weak dimensional bridge of the elven portal to fail."
+				""
+				"I will need to devise a better option"
+			]
+			id: "125CD8C8BF8E56AE"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "A feeble attempt"
+			tasks: [{
+				id: "73568F3325E6CDC9"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["125CD8C8BF8E56AE"]
+			id: "151A9B2F42C9284E"
+			subtitle: "A plan forms"
+			tasks: [{
+				id: "61C425497BC01BF6"
+				type: "item"
+			}]
+			title: "Bending to my will"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["151A9B2F42C9284E"]
+			id: "40584BD5E47EF0D7"
+			tasks: [{
+				id: "50399CECDD476662"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"40584BD5E47EF0D7"
+				"7119BCE8C7B992FF"
+				"67B866A84BB5711A"
+			]
+			description: [
+				"It's time to start fighting back."
+				""
+				"Sleeping among the stars, are arbiters of this world."
+				""
+				"I must strike one down to start to bend the laws of this place to my will."
+				""
+				"Only then I can break the shackles that tie me down."
+				""
+				"I'm coming for you."
+			]
+			id: "2C37D2FB314E1C7E"
+			shape: "hexagon"
+			size: 1.75d
+			subtitle: "Armed for Conflict"
+			tasks: [{
+				id: "292672F5B1FE626E"
+				item: "botania:gaia_pylon"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2C37D2FB314E1C7E"]
+			description: [
+				"Beating and swaying along the laws of arbitration, virtues push the limits by controlling god-like powers."
+				""
+				"Directly infusing this godhood into myself would shatter my existence;"
+				"but maybe machine hulls can withstand the punishment."
+			]
+			id: "7821728DED2F1B37"
+			subtitle: "The essence of false causality"
+			tasks: [{
+				id: "1C1E77BE73122C6D"
+				item: "botania:life_essence"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["7821728DED2F1B37"]
+			id: "296B15E940C09EDB"
+			subtitle: "Godly metallurgy"
+			tasks: [{
+				id: "33B6C39E0AA58715"
+				item: "gtceu:virtue_meld_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["296B15E940C09EDB"]
+			id: "44DE661BAA434766"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "74B6CB5AE39A2547"
+				item: "gtceu:iv_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["151A9B2F42C9284E"]
+			id: "67B866A84BB5711A"
+			tasks: [{
+				id: "28A76CED5C4429B7"
+				item: "botania:pixie_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["151A9B2F42C9284E"]
+			id: "7119BCE8C7B992FF"
+			tasks: [{
+				id: "031543695FDC563C"
+				item: "botania:dragonstone"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5837A875D09D3E35"]
+			id: "20B51AE28980123C"
+			tasks: [{
+				id: "6ED858CCCF16AAC7"
+				item: "gtceu:mre_slag_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["74309E61E59DB15E"]
+			id: "60C28AEB7C50E3E3"
+			tasks: [{
+				id: "2D7A07492D9F2F00"
+				item: "embers:steam_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"60C28AEB7C50E3E3"
+				"3CC0B57321E8DD80"
+			]
+			id: "03A8BEC02D989C10"
+			tasks: [{
+				id: "65D07810BB1A5ABE"
+				item: "gtceu:steam_large_turbine"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3CC0B57321E8DD80"]
+			id: "3F1DFE1D8D16C136"
+			tasks: [{
+				id: "5F60C69EF01CD8A2"
+				item: "gtceu:thundering_aerocloud_solution_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3F1DFE1D8D16C136"]
+			id: "7F96E862BBCFD0AE"
+			tasks: [{
+				id: "2996EB6196E9B351"
+				item: "gtceu:thundering_aerocloud_concentration_bucket"
+				type: "item"
+			}]
 			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7F96E862BBCFD0AE"]
+			id: "57323E8B9B2EAF65"
+			tasks: [{
+				id: "15D9FAEB18774B2C"
+				item: "gtceu:thundering_mana_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["57323E8B9B2EAF65"]
+			id: "7A5FFB69AAE757FB"
+			tasks: [{
+				id: "3B0F940F48A3A7C7"
+				item: "gtceu:thunder_boosted_source_diesel_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A5FFB69AAE757FB"]
+			id: "01662E3A99EA70D9"
+			tasks: [{
+				id: "2FD5B58EE646EA25"
+				item: "gtceu:large_combustion_engine"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3CC0B57321E8DD80"]
+			id: "06E6DC704BE42D29"
+			tasks: [{
+				id: "0A2B523BB0F277A6"
+				item: "gtceu:nitrobenzene_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["06E6DC704BE42D29"]
+			id: "62D8A986F474023F"
+			tasks: [{
+				id: "195253EE9C441311"
+				item: "gtceu:gas_large_turbine"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"03A8BEC02D989C10"
+				"62D8A986F474023F"
+				"636BBD84AF9B125B"
+			]
+			id: "44166B73DECEC3CA"
+			tasks: [{
+				id: "554AC50C216CD399"
+				item: {
+					Count: 1b
+					id: "gtceu:turbine_rotor"
+					tag: { }
+				}
+				match_nbt: false
+				title: "\"Any Turbine Rotor\""
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["44166B73DECEC3CA"]
+			description: ["The higher the tier above EV, the more efficient the recipe becomes"]
+			id: "217D18CBDCF23123"
+			tasks: [{
+				id: "72CC81CF85A8869C"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:hv_rotor_holder)item(gtceu:ev_rotor_holder)item(gtceu:iv_rotor_holder)item(gtceu:luv_rotor_holder)item(gtceu:zpm_rotor_holder)item(gtceu:uv_rotor_holder))"
+					}
+				}
+				title: "Any Rotor Holder (HV-UV)"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.5d
+		}
+		{
+			icon: "gtceu:uranium_hexafluoride_bucket"
+			id: "6B051B2F2297D096"
+			tasks: [
+				{
+					id: "4C422603B13B8E87"
+					item: "gtceu:uranium_hexafluoride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7D9028A6F0C2F406"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 12.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"75D695A6DC21520C"
+				"5177EBAEC06D1F27"
+			]
+			icon: "gtceu:uranium_hexafluoride_bucket"
+			id: "3C2F34FF72E0ED3F"
+			tasks: [
+				{
+					id: "3797DCF3F4F6AB91"
+					item: "gtceu:uranium_hexafluoride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7B8E591DB792F87D"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C2F34FF72E0ED3F"]
+			icon: "gtceu:enriched_uranium_hexafluoride_bucket"
+			id: "42FBED68FB3BB538"
+			tasks: [
+				{
+					id: "356786A651B279D0"
+					item: "gtceu:enriched_uranium_hexafluoride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "69D368781377687D"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3C2F34FF72E0ED3F"]
+			icon: "gtceu:depleted_uranium_hexafluoride_bucket"
+			id: "2CF1EE05CF359064"
+			tasks: [
+				{
+					id: "2615586D2050EBE9"
+					item: "gtceu:depleted_uranium_hexafluoride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "65FD6B6386D13A28"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"35FA8E7D591414DE"
+				"42FBED68FB3BB538"
+			]
+			id: "074D3BB6CB85AEF3"
+			tasks: [{
+				id: "768914EAE8D8705A"
+				item: "gtceu:uranium_235_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"43879AAA41015110"
+				"2CF1EE05CF359064"
+			]
+			id: "03B171F27FC1DC6B"
+			tasks: [{
+				id: "15EB48E87F6D375B"
+				item: "gtceu:uranium_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"69C238710AC5E0F5"
+				"03B171F27FC1DC6B"
+				"074D3BB6CB85AEF3"
+			]
+			id: "55791C262EB37FB7"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["74309E61E59DB15E"]
+			id: "26EFA20A9C9A92A3"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Upon my attempts to establish connections with Alfheim, all I am met with is silence."
+				""
+				"Alfheim has been destroyed here, and echos many stars share the same fate."
+				""
+				"I need to stop this."
+			]
+			id: "604E787AB355DF43"
+			shape: "gear"
+			subtitle: "..."
+			tasks: [{
+				id: "067CC4749E269B7F"
+				title: "A price paid forward"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["71BB86F673F75CEF"]
+			id: "4F18985BF0C10A39"
+			shape: "hexagon"
+			tasks: [{
+				id: "0D4E388F306CC922"
+				item: "gtceu:power_substation"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"2480C3B3F10F70EF"
+				"3631A4B5AA4AD349"
+			]
+			id: "2B33818821F17BB4"
+			tasks: [{
+				id: "5A8CEC56DA22B4DE"
+				item: "gtceu:nano_processor_computer"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"2B33818821F17BB4"
+				"3631A4B5AA4AD349"
+			]
+			id: "71BB86F673F75CEF"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "0586462F306B2EE8"
+				item: "gtceu:nano_processor_mainframe"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["66199EEBDDC26CD6"]
+			id: "2D8D515852B1107E"
+			tasks: [{
+				id: "7A04212E9D4DC416"
+				item: "gtceu:neptunium_dust"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E624B18AFD31904"]
+			id: "50ADEFE7F2587791"
+			subtitle: "One More Time"
+			tasks: [{
+				id: "436EB99C6CD074F7"
+				item: "gtceu:plutonium_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["26EFA20A9C9A92A3"]
+			id: "329307C3E9C71752"
+			tasks: [{
+				id: "0CC675A960E9070A"
+				type: "custom"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["329307C3E9C71752"]
+			id: "66199EEBDDC26CD6"
+			tasks: [{
+				id: "1C5E7DC7D6F9FF0C"
+				type: "custom"
+			}]
+			x: 5.0d
 			y: 0.0d
 		}
 	]

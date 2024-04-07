@@ -14,12 +14,11 @@ StartupEvents.registry('item', event => {
     event.create('shredded_magebloom')
     event.create('washed_magebloom')
     //Nano Lithography 
-    event.create('mana_deposited_wafer')
-    event.create('nano_cpu_mask')
-    event.create('prepared_nano_cpu_wafer')
-    event.create('treated_nano_cpu_wafer')
+    event.create('mana_deposited_wafer').displayName('Mana Deposited Wafer')
+    event.create('nano_cpu_mask').displayName('Nano CPU Mask')
+    event.create('prepared_nano_cpu_wafer').displayName('Prepared Nano CPU Wafer')
     //Quantum Lithography
-    event.create('thundering_mana_deposited_wafer')
-    event.create('quantum_cpu_mask')
-    event.create('prepared_quantum_cpu_wafer')
+    event.create('thundering_mana_deposited_wafer').displayName('Thundering Mana Deposited Wafer')
+    event.create('quantum_cpu_mask').displayName('Quantum CPU Mask')
+    event.create('prepared_quantum_cpu_wafer').displayName('Prepared Quantum CPU Wafer')
 })

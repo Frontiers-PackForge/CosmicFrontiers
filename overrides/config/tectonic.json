@@ -1,4 +1,25 @@
 {
-  "__": "Legacy mode should only be enabled for upgraded Tectonic v1 worlds to v2. Once a world is upgraded, turn off legacy mode.",
-  "legacy_mode": false
+  "experimental": {
+    // The increased height setting will change the max y to be 640.
+    // The horizontal mountain scale setting will change the thickness of mountain ranges and the spacing between them.
+    // Lower values = thicker mountain ranges and more space between ranges. 0.15-0.25 is the sweet spot.
+    "horizontal_mountain_scale": 0.25,
+    "increased_height": false,
+    "terrain_scale": 1.125
+  },
+  "features": {
+    // Enabling deeper oceans will lower vanilla ocean monuments to compensate for lower depth.
+    // This DOES NOT apply on Forge 1.18-1.20.1. Ocean monuments will remain at their vanilla levels on those versions.
+    "deeper_oceans": true,
+    "desert_dunes": true,
+    "lava_rivers": true,
+    "underground_rivers": true
+  },
+  "legacy": {
+    // Tectonic v1 worlds have old biome data preventing them from being opened in Tectonic v2.1+.
+    // Enabling legacy mode will add back the biomes and upgrade worlds to the new format upon opening them.
+    // Once a world is upgraded by opening it, turn off legacy mode.
+    "enabled": false
+  },
+  "mod_enabled": true
 }

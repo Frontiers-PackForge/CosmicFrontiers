@@ -5,8 +5,79 @@
 	group: "473CC3AD40832CD0"
 	icon: "botania:tiny_planet"
 	id: "029B622B7CCF27D1"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: ["A simple QB page telling you all the different ore veins and resources  on the moon!"]
+			icon: "ad_astra:moon_globe"
+			id: "5E210BF6CFD50E13"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "The Moon "
+			tasks: [{
+				id: "3D2E33BEC0E594E2"
+				type: "checkmark"
+			}]
+			title: "Welcome to the Moon!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E210BF6CFD50E13"]
+			id: "0C5C9D0B7843B744"
+			tasks: [
+				{
+					id: "75E807F8B74FDD01"
+					item: "gtceu:raw_luminite"
+					type: "item"
+				}
+				{
+					id: "175650FC8CA483F3"
+					item: "gtceu:raw_desh"
+					type: "item"
+				}
+			]
+			title: "Luminite and Desh"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5E210BF6CFD50E13"]
+			id: "143CC26D41210A7D"
+			tasks: [{
+				id: "397D8B147C4F9129"
+				item: "gtceu:raw_ilmenite"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E210BF6CFD50E13"]
+			id: "328E84DB4D379948"
+			tasks: [{
+				id: "2C3F4BDB7D7C753D"
+				item: "gtceu:raw_pyrolusite"
+				type: "item"
+			}]
+			title: "Lunar Manganese"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E210BF6CFD50E13"]
+			description: ["Lunar Grade Silicon won't be needed until IV, however this reminds you of its existence."]
+			id: "7E397F85A8ECA39E"
+			subtitle: "New Sources of Silicon"
+			tasks: [{
+				id: "6BF27B2902F84783"
+				item: "ad_astra:moon_sand"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+	]
 	title: "A Moment Fractured"
 }

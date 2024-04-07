@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "acceptance"
 	group: "67BE70C11B6638CD"
-	icon: "ae2:creative_item_cell"
+	icon: "effortlessbuilding:building_techniques_book"
 	id: "2B86A0B4D03D0932"
 	order_index: 2
 	quest_links: [ ]

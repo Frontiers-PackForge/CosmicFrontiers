@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "dominance"
 	group: "67BE70C11B6638CD"
-	icon: "arseng:creative_source_cell"
+	icon: "effortlessbuilding:building_techniques_book"
 	id: "2249A5F5EA3FB267"
 	order_index: 0
 	quest_links: [ ]

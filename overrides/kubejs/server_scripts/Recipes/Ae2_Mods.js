@@ -268,6 +268,12 @@ ServerEvents.recipes(event => {
     .itemOutputs('ae2:controller')
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
+  //ControllerMK2
+  event.recipes.gtceu.assembler('ae2:controller_assembly2')
+    .itemInputs(['gtceu:galvanized_ethersteel_double_wire', '#gtceu:circuits/hv', 'ae2:energy_acceptor'])
+    .itemOutputs('ae2:controller')
+    .duration(80)
+    .EUt(GTValues.VA[GTValues.HV]);
   //Drive Bay
   event.recipes.gtceu.assembler('ae2:drive_assembly')
     .itemInputs(['8x gtceu:steel_plate', '4x ae2:fluix_smart_cable', '2x #gtceu:circuits/lv', 'gtceu:steel_frame'])
@@ -573,13 +579,13 @@ ServerEvents.recipes(event => {
     let euType = euScale[index]
     let fluids = lamFluids[index]
     let output = outputAmount[index]
-    event.recipes.gtceu.laminator(`ae2:${tier}_smart_cable`)
+    event.recipes.gtceu.laminator(`ae2:smart_cable_craft_${tier}`)
       .itemInputs([`gtceu:${tier}_single_cable`, `gtceu:${tier}_foil`])
       .inputFluids(`tin_alloy 144`)
       .itemOutputs(`${output}x ae2:fluix_smart_cable`)
       .duration(100)
       .EUt(`${euType}`);
-    event.recipes.gtceu.laminator(`ae2:${tier}_smart_dense_cable`)
+    event.recipes.gtceu.laminator(`ae2:smart_dense_cable_${tier}`)
       .itemInputs([`gtceu:${tier}_quadruple_cable`, `8x gtceu:${tier}_foil`])
       .inputFluids(`tin_alloy 144`)
       .itemOutputs(`${output}x ae2:fluix_smart_dense_cable`)

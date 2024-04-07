@@ -47,5 +47,5 @@
 	#Internal value to change an Aether config, giving a nicer lightmap in the dimension.
 	"First Startup - Lightmap Change" = false
 	#Value used to track the version of the Aether: Redux most recently used.
-	"Version ID" = "2.0.7d"
+	"Version ID" = "2.0.8"
 

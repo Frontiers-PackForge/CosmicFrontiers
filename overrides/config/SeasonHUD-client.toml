@@ -32,9 +32,9 @@
 		#Default is true.
 		enable_show_sub_season = true
 		#Show the current day of the season/sub-season?
-		#NONE, SHOW_DAY, SHOW_WITH_TOTAL_DAYS
+		#NONE, SHOW_DAY, SHOW_WITH_TOTAL_DAYS, SHOW_WITH_MONTH
 		#Default is SHOW_DAY.
-		#Allowed Values: NONE, SHOW_DAY, SHOW_WITH_TOTAL_DAYS
+		#Allowed Values: NONE, SHOW_DAY, SHOW_WITH_TOTAL_DAYS, SHOW_WITH_MONTH
 		enable_show_day = "SHOW_DAY"
 
 	[SeasonHUD.Minimap]

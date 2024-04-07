@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
     //Slag separation
     event.recipes.gtceu.centrifuge('cloggurm_mix_spinny')
         .inputFluids('gtceu:undergarden_virulent_cloggrum_mixture 5000')
-        .outputFluids('gtceu:xenotime_concentrate 500')
+        .outputFluids('gtceu:xenotime_slag 500')
         .outputFluids('gtceu:hydrofluoric_acid 4500')
         .duration(600)
         .EUt(GTValues.VA[GTValues.HV]);
@@ -48,7 +48,7 @@ ServerEvents.recipes((event) => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.chemical_reactor('lre_liquor_precipitation_1')
-        // .outputFluids('gtceu:waste_water') - idk if we wanna add that
+        .outputFluids('gtceu:waste_water')
         .inputFluids('gtceu:leached_lre_liquor 700')
         .inputFluids('gtceu:oxalic_acid 300')
         .outputFluids('gtceu:wet_lre_precipitate 1000')

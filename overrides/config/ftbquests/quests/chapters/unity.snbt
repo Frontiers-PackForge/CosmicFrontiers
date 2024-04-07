@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "unity"
 	group: "67BE70C11B6638CD"
-	icon: "ae2:creative_fluid_cell"
+	icon: "effortlessbuilding:building_techniques_book"
 	id: "6D427630D4BB482D"
 	order_index: 1
 	quest_links: [ ]
