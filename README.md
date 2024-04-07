@@ -18,9 +18,7 @@ Join the discord https://discord.com/invite/fkxPAq9VQp
 4. A gradient of difficulty in all aspects, from survival to combat to recipes and more.
 5. A rich atmospheric experience with the use of Shaders and many quality-enhancing mods
 6. Intertwining Many Non-Gregtech Mods Into Gregtech in their own ways - or designing new GT content based on other mods
-7. Manage Sanity, Heat, and your wits to withstand the horrors trapped within your universe.
-8. Level up your Gear and Yourself with Skills and Apotheosis
-9. A background narrative to help you feel the carefully built universe of Frontiers. 
+7. A background narrative to help you feel the carefully built universe of Frontiers. 
 
 
 # Current Pack Status: In Dev
