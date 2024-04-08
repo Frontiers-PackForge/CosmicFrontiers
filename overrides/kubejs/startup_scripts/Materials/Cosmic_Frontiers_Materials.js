@@ -167,18 +167,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.NO_SMELTING
         )
-    //So Help me god please work
-    GTMaterials.get('redstone').addFlags(GTMaterialFlags.GENERATE_LENS)
-    GTMaterials.get('neptunium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTMaterials.get('plutonium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTMaterials.get('curium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTMaterials.get('berkelium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTMaterials.get('californium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTMaterials.get('einsteinium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTMaterials.get('fermium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTMaterials.get('mendelevium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTMaterials.get('nobelium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTMaterials.get('lawrencium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    // GTMaterials.get('certus').fluid()
+
+    // GTMaterials.get('neptunium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    // GTMaterials.get('plutonium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    // GTMaterials.get('curium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    // GTMaterials.get('berkelium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    // GTMaterials.get('californium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    // GTMaterials.get('einsteinium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    // GTMaterials.get('fermium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    // GTMaterials.get('mendelevium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    // GTMaterials.get('nobelium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    // GTMaterials.get('lawrencium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+
 })
 

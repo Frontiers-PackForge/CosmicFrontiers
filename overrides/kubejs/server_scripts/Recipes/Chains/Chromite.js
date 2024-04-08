@@ -90,6 +90,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('gtceu:chemical_reactor/soda_ash_from_sodium_sulfide')
         .itemInputs('3x gtceu:sodium_sulfide_dust')
         .itemInputs('5x gtceu:quicklime_dust')
+        .inputFluids('gtceu:carbon_dioxide 1000')
         .itemOutputs('6x gtceu:soda_ash_dust')
         .itemOutputs('2x gtceu:calcium_sulfide_dust')
         .duration(40)
