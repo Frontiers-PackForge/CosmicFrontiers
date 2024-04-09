@@ -337,6 +337,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:smelting/dust_blue_alloy__demagnetize_from_dust' })
   event.remove({ id: 'gtceu:alloy_smelter/silver_ingot_and_electrotine_dust_into_blue_alloy' })
   event.remove({ id: 'gtceu:alloy_smelter/silver_dust_and_electrotine_dust_into_blue_alloy' })
+  event.remove({ id: 'gtceu:extractor/extract_blue_alloy_dust'})
+  event.remove({ id: 'gtceu:arc_furnace/arc_blue_alloy_dust' })
   event.recipes.gtceu.electric_blast_furnace('gtceu:electric_blast_furnace/blue_alloy_nitrogen')
     .itemInputs('gtceu:blue_alloy_dust')
     .inputFluids('gtceu:nitrogen 1000')
