@@ -1466,31 +1466,31 @@ ServerEvents.recipes(e => {
                 T: 'minecraft:stick',
                 P: 'deep_aether:sunroot_slab'
             })
-//Fieldsprout
-        e.remove({output: 'aether_redux:fieldsprout_door'})
-        e.shaped('aether_redux:fieldsprout_door', [
+//fieldsproot
+        e.remove({output: 'aether_redux:fieldsproot_door'})
+        e.shaped('aether_redux:fieldsproot_door', [
                 'PTR',
                 'PBS',
                 'PPD'
             ],
             {
-                T: 'aether_redux:fieldsprout_trapdoor',
-                P: 'aether_redux:fieldsprout_planks',
+                T: 'aether_redux:fieldsproot_trapdoor',
+                P: 'aether_redux:fieldsproot_planks',
                 B: 'gtceu:iron_ring',
                 S: 'gtceu:iron_screw',
                 D: '#forge:tools/saws',
                 R: '#forge:tools/screwdrivers'
             }
         )
-        e.remove({output: 'aether_redux:fieldsprout_trapdoor'})
-        e.shaped('aether_redux:fieldsprout_trapdoor', [
+        e.remove({output: 'aether_redux:fieldsproot_trapdoor'})
+        e.shaped('aether_redux:fieldsproot_trapdoor', [
                 'PTP',
                 'TTT',
                 'PTP'
             ],
             {
                 T: 'minecraft:stick',
-                P: 'aether_redux:fieldsprout_slab'
+                P: 'aether_redux:fieldsproot_slab'
             })
 //Blightwillow
         e.remove({output: 'aether_redux:blightwillow_door'})
@@ -1544,31 +1544,31 @@ ServerEvents.recipes(e => {
                 T: 'minecraft:stick',
                 P: 'aether_redux:cloudcap_slab'
             })
-//Springshroom
-        e.remove({output: 'aether_redux:springshroom_door'})
-        e.shaped('aether_redux:springshroom_door', [
+//jellyshroom
+        e.remove({output: 'aether_redux:jellyshroom_door'})
+        e.shaped('aether_redux:jellyshroom_door', [
                 'PTR',
                 'PBS',
                 'PPD'
             ],
             {
-                T: 'aether_redux:springshroom_trapdoor',
-                P: 'aether_redux:springshroom_planks',
+                T: 'aether_redux:jellyshroom_trapdoor',
+                P: 'aether_redux:jellyshroom_planks',
                 B: 'gtceu:iron_ring',
                 S: 'gtceu:iron_screw',
                 D: '#forge:tools/saws',
                 R: '#forge:tools/screwdrivers'
             }
         )
-        e.remove({output: 'aether_redux:springshroom_trapdoor'})
-        e.shaped('aether_redux:springshroom_trapdoor', [
+        e.remove({output: 'aether_redux:jellyshroom_trapdoor'})
+        e.shaped('aether_redux:jellyshroom_trapdoor', [
                 'PTP',
                 'TTT',
                 'PTP'
             ],
             {
                 T: 'minecraft:stick',
-                P: 'aether_redux:springshroom_slab'
+                P: 'aether_redux:jellyshroom_slab'
             })
 //Crystal
     e.remove({output: 'aether_redux:crystal_door'})
@@ -2935,24 +2935,24 @@ ServerEvents.recipes(e => {
         {
             P: 'deep_aether:sunroot_log'
         })
-//Fieldsprout
-    e.remove({id: 'aether_redux:fieldsprout_planks'})
-    e.shaped('4x aether_redux:fieldsprout_planks', [
+//fieldsproot
+    e.remove({id: 'aether_redux:fieldsproot_planks'})
+    e.shaped('4x aether_redux:fieldsproot_planks', [
             '   ',
             ' T ',
             ' P '
         ],
         {
             T: '#forge:tools/saws',
-            P: 'aether_redux:fieldsprout_log'
+            P: 'aether_redux:fieldsproot_log'
         })
-    e.shaped('2x aether_redux:fieldsprout_planks', [
+    e.shaped('2x aether_redux:fieldsproot_planks', [
             '   ',
             '   ',
             ' P '
         ],
         {
-            P: 'aether_redux:fieldsprout_log'
+            P: 'aether_redux:fieldsproot_log'
         })
 //Blightwillow
     e.remove({id: 'aether_redux:blightwillow_planks'})
@@ -2992,24 +2992,24 @@ ServerEvents.recipes(e => {
         {
             P: '#aether_redux:cloudcap_stems'
         })
-//Springshroom
-    e.remove({id: 'aether_redux:springshroom_planks'})
-    e.shaped('4x aether_redux:springshroom_planks', [
+//jellyshroom
+    e.remove({id: 'aether_redux:jellyshroom_planks'})
+    e.shaped('4x aether_redux:jellyshroom_planks', [
             '   ',
             ' T ',
             ' P '
         ],
         {
             T: '#forge:tools/saws',
-            P: '#aether_redux:springshroom_stems'
+            P: '#aether_redux:jellyshroom_stems'
         })
-    e.shaped('2x aether_redux:springshroom_planks', [
+    e.shaped('2x aether_redux:jellyshroom_planks', [
             '   ',
             '   ',
             ' P '
         ],
         {
-            P: '#aether_redux:springshroom_stems'
+            P: '#aether_redux:jellyshroom_stems'
         })
 //Crystal
     e.remove({id: 'aether_redux:crystal_planks'})
@@ -3260,9 +3260,9 @@ ServerEvents.recipes(e => {
     //Sunroot
     e.recipes.create.cutting('deep_aether:stripped_sunroot_log', 'deep_aether:sunroot_log').processingTime(50)
     e.recipes.create.cutting('6x deep_aether:sunroot_planks', 'deep_aether:stripped_sunroot_log').processingTime(50)
-    //Fieldsprout
-    e.recipes.create.cutting('aether_redux:stripped_fieldsprout_log', 'aether_redux:fieldsprout_log').processingTime(50)
-    e.recipes.create.cutting('6x aether_redux:fieldsprout_planks', 'aether_redux:stripped_fieldsprout_log').processingTime(50)
+    //fieldsproot
+    e.recipes.create.cutting('aether_redux:stripped_fieldsproot_log', 'aether_redux:fieldsproot_log').processingTime(50)
+    e.recipes.create.cutting('6x aether_redux:fieldsproot_planks', 'aether_redux:stripped_fieldsproot_log').processingTime(50)
     //Blightwillow
     e.recipes.create.cutting('aether_redux:stripped_blightwillow_log', 'aether_redux:blightwillow_log').processingTime(50)
     e.recipes.create.cutting('6x aether_redux:blightwillow_planks', 'aether_redux:stripped_blightwillow_log').processingTime(50)
