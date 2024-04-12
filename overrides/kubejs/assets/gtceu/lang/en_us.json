@@ -133,6 +133,7 @@
   "material.gtceu.aluminium_trifluoride": "Aluminium Trifluoride",
   "material.gtceu.sodium_hydroxide_solution": "Sodium Hydroxide Solution",
   "material.gtceu.virtue_meld": "Virtue Meld",
+  "material.gtceu.molten_virtue_meld": "Molten Virtue Meld",
   "material.gtceu.aether_air": "Aether Air",
   "material.gtceu.liquid_aether_air": "Liquid Aether Air",
   "material.gtceu.tears_of_the_sky": "Tears of the Sky",
@@ -167,6 +168,7 @@
   "material.gtceu.dried_mixed_lre_precipitate": "Dried Mixed LRE Precipitate",
   "material.gtceu.hydrogensilesquioxane": "Hydrogensilesquioxane [HSQ]",
   "material.gtceu.trichlorosilane": "Trichlorosilane",
+  "material.gtceu.psi_superconductor_alpha": "Psi Superconductor Alpha (Ψ-α)",
   
   "material.gtceu.uranium_fuel_salt": "Uranium Fuel Salt",
   "material.gtceu.neptunium_fuel_salt": "Neptunium Fuel Salt",
