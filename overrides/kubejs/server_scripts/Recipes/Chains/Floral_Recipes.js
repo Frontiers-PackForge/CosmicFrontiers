@@ -1,6 +1,10 @@
 
 ServerEvents.recipes(event => {
 
+//Flora Nurturer Recipes
+
+
+
 
 // event.recipes.gtceu.('cosmiccore:pearl_cultivation')
 // .notConsumable('nethersdelight:propelpearl')
