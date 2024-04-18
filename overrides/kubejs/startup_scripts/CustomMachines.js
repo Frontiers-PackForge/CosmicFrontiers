@@ -184,6 +184,31 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
             .build())
         .workableCasingRenderer('cosmiccore:block/casings/solid/highly_conductive_fission_casing', 'gtceu:block/multiblock/fusion_reactor', false);
+
+    event.create('arboreal_growth_facility', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('arboreal_growth_facility')
+        .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
+        .recipeModifier(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('##S##', '##S##', '#####' )
+            .aisle('#TTT#', '#TPT#', '#TTT#',)
+            .aisle('STTTS', 'SP#PS', '#TTT#',)
+            .aisle('#TTT#', '#TCT#', '#TTT#',)
+            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('#', Predicates.any())
+            .where('P', Predicates.blocks(GTBlocks.CASING_STEEL_PIPE.get()))
+            .where('S', Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()))
+            .where('T', Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get())
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
+            )
+            .build())
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/multiblock/fusion_reactor', false);
+
 })
 
 //Recipe Map/type - DEFINE THESE OR THE GAME WILL CRASH
@@ -259,6 +284,13 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('essence_reactor')
         .category('frontiers')
         .setMaxIOSize(6, 6, 6, 6)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.TURBINE)
+    event.create('arboreal_growth_facility')
+        .category('frontiers')
+        .setEUIO('in')
+        .setMaxIOSize(2, 4, 2, 0)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.TURBINE)
 
