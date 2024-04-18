@@ -42,12 +42,14 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:sodium_carbonate_solution 1000')
         .duration(60)
         .EUt(GTValues.VA[GTValues.LV]);
-    //Step 1 | 7 Chromite Dust + 7000L Oxygen + 4000L Sodium Carbonate Solution => 5 Banded Iron Dust + 4000L Carbon Dioxide + 4000L Sodium Chromate Solution
+    //Step 1 | 14 Chromite Dust + 7000L Oxygen + 4000L Sodium Carbonate Solution => 7 Magnetite + 4000L Carbon Dioxide + 4000L Sodium Chromate Solution
+
+
     event.recipes.gtceu.chemical_reactor('gtceu:mixer/sodium_chromate_from_sodium_carbonate')
-        .itemInputs('7x gtceu:chromite_dust')
+        .itemInputs('14x gtceu:chromite_dust')
         .inputFluids('gtceu:oxygen 7000')
         .inputFluids('gtceu:sodium_carbonate_solution 4000')
-        .itemOutputs('5x gtceu:magnetite_dust')
+        .itemOutputs('7x gtceu:magnetite_dust')
         .outputFluids('gtceu:carbon_dioxide 4000')
         .outputFluids('gtceu:sodium_chromate_solution 4000')
         .duration(120)

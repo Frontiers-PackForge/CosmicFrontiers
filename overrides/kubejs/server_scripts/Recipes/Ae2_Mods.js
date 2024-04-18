@@ -579,15 +579,25 @@ ServerEvents.recipes(event => {
     let euType = euScale[index]
     let fluids = lamFluids[index]
     let output = outputAmount[index]
-    event.recipes.gtceu.laminator(`ae2:smart_cable_craft_${tier}`)
-      .itemInputs([`gtceu:${tier}_single_cable`, `gtceu:${tier}_foil`])
-      .inputFluids(`tin_alloy 144`)
+    var polymer;
+    if (index < 3) {
+      polymer = 'gtceu:polyethylene_foil'
+    } else if (index < 7) {
+      polymer = 'gtceu:polytetrafluoroethylene_foil'
+    } else {
+      polymer = 'gtceu:polybenzimidazole_foil'
+    }
+
+
+    event.recipes.gtceu.laminator(`smart_cable_${tier}`)
+      .itemInputs([`gtceu:${tier}_single_cable`, `${polymer}`])
+      .inputFluids(`gtceu:${fluids} 144`)
       .itemOutputs(`${output}x ae2:fluix_smart_cable`)
       .duration(100)
       .EUt(`${euType}`);
-    event.recipes.gtceu.laminator(`ae2:smart_dense_cable_${tier}`)
-      .itemInputs([`gtceu:${tier}_quadruple_cable`, `8x gtceu:${tier}_foil`])
-      .inputFluids(`tin_alloy 144`)
+    event.recipes.gtceu.laminator(`dense_cable_${tier}`)
+      .itemInputs([`gtceu:${tier}_quadruple_cable`, `16x ${polymer}`])
+      .inputFluids(`gtceu:${fluids} 144`)
       .itemOutputs(`${output}x ae2:fluix_smart_dense_cable`)
       .duration(100)
       .EUt(`${euType}`);

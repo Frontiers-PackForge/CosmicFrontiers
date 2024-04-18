@@ -39,6 +39,7 @@ ServerEvents.recipes(event => {
         .itemInputs('6x gtceu:cooperite_dust')
         .itemOutputs('4x gtceu:platinum_nugget')
         .duration(600)
+        .circuit(2)
         .blastFurnaceTemp(2700)
         .EUt(GTValues.VA[GTValues.HV]);
     //Roasted Cooperite
@@ -47,6 +48,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:oxygen 16000')
         .itemOutputs('5x gtceu:roasted_cooperite_dust')
         .outputFluids('gtceu:sulfur_dioxide 8000')
+        .circuit(1)
         .duration(1200)
         .blastFurnaceTemp(2700)
         .EUt(GTValues.VA[GTValues.MV]);
