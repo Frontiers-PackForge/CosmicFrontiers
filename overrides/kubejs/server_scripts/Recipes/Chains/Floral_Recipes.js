@@ -193,8 +193,7 @@ ServerEvents.recipes(event => {
         'croptopia:spinach',
         'croptopia:squash',
         'croptopia:strawberry',
-        'croptopia:sweetpotato',
-        'croptopia:tea',
+        'croptopia:sweetpotato',,
         'croptopia:tomatillo',
         'croptopia:tomato',
         'croptopia:turmeric',
@@ -219,7 +218,7 @@ ServerEvents.recipes(event => {
         .duration(160)
         .EUt(GTValues.VA[GTValues.MV])
     })
-    
+
 //Coffee
     event.recipes.gtceu.flora_nurturer('coffee_nether')
     .notConsumable('croptopia:coffee_seed')
