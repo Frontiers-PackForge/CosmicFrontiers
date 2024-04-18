@@ -23,7 +23,6 @@ ServerEvents.recipes(event => {
         'minecraft:pink_petals',
         'minecraft:spore_blossom',
         'minecraft:sugar_cane',
-        'minecraft:cactus',
         'minecraft:vine',
         'minecraft:sunflower',
         'minecraft:lilac',
@@ -53,21 +52,62 @@ ServerEvents.recipes(event => {
         'minecraft:moss_carpet',
         'farmersdelight:onion',
         'miners_delight:cave_carrot',
+        'vintagedelight:peanut',
+        'vintagedelight:gearo_berry',
+        'delightful:green_tea_leaf',
+        'biomesoplenty:reed',
+        'biomesoplenty:cattail',
+        'biomesoplenty:huge_lily_pad',
+        'biomesoplenty:wilted_lily',
+        'biomesoplenty:icy_iris',
+        'biomesoplenty:white_petals',
+        'biomesoplenty:waterlily',
+        'biomesoplenty:pink_hibiscus',
+        'biomesoplenty:pink_daffodil',
+        'biomesoplenty:orange_cosmos',
+        'biomesoplenty:goldenrod',
+        'biomesoplenty:wildflower',
+        'biomesoplenty:blue_hydrangea',
+        'biomesoplenty:lavender',
+        'biomesoplenty:violet',
+        'biomesoplenty:rose',
+        'biomesoplenty:glowing_moss_carpet',
+        'biomesoplenty:glowing_moss_block',
+        'biomesoplenty:glowshroom',
+        'biomesoplenty:toadstool',
     ]
+
     floraOverworld.forEach(floraOw => {
         event.recipes.gtceu.flora_nurturer(`${floraOw}_nether`)
         .notConsumable(`1x ${floraOw}`)
+        .notConsumable('1x minecraft:dirt')
         .inputFluids('gtceu:nether_sediment_sludge 100')
         .itemOutputs(`1x ${floraOw}`)
         .duration(160)
         .EUt(GTValues.VA[GTValues.LV])
         event.recipes.gtceu.flora_nurturer(`${floraOw}_aether`)
         .notConsumable(`1x ${floraOw}`)
+        .notConsumable('1x minecraft:dirt')
         .inputFluids('gtceu:aether_augmented_sediment 100')
         .itemOutputs(`2x ${floraOw}`)
         .duration(160)
-        .EUt(GTValues.VA[GTValues.LV])
+        .EUt(GTValues.VA[GTValues.MV])
     })
+
+    event.recipes.gtceu.flora_nurturer(`cactus_nether`)
+    .notConsumable('1x minecraft:cactus')
+    .notConsumable('1x minecraft:sand')
+    .inputFluids('gtceu:nether_sediment_sludge 100')
+    .itemOutputs('1x minecraft:cactus')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.LV])
+    event.recipes.gtceu.flora_nurturer(`cactus_aether`)
+    .notConsumable('1x minecraft:cactus')
+    .notConsumable('1x minecraft:sand')
+    .inputFluids('gtceu:aether_augmented_sediment 100')
+    .itemOutputs('2x minecraft:cactus')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.LV])
     
     let floraOverworldSeeds = [
         'minecraft:wheat',
@@ -83,8 +123,27 @@ ServerEvents.recipes(event => {
         'vintagedelight:oat',
         'vintagedelight:ghost_pepper',
         'vintagedelight:cucumber',
-        'corn_delight:corn'
+        'corn_delight:corn',
+        'croptopia:vanilla',
     ]
+
+    floraOverworldSeeds.forEach(floraOw => {
+        event.recipes.gtceu.flora_nurturer(`${floraOw}_nether`)
+        .notConsumable(`1x ${floraOw}_seeds`)
+        .notConsumable('minecraft:dirt')
+        .inputFluids('gtceu:nether_sediment_sludge 100')
+        .itemOutputs(`1x ${floraOw}`)
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.LV])
+        event.recipes.gtceu.flora_nurturer(`${floraOw}_aether`)
+        .notConsumable(`1x ${floraOw}_seeds`)
+        .notConsumable('minecraft:dirt')
+        .inputFluids('gtceu:aether_augmented_sediment 100')
+        .itemOutputs(`2x ${floraOw}`)
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.MV])
+    })
+
     let floraOverworldSeed = [
         'croptopia:artichoke',
         'croptopia:asparagus',
@@ -100,7 +159,6 @@ ServerEvents.recipes(event => {
         'croptopia:cauliflower',
         'croptopia:celery',
         'croptopia:chile_pepper',
-        'croptopia:coffee',
         'croptopia:corn',
         'croptopia:cranberry',
         'croptopia:cucumber',
@@ -141,24 +199,156 @@ ServerEvents.recipes(event => {
         'croptopia:tomato',
         'croptopia:turmeric',
         'croptopia:turnip',
-        'croptopia:vanilla',
         'croptopia:yam',
         'croptopia:zucchini'
     ]
+
+    floraOverworldSeed.forEach(floraOw => {
+        event.recipes.gtceu.flora_nurturer(`${floraOw}_nether`)
+        .notConsumable(`1x ${floraOw}_seed`)
+        .notConsumable('minecraft:dirt')
+        .inputFluids('gtceu:nether_sediment_sludge 100')
+        .itemOutputs(`1x ${floraOw}`)
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.LV])
+        event.recipes.gtceu.flora_nurturer(`${floraOw}_aether`)
+        .notConsumable(`1x ${floraOw}_seed`)
+        .notConsumable('minecraft:dirt')
+        .inputFluids('gtceu:aether_augmented_sediment 100')
+        .itemOutputs(`2x ${floraOw}`)
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.MV])
+    })
+    
+//Coffee
+    event.recipes.gtceu.flora_nurturer('coffee_nether')
+    .notConsumable('croptopia:coffee_seed')
+    .notConsumable('minecraft:dirt')
+    .inputFluids('gtceu:nether_sediment_sludge 100')
+    .itemOutputs('1x croptopia:coffee_beans')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.LV])
+    event.recipes.gtceu.flora_nurturer('coffee_aether')
+    .notConsumable('croptopia:coffee_seed')
+    .notConsumable('minecraft:dirt')
+    .inputFluids('gtceu:aether_augmented_sediment 100')
+    .itemOutputs('2x croptopia:coffee_beans')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.MV])
+
+//Tea
+    event.recipes.gtceu.flora_nurturer('tea_nether')
+    .notConsumable('croptopia:tea_seed')
+    .notConsumable('minecraft:dirt')
+    .inputFluids('gtceu:nether_sediment_sludge 100')
+    .itemOutputs('1x croptopia:tea_leaves')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.LV])
+    event.recipes.gtceu.flora_nurturer('tea_aether')
+    .notConsumable('croptopia:tea_seed')
+    .notConsumable('minecraft:dirt')
+    .inputFluids('gtceu:aether_augmented_sediment 100')
+    .itemOutputs('2x croptopia:tea_leaves')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.MV])
+
     let floraNether = [
-        floraOverworld,
-
+        'biomesoplenty:glowflower',
+        'biomesoplenty:burning_blossom',
+        'biomesoplenty:bramble',
+        'minecraft:nether_wart',
+        'minecraft:twisting_vines',
+        'minecraft:weeping_vines',
+        'minecraft:nether_sprouts',
+        'minecraft:warped_roots',
+        'minecraft:crimson_roots',
+        'minecraft:warped_fungus',
+        'minecraft:crimson_fungus'
     ]
+
+    floraNether.forEach(floraNe => {
+        event.recipes.gtceu.flora_nurturer(`${floraNe}_nether`)
+        .notConsumable(`1x ${floraNe}`)
+        .notConsumable('1x minecraft:netherrack')
+        .inputFluids('gtceu:nether_sediment_sludge 200')
+        .itemOutputs(`1x ${floraNe}`)
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.LV])
+        event.recipes.gtceu.flora_nurturer(`${floraNe}_aether`)
+        .notConsumable(`1x ${floraNe}`)
+        .notConsumable('1x minecraft:netherrack')
+        .inputFluids('gtceu:aether_augmented_sediment 100')
+        .itemOutputs(`2x ${floraNe}`)
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.MV])
+    })
+
     let floraAether = [
-        floraNether,
-
+        'deep_aether:lightcap_mushrooms',
+        'deep_aether:radiant_orchid',
+        'deep_aether:aerlavender',
+        'deep_aether:aether_cattails',
+        'deep_aether:golden_flower',
+        'deep_aether:enchanted_blossom',
+        'deep_aether:sky_tulips',
+        'deep_aether:iaspove',
+        'deep_aether:golden_aspess',
+        'deep_aether:echaisy',
+        'aether:purple_flower',
+        'aether:white_flower',
+        'aether_redux:fungal_growth',
+        'aether_redux:fungal_carpet',
+        'aether_redux:blightmoss_block',
+        'aether_redux:blightmoss_carpet',
+        'aether_redux:iridia',
+        'aether_redux:aurum',
+        'aether_redux:xaelia_patch',
+        'aether_redux:golden_clover',
+        'aether_redux:zyatrix',
+        'aether_redux:luxweed',
+        'aether_redux:spirolyctil',
+        'aether_redux:blightshade',
+        'aether_redux:lumina',
+        'aether_redux:daggerbloom',
+        'aether_redux:theratip',
+        'aether_redux:cloudcap_mushling',
+        'aether_redux:jellyshroom',
+        'aether_redux:shimmerstool',
+        'aether_redux:flareblossom',
+        'aether_redux:infernia',
+        'aether:aechor_petal'
     ]
+
+    floraAether.forEach(floraAe => {
+        event.recipes.gtceu.flora_nurturer(`${floraAe}_aether`)
+        .notConsumable(`1x ${floraAe}`)
+        .notConsumable('1x aether:aether_dirt')
+        .inputFluids('gtceu:aether_augmented_sediment 200')
+        .itemOutputs(`1x ${floraAe}`)
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.MV])
+    })
+
+    event.recipes.gtceu.flora_nurturer('berry_aether')
+    .notConsumable('1x aether:berry_bush')
+    .notConsumable('1x aether:aether_dirt')
+    .inputFluids('gtceu:aether_augmented_sediment 200')
+    .itemOutputs('1x aether:blue_berry')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.flora_nurturer('amber_aether')
+    .notConsumable('1x aether:golden_oak_sapling')
+    .notConsumable('1x deep_aether:golden_heights_grass_block')
+    .inputFluids('gtceu:aether_augmented_sediment 200')
+    .itemOutputs('1x aether:golden_amber')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.MV])
+
     let floraUndergarden = [
-        floraAether,
 
     ]
     let floraLunar = [
-        floraUndergarden,
 
     ]
 //Flora Nurturer Recipes
