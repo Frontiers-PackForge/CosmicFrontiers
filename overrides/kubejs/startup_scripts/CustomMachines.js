@@ -22,10 +22,17 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeType('laminator', true, true)
         .rotationState(RotationState.NON_Y_AXIS)
         .workableTieredHullRenderer(GTCEu.id("block/machines/flora_nurturer")) //add this to the kube folder - Though, let Ghostipedia make these textures pls & ty
-    event.create('aio_lithopgraphy_processor', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV)
-        .recipeType('aio_lithopgraphy_processor', true, true)
+    event.create('aio_lithography_processor', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV)
+        .recipeType('aio_lithography_processor', true, true)
         .rotationState(RotationState.NON_Y_AXIS)
         .workableTieredHullRenderer(GTCEu.id("block/machines/flora_nurturer")) //add this to the kube folder - Though, let Ghostipedia make these textures pls & ty
+
+
+
+    event.create('fake_wireless_hatch', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV)
+        .recipeType('fake_wireless_hatch', true, true)
+        .rotationState(RotationState.NON_Y_AXIS)
+        .workableTieredHullRenderer(GTCEu.id("block/machines/fake_wireless"))
     //Mana Fluidizer
     event.create('mana_fluidizer', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV)
         .recipeType('mana_fluidizer', true, true)
@@ -107,7 +114,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('molten_salt_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('molten_salt_reactor')
-        .appearanceBlock(GTBlocks.FUSION_CASING_MK3)
+        .appearanceBlock(() => Block.getBlock('cosmiccore:high_temperature_fission_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('#TTT#', '#TGT#', '#TGT#', '#TGT#', '#TGT#', '#TGT#', '#TTT#')
             .aisle('TTTTT', 'TQAQT', 'TQAQT', 'TQAQT', 'TQAQT', 'TQAQT', 'TTTTT')
@@ -118,7 +125,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .where('Q', Predicates.blocks(GTBlocks.CASING_TITANIUM_PIPE.get()))
             .where('A', Predicates.blocks(GTBlocks.FIREBOX_TITANIUM.get()))
-            .where('T', Predicates.blocks(GTBlocks.FUSION_CASING_MK3.get())
+            .where('T', Predicates.blocks('cosmiccore:high_temperature_fission_casing')
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
@@ -127,7 +134,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/fusion/fusion_casing_mk3', 'gtceu:block/multiblock/fusion_reactor', false);
+        .workableCasingRenderer('cosmiccore:block/casings/solid/high_temperature_fission_casing', 'gtceu:block/multiblock/fusion_reactor', false);
 
 
     //Large Floral Propagator
@@ -160,14 +167,14 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         //
         .recipeType('pulse_exchange_steam_vent')
         // ["recipeTypes(com.gregtechceu.gtceu.api.recipe.GTRecipeType[])"]('pulse_exchange_steam_vent','pulse_exchange_steam' )
-        .appearanceBlock(GTBlocks.FUSION_CASING_MK2)
+        .appearanceBlock(() => Block.getBlock('cosmiccore:highly_conductive_fission_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('TTT', 'TGT', 'TGT', 'TGT', 'TTT',)
             .aisle('TTT', 'GQG', 'GQG', 'GQG', 'TTT',)
             .aisle('TCT', 'TGT', 'TGT', 'TGT', 'TTT',)
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
             .where('Q', Predicates.blocks(GTBlocks.CASING_TITANIUM_PIPE.get()))
-            .where('T', Predicates.blocks(GTBlocks.FUSION_CASING_MK2.get())
+            .where('T', Predicates.blocks('cosmiccore:highly_conductive_fission_casing')
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
@@ -176,7 +183,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/fusion/fusion_casing_mk2', 'gtceu:block/multiblock/fusion_reactor', false);
+        .workableCasingRenderer('cosmiccore:block/casings/solid/highly_conductive_fission_casing', 'gtceu:block/multiblock/fusion_reactor', false);
 })
 
 //Recipe Map/type - DEFINE THESE OR THE GAME WILL CRASH
@@ -188,7 +195,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
-    event.create('aio_lithopgraphy_processor')
+    event.create('aio_lithography_processor')
         .category('frontiers')
         .setEUIO('in')
         .setMaxIOSize(6, 3, 2, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
@@ -210,6 +217,13 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CENTRIFUGE);
     event.create('molten_salt_reactor')
+        .category('frontiers')
+        .setEUIO('in')
+        .setMaxIOSize(0, 0, 6, 6)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.CENTRIFUGE);
+    event.create('fake_wireless_hatch')
         .category('frontiers')
         .setEUIO('in')
         .setMaxIOSize(0, 0, 6, 6)

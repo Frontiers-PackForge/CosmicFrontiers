@@ -2,7 +2,9 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor('thundering_aerocloud_concentrate')
         .notConsumable('48x gtceu:zano_aluminate_dust')
-        .notConsumable(Fluid.of('gtceu:ammonia', 2000))
+        .chancedFluidInput(Fluid.of('gtceu:ammonia', 2000), 0, 0)
+        // Please hound someone to fix this not working natively, using chancedFluid works but it's extra fluff for something that a different function should support
+        // .notConsumable(Fluid.of('gtceu:ammonia', 2000))
         .inputFluids('gtceu:thundering_aerocloud_solution 2000')
         .inputFluids('gtceu:toluene 1000')
         .inputFluids('gtceu:refinery_gas 2000')

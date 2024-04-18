@@ -28,8 +28,8 @@ ServerEvents.recipes((event) => {
   event.recipes.gtceu.macerator("magebloom_shredding")
     .itemInputs("kubejs:washed_magebloom")
     .itemOutputs("kubejs:shredded_magebloom")
-    .duration(100)
-    .EUt(2);
+    .duration(40)
+    .EUt(16);
 
   //Extraction
   event.recipes.gtceu.chemical_reactor("gtceu:centrifuge/source_oil_spinny")

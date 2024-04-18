@@ -29,7 +29,7 @@ ServerEvents.recipes((event) => {
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.LuV]);
     //Nano Litho    
-    event.recipes.gtceu.aio_lithopgraphy_processor('prepared_nano_wafer')
+    event.recipes.gtceu.aio_lithography_processor('prepared_nano_wafer')
         .inputFluids('gtceu:hydrogensilesquioxane 1000')
         .inputFluids('gtceu:nitric_acid 1000')
         .itemInputs('kubejs:mana_deposited_wafer')
@@ -79,7 +79,7 @@ ServerEvents.recipes((event) => {
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.LuV]);
     //Quantum Litho   
-    event.recipes.gtceu.aio_lithopgraphy_processor('prepared_quantum_wafer')
+    event.recipes.gtceu.aio_lithography_processor('prepared_quantum_wafer')
         .inputFluids('gtceu:hydrogensilesquioxane 1000')
         .inputFluids('gtceu:nitric_acid 1000')
         .itemInputs('kubejs:thundering_mana_deposited_wafer')
