@@ -191,12 +191,14 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
         .recipeModifier(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle('##S##', '##S##', '#####' )
-            .aisle('#TTT#', '#TPT#', '#TTT#',)
-            .aisle('STTTS', 'SP#PS', '#TTT#',)
-            .aisle('#TTT#', '#TCT#', '#TTT#',)
+            .aisle('##TTT##', '##TTT##', '#######' )
+            .aisle('#TTTTT#', '#TTTTT#', '##TTT##',)
+            .aisle('STTTTTS', 'SPMMMPS', '#TTTTT#',)
+            .aisle('#TTCTT#', '#TGGGT#', '##TTT##',)
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
             .where('#', Predicates.any())
+            .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
+            .where('M', Predicates.blocks('minecraft:moss_carpet'))
             .where('P', Predicates.blocks(GTBlocks.CASING_STEEL_PIPE.get()))
             .where('S', Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()))
             .where('T', Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get())
@@ -207,7 +209,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
             )
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/multiblock/fusion_reactor', false);
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/multiblock/mana_fluidizer', false);
 
 })
 
@@ -289,7 +291,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('arboreal_growth_facility')
         .category('frontiers')
         .setEUIO('in')
-        .setMaxIOSize(2, 4, 2, 0)
+        .setMaxIOSize(2, 4, 3, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.TURBINE)

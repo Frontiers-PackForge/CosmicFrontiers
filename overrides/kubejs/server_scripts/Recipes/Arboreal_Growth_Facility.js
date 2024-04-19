@@ -1,4 +1,11 @@
 ServerEvents.recipes(event => {
+    event.recipes.gtceu.assembler('arboreal_growth_facility')
+        .itemInputs(['gtceu:hv_machine_hull', '4x #gtceu:circuits/hv', '2x gtceu:hv_robot_arm', 'gtceu:hv_electric_pump', 'minecraft:redstone_lamp', '2x gtceu:terrasteel_screw'])
+        .inputFluids('gtceu:aether_augmented_sediment 1250')
+        .itemOutputs('gtceu:arboreal_growth_facility')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+
     let TreesOW = [
         'minecraft:oak',
         'minecraft:spruce',
@@ -7,7 +14,6 @@ ServerEvents.recipes(event => {
         'minecraft:acacia',
         'minecraft:dark_oak',
         'minecraft:cherry',
-        'gtceu:rubber',
         'biomesoplenty:fir',
         'biomesoplenty:redwood',
         'biomesoplenty:mahogany',
@@ -17,7 +23,7 @@ ServerEvents.recipes(event => {
         'biomesoplenty:dead',
         'biomesoplenty:magic',
         'biomesoplenty:umbran',
-        'integrateddynamics:menril',
+        'biomesoplenty:hellbark',
         'occultism:otherworld',
         'architects_palette:twisted',
    ]
@@ -38,7 +44,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(`4x ${tree}_log`, '6x minecraft:stick')
         .chancedOutput(`${tree}_sapling`, 1000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV])      
+        .EUt(GTValues.VA[GTValues.MV])
    })
 
     event.recipes.gtceu.arboreal_growth_facility(`mangrove_nether_sediment`)
@@ -56,11 +62,45 @@ ServerEvents.recipes(event => {
         .itemOutputs(`4x minecraft:mangrove_log`, '4x minecraft:mangrove_roots', '6x minecraft:stick')
         .chancedOutput(`minecraft:mangrove_propagule`, 1000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV])   
+        .EUt(GTValues.VA[GTValues.MV])
+        
+    event.recipes.gtceu.arboreal_growth_facility(`rubber_nether_sediment`)
+        .notConsumable(`1x gtceu:rubber_sapling`)
+        .notConsumable(`1x minecraft:dirt`)
+        .inputFluids(['gtceu:nether_sediment_sludge 100', 'gtceu:air 100'])
+        .itemOutputs(`2x gtceu:rubber_log`, '2x gtceu:sticky_resin', '4x minecraft:stick')
+        .chancedOutput(`1x gtceu:rubber_sapling`, 500, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV])
+    event.recipes.gtceu.arboreal_growth_facility(`rubber_aether_sediment`)
+        .notConsumable(`1x gtceu:rubber_sapling`)
+        .notConsumable(`1x minecraft:dirt`)
+        .inputFluids(['gtceu:aether_augmented_sediment 100', 'gtceu:air 100'])
+        .itemOutputs(`4x gtceu:rubber_log`, '4x gtceu:sticky_resin', '6x minecraft:stick')
+        .chancedOutput(`1x gtceu:rubber_sapling`, 1000, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.arboreal_growth_facility(`menril_nether_sediment`)
+        .notConsumable(`1x integrateddynamics:menril_sapling`)
+        .notConsumable(`1x minecraft:dirt`)
+        .inputFluids(['gtceu:nether_sediment_sludge 100', 'gtceu:air 100'])
+        .itemOutputs(`2x integrateddynamics:menril_log`, '2x integrateddynamics:menril_berries', '4x minecraft:stick')
+        .chancedOutput(`1x integrateddynamics:menril_sapling`, 500, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV])
+    event.recipes.gtceu.arboreal_growth_facility(`menril_aether_sediment`)
+        .notConsumable(`1x integrateddynamics:menril_sapling`)
+        .notConsumable(`1x minecraft:dirt`)
+        .inputFluids(['gtceu:aether_augmented_sediment 100', 'gtceu:air 100'])
+        .itemOutputs(`4x integrateddynamics:menril_log`, '4x integrateddynamics:menril_berries', '6x minecraft:stick')
+        .chancedOutput(`1x integrateddynamics:menril_sapling`, 1000, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.MV])
+
 
    let TreesFruit = [
     'croptopia:almond',
-    'croptopia:apple',
     'croptopia:apricot',
     'croptopia:avocado',
     'croptopia:banana',
@@ -83,40 +123,138 @@ ServerEvents.recipes(event => {
     'croptopia:pecan',
     'croptopia:persimmon',
     'croptopia:plum',
-    'croptopia:star_fruit',
+    'croptopia:starfruit',
     'croptopia:walnut',
     'croptopia:cinnamon'
    ]
 
+   TreesFruit.forEach(tree => {
+    event.recipes.gtceu.arboreal_growth_facility(`${tree}_nether_sediment`)
+        .notConsumable(`1x ${tree}_sapling`)
+        .notConsumable(`1x minecraft:dirt`)
+        .inputFluids(['gtceu:nether_sediment_sludge 100', 'gtceu:air 100'])
+        .itemOutputs('2x minecraft:oak_log', `2x ${tree}`, '4x minecraft:stick')
+        .chancedOutput(`${tree}_sapling`, 500, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV])
+    event.recipes.gtceu.arboreal_growth_facility(`${tree}_aether_sediment`)
+        .notConsumable(`1x ${tree}_sapling`)
+        .notConsumable(`1x minecraft:dirt`)
+        .inputFluids(['gtceu:aether_augmented_sediment 100', 'gtceu:air 100'])
+        .itemOutputs('4x minecraft:oak_log', `4x ${tree}`, '6x minecraft:stick')
+        .chancedOutput(`${tree}_sapling`, 1000, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.MV])   
+   })
+
+   event.recipes.gtceu.arboreal_growth_facility(`apple_nether_sediment`)
+        .notConsumable(`1x croptopia:apple_sapling`)
+        .notConsumable(`1x minecraft:dirt`)
+        .inputFluids(['gtceu:nether_sediment_sludge 100', 'gtceu:air 100'])
+        .itemOutputs('2x minecraft:oak_log', '2x minecraft:apple', '6x minecraft:stick')
+        .chancedOutput(`1x croptopia:apple_sapling`, 500, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV])
+    event.recipes.gtceu.arboreal_growth_facility(`apple_aether_sediment`)
+        .notConsumable(`1x croptopia:apple_sapling`)
+        .notConsumable(`1x minecraft:dirt`)
+        .inputFluids(['gtceu:aether_augmented_sediment 100', 'gtceu:air 100'])
+        .itemOutputs('4x minecraft:oak_log', '4x minecraft:apple', '6x minecraft:stick')
+        .chancedOutput(`1x croptopia:apple_sapling`, 1000, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.MV])
+
+
    let TreesArs = [
     'ars_nouveau:green_archwood',
-    'ars_nouveau:vexing_archwood',
-    'ars_nouveau:blazing_archwood',
-    'ars_nouveau:cascading_archwood',
+    'ars_nouveau:purple_archwood',
+    'ars_nouveau:red_archwood',
+    'ars_nouveau:blue_archwood',
    ]
+   let FruitsArs = [
+    'ars_nouveau:mendosteen_pod',
+    'ars_nouveau:bastion_pod',
+    'ars_nouveau:bombegranate_pod',
+    'ars_nouveau:frostaya_pod',
+   ]
+
+   TreesArs.forEach((tree,index) => {
+    let fruit = FruitsArs[index]
+    event.recipes.gtceu.arboreal_growth_facility(`${tree}_nether_sediment`)
+        .notConsumable(`1x ${tree}_sapling`)
+        .notConsumable(`1x minecraft:dirt`)
+        .inputFluids(['gtceu:nether_sediment_sludge 100', 'gtceu:air 100', 'gtceu:source_oils 50'])
+        .itemOutputs(`2x ${tree}_log`, `2x ${fruit}`, '4x minecraft:stick')
+        .chancedOutput(`${tree}_sapling`, 500, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV])
+    event.recipes.gtceu.arboreal_growth_facility(`${tree}_aether_sediment`)
+        .notConsumable(`1x ${tree}_sapling`)
+        .notConsumable(`1x minecraft:dirt`)
+        .inputFluids(['gtceu:aether_augmented_sediment 100', 'gtceu:air 100', 'gtceu:source_oils 50'])
+        .itemOutputs(`4x ${tree}_log`, `4x ${fruit}`, '6x minecraft:stick')
+        .chancedOutput(`${tree}_sapling`, 1000, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.MV])
+   })
 
    let FungiNE = [
     'minecraft:warped',
     'minecraft:crimson'
    ]
-   //'biomesoplenty:hellbark_sapling'
+
+   FungiNE.forEach(tree => {
+    event.recipes.gtceu.arboreal_growth_facility(`${tree}_nether_sediment`)
+        .notConsumable(`1x ${tree}_fungus`)
+        .notConsumable(`1x ${tree}_nylium`)
+        .inputFluids(['gtceu:nether_sediment_sludge 200', 'gtceu:nether_air 100'])
+        .itemOutputs(`2x ${tree}_stem`,'2x minecraft:shroomlight')
+        .chancedOutput(`${tree}_fungus`, 500, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV])
+    event.recipes.gtceu.arboreal_growth_facility(`${tree}_aether_sediment`)
+        .notConsumable(`1x ${tree}_fungus`)
+        .notConsumable(`1x ${tree}_nylium`)
+        .inputFluids(['gtceu:aether_augmented_sediment 100', 'gtceu:nether_air 100'])
+        .itemOutputs(`4x ${tree}_stem`, '4x minecraft:shroomlight')
+        .chancedOutput(`${tree}_fungus`, 1000, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.MV])
+   })
 
    let TreesAE = [
-    'deep_aether:roseroot_sapling',
-    'deep_aether:blue_roseroot_sapling',
-    'deep_aether:yagroot_sapling',
-    'deep_aether:cruderoot_sapling',
-    'deep_aether:conberry_sapling',
-    'deep_aether:sunroot_sapling',
-    'aether:skyroot_sapling',
-    'aether:golden_oak_sapling',
-    'aether_redux:blightwillow_sapling',
-    'aether_redux:blighted_skyroot_sapling',
-    'aether_redux:glacia_sapling',
-    'aether_redux:purple_glacia_sapling',
-    'aether_redux:gilded_oak_sapling',
-    'aether_redux:crystal_sapling',
-    'aether_redux:fieldsproot_sapling',
+    'aether:golden_oak',
+    'deep_aether:roseroot',
+    'deep_aether:yagroot',
+    'deep_aether:cruderoot',
+    'deep_aether:conberry',
+    'deep_aether:sunroot',
+    'aether:skyroot',
+    'aether_redux:blightwillow',
+    'aether_redux:glacia',
+    'aether_redux:crystal',
+    'aether_redux:fieldsproot',
    ]
-   //'aether_redux:zanberry_bush_stem'
+
+   TreesAE.forEach(tree => {
+    if (tree == 'aether:golden_oak') {
+        event.recipes.gtceu.arboreal_growth_facility(`${tree}_aether_sediment`)
+            .notConsumable(`1x ${tree}_sapling`)
+            .notConsumable('1x aether:enchanted_aether_grass_block')
+            .inputFluids(['gtceu:aether_augmented_sediment 200', 'gtceu:aether_air 100'])
+            .itemOutputs(`2x ${tree}_log`, '2x aether:golden_amber', '4x minecraft:stick')
+            .chancedOutput(`${tree}_sapling`, 1000, 0)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.MV])
+    } else {
+        event.recipes.gtceu.arboreal_growth_facility(`${tree}_aether_sediment`)
+            .notConsumable(`1x ${tree}_sapling`)
+            .notConsumable('1x aether:aether_dirt')
+            .inputFluids(['gtceu:aether_augmented_sediment 200', 'gtceu:aether_air 100'])
+            .itemOutputs(`2x ${tree}_log`, '4x minecraft:stick')
+            .chancedOutput(`${tree}_sapling`, 1000, 0)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.MV])
+    }
+   })
 })

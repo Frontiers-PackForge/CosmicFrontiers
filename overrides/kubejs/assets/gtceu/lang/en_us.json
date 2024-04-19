@@ -309,5 +309,7 @@
   "gtceu.pulse_exchange_steam_vent": "Pulse Heat Vent",
   "block.gtceu.pulse_heat_exchanger": "Pulse Heat Exchanger",
   "block.gtceu.molten_salt_reactor": "Molten Salt Reactor (MSR)",
-  "block.gtceu.mana_simulator": "Mana Simulator"
+  "block.gtceu.mana_simulator": "Mana Simulator",
+  "block.gtceu.arboreal_growth_facility": "Arboreal Growth Chamber",
+  "gtceu.arboreal_growth_chamber": "Arboreal Growth Chamber"
 }
