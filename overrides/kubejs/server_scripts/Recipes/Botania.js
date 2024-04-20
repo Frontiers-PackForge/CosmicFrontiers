@@ -104,17 +104,29 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
         .duration(120)
     //ManaSteel Rods
-    event.recipes.gtceu.lathe('ingot_to_rod')
+    event.recipes.gtceu.lathe('manasteel_ingot_to_rod')
         .itemInputs('botania:manasteel_ingot')
         .itemOutputs('2x gtceu:mana_steel_rod')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(12)
-    event.recipes.gtceu.extractor('ingot_to_rod')
+    event.recipes.gtceu.extruder('manasteel_ingot_to_rod')
         .itemInputs('botania:manasteel_ingot')
         .notConsumable('gtceu:rod_extruder_mold')
         .itemOutputs('2x gtceu:mana_steel_rod')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(12)
+    //Terrasteel Rods
+    event.recipes.gtceu.extruder('terrasteel_ingot_to_rod')
+        .itemInputs('botania:terrasteel_ingot')
+        .notConsumable('gtceu:rod_extruder_mold')
+        .itemOutputs('2x gtceu:terrasteel_rod')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(24)
+    event.recipes.gtceu.lathe('terrasteel_ingot_to_rod')
+        .itemInputs('botania:terrasteel_ingot')
+        .itemOutputs('2x gtceu:terrasteel_rod')
+        .EUt(GTValues.VA[GTValues.MV])
+        .duration(24)
 
 
     //Actually starting botania recipes

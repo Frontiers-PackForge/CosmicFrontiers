@@ -191,15 +191,19 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
         .recipeModifier(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle('##TTT##', '##TTT##', '#######' )
-            .aisle('#TTTTT#', '#TTTTT#', '##TTT##',)
-            .aisle('STTTTTS', 'SPMMMPS', '#TTTTT#',)
-            .aisle('#TTCTT#', '#TGGGT#', '##TTT##',)
+            .aisle('##TTT##', '##SGS##', '##SGS##', '##SGS##', '##TTT##', '#######')
+            .aisle('#TTTTT#', '#FTMTF#', '#FT#TF#', '#FT#TF#', '#TTTTT#', '##SSS##')
+            .aisle('TTTTTTT', 'STMMMTS', 'ST###TS', 'ST###TS', 'TT###TT', '#SSSSS#')
+            .aisle('TTTTTTT', 'GMMMMMG', 'G#####G', 'G#####G', 'T#####T', '#SSPSS#')
+            .aisle('TTTTTTT', 'STMMMTS', 'ST###TS', 'ST###TS', 'TT###TT', '#SSSSS#')
+            .aisle('#TTTTT#', '#FTMTF#', '#FT#TF#', '#FT#TF#', '#TTTTT#', '##SSS##')
+            .aisle('##TCT##', '##SGS##', '##SGS##', '##SGS##', '##TTT##', '#######')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
             .where('#', Predicates.any())
             .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
             .where('M', Predicates.blocks('minecraft:moss_carpet'))
-            .where('P', Predicates.blocks(GTBlocks.CASING_STEEL_PIPE.get()))
+            .where('P', Predicates.blocks('dustrial_decor:purple_neon_light'))
+            .where('F', Predicates.blocks('gtceu:terrasteel_frame'))
             .where('S', Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()))
             .where('T', Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get())
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
@@ -209,7 +213,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
             )
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/multiblock/mana_fluidizer', false);
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/mana_fluidizer', false);
 
 })
 
