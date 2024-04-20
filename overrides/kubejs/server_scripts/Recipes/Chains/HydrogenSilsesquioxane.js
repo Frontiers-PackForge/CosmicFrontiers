@@ -16,13 +16,13 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.chemical_reactor('hsq_synth')
-        .chancedFluidInput(Fluid.of('gtceu:sulfuric_acid', 1000), 0, 0)
+        .chancedFluidInput(Fluid.of('gtceu:sulfuric_acid', 500), 0, 0)
         // Please Hound Someone to Fix this not working using a 0% chanced fluid seems super cursed and useless fluff
         // .notConsumable(Fluid.of('gtceu:sulfuric_acid', 1000))
-        .inputFluids('gtceu:trichlorosilane 8000')
-        .inputFluids('minecraft:water 12000')
-        .outputFluids('gtceu:hydrogensilesquioxane 1000')
-        .outputFluids('gtceu:hydrochloric_acid 24000')
+        .inputFluids('gtceu:trichlorosilane 4000')
+        .inputFluids('minecraft:water 6000')
+        .outputFluids('gtceu:hydrogensilesquioxane 500')
+        .outputFluids('gtceu:hydrochloric_acid 12000')
         .duration(120)
         .EUt(GTValues.VA[GTValues.HV]);
 })

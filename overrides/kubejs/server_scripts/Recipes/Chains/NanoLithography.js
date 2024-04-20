@@ -1,4 +1,21 @@
 ServerEvents.recipes((event) => {
+
+    //The Wafer Masks
+    event.recipes.gtceu.aio_lithography_processor('nano_cpu_mask')
+        .inputFluids('gtceu:epoxy 1000')
+        .itemInputs('2x gtceu:carbon_fiber_mesh')
+        .itemOutputs('8x kubejs:nano_cpu_mask')
+        .duration(100)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.HV]);
+
+    event.recipes.gtceu.aio_lithography_processor('quantum_cpu_mask')
+        .inputFluids('gtceu:epoxy 2000')
+        .itemInputs('4x gtceu:carbon_fiber_plate')
+        .itemOutputs('12x kubejs:quantum_cpu_mask')
+        .duration(100)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.EV]);
     //Nano Deposited Wafers - Add more tiers as they're needed for the phosphor/naq/neutronium
     event.recipes.gtceu.chemical_reactor('mana_deposited_wafer_cr_1')
         .inputFluids('gtceu:potent_mana 1000')
@@ -21,7 +38,7 @@ ServerEvents.recipes((event) => {
         .duration(120)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.IV]);
-        event.recipes.gtceu.chemical_reactor('mana_deposited_wafer_cr_4')
+    event.recipes.gtceu.chemical_reactor('mana_deposited_wafer_cr_4')
         .inputFluids('gtceu:potent_mana 8000')
         .itemInputs('gtceu:neutronium_wafer')
         .itemOutputs('16x kubejs:mana_deposited_wafer')
@@ -71,7 +88,7 @@ ServerEvents.recipes((event) => {
         .duration(120)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.IV]);
-        event.recipes.gtceu.chemical_reactor('thundering_mana_deposited_wafer_cr_4')
+    event.recipes.gtceu.chemical_reactor('thundering_mana_deposited_wafer_cr_4')
         .inputFluids('gtceu:thundering_mana 8000')
         .itemInputs('gtceu:neutronium_wafer')
         .itemOutputs('16x kubejs:thundering_mana_deposited_wafer')

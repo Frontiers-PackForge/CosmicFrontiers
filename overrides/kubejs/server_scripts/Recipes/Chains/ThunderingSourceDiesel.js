@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         .duration(160)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.large_chemical_reactor('thundering_mana')
-        .itemInputs('2x gtceu:sodium_hydroxide')
+        .itemInputs('2x gtceu:sodium_hydroxide_dust')
         .inputFluids('gtceu:thundering_aerocloud_concentration 1000')
         .inputFluids('gtceu:potent_mana 3000')
         .outputFluids('gtceu:thundering_mana 4000')

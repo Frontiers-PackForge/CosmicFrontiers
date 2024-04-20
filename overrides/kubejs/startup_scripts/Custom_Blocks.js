@@ -30,16 +30,15 @@ StartupEvents.registry("block", event => {
 
 })
 StartupEvents.registry('block', event => {
-    event.create('cosmolite_coil_block', 'gtceu:coil')
+    event.create('prismatic_tungsten_coil_block', 'gtceu:coil')
         .temperature(4500)
-        .level(0)
-        .energyDiscount(1) // 
-        .tier(10)
-        .coilMaterial(GTMaterials.get('cosmolite'))
+        .level(4)
+        .energyDiscount(2) // 
+        .tier(5)
+        .coilMaterial(GTMaterials.get('prismatic_tungsten'))
         .texture('gtceu:block/coils/prismatic_tungsten_coil')
         .hardness(5)
         .requiresTool(true)
-        .material('metal')
         .soundType(SoundType.NETHERITE_BLOCK)
         .tagBlock('forge:mineable/wrench')
 })

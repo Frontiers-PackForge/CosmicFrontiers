@@ -68,4 +68,54 @@ ServerEvents.recipes(event => {
         .duration(800)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.HV]);
+
+    //Nano Circuits
+    //Processor Changes
+    event.remove({ id: 'gtceu:circuit_assembler/nano_processor_hv_asmd' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_processor_hv_asmd_soldering_alloy' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_processor_hv' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_processor_hv_soldering_alloy' })
+    event.recipes.gtceu.circuit_assembler('nano_processor_hv')
+        .itemInputs(['gtceu:epoxy_printed_circuit_board', 'gtceu:nano_cpu_chip', '16x gtceu:smd_resistor', '8x gtceu:smd_capacitor', '8x gtceu:smd_transistor', '16x gtceu:fine_neptunium_wire'])
+        .inputFluids('gtceu:tin 144')
+        .itemOutputs('2x gtceu:nano_processor')
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.circuit_assembler('nano_processor_hv_soldering_alloy')
+        .itemInputs(['gtceu:epoxy_printed_circuit_board', 'gtceu:nano_cpu_chip', '16x gtceu:smd_resistor', '8x gtceu:smd_capacitor', '8x gtceu:smd_transistor', '16x gtceu:fine_neptunium_wire'])
+        .inputFluids('gtceu:soldering_alloy 72')
+        .itemOutputs('2x gtceu:nano_processor')
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.EV]);
+    //Assembly Changes
+    event.remove({ id: 'gtceu:circuit_assembler/nano_processor_assembly_ev_asmd_soldering_alloy' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_processor_assembly_ev_soldering_alloy' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_processor_assembly_ev_asmd' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_processor_assembly_ev' })
+    event.recipes.gtceu.circuit_assembler('nano_processor_assembly_ev')
+        .itemInputs(['gtceu:epoxy_printed_circuit_board', '4x gtceu:nano_processor', '8x gtceu:smd_inductor', '8x gtceu:smd_capacitor', '16x gtceu:ram_chip', '16x gtceu:fine_neptunium_wire'])
+        .inputFluids('gtceu:tin 288')
+        .itemOutputs('gtceu:nano_processor_assembly')
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.circuit_assembler('nano_processor_assembly_ev_soldering_alloy')
+        .itemInputs(['gtceu:epoxy_printed_circuit_board', '4x gtceu:nano_processor', '8x gtceu:smd_inductor', '8x gtceu:smd_capacitor', '16x gtceu:ram_chip', '16x gtceu:fine_neptunium_wire'])
+        .inputFluids('gtceu:soldering_alloy 144')
+        .itemOutputs('gtceu:nano_processor_assembly')
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.EV]);
+
+
+
+
+
+
+
+
+
+
 })
