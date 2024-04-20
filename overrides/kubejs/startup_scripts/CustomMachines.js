@@ -299,7 +299,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('arboreal_growth_facility')
         .category('frontiers')
         .setEUIO('in')
-        .setMaxIOSize(2, 4, 3, 0)
+        .setMaxIOSize(2, 9, 3, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.TURBINE)
