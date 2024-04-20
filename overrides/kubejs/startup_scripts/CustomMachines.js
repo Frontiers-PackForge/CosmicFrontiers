@@ -193,7 +193,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('arboreal_growth_facility')
         .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
-        .recipeModifier(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
+        .recipeModifier(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('##TTT##', '##SGS##', '##SGS##', '##SGS##', '##TTT##', '#######')
             .aisle('#TTTTT#', '#FTMTF#', '#FT#TF#', '#FT#TF#', '#TTTTT#', '##SSS##')
