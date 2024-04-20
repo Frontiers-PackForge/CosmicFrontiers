@@ -90,9 +90,16 @@ ServerEvents.recipes(event => {
               .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.flora_nurturer('cosmiccore:magebloom_cultivation')
               .notConsumable('ars_nouveau:magebloom_crop')
-              .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 250))
-              .itemOutputs('2x ars_nouveau:magebloom')
-              .chancedOutput(Item.of('ars_nouveau:magebloom', 1), 2500, 750)
+              .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 100))
+              .itemOutputs('4x ars_nouveau:magebloom')
+              .chancedOutput(Item.of('ars_nouveau:magebloom', 2), 2500, 750)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.flora_nurturer('cosmiccore:magebloom_cultivation_aether')
+              .notConsumable('ars_nouveau:magebloom_crop')
+              .inputFluids(Fluid.of('gtceu:aether_augmented_sediment', 100))
+              .itemOutputs('8x ars_nouveau:magebloom')
+              .chancedOutput(Item.of('ars_nouveau:magebloom', 4), 5000, 750)
               .duration(160)
               .EUt(GTValues.VA[GTValues.LV] / 2);
        event.recipes.gtceu.flora_nurturer('cosmiccore:soul_cultivation')
