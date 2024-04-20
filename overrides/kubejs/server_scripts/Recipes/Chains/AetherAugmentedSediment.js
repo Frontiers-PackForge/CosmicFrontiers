@@ -23,5 +23,22 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:argon 2000')
         .duration(80)
         .EUt(GTValues.VA[GTValues.HV]);
+    event.recipes.gtceu.mixer('nutritious_tears_of_the_sky')
+        .itemInputs('4x aether:aechor_petal', '1x aether:golden_amber')
+        .inputFluids('gtceu:tears_of_the_sky 1000')
+        .outputFluids('gtceu:nutritious_tears_of_the_sky 1000')
+        .duration(150)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.fluid_heater('heated_nether_sediment_sludge')
+        .inputFluids('gtceu:nether_sediment_sludge 200')
+        .outputFluids('gtceu:heated_nether_sediment_sludge 200')
+        .duration(32)
+        .EUt(GTValues.VA[GTValues.LV]);
+    event.recipes.gtceu.mixer('aether_augmented_sediment')
+        .itemInputs('2x gtceu:phosphate_dust')
+        .inputFluids('gtceu:nutritious_tears_of_the_sky 250', 'gtceu:heated_nether_sediment_sludge 1000')
+        .outputFluids('gtceu:aether_augmented_sediment 1250')
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV]);
 
 })
