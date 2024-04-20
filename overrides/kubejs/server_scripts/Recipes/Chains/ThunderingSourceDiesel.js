@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         .duration(160)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.large_chemical_reactor('thundering_mana')
-        .itemInputs('2x gtceu:sodium_hydroxide')
+        .itemInputs('2x gtceu:sodium_hydroxide_dust')
         .inputFluids('gtceu:thundering_aerocloud_concentration 1000')
         .inputFluids('gtceu:potent_mana 3000')
         .outputFluids('gtceu:thundering_mana 4000')
@@ -27,7 +27,8 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.EV]);
     event.recipes.gtceu.combustion_generator('boosted_combustion_source_fuel')
-        .inputFluids('gtceu:thunder_boosted_source_diesel 2')
-        .duration(45)
-        .EUt(-32)
+        .inputFluids('gtceu:thunder_boosted_source_diesel 1')
+        .duration(100)
+        .EUt(-GTValues.V[GTValues.LV])
+
 })
