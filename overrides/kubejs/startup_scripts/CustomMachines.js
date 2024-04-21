@@ -188,6 +188,42 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
             .build())
         .workableCasingRenderer('cosmiccore:block/casings/solid/highly_conductive_fission_casing', 'gtceu:block/multiblock/fusion_reactor', false);
+
+        event.create('fake_dimensional_energy_hub', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .appearanceBlock(GTBlocks.HIGH_POWER_CASING)
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('BCCCCCB','B#####B','BCCCCCB','#######','#######')
+            .aisle('CBBBBBC','#BBBBB#','CBBBBBC','#GGGGG#','#GGGGG#')
+            .aisle('CBBBBBC','#BSSSB#','CBBBBBC','#GQQQG#','#GGGGG#')
+            .aisle('CBBBBBC','#BSBSB#','CBBBBBC','#GQQQG#','#GGGGG#')
+            .aisle('CBBBBBC','#BSSSB#','CBBBBBC','#GQQQG#','#GGGGG#')
+            .aisle('CBBBBBC','#BBBBB#','CBBBBBC','#GGGGG#','#GGGGG#')
+            .aisle('BCCMCCB','B#####B','BCCCCCB','#######','#######')
+            .where('M', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('#', Predicates.any())
+            .where('S', Predicates.blocks(GTBlocks.SUPERCONDUCTING_COIL))
+            .where('Q', Predicates.blocks(GTBlocks.PSS_BATTERIES.get())) //NOTE : The Layer with the batteries should be extensible like the DT/PSS (4th slice)
+            .where('B', Predicates.blocks('gtceu:advanced_computer_casing')
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
+            )
+            .where('C', Predicates.blocks(GTBlocks.HIGH_POWER_CASING.get())
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
+            )
+            .where('G', Predicates.blocks('gtceu:laminated_glass'))
+            .build())
+        .workableCasingRenderer('gtceu:block/casings/hpca/high_power_casing', 'gtceu:block/machines/mana_fluidizer', false);
+
+
+
 })
 
 //Recipe Map/type - DEFINE THESE OR THE GAME WILL CRASH
