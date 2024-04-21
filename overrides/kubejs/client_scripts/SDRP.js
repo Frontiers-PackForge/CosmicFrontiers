@@ -121,6 +121,11 @@ ItemEvents.tooltip(event => {
     text.add(2, Text.of('Perfect Overclock').white().bold())
     text.add(3, Text.of('Does not lose energy efficiency when overclocked.').darkPurple())
   })
+  event.addAdvanced('gtceu:arboreal_growth_facility', (item, advanced, text) => {
+    text.add(1, Text.of('Large Scale Arboriculture').gray()) 
+    text.add(2, Text.of('Perfect Overclock').white().bold())
+    text.add(3, Text.of('Does not lose energy efficiency when overclocked.').darkPurple())
+  })
   event.addAdvanced({ mod: 'sophisticatedstorage' }, (item, advanced, text) => {
     text.add(1, Text.of('WARNING : SOPHISTICATED STORAGE WILL BE REMOVED IN 0.6.0').yellow()) 
   })
