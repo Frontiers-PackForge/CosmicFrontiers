@@ -106,10 +106,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ore()
         .dust()
         .flags(
-            GTMaterialFlags.NO_UNIFICATION,
+            GTMaterialFlags.GENERATE_PLATE,
+            //GTMaterialFlags.NO_UNIFICATION,
             GTMaterialFlags.NO_SMELTING
         )
-        // .element(GTElements.get('prism_tungstensteel'))
+        .element(GTElements.get('desh'))
         .iconSet(GTMaterialIconSet.getByName('starry'))
     event.create('prismatic_tungstensteel')
         .color(0x6f42cf)
