@@ -11,5 +11,6 @@
     event.create('virtue', 0, 450, -1, null, 'ERROR₉₉₉', false)
     event.create('trichlorosilane', 135, 135, -1, null, 'HCl3Si', false)
     event.create('hydrogensilesquioxane', 135, 135, -1, null, '[HSiO3/2]₈', false)
+    event.create('desh', 135, 135, -1, null, 'De', false)
     //subsript (copy and paste) ₂₃₄₅₆₇₈₉₀
  })

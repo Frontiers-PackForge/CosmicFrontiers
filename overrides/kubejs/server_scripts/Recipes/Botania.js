@@ -1265,7 +1265,355 @@ ServerEvents.recipes(event => {
         .itemOutputs('botania:flask')
         .duration(32)
         .EUt(GTValues.VA[GTValues.LV])
+    //Conjuration Catalyst
+    event.remove({ output: 'botania:conjuration_catalyst' })
+    event.shaped('botania:conjuration_catalyst', [
+        'LEL',
+        'PCP',
+        'LDL'
+    ], {
+        C: 'botania:alchemy_catalyst',
+        L: 'botania:livingrock',
+        P: 'gtceu:elementium_plate',
+        D: 'botania:pixie_dust',
+        E: '#gtceu:circuits/ev'
 
+    })
+    //Elven Mana Spreader
+    event.remove({ output: 'botania:elven_spreader' })
+    event.shaped('botania:elven_spreader', [
+        'DDD',
+        'EPG',
+        'DDD'
+    ], {
+        D: 'gtceu:dreamwood_plate',
+        E: 'gtceu:elementium_plate',
+        P: '#botania:petals',
+        G: 'gtceu:glass_lens'
+    })
+    //Natura Pylons
+    event.remove({ output: 'botania:natura_pylon' })
+    event.shaped('botania:natura_pylon', [
+        ' P ',
+        'PYP',
+        ' P '
+    ], {
+        Y: 'botania:mana_pylon',
+        P: 'gtceu:terrasteel_plate'
+    })
+    //Gaia Pylons
+    event.remove({ output: 'botania:gaia_pylon' })
+    event.shaped('botania:gaia_pylon', [
+        ' D ',
+        'PYP',
+        ' D '
+    ], {
+        Y: 'botania:natura_pylon',
+        P: 'gtceu:elementium_plate',
+        D: 'botania:pixie_dust'
+    })
+    //Drum of the Gathering
+    event.remove({ output: 'botania:drum_gathering' })
+    event.shaped('botania:drum_gathering', [
+        'DWD',
+        'SPS',
+        'DWD'
+    ], {
+        W: 'cosmiccore:waxed_leather',
+        S: 'gtceu:dreamwood_screw',
+        D: 'gtceu:dreamwood_plate',
+        P: 'gtceu:elementium_plate'
+    })
+    //Spawner Claw
+    event.remove({ output: 'botania:spawner_claw' })
+    event.shaped('botania:spawner_claw', [
+        'PBP',
+        'RMR',
+        'E E'
+    ], {
+        P: 'gtceu:elementium_plate',
+        B: 'minecraft:blaze_powder',
+        R: 'gtceu:elementium_rod',
+        M: 'botania:manasteel_block',
+        E: 'botania:ender_air_bottle'
+    })
+    //Spark Changer
+    event.remove({ output: 'botania:spark_changer' })
+    event.shaped('botania:spark_changer', [
+        '   ',
+        'PLP',
+        'LRL'
+    ], {
+        P: 'gtceu:elementium_plate',
+        L: 'gtceu:livingrock_plate',
+        R: 'gtceu:redstone_plate',
+    })
+    //Crafty Crate
+    event.remove({ output: 'botania:crafty_crate' })
+    event.shaped('botania:crafty_crate', [
+        'DCD',
+        'STS',
+        'DID'
+    ], {
+        D: 'gtceu:dreamwood_plate',
+        T: 'minecraft:crafting_table',
+        C: 'gtceu:ev_conveyor_module',
+        S: 'gtceu:dreamwood_screw',
+        I: '#gtceu:circuits/hv'
+    })
+    //Skydirt Rod
+    event.remove({ output: 'botania:skydirt_rod' })
+    event.shaped('botania:skydirt_rod', [
+        ' EA',
+        ' DE',
+        'P  '
+    ], {
+        D: 'botania:dirt_rod',
+        A: 'botania:rune_air',
+        E: 'gtceu:elementium_screw',
+        P: 'botania:pixie_dust'
+    })
+    //Rod of the Terra Firma
+    event.remove({ output: 'botania:terraform_rod' })
+    event.shaped('botania:terraform_rod', [
+        'WCT',
+        'ADC',
+        'PUS'
+    ], {
+        D: 'botania:dirt_rod',
+        C: 'gtceu:terrasteel_screw',
+        T: 'gtceu:terrasteel_plate',
+        A: 'botania:rune_autumn',
+        W: 'botania:rune_winter',
+        S: 'botania:rune_spring',
+        U: 'botania:rune_summer',
+        P: 'botania:livingwood_twig'
+    })
+    //Rod of the Bifrost
+    event.remove({ output: 'botania:rainbow_rod' })
+    event.shaped('botania:rainbow_rod', [
+        ' SD',
+        'PES',
+        'EP '
+    ], {
+        D: 'botania:dragonstone',
+        S: 'gtceu:elementium_screw',
+        E: 'gtceu:elementium_rod',
+        P: 'botania:pixie_dust'
+    })
+    //Gravity Rod
+    event.remove({ output: 'botania:gravity_rod' })
+    event.shaped('botania:gravity_rod', [
+        ' MD',
+        'SEM',
+        'ES '
+    ], {
+        D: 'botania:dragonstone',
+        S: 'gtceu:elementium_screw',
+        E: 'botania:dreamwood_twig',
+        M: 'gtceu:ev_emitter'
+    })
+    //Mana Mirror
+    event.remove({ output: 'botania:mana_mirror' })
+    event.shaped('botania:mana_mirror', [
+        ' MD',
+        'SET',
+        'ES '
+    ], {
+        D: 'botania:mana_tablet',
+        S: 'gtceu:terrasteel_screw',
+        E: 'botania:livingwood_twig',
+        M: 'botania:mana_pearl',
+        T: 'botania:terrasteel_ingot'
+    })
+    //Extrapolated Bucket
+    event.remove({ output: 'botania:open_bucket' })
+    event.shaped('botania:open_bucket', [
+        '   ',
+        'SHS',
+        ' S '
+    ], {
+        S: 'gtceu:elementium_plate',
+        H: '#forge:tools/hammers'
+    })
+    event.recipes.gtceu.bender('gtceu:bender/open_bucket')
+        .itemInputs('3x gtceu:elementium_plate')
+        .circuit(12)
+        .itemOutputs('botania:open_bucket')
+        .EUt(GTValues.VA[GTValues.ULV])
+        .duration(140)
+    //Slime In A Bottle
+    event.remove({ output: 'botania:slime_bottle' })
+    event.shaped('botania:slime_bottle', [
+        ' P ',
+        'ASA',
+        'AAA'
+    ], {
+        S: 'minecraft:slime_block',
+        A: 'botania:elf_glass',
+        P: 'gtceu:elementium_plate'
+    })
+    //Greater Mana Ring
+    event.remove({ output: 'botania:mana_ring_greater' })
+    event.shaped('botania:mana_ring_greater', [
+        ' P ',
+        'PRP',
+        ' P '
+    ], {
+        R: 'botania:mana_ring',
+        P: 'gtceu:terrasteel_plate'
+    })
+    //Greater Aura Ring
+    event.remove({ output: 'botania:aura_ring_greater' })
+    event.shaped('botania:aura_ring_greater', [
+        ' P ',
+        'PRP',
+        ' P '
+    ], {
+        R: 'botania:aura_ring',
+        P: 'gtceu:terrasteel_plate'
+    })
+    //Greater Magnet Ring
+    event.remove({ output: 'botania:magnet_ring_greater' })
+    event.shaped('botania:magnet_ring_greater', [
+        ' P ',
+        'PRP',
+        ' P '
+    ], {
+        R: 'botania:magnet_ring',
+        P: 'gtceu:terrasteel_plate'
+    })
+    //Great Fairy Ring
+    event.remove({ output: 'botania:pixie_ring' })
+    event.shaped('botania:pixie_ring', [
+        'DP ',
+        'P P',
+        ' P '
+    ], {
+        D: 'botania:pixie_dust',
+        P: 'gtceu:elementium_plate'
+    })
+    //Ring of Far Reach
+    event.remove({ output: 'botania:reach_ring' })
+    event.shaped('botania:reach_ring', [
+        'RP ',
+        'P P',
+        ' P '
+    ], {
+        R: 'botania:rune_pride',
+        P: 'gtceu:elementium_plate'
+    })
+    //Globetrotter's Sash
+    event.remove({ output: 'botania:super_travel_belt' })
+    event.shaped('botania:super_travel_belt', [
+        ' P ',
+        'PSP',
+        'VP '
+    ], {
+        S: 'botania:travel_belt',
+        P: 'gtceu:elementium_plate',
+        V: 'botania:life_essence'
+    })
+    //Cloak
+let cloak = (wool, trimMaterial, itemName) => {
+    event.remove({ output: itemName })
+    event.shaped(itemName, [
+        'W W',
+        'WVW',
+        'WTW'
+    ], {
+        W: wool,
+        T: trimMaterial,
+        V: 'botania:life_essence'
+    })
+}
+cloak('minecraft:white_wool', 'gtceu:electrum_plate', 'botania:holy_cloak')
+cloak('minecraft:black_wool', 'gtceu:red_alloy_plate', 'botania:unholy_cloak')
+cloak('minecraft:light_gray_wool', 'gtceu:emerald_plate', 'botania:balance_cloak')
+    //Flugel Tiara
+    event.remove({ output: 'botania:flight_tiara' })
+    event.shaped('botania:flight_tiara', [
+        'S S',
+        'PVP',
+        'WEW'
+    ], {
+        P: 'gtceu:elementium_plate',
+        S: 'gtceu:elementium_screw',
+        E: 'botania:ender_air_bottle',
+        W: 'botania:rune_air',
+        V: 'botania:life_essence'
+    })
+    //Rod of the Unstable Reservoir
+    event.remove({ output: 'botania:missile_rod' })
+    event.shaped('botania:missile_rod', [
+        'VDD',
+        'STD',
+        'TSV'
+    ], {
+        S: 'gtceu:elementium_screw',
+        D: 'botania:dragonstone',
+        T: 'botania:dreamwood_twig',
+        V: 'botania:life_essence'
+    })
+    //Nimbus Amulet
+    event.remove({ output: 'botania:super_cloud_pendant' })
+    event.shaped('botania:super_cloud_pendant', [
+        'RRR',
+        'RVR',
+        'GCG'
+    ], {
+        R: 'gtceu:elementium_rod',
+        C: 'botania:cloud_pendant',
+        V: 'botania:life_essence',
+        G: 'minecraft:ghast_tear'
+    })
+    //Black Hole Talisman
+    event.remove({ output: 'botania:black_hole_talisman' })
+    event.shaped('botania:black_hole_talisman', [
+        'BVB',
+        'BEB',
+        'BBB'
+    ], {
+        B: 'gtceu:elementium_bolt',
+        E: 'botania:ender_air_bottle',
+        V: 'botania:life_essence'
+    })
+    //Shard of Laputa
+    event.remove({ output: 'botania:astrolabe' })
+    event.shaped('botania:astrolabe', [
+        ' EV',
+        'EPE',
+        'VE '
+    ], {
+        P: 'gtceu:elementium_plate',
+        E: 'gtceu:elementium_rod',
+        V: 'botania:life_essence'
+    })
+    //Charm of the Diva
+    event.remove({ output: 'botania:diva_charm' })
+    event.shaped('botania:diva_charm', [
+        'VST',
+        'PRS',
+        ' PV'
+    ], {
+        T: 'botania:tiny_planet',
+        S: 'gtceu:gold_screw',
+        P: 'gtceu:gold_plate',
+        R: 'botania:rune_pride',
+        V: 'botania:life_essence'
+    })
+    //Corporea Index
+    event.remove({ output: 'botania:corporea_index' })
+    event.shaped('botania:corporea_index', [
+        'EPE',
+        'PCP',
+        'DPD'
+    ], {
+        T: 'botania:corporea_spark',
+        P: 'gtceu:glass_plate',
+        E: 'botania:ender_air_bottle',
+        V: 'botania:dragonstone'
+    })
     //Mana Infusion Recipes
     //Dumping this example here for mana infusions, took me a while to figure it out. Will do the same for all recipe types.
     //event.recipes.botania.mana_infusion('input', 'output', 'mana', 'catalyst')
