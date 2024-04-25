@@ -36,8 +36,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.NO_SMELTING
-        
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FRAME
         )
 
     event.create('mana_steel')
@@ -67,6 +67,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('galvanized_ethersteel')
         .color(0xcf325b)
         .ingot()
+        .fluid()
         .element(GTElements.get('ether_steel'))
         .iconSet(GTMaterialIconSet.SHINY)
         .cableProperties(GTValues.V[GTValues.HV], 2, 0, true)
