@@ -1,9 +1,18 @@
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
+    //Molten Salt Nuclear
+    // Oxide -> Hexafluoride -> Split into depleted and enriched -> turned into fuel
+    //Reprocessing T1
+    // Superheated X waste fuel -> Cooled -> Centrifuged
+    //Reproc T2
+    //Cool Superheated Waste Fuel -> Splitting Agent of some kind -> break away the nuclear products from the flinak and fluoride
     event.create('flinak')
         .fluid()
         .color(0x2b2b2b)
-    //Hexafluorides
+    //Hexafluorides and Oxides
+    event.create('neptunium_oxide')
+        .dust()
+        .color(0x223342)
     event.create('neptunium_hexafluoride')
         .fluid()
         .color(0x223342)
@@ -13,6 +22,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('enriched_neptunium_hexafluoride')
         .fluid()
         .color(0x223342)
+    event.create('plutonium_oxide')
+        .dust()
+        .color(0x400202)
     event.create('plutonium_hexafluoride')
         .fluid()
         .color(0x400202)
@@ -23,33 +35,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0x400202)
 
-    // event.create('americium_fuel_salt')
-    //     .fluid()
-    //     .color(0x02402d)
-    // event.create('curium_fuel_salt')
-    //     .fluid()
-    //     .color(0x330f03)
-    // event.create('berkelium_fuel_salt')
-    //     .fluid()
-    //     .color(0x290333)
-    // event.create('californium_fuel_salt')
-    //     .fluid()
-    //     .color(0x4a2201)
-    // event.create('einsteinium_fuel_salt')
-    //     .fluid()
-    //     .color(0x5c5306)
-    // event.create('fermium_fuel_salt')
-    //     .fluid()
-    //     .color(0x4a0148)
-    // event.create('medelevium_fuel_salt')
-    //     .fluid()
-    //     .color(0x181957)
-    // event.create('nobelium_fuel_salt')
-    //     .fluid()
-    //     .color(0x1e1d24)
-    // event.create('lawrencium_fuel_salt')
-    //     .fluid()
-    //     .color(0x1d2623)
+   
     //Normal Fuel Salts
     event.create('uranium_fuel_salt')
         .fluid()

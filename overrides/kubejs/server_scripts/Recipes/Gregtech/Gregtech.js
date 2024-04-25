@@ -19,6 +19,9 @@ ServerEvents.tags('item', event => {
 yeet('gtceu:tiny_psi_superconductor_alpha_dust')
 yeet('gtceu:small_psi_superconductor_alpha_dust')
 yeet('gtceu:psi_superconductor_alpha_dust')
+yeet('gtceu:tiny_psi_superconductor_beta_dust')
+yeet('gtceu:small_psi_superconductor_beta_dust')
+yeet('gtceu:psi_superconductor_beta_dust')
 yeet('gtceu:tiny_neodymium_praseodymium_dust')
 yeet('gtceu:small_neodymium_praseodymium_dust')
 yeet('gtceu:neodymium_praseodymium_dust')
@@ -40,11 +43,16 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'gtceu:psi_superconductor_alpha_quadruple_wire', type: 'gtceu:wiremill' })
   event.remove({ output: 'gtceu:psi_superconductor_alpha_octal_wire', type: 'gtceu:wiremill' })
   event.remove({ output: 'gtceu:psi_superconductor_alpha_hex_wire', type: 'gtceu:wiremill' })
+  event.remove({ output: 'gtceu:psi_superconductor_beta_single_wire', type: 'gtceu:wiremill', type: 'gtceu:extruder' },)
+  event.remove({ output: 'gtceu:psi_superconductor_beta_double_wire', type: 'gtceu:wiremill' })
+  event.remove({ output: 'gtceu:psi_superconductor_beta_quadruple_wire', type: 'gtceu:wiremill' })
+  event.remove({ output: 'gtceu:psi_superconductor_beta_octal_wire', type: 'gtceu:wiremill' })
+  event.remove({ output: 'gtceu:psi_superconductor_beta_hex_wire', type: 'gtceu:wiremill' })
 
 
 
 
-
+  event.remove({ id: 'gtceu:centrifuge/uranium_hexafluoride_separation' })
   event.remove({ output: 'gtceu:firebrick' })
   event.recipes.gtceu.masonry_oven('gtceu:firebrick_masonry')
     .itemInputs('gtceu:compressed_fireclay')
@@ -200,6 +208,12 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:liquid_helium 1000')
     .duration(400)
     .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.assembler('beta_supercon')
+    .itemInputs(['16x gtceu:virtue_meld_foil', '4x gtceu:tungsten_steel_tiny_fluid_pipe', '4x gtceu:samarium_iron_arsenic_oxide_double_wire', 'gtceu:ev_electric_pump'])
+    .itemOutputs('16x gtceu:psi_superconductor_beta_single_wire')
+    .inputFluids('gtceu:liquid_helium 1000')
+    .duration(400)
+    .EUt(GTValues.VA[GTValues.IV]);
  //IV MOTOR
  event.remove({ output: 'gtceu:iv_electric_motor' })
  event.recipes.gtceu.assembler('gtceu:iv_electric_motor')
