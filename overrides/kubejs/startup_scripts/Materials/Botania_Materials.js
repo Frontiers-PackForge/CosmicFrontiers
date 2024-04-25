@@ -14,10 +14,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
         )
+    event.create('dreamwood')
+        .color(0xb9ddd3)
+        .iconSet(GTMaterialIconSet.WOOD)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+        )
+
 
     event.create('terrasteel')
         .color(0x55f609)
         .element(GTElements.get('terrasteel'))
+        .ingot()
         .iconSet(GTMaterialIconSet.SHINY)
         .cableProperties(GTValues.V[GTValues.MV], 8, 1, false)
         .flags(
@@ -26,7 +35,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.GENERATE_FOIL
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING
+        
         )
 
     event.create('mana_steel')
@@ -42,6 +53,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('elementium')
         .color(0xf472c6)
+        .ingot()
         .iconSet(GTMaterialIconSet.SHINY)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -49,7 +61,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.GENERATE_FOIL
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING
         )
     event.create('galvanized_ethersteel')
         .color(0xcf325b)
