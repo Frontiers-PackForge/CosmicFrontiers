@@ -1,6 +1,6 @@
 GTCEuServerEvents.fluidVeins(event => {
     event.add('gtceu:undergarden_virulent_cloggrum_mixture', vein => {
-        vein.addSpawnDimension('undergarden:undergarden')
+        vein.dimensions('undergarden:undergarden')
         vein.fluid(() => Fluid.of('gtceu:undergarden_virulent_cloggrum_mixture').fluid)
         vein.weight(600)
         vein.minimumYield(200)
