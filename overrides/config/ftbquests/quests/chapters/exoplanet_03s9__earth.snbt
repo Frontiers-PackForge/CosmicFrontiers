@@ -760,6 +760,39 @@
 			x: 5.0d
 			y: -3.5d
 		}
+		{
+			id: "7CC078F7B7BBA24A"
+			rewards: [{
+				command: "/say Hi, @p!"
+				elevate_perms: true
+				id: "116EB886DADCF328"
+				type: "command"
+			}]
+			tasks: [{
+				id: "663BCE578F2EA81F"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"Some helpful command reminders"
+				""
+				"/sethome and /home - let's you set a home you can warp to any time with /home "
+				"/spawn - Teleports you to the world spawnpoint"
+				"/rtp (Random Teleport) - Great for exploring/finding stuff"
+			]
+			id: "0081FE452DFE9D6D"
+			tasks: [{
+				id: "454A30936336BE28"
+				title: "Useful Commands"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
 	]
 	subtitle: ["It all starts here"]
 	title: "&fFirst Steps"
