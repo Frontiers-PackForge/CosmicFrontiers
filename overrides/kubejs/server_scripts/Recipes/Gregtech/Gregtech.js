@@ -54,19 +54,16 @@ ServerEvents.recipes(event => {
 
   event.remove({ id: 'gtceu:centrifuge/uranium_hexafluoride_separation' })
   event.remove({ output: 'gtceu:firebrick' })
-  event.recipes.gtceu.masonry_oven('gtceu:firebrick_masonry')
+  event.recipes.gtceu.alloy_smelter('firebrick_masonry')
     .itemInputs('gtceu:compressed_fireclay')
     .itemInputs('gtceu:coal_dust')
     .itemOutputs('gtceu:firebrick')
-    .itemOutputs('gtceu:ash_dust')
-    .notConsumable('gtceu:ingot_casting_mold')
     .duration(100)
     .EUt(8);
-  event.recipes.gtceu.masonry_oven('gtceu:andesite_alloy_masonry')
+  event.recipes.gtceu.alloy_smelter('andesite_alloy_masonry')
     .itemInputs('minecraft:andesite')
     .itemInputs('gtceu:wrought_iron_dust')
     .itemOutputs('create:andesite_alloy')
-    .notConsumable('gtceu:ingot_casting_mold')
     .duration(100)
     .EUt(8);
   event.recipes.gtceu.macerator('gtceu:treated_wood_dust_shred')
@@ -311,28 +308,7 @@ ServerEvents.recipes(event => {
     F: '#forge:tools/hammers'
   }
   )
-  //Masonry Oven
-  event.shaped('gtceu:lp_steam_masonry_oven', [
-    'BBB',
-    'PFP',
-    'SSS'
-  ], {
-    B: 'gtceu:bronze_plate',
-    P: 'gtceu:bronze_small_fluid_pipe',
-    F: 'minecraft:furnace',
-    S: 'minecraft:smooth_stone',
-  })
-  //HP Masonry Oven
-  event.shaped('gtceu:hp_steam_masonry_oven', [
-    'WWW',
-    'PBP',
-    'SSS'
-  ], {
-    W: 'gtceu:wrought_iron_plate',
-    P: 'gtceu:steel_small_fluid_pipe',
-    B: 'minecraft:blast_furnace',
-    S: 'minecraft:smooth_stone',
-  })
+
   //LV Circuit assembler
   event.remove({ output: 'gtceu:lv_circuit_assembler' })
   event.shaped('gtceu:lv_circuit_assembler', [
@@ -512,18 +488,6 @@ ServerEvents.recipes(event => {
     let cableMaterial = tierQuadWire[index]
     let cableType = tierCable[index]
     let coilType = coilTier[index]
-    event.shaped(`gtceu:${tier}_masonry_oven`, [
-      'CAC',
-      'BHB',
-      'ZAZ'
-    ], {
-      A: `gtceu:${cableMaterial}_quadruple_wire`,
-      B: `gtceu:${tier}_conveyor_module`,
-      C: `#gtceu:circuits/${tier}`,
-      H: `gtceu:${tier}_machine_hull`,
-      Z: `gtceu:${cableType}_single_cable`
-    }
-    )
     event.shaped(`gtceu:${tier}_flora_nurturer`, [
       'CAC',
       'BHB',

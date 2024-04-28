@@ -209,16 +209,7 @@ ServerEvents.recipes(event => {
               .blastFurnaceTemp(3600)
               .duration(1800)
               .EUt(GTValues.VA[GTValues.HV]);
-       event.shaped('gtceu:hp_steam_masonry_oven', [
-              'WWW',
-              'PBP',
-              'SSS'
-       ], {
-              W: 'gtceu:wrought_iron_plate',
-              P: 'gtceu:steel_small_fluid_pipe',
-              B: 'minecraft:blast_furnace',
-              S: 'minecraft:smooth_stone',
-       })
+
 
 
 
