@@ -304,6 +304,6 @@ ServerEvents.recipes(event => {
     'gtceu:steel_rod'
   )
 })
-})
+
 
 
