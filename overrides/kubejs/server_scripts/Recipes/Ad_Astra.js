@@ -64,6 +64,8 @@ ServerEvents.tags('item', event => {
 
 ServerEvents.tags('fluid', event => {
   event.add('ad_astra:fuel', `gtceu:rocket_fuel`)
+  event.remove(`forge:oxygen`,'ad_astra:oxygen')
+  event.remove(`forge:hydrogen`,'ad_astra:hydrogen')
 })
 
 ServerEvents.recipes(event => {
