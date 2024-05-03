@@ -121,5 +121,59 @@ ServerEvents.recipes((event) => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV]);
 
+    //Extraction mixture
+    event.recipes.gtceu.mixer('tier_2_extraction_mix')
+        .inputFluids('gtceu:di(2_ethylhexyl)_phosphoric_acid 1000')
+        .inputFluids('gtceu:isodecanol 500')
+        .inputFluids('gtceu:kerosene 500')
+        .outputFluids('gtceu:mre_tier_2_extraction_mix 2000')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    //MRE - tier 2
+    event.recipes.gtceu.chemical_reactor('mona_hydroxide')
+        .inputFluids('gtceu:monasite_slag 100')
+        .itemInputs('3x gtceu:sodium_hydroxide')
+        .itemOutputs('gtceu:mre_hydroxides')
+        .itemOutputs('gtceu:sodium_phophate')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.chemical_dehydrator('mona_oxide')
+        .itemInputs('gtceu:mre_hydroxides')
+        .itemOutputs('gtceu:mre_oxides')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.chemical_reactor('mona_chloride')
+        .itemInputs('gtceu:mre_oxides')
+        .inputFluids('gtceu:hydrochloric_acid 6000')
+        .outputFluids('gtceu:mre_chlorides 1000')
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.mixer('mre_tier_2_leached_solution')
+        .inputFluids('gtceu:mre_chlorides 1000')
+        .inputFluids('gtceu:mre_tier_2_extraction_mix 4000')
+        .outputFluids('gtceu:mre_leachate_tier_2 5000')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.centrifuge('mre_tier_2_phase_separation')
+        .inputFluids('gtceu:mre_leachate_tier_2 5000')
+        .outputFluids('gtceu:diluted_hydrochloric_acid 1000')
+        .outputFluids('gtceu:mre_tier_2_organic_leachate 4000')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.chemical_reactor('mre_tier_2_precipitation')
+        .inputFluids('gtceu:mre_tier_2_organic_leachate 4000')
+        .inputFluids('gtceu:sufluric_acid 1000')
+        .itemOutputs('4x gtceu:mre_mixed_dusts')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.centrifuge('mre_tier_2_dust_separation') //Probs needs rebalancing
+        .itemInputs('16x gtceu:mre_mixed_dusts')
+        .chancedOutput('gtceu:europium_dust', 1000, 500)
+        .chancedOutput('gtceu:gadolinium_dust', 1000, 500)
+        .chancedOutput('gtceu:terbium_dust', 1000, 500)
+        .chancedOutput('2x gtceu:samarium_dust', 6000, 500)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.EV]);
 
 });
