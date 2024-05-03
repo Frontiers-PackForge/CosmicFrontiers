@@ -52,9 +52,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     //LRE line
     event.create('oxalic_acid')
         .fluid()
+        .element(GTElements.get('oxalic_acid'))
         .color(0x747680).iconSet(GTMaterialIconSet.DULL)
     event.create('di_2_ethylhexyl_phosphoric_acid')
         .fluid()
+        .element(GTElements.get('di_2_ethylhexyl_phosphoric_acid'))
         .color(0x4e466d).iconSet(GTMaterialIconSet.DULL)
     event.create('chromium_hydroxide')
         .dust()
