@@ -121,6 +121,23 @@ ServerEvents.recipes((event) => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV]);
 
+    //Isodecanol
+    event.recipes.gtceu.chemical_reactor('hydroxyapatite_prep')
+        .itemInputs('10x gtceu:calcium_hydroxide')
+        .inputFluids('gtceu:phosphoric_acid 6000')
+        .itemOutputs('gtceu:hydroxyapatite')
+        .outputFluids('minecraft:water 18000')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.autoclave('isodecanol_prep')
+        .notConsumable('gtceu:hydroxyapatite')
+        .inputFluids('gtceu:ethanol 5000')
+        .outputFluids('gtceu:isodecanol 1000')
+        .outputFluids('minecraft:water 4000')
+        .duration()
+        .EUt(GTValues.VA[GTValues.HV]);
+
+
     //Extraction mixture
     event.recipes.gtceu.mixer('tier_2_extraction_mix')
         .inputFluids('gtceu:di(2_ethylhexyl)_phosphoric_acid 1000')
