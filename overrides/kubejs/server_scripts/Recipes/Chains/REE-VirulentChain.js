@@ -48,7 +48,6 @@ ServerEvents.recipes((event) => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.chemical_reactor('lre_liquor_precipitation_1')
-        .outputFluids('gtceu:waste_water')
         .inputFluids('gtceu:leached_lre_liquor 700')
         .inputFluids('gtceu:oxalic_acid 300')
         .outputFluids('gtceu:wet_lre_precipitate 1000')
@@ -82,11 +81,45 @@ ServerEvents.recipes((event) => {
 
     //D2EHPA synthesis
     event.recipes.gtceu.chemical_reactor('butanol_maker')
-    event.recipes.gtceu.chemical_reactor('2ethyl1hexanol')
+        .inputFluids('gtceu:butene 1000')
+        .inputFluids('minecraft:water 1000')
+        .notConsumable('gtceu:sulfuric_acid 1000')
+        .outputFluids('gtceu:butanol 1000')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.autoclave('2ethyl1hexanol') //Long process - 6h
+        .inputFluids('gtceu:butanol 1000')
+        .notConsumable('1x gtceu:calcium_carbide')
+        .outputFluids('gtceu:2_ethyl_1_hexanol')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.arc_furnace('phosphorus_trichloride')
-    event.recipes.gtceu.chemical_reactor('D2EH_phosphite')
+        .itemInputs('gtceu:phosphorus_dust')
+        .inputFluids('gtceu:chlorine 3000')
+        .outputFluids('gtceu:phosphorus_trichloride 1000')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.chemical_reactor('D2EH_phosphite') //Add NC benzene as solvent if possible
+        .inputFluids('gtceu:2_ethyl_1_hexanol 3000')
+        .inputFluids('gtceu:phosphorus_trichloride 1000')
+        .outputFluids('gtceu:di(2_ethylhexyl)_phosphite 1000')
+        .outputFluids('gtceu:hydrochloric_acid 2000') //one alcohol and chlorine go poof cause i am not adding RCl reprocessing
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.EV]);
     event.recipes.gtceu.chemical_reactor('D2EH_phosphorochloridate')
+        .inputFluids('gtceu:di(2_ethylhexyl)_phosphite 1000')
+        .inputFluids('gtceu:chlorine 1000')
+        .outputFluids('gtceu:hydrochloric_acid 1000')
+        .outputFluids('gtceu:di(2_ethylhexyl)_phosphorochloridate 1000')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.EV]);
     event.recipes.gtceu.chemical_reactor('D2EHPA')
+        .inputFluids('gtceu:di(2_ethylhexyl)_phosphorochloridate 1000')
+        .itemInputs('1x gtceu:sodium_hydroxide')
+        .outputFluids('gtceu:di(2_ethylhexyl)_phosphoric_acid 1000')
+        .itemOutputs('1x gtceu:salt')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.EV]);
 
 
 });
