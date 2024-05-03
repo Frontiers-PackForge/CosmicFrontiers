@@ -35,7 +35,7 @@ StartupEvents.registry('block', event => {
         .level(4)
         .energyDiscount(2) // 
         .tier(5)
-        .coilMaterial(GTMaterials.get('prismatic_tungsten'))
+        .coilMaterial(() => GTMaterials.get('prismatic_tungsten'))
         .texture('gtceu:block/coils/prismatic_tungsten_coil')
         .hardness(5)
         .requiresTool(true)
