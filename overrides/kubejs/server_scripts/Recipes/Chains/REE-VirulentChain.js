@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
     event.recipes.gtceu.chemical_reactor('oxalic_acid')
         .inputFluids('gtceu:ethylene 1000')
         .inputFluids('gtceu:oxygen 4000')
-        .itemInputs('4x gtceu:potassium_dichromate_dust')
+        .notConsumable('4x gtceu:potassium_dichromate_dust')
         .outputFluids('gtceu:oxalic_acid 1000')
         .duration(100)
         .EUt(GTValues.VA[GTValues.HV]);
