@@ -573,7 +573,7 @@ ServerEvents.recipes(event => {
     'PCP'
   ], {
     P: 'gtceu:tantalum_carbide_plate',
-    C: '#gtceu:circuits/ev',
+    C: '#gtceu:circuits/luv',
     W: 'gtceu:uranium_triplatinum_quadruple_wire',
     F: 'gtceu:ev_alloy_smelter'
   })
