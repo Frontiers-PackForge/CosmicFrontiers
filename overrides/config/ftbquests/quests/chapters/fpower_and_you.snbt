@@ -38,7 +38,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "5A3F0422FC8E6D56"
-				item: "gtceu:steam_bucket"
+				item: "embers:steam_bucket"
 				type: "item"
 			}]
 			x: -3.0d

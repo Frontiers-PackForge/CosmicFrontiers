@@ -666,7 +666,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["726331ACD701F2FD"]
 			icon: "gtceu:depleted_uranium_hexafluoride_bucket"
 			id: "43879AAA41015110"
 			tasks: [
@@ -1178,13 +1177,13 @@
 		}
 		{
 			dependencies: ["1E72D62913EEB4EE"]
-			icon: "gtceu:rhodium_gear"
 			id: "431BE27F4F577A4E"
 			shape: "gear"
 			subtitle: "More Useful Machines, at HV!"
 			tasks: [{
-				id: "3A38876635FD0F84"
-				type: "checkmark"
+				id: "3D692CCFCBB0E9AB"
+				item: "gtceu:rhodium_gear"
+				type: "item"
 			}]
 			x: 0.0d
 			y: 3.0d
@@ -1892,7 +1891,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["726331ACD701F2FD"]
 			icon: "gtceu:enriched_uranium_hexafluoride_bucket"
 			id: "35FA8E7D591414DE"
 			tasks: [
@@ -1911,27 +1909,6 @@
 			]
 			x: -5.5d
 			y: -0.5d
-		}
-		{
-			dependencies: ["75D695A6DC21520C"]
-			icon: "gtceu:uranium_hexafluoride_bucket"
-			id: "726331ACD701F2FD"
-			tasks: [
-				{
-					id: "6FF1813D9F3899E6"
-					item: "gtceu:uranium_hexafluoride_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "4D5EE4F69D1E2E7B"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: -4.5d
-			y: 0.0d
 		}
 	]
 	title: "Gloomper Chemistry [HV]"

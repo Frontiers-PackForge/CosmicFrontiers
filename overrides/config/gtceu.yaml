@@ -121,9 +121,9 @@ worldgen:
     # Default: true
     removeVanillaLargeOreVeins: true
 
-    # Distance between bedrock ore veins in chunks, if enabled.
-    # Default: 16
-    bedrockOreDistance: 16
+    # Multiplier to bedrock ore generation amount
+    # Default: 1.0f
+    bedrockOreMultiplier: 1.0
 
     # Make bedrock ore/fluid veins infinite?
     # Default: false
@@ -222,9 +222,8 @@ machines:
   # Default: "raw"
   bedrockOreDropTagPrefix: raw
 
-  # WARNING: THIS IS NO LONGER SUPPORTED AND WILL BE REMOVED!
-  # This option only exists to provide backwards compatibility until the Processing Array will be removed in 1.3.0
-  # Default: false
+  # Wether to add a "Processing Array"
+  # Default: true
   doProcessingArray: false
 
   # Makes nearly every GCYM Multiblock require blocks which set their maximum voltages.

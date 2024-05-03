@@ -9,8 +9,6 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
         .parent('shiny')
     event.create('utherium')
         .parent('diamond')
-    event.create('prisma')
-        .parent('diamond')
     event.create('starry')
         .parent('dull')
 })

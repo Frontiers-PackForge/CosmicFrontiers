@@ -170,6 +170,5 @@ GTMaterials.Bromine.setProperty(PropertyKey.FLUID, new $FluidProperty());
 GTMaterials.Selenium.setProperty(PropertyKey.INGOT, new $IngotProperty());
 GTMaterials.Selenium.setProperty(PropertyKey.FLUID, new $FluidProperty());
 
-
 })
 

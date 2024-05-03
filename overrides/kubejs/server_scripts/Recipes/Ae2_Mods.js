@@ -311,7 +311,7 @@ ServerEvents.recipes(event => {
     .duration(320)
     .EUt(GTValues.VA[GTValues.LV]);
   //Interface 1x Craft
-  event.recipes.gtceu.assembler('ae2:interface_assembly_t3')
+  event.recipes.gtceu.assembler('ae2:interface_assembly_t1')
     .itemInputs(['4x gtceu:steel_plate', '2x #gtceu:circuits/lv', '2x gtceu:lv_robot_arm', 'gtceu:lv_machine_hull'])
     .itemOutputs('ae2:interface')
     .duration(320)
@@ -323,14 +323,14 @@ ServerEvents.recipes(event => {
     .duration(320)
     .EUt(512);
   //Interface 8x Craft
-  event.recipes.gtceu.assembler('ae2:interface_assembly_t1')
+  event.recipes.gtceu.assembler('ae2:interface_assembly_t3')
     .itemInputs(['4x gtceu:tungsten_steel_plate', '2x #gtceu:circuits/iv', '2x gtceu:iv_robot_arm', 'gtceu:iv_machine_hull'])
     .itemOutputs('8x ae2:interface')
     .duration(320)
     .EUt(8192);
   //Pattern Providers
   //Pattern Provide 1x Craft
-  event.recipes.gtceu.assembler('ae2:pattern_assembly_t3')
+  event.recipes.gtceu.assembler('ae2:pattern_assembly_t1')
     .itemInputs(['4x gtceu:galvanized_ethersteel_plate', '2x #gtceu:circuits/hv', '2x gtceu:hv_robot_arm', 'gtceu:hv_machine_hull'])
     .itemOutputs('ae2:pattern_provider')
     .duration(320)
@@ -342,7 +342,7 @@ ServerEvents.recipes(event => {
     .duration(320)
     .EUt(GTValues.VA[GTValues.IV]);
   //Pattern Provide 8x Craft
-  event.recipes.gtceu.assembler('ae2:pattern_assembly_t1')
+  event.recipes.gtceu.assembler('ae2:pattern_assembly_t3')
     .itemInputs(['4x gtceu:virtue_meld_plate', '2x #gtceu:circuits/luv', '2x gtceu:luv_robot_arm', 'gtceu:luv_machine_hull'])
     .itemOutputs('8x ae2:pattern_provider')
     .duration(320)
@@ -579,25 +579,15 @@ ServerEvents.recipes(event => {
     let euType = euScale[index]
     let fluids = lamFluids[index]
     let output = outputAmount[index]
-    var polymer;
-    if (index < 3) {
-      polymer = 'gtceu:polyethylene_foil'
-    } else if (index < 7) {
-      polymer = 'gtceu:polytetrafluoroethylene_foil'
-    } else {
-      polymer = 'gtceu:polybenzimidazole_foil'
-    }
-
-
-    event.recipes.gtceu.laminator(`smart_cable_${tier}`)
-      .itemInputs([`gtceu:${tier}_single_cable`, `${polymer}`])
-      .inputFluids(`gtceu:${fluids} 144`)
+    event.recipes.gtceu.laminator(`ae2:smart_cable_craft_${tier}`)
+      .itemInputs([`gtceu:${tier}_single_cable`, `gtceu:${tier}_foil`])
+      .inputFluids(`tin_alloy 144`)
       .itemOutputs(`${output}x ae2:fluix_smart_cable`)
       .duration(100)
       .EUt(`${euType}`);
-    event.recipes.gtceu.laminator(`dense_cable_${tier}`)
-      .itemInputs([`gtceu:${tier}_quadruple_cable`, `16x ${polymer}`])
-      .inputFluids(`gtceu:${fluids} 144`)
+    event.recipes.gtceu.laminator(`ae2:smart_dense_cable_${tier}`)
+      .itemInputs([`gtceu:${tier}_quadruple_cable`, `8x gtceu:${tier}_foil`])
+      .inputFluids(`tin_alloy 144`)
       .itemOutputs(`${output}x ae2:fluix_smart_dense_cable`)
       .duration(100)
       .EUt(`${euType}`);
