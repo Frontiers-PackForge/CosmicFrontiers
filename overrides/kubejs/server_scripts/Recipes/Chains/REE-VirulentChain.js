@@ -102,21 +102,21 @@ ServerEvents.recipes((event) => {
     event.recipes.gtceu.chemical_reactor('D2EH_phosphite') //Add NC benzene as solvent if possible
         .inputFluids('gtceu:2_ethyl_1_hexanol 3000')
         .inputFluids('gtceu:phosphorus_trichloride 1000')
-        .outputFluids('gtceu:di(2_ethylhexyl)_phosphite 1000')
+        .outputFluids('gtceu:di_2_ethylhexyl_phosphite 1000')
         .outputFluids('gtceu:hydrochloric_acid 2000') //one alcohol and chlorine go poof cause i am not adding RCl reprocessing
         .duration(400)
         .EUt(GTValues.VA[GTValues.EV]);
     event.recipes.gtceu.chemical_reactor('D2EH_phosphorochloridate')
-        .inputFluids('gtceu:di(2_ethylhexyl)_phosphite 1000')
+        .inputFluids('gtceu:di_2_ethylhexyl_phosphite 1000')
         .inputFluids('gtceu:chlorine 1000')
         .outputFluids('gtceu:hydrochloric_acid 1000')
-        .outputFluids('gtceu:di(2_ethylhexyl)_phosphorochloridate 1000')
+        .outputFluids('gtceu:di_2_ethylhexyl_phosphorochloridate 1000')
         .duration(100)
         .EUt(GTValues.VA[GTValues.EV]);
     event.recipes.gtceu.chemical_reactor('D2EHPA')
-        .inputFluids('gtceu:di(2_ethylhexyl)_phosphorochloridate 1000')
+        .inputFluids('gtceu:di_2_ethylhexyl_phosphorochloridate 1000')
         .itemInputs('1x gtceu:sodium_hydroxide')
-        .outputFluids('gtceu:di(2_ethylhexyl)_phosphoric_acid 1000')
+        .outputFluids('gtceu:di_2_ethylhexyl_phosphoric_acid 1000')
         .itemOutputs('1x gtceu:salt')
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV]);
@@ -140,7 +140,7 @@ ServerEvents.recipes((event) => {
 
     //Extraction mixture
     event.recipes.gtceu.mixer('tier_2_extraction_mix')
-        .inputFluids('gtceu:di(2_ethylhexyl)_phosphoric_acid 1000')
+        .inputFluids('gtceu:di_2_ethylhexyl_phosphoric_acid 1000')
         .inputFluids('gtceu:isodecanol 500')
         .inputFluids('gtceu:kerosene 500')
         .outputFluids('gtceu:mre_tier_2_extraction_mix 2000')
@@ -161,7 +161,7 @@ ServerEvents.recipes((event) => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.chemical_reactor('mona_chloride')
-        .itemInputs('gtceu:mre_oxides')
+        .itemInputs('gtceu:mre_oxides_dust')
         .inputFluids('gtceu:hydrochloric_acid 6000')
         .outputFluids('gtceu:mre_chlorides 1000')
         .duration(300)

@@ -72,11 +72,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color().iconSet(GTMaterialIconSet.DULL)
         // di(2_ethylhexyl)_phosphite
-    event.create('di(2_ethylhexyl)_phosphite')
+    event.create('di_2_ethylhexyl_phosphite')
         .fluid()
         .color().iconSet(GTMaterialIconSet.DULL)
         //di(2_ethylhexyl)_phosphorochloridate
-    event.create('di(2_ethylhexyl)_phosphorochloridate')
+    event.create('di_2_ethylhexyl_phosphorochloridate')
         .fluid()
         .color().iconSet(GTMaterialIconSet.DULL)
     //MRE tier 2
