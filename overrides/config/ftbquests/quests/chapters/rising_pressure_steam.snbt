@@ -351,17 +351,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["705099C9ED28CF14"]
-			id: "3582EF7DF44D13A1"
-			tasks: [{
-				id: "164E29018B487230"
-				item: "gtceu:sulfur_dust"
-				type: "item"
-			}]
-			x: 10.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["415FBE545845A4D4"]
 			id: "187B8D213D49BD07"
 			tasks: [{
@@ -369,23 +358,8 @@
 				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["3582EF7DF44D13A1"]
-			hide_dependent_lines: true
-			id: "780C59919F8B1FB0"
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "6FACF206708628D5"
-				item: "gtceu:rubber_ingot"
-				type: "item"
-			}]
-			title: "Finally! You can make rubber!"
-			x: 12.0d
-			y: 0.0d
+			x: -3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["187B8D213D49BD07"]
@@ -395,8 +369,8 @@
 				item: "gtceu:red_alloy_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
+			x: -2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["12AF008BC8C8F2F3"]
@@ -406,13 +380,13 @@
 				item: "gtceu:red_alloy_single_wire"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -2.0d
 			y: 4.5d
 		}
 		{
 			dependencies: [
-				"780C59919F8B1FB0"
 				"0F27F6613D8BE6F0"
+				"0BB6B6D4990AB1CC"
 			]
 			id: "764A3822717A4E0D"
 			tasks: [{
@@ -420,12 +394,11 @@
 				item: "gtceu:red_alloy_single_cable"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.0d
 			y: 6.0d
 		}
 		{
 			dependencies: [
-				"0BB6B6D4990AB1CC"
 				"764A3822717A4E0D"
 				"7E9D9FF1101D1666"
 				"77EFA0C3D4D69285"
@@ -445,8 +418,8 @@
 		}
 		{
 			dependencies: [
-				"780C59919F8B1FB0"
 				"187B8D213D49BD07"
+				"5E24FE317400D8CE"
 			]
 			id: "0BB6B6D4990AB1CC"
 			tasks: [{
@@ -454,14 +427,13 @@
 				item: "gtceu:rubber_ingot"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.0d
 			y: 6.0d
 		}
 		{
 			dependencies: [
 				"4F4AB465A829B20B"
 				"1FDBCDAA759B93F3"
-				"3A8E67C3BD23DEC7"
 			]
 			id: "5F460A1D5DB52638"
 			shape: "gear"
@@ -479,7 +451,7 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
+			x: -4.5d
 			y: -3.0d
 		}
 		{
@@ -500,7 +472,7 @@
 				item: "cosmiccore:waxed_leather"
 				type: "item"
 			}]
-			x: 9.5d
+			x: -4.5d
 			y: -2.0d
 		}
 		{
@@ -539,7 +511,7 @@
 				item: "gtceu:vacuum_tube"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.0d
 			y: 8.0d
 		}
 		{
@@ -554,17 +526,6 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["415FBE545845A4D4"]
-			id: "7895FFB7F9EBD9C6"
-			tasks: [{
-				id: "0C8BFE6E462DBBD3"
-				item: "gtceu:lp_steam_masonry_oven"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["398EFF1EA09FA4AA"]
 			id: "64C6B4AAC9B7E8FB"
 			tasks: [{
@@ -576,12 +537,10 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["65142662ED8019DD"]
 			description: [
 				"Nether Brick is plentiful inside the mantle of this planet. (The Nether)"
 				""
-				"You could scavange ruined portals for netherack - however it's advised you just collect them"
-				"from the nether."
+				"You could also scavange ruined portals for netherack - however you'll still need to enter the nether for sulfur"
 			]
 			id: "0BE94AFE912DF509"
 			tasks: [
@@ -599,14 +558,11 @@
 				}
 			]
 			title: "To forge in the fires of hell"
-			x: -4.0d
-			y: 3.0d
+			x: -5.5d
+			y: 2.5d
 		}
 		{
-			dependencies: [
-				"0BE94AFE912DF509"
-				"187B8D213D49BD07"
-			]
+			dependencies: ["44232EDFC1B45893"]
 			description: [
 				"You will need &l33&r Firebricks. "
 				"32 for the structure"
@@ -656,7 +612,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["7895FFB7F9EBD9C6"]
+			dependencies: ["187B8D213D49BD07"]
 			description: ["Andesite alloy is used for a lot of create's hardware. As well as the copper backtank"]
 			id: "1FDBCDAA759B93F3"
 			subtitle: "Useful!"
@@ -665,7 +621,7 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -3.0d
 			y: -3.0d
 		}
 		{
@@ -696,20 +652,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["7895FFB7F9EBD9C6"]
-			id: "65142662ED8019DD"
-			subtitle: "I'd advise going there first"
-			tasks: [{
-				dimension: "minecraft:the_nether"
-				id: "5642CD9A6F0373AB"
-				type: "dimension"
-			}]
-			title: "Have you been to the nether yet?"
-			x: -4.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7895FFB7F9EBD9C6"]
+			dependencies: ["398EFF1EA09FA4AA"]
 			description: [
 				"You can craft wrought iron in a variety of ways."
 				"However the best way you can make it right now is by throwing iron and charcoal dust into lava."
@@ -723,8 +666,8 @@
 				item: "gtceu:wrought_iron_ingot"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 0.0d
+			x: -5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["52A46B052223551B"]
@@ -769,6 +712,33 @@
 			}]
 			x: 5.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["705099C9ED28CF14"]
+			hide_dependency_lines: true
+			id: "5E24FE317400D8CE"
+			tasks: [{
+				id: "7BD3182DD80216B0"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"187B8D213D49BD07"
+				"0BE94AFE912DF509"
+			]
+			description: ["you can get coal dust from using a mortar with coal"]
+			id: "44232EDFC1B45893"
+			tasks: [{
+				id: "1B64D9854E2545EE"
+				item: "gtceu:firebrick"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
 		}
 	]
 	title: "Rising Pressure [Steam]"

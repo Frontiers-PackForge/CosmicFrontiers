@@ -1,8 +1,9 @@
 {
   "experimental": {
-    // The increased height setting will change the max y to be 640.
+    // The increased height setting will change the max Overworld build and generation height to y640.
     // The horizontal mountain scale setting will change the thickness of mountain ranges and the spacing between them.
     // Lower values = thicker mountain ranges and more space between ranges. 0.15-0.25 is the sweet spot.
+    // The terrain scale setting will vertically stretch/compress terrain. Higher values = more extreme terrain heights.
     "horizontal_mountain_scale": 0.25,
     "increased_height": false,
     "terrain_scale": 1.125
