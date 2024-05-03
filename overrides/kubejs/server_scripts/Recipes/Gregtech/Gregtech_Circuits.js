@@ -108,12 +108,44 @@ ServerEvents.recipes(event => {
         .duration(200)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.EV]);
-
-
-
-
-
-
+    //Nano SuperComputer changes
+    event.remove({ id: 'gtceu:circuit_assembler/nano_computer_iv_asmd' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_computer_iv_soldering_alloy' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_computer_iv_asmd_soldering_alloy' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_computer_iv' })
+    event.recipes.gtceu.circuit_assembler('nano_computer_iv_frontiers')
+        .itemInputs(['gtceu:epoxy_printed_circuit_board', '2x gtceu:nano_processor_assembly', '8x gtceu:smd_diode', '4x gtceu:nor_memory_chip', '32x gtceu:ram_chip', '16x gtceu:fine_plutonium_wire'])
+        .inputFluids('gtceu:tin 288')
+        .itemOutputs('gtceu:nano_processor_computer')
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.circuit_assembler('nano_computer_iv_soldering_alloy_frontiers')
+        .itemInputs(['gtceu:epoxy_printed_circuit_board', '2x gtceu:nano_processor_assembly', '8x gtceu:smd_diode', '4x gtceu:nor_memory_chip', '32x gtceu:ram_chip', '16x gtceu:fine_plutonium_wire'])
+        .inputFluids('gtceu:soldering_alloy 144')
+        .itemOutputs('gtceu:nano_processor_computer')
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.EV]);
+    //Nano Mainframe Changes
+    event.remove({ id: 'gtceu:circuit_assembler/nano_mainframe_luv' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_mainframe_luv_soldering_alloy' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_mainframe_luv_asmd' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_mainframe_luv_asmd_soldering_alloy' })
+    event.recipes.gtceu.circuit_assembler('nano_mainframe_luv_frontiers')
+        .itemInputs(['2x gtceu:terrasteel_frame', '4x gtceu:nano_processor_computer', '16x gtceu:smd_inductor', '32x gtceu:smd_capacitor', '64x gtceu:ram_chip', '32x gtceu:galvanized_ethersteel_single_wire'])
+        .inputFluids('gtceu:tin 288')
+        .itemOutputs('gtceu:nano_processor_mainframe')
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.circuit_assembler('nano_mainframe_luv_soldering_alloy_frontiers')
+        .itemInputs(['2x gtceu:terrasteel_frame', '4x gtceu:nano_processor_computer', '16x gtceu:smd_inductor', '32x gtceu:smd_capacitor', '64x gtceu:ram_chip', '32x gtceu:galvanized_ethersteel_single_wire'])
+        .inputFluids('gtceu:soldering_alloy 144')
+        .itemOutputs('gtceu:nano_processor_mainframe')
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.EV]);
 
 
 
