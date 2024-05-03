@@ -47,6 +47,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0x836234).iconSet(GTMaterialIconSet.DULL)
     //Xenotime extraction tier 1
+    event.create('monasite_concentrate')
+        .fluid()
+        .color(0x9e1500).iconSet(GTMaterialIconSet.DULL)
     event.create('xenotime_concentrate')
         .fluid()
         .color(0x000F75).iconSet(GTMaterialIconSet.DULL)
@@ -73,21 +76,32 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     //Xenotime extraction tier 3
 
     //Monazite extraction tier 2
+    //TODO : Proper Colors
+
+    event.create('calcium_carbide')
+        .dust()
+        .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
     event.create('mre_hydroxides')
         .dust()
-        .color().iconSet(GTMaterialIconSet.DULL)
+        .color(0x657d43).iconSet(GTMaterialIconSet.DULL)
     event.create('mre_tier_2_extraction_mix')
         .fluid()
-        .color().iconSet(GTMaterialIconSet.DULL)
+        .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
     event.create('mre_leachate_tier_2')
         .fluid()
-        .color().iconSet(GTMaterialIconSet.DULL)
+        .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
     event.create('mre_tier_2_organic_leachate')
         .fluid()
-        .color().iconSet(GTMaterialIconSet.DULL)
-    event.create('mre_mixed_dusts')
-        .fluid()
-        .color().iconSet(GTMaterialIconSet.DULL)
+        .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
+    event.create('mre_mixed')
+        .dust()
+        .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
+    event.create('calcium_hydroxide')
+        .dust()
+        .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
+    event.create('sodium_phosphate')
+        .dust()
+        .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
 
     //Monazite extraction tier 3
 
