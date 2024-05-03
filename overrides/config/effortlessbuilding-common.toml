@@ -28,7 +28,7 @@
 	#Range: 0 ~ 100000
 	maxBlocksPlacedAtOnceLevel2 = 320
 	#Range: 0 ~ 100000
-	maxBlocksPlacedAtOnceLevel3 = 5000
+	maxBlocksPlacedAtOnceLevel3 = 640
 
 [MaxBlocksPerAxis]
 	#How many blocks can be placed at once per axis when using build modes (e.g. walls).
@@ -42,9 +42,9 @@
 	#Range: 0 ~ 1000
 	maxBlocksPerAxisLevel1 = 12
 	#Range: 0 ~ 1000
-	maxBlocksPerAxisLevel2 = 32
+	maxBlocksPerAxisLevel2 = 16
 	#Range: 0 ~ 1000
-	maxBlocksPerAxisLevel3 = 64
+	maxBlocksPerAxisLevel3 = 20
 
 [MaxMirrorRadius]
 	#The maximum (radial) mirror radius.

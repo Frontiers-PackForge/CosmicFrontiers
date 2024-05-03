@@ -1,8 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-      "layer0": "gtceu:item/material_sets/prisma/ingot",
-      "layer1": "gtceu:item/material_sets/prisma/ingot_secondary",
-      "layer2": "gtceu:item/material_sets/prisma/ingot_overlay"
-    }
-  }

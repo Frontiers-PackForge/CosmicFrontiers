@@ -1,14 +1,14 @@
 //A Simple "REMOVE AND HIDE" function akin to GroovyScript's Jei.yeet() function - This will tag the item for hiding from recipe viewers and remove the recipe
 //This one also has a tag removal function to remove the forge:tools/knives tag from what is removed so bear that in mind if you copy/paste this around
-// let yeet = (itemName) => {
-//   ServerEvents.recipes(event => {
-//     event.remove({ output: itemName })
-//   })
-//   ServerEvents.tags('item', event => {
-//     event.add('forge:viewers/hidden_from_recipe', itemName)
+let yeet = (itemName) => {
+  ServerEvents.recipes(event => {
+    event.remove({ output: itemName })
+  })
+  ServerEvents.tags('item', event => {
+    event.add('c:hidden_from_recipe_viewers', itemName)
 
-//   })
-// }
+  })
+}
 let DONOTEXIST = ['sophisticatedstorage:basic_to_gold_tier_upgrade', 'sophisticatedstorage:basic_to_diamond_tier_upgrade', 'sophisticatedstorage:basic_to_netherite_tier_upgrade', 'sophisticatedstorage:iron_to_diamond_tier_upgrade', 'sophisticatedstorage:iron_to_netherite_tier_upgrade', 'sophisticatedstorage:gold_to_netherite_tier_upgrade','sophisticatedstorage:stack_upgrade_tier_3', 'sophisticatedstorage:stack_upgrade_tier_4', 'sophisticatedbackpacks:stack_upgrade_tier_1', 'sophisticatedbackpacks:stack_upgrade_tier_2', 'sophisticatedbackpacks:stack_upgrade_tier_3', 'sophisticatedbackpacks:stack_upgrade_tier_4']
 
 ServerEvents.tags('item', event => {
@@ -21,6 +21,7 @@ ServerEvents.recipes(event => {
   event.remove({ mod: 'sophisticatedstorage' })
   event.remove({ mod: 'sophisticatedbackpacks' })
   event.remove({ id: 'aether:skyroot_chest' })
+  //aether:skyroot_chest
   /* BACKPACKS */
 
   event.remove({ output: DONOTEXIST })

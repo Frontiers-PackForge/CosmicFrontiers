@@ -38,8 +38,8 @@
 				item: "gtceu:neodymium_ingot"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -1.5d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5837A875D09D3E35"]
@@ -62,7 +62,7 @@
 				item: "kubejs:mana_deposited_wafer"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 1.5d
 			y: 0.0d
 		}
 		{
@@ -73,7 +73,7 @@
 				item: "kubejs:prepared_nano_cpu_wafer"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 2.5d
 			y: 0.0d
 		}
 		{
@@ -84,8 +84,8 @@
 				item: "gtceu:nano_cpu_wafer"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -1.5d
+			x: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3DA27217BDFDE615"]
@@ -95,18 +95,18 @@
 				item: "gtceu:nano_cpu_chip"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -3.0d
+			x: 2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5837A875D09D3E35"]
 			id: "5177EBAEC06D1F27"
 			tasks: [{
 				id: "161EEF72F6883229"
-				item: "gtceu:uraninite_dust"
+				item: "gtceu:uranium_235_ingot"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 1.5d
 			y: 1.5d
 		}
 		{
@@ -116,13 +116,8 @@
 			id: "74309E61E59DB15E"
 			shape: "hexagon"
 			size: 1.25d
-			tasks: [{
-				id: "5600EC34B9B878B8"
-				item: "gtceu:molten_salt_reactor"
-				type: "item"
-			}]
 			title: "FUUUUS- Wait... FISSSSION!"
-			x: 8.5d
+			x: 7.5d
 			y: 1.5d
 		}
 		{
@@ -134,7 +129,7 @@
 				item: "gtceu:neptunium_ingot"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.5d
 			y: -1.5d
 		}
 		{
@@ -145,8 +140,8 @@
 				item: "gtceu:fine_neptunium_wire"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -4.5d
+			x: 3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["50ADEFE7F2587791"]
@@ -156,8 +151,8 @@
 				item: "gtceu:plutonium_ingot"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -6.0d
+			x: 6.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -170,8 +165,8 @@
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -4.5d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -184,8 +179,8 @@
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -6.0d
+			x: 4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5E2D93FAA0E33E3D"]
@@ -195,17 +190,15 @@
 				item: "gtceu:fine_plutonium_wire"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -7.5d
+			x: 6.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5837A875D09D3E35"]
 			description: [
-				"Upon my attempts to establish connections with Alfheim, all I am met with is silence."
+				"Whatever powers the Overseers have put on this world prevents the weak dimensional bridge of the elven portal to fail."
 				""
-				"Alfheim has been destroyed here, and echos many stars share the same fate."
-				""
-				"I need to stop this."
+				"I will need to devise a better option"
 			]
 			id: "125CD8C8BF8E56AE"
 			shape: "hexagon"
@@ -217,51 +210,37 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -3.0d
+			y: -2.25d
 		}
 		{
 			dependencies: ["125CD8C8BF8E56AE"]
-			description: [
-				"Essence Reactor Mk1"
-				""
-				"Intakes mundane components and uses the basics of psionic manipulation through an arcane conduit to produce complex products."
-			]
 			id: "151A9B2F42C9284E"
 			subtitle: "A plan forms"
 			tasks: [{
-				id: "21BFD68488093828"
-				item: "gtceu:essence_reactor"
+				id: "61C425497BC01BF6"
 				type: "item"
 			}]
 			title: "Bending to my will"
 			x: 0.0d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
-			dependencies: ["627303BD04BDAC20"]
+			dependencies: ["151A9B2F42C9284E"]
 			id: "40584BD5E47EF0D7"
-			tasks: [
-				{
-					id: "50399CECDD476662"
-					item: "botania:elementium_ingot"
-					type: "item"
-				}
-				{
-					id: "50AC9D2AF60F10E1"
-					item: "botania:dragonstone"
-					type: "item"
-				}
-				{
-					id: "602E8C7D47817169"
-					item: "botania:pixie_dust"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "50399CECDD476662"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
 			x: 0.0d
 			y: -7.5d
 		}
 		{
-			dependencies: ["40584BD5E47EF0D7"]
+			dependencies: [
+				"40584BD5E47EF0D7"
+				"7119BCE8C7B992FF"
+				"67B866A84BB5711A"
+			]
 			description: [
 				"It's time to start fighting back."
 				""
@@ -275,7 +254,7 @@
 			]
 			id: "2C37D2FB314E1C7E"
 			shape: "hexagon"
-			size: 1.0d
+			size: 1.75d
 			subtitle: "Armed for Conflict"
 			tasks: [{
 				id: "292672F5B1FE626E"
@@ -283,7 +262,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -9.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["2C37D2FB314E1C7E"]
@@ -301,28 +280,10 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -10.5d
+			y: -11.5d
 		}
 		{
-			dependencies: [
-				"7821728DED2F1B37"
-				"3EE6B0A888940001"
-				"43F0CB80703C49A2"
-			]
-			description: [
-				"&bVirtue Meld&r is an unique composition of several exotic materials you've acquired so far; And the essence of a dead god but that's not important."
-				""
-				"Due to it's steep cost in &aluminite&r, it is now strongly advised to passive &aluminite&r."
-				""
-				"Please for the love of god passive &aluminite&r -"
-				"Do not do what I did -"
-				"Do &cnot&r on demand &aluminite&r -"
-				"I had 6 &3IV&r &eEBFS&r all on Prismatic Tungsten Coil and holy moly it was just really slow"
-				"Please just passive your luminite -"
-				"PLEASE"
-				""
-				"PUT THE CRAFTING PATTERN AWAY"
-			]
+			dependencies: ["7821728DED2F1B37"]
 			id: "296B15E940C09EDB"
 			subtitle: "Godly metallurgy"
 			tasks: [{
@@ -331,13 +292,10 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -12.0d
+			y: -13.0d
 		}
 		{
-			dependencies: [
-				"296B15E940C09EDB"
-				"21BE154ED4F3F6C6"
-			]
+			dependencies: ["296B15E940C09EDB"]
 			id: "44DE661BAA434766"
 			shape: "hexagon"
 			size: 2.0d
@@ -347,7 +305,29 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -14.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["151A9B2F42C9284E"]
+			id: "67B866A84BB5711A"
+			tasks: [{
+				id: "28A76CED5C4429B7"
+				item: "botania:pixie_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["151A9B2F42C9284E"]
+			id: "7119BCE8C7B992FF"
+			tasks: [{
+				id: "031543695FDC563C"
+				item: "botania:dragonstone"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["5837A875D09D3E35"]
@@ -357,8 +337,8 @@
 				item: "gtceu:mre_slag_bucket"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["74309E61E59DB15E"]
@@ -368,7 +348,7 @@
 				item: "embers:steam_bucket"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 7.5d
 			y: 4.0d
 		}
 		{
@@ -386,14 +366,14 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["01662E3A99EA70D9"]
+			dependencies: ["3CC0B57321E8DD80"]
 			id: "3F1DFE1D8D16C136"
 			tasks: [{
 				id: "5F60C69EF01CD8A2"
 				item: "gtceu:thundering_aerocloud_solution_bucket"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -1.5d
 			y: 4.0d
 		}
 		{
@@ -404,7 +384,7 @@
 				item: "gtceu:thundering_aerocloud_concentration_bucket"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -3.0d
 			y: 4.0d
 		}
 		{
@@ -415,7 +395,7 @@
 				item: "gtceu:thundering_mana_bucket"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -4.5d
 			y: 4.0d
 		}
 		{
@@ -426,18 +406,18 @@
 				item: "gtceu:thunder_boosted_source_diesel_bucket"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -6.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["3CC0B57321E8DD80"]
+			dependencies: ["7A5FFB69AAE757FB"]
 			id: "01662E3A99EA70D9"
 			tasks: [{
 				id: "2FD5B58EE646EA25"
 				item: "gtceu:large_combustion_engine"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -7.5d
 			y: 4.0d
 		}
 		{
@@ -519,8 +499,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 12.0d
-			y: 4.0d
+			x: 12.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -543,7 +523,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.5d
+			x: 2.5d
 			y: 1.5d
 		}
 		{
@@ -564,7 +544,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 6.0d
+			x: 3.5d
 			y: 1.0d
 		}
 		{
@@ -585,55 +565,83 @@
 					type: "checkmark"
 				}
 			]
-			x: 6.0d
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"35FA8E7D591414DE"
+				"42FBED68FB3BB538"
+			]
+			id: "074D3BB6CB85AEF3"
+			tasks: [{
+				id: "768914EAE8D8705A"
+				item: "gtceu:uranium_235_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"43879AAA41015110"
+				"2CF1EE05CF359064"
+			]
+			id: "03B171F27FC1DC6B"
+			tasks: [{
+				id: "15EB48E87F6D375B"
+				item: "gtceu:uranium_dust"
+				type: "item"
+			}]
+			x: 5.0d
 			y: 2.0d
 		}
 		{
 			dependencies: [
 				"69C238710AC5E0F5"
-				"4B33D9E665298C60"
-				"42FBED68FB3BB538"
-				"2CF1EE05CF359064"
+				"03B171F27FC1DC6B"
+				"074D3BB6CB85AEF3"
 			]
 			id: "55791C262EB37FB7"
-			tasks: [{
-				id: "7E7CA5B976EB4B95"
-				item: "gtceu:uranium_fuel_salt_bucket"
-				type: "item"
-			}]
-			x: 7.5d
+			x: 6.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["74309E61E59DB15E"]
 			id: "26EFA20A9C9A92A3"
-			tasks: [
-				{
-					id: "7E5EB9B98FD25CAF"
-					item: "gtceu:superheated_waste_uranium_fuel_salt_bucket"
-					type: "item"
-				}
-				{
-					id: "42A657AAE1CFD6DF"
-					item: "gtceu:superheated_uranium_fuel_salt_bucket"
-					type: "item"
-				}
-			]
-			x: 8.5d
+			x: 7.5d
 			y: 0.0d
+		}
+		{
+			description: [
+				"Upon my attempts to establish connections with Alfheim, all I am met with is silence."
+				""
+				"Alfheim has been destroyed here, and echos many stars share the same fate."
+				""
+				"I need to stop this."
+			]
+			id: "604E787AB355DF43"
+			shape: "gear"
+			subtitle: "..."
+			tasks: [{
+				id: "067CC4749E269B7F"
+				title: "A price paid forward"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["71BB86F673F75CEF"]
 			id: "4F18985BF0C10A39"
 			shape: "hexagon"
-			size: 1.75d
 			tasks: [{
 				id: "0D4E388F306CC922"
 				item: "gtceu:power_substation"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -12.0d
+			x: 9.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -646,8 +654,8 @@
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -7.5d
+			x: 5.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -656,36 +664,28 @@
 			]
 			id: "71BB86F673F75CEF"
 			shape: "hexagon"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "0586462F306B2EE8"
 				item: "gtceu:nano_processor_mainframe"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -9.0d
+			x: 7.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["66199EEBDDC26CD6"]
-			description: ["You'll also have to process neptunium into plutonium - you can most likely run it through the same setup you used to process your uranium."]
 			id: "2D8D515852B1107E"
-			shape: "gear"
-			subtitle: "The Cycle Continues"
 			tasks: [{
 				id: "7A04212E9D4DC416"
 				item: "gtceu:neptunium_dust"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["4E624B18AFD31904"]
-			description: [
-				"As you progress, lower tier nuclear elements will be minable on distant planets."
-				""
-				"In short, it'll become easier to produce higher tier nuclear elements/more of the earlier ones."
-			]
 			id: "50ADEFE7F2587791"
 			subtitle: "One More Time"
 			tasks: [{
@@ -693,513 +693,28 @@
 				item: "gtceu:plutonium_dust"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -3.0d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["26EFA20A9C9A92A3"]
 			id: "329307C3E9C71752"
-			shape: "hexagon"
 			tasks: [{
-				id: "2570637BB372FB07"
-				item: "gtceu:pulse_heat_exchanger"
-				type: "item"
+				id: "0CC675A960E9070A"
+				type: "custom"
 			}]
-			x: 7.5d
+			x: 6.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["329307C3E9C71752"]
 			id: "66199EEBDDC26CD6"
 			tasks: [{
-				id: "097EC7B85AF7F5CA"
-				item: "gtceu:waste_uranium_fuel_salt_bucket"
-				type: "item"
+				id: "1C5E7DC7D6F9FF0C"
+				type: "custom"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["5837A875D09D3E35"]
-			hide_dependency_lines: true
-			id: "4B33D9E665298C60"
-			subtitle: "FLiNaK - Reactor Salt Mixture"
-			tasks: [{
-				id: "386CE6617808EC02"
-				item: "gtceu:flinak_bucket"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["5837A875D09D3E35"]
-			id: "78F750D2763EA42B"
-			subtitle: "Welcome to EV by the way."
-			tasks: [{
-				id: "298BA0E3BE2138B6"
-				item: {
-					Count: 1b
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:raw_wolframite)item(gtceu:raw_scheelite)item(gtceu:raw_tungstate))"
-					}
-				}
-				title: "Any Tungsten Bearing Ore"
-				type: "item"
-			}]
-			title: "The Journey for Tungsten"
-			x: -1.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["78F750D2763EA42B"]
-			icon: "gtceu:impure_sodium_tungstate_solution_bucket"
-			id: "189A44F4127E5B61"
-			tasks: [
-				{
-					id: "2B81B835B6C79DA8"
-					item: "gtceu:impure_sodium_tungstate_solution_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "2803621E5BE3D242"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: -2.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["189A44F4127E5B61"]
-			icon: "gtceu:sodium_tungstate_solution_bucket"
-			id: "5D360B7923FC9556"
-			tasks: [
-				{
-					id: "4D67A058603634C0"
-					item: "gtceu:sodium_tungstate_solution_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "6A01FC2076460C0B"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: -3.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["5D360B7923FC9556"]
-			icon: "gtceu:trioctylammonium_isopolytungstate_bucket"
-			id: "0B583025719FC9FF"
-			tasks: [
-				{
-					id: "144D108BBD9BBBD9"
-					item: "gtceu:trioctylammonium_isopolytungstate_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "52573A737B291B25"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: -3.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["0B583025719FC9FF"]
-			id: "1A04E84CB7FCED88"
-			tasks: [{
-				id: "0B3FB2B15E30A3CA"
-				item: "gtceu:ammonium_paratungstate_dust"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["1A04E84CB7FCED88"]
-			id: "12835262ED928765"
-			tasks: [{
-				id: "1CECE5400497D3F0"
-				item: "gtceu:tungstic_acid_dust"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["12835262ED928765"]
-			id: "4F72526910AA673C"
-			tasks: [{
-				id: "41B733AF7A6FB0BF"
-				item: "gtceu:tungsten_trioxide_dust"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["4F72526910AA673C"]
-			id: "746EE169EC0C51EA"
-			tasks: [{
-				id: "6F1859BDEC7D2263"
-				item: "gtceu:tungsten_dust"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["0005DD30A37AB361"]
-			id: "3EE6B0A888940001"
-			shape: "octagon"
-			size: 1.25d
-			tasks: [{
-				id: "40A8B30D25EECBC1"
-				item: "kubejs:prismatic_tungsten_coil_block"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -12.0d
-		}
-		{
-			dependencies: ["5837A875D09D3E35"]
-			id: "7090D7E23692B1F6"
-			shape: "hexagon"
-			tasks: [{
-				id: "0F2618957F283286"
-				item: "gtceu:insoluble_plat_group_residue_dust"
-				type: "item"
-			}]
-			title: "Platium Products Part 2"
-			x: -2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["44DE661BAA434766"]
-			id: "0F6F2DC7E0F3E390"
-			size: 1.75d
-			tasks: [{
-				id: "084FCB67CD984210"
-				item: {
-					Count: 1b
-					id: "ad_astra:tier_2_rocket"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 0.0d
-			y: -16.5d
-		}
-		{
-			dependencies: [
-				"746EE169EC0C51EA"
-				"3EE6B0A888940001"
-			]
-			id: "21BE154ED4F3F6C6"
-			tasks: [{
-				id: "111F098763F0D489"
-				item: "gtceu:tungsten_steel_ingot"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -14.0d
-		}
-		{
-			dependencies: [
-				"746EE169EC0C51EA"
-				"2B2C603190C490F2"
-			]
-			id: "0005DD30A37AB361"
-			tasks: [{
-				id: "4DA453A8043EECAF"
-				item: "gtceu:prismatic_tungstensteel_ingot"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -10.5d
-		}
-		{
-			dependencies: ["0329F3565A24E95F"]
-			description: ["Placeholder : SOURCE - LRE / MRE "]
-			icon: "gtceu:praseodymium_ingot"
-			id: "478B3130E4E9FE6B"
-			shape: "hexagon"
-			size: 1.25d
-			subtitle: "Yay more rare earths"
-			title: "Praseodymium Sources"
-			x: -8.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["478B3130E4E9FE6B"]
-			id: "2DF60BFD430D8928"
-			tasks: [{
-				id: "4EDD11ADAD9847F6"
-				item: "gtceu:neodymium_praseodymium_rod"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -9.0d
-		}
-		{
-			dependencies: [
-				"33CE2F436798DC0A"
-				"485969A8D5E05AF2"
-				"26EF2E92ED5362D2"
-				"7F4ED2D522BA6008"
-			]
-			id: "1B4341A2252E0EA3"
-			shape: "hexagon"
-			size: 1.25d
-			tasks: [{
-				id: "7E592A62CEDE1041"
-				item: "gtceu:iv_electric_motor"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -14.0d
-		}
-		{
-			dependencies: ["296B15E940C09EDB"]
-			hide_dependency_lines: true
-			id: "33CE2F436798DC0A"
-			shape: "hexagon"
-			tasks: [{
-				id: "7302CD780CAC5CA1"
-				item: "gtceu:virtue_meld_double_wire"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -15.5d
-		}
-		{
-			dependencies: ["21BE154ED4F3F6C6"]
-			id: "485969A8D5E05AF2"
-			tasks: [{
-				id: "3DD8359407DB2D2C"
-				item: "gtceu:tungsten_steel_rod"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -14.0d
-		}
-		{
-			dependencies: ["2DF60BFD430D8928"]
-			description: [
-				"Yup, you need it."
-				"Yup, I did this solely to spite you"
-				"Yup, You'll need an IV one next"
-				"Yes, I made the polarizer vital to progression"
-				"Dw, you can make a large one in IV :)"
-			]
-			id: "3CA502E5762F362F"
-			subtitle: "L.M.A.O"
-			tasks: [{
-				id: "0686F5D779AA76F9"
-				item: "gtceu:ev_polarizer"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -10.5d
-		}
-		{
-			dependencies: ["3CA502E5762F362F"]
-			id: "26EF2E92ED5362D2"
-			tasks: [{
-				id: "36A02193C50E37B5"
-				item: "gtceu:magnetic_neodymium_praseodymium_rod"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -12.0d
-		}
-		{
-			dependencies: ["746EE169EC0C51EA"]
-			id: "03DB999CCE43BBAE"
-			tasks: [{
-				id: "5A031EA3BF4729DF"
-				item: "gtceu:tungsten_ingot"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -10.5d
-		}
-		{
-			dependencies: [
-				"03DB999CCE43BBAE"
-				"51A7A8BE11EC9864"
-			]
-			id: "7F4ED2D522BA6008"
-			tasks: [{
-				id: "0BA9E56376A24184"
-				item: "gtceu:tungsten_double_cable"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -12.0d
-		}
-		{
-			dependencies: ["151A9B2F42C9284E"]
-			id: "627303BD04BDAC20"
-			shape: "hexagon"
-			subtitle: "Yes, make them all."
-			tasks: [
-				{
-					id: "0542068DA882357D"
-					item: "bloodmagic:reagentwater"
-					type: "item"
-				}
-				{
-					id: "6CF17616B6F08423"
-					item: "bloodmagic:reagentlava"
-					type: "item"
-				}
-				{
-					id: "45F6EC044F39FC32"
-					item: "bloodmagic:reagentgrowth"
-					type: "item"
-				}
-				{
-					id: "6CC97E82C539C3C1"
-					item: "bloodmagic:reagentair"
-					type: "item"
-				}
-			]
-			title: "Essence Reactor Catalysts"
-			x: 0.0d
-			y: -6.0d
-		}
-		{
-			id: "43F0CB80703C49A2"
-			shape: "octagon"
-			size: 1.25d
-			tasks: [{
-				id: "511AE6176BDFBB5B"
-				item: "gtceu:alloy_blast_smelter"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -12.0d
-		}
-		{
-			dependencies: ["62D8A986F474023F"]
-			id: "6F037EB9D44C5CAD"
-			tasks: [{
-				id: "378F3E38EA46F251"
-				item: "gtceu:tears_of_the_sky_bucket"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 5.5d
-		}
-		{
-			dependencies: [
-				"42FBED68FB3BB538"
-				"2CF1EE05CF359064"
-			]
-			description: ["If you need the dusts you can optionally electrolyze them"]
-			id: "394A617CE2B7112D"
-			optional: true
-			shape: "gear"
-			subtitle: "Do not eat"
-			tasks: [
-				{
-					id: "1175CDCE07390186"
-					item: "gtceu:uranium_dust"
-					type: "item"
-				}
-				{
-					id: "2CEE56CAEAFAA4B9"
-					item: "gtceu:uranium_235_dust"
-					type: "item"
-				}
-			]
-			x: 6.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"627303BD04BDAC20"
-				"6404D02F501AFCC4"
-				"39ACD6D74EAB5B9D"
-			]
-			id: "4E6C6414C1277093"
-			tasks: [{
-				id: "778E5C5DD482DF75"
-				item: "gtceu:astraline_prismatic_solution_bucket"
-				type: "item"
-			}]
-			title: "Basic Psionic Manifestations"
-			x: -1.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["4E6C6414C1277093"]
-			icon: "gtceu:prisma_gem"
-			id: "2B2C603190C490F2"
-			tasks: [{
-				id: "68B6169E1EB8D907"
-				item: "gtceu:prisma_gem"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -9.0d
-		}
-		{
-			dependencies: [
-				"627303BD04BDAC20"
-				"151A9B2F42C9284E"
-			]
-			id: "39ACD6D74EAB5B9D"
-			tasks: [{
-				id: "7ACFE92C0AC8CCE1"
-				item: "gtceu:astraline_corrosion_agent_bucket"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -6.0d
-		}
-		{
-			id: "6404D02F501AFCC4"
-			tasks: [{
-				id: "2DCA5EDD03B0C5F5"
-				item: "minecraft:prismarine_shard"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["283CC0607989316D"]
-			id: "51A7A8BE11EC9864"
-			tasks: [{
-				id: "7A9C318044165EF1"
-				item: "gtceu:silicone_rubber_bucket"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -10.5d
-		}
-		{
-			id: "283CC0607989316D"
-			tasks: [{
-				id: "78B697E42A7F8CF3"
-				item: "gtceu:polydimethylsiloxane_dust"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -9.0d
 		}
 	]
 	title: "Safe Travels - [EV]"

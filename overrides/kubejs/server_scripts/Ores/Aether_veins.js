@@ -2,7 +2,7 @@ GTCEuServerEvents.oreVeins(event => {
     event.add('kubejs:zanite', vein => {
         vein.layer('aether_islands')
         vein.weight(30)
-        vein.clusterSize(95)
+        vein.clusterSize(30)
         vein.density(0.35)
         vein.discardChanceOnAirExposure(0)
         vein.heightRangeUniform(16, 128)
@@ -22,7 +22,7 @@ GTCEuServerEvents.oreVeins(event => {
     event.add('kubejs:ambrosium', vein => {
         vein.layer('aether_islands')
         vein.weight(30)
-        vein.clusterSize(95)
+        vein.clusterSize(30)
         vein.density(0.35)
         vein.discardChanceOnAirExposure(0)
         vein.heightRangeUniform(16, 128)
@@ -42,7 +42,7 @@ GTCEuServerEvents.oreVeins(event => {
     event.add('kubejs:tetrahedrite_vein_aether', vein => {
         vein.layer('aether_islands')
         vein.weight(40)
-        vein.clusterSize(95)
+        vein.clusterSize(20)
         vein.density(0.45)
         vein.discardChanceOnAirExposure(0)
         vein.heightRangeUniform(16, 128)

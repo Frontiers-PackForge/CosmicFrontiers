@@ -12,8 +12,6 @@ let yeet = (itemName) => {
     
     })
 }
-//Yeet Test # 1
-
 //Delightful Knives getting yeeted
 yeet('farmersdelight:flint_knife');
 yeet('farmersdelight:iron_knife');

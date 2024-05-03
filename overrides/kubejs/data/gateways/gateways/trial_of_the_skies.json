@@ -130,7 +130,7 @@
         {
             "type": "gateways:stack",
             "stack": {
-                "item": "minecraft:golden_apple",
+                "item": "skilltree:wisdom_scroll",
                 "count": 4
             }
         }

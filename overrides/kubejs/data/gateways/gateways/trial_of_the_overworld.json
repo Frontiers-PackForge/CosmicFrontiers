@@ -24,7 +24,7 @@
                     }
                 }
             ],
-			"max_wave_time": 10000,
+			"max_wave_time": 1000,
 			"setup_time": 200
 		},
         {
@@ -78,7 +78,7 @@
                     }
                 ]
 			}],
-			"max_wave_time": 10000,
+			"max_wave_time": 1000,
 			"setup_time": 200
 		},
         {
@@ -145,7 +145,7 @@
                     }
                 ]
 			}],
-			"max_wave_time": 10000,
+			"max_wave_time": 1000,
 			"setup_time": 200
 		},
         {
@@ -238,7 +238,7 @@
                     }
                 ]
 			}],
-			"max_wave_time": 12000,
+			"max_wave_time": 1200,
 			"setup_time": 200
 		}
 	],
@@ -253,7 +253,7 @@
         {
             "type": "gateways:stack",
             "stack": {
-                "item": "cold_sweat:soul_sprout",
+                "item": "skilltree:wisdom_scroll",
                 "count": 2
             }
         }

@@ -5,12 +5,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:chemical_bath/bathe_nickel_crushed_ore_to_purified_ore' })
     event.remove({ id: 'gtceu:centrifuge/pgs_separation' })
     event.remove({ id: 'gtceu:electrolyzer/bauxite_electrolysis' })
-    event.recipes.gtceu.chemical_reactor('ammonium_chloride_dust')
-        .inputFluids('gtceu:ammonia 1000')
-        .inputFluids('gtceu:hydrochloric_acid 1000')
-        .itemOutputs('2x gtceu:ammonium_chloride_dust')
-        .duration(20)
-        .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.chemical_bath('gtceu:chemical_bath/bathe_nickel_crushed_ore_to_purified_ore')
         .itemInputs('gtceu:crushed_nickel_ore')
         .inputFluids('gtceu:mercury 100')
@@ -45,7 +39,6 @@ ServerEvents.recipes(event => {
         .itemInputs('6x gtceu:cooperite_dust')
         .itemOutputs('4x gtceu:platinum_nugget')
         .duration(600)
-        .circuit(2)
         .blastFurnaceTemp(2700)
         .EUt(GTValues.VA[GTValues.HV]);
     //Roasted Cooperite
@@ -54,7 +47,6 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:oxygen 16000')
         .itemOutputs('5x gtceu:roasted_cooperite_dust')
         .outputFluids('gtceu:sulfur_dioxide 8000')
-        .circuit(1)
         .duration(1200)
         .blastFurnaceTemp(2700)
         .EUt(GTValues.VA[GTValues.MV]);
@@ -125,69 +117,12 @@ ServerEvents.recipes(event => {
         .duration(152)
         .EUt(GTValues.VA[GTValues.MV]);
 
-    // //Ascorbic Acid
 
-    // event.recipes.gtceu.chemical_reactor('cerium_oxide')
-    // .itemInputs('gtceu:cerium_dust')
-    // .inputFluids('gtceu:oxygen 2000')
-    // .itemOutputs('3x gtceu:cerium_oxide_dust')
-    // .duration(80)
-    // .EUt(GTValues.VA[GTValues.HV]);
 
-    // event.recipes.gtceu.chemical_reactor('cerium_sulfate')
-    // .itemInputs('3x gtceu:cerium_oxide_dust')
-    // .inputFluids('gtceu:sulfuric_acid 2000')
-    // .itemOutputs('11x gtceu:cerium_sulfate_dust')
-    // .outputFluids('minecraft:water 2000')
-    // .duration(120)
-    // .EUt(GTValues.VA[GTValues.HV]);
-    // Extractions from the IPGS dusts
-    event.recipes.gtceu.electric_blast_furnace('ipgs_to_rhdpgs')
-        .itemInputs('9x gtceu:insoluble_plat_group_residue_dust')
-        .itemInputs('42x gtceu:sodium_bisulfate_dust')
-        .inputFluids('minecraft:water 7000')
-        .blastFurnaceTemp(4500)
-        .itemOutputs('gtceu:rhodium_depleted_plat_group_residue_dust')
-        .outputFluids('gtceu:rodium_sulfate_solution 1000')
-        .duration(128)
-        .EUt(GTValues.VA[GTValues.HV]);
-    event.recipes.gtceu.electric_blast_furnace('rhdpgr_to_irpgr')
-        .itemInputs('gtceu:rhodium_depleted_plat_group_residue_dust')
-        .itemInputs('17x gtceu:sodium_peroxide_dust')
-        .inputFluids('minecraft:water 15000')
-        .blastFurnaceTemp(4500)
-        .itemOutputs('gtceu:iridium_rich_plat_group_residue_dust')
-        .outputFluids('gtceu:sodium_ruthenate_perosomate 1000')
-        .duration(420)
-        .EUt(GTValues.VA[GTValues.HV]);
-    event.recipes.gtceu.electric_blast_furnace('irpgr_ircl')
-        .itemInputs('gtceu:iridium_rich_plat_group_residue_dust')
-        .itemInputs('12x gtceu:barium_peroxide')
-        .inputFluids('gtceu:hydrochloric_acid 12000')
-        .blastFurnaceTemp(4500)
-        .itemOutputs('gtceu:iridium_rich_plat_group_residue_dust')
-        .outputFluids('gtceu:chloroiridic_acid 6000')
-        .duration(240)
-        .EUt(GTValues.VA[GTValues.HV]);
 
-    //Chloroiridic to Hexa
-    event.recipes.gtceu.chemical_reactor('iridic_to_hexa')
-        .itemInputs('10x gtceu:ammonium_chloride_dust')
-        .inputFluids('gtceu:chloroiridic_acid 3000')
-        .itemOutputs('10x gtceu:ammonium_hexachloroiridate_dust')
-        .outputFluids('gtceu:hydrochloric_acid 2000')
-        .outputFluids('minecraft:water 2000')
-        .duration(120)
-        .EUt(GTValues.VA[GTValues.EV]);
-    //Iridium
-    event.recipes.gtceu.large_chemical_reactor('hexair_to_iridium')
-        .itemInputs('10x gtceu:ammonium_hexachloroiridate_dust')
-        .inputFluids('gtceu:iron_ii_chloride 4000')
-        .itemOutputs('gtceu:iridium_dust')
-        .outputFluids('gtceu:iron_iii_chloride 4000')
-        .outputFluids('gtceu:ammonia 2000')
-        .outputFluids('gtceu:hydrogenchloride 2000')
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.IV]);
+
+
+
+
 
 })

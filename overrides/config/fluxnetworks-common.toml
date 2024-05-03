@@ -1,0 +1,13 @@
+#Most configs are moved to /serverconfig/fluxnetworks-server.toml
+#Copy to /defaultconfig/fluxnetworks-server.toml for modpacks
+placeholder = true
+
+#The One Probe
+[OneProbe]
+	#Displays: Network Name, Live Transfer Rate & Internal Buffer
+	enableOneProbeBasicInfo = true
+	#Displays: Transfer Limit & Priority etc
+	enableOneProbeAdvancedInfo = true
+	#Displays Advanced Info when sneaking only
+	enableOneProbeSneaking = true
+

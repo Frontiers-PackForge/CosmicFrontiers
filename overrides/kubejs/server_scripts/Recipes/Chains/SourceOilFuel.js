@@ -28,8 +28,8 @@ ServerEvents.recipes((event) => {
   event.recipes.gtceu.macerator("magebloom_shredding")
     .itemInputs("kubejs:washed_magebloom")
     .itemOutputs("kubejs:shredded_magebloom")
-    .duration(40)
-    .EUt(16);
+    .duration(100)
+    .EUt(2);
 
   //Extraction
   event.recipes.gtceu.chemical_reactor("gtceu:centrifuge/source_oil_spinny")
@@ -56,20 +56,12 @@ ServerEvents.recipes((event) => {
   //TODO - Waste water recycling
 
   //Transestrification
-  event.recipes.gtceu.chemical_reactor("source_enhanced_bio_fuel")
+  event.recipes.gtceu.chemical_reactor("gtceu:centrifuge/source_enhanced_bio_fuel")
     .itemInputs("gtceu:tiny_sodium_hydroxide_dust")
     .inputFluids("gtceu:source_oils 6000")
     .inputFluids("gtceu:ethanol 1000")
     .outputFluids("gtceu:source_enhanced_bio_fuel 6000")
     .outputFluids("gtceu:glycerol 1000")
-    .duration(600)
-    .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.large_chemical_reactor("source_enhanced_bio_fuel_batch")
-    .itemInputs("gtceu:sodium_hydroxide_dust")
-    .inputFluids("gtceu:source_oils 54000")
-    .inputFluids("gtceu:ethanol 9000")
-    .outputFluids("gtceu:source_enhanced_bio_fuel 54000")
-    .outputFluids("gtceu:glycerol 9000")
     .duration(600)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.combustion_generator("combustion_source_fuel")

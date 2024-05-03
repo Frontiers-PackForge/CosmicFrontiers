@@ -14,18 +14,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
         )
-    event.create('dreamwood')
-        .color(0xb9ddd3)
-        .iconSet(GTMaterialIconSet.WOOD)
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-        )
-
 
     event.create('terrasteel')
         .color(0x55f609)
-        .ingot()
         .element(GTElements.get('terrasteel'))
         .iconSet(GTMaterialIconSet.SHINY)
         .cableProperties(GTValues.V[GTValues.MV], 8, 1, false)
@@ -35,9 +26,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.GENERATE_FRAME
+            GTMaterialFlags.GENERATE_FOIL
         )
 
     event.create('mana_steel')
@@ -54,20 +43,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('elementium')
         .color(0xf472c6)
         .iconSet(GTMaterialIconSet.SHINY)
-        .ingot()
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.GENERATE_FOIL
         )
     event.create('galvanized_ethersteel')
         .color(0xcf325b)
         .ingot()
-        .fluid()
         .element(GTElements.get('ether_steel'))
         .iconSet(GTMaterialIconSet.SHINY)
         .cableProperties(GTValues.V[GTValues.HV], 2, 0, true)
@@ -83,17 +69,4 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
         )
 
-
-})
-
-GTCEuStartupEvents.materialModification(event => {
-    // TagPrefix.ingot.setIgnored(GTMaterials.get('terrasteel'), () => Item.getItem('botania:terrasteel_ingot'))
-    // TagPrefix.ingot.setIgnored(GTMaterials.get('elementium'), () => Item.getItem('botania:elementium_ingot'))
-    // TagPrefix.ingot.setIgnored(GTMaterials.get('elementium'))
-    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('mana_steel'), () => Item.getItem('botania:manasteel_ingot'))
-    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('terrasteel'), () => Item.getItem('botania:terrasteel_ingot'))
-    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('elementium'), () => Item.getItem('botania:elementium_ingot'))
-    GTMaterials.get('oxalic_acid').setFormula('C2H2O4', true)
-    GTMaterials.get('di_2_ethylhexyl_phosphoric_acid').setFormula('(C8H17O)2PO2H', true)
-    GTMaterials.get('sodium_phosphate').setFormula('Na3PO4', true)
 })
