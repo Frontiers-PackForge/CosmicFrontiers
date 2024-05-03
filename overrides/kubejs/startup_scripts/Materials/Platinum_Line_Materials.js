@@ -114,84 +114,148 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        event.create('sodium_ruthenate_perosomate')
+    event.create('sodium_ruthenate_perosomate')
         .fluid()
         .color(0x414d54).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        event.create('ruthenium_osmium_tetroxides')
+    event.create('ruthenium_osmium_tetroxides')
         .fluid()
         .color(0x364a5c).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        event.create('chlororuthenic_acid_osmium_tetroxide_solution')
+    event.create('chlororuthenic_acid_osmium_tetroxide_solution')
         .fluid()
         .color(0x436c91).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        event.create('impure_osmium_tetroxide')
+    event.create('impure_osmium_tetroxide')
         .dust()
         .color(0x496287).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        event.create('chlororuthenic_acid')
+    event.create('chlororuthenic_acid')
         .fluid()
         .color(0x415953).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        event.create('ammonium_hexachlororuthenate')
+    event.create('ammonium_hexachlororuthenate')
         .dust()
         .color(0x444159).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        event.create('sodium_osmate')
+    event.create('sodium_osmate')
         .dust()
         .color(0x464d9e).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        event.create('tetraammine_osmyl_chloride')
+    event.create('tetraammine_osmyl_chloride')
         .dust()
         .color(0xE9FFA7).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        event.create('chloroiridic_acid')
+    event.create('chloroiridic_acid')
         .fluid()
         .color(0xE9FFA7).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        event.create('ammonium_hexachloroiridate')
+    event.create('ammonium_hexachloroiridate')
         .dust()
         .color(0x46729e).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        event.create('ascorbic_acid')
+    event.create('ascorbic_acid')
         .dust()
         .color(0xa1b0bf).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        event.create('dehydroascorbic_acid')
+    event.create('dehydroascorbic_acid')
+        .dust()
+        .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('cerium_oxide')
+        .dust()
+        .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('cerium_sulfate')
+        .dust()
+        .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('potassiunm_hydroxide')
+        .dust()
+        .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('potassium_sulfate')
+        .dust()
+        .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('iron_ii_chloride')
+        .fluid()
+        .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+
+    event.create('sodium_dioxide')
+        .dust()
+        .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('sodium_peroxide')
+        .dust()
+        .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('barium_peroxide')
+        .dust()
+        .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('barium_oxide')
         .dust()
         .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
         .flags(

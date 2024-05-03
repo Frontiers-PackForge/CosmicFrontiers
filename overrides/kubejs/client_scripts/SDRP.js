@@ -126,8 +126,10 @@ ItemEvents.tooltip(event => {
     text.add(2, Text.of('Perfect Overclock').white().bold())
     text.add(3, Text.of('Does not lose energy efficiency when overclocked.').darkPurple())
   })
-  event.addAdvanced({ mod: 'sophisticatedstorage' }, (item, advanced, text) => {
-    text.add(1, Text.of('WARNING : SOPHISTICATED STORAGE WILL BE REMOVED IN 0.6.0').yellow()) 
+  event.addAdvanced('gtceu:industrial_stoneworks', (item, advanced, text) => {
+    text.add(1, Text.of('Volcano in a Box').gray()) 
+    text.add(2, Text.of('Perfect Overclock').white().bold())
+    text.add(3, Text.of('Does not lose energy efficiency when overclocked.').darkPurple())
   })
   //subscript (copy and paste) ₂₃₄₅₆₇₈₉₀
 })

@@ -25,8 +25,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('terrasteel')
         .color(0x55f609)
+        // .ingot()
         .element(GTElements.get('terrasteel'))
-        .ingot()
         .iconSet(GTMaterialIconSet.SHINY)
         .cableProperties(GTValues.V[GTValues.MV], 8, 1, false)
         .flags(
@@ -53,8 +53,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('elementium')
         .color(0xf472c6)
-        .ingot()
         .iconSet(GTMaterialIconSet.SHINY)
+        // .ingot()
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -83,4 +83,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
         )
 
+
 })
+
+// GTCEuStartupEvents.materialModification(event => {
+//     // TagPrefix.ingot.setIgnored(GTMaterials.get('terrasteel'), () => Item.getItem('botania:terrasteel_ingot'))
+//     TagPrefix.ingot.setIgnored(GTMaterials.get('elementium'), () => Item.getItem('botania'))
+// })

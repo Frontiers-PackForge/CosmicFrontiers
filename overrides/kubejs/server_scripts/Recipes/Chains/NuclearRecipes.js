@@ -8,8 +8,24 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:flinak 3000')
         .duration(80)
         .EUt(GTValues.VA[GTValues.HV]);
-
-
+    event.recipes.gtceu.steam_turbine('super_critical_steam_consume')
+        .inputFluids('gtceu:super_critical_steam 1')
+        .duration(200)
+        .EUt(-GTValues.V[GTValues.HV])
+    event.recipes.gtceu.chemical_reactor(`nept_oxide`)
+        .itemInputs('gtceu:neptunium_dust')
+        .inputFluids('gtceu:oxygen 2000')
+        .itemOutputs(`3x gtceu:neptunium_oxide_dust`)
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.LV]);
+    event.recipes.gtceu.chemical_reactor(`nept_hexa`)
+        .itemInputs('3x gtceu:neptunium_oxide_dust')
+        .inputFluids('gtceu:hydrofluoric_acid 4000')
+        .inputFluids('gtceu:fluorine 2000')
+        .outputFluids('gtceu:neptunium_hexafluoride 1000')
+        .outputFluids('minecraft:water 1000')
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.LV]);
     let saltFuelt1 = [
         'uranium',
         'neptunium',
@@ -46,8 +62,6 @@ ServerEvents.recipes(event => {
     saltFuelt1.forEach((tier) => {
         event.recipes.gtceu.centrifuge(`${tier}_fluoride_centri`)
             .inputFluids(`gtceu:${tier}_hexafluoride 1000`)
-            .inputFluids(`gtceu:enriched_${tier}_hexafluoride 1000`)
-            .inputFluids(`gtceu:flinak 10000`)
             .outputFluids(`gtceu:depleted_${tier}_hexafluoride 900`)
             .outputFluids(`gtceu:enriched_${tier}_hexafluoride 100`)
             .duration(100)
