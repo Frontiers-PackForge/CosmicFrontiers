@@ -80,4 +80,13 @@ ServerEvents.recipes((event) => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV]);
 
+    //D2EHPA synthesis
+    event.recipes.gtceu.chemical_reactor('butanol_maker')
+    event.recipes.gtceu.chemical_reactor('2ethyl1hexanol')
+    event.recipes.gtceu.arc_furnace('phosphorus_trichloride')
+    event.recipes.gtceu.chemical_reactor('D2EH_phosphite')
+    event.recipes.gtceu.chemical_reactor('D2EH_phosphorochloridate')
+    event.recipes.gtceu.chemical_reactor('D2EHPA')
+
+
 });
