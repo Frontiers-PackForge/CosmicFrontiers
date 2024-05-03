@@ -151,11 +151,11 @@ ServerEvents.recipes((event) => {
 
 
     // //Extraction mixture
-    event.recipes.gtceu.chemical_reactor('tier_2_extraction_mix')
+    event.recipes.gtceu.chemical_reactor('mre_extraction_mix')
         .inputFluids('gtceu:di_2_ethylhexyl_phosphoric_acid 1000')
         .inputFluids('gtceu:isodecanol 500')
         .inputFluids('gtceu:kerosene 500')
-        .outputFluids('gtceu:mre_tier_2_extraction_mix 2000')
+        .outputFluids('gtceu:mre_extraction_mix 2000')
         .duration(100)
         .EUt(GTValues.VA[GTValues.HV])
 
@@ -178,25 +178,25 @@ ServerEvents.recipes((event) => {
         .outputFluids('gtceu:mre_chlorides 1000')
         .duration(300)
         .EUt(GTValues.VA[GTValues.EV]);
-    event.recipes.gtceu.mixer('mre_tier_2_leached_solution')
+    event.recipes.gtceu.mixer('mre_leached_solution')
         .inputFluids('gtceu:mre_chlorides 1000')
-        .inputFluids('gtceu:mre_tier_2_extraction_mix 4000')
-        .outputFluids('gtceu:mre_leachate_tier_2 5000')
+        .inputFluids('gtceu:mre_extraction_mix 4000')
+        .outputFluids('gtceu:mre_leachate 5000')
         .duration(1200)
         .EUt(GTValues.VA[GTValues.EV]);
-    event.recipes.gtceu.centrifuge('mre_tier_2_phase_separation')
-        .inputFluids('gtceu:mre_leachate_tier_2 5000')
+    event.recipes.gtceu.centrifuge('mre_phase_separation')
+        .inputFluids('gtceu:mre_leachate 5000')
         .outputFluids('gtceu:diluted_hydrochloric_acid 1000')
-        .outputFluids('gtceu:mre_tier_2_organic_leachate 4000')
+        .outputFluids('gtceu:mre_organic_leachate 4000')
         .duration(100)
         .EUt(GTValues.VA[GTValues.EV]);
-    event.recipes.gtceu.chemical_reactor('mre_tier_2_precipitation')
-        .inputFluids('gtceu:mre_tier_2_organic_leachate 4000')
+    event.recipes.gtceu.chemical_reactor('mre_precipitation')
+        .inputFluids('gtceu:mre_organic_leachate 4000')
         .inputFluids('gtceu:sulfuric_acid 1000')
         .itemOutputs('4x gtceu:mre_mixed_dust')
         .duration(400)
         .EUt(GTValues.VA[GTValues.EV]);
-    event.recipes.gtceu.centrifuge('mre_tier_2_dust_separation') //Probs needs rebalancing //Yeah probably -G
+    event.recipes.gtceu.centrifuge('mre_dust_separation') //Probs needs rebalancing //Yeah probably -G
         .itemInputs('16x gtceu:mre_mixed_dust')
         .chancedOutput('gtceu:europium_dust', 1000, 500)
         .chancedOutput('gtceu:gadolinium_dust', 1000, 500)
