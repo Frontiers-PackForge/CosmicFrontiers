@@ -32,10 +32,17 @@ ServerEvents.tags('item', event => {
 // yeet('gtceu:hv_steam_turbine')
 // yeet('gtceu:lv_steam_turbine')
 // yeet('gtceu:steam_large_turbine')
-// yeet('gtceu:plasma_large_turbine')
+yeet('gtceu:rtm_alloy_coil_block')
 yeet('vintagedelight:ghost_charcoal')
 
 ServerEvents.recipes(event => {
+
+       //MISC REMOVALS
+       event.remove({ id: 'gtceu:extractor/extract_luminite_dust' })
+       event.remove({ id: 'gtceu:extractor/extract_luminite_ingot' })
+       event.remove({ id: 'gtceu:extractor/extract_luminite_block' })
+       event.remove({ id: 'gtceu:extractor/extract_luminite_nugget' })
+
        event.remove({ output: 'architects_palette:charcoal_block' })
        event.shaped('architects_palette:charcoal_block', [
               'CC',
@@ -83,9 +90,16 @@ ServerEvents.recipes(event => {
               .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.flora_nurturer('cosmiccore:magebloom_cultivation')
               .notConsumable('ars_nouveau:magebloom_crop')
-              .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 250))
-              .itemOutputs('2x ars_nouveau:magebloom')
-              .chancedOutput(Item.of('ars_nouveau:magebloom', 1), 2500, 750)
+              .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 100))
+              .itemOutputs('4x ars_nouveau:magebloom')
+              .chancedOutput(Item.of('ars_nouveau:magebloom', 2), 2500, 750)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.flora_nurturer('cosmiccore:magebloom_cultivation_aether')
+              .notConsumable('ars_nouveau:magebloom_crop')
+              .inputFluids(Fluid.of('gtceu:aether_augmented_sediment', 100))
+              .itemOutputs('8x ars_nouveau:magebloom')
+              .chancedOutput(Item.of('ars_nouveau:magebloom', 4), 5000, 750)
               .duration(160)
               .EUt(GTValues.VA[GTValues.LV] / 2);
        event.recipes.gtceu.flora_nurturer('cosmiccore:soul_cultivation')
@@ -144,7 +158,7 @@ ServerEvents.recipes(event => {
               .duration(48)
               .EUt(GTValues.VA[GTValues.HV]);
        event.recipes.gtceu.autoclave('lumi_utherium_bad')
-              .inputFluids('gtceu:luminite 432')
+              .inputFluids('gtceu:luminite 144')
               .itemInputs('2x gtceu:utherium_dust')
               .itemOutputs('gtceu:luminescent_utherium_gem')
               .duration(480)
@@ -154,6 +168,31 @@ ServerEvents.recipes(event => {
               .itemInputs('gtceu:utherium_gem')
               .itemOutputs('gtceu:luminescent_utherium_gem')
               .duration(120)
+              .EUt(GTValues.VA[GTValues.HV]);
+       event.recipes.gtceu.alloy_blast_smelter('virtue_meld_molten_bad')
+              .inputFluids('gtceu:galvanized_ethersteel 2304')
+              .inputFluids('gtceu:luminite 1152')
+              .itemInputs('8x gtceu:luminescent_utherium_gem')
+              .itemInputs('8x botania:life_essence')
+              .outputFluids('gtceu:molten_virtue_meld 4608')
+              .blastFurnaceTemp(4500)
+              .circuit(4)
+              .duration(9600)
+              .EUt(GTValues.VA[GTValues.EV]);
+       event.recipes.gtceu.alloy_blast_smelter('virtue_meld_molten_good')
+              .chancedFluidInput(Fluid.of('gtceu:molten_virtue_meld', 1152), 0, 0)
+              .inputFluids('gtceu:luminite 1152')
+              .itemInputs('16x gtceu:luminescent_utherium_gem')
+              .outputFluids('gtceu:molten_virtue_meld 4608')
+              .duration(4800)
+              .circuit(14)
+              .blastFurnaceTemp(4500)
+              .EUt(GTValues.VA[GTValues.EV]);
+       event.recipes.gtceu.vacuum_freezer('virtue_meld_cooling')
+              .notConsumable('gtceu:ingot_casting_mold')
+              .inputFluids('gtceu:molten_virtue_meld 144')
+              .itemOutputs('gtceu:virtue_meld_ingot')
+              .duration(300)
               .EUt(GTValues.VA[GTValues.HV]);
        event.recipes.gtceu.electric_blast_furnace('luminite_blasting_slow')
               .itemInputs('gtceu:luminite_dust')
@@ -170,16 +209,7 @@ ServerEvents.recipes(event => {
               .blastFurnaceTemp(3600)
               .duration(1800)
               .EUt(GTValues.VA[GTValues.HV]);
-       event.shaped('gtceu:hp_steam_masonry_oven', [
-              'WWW',
-              'PBP',
-              'SSS'
-       ], {
-              W: 'gtceu:wrought_iron_plate',
-              P: 'gtceu:steel_small_fluid_pipe',
-              B: 'minecraft:blast_furnace',
-              S: 'minecraft:smooth_stone',
-       })
+
 
 
 

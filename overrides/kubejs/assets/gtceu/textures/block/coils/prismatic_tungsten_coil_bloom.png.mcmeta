@@ -1,0 +1,9 @@
+{
+    "ldlib": {
+        "connection": "gtceu:block/coils/prismatic_tungsten_coil_bloom_ctm",
+        "emissive": true
+    },
+    "shimmer": {
+        "bloom": true
+    }
+}

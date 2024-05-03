@@ -1,8 +1,41 @@
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
+    //Molten Salt Nuclear
+    // Oxide -> Hexafluoride -> Split into depleted and enriched -> turned into fuel
+    //Reprocessing T1
+    // Superheated X waste fuel -> Cooled -> Centrifuged
+    //Reproc T2
+    //Cool Superheated Waste Fuel -> Splitting Agent of some kind -> break away the nuclear products from the flinak and fluoride
     event.create('flinak')
         .fluid()
         .color(0x2b2b2b)
+    //Hexafluorides and Oxides
+    event.create('neptunium_oxide')
+        .dust()
+        .color(0x223342)
+    event.create('neptunium_hexafluoride')
+        .fluid()
+        .color(0x223342)
+    event.create('depleted_neptunium_hexafluoride')
+        .gas()
+        .color(0x223342)
+    event.create('enriched_neptunium_hexafluoride')
+        .gas()
+        .color(0x223342)
+    event.create('plutonium_oxide')
+        .dust()
+        .color(0x400202)
+    event.create('plutonium_hexafluoride')
+        .gas()
+        .color(0x400202)
+    event.create('enriched_plutonium_hexafluoride')
+        .gas()
+        .color(0x400202)
+    event.create('depleted_plutonium_hexafluoride')
+        .gas()
+        .color(0x400202)
+
+
     //Normal Fuel Salts
     event.create('uranium_fuel_salt')
         .fluid()

@@ -125,7 +125,7 @@
 	/**
 	 * Whether recipes should have a button to show the recipe tree.
 	 */
-	recipe-tree-button: true;
+	recipe-tree-button: false;
 
 	/**
 	 * Whether recipes should have a button to fill the ingredients in a handler.
@@ -156,7 +156,7 @@
 	/**
 	 * How many columns and rows of ingredients to limit the left sidebar to
 	 */
-	left-sidebar-size: 12, 100;
+	left-sidebar-size: 11, 100;
 
 	/**
 	 * How much space to maintain between the left sidebar and obstructions, in pixels
