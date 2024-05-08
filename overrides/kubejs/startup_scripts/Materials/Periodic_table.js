@@ -6,7 +6,10 @@ const $BlastProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.m
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
 
-
+//Naquadah
+GTMaterials.Naquadah.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.MOLTEN, new GTFluidBuilder());
+GTMaterials.NaquadahEnriched.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.MOLTEN, new GTFluidBuilder());
+GTMaterials.Naquadria.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.MOLTEN, new GTFluidBuilder());
 //Scandium
 GTMaterials.Scandium.setProperty(PropertyKey.INGOT, new $IngotProperty());
 GTMaterials.Scandium.setProperty(PropertyKey.FLUID, new $FluidProperty());
