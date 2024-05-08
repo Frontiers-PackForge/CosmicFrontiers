@@ -114,4 +114,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.TURBINE)
+
+    GTRecipeTypes.MIXER_RECIPES.setMaxIOSize(6, 1, 3, 1)
+
 })
