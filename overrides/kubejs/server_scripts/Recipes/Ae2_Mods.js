@@ -133,14 +133,16 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'ae2:network/parts/panels_semi_dark_monitor' })
   // event.remove({ output:  })
   // event.remove({ output:  })
-  event.recipes.gtceu.assembly_line('gtceu:assline/create_cell_recipe')
+  event.recipes.gtceu.assembly_line('assline_creative_cell_recipe')
     .itemInputs('64x megacells:mega_energy_cell', '8x #gtceu:circuits/luv', '16x gtceu:superconducting_coil', '64x ae2:fluix_smart_dense_cable', '64x ae2:fluix_smart_dense_cable', '32x gtceu:neutron_reflector')
     .itemOutputs('ae2:creative_energy_cell')
     .inputFluids(
       Fluid.of('gtceu:uu_matter', 666),
       Fluid.of('gtceu:titanium_tungsten_carbide', 4608),
       Fluid.of('gtceu:soldering_alloy', 8192),
+      
     )
+    ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('megacells:mega_energy_cell')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
     .duration(500)
     .EUt(GTValues.VA[GTValues.LuV])
 
