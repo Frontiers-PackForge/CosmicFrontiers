@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:crushed_nickel_ore')
         .inputFluids('gtceu:mercury 100')
         .itemOutputs('gtceu:purified_nickel_ore')
-        .chancedOutput(Item.of('gtceu:platinum_group_sludge_dust', 1), 5000, 500)
+        .chancedOutput(Item.of('gtceu:insoluble_plat_group_residue_dust', 1), 5000, 500)
         .chancedOutput(Item.of('gtceu:stone_dust', 1), 4000, 0)
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV]);
@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.macerator('gtceu:macerator/macerate_nickel_refined_ore_to_dust')
         .itemInputs('gtceu:refined_nickel_ore')
         .itemOutputs('gtceu:nickel_dust')
-        .chancedOutput(Item.of('gtceu:platinum_group_sludge_dust', 1), 1500, 500)
+        .chancedOutput(Item.of('gtceu:insoluble_plat_group_residue_dust', 1), 1500, 500)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.chemical_reactor('hydrogen_peroxide_craft')
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
         .itemInputs('5x gtceu:ammonium_chloride_dust')
         .inputFluids('gtceu:plat_depleted_cooperite_solution 7500')
         .itemOutputs('5x gtceu:ammonium_hexachloropalladate_dust')
-        .itemOutputs('gtceu:platinum_group_sludge_dust')
+        .itemOutputs('gtceu:insoluble_plat_group_residue_dust')
         .outputFluids('gtceu:hydrochloric_acid 1500')
         .outputFluids('gtceu:hydrogen 1000')
         .duration(200)
@@ -125,22 +125,6 @@ ServerEvents.recipes(event => {
         .duration(152)
         .EUt(GTValues.VA[GTValues.MV]);
 
-    // //Ascorbic Acid
-
-    // event.recipes.gtceu.chemical_reactor('cerium_oxide')
-    // .itemInputs('gtceu:cerium_dust')
-    // .inputFluids('gtceu:oxygen 2000')
-    // .itemOutputs('3x gtceu:cerium_oxide_dust')
-    // .duration(80)
-    // .EUt(GTValues.VA[GTValues.HV]);
-
-    // event.recipes.gtceu.chemical_reactor('cerium_sulfate')
-    // .itemInputs('3x gtceu:cerium_oxide_dust')
-    // .inputFluids('gtceu:sulfuric_acid 2000')
-    // .itemOutputs('11x gtceu:cerium_sulfate_dust')
-    // .outputFluids('minecraft:water 2000')
-    // .duration(120)
-    // .EUt(GTValues.VA[GTValues.HV]);
     // Extractions from the IPGS dusts
     event.recipes.gtceu.electric_blast_furnace('ipgs_to_rhdpgs')
         .itemInputs('9x gtceu:insoluble_plat_group_residue_dust')
