@@ -18,6 +18,7 @@ let yeet_f = (itemName) => {
 // yeet(/ad_astra:(.*)_ingot/);
 yeet('ad_astra:steel_ingot')
 yeet('ad_astra:steel_nugget')
+yeet('ad_astra:steel_plate')
 yeet(/ad_astra:(.*)_plate/)
 // yeet(/ad_astra:(.*)_raw/)
 // yeet(/ad_astra:(.*)_nugget/)
@@ -60,12 +61,13 @@ yeet_f('ad_astra:cryo_fuel')
 //Last fix didn't work, i'm just removing the steel tag from ad astra steel lul - Srdra
 ServerEvents.tags('item', event => {
   event.remove('forge:ingots/steel', 'ad_astra:steel_ingot')
+  event.remove('forge:plates/steel', 'ad_astra:steel_plate')
 })
 
 ServerEvents.tags('fluid', event => {
   event.add('ad_astra:fuel', `gtceu:rocket_fuel`)
-  event.remove(`forge:oxygen`,'ad_astra:oxygen')
-  event.remove(`forge:hydrogen`,'ad_astra:hydrogen')
+  event.remove(`forge:oxygen`, 'ad_astra:oxygen')
+  event.remove(`forge:hydrogen`, 'ad_astra:hydrogen')
 })
 
 ServerEvents.recipes(event => {
@@ -152,16 +154,80 @@ ServerEvents.recipes(event => {
       "id": "ad_astra:tier_1_rocket"
     }
   })
+  event.custom({
+    "type": "ad_astra:nasa_workbench",
+    "ingredients": [
+      {
+        "item": 'kubejs:osmiridium_nose_cone'
+      },
+      {
+        "item": 'kubejs:t2_rocket_plating'
+      },
+      {
+        "item": 'kubejs:t2_rocket_plating'
+      },
+      {
+        "item": 'kubejs:t2_rocket_plating'
+      },
+      {
+        "item": 'kubejs:t2_rocket_plating'
+      },
+      {
+        "item": 'kubejs:t2_rocket_plating'
+      },
+      {
+        "item": 'kubejs:t2_rocket_plating'
+      },
+      {
+        "item": 'kubejs:osmiridium_fin'
+      },
+      {
+        "item": 'gtceu:tungsten_steel_drum'
+      },
+      {
+        "item": 'gtceu:tungsten_steel_drum'
+      },
+      {
+        "item": 'kubejs:osmiridium_fin'
+      },
+      {
+        "item": 'kubejs:osmiridium_fin'
+      },
+      {
+        "item": 'kubejs:osmiridium_engine'
+      },
+      {
+        "item": 'kubejs:osmiridium_fin'
+      }
+    ],
+    "result": {
+      "count": 1,
+      "id": "ad_astra:tier_2_rocket"
+    }
+  })
   event.recipes.gtceu.forming_press("t1_welded_plate")
     .itemInputs(['4x gtceu:black_steel_plate', '4x gtceu:galvanized_ethersteel_plate', '4x gtceu:titanium_plate', '4x gtceu:mana_steel_plate'])
     .circuit(1)
     .itemOutputs('kubejs:welded_rocket_plating')
     .duration(160)
+    .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.implosion_compressor("t1_rocket_plate")
     .itemInputs('kubejs:welded_rocket_plating')
     .circuit(1)
     .itemOutputs('kubejs:t1_rocket_plating')
     .duration(10)
+    .EUt(GTValues.VA[GTValues.HV]);
+  event.recipes.gtceu.forming_press("t2_welded_plate")
+    .itemInputs(['4x gtceu:virtue_meld_plate', '4x gtceu:tungsten_steel_plate', '4x gtceu:thorium_plate', '4x gtceu:luminescent_utherium_plate'])
+    .circuit(1)
+    .itemOutputs('kubejs:welded_rocket_plating_mk2')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.EV]);
+  event.recipes.gtceu.implosion_compressor("t2_rocket_plate")
+    .itemInputs('kubejs:welded_rocket_plating_mk2')
+    .itemOutputs('kubejs:t2_rocket_plating')
+    .duration(10)
+    .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.canner("ad_astra:gas_tank/filling_t1")
     .itemInputs('ad_astra:gas_tank')
     .inputFluids('gtceu:oxygen 1000')
@@ -210,6 +276,21 @@ ServerEvents.recipes(event => {
     .itemOutputs('ad_astra:launch_pad')
     .duration(160)
     .EUt(GTValues.VA[GTValues.HV]);
+
+  event.recipes.gtceu.assembler('osmiridium_fin')
+    .itemInputs(['8x gtceu:osmiridium_plate', '8x gtceu:osmiridium_screw', '4x gtceu:osmiridium_rod', '2x gtceu:ev_electric_motor'])
+    .circuit(15)
+    .itemOutputs('kubejs:osmiridium_fin')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+  event.recipes.gtceu.assembler('osmiridium_nose_cone')
+    .itemInputs(['8x gtceu:double_osmiridium_plate', '4x gtceu:osmiridium_rod', 'gtceu:nano_processor_mainframe', 'create:rose_quartz_lamp'])
+    .circuit(15)
+    .itemOutputs('kubejs:osmiridium_nose_cone')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.EV]);
+
   event.shaped('ad_astra:nasa_workbench', [
     'DAB',
     'AHA',
@@ -275,6 +356,18 @@ ServerEvents.recipes(event => {
     S: 'gtceu:steel_screw',
     M: 'gtceu:hv_machine_hull',
     F: 'gtceu:stainless_steel_rotor',
+    H: '#forge:tools/hammers',
+    D: '#forge:tools/screwdrivers',
+  })
+  event.shaped('kubejs:osmiridium_engine', [
+    'SPS',
+    'PMP',
+    'DFH'
+  ], {
+    P: 'gtceu:osmiridium_plate',
+    S: 'gtceu:osmiridium_screw',
+    M: 'gtceu:ev_machine_hull',
+    F: 'gtceu:osmiridium_rotor',
     H: '#forge:tools/hammers',
     D: '#forge:tools/screwdrivers',
   })
