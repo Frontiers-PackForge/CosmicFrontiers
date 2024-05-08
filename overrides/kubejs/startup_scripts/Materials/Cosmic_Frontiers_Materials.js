@@ -178,10 +178,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
     event.create('astraline_corrosion_agent')
         .color(0xff8400)
-        .fluid()
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
     event.create('astraline_prismatic_solution')
         .color(0xff8400)
-        .fluid()
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
     event.create('prisma')
         .gem()
         .color(0xcfcfcf)
@@ -231,6 +231,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.NO_SMELTING
         )
+
+    event.create('undergarden_smog')
+        .gas()
+        .color(0x614b09).iconSet(GTMaterialIconSet.DULL)
+    event.create('undergarden_sludge')
+        .fluid()
+        .color(0x3d2e02).iconSet(GTMaterialIconSet.DULL)
     GTMaterials.get('neptunium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.get('plutonium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.get('curium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
