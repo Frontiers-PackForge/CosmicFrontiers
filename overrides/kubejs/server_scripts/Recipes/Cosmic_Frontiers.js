@@ -10,7 +10,8 @@ let yeet = (itemName) => {
        })
 }
 ServerEvents.tags('item', event => {
-       event.add('thinair:heavy_breathing_utility', 'kubejs:nano_respirator')
+       event.add('thinair:heavy_breathing_equipment', 'ad_astra:space_helmet')
+       event.add('thinair:heavy_breathing_equipment', 'kubejs:nano_respirator')
        event.add('thinair:breathing_equipment', 'kubejs:nano_respirator')
        event.add('curios:head', 'kubejs:nano_respirator')
        event.add('curios:charm', 'gtceu:hv_item_magnet')
