@@ -60,6 +60,12 @@ ServerEvents.recipes(event => {
     .itemOutputs('gtceu:firebrick')
     .duration(100)
     .EUt(8);
+  event.recipes.gtceu.electrolyzer('trifluoride_elec')
+    .itemInputs('4x gtceu:antimony_trifluoride_dust')
+    .itemOutputs('gtceu:antimony_dust')
+    .outputFluids('gtceu:fluorine 3000')
+    .duration(40)
+    .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.alloy_smelter('andesite_alloy_masonry')
     .itemInputs('minecraft:andesite')
     .itemInputs('gtceu:wrought_iron_dust')
@@ -205,36 +211,36 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:liquid_helium 1000')
     .duration(400)
     .EUt(GTValues.VA[GTValues.EV]);
-    event.recipes.gtceu.assembler('beta_supercon')
+  event.recipes.gtceu.assembler('beta_supercon')
     .itemInputs(['16x gtceu:virtue_meld_foil', '4x gtceu:tungsten_steel_tiny_fluid_pipe', '4x gtceu:samarium_iron_arsenic_oxide_double_wire', 'gtceu:ev_electric_pump'])
     .itemOutputs('16x gtceu:psi_superconductor_beta_single_wire')
     .inputFluids('gtceu:liquid_helium 1000')
     .duration(400)
     .EUt(GTValues.VA[GTValues.IV]);
- //IV MOTOR
- event.remove({ output: 'gtceu:iv_electric_motor' })
- event.recipes.gtceu.assembler('gtceu:iv_electric_motor')
-   .itemInputs(['2x gtceu:tungsten_steel_rod', '2x gtceu:tungsten_double_cable', '4x gtceu:virtue_meld_double_wire', 'gtceu:magnetic_neodymium_praseodymium_rod'])
-   .itemOutputs('gtceu:iv_electric_motor')
-   .duration(100)
-   .EUt(GTValues.VA[GTValues.LV]);
- event.shaped('gtceu:iv_electric_motor', [
-   'CWR',
-   'WMW',
-   'RWC'
- ], {
-   C: 'gtceu:tungsten_double_cable',
-   W: 'gtceu:virtue_meld_double_wire',
-   M: 'gtceu:magnetic_neodymium_praseodymium_rod',
-   R: 'gtceu:tungsten_steel_rod'
- }
- )
- //IV Grade Magnetic Rod
- event.recipes.gtceu.polarizer('gtceu:magnetic_neodymium_praseodymium_rod')
- .itemInputs('gtceu:neodymium_praseodymium_rod')
- .itemOutputs('gtceu:magnetic_neodymium_praseodymium_rod')
- .duration(72)
- .EUt(GTValues.VA[GTValues.EV]);
+  //IV MOTOR
+  event.remove({ output: 'gtceu:iv_electric_motor' })
+  event.recipes.gtceu.assembler('gtceu:iv_electric_motor')
+    .itemInputs(['2x gtceu:tungsten_steel_rod', '2x gtceu:tungsten_double_cable', '4x gtceu:virtue_meld_double_wire', 'gtceu:magnetic_neodymium_praseodymium_rod'])
+    .itemOutputs('gtceu:iv_electric_motor')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:iv_electric_motor', [
+    'CWR',
+    'WMW',
+    'RWC'
+  ], {
+    C: 'gtceu:tungsten_double_cable',
+    W: 'gtceu:virtue_meld_double_wire',
+    M: 'gtceu:magnetic_neodymium_praseodymium_rod',
+    R: 'gtceu:tungsten_steel_rod'
+  }
+  )
+  //IV Grade Magnetic Rod
+  event.recipes.gtceu.polarizer('gtceu:magnetic_neodymium_praseodymium_rod')
+    .itemInputs('gtceu:neodymium_praseodymium_rod')
+    .itemOutputs('gtceu:magnetic_neodymium_praseodymium_rod')
+    .duration(72)
+    .EUt(GTValues.VA[GTValues.EV]);
   //LV EMITTER
   event.remove({ output: 'gtceu:lv_emitter' })
   event.recipes.gtceu.assembler('gtceu:lv_emitter_recipe')
@@ -248,6 +254,7 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.assembler('gtceu:mv_machine_casing_assembler')
     .itemInputs(['4x gtceu:double_aluminium_plate', '4x gtceu:mana_steel_plate'])
     .itemOutputs('gtceu:mv_machine_casing')
+    .circuit(8)
     .duration(40)
     .EUt(GTValues.VA[GTValues.LV]);
   event.shaped('gtceu:mv_machine_casing', [
@@ -266,6 +273,7 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.assembler('gtceu:hv_machine_casing_assembler')
     .itemInputs(['4x gtceu:double_stainless_steel_plate', '4x gtceu:galvanized_ethersteel_plate'])
     .itemOutputs('gtceu:hv_machine_casing')
+    .circuit(8)
     .duration(40)
     .EUt(GTValues.VA[GTValues.LV]);
   event.shaped('gtceu:hv_machine_casing', [
@@ -284,6 +292,7 @@ ServerEvents.recipes(event => {
     .itemInputs(['4x gtceu:double_titanium_plate', '4x gtceu:luminescent_utherium_plate'])
     .itemOutputs('gtceu:ev_machine_casing')
     .duration(40)
+    .circuit(8)
     .EUt(GTValues.VA[GTValues.LV]);
   event.shaped('gtceu:ev_machine_casing', [
     'AMA',
@@ -292,6 +301,24 @@ ServerEvents.recipes(event => {
   ], {
     A: 'gtceu:double_titanium_plate',
     M: 'gtceu:luminescent_utherium_plate',
+    W: '#forge:tools/wrenches'
+  }
+  )
+  //IV MACHINE HULL AND CASING
+  event.remove({ output: 'gtceu:iv_machine_casing' })
+  event.recipes.gtceu.assembler('gtceu:iv_machine_casing_assembler')
+    .itemInputs(['4x gtceu:double_tungsten_steel_plate', '4x gtceu:virtue_meld_plate'])
+    .itemOutputs('gtceu:iv_machine_casing')
+    .circuit(8)
+    .duration(40)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:iv_machine_casing', [
+    'AMA',
+    'MWM',
+    'AMA'
+  ], {
+    A: 'gtceu:double_tungsten_steel_plate',
+    M: 'gtceu:virtue_meld_plate',
     W: '#forge:tools/wrenches'
   }
   )
