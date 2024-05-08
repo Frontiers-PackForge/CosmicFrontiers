@@ -131,5 +131,10 @@ ItemEvents.tooltip(event => {
     text.add(2, Text.of('Perfect Overclock').white().bold())
     text.add(3, Text.of('Does not lose energy efficiency when overclocked.').darkPurple())
   })
+  event.addAdvanced('kubejs:cosmic_meatballs', (item, advanced, text) => {
+    text.add(1, Text.of('Power of the Multiverse').white().bold()) 
+    text.add(2, Text.of('in one hearty meal.').white().bold())
+    text.add(3, Text.of('May contain stellar matter').darkPurple().italic())
+  })
   //subscript (copy and paste) ₂₃₄₅₆₇₈₉₀
 })
