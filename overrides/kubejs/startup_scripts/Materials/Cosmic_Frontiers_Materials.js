@@ -249,6 +249,31 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.get('nobelium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.get('lawrencium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.get('praseodymium').addFlags(GTMaterialFlags.GENERATE_ROD)
+
+    event.create('andesite_alloy')
+        .ingot()
+        .color(0xa7ad9f).iconSet(GTMaterialIconSet.DULL)
+        .components('1x andesite', '1x iron')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_BOLT_SCREW
+        )
+    event.create('industrial_iron')
+        .ingot()
+        .color(0x4e4e4e).iconSet(GTMaterialIconSet.DULL)
+        .components('1x iron')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE
+        )
+})
+
+GTCEuStartupEvents.materialModification(event => {
+    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('andesite_alloy'), () => Item.getItem('create:andesite_alloy')),
+    TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('andesite_alloy'), () => Item.getItem('create:andesite_alloy_block')),
+    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('industrial_iron'), () => Item.getItem('createdeco:industrial_iron_ingot')),
+    TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('industrial_iron'), () => Item.getItem('create:industrial_iron_block'))
 })
 
 
