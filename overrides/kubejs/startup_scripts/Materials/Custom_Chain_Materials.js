@@ -89,4 +89,38 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('hydroxyapatite')
         .dust()
         .color(0x2694d4).iconSet(GTMaterialIconSet.DULL)
+    //Cyanex-272
+    event.create('tert-butanol')
+        .fluid()
+        .color().iconSet(GTMaterialIconSet.DULL)
+    event.create('isobutene')
+        .gas()
+        .color().iconSet(GTMaterialIconSet.DULL)
+    event.create('ammonium_fluoride')
+        .dust()
+        .color().iconSet(GTMaterialIconSet.DULL)
+    event.create('sodium_hypophosphite')
+        .dust()
+        .color().iconSet(GTMaterialIconSet.DULL)
+    event.create('tert-butylhydroperoxide')
+        .fluid()
+        .color().iconSet(GTMaterialIconSet.DULL)
+    event.create('2_4_4_trimethyl_1_pentene')
+        .fluid()
+        .color().iconSet(GTMaterialIconSet.DULL)
+    event.create('2_4_4_trimethyl_2_pentene')
+        .fluid()
+        .color().iconSet(GTMaterialIconSet.DULL)
+    event.create('ferric_alumina') //idfk how to call this shit
+        .dust()
+        .color().iconSet(GTMaterialIconSet.DULL)
+
+
 })
+
+GTCEuStartupEvents.materialModification(event => {
+    GTMaterials.get('ammonium_fluoride').setFormula('NH₄F')
+    GTMaterials.get('sodium_hypophosphite').setFormula('NaPO₂H₂')
+    GTMaterials.get('ferric_alumina').setFormula('FeAl₂O₃')
+})
+    
