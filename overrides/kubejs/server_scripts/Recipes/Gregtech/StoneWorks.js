@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.celestial_bore(`boremap_earth`)
         .notConsumable('ad_astra:earth_globe')
-        .inputFluids('gtceu:prisma 1000000')
+        .inputFluids('cosmiccore:prisma 1000000')
         .itemOutputs('gtceu:raw_nickel',
             'gtceu:raw_graphite',
             'gtceu:raw_diamond',

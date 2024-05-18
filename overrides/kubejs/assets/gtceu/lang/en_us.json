@@ -249,8 +249,6 @@
   "material.gtceu.dehydroascorbic_acid": "Dehydroascorbic Acid",
   "material.gtceu.heated_nether_sediment_sludge": "Heated Nether Sediment Sludge",
   "material.gtceu.nutritious_tears_of_the_sky": "Nutritious Tears of the Sky",
-  "material.gtceu.andesite_alloy": "Andesite Alloy",
-  "material.gtceu.industrial_iron": "Industrial Iron",
   
   "material.gtceu.uranium_fuel_salt": "Uranium Fuel Salt",
   "material.gtceu.neptunium_fuel_salt": "Neptunium Fuel Salt",
@@ -352,6 +350,22 @@
   "material.gtceu.diluted_nitric_acid": "Diluted Nitric Acid",
   "material.gtceu.potassium_fluoride": "Potassium Fluoride",
 
+  "material.gtceu.fused_naquadah_emulsion": "Fused Naquadah Emulsion",
+  "material.gtceu.raw_naquahine": "Raw Naquahine",
+  "material.gtceu.prisma_doped_raw_naquahine": "Prisma Doped Raw naquahine",
+  "material.gtceu.inert_naquahine": "Inert Naquahine",
+  "material.gtceu.source_cut_naquahine_solution": "Source Cut Naquahine Solution",
+  "material.gtceu.naquahine_rich_mixture": "Naquahine Rich Mixture",
+  "material.gtceu.naquahine": "Naquahine",
+  "material.gtceu.thunder_charged_naquahine_mixture": "Thunder Charged Naquahine Mixture",
+  "material.gtceu.critically_steam_cracked_thundering_naquahine": "Critically Steamed Cracked Thundering Naquahine",
+  "material.gtceu.energized_naquahine_fuel_preperation": "Energized Naquahine Fuel Preperation",
+  "material.gtceu.aerated_naquahine": "Aerated Naquahine",
+  "material.gtceu.naquahine_superfuel_mk_one": "Naquahine Superfuel Mk.1",
+  "material.gtceu.naquahine_superfuel_mk_two": "Naquahine Superfuel Mk.2",
+  "material.gtceu.super_critical_steam": "Supercritical Steam",
+
+
 
   "gtceu.mana_simulator": "Mana Simulator",
   "gtceu.large_floral_propagator": "Large Floral Propagator",
@@ -366,5 +380,6 @@
   "block.gtceu.industrial_grade_floral_propagator": "Industrial Grade Floral Propagator",
   "block.gtceu.arboreal_growth_facility": "Industiral Arboreal Growth Chamber",
   "gtceu.arboreal_growth_chamber": "Industiral Arboreal Growth Chamber",
-  "gtceu.celestial_bore": "Celestial Bore"
+  "gtceu.celestial_bore": "Celestial Bore",
+  "block.gtceu.celestial_bore": "Celestial Bore"
 }

@@ -27,7 +27,17 @@ ServerEvents.tags('item', event => {
 //   yeet('gtceu:magnetic_neodymium_praseodymium_dust')
 
 ServerEvents.recipes(event => {
-    event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_ruby' })
+    event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadah' })
+    event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadah_gas' })
+    event.remove({ id: 'gtceu:electric_blast_furnace/blast_enriched_naquadah' })
+    event.remove({ id: 'gtceu:electric_blast_furnace/enriched_naquadah_sulfate_separation' })
+    event.remove({ id: 'gtceu:electric_blast_furnace/blast_enriched_naquadah_gas' })
+    event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadria' })
+    event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadria_gas' })
+    event.remove({ id: 'gtceu:electric_blast_furnace/naquadria_sulfate_separation' })
+    event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_naquadah_ingot' })
+    event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_enriched_naquadah_ingot' })
+    event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_naquadah_ingot' })
 
     event.recipes.gtceu.electrolyzer('indium_trifluoride_elec')
         .itemInputs('4x gtceu:indium_trifluoride_dust')
@@ -81,7 +91,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('8x gtceu:indium_trifluoride_dust')
         .itemOutputs('3x gtceu:naquadah_concentrate_dust')
         .duration(100)
-        .blastFurnaceTemp(5400)
+        .blastFurnaceTemp(4500)
         .EUt(GTValues.VA[GTValues.EV]);
 
     event.recipes.gtceu.large_chemical_reactor('naquadah_concentrate_to_naquadah_sulfate')

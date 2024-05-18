@@ -15,6 +15,7 @@ StartupEvents.registry('item', event => {
     event.create('washed_magebloom')
     event.create('t2_rocket_plating')
     event.create('welded_rocket_plating_mk2').displayName('Welded Rocket Plating Mk.2')
+    event.create('chromatically_doped_nether_star_boule').glow(true).displayName('Chromatically Doped Nether star Boule')
     //Nano Lithography 
     event.create('mana_deposited_wafer').displayName('Mana Deposited Wafer')
     event.create('nano_cpu_mask').displayName('Nano CPU Mask')

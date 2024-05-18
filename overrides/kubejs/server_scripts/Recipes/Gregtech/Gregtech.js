@@ -72,6 +72,12 @@ ServerEvents.recipes(event => {
     .itemOutputs('create:andesite_alloy')
     .duration(100)
     .EUt(8);
+  event.recipes.gtceu.assembler('prisma_tungstensteel_coil')
+    .itemInputs(['8x cosmiccore:prismatic_tungstensteel_double_wire', '8x gtceu:platinum_foil'])
+    .itemOutputs('cosmiccore:prismatic_tungstensteel_coil_block')
+    .inputFluids('gtceu:nichrome 144')
+    .duration(500)
+    .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.macerator('gtceu:treated_wood_dust_shred')
     .itemInputs('gtceu:treated_wood_planks')
     .itemOutputs('gtceu:treated_wood_dust')

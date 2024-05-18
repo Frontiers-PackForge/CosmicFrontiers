@@ -25,17 +25,17 @@ ServerEvents.recipes(event => {
         .itemOutputs('9x gtceu:livingrock_plate')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(184)
-        //Essence Reactor Alfheim Materials - The Elves are dead, don't use the portal.
-        event.remove({ id: 'botania:elven_trade/dragonstone_block' })
-        event.remove({ id: 'botania:elven_trade/dragonstone' })
-        event.remove({ id: 'botania:elven_trade/dreamwood' })
-        event.remove({ id: 'botania:elven_trade/dreamwood_log' })
-        event.remove({ id: 'botania:elven_trade/elementium' })
-        event.remove({ id: 'botania:elven_trade/elementium_block' })
-        event.remove({ id: 'botania:elven_trade/elf_glass' })
-        event.remove({ id: 'botania:elven_trade/elf_quartz' })
-        event.remove({ id: 'botania:elven_trade/lexicon_elven' })
-        event.remove({ id: 'botania:elven_trade/pixie_dust' })
+    //Essence Reactor Alfheim Materials - The Elves are dead, don't use the portal.
+    event.remove({ id: 'botania:elven_trade/dragonstone_block' })
+    event.remove({ id: 'botania:elven_trade/dragonstone' })
+    event.remove({ id: 'botania:elven_trade/dreamwood' })
+    event.remove({ id: 'botania:elven_trade/dreamwood_log' })
+    event.remove({ id: 'botania:elven_trade/elementium' })
+    event.remove({ id: 'botania:elven_trade/elementium_block' })
+    event.remove({ id: 'botania:elven_trade/elf_glass' })
+    event.remove({ id: 'botania:elven_trade/elf_quartz' })
+    event.remove({ id: 'botania:elven_trade/lexicon_elven' })
+    event.remove({ id: 'botania:elven_trade/pixie_dust' })
     event.recipes.gtceu.essence_reactor('elementium_what')
         .itemInputs(['bloodmagic:reagentwater', 'bloodmagic:reagentlava', 'bloodmagic:reagentair', 'bloodmagic:reagentgrowth', '8x botania:terrasteel_ingot'])
         .inputFluids('gtceu:potent_mana 32000')
@@ -57,7 +57,12 @@ ServerEvents.recipes(event => {
         .itemOutputs('8x botania:pixie_dust')
         .EUt(GTValues.VA[GTValues.EV])
         .duration(184)
-
+    event.recipes.gtceu.mana_fluidizer('mana_glass_fluidizer')
+        .itemInputs('minecraft:glass')
+        .inputFluids('gtceu:potent_mana 15')
+        .itemOutputs('botania:mana_glass')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(20)
     //Livingwood
     //Bolt
     event.recipes.gtceu.cutter('gtceu:cutter/cut_livingwood_twig_to_bolt_water')
@@ -1515,21 +1520,21 @@ ServerEvents.recipes(event => {
         V: 'botania:life_essence'
     })
     //Cloak
-let cloak = (wool, trimMaterial, itemName) => {
-    event.remove({ output: itemName })
-    event.shaped(itemName, [
-        'W W',
-        'WVW',
-        'WTW'
-    ], {
-        W: wool,
-        T: trimMaterial,
-        V: 'botania:life_essence'
-    })
-}
-cloak('minecraft:white_wool', 'gtceu:electrum_plate', 'botania:holy_cloak')
-cloak('minecraft:black_wool', 'gtceu:red_alloy_plate', 'botania:unholy_cloak')
-cloak('minecraft:light_gray_wool', 'gtceu:emerald_plate', 'botania:balance_cloak')
+    let cloak = (wool, trimMaterial, itemName) => {
+        event.remove({ output: itemName })
+        event.shaped(itemName, [
+            'W W',
+            'WVW',
+            'WTW'
+        ], {
+            W: wool,
+            T: trimMaterial,
+            V: 'botania:life_essence'
+        })
+    }
+    cloak('minecraft:white_wool', 'gtceu:electrum_plate', 'botania:holy_cloak')
+    cloak('minecraft:black_wool', 'gtceu:red_alloy_plate', 'botania:unholy_cloak')
+    cloak('minecraft:light_gray_wool', 'gtceu:emerald_plate', 'botania:balance_cloak')
     //Flugel Tiara
     event.remove({ output: 'botania:flight_tiara' })
     event.shaped('botania:flight_tiara', [

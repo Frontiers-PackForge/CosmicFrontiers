@@ -86,7 +86,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-    event.create('rodium_sulfate_solution')
+    event.create('rhodium_sulfate_solution')
         .fluid()
         .color(0x85775d).iconSet(GTMaterialIconSet.DULL)
         .flags(
@@ -101,7 +101,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_UNIFICATION
         )
     event.create('crude_rhodium')
-        .fluid()
+        .dust()
         .color(0x7a4b72).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -256,6 +256,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_UNIFICATION
         )
     event.create('barium_oxide')
+        .dust()
+        .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('carbon_tetrachloride')
+        .gas()
+        .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('sodium_acetate')
         .dust()
         .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
         .flags(

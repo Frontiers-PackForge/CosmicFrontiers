@@ -110,13 +110,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         )
         .element(GTElements.get('desh'))
         .iconSet(GTMaterialIconSet.getByName('starry'))
-    event.create('prismatic_tungstensteel')
-        .color(0x6f42cf)
+    event.create('virtue_meld')
+        .color(0xff8400)
         .ingot()
-        .element(GTElements.get('prism_tungstensteel'))
+        .fluid()
+        .element(GTElements.get('virtue'))
+        .cableProperties(GTValues.V[GTValues.IV], 4, 2, true)
         .iconSet(GTMaterialIconSet.SHINY)
         .flags(
-            GTMaterialFlags.NO_UNIFICATION,
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_ROD,
@@ -124,6 +125,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.NO_SMELTING
+
         )
     event.create('utherium')
         .color(0xc3434c)
@@ -182,33 +184,22 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('astraline_prismatic_solution')
         .color(0xff8400)
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-    event.create('prisma')
-        .gem()
-        .color(0xcfcfcf)
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .iconSet(GTMaterialIconSet.getByName('prisma'))
-
     event.create('super_critical_steam')
         .color(0xffffff)
         .fluid()
-    event.create('virtue_meld')
-        .color(0xff8400)
-        .ingot()
-        .fluid()
-        .element(GTElements.get('virtue'))
-        .cableProperties(GTValues.V[GTValues.IV], 4, 2, true)
-        .iconSet(GTMaterialIconSet.SHINY)
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_SPRING,
-            GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.NO_SMELTING
 
-        )
-    //.setProperty(PropertyKey.BLAST, new $BlastProperty())
+    event.create('deeply_withered_nether_slag')
+        .color(0x1f0207)
+        .fluid()
+    event.create('grove_enriched_nether_slag')
+        .color(0xb3377d)
+        .fluid()
+    event.create('nether_star_distillate_slurry')
+        .color(0xa87692)
+        .fluid()
+    event.create('dull_nether_star')
+        .color(0x949494)
+        .dust()
 
 
     event.create('psi_superconductor_alpha')
@@ -249,31 +240,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.get('nobelium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.get('lawrencium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.get('praseodymium').addFlags(GTMaterialFlags.GENERATE_ROD)
-
-    event.create('andesite_alloy')
-        .ingot()
-        .color(0xa7ad9f).iconSet(GTMaterialIconSet.DULL)
-        .components('1x andesite', '1x iron')
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_FRAME,
-            GTMaterialFlags.GENERATE_BOLT_SCREW
-        )
-    event.create('industrial_iron')
-        .ingot()
-        .color(0x4e4e4e).iconSet(GTMaterialIconSet.DULL)
-        .components('1x iron')
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE
-        )
-})
-
-GTCEuStartupEvents.materialModification(event => {
-    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('andesite_alloy'), () => Item.getItem('create:andesite_alloy')),
-    TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('andesite_alloy'), () => Item.getItem('create:andesite_alloy_block')),
-    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('industrial_iron'), () => Item.getItem('createdeco:industrial_iron_ingot')),
-    TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('industrial_iron'), () => Item.getItem('create:industrial_iron_block'))
 })
 
 

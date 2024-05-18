@@ -23,118 +23,150 @@ ItemEvents.tooltip(event => {
   })
   //ECHO CIRCUITS
   event.addAdvanced(echo, (item, advanced, text) => {
-    text.add(1, Text.of('Circuits Resonating with the World').gray()) 
+    text.add(1, Text.of('Circuits Resonating with the World').gray())
   })
-    event.addAdvanced('cosmiccore:echo_processor', (item, advanced, text) => {
-    text.add(2, Text.of('ZPM-Tier Circuit').darkAqua()) 
+  event.addAdvanced('cosmiccore:echo_processor', (item, advanced, text) => {
+    text.add(2, Text.of('ZPM-Tier Circuit').darkAqua())
   })
   event.addAdvanced('cosmiccore:echo_processor_assembly', (item, advanced, text) => {
     text.add(2, Text.of('UV-Tier Circuit').darkAqua())
   })
   event.addAdvanced('cosmiccore:echo_processor_supercomputer', (item, advanced, text) => {
-    text.add(2, Text.of('UHV-Tier Circuit').darkAqua()) 
+    text.add(2, Text.of('UHV-Tier Circuit').darkAqua())
   })
   event.addAdvanced('cosmiccore:echo_processor_mainframe', (item, advanced, text) => {
-    text.add(2, Text.of('UEV-Tier Circuit').darkAqua()) 
+    text.add(2, Text.of('UEV-Tier Circuit').darkAqua())
   })
   //OPTICAL CIRCUITS
   event.addAdvanced(optical, (item, advanced, text) => {
-    text.add(1, Text.of('Lightspeed Computation').gray()) 
+    text.add(1, Text.of('Lightspeed Computation').gray())
   })
-    event.addAdvanced('cosmiccore:optical_processor', (item, advanced, text) => {
-    text.add(2, Text.of('UV-Tier Circuit').gold()) 
+  event.addAdvanced('cosmiccore:optical_processor', (item, advanced, text) => {
+    text.add(2, Text.of('UV-Tier Circuit').gold())
   })
   event.addAdvanced('cosmiccore:optical_processor_assembly', (item, advanced, text) => {
     text.add(2, Text.of('UHV-Tier Circuit').gold())
   })
   event.addAdvanced('cosmiccore:optical_processor_supercomputer', (item, advanced, text) => {
-    text.add(2, Text.of('UEV-Tier Circuit').gold()) 
+    text.add(2, Text.of('UEV-Tier Circuit').gold())
   })
   event.addAdvanced('cosmiccore:optical_processor_mainframe', (item, advanced, text) => {
-    text.add(2, Text.of('UIV-Tier Circuit').gold()) 
+    text.add(2, Text.of('UIV-Tier Circuit').gold())
   })
   //COSMIC CIRCUITS
   event.addAdvanced(cosmic, (item, advanced, text) => {
-    text.add(1, Text.of('Planck Computation').gray()) 
+    text.add(1, Text.of('Planck Computation').gray())
   })
-    event.addAdvanced('cosmiccore:cosmic_processor', (item, advanced, text) => {
-    text.add(2, Text.of('UHV-Tier Circuit').darkPurple()) 
+  event.addAdvanced('cosmiccore:cosmic_processor', (item, advanced, text) => {
+    text.add(2, Text.of('UHV-Tier Circuit').darkPurple())
   })
   event.addAdvanced('cosmiccore:cosmic_processor_assembly', (item, advanced, text) => {
     text.add(2, Text.of('UEV-Tier Circuit').darkPurple())
   })
   event.addAdvanced('cosmiccore:cosmic_processor_supercomputer', (item, advanced, text) => {
-    text.add(2, Text.of('UIV-Tier Circuit').darkPurple()) 
+    text.add(2, Text.of('UIV-Tier Circuit').darkPurple())
   })
   event.addAdvanced('cosmiccore:cosmic_processor_mainframe', (item, advanced, text) => {
-    text.add(2, Text.of('UXV-Tier Circuit').darkPurple()) 
+    text.add(2, Text.of('UXV-Tier Circuit').darkPurple())
   })
   //PSIONIC CIRCUITS
   event.addAdvanced(psionic, (item, advanced, text) => {
-    text.add(1, Text.of('Perfected Bioresonance Calculations').gray()) 
+    text.add(1, Text.of('Perfected Bioresonance Calculations').gray())
   })
-    event.addAdvanced('cosmiccore:psionic_processor', (item, advanced, text) => {
-    text.add(2, Text.of('UEV-Tier Circuit').lightPurple()) 
+  event.addAdvanced('cosmiccore:psionic_processor', (item, advanced, text) => {
+    text.add(2, Text.of('UEV-Tier Circuit').lightPurple())
   })
   event.addAdvanced('cosmiccore:psionic_processor_assembly', (item, advanced, text) => {
     text.add(2, Text.of('UIV-Tier Circuit').lightPurple())
   })
   event.addAdvanced('cosmiccore:psionic_processor_supercomputer', (item, advanced, text) => {
-    text.add(2, Text.of('UXV-Tier Circuit').lightPurple()) 
+    text.add(2, Text.of('UXV-Tier Circuit').lightPurple())
   })
   event.addAdvanced('cosmiccore:psionic_processor_mainframe', (item, advanced, text) => {
-    text.add(2, Text.of('OPV-Tier Circuit').lightPurple()) 
+    text.add(2, Text.of('OPV-Tier Circuit').lightPurple())
   })
   //MACROVERSE CIRCUITS
   event.addAdvanced(macroverse, (item, advanced, text) => {
-    text.add(1, Text.of('The Universe in the Palm of Your Hands').red().bold()) 
+    text.add(1, Text.of('The Universe in the Palm of Your Hands').red().bold())
   })
-    event.addAdvanced('cosmiccore:macroverse_processor', (item, advanced, text) => {
-    text.add(2, Text.of('UIV-Tier Circuit')) 
+  event.addAdvanced('cosmiccore:macroverse_processor', (item, advanced, text) => {
+    text.add(2, Text.of('UIV-Tier Circuit'))
   })
   event.addAdvanced('cosmiccore:macroverse_processor_assembly', (item, advanced, text) => {
     text.add(2, Text.of('UXV-Tier Circuit'))
   })
   event.addAdvanced('cosmiccore:macroverse_processor_supercomputer', (item, advanced, text) => {
-    text.add(2, Text.of('OPV-Tier Circuit')) 
+    text.add(2, Text.of('OPV-Tier Circuit'))
   })
   event.addAdvanced('cosmiccore:macroverse_processor_mainframe', (item, advanced, text) => {
-    text.add(2, Text.of('MAX-Tier Circuit')) 
-  })
-  event.addAdvanced('botania:terrasteel_ingot', (item, advanced, text) => {
-    text.add(1, Text.of('Ma₂(Si(FeS₂)₅(CrAl₂O3)Hg₃)(AuAg)').yellow()) 
-  })
-  event.addAdvanced('botania:manasteel_ingot', (item, advanced, text) => {
-    text.add(1, Text.of('Ma*(Si(FeS₂)₅(CrAl₂O3)Hg₃)(AuAg)').yellow()) 
+    text.add(2, Text.of('MAX-Tier Circuit'))
   })
   event.addAdvanced('botania:mana_diamond', (item, advanced, text) => {
-    text.add(1, Text.of('MaC₄').yellow()) 
+    text.add(1, Text.of('MaC₄').yellow())
   })
   event.addAdvanced('botania:mana_pearl', (item, advanced, text) => {
     text.add(1, Text.of('Ma(BeK₄N₅)').yellow())
   })
   event.addAdvanced('botania:mana_quartz', (item, advanced, text) => {
-    text.add(1, Text.of('Ma(SiO₂)').yellow()) 
+    text.add(1, Text.of('Ma(SiO₂)').yellow())
   })
   event.addAdvanced('gtceu:industrial_grade_floral_propagator', (item, advanced, text) => {
-    text.add(1, Text.of('Large Scale Agriculture').gray()) 
+    text.add(1, Text.of('Large Scale Agriculture').gray())
     text.add(2, Text.of('Perfect Overclock').white().bold())
     text.add(3, Text.of('Does not lose energy efficiency when overclocked.').darkPurple())
   })
   event.addAdvanced('gtceu:arboreal_growth_facility', (item, advanced, text) => {
-    text.add(1, Text.of('Large Scale Arboriculture').gray()) 
+    text.add(1, Text.of('Large Scale Arboriculture').gray())
     text.add(2, Text.of('Perfect Overclock').white().bold())
     text.add(3, Text.of('Does not lose energy efficiency when overclocked.').darkPurple())
   })
   event.addAdvanced('gtceu:industrial_stoneworks', (item, advanced, text) => {
-    text.add(1, Text.of('Volcano in a Box').gray()) 
+    text.add(1, Text.of('Volcano in a Box').gray())
     text.add(2, Text.of('Perfect Overclock').white().bold())
     text.add(3, Text.of('Does not lose energy efficiency when overclocked.').darkPurple())
   })
   event.addAdvanced('kubejs:cosmic_meatballs', (item, advanced, text) => {
-    text.add(1, Text.of('Power of the Multiverse').white().bold()) 
+    text.add(1, Text.of('Power of the Multiverse').white().bold())
     text.add(2, Text.of('in one hearty meal.').white().bold())
     text.add(3, Text.of('May contain stellar matter').darkPurple().italic())
+  })
+  event.addAdvanced('botania:alfheim_portal', (item, advanced, text) => {
+    text.add(1, Text.of('A dimensional bridge to another world').white().bold())
+    text.add(2, Text.of('empty, silent, and void of life, hanging with a heavy smell of death.').white().bold())
+    text.add(3, Text.of('No trade with the elves will be possible').darkPurple().italic())
+  })
+
+  event.addAdvanced('cosmiccore:drygmy_grove', (item, advanced, text) => {
+    text.add(1, Text.of('The Infinite Forest').white().bold())
+    text.add(2, Text.of('------------------------------------------------------------').aqua())
+    text.add(3, Text.of('Creates a Grove with the perfect conditions to house an army of Drygmys'))
+    text.add(4, Text.of('Each Drygmy Token multiplies the recipes output with no upper limit'))
+    text.add(5, Text.of('(Recipe Output * Inserted Drygmy Token)').gold())
+    text.add(6, Text.of('Parallel Hatches scare away the harmony of nature, and unforms the multiblock.').red().italic())
+    text.add(7, Text.of('------------------------------------------------------------').aqua())
+    text.add(8, Text.of('Overclock Type : Imperfect'))
+  })
+  event.addAdvanced('gtceu:celestial_bore', (item, advanced, text) => {
+    text.add(1, Text.of('Multiblock Classification: Megastructure').aqua().bold())
+    text.add(2, Text.of('Stellar Grade Mining Platform').white().bold())
+    text.add(3, Text.of('Selectively targets the planet below to extract a bounty of resources.'))
+    if (event.isShift()) {
+      text.add(4, Text.of('------------------------------------------------------------').aqua())
+      text.add(5, [Text.of('Storage Cells').white(), Text.of(' dictate how much material one recipe cycle can collect.').gray()])
+      text.add(6, [Text.of('Dyson Grade Solar Panels').white(), Text.of(' will reduce the total EU required to run a recipe.').gray()])
+      text.add(7, [Text.of('Beam Coils').white(), Text.of(' will increase the total EU required to run but Overclock the recipe.').gray()])
+      text.add(8, Text.of('------------------------------------------------------------').aqua())
+      text.add(9, Text.of('Planets will collect Molten Slag, Fluids, and Ores').darkGreen())
+      text.add(10, Text.of('Gas Giants will collect Gasses, and Exotic Solids').gold())
+      text.add(11, Text.of('Stars and Blackholes will collect Plasma, Exotic Particles, and Rich Psionic Waveforms').yellow())
+      text.add(12, Text.of('------------------------------------------------------------').aqua())
+      text.add(13, Text.of('EUTotal = (RecipeEU*BeamTier)/SolarTier').gold())
+      text.add(14, Text.of('Multiple Bores owned by the same user in a dimension will cause ALL bores to shut down').red().italic())
+      text.add(15, Text.of('------------------------------------------------------------').aqua())
+      text.add(16, Text.of('Overclock Type : Exotic'))
+    } else {
+      text.add(4, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
   })
   //subscript (copy and paste) ₂₃₄₅₆₇₈₉₀
 })

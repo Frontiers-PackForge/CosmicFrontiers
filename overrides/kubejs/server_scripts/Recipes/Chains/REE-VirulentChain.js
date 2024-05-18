@@ -60,7 +60,7 @@ ServerEvents.recipes((event) => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.chemical_reactor('lre_liquor_precipitation_1')
-    //Apparently this recipe is meant to have waste water in it for chrome recycling - PLEASE check balancing before forcing chrome consumption to avoid a net-negitive on chrome ~G
+        //Apparently this recipe is meant to have waste water in it for chrome recycling - PLEASE check balancing before forcing chrome consumption to avoid a net-negitive on chrome ~G
         .inputFluids('gtceu:leached_lre_liquor 700')
         .inputFluids('gtceu:oxalic_acid 300')
         .outputFluids('gtceu:wet_lre_precipitate 1000')
@@ -205,5 +205,13 @@ ServerEvents.recipes((event) => {
         .chancedOutput('2x gtceu:samarium_dust', 6500, 750)
         .duration(100)
         .EUt(GTValues.VA[GTValues.EV]);
+    //Sodium Phosphate Decomp
+    event.recipes.gtceu.electrolyzer('isodecanol_prep')
+        .itemInputs('8x gtceu:sodium_phosphate_dust')
+        .itemOutputs('5x gtceu:phosphate_dust')
+        .itemOutputs('3x gtceu:sodium_dust')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.HV]);
+
 
 });

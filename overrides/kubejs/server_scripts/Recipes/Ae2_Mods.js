@@ -339,7 +339,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.HV]);
   //Pattern Provide 4x Craft
   event.recipes.gtceu.assembler('ae2:pattern_assembly_t2')
-    .itemInputs(['4x gtceu:prismatic_tungstensteel_plate', '2x #gtceu:circuits/iv', '2x gtceu:iv_robot_arm', 'gtceu:iv_machine_hull'])
+    .itemInputs(['4x cosmiccore:prismatic_tungstensteel_plate', '2x #gtceu:circuits/iv', '2x gtceu:iv_robot_arm', 'gtceu:iv_machine_hull'])
     .itemOutputs('4x ae2:pattern_provider')
     .duration(320)
     .EUt(GTValues.VA[GTValues.IV]);
