@@ -90,7 +90,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0x2694d4).iconSet(GTMaterialIconSet.DULL)
     //Cyanex-272
-    event.create('tert-butanol')
+    event.create('tert_butanol')
         .fluid()
         .color().iconSet(GTMaterialIconSet.DULL)
     event.create('isobutene')
@@ -102,7 +102,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('sodium_hypophosphite')
         .dust()
         .color().iconSet(GTMaterialIconSet.DULL)
-    event.create('tert-butylhydroperoxide')
+    event.create('tert_butylhydroperoxide')
         .fluid()
         .color().iconSet(GTMaterialIconSet.DULL)
     event.create('2_4_4_trimethyl_1_pentene')
