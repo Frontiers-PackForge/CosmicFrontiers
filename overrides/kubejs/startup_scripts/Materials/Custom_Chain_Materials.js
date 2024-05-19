@@ -90,37 +90,40 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0x2694d4).iconSet(GTMaterialIconSet.DULL)
     //Cyanex-272
+    event.create('cyanex_272')
+        .fluid()
+        .color(0xf5f5f5).iconSet(GTMaterialIconSet.DULL)
     event.create('tert_butanol')
         .fluid()
-        .color().iconSet(GTMaterialIconSet.DULL)
+        .color(0xf5f5f5).iconSet(GTMaterialIconSet.DULL)
     event.create('isobutene')
         .gas()
-        .color().iconSet(GTMaterialIconSet.DULL)
+        .color(0xf5f5f5).iconSet(GTMaterialIconSet.DULL)
     event.create('ammonium_fluoride')
         .dust()
-        .color().iconSet(GTMaterialIconSet.DULL)
+        .color(0xf5f5f5).iconSet(GTMaterialIconSet.DULL)
     event.create('sodium_hypophosphite')
         .dust()
-        .color().iconSet(GTMaterialIconSet.DULL)
+        .color(0xf5f5f5).iconSet(GTMaterialIconSet.DULL)
     event.create('tert_butylhydroperoxide')
         .fluid()
-        .color().iconSet(GTMaterialIconSet.DULL)
-    event.create('2_4_4_trimethyl_1_pentene')
+        .color(0xf5f5f5).iconSet(GTMaterialIconSet.DULL)
+    event.create('244_trimethyl_1_pentene') // for god fucking knows what reason it cant be 2_4_4
         .fluid()
-        .color().iconSet(GTMaterialIconSet.DULL)
-    event.create('2_4_4_trimethyl_2_pentene')
+        .color(0xf5f5f5).iconSet(GTMaterialIconSet.DULL)
+    event.create('244_trimethyl_2_pentene') // same here
         .fluid()
-        .color().iconSet(GTMaterialIconSet.DULL)
+        .color(0xf5f5f5).iconSet(GTMaterialIconSet.DULL)
     event.create('ferric_alumina') //idfk how to call this shit
         .dust()
-        .color().iconSet(GTMaterialIconSet.DULL)
+        .color(0xf5f5f5).iconSet(GTMaterialIconSet.DULL)
 
 
 })
 
 GTCEuStartupEvents.materialModification(event => {
-    GTMaterials.get('ammonium_fluoride').setFormula('NH₄F')
-    GTMaterials.get('sodium_hypophosphite').setFormula('NaPO₂H₂')
-    GTMaterials.get('ferric_alumina').setFormula('FeAl₂O₃')
+    GTMaterials.get('ammonium_fluoride').setFormula('NH₄F', true)
+    GTMaterials.get('sodium_hypophosphite').setFormula('NaPO₂H₂', true)
+    GTMaterials.get('ferric_alumina').setFormula('FeAl₂O₃', true)
 })
     
