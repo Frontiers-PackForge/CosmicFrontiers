@@ -93,7 +93,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .toolStats(ToolProperty.Builder.of(6.0, 7.0, 768, 3).attackSpeed(0.1).enchantability(18).build())
         .flags(
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.NO_ORE_SMELTING
         )
         // .element(GTElements.get('prism_tungstensteel'))
         .iconSet(GTMaterialIconSet.getByName('starry'))
@@ -106,7 +106,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.NO_ORE_SMELTING
         )
         .element(GTElements.get('desh'))
         .iconSet(GTMaterialIconSet.getByName('starry'))
@@ -124,7 +124,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING
 
         )
     event.create('utherium')
@@ -139,7 +140,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING
         )
     event.create('luminescent_utherium')
         .color(0x6A40B8)
@@ -153,7 +155,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING
         )
     event.create('cosmolite')
         .color(0x4614a3)

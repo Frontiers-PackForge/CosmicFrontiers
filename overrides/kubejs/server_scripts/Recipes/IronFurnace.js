@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
         'PDP'
     ], {
         P: 'gtceu:copper_plate',
-        D: 'gtceu:copper_double_plate',
+        D: 'gtceu:double_copper_plate',
         F: 'minecraft:furnace',
     })
     event.remove({ output: 'ironfurnaces:iron_furnace' }) 
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
         'PDP'
     ], {
         P: 'gtceu:iron_plate',
-        D: 'gtceu:iron_double_plate',
+        D: 'gtceu:double_iron_plate',
         F: 'ironfurnaces:copper_furnace',
     })
     event.remove({ output: 'ironfurnaces:silver_furnace' }) 
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
         'PDP'
     ], {
         P: 'gtceu:silver_plate',
-        D: 'gtceu:silver_double_plate',
+        D: 'gtceu:double_silver_plate',
         F: 'ironfurnaces:iron_furnace',
     })
     event.remove({ output: 'ironfurnaces:gold_furnace' }) 
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
         'PDP'
     ], {
         P: 'gtceu:rose_gold_plate',
-        D: 'gtceu:rose_gold_double_plate',
+        D: 'gtceu:double_rose_gold_plate',
         F: 'ironfurnaces:silver_furnace',
     })
     event.remove({ output: 'ironfurnaces:diamond_furnace' }) 

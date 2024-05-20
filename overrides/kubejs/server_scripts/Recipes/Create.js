@@ -137,13 +137,13 @@ ServerEvents.recipes(event => {
     .duration(100)
     .EUt(8);
   event.recipes.gtceu.assembler("create:cogwheel")
-    .itemInputs("4x gtceu:treated_wood_plates")
+    .itemInputs("4x gtceu:treated_wood_plate")
     .itemInputs("create:shaft")
-    .itemOutputs("create:cogwheel")
+    .itemOutputs("4x create:cogwheel")
     .duration(100)
     .EUt(8);
   event.recipes.gtceu.assembler("create:large_cogwheel")
-    .itemInputs("4x gtceu:treated_wood_plantes")
+    .itemInputs("4x gtceu:treated_wood_plate")
     .itemInputs("create:cogwheel")
     .itemOutputs("create:large_cogwheel")
     .duration(100)

@@ -36,8 +36,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 
 GTCEuStartupEvents.materialModification(event => {
-    // TagPrefix.ore.setIgnored(GTMaterials.get('naquadah'))
-    // TagPrefix.ore['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('naquadah'))
     GTMaterials.get('naquadric_metallic_powder').setFormula('Nq-', true)
     GTMaterials.get('naquadric_solution').setFormula('NqNO2', true)
     GTMaterials.get('fluoronaquadric_acid').setFormula('H2NqF4', true)

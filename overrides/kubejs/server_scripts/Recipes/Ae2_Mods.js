@@ -140,9 +140,9 @@ ServerEvents.recipes(event => {
       Fluid.of('gtceu:uu_matter', 666),
       Fluid.of('gtceu:titanium_tungsten_carbide', 4608),
       Fluid.of('gtceu:soldering_alloy', 8192),
-      
+
     )
-    ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('megacells:mega_energy_cell')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('megacells:mega_energy_cell')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
     .duration(500)
     .EUt(GTValues.VA[GTValues.LuV])
 
@@ -240,13 +240,13 @@ ServerEvents.recipes(event => {
   //Pattern Crafting Terminal
   //Pattern Terminal
   event.recipes.gtceu.assembler('ae2:data_terminal')
-    .itemInputs(['32x gtceu:electrum_fine_wire', 'ae2:blank_pattern', 'ae2:terminal', 'gtceu:computer_monitor_cover'])
+    .itemInputs(['32x gtceu:fine_electrum_wire', 'ae2:blank_pattern', 'ae2:terminal', 'gtceu:computer_monitor_cover'])
     .itemOutputs('ae2:pattern_access_terminal')
     .duration(320)
     .EUt(GTValues.VA[GTValues.HV]);
   //Adv Pattern Terminal
   event.recipes.gtceu.assembler('ae2:extended_data_terminal')
-    .itemInputs(['32x gtceu:electrum_fine_wire', 'ae2:pattern_access_terminal', 'gtceu:data_stick'])
+    .itemInputs(['32x gtceu:fine_electrum_wire', 'ae2:pattern_access_terminal', 'gtceu:data_stick'])
     .itemOutputs('expatternprovider:ex_pattern_access_part')
     .duration(320)
     .EUt(GTValues.VA[GTValues.HV]);
@@ -284,7 +284,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LV]);
   //Illuminated Panel
   event.recipes.gtceu.assembler('ae2:monitor_assembly')
-    .itemInputs(['8x gtceu:annealed_copper_fine_wire', '3x gtceu:glass_plate', 'gtceu:computer_monitor_cover', 'gtceu:steel_plate'])
+    .itemInputs(['8x gtceu:fine_annealed_copper_wire', '3x gtceu:glass_plate', 'gtceu:computer_monitor_cover', 'gtceu:steel_plate'])
     .itemOutputs('ae2:semi_dark_monitor')
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -302,13 +302,13 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LV]);
   //Terminal Basic
   event.recipes.gtceu.assembler('ae2:terminal_assembly')
-    .itemInputs(['32x gtceu:annealed_copper_fine_wire', '2x ae2:formation_core', '2x ae2:annihilation_core', 'gtceu:terminal', 'ae2:semi_dark_monitor'])
+    .itemInputs(['32x gtceu:fine_annealed_copper_wire', '2x ae2:formation_core', '2x ae2:annihilation_core', 'gtceu:terminal', 'ae2:semi_dark_monitor'])
     .itemOutputs('ae2:terminal')
     .duration(320)
     .EUt(GTValues.VA[GTValues.LV]);
   //Terminal Crafting
   event.recipes.gtceu.assembler('ae2:terminal_crafting_assembly')
-    .itemInputs(['32x gtceu:electrum_fine_wire', 'craftingstation:crafting_station', 'ae2:terminal'])
+    .itemInputs(['32x gtceu:fine_electrum_wire', 'craftingstation:crafting_station', 'ae2:terminal'])
     .itemOutputs('ae2:crafting_terminal')
     .duration(320)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -489,7 +489,7 @@ ServerEvents.recipes(event => {
     let euType = euScale[index]
 
     event.recipes.gtceu.assembler(`ae2:${tier}_component_assembly`)
-      .itemInputs(`32x gtceu:${fineWireMaterial}_fine_wire`, `4x #gtceu:circuits/${tier}`, `4x gtceu:${plateType}_plate`, 'ae2:formation_core', 'ae2:annihilation_core')
+      .itemInputs(`32x gtceu:fine_${fineWireMaterial}_wire`, `4x #gtceu:circuits/${tier}`, `4x gtceu:${plateType}_plate`, 'ae2:formation_core', 'ae2:annihilation_core')
       .inputFluids('gtceu:redstone 288')
       .itemOutputs(`${componentType}`)
       .duration(100)

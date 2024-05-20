@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
     ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:iv_electric_pump')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
     .duration(600)
     .EUt(GTValues.VA[GTValues.IV])
-//LUV PUMP
+//LUV CONVEYOR
   event.remove({ id: 'gtceu:assembly_line/conveyor_module_luv' })
   event.recipes.gtceu.assembly_line('luv_conveyor_module_new')
     .itemInputs(['2x gtceu:luv_electric_motor', '2x cosmiccore:resonant_virtue_meld_plate', '4x cosmiccore:resonant_virtue_meld_ring', '32x cosmiccore:resonant_virtue_meld_round', '4x cosmiccore:resonant_virtue_meld_screw', '2x gtceu:niobium_titanium_quadruple_cable'])
@@ -84,6 +84,23 @@ ServerEvents.recipes(event => {
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:iv_conveyor_module')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
   .duration(600)
   .EUt(GTValues.VA[GTValues.IV])
+
+  //LUV ROBOT-ARM
+  event.remove({ id: 'gtceu:assembly_line/robot_arm_luv' })
+  event.recipes.gtceu.assembly_line('robot_arm_luv_new')
+    .itemInputs(['4x cosmiccore:long_resonant_virtue_meld_rod', 'cosmiccore:resonant_virtue_meld_gear', 'cosmiccore:small_resonant_virtue_meld_gear', '2x gtceu:luv_electric_motor', 'gtceu:luv_electric_piston', '#gtceu:circuits/luv', '2x #gtceu:circuits/iv', '4x #gtceu:circuits/ev', '4x gtceu:niobium_titanium_quadruple_cable'])
+    .itemOutputs('gtceu:luv_robot_arm')
+    .inputFluids(
+    Fluid.of('gtceu:soldering_alloy', 1152),
+    Fluid.of('gtceu:lubricant', 500),
+  )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:iv_robot_arm')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
+  .duration(600)
+  .EUt(GTValues.VA[GTValues.IV])
+
+
+
+
 
     event.recipes.gtceu.assembly_line('the_meatball')
     .itemInputs(['64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe'])
