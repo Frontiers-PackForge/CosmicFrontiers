@@ -381,5 +381,15 @@
   "block.gtceu.arboreal_growth_facility": "Industiral Arboreal Growth Chamber",
   "gtceu.arboreal_growth_chamber": "Industiral Arboreal Growth Chamber",
   "gtceu.celestial_bore": "Celestial Bore",
-  "block.gtceu.celestial_bore": "Celestial Bore"
+  "block.gtceu.celestial_bore": "Celestial Bore",
+
+  "gtceu:cyanex_272": "Cyanex-272",
+  "gtceu:tert_butanol": "Tert-butanol",
+  "gtceu:isobutene": "Isobutene",
+  "gtceu:ammonium_fluoride": "Ammonium Fluoride",
+  "gtceu:sodium_hypophosphite": "Sodium Hypophosphite",
+  "gtceu:tert_butylhydroperoxide": "Tert-butylhydroperoxide",
+  "gtceu:244_trimethyl_1_pentene": "2,4,4-trimethyl-1-pentene",
+  "gtceu:244_trimethyl_2_pentene": "2,4,4-trimethyl-2-pentene",
+  "gtceu:ferric_alumina": "Ferric Alumina"
 }
