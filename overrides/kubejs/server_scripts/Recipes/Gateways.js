@@ -19,6 +19,6 @@ ServerEvents.recipes(event => {
     ], {
         O: 'cosmiccore:overloaded_pearls',
         E: 'minecraft:echo_shard',
-        P: 'gtceu:mana_steel_plate',
+        P: 'gtceu:manasteel_plate',
     })
 })

@@ -18,7 +18,7 @@
 		hud_y_position = 0
 
 	[SeasonHUD.Season]
-		#Require the Calender item to be in the players inventory to show the HUD?
+		#Require the Calendar item to be in the players inventory to show the HUD?
 		#(true/false)
 		#Default is false.
 		need_calendar = false
@@ -32,9 +32,8 @@
 		#Default is true.
 		enable_show_sub_season = true
 		#Show the current day of the season/sub-season?
-		#NONE, SHOW_DAY, SHOW_WITH_TOTAL_DAYS, SHOW_WITH_MONTH
 		#Default is SHOW_DAY.
-		#Allowed Values: NONE, SHOW_DAY, SHOW_WITH_TOTAL_DAYS, SHOW_WITH_MONTH
+		#Allowed Values: NONE, SHOW_DAY, SHOW_WITH_TOTAL_DAYS
 		enable_show_day = "SHOW_DAY"
 
 	[SeasonHUD.Minimap]

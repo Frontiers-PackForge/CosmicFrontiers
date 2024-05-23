@@ -212,7 +212,7 @@ ServerEvents.recipes(event => {
     }
   })
   event.recipes.gtceu.forming_press("t1_welded_plate")
-    .itemInputs(['4x gtceu:black_steel_plate', '4x gtceu:galvanized_ethersteel_plate', '4x gtceu:titanium_plate', '4x gtceu:mana_steel_plate'])
+    .itemInputs(['4x gtceu:black_steel_plate', '4x gtceu:galvanized_ethersteel_plate', '4x gtceu:titanium_plate', '4x gtceu:manasteel_plate'])
     .circuit(1)
     .itemOutputs('kubejs:welded_rocket_plating')
     .duration(160)

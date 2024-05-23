@@ -20,6 +20,9 @@
 	maximum_out_of_combat_interval = 120
 	#Makes monsters target a dummy that is wearing a player head
 	dummy_decoy = false
+	#Makes dummy drop xp when hit. Training yay! Depends on damage done
+	#Range: 0.0 ~ 100.0
+	xp_per_damage_on_hit = 0.0
 
 [mobs_damage_numbers]
 	#Show damage taken form

@@ -7,11 +7,7 @@
 	icon: "aquamirae:ship_graveyard_echo"
 	id: "78A238438B986DB5"
 	images: [{
-		click: ""
-		corner: false
-		dev: false
 		height: 5.0d
-		hover: [ ]
 		image: "frontiers:textures/questimages/miscicons/table.png"
 		rotation: 0.0d
 		width: 13.91836734693878d

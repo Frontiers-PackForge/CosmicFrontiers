@@ -57,6 +57,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'crabbersdelight:lanternfish_barrel' })
   event.remove({ id: 'create:cutting/compat/forbidden_arcanus/cherrywood_log' })
   event.remove({ id: 'create:cutting/compat/forbidden_arcanus/stripped_mysterywood_log' })
+  event.remove({ id: 'create:pressing/sugar_cane' })
   event.remove({ output: 'create:andesite_alloy' })
   event.remove({ output: 'create:copper_backtank' })
   event.shaped('create:copper_backtank', [

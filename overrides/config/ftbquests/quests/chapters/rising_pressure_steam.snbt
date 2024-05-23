@@ -437,20 +437,39 @@
 			]
 			id: "5F460A1D5DB52638"
 			shape: "gear"
-			tasks: [{
-				id: "3445124A8F9FFDDF"
-				item: {
-					Count: 1b
-					ForgeCaps: {
-						"cold_sweat:item_insulation": {
-							Insulation: [ ]
+			subtitle: "This will allow you to breath in the nether"
+			tasks: [
+				{
+					id: "3445124A8F9FFDDF"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "create:copper_backtank"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "71B240F870250340"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "create:copper_diving_helmet"
+						tag: {
+							Damage: 0
 						}
 					}
-					id: "create:copper_backtank"
-					tag: { }
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			x: -4.5d
 			y: -3.0d
 		}
@@ -476,7 +495,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["5F460A1D5DB52638"]
+			dependencies: ["705099C9ED28CF14"]
 			id: "0A35EE6668FBF2EC"
 			tasks: [{
 				id: "0AB4DC710EE6365F"
@@ -484,7 +503,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [

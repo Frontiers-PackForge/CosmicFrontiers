@@ -3,23 +3,20 @@ sdrp.dimension_change((event) => {
   event.updateSDRPState(`sdrp.${dimPath}.in`, `sdrp.${dimPath}`, "dimPath");
 });
 //
-let cables = ['gtceu:mana_steel_single_cable', 'gtceu:mana_steel_double_cable', 'gtceu:mana_steel_quadruple_cable', 'gtceu:mana_steel_octal_cable', 'gtceu:mana_steel_hex_cable']
-let wires = ['gtceu:mana_steel_single_wire', 'gtceu:mana_steel_double_wire', 'gtceu:mana_steel_quadruple_wire', 'gtceu:mana_steel_octal_wire', 'gtceu:mana_steel_hex_wire']
+let cables = ['gtceu:manasteel_single_cable', 'gtceu:manasteel_double_cable', 'gtceu:manasteel_quadruple_cable', 'gtceu:manasteel_octal_cable', 'gtceu:manasteel_hex_cable']
+let wires = ['gtceu:manasteel_single_wire', 'gtceu:manasteel_double_wire', 'gtceu:manasteel_quadruple_wire', 'gtceu:manasteel_octal_wire', 'gtceu:manasteel_hex_wire']
 let echo = ['cosmiccore:echo_processor', 'cosmiccore:echo_processor_assembly', 'cosmiccore:echo_processor_supercomputer', 'cosmiccore:echo_processor_mainframe']
 let optical = ['cosmiccore:optical_processor', 'cosmiccore:optical_processor_assembly', 'cosmiccore:optical_processor_supercomputer', 'cosmiccore:optical_processor_mainframe']
 let cosmic = ['cosmiccore:cosmic_processor', 'cosmiccore:cosmic_processor_assembly', 'cosmiccore:cosmic_processor_supercomputer', 'cosmiccore:cosmic_processor_mainframe']
 let psionic = ['cosmiccore:psionic_processor', 'cosmiccore:psionic_processor_assembly', 'cosmiccore:psionic_processor_supercomputer', 'cosmiccore:psionic_processor_mainframe']
 let macroverse = ['cosmiccore:macroverse_processor', 'cosmiccore:macroverse_processor_assembly', 'cosmiccore:macroverse_processor_supercomputer', 'cosmiccore:macroverse_processor_mainframe']
 ItemEvents.tooltip(event => {
-  // event.add('gtceu:mana_steel_single_cable', Text.of('LV Superconductor'))
+  // event.add('gtceu:manasteel_single_cable', Text.of('LV Superconductor'))
   event.addAdvanced('forbidden_arcanus:eternal_stella', (item, advanced, text) => {
     text.add(1, Text.of('DISABLED - Currently Broken with GT TOOLS').red()) // Adds text in first line, pushing the items name down a line. If you want the line below the item name, the index must be 1
   })
   event.addAdvanced(cables, (item, advanced, text) => {
     text.add(1, Text.of('LV Superconductor - Arcane Stabilization')) // Adds text in first line, pushing the items name down a line. If you want the line below the item name, the index must be 1
-  })
-  event.addAdvanced(wires, (item, advanced, text) => {
-    text.add(1, Text.of('LV Superconductor')) // Adds text in first line, pushing the items name down a line. If you want the line below the item name, the index must be 1
   })
   //ECHO CIRCUITS
   event.addAdvanced(echo, (item, advanced, text) => {
@@ -167,6 +164,22 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(4, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
     }
+    event.addAdvanced(/embers:(.*)/, (item, advanced, text) => {
+      text.add(1, Text.of('The power of the Overseers hinders your mind.').red().italic())
+      text.add(2, Text.of('Mod NYI - Expect integration in future Updates.').white().bold())
+    })
+    event.addAdvanced(/naturesaura:(.*)/, (item, advanced, text) => {
+      text.add(1, Text.of('The power of the Overseers hinders your mind.').red().italic())
+      text.add(2, Text.of('Mod NYI - Expect integration in future Updates.').white().bold())
+    })
+    event.addAdvanced(/occultism:(.*)/, (item, advanced, text) => {
+      text.add(1, Text.of('The power of the Overseers hinders your mind.').red().italic())
+      text.add(2, Text.of('Mod NYI - Expect integration in future Updates.').white().bold())
+    })
+    event.addAdvanced('solonion:golden_lunchbox', (item, advanced, text) => {
+      text.add(1, Text.of('Remove food from your lunchbox before upgrading').red())
+    })
+    
   })
   //subscript (copy and paste) ₂₃₄₅₆₇₈₉₀
 })

@@ -1,5 +1,6 @@
 //Item Recipes, gregified
 ServerEvents.recipes(event => {
+    event.remove({id:'supplementaries:bed_from_feather_block'})
     event.remove({output:'supplementaries:bomb'})
     event.shaped('supplementaries:bomb', [
         ' PS',

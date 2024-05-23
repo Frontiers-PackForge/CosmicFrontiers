@@ -29,20 +29,6 @@ ServerEvents.recipes(event => {
 //Time to do some Gregification
 //Spellbooks
 ServerEvents.recipes(e => {
-    e.remove({ id: 'ars_nouveau:novice_spell_book' })
-    e.shaped('ars_nouveau:novice_spell_book', [
-        'ABC',
-        'DE ',
-        '   '
-    ],
-        {
-            A: 'minecraft:book',
-            B: 'gtceu:iron_shovel',
-            C: 'gtceu:iron_pickaxe',
-            D: 'gtceu:iron_sword',
-            E: 'gtceu:iron_axe',
-        }
-    )
     //e.remove({id: 'ars_nouveau:apprentice_spell_book'})
     //e.shaped('ars_nouveau:apprentice_spell_book', [
     //        'BAA',
@@ -91,6 +77,19 @@ ServerEvents.recipes(e => {
 
     //Magic Stations
     e.remove({ id: 'ars_nouveau:arcane_core' })
+    e.shaped('ars_nouveau:arcane_core', [
+        'ACA',
+        'BDB',
+        'AAA'
+    ],
+        {
+            A: 'ars_nouveau:sourcestone',
+            B: 'gtceu:gold_rod',
+            C: '#gtceu:circuits/mv',
+            D: 'ars_nouveau:source_gem',
+        }
+    )
+    e.remove({ id: 'ars_nouveau:wilden_summon_alt' })
     e.shaped('ars_nouveau:arcane_core', [
         'ACA',
         'BDB',

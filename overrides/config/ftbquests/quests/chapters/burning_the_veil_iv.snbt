@@ -12,7 +12,7 @@
 			id: "52DAB014D2101F02"
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "Round and round we go"
+			subtitle: "Round and round we go,,,"
 			tasks: [{
 				id: "2158E551F35DC1BD"
 				item: "gtceu:iv_machine_hull"
@@ -26,7 +26,10 @@
 			dependencies: [
 				"50512987C534E66F"
 				"75AC0231E1B539AB"
-				"7FF2118F9BCC0F0B"
+			]
+			description: [
+				"TODO : ADD THE REST OF THE BLOCKS"
+				"TODO : REQUIRE AT LEAST A ASSLINE SIZE OF 10"
 			]
 			id: "5B1D7A68D8767876"
 			shape: "hexagon"
@@ -42,12 +45,21 @@
 		}
 		{
 			dependencies: ["57F13FE3E9215635"]
+			icon: "gtceu:radon_bucket"
 			id: "74B8764F1C1E149B"
-			tasks: [{
-				id: "4C17F5BED717F19A"
-				item: "gtceu:radon_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4C17F5BED717F19A"
+					item: "gtceu:radon_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "527476F1A49DEEBA"
+					title: "Got It!"
+					type: "checkmark"
+				}
+			]
 			x: 0.0d
 			y: -3.0d
 		}
@@ -59,28 +71,39 @@
 				item: "gtceu:quantum_eye"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: -4.5d
 		}
 		{
-			dependencies: ["74B8764F1C1E149B"]
+			dependencies: [
+				"74B8764F1C1E149B"
+				"2AD09294CA16162C"
+			]
 			id: "57BE36CF37949D93"
 			tasks: [{
 				id: "64115EDB5DD56158"
 				item: "gtceu:quantum_star"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["52DAB014D2101F02"]
 			id: "57F13FE3E9215635"
-			tasks: [{
-				id: "5EDA98FAC7E82D91"
-				item: "gtceu:liquid_ender_air_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5EDA98FAC7E82D91"
+					item: "gtceu:liquid_ender_air_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "20BA6D02D015F4A7"
+					title: "Got it!"
+					type: "checkmark"
+				}
+			]
 			x: 0.0d
 			y: -1.5d
 		}
@@ -494,9 +517,11 @@
 			icon: "ad_astra:mars_globe"
 			id: "032621AA64B4E743"
 			tasks: [{
-				id: "2DD6DE27CD10B4C1"
-				item: "ad_astra:mars_globe"
-				type: "item"
+				dimension: "ad_astra:mars"
+				icon: "ad_astra:mars_globe"
+				id: "4BEA4C000F36ED77"
+				title: "Visit Mars!"
+				type: "dimension"
 			}]
 			x: -3.0d
 			y: -1.5d
@@ -510,23 +535,14 @@
 				type: "item"
 			}]
 			title: "Easier Plutonium Sources"
-			x: -4.5d
+			x: -6.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["032621AA64B4E743"]
-			id: "1B31331B45CA781C"
-			tasks: [{
-				id: "3DB3919D9219AC19"
-				item: "gtceu:raw_naquadah"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -3.0d
-		}
-		{
 			dependencies: ["21608DFB32451FB8"]
+			description: ["Allows much faster ore processing! Neat! "]
 			id: "13527E13CAE500B9"
+			subtitle: "A Very Useful Multi"
 			tasks: [{
 				id: "696E0C1E3AA44F0F"
 				item: "gtceu:large_maceration_tower"
@@ -537,6 +553,7 @@
 		}
 		{
 			dependencies: ["21608DFB32451FB8"]
+			description: ["Allows much faster ore processing! Neat! "]
 			id: "3D77B19C91290765"
 			tasks: [{
 				id: "5625D50852DC010D"
@@ -577,8 +594,10 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["57898F6FBA8CE622"]
 			id: "454AC43D9EAF4A55"
 			shape: "hexagon"
+			subtitle: "Have You Finished Platline?"
 			tasks: [{
 				id: "58E963F9BCF39ABE"
 				item: "gtceu:iridium_ingot"
@@ -612,6 +631,7 @@
 		{
 			dependencies: ["5A39803D8A6BF62D"]
 			id: "50512987C534E66F"
+			subtitle: "ZPM Circuits Required"
 			tasks: [{
 				id: "1C10E05C3785CCB9"
 				item: "gtceu:assembly_line_casing"
@@ -621,18 +641,34 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["5A39803D8A6BF62D"]
+			dependencies: ["5B1D7A68D8767876"]
+			description: [
+				"Im not smart but you can be!"
+				""
+				""
+				"a basic rundown of how to make data sticks"
+				""
+				""
+				"Check jei for a scanner page"
+				"Next, insert a data stick and the item requested into a scanner."
+				"wait a bit."
+				"out comes your data stick with the research for the item you wanted."
+				"put that in your assembly lines data access hatch or a databank to have access to the recipe."
+			]
 			id: "7FF2118F9BCC0F0B"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Getting Smarter"
 			tasks: [{
 				id: "3D7AD0EC27D09758"
 				item: "gtceu:iv_scanner"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -7.5d
+			title: "Research and YOU"
+			x: 0.0d
+			y: -10.5d
 		}
 		{
-			dependencies: ["7FF2118F9BCC0F0B"]
 			icon: "gtceu:luv_electric_motor"
 			id: "14B7A82E598AFC52"
 			x: 3.0d
@@ -643,7 +679,7 @@
 				"5B1D7A68D8767876"
 				"2B5B95B71592BEBC"
 				"4FB9205222CC5B9A"
-				"1457F19026E43C49"
+				"7FF2118F9BCC0F0B"
 			]
 			id: "2AF737CA4D527559"
 			shape: "hexagon"
@@ -677,20 +713,10 @@
 			y: -12.0d
 		}
 		{
-			icon: "botania:cosmetic_questgiver_mark"
-			id: "1457F19026E43C49"
-			shape: "gear"
-			tasks: [{
-				id: "1C67F11CE461EEDF"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: -10.5d
-		}
-		{
 			dependencies: [
 				"5B1D7A68D8767876"
-				"1457F19026E43C49"
+				"78DB4974FEABEEA2"
+				"7FF2118F9BCC0F0B"
 			]
 			id: "5FC86F313B5C1A1E"
 			shape: "hexagon"
@@ -704,7 +730,10 @@
 			y: -10.5d
 		}
 		{
-			dependencies: ["72B08A555AB86A0F"]
+			dependencies: [
+				"71BF44B9337D9A09"
+				"1695F37249DDB412"
+			]
 			id: "2B5B95B71592BEBC"
 			tasks: [{
 				id: "7BD608C996349064"
@@ -729,7 +758,9 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["4DA37DF15D6955C2"]
 			id: "2275BD1700FF037F"
+			subtitle: "Have You Finished Platline?"
 			tasks: [{
 				id: "402B24A757D4FBD8"
 				item: "gtceu:rhodium_ingot"
@@ -739,7 +770,9 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["7C2579488595C534"]
 			id: "1C8200AE86247D44"
+			subtitle: "Have You Finished Platline?"
 			tasks: [{
 				id: "21A57210430855AE"
 				item: "gtceu:palladium_ingot"
@@ -747,116 +780,6 @@
 			}]
 			x: -2.0d
 			y: -7.5d
-		}
-		{
-			dependencies: ["1B31331B45CA781C"]
-			id: "2873AEB7D6ED4BAE"
-			tasks: [{
-				id: "234274C4380F46CB"
-				type: "item"
-			}]
-			title: "Naquadah Emulsion"
-			x: -3.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["2873AEB7D6ED4BAE"]
-			id: "0161D495BCA7CB40"
-			tasks: [{
-				id: "242EC8C0F01A46EA"
-				type: "item"
-			}]
-			title: "Biphasic Naquadah Mixture"
-			x: -4.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["0161D495BCA7CB40"]
-			id: "0A4A355FB1340C10"
-			tasks: [{
-				id: "1FA1ABD44C69595F"
-				type: "item"
-			}]
-			title: "Enriched Naquadah Residue"
-			x: -4.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["0161D495BCA7CB40"]
-			id: "59A7FF88AE958081"
-			tasks: [{
-				id: "3A5569E9589069E3"
-				type: "item"
-			}]
-			title: "Purified Naquadah Concentrate"
-			x: -3.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["59A7FF88AE958081"]
-			id: "6CFFA599A1FDB86D"
-			tasks: [{
-				id: "6AC0709F34859AAA"
-				type: "item"
-			}]
-			title: "Naquadic Acid"
-			x: -3.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["6CFFA599A1FDB86D"]
-			id: "72B08A555AB86A0F"
-			tasks: [{
-				id: "747D476F3706E53F"
-				type: "item"
-			}]
-			title: "Naquadah Trioxide"
-			x: -3.0d
-			y: -9.0d
-		}
-		{
-			dependencies: ["0A4A355FB1340C10"]
-			id: "25DD9F14D63F5038"
-			tasks: [{
-				id: "4B45B2D86B24EEEB"
-				type: "item"
-			}]
-			title: "Enriched Naquadah Concentrate"
-			x: -6.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["25DD9F14D63F5038"]
-			id: "19E2BD3961DCCE13"
-			tasks: [{
-				id: "622A4269AD93294C"
-				type: "item"
-			}]
-			title: "Enriched Naquadic Acid"
-			x: -7.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["19E2BD3961DCCE13"]
-			id: "650CCCCF6281E2BE"
-			tasks: [{
-				id: "2D1B9C434FB1CB46"
-				type: "item"
-			}]
-			title: "Enriched Naquadah Trioxide"
-			x: -9.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["650CCCCF6281E2BE"]
-			id: "24047B1AD22160D4"
-			tasks: [{
-				id: "6459C944AF4188FF"
-				item: "gtceu:enriched_naquadah_ingot"
-				type: "item"
-			}]
-			x: -9.0d
-			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -873,10 +796,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"043571B3B39ED283"
-				"24047B1AD22160D4"
-			]
+			dependencies: ["043571B3B39ED283"]
 			id: "6B2A25D5C2C81847"
 			tasks: [{
 				id: "52D57C431FF7D682"
@@ -913,7 +833,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["0161D495BCA7CB40"]
+			dependencies: ["298E56DA9A374C9E"]
 			icon: "botania:dice"
 			id: "66FFD53CA9FB9671"
 			tasks: [
@@ -928,8 +848,8 @@
 				}
 			]
 			title: "Psi-Stable Elemental Dust"
-			x: -6.5d
-			y: -8.0d
+			x: -7.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["66FFD53CA9FB9671"]
@@ -938,8 +858,8 @@
 				id: "7E59CB5F43079791"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -8.5d
+			x: -5.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["66FFD53CA9FB9671"]
@@ -948,8 +868,8 @@
 				id: "28EA7015412A1469"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -6.5d
+			x: -7.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["66FFD53CA9FB9671"]
@@ -958,8 +878,8 @@
 				id: "6D458A87CFA967FF"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -9.5d
+			x: -6.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["66FFD53CA9FB9671"]
@@ -968,8 +888,8 @@
 				id: "0F881ABB00CE7DD4"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -6.5d
+			x: -8.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["66FFD53CA9FB9671"]
@@ -978,8 +898,8 @@
 				id: "4C7E20F7FA856F6A"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -9.5d
+			x: -7.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["66FFD53CA9FB9671"]
@@ -988,18 +908,21 @@
 				id: "10C85F42BA27B4A3"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -7.5d
+			x: -8.5d
+			y: -11.0d
 		}
 		{
+			dependencies: ["71BF44B9337D9A09"]
 			id: "298E56DA9A374C9E"
+			subtitle: "Want some powerful gear?"
 			tasks: [{
 				id: "6A378F47276334B2"
 				item: "botania:gaia_ingot"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -7.0d
+			title: "Taunting Virtues"
+			x: -6.0d
+			y: -10.5d
 		}
 		{
 			icon: "createdeco:decal_electrical"
@@ -1009,7 +932,7 @@
 				id: "5220890D98D2704C"
 				type: "checkmark"
 			}]
-			x: 4.5d
+			x: -7.5d
 			y: 1.5d
 		}
 		{
@@ -1019,7 +942,7 @@
 				item: "gtceu:nitrobenzene_bucket"
 				type: "item"
 			}]
-			x: 3.0d
+			x: -9.0d
 			y: 4.5d
 		}
 		{
@@ -1030,7 +953,7 @@
 				item: "gtceu:tears_of_the_sky_bucket"
 				type: "item"
 			}]
-			x: 4.5d
+			x: -7.5d
 			y: 3.0d
 		}
 		{
@@ -1040,7 +963,7 @@
 				item: "gtceu:refinery_gas_bucket"
 				type: "item"
 			}]
-			x: 6.0d
+			x: -6.0d
 			y: 3.0d
 		}
 		{
@@ -1053,7 +976,7 @@
 				id: "66A0F7EAB89CA2BE"
 				type: "item"
 			}]
-			x: 4.5d
+			x: -7.5d
 			y: 4.5d
 		}
 		{
@@ -1066,7 +989,7 @@
 				id: "60E8058DD6044BE6"
 				type: "item"
 			}]
-			x: 4.5d
+			x: -7.5d
 			y: 6.0d
 		}
 		{
@@ -1076,8 +999,427 @@
 				item: "gtceu:thundering_aerocloud_solution_bucket"
 				type: "item"
 			}]
-			x: 6.0d
+			x: -6.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["0CE1B054263D0C44"]
+			description: [
+				"LUV and beyond are in WIP."
+				""
+				"However the next major update will be refining and finalizing the current chapters and content."
+				"So the LUV age may be a bit later."
+				""
+				""
+				"Update : I will instead be moving the QB quality pass to the Conclusion of the UV Update (0.8.0)"
+			]
+			id: "505B9B3240069C7D"
+			subtitle: "LUV +"
+			tasks: [{
+				id: "22AFE07FE23E739F"
+				type: "custom"
+			}]
+			title: "You are Here."
+			x: 0.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
+			id: "6C2C175660333686"
+			tasks: [{
+				id: "0CB08A699F257C77"
+				item: "gtceu:mre_slag_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C2C175660333686"]
+			id: "3B052FE1B75E1A21"
+			tasks: [{
+				id: "0DBAD24C180E44C1"
+				item: "gtceu:mre_hydroxides_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B052FE1B75E1A21"]
+			id: "1C11F4F6BE70E0D8"
+			tasks: [{
+				id: "77DFEE1D706E81EF"
+				item: "gtceu:mre_oxides_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1C11F4F6BE70E0D8"]
+			id: "719E4D2B41063805"
+			tasks: [{
+				id: "32AFEFC2D9BECC94"
+				item: "gtceu:mre_chlorides_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["719E4D2B41063805"]
+			id: "78B9EDF7A35B406F"
+			tasks: [{
+				id: "6FEE9E3F04C61CE8"
+				item: "gtceu:mre_leachate_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["78B9EDF7A35B406F"]
+			id: "7ED9269DEE3DE5B6"
+			tasks: [{
+				id: "129FEA4A54FA33AC"
+				item: "gtceu:mre_organic_leachate_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7ED9269DEE3DE5B6"]
+			id: "7A6687C64AE5FC75"
+			tasks: [{
+				id: "622C06E7D6288B84"
+				item: "gtceu:mre_mixed_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -9.0d
+		}
+		{
+			id: "4EEA38675CD6EA83"
+			tasks: [{
+				id: "3290D572A3274F86"
+				item: "gtceu:europium_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -12.0d
+		}
+		{
+			id: "24372DF466387782"
+			tasks: [{
+				id: "52255251AB9CF568"
+				item: "gtceu:samarium_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7A6687C64AE5FC75"]
+			id: "1B0AFEC8765B5890"
+			subtitle: "Hold a Stack to complete all quests before this."
+			tasks: [{
+				id: "70C07C1FCA478EDB"
+				item: "gtceu:samarium_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["1B0AFEC8765B5890"]
+			id: "50C167549CD1D964"
+			tasks: [{
+				id: "4501B7093A339D76"
+				item: "gtceu:samarium_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["50C167549CD1D964"]
+			id: "78DB4974FEABEEA2"
+			tasks: [{
+				id: "290F01CD32018A01"
+				item: "gtceu:long_magnetic_samarium_rod"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["5B1D7A68D8767876"]
+			id: "3549C0C2895499E1"
+			subtitle: "Unlimited (AE) Power!!!!"
+			tasks: [{
+				id: "00BE3E68559591E1"
+				item: "ae2:creative_energy_cell"
+				type: "item"
+			}]
+			title: "Creative Energy Cell Get!"
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2B96AA2FF13432C2"]
+			id: "2868E4E3E48830EC"
+			tasks: [{
+				id: "7420844B62F449C8"
+				item: "gtceu:grove_enriched_nether_slag_bucket"
+				type: "item"
+			}]
+			title: "Netherstars!"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"705099C9ED28CF14"
+				"52DAB014D2101F02"
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:deeply_withered_nether_slag_bucket"
+			id: "2B96AA2FF13432C2"
+			tasks: [{
+				id: "6C87D8F67ADCCAD9"
+				item: "gtceu:deeply_withered_nether_slag_bucket"
+				type: "item"
+			}]
+			title: "Molten Netherstar Slag"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["032621AA64B4E743"]
+			icon: "gtceu:raw_naquadric_metallic_powder"
+			id: "4E6E418B8D88C471"
+			tasks: [{
+				id: "12FF1D58C2394BBF"
+				item: "gtceu:naquadric_metallic_powder_dust"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0428A6C43A0206C1"
+				"182925EAA398F01A"
+			]
+			id: "135CFFFDB3E92F89"
+			tasks: [{
+				id: "02041D199082E21B"
+				item: "gtceu:naquadah_concentrate_dust"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0A1E02413DE3DDEE"]
+			id: "71BF44B9337D9A09"
+			tasks: [{
+				id: "140E0CD11168A3A3"
+				item: "gtceu:naquadah_dust"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["4E6E418B8D88C471"]
+			icon: "gtceu:naquadric_solution_bucket"
+			id: "5F629D78D02E813A"
+			tasks: [
+				{
+					id: "73BA910EC36BD1C1"
+					item: "gtceu:naquadric_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "019DA6AFC9A8699C"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5F629D78D02E813A"]
+			icon: "gtceu:fluoronaquadric_acid_bucket"
+			id: "0B18D2364A7E09B3"
+			tasks: [
+				{
+					id: "774763E78462E4B5"
+					item: "gtceu:fluoronaquadric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "798B03B2221FE7ED"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B18D2364A7E09B3"]
+			icon: "gtceu:naquadah_difluoride_bucket"
+			id: "0428A6C43A0206C1"
+			tasks: [
+				{
+					id: "45C101B4059CB9B1"
+					item: "gtceu:naquadah_difluoride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "6FCC8E7A1A95D595"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["135CFFFDB3E92F89"]
+			icon: "gtceu:naquadah_sulfate_bucket"
+			id: "0A1E02413DE3DDEE"
+			tasks: [
+				{
+					id: "31FEE605F3B41630"
+					item: "gtceu:naquadah_sulfate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "108D7F55DFD8C5B7"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: -9.0d
+		}
+		{
+			icon: "gtceu:uranium_hexafluoride_bucket"
+			id: "6B051B2F2297D096"
+			tasks: [
+				{
+					id: "4C422603B13B8E87"
+					item: "gtceu:uranium_hexafluoride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7D9028A6F0C2F406"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			id: "1695F37249DDB412"
+			subtitle: "Reaction Stabilizer"
+			tasks: [{
+				id: "66640A28E234033A"
+				item: "gtceu:prismaline_thermal_catalyst_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2868E4E3E48830EC"]
+			id: "7F51345CA2EEDE3E"
+			tasks: [{
+				id: "4099D40BA12A39E9"
+				item: "gtceu:nether_star_distillate_slurry_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7F51345CA2EEDE3E"]
+			id: "4953156E29146133"
+			tasks: [{
+				id: "2B74EC94A5270C6C"
+				item: "gtceu:dull_nether_star_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["71BF44B9337D9A09"]
+			description: ["Shouldn't be too bad, you already have virtue automated, right?"]
+			id: "7318CB2F24DDEC93"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Your New Coil"
+			tasks: [{
+				id: "3692342F2306865E"
+				item: "cosmiccore:resonant_virtue_meld_coil_block"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["4953156E29146133"]
+			id: "59ECCFCCFD932CC9"
+			tasks: [{
+				id: "40E9696C8F9BE31A"
+				item: "kubejs:chromatically_doped_nether_star_boule"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["59ECCFCCFD932CC9"]
+			id: "2AD09294CA16162C"
+			tasks: [{
+				id: "0E8595446DB95AF1"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["717BBC8B61290969"]
+			dependency_requirement: "all_started"
+			hide_dependency_lines: true
+			id: "182925EAA398F01A"
+			tasks: [{
+				id: "70C2D035B9B02EA3"
+				item: "gtceu:indium_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -7.5d
 		}
 	]
 	title: "Burning the Veil"

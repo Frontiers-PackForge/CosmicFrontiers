@@ -1,0 +1,3 @@
+#Use a fallback rendertype for certain objects that normally use custom core shaders. Improves compatibility with shader mods but might not look as good.
+render_fallback = false
+

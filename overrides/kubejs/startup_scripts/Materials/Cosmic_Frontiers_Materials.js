@@ -93,7 +93,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .toolStats(ToolProperty.Builder.of(6.0, 7.0, 768, 3).attackSpeed(0.1).enchantability(18).build())
         .flags(
-            GTMaterialFlags.NO_ORE_SMELTING
+            GTMaterialFlags.NO_ORE_SMELTING,
+            GTMaterialFlags.NO_SMELTING
         )
         // .element(GTElements.get('prism_tungstensteel'))
         .iconSet(GTMaterialIconSet.getByName('starry'))

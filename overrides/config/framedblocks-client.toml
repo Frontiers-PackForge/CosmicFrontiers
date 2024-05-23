@@ -39,6 +39,9 @@
 	#If enabled, special cube blocks will show a type overlay when a camo is applied
 	#Requires resource reload to take effect
 	showSpecialCubeTypeOverlay = true
+	#If true, ambient occlusion is applied to framed blocks which glow from applied glowstone dust.
+	#If false, the vanilla behavior of disabling AO for light-emitting blocks is used
+	forceAoOnGlowingBlocks = true
 
 [overlay]
 	#If set to HIDDEN, the State Lock overlay will be completely hidden

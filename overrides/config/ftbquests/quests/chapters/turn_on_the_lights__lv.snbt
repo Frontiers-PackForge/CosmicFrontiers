@@ -510,6 +510,7 @@
 				"4815FCF1FA58C33D"
 				"0C1B34079019BB33"
 			]
+			icon: "gtceu:hydrochloric_acid_bucket"
 			id: "2CBB70834FEAF761"
 			tasks: [
 				{
@@ -544,6 +545,8 @@
 			dependencies: ["12EBF67C386AA4B6"]
 			hide_dependency_lines: true
 			id: "0C1B34079019BB33"
+			optional: true
+			shape: "gear"
 			subtitle: "Limonite is great for Hydrogen"
 			tasks: [{
 				id: "661DA4687B228067"
@@ -662,7 +665,7 @@
 			subtitle: "Spool Up"
 			tasks: [{
 				id: "29613799B6951FD8"
-				item: "gtceu:mana_steel_double_cable"
+				item: "gtceu:manasteel_double_cable"
 				type: "item"
 			}]
 			x: 0.0d
