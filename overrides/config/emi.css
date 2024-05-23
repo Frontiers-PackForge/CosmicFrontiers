@@ -34,7 +34,7 @@
 	/**
 	 * Whether normal search queries should include the stack's tags.
 	 */
-	search-tags-by-default: false;
+	search-tags-by-default: true;
 }
 
 #ui {
@@ -71,7 +71,7 @@
 	/**
 	 * The unit to display fluids as.
 	 */
-	fluid-unit: millibuckets;
+	fluid-unit: liters;
 
 	/**
 	 * Whether to use the batched render system. Batching is faster, but may have
@@ -98,7 +98,7 @@
 	/**
 	 * The amount of vertical margin to give in the recipe screen.
 	 */
-	vertical-margin: 20;
+	vertical-margin: 40;
 
 	/**
 	 * The minimum width of the recipe screen in pixels. Controls how many tabs there
@@ -120,12 +120,12 @@
 	/**
 	 * Whether recipes should have a button to set as default.
 	 */
-	recipe-default-button: true;
+	recipe-default-button: false;
 
 	/**
 	 * Whether recipes should have a button to show the recipe tree.
 	 */
-	recipe-tree-button: false;
+	recipe-tree-button: true;
 
 	/**
 	 * Whether recipes should have a button to fill the ingredients in a handler.

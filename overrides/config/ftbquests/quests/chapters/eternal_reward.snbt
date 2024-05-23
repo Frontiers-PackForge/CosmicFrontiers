@@ -9,12 +9,21 @@
 	quests: [
 		{
 			dependencies: ["4BF77C1C3449598E"]
+			description: [
+				"Your victory was bittersweet, but you realize one fatal flaw."
+				"You could go for a bite to eat."
+				""
+				"Cook up something only a god of the multiverse would find a &l&adelicacy&r"
+				""
+				"Thank you for playing Cosmic Frontiers, This pack took so long- wait the pack isn't done, this is just a placeholder yada yada I still love you."
+			]
 			id: "56557720CAFDA087"
 			shape: "octagon"
 			size: 5.0d
+			subtitle: "One Final Meal"
 			tasks: [{
-				id: "2961ACC7D552FEB8"
-				item: "minecraft:barrier"
+				id: "4156A35ABFCA7E30"
+				item: "kubejs:cosmic_meatballs"
 				type: "item"
 			}]
 			x: 0.0d

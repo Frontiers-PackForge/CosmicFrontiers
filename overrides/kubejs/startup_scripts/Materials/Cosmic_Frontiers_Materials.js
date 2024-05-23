@@ -93,6 +93,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .toolStats(ToolProperty.Builder.of(6.0, 7.0, 768, 3).attackSpeed(0.1).enchantability(18).build())
         .flags(
+            GTMaterialFlags.NO_ORE_SMELTING,
             GTMaterialFlags.NO_SMELTING
         )
         // .element(GTElements.get('prism_tungstensteel'))
@@ -106,24 +107,27 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.NO_ORE_SMELTING
         )
         .element(GTElements.get('desh'))
         .iconSet(GTMaterialIconSet.getByName('starry'))
-    event.create('prismatic_tungstensteel')
-        .color(0x6f42cf)
+    event.create('virtue_meld')
+        .color(0xff8400)
         .ingot()
-        .element(GTElements.get('prism_tungstensteel'))
+        .fluid()
+        .element(GTElements.get('virtue'))
+        .cableProperties(GTValues.V[GTValues.IV], 4, 2, true)
         .iconSet(GTMaterialIconSet.SHINY)
         .flags(
-            GTMaterialFlags.NO_UNIFICATION,
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING
+
         )
     event.create('utherium')
         .color(0xc3434c)
@@ -137,7 +141,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING
         )
     event.create('luminescent_utherium')
         .color(0x6A40B8)
@@ -151,7 +156,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING
         )
     event.create('cosmolite')
         .color(0x4614a3)
@@ -178,37 +184,26 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
     event.create('astraline_corrosion_agent')
         .color(0xff8400)
-        .fluid()
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
     event.create('astraline_prismatic_solution')
         .color(0xff8400)
-        .fluid()
-    event.create('prisma')
-        .gem()
-        .color(0xcfcfcf)
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .iconSet(GTMaterialIconSet.getByName('prisma'))
-
     event.create('super_critical_steam')
         .color(0xffffff)
         .fluid()
-    event.create('virtue_meld')
-        .color(0xff8400)
-        .ingot()
-        .fluid()
-        .element(GTElements.get('virtue'))
-        .cableProperties(GTValues.V[GTValues.IV], 4, 2, true)
-        .iconSet(GTMaterialIconSet.SHINY)
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_SPRING,
-            GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.NO_SMELTING
 
-        )
-    //.setProperty(PropertyKey.BLAST, new $BlastProperty())
+    event.create('deeply_withered_nether_slag')
+        .color(0x1f0207)
+        .fluid()
+    event.create('grove_enriched_nether_slag')
+        .color(0xb3377d)
+        .fluid()
+    event.create('nether_star_distillate_slurry')
+        .color(0xa87692)
+        .fluid()
+    event.create('dull_nether_star')
+        .color(0x949494)
+        .dust()
 
 
     event.create('psi_superconductor_alpha')
@@ -231,6 +226,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.NO_SMELTING
         )
+
+    event.create('undergarden_smog')
+        .gas()
+        .color(0x614b09).iconSet(GTMaterialIconSet.DULL)
+    event.create('undergarden_sludge')
+        .fluid()
+        .color(0x3d2e02).iconSet(GTMaterialIconSet.DULL)
     GTMaterials.get('neptunium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.get('plutonium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.get('curium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)

@@ -9,7 +9,7 @@
 
 //   })
 // }
-let DONOTEXIST = ['sophisticatedstorage:basic_to_gold_tier_upgrade', 'sophisticatedstorage:basic_to_diamond_tier_upgrade', 'sophisticatedstorage:basic_to_netherite_tier_upgrade', 'sophisticatedstorage:iron_to_diamond_tier_upgrade', 'sophisticatedstorage:iron_to_netherite_tier_upgrade', 'sophisticatedstorage:gold_to_netherite_tier_upgrade','sophisticatedstorage:stack_upgrade_tier_3', 'sophisticatedstorage:stack_upgrade_tier_4', 'sophisticatedbackpacks:stack_upgrade_tier_1', 'sophisticatedbackpacks:stack_upgrade_tier_2', 'sophisticatedbackpacks:stack_upgrade_tier_3', 'sophisticatedbackpacks:stack_upgrade_tier_4']
+let DONOTEXIST = ['sophisticatedstorage:stack_upgrade_tier_5','sophisticatedstorage:basic_to_gold_tier_upgrade', 'sophisticatedstorage:basic_to_diamond_tier_upgrade', 'sophisticatedstorage:basic_to_netherite_tier_upgrade', 'sophisticatedstorage:iron_to_diamond_tier_upgrade', 'sophisticatedstorage:iron_to_netherite_tier_upgrade', 'sophisticatedstorage:gold_to_netherite_tier_upgrade','sophisticatedstorage:stack_upgrade_tier_3', 'sophisticatedstorage:stack_upgrade_tier_4', 'sophisticatedbackpacks:stack_upgrade_tier_1', 'sophisticatedbackpacks:stack_upgrade_tier_2', 'sophisticatedbackpacks:stack_upgrade_tier_3', 'sophisticatedbackpacks:stack_upgrade_tier_4','sophisticatedbackpacks:stack_upgrade_starter_tier','sophisticatedstorage:stack_upgrade_tier_1_plus']
 
 ServerEvents.tags('item', event => {
   event.add('forge:viewers/hidden_from_recipe', DONOTEXIST)
@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
     ],
     'key': {
       'D': {
-        'item': 'gtceu:diamond_exquisite_gem'
+        'item': 'gtceu:exquisite_diamond_gem'
       },
       'B': {
         'item': 'sophisticatedbackpacks:gold_backpack'
@@ -164,6 +164,81 @@ ServerEvents.recipes(event => {
     },
     'result': {
       'item': 'sophisticatedbackpacks:diamond_backpack' // Same case as the Registry name
+    }
+  })
+  event.custom({
+    "type": "sophisticatedbackpacks:smithing_backpack_upgrade",
+    "addition": {
+      "item": "minecraft:netherite_block"
+    },
+    "base": {
+      "item": "sophisticatedbackpacks:diamond_backpack"
+    },
+    "result": {
+      "item": "sophisticatedbackpacks:netherite_backpack"
+    },
+    "template": {
+      "item": "minecraft:netherite_upgrade_smithing_template"
+    }
+  })
+  event.custom({
+    "type": "sophisticatedstorage:storage_tier_upgrade_shapeless",
+    "conditions": [
+      {
+        "type": "sophisticatedcore:item_enabled",
+        "itemRegistryName": "sophisticatedstorage:netherite_chest"
+      }
+    ],
+    "ingredients": [
+      {
+        "item": "sophisticatedstorage:diamond_chest"
+      },
+      {
+        "item": "minecraft:netherite_block"
+      }
+    ],
+    "result": {
+      "item": "sophisticatedstorage:netherite_chest"
+    }
+  })
+  event.custom({
+    "type": "sophisticatedstorage:storage_tier_upgrade_shapeless",
+    "conditions": [
+      {
+        "type": "sophisticatedcore:item_enabled",
+        "itemRegistryName": "sophisticatedstorage:netherite_shulker_box"
+      }
+    ],
+    "ingredients": [
+      {
+        "item": "sophisticatedstorage:diamond_shulker_box"
+      },
+      {
+        "item": "minecraft:netherite_block"
+      }
+    ],
+    "result": {
+      "item": "sophisticatedstorage:netherite_shulker_box"
+    }
+  })
+  event.custom({
+    "type": "sophisticatedstorage:storage_tier_upgrade_shapeless",
+    "conditions": [
+      {
+        "type": "sophisticatedcore:item_enabled",
+        "itemRegistryName": "sophisticatedstorage:netherite_barrel"
+      }
+    ],
+    "ingredients": [
+      {
+        "item": "sophisticatedstorage:diamond_barrel"
+      },
+      {
+        "item": "minecraft:netherite_block"
+      }
+    ],
+    "result": {
+      "item": "sophisticatedstorage:netherite_barrel"
     }
   })
   /* METHODS & UTILS */
@@ -288,11 +363,11 @@ ServerEvents.recipes(event => {
 
   containerTierUpgrade('forge:rings/wrought_iron', 'gtceu:wrought_iron_plate', 'iron_barrel', 'barrel');
   containerTierUpgrade('forge:rings/rose_gold', 'gtceu:rose_gold_plate', 'gold_barrel', 'iron_barrel');
-  containerTierUpgrade('forge:plates/diamond', 'gtceu:diamond_exquisite_gem', 'diamond_barrel', 'gold_barrel');
+  containerTierUpgrade('forge:plates/diamond', 'gtceu:exquisite_diamond_gem', 'diamond_barrel', 'gold_barrel');
 
   containerTierUpgrade('forge:rings/wrought_iron', 'gtceu:wrought_iron_plate', 'iron_chest', 'chest');
   containerTierUpgrade('forge:rings/rose_gold', 'gtceu:rose_gold_plate', 'gold_chest', 'iron_chest');
-  containerTierUpgrade('forge:plates/diamond', 'gtceu:diamond_exquisite_gem', 'diamond_chest', 'gold_chest');
+  containerTierUpgrade('forge:plates/diamond', 'gtceu:exquisite_diamond_gem', 'diamond_chest', 'gold_chest');
 
 
   /* UPGRADES */
@@ -307,7 +382,7 @@ ServerEvents.recipes(event => {
   upgradeUpgrade('gtceu:wood_screw', 'gtceu:wood_plate', 'sophisticatedstorage:upgrade_base', 'sophisticatedstorage:basic_tier_upgrade');
   upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', 'sophisticatedstorage:basic_tier_upgrade', 'sophisticatedstorage:basic_to_iron_tier_upgrade');
   upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:rose_gold_plate', '#forge:tools/screwdrivers', 'sophisticatedstorage:iron_to_gold_tier_upgrade');
-  upgradeUpgrade('gtceu:diamond_exquisite_gem', 'gtceu:diamond_plate', '#forge:tools/files', 'sophisticatedstorage:gold_to_diamond_tier_upgrade');
+  upgradeUpgrade('gtceu:exquisite_diamond_gem', 'gtceu:diamond_plate', '#forge:tools/files', 'sophisticatedstorage:gold_to_diamond_tier_upgrade');
 
   upgradeStorage('minecraft:sticky_piston', 'pickup');
   upgradeStorage('#forge:string', 'filter');
@@ -332,7 +407,7 @@ ServerEvents.recipes(event => {
   upgradeUpgrade('gtceu:wood_screw', 'gtceu:wood_plate', `sophisticatedstorage:upgrade_base`, `sophisticatedstorage:stack_upgrade_tier_1`);
   upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', `sophisticatedstorage:stack_upgrade_tier_1`, `sophisticatedstorage:stack_upgrade_tier_2`);
   // upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:rose_gold_plate', `sophisticatedstorage:stack_upgrade_tier_2`, `sophisticatedstorage:stack_upgrade_tier_3`);
-  // upgradeUpgrade('gtceu:diamond_exquisite_gem', 'gtceu:diamond_plate', `sophisticatedstorage:stack_upgrade_tier_3`, `sophisticatedstorage:stack_upgrade_tier_4`);
+  // upgradeUpgrade('gtceu:exquisite_diamond_gem', 'gtceu:diamond_plate', `sophisticatedstorage:stack_upgrade_tier_3`, `sophisticatedstorage:stack_upgrade_tier_4`);
 
 
 
@@ -367,6 +442,6 @@ ServerEvents.recipes(event => {
   upgradeUpgrade('gtceu:wood_screw', 'cosmiccore:waxed_leather', `sophisticatedbackpacks:upgrade_base`, `sophisticatedbackpacks:stack_upgrade_tier_1`);
   // upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', `sophisticatedbackpacks:stack_upgrade_tier_1`, `sophisticatedbackpacks:stack_upgrade_tier_2`);
   // upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:rose_gold_plate', `sophisticatedbackpacks:stack_upgrade_tier_2`, `sophisticatedbackpacks:stack_upgrade_tier_3`);
-  // upgradeUpgrade('gtceu:diamond_exquisite_gem', 'gtceu:diamond_plate', `sophisticatedbackpacks:stack_upgrade_tier_3`, `sophisticatedbackpacks:stack_upgrade_tier_4`);
+  // upgradeUpgrade('gtceu:exquisite_diamond_gem', 'gtceu:diamond_plate', `sophisticatedbackpacks:stack_upgrade_tier_3`, `sophisticatedbackpacks:stack_upgrade_tier_4`);
 
 })

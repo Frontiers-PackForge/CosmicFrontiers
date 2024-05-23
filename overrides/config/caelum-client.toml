@@ -1,0 +1,47 @@
+
+[moon]
+	#How long does it take for the Moon to complete its orbit in ticks.
+	#Range: 1 ~ 9223372036854775807
+	orbit_period = 708734
+
+[earth]
+	#How long does it take for the Earth to complete its orbit in ticks.
+	#Range: 0 ~ 9223372036854775807
+	orbit_period = 8765812
+
+[stars]
+	#What stars to use
+	#Allowed Values: VANILLA, CUSTOM, NONE
+	stars_type = "CUSTOM"
+	#Stars with magnitude above this value won't be rendered.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	max_magnitude = 5.0
+	#Controls the brightness/opacity of the colors.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	star_brightness = 2.0
+	#Should stars have colors?
+	star_colors = true
+	#Controls the size of the (custom) stars
+	#Range: 0.0 ~ 1.7976931348623157E308
+	star_size = 1.0
+
+[latitude]
+	#What should be affected by the camera latitude (the z coordinate)
+	#Allowed Values: NONE, STARS_ONLY, ALL
+	latitude_effects = "ALL"
+	#Should the northernmost/southernmost points be defined by the world border or by constants here in the config
+	#Allowed Values: CONSTANT, BORDER
+	world_height_type = "BORDER"
+	#The min Z - basically what Z is considered to be the north pole
+	#Range: -9223372036854775808 ~ 9223372036854775807
+	min_z = -300000000
+	#The max Z - basically what Z is considered to be the south pole
+	#Range: -9223372036854775808 ~ 9223372036854775807
+	max_z = 300000000
+	#Shifts the min Z. The idea is that the day-night cycle breaks near poles, so this can help by moving the poles out of the map
+	#Range: 0 ~ 9223372036854775807
+	min_z_margin = 0
+	#Shifts the max Z. The idea is that the day-night cycle breaks near poles, so this can help by moving the poles out of the map
+	#Range: 0 ~ 9223372036854775807
+	max_z_margin = 0
+

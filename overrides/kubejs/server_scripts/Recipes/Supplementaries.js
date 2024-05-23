@@ -1,5 +1,6 @@
 //Item Recipes, gregified
 ServerEvents.recipes(event => {
+    event.remove({id:'supplementaries:bed_from_feather_block'})
     event.remove({output:'supplementaries:bomb'})
     event.shaped('supplementaries:bomb', [
         ' PS',
@@ -628,11 +629,5 @@ ServerEvents.recipes(event => {
     signpost('3x supplementaries:undergarden/sign_post_smogstem', 'undergarden:smogstem_planks');
     signpost('3x supplementaries:undergarden/sign_post_wigglewood', 'undergarden:wigglewood_planks');
     signpost('3x supplementaries:undergarden/sign_post_grongle', 'undergarden:grongle_planks');
-    signpost('3x supplementaries:aether_redux/sign_post_fieldsproot', 'aether_redux:fieldsproot_planks');
-    signpost('3x supplementaries:aether_redux/sign_post_blightwillow', 'aether_redux:blightwillow_planks');
-    signpost('3x supplementaries:aether_redux/sign_post_cloudcap', 'aether_redux:cloudcap_planks');
-    signpost('3x supplementaries:aether_redux/sign_post_jellyshroom', 'aether_redux:jellyshroom_planks');
-    signpost('3x supplementaries:aether_redux/sign_post_crystal', 'aether_redux:crystal_planks');
-    signpost('3x supplementaries:aether_redux/sign_post_glacia', 'aether_redux:glacia_planks');
 
 })

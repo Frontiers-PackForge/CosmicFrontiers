@@ -1,3 +1,6 @@
+const $SoulCap = Java.loadClass('com.ghostipedia.cosmiccore.api.capability.recipe.SoulRecipeCapability')
+const $IO = Java.loadClass('com.gregtechceu.gtceu.api.capability.recipe.IO')
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('flora_nurturer')
@@ -100,6 +103,16 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.TURBINE)
 
+    event.create('soul_forge')
+        .category('frontiers')
+        .setEUIO('in')
+        .setMaxIOSize(2, 9, 3, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+        .setMaxSize($IO.IN, $SoulCap.CAP, 1)
+        .setMaxSize($IO.OUT, $SoulCap.CAP, 1)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.TURBINE)
+
     event.create('industrial_stoneworks')
         .category('frontiers')
         .setEUIO('in')
@@ -114,4 +127,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.TURBINE)
+
+    GTRecipeTypes.MIXER_RECIPES.setMaxIOSize(6, 1, 3, 1)
+
 })

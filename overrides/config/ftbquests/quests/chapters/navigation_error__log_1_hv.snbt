@@ -11,11 +11,16 @@
 	quests: [
 		{
 			description: [
-				"This chapter will be developed between 0.3.1 -> 0.4.0 (MV Major Update to HV Major update)"
+				"Welcome to HV! General Chem is harder here, however you now can unlock AE2 Autocrafting"
 				""
-				"There's some work you can already start doing in HV but I wouldn't go too far ahead."
+				"blah blah placeholder quest"
+				"blah blah I'll do more of the QB descs in UV"
 				""
-				"As your processing lines may risk breaking within new patches."
+				"blah blah, I am really lazy"
+				""
+				"blah blah, I don't wanna write a whole chapter just to refactor 20-50%+ of it later"
+				""
+				"blah blah, Ghostipedia is full of soup."
 			]
 			id: "1E72D62913EEB4EE"
 			shape: "hexagon"

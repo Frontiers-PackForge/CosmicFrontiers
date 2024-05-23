@@ -33,7 +33,11 @@ WorldgenEvents.remove(event => {
       'undergarden:depthrock_utherium_ore',
       'undergarden:shiverstone_utherium_ore',
       'undergarden:depthrock_regalium_ore',
-      'undergarden:shiverstone_regalium_ore'
+      'undergarden:shiverstone_regalium_ore',
+      "ad_astra:mars_diamond_ore",
+      "ad_astra:mars_ice_shard_ore",
+      "ad_astra:mars_iron_ore",
+      "ad_astra:mars_ostrum_ore"
     ]
   })
   event.removeFeatureById('raw_generation', [
@@ -42,7 +46,11 @@ WorldgenEvents.remove(event => {
     'ad_astra:deepslate_desh_ore',
     'ad_astra:moon_desh_ore',
     'ad_astra:moon_cheese_ore',
-    'ad_astra:moon_ice_shard_ore'
+    'ad_astra:moon_ice_shard_ore',
+    "ad_astra:mars_diamond_ore",
+    "ad_astra:mars_ice_shard_ore",
+    "ad_astra:mars_iron_ore",
+    "ad_astra:mars_ostrum_ore"
   ])
   event.removeFeatureById('underground_ores', [
     //FOR SOME REASON ADASTRA GENERATES ORES AT THIS GENERATION STEP      
@@ -50,7 +58,6 @@ WorldgenEvents.remove(event => {
     'aether:gravitite_ore_buried',
     'aether:ambrosium_ore',
     'aether:zanite_ore',
-    'aether_redux:veridium_ore',
     'deep_aether:skyjade_ore',
     'undergarden:depthrock_coal_ore',
     'undergarden:shiverstone_coal_ore',
@@ -70,10 +77,11 @@ WorldgenEvents.remove(event => {
     'ad_astra:deepslate_desh_ore',
     'ad_astra:moon_desh_ore',
     'ad_astra:moon_cheese_ore',
-    'ad_astra:moon_ice_shard_ore'
+    'ad_astra:moon_ice_shard_ore',
+    "ad_astra:mars_diamond_ore",
+    "ad_astra:mars_ice_shard_ore",
+    "ad_astra:mars_iron_ore",
+    "ad_astra:mars_ostrum_ore"
   ])
 })
-// WorldgenEvents.remove(event => {
-//   event.printFeatures('', 'aether_redux:the_blight')
-//   event.printFeatures('', 'deep_aether:aerlavender_fields')
-// })
+

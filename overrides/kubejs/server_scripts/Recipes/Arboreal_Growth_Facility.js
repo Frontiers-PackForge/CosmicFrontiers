@@ -273,11 +273,7 @@ ServerEvents.recipes(event => {
     'deep_aether:cruderoot',
     'deep_aether:conberry',
     'deep_aether:sunroot',
-    'aether:skyroot',
-    'aether_redux:blightwillow',
-    'aether_redux:glacia',
-    'aether_redux:crystal',
-    'aether_redux:fieldsproot',
+    'aether:skyroot'
    ]
 
    TreesAE.forEach(tree => {

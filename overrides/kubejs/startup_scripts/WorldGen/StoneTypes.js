@@ -30,10 +30,10 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', e => {
     // createStoneTypeOre('aether_redux:vitrium')
 
     createStoneTypeOre('aether:holystone', { blockState: () => UtilsJS.parseBlockState("aether:holystone[double_drops=true]")})
-    createStoneTypeOre('aether_redux:frosted_holystone', { blockState: () => UtilsJS.parseBlockState("aether_redux:frosted_holystone[double_drops=true]")})
-    createStoneTypeOre('aether_redux:blightmoss_holystone', { blockState: () => UtilsJS.parseBlockState("aether_redux:blightmoss_holystone[double_drops=true]")})
+    // createStoneTypeOre('aether_redux:frosted_holystone', { blockState: () => UtilsJS.parseBlockState("aether_redux:frosted_holystone[double_drops=true]")})
+    // createStoneTypeOre('aether_redux:blightmoss_holystone', { blockState: () => UtilsJS.parseBlockState("aether_redux:blightmoss_holystone[double_drops=true]")})
     createStoneTypeOre('aether:mossy_holystone', { blockState: () => UtilsJS.parseBlockState("aether:mossy_holystone[double_drops=true]")})
-    createStoneTypeOre('aether_redux:vitrium', { blockState: () => UtilsJS.parseBlockState("aether_redux:vitrium[double_drops=true]")})
+    // createStoneTypeOre('aether_redux:vitrium', { blockState: () => UtilsJS.parseBlockState("aether_redux:vitrium[double_drops=true]")})
     createStoneTypeOre('aether:icestone')
 
     createStoneTypeOre('ad_astra:moon_stone')

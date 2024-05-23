@@ -13,6 +13,9 @@ StartupEvents.registry('item', event => {
     event.create('americium_engine')
     event.create('shredded_magebloom')
     event.create('washed_magebloom')
+    event.create('t2_rocket_plating')
+    event.create('welded_rocket_plating_mk2').displayName('Welded Rocket Plating Mk.2')
+    event.create('chromatically_doped_nether_star_boule').glow(true).displayName('Chromatically Doped Nether star Boule')
     //Nano Lithography 
     event.create('mana_deposited_wafer').displayName('Mana Deposited Wafer')
     event.create('nano_cpu_mask').displayName('Nano CPU Mask')
@@ -21,4 +24,5 @@ StartupEvents.registry('item', event => {
     event.create('thundering_mana_deposited_wafer').displayName('Thundering Mana Deposited Wafer')
     event.create('quantum_cpu_mask').displayName('Quantum CPU Mask')
     event.create('prepared_quantum_cpu_wafer').displayName('Prepared Quantum CPU Wafer')
+    event.create('cosmic_meatballs').displayName('Cosmic Meatballs')
 })

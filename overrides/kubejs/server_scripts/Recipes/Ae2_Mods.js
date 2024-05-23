@@ -131,16 +131,19 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'ae2:quartz_glass' })
   event.remove({ output: 'ae2:interface' })
   event.remove({ id: 'ae2:network/parts/panels_semi_dark_monitor' })
+  event.remove({ id: 'ae2:network/parts/storage_bus' })
   // event.remove({ output:  })
   // event.remove({ output:  })
-  event.recipes.gtceu.assembly_line('gtceu:assline/create_cell_recipe')
+  event.recipes.gtceu.assembly_line('assline_creative_cell_recipe')
     .itemInputs('64x megacells:mega_energy_cell', '8x #gtceu:circuits/luv', '16x gtceu:superconducting_coil', '64x ae2:fluix_smart_dense_cable', '64x ae2:fluix_smart_dense_cable', '32x gtceu:neutron_reflector')
     .itemOutputs('ae2:creative_energy_cell')
     .inputFluids(
       Fluid.of('gtceu:uu_matter', 666),
       Fluid.of('gtceu:titanium_tungsten_carbide', 4608),
       Fluid.of('gtceu:soldering_alloy', 8192),
+
     )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('megacells:mega_energy_cell')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
     .duration(500)
     .EUt(GTValues.VA[GTValues.LuV])
 
@@ -213,7 +216,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.HV]);
   //Pattern Crafting Terminal
   event.recipes.gtceu.assembler('ae2:pattern_crafting_terminal')
-    .itemInputs(['32x gtceu:fine_red_alloy_wire', '32x gtceu:fine_mana_steel_wire', 'ae2:terminal', 'botania:auto_crafting_halo', 'gtceu:hv_emitter'])
+    .itemInputs(['32x gtceu:fine_red_alloy_wire', '32x gtceu:fine_manasteel_wire', 'ae2:terminal', 'botania:auto_crafting_halo', 'gtceu:hv_emitter'])
     .itemOutputs('ae2:pattern_encoding_terminal')
     .duration(160)
     .EUt(GTValues.VA[GTValues.HV]);
@@ -238,13 +241,13 @@ ServerEvents.recipes(event => {
   //Pattern Crafting Terminal
   //Pattern Terminal
   event.recipes.gtceu.assembler('ae2:data_terminal')
-    .itemInputs(['32x gtceu:electrum_fine_wire', 'ae2:blank_pattern', 'ae2:terminal', 'gtceu:computer_monitor_cover'])
+    .itemInputs(['32x gtceu:fine_electrum_wire', 'ae2:blank_pattern', 'ae2:terminal', 'gtceu:computer_monitor_cover'])
     .itemOutputs('ae2:pattern_access_terminal')
     .duration(320)
     .EUt(GTValues.VA[GTValues.HV]);
   //Adv Pattern Terminal
   event.recipes.gtceu.assembler('ae2:extended_data_terminal')
-    .itemInputs(['32x gtceu:electrum_fine_wire', 'ae2:pattern_access_terminal', 'gtceu:data_stick'])
+    .itemInputs(['32x gtceu:fine_electrum_wire', 'ae2:pattern_access_terminal', 'gtceu:data_stick'])
     .itemOutputs('expatternprovider:ex_pattern_access_part')
     .duration(320)
     .EUt(GTValues.VA[GTValues.HV]);
@@ -264,7 +267,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LV]);
   //Controller
   event.recipes.gtceu.assembler('ae2:controller_assembly')
-    .itemInputs(['8x gtceu:mana_steel_hex_wire', '4x #gtceu:circuits/mv', 'ae2:energy_acceptor'])
+    .itemInputs(['8x gtceu:manasteel_hex_wire', '4x #gtceu:circuits/mv', 'ae2:energy_acceptor'])
     .itemOutputs('ae2:controller')
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -282,7 +285,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LV]);
   //Illuminated Panel
   event.recipes.gtceu.assembler('ae2:monitor_assembly')
-    .itemInputs(['8x gtceu:annealed_copper_fine_wire', '3x gtceu:glass_plate', 'gtceu:computer_monitor_cover', 'gtceu:steel_plate'])
+    .itemInputs(['8x gtceu:fine_annealed_copper_wire', '3x gtceu:glass_plate', 'gtceu:computer_monitor_cover', 'gtceu:steel_plate'])
     .itemOutputs('ae2:semi_dark_monitor')
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -300,13 +303,13 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LV]);
   //Terminal Basic
   event.recipes.gtceu.assembler('ae2:terminal_assembly')
-    .itemInputs(['32x gtceu:annealed_copper_fine_wire', '2x ae2:formation_core', '2x ae2:annihilation_core', 'gtceu:terminal', 'ae2:semi_dark_monitor'])
+    .itemInputs(['32x gtceu:fine_annealed_copper_wire', '2x ae2:formation_core', '2x ae2:annihilation_core', 'gtceu:terminal', 'ae2:semi_dark_monitor'])
     .itemOutputs('ae2:terminal')
     .duration(320)
     .EUt(GTValues.VA[GTValues.LV]);
   //Terminal Crafting
   event.recipes.gtceu.assembler('ae2:terminal_crafting_assembly')
-    .itemInputs(['32x gtceu:electrum_fine_wire', 'craftingstation:crafting_station', 'ae2:terminal'])
+    .itemInputs(['32x gtceu:fine_electrum_wire', 'craftingstation:crafting_station', 'ae2:terminal'])
     .itemOutputs('ae2:crafting_terminal')
     .duration(320)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -337,7 +340,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.HV]);
   //Pattern Provide 4x Craft
   event.recipes.gtceu.assembler('ae2:pattern_assembly_t2')
-    .itemInputs(['4x gtceu:prismatic_tungstensteel_plate', '2x #gtceu:circuits/iv', '2x gtceu:iv_robot_arm', 'gtceu:iv_machine_hull'])
+    .itemInputs(['4x cosmiccore:prismatic_tungstensteel_plate', '2x #gtceu:circuits/iv', '2x gtceu:iv_robot_arm', 'gtceu:iv_machine_hull'])
     .itemOutputs('4x ae2:pattern_provider')
     .duration(320)
     .EUt(GTValues.VA[GTValues.IV]);
@@ -349,25 +352,25 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LuV]);
   event.recipes.gtceu.assembler('ae2:item_cell_housing')
     .itemInputs(['3x gtceu:steel_plate', '2x gtceu:tempered_glass', '2x gtceu:red_alloy_single_cable', 'ae2:formation_core', 'ae2:annihilation_core'])
-    .inputFluids(`redstone 144`)
+    .inputFluids(`gtceu:redstone 144`)
     .itemOutputs('ae2:item_cell_housing')
     .duration(80)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.assembler('ae2:fluid_cell_housing')
     .itemInputs(['3x gtceu:annealed_copper_plate', '2x gtceu:tempered_glass', '2x gtceu:red_alloy_single_cable', 'ae2:formation_core', 'ae2:annihilation_core'])
-    .inputFluids(`redstone 144`)
+    .inputFluids(`gtceu:redstone 144`)
     .itemOutputs('ae2:fluid_cell_housing')
     .duration(80)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.assembler('appbot:mana_cell_housing')
-    .itemInputs(['3x gtceu:mana_steel_plate', '2x gtceu:tempered_glass', '2x gtceu:red_alloy_single_cable', 'ae2:formation_core', 'ae2:annihilation_core'])
-    .inputFluids(`redstone 144`)
+    .itemInputs(['3x gtceu:manasteel_plate', '2x gtceu:tempered_glass', '2x gtceu:red_alloy_single_cable', 'ae2:formation_core', 'ae2:annihilation_core'])
+    .inputFluids(`gtceu:redstone 144`)
     .itemOutputs('appbot:mana_cell_housing')
     .duration(80)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.assembler('arseng:source_cell_housing')
     .itemInputs(['3x gtceu:rose_gold_plate', '2x gtceu:tempered_glass', '2x gtceu:red_alloy_single_cable', 'ae2:formation_core', 'ae2:annihilation_core'])
-    .inputFluids(`redstone 144`)
+    .inputFluids(`gtceu:redstone 144`)
     .itemOutputs('arseng:source_cell_housing')
     .duration(80)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -443,7 +446,7 @@ ServerEvents.recipes(event => {
   let tierFineWire = [
     'annealed_copper',
     'electrum',
-    'mana_steel',
+    'manasteel',
     'aluminium',
     'tungsten_steel',
     'yttrium_barium_cuprate',
@@ -487,7 +490,7 @@ ServerEvents.recipes(event => {
     let euType = euScale[index]
 
     event.recipes.gtceu.assembler(`ae2:${tier}_component_assembly`)
-      .itemInputs(`32x gtceu:${fineWireMaterial}_fine_wire`, `4x #gtceu:circuits/${tier}`, `4x gtceu:${plateType}_plate`, 'ae2:formation_core', 'ae2:annihilation_core')
+      .itemInputs(`32x gtceu:fine_${fineWireMaterial}_wire`, `4x #gtceu:circuits/${tier}`, `4x gtceu:${plateType}_plate`, 'ae2:formation_core', 'ae2:annihilation_core')
       .inputFluids('gtceu:redstone 288')
       .itemOutputs(`${componentType}`)
       .duration(100)

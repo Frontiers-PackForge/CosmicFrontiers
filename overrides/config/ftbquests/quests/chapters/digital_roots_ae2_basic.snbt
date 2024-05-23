@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["23110501EBFA6195"]
+			dependencies: ["3E108A150B09D6D7"]
 			id: "30E09C21E7032519"
 			shape: "hexagon"
 			size: 2.0d
@@ -108,19 +108,6 @@
 			title: "Oi! Read this!"
 			x: -2.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["30E09C21E7032519"]
-			description: ["The Tempering Autoclave is used to work basic types of quartz into Certus Quartz. Which is more favorable for AE2 hardware"]
-			id: "3F5949C80C9BAA79"
-			subtitle: "Specalized Machinery [NYI]"
-			tasks: [{
-				id: "69FD5CD285EB807A"
-				item: "gtceu:lv_tempering_autoclave"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -1.0d
 		}
 		{
 			dependencies: ["30E09C21E7032519"]
