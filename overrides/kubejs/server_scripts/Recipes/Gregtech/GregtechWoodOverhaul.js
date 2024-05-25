@@ -79,89 +79,122 @@ ServerEvents.recipes(event => {
         } else if (index === 25) {
             modID = 'architects_palette'
         }
-
-        event.recipes.gtceu.cutter(`${modID}:${woodType}_cutting`)
-            .itemInputs(`${modID}:${woodType}_log`)
-            .itemOutputs([`6x ${modID}:${woodType}_planks`, '2x gtceu:wood_dust'])
-            .duration(200)
-            .EUt(7);
-        event.recipes.gtceu.cutter(`${modID}:stripped_${woodType}_cutting`)
-            .itemInputs(`${modID}:stripped_${woodType}_log`)
-            .itemOutputs([`6x ${modID}:${woodType}_planks`, '2x gtceu:wood_dust'])
-            .duration(200)
-            .EUt(7);
+        if (Item.exists(`${modID}:${woodType}_log`)) {
+            event.recipes.gtceu.cutter(`${modID}:${woodType}_cutting`)
+                .itemInputs(`${modID}:${woodType}_log`)
+                .itemOutputs([`6x ${modID}:${woodType}_planks`, '2x gtceu:wood_dust'])
+                .duration(200)
+                .EUt(7);
+        }
+        if (Item.exists(`${modID}:stripped_${woodType}_log`)) {
+            event.recipes.gtceu.cutter(`${modID}:stripped_${woodType}_cutting`)
+                .itemInputs(`${modID}:stripped_${woodType}_log`)
+                .itemOutputs([`6x ${modID}:${woodType}_planks`, '2x gtceu:wood_dust'])
+                .duration(200)
+                .EUt(7);
+        }
+        if (Item.exists(`${modID}:${woodType}_wood`)) {
+            event.recipes.gtceu.cutter(`${modID}:${woodType}_wood_cutting`)
+                .itemInputs(`${modID}:${woodType}_wood`)
+                .itemOutputs([`6x ${modID}:${woodType}_planks`, '2x gtceu:wood_dust'])
+                .duration(200)
+                .EUt(7);
+        }
+        if (Item.exists(`${modID}:stripped_${woodType}_wood`)) {
+            event.recipes.gtceu.cutter(`${modID}:stripped_${woodType}_wood_cutting`)
+                .itemInputs(`${modID}:stripped_${woodType}_wood`)
+                .itemOutputs([`6x ${modID}:${woodType}_planks`, '2x gtceu:wood_dust'])
+                .duration(200)
+                .EUt(7);
+        }
         //Log -> Plank
-        event.shaped(`4x ${modID}:${woodType}_planks`, [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-            {
-                T: '#forge:tools/saws',
-                P: `${modID}:${woodType}_log`
-            })
-        event.shaped(`2x ${modID}:${woodType}_planks`, [
-            '   ',
-            '   ',
-            ' P '
-        ],
-            {
-                P: `${modID}:${woodType}_log`
-            })
+        if (Item.exists(`${modID}:${woodType}_log`)) {
+            event.shaped(`4x ${modID}:${woodType}_planks`, [
+                '   ',
+                ' T ',
+                ' P '
+            ],
+                {
+                    T: '#forge:tools/saws',
+                    P: `${modID}:${woodType}_log`
+                })
+        }
+        if (Item.exists(`${modID}:${woodType}_log`)) {
+            event.shaped(`2x ${modID}:${woodType}_planks`, [
+                '   ',
+                '   ',
+                ' P '
+            ],
+                {
+                    P: `${modID}:${woodType}_log`
+                })
+        }
         //Stripped log -> planks
-        event.shaped(`4x ${modID}:${woodType}_planks`, [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-            {
-                T: '#forge:tools/saws',
-                P: `${modID}:stripped_${woodType}_log`
-            })
-        event.shaped(`2x ${modID}:${woodType}_planks`, [
-            '   ',
-            '   ',
-            ' P '
-        ],
-            {
-                P: `${modID}:stripped_${woodType}_log`
-            })
+        if (Item.exists(`${modID}:stripped_${woodType}_log`)) {
+            event.shaped(`4x ${modID}:${woodType}_planks`, [
+                '   ',
+                ' T ',
+                ' P '
+            ],
+                {
+                    T: '#forge:tools/saws',
+                    P: `${modID}:stripped_${woodType}_log`
+                })
+        }
+        if (Item.exists(`${modID}:stripped_${woodType}_log`)) {
+            event.shaped(`2x ${modID}:${woodType}_planks`, [
+                '   ',
+                '   ',
+                ' P '
+            ],
+                {
+                    P: `${modID}:stripped_${woodType}_log`
+                })
+        }
         //Wood -> Planks
-        event.shaped(`4x ${modID}:${woodType}_planks`, [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-            {
-                T: '#forge:tools/saws',
-                P: `${modID}:${woodType}_wood`
-            })
-        event.shaped(`2x ${modID}:${woodType}_planks`, [
-            '   ',
-            '   ',
-            ' P '
-        ],
-            {
-                P: `${modID}:${woodType}_wood`
-            })
+        if (Item.exists(`${modID}:${woodType}_wood`)) {
+            event.shaped(`4x ${modID}:${woodType}_planks`, [
+                '   ',
+                ' T ',
+                ' P '
+            ],
+                {
+                    T: '#forge:tools/saws',
+                    P: `${modID}:${woodType}_wood`
+                })
+        }
+        if (Item.exists(`${modID}:${woodType}_wood`)) {
+            event.shaped(`2x ${modID}:${woodType}_planks`, [
+                '   ',
+                '   ',
+                ' P '
+            ],
+                {
+                    P: `${modID}:${woodType}_wood`
+                })
+        }
         //Stripped Wood -> Planks
-        event.shaped(`4x ${modID}:${woodType}_planks`, [
-            '   ',
-            ' T ',
-            ' P '
-        ],
-            {
-                T: '#forge:tools/saws',
-                P: `${modID}:stripped_${woodType}_wood`
-            })
-        event.shaped(`2x ${modID}:${woodType}_planks`, [
-            '   ',
-            '   ',
-            ' P '
-        ],
-            {
-                P: `${modID}:stripped_${woodType}_wood`
-            })
+        if (Item.exists(`${modID}:stripped_${woodType}_wood`)) {
+            event.shaped(`4x ${modID}:${woodType}_planks`, [
+                '   ',
+                ' T ',
+                ' P '
+            ],
+                {
+                    T: '#forge:tools/saws',
+                    P: `${modID}:stripped_${woodType}_wood`
+                })
+        }
+        if (Item.exists(`${modID}:stripped_${woodType}_wood`)) {
+            event.shaped(`2x ${modID}:${woodType}_planks`, [
+                '   ',
+                '   ',
+                ' P '
+            ],
+                {
+                    P: `${modID}:stripped_${woodType}_wood`
+                })
+        }
         //Door
         if (Item.exists(`${modID}:${woodType}_door`)) {
             event.shaped(`2x ${modID}:${woodType}_door`, [

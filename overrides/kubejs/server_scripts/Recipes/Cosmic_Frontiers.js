@@ -53,6 +53,14 @@ ServerEvents.recipes(event => {
               W: 'cosmiccore:waxed_leather',
               S: 'minecraft:stick'
        })
+       event.shaped('nether_remastered:seal_of_the_underworld_item', [
+              'SWS',
+              'WSW',
+              'SWS',
+       ], {
+              S: 'minecraft:echo_shard',
+              W: 'kubejs:seal_shards'
+       })
        event.remove({ output: 'architects_palette:charcoal_block' })
        event.shaped('architects_palette:charcoal_block', [
               'CC',
@@ -60,6 +68,21 @@ ServerEvents.recipes(event => {
        ], {
               C: 'minecraft:charcoal'
        })
+       event.recipes.gtceu.forge_hammer('shatter_the_seal')
+              .itemInputs('nether_remastered:seal_of_the_underworld_item')
+              .itemOutputs('8x kubejs:seal_shards')
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV]);
+       event.recipes.gtceu.macerator('echo_shard_schizm')
+              .itemInputs('minecraft:sculk_catalyst')
+              .chancedOutput('minecraft:echo_shard', 2500, 500)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV]);
+       event.recipes.gtceu.macerator('echo_shard_schizm_worse')
+              .itemInputs('minecraft:sculk')
+              .chancedOutput('minecraft:echo_shard', 250, 500)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.nether_catalyzer('cosmiccore:blackstone_pustule_growth')
               .itemInputs('biomesoplenty:blackstone_bulb')
               .itemOutputs('cosmiccore:blackstone_pustule')

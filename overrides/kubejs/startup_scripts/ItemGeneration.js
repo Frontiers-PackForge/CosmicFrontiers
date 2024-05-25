@@ -24,5 +24,6 @@ StartupEvents.registry('item', event => {
     event.create('thundering_mana_deposited_wafer').displayName('Thundering Mana Deposited Wafer')
     event.create('quantum_cpu_mask').displayName('Quantum CPU Mask')
     event.create('prepared_quantum_cpu_wafer').displayName('Prepared Quantum CPU Wafer')
+    event.create('seal_shards').displayName('Shards of the Underworld')
     event.create('cosmic_meatballs').displayName('Cosmic Meatballs')
 })

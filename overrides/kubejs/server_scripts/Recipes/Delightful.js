@@ -22,6 +22,7 @@ yeet('ends_delight:end_stove');
 ServerEvents.tags('item', event => {
     event.add('nethersdelight:tools/hunting_tools', /gtceu:(.*)knife$/)
     event.add('occultism:tools/knives', /gtceu:(.*)knife$/)
+    event.add('farmersdelight:tools/knives', /gtceu:(.*)knife$/)
     event.add('forge:doughs', ['create:dough', 'delightful:nut_dough', 'farmersdelight:wheat_dough', 'festive_delight:gingerbread_dough', 'vintagedelight:oat_dough'])
 })
 

@@ -123,7 +123,7 @@ worldgen:
 
     # Distance between bedrock ore veins in chunks, if enabled.
     # Default: 16
-    bedrockOreDistance: 16
+    bedrockOreDistance: 4
 
     # Make bedrock ore/fluid veins infinite?
     # Default: false
@@ -159,10 +159,18 @@ machines:
   # Default: 100
   energyUsageMultiplier: 100
 
+  # Energy use multiplier for prospectors.
+  # Default: 100
+  prospectorEnergyUseMultiplier: 100
+
   # Whether machines or boilers damage the terrain when they explode.
   # Note machines and boilers always explode when overloaded with power or met with special conditions, regardless of this config.
   # Default: true
   doesExplosionDamagesTerrain: true
+
+  # Enables Safe Active Transformers, removing their ability to explode if unformed while transmitting/receiving power.
+  # Default: false
+  harmlessActiveTransformers: false
 
   # Divisor for Recipe Duration per Overclock.
   # Default: 2.0

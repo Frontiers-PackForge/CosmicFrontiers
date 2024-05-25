@@ -176,8 +176,12 @@ ItemEvents.tooltip(event => {
       text.add(1, Text.of('The power of the Overseers hinders your mind.').red().italic())
       text.add(2, Text.of('Mod NYI - Expect integration in future Updates.').white().bold())
     })
-    event.addAdvanced('solonion:golden_lunchbox', (item, advanced, text) => {
-      text.add(1, Text.of('Remove food from your lunchbox before upgrading').red())
+    let quarktech = ['cosmiccore:space_advanced_quarktech_chestplate','gtceu:quarktech_leggings','gtceu:quarktech_boots','gtceu:quarktech_helmet','gtceu:quarktech_chestplate','gtceu:advanced_quarktech_chestplate','cosmiccore:space_quarktech_chestplate']
+    event.addAdvanced(quarktech, (item, advanced, text) => {
+      text.add(1, Text.of('Adaptive Insulation').green())
+    })
+    event.addAdvanced('nether_remastered:seal_of_the_underworld_item', (item, advanced, text) => {
+      text.add(1, Text.of('Acquired from the Trial of the Underworld or forged from the shards of your victories').gold())
     })
     
   })
