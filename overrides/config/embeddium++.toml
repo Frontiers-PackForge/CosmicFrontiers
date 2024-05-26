@@ -43,7 +43,7 @@
 			[embeddiumplus.performance.distanceCulling.entities]
 				#Toggles distance culling for entities, doesn't affect monsters culling
 				#Check the options below
-				enable = true
+				enable = false
 				#List of all Entities to be ignored by distance culling
 				#Uses ResourceLocation to identify it
 				#Example 1: "minecraft:bat" - Ignores bats only

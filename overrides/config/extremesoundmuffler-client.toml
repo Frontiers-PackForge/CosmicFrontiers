@@ -22,11 +22,11 @@
 	#Coordinates for the Muffler button in the player inventory.
 	# You can change this in game by holding the RMB over the button and draging it around
 	#Range: > -2147483648
-	invButtonX = 75
+	invButtonX = 307
 	#Coordinates for the Muffler button in the player inventory. 
 	#You can change this in game by holding the RMB over the button and draging it around
 	#Range: > -2147483648
-	invButtonY = 7
+	invButtonY = 101
 	#Disable the Muffle button in the creative player inventory?
 	disableCreativeInventoryButton = false
 	#Coordinates for the Muffler button in the creative player inventory.
