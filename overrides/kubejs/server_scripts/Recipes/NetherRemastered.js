@@ -23,15 +23,5 @@ ServerEvents.recipes(event => {
     .itemInputs('minecraft:heart_of_the_sea')
     .itemOutputs('nether_remastered:seal_piece_4')
     .duration(800)
-    .EUt(8);  
-    event.recipes.gtceu.macerator('gtceu:nether_essence') 
-    .itemInputs('minecraft:sculk')
-    .itemOutputs('nether_remastered:nether_essence')
-    .duration(800)
-    .EUt(8);  
-
-
-
-
-
+    .EUt(8);
 })

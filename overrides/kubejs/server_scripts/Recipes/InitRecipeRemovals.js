@@ -3,10 +3,11 @@
 //I opted for a seperate file just for this
 
 ServerEvents.recipes(e => {
-    e.remove({output: 'minecraft:iron_pickaxe'})
-    e.remove({output: 'minecraft:iron_shovel'})
-    e.remove({output: 'minecraft:iron_sword'})
-    e.remove({output: 'minecraft:iron_axe'})
+    // e.remove({output: 'minecraft:iron_pickaxe'})
+    // e.remove({output: 'minecraft:iron_shovel'})
+    // e.remove({output: 'minecraft:iron_sword'})
+    // e.remove({output: 'minecraft:iron_axe'})
+    //Do not remove these
 })
 
 //Removal of vanilla charcoal recipes

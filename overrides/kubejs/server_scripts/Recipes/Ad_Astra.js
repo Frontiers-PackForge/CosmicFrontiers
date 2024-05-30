@@ -57,17 +57,23 @@ yeet('ad_astra:oxygen_gear')
 yeet_f('ad_astra:oxygen')
 yeet_f('ad_astra:fuel')
 yeet_f('ad_astra:cryo_fuel')
+yeet_f('cosmiccore:virtue_meld')
 
 //Last fix didn't work, i'm just removing the steel tag from ad astra steel lul - Srdra
 ServerEvents.tags('item', event => {
   event.remove('forge:ingots/steel', 'ad_astra:steel_ingot')
   event.remove('forge:plates/steel', 'ad_astra:steel_plate')
+  event.add('ad_astra:space_suit_items', 'gtceu:advanced_quarktech_chestplate')
+  event.add('ad_astra:space_suit_items', 'gtceu:quarktech_leggings')
+  event.add('ad_astra:space_suit_items', 'gtceu:quarktech_boots')
+  event.add('ad_astra:space_suit_items', 'gtceu:quarktech_helmet')
 })
 
 ServerEvents.tags('fluid', event => {
   event.add('ad_astra:fuel', `gtceu:rocket_fuel`)
   event.remove(`forge:oxygen`, 'ad_astra:oxygen')
   event.remove(`forge:hydrogen`, 'ad_astra:hydrogen')
+  event.remove(`forge:virtue_meld`, 'cosmiccore:virtue_meld')
 })
 
 ServerEvents.recipes(event => {
@@ -206,7 +212,7 @@ ServerEvents.recipes(event => {
     }
   })
   event.recipes.gtceu.forming_press("t1_welded_plate")
-    .itemInputs(['4x gtceu:black_steel_plate', '4x gtceu:galvanized_ethersteel_plate', '4x gtceu:titanium_plate', '4x gtceu:mana_steel_plate'])
+    .itemInputs(['4x gtceu:black_steel_plate', '4x gtceu:galvanized_ethersteel_plate', '4x gtceu:titanium_plate', '4x gtceu:manasteel_plate'])
     .circuit(1)
     .itemOutputs('kubejs:welded_rocket_plating')
     .duration(160)

@@ -15,84 +15,16 @@ let yeet = (itemName) => {
 //Yeet Test # 1
 
 //Delightful Knives getting yeeted
-yeet('farmersdelight:flint_knife');
-yeet('farmersdelight:iron_knife');
-yeet('farmersdelight:golden_knife');
-yeet('farmersdelight:diamond_knife');
-yeet('farmersdelight:netherite_knife');
-yeet('delightful:gravitite_knife');
-yeet('delightful:forgotten_knife');
-yeet('delightful:stratus_knife');
-yeet('delightful:terra_knife');
-yeet('delightful:draco_arcanus_knife');
-yeet('delightful:elementium_knife');
-yeet('delightful:manasteel_knife');
-yeet('delightful:zanite_knife');
-yeet('delightful:skyroot_knife');
-yeet('delightful:veridium_knife');
-yeet('delightful:infused_veridium_knife');
-yeet('delightful:skyjade_knife');
-yeet('delightful:zinc_knife');
-yeet('delightful:nickel_knife');
-yeet('delightful:crystalline_knife');
-yeet('delightful:cloggrum_knife');
-yeet('delightful:froststeel_knife');
-yeet('delightful:utherium_knife');
-yeet('delightful:bronze_knife');
-yeet('delightful:electrum_knife');
-yeet('delightful:invar_knife');
-yeet('delightful:lead_knife');
-yeet('delightful:brass_knife');
-yeet('delightful:silver_knife');
-yeet('delightful:steel_knife');
-yeet('delightful:tin_knife');
-yeet('delightful:holystone_knife');
-yeet('ends_delight:dragon_tooth_knife');
-yeet('ends_delight:end_stone_knife');
-yeet('ends_delight:purpur_knife');
-yeet('ends_delight:dragon_egg_shell_knife');
-yeet('delightful:sinisite_knife');
-yeet('delightful:thyrium_knife');
-yeet('delightful:onyx_knife');
-yeet('delightful:adamantium_knife');
-yeet('delightful:mythril_knife');
-yeet('delightful:constantan_knife');
-yeet('delightful:black_opal_knife');
-yeet('delightful:copper_knife');
-yeet('delightful:emerald_knife');
-yeet('occultism:butcher_knife');
-yeet('delightful:alf_knife');
-yeet('delightful:necronium_knife');
-yeet('delightful:gilded_netherite_knife');
-yeet('delightful:rose_gold_knife');
-yeet('delightful:soul_steel_knife');
-yeet('delightful:stellium_knife');
-yeet('delightful:kiwano_knife');
-yeet('delightful:leaf_knife');
-yeet('delightful:blazing_knife');
-yeet('delightful:gilded_quartz_knife');
-yeet('delightful:experience_knife');
-yeet('delightful:warden_knife');
-yeet('delightful:pendorite_knife');
-yeet('delightful:living_knife');
-yeet('delightful:steeleaf_knife');
-yeet('delightful:knightmetal_knife');
-yeet('delightful:ironwood_knife');
-yeet('delightful:large_amethyst_knife');
-yeet('delightful:netherite_opal_knife');
-yeet('delightful:obsidian_infused_enderite_knife');
-yeet('delightful:refined_obsidian_knife');
-yeet('delightful:refined_glowstone_knife');
-yeet('delightful:allthemodium_knife');
-yeet('delightful:enderite_knife');
-yeet('delightful:osmium_knife');
-yeet('delightful:fiery_knife');
-yeet('delightful:amethyst_knife');
-yeet('delightful:lapis_lazuli_knife');
-yeet('delightful:bone_knife');
+yeet(/^(?!gtceu:)([^:]+):(.*)knife$/);
+
 //End Stove duplicate getting yeeted
 yeet('ends_delight:end_stove');
-
+ServerEvents.tags('item', event => {
+    event.add('nethersdelight:tools/hunting_tools', /gtceu:(.*)knife$/)
+    event.add('occultism:tools/knives', /gtceu:(.*)knife$/)
+    event.add('farmersdelight:tools/knives', /gtceu:(.*)knife$/)
+    event.add('forge:doughs', ['create:dough', 'delightful:nut_dough', 'farmersdelight:wheat_dough', 'festive_delight:gingerbread_dough', 'vintagedelight:oat_dough'])
+})
 
 //Functional Blocks, Gregified
 ServerEvents.recipes(event => { 
@@ -356,4 +288,13 @@ ServerEvents.recipes(event => {
     event.remove({ id:'farmersdelight:paper_from_tree_bark' })
     event.remove({ id:'farmersdelight:painting_from_canvas' })
     event.remove({ id:'farmersdelight:book_from_canvas' })
+    event.remove({ id:'croptopia:noodle' })
+    event.remove({ id:'create:campfire_cooking/bread' })
+    event.remove({ id:'create:crafting/curiosities/cake' })
+    event.remove({ id:'farmersdelight:cutting/pufferfish' })
+    event.recipes.gtceu.extruder('noodle_extrude_lmfao')
+    .itemInputs('forge:dough')
+    .itemOutputs('croptopia:noodle')
+    .duration(40)
+    .EUt(GTValues.VA[GTValues.ULV]);
 })

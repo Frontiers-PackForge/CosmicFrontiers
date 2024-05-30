@@ -7,11 +7,7 @@
 	id: "706EB66D1162963D"
 	images: [
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 3.0d
-			hover: [ ]
 			image: "frontiers:textures/questimages/firststeps/bannerwide.png"
 			order: 9999
 			rotation: 0.0d
@@ -20,11 +16,7 @@
 			y: -5.324744897959196d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 4.0d
-			hover: [ ]
 			image: "frontiers:textures/questimages/miscicons/wingedborder.png"
 			rotation: 0.0d
 			width: 4.0d
@@ -203,8 +195,7 @@
 				""
 				"FTB:Ultimine &4&lDOES NOT&r work on GTCEU Ores, this functionality has been disabled to encourage Hammers and Miners. A few other blocks have also been blacklisted."
 				""
-				"I'm also giving you some unbreakable starting tools to help with clearing of blocks"
-				"(The botania axe will be replaced once GTM axes share similar (not buggy) functionality)"
+				"I'm also giving you an unbreakable hammer to help with clearing of blocks"
 			]
 			id: "5693AA8924634F44"
 			rewards: [{
@@ -481,7 +472,7 @@
 			subtitle: "Get ready."
 			tasks: [
 				{
-					count: 256L
+					count: 128L
 					id: "48ED4A3C61EEB9EF"
 					item: "minecraft:copper_ingot"
 					type: "item"
@@ -493,7 +484,7 @@
 					type: "item"
 				}
 				{
-					count: 512L
+					count: 256L
 					id: "034E3C426DF22587"
 					item: "minecraft:redstone"
 					type: "item"

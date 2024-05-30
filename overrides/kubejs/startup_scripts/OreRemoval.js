@@ -58,7 +58,6 @@ WorldgenEvents.remove(event => {
     'aether:gravitite_ore_buried',
     'aether:ambrosium_ore',
     'aether:zanite_ore',
-    'aether_redux:veridium_ore',
     'deep_aether:skyjade_ore',
     'undergarden:depthrock_coal_ore',
     'undergarden:shiverstone_coal_ore',
@@ -85,7 +84,4 @@ WorldgenEvents.remove(event => {
     "ad_astra:mars_ostrum_ore"
   ])
 })
-// WorldgenEvents.remove(event => {
-//   event.printFeatures('', 'aether_redux:the_blight')
-//   event.printFeatures('', 'deep_aether:aerlavender_fields')
-// })
+

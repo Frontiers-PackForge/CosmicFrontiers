@@ -1,0 +1,30 @@
+{
+  "blocks": [
+    "#minecraft:all_signs"
+  ],
+  "temperature": 50,
+  "max_effect": 2.0,
+  "fade": true,
+  "range": 7,
+  "condition": {
+    "type": "minecraft:all_of",
+    "predicates": [
+      {
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:has_sturdy_face",
+          "direction": "up"
+        }
+      },
+      {
+        "type": "minecraft:matching_block_tag",
+        "tag": "minecraft:all_signs"
+      }
+    ]
+  },
+  "nbt": {
+    "front_text": {
+      "has_glowing_text": 1
+    }
+  }
+}

@@ -4,28 +4,125 @@
 	default_quest_shape: ""
 	filename: "questlogic"
 	group: "49DCE46B3EB22AEA"
+	icon: {
+		Count: 1b
+		id: "aether:hammer_of_kingbdogz"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "11F4C9727AB4FD82"
 	order_index: 4
 	quest_links: [ ]
-	quests: [{
-		description: [
-			"This Chapter (If you can see it) means you have Edit mode enabled in the questbook."
-			""
-			"Hi It's Ghost, this chapter here is for questbook logic/quests that would make other pages look messy. This isn't an actual quest chapter but moreso a place for logicgates to be placed."
-			""
-			""
-			"Now Turn off Edit mode and get to playing :P"
-		]
-		id: "6022F9D216B741CD"
-		shape: "gear"
-		subtitle: "Dev Zone Ahead. Danger"
-		tasks: [{
-			id: "683AB6D197C8B112"
-			title: "Wtf is this?"
-			type: "custom"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			description: [
+				"This Chapter (If you can see it) means you have Edit mode enabled in the questbook."
+				""
+				"Hi It's Ghost, this chapter here is for questbook logic/quests that would make other pages look messy. This isn't an actual quest chapter but moreso a place for logicgates to be placed."
+				""
+				""
+				"Now Turn off Edit mode and get to playing :P"
+			]
+			id: "6022F9D216B741CD"
+			shape: "gear"
+			subtitle: "Dev Zone Ahead. Danger"
+			tasks: [{
+				id: "683AB6D197C8B112"
+				title: "Wtf is this?"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "7FAD4D62BDB7506F"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 7A6687C64AE5FC75"
+					elevate_perms: true
+					id: "57DACD633CF36EA3"
+					silent: true
+					title: "MRE Mixed Dust Skip"
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/ftbquests change_progress @s complete 7ED9269DEE3DE5B6"
+					elevate_perms: true
+					exclude_from_claim_all: true
+					id: "6868BB7CA5DAD4FB"
+					ignore_reward_blocking: true
+					silent: true
+					title: "Org Leachate Skip"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 78B9EDF7A35B406F"
+					elevate_perms: true
+					id: "1343D7825ADB85FE"
+					silent: true
+					title: "MRE Leachate Skip"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 719E4D2B41063805"
+					elevate_perms: true
+					id: "34C8427E5F8AFF3C"
+					silent: true
+					title: "MRE Chlorides Skip"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 1C11F4F6BE70E0D8"
+					elevate_perms: true
+					id: "6055C7A3EB294B03"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 3B052FE1B75E1A21"
+					elevate_perms: true
+					id: "219D94421EE2365B"
+					silent: true
+					title: "MRE Hydroxides"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 6C2C175660333686"
+					elevate_perms: true
+					id: "1A7498DFAB9343E2"
+					silent: true
+					title: "Middle Rare Earth Slag Bucket Skip"
+					type: "command"
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "4A1A7A69BE1E508E"
+				item: "gtceu:samarium_dust"
+				type: "item"
+			}]
+			title: "MRE Skip"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			id: "261BD31156DD2E12"
+			tasks: [{
+				id: "5FB17F5D30834650"
+				item: "gtceu:mre_leachate_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+	]
 	title: "&4Dev - QuestLogic"
 }

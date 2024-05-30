@@ -120,6 +120,7 @@
 			tasks: [{
 				icon: "gtceu:distillation_tower"
 				id: "048244CDA891718D"
+				item: "gtceu:distillation_tower"
 				type: "item"
 			}]
 			title: "Aether Air Distillation"

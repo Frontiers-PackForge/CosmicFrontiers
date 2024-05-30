@@ -1,4 +1,5 @@
 {
+	autofocus_id: "5837A875D09D3E35"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "safe_travels__ev"
@@ -350,22 +351,12 @@
 			y: -14.0d
 		}
 		{
-			dependencies: ["5837A875D09D3E35"]
-			id: "20B51AE28980123C"
-			tasks: [{
-				id: "6ED858CCCF16AAC7"
-				item: "gtceu:mre_slag_bucket"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 2.5d
-		}
-		{
 			dependencies: ["74309E61E59DB15E"]
+			description: ["Supercritical Steam Will have more uses outside of power in the future, but for now I would just vent your SC Steam."]
 			id: "60C28AEB7C50E3E3"
 			tasks: [{
-				id: "2D7A07492D9F2F00"
-				item: "embers:steam_bucket"
+				id: "1B0A0848C4D0325B"
+				item: "gtceu:super_critical_steam_bucket"
 				type: "item"
 			}]
 			x: 8.5d
@@ -376,7 +367,15 @@
 				"60C28AEB7C50E3E3"
 				"3CC0B57321E8DD80"
 			]
+			description: [
+				"Short Answer - Not really"
+				""
+				"Long Answer - Large Steam Turbines produce very low power outputs for steam/SC Steam"
+				""
+				"Supercritical Steam Will have more uses outside of power in the future, but for now I would just vent your SC Steam."
+			]
 			id: "03A8BEC02D989C10"
+			subtitle: "Is it worth it?"
 			tasks: [{
 				id: "65D07810BB1A5ABE"
 				item: "gtceu:steam_large_turbine"
@@ -501,26 +500,6 @@
 			}]
 			x: 2.5d
 			y: 6.5d
-		}
-		{
-			icon: "gtceu:uranium_hexafluoride_bucket"
-			id: "6B051B2F2297D096"
-			tasks: [
-				{
-					id: "4C422603B13B8E87"
-					item: "gtceu:uranium_hexafluoride_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "7D9028A6F0C2F406"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 12.0d
-			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -650,10 +629,7 @@
 			y: -7.5d
 		}
 		{
-			dependencies: [
-				"2B33818821F17BB4"
-				"3631A4B5AA4AD349"
-			]
+			dependencies: ["2B33818821F17BB4"]
 			id: "71BB86F673F75CEF"
 			shape: "hexagon"
 			size: 1.0d
@@ -866,7 +842,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "40A8B30D25EECBC1"
-				item: "kubejs:prismatic_tungsten_coil_block"
+				item: "cosmiccore:prismatic_tungstensteel_coil_block"
 				type: "item"
 			}]
 			x: -1.5d
@@ -923,7 +899,7 @@
 			id: "0005DD30A37AB361"
 			tasks: [{
 				id: "4DA453A8043EECAF"
-				item: "gtceu:prismatic_tungstensteel_ingot"
+				item: "cosmiccore:prismatic_tungstensteel_ingot"
 				type: "item"
 			}]
 			x: -1.5d
@@ -938,8 +914,8 @@
 			size: 1.25d
 			subtitle: "Yay more rare earths"
 			title: "Praseodymium Sources"
-			x: -8.0d
-			y: -7.5d
+			x: -12.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["478B3130E4E9FE6B"]
@@ -949,15 +925,15 @@
 				item: "gtceu:neodymium_praseodymium_rod"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -9.0d
+			x: -10.0d
+			y: -14.0d
 		}
 		{
 			dependencies: [
 				"33CE2F436798DC0A"
-				"485969A8D5E05AF2"
 				"26EF2E92ED5362D2"
 				"7F4ED2D522BA6008"
+				"21BE154ED4F3F6C6"
 			]
 			id: "1B4341A2252E0EA3"
 			shape: "hexagon"
@@ -967,7 +943,7 @@
 				item: "gtceu:iv_electric_motor"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -5.5d
 			y: -14.0d
 		}
 		{
@@ -980,19 +956,8 @@
 				item: "gtceu:virtue_meld_double_wire"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -5.5d
 			y: -15.5d
-		}
-		{
-			dependencies: ["21BE154ED4F3F6C6"]
-			id: "485969A8D5E05AF2"
-			tasks: [{
-				id: "3DD8359407DB2D2C"
-				item: "gtceu:tungsten_steel_rod"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -14.0d
 		}
 		{
 			dependencies: ["2DF60BFD430D8928"]
@@ -1010,8 +975,8 @@
 				item: "gtceu:ev_polarizer"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -10.5d
+			x: -8.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["3CA502E5762F362F"]
@@ -1021,8 +986,8 @@
 				item: "gtceu:magnetic_neodymium_praseodymium_rod"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -12.0d
+			x: -7.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["746EE169EC0C51EA"]
@@ -1032,7 +997,7 @@
 				item: "gtceu:tungsten_ingot"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -5.5d
 			y: -10.5d
 		}
 		{
@@ -1046,7 +1011,7 @@
 				item: "gtceu:tungsten_double_cable"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -5.5d
 			y: -12.0d
 		}
 		{
@@ -1081,6 +1046,7 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["71BB86F673F75CEF"]
 			id: "43F0CB80703C49A2"
 			shape: "octagon"
 			size: 1.25d
@@ -1129,48 +1095,19 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"627303BD04BDAC20"
-				"6404D02F501AFCC4"
-				"39ACD6D74EAB5B9D"
-			]
-			id: "4E6C6414C1277093"
-			tasks: [{
-				id: "778E5C5DD482DF75"
-				item: "gtceu:astraline_prismatic_solution_bucket"
-				type: "item"
-			}]
-			title: "Basic Psionic Manifestations"
-			x: -1.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["4E6C6414C1277093"]
-			icon: "gtceu:prisma_gem"
+			dependencies: ["720E3273A6040AD6"]
+			icon: "cosmiccore:prisma_bucket"
 			id: "2B2C603190C490F2"
 			tasks: [{
-				id: "68B6169E1EB8D907"
-				item: "gtceu:prisma_gem"
+				id: "6119E5997C2AF54E"
+				item: "cosmiccore:prisma_bucket"
 				type: "item"
 			}]
 			x: -1.5d
 			y: -9.0d
 		}
 		{
-			dependencies: [
-				"627303BD04BDAC20"
-				"151A9B2F42C9284E"
-			]
-			id: "39ACD6D74EAB5B9D"
-			tasks: [{
-				id: "7ACFE92C0AC8CCE1"
-				item: "gtceu:astraline_corrosion_agent_bucket"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -6.0d
-		}
-		{
+			dependencies: ["3AA2045AF5352B7E"]
 			id: "6404D02F501AFCC4"
 			tasks: [{
 				id: "2DCA5EDD03B0C5F5"
@@ -1188,18 +1125,330 @@
 				item: "gtceu:silicone_rubber_bucket"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -7.0d
 			y: -10.5d
 		}
 		{
+			dependencies: ["5837A875D09D3E35"]
+			hide_dependency_lines: true
 			id: "283CC0607989316D"
 			tasks: [{
 				id: "78B697E42A7F8CF3"
 				item: "gtceu:polydimethylsiloxane_dust"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -7.0d
 			y: -9.0d
+		}
+		{
+			dependencies: ["151A9B2F42C9284E"]
+			description: [
+				"Blah blah"
+				"qb is temp"
+				"blah blah"
+				"read the tool tip"
+				"blah blah"
+				""
+				"I should do the qb"
+				""
+				"yeah nah not gonna do really detailed quests til UV methinks!"
+			]
+			icon: "ars_nouveau:drygmy_charm"
+			icon_scale: 1.25d
+			id: "3AA2045AF5352B7E"
+			shape: "hexagon"
+			subtitle: "The perfect home."
+			tasks: [{
+				id: "384795DD50341091"
+				item: "cosmiccore:drygmy_grove"
+				type: "item"
+			}]
+			title: "Drygmy Grove"
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["627303BD04BDAC20"]
+			icon: "gtceu:astraline_corrosion_agent_bucket"
+			id: "6CB093D4D80A3DE3"
+			tasks: [
+				{
+					id: "417360BD5D497301"
+					item: "gtceu:astraline_corrosion_agent_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "14B05E9C369183EF"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"6404D02F501AFCC4"
+				"6CB093D4D80A3DE3"
+			]
+			icon: "gtceu:astraline_prismatic_solution_bucket"
+			id: "720E3273A6040AD6"
+			tasks: [
+				{
+					id: "2BDF55E940487A2E"
+					item: "gtceu:astraline_prismatic_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "6B0F8B063BE20283"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7090D7E23692B1F6"]
+			id: "0E95FFECB2B6E78E"
+			tasks: [{
+				id: "400EFDA7FFBBC983"
+				item: "gtceu:rhodium_depleted_plat_group_residue_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E95FFECB2B6E78E"]
+			id: "42B3BA60563E4A51"
+			tasks: [{
+				id: "0563E1E5F9091AE6"
+				item: "gtceu:iridium_rich_plat_group_residue_dust"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42B3BA60563E4A51"]
+			icon: "gtceu:chloroiridic_acid_bucket"
+			id: "3A2BDEB1EED0073E"
+			tasks: [
+				{
+					id: "7B7E32EBD34E8ACB"
+					item: "gtceu:chloroiridic_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "564C97374D402619"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A2BDEB1EED0073E"]
+			id: "6F6164A35E8F2CD2"
+			tasks: [{
+				id: "5BF934A57F734C00"
+				item: "gtceu:ammonium_hexachloroiridate_dust"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6F6164A35E8F2CD2"]
+			id: "57898F6FBA8CE622"
+			tasks: [{
+				id: "0ADE09F937323376"
+				item: "gtceu:iridium_dust"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0E95FFECB2B6E78E"]
+			id: "11313EA9B1707AB1"
+			tasks: [{
+				id: "2DABA29B073411C0"
+				item: "gtceu:crude_rhodium_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["11313EA9B1707AB1"]
+			id: "69BCF45714F2A15F"
+			tasks: [{
+				id: "4EB349403D268291"
+				item: "gtceu:sodium_hexachlororhodate_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["69BCF45714F2A15F"]
+			id: "14A073584ED3AC22"
+			tasks: [{
+				id: "4DA37DF15D6955C2"
+				item: "gtceu:rhodium_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["42B3BA60563E4A51"]
+			icon: "gtceu:ruthenium_osmium_tetroxides_bucket"
+			id: "0BEB8373FA0FA315"
+			tasks: [
+				{
+					id: "6C596085EFA50E1D"
+					item: "gtceu:ruthenium_osmium_tetroxides_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "0E904D514867C60D"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0BEB8373FA0FA315"]
+			icon: "gtceu:chlororuthenic_acid_osmium_tetroxide_solution_bucket"
+			id: "28962A60FD7E3C73"
+			tasks: [
+				{
+					id: "0C9FFCA9C49DC0F7"
+					item: "gtceu:chlororuthenic_acid_osmium_tetroxide_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "364861AE023F3D2E"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["28962A60FD7E3C73"]
+			icon: "gtceu:ruthenium_osmium_tetroxides_bucket"
+			id: "5744DE0FFDCD6E7A"
+			tasks: [
+				{
+					id: "304CC98B94061E96"
+					item: "gtceu:chlororuthenic_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "1C20A39BDDD8CFC3"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["28962A60FD7E3C73"]
+			id: "76304B86DC75B19D"
+			tasks: [{
+				id: "13974064A4C36937"
+				item: "gtceu:impure_osmium_tetroxide_dust"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5744DE0FFDCD6E7A"]
+			id: "798FC43D8BF69593"
+			tasks: [{
+				id: "48DD7B249BE2F8C6"
+				item: "gtceu:ammonium_hexachlororuthenate_dust"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["798FC43D8BF69593"]
+			id: "4572746DD1DD9FEE"
+			tasks: [{
+				id: "0171FF1B7811E980"
+				item: "gtceu:ruthenium_dust"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["76304B86DC75B19D"]
+			id: "314606BE420A7294"
+			tasks: [{
+				id: "65E58F20E6B1C0AA"
+				item: "gtceu:osmium_tetroxide_dust"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["314606BE420A7294"]
+			id: "7076857D2841565C"
+			tasks: [{
+				id: "328A612A681E73F4"
+				item: "gtceu:sodium_osmate_dust"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7076857D2841565C"]
+			id: "3DA6DD3B448415FD"
+			tasks: [{
+				id: "7A63789E33413658"
+				item: "gtceu:tetraammine_osmyl_chloride_dust"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["3DA6DD3B448415FD"]
+			id: "3F7DD1C30AF3F5E8"
+			tasks: [{
+				id: "300EB0F0348DDFD7"
+				item: "gtceu:osmium_dust"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -10.5d
 		}
 	]
 	title: "Safe Travels - [EV]"

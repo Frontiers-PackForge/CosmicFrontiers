@@ -120,7 +120,7 @@
   "block.gtceu.uhv_tempering_autoclave": "§4Epic Tempering Autoclave§r",
 
   "block.gtceu.basic_alternator": "Basic Alternator",
-  "material.gtceu.mana_steel": "Manasteel",
+  "material.gtceu.manasteel": "Manasteel",
   "material.gtceu.zanite": "Zanite",
   "material.gtceu.ancient_debris": "Ancient Debris",
   "material.gtceu.netherite_scrap": "Netherite Scrap",
@@ -352,6 +352,22 @@
   "material.gtceu.diluted_nitric_acid": "Diluted Nitric Acid",
   "material.gtceu.potassium_fluoride": "Potassium Fluoride",
 
+  "material.gtceu.fused_naquadah_emulsion": "Fused Naquadah Emulsion",
+  "material.gtceu.raw_naquahine": "Raw Naquahine",
+  "material.gtceu.prisma_doped_raw_naquahine": "Prisma Doped Raw naquahine",
+  "material.gtceu.inert_naquahine": "Inert Naquahine",
+  "material.gtceu.source_cut_naquahine_solution": "Source Cut Naquahine Solution",
+  "material.gtceu.naquahine_rich_mixture": "Naquahine Rich Mixture",
+  "material.gtceu.naquahine": "Naquahine",
+  "material.gtceu.thunder_charged_naquahine_mixture": "Thunder Charged Naquahine Mixture",
+  "material.gtceu.critically_steam_cracked_thundering_naquahine": "Critically Steamed Cracked Thundering Naquahine",
+  "material.gtceu.energized_naquahine_fuel_preperation": "Energized Naquahine Fuel Preperation",
+  "material.gtceu.aerated_naquahine": "Aerated Naquahine",
+  "material.gtceu.naquahine_superfuel_mk_one": "Naquahine Superfuel Mk.1",
+  "material.gtceu.naquahine_superfuel_mk_two": "Naquahine Superfuel Mk.2",
+  "material.gtceu.super_critical_steam": "Supercritical Steam",
+
+
 
   "gtceu.mana_simulator": "Mana Simulator",
   "gtceu.large_floral_propagator": "Large Floral Propagator",
@@ -366,5 +382,16 @@
   "block.gtceu.industrial_grade_floral_propagator": "Industrial Grade Floral Propagator",
   "block.gtceu.arboreal_growth_facility": "Industiral Arboreal Growth Chamber",
   "gtceu.arboreal_growth_chamber": "Industiral Arboreal Growth Chamber",
-  "gtceu.celestial_bore": "Celestial Bore"
+  "gtceu.celestial_bore": "Celestial Bore",
+  "block.gtceu.celestial_bore": "Celestial Bore",
+
+  "gtceu:cyanex_272": "Cyanex-272",
+  "gtceu:tert_butanol": "Tert-butanol",
+  "gtceu:isobutene": "Isobutene",
+  "gtceu:ammonium_fluoride": "Ammonium Fluoride",
+  "gtceu:sodium_hypophosphite": "Sodium Hypophosphite",
+  "gtceu:tert_butylhydroperoxide": "Tert-butylhydroperoxide",
+  "gtceu:244_trimethyl_1_pentene": "2,4,4-trimethyl-1-pentene",
+  "gtceu:244_trimethyl_2_pentene": "2,4,4-trimethyl-2-pentene",
+  "gtceu:ferric_alumina": "Ferric Alumina"
 }

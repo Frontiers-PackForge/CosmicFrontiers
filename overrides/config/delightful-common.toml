@@ -56,7 +56,6 @@
 	soul_steel_knife = true
 	steel_knife = true
 	steeleaf_knife = true
-	stellium_knife = true
 	stratus_knife = true
 	terra_knife = true
 	thyrium_knife = true
@@ -70,6 +69,7 @@
 	fluix_knife = true
 	nether_quartz_knife = true
 	valkyrum_knife = true
+	phoenix_knife = true
 
 ["Pie Overhauls"]
 	blueberry_pie_slice = true
@@ -153,4 +153,14 @@
 	stuffed_cantaloupe = true
 	stuffed_cantaloupe_block = true
 	wrapped_cantaloupe = true
+	bastion_fruit_crate = true
+	bombegranate_crate = true
+	cantaloupe_gummy = true
+	frostaya_crate = true
+	matcha_gummy = true
+	matcha_milkshake = true
+	mendosteen_crate = true
+	nut_dough = true
+	roasted_acorn = true
+	salmonberry_milkshake = true
 

@@ -71,7 +71,14 @@ GTCEuServerEvents.oreVeins(event => {
         )
     )
 })
-
+// GTCEuServerEvents.bedrockOreVeins(event => {
+//     event.add("kubejs:deep_luminite",  vein => {
+//       vein.weight(2000).size(2).yield(5,10).material(GTMaterials.get('luminite'),10).dimensions("ad_astra:moon");
+//     })
+//     event.add("kubejs:deep_illmenite",  vein => {
+//         vein.weight(40).size(2).yield(5,10).material(GTMaterials.Ilmenite,10).dimensions("ad_astra:moon");
+//       })
+//   })
 
 
 //ad_astra:moon

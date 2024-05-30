@@ -29,16 +29,16 @@ StartupEvents.registry("block", event => {
 
 
 })
-StartupEvents.registry('block', event => {
-    event.create('prismatic_tungsten_coil_block', 'gtceu:coil')
-        .temperature(4500)
-        .level(4)
-        .energyDiscount(2) // 
-        .tier(5)
-        .coilMaterial(() => GTMaterials.get('prismatic_tungsten'))
-        .texture('gtceu:block/coils/prismatic_tungsten_coil')
-        .hardness(5)
-        .requiresTool(true)
-        .soundType(SoundType.NETHERITE_BLOCK)
-        .tagBlock('forge:mineable/wrench')
-})
+// StartupEvents.registry('block', event => {
+//     event.create('prismatic_tungsten_coil_block', 'gtceu:coil').renderType("cutout_mipped")
+//         .temperature(4500)
+//         .level(4)
+//         .energyDiscount(2) // 
+//         .tier(5)
+//         .coilMaterial(() => GTMaterials.get('prismatic_tungsten'))
+//         .texture('gtceu:block/casings/coils/prismatic_tungsten_coil')
+//         .hardness(5)
+//         .requiresTool(true)
+//         .soundType(SoundType.NETHERITE_BLOCK)
+//         .tagBlock('forge:mineable/wrench')
+// })

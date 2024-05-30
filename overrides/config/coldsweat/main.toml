@@ -1,7 +1,31 @@
-#Overrides all other config options for easy difficulty management
-#This value is changed by the in-game config. It does nothing otherwise.
-#Range: 0 ~ 4
-Difficulty = 2
+
+[Difficulty]
+	#Overrides all other config options for easy difficulty management
+	#This value is changed by the in-game config. It does nothing otherwise.
+	#Range: 0 ~ 4
+	Difficulty = 2
+	#Defines the minimum habitable temperature
+	#Range: -Infinity ~ Infinity
+	"Minimum Habitable Temperature" = 0.4
+	#Defines the maximum habitable temperature
+	#Range: -Infinity ~ Infinity
+	"Maximum Habitable Temperature" = 1.511111111111111
+	#Rate at which the player's body temperature changes (default: 1.0 (100%))
+	#Range: 0.0 ~ Infinity
+	"Rate Multiplier" = 1.0
+	#Damage dealt to the player when they are too hot or too cold
+	#Range: 0.0 ~ Infinity
+	"Temperature Damage" = 2.0
+	#Sets whether damage scales with difficulty
+	"Damage Scaling" = true
+
+[Items]
+	#Allow fire resistance to block overheating damage
+	"Fire Resistance Immunity" = true
+	#Allow ice resistance to block freezing damage
+	"Ice Resistance Immunity" = true
+	#Thermometer item is required to see detailed world temperature
+	"Require Thermometer" = true
 
 ["Temperature Effects"]
 
@@ -19,43 +43,10 @@ Difficulty = 2
 		#When set to true, the player's mining speed will be reduced when they are too cold
 		"Cold Mining Fatigue" = true
 
-["Details about how the player is affected by temperature"]
-	#Defines the minimum habitable temperature
-	#Range: -Infinity ~ Infinity
-	"Minimum Habitable Temperature" = 0.42857142857142855
-	#Defines the maximum habitable temperature
-	#Range: -Infinity ~ Infinity
-	"Maximum Habitable Temperature" = 1.619047619047619
-	#Rate at which the player's body temperature changes (default: 1.0 (100%))
-	#Range: 0.0 ~ Infinity
-	"Rate Multiplier" = 1.0
-	#Damage dealt to the player when they are too hot or too cold
-	#Range: 0.0 ~ Infinity
-	"Temperature Damage" = 2.0
-
-["Item settings"]
-	#Allow fire resistance to block overheating damage
-	"Fire Resistance Immunity" = true
-	#Allow ice resistance to block freezing damage
-	"Ice Resistance Immunity" = true
-	#Thermometer item is required to see detailed world temperature
-	"Require Thermometer" = true
-
-["Misc temperature-related things"]
-	#Sets whether damage scales with difficulty
-	"Damage Scaling" = true
-	#When set to true, players cannot sleep if they are cold or hot enough to die
-	"Prevent Sleep When in Danger" = true
-
-["Grace Period Details"]
+["Grace Period"]
 	#The number of ticks after the player spawns during which they are immune to temperature effects
 	#Range: > 0
 	"Grace Period Length" = 6000
 	#Enables the grace period
 	"Grace Period Enabled" = true
-
-["Cold Soul Fire"]
-	#Converts damage dealt by Soul Fire to cold damage (default: true)
-	#Does not affect the block's temperature
-	"Cold Soul Fire" = true
 

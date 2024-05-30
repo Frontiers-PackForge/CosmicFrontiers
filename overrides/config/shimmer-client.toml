@@ -23,7 +23,7 @@
 "bloom color attachment number" = 1
 #whether inset shader name into shader source file or not
 #
-"inset shader" = false
+"inset shader" = true
 #whether enable buildin shimmer.json
 #
 "enable buildin setting" = true

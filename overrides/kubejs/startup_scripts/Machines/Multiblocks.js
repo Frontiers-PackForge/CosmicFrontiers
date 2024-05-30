@@ -1,3 +1,15 @@
+
+const $RecipeIO = Java.loadClass('com.gregtechceu.gtceu.api.capability.recipe.IO');
+const $ItemStackHashStrategy = Java.loadClass('com.gregtechceu.gtceu.utils.ItemStackHashStrategy');
+const $ItemRecipeCapability = Java.loadClass('com.gregtechceu.gtceu.api.capability.recipe.ItemRecipeCapability');
+const $GTHashMaps = Java.loadClass('com.gregtechceu.gtceu.utils.GTHashMaps');
+
+const $Collections = Java.loadClass('java.util.Collections');
+const $Object2IntOpenCustomHashMap = Java.loadClass('it.unimi.dsi.fastutil.objects.Object2IntOpenCustomHashMap');
+const $Objects = Java.loadClass('java.util.Objects');
+const $CosmicPartAbility = Java.loadClass('com.ghostipedia.cosmiccore.api.machine.part.CosmicPartAbility');
+
+
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     //Large Floral Propagator
     event.create('industrial_grade_floral_propagator', 'multiblock')
@@ -84,8 +96,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks('botania:mana_glass'))
             .build())
         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/mana_fluidizer', false);
-
-
 
     event.create('molten_salt_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -229,7 +239,36 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .build())
         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/rock_crusher', false);
-
+    
+        event.create('soul_forge', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('soul_forge')
+        .appearanceBlock(GTBlocks.CASING_TITANIUM_STABLE)
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('#TTT#', '#TTT#', '#TTT#')
+            .aisle('TTTTT', 'TWQLT', 'TGGGT')
+            .aisle('TTTTT', 'GWQLG', 'TGGGT')
+            .aisle('TTTTT', 'GWQLG', 'TGGGT')
+            .aisle('TTTTT', 'GWQLG', 'TGGGT')
+            .aisle('TTTTT', 'TWQLT', 'TGGGT')
+            .aisle('#TTT#', '#TCT#', '#TTT#')
+            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('#', Predicates.any())
+            .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
+            .where('W', Predicates.blocks('minecraft:water'))
+            .where('L', Predicates.blocks('minecraft:lava'))
+            .where('Q', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_GEARBOX.get()))
+            .where('T', Predicates.blocks(GTBlocks.CASING_TITANIUM_STABLE.get())
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
+                .or(Predicates.abilities($CosmicPartAbility.IMPORT_SOUL))
+            )
+            .build())
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/rock_crusher', false);
 
 
 

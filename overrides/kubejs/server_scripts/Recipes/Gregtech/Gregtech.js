@@ -13,7 +13,7 @@ let yeet = (itemName) => {
 ServerEvents.tags('item', event => {
   event.add('forge:lenses/ruby', 'gtceu:redstone_lens')
   event.add('forge:lenses/red', 'gtceu:redstone_lens')
-
+  event.remove('minecraft:planks', 'gtceu:treated_wood_planks')
 })
 
 yeet('gtceu:tiny_psi_superconductor_alpha_dust')
@@ -28,6 +28,7 @@ yeet('gtceu:neodymium_praseodymium_dust')
 yeet('gtceu:tiny_magnetic_neodymium_praseodymium_dust')
 yeet('gtceu:small_magnetic_neodymium_praseodymium_dust')
 yeet('gtceu:magnetic_neodymium_praseodymium_dust')
+yeet(/gtceu:(.*)butchery_knife$/)
 
 ServerEvents.recipes(event => {
   // //Lmao
@@ -72,6 +73,12 @@ ServerEvents.recipes(event => {
     .itemOutputs('create:andesite_alloy')
     .duration(100)
     .EUt(8);
+  event.recipes.gtceu.assembler('prisma_tungstensteel_coil')
+    .itemInputs(['8x cosmiccore:prismatic_tungstensteel_double_wire', '8x gtceu:platinum_foil'])
+    .itemOutputs('cosmiccore:prismatic_tungstensteel_coil_block')
+    .inputFluids('gtceu:nichrome 144')
+    .duration(500)
+    .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.macerator('gtceu:treated_wood_dust_shred')
     .itemInputs('gtceu:treated_wood_planks')
     .itemOutputs('gtceu:treated_wood_dust')
@@ -97,75 +104,90 @@ ServerEvents.recipes(event => {
   //ManaSteel Stuff
   event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe')
     .itemInputs('botania:manasteel_ingot')
-    .itemOutputs('2x gtceu:mana_steel_single_wire')
+    .itemOutputs('2x gtceu:manasteel_single_wire')
+    .circuit(1)
     .duration(26)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe2x')
+    .itemInputs('botania:manasteel_ingot')
+    .itemOutputs('gtceu:manasteel_double_wire')
+    .circuit(2)
+    .duration(52)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe4x')
+    .itemInputs('2x botania:manasteel_ingot')
+    .itemOutputs('gtceu:manasteel_quadruple_wire')
+    .circuit(4)
+    .duration(104)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe8x')
+    .itemInputs('4x botania:manasteel_ingot')
+    .itemOutputs('gtceu:manasteel_octal_wire')
+    .circuit(8)
+    .duration(208)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe16x')
+    .itemInputs('8x botania:manasteel_ingot')
+    .itemOutputs('gtceu:manasteel_hex_wire')
+    .circuit(16)
+    .duration(416)
     .EUt(GTValues.VA[GTValues.LV]);
 
   event.recipes.gtceu.wiremill('gtceu:manasteel_fine_wire_recipe')
-    .itemInputs('gtceu:mana_steel_single_wire')
-    .itemOutputs('4x gtceu:fine_mana_steel_wire')
+    .itemInputs('gtceu:manasteel_single_wire')
+    .itemOutputs('4x gtceu:fine_manasteel_wire')
     .duration(26)
     .EUt(GTValues.VA[GTValues.LV]);
 
 
   event.recipes.gtceu.bender('gtceu:manasteel_plate')
     .itemInputs('botania:manasteel_ingot')
-    .itemOutputs('gtceu:mana_steel_plate')
+    .itemOutputs('gtceu:manasteel_plate')
     .duration(26)
     .circuit(1)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.bender('gtceu:manasteel_plate_to_foil')
-    .itemInputs('gtceu:mana_steel_plate')
-    .itemOutputs('4x gtceu:mana_steel_foil')
+    .itemInputs('gtceu:manasteel_plate')
+    .itemOutputs('4x gtceu:manasteel_foil')
     .duration(26)
     .circuit(1)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.bender('gtceu:manasteel_ingot_to_foil')
     .itemInputs('botania:manasteel_ingot')
-    .itemOutputs('4x gtceu:mana_steel_foil')
+    .itemOutputs('4x gtceu:manasteel_foil')
     .duration(26)
     .circuit(10)
     .EUt(GTValues.VA[GTValues.LV]);
-  let manawires = ['gtceu:mana_steel_single_cable', 'gtceu:mana_steel_double_cable', 'gtceu:mana_steel_quadruple_cable', 'gtceu:mana_steel_octal_cable', 'gtceu:mana_steel_hex_cable']
+  let manawires = ['gtceu:manasteel_single_cable', 'gtceu:manasteel_double_cable', 'gtceu:manasteel_quadruple_cable', 'gtceu:manasteel_octal_cable', 'gtceu:manasteel_hex_cable']
   event.remove({ output: manawires })
-  event.recipes.gtceu.spooling_machine('gtceu:mana_steel_single_cable_wrapping')
-    .itemInputs(['gtceu:mana_steel_single_wire', '2x ars_nouveau:magebloom_fiber'])
-    .itemOutputs('gtceu:mana_steel_single_cable')
+  event.recipes.gtceu.spooling_machine('gtceu:manasteel_single_cable_wrapping')
+    .itemInputs(['gtceu:manasteel_single_wire', '2x ars_nouveau:magebloom_fiber'])
+    .itemOutputs('gtceu:manasteel_single_cable')
     .duration(60)
     .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.spooling_machine('gtceu:mana_steel_double_cable_wrapping')
-    .itemInputs(['gtceu:mana_steel_double_wire', '4x ars_nouveau:magebloom_fiber'])
-    .itemOutputs('gtceu:mana_steel_double_cable')
+  event.recipes.gtceu.spooling_machine('gtceu:manasteel_double_cable_wrapping')
+    .itemInputs(['gtceu:manasteel_double_wire', '4x ars_nouveau:magebloom_fiber'])
+    .itemOutputs('gtceu:manasteel_double_cable')
     .duration(60)
     .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.spooling_machine('gtceu:mana_steel_quad_cable_wrapping')
-    .itemInputs(['gtceu:mana_steel_quadruple_wire', '8x ars_nouveau:magebloom_fiber'])
-    .itemOutputs('gtceu:mana_steel_quadruple_cable')
+  event.recipes.gtceu.spooling_machine('gtceu:manasteel_quad_cable_wrapping')
+    .itemInputs(['gtceu:manasteel_quadruple_wire', '8x ars_nouveau:magebloom_fiber'])
+    .itemOutputs('gtceu:manasteel_quadruple_cable')
     .duration(60)
     .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.spooling_machine('gtceu:mana_steel_octal_cable_wrapping')
-    .itemInputs(['gtceu:mana_steel_octal_wire', '16x ars_nouveau:magebloom_fiber'])
-    .itemOutputs('gtceu:mana_steel_octal_cable')
+  event.recipes.gtceu.spooling_machine('gtceu:manasteel_octal_cable_wrapping')
+    .itemInputs(['gtceu:manasteel_octal_wire', '16x ars_nouveau:magebloom_fiber'])
+    .itemOutputs('gtceu:manasteel_octal_cable')
     .duration(60)
     .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.spooling_machine('gtceu:mana_steel_hex_cable_wrapping')
-    .itemInputs(['gtceu:mana_steel_hex_wire', '32x ars_nouveau:magebloom_fiber'])
-    .itemOutputs('gtceu:mana_steel_hex_cable')
+  event.recipes.gtceu.spooling_machine('gtceu:manasteel_hex_cable_wrapping')
+    .itemInputs(['gtceu:manasteel_hex_wire', '32x ars_nouveau:magebloom_fiber'])
+    .itemOutputs('gtceu:manasteel_hex_cable')
     .duration(60)
     .EUt(GTValues.VA[GTValues.LV]);
 
   //Redstone Lense and removal of Ruby Lense
   event.remove({ output: 'gtceu:ruby_lens' })
-  event.recipes.gtceu.lathe('gtceu:zanite_lens_creation')
-    .itemInputs('gtceu:zanite_plate')
-    .itemOutputs('gtceu:zanite_lens')
-    .duration(1200)
-    .EUt(GTValues.VA[GTValues.MV]);
-  event.recipes.gtceu.lathe('gtceu:zanite_lens_creation_exq')
-    .itemInputs('gtceu:exquisite_zanite_gem')
-    .itemOutputs('gtceu:zanite_lens')
-    .duration(2400)
-    .EUt(GTValues.VA[GTValues.LV]);
   event.remove({ output: 'gtceu:ilc_wafer' })
   event.recipes.gtceu.laser_engraver('gtceu:ilc_1x')
     .itemInputs('gtceu:silicon_wafer')
@@ -233,8 +255,31 @@ ServerEvents.recipes(event => {
     W: 'gtceu:virtue_meld_double_wire',
     M: 'gtceu:magnetic_neodymium_praseodymium_rod',
     R: 'gtceu:tungsten_steel_rod'
-  }
-  )
+  })
+  event.remove({ id: 'gtceu:shaped/sword_flint' })
+  event.remove({ id: 'gtceu:shaped/knife_flint' })
+  //FLINT KNIFE / SWORD
+  event.shaped(Item.of('gtceu:flint_knife', '{DisallowContainerItem:0b,GT.Behaviours:{},GT.Tool:{AttackDamage:1.0f,AttackSpeed:3.0f,Damage:0,Enchantability:5,MaxDamage:63},HideFlags:2,RepairCost:0}'), [
+    '   ',
+    ' F ',
+    ' S '
+  ], {
+    F: 'minecraft:flint',
+    S: 'minecraft:stick',
+  })
+  event.shaped(Item.of('gtceu:flint_sword', '{DisallowContainerItem:0b,GT.Behaviours:{},GT.Tool:{AttackDamage:4.0f,AttackSpeed:-2.4f,Damage:0,Enchantability:5,MaxDamage:63},HideFlags:2,RepairCost:0}'), [
+    ' F ',
+    ' F ',
+    ' S '
+  ], {
+    F: 'minecraft:flint',
+    S: 'minecraft:stick',
+  })
+  event.recipes.gtceu.compressor('gtceu:magnetic_neodymium_praseodymium_rod')
+    .itemInputs('9x gtceu:obsidian_plate')
+    .itemOutputs('gtceu:dense_obsidian_plate')
+    .duration(240)
+    .EUt(GTValues.VA[GTValues.HV]);
   //IV Grade Magnetic Rod
   event.recipes.gtceu.polarizer('gtceu:magnetic_neodymium_praseodymium_rod')
     .itemInputs('gtceu:neodymium_praseodymium_rod')
@@ -244,7 +289,7 @@ ServerEvents.recipes(event => {
   //LV EMITTER
   event.remove({ output: 'gtceu:lv_emitter' })
   event.recipes.gtceu.assembler('gtceu:lv_emitter_recipe')
-    .itemInputs(['2x gtceu:mana_steel_single_cable', '4x gtceu:mana_steel_rod', 'gtceu:quartzite_gem', '2x #gtceu:circuits/lv'])
+    .itemInputs(['2x gtceu:manasteel_single_cable', '4x gtceu:manasteel_rod', 'gtceu:quartzite_gem', '2x #gtceu:circuits/lv'])
     .itemOutputs('gtceu:lv_emitter')
     .duration(40)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -252,7 +297,7 @@ ServerEvents.recipes(event => {
   //MV MACHINE HULL AND CASING
   event.remove({ output: 'gtceu:mv_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:mv_machine_casing_assembler')
-    .itemInputs(['4x gtceu:double_aluminium_plate', '4x gtceu:mana_steel_plate'])
+    .itemInputs(['4x gtceu:double_aluminium_plate', '4x gtceu:manasteel_plate'])
     .itemOutputs('gtceu:mv_machine_casing')
     .circuit(8)
     .duration(40)
@@ -263,7 +308,7 @@ ServerEvents.recipes(event => {
     'AMA'
   ], {
     A: 'gtceu:double_aluminium_plate',
-    M: 'gtceu:mana_steel_plate',
+    M: 'gtceu:manasteel_plate',
     W: '#forge:tools/wrenches'
   }
   )
@@ -343,7 +388,7 @@ ServerEvents.recipes(event => {
     'OHO',
     'WCW'
   ], {
-    W: 'gtceu:mana_steel_double_cable',
+    W: 'gtceu:manasteel_double_cable',
     R: 'gtceu:lv_robot_arm',
     H: 'gtceu:lv_machine_hull',
     C: '#gtceu:circuits/mv',
@@ -511,10 +556,21 @@ ServerEvents.recipes(event => {
     'trinium',
     'tritanium'
   ]
+  let laminatorTier = [
+    'cupronickel',
+    'aluminium',
+    'nichrome',
+    'tungstensteel',
+    'hssg',
+    'naquadah',
+    'trinium',
+    'tritanium'
+  ]
   machineTier.forEach((tier, index) => {
     let cableMaterial = tierQuadWire[index]
     let cableType = tierCable[index]
     let coilType = coilTier[index]
+    let lamType = laminatorTier[index]
     event.shaped(`gtceu:${tier}_flora_nurturer`, [
       'CAC',
       'BHB',
@@ -558,7 +614,7 @@ ServerEvents.recipes(event => {
       'AHA',
       'ZBZ'
     ], {
-      A: `gtceu:mana_steel_plate`,
+      A: `gtceu:manasteel_plate`,
       P: `gtceu:${tier}_electric_piston`,
       B: `gtceu:${tier}_electric_pump`,
       C: `#gtceu:circuits/${tier}`,
@@ -571,7 +627,7 @@ ServerEvents.recipes(event => {
       'BHB',
       'ZPZ'
     ], {
-      A: `gtceu:${coilType}_spring`,
+      A: `gtceu:${lamType}_spring`,
       B: `gtceu:${tier}_conveyor_module`,
       C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,

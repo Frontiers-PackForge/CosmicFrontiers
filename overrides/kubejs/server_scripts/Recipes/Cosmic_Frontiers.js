@@ -44,6 +44,23 @@ ServerEvents.recipes(event => {
        event.remove({ id: 'gtceu:extractor/extract_luminite_block' })
        event.remove({ id: 'gtceu:extractor/extract_luminite_nugget' })
 
+       event.remove({ id: 'paraglider:paraglider' })
+       event.shaped('paraglider:paraglider', [
+              'SWS',
+              'WSW',
+              'S S',
+       ], {
+              W: 'cosmiccore:waxed_leather',
+              S: 'minecraft:stick'
+       })
+       event.shaped('nether_remastered:seal_of_the_underworld_item', [
+              'SWS',
+              'WSW',
+              'SWS',
+       ], {
+              S: 'minecraft:echo_shard',
+              W: 'kubejs:seal_shards'
+       })
        event.remove({ output: 'architects_palette:charcoal_block' })
        event.shaped('architects_palette:charcoal_block', [
               'CC',
@@ -51,6 +68,21 @@ ServerEvents.recipes(event => {
        ], {
               C: 'minecraft:charcoal'
        })
+       event.recipes.gtceu.forge_hammer('shatter_the_seal')
+              .itemInputs('nether_remastered:seal_of_the_underworld_item')
+              .itemOutputs('8x kubejs:seal_shards')
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV]);
+       event.recipes.gtceu.macerator('echo_shard_schizm')
+              .itemInputs('minecraft:sculk_catalyst')
+              .chancedOutput('minecraft:echo_shard', 2500, 500)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV]);
+       event.recipes.gtceu.macerator('echo_shard_schizm_worse')
+              .itemInputs('minecraft:sculk')
+              .chancedOutput('minecraft:echo_shard', 250, 500)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.nether_catalyzer('cosmiccore:blackstone_pustule_growth')
               .itemInputs('biomesoplenty:blackstone_bulb')
               .itemOutputs('cosmiccore:blackstone_pustule')
@@ -215,13 +247,13 @@ ServerEvents.recipes(event => {
 
 
        //TODO - Mechanical Flower Recipes
-       event.recipes.botania.runic_altar('gtceu:mana_simulator', ['botania:blacker_lotus', '#gtceu:circuits/mv', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_octal_wire', 'gtceu:mana_steel_octal_wire'], 250000)
-       event.recipes.botania.runic_altar('kubejs:mechanical_thermalily', ['botania:thermalily', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', '#gtceu:circuits/mv'], 50000)
-       event.recipes.botania.runic_altar('kubejs:mechanical_munchdew', ['botania:munchdew', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', '#gtceu:circuits/mv'], 50000)
-       event.recipes.botania.runic_altar('kubejs:mechanical_kekimurus', ['botania:kekimurus', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', '#gtceu:circuits/mv'], 50000)
-       event.recipes.botania.runic_altar('kubejs:mechanical_entropinnyum', ['botania:entropinnyum', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', '#gtceu:circuits/mv'], 50000)
-       event.recipes.botania.runic_altar('kubejs:mechanical_rosa_arcana', ['botania:rosa_arcana', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', '#gtceu:circuits/mv'], 50000)
-       event.recipes.botania.runic_altar('kubejs:mechanical_rafflowsia', ['botania:rafflowsia', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:mana_steel_plate', 'gtceu:mana_steel_plate', '#gtceu:circuits/mv'], 50000)
+       event.recipes.botania.runic_altar('gtceu:mana_simulator', ['botania:blacker_lotus', '#gtceu:circuits/mv', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', 'gtceu:manasteel_octal_wire', 'gtceu:manasteel_octal_wire'], 250000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_thermalily', ['botania:thermalily', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_munchdew', ['botania:munchdew', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_kekimurus', ['botania:kekimurus', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_entropinnyum', ['botania:entropinnyum', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_rosa_arcana', ['botania:rosa_arcana', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
+       event.recipes.botania.runic_altar('kubejs:mechanical_rafflowsia', ['botania:rafflowsia', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
 
 
 

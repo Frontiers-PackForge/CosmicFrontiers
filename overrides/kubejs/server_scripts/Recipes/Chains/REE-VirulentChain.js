@@ -60,7 +60,7 @@ ServerEvents.recipes((event) => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.chemical_reactor('lre_liquor_precipitation_1')
-    //Apparently this recipe is meant to have waste water in it for chrome recycling - PLEASE check balancing before forcing chrome consumption to avoid a net-negitive on chrome ~G
+        //Apparently this recipe is meant to have waste water in it for chrome recycling - PLEASE check balancing before forcing chrome consumption to avoid a net-negitive on chrome ~G
         .inputFluids('gtceu:leached_lre_liquor 700')
         .inputFluids('gtceu:oxalic_acid 300')
         .outputFluids('gtceu:wet_lre_precipitate 1000')
@@ -205,5 +205,72 @@ ServerEvents.recipes((event) => {
         .chancedOutput('2x gtceu:samarium_dust', 6500, 750)
         .duration(100)
         .EUt(GTValues.VA[GTValues.EV]);
+    //Sodium Phosphate Decomp
+    event.recipes.gtceu.electrolyzer('isodecanol_prep')
+        .itemInputs('8x gtceu:sodium_phosphate_dust')
+        .itemOutputs('5x gtceu:phosphate_dust')
+        .itemOutputs('3x gtceu:sodium_dust')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.HV]);
 
+    // Cyanex-272
+    event.recipes.gtceu.chemical_reactor('tert_butanol_maker') // this could be in some kind of magnetic reactor
+        .inputFluids('gtceu:carbon_dioxide 4000')
+        .inputFluids('minecraft:water 5000')
+        .notConsumable('gtceu:ferric_alumina_dust')
+        .outputFluids('gtceu:oxygen 6000')
+        .outputFluids('gtceu:tert_butanol 1000')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.chemical_reactor('isobutene_maker')
+        .inputFluids('gtceu:tert_butanol 1000')
+        .notConsumableFluid('gtceu:oxalic_acid')
+        .outputFluids('gtceu:isobutene 1000')
+        .outputFluids('minecraft:water 1000')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.chemical_reactor('ammonium_fluoride')
+        .inputFluids('gtceu:ammonia 1000')
+        .inputFluids('gtceu:hydrofluoric_acid 1000')
+        .itemOutputs('gtceu:ammonium_fluoride_dust')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.chemical_reactor('244_trimethylpent_2_ene')
+        .inputFluids('gtceu:isobutene 2000')
+        .notConsumable('gtceu:ammonium_fluoride_dust')
+        .notConsumable('gtceu:alumina_dust')
+        .outputFluids('gtceu:244_trimethyl_2_pentene 1000')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.chemical_reactor('244_trimethylpent_1_ene')
+        .inputFluids('gtceu:tert_butanol 2000')
+        .notConsumableFluid('gtceu:sulfuric_acid 1000')
+        .outputFluids('gtceu:244_trimethyl_1_pentene 1000')
+        .outputFluids('minecraft:water 2000')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.chemical_reactor('tert_butylhydroperoxide')
+        .inputFluids('gtceu:tert_butanol 1000')
+        .inputFluids('gtceu:hydrogen_peroxide 1000')
+        .notConsumableFluid('gtceu:sulfuric_acid 1000')
+        .outputFluids('gtceu:tert_butylhydroperoxide 1000')
+        .outputFluids('minecraft:water 1000')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.chemical_reactor("sodium_hypophosphite")
+        .inputFluids('minecraft:water 3000')
+        .itemInputs('3x gtceu:sodium_hydroxide_dust')
+        .itemInputs('4x gtceu:phosphorus_dust')
+        .itemOutputs('3x gtceu:sodium_hypophosphite_dust')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.large_chemical_reactor('cyanex_272')
+        .inputFluids('gtceu:244_trimethyl_1_pentene 1000')
+        .inputFluids('gtceu:244_trimethyl_2_pentene 1000')
+        .notConsumableFluid('gtceu:tert_butylhydroperoxide 1000')
+        .notConsumableFluid('gtceu:acetic_acid')
+        .itemInputs('gtceu:sodium_hypophosphite_dust')
+        .outputFluids('gtceu:cyanex_272 1000')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.IV]);
 });
