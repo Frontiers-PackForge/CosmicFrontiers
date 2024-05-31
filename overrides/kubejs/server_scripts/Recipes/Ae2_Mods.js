@@ -226,12 +226,19 @@ ServerEvents.recipes(event => {
     .itemOutputs('ae2:quantum_ring')
     .duration(160)
     .EUt(GTValues.VA[GTValues.HV]);
+  //GT Screen
+  event.remove({id: 'gtceu:assembler/cover_screen'})
+  event.recipes.gtceu.assembler('gt_cover_screen')
+    .itemInputs(['gtceu:glass_plate', '4x gtceu:steel_foil', '#gtceu:circuits/lv', '4x gtceu:fine_copper_wire'])
+    .itemOutputs('gtceu:computer_monitor_cover')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.LV]);
   //Energy Cell
   event.recipes.gtceu.assembler('ae2:cell_assem')
-    .itemInputs(['4x gtceu:galvanized_ethersteel_plate', '4x ae2:charged_certus_quartz_crystal', 'ae2:energy_acceptor', 'gtceu:lv_sodium_battery'])
+    .itemInputs(['4x gtceu:steel_plate', '4x ae2:charged_certus_quartz_crystal', 'ae2:energy_acceptor', 'gtceu:lv_sodium_battery'])
     .itemOutputs('ae2:energy_cell')
     .duration(160)
-    .EUt(GTValues.VA[GTValues.HV]);
+    .EUt(GTValues.VA[GTValues.LV]);
   //Dense cell
   event.recipes.gtceu.assembler('ae2:dense_cell_assem')
     .itemInputs(['8x ae2:energy_cell', '16x gtceu:galvanized_ethersteel_plate', '32x gtceu:electrum_foil', '8x gtceu:terrasteel_double_wire'])
@@ -292,13 +299,13 @@ ServerEvents.recipes(event => {
   //Formation Core
   event.recipes.gtceu.assembler('ae2:formation_assembly')
     .itemInputs(['4x #forge:flawless_gems/quartzite', 'gtceu:computer_monitor_cover', 'gtceu:lv_robot_arm'])
-    .itemOutputs('4x ae2:formation_core')
+    .itemOutputs('8x ae2:formation_core')
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
   //Annihilation Core
   event.recipes.gtceu.assembler('ae2:annihilation_assembly')
     .itemInputs(['4x #forge:flawless_gems/certus_quartz', 'gtceu:computer_monitor_cover', 'gtceu:lv_robot_arm'])
-    .itemOutputs('4x ae2:annihilation_core')
+    .itemOutputs('8x ae2:annihilation_core')
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
   //Terminal Basic
@@ -583,7 +590,9 @@ ServerEvents.recipes(event => {
     let fluids = lamFluids[index]
     let output = outputAmount[index]
     var polymer;
-    if (index < 3) {
+    if (index === 1){
+      polymer = 'gtceu:rubber_foil'
+    } else if(index < 3) {
       polymer = 'gtceu:polyethylene_foil'
     } else if (index < 7) {
       polymer = 'gtceu:polytetrafluoroethylene_foil'

@@ -53,8 +53,6 @@ ServerEvents.recipes(event => {
         'skyroot', //index 22
         //GTCEU
         'rubber', //index 23
-        //Phantasm
-        'pream', //index 24
         //architect pallets
         'twisted', //index 25
 
@@ -164,8 +162,6 @@ ServerEvents.recipes(event => {
         } else if (index === 23) {
             modID = 'gtceu'
         } else if (index === 24) {
-            modID = 'phantasm'
-        } else if (index === 25) {
             modID = 'architects_palette'
         }
         if (Item.exists(`${modID}:${woodType}_log`)) {
