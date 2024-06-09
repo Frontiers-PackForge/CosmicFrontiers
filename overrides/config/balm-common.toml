@@ -7,6 +7,7 @@ exampleMultilineString = "Hello World"
 #Allowed Values: Hello, World
 exampleEnum = "Hello"
 exampleStringList = ["Hello", "World"]
+exampleResourceLocationSet = ["minecraft:dirt", "minecraft:diamond"]
 exampleIntList = [12, 24]
 exampleEnumList = ["Hello", "World"]
 

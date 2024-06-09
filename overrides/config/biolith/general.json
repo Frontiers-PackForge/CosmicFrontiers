@@ -1,0 +1,6 @@
+{
+  "enable_commands": true,
+  "overworld_replacement_scale": 4,
+  "nether_replacement_scale": 2,
+  "end_replacement_scale": 1
+}

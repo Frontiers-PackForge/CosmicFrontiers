@@ -1,0 +1,13 @@
+
+#Rally settings
+[Common]
+	#The amount of time before the risk disables itself (Default: 70)
+	#Range: > 1
+	riskTimer = 70
+	#The chance of regaining the damage after striking back [0.7 = 70%] (Default 0.7)
+	#Range: 0.0 ~ 1.0
+	regainChance = 0.7
+	#The percentage of damage regained after striking back (1.0 = 100%) (Default 1.0)
+	#Range: 0.001 ~ 1.0
+	regainPercentage = 1.0
+

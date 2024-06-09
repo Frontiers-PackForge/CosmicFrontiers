@@ -1,8 +1,0 @@
-
-
-
-
-profile Saved activate HOT2
-	HOT1
-		"gtceu:lv_assembler"
-

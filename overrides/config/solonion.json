@@ -3,8 +3,8 @@
     "entries": [],
     "isWhitelist": false
   },
-  "trackCount": 64,
-  "resetOnDeath": false,
+  "trackCount": 32,
+  "resetOnDeath": true,
   "limitProgressionToSurvival": false,
   "minFoodsToActivate": 0,
   "benefits": [
@@ -16,38 +16,52 @@
       }
     },
     {
+      "threshold": 5,
+      "benefit": {
+        "effect": "minecraft:strength",
+        "value": 0
+      }
+    },
+    {
+      "threshold": 7,
+      "benefit": {
+        "effect": "minecraft:regeneration",
+        "value": 0
+      }
+    },
+    {
       "threshold": 10,
       "benefit": {
-        "effect": "cold_sweat:insulated",
+        "effect": "minecraft:speed",
+        "value": 0
+      }
+    },
+    {
+      "threshold": 13,
+      "benefit": {
+        "attribute": "minecraft:generic.armor_toughness",
+        "value": 2
+      }
+    },
+    {
+      "threshold": 18,
+      "benefit": {
+        "effect": "minecraft:strength",
         "value": 1
       }
     },
     {
-      "threshold": 20,
-      "benefit": {
-        "effect": "cold_sweat:insulated",
-        "value": 3
-      }
-    },
-    {
-      "threshold": 30,
-      "benefit": {
-        "effect": "cold_sweat:insulated",
-        "value": 5
-      }
-    },
-    {
-      "threshold": 40,
+      "threshold": 25,
       "benefit": {
         "attribute": "minecraft:generic.max_health",
-        "value": 7
+        "value": 4
       }
     },
     {
-      "threshold": 50,
+      "threshold": 31,
       "benefit": {
-        "effect": "cold_sweat:insulated",
-        "value": 9
+        "attribute": "minecraft:generic.max_health",
+        "value": 6
       }
     }
   ],
@@ -57,5 +71,18 @@
   "complexityBenefitEffectModifier": 0.2,
   "complexityNeutralEffectModifier": 0,
   "complexityHarmEffectModifier": -0.2,
-  "foodDiversity": []
+  "foodDiversity": [
+    {
+      "ingredient": "{id:\"item\",item:\"minecraft:golden_carrot\"}",
+      "diversity": 2
+    },
+    {
+      "ingredient": "{id:\"item\",item:\"minecraft:golden_apple\"}",
+      "diversity": 2
+    },
+    {
+      "ingredient": "{id:\"item\",item:\"minecraft:enchanted_golden_apple\"}",
+      "diversity": 5
+    }
+  ]
 }

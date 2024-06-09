@@ -1,15 +1,15 @@
 {
   "client": {
     "disableColoredCableRecipesInJEI": true,
-    "enableFacadesInJEI_comment": "Show facades in JEI ingredient list",
-    "enableFacadesInJEI": true,
-    "enableFacadeRecipesInJEI_comment": "Show facade recipes in JEI for supported blocks",
-    "enableFacadeRecipesInJEI": true,
+    "enableFacadesInRecipeViewer_comment": "Show facades in REI/JEI/EMI item list",
+    "enableFacadesInRecipeViewer": false,
+    "enableFacadeRecipesInRecipeViewer_comment": "Show facade recipes in REI/JEI/EMI for supported blocks",
+    "enableFacadeRecipesInRecipeViewer": true,
     "enableEffects": true,
     "useTerminalUseLargeFont": false,
     "useColoredCraftingStatus": true,
     "PowerUnit_comment": "Power unit shown in AE UIs",
-    "PowerUnit": "fe",
+    "PowerUnit": "ae",
     "showDebugGuiOverlays_comment": "Show debugging GUI overlays",
     "showDebugGuiOverlays": false,
     "showPlacementPreview_comment": "Show a preview of part and facade placement",
@@ -17,12 +17,12 @@
     "notifyForFinishedCraftingJobs_comment": "Show toast when long-running crafting jobs finish.",
     "notifyForFinishedCraftingJobs": true,
     "clearGridOnClose_comment": "Automatically clear the crafting/encoding grid when closing the terminal",
-    "clearGridOnClose": true,
+    "clearGridOnClose": false,
     "terminalMargin_comment": "The vertical margin to apply when sizing terminals. Used to make room for centered item mod search bars",
     "terminalMargin": 25
   },
   "terminals": {
-    "terminalStyle": "full",
+    "terminalStyle": "small",
     "pinAutoCraftedItems_comment": "Pin items that the player auto-crafts to the top of the terminal",
     "pinAutoCraftedItems": true
   },
@@ -40,7 +40,7 @@
     "rememberLastSearch_comment": "Remembers the last search term and restores it when the terminal opens",
     "rememberLastSearch": true,
     "autoFocusSearch_comment": "Automatically focuses the search field when the terminal opens",
-    "autoFocusSearch": true
+    "autoFocusSearch": false
   },
   "tooltips": {
     "showCellUpgrades_comment": "Show installed upgrades in the tooltips of storage cells, color applicators and matter cannons",

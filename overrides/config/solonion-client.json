@@ -1,6 +1,5 @@
 {
   "isFoodTooltipEnabled": true,
-  "showDiversityChangeInTooltip": true,
   "showDisabledTooltip": true,
   "shouldShowInactiveBenefits": true
 }
