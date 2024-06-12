@@ -1,0 +1,31 @@
+{
+  "id": "skilltree:hunter_subclass_2_crafting_1",
+  "bonuses": [
+    {
+      "type": "skilltree:crafted_item_bonus",
+      "item_condition": {
+        "tag_id": "curios:quiver",
+        "type": "skilltree:tag"
+      },
+      "item_bonus": {
+        "chance": 10.0,
+        "operation": 0,
+        "type": "skilltree:quiver_capacity"
+      }
+    }
+  ],
+  "directConnections": [
+    "skilltree:hunter_subclass_2_crafting_2"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+  "iconTexture": "skilltree:textures/icons/hunter_subclass_2_crafting_1.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": 377.34277,
+  "positionY": 32.010185,
+  "buttonSize": 16,
+  "isStartingPoint": false
+}

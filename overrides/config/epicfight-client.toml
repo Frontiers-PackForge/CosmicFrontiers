@@ -1,0 +1,46 @@
+
+[ingame]
+	#Range: 1 ~ 10
+	long_press_count = 2
+	#Allowed Values: NONE, HURT, TARGET
+	health_bar_show_option = "HURT"
+	show_target_indicator = true
+	filter_animation = false
+	#Range: 0.0 ~ 1.0
+	laser_pointer_color = 0.328125
+	enable_laser_pointer = true
+	camera_auto_switch = false
+	auto_preparation = false
+	blood_effects = true
+	no_mining_in_combat = true
+	battle_autoswitch_items = []
+	mining_autoswitch_items = []
+
+	[ingame.ui]
+		stamina_bar_x = 120
+		stamina_bar_y = 10
+		#Allowed Values: LEFT, RIGHT, CENTER
+		stamina_bar_x_base = "RIGHT"
+		#Allowed Values: TOP, BOTTOM, CENTER
+		stamina_bar_y_base = "BOTTOM"
+		weapon_innate_x = 42
+		weapon_innate_y = 48
+		#Allowed Values: LEFT, RIGHT, CENTER
+		weapon_innate_x_base = "RIGHT"
+		#Allowed Values: TOP, BOTTOM, CENTER
+		weapon_innate_y_base = "BOTTOM"
+		passives_x = 70
+		passives_y = 36
+		#Allowed Values: LEFT, RIGHT, CENTER
+		passives_x_base = "RIGHT"
+		#Allowed Values: TOP, BOTTOM, CENTER
+		passives_y_base = "BOTTOM"
+		#Allowed Values: HORIZONTAL, VERTICAL
+		passives_align_direction = "HORIZONTAL"
+		charging_bar_x = -119
+		charging_bar_y = 60
+		#Allowed Values: LEFT, RIGHT, CENTER
+		charging_bar_x_base = "CENTER"
+		#Allowed Values: TOP, BOTTOM, CENTER
+		charging_bar_y_base = "CENTER"
+

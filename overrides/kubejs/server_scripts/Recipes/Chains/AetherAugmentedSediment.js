@@ -13,6 +13,7 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.distillation_tower('aether_air_distillation')
+        .disableDistilleryRecipes(true)
         .inputFluids('gtceu:liquid_aether_air 50000')
         .outputFluids('gtceu:nitrogen 15000')
         .outputFluids('gtceu:tears_of_the_sky 11000')

@@ -4,7 +4,7 @@
 	filename: "all_or_nothing_now"
 	group: "7295A11F0DD1E8D1"
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "ad_astra:tier_4_rocket"
 		tag: { }
 	}

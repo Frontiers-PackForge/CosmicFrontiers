@@ -1,0 +1,37 @@
+{
+  "id": "skilltree:alchemist_offensive_keystone_1",
+  "bonuses": [
+    {
+      "type": "skilltree:damage",
+      "amount": 0.15,
+      "operation": 1,
+      "player_multiplier": {
+        "type": "skilltree:effect_amount"
+      },
+      "enemy_multiplier": {
+        "type": "skilltree:none"
+      },
+      "player_condition": {
+        "type": "skilltree:none"
+      },
+      "damage_condition": {
+        "type": "skilltree:none"
+      },
+      "target_condition": {
+        "type": "skilltree:none"
+      }
+    }
+  ],
+  "directConnections": [],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+  "iconTexture": "skilltree:textures/icons/alchemist_offensive_keystone_1.png",
+  "borderTexture": "skilltree:textures/tooltip/keystone.png",
+  "titleColor": "",
+  "positionX": -53.99701,
+  "positionY": 383.52728,
+  "buttonSize": 32,
+  "isStartingPoint": false
+}

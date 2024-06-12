@@ -1,0 +1,49 @@
+{
+  "id": "skilltree:cook_subclass_1_crafting_3",
+  "bonuses": [
+    {
+      "type": "skilltree:crafted_item_bonus",
+      "item_condition": {
+        "equipment_type": "axe",
+        "type": "skilltree:equipment_type"
+      },
+      "item_bonus": {
+        "skill_bonus": {
+          "chance": 0.01,
+          "player_multiplier": {
+            "type": "skilltree:none"
+          },
+          "enemy_multiplier": {
+            "type": "skilltree:none"
+          },
+          "player_condition": {
+            "type": "skilltree:none"
+          },
+          "damage_condition": {
+            "type": "skilltree:none"
+          },
+          "target_condition": {
+            "type": "skilltree:none"
+          },
+          "type": "skilltree:crit_chance"
+        },
+        "type": "skilltree:skill_bonus"
+      }
+    }
+  ],
+  "directConnections": [
+    "skilltree:cook_subclass_1_crafting_4",
+    "skilltree:cook_subclass_1_crafting_5"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+  "iconTexture": "skilltree:textures/icons/cook_subclass_1_crafting_1.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": 160.97168,
+  "positionY": -394.78323,
+  "buttonSize": 16,
+  "isStartingPoint": false
+}

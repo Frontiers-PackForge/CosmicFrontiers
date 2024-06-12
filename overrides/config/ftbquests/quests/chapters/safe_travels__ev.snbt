@@ -10,6 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["7C8367D922103E19"]
 			description: [
 				"Welcome forth to the age of &5EV&r"
 				""
@@ -18,6 +19,7 @@
 				"&3&oYour lamentations are known solely to the stars, while the void beyond remains oblivious to your motivations.&r"
 				"&c&oFor now.&r"
 			]
+			hide: true
 			id: "5837A875D09D3E35"
 			shape: "hexagon"
 			size: 2.5d
@@ -467,11 +469,12 @@
 				"62D8A986F474023F"
 				"636BBD84AF9B125B"
 			]
+			hide: true
 			id: "44166B73DECEC3CA"
 			tasks: [{
 				id: "554AC50C216CD399"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:turbine_rotor"
 					tag: { }
 				}
@@ -489,7 +492,7 @@
 			tasks: [{
 				id: "72CC81CF85A8869C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item(gtceu:hv_rotor_holder)item(gtceu:ev_rotor_holder)item(gtceu:iv_rotor_holder)item(gtceu:luv_rotor_holder)item(gtceu:zpm_rotor_holder)item(gtceu:uv_rotor_holder))"
@@ -512,7 +515,6 @@
 				{
 					id: "3797DCF3F4F6AB91"
 					item: "gtceu:uranium_hexafluoride_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -533,7 +535,6 @@
 				{
 					id: "356786A651B279D0"
 					item: "gtceu:enriched_uranium_hexafluoride_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -554,7 +555,6 @@
 				{
 					id: "2615586D2050EBE9"
 					item: "gtceu:depleted_uranium_hexafluoride_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -715,7 +715,7 @@
 			tasks: [{
 				id: "298BA0E3BE2138B6"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item(gtceu:raw_wolframite)item(gtceu:raw_scheelite)item(gtceu:raw_tungstate))"
@@ -736,7 +736,6 @@
 				{
 					id: "2B81B835B6C79DA8"
 					item: "gtceu:impure_sodium_tungstate_solution_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -757,7 +756,6 @@
 				{
 					id: "4D67A058603634C0"
 					item: "gtceu:sodium_tungstate_solution_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -778,7 +776,6 @@
 				{
 					id: "144D108BBD9BBBD9"
 					item: "gtceu:trioctylammonium_isopolytungstate_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -868,7 +865,7 @@
 			tasks: [{
 				id: "084FCB67CD984210"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ad_astra:tier_2_rocket"
 					tag: { }
 				}
@@ -906,8 +903,13 @@
 			y: -10.5d
 		}
 		{
-			dependencies: ["0329F3565A24E95F"]
+			dependencies: [
+				"0329F3565A24E95F"
+				"5837A875D09D3E35"
+			]
 			description: ["Placeholder : SOURCE - LRE / MRE "]
+			hide: true
+			hide_dependency_lines: true
 			icon: "gtceu:praseodymium_ingot"
 			id: "478B3130E4E9FE6B"
 			shape: "hexagon"
@@ -1175,7 +1177,6 @@
 				{
 					id: "417360BD5D497301"
 					item: "gtceu:astraline_corrosion_agent_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1199,7 +1200,6 @@
 				{
 					id: "2BDF55E940487A2E"
 					item: "gtceu:astraline_prismatic_solution_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1242,7 +1242,6 @@
 				{
 					id: "7B7E32EBD34E8ACB"
 					item: "gtceu:chloroiridic_acid_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1318,7 +1317,6 @@
 				{
 					id: "6C596085EFA50E1D"
 					item: "gtceu:ruthenium_osmium_tetroxides_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1339,7 +1337,6 @@
 				{
 					id: "0C9FFCA9C49DC0F7"
 					item: "gtceu:chlororuthenic_acid_osmium_tetroxide_solution_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1360,7 +1357,6 @@
 				{
 					id: "304CC98B94061E96"
 					item: "gtceu:chlororuthenic_acid_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{

@@ -9,6 +9,8 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["44DE661BAA434766"]
+			hide: true
 			id: "52DAB014D2101F02"
 			shape: "hexagon"
 			size: 2.0d
@@ -51,7 +53,6 @@
 				{
 					id: "4C17F5BED717F19A"
 					item: "gtceu:radon_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -95,7 +96,6 @@
 				{
 					id: "5EDA98FAC7E82D91"
 					item: "gtceu:liquid_ender_air_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -503,7 +503,7 @@
 			tasks: [{
 				id: "1BD31CB7AE881513"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ad_astra:tier_2_rocket"
 					tag: { }
 				}
@@ -594,7 +594,12 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["57898F6FBA8CE622"]
+			dependencies: [
+				"57898F6FBA8CE622"
+				"52DAB014D2101F02"
+			]
+			hide: true
+			hide_dependency_lines: true
 			id: "454AC43D9EAF4A55"
 			shape: "hexagon"
 			subtitle: "Have You Finished Platline?"
@@ -669,12 +674,6 @@
 			y: -10.5d
 		}
 		{
-			icon: "gtceu:luv_electric_motor"
-			id: "14B7A82E598AFC52"
-			x: 3.0d
-			y: -7.5d
-		}
-		{
 			dependencies: [
 				"5B1D7A68D8767876"
 				"2B5B95B71592BEBC"
@@ -703,7 +702,7 @@
 			tasks: [{
 				id: "73A919D25B713A45"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ad_astra:tier_3_rocket"
 					tag: { }
 				}
@@ -758,7 +757,12 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["4DA37DF15D6955C2"]
+			dependencies: [
+				"4DA37DF15D6955C2"
+				"52DAB014D2101F02"
+			]
+			hide: true
+			hide_dependency_lines: true
 			id: "2275BD1700FF037F"
 			subtitle: "Have You Finished Platline?"
 			tasks: [{
@@ -770,7 +774,12 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["7C2579488595C534"]
+			dependencies: [
+				"7C2579488595C534"
+				"52DAB014D2101F02"
+			]
+			hide: true
+			hide_dependency_lines: true
 			id: "1C8200AE86247D44"
 			subtitle: "Have You Finished Platline?"
 			tasks: [{
@@ -925,6 +934,8 @@
 			y: -10.5d
 		}
 		{
+			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
 			icon: "createdeco:decal_electrical"
 			id: "2D93747545E020B5"
 			shape: "gear"
@@ -936,6 +947,8 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
 			id: "6DE1354E05639C02"
 			tasks: [{
 				id: "6E82A6FFAECBDA94"
@@ -957,6 +970,8 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
 			id: "2C7E62F89AD1FEDD"
 			tasks: [{
 				id: "1E609EF542AFB1C1"
@@ -993,6 +1008,8 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
 			id: "494AE490454887FF"
 			tasks: [{
 				id: "01F0C1E254D3680C"
@@ -1102,24 +1119,15 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["7A6687C64AE5FC75"]
 			id: "4EEA38675CD6EA83"
 			tasks: [{
 				id: "3290D572A3274F86"
 				item: "gtceu:europium_dust"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -12.0d
-		}
-		{
-			id: "24372DF466387782"
-			tasks: [{
-				id: "52255251AB9CF568"
-				item: "gtceu:samarium_dust"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -12.0d
+			x: 7.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["7A6687C64AE5FC75"]
@@ -1185,6 +1193,7 @@
 				"705099C9ED28CF14"
 				"52DAB014D2101F02"
 			]
+			hide: true
 			hide_dependency_lines: true
 			icon: "gtceu:deeply_withered_nether_slag_bucket"
 			id: "2B96AA2FF13432C2"
@@ -1242,7 +1251,6 @@
 				{
 					id: "73BA910EC36BD1C1"
 					item: "gtceu:naquadric_solution_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1263,7 +1271,6 @@
 				{
 					id: "774763E78462E4B5"
 					item: "gtceu:fluoronaquadric_acid_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1284,7 +1291,6 @@
 				{
 					id: "45C101B4059CB9B1"
 					item: "gtceu:naquadah_difluoride_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1305,7 +1311,6 @@
 				{
 					id: "31FEE605F3B41630"
 					item: "gtceu:naquadah_sulfate_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1319,26 +1324,8 @@
 			y: -9.0d
 		}
 		{
-			icon: "gtceu:uranium_hexafluoride_bucket"
-			id: "6B051B2F2297D096"
-			tasks: [
-				{
-					id: "4C422603B13B8E87"
-					item: "gtceu:uranium_hexafluoride_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "7D9028A6F0C2F406"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 6.0d
-			y: 5.5d
-		}
-		{
+			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
 			id: "1695F37249DDB412"
 			subtitle: "Reaction Stabilizer"
 			tasks: [{

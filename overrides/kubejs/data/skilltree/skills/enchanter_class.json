@@ -1,0 +1,27 @@
+{
+  "id": "skilltree:enchanter_class",
+  "bonuses": [
+    {
+      "type": "skilltree:enchantment_requirement",
+      "multiplier": -0.3
+    }
+  ],
+  "directConnections": [
+    "skilltree:enchanter_defensive_1",
+    "skilltree:enchanter_offensive_1",
+    "skilltree:enchanter_defensive_crafting_1",
+    "skilltree:enchanter_offensive_crafting_1",
+    "skilltree:enchanter_crafting_1"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/class.png",
+  "iconTexture": "skilltree:textures/icons/enchanter_class.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": 131.63829,
+  "positionY": -75.99579,
+  "buttonSize": 24,
+  "isStartingPoint": true
+}

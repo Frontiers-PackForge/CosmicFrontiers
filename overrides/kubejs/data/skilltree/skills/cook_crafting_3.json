@@ -1,0 +1,31 @@
+{
+  "id": "skilltree:cook_crafting_3",
+  "bonuses": [
+    {
+      "type": "skilltree:crafted_item_bonus",
+      "item_condition": {
+        "type": "skilltree:food"
+      },
+      "item_bonus": {
+        "effect": "skilltree:life_regeneration_bonus",
+        "duration": 1200,
+        "amplifier": 9,
+        "type": "skilltree:food_effect"
+      }
+    }
+  ],
+  "directConnections": [
+    "skilltree:cook_crafting_notable_1"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+  "iconTexture": "skilltree:textures/icons/cook_crafting_1.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": 1.8614632E-14,
+  "positionY": -67.0,
+  "buttonSize": 16,
+  "isStartingPoint": false
+}

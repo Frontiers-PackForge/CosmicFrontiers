@@ -4,7 +4,7 @@
 	filename: "the_mantle"
 	group: "43A79D0106662C02"
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "cold_sweat:soulspring_lamp"
 		tag: {
 			fuel: 64.0d
@@ -16,10 +16,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"0F8822EE409BED3C"
-				"5F460A1D5DB52638"
-			]
+			dependencies: ["0F8822EE409BED3C"]
 			description: [
 				"Welcome to the mantle; Earth Prime calls this place the '&c&lNether&r.'"
 				""
@@ -28,6 +25,7 @@
 				""
 				"&lNote:&r &6Fire Resistance&r potions also help. But the alchemy is too foreign the rudimentary tools the nether inhabitants once used"
 			]
+			hide: true
 			id: "035D7CBD3AD14321"
 			shape: "hexagon"
 			size: 2.0d
@@ -35,7 +33,7 @@
 			tasks: [{
 				id: "01BB650F6C0E4665"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "cold_sweat:soulspring_lamp"
 					tag: {
 						fuel: 64.0d
@@ -124,10 +122,13 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["035D7CBD3AD14321"]
 			description: [
 				"QB Descriptions / Layout is TBD and Not going to be finalized to 1.0.0."
 				"Expect Frequent Revisions to things, not anything hugely breaking though."
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "7AB48A3CB9DED90C"
 			subtitle: "Follow along in the discord!"
 			tasks: [{
@@ -142,7 +143,7 @@
 			dependencies: ["035D7CBD3AD14321"]
 			description: ["You may be able to cobble one together by shoving a horrid amount of wool into a book..."]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:enchanted_book"
 				tag: {
 					StoredEnchantments: [{
@@ -155,7 +156,7 @@
 			rewards: [{
 				id: "7562A02157E6E973"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:enchanted_book"
 					tag: {
 						StoredEnchantments: [{

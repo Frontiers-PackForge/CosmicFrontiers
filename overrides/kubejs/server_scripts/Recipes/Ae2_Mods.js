@@ -210,7 +210,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.HV]);
   //Molec Assem
   event.recipes.gtceu.assembler('ae2:molecular_assembler_assembly')
-    .itemInputs(['gtceu:stainless_steel_frame', '6x gtceu:glass_plate', '4x gtceu:galvanized_ethersteel_screw', 'gtceu:hv_robot_arm', 'gtceu:crafting_table_cover'])
+    .itemInputs(['gtceu:stainless_steel_frame', '6x gtceu:glass_plate', '4x gtceu:galvanized_ethersteel_screw', 'gtceu:hv_robot_arm', 'minecraft:crafting_table'])
     .itemOutputs('ae2:molecular_assembler')
     .duration(160)
     .EUt(GTValues.VA[GTValues.HV]);
@@ -404,6 +404,19 @@ ServerEvents.recipes(event => {
     .itemInputs(['gtceu:certus_quartz_dust', 'gtceu:nether_quartz_dust', 'minecraft:redstone'])
     .itemOutputs('2x gtceu:fluix_dust')
     .duration(15)
+    .EUt(GTValues.VA[GTValues.HV]);
+    //Pattern Modifier
+    event.recipes.gtceu.assembler('pattern_modifier_recipe_item')
+    .itemInputs(['ae2:pattern_encoding_terminal', 'gtceu:micro_processor_computer', 'ae2:item_storage_cell_1k'])
+    .itemOutputs('expatternprovider:pattern_modifier')
+    .duration(15)
+    .EUt(GTValues.VA[GTValues.MV]);
+    //Patterns bc apparently we lost em
+    event.recipes.gtceu.assembler('pattern_recipe')
+    .itemInputs(['32x gtceu:fine_galvanized_ethersteel_wire', '16x gtceu:stainless_steel_plate', '2x gtceu:advanced_integrated_circuit', 'gtceu:diamond_lens'])
+    .inputFluids(`gtceu:soldering_alloy 576`)
+    .itemOutputs('8x ae2:blank_pattern')
+    .duration(90)
     .EUt(GTValues.VA[GTValues.HV]);
   //Interface Full to Thin and Thin to Full
   event.shapeless('ae2:cable_interface', [

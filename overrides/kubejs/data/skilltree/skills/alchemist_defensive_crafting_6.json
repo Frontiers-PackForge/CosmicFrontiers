@@ -1,0 +1,30 @@
+{
+  "id": "skilltree:alchemist_defensive_crafting_6",
+  "bonuses": [
+    {
+      "type": "skilltree:crafted_item_bonus",
+      "item_condition": {
+        "potion_type": "beneficial",
+        "type": "skilltree:potion"
+      },
+      "item_bonus": {
+        "chance": 0.1,
+        "type": "skilltree:potion_amplification"
+      }
+    }
+  ],
+  "directConnections": [
+    "skilltree:alchemist_defensive_crafting_7"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+  "iconTexture": "skilltree:textures/icons/alchemist_defensive_crafting_1.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": 92.97753,
+  "positionY": 279.05035,
+  "buttonSize": 16,
+  "isStartingPoint": false
+}

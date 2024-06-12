@@ -1,0 +1,32 @@
+{
+  "id": "skilltree:alchemist_offensive_crafting_keystone_1",
+  "bonuses": [
+    {
+      "type": "skilltree:crafted_item_bonus",
+      "item_condition": {
+        "potion_type": "harmful",
+        "type": "skilltree:potion"
+      },
+      "item_bonus": {
+        "chance": 0.5,
+        "type": "skilltree:potion_amplification"
+      }
+    },
+    {
+      "type": "skilltree:recipe_unlock",
+      "recipe_id": "skilltree:weapon_poisoning"
+    }
+  ],
+  "directConnections": [],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+  "iconTexture": "skilltree:textures/icons/alchemist_offensive_crafting_keystone_1.png",
+  "borderTexture": "skilltree:textures/tooltip/keystone.png",
+  "titleColor": "",
+  "positionX": -92.97753,
+  "positionY": 339.0439,
+  "buttonSize": 32,
+  "isStartingPoint": false
+}

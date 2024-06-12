@@ -26,6 +26,8 @@
 	"World Temperature UI Offset" = [0, 0]
 	#Enables the world temperature gauge next to the hotbar
 	"Show World Temperature Gauge" = true
+	#Moves the body temperature icon to make way for the advanced readout when a thermometer is equipped
+	"Move Body Icon For Advanced Info" = true
 
 [Accessibility]
 	#Enables visual distortion effects when the player is too hot or cold

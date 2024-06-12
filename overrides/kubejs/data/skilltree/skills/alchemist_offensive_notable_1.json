@@ -1,0 +1,43 @@
+{
+  "id": "skilltree:alchemist_offensive_notable_1",
+  "bonuses": [
+    {
+      "type": "skilltree:damage",
+      "amount": 0.25,
+      "operation": 1,
+      "player_multiplier": {
+        "type": "skilltree:none"
+      },
+      "enemy_multiplier": {
+        "type": "skilltree:none"
+      },
+      "player_condition": {
+        "type": "skilltree:none"
+      },
+      "damage_condition": {
+        "type": "skilltree:none"
+      },
+      "target_condition": {
+        "effect": "minecraft:poison",
+        "amplifier": 0,
+        "type": "skilltree:has_effect"
+      }
+    }
+  ],
+  "directConnections": [
+    "skilltree:alchemist_offensive_4",
+    "skilltree:alchemist_offensive_crafting_5",
+    "skilltree:alchemist_subclass_1_defensive_1"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+  "iconTexture": "skilltree:textures/icons/alchemist_offensive_notable_1.png",
+  "borderTexture": "skilltree:textures/tooltip/notable.png",
+  "titleColor": "",
+  "positionX": -79.97825,
+  "positionY": 230.52809,
+  "buttonSize": 20,
+  "isStartingPoint": false
+}

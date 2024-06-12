@@ -4,7 +4,7 @@
 	filename: "forgotten_memories"
 	group: "3189B6C95DDE02C3"
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "minecraft:written_book"
 		tag: {
 			AntiqueInk: 1b

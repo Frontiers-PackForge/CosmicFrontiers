@@ -1,0 +1,138 @@
+
+[stamina]
+
+	[stamina.weapons]
+
+		[stamina.weapons.multipliers]
+			#Multipliers will be set and multiplied against the base damage of the given weapon
+			#that is attacking.
+			#Range: 0.0 ~ 10.0
+			base_ranged_stamina_multiplier = 3.0
+			#Default multiplier for all melee based attacks without a defined weapon type.
+			#Range: 0.0 ~ 10.0
+			base_melee_stamina_multiplier = 3.0
+			#Range: 0.0 ~ 10.0
+			dagger_stamina_multiplier = 5.0
+			#Range: 0.0 ~ 10.0
+			sword_stamina_multiplier = 4.5
+			#Range: 0.0 ~ 10.0
+			longsword_stamina_multiplier = 5.0
+			#Range: 0.0 ~ 10.0
+			greatsword_stamina_multiplier = 4.0
+			#Range: 0.0 ~ 10.0
+			uchigatana_stamina_multiplier = 5.0
+			#Range: 0.0 ~ 10.0
+			tachi_stamina_multiplier = 4.0
+			#Range: 0.0 ~ 10.0
+			spear_stamina_multiplier = 5.0
+			#Range: 0.0 ~ 10.0
+			knuckle_stamina_multiplier = 3.5
+			#Range: 0.0 ~ 10.0
+			axe_stamina_multiplier = 5.0
+
+		[stamina.weapons.fixed_cost]
+			#A fixed cost for all weapons under the given weapon types will be set.
+			#If any of these values are set to be greater then 0, then they will be used instead of the above multipliers & weapon damage.
+			#Default multiplier for all melee based attacks without a defined weapon type.
+			#Range: 0 ~ 100
+			base_melee_stamina_multiplier = 0
+			#Range: 0 ~ 100
+			dagger_stamina_multiplier = 0
+			#Range: 0 ~ 100
+			sword_stamina_multiplier = 0
+			#Range: 0 ~ 100
+			longsword_stamina_multiplier = 0
+			#Range: 0 ~ 100
+			greatsword_stamina_multiplier = 0
+			#Range: 0 ~ 100
+			uchigatana_stamina_multiplier = 0
+			#Range: 0 ~ 100
+			tachi_stamina_multiplier = 0
+			#Range: 0 ~ 100
+			spear_stamina_multiplier = 0
+			#Range: 0 ~ 100
+			knuckle_stamina_multiplier = 0
+			#Range: 0 ~ 100
+			axe_stamina_multiplier = 0
+
+	[stamina.skills]
+
+		[stamina.skills.block]
+			#Range: 0.0 ~ 10.0
+			block_stamina_multiplier = 7.5
+
+		[stamina.skills.dodge]
+			#Range: 0 ~ 100
+			roll_stamina_cost = 18
+			#Range: 0 ~ 100
+			step_stamina_cost = 18
+			#Range: 0.0 ~ 10.0
+			dodge_stamina_multiplier = 1.0
+
+		[stamina.skills.demolition_leap]
+			#Range: 0.0 ~ 10.0
+			demolition_leap_multiplier = 1.0
+
+		[stamina.skills.passive]
+			#Range: 0.0 ~ 10.0
+			hyper_vitality_multiplier = 1.0
+			#How much health will be drained when using a skill that consumes stamina.
+			#This value is multiplied by the stamina consumption of a weapon. So, a weapon that consumes more stamina
+			#will consume more hearts. I would HIGHLY suggest keeping this below 1.0, because anything higher could insta-kill you.
+			#Range: 0.0 ~ 10.0
+			forbidden_strength_multiplier = 0.1
+
+		[stamina.skills.identity]
+			#This will be multiplier by the stamina cost of the meteor slam skill
+			#(which is equal to a basic attack with the given weapon).
+			#Range: 0.0 ~ 10.0
+			base_meteor_slam_cost = 1.2
+			#How much fall damage will be mitigated based on the player's remaining stamina
+			#when performing the meteor slam skill. By default it is set to 0.01 or 1% of remaining stamina. A higher value here
+			#will mitigate more damage, and a lower value will mitigate less damage.
+			#NOTE: This value represents percentage of remaining stamina (0.01 = 1% of remaining stamina). So, these values are VERY sensitive.
+			#I would recommend playing around with small increments at a time if you're not happy with the base amount of fall damage mitigation.
+			#Range: 0.0 ~ 1.0
+			base_meteor_slam_fall_damage_mitigator = 0.01
+
+		[stamina.skills.parry]
+			#How much stamina will be drained on a failed parry.
+			#Make the same as block_stamina_multiplier for no penalty.
+			#Range: 0.0 ~ 10.0
+			parry_penalty_multiplier = 7.5
+			#If true, stamina drain will be reduced based on the percentage defined below.
+			#If false, missing stamina will be replenished based on the percentage defined below.
+			parry_drain = false
+			#How much stamina reduction will be applied on a successful parry,
+			#or how much missing stamina will be replenished on a successful parry.
+			#Range: 0 ~ 100
+			parry_percent_modifier = 25
+
+		[stamina.skills.technician]
+			#If true, stamina drain will be reduced based on the percentage defined below.
+			#If false, missing stamina will be replenished based on the percentage defined below.
+			technician_drain = false
+			#How much stamina reduction will be applied on a successful dodge,
+			#or how much missing stamina will be replenished on a successful dodge.
+			#Range: 0 ~ 100
+			technician_percent_modifier = 25
+
+		[stamina.skills.stamina_pillager]
+			#How much missing stamina will be replenished on killing an enemy.
+			#Range: 0 ~ 100
+			stamina_pillager_percent_modifier = 25
+
+[depletion_effects]
+	#The effect ID that will be applied when a player runs out of stamina (default is Mining Fatigue and Weakness respectively).
+	#Refer to https://minecraft.fandom.com/wiki/Effect#Effect_list for a list of the effects and their corresponding IDs
+	effects = [4, 18]
+	#The strength applied to the depletion effect above (The default is 2 and 7. A value such as 4 would apply Weakness IV).
+	#If no value is set here, and an extra effect is added above, then the effect strength will default to 1.
+	effects_strength = [5, 1]
+
+[custom_stamina_systems]
+	#The stamina system will function like Elden Ring's IF the paraglider's 'runningAndSwimmingConsumesStamina' config
+	#is set to true. The player will only drain stamina from running or swimming if they are in combat, or have recently been in combat.
+	#Makes a good middle ground between the traditional RPG stamina system and one that solely focuses on combat.
+	elden_ring_stamina_system = true
+

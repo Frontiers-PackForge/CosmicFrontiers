@@ -1,0 +1,29 @@
+{
+  "id": "skilltree:hunter_class",
+  "bonuses": [
+    {
+      "type": "skilltree:loot_duplication",
+      "chance": 0.15,
+      "multiplier": 1.0,
+      "loot_type": "mobs"
+    }
+  ],
+  "directConnections": [
+    "skilltree:hunter_defensive_1",
+    "skilltree:hunter_offensive_1",
+    "skilltree:hunter_defensive_crafting_1",
+    "skilltree:hunter_offensive_crafting_1",
+    "skilltree:hunter_crafting_1"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/class.png",
+  "iconTexture": "skilltree:textures/icons/hunter_class.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": 131.631,
+  "positionY": 76.008415,
+  "buttonSize": 24,
+  "isStartingPoint": true
+}

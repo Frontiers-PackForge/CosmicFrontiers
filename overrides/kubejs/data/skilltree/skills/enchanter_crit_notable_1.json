@@ -1,0 +1,40 @@
+{
+  "id": "skilltree:enchanter_crit_notable_1",
+  "bonuses": [
+    {
+      "type": "skilltree:crit_damage",
+      "amount": 0.05,
+      "player_multiplier": {
+        "item_condition": {
+          "equipment_type": "weapon",
+          "type": "skilltree:equipment_type"
+        },
+        "type": "skilltree:enchants_amount"
+      },
+      "enemy_multiplier": {
+        "type": "skilltree:none"
+      },
+      "player_condition": {
+        "type": "skilltree:none"
+      },
+      "damage_condition": {
+        "type": "skilltree:none"
+      },
+      "target_condition": {
+        "type": "skilltree:none"
+      }
+    }
+  ],
+  "directConnections": [],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+  "iconTexture": "skilltree:textures/icons/enchanter_crit_notable_1.png",
+  "borderTexture": "skilltree:textures/tooltip/notable.png",
+  "titleColor": "",
+  "positionX": 257.67392,
+  "positionY": -148.76059,
+  "buttonSize": 20,
+  "isStartingPoint": false
+}

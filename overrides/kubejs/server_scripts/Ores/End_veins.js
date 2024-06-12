@@ -43,7 +43,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     )
     event.add('kubejs:end_pitchblend', vein => vein
-        .weight(50).clusterSize(60).density(1.5)
+        .weight(50).clusterSize(60).density(0.5)
         .layer('endstone')
         .heightRangeUniform(15, 80)
         .veinedVeinGenerator(generator => generator

@@ -1,0 +1,35 @@
+{
+  "id": "skilltree:enchanter_subclass_2_defensive_1",
+  "bonuses": [
+    {
+      "type": "skilltree:attribute",
+      "attribute": "skilltree:blocking",
+      "id": "12aa00fb-044b-4212-be46-fb0708e50182",
+      "name": "SkillBonus",
+      "amount": 1.0,
+      "operation": 0,
+      "player_multiplier": {
+        "type": "skilltree:none"
+      },
+      "player_condition": {
+        "type": "skilltree:none"
+      }
+    }
+  ],
+  "directConnections": [
+    "skilltree:enchanter_subclass_2_defensive_2",
+    "skilltree:enchanter_gateway",
+    "skilltree:cook_subclass_1_defensive_1"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+  "iconTexture": "skilltree:textures/icons/enchanter_subclass_2_defensive_1.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": 133.68466,
+  "positionY": -199.5264,
+  "buttonSize": 16,
+  "isStartingPoint": false
+}

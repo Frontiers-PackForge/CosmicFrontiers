@@ -12,8 +12,12 @@ let yeet = (itemName) => {
     
     })
 }
-//Yeet Test # 1
-
+//Butchery knife recipe removal (I swear if this doesn't work I may swear at people)
+ServerEvents.recipes(event => {
+    GTMaterialRegistry.getRegisteredMaterials().forEach(id => {
+      event.remove({  id: `gtceu:shaped/${id.name}_butchery_knife`})
+    })
+  })
 //Delightful Knives getting yeeted
 yeet(/^(?!gtceu:)([^:]+):(.*)knife$/);
 
@@ -29,6 +33,8 @@ ServerEvents.tags('item', event => {
 //Functional Blocks, Gregified
 ServerEvents.recipes(event => { 
     //Farmer's Delight
+    event.remove({ id:'vintagedelight:charcoal_from_magic_vine' })
+    event.remove({ id:'vintagedelight:charcoal_from_magic_vine' })
     event.remove({ output:'farmersdelight:stove' })
     event.shaped( 'farmersdelight:stove', [
         'IGI',

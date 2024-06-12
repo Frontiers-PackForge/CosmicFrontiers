@@ -8,6 +8,8 @@
 	order_index: 1
 	quest_links: [ ]
 	quests: [{
+		dependencies: ["635C885360A8A8A9"]
+		hide: true
 		id: "77234FC682DAD802"
 		subtitle: "Driven by our egos..."
 		tasks: [{

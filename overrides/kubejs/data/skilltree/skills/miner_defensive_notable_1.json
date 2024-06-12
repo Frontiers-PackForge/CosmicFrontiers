@@ -1,0 +1,39 @@
+{
+  "id": "skilltree:miner_defensive_notable_1",
+  "bonuses": [
+    {
+      "type": "skilltree:attribute",
+      "attribute": "minecraft:generic.armor",
+      "id": "2fba9f9f-cbe5-4129-9c4d-968ed0801b52",
+      "name": "SkillBonus",
+      "amount": 2.0,
+      "operation": 0,
+      "player_multiplier": {
+        "item_condition": {
+          "equipment_type": "helmet",
+          "type": "skilltree:equipment_type"
+        },
+        "type": "skilltree:gems_amount"
+      },
+      "player_condition": {
+        "type": "skilltree:none"
+      }
+    }
+  ],
+  "directConnections": [
+    "skilltree:miner_defensive_4",
+    "skilltree:miner_defensive_crafting_5",
+    "skilltree:miner_subclass_2_defensive_1"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+  "iconTexture": "skilltree:textures/icons/miner_defensive_notable_1.png",
+  "borderTexture": "skilltree:textures/tooltip/notable.png",
+  "titleColor": "",
+  "positionX": -159.66446,
+  "positionY": 184.52473,
+  "buttonSize": 20,
+  "isStartingPoint": false
+}

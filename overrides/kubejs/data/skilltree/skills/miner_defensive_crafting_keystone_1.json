@@ -1,0 +1,33 @@
+{
+  "id": "skilltree:miner_defensive_crafting_keystone_1",
+  "bonuses": [
+    {
+      "type": "skilltree:gem_power",
+      "item_condition": {
+        "equipment_type": "armor",
+        "type": "skilltree:equipment_type"
+      },
+      "multiplier": 0.3
+    },
+    {
+      "type": "skilltree:player_sockets",
+      "item_condition": {
+        "equipment_type": "chestplate",
+        "type": "skilltree:equipment_type"
+      },
+      "sockets": 1
+    }
+  ],
+  "directConnections": [],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+  "iconTexture": "skilltree:textures/icons/miner_defensive_crafting_keystone_1.png",
+  "borderTexture": "skilltree:textures/tooltip/keystone.png",
+  "titleColor": "",
+  "positionX": -247.14545,
+  "positionY": 250.03818,
+  "buttonSize": 32,
+  "isStartingPoint": false
+}

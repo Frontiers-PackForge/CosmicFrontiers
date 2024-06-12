@@ -1,0 +1,23 @@
+{
+  "id": "skilltree:enchanter_lesser_2",
+  "bonuses": [
+    {
+      "type": "skilltree:enchantment_requirement",
+      "multiplier": -0.05
+    }
+  ],
+  "directConnections": [
+    "skilltree:enchanter_lesser_4"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+  "iconTexture": "skilltree:textures/icons/enchanter_lesser_1.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": 294.19025,
+  "positionY": -137.51071,
+  "buttonSize": 16,
+  "isStartingPoint": false
+}

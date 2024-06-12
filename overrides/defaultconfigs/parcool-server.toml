@@ -26,6 +26,7 @@
 		permit_VerticalWallRun = true
 		permit_WallJump = true
 		permit_WallSlide = true
+		permit_FastSwim = true
 
 	[Limitations.Stamina]
 
@@ -82,4 +83,6 @@
 			#Limitation of max stamina recovery
 			#Range: > 1
 			max_stamina_recovery_limit = 2147483647
+			#Range: 0 ~ 10000
+			stamina_consumption_of_FastSwim = 3
 

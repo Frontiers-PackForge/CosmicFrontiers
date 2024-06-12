@@ -1,0 +1,25 @@
+{
+  "id": "skilltree:miner_mastery",
+  "bonuses": [
+    {
+      "type": "skilltree:player_sockets",
+      "item_condition": {
+        "equipment_type": "any",
+        "type": "skilltree:equipment_type"
+      },
+      "sockets": 1
+    }
+  ],
+  "directConnections": [],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+  "iconTexture": "skilltree:textures/icons/miner_mastery.png",
+  "borderTexture": "skilltree:textures/tooltip/keystone.png",
+  "titleColor": "",
+  "positionX": -354.67056,
+  "positionY": 204.75749,
+  "buttonSize": 32,
+  "isStartingPoint": false
+}

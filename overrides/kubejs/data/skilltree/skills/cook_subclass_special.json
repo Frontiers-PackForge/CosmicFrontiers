@@ -1,0 +1,22 @@
+{
+  "id": "skilltree:cook_subclass_special",
+  "bonuses": [
+    {
+      "type": "skilltree:gained_experience",
+      "multiplier": 0.5,
+      "experience_source": "mobs"
+    }
+  ],
+  "directConnections": [],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+  "iconTexture": "skilltree:textures/icons/cook_subclass_special_1.png",
+  "borderTexture": "skilltree:textures/tooltip/notable.png",
+  "titleColor": "",
+  "positionX": 211.20055,
+  "positionY": -365.78073,
+  "buttonSize": 20,
+  "isStartingPoint": false
+}

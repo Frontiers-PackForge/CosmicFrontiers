@@ -1,0 +1,49 @@
+{
+  "id": "skilltree:blacksmith_defensive_keystone_1",
+  "bonuses": [
+    {
+      "type": "skilltree:attribute",
+      "attribute": "minecraft:generic.armor",
+      "id": "6dd10797-ea2b-4dcf-93b4-572f7694d44f",
+      "name": "SkillBonus",
+      "amount": 0.1,
+      "operation": 1,
+      "player_multiplier": {
+        "type": "skilltree:none"
+      },
+      "player_condition": {
+        "attribute": "minecraft:generic.armor",
+        "min": 50.0,
+        "type": "skilltree:attribute_value"
+      }
+    },
+    {
+      "type": "skilltree:attribute",
+      "attribute": "minecraft:generic.armor",
+      "id": "1bf01d2a-be20-4c70-9151-979203afb326",
+      "name": "SkillBonus",
+      "amount": 0.1,
+      "operation": 1,
+      "player_multiplier": {
+        "type": "skilltree:none"
+      },
+      "player_condition": {
+        "attribute": "minecraft:generic.armor",
+        "min": 100.0,
+        "type": "skilltree:attribute_value"
+      }
+    }
+  ],
+  "directConnections": [],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+  "iconTexture": "skilltree:textures/icons/blacksmith_defensive_keystone_1.png",
+  "borderTexture": "skilltree:textures/tooltip/keystone.png",
+  "titleColor": "",
+  "positionX": -359.13812,
+  "positionY": -145.01605,
+  "buttonSize": 32,
+  "isStartingPoint": false
+}

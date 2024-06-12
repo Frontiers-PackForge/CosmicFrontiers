@@ -1,0 +1,20 @@
+{
+  "id": "skilltree:enchanter_gateway",
+  "bonuses": [],
+  "directConnections": [
+    "skilltree:cook_subclass_1_defensive_1"
+  ],
+  "longConnections": [
+    "skilltree:miner_gateway"
+  ],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/gateway.png",
+  "iconTexture": "skilltree:textures/icons/void.png",
+  "borderTexture": "skilltree:textures/tooltip/gateway.png",
+  "titleColor": "",
+  "positionX": 106.83738,
+  "positionY": -184.02725,
+  "buttonSize": 30,
+  "isStartingPoint": false
+}

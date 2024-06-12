@@ -70,7 +70,111 @@ ServerEvents.recipes(event => {
         'minecraft:crimson',
         'minecraft:warped'
     ]
+    let mcWood2 = [
+        'oak',
+        'birch',
+        'dark_oak',
+        'acacia',
+        'jungle',
+        'spruce',
+        'cherry',
+        'mangrove',
+        'bamboo',
+        'crimson',
+        'warped'
+    ]
+    mcWood2.forEach((woodType, index, recipe) => {
+        if (Item.exists(`minecraft:stripped_${woodType}_log`)) {
+            event.recipes.gtceu.cutter(`minecraft:stripped_${woodType}_cutting`)
+                .itemInputs(`minecraft:stripped_${woodType}_log`)
+                .itemOutputs([`6x minecraft:${woodType}_planks`, '2x gtceu:wood_dust'])
+                .duration(200)
+                .EUt(7);
+        }
+        if (Item.exists(`minecraft:${woodType}_wood`)) {
+            event.recipes.gtceu.cutter(`minecraft:${woodType}_wood_cutting`)
+                .itemInputs(`minecraft:${woodType}_wood`)
+                .itemOutputs([`6x minecraft:${woodType}_planks`, '2x gtceu:wood_dust'])
+                .duration(200)
+                .EUt(7);
+        }
+        if (Item.exists(`minecraft:stripped_${woodType}_wood`)) {
+            event.recipes.gtceu.cutter(`minecraft:stripped_${woodType}_wood_cutting`)
+                .itemInputs(`minecraft:stripped_${woodType}_wood`)
+                .itemOutputs([`6x minecraft:${woodType}_planks`, '2x gtceu:wood_dust'])
+                .duration(200)
+                .EUt(7);
+        }
+        //Stripped log -> planks
+        if (Item.exists(`minecraft:stripped_${woodType}_log`)) {
+            event.shaped(`4x minecraft:${woodType}_planks`, [
+                '   ',
+                ' T ',
+                ' P '
+            ],
+                {
+                    T: '#forge:tools/saws',
+                    P: `minecraft:stripped_${woodType}_log`
+                })
+        }
+        if (Item.exists(`minecraft:stripped_${woodType}_log`)) {
+            event.shaped(`2x minecraft:${woodType}_planks`, [
+                '   ',
+                '   ',
+                ' P '
+            ],
+                {
+                    P: `minecraft:stripped_${woodType}_log`
+                })
+        }
+        //Wood -> Planks
+        if (Item.exists(`minecraft:${woodType}_wood`)) {
+            event.shaped(`4x minecraft:${woodType}_planks`, [
+                '   ',
+                ' T ',
+                ' P '
+            ],
+                {
+                    T: '#forge:tools/saws',
+                    P: `minecraft:${woodType}_wood`
+                })
+        }
+        if (Item.exists(`minecraft:${woodType}_wood`)) {
+            event.shaped(`2x minecraft:${woodType}_planks`, [
+                '   ',
+                '   ',
+                ' P '
+            ],
+                {
+                    P: `minecraft:${woodType}_wood`
+                })
+        }
+        //Stripped Wood -> Planks
+        if (Item.exists(`minecraft:stripped_${woodType}_wood`)) {
+            event.shaped(`4x minecraft:${woodType}_planks`, [
+                '   ',
+                ' T ',
+                ' P '
+            ],
+                {
+                    T: '#forge:tools/saws',
+                    P: `minecraft:stripped_${woodType}_wood`
+                })
+        }
+        if (Item.exists(`minecraft:stripped_${woodType}_wood`)) {
+            event.shaped(`2x minecraft:${woodType}_planks`, [
+                '   ',
+                '   ',
+                ' P '
+            ],
+                {
+                    P: `minecraft:stripped_${woodType}_wood`
+                })
+        }
+    })
+
     mcWood.forEach((woodType, index, recipe) => {
+
         //Sign
         if (Item.exists(`${woodType}_sign`)) {
             event.recipes.gtceu.assembler(`${woodType}_sign`)
@@ -808,5 +912,20 @@ ServerEvents.recipes(event => {
             .itemOutputs(`ars_nouveau:archwood_fence_gate`)
             .duration(100)
             .EUt(4);
+        event.recipes.gtceu.macerator(`archwood_pulping`)
+            .itemInputs(`ars_nouveau:archwood_planks`)
+            .itemOutputs('gtceu:wood_dust')
+            .duration(100)
+            .EUt(2);
+            event.remove({ output:'framedblocks:framed_chest' })
+            event.shaped( 'framedblocks:framed_chest', [
+                'LFL',
+                'FSF',
+                'LFL'
+            ], {
+                L: '#minecraft:logs',
+                F: 'framedblocks:framed_cube',
+                S: 'minecraft:flint'
+            })  
     }
 })

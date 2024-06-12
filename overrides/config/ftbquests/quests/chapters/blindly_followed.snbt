@@ -4,7 +4,7 @@
 	filename: "blindly_followed"
 	group: "492B135B053E111A"
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "endrem:cursed_eye"
 		tag: {
 			Damage: 0

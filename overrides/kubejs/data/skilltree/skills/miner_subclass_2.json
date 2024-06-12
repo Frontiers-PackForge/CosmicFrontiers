@@ -1,0 +1,28 @@
+{
+  "id": "skilltree:miner_subclass_2",
+  "bonuses": [
+    {
+      "type": "skilltree:player_sockets",
+      "item_condition": {
+        "tag_id": "curios:ring",
+        "type": "skilltree:tag"
+      },
+      "sockets": 1
+    }
+  ],
+  "directConnections": [
+    "skilltree:miner_subclass_2_crafting_1",
+    "skilltree:miner_subclass_2_life_1"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/class.png",
+  "iconTexture": "skilltree:textures/icons/miner_subclass_2.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": -200.40228,
+  "positionY": 283.073,
+  "buttonSize": 24,
+  "isStartingPoint": false
+}

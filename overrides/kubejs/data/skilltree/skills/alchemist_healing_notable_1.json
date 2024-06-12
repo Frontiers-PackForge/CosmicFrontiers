@@ -1,0 +1,35 @@
+{
+  "id": "skilltree:alchemist_healing_notable_1",
+  "bonuses": [
+    {
+      "type": "skilltree:healing",
+      "chance": 1.0,
+      "amount": 2.0,
+      "event_listener": {
+        "item_condition": {
+          "potion_type": "any",
+          "type": "skilltree:potion"
+        },
+        "player_condition": {
+          "type": "skilltree:none"
+        },
+        "player_multiplier": {
+          "type": "skilltree:none"
+        },
+        "type": "skilltree:item_used"
+      }
+    }
+  ],
+  "directConnections": [],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+  "iconTexture": "skilltree:textures/icons/alchemist_healing_notable_1.png",
+  "borderTexture": "skilltree:textures/tooltip/notable.png",
+  "titleColor": "",
+  "positionX": 54.9606,
+  "positionY": 94.42358,
+  "buttonSize": 20,
+  "isStartingPoint": false
+}

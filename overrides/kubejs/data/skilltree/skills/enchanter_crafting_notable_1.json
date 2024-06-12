@@ -1,0 +1,21 @@
+{
+  "id": "skilltree:enchanter_crafting_notable_1",
+  "bonuses": [
+    {
+      "type": "skilltree:free_enchantment",
+      "chance": 0.1
+    }
+  ],
+  "directConnections": [],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+  "iconTexture": "skilltree:textures/icons/enchanter_crafting_notable_1.png",
+  "borderTexture": "skilltree:textures/tooltip/notable.png",
+  "titleColor": "",
+  "positionX": 32.043533,
+  "positionY": -18.498974,
+  "buttonSize": 20,
+  "isStartingPoint": false
+}

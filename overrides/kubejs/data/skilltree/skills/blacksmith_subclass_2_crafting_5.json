@@ -1,0 +1,27 @@
+{
+  "id": "skilltree:blacksmith_subclass_2_crafting_5",
+  "bonuses": [
+    {
+      "type": "skilltree:repair_efficiency",
+      "item_condition": {
+        "equipment_type": "any",
+        "type": "skilltree:equipment_type"
+      },
+      "multiplier": 0.05
+    }
+  ],
+  "directConnections": [
+    "skilltree:miner_subclass_special"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+  "iconTexture": "skilltree:textures/icons/blacksmith_subclass_2_crafting_1.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": -422.37567,
+  "positionY": -32.01235,
+  "buttonSize": 16,
+  "isStartingPoint": false
+}

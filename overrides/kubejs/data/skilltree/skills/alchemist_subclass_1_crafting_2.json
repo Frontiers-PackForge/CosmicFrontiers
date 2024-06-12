@@ -1,0 +1,31 @@
+{
+  "id": "skilltree:alchemist_subclass_1_crafting_2",
+  "bonuses": [
+    {
+      "type": "skilltree:crafted_item_bonus",
+      "item_condition": {
+        "potion_type": "harmful",
+        "type": "skilltree:potion"
+      },
+      "item_bonus": {
+        "chance": 0.1,
+        "type": "skilltree:potion_amplification"
+      }
+    }
+  ],
+  "directConnections": [
+    "skilltree:alchemist_subclass_1_crafting_3",
+    "skilltree:alchemist_subclass_1_crafting_5"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+  "iconTexture": "skilltree:textures/icons/alchemist_subclass_1_crafting_1.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": -160.95645,
+  "positionY": 368.7882,
+  "buttonSize": 16,
+  "isStartingPoint": false
+}

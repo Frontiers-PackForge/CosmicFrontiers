@@ -1,0 +1,40 @@
+{
+  "id": "skilltree:alchemist_crit_1",
+  "bonuses": [
+    {
+      "type": "skilltree:crit_chance",
+      "chance": 0.02,
+      "player_multiplier": {
+        "type": "skilltree:none"
+      },
+      "enemy_multiplier": {
+        "type": "skilltree:none"
+      },
+      "player_condition": {
+        "type": "skilltree:none"
+      },
+      "damage_condition": {
+        "type": "skilltree:none"
+      },
+      "target_condition": {
+        "effect": "minecraft:poison",
+        "amplifier": 0,
+        "type": "skilltree:has_effect"
+      }
+    }
+  ],
+  "directConnections": [
+    "skilltree:alchemist_crit_notable_1"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+  "iconTexture": "skilltree:textures/icons/alchemist_crit_1.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": 27.99701,
+  "positionY": 297.53247,
+  "buttonSize": 16,
+  "isStartingPoint": false
+}

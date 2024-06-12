@@ -1,0 +1,42 @@
+{
+  "id": "skilltree:cook_offensive_notable_1",
+  "bonuses": [
+    {
+      "type": "skilltree:damage",
+      "amount": 0.2,
+      "operation": 1,
+      "player_multiplier": {
+        "type": "skilltree:none"
+      },
+      "enemy_multiplier": {
+        "type": "skilltree:none"
+      },
+      "player_condition": {
+        "min": 15,
+        "type": "skilltree:food_level"
+      },
+      "damage_condition": {
+        "type": "skilltree:none"
+      },
+      "target_condition": {
+        "type": "skilltree:none"
+      }
+    }
+  ],
+  "directConnections": [
+    "skilltree:cook_offensive_4",
+    "skilltree:cook_offensive_crafting_5",
+    "skilltree:cook_subclass_1_defensive_1"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+  "iconTexture": "skilltree:textures/icons/cook_offensive_notable_1.png",
+  "borderTexture": "skilltree:textures/tooltip/notable.png",
+  "titleColor": "",
+  "positionX": 79.98579,
+  "positionY": -230.5256,
+  "buttonSize": 20,
+  "isStartingPoint": false
+}

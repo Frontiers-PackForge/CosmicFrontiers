@@ -10,6 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["2823B3BAEF820B50"]
 			description: [
 				"Welcome to HV! General Chem is harder here, however you now can unlock AE2 Autocrafting"
 				""
@@ -22,6 +23,7 @@
 				""
 				"blah blah, Ghostipedia is full of soup."
 			]
+			hide: true
 			id: "1E72D62913EEB4EE"
 			shape: "hexagon"
 			size: 2.0d
@@ -420,7 +422,6 @@
 				{
 					id: "3CAB4687214ACC18"
 					item: "gtceu:red_mud_slurry_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -441,7 +442,6 @@
 				{
 					id: "00F1626A2D1AACF9"
 					item: "gtceu:neutralised_red_mud_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -462,7 +462,6 @@
 				{
 					id: "24815ECEA5DE58B0"
 					item: "gtceu:red_mud_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -483,7 +482,6 @@
 				{
 					id: "6D7EBCAC9D7760B6"
 					item: "gtceu:heated_sodium_hydroxide_bauxite_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -504,7 +502,6 @@
 				{
 					id: "474F143BF7BC350C"
 					item: "gtceu:sodium_hydroxide_bauxite_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -518,6 +515,8 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["1E72D62913EEB4EE"]
+			hide_dependency_lines: true
 			id: "0545E9231494F424"
 			tasks: [{
 				id: "3EE2FFE133581598"
@@ -678,7 +677,6 @@
 				{
 					id: "2981D233CC1C7937"
 					item: "gtceu:depleted_uranium_hexafluoride_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -844,7 +842,6 @@
 				{
 					id: "0E6705CCDA5AF034"
 					item: "gtceu:tetrafluoroethylene_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -865,7 +862,6 @@
 				{
 					id: "5A847D8BDB6C79A7"
 					item: "gtceu:hydrofluoric_acid_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -975,7 +971,6 @@
 				{
 					id: "031B88E0E04DD233"
 					item: "gtceu:ethylene_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -996,7 +991,6 @@
 				{
 					id: "0C3F2E6500574E24"
 					item: "gtceu:propane_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1017,7 +1011,6 @@
 				{
 					id: "5B767939585E9899"
 					item: "gtceu:ethane_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1038,7 +1031,6 @@
 				{
 					id: "079148F2C7138801"
 					item: "gtceu:butene_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1063,7 +1055,6 @@
 				{
 					id: "395072D9A70F20EB"
 					item: "gtceu:toluene_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1084,7 +1075,6 @@
 				{
 					id: "7EC9139ADD8AF701"
 					item: "gtceu:butadiene_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1109,7 +1099,6 @@
 				{
 					id: "33C9C9A688FEE9C8"
 					item: "gtceu:benzene_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1134,7 +1123,6 @@
 				{
 					id: "7DB76E6727804470"
 					item: "gtceu:methane_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1155,7 +1143,6 @@
 				{
 					id: "309F7EB0092DB548"
 					item: "gtceu:propene_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1235,7 +1222,6 @@
 				{
 					id: "2D680160BB1CD978"
 					item: "gtceu:cooperite_solution_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1256,7 +1242,6 @@
 				{
 					id: "5484DCF72C6A05CC"
 					item: "gtceu:plat_depleted_cooperite_solution_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1313,7 +1298,6 @@
 				{
 					id: "11A121CAC0D1EECD"
 					item: "gtceu:nickel_carbonyl_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1392,7 +1376,6 @@
 				{
 					id: "3D7C3F1F42D16F2C"
 					item: "gtceu:methyl_acetate_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1414,7 +1397,6 @@
 				{
 					id: "7D83022363F52956"
 					item: "gtceu:methanol_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1436,7 +1418,6 @@
 				{
 					id: "1BB5E3AFD1714FB9"
 					item: "gtceu:phenol_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1458,7 +1439,6 @@
 				{
 					id: "6950814444FE4145"
 					item: "gtceu:carbon_dioxide_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1480,7 +1460,6 @@
 				{
 					id: "629D075FD09BD5E2"
 					item: "gtceu:creosote_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1502,7 +1481,6 @@
 				{
 					id: "6EFDBD5D434E2DED"
 					item: "gtceu:carbon_monoxide_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1524,7 +1502,6 @@
 				{
 					id: "2301DEC971377924"
 					item: "gtceu:ethanol_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1546,7 +1523,6 @@
 				{
 					id: "6E1828C62625C3FC"
 					item: "gtceu:acetic_acid_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1568,7 +1544,6 @@
 				{
 					id: "5EBE5414FB1D0B3F"
 					item: "gtceu:acetone_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1590,7 +1565,6 @@
 				{
 					id: "14A0C92CF0E61FE0"
 					item: "gtceu:hydrogen_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1611,7 +1585,7 @@
 			tasks: [{
 				id: "41D26221F332667F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ad_astra:tier_1_rocket"
 					tag: { }
 				}
@@ -1656,26 +1630,6 @@
 			y: -1.5d
 		}
 		{
-			icon: "gtceu:hydrofluoric_acid_bucket"
-			id: "6904FB06349492BA"
-			tasks: [
-				{
-					id: "6CC3E4E05D1A90F3"
-					item: "gtceu:hydrofluoric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "36C70CA2C4439AC5"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 27.0d
-			y: 0.5d
-		}
-		{
 			dependencies: ["78F9D5E55175D63B"]
 			id: "26E530EE80A932EB"
 			shape: "hexagon"
@@ -1693,7 +1647,7 @@
 			tasks: [{
 				count: 64L
 				id: "4F8426F45A4EB507"
-				item: { Count: 64b, id: "gtceu:dried_mixed_lre_precipitate_dust" }
+				item: { Count: 64, id: "gtceu:dried_mixed_lre_precipitate_dust" }
 				type: "item"
 			}]
 			x: 8.5d
@@ -1705,7 +1659,7 @@
 			tasks: [{
 				count: 64L
 				id: "63EE6EB3A825DC57"
-				item: { Count: 64b, id: "gtceu:leached_lre_residue_dust" }
+				item: { Count: 64, id: "gtceu:leached_lre_residue_dust" }
 				type: "item"
 			}]
 			x: 11.75d
@@ -1755,7 +1709,6 @@
 				{
 					id: "7224C47FF1D9722C"
 					item: "gtceu:xenotime_slag_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1776,7 +1729,6 @@
 				{
 					id: "44324CBABBEF910B"
 					item: "gtceu:xenotime_concentrate_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1797,7 +1749,6 @@
 				{
 					id: "11E3656D15E5A039"
 					item: "gtceu:lre_slag_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1818,7 +1769,6 @@
 				{
 					id: "055D50D90E9D917B"
 					item: "gtceu:mixed_lre_leachate_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1842,7 +1792,6 @@
 				{
 					id: "761E4B5F309CB291"
 					item: "gtceu:mixed_lre_leachate_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1863,7 +1812,6 @@
 				{
 					id: "30F378ECF9451C43"
 					item: "gtceu:wet_lre_precipitate_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1904,7 +1852,6 @@
 				{
 					id: "12BC876CFAB447FB"
 					item: "gtceu:enriched_uranium_hexafluoride_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1925,7 +1872,6 @@
 				{
 					id: "6FF1813D9F3899E6"
 					item: "gtceu:uranium_hexafluoride_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{

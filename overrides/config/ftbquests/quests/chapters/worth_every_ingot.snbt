@@ -8,6 +8,8 @@
 	order_index: 0
 	quest_links: [ ]
 	quests: [{
+		dependencies: ["2AF737CA4D527559"]
+		hide: true
 		id: "635C885360A8A8A9"
 		size: 2.0d
 		subtitle: "holding onto pain..."

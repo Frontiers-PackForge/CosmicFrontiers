@@ -1,0 +1,35 @@
+{
+  "id": "skilltree:blacksmith_class",
+  "bonuses": [
+    {
+      "type": "skilltree:crafted_item_bonus",
+      "item_condition": {
+        "equipment_type": "any",
+        "type": "skilltree:equipment_type"
+      },
+      "item_bonus": {
+        "chance": 0.25,
+        "operation": 1,
+        "type": "skilltree:durability"
+      }
+    }
+  ],
+  "directConnections": [
+    "skilltree:blacksmith_defensive_1",
+    "skilltree:blacksmith_offensive_1",
+    "skilltree:blacksmith_defensive_crafting_1",
+    "skilltree:blacksmith_offensive_crafting_1",
+    "skilltree:blacksmith_crafting_1"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/class.png",
+  "iconTexture": "skilltree:textures/icons/blacksmith_class.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": -131.631,
+  "positionY": -76.008415,
+  "buttonSize": 24,
+  "isStartingPoint": true
+}

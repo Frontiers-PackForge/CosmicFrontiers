@@ -1,0 +1,23 @@
+{
+  "id": "skilltree:hunter_crafting_1",
+  "bonuses": [
+    {
+      "type": "skilltree:arrow_retrieval",
+      "chance": 0.05
+    }
+  ],
+  "directConnections": [
+    "skilltree:hunter_crafting_2"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+  "iconTexture": "skilltree:textures/icons/hunter_crafting_1.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": 104.7852,
+  "positionY": 60.5067,
+  "buttonSize": 16,
+  "isStartingPoint": false
+}

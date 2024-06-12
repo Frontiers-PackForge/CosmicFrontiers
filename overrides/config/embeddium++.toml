@@ -12,7 +12,7 @@
 		#Set Fullscreen mode
 		#Borderless let you change between screens more faster and move your mouse across monitors
 		#Allowed Values: WINDOWED, BORDERLESS, FULLSCREEN
-		fullscreen = "FULLSCREEN"
+		fullscreen = "WINDOWED"
 		#Configure FPS Display gravity
 		#Places counter on specified corner of your screen
 		#Allowed Values: LEFT, CENTER, RIGHT
@@ -142,7 +142,7 @@
 			#Configure Darkness Mode
 			#Each config changes what is considered 'true darkness'
 			#Allowed Values: TOTAL_DARKNESS, PITCH_BLACK, DARK, DIM, OFF
-			mode = "TOTAL_DARKNESS"
+			mode = "OFF"
 			#Configure fog brightness on nether when darkness is enabled
 			#Range: 0.0 ~ 1.0
 			endFogBright = 0.5

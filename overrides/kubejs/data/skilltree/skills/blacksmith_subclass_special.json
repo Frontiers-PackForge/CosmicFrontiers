@@ -1,0 +1,33 @@
+{
+  "id": "skilltree:blacksmith_subclass_special",
+  "bonuses": [
+    {
+      "type": "skilltree:crafted_item_bonus",
+      "item_condition": {
+        "equipment_type": "weapon",
+        "type": "skilltree:equipment_type"
+      },
+      "item_bonus": {
+        "skill_bonus": {
+          "chance": 0.05,
+          "multiplier": 1.0,
+          "loot_type": "mobs",
+          "type": "skilltree:loot_duplication"
+        },
+        "type": "skilltree:skill_bonus"
+      }
+    }
+  ],
+  "directConnections": [],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+  "iconTexture": "skilltree:textures/icons/blacksmith_subclass_special_1.png",
+  "borderTexture": "skilltree:textures/tooltip/notable.png",
+  "titleColor": "",
+  "positionX": -211.17679,
+  "positionY": -365.8061,
+  "buttonSize": 20,
+  "isStartingPoint": false
+}

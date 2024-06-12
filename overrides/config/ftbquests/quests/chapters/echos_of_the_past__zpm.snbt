@@ -4,7 +4,7 @@
 	filename: "echos_of_the_past__zpm"
 	group: "7295A11F0DD1E8D1"
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "gateways:gate_pearl"
 		tag: {
 			gateway: "gateways:hellish_fortress"

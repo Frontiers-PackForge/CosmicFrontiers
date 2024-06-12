@@ -1,0 +1,28 @@
+{
+  "id": "skilltree:blacksmith_subclass_2",
+  "bonuses": [
+    {
+      "type": "skilltree:repair_efficiency",
+      "item_condition": {
+        "equipment_type": "any",
+        "type": "skilltree:equipment_type"
+      },
+      "multiplier": 1.0
+    }
+  ],
+  "directConnections": [
+    "skilltree:blacksmith_subclass_2_crafting_1",
+    "skilltree:blacksmith_subclass_2_life_1"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/class.png",
+  "iconTexture": "skilltree:textures/icons/blacksmith_subclass_2.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": -345.34277,
+  "positionY": -32.010185,
+  "buttonSize": 24,
+  "isStartingPoint": false
+}

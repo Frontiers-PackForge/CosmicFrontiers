@@ -1,0 +1,10 @@
+ {
+    "type": "wom:agony",
+    "attributes": {
+        "common": {
+            "armor_negation": 30,
+                "impact": 1.1,
+            "max_strikes": 5
+        }
+    }
+ }

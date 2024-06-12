@@ -1,0 +1,54 @@
+{
+  "id": "skilltree:new_skill_1",
+  "bonuses": [
+    {
+      "type": "skilltree:all_attributes",
+      "id": "2ea35f38-0c9d-4753-bd17-d796bcb6f713",
+      "name": "Skill",
+      "amount": 0.05,
+      "operation": 2,
+      "player_multiplier": {
+        "type": "skilltree:none"
+      },
+      "player_condition": {
+        "type": "skilltree:none"
+      }
+    },
+    {
+      "type": "skilltree:attribute",
+      "attribute": "minecraft:generic.armor",
+      "id": "49892a1f-74cf-4a8f-a184-ee85872c644b",
+      "name": "Skill",
+      "amount": 4.0,
+      "operation": 0,
+      "player_multiplier": {
+        "type": "skilltree:none"
+      },
+      "player_condition": {
+        "type": "skilltree:none"
+      }
+    }
+  ],
+  "directConnections": [],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/class.png",
+  "iconTexture": "ftblibrary:textures/icons/heart.png",
+  "borderTexture": "skilltree:textures/tooltip/gateway.png",
+  "title": "Core of the Soul",
+  "titleColor": "",
+  "positionX": 0.0,
+  "positionY": 0.0,
+  "buttonSize": 32,
+  "isStartingPoint": true,
+  "description": [
+    {
+      "f_131101_": {
+        "f_131257_": 8092645
+      },
+      "f_131102_": true,
+      "text": "Holy Fuck SkillTree Ah Thing"
+    }
+  ]
+}

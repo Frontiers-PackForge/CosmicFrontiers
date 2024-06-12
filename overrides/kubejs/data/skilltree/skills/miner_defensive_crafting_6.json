@@ -1,0 +1,27 @@
+{
+  "id": "skilltree:miner_defensive_crafting_6",
+  "bonuses": [
+    {
+      "type": "skilltree:gem_power",
+      "item_condition": {
+        "equipment_type": "armor",
+        "type": "skilltree:equipment_type"
+      },
+      "multiplier": 0.1
+    }
+  ],
+  "directConnections": [
+    "skilltree:miner_defensive_crafting_7"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+  "iconTexture": "skilltree:textures/icons/miner_defensive_crafting_1.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": -195.18297,
+  "positionY": 220.03984,
+  "buttonSize": 16,
+  "isStartingPoint": false
+}

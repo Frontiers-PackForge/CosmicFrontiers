@@ -1,0 +1,18 @@
+{
+  "id": "skilltree:miner_gateway",
+  "bonuses": [],
+  "directConnections": [
+    "skilltree:alchemist_subclass_1_defensive_1"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/gateway.png",
+  "iconTexture": "skilltree:textures/icons/void.png",
+  "borderTexture": "skilltree:textures/tooltip/gateway.png",
+  "titleColor": "",
+  "positionX": -106.83738,
+  "positionY": 184.02725,
+  "buttonSize": 30,
+  "isStartingPoint": false
+}

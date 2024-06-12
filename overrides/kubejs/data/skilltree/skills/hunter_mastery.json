@@ -1,0 +1,23 @@
+{
+  "id": "skilltree:hunter_mastery",
+  "bonuses": [
+    {
+      "type": "skilltree:loot_duplication",
+      "chance": 0.15,
+      "multiplier": 2.0,
+      "loot_type": "mobs"
+    }
+  ],
+  "directConnections": [],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+  "iconTexture": "skilltree:textures/icons/hunter_mastery.png",
+  "borderTexture": "skilltree:textures/tooltip/keystone.png",
+  "titleColor": "",
+  "positionX": 354.65396,
+  "positionY": 204.78629,
+  "buttonSize": 32,
+  "isStartingPoint": false
+}

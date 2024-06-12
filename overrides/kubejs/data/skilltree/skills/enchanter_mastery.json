@@ -1,0 +1,24 @@
+{
+  "id": "skilltree:enchanter_mastery",
+  "bonuses": [
+    {
+      "type": "skilltree:enchantment_amplification",
+      "enchantment_condition": {
+        "type": "skilltree:none"
+      },
+      "chance": 1.0
+    }
+  ],
+  "directConnections": [],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+  "iconTexture": "skilltree:textures/icons/enchanter_mastery.png",
+  "borderTexture": "skilltree:textures/tooltip/keystone.png",
+  "titleColor": "",
+  "positionX": 354.67056,
+  "positionY": -204.75749,
+  "buttonSize": 32,
+  "isStartingPoint": false
+}

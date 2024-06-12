@@ -1,0 +1,21 @@
+{
+  "id": "skilltree:alchemist_crafting_notable_1",
+  "bonuses": [
+    {
+      "type": "skilltree:recipe_unlock",
+      "recipe_id": "skilltree:potion_mixing"
+    }
+  ],
+  "directConnections": [],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+  "iconTexture": "skilltree:textures/icons/alchemist_crafting_notable_1.png",
+  "borderTexture": "skilltree:textures/tooltip/notable.png",
+  "titleColor": "",
+  "positionX": 1.4083439E-14,
+  "positionY": 37.0,
+  "buttonSize": 20,
+  "isStartingPoint": false
+}

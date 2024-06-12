@@ -26,4 +26,6 @@ StartupEvents.registry('item', event => {
     event.create('prepared_quantum_cpu_wafer').displayName('Prepared Quantum CPU Wafer')
     event.create('seal_shards').displayName('Shards of the Underworld')
     event.create('cosmic_meatballs').displayName('Cosmic Meatballs')
+
+    event.create('rebreather', 'helmet').displayName('Hardened Rebreather').maxDamage(1024).modifyTier(tier => 'breather')
 })

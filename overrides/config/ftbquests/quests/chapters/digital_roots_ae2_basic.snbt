@@ -139,18 +139,6 @@
 		}
 		{
 			dependencies: ["30E09C21E7032519"]
-			id: "3B86393226CB63D9"
-			subtitle: "My god, That's Costly"
-			tasks: [{
-				id: "111E4C384ACB1CA1"
-				item: "gtceu:mana_steel_hex_wire"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["3B86393226CB63D9"]
 			description: [
 				"Ouch, That's a &lLOT&r of Mana Steel. Well it's the best we can make rn."
 				""
@@ -357,7 +345,7 @@
 			tasks: [{
 				id: "004D7C4B8C954603"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "item_tag(gtceu:circuits/lv)"
@@ -377,7 +365,7 @@
 			tasks: [{
 				id: "5A798376AD596E6A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "item_tag(gtceu:circuits/mv)"
@@ -397,7 +385,7 @@
 			tasks: [{
 				id: "3F67E4E03B3D7297"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "item_tag(gtceu:circuits/hv)"
@@ -416,7 +404,7 @@
 			tasks: [{
 				id: "5A595FF00CC764A2"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "item_tag(gtceu:circuits/ev)"
@@ -436,7 +424,7 @@
 			tasks: [{
 				id: "11A9CB4698FB5E96"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "item_tag(gtceu:circuits/iv)"

@@ -1,0 +1,26 @@
+{
+  "id": "skilltree:enchanter_defensive_crafting_5",
+  "bonuses": [
+    {
+      "type": "skilltree:enchantment_amplification",
+      "enchantment_condition": {
+        "type": "skilltree:armor"
+      },
+      "chance": 0.1
+    }
+  ],
+  "directConnections": [
+    "skilltree:enchanter_defensive_crafting_6"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+  "iconTexture": "skilltree:textures/icons/enchanter_defensive_crafting_1.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": 172.6659,
+  "positionY": -207.04056,
+  "buttonSize": 16,
+  "isStartingPoint": false
+}

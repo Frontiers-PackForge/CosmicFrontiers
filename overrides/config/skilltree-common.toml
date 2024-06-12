@@ -41,15 +41,8 @@
 	#Example: Blacklisting whole mod: ["<mod_id>:*"]
 	#Example: Blacklisting all items: ["*:*"]
 	"IDs of items that shouldn't have sockets" = []
-	#You can force items from other mods into equipmentType categories here
-	"Force into helmets category" = []
-	"Force into chestplates category" = []
-	"Force into leggings category" = []
-	"Force into boots category" = []
-	"Force into shields category" = []
-	"Force into melee weapons category" = []
-	"Force into ranged weapons category" = []
 
+#You can force items from other mods into equipmentType categories here
 ["Amnesia Scroll"]
 	#How much levels (percentage) player lose using amnesia scroll
 	#Range: 0.0 ~ 1.0

@@ -1,0 +1,25 @@
+{
+  "id": "skilltree:miner_subclass_2_crafting_notable_1",
+  "bonuses": [
+    {
+      "type": "skilltree:gem_power",
+      "item_condition": {
+        "tag_id": "forge:curios/jewelry",
+        "type": "skilltree:tag"
+      },
+      "multiplier": 0.25
+    }
+  ],
+  "directConnections": [],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+  "iconTexture": "skilltree:textures/icons/miner_subclass_2_crafting_notable_1.png",
+  "borderTexture": "skilltree:textures/tooltip/notable.png",
+  "titleColor": "",
+  "positionX": -283.95526,
+  "positionY": 379.7826,
+  "buttonSize": 20,
+  "isStartingPoint": false
+}

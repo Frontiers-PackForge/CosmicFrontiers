@@ -95,22 +95,22 @@ ServerEvents.recipes(event => {
               .duration(160)
               .EUt(GTValues.VA[GTValues.LV] / 2);
        event.recipes.gtceu.mixer('cosmiccore:sediment_sludge_mixing')
-              .itemInputs('biomesoplenty:blackstone_bulb')
-              .inputFluids(Fluid.of('minecraft:water', 1000))
-              .outputFluids(Fluid.of('gtceu:nether_sediment_sludge', 1000))
+              .itemInputs('3x biomesoplenty:blackstone_bulb')
+              .inputFluids(Fluid.of('biomesoplenty:blood', 1000))
+              .outputFluids(Fluid.of('gtceu:nether_sediment_sludge', 750))
               .duration(80)
               .circuit(1)
               .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.mixer('cosmiccore:sediment_sludge_mixing_good')
               .itemInputs('2x biomesoplenty:blackstone_bulb')
               .inputFluids(Fluid.of('gtceu:ethanol', 250))
-              .outputFluids(Fluid.of('gtceu:nether_sediment_sludge', 1000))
+              .outputFluids(Fluid.of('gtceu:nether_sediment_sludge', 1500))
               .duration(40)
               .circuit(2)
               .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.flora_nurturer('cosmiccore:pearl_cultivation')
               .notConsumable('nethersdelight:propelpearl')
-              .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 500))
+              .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 750))
               .itemOutputs('2x cosmiccore:overloaded_pearls')
               .itemOutputs('2x nethersdelight:propelpearl')
               .chancedOutput(Item.of('nethersdelight:propelpearl', 1), 5000, 500)
@@ -242,8 +242,48 @@ ServerEvents.recipes(event => {
               .blastFurnaceTemp(3600)
               .duration(1800)
               .EUt(GTValues.VA[GTValues.HV]);
-
-
+       event.recipes.gtceu.assembler('scroll_not_as_bad')
+              .itemInputs(['ars_nouveau:blank_parchment', '6x paraglider:spirit_orb', '2x apotheosis:gem_dust'])
+              .inputFluids('gtceu:source_oils 100')
+              .itemOutputs('2x skilltree:wisdom_scroll')
+              .circuit(1)
+              .duration(600)
+              .EUt(GTValues.VA[GTValues.LV]);
+       event.recipes.gtceu.assembler('nano_space_default')
+              .itemInputs(['gtceu:nanomuscle_chestplate', '2x ad_astra:large_gas_tank'])
+              .itemOutputs(Item.of('cosmiccore:space_nanomuscle_chestplate', '{affix_data:{sockets:0}}'))
+              .circuit(1)
+              .duration(600)
+              .EUt(GTValues.VA[GTValues.HV]);
+       event.recipes.gtceu.assembler('adv_nano_space_default')
+              .itemInputs(['gtceu:advanced_nanomuscle_chestplate', '2x ad_astra:large_gas_tank'])
+              .itemOutputs(Item.of('cosmiccore:space_advanced_nanomuscle_chestplate', '{affix_data:{sockets:0}}'))
+              .circuit(1)
+              .duration(600)
+              .EUt(GTValues.VA[GTValues.HV]);
+       event.shaped('skilltree:wisdom_scroll', [
+              'SWS',
+              'WDW',
+              'SWS',
+       ], {
+              S: 'minecraft:paper',
+              W: 'paraglider:spirit_orb',
+              D: 'apotheosis:gem_dust'
+       })
+       event.shaped('cosmiccore:space_advanced_nanomuscle_chestplate', [
+              'CJS',
+              'WAW',
+              'PIP',
+       ], {
+              C: '#forge:tools/wire_cutters',
+              J: 'gtceu:advanced_electric_jetpack',
+              S: '#forge:tools/screwdrivers',
+              A: 'cosmiccore:space_nanomuscle_chestplate',
+              W: 'gtceu:lpic_chip',
+              I: '#gtceu:circuits/iv',
+              P: 'gtceu:platinum_quadruple_wire'
+              
+       })
 
 
        //TODO - Mechanical Flower Recipes
@@ -255,16 +295,5 @@ ServerEvents.recipes(event => {
        event.recipes.botania.runic_altar('kubejs:mechanical_rosa_arcana', ['botania:rosa_arcana', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
        event.recipes.botania.runic_altar('kubejs:mechanical_rafflowsia', ['botania:rafflowsia', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
 
-
-
-
-
-
-
-
-
-
-
 })
-
 

@@ -1,0 +1,31 @@
+{
+  "id": "skilltree:miner_lesser_5",
+  "bonuses": [
+    {
+      "type": "skilltree:block_break_speed",
+      "player_condition": {
+        "item_condition": {
+          "equipment_type": "pickaxe",
+          "type": "skilltree:equipment_type"
+        },
+        "type": "skilltree:has_item_in_hand"
+      },
+      "multiplier": 0.05
+    }
+  ],
+  "directConnections": [
+    "skilltree:miner_lesser_3",
+    "skilltree:miner_lesser_6"
+  ],
+  "longConnections": [],
+  "oneWayConnections": [],
+  "tags": [],
+  "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+  "iconTexture": "skilltree:textures/icons/miner_lesser_1.png",
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "titleColor": "",
+  "positionX": -302.7081,
+  "positionY": 174.75916,
+  "buttonSize": 16,
+  "isStartingPoint": false
+}

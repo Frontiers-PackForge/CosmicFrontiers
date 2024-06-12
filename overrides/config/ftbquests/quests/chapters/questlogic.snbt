@@ -5,14 +5,14 @@
 	filename: "questlogic"
 	group: "49DCE46B3EB22AEA"
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "aether:hammer_of_kingbdogz"
 		tag: {
 			Damage: 0
 		}
 	}
 	id: "11F4C9727AB4FD82"
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
