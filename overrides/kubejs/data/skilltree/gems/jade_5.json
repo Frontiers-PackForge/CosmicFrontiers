@@ -1,0 +1,189 @@
+{
+  "bonuses": [
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "amount": 0.09999999776482582,
+            "attribute": "minecraft:generic.attack_speed",
+            "id": "2a0af7ff-eebc-41cf-9eff-96ce3ebd5267",
+            "name": "Jade",
+            "operation": 1,
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "weapon",
+        "types": [
+          "bow",
+          "sword",
+          "heavy_weapon",
+          "trident",
+          "crossbow"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "amount": 0.09999999776482582,
+            "attribute": "skilltree:evasion",
+            "id": "936528cc-44eb-47f2-91c3-f9d3cf1f51e0",
+            "name": "Jade",
+            "operation": 1,
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "chestplate",
+        "types": [
+          "chestplate"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:gained_experience",
+            "experience_source": "mobs",
+            "multiplier": 0.25
+          }
+        }
+      },
+      "gem_class": {
+        "key": "helmet",
+        "types": [
+          "helmet"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "amount": 0.09999999776482582,
+            "attribute": "minecraft:generic.movement_speed",
+            "id": "8ec880b1-c323-444b-965f-a77018f2b7f7",
+            "name": "Jade",
+            "operation": 1,
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "boots",
+        "types": [
+          "boots"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "amount": 0.09999999776482582,
+            "attribute": "skilltree:blocking",
+            "id": "94871701-07e9-4c51-8244-a2acd4edacc9",
+            "name": "Jade",
+            "operation": 1,
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "shield",
+        "types": [
+          "shield"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "amount": 0.04999999888241291,
+            "attribute": "skilltree:evasion",
+            "id": "a9f2a769-6679-4708-a223-f503c96989b7",
+            "name": "Jade",
+            "operation": 1,
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "jewelry",
+        "types": [
+          "curios:necklace",
+          "curios:ring"
+        ]
+      }
+    }
+  ],
+  "dimensions": [
+    "skilltree:fake_dimension"
+  ],
+  "max_rarity": "ancient",
+  "min_rarity": "ancient",
+  "weight": 0
+}

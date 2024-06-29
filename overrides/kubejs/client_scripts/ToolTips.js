@@ -185,3 +185,24 @@ ItemEvents.tooltip(event => {
     text.add(1, Text.of('Acquired from the Trial of the Underworld or forged from the shards of your victories').gold())
   })
 })
+
+ItemEvents.tooltip(event => {
+  event.addAdvanced('gtceu:grand_assembly_line', (item, advanced, text) => {
+    text.add(1, Text.of('Multiblock Classification: Superior Large Machine').aqua().bold())
+    text.add(2, Text.of('Puts Henry Ford to shame. ').white().bold())
+    text.add(3, Text.of('Assembles hardware at blinding speeds.'))
+    if (event.isShift()) {
+      text.add(4, Text.of('------------------------------------------------------------').aqua())
+      text.add(5, [Text.of('Supports the use of').white(), Text.of(' Laser Target Hatches.').aqua()])
+      text.add(6, [Text.of('Takes').gray(), Text.of(' Computation').green(),Text.of(' to run, amount of CWU/t is dictated by base recipe tier and amount of energy overclocks.').gray()])
+      text.add(7, [Text.of('Accepts the use of').white(), Text.of(' Parallel Control Hatches.').gold()])
+      text.add(8, Text.of('------------------------------------------------------------').aqua())
+      text.add(9, Text.of('Placeholder for Computation Math Formula').gold())
+      text.add(10, Text.of('CWU/t Required Displayed in machine controller').white().italic())
+      text.add(11, Text.of('------------------------------------------------------------').aqua())
+      text.add(12, Text.of('Overclock Type : Exotic'))
+    } else {
+      text.add(4, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }    
+  })
+})

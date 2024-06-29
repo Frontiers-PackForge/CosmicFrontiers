@@ -339,6 +339,7 @@
   "material.gtceu.undergarden_sludge": "Undergarden Sludge",
   "material.gtceu.astraline_corrosion_agent": "Astraline Corrosion Agent",
   "material.gtceu.astraline_prismatic_solution": "Astraline Prismatic Solution",
+  "material.gtceu.high_grade_solder": "High Grade Solder",
 
   "material.gtceu.naquadric_metallic_powder": "Naquadric Metallic Powder",
   "material.gtceu.naquadric_solution": "Naquadric Solution",
@@ -384,6 +385,7 @@
   "gtceu.arboreal_growth_chamber": "Industiral Arboreal Growth Chamber",
   "gtceu.celestial_bore": "Celestial Bore",
   "block.gtceu.celestial_bore": "Celestial Bore",
+  "block.gtceu.grand_assembly_line": "§bGrand Assembly Line",
 
   "gtceu:cyanex_272": "Cyanex-272",
   "gtceu:tert_butanol": "Tert-butanol",

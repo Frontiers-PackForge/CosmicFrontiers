@@ -1,0 +1,189 @@
+{
+  "bonuses": [
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:damage",
+            "amount": 0.02,
+            "damage_condition": {
+              "type": "skilltree:none"
+            },
+            "operation": 1,
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            },
+            "target_condition": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "weapon",
+        "types": [
+          "bow",
+          "sword",
+          "heavy_weapon",
+          "trident",
+          "crossbow"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "amount": 0.2,
+            "attribute": "minecraft:generic.armor_toughness",
+            "id": "fa508a94-d4bb-4047-99c0-7390d846d228",
+            "name": "Sapphire",
+            "operation": 0,
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "chestplate",
+        "types": [
+          "chestplate"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "amount": 0.02,
+            "attribute": "minecraft:generic.armor",
+            "id": "6aa170d3-096e-4e79-b4f1-cb8586b930bb",
+            "name": "Sapphire",
+            "operation": 1,
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "helmet",
+        "types": [
+          "helmet"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "amount": 0.02,
+            "attribute": "minecraft:generic.knockback_resistance",
+            "id": "8386f6bb-b65a-4482-8bec-34ef6803c56f",
+            "name": "Sapphire",
+            "operation": 0,
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "boots",
+        "types": [
+          "boots"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:durability",
+          "chance": 20,
+          "operation": 0
+        }
+      },
+      "gem_class": {
+        "key": "shield",
+        "types": [
+          "shield"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "amount": 0.01,
+            "attribute": "skilltree:blocking",
+            "id": "b15e7cf5-284f-48c9-87bc-7eaa2b93e31c",
+            "name": "Sapphire",
+            "operation": 1,
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "jewelry",
+        "types": [
+          "curios:necklace",
+          "curios:ring"
+        ]
+      }
+    }
+  ],
+  "dimensions": [
+    "skilltree:fake_dimension"
+  ],
+  "max_rarity": "uncommon",
+  "min_rarity": "uncommon",
+  "weight": 0
+}

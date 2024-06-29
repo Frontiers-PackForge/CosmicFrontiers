@@ -469,7 +469,6 @@
 				"62D8A986F474023F"
 				"636BBD84AF9B125B"
 			]
-			hide: true
 			id: "44166B73DECEC3CA"
 			tasks: [{
 				id: "554AC50C216CD399"
@@ -1061,17 +1060,6 @@
 			y: -12.0d
 		}
 		{
-			dependencies: ["62D8A986F474023F"]
-			id: "6F037EB9D44C5CAD"
-			tasks: [{
-				id: "378F3E38EA46F251"
-				item: "gtceu:tears_of_the_sky_bucket"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 5.5d
-		}
-		{
 			dependencies: [
 				"42FBED68FB3BB538"
 				"2CF1EE05CF359064"
@@ -1145,6 +1133,11 @@
 		{
 			dependencies: ["151A9B2F42C9284E"]
 			description: [
+				""
+				"Every Drygmy token inside of a drygmy grove multiplies the output recipe by x amount"
+				"I'll make a better drygmy token recipe at some point here"
+				""
+				""
 				"Blah blah"
 				"qb is temp"
 				"blah blah"

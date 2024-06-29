@@ -1,0 +1,171 @@
+{
+  "bonuses": [
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:crit_chance",
+            "chance": 0.049999997,
+            "damage_condition": {
+              "type": "skilltree:none"
+            },
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            },
+            "target_condition": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "weapon",
+        "types": [
+          "bow",
+          "sword",
+          "heavy_weapon",
+          "trident",
+          "crossbow"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "amount": 0.5000000074505806,
+            "attribute": "minecraft:generic.luck",
+            "id": "05779f1a-9e42-40e2-b91e-17c12fa0c923",
+            "name": "Citrine",
+            "operation": 0,
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "chestplate",
+        "types": [
+          "chestplate"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:loot_duplication",
+            "chance": 0.049999997,
+            "loot_type": "gems",
+            "multiplier": 2
+          }
+        }
+      },
+      "gem_class": {
+        "key": "helmet",
+        "types": [
+          "helmet"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:jump_height",
+            "multiplier": 0.049999997,
+            "player_condition": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "boots",
+        "types": [
+          "boots"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:attribute",
+            "amount": 0.04999999888241291,
+            "attribute": "minecraft:generic.luck",
+            "id": "62bb593f-1d24-4992-a692-b70fa6094d82",
+            "name": "Citrine",
+            "operation": 1,
+            "player_condition": {
+              "type": "skilltree:none"
+            },
+            "player_multiplier": {
+              "type": "skilltree:none"
+            },
+            "enemy_multiplier": {
+              "type": "skilltree:none"
+            }
+          }
+        }
+      },
+      "gem_class": {
+        "key": "shield",
+        "types": [
+          "shield"
+        ]
+      }
+    },
+    {
+      "type": "skilltree:gem_bonus",
+      "bonus": {
+        "item_bonus": {
+          "type": "skilltree:skill_bonus",
+          "skill_bonus": {
+            "type": "skilltree:loot_duplication",
+            "chance": 0.049999997,
+            "loot_type": "fishing",
+            "multiplier": 1
+          }
+        }
+      },
+      "gem_class": {
+        "key": "jewelry",
+        "types": [
+          "curios:necklace",
+          "curios:ring"
+        ]
+      }
+    }
+  ],
+  "dimensions": [
+    "skilltree:fake_dimension"
+  ],
+  "max_rarity": "mythic",
+  "min_rarity": "mythic",
+  "weight": 0
+}

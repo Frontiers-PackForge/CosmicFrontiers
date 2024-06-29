@@ -23,7 +23,7 @@
 		#Configure FPS Display margin
 		#Give some space between corner and text
 		#Range: 0 ~ 48
-		fpsDisplayMargin = 12
+		fpsDisplayMargin = 4
 
 	[embeddiumplus.performance]
 		#Toggles JREI item rendering until searching

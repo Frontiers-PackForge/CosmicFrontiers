@@ -314,7 +314,6 @@
 			dependencies: [
 				"58E27D2F4DEEEA8E"
 				"2963543F47380B6F"
-				"73E077CD5E56B81E"
 				"7B532242A29109CB"
 			]
 			id: "42865AA334F31C33"
@@ -359,53 +358,6 @@
 			}]
 			x: -6.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["3CAEBA7C54A57F02"]
-			id: "73E077CD5E56B81E"
-			tasks: [{
-				id: "7F53E08212CC9B31"
-				item: "gtceu:luminite_bucket"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["52DAB014D2101F02"]
-			id: "2FCBAB559DC65382"
-			tasks: [{
-				id: "6CCD330AFE3D900E"
-				item: "bloodmagic:reagentmagnetism"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["52DAB014D2101F02"]
-			id: "493B795C47573517"
-			tasks: [{
-				id: "3FB309E488DE09C4"
-				item: "gtceu:soldering_alloy_dust"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"493B795C47573517"
-				"2FCBAB559DC65382"
-			]
-			id: "3CAEBA7C54A57F02"
-			tasks: [{
-				id: "598EEF222AA9D2B5"
-				item: "gtceu:uvarovite_dust"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 3.0d
 		}
 		{
 			dependencies: ["4FDA9A502C1B81B4"]
@@ -598,7 +550,6 @@
 				"57898F6FBA8CE622"
 				"52DAB014D2101F02"
 			]
-			hide: true
 			hide_dependency_lines: true
 			id: "454AC43D9EAF4A55"
 			shape: "hexagon"
@@ -761,7 +712,6 @@
 				"4DA37DF15D6955C2"
 				"52DAB014D2101F02"
 			]
-			hide: true
 			hide_dependency_lines: true
 			id: "2275BD1700FF037F"
 			subtitle: "Have You Finished Platline?"
@@ -1360,7 +1310,11 @@
 		}
 		{
 			dependencies: ["71BF44B9337D9A09"]
-			description: ["Shouldn't be too bad, you already have virtue automated, right?"]
+			description: [
+				"Shouldn't be too bad, you already have virtue automated, right?"
+				""
+				"Now that you have a small army of alloy blast smelters you can afford to probably on-demand this with an ME-Requester"
+			]
 			id: "7318CB2F24DDEC93"
 			shape: "hexagon"
 			size: 1.5d
@@ -1407,6 +1361,16 @@
 			}]
 			x: -3.0d
 			y: -7.5d
+		}
+		{
+			id: "5B01239EFA98E0BC"
+			tasks: [{
+				id: "14AAE43CEE0841D8"
+				item: "gtceu:high_grade_solder_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
 		}
 	]
 	title: "Burning the Veil"

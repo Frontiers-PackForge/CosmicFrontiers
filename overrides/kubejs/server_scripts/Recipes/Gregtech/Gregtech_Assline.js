@@ -98,6 +98,19 @@ ServerEvents.recipes(event => {
   .duration(600)
   .EUt(GTValues.VA[GTValues.IV])
 
+  //R.Virtue Coil
+  event.recipes.gtceu.assembly_line('resonant_virtue_coil_assem')
+    .itemInputs(['2x cosmiccore:prismatic_tungstensteel_frame', '4x gtceu:iv_voltage_coil', '12x cosmiccore:resonant_virtue_meld_double_wire', '8x gtceu:galvanized_ethersteel_screw', '32x gtceu:elementium_foil', '16x cosmiccore:prismatic_tungstensteel_foil', '16x gtceu:terrasteel_foil'])
+    .itemOutputs('cosmiccore:resonant_virtue_meld_coil_block')
+    .inputFluids(
+    Fluid.of('gtceu:high_grade_solder', 288),
+    Fluid.of('gtceu:argon', 2000)
+  )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('cosmiccore:prismatic_tungstensteel_coil_block')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
+  .duration(600)
+  .EUt(GTValues.VA[GTValues.IV])
+
+
 
 
 

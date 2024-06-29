@@ -19,7 +19,7 @@
 	structures = true
 
 [debug]
-	debugPlayerMovement = true
+	debugPlayerMovement = false
 	traceMovementPacket = false
 	traceVesselPacket = false
 	traceBargainPacket = false

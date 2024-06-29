@@ -372,6 +372,14 @@ gameplay:
   # Default: true
   universalHazards: true
 
+  # Whether environmental hazards like pollution or radiation are active
+  # Default: true
+  environmentalHazards: false
+
+  # How much environmental hazards decay per chunk, per tick.
+  # Default: 0.001
+  environmentalHazardDecayRate: 0.001
+
   # Whether the GTCEu's ingame guidebook, 'Compass', be enabled.
   # WARNING: INCOMPLETE
   # Default: false
@@ -402,6 +410,15 @@ compat:
 
   # Config options regarding GTCEu compatibility with AE2
   ae2:
+    # The interval between ME Hatch/Bus interact ME network.
+    # It may cause lag if the interval is too small.
+    # Default: 2 sec
+    updateIntervals: 40
+
+    # The energy consumption of ME Hatch/Bus.
+    # Default: 1.0AE/t
+    meHatchEnergyUsage: 1.0
+
   # Whether to hide facades of all blocks in JEI and creative search menu.
   # Default: true
   hideFacadesInJEI: true

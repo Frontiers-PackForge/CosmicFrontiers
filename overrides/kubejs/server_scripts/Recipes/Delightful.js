@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     })
   })
 //Delightful Knives getting yeeted
-yeet(/^(?!gtceu:)([^:]+):(.*)knife$/);
+yeet(/^(?!gtceu:)^(?!ae2:)([^:]+):(.*)knife$/);
 
 //End Stove duplicate getting yeeted
 yeet('ends_delight:end_stove');

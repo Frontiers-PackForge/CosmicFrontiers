@@ -239,8 +239,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .build())
         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/rock_crusher', false);
-    
-        event.create('soul_forge', 'multiblock')
+
+    event.create('soul_forge', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('soul_forge')
         .appearanceBlock(GTBlocks.CASING_TITANIUM_STABLE)
@@ -271,7 +271,47 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/rock_crusher', false);
 
 
-
+    event.create('grand_assembly_line', 'multiblock')
+        .rotationState(RotationState.ALL)
+        .recipeType('assembly_line')
+        // .recipeTypes(["pulse_exchange_steam_vent", "pulse_exchange_steam"])
+        // ["recipeTypes(com.gregtechceu.gtceu.api.recipe.GTRecipeType[])"]('pulse_exchange_steam_vent','pulse_exchange_steam' )
+        .appearanceBlock(GTBlocks.COMPUTER_CASING)
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC', 'CGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGC', 'VGVVGVVGVVGVVGVVGVVGVVGVVGVVGVVGVVGVVGVVGVVGVVGV', 'CGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGC', '################################################',)
+            .aisle('CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC', 'VZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZV', 'ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ', 'VZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZV', 'CGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGC',)
+            .aisle('CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC', 'ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ', 'OXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXH', 'ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ', 'CGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGC',)
+            .aisle('CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC', 'VZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZV', 'ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ', 'VZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZVVZV', 'CGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGC',)
+            .aisle('CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC', 'CGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGC', 'VGVVGVVGVVGVVGVVGVVGVVGVVGVVGVVGVVGVVGVVGVVGVVQV', 'CGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGCCGC', '################################################',)
+            .where('Q', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('#', Predicates.any())
+            .where('C', Predicates.blocks(GTBlocks.COMPUTER_CASING.get())
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
+                .or(Predicates.abilities(PartAbility.INPUT_LASER))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                .or(Predicates.abilities(PartAbility.OPTICAL_DATA_RECEPTION))
+                .or(Predicates.abilities(PartAbility.DATA_ACCESS))
+                .or(Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
+            )
+            .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get())
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
+                .or(Predicates.abilities(PartAbility.INPUT_LASER))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                .or(Predicates.abilities(PartAbility.OPTICAL_DATA_RECEPTION))
+                .or(Predicates.abilities(PartAbility.DATA_ACCESS))
+                .or(Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
+            )
+            .where('H', Predicates.abilities(PartAbility.IMPORT_ITEMS))
+            .where('Z', Predicates.blocks(GTBlocks.CASING_ASSEMBLY_LINE.get()))
+            .where('X', Predicates.blocks(GTBlocks.CASING_ASSEMBLY_CONTROL.get()))
+            .where('V', Predicates.blocks(GTBlocks.COMPUTER_HEAT_VENT.get()))
+            .where('O', Predicates.abilities(PartAbility.EXPORT_ITEMS))
+            .build())
+        .workableCasingRenderer('gtceu:block/casings/hpca/computer_casing/side', 'gtceu:block/multiblock/network_switch', false);
 
 
 

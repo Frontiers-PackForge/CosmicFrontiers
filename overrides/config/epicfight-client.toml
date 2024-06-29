@@ -5,7 +5,7 @@
 	#Allowed Values: NONE, HURT, TARGET
 	health_bar_show_option = "HURT"
 	show_target_indicator = true
-	filter_animation = false
+	filter_animation = true
 	#Range: 0.0 ~ 1.0
 	laser_pointer_color = 0.328125
 	enable_laser_pointer = true

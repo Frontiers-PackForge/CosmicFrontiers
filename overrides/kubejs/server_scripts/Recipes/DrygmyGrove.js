@@ -49,10 +49,10 @@ event.recipes.gtceu.drygmy_grove('grove_skeleton')
 //   .duration(6000)
 //   .EUt(GTValues.VA[GTValues.EV]);
 
-  event.recipes.gtceu.soul_forge('bm_tester')
-    .input("soul", 200) // doesn't display 
-    .notConsumable('ars_nouveau:drygmy_charm')
-    .itemOutputs('minecraft:sand')
-    .duration(10)
-    .EUt(GTValues.VA[GTValues.EV]);
+  // event.recipes.gtceu.soul_forge('bm_tester')
+  //   .input("soul", 200) // doesn't display 
+  //   .notConsumable('ars_nouveau:drygmy_charm')
+  //   .itemOutputs('minecraft:sand')
+  //   .duration(10)
+  //   .EUt(GTValues.VA[GTValues.EV]);
 })

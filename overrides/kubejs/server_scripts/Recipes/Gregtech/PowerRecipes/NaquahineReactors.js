@@ -95,11 +95,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
     event.recipes.gtceu.autoclave('naquahine_superfuel_mk_one')
         .inputFluids('gtceu:aerated_naquahine 1000')
-        .notConsumable('gtceu:luv_emitter')
         .outputFluids('gtceu:naquahine_superfuel_mk_one 1000')
         .duration(120)
         .EUt(GTValues.VA[GTValues.LuV])
-
-
 
 })
