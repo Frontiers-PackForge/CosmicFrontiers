@@ -10,7 +10,8 @@ let yeet = (itemName) => {
     
     })
 }
-//Removal of Large Boilers
+//Removal of Large Boilers and their recipemaps - DO NOT revert these changes, as eventually they will also be stripped out and overwritten via coremod
+// YOU HAVE BEEN WARNED, THIS **WILL** RESULT IN IRREVERSIBLE DAMAGE TO WORLDS - NO SUPPORT WILL BE GIVEN FOR PEOPLE WHO IGNORE THIS WARNING
 yeet('gtceu:bronze_large_boiler')
 yeet('gtceu:steel_large_boiler')
 yeet('gtceu:titanium_large_boiler')
