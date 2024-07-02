@@ -601,21 +601,11 @@ ServerEvents.recipes(event => {
     .EUt(8);
   //Cart Assembler
   event.remove({output: "create:cart_assembler"})
-  event.shaped('create:cart_assembler', [
-    'PRP',
-    'ACA',
-    '   '
-  ], {
-    P: 'gtceu:andesite_alloy_plate',
-    A: 'create:andesite_casing',
-    R: 'gtceu:red_alloy_plate',
-    C: 'ulvcovm:ulv_robot_arm',
-  })
   event.recipes.gtceu.assembler("create:cart_assembler")
-    .itemInputs('2x gtceu:andesite_alloy_plate', '2x create:andesite_casing', 'gtceu:red_alloy_plate', 'ulvcovm:ulv_robot_arm')
+    .itemInputs('2x gtceu:andesite_alloy_plate', '2x create:andesite_casing', '2x #gtceu:circuits/hv', 'gtceu:red_alloy_plate', 'gtceu:hv_robot_arm', 'gtceu:hv_assembler')
     .itemOutputs('create:cart_assembler')
     .duration(50)
-    .EUt(8);
+    .EUt(GTValues.VA[GTValues.HV]);
   //Linear Chassis
   event.remove({output: "create:linear_chassis"})
   event.shaped('3x create:linear_chassis', [
@@ -667,7 +657,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('create:sticker')
     .duration(50)
     .EUt(8);
-  //Mechanical Drill (get nerfed lol)
+  //Mechanical Drill
   event.remove({output: "create:mechanical_drill"})
   event.shaped('create:mechanical_drill', [
     'AP ',
@@ -677,7 +667,7 @@ ServerEvents.recipes(event => {
     A: 'create:andesite_casing',
     P: 'gtceu:andesite_alloy_plate',
     G: 'gtceu:andesite_alloy_gear',
-    D: 'gtceu:blue_steel_drill_head',
+    D: 'gtceu:steel_drill_head',
     M: 'ulvcovm:ulv_electric_motor'
   })
   event.recipes.gtceu.assembler("create:mechanical_drill")
@@ -1037,7 +1027,7 @@ ServerEvents.recipes(event => {
   .EUt(8);
   //Mechanical Pump
   event.remove({output: "create:mechanical_pump"})
-  event.shaped('reate:mechanical_pump', [
+  event.shaped('create:mechanical_pump', [
     'CPF',
     '   ',
     '   '
