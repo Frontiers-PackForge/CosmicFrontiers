@@ -76,6 +76,7 @@ ServerEvents.recipes(event => {
     .itemInputs("4x gtceu:treated_wood_plate")
     .itemInputs("create:shaft")
     .itemOutputs("4x create:cogwheel")
+    .circuit(0)
     .duration(100)
     .EUt(8);
 
@@ -92,6 +93,7 @@ ServerEvents.recipes(event => {
     .itemInputs("2x gtceu:treated_wood_plate")
     .itemInputs("create:cogwheel")
     .itemOutputs("create:large_cogwheel")
+    .circuit(0)
     .duration(100)
     .EUt(8);
   //Shaft
@@ -109,6 +111,7 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.assembler("create:shaft")
     .itemInputs('2x gtceu:andesite_alloy_rod', 'gtceu:andesite_alloy_plate')
     .itemOutputs('8x create:shaft')
+    .circuit(0)
     .duration(50)
     .EUt(8);
   event.recipes.gtceu.extruder("create:shaft")
@@ -121,30 +124,35 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.assembler("create:andesite_casing")
     .itemInputs('1x #forge:stripped_logs', 'gtceu:andesite_alloy_plate')
     .itemOutputs('2x create:andesite_casing')
+    .circuit(0)
     .duration(50)
     .EUt(8);
   //Brass Casing
   event.recipes.gtceu.assembler("create:brass_casing")
     .itemInputs('1x #forge:stripped_logs', 'gtceu:brass_plate')
     .itemOutputs('2x create:brass_casing')
+    .circuit(0)
     .duration(50)
     .EUt(8);
   //Copper Casing
   event.recipes.gtceu.assembler("create:copper_casing")
     .itemInputs('1x #forge:stripped_logs', 'gtceu:copper_plate')
     .itemOutputs('2x create:copper_casing')
+    .circuit(0)
     .duration(50)
     .EUt(8);
   //Train Casing
   event.recipes.gtceu.assembler("create:railway_casing")
     .itemInputs('2x create:brass_casing', 'gtceu:obsidian_plate')
     .itemOutputs('2x create:railway_casing')
+    .circuit(0)
     .duration(50)
     .EUt(8);
   //Gearbox
   event.recipes.gtceu.assembler("create:gearbox")
     .itemInputs('2x create:cogwheel', 'create:andesite_casing')
     .itemOutputs('create:gearbox')
+    .circuit(0)
     .duration(50)
     .EUt(8);
   //Clutch
@@ -157,6 +165,7 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.assembler("create:clutch")
     .itemInputs('1x create:andesite_casing', '1x create:shaft', '1x gtceu:red_alloy_bolt')
     .itemOutputs('1x create:clutch')
+    .circuit(0)
     .duration(50)
     .EUt(8);
   //Gearshift
@@ -170,18 +179,21 @@ ServerEvents.recipes(event => {
     .itemInputs('1x create:andesite_casing', '1x create:cogwheel', '1x gtceu:red_alloy_bolt')
     .itemOutputs('1x create:gearshift')
     .duration(50)
+    .circuit(0)
     .EUt(8);  
   //Encased Chain Drive
   event.recipes.gtceu.assembler("create:encased_chain_drive")
     .itemInputs('1x create:andesite_casing', '3x minecraft:iron_nugget')
     .itemOutputs('1x create:encased_chain_drive')
     .duration(50)
+    .circuit(0)
     .EUt(8);   
   //Adjustable Chain Gearshift
   event.recipes.gtceu.assembler("create:adjustable_chain_gearshift")
   .itemInputs('1x create:encased_chain_drive', '1x create:electron_tube')
   .itemOutputs('1x create:adjustable_chain_gearshift')
   .duration(50)
+  .circuit(0)
   .EUt(8);
   //Electron Tube
   event.remove({output: 'create:electron_tube'})
@@ -198,6 +210,7 @@ ServerEvents.recipes(event => {
     .itemInputs('1x gtceu:glass_tube', '1x create:polished_rose_quartz', '1x gtceu:iron_plate')
     .itemOutputs('4x create:electron_tube')
     .duration(100)
+    .circuit(0)
     .EUt(8);
   //Encased Fan
   event.remove({output: 'create:encased_fan'})
@@ -215,6 +228,7 @@ ServerEvents.recipes(event => {
     .itemInputs('gtceu:aluminium_rotor', '1x create:andesite_casing', '2x create:shaft', 'gtceu:mv_electric_motor')
     .itemOutputs('1x create:encased_fan')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Mechanical Belt
   event.shaped('2x create:belt_connector', [
@@ -247,6 +261,7 @@ ServerEvents.recipes(event => {
     .itemInputs('2x gtceu:stone_gear', 'create:cogwheel', 'create:andesite_casing', '2x #forge:stone', 'ulvcovm:ulv_electric_motor')
     .itemOutputs('create:millstone')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Mechanical Press
   event.remove({output: 'create:mechanical_press'})
@@ -264,6 +279,7 @@ ServerEvents.recipes(event => {
   .itemInputs('gtceu:wrought_iron_block', 'create:shaft', '2x create:andesite_casing', 'ulvcovm:ulv_electric_piston')
   .itemOutputs('create:mechanical_press')
   .duration(50)
+  .circuit(0)
   .EUt(8);
   //Whisk
   event.remove({output: 'create:whisk'})
@@ -297,6 +313,7 @@ ServerEvents.recipes(event => {
   .itemInputs('create:whisk', '2x create:andesite_casing', 'create:cogwheel', 'ulvcovm:ulv_electric_motor')
   .itemOutputs('create:mechanical_mixer')
   .duration(100)
+  .circuit(0)
   .EUt(8);
   //Basin
   event.remove({output: 'create:basin'})
@@ -346,6 +363,7 @@ ServerEvents.recipes(event => {
     .itemInputs('2x create:cogwheel', 'create:depot', 'gtceu:andesite_alloy_spring', 'gtceu:andesite_alloy_plate')
     .itemOutputs('create:weighted_ejector')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Chute
   event.recipes.gtceu.assembler("create:chute")
@@ -359,6 +377,7 @@ ServerEvents.recipes(event => {
     .itemInputs('gtceu:brass_plate', 'create:chute', 'create:electron_tube')
     .itemOutputs('1x create:smart_chute')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Fluid Tank
   event.remove({output: 'create:fluid_tank'})
@@ -376,6 +395,7 @@ ServerEvents.recipes(event => {
     .itemInputs('gtceu:bronze_drum', '4x gtceu:copper_plate','2x minecraft:glass_pane', '2x gtceu:bronze_plate')
     .itemOutputs('4x create:fluid_tank')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Hose Pulley
   event.remove({output: 'create:hose_pulley'})
@@ -393,6 +413,7 @@ ServerEvents.recipes(event => {
     .itemInputs('ulvcovm:ulv_electric_pump', '5x gtceu:copper_plate','minecraft:dried_kelp_block', 'gtceu:bronze_normal_fluid_pipe')
     .itemOutputs('create:hose_pulley')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Item Drain
   event.remove({output: 'create:item_drain'})
@@ -409,6 +430,7 @@ ServerEvents.recipes(event => {
     .itemInputs('2x gtceu:bronze_plate', 'minecraft:iron_bars', '3x create:copper_casing')
     .itemOutputs('create:item_drain')
     .duration(50)
+    .circuit(0)
     .EUt(8);  
   //Spout
   event.remove({output: 'create:spout'})
@@ -426,6 +448,7 @@ ServerEvents.recipes(event => {
     .itemInputs('2x gtceu:bronze_plate', 'ulvcovm:ulv_electric_pump', 'create:copper_casing', 'gtceu:bronze_normal_fluid_pipe')
     .itemOutputs('create:spout')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Portable Fluid Interface
   event.remove({output: 'create:portable_fluid_interface'})
@@ -442,6 +465,7 @@ ServerEvents.recipes(event => {
     .itemInputs('ulvcovm:ulv_electric_pump', 'create:copper_casing', 'create:chute')
     .itemOutputs('create:portable_fluid_interface')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Steam Engine
   event.remove({output: 'create:steam_engine'})
@@ -460,6 +484,7 @@ ServerEvents.recipes(event => {
     .itemInputs('gtceu:gold_plate', 'ulvcovm:ulv_electric_piston', 'gtceu:andesite_alloy_frame', '2x gtceu:andesite_alloy_plate', '2x minecraft:copper_block')
     .itemOutputs('create:steam_engine')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Mechanical Piston
   event.remove({output: "create:mechanical_piston"})
@@ -478,6 +503,7 @@ ServerEvents.recipes(event => {
     .itemInputs('3x gtceu:treated_wood_plate', 'ulvcovm:ulv_electric_piston', '2x gtceu:red_alloy_bolt', '2x create:andesite_casing', '2x create:piston_extension_pole')
     .itemOutputs('create:mechanical_piston')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Piston Extension Pole
   event.remove({output: "create:piston_extension_pole"})
@@ -493,6 +519,7 @@ ServerEvents.recipes(event => {
     .itemInputs('2x gtceu:treated_wood_plate', 'gtceu:andesite_alloy_rod')
     .itemOutputs('8x create:piston_extension_pole')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Gantry Carriage
   event.remove({output: "create:gantry_carriage"})
@@ -510,6 +537,7 @@ ServerEvents.recipes(event => {
     .itemInputs('gtceu:treated_wood_plate', 'ulvcovm:ulv_electric_motor', '2x create:andesite_casing', '3x create:cogwheel')
     .itemOutputs('create:gantry_carriage')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Gantry Shaft
   event.remove({output: "create:gantry_shaft"})
@@ -526,6 +554,7 @@ ServerEvents.recipes(event => {
     .itemInputs('4x gtceu:andesite_alloy_plate', '3x gtceu:red_alloy_foil', '2x gtceu:andesite_alloy_rod')
     .itemOutputs('8x create:gantry_shaft')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Mechanical Bearing
   event.remove({output: "create:mechanical_bearing"})
@@ -544,6 +573,7 @@ ServerEvents.recipes(event => {
     .itemInputs('3x gtceu:treated_wood_plate', '2x create:andesite_casing', '2x create:cogwheel', 'ulvcovm:ulv_electric_motor', 'create:shaft')
     .itemOutputs('create:mechanical_bearing')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Clockwork Bearing
   event.remove({output: "create:clockwork_bearing"})
@@ -562,6 +592,7 @@ ServerEvents.recipes(event => {
     .itemInputs('3x gtceu:treated_wood_plate', '2x create:brass_casing', '2x create:cogwheel', 'ulvcovm:ulv_electric_motor', 'create:electron_tube')
     .itemOutputs('create:clockwork_bearing')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Rope Pulley
   event.remove({output: "create:rope_pulley"})
@@ -580,6 +611,7 @@ ServerEvents.recipes(event => {
     .itemInputs('3x gtceu:andesite_alloy_plate', '2x create:andesite_casing', '2x create:shaft', 'ulvcovm:ulv_electric_motor', '#forge:rope')
     .itemOutputs('create:rope_pulley')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Elevator Pulley
   event.remove({output: "create:elevator_pulley"})
@@ -598,12 +630,14 @@ ServerEvents.recipes(event => {
     .itemInputs('3x gtceu:andesite_alloy_plate', '2x create:brass_casing', '2x create:shaft', 'ulvcovm:ulv_electric_motor', '#forge:rope')
     .itemOutputs('create:elevator_pulley')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Cart Assembler
   event.remove({output: "create:cart_assembler"})
   event.recipes.gtceu.assembler("create:cart_assembler")
     .itemInputs('2x gtceu:andesite_alloy_plate', '2x create:andesite_casing', '2x #gtceu:circuits/hv', 'gtceu:red_alloy_plate', 'gtceu:hv_robot_arm', 'gtceu:hv_assembler')
     .itemOutputs('create:cart_assembler')
+    .circuit(0)
     .duration(50)
     .EUt(GTValues.VA[GTValues.HV]);
   //Linear Chassis
@@ -656,6 +690,7 @@ ServerEvents.recipes(event => {
     .itemInputs('2x gtceu:andesite_alloy_plate', '2x gtceu:stone_plate', '#forge:slimeballs', 'gtceu:red_alloy_bolt')
     .itemOutputs('create:sticker')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Mechanical Drill
   event.remove({output: "create:mechanical_drill"})
@@ -674,6 +709,7 @@ ServerEvents.recipes(event => {
     .itemInputs('2x create:andesite_casing', '2x gtceu:andesite_alloy_plate', 'gtceu:blue_steel_drill_head', 'gtceu:andesite_alloy_gear', 'ulvcovm:ulv_electric_motor')
     .itemOutputs('create:mechanical_drill')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Mechanical Saw
   event.remove({output: "create:mechanical_saw"})
@@ -692,6 +728,7 @@ ServerEvents.recipes(event => {
     .itemInputs('2x create:andesite_casing', '2x gtceu:andesite_alloy_plate', 'gtceu:wrought_iron_buzz_saw_blade', 'gtceu:andesite_alloy_gear', 'ulvcovm:ulv_electric_motor')
     .itemOutputs('create:mechanical_saw')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Deployer
   event.remove({output: "create:deployer"})
@@ -710,6 +747,7 @@ ServerEvents.recipes(event => {
     .itemInputs('2x create:andesite_casing', '2x gtceu:andesite_alloy_plate', 'create:brass_hand', 'create:shaft', 'ulvcovm:ulv_electric_piston')
     .itemOutputs('create:deployer')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Portable Storage Interface
   event.remove({output: 'create:portable_storage_interface'})
@@ -726,6 +764,7 @@ ServerEvents.recipes(event => {
     .itemInputs('ulvcovm:ulv_conveyor_module', 'create:andesite_casing', 'create:chute')
     .itemOutputs('create:portable_storage_interface')
     .duration(50)
+    .circuit(0)
     .EUt(8);
   //Mechanical Harvester
   event.recipes.gtceu.assembler("create:mechanical_harvester")
@@ -839,6 +878,7 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.assembler("create:track_station")
   .itemInputs('3x create:railway_casing', '#supplementaries:flags')
   .itemOutputs('2x create:track_station')
+  .circuit(0)
   .duration(50)
   .EUt(8);
   //Train Signal
@@ -855,6 +895,7 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.assembler("create:track_signal")
   .itemInputs('3x create:railway_casing', '2x #gtceu:circuits/lv', 'create:electron_tube')
   .itemOutputs('4x create:track_signal')
+  .circuit(0)
   .duration(50)
   .EUt(8);
   //Train Observer
@@ -872,6 +913,7 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.assembler("create:track_observer")
   .itemInputs('3x create:railway_casing', '#gtceu:circuits/lv', 'minecraft:observer', 'gtceu:glass_lens')
   .itemOutputs('2x create:track_observer')
+  .circuit(0)
   .duration(50)
   .EUt(8);
   //Train Controls
@@ -890,6 +932,7 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.assembler("create:controls")
   .itemInputs('4x gtceu:brass_plate', '2x create:railway_casing', '#gtceu:circuits/mv', 'create:precision_mechanism', 'minecraft:lever')
   .itemOutputs('create:controls')
+  .circuit(0)
   .duration(50)
   .EUt(8);
   //Item Vault
@@ -906,6 +949,7 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.assembler("create:item_vault")
   .itemInputs('4x gtceu:steel_plate', '4x gtceu:steel_rod', 'gtceu:steel_crate')
   .itemOutputs('2x create:item_vault')
+  .circuit(0)
   .duration(50)
   .EUt(8);
   //Andesite Funnel
@@ -1080,6 +1124,7 @@ ServerEvents.recipes(event => {
     .itemInputs('4x gtceu:brass_plate')
     .itemInputs('gtceu:andesite_alloy_plate')
     .itemOutputs('create:brass_hand')
+    .circuit(0)
     .duration(100)
     .EUt(8);
   //Rose Quartz

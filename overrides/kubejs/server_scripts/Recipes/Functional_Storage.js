@@ -145,7 +145,7 @@ ServerEvents.recipes( e => {
     }
     )
     e.recipes.gtceu.assembler('functionalstorage:ender_drawer') 
-           .itemInputs('2x gtceu:tungsten_steel_double_plate')
+           .itemInputs('2x gtceu:double_tungsten_steel_plate')
            .itemInputs('gtceu:ev_super_chest')
            .itemInputs('6x gtceu:ender_pearl_plate')
            .itemInputs('gtceu:ev_sensor')

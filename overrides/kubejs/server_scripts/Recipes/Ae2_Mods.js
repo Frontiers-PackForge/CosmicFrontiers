@@ -204,7 +204,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.HV]);
   //Craft Core Blank
   event.recipes.gtceu.assembler('ae2:crafting_core_empty')
-    .itemInputs(['gtceu:stainless_steel_frame', '4x gtceu:stainless_steel_plate', '4x gtceu:galvanized_ethersteel_plate', '4x gtceu:galvanized_ethersteel_screw', 'gtceu:advanced_integrated_circuit'])
+    .itemInputs(['gtceu:stainless_steel_frame', '4x gtceu:stainless_steel_plate', '4x gtceu:galvanized_ethersteel_plate', '4x gtceu:galvanized_ethersteel_screw', '#gtceu:circuits/hv'])
     .itemOutputs('ae2:crafting_unit')
     .duration(160)
     .EUt(GTValues.VA[GTValues.HV]);
@@ -407,13 +407,13 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.HV]);
     //Pattern Modifier
     event.recipes.gtceu.assembler('pattern_modifier_recipe_item')
-    .itemInputs(['ae2:pattern_encoding_terminal', 'gtceu:micro_processor_computer', 'ae2:item_storage_cell_1k'])
+    .itemInputs(['ae2:pattern_encoding_terminal', '#gtceu:circuits/ev', 'ae2:item_storage_cell_1k'])
     .itemOutputs('expatternprovider:pattern_modifier')
     .duration(15)
     .EUt(GTValues.VA[GTValues.MV]);
     //Patterns bc apparently we lost em
     event.recipes.gtceu.assembler('pattern_recipe')
-    .itemInputs(['32x gtceu:fine_galvanized_ethersteel_wire', '16x gtceu:stainless_steel_plate', '2x gtceu:advanced_integrated_circuit', 'gtceu:diamond_lens'])
+    .itemInputs(['32x gtceu:fine_galvanized_ethersteel_wire', '16x gtceu:stainless_steel_plate', '2x #gtceu:circuits/hv', 'gtceu:diamond_lens'])
     .inputFluids(`gtceu:soldering_alloy 576`)
     .itemOutputs('8x ae2:blank_pattern')
     .duration(90)
@@ -429,7 +429,7 @@ ServerEvents.recipes(event => {
     'ae2:cable_pattern_provider'
   ])
   event.shapeless('ae2:crafting_accelerator', [
-    'ae2:crafting_unit', 'gtceu:micro_processor_computer'
+    'ae2:crafting_unit', '#gtceu:circuits/ev'
   ])
   event.shapeless('ae2:view_cell', [
     'ae2:item_cell_housing', 'gtceu:certus_quartz_gem'

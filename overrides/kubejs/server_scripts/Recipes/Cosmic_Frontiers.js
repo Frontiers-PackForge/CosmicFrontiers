@@ -295,5 +295,36 @@ ServerEvents.recipes(event => {
        event.recipes.botania.runic_altar('kubejs:mechanical_rosa_arcana', ['botania:rosa_arcana', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
        event.recipes.botania.runic_altar('kubejs:mechanical_rafflowsia', ['botania:rafflowsia', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
 
+       //Sleeping Bags
+       let dye = [
+              'white',
+              'orange',
+              'magenta',
+              'light_blue',
+              'yellow',
+              'lime',
+              'pink',
+              'gray',
+              'light_gray',
+              'cyan',
+              'purple',
+              'blue',
+              'brown',
+              'green',
+              'red',
+              'black'
+       ]
+       dye.forEach(dye => {
+              event.remove({ id: `comforts:sleeping_bag_${dye}`})
+              event.shaped(`comforts:sleeping_bag_${dye}`, [
+                     '   ',
+                     'WCC',
+                     'LLL'
+              ], {
+                     W: `minecraft:${dye}_wool`,
+                     C: `minecraft:${dye}_carpet`,
+                     L: 'cosmiccore:waxed_leather'
+              })
+       })
 })
 
