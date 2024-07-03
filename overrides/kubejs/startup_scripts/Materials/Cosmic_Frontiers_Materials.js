@@ -256,7 +256,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.GENERATE_FRAME,
-            GTMaterialFlags.GENERATE_BOLT_SCREW
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_RING,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL
         )
     event.create('industrial_iron')
         .ingot()
@@ -265,6 +270,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(
             GTMaterialFlags.GENERATE_PLATE
         )
+    GTMaterials.Aluminium.addFlags(GTMaterialFlags.GENERATE_ROTOR)
 })
 
 GTCEuStartupEvents.materialModification(event => {
