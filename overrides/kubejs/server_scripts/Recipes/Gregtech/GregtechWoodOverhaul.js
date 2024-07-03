@@ -442,7 +442,7 @@ ServerEvents.recipes(event => {
             event.recipes.gtceu.assembler(`${modID}:${woodType}_trapdoor`)
                 .itemInputs(`3x ${modID}:${woodType}_slab`)
                 .itemOutputs(`3x ${modID}:${woodType}_trapdoor`)
-                .circuit(3)
+                .circuit(6)
                 .duration(100)
                 .EUt(4);
         }
@@ -550,6 +550,7 @@ ServerEvents.recipes(event => {
             event.recipes.gtceu.assembler(`${modID}:${woodType}_fence`)
                 .itemInputs(`${modID}:${woodType}_planks`)
                 .itemOutputs(`${modID}:${woodType}_fence`)
+                .circuit(1)
                 .duration(100)
                 .EUt(4);
             event.shaped(`${modID}:${woodType}_fence`, [
@@ -588,6 +589,7 @@ ServerEvents.recipes(event => {
             event.recipes.gtceu.assembler(`${modID}:${woodType}_fence_gate`)
                 .itemInputs([`2x ${modID}:${woodType}_planks`, "2x minecraft:stick"])
                 .itemOutputs(`${modID}:${woodType}_fence_gate`)
+                .circuit(2)
                 .duration(100)
                 .EUt(4);
         }
@@ -744,7 +746,7 @@ ServerEvents.recipes(event => {
                 D: '#forge:tools/screwdrivers',
             })
         event.recipes.gtceu.assembler(`ars_nouveau:archwood_door`)
-            .itemInputs([`5x ars_nouveau:archwood_planks`])
+            .itemInputs([`5x ars_nouveau:archwood_planks`, `1x ars_nouveau:archwood_trapdoor`])
             .itemOutputs(`3x ars_nouveau:archwood_door`)
             .inputFluids('gtceu:iron 16')
             .circuit(3)
@@ -764,7 +766,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.assembler(`ars_nouveau:archwood_trapdoor`)
             .itemInputs(`3x ars_nouveau:archwood_slab`)
             .itemOutputs(`3x ars_nouveau:archwood_trapdoor`)
-            .circuit(3)
+            .circuit(6)
             .duration(100)
             .EUt(4);
     }
@@ -872,6 +874,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.assembler(`ars_nouveau:archwood_fence`)
             .itemInputs(`ars_nouveau:archwood_planks`)
             .itemOutputs(`ars_nouveau:archwood_fence`)
+            .circuit(1)
             .duration(100)
             .EUt(4);
         event.shaped(`ars_nouveau:archwood_fence`, [
@@ -910,6 +913,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.assembler(`ars_nouveau:archwood_fence_gate`)
             .itemInputs([`2x ars_nouveau:archwood_planks`, "2x minecraft:stick"])
             .itemOutputs(`ars_nouveau:archwood_fence_gate`)
+            .circuit(2)
             .duration(100)
             .EUt(4);
         event.recipes.gtceu.macerator(`archwood_pulping`)
