@@ -271,6 +271,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_PLATE
         )
     GTMaterials.Aluminium.addFlags(GTMaterialFlags.GENERATE_ROTOR)
+    GTMaterials.WroughtIron.addFlags(GTMaterialFlags.GENERATE_SMALL_GEAR)
+    GTMaterials.WroughtIron.addFlags(GTMaterialFlags.GENERATE_SPRING_SMALL)
 })
 
 GTCEuStartupEvents.materialModification(event => {
