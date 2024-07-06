@@ -326,5 +326,15 @@ ServerEvents.recipes(event => {
                      L: 'cosmiccore:waxed_leather'
               })
        })
+
+       //Flint and Steel
+       event.replaceInput( {id: 'gtceu:shaped/flint_and_steel'}, 
+              'gtceu:small_steel_gear',
+              'gtceu:small_wrought_iron_gear'
+       )
+       event.replaceInput( {id: 'gtceu:shaped/flint_and_steel'}, 
+              'gtceu:small_steel_spring',
+              'gtceu:small_wrought_iron_spring'
+       )
 })
 
