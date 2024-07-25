@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_reactor('aluminium_hydroxide_bad')
         .itemInputs('8x gtceu:sodium_aluminate_dust')
-        .inputFluids('gtceu:water 3000')
+        .inputFluids('minecraft:water 3000')
         .inputFluids('gtceu:carbon_dioxide 1000')
         .itemOutputs('14x gtceu:aluminium_hydroxide_dust')
         .itemOutputs('6x gtceu:soda_ash_dust')

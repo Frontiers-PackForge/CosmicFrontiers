@@ -1,0 +1,8 @@
+
+[default_gamerule]
+	spawnStrongerMobs = false
+	strongerMobsDropEmeralds = false
+	strongerMobsMoreEXP = false
+	#Range: 0 ~ 100
+	skeletonMoreMelee = 50
+

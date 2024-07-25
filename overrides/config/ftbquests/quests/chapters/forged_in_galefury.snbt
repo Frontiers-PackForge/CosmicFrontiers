@@ -16,6 +16,7 @@
 				"You have a winding road ahead of you, make sure to visit the &aAether&r!"
 				"And remember, don't plug &bMV&r Power into &7LV&r machines unless you like things exploding!"
 			]
+			hide: true
 			id: "466C20EACAEF3394"
 			shape: "hexagon"
 			size: 2.5d
@@ -634,7 +635,7 @@
 		{
 			dependencies: ["4D9425267F0C2AB4"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:fluid_cell"
 				tag: {
 					Fluid: {
@@ -648,7 +649,7 @@
 				{
 					id: "769F4415F2B3F770"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:fluid_cell"
 						tag: {
 							Fluid: {
@@ -657,12 +658,10 @@
 							}
 						}
 					}
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "21C862AC5682B5D2"
-					optional_task: true
 					title: "Checkmark - SKIP ME!"
 					type: "checkmark"
 				}
@@ -674,7 +673,7 @@
 			dependencies: ["466C20EACAEF3394"]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:fluid_cell"
 				tag: {
 					Fluid: {
@@ -688,7 +687,7 @@
 				{
 					id: "112CFAF0DA51C1C2"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:fluid_cell"
 						tag: {
 							Fluid: {
@@ -697,12 +696,10 @@
 							}
 						}
 					}
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "2941220DC9EBB8F8"
-					optional_task: true
 					title: "Checkmark - SKIP ME!"
 					type: "checkmark"
 				}
@@ -714,7 +711,7 @@
 			dependencies: ["310BA3D469D11050"]
 			dependency_requirement: "one_completed"
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:fluid_cell"
 				tag: {
 					Fluid: {
@@ -728,7 +725,7 @@
 				{
 					id: "4ADC335F03D8C17C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:fluid_cell"
 						tag: {
 							Fluid: {
@@ -737,12 +734,10 @@
 							}
 						}
 					}
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "391A86BDB2A3C2EF"
-					optional_task: true
 					title: "Checkmark - SKIP ME!"
 					type: "checkmark"
 				}
@@ -820,7 +815,7 @@
 				{
 					id: "577D15F4F31F5D17"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -839,7 +834,7 @@
 				{
 					id: "1283B48F14F4F627"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -858,7 +853,7 @@
 				{
 					id: "47E807D5A558E946"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -877,7 +872,7 @@
 				{
 					id: "46778B2B7740E5B6"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -1007,6 +1002,8 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["466C20EACAEF3394"]
+			hide_dependency_lines: true
 			icon: "aether:aether_portal_frame"
 			id: "235C063EE75D22F0"
 			shape: "hexagon"
@@ -1092,7 +1089,6 @@
 				{
 					id: "223094C8A43FE68B"
 					item: "gtceu:raw_mana_crystal_slurry_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1106,25 +1102,6 @@
 			y: 0.0d
 		}
 		{
-			id: "3FAA46555060C5BD"
-			tasks: [
-				{
-					id: "625D828AEB569379"
-					item: "gtceu:raw_mana_crystal_slurry_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "5BCA4475CB86D4F0"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 15.0d
-			y: 1.5d
-		}
-		{
 			dependencies: ["437582A970E60E97"]
 			icon: "gtceu:prepared_terrasteel_bucket"
 			id: "6BE64F9BD1F1F303"
@@ -1132,7 +1109,6 @@
 				{
 					id: "366C720AC1665255"
 					item: "gtceu:prepared_terrasteel_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1157,7 +1133,6 @@
 				{
 					id: "17FE1AB4257178EF"
 					item: "gtceu:unstable_terrasteel_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1198,7 +1173,7 @@
 			tasks: [{
 				id: "0FF799E7FDEE89BF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item(kubejs:mechanical_rafflowsia)item(kubejs:mechanical_entropinnyum)item(kubejs:mechanical_thermalily)item(kubejs:mechanical_rosa_arcana)item(kubejs:mechanical_munchdew)item(kubejs:mechanical_kekimurus))"
@@ -1282,7 +1257,7 @@
 				{
 					id: "34463A6D05137EB4"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "endertanks:ender_tank"
 						tag: {
 							code: "000"
@@ -1294,7 +1269,7 @@
 				{
 					id: "0F47A22475CD73D1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "enderchests:ender_chest"
 						tag: {
 							code: "000"
@@ -1526,6 +1501,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["466C20EACAEF3394"]
 			description: [
 				"Welcome to your first significant chemical setup, &bChromium&r."
 				""
@@ -1535,6 +1511,7 @@
 				""
 				"&o&7This dust seems to have a much more valuable material trapped inside it, I should process this.&r"
 			]
+			hide_dependency_lines: true
 			id: "159750F7321A983A"
 			shape: "hexagon"
 			size: 1.5d

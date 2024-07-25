@@ -31,17 +31,26 @@
 
 	["Temperature Effects".Hot]
 		#When set to true, the player's view distance will decrease when they are too hot
-		"Heatstroke Fog" = true
+		#Range: 0.0 ~ Infinity
+		"Heatstroke Fog" = 6.0
 
 	["Temperature Effects".Cold]
-		#When set to true, some of the player's hearts will freeze when they are too cold, preventing regeneration
-		"Freezing Hearts" = true
-		#When set to true, the player's attack knockback will be reduced when they are too cold
-		"Cold Knockback Reduction" = true
-		#When set to true, the player's movement speed will be reduced when they are too cold
-		"Cold Slowness" = true
-		#When set to true, the player's mining speed will be reduced when they are too cold
-		"Cold Mining Fatigue" = true
+		#When set to true, this percentage of the player's hearts will freeze over when they are too cold, preventing regeneration
+		#Represented as a percentage
+		#Range: 0.0 ~ 1.0
+		"Freezing Hearts Percentage" = 0.5
+		#When set to true, the player's attack knockback will be reduced by this amount when they are too cold
+		#Represented as a percentage
+		#Range: 0.0 ~ 1.0
+		"Chilled Knockback Reduction" = 0.5
+		#When set to true, the player's movement speed will be reduced by this amount when they are too cold
+		#Represented as a percentage
+		#Range: 0.0 ~ 1.0
+		"Chilled Movement Slowdown" = 0.5
+		#When set to true, the player's mining speed will be reduced by this amount when they are too cold
+		#Represented as a percentage
+		#Range: 0.0 ~ 1.0
+		"Chilled Mining Speed Reduction" = 0.5
 
 ["Grace Period"]
 	#The number of ticks after the player spawns during which they are immune to temperature effects

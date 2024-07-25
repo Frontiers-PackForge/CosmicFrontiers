@@ -7,6 +7,7 @@
 	icon: "gtceu:basic_electronic_circuit"
 	id: "788F1C99AB3A89FA"
 	order_index: 0
+	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
 		{
@@ -16,6 +17,7 @@
 				""
 				"Start by making bronze, a mixture of tin and copper dust. Remember, you can make dust by using ingots and a Gregtech Mortar!"
 			]
+			hide: true
 			icon: "gtceu:bronze_ingot"
 			id: "52A46B052223551B"
 			shape: "hexagon"
@@ -98,8 +100,26 @@
 		}
 		{
 			dependencies: ["2A42583B975875D9"]
+			description: [
+				"Theses shards for the nether trial can also be found from special mobs"
+				""
+				"each piece comes from"
+				""
+				"evoker"
+				"elder guardian"
+				"silverfish"
+				"witch"
+				""
+				"No Idk which one comes from which gl figure it out I'm sorry lol temp desc"
+				""
+				"nether crystal - warden"
+				""
+				"remember you don't have to kill a warden, you can also craft the nether crystal."
+				"but I won't stop you if you want to. Remember there's a bunch of ways to cheese it."
+			]
 			hide_dependent_lines: true
 			id: "45BED4AD7A6EFDDB"
+			subtitle: "Shard Creation"
 			tasks: [{
 				id: "65FDE214D5875556"
 				item: "gtceu:lp_steam_extractor"
@@ -255,6 +275,9 @@
 				"The &6Seal of the Underworld&r is an one of the keys of the jailer. By proving your worth you can demand entry into the deeper parts of this world."
 				""
 				"Consume the seal and craft a nether portal. We're Heading to hell."
+				""
+				""
+				"&cIF YOU NEED MORE OF THESE SEALS, MAKE SURE TO CHECK THE RECIPE FOR DUPLICATING THEM FOR YOUR TEAMMATES!"
 			]
 			id: "0F8822EE409BED3C"
 			subtitle: "You are worthy!"
@@ -324,6 +347,21 @@
 		}
 		{
 			dependencies: ["47E86D7A16ECA234"]
+			description: [
+				"You don't have to kill the warden for this, you can craft the nether crystal."
+				""
+				"If you are hellbent on dying or wanting to murder a bulletsponge here's some ideas"
+				""
+				"create seats can trap the warden, do with this info as you must."
+				""
+				"the warden is able to take freezing damage, as well as other damage types."
+				""
+				"you could also just try smacking it, but this is quite risky."
+				""
+				"you could shoot it with a bow from far away  (if it's trapped)"
+				""
+				"There's plenty of silly ways you can kill this thing. But again you can also just get the echo shards and crystal via crafting and looting some emeralds"
+			]
 			id: "2816604F816E8D52"
 			subtitle: "Warden Slayer or Warp Stone"
 			tasks: [{
@@ -335,10 +373,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"0F8822EE409BED3C"
-				"3A8E67C3BD23DEC7"
-			]
+			dependencies: ["0F8822EE409BED3C"]
 			id: "705099C9ED28CF14"
 			shape: "hexagon"
 			size: 2.0d
@@ -359,7 +394,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["187B8D213D49BD07"]
@@ -435,6 +470,14 @@
 				"4F4AB465A829B20B"
 				"1FDBCDAA759B93F3"
 			]
+			description: [
+				"Allows for you to breathe in the nether for longer than one respirator can."
+				""
+				"optional but nice when needed, also allows you to breathe in red enviroments like the end."
+				""
+				"There is a bug with create where placing a backtank causes your insulation applied to vanish."
+				"so don't do that, I can't fix this either I apologize."
+			]
 			id: "5F460A1D5DB52638"
 			shape: "gear"
 			subtitle: "This will allow you to breath in the nether"
@@ -442,7 +485,7 @@
 				{
 					id: "3445124A8F9FFDDF"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -456,7 +499,7 @@
 				{
 					id: "71B240F870250340"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -470,8 +513,8 @@
 					type: "item"
 				}
 			]
-			x: -4.5d
-			y: -3.0d
+			x: -5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["52A46B052223551B"]
@@ -491,8 +534,8 @@
 				item: "cosmiccore:waxed_leather"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -2.0d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["705099C9ED28CF14"]
@@ -556,11 +599,13 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["52A46B052223551B"]
 			description: [
 				"Nether Brick is plentiful inside the mantle of this planet. (The Nether)"
 				""
 				"You could also scavange ruined portals for netherack - however you'll still need to enter the nether for sulfur"
 			]
+			hide_dependency_lines: true
 			id: "0BE94AFE912DF509"
 			tasks: [
 				{
@@ -640,14 +685,16 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -3.0d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["52A46B052223551B"]
 			description: [
 				"QB Descriptions / Layout is TBD and Not going to be finalized to 1.0.0."
 				"Expect Frequent Revisions to things, not anything hugely breaking though."
 			]
+			hide_dependency_lines: true
 			id: "4C8926A08B8CD7F0"
 			subtitle: "Follow along in the discord!"
 			tasks: [{
@@ -689,25 +736,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["52A46B052223551B"]
-			hide_dependency_lines: true
-			id: "3A8E67C3BD23DEC7"
-			subtitle: "This will allow you to breath in the nether"
-			tasks: [{
-				id: "58D5CAC9B483002A"
-				item: {
-					Count: 1b
-					id: "thinair:respirator"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 8.0d
-			y: -1.75d
-		}
-		{
 			dependencies: [
 				"5580E63FE719DF53"
 				"3387CFCFCE1AC164"
@@ -716,12 +744,18 @@
 				"1736B53572205D7C"
 				"2816604F816E8D52"
 			]
+			description: [
+				"This is how you get the seal of the underworld"
+				""
+				""
+				"Idk why EMI refuses to show the gate pearl normally, just bookmark it from here"
+			]
 			id: "42A86E7845F4CDF6"
 			subtitle: "Get Ready for a Fight."
 			tasks: [{
 				id: "202DADA7225C82CC"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gateways:gate_pearl"
 					tag: {
 						gateway: "gateways:trial_of_the_overworld"
@@ -758,6 +792,61 @@
 			}]
 			x: -4.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["52A46B052223551B"]
+			description: [
+				"Some materials are dangerous to handle!"
+				""
+				"You can avoid this by wearing proper PPE"
+				""
+				"Early on face masks/respirators are enough to protect you from inhalation poisons"
+				"Glove help you avoid toxins that get into your skin"
+				""
+				"Later on you can craft hazmat suits, as well as Nano and Quark armor to fully negate the effects on you."
+			]
+			hide_dependency_lines: true
+			icon: "architects_palette:hazard_sign"
+			id: "383AE3425F7D71E2"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Danger!"
+			tasks: [
+				{
+					id: "0BA52B59AF9207C1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "gtceu:rubber_gloves"
+						tag: {
+							Damage: 0
+							affix_data: {
+								sockets: 0
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "78BAF54B0A798EEF"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:face_mask)item(thinair:respirator)item(kubejs:rebreather)item(kubejs:nano_respirator))"
+						}
+					}
+					title: "Any Facemask"
+					type: "item"
+				}
+			]
+			title: "Hazards and you!"
+			x: -2.0d
+			y: -2.0d
 		}
 	]
 	title: "Rising Pressure [Steam]"

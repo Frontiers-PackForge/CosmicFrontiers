@@ -1,4 +1,33 @@
 ServerEvents.recipes(event => {
+
+    // event.custom({
+    //     "type": "ars_nouveau:enchanting_apparatus",
+    //     "keepNbtOfReagent": true,
+    //     "output": {
+    //       "item": "ars_nouveau:arcanist_hood"
+    //     },
+    //     "pedestalItems": [
+    //       {
+    //         "item": "ars_nouveau:magebloom_fiber"
+    //       },
+    //       {
+    //         "item": "ars_nouveau:magebloom_fiber"
+    //       },
+    //       {
+    //         "item": "ars_nouveau:magebloom_fiber"
+    //       },
+    //       {
+    //         "item": "ars_nouveau:magebloom_fiber"
+    //       }
+    //     ],
+    //     "reagent": [
+    //       {
+    //         "item": "minecraft:iron_helmet"
+    //       }
+    //     ],
+    //     "sourceCost": 0
+    //   })
+
     event.recipes.ars_nouveau.enchanting_apparatus(
         [
             'aether:bronze_dungeon_key',

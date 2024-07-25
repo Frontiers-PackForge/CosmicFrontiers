@@ -11,4 +11,6 @@ ServerEvents.tags('block', event => {
     event.add('ftbultimine:excluded_blocks', [`gtceu:andesite_${id.name}_ore`, `gtceu:diorite_${id.name}_ore`, `gtceu:deepslate_${id.name}_ore`, `gtceu:${id.name}_ore`, `gtceu:granite_${id.name}_ore`, `gtceu:netherrack_${id.name}_ore`, `gtceu:endstone_${id.name}_ore`])
   })
   event.add('ftbultimine:excluded_blocks', 'minecraft:powder_snow')
+  event.add('ftbultimine:excluded_blocks', 'minecraft:campfire')
+  event.add('ftbultimine:excluded_blocks', 'minecraft:soul_campfire')
 })

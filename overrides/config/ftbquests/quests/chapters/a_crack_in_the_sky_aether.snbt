@@ -31,7 +31,7 @@
 			tasks: [{
 				id: "5B12CDF9FDCAC92A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gateways:gate_pearl"
 					tag: {
 						gateway: "gateways:trial_of_the_skies"
@@ -233,10 +233,12 @@
 			y: -11.0d
 		}
 		{
+			dependencies: ["7E9BA1EC4CA7EEE8"]
 			description: [
 				"QB Descriptions / Layout is TBD and Not going to be finalized to 1.0.0."
 				"Expect Frequent Revisions to things, not anything hugely breaking though."
 			]
+			hide_dependency_lines: true
 			id: "7C79521446FA26B5"
 			subtitle: "Follow along in the discord!"
 			tasks: [{
@@ -256,7 +258,6 @@
 			tasks: [{
 				id: "4FBDD305CF318413"
 				item: "gtceu:hv_gas_collector"
-				optional_task: true
 				type: "item"
 			}]
 			x: 4.0d
@@ -278,7 +279,6 @@
 					icon: "gtceu:liquid_aether_air_bucket"
 					id: "53B8B729A1EF546A"
 					item: "gtceu:liquid_aether_air_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -298,7 +298,6 @@
 			tasks: [{
 				id: "5C994EA5BCB64AC6"
 				item: "gtceu:tears_of_the_sky_bucket"
-				optional_task: true
 				type: "item"
 			}]
 			x: 7.0d
@@ -311,7 +310,6 @@
 			tasks: [{
 				id: "7B279B6B3E3A6796"
 				item: "gtceu:ammonia_rich_aerocloud_solution_bucket"
-				optional_task: true
 				type: "item"
 			}]
 			x: 7.0d
@@ -324,7 +322,6 @@
 			tasks: [{
 				id: "05CF59A475E990CE"
 				item: "gtceu:thundering_aerocloud_solution_bucket"
-				optional_task: true
 				type: "item"
 			}]
 			x: 7.0d

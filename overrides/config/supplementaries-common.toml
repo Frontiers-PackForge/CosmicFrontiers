@@ -41,9 +41,6 @@
 		#note that the block will push further the faster it's pulsing
 		#Range: 0.0 ~ 64.0
 		base_velocity_scaling = 5.0
-		#sets velocity changed flag when pushing entities +
-		#causes pushing animation to be smooth client side but also restricts player movement when being pushed
-		velocity_changed_flag = true
 		#maximum range
 		#note that it will still only keep alive the two fire blocks closer to it
 		#Range: 0 ~ 16
@@ -218,6 +215,7 @@
 	doormat = true
 	flint_block = true
 	candle_holder = true
+	fire_pit = true
 
 	[building.hat_stand]
 		enabled = true
@@ -281,14 +279,15 @@
 
 	[building.ash]
 		enabled = true
-		#Burnable blocks will have a chance to create ash layers when burned
-		ash_from_fire = true
 		#Burning mobs will drop ash when they die
 		ash_from_burning_mobs = true
 		#Allows rain to wash away ash layers overtime
 		rain_wash_ash = true
 		#Use a datapack to tweak rarity
 		basalt_ash = true
+		#Burnable blocks will have a chance to create ash layers when burned. Greater this number the greater the chance will be
+		#Range: 0.0 ~ 1.0
+		ash_from_fire_chance = 1.0
 
 	[building.flag]
 		enabled = true

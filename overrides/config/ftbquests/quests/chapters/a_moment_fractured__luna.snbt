@@ -9,7 +9,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["45823A74FF2F334D"]
 			description: ["A simple QB page telling you all the different ore veins and resources  on the moon!"]
+			hide: true
 			icon: "ad_astra:moon_globe"
 			id: "5E210BF6CFD50E13"
 			shape: "hexagon"

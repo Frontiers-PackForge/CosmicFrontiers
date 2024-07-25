@@ -19,6 +19,11 @@ ServerEvents.recipes(event => {
     //Remove Boats
     event.remove({ id: /^(?!gtceu:)([^:]+):(.*)_boat$/ })
 
+    event.remove({id: 'gtceu:shapeless/rubber_wood_planks'})
+
+    
+
+
     //DANGEROUS : WOOD PLANK REMOVALS - BY RECIPE - if something is broken attempt to check it against this matcher first
     event.remove({ id: /^(?!gtceu:)([^:]+):(.*)_planks$/ })
     //forgive me for the sins im about to commit
@@ -53,8 +58,6 @@ ServerEvents.recipes(event => {
         'skyroot', //index 22
         //GTCEU
         'rubber', //index 23
-        //Phantasm
-        'pream', //index 24
         //architect pallets
         'twisted', //index 25
 
@@ -72,7 +75,111 @@ ServerEvents.recipes(event => {
         'minecraft:crimson',
         'minecraft:warped'
     ]
+    let mcWood2 = [
+        'oak',
+        'birch',
+        'dark_oak',
+        'acacia',
+        'jungle',
+        'spruce',
+        'cherry',
+        'mangrove',
+        'bamboo',
+        'crimson',
+        'warped'
+    ]
+    mcWood2.forEach((woodType, index, recipe) => {
+        if (Item.exists(`minecraft:stripped_${woodType}_log`)) {
+            event.recipes.gtceu.cutter(`minecraft:stripped_${woodType}_cutting`)
+                .itemInputs(`minecraft:stripped_${woodType}_log`)
+                .itemOutputs([`6x minecraft:${woodType}_planks`, '2x gtceu:wood_dust'])
+                .duration(200)
+                .EUt(7);
+        }
+        if (Item.exists(`minecraft:${woodType}_wood`)) {
+            event.recipes.gtceu.cutter(`minecraft:${woodType}_wood_cutting`)
+                .itemInputs(`minecraft:${woodType}_wood`)
+                .itemOutputs([`6x minecraft:${woodType}_planks`, '2x gtceu:wood_dust'])
+                .duration(200)
+                .EUt(7);
+        }
+        if (Item.exists(`minecraft:stripped_${woodType}_wood`)) {
+            event.recipes.gtceu.cutter(`minecraft:stripped_${woodType}_wood_cutting`)
+                .itemInputs(`minecraft:stripped_${woodType}_wood`)
+                .itemOutputs([`6x minecraft:${woodType}_planks`, '2x gtceu:wood_dust'])
+                .duration(200)
+                .EUt(7);
+        }
+        //Stripped log -> planks
+        if (Item.exists(`minecraft:stripped_${woodType}_log`)) {
+            event.shaped(`4x minecraft:${woodType}_planks`, [
+                '   ',
+                ' T ',
+                ' P '
+            ],
+                {
+                    T: '#forge:tools/saws',
+                    P: `minecraft:stripped_${woodType}_log`
+                })
+        }
+        if (Item.exists(`minecraft:stripped_${woodType}_log`)) {
+            event.shaped(`2x minecraft:${woodType}_planks`, [
+                '   ',
+                '   ',
+                ' P '
+            ],
+                {
+                    P: `minecraft:stripped_${woodType}_log`
+                })
+        }
+        //Wood -> Planks
+        if (Item.exists(`minecraft:${woodType}_wood`)) {
+            event.shaped(`4x minecraft:${woodType}_planks`, [
+                '   ',
+                ' T ',
+                ' P '
+            ],
+                {
+                    T: '#forge:tools/saws',
+                    P: `minecraft:${woodType}_wood`
+                })
+        }
+        if (Item.exists(`minecraft:${woodType}_wood`)) {
+            event.shaped(`2x minecraft:${woodType}_planks`, [
+                '   ',
+                '   ',
+                ' P '
+            ],
+                {
+                    P: `minecraft:${woodType}_wood`
+                })
+        }
+        //Stripped Wood -> Planks
+        if (Item.exists(`minecraft:stripped_${woodType}_wood`)) {
+            event.shaped(`4x minecraft:${woodType}_planks`, [
+                '   ',
+                ' T ',
+                ' P '
+            ],
+                {
+                    T: '#forge:tools/saws',
+                    P: `minecraft:stripped_${woodType}_wood`
+                })
+        }
+        if (Item.exists(`minecraft:stripped_${woodType}_wood`)) {
+            event.shaped(`2x minecraft:${woodType}_planks`, [
+                '   ',
+                '   ',
+                ' P '
+            ],
+                {
+                    P: `minecraft:stripped_${woodType}_wood`
+                })
+        }
+    })
+
     mcWood.forEach((woodType, index, recipe) => {
+
         //Sign
         if (Item.exists(`${woodType}_sign`)) {
             event.recipes.gtceu.assembler(`${woodType}_sign`)
@@ -164,8 +271,6 @@ ServerEvents.recipes(event => {
         } else if (index === 23) {
             modID = 'gtceu'
         } else if (index === 24) {
-            modID = 'phantasm'
-        } else if (index === 25) {
             modID = 'architects_palette'
         }
         if (Item.exists(`${modID}:${woodType}_log`)) {
@@ -342,7 +447,7 @@ ServerEvents.recipes(event => {
             event.recipes.gtceu.assembler(`${modID}:${woodType}_trapdoor`)
                 .itemInputs(`3x ${modID}:${woodType}_slab`)
                 .itemOutputs(`3x ${modID}:${woodType}_trapdoor`)
-                .circuit(3)
+                .circuit(6)
                 .duration(100)
                 .EUt(4);
         }
@@ -450,6 +555,7 @@ ServerEvents.recipes(event => {
             event.recipes.gtceu.assembler(`${modID}:${woodType}_fence`)
                 .itemInputs(`${modID}:${woodType}_planks`)
                 .itemOutputs(`${modID}:${woodType}_fence`)
+                .circuit(1)
                 .duration(100)
                 .EUt(4);
             event.shaped(`${modID}:${woodType}_fence`, [
@@ -488,6 +594,7 @@ ServerEvents.recipes(event => {
             event.recipes.gtceu.assembler(`${modID}:${woodType}_fence_gate`)
                 .itemInputs([`2x ${modID}:${woodType}_planks`, "2x minecraft:stick"])
                 .itemOutputs(`${modID}:${woodType}_fence_gate`)
+                .circuit(2)
                 .duration(100)
                 .EUt(4);
         }
@@ -644,7 +751,7 @@ ServerEvents.recipes(event => {
                 D: '#forge:tools/screwdrivers',
             })
         event.recipes.gtceu.assembler(`ars_nouveau:archwood_door`)
-            .itemInputs([`5x ars_nouveau:archwood_planks`])
+            .itemInputs([`5x ars_nouveau:archwood_planks`, `1x ars_nouveau:archwood_trapdoor`])
             .itemOutputs(`3x ars_nouveau:archwood_door`)
             .inputFluids('gtceu:iron 16')
             .circuit(3)
@@ -664,7 +771,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.assembler(`ars_nouveau:archwood_trapdoor`)
             .itemInputs(`3x ars_nouveau:archwood_slab`)
             .itemOutputs(`3x ars_nouveau:archwood_trapdoor`)
-            .circuit(3)
+            .circuit(6)
             .duration(100)
             .EUt(4);
     }
@@ -772,6 +879,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.assembler(`ars_nouveau:archwood_fence`)
             .itemInputs(`ars_nouveau:archwood_planks`)
             .itemOutputs(`ars_nouveau:archwood_fence`)
+            .circuit(1)
             .duration(100)
             .EUt(4);
         event.shaped(`ars_nouveau:archwood_fence`, [
@@ -810,7 +918,23 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.assembler(`ars_nouveau:archwood_fence_gate`)
             .itemInputs([`2x ars_nouveau:archwood_planks`, "2x minecraft:stick"])
             .itemOutputs(`ars_nouveau:archwood_fence_gate`)
+            .circuit(2)
             .duration(100)
             .EUt(4);
+        event.recipes.gtceu.macerator(`archwood_pulping`)
+            .itemInputs(`ars_nouveau:archwood_planks`)
+            .itemOutputs('gtceu:wood_dust')
+            .duration(100)
+            .EUt(2);
+            event.remove({ output:'framedblocks:framed_chest' })
+            event.shaped( 'framedblocks:framed_chest', [
+                'LFL',
+                'FSF',
+                'LFL'
+            ], {
+                L: '#minecraft:logs',
+                F: 'framedblocks:framed_cube',
+                S: 'minecraft:flint'
+            })  
     }
 })

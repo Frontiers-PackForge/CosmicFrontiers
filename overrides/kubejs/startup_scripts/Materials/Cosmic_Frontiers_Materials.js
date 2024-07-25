@@ -45,6 +45,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('ammonia_rich_aerocloud_solution')
         .fluid()
         .color(0x9368e3)
+    event.create('high_grade_solder')
+        .fluid()
+        .color(0xd1c664)
     event.create('aether_augmented_sediment')
         .fluid()
         .color(0x00c4b7)
@@ -195,8 +198,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('deeply_withered_nether_slag')
         .color(0x1f0207)
         .fluid()
-    event.create('grove_enriched_nether_slag')
+    event.create('silica_enriched_nether_slag')
         .color(0xb3377d)
+        .fluid()
+    event.create('pyroflux')
+        .color(0xdb593b)
         .fluid()
     event.create('nether_star_distillate_slurry')
         .color(0xa87692)
@@ -227,6 +233,93 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_SMELTING
         )
 
+    //LUV Stuff
+    event.create('false_infinity')
+        .color(0x4614a3)
+        .ingot()
+        .fluid()
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        )
+        event.create('impractical_infinity')
+        .color(0x4614a3)
+        .ingot()
+        .fluid()
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        )
+        event.create('suitable_infinity')
+        .color(0x4614a3)
+        .ingot()
+        .fluid()
+        .cableProperties(GTValues.V[GTValues.EV], 8, 0, false)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        )
+        event.create('logical_infinity')
+        .color(0x4614a3)
+        .ingot()
+        .fluid()
+        .cableProperties(GTValues.V[GTValues.EV], 8, 0, false)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        )
+        event.create('programmable_matter_base')
+        .color(0x4614a3)
+        .ingot()
+        .fluid()
+        .iconSet(GTMaterialIconSet.getByName('luminite'))
+        .cableProperties(GTValues.V[GTValues.UV], 12, 0, true)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        )
+
+
+
+
+
+
+
+
+
+
+
+
     event.create('undergarden_smog')
         .gas()
         .color(0x614b09).iconSet(GTMaterialIconSet.DULL)
@@ -244,6 +337,37 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.get('nobelium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.get('lawrencium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.get('praseodymium').addFlags(GTMaterialFlags.GENERATE_ROD)
+
+    event.create('andesite_alloy')
+        .ingot()
+        .color(0xa7ad9f).iconSet(GTMaterialIconSet.DULL)
+        .components('1x andesite', '1x iron')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_RING,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL
+        )
+    event.create('industrial_iron')
+        .ingot()
+        .color(0x4e4e4e).iconSet(GTMaterialIconSet.DULL)
+        .components('1x iron')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE
+        )
+    GTMaterials.Aluminium.addFlags(GTMaterialFlags.GENERATE_ROTOR)
+})
+
+GTCEuStartupEvents.materialModification(event => {
+    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('andesite_alloy'), () => Item.getItem('create:andesite_alloy')),
+    TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('andesite_alloy'), () => Item.getItem('create:andesite_alloy_block')),
+    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('industrial_iron'), () => Item.getItem('createdeco:industrial_iron_ingot')),
+    TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('industrial_iron'), () => Item.getItem('create:industrial_iron_block'))
 })
 
 

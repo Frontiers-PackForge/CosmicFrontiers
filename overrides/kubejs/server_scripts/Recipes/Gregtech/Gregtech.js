@@ -458,7 +458,20 @@ ServerEvents.recipes(event => {
     .blastFurnaceTemp(1200)
     .duration(442)
     .EUt(GTValues.VA[GTValues.MV]);
-
+  event.recipes.gtceu.electric_blast_furnace('naq_smelt_pyroflux')
+    .itemInputs('gtceu:naquadah_dust')
+    .inputFluids('gtceu:pyroflux 1000')
+    .itemOutputs('gtceu:hot_naquadah_ingot')
+    .circuit(1)
+    .blastFurnaceTemp(4700)
+    .duration(1300)
+    .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.vacuum_freezer('cool_hot_naq')
+    .itemInputs('gtceu:hot_naquadah_ingot')
+    .inputFluids('gtceu:liquid_helium 1000')
+    .itemOutputs('gtceu:naquadah_ingot')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.EV]);
 
   event.recipes.gtceu.electric_blast_furnace('gtceu:electric_blast_furnace/blue_alloy')
     .itemInputs('gtceu:blue_alloy_dust')

@@ -35,6 +35,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .gas()
         .color(0x400202)
 
+    event.create('americium_oxide')
+        .dust()
+        .color(0x02402d)
+    event.create('americium_hexafluoride')
+        .gas()
+        .color(0x02402d)
+    event.create('enriched_americium_hexafluoride')
+        .gas()
+        .color(0x02402d)
+    event.create('depleted_americium_hexafluoride')
+        .gas()
+        .color(0x02402d)
+
 
     //Normal Fuel Salts
     event.create('uranium_fuel_salt')

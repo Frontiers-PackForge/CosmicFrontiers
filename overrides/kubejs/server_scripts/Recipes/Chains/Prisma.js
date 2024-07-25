@@ -3,9 +3,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.essence_reactor(`prisma_acid`)
         .itemInputs(['bloodmagic:reagentwater', 'bloodmagic:reagentlava'])
         .inputFluids('gtceu:hydrofluoric_acid 8000')
-        .perTick(true)
-        .inputFluids('gtceu:sulfuric_acid 20')
-        .perTick(false)
+        .inputFluids('gtceu:sulfuric_acid 8000')
         .outputFluids('gtceu:astraline_corrosion_agent 16000')
         .duration(400)
         .EUt(GTValues.VA[GTValues.EV]);

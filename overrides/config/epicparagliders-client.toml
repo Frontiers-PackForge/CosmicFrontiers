@@ -1,0 +1,8 @@
+
+[gui]
+
+	[gui.gui]
+		#If true, the mod will use the Paragliders stamina wheel to display the player's current stamina.
+		#If false, the mod will use the Epic Fight stamina bar to display the player's current stamina.
+		use_stamina_wheel = true
+

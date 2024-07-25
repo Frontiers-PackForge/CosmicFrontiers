@@ -13,6 +13,11 @@ ServerEvents.tags('item', event => {
        event.add('thinair:heavy_breathing_equipment', 'ad_astra:space_helmet')
        event.add('thinair:heavy_breathing_equipment', 'kubejs:nano_respirator')
        event.add('thinair:breathing_equipment', 'kubejs:nano_respirator')
+       event.add('gtceu:ppe_armor', 'kubejs:nano_respirator')
+       event.add('gtceu:ppe_armor', 'kubejs:rebreather')
+       event.add('gtceu:ppe_armor', 'thinair:respirator')
+       event.add('thinair:breathing_equipment', 'kubejs:rebreather')
+       event.add('curios:head', 'kubejs:rebreather')
        event.add('curios:head', 'kubejs:nano_respirator')
        event.add('curios:charm', 'gtceu:hv_item_magnet')
        event.add('curios:charm', 'gtceu:lv_item_magnet')
@@ -61,6 +66,15 @@ ServerEvents.recipes(event => {
               S: 'minecraft:echo_shard',
               W: 'kubejs:seal_shards'
        })
+       event.shaped('gtceu:molten_salt_reactor', [
+              'CIC',
+              'CPC',
+              'CIC',
+       ], {
+              P: 'gtceu:titanium_pipe_casing',
+              C: 'cosmiccore:high_temperature_fission_casing',
+              I: 'gtceu:ev_electric_pump'
+       })
        event.remove({ output: 'architects_palette:charcoal_block' })
        event.shaped('architects_palette:charcoal_block', [
               'CC',
@@ -95,22 +109,22 @@ ServerEvents.recipes(event => {
               .duration(160)
               .EUt(GTValues.VA[GTValues.LV] / 2);
        event.recipes.gtceu.mixer('cosmiccore:sediment_sludge_mixing')
-              .itemInputs('biomesoplenty:blackstone_bulb')
-              .inputFluids(Fluid.of('minecraft:water', 1000))
-              .outputFluids(Fluid.of('gtceu:nether_sediment_sludge', 1000))
+              .itemInputs('3x biomesoplenty:blackstone_bulb')
+              .inputFluids(Fluid.of('biomesoplenty:blood', 1000))
+              .outputFluids(Fluid.of('gtceu:nether_sediment_sludge', 750))
               .duration(80)
               .circuit(1)
               .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.mixer('cosmiccore:sediment_sludge_mixing_good')
               .itemInputs('2x biomesoplenty:blackstone_bulb')
               .inputFluids(Fluid.of('gtceu:ethanol', 250))
-              .outputFluids(Fluid.of('gtceu:nether_sediment_sludge', 1000))
+              .outputFluids(Fluid.of('gtceu:nether_sediment_sludge', 1500))
               .duration(40)
               .circuit(2)
               .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.flora_nurturer('cosmiccore:pearl_cultivation')
               .notConsumable('nethersdelight:propelpearl')
-              .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 500))
+              .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 750))
               .itemOutputs('2x cosmiccore:overloaded_pearls')
               .itemOutputs('2x nethersdelight:propelpearl')
               .chancedOutput(Item.of('nethersdelight:propelpearl', 1), 5000, 500)
@@ -242,8 +256,83 @@ ServerEvents.recipes(event => {
               .blastFurnaceTemp(3600)
               .duration(1800)
               .EUt(GTValues.VA[GTValues.HV]);
-
-
+       // event.recipes.gtceu.assembler('scroll_not_as_bad')
+       //        .itemInputs(['ars_nouveau:blank_parchment', '6x paraglider:spirit_orb', '2x apotheosis:gem_dust'])
+       //        .inputFluids('gtceu:source_oils 100')
+       //        .itemOutputs('2x skilltree:wisdom_scroll')
+       //        .circuit(1)
+       //        .duration(600)
+       //        .EUt(GTValues.VA[GTValues.LV]);
+       event.recipes.gtceu.assembler('nano_space_default')
+              .itemInputs(['gtceu:nanomuscle_chestplate', '2x ad_astra:large_gas_tank'])
+              .itemOutputs(Item.of('cosmiccore:space_nanomuscle_chestplate', '{affix_data:{sockets:0}}'))
+              .circuit(1)
+              .duration(600)
+              .EUt(GTValues.VA[GTValues.HV]);
+       event.recipes.gtceu.assembler('adv_nano_space_default')
+              .itemInputs(['gtceu:advanced_nanomuscle_chestplate', '2x ad_astra:large_gas_tank'])
+              .itemOutputs(Item.of('cosmiccore:space_advanced_nanomuscle_chestplate', '{affix_data:{sockets:0}}'))
+              .circuit(1)
+              .duration(600)
+              .EUt(GTValues.VA[GTValues.HV]);
+       event.recipes.gtceu.assembler('reactor_casing_default')
+              .itemInputs(['gtceu:titanium_frame', '4x gtceu:double_lead_plate', '2x gtceu:beryllium_plate'])
+              .itemOutputs('cosmiccore:high_temperature_fission_casing')
+              .circuit(2)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.EV]);
+       event.recipes.gtceu.assembler('heat_exchanger_default')
+              .itemInputs(['gtceu:titanium_frame', '4x gtceu:stainless_steel_plate', '2x gtceu:annealed_copper_plate'])
+              .itemOutputs('cosmiccore:highly_conductive_fission_casing')
+              .circuit(2)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.EV]);
+       event.recipes.gtceu.assembler('virtue_casing')
+              .itemInputs(['cosmiccore:resonant_virtue_meld_frame', '6x cosmiccore:resonant_virtue_meld_plate'])
+              .itemOutputs('cosmiccore:highly_conductive_fission_casing')
+              .circuit(6)
+              .duration(320)
+              .EUt(GTValues.VA[GTValues.IV]);
+       event.recipes.gtceu.assembler('naq_pressure_casing')
+              .itemInputs(['gtceu:tungsten_frame', '6x gtceu:naquadah_plate'])
+              .itemOutputs('cosmiccore:naquadah_pressure_resistant_casing')
+              .circuit(6)
+              .duration(320)
+              .EUt(GTValues.VA[GTValues.IV]);
+       // event.shaped('skilltree:wisdom_scroll', [
+       //        'SWS',
+       //        'WDW',
+       //        'SWS',
+       // ], {
+       //        S: 'minecraft:paper',
+       //        W: 'paraglider:spirit_orb',
+       //        D: 'apotheosis:gem_dust'
+       // })
+       event.shaped('gtceu:leaching_plant', [
+              'QSQ',
+              'DCD',
+              'WSW',
+       ], {
+              S: '#gtceu:circuits/ev',
+              W: 'gtceu:ev_conveyor_module',
+              D: 'gtceu:ev_electric_pump',
+              C: 'gtceu:clean_machine_casing',
+              Q: 'gtceu:aluminium_drum'
+       })
+       event.shaped('cosmiccore:space_advanced_nanomuscle_chestplate', [
+              'CJS',
+              'WAW',
+              'PIP',
+       ], {
+              C: '#forge:tools/wire_cutters',
+              J: 'gtceu:advanced_electric_jetpack',
+              S: '#forge:tools/screwdrivers',
+              A: 'cosmiccore:space_nanomuscle_chestplate',
+              W: 'gtceu:lpic_chip',
+              I: '#gtceu:circuits/iv',
+              P: 'gtceu:platinum_quadruple_wire'
+              
+       })
 
 
        //TODO - Mechanical Flower Recipes
@@ -255,16 +344,36 @@ ServerEvents.recipes(event => {
        event.recipes.botania.runic_altar('kubejs:mechanical_rosa_arcana', ['botania:rosa_arcana', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
        event.recipes.botania.runic_altar('kubejs:mechanical_rafflowsia', ['botania:rafflowsia', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
 
-
-
-
-
-
-
-
-
-
-
+       //Sleeping Bags
+       let dye = [
+              'white',
+              'orange',
+              'magenta',
+              'light_blue',
+              'yellow',
+              'lime',
+              'pink',
+              'gray',
+              'light_gray',
+              'cyan',
+              'purple',
+              'blue',
+              'brown',
+              'green',
+              'red',
+              'black'
+       ]
+       dye.forEach(dye => {
+              event.remove({ id: `comforts:sleeping_bag_${dye}`})
+              event.shaped(`comforts:sleeping_bag_${dye}`, [
+                     '   ',
+                     'WCC',
+                     'LLL'
+              ], {
+                     W: `minecraft:${dye}_wool`,
+                     C: `minecraft:${dye}_carpet`,
+                     L: 'cosmiccore:waxed_leather'
+              })
+       })
 })
-
 

@@ -1,0 +1,11 @@
+machines:
+  # Wether to add a "Processing Array"
+  # Default: true
+  doProcessingArray: true
+
+items:
+  # The subscript used to warp items
+  # When true, use like "I" to subscript
+  # Default: true
+  perfRomanSubscript: true
+

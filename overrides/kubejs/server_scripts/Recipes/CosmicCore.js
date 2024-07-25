@@ -9,7 +9,19 @@ event.shaped('cosmiccore:waxed_leather', [
   L: 'minecraft:leather' 
 }
 )
+event.shaped('sophisticatedstorage:controller', [
+  'RWR', 
+  'WLW', 
+  'RWR'  
+], {
+  W: 'gtceu:red_alloy_quadruple_wire', 
+  L: 'gtceu:lv_machine_hull',
+  R: 'gtceu:lv_robot_arm' 
+}
+)
 })
+
+
 
 
 ServerEvents.tags('item', event => {

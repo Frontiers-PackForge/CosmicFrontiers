@@ -9,6 +9,8 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["44DE661BAA434766"]
+			hide: true
 			id: "52DAB014D2101F02"
 			shape: "hexagon"
 			size: 2.0d
@@ -51,7 +53,6 @@
 				{
 					id: "4C17F5BED717F19A"
 					item: "gtceu:radon_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -95,7 +96,6 @@
 				{
 					id: "5EDA98FAC7E82D91"
 					item: "gtceu:liquid_ender_air_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -223,18 +223,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["5FE8C15756B82C43"]
-			id: "2CC7CB0392AADAC5"
-			tasks: [{
-				id: "38D50C25AFECCD94"
-				item: "gtceu:reinforced_epoxy_resin_plate"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["2CC7CB0392AADAC5"]
+			dependencies: ["52DAB014D2101F02"]
 			id: "77EA22B0339E070C"
 			tasks: [{
 				id: "6129B0D109FBFF4D"
@@ -242,7 +231,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["77EA22B0339E070C"]
@@ -253,7 +242,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1EDC243E9D7D93C7"]
@@ -263,8 +252,8 @@
 				item: "kubejs:prepared_quantum_cpu_wafer"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.0d
+			x: -0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["52DAB014D2101F02"]
@@ -285,19 +274,8 @@
 				item: "gtceu:qbit_cpu_wafer"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["52DAB014D2101F02"]
-			id: "5FE8C15756B82C43"
-			tasks: [{
-				id: "135134FCCBA42529"
-				item: "gtceu:carbon_fiber_mesh"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 1.5d
+			x: 0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["10D4674646DC7B90"]
@@ -308,14 +286,14 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
 				"58E27D2F4DEEEA8E"
 				"2963543F47380B6F"
-				"73E077CD5E56B81E"
 				"7B532242A29109CB"
+				"5B01239EFA98E0BC"
 			]
 			id: "42865AA334F31C33"
 			tasks: [{
@@ -324,7 +302,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["78B36006CB047EBE"]
@@ -335,7 +313,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1EF7E793ED32B4C2"]
@@ -346,7 +324,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 10.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["1EF7E793ED32B4C2"]
@@ -361,53 +339,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3CAEBA7C54A57F02"]
-			id: "73E077CD5E56B81E"
-			tasks: [{
-				id: "7F53E08212CC9B31"
-				item: "gtceu:luminite_bucket"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["52DAB014D2101F02"]
-			id: "2FCBAB559DC65382"
-			tasks: [{
-				id: "6CCD330AFE3D900E"
-				item: "bloodmagic:reagentmagnetism"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["52DAB014D2101F02"]
-			id: "493B795C47573517"
-			tasks: [{
-				id: "3FB309E488DE09C4"
-				item: "gtceu:soldering_alloy_dust"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"493B795C47573517"
-				"2FCBAB559DC65382"
-			]
-			id: "3CAEBA7C54A57F02"
-			tasks: [{
-				id: "598EEF222AA9D2B5"
-				item: "gtceu:uvarovite_dust"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 3.0d
-		}
-		{
 			dependencies: ["4FDA9A502C1B81B4"]
 			id: "7B532242A29109CB"
 			tasks: [{
@@ -415,8 +346,8 @@
 				item: "gtceu:fine_americium_wire"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 7.5d
+			x: -1.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -430,7 +361,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -444,7 +375,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 10.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -460,7 +391,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1617EC9B17F98510"]
@@ -471,7 +402,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 10.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["2498E9178C0E62FA"]
@@ -503,7 +434,7 @@
 			tasks: [{
 				id: "1BD31CB7AE881513"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ad_astra:tier_2_rocket"
 					tag: { }
 				}
@@ -594,7 +525,11 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["57898F6FBA8CE622"]
+			dependencies: [
+				"57898F6FBA8CE622"
+				"52DAB014D2101F02"
+			]
+			hide_dependency_lines: true
 			id: "454AC43D9EAF4A55"
 			shape: "hexagon"
 			subtitle: "Have You Finished Platline?"
@@ -669,12 +604,6 @@
 			y: -10.5d
 		}
 		{
-			icon: "gtceu:luv_electric_motor"
-			id: "14B7A82E598AFC52"
-			x: 3.0d
-			y: -7.5d
-		}
-		{
 			dependencies: [
 				"5B1D7A68D8767876"
 				"2B5B95B71592BEBC"
@@ -703,7 +632,7 @@
 			tasks: [{
 				id: "73A919D25B713A45"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ad_astra:tier_3_rocket"
 					tag: { }
 				}
@@ -732,7 +661,7 @@
 		{
 			dependencies: [
 				"71BF44B9337D9A09"
-				"1695F37249DDB412"
+				"350222013080795B"
 			]
 			id: "2B5B95B71592BEBC"
 			tasks: [{
@@ -758,7 +687,11 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["4DA37DF15D6955C2"]
+			dependencies: [
+				"4DA37DF15D6955C2"
+				"52DAB014D2101F02"
+			]
+			hide_dependency_lines: true
 			id: "2275BD1700FF037F"
 			subtitle: "Have You Finished Platline?"
 			tasks: [{
@@ -770,7 +703,12 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["7C2579488595C534"]
+			dependencies: [
+				"7C2579488595C534"
+				"52DAB014D2101F02"
+			]
+			hide: true
+			hide_dependency_lines: true
 			id: "1C8200AE86247D44"
 			subtitle: "Have You Finished Platline?"
 			tasks: [{
@@ -785,6 +723,7 @@
 			dependencies: [
 				"5B89C5230F74CA3A"
 				"1C69A670270A14F7"
+				"7DC21C56F2BFA0D2"
 			]
 			id: "043571B3B39ED283"
 			tasks: [{
@@ -796,7 +735,10 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["043571B3B39ED283"]
+			dependencies: [
+				"043571B3B39ED283"
+				"7DC21C56F2BFA0D2"
+			]
 			id: "6B2A25D5C2C81847"
 			tasks: [{
 				id: "52D57C431FF7D682"
@@ -831,176 +773,6 @@
 			}]
 			x: -9.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["298E56DA9A374C9E"]
-			icon: "botania:dice"
-			id: "66FFD53CA9FB9671"
-			tasks: [
-				{
-					id: "4DC61400E6CEFDD5"
-					type: "item"
-				}
-				{
-					id: "62F8B4D62DB6A473"
-					item: "botania:dice"
-					type: "item"
-				}
-			]
-			title: "Psi-Stable Elemental Dust"
-			x: -7.0d
-			y: -11.5d
-		}
-		{
-			dependencies: ["66FFD53CA9FB9671"]
-			id: "0583C8C4C493008C"
-			tasks: [{
-				id: "7E59CB5F43079791"
-				type: "item"
-			}]
-			x: -5.5d
-			y: -12.0d
-		}
-		{
-			dependencies: ["66FFD53CA9FB9671"]
-			id: "098E84C032948385"
-			tasks: [{
-				id: "28EA7015412A1469"
-				type: "item"
-			}]
-			x: -7.5d
-			y: -10.0d
-		}
-		{
-			dependencies: ["66FFD53CA9FB9671"]
-			id: "40DBE34CD1781767"
-			tasks: [{
-				id: "6D458A87CFA967FF"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -13.0d
-		}
-		{
-			dependencies: ["66FFD53CA9FB9671"]
-			id: "1A575B9FA659E0EC"
-			tasks: [{
-				id: "0F881ABB00CE7DD4"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -10.0d
-		}
-		{
-			dependencies: ["66FFD53CA9FB9671"]
-			id: "166EF7F48F362267"
-			tasks: [{
-				id: "4C7E20F7FA856F6A"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -13.0d
-		}
-		{
-			dependencies: ["66FFD53CA9FB9671"]
-			id: "4834C93F5687291C"
-			tasks: [{
-				id: "10C85F42BA27B4A3"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -11.0d
-		}
-		{
-			dependencies: ["71BF44B9337D9A09"]
-			id: "298E56DA9A374C9E"
-			subtitle: "Want some powerful gear?"
-			tasks: [{
-				id: "6A378F47276334B2"
-				item: "botania:gaia_ingot"
-				type: "item"
-			}]
-			title: "Taunting Virtues"
-			x: -6.0d
-			y: -10.5d
-		}
-		{
-			icon: "createdeco:decal_electrical"
-			id: "2D93747545E020B5"
-			shape: "gear"
-			tasks: [{
-				id: "5220890D98D2704C"
-				type: "checkmark"
-			}]
-			x: -7.5d
-			y: 1.5d
-		}
-		{
-			id: "6DE1354E05639C02"
-			tasks: [{
-				id: "6E82A6FFAECBDA94"
-				item: "gtceu:nitrobenzene_bucket"
-				type: "item"
-			}]
-			x: -9.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["2D93747545E020B5"]
-			id: "4B1EAFCCB28872E5"
-			tasks: [{
-				id: "51179694D35DA9B4"
-				item: "gtceu:tears_of_the_sky_bucket"
-				type: "item"
-			}]
-			x: -7.5d
-			y: 3.0d
-		}
-		{
-			id: "2C7E62F89AD1FEDD"
-			tasks: [{
-				id: "1E609EF542AFB1C1"
-				item: "gtceu:refinery_gas_bucket"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"2C7E62F89AD1FEDD"
-				"4B1EAFCCB28872E5"
-			]
-			id: "408A19D097A2587C"
-			tasks: [{
-				id: "66A0F7EAB89CA2BE"
-				type: "item"
-			}]
-			x: -7.5d
-			y: 4.5d
-		}
-		{
-			dependencies: [
-				"6DE1354E05639C02"
-				"408A19D097A2587C"
-			]
-			id: "44E99D526730DFEC"
-			tasks: [{
-				id: "60E8058DD6044BE6"
-				type: "item"
-			}]
-			x: -7.5d
-			y: 6.0d
-		}
-		{
-			id: "494AE490454887FF"
-			tasks: [{
-				id: "01F0C1E254D3680C"
-				item: "gtceu:thundering_aerocloud_solution_bucket"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 6.0d
 		}
 		{
 			dependencies: ["0CE1B054263D0C44"]
@@ -1102,24 +874,15 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["7A6687C64AE5FC75"]
 			id: "4EEA38675CD6EA83"
 			tasks: [{
 				id: "3290D572A3274F86"
 				item: "gtceu:europium_dust"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -12.0d
-		}
-		{
-			id: "24372DF466387782"
-			tasks: [{
-				id: "52255251AB9CF568"
-				item: "gtceu:samarium_dust"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -12.0d
+			x: 7.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["7A6687C64AE5FC75"]
@@ -1173,7 +936,7 @@
 			id: "2868E4E3E48830EC"
 			tasks: [{
 				id: "7420844B62F449C8"
-				item: "gtceu:grove_enriched_nether_slag_bucket"
+				item: "gtceu:silica_enriched_nether_slag_bucket"
 				type: "item"
 			}]
 			title: "Netherstars!"
@@ -1185,6 +948,7 @@
 				"705099C9ED28CF14"
 				"52DAB014D2101F02"
 			]
+			hide: true
 			hide_dependency_lines: true
 			icon: "gtceu:deeply_withered_nether_slag_bucket"
 			id: "2B96AA2FF13432C2"
@@ -1242,7 +1006,6 @@
 				{
 					id: "73BA910EC36BD1C1"
 					item: "gtceu:naquadric_solution_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1263,7 +1026,6 @@
 				{
 					id: "774763E78462E4B5"
 					item: "gtceu:fluoronaquadric_acid_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1284,7 +1046,6 @@
 				{
 					id: "45C101B4059CB9B1"
 					item: "gtceu:naquadah_difluoride_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1305,7 +1066,6 @@
 				{
 					id: "31FEE605F3B41630"
 					item: "gtceu:naquadah_sulfate_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1317,37 +1077,6 @@
 			]
 			x: -4.5d
 			y: -9.0d
-		}
-		{
-			icon: "gtceu:uranium_hexafluoride_bucket"
-			id: "6B051B2F2297D096"
-			tasks: [
-				{
-					id: "4C422603B13B8E87"
-					item: "gtceu:uranium_hexafluoride_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "7D9028A6F0C2F406"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 6.0d
-			y: 5.5d
-		}
-		{
-			id: "1695F37249DDB412"
-			subtitle: "Reaction Stabilizer"
-			tasks: [{
-				id: "66640A28E234033A"
-				item: "gtceu:prismaline_thermal_catalyst_bucket"
-				type: "item"
-			}]
-			x: -4.5d
-			y: -12.0d
 		}
 		{
 			dependencies: ["2868E4E3E48830EC"]
@@ -1373,7 +1102,11 @@
 		}
 		{
 			dependencies: ["71BF44B9337D9A09"]
-			description: ["Shouldn't be too bad, you already have virtue automated, right?"]
+			description: [
+				"Shouldn't be too bad, you already have virtue automated, right?"
+				""
+				"Now that you have a small army of alloy blast smelters you can afford to probably on-demand this with an ME-Requester"
+			]
 			id: "7318CB2F24DDEC93"
 			shape: "hexagon"
 			size: 1.5d
@@ -1420,6 +1153,55 @@
 			}]
 			x: -3.0d
 			y: -7.5d
+		}
+		{
+			dependencies: ["24BFB90C3FF69DAF"]
+			id: "5B01239EFA98E0BC"
+			tasks: [{
+				id: "14AAE43CEE0841D8"
+				item: "gtceu:high_grade_solder_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["52DAB014D2101F02"]
+			description: [
+				"From here on out most circuits and SOC recipes will require higher tier solders."
+				""
+				"T3+ solder will eventually happen in later tiers as well."
+			]
+			id: "24BFB90C3FF69DAF"
+			tasks: [{
+				id: "6DD6D16824716B75"
+				title: "High Tech Solder"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1C69A670270A14F7"]
+			description: ["These Are Reserved for LuV+ Tier content"]
+			id: "7DC21C56F2BFA0D2"
+			subtitle: "0.6.0 Content"
+			tasks: [{
+				id: "3BA6AB16DE6DEA35"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			id: "350222013080795B"
+			tasks: [{
+				id: "70D8CF742F7A1883"
+				item: "gtceu:pyroflux_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -11.5d
 		}
 	]
 	title: "Burning the Veil"

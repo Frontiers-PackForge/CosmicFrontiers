@@ -1,0 +1,925 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "general_tiers"
+	group: "49DCE46B3EB22AEA"
+	icon: "kubejs:cosmic_meatballs"
+	id: "5B2D9AB3C7A8EF9D"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["22D6A22AB01F0F12"]
+			id: "507C7E16B2E166CF"
+			size: 1.0d
+			tasks: [{
+				id: "250DAFEF2749D45D"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["507C7E16B2E166CF"]
+			id: "4A6A15CC96C2A09E"
+			size: 1.0d
+			tasks: [{
+				id: "0464D9D5F17902BD"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2A4AE088A1EDDDB2"]
+			id: "0E9A03700AAF7097"
+			size: 1.0d
+			tasks: [{
+				id: "1EE78042D7B3767A"
+				item: "gtceu:basic_integrated_circuit"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0E9A03700AAF7097"]
+			id: "21B15FB609C6DCFC"
+			size: 1.0d
+			tasks: [{
+				id: "6285C5DA71D11852"
+				item: "gtceu:good_integrated_circuit"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["21B15FB609C6DCFC"]
+			id: "7F174F5CC0778F1A"
+			size: 1.0d
+			tasks: [{
+				id: "56E508760B301335"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["030EFFC5500304AA"]
+			id: "214DFD9EA5BB18C0"
+			size: 1.0d
+			tasks: [{
+				id: "6D97F519777D1E1D"
+				item: "gtceu:micro_processor"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4CAB15D36A5F7B1F"]
+			id: "407681A26BF2E392"
+			size: 1.0d
+			tasks: [{
+				id: "31C62A368219D4A0"
+				item: "gtceu:microchip_processor"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["214DFD9EA5BB18C0"]
+			id: "227532C28389201C"
+			size: 1.0d
+			tasks: [{
+				id: "5FA24C0EE29A3F24"
+				item: "gtceu:micro_processor_assembly"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["227532C28389201C"]
+			id: "63D0365424FD442A"
+			size: 1.0d
+			tasks: [{
+				id: "5713CA09DCD35E2C"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["63D0365424FD442A"]
+			id: "51C8FBCE59798F2A"
+			size: 1.0d
+			tasks: [{
+				id: "458A9F6E3EE0B092"
+				item: "gtceu:micro_processor_mainframe"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["030EFFC5500304AA"]
+			id: "4CAB15D36A5F7B1F"
+			size: 1.0d
+			tasks: [{
+				id: "688152CE84A39BB3"
+				item: "gtceu:nand_chip"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			id: "425650EBD6DF49C6"
+			size: 1.0d
+			tasks: [{
+				id: "283534E0E78FF897"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["206FAD17CE07679D"]
+			id: "027D14F2D3E121F4"
+			size: 1.0d
+			tasks: [{
+				id: "05270D75308F427F"
+				item: "gtceu:nano_processor"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7606278AAB8C5D2E"]
+			id: "77293290679FF0DB"
+			size: 1.0d
+			tasks: [{
+				id: "213F930F47A83A61"
+				item: "gtceu:nano_processor_computer"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["027D14F2D3E121F4"]
+			id: "7606278AAB8C5D2E"
+			size: 1.0d
+			tasks: [{
+				id: "19047B9A0746FA13"
+				item: "gtceu:nano_processor_assembly"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["77293290679FF0DB"]
+			id: "6E47F55DA17BDFE9"
+			size: 1.0d
+			tasks: [{
+				id: "3E341FB060E8A464"
+				item: "gtceu:nano_processor_mainframe"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5D315564B0450F23"]
+			id: "67F24BF64C3BB851"
+			size: 1.0d
+			tasks: [{
+				id: "526AC7A0D6905D62"
+				item: "gtceu:quantum_processor"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["67F24BF64C3BB851"]
+			id: "2B5EE4F40A1E0BF2"
+			size: 1.0d
+			tasks: [{
+				id: "624F758B64C328F0"
+				item: "gtceu:quantum_processor_assembly"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2B5EE4F40A1E0BF2"]
+			id: "16847DE78A84470F"
+			size: 1.0d
+			tasks: [{
+				id: "4457993134DD7556"
+				item: "gtceu:quantum_processor_computer"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["16847DE78A84470F"]
+			id: "2C595167C16BD594"
+			size: 1.0d
+			tasks: [{
+				id: "045D7A58CFE13D38"
+				item: "gtceu:quantum_processor_mainframe"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["09C6650E8C2845C2"]
+			id: "7A1E85F3C8F5FEC2"
+			size: 1.0d
+			tasks: [{
+				id: "74A5F9B61F69034A"
+				item: "gtceu:crystal_processor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A1E85F3C8F5FEC2"]
+			id: "21562E88FB824F94"
+			size: 1.0d
+			tasks: [{
+				id: "688ED058C7C98D63"
+				item: "gtceu:crystal_processor_assembly"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["21562E88FB824F94"]
+			id: "15DCC6F90482400C"
+			size: 1.0d
+			tasks: [{
+				id: "14C748DF32A19B90"
+				item: "gtceu:crystal_processor_computer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["15DCC6F90482400C"]
+			id: "50EC6642EE7F7E9F"
+			size: 1.0d
+			tasks: [{
+				id: "5F4763F4C7930C4C"
+				item: "gtceu:crystal_processor_mainframe"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E91181FF40577B8"]
+			id: "6EEED8142590F028"
+			size: 1.0d
+			tasks: [{
+				id: "7809BEE236127013"
+				item: "gtceu:wetware_processor"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6EEED8142590F028"]
+			id: "20EEFFE1CC01D531"
+			size: 1.0d
+			tasks: [{
+				id: "3A47CFB32D8C9F60"
+				item: "gtceu:wetware_processor_assembly"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["20EEFFE1CC01D531"]
+			id: "2B8C41382F847E30"
+			size: 1.0d
+			tasks: [{
+				id: "79E9F3D4D4EE55E8"
+				item: "gtceu:wetware_processor_computer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2B8C41382F847E30"]
+			id: "18CAB8BE08AA612C"
+			size: 1.0d
+			tasks: [{
+				id: "277A4D9C00BEAF43"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["36E439B879659AF6"]
+			id: "74F72B62EE622F19"
+			size: 1.0d
+			tasks: [{
+				id: "6150987D9F3B49C2"
+				item: "cosmiccore:echo_processor"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["57D8958E9098E8E6"]
+			id: "26F10961F254A526"
+			size: 1.0d
+			tasks: [{
+				id: "65B25C427CE325B5"
+				item: "cosmiccore:optical_processor"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6D2DB9820AFD8FC8"]
+			id: "76C755373C4156A9"
+			size: 1.0d
+			tasks: [{
+				id: "1BBDD8DF8F39DD81"
+				item: "cosmiccore:cosmic_processor"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["775BE0CAA4D40D36"]
+			id: "53F49F66BBA9D21E"
+			size: 1.0d
+			tasks: [{
+				id: "07D120A8344B7703"
+				item: "cosmiccore:psionic_processor"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1F044C61448B8F56"]
+			id: "4E41A379CB66DDFD"
+			size: 1.0d
+			tasks: [{
+				id: "37C10D36A3542F8C"
+				item: "cosmiccore:macroverse_processor"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["74F72B62EE622F19"]
+			id: "526F43C43375ACDC"
+			size: 1.0d
+			tasks: [{
+				id: "795C580ECA5D1956"
+				item: "cosmiccore:echo_processor_assembly"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["26F10961F254A526"]
+			id: "561EBE69C324E5FB"
+			size: 1.0d
+			tasks: [{
+				id: "154A56FA80CD3E5F"
+				item: "cosmiccore:optical_processor_assembly"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["76C755373C4156A9"]
+			id: "5406CD734BE9DAE8"
+			size: 1.0d
+			tasks: [{
+				id: "3407CEB0AB5AB7B1"
+				item: "cosmiccore:cosmic_processor_assembly"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["53F49F66BBA9D21E"]
+			id: "484BADE6658C0DFD"
+			size: 1.0d
+			tasks: [{
+				id: "27EC4AE15F90CFFD"
+				item: "cosmiccore:psionic_processor_assembly"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4E41A379CB66DDFD"]
+			id: "4E7E1D8DD97AB90D"
+			size: 1.0d
+			tasks: [{
+				id: "57AF08048A069841"
+				item: "cosmiccore:macroverse_processor_assembly"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["526F43C43375ACDC"]
+			id: "736E2F37708D5610"
+			size: 1.0d
+			tasks: [{
+				id: "2044F51B712C7E74"
+				item: "cosmiccore:echo_processor_supercomputer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["736E2F37708D5610"]
+			id: "0FD5C3C104E02383"
+			size: 1.0d
+			tasks: [{
+				id: "200DE1903ACF18B3"
+				item: "cosmiccore:echo_processor_mainframe"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["561EBE69C324E5FB"]
+			id: "20AEC4BCAF15FA69"
+			size: 1.0d
+			tasks: [{
+				id: "0A76A314DC699260"
+				item: "cosmiccore:optical_processor_supercomputer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5406CD734BE9DAE8"]
+			id: "4F5E425C710EBF2F"
+			size: 1.0d
+			tasks: [{
+				id: "794B4FF4A4103E15"
+				item: "cosmiccore:cosmic_processor_supercomputer"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["484BADE6658C0DFD"]
+			id: "3552413A7D76A5D8"
+			size: 1.0d
+			tasks: [{
+				id: "6B1FB1085B983798"
+				item: "cosmiccore:psionic_processor_supercomputer"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4E7E1D8DD97AB90D"]
+			id: "6953D7B284072690"
+			size: 1.0d
+			tasks: [{
+				id: "0EE2F4A190B81B54"
+				item: "cosmiccore:macroverse_processor_supercomputer"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["20AEC4BCAF15FA69"]
+			id: "2B96DA30A663D813"
+			size: 1.0d
+			tasks: [{
+				id: "2DDD040827820D94"
+				item: "cosmiccore:optical_processor_mainframe"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4F5E425C710EBF2F"]
+			id: "224B5B000F897E56"
+			size: 1.0d
+			tasks: [{
+				id: "04E4FDCA5743C2A6"
+				item: "cosmiccore:cosmic_processor_mainframe"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3552413A7D76A5D8"]
+			id: "6161F44575E98BD5"
+			size: 1.0d
+			tasks: [{
+				id: "5E6C498C116FA67E"
+				item: "cosmiccore:psionic_processor_mainframe"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"4E7E1D8DD97AB90D"
+				"6953D7B284072690"
+			]
+			id: "17B81787A8E750A2"
+			size: 1.0d
+			tasks: [{
+				id: "0107C3CA5CCD2A1A"
+				item: "cosmiccore:macroverse_processor_mainframe"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			id: "496AD59EEAD8051F"
+			size: 1.0d
+			tasks: [{
+				id: "0DB3F77810F31535"
+				item: "gtceu:ulv_machine_hull"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -7.5d
+		}
+		{
+			id: "22D6A22AB01F0F12"
+			size: 1.0d
+			tasks: [{
+				id: "1260568609778459"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["22D6A22AB01F0F12"]
+			id: "2A4AE088A1EDDDB2"
+			size: 1.0d
+			tasks: [{
+				id: "1093956C5382F85A"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2A4AE088A1EDDDB2"]
+			id: "030EFFC5500304AA"
+			size: 1.0d
+			tasks: [{
+				id: "62E83CF05B7B0E9F"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["030EFFC5500304AA"]
+			id: "206FAD17CE07679D"
+			size: 1.0d
+			tasks: [{
+				id: "6228825E3976C7F6"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["206FAD17CE07679D"]
+			id: "5D315564B0450F23"
+			size: 1.0d
+			tasks: [{
+				id: "1D4AD9E5362A456D"
+				item: "gtceu:iv_machine_hull"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5D315564B0450F23"]
+			id: "09C6650E8C2845C2"
+			size: 1.0d
+			tasks: [{
+				id: "7664331E0960D599"
+				item: "gtceu:luv_machine_hull"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["09C6650E8C2845C2"]
+			id: "7E91181FF40577B8"
+			size: 1.0d
+			tasks: [{
+				id: "690C2FAF970E3C87"
+				item: "gtceu:zpm_machine_hull"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7E91181FF40577B8"]
+			id: "36E439B879659AF6"
+			size: 1.0d
+			tasks: [{
+				id: "5574E98E5B9D1A0E"
+				item: "gtceu:uv_machine_hull"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["36E439B879659AF6"]
+			id: "57D8958E9098E8E6"
+			size: 1.0d
+			tasks: [{
+				id: "67AAA45BE73D0E8C"
+				item: "gtceu:uhv_machine_hull"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["57D8958E9098E8E6"]
+			id: "6D2DB9820AFD8FC8"
+			size: 1.0d
+			tasks: [{
+				id: "09667D5D1463171C"
+				item: "gtceu:uev_machine_hull"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6D2DB9820AFD8FC8"]
+			id: "775BE0CAA4D40D36"
+			size: 1.0d
+			tasks: [{
+				id: "4136F84D70949F39"
+				item: "gtceu:uiv_machine_hull"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["775BE0CAA4D40D36"]
+			id: "1F044C61448B8F56"
+			size: 1.0d
+			tasks: [{
+				id: "10E05E00D8B453FB"
+				item: "gtceu:uxv_machine_hull"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1F044C61448B8F56"]
+			id: "6B9D27F169BF70ED"
+			size: 1.0d
+			tasks: [{
+				id: "4731DE236E606921"
+				item: "gtceu:opv_machine_hull"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6B9D27F169BF70ED"]
+			id: "16D61FBA4E6A2DCF"
+			size: 1.0d
+			tasks: [{
+				id: "48FE6F54AF1B5D20"
+				item: "gtceu:max_machine_hull"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"17B81787A8E750A2"
+				"16D61FBA4E6A2DCF"
+			]
+			description: [
+				"A Cosmic Snack for a freshly made god."
+				""
+				""
+				"The Ultimate Bragging Rights of Frontiers. A post-story(and post game) challenge which pushes your infrastructure to the max. Two New Tech Tiers after MAX, More Chemistry, And ofc. The ultimate meal. For anyone familiar with GregTech:NewHorizons - This is similar to how stargate is viewed."
+				""
+				""
+				"May you consume the heavens and drink the stars."
+				""
+				"Goodluck."
+				""
+				""
+				"If you've gotten this far (And the Pack is finished) - Look forward to &e\"Glory Mode\""
+				""
+				"{@pagebreak}"
+				"What is Glory Mode? "
+				""
+				"Ever wanted an expert pack to have a New Game+?"
+				"Ever wanted to suffer for fun?"
+				"Glory mode sets out to turn a fun expert pack into a brutal challenge. No punches held back Harder recipes, more costly infrastructure, a more deadly world, all catered to kill you."
+			]
+			id: "123B5B4397914F0F"
+			subtitle: "MMFMPGMFMGOM<MFMA MEATLBALL"
+			tasks: [{
+				id: "47C5931D39FFB06E"
+				item: "kubejs:cosmic_meatballs"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 8.5d
+		}
+		{
+			id: "08C87C8B345F6EC1"
+			tasks: [{
+				id: "3417C27C3857DCB3"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -8.5d
+		}
+		{
+			id: "3161441533A65358"
+			tasks: [{
+				id: "44A6D4CDB109F0A8"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -8.5d
+		}
+		{
+			id: "654A4C190167620A"
+			tasks: [{
+				id: "4DBC9333A61B1F8E"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.5d
+		}
+		{
+			id: "7FD7E23BCDC2DA52"
+			tasks: [{
+				id: "57E49A5DD6D81A3E"
+				item: "cosmiccore:prismatic_tungstensteel_coil_block"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -8.5d
+		}
+		{
+			id: "6AAC6964B48F1BB4"
+			tasks: [{
+				id: "7EF61B3E23BE9C1A"
+				item: "cosmiccore:resonant_virtue_meld_coil_block"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -8.5d
+		}
+		{
+			id: "7D5E71E7914A675F"
+			tasks: [{
+				id: "3A8EF91EB1B20BC1"
+				item: "cosmiccore:naquadric_superalloy_coil_block"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.5d
+		}
+		{
+			id: "2DA599142ADA8636"
+			tasks: [{
+				id: "7A45F452BC837E1E"
+				item: "cosmiccore:trinavine_coil_block"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			id: "2FBE4FA22A36F51F"
+			tasks: [{
+				id: "7482A6946E68CFCA"
+				item: "cosmiccore:psionic_galvorn_coil_block"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -8.5d
+		}
+		{
+			id: "2FA67D1ED9F32D34"
+			tasks: [{
+				id: "014F17E33C974B0E"
+				item: "cosmiccore:living_igniclad_coil_block"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -8.5d
+		}
+		{
+			id: "58E18E53516DC2D5"
+			tasks: [{
+				id: "57A0D9A393A79F3A"
+				item: "cosmiccore:programable_matter_coil_block"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -8.5d
+		}
+		{
+			id: "4F36D25805CC0210"
+			tasks: [{
+				id: "5BB3369650BC0854"
+				item: "cosmiccore:shimmering_neutronium_coil_block"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -8.5d
+		}
+		{
+			id: "724C23EED28E8FAB"
+			tasks: [{
+				id: "7F9D3EA3BD4A2A26"
+				item: "cosmiccore:causal_fabric_coil_block"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -8.5d
+		}
+	]
+	title: "General Progression"
+}

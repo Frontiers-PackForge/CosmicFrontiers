@@ -249,6 +249,8 @@
   "material.gtceu.dehydroascorbic_acid": "Dehydroascorbic Acid",
   "material.gtceu.heated_nether_sediment_sludge": "Heated Nether Sediment Sludge",
   "material.gtceu.nutritious_tears_of_the_sky": "Nutritious Tears of the Sky",
+  "material.gtceu.andesite_alloy": "Andesite Alloy",
+  "material.gtceu.industrial_iron": "Industrial Iron",
   
   "material.gtceu.uranium_fuel_salt": "Uranium Fuel Salt",
   "material.gtceu.neptunium_fuel_salt": "Neptunium Fuel Salt",
@@ -337,6 +339,13 @@
   "material.gtceu.undergarden_sludge": "Undergarden Sludge",
   "material.gtceu.astraline_corrosion_agent": "Astraline Corrosion Agent",
   "material.gtceu.astraline_prismatic_solution": "Astraline Prismatic Solution",
+  "material.gtceu.high_grade_solder": "High Grade Solder",
+  "material.gtceu.deeply_withered_nether_slag": "Deeply Withered Netherstar Slag",
+  "material.gtceu.silica_enriched_nether_slag": "Silica Enriched Nether Slag",
+  "material.gtceu.pyroflux": "Pyroflux",
+  "material.gtceu.nether_star_distillate_slurry": "Nether Star Distillate Slurry",
+  "material.gtceu.dull_nether_star": "Dull Nether Star",
+
 
   "material.gtceu.naquadric_metallic_powder": "Naquadric Metallic Powder",
   "material.gtceu.naquadric_solution": "Naquadric Solution",
@@ -382,6 +391,9 @@
   "gtceu.arboreal_growth_chamber": "Industiral Arboreal Growth Chamber",
   "gtceu.celestial_bore": "Celestial Bore",
   "block.gtceu.celestial_bore": "Celestial Bore",
+  "block.gtceu.grand_assembly_line": "§bGrand Assembly Line",
+  "block.gtceu.leaching_plant": "Leaching Plant",
+  "gtceu.leaching_plant": "Leaching Plant",
 
   "gtceu:cyanex_272": "Cyanex-272",
   "gtceu:tert_butanol": "Tert-butanol",

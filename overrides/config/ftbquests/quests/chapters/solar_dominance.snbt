@@ -4,7 +4,7 @@
 	filename: "solar_dominance"
 	group: "7295A11F0DD1E8D1"
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "occultism:dimensional_matrix"
 		tag: {
 			spiritName: "Creolorier"

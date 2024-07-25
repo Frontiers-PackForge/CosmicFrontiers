@@ -23,10 +23,10 @@
 	#Prevents the given glyph from being used in the same spell as the given glyph
 	#Example entry: "glyph_burst"
 	invalid_combos = []
-	#Extend time duration, in seconds
-	#Range: > 0
+	#Randomize chance, in percentage (0-1 = 0% - 100%)
+	#Range: 0.0 ~ 2.147483647E9
 	extend_time = 1
-	#Base duration in ticks.
+	#The base duration of the delay effect in ticks.
 	#Range: > 0
 	base_duration = 20
 

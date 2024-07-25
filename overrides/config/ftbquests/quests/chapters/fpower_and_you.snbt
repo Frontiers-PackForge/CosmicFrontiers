@@ -10,6 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["40722F399FCF08E2"]
 			description: [
 				"Placeholder desc"
 				""
@@ -33,14 +34,15 @@
 		}
 		{
 			dependencies: ["6146E12078CCA5D3"]
+			icon: "gtceu:steam_bucket"
 			id: "31D607A0E640C8D8"
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
-				id: "5A3F0422FC8E6D56"
-				item: "gtceu:steam_bucket"
-				type: "item"
+				id: "2BF4D34170B88166"
+				type: "checkmark"
 			}]
+			title: "Steam Age"
 			x: -3.0d
 			y: 0.0d
 		}
@@ -109,17 +111,6 @@
 			}]
 			x: -1.5d
 			y: -1.5d
-		}
-		{
-			dependencies: ["31D607A0E640C8D8"]
-			id: "7B925E716025A4B6"
-			tasks: [{
-				id: "520ABDE7F6E508C8"
-				item: "gtceu:bronze_large_boiler"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -6.5d
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
@@ -433,7 +424,7 @@
 			tasks: [{
 				id: "730B51DDE16E0877"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:turbine_rotor"
 					tag: { }
 				}
@@ -454,7 +445,7 @@
 			tasks: [{
 				id: "07EE6A6AED712682"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item(gtceu:hv_rotor_holder)item(gtceu:ev_rotor_holder)item(gtceu:iv_rotor_holder)item(gtceu:luv_rotor_holder)item(gtceu:zpm_rotor_holder)item(gtceu:uv_rotor_holder))"

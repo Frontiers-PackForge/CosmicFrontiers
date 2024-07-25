@@ -20,8 +20,8 @@
 			image: "frontiers:textures/questimages/miscicons/wingedborder.png"
 			rotation: 0.0d
 			width: 4.0d
-			x: 5.071768707482974d
-			y: 5.488244047619027d
+			x: 5.0486394557823004d
+			y: 5.4233418367346715d
 		}
 	]
 	order_index: 0
@@ -50,7 +50,7 @@
 				"{image:frontiers:textures/questimages/firststeps/firstbackground.png width:100 height:100 align:1}"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:hsse_hammer"
 				tag: {
 					Damage: 0
@@ -137,7 +137,7 @@
 				type: "checkmark"
 			}]
 			title: "Keeping Warm and Cool"
-			x: 4.0d
+			x: 3.5d
 			y: -1.0d
 		}
 		{
@@ -158,7 +158,7 @@
 				{
 					id: "288FB56F6F1C79E3"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:prospector.lv"
 						tag: {
 							Charge: 100000L
@@ -169,7 +169,7 @@
 				{
 					id: "053320D905EF39AF"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:energy_crystal"
 						tag: {
 							Charge: 6400000L
@@ -179,6 +179,8 @@
 					type: "item"
 				}
 			]
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "006D430FCB0F5666"
 				type: "checkmark"
@@ -188,7 +190,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["0588F46F605A2E88"]
+			dependencies: ["7C2BA4D773E57683"]
 			description: [
 				"FTB: Ultimine is a powerful collection tool, allowing you to harvest a large area in various shapes"
 				""
@@ -201,7 +203,7 @@
 			rewards: [{
 				id: "59BDAF6281D18447"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:steel_mining_hammer"
 					tag: {
 						DisallowContainerItem: 0b
@@ -232,7 +234,7 @@
 			tasks: [{
 				id: "6CB970E0EDD5DCFA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "item_tag(forge:raw_materials)"
@@ -242,7 +244,7 @@
 				type: "item"
 			}]
 			title: "FTB: Ultimine and You"
-			x: 6.0d
+			x: 6.5d
 			y: 1.0d
 		}
 		{
@@ -256,7 +258,7 @@
 				icon: "minecraft:oak_log"
 				id: "218AC08A1B16AEA4"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "item_tag(minecraft:logs)"
@@ -266,7 +268,7 @@
 				type: "item"
 			}]
 			title: "Get Some Bi- I mean Wood"
-			x: 4.0d
+			x: 3.5d
 			y: 1.0d
 		}
 		{
@@ -297,7 +299,7 @@
 			tasks: [
 				{
 					icon: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:iron_hammer"
 						tag: {
 							Damage: 0
@@ -308,7 +310,7 @@
 					}
 					id: "3CD086DF3214B1FB"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "item_tag(forge:tools/hammers)"
@@ -319,7 +321,7 @@
 				}
 				{
 					icon: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:iron_wrench"
 						tag: {
 							Damage: 0
@@ -330,7 +332,7 @@
 					}
 					id: "1FCEBF1D7C6D4F12"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "item_tag(forge:tools/wrenches)"
@@ -341,7 +343,7 @@
 				}
 				{
 					icon: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:iron_file"
 						tag: {
 							Damage: 0
@@ -352,7 +354,7 @@
 					}
 					id: "53845C521325E232"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "item_tag(forge:tools/files)"
@@ -363,7 +365,7 @@
 				}
 				{
 					icon: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:iron_saw"
 						tag: {
 							Damage: 0
@@ -374,7 +376,7 @@
 					}
 					id: "4BCF77A595638786"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "item_tag(forge:tools/saws)"
@@ -385,7 +387,7 @@
 				}
 				{
 					icon: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:iron_screwdriver"
 						tag: {
 							Damage: 0
@@ -396,7 +398,7 @@
 					}
 					id: "4A1A547444B29038"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "item_tag(forge:tools/screwdrivers)"
@@ -407,7 +409,7 @@
 				}
 				{
 					icon: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:iron_mortar"
 						tag: {
 							Damage: 0
@@ -418,7 +420,7 @@
 					}
 					id: "32F31D914A67040F"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "item_tag(forge:tools/mortars)"
@@ -429,7 +431,7 @@
 				}
 				{
 					icon: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:iron_wire_cutter"
 						tag: {
 							Damage: 0
@@ -440,7 +442,7 @@
 					}
 					id: "3F6E0509177C8A6F"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "item_tag(forge:tools/wire_cutters)"
@@ -452,7 +454,7 @@
 			]
 			title: "Tools fit for survival"
 			x: 5.0d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2B84E90B712B6CD3"]
@@ -467,6 +469,11 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "38DA0B4E0DBAC364"
+			rewards: [{
+				command: "/say Hi, @p!"
+				id: "784F67CA8F864F4F"
+				type: "command"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "Get ready."
@@ -501,34 +508,14 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["4276E47E7CF85DF0"]
-			description: [
-				""
-				"&6These Chests have expanded storage slots and can be taped to move them around.&r"
-				""
-				""
-				""
-				"&7All Iron-Chest Quests will request an oak variant because for some reasons these things use NBT rather than tags. Sorry about that ~Ghost"
-			]
-			id: "3FEEC5324CD1774E"
-			optional: true
-			subtitle: "An Investment now.."
-			tasks: [{
-				id: "4FD31A8B131FC7D3"
-				item: {
-					Count: 1b
-					id: "sophisticatedstorage:iron_chest"
-					tag: {
-						woodType: "oak"
-					}
-				}
-				type: "item"
-			}]
-			x: 6.0d
-			y: 2.0d
-		}
-		{
 			dependencies: ["423EB7A96CB261A3"]
+			description: [
+				"Stamina allows you to glide with the paraglider, as well as sprint and swim."
+				""
+				"The Stamina duration has been massively buffed."
+				""
+				"In the future stamina will have more integrations."
+			]
 			icon: "paraglider:stamina_vessel"
 			id: "012D3A0EBD06AEB3"
 			subtitle: "Configure GUI with CTRL+P"
@@ -537,7 +524,7 @@
 				type: "checkmark"
 			}]
 			title: "Stamina and You"
-			x: 4.0d
+			x: 3.5d
 			y: 0.0d
 		}
 		{
@@ -555,7 +542,7 @@
 				item: "cold_sweat:hearth"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: -1.0d
 		}
 		{
@@ -579,7 +566,7 @@
 				item: "paraglider:spirit_orb"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -601,7 +588,7 @@
 			rewards: [{
 				id: "7F77AA88929CD09E"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							Items: [ ]
@@ -618,7 +605,7 @@
 				type: "checkmark"
 			}]
 			title: "Nutrition and You."
-			x: 6.0d
+			x: 6.5d
 			y: -1.0d
 		}
 		{
@@ -632,16 +619,17 @@
 			icon: "sereneseasons:calendar"
 			id: "5526F519E59B8C98"
 			optional: true
+			shape: "gear"
 			tasks: [{
 				id: "24A4404A7C2C330B"
 				item: "minecraft:glass"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 8.0d
 			y: -1.0d
 		}
 		{
-			dependencies: ["5693AA8924634F44"]
+			dependencies: ["0588F46F605A2E88"]
 			description: [
 				"Certain Dimensions as well as Y Levels in the overworld are thin on oxygen."
 				"You can craft a &arespirator&r to overcome this. "
@@ -653,7 +641,7 @@
 				"&8Psst, did you know there's a vanilla way to get charcoal without a furnace, hint hint."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "thinair:respirator"
 				tag: {
 					Damage: 214
@@ -667,7 +655,7 @@
 			rewards: [{
 				id: "76D335B0BAE970B0"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "botania:brew_vial"
 					tag: {
 						brewKey: "botania:water_breathing"
@@ -681,14 +669,14 @@
 				title: "Low Oxygen"
 				type: "checkmark"
 			}]
-			x: 7.0d
-			y: 1.0d
+			title: "Thin Air and You"
+			x: 6.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"5693AA8924634F44"
 				"4276E47E7CF85DF0"
-				"3FEEC5324CD1774E"
 				"423EB7A96CB261A3"
 				"78DFF9184296F7F6"
 				"536D3BFD33A78DBF"
@@ -752,21 +740,6 @@
 			y: -3.5d
 		}
 		{
-			id: "7CC078F7B7BBA24A"
-			rewards: [{
-				command: "/say Hi, @p!"
-				elevate_perms: true
-				id: "116EB886DADCF328"
-				type: "command"
-			}]
-			tasks: [{
-				id: "663BCE578F2EA81F"
-				type: "checkmark"
-			}]
-			x: 7.0d
-			y: -3.0d
-		}
-		{
 			dependencies: ["4D96DE63E82D8EAA"]
 			description: [
 				"Some helpful command reminders"
@@ -775,16 +748,113 @@
 				"/spawn - Teleports you to the world spawnpoint"
 				"/rtp (Random Teleport) - Great for exploring/finding stuff"
 			]
+			hide_dependency_lines: true
 			id: "0081FE452DFE9D6D"
 			tasks: [{
 				id: "454A30936336BE28"
 				title: "Useful Commands"
 				type: "checkmark"
 			}]
-			x: 4.0d
-			y: -2.5d
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7C2BA4D773E57683"]
+			description: [
+				"This respirator can be crafted late into steam and repaired with steel. "
+				"It has &l14 Times the Durability of the respirator"
+			]
+			id: "1F5442CB5217C1B1"
+			shape: "gear"
+			subtitle: "Better Breathing"
+			tasks: [{
+				id: "0BA57AC9A721A3FB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "kubejs:rebreather"
+					tag: {
+						Damage: 0
+						affix_data: {
+							sockets: 0
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Replaced Better Combat with Epic Fight, Swap Combat Mode with \"R\" by default"
+				"Also configure your clientside features by opening the configs in the \"MODS\" tab"
+				""
+				"Fixed a bunch of random recipes"
+				"Added the last of the AE2 recipes"
+				"EV and IV are complete and ready for playing"
+				""
+				"&aCheckout a more detailed changelog with all changes on the github"
+			]
+			icon: "minecraft:writable_book"
+			id: "06070B096D0D65F5"
+			subtitle: "Changelogs 0.4.0 -> 0.5.0"
+			tasks: [{
+				id: "01050A5958F960F9"
+				type: "checkmark"
+			}]
+			title: "Changelogs / Updates"
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"&aEpicFight allows you to swap combat modes with the \"R\" Key by default - when combat mode is disabled it allows you to attack and mine line normal. When Combat mode is enabled, you can utilize passive skills, dodges, parries and stronger attack combos to kill monsters.&r"
+				""
+				"&bYou may notice some monsters have attack animations, whereas modded ones don't. This is something I have to manually Animate in BLENDER. It'll take some time but it's a 1.0.0 Goal to have every mob and potentially boss with custom attack patterns and animations.&r"
+				""
+				"&aSame Case with Weapons consuming stamina, some don't currently trigger it at the moment, and I'll need to fix this!&r"
+				""
+				"{@pagebreak}"
+				""
+				"If you dislike seeing your arms in mining mode you can toggle this off by "
+				""
+				"Pressing Escape"
+				"Click \"Mods\""
+				"Search \"Epic Fight\""
+				"Click \"Config\""
+				"Click \"Animations\""
+				"Click \"Filter Animations\" and toggle it to \"ON\""
+				""
+				"This is the default state for the official releases of Frontiers, but if you'd like your animations active 24/7, set this to \"OFF\""
+			]
+			icon: {
+				Count: 1
+				id: "botania:elementium_sword"
+				tag: {
+					Damage: 0
+					affix_data: {
+						sockets: 0
+					}
+				}
+			}
+			id: "05392BC3D961B54F"
+			shape: "gear"
+			subtitle: "Soulslike Combat"
+			tasks: [{
+				id: "618C6AB99D588DC3"
+				type: "checkmark"
+			}]
+			title: "Combat and You"
+			x: 6.5d
+			y: -2.0d
 		}
 	]
 	subtitle: ["It all starts here"]
-	title: "&fFirst Steps"
+	title: "&fFirst Steps and Important Info"
 }

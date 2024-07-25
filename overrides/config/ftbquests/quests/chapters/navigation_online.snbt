@@ -2,14 +2,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "navigation_online"
-	group: "533DAA16C8D9D30C"
+	group: "49DCE46B3EB22AEA"
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "ad_astra:tier_1_rocket"
 		tag: { }
 	}
 	id: "4BD032111E85E14A"
-	order_index: 1
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -17,12 +17,13 @@
 				"1E72D62913EEB4EE"
 				"19B3D686A4E2FFC9"
 			]
+			hide: true
 			id: "0E1DFCD7C9346A7C"
 			shape: "hexagon"
 			tasks: [{
 				id: "4D94A1987407B31D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ad_astra:tier_1_rocket"
 					tag: { }
 				}
@@ -38,7 +39,7 @@
 			tasks: [{
 				id: "65732934E183D044"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ad_astra:tier_2_rocket"
 					tag: { }
 				}
@@ -54,7 +55,7 @@
 			tasks: [{
 				id: "6D68522A140A67B9"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ad_astra:tier_3_rocket"
 					tag: { }
 				}
@@ -70,7 +71,7 @@
 			tasks: [{
 				id: "58CB99A94780580A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ad_astra:tier_4_rocket"
 					tag: { }
 				}
@@ -170,5 +171,5 @@
 			y: -12.0d
 		}
 	]
-	title: "Navigation Online"
+	title: "Space Tiers"
 }

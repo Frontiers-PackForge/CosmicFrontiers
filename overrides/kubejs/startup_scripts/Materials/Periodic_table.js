@@ -174,11 +174,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Tellurium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Tellurium.setProperty(PropertyKey.FLUID, new $FluidProperty());
     //
-    GTMaterials.Iodine.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Iodine.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    //GTMaterials.Iodine.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    //GTMaterials.Iodine.setProperty(PropertyKey.FLUID, new $FluidProperty());
     //
-    GTMaterials.Bromine.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Bromine.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    // GTMaterials.Bromine.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    // GTMaterials.Bromine.setProperty(PropertyKey.FLUID, new $FluidProperty());
     //
     GTMaterials.Selenium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Selenium.setProperty(PropertyKey.FLUID, new $FluidProperty());

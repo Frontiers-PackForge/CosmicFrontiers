@@ -98,6 +98,54 @@ ServerEvents.recipes(event => {
   .duration(600)
   .EUt(GTValues.VA[GTValues.IV])
 
+  //R.Virtue Coil
+  event.recipes.gtceu.assembly_line('resonant_virtue_coil_assem')
+    .itemInputs(['2x cosmiccore:prismatic_tungstensteel_frame', '4x gtceu:iv_voltage_coil', '12x cosmiccore:resonant_virtue_meld_double_wire', '8x gtceu:galvanized_ethersteel_screw', '32x gtceu:elementium_foil', '16x cosmiccore:prismatic_tungstensteel_foil', '16x gtceu:terrasteel_foil'])
+    .itemOutputs('cosmiccore:resonant_virtue_meld_coil_block')
+    .inputFluids(
+    Fluid.of('gtceu:high_grade_solder', 288),
+    Fluid.of('gtceu:argon', 2000)
+  )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('cosmiccore:prismatic_tungstensteel_coil_block')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
+  .duration(600)
+  .EUt(GTValues.VA[GTValues.IV])
+  //Naquadric Superalloy Coil
+  event.recipes.gtceu.assembly_line('nsa_coil_assem')
+    .itemInputs(['2x cosmiccore:resonant_virtue_meld_frame', '4x gtceu:luv_voltage_coil', '16x cosmiccore:naquadric_superalloy_double_wire', '16x gtceu:naquadah_alloy_screw', '48x cosmiccore:resonant_virtue_meld_foil', '24x gtceu:naquadah_alloy_foil', '24x gtceu:osmiridium_foil'])
+    .itemOutputs('cosmiccore:naquadric_superalloy_coil_block')
+    .inputFluids(
+    Fluid.of('gtceu:high_grade_solder', 1152),
+    Fluid.of('gtceu:argon', 4000),
+    Fluid.of('gtceu:uu_matter', 2000)
+  )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('cosmiccore:resonant_virtue_meld_coil_block')).EUt(GTValues.VA[GTValues.LuV]).duration(1000))
+  .duration(800)
+  .EUt(GTValues.VA[GTValues.LuV])
+
+  //CleanroomMaintHatch
+  event.remove({ id: 'gtceu:shaped/maintenance_hatch_cleaning' })
+  event.recipes.gtceu.assembly_line('clean_hatch_assemblyline')
+    .itemInputs(['64x gtceu:plascrete','64x gtceu:plascrete', '16x gtceu:filter_casing', '16x gtceu:hssg_spring', '4x gtceu:nano_processor_mainframe', '4x gtceu:luv_robot_arm', 'gtceu:auto_maintenance_hatch', 'gtceu:cleanroom', 'gtceu:luv_diode'])
+    .itemOutputs('gtceu:cleaning_maintenance_hatch')
+    .inputFluids(
+    Fluid.of('gtceu:high_grade_solder', 1440),
+    Fluid.of('gtceu:argon', 16000)
+  )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:auto_maintenance_hatch')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
+  .duration(600)
+  .EUt(GTValues.VA[GTValues.IV])
+  //NPR
+  event.recipes.gtceu.assembly_line('naquahine_reactor_controller')
+    .itemInputs(['4x cosmiccore:fusion_grade_magnet', '4x gtceu:quantum_processor_mainframe', 'gtceu:iv_lapotronic_battery', '16x gtceu:iv_field_generator', '64x gtceu:uhpic_chip', '32x gtceu:indium_tin_barium_titanium_cuprate_single_wire', '16x gtceu:iv_field_generator'])
+    .itemOutputs('cosmiccore:naquahine_pressure_reactor')
+    .inputFluids(
+    Fluid.of('gtceu:high_grade_solder', 2880),
+    Fluid.of('gtceu:niobium_titanium', 4608),
+    Fluid.of('gtceu:argon', 32000)
+  )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:molten_salt_reactor')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
+  .duration(600)
+  .EUt(GTValues.VA[GTValues.IV])
 
 
 

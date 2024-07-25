@@ -15,6 +15,7 @@ ServerEvents.tags('item', event => {
   event.add('forge:viewers/hidden_from_recipe', DONOTEXIST)
   event.add('c:hidden_from_recipe_viewers', DONOTEXIST)
 })
+
 ServerEvents.recipes(event => {
   //I Love Fixing Merge Conflicts ~Ghostipedia 2023
   console.log('[SophisticatedMods.js loading]')
@@ -22,8 +23,9 @@ ServerEvents.recipes(event => {
   event.remove({ mod: 'sophisticatedbackpacks' })
   event.remove({ id: 'aether:skyroot_chest' })
   /* BACKPACKS */
-
-  event.remove({ output: DONOTEXIST })
+  DONOTEXIST.forEach(yeetus => {
+    event.remove({ output: `${yeetus}` })
+  })
   //Backpacks base tiers
   //Base
   event.remove({ output: 'sophisticatedbackpacks:backpack' })

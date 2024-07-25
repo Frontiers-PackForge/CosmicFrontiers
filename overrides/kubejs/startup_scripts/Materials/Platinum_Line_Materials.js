@@ -219,20 +219,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-    event.create('potassium_sulfate')
-        .dust()
-        .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
-        .flags(
-            GTMaterialFlags.DISABLE_DECOMPOSITION,
-            GTMaterialFlags.NO_UNIFICATION
-        )
-    event.create('iron_ii_chloride')
-        .fluid()
-        .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
-        .flags(
-            GTMaterialFlags.DISABLE_DECOMPOSITION,
-            GTMaterialFlags.NO_UNIFICATION
-        )
+    // event.create('potassium_sulfate')
+    //     .dust()
+    //     .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
+    //     .flags(
+    //         GTMaterialFlags.DISABLE_DECOMPOSITION,
+    //         GTMaterialFlags.NO_UNIFICATION
+    //     )
+    // event.create('iron_ii_chloride')
+    //     .fluid()
+    //     .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
+    //     .flags(
+    //         GTMaterialFlags.DISABLE_DECOMPOSITION,
+    //         GTMaterialFlags.NO_UNIFICATION
+    //     )
 
     event.create('sodium_dioxide')
         .dust()

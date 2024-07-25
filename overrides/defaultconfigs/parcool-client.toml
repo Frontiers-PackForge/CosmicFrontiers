@@ -22,6 +22,7 @@
 	can_VerticalWallRun = true
 	can_WallJump = true
 	can_WallSlide = true
+	can_FastSwim = true
 
 ["Stamina HUD Configuration"]
 	#Allowed Values: Normal, Light, Hide
@@ -61,6 +62,8 @@
 	enable_camera_animation_h-wall-run = true
 	#Enable animation of camera by Hang-Down
 	enable_camera_animation_hang-down = true
+	#Enable lean animation while FastRun
+	enable_lean_animation_fast_run = true
 
 	[Animations.Animators]
 		enable_BackwardWallJumpAnimator = true
@@ -83,12 +86,14 @@
 		enable_VerticalWallRunAnimator = true
 		enable_WallJumpAnimator = true
 		enable_WallSlideAnimator = true
+		enable_DiveIntoWaterAnimator = true
+		enable_FastSwimAnimator = true
 
 [Control]
 	#Control of FastRun
 	#Allowed Values: PressKey, Toggle, Auto
-	fast-run_control = "PressKey"
-	#Control of FastRun
+	fast-run_control = "Auto"
+	#Control of Crawl
 	#Allowed Values: PressKey, Toggle
 	crawl_control = "PressKey"
 	#Enable double-tapping ctrl for Dodge
@@ -96,7 +101,7 @@
 	#Enable Crawl in air
 	enable_crawl_in_air = true
 	#Enable Vault in air
-	enable_vault_in_air = true
+	enable_vault_in_air = false
 	#Enable backward Wall-Jump when facing to wall
 	enable_wall_jump_backward = false
 	#Enable Roll when creative mode (experimental)
@@ -114,6 +119,11 @@
 	#Max number of times of successive Dodge action
 	#Range: > 1
 	successive_dodge_count = 3
+	#Control of Flipping
+	#Allowed Values: PressRightAndLeft, TapMovementAndJump, PressFlippingKey
+	flip_control = "PressRightAndLeft"
+	#Enable getting off steps while doing dodge
+	can_get_off_steps_while_dodge = false
 
 [Modifier]
 	#How long you can do Horizontal Wall Run
@@ -144,7 +154,10 @@
 	parcool_activation = true
 
 [Stamina]
+	#Allowed Values: Default, Hunger, Feathers, Paraglider, EpicFight
+	used_stamina = "Paraglider"
 
+	#Caution : Max stamina and stamina recovery config is removed because they became attributes.
 	[Stamina.Consumption]
 		#Range: 0 ~ 10000
 		stamina_consumption_of_BreakfallReady = 0
@@ -190,18 +203,11 @@
 		stamina_consumption_of_WallJump = 120
 		#Range: 0 ~ 10000
 		stamina_consumption_of_WallSlide = 2
-		#additional stamina mod dependency(only when it's installed)
-		#Allowed Values: None, Paraglider
-		external_stamina = "Paraglider"
 		#Infinite Stamina (this needs a permission from server, even if it is on single player's game. normally permitted)
 		#Please check 'parcool-server.toml' in 'serverconfig' directory
 		infinite_stamina = false
 		#Infinite Stamina while player is cretive mode
 		infinite_stamina_if_creative_mode = true
-		#ParCool consume hanger value instead of stamina
-		use_hanger_instead = false
-		#Range: 300 ~ 10000
-		max_stamina = 2000
-		#Range: 1 ~ 10000
-		stamina_recovery = 20
+		#Range: 0 ~ 10000
+		stamina_consumption_of_FastSwim = 3
 

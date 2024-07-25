@@ -7,6 +7,9 @@
 	#Defines how often a goat will try to grow its fur, the growth cooldown after shearing, and the chance of it succeeding
 	#Format: [ticks, cooldown, chance]
 	"Goat Fur Growth Timings" = [1200, 2400, 0.2]
+	#Defines how often a chameleon will try to shed its skin, the cooldown after shedding, and the chance of it succeeding
+	#Format: [ticks, cooldown, chance]
+	"Chameleon Shedding Timings" = [100, 36000, 0.1]
 
 ["Mob Spawning"]
 	#Defines the biomes that Chameleons can spawn in

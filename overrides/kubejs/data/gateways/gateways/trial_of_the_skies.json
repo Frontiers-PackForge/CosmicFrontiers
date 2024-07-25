@@ -123,8 +123,8 @@
         {
             "type": "gateways:stack",
             "stack": {
-                "item": "deep_aether:sterling_aercloud",
-                "count": 20
+                "item": "cosmiccore:plated_aerocloud",
+                "count": 14
             }
         },
         {
