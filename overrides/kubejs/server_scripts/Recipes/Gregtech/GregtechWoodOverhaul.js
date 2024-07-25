@@ -19,6 +19,11 @@ ServerEvents.recipes(event => {
     //Remove Boats
     event.remove({ id: /^(?!gtceu:)([^:]+):(.*)_boat$/ })
 
+    event.remove({id: 'gtceu:shapeless/rubber_wood_planks'})
+
+    
+
+
     //DANGEROUS : WOOD PLANK REMOVALS - BY RECIPE - if something is broken attempt to check it against this matcher first
     event.remove({ id: /^(?!gtceu:)([^:]+):(.*)_planks$/ })
     //forgive me for the sins im about to commit

@@ -4,11 +4,7 @@ let yeet = (itemName) => {
     ServerEvents.recipes(event => { 
         event.remove({ output: itemName })
       })
-    ServerEvents.tags('item', event => {
-        event.add('forge:viewers/hidden_from_recipe', itemName)
-        event.add('c:hidden_from_recipe_viewers', itemName)
-    
-    })
+
 }
 //Removal of Large Boilers and their recipemaps - DO NOT revert these changes, as eventually they will also be stripped out and overwritten via coremod
 // YOU HAVE BEEN WARNED, THIS **WILL** RESULT IN IRREVERSIBLE DAMAGE TO WORLDS - NO SUPPORT WILL BE GIVEN FOR PEOPLE WHO IGNORE THIS WARNING
@@ -16,7 +12,7 @@ yeet('gtceu:bronze_large_boiler')
 yeet('gtceu:steel_large_boiler')
 yeet('gtceu:titanium_large_boiler')
 yeet('gtceu:tungstensteel_large_boiler')
-
-ServerEvents.recipes(event => {
-    event.remove({ id: /([^:]+):large_boiler(.*)$/ })
-})
+//Disabled Until 0.6.0 - Recipes Will vanish then.
+// ServerEvents.recipes(event => {
+//     event.remove({ id: /([^:]+):large_boiler(.*)$/ })
+// })

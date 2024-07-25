@@ -6,6 +6,7 @@ let optical = ['cosmiccore:optical_processor', 'cosmiccore:optical_processor_ass
 let cosmic = ['cosmiccore:cosmic_processor', 'cosmiccore:cosmic_processor_assembly', 'cosmiccore:cosmic_processor_supercomputer', 'cosmiccore:cosmic_processor_mainframe']
 let psionic = ['cosmiccore:psionic_processor', 'cosmiccore:psionic_processor_assembly', 'cosmiccore:psionic_processor_supercomputer', 'cosmiccore:psionic_processor_mainframe']
 let macroverse = ['cosmiccore:macroverse_processor', 'cosmiccore:macroverse_processor_assembly', 'cosmiccore:macroverse_processor_supercomputer', 'cosmiccore:macroverse_processor_mainframe']
+let boilaway = ['gtceu:bronze_large_boiler','gtceu:steel_large_boiler','gtceu:titanium_large_boiler','gtceu:tungstensteel_large_boiler']
 ItemEvents.tooltip(event => {
   // event.add('gtceu:manasteel_single_cable', Text.of('LV Superconductor'))
   event.addAdvanced('forbidden_arcanus:eternal_stella', (item, advanced, text) => {
@@ -13,6 +14,10 @@ ItemEvents.tooltip(event => {
   })
   event.addAdvanced(cables, (item, advanced, text) => {
     text.add(1, Text.of('LV Superconductor - Arcane Stabilization')) // Adds text in first line, pushing the items name down a line. If you want the line below the item name, the index must be 1
+  })
+  //BOILER WARNING : 
+  event.addAdvanced(boilaway, (item, advanced, text) => {
+    text.add(1, Text.of('Deprecated - Recipes will still run in Large Boilers, But come 0.6.0 the recipe map and recipes will be removed for the steam age overhaul').gray())
   })
   //ECHO CIRCUITS
   event.addAdvanced(echo, (item, advanced, text) => {
@@ -184,6 +189,16 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('nether_remastered:seal_of_the_underworld_item', (item, advanced, text) => {
     text.add(1, Text.of('Acquired from the Trial of the Underworld or forged from the shards of your victories').gold())
   })
+  event.addAdvanced('ae2:condenser', (item, advanced, text) => {
+    text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
+  })
+  event.addAdvanced('ae2:condenser', (item, advanced, text) => {
+    text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
+  })
+  event.addAdvanced('ae2:condenser', (item, advanced, text) => {
+    text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
+  })
+  
 })
 
 ItemEvents.tooltip(event => {

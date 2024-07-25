@@ -79,7 +79,7 @@
 			[embeddiumplus.performance.distanceCulling.tileEntities]
 				#Toggles distance culling for Block Entities
 				#Maybe you use another mod for that :(
-				enable = true
+				enable = false
 				#List of all Block Entities to be ignored by distance culling
 				#Uses ResourceLocation to identify it
 				#Example 1: "minecraft:chest" - Ignores chests only

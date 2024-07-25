@@ -134,6 +134,18 @@ ServerEvents.recipes(event => {
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:auto_maintenance_hatch')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
   .duration(600)
   .EUt(GTValues.VA[GTValues.IV])
+  //NPR
+  event.recipes.gtceu.assembly_line('naquahine_reactor_controller')
+    .itemInputs(['4x cosmiccore:fusion_grade_magnet', '4x gtceu:quantum_processor_mainframe', 'gtceu:iv_lapotronic_battery', '16x gtceu:iv_field_generator', '64x gtceu:uhpic_chip', '32x gtceu:indium_tin_barium_titanium_cuprate_single_wire', '16x gtceu:iv_field_generator'])
+    .itemOutputs('cosmiccore:naquahine_pressure_reactor')
+    .inputFluids(
+    Fluid.of('gtceu:high_grade_solder', 2880),
+    Fluid.of('gtceu:niobium_titanium', 4608),
+    Fluid.of('gtceu:argon', 32000)
+  )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:molten_salt_reactor')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
+  .duration(600)
+  .EUt(GTValues.VA[GTValues.IV])
 
 
 

@@ -100,8 +100,26 @@
 		}
 		{
 			dependencies: ["2A42583B975875D9"]
+			description: [
+				"Theses shards for the nether trial can also be found from special mobs"
+				""
+				"each piece comes from"
+				""
+				"evoker"
+				"elder guardian"
+				"silverfish"
+				"witch"
+				""
+				"No Idk which one comes from which gl figure it out I'm sorry lol temp desc"
+				""
+				"nether crystal - warden"
+				""
+				"remember you don't have to kill a warden, you can also craft the nether crystal."
+				"but I won't stop you if you want to. Remember there's a bunch of ways to cheese it."
+			]
 			hide_dependent_lines: true
 			id: "45BED4AD7A6EFDDB"
+			subtitle: "Shard Creation"
 			tasks: [{
 				id: "65FDE214D5875556"
 				item: "gtceu:lp_steam_extractor"
@@ -726,6 +744,12 @@
 				"1736B53572205D7C"
 				"2816604F816E8D52"
 			]
+			description: [
+				"This is how you get the seal of the underworld"
+				""
+				""
+				"Idk why EMI refuses to show the gate pearl normally, just bookmark it from here"
+			]
 			id: "42A86E7845F4CDF6"
 			subtitle: "Get Ready for a Fight."
 			tasks: [{
@@ -768,6 +792,61 @@
 			}]
 			x: -4.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["52A46B052223551B"]
+			description: [
+				"Some materials are dangerous to handle!"
+				""
+				"You can avoid this by wearing proper PPE"
+				""
+				"Early on face masks/respirators are enough to protect you from inhalation poisons"
+				"Glove help you avoid toxins that get into your skin"
+				""
+				"Later on you can craft hazmat suits, as well as Nano and Quark armor to fully negate the effects on you."
+			]
+			hide_dependency_lines: true
+			icon: "architects_palette:hazard_sign"
+			id: "383AE3425F7D71E2"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Danger!"
+			tasks: [
+				{
+					id: "0BA52B59AF9207C1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "gtceu:rubber_gloves"
+						tag: {
+							Damage: 0
+							affix_data: {
+								sockets: 0
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "78BAF54B0A798EEF"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:face_mask)item(thinair:respirator)item(kubejs:rebreather)item(kubejs:nano_respirator))"
+						}
+					}
+					title: "Any Facemask"
+					type: "item"
+				}
+			]
+			title: "Hazards and you!"
+			x: -2.0d
+			y: -2.0d
 		}
 	]
 	title: "Rising Pressure [Steam]"

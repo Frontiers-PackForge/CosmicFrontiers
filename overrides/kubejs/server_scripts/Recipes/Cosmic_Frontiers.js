@@ -13,6 +13,11 @@ ServerEvents.tags('item', event => {
        event.add('thinair:heavy_breathing_equipment', 'ad_astra:space_helmet')
        event.add('thinair:heavy_breathing_equipment', 'kubejs:nano_respirator')
        event.add('thinair:breathing_equipment', 'kubejs:nano_respirator')
+       event.add('gtceu:ppe_armor', 'kubejs:nano_respirator')
+       event.add('gtceu:ppe_armor', 'kubejs:rebreather')
+       event.add('gtceu:ppe_armor', 'thinair:respirator')
+       event.add('thinair:breathing_equipment', 'kubejs:rebreather')
+       event.add('curios:head', 'kubejs:rebreather')
        event.add('curios:head', 'kubejs:nano_respirator')
        event.add('curios:charm', 'gtceu:hv_item_magnet')
        event.add('curios:charm', 'gtceu:lv_item_magnet')
@@ -60,6 +65,15 @@ ServerEvents.recipes(event => {
        ], {
               S: 'minecraft:echo_shard',
               W: 'kubejs:seal_shards'
+       })
+       event.shaped('gtceu:molten_salt_reactor', [
+              'CIC',
+              'CPC',
+              'CIC',
+       ], {
+              P: 'gtceu:titanium_pipe_casing',
+              C: 'cosmiccore:high_temperature_fission_casing',
+              I: 'gtceu:ev_electric_pump'
        })
        event.remove({ output: 'architects_palette:charcoal_block' })
        event.shaped('architects_palette:charcoal_block', [
@@ -242,13 +256,13 @@ ServerEvents.recipes(event => {
               .blastFurnaceTemp(3600)
               .duration(1800)
               .EUt(GTValues.VA[GTValues.HV]);
-       event.recipes.gtceu.assembler('scroll_not_as_bad')
-              .itemInputs(['ars_nouveau:blank_parchment', '6x paraglider:spirit_orb', '2x apotheosis:gem_dust'])
-              .inputFluids('gtceu:source_oils 100')
-              .itemOutputs('2x skilltree:wisdom_scroll')
-              .circuit(1)
-              .duration(600)
-              .EUt(GTValues.VA[GTValues.LV]);
+       // event.recipes.gtceu.assembler('scroll_not_as_bad')
+       //        .itemInputs(['ars_nouveau:blank_parchment', '6x paraglider:spirit_orb', '2x apotheosis:gem_dust'])
+       //        .inputFluids('gtceu:source_oils 100')
+       //        .itemOutputs('2x skilltree:wisdom_scroll')
+       //        .circuit(1)
+       //        .duration(600)
+       //        .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.assembler('nano_space_default')
               .itemInputs(['gtceu:nanomuscle_chestplate', '2x ad_astra:large_gas_tank'])
               .itemOutputs(Item.of('cosmiccore:space_nanomuscle_chestplate', '{affix_data:{sockets:0}}'))
@@ -261,14 +275,49 @@ ServerEvents.recipes(event => {
               .circuit(1)
               .duration(600)
               .EUt(GTValues.VA[GTValues.HV]);
-       event.shaped('skilltree:wisdom_scroll', [
-              'SWS',
-              'WDW',
-              'SWS',
+       event.recipes.gtceu.assembler('reactor_casing_default')
+              .itemInputs(['gtceu:titanium_frame', '4x gtceu:double_lead_plate', '2x gtceu:beryllium_plate'])
+              .itemOutputs('cosmiccore:high_temperature_fission_casing')
+              .circuit(2)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.EV]);
+       event.recipes.gtceu.assembler('heat_exchanger_default')
+              .itemInputs(['gtceu:titanium_frame', '4x gtceu:stainless_steel_plate', '2x gtceu:annealed_copper_plate'])
+              .itemOutputs('cosmiccore:highly_conductive_fission_casing')
+              .circuit(2)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.EV]);
+       event.recipes.gtceu.assembler('virtue_casing')
+              .itemInputs(['cosmiccore:resonant_virtue_meld_frame', '6x cosmiccore:resonant_virtue_meld_plate'])
+              .itemOutputs('cosmiccore:highly_conductive_fission_casing')
+              .circuit(6)
+              .duration(320)
+              .EUt(GTValues.VA[GTValues.IV]);
+       event.recipes.gtceu.assembler('naq_pressure_casing')
+              .itemInputs(['gtceu:tungsten_frame', '6x gtceu:naquadah_plate'])
+              .itemOutputs('cosmiccore:naquadah_pressure_resistant_casing')
+              .circuit(6)
+              .duration(320)
+              .EUt(GTValues.VA[GTValues.IV]);
+       // event.shaped('skilltree:wisdom_scroll', [
+       //        'SWS',
+       //        'WDW',
+       //        'SWS',
+       // ], {
+       //        S: 'minecraft:paper',
+       //        W: 'paraglider:spirit_orb',
+       //        D: 'apotheosis:gem_dust'
+       // })
+       event.shaped('gtceu:leaching_plant', [
+              'QSQ',
+              'DCD',
+              'WSW',
        ], {
-              S: 'minecraft:paper',
-              W: 'paraglider:spirit_orb',
-              D: 'apotheosis:gem_dust'
+              S: '#gtceu:circuits/ev',
+              W: 'gtceu:ev_conveyor_module',
+              D: 'gtceu:ev_electric_pump',
+              C: 'gtceu:clean_machine_casing',
+              Q: 'gtceu:aluminium_drum'
        })
        event.shaped('cosmiccore:space_advanced_nanomuscle_chestplate', [
               'CJS',

@@ -81,8 +81,12 @@ recipes:
   # Default: false
   harderCircuitRecipes: false
 
+  # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
+  # Default: true
+  enchantedTools: true
+
 worldgen:
-  # Rubber Tree spawn chance (% per chunk)
+  # Rubber Tree spawn chance (decimal % per chunk)
   # Default: 0.5
   rubberTreeSpawnChance: 0.5
 
@@ -253,6 +257,15 @@ machines:
   # Other mods can override this to true, regardless of the config file.
   # Default: false
   highTierContent: true
+
+  # Whether the Assembly Line should require the item inputs to be in order.
+  # Default: true
+  orderedAssemblyLineItems: true
+
+  # Whether the Assembly Line should require the fluid inputs to be in order.
+  # (Requires Ordered Assembly Line Item Inputs to be enabled.)
+  # Default: false
+  orderedAssemblyLineFluids: true
 
 client:
   # Whether or not to enable Emissive Textures for GregTech Machines.
@@ -435,10 +448,14 @@ compat:
   # Default: true
   removeSmeltingForEBFMetals: true
 
+  # Whether dimension marker should show dimension tier.
+  # Default: false
+  showDimensionTier: false
+
 dev:
   # Debug general events? (will print recipe conficts etc. to server's debug.log)
   # Default: false
-  debug: false
+  debug: true
 
   # Debug ore vein placement? (will print placed veins to server's debug.log)
   # Default: false (no placement printout in debug.log)

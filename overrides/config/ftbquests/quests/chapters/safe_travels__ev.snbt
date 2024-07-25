@@ -836,6 +836,7 @@
 			id: "3EE6B0A888940001"
 			shape: "octagon"
 			size: 1.25d
+			subtitle: "A weird conundrum"
 			tasks: [{
 				id: "40A8B30D25EECBC1"
 				item: "cosmiccore:prismatic_tungstensteel_coil_block"

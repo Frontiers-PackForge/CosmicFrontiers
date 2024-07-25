@@ -33,6 +33,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["2A4AE088A1EDDDB2"]
 			id: "0E9A03700AAF7097"
 			size: 1.0d
 			tasks: [{
@@ -44,6 +45,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["0E9A03700AAF7097"]
 			id: "21B15FB609C6DCFC"
 			size: 1.0d
 			tasks: [{
@@ -55,6 +57,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["21B15FB609C6DCFC"]
 			id: "7F174F5CC0778F1A"
 			size: 1.0d
 			tasks: [{
@@ -90,6 +93,7 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["214DFD9EA5BB18C0"]
 			id: "227532C28389201C"
 			size: 1.0d
 			tasks: [{
@@ -101,6 +105,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["227532C28389201C"]
 			id: "63D0365424FD442A"
 			size: 1.0d
 			tasks: [{
@@ -112,6 +117,7 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["63D0365424FD442A"]
 			id: "51C8FBCE59798F2A"
 			size: 1.0d
 			tasks: [{
@@ -123,6 +129,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["030EFFC5500304AA"]
 			id: "4CAB15D36A5F7B1F"
 			size: 1.0d
 			tasks: [{
@@ -517,6 +524,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["4E7E1D8DD97AB90D"]
 			id: "6953D7B284072690"
 			size: 1.0d
 			tasks: [{
@@ -564,6 +572,10 @@
 			y: 6.5d
 		}
 		{
+			dependencies: [
+				"4E7E1D8DD97AB90D"
+				"6953D7B284072690"
+			]
 			id: "17B81787A8E750A2"
 			size: 1.0d
 			tasks: [{
@@ -757,6 +769,27 @@
 				"17B81787A8E750A2"
 				"16D61FBA4E6A2DCF"
 			]
+			description: [
+				"A Cosmic Snack for a freshly made god."
+				""
+				""
+				"The Ultimate Bragging Rights of Frontiers. A post-story(and post game) challenge which pushes your infrastructure to the max. Two New Tech Tiers after MAX, More Chemistry, And ofc. The ultimate meal. For anyone familiar with GregTech:NewHorizons - This is similar to how stargate is viewed."
+				""
+				""
+				"May you consume the heavens and drink the stars."
+				""
+				"Goodluck."
+				""
+				""
+				"If you've gotten this far (And the Pack is finished) - Look forward to &e\"Glory Mode\""
+				""
+				"{@pagebreak}"
+				"What is Glory Mode? "
+				""
+				"Ever wanted an expert pack to have a New Game+?"
+				"Ever wanted to suffer for fun?"
+				"Glory mode sets out to turn a fun expert pack into a brutal challenge. No punches held back Harder recipes, more costly infrastructure, a more deadly world, all catered to kill you."
+			]
 			id: "123B5B4397914F0F"
 			subtitle: "MMFMPGMFMGOM<MFMA MEATLBALL"
 			tasks: [{
@@ -886,89 +919,6 @@
 			}]
 			x: 7.5d
 			y: -8.5d
-		}
-		{
-			id: "40E10D570F03D095"
-			subtitle: "Survive your first night"
-			tasks: [{
-				days: 1
-				id: "167EA05732C5B009"
-				title: "A Brand New World"
-				type: "questsadditions:days"
-			}]
-			x: -6.5d
-			y: -7.5d
-		}
-		{
-			id: "283D8E37A71C30DC"
-			subtitle: "Survive 5 Days"
-			tasks: [{
-				days: 1
-				id: "4C919EFBB908CB9B"
-				title: "Surviving.."
-				type: "questsadditions:days"
-			}]
-			x: -6.5d
-			y: -6.5d
-		}
-		{
-			description: [
-				"These milestones track your days played."
-				"Extra Internet Points if you did it in hardcore. This prison is nothing but a toybox to you."
-				""
-				"These get a little out of pace on servers I believe so just bear that in mind!"
-			]
-			icon: "bhc:red_heart_melted"
-			id: "5FBFED74F4DA54AD"
-			shape: "hexagon"
-			subtitle: "Hardcore Milestones"
-			tasks: [{
-				id: "0DF03C2A7C944F58"
-				type: "checkmark"
-			}]
-			x: -6.5d
-			y: -8.5d
-		}
-		{
-			id: "147439F0453D721D"
-			subtitle: "Survive 30 Days"
-			tasks: [{
-				days: 30
-				id: "251AD5FED067B907"
-				type: "questsadditions:days"
-			}]
-			x: -6.5d
-			y: -5.5d
-		}
-		{
-			description: [
-				"I SURVIVED &lGHOSTIPEDIAS FUCKING FEVER DREAM &r FOR&l&4100 DAYS"
-				""
-				"GOD WHY AM I LIKE THIS LMFAOOOO"
-				"I should clean up the QB"
-				"some of the funny nonsense can stay though."
-			]
-			id: "4729D5BE8EAE45A3"
-			subtitle: "Survive 100 days"
-			tasks: [{
-				days: 100
-				id: "5CA37F99B8705662"
-				type: "questsadditions:days"
-			}]
-			x: -6.5d
-			y: -4.5d
-		}
-		{
-			description: ["Oh hey, you played 365 minecraft days"]
-			id: "1A90FFEDC656C43B"
-			subtitle: "A year in Frontiers"
-			tasks: [{
-				days: 365
-				id: "552D1BD30D072C51"
-				type: "questsadditions:days"
-			}]
-			x: -6.5d
-			y: -3.5d
 		}
 	]
 	title: "General Progression"

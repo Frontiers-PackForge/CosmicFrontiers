@@ -198,8 +198,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('deeply_withered_nether_slag')
         .color(0x1f0207)
         .fluid()
-    event.create('grove_enriched_nether_slag')
+    event.create('silica_enriched_nether_slag')
         .color(0xb3377d)
+        .fluid()
+    event.create('pyroflux')
+        .color(0xdb593b)
         .fluid()
     event.create('nether_star_distillate_slurry')
         .color(0xa87692)
@@ -229,6 +232,93 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_ROD,
             GTMaterialFlags.NO_SMELTING
         )
+
+    //LUV Stuff
+    event.create('false_infinity')
+        .color(0x4614a3)
+        .ingot()
+        .fluid()
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        )
+        event.create('impractical_infinity')
+        .color(0x4614a3)
+        .ingot()
+        .fluid()
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        )
+        event.create('suitable_infinity')
+        .color(0x4614a3)
+        .ingot()
+        .fluid()
+        .cableProperties(GTValues.V[GTValues.EV], 8, 0, false)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        )
+        event.create('logical_infinity')
+        .color(0x4614a3)
+        .ingot()
+        .fluid()
+        .cableProperties(GTValues.V[GTValues.EV], 8, 0, false)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        )
+        event.create('programmable_matter_base')
+        .color(0x4614a3)
+        .ingot()
+        .fluid()
+        .iconSet(GTMaterialIconSet.getByName('luminite'))
+        .cableProperties(GTValues.V[GTValues.UV], 12, 0, true)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        )
+
+
+
+
+
+
+
+
+
+
+
 
     event.create('undergarden_smog')
         .gas()

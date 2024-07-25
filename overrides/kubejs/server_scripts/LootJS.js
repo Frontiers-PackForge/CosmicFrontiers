@@ -6,6 +6,8 @@ LootJS.modifiers((event) => {
 LootJS.modifiers((event) => {
     event.addLootTypeModifier(LootType.ENTITY)
         .removeLoot("minecraft:bow")
+        .removeLoot("minecraft:nether_star")
+        .removeLoot("paraglider:heart_container")
         .replaceLoot("minecraft:gold_ingot", LootEntry.of('gtceu:ash_dust').limitCount([1, 6]))
         .replaceLoot("minecraft:gold_nugget", LootEntry.of('gtceu:tiny_ash_dust').limitCount([1, 6]))
         .replaceLoot("minecraft:iron_ingot", LootEntry.of('gtceu:tiny_wrought_iron_dust').limitCount([1, 4]))

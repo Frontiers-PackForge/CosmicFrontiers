@@ -3,7 +3,7 @@
 	#Range: 1 ~ 10
 	long_press_count = 2
 	#Allowed Values: NONE, HURT, TARGET
-	health_bar_show_option = "HURT"
+	health_bar_show_option = "TARGET"
 	show_target_indicator = true
 	filter_animation = true
 	#Range: 0.0 ~ 1.0

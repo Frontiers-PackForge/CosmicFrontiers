@@ -7,19 +7,456 @@
 	id: "653B8423C4F4FB7B"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["2AF737CA4D527559"]
-		hide: true
-		id: "635C885360A8A8A9"
-		size: 2.0d
-		subtitle: "holding onto pain..."
-		tasks: [{
-			id: "42519E57ED19EF2F"
-			item: "gtceu:luv_machine_hull"
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["2AF737CA4D527559"]
+			hide: true
+			id: "635C885360A8A8A9"
+			size: 2.0d
+			subtitle: "holding onto pain..."
+			tasks: [{
+				id: "42519E57ED19EF2F"
+				item: "gtceu:luv_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			id: "32789BABC2728C07"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "To bleed for spite and Godhood"
+			tasks: [{
+				id: "6DF18285A59897AD"
+				item: "bloodmagic:altar"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["32789BABC2728C07"]
+			id: "7DBD11F232DF0686"
+			tasks: [{
+				id: "032576E7B38F17B0"
+				item: "gtceu:carbon_fiber_plate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7DBD11F232DF0686"]
+			id: "5F9F91F44409FC24"
+			tasks: [{
+				id: "2373399B7CF7CB9D"
+				item: "bloodmagic:blankslate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5F9F91F44409FC24"]
+			id: "4DEB372C6F19C994"
+			tasks: [{
+				id: "1AA8B2104FDDB676"
+				item: "occultism:otherstone_tablet"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5F9F91F44409FC24"]
+			id: "235D543FA547BD4B"
+			tasks: [{
+				id: "2046CBF7C1D484AD"
+				item: "bhc:soul_heart_crystal"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5F9F91F44409FC24"]
+			id: "0C220E4C4713034D"
+			tasks: [{
+				id: "017CEB34C3FAAD76"
+				item: "bloodmagic:voiding_anointment"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"0C220E4C4713034D"
+				"4DEB372C6F19C994"
+				"235D543FA547BD4B"
+			]
+			id: "74A99A7515B319B1"
+			tasks: [{
+				id: "1953C30FECD8C032"
+				item: "bloodmagic:blankrune"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["74A99A7515B319B1"]
+			id: "62441A275363C372"
+			tasks: [{
+				id: "2FFA02D2465B59B5"
+				item: "bloodmagic:speedrune"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["74A99A7515B319B1"]
+			id: "0C8A34469DC33D74"
+			tasks: [
+				{
+					id: "554CD910B72F6B9C"
+					item: "bloodmagic:sacrificerune"
+					type: "item"
+				}
+				{
+					id: "3E0B532DBC85CEE6"
+					item: "bloodmagic:selfsacrificerune"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["74A99A7515B319B1"]
+			id: "2A0A206B6487F7C8"
+			tasks: [{
+				id: "3C4F339F2C137DDE"
+				item: "bloodmagic:reinforcedslate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"119F6B400546B82A"
+				"2A0A206B6487F7C8"
+			]
+			id: "6D3373C5A4F1370B"
+			tasks: [{
+				id: "4A30514199318D78"
+				item: "bloodmagic:infusedslate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"6D3373C5A4F1370B"
+				"74F11E12C804E749"
+			]
+			id: "214B0DA62DDCFCB9"
+			tasks: [{
+				id: "44A6FD63DED3841D"
+				item: "bloodmagic:demonslate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"214B0DA62DDCFCB9"
+				"123B5972F7A26782"
+			]
+			id: "2B2BEF4A43975DE1"
+			tasks: [{
+				id: "0FDB9F710F7B373F"
+				item: "bloodmagic:etherealslate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -11.5d
+		}
+		{
+			id: "67C4AED657F0A07B"
+			tasks: [{
+				id: "65E22C4DA1361459"
+				item: "gtceu:soul_forge"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["2B2BEF4A43975DE1"]
+			id: "017F0D08C95CBEEE"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "39E0C07BA7C794C8"
+				item: "cosmiccore:zpm_soul_input_hatch"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["78E1208BE4B2F5C0"]
+			id: "74F11E12C804E749"
+			tasks: [{
+				id: "24D8D3C0BDE9929D"
+				item: "bloodmagic:weakbloodshard"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6D3373C5A4F1370B"]
+			id: "78E1208BE4B2F5C0"
+			tasks: [{
+				id: "655D8306827C96B3"
+				item: "bloodmagic:reagentbinding"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["214B0DA62DDCFCB9"]
+			id: "0BD17C5BA7AA62E4"
+			tasks: [{
+				id: "2F4A14828D267404"
+				item: "bloodmagic:reagentsuppression"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["0BD17C5BA7AA62E4"]
+			id: "123B5972F7A26782"
+			tasks: [{
+				id: "241A1A1946EEC438"
+				item: "extendedcrafting:luminessence"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2A0A206B6487F7C8"]
+			id: "73653E8D4F6EF1C3"
+			tasks: [{
+				id: "6AB6D5FD944E197E"
+				item: "gtceu:luv_electromagnetic_separator"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["73653E8D4F6EF1C3"]
+			id: "119F6B400546B82A"
+			tasks: [{
+				id: "04A3C59DE01DF99F"
+				item: "bloodmagic:reagentmagnetism"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["65F7E83614AEABEA"]
+			id: "39B0489A925F7520"
+			tasks: [{
+				id: "2751893FA8DB09B0"
+				item: "gtceu:prisma_doped_raw_naquahine_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50D17DD7808A9A0D"]
+			id: "1C0040B039B5EEC3"
+			tasks: [{
+				id: "06E40AE813DB76C7"
+				item: "gtceu:fused_naquadah_emulsion_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C0040B039B5EEC3"]
+			id: "65F7E83614AEABEA"
+			tasks: [{
+				id: "572EF3038144F970"
+				item: "gtceu:raw_naquahine_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["39B0489A925F7520"]
+			id: "2E8945D31DE920C9"
+			tasks: [{
+				id: "3A367D2A3A333DA0"
+				item: "gtceu:inert_naquahine_dust"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2E8945D31DE920C9"]
+			id: "3432F61794651109"
+			tasks: [{
+				id: "3C56C8F820836A56"
+				item: "gtceu:source_cut_naquahine_solution_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3432F61794651109"]
+			id: "3765B035BBEAC369"
+			tasks: [{
+				id: "203F15FC7C32C0B1"
+				item: "gtceu:naquahine_rich_mixture_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3303DCA22F0AC9C6"]
+			id: "714301AC254290AB"
+			tasks: [{
+				id: "6440842322DAAB22"
+				item: "gtceu:thunder_charged_naquahine_mixture_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3765B035BBEAC369"]
+			id: "3303DCA22F0AC9C6"
+			tasks: [{
+				id: "29FCE225F5991E6E"
+				item: "gtceu:naquahine_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["714301AC254290AB"]
+			id: "3FD359A46ACAB546"
+			tasks: [{
+				id: "6376C465F7703E41"
+				item: "gtceu:critically_steam_cracked_thundering_naquahine_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3FD359A46ACAB546"]
+			id: "3EB2317BA0E7EE13"
+			tasks: [{
+				id: "0CF95B5B5354C08D"
+				item: "gtceu:energized_naquahine_fuel_preperation_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3EB2317BA0E7EE13"]
+			id: "489A9FFA91552D3E"
+			tasks: [{
+				id: "21153001989ADCB5"
+				item: "gtceu:aerated_naquahine_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["489A9FFA91552D3E"]
+			id: "46D8E8E4D6AAF98F"
+			shape: "hexagon"
+			tasks: [{
+				id: "7B8F75E019DB2A6C"
+				item: "gtceu:naquahine_superfuel_mk_one_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			id: "50D17DD7808A9A0D"
+			tasks: [{
+				id: "76977CF88CA02F7C"
+				item: "createdeco:decal_electrical"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"46D8E8E4D6AAF98F"
+				"3030163CA604944A"
+			]
+			id: "52E24C3A025D1A04"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "7788E98C567E1635"
+				item: "cosmiccore:naquahine_pressure_reactor"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46D8E8E4D6AAF98F"]
+			description: [
+				"Machines that require a minimum level of tesla to run their recipes will fail if the field strength drops below the minimum required."
+				""
+				"In the case of Generators. They violently explode. In the case of the Naquahine Reactor, imagine a small star going off localized in your home!"
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "3030163CA604944A"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Don't get stuck"
+			tasks: [{
+				id: "5B61206BC65C98B4"
+				type: "checkmark"
+			}]
+			title: "MAGNETISM WARNINGS!"
+			x: 8.0d
+			y: 1.5d
+		}
+	]
 	title: "A Great Factory... [&dLuV&r] pt.1"
 }

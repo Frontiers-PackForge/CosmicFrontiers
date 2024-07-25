@@ -758,6 +758,102 @@
 			x: 3.5d
 			y: -2.0d
 		}
+		{
+			dependencies: ["7C2BA4D773E57683"]
+			description: [
+				"This respirator can be crafted late into steam and repaired with steel. "
+				"It has &l14 Times the Durability of the respirator"
+			]
+			id: "1F5442CB5217C1B1"
+			shape: "gear"
+			subtitle: "Better Breathing"
+			tasks: [{
+				id: "0BA57AC9A721A3FB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "kubejs:rebreather"
+					tag: {
+						Damage: 0
+						affix_data: {
+							sockets: 0
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Replaced Better Combat with Epic Fight, Swap Combat Mode with \"R\" by default"
+				"Also configure your clientside features by opening the configs in the \"MODS\" tab"
+				""
+				"Fixed a bunch of random recipes"
+				"Added the last of the AE2 recipes"
+				"EV and IV are complete and ready for playing"
+				""
+				"&aCheckout a more detailed changelog with all changes on the github"
+			]
+			icon: "minecraft:writable_book"
+			id: "06070B096D0D65F5"
+			subtitle: "Changelogs 0.4.0 -> 0.5.0"
+			tasks: [{
+				id: "01050A5958F960F9"
+				type: "checkmark"
+			}]
+			title: "Changelogs / Updates"
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"&aEpicFight allows you to swap combat modes with the \"R\" Key by default - when combat mode is disabled it allows you to attack and mine line normal. When Combat mode is enabled, you can utilize passive skills, dodges, parries and stronger attack combos to kill monsters.&r"
+				""
+				"&bYou may notice some monsters have attack animations, whereas modded ones don't. This is something I have to manually Animate in BLENDER. It'll take some time but it's a 1.0.0 Goal to have every mob and potentially boss with custom attack patterns and animations.&r"
+				""
+				"&aSame Case with Weapons consuming stamina, some don't currently trigger it at the moment, and I'll need to fix this!&r"
+				""
+				"{@pagebreak}"
+				""
+				"If you dislike seeing your arms in mining mode you can toggle this off by "
+				""
+				"Pressing Escape"
+				"Click \"Mods\""
+				"Search \"Epic Fight\""
+				"Click \"Config\""
+				"Click \"Animations\""
+				"Click \"Filter Animations\" and toggle it to \"ON\""
+				""
+				"This is the default state for the official releases of Frontiers, but if you'd like your animations active 24/7, set this to \"OFF\""
+			]
+			icon: {
+				Count: 1
+				id: "botania:elementium_sword"
+				tag: {
+					Damage: 0
+					affix_data: {
+						sockets: 0
+					}
+				}
+			}
+			id: "05392BC3D961B54F"
+			shape: "gear"
+			subtitle: "Soulslike Combat"
+			tasks: [{
+				id: "618C6AB99D588DC3"
+				type: "checkmark"
+			}]
+			title: "Combat and You"
+			x: 6.5d
+			y: -2.0d
+		}
 	]
 	subtitle: ["It all starts here"]
 	title: "&fFirst Steps and Important Info"

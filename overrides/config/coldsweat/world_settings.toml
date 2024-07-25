@@ -18,26 +18,6 @@
 	#Defines the temperature of a biome, overriding existing biome temperatures & offsets.
 	"Biome Temperatures" = []
 
-["Block Temperature"]
-	#Allows for adding simple BlockTemps without the use of Java mods
-	#Format (All temperatures are in Minecraft units):
-	#[["block-ids", <temperature>, <range (max 7)>, <*true/false: falloff>, <*max effect>, <*predicates>], [etc...], [etc...]]
-	#(* = optional) (1 °MC = 42 °F/ 23.33 °C)
-	#
-	#Arguments:
-	#block-ids: multiple IDs can be used by separating them with commas (i.e: "minecraft:torch,minecraft:wall_torch")
-	#temperature: the temperature of the block, in Minecraft units
-	#falloff: the block is less effective as distance increases
-	#max effect: the maximum temperature change this block can cause to a player (even with multiple blocks)
-	#predicates: the state that the block has to be in for the temperature to be applied (lit=true for a campfire, for example).
-	#Multiple predicates can be used by separating them with commas (i.e: "lit=true,waterlogged=false")
-	BlockTemps = [["farmersdelight:stove", 0.676, 7, true, 0.7], ["minecraft:soul_fire", -0.476, 7, true, 0.8], ["minecraft:fire", 0.476, 7, true, 0.8], ["minecraft:magma_block", 0.5, 3, true, 0.6], ["minecraft:soul_campfire", -0.476, 3, true, 0.6, "lit=true"], ["minecraft:ice", -0.15, 4, true, 0.5], ["minecraft:packed_ice", -0.25, 4, true, 1.0], ["minecraft:blue_ice", -0.35, 4, true, 1.0], ["gtceu:cupronickel_coil_block", 5, 4, true, 40.0, "active=true"], ["gtceu:kanthal_coil_block", 8, 4, true, 64.0, "active=true"], ["gtceu:nichrome_coil_block", 12, 4, true, 96.0, "active=true"]]
-	#The maximum range of blocks' area of effect
-	#Note: This will not change anything unless blocks are configured to utilize the expanded range
-	#This value is capped at 16 for performance reasons
-	#Range: 1 ~ 16
-	"Block Range" = 7
-
 [Misc]
 	#The amount of temperature normalization from being deep underground
 	#0.0 = no insulation, 1.0 = full insulation
@@ -78,4 +58,24 @@
 	Autumn = [0.2, 0, -0.2]
 	Winter = [-0.4, -0.6, -0.4]
 	Spring = [-0.2, 0, 0.2]
+
+[Blocks]
+	#Allows for adding simple BlockTemps without the use of Java mods
+	#Format (All temperatures are in Minecraft units):
+	#[["block-ids", <temperature>, <range (max 7)>, <*true/false: falloff>, <*max effect>, <*predicates>], [etc...], [etc...]]
+	#(* = optional) (1 °MC = 42 °F/ 23.33 °C)
+	#
+	#Arguments:
+	#block-ids: multiple IDs can be used by separating them with commas (i.e: "minecraft:torch,minecraft:wall_torch")
+	#temperature: the temperature of the block, in Minecraft units
+	#falloff: the block is less effective as distance increases
+	#max effect: the maximum temperature change this block can cause to a player (even with multiple blocks)
+	#predicates: the state that the block has to be in for the temperature to be applied (lit=true for a campfire, for example).
+	#Multiple predicates can be used by separating them with commas (i.e: "lit=true,waterlogged=false")
+	"Block Temperatures" = [["minecraft:soul_fire", -0.476, 7, true, 0.8], ["minecraft:fire", 0.476, 7, true, 0.8], ["minecraft:magma_block", 0.5, 3, true, 0.6], ["minecraft:soul_campfire", -0.476, 7, true, 0.6, "lit=true"], ["minecraft:ice", -0.15, 4, true, 0.5], ["minecraft:packed_ice", -0.25, 4, true, 1.0], ["minecraft:blue_ice", -0.35, 4, true, 1.0], ["minecraft:lava_cauldron", 0.5, 7, true, 1.5]]
+	#The maximum range of blocks' area of effect
+	#Note: This will not change anything unless blocks are configured to utilize the expanded range
+	#This value is capped at 16 for performance reasons
+	#Range: 1 ~ 16
+	"Block Range" = 7
 
