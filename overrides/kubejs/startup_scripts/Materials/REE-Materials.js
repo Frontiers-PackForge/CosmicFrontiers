@@ -1,18 +1,9 @@
 GTCEuStartupEvents.registry('gtceu:material', event => {
     //Chlorides
-    event.create('mre_chlorides')
-        .fluid()
-        .color(0x108277).iconSet(GTMaterialIconSet.DULL)
     //     event.create('hre_chlorides')
     //         .dust()
     //         .color(0xb55d1f).iconSet(GTMaterialIconSet.DULL)
     //Oxides
-    //     event.create('lre_oxides')
-    //         .dust()
-    //         .color(0x15b35c).iconSet(GTMaterialIconSet.DULL)
-    event.create('mre_oxides')
-        .dust()
-        .color(0x108277).iconSet(GTMaterialIconSet.DULL)
     //     event.create('hre_oxides')
     //         .dust()
     //         .color(0xb55d1f).iconSet(GTMaterialIconSet.DULL)
@@ -46,7 +37,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('hre_slag')
         .fluid()
         .color(0x836234).iconSet(GTMaterialIconSet.DULL)
-    //Xenotime extraction tier 1
+
+    //LRE extraction tier 1
     event.create('monasite_concentrate')
         .fluid()
         .color(0x9e1500).iconSet(GTMaterialIconSet.DULL)
@@ -71,20 +63,46 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('dried_mixed_lre_precipitate')
         .dust()
         .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
-    //Xenotime extraction tier 2
 
-    //Xenotime extraction tier 3
+    //LRE extraction tier 2
+    //TODO: Proper Colors
 
-    //Monazite extraction tier 2
+    event.create('lre_hydroxides')
+        .dust()
+        .color(0x357a76)
+    event.create('lre_leachate_2')
+        .fluid()
+        .color(0x357a76)
+    event.create('lre_organic_leachate')
+        .fluid()
+        .color(0x357a76)
+    event.create('lre_mixed')
+        .dust()
+        .color(0x357a76)
+    event.create('lre_oxides')
+        .dust()
+        .color(0x15b35c).iconSet(GTMaterialIconSet.DULL)
+    event.create('lre_chlorides')
+        .fluid()
+        .color(0x108277).iconSet(GTMaterialIconSet.DULL)
+
+    //LRE extraction tier 3
+
+    //MRE extraction tier 2
     //TODO : Proper Colors
-
+    event.create('mre_oxides')
+        .dust()
+        .color(0x108277).iconSet(GTMaterialIconSet.DULL)
+    event.create('mre_chlorides')
+        .fluid()
+        .color(0x108277).iconSet(GTMaterialIconSet.DULL)
     event.create('calcium_carbide')
         .dust()
         .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
     event.create('mre_hydroxides')
         .dust()
         .color(0x657d43).iconSet(GTMaterialIconSet.DULL)
-    event.create('mre_extraction_mix')
+    event.create('mre_extraction_mix') // Change lang to Improved Rare Earth Extraction Mix or sth idk
         .fluid()
         .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
     event.create('mre_leachate')
@@ -96,13 +114,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('mre_mixed')
         .dust()
         .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
-    event.create('calcium_hydroxide')
-        .dust()
-        .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
     event.create('sodium_phosphate')
         .dust()
         .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
 
-    //Monazite extraction tier 3
+    //MRE extraction tier 3
 
 })
