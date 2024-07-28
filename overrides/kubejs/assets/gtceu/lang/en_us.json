@@ -391,5 +391,11 @@
   "gtceu:tert_butylhydroperoxide": "Tert-butylhydroperoxide",
   "gtceu:244_trimethyl_1_pentene": "2,4,4-trimethyl-1-pentene",
   "gtceu:244_trimethyl_2_pentene": "2,4,4-trimethyl-2-pentene",
-  "gtceu:ferric_alumina": "Ferric Alumina"
+  "gtceu:ferric_alumina": "Ferric Alumina",
+  "gtceu:lre_hydroxides": "LRE Hydroxides",
+  "gtceu:lre_leachate_2": "LRE Leachate",
+  "gtceu:lre_organic_leachate": "LRE Organic Leachate",
+  "gtceu:lre_mixed": "Mixed LRE",
+  "gtceu:lre_oxides": "LRE Oxides",
+  "gtceu:lre_chlorides": "LRE Chlorides" 
 }
