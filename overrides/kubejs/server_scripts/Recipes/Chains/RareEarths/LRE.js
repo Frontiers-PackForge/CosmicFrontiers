@@ -96,6 +96,7 @@ Server.recippes((event) => {
         .chancedOutput('gtceu:cerium_dust', 4000, 500)
         .chancedOutput('2x gtceu:praseodymium_dust', 4500, 500)
         .chancedOutput('2x gtceu:neodymium_dust', 8000, 500)
+        .chancedOutput('gtceu:mre_mixed', 1000, 250) // certified chochem [affecting balance] moment
         .duration(100)
         .EUt(GTValues.VA[GTValues.EV]);
 
