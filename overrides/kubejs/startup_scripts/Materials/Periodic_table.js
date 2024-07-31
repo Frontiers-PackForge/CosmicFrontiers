@@ -1,6 +1,8 @@
 const $IngotProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty');
 const $DustProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.DustProperty');
 const $FluidProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty');
+const $FluidBuilder = Java.loadClass('com.gregtechceu.gtceu.api.fluids.FluidBuilder');
+const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys');
 const $BlastProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty')
 const $GemProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.GemProperty');
 
@@ -22,167 +24,182 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Naquadria.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.MOLTEN, new GTFluidBuilder());
     //Scandium
     GTMaterials.Scandium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Scandium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Scandium, $FluidStorageKeys.LIQUID);
     //Strontium
     GTMaterials.Strontium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Strontium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Strontium, $FluidStorageKeys.LIQUID);
     //Caesium
     GTMaterials.Caesium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Caesium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Caesium, $FluidStorageKeys.LIQUID);
     //Francium
     GTMaterials.Francium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Francium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Francium, $FluidStorageKeys.LIQUID);
     //Radium
     GTMaterials.Radium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Radium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Radium, $FluidStorageKeys.LIQUID);
     //Actinium
     GTMaterials.Actinium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Actinium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Actinium, $FluidStorageKeys.LIQUID);
+
     //Zirconium
     GTMaterials.Zirconium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Zirconium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Zirconium, $FluidStorageKeys.LIQUID);
+
     //Hafnium
     GTMaterials.Hafnium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Hafnium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Hafnium, $FluidStorageKeys.LIQUID);
+
     //Technetium
     GTMaterials.Technetium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Technetium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Technetium, $FluidStorageKeys.LIQUID);
+
     //Rhenium
     GTMaterials.Rhenium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Rhenium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Rhenium, $FluidStorageKeys.LIQUID);
+
     //Bohrium
     GTMaterials.Bohrium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Bohrium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Bohrium, $FluidStorageKeys.LIQUID);
+
     //Rubidium
     GTMaterials.Rubidium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Rubidium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Rubidium, $FluidStorageKeys.LIQUID);
 
     // ALL ABOVE WORK
 
 
     //Rutherfordium
     GTMaterials.Rutherfordium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Rutherfordium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Rutherfordium, $FluidStorageKeys.LIQUID);
     //Dubnium
     GTMaterials.Dubnium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Dubnium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Dubnium, $FluidStorageKeys.LIQUID);
     //Seaborgium
     GTMaterials.Seaborgium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Seaborgium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Seaborgium, $FluidStorageKeys.LIQUID);
     //Hassium
     GTMaterials.Hassium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Hassium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Hassium, $FluidStorageKeys.LIQUID);
     //Praseodymium
     GTMaterials.Praseodymium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Praseodymium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Praseodymium, $FluidStorageKeys.LIQUID);
     //Protactinium
     GTMaterials.Protactinium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Protactinium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Protactinium, $FluidStorageKeys.LIQUID);
     //Promethium
     GTMaterials.Promethium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Promethium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Promethium, $FluidStorageKeys.LIQUID);
     //Neptunium
     GTMaterials.Neptunium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Neptunium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Neptunium, $FluidStorageKeys.LIQUID);
     //Meitnerium
     GTMaterials.Meitnerium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Meitnerium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Meitnerium, $FluidStorageKeys.LIQUID);
     //Roentgenium
     GTMaterials.Roentgenium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Roentgenium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Roentgenium, $FluidStorageKeys.LIQUID);
     //Copernicium
     GTMaterials.Copernicium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Copernicium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Copernicium, $FluidStorageKeys.LIQUID);
     //Thallium
     GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Thallium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Thallium, $FluidStorageKeys.LIQUID);
     //Nihonium
     GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Nihonium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Nihonium, $FluidStorageKeys.LIQUID);
     //Flerovium
     GTMaterials.Flerovium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Flerovium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Flerovium, $FluidStorageKeys.LIQUID);
     //Moscovium
     GTMaterials.Moscovium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Moscovium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Moscovium, $FluidStorageKeys.LIQUID);
     //Gadolinium
     GTMaterials.Gadolinium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Gadolinium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Gadolinium, $FluidStorageKeys.LIQUID);
     //Curium
     GTMaterials.Curium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Curium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Curium, $FluidStorageKeys.LIQUID);
     //Terbium
     GTMaterials.Terbium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Terbium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Terbium, $FluidStorageKeys.LIQUID);
     //Berkelium
     GTMaterials.Berkelium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Berkelium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Berkelium, $FluidStorageKeys.LIQUID);
     //Dysprosium
     GTMaterials.Dysprosium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Dysprosium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Dysprosium, $FluidStorageKeys.LIQUID);
 
     //NEW R3
 
-    //
+    // Californium
     GTMaterials.Californium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Californium.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    addFluid(GTMaterials.Californium, $FluidStorageKeys.LIQUID);
+    // Einsteinium
     GTMaterials.Einsteinium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Einsteinium.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    addFluid(GTMaterials.Einsteinium, $FluidStorageKeys.LIQUID);
+    // Fermium
     GTMaterials.Fermium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Fermium.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    addFluid(GTMaterials.Fermium, $FluidStorageKeys.LIQUID);
+    // Mendelevium
     GTMaterials.Mendelevium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Mendelevium.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    addFluid(GTMaterials.Mendelevium, $FluidStorageKeys.LIQUID);
+    // Nobelium
     GTMaterials.Nobelium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Nobelium.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    addFluid(GTMaterials.Nobelium, $FluidStorageKeys.LIQUID);
+    // Lawrencium
     GTMaterials.Lawrencium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Lawrencium.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    addFluid(GTMaterials.Lawrencium, $FluidStorageKeys.LIQUID);
+    // Holmium
     GTMaterials.Holmium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Holmium.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    addFluid(GTMaterials.Holmium, $FluidStorageKeys.LIQUID);
+    // Erbium
     GTMaterials.Erbium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Erbium.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    addFluid(GTMaterials.Erbium, $FluidStorageKeys.LIQUID);
+    // Thulium
     GTMaterials.Thulium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Thulium.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    addFluid(GTMaterials.Thulium, $FluidStorageKeys.LIQUID);
+    // Ytterbium
     GTMaterials.Ytterbium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Ytterbium.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    addFluid(GTMaterials.Ytterbium, $FluidStorageKeys.LIQUID);
+    // Germanium
     GTMaterials.Germanium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Germanium.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    addFluid(GTMaterials.Germanium, $FluidStorageKeys.LIQUID);
+    // Livermorium
     GTMaterials.Livermorium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Livermorium.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
-    GTMaterials.Tennessine.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    addFluid(GTMaterials.Livermorium, $FluidStorageKeys.LIQUID);
+    // Tennessine
+    GTMaterials.Tennessine.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    addFluid(GTMaterials.Tennessine, $FluidStorageKeys.LIQUID);
+    // Oganesson
     GTMaterials.Oganesson.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Oganesson.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    addFluid(GTMaterials.Oganesson, $FluidStorageKeys.LIQUID);
+    // Polonium
     GTMaterials.Polonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Polonium.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    addFluid(GTMaterials.Polonium, $FluidStorageKeys.LIQUID);
+    // Astatine
     GTMaterials.Astatine.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Astatine.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    addFluid(GTMaterials.Astatine, $FluidStorageKeys.LIQUID);
+    // Tellurium
     GTMaterials.Tellurium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Tellurium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Tellurium, $FluidStorageKeys.LIQUID);
     //
     //GTMaterials.Iodine.setProperty(PropertyKey.INGOT, new $IngotProperty());
     //GTMaterials.Iodine.setProperty(PropertyKey.FLUID, new $FluidProperty());
     //
     // GTMaterials.Bromine.setProperty(PropertyKey.INGOT, new $IngotProperty());
     // GTMaterials.Bromine.setProperty(PropertyKey.FLUID, new $FluidProperty());
-    //
+    // Selenium
     GTMaterials.Selenium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Selenium.setProperty(PropertyKey.FLUID, new $FluidProperty());
+    addFluid(GTMaterials.Selenium, $FluidStorageKeys.LIQUID);
 
 
 })
+
+
+
+let addFluid = (mat, key) => {
+    let prop = new $FluidProperty()
+    prop.getStorage().enqueueRegistration(key, new $FluidBuilder())
+    mat.setProperty(PropertyKey.FLUID, prop)
+}
 
