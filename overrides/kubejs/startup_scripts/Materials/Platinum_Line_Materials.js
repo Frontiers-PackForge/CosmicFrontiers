@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_UNIFICATION
         )
     event.create('nickel_carbonyl')
-        .fluid()
+        .liquid()
         .element(GTElements.get('nickel_carbonyl'))
         .color(0x666A72).iconSet(GTMaterialIconSet.DULL)
         .flags(
@@ -24,7 +24,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_UNIFICATION
         )
     event.create('cooperite_solution')
-        .fluid()
+        .liquid()
         .element(GTElements.get('cooperite_solution'))
         .color(0xe9ffa7).iconSet(GTMaterialIconSet.DULL)
         .flags(
@@ -32,7 +32,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_UNIFICATION
         )
     event.create('plat_depleted_cooperite_solution')
-        .fluid()
+        .liquid()
         .element(GTElements.get('plat_depleted_cooperite_solution'))
         .color(0x766D6B).iconSet(GTMaterialIconSet.DULL)
         .flags(
@@ -48,7 +48,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_UNIFICATION
         )
     event.create('ammonium_hexachloropalladate')
-        .dust()
+        .dust() 
         .element(GTElements.get('ammonium_hexachloropalladate'))
         .color(0x8E9190).iconSet(GTMaterialIconSet.DULL)
         .flags(
@@ -58,6 +58,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('tetraammine_palladium_chloride')
         .dust()
         .element(GTElements.get('tetraammine_palladium_chloride'))
+        .color(0x81948d).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_UNIFICATION
+        )
+    event.create('diamine_dichloropalladium')
+        .dust()
+        .element(GTElements.get('diamine_dichloropalladium'))
         .color(0x81948d).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -87,7 +95,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_UNIFICATION
         )
     event.create('rhodium_sulfate_solution')
-        .fluid()
+        .liquid()
         .color(0x85775d).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -115,21 +123,21 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_UNIFICATION
         )
     event.create('sodium_ruthenate_perosomate')
-        .fluid()
+        .liquid()
         .color(0x414d54).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
     event.create('ruthenium_osmium_tetroxides')
-        .fluid()
+        .liquid()
         .color(0x364a5c).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
     event.create('chlororuthenic_acid_osmium_tetroxide_solution')
-        .fluid()
+        .liquid()
         .color(0x436c91).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -143,7 +151,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_UNIFICATION
         )
     event.create('chlororuthenic_acid')
-        .fluid()
+        .liquid()
         .color(0x415953).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -171,7 +179,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_UNIFICATION
         )
     event.create('chloroiridic_acid')
-        .fluid()
+        .liquid()
         .color(0xE9FFA7).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -227,7 +235,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     //         GTMaterialFlags.NO_UNIFICATION
     //     )
     // event.create('iron_ii_chloride')
-    //     .fluid()
+    //     .liquid()
     //     .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
     //     .flags(
     //         GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -241,13 +249,16 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+    event.create('sodium_oxide')
+        .dust()
+        .color(0x3474eb).iconSet(GTMaterialIconSet.DULL)
+        .components('2x sodium', '1x oxygen')
+        // .flags()
     event.create('sodium_peroxide')
         .dust()
         .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
-        .flags(
-            GTMaterialFlags.DISABLE_DECOMPOSITION,
-            GTMaterialFlags.NO_UNIFICATION
-        )
+        .components('2x sodium', '2x oxygen')
+        // .flags()
     event.create('barium_peroxide')
         .dust()
         .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)

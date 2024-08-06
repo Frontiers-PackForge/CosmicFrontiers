@@ -34,8 +34,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeType('chemical_dehydrator', true, true)
         .rotationState(RotationState.NON_Y_AXIS)
         .workableTieredHullRenderer(GTCEu.id("block/machines/flora_nurturer"))
-    event.create('fake_wireless', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV ,GTValues.UXV , GTValues.OpV , GTValues.MAX)
-        .recipeType('chemical_dehydrator', true, true)
+
+    event.create('meteor_recipe_dummy', 'simple', GTValues.MAX)
+        .recipeType('fake_meteor_ritual', true, true)
         .rotationState(RotationState.NON_Y_AXIS)
-        .workableTieredHullRenderer(GTCEu.id("block/machines/fake_wireless"))
+        .workableTieredHullRenderer(GTCEu.id("block/machines/fake_meteor"))
+
 })

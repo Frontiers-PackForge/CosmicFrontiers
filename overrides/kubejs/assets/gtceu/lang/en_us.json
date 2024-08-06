@@ -54,6 +54,7 @@
   "block.gtceu.uhv_mana_fluidizer": "§4Epic Mana Fluidizer§r",
 
 
+
   "block.gtceu.lv_spooling_machine": "Basic Spooling Machine",
   "block.gtceu.mv_spooling_machine": "§bAdvanced Spooling Machine§b",
   "block.gtceu.hv_spooling_machine": "§6Advanced Spooling Machine II§r",
@@ -394,6 +395,8 @@
   "block.gtceu.grand_assembly_line": "§bGrand Assembly Line",
   "block.gtceu.leaching_plant": "Leaching Plant",
   "gtceu.leaching_plant": "Leaching Plant",
+  "gtceu.fake_meteor_ritual": "Meteor Rituals",
+  "block.gtceu.max_meteor_recipe_dummy": "§3Meteor Rituals",
 
   "gtceu:cyanex_272": "Cyanex-272",
   "gtceu:tert_butanol": "Tert-butanol",

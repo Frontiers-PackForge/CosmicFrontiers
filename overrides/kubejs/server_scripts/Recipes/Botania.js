@@ -63,6 +63,22 @@ ServerEvents.recipes(event => {
         .itemOutputs('botania:mana_glass')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(20)
+    //Rune Etching
+    event.recipes.gtceu.mana_engraver('er_water_rune')
+        .itemInputs(['gtceu:livingrock_plate', '2x crabbersdelight:crab_trap', '4x minecraft:sugar_cane', '4x minecraft:bone_meal', '2x gtceu:manasteel_plate', '2x botania:mana_powder'])
+        .inputFluids('gtceu:potent_mana 4000')
+        .circuit(1)
+        .itemOutputs('8x botania:rune_water')
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(300)
+    event.recipes.gtceu.mana_engraver('er_water_rune_lp_boost')
+        .itemInputs(['gtceu:livingrock_plate', '2x crabbersdelight:crab_trap', '4x minecraft:sugar_cane', '4x minecraft:bone_meal', '2x gtceu:manasteel_plate', '2x botania:mana_powder'])
+        .inputFluids('gtceu:potent_mana 4000')
+        .circuit(2)
+        .soulInput('20000')
+        .itemOutputs('16x botania:rune_water')
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(300)
     //Livingwood
     //Bolt
     event.recipes.gtceu.cutter('gtceu:cutter/cut_livingwood_twig_to_bolt_water')

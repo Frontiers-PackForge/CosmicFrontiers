@@ -147,6 +147,17 @@ ServerEvents.recipes(event => {
   .duration(600)
   .EUt(GTValues.VA[GTValues.IV])
 
+  event.recipes.gtceu.assembly_line('bloodmagic_altar_assline')
+    .itemInputs(['gtceu:iv_chemical_bath','botania:fabulous_pool', '2x gtceu:iv_electric_pump','16x gtceu:stone_plate','bhc:soul_heart_crystal', 'botania:rune_spring', 'botania:rune_summer', 'botania:rune_autumn', 'botania:rune_winter', 'botania:rune_lust', 'botania:rune_gluttony', 'botania:rune_greed','botania:rune_sloth', 'botania:rune_wrath', 'botania:rune_envy', 'botania:rune_pride'])
+    .itemOutputs('bloodmagic:altar')
+    .inputFluids(
+    Fluid.of('cosmiccore:prisma', 15000),
+    Fluid.of('cosmiccore:molten_resonant_virtue_meld', 9216),
+  )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:tungsten_steel_drum')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
+  .duration(600)
+  .EUt(GTValues.VA[GTValues.IV])
+
 
 
 

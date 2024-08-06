@@ -130,6 +130,14 @@ ServerEvents.recipes(event => {
               .chancedOutput(Item.of('nethersdelight:propelpearl', 1), 5000, 500)
               .duration(160)
               .EUt(16);
+       event.recipes.gtceu.flora_nurturer('pearl_cultivation_super')
+              .notConsumable('nethersdelight:propelpearl')
+              .inputFluids('gtceu:nutrient_solution 50')
+              .itemOutputs('8x cosmiccore:overloaded_pearls')
+              .itemOutputs('4x nethersdelight:propelpearl')
+              .chancedOutput(Item.of('nethersdelight:propelpearl', 3), 5000, 500)
+              .duration(160)
+              .EUt(16);
        event.recipes.gtceu.nether_catalyzer('cosmiccore:pearl_catalyzing')
               .itemInputs('cosmiccore:overloaded_pearls')
               .outputFluids(Fluid.of('gtceu:ethanol', 250))
@@ -149,12 +157,11 @@ ServerEvents.recipes(event => {
               .chancedOutput(Item.of('ars_nouveau:magebloom', 4), 5000, 750)
               .duration(160)
               .EUt(GTValues.VA[GTValues.LV] / 2);
-       event.recipes.gtceu.flora_nurturer('cosmiccore:soul_cultivation')
-              .notConsumable('cold_sweat:soul_sprout')
-              .notConsumable('minecraft:soul_sand')
-              .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 500))
-              .itemOutputs('cold_sweat:soul_sprout')
-              .chancedOutput(Item.of('cold_sweat:soul_sprout', 1), 2500, 500)
+       event.recipes.gtceu.flora_nurturer('cosmiccore:magebloom_cultivation_nutrient_solution')
+              .notConsumable('ars_nouveau:magebloom_crop')
+              .inputFluids('gtceu:nutrient_solution 50')
+              .itemOutputs('16x ars_nouveau:magebloom')
+              .chancedOutput(Item.of('ars_nouveau:magebloom', 6), 5000, 750)
               .duration(160)
               .EUt(GTValues.VA[GTValues.LV] / 2);
        event.recipes.gtceu.mixer('cosmiccore:soul_salt_water_mixing')
@@ -331,7 +338,7 @@ ServerEvents.recipes(event => {
               W: 'gtceu:lpic_chip',
               I: '#gtceu:circuits/iv',
               P: 'gtceu:platinum_quadruple_wire'
-              
+
        })
 
 
@@ -364,7 +371,7 @@ ServerEvents.recipes(event => {
               'black'
        ]
        dye.forEach(dye => {
-              event.remove({ id: `comforts:sleeping_bag_${dye}`})
+              event.remove({ id: `comforts:sleeping_bag_${dye}` })
               event.shaped(`comforts:sleeping_bag_${dye}`, [
                      '   ',
                      'WCC',

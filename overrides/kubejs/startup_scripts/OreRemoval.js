@@ -37,7 +37,11 @@ WorldgenEvents.remove(event => {
       "ad_astra:mars_diamond_ore",
       "ad_astra:mars_ice_shard_ore",
       "ad_astra:mars_iron_ore",
-      "ad_astra:mars_ostrum_ore"
+      "ad_astra:mars_ostrum_ore",
+      "draconicevolution:overworld_draconium_ore",
+      "draconicevolution:deepslate_draconium_ore",
+      "draconicevolution:nether_draconium_ore",
+      "draconicevolution:end_draconium_ore"
     ]
   })
   event.removeFeatureById('raw_generation', [

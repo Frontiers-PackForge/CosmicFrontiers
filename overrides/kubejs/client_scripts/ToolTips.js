@@ -174,6 +174,10 @@ ItemEvents.tooltip(event => {
     text.add(1, Text.of('The power of the Overseers hinders your mind.').red().italic())
     text.add(2, Text.of('Mod NYI - Expect integration in future Updates.').white().bold())
   })
+  event.addAdvanced('gtceu:max_meteor_recipe_dummy', (item, advanced, text) => {
+    text.add(1, Text.of('Through my eyes, you will see the stars').red().italic())
+    text.add(2, Text.of('FAKE MACHINE - ALLOWS YOU TO VIEW VALID BLOODMAGIC METEORS.').white().bold())
+  })
   event.addAdvanced(/naturesaura:(.*)/, (item, advanced, text) => {
     text.add(1, Text.of('The power of the Overseers hinders your mind.').red().italic())
     text.add(2, Text.of('Mod NYI - Expect integration in future Updates.').white().bold())

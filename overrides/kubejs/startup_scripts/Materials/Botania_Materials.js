@@ -41,7 +41,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         )
 
     event.create('manasteel')
-        .fluid()
+        .liquid()
         .color(0x67b9ee)
         .element(GTElements.get('manasteel'))
         .cableProperties(GTValues.V[GTValues.LV], 8, 0, false)
@@ -67,7 +67,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('galvanized_ethersteel')
         .color(0xcf325b)
         .ingot()
-        .fluid()
+        .liquid()
         .element(GTElements.get('ether_steel'))
         .iconSet(GTMaterialIconSet.SHINY)
         .cableProperties(GTValues.V[GTValues.HV], 2, 0, true)
@@ -93,7 +93,5 @@ GTCEuStartupEvents.materialModification(event => {
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('manasteel'), () => Item.getItem('botania:manasteel_ingot'))
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('terrasteel'), () => Item.getItem('botania:terrasteel_ingot'))
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('elementium'), () => Item.getItem('botania:elementium_ingot'))
-    GTMaterials.get('oxalic_acid').setFormula('C2H2O4', true)
-    GTMaterials.get('di_2_ethylhexyl_phosphoric_acid').setFormula('(C8H17O)2PO2H', true)
-    GTMaterials.get('sodium_phosphate').setFormula('Na3PO4', true)
+
 })

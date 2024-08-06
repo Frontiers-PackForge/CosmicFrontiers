@@ -9,27 +9,27 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.thermal_centrifuge('centrifuge_bauxite_purified_ore_to_refined_ore')
         .itemInputs('gtceu:purified_bauxite_ore')
         .itemOutputs('gtceu:refined_bauxite_ore')
-        .chancedOutput(Item.of('gtceu:gallium_dust', 1), 3300, 0)
+        // .chancedOutput(Item.of('gtceu:gallium_dust', 1), 3300, 0)
         .duration(400)
         .EUt(GTValues.VA[GTValues.LV]);
     event.recipes.gtceu.thermal_centrifuge('centrifuge_bauxite_crushed_ore_to_refined_ore')
         .itemInputs('gtceu:crushed_bauxite_ore')
         .itemOutputs('gtceu:refined_bauxite_ore')
         .itemOutputs('gtceu:stone_dust')
-        .chancedOutput(Item.of('gtceu:gallium_dust', 1), 3300, 0)
+        // .chancedOutput(Item.of('gtceu:gallium_dust', 1), 3300, 0)
         .duration(400)
         .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.macerator('macerate_bauxite_crushed_ore_to_dust')
         .itemInputs('gtceu:purified_bauxite_ore')
         .itemOutputs('gtceu:pure_bauxite_dust')
-        .chancedOutput(Item.of('gtceu:gallium_dust', 1), 1500, 0)
+        // .chancedOutput(Item.of('gtceu:gallium_dust', 1), 1500, 0)
         .duration(400)
         .EUt(GTValues.VA[GTValues.LV]);
     event.recipes.gtceu.centrifuge('centrifuge_bauxite_pure_dust_to_dust')
         .itemInputs('gtceu:pure_bauxite_dust')
         .itemOutputs('gtceu:bauxite_dust')
-        .chancedOutput(Item.of('gtceu:gallium_dust', 1), 1500, 0)
+        // .chancedOutput(Item.of('gtceu:gallium_dust', 1), 1500, 0)
         .duration(400)
         .EUt(GTValues.VA[GTValues.LV]);
 
@@ -127,12 +127,12 @@ ServerEvents.recipes(event => {
         .itemOutputs('6x gtceu:soda_ash_dust')
         .duration(7200)
         .EUt(GTValues.VA[GTValues.MV]);
-    event.recipes.gtceu.chemical_reactor('alumina_to_aluminium')
-        .itemInputs('5x gtceu:alumina')
-        .inputFluids('gtceu:oxygen 3000')
-        .itemOutputs('2x gtceu:aluminium_dust')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.MV]);
+    // event.recipes.gtceu.chemical_reactor('alumina_to_aluminium')
+    //     .itemInputs('5x gtceu:alumina_dust')
+    //     .inputFluids('gtceu:oxygen 3000')
+    //     .itemOutputs('2x gtceu:aluminium_dust')
+    //     .duration(200)
+    //     .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.chemical_reactor('aluminium_hydroxide_good')
         .itemInputs('4x gtceu:sodium_aluminate_dust')
         .inputFluids('minecraft:water 2000')
