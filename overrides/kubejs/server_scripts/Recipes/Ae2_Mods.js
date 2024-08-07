@@ -698,7 +698,7 @@ event.recipes.gtceu.assembler('extended_export_bus_upgrade_from_bus')
     let fluids = lamFluids[index]
     let output = outputAmount[index]
     var polymer;
-    if (index === 1){
+    if (index === 0){
       polymer = 'gtceu:rubber_foil'
     } else if(index < 3) {
       polymer = 'gtceu:polyethylene_foil'
