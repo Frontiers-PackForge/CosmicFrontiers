@@ -397,13 +397,13 @@ ServerEvents.recipes(event => {
     .duration(80)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.assembler('arseng:basic_card_craft')
-    .itemInputs(['16x gtceu:fine_red_alloy_wire', '4x gtceu:steel_plate', '4x gtceu:rose_gold_plate', 'gtceu:good_electronic_circuit'])
+    .itemInputs(['16x gtceu:fine_red_alloy_wire', '4x gtceu:steel_plate', '4x gtceu:rose_gold_plate', '#gtceu:circuits/mv'])
     .inputFluids(`gtceu:soldering_alloy 144`)
     .itemOutputs('4x ae2:basic_card')
     .duration(80)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.assembler('arseng:adv_card_craft')
-    .itemInputs(['16x gtceu:fine_red_alloy_wire', '4x gtceu:steel_plate', '3x gtceu:diamond_plate', 'gtceu:good_electronic_circuit'])
+    .itemInputs(['16x gtceu:fine_red_alloy_wire', '4x gtceu:steel_plate', '3x gtceu:diamond_plate', '#gtceu:circuits/mv'])
     .inputFluids(`gtceu:soldering_alloy 144`)
     .itemOutputs('4x ae2:advanced_card')
     .duration(80)
@@ -698,7 +698,7 @@ event.recipes.gtceu.assembler('extended_export_bus_upgrade_from_bus')
     let fluids = lamFluids[index]
     let output = outputAmount[index]
     var polymer;
-    if (index === 0){
+    if (index === 1){
       polymer = 'gtceu:rubber_foil'
     } else if(index < 3) {
       polymer = 'gtceu:polyethylene_foil'

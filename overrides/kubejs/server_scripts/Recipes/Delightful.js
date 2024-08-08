@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
         'BSD'
     ], {
         P: 'gtceu:iron_plate',
-        B: 'betterend:leather_wrapped_stick',
+        B: 'gtceu:treated_wood_rod',
         S: 'gtceu:iron_screw',
         D: '#forge:tools/screwdrivers',
         H: '#forge:tools/hammers'
