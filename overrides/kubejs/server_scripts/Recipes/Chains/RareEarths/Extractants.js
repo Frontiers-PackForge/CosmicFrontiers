@@ -136,4 +136,6 @@ ServerEvents.recipes((event) => {
         .outputFluids('gtceu:cyanex_272 1000')
         .duration(200)
         .EUt(GTValues.VA[GTValues.IV]);
+    
+    // Cyanex-272 infused beads
 })
