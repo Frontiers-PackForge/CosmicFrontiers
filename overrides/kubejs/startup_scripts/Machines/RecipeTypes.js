@@ -140,6 +140,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.TURBINE)
 
     GTRecipeTypes.MIXER_RECIPES.setMaxIOSize(6, 1, 3, 1)
-    GTRecipeTypes.FORGE_HAMMER_RECIPES.setMaxIOSize(1, 3, 0, 0)
+    // GTRecipeTypes.FORGE_HAMMER_RECIPES.setMaxIOSize(1, 3, 0, 0) // FOR SOME REASON I REFUSES TO WORK!
+    GTRecipeTypes.FUSION_RECIPES.setMaxIOSize(3, 3, 6, 6)
     // GTRecipeTypes.CENTRIFUGE_RECIPES.setMaxIOSize(9, 4, 10, 5)
 })

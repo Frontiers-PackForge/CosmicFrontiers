@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:assembler/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_luv' })
   event.recipes.gtceu.assembly_line('luv_hull_assline')
-    .itemInputs(['gtceu:iridium_frame', '16x gtceu:rhodium_plated_palladium_plate', '8x cosmiccore:double_prismatic_tungstensteel_plate', '16x gtceu:osmiridium_screw', 'gtceu:advanced_integrated_circuit', '2x gtceu:niobium_titanium_quadruple_cable'])
+    .itemInputs(['gtceu:iridium_frame', '16x gtceu:rhodium_plated_palladium_plate', '8x cosmiccore:double_prismatic_tungstensteel_plate', '16x gtceu:osmiridium_screw', '#gtceu:circuits/hv', '2x gtceu:niobium_titanium_quadruple_cable'])
     .itemOutputs('gtceu:luv_machine_hull')
     .inputFluids(
       Fluid.of('cosmiccore:prisma', 576),
@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
     .duration(300)
     .EUt(GTValues.VA[GTValues.LuV])
   event.recipes.gtceu.assembly_line('luv_hull_assline_casing')
-    .itemInputs(['gtceu:luv_machine_casing', '8x gtceu:rhodium_plated_palladium_plate', '4x cosmiccore:double_prismatic_tungstensteel_plate', '8x gtceu:osmiridium_screw', 'gtceu:advanced_integrated_circuit', '2x gtceu:niobium_titanium_quadruple_cable'])
+    .itemInputs(['gtceu:luv_machine_casing', '8x gtceu:rhodium_plated_palladium_plate', '4x cosmiccore:double_prismatic_tungstensteel_plate', '8x gtceu:osmiridium_screw', '#gtceu:circuits/hv', '2x gtceu:niobium_titanium_quadruple_cable'])
     .itemOutputs('gtceu:luv_machine_hull')
     .inputFluids(
       Fluid.of('cosmiccore:prisma', 576),
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
   //LUV MOTOR
   event.remove({ id: 'gtceu:assembly_line/electric_motor_luv' })
   event.recipes.gtceu.assembly_line('luv_new_motor')
-    .itemInputs(['gtceu:long_magnetic_samarium_rod', '4x cosmiccore:long_resonant_virtue_meld_rod', '2x cosmiccore:resonant_virtue_meld_ring', '4x cosmiccore:resonant_virtue_meld_round', '64x gtceu:fine_galvanized_ethersteel_wire', '64x gtceu:fine_galvanized_ethersteel_wire', '64x gtceu:fine_galvanized_ethersteel_wire', '64x gtceu:fine_galvanized_ethersteel_wire', '2x gtceu:niobium_titanium_quadruple_cable'])
+    .itemInputs(['gtceu:long_magnetic_samarium_rod', '4x cosmiccore:long_resonant_virtue_meld_rod', '2x cosmiccore:resonant_virtue_meld_ring', '4x cosmiccore:resonant_virtue_meld_round', '64x gtceu:fine_ruridit__wire', '64x gtceu:fine_ruridit__wire', '64x gtceu:fine_ruridit__wire', '64x gtceu:fine_ruridit__wire', '2x gtceu:niobium_titanium_quadruple_cable'])
     .itemOutputs('gtceu:luv_electric_motor')
     .inputFluids(
       Fluid.of('gtceu:soldering_alloy', 288),

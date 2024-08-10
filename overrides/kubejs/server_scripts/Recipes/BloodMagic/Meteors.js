@@ -148,7 +148,15 @@ event.custom({
 //Fat Luminite
 event.recipes.gtceu.fake_meteor_ritual('luminite_fat_iv')
 .itemInputs('gtceu:luv_sensor')
-.itemOutputs(['minecraft:tuff', 'gtceu:raw_luminite', 'gtceu:raw_luminite_block', 'gtceu:raw_neodymium', 'gtceu:raw_bauxite','gtceu:raw_ilmenite','gtceu:raw_wolframite','gtceu:raw_scheelite','gtceu:raw_tungstate'])
+.itemOutputsRanged('minecraft:tuff', 500, 1500)
+.itemOutputsRanged('gtceu:raw_luminite', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_luminite_block', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_neodymium', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_bauxite', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_ilmenite', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_wolframite', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_scheelite', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_tungstate', 1000, 2500)
 .soulInput(8500000);
 event.custom({
   "type": "bloodmagic:meteor",
