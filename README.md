@@ -33,7 +33,7 @@ I'm not paid enough for this.
 ![Quests](https://github.com/user-attachments/assets/702cee9a-d223-4ea5-8a07-2889a8bb3abf)
 
 ### 3. Plenty of Worldgen overhauls to make each world feel alive and varied. Featuring Mods like Tectonic, Teralith, Biomes We've Gone, and Biomes O plenty!
-### 4. Dimensional Travel to the Stars and the Depths deep below - Explore the Aether, Undergarden, and many more enviroments with their own unique exploration hazards!
+### 4. Dimensional Travel to the Stars and the Depths deep below - Explore the Aether, Undergarden, and many more environments with their own unique exploration hazards!
 
 ![Explore](https://github.com/user-attachments/assets/39497517-6026-4ce6-a930-339c1c2d09a6)
 
