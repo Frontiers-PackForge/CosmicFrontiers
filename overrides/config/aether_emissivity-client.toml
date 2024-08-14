@@ -1,9 +1,0 @@
-
-[Emissives]
-	#Enables emissivity for Sentry Boots
-	"Sentry Boots emissivity" = true
-	#Enables emissivity for Phoenix Armor
-	"Phoenix Armor emissivity" = true
-	#Enables emissivity for the Shield of Repulsion
-	"Shield of Repulsion emissivity" = true
-

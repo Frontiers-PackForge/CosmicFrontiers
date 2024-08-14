@@ -409,10 +409,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('ortho_diethynylbenzene_dianion')
         .gas()
         .color(0x79ad53).iconSet(GTMaterialIconSet.DULL)
-//Neutronite and precursor neutron states
+    //Neutronite and precursor neutron states
     event.create('neutronite')
         .ingot()
-        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
+        .blastTemp(7500)
+        .color(0xa6f8ff).secondaryColor(0x181f47).iconSet(GTMaterialIconSet.BRIGHT)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -423,28 +424,42 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.GENERATE_FINE_WIRE
         )
+    event.create('critical_neutron_mass')
+        .ingot()
+        .blastTemp(7500)
+        .color(0xd4973b).secondaryColor(0x181f47).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.NO_SMELTING
+        )
+    event.create('neutronic_composite')
+        .ingot()
+        .blastTemp(7500)
+        .color(0xd62e22).secondaryColor(0x181f47).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.NO_SMELTING
+        )
     event.create('resh_neutron_meld')
         .dust()
-        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
+        .color(0x34dceb).iconSet(GTMaterialIconSet.DULL)
     event.create('pey_neutron_gas')
-        .dust()
-        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
+        .gas()
+        .color(0xeb4034).iconSet(GTMaterialIconSet.DULL)
     event.create('ayin_neutron_fluid')
-        .dust()
-        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
+        .liquid()
+        .color(0xa10840).iconSet(GTMaterialIconSet.DULL)
 
-    event.create('alef_neutron_plasma')
+    event.create('alef_neutron')
         .plasma()
         .color(0x544940).iconSet(GTMaterialIconSet.DULL)
-    event.create('resh_neutron_plasma')
+    event.create('resh_neutron')
         .plasma()
-        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
-    event.create('pey_neutron_plasma')
+        .color(0x34dceb).iconSet(GTMaterialIconSet.DULL)
+    event.create('pey_neutron')
         .plasma()
-        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
-    event.create('ayin_neutron_plasma')
+        .color(0xeb4034).iconSet(GTMaterialIconSet.DULL)
+    event.create('ayin_neutron')
         .plasma()
-        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
+        .color(0xa10840).iconSet(GTMaterialIconSet.DULL)
 
     GTMaterials.get('neptunium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.get('plutonium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)

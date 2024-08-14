@@ -3,7 +3,7 @@
 	#Sets all temperatures to be displayed in Celsius
 	Celsius = true
 	#Visually offsets the world temperature to better match the user's definition of "hot" and "cold"
-	#Range: > 0
+	#Range: > -2147483647
 	"Temperature Offset" = 0
 	#The amount of smoothing applied to gauges in the UI
 	#A value of 1 has no smoothing
@@ -18,16 +18,16 @@
 	"Body Temperature Icon Offset" = [0, 0]
 	#Enables the body temperature icon above the hotbar
 	"Show Body Temperature Icon" = true
+	#Moves the body temperature icon to make way for the advanced readout when a thermometer is equipped
+	"Move Body Icon For Advanced Info" = true
 	#The position of the body temperature readout relative to default
 	"Body Temperature Readout Offset" = [0, 0]
 	#Enables the body temperature readout above the hotbar
-	"Show Body Temperature Readout" = false
+	"Show Body Temperature Readout" = true
 	#The position of the world temperature gauge relative to default
 	"World Temperature UI Offset" = [0, 0]
 	#Enables the world temperature gauge next to the hotbar
 	"Show World Temperature Gauge" = true
-	#Moves the body temperature icon to make way for the advanced readout when a thermometer is equipped
-	"Move Body Icon For Advanced Info" = true
 
 [Accessibility]
 	#Enables visual distortion effects when the player is too hot or cold

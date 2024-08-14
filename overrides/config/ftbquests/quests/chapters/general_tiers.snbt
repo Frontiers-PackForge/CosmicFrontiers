@@ -864,7 +864,7 @@
 			id: "2DA599142ADA8636"
 			tasks: [{
 				id: "7A45F452BC837E1E"
-				item: "cosmiccore:trinavine_coil_block"
+				item: "cosmiccore:reinforced_trinavine_coil_block"
 				type: "item"
 			}]
 			x: 2.5d

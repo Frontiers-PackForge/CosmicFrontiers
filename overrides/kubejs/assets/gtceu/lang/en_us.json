@@ -346,7 +346,7 @@
   "material.gtceu.pyroflux": "Pyroflux",
   "material.gtceu.nether_star_distillate_slurry": "Nether Star Distillate Slurry",
   "material.gtceu.dull_nether_star": "Dull Nether Star",
-
+  "material.gtceu.neutronite": "Neutronite",
 
   "material.gtceu.naquadric_metallic_powder": "Naquadric Metallic Powder",
   "material.gtceu.naquadric_solution": "Naquadric Solution",
@@ -397,6 +397,7 @@
   "gtceu.leaching_plant": "Leaching Plant",
   "gtceu.fake_meteor_ritual": "Meteor Rituals",
   "block.gtceu.max_meteor_recipe_dummy": "§3Meteor Rituals",
+  "block.gtceu.large_lithographic_processor": "§3Large Lithographic Processor",
 
   "gtceu:cyanex_272": "Cyanex-272",
   "gtceu:tert_butanol": "Tert-butanol",

@@ -27,6 +27,22 @@ ServerEvents.recipes(event => {
         .itemOutputs('2x gtceu:ammonium_chloride_dust')
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.chemical_reactor('acetic_acid_reproc')
+        .itemInputs('8x gtceu:sodium_acetate_dust')
+        .inputFluids('gtceu:hydrochloric_acid 1000')
+        .itemOutputs('2x gtceu:salt_dust')
+        .outputFluids('gtceu:acetic_acid 1000')
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.HV]);
+    event.recipes.gtceu.electrolyzer('zinc_sulfate_reproc')
+        .notConsumable('gtceu:zinc_plate')
+        .itemInputs('6x gtceu:zinc_sulfate_dust')
+        .notConsumableFluid('gtceu:sulfuric_acid 1000')
+        .itemOutputs('gtceu:zinc_dust')
+        .outputFluids('gtceu:sulfur_dioxide 1000')
+        .outputFluids('gtceu:oxygen 2000')
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.chemical_bath('gtceu:chemical_bath/bathe_nickel_crushed_ore_to_purified_ore')
         .itemInputs('gtceu:crushed_nickel_ore')
         .inputFluids('gtceu:mercury 100')

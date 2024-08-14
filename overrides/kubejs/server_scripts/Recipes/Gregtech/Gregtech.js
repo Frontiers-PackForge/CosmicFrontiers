@@ -397,38 +397,39 @@ ServerEvents.recipes(event => {
     E: 'gtceu:lv_emitter',
     O: 'gtceu:lv_conveyor_module',
   })
-  //Custom Recipe Handler? - Reference - Otherwise just dump the recipe in questions JSON into event.custom()
-  let drying = (dryingoutput, dryingInput, duration) => {
-    event.custom({
-      "type": "integrateddynamics:drying_basin",
-      "item": dryingInput,
-      "duration": duration,
-      "result": { item: dryingoutput }
-    })
-  }
-  drying('create:shaft', 'create:cogwheel', 40)
+//   //Custom Recipe Handler? - Reference - Otherwise just dump the recipe in questions JSON into event.custom()
+//   let drying = (dryingoutput, dryingInput, duration) => {
+//     event.custom({
+//       "type": "integrateddynamics:drying_basin",
+//       "item": dryingInput,
+//       "duration": duration,
+//       "result": { item: dryingoutput }
+//     })
+//   }
+//   drying('create:shaft', 'create:cogwheel', 40)
 })
 
 ServerEvents.tags('block', event => {
   event.remove('aether:aether_portal_blocks', 'minecraft:glowstone'),
     event.add('aether:aether_portal_blocks', 'gtceu:frostproof_machine_casing')
+    event.add('ae2:blacklisted/spatial', 'minecraft:netherite_block')
 })
 
-ServerEvents.recipes(e => {
-  // for this code to work, kubejs:incomplete_spore_blossom needs to be added to the game
-  let inter = 'gtceu:lv_machine_hull' // making a variable to store the transitional item makes the code more readable
-  e.recipes.create.sequenced_assembly([
-    Item.of('gtceu:lv_energy_output_hatch'), // this is the item that will appear in JEI as the result
-  ], 'gtceu:lv_machine_hull', [ // 'flowering_azalea_leaves' is the input
-    // the transitional item is a variable, that is 'kubejs:incomplete_spore_blossom' and is used during the intermediate stages of the assembly
-    e.recipes.createDeploying(inter, [inter, 'gtceu:steel_spring']),
-    e.recipes.createDeploying(inter, [inter, 'gtceu:tin_spring']),
-    e.recipes.createDeploying(inter, [inter, 'gtceu:tin_spring']),
-    e.recipes.createDeploying(inter, [inter, 'gtceu:rubber_plate']),
-  ]).transitionalItem(inter).loops(2) // set the transitional item and the number of loops
+// ServerEvents.recipes(e => {
+//   // for this code to work, kubejs:incomplete_spore_blossom needs to be added to the game
+//   let inter = 'gtceu:lv_machine_hull' // making a variable to store the transitional item makes the code more readable
+//   e.recipes.create.sequenced_assembly([
+//     Item.of('gtceu:lv_energy_output_hatch'), // this is the item that will appear in JEI as the result
+//   ], 'gtceu:lv_machine_hull', [ // 'flowering_azalea_leaves' is the input
+//     // the transitional item is a variable, that is 'kubejs:incomplete_spore_blossom' and is used during the intermediate stages of the assembly
+//     e.recipes.createDeploying(inter, [inter, 'gtceu:steel_spring']),
+//     e.recipes.createDeploying(inter, [inter, 'gtceu:tin_spring']),
+//     e.recipes.createDeploying(inter, [inter, 'gtceu:tin_spring']),
+//     e.recipes.createDeploying(inter, [inter, 'gtceu:rubber_plate']),
+//   ]).transitionalItem(inter).loops(2) // set the transitional item and the number of loops
 
 
-})
+// })
 
 ServerEvents.recipes(event => {
   event.recipes.gtceu.macerator('gtceu:obsidian_dust')

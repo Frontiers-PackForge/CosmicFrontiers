@@ -14,7 +14,7 @@
 ["Mob Spawning"]
 	#Defines the biomes that Chameleons can spawn in
 	#Format: [["biome_id", weight], ["biome_id", weight], etc...]
-	"Chameleon Spawn Biomes" = [["minecraft:bamboo_jungle", 80], ["minecraft:jungle", 80], ["minecraft:sparse_jungle", 35], ["minecraft:desert", 1], ["biomesoplenty:lush_desert", 3], ["biomesoplenty:rainforest", 40], ["biomesoplenty:rocky_rainforest", 15], ["biomesoplenty:fungal_jungle", 10], ["biomesoplenty:tropics", 8], ["biomesoplenty:outback", 2], ["terralith:red_oasis", 3], ["terralith:desert_oasis", 3], ["terralith:tropical_jungle", 80], ["terralith:arid_highlands", 1.5], ["terralith:rocky_jungle", 80], ["terralith:brushland", 1.5]]
+	"Chameleon Spawn Biomes" = [["minecraft:bamboo_jungle", 80], ["minecraft:jungle", 80], ["minecraft:sparse_jungle", 35], ["minecraft:desert", 1], ["biomesoplenty:lush_desert", 3], ["biomesoplenty:rainforest", 20], ["biomesoplenty:rocky_rainforest", 15], ["biomesoplenty:fungal_jungle", 10], ["biomesoplenty:tropics", 8], ["biomesoplenty:outback", 2], ["terralith:red_oasis", 3], ["terralith:desert_oasis", 3], ["terralith:tropical_jungle", 80], ["terralith:arid_highlands", 1.5], ["terralith:rocky_jungle", 80], ["terralith:brushland", 1.5]]
 	#Defines additional biomes that goats can spawn in
 	#Format: [["biome_id", weight], ["biome_id", weight], etc...]
 	#Not affected by the "Increase Goat Spawns" option

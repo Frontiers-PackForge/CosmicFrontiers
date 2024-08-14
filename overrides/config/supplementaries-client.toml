@@ -91,13 +91,13 @@
 	[blocks.hat_stand]
 
 		[blocks.hat_stand.swing_physics]
-			frequency = 1.5
-			collision_considers_entity_hitbox = true
-			collision_inertia = 1.5
-			collision_force = 15.0
 			min_angle = 0.0
-			max_angle = 54.999996
+			collision_force = 15.0
 			damping = 1.625
+			collision_inertia = 1.5
+			collision_considers_entity_hitbox = true
+			frequency = 1.5
+			max_angle = 54.999996
 
 	[blocks.turn_table]
 		#Display visual particles when a block is rotated
@@ -129,8 +129,13 @@
 [general]
 	#Disables Optifine warn screen
 	no_optifine_warn_screen = false
+	#Disables Amendments suggestion screen
+	no_amendments_screen = true
 	#Enable Quark style config button on main menu. Needs Configured installed to work
 	config_button = false
+	#Config button Y offset
+	#Range: -10000 ~ 10000
+	config_button_y_offset = 0
 	#Show some tooltip hints to guide players through the mod
 	tooltip_hints = true
 	#Show tooltips items that have been made placeable
@@ -146,11 +151,6 @@
 	#ignore this
 	#Range: -10.0 ~ 10.0
 	test3 = 0.0
-	#Disables Amendments suggestion screen
-	no_amendments_screen = true
-	#Config button Y offset
-	#Range: -10000 ~ 10000
-	config_button_y_offset = 0
 
 #Game tweaks
 [tweaks]

@@ -213,4 +213,85 @@ event.custom({
   ],
   "syphon": 8500000
 })
+//Fat Naq
+event.recipes.gtceu.fake_meteor_ritual('naq_luv_meteor')
+.itemInputs('gtceu:luv_field_generator')
+.itemOutputsRanged('minecraft:blackstone', 500, 1500)
+.itemOutputsRanged('gtceu:raw_naquadric_metallic_powder', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_naquadah', 1000, 2500)
+.soulInput(45000000);
+event.custom({
+  "type": "bloodmagic:meteor",
+  "explosion": 30.0,
+  "input": {
+    "item": 'gtceu:luv_field_generator'
+  },
+  "layers": [
+    {
+      "additionalWeight": 0,
+      "fill": {
+        "block": "minecraft:blackstone"
+      },
+      "minWeight": 50,
+      "radius": 16,
+      "shell": {
+        "block": "minecraft:blackstone"
+      },
+      "weightMap": [
+        {
+          "block": "gtceu:blackstone_naquadric_metallic_powder_ore",
+          "weight": 85
+        },
+        {
+          "block": "gtceu:blackstone_naquadah_ore",
+          "weight": 20
+        }
+      ]
+    }
+  ],
+  "syphon": 45000000
+})
+//Tin
+event.recipes.gtceu.fake_meteor_ritual('tin_meteor')
+.itemInputs('gtceu:mv_field_generator')
+.itemOutputsRanged('minecraft:blackstone', 500, 1500)
+.itemOutputsRanged('gtceu:raw_tin', 1000, 2500)
+.itemOutputsRanged('minecraft:raw_copper', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_cassiterite_sand', 1000, 2500)
+.soulInput(2500000);
+event.custom({
+  "type": "bloodmagic:meteor",
+  "explosion": 30.0,
+  "input": {
+    "item": 'gtceu:mv_field_generator'
+  },
+  "layers": [
+    {
+      "additionalWeight": 0,
+      "fill": {
+        "block": "minecraft:blackstone"
+      },
+      "minWeight": 50,
+      "radius": 16,
+      "shell": {
+        "block": "minecraft:blackstone"
+      },
+      "weightMap": [
+        {
+          "block": "gtceu:blackstone_copper_ore",
+          "weight": 50
+        },
+        {
+          "block": "gtceu:blackstone_tin_ore",
+          "weight": 50
+        },
+        {
+          "block": "gtceu:blackstone_cassiterite_sand_ore",
+          "weight": 20
+        }
+      ]
+    }
+  ],
+  "syphon": 2500000
+})
 })

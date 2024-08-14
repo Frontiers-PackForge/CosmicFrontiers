@@ -7,3 +7,9 @@
 		#If JEI recipe filling should heuristically try to determine item tags from recipes.
 		jeiHeuristicTags = true
 
+[biome]
+
+	[biome.general]
+		#The weight of spawning in the overworld, 0 disables spawning.
+		meneglinBiomeSpawnWeight = 5
+

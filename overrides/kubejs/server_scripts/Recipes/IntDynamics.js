@@ -9,31 +9,32 @@ ServerEvents.recipes(event => {
     L: 'minecraft:leather'
   }
   )
-
+  event.remove({ mod: 'integrateddynamics' })
   //Crafting Recipes
   event.remove({ output: 'integrateddynamics:drying_basin' })
   event.remove({ output: 'integrateddynamics:mechanical_squeezer' })
   event.remove({ output: 'integrateddynamics:squeezer' })
-  event.shaped('integrateddynamics:drying_basin', [
-    'W W',
-    'T T',
-    'STS'
-  ], {
-    S: 'minecraft:smooth_stone',
-    W: 'gtceu:wrought_iron_plate',
-    T: 'gtceu:treated_wood_plate'
-  }
-  )
+  
+  // event.shaped('integrateddynamics:drying_basin', [
+  //   'W W',
+  //   'T T',
+  //   'STS'
+  // ], {
+  //   S: 'minecraft:smooth_stone',
+  //   W: 'gtceu:wrought_iron_plate',
+  //   T: 'gtceu:treated_wood_plate'
+  // }
+  // )
 
   //Custom Recipe Handler? - Reference - Otherwise just dump the recipe in questions JSON into event.custom()
-  let drying = (dryingoutput, dryingInput, duration) => {
-    event.custom({
-      "type": "integrateddynamics:drying_basin",
-      "item": dryingInput,
-      "duration": duration,
-      "result": { item: dryingoutput }
-    })
-  }
+  // let drying = (dryingoutput, dryingInput, duration) => {
+  //   event.custom({
+  //     "type": "integrateddynamics:drying_basin",
+  //     "item": dryingInput,
+  //     "duration": duration,
+  //     "result": { item: dryingoutput }
+  //   })
+  // }
 
   // drying('create:shaft','create:cogwheel',40)    
 
