@@ -143,4 +143,27 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     // GTRecipeTypes.FORGE_HAMMER_RECIPES.setMaxIOSize(1, 3, 0, 0) // FOR SOME REASON I REFUSES TO WORK!
     GTRecipeTypes.FUSION_RECIPES.setMaxIOSize(3, 3, 6, 6)
     // GTRecipeTypes.CENTRIFUGE_RECIPES.setMaxIOSize(9, 4, 10, 5)
+
+    // FOOD
+    event.create('culinary_assembler')
+        .category('frontiers')
+        .setEUIO('in')
+        .setMaxIOSize(9, 3, 3, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.REPLICATOR);
+    event.create('juicer')
+        .category('frontiers')
+        .setEUIO('in')
+        .setMaxIOSize(6, 1, 2, 1) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.REPLICATOR);
+    event.create('fryer')
+        .category('frontiers')
+        .setEUIO('in')
+        .setMaxIOSize(3, 1, 1, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.REPLICATOR);
 })
