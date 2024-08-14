@@ -1,0 +1,67 @@
+{
+	"variant": "lightning",
+	"weight": 10,
+	"quality": 0,
+	"dimensions": [
+	],
+	"bonuses": [{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "ranged_weapon",
+				"types": [
+					"bow",
+					"crossbow"
+				]
+			},
+			"attribute": "attributeslib:arrow_velocity",
+			"operation": "MULTIPLY_BASE",
+			"values": {
+				"common": 0.02,
+				"uncommon": 0.04,
+				"rare": 0.06,
+				"epic": 0.08,
+				"mythic": 0.1,
+				"ancient": 0.15
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "breaker",
+				"types": [
+					"shovel",
+					"pickaxe"
+				]
+			},
+			"attribute": "attributeslib:mining_speed",
+			"operation": "ADDITION",
+			"values": {
+				"common": 0.05,
+				"uncommon": 0.15,
+				"rare": 0.25,
+				"epic": 0.35,
+				"mythic": 0.425,
+				"ancient": 0.50
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "lower_armor",
+				"types": [
+					"boots", "leggings"
+				]
+			},
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "MULTIPLY_TOTAL",
+			"values": {
+				"common": 0.05,
+				"uncommon": 0.10,
+				"rare": 0.15,
+				"epic": 0.20,
+				"mythic": 0.25,
+				"ancient": 0.50
+			}
+		}
+	]
+}

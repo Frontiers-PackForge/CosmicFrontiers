@@ -1,0 +1,22 @@
+{
+  "conditions": [{
+    "type": "apotheosis:module",
+    "module": "village"
+  }],
+  "type": "apotheosis:basic_trade",
+  "input_1": {
+    "item": "minecraft:emerald",
+    "count": 2
+  },
+  "input_2": {
+    "item": "minecraft:air",
+    "count": 0
+  },
+  "output": {
+    "item": "minecraft:iron_horse_armor",
+    "count": 1
+  },
+  "max_trades": 3,
+  "xp": 5,
+  "price_mult": 1.0
+}

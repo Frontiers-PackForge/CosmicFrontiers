@@ -1,0 +1,51 @@
+{
+  "conditions": [{
+    "type": "apotheosis:module",
+    "module": "village"
+  }],
+  "type": "apotheosis:basic_trade",
+  "rare": true,
+  "input_1": {
+    "item": "minecraft:diamond_sword",
+    "count": 1
+  },
+  "input_2": {
+    "item": "minecraft:emerald",
+    "count": 42
+  },
+  "output": {
+    "item": "minecraft:diamond_sword",
+    "count": 1,
+    "nbt": {
+        "Enchantments": [
+            {
+                "lvl": 7,
+                "id": "minecraft:sharpness"
+            },
+            {
+                "lvl": 1,
+                "id": "minecraft:mending"
+            },
+            {
+                "lvl": 5,
+                "id": "minecraft:looting"
+            },
+            {
+                "lvl": 5,
+                "id": "minecraft:unbreaking"
+            },
+            {
+                "lvl": 5,
+                "id": "apotheosis:capturing"
+            }
+        ],
+        "display": {
+            "Name": "{\"translate\":\"name.apotheosis.merch_sword\", \"italic\": false, \"color\": \"#ADD8E6\"}"
+        },
+        "Damage": 0
+    }
+  },
+  "max_trades": 1,
+  "xp": 500,
+  "price_mult": 1.0
+}

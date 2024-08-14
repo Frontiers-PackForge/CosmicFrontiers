@@ -1,0 +1,18 @@
+{
+	"type": "apotheosis:salvaging",
+	"conditions": [{
+		"type": "apotheosis:module",
+		"module": "adventure"
+	}],
+	"input": {
+		"type": "apotheosis:gem",
+		"rarity": "apotheosis:mythic"
+	},
+	"outputs": [{
+		"min_count": 4,
+		"max_count": 7,
+		"stack": {
+			"item": "apotheosis:gem_dust"
+		}
+	}]
+}
