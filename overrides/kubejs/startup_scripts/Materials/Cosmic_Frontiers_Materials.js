@@ -473,6 +473,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(
             GTMaterialFlags.NO_SMELTING
         )
+    event.create('critical_neutron_mass')
+        .ingot()
+        .blastTemp(7500)
+        .color(0xd4973b).secondaryColor(0x181f47).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.NO_SMELTING
+        )
+    event.create('neutronic_composite')
+        .ingot()
+        .blastTemp(7500)
+        .color(0xd62e22).secondaryColor(0x181f47).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.NO_SMELTING
+        )
     event.create('resh_neutron_meld')
         .dust()
         .color(0x34dceb).iconSet(GTMaterialIconSet.DULL)
