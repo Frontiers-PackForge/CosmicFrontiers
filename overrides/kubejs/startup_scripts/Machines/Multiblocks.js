@@ -287,6 +287,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.MAINTENANCE))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
             )
             .build())
         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/mana_fluidizer', false);
@@ -332,6 +333,35 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('O', Predicates.abilities(PartAbility.EXPORT_ITEMS))
             .build())
         .workableCasingRenderer('gtceu:block/casings/hpca/computer_casing/side', 'gtceu:block/multiblock/network_switch', false);
+
+
+
+        event.create('large_lithographic_processor', 'multiblock')
+        .rotationState(RotationState.ALL)
+        .recipeType('aio_lithography_processor')
+        .appearanceBlock(GTBlocks.CASING_HSSE_STURDY)
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('TTTTTTT', 'TGGGGGT', 'TTTTTTT','TGT####','TTT####')
+            .aisle('TTTTTTT', 'GQQQQQG', 'TQTTTTT','GQG####','TTT####')
+            .aisle('TTTTTTT', 'TGGGGGT', 'TCTTTTT','TGT####','TTT####')
+            .where('#', Predicates.any())
+            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('Q', Predicates.blocks(GTBlocks.COIL_CUPRONICKEL.get()))
+            .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
+            .where('A', Predicates.air())
+            .where('T', Predicates.blocks(GTBlocks.CASING_HSSE_STURDY.get())
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
+            )
+            .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
+            .build())
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_sturdy_hsse', 'gtceu:block/machines/flora_nurturer', false);
 
 
 

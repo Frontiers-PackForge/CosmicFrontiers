@@ -1,0 +1,170 @@
+{
+  "name": "Default",
+  "author": "iChun",
+  "workspaceBackground": [
+    204,
+    204,
+    204
+  ],
+  "windowBorderActive": [
+    150,
+    150,
+    150
+  ],
+  "windowBorderInactive": [
+    140,
+    140,
+    140
+  ],
+  "windowBackground": [
+    34,
+    34,
+    34
+  ],
+  "elementButtonBackgroundInactive": [
+    60,
+    60,
+    60
+  ],
+  "elementButtonBackgroundActive": [
+    70,
+    70,
+    70
+  ],
+  "elementButtonBackgroundHover": [
+    85,
+    85,
+    85
+  ],
+  "elementButtonBorder": [
+    140,
+    140,
+    140
+  ],
+  "elementButtonClick": [
+    100,
+    100,
+    100
+  ],
+  "elementButtonToggle": [
+    120,
+    120,
+    120
+  ],
+  "elementButtonToggleHover": [
+    170,
+    170,
+    170
+  ],
+  "elementInputBackgroundInactive": [
+    60,
+    60,
+    60
+  ],
+  "elementInputBackgroundHover": [
+    70,
+    70,
+    70
+  ],
+  "elementInputBorder": [
+    140,
+    140,
+    140
+  ],
+  "elementInputUpDownHover": [
+    170,
+    170,
+    170
+  ],
+  "elementInputUpDownClick": [
+    100,
+    100,
+    100
+  ],
+  "elementListBorder": [
+    100,
+    100,
+    100
+  ],
+  "elementListItemBorder": [
+    40,
+    40,
+    40
+  ],
+  "elementListItemBackground": [
+    60,
+    60,
+    60
+  ],
+  "elementListItemBackgroundSelect": [
+    100,
+    100,
+    100
+  ],
+  "elementListItemBackgroundHover": [
+    120,
+    120,
+    120
+  ],
+  "elementTabHover": [
+    80,
+    80,
+    80
+  ],
+  "elementTabBackgroundActive": [
+    60,
+    60,
+    60
+  ],
+  "elementTabBorderActive": [
+    255,
+    255,
+    255
+  ],
+  "elementTabBackgroundInactive": [
+    34,
+    34,
+    34
+  ],
+  "elementTabBorderInactive": [
+    100,
+    100,
+    100
+  ],
+  "elementScrollBar": [
+    34,
+    34,
+    34
+  ],
+  "elementScrollBarBorder": [
+    60,
+    60,
+    60
+  ],
+  "elementScrollBarBackground": [
+    34,
+    34,
+    34
+  ],
+  "font": [
+    255,
+    255,
+    255
+  ],
+  "fontLight": [
+    220,
+    220,
+    220
+  ],
+  "fontMid": [
+    185,
+    185,
+    185
+  ],
+  "fontDim": [
+    150,
+    150,
+    150
+  ],
+  "workspaceBlock": "minecraft:spruce_planks"
+}

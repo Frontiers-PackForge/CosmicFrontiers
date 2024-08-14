@@ -102,39 +102,39 @@ ServerEvents.recipes(event => {
         B: 'minecraft:blackstone',
         F: 'minecraft:flint'
     })
-    //Ender's Delight
-    event.remove({ output:'endersdelight:endstone_stove' })
-    event.shaped( 'endersdelight:endstone_stove', [
-        'OOO',
-        'EHE',
-        'EBE'
-    ], {
-        O: 'gtceu:obsidian_plate',
-        E: 'minecraft:end_stone_bricks',
-        B: 'minecraft:dragon_breath',
-        H: '#forge:tools/hammers'
-    })
-    //Miner's Delight
-    event.remove({ output:'miners_delight:copper_pot'})
-    event.shaped('miners_delight:copper_pot', [
-        'LSL',
-        'PHP',
-        'PPP'
-    ], {
-        L: 'betterend:leather_wrapped_stick',
-        S: 'minecraft:wooden_shovel',
-        P: 'gtceu:copper_plate',
-        H: '#forge:tools/hammers'
-    })
-    event.remove({ output:'miners_delight:copper_cup'})
-    event.shaped('miners_delight:copper_cup', [
-        'PHP',
-        ' P ',
-        '   '
-    ], {
-        P: 'gtceu:copper_plate',
-        H: '#forge:tools/hammers'
-    })
+    // //Ender's Delight
+    // event.remove({ output:'endersdelight:endstone_stove' })
+    // event.shaped( 'endersdelight:endstone_stove', [
+    //     'OOO',
+    //     'EHE',
+    //     'EBE'
+    // ], {
+    //     O: 'gtceu:obsidian_plate',
+    //     E: 'minecraft:end_stone_bricks',
+    //     B: 'minecraft:dragon_breath',
+    //     H: '#forge:tools/hammers'
+    // })
+    // //Miner's Delight
+    // event.remove({ output:'miners_delight:copper_pot'})
+    // event.shaped('miners_delight:copper_pot', [
+    //     'LSL',
+    //     'PHP',
+    //     'PPP'
+    // ], {
+    //     L: 'betterend:leather_wrapped_stick',
+    //     S: 'minecraft:wooden_shovel',
+    //     P: 'gtceu:copper_plate',
+    //     H: '#forge:tools/hammers'
+    // })
+    // event.remove({ output:'miners_delight:copper_cup'})
+    // event.shaped('miners_delight:copper_cup', [
+    //     'PHP',
+    //     ' P ',
+    //     '   '
+    // ], {
+    //     P: 'gtceu:copper_plate',
+    //     H: '#forge:tools/hammers'
+    // })
     //Vintage Delight
     event.remove({ output:'vintagedelight:cheese_mold' })
     event.shaped('vintagedelight:cheese_mold', [
@@ -167,20 +167,20 @@ ServerEvents.recipes(event => {
     event.shapeless('6x vintagedelight:salt_dust', [
         '2x gtceu:salt_dust'
     ])
-    //Crabber's Delight
-    event.remove({ output: 'crabbersdelight:crab_trap' })
-    event.shaped('crabbersdelight:crab_trap', [
-        'NFN',
-        'SDS',
-        'WWW'
-    ], {
-        N: 'farmersdelight:safety_net',
-        F: 'gtceu:treated_wood_frame',
-        S: 'gtceu:wood_screw',
-        D: '#forge:tools/screwdrivers',
-        W: '#minecraft:wooden_slabs'
+    // //Crabber's Delight
+    // event.remove({ output: 'crabbersdelight:crab_trap' })
+    // event.shaped('crabbersdelight:crab_trap', [
+    //     'NFN',
+    //     'SDS',
+    //     'WWW'
+    // ], {
+    //     N: 'farmersdelight:safety_net',
+    //     F: 'gtceu:treated_wood_frame',
+    //     S: 'gtceu:wood_screw',
+    //     D: '#forge:tools/screwdrivers',
+    //     W: '#minecraft:wooden_slabs'
 
-    })
+    // })
 
 })
 

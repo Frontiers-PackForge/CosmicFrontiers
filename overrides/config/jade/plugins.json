@@ -63,8 +63,10 @@
     "hud.contents": true
   },
   "gtceu": {
+    "primitive_pump": true,
     "auto_output_info": true,
     "workable_provider": true,
+    "transformer": true,
     "controllable_provider": true,
     "exhaust_vent_info": true,
     "multiblock_structure": true,
@@ -98,16 +100,8 @@
     "ench": true,
     "spawner": true
   },
-  "monazite": {
-    "maintenance_info": true,
-    "auto_output_info": true,
-    "machine_mode": true,
-    "parallel": true,
-    "stained_color": true,
-    "recipe_output_info": true,
-    "exhaust_vent_info": true,
-    "cable_info": true,
-    "multiblock_structure": true
+  "lootr": {
+    "info": true
   },
   "ae2": {
     "part_icon": true,
@@ -121,35 +115,32 @@
     "crafting_monitor": true,
     "part_name": true
   },
-  "extendedcrafting": {
-    "elite_auto_table": true,
-    "ender_crafter": true,
-    "basic_auto_table": true,
-    "flux_crafter": true,
-    "advanced_table": true,
-    "auto_ender_crafter": true,
-    "ultimate_table": true,
-    "ultimate_auto_table": true,
-    "elite_table": true,
-    "basic_table": true,
-    "crafting_core": true,
-    "advanced_auto_table": true,
-    "compressor": true
-  },
   "ars_nouveau": {
     "mob_jar": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
   },
   "shetiphiancore": {
     "hud.rgb16": true,
     "hud": true,
     "hud.redstone": true
   },
-  "autoleveling": {
-    "level": true
-  },
   "delightful": {
     "crop_progress": true,
-    "pie_icons": true
+    "pie_icons": true,
+    "mushroom_colony": true
+  },
+  "create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "crafting_blueprint": true,
+    "goggles.detailed": false,
+    "placard": true
   },
   "supplementaries": {
     "hat_stand": true

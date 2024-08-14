@@ -10,15 +10,17 @@
 	Capacity = 100000000
 
 ["Enlightened Amulet Range"]
-	#The range of the enlightened amulet. Accepts decimals. Default = 8.0.
-	#Range: 1.0 ~ 32.0
+	#The range of the enlightened amulet in blocks. Accepts decimals. Default = 8.0.
+	#Range: 1.0 ~ 16.0
 	Range = 8.0
+
+["Staff of Attunement Range"]
+	#The binding range of the Staff of Attunement in blocks. Accepts decimals. Default = 48.0.
+	#Lower this if you experience issues with bound blocks not working correctly.
+	#Range: 4.0 ~ 100.0
+	Range = 48.0
 
 ["Enable Name Formatting Anvil Recipes"]
 	#Whether custom recipes that allow for the changing of item name color & formatting are enabled
 	Formatting = true
-
-["Enable Anvil Repair Recipes"]
-	#Whether custom recipes that allow for the repairing of anvils with iron ingots are allowed
-	AnvilRepair = true
 

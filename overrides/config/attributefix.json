@@ -1,16 +1,5 @@
 {
   "attributes": {
-    "obscure_api:penetration": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "forge:step_height_addition": {
       "enabled": false,
       "min": {
@@ -31,17 +20,6 @@
       "max": {
         "default": 1000,
         "value": 1000
-      }
-    },
-    "epicparagliders:longsword_stamina_reduction": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
       }
     },
     "minecraft:generic.follow_range": {
@@ -66,523 +44,6 @@
         "value": 1
       }
     },
-    "obscure_api:dodge": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "attributeslib:armor_shred": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2,
-        "value": 2
-      }
-    },
-    "epicparagliders:weapon_type": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1000,
-        "value": 1000
-      }
-    },
-    "epicfight:offhand_armor_negation": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "attributeslib:armor_pierce": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1000,
-        "value": 1000
-      }
-    },
-    "obscure_api:regeneration": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100000,
-        "value": 100000
-      }
-    },
-    "epicfight:stamina_regen": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "cold_sweat:heat_resistance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
-    "minecraft:generic.luck": {
-      "enabled": true,
-      "min": {
-        "default": -1024,
-        "value": -1024
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "epicparagliders:weapon_stamina_consumption": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1000,
-        "value": 1000
-      }
-    },
-    "epicfight:execution_resistance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
-    "forge:entity_reach": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "obscure_api:magic_resistance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "epicparagliders:knuckle_stamina_reduction": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
-    "epicfight:offhand_impact": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "minecraft:zombie.spawn_reinforcements": {
-      "enabled": true,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
-    "attributeslib:crit_chance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
-    "ars_nouveau:ars_nouveau.perk.wixie": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "minecraft:generic.armor_toughness": {
-      "enabled": true,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 1000000
-      }
-    },
-    "obscure_api:accuracy": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "forge:block_reach": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "minecraft:generic.attack_speed": {
-      "enabled": true,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "epicparagliders:default_stamina_reduction": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
-    "skilltree:evasion": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 90,
-        "value": 90
-      }
-    },
-    "epicfight:staminar": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "epicparagliders:greatsword_stamina_reduction": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
-    "cold_sweat:world_temperature": {
-      "enabled": false,
-      "min": {
-        "default": NaN,
-        "value": NaN
-      },
-      "max": {
-        "default": Infinity,
-        "value": Infinity
-      }
-    },
-    "epicparagliders:spear_stamina_reduction": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
-    "attributeslib:prot_pierce": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 34,
-        "value": 34
-      }
-    },
-    "minecraft:generic.flying_speed": {
-      "enabled": true,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "epicfight:stun_armor": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "epicfight:offhand_max_strikes": {
-      "enabled": false,
-      "min": {
-        "default": 1,
-        "value": 1
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "attributeslib:mining_speed": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
-    "caelus:fall_flying": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
-    "ars_nouveau:ars_nouveau.perk.max_mana": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10000,
-        "value": 10000
-      }
-    },
-    "botania:pixie_spawn_chance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
-    "obscure_api:critical_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "minecraft:generic.max_health": {
-      "enabled": true,
-      "min": {
-        "default": 1,
-        "value": 1
-      },
-      "max": {
-        "default": 1024,
-        "value": 1000000
-      }
-    },
-    "epicfight:offhand_attack_speed": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "skilltree:stealth": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 90,
-        "value": 90
-      }
-    },
-    "epicparagliders:block_stamina_reduction": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
-    "minecraft:horse.jump_strength": {
-      "enabled": true,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2,
-        "value": 2
-      }
-    },
-    "ars_nouveau:ars_nouveau.perk.spell_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10000,
-        "value": 10000
-      }
-    },
-    "autoleveling:monster.projectile_damage_bonus": {
-      "enabled": false,
-      "min": {
-        "default": 1,
-        "value": 1
-      },
-      "max": {
-        "default": 1000,
-        "value": 1000
-      }
-    },
-    "ars_nouveau:ars_nouveau.perk.warding": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "minecraft:generic.knockback_resistance": {
-      "enabled": true,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
-    "epicparagliders:dagger_stamina_reduction": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "attributeslib:overheal": {
       "enabled": false,
       "min": {
@@ -594,15 +55,15 @@
         "value": 10
       }
     },
-    "epicfight:weight": {
+    "attributeslib:armor_shred": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 1024,
-        "value": 1024
+        "default": 2,
+        "value": 2
       }
     },
     "attributeslib:healing_received": {
@@ -627,17 +88,6 @@
         "value": 8
       }
     },
-    "obscure_api:resilience": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "cold_sweat:base_temperature": {
       "enabled": false,
       "min": {
@@ -647,6 +97,28 @@
       "max": {
         "default": Infinity,
         "value": Infinity
+      }
+    },
+    "attributeslib:armor_pierce": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
+    "cold_sweat:heat_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "attributeslib:cold_damage": {
@@ -671,15 +143,26 @@
         "value": 1000
       }
     },
-    "skilltree:exp_per_minute": {
+    "minecraft:generic.luck": {
+      "enabled": true,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "forge:entity_reach": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 1024,
+        "value": 1024
       }
     },
     "ars_nouveau:ars_nouveau.perk.saturation": {
@@ -691,17 +174,6 @@
       "max": {
         "default": 10000,
         "value": 10000
-      }
-    },
-    "obscure_api:magic_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100000,
-        "value": 100000
       }
     },
     "cold_sweat:cold_dampening": {
@@ -726,17 +198,6 @@
         "value": 2
       }
     },
-    "obscure_api:healing_power": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "cold_sweat:heat_dampening": {
       "enabled": false,
       "min": {
@@ -759,15 +220,15 @@
         "value": 1
       }
     },
-    "parcool:stamina_recovery": {
-      "enabled": false,
+    "minecraft:zombie.spawn_reinforcements": {
+      "enabled": true,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 10000,
-        "value": 10000
+        "default": 1,
+        "value": 1
       }
     },
     "attributeslib:fire_damage": {
@@ -781,17 +242,6 @@
         "value": 1000
       }
     },
-    "epicparagliders:dodge_stamina_reduction": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "minecraft:generic.attack_knockback": {
       "enabled": true,
       "min": {
@@ -801,6 +251,17 @@
       "max": {
         "default": 5,
         "value": 1000000
+      }
+    },
+    "attributeslib:crit_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "cold_sweat:freezing_point": {
@@ -825,15 +286,26 @@
         "value": 1024
       }
     },
-    "skilltree:regeneration": {
+    "ars_nouveau:ars_nouveau.perk.wixie": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "minecraft:generic.armor_toughness": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
         "default": 100,
-        "value": 100
+        "value": 1000000
       }
     },
     "attributeslib:crit_damage": {
@@ -847,28 +319,6 @@
         "value": 100
       }
     },
-    "epicfight:impact": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "epicparagliders:sword_stamina_reduction": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "forge:nametag_distance": {
       "enabled": false,
       "min": {
@@ -880,15 +330,26 @@
         "value": 64
       }
     },
-    "obscure_api:parry": {
+    "forge:block_reach": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "minecraft:generic.attack_speed": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "ars_nouveau:ars_nouveau.perk.mana_regen": {
@@ -924,17 +385,6 @@
         "value": 4
       }
     },
-    "epicparagliders:axe_stamina_reduction": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "ars_nouveau:ars_nouveau.perk.feather": {
       "enabled": false,
       "min": {
@@ -946,15 +396,15 @@
         "value": 1
       }
     },
-    "epicparagliders:uchigatana_stamina_reduction": {
+    "cold_sweat:world_temperature": {
       "enabled": false,
       "min": {
-        "default": 0,
-        "value": 0
+        "default": NaN,
+        "value": NaN
       },
       "max": {
-        "default": 10,
-        "value": 10
+        "default": Infinity,
+        "value": Infinity
       }
     },
     "minecraft:generic.armor": {
@@ -968,26 +418,26 @@
         "value": 1000000
       }
     },
-    "obscure_api:critical_hit": {
+    "attributeslib:prot_pierce": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 34,
+        "value": 34
       }
     },
-    "autoleveling:monster.explosion_damage_bonus": {
-      "enabled": false,
+    "minecraft:generic.flying_speed": {
+      "enabled": true,
       "min": {
-        "default": 1,
-        "value": 1
+        "default": 0,
+        "value": 0
       },
       "max": {
-        "default": 1000,
-        "value": 1000
+        "default": 1024,
+        "value": 1024
       }
     },
     "attributeslib:current_hp_damage": {
@@ -1001,6 +451,17 @@
         "value": 1
       }
     },
+    "attributeslib:mining_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "minecraft:generic.movement_speed": {
       "enabled": true,
       "min": {
@@ -1010,6 +471,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "ars_nouveau:ars_nouveau.perk.max_mana": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
       }
     },
     "cold_sweat:cold_resistance": {
@@ -1023,6 +495,28 @@
         "value": 1
       }
     },
+    "botania:pixie_spawn_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "minecraft:generic.max_health": {
+      "enabled": true,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 1024,
+        "value": 1000000
+      }
+    },
     "cold_sweat:burning_point": {
       "enabled": false,
       "min": {
@@ -1032,50 +526,6 @@
       "max": {
         "default": Infinity,
         "value": Infinity
-      }
-    },
-    "skilltree:blocking": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 90,
-        "value": 90
-      }
-    },
-    "epicfight:max_strikes": {
-      "enabled": false,
-      "min": {
-        "default": 1,
-        "value": 1
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "epicparagliders:tachi_stamina_reduction": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
-    "epicfight:armor_negation": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
       }
     },
     "attributeslib:arrow_damage": {
@@ -1089,15 +539,15 @@
         "value": 10
       }
     },
-    "parcool:max_stamina": {
-      "enabled": false,
+    "minecraft:horse.jump_strength": {
+      "enabled": true,
       "min": {
-        "default": 10,
-        "value": 10
+        "default": 0,
+        "value": 0
       },
       "max": {
-        "default": 10000,
-        "value": 10000
+        "default": 2,
+        "value": 2
       }
     },
     "attributeslib:arrow_velocity": {
@@ -1109,6 +559,39 @@
       "max": {
         "default": 10,
         "value": 10
+      }
+    },
+    "ars_nouveau:ars_nouveau.perk.spell_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
+      }
+    },
+    "ars_nouveau:ars_nouveau.perk.warding": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "minecraft:generic.knockback_resistance": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "attributeslib:life_steal": {

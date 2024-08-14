@@ -1,4 +1,4 @@
-Platform.mods.kubejs.name = 'Cosmic Core'
+Platform.mods.kubejs.name = 'Cosmic Core KubeJS'
 function registerAntiblock(event, color, color_displayname) {
     event.create(`cosmiccore:antiblock_${color}`)
         .displayName(`${color_displayname} Antiblock`)

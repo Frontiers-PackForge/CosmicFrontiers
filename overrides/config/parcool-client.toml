@@ -45,7 +45,7 @@
 	#Enable custom animations
 	enable_animation = true
 	#Enable custom animation of falling
-	enable_falling_animation = true
+	enable_falling_animation = false
 	#Enable first-person-view animations
 	enable_fov_animation = true
 	#Enable rotation of camera by Dodge
@@ -151,7 +151,7 @@
 	#Enable sounds triggered by Action
 	enable_sounds = true
 	#Whether ParCool is active
-	parcool_activation = true
+	parcool_activation = false
 
 [Stamina]
 	#Allowed Values: Default, Hunger, Feathers, Paraglider, EpicFight

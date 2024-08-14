@@ -621,11 +621,11 @@ ServerEvents.recipes(event => {
     signpost('3x supplementaries:biomesoplenty/sign_post_palm', 'biomesoplenty:palm_planks');
     signpost('3x supplementaries:ad_astra/sign_post_glacian', 'ad_astra:glacian_planks');
     signpost('3x supplementaries:aether/sign_post_skyroot', 'aether:skyroot_planks');
-    signpost('3x supplementaries:deep_aether/sign_post_roseroot', 'deep_aether:roseroot_planks');
-    signpost('3x supplementaries:deep_aether/sign_post_yagroot', 'deep_aether:yagroot_planks');
-    signpost('3x supplementaries:deep_aether/sign_post_cruderoot', 'deep_aether:cruderoot_planks');
-    signpost('3x supplementaries:deep_aether/sign_post_conberry', 'deep_aether:conberry_planks');
-    signpost('3x supplementaries:deep_aether/sign_post_sunroot', 'deep_aether:sunroot_planks');
+    // signpost('3x supplementaries:deep_aether/sign_post_roseroot', 'deep_aether:roseroot_planks');
+    // signpost('3x supplementaries:deep_aether/sign_post_yagroot', 'deep_aether:yagroot_planks');
+    // signpost('3x supplementaries:deep_aether/sign_post_cruderoot', 'deep_aether:cruderoot_planks');
+    // signpost('3x supplementaries:deep_aether/sign_post_conberry', 'deep_aether:conberry_planks');
+    // signpost('3x supplementaries:deep_aether/sign_post_sunroot', 'deep_aether:sunroot_planks');
     signpost('3x supplementaries:undergarden/sign_post_smogstem', 'undergarden:smogstem_planks');
     signpost('3x supplementaries:undergarden/sign_post_wigglewood', 'undergarden:wigglewood_planks');
     signpost('3x supplementaries:undergarden/sign_post_grongle', 'undergarden:grongle_planks');

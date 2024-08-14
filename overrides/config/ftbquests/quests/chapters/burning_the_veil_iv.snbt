@@ -691,6 +691,7 @@
 				"4DA37DF15D6955C2"
 				"52DAB014D2101F02"
 			]
+			hide: true
 			hide_dependency_lines: true
 			id: "2275BD1700FF037F"
 			subtitle: "Have You Finished Platline?"
@@ -1194,6 +1195,8 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
 			id: "350222013080795B"
 			tasks: [{
 				id: "70D8CF742F7A1883"

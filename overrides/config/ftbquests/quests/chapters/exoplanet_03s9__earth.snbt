@@ -198,6 +198,7 @@
 				"FTB:Ultimine &4&lDOES NOT&r work on GTCEU Ores, this functionality has been disabled to encourage Hammers and Miners. A few other blocks have also been blacklisted."
 				""
 				"I'm also giving you an unbreakable hammer to help with clearing of blocks"
+				"Yes, It is 'weirdly durable', You could take this hammer to the end of time with you."
 			]
 			id: "5693AA8924634F44"
 			rewards: [{
@@ -232,16 +233,8 @@
 			}]
 			subtitle: "I don't care how you get it."
 			tasks: [{
-				id: "6CB970E0EDD5DCFA"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "item_tag(forge:raw_materials)"
-					}
-				}
-				title: "Any Ore"
-				type: "item"
+				id: "08C287391F806DE9"
+				type: "checkmark"
 			}]
 			title: "FTB: Ultimine and You"
 			x: 6.5d

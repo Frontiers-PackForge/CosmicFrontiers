@@ -20,4 +20,20 @@ sleepingBagBreakChanceLuckMultiplier = 0.0
 #The status effects to apply to players after using the sleeping bag.
 #Format: effect;duration(secs);power
 sleepingBagEffects = []
+#What percentage of players must sleep to skip the day.
+#A percentage value of 0 will allow the day to be skipped by just 1 player, and a percentage value of 100 will require all players to sleep before skipping the day.
+#A value of less than 0 will default to the playerSleepingPercentage game rule.
+#
+#Range: -1 ~ 100
+daySleepingPercentage = -1
+#The amount of time, in ticks, to add or remove from the new time after sleeping through a night.
+#Range: -2000 ~ 2000
+dayWakeTimeOffset = 0
+#The amount of time, in ticks, to add or remove from the new time after sleeping through a day.
+#Range: -2000 ~ 2000
+nightWakeTimeOffset = 0
+#If enabled, attempting to sleep in hammocks stops phantoms from spawning.
+hammocksStopPhantoms = true
+#If enabled, attempting to sleep in sleeping bags stops phantoms from spawning.
+sleepingBagsStopPhantoms = true
 
