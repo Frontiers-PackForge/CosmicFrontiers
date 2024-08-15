@@ -35,17 +35,45 @@ ServerEvents.recipes(event => {
         .duration(400);
 
     ['croptopia:olive_oil', 'croptopia:soy_sauce'].forEach((flavor) => {
-        let fluid = flavor.split(':')[1]
         event.recipes.gtceu.canner(flavor)
-            .inputFluids(`gtceu:${fluid} 100`)
+            .inputFluids(`${flavor} 100`)
             .itemOutputs(flavor)
             .EUt(GTValues.VA[GTValues.LV])
             .duration(400)
 
         event.recipes.gtceu.extractor(`${flavor}_bottle`)
             .itemInputs(flavor)
-            .outputFluids(`gtceu:${fluid} 100`)
+            .outputFluids(`${flavor} 100`)
             .EUt(GTValues.VA[GTValues.LV])
             .duration(400)
     });
+
+    ['minecraft:water', 'minecraft:milk'].forEach((flavor) => {
+        let fluid = flavor.split(':')[1]
+        event.recipes.gtceu.canner(flavor)
+            .inputFluids(`${flavor} 100`)
+            .itemOutputs(`croptopia:${fluid}_bottle`)
+            .EUt(GTValues.VA[GTValues.LV])
+            .duration(400)
+
+        event.recipes.gtceu.extractor(`${flavor}_bottle`)
+            .itemInputs(`croptopia:${fluid}_bottle`)
+            .outputFluids(`${flavor} 100`)
+            .EUt(GTValues.VA[GTValues.LV])
+            .duration(400)
+    });
+
+    event.recipes.gtceu.mixer('croptopia:whipping_cream')
+        .itemInputs('minecraft:sugar', 'croptopia:vanilla')
+        .inputFluids('minecraft:milk 100')
+        .itemOutputs('4x croptopia:whipping_cream')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.mixer('croptopia:mashed_potatoes')
+        .itemInputs('minecraft:potato', '#forge:salt')
+        .inputFluids(`minecraft:milk 100`)
+        .itemOutputs('croptopia:mashed_potatoes')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
 })

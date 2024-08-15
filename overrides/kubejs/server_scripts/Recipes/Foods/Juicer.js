@@ -18,13 +18,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.juicer(`croptopia:soy_sauce`)
         .itemInputs('croptopia:soybean')
         .inputFluids('minecraft:water 100')
-        .outputFluids('gtceu:soy_sauce 100')
+        .outputFluids('croptopia:soy_sauce 100')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV]);
 
-    event.recipes.gtceu.juicer(`gtceu:olive_oil`)
+    event.recipes.gtceu.juicer(`croptopia:olive_oil`)
         .itemInputs('2x croptopia:olive')
-        .outputFluids('gtceu:olive_oil 100')
+        .outputFluids('croptopia:olive_oil 100')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV]);
 
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.juicer(`croptopia:soy_milk`)
         .itemInputs('minecraft:glass_bottle', 'croptopia:soybean')
-        .outputFluids('gtceu:soy_milk 100')
+        .outputFluids('croptopia:soy_milk 100')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV]);
 
@@ -77,6 +77,13 @@ ServerEvents.recipes(event => {
         .itemInputs('4x croptopia:peanut')
         .itemOutputs(`4x croptopia:peanut_butter`)
         .duration(200)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    event.recipes.gtceu.juicer(`farmersdelight:tomato_sauce`)
+        .itemInputs('2x #forge:tomatoes')
+        .itemOutputs(`farmersdelight:tomato_sauce`)
+        .duration(200)
+        .circuit(1)
         .EUt(GTValues.VA[GTValues.LV]);
 
 })

@@ -10,7 +10,7 @@ ServerEvents.tags('fluid', event => {
 })
 
 ServerEvents.tags('fluids', event => {
-    event.add('forge:milk', 'gtceu:soy_milk')
+    event.add('forge:milk', 'croptopia:soy_milk')
     event.add('forge:milk', 'gtceu:milk')
     event.add('forge:milk', 'minecraft:milk')
 })

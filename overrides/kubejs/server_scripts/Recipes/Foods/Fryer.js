@@ -3,21 +3,21 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.fryer('croptopia:kale_chips')
         .itemInputs(['croptopia:kale', '#forge:salt'])
-        .inputFluids('gtceu:olive_oil 50')
+        .inputFluids('croptopia:olive_oil 50')
         .itemOutputs('croptopia:kale_chips')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(400)
 
     event.recipes.gtceu.fryer('croptopia:potato_chips')
         .itemInputs(['minecraft:potato', '#forge:salt'])
-        .inputFluids('gtceu:olive_oil 50')
+        .inputFluids('croptopia:olive_oil 50')
         .itemOutputs('croptopia:potato_chips')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(400)
 
     event.recipes.gtceu.fryer('croptopia:french_fries')
         .itemInputs(['minecraft:potato', '#forge:salt'])
-        .inputFluids('gtceu:olive_oil 50')
+        .inputFluids('croptopia:olive_oil 50')
         .itemOutputs('croptopia:french_fries')
         .circuit(1)
         .EUt(GTValues.VA[GTValues.LV])
@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.fryer('croptopia:sweet_potato_fries')
         .itemInputs(['croptopia:sweetpotato', '#forge:salt'])
-        .inputFluids('gtceu:olive_oil 50')
+        .inputFluids('croptopia:olive_oil 50')
         .itemOutputs('croptopia:sweet_potato_fries')
         .circuit(1)
         .EUt(GTValues.VA[GTValues.LV])
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.fryer('croptopia:onion_rings')
         .itemInputs('#forge:onions', '#forge:salt', '#forge:flour', 'minecraft:bowl')
-        .inputFluids('gtceu:olive_oil 50')
+        .inputFluids('croptopia:olive_oil 50')
         .itemOutputs('croptopia:onion_rings')
         .circuit(1)
         .EUt(GTValues.VA[GTValues.LV])
@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.fryer('croptopia:fried_chicken')
         .itemInputs('#forge:flour', '#forge:raw_chicken', 'croptopia:chile_pepper')
-        .inputFluids('gtceu:olive_oil 50')
+        .inputFluids('croptopia:olive_oil 50')
         .itemOutputs('croptopia:fried_chicken')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(400)

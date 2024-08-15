@@ -53,5 +53,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeType('fryer', true, true)
         .rotationState(RotationState.NON_Y_AXIS)
         .workableTieredHullRenderer(GTCEu.id("block/machines/mana_fluidizer"))
+    event.create('food_cutter', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV)
+        .recipeType('food_cutter', true, true)
+        .rotationState(RotationState.NON_Y_AXIS)
+        .workableTieredHullRenderer(GTCEu.id("block/machines/cutter"))
 
 })
