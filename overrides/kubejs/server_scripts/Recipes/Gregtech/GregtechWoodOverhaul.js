@@ -937,4 +937,84 @@ ServerEvents.recipes(event => {
                 S: 'minecraft:flint'
             })  
     }
+
+    // Farmer's Delight Signs
+    if (Item.exists(`ars_nouveau:archwood_sign`)) {
+        event.recipes.gtceu.assembler(`ars_nouveau:archwood_sign`)
+            .itemInputs([`6x ars_nouveau:archwood_planks`, 'minecraft:stick'])
+            .itemOutputs(`4x ars_nouveau:archwood_sign`)
+            .circuit(3)
+            .duration(100)
+            .EUt(4);
+        event.shaped(`2x ars_nouveau:archwood_sign`, [
+                'PPP',
+                'PPP',
+                'FSW'
+            ],
+            {
+                P: `ars_nouveau:archwood_planks`,
+                W: `#forge:tools/saws`,
+                S: 'minecraft:stick',
+                F: '#forge:tools/files',
+            })
+    }
+
+    //Farm's Delight Signs
+    event.recipes.gtceu.assembler(`farmersdelight:hanging_canvas_sign`)
+        .itemInputs(['4x #minecraft:planks', '2x farmersdelight:canvas', 'minecraft:chain'])
+        .itemOutputs(`2x farmersdelight:hanging_canvas_sign`)
+        .circuit(4)
+        .duration(100)
+        .EUt(4);
+    event.shaped(`2x farmersdelight:hanging_canvas_sign`, [
+            'SRS',
+            'PCP',
+            'PCP'
+        ],
+        {
+            P: `#minecraft:planks`,
+            S: 'minecraft:chain',
+            R: 'gtceu:iron_ring',
+            C: 'farmersdelight:canvas'
+        });
+
+    event.recipes.gtceu.assembler(`farmersdelight:canvas_sign`)
+        .itemInputs([`4x #minecraft:planks`, '2x farmersdelight:canvas', 'minecraft:stick'])
+        .itemOutputs(`4x farmersdelight:canvas_sign`)
+        .circuit(3)
+        .duration(100)
+        .EUt(4);
+
+    event.shaped(`2x farmersdelight:canvas_sign`, [
+            'PCP',
+            'PCP',
+            'FSW'
+        ],
+        {
+            P: `#minecraft:planks`,
+            W: `#forge:tools/saws`,
+            S: 'minecraft:stick',
+            F: '#forge:tools/files',
+            C: 'farmersdelight:canvas'
+        });
+
+    ['white', 'light_gray', 'gray', 'black', 'brown', 'red', 'orange', 'yellow', 'lime', 'green', 'cyan', 'light_blue', 'blue', 'purple', 'magenta', 'pink'].forEach((color) => {
+        event.shapeless(`farmersdelight:${color}_canvas_sign`,
+            [`minecraft:${color}_dye`, 'farmersdelight:canvas_sign']
+        );
+        event.shapeless(`farmersdelight:${color}_hanging_canvas_sign`,
+            [`minecraft:${color}_dye`, 'farmersdelight:hanging_canvas_sign']
+        )
+        event.recipes.gtceu.assembler(`farmersdelight:${color}_canvas_sign`)
+            .itemInputs(['farmersdelight:canvas_sign', `minecraft:${color}_dye`])
+            .itemOutputs(`farmersdelight:${color}_canvas_sign`)
+            .duration(100)
+            .EUt(4);
+        event.recipes.gtceu.assembler(`farmersdelight:${color}_hanging_canvas_sign`)
+            .itemInputs(['farmersdelight:hanging_canvas_sign', `minecraft:${color}_dye`])
+            .itemOutputs(`farmersdelight:${color}_hanging_canvas_sign`)
+            .duration(100)
+            .EUt(4);
+    });
+
 })
