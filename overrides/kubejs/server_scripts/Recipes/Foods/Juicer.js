@@ -86,4 +86,11 @@ ServerEvents.recipes(event => {
         .circuit(1)
         .EUt(GTValues.VA[GTValues.LV]);
 
+    event.recipes.gtceu.juicer(`farmersdelight:melon_juice`)
+        .itemInputs('4x minecraft:melon_slice', 'minecraft:sugar', 'minecraft:glass_bottle')
+        .itemOutputs(`farmersdelight:melon_juice`)
+        .duration(200)
+        .circuit(1)
+        .EUt(GTValues.VA[GTValues.LV]);
+
 })

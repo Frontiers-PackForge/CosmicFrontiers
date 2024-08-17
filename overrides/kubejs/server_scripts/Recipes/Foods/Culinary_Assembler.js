@@ -992,4 +992,214 @@ ServerEvents.recipes(event => {
         .itemOutputs('croptopia:the_big_breakfast')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(400);
+
+    //Farmer's Delight
+    event.recipes.gtceu.culinary_assembler('farmersdelight:hot_cocoa')
+        .itemInputs('2x minecraft:cocoa_beans', 'minecraft:sugar', 'minecraft:glass_bottle')
+        .inputFluids('minecraft:milk 100')
+        .itemOutputs('farmersdelight:hot_cocoa')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+    
+    event.recipes.gtceu.culinary_assembler('farmersdelight:apple_cider')
+        .itemInputs('2x minecraft:apple', 'minecraft:sugar', 'minecraft:glass_bottle')
+        .itemOutputs('farmersdelight:apple_cider')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:apple_pie')
+        .itemInputs('3x minecraft:wheat', '3x minecraft:apple', '2x minecraft:sugar', 'farmersdelight:pie_crust')
+        .itemOutputs('farmersdelight:apple_pie')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:sweet_berry_cheesecake')
+        .itemInputs('6x minecraft:sweet_berries', '#forge:cheese', 'farmersdelight:pie_crust')
+        .inputFluids('minecraft:milk 100')
+        .itemOutputs('farmersdelight:sweet_berry_cheesecake')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:chocolate_pie')
+        .itemInputs('2x minecraft:sugar', '3x #forge:chocolate', 'farmersdelight:pie_crust')
+        .inputFluids('minecraft:milk 300')
+        .itemOutputs('farmersdelight:chocolate_pie')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:sweet_berry_cookie')
+        .itemInputs('minecraft:sweet_berries', '2x minecraft:wheat')
+        .itemOutputs('8x farmersdelight:sweet_berry_cookie')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:honey_cookie')
+        .itemInputs('minecraft:honey_bottle', '2x minecraft:wheat')
+        .itemOutputs('8x farmersdelight:honey_cookie', 'minecraft:glass_bottle')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+    
+    event.recipes.gtceu.culinary_assembler('farmersdelight:melon_popsicle')
+        .itemInputs('4x minecraft:melon_slice', '2x minecraft:ice', 'minecraft:stick')
+        .itemOutputs('farmersdelight:melon_popsicle')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:glow_berry_custard')
+        .itemInputs('minecraft:glow_berries', '#forge:eggs', 'minecraft:sugar')
+        .inputFluids('minecraft:milk 100')
+        .itemOutputs('farmersdelight:glow_berry_custard')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:fruit_salad' )
+        .itemInputs('3x #forge:fruits', 'minecraft:apple', 'minecraft:melon_slice', 'farmersdelight:pumpkin_slice', 'minecraft:bowl')
+        .itemOutputs('farmersdelight:fruit_salad')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:mixer_salad')
+        .itemInputs('#forge:salad_ingredients', '#forge:tomatoes', 'minecraft:beetroot', 'minecraft:bowl')
+        .itemOutputs('farmersdelight:mixer_salad')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+    
+    event.recipes.gtceu.culinary_assembler('farmersdelight:nether_salad')
+        .itemInputs('minecraft:crimson_fungus', 'minecraft:warped_fungus', 'minecraft:bowl')
+        .itemOutputs('farmersdelight:nether_salad')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+
+    ['#forge:cooked_beef', '#forge:cooked_pork', '#forge:cooked_chicken', '#forge:cooked_fishes', '#forge:cooked_mutton', 'minecraft:cooked_rabbit'].forEach((meat, index) => {
+        event.recipes.gtceu.culinary_assembler(`farmersdelight:barbecue_stick${index}`)
+            .itemInputs('minecraft:stick', '#forge:onions', '#forge:tomatoes', meat)
+            .itemOutputs('farmersdelight:barbecue_stick')
+            .EUt(GTValues.VA[GTValues.LV])
+            .duration(400);
+    });
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:egg_sandwich')
+        .itemInputs('minecraft:bread', '2x farmersdelight:fried_egg')
+        .itemOutputs('farmersdelight:egg_sandwich')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:chicken_sandwich')
+        .itemInputs('minecraft:bread', '#forge:cooked_chicken', '#forge:salad_ingredients', 'minecraft:carrot')
+        .itemOutputs('farmersdelight:chicken_sandwich')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:hamburger')
+        .itemInputs('minecraft:bread', 'farmersdelight:beef_patty', '#forge:salad_ingredients', '#forge:tomatoes', '#forge:onions')
+        .itemOutputs('farmersdelight:hamburger')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:bacon_sandwich')
+        .itemInputs('minecraft:bread', '#forge:cooked_bacon', '#forge:salad_ingredients', '#forge:tomatoes')
+        .itemOutputs('farmersdelight:bacon_sandwich')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:mutton_wrap')
+        .itemInputs('minecraft:bread', '#forge:cooked_mutton', '#forge:salad_ingredients', '#forge:onions')
+        .itemOutputs('farmersdelight:mutton_wrap')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    ['#forge:raw_beef', '#forge:raw_chicken', '#forge:raw_pork', 'minecraft:brown_mushroom'].forEach((filling, index) => {
+        event.recipes.gtceu.culinary_assembler(`farmersdelight:dumplings_${index}`)
+            .itemInputs('#forge:dough', '#forge:cabbage', '#forge:onions', filling)
+            .itemOutputs('2x farmersdelight:dumplings')
+            .EUt(GTValues.VA[GTValues.LV])
+            .duration(400);
+    });
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:stuffed_potato')
+        .itemInputs('minecraft:baked_potato', 'farmersdelight:beef_patty')
+        .inputFluids('minecraft:milk 100')
+        .itemOutputs('farmersdelight:stuffed_potato')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+    
+    event.recipes.gtceu.culinary_assembler('farmersdelight:cabbage_rolls')
+        .itemInputs('#forge:cabbage', '#farmersdelight:cabbage_roll_ingredients')
+        .itemOutputs('farmersdelight:cabbage_rolls')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+    
+    event.recipes.gtceu.culinary_assembler('farmersdelight:salmon_roll')
+        .itemInputs('2x farmersdelight:salmon_slice', 'farmersdelight:cooked_rice')
+        .itemOutputs('2x farmersdelight:salmon_roll')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:cod_roll')
+        .itemInputs('2x farmersdelight:cod_slice', 'farmersdelight:cooked_rice')
+        .itemOutputs('2x farmersdelight:cod_roll')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:kelp_roll')
+        .itemInputs('3x minecraft:dried_kelp', '2x farmersdelight:cooked_rice', 'minecraft:carrot')
+        .itemOutputs('farmersdelight:kelp_roll', '2x minecraft:bowl')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+    
+    event.recipes.gtceu.culinary_assembler('farmersdelight:cooked_rice')
+        .itemInputs('#forge:rice', 'minecraft:bowl')
+        .inputFluids('minecraft:water 100')
+        .itemOutputs('farmersdelight:cooked_rice')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+    
+    event.recipes.gtceu.culinary_assembler('farmersdelight:bone_broth')
+        .itemInputs('#forge:bones', '#forge:mushrooms', 'minecraft:bowl')
+        .itemOutputs('farmersdelight:bone_broth')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:bone_broth_2')
+        .itemInputs('#forge:bones', 'minecraft:glow_berries', 'minecraft:bowl')
+        .itemOutputs('farmersdelight:bone_broth')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:bone_broth_3')
+        .itemInputs('#forge:bones', 'minecraft:hanging_roots', 'minecraft:bowl')
+        .itemOutputs('farmersdelight:bone_broth')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:bone_broth_4')
+        .itemInputs('#forge:bones', 'minecraft:glow_lichen', 'minecraft:bowl')
+        .itemOutputs('farmersdelight:bone_broth')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+    
+    event.recipes.gtceu.culinary_assembler('farmersdelight:beef_stew')
+        .itemInputs('#forge:raw_beef', 'minecraft:carrot', 'minecraft:potato', 'minecraft:bowl')
+        .itemOutputs('farmersdelight:beef_stew')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+    
+    event.recipes.gtceu.culinary_assembler('farmersdelight:chicken_soup')
+        .itemInputs('#forge:raw_chicken', 'minecraft:carrot', '#forge:salad_ingredients', '#forge:vegetables', 'minecraft:bowl')
+        .itemOutputs('farmersdelight:chicken_soup')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+    
+    event.recipes.gtceu.culinary_assembler('farmersdelight:vegetable_soup')
+        .itemInputs('minecraft:carrot', 'minecraft:potato', 'minecraft:potato', '#forge:salad_ingredients', 'minecraft:bowl')
+        .itemOutputs('farmersdelight:vegetable_soup')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.culinary_assembler('farmersdelight:fish_stew')
+        .itemInputs('#forge:raw_fishes', 'farmersdelight:tomato_sauce', '#forge:onions', 'minecraft:bowl')
+        .itemOutputs('farmersdelight:fish_stew')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
 })

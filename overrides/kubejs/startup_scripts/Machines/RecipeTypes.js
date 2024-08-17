@@ -166,10 +166,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.REPLICATOR);
-    event.create('food_cutter')
+    event.create('slicer')
         .category('frontiers')
         .setEUIO('in')
-        .setMaxIOSize(2, 1, 0, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+        .setMaxIOSize(2, 2, 0, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.REPLICATOR);
