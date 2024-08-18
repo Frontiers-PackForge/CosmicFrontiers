@@ -105,4 +105,41 @@ ServerEvents.recipes(event => {
         .itemOutputs('3x farmersdelight:kelp_roll_slice')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(400);
+
+    event.recipes.gtceu.slicer('farmersdelight:shepherds_pie')
+        .itemInputs('farmersdelight:shepherds_pie_block', '3x minecraft:bowl')
+        .itemOutputs('4x farmersdelight:shepherds_pie')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('farmersdelight:honey_glazed_ham')
+        .itemInputs('farmersdelight:honey_glazed_ham_block', '3x minecraft:bowl')
+        .itemOutputs('4x farmersdelight:honey_glazed_ham', 'minecraft:bone')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('farmersdelight:roast_chicken')
+        .itemInputs('farmersdelight:roast_chicken_block', '3x minecraft:bowl')
+        .itemOutputs('4x farmersdelight:roast_chicken', 'minecraft:bone_meal')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('farmersdelight:stuffed_pumpkin')
+        .itemInputs('farmersdelight:stuffed_pumpkin_block', '4x minecraft:bowl')
+        .itemOutputs('4x farmersdelight:stuffed_pumpkin')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    // Nether's Delight
+    event.recipes.gtceu.slicer('nethersdelight:ground_strider')
+        .itemInputs('nethersdelight:strider_slice')
+        .itemOutputs('2x nethersdelight:ground_strider')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('nethersdelight:sliced_stuffed_hoglin')
+        .itemInputs('nethersdelight:stuffed_hoglin', '9x minecraft:bowl')
+        .itemOutputs('nethersdelight:plate_of_stuffed_hoglin_snout', '4x nethersdelight:plate_of_stuffed_hoglin_ham', '4x nethersdelight:plate_of_stuffed_hoglin_roast', '2x nethersdelight:hoglin_ear', '4x minecraft:bone')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
 })

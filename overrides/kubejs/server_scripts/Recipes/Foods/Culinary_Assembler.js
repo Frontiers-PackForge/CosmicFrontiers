@@ -1345,4 +1345,55 @@ ServerEvents.recipes(event => {
         .itemOutputs('farmersdelight:horse_feed')
         .EUt(recipeEUt)
         .duration(recipeDuration);
+
+    // Nether's Delight
+    event.recipes.gtceu.culinary_assembler('nethersdelight:grilled_strider')
+        .itemInputs('#nethersdelight:raw_strider', 'minecraft:warped_fungus', 'minecraft:crimson_fungus', 'minecraft:warped_roots', 'minecraft:crimson_roots', 'minecraft:bowl')
+        .itemOutputs('nethersdelight:grilled_strider')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('nethersdelight:warped_moldy_meat')
+        .itemInputs('2x minecraft:warped_roots', 'nethersdelight:hoglin_sirloin', 'minecraft:bowl')
+        .itemOutputs('nethersdelight:warped_moldy_meat')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('nethersdelight:strider_moss_stew')
+        .itemInputs('2x minecraft:warped_fungus', 'minecraft:crimson_fungus', 'minecraft:crimson_roots', '#nethersdelight:raw_strider', 'minecraft:bowl')
+        .itemOutputs('nethersdelight:strider_moss_stew')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('nethersdelight:nether_skewer')
+        .itemInputs('minecraft:blaze_rod', 'nethersdelight:propelpearl', '#nethersdelight:raw_strider')
+        .itemOutputs('nethersdelight:nether_skewer')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('nethersdelight:magma_gelatin')
+        .itemInputs('3x minecraft:magma_cream', 'nethersdelight:propelpearl', 'minecraft:lava_bucket')
+        .itemOutputs('nethersdelight:magma_gelatin')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('nethersdelight:magma_gelatin_2')
+        .itemInputs('3x minecraft:magma_cream', 'nethersdelight:propelpearl', 'minecraft:bucket')
+        .inputFluids('minecraft:lava 1000')
+        .itemOutputs('nethersdelight:magma_gelatin')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+    
+    event.recipes.gtceu.culinary_assembler('nethersdelight:raw_stuffed_hoglin')
+        .itemInputs('2x farmersdelight:ham', '2x nethersdelight:hoglin_loin', 'nethersdelight:hoglin_hide', 'farmersdelight:nether_salad', 'minecraft:warped_fungus', 'minecraft:crimson_fungus', 'minecraft:crimson_roots')
+        .itemOutputs('nethersdelight:raw_stuffed_hoglin')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+    
+    event.recipes.gtceu.culinary_assembler('nethersdelight:stuffed_hoglin')
+        .itemInputs('nethersdelight:raw_stuffed_hoglin', '2x farmersdelight:nether_salad')
+        .itemOutputs('nethersdelight:stuffed_hoglin')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
 })
