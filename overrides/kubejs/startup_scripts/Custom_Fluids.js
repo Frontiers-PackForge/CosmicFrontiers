@@ -15,4 +15,24 @@ StartupEvents.registry('fluid', event => {
         .bucketColor(0xE5D6BB)
         .displayName('Soy Milk')
 
+    event.create('croptopia:lemon_juice')
+        .thinTexture(0xFCEC81)
+        .bucketColor(0xFCEC81)
+        .displayName('Lemon Juice')
+
+    event.create('croptopia:orange_juice')
+        .thinTexture(0xFAAD25)
+        .bucketColor(0xFAAD25)
+        .displayName('Orange Juice')
+
+    event.create('croptopia:grapefruit_juice')
+        .thinTexture(0xFC9963)
+        .bucketColor(0xFC9963)
+        .displayName('Grapefruit Juice')
+
+    event.create('croptopia:lime_juice')
+        .thinTexture(0xD1EB44)
+        .bucketColor(0xD1EB44)
+        .displayName('Lime Juice')
+
 })
