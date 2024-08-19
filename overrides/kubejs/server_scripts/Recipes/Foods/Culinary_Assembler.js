@@ -1396,4 +1396,269 @@ ServerEvents.recipes(event => {
         .EUt(recipeEUt)
         .duration(recipeDuration);
 
+    // Vintage Delight
+    event.recipes.gtceu.culinary_assembler('vintagedelight:pickled_pepper')
+        .itemInputs('5x vintagedelight:ghost_pepper', '#forge:salt')
+        .itemOutputs('5x vintagedelight:pickled_pepper')
+        .EUt(recipeEUt)
+        .duration(1200);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:pickle')
+        .itemInputs('5x #forge:cucumber', '#forge:salt')
+        .itemOutputs('5x vintagedelight:pickle')
+        .EUt(recipeEUt)
+        .duration(1200);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:pickled_onion')
+        .itemInputs('5x #forge:onions', '#forge:salt')
+        .itemOutputs('5x vintagedelight:pickled_onion')
+        .EUt(recipeEUt)
+        .duration(1200);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:pickled_beetroot')
+        .itemInputs('5x minecraft:beetroot', '#forge:salt')
+        .itemOutputs('5x vintagedelight:pickled_beetroot')
+        .EUt(recipeEUt)
+        .duration(1200);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:pickled_egg')
+        .itemInputs('5x minecraft:egg', '#forge:salt')
+        .itemOutputs('5x vintagedelight:pickled_egg')
+        .EUt(recipeEUt)
+        .duration(1200);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:surstromming')
+        .itemInputs('5x #forge:raw_fishes', '#forge:salt')
+        .itemOutputs('5x vintagedelight:surstromming')
+        .EUt(recipeEUt)
+        .duration(1200);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:century_egg')
+        .itemInputs('minecraft:sniffer_egg', 'minecraft:coal', '#forge:salt')
+        .itemOutputs('5x vintagedelight:century_egg')
+        .EUt(recipeEUt)
+        .duration(72000); // this is not an error recipe takes 1h
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:kimchi')
+        .itemInputs('4x farmersdelight:cabbage_leaf', '#forge:salt', 'vintagedelight:ghost_pepper')
+        .itemOutputs('4x vintagedelight:kimchi', 'vintagedelight:pickled_pepper')
+        .EUt(recipeEUt)
+        .duration(1200);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:oatmeal')
+        .itemInputs('vintagedelight:raw_oats', 'minecraft:sugar', 'minecraft:bowl')
+        .itemOutputs('vintagedelight:oatmeal')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:oatmeal_cookie')
+        .itemInputs('2x vintagedelight:raw_oats', 'minecraft:honey_bottle')
+        .itemOutputs('8x vintagedelight:oatmeal_cookie')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:overnight_oats')
+        .itemInputs('vintagedelight:raw_oats', '#forge:berries', 'farmersdelight:pumpkin_slice', 'minecraft:melon_slice', 'minecraft:apple', 'minecraft:bowl')
+        .itemOutputs('vintagedelight:overnight_oats')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:chocolate_nut_granola_bar')
+        .itemInputs('vintagedelight:raw_oats', 'minecraft:honey_bottle', 'minecraft:cocoa_beans', 'vintagedelight:roasted_peanut')
+        .itemOutputs('vintagedelight:chocolate_nut_granola_bar', 'minecraft:glass_bottle')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:deluxe_granola_bar')
+        .itemInputs('vintagedelight:raw_oats', 'minecraft:honey_bottle', 'minecraft:cocoa_beans', 'vintagedelight:roasted_peanut', '2x #forge:berries')
+        .itemOutputs('vintagedelight:deluxe_granola_bar', 'minecraft:glass_bottle')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:fruity_granola_bar')
+        .itemInputs('vintagedelight:raw_oats', 'minecraft:honey_bottle', '2x #forge:berries')
+        .itemOutputs('vintagedelight:fruity_granola_bar', 'minecraft:glass_bottle')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:apple_sauce_mason_jar')
+        .itemInputs('5x minecraft:apple', 'minecraft:sugar', 'vintagedelight:mason_jar')
+        .itemOutputs('vintagedelight:apple_sauce_mason_jar')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:gearo_berry_mason_jar')
+        .itemInputs('5x vintagedelight:gearo_berry', 'minecraft:sugar', 'vintagedelight:mason_jar')
+        .itemOutputs('vintagedelight:gearo_berry_mason_jar')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:sweet_berry_mason_jar')
+        .itemInputs('5x minecraft:sweet_berries', 'minecraft:sugar', 'vintagedelight:mason_jar')
+        .itemOutputs('vintagedelight:sweet_berry_mason_jar')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:glow_berry_mason_jar')
+        .itemInputs('5x minecraft:glow_berries', 'minecraft:sugar', 'vintagedelight:mason_jar')
+        .itemOutputs('vintagedelight:glow_berry_mason_jar')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:pepper_jam_mason_jar')
+        .itemInputs('5x vintagedelight:pickled_pepper', 'minecraft:sugar', 'vintagedelight:mason_jar')
+        .itemOutputs('vintagedelight:pepper_jam_mason_jar')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:relish_mason_jar')
+        .itemInputs('5x vintagedelight:pickle', 'minecraft:sugar', 'vintagedelight:mason_jar')
+        .itemOutputs('vintagedelight:relish_mason_jar')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:nut_mash_mason_jar')
+        .itemInputs('5x #forge:coooked_nuts', 'minecraft:sugar', 'vintagedelight:mason_jar')
+        .itemOutputs('vintagedelight:nut_mash_mason_jar')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:vinegar_mason_jar')
+        .itemInputs('#vintagedelight:jam_jars', '#forge:mushrooms')
+        .itemOutputs('vintagedelight:vinegar_mason_jar', '3x vintagedelight:organic_mash')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+    
+    event.recipes.gtceu.culinary_assembler('vintagedelight:vinegar_bottle')
+        .itemInputs('vintagedelight:vinegar_mason_jar', '3x minecraft:glass_bottle')
+        .itemOutputs('3x vintagedelight:vinegar_bottle')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:apple_sauce_bottle')
+        .itemInputs('vintagedelight:apple_sauce_mason_jar', '3x minecraft:glass_bottle')
+        .itemOutputs('3x vintagedelight:apple_sauce_bottle')
+        .EUt(recipeEUt)
+        .circuit(1)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:gearo_berry_bottle')
+        .itemInputs('vintagedelight:gearo_berry_mason_jar', '3x minecraft:glass_bottle')
+        .itemOutputs('3x vintagedelight:gearo_berry_bottle')
+        .EUt(recipeEUt)
+        .circuit(1)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:sweet_berry_bottle')
+        .itemInputs('vintagedelight:sweet_berry_mason_jar', '3x minecraft:glass_bottle')
+        .itemOutputs('3x vintagedelight:sweet_berry_bottle')
+        .EUt(recipeEUt)
+        .circuit(1)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:glow_berry_bottle')
+        .itemInputs('vintagedelight:glow_berry_mason_jar', '3x minecraft:glass_bottle')
+        .itemOutputs('3x vintagedelight:glow_berry_bottle')
+        .EUt(recipeEUt)
+        .circuit(1)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:pepper_jam_bottle')
+        .itemInputs('vintagedelight:pepper_jam_mason_jar', '3x minecraft:glass_bottle')
+        .itemOutputs('3x vintagedelight:pepper_jam_bottle')
+        .EUt(recipeEUt)
+        .circuit(1)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:relish_bottle')
+        .itemInputs('vintagedelight:relish_mason_jar', '3x minecraft:glass_bottle')
+        .itemOutputs('3x vintagedelight:relish_bottle')
+        .EUt(recipeEUt)
+        .circuit(1)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:nut_mash_bottle')
+        .itemInputs('vintagedelight:nut_mash_mason_jar', '3x minecraft:glass_bottle')
+        .itemOutputs('3x vintagedelight:nut_mash_bottle')
+        .EUt(recipeEUt)
+        .circuit(1)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:cheese_curds')
+        .itemInputs('#forge:salt', 'vintagedelight:vinegar_bottle')
+        .inputFluids('minecraft:milk 500')
+        .itemOutputs('4x vintagedelight:cheese_curds')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:cheese_wheel')
+        .itemInputs('4x vintagedelight:cheese_curds')
+        .itemOutputs('vintagedelight:cheese_wheel')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:cheese_pizza')
+        .itemInputs('3x #forge:cheese', '2x #forge:dough', 'farmersdelight:tomato_sauce')
+        .itemOutputs('vintagedelight:cheese_pizza')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    ['#forge:cooked_beef', '#forge:cooked_pork', '#forge:cooked_chicken', '#forge:cooked_fishes', '#forge:cooked_mutton', 'minecraft:cooked_rabbit'].forEach((meat, index) => {
+        event.recipes.gtceu.culinary_assembler(`vintagedelight:meat_pizza_${index}`)
+            .itemInputs('3x #forge:cheese', '2x #forge:dough', 'farmersdelight:tomato_sauce', meat)
+            .itemOutputs('vintagedelight:meat_pizza')
+            .EUt(recipeEUt)
+            .circuit(1)
+            .duration(recipeDuration);
+    });
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:pickle_soup')
+        .itemInputs('vintagedelight:pickle', 'minecraft:carrot', 'minecraft:potato', 'minecraft:beetroot', '#forge:salad_ingredients', 'minecraft:bowl')
+        .itemOutputs('vintagedelight:pickle_soup')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:ghostly_chili')
+        .itemInputs('2x vintagedelight:ghost_pepper', 'minecraft:carrot', '#forge:tomatoes', 'farmersdelight:minced_beef', 'minecraft:bowl')
+        .itemOutputs('vintagedelight:ghostly_chili')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:pad_thai')
+        .itemInputs('vintagedelight:ghost_pepper', '#forge:pasta', '#forge:cooked_chicken', 'vintagedelight:nut_mash_bottle', 'vintagedelight:peanut', 'minecraft:bowl')
+        .itemOutputs('vintagedelight:pad_thai', 'minecraft:glass_bottle')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:cheese_pasta')
+        .itemInputs('#forge:pasta', '2x #forge:cheese', 'minecraft:bowl')
+        .itemOutputs('vintagedelight:cheese_pasta')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:cucumber_salad')
+        .itemInputs('#forge:cabbage', '#forge:cucumber', 'vintagedelight:pickled_beetroot', 'vintagedelight:pickled_onion', 'minecraft:bowl')
+        .itemOutputs('vintagedelight:cucumber_salad')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+    
+    event.recipes.gtceu.culinary_assembler('vintagedelight:cheese_burger')
+        .itemInputs('minecraft:bread', 'farmersdelight:beef_patty', '#forge:cheese', '#forge:salad_ingredients', '#forge:tomatoes', '#forge:onions')
+        .itemOutputs('vintagedelight:cheese_burger')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+    
+    event.recipes.gtceu.culinary_assembler('vintagedelight:deluxe_burger')
+        .itemInputs('minecraft:bread', 'farmersdelight:beef_patty', '#forge:cheese', '#forge:salad_ingredients', '#forge:tomatoes', '#forge:onions', 'farmersdelight:fried_egg', '#forge:cooked_bacon')
+        .itemOutputs('vintagedelight:deluxe_burger')
+        .EUt(recipeEUt)
+        .circuit(1)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('vintagedelight:stuffed_burrito')
+        .itemInputs('minecraft:bread', 'farmersdelight:beef_patty', '#forge:salad_ingredients', '#forge:tomatoes', '#forge:cheese', 'vintagedelight:ghost_pepper')
+        .itemOutputs('vintagedelight:stuffed_burrito')
+        .EUt(recipeEUt)
+        .circuit(2)
+        .duration(recipeDuration);
 })

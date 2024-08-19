@@ -142,4 +142,30 @@ ServerEvents.recipes(event => {
         .itemOutputs('nethersdelight:plate_of_stuffed_hoglin_snout', '4x nethersdelight:plate_of_stuffed_hoglin_ham', '4x nethersdelight:plate_of_stuffed_hoglin_roast', '2x nethersdelight:hoglin_ear', '4x minecraft:bone')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(400);
+    
+    // Vintage Delight
+    event.recipes.gtceu.slicer('vintagedelight:cucumber_noodles')
+        .itemInputs('#forge:cucumber')
+        .itemOutputs('vintagedelight:cucumber_noodles')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('vintagedelight:cheese_slice')
+        .itemInputs('vintagedelight:cheese_wheel')
+        .itemOutputs('4x vintagedelight:cheese_slice')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('vintagedelight:cheese_pizza_slice')
+        .itemInputs('vintagedelight:cheese_pizza')
+        .itemOutputs('4x vintagedelight:cheese_pizza_slice')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('vintagedelight:meat_pizza_slice')
+        .itemInputs('vintagedelight:meat_pizza')
+        .itemOutputs('4x vintagedelight:meat_pizza_slice')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
 })

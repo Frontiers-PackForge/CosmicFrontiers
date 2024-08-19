@@ -96,4 +96,20 @@ ServerEvents.recipes(event => {
         .itemOutputs('farmersdelight:pie_crust')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(400);
+
+    // Vintage's Delight
+    event.recipes.gtceu.mixer('vintagedelight:oat_dough')
+        .itemInputs('#forge:eggs', '3x vintagedelight:raw_oats')
+        .itemOutputs('vintagedelight:oat_dough')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.mixer('vintagedelight:oat_dough_2')
+        .itemInputs('3x vintagedelight:raw_oats')
+        .inputFluids(`minecraft:water 100`)
+        .itemOutputs('vintagedelight:oat_dough')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+
 })
