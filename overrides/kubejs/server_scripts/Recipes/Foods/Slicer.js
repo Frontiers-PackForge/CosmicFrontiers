@@ -168,4 +168,28 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
         .duration(400);
 
+    // Ocean's Delight
+    event.recipes.gtceu.slicer('oceansdelight:cut_tentacles')
+        .itemInputs('oceansdelight:tentacles')
+        .itemOutputs('3x oceansdelight:cut_tentacles')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('oceansdelight:guardian_tail')
+        .itemInputs('oceansdelight:tentacles')
+        .itemOutputs('oceansdelight:guardian_tail', 'minecraft:bone_meal')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('oceansdelight:elder_guardian_slice')
+        .itemInputs('oceansdelight:elder_guardian_slab')
+        .itemOutputs('9x oceansdelight:elder_guardian_slice', 'minecraft:bone_meal')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('oceansdelight:fugu_slice')
+        .itemInputs('minecraft:pufferfish')
+        .itemOutputs('6x oceansdelight:fugu_slice', 'minecraft:bone_meal')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
 })

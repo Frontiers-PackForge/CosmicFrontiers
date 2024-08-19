@@ -1661,4 +1661,65 @@ ServerEvents.recipes(event => {
         .EUt(recipeEUt)
         .circuit(2)
         .duration(recipeDuration);
+
+    //Ocean's Delight
+    event.recipes.gtceu.culinary_assembler('oceansdelight:squid_rings')
+        .itemInputs('oceansdelight:cut_tentacles', '#forge:dough', 'minecraft:bowl')
+        .itemOutputs('oceansdelight:squid_rings')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('oceansdelight:tentacle_on_a_stick')
+        .itemInputs('oceansdelight:tentacles', 'minecraft:stick')
+        .itemOutputs('oceansdelight:tentacle_on_a_stick')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('oceansdelight:guardian_soup')
+        .itemInputs('oceansdelight:guardian', '#forge:onions', '2x #forge:eggs', '#forge:tomatoes', 'minecraft:bowl')
+        .itemOutputs('oceansdelight:guardian_soup')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('oceansdelight:elder_guardian_roll')
+        .itemInputs('2x oceansdelight:elder_guardian_slice', 'farmersdelight:cooked_rice')
+        .itemOutputs('oceansdelight:elder_guardian_roll', 'minecraft:bowl')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('oceansdelight:fugu_roll')
+        .itemInputs('2x oceansdelight:fugu_slice', 'farmersdelight:cooked_rice')
+        .itemOutputs('oceansdelight:fugu_roll', 'minecraft:bowl')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('oceansdelight:cabbage_wrapped_elder_guardian')
+        .itemInputs('oceansdelight:elder_guardian_slice', '#forge:cabbage', '#forge:onions', '#forge:tomatoes')
+        .itemOutputs('oceansdelight:cabbage_wrapped_elder_guardian')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('oceansdelight:braised_sea_pickle')
+        .itemInputs('minecraft:sea_pickle', '2x minecraft:brown_mushroom', 'minecraft:bowl')
+        .itemOutputs('oceansdelight:braised_sea_pickle')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('oceansdelight:stuffed_cod')
+        .itemInputs('minecraft:kelp', '#forge:onions', '#forge:tomatoes', 'minecraft:brown_mushroom', 'minecraft:cod', 'farmersdelight:rope')
+        .itemOutputs('oceansdelight:stuffed_cod')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('oceansdelight:honey_fried_kelp')
+        .itemInputs('minecraft:dried_kelp', 'minecraft:honey_bottle')
+        .itemOutputs('oceansdelight:honey_fried_kelp', 'minecraft:glass_bottle')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler('oceansdelight:seagrass_salad')
+        .itemInputs('minecraft:seagrass', 'minecraft:bowl')
+        .itemOutputs('oceansdelight:seagrass_salad')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
 })
