@@ -192,4 +192,67 @@ ServerEvents.recipes(event => {
         .itemOutputs('6x oceansdelight:fugu_slice', 'minecraft:bone_meal')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(400);
+
+    // Delightful
+    event.recipes.gtceu.slicer('delightful:salmonberries')
+        .itemInputs('delightful:wild_salmonberries')
+        .itemOutputs('delightful:salmonberries', 'minecraft:orange_dye')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('delightful:salmonberry_pie_slice')
+        .itemInputs('delightful:salmonberry_pie')
+        .itemOutputs('4x delightful:salmonberry_pie_slice')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('delightful:pumpkin_pie_slice')
+        .itemInputs('minecraft:pumpkin_pie')
+        .itemOutputs('4x delightful:pumpkin_pie_slice')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('delightful:source_berry_pie_slice')
+        .itemInputs('ars_nouveau:source_berry_pie')
+        .itemOutputs('4x delightful:source_berry_pie_slice')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('delightful:gloomgourd_pie_slice')
+        .itemInputs('undergarden:gloomgourd_pie')
+        .itemOutputs('4x delightful:gloomgourd_pie_slice')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('delightful:chopped_clover')
+        .itemInputs('biomesoplenty:clover')
+        .itemOutputs('2x delightful:chopped_clover')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('delightful:chopped_clover_2')
+        .itemInputs('biomesoplenty:huge_clover_petal')
+        .itemOutputs('3x delightful:chopped_clover')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('delightful:cactus_flesh')
+        .itemInputs('minecraft:cactus')
+        .itemOutputs('2x delightful:cactus_flesh')
+        .chancedOutput('delightful:cactus_flesh', '1/5', 200)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('delightful:cantaloupe_slice')
+        .itemInputs('delightful:cantaloupe')
+        .itemOutputs('3x delightful:cantaloupe_slice')
+        .chancedOutput('delightful:cantaloupe_slice', '1/5', 200)
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
+
+    event.recipes.gtceu.slicer('delightful:stuffed_cantaloupe')
+        .itemInputs('delightful:stuffed_cantaloupe_block', '4x minecraft:bowl')
+        .itemOutputs('4x delightful:stuffed_cantaloupe')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
 })

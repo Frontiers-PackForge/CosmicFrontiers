@@ -111,5 +111,17 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
         .duration(400);
 
+    // Delightful
+    event.recipes.gtceu.macerator(`delightful:matcha`)
+        .itemInputs('#forge:tea_leaves')
+        .itemOutputs('minecraft:green_dye')
+        .chancedOutput('delightful:matcha', '2/5', 200)
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.LV]);
 
+    event.recipes.gtceu.mixer('delightful:nut_dough')
+        .itemInputs('2x #forge:nut_butter', 'minecraft:bone_meal', 'minecraft:egg')
+        .itemOutputs('2x delightful:nut_dough')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(400);
 })
