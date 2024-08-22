@@ -461,7 +461,7 @@ ServerEvents.recipes(event => {
        event.recipes.botania.runic_altar('kubejs:mechanical_rosa_arcana', ['botania:rosa_arcana', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
        event.recipes.botania.runic_altar('kubejs:mechanical_rafflowsia', ['botania:rafflowsia', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
 
-       //Sleeping Bags
+       //Sleeping Bags & Antiblocks or I guess anything with the 16 dyes
        let dye = [
               'white',
               'orange',
@@ -491,6 +491,23 @@ ServerEvents.recipes(event => {
                      C: `minecraft:${dye}_carpet`,
                      L: 'cosmiccore:waxed_leather'
               })
+              event.shaped(`3x cosmiccore:antiblock_${dye}`, [
+                     'GDG',
+                     'GAG',
+                     'GDG'
+              ], {
+                     G: 'minecraft:glass',
+                     D: 'minecraft:glowstone_dust',
+                     A: `minecraft:${dye}_dye`
+              })
+              event.recipes.gtceu.assembler(`cosmiccore:antiblock_${dye}`)
+                     .itemInputs('8x minecraft:glass', '2x minecraft:glowstone_dust')
+                     .inputFluids(`gtceu:${dye}_dye 144`)
+                     .itemOutputs(`8x cosmiccore:antiblock_${dye}`)
+                     .circuit(11)
+                     .duration(80)
+                     .EUt(GTValues.VA[GTValues.LV])
+
        })
 })
 
