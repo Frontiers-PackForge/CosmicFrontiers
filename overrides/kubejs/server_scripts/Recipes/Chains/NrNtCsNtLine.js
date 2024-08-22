@@ -8,10 +8,9 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:europium 576')
         .itemOutputsRanged('gtceu:resh_neutron_meld_dust', 4, 8)
         .outputFluids('gtceu:resh_neutron_plasma 250')
-        .outputFluids('gtceu:alef_neutron_plasma 250')
-        .outputFluids('gtceu:resh_neutron_plasma 250')
+        .outputFluids('gtceu:alef_neutron_plasma 500')
         .outputFluids('gtceu:pey_neutron_plasma 250')
-        .outputFluids('gtceu:ayin_neutron_plasma 250')
+        .outputFluids('gtceu:ayin_neutron_plasma 500')
         //borkeed, scream at onyon wtf is a ambiguous type
         // .chancedFluidOutput('gtceu:resh_neutron_plasma', 2500, 1000)
         // .chancedFluidOutput('gtceu:alef_neutron_plasma', 2500, 1000)

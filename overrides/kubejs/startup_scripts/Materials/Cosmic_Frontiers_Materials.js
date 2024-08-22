@@ -415,14 +415,23 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(7500)
         .color(0xa6f8ff).secondaryColor(0x181f47).iconSet(GTMaterialIconSet.BRIGHT)
         .flags(
-            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.FORCE_GENERATE_BLOCK,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_RING,
             GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_ROTOR,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.GENERATE_FINE_WIRE
+            GTMaterialFlags.IS_MAGNETIC
         )
     event.create('critical_neutron_mass')
         .ingot()

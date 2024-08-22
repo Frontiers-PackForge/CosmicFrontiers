@@ -43,13 +43,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('triethylaluminium')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .color(0x1f6e6e).iconSet(GTMaterialIconSet.DULL)
+        .color(0x76f593).iconSet(GTMaterialIconSet.DULL)
     event.create('trioctylaluminium')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .color(0x339696).iconSet(GTMaterialIconSet.DULL)
+        .color(0x76f5c4).iconSet(GTMaterialIconSet.DULL)
     event.create('one_dash_octanol')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .color(0x1fab98).iconSet(GTMaterialIconSet.DULL)
+        .color(0xf2af6f).iconSet(GTMaterialIconSet.DULL)
 
 
 })

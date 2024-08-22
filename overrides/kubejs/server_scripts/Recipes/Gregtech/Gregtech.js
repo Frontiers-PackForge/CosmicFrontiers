@@ -562,6 +562,16 @@ ServerEvents.recipes(event => {
     'vanadium_gallium',
     'yttrium_barium_cuprate'
   ]
+  let tierSpring = [
+    'tin',
+    'copper',
+    'gold',
+    'aluminium',
+    'hsla_steel',
+    'niobium_titanium',
+    'vanadium_gallium',
+    'yttrium_barium_cuprate'
+  ]
   let coilTier = [
     'cupronickel',
     'kanthal',
@@ -585,6 +595,7 @@ ServerEvents.recipes(event => {
   machineTier.forEach((tier, index) => {
     let cableMaterial = tierQuadWire[index]
     let cableType = tierCable[index]
+    let springType = tierSpring[index]
     let coilType = coilTier[index]
     let lamType = laminatorTier[index]
     event.shaped(`gtceu:${tier}_flora_nurturer`, [
@@ -643,12 +654,25 @@ ServerEvents.recipes(event => {
       'BHB',
       'ZPZ'
     ], {
-      A: `gtceu:${lamType}_spring`,
+      A: `gtceu:${springType}_spring`,
       B: `gtceu:${tier}_conveyor_module`,
       C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`,
       P: `gtceu:${tier}_electric_pump`
+    }
+    )
+    event.shaped(`gtceu:${tier}_aio_lithography_processor`, [
+      'CAC',
+      'RHR',
+      'ZBZ'
+    ], {
+      A: `gtceu:${springType}_spring`,
+      B: `gtceu:${tier}_conveyor_module`,
+      R: `gtceu:${tier}_robot_arm`,
+      C: `#gtceu:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`
     }
     )
     event.shaped(`gtceu:${tier}_chemical_dehydrator`, [
