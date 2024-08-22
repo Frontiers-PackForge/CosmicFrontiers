@@ -7,12 +7,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:mixer/indium_concentrate' })
     event.remove({ id: 'gtceu:electrolyzer/tungstic_acid_electrolysis' })
     event.recipes.gtceu.mixer('indium_concentrate_2_0')
-    .inputFluids('gtceu:sulfuric_acid 4000')
-    .itemInputs('gtceu:sphalerite_dust')
-    .itemInputs('gtceu:galena_dust')
-    .outputFluids('gtceu:indium_concentrate 1000')
-    .duration(60)
-    .EUt(GTValues.VA[GTValues.HV]);
+        .inputFluids('gtceu:sulfuric_acid 4000')
+        .itemInputs('gtceu:sphalerite_dust')
+        .itemInputs('gtceu:galena_dust')
+        .outputFluids('gtceu:indium_concentrate 1000')
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.HV]);
     //Ammonium AeroCloud Sol. -> Ammonium Hydroxide 
     event.recipes.gtceu.distillery('ammonium_hydroxide_from_aerocloud_sol')
         .inputFluids('gtceu:ammonia_rich_aerocloud_solution 2000')
@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('21x gtceu:tungstic_acid_dust')
         .blastFurnaceTemp(3600)
         .duration(250)
-        .EUt(GTValues.VA[GTValues.IV]);
+        .EUt(GTValues.VA[GTValues.EV]);
 
     event.recipes.gtceu.chemical_dehydrator('tungstic_trioxide')
         .itemInputs('7x gtceu:tungstic_acid_dust')
@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:steam 3000')
         .blastFurnaceTemp(3700)
         .duration(250)
-        .EUt(GTValues.VA[GTValues.IV]);
+        .EUt(GTValues.VA[GTValues.EV]);
     // Moly Stuff
 
     event.recipes.gtceu.chemical_reactor('moly_sulfide_to_trisulfide')
@@ -132,5 +132,36 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(GTValues.VA[GTValues.MV]);
 
+    //What the Fuck is a Trioctylamine
+
+    event.recipes.gtceu.chemical_reactor('synth_triethylaluminium')
+        .itemInputs('2x gtceu:aluminium_dust')
+        .inputFluids('gtceu:hydrogen 6000')
+        .inputFluids('gtceu:ethylene 6000')
+        .outputFluids('gtceu:triethylaluminium 1000')
+        .duration(140)
+        .EUt(GTValues.VA[GTValues.HV]);
+    event.recipes.gtceu.large_chemical_reactor('synth_trioctylaluminium')
+        .inputFluids('gtceu:triethylaluminium 1000')
+        .inputFluids('gtceu:ethylene 18000')
+        .outputFluids('gtceu:trioctylaluminium 1000')
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.HV]);
+    event.recipes.gtceu.chemical_reactor('synth_octanol')
+        .inputFluids('gtceu:trioctylaluminium 2000')
+        .inputFluids('gtceu:oxygen 6000')
+        .inputFluids('minecraft:water 3000')
+        .outputFluids('gtceu:one_dash_octanol 6000')
+        .itemOutputs('2x gtceu:aluminium_hydroxide_dust')
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.HV]);
+    event.recipes.gtceu.chemical_reactor('synth_trioctylamine')
+        .inputFluids('gtceu:one_dash_octanol 3000')
+        .inputFluids('gtceu:ammonia 1000')
+        .notConsumable('32x gtceu:nickel_dust')
+        .outputFluids('gtceu:trioctylamine 1000')
+        .outputFluids('minecraft:water 3000')
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.EV]);
 
 })

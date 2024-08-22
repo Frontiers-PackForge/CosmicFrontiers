@@ -92,6 +92,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE))
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
                 .or(Predicates.abilities($CosmicPartAbility.IMPORT_SOUL))
             )
             .where('G', Predicates.blocks('botania:mana_glass'))

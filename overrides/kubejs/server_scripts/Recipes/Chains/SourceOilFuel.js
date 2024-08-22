@@ -52,7 +52,13 @@ ServerEvents.recipes((event) => {
     .outputFluids("gtceu:source_waste_water 100")
     .duration(200)
     .EUt(GTValues.VA[GTValues.LV]);
-
+  event.recipes.gtceu.distillery("waste_water_dt")
+    .inputFluids("gtceu:source_waste_water 1000")
+    .outputFluids("gtceu:source_oils 250")
+    .outputFluids("minecraft:water 250")
+    .outputFluids("gtceu:source_waste_water 500")
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.LV]);
   //TODO - Waste water recycling
 
   //Transestrification

@@ -14,6 +14,7 @@ StartupEvents.registry('item', event => {
     event.create('shredded_magebloom')
     event.create('washed_magebloom')
     event.create('t2_rocket_plating')
+    event.create('memory_shard').displayName('Memeroy Shards of Mortality')
     event.create('welded_rocket_plating_mk2').displayName('Welded Rocket Plating Mk.2')
     event.create('chromatically_doped_nether_star_boule').glow(true).displayName('Chromatically Doped Nether star Boule')
     //Nano Lithography 
@@ -27,5 +28,5 @@ StartupEvents.registry('item', event => {
     event.create('seal_shards').displayName('Shards of the Underworld')
     event.create('cosmic_meatballs').displayName('Cosmic Meatballs')
 
-    event.create('rebreather', 'helmet').displayName('Hardened Rebreather').maxDamage(1024).modifyTier(tier => 'breather')
+    event.create('reinforced_respirator', 'helmet').displayName('Reinforced Respirator').maxDamage(1024).modifyTier(tier => 'breather')
 })

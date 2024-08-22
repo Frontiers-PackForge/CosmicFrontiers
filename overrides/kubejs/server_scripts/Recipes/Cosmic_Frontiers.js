@@ -9,15 +9,16 @@ let yeet = (itemName) => {
 
        })
 }
+
 ServerEvents.tags('item', event => {
        event.add('thinair:heavy_breathing_equipment', 'ad_astra:space_helmet')
        event.add('thinair:heavy_breathing_equipment', 'kubejs:nano_respirator')
        event.add('thinair:breathing_equipment', 'kubejs:nano_respirator')
        event.add('gtceu:ppe_armor', 'kubejs:nano_respirator')
-       event.add('gtceu:ppe_armor', 'kubejs:rebreather')
+       event.add('gtceu:ppe_armor', 'kubejs:reinforced_respirator')
        event.add('gtceu:ppe_armor', 'thinair:respirator')
-       event.add('thinair:breathing_equipment', 'kubejs:rebreather')
-       event.add('curios:head', 'kubejs:rebreather')
+       event.add('thinair:breathing_equipment', 'kubejs:reinforced_respirator')
+       event.add('curios:head', 'kubejs:reinforced_respirator')
        event.add('curios:head', 'kubejs:nano_respirator')
        event.add('curios:charm', 'gtceu:hv_item_magnet')
        event.add('curios:charm', 'gtceu:lv_item_magnet')
@@ -48,6 +49,77 @@ ServerEvents.recipes(event => {
        event.remove({ id: 'gtceu:extractor/extract_luminite_ingot' })
        event.remove({ id: 'gtceu:extractor/extract_luminite_block' })
        event.remove({ id: 'gtceu:extractor/extract_luminite_nugget' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_empty_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_empty_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_plate_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_plate_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_gear_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_gear_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_credit_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_credit_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_bottle_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_bottle_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_ingot_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_ingot_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_ball_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_ball_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_block_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_block_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_nugget_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_nugget_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_cylinder_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_cylinder_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_anvil_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_anvil_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_name_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_name_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_small_gear_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_small_gear_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_rotor_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_rotor_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_pill_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_pill_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_plate_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_plate_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_rod_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_rod_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_rod_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_ring_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_ring_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_cell_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_cell_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_ingot_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_ingot_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_wire_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_wire_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_tiny_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_tiny_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_small_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_small_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_normal_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_normal_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_large_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_large_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_huge_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_huge_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_block_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_block_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_gear_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_gear_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_bottle_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_bottle_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_foil_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_foil_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_small_gear_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_small_gear_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_long_rod_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_long_rod_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_rotor_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_rotor_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_bolt_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_bolt_extruder_mold' })
+       event.remove({ id: 'gtceu:shaped/good_circuit_board' })
+
 
        event.remove({ id: 'paraglider:paraglider' })
        event.shaped('paraglider:paraglider', [
@@ -66,6 +138,27 @@ ServerEvents.recipes(event => {
               S: 'minecraft:echo_shard',
               W: 'kubejs:seal_shards'
        })
+       event.shaped('cosmiccore:drygmy_grove', [
+              'PCP',
+              'WSW',
+              'PCP',
+       ], {
+              C: '#gtceu:circuits/ev',
+              W: 'ars_nouveau:drygmy_charm',
+              S: 'gtceu:clean_machine_casing',
+              P: 'gtceu:palladium_plate'
+       })
+       event.shaped('kubejs:reinforced_respirator', [
+              ' R ',
+              'RFR',
+              'CSC',
+       ], {
+              C: 'gtceu:charcoal_dust',
+              S: 'gtceu:steel_plate',
+              F: 'thinair:respirator',
+              R: 'gtceu:steel_ring'
+
+       })
        event.shaped('gtceu:molten_salt_reactor', [
               'CIC',
               'CPC',
@@ -75,6 +168,15 @@ ServerEvents.recipes(event => {
               C: 'cosmiccore:high_temperature_fission_casing',
               I: 'gtceu:ev_electric_pump'
        })
+       event.shaped('gtceu:pulse_heat_exchanger', [
+              'CIC',
+              'CPC',
+              'CIC',
+       ], {
+              P: 'gtceu:titanium_pipe_casing',
+              C: 'cosmiccore:highly_conductive_fission_casing',
+              I: 'gtceu:hv_voltage_coil'
+       })
        event.remove({ output: 'architects_palette:charcoal_block' })
        event.shaped('architects_palette:charcoal_block', [
               'CC',
@@ -82,6 +184,14 @@ ServerEvents.recipes(event => {
        ], {
               C: 'minecraft:charcoal'
        })
+       
+      event.recipes.gtceu.assembler('ug_catalyst')
+      .itemInputs(['minecraft:heart_of_the_sea','aether:bronze_dungeon_key','aether:silver_dungeon_key','aether:gold_dungeon_key','#gtceu:circuits/hv',])
+      .inputFluids('gtceu:source_oils 12000')
+      .itemOutputs('undergarden:catalyst')
+      .circuit(2)
+      .duration(160)
+      .EUt(GTValues.VA[GTValues.EV]);
        event.recipes.gtceu.forge_hammer('shatter_the_seal')
               .itemInputs('nether_remastered:seal_of_the_underworld_item')
               .itemOutputs('8x kubejs:seal_shards')
