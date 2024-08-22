@@ -9,15 +9,16 @@ let yeet = (itemName) => {
 
        })
 }
+
 ServerEvents.tags('item', event => {
        event.add('thinair:heavy_breathing_equipment', 'ad_astra:space_helmet')
        event.add('thinair:heavy_breathing_equipment', 'kubejs:nano_respirator')
        event.add('thinair:breathing_equipment', 'kubejs:nano_respirator')
        event.add('gtceu:ppe_armor', 'kubejs:nano_respirator')
-       event.add('gtceu:ppe_armor', 'kubejs:rebreather')
+       event.add('gtceu:ppe_armor', 'kubejs:reinforced_respirator')
        event.add('gtceu:ppe_armor', 'thinair:respirator')
-       event.add('thinair:breathing_equipment', 'kubejs:rebreather')
-       event.add('curios:head', 'kubejs:rebreather')
+       event.add('thinair:breathing_equipment', 'kubejs:reinforced_respirator')
+       event.add('curios:head', 'kubejs:reinforced_respirator')
        event.add('curios:head', 'kubejs:nano_respirator')
        event.add('curios:charm', 'gtceu:hv_item_magnet')
        event.add('curios:charm', 'gtceu:lv_item_magnet')
@@ -48,6 +49,77 @@ ServerEvents.recipes(event => {
        event.remove({ id: 'gtceu:extractor/extract_luminite_ingot' })
        event.remove({ id: 'gtceu:extractor/extract_luminite_block' })
        event.remove({ id: 'gtceu:extractor/extract_luminite_nugget' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_empty_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_empty_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_plate_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_plate_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_gear_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_gear_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_credit_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_credit_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_bottle_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_bottle_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_ingot_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_ingot_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_ball_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_ball_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_block_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_block_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_nugget_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_nugget_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_cylinder_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_cylinder_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_anvil_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_anvil_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_name_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_name_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_small_gear_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_small_gear_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_rotor_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_rotor_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_pill_casting_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_pill_casting_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_plate_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_plate_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_rod_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_rod_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_rod_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_ring_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_ring_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_cell_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_cell_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_ingot_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_ingot_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_wire_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_wire_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_tiny_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_tiny_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_small_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_small_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_normal_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_normal_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_large_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_large_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_huge_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_huge_pipe_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_block_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_block_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_gear_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_gear_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_bottle_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_bottle_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_foil_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_foil_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_small_gear_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_small_gear_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_long_rod_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_long_rod_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_rotor_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_rotor_extruder_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_bolt_extruder_mold' })
+       event.remove({ id: 'gtceu:arc_furnace/arc_bolt_extruder_mold' })
+       event.remove({ id: 'gtceu:shaped/good_circuit_board' })
+
 
        event.remove({ id: 'paraglider:paraglider' })
        event.shaped('paraglider:paraglider', [
@@ -66,6 +138,27 @@ ServerEvents.recipes(event => {
               S: 'minecraft:echo_shard',
               W: 'kubejs:seal_shards'
        })
+       event.shaped('cosmiccore:drygmy_grove', [
+              'PCP',
+              'WSW',
+              'PCP',
+       ], {
+              C: '#gtceu:circuits/ev',
+              W: 'ars_nouveau:drygmy_charm',
+              S: 'gtceu:clean_machine_casing',
+              P: 'gtceu:palladium_plate'
+       })
+       event.shaped('kubejs:reinforced_respirator', [
+              ' R ',
+              'RFR',
+              'CSC',
+       ], {
+              C: 'gtceu:charcoal_dust',
+              S: 'gtceu:steel_plate',
+              F: 'thinair:respirator',
+              R: 'gtceu:steel_ring'
+
+       })
        event.shaped('gtceu:molten_salt_reactor', [
               'CIC',
               'CPC',
@@ -75,6 +168,15 @@ ServerEvents.recipes(event => {
               C: 'cosmiccore:high_temperature_fission_casing',
               I: 'gtceu:ev_electric_pump'
        })
+       event.shaped('gtceu:pulse_heat_exchanger', [
+              'CIC',
+              'CPC',
+              'CIC',
+       ], {
+              P: 'gtceu:titanium_pipe_casing',
+              C: 'cosmiccore:highly_conductive_fission_casing',
+              I: 'gtceu:hv_voltage_coil'
+       })
        event.remove({ output: 'architects_palette:charcoal_block' })
        event.shaped('architects_palette:charcoal_block', [
               'CC',
@@ -82,6 +184,14 @@ ServerEvents.recipes(event => {
        ], {
               C: 'minecraft:charcoal'
        })
+       
+      event.recipes.gtceu.assembler('ug_catalyst')
+      .itemInputs(['minecraft:heart_of_the_sea','aether:bronze_dungeon_key','aether:silver_dungeon_key','aether:gold_dungeon_key','#gtceu:circuits/hv',])
+      .inputFluids('gtceu:source_oils 12000')
+      .itemOutputs('undergarden:catalyst')
+      .circuit(2)
+      .duration(160)
+      .EUt(GTValues.VA[GTValues.EV]);
        event.recipes.gtceu.forge_hammer('shatter_the_seal')
               .itemInputs('nether_remastered:seal_of_the_underworld_item')
               .itemOutputs('8x kubejs:seal_shards')
@@ -130,6 +240,14 @@ ServerEvents.recipes(event => {
               .chancedOutput(Item.of('nethersdelight:propelpearl', 1), 5000, 500)
               .duration(160)
               .EUt(16);
+       event.recipes.gtceu.flora_nurturer('pearl_cultivation_super')
+              .notConsumable('nethersdelight:propelpearl')
+              .inputFluids('gtceu:nutrient_solution 50')
+              .itemOutputs('8x cosmiccore:overloaded_pearls')
+              .itemOutputs('4x nethersdelight:propelpearl')
+              .chancedOutput(Item.of('nethersdelight:propelpearl', 3), 5000, 500)
+              .duration(160)
+              .EUt(16);
        event.recipes.gtceu.nether_catalyzer('cosmiccore:pearl_catalyzing')
               .itemInputs('cosmiccore:overloaded_pearls')
               .outputFluids(Fluid.of('gtceu:ethanol', 250))
@@ -149,12 +267,11 @@ ServerEvents.recipes(event => {
               .chancedOutput(Item.of('ars_nouveau:magebloom', 4), 5000, 750)
               .duration(160)
               .EUt(GTValues.VA[GTValues.LV] / 2);
-       event.recipes.gtceu.flora_nurturer('cosmiccore:soul_cultivation')
-              .notConsumable('cold_sweat:soul_sprout')
-              .notConsumable('minecraft:soul_sand')
-              .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 500))
-              .itemOutputs('cold_sweat:soul_sprout')
-              .chancedOutput(Item.of('cold_sweat:soul_sprout', 1), 2500, 500)
+       event.recipes.gtceu.flora_nurturer('cosmiccore:magebloom_cultivation_nutrient_solution')
+              .notConsumable('ars_nouveau:magebloom_crop')
+              .inputFluids('gtceu:nutrient_solution 50')
+              .itemOutputs('16x ars_nouveau:magebloom')
+              .chancedOutput(Item.of('ars_nouveau:magebloom', 6), 5000, 750)
               .duration(160)
               .EUt(GTValues.VA[GTValues.LV] / 2);
        event.recipes.gtceu.mixer('cosmiccore:soul_salt_water_mixing')
@@ -331,7 +448,7 @@ ServerEvents.recipes(event => {
               W: 'gtceu:lpic_chip',
               I: '#gtceu:circuits/iv',
               P: 'gtceu:platinum_quadruple_wire'
-              
+
        })
 
 
@@ -344,7 +461,7 @@ ServerEvents.recipes(event => {
        event.recipes.botania.runic_altar('kubejs:mechanical_rosa_arcana', ['botania:rosa_arcana', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
        event.recipes.botania.runic_altar('kubejs:mechanical_rafflowsia', ['botania:rafflowsia', 'botania:blacker_lotus', '#gtceu:circuits/mv', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/mv'], 50000)
 
-       //Sleeping Bags
+       //Sleeping Bags & Antiblocks or I guess anything with the 16 dyes
        let dye = [
               'white',
               'orange',
@@ -364,7 +481,7 @@ ServerEvents.recipes(event => {
               'black'
        ]
        dye.forEach(dye => {
-              event.remove({ id: `comforts:sleeping_bag_${dye}`})
+              event.remove({ id: `comforts:sleeping_bag_${dye}` })
               event.shaped(`comforts:sleeping_bag_${dye}`, [
                      '   ',
                      'WCC',
@@ -374,6 +491,23 @@ ServerEvents.recipes(event => {
                      C: `minecraft:${dye}_carpet`,
                      L: 'cosmiccore:waxed_leather'
               })
+              event.shaped(`3x cosmiccore:antiblock_${dye}`, [
+                     'GDG',
+                     'GAG',
+                     'GDG'
+              ], {
+                     G: 'minecraft:glass',
+                     D: 'minecraft:glowstone_dust',
+                     A: `minecraft:${dye}_dye`
+              })
+              event.recipes.gtceu.assembler(`cosmiccore:antiblock_${dye}`)
+                     .itemInputs('8x minecraft:glass', '2x minecraft:glowstone_dust')
+                     .inputFluids(`gtceu:${dye}_dye 144`)
+                     .itemOutputs(`8x cosmiccore:antiblock_${dye}`)
+                     .circuit(11)
+                     .duration(80)
+                     .EUt(GTValues.VA[GTValues.LV])
+
        })
 })
 

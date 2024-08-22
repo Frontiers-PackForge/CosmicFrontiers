@@ -2,7 +2,17 @@ GTCEuServerEvents.fluidVeins(event => {
     event.add('gtceu:undergarden_virulent_cloggrum_mixture', vein => {
         vein.dimensions('undergarden:undergarden')
         vein.fluid(() => Fluid.of('gtceu:undergarden_virulent_cloggrum_mixture').fluid)
-        vein.weight(600)
+        vein.weight(20)
+        vein.minimumYield(200)
+        vein.maximumYield(720)
+        vein.depletionAmount(1)
+        vein.depletionChance(1)
+        vein.depletedYield(200)
+    })
+    event.add('gtceu:swamp_sediment', vein => {
+        vein.dimensions('undergarden:undergarden')
+        vein.fluid(() => Fluid.of('gtceu:swamp_sediment').fluid)
+        vein.weight(50)
         vein.minimumYield(200)
         vein.maximumYield(720)
         vein.depletionAmount(1)
@@ -10,7 +20,7 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletedYield(200)
     })
     event.add('gtceu:nether_slag_mk_1', vein => {
-        vein.dimensions('minecraft:nether')
+        vein.dimensions('minecraft:the_nether')
         vein.fluid(() => Fluid.of('gtceu:deeply_withered_nether_slag').fluid)
         vein.weight(50)
         vein.minimumYield(250)
@@ -20,7 +30,7 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletedYield(200)
     })
     event.add('gtceu:pyroflux', vein => {
-        vein.dimensions('minecraft:nether')
+        vein.dimensions('minecraft:the_nether')
         vein.fluid(() => Fluid.of('gtceu:pyroflux').fluid)
         vein.weight(20)
         vein.minimumYield(150)

@@ -13,7 +13,7 @@ let yeet = (itemName) => {
     event.add('forge:viewers/hidden_from_recipe', itemName)
   })
 }
-let DESTROY = ['mae2:256x_crafting_accelerator', 'mae2:64x_crafting_accelerator', 'mae2:16x_crafting_accelerator', 'mae2:4x_crafting_accelerator','gregiceng:ev_input_buffer','gregiceng:iv_input_buffer', 'gregiceng:luv_input_buffer', 'gregiceng:zpm_input_buffer', 'gregiceng:uv_input_buffer', 'gregiceng:uhv_input_buffer', 'gregiceng:uev_input_buffer', 'gregiceng:uiv_input_buffer', 'gregiceng:uxv_input_buffer', 'gregiceng:opv_input_buffer', 'gregiceng:max_input_buffer', 'gregiceng:ev_output_buffer', 'gregiceng:iv_output_buffer', 'gregiceng:luv_output_buffer', 'gregiceng:zpm_output_buffer', 'gregiceng:uv_output_buffer', 'gregiceng:uhv_output_buffer', 'gregiceng:uev_output_buffer', 'gregiceng:uiv_output_buffer', 'gregiceng:uxv_output_buffer', 'gregiceng:opv_output_buffer', 'gregiceng:max_output_buffer']
+let DESTROY = ['mae2:256x_crafting_accelerator', 'mae2:64x_crafting_accelerator', 'mae2:16x_crafting_accelerator', 'mae2:4x_crafting_accelerator']
 
 ServerEvents.tags('item', event => {
   event.add('forge:viewers/hidden_from_recipe', DESTROY)
@@ -397,13 +397,13 @@ ServerEvents.recipes(event => {
     .duration(80)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.assembler('arseng:basic_card_craft')
-    .itemInputs(['16x gtceu:fine_red_alloy_wire', '4x gtceu:steel_plate', '4x gtceu:rose_gold_plate', 'gtceu:good_electronic_circuit'])
+    .itemInputs(['16x gtceu:fine_red_alloy_wire', '4x gtceu:steel_plate', '4x gtceu:rose_gold_plate', '#gtceu:circuits/mv'])
     .inputFluids(`gtceu:soldering_alloy 144`)
     .itemOutputs('4x ae2:basic_card')
     .duration(80)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.assembler('arseng:adv_card_craft')
-    .itemInputs(['16x gtceu:fine_red_alloy_wire', '4x gtceu:steel_plate', '3x gtceu:diamond_plate', 'gtceu:good_electronic_circuit'])
+    .itemInputs(['16x gtceu:fine_red_alloy_wire', '4x gtceu:steel_plate', '3x gtceu:diamond_plate', '#gtceu:circuits/mv'])
     .inputFluids(`gtceu:soldering_alloy 144`)
     .itemOutputs('4x ae2:advanced_card')
     .duration(80)
@@ -479,21 +479,6 @@ event.recipes.gtceu.assembler('extended_export_bus_upgrade_from_bus')
   .circuit(3)
   .duration(90)
   .EUt(GTValues.VA[GTValues.EV]);
-event.recipes.gtceu.assembler('gregeng_stocking_item')
-  .itemInputs(['gtceu:ev_input_bus', 'expatternprovider:ex_interface', '4x ae2:speed_card'])
-  .inputFluids(`gtceu:soldering_alloy 576`)
-  .itemOutputs('gregiceng:stocking_bus')
-  .circuit(1)
-  .duration(90)
-  .EUt(GTValues.VA[GTValues.EV]);
-event.recipes.gtceu.assembler('gregeng_stocking_fluid')
-  .itemInputs(['gtceu:ev_input_hatch', 'expatternprovider:ex_interface', '4x ae2:speed_card'])
-  .inputFluids(`gtceu:soldering_alloy 576`)
-  .itemOutputs('gregiceng:stocking_hatch')
-  .circuit(1)
-  .duration(90)
-  .EUt(GTValues.VA[GTValues.EV]);
-
   event.shaped('2x expatternprovider:wireless_connect', [
     'RDE',
     'QHQ',

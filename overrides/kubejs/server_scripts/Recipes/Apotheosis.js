@@ -7,6 +7,6 @@ ServerEvents.recipes(event => {
 
 
 })
-ServerEvents.tags('item', event => {
-    event.add('apotheosis:rarity_materials', 'minecraft:diamond')
-  })
+// ServerEvents.tags('item', event => {
+//     event.add('apotheosis:rarity_materials', 'minecraft:diamond')
+//   })

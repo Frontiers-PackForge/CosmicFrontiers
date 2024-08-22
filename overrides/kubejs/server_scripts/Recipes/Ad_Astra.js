@@ -67,6 +67,9 @@ ServerEvents.tags('item', event => {
   event.add('ad_astra:space_suit_items', 'gtceu:quarktech_leggings')
   event.add('ad_astra:space_suit_items', 'gtceu:quarktech_boots')
   event.add('ad_astra:space_suit_items', 'gtceu:quarktech_helmet')
+  event.add('ad_astra:space_suit_items', 'cosmiccore:vomahine_warptech_helmet')
+  event.add('ad_astra:space_suit_items', 'cosmiccore:vomahine_warptech_leggings')
+  event.add('ad_astra:space_suit_items', 'cosmiccore:vomahine_warptech_boots')
 })
 
 ServerEvents.tags('fluid', event => {

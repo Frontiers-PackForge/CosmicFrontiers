@@ -6,11 +6,11 @@ ItemEvents.modification(event => {
           food.fastToEat(true)
       }
     })
-    event.modify('cosmic_meatballs', item => {
+    event.modify('kubejs:cosmic_meatballs', item => {
       item.foodProperties = food => {
-          food.hunger(100)
-          food.saturation(0.8)
-          food.fastToEat(true)
+          food.hunger(1000000)
+          food.saturation(10000)
+          food.fastToEat(false)
       }
     })
 })

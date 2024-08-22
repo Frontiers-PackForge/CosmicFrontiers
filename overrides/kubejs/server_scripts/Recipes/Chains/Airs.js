@@ -21,6 +21,6 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:sulfur_trioxide 30000')
         .outputFluids('gtceu:coal_tar 15000')
         .outputFluids('gtceu:kerosene 15000')
-        .duration(8000)
-        .EUt(GTValues.VA[GTValues.LuV]);
+        .duration(4000)
+        .EUt(GTValues.VA[GTValues.IV]);
 })

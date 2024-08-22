@@ -1,0 +1,27 @@
+
+["Config for Cave Dust"]
+	#translation{key='menu.cavedust.Z.tooltip', args=[]}
+	#Range: 1 ~ 50
+	dimensionX = 5
+	#translation{key='menu.cavedust.enabled.tooltip', args=[]}
+	caveDustEnabled = true
+	#translation{key='menu.cavedust.sealevelcheck.tooltip', args=[]}
+	seaLevelCheck = true
+	#translation{key='menu.cavedust.superflatstatus.tooltip', args=[]}
+	superFlatStatus = false
+	#translation{key='menu.cavedust.upperlimit.tooltip', args=[]}
+	#Range: 0 ~ 255
+	upperLimit = 64
+	#translation{key='menu.cavedust.lowerlimit.tooltip', args=[]}
+	#Range: -255 ~ 0
+	lowerLimit = -64
+	#translation{key='menu.cavedust.particlemultiplier.tooltip', args=[]}
+	#Range: 1 ~ 100
+	particleMultiplier = 1
+	#translation{key='menu.cavedust.particlemultiplier.tooltip', args=[]}
+	#Range: 1 ~ 100
+	particleMultiplierMultiplier = 10
+	#translation{key='menu.cavedust.particle.tooltip', args=[]}
+	#Range: 0 ~ 95
+	particleID = 80
+

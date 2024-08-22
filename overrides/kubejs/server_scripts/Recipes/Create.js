@@ -381,7 +381,7 @@ ServerEvents.recipes(event => {
     .EUt(8);
   //Fluid Tank
   event.remove({output: 'create:fluid_tank'})
-  event.shaped('create:fluid_tank' ,[
+  event.shaped('4x create:fluid_tank' ,[
     'CBC',
     'GDG',
     'CBC'

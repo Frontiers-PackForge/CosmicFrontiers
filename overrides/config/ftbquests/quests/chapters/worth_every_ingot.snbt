@@ -9,7 +9,10 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2AF737CA4D527559"]
+			dependencies: [
+				"2AF737CA4D527559"
+				"0CE1B054263D0C44"
+			]
 			hide: true
 			id: "635C885360A8A8A9"
 			size: 2.0d
@@ -24,7 +27,19 @@
 		}
 		{
 			dependencies: ["635C885360A8A8A9"]
+			description: ["Welcome to bloodmagic! Only the key points are mentioned in the LUV quests here to guide you down the right path. There are many fun side recipes to help you along, explore, and integrate life essence into your factory!"]
 			id: "32789BABC2728C07"
+			rewards: [{
+				id: "214B37588581C1D5"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "bloodmagic:guide"
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "To bleed for spite and Godhood"
@@ -34,77 +49,53 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["32789BABC2728C07"]
+			dependencies: ["635C885360A8A8A9"]
+			hide_dependency_lines: true
 			id: "7DBD11F232DF0686"
 			tasks: [{
 				id: "032576E7B38F17B0"
 				item: "gtceu:carbon_fiber_plate"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.0d
+			x: 2.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["7DBD11F232DF0686"]
+			dependencies: [
+				"7DBD11F232DF0686"
+				"32789BABC2728C07"
+			]
 			id: "5F9F91F44409FC24"
 			tasks: [{
 				id: "2373399B7CF7CB9D"
 				item: "bloodmagic:blankslate"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 2.0d
 			y: -5.0d
 		}
 		{
-			dependencies: ["5F9F91F44409FC24"]
-			id: "4DEB372C6F19C994"
-			tasks: [{
-				id: "1AA8B2104FDDB676"
-				item: "occultism:otherstone_tablet"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["5F9F91F44409FC24"]
-			id: "235D543FA547BD4B"
-			tasks: [{
-				id: "2046CBF7C1D484AD"
-				item: "bhc:soul_heart_crystal"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["5F9F91F44409FC24"]
-			id: "0C220E4C4713034D"
-			tasks: [{
-				id: "017CEB34C3FAAD76"
-				item: "bloodmagic:voiding_anointment"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -6.0d
-		}
-		{
 			dependencies: [
-				"0C220E4C4713034D"
-				"4DEB372C6F19C994"
-				"235D543FA547BD4B"
+				"32789BABC2728C07"
+				"5F9F91F44409FC24"
+			]
+			description: [
+				"Runes are the Core of your Blood Altar Upgrades, Each Tier requires more than the last"
+				""
+				"Each tier allows access to better and better infusions, and more altar bonuses."
 			]
 			id: "74A99A7515B319B1"
+			subtitle: "Blood Soaked"
 			tasks: [{
 				id: "1953C30FECD8C032"
 				item: "bloodmagic:blankrune"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -7.5d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["74A99A7515B319B1"]
@@ -115,7 +106,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["74A99A7515B319B1"]
@@ -132,24 +123,30 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: -7.5d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["74A99A7515B319B1"]
+			dependencies: ["49DDC728A826971D"]
+			description: [
+				"If you're tired of stabbing yourself, feel free to farm villagers and use a Sacrificial Dagger to gain massive amounts of LP."
+				""
+				"Don't forget you have Apotheosis Spawners... And Capturing ;)"
+			]
 			id: "2A0A206B6487F7C8"
+			subtitle: "Sacrifices"
 			tasks: [{
 				id: "3C4F339F2C137DDE"
 				item: "bloodmagic:reinforcedslate"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -8.5d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"119F6B400546B82A"
-				"2A0A206B6487F7C8"
+				"40AB82BA2E32E1AE"
 			]
 			id: "6D3373C5A4F1370B"
 			tasks: [{
@@ -157,8 +154,8 @@
 				item: "bloodmagic:infusedslate"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -9.5d
+			x: 4.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -171,8 +168,8 @@
 				item: "bloodmagic:demonslate"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -10.5d
+			x: 6.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -185,18 +182,8 @@
 				item: "bloodmagic:etherealslate"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -11.5d
-		}
-		{
-			id: "67C4AED657F0A07B"
-			tasks: [{
-				id: "65E22C4DA1361459"
-				item: "gtceu:soul_forge"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -14.5d
+			x: 8.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2B2BEF4A43975DE1"]
@@ -208,8 +195,8 @@
 				item: "cosmiccore:zpm_soul_input_hatch"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -13.0d
+			x: 10.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["78E1208BE4B2F5C0"]
@@ -219,8 +206,8 @@
 				item: "bloodmagic:weakbloodshard"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -11.0d
+			x: 5.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["6D3373C5A4F1370B"]
@@ -230,8 +217,8 @@
 				item: "bloodmagic:reagentbinding"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -10.0d
+			x: 4.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["214B0DA62DDCFCB9"]
@@ -241,19 +228,19 @@
 				item: "bloodmagic:reagentsuppression"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -11.0d
+			x: 6.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["0BD17C5BA7AA62E4"]
 			id: "123B5972F7A26782"
 			tasks: [{
-				id: "241A1A1946EEC438"
-				item: "extendedcrafting:luminessence"
+				id: "099701D3BC711440"
+				item: "occultism:afrit_essence"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -12.0d
+			x: 7.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2A0A206B6487F7C8"]
@@ -263,8 +250,8 @@
 				item: "gtceu:luv_electromagnetic_separator"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -9.0d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["73653E8D4F6EF1C3"]
@@ -274,8 +261,8 @@
 				item: "bloodmagic:reagentmagnetism"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -10.0d
+			x: 5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["65F7E83614AEABEA"]
@@ -412,11 +399,21 @@
 		}
 		{
 			dependencies: ["635C885360A8A8A9"]
+			description: [
+				"If you haven't noticed yet, there's no Fusion on this tab."
+				"You may notice plasma doesn't have a recipe. Yet."
+				""
+				"You may notice &lPlasma Turbines&r do not have any valid fuels."
+				"Plasma power is disabled. For now and most likely forever."
+				""
+				"Let's get to work building a suitable replacement"
+			]
+			icon: "createdeco:decal_electrical"
 			id: "50D17DD7808A9A0D"
+			subtitle: "A replacement for Fusion"
 			tasks: [{
-				id: "76977CF88CA02F7C"
-				item: "createdeco:decal_electrical"
-				type: "item"
+				id: "1C726111AF1DFFF8"
+				type: "checkmark"
 			}]
 			x: 1.5d
 			y: 0.0d
@@ -426,14 +423,57 @@
 				"46D8E8E4D6AAF98F"
 				"3030163CA604944A"
 			]
+			description: [
+				"Who would have thought aerating a concoction of fuel along with Naquadah would make such a powerful fuel. Just make sure your reactors don't go critical as you might just erase the planet you stand on."
+				""
+				""
+				"One Naquahine Reactor Provides &l16 LuV Amps&r of energy with Mk1 Fuel. Stronger fuels exist, but your magnetic containment system would be torn apart like wet paper. "
+				"&l&cDO NOT RUN MK2 FUEL IN A REACTOR CAPABLE OF HANDLING MK1&r"
+				""
+				"Welcome to your core power producer for the future. Oh and don't forget the mini reactors as well, they're great for remote power, albeit awfully inefficient."
+			]
+			icon: "cosmiccore:naquahine_pressure_reactor"
 			id: "52E24C3A025D1A04"
 			shape: "hexagon"
 			size: 2.0d
-			tasks: [{
-				id: "7788E98C567E1635"
-				item: "cosmiccore:naquahine_pressure_reactor"
-				type: "item"
-			}]
+			subtitle: "Birthing minature suns for power"
+			tasks: [
+				{
+					id: "7788E98C567E1635"
+					item: "cosmiccore:naquahine_pressure_reactor"
+					type: "item"
+				}
+				{
+					count: 44L
+					id: "454BC7A4DA3EC9AB"
+					item: { Count: 44, id: "gtceu:naquadah_alloy_frame" }
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "690CA757E81683E6"
+					item: "gtceu:fusion_glass"
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "57BD1B8B93790228"
+					item: { Count: 28, id: "cosmiccore:resonantly_tuned_virtue_meld_casing" }
+					type: "item"
+				}
+				{
+					count: 169L
+					id: "326655AF3482D030"
+					item: { Count: 169, id: "cosmiccore:naquadah_pressure_resistant_casing" }
+					type: "item"
+				}
+				{
+					count: 51L
+					id: "351939E5D86F7102"
+					item: { Count: 51, id: "cosmiccore:fusion_grade_magnet" }
+					type: "item"
+				}
+			]
 			x: 10.0d
 			y: 0.0d
 		}
@@ -457,6 +497,951 @@
 			x: 8.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			id: "589E24AF4439F383"
+			subtitle: "Naquadah Refinement pt.2"
+			tasks: [{
+				id: "29529FE3F1F29BB8"
+				item: "gtceu:naquadah_dust"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["589E24AF4439F383"]
+			icon: "gtceu:impure_enriched_naquadah_solution_bucket"
+			id: "5D3304BD45B278F0"
+			tasks: [
+				{
+					id: "67C6E41CD807EF68"
+					item: "gtceu:impure_enriched_naquadah_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "405296BCE4344C2A"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["589E24AF4439F383"]
+			icon: "gtceu:impure_enriched_naquadah_solution_bucket"
+			id: "1AE4A81373878E24"
+			tasks: [
+				{
+					id: "3A1B6E6D2CA6B0F3"
+					item: "gtceu:impure_naquadria_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "56548408E6F10CDB"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5D3304BD45B278F0"]
+			icon: "gtceu:enriched_naquadah_solution_bucket"
+			id: "1095E899F62521A4"
+			tasks: [
+				{
+					id: "5A435CE2366F6BFB"
+					item: "gtceu:enriched_naquadah_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "5F4C5762CD3A8050"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1AE4A81373878E24"]
+			icon: "gtceu:naquadria_solution_bucket"
+			id: "6D927EB32FBDB29A"
+			tasks: [
+				{
+					id: "69F568817C91631C"
+					item: "gtceu:naquadria_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "5B4101D12D46B2B7"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6D927EB32FBDB29A"]
+			icon: "gtceu:acidic_naquadria_solution_bucket"
+			id: "12845D456116916C"
+			tasks: [
+				{
+					id: "51033A10CCFA32B0"
+					item: "gtceu:acidic_naquadria_solution_bucket"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "6749977C157BF456"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1095E899F62521A4"]
+			icon: "gtceu:acidic_enriched_naquadah_solution_bucket"
+			id: "4C5C380230984642"
+			tasks: [
+				{
+					id: "76E631A2E303B755"
+					item: "gtceu:acidic_enriched_naquadah_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "4387789C84F6716E"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"12845D456116916C"
+				"4C5C380230984642"
+			]
+			description: [
+				"Both Enriched Naq and Naqria wastes recycle back into produces from earlier in this chain. "
+				""
+				"Get creative to loop the excess back in and process your naq more efficiently!"
+				"This can help you overcome your trinium shortages too, at least until you have better acquisition methods."
+			]
+			icon: "gtceu:acidic_naquadria_solution_bucket"
+			id: "3EB72D10B03D6A71"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "068EBD0D76FB2B1E"
+					item: "gtceu:enriched_naquadah_waste_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "446014380D16BE09"
+					item: "gtceu:naquadria_waste_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Wastes"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C5C380230984642"]
+			id: "40E83856666DD961"
+			tasks: [{
+				id: "57422DD751A4D7E6"
+				item: "gtceu:enriched_naquadah_sulfate_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["12845D456116916C"]
+			id: "4C3664BE7F702120"
+			tasks: [{
+				id: "09375A2D48FA1319"
+				item: "gtceu:naquadria_sulfate_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1AE4A81373878E24"]
+			id: "65E14C91E33A2FFA"
+			tasks: [{
+				id: "58FAB7828A308458"
+				item: "gtceu:indium_phosphide_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5D3304BD45B278F0"]
+			id: "6CA80510D1A6222D"
+			tasks: [{
+				id: "583756AA97026493"
+				item: "gtceu:trinium_sulfide_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6CA80510D1A6222D"]
+			id: "48EA04671E16859B"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "105DD2440F52630D"
+				item: "gtceu:trinium_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["40E83856666DD961"]
+			id: "5773A16CD9368022"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "331404E6189B719C"
+				item: "gtceu:enriched_naquadah_ingot"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4C3664BE7F702120"]
+			id: "4CB55CFBB968311A"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "216DE89A748681D9"
+				item: "gtceu:naquadria_ingot"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["48EA04671E16859B"]
+			id: "7700F9B9E7EA4F91"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "0C5BEDC2E646AB5B"
+				item: "gtceu:naquadah_alloy_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5773A16CD9368022"]
+			id: "27C17BA22F91CDA0"
+			shape: "hexagon"
+			tasks: [{
+				id: "1446D54FE04C416D"
+				item: "cosmiccore:naquadric_superalloy_ingot"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"27C17BA22F91CDA0"
+				"7700F9B9E7EA4F91"
+				"4D0330D421EDD5B1"
+			]
+			id: "079024EEE895822F"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "7A421C0FDBC4FC94"
+				item: "cosmiccore:naquadric_superalloy_coil_block"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			hide_dependency_lines: true
+			id: "632091FC1E5DC0EC"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "79C00DE3CB66798A"
+				item: "gtceu:luv_assembler"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"632091FC1E5DC0EC"
+				"47318FA4836A00AE"
+			]
+			id: "4D0330D421EDD5B1"
+			tasks: [{
+				id: "79699BBDA184D1EF"
+				item: "gtceu:luv_energy_input_hatch"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"48EA04671E16859B"
+				"32789BABC2728C07"
+			]
+			description: [
+				"Soaked in (your?) own blood, Trinavine exhibits the versitility of trinium and the awful durability of iron... Ig this is the benefit of eating just steak for months."
+				""
+				"You believe there is further research potential for this floppy garbage alloy."
+			]
+			id: "32EC05BCE9911025"
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Bloody Metal"
+			tasks: [{
+				id: "1D5A7EB40247C63F"
+				item: "cosmiccore:trinavine_dust"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["33EAB75E7D2CAFDA"]
+			id: "47318FA4836A00AE"
+			tasks: [{
+				id: "49BAA6035E56727B"
+				item: "cosmiccore:trinavine_plate"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["32EC05BCE9911025"]
+			id: "33EAB75E7D2CAFDA"
+			tasks: [{
+				id: "41E621F6C01C94FD"
+				item: "cosmiccore:trinavine_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5F9F91F44409FC24"]
+			id: "699C65FD475466BD"
+			tasks: [{
+				id: "68C943DFBAAF11E4"
+				item: "bloodmagic:weakbloodorb"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2A0A206B6487F7C8"]
+			id: "19D415D735BC2389"
+			tasks: [{
+				id: "261408DB98EF8F08"
+				item: "bloodmagic:apprenticebloodorb"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6D3373C5A4F1370B"]
+			id: "1063DFB8C4752524"
+			tasks: [{
+				id: "467CBA8A7C1B59B6"
+				item: "bloodmagic:magicianbloodorb"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["214B0DA62DDCFCB9"]
+			id: "33C7B4BF816453AA"
+			tasks: [{
+				id: "2DA2F59C35B10A3E"
+				item: "bloodmagic:masterbloodorb"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2B2BEF4A43975DE1"]
+			id: "7902B7ABB155A3A5"
+			tasks: [{
+				id: "70B369CE451568DB"
+				item: "bloodmagic:archmagebloodorb"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["214B0DA62DDCFCB9"]
+			id: "0C546B1E2F9CD617"
+			tasks: [{
+				id: "0C630DAEEB7CA602"
+				item: "bloodmagic:masterritualstone"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"0C546B1E2F9CD617"
+				"017F0D08C95CBEEE"
+			]
+			icon: "occultism:jei_dummy/none"
+			id: "744F447375B1D334"
+			shape: "circle"
+			x: 10.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["744F447375B1D334"]
+			id: "059872991CDC308F"
+			tasks: [{
+				id: "06352A55AF09697A"
+				item: "biomesoplenty:blood_bucket"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["32789BABC2728C07"]
+			description: ["Demonic Will, will end up coming into play here in the future. I am just unsure how to implement it atm."]
+			id: "2FE7FBD01B53D1F2"
+			shape: "gear"
+			tasks: [{
+				id: "78EC6061ACD5984F"
+				item: {
+					Count: 1
+					id: "bloodmagic:basemonstersoul"
+					tag: {
+						souls: 5.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "Where's Demonic Will?"
+			x: -0.8571428571428612d
+			y: -4.107142857142854d
+		}
+		{
+			dependencies: ["433CFBEBF8EFB418"]
+			id: "5D5F6E9D1A21EA72"
+			tasks: [{
+				id: "40B7773B7F8F9A96"
+				item: "cosmiccore:vomahine_industrial_chemical_plant"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			icon: "gtceu:ammonia_bucket"
+			id: "68AF42F991DCD6B2"
+			shape: "gear"
+			tasks: [
+				{
+					id: "0F348D52A661624C"
+					item: "gtceu:ammonia_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "5680AE095E49A6BC"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			icon: "gtceu:dichlorobenzidine_bucket"
+			id: "687C43EDB932FBA2"
+			tasks: [
+				{
+					id: "1BBE5B9967DA565A"
+					item: "gtceu:dichlorobenzidine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "60E873B378DAA5DE"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			icon: "gtceu:phthalic_acid_bucket"
+			id: "3C630109F2785191"
+			tasks: [
+				{
+					id: "603ECFFD2E57747D"
+					item: "gtceu:phthalic_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7873B8EE2E030B93"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			icon: "gtceu:phenol_bucket"
+			id: "4840CA975F57D3AD"
+			shape: "gear"
+			tasks: [
+				{
+					id: "49E65610DC6976DB"
+					item: "gtceu:phenol_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "169165DB7272C462"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"687C43EDB932FBA2"
+				"68AF42F991DCD6B2"
+			]
+			icon: "gtceu:diaminobenzidine_bucket"
+			id: "13B8104B0C8CB453"
+			tasks: [
+				{
+					id: "78A0E024143121D2"
+					item: "gtceu:diaminobenzidine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "4DCED395E5E1BF0C"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"3C630109F2785191"
+				"4840CA975F57D3AD"
+			]
+			icon: "gtceu:diphenyl_isophthalate_bucket"
+			id: "6542A15289EA7EBB"
+			tasks: [
+				{
+					id: "3829A99D87D5A154"
+					item: "gtceu:diphenyl_isophthalate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7D5E187AB19AF5A4"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"6542A15289EA7EBB"
+				"13B8104B0C8CB453"
+			]
+			id: "4620E116B11CB283"
+			tasks: [{
+				id: "3D097F52DDD20824"
+				item: "gtceu:polybenzimidazole_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4620E116B11CB283"]
+			id: "433CFBEBF8EFB418"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "03331934E24D0122"
+				item: "cosmiccore:vomahine_certified_chemically_resistant_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["076D910F19A6E439"]
+			description: [
+				"Welcome to Crystal CPU's, a much harder CPU core than Nano or Quantum. And require a multi-dimensional setup to fully automate. Some pointers before you start."
+				""
+				"Space Lithography and Circuit Assembling Can only be done in the orbit of earth. This may change, but just assume earth-orbit is where you'll set up most of Crystal Circut processing"
+				""
+				"The processing of Dulumixal Naq Boules can only be done in a permanently hot enviroment."
+				""
+				"The Orbital Tempering Forge has a plethora of useful recipes, And can run EBF recipes in parallel at the cost of a constantly supplying it Pyroflux, It's prone to jamming if supply is cut so make sure to constantly feed your forges (They consume less when idle)"
+				""
+				""
+				"{@pagebreak}"
+				"Trivia Time"
+				""
+				"\"Heavily Refined Silica\" used to be called \"Sifted Silt\" - Which made Crystal CPU's \"Silt Line\". Which scared people due to the premotion of silt coming from \"Water Line\" and the trauma inflicted by GTNH."
+				""
+				"Dulumixal Naq used to be called \"Chromatic Naq\" but was deemed too fancy as Chromia and Other Primal Color elements have yet to be introduced into mainstream production."
+			]
+			id: "45AE9844B1C84454"
+			tasks: [{
+				id: "737EC64A4A9EB086"
+				item: "gtceu:crystal_cpu"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["45AE9844B1C84454"]
+			description: [
+				"The process for asembling your crystal circuits will require an adventure to the orbit of earth."
+				""
+				"No other field of microgravity will work, please make sure you set this up in the orbit of earth."
+			]
+			id: "741EF8867F73802F"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "To Orbit!"
+			tasks: [{
+				id: "1B5AE134D80E7986"
+				item: "ad_astra:earth_globe"
+				type: "item"
+			}]
+			title: "Things are getting tricky"
+			x: -7.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["2A0A206B6487F7C8"]
+			id: "40AB82BA2E32E1AE"
+			tasks: [{
+				id: "099CC9299F496C13"
+				item: "bloodmagic:altar"
+				type: "item"
+			}]
+			title: "Tier 3 Altar!"
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["74A99A7515B319B1"]
+			description: [
+				"You will need 8 Blank runes to make the 2nd tier of altar"
+				""
+				"Check out the Altar Preview inside your Sanguine Scientiem booklet for more information on the structure!"
+			]
+			icon: "bloodmagic:altar"
+			id: "49DDC728A826971D"
+			subtitle: "On your way now"
+			tasks: [{
+				count: 8L
+				id: "52F43F7B005C0C91"
+				item: "bloodmagic:blankrune"
+				type: "item"
+			}]
+			title: "Tier 2 Altar!"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0C546B1E2F9CD617"]
+			id: "5CCA4F0101C8756A"
+			tasks: [{
+				id: "1484CF7AD00CDE4F"
+				item: "bloodmagic:ritualdiviner"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["079024EEE895822F"]
+			id: "076D910F19A6E439"
+			tasks: [{
+				id: "438322CFFCF84CDD"
+				item: "gtceu:europium_ingot"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"32789BABC2728C07"
+				"33EAB75E7D2CAFDA"
+			]
+			description: [
+				"Fusion unlocks the basics of plasma crafting. "
+				"No, you can't use it for power atm, you can't producee plasma's stable and energy dense enough to feed any generator you may have. "
+				""
+				"Naquahine Reactors might be what you're looking for if you need better power"
+			]
+			icon: "gtceu:luv_fusion_reactor"
+			id: "6EA6009DEC0F3345"
+			shape: "hexagon"
+			size: 2.5d
+			subtitle: "The power to fuse."
+			tasks: [
+				{
+					id: "14ECD70017D164AC"
+					item: "gtceu:luv_fusion_reactor"
+					type: "item"
+				}
+				{
+					count: 78L
+					id: "776EB620852AF310"
+					item: "gtceu:fusion_casing"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "50E6B807258CC24B"
+					item: { Count: 4, id: "gtceu:superconducting_coil" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "3EF9EF19A90BD14C"
+					item: "gtceu:luv_energy_input_hatch"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6EA6009DEC0F3345"]
+			icon: "gtceu:resh_neutron_plasma_bucket"
+			id: "1A210957613D6B08"
+			tasks: [
+				{
+					id: "70542BCF4E3C7F94"
+					item: "gtceu:resh_neutron_plasma_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "2B3D6A2A5FF9FD97"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["6EA6009DEC0F3345"]
+			icon: "gtceu:alef_neutron_plasma_bucket"
+			id: "31B3AB781CFECD8E"
+			tasks: [
+				{
+					id: "3D5771A62138EA36"
+					item: "gtceu:alef_neutron_plasma_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "15FC8A30F899206A"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["6EA6009DEC0F3345"]
+			icon: "gtceu:pey_neutron_plasma_bucket"
+			id: "5042601C871072FB"
+			tasks: [
+				{
+					id: "087B7E20DB143F6D"
+					item: "gtceu:pey_neutron_plasma_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "3D28964A078115EE"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["6EA6009DEC0F3345"]
+			icon: "gtceu:ayin_neutron_plasma_bucket"
+			id: "369CE2347BCAF750"
+			tasks: [
+				{
+					id: "60BA5D2CEE43C0EC"
+					item: "gtceu:ayin_neutron_plasma_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "0592E51575FB280B"
+					title: "Chain Quest - Skip me!"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["369CE2347BCAF750"]
+			id: "1BCE2228E409B420"
+			tasks: [{
+				id: "63407C80874BC2BC"
+				item: "gtceu:ayin_neutron_fluid_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5042601C871072FB"]
+			id: "1F1B5CDE1D084ADA"
+			tasks: [{
+				id: "701C5614BFC235DA"
+				item: "gtceu:pey_neutron_gas_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["1A210957613D6B08"]
+			id: "2C79BF8B747DCD34"
+			tasks: [{
+				id: "04BF964A35A98062"
+				item: "gtceu:resh_neutron_meld_dust"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["31B3AB781CFECD8E"]
+			description: ["Don't worry, Aleph Neutron Plasma is the only form, you can't make a different state of matter with it."]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "608C6CF2A6388A9A"
+			shape: "gear"
+			tasks: [{
+				id: "18AAB1983997D572"
+				type: "checkmark"
+			}]
+			title: "Where's the product?"
+			x: 2.5d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"1F1B5CDE1D084ADA"
+				"2C79BF8B747DCD34"
+				"608C6CF2A6388A9A"
+				"1BCE2228E409B420"
+			]
+			description: [""]
+			id: "1B8A508AB2E1E572"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The First Gateway"
+			tasks: [{
+				id: "41E0A03FBFD9EFEB"
+				item: "gtceu:neutronite_ingot"
+				type: "item"
+			}]
+			title: "Neutronite - ZPM Gate #1"
+			x: 0.0d
+			y: -11.0d
+		}
 	]
-	title: "A Great Factory... [&dLuV&r] pt.1"
+	title: "A Factory Soaked In Blood [&dLuV&r]"
 }

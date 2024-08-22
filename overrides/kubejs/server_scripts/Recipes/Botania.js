@@ -63,6 +63,22 @@ ServerEvents.recipes(event => {
         .itemOutputs('botania:mana_glass')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(20)
+    //Rune Etching
+    event.recipes.gtceu.mana_engraver('er_water_rune')
+        .itemInputs(['gtceu:livingrock_plate', '2x crabbersdelight:crab_trap', '4x minecraft:sugar_cane', '4x minecraft:bone_meal', '2x gtceu:manasteel_plate', '2x botania:mana_powder'])
+        .inputFluids('gtceu:potent_mana 4000')
+        .circuit(1)
+        .itemOutputs('8x botania:rune_water')
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(300)
+    event.recipes.gtceu.mana_engraver('er_water_rune_lp_boost')
+        .itemInputs(['gtceu:livingrock_plate', '2x crabbersdelight:crab_trap', '4x minecraft:sugar_cane', '4x minecraft:bone_meal', '2x gtceu:manasteel_plate', '2x botania:mana_powder'])
+        .inputFluids('gtceu:potent_mana 4000')
+        .circuit(2)
+        .soulInput('20000')
+        .itemOutputs('16x botania:rune_water')
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(300)
     //Livingwood
     //Bolt
     event.recipes.gtceu.cutter('gtceu:cutter/cut_livingwood_twig_to_bolt_water')
@@ -747,7 +763,7 @@ ServerEvents.recipes(event => {
         S: '#forge:tools/screwdrivers',
         I: 'gtceu:iron_screw',
         R: 'gtceu:iron_ring',
-        T: 'gtceu:livingwood_rod'
+        T: 'botania:livingwood_twig'
     })
     //Elementium Pickaxe
     event.remove({ output: 'botania:elementium_pickaxe' })
@@ -825,7 +841,7 @@ ServerEvents.recipes(event => {
         S: '#forge:tools/screwdrivers',
         I: 'gtceu:iron_screw',
         R: 'gtceu:iron_ring',
-        T: 'gtceu:livingwood_rod'
+        T: 'botania:livingwood_twig'
     })
     //Terra Shatterer
     event.remove({ output: 'botania:terra_pick' })
@@ -1631,7 +1647,9 @@ ServerEvents.recipes(event => {
     //Dumping this example here for mana infusions, took me a while to figure it out. Will do the same for all recipe types.
     //event.recipes.botania.mana_infusion('input', 'output', 'mana', 'catalyst')
     event.remove({ id: 'botania:mana_infusion/manasteel' })
+    event.remove({ id: 'botania:mana_infusion/manasteel_block' })
     event.recipes.botania.mana_infusion('botania:manasteel_ingot', 'gtceu:blue_alloy_ingot', 4000)
+    event.recipes.botania.mana_infusion('botania:manasteel_block', 'gtceu:blue_alloy_block', 32000)
     //Commented this out because I may be doing something with SS in MV and this may clash w/ it
     // event.recipes.botania.mana_infusion('botania:manasteel_ingot', 'gtceu:stainless_steel_ingot', 1000)
     event.recipes.botania.mana_infusion('botania:blacker_lotus', 'minecraft:wither_rose', 100000)
@@ -1676,6 +1694,12 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:blue_alloy_ingot')
         .itemOutputs('botania:manasteel_ingot')
         .inputFluids(Fluid.of('gtceu:potent_mana', 250))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.mana_fluidizer('manasteel_block_best')
+        .itemInputs('gtceu:blue_alloy_block')
+        .itemOutputs('botania:manasteel_block')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 2000))
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
     //Mana Pearl

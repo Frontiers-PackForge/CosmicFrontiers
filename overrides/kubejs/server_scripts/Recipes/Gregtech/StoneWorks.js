@@ -25,60 +25,71 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.celestial_bore(`boremap_earth`)
         .notConsumable('ad_astra:earth_globe')
         .inputFluids('cosmiccore:prisma 1000000')
-        .itemOutputs('gtceu:raw_nickel',
-            'gtceu:raw_graphite',
-            'gtceu:raw_diamond',
-            'gtceu:raw_coal',
-            'gtceu:raw_redstone',
-            'gtceu:raw_lapis',
-            'minecraft:raw_gold',
-            'minecraft:raw_copper',
-            'minecraft:raw_iron',
-            'gtceu:raw_fullers_earth',
-            'gtceu:raw_gypsum',
-            'gtceu:raw_tin',
-            'gtceu:raw_opal',
-            'gtceu:raw_amethyst',
-            'gtceu:raw_yellow_garnet',
-            'gtceu:raw_red_garnet',
-            'gtceu:raw_green_sapphire',
-            'gtceu:raw_realgar',
-            'gtceu:raw_tricalcium_phosphate',
-            'gtceu:raw_apatite',
-            'gtceu:raw_sulfur',
-            'gtceu:raw_sphalerite',
-            'gtceu:raw_cinnabar',
-            'gtceu:raw_spodumene',
-            'gtceu:raw_lepidolite',
-            'gtceu:raw_salt',
-            'gtceu:raw_rock_salt',
-            'gtceu:raw_cobaltite',
-            'gtceu:raw_nether_quartz',
-            'gtceu:raw_quartzite',
-            'gtceu:raw_certus_quartz',
-            'gtceu:raw_barite',
-            'gtceu:raw_asbestos',
-            'gtceu:raw_cassiterite',
-            'gtceu:raw_pyrochlore',
-            'gtceu:raw_chromite',
-            'gtceu:raw_saltpeter',
-            'gtceu:raw_electrotine',
-            'gtceu:raw_beryllium',
-            'gtceu:raw_vanadium_magnetite',
-            'gtceu:raw_tantalite',
-            'gtceu:raw_pyrolusite',
-            'gtceu:raw_calcite',
-            'gtceu:raw_lead',
-            'gtceu:raw_silver',
-            'gtceu:raw_galena',
-            'gtceu:raw_stibnite',
-            'gtceu:raw_bauxite',
-            'gtceu:raw_olivine',
-            'gtceu:raw_almandine',
-            'gtceu:raw_pyrope',
-            'gtceu:raw_sapphire',
-            'gtceu:raw_talc',
-            'gtceu:raw_kyanite')
+        .inputFluids('gtceu:pyroflux 10000000')
+        .inputFluids('gtceu:lubricant 500000')
+        .itemOutputsRanged('gtceu:raw_nickel', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_graphite', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_diamond', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_coal', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_redstone', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_lapis', 500, 4500)
+        .itemOutputsRanged('minecraft:raw_gold', 500, 4500)
+        .itemOutputsRanged('minecraft:raw_copper', 500, 4500)
+        .itemOutputsRanged('minecraft:raw_iron', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_fullers_earth', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_gypsum', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_tin', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_opal', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_amethyst', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_yellow_garnet', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_red_garnet', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_green_sapphire', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_realgar', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_tricalcium_phosphate', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_apatite', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_sulfur', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_sphalerite', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_cinnabar', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_spodumene', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_lepidolite', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_salt', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_rock_salt', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_cobaltite', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_nether_quartz', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_quartzite', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_certus_quartz', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_barite', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_asbestos', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_cassiterite', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_pyrochlore', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_chromite', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_saltpeter', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_electrotine', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_beryllium', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_vanadium_magnetite', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_tantalite', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_pyrolusite', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_calcite', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_lead', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_silver', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_galena', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_stibnite', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_bauxite', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_olivine', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_almandine', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_pyrope', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_sapphire', 500, 4500)
+        .itemOutputsRanged('gtceu:raw_talc', 500, 4500)
+        .itemOutputsRanged( 'gtceu:raw_kyanite', 500, 4500)
+        .outputFluids('gtceu:oil 5000000')
+        .outputFluids('gtceu:oil_heavy 9500000')
+        .outputFluids('gtceu:oil_medium 500000')
+        .outputFluids('gtceu:oil_light 5500000')
+        .outputFluids('gtceu:salt_water 8800000')
+        .outputFluids('gtceu:natural_gas 375000')
+        .outputFluids('gtceu:pyroflux 500000')
+        .outputFluids('gtceu:deeply_withered_nether_slag 4400000')
+        .outputFluids('minecraft:lava 2500000')
         .duration(36000)
         .EUt(GTValues.VA[GTValues.UHV]);
 })

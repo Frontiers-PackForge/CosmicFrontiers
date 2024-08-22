@@ -94,6 +94,14 @@ ServerEvents.recipes(event => {
             .chancedOutput(`2x ${floraOw}`, 5000, 500)
             .duration(120)
             .EUt(GTValues.VA[GTValues.MV] / 2)
+        event.recipes.gtceu.flora_nurturer(`${floraOw}_nutrient_solution`)
+            .notConsumable(`1x ${floraOw}`)
+            .notConsumable('minecraft:moss_block')
+            .inputFluids('gtceu:nutrient_solution 50')
+            .itemOutputs(`24x ${floraOw}`)
+            .chancedOutput(`16x ${floraOw}`, 5000, 500)
+            .duration(120)
+            .EUt(GTValues.VA[GTValues.MV] / 2)
     })
 
     event.recipes.gtceu.flora_nurturer(`cactus_nether`)
@@ -110,6 +118,14 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:aether_augmented_sediment 100')
         .itemOutputs('4x minecraft:cactus')
         .chancedOutput(`2x minecraft:cactus`, 5000, 500)
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.LV] / 2)
+    event.recipes.gtceu.flora_nurturer(`cactus_nutrient_solution`)
+        .notConsumable('1x minecraft:cactus')
+        .notConsumable('1x minecraft:sand')
+        .inputFluids('gtceu:nutrient_solution 50')
+        .itemOutputs('16x minecraft:cactus')
+        .chancedOutput(`8x minecraft:cactus`, 5000, 500)
         .duration(120)
         .EUt(GTValues.VA[GTValues.LV] / 2)
 
@@ -146,6 +162,14 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:aether_augmented_sediment 100')
             .itemOutputs(`4x ${floraOw}`)
             .chancedOutput(`2x ${floraOw}`, 5000, 500)
+            .duration(120)
+            .EUt(GTValues.VA[GTValues.MV] / 2)
+        event.recipes.gtceu.flora_nurturer(`${floraOw}_nutrient_solution`)
+            .notConsumable(`1x ${floraOw}_seeds`)
+            .notConsumable('minecraft:moss_block')
+            .inputFluids('gtceu:nutrient_solution 50')
+            .itemOutputs(`24x ${floraOw}`)
+            .chancedOutput(`16x ${floraOw}`, 5000, 500)
             .duration(120)
             .EUt(GTValues.VA[GTValues.MV] / 2)
     })
@@ -225,6 +249,14 @@ ServerEvents.recipes(event => {
             .chancedOutput(`2x ${floraOw}`, 5000, 500)
             .duration(120)
             .EUt(GTValues.VA[GTValues.MV] / 2)
+        event.recipes.gtceu.flora_nurturer(`${floraOw}_nutrient_solution`)
+            .notConsumable(`1x ${floraOw}_seed`)
+            .notConsumable('minecraft:moss_block')
+            .inputFluids('gtceu:nutrient_solution 50')
+            .itemOutputs(`24x ${floraOw}`)
+            .chancedOutput(`16x ${floraOw}`, 5000, 500)
+            .duration(120)
+            .EUt(GTValues.VA[GTValues.MV] / 2)
     })
 
     //Coffee
@@ -244,7 +276,6 @@ ServerEvents.recipes(event => {
         .chancedOutput(`2x croptopia:coffee_beans`, 5000, 500)
         .duration(120)
         .EUt(GTValues.VA[GTValues.MV] / 2)
-
     //Tea
     event.recipes.gtceu.flora_nurturer('tea_nether')
         .notConsumable('croptopia:tea_seed')
@@ -262,7 +293,22 @@ ServerEvents.recipes(event => {
         .chancedOutput(`2x croptopia:tea_leaves`, 5000, 500)
         .duration(120)
         .EUt(GTValues.VA[GTValues.MV] / 2)
-
+    //Soul Sprout
+    event.recipes.gtceu.flora_nurturer('soul_cultivation')
+        .notConsumable('cold_sweat:soul_sprout')
+        .notConsumable('minecraft:soul_sand')
+        .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 500))
+        .itemOutputs('cold_sweat:soul_sprout')
+        .chancedOutput(Item.of('cold_sweat:soul_sprout', 1), 2500, 500)
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.LV] / 2);
+    event.recipes.gtceu.flora_nurturer('soul_cultivation_nutrient_sol')
+        .notConsumable('cold_sweat:soul_sprout')
+        .notConsumable('minecraft:soul_sand')
+        .inputFluids('gtceu:nutrient_solution 50')
+        .itemOutputs('16x cold_sweat:soul_sprout')
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.MV] / 2);
     let floraNether = [
         'biomesoplenty:glowflower',
         'biomesoplenty:burning_blossom',

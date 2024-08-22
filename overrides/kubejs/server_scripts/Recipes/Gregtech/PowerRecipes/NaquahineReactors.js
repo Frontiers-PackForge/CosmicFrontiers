@@ -11,7 +11,14 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:naquahine_superfuel_mk_two 6000')
         .duration(1200)
         .EUt(-GTValues.V[GTValues.UHV])
+    //Tiny Naq Reactors 
+    event.recipes.gtceu.mini_naquahine_reactor('naquahine_mk_one_smol')
+        .itemInputs('1x gtceu:industrial_tnt')
+        .inputFluids('gtceu:naquahine_superfuel_mk_one 3000')
+        .duration(300)
+        .EUt(-GTValues.V[GTValues.IV])
 
+    //Nqa Line
     event.recipes.gtceu.arc_furnace('fused_arc_emulsion')
         .itemInputs('gtceu:naquadah_dust')
         .inputFluids('gtceu:luminite 144')

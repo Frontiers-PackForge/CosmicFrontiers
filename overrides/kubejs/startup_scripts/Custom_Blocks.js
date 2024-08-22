@@ -1,4 +1,4 @@
-Platform.mods.kubejs.name = 'Cosmic Core'
+Platform.mods.kubejs.name = 'Cosmic Core KubeJS'
 function registerAntiblock(event, color, color_displayname) {
     event.create(`cosmiccore:antiblock_${color}`)
         .displayName(`${color_displayname} Antiblock`)
@@ -14,9 +14,9 @@ StartupEvents.registry("block", event => {
     registerAntiblock(event, "blue", "Blue")
     registerAntiblock(event, "brown", "Brown")
     registerAntiblock(event, "cyan", "Cyan")
-    registerAntiblock(event, "dark_green", "Dark Green")
-    registerAntiblock(event, "gray", "Gray")
     registerAntiblock(event, "green", "Green")
+    registerAntiblock(event, "gray", "Gray")
+    registerAntiblock(event, "lime", "Lime")
     registerAntiblock(event, "light_blue", "Light Blue")
     registerAntiblock(event, "light_gray", "Light Gray")
     registerAntiblock(event, "magenta", "Magenta")

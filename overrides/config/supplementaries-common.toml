@@ -10,11 +10,6 @@
 	lock_block = true
 	relayer = true
 
-	[redstone.crystal_display]
-		enabled = true
-		#Allows chaining 2 crystal displays, letting one power the other to its left IF its own power exceeds 10. Given power will be its own divided by 10. Note that to work the decimal display must NOT have power directly behind it. Doing so will override the behavior to non chaining mode
-		chaining = true
-
 	[redstone.speaker_block]
 		enabled = true
 		#Enable/disable speaker block narrator mode
@@ -57,12 +52,12 @@
 
 	[redstone.enderman_head]
 		enabled = true
+		drop_head = true
 		#Time to increase 1 power level when being looked at
 		#Range: 0 ~ 10000
 		ticks_to_increase_power = 15
 		#do enderman heads work when looked from any side?
 		work_from_any_side = false
-		drop_head = true
 
 	[redstone.turn_table]
 		enabled = true
@@ -88,6 +83,11 @@
 		spill_items = true
 		#Allows faucets to fill entities inventories
 		fill_entities_below = false
+
+	[redstone.crystal_display]
+		enabled = true
+		#Allows chaining 2 crystal displays, letting one power the other to its left IF its own power exceeds 10. Given power will be its own divided by 10. Note that to work the decimal display must NOT have power directly behind it. Doing so will override the behavior to non chaining mode
+		chaining = true
 
 [functional]
 	fodder = true
@@ -215,12 +215,6 @@
 	doormat = true
 	flint_block = true
 	candle_holder = true
-	fire_pit = true
-
-	[building.hat_stand]
-		enabled = true
-		#Allow all items to go on hat stand
-		unrestricted = false
 
 	[building.blackboard]
 		enabled = true
@@ -260,7 +254,7 @@
 	[building.planter]
 		enabled = true
 		#Makes so saplings that grow in a planter will break it turning into rooted dirt
-		broken_by_sapling = true
+		broken_by_sapling = false
 		#When Farmers Delight is on planter will also act like rich soil and use it in its recipe
 		rich_soil_planter = true
 
@@ -279,15 +273,15 @@
 
 	[building.ash]
 		enabled = true
+		#Burnable blocks will have a chance to create ash layers when burned. Greater this number the greater the chance will be
+		#Range: 0.0 ~ 1.0
+		ash_from_fire_chance = 1.0
 		#Burning mobs will drop ash when they die
 		ash_from_burning_mobs = true
 		#Allows rain to wash away ash layers overtime
 		rain_wash_ash = true
 		#Use a datapack to tweak rarity
 		basalt_ash = true
-		#Burnable blocks will have a chance to create ash layers when burned. Greater this number the greater the chance will be
-		#Range: 0.0 ~ 1.0
-		ash_from_fire_chance = 1.0
 
 	[building.flag]
 		enabled = true
@@ -321,6 +315,11 @@
 
 	[building.ash_bricks]
 		enabled = true
+
+	[building.hat_stand]
+		enabled = true
+		#Allow all items to go on hat stand
+		unrestricted = false
 
 [tools]
 	candy = true

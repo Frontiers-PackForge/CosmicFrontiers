@@ -49,6 +49,8 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'gtceu:psi_superconductor_beta_quadruple_wire', type: 'gtceu:wiremill' })
   event.remove({ output: 'gtceu:psi_superconductor_beta_octal_wire', type: 'gtceu:wiremill' })
   event.remove({ output: 'gtceu:psi_superconductor_beta_hex_wire', type: 'gtceu:wiremill' })
+  // event.remove({ type: 'gtceu:fusion_reactor' })
+  event.remove({ type: 'gtceu:plasma_turbine' })
 
 
 
@@ -395,38 +397,39 @@ ServerEvents.recipes(event => {
     E: 'gtceu:lv_emitter',
     O: 'gtceu:lv_conveyor_module',
   })
-  //Custom Recipe Handler? - Reference - Otherwise just dump the recipe in questions JSON into event.custom()
-  let drying = (dryingoutput, dryingInput, duration) => {
-    event.custom({
-      "type": "integrateddynamics:drying_basin",
-      "item": dryingInput,
-      "duration": duration,
-      "result": { item: dryingoutput }
-    })
-  }
-  drying('create:shaft', 'create:cogwheel', 40)
+//   //Custom Recipe Handler? - Reference - Otherwise just dump the recipe in questions JSON into event.custom()
+//   let drying = (dryingoutput, dryingInput, duration) => {
+//     event.custom({
+//       "type": "integrateddynamics:drying_basin",
+//       "item": dryingInput,
+//       "duration": duration,
+//       "result": { item: dryingoutput }
+//     })
+//   }
+//   drying('create:shaft', 'create:cogwheel', 40)
 })
 
 ServerEvents.tags('block', event => {
   event.remove('aether:aether_portal_blocks', 'minecraft:glowstone'),
     event.add('aether:aether_portal_blocks', 'gtceu:frostproof_machine_casing')
+    event.add('ae2:blacklisted/spatial', 'minecraft:netherite_block')
 })
 
-ServerEvents.recipes(e => {
-  // for this code to work, kubejs:incomplete_spore_blossom needs to be added to the game
-  let inter = 'gtceu:lv_machine_hull' // making a variable to store the transitional item makes the code more readable
-  e.recipes.create.sequenced_assembly([
-    Item.of('gtceu:lv_energy_output_hatch'), // this is the item that will appear in JEI as the result
-  ], 'gtceu:lv_machine_hull', [ // 'flowering_azalea_leaves' is the input
-    // the transitional item is a variable, that is 'kubejs:incomplete_spore_blossom' and is used during the intermediate stages of the assembly
-    e.recipes.createDeploying(inter, [inter, 'gtceu:steel_spring']),
-    e.recipes.createDeploying(inter, [inter, 'gtceu:tin_spring']),
-    e.recipes.createDeploying(inter, [inter, 'gtceu:tin_spring']),
-    e.recipes.createDeploying(inter, [inter, 'gtceu:rubber_plate']),
-  ]).transitionalItem(inter).loops(2) // set the transitional item and the number of loops
+// ServerEvents.recipes(e => {
+//   // for this code to work, kubejs:incomplete_spore_blossom needs to be added to the game
+//   let inter = 'gtceu:lv_machine_hull' // making a variable to store the transitional item makes the code more readable
+//   e.recipes.create.sequenced_assembly([
+//     Item.of('gtceu:lv_energy_output_hatch'), // this is the item that will appear in JEI as the result
+//   ], 'gtceu:lv_machine_hull', [ // 'flowering_azalea_leaves' is the input
+//     // the transitional item is a variable, that is 'kubejs:incomplete_spore_blossom' and is used during the intermediate stages of the assembly
+//     e.recipes.createDeploying(inter, [inter, 'gtceu:steel_spring']),
+//     e.recipes.createDeploying(inter, [inter, 'gtceu:tin_spring']),
+//     e.recipes.createDeploying(inter, [inter, 'gtceu:tin_spring']),
+//     e.recipes.createDeploying(inter, [inter, 'gtceu:rubber_plate']),
+//   ]).transitionalItem(inter).loops(2) // set the transitional item and the number of loops
 
 
-})
+// })
 
 ServerEvents.recipes(event => {
   event.recipes.gtceu.macerator('gtceu:obsidian_dust')
@@ -559,6 +562,16 @@ ServerEvents.recipes(event => {
     'vanadium_gallium',
     'yttrium_barium_cuprate'
   ]
+  let tierSpring = [
+    'tin',
+    'copper',
+    'gold',
+    'aluminium',
+    'hsla_steel',
+    'niobium_titanium',
+    'vanadium_gallium',
+    'yttrium_barium_cuprate'
+  ]
   let coilTier = [
     'cupronickel',
     'kanthal',
@@ -582,6 +595,7 @@ ServerEvents.recipes(event => {
   machineTier.forEach((tier, index) => {
     let cableMaterial = tierQuadWire[index]
     let cableType = tierCable[index]
+    let springType = tierSpring[index]
     let coilType = coilTier[index]
     let lamType = laminatorTier[index]
     event.shaped(`gtceu:${tier}_flora_nurturer`, [
@@ -640,12 +654,25 @@ ServerEvents.recipes(event => {
       'BHB',
       'ZPZ'
     ], {
-      A: `gtceu:${lamType}_spring`,
+      A: `gtceu:${springType}_spring`,
       B: `gtceu:${tier}_conveyor_module`,
       C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`,
       P: `gtceu:${tier}_electric_pump`
+    }
+    )
+    event.shaped(`gtceu:${tier}_aio_lithography_processor`, [
+      'CAC',
+      'RHR',
+      'ZBZ'
+    ], {
+      A: `gtceu:${springType}_spring`,
+      B: `gtceu:${tier}_conveyor_module`,
+      R: `gtceu:${tier}_robot_arm`,
+      C: `#gtceu:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`
     }
     )
     event.shaped(`gtceu:${tier}_chemical_dehydrator`, [

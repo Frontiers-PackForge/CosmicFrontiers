@@ -469,6 +469,7 @@
 				"62D8A986F474023F"
 				"636BBD84AF9B125B"
 			]
+			hide: true
 			id: "44166B73DECEC3CA"
 			tasks: [{
 				id: "554AC50C216CD399"
@@ -487,6 +488,7 @@
 		{
 			dependencies: ["44166B73DECEC3CA"]
 			description: ["The higher the tier above EV, the more efficient the recipe becomes"]
+			hide: true
 			id: "217D18CBDCF23123"
 			tasks: [{
 				id: "72CC81CF85A8869C"

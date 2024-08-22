@@ -3,7 +3,7 @@
 #Common dimension IDs: minecraft:overworld, minecraft:the_nether, minecraft:the_end
 [Dimensions]
 	#Applies an offset to the world's temperature across an entire dimension
-	"Dimension Temperature Offsets" = [["minecraft:the_end", -0.1, "MC"], ["minecraft:the_nether", 0.7, "MC"]]
+	"Dimension Temperature Offsets" = [["minecraft:the_nether", 0.7, "MC"], ["minecraft:the_end", -0.1, "MC"]]
 	#Overrides existing dimension temperatures & offsets
 	#Also overrides temperatures of all biomes in the dimension
 	"Dimension Temperatures" = []
@@ -16,7 +16,27 @@
 	#Applies an offset to the temperature of a biome
 	"Biome Temperature Offsets" = []
 	#Defines the temperature of a biome, overriding existing biome temperatures & offsets.
-	"Biome Temperatures" = []
+	"Biome Temperatures" = [["biomesoplenty:volcano", 94.0, 120.0, "F"], ["terralith:yellowstone", 47.0, 68.0, "F"], ["terralith:ancient_sands", 83.0, 130.0, "F"], ["minecraft:swamp", 72.0, 84.0, "F"], ["minecraft:warm_ocean", 67.0, 76.0, "F"], ["minecraft:bamboo_jungle", 76.0, 87.0, "F"], ["biomesoplenty:marsh", 76.0, 87.0, "F"], ["biomesoplenty:snowy_maple_woods", 32.0, 48.0, "F"], ["terralith:birch_taiga", 40.0, 62.0, "F"], ["biomesoplenty:orchard", 58.0, 78.0, "F"], ["terralith:sandstone_valley", 78.0, 114.0, "F"], ["biomesoplenty:volcanic_plains", 82.0, 95.0, "F"], ["biomesoplenty:origin_valley", 65.0, 80.0, "F"], ["biomesoplenty:forested_field", 64.0, 78.0, "F"], ["biomesoplenty:fir_clearing", 56.0, 68.0, "F"], ["biomesoplenty:fungal_jungle", 73.0, 86.0, "F"], ["terralith:granite_cliffs", 65.0, 85.0, "F"], ["terralith:fractured_savanna", 65.0, 92.0, "F"], ["biomesoplenty:highland", 57.0, 70.0, "F"], ["terralith:moonlight_valley", 57.0, 76.0, "F"], ["terralith:lavender_valley", 59.0, 76.0, "F"], ["minecraft:old_growth_pine_taiga", 48.0, 62.0, "F"], ["terralith:shield", 48.0, 68.0, "F"], ["terralith:basalt_cliffs", 76.0, 122.0, "F"], ["minecraft:deep_frozen_ocean", 56.0, 65.0, "F"], ["terralith:lavender_forest", 56.0, 75.0, "F"], ["terralith:arid_highlands", 74.0, 102.0, "F"], ["terralith:shield_clearing", 28.0, 80.0, "F"], ["minecraft:deep_dark", 63.0, 63.0, "F"], ["terralith:blooming_plateau", 49.0, 78.0, "F"], ["biomesoplenty:snowy_fir_clearing", 32.0, 51.0, "F"], ["minecraft:windswept_forest", 48.0, 66.0, "F"], ["terralith:cloud_forest", 38.0, 58.0, "F"], ["biomesoplenty:bog", 62.0, 73.0, "F"], ["terralith:haze_mountain", 62.0, 74.0, "F"], ["minecraft:snowy_slopes", 24.0, 38.0, "F"], ["biomesoplenty:dryland", 67.0, 97.0, "F"], ["biomesoplenty:dune_beach", 67.0, 78.0, "F"], ["terralith:highlands", 62.0, 74.0, "F"], ["biomesoplenty:spider_nest", 75.0, 75.0, "F"], ["terralith:rocky_mountains", 45.0, 73.0, "F"], ["terralith:forested_highlands", 43.0, 70.0, "F"], ["biomesoplenty:seasonal_forest", 52.0, 64.0, "F"], ["minecraft:desert", 48.0, 115.0, "F"], ["biomesoplenty:rocky_rainforest", 73.0, 86.0, "F"], ["terralith:red_oasis", 58.0, 94.0, "F"], ["terralith:desert_spires", 60.0, 121.0, "F"], ["biomesoplenty:maple_woods", 58.0, 68.0, "F"], ["biomesoplenty:coniferous_forest", 44.0, 58.0, "F"], ["terralith:bryce_canyon", 72.0, 110.0, "F"], ["minecraft:old_growth_spruce_taiga", 48.0, 62.0, "F"], ["biomesoplenty:bayou", 67.0, 78.0, "F"], ["biomesoplenty:woodland", 67.0, 80.0, "F"], ["biomesoplenty:mystic_grove", 65.0, 72.0, "F"], ["terralith:warped_mesa", 66.0, 84.0, "F"], ["terralith:savanna_badlands", 68.0, 99.0, "F"], ["terralith:desert_canyon", 73.0, 121.0, "F"], ["minecraft:stony_shore", 50.0, 64.0, "F"], ["biomesoplenty:lush_desert", 72.0, 94.0, "F"], ["terralith:volcanic_peaks", 76.0, 122.0, "F"], ["minecraft:badlands", 84.0, 120.0, "F"], ["minecraft:savanna_plateau", 76.0, 98.0, "F"], ["terralith:alpine_grove", 16.0, 53.0, "F"], ["biomesoplenty:field", 64.0, 85.0, "F"], ["minecraft:snowy_taiga", 19.0, 48.0, "F"], ["biomesoplenty:wetland", 63.0, 74.0, "F"], ["biomesoplenty:clover_patch", 56.0, 78.0, "F"], ["minecraft:old_growth_birch_forest", 58.0, 72.0, "F"], ["biomesoplenty:prairie", 66.0, 82.0, "F"], ["terralith:temperate_highlands", 54.0, 80.0, "F"], ["terralith:orchid_swamp", 62.0, 81.0, "F"], ["terralith:volcanic_crater", 96.0, 162.0, "F"], ["biomesoplenty:jade_cliffs", 57.0, 70.0, "F"], ["minecraft:jungle", 76.0, 87.0, "F"], ["minecraft:taiga", 44.0, 62.0, "F"], ["minecraft:soul_sand_valley", 53.0, 53.0, "F"], ["terralith:steppe", 44.0, 78.0, "F"], ["terralith:caldera", 58.0, 71.0, "F"], ["minecraft:savanna", 70.0, 95.0, "F"], ["biomesoplenty:snowy_coniferous_forest", 28.0, 48.0, "F"], ["minecraft:windswept_savanna", 67.0, 90.0, "F"], ["minecraft:eroded_badlands", 88.0, 120.0, "F"], ["minecraft:snowy_beach", 38.0, 52.0, "F"], ["terralith:amethyst_rainforest", 69.0, 84.0, "F"], ["biomesoplenty:grassland", 58.0, 82.0, "F"], ["biomesoplenty:mediterranean_forest", 64.0, 78.0, "F"], ["terralith:brushland", 64.0, 89.0, "F"], ["minecraft:wooded_badlands", 80.0, 108.0, "F"], ["biomesoplenty:old_growth_woodland", 65.0, 78.0, "F"], ["minecraft:frozen_peaks", 15.0, 33.0, "F"], ["minecraft:river", 60.0, 70.0, "F"], ["biomesoplenty:ominous_woods", 65.0, 72.0, "F"], ["biomesoplenty:pumpkin_patch", 57.0, 78.0, "F"]]
+
+[Blocks]
+	#Allows for adding simple BlockTemps without the use of Java mods
+	#Format (All temperatures are in Minecraft units):
+	#[["block-ids", <temperature>, <range (max 7)>, <*true/false: falloff>, <*max effect>, <*predicates>], [etc...], [etc...]]
+	#(* = optional) (1 °MC = 42 °F/ 23.33 °C)
+	#
+	#Arguments:
+	#block-ids: multiple IDs can be used by separating them with commas (i.e: "minecraft:torch,minecraft:wall_torch")
+	#temperature: the temperature of the block, in Minecraft units
+	#falloff: the block is less effective as distance increases
+	#max effect: the maximum temperature change this block can cause to a player (even with multiple blocks)
+	#predicates: the state that the block has to be in for the temperature to be applied (lit=true for a campfire, for example).
+	#Multiple predicates can be used by separating them with commas (i.e: "lit=true,waterlogged=false")
+	"Block Temperatures" = [["minecraft:soul_fire", -0.476, 7, true, 0.8], ["minecraft:fire", 0.476, 7, true, 0.8], ["minecraft:magma_block", 0.5, 3, true, 0.6], ["minecraft:soul_campfire", -0.476, 7, true, 0.6, "lit=true"], ["minecraft:ice", -0.15, 4, true, 0.5], ["minecraft:packed_ice", -0.25, 4, true, 1.0], ["minecraft:blue_ice", -0.35, 4, true, 1.0], ["minecraft:lava_cauldron", 0.5, 7, true, 1.5]]
+	#The maximum range of blocks' area of effect
+	#Note: This will not change anything unless blocks are configured to utilize the expanded range
+	#This value is capped at 16 for performance reasons
+	#Range: 1 ~ 16
+	"Block Range" = 7
 
 [Misc]
 	#The amount of temperature normalization from being deep underground
@@ -46,7 +66,7 @@
 	"Hearth Strength" = 0.75
 	#List of additional blocks that the hearth can spread through
 	#Use this list if the hearth isn't spreading through particular blocks that it should
-	"Hearth Spread Whitelist" = ["minecraft:iron_bars", "minecraft:jungle_leaves", "minecraft:oak_leaves", "minecraft:spruce_leaves", "minecraft:dark_oak_leaves", "minecraft:acacia_leaves", "minecraft:birch_leaves", "minecraft:azalea_leaves", "minecraft:flowering_azalea_leaves", "minecraft:mangrove_leaves", "minecraft:cherry_leaves", "biomesoplenty:origin_leaves", "biomesoplenty:flowering_oak_leaves", "biomesoplenty:snowblossom_leaves", "biomesoplenty:rainbow_birch_leaves", "biomesoplenty:yellow_autumn_leaves", "biomesoplenty:orange_autumn_leaves", "biomesoplenty:maple_leaves", "biomesoplenty:fir_leaves", "biomesoplenty:redwood_leaves", "biomesoplenty:mahogany_leaves", "biomesoplenty:jacaranda_leaves", "biomesoplenty:palm_leaves", "biomesoplenty:willow_leaves", "biomesoplenty:dead_leaves", "biomesoplenty:magic_leaves", "biomesoplenty:umbran_leaves", "biomesoplenty:hellbark_leaves", "integrateddynamics:menril_leaves", "occultism:otherworld_leaves", "occultism:otherworld_leaves_natural", "ad_astra:glacian_leaves", "ars_nouveau:purple_archwood_leaves", "ars_nouveau:blue_archwood_leaves", "ars_nouveau:red_archwood_leaves", "ars_nouveau:green_archwood_leaves", "aether:skyroot_leaves", "aether:golden_oak_leaves", "aether:crystal_leaves", "aether:crystal_fruit_leaves", "aether:holiday_leaves", "aether:decorated_holiday_leaves", "deep_aether:roseroot_leaves", "deep_aether:blue_roseroot_leaves", "deep_aether:flowering_roseroot_leaves", "deep_aether:flowering_blue_roseroot_leaves", "deep_aether:yagroot_leaves", "deep_aether:cruderoot_leaves", "deep_aether:conberry_leaves", "deep_aether:sunroot_leaves", "deep_aether:yagroot_roots", "undergarden:smogstem_leaves", "undergarden:wigglewood_leaves", "undergarden:grongle_leaves", "gtceu:rubber_leaves", "naturesaura:golden_leaves", "naturesaura:ancient_leaves", "naturesaura:decayed_leaves", "architects_palette:twisted_leaves", "croptopia:almond_crop", "croptopia:apple_crop", "croptopia:apricot_crop", "croptopia:avocado_crop", "croptopia:banana_crop", "croptopia:cashew_crop", "croptopia:cherry_crop", "croptopia:coconut_crop", "croptopia:date_crop", "croptopia:dragonfruit_crop", "croptopia:fig_crop", "croptopia:grapefruit_crop", "croptopia:kumquat_crop", "croptopia:lemon_crop", "croptopia:lime_crop", "croptopia:mango_crop", "croptopia:nectarine_crop", "croptopia:nutmeg_crop", "croptopia:orange_crop", "croptopia:peach_crop", "croptopia:pear_crop", "croptopia:pecan_crop", "croptopia:persimmon_crop", "croptopia:plum_crop", "croptopia:starfruit_crop", "croptopia:walnut_crop", "croptopia:cinnamon_leaves", "phantasm:pream_leaves", "phantasm:hanging_pream_leaves", "create:encased_fluid_pipe"]
+	"Hearth Spread Whitelist" = ["minecraft:iron_bars", "minecraft:jungle_leaves", "minecraft:oak_leaves", "minecraft:spruce_leaves", "minecraft:dark_oak_leaves", "minecraft:acacia_leaves", "minecraft:birch_leaves", "minecraft:azalea_leaves", "minecraft:flowering_azalea_leaves", "minecraft:mangrove_leaves", "minecraft:cherry_leaves", "biomesoplenty:origin_leaves", "biomesoplenty:flowering_oak_leaves", "biomesoplenty:snowblossom_leaves", "biomesoplenty:rainbow_birch_leaves", "biomesoplenty:yellow_autumn_leaves", "biomesoplenty:orange_autumn_leaves", "biomesoplenty:maple_leaves", "biomesoplenty:fir_leaves", "biomesoplenty:redwood_leaves", "biomesoplenty:mahogany_leaves", "biomesoplenty:jacaranda_leaves", "biomesoplenty:palm_leaves", "biomesoplenty:willow_leaves", "biomesoplenty:dead_leaves", "biomesoplenty:magic_leaves", "biomesoplenty:umbran_leaves", "biomesoplenty:hellbark_leaves", "integrateddynamics:menril_leaves", "croptopia:almond_crop", "croptopia:apple_crop", "croptopia:apricot_crop", "croptopia:avocado_crop", "croptopia:banana_crop", "croptopia:cashew_crop", "croptopia:cherry_crop", "croptopia:coconut_crop", "croptopia:date_crop", "croptopia:dragonfruit_crop", "croptopia:fig_crop", "croptopia:grapefruit_crop", "croptopia:kumquat_crop", "croptopia:lemon_crop", "croptopia:lime_crop", "croptopia:mango_crop", "croptopia:nectarine_crop", "croptopia:nutmeg_crop", "croptopia:orange_crop", "croptopia:peach_crop", "croptopia:pear_crop", "croptopia:pecan_crop", "croptopia:persimmon_crop", "croptopia:plum_crop", "croptopia:starfruit_crop", "croptopia:walnut_crop", "croptopia:cinnamon_leaves", "occultism:otherworld_leaves", "occultism:otherworld_leaves_natural", "ad_astra:glacian_leaves", "ars_nouveau:purple_archwood_leaves", "ars_nouveau:blue_archwood_leaves", "ars_nouveau:red_archwood_leaves", "ars_nouveau:green_archwood_leaves", "aether:skyroot_leaves", "aether:golden_oak_leaves", "aether:crystal_leaves", "aether:crystal_fruit_leaves", "aether:holiday_leaves", "aether:decorated_holiday_leaves", "deep_aether:roseroot_leaves", "deep_aether:blue_roseroot_leaves", "deep_aether:flowering_roseroot_leaves", "deep_aether:flowering_blue_roseroot_leaves", "deep_aether:yagroot_leaves", "deep_aether:cruderoot_leaves", "deep_aether:conberry_leaves", "deep_aether:sunroot_leaves", "deep_aether:yagroot_roots", "architects_palette:twisted_leaves", "undergarden:smogstem_leaves", "undergarden:wigglewood_leaves", "undergarden:grongle_leaves", "gtceu:rubber_leaves", "create:encased_fluid_pipe"]
 	#List of additional blocks that the hearth cannot spread through
 	#Use this list if the hearth is spreading through particular blocks that it shouldn't
 	"Hearth Spread Blacklist" = []
@@ -58,24 +78,4 @@
 	Autumn = [0.2, 0, -0.2]
 	Winter = [-0.4, -0.6, -0.4]
 	Spring = [-0.2, 0, 0.2]
-
-[Blocks]
-	#Allows for adding simple BlockTemps without the use of Java mods
-	#Format (All temperatures are in Minecraft units):
-	#[["block-ids", <temperature>, <range (max 7)>, <*true/false: falloff>, <*max effect>, <*predicates>], [etc...], [etc...]]
-	#(* = optional) (1 °MC = 42 °F/ 23.33 °C)
-	#
-	#Arguments:
-	#block-ids: multiple IDs can be used by separating them with commas (i.e: "minecraft:torch,minecraft:wall_torch")
-	#temperature: the temperature of the block, in Minecraft units
-	#falloff: the block is less effective as distance increases
-	#max effect: the maximum temperature change this block can cause to a player (even with multiple blocks)
-	#predicates: the state that the block has to be in for the temperature to be applied (lit=true for a campfire, for example).
-	#Multiple predicates can be used by separating them with commas (i.e: "lit=true,waterlogged=false")
-	"Block Temperatures" = [["minecraft:soul_fire", -0.476, 7, true, 0.8], ["minecraft:fire", 0.476, 7, true, 0.8], ["minecraft:magma_block", 0.5, 3, true, 0.6], ["minecraft:soul_campfire", -0.476, 7, true, 0.6, "lit=true"], ["minecraft:ice", -0.15, 4, true, 0.5], ["minecraft:packed_ice", -0.25, 4, true, 1.0], ["minecraft:blue_ice", -0.35, 4, true, 1.0], ["minecraft:lava_cauldron", 0.5, 7, true, 1.5]]
-	#The maximum range of blocks' area of effect
-	#Note: This will not change anything unless blocks are configured to utilize the expanded range
-	#This value is capped at 16 for performance reasons
-	#Range: 1 ~ 16
-	"Block Range" = 7
 

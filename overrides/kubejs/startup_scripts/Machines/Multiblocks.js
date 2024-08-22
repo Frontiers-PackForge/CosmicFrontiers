@@ -73,7 +73,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('essence_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('essence_reactor')
+        .recipeTypes(['essence_reactor', 'mana_engraver'])
         .appearanceBlock(GTBlocks.CASING_TITANIUM_STABLE)
         .recipeModifier(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
         .pattern(definition => FactoryBlockPattern.start()
@@ -92,6 +92,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE))
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
+                .or(Predicates.abilities($CosmicPartAbility.IMPORT_SOUL))
             )
             .where('G', Predicates.blocks('botania:mana_glass'))
             .build())
@@ -121,7 +123,34 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
             .build())
         .workableCasingRenderer('cosmiccore:block/casings/solid/high_temperature_fission_casing', 'gtceu:block/multiblock/fusion_reactor', false);
-
+    //WHAT THE FUCK IS A FUNCTIONAL PLATLINE, PRESENT! LARGE! DRYER???? CUBOID??? HEAT! ! !  OWIE! ROASTED! ! ! ?????????
+    // ????? ? ? ????? ?? ???? ? ? ??? ???? ? ? ???? ?? ?? ?  ?? ? ?? ? ?? ? ?? ? ?? ?? ? ??  ? ?? ? ?? ?? ?? ?? ??? ?????????
+    // **FUCK**
+    event.create('large_dryer', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('chemical_dehydrator')
+        .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('TTTTT', 'TGGGT', 'TTTTT')
+            .aisle('TTTTT', 'GAAAG', 'TQQQT')
+            .aisle('TTTTT', 'GAAAG', 'TQQQT')
+            .aisle('TTTTT', 'GAAAG', 'TQQQT')
+            .aisle('TTCTT', 'TGGGT', 'TTTTT')
+            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('Q', Predicates.blocks(GTBlocks.COIL_CUPRONICKEL.get()))
+            .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
+            .where('A', Predicates.air())
+            .where('T', Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get())
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
+            )
+            .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
+            .build())
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/flora_nurturer', false);
 
 
     event.create('pulse_heat_exchanger', 'multiblock')
@@ -145,7 +174,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
             .build())
         .workableCasingRenderer('cosmiccore:block/casings/solid/highly_conductive_fission_casing', 'gtceu:block/multiblock/fusion_reactor', false);
-
 
 
     event.create('arboreal_growth_facility', 'multiblock')
@@ -260,6 +288,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.MAINTENANCE))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
             )
             .build())
         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/mana_fluidizer', false);
@@ -305,6 +334,35 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('O', Predicates.abilities(PartAbility.EXPORT_ITEMS))
             .build())
         .workableCasingRenderer('gtceu:block/casings/hpca/computer_casing/side', 'gtceu:block/multiblock/network_switch', false);
+
+
+
+        event.create('large_lithographic_processor', 'multiblock')
+        .rotationState(RotationState.ALL)
+        .recipeType('aio_lithography_processor')
+        .appearanceBlock(GTBlocks.CASING_HSSE_STURDY)
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('TTTTTTT', 'TGGGGGT', 'TTTTTTT','TGT####','TTT####')
+            .aisle('TTTTTTT', 'GQQQQQG', 'TQTTTTT','GQG####','TTT####')
+            .aisle('TTTTTTT', 'TGGGGGT', 'TCTTTTT','TGT####','TTT####')
+            .where('#', Predicates.any())
+            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('Q', Predicates.blocks(GTBlocks.COIL_CUPRONICKEL.get()))
+            .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
+            .where('A', Predicates.air())
+            .where('T', Predicates.blocks(GTBlocks.CASING_HSSE_STURDY.get())
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
+            )
+            .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
+            .build())
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_sturdy_hsse', 'gtceu:block/machines/flora_nurturer', false);
 
 
 

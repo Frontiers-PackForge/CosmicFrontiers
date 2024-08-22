@@ -72,7 +72,7 @@ GTCEuServerEvents.oreVeins(event => {
                 .layer(l => l.weight(3).mat(GTMaterials.Bauxite).size(2, 4))
                 .layer(l => l.weight(1).mat(GTMaterials.get('alumina')).size(1, 3))
                 .layer(l => l.weight(2).mat(GTMaterials.Sphalerite).size(1, 2))
-                .layer(l => l.weight(2).mat(GTMaterials.Realgar).size(1, 2))
+                .layer(l => l.weight(2).mat(GTMaterials.Cinnabar).size(1, 2))
             )
         )
         .surfaceIndicatorGenerator(indicator => indicator

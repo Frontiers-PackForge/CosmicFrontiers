@@ -19,22 +19,22 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get('ambrosium'))
         .color(0xfbff00).iconSet(GTMaterialIconSet.CERTUS)
     event.create('nether_sediment_sludge')
-        .fluid()
+        .liquid()
         .color(0x511515)
     event.create('aether_air')
-        .fluid()
+        .liquid()
         .color(0x75bfff)
     event.create('liquid_aether_air')
-        .fluid()
+        .liquid()
         .color(0x75bfff)
     event.create('tears_of_the_sky')
-        .fluid()
+        .liquid()
         .color(0x2e76e8)
     event.create('thundering_aerocloud_solution')
         .liquid(new GTFluidBuilder().customStill())
     // .color(0x154085)
     event.create('thundering_aerocloud_concentration')
-        .fluid()
+        .liquid()
         .color(0x173159)
     event.create('thundering_mana')
         // .color(0x154085)
@@ -43,22 +43,22 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xe642f5)
         .liquid(new GTFluidBuilder().customStill())
     event.create('ammonia_rich_aerocloud_solution')
-        .fluid()
+        .liquid()
         .color(0x9368e3)
     event.create('high_grade_solder')
-        .fluid()
+        .liquid()
         .color(0xd1c664)
     event.create('aether_augmented_sediment')
-        .fluid()
+        .liquid()
         .color(0x00c4b7)
     event.create('potent_mana')
-        .fluid()
+        .liquid()
         .color(0x457bd1)
     event.create('hydrogen_peroxide')
-        .fluid()
+        .liquid()
         .color(0xa7f0fa)
     event.create('hydrazine')
-        .fluid()
+        .liquid()
         .color(0xff2e51)
 
     //Netherite Line Materials
@@ -76,13 +76,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0x393435).iconSet(GTMaterialIconSet.SHINY)
     event.create('raw_mana_crystal_slurry')
-        .fluid()
+        .liquid()
         .color(0x32a88d).iconSet(GTMaterialIconSet.SHINY)
     event.create('prepared_terrasteel')
-        .fluid()
+        .liquid()
         .color(0x32a861).iconSet(GTMaterialIconSet.SHINY)
     event.create('unstable_terrasteel')
-        .fluid()
+        .liquid()
         .color(0x00731f).iconSet(GTMaterialIconSet.SHINY)
     event.create('zano_aluminate')
         .dust()
@@ -117,7 +117,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('virtue_meld')
         .color(0xff8400)
         .ingot()
-        .fluid()
+        .liquid()
         .element(GTElements.get('virtue'))
         .cableProperties(GTValues.V[GTValues.IV], 4, 2, true)
         .iconSet(GTMaterialIconSet.SHINY)
@@ -150,7 +150,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('luminescent_utherium')
         .color(0x6A40B8)
         .gem()
-        .fluid()
+        .liquid()
         .iconSet(GTMaterialIconSet.getByName('utherium'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -165,7 +165,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('cosmolite')
         .color(0x4614a3)
         .gem()
-        .fluid()
+        .liquid()
         .iconSet(GTMaterialIconSet.getByName('luminite'))
         .cableProperties(GTValues.V[GTValues.EV], 8, 0, false)
         .flags(
@@ -181,10 +181,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('molten_virtue_meld')
         .color(0xff8400)
-        .fluid()
+        .liquid()
     event.create('raw_psionic_solution')
         .color(0xff8400)
-        .fluid()
+        .liquid()
     event.create('astraline_corrosion_agent')
         .color(0xff8400)
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
@@ -193,20 +193,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
     event.create('super_critical_steam')
         .color(0xffffff)
-        .fluid()
+        .liquid()
 
     event.create('deeply_withered_nether_slag')
         .color(0x1f0207)
-        .fluid()
+        .liquid()
     event.create('silica_enriched_nether_slag')
         .color(0xb3377d)
-        .fluid()
+        .liquid()
     event.create('pyroflux')
         .color(0xdb593b)
-        .fluid()
+        .liquid()
     event.create('nether_star_distillate_slurry')
         .color(0xa87692)
-        .fluid()
+        .liquid()
     event.create('dull_nether_star')
         .color(0x949494)
         .dust()
@@ -237,7 +237,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('false_infinity')
         .color(0x4614a3)
         .ingot()
-        .fluid()
+        .liquid()
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -248,10 +248,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.GENERATE_FINE_WIRE
         )
-        event.create('impractical_infinity')
+    event.create('impractical_infinity')
         .color(0x4614a3)
         .ingot()
-        .fluid()
+        .liquid()
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -262,10 +262,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.GENERATE_FINE_WIRE
         )
-        event.create('suitable_infinity')
+    event.create('suitable_infinity')
         .color(0x4614a3)
         .ingot()
-        .fluid()
+        .liquid()
         .cableProperties(GTValues.V[GTValues.EV], 8, 0, false)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -277,10 +277,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.GENERATE_FINE_WIRE
         )
-        event.create('logical_infinity')
+    event.create('logical_infinity')
         .color(0x4614a3)
         .ingot()
-        .fluid()
+        .liquid()
         .cableProperties(GTValues.V[GTValues.EV], 8, 0, false)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -292,10 +292,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.GENERATE_FINE_WIRE
         )
-        event.create('programmable_matter_base')
+    event.create('programmable_matter_base')
         .color(0x4614a3)
         .ingot()
-        .fluid()
+        .liquid()
         .iconSet(GTMaterialIconSet.getByName('luminite'))
         .cableProperties(GTValues.V[GTValues.UV], 12, 0, true)
         .flags(
@@ -324,8 +324,152 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .gas()
         .color(0x614b09).iconSet(GTMaterialIconSet.DULL)
     event.create('undergarden_sludge')
-        .fluid()
+        .liquid()
         .color(0x3d2e02).iconSet(GTMaterialIconSet.DULL)
+    event.create('swamp_sediment')
+        .liquid()
+        .color(0x3d2e02).iconSet(GTMaterialIconSet.DULL)
+    event.create('rotten_sediment')
+        .liquid()
+        .color(0xb36250).iconSet(GTMaterialIconSet.DULL)
+    event.create('pungent_sediment')
+        .liquid()
+        .color(0x8b50b3).iconSet(GTMaterialIconSet.DULL)
+    event.create('lake_water')
+        .liquid()
+        .color(0x5382ad).iconSet(GTMaterialIconSet.DULL)
+    event.create('sterilized_lake_water')
+        .liquid()
+        .color(0x5382ad).iconSet(GTMaterialIconSet.DULL)
+    event.create('silt_slurry')
+        .liquid()
+        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
+
+
+    //TODO - COLORS & TEXTURES! ! ! !
+    event.create('impure_silt')
+        .dust()
+        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
+    event.create('silt_seperation_composite')
+        .dust()
+        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
+    event.create('sifted_silt')
+        .dust()
+        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
+    event.create('luminent_silt')
+        .dust()
+        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
+    event.create('dilumixal_naquadah_doped_silicon')
+        .dust()
+        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
+    event.create('europium_blended_silt')
+        .dust()
+        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
+    event.create('europium_silicide')
+        .dust()
+        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
+
+
+    event.create('nutrient_solution_base')
+        .liquid()
+        .color(0x79ad53).iconSet(GTMaterialIconSet.DULL)
+    event.create('nutrient_solution')
+        .liquid()
+        .color(0x79ad53).iconSet(GTMaterialIconSet.DULL)
+    event.create('fungal_nutrient_waste')
+        .liquid()
+        .color(0x79ad53).iconSet(GTMaterialIconSet.DULL)
+    event.create('cultured_nutrient_solution')
+        .liquid()
+        .color(0x79ad53).iconSet(GTMaterialIconSet.DULL)
+    event.create('shroom_blood')
+        .liquid()
+        .color(0x79ad53).iconSet(GTMaterialIconSet.DULL)
+
+
+    event.create('hemoglobin')
+        .liquid()
+        .color(0x79ad53).iconSet(GTMaterialIconSet.DULL)
+    event.create('synthetic_blood')
+        .liquid()
+        .color(0x79ad53).iconSet(GTMaterialIconSet.DULL)
+    event.create('stygian_rage_waste')
+        .liquid()
+        .color(0x79ad53).iconSet(GTMaterialIconSet.DULL)
+    event.create('stygian_psionzyme')
+        .liquid()
+        .color(0x79ad53).iconSet(GTMaterialIconSet.DULL)
+    event.create('stygian_sputum')
+        .liquid()
+        .color(0x79ad53).iconSet(GTMaterialIconSet.DULL)
+    event.create('stygian_bile')
+        .liquid()
+        .color(0x79ad53).iconSet(GTMaterialIconSet.DULL)
+
+    event.create('ortho_diethynylbenzene_dianion')
+        .gas()
+        .color(0x79ad53).iconSet(GTMaterialIconSet.DULL)
+    //Neutronite and precursor neutron states
+    event.create('neutronite')
+        .ingot()
+        .blastTemp(7500)
+        .color(0xa6f8ff).secondaryColor(0x181f47).iconSet(GTMaterialIconSet.BRIGHT)
+        .flags(
+            GTMaterialFlags.FORCE_GENERATE_BLOCK,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_RING,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_ROTOR,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.IS_MAGNETIC
+        )
+    event.create('critical_neutron_mass')
+        .ingot()
+        .blastTemp(7500)
+        .color(0xd4973b).secondaryColor(0x181f47).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.NO_SMELTING
+        )
+    event.create('neutronic_composite')
+        .ingot()
+        .blastTemp(7500)
+        .color(0xd62e22).secondaryColor(0x181f47).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.NO_SMELTING
+        )
+    event.create('resh_neutron_meld')
+        .dust()
+        .color(0x34dceb).iconSet(GTMaterialIconSet.DULL)
+    event.create('pey_neutron_gas')
+        .gas()
+        .color(0xeb4034).iconSet(GTMaterialIconSet.DULL)
+    event.create('ayin_neutron_fluid')
+        .liquid()
+        .color(0xa10840).iconSet(GTMaterialIconSet.DULL)
+
+    event.create('alef_neutron')
+        .plasma()
+        .color(0x544940).iconSet(GTMaterialIconSet.DULL)
+    event.create('resh_neutron')
+        .plasma()
+        .color(0x34dceb).iconSet(GTMaterialIconSet.DULL)
+    event.create('pey_neutron')
+        .plasma()
+        .color(0xeb4034).iconSet(GTMaterialIconSet.DULL)
+    event.create('ayin_neutron')
+        .plasma()
+        .color(0xa10840).iconSet(GTMaterialIconSet.DULL)
+
     GTMaterials.get('neptunium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.get('plutonium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.get('curium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
@@ -361,13 +505,16 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_PLATE
         )
     GTMaterials.Aluminium.addFlags(GTMaterialFlags.GENERATE_ROTOR)
+    event.create('trinium_metallic')
+        .ore()
+        .color(0x7f6c82).iconSet(GTMaterialIconSet.SHINY)
 })
 
 GTCEuStartupEvents.materialModification(event => {
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('andesite_alloy'), () => Item.getItem('create:andesite_alloy')),
-    TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('andesite_alloy'), () => Item.getItem('create:andesite_alloy_block')),
-    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('industrial_iron'), () => Item.getItem('createdeco:industrial_iron_ingot')),
-    TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('industrial_iron'), () => Item.getItem('create:industrial_iron_block'))
+        TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('andesite_alloy'), () => Item.getItem('create:andesite_alloy_block')),
+        TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('industrial_iron'), () => Item.getItem('createdeco:industrial_iron_ingot')),
+        TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('industrial_iron'), () => Item.getItem('create:industrial_iron_block'))
 })
 
 

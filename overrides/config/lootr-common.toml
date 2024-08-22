@@ -16,6 +16,8 @@ additional_trapped_chests = []
 blast_immune = false
 #list of dimensions (to the exclusion of all others) that loot chest should be replaced in (default: blank, allowing all dimensions, e.g., ["minecraft:overworld", "minecraft:the_end"])
 dimension_whitelist = []
+#disables styling of breaking, decaying and refreshing messages sent to players
+disable_message_styles = false
 #list of dimensions where loot chests should automatically decay (default: blank, e.g., ["minecraft:the_nether", "minecraft:the_end"])
 decay_dimensions = []
 #whether or not the entire forge:chests/trapped tag should be added to the conversion list for structures (if they are backed by RandomizableContainerBlockEntity
@@ -42,6 +44,8 @@ trapped_custom = false
 decay_value = 6000
 #list of loot tables which will refresh (default blank, meaning no chests refresh, in the format of ["modid:loot_table", "othermodid:loot_table"])
 refresh_loot_tables = []
+#whether or not the Elytra item frame should be converted into a standard loot chest with a guaranteed elytra
+convert_elytras = true
 #list of dimensions by modid that loot chest should be replaced in (default: blank, allowing all modids, format e.g., ["minecraft
 #othermod"])
 modid_dimension_whitelist = []
@@ -78,8 +82,4 @@ refresh_value = 24000
 check_world_border = false
 #list of structures in which loot chests should automatically refresh (in the format of ["modid:structure_name", "othermodid:other_structure_name"])
 refresh_structures = []
-#whether or not the Elytra item frame should be converted into a standard loot chest with a guaranteed elytra
-convert_elytras = true
-#disables styling of breaking, decaying and refreshing messages sent to players
-disable_message_styles = false
 

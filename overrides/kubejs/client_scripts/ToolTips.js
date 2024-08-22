@@ -98,6 +98,7 @@ ItemEvents.tooltip(event => {
   })
   event.addAdvanced('cosmiccore:macroverse_processor_mainframe', (item, advanced, text) => {
     text.add(2, Text.of('MAX-Tier Circuit'))
+    text.add(3, Text.of('Can run Minecraft without lagging, satisfactory!').gray())
   })
   event.addAdvanced('botania:mana_diamond', (item, advanced, text) => {
     text.add(1, Text.of('MaC₄').yellow())
@@ -170,18 +171,22 @@ ItemEvents.tooltip(event => {
   //subscript (copy and paste) ₂₃₄₅₆₇₈₉₀
 })
 ItemEvents.tooltip(event => {
-  event.addAdvanced(/embers:(.*)/, (item, advanced, text) => {
-    text.add(1, Text.of('The power of the Overseers hinders your mind.').red().italic())
-    text.add(2, Text.of('Mod NYI - Expect integration in future Updates.').white().bold())
+  // event.addAdvanced(/embers:(.*)/, (item, advanced, text) => {
+  //   text.add(1, Text.of('The power of the Overseers hinders your mind.').red().italic())
+  //   text.add(2, Text.of('Mod NYI - Expect integration in future Updates.').white().bold())
+  // })
+  event.addAdvanced('gtceu:max_meteor_recipe_dummy', (item, advanced, text) => {
+    text.add(1, Text.of('Through my eyes, you will see the stars').red().italic())
+    text.add(2, Text.of('FAKE MACHINE - ALLOWS YOU TO VIEW VALID BLOODMAGIC METEORS.').white().bold())
   })
-  event.addAdvanced(/naturesaura:(.*)/, (item, advanced, text) => {
-    text.add(1, Text.of('The power of the Overseers hinders your mind.').red().italic())
-    text.add(2, Text.of('Mod NYI - Expect integration in future Updates.').white().bold())
-  })
-  event.addAdvanced(/occultism:(.*)/, (item, advanced, text) => {
-    text.add(1, Text.of('The power of the Overseers hinders your mind.').red().italic())
-    text.add(2, Text.of('Mod NYI - Expect integration in future Updates.').white().bold())
-  })
+  // event.addAdvanced(/naturesaura:(.*)/, (item, advanced, text) => {
+  //   text.add(1, Text.of('The power of the Overseers hinders your mind.').red().italic())
+  //   text.add(2, Text.of('Mod NYI - Expect integration in future Updates.').white().bold())
+  // })
+  // event.addAdvanced(/occultism:(.*)/, (item, advanced, text) => {
+  //   text.add(1, Text.of('The power of the Overseers hinders your mind.').red().italic())
+  //   text.add(2, Text.of('Mod NYI - Expect integration in future Updates.').white().bold())
+  // })
   let quarktech = ['cosmiccore:space_advanced_quarktech_chestplate','gtceu:quarktech_leggings','gtceu:quarktech_boots','gtceu:quarktech_helmet','gtceu:quarktech_chestplate','gtceu:advanced_quarktech_chestplate','cosmiccore:space_quarktech_chestplate']
   event.addAdvanced(quarktech, (item, advanced, text) => {
     text.add(1, Text.of('Adaptive Insulation').green())
