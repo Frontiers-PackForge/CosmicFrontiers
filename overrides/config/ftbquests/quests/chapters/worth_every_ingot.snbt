@@ -26,7 +26,14 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["635C885360A8A8A9"]
+			dependencies: [
+				"635C885360A8A8A9"
+				"45AE9844B1C84454"
+				"34E7B99E411B3E44"
+				"6BA55FE3C9856E84"
+				"688DD6F7473A121E"
+				"0F68C0E627CE724F"
+			]
 			description: ["Welcome to bloodmagic! Only the key points are mentioned in the LUV quests here to guide you down the right path. There are many fun side recipes to help you along, explore, and integrate life essence into your factory!"]
 			id: "32789BABC2728C07"
 			rewards: [{
@@ -601,6 +608,7 @@
 				{
 					id: "51033A10CCFA32B0"
 					item: "gtceu:acidic_naquadria_solution_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1145,7 +1153,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["076D910F19A6E439"]
 			description: [
 				"Welcome to Crystal CPU's, a much harder CPU core than Nano or Quantum. And require a multi-dimensional setup to fully automate. Some pointers before you start."
 				""
@@ -1170,10 +1177,10 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -8.0d
+			y: -14.0d
 		}
 		{
-			dependencies: ["45AE9844B1C84454"]
+			dependencies: ["076D910F19A6E439"]
 			description: [
 				"The process for asembling your crystal circuits will require an adventure to the orbit of earth."
 				""
@@ -1189,8 +1196,8 @@
 				type: "item"
 			}]
 			title: "Things are getting tricky"
-			x: -7.0d
-			y: -10.0d
+			x: -6.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["2A0A206B6487F7C8"]
@@ -1441,6 +1448,180 @@
 			title: "Neutronite - ZPM Gate #1"
 			x: 0.0d
 			y: -11.0d
+		}
+		{
+			dependencies: ["14100610FD579908"]
+			description: [
+				"The important stuff from this process is the insane amount of lake water you get, as well as silt slurry."
+				""
+				"You might also want to consider automating Nutrient Solution, it's not required atm but it will be needed from ZPM. It's up to you if you wanna just stockpile it or benefit from the much stronger greenhouse recipes now"
+			]
+			id: "3706DAF22D0DE870"
+			subtitle: "Uh.... Water.. Line?"
+			tasks: [{
+				id: "2EC67062B8069F63"
+				item: "gtceu:swamp_sediment_bucket"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"1B8A508AB2E1E572"
+				"52AD639AE0BC4241"
+				"7631222987D9363E"
+			]
+			description: ["This Quest will Open up the ZPM Tab, which may prove of some usefulness even if you do not have Crystal Circuits. As non-major gates can be build from ZPM without UV Circuitry."]
+			id: "3F5E81046FD4215B"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "Only half the climb"
+			tasks: [{
+				id: "1261D80D48384705"
+				item: "gtceu:zpm_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["27C17BA22F91CDA0"]
+			hide_dependency_lines: true
+			id: "52AD639AE0BC4241"
+			shape: "hexagon"
+			tasks: [{
+				id: "13A1E56318285544"
+				item: "cosmiccore:naquadric_superalloy_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["33EAB75E7D2CAFDA"]
+			hide_dependency_lines: true
+			id: "7631222987D9363E"
+			shape: "hexagon"
+			tasks: [{
+				id: "04360723AE047581"
+				item: "cosmiccore:trinavine_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -12.0d
+		}
+		{
+			id: "34E7B99E411B3E44"
+			tasks: [{
+				id: "7F6C109A2A311280"
+				item: "gtceu:crystal_processor"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -15.0d
+		}
+		{
+			id: "688DD6F7473A121E"
+			tasks: [{
+				id: "630C399C5CBC4448"
+				item: "gtceu:crystal_processor_assembly"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -15.0d
+		}
+		{
+			id: "0F68C0E627CE724F"
+			tasks: [{
+				id: "0A3F09A307D13EF3"
+				item: "gtceu:crystal_processor_computer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -15.0d
+		}
+		{
+			description: [
+				"&bCrystal Mainframes&r at last! It only took you constructing a thriving &espace industry&r!"
+				""
+				"These powerful mainframes allow you to crack through major roadblocks that come in ZPM."
+				""
+				"&aIf you've made these, it's pretty safe to say you either rushed LuV or have automated everything you can.&r"
+				""
+				"If you haven't noticed, Frontiers from LuV and beyond will no longer hold punches on how absurd chains will become. It is safe to assume the normalcy of most GregTech Chains will diverge massively here. I look forward to making you suffer, and bringing you even more unique processing and automation challenges."
+				""
+				"&aI wish you luck, Have a huge payload of Memory Shards on the house. Go cash out yourself something nice.&r"
+				"~Ghost"
+			]
+			id: "6BA55FE3C9856E84"
+			rewards: [
+				{
+					count: 256
+					id: "3C52A17D8D3B1A7D"
+					item: "ad_astra:ice_shard"
+					type: "item"
+				}
+				{
+					count: 128
+					id: "51F4BF5DD992B0AF"
+					item: "kubejs:memory_shard"
+					type: "item"
+				}
+			]
+			subtitle: "The Pinnacle of Your Suffering"
+			tasks: [{
+				id: "51FB63A84940A52C"
+				item: "gtceu:crystal_processor_mainframe"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["076D910F19A6E439"]
+			description: [
+				"The process for asembling your crystal circuits will require an adventure to the orbit of earth."
+				""
+				"No other field of microgravity will work, please make sure you set this up in the orbit of earth."
+			]
+			icon: "undergarden:goo_ball"
+			id: "14100610FD579908"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "To Orbit!"
+			tasks: [{
+				id: "752BCF58D95740DC"
+				item: "undergarden:goo_ball"
+				type: "item"
+			}]
+			title: "Returning to the Gardens"
+			x: -8.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["3706DAF22D0DE870"]
+			icon: "gtceu:silt_slurry_bucket"
+			id: "2B37981D5212AB24"
+			tasks: [{
+				id: "379D40C6CF948033"
+				item: "gtceu:silt_slurry_bucket"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["3706DAF22D0DE870"]
+			icon: "gtceu:lake_water_bucket"
+			id: "6354D6CB595585EA"
+			tasks: [{
+				id: "24B25F3F5F952D03"
+				item: "gtceu:lake_water_bucket"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -7.5d
 		}
 	]
 	title: "A Factory Soaked In Blood [&dLuV&r]"

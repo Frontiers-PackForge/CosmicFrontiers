@@ -1,0 +1,61 @@
+{
+  "foodItems": {
+    "entries": [],
+    "isWhitelist": false
+  },
+  "trackCount": 64,
+  "resetOnDeath": false,
+  "limitProgressionToSurvival": false,
+  "minFoodsToActivate": 0,
+  "benefits": [
+    {
+      "threshold": 3,
+      "benefit": {
+        "attribute": "minecraft:generic.max_health",
+        "value": 2
+      }
+    },
+    {
+      "threshold": 10,
+      "benefit": {
+        "effect": "cold_sweat:insulated",
+        "value": 1
+      }
+    },
+    {
+      "threshold": 20,
+      "benefit": {
+        "effect": "cold_sweat:insulated",
+        "value": 3
+      }
+    },
+    {
+      "threshold": 30,
+      "benefit": {
+        "effect": "cold_sweat:insulated",
+        "value": 5
+      }
+    },
+    {
+      "threshold": 40,
+      "benefit": {
+        "attribute": "minecraft:generic.max_health",
+        "value": 7
+      }
+    },
+    {
+      "threshold": 50,
+      "benefit": {
+        "effect": "cold_sweat:insulated",
+        "value": 9
+      }
+    }
+  ],
+  "shouldExcludedCount": true,
+  "complexityStandardNutrition": 5,
+  "complexityStandardSaturation": 0.6,
+  "complexityBenefitEffectModifier": 0.2,
+  "complexityNeutralEffectModifier": 0,
+  "complexityHarmEffectModifier": -0.2,
+  "foodDiversity": []
+}

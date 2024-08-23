@@ -756,6 +756,11 @@
 			description: [
 				"This respirator can be crafted late into steam and repaired with steel. "
 				"It has &l14 Times the Durability of the respirator"
+				""
+				"Currently the armor model isn't done so expect a massive pink cube on your skull."
+				"lmao."
+				""
+				"God I hate coding this game."
 			]
 			id: "1F5442CB5217C1B1"
 			shape: "gear"
@@ -769,12 +774,9 @@
 							Insulation: [ ]
 						}
 					}
-					id: "kubejs:rebreather"
+					id: "kubejs:reinforced_respirator"
 					tag: {
 						Damage: 0
-						affix_data: {
-							sockets: 0
-						}
 					}
 				}
 				type: "item"
@@ -846,6 +848,29 @@
 			title: "Combat and You"
 			x: 6.5d
 			y: -2.0d
+		}
+		{
+			description: [
+				"Redid mods. Some food mods and other contents mods got the axe"
+				""
+				"Make sure to regen your aether dim if you had it generated."
+				""
+				"Fixed a variety of bugs in QB/Recipes/Progression Locks"
+				""
+				"LuV Progression is slowly being made. "
+				""
+				""
+				"NOTICE : THE QUESTBOOK WILL START ITS OVERHAUL SOON "
+				""
+				"EXPECT FINALIZED VERSIONS OF QUESTS  BETWEEN 0.5.1->0.7.0! ! !"
+				""
+				"THIS NOTICE WILL PERSIST UNTIL COMPLETION OF THE FIRST HALF OF THE QB CLEANUP!"
+			]
+			icon: "minecraft:writable_book"
+			id: "001ABD786A9CF26D"
+			subtitle: "Changelog 0.5.0 -> 0.5.1"
+			x: 8.0d
+			y: -3.5d
 		}
 	]
 	subtitle: ["It all starts here"]

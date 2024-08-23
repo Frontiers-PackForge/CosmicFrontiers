@@ -19,13 +19,32 @@ ServerEvents.recipes(event => {
     //Remove Boats
     event.remove({ id: /^(?!gtceu:)([^:]+):(.*)_boat$/ })
 
-    event.remove({id: 'gtceu:shapeless/rubber_wood_planks'})
+    event.remove({ id: 'gtceu:shapeless/rubber_wood_planks' })
 
-    
+    //Holy Shit Aether piss off already.
+
+    event.remove({ id: 'aether:skyroot_cartography_table' })
+    event.remove({ id: 'aether:skyroot_fletching_table' })
+    event.remove({ id: 'aether:skyroot_smithing_table' })
+    event.remove({ id: 'aether:skyroot_grindstone' })
+    event.remove({ id: 'aether:skyroot_grindstone_holystone_slab' })
+    event.remove({ id: 'aether:skyroot_loom' })
+    event.remove({ id: 'aether:skyroot_note_block' })
+    event.remove({ id: 'aether:skyroot_beehive' })
+    event.remove({ id: 'aether:skyroot_barrel' })
+    event.remove({ id: 'aether:skyroot_tripwire_hook' })
+    event.remove({ id: 'aether:skyroot_iron_vanilla_shield' })
+    event.remove({ id: 'aether:skyroot_zanite_vanilla_shield' })
+    event.remove({ id: 'aether:skyroot_stairs' })
+    event.remove({ id: 'aether:skyroot_slab' })
+    event.remove({ id: 'minecraft:kjs/aether_skyroot_fence' })
+    event.remove({ id: 'aether:skyroot_bed' })
+    event.remove({ id: 'aether:skyroot_stick' })
 
 
     //DANGEROUS : WOOD PLANK REMOVALS - BY RECIPE - if something is broken attempt to check it against this matcher first
     event.remove({ id: /^(?!gtceu:)([^:]+):(.*)_planks$/ })
+    //It is too destructive to remove Slabs/stairs en-mass. and TBH we should be removing the recipes in the loop god this file FUCKING SUCKS.
     //forgive me for the sins im about to commit
     let woodType = [
         'fir',//index 0
@@ -60,6 +79,31 @@ ServerEvents.recipes(event => {
         'rubber', //index 23
         //architect pallets
         'twisted', //index 25
+        //BiomesWeve Gone Index 26-49
+        'aspen',
+        'baobab',
+        'blue_enchanted',
+        'cika',
+        'cypress',
+        'ebony',
+        'fir',
+        'florus',
+        'green_enchanted',
+        'holly',
+        'ironwood',
+        'jacaranda',
+        'mahogany',
+        'maple',
+        'palm',
+        'pine',
+        'rainbow_eucalyptus',
+        'redwood',
+        'sakura',
+        'skyris',
+        'white_mangrove',
+        'willow',
+        'witch_hazel',
+        'zelkova'
 
     ]
     let mcWood = [
@@ -272,7 +316,10 @@ ServerEvents.recipes(event => {
             modID = 'gtceu'
         } else if (index === 24) {
             modID = 'architects_palette'
+        } else if (index >= 25) {
+            modID = 'biomeswevegone'
         }
+
         if (Item.exists(`${modID}:${woodType}_log`)) {
             event.recipes.gtceu.cutter(`${modID}:${woodType}_cutting`)
                 .itemInputs(`${modID}:${woodType}_log`)
@@ -367,6 +414,44 @@ ServerEvents.recipes(event => {
                     P: `${modID}:${woodType}_wood`
                 })
         }
+        //Slabs - This makes me want to drop myself down a flight of stairs.
+        // I hate this entire file with a burning passion but hey it's better than like 5000 manual recipes...
+        if (Item.exists(`${modID}:${woodType}_slab`)) {
+            event.remove({ output: `${modID}:${woodType}_slab` })
+            event.shaped(`2x ${modID}:${woodType}_slab`, [
+                '   ',
+                '   ',
+                'TP '
+            ],
+                {
+                    T: '#forge:tools/saws',
+                    P: `${modID}:${woodType}_planks`
+                })
+            event.recipes.gtceu.cutter(`${modID}:${woodType}_slab_slicy`)
+                .itemInputs(`${modID}:${woodType}_planks`)
+                .itemOutputs(`2x ${modID}:${woodType}_slab`)
+                .duration(100)
+                .EUt(4);
+        }
+        //Stairs
+        if (Item.exists(`${modID}:${woodType}_stairs`)) {
+            event.remove({ output: `${modID}:${woodType}_stairs` })
+            event.shaped(`4x ${modID}:${woodType}_stairs`, [
+                'W  ',
+                'WW ',
+                'WWW'
+            ],
+                {
+                    W: `${modID}:${woodType}_planks`
+                })
+            event.recipes.gtceu.assembler(`${modID}:${woodType}_stairs_put_together`)
+                .itemInputs(`6x ${modID}:${woodType}_planks`)
+                .itemOutputs(`4x ${modID}:${woodType}_stairs`)
+                .circuit(7)
+                .duration(100)
+                .EUt(4);
+        }
+
         //Stripped Wood -> Planks
         if (Item.exists(`${modID}:stripped_${woodType}_wood`)) {
             event.shaped(`4x ${modID}:${woodType}_planks`, [
@@ -524,6 +609,7 @@ ServerEvents.recipes(event => {
                     S: `#forge:tools/saws`
                 })
         }
+        //
         //BOAT 
         if (Item.exists(`${modID}:${woodType}_boat`)) {
             event.recipes.gtceu.assembler(`${modID}:${woodType}_planks`)
@@ -926,16 +1012,16 @@ ServerEvents.recipes(event => {
             .itemOutputs('gtceu:wood_dust')
             .duration(100)
             .EUt(2);
-            event.remove({ output:'framedblocks:framed_chest' })
-            event.shaped( 'framedblocks:framed_chest', [
-                'LFL',
-                'FSF',
-                'LFL'
-            ], {
-                L: '#minecraft:logs',
-                F: 'framedblocks:framed_cube',
-                S: 'minecraft:flint'
-            })  
+        event.remove({ output: 'framedblocks:framed_chest' })
+        event.shaped('framedblocks:framed_chest', [
+            'LFL',
+            'FSF',
+            'LFL'
+        ], {
+            L: '#minecraft:logs',
+            F: 'framedblocks:framed_cube',
+            S: 'minecraft:flint'
+        })
     }
 
     // Farmer's Delight Signs
