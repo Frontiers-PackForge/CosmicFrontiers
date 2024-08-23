@@ -471,6 +471,7 @@
 		}
 		{
 			dependencies: ["6622E68A73AAD137"]
+			description: ["Before you wonder, the hand crafting recipe is removed, go make FeCl3 or Persulfate."]
 			id: "1ECE5150F6B08544"
 			tasks: [{
 				id: "5550A0559EA6F96D"
@@ -518,6 +519,7 @@
 				{
 					id: "5B2AD96F3B3F1136"
 					item: "gtceu:hydrochloric_acid_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -816,6 +818,14 @@
 		}
 		{
 			dependencies: ["4A81DCCC6A0C6BA6"]
+			description: [
+				"Oh woe is me? a create block in my my gt progression!?"
+				"Look it was either this or a chemical bath and then make the mana method end up being worse."
+				""
+				"Pick your poisions."
+				""
+				"\"смешной редстоун :)\" -Ghostipedia in some GTNH Chat. (I barely understand russian)"
+			]
 			id: "713E576BAB70EF4F"
 			tasks: [{
 				id: "6EE98DE70E4B016D"

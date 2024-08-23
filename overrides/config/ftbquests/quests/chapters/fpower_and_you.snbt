@@ -34,10 +34,19 @@
 		}
 		{
 			dependencies: ["6146E12078CCA5D3"]
+			description: [
+				"Steam is mostly viable for the start of the game."
+				""
+				"I would strongly recommend moving away from it **entirely** by LV. Go make the ethanol power loop or suck down a few oil wells."
+				""
+				"I am not responsible for sanity loss from using steam beyond this point."
+				"Kthx"
+			]
 			icon: "gtceu:steam_bucket"
 			id: "31D607A0E640C8D8"
 			shape: "hexagon"
 			size: 1.5d
+			subtitle: "Steam."
 			tasks: [{
 				id: "2BF4D34170B88166"
 				type: "checkmark"
@@ -54,7 +63,7 @@
 				item: "gtceu:lp_steam_solar_boiler"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.5d
 			y: -1.5d
 		}
 		{
@@ -65,8 +74,8 @@
 				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -3.0d
+			x: -4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
@@ -76,22 +85,22 @@
 				item: "gtceu:lp_steam_liquid_boiler"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -4.5d
+			x: -4.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["3B12EDE4D85AF194"]
+			dependencies: ["31D607A0E640C8D8"]
 			id: "7786A4BDC9C62461"
 			tasks: [{
 				id: "0E0D152491235E72"
 				item: "gtceu:hp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -3.0d
+			x: -2.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["4863B9E3983A5463"]
+			dependencies: ["31D607A0E640C8D8"]
 			id: "59BA549EAC602E63"
 			tasks: [{
 				id: "1091FDF0B76C8264"
@@ -99,17 +108,17 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -4.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["0BB1B009E21A8D73"]
+			dependencies: ["31D607A0E640C8D8"]
 			id: "7666C59B2C2A9C54"
 			tasks: [{
 				id: "14947C012D3A9AF2"
 				item: "gtceu:hp_steam_solar_boiler"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: -1.5d
 		}
 		{
@@ -193,6 +202,11 @@
 				"4ECB7E470EED0932"
 				"7250EED57A87F0AF"
 			]
+			description: [
+				"Better than Actual Diesel for the extra Effort."
+				""
+				"Oh but disel is still pretty good!"
+			]
 			id: "020B8BDB99E667FC"
 			shape: "hexagon"
 			size: 1.25d
@@ -222,6 +236,7 @@
 			dependencies: ["5F977625E0059F00"]
 			icon: "createdeco:decal_fluid"
 			id: "4ECB7E470EED0932"
+			subtitle: "Any Fuel Above this Icon is valid for MV"
 			title: "Liquid Fuels"
 			x: -6.5d
 			y: -1.5d
@@ -456,6 +471,153 @@
 			}]
 			x: -11.5d
 			y: 4.5d
+		}
+		{
+			dependencies: ["4ECB7E470EED0932"]
+			id: "00E22C38E03E6739"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "5CD32696AAF42C2D"
+				item: "gtceu:diesel_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["23AEF543AA92119E"]
+			id: "493D3AD6435FA70F"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "2DDC3B237CE5481B"
+				item: "gtceu:iv_machine_hull"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["493D3AD6435FA70F"]
+			id: "349CA7E4388B5E1A"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "7573375A8DB91A7D"
+				item: "gtceu:extreme_combustion_engine"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["493D3AD6435FA70F"]
+			id: "4C5594EAE0D1F1C8"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The Age of Fusio- Wait no...?"
+			tasks: [{
+				id: "2ECF137DAE81F679"
+				item: "gtceu:luv_machine_hull"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C5594EAE0D1F1C8"]
+			description: [
+				"Oh boy, Naquahine Power."
+				""
+				"This Generator is not only POWERFUL. (16A LuV Per Reactor) It's also portable (Smaller Micro Reactors) This fuel makes outpost establishment even easier as your options for remote power expand. "
+				""
+				"It's pretty hungry on ITNT though so I recommend a passive supply of ITNT somewhere in your base."
+			]
+			id: "1345EB5C8CE6EA96"
+			subtitle: "The Queen of Power"
+			tasks: [{
+				id: "2A771952C790173B"
+				item: "cosmiccore:naquahine_pressure_reactor"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4C5594EAE0D1F1C8"
+				"1345EB5C8CE6EA96"
+			]
+			description: [
+				"You can't really make any better tier of micro reactor atm. as they're not very viable to produce due to high material cost."
+				""
+				"Did you think miniturized fusion explosion containers would be CHEAP?!"
+			]
+			id: "31EA8F5E9A474DDC"
+			rewards: [{
+				id: "61F55C4523DE7C56"
+				item: "kubejs:memory_shard"
+				type: "item"
+			}]
+			subtitle: "Well then"
+			tasks: [{
+				id: "6E70B654A4C359DB"
+				item: "gtceu:iv_naquahine_mini_reactor"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4C5594EAE0D1F1C8"]
+			id: "7C04FB1E15ACCE47"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "TODO"
+			tasks: [{
+				id: "2B0BB2E1016867CA"
+				item: "gtceu:zpm_machine_hull"
+				type: "item"
+			}]
+			x: -17.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C5594EAE0D1F1C8"]
+			description: [
+				"I removed &cplasma power&r via &mlarge fluid alloy smelter&r fusion production. "
+				""
+				"Currently your main power in LuV is &eNaquahine&r, as well as bolstering any other power methods you had before. Make sure you account for the increase fuel consumption directly caused by producing Naquahine ful as well."
+				""
+				"Make sure you have a decent &aNaquadah&r setup!"
+			]
+			id: "04DC79601BAC37A1"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&fFusion Spam is lame."
+			tasks: [{
+				id: "20BD2F2B03B80149"
+				item: "gtceu:naquahine_superfuel_mk_one_bucket"
+				type: "item"
+			}]
+			x: -15.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["23AEF543AA92119E"]
+			description: ["You're already making thundering mana for circuits soon, why not upgrade your power with it?"]
+			id: "2CD74038E57C8D1C"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "A Nice Upgrade"
+			tasks: [{
+				id: "2FD9052DBEF33249"
+				item: "gtceu:thunder_boosted_source_diesel_bucket"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -2.0d
 		}
 	]
 	title: "&fPower and Multiblocks"

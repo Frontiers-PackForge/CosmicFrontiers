@@ -150,6 +150,22 @@
 			dependencies: ["757767FEB0FB7630"]
 			id: "67E7189D598C3682"
 			shape: "hexagon"
+			tasks: [{
+				id: "06224DD7A1849509"
+				item: {
+					Count: 1
+					id: "cosmicrocketry:tier_5_rocket"
+					tag: {
+						BotariumData: {
+							StoredFluids: [{
+								Amount: 3000L
+								Fluid: "ad_astra:fuel"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
 			title: "Tier 5 Rocket [NYI]"
 			x: 0.0d
 			y: -8.0d
@@ -158,6 +174,22 @@
 			dependencies: ["67E7189D598C3682"]
 			id: "1F44845794A4973D"
 			shape: "hexagon"
+			tasks: [{
+				id: "344E565B88D4C841"
+				item: {
+					Count: 1
+					id: "cosmicrocketry:tier_6_rocket"
+					tag: {
+						BotariumData: {
+							StoredFluids: [{
+								Amount: 3000L
+								Fluid: "ad_astra:fuel"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
 			title: "Tier 6 Rocket [NYI]"
 			x: 0.0d
 			y: -10.0d
@@ -166,6 +198,22 @@
 			dependencies: ["1F44845794A4973D"]
 			id: "1003501BBAC8D6C0"
 			shape: "hexagon"
+			tasks: [{
+				id: "49046E0699CD4EC5"
+				item: {
+					Count: 1
+					id: "cosmicrocketry:tier_7_rocket"
+					tag: {
+						BotariumData: {
+							StoredFluids: [{
+								Amount: 3000L
+								Fluid: "ad_astra:fuel"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
 			title: "Tier 7 Rocket [NYI]"
 			x: 0.0d
 			y: -12.0d
