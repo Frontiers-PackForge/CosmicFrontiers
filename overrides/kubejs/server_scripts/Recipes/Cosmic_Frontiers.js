@@ -184,14 +184,14 @@ ServerEvents.recipes(event => {
        ], {
               C: 'minecraft:charcoal'
        })
-       
-      event.recipes.gtceu.assembler('ug_catalyst')
-      .itemInputs(['minecraft:heart_of_the_sea','aether:bronze_dungeon_key','aether:silver_dungeon_key','aether:gold_dungeon_key','#gtceu:circuits/hv',])
-      .inputFluids('gtceu:source_oils 12000')
-      .itemOutputs('undergarden:catalyst')
-      .circuit(2)
-      .duration(160)
-      .EUt(GTValues.VA[GTValues.EV]);
+
+       event.recipes.gtceu.assembler('ug_catalyst')
+              .itemInputs(['minecraft:heart_of_the_sea', 'aether:bronze_dungeon_key', 'aether:silver_dungeon_key', 'aether:gold_dungeon_key', '#gtceu:circuits/hv',])
+              .inputFluids('gtceu:source_oils 12000')
+              .itemOutputs('undergarden:catalyst')
+              .circuit(2)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.EV]);
        event.recipes.gtceu.forge_hammer('shatter_the_seal')
               .itemInputs('nether_remastered:seal_of_the_underworld_item')
               .itemOutputs('8x kubejs:seal_shards')
@@ -216,6 +216,16 @@ ServerEvents.recipes(event => {
               .itemInputs('cosmiccore:blackstone_pustule')
               .itemOutputs('3x biomesoplenty:blackstone_bulb')
               .chancedOutput(Item.of('biomesoplenty:blackstone_bulb', 1), 5000, 500)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.cutter('stone_slab_to_pressureplate')
+              .itemInputs('minecraft:stone_slab')
+              .itemOutputs('4x minecraft:stone_pressure_plate')
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+       event.recipes.gtceu.cutter('stone_plate_to_button')
+              .itemInputs('minecraft:stone_pressure_plate')
+              .itemOutputs('4x minecraft:stone_button')
               .duration(160)
               .EUt(GTValues.VA[GTValues.LV] / 2);
        event.recipes.gtceu.mixer('cosmiccore:sediment_sludge_mixing')

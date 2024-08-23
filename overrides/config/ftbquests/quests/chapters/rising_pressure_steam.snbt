@@ -811,39 +811,25 @@
 			shape: "gear"
 			size: 2.0d
 			subtitle: "Danger!"
-			tasks: [
-				{
-					id: "0BA52B59AF9207C1"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-						}
-						id: "gtceu:rubber_gloves"
-						tag: {
-							Damage: 0
-							affix_data: {
-								sockets: 0
-							}
+			tasks: [{
+				id: "0BA52B59AF9207C1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
 						}
 					}
-					type: "item"
-				}
-				{
-					id: "78BAF54B0A798EEF"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:face_mask)item(thinair:respirator)item(kubejs:rebreather)item(kubejs:nano_respirator))"
+					id: "gtceu:rubber_gloves"
+					tag: {
+						Damage: 0
+						affix_data: {
+							sockets: 0
 						}
 					}
-					title: "Any Facemask"
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			title: "Hazards and you!"
 			x: -2.0d
 			y: -2.0d

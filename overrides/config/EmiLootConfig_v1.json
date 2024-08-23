@@ -1,7 +1,7 @@
 {
   "debugMode": false,
   "parseChestLoot": true,
-  "parseBlockLoot": true,
+  "parseBlockLoot": false,
   "parseMobLoot": true,
   "parseGameplayLoot": true,
   "chestLootCompact": true,
