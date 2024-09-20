@@ -157,6 +157,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(["pulse_exchange_steam_vent", "pulse_exchange_steam"])
         // ["recipeTypes(com.gregtechceu.gtceu.api.recipe.GTRecipeType[])"]('pulse_exchange_steam_vent','pulse_exchange_steam' )
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
         .appearanceBlock(() => Block.getBlock('cosmiccore:highly_conductive_fission_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('TTT', 'TGT', 'TGT', 'TGT', 'TTT',)

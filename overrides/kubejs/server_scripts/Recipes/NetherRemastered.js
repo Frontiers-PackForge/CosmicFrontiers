@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     .duration(800)
     .EUt(8);  
     event.recipes.gtceu.extractor('gtceu:shard_fragment_3') 
-    .itemInputs('minecraft:decorated_pot_sherds')
+    .itemInputs('#minecraft:decorated_pot_sherds')
     .itemOutputs('nether_remastered:seal_piece_3')
     .duration(800)
     .EUt(8);  

@@ -98,6 +98,17 @@ ServerEvents.recipes(event => {
         .duration(40)
         .EUt(GTValues.VA[GTValues.MV]);
 
+    //Fuckin Quicklime.
+    event.remove({ id: 'gtceu:chemical_reactor/calcite_from_quicklime' })
+    event.recipes.gtceu.chemical_reactor('gtceu_calcite_fix')
+    .itemInputs('2x gtceu:quicklime_dust')
+    .inputFluids('gtceu:carbon_dioxide 1000')
+    .itemOutputs('5x gtceu:calcite_dust')
+    .circuit(3)
+    .duration(80)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+    
     // event.recipes.gtceu.chemical_reactor('gtceu:electrolyzer/calcium_sulfide_decomp')
     //     .itemInputs('2x gtceu:calcium_sulfide_dust')
     //     .itemOutputs('1x gtceu:calcium_dust')

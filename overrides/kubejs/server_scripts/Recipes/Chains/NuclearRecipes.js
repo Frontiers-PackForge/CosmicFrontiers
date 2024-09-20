@@ -14,6 +14,7 @@ ServerEvents.recipes(event => {
         .outputFluids(`gtceu:fluorine 6000`)
         .outputFluids(`gtceu:flinak 1000`)
         .itemOutputs('gtceu:plutonium_dust')
+        .itemOutputs('gtceu:neptunium_dust')
         .chancedOutput(`gtceu:uranium_dust`, 500, 500)
         .itemOutputsRanged('gtceu:plutonium_dust', 1, 2)
         .itemOutputsRanged('gtceu:americium_dust', 1, 2)

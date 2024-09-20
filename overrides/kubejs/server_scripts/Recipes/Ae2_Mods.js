@@ -242,7 +242,7 @@ ServerEvents.recipes(event => {
     .duration(160)
     .EUt(GTValues.VA[GTValues.HV]);
   //GT Screen
-  event.remove({id: 'gtceu:assembler/cover_screen'})
+  event.remove({ id: 'gtceu:assembler/cover_screen' })
   event.recipes.gtceu.assembler('gt_cover_screen')
     .itemInputs(['gtceu:glass_plate', '4x gtceu:steel_foil', '#gtceu:circuits/lv', '4x gtceu:fine_copper_wire'])
     .itemOutputs('gtceu:computer_monitor_cover')
@@ -311,18 +311,48 @@ ServerEvents.recipes(event => {
     .itemOutputs('ae2:semi_dark_monitor')
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
-  //Formation Core
+  //Formation Cores
   event.recipes.gtceu.assembler('ae2:formation_assembly')
-    .itemInputs(['4x #forge:flawless_gems/quartzite', 'gtceu:computer_monitor_cover', 'gtceu:lv_robot_arm'])
+    .itemInputs(['4x #forge:flawless_gems/quartzite', 'gtceu:computer_monitor_cover', '2x #gtceu:circuits/lv'])
+    .itemOutputs('4x ae2:formation_core')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.assembler('ae2:formation_assemblymk2')
+    .itemInputs(['8x #forge:flawless_gems/quartzite', 'gtceu:computer_monitor_cover', '#gtceu:circuits/hv'])
     .itemOutputs('8x ae2:formation_core')
     .duration(160)
-    .EUt(GTValues.VA[GTValues.LV]);
-  //Annihilation Core
+    .EUt(GTValues.VA[GTValues.HV]);
+  event.recipes.gtceu.assembler('ae2:formation_assemblymk3')
+    .itemInputs(['16x #forge:flawless_gems/quartzite', '2x gtceu:computer_monitor_cover', '#gtceu:circuits/iv'])
+    .itemOutputs('16x ae2:formation_core')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.IV]);
+  event.recipes.gtceu.assembler('ae2:formation_assemblymk4')
+    .itemInputs(['32x #forge:flawless_gems/quartzite', '4x gtceu:computer_monitor_cover', '#gtceu:circuits/luv'])
+    .itemOutputs('32x ae2:formation_core')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  //Annihilation Cores
   event.recipes.gtceu.assembler('ae2:annihilation_assembly')
-    .itemInputs(['4x #forge:flawless_gems/certus_quartz', 'gtceu:computer_monitor_cover', 'gtceu:lv_robot_arm'])
-    .itemOutputs('8x ae2:annihilation_core')
+    .itemInputs(['4x #forge:flawless_gems/certus_quartz', 'gtceu:computer_monitor_cover', '2x #gtceu:circuits/lv'])
+    .itemOutputs('4x ae2:annihilation_core')
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.assembler('ae2:annihilation_assemblymk2')
+    .itemInputs(['8x #forge:flawless_gems/certus_quartz', 'gtceu:computer_monitor_cover', '#gtceu:circuits/hv'])
+    .itemOutputs('8x ae2:annihilation_core')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.HV]);
+  event.recipes.gtceu.assembler('ae2:annihilation_assemblymk3')
+    .itemInputs(['16x #forge:flawless_gems/certus_quartz', '2x gtceu:computer_monitor_cover', '#gtceu:circuits/iv'])
+    .itemOutputs('16x ae2:annihilation_core')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.IV]);
+    event.recipes.gtceu.assembler('ae2:annihilation_assemblymk4')
+    .itemInputs(['32x #forge:flawless_gems/certus_quartz', '4x gtceu:computer_monitor_cover', '#gtceu:circuits/luv'])
+    .itemOutputs('32x ae2:annihilation_core')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.LuV]);
   //Terminal Basic
   event.recipes.gtceu.assembler('ae2:terminal_assembly')
     .itemInputs(['32x gtceu:fine_annealed_copper_wire', '2x ae2:formation_core', '2x ae2:annihilation_core', 'gtceu:terminal', 'ae2:semi_dark_monitor'])
@@ -420,14 +450,14 @@ ServerEvents.recipes(event => {
     .itemOutputs('2x gtceu:fluix_dust')
     .duration(15)
     .EUt(GTValues.VA[GTValues.HV]);
-    //Pattern Modifier
-    event.recipes.gtceu.assembler('pattern_modifier_recipe_item')
+  //Pattern Modifier
+  event.recipes.gtceu.assembler('pattern_modifier_recipe_item')
     .itemInputs(['ae2:pattern_encoding_terminal', '#gtceu:circuits/ev', 'ae2:item_storage_cell_1k'])
     .itemOutputs('expatternprovider:pattern_modifier')
     .duration(15)
     .EUt(GTValues.VA[GTValues.MV]);
-    //Patterns bc apparently we lost em
-    event.recipes.gtceu.assembler('pattern_recipe')
+  //Patterns bc apparently we lost em
+  event.recipes.gtceu.assembler('pattern_recipe')
     .itemInputs(['32x gtceu:fine_galvanized_ethersteel_wire', '16x gtceu:stainless_steel_plate', '2x #gtceu:circuits/hv', 'gtceu:diamond_lens'])
     .inputFluids(`gtceu:soldering_alloy 576`)
     .itemOutputs('8x ae2:blank_pattern')
@@ -436,49 +466,49 @@ ServerEvents.recipes(event => {
 
   //Extended Ae2
   event.recipes.gtceu.assembler('extended_interface')
-  .itemInputs(['4x ae2:interface', '4x cosmiccore:prismatic_tungstensteel_plate', 'gtceu:ev_robot_arm'])
-  .inputFluids(`gtceu:soldering_alloy 576`)
-  .itemOutputs('expatternprovider:ex_interface')
-  .circuit(1)
-  .duration(90)
-  .EUt(GTValues.VA[GTValues.EV]);
+    .itemInputs(['4x ae2:interface', '4x cosmiccore:prismatic_tungstensteel_plate', 'gtceu:ev_robot_arm'])
+    .inputFluids(`gtceu:soldering_alloy 576`)
+    .itemOutputs('expatternprovider:ex_interface')
+    .circuit(1)
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.assembler('extended_provider')
-  .itemInputs(['4x ae2:pattern_provider', '4x cosmiccore:prismatic_tungstensteel_plate', 'gtceu:ev_robot_arm'])
-  .inputFluids(`gtceu:soldering_alloy 576`)
-  .itemOutputs('expatternprovider:ex_pattern_provider')
-  .circuit(1)
-  .duration(90)
-  .EUt(GTValues.VA[GTValues.EV]);
+    .itemInputs(['4x ae2:pattern_provider', '4x cosmiccore:prismatic_tungstensteel_plate', 'gtceu:ev_robot_arm'])
+    .inputFluids(`gtceu:soldering_alloy 576`)
+    .itemOutputs('expatternprovider:ex_pattern_provider')
+    .circuit(1)
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.assembler('extended_interface_upgrade')
-  .itemInputs(['3x ae2:interface', '4x cosmiccore:prismatic_tungstensteel_plate', 'gtceu:ev_robot_arm'])
-  .inputFluids(`gtceu:soldering_alloy 576`)
-  .itemOutputs('expatternprovider:interface_upgrade')
-  .circuit(2)
-  .duration(90)
-  .EUt(GTValues.VA[GTValues.EV]);
+    .itemInputs(['3x ae2:interface', '4x cosmiccore:prismatic_tungstensteel_plate', 'gtceu:ev_robot_arm'])
+    .inputFluids(`gtceu:soldering_alloy 576`)
+    .itemOutputs('expatternprovider:interface_upgrade')
+    .circuit(2)
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.assembler('extended_provider_upgrade')
-  .itemInputs(['3x ae2:pattern_provider', '4x cosmiccore:prismatic_tungstensteel_plate', 'gtceu:ev_robot_arm'])
-  .inputFluids(`gtceu:soldering_alloy 576`)
-  .itemOutputs('expatternprovider:pattern_provider_upgrade')
-  .circuit(2)
-  .duration(90)
-  .EUt(GTValues.VA[GTValues.EV]);
-  
+    .itemInputs(['3x ae2:pattern_provider', '4x cosmiccore:prismatic_tungstensteel_plate', 'gtceu:ev_robot_arm'])
+    .inputFluids(`gtceu:soldering_alloy 576`)
+    .itemOutputs('expatternprovider:pattern_provider_upgrade')
+    .circuit(2)
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.EV]);
 
-event.recipes.gtceu.assembler('extended_bus_upgrade_kit')
-  .itemInputs(['4x ae2:speed_card', '3x ae2:annihilation_core', '3x ae2:formation_core', 'gtceu:ev_robot_arm'])
-  .inputFluids(`gtceu:soldering_alloy 576`)
-  .itemOutputs('2x expatternprovider:io_bus_upgrade')
-  .circuit(1)
-  .duration(90)
-  .EUt(GTValues.VA[GTValues.EV]);
-event.recipes.gtceu.assembler('extended_export_bus_upgrade_from_bus')
-  .itemInputs(['16x gtceu:fine_red_alloy_wire', 'ae2:export_bus', 'expatternprovider:io_bus_upgrade'])
-  .inputFluids(`gtceu:soldering_alloy 576`)
-  .itemOutputs('expatternprovider:ex_export_bus_part')
-  .circuit(3)
-  .duration(90)
-  .EUt(GTValues.VA[GTValues.EV]);
+
+  event.recipes.gtceu.assembler('extended_bus_upgrade_kit')
+    .itemInputs(['4x ae2:speed_card', '3x ae2:annihilation_core', '3x ae2:formation_core', 'gtceu:ev_robot_arm'])
+    .inputFluids(`gtceu:soldering_alloy 576`)
+    .itemOutputs('2x expatternprovider:io_bus_upgrade')
+    .circuit(1)
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.EV]);
+  event.recipes.gtceu.assembler('extended_export_bus_upgrade_from_bus')
+    .itemInputs(['16x gtceu:fine_red_alloy_wire', 'ae2:export_bus', 'expatternprovider:io_bus_upgrade'])
+    .inputFluids(`gtceu:soldering_alloy 576`)
+    .itemOutputs('expatternprovider:ex_export_bus_part')
+    .circuit(3)
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.EV]);
   event.shaped('2x expatternprovider:wireless_connect', [
     'RDE',
     'QHQ',
@@ -530,10 +560,10 @@ event.recipes.gtceu.assembler('extended_export_bus_upgrade_from_bus')
     'gtceu:steel_wrench', 'ae2:energy_cell', 'ae2:terminal'
   ])
   event.shapeless('ae2netanalyser:network_analyser', [
-    'ae2:network_tool','gtceu:diamond_lens'
+    'ae2:network_tool', 'gtceu:diamond_lens'
   ])
   event.shapeless('expatternprovider:wireless_tool', [
-    'ae2:network_tool','ae2:wireless_receiver'
+    'ae2:network_tool', 'ae2:wireless_receiver'
   ])
   event.shapeless('expatternprovider:tag_storage_bus', [
     'ae2:storage_bus', 'gtceu:item_filter', 'gtceu:item_tag_filter', 'gtceu:fluid_filter'
@@ -698,9 +728,9 @@ event.recipes.gtceu.assembler('extended_export_bus_upgrade_from_bus')
     let fluids = lamFluids[index]
     let output = outputAmount[index]
     var polymer;
-    if (index === 1){
+    if (index === 1) {
       polymer = 'gtceu:rubber_foil'
-    } else if(index < 3) {
+    } else if (index < 3) {
       polymer = 'gtceu:polyethylene_foil'
     } else if (index < 7) {
       polymer = 'gtceu:polytetrafluoroethylene_foil'

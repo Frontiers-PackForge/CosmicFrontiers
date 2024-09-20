@@ -234,8 +234,20 @@ ServerEvents.recipes(event => {
 
 
 
+  //Interstellar Hulls
 
-
+  event.recipes.gtceu.assembly_line('cosmiccore:vomahine_certified_interstellar_grade_casing')
+    .itemInputs(['2x cosmiccore:trinavine_frame', '16x gtceu:double_titanium_plate', '32x gtceu:double_aluminium_plate', '32x gtceu:double_aluminium_plate', '64x gtceu:aluminium_screw', '64x gtceu:aluminium_screw', '64x gtceu:aluminium_rod', '64x gtceu:aluminium_rod', '64x gtceu:aluminium_rod'])
+    .itemOutputs('cosmiccore:vomahine_certified_interstellar_grade_casing')
+    .inputFluids(
+      Fluid.of('gtceu:high_grade_solder', 1152),
+    )
+    .stationResearch(b => b
+      .researchStack('gtceu:fusion_casing')
+      .CWUt(32)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(1750)
+    .EUt(GTValues.VA[GTValues.ZPM])
 
 
 
