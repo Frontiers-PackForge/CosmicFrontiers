@@ -14,8 +14,8 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:astraline_prismatic_solution 2000')
         .duration(360)
         .EUt(GTValues.VA[GTValues.HV]);
+    //Fuckin stupid DT lost all it's special functionality :weary:
     event.recipes.gtceu.distillation_tower(`prisma_fluid`)
-        .itemInputs('8x minecraft:prismarine_shard')
         .inputFluids('gtceu:astraline_prismatic_solution 2000')
         .outputFluids('cosmiccore:prisma 1000')
         .outputFluids('gtceu:astraline_corrosion_agent 1000')
