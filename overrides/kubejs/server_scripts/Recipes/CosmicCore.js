@@ -15,8 +15,8 @@ event.shaped('sophisticatedstorage:controller', [
   'RWR'  
 ], {
   W: 'gtceu:red_alloy_quadruple_wire', 
-  L: 'gtceu:lv_machine_hull',
-  R: 'gtceu:lv_robot_arm' 
+  L: 'gtceu:steel_machine_casing',
+  R: 'ulvcovm:ulv_robot_arm' 
 }
 )
 })

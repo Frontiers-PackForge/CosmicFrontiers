@@ -63,6 +63,7 @@ yeet_f('cosmiccore:virtue_meld')
 ServerEvents.tags('item', event => {
   event.remove('forge:ingots/steel', 'ad_astra:steel_ingot')
   event.remove('forge:plates/steel', 'ad_astra:steel_plate')
+  event.remove('forge:plates/iron', 'ad_astra:iron_plate')
   event.add('ad_astra:space_suit_items', 'gtceu:advanced_quarktech_chestplate')
   event.add('ad_astra:space_suit_items', 'gtceu:quarktech_leggings')
   event.add('ad_astra:space_suit_items', 'gtceu:quarktech_boots')
@@ -74,6 +75,9 @@ ServerEvents.tags('item', event => {
 
 ServerEvents.tags('fluid', event => {
   event.add('ad_astra:fuel', `gtceu:rocket_fuel`)
+  event.remove('ad_astra:fuel', `gtceu:diesel`)
+  event.remove('ad_astra:fuel', `ad_astra:fuel`)
+  event.remove('ad_astra:fuel', `ad_astra:cryo_fuel`)
   event.remove(`forge:oxygen`, 'ad_astra:oxygen')
   event.remove(`forge:hydrogen`, 'ad_astra:hydrogen')
   event.remove(`forge:virtue_meld`, 'cosmiccore:virtue_meld')

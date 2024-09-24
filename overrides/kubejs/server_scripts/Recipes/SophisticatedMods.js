@@ -406,7 +406,7 @@ ServerEvents.recipes(event => {
   // YES, I GAME UP HERE!
   // I'M FUCKING TIRED AHHHHHHHHHHHHHH
 
-  upgradeUpgrade('gtceu:wood_screw', 'gtceu:wood_plate', `sophisticatedstorage:upgrade_base`, `sophisticatedstorage:stack_upgrade_tier_1`);
+  upgradeUpgrade('gtceu:wood_screw', 'gtceu:treated_wood_plate', `sophisticatedstorage:upgrade_base`, `sophisticatedstorage:stack_upgrade_tier_1`);
   upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', `sophisticatedstorage:stack_upgrade_tier_1`, `sophisticatedstorage:stack_upgrade_tier_2`);
   // upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:rose_gold_plate', `sophisticatedstorage:stack_upgrade_tier_2`, `sophisticatedstorage:stack_upgrade_tier_3`);
   // upgradeUpgrade('gtceu:exquisite_diamond_gem', 'gtceu:diamond_plate', `sophisticatedstorage:stack_upgrade_tier_3`, `sophisticatedstorage:stack_upgrade_tier_4`);
