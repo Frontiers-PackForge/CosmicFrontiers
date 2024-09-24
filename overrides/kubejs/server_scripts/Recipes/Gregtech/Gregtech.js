@@ -91,18 +91,38 @@ ServerEvents.recipes(event => {
     .itemOutputs('gtceu:nether_brick_dust_dust')
     .duration(40)
     .EUt(16);
+  event.remove({ id: 'gtceu:compressor/compressed_fireclay' })
+  event.recipes.gtceu.compressor('compressed_fireclay')
+    .itemInputs('cosmiccore:fireclay_ball')
+    .itemOutputs('gtceu:compressed_fireclay')
+    .duration(100)
+    .EUt(12)
+  event.remove({ id: 'gtceu:mixer/concrete_from_marble' })
+  event.remove({ id: 'gtceu:mixer/concrete_from_clay' })
+  event.remove({ id: 'gtceu:create_mixer/concrete_from_clay' })
+  event.remove({ id: 'gtceu:create_mixer/concrete_from_marble' })
+  event.remove({ id: 'gtceu:shaped/casing_primitive_bricks' })
+  event.recipes.gtceu.fluid_solidifier('firebricks')
+    .itemInputs('8x gtceu:firebrick')
+    .inputFluids('gtceu:concrete 500')
+    .itemOutputs('gtceu:firebricks')
+    .duration(100)
+    .EUt(12)
   event.remove({ output: 'gtceu:fireclay_dust' })
-  event.shapeless('2x gtceu:fireclay_dust', [
-    'gtceu:nether_brick_dust_dust',
-    'gtceu:clay_dust'
-  ])
-
-  event.recipes.gtceu.forming_press('gtceu:forming_press/waxed_leather')
+  event.recipes.gtceu.forming_press('waxed_leather_forming')
     .itemInputs('minecraft:leather')
     .itemInputs('2x minecraft:honeycomb')
     .itemOutputs('cosmiccore:waxed_leather')
     .duration(100)
     .EUt(GTValues.VA[GTValues.LV])
+  event.recipes.gtceu.mixer('fireclay_dust_mixing')
+    .itemInputs(['2x supplementaries:ash', 'gtceu:brick_dust', 'gtceu:clay_dust'])
+    .inputFluids('minecraft:water 500')
+    .itemOutputs('4x cosmiccore:fireclay_ball')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.LV])
+
+
   //ManaSteel Stuff
   event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe')
     .itemInputs('botania:manasteel_ingot')
@@ -258,6 +278,45 @@ ServerEvents.recipes(event => {
     M: 'gtceu:magnetic_neodymium_praseodymium_rod',
     R: 'gtceu:tungsten_steel_rod'
   })
+  event.shaped('gtceu:steam_mixing_vessel', [
+    'PRP',
+    'GCG',
+    'BBB'
+  ], {
+    P: 'gtceu:bronze_normal_fluid_pipe',
+    R: 'gtceu:bronze_rotor',
+    G: 'ulvcovm:ulv_electric_motor',
+    C: 'gtceu:bronze_brick_casing',
+    B: 'minecraft:bricks'
+  })
+  event.shaped('gtceu:steam_caster', [
+    'CBC',
+    'QGH',
+    'PPP'
+  ], {
+    P: 'gtceu:bronze_normal_fluid_pipe',
+    H: 'minecraft:hopper',
+    G: 'gtceu:coke_oven_bricks',
+    C: 'gtceu:bronze_frame',
+    B: 'minecraft:cauldron',
+    Q:'ulvcovm:ulv_electric_piston'
+  })
+  event.shaped('gtceu:steam_fluid_input_hatch', [
+    ' G ',
+    ' C ',
+    '   '
+  ], {
+    G: 'minecraft:glass',
+    C: 'gtceu:bronze_machine_casing'
+  })
+  event.shaped('gtceu:steam_fluid_output_hatch', [
+    ' C ',
+    ' G ',
+    '   '
+  ], {
+    G: 'minecraft:glass',
+    C: 'gtceu:bronze_machine_casing'
+  })
   event.remove({ id: 'gtceu:shaped/sword_flint' })
   event.remove({ id: 'gtceu:shaped/knife_flint' })
   //FLINT KNIFE / SWORD
@@ -382,7 +441,15 @@ ServerEvents.recipes(event => {
     F: '#forge:tools/hammers'
   }
   )
-
+  event.shaped('cosmiccore:hardened_resin', [
+    'WWW',
+    'WFW',
+    'WWW'
+  ], {
+    W: 'gtceu:sticky_resin',
+    F: '#forge:tools/hammers'
+  }
+  )
   //LV Circuit assembler
   event.remove({ output: 'gtceu:lv_circuit_assembler' })
   event.shaped('gtceu:lv_circuit_assembler', [
@@ -397,22 +464,22 @@ ServerEvents.recipes(event => {
     E: 'gtceu:lv_emitter',
     O: 'gtceu:lv_conveyor_module',
   })
-//   //Custom Recipe Handler? - Reference - Otherwise just dump the recipe in questions JSON into event.custom()
-//   let drying = (dryingoutput, dryingInput, duration) => {
-//     event.custom({
-//       "type": "integrateddynamics:drying_basin",
-//       "item": dryingInput,
-//       "duration": duration,
-//       "result": { item: dryingoutput }
-//     })
-//   }
-//   drying('create:shaft', 'create:cogwheel', 40)
+  //   //Custom Recipe Handler? - Reference - Otherwise just dump the recipe in questions JSON into event.custom()
+  //   let drying = (dryingoutput, dryingInput, duration) => {
+  //     event.custom({
+  //       "type": "integrateddynamics:drying_basin",
+  //       "item": dryingInput,
+  //       "duration": duration,
+  //       "result": { item: dryingoutput }
+  //     })
+  //   }
+  //   drying('create:shaft', 'create:cogwheel', 40)
 })
 
 ServerEvents.tags('block', event => {
   event.remove('aether:aether_portal_blocks', 'minecraft:glowstone'),
     event.add('aether:aether_portal_blocks', 'gtceu:frostproof_machine_casing')
-    event.add('ae2:blacklisted/spatial', 'minecraft:netherite_block')
+  event.add('ae2:blacklisted/spatial', 'minecraft:netherite_block')
 })
 
 // ServerEvents.recipes(e => {
@@ -469,7 +536,7 @@ ServerEvents.recipes(event => {
     .blastFurnaceTemp(4700)
     .duration(1300)
     .EUt(GTValues.VA[GTValues.EV]);
-    event.recipes.gtceu.vacuum_freezer('cool_hot_naq')
+  event.recipes.gtceu.vacuum_freezer('cool_hot_naq')
     .itemInputs('gtceu:hot_naquadah_ingot')
     .inputFluids('gtceu:liquid_helium 1000')
     .itemOutputs('gtceu:naquadah_ingot')
@@ -503,6 +570,16 @@ ServerEvents.recipes(event => {
     .itemOutputs('minecraft:diamond')
     .duration(200)
     .EUt(GTValues.VA[GTValues.OpV]);
+  event.recipes.gtceu.compressor('hardened_resin')
+    .itemInputs('4x gtceu:sticky_resin')
+    .itemOutputs('cosmiccore:hardened_resin')
+    .duration(380)
+    .EUt(8);
+  event.recipes.gtceu.alloy_smelter('lead_cable_aweful')
+    .itemInputs(['gtceu:lead_single_wire', '2x cosmiccore:hardened_resin'])
+    .itemOutputs('gtceu:lead_single_cable')
+    .duration(80)
+    .EUt(24);
 
   event.recipes.gtceu.chemical_bath('gtceu:chemical_bath/purify_ancient_debris')
     .itemInputs('gtceu:ancient_debris_dust')
