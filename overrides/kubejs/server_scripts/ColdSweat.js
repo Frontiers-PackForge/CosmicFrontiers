@@ -16,10 +16,10 @@ ServerEvents.recipes(event => {
         'PRP',
         'FBH'
     ], {
-        P: 'gtceu:brass_plate',
+        P: 'gtceu:gold_plate',
         T: 'gtceu:glass_tube',
         R: 'gtceu:red_alloy_rod',
-        B: 'gtceu:brass_bolt',
+        B: 'gtceu:gold_bolt',
         F: '#forge:tools/files',
         H: '#forge:tools/hammers'
     })
