@@ -1,0 +1,20 @@
+// {
+//     "compilerOptions": {
+//         "module": "commonjs",
+//         "target": "ES2015",
+//         "lib": [
+//             "ES5",
+//             "ES2015"
+//         ],
+//         "rootDir": "./src",
+//         "typeRoots": [
+//             "../../.probe/startup/probe-types"
+//         ],
+//         "baseUrl": "../../.probe/startup/probe-types",
+//         "skipLibCheck": true
+//     },
+//     "include": [
+//         "./src/**/*",
+//         null
+//     ]
+// }
