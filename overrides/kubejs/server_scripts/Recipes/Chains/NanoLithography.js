@@ -114,6 +114,46 @@ ServerEvents.recipes((event) => {
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.EV]);
 
+    //ARAM WAFER STUFF
+    //light gray lens for ARAM wafer
+    event.recipes.gtceu.laser_engraver('ARAM_wafer_craft_1')
+        .notConsumable('gtceu:light_gray_glass_lens')
+        .itemInputs('gtceu:phosphorus_wafer')
+        .itemOutputs('cosmiccore:aram_wafer')
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV]);
+        event.recipes.gtceu.laser_engraver('ARAM_wafer_craft_2')
+        .notConsumable('gtceu:light_gray_glass_lens')
+        .itemInputs('gtceu:naquadah_wafer')
+        .itemOutputs('4x cosmiccore:aram_wafer')
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.IV]);
+        event.recipes.gtceu.laser_engraver('ARAM_wafer_craft_3')
+        .notConsumable('gtceu:light_gray_glass_lens')
+        .itemInputs('gtceu:neutronium_wafer')
+        .itemOutputs('16x cosmiccore:aram_wafer')
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.LuV]);
+    //ARAM wafer to chip
+    event.recipes.gtceu.cutter('ARAM_wafer_cut_1')
+        .itemInputs('cosmiccore:aram_wafer')
+        .inputFluids('gtceu:lubricant 250')
+        .itemOutputs('4x cosmiccore:aram_chip')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.IV]);
+    event.recipes.gtceu.cutter('ARAM_wafer_cut_2')
+        .itemInputs('cosmiccore:aram_wafer')
+        .inputFluids('gtceu:distilled_water 500')
+        .itemOutputs('4x cosmiccore:aram_chip')
+        .duration(900)
+        .EUt(GTValues.VA[GTValues.IV]);
+    event.recipes.gtceu.cutter('ARAM_wafer_cut_3')
+        .itemInputs('cosmiccore:aram_wafer')
+        .inputFluids('minecraft:water 1000')
+        .itemOutputs('4x cosmiccore:aram_chip')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.IV]);
+
 
 
 
