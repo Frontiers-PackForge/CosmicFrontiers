@@ -1,0 +1,17 @@
+ServerEvents.recipes( event =>{
+    event.remove({ output: 'endertanks:ender_tank' })
+    event.recipes.gtceu.assembler('endertank')
+    .itemInputs(['2x #gtceu:circuits/hv', '4x gtceu:obsidian_plate', '1x gtceu:lv_super_tank', '1x gtceu:ender_pearl_plate'])
+    .inputFluids('gtceu:blaze 2304')
+    .itemOutputs('endertanks:ender_tank')
+    .duration(140)
+    .EUt(GTValues.VA[GTValues.MV])
+
+    event.remove({ output: 'enderchests:ender_chest' })
+    event.recipes.gtceu.assembler('enderchest')
+    .itemInputs(['2x #gtceu:circuits/hv', '4x gtceu:obsidian_plate', '1x gtceu:lv_super_chest', '1x gtceu:ender_pearl_plate'])
+    .inputFluids('gtceu:blaze 2304')
+    .itemOutputs('enderchests:ender_chest')
+    .duration(140)
+    .EUt(GTValues.VA[GTValues.MV])
+})
