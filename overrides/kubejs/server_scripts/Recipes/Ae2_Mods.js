@@ -550,6 +550,9 @@ ServerEvents.recipes(event => {
   event.shapeless('ae2:memory_card', [
     'ae2:basic_card', 'ae2:cell_component_1k'
   ])
+  event.shapeless('ae2:capacity_card', [
+    'ae2:basic_card', 'minecraft:chest'
+  ])
   event.shapeless('ae2:wireless_booster', [
     'gtceu:mv_emitter', 'gtceu:flawless_fluix_gem', 'gtceu:flawless_fluix_gem'
   ])
@@ -771,6 +774,52 @@ ServerEvents.recipes(event => {
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
 
+  //level emitters
+  event.recipes.gtceu.assembler(`ae2:level_emitter`)
+    .itemInputs('16x gtceu:fine_annealed_copper_wire')
+    .itemInputs('4x gtceu:steel_plate')
+    .itemInputs('minecraft:redstone_torch')
+    .itemInputs('#gtceu:circuits/lv')
+    .itemOutputs('ae2:level_emitter')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV])
+
+  event.recipes.gtceu.assembler(`ae2:energy_level_emitter`)
+    .itemInputs('16x gtceu:fine_annealed_copper_wire')
+    .itemInputs('4x gtceu:tin_plate')
+    .itemInputs('minecraft:redstone_torch')
+    .itemInputs('#gtceu:circuits/lv')
+    .itemOutputs('ae2:energy_level_emitter')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV])
+
+  event.recipes.gtceu.assembler(`expatternprovider:threshold_level_emitter`)
+    .itemInputs('16x gtceu:fine_annealed_copper_wire')
+    .itemInputs('4x gtceu:aluminium_plate')
+    .itemInputs('minecraft:redstone_torch')
+    .itemInputs('#gtceu:circuits/lv')
+    .itemOutputs('expatternprovider:threshold_level_emitter')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV])
+  
+  //merequesters
+  event.recipes.gtceu.assembler(`merequester:requester`)
+    .itemInputs('gtceu:hv_machine_hull')
+    .itemInputs('8x gtceu:terrasteel_double_wire')
+    .itemInputs('2x #gtceu:circuits/hv')
+    .itemInputs('expatternprovider:threshold_level_emitter')
+    .itemInputs('ae2:level_emitter')
+    .itemOutputs('merequester:requester')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.HV])
+
+  event.recipes.gtceu.assembler(`merequester:requester_terminal`)
+    .itemInputs('merequester:requester')
+    .itemInputs('ae2:terminal')
+    .itemInputs('16x gtceu:fine_galvanized_ethersteel_wire')
+    .itemOutputs('merequester:requester_terminal')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.HV])
 
 
 
