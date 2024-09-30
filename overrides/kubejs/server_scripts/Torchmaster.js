@@ -3,38 +3,56 @@ ServerEvents.recipes(event => {
 	event.shaped( 'torchmaster:feral_flare_lantern', [
 		' B ',
 		'PGP',
-		' B '
+		'HBS'
 	], {
 		B: 'gtceu:brass_plate',
 		P: 'gtceu:glass_plate',
-		G: 'minecraft:glowstone_dust'
+		G: 'minecraft:glowstone_dust',
+		H: '#forge:tools/hammers',
+		S: '#forge:tools/screwdrivers'
 	})
 	
 	event.remove({ id: 'torchmaster:megatorch' })
 	event.shaped( 'torchmaster:megatorch', [
-		'RCR',
-		'MLS',
+		'MCS',
+		'RPR',
 		'GDG'
 	], {
 		R: 'gtceu:gold_ring',
 		C: 'gtceu:coke_block',
-		M: 'forge:tools/mallets',
-		L: 'minecraft:logs',
-		S: 'forge:tools/saws',
+		M: '#forge:tools/mallets',
+		P: 'gtceu:treated_wood_plate',
+		S: '#forge:tools/saws',
 		G: 'minecraft:gold_block',
 		D: 'minecraft:diamond'
 	})
 	
 	event.remove({ id: 'torchmaster:dreadlamp' })
 	event.shaped( 'torchmaster:dreadlamp', [
-		'RSR',
+		'HSD',
 		'PGP',
-		'RHR'
+		'ROR'
 	], {
 		P: 'gtceu:glass_plate',
 		G: 'minecraft:glowstone',
 		R: 'gtceu:steel_rod',
 		S: 'gtceu:steel_plate',
-		H: 'forge:tools/hammers'
+		O: 'minecraft:obsidian',
+		H: '#forge:tools/hammers',
+		D: '#forge:tools/screwdrivers'
 	})
+	
+	event.remove({ id: 'torchmaster:frozen_pearl' })
+	event.recipes.gtceu.chemical_bath('torchmaster:frozen_pearl')
+		.itemInputs(
+			'1x minecraft:ender_pearl'
+		)
+		.inputFluids(
+			Fluid.of('gtceu:ice', 576)
+		)
+		.itemOutputs(
+			'torchmaster:frozen_pearl'
+		)
+		.duration(600)
+		.EUt(GTValues.VA[GTValues.LV]);
 })
