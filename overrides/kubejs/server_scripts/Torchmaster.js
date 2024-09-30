@@ -15,16 +15,16 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'torchmaster:megatorch' })
 	event.shaped( 'torchmaster:megatorch', [
 		'MCS',
-		'RPR',
-		'GDG'
+		'RGR',
+		'LDL'
 	], {
 		R: 'gtceu:gold_ring',
 		C: 'gtceu:coke_block',
 		M: '#forge:tools/mallets',
-		P: 'gtceu:treated_wood_plate',
+		L: 'botania:livingwood',
 		S: '#forge:tools/saws',
 		G: 'minecraft:gold_block',
-		D: 'minecraft:diamond'
+		D: 'botania:mana_diamond'
 	})
 	
 	event.remove({ id: 'torchmaster:dreadlamp' })
