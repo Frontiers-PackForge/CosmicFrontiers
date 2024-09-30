@@ -61,13 +61,27 @@ ServerEvents.recipes(event => {
     .itemInputs('gtceu:compressed_fireclay')
     .itemInputs('gtceu:coal_dust')
     .itemOutputs('gtceu:firebrick')
-    .duration(100)
+    .duration(60)
     .EUt(8);
   event.recipes.gtceu.electrolyzer('trifluoride_elec')
     .itemInputs('4x gtceu:antimony_trifluoride_dust')
     .itemOutputs('gtceu:antimony_dust')
     .outputFluids('gtceu:fluorine 3000')
     .duration(40)
+    .EUt(GTValues.VA[GTValues.HV]);
+  event.recipes.gtceu.electrolyzer('mn_hydroxide_elec')
+    .itemInputs('5x gtceu:manganese_hydroxide_dust')
+    .itemOutputs('gtceu:manganese_dust')
+    .outputFluids('gtceu:oxygen 2000')
+    .outputFluids('gtceu:hydrogen 2000')
+    .duration(80)
+    .EUt(GTValues.VA[GTValues.HV]);
+  event.recipes.gtceu.chemical_reactor('iron_hydroxide_reproc')
+    .itemInputs('5x gtceu:iron_hydroxide_dust')
+    .inputFluids('gtceu:hydrogen 2000')
+    .itemOutputs('gtceu:iron_dust')
+    .outputFluids('minecraft:water 2000')
+    .duration(200)
     .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.alloy_smelter('andesite_alloy_masonry')
     .itemInputs('minecraft:andesite')
@@ -299,7 +313,7 @@ ServerEvents.recipes(event => {
     G: 'gtceu:coke_oven_bricks',
     C: 'gtceu:bronze_frame',
     B: 'minecraft:cauldron',
-    Q:'ulvcovm:ulv_electric_piston'
+    Q: 'ulvcovm:ulv_electric_piston'
   })
   event.shaped('gtceu:steam_fluid_input_hatch', [
     ' G ',
