@@ -112,4 +112,25 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:sulfuric_acid 1000')
         .duration(100)
         .EUt(GTValues.VA[GTValues.LuV]);
+
+    //diluted nitric acid to nitric acid
+    event.recipes.gtceu.distillery('nitric_acid_concentration1')
+        .inputFluids('gtceu:diluted_nitric_acid 80')
+        .outputFluids('gtceu:nitric_acid 40')
+        .circuit(1)
+        .duration(24)
+        .EUt(GTValues.VA[GTValues.LV]);
+    event.recipes.gtceu.distillery('nitric_acid_concentration2')
+        .inputFluids('gtceu:diluted_nitric_acid 80')
+        .outputFluids('minecraft:water 40')
+        .circuit(2)
+        .duration(48)
+        .EUt(GTValues.VA[GTValues.LV]);
+    //dist tower
+    event.recipes.gtceu.distillation_tower('nitric_acid_concentration1')
+        .inputFluids('gtceu:diluted_nitric_acid 2000')
+        .outputFluids('gtceu:nitric_acid 1000')
+        .outputFluids('minecraft:water 1000')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.MV]);
 })
