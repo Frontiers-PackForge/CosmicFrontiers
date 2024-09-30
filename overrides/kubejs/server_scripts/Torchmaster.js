@@ -5,8 +5,8 @@ ServerEvents.recipes(event => {
 		'PGP',
 		' B '
 	], {
-		B: 'gtceu:brass_plate'
-		P: 'gtceu:glass_plate'
+		B: 'gtceu:brass_plate',
+		P: 'gtceu:glass_plate',
 		G: 'minecraft:glowstone'
 	})
 })
