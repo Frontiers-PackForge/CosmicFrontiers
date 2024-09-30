@@ -14,6 +14,12 @@ ServerEvents.recipes(event => {
         .itemOutputs('cosmiccore:aram_wafer')
         .duration(900)
         .EUt(GTValues.VA[GTValues.EV]);
+    event.recipes.gtceu.laser_engraver('aram_etch_naq')
+        .itemInputs('gtceu:naquadah_wafer')
+        .notConsumable('gtceu:magenta_glass_lens')
+        .itemOutputs('2x cosmiccore:aram_wafer')
+        .duration(900)
+        .EUt(GTValues.VA[GTValues.IV]);
     event.recipes.gtceu.cutter('aram_cut')
         .itemInputs('cosmiccore:aram_wafer')
         .itemOutputs('16x cosmiccore:aram_chip')
@@ -231,81 +237,81 @@ ServerEvents.recipes(event => {
 
     //Omnia's
     event.recipes.gtceu.laser_engraver('omnia_lv')
-    .itemInputs('#gtceu:circuits/lv')
-    .notConsumable('gtceu:lv_emitter')
-    .itemOutputs('cosmiccore:omnia_circuit_lv')
-    .duration(10)
-    .EUt(GTValues.VH[GTValues.LV]);
+        .itemInputs('#gtceu:circuits/lv')
+        .notConsumable('gtceu:lv_emitter')
+        .itemOutputs('cosmiccore:omnia_circuit_lv')
+        .duration(10)
+        .EUt(GTValues.VH[GTValues.LV]);
     event.recipes.gtceu.laser_engraver('omnia_mv')
-    .itemInputs('#gtceu:circuits/mv')
-    .notConsumable('gtceu:mv_emitter')
-    .itemOutputs('cosmiccore:omnia_circuit_mv')
-    .duration(10)
-    .EUt(GTValues.VH[GTValues.MV]);
+        .itemInputs('#gtceu:circuits/mv')
+        .notConsumable('gtceu:mv_emitter')
+        .itemOutputs('cosmiccore:omnia_circuit_mv')
+        .duration(10)
+        .EUt(GTValues.VH[GTValues.MV]);
     event.recipes.gtceu.laser_engraver('omnia_hv')
-    .itemInputs('#gtceu:circuits/hv')
-    .notConsumable('gtceu:hv_emitter')
-    .itemOutputs('cosmiccore:omnia_circuit_hv')
-    .duration(10)
-    .EUt(GTValues.VH[GTValues.HV]);
+        .itemInputs('#gtceu:circuits/hv')
+        .notConsumable('gtceu:hv_emitter')
+        .itemOutputs('cosmiccore:omnia_circuit_hv')
+        .duration(10)
+        .EUt(GTValues.VH[GTValues.HV]);
     event.recipes.gtceu.laser_engraver('omnia_ev')
-    .itemInputs('#gtceu:circuits/ev')
-    .notConsumable('gtceu:ev_emitter')
-    .itemOutputs('cosmiccore:omnia_circuit_ev')
-    .duration(10)
-    .EUt(GTValues.VH[GTValues.EV]);
+        .itemInputs('#gtceu:circuits/ev')
+        .notConsumable('gtceu:ev_emitter')
+        .itemOutputs('cosmiccore:omnia_circuit_ev')
+        .duration(10)
+        .EUt(GTValues.VH[GTValues.EV]);
     event.recipes.gtceu.laser_engraver('omnia_iv')
-    .itemInputs('#gtceu:circuits/iv')
-    .notConsumable('gtceu:iv_emitter')
-    .itemOutputs('cosmiccore:omnia_circuit_iv')
-    .duration(10)
-    .EUt(GTValues.VH[GTValues.IV]);
+        .itemInputs('#gtceu:circuits/iv')
+        .notConsumable('gtceu:iv_emitter')
+        .itemOutputs('cosmiccore:omnia_circuit_iv')
+        .duration(10)
+        .EUt(GTValues.VH[GTValues.IV]);
     event.recipes.gtceu.laser_engraver('omnia_luv')
-    .itemInputs('#gtceu:circuits/luv')
-    .notConsumable('gtceu:luv_emitter')
-    .itemOutputs('cosmiccore:omnia_circuit_luv')
-    .duration(10)
-    .EUt(GTValues.VH[GTValues.LuV]);
+        .itemInputs('#gtceu:circuits/luv')
+        .notConsumable('gtceu:luv_emitter')
+        .itemOutputs('cosmiccore:omnia_circuit_luv')
+        .duration(10)
+        .EUt(GTValues.VH[GTValues.LuV]);
     event.recipes.gtceu.laser_engraver('omnia_zpm')
-    .itemInputs('#gtceu:circuits/zpm')
-    .notConsumable('gtceu:uv_emitter')
-    .itemOutputs('cosmiccore:omnia_circuit_zpm')
-    .duration(10)
-    .EUt(GTValues.VH[GTValues.ZPM]);
+        .itemInputs('#gtceu:circuits/zpm')
+        .notConsumable('gtceu:uv_emitter')
+        .itemOutputs('cosmiccore:omnia_circuit_zpm')
+        .duration(10)
+        .EUt(GTValues.VH[GTValues.ZPM]);
     event.recipes.gtceu.laser_engraver('omnia_uv')
-    .itemInputs('#gtceu:circuits/uv')
-    .notConsumable('gtceu:uv_emitter')
-    .itemOutputs('cosmiccore:omnia_circuit_uv')
-    .duration(10)
-    .EUt(GTValues.VH[GTValues.UV]);
+        .itemInputs('#gtceu:circuits/uv')
+        .notConsumable('gtceu:uv_emitter')
+        .itemOutputs('cosmiccore:omnia_circuit_uv')
+        .duration(10)
+        .EUt(GTValues.VH[GTValues.UV]);
     event.recipes.gtceu.laser_engraver('omnia_uhv')
-    .itemInputs('#gtceu:circuits/uhv')
-    .notConsumable('gtceu:uhv_emitter')
-    .itemOutputs('cosmiccore:omnia_circuit_uhv')
-    .duration(10)
-    .EUt(GTValues.VH[GTValues.UHV]);
+        .itemInputs('#gtceu:circuits/uhv')
+        .notConsumable('gtceu:uhv_emitter')
+        .itemOutputs('cosmiccore:omnia_circuit_uhv')
+        .duration(10)
+        .EUt(GTValues.VH[GTValues.UHV]);
     event.recipes.gtceu.laser_engraver('omnia_uev')
-    .itemInputs('#gtceu:circuits/uev')
-    .notConsumable('gtceu:uev_emitter')
-    .itemOutputs('cosmiccore:omnia_circuit_uev')
-    .duration(10)
-    .EUt(GTValues.VH[GTValues.UEV]);
+        .itemInputs('#gtceu:circuits/uev')
+        .notConsumable('gtceu:uev_emitter')
+        .itemOutputs('cosmiccore:omnia_circuit_uev')
+        .duration(10)
+        .EUt(GTValues.VH[GTValues.UEV]);
     event.recipes.gtceu.laser_engraver('omnia_uiv')
-    .itemInputs('#gtceu:circuits/uiv')
-    .notConsumable('gtceu:uiv_emitter')
-    .itemOutputs('cosmiccore:omnia_circuit_uiv')
-    .duration(10)
-    .EUt(GTValues.VH[GTValues.UIV]);
+        .itemInputs('#gtceu:circuits/uiv')
+        .notConsumable('gtceu:uiv_emitter')
+        .itemOutputs('cosmiccore:omnia_circuit_uiv')
+        .duration(10)
+        .EUt(GTValues.VH[GTValues.UIV]);
     event.recipes.gtceu.laser_engraver('omnia_uxv')
-    .itemInputs('#gtceu:circuits/uxv')
-    .notConsumable('gtceu:uxv_emitter')
-    .itemOutputs('cosmiccore:omnia_circuit_uxv')
-    .duration(10)
-    .EUt(GTValues.VH[GTValues.UXV]);
+        .itemInputs('#gtceu:circuits/uxv')
+        .notConsumable('gtceu:uxv_emitter')
+        .itemOutputs('cosmiccore:omnia_circuit_uxv')
+        .duration(10)
+        .EUt(GTValues.VH[GTValues.UXV]);
     event.recipes.gtceu.laser_engraver('omnia_opv')
-    .itemInputs('#gtceu:circuits/opv')
-    .notConsumable('gtceu:opv_emitter')
-    .itemOutputs('cosmiccore:omnia_circuit_opv')
-    .duration(10)
-    .EUt(GTValues.VH[GTValues.OpV]);
+        .itemInputs('#gtceu:circuits/opv')
+        .notConsumable('gtceu:opv_emitter')
+        .itemOutputs('cosmiccore:omnia_circuit_opv')
+        .duration(10)
+        .EUt(GTValues.VH[GTValues.OpV]);
 })
