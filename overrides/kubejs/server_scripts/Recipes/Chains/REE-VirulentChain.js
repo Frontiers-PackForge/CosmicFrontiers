@@ -220,7 +220,7 @@ ServerEvents.recipes((event) => {
         .outputFluids('gtceu:carbon_monoxide 1000')
         .blastFurnaceTemp(1800)
         .duration(100)
-        .EUt(GTValues.VA(GTValues.LV));
+        .EUt(GTValues.VA[GTValues.LV]);
 
     // Cyanex-272
     event.recipes.gtceu.chemical_reactor('tert_butanol_maker') // this could be in some kind of magnetic reactor
