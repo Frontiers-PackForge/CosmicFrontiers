@@ -146,7 +146,6 @@ ServerEvents.recipes((event) => {
         .notConsumable('gtceu:hydroxyapatite_dust')
         .inputFluids('gtceu:ethanol 5000')
         .outputFluids('gtceu:isodecanol 1000')
-        .outputFluids('minecraft:water 4000')
         .duration(40)
         .EUt(GTValues.VA[GTValues.HV]);
 
