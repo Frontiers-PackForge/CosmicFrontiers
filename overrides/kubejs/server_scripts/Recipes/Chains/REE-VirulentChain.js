@@ -212,6 +212,14 @@ ServerEvents.recipes((event) => {
         .itemOutputs('3x gtceu:sodium_dust')
         .duration(40)
         .EUt(GTValues.VA[GTValues.HV]);
+    //Calcium Carbide
+    event.recipes.gtceu.electric_blast_furnace('calcium_carbide')
+        .itemInputs('3x gtceu:carbon_dust')
+        .itemInputs('gtceu:quicklime_dust')
+        .itemOutputs('gtceu:calcium_carbide_dust')
+        .outputFluids('gtceu:carbond_monoxide')
+        .duration(100)
+        .EUt(GTValues.VA(GTValues.LV));
 
     // Cyanex-272
     event.recipes.gtceu.chemical_reactor('tert_butanol_maker') // this could be in some kind of magnetic reactor
