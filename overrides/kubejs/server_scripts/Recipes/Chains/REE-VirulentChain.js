@@ -217,7 +217,8 @@ ServerEvents.recipes((event) => {
         .itemInputs('3x gtceu:carbon_dust')
         .itemInputs('gtceu:quicklime_dust')
         .itemOutputs('gtceu:calcium_carbide_dust')
-        .outputFluids('gtceu:carbond_monoxide')
+        .outputFluids('gtceu:carbon_monoxide 1000')
+        .blastFurnaceTemp(1800)
         .duration(100)
         .EUt(GTValues.VA(GTValues.LV));
 
