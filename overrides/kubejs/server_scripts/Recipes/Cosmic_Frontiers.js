@@ -192,7 +192,7 @@ ServerEvents.recipes(event => {
               .itemOutputs('undergarden:catalyst')
               .circuit(2)
               .duration(160)
-              .EUt(GTValues.VA[GTValues.EV]);
+              .EUt(GTValues.VA[GTValues.HV]);
        event.recipes.gtceu.forge_hammer('shatter_the_seal')
               .itemInputs('nether_remastered:seal_of_the_underworld_item')
               .itemOutputs('8x kubejs:seal_shards')
