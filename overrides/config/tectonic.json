@@ -10,10 +10,11 @@
   },
   "features": {
     // Enabling deeper oceans will lower vanilla ocean monuments to compensate for lower depth.
-    // This DOES NOT apply on Forge 1.18-1.20.1. Ocean monuments will remain at their vanilla levels on those versions.
+    // Snow start offset moves where snow starts, preventing biomes like Taigas looking weird next to mountain ranges.
     "deeper_oceans": true,
     "desert_dunes": true,
     "lava_rivers": true,
+    "snow_start_offset": 128,
     "underground_rivers": true
   },
   "legacy": {

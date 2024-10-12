@@ -18,7 +18,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["398EFF1EA09FA4AA"]
 			description: [
 				"Well, the lights are still not on yet!"
 				""
@@ -220,6 +219,19 @@
 				"6157CEB8F4884CE2"
 			]
 			id: "461019023D05E62E"
+			rewards: [{
+				id: "1F7A7DD9E3A693EC"
+				item: {
+					Count: 1
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "frontiers:coils/cupro"
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				count: 16L
 				id: "6D6281FA4FC90A2D"
@@ -242,10 +254,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"187B8D213D49BD07"
-				"12EBF67C386AA4B6"
-			]
+			dependencies: ["12EBF67C386AA4B6"]
 			hide: true
 			hide_dependency_lines: true
 			id: "6157CEB8F4884CE2"

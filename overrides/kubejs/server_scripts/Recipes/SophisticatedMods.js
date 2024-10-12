@@ -441,9 +441,5 @@ ServerEvents.recipes(event => {
   upgradeUpgrade('gtceu:lv_super_tank', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:tank_upgrade`);
   upgradeUpgrade('gtceu:lv_sodium_battery', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:battery_upgrade`);
   upgradeUpgrade('minecraft:anvil', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:anvil_upgrade`);
-  upgradeUpgrade('gtceu:wood_screw', 'cosmiccore:waxed_leather', `sophisticatedbackpacks:upgrade_base`, `sophisticatedbackpacks:stack_upgrade_tier_1`);
-  // upgradeUpgrade('gtceu:wrought_iron_screw', 'gtceu:wrought_iron_plate', `sophisticatedbackpacks:stack_upgrade_tier_1`, `sophisticatedbackpacks:stack_upgrade_tier_2`);
-  // upgradeUpgrade('gtceu:rose_gold_screw', 'gtceu:rose_gold_plate', `sophisticatedbackpacks:stack_upgrade_tier_2`, `sophisticatedbackpacks:stack_upgrade_tier_3`);
-  // upgradeUpgrade('gtceu:exquisite_diamond_gem', 'gtceu:diamond_plate', `sophisticatedbackpacks:stack_upgrade_tier_3`, `sophisticatedbackpacks:stack_upgrade_tier_4`);
 
 })

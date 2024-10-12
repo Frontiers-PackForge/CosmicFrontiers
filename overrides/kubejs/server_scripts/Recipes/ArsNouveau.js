@@ -27,7 +27,18 @@ ServerEvents.recipes(event => {
     //     ],
     //     "sourceCost": 0
     //   })
-
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        [
+            "ars_nouveau:sourceberry_bush",
+            "ars_nouveau:sourceberry_bush",
+            "minecraft:sand",
+            "minecraft:sand",
+        ], // input items
+	    "minecraft:gunpowder", // reagent
+	    'bhc:soul_heart_crystal', // output
+	    1000, // source cost
+	    // true // keep nbt of reagent, think like a smithing recipe
+	);
     event.remove({ output: 'ars_nouveau:archwood_chest' })
 
     event.shaped('ars_nouveau:archwood_chest', [

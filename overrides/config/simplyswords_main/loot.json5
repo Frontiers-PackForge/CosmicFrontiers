@@ -39,5 +39,6 @@
 	"enableWickpiercer": true,
 	"enableTempest": true,
 	"enableFlamewind": true,
-	"enableRibboncleaver": true
+	"enableRibboncleaver": true,
+	"enableCaelestis": true
 }

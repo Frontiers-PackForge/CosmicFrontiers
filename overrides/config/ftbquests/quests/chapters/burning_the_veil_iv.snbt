@@ -945,10 +945,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"705099C9ED28CF14"
-				"52DAB014D2101F02"
-			]
+			dependencies: ["52DAB014D2101F02"]
 			hide: true
 			hide_dependency_lines: true
 			icon: "gtceu:deeply_withered_nether_slag_bucket"
@@ -1207,5 +1204,5 @@
 			y: -11.5d
 		}
 	]
-	title: "Burning the Veil"
+	title: "Burning the Veil [IV]"
 }

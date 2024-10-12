@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.gas_collector('undergarden_smog_collection')
         .outputFluids('gtceu:undergarden_smog 10000')
         .duration(400)
-        .circuit(4)
+        .circuit(5)
         .dimension('undergarden:undergarden')
         .EUt(GTValues.VA[GTValues.HV]);
     //Undergarden Sludge

@@ -1,0 +1,136 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "store_placeholder"
+	group: "49DCE46B3EB22AEA"
+	id: "2E8A17D48E466F27"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				Count: 1
+				id: "botania:brew_flask"
+				tag: {
+					brewKey: "botania:water_breathing"
+				}
+			}
+			id: "166B0EABBAE1C116"
+			optional: true
+			rewards: [{
+				id: "76D8E8FFBE57CD88"
+				item: {
+					Count: 1
+					id: "botania:brew_flask"
+					tag: {
+						brewKey: "botania:water_breathing"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Breathing Easier"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "606C9F0C2D3B0986"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			title: "Shop : Flask of Gills"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Im not too sure how many shards each reward is worth atm, as the value of them is still very vague to me."
+				""
+				"Expect agressive nerfs of buffs to this page with each update. I NEED feedback on these as well."
+				""
+				"Let me know in discord"
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "344AEE2879AD24D1"
+			size: 2.0d
+			subtitle: "Balancing is a fuck"
+			tasks: [{
+				id: "148E1FB1590C0FAB"
+				title: "Hey Read Me!"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: "cold_sweat:chameleon_spawn_egg"
+			id: "5B2D483D13119B2C"
+			rewards: [{
+				id: "59A38DCE9CF67834"
+				item: "cold_sweat:chameleon_spawn_egg"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "42016E1E95A5F0BE"
+				item: { Count: 4, id: "cosmiccore:large_shard_of_perpetuity" }
+				type: "item"
+			}]
+			title: "Shop : Chameleon Spawn Egg"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			description: ["This should allow you to hold off from grinding out an enchanting setup. If you so choose to."]
+			icon: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:silk_touch"
+						lvl: 1s
+					}]
+				}
+			}
+			id: "2CB5D5370643522C"
+			rewards: [{
+				id: "061FEA9917FF5C9E"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:silk_touch"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Well, I got a deal for you."
+			tasks: [
+				{
+					consume_items: true
+					id: "67BC60F203E3CED0"
+					item: "minecraft:book"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "3E4B7D5833F448BD"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "48D4937B7512B6A7"
+					item: { Count: 32, id: "cosmiccore:shard_of_perpetuity" }
+					type: "item"
+				}
+			]
+			title: "Need Silk?"
+			x: -2.5d
+			y: -3.0d
+		}
+	]
+	title: "Store (placeholder)"
+}

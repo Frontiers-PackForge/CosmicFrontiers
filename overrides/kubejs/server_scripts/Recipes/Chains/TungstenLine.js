@@ -6,6 +6,8 @@ ServerEvents.recipes(event => {
     // event.remove({ id: 'gtceu:electrolyzer/bauxite_electrolysis' })
     event.remove({ id: 'gtceu:mixer/indium_concentrate' })
     event.remove({ id: 'gtceu:electrolyzer/tungstic_acid_electrolysis' })
+    event.remove({ id: 'gtceu:chemical_bath/tungstic_acid_from_tungstate' })
+    event.remove({ id: 'gtceu:chemical_bath/tungstic_acid_from_scheelite' })
     event.recipes.gtceu.mixer('indium_concentrate_2_0')
         .inputFluids('gtceu:sulfuric_acid 4000')
         .itemInputs('gtceu:sphalerite_dust')

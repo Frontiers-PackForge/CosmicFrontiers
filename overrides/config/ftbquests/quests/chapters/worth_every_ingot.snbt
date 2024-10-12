@@ -26,14 +26,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"635C885360A8A8A9"
-				"45AE9844B1C84454"
-				"34E7B99E411B3E44"
-				"6BA55FE3C9856E84"
-				"688DD6F7473A121E"
-				"0F68C0E627CE724F"
-			]
+			dependencies: ["635C885360A8A8A9"]
 			description: ["Welcome to bloodmagic! Only the key points are mentioned in the LUV quests here to guide you down the right path. There are many fun side recipes to help you along, explore, and integrate life essence into your factory!"]
 			id: "32789BABC2728C07"
 			rewards: [{
@@ -57,219 +50,6 @@
 			}]
 			x: 0.0d
 			y: -3.0d
-		}
-		{
-			dependencies: ["635C885360A8A8A9"]
-			hide_dependency_lines: true
-			id: "7DBD11F232DF0686"
-			tasks: [{
-				id: "032576E7B38F17B0"
-				item: "gtceu:carbon_fiber_plate"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -6.0d
-		}
-		{
-			dependencies: [
-				"7DBD11F232DF0686"
-				"32789BABC2728C07"
-			]
-			id: "5F9F91F44409FC24"
-			tasks: [{
-				id: "2373399B7CF7CB9D"
-				item: "bloodmagic:blankslate"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"32789BABC2728C07"
-				"5F9F91F44409FC24"
-			]
-			description: [
-				"Runes are the Core of your Blood Altar Upgrades, Each Tier requires more than the last"
-				""
-				"Each tier allows access to better and better infusions, and more altar bonuses."
-			]
-			id: "74A99A7515B319B1"
-			subtitle: "Blood Soaked"
-			tasks: [{
-				id: "1953C30FECD8C032"
-				item: "bloodmagic:blankrune"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["74A99A7515B319B1"]
-			id: "62441A275363C372"
-			tasks: [{
-				id: "2FFA02D2465B59B5"
-				item: "bloodmagic:speedrune"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["74A99A7515B319B1"]
-			id: "0C8A34469DC33D74"
-			tasks: [
-				{
-					id: "554CD910B72F6B9C"
-					item: "bloodmagic:sacrificerune"
-					type: "item"
-				}
-				{
-					id: "3E0B532DBC85CEE6"
-					item: "bloodmagic:selfsacrificerune"
-					type: "item"
-				}
-			]
-			x: 2.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["49DDC728A826971D"]
-			description: [
-				"If you're tired of stabbing yourself, feel free to farm villagers and use a Sacrificial Dagger to gain massive amounts of LP."
-				""
-				"Don't forget you have Apotheosis Spawners... And Capturing ;)"
-			]
-			id: "2A0A206B6487F7C8"
-			subtitle: "Sacrifices"
-			tasks: [{
-				id: "3C4F339F2C137DDE"
-				item: "bloodmagic:reinforcedslate"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"119F6B400546B82A"
-				"40AB82BA2E32E1AE"
-			]
-			id: "6D3373C5A4F1370B"
-			tasks: [{
-				id: "4A30514199318D78"
-				item: "bloodmagic:infusedslate"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -6.0d
-		}
-		{
-			dependencies: [
-				"6D3373C5A4F1370B"
-				"74F11E12C804E749"
-			]
-			id: "214B0DA62DDCFCB9"
-			tasks: [{
-				id: "44A6FD63DED3841D"
-				item: "bloodmagic:demonslate"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -6.0d
-		}
-		{
-			dependencies: [
-				"214B0DA62DDCFCB9"
-				"123B5972F7A26782"
-			]
-			id: "2B2BEF4A43975DE1"
-			tasks: [{
-				id: "0FDB9F710F7B373F"
-				item: "bloodmagic:etherealslate"
-				type: "item"
-			}]
-			x: 8.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["2B2BEF4A43975DE1"]
-			id: "017F0D08C95CBEEE"
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "39E0C07BA7C794C8"
-				item: "cosmiccore:zpm_soul_input_hatch"
-				type: "item"
-			}]
-			x: 10.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["78E1208BE4B2F5C0"]
-			id: "74F11E12C804E749"
-			tasks: [{
-				id: "24D8D3C0BDE9929D"
-				item: "bloodmagic:weakbloodshard"
-				type: "item"
-			}]
-			x: 5.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["6D3373C5A4F1370B"]
-			id: "78E1208BE4B2F5C0"
-			tasks: [{
-				id: "655D8306827C96B3"
-				item: "bloodmagic:reagentbinding"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["214B0DA62DDCFCB9"]
-			id: "0BD17C5BA7AA62E4"
-			tasks: [{
-				id: "2F4A14828D267404"
-				item: "bloodmagic:reagentsuppression"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["0BD17C5BA7AA62E4"]
-			id: "123B5972F7A26782"
-			tasks: [{
-				id: "099701D3BC711440"
-				item: "occultism:afrit_essence"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["2A0A206B6487F7C8"]
-			id: "73653E8D4F6EF1C3"
-			tasks: [{
-				id: "6AB6D5FD944E197E"
-				item: "gtceu:luv_electromagnetic_separator"
-				type: "item"
-			}]
-			x: 5.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["73653E8D4F6EF1C3"]
-			id: "119F6B400546B82A"
-			tasks: [{
-				id: "04A3C59DE01DF99F"
-				item: "bloodmagic:reagentmagnetism"
-				type: "item"
-			}]
-			x: 5.5d
-			y: -5.0d
 		}
 		{
 			dependencies: ["65F7E83614AEABEA"]
@@ -471,7 +251,6 @@
 				{
 					count: 169L
 					id: "326655AF3482D030"
-					item: { Count: 169, id: "cosmiccore:naquadah_pressure_resistant_casing" }
 					type: "item"
 				}
 				{
@@ -781,7 +560,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -798,7 +577,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -5.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["635C885360A8A8A9"]
@@ -825,7 +604,7 @@
 				item: "gtceu:luv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.0d
 			y: -5.0d
 		}
 		{
@@ -871,94 +650,6 @@
 			}]
 			x: -1.5d
 			y: -5.0d
-		}
-		{
-			dependencies: ["5F9F91F44409FC24"]
-			id: "699C65FD475466BD"
-			tasks: [{
-				id: "68C943DFBAAF11E4"
-				item: "bloodmagic:weakbloodorb"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["2A0A206B6487F7C8"]
-			id: "19D415D735BC2389"
-			tasks: [{
-				id: "261408DB98EF8F08"
-				item: "bloodmagic:apprenticebloodorb"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["6D3373C5A4F1370B"]
-			id: "1063DFB8C4752524"
-			tasks: [{
-				id: "467CBA8A7C1B59B6"
-				item: "bloodmagic:magicianbloodorb"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["214B0DA62DDCFCB9"]
-			id: "33C7B4BF816453AA"
-			tasks: [{
-				id: "2DA2F59C35B10A3E"
-				item: "bloodmagic:masterbloodorb"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["2B2BEF4A43975DE1"]
-			id: "7902B7ABB155A3A5"
-			tasks: [{
-				id: "70B369CE451568DB"
-				item: "bloodmagic:archmagebloodorb"
-				type: "item"
-			}]
-			x: 8.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["214B0DA62DDCFCB9"]
-			id: "0C546B1E2F9CD617"
-			tasks: [{
-				id: "0C630DAEEB7CA602"
-				item: "bloodmagic:masterritualstone"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -8.0d
-		}
-		{
-			dependencies: [
-				"0C546B1E2F9CD617"
-				"017F0D08C95CBEEE"
-			]
-			icon: "occultism:jei_dummy/none"
-			id: "744F447375B1D334"
-			shape: "circle"
-			x: 10.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["744F447375B1D334"]
-			id: "059872991CDC308F"
-			tasks: [{
-				id: "06352A55AF09697A"
-				item: "biomesoplenty:blood_bucket"
-				type: "item"
-			}]
-			x: 10.0d
-			y: -9.5d
 		}
 		{
 			dependencies: ["32789BABC2728C07"]
@@ -1153,6 +844,7 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["333F819E70468E50"]
 			description: [
 				"Welcome to Crystal CPU's, a much harder CPU core than Nano or Quantum. And require a multi-dimensional setup to fully automate. Some pointers before you start."
 				""
@@ -1176,7 +868,7 @@
 				item: "gtceu:crystal_cpu"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -4.0d
 			y: -14.0d
 		}
 		{
@@ -1197,61 +889,19 @@
 			}]
 			title: "Things are getting tricky"
 			x: -6.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["2A0A206B6487F7C8"]
-			id: "40AB82BA2E32E1AE"
-			tasks: [{
-				id: "099CC9299F496C13"
-				item: "bloodmagic:altar"
-				type: "item"
-			}]
-			title: "Tier 3 Altar!"
-			x: 4.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["74A99A7515B319B1"]
-			description: [
-				"You will need 8 Blank runes to make the 2nd tier of altar"
-				""
-				"Check out the Altar Preview inside your Sanguine Scientiem booklet for more information on the structure!"
-			]
-			icon: "bloodmagic:altar"
-			id: "49DDC728A826971D"
-			subtitle: "On your way now"
-			tasks: [{
-				count: 8L
-				id: "52F43F7B005C0C91"
-				item: "bloodmagic:blankrune"
-				type: "item"
-			}]
-			title: "Tier 2 Altar!"
-			x: 3.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["0C546B1E2F9CD617"]
-			id: "5CCA4F0101C8756A"
-			tasks: [{
-				id: "1484CF7AD00CDE4F"
-				item: "bloodmagic:ritualdiviner"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -9.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["079024EEE895822F"]
 			id: "076D910F19A6E439"
+			subtitle: "You can smelt it now"
 			tasks: [{
 				id: "438322CFFCF84CDD"
 				item: "gtceu:europium_ingot"
 				type: "item"
 			}]
 			x: -7.0d
-			y: -7.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -1464,7 +1114,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: -8.5d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -1512,36 +1162,63 @@
 			y: -12.0d
 		}
 		{
+			dependencies: [
+				"426B539C6E256B72"
+				"5934EC272F6F0BD8"
+				"45AE9844B1C84454"
+				"2C7F127FE13A307C"
+				"0A2EFEC1F4B31C06"
+				"2B4FCC4B5089A406"
+				"6548740681BDAE49"
+			]
 			id: "34E7B99E411B3E44"
+			shape: "hexagon"
+			size: 1.25d
 			tasks: [{
 				id: "7F6C109A2A311280"
 				item: "gtceu:crystal_processor"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -15.0d
+			x: -4.0d
+			y: -12.5d
 		}
 		{
+			dependencies: [
+				"34E7B99E411B3E44"
+				"6548740681BDAE49"
+			]
 			id: "688DD6F7473A121E"
+			shape: "hexagon"
+			size: 1.25d
 			tasks: [{
 				id: "630C399C5CBC4448"
 				item: "gtceu:crystal_processor_assembly"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -15.0d
+			x: -4.0d
+			y: -11.0d
 		}
 		{
+			dependencies: [
+				"688DD6F7473A121E"
+				"6548740681BDAE49"
+			]
 			id: "0F68C0E627CE724F"
+			shape: "hexagon"
+			size: 1.25d
 			tasks: [{
 				id: "0A3F09A307D13EF3"
 				item: "gtceu:crystal_processor_computer"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -15.0d
+			x: -4.0d
+			y: -9.5d
 		}
 		{
+			dependencies: [
+				"0F68C0E627CE724F"
+				"6548740681BDAE49"
+			]
 			description: [
 				"&bCrystal Mainframes&r at last! It only took you constructing a thriving &espace industry&r!"
 				""
@@ -1569,27 +1246,29 @@
 					type: "item"
 				}
 			]
+			shape: "octagon"
+			size: 2.0d
 			subtitle: "The Pinnacle of Your Suffering"
 			tasks: [{
 				id: "51FB63A84940A52C"
 				item: "gtceu:crystal_processor_mainframe"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -15.0d
+			x: -4.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["076D910F19A6E439"]
 			description: [
-				"The process for asembling your crystal circuits will require an adventure to the orbit of earth."
+				"The highest grade of silicon can only be produced by the best sediment extraction possible."
 				""
-				"No other field of microgravity will work, please make sure you set this up in the orbit of earth."
+				"Return to the undergarden to harvest the lake floors for your next circuits."
 			]
 			icon: "undergarden:goo_ball"
 			id: "14100610FD579908"
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "To Orbit!"
+			subtitle: "Back to the deep!"
 			tasks: [{
 				id: "752BCF58D95740DC"
 				item: "undergarden:goo_ball"
@@ -1597,7 +1276,7 @@
 			}]
 			title: "Returning to the Gardens"
 			x: -8.0d
-			y: -8.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["3706DAF22D0DE870"]
@@ -1609,19 +1288,347 @@
 				type: "item"
 			}]
 			x: -11.0d
-			y: -9.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["3706DAF22D0DE870"]
+			description: [
+				"Why are we caring about lake water of all things?"
+				"Couldn't you just get this in the overworld????"
+				""
+				"This lake water comes directly from the undergarden, it's rich in microbes and other plant matter not found in any other dimension. This has mostly been cleaned but let's shove even more plant matter inside it to encourage the bacterium to grow."
+				""
+				"They unfortunately will die if you take the solution outside of the undergarden, so you must process the entire chain locally before exporting the finished &aNutrient Solution&r"
+			]
 			icon: "gtceu:lake_water_bucket"
 			id: "6354D6CB595585EA"
+			subtitle: "Wait, what?"
 			tasks: [{
 				id: "24B25F3F5F952D03"
 				item: "gtceu:lake_water_bucket"
 				type: "item"
 			}]
 			x: -11.0d
-			y: -7.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"2B37981D5212AB24"
+				"41FB19EBE16E5EDD"
+			]
+			id: "7D6360542F134FA4"
+			tasks: [{
+				id: "11107E7C05B30F2D"
+				item: "gtceu:impure_silt_dust"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			hide_dependency_lines: true
+			id: "41FB19EBE16E5EDD"
+			tasks: [{
+				id: "18E6191299D252C4"
+				item: "gtceu:silt_seperation_composite_dust"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["7D6360542F134FA4"]
+			id: "3CEEF5CCC79772E6"
+			tasks: [{
+				id: "3EB8F57F72CC60B3"
+				item: "gtceu:highest_grade_silica_dust"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["7D6360542F134FA4"]
+			id: "40E01BADF6969CE2"
+			tasks: [{
+				id: "7B68995CB18A2198"
+				item: "gtceu:middle_grade_silica_dust"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["40E01BADF6969CE2"]
+			id: "753B2A4ED5EED437"
+			shape: "gear"
+			tasks: [{
+				id: "245DD5DF7155AA87"
+				item: "gtceu:naquadah_boule"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -12.5d
+		}
+		{
+			dependencies: [
+				"3CEEF5CCC79772E6"
+				"54FFC889D4643B1D"
+			]
+			id: "4D2F1EAC9EECE9F2"
+			tasks: [{
+				id: "3CBF42F13F050366"
+				item: "gtceu:europium_blended_silica_dust"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "54FFC889D4643B1D"
+			tasks: [{
+				id: "39CFC89D04DA7E77"
+				item: "gtceu:graphene_dust"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["741EF8867F73802F"]
+			id: "29EDE77208A90B35"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "3B61DAAECE5A7535"
+				item: "gtceu:alloy_blast_smelter"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"29EDE77208A90B35"
+				"4D2F1EAC9EECE9F2"
+			]
+			id: "1E21874328BDB088"
+			tasks: [{
+				id: "0AD04A9C1AFF7E64"
+				item: "gtceu:europium_silicide_dust"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["40E01BADF6969CE2"]
+			id: "72A561728692FCB1"
+			tasks: [{
+				id: "6E97D39ED3B37163"
+				item: "gtceu:luminent_silica_dust"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["72A561728692FCB1"]
+			id: "2706AEF23FE25353"
+			tasks: [{
+				id: "7B453ADBE17B353C"
+				item: "gtceu:raw_crystal_chip_parts"
+				type: "item"
+			}]
+			x: -9.75d
+			y: -13.0d
+		}
+		{
+			dependencies: ["2706AEF23FE25353"]
+			id: "457C8C834358A6E7"
+			tasks: [{
+				id: "7B3590972C8AB9E2"
+				item: "cosmiccore:dilumixal_naquadah_doped_silicon_boule"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["457C8C834358A6E7"]
+			id: "1E58E5829FED4085"
+			tasks: [{
+				id: "0A083662E5B7C121"
+				item: "cosmiccore:dilumixal_naquadah_doped_silicon_wafer"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -14.0d
+		}
+		{
+			dependencies: [
+				"1E21874328BDB088"
+				"1E58E5829FED4085"
+			]
+			id: "170D61FE0278C787"
+			tasks: [{
+				id: "7F359122547F4416"
+				item: "cosmiccore:crystal_chiplet_base"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["170D61FE0278C787"]
+			id: "3CF057E7FD946D3D"
+			tasks: [{
+				id: "69909618E311F569"
+				item: "cosmiccore:engraved_crystal_chiplet"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			hide_dependency_lines: true
+			id: "0A2EFEC1F4B31C06"
+			tasks: [{
+				id: "4AEB526D4DBF8C1E"
+				item: "cosmiccore:crystalline_transistor"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			hide_dependency_lines: true
+			id: "2B4FCC4B5089A406"
+			tasks: [{
+				id: "14A3C12506E3FA5A"
+				item: "cosmiccore:crystalline_resistor"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			dependency_requirement: "all_started"
+			hide_dependency_lines: true
+			id: "5934EC272F6F0BD8"
+			tasks: [{
+				id: "25162AAE497A2766"
+				item: "cosmiccore:crystalline_capacitor"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			hide_dependency_lines: true
+			id: "2C7F127FE13A307C"
+			tasks: [{
+				id: "64F48BF60E183C2E"
+				item: "cosmiccore:crystalline_diode"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			hide_dependency_lines: true
+			id: "426B539C6E256B72"
+			tasks: [{
+				id: "0CCA072509D033BE"
+				item: "cosmiccore:crystalline_inductor"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["3CF057E7FD946D3D"]
+			id: "333F819E70468E50"
+			tasks: [{
+				id: "7A4EF1142B7ED2ED"
+				item: "cosmiccore:unsealed_crystal_cpu"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["741EF8867F73802F"]
+			id: "6548740681BDAE49"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "539F9F51EFEAED86"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
+			title: "Orbital Assembler"
+			x: -6.0d
+			y: -11.0d
+		}
+		{
+			id: "5230C0F46BA0FFD7"
+			tasks: [{
+				id: "26BC28AC9A501947"
+				item: "bloodmagic:blankslate"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			id: "01B2855CAB8BF19E"
+			tasks: [{
+				id: "3B27469FB2B40BAC"
+				item: "bloodmagic:reinforcedslate"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			id: "6CFEE9FDE64A56F5"
+			tasks: [{
+				id: "2C1D2FD6EAEBA8A8"
+				item: "bloodmagic:infusedslate"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			id: "60F6B49FD1D129B9"
+			tasks: [{
+				id: "5A66A9793F73BF1C"
+				item: "bloodmagic:demonslate"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			id: "23023C4EAFC98F4B"
+			tasks: [{
+				id: "07ED132A9F7A0FD3"
+				item: "bloodmagic:etherealslate"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.0d
 		}
 	]
 	title: "A Factory Soaked In Blood [&dLuV&r]"

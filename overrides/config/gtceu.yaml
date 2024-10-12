@@ -14,7 +14,7 @@ recipes:
 
   # Whether to make crafting recipes for Bricks, Firebricks, Nether Bricks, and Coke Bricks harder.
   # Default: false
-  harderBrickRecipes: false
+  harderBrickRecipes: true
 
   # Whether to nerf Wood crafting to 2 Planks from 1 Log, and 2 Sticks from 2 Planks.
   # Default: false
@@ -67,7 +67,7 @@ recipes:
 
   # Whether to remove Vanilla Block Recipes from the Crafting Table.
   # Default: false
-  removeVanillaBlockRecipes: false
+  removeVanillaBlockRecipes: true
 
   # Whether to remove Vanilla TNT Recipe from the Crafting Table.
   # Default: true
@@ -267,7 +267,7 @@ machines:
   # Default: false
   orderedAssemblyLineFluids: true
 
-  # Let Dual Hatch has more ability.
+  # Let Dual Hatch has more ability. (DEPRECATED: does nothing now)
   # When enabled it, Dual Hatch will can used to assemble line and so on.
   # Need restart Minecraft to apply.
   enableMoreDualHatchAbility: false

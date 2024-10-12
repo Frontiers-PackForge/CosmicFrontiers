@@ -18,6 +18,6 @@
 	}
 	pause_game: false
 	progression_mode: "linear"
-	title: "Cosmic Frontiers"
+	title: "&l&6Cosmic Frontiers"
 	version: 13
 }

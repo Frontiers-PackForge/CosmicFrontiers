@@ -1094,6 +1094,7 @@
 				{
 					id: "223094C8A43FE68B"
 					item: "gtceu:raw_mana_crystal_slurry_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1114,6 +1115,7 @@
 				{
 					id: "366C720AC1665255"
 					item: "gtceu:prepared_terrasteel_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1138,6 +1140,7 @@
 				{
 					id: "17FE1AB4257178EF"
 					item: "gtceu:unstable_terrasteel_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1200,18 +1203,11 @@
 			icon: "gtceu:potent_mana_bucket"
 			id: "5284106D3A924B36"
 			subtitle: "Mana Potency 10x"
-			tasks: [
-				{
-					id: "3D7A339B20C5A6D0"
-					item: "gtceu:potent_mana_bucket"
-					type: "item"
-				}
-				{
-					id: "6C3FEBD8E4FADB42"
-					title: "Fluid Quest - Checkmark"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "3D7A339B20C5A6D0"
+				item: "gtceu:potent_mana_bucket"
+				type: "item"
+			}]
 			x: 7.5d
 			y: 5.5d
 		}
@@ -1636,6 +1632,17 @@
 			}]
 			x: -1.5d
 			y: -1.0d
+		}
+		{
+			id: "4E02E5BCE5A73FFD"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:thundering_mana"
+				id: "633D34E89D2BB584"
+				type: "fluid"
+			}]
+			x: 2.5d
+			y: 7.5d
 		}
 	]
 	title: "Forged in Galefury [MV]"

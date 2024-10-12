@@ -8,20 +8,20 @@
 	images: [
 		{
 			height: 3.0d
-			image: "frontiers:textures/questimages/firststeps/bannerwide.png"
+			image: "frontiers:textures/questimages/miscicons/frontiersdefault.png"
 			order: 9999
 			rotation: 0.0d
 			width: 9.438805970149254d
-			x: 5.498639455782303d
-			y: -5.324744897959196d
+			x: 6.130952380952401d
+			y: -3.305229591836735d
 		}
 		{
 			height: 4.0d
 			image: "frontiers:textures/questimages/miscicons/wingedborder.png"
 			rotation: 0.0d
 			width: 4.0d
-			x: 5.0486394557823004d
-			y: 5.4233418367346715d
+			x: 6.0595238095238315d
+			y: 1.444770408163258d
 		}
 	]
 	order_index: 0
@@ -29,25 +29,21 @@
 	quests: [
 		{
 			description: [
-				"Booting Emergency Logs"
+				"          —----- Script #1.216e939 —-----"
+				"                &eEnviroment Settings&r - &aOK&r!"
+				"       &eMemory Status&r - &cUnrecoverable Error&r"
+				"         &7Can not disconnect memory storage&r."
+				"               &7Inducing Temporal Amnesia&r."
+				"             &cAll othere checks have failed&r."
+				"               Starting Script #1.216e939 "
+				"          —---------------------—-----"
+				"                    VERDICT - GUILTY"
+				"            STATUS - Sub Dimensional Prison"
+				"          "
+				"               Error Loading Information"
 				""
 				""
-				"—----- Subject #1216 —-----"
-				""
-				""
-				""
-				"CELESTIAL BODY DETECTED, CALIBRATING ONE-WAY WORMHOLE…"
-				""
-				""
-				"VERDICT - GUILTY"
-				""
-				"SENTENCE - ETERNITY"
-				""
-				"LOCATION - SOL SYSTEM LOCATED WITHIN UNIVERSE #[ERROR]"
-				""
-				"TERMINATING CONTACT"
-				""
-				"{image:frontiers:textures/questimages/firststeps/firstbackground.png width:100 height:100 align:1}"
+				"        &7[This is not a bug, just story -Ghost]"
 			]
 			icon: {
 				Count: 1
@@ -60,21 +56,26 @@
 				}
 			}
 			id: "4D96DE63E82D8EAA"
-			shape: "hexagon"
+			min_width: 256
+			rewards: [{
+				id: "5305EDA65C560BED"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			shape: "octagon"
 			subtitle: "\"Paying the Ultimate Price\""
 			tasks: [{
 				id: "1AE9E7415B27B019"
 				type: "checkmark"
 			}]
-			title: "JUDGEMENT"
-			x: 5.0d
-			y: -2.0d
+			title: "Judgement of the Eternal Cycle"
+			x: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"2F6DBFCBBC3A0827"
 				"5693AA8924634F44"
-				"78DFF9184296F7F6"
 			]
 			description: [
 				""
@@ -89,6 +90,12 @@
 			]
 			icon: "minecraft:furnace"
 			id: "4276E47E7CF85DF0"
+			rewards: [{
+				count: 2
+				id: "412CAE2791191B42"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "You'll need iron, lots of it!"
 			tasks: [{
@@ -98,8 +105,8 @@
 				type: "item"
 			}]
 			title: "Basic Metallurgy #1"
-			x: 5.0d
-			y: 2.0d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
@@ -132,13 +139,18 @@
 			]
 			icon: "cold_sweat:thermometer"
 			id: "423EB7A96CB261A3"
+			rewards: [{
+				id: "0343745A0E5CD43E"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7E6F7A6878D4F4C7"
 				type: "checkmark"
 			}]
 			title: "Keeping Warm and Cool"
 			x: 3.5d
-			y: -1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
@@ -154,6 +166,7 @@
 			]
 			icon: "gtceu:prospector.lv"
 			id: "78DFF9184296F7F6"
+			optional: true
 			rewards: [
 				{
 					id: "288FB56F6F1C79E3"
@@ -179,15 +192,15 @@
 					type: "item"
 				}
 			]
-			shape: "hexagon"
+			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				id: "006D430FCB0F5666"
 				type: "checkmark"
 			}]
 			title: "Emergency Supplies"
-			x: 5.0d
-			y: 0.0d
+			x: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7C2BA4D773E57683"]
@@ -201,55 +214,66 @@
 				"Yes, It is 'weirdly durable', You could take this hammer to the end of time with you."
 			]
 			id: "5693AA8924634F44"
-			rewards: [{
-				id: "59BDAF6281D18447"
-				item: {
-					Count: 1
-					id: "gtceu:steel_mining_hammer"
-					tag: {
-						DisallowContainerItem: 0b
-						GT.Behaviours: {
-							AoEColumn: 1
-							AoELayer: 0
-							AoERow: 1
-							MaxAoEColumn: 1
-							MaxAoELayer: 0
-							MaxAoERow: 1
-						}
-						GT.Tool: {
-							Damage: 0
-							HarvestLevel: 3
-							MaxDamage: 1535
-							ToolSpeed: 6.0f
-						}
-						HideFlags: 2
-						Unbreakable: 1
-						display: {
-							Name: "{\"text\":\"Weirdly Durable Hammer\"}"
+			rewards: [
+				{
+					id: "59BDAF6281D18447"
+					item: {
+						Count: 1
+						id: "gtceu:steel_mining_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								AoEColumn: 1
+								AoELayer: 0
+								AoERow: 1
+								MaxAoEColumn: 1
+								MaxAoELayer: 0
+								MaxAoERow: 1
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 1535
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+							Unbreakable: 1
+							display: {
+								Name: "{\"text\":\"Weirdly Durable Hammer\"}"
+							}
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "52D84DDE25372FDE"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+			]
 			subtitle: "I don't care how you get it."
 			tasks: [{
 				id: "08C287391F806DE9"
 				type: "checkmark"
 			}]
 			title: "FTB: Ultimine and You"
-			x: 6.5d
-			y: 1.0d
+			x: 8.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["012D3A0EBD06AEB3"]
 			description: ["Btw, This pack has FTB: Ultimine"]
 			icon: "minecraft:oak_log"
 			id: "2F6DBFCBBC3A0827"
+			rewards: [{
+				count: 2
+				id: "66E981CB30D36635"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			subtitle: "You'll need this"
 			tasks: [{
-				count: 64L
-				icon: "minecraft:oak_log"
-				id: "218AC08A1B16AEA4"
+				id: "78F01614D58508A8"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
@@ -257,12 +281,11 @@
 						"ftbfiltersystem:filter": "item_tag(minecraft:logs)"
 					}
 				}
-				title: "Any Logs"
 				type: "item"
 			}]
 			title: "Get Some Bi- I mean Wood"
-			x: 3.5d
-			y: 1.0d
+			x: 4.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4276E47E7CF85DF0"]
@@ -288,6 +311,14 @@
 				"Remember your workplace safety! Don't lose your fingers.."
 			]
 			id: "2B84E90B712B6CD3"
+			min_width: 350
+			rewards: [{
+				count: 32
+				id: "26EE20C7652D568C"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			shape: "hexagon"
 			subtitle: "Tools of the Trade"
 			tasks: [
 				{
@@ -446,16 +477,15 @@
 				}
 			]
 			title: "Tools fit for survival"
-			x: 5.0d
-			y: 3.0d
+			x: 6.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2B84E90B712B6CD3"]
 			description: [
 				"This is the final quest for the starting chapter. "
 				""
-				"Please prove you are ready for the Era of Steam by presenting materials valid for progression"
-				""
+				"The Steam Age will make you craft a lot of bronze. Please present some copper and tin to continue and open up the &aNext Chapter&r as well as the &6Store&r"
 				""
 				"I wish you luck!"
 			]
@@ -463,9 +493,9 @@
 			hide_dependent_lines: true
 			id: "38DA0B4E0DBAC364"
 			rewards: [{
-				command: "/say Hi, @p!"
-				id: "784F67CA8F864F4F"
-				type: "command"
+				id: "50A86F862ABBC6AE"
+				item: "cosmiccore:large_shard_of_perpetuity"
+				type: "item"
 			}]
 			shape: "hexagon"
 			size: 2.0d
@@ -483,22 +513,10 @@
 					item: "gtceu:tin_ingot"
 					type: "item"
 				}
-				{
-					count: 256L
-					id: "034E3C426DF22587"
-					item: "minecraft:redstone"
-					type: "item"
-				}
-				{
-					count: 128L
-					id: "02695B730CDEF81F"
-					item: "minecraft:coal"
-					type: "item"
-				}
 			]
 			title: "The Road Ahead"
-			x: 5.0d
-			y: 5.5d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["423EB7A96CB261A3"]
@@ -511,14 +529,19 @@
 			]
 			icon: "paraglider:stamina_vessel"
 			id: "012D3A0EBD06AEB3"
+			rewards: [{
+				id: "6FB73E55958ADF15"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			subtitle: "Configure GUI with CTRL+P"
 			tasks: [{
 				id: "0967F63809AE56C6"
 				type: "checkmark"
 			}]
 			title: "Stamina and You"
-			x: 3.5d
-			y: 0.0d
+			x: 4.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["423EB7A96CB261A3"]
@@ -535,8 +558,8 @@
 				item: "cold_sweat:hearth"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -1.0d
+			x: 2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["012D3A0EBD06AEB3"]
@@ -559,8 +582,8 @@
 				item: "paraglider:spirit_orb"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 0.0d
+			x: 2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
@@ -598,8 +621,8 @@
 				type: "checkmark"
 			}]
 			title: "Nutrition and You."
-			x: 6.5d
-			y: -1.0d
+			x: 8.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["0588F46F605A2E88"]
@@ -618,8 +641,8 @@
 				item: "minecraft:glass"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -1.0d
+			x: 9.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["0588F46F605A2E88"]
@@ -645,17 +668,24 @@
 			}
 			id: "7C2BA4D773E57683"
 			optional: true
-			rewards: [{
-				id: "76D335B0BAE970B0"
-				item: {
-					Count: 1
-					id: "botania:brew_vial"
-					tag: {
-						brewKey: "botania:water_breathing"
+			rewards: [
+				{
+					id: "76D335B0BAE970B0"
+					item: {
+						Count: 1
+						id: "botania:brew_vial"
+						tag: {
+							brewKey: "botania:water_breathing"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "1FAD66946AD21656"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+			]
 			subtitle: "Hold your breath."
 			tasks: [{
 				id: "7E6F8B260B75D219"
@@ -663,48 +693,50 @@
 				type: "checkmark"
 			}]
 			title: "Thin Air and You"
-			x: 6.5d
-			y: 0.0d
+			x: 8.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
 				"5693AA8924634F44"
 				"4276E47E7CF85DF0"
 				"423EB7A96CB261A3"
-				"78DFF9184296F7F6"
-				"536D3BFD33A78DBF"
 				"38DA0B4E0DBAC364"
 				"4D96DE63E82D8EAA"
 				"0588F46F605A2E88"
 				"012D3A0EBD06AEB3"
 				"2B84E90B712B6CD3"
-				"5E8484FF7701ACE3"
 				"7C2BA4D773E57683"
 				"2F6DBFCBBC3A0827"
-				"5526F519E59B8C98"
 			]
 			description: [
-				"Your Verdict came with some bonus supplies trapped within your entry area."
+				"You finished everything on this page? That's awesome!"
+				"Have some shards on the house."
 				""
-				"The AUUUUUGH Can be used to make anything unbreakable. It's your choice what you do with it."
+				""
+				"         &7&oThe Sky softly hums a familiar tune&r"
+				"          \"&6Watch this heartache transcend.&r\""
 			]
 			hide_dependency_lines: true
-			icon: {
-				Count: 1b
-				id: "forbidden_arcanus:eternal_stella"
-				tag: { }
-			}
+			hide_text_until_complete: true
+			icon: "cosmiccore:large_shard_of_perpetuity"
 			id: "06408883200FAC36"
-			optional: true
+			rewards: [{
+				count: 64
+				id: "33F66928FDE7898C"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			shape: "pentagon"
 			subtitle: "100% The QB Page to unlock."
 			tasks: [{
 				id: "5C7A35C4DA090EDF"
 				title: "Checkmark"
 				type: "checkmark"
 			}]
-			title: "Full Clear Chapter Reward : An Eternal Dilemma"
-			x: 5.0d
-			y: 7.5d
+			title: "Full Clear Chapter : An Eternal Dilemma"
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
@@ -722,15 +754,15 @@
 			icon: "cosmiccore:donk"
 			id: "192AC19C353976D9"
 			shape: "gear"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "&fCosmetic Discord Roles, And how to get them."
 			tasks: [{
 				id: "279E7A3098A3B6EF"
 				type: "checkmark"
 			}]
 			title: "Challenges/Victory Rewards"
-			x: 5.0d
-			y: -3.5d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
@@ -748,8 +780,8 @@
 				title: "Useful Commands"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: -2.0d
+			x: 4.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7C2BA4D773E57683"]
@@ -781,8 +813,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.0d
+			x: 9.5d
+			y: 1.5d
 		}
 		{
 			description: [
@@ -798,56 +830,9 @@
 			icon: "minecraft:writable_book"
 			id: "06070B096D0D65F5"
 			subtitle: "Changelogs 0.4.0 -> 0.5.0"
-			tasks: [{
-				id: "01050A5958F960F9"
-				type: "checkmark"
-			}]
 			title: "Changelogs / Updates"
-			x: 6.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["4D96DE63E82D8EAA"]
-			description: [
-				"&aEpicFight allows you to swap combat modes with the \"R\" Key by default - when combat mode is disabled it allows you to attack and mine line normal. When Combat mode is enabled, you can utilize passive skills, dodges, parries and stronger attack combos to kill monsters.&r"
-				""
-				"&bYou may notice some monsters have attack animations, whereas modded ones don't. This is something I have to manually Animate in BLENDER. It'll take some time but it's a 1.0.0 Goal to have every mob and potentially boss with custom attack patterns and animations.&r"
-				""
-				"&aSame Case with Weapons consuming stamina, some don't currently trigger it at the moment, and I'll need to fix this!&r"
-				""
-				"{@pagebreak}"
-				""
-				"If you dislike seeing your arms in mining mode you can toggle this off by "
-				""
-				"Pressing Escape"
-				"Click \"Mods\""
-				"Search \"Epic Fight\""
-				"Click \"Config\""
-				"Click \"Animations\""
-				"Click \"Filter Animations\" and toggle it to \"ON\""
-				""
-				"This is the default state for the official releases of Frontiers, but if you'd like your animations active 24/7, set this to \"OFF\""
-			]
-			icon: {
-				Count: 1
-				id: "botania:elementium_sword"
-				tag: {
-					Damage: 0
-					affix_data: {
-						sockets: 0
-					}
-				}
-			}
-			id: "05392BC3D961B54F"
-			shape: "gear"
-			subtitle: "Soulslike Combat"
-			tasks: [{
-				id: "618C6AB99D588DC3"
-				type: "checkmark"
-			}]
-			title: "Combat and You"
-			x: 6.5d
-			y: -2.0d
+			x: 4.0d
+			y: -5.5d
 		}
 		{
 			description: [
@@ -869,8 +854,9 @@
 			icon: "minecraft:writable_book"
 			id: "001ABD786A9CF26D"
 			subtitle: "Changelog 0.5.0 -> 0.5.1"
-			x: 8.0d
-			y: -3.5d
+			title: "Changelogs / Updates"
+			x: 5.5d
+			y: -5.5d
 		}
 	]
 	subtitle: ["It all starts here"]

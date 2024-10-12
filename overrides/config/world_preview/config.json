@@ -1,0 +1,21 @@
+{
+  "savedSeeds": [],
+  "showInPauseMenu": true,
+  "showPlayer": true,
+  "showControls": true,
+  "showFrameTime": false,
+  "buildFullVertChunk": false,
+  "backgroundSampleVertChunk": false,
+  "sampleStructures": false,
+  "sampleHeightmap": false,
+  "sampleIntersections": false,
+  "storeNoiseSamples": false,
+  "heightmapMinY": 32,
+  "heightmapMaxY": 255,
+  "onlySampleInVisualRange": true,
+  "cacheInGame": true,
+  "cacheInNew": false,
+  "enableCompression": true,
+  "colorMap": "world_preview:inferno",
+  "numThreads": 23
+}
