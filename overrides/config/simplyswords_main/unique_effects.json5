@@ -167,5 +167,10 @@
 	"magislamRadius": 4.0,
 	"magislamDamageModifier": 2.0,
 	"magislamMagicChance": 35.0,
-	"magislamMagicModifier": 0.5
+	"magislamMagicModifier": 0.5,
+	"astralShiftCooldown": 420.0,
+	"astralShiftDuration": 100.0,
+	"astralShiftDamageModifier": 1.0,
+	"astralShiftDamageMax": 300.0,
+	"astralShiftChance": 5.0
 }

@@ -9,6 +9,8 @@
 	#A value of 1 has no smoothing
 	#Range: 1.0 ~ 2.147483647E9
 	"Temperature Smoothing" = 10.0
+	#Displays a dripping water effect on-screen when the player is wet
+	"Show Water Effect" = true
 
 ["UI Options"]
 	"Custom hotbar layout" = true
@@ -44,4 +46,6 @@
 	"Enable Creative Mode Warning" = true
 	#Displays areas that the Hearth is affecting when the F3 debug menu is open
 	"Hearth Debug" = true
+	#Hides insulation tooltips for items, armor, and curios unless SHIFT is held
+	"Hide Tooltips" = false
 

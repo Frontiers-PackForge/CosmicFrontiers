@@ -1,0 +1,17 @@
+
+[options]
+	#Prevents Death by Teleporting Player to Spawn if trying to enter an Ender Portal
+	preventdeath = true
+	#Message that displays when Teleport is blocked
+	blockedmessage = "The End is Disabled, Check EMI for Alternate Recipes"
+	#Title for the Advancements
+	craftedmessage = "%dim% Unlocked!"
+	#Description for the Advancements
+	description = "Obtain a %item%"
+	#Comma seperated list of items that when crafted unlock the corresponding dimension
+	craftitems = "minecraft:bedrock"
+	#Comma seperated list of Dimension Resource Names
+	dimresname = "minecraft:the_end"
+	#Comma seperated list of Dimension Display Names
+	dimnames = "End"
+

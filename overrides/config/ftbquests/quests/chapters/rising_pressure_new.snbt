@@ -1,0 +1,2255 @@
+{
+	default_hide_dependency_lines: false
+	default_min_width: 250
+	default_quest_shape: ""
+	filename: "rising_pressure_new"
+	group: "43A79D0106662C02"
+	icon: "gtceu:basic_electronic_circuit"
+	id: "55EDC9570618B12B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["38DA0B4E0DBAC364"]
+			description: [
+				"Welcome to the &eSteam Age&r. Your primary objectives are to produce &asteel&r and gain entry to &cThe Nether&r. "
+				""
+				""
+				"This age will take you through some of the basics of GregTech, and teach you the function of several machines."
+				""
+				""
+				"Start by making &abronze&r, a mixture of tin and copper dust. Remember, you can make dust by using ingots and a Gregtech &eMortar&r!"
+			]
+			hide: true
+			id: "30C980B828A48306"
+			rewards: [
+				{
+					id: "7665B9F97ED9265B"
+					item: {
+						Count: 1
+						id: "trofers:small_plate"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "frontiers:materials/bronze"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 32
+					id: "61B8C076158BC400"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Welcom to Steam!"
+			tasks: [{
+				id: "7323CFEF591FDB00"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"620A26CBDA730340"
+				"38DF96F993008505"
+				"30C980B828A48306"
+			]
+			description: [
+				"You'll need &a29 Coke Bricks Blocks&r to Assemble your &eCoke oven&r."
+				""
+				"This is your first source of &aCreosote&r Oils, which are required to craft &aTreated Planks&r."
+				""
+				""
+				"This quest only asks you to hold enough for the structure."
+			]
+			icon: "gtceu:coke_oven"
+			id: "4CF936349B23F7B3"
+			rewards: [
+				{
+					id: "4C068CE6DFACC554"
+					item: {
+						Count: 1
+						id: "trofers:medium_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "frontiers:multi/coke_oven"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5260F05B731404CE"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+			]
+			subtitle: "Automated Charcoal"
+			tasks: [
+				{
+					id: "77D1B4FA8A670D7E"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "1EBD636C4690B2AA"
+					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5AB046A0E1BFBE1E"]
+			description: ["&7NOTICE : You used to be able to collect these from monsters, that has been disabled. you must now craft them yourself.&r"]
+			hide_dependency_lines: true
+			id: "4A97D6CCF01BDE62"
+			rewards: [{
+				count: 8
+				id: "4E877EAF71F7E9B3"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68B250C4CCD1FE52"
+				item: "nether_remastered:seal_piece_2"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5AB046A0E1BFBE1E"]
+			description: ["&7NOTICE : You used to be able to collect these from monsters, that has been disabled. you must now craft them yourself.&r"]
+			hide_dependency_lines: true
+			id: "09C2E893A1DA3F19"
+			rewards: [{
+				count: 8
+				id: "3F242AC0082D66B9"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1588847D1861C382"
+				item: "nether_remastered:seal_piece_1"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5AB046A0E1BFBE1E"]
+			description: ["&7NOTICE : You used to be able to collect these from monsters, that has been disabled. you must now craft them yourself.&r"]
+			hide_dependency_lines: true
+			id: "7033AD07689880E5"
+			rewards: [{
+				count: 8
+				id: "4841AC9AF8D2F802"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B8365B941485934"
+				item: "nether_remastered:seal_piece_3"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5AB046A0E1BFBE1E"]
+			description: ["&7NOTICE : You used to be able to collect these from monsters, that has been disabled. you must now craft them yourself.&r"]
+			hide_dependency_lines: true
+			id: "6EEF7CE3D1BADDD4"
+			rewards: [{
+				count: 8
+				id: "1611096F246AEF5B"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6CD32CAED244760C"
+				item: "nether_remastered:seal_piece_4"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["25D643EB580DE53E"]
+			description: [
+				"The Primitive Pump allows a consistent source of water."
+				""
+				"The amount is determined by what biome it's in."
+				""
+				"Because the list would be too long to write here. Just know the more humid the biome, the more water it will produce!"
+				""
+				"One of these is recommended to stop your boilers from exploding from lack of water."
+			]
+			id: "3CDE00DF0FC59117"
+			rewards: [{
+				count: 8
+				id: "30C958341A053903"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Automated Water"
+			tasks: [{
+				id: "5FF715E9B527FC7B"
+				item: "gtceu:primitive_pump"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["30C980B828A48306"]
+			description: [
+				"Sand, most commonly found around oceans and rivers."
+				""
+				"Don't forget you have access to &aFTB:Ultimine&r. Go get 4 stacks."
+			]
+			hide_dependency_lines: true
+			id: "620A26CBDA730340"
+			rewards: [{
+				count: 4
+				id: "688FBA8DDD7EBBAC"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "It's in your clothes!"
+			tasks: [{
+				count: 256L
+				id: "6DFFC5C34FD1ADCD"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["30C980B828A48306"]
+			description: [
+				"Clay, most commonly found around lakes and rivers."
+				""
+				"Don't forget you have access to &aFTB:Ultimine&r. Go get 8 stacks."
+			]
+			hide_dependency_lines: true
+			id: "38DF96F993008505"
+			rewards: [{
+				count: 4
+				id: "1094E296E4A4BEF8"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "A bricks best friend."
+			tasks: [{
+				id: "7CEE6D99E2292546"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["30C980B828A48306"]
+			description: [
+				"Oh boy, your first significant usage of &abronze&r starts here."
+				""
+				"Most, if not all, machines in the &eSteam Age&r will utilize some kind of bronze in crafting, be it the casing or the parts needed. Expect to make a lot!"
+			]
+			id: "624885E31FBA82F2"
+			rewards: [{
+				count: 4
+				id: "5D574E80F31C16B2"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Plated and Gated"
+			tasks: [{
+				id: "4D02C9E0A443E108"
+				item: "gtceu:bronze_machine_casing"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["30C980B828A48306"]
+			description: [
+				"&eBronze Bricked Casings&r find usage in several multi-blocks and singleblocks."
+				""
+				"Completing this quest will unlock quests related to &athis casing&r."
+			]
+			id: "5B16C4D1A2356E3D"
+			rewards: [{
+				count: 4
+				id: "6E5716E1FAA097BC"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Bricked up... On Clay!"
+			tasks: [{
+				id: "146AACE03C79B002"
+				item: "gtceu:bronze_brick_casing"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"5B16C4D1A2356E3D"
+				"3CDE00DF0FC59117"
+			]
+			description: [
+				"Consumes burnable fuel and water to produce steam."
+				""
+				"Warning! Do not allow boilers to heat up without any water. Putting water in a hot boiler will result in an explosion"
+			]
+			id: "285AD74C71E4A9E7"
+			rewards: [{
+				count: 8
+				id: "66E9B47B9BD8B390"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "First boiler"
+			tasks: [{
+				id: "071201F085017116"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["285AD74C71E4A9E7"]
+			id: "77AEE0B940FD4728"
+			tasks: [{
+				id: "540D73572B00B4C1"
+				item: "gtceu:lp_steam_solar_boiler"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["285AD74C71E4A9E7"]
+			id: "21AFCBA87724936B"
+			tasks: [{
+				id: "49EA403DC0A2B47E"
+				item: "gtceu:lp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"77AEE0B940FD4728"
+				"0FF5358645CE9BD5"
+			]
+			description: [
+				"A direct upgrade from your previous solar boilers."
+				"They still infact, require sunlight."
+				""
+				"Hi."
+			]
+			id: "181E5DA496BE1791"
+			subtitle: "Even Hotter with Solar!"
+			tasks: [{
+				id: "1C3D71428A693DCC"
+				item: "gtceu:hp_steam_solar_boiler"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"21AFCBA87724936B"
+				"0FF5358645CE9BD5"
+			]
+			description: [
+				"A direct upgrade from your liquid fueled boilers, I guess you'll have a use for all that spare creosote or lava?"
+				""
+				""
+				"Idk what else to put here, so hello."
+			]
+			id: "0D8D58248BE2303B"
+			subtitle: "Even Hotter with Fluids!"
+			tasks: [{
+				id: "2A93683554936527"
+				item: "gtceu:hp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["25D643EB580DE53E"]
+			description: [
+				"                       ◕‿↼"
+				""
+				"In all seriousness, you can use this to automate treated wood if crafting it is too annoying! Just pump your creosote into a spout and put the wood on a depot or conveyor below"
+			]
+			id: "1E5039DF8C3F7BB1"
+			rewards: [{
+				count: 8
+				id: "787346F6D916459F"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "Extremely Efficient Wood Lubrication"
+			tasks: [{
+				id: "437B593814AC3C45"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["18A9A17A7A12A615"]
+			description: [
+				"Going to be honest I have no idea what to put here, it's a plank slathered in goop or something."
+				""
+				"You need it for the multiblock you're making next. But it's also a nice building block too."
+			]
+			id: "25D643EB580DE53E"
+			subtitle: "Treated Good"
+			tasks: [{
+				id: "3EC37665C2FA5DD5"
+				item: "gtceu:treated_wood_planks"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4CF936349B23F7B3"]
+			description: [
+				"I'm going to be honest: I have no clue what &aCreosote&r even is..."
+				""
+				"Just slather it all over your wood, and it's good enough to handle water exposure."
+				"I don't think rubbing creosote on wood makes it less flammable."
+			]
+			id: "18A9A17A7A12A615"
+			rewards: [{
+				count: 4
+				id: "1C3CBB52CF574AC8"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "What even is this?"
+			tasks: [{
+				id: "3E929817608097FD"
+				item: "gtceu:creosote_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"285AD74C71E4A9E7"
+				"0FF5358645CE9BD5"
+			]
+			description: [
+				"A direct upgrade from your previous solid fuel boilers, these will produce more steam."
+				""
+				"I don't know what else to tell you so uh... hi?"
+			]
+			id: "69677FC2CCC2CC23"
+			subtitle: "Even Hotter!"
+			tasks: [{
+				id: "586AD3DF2798291C"
+				item: "gtceu:hp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["30C980B828A48306"]
+			description: [
+				"Alright calm down you haven't been stabbed."
+				""
+				"Create is mostly around for a few reasons"
+				""
+				"- Great Building Blocks"
+				"- Great for Redstone Automation and has really reliable wireless RS features"
+				"- It's treated more as a sandbox tool vs a pack progression mod."
+				""
+				""
+				"While there are a few places create is used in progression, namely the spout pre-chembath, most methods that use create also have full GT options or options from other mods!"
+				""
+				"Create however is a great tool earlygame, get creative!"
+			]
+			icon: "create:cogwheel"
+			id: "6D0887AA0BEF3B4C"
+			rewards: [{
+				id: "40A681C7992AFB31"
+				item: "cosmiccore:large_shard_of_perpetuity"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "In MY GT MODPACK!?!?!"
+			tasks: [{
+				id: "43FEDA3B86D6B7D8"
+				title: "Alright Fine."
+				type: "checkmark"
+			}]
+			title: "Create?!"
+			x: 0.0d
+			y: -4.25d
+		}
+		{
+			dependencies: ["0FF5358645CE9BD5"]
+			description: [
+				"You'll need at least 5 of these"
+				"3 for Programmable Circuits for your Wiremill, Bender, and Assembler Multi"
+				"2 for the Assembler Multi Controller"
+			]
+			id: "61E763C4211D88C8"
+			shape: "hexagon"
+			subtitle: "A simple ULV circuit"
+			tasks: [{
+				id: "65AE3C684904305B"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"624885E31FBA82F2"
+				"5B16C4D1A2356E3D"
+				"2A2CF5863AD39845"
+				"43F169D6C6B48A5F"
+			]
+			description: [
+				"The Steam mixing vessel intakes steam to blend materials together."
+				"This has a few nice uses early on, most notably for the creation of &aConcrete&r."
+				""
+				"You'll need this to make fireclay, and a few more dusts to get into LV."
+			]
+			id: "2B9A3BC69C35C442"
+			rewards: [{
+				count: 32
+				id: "3BA85DE51DFCC18F"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Blending in the Steam Age"
+			tasks: [{
+				id: "3C5BE5CFD20722E6"
+				item: "gtceu:steam_mixing_vessel"
+				type: "item"
+			}]
+			title: "Steam Mixing Vessel"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B9A3BC69C35C442"]
+			description: [
+				"Concrete will be needed to hold your firebricks together."
+				""
+				"Your mixer can do multiple batches of a recipe at once, use that to your advantage!"
+			]
+			id: "25C95934D627D7D4"
+			rewards: [{
+				count: 16
+				id: "625BA19CFF2A5EE5"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Don't fall in!"
+			tasks: [{
+				id: "5135D510F9ADC829"
+				item: "gtceu:concrete_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2B9A3BC69C35C442"
+				"7AAEE0AD98A72BE7"
+			]
+			id: "4360A0B97AC38F50"
+			rewards: [{
+				count: 8
+				id: "632C571625A18C9D"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Blobs of better clay"
+			tasks: [{
+				id: "045D4BFC88265A28"
+				item: "cosmiccore:fireclay_ball"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4360A0B97AC38F50"]
+			description: [
+				"Compress your fireclay balls into bricks, then alloy them with coal to get prepared firebricks."
+				""
+				"TODO : Make it work with Charcoal "
+			]
+			icon: "gtceu:firebrick"
+			id: "02167B8ADA288FEA"
+			rewards: [{
+				count: 16
+				id: "75AEA145553A1392"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Brick Time!"
+			tasks: [
+				{
+					id: "3445DC1F6125A56B"
+					item: "gtceu:compressed_fireclay"
+					type: "item"
+				}
+				{
+					id: "43A48D57D8879A9B"
+					item: "gtceu:firebrick"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"624885E31FBA82F2"
+				"5B16C4D1A2356E3D"
+			]
+			description: [
+				"This big boy does fluid solidification in steam, allowing you to create firebricks."
+				""
+				"it may also unlock some nice recipes later. Unsure"
+				""
+				""
+				"Note ; WIP desc"
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:lp_steam_liquid_boiler"
+			id: "7D085A647AEC2485"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Molding better bricks"
+			tasks: [{
+				id: "0D87DCE88DE5D667"
+				item: "gtceu:steam_caster"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"25C95934D627D7D4"
+				"02167B8ADA288FEA"
+				"7D085A647AEC2485"
+			]
+			description: [
+				"Now combine all your concrete and firebricks together in a large caster to get your firebricks"
+				""
+				"TODO : WIP DESC"
+			]
+			id: "756D0820A4A089A9"
+			rewards: [{
+				count: 4
+				id: "620EDEEFF6127E60"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "You'll need 33"
+			tasks: [{
+				id: "17768BF1FD16E92B"
+				item: "gtceu:firebricks"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"756D0820A4A089A9"
+				"7D000383D0754464"
+			]
+			description: [
+				"The &ePrimitive Blast Furnace&r allows you to smelt &asteel&r, albeit slowly."
+				""
+				"You can share walls of PBFs with other PBFs, allowing you to create multiple PBFS without needing as many bricks. This might be a decent option for you prior to the &eIndustrial Primitive Blast Furnace&r, which is most likely your next goal."
+				""
+				"&7This took you a lot of effort to get here; a pile of large shards and a trophy are for your struggles thus far.&r"
+			]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "7A0DD41E3C9BA413"
+			rewards: [
+				{
+					id: "32D0A55C422D3264"
+					item: {
+						Count: 1
+						id: "trofers:medium_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "frontiers:multi/pbf"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7CFFD717A3D72D26"
+					item: "cosmiccore:large_shard_of_perpetuity"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "This took you a while"
+			tasks: [
+				{
+					id: "609DB1BE31CC3BF6"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "6C7A55FF5F34A1E5"
+					item: { Count: 32, id: "gtceu:firebricks" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A0DD41E3C9BA413"]
+			description: [
+				"&aSteel&r is the gateway material to the &cNether&r; you'll need a decent amount to reach &6&lLV&r."
+				""
+				"Wait, what, to reach lv?"
+				""
+				"Yeah, &asteel&r is no longer the LV Casing/Hull Material. Keep progressing forward to find out what."
+				"Or look at EMI; I'm not your father/mother/parental figure."
+			]
+			id: "0FF5358645CE9BD5"
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "A Stronger Metal"
+			tasks: [{
+				id: "6F3C261FF2B314CA"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["30C980B828A48306"]
+			description: [
+				"Why did i put this here?"
+				""
+				"Todo; Remember"
+			]
+			hide_dependency_lines: true
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "7D000383D0754464"
+			shape: "gear"
+			subtitle: "What"
+			tasks: [{
+				id: "767BB75E9BBEEB42"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0FF5358645CE9BD5"]
+			id: "42D5F780B01975BA"
+			tasks: [{
+				id: "1DB1E5CC2F1C8737"
+				item: "gtceu:steel_machine_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0FF5358645CE9BD5"]
+			id: "0BE6353107702382"
+			tasks: [{
+				id: "1D8B3DD440A8D238"
+				item: "gtceu:steel_brick_casing"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0FF5358645CE9BD5"]
+			description: ["&aSteel Fireboxes&r are used in several multiblocks ahead, it's heavily recommended you make at least 6 of these and upgrade your steel production to an &eIndustrial Primitive Blast Furnace&r."]
+			id: "29573D80E8D0BB9C"
+			subtitle: "Stronger Heating"
+			tasks: [{
+				id: "41C3BAF24750BB22"
+				item: "gtceu:steel_firebox_casing"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["624885E31FBA82F2"]
+			description: ["Allows you to grind down materials into their basic components, namely &adusts&r."]
+			id: "7AAEE0AD98A72BE7"
+			rewards: [{
+				count: 4
+				id: "684510B5F6F337FF"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Mortar in a block"
+			tasks: [{
+				id: "3D17FD019B51BF4C"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5B16C4D1A2356E3D"]
+			id: "1554EF31754EFE83"
+			tasks: [{
+				id: "0B9348F47BA9203F"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2640C7E596EFF4DD"]
+			description: [
+				"With your new &eCompressor&r, assemble the &airon blocks&r needed for an &aAnvil&r. Those blocks will be used to craft the &bLow-Pressure Forge Hammer&r in the next quest."
+				""
+				"You'll need to make another if you want one for renaming/enchanting."
+				""
+				"Quick tip: Anvils can be &nenchanted with unbreaking&r and a few other enchantments; check them out!"
+			]
+			id: "3198297CB1D0E08C"
+			rewards: [{
+				count: 4
+				id: "75479054539A38E6"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "You're gonna need it."
+			tasks: [{
+				id: "2C56F09A4AFE57AC"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["624885E31FBA82F2"]
+			description: [
+				"The &eCompressor&r allows you to condense materials into &ablocks&r. Check out EMI for more information."
+				""
+				"Most notably, you'll need this to make &airon blocks&r, as you can't use an Alloy Smelter."
+			]
+			id: "2640C7E596EFF4DD"
+			rewards: [{
+				count: 4
+				id: "110ABBA6B1D5445C"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Squishing things at Steam"
+			tasks: [{
+				id: "6D994977169C2455"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3198297CB1D0E08C"]
+			description: [
+				"The &bSteam Forge Hammer&r allows you to produce &aplates&r efficiently for your construction needs."
+				""
+				"It can also quickly process crushed ore into dust, which is useful when combined with a &emacerator&r."
+			]
+			id: "5F4991D77370304B"
+			rewards: [{
+				count: 8
+				id: "555665003D208B95"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "1.5:1 Plates"
+			tasks: [{
+				id: "3D52A735C7B840DE"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"0BE6353107702382"
+				"5F4991D77370304B"
+				"6E62B6EA78C96D90"
+			]
+			description: ["While 1.5:1 with a forgehammer is great, steel and some ULV parts allow for the creation of a HP Steam Bender. Which should help you reduce steel costs for the rest of Steam-Age and getting into LV!"]
+			id: "484F96C8892EB428"
+			subtitle: "1:1 Plates in Steam"
+			tasks: [{
+				id: "0E1C8898BECFF0A3"
+				item: "gtceu:hp_steam_bender"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"29573D80E8D0BB9C"
+				"72CF3BE7238F35ED"
+				"484F96C8892EB428"
+				"6E62B6EA78C96D90"
+			]
+			description: [
+				"WIP DESC - Fuck if i know what this should say - close enough idk i wrote this at 6am."
+				""
+				"Breaking into hell is not a simple task."
+				""
+				"Using this hulking assembler multi, you can construct fragments to protect your soul."
+				"Having this seal welded to your soul allows you to return from hell without any loss of sanity or body."
+				""
+				"&7Your mortality was already a suggestion, and now so is being contained.&r"
+				"&7How can you disobey the laws that this entire universe is bound to?&r"
+				""
+				"&cThe world shudders in pain&r. A &6Cluster of Perpetuity&r has formed."
+			]
+			icon: "gtceu:high_pressure_assembler"
+			id: "5AB046A0E1BFBE1E"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "To build a vessel"
+			tasks: [{
+				id: "7A49BD055E124C2B"
+				item: "gtceu:high_pressure_assembler"
+				type: "item"
+			}]
+			title: "High Pressure Assembler"
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"6EEF7CE3D1BADDD4"
+				"4A97D6CCF01BDE62"
+				"09C2E893A1DA3F19"
+				"7033AD07689880E5"
+				"1508AD860450CD0A"
+			]
+			description: [
+				"WARNING : DON't CONSUME THE SEAL YET IF YOU ARE PLAYING MULTIPLAYER"
+				""
+				""
+				"In the future. A multi known as the \"Gateway Triangulator\" will be what allows you to open portals to the nether, aether, and undergarden"
+				""
+				""
+				"For now, normal nether portals will function as intended, feel free to enter the nether that way."
+			]
+			id: "370680B11E59D49C"
+			shape: "octagon"
+			size: 1.25d
+			subtitle: "A work in progress"
+			tasks: [{
+				id: "3FF85A727093876C"
+				item: "nether_remastered:seal_of_the_underworld_item"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0FF5358645CE9BD5"]
+			hide_dependency_lines: true
+			id: "070ECF040C4872D7"
+			rewards: [{
+				count: 8
+				id: "521499D3E904CBE2"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "You already got the reward"
+			tasks: [{
+				id: "1F13E0AC868FFEE1"
+				item: "gtceu:steel_brick_casing"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"070ECF040C4872D7"
+				"2640C7E596EFF4DD"
+				"6E62B6EA78C96D90"
+			]
+			description: [
+				"The fatigue of handcrafting wires has gotten to you, make the HP Wiremill to make wires easier."
+				"You will also need a controll circuit, which can be made from a vacuum tube."
+			]
+			id: "72CF3BE7238F35ED"
+			rewards: [{
+				count: 16
+				id: "48171D418BC7FED9"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "1:2 Wires in Steam"
+			tasks: [{
+				id: "4F42DEDDEAF3FEFE"
+				item: "gtceu:hp_steam_wiremill"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.0d
+		}
+		{
+			description: [
+				"THIS QB PAGE IS A WIP, NO CHANGES/ROUTING/REWARDS ARE REAL YET!"
+				""
+				"WILL NOT BE REAL UNTIL 0.6.0"
+				""
+				""
+				""
+				"TODO "
+				""
+				"Coke Oven Recipe Change"
+				"Fix up some quest descs"
+				""
+				""
+				"yada "
+				"yada"
+				""
+				"questbook is a fuck"
+			]
+			id: "1884A3B9EE806B02"
+			shape: "pentagon"
+			size: 3.0d
+			subtitle: "WORK IN PROGRESS! ! !"
+			tasks: [{
+				id: "0268DCD96C5ACE99"
+				type: "custom"
+			}]
+			title: "HEY! YOU!"
+			x: -3.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["61E763C4211D88C8"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Unlike the electric machine counterparts, Steam Benders and Wiremill require you to craft a programmable circuit physically."
+				""
+				"Thankfully, there's a shortcut recipe that doesn't require LV circuits"
+				""
+				""
+				"You'll need at least 2."
+			]
+			hide_dependent_lines: true
+			id: "6E62B6EA78C96D90"
+			shape: "hexagon"
+			subtitle: "Imprinting Steam Machines"
+			tasks: [{
+				count: 2L
+				id: "7DE82D1B1660B83A"
+				item: {
+					Count: 1
+					id: "gtceu:programmed_circuit"
+					tag: {
+						Configuration: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["370680B11E59D49C"]
+			description: [
+				"TODO ; Custom Portal Structure"
+				"No idea when I'll get that done so just use a normal portal for now"
+				""
+				"The Nether is full of biology and minerals not found in the overworld. Most notably, you are on the hunt for."
+				""
+				"&bPropellpearls&r - The Waxy and Ethanol Rich Pearls of the Propelplant. Great for Ethanol or Cinderwax."
+				""
+				"&bSoul Sprouts&r - For something that thrives in the nether, these plants have a cooling property, akin to Mint."
+				""
+				"&bNether and Certus Quartz&r - Both crystals are useful for redstone devices and more complex sensors."
+				""
+				"&bSulfur&r - Used in the Vulcanizing of Rubber, as well as a common chemistry ingredient."
+				""
+				"&bZinc&r If you haven't looted a compass, you can make one now! It's also needed for Brass!"
+			]
+			id: "00B281664EDD41AA"
+			min_width: 400
+			rewards: [{
+				count: 16
+				id: "70EEB9F245C3CADF"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Welcome to Hell? The Core of the Planet!?"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "4379C9F841081281"
+				type: "dimension"
+			}]
+			title: "To the Nether!"
+			x: -9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["30C980B828A48306"]
+			description: [
+				"You can't make ULV input hatches currently however, you can make input hatches out of bronze which will work for your large mixer"
+				""
+				"todo ; grammar check temp desc"
+			]
+			hide_dependency_lines: true
+			id: "2A2CF5863AD39845"
+			shape: "gear"
+			tasks: [{
+				id: "346027CE05B131B2"
+				type: "checkmark"
+			}]
+			title: "Steam Fluid Hatches"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["29573D80E8D0BB9C"]
+			description: [
+				"The &eIndustrial Primitive Blast Furnace&r is a direct upgrade from your previous &ePrimitive Blast Furnace&r; it is &b25% faster&r and processes &b8 recipes at once&r. "
+				""
+				"However, it now consumes &acreosote&r, but that's easily sourced from your &eCoke ovens&r."
+			]
+			id: "0A51E3DC8A715171"
+			rewards: [{
+				count: 128
+				id: "1FD1F98DA7EEAD64"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Turn up the heat!"
+			tasks: [{
+				id: "534C830C7C617697"
+				item: "gtceu:industrial_primitive_blast_furnace"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["00B281664EDD41AA"]
+			icon: "gtceu:sulfur_dust"
+			id: "7D756E7B36CC20BF"
+			rewards: [{
+				count: 8
+				id: "57714F2884B8B645"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "45750C4D34B6CFAD"
+					item: "gtceu:zinc_dust"
+					type: "item"
+				}
+				{
+					id: "03DF439E4C424B6E"
+					item: "gtceu:sulfur_dust"
+					type: "item"
+				}
+			]
+			title: "Sulfur and Zinc"
+			x: -9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5AB046A0E1BFBE1E"]
+			id: "38B4C9DF175F1335"
+			tasks: [{
+				id: "05739ECAC76FF7B3"
+				item: "occultism:candle_white"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7D756E7B36CC20BF"
+				"60F828DDE76E191B"
+			]
+			id: "5011698F44048C68"
+			subtitle: "Sulfur Chalk????"
+			tasks: [{
+				id: "1C6257CC1657BAA8"
+				item: "occultism:chalk_gold_impure"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"366908EEF6ED8CD8"
+				"1A9A8E0C5ED3412B"
+			]
+			description: [
+				"Some &aSoulresin&r, &aCinderwax&r, and &aEnder pearls&r make a beautiful purple hue imbued by nether flora. This will most likely aid in your research into the basics of the Occult, right?"
+				""
+				"After baking the impure chalk, toss it into a spirit fire to purge any remaining impurities."
+			]
+			id: "65776EEC99D33056"
+			subtitle: "What?"
+			tasks: [{
+				id: "1AFDB997DC049AD5"
+				item: "occultism:chalk_purple_impure"
+				type: "item"
+			}]
+			x: -15.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["388B1504B658C4AA"]
+			description: [
+				"To make &aSpirit Attuned Gems&r, you'll need &eSpiritfire&r. One of the plants of the overworld is keen on extracting the essence of undead monsters that exist during the night."
+				""
+				"Light a fire on the ground with this item dropped &lbefore&r you light your flame, and your fire will glow purple."
+			]
+			icon: "occultism:spirit_attuned_gem"
+			id: "3D69DAAEDF09BFAE"
+			subtitle: "Funky Flames"
+			tasks: [
+				{
+					id: "5984924888772D0B"
+					item: "occultism:spirit_attuned_gem"
+					type: "item"
+				}
+				{
+					id: "0AB743EBFA6E1B9F"
+					item: "occultism:datura"
+					type: "item"
+				}
+			]
+			x: -14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["370680B11E59D49C"]
+			description: [
+				"The Nether is quite hot, make sure to insulate your armor."
+				""
+				"If you can afford it the Soulspring Lantern allows you to withstand the nethers heat."
+				"You can refill it with soul sprouts."
+				""
+				"You'll also struggle to breathe, maybe it's time to consider a Reinforced Respirator..?"
+				"You can also use a Create Diving Helmet and Backtank."
+				""
+				"Due to limitations with the Create Mod, insulation applied to backtanks naturally vanishes."
+				"Some base level insulation has been added to offset this issue."
+				"Don't add your own, it'll vanish when you place your backtank down to recharge it."
+				"You have been warned."
+			]
+			hide_dependency_lines: true
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "078A87C631741398"
+			shape: "gear"
+			subtitle: "Nether Advice"
+			tasks: [{
+				id: "7CB5CD2AE7DCA5CB"
+				title: "I know what I'm doing!"
+				type: "checkmark"
+			}]
+			title: "Nether Prep"
+			x: -9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5AB046A0E1BFBE1E"]
+			description: [
+				"Allows you to inscribe the ground with rune markings."
+				""
+				"You feel there's more to this."
+				""
+				"Memories of Occult teachings flood your mind, keep pushing forward."
+				""
+				""
+				"Welcome to Occultism, rituals and spirits will help you get one step farther and move into LV."
+				"This will lead to advancements in rune writing."
+			]
+			id: "188A3836799C51A4"
+			subtitle: "Writing on the wall, but mostly the floor"
+			tasks: [{
+				id: "6C07F43458D3311A"
+				item: {
+					Count: 1
+					id: "occultism:chalk_white"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["188A3836799C51A4"]
+			description: [
+				"After you've cobbled together all 4 unique seal fragments, a nether crystal, some bowls, chalk, "
+				"and other odds and ends. you can start this ritual."
+				""
+				"Each item the ritual requests needs to be placed on a bowl."
+				"Once all the ritual items are placed down, right click the golden bowl to start the ritual."
+				""
+				"You can view the ritual layout and get an in world structure preview from the \"Pentacle\" Tab in the \"Book of Spirits\""
+			]
+			icon: "occultism:ritual_dummy/custom_ritual"
+			id: "1508AD860450CD0A"
+			rewards: [{
+				id: "053473681942DEB3"
+				item: {
+					Count: 1
+					id: "occultism:dictionary_of_spirits"
+					tag: {
+						"modonomicon:book_id": "occultism:dictionary_of_spirits"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "To call upon higher powers"
+			tasks: [
+				{
+					id: "577B214F3E97729E"
+					item: "occultism:golden_sacrificial_bowl"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7B1EB75688AB3993"
+					item: { Count: 4, id: "occultism:sacrificial_bowl" }
+					type: "item"
+				}
+				{
+					id: "47C71C74F3BCADE3"
+					item: {
+						Count: 1
+						id: "occultism:chalk_white"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ritual of Gatecalling"
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["370680B11E59D49C"]
+			hide_dependency_lines: true
+			id: "40715CD8CF1577DB"
+			shape: "gear"
+			tasks: [{
+				id: "73B73D818DB0B4B6"
+				item: "kubejs:seal_shards"
+				type: "item"
+			}]
+			title: "Playing Multiplayer?"
+			x: -9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"39E43B6251DFC868"
+				"1E00A19BDAEB24F7"
+				"3D8F2FBB3DB24F7E"
+			]
+			id: "1D6235CDF7886C1C"
+			tasks: [{
+				id: "2064EAF32F3DED7F"
+				item: "gtceu:runed_steel_ingot"
+				type: "item"
+			}]
+			x: -17.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["00B281664EDD41AA"]
+			id: "36CCE4D31C32E6D7"
+			tasks: [{
+				id: "1A1459236B3ABFB7"
+				item: "nethersdelight:propelpearl"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["00B281664EDD41AA"]
+			hide_dependency_lines: true
+			id: "36515C42E0E4AFF6"
+			tasks: [{
+				id: "718FC0A1F709A3F6"
+				item: "cold_sweat:soul_sprout"
+				type: "item"
+			}]
+			x: -15.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"36CCE4D31C32E6D7"
+				"7001E68D0992C6E3"
+			]
+			description: [
+				"Mashing &bpropelpearls&r can extract &aCinderwax&r in a &esqueezer&r."
+				""
+				"The trace amounts of ethanol make this fluid a bit unstable to use directly, so you'll need to &esolidify&r it first."
+				""
+				"Note: &aCinderwax sheets&r can be used in some recipes in place of &bbeeswax&r"
+			]
+			id: "366908EEF6ED8CD8"
+			min_width: 250
+			subtitle: "A new Wax"
+			tasks: [{
+				id: "63C3EBAF96FDD5EA"
+				item: "gtceu:cinderwax_ingot"
+				type: "item"
+			}]
+			title: "Cinderwax"
+			x: -14.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"36515C42E0E4AFF6"
+				"7001E68D0992C6E3"
+			]
+			id: "1A9A8E0C5ED3412B"
+			subtitle: "An obscure Resin"
+			tasks: [{
+				id: "1C0D638EAE26B5E9"
+				item: "gtceu:soulresin_ingot"
+				type: "item"
+			}]
+			title: "Soulresin"
+			x: -15.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["00B281664EDD41AA"]
+			id: "388B1504B658C4AA"
+			tasks: [{
+				id: "405D5872F0097D13"
+				item: "gtceu:certus_quartz_gem"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0EED3FDCA680F992"]
+			description: [
+				"While you can't refine it into &bNetherite&r quite yet, you can use the dust as a &estable binder&r for the sulfur you decided to jam into this chalk."
+				""
+				"Your unrefined golden chalk will need a &5special fire&r to not literally explode."
+				"&oWhy did you think this was a good idea...????????&r"
+			]
+			id: "60F828DDE76E191B"
+			rewards: [{
+				count: 4
+				id: "0724F41A375FC594"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "You'll need the dust form"
+			tasks: [{
+				id: "0DC7CC9CBCDE9139"
+				item: "gtceu:ancient_debris_dust"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00B281664EDD41AA"]
+			description: [
+				"Netherite Ore, something only piglins were capable of exploiting before the war of the Netherworld. However since then, it seems the only thing that reminds of it is scrap."
+				""
+				"This doesn't spawn in normal GT veins, it's sparsely tossed all over the nether, you only need a few pieces."
+				""
+				"Albeit annoying to gather, you can see it on your prospeector."
+			]
+			id: "0EED3FDCA680F992"
+			rewards: [{
+				count: 8
+				id: "23F39F466A1D76D0"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "What is this?"
+			tasks: [{
+				id: "347C76852F823253"
+				item: "minecraft:ancient_debris"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["388B1504B658C4AA"]
+			description: [
+				"&9Toms Simple Storage Networks&r: You can view all your containers from one inventory screen."
+				"Useful for all that microcrafting you're doing."
+				""
+				"The bare minimum setup requires just the &eStorage Terminal&r, but if you craft an &6Inventory Connector&r, it will read the contents of all adjacent chests. This allows you to link an entire chest wall to your Storage Terminal."
+				""
+				""
+				"You can get more creative with &eInventory Cables&r and other blocks that &bstore items&r. Feel free to experiment with those, most notably the &aConnectors&r From &6Sophisticated Storage&r and the &aDimensional Storage Core&r from &6Occultism&r."
+			]
+			icon: "toms_storage:ts.storage_terminal"
+			id: "71197839C7869165"
+			min_width: 285
+			optional: true
+			rewards: [{
+				count: 4
+				id: "545B2142A0C041FD"
+				item: "cosmiccore:large_shard_of_perpetuity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "Some Central Storage? Yes Please!"
+			tasks: [
+				{
+					id: "7D0AC14E367A66E2"
+					item: "toms_storage:ts.inventory_connector"
+					type: "item"
+				}
+				{
+					id: "788E64DE390CED25"
+					item: "toms_storage:ts.storage_terminal"
+					type: "item"
+				}
+			]
+			x: -12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"71197839C7869165"
+				"4A034254997FD7D5"
+			]
+			id: "39DBE43A587C029E"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "1FB3D36445106666"
+				item: "toms_storage:ts.crafting_terminal"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5011698F44048C68"]
+			id: "4A034254997FD7D5"
+			tasks: [{
+				id: "0C9E14A3482F7CC7"
+				item: {
+					Count: 1
+					id: "occultism:chalk_gold"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["38986546A4EBEFBD"]
+			id: "752ACBDD88BEEF85"
+			tasks: [{
+				id: "13B005CCB354983F"
+				item: "experienceobelisk:whisperglass"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["00B281664EDD41AA"]
+			id: "38986546A4EBEFBD"
+			tasks: [{
+				id: "44D9ED52E8855A5E"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"0A51E3DC8A715171"
+				"7D756E7B36CC20BF"
+				"4114B695157144F6"
+			]
+			id: "3D646A2F2F08B2D5"
+			tasks: [{
+				id: "6BBEF8D2C06AF80C"
+				item: "gtceu:rubber_ingot"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"3D906FC110FE69D7"
+				"2D14D28D2CD892DD"
+			]
+			description: [
+				"&aIesnium Ore&r has the unique property of &nremaining unseen&r to the naked eye, which makes your job of finding it more troublesome."
+				""
+				"Equip your &eotherworld goggles&r and set out to find some in the &cNether&r."
+				"This material requires an &eInfused Pickaxe&r to mine; otherwise, you'll lose the ore!"
+				""
+				"Be careful, as your infused pick only has &660 Durability&r; however, you can also enchant it."
+				"Some people who are crazy enough to have maxed out enchanting setups already are happy."
+				""
+				"You can also mine this stuff later with an &eIesnium pickaxe&r; however, by then, you'll be able to automatically mine it with the '&eWeak Dimensional Mineshaft&r'."
+			]
+			id: "71A6EE771C80A7DE"
+			min_width: 350
+			rewards: [{
+				count: 32
+				id: "5F5B2CFE7C015902"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Shy Ancient Debris"
+			tasks: [{
+				id: "406B0A2126381306"
+				item: "occultism:iesnium_ore"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["71A6EE771C80A7DE"]
+			id: "1206EA8BA057A00F"
+			tasks: [{
+				id: "453CBCE9C69906F2"
+				item: {
+					Count: 1
+					id: "occultism:iesnium_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1206EA8BA057A00F"
+				"0584B3650BE26B9C"
+			]
+			id: "6CA050964E1A8658"
+			tasks: [{
+				id: "70689F9D4C0A5173"
+				item: {
+					Count: 1
+					id: "occultism:miner_foliot_unspecialized"
+					tag: {
+						Damage: 0
+						maxMiningTime: 400
+						rollsPerOperation: 1
+						spiritName: "Mjolthorryne"
+					}
+				}
+				type: "item"
+			}]
+			x: -16.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1206EA8BA057A00F"]
+			id: "0584B3650BE26B9C"
+			tasks: [{
+				id: "474D41602B103AD3"
+				item: "occultism:dimensional_mineshaft"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6CA050964E1A8658"]
+			id: "39E43B6251DFC868"
+			tasks: [{
+				id: "0EDABABED02EC20F"
+				item: "cosmiccore:rune_slate_tylomir"
+				type: "item"
+			}]
+			x: -18.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6CA050964E1A8658"]
+			id: "1E00A19BDAEB24F7"
+			tasks: [{
+				id: "52F6FDD2796B3EF6"
+				item: "cosmiccore:rune_slate_zelothar"
+				type: "item"
+			}]
+			x: -17.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6CA050964E1A8658"]
+			id: "29432A122031CB3E"
+			tasks: [{
+				id: "24BAB7AE0F6E4843"
+				item: "cosmiccore:rune_slate_khoruth"
+				type: "item"
+			}]
+			x: -16.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6CA050964E1A8658"]
+			id: "459F7333F240D028"
+			tasks: [{
+				id: "661B9BE8728E72C9"
+				item: "cosmiccore:rune_slate_arklys"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"459F7333F240D028"
+				"29432A122031CB3E"
+				"739AF35CCA609F56"
+			]
+			id: "460CD4B7BA1C7DB5"
+			tasks: [{
+				id: "58F164559E6B4FEC"
+				item: "occultism:afrit_essence"
+				type: "item"
+			}]
+			x: -16.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["460CD4B7BA1C7DB5"]
+			id: "3D8F2FBB3DB24F7E"
+			tasks: [{
+				id: "0AE4891C33955F53"
+				item: {
+					Count: 1
+					id: "occultism:chalk_red"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -16.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"65776EEC99D33056"
+				"3D69DAAEDF09BFAE"
+				"4A034254997FD7D5"
+			]
+			id: "3D906FC110FE69D7"
+			tasks: [{
+				id: "6CBE0B19DAA91825"
+				item: {
+					Count: 1
+					id: "occultism:infused_pickaxe"
+					tag: {
+						Damage: 0
+						spiritName: "Xalmas"
+					}
+				}
+				type: "item"
+			}]
+			x: -15.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"65776EEC99D33056"
+				"549B34408EBE9582"
+			]
+			id: "2D14D28D2CD892DD"
+			tasks: [{
+				id: "559F3971827CEBCE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "occultism:otherworld_goggles"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -16.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"366908EEF6ED8CD8"
+				"1A9A8E0C5ED3412B"
+			]
+			description: [
+				"Just Another Purple Chalk quest to keep the QB 'clean'"
+				""
+				"if you can call it that lol"
+			]
+			hide_dependency_lines: true
+			id: "739AF35CCA609F56"
+			invisible: true
+			subtitle: "Oh Hi!"
+			tasks: [{
+				id: "765DF3ECCD557029"
+				item: {
+					Count: 1
+					id: "occultism:chalk_purple"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -14.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5B16C4D1A2356E3D"]
+			id: "226A43815ECB2818"
+			tasks: [{
+				id: "2DB4433301C27E71"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["226A43815ECB2818"]
+			icon: "ulvcovm:ulv_electric_motor"
+			id: "43F169D6C6B48A5F"
+			tasks: [
+				{
+					id: "6C35AF1755B49786"
+					item: "cosmiccore:hardened_resin"
+					type: "item"
+				}
+				{
+					id: "15E8AE5F87080BA4"
+					item: "gtceu:lead_single_cable"
+					type: "item"
+				}
+				{
+					id: "03552BAA1EE6E1C5"
+					item: "ulvcovm:ulv_electric_motor"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2640C7E596EFF4DD"]
+			hide_dependency_lines: true
+			id: "4114B695157144F6"
+			tasks: [{
+				id: "155502833D6EED43"
+				item: "cosmiccore:hardened_resin"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"379A4BCB53505229"
+				"6ABAAE95062134B2"
+			]
+			id: "468AFCF2423C2EB4"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "77A216D429E99A0A"
+				item: "gtceu:resin_circuit_board"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"42D5F780B01975BA"
+				"00B281664EDD41AA"
+			]
+			description: [
+				"The Squeezer allows you to extract &aMenril Resin&r, &aSoul Resin&r, and &aCinder Wax&r from various &bplant products&r."
+				""
+				"Pro tip: You can already make the &eMechanical Squeezer&r. The mechanical Squeezer's energy consumption was &dremoved entirely&r. Ignore the RF value displayed in recipes, as I can't get rid of it—or, more appropriately, I haven't found a way to."
+				""
+				""
+				"I would also allow these recipes using Create, but it refuses to let me output fluids from pressing recipe. Oh well."
+			]
+			hide_dependency_lines: true
+			icon: "integrateddynamics:mechanical_squeezer"
+			id: "7001E68D0992C6E3"
+			min_width: 300
+			subtitle: "Squashing for Fluids"
+			tasks: [{
+				id: "558F11F06B9F0D7F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(integrateddynamics:squeezer)item(integrateddynamics:mechanical_squeezer))"
+					}
+				}
+				title: "Any Squeezer"
+				type: "item"
+			}]
+			title: "Press for Success"
+			x: -14.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["752ACBDD88BEEF85"]
+			id: "549B34408EBE9582"
+			tasks: [{
+				id: "6E516057CD291DE7"
+				item: "occultism:lenses"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3D646A2F2F08B2D5"]
+			id: "33480868A44F2743"
+			tasks: [{
+				id: "407927980EF10D66"
+				item: "gtceu:red_alloy_single_cable"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"637A7706B52D2689"
+				"3838CDDEE8FD44E3"
+				"33480868A44F2743"
+				"60758D47DBE14AE7"
+			]
+			id: "66BB2CDC4D3FB464"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "393ABB0279292A75"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"1D6235CDF7886C1C"
+				"272C72FCE24CC4E4"
+			]
+			id: "124AD3DE3B043A7A"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "19727BB48A812D6C"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7A0DD41E3C9BA413"]
+			description: [
+				"This Quest is a Duplicate Quest - Reward has been Ommitted."
+				""
+				""
+				"&aSteel&r is the gateway material to the &cNether&r; you'll need a decent amount to reach &6&lLV&r."
+				""
+				"Wait, what, to reach lv?"
+				""
+				"Yeah, &asteel&r is no longer the LV Casing/Hull Material. Keep progressing forward to find out what."
+				"Or look at EMI; I'm not your father/mother/parental figure."
+				""
+				"&6Now you need to put your steel and runed steel to work to make your first LV Casings and Hulls&r"
+			]
+			hide_dependency_lines: true
+			id: "272C72FCE24CC4E4"
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "A Stronger Metal"
+			tasks: [{
+				id: "54015F656A4B9C1A"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"124AD3DE3B043A7A"
+				"66BB2CDC4D3FB464"
+			]
+			description: [
+				"You've Finally put together all the parts needed to advance to LV."
+				""
+				"I wish you luck."
+				""
+				""
+				"TODO ; Story Entry"
+			]
+			icon: "createdeco:decal_up"
+			id: "14988E390F2CD204"
+			rewards: [{
+				id: "4C4E680A0C9866F9"
+				item: "trofers:large_pillar"
+				type: "item"
+			}]
+			shape: "pentagon"
+			size: 2.5d
+			subtitle: "Onward and Upward!"
+			tasks: [{
+				id: "10219158B65B959D"
+				type: "checkmark"
+			}]
+			title: "Ready for LV?"
+			x: -13.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0FF5358645CE9BD5"]
+			id: "3838CDDEE8FD44E3"
+			tasks: [{
+				id: "4660EAB196177DE5"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["379A4BCB53505229"]
+			id: "637A7706B52D2689"
+			tasks: [{
+				id: "45FD228F597ACBEC"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0E5E3392C13701E5"]
+			id: "379A4BCB53505229"
+			tasks: [{
+				id: "64464D2C2B864A4E"
+				item: "gtceu:cinderwax_ingot"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["00B281664EDD41AA"]
+			hide_dependency_lines: true
+			id: "0E5E3392C13701E5"
+			tasks: [{
+				id: "2AFB1F8E80708E5D"
+				item: "nethersdelight:propelpearl"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["468AFCF2423C2EB4"]
+			id: "60758D47DBE14AE7"
+			tasks: [{
+				id: "48CEEFCAEB2993E4"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["25D643EB580DE53E"]
+			hide_dependency_lines: true
+			id: "6ABAAE95062134B2"
+			tasks: [{
+				id: "24DE68D607EA77BC"
+				item: "gtceu:treated_wood_plate"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"739AF35CCA609F56"
+				"4A034254997FD7D5"
+			]
+			description: [
+				"This Block can store a huge amount of 'stuff'. What stuff? Your stuff!"
+				""
+				"The number displayed in the core blocks UI is the amount of 'stacks' the multi can store."
+				""
+				"Each Stack is 512 Items. So 512 Cobblestone would take up 1/64 of your storage."
+				""
+				"Due to the Extremely Strong nature of this structure. Some values have been adjusted to make it more of an earlygame storage system"
+				""
+				"Autocrafting Functionality and Wormhole Functionality have been completely disabled."
+				""
+				"The Storage Capacity of the Structure + It's Upgrade Augments has also been modified"
+				""
+				"Base Stack Storage 128 -> 64"
+				"Storage per \"Stack\" 1024 -> 512"
+				""
+				"T1 Updgrade : 256 -> 64"
+				""
+				"T2 Stabilizer : 512 -> 128"
+				""
+				"T3 Stabilizer : 1024 -> 256"
+				""
+				"T4 Stabilizer : 2048 -> 512 "
+				""
+				"This however, is still quite strong, so the cost of the core and stabilizers will be adapted to be costly."
+			]
+			id: "2F1F0288053F5229"
+			min_width: 400
+			rewards: [{
+				id: "05CEBD7CD082B9F0"
+				item: "cosmiccore:cluster_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Nerfed yet still good."
+			tasks: [{
+				id: "2CB0D82BBE9C3C35"
+				item: "occultism:storage_controller"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"2D14D28D2CD892DD"
+				"3D906FC110FE69D7"
+			]
+			dependency_requirement: "all_started"
+			hide_dependency_lines: true
+			id: "68AAF390B75DAD61"
+			optional: true
+			shape: "gear"
+			subtitle: "Need help?"
+			tasks: [{
+				id: "1FE203ABFE1FC197"
+				item: {
+					Count: 1
+					id: "occultism:divination_rod"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -17.5d
+			y: -1.0d
+		}
+	]
+	title: "Rising Pressure - [Steam]"
+}

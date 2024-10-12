@@ -920,6 +920,136 @@
 			x: 7.5d
 			y: -8.5d
 		}
+		{
+			id: "7D482F4462B11E87"
+			tasks: [{
+				id: "5C253088DECB3A7F"
+				item: "cosmiccore:omnia_circuit_lv"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			id: "1A4D8A6D04096B64"
+			tasks: [{
+				id: "6C03C73E77C3E0BB"
+				item: "cosmiccore:omnia_circuit_mv"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			id: "1DC9BF1CFD485DC5"
+			tasks: [{
+				id: "74701DF810CFCD09"
+				item: "cosmiccore:omnia_circuit_hv"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			id: "091C55925A25D5EF"
+			tasks: [{
+				id: "0859CAC9F4A910BF"
+				item: "cosmiccore:omnia_circuit_ev"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			id: "2F25E69BA045FD20"
+			tasks: [{
+				id: "4CE521628690B823"
+				item: "cosmiccore:omnia_circuit_iv"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			id: "62EC6EA15A779EEB"
+			tasks: [{
+				id: "32A6D956144A1D28"
+				item: "cosmiccore:omnia_circuit_luv"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			id: "702C9E8921AB206D"
+			tasks: [{
+				id: "1C9889B4FAE9C126"
+				item: "cosmiccore:omnia_circuit_zpm"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			id: "780911B2FB08FF97"
+			tasks: [{
+				id: "592382F5BB859777"
+				item: "cosmiccore:omnia_circuit_uv"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			id: "38577EE265E5F23D"
+			tasks: [{
+				id: "15E5B2C84DD41AE3"
+				item: "cosmiccore:omnia_circuit_uhv"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			id: "35C86A60FAB87DED"
+			tasks: [{
+				id: "27E2496FCA44E1E1"
+				item: "cosmiccore:omnia_circuit_uev"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			id: "6CBA545CAB9F8635"
+			tasks: [{
+				id: "3E9D095BA14F2B83"
+				item: "cosmiccore:omnia_circuit_uiv"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			id: "521FA1D9C87A9CF9"
+			tasks: [{
+				id: "4851D5DFDDCEF834"
+				item: "cosmiccore:omnia_circuit_uxv"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.5d
+		}
+		{
+			id: "159C69A7AAA8F83E"
+			tasks: [{
+				id: "154123EE7924C2D8"
+				item: "cosmiccore:omnia_circuit_opv"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 6.5d
+		}
 	]
 	title: "General Progression"
 }

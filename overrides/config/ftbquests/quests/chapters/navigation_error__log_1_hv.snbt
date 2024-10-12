@@ -1872,6 +1872,7 @@
 				{
 					id: "6FF1813D9F3899E6"
 					item: "gtceu:uranium_hexafluoride_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{

@@ -1,0 +1,8028 @@
+{
+  "customizedBlocks": [
+    {
+      "identifier": "minecraft:spruce_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lime_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:calcite",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:ochre_froglight",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:comparator",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:void_air",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_door",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_cut_copper_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:orange_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:barrel",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_pressure_plate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_fence",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_nether_brick_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:tnt",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gray_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:rail",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_sapling",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:redstone_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:yellow_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:ender_chest",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_door",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:magenta_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cracked_deepslate_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brain_coral_wall_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cyan_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brain_coral_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:nether_brick_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_andesite_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_leaves",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_horn_coral_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:seagrass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pitcher_plant",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:attached_melon_stem",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:end_rod",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:soul_sand",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_bubble_coral_wall_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:orange_tulip",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purple_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_wall_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oxidized_copper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cyan_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:peony",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:frosted_ice",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:iron_door",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:horn_coral_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_emerald_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:small_amethyst_bud",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_sapling",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cyan_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_brown_mushroom",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cauldron",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_cactus",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:black_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_planks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:orange_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:smooth_sandstone_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:flowering_azalea_leaves",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_fence_gate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_weathered_cut_copper_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:wall_torch",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:fire",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:chiseled_nether_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oxidized_cut_copper_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_blue_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mossy_stone_brick_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_gold_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_fern",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_oak_sapling",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_fire_coral",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_nylium",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:magenta_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:magenta_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:big_dripleaf_stem",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_petals",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_wall_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cracked_polished_blackstone_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_cherry_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sticky_piston",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:nether_brick_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_oxidized_cut_copper_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_jungle_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_leaves",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:raw_gold_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:magenta_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_torchflower",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mossy_cobblestone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sculk_shrieker",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:white_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cut_red_sandstone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_pressure_plate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:prismarine",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_wall_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:wither_rose",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purple_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lever",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:kelp",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_birch_sapling",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:smooth_quartz",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_brick_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_deepslate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_warped_stem",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potatoes",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:player_wall_head",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_fire_coral_wall_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:carved_pumpkin",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purple_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_brain_coral",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:emerald_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_sapling",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:yellow_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:flower_pot",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_blue_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cracked_nether_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lily_pad",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_prismarine",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_gray_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_crimson_roots",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_propagule",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:fern",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:chiseled_sandstone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:nether_brick_fence",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:fletching_table",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:white_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:nether_portal",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_warped_fungus",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_pressure_plate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:large_fern",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:raw_copper_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sand",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cobbled_deepslate_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_mangrove_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purple_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_trapdoor",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cyan_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:copper_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_trapdoor",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:medium_amethyst_bud",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_button",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brain_coral",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:horn_coral",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sponge",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:powder_snow_cauldron",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_wall_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cut_red_sandstone_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lime_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:attached_pumpkin_stem",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cornflower",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:trapped_chest",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_orange_tulip",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:tube_coral_wall_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jack_o_lantern",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jukebox",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:magenta_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_leaves",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:end_gateway",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_wall_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sculk_catalyst",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:black_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_weathered_cut_copper_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:green_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_spruce_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:azalea",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bubble_coral_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_dandelion",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cactus",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:granite",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_planks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lapis_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:yellow_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:piglin_head",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:exposed_cut_copper_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mossy_cobblestone_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:andesite",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_fence",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:coal_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:rose_bush",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_fence_gate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_fence",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:white_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:repeating_command_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:infested_cracked_stone_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_wall_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:orange_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:magenta_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:green_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_fence_gate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_fence",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cave_air",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:weathered_copper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cyan_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gray_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:white_tulip",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_bamboo",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:redstone_lamp",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sandstone_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_blue_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_red_mushroom",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:orange_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_trapdoor",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:frogspawn",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_button",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_wall_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lava_cauldron",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_bubble_coral_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:tall_grass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bee_nest",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:daylight_detector",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_pressure_plate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:allium",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cyan_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_dead_bush",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_gray_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:quartz_pillar",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:orange_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_fire_coral_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dried_kelp_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:large_amethyst_bud",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_jungle_sapling",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:smooth_sandstone_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_jungle_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:torchflower",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_blue_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:redstone_wall_torch",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lodestone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:white_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:conduit",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:chorus_flower",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dropper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cut_copper_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:orange_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:kelp_plant",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:chiseled_red_sandstone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:andesite_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_fence_gate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_brain_coral_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:chain",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mossy_cobblestone_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:green_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cyan_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lime_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:respawn_anchor",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:yellow_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:smooth_red_sandstone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stone_brick_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mud_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bell",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:tripwire",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:yellow_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pointed_dripstone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:furnace",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_blackstone_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_trapdoor",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_bush",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_diorite_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:smooth_quartz_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:tube_coral_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:chest",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cut_copper_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_gray_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mud_brick_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stone_brick_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cartography_table",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:coal_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_granite_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_fence_gate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:magenta_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:clay",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_cut_copper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:exposed_cut_copper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:granite_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gray_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brick_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:basalt",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_wall_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_button",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:tuff",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_wart_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:horn_coral_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:yellow_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_blue_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:redstone_torch",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_mushroom",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cyan_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:shroomlight",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:podzol",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bubble_coral",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:budding_amethyst",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pitcher_crop",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stone_button",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gray_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_basalt",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:scaffolding",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lime_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gray_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gray_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:quartz_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:beehive",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_button",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_roots",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dragon_head",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stone_brick_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blast_furnace",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:poppy",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:vine",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_fence",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pumpkin",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_cornflower",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_mosaic_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bubble_coral_wall_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_azure_bluet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mossy_cobblestone_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_crimson_fungus",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_tile_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lime_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_pressure_plate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_fence_gate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cut_sandstone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:beetroots",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:andesite_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_spruce_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_sapling",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:zombie_wall_head",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_button",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:tube_coral_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:fire_coral_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_blue_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:iron_trapdoor",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:moss_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_blackstone_brick_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:ancient_debris",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_diorite",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:white_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:infested_stone_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:tall_seagrass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_fence",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:skeleton_wall_skull",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_wall_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_gray_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_door",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:green_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cyan_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sunflower",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:exposed_cut_copper_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cobblestone_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_horn_coral_wall_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_planks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blackstone_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_flowering_azalea_bush",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brewing_stand",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dispenser",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:green_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:magenta_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_planks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:prismarine_brick_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_pressure_plate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:repeater",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lime_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purpur_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dripstone_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:powder_snow",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_sandstone_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_trapdoor",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_fence_gate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:raw_iron_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_roots",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:copper_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_oak_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:water_cauldron",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oxeye_daisy",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:soul_soil",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mycelium",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brain_coral_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:white_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_ice",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gray_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:snow",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_planks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:end_stone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:packed_mud",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_copper_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:weathered_cut_copper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cocoa",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_gray_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_planks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:redstone_wire",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:orange_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_tulip",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lime_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cyan_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:smithing_table",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_oxeye_daisy",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_mangrove_propagule",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:water",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_acacia_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_stem",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_blackstone_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_door",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_door",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cobbled_deepslate_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_granite_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:grass_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oxidized_cut_copper_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blackstone_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:amethyst_cluster",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:snow_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_gray_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_tiles",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_wither_rose",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_wall_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_planks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:black_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:carrots",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_pink_tulip",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_acacia_sapling",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:black_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:enchanting_table",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:yellow_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_warped_roots",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spore_blossom",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:green_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:end_portal_frame",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_gray_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:smooth_basalt",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sculk_sensor",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_blue_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cobblestone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_deepslate_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_trapdoor",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:diamond_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_fire_coral_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_fence",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_door",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:orange_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mud",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:heavy_weighted_pressure_plate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:yellow_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_fungus",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:infested_cobblestone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stone_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_wall_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:structure_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:magenta_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_mushroom_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:beacon",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lily_of_the_valley",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_diorite_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:honey_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_gray_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lime_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:tube_coral",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_sapling",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:infested_mossy_stone_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:loom",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_sandstone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:end_stone_brick_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_gray_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mossy_stone_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:green_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_cherry_sapling",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_fence_gate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:chipped_anvil",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:black_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:soul_torch",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_mangrove_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:anvil",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gray_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:green_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:hanging_roots",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_gray_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:chorus_plant",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:diamond_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dirt",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_blackstone_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:chiseled_polished_blackstone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:slime_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:nether_brick_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:yellow_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:diorite_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:moss_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:nether_gold_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purple_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:white_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_weathered_cut_copper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gilded_blackstone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_pressure_plate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:grass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_leaves",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gray_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:iron_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:andesite_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:quartz_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:chain_command_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_wall_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_wall_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:smooth_stone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_nether_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_button",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_wall_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_pressure_plate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:prismarine_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purpur_pillar",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:green_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:yellow_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:ice",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:powered_rail",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_fence",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bedrock",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_sandstone_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_nylium",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_trapdoor",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_tube_coral_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:end_stone_brick_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:white_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_tile_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:black_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:soul_campfire",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:tripwire_hook",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:structure_void",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:diorite_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:chiseled_quartz_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_blue_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_copper_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:farmland",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cracked_stone_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purple_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_exposed_cut_copper_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:black_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:green_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:white_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purple_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:infested_chiseled_stone_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:fire_coral_wall_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brick_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jigsaw",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gray_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:iron_bars",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_button",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:exposed_copper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_granite",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:green_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blackstone_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:activator_rail",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:suspicious_gravel",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_door",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_wall_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_crimson_hyphae",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lectern",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_warped_hyphae",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cyan_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:white_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gray_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:weeping_vines",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bubble_column",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_trapdoor",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:black_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mud_brick_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:air",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mossy_stone_brick_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:smoker",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mushroom_stem",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:ladder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sculk_vein",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_blackstone_button",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:tinted_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:orange_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cut_copper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cracked_deepslate_tiles",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:campfire",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purple_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_gray_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:black_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_exposed_copper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:prismarine_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_allium",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_oxidized_copper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:magenta_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_pressure_plate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_wall_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_fence_gate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sea_pickle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:iron_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_dark_oak_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:granite_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:yellow_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:glow_lichen",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gravel",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:small_dripleaf",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:muddy_mangrove_roots",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:honeycomb_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_weighted_pressure_plate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cobbled_deepslate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_blackstone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:diorite",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:diorite_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:orange_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_redstone_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_blue_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:smooth_red_sandstone_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:piston",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:glowstone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_planks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sugar_cane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_brain_coral_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:green_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:observer",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_roots",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:damaged_anvil",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_nether_brick_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lime_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:piston_head",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_gray_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_acacia_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:verdant_froglight",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_trapdoor",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brick_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:wither_skeleton_wall_skull",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cobblestone_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oxidized_cut_copper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:orange_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:magenta_stained_glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_bubble_coral",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:wet_sponge",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_hyphae",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:end_stone_brick_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:hopper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:grindstone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purpur_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:flowering_azalea",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lime_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cut_sandstone_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:end_portal",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purple_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:reinforced_deepslate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pearlescent_froglight",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:horn_coral_wall_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:soul_lantern",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stonecutter",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:creeper_wall_head",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:amethyst_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_blue_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pumpkin_stem",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:weathered_cut_copper_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:soul_wall_torch",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:redstone_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_red_tulip",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_oak_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:player_head",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_hyphae",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:smooth_quartz_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stone_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:netherite_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:torchflower_crop",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_blue_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gold_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_tube_coral_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:smooth_stone_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:yellow_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_cut_copper_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lantern",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stone_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_blue_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:azalea_leaves",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:chiseled_bookshelf",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_tile_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lightning_rod",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_planks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:twisting_vines_plant",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_spruce_sapling",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:infested_stone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_door",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_exposed_cut_copper_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_button",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:detector_rail",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cyan_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_leaves",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_blue_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_blackstone_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_fence",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gray_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_button",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:quartz_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_leaves",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:black_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_lily_of_the_valley",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:turtle_egg",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:granite_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:melon_stem",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:nether_wart",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_button",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_planks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gold_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_fence",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:target",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_pressure_plate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:nether_wart_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_prismarine_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_fence",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purple_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_andesite",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:packed_ice",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_deepslate_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lime_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:melon",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_wall_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_mosaic_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:zombie_head",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_blackstone_brick_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_wall_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:prismarine_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_birch_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:skeleton_skull",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_horn_coral",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_tulip",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_oxidized_cut_copper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:yellow_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:black_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:fire_coral_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_brick_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sweet_berry_bush",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purple_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purple_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_tube_coral_wall_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:white_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bookshelf",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:weathered_cut_copper_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:chiseled_stone_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blackstone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_door",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:wither_skeleton_skull",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_birch_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:torch",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:fire_coral",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cave_vines",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:coarse_dirt",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:black_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_brick_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gray_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:magenta_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_azalea_bush",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:magma_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_blackstone_brick_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_dark_oak_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mud_brick_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:big_dripleaf",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_horn_coral_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_andesite_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_blue_orchid",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:nether_sprouts",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_tube_coral",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:hay_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cobbled_deepslate_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_leaves",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dirt_path",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_bubble_coral_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_door",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spawner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_pressure_plate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:orange_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_bamboo_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:barrier",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:moving_piston",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_planks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:wheat",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purple_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cyan_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_weathered_copper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sandstone_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:yellow_candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:green_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_mushroom",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:azure_bluet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_white_tulip",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cobblestone_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_sapling",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sea_lantern",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_stem",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lime_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_door",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_wall_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:prismarine_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_cherry_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dragon_wall_head",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:orange_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_sandstone_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:twisting_vines",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_blue_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:end_stone_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_wall_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_oak_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stone_pressure_plate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dead_brain_coral_wall_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:weeping_vines_plant",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cyan_shulker_box",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:magenta_stained_glass",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:suspicious_sand",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_dark_oak_sapling",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_gray_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:potted_poppy",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_button",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_mushroom_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_mosaic",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:netherrack",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:magenta_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:emerald_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purpur_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:creeper_head",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_sand",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:calibrated_sculk_sensor",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lime_candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:purple_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:petrified_oak_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_sapling",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:birch_fence_gate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:white_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dark_prismarine_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_nether_brick_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:soul_fire",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_trapdoor",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lava",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:stripped_crimson_stem",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:spruce_wall_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:glass_pane",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dragon_egg",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:piglin_wall_head",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:pink_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_fungus",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:candle",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:command_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:obsidian",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sandstone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:orange_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:brown_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:smooth_red_sandstone_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:note_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:composter",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crafting_table",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sniffer_egg",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mossy_stone_brick_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_carpet",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_wall_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:dandelion",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bone_block",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sandstone_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:gray_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:oak_leaves",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_lapis_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:red_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:black_wall_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bamboo_sapling",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lapis_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:sculk",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:quartz_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:white_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_deepslate_wall",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:mangrove_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_orchid",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:warped_hanging_sign",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:polished_blackstone_pressure_plate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_log",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:bubble_coral_fan",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crying_obsidian",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lime_concrete_powder",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_oxidized_cut_copper_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:prismarine_brick_stairs",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cobweb",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:candle_cake",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_coal_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cherry_wood",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:acacia_slab",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_wool",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:rooted_dirt",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:lilac",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:jungle_fence_gate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_diamond_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:decorated_pot",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:infested_deepslate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:white_banner",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:black_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:smooth_sandstone",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:green_concrete",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:chiseled_deepslate",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:waxed_exposed_cut_copper",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:nether_quartz_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:light_gray_glazed_terracotta",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:cave_vines_plant",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:blue_bed",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:crimson_trapdoor",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:deepslate_iron_ore",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    },
+    {
+      "identifier": "minecraft:nether_bricks",
+      "Physics Type": 4,
+      "Lifetime": 100.0,
+      "Lifetime Variance": 30.0,
+      "Scale": 8.0,
+      "Animation": -1
+    }
+  ]
+}
