@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "the_elements_of_frontiers"
 	group: "49DCE46B3EB22AEA"
-	icon: "kubejs:memory_shard"
+	icon: "cosmiccore:cluster_of_perpetuity"
 	id: "78A238438B986DB5"
 	images: [{
 		height: 5.0d

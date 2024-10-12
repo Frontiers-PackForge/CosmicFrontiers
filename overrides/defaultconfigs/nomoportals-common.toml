@@ -1,0 +1,68 @@
+
+["Main Settings"]
+	#This boolean value determines whether the mod will affect only players or all entities.
+	#If set to true, only players will be prevented from using the portals.
+	#If set to false, all entities will be prevented from using the portals.
+	Only_Player = false
+	#Set teleportation restriction mode: IN (lock entry), OUT (lock exit), BOTH (lock both).
+	#Allowed Values: IN, OUT, BOTH
+	Teleportation_Restriction_Mode = "IN"
+	#If true, only portals will be afflicted by the disabled options. If set to false, every other teleportation method will be afflicted.
+	Only_Portal_Disabler = false
+
+["Vanilla Portals"]
+	#Enable or disable End portal teleportation interaction (set to 'true' to restore default functionality).
+	End_Portal = false
+	#Enable or disable Nether portal teleportation interaction (set to 'true' to restore default functionality).
+	Nether_Portal = true
+
+["Modded Portals"]
+	#Enable or disable portal teleportation interaction for The Twilight Forest mod. Link: https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest
+	The_Twilight_Forest = true
+	#Enable or disable portal teleportation interaction for The Undergarden mod. Link: https://www.curseforge.com/minecraft/mc-mods/the-undergarden
+	The_Undergarden = true
+	#Enable or disable portal teleportation interaction for Tropicraft mod. Link: https://www.curseforge.com/minecraft/mc-mods/tropicraft
+	Tropicraft = true
+	#Enable or disable portal teleportation interaction for The Aether mod. Link: https://www.curseforge.com/minecraft/mc-mods/aether
+	The_Aether = true
+	#Enable or disable portal teleportation interaction for Deeper and Darker mod. Link: https://www.curseforge.com/minecraft/mc-mods/deeperdarker
+	Deeper_and_Darker = true
+	#Enable or disable portal teleportation interaction to Everbright/Blue Skies mod. Link: https://www.curseforge.com/minecraft/mc-mods/blue-skies
+	Everbright = true
+	#Enable or disable portal teleportation interaction to Everdawn/Blue Skies mod. Link: https://www.curseforge.com/minecraft/mc-mods/blue-skies
+	Everdawn = true
+	#Enable or disable portal teleportation interaction for Mahou Tsukai mod. Link: https://www.curseforge.com/minecraft/mc-mods/mahou-tsukai
+	Mahou_Tsukai = true
+	#Enable or disable portal teleportation interaction to Aplachia/DivineRPG mod. Link: https://www.curseforge.com/minecraft/mc-mods/official-divinerpg
+	Apalachia = true
+	#Enable or disable portal teleportation interaction to Arcana/DivineRPG mod. Link: https://www.curseforge.com/minecraft/mc-mods/official-divinerpg
+	Arcana = true
+	#Enable or disable portal teleportation interaction to Eden/DivineRPG mod. Link: https://www.curseforge.com/minecraft/mc-mods/official-divinerpg
+	Eden = true
+	#Enable or disable portal teleportation interaction to Iceika/DivineRPG mod. Link: https://www.curseforge.com/minecraft/mc-mods/official-divinerpg
+	Iceika = true
+	#Enable or disable portal teleportation interaction to Mortum/DivineRPG mod. Link: https://www.curseforge.com/minecraft/mc-mods/official-divinerpg
+	Mortum = true
+	#Enable or disable portal teleportation interaction to Skythern/DivineRPG mod. Link: https://www.curseforge.com/minecraft/mc-mods/official-divinerpg
+	Skythern = true
+	#Enable or disable portal teleportation interaction to Vethea/DivineRPG mod. Link: https://www.curseforge.com/minecraft/mc-mods/official-divinerpg
+	Vethea = true
+	#Enable or disable portal teleportation interaction to Wildwood/DivineRPG mod. Link: https://www.curseforge.com/minecraft/mc-mods/official-divinerpg
+	Wildwood = true
+	#Enable or disable portal teleportation interaction to Frost_World/The Abyss II mod. Link: https://www.curseforge.com/minecraft/mc-mods/the-abyss-chapter-ii
+	Frost_World = true
+	#Enable or disable portal teleportation interaction to Pocket_Dimension/The Abyss II mod. Link: https://www.curseforge.com/minecraft/mc-mods/the-abyss-chapter-ii
+	Pocket_Dimension = true
+	#Enable or disable portal teleportation interaction to Pocket_Dimension/The Abyss II mod. Link: https://www.curseforge.com/minecraft/mc-mods/the-abyss-chapter-ii
+	Spectral_World = true
+	#Enable or disable portal teleportation interaction to The_Abyss/The Abyss II mod. Link: https://www.curseforge.com/minecraft/mc-mods/the-abyss-chapter-ii
+	The_Abyss = true
+
+["Extra Features"]
+	#Enable or disable Ender Eye's Stronghold search interaction (set to 'true' to restore default functionality).
+	Ender_Eye_Search = false
+	#Enable or disable Ender Pearl's teleport feature (set to 'true' to restore default functionality).
+	Ender_Pearl_Teleport = true
+	#Enable or disable the warning message when interacting with disabled portals.
+	Warning_Message = true
+

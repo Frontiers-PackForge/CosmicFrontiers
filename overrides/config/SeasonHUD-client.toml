@@ -70,6 +70,8 @@
 		#Default is SHOW_DAY.
 		#Allowed Values: NONE, SHOW_DAY, SHOW_WITH_TOTAL_DAYS
 		enable_show_day = "SHOW_DAY"
+		#Having the calendar item shows the detailed version of the HUDDefault is false.
+		calendar_detail = false
 
 	[SeasonHUD.Minimap]
 		#Enable integration with minimap mods?

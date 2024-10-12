@@ -10,6 +10,7 @@
 	quests: [
 		{
 			dependencies: ["3E108A150B09D6D7"]
+			description: ["THIS ENTIRE CHAPTURE IS BROKEN TBH I HATE IT I AM GONNA REDO IT SOMETIME EVENTUALLY"]
 			id: "30E09C21E7032519"
 			shape: "hexagon"
 			size: 2.0d

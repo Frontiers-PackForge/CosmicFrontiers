@@ -151,7 +151,7 @@
 		#How many mB per tick can be auto-ejected.
 		autoEjectFluidRate = 500
 		#The energy consumption rate.
-		consumptionRate = 80
+		consumptionRate = 0
 
 	[machine.mechanical_drying_basin]
 		#The energy consumption rate.

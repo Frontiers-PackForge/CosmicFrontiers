@@ -2,6 +2,7 @@
     event.create('ether_steel', 27, 177, -1, null, 'Ma₂FeMnNi(Si(Fe₂S₂)₅(Cr₂ZiAbAl)Hg₃)', false) // 
     event.create('manasteel', 20, 80, -1, null, 'Ma*(Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AuAg)', false)
     event.create('terrasteel', 20, 80, -1, null, 'Ma₂(Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AuAg)', false)
+    event.create('runesteel', 20, 80, -1, null, 'FeC*?', false)
     event.create('zanite', 134, 335, -1, null, 'Zi', false)
     event.create('ambrosium', 135, 338, -1, null, 'Ab', false)
     event.create('zano_alumate', 69, 420, -1, null, '(ZiAbAl)', false)

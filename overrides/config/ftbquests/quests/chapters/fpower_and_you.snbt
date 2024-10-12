@@ -10,7 +10,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["40722F399FCF08E2"]
 			description: [
 				"Placeholder desc"
 				""
@@ -617,6 +616,29 @@
 				type: "item"
 			}]
 			x: -11.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7C04FB1E15ACCE47"]
+			description: [
+				"If you have been spamming 16A hatches everywhere for that sweet processing speed, you're probably starting to feel constrained on energy again."
+				""
+				""
+				"Mk2 Naquahine Fuel and better magnets allow your Naquahine reactors to produce a whopping &l&41A UHV&r each. That should result in a 4x'ing of your power budget."
+				""
+				""
+				"Fun little fact, around mid-zpm I had ~16 Naquahine Reactors and my Oreproc was the worst power draw of everything... I went overkill with 16A ZPM hatches LMAO"
+			]
+			id: "492B9F9575618A8C"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "&fNaquahine Spam is also lame."
+			tasks: [{
+				id: "0995637A99417697"
+				item: "gtceu:naquahine_superfuel_mk_two_bucket"
+				type: "item"
+			}]
+			x: -17.0d
 			y: -2.0d
 		}
 	]

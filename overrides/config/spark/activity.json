@@ -1,0 +1,80 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Ghostipedia",
+      "uniqueId": "c43b3c3d-7da6-4c2b-b335-703fce2ed795"
+    },
+    "time": 1726062243013,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/ztR310IdSj"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Ghostipedia",
+      "uniqueId": "c43b3c3d-7da6-4c2b-b335-703fce2ed795"
+    },
+    "time": 1726061725932,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/nYyhMyAvBk"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Ghostipedia",
+      "uniqueId": "c43b3c3d-7da6-4c2b-b335-703fce2ed795"
+    },
+    "time": 1725923844983,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/goFUzKhCNT"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Ghostipedia",
+      "uniqueId": "c43b3c3d-7da6-4c2b-b335-703fce2ed795"
+    },
+    "time": 1725868052113,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/qx5qharBew"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Ghostipedia",
+      "uniqueId": "c43b3c3d-7da6-4c2b-b335-703fce2ed795"
+    },
+    "time": 1724651153367,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/EFkS6oXKz5"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Ghostipedia",
+      "uniqueId": "c43b3c3d-7da6-4c2b-b335-703fce2ed795"
+    },
+    "time": 1724647234868,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/OIRPq9xQdl"
+    }
+  }
+]

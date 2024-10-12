@@ -4,6 +4,8 @@
 	#Threshold of number of item entities dropped from chest / barrel above which break is canceled (unless shift key is pressed) and message is displayed explaining to player many drops and packing tape use
 	#Range: 0 ~ 1000
 	tooManyItemEntityDrops = 200
+	#Limit of maximum number of upgrades of type per storage in format of "StorageType|UpgradeRegistryName[or UpgradeGroup]|MaxNumber"
+	maxUpgradesPerStorage = ["barrel|jukebox_upgrade|1", "barrel|furnace_upgrades|1", "barrel|stack_upgrades|1", "limited_barrel|jukebox_upgrade|1", "limited_barrel|furnace_upgrades|1", "chest|jukebox_upgrade|1", "chest|furnace_upgrades|1", "chest|stack_upgrades|1", "shulker_box|jukebox_upgrade|1", "shulker_box|furnace_upgrades|1", "shulker_box|stack_upgrades|1"]
 
 	#Wood Barrel Settings
 	[server.WoodBarrel]
@@ -626,4 +628,67 @@
 		#Maximum stack size that can be transferred in one transfer
 		#Range: 1 ~ 64
 		maxTransferStackSize = 4
+
+	#Copper Barrel Settings
+	[server.CopperBarrel]
+		#Number of inventory slots in the storage
+		#Range: 1 ~ 180
+		inventorySlotCount = 45
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Limited Copper Barrel I Settings
+	[server.LimitedCopperBarrelI]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 8192
+		baseSlotLimitMultiplier = 53
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Limited Copper Barrel II Settings
+	[server.LimitedCopperBarrelII]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 8192
+		baseSlotLimitMultiplier = 27
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Limited Copper Barrel III Settings
+	[server.LimitedCopperBarrelIII]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 8192
+		baseSlotLimitMultiplier = 17
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Limited Copper Barrel IV Settings
+	[server.LimitedCopperBarrelIV]
+		#Multiplier that's used to calculate base slot limit
+		#Range: 1 ~ 8192
+		baseSlotLimitMultiplier = 13
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Copper Chest Settings
+	[server.CopperChest]
+		#Number of inventory slots in the storage
+		#Range: 1 ~ 180
+		inventorySlotCount = 45
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Copper Shulker Box Settings
+	[server.CopperShulkerBox]
+		#Number of inventory slots in the storage
+		#Range: 1 ~ 180
+		inventorySlotCount = 45
+		#Number of upgrade slots in the storage
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
 

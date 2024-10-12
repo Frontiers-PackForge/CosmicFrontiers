@@ -1,0 +1,4 @@
+#Gravity scale when player is in mana water
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+mana_fluid_gravity_scale = 0.25
+

@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.chemical_reactor('hsq_synth')
-        .chancedFluidInput(Fluid.of('gtceu:sulfuric_acid', 500), 0, 0)
+        .notConsumableFluid('gtceu:sulfuric_acid 500')
         // Please Hound Someone to Fix this not working using a 0% chanced fluid seems super cursed and useless fluff
         // .notConsumable(Fluid.of('gtceu:sulfuric_acid', 1000))
         .inputFluids('gtceu:trichlorosilane 4000')

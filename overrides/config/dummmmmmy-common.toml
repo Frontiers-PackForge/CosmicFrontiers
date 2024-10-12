@@ -23,6 +23,12 @@
 	#Makes dummy drop xp when hit. Training yay! Depends on damage done
 	#Range: 0.0 ~ 100.0
 	xp_per_damage_on_hit = 0.0
+	#Color of the boss health bar
+	#Allowed Values: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+	boss_health_color = "YELLOW"
+	#Health of the dummy when in boss moe (wearing a banner)
+	#Range: 1 ~ 1000
+	boss_health = 200
 
 [mobs_damage_numbers]
 	#Show damage taken form
