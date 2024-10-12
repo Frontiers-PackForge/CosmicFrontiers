@@ -122,6 +122,7 @@ ServerEvents.recipes(event => {
 
 
        event.remove({ id: 'paraglider:paraglider' })
+       event.remove({ id: 'gtceu:alloy_smelter/rubber_bar' })
        event.shaped('paraglider:paraglider', [
               'SWS',
               'WSW',
@@ -354,7 +355,7 @@ ServerEvents.recipes(event => {
               .duration(9600)
               .EUt(GTValues.VA[GTValues.EV]);
        event.recipes.gtceu.alloy_blast_smelter('virtue_meld_molten_good')
-              .chancedFluidInput(Fluid.of('gtceu:molten_virtue_meld', 1152), 0, 0)
+              .notConsumableFluid('gtceu:molten_virtue_meld 1152')
               .inputFluids('gtceu:luminite 1152')
               .itemInputs('16x gtceu:luminescent_utherium_gem')
               .outputFluids('gtceu:molten_virtue_meld 4608')

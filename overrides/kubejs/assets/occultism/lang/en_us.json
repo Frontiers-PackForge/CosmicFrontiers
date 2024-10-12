@@ -1,0 +1,17 @@
+{
+    "multiblock.occultism.rune_ritual": "Rune Etching Ritual",
+    "multiblock.occultism.basic_fusion": "Basic Fusion Ritual",
+    "book.occultism.dictionary_of_spirits.frontiers.runing_demo.demo.title": "Rune Etching Ritual",
+    "ritual.occultism.frontiers.rune_ritual.started": "Rune Etching Ritual Started",
+    "ritual.occultism.frontiers.rune_ritual.finished": "Rune Etching Ritual Finished",
+    "ritual.occultism.fusion_ritual.seal_underworld.started": "Soul Seal Ritual Started",
+    "ritual.occultism.fusion_ritual.seal_underworld.finished": "Soul Seal Ritual Finished",
+    "block.occultism.dimensional_mineshaft": "Weak Dimensional Mineshaft",
+    "book.occultism.dictionary_of_spirits.crafting_rituals.craft_dimensional_mineshaft.name": "Weak Dimensional Mineshaft",
+    "item.occultism.ritual_dummy.craft_dimensional_mineshaft": "Ritual: Craft Weak Dimensional Mineshaft",
+    "item.occultism.ritual_dummy.craft_dimensional_mineshaft.tooltip": "Allows extraction of basic runestones from an unknown language.",
+    "item.occultism.miner_foliot_unspecialized.tooltip": "%s will extract random runes from an unknown dimension.",
+    "book.occultism.dictionary_of_spirits.frontiers.fusion_intro.demo.title": "Weak Fusion Ritual",
+    "book.occultism.dictionary_of_spirits.pentacles.basic_fusion.intro.title": "Basics of Soul Reinforcement",
+    "book.occultism.dictionary_of_spirits.pentacles.basic_fusion.intro.text": "A Simple Ritual allowing you to assemble a vessle for your soul. \n It is nothing fancy but it should allow you to return from restricted enviroments with your soul."
+}

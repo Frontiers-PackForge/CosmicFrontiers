@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
     .itemInputs('gtceu:compressed_fireclay')
     .itemInputs('gtceu:coal_dust')
     .itemOutputs('gtceu:firebrick')
-    .duration(60)
+    .duration(10)
     .EUt(8);
   event.recipes.gtceu.electrolyzer('trifluoride_elec')
     .itemInputs('4x gtceu:antimony_trifluoride_dust')
@@ -134,8 +134,18 @@ ServerEvents.recipes(event => {
     .inputFluids('minecraft:water 500')
     .itemOutputs('4x cosmiccore:fireclay_ball')
     .duration(200)
-    .EUt(GTValues.VA[GTValues.LV])
-
+    .EUt(2)
+  event.shaped('gtceu:industrial_primitive_blast_furnace', [
+    'WSH',
+    'SCS',
+    'FSF'
+  ], {
+    C: 'gtceu:primitive_blast_furnace',
+    F: 'gtceu:firebricks',
+    S: 'gtceu:steel_plate',
+    H: '#forge:tools/hammers',
+    W: '#forge:tools/wrenches'
+  })
 
   //ManaSteel Stuff
   event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe')
@@ -303,6 +313,42 @@ ServerEvents.recipes(event => {
     C: 'gtceu:bronze_brick_casing',
     B: 'minecraft:bricks'
   })
+  event.shaped('gtceu:hp_steam_bender', [
+    'PWP',
+    'MCM',
+    'FFF'
+  ], {
+    M: 'ulvcovm:ulv_electric_motor',
+    P: 'ulvcovm:ulv_electric_piston',
+    C: 'gtceu:steel_brick_casing',
+    F: 'gtceu:firebricks',
+    W: '#forge:tools/hammers'
+  })
+  event.shaped('gtceu:hp_steam_wiremill', [
+    'MWM',
+    'FCF',
+    'MFM'
+  ], {
+    M: 'ulvcovm:ulv_electric_motor',
+    C: 'gtceu:steel_brick_casing',
+    F: 'gtceu:firebricks',
+    W: '#forge:tools/hammers'
+  })
+  event.remove({ id: 'gtceu:shaped/steel_bricks_hull' })
+  event.shaped('gtceu:steel_brick_casing', [
+    'PPP',
+    'PHP',
+    'BBB'
+  ], {
+    B: 'gtceu:firebricks',
+    H: '#forge:tools/hammers',
+    P: 'gtceu:steel_plate'
+  })
+  event.remove({ id: 'gtceu:shapeless/integrated_circuit' })
+  event.shapeless('gtceu:programmed_circuit', [
+    'gtceu:vacuum_tube'
+  ])
+
   event.shaped('gtceu:steam_caster', [
     'CBC',
     'QGH',
@@ -589,6 +635,18 @@ ServerEvents.recipes(event => {
     .itemOutputs('cosmiccore:hardened_resin')
     .duration(380)
     .EUt(8);
+  event.recipes.gtceu.compressor('hardened_resin_good')
+    .itemInputs('2x gtceu:soulresin_ingot')
+    .itemOutputs('cosmiccore:hardened_resin')
+    .duration(240)
+    .EUt(8);
+  event.recipes.gtceu.industrial_primitive_blast_furnace('resin_vulc')
+    .itemInputs('2x gtceu:sulfur_dust')
+    .itemInputs('8x cosmiccore:hardened_resin')
+    .itemInputs('8x minecraft:charcoal')
+    .inputFluids('gtceu:creosote 1000')
+    .itemOutputs('16x gtceu:rubber_ingot')
+    .duration(1200)
   event.recipes.gtceu.alloy_smelter('lead_cable_aweful')
     .itemInputs(['gtceu:lead_single_wire', '2x cosmiccore:hardened_resin'])
     .itemOutputs('gtceu:lead_single_cable')

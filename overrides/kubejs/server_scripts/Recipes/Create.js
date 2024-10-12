@@ -1145,6 +1145,7 @@ ServerEvents.recipes(event => {
 
 
 
-ServerEvents.recipes(e => {
-  e.recipes.create.filling('botania:manasteel_ingot', [Fluid.of('gtceu:ethanol', 1000), 'gtceu:blue_alloy_ingot'])
+ServerEvents.recipes(event => {
+  event.recipes.create.filling('botania:manasteel_ingot', [Fluid.of('gtceu:ethanol', 1000), 'gtceu:blue_alloy_ingot'])
+  event.remove({ id: 'gtceu:extractor/extract_double_soulresin_plate'})
 })

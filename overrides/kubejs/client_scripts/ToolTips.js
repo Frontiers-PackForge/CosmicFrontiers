@@ -191,9 +191,6 @@ ItemEvents.tooltip(event => {
   event.addAdvanced(quarktech, (item, advanced, text) => {
     text.add(1, Text.of('Adaptive Insulation').green())
   })
-  event.addAdvanced('nether_remastered:seal_of_the_underworld_item', (item, advanced, text) => {
-    text.add(1, Text.of('Acquired from the Trial of the Underworld or forged from the shards of your victories').gold())
-  })
   event.addAdvanced('ae2:condenser', (item, advanced, text) => {
     text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
   })
@@ -203,7 +200,10 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('ae2:condenser', (item, advanced, text) => {
     text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
   })
-  
+  event.addAdvanced('integrateddynamics:mechanical_squeezer', (item, advanced, text) => {
+    text.add(2, Text.of('Energy Consumption was set to 0!').green())
+    text.add(2, Text.of('Will run without power!').green())
+  })
 })
 
 ItemEvents.tooltip(event => {

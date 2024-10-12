@@ -308,18 +308,41 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.GENERATE_FINE_WIRE
         )
-
-
-
-
-
-
-
-
-
-
-
-
+    event.create('runed_steel')
+        .ingot()
+        .liquid()
+        .color(0x5d466b)
+        .element(GTElements.get('rune_steel'))
+        // .cableProperties(GTValues.V[GTValues.LV], 8, 0, false) - probably not needed, but revisit in a bit
+        .iconSet(GTMaterialIconSet.getByName('rune_steel'))
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING
+        )
+    event.create('cinderwax')
+        .liquid()
+        .ingot()
+        .color(0xa84c32).secondaryColor(0xbd6500).iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.NO_SMELTING
+        )
+    event.create('soulresin')
+        .liquid()
+        .ingot()
+        .color(0x00add4).secondaryColor(0x39b1cc).iconSet(GTMaterialIconSet.ROUGH)
+        .flags(
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.NO_SMELTING
+        )
     event.create('undergarden_smog')
         .gas()
         .color(0x614b09).iconSet(GTMaterialIconSet.DULL)

@@ -1,0 +1,49 @@
+{
+  "background_u_index": 0,
+  "background_v_index": 0,
+  "category": "occultism:pentacles",
+  "condition": {
+    "type": "modonomicon:true"
+  },
+  "description": "",
+  "hide_while_locked": false,
+  "icon": {
+    "item": "minecraft:bedrock"
+  },
+  "name": "book.occultism.dictionary_of_spirits.pentacles.rune_writing.name",
+  "pages": [
+    {
+      "type": "modonomicon:text",
+      "anchor": "",
+      "condition": {
+        "type": "modonomicon:none"
+      },
+      "show_title_separator": true,
+      "text": "book.occultism.dictionary_of_spirits.pentacles.rune_writing.intro.text",
+      "title": "book.occultism.dictionary_of_spirits.pentacles.rune_writing.intro.title",
+      "use_markdown_in_title": false
+    },
+    {
+      "type": "modonomicon:multiblock",
+      "anchor": "",
+      "condition": {
+        "type": "modonomicon:none"
+      },
+      "multiblock_id": "occultism:rune_ritual",
+      "multiblock_name": "book.occultism.dictionary_of_spirits.frontiers.runing_demo.demo.title",
+      "show_visualize_button": true,
+      "text": ""
+    }
+  ],
+  "parents": [
+    {
+      "draw_arrow": true,
+      "entry": "occultism:pentacles/pentacles_overview",
+      "line_enabled": true,
+      "line_reversed": false
+    }
+  ],
+  "show_when_any_parent_unlocked": true,
+  "x": -11,
+  "y": 0
+}
