@@ -178,6 +178,16 @@ ServerEvents.recipes(event => {
     D: 'ae2:drive',
     B: 'gtceu:mv_conveyor_module'
   })
+  event.shaped('expatternprovider:ex_io_port', [
+    'SCS',
+    'BDB',
+    'SSS'
+  ], {
+    S: 'cosmiccore:prismatic_tungstensteel_plate',
+    C: '#gtceu:circuits/ev',
+    D: 'expatternprovider:ex_drive',
+    B: 'gtceu:ev_conveyor_module'
+  })
   event.shaped('ae2:chest', [
     'SCS',
     'SDS',
@@ -229,6 +239,12 @@ ServerEvents.recipes(event => {
     .itemOutputs('ae2:molecular_assembler')
     .duration(160)
     .EUt(GTValues.VA[GTValues.HV]);
+  event.recipes.gtceu.assembler('expatternprovider:ex_molecular_assembler_assembly')
+    .itemInputs(['cosmiccore:prismatic_tungstensteel_frame', '6x cosmiccore:prismatic_tungstensteel_plate', '4x gtceu:virtue_meld_screw', 'gtceu:iv_robot_arm', '4x ae2:molecular_assembler'])
+    .inputFluids('gtceu:soldering_alloy 576')
+    .itemOutputs('expatternprovider:ex_molecular_assembler')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.IV]);
   //Pattern Crafting Terminal
   event.recipes.gtceu.assembler('ae2:pattern_crafting_terminal')
     .itemInputs(['32x gtceu:fine_red_alloy_wire', '32x gtceu:fine_manasteel_wire', 'ae2:terminal', 'botania:auto_crafting_halo', 'gtceu:hv_emitter'])
@@ -305,6 +321,20 @@ ServerEvents.recipes(event => {
     .itemOutputs('ae2:drive')
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.assembler('expatternprovider:ex_drive_assembly')
+    .itemInputs(['2x ae2:drive','8x cosmiccore:prismatic_tungstensteel_plate', '16x ae2:fluix_smart_dense_cable', '4x #gtceu:circuits/ev', 'gtceu:titanium_frame'])
+    .inputFluids('gtceu:soldering_alloy 576')
+    .circuit(1)
+    .itemOutputs('expatternprovider:ex_drive')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.EV]);
+  event.recipes.gtceu.assembler('expatternprovider:drive_upgrade_assembly')
+    .itemInputs(['1x ae2:drive','8x cosmiccore:prismatic_tungstensteel_plate', '16x ae2:fluix_smart_dense_cable', '4x #gtceu:circuits/ev', 'gtceu:titanium_frame'])
+    .inputFluids('gtceu:soldering_alloy 576')
+    .circuit(2)
+    .itemOutputs('expatternprovider:drive_upgrade')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.EV]);
   //Illuminated Panel
   event.recipes.gtceu.assembler('ae2:monitor_assembly')
     .itemInputs(['8x gtceu:fine_annealed_copper_wire', '3x gtceu:glass_plate', 'gtceu:computer_monitor_cover', 'gtceu:steel_plate'])
@@ -494,7 +524,7 @@ ServerEvents.recipes(event => {
     .duration(90)
     .EUt(GTValues.VA[GTValues.EV]);
 
-
+  //extended buses
   event.recipes.gtceu.assembler('extended_bus_upgrade_kit')
     .itemInputs(['4x ae2:speed_card', '3x ae2:annihilation_core', '3x ae2:formation_core', 'gtceu:ev_robot_arm'])
     .inputFluids(`gtceu:soldering_alloy 576`)
@@ -509,6 +539,14 @@ ServerEvents.recipes(event => {
     .circuit(3)
     .duration(90)
     .EUt(GTValues.VA[GTValues.EV]);
+  event.recipes.gtceu.assembler('extended_import_bus_upgrade_from_bus')
+    .itemInputs(['16x gtceu:fine_red_alloy_wire', 'ae2:import_bus', 'expatternprovider:io_bus_upgrade'])
+    .inputFluids(`gtceu:soldering_alloy 576`)
+    .itemOutputs('expatternprovider:ex_import_bus_part')
+    .circuit(3)
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.EV]);
+
   event.shaped('2x expatternprovider:wireless_connect', [
     'RDE',
     'QHQ',
@@ -572,13 +610,22 @@ ServerEvents.recipes(event => {
     'ae2:storage_bus', 'gtceu:item_filter', 'gtceu:item_tag_filter', 'gtceu:fluid_filter'
   ])
   event.shapeless('expatternprovider:tag_export_bus', [
-    'expatternprovider:ex_export_bus_part', 'gtceu:item_filter', 'gtceu:item_tag_filter', 'gtceu:fluid_filter'
+    'ae2:export_bus', 'gtceu:item_filter', 'gtceu:item_tag_filter', 'gtceu:fluid_filter'
   ])
   event.shapeless('expatternprovider:mod_storage_bus', [
-    'ae2:storage_bus', 'itemfilters:mod'
+    'ae2:storage_bus', 'gtceu:item_filter'
   ])
   event.shapeless('expatternprovider:mod_export_bus', [
-    'expatternprovider:ex_export_bus_part', 'itemfilters:mod'
+    'ae2:export_bus', 'gtceu:item_filter'
+  ])
+  event.shapeless('expatternprovider:precise_storage_bus', [
+    'ae2:storage_bus', 'gtceu:lv_robot_arm', 'gtceu:lv_fluid_regulator'
+  ])
+  event.shapeless('expatternprovider:precise_export_bus', [
+    'ae2:export_bus', 'gtceu:lv_robot_arm', 'gtceu:lv_fluid_regulator'
+  ])
+  event.shapeless('expatternprovider:threshold_export_bus', [
+    'ae2:export_bus', 'expatternprovider:threshold_level_emitter'
   ])
   //Storage Components (Automatic Recipe Generation)
   let machineTier = [
@@ -820,8 +867,15 @@ ServerEvents.recipes(event => {
     .itemOutputs('merequester:requester_terminal')
     .duration(200)
     .EUt(GTValues.VA[GTValues.EV])
-
-
+ 
+  //advanced memory card
+  event.recipes.gtceu.assembler(`betterp2p:advanced_memory_card_assembly`)
+    .itemInputs('ae2:memory_card')
+    .itemInputs('ae2netanalyser:network_analyser')
+    .itemInputs('ae2:cell_component_64k')
+    .itemOutputs('betterp2p:advanced_memory_card')
+    .duration(400)
+    .EUt(GTValues.VA[GTValues.EV])
 
 
 
