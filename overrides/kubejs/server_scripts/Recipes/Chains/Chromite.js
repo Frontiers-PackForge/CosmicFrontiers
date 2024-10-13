@@ -100,6 +100,7 @@ ServerEvents.recipes(event => {
 
     //Fuckin Quicklime.
     event.remove({ id: 'gtceu:chemical_reactor/calcite_from_quicklime' })
+    event.remove({ id: 'gtceu:large_chemical_reactor/calcite_from_quicklime' })
     event.recipes.gtceu.chemical_reactor('gtceu_calcite_fix')
     .itemInputs('2x gtceu:quicklime_dust')
     .inputFluids('gtceu:carbon_dioxide 1000')
