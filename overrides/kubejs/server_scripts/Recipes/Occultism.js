@@ -56,6 +56,16 @@ ServerEvents.recipes(event => {
     T: 'gtceu:talc_dust',
     C: 'gtceu:ash_dust'
   })
+  event.remove({id : 'occultism:crafting/storage_controller'})
+  event.shaped('occultism:storage_controller', [
+    ' A ',
+    ' B ',
+    ' C ',
+  ], {
+    A: 'occultism:dimensional_matrix',
+    B: 'toms_storage:ts.crafting_terminal',
+    C: 'occultism:storage_controller_base'
+  })
   //Iesnium Pickaxe
   event.remove({ id: 'occultism:crafting/iesnium_pickaxe' })
   event.shaped('occultism:iesnium_pickaxe', [
@@ -100,7 +110,11 @@ ServerEvents.recipes(event => {
     .itemInputs('occultism:chalk_white_impure')
     .itemOutputs('occultism:chalk_white')
     .duration(3000)
-
+  event.remove({ id: 'occultism:crafting/chalk_gold_impure' })
+  event.recipes.gtceu.primitive_blast_furnace('yellow_chalk_melding')
+    .itemInputs(['occultism:chalk_white_impure', 'gtceu:ancient_debris_dust', '2x gtceu:gold_sulfide_amalgam_dust'])
+    .itemOutputs('occultism:chalk_gold_impure')
+    .duration(800)
   event.recipes.occultism.miner(
     Item.of('cosmiccore:rune_slate_arklys').withChance(50),
     'occultism:miner_foliot_unspecialized'
@@ -155,4 +169,26 @@ ServerEvents.recipes(event => {
     "nether_remastered:seal_crystal",
     'occultism:basic_fusion'
   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.fusion_ritual.seal_underworld")
+  event.recipes.occultism.ritual(
+    'gtceu:gold_sulfide_amalgam_dust',
+    ['gtceu:sulfur_dust',
+      'gtceu:cinnabar_dust',
+      'gtceu:cinnabar_dust',
+      'gtceu:gold_dust'],
+    "gtceu:gold_dust",
+    'occultism:basic_fusion'
+  ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.fusion_ritual.gold_glob")
+  event.recipes.occultism.ritual(
+    'toms_storage:ts.crafting_terminal',
+    ['ulvcovm:ulv_robot_arm',
+      'ulvcovm:ulv_robot_arm',
+      'ulvcovm:ulv_robot_arm',
+      'minecraft:crafting_table',
+      'minecraft:crafting_table',
+      'minecraft:crafting_table',
+      'minecraft:crafting_table',
+      'gtceu:steam_machine_casing'],
+    'toms_storage:ts.storage_terminal',
+    'occultism:craft_djinni'
+  ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.fusion_ritual.terminal_crafting")
 })

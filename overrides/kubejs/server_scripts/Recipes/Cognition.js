@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'experienceobelisk:cognitive_alloy' })
     event.remove({ id: 'experienceobelisk:cognitive_flux' })
     event.remove({ id: 'experienceobelisk:whisperglass' })
+    event.remove({ id: 'jei:/experienceobelisk/metamorpher/cognitive_alloy_metamorphosis' })
 
 
 

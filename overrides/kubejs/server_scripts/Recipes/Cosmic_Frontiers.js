@@ -198,6 +198,37 @@ ServerEvents.recipes(event => {
               .itemOutputs('8x kubejs:seal_shards')
               .duration(160)
               .EUt(GTValues.VA[GTValues.LV]);
+       event.remove({ id: 'gtceu:compressor/compress_plate_dust_treated_wood' })
+       event.recipes.gtceu.compressor('treated_plank_better')
+              .itemInputs('gtceu:treated_wood_dust')
+              .itemOutputs('gtceu:treated_wood_plate')
+              .duration(50)
+              .EUt(2);
+       event.remove({ id: 'gtceu:shapeless/coated_board_1x' })
+       event.remove({ id: 'gtceu:shaped/coated_board' })
+       event.recipes.gtceu.bender('resin_board_basic')
+              .itemInputs(['gtceu:soulresin_plate', 'gtceu:treated_wood_plate'])
+              .itemOutputs('gtceu:resin_circuit_board')
+              .duration(50)
+              .EUt(2);
+       event.remove({id:"gtceu:shaped/basic_circuit_board"})
+       event.recipes.gtceu.assembler('assembled_board_bad')
+              .itemInputs(['gtceu:resin_circuit_board', '8x gtceu:copper_single_wire'])
+              .inputFluids('gtceu:cinderwax 288')
+              .itemOutputs('gtceu:resin_printed_circuit_board')
+              .duration(50)
+              .EUt(4);
+       //Basic Circuit Shit, the steam assembler re-routes all the basic parts to be mandatory in it, as otherwise who cares.
+       event.remove({output: "gtceu:resistor"})
+       event.recipes.gtceu.assembler('resistor_good')
+       .itemInputs(['gtceu:coke_dust', '4x gtceu:fine_iesnium_wire'])
+       .inputFluids('gtceu:soulresin 144')
+       .itemOutputs('4x gtceu:resistor')
+       .duration(90)
+       .EUt(16);
+       //TODO - A Version with Annealed Iesnium
+
+
        event.recipes.gtceu.macerator('echo_shard_schizm')
               .itemInputs('minecraft:sculk_catalyst')
               .chancedOutput('minecraft:echo_shard', 2500, 500)
