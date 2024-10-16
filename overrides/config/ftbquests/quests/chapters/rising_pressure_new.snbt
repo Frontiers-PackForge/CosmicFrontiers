@@ -338,7 +338,15 @@
 		}
 		{
 			dependencies: ["285AD74C71E4A9E7"]
+			description: [
+				"Uses sunlight to boil water, which will produce steam."
+				""
+				"Be careful, as solar boilers cool down during the night. Make sure you sleep or buffer some steam in pipes."
+				""
+				"Usually people don't buffer steam, but I won't judge if you do"
+			]
 			id: "77AEE0B940FD4728"
+			subtitle: "Boiling with Solar!"
 			tasks: [{
 				id: "540D73572B00B4C1"
 				item: "gtceu:lp_steam_solar_boiler"
@@ -349,7 +357,13 @@
 		}
 		{
 			dependencies: ["285AD74C71E4A9E7"]
+			description: [
+				"Just like the solid boiler, the liquid fueled boiler takes fluid fuels to create &asteam&r."
+				""
+				"You'll most likely fuel this with &blava&r or &bcreosote&r."
+			]
 			id: "21AFCBA87724936B"
+			subtitle: "Burning Liquids for Steam"
 			tasks: [{
 				id: "49EA403DC0A2B47E"
 				item: "gtceu:lp_steam_liquid_boiler"
@@ -1055,37 +1069,6 @@
 			y: -4.0d
 		}
 		{
-			description: [
-				"THIS QB PAGE IS A WIP, NO CHANGES/ROUTING/REWARDS ARE REAL YET!"
-				""
-				"WILL NOT BE REAL UNTIL 0.6.0"
-				""
-				""
-				""
-				"TODO "
-				""
-				"Coke Oven Recipe Change"
-				"Fix up some quest descs"
-				""
-				""
-				"yada "
-				"yada"
-				""
-				"questbook is a fuck"
-			]
-			id: "1884A3B9EE806B02"
-			shape: "pentagon"
-			size: 3.0d
-			subtitle: "WORK IN PROGRESS! ! !"
-			tasks: [{
-				id: "0268DCD96C5ACE99"
-				type: "custom"
-			}]
-			title: "HEY! YOU!"
-			x: -3.0d
-			y: -8.5d
-		}
-		{
 			dependencies: ["61E763C4211D88C8"]
 			dependency_requirement: "one_completed"
 			description: [
@@ -1224,8 +1207,17 @@
 		}
 		{
 			dependencies: ["5AB046A0E1BFBE1E"]
+			description: [
+				"If you lack enough wax to make candles, you can make them from tallow."
+				""
+				"Just kill a pig with a knife and you'll have a chance to get tallow!"
+			]
 			id: "38B4C9DF175F1335"
+			optional: true
+			shape: "gear"
+			subtitle: "Bees got you down?"
 			tasks: [{
+				count: 8L
 				id: "05739ECAC76FF7B3"
 				item: "occultism:candle_white"
 				type: "item"
@@ -1237,6 +1229,13 @@
 			dependencies: [
 				"7D756E7B36CC20BF"
 				"60F828DDE76E191B"
+			]
+			description: [
+				"Why would this even work?"
+				""
+				"Apparently, melting &bsulfur&r, &bgold&r, and &bancient debris&r scrap together allows gold chalk not to break apart instantly."
+				""
+				"After baking, it is still unstable; tempering it further in &eSpiritfire&r will overcome the material problems."
 			]
 			id: "5011698F44048C68"
 			subtitle: "Sulfur Chalk????"
@@ -1361,7 +1360,7 @@
 				"Each item the ritual requests needs to be placed on a bowl."
 				"Once all the ritual items are placed down, right click the golden bowl to start the ritual."
 				""
-				"You can view the ritual layout and get an in world structure preview from the \"Pentacle\" Tab in the \"Book of Spirits\""
+				"You can view the ritual layout and get an in world structure preview from the \"&ePentacle&r\" Tab in the \"&eBook of Spirits&r\""
 			]
 			icon: "occultism:ritual_dummy/custom_ritual"
 			id: "1508AD860450CD0A"
@@ -1425,23 +1424,53 @@
 				"1E00A19BDAEB24F7"
 				"3D8F2FBB3DB24F7E"
 			]
+			description: [
+				"Using a very &ocobbled-together rune language&r, you can imbue some structural reinforcements into your &asteel&r."
+				""
+				"This should allow your LV Hardware to handle more potent sources of &6magic&r and &6chemistry&r without turning into various piles of &erainbow vomit&r and &echemical slag&r."
+				""
+				"Or maybe not. Have &l&oYOU&r tried drinking the raw extract of source-bushes yet?"
+				"No? Okay, well let me know if your stomach turns into nonsense."
+				""
+				"For Science, I Suppose."
+			]
 			id: "1D6235CDF7886C1C"
+			min_width: 350
+			rewards: [{
+				id: "73B0DE1E6839BC0A"
+				item: "cosmiccore:cluster_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Who let someone draw on the metal"
 			tasks: [{
 				id: "2064EAF32F3DED7F"
 				item: "gtceu:runed_steel_ingot"
 				type: "item"
 			}]
+			title: "Runed Steel"
 			x: -17.0d
 			y: 5.5d
 		}
 		{
 			dependencies: ["00B281664EDD41AA"]
+			description: [
+				"&aPropellpearls&r are waxy spheres filled with trace amounts of ethanol at high pressure."
+				""
+				"Due to their natural habitat being quite hot, they pose an &cexplosion hazard&r to anyone who touches them. "
+				""
+				"&6Right-click&r a &epropelplant&r with a &eknife&r to get pearls, or break the block from top to bottom to harvest and replant elsewhere."
+				""
+				"They are found most notably in the &cCrimson Forests&r in the &cNether&r."
+			]
 			id: "36CCE4D31C32E6D7"
+			subtitle: "Explosive Flora"
 			tasks: [{
+				count: 16L
 				id: "1A1459236B3ABFB7"
 				item: "nethersdelight:propelpearl"
 				type: "item"
 			}]
+			title: "Propellpearls"
 			x: -12.5d
 			y: -2.5d
 		}
@@ -1449,6 +1478,7 @@
 			dependencies: ["00B281664EDD41AA"]
 			hide_dependency_lines: true
 			id: "36515C42E0E4AFF6"
+			subtitle: "Chilly Flora"
 			tasks: [{
 				id: "718FC0A1F709A3F6"
 				item: "cold_sweat:soul_sprout"
@@ -1485,6 +1515,11 @@
 			dependencies: [
 				"36515C42E0E4AFF6"
 				"7001E68D0992C6E3"
+			]
+			description: [
+				"This resin reminds you of the &brubber resins&r you've extracted from trees to make shoddy &ecable covering&r."
+				""
+				"You can repurpose this material as a binding agent or vulcanize it to produce better rubber outputs."
 			]
 			id: "1A9A8E0C5ED3412B"
 			subtitle: "An obscure Resin"
@@ -1630,7 +1665,21 @@
 		}
 		{
 			dependencies: ["38986546A4EBEFBD"]
+			description: [
+				"No, I have literally no idea why you want glass that is &oSLIPPERY&r."
+				""
+				"But you have it and I decided it could be used in a &erecipe&r."
+				""
+				"&6I wrote this quest at midnight and this is the best you're getting SORRY&r"
+			]
 			id: "752ACBDD88BEEF85"
+			rewards: [{
+				count: 8
+				id: "3BE5B9483B03C154"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Slippery"
 			tasks: [{
 				id: "13B005CCB354983F"
 				item: "experienceobelisk:whisperglass"
@@ -1642,6 +1691,12 @@
 		{
 			dependencies: ["00B281664EDD41AA"]
 			id: "38986546A4EBEFBD"
+			rewards: [{
+				count: 8
+				id: "3F2D7A48E3315215"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			tasks: [{
 				id: "44D9ED52E8855A5E"
 				item: "minecraft:quartz"
@@ -1701,6 +1756,11 @@
 		{
 			dependencies: ["71A6EE771C80A7DE"]
 			id: "1206EA8BA057A00F"
+			rewards: [{
+				id: "4766BD2BB75DC60E"
+				item: "cosmiccore:large_shard_of_perpetuity"
+				type: "item"
+			}]
 			tasks: [{
 				id: "453CBCE9C69906F2"
 				item: {
@@ -1720,7 +1780,36 @@
 				"1206EA8BA057A00F"
 				"0584B3650BE26B9C"
 			]
+			description: [
+				"&6Rune Language&r allows you to define &estatic magic circuits&r into &amatter&r."
+				""
+				"Meanwhile, the Runes themselves are poorly based on actual words and their meaning shifts with the observer's emotions and the resulting etchings into materials."
+				""
+				""
+				"You can only coax spirits from beyond to bring you tablets laced with very shoddy runes, but it's enough to &6form reinforcement pathways&r into &asteel&r."
+				""
+				"Etching pathways allow &bmana&r or &bother energy sources&r to calmly pass through materials without &cviolently combusting&r or &cburning&r their surroundings."
+				""
+				"Dev Note Next Page -> "
+				"{@pagebreak}"
+				""
+				"Oh hey, You're curious about why I made this?"
+				""
+				"Well in all honesty, I made it as a way to root future magictech to a foundation system rather than 'magic bullshit go!'  "
+				""
+				"Rune Lang is effectively a conlang, and/or not a language at all, it takes inspiration from Greek, Hebrew, and other literary context sources. Don't expect literal or perfect translations, and there are probably errors all over the place! The tooltips might be changed later to only reflect the ideas each rune presents vs showing 'word - description' as it can lead to confusion of native language speakers!"
+				""
+				"Anyway, rambling over, enjoy a frontiers original magic system. It MIGHT get some custom mechanics later but no promises!"
+			]
 			id: "6CA050964E1A8658"
+			min_width: 375
+			rewards: [{
+				count: 2
+				id: "6DC5ED95FA2DDEC2"
+				item: "cosmiccore:large_shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Runes of a False world"
 			tasks: [{
 				id: "70689F9D4C0A5173"
 				item: {
@@ -1832,6 +1921,12 @@
 				"4A034254997FD7D5"
 			]
 			id: "3D906FC110FE69D7"
+			rewards: [{
+				count: 32
+				id: "4F27115378ABAB33"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6CBE0B19DAA91825"
 				item: {
@@ -1853,6 +1948,12 @@
 				"549B34408EBE9582"
 			]
 			id: "2D14D28D2CD892DD"
+			rewards: [{
+				count: 4
+				id: "4ECAE255BC74477D"
+				item: "cosmiccore:large_shard_of_perpetuity"
+				type: "item"
+			}]
 			tasks: [{
 				id: "559F3971827CEBCE"
 				item: {
@@ -2000,6 +2101,11 @@
 		{
 			dependencies: ["752ACBDD88BEEF85"]
 			id: "549B34408EBE9582"
+			rewards: [{
+				id: "7863147CC7E044E0"
+				item: "cosmiccore:large_shard_of_perpetuity"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6E516057CD291DE7"
 				item: "occultism:lenses"
@@ -2124,8 +2230,20 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["379A4BCB53505229"]
+			dependencies: ["47B9B1900C760C90"]
+			description: [
+				"You'll be using a decent amount of resistors in LV, MV and Possibly HV Circuits."
+				""
+				"Usually people will make these in larger batches of 64+ but I won't judge you if you make less."
+			]
 			id: "637A7706B52D2689"
+			rewards: [{
+				count: 16
+				id: "055FB7384119015A"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Voltage Control"
 			tasks: [{
 				id: "45FD228F597ACBEC"
 				item: "gtceu:resistor"
@@ -2143,12 +2261,23 @@
 				type: "item"
 			}]
 			x: -13.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["00B281664EDD41AA"]
+			dependencies: [
+				"00B281664EDD41AA"
+				"36CCE4D31C32E6D7"
+			]
+			description: [
+				"Just a quest to keep things clean!"
+				""
+				"While I have you here, Hi have you been staying hydrated?"
+				""
+				"Go get water."
+			]
 			hide_dependency_lines: true
 			id: "0E5E3392C13701E5"
+			subtitle: "You already did this"
 			tasks: [{
 				id: "2AFB1F8E80708E5D"
 				item: "nethersdelight:propelpearl"
@@ -2249,6 +2378,47 @@
 			}]
 			x: -17.5d
 			y: -1.0d
+		}
+		{
+			dependencies: ["36515C42E0E4AFF6"]
+			description: [
+				"Just another quest to keep things clean!"
+				""
+				"Make sure you've had some food today, even if it was just a little."
+			]
+			hide_dependency_lines: true
+			id: "4BD0110554731D07"
+			subtitle: "Chilly Flora"
+			tasks: [{
+				id: "7035DCB66036E9A8"
+				item: "cold_sweat:soul_sprout"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4BD0110554731D07"]
+			description: [
+				"You're going to need several buckets worth of Soul Resin to make resistors."
+				"Show me you at least made it."
+			]
+			id: "47B9B1900C760C90"
+			rewards: [{
+				count: 4
+				id: "0C3E499FBAB203B3"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Go make a big batch"
+			tasks: [{
+				id: "164604097A3742F5"
+				item: "gtceu:soulresin_bucket"
+				type: "item"
+			}]
+			title: "Soul Resin Bucket"
+			x: -13.0d
+			y: 5.5d
 		}
 	]
 	title: "Rising Pressure - [Steam]"
