@@ -41,26 +41,17 @@ event.shaped('4x toms_storage:ts.inventory_cable_connector', [
 })
 event.remove({ output: 'toms_storage:ts.storage_terminal' })
 event.shaped('toms_storage:ts.storage_terminal', [
-    'WRW',
+    'WGW',
     'RCR',
     'WHW'
 ], {
     W: 'gtceu:treated_wood_planks',
     H: 'gtceu:steam_machine_casing',
     C: 'minecraft:crafting_table',
-    R: 'ulvcovm:ulv_conveyor_module'
+    R: 'ulvcovm:ulv_conveyor_module',
+    G: 'occultism:spirit_attuned_gem'
 })
 event.remove({ output: 'toms_storage:ts.crafting_terminal' })
-event.shaped('toms_storage:ts.crafting_terminal', [
-    'WRW',
-    'RCR',
-    'WHW'
-], {
-    W: 'minecraft:crafting_table',
-    H: 'gtceu:steam_machine_casing',
-    C: 'toms_storage:ts.storage_terminal',
-    R: 'ulvcovm:ulv_robot_arm'
-})
 event.remove({ id: 'toms_storage:inventory_connector' })
 event.shaped('toms_storage:ts.inventory_connector', [
     'WRW',
