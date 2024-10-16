@@ -831,7 +831,7 @@
 			id: "06070B096D0D65F5"
 			subtitle: "Changelogs 0.4.0 -> 0.5.0"
 			title: "Changelogs / Updates"
-			x: 4.0d
+			x: 1.5d
 			y: -5.5d
 		}
 		{
@@ -855,7 +855,7 @@
 			id: "001ABD786A9CF26D"
 			subtitle: "Changelog 0.5.0 -> 0.5.1"
 			title: "Changelogs / Updates"
-			x: 5.5d
+			x: 2.5d
 			y: -5.5d
 		}
 	]
