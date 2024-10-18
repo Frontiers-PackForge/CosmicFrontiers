@@ -1,5 +1,25 @@
 ServerEvents.recipes(event => {
-
+    event.replaceInput(
+        { output: 'gtceu:basic_electronic_circuit' },
+        'gtceu:steel_plate',
+        'gtceu:runed_steel_plate'
+    )
+    event.replaceInput(
+        { output: 'gtceu:vacuum_tube' },
+        'gtceu:copper_single_wire',
+        'gtceu:steel_single_wire'
+    )
+    event.remove({ id: 'gtceu:shaped/vacuum_tube' })
+    event.shaped('gtceu:vacuum_tube', [
+        'CDC',
+        'BAB',
+        '   '
+    ], {
+        A: 'gtceu:steel_single_wire',
+        B: 'gtceu:copper_single_wire',
+        C: 'gtceu:steel_bolt',
+        D: 'gtceu:glass_tube'
+    })
     event.recipes.gtceu.alloy_blast_smelter('high_grade_solder_abs')
         .itemInputs(['7x gtceu:tin_dust', 'gtceu:antimony_dust', 'gtceu:bismuth_dust', 'gtceu:copper_dust'])
         .inputFluids('gtceu:helium 1000')

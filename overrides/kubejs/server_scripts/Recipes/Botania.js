@@ -36,6 +36,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'botania:elven_trade/elf_quartz' })
     event.remove({ id: 'botania:elven_trade/lexicon_elven' })
     event.remove({ id: 'botania:elven_trade/pixie_dust' })
+    event.remove({ id: 'botania:gaia_ingot' })
     event.recipes.gtceu.essence_reactor('elementium_what')
         .itemInputs(['bloodmagic:reagentwater', 'bloodmagic:reagentlava', 'bloodmagic:reagentair', 'bloodmagic:reagentgrowth', '8x botania:terrasteel_ingot'])
         .inputFluids('gtceu:potent_mana 32000')

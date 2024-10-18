@@ -1,12 +1,12 @@
 ServerEvents.recipes(event => {
     event.remove({ id: 'experienceobelisk:bibliophage' })
-    event.remove({ id: 'jei:/experienceobelisk/metamorpher/primordial_assembly' })
-    event.remove({ id: 'jei:/experienceobelisk/metamorpher/cognitive_alloy_metamorphosis' })
-    event.remove({ id: 'jei:/experienceobelisk/metamorpher/cognitive_crystal_metamorphosis' })
+    event.remove({ id: 'experienceobelisk:metamorpher/primordial_assembly' })
+    event.remove({ id: 'experienceobelisk:metamorpher/cognitive_alloy_metamorphosis' })
+    event.remove({ id: 'experienceobelisk:metamorpher/cognitive_crystal_metamorphosis' })
     event.remove({ id: 'experienceobelisk:cognitive_alloy' })
     event.remove({ id: 'experienceobelisk:cognitive_flux' })
     event.remove({ id: 'experienceobelisk:whisperglass' })
-    event.remove({ id: 'jei:/experienceobelisk/metamorpher/cognitive_alloy_metamorphosis' })
+    event.remove({ id: 'experienceobelisk:metamorpher/cognitive_alloy_metamorphosis' })
 
 
 

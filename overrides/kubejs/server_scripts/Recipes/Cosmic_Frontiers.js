@@ -119,6 +119,9 @@ ServerEvents.recipes(event => {
        event.remove({ id: 'gtceu:macerator/macerate_bolt_extruder_mold' })
        event.remove({ id: 'gtceu:arc_furnace/arc_bolt_extruder_mold' })
        event.remove({ id: 'gtceu:shaped/good_circuit_board' })
+       event.remove({ id: 'experienceobelisk:metamorpher/netherite_ingot_metamorphosis' })
+       event.remove({ id: 'biomeswevegone:golden_apple_from_green_apple' })
+       event.remove({ id: 'bhc:god_apple' })
 
 
        event.remove({ id: 'paraglider:paraglider' })

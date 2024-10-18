@@ -89,9 +89,9 @@ ServerEvents.recipes(event => {
 
 //Time to do some Gregification
 //Spellbooks
-ServerEvents.recipes(e => {
-    //e.remove({id: 'ars_nouveau:apprentice_spell_book'})
-    //e.shaped('ars_nouveau:apprentice_spell_book', [
+ServerEvents.recipes(event => {
+    //event.remove({id: 'ars_nouveau:apprentice_spell_book'})
+    //event.shaped('ars_nouveau:apprentice_spell_book', [
     //        'BAA',
     //        'ECD',
     //        ' C '
@@ -104,8 +104,8 @@ ServerEvents.recipes(e => {
     //        E: '#forge:tools/files',
     //    }
     //)
-    //e.remove({id: 'ars_nouveau:archmage_spell_book'})
-    //e.shaped('ars_nouveau:archmage_spell_book', [
+    //event.remove({id: 'ars_nouveau:archmage_spell_book'})
+    //event.shaped('ars_nouveau:archmage_spell_book', [
     //        'BAA',
     //        'ECD',
     //        ' C '
@@ -120,16 +120,16 @@ ServerEvents.recipes(e => {
     //)
 
     //Fiber Recipes
-    e.remove({ id: 'ars_nouveau:magebloom_fiber' })
-    e.recipes.gtceu.spooling_machine('ars_nouveau:magebloom_fiber')
+    event.remove({ id: 'ars_nouveau:magebloom_fiber' })
+    event.recipes.gtceu.spooling_machine('ars_nouveau:magebloom_fiber')
         .itemInputs('ars_nouveau:magebloom')
         .itemOutputs('ars_nouveau:magebloom_fiber')
         .duration(60)
         .EUt(4);
     //Spooling Recipes
 
-    e.remove({ output: 'ars_nouveau:blank_thread' })
-    e.recipes.gtceu.spooling_machine('ars_nouveau:blank_thread')
+    event.remove({ output: 'ars_nouveau:blank_thread' })
+    event.recipes.gtceu.spooling_machine('ars_nouveau:blank_thread')
         .itemInputs('4x ars_nouveau:magebloom_fiber')
         .itemInputs('gtceu:gold_rod')
         .itemOutputs('ars_nouveau:blank_thread')
@@ -137,8 +137,8 @@ ServerEvents.recipes(e => {
         .EUt(4);
 
     //Magic Stations
-    e.remove({ id: 'ars_nouveau:arcane_core' })
-    e.shaped('ars_nouveau:arcane_core', [
+    event.remove({ id: 'ars_nouveau:arcane_core' })
+    event.shaped('ars_nouveau:arcane_core', [
         'ACA',
         'BDB',
         'AAA'
@@ -150,8 +150,8 @@ ServerEvents.recipes(e => {
             D: 'ars_nouveau:source_gem',
         }
     )
-    e.remove({ id: 'ars_nouveau:wilden_summon_alt' })
-    e.shaped('ars_nouveau:arcane_core', [
+    event.remove({ id: 'ars_nouveau:wilden_summon_alt' })
+    event.shaped('ars_nouveau:arcane_core', [
         'ACA',
         'BDB',
         'AAA'
@@ -163,45 +163,45 @@ ServerEvents.recipes(e => {
             D: 'ars_nouveau:source_gem',
         }
     )
-    e.remove({ id: 'ars_nouveau:enchanting_apparatus' })
-    e.shaped('ars_nouveau:enchanting_apparatus', [
+    event.remove({ id: 'ars_nouveau:enchanting_apparatus' })
+    event.shaped('ars_nouveau:enchanting_apparatus', [
         'BAB',
         'CDC',
         'BAB'
     ],
         {
             A: 'ars_nouveau:sourcestone',
-            B: 'minecraft:gold_nugget',
-            C: 'gtceu:gold_plate',
+            B: 'gtceu:rose_gold_nugget',
+            C: 'gtceu:rose_gold_plate',
             D: 'minecraft:diamond',
         }
     )
-    e.remove({ id: 'ars_nouveau:agronomic_sourcelink' })
-    e.shaped('ars_nouveau:agronomic_sourcelink', [
+    event.remove({ id: 'ars_nouveau:agronomic_sourcelink' })
+    event.shaped('ars_nouveau:agronomic_sourcelink', [
         ' A ',
         'BCB',
         ' A '
     ],
         {
             A: 'ars_nouveau:source_gem',
-            B: 'gtceu:gold_plate',
+            B: 'gtceu:rose_gold_plate',
             C: 'minecraft:wheat',
         }
     )
-    e.remove({ id: 'ars_nouveau:source_jar' })
-    e.shaped('ars_nouveau:source_jar', [
+    event.remove({ id: 'ars_nouveau:source_jar' })
+    event.shaped('ars_nouveau:source_jar', [
         'CBC',
         'A A',
         'CCC'
     ],
         {
             A: '#forge:glass',
-            B: 'gtceu:gold_plate',
+            B: 'gtceu:rose_gold_plate',
             C: 'ars_nouveau:archwood_slab',
         }
     )
-    e.remove({ id: 'ars_nouveau:relay' })
-    e.shaped('ars_nouveau:relay', [
+    event.remove({ id: 'ars_nouveau:relay' })
+    event.shaped('ars_nouveau:relay', [
         'A A',
         'ABA',
         'A A'
@@ -211,8 +211,8 @@ ServerEvents.recipes(e => {
             B: 'ars_nouveau:source_gem_block',
         }
     )
-    e.remove({ output: 'ars_nouveau:imbuement_chamber' })
-    e.shaped('ars_nouveau:imbuement_chamber', [
+    event.remove({ output: 'ars_nouveau:imbuement_chamber' })
+    event.shaped('ars_nouveau:imbuement_chamber', [
         'ARA',
         'A A',
         'ARA'

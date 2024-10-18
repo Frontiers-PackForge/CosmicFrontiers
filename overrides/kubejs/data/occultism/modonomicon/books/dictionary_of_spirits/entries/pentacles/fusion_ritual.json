@@ -8,7 +8,7 @@
   "description": "",
   "hide_while_locked": false,
   "icon": {
-    "item": "minecraft:bedrock"
+    "item": "nether_remastered:seal_of_the_underworld_item"
   },
   "name": "book.occultism.dictionary_of_spirits.pentacles.basic_fusion.name",
   "pages": [

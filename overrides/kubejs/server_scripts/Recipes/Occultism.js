@@ -26,6 +26,22 @@ yeet('occultism:silver_dust')
 yeet('occultism:obsidian_dust')
 yeet('occultism:crushed_end_stone')
 
+yeet('occultism:storage_remote_inert')
+yeet('occultism:storage_remote')
+yeet('occultism:stable_wormhole')
+yeet('occultism:iron_dust')
+yeet('occultism:book_of_calling_djinni_manage_machine')
+yeet('occultism:ritual_dummy/summon_foliot_crusher')
+yeet('occultism:ritual_dummy/summon_djinni_crusher')
+yeet('occultism:ritual_dummy/summon_afrit_crusher')
+yeet('occultism:ritual_dummy/summon_marid_crusher')
+yeet('occultism:wormhole_frame')
+yeet('occultism:satchel')
+
+
+
+
+
 ServerEvents.tags('item', event => {
   event.remove('forge:ingots/silver', 'occultism:silver_ingot')
   event.remove('forge:dusts/iron', 'occultism:iron_dust')
@@ -42,6 +58,7 @@ ServerEvents.recipes(event => {
   event.remove({ type: 'occultism:crushing' })
   event.remove({ type: 'occultism:miner' })
   event.remove({ id: 'occultism:spirit_fire/spirit_attuned_gem' })
+  event.remove({ id: 'occultism:crafting/chalk_red_impure' })
   // event.recipes.occultism.spirit_trade('minecraft:rotten_flesh', 'minecraft:bone')
   event.recipes.occultism.spirit_fire('occultism:spirit_attuned_gem', 'gtceu:certus_quartz_gem')
   // event.recipes.occultism.crushing(
@@ -56,7 +73,16 @@ ServerEvents.recipes(event => {
     T: 'gtceu:talc_dust',
     C: 'gtceu:ash_dust'
   })
-  event.remove({id : 'occultism:crafting/storage_controller'})
+
+  event.shaped('occultism:magic_lamp_empty', [
+    ' C ',
+    'CTC',
+    ' CC',
+  ], {
+    T: 'gtceu:double_iesnium_plate',
+    C: 'gtceu:double_silver_plate'
+  })
+  event.remove({ id: 'occultism:crafting/storage_controller' })
   event.shaped('occultism:storage_controller', [
     ' A ',
     ' B ',
@@ -106,13 +132,49 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'occultism:crafting/lenses' })
   event.remove({ id: 'occultism:crafting/chalk_white_impure' })
   event.remove({ id: 'occultism:spirit_fire/chalk_white' })
+  event.remove({ id: 'occultism:crafting/magic_lamp_empty' })
+
+  //not used rituals
+  event.remove({ id: 'occultism:ritual/summon_marid_crusher' })
+  event.remove({ id: 'occultism:ritual/summon_djinni_crusher' })
+  event.remove({ id: 'occultism:ritual/possess_shulker' })
+  event.remove({ id: 'occultism:ritual/summon_foliot_crusher' })
+  event.remove({ id: 'occultism:ritual/summon_afrit_crusher' })
+  event.remove({ id: 'occultism:ritual/possess_weak_shulker' })
+  event.remove({ id: 'occultism:ritual/craft_stable_wormhole' })
+  event.remove({ id: 'occultism:crafting/storage_remote_inert' })
+  event.remove({ id: 'occultism:ritual/craft_storage_remote' })
+  // event.remove({ id: '' })
+  // event.remove({ id: '' })
+
+
   event.recipes.gtceu.primitive_blast_furnace('chalk_purify')
     .itemInputs('occultism:chalk_white_impure')
     .itemOutputs('occultism:chalk_white')
     .duration(3000)
+  event.recipes.gtceu.primitive_blast_furnace('chalk_bake_red')
+    .itemInputs(['occultism:chalk_white_impure', '3x gtceu:raw_pyrope', '3x occultism:afrit_essence'])
+    .itemOutputs('occultism:chalk_red_impure')
+    .duration(1500)
   event.remove({ id: 'occultism:crafting/chalk_gold_impure' })
   event.recipes.gtceu.primitive_blast_furnace('yellow_chalk_melding')
     .itemInputs(['occultism:chalk_white_impure', 'gtceu:ancient_debris_dust', '2x gtceu:gold_sulfide_amalgam_dust'])
+    .itemOutputs('occultism:chalk_gold_impure')
+    .duration(800)
+    //IPBF VERSIONS
+  event.recipes.gtceu.industrial_primitive_blast_furnace('chalk_purify_ipbf')
+    .itemInputs('occultism:chalk_white_impure')
+    .inputFluids('gtceu:creosote 1000')
+    .itemOutputs('occultism:chalk_white')
+    .duration(3000)
+  event.recipes.gtceu.industrial_primitive_blast_furnace('chalk_bake_red_ipbf')
+    .itemInputs(['occultism:chalk_white_impure', '3x gtceu:raw_pyrope', '3x occultism:afrit_essence'])
+    .inputFluids('gtceu:creosote 1000')
+    .itemOutputs('occultism:chalk_red_impure')
+    .duration(1500)
+  event.recipes.gtceu.industrial_primitive_blast_furnace('yellow_chalk_melding_ipbf')
+    .itemInputs(['occultism:chalk_white_impure', 'gtceu:ancient_debris_dust', '2x gtceu:gold_sulfide_amalgam_dust'])
+    .inputFluids('gtceu:creosote 1000')
     .itemOutputs('occultism:chalk_gold_impure')
     .duration(800)
   event.recipes.occultism.miner(
@@ -191,4 +253,32 @@ ServerEvents.recipes(event => {
     'toms_storage:ts.storage_terminal',
     'occultism:craft_djinni'
   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.fusion_ritual.terminal_crafting")
+  event.remove({ id: 'occultism:ritual/craft_storage_controller_base' })
+  event.recipes.occultism.ritual(
+    'occultism:storage_controller_base',
+    ['gtceu:double_gold_plate',
+      'gtceu:double_gold_plate',
+      'gtceu:double_gold_plate',
+      'gtceu:double_gold_plate',
+      'gtceu:double_gold_plate',
+      'gtceu:double_gold_plate',
+      'gtceu:double_gold_plate',
+      'gtceu:double_gold_plate',
+    ],
+    'occultism:otherstone_pedestal',
+    'occultism:craft_foliot'
+  ).dummy('occultism:ritual_dummy/craft_storage_controller_base').id("occultism:frontiers.fusion_ritual.actuator_base")
+  event.remove({ id: 'occultism:ritual/craft_dimensional_mineshaft' })
+  event.recipes.occultism.ritual(
+    'occultism:dimensional_mineshaft',
+    ['occultism:spirit_attuned_crystal',
+      'occultism:otherstone_pedestal',
+      'occultism:otherstone_pedestal',
+      'occultism:otherstone_pedestal',
+      'occultism:otherstone_pedestal',
+      'occultism:iesnium_block',
+      'gtceu:double_gold_plate'],
+    'occultism:book_of_binding_bound_djinni',
+    'occultism:craft_djinni'
+  ).dummy('occultism:ritual_dummy/craft_dimensional_mineshaft').id("occultism:frontiers.fusion_ritual.dim_mineshaft")
 })
