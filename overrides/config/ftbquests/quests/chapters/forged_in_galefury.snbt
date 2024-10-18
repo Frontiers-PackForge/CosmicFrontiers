@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "forged_in_galefury"
 	group: "4135A2BA7EBD719E"
+	hide_quest_until_deps_visible: true
 	icon: "gtceu:galvanized_ethersteel_ingot"
 	id: "2AF6C950A3B12568"
 	order_index: 1
@@ -234,6 +235,7 @@
 				""
 				"Ethersteel will be widely used in HV and EV, so I'd recommend setting up automation or batching large batches of it..."
 			]
+			hide: true
 			id: "44372CC42BD4ABEF"
 			shape: "hexagon"
 			size: 2.0d
@@ -1632,17 +1634,6 @@
 			}]
 			x: -1.5d
 			y: -1.0d
-		}
-		{
-			id: "4E02E5BCE5A73FFD"
-			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:thundering_mana"
-				id: "633D34E89D2BB584"
-				type: "fluid"
-			}]
-			x: 2.5d
-			y: 7.5d
 		}
 	]
 	title: "Forged in Galefury [MV]"
