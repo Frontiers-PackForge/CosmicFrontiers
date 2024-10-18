@@ -34,7 +34,7 @@
 				"       &eMemory Status&r - &cUnrecoverable Error&r"
 				"         &7Can not disconnect memory storage&r."
 				"               &7Inducing Temporal Amnesia&r."
-				"             &cAll othere checks have failed&r."
+				"             &cAll other checks have failed&r."
 				"               Starting Script #1.216e939 "
 				"          —---------------------—-----"
 				"                    VERDICT - GUILTY"
@@ -753,6 +753,7 @@
 			]
 			icon: "cosmiccore:donk"
 			id: "192AC19C353976D9"
+			min_width: 350
 			shape: "gear"
 			size: 1.0d
 			subtitle: "&fCosmetic Discord Roles, And how to get them."

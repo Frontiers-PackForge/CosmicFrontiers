@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "a_crack_in_the_sky_aether"
 	group: "4135A2BA7EBD719E"
+	hide_quest_until_deps_visible: true
 	icon: "minecraft:glowstone"
 	id: "0177AB58CEDC8C8D"
 	order_index: 0
