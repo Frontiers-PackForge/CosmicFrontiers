@@ -530,7 +530,7 @@
 			rewards: [{
 				count: 8
 				id: "61FE86DFC74BFBFB"
-				item: "cosmiccore:large_shard_of_perpetuity"
+				item: "cosmiccore:shard_of_perpetuity"
 				type: "item"
 			}]
 			subtitle: "Even Hotter!"
@@ -748,7 +748,7 @@
 			description: [
 				"Now combine all your concrete and firebricks together in a large caster to get your firebricks"
 				""
-				"TODO : WIP DESC"
+				""
 			]
 			id: "756D0820A4A089A9"
 			rewards: [{
@@ -1181,7 +1181,7 @@
 			description: [
 				"You can't make ULV input hatches currently however, you can make input hatches out of bronze which will work for your large mixer"
 				""
-				"todo ; grammar check temp desc"
+				""
 			]
 			hide_dependency_lines: true
 			id: "2A2CF5863AD39845"
@@ -2358,19 +2358,20 @@
 				"124AD3DE3B043A7A"
 				"66BB2CDC4D3FB464"
 			]
-			description: [
-				"You've Finally put together all the parts needed to advance to LV."
-				""
-				"I wish you luck."
-				""
-				""
-				""
-			]
+			description: ["This Quest Unlocks the LV Chapter Once Completed, at this point you've made the major parts for LV Machines, you'll be focused on creating components and proper electric industry next."]
 			icon: "createdeco:decal_up"
 			id: "14988E390F2CD204"
 			rewards: [{
-				id: "4C4E680A0C9866F9"
-				item: "trofers:large_pillar"
+				id: "2430454B84B8BAA0"
+				item: {
+					Count: 1
+					id: "trofers:medium_plate"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "frontiers:materials/steel"
+						}
+					}
+				}
 				type: "item"
 			}]
 			shape: "pentagon"
@@ -2604,11 +2605,25 @@
 		}
 		{
 			dependencies: ["14988E390F2CD204"]
+			description: [
+				"Something was meant to be here, but I can't seem to remember."
+				""
+				"This story that seems similar yet foreign, remembered but also forgotten, is burning a hole in my head."
+				"If I keep establishing myself in this world, I should be able to find a starting point for this story."
+				""
+				"These headaches have gotten unbearably loud."
+			]
 			hide: true
 			hide_details_until_startable: true
+			hide_text_until_complete: true
 			icon: "ars_nouveau:worn_notebook"
 			id: "70F95C537C54938A"
 			subtitle: "Story Entry 1 | Description Hidden Until Completed"
+			tasks: [{
+				id: "2E2868406D150CBC"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			title: "To Question What's Here"
 			x: -13.5d
 			y: 9.0d

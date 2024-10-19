@@ -1,0 +1,35 @@
+{
+	id: "28F994CE87CBCC75"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "minecraft:music_disc_13" }
+		{ item: "minecraft:music_disc_cat" }
+		{ item: "minecraft:music_disc_blocks" }
+		{ item: "minecraft:music_disc_chirp" }
+		{ item: "minecraft:music_disc_far" }
+		{ item: "minecraft:music_disc_mall" }
+		{ item: "minecraft:music_disc_mellohi" }
+		{ item: "minecraft:music_disc_stal" }
+		{ item: "minecraft:music_disc_strad" }
+		{ item: "minecraft:music_disc_ward" }
+		{ item: "minecraft:music_disc_11" }
+		{ item: "minecraft:music_disc_wait" }
+		{ item: "minecraft:music_disc_otherside" }
+		{ item: "minecraft:music_disc_5" }
+		{ item: "minecraft:music_disc_pigstep" }
+		{ item: "minecraft:music_disc_relic" }
+		{ item: "biomesoplenty:music_disc_wanderer" }
+		{ item: "ars_nouveau:music_disc_aria_biblio" }
+		{ item: "ars_nouveau:music_disc_thistle_the_sound_of_glass" }
+		{ item: "ars_nouveau:music_disc_firel_the_wild_hunt" }
+		{ item: "aether:music_disc_aether_tune" }
+		{ item: "aether:music_disc_ascending_dawn" }
+		{ item: "undergarden:music_disc_mammoth" }
+		{ item: "undergarden:music_disc_limax_maximus" }
+		{ item: "undergarden:music_disc_gloomper_anthem" }
+		{ item: "biomeswevegone:music_disc_pixie_club" }
+		{ item: "biomeswevegone:music_disc_pixie_club" }
+	]
+	title: "Music Discs"
+}

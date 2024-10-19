@@ -1,0 +1,25 @@
+{
+	icon: "minecraft:oak_sapling"
+	id: "0C3B7EC7F4DDA576"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "saplings"
+	}
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ count: 8, item: "minecraft:oak_sapling" }
+		{ count: 8, item: "minecraft:spruce_sapling" }
+		{ count: 8, item: "minecraft:birch_sapling" }
+		{ count: 8, item: "minecraft:jungle_sapling" }
+		{ count: 8, item: "minecraft:acacia_sapling" }
+		{ count: 8, item: "minecraft:dark_oak_sapling" }
+		{ count: 8, item: "minecraft:cherry_sapling" }
+	]
+	title: "Saplings"
+}

@@ -35,6 +35,8 @@ ServerEvents.recipes(event => {
     //Farmer's Delight
     event.remove({ id:'vintagedelight:charcoal_from_magic_vine' })
     event.remove({ id:'vintagedelight:charcoal_from_magic_vine' })
+    event.remove({ id:'jei:/moredelight/farmersdelight/cutting/bread_slice' })
+    event.remove({ id:'moredelight:farmersdelight/cutting/bread_slice' })
     event.remove({ output:'farmersdelight:stove' })
     event.shaped( 'farmersdelight:stove', [
         'IGI',

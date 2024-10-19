@@ -886,6 +886,61 @@ ServerEvents.recipes(event => {
       P: `gtceu:${tier}_electric_pump`
     }
     )
+    event.shaped(`gtceu:${tier}_culinary_assembler`, [
+      'PCP',
+      'BHB',
+      'ZQZ'
+    ], {
+      B: `gtceu:${tier}_conveyor_module`,
+      C: `#gtceu:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`,
+      P: `gtceu:${tier}_robot_arm`,
+      Q: `farmersdelight:stove`
+    }
+    )
+    event.shaped(`gtceu:${tier}_juicer`, [
+      'PCP',
+      'BHO',
+      'ZQZ'
+    ], {
+      B: `gtceu:${tier}_conveyor_module`,
+      C: `#gtceu:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`,
+      P: `gtceu:${tier}_electric_piston`,
+      O: `gtceu:${tier}_electric_pump`,
+      Q: 'create:fluid_tank'
+    }
+    )
+    event.shaped(`gtceu:${tier}_slicer`, [
+      'CSP',
+      'BQB',
+      'ZHZ'
+    ], {
+      B: `gtceu:${tier}_conveyor_module`,
+      C: `#gtceu:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`,
+      P: `gtceu:${tier}_electric_piston`,
+      Q: 'farmersdelight:cutting_board',
+      S: 'gtceu:steel_buzz_saw_blade'
+    }
+    )
+    event.shaped(`gtceu:${tier}_fryer`, [
+      'PSP',
+      'RQE',
+      'ZHZ'
+    ], {
+      R: `gtceu:long_${cableType}_rod`,
+      H: `gtceu:${tier}_machine_hull`,
+      E: `gtceu:${tier}_emitter`,
+      Z: `gtceu:${cableType}_single_cable`,
+      P: `gtceu:${tier}_electric_piston`,
+      Q: 'gtceu:steel_drum',
+      S: 'createdeco:andesite_bars'
+    }
+    )
   })
   event.remove({ output: 'gtceu:alloy_blast_smelter' })
   event.shaped('gtceu:alloy_blast_smelter', [
