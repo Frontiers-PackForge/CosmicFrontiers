@@ -95,11 +95,7 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:nichrome 144')
     .duration(500)
     .EUt(GTValues.VA[GTValues.EV]);
-  event.recipes.gtceu.macerator('gtceu:treated_wood_dust_shred')
-    .itemInputs('gtceu:treated_wood_planks')
-    .itemOutputs('gtceu:treated_wood_dust')
-    .duration(40)
-    .EUt(8);
+
   event.recipes.gtceu.macerator('gtceu:nether_brick_dust_shred')
     .itemInputs('minecraft:nether_bricks')
     .itemOutputs('gtceu:nether_brick_dust_dust')
@@ -147,6 +143,43 @@ ServerEvents.recipes(event => {
     W: '#forge:tools/wrenches'
   })
 
+  event.shaped('gtceu:treated_wood_plate', [
+    ' S ',
+    ' P ',
+    '   '
+  ], {
+    P: 'gtceu:treated_wood_slab',
+    S: '#forge:tools/saws'
+  })
+  event.shaped('gtceu:high_pressure_assembler', [
+    'VRV',
+    'RCR',
+    'BBB'
+  ], {
+    B: 'cosmiccore:steel_plated_bronze_casing',
+    C: 'gtceu:steel_machine_casing',
+    V: 'gtceu:vacuum_tube',
+    R: 'ulvcovm:ulv_robot_arm'
+  })
+  event.shaped('2x cosmiccore:steel_plated_bronze_casing', [
+    'PRP',
+    'RCR',
+    'PRP'
+  ], {
+    C: 'gtceu:bronze_machine_casing',
+    R: 'gtceu:steel_rod',
+    P: 'gtceu:steel_plate'
+  })
+  event.recipes.gtceu.assembler('gtceu:treated_wood_dust_shred')
+  .itemInputs(['gtceu:bronze_machine_casing', '4x gtceu:steel_rod', '4x gtceu:steel_plate'])
+  .itemOutputs('2x cosmiccore:steel_plated_bronze_casing')
+  .duration(40)
+  .EUt(16);
+  event.recipes.gtceu.macerator('gtceu:treated_wood_dust_shred')
+    .itemInputs('gtceu:treated_wood_planks')
+    .itemOutputs('gtceu:treated_wood_dust')
+    .duration(40)
+    .EUt(8);
   //ManaSteel Stuff
   event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe')
     .itemInputs('botania:manasteel_ingot')
@@ -415,6 +448,23 @@ ServerEvents.recipes(event => {
     .duration(40)
     .EUt(GTValues.VA[GTValues.LV]);
   //HULLS
+  //LV MACHINE HULL AND CASING
+  event.remove({ output: 'gtceu:lv_machine_casing' })
+  event.recipes.gtceu.assembler('gtceu:lv_machine_casing_assembler')
+    .itemInputs(['4x gtceu:double_runed_steel_plate', '4x gtceu:steel_plate'])
+    .itemOutputs('gtceu:lv_machine_casing')
+    .circuit(8)
+    .duration(40)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:lv_machine_casing', [
+    'AMA',
+    'MWM',
+    'AMA'
+  ], {
+    A: 'gtceu:double_runed_steel_plate',
+    M: 'gtceu:steel_plate',
+    W: '#forge:tools/wrenches'
+  })
   //MV MACHINE HULL AND CASING
   event.remove({ output: 'gtceu:mv_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:mv_machine_casing_assembler')
@@ -431,8 +481,7 @@ ServerEvents.recipes(event => {
     A: 'gtceu:double_aluminium_plate',
     M: 'gtceu:manasteel_plate',
     W: '#forge:tools/wrenches'
-  }
-  )
+  })
   //HV HULLS AND CASINGS
   //MV MACHINE HULL AND CASING
   event.remove({ output: 'gtceu:hv_machine_casing' })
@@ -835,6 +884,61 @@ ServerEvents.recipes(event => {
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`,
       P: `gtceu:${tier}_electric_pump`
+    }
+    )
+    event.shaped(`gtceu:${tier}_culinary_assembler`, [
+      'PCP',
+      'BHB',
+      'ZQZ'
+    ], {
+      B: `gtceu:${tier}_conveyor_module`,
+      C: `#gtceu:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`,
+      P: `gtceu:${tier}_robot_arm`,
+      Q: `farmersdelight:stove`
+    }
+    )
+    event.shaped(`gtceu:${tier}_juicer`, [
+      'PCP',
+      'BHO',
+      'ZQZ'
+    ], {
+      B: `gtceu:${tier}_conveyor_module`,
+      C: `#gtceu:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`,
+      P: `gtceu:${tier}_electric_piston`,
+      O: `gtceu:${tier}_electric_pump`,
+      Q: 'create:fluid_tank'
+    }
+    )
+    event.shaped(`gtceu:${tier}_slicer`, [
+      'CSP',
+      'BQB',
+      'ZHZ'
+    ], {
+      B: `gtceu:${tier}_conveyor_module`,
+      C: `#gtceu:circuits/${tier}`,
+      H: `gtceu:${tier}_machine_hull`,
+      Z: `gtceu:${cableType}_single_cable`,
+      P: `gtceu:${tier}_electric_piston`,
+      Q: 'farmersdelight:cutting_board',
+      S: 'gtceu:steel_buzz_saw_blade'
+    }
+    )
+    event.shaped(`gtceu:${tier}_fryer`, [
+      'PSP',
+      'RQE',
+      'ZHZ'
+    ], {
+      R: `gtceu:long_${cableType}_rod`,
+      H: `gtceu:${tier}_machine_hull`,
+      E: `gtceu:${tier}_emitter`,
+      Z: `gtceu:${cableType}_single_cable`,
+      P: `gtceu:${tier}_electric_piston`,
+      Q: 'gtceu:steel_drum',
+      S: 'createdeco:andesite_bars'
     }
     )
   })

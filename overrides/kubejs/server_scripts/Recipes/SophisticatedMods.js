@@ -38,6 +38,17 @@ ServerEvents.recipes(event => {
     C: 'gtceu:bronze_crate',
     W: 'cosmiccore:waxed_leather',
   })
+  event.shaped('sophisticatedstorage:packing_tape', [
+    'SSS',
+    'CCC',
+    'SSS'
+  ], {
+    S: 'minecraft:paper',
+    C: 'cosmiccore:hardened_resin'
+  })
+  event.shapeless('sophisticatedstorage:packing_tape', [
+    'gtceu:basic_tape'
+  ])
   //For the Actual Default Soph Storage Chests because their recipe is either missing, the script is broken, or they just were never added.
   let basicWoodType = [
     'oak',

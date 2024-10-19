@@ -14,10 +14,11 @@
 		}
 	}
 	id: "452F4ECA9A54FC8F"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["14988E390F2CD204"]
 			description: [
 				"Well, the lights are still not on yet!"
 				""
@@ -341,27 +342,18 @@
 				"&l&9If you don't care about the story of Frontiers, feel free to click the checkmark now. If not, enjoy reading the log. Scroll to the next page."
 				""
 				"{@pagebreak}"
-				"Humanity was at the peak of Technological Prowess, a simple thing for a civilization lasting billions of years: universe dominance and mastery over the ever-constantly expanding dark energy."
-				"{@pagebreak}"
-				"Humanity stood tall with Bioengineering and Dominance Over the observable universe. However, knowledge was no longer accessible to everyone; knowing the right person could be the difference between living to 1 million or 100. Where you were in the local cluster, too, dictated this. Space travel still took decades, loosely done by allowing ships to pilot themselves with the crew asleep for the ride."
-				"{@pagebreak}"
-				"Archonic and powerful technology is nearly indistinguishable from magic."
-				"And you, a humble residence of Earth-Prime, the peak of humanity, Broke this rigid balance. "
-				"{@pagebreak}"
-				"I discovered one final elementary particle, the psion. A particle so erratic only biological interfaces like the human brain could meld with it. It acts as an ultra-powerful glue between all organic matter within the human body and would enhance the organic baseline of a human tenfold."
-				"Allowing human bodies to modify and manipulate the very fundamentals of the universe, quarks, at their will."
-				"{@pagebreak}"
-				"The Arbiters of Sol-Prime were very keen on acquiring this technology as current Genetics work on replacing body parts via organ growth and stem cell replication. "
-				"{@pagebreak}"
-				"I was the first to learn of psions and the last, Refusing to give my understanding of this immortality-unlocking biotech to the Arbiters. I was falsely accused of genocide and cast into a mold universe. An unstable microverse loosely based on ours. My memories are sealed and locked away. They are slowly returning as I restore my research capabilities."
-				"{@pagebreak}"
-				"My resentment will be nothing but immortal hatred. Unlike the scum on the outside, I have eternity. All that needs to last is my will to return."
-				"I will get out of here somehow. And I will undo the horrible cycle and take humanity one final step forward."
+				"Humanity was at the peak of Technological Prowess, a simple thing for a civilization lasting billions of years: universe dominance and mastery over the ever-constantly expanding laws of the world. We stood tall with specialized bioengineering and dominance over galactic travel. "
+				""
+				"But something seems wrong. I know I stand above it all, immortal as one would claim."
+				"However much I try to remember how this came to be, I am lost. No matter how much I ponder, all I am met with is headaches and a sense of dreadful longing."
+				""
+				"I seem to have lost a significant portion of my memories; however, whether it was against my will is still unknown. I should look into repairing my mental state as I figure out more about this world in which I have been left to play a part in."
 			]
 			hide_details_until_startable: true
 			hide_text_until_complete: true
 			icon: "ars_nouveau:creative_spell_book"
 			id: "610B8FB74C87009D"
+			min_width: 300
 			shape: "gear"
 			size: 1.5d
 			subtitle: "&c&lStory"
@@ -369,7 +361,7 @@
 				id: "04E9DC30A46F6A1E"
 				type: "checkmark"
 			}]
-			title: "&aThe Power of a Mage"
+			title: "&fA Memory Forgotten"
 			x: 0.0d
 			y: 4.0d
 		}
@@ -595,22 +587,6 @@
 			}]
 			x: 0.0d
 			y: 6.0d
-		}
-		{
-			dependencies: ["6D452156A4F46453"]
-			dependency_requirement: "one_started"
-			description: ["NYI - Coming 0.2.1"]
-			id: "579C6489D5FD345D"
-			optional: true
-			shape: "gear"
-			subtitle: "Easy Phenolics"
-			tasks: [{
-				id: "4FEDDFC3D748C267"
-				item: "gtceu:phenolic_printed_circuit_board"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1514,6 +1490,23 @@
 			}]
 			x: -4.75d
 			y: 3.25d
+		}
+		{
+			dependencies: ["12EBF67C386AA4B6"]
+			description: [
+				"Hi Ghost here! I'm currently rewriting the earlier parts of the Questbook"
+				""
+				"Steam was the first to get a rewrite. LV will most likely get a rewrite after the next major update (0.6.0)"
+			]
+			id: "5A377425DA3721EE"
+			shape: "gear"
+			subtitle: "Hey! Readme!"
+			tasks: [{
+				id: "24851296EF4B5730"
+				type: "custom"
+			}]
+			x: -1.5d
+			y: 2.5d
 		}
 	]
 	subtitle: ["Finally! Energy!"]

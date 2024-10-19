@@ -8,6 +8,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			can_repeat: true
 			icon: {
 				Count: 1
 				id: "botania:brew_flask"
@@ -28,7 +29,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "Breathing Easier"
+			subtitle: "&fBreathing Easier"
 			tasks: [{
 				consume_items: true
 				count: 64L
@@ -61,13 +62,16 @@
 			y: 0.0d
 		}
 		{
+			can_repeat: true
 			icon: "cold_sweat:chameleon_spawn_egg"
 			id: "5B2D483D13119B2C"
+			optional: true
 			rewards: [{
 				id: "59A38DCE9CF67834"
 				item: "cold_sweat:chameleon_spawn_egg"
 				type: "item"
 			}]
+			subtitle: "&fBetter Insulation"
 			tasks: [{
 				count: 4L
 				id: "42016E1E95A5F0BE"
@@ -127,9 +131,349 @@
 					type: "item"
 				}
 			]
-			title: "Need Silk?"
+			title: "Shop : Silk Touch"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:beehive"
+			id: "3DE6E688D4062EAB"
+			optional: true
+			rewards: [{
+				id: "661C26AE2E720A1B"
+				item: {
+					Count: 1
+					id: "minecraft:beehive"
+					tag: {
+						BlockEntityTag: {
+							Bees: [
+								{
+									EntityData: {
+										AbsorptionAmount: 0.0f
+										Age: 0
+										AngerTime: 0
+										Attributes: [
+											{
+												Base: 48.0d
+												Modifiers: [{
+													Amount: -0.022296463255252183d
+													Name: "Random spawn bonus"
+													Operation: 1
+													UUID: [I;
+														1034843629
+														1152337282
+														-2024597957
+														56897223
+													]
+												}]
+												Name: "minecraft:generic.follow_range"
+											}
+											{
+												Base: 0.08d
+												Name: "forge:entity_gravity"
+											}
+											{
+												Base: 0.30000001192092896d
+												Name: "minecraft:generic.movement_speed"
+											}
+											{
+												Base: 0.0d
+												Name: "forge:step_height_addition"
+											}
+										]
+										BalmData: { }
+										CanUpdate: 1b
+										FlowerPos: {
+											X: 1276
+											Y: 78
+											Z: -9
+										}
+										ForcedAge: 0
+										ForgeCaps: {
+											"aether:mob_accessory": {
+												DropChances: {
+													aether_gloves: 0.085f
+													aether_pendant: 0.085f
+													hands: 0.085f
+													necklace: 0.085f
+												}
+											}
+											"curios:inventory": {
+												Curios: [ ]
+											}
+										}
+										ForgeData: { }
+										HasNectar: 1b
+										HasStung: 0b
+										Health: 10.0f
+										InLove: 0
+										Invulnerable: 0b
+										PersistenceRequired: 0b
+										"forge:spawn_type": "SPAWN_EGG"
+										id: "minecraft:bee"
+									}
+									MinOccupationTicks: 2400
+									TicksInHive: 241
+								}
+								{
+									EntityData: {
+										AbsorptionAmount: 0.0f
+										Age: 0
+										AngerTime: 0
+										Attributes: [
+											{
+												Base: 48.0d
+												Modifiers: [{
+													Amount: 0.009484737847434583d
+													Name: "Random spawn bonus"
+													Operation: 1
+													UUID: [I;
+														1569421191
+														-680246388
+														-1167730431
+														-138231027
+													]
+												}]
+												Name: "minecraft:generic.follow_range"
+											}
+											{
+												Base: 0.08d
+												Name: "forge:entity_gravity"
+											}
+											{
+												Base: 0.30000001192092896d
+												Name: "minecraft:generic.movement_speed"
+											}
+											{
+												Base: 0.0d
+												Name: "forge:step_height_addition"
+											}
+										]
+										BalmData: { }
+										CanUpdate: 1b
+										FlowerPos: {
+											X: 1274
+											Y: 77
+											Z: -9
+										}
+										ForcedAge: 0
+										ForgeCaps: {
+											"aether:mob_accessory": {
+												DropChances: {
+													aether_gloves: 0.085f
+													aether_pendant: 0.085f
+													hands: 0.085f
+													necklace: 0.085f
+												}
+											}
+											"curios:inventory": {
+												Curios: [ ]
+											}
+										}
+										ForgeData: { }
+										HasNectar: 1b
+										HasStung: 0b
+										Health: 10.0f
+										InLove: 0
+										Invulnerable: 0b
+										PersistenceRequired: 0b
+										"forge:spawn_type": "SPAWN_EGG"
+										id: "minecraft:bee"
+									}
+									MinOccupationTicks: 2400
+									TicksInHive: 180
+								}
+								{
+									EntityData: {
+										AbsorptionAmount: 0.0f
+										Age: 0
+										AngerTime: 0
+										Attributes: [
+											{
+												Base: 48.0d
+												Modifiers: [{
+													Amount: -0.08286577108357637d
+													Name: "Random spawn bonus"
+													Operation: 1
+													UUID: [I;
+														618030944
+														1584418581
+														-1384511164
+														-734947865
+													]
+												}]
+												Name: "minecraft:generic.follow_range"
+											}
+											{
+												Base: 0.08d
+												Name: "forge:entity_gravity"
+											}
+											{
+												Base: 0.30000001192092896d
+												Name: "minecraft:generic.movement_speed"
+											}
+											{
+												Base: 0.0d
+												Name: "forge:step_height_addition"
+											}
+										]
+										BalmData: { }
+										CanUpdate: 1b
+										FlowerPos: {
+											X: 1274
+											Y: 77
+											Z: -9
+										}
+										ForcedAge: 0
+										ForgeCaps: {
+											"aether:mob_accessory": {
+												DropChances: {
+													aether_gloves: 0.085f
+													aether_pendant: 0.085f
+													hands: 0.085f
+													necklace: 0.085f
+												}
+											}
+											"curios:inventory": {
+												Curios: [ ]
+											}
+										}
+										ForgeData: { }
+										HasNectar: 1b
+										HasStung: 0b
+										Health: 10.0f
+										InLove: 0
+										Invulnerable: 0b
+										PersistenceRequired: 0b
+										"forge:spawn_type": "SPAWN_EGG"
+										id: "minecraft:bee"
+									}
+									MinOccupationTicks: 2400
+									TicksInHive: 23
+								}
+							]
+							FlowerPos: {
+								X: 1276
+								Y: 78
+								Z: -9
+							}
+							ForgeCaps: { }
+							id: "minecraft:beehive"
+						}
+						display: {
+							Lore: ["\"(+NBT)\""]
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "&fHoney Please!"
+			tasks: [{
+				count: 32L
+				id: "1817049F5E9467ED"
+				item: { Count: 32, id: "cosmiccore:shard_of_perpetuity" }
+				type: "item"
+			}]
+			title: "Shop : A Box of Bees"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			icon: "sophisticatedstorage:jukebox_upgrade"
+			id: "5F4BDDEA578C4893"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "05DB4151AC76FD15"
+				table_id: 2952554645480524917L
+				type: "random"
+			}]
+			subtitle: "&fCool Tunes"
+			tasks: [{
+				count: 16L
+				id: "23554CA7E1D276E3"
+				item: { Count: 16, id: "cosmiccore:shard_of_perpetuity" }
+				type: "item"
+			}]
+			title: "Shop Roll : Music Disk"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			icon: "gtceu:raw_gypsum"
+			id: "49C6A9B5C1242C24"
+			optional: true
+			rewards: [{
+				count: 64
+				id: "6614A3DC148E29BC"
+				item: "gtceu:raw_gypsum"
+				type: "item"
+			}]
+			subtitle: "&fIf you're having trouble!"
+			tasks: [{
+				id: "04CA22D5DA13D5D6"
+				item: "cosmiccore:large_shard_of_perpetuity"
+				type: "item"
+			}]
 			x: -2.5d
 			y: -3.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:oak_sapling"
+			id: "286F9EC824333A02"
+			optional: true
+			rewards: [
+				{
+					id: "14D3C9335B6F0978"
+					table_id: 881437549352822134L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "75D511C02B1A1001"
+					table_id: 881437549352822134L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "26B0C378B42D8123"
+					table_id: 881437549352822134L
+					type: "random"
+				}
+			]
+			tasks: [{
+				count: 16L
+				id: "678F0A4C7C8D4ED6"
+				item: { Count: 16, id: "cosmiccore:shard_of_perpetuity" }
+				type: "item"
+			}]
+			title: "Shop Roll : Vanilla Saplings"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			icon: "minecraft:fire_charge"
+			id: "56027B63CB763306"
+			rewards: [{
+				count: 16
+				id: "5A17B6193A70E537"
+				item: "minecraft:fire_charge"
+				type: "item"
+			}]
+			subtitle: "&fA quick ignition"
+			tasks: [{
+				count: 16L
+				id: "20F47DB04CA74EAA"
+				item: { Count: 16, id: "cosmiccore:shard_of_perpetuity" }
+				type: "item"
+			}]
+			title: "Shope : Fire Charge"
+			x: -4.0d
+			y: 1.5d
 		}
 	]
 	title: "Store (placeholder)"

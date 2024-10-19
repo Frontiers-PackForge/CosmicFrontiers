@@ -14,17 +14,31 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'integrateddynamics:drying_basin' })
   event.remove({ type: 'integrateddynamics:mechanical_squeezer' })
   event.remove({ type: 'integrateddynamics:squeezer' })
-  
-  // event.shaped('integrateddynamics:drying_basin', [
-  //   'W W',
-  //   'T T',
-  //   'STS'
-  // ], {
-  //   S: 'minecraft:smooth_stone',
-  //   W: 'gtceu:wrought_iron_plate',
-  //   T: 'gtceu:treated_wood_plate'
-  // }
-  // )
+
+  event.remove({id:'integrateddynamics:crafting/squeezer'})
+  event.remove({id:'integrateddynamics:crafting/mechanical_squeezer'})
+  event.shaped('integrateddynamics:squeezer', [
+    'BSB',
+    'A A',
+    'TWT'
+  ], {
+    S: 'gtceu:steel_block',
+    W: 'gtceu:double_steel_plate',
+    T: 'gtceu:treated_wood_planks',
+    A: 'gtceu:treated_wood_rod',
+    B: 'gtceu:treated_wood_frame'
+  })
+  event.shaped('integrateddynamics:mechanical_squeezer', [
+    'BSB',
+    'A A',
+    'TWT'
+  ], {
+    S: 'gtceu:steel_block',
+    W: 'gtceu:double_steel_plate',
+    T: 'gtceu:treated_wood_planks',
+    A: 'ulvcovm:ulv_electric_piston',
+    B: 'gtceu:treated_wood_frame'
+  })
 
   // Custom Recipe Handler? - Reference - Otherwise just dump the recipe in questions JSON into event.custom()
   let drying = (dryingoutput, dryingInput, duration) => {

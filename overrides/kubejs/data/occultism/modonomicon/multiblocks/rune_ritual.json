@@ -19,7 +19,7 @@
     },
     "B": {
       "type": "modonomicon:block",
-      "block": "occultism:chalk_glyph_white"
+      "block": "occultism:chalk_glyph_red"
     },
     "C": {
       "type": "modonomicon:block",
