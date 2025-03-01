@@ -77,6 +77,10 @@ ServerEvents.recipes(event => {
     'gtceu:steel_brick_casing',
     'gtceu:lp_steam_liquid_boiler'
   )
+  event.replaceInput({output: 'gtceu:palladium_substation'},
+    'gtceu:iridium_frame',
+    'gtceu:luminescent_utherium_frame'
+)
   event.recipes.gtceu.spooling_machine('frontiers_ethersteel_lattice')
     .itemInputs(['gtceu:carbon_fiber_mesh', '8x gtceu:fine_galvanized_ethersteel_wire'])
     .inputFluids('gtceu:polytetrafluoroethylene 144')
@@ -360,15 +364,15 @@ ServerEvents.recipes(event => {
     .blastFurnaceTemp(1700)
     .EUt(GTValues.VA[GTValues.MV]);
   event.recipes.gtceu.assembler('alpha_supercon')
-    .itemInputs(['16x gtceu:virtue_meld_foil', '4x gtceu:titanium_tiny_fluid_pipe', '4x gtceu:uranium_triplatinum_double_wire', 'gtceu:hv_electric_pump'])
+    .itemInputs(['16x gtceu:galvanized_ethersteel_foil', '4x gtceu:titanium_tiny_fluid_pipe', '4x gtceu:luminescent_utherium_double_wire', 'gtceu:hv_electric_pump'])
     .itemOutputs('16x gtceu:psi_superconductor_alpha_single_wire')
-    .inputFluids('gtceu:liquid_helium 1000')
+    .inputFluids('gtceu:liquid_helium 250')
     .duration(400)
     .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.assembler('beta_supercon')
     .itemInputs(['16x gtceu:virtue_meld_foil', '4x gtceu:tungsten_steel_tiny_fluid_pipe', '4x gtceu:samarium_iron_arsenic_oxide_double_wire', 'gtceu:ev_electric_pump'])
     .itemOutputs('16x gtceu:psi_superconductor_beta_single_wire')
-    .inputFluids('gtceu:liquid_helium 1000')
+    .inputFluids('gtceu:liquid_helium 250')
     .duration(400)
     .EUt(GTValues.VA[GTValues.IV]);
   //IV MOTOR

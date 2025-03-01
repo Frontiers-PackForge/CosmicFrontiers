@@ -142,6 +142,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xc3434c)
         .gem()
         .ore()
+
         .iconSet(GTMaterialIconSet.getByName('utherium'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -157,6 +158,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x6A40B8)
         .ingot()
         .liquid()
+        .cableProperties(GTValues.V[GTValues.EV], 4, 16, false)
         .iconSet(GTMaterialIconSet.getByName('starry'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -167,6 +169,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_GEAR,
             GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_FRAME,
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.NO_ORE_SMELTING
         )
@@ -221,11 +224,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 
     event.create('psi_superconductor_alpha')
-        .color(0xfc642d)
+        .color(0xff2ee3)
         .cableProperties(GTValues.V[GTValues.EV], 16, 0, true)
     event.create('psi_superconductor_beta')
         .color(0xb940ff)
-        .cableProperties(GTValues.V[GTValues.IV], 32, 0, true)
+        .cableProperties(GTValues.V[GTValues.IV], 16, 0, true)
     event.create('neodymium_praseodymium')
         .dust()
         .color(0x473147)
