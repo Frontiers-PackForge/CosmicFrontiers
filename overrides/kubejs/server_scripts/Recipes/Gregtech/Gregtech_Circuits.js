@@ -292,71 +292,71 @@ ServerEvents.recipes(event => {
         .notConsumable('malum:prismatic_focus_lens')
         .itemOutputs('cosmiccore:omnia_circuit_mv')
         .duration(10)
-        .EUt(GTValues.VH[GTValues.MV]);
+        .EUt(GTValues.VH[GTValues.LV]);
     event.recipes.gtceu.laser_engraver('omnia_hv')
         .itemInputs('#gtceu:circuits/hv')
         .notConsumable('malum:prismatic_focus_lens')
         .itemOutputs('cosmiccore:omnia_circuit_hv')
         .duration(10)
-        .EUt(GTValues.VH[GTValues.HV]);
+        .EUt(GTValues.VH[GTValues.LV]);
     event.recipes.gtceu.laser_engraver('omnia_ev')
         .itemInputs('#gtceu:circuits/ev')
         .notConsumable('malum:prismatic_focus_lens')
         .itemOutputs('cosmiccore:omnia_circuit_ev')
         .duration(10)
-        .EUt(GTValues.VH[GTValues.EV]);
+        .EUt(GTValues.VH[GTValues.LV]);
     event.recipes.gtceu.laser_engraver('omnia_iv')
         .itemInputs('#gtceu:circuits/iv')
         .notConsumable('malum:prismatic_focus_lens')
         .itemOutputs('cosmiccore:omnia_circuit_iv')
         .duration(10)
-        .EUt(GTValues.VH[GTValues.IV]);
+        .EUt(GTValues.VH[GTValues.LV]);
     event.recipes.gtceu.laser_engraver('omnia_luv')
         .itemInputs('#gtceu:circuits/luv')
         .notConsumable('malum:prismatic_focus_lens')
         .itemOutputs('cosmiccore:omnia_circuit_luv')
         .duration(10)
-        .EUt(GTValues.VH[GTValues.LuV]);
+        .EUt(GTValues.VH[GTValues.LV]);
     event.recipes.gtceu.laser_engraver('omnia_zpm')
         .itemInputs('#gtceu:circuits/zpm')
         .notConsumable('malum:prismatic_focus_lens')
         .itemOutputs('cosmiccore:omnia_circuit_zpm')
         .duration(10)
-        .EUt(GTValues.VH[GTValues.ZPM]);
+        .EUt(GTValues.VH[GTValues.LV]);
     event.recipes.gtceu.laser_engraver('omnia_uv')
         .itemInputs('#gtceu:circuits/uv')
         .notConsumable('malum:prismatic_focus_lens')
         .itemOutputs('cosmiccore:omnia_circuit_uv')
         .duration(10)
-        .EUt(GTValues.VH[GTValues.UV]);
+        .EUt(GTValues.VH[GTValues.LV]);
     event.recipes.gtceu.laser_engraver('omnia_uhv')
         .itemInputs('#gtceu:circuits/uhv')
         .notConsumable('malum:prismatic_focus_lens')
         .itemOutputs('cosmiccore:omnia_circuit_uhv')
         .duration(10)
-        .EUt(GTValues.VH[GTValues.UHV]);
+        .EUt(GTValues.VH[GTValues.LV]);
     event.recipes.gtceu.laser_engraver('omnia_uev')
         .itemInputs('#gtceu:circuits/uev')
         .notConsumable('malum:prismatic_focus_lens')
         .itemOutputs('cosmiccore:omnia_circuit_uev')
         .duration(10)
-        .EUt(GTValues.VH[GTValues.UEV]);
+        .EUt(GTValues.VH[GTValues.LV]);
     event.recipes.gtceu.laser_engraver('omnia_uiv')
         .itemInputs('#gtceu:circuits/uiv')
         .notConsumable('malum:prismatic_focus_lens')
         .itemOutputs('cosmiccore:omnia_circuit_uiv')
         .duration(10)
-        .EUt(GTValues.VH[GTValues.UIV]);
+        .EUt(GTValues.VH[GTValues.LV]);
     event.recipes.gtceu.laser_engraver('omnia_uxv')
         .itemInputs('#gtceu:circuits/uxv')
         .notConsumable('malum:prismatic_focus_lens')
         .itemOutputs('cosmiccore:omnia_circuit_uxv')
         .duration(10)
-        .EUt(GTValues.VH[GTValues.UXV]);
+        .EUt(GTValues.VH[GTValues.LV]);
     event.recipes.gtceu.laser_engraver('omnia_opv')
         .itemInputs('#gtceu:circuits/opv')
         .notConsumable('malum:prismatic_focus_lens')
         .itemOutputs('cosmiccore:omnia_circuit_opv')
         .duration(10)
-        .EUt(GTValues.VH[GTValues.OpV]);
+        .EUt(GTValues.VH[GTValues.LV]);
 })
