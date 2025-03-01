@@ -88,8 +88,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.EV]);
         event.recipes.gtceu.molten_salt_reactor(`${tier}_salt_reaction_breeder`)
             .inputFluids(`gtceu:${tier}_fuel_salt 1000`)
-            .outputFluids(`gtceu:superheated_${tier}_fuel_salt 250`)
-            .outputFluids(`gtceu:superheated_waste_${tier}_fuel_salt 750`)
+            .outputFluids([`gtceu:superheated_${tier}_fuel_salt 250`,`gtceu:superheated_waste_${tier}_fuel_salt 750`])
             .circuit(2)
             .duration(120)
             .EUt(GTValues.VA[GTValues.EV]);
