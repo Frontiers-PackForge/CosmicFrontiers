@@ -731,7 +731,14 @@ ServerEvents.recipes(event => {
                      .circuit(11)
                      .duration(80)
                      .EUt(GTValues.VA[GTValues.LV])
-
        })
+       // replace all recipes kube can access using ender pearl to use pearl tag 
+       event.replaceInput({ input: 'minecraft:ender_pearl' }, 'minecraft:ender_pearl', '#forge:ender_pearls')
+       // allow ender overhaul pearls to be made into regular pearls using shapeless or extractor for potential high parallels
+       event.shapeless('ender_pearl', '#endermanoverhaul:ender_pearls')
+       event.recipes.gtceu.extractor('ender_pearl')
+              .itemInputs('#endermanoverhaul:ender_pearls')
+              .itemOutputs('minecraft:ender_pearl')
+              .duration(100)
+              .EUt(4)
 })
-

@@ -1337,7 +1337,7 @@ ServerEvents.recipes(event => {
         S: 'gtceu:wrought_iron_screw',
         D: '#forge:tools/screwdrivers',
         P: 'gtceu:wrought_iron_plate',
-        E: 'minecraft:ender_pearl',
+        E: '#forge:ender_pearls',
         L: 'gtceu:emerald_lens'
     })
     //Spark
@@ -1783,7 +1783,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV]);
     //Mana Pearl
     event.recipes.gtceu.mana_fluidizer('gtceu:mana_pearl')
-        .itemInputs('minecraft:ender_pearl')
+        .itemInputs('#forge:ender_pearls')
         .itemOutputs('botania:mana_pearl')
         .inputFluids(Fluid.of('gtceu:potent_mana', 250))
         .duration(20)

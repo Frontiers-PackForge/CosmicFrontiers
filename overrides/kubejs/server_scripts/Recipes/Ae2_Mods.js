@@ -214,7 +214,7 @@ ServerEvents.recipes(event => {
   //   .duration(10)
   //   .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.laminator(`ae2:fluix_pearl_lamination`)
-    .itemInputs(['2x minecraft:ender_pearl', '8x gtceu:fluix_dust'])
+    .itemInputs(['2x #forge:ender_pearls', '8x gtceu:fluix_dust'])
     .itemOutputs('2x ae2:fluix_pearl')
     .duration(100)
     .EUt(GTValues.VA[GTValues.MV]);
