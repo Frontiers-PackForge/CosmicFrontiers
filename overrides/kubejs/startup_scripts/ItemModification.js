@@ -3,17 +3,17 @@ let uuid = $UUID.randomUUID();
 
 ItemEvents.modification(event => {
     food('kubejs:cosmic_meatballs', 1000000, 1000000)    
-    food('legendarysurvivaloverhaul:apple_juice', 12, 1)
-    food('legendarysurvivaloverhaul:beetroot_juice', 3, 0.9)
-    food('legendarysurvivaloverhaul:cactus_juice', 9, 0.9)
-    food('legendarysurvivaloverhaul:carrot_juice', 9, 0.9)
-    food('legendarysurvivaloverhaul:chorus_fruit_juice', 12, 0.9)
-    food('legendarysurvivaloverhaul:glistering_melon_juice', 8, 1)
-    food('legendarysurvivaloverhaul:golden_apple_juice', 12, 2.5)
-    food('legendarysurvivaloverhaul:golden_carrot_juice', 18, 2.5)
-    food('legendarysurvivaloverhaul:melon_juice', 6, 1)
-    food('legendarysurvivaloverhaul:pumpkin_juice', 9, 0.5)
-    food('croptoia:ravioli', 4, 0.9)
+    food('legendarysurvivaloverhaul:apple_juice',9, 1)
+    food('legendarysurvivaloverhaul:beetroot_juice', 2, 0.9)
+    food('legendarysurvivaloverhaul:cactus_juice', 6, 0.9)
+    food('legendarysurvivaloverhaul:carrot_juice', 6, 0.9)
+    food('legendarysurvivaloverhaul:chorus_fruit_juice', 8, 0.9)
+    food('legendarysurvivaloverhaul:glistering_melon_juice', 6, 1)
+    food('legendarysurvivaloverhaul:golden_apple_juice', 8, 2.5)
+    food('legendarysurvivaloverhaul:golden_carrot_juice', 13.5, 2.5)
+    food('legendarysurvivaloverhaul:melon_juice', 4.5, 1)
+    food('legendarysurvivaloverhaul:pumpkin_juice', 6, 0.5)
+    food('croptoia:ravioli', 3, 0.9)
 
     snackFood('gtceu:basic_electronic_circuit', 6, 0.8, true)
 
