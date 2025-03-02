@@ -77,10 +77,10 @@ ServerEvents.recipes(event => {
     'gtceu:steel_brick_casing',
     'gtceu:lp_steam_liquid_boiler'
   )
-  event.replaceInput({output: 'gtceu:palladium_substation'},
+  event.replaceInput({ output: 'gtceu:palladium_substation' },
     'gtceu:iridium_frame',
     'gtceu:luminescent_utherium_frame'
-)
+  )
   event.recipes.gtceu.spooling_machine('frontiers_ethersteel_lattice')
     .itemInputs(['gtceu:carbon_fiber_mesh', '8x gtceu:fine_galvanized_ethersteel_wire'])
     .inputFluids('gtceu:polytetrafluoroethylene 144')
@@ -1081,6 +1081,20 @@ ServerEvents.recipes(event => {
     let springType = tierSpring[index]
     let coilType = coilTier[index]
     let lamType = laminatorTier[index]
+    if (Item.exists(`cosmiccore:${tier}_wireless_charger`)) {
+      event.shaped(`cosmiccore:${tier}_wireless_charger`, [
+        'CRC',
+        'EHS',
+        'ZCZ'
+      ], {
+        E: `gtceu:${tier}_emitter`,
+        S: `gtceu:${tier}_sensor`,
+        R: `cosmiccore:${tier}_radio_module`,
+        C: `#gtceu:circuits/${tier}`,
+        H: `gtceu:${tier}_machine_hull`,
+        Z: `gtceu:${cableType}_single_cable`
+      })
+    }
     event.shaped(`gtceu:${tier}_flora_nurturer`, [
       'CAC',
       'BHB',
@@ -1130,8 +1144,8 @@ ServerEvents.recipes(event => {
       C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`
-    }
-    )
+    })
+
     event.shaped(`gtceu:${tier}_laminator`, [
       'CAC',
       'BHB',
@@ -1312,6 +1326,39 @@ ServerEvents.recipes(event => {
     .itemOutputs('gtceu:iv_voltage_coil')
     .duration(200)
     .EUt(GTValues.VA[GTValues.IV] / 2);
+
+
+  //Radio Modules (Too lazy to do a ForEach)
+  event.recipes.gtceu.assembler('radio_module_hv')
+    .itemInputs(['gtceu:hv_sensor', 'gtceu:hv_emitter', 'gtceu:stainless_steel_frame', '2x gtceu:galvanized_ethersteel_double_cable', '#gtceu:circuits/hv'])
+    .itemOutputs('cosmiccore:hv_radio_module')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.HV] / 2);
+  event.recipes.gtceu.assembler('radio_module_ev')
+    .itemInputs(['gtceu:ev_sensor', 'gtceu:ev_emitter', 'gtceu:titanium_frame', '2x gtceu:black_steel_double_cable', '#gtceu:circuits/ev'])
+    .itemOutputs('cosmiccore:ev_radio_module')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.EV] / 2);
+  event.recipes.gtceu.assembler('radio_module_iv')
+    .itemInputs(['gtceu:iv_sensor', 'gtceu:iv_emitter', 'gtceu:tungsten_steel_frame', '2x gtceu:platinum_double_cable', '#gtceu:circuits/iv'])
+    .itemOutputs('cosmiccore:iv_radio_module')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.IV] / 2);
+  event.recipes.gtceu.assembler('radio_module_luv')
+    .itemInputs(['gtceu:luv_sensor', 'gtceu:luv_emitter', 'gtceu:hssg_frame', '2x gtceu:niobium_titanium_double_cable', '#gtceu:circuits/luv'])
+    .itemOutputs('cosmiccore:luv_radio_module')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.LuV] / 2);
+  event.recipes.gtceu.assembler('radio_module_zpm')
+    .itemInputs(['gtceu:zpm_sensor', 'gtceu:zpm_emitter', 'gtceu:neutronite_frame', '2x gtceu:naquadah_double_cable', '#gtceu:circuits/zpm'])
+    .itemOutputs('cosmiccore:zpm_radio_module')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.ZPM] / 2);
+  event.recipes.gtceu.assembler('radio_module_uv')
+    .itemInputs(['gtceu:uv_sensor', 'gtceu:uv_emitter', 'cosmiccore:ichorium_frame', '2x cosmiccore:living_igniclad_double_cable', '#gtceu:circuits/uv'])
+    .itemOutputs('cosmiccore:uv_radio_module')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.UV] / 2);
 
 })
 
