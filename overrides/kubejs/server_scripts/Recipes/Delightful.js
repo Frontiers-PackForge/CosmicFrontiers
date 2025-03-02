@@ -303,9 +303,4 @@ ServerEvents.recipes(event => {
     event.remove({ id:'create:campfire_cooking/bread' })
     event.remove({ id:'create:crafting/curiosities/cake' })
     event.remove({ id:'farmersdelight:cutting/pufferfish' })
-    event.recipes.gtceu.extruder('noodle_extrude_lmfao')
-    .itemInputs('forge:dough')
-    .itemOutputs('croptopia:noodle')
-    .duration(40)
-    .EUt(GTValues.VA[GTValues.ULV]);
 })
