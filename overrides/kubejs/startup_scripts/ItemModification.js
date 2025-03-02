@@ -13,6 +13,7 @@ ItemEvents.modification(event => {
     food('legendarysurvivaloverhaul:golden_carrot_juice', 9, 2.5)
     food('legendarysurvivaloverhaul:melon_juice', 3, 1)
     food('legendarysurvivaloverhaul:pumpkin_juice', 4.5, 0.5)
+    food('croptoia:ravioli', 2, 0.9)
 
     snackFood('gtceu:basic_electronic_circuit', 6, 0.8, true)
 
