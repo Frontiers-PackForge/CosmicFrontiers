@@ -99,8 +99,8 @@ ServerEvents.recipes(event => {
         'DFD',
         'PDP'
     ], {
-        P: 'gtceu:emerald_exquisite_gem',
-        D: 'gtceu:olivine_exquisite_gem',
+        P: 'gtceu:exquisite_emerald_gem',
+        D: 'gtceu:exquisite_olivine_gem',
         F: 'ironfurnaces:diamond_furnace',
     })
     event.remove({ output: 'ironfurnaces:obsidian_furnace' }) 

@@ -107,6 +107,19 @@ ServerEvents.recipes(event => {
         B: 'minecraft:blackstone',
         F: 'minecraft:flint'
     })
+    event.remove({ output:'nethersdelight:blackstone_blast_furnace'})
+    event.shaped( 'nethersdelight:blackstone_blast_furnace', [
+        'WFD',
+        'PBP',
+        'SPS'
+    ], {
+        P: '#forge:plates/iron',
+        B: 'nethersdelight:blackstone_furnace',
+        S: '#forge:screws/iron',
+        W: '#forge:tools/wrenches',
+        F: '#forge:tools/files',
+        D: '#forge:tools/screwdrivers'
+    })
     // //Ender's Delight
     // event.remove({ output:'endersdelight:endstone_stove' })
     // event.shaped( 'endersdelight:endstone_stove', [

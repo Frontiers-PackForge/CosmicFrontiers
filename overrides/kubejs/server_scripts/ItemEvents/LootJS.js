@@ -23,7 +23,13 @@ LootJS.modifiers((event) => {
     event.addLootTypeModifier(LootType.CHEST)
         .removeLoot('gtceu:bronze_ingot')
         .removeLoot('gtceu:steel_ingot')
+        .removeLoot('gtceu:platinum_ingot')
         .removeLoot('botania:manasteel_ingot')
+        .removeLoot('nether_remastered:seal_piece_1')
+        .removeLoot('nether_remastered:seal_piece_2')
+        .removeLoot('nether_remastered:seal_piece_3')
+        .removeLoot('nether_remastered:seal_piece_4')
+        .removeLoot('nether_remastered:seal_crystal')
 });
 LootJS.modifiers((event) => {
     event.addLootTypeModifier(LootType.ENTITY)

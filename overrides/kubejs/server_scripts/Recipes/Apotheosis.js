@@ -4,6 +4,8 @@ ServerEvents.recipes(event => {
 
 
     event.remove({ id: 'apotheosis:hellshelf' })
+
+    
     event.remove({ output: 'apotheosis:hellshelf' })
     event.remove({ output: 'apotheosis:seashelf' })
     event.remove({ output: 'apotheosis:dormant_deepshelf' })

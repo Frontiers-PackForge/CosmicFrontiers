@@ -71,7 +71,7 @@ v_materials.forEach(item => {
     e.shaped(`simplyswords:${item}_rapier`, [ 
         '  B', 
         'DB ', 
-        'AC  '  
+        'AC '  
       ], {
         A: '#forge:rods/wooden',
         B: `gtceu:${item}_rod`,

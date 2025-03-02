@@ -47,17 +47,6 @@ ServerEvents.recipes(event => {
     G: 'occultism:soul_gem',
     S: 'minecraft:stick',
   })
-  event.remove({ output: 'malum:crude_scythe' })
-  event.shaped('malum:crude_scythe', [
-    'CWC',
-    'SPS',
-    ' P'
-  ], {
-    W: 'gtceu:aluminium_plate',
-    C: 'occultism:soul_gem',
-    S: 'minecraft:stick',
-    P: 'minecraft:stick',
-  })
 
   event.remove({ id: 'malum:spirit_altar' })
   event.recipes.occultism.ritual(

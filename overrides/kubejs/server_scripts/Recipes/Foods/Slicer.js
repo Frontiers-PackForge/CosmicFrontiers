@@ -4,6 +4,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.slicer('croptopia:bacon')
         .itemInputs('minecraft:porkchop')
         .itemOutputs('4x croptopia:bacon')
+        .circuit(2)
         .EUt(GTValues.VA[GTValues.LV])
         .duration(400);
 
@@ -176,7 +177,7 @@ ServerEvents.recipes(event => {
         .duration(400);
 
     event.recipes.gtceu.slicer('oceansdelight:guardian_tail')
-        .itemInputs('oceansdelight:tentacles')
+        .itemInputs('oceansdelight:guardian')
         .itemOutputs('oceansdelight:guardian_tail', 'minecraft:bone_meal')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(400);

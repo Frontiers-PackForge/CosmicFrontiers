@@ -82,4 +82,20 @@ ServerEvents.recipes((event) => {
     .inputFluids("gtceu:source_enhanced_bio_fuel 1")
     .duration(15)
     .EUt(-32);
+
+  //Starry Diesel - An Alternate fo CBD using Primordial Oil
+
+  // event.recipes.gtceu.distillation_tower("prim_oil_tier_1_distillation")
+  //   .itemInputs("gtceu:tiny_sodium_hydroxide_dust")
+  //   .inputFluids("gtceu:source_oils 6000")
+  //   .inputFluids("gtceu:ethanol 1000")
+  //   .outputFluids("gtceu:starry_diesel 6000")
+  //   .outputFluids("gtceu:glycerol 1000")
+  //   .duration(600)
+  //   .EUt(GTValues.VA[GTValues.LV]);
+
+  
+
+
+
 });

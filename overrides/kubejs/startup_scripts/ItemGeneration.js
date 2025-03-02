@@ -14,6 +14,7 @@ StartupEvents.registry('item', event => {
     event.create('shredded_magebloom')
     event.create('washed_magebloom')
     event.create('terraweave_cloth').displayName('Terraweave Cloth')
+    event.create('carbon_ethersteel_lattice').displayName('Carbon Fiber Ethersteel Lattice')
     event.create('spooled_terraweave').displayName('Spooled Terraweave')
     event.create('t2_rocket_plating')
     event.create('memory_shard').displayName('Memeroy Shards of Mortality')

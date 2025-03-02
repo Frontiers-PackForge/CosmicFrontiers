@@ -16,14 +16,15 @@ event.recipes.gtceu.drygmy_grove('grove_guardian')
   .chancedOutput(Item.of('minecraft:cod', 4), 2000, 1000)
   .duration(6000)
   .EUt(GTValues.VA[GTValues.EV]);
-event.recipes.gtceu.drygmy_grove('grove_enderman')
-  .notConsumable('ars_nouveau:drygmy_charm')
-  .notConsumable('oceansdelight:guardian')
-  .itemOutputs('32x minecraft:prismarine_shard')
-  .chancedOutput(Item.of('minecraft:prismarine_crystals', 8), 4000, 1500)
-  .chancedOutput(Item.of('minecraft:cod', 4), 2000, 1000)
-  .duration(6000)
-  .EUt(GTValues.VA[GTValues.EV]);
+// todo enderman
+// event.recipes.gtceu.drygmy_grove('grove_enderman')
+//   .notConsumable('ars_nouveau:drygmy_charm')
+//   .notConsumable('oceansdelight:guardian')
+//   .itemOutputs('32x minecraft:prismarine_shard')
+//   .chancedOutput(Item.of('minecraft:prismarine_crystals', 8), 4000, 1500)
+//   .chancedOutput(Item.of('minecraft:cod', 4), 2000, 1000)
+//   .duration(6000)
+//   .EUt(GTValues.VA[GTValues.EV]);
 event.recipes.gtceu.drygmy_grove('grove_blaze')
   .notConsumable('ars_nouveau:drygmy_charm')
   .notConsumable('create:blaze_cake')

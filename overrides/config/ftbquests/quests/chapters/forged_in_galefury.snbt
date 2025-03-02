@@ -278,6 +278,19 @@
 				"Come 0.7.0 All quest Tabs Below UV should be cleaned up and dealt with!"
 			]
 			id: "2823B3BAEF820B50"
+			rewards: [{
+				id: "135A79F845DFAEF6"
+				item: {
+					Count: 1
+					id: "trofers:small_plate"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "frontiers:materials/ethersteel"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.5d
 			subtitle: "Time to subdue the depths."

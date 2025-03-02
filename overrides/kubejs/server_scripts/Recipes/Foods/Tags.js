@@ -27,6 +27,9 @@ ServerEvents.tags('item', event => {
     }
 
     // todo hot and cold foods
+  
+    event.add('frontiers:croptopia/nuts', ['croptopia:almond', 'croptopia:pecan', 'croptopia:walnut']) // non peanut nuts from croptopia used for roasted nuts recipe
+    event.add('forge:peanuts', ['vintagedelight:peanut', 'croptopia:peanut']) // this is driving me *nuts* why does one have (s)
 })
 
 ServerEvents.tags('fluid', event => {
