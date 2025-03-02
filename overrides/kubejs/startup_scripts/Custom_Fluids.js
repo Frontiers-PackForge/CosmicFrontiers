@@ -3,7 +3,7 @@ StartupEvents.registry('fluid', event => {
     event.create('croptopia:olive_oil')
         .thinTexture(0xF4C446)
         .bucketColor(0xF4C446)
-        .displayName('Olive oil')
+        .displayName('Olive Oil')
 
     event.create('croptopia:soy_sauce')
         .thinTexture(0x522F26)

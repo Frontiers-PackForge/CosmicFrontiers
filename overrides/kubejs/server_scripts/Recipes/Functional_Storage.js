@@ -231,7 +231,7 @@ ServerEvents.recipes( e => {
       'ABA'  
     ], {
     A: 'gtceu:obsidian_plate', 
-    B: 'minecraft:ender_pearl',  
+    B: '#forge:ender_pearls',  
     C: '#functionalstorage:drawer',
     D: '#forge:tools/hammers'
     }

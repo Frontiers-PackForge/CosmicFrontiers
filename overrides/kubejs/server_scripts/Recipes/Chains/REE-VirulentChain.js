@@ -12,8 +12,8 @@ ServerEvents.recipes((event) => {
     //Slag separation
     event.recipes.gtceu.centrifuge('cloggurm_mix_spinny')
         .inputFluids('gtceu:undergarden_virulent_cloggrum_mixture 10000')
-        .outputFluids('gtceu:xenotime_slag 2000')
-        .outputFluids('gtceu:monasite_slag 2000')
+        .outputFluids('gtceu:xenotime_concentrate 2000')
+        .outputFluids('gtceu:monasite_concentrate 2000')
         .outputFluids('gtceu:hydrofluoric_acid 6000')
         .duration(600)
         .EUt(GTValues.VA[GTValues.HV]);
@@ -31,27 +31,13 @@ ServerEvents.recipes((event) => {
         .EUt(GTValues.VA[GTValues.HV]);
 
     // Xenotime extraction tier 1
-    event.recipes.gtceu.chemical_dehydrator('monasite_concentration')
-        .inputFluids('gtceu:monasite_slag 1000')
-        .outputFluids('gtceu:monasite_concentrate 1000')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.HV]);
-    event.recipes.gtceu.chemical_dehydrator('xenotime_concentration')
-        .inputFluids('gtceu:xenotime_slag 1000')
-        .outputFluids('gtceu:xenotime_concentrate 1000')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.chemical_reactor('alkaline_xenotime_leaching') // Set higher energy use (temperature requirement sim)
         .inputFluids('gtceu:lre_slag 1000')
         .itemInputs('4x gtceu:sodium_hydroxide_dust') //can also add recipe for the fluid NaOH
-        .outputFluids('gtceu:mixed_lre_leachate 1000')
-        .duration(400)
-        .EUt(GTValues.VA[GTValues.HV]);
-    event.recipes.gtceu.centrifuge('xenotime_leachate_separation_1')
-        .inputFluids('gtceu:mixed_lre_leachate 1000')
         .outputFluids('gtceu:leached_lre_liquor 200')
         .itemOutputs('8x gtceu:leached_lre_residue_dust')
-        .duration(200)
+        .circuit(24)
+        .duration(600)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.chemical_reactor('lre_liquor_1')
         .itemInputs('8x gtceu:leached_lre_residue_dust')
@@ -63,20 +49,15 @@ ServerEvents.recipes((event) => {
         //Apparently this recipe is meant to have waste water in it for chrome recycling - PLEASE check balancing before forcing chrome consumption to avoid a net-negitive on chrome ~G
         .inputFluids('gtceu:leached_lre_liquor 700')
         .inputFluids('gtceu:oxalic_acid 300')
-        .outputFluids('gtceu:wet_lre_precipitate 1000')
+        .outputFluids('gtceu:wet_lre_precipitate 5000')
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV]);
-    event.recipes.gtceu.chemical_dehydrator('lre_precipitate_drying_1')
+    event.recipes.gtceu.chemical_dehydrator('mixed_lre_dust_spinny_1')
         .inputFluids('gtceu:wet_lre_precipitate 1000')
-        .itemOutputs('4x gtceu:dried_mixed_lre_precipitate_dust')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.HV]);
-    event.recipes.gtceu.centrifuge('mixed_lre_dust_spinny_1')
-        .itemInputs('16x gtceu:dried_mixed_lre_precipitate_dust')
-        .chancedOutput('gtceu:lanthanum_dust', 2500, 500)
-        .chancedOutput('gtceu:cerium_dust', 2500, 500)
-        .chancedOutput('gtceu:praseodymium_dust', 2500, 500)
-        .chancedOutput('2x gtceu:neodymium_dust', 6000, 500)
+        .chancedOutput('3x gtceu:lanthanum_dust', 2500, 500)
+        .chancedOutput('2x gtceu:cerium_dust', 2500, 500)
+        .chancedOutput('2x gtceu:praseodymium_dust', 2500, 500)
+        .chancedOutput('4x gtceu:neodymium_dust', 6000, 500)
         .duration(600)
         .EUt(GTValues.VA[GTValues.HV]);
     // //Chromate recycling

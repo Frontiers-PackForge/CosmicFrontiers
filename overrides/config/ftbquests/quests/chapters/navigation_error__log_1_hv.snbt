@@ -340,6 +340,19 @@
 				"1B7405FD959C65B3"
 			]
 			id: "1D892089AEFF9132"
+			rewards: [{
+				id: "09113C007CDA0DB8"
+				item: {
+					Count: 1
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "frontiers:coils/nichrome"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "Your Third EBF Coil"
@@ -371,7 +384,8 @@
 				"40435C47E1FA5619"
 			]
 			description: [
-				"While not explictly needed for &bTitanium&r, is quite useful."
+				"While not explictly needed for &bTitanium&r, you need it for Nichrome"
+				""
 				""
 				"You can use this to run EV Chemical recipes in an LCR, see the quest below for more info."
 			]

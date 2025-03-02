@@ -29,6 +29,41 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get('terrasteel'))
         .iconSet(GTMaterialIconSet.SHINY)
         .cableProperties(GTValues.V[GTValues.MV], 8, 1, false)
+        .toolStats(new ToolProperty(12, 7, 3072, 6,
+            [
+                GTToolType.SWORD,
+                GTToolType.PICKAXE,
+                GTToolType.SHOVEL,
+                GTToolType.AXE,
+                GTToolType.HOE,
+                GTToolType.MINING_HAMMER,
+                GTToolType.SPADE,
+                GTToolType.SCYTHE,
+                GTToolType.SAW,
+                GTToolType.HARD_HAMMER,
+                GTToolType.WRENCH,
+                GTToolType.FILE,
+                GTToolType.CROWBAR,
+                GTToolType.SCREWDRIVER,
+                GTToolType.MORTAR,
+                GTToolType.WIRE_CUTTER,
+                GTToolType.KNIFE,
+                GTToolType.DRILL_LV,
+                GTToolType.DRILL_MV,
+                GTToolType.DRILL_HV,
+                GTToolType.DRILL_EV,
+                GTToolType.DRILL_IV,
+                GTToolType.CHAINSAW_LV,
+                GTToolType.WRENCH_LV,
+                GTToolType.WRENCH_HV,
+                GTToolType.WRENCH_IV,
+                GTToolType.WIRE_CUTTER_LV,
+                GTToolType.WIRE_CUTTER_HV,
+                GTToolType.WIRE_CUTTER_IV,
+                GTToolType.BUZZSAW,
+                GTToolType.SCREWDRIVER_LV
+            ]
+        ))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,

@@ -448,6 +448,12 @@
   "material.gtceu.ourofluid": "Ourofluid",
   "material.gtceu.abyss_grease": "Abyss Grease",
   "material.gtceu.veltharic_slough": "Veltharic Slough",
+  "material.gtceu.stardust_doped_diesel": "Stardust Doped Diesel",
+  "material.gtceu.moon_stone": "Moon Stone",
+
+
+
+
   "material.gtceu.rhodium_sulfate_solution": "Rhodium Sulfate Solution",
   "material.gtceu.carbon_tetrachloride": "Carbon Tetrachloride",
   "material.gtceu.nether_bioslurry": "Nether Bioslurry",
@@ -458,14 +464,10 @@
   "material.gtceu.tungsten_trioxide": "Tungsten Trioxide",
   "material.gtceu.iesnium": "Iesnium",
   "material.gtceu.tempered_iesnium": "Tempered Iesnium",
-  "material.gtceu.impure_silt": "Impure Silt",
-  "material.gtceu.silt_seperation_composite": "Silt Seperation Composite",
   "material.gtceu.highest_grade_silica": "Highest Grade Silica",
   "material.gtceu.middle_grade_silica": "Middle Grade Silica",
   "material.gtceu.europium_blended_silica": "Europium Blended Silica",
   "material.gtceu.luminent_silica": "Luminent Silica",
-  "material.gtceu.dilumixal_naquadah_doped_silicon": "Dilumixal Naquadah Doped Silicon",
-  "material.gtceu.europium_silicide": "Europium Silicide",
   "material.gtceu.trinium_metallic": "Trinium Metallic Powder",
   "material.gtceu.graphene_oxide": "Graphene Oxide",
   "material.gtceu.diamine_dichloropalladium": "Diamine Dichloropalladium",

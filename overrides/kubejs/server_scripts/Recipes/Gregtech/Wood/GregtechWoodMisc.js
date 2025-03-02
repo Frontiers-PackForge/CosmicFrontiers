@@ -24,6 +24,7 @@ ServerEvents.recipes(event => {
     // event.remove({ id: /^(?!gtceu:)([^:]+):(.*)_boat$/ })
 
     event.remove({ id: 'gtceu:shapeless/rubber_wood_planks' })
+    event.remove({ id: 'ars_nouveau:archwood_planks'})
 
     //Holy Shit Aether piss off already.
 
@@ -77,136 +78,22 @@ ServerEvents.recipes(event => {
 
     // })
 
-
-
-
-    // LMAO ARCHWOOD GOD FUCK
-
-    let archWood = ['ars_nouveau:blue_archwood', 'ars_nouveau:red_archwood', 'ars_nouveau:green_archwood', 'ars_nouveau:purple_archwood']
-
-
-    archWood.forEach((woodType, index, recipe) => {
-        if (Item.exists(`${woodType}_log`)) {
-            event.recipes.gtceu.cutter(`${woodType}_cutting`)
-                .itemInputs(`${woodType}_log`)
-                .itemOutputs([`6x ars_nouveau:archwood_planks`, '2x gtceu:wood_dust'])
-                .duration(200)
-                .EUt(7);
-        }
-        if (Item.exists(`stripped_${woodType}_log`)) {
-            event.recipes.gtceu.cutter(`stripped_${woodType}_cutting`)
-                .itemInputs(`stripped_${woodType}_log`)
-                .itemOutputs([`6x ars_nouveau:archwood_planks`, '2x gtceu:wood_dust'])
-                .duration(200)
-                .EUt(7);
-        }
-        if (Item.exists(`${woodType}_wood`)) {
-            event.recipes.gtceu.cutter(`${woodType}_wood_cutting`)
-                .itemInputs(`${woodType}_wood`)
-                .itemOutputs([`6x ars_nouveau:archwood_planks`, '2x gtceu:wood_dust'])
-                .duration(200)
-                .EUt(7);
-        }
-        if (Item.exists(`stripped_${woodType}_wood`)) {
-            event.recipes.gtceu.cutter(`stripped_${woodType}_wood_cutting`)
-                .itemInputs(`stripped_${woodType}_wood`)
-                .itemOutputs([`6x ars_nouveau:archwood_planks`, '2x gtceu:wood_dust'])
-                .duration(200)
-                .EUt(7);
-        }
-        //Log -> Plank
-        if (Item.exists(`${woodType}_log`)) {
-            event.shaped(`4x ars_nouveau:archwood_planks`, [
-                '   ',
-                ' T ',
-                ' P '
-            ],
-                {
-                    T: '#forge:tools/saws',
-                    P: `${woodType}_log`
-                })
-        }
-        if (Item.exists(`${woodType}_log`)) {
-            event.shaped(`2x ars_nouveau:archwood_planks`, [
-                '   ',
-                '   ',
-                ' P '
-            ],
-                {
-                    P: `ars_nouveau:archwood_log`
-                })
-        }
-        //Stripped log -> planks
-        if (Item.exists(`stripped_${woodType}_log`)) {
-            event.shaped(`4x ars_nouveau:archwood_planks`, [
-                '   ',
-                ' T ',
-                ' P '
-            ],
-                {
-                    T: '#forge:tools/saws',
-                    P: `stripped_${woodType}_log`
-                })
-        }
-        if (Item.exists(`stripped_${woodType}_log`)) {
-            event.shaped(`2x ars_nouveau:archwood_planks`, [
-                '   ',
-                '   ',
-                ' P '
-            ],
-                {
-                    P: `stripped_${woodType}_log`
-                })
-        }
-        //Wood -> Planks
-        if (Item.exists(`${woodType}_wood`)) {
-            event.shaped(`4x ars_nouveau:archwood_planks`, [
-                '   ',
-                ' T ',
-                ' P '
-            ],
-                {
-                    T: '#forge:tools/saws',
-                    P: `${woodType}_wood`
-                })
-        }
-        if (Item.exists(`${woodType}_wood`)) {
-            event.shaped(`2x ars_nouveau:archwood_planks`, [
-                '   ',
-                '   ',
-                ' P '
-            ],
-                {
-                    P: `${woodType}_wood`
-                })
-        }
-        //Stripped Wood -> Planks
-        if (Item.exists(`stripped_${woodType}_wood`)) {
-            event.shaped(`4x ars_nouveau:archwood_planks`, [
-                '   ',
-                ' T ',
-                ' P '
-            ],
-                {
-                    T: '#forge:tools/saws',
-                    P: `stripped_${woodType}_wood`
-                })
-        }
-        if (Item.exists(`stripped_${woodType}_wood`)) {
-            event.shaped(`2x ars_nouveau:archwood_planks`, [
-                '   ',
-                '   ',
-                ' P '
-            ],
-                {
-                    P: `stripped_${woodType}_wood`
-                })
-        }
-
-
-        // event.recipes.create.cutting(`6x ${modID}:undead_planks`, `${modID}:undead_stripped_log`).processingTime(50)
-    })
+    event.recipes.gtceu.cutter('archwood_cutting')
+        .itemInputs('#forge:logs/archwood')
+        .itemOutputs(['6x ars_nouveau:archwood_planks', '2x gtceu:wood_dust'])
+        .duration(200)
+        .EUt(7);
+    event.shaped('4x ars_nouveau:archwood_planks', [
+        'T',
+        'P'
+        ],
+        {
+            T: '#forge:tools/saws',
+            P: '#forge:logs/archwood'
+        })
+    event.shapeless('2x ars_nouveau:archwood_planks', ['#forge:logs/archwood'])
 })
+
 ServerEvents.recipes(event => {
     //Door
     if (Item.exists(`ars_nouveau:archwood_door`)) {
