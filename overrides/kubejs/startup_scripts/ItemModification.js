@@ -7,7 +7,7 @@ ItemEvents.modification(event => {
     food('legendarysurvivaloverhaul:beetroot_juice', 3, 0.9)
     food('legendarysurvivaloverhaul:cactus_juice', 9, 0.9)
     food('legendarysurvivaloverhaul:carrot_juice', 9, 0.9)
-    food('legendarysurvivaloverhaul:chorus_fruit_juice', 12, 0.)
+    food('legendarysurvivaloverhaul:chorus_fruit_juice', 12, 0.9)
     food('legendarysurvivaloverhaul:glistering_melon_juice', 8, 1)
     food('legendarysurvivaloverhaul:golden_apple_juice', 12, 2.5)
     food('legendarysurvivaloverhaul:golden_carrot_juice', 18, 2.5)
