@@ -6,6 +6,23 @@ ServerEvents.tags('item', event => {
     event.add('forge:tomatoes', 'farmersdelight:tomato')
     event.add('forge:onions', 'farmersdelight:onion')
     
+    spring('biomeswevegone:blueberries')
+    summer('biomeswevegone:blueberries')
+
+    // Seasonal crops
+    function spring(item) {
+        event.add('serenseseasons:spring_crops', item)
+    }
+    function summer(item) {
+        event.add('serenseseasons:summer_crops', item)
+    }
+    function autumn(item) {
+        event.add('serenseseasons:autumn_crops', item)
+    }
+    function winter(item) {
+        event.add('serenseseasons:winter_crops', item)
+    }
+
     proteins('nethersdelight:hoglin_loin')
     mana('ars_nouveau:source_berry_roll')
     mana('ars_nouveau:source_berry_pie')
