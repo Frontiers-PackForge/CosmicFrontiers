@@ -111,6 +111,21 @@ GTCEuServerEvents.oreVeins(event => {
             .radius(4)
         )
     )
+    event.add('kubejs:aa_pure_chromite', vein => {
+        vein.layer('moon_stone')
+        vein.weight(20)
+        vein.clusterSize(35)
+        vein.density(0.35)
+        vein.discardChanceOnAirExposure(0)
+        vein.heightRangeUniform(5, 40)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(1).mat(GTMaterials.Chromite).size(2, 4))
+                .layer(l => l.weight(1).mat(GTMaterials.Malachite).size(2, 3))
+                .layer(l => l.weight(1).mat(GTMaterials.get('luminite')).size(1, 2))
+            )
+        )
+    })
 })
 // GTCEuServerEvents.bedrockOreVeins(event => {
 //     event.add("kubejs:deep_luminite",  vein => {
