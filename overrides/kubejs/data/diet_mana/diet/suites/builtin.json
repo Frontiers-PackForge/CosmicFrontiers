@@ -1,7 +1,7 @@
 {
   "replace": false,
   "groups": [
-    "mana_group"
+    "mana"
   ],
   "effects": [
     {
@@ -14,7 +14,7 @@
       ],
       "conditions": [
         {
-          "groups": ["mana_group"],
+          "groups": ["mana"],
           "match": "all",
           "above": 0.25,
           "below": 1.0
@@ -31,7 +31,7 @@
       ],
       "conditions": [
         {
-          "groups": ["mana_group"],
+          "groups": ["mana"],
           "match": "all",
           "above": 0.1,
           "below": 0.2
@@ -48,7 +48,7 @@
       ],
       "conditions": [
         {
-          "groups": ["mana_group"],
+          "groups": ["mana"],
           "match": "all",
           "above": 0.2,
           "below": 0.3
@@ -65,7 +65,7 @@
       ],
       "conditions": [
         {
-          "groups": ["mana_group"],
+          "groups": ["mana"],
           "match": "all",
           "above": 0.3,
           "below": 0.4
@@ -82,7 +82,7 @@
       ],
       "conditions": [
         {
-          "groups": ["mana_group"],
+          "groups": ["mana"],
           "match": "all",
           "above": 0.4,
           "below": 0.5
@@ -99,7 +99,7 @@
       ],
       "conditions": [
         {
-          "groups": ["mana_group"],
+          "groups": ["mana"],
           "match": "all",
           "above": 0.5,
           "below": 0.6
@@ -116,7 +116,7 @@
       ],
       "conditions": [
         {
-          "groups": ["mana_group"],
+          "groups": ["mana"],
           "match": "all",
           "above": 0.6,
           "below": 0.7
@@ -133,7 +133,7 @@
       ],
       "conditions": [
         {
-          "groups": ["mana_group"],
+          "groups": ["mana"],
           "match": "all",
           "above": 0.7,
           "below": 0.8
@@ -150,7 +150,7 @@
       ],
       "conditions": [
         {
-          "groups": ["mana_group"],
+          "groups": ["mana"],
           "match": "all",
           "above": 0.7,
           "below": 0.8
@@ -167,7 +167,7 @@
       ],
       "conditions": [
         {
-          "groups": ["mana_group"],
+          "groups": ["mana"],
           "match": "all",
           "above": 0.8,
           "below": 0.9
@@ -184,7 +184,7 @@
       ],
       "conditions": [
         {
-          "groups": ["mana_group"],
+          "groups": ["mana"],
           "match": "all",
           "above": 0.9,
           "below": 1

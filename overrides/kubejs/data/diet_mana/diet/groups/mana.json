@@ -1,0 +1,9 @@
+{
+  "icon": "ars_nouveau:sourceberry_bush",
+  "color": "#e019d6",
+  "order": 12,
+  "default_value": 0.0,
+  "gain_multiplier": 1.0,
+  "decay_multiplier": 1.0,
+  "beneficial": true
+}
