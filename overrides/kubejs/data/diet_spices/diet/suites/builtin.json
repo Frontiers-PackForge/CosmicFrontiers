@@ -1,0 +1,75 @@
+{
+  "replace": false,
+  "groups": [
+    "spices"
+  ],
+  "effects": [
+    {
+      "conditions": [
+          {
+            "groups": ["spices"],
+            "match": "all",
+            "above": 25.0,
+            "below": 50.0
+          }
+        ],
+      "status_effects": [
+        {
+          "name": "legendarysurvivaloverhaul:hot_food",
+          "power": 1
+        }
+      ]
+    },
+    {
+      "conditions": [
+          {
+            "groups": ["spices"],
+            "match": "all",
+            "above": 50.0,
+            "below": 75.0
+          }
+        ],
+      "status_effects": [
+        {
+          "name": "legendarysurvivaloverhaul:hot_food",
+          "power": 2
+        }
+      ],
+      "attributes": [
+        {
+          "name": "minecraft:generic.movement_speed",
+          "operation": "multiply_base",
+          "amount": 1.3
+        }
+      ]
+    },
+    {
+      "conditions": [
+          {
+            "groups": ["spices"],
+            "match": "all",
+            "above": 75.0,
+            "below": 100.0
+          }
+        ],
+      "status_effects": [
+        {
+          "name": "legendarysurvivaloverhaul:hot_food",
+          "power": 3
+        }
+      ],
+      "attributes": [
+        {
+          "name": "minecraft:generic.movement_speed",
+          "operation": "multiply_base",
+          "amount": 1.5
+        },
+        {
+          "name": "minecraft:generic.attack_speed",
+          "operation": "multiply_base",
+          "amount": 1.2
+        }
+      ]
+    }
+  ]
+}

@@ -1,10 +1,16 @@
+// priority: 999
+
 ServerEvents.tags('item', e => {
+    console.log('Registering Food Tags')
+    
     e.add('forge:flour', 'gtceu:wheat_dust')
     e.add('forge:salt', 'gtceu:salt_dust')
     e.add('forge:rice', 'farmersdelight:rice')
     e.add('forge:cabbage', 'farmersdelight:cabbage')
     e.add('forge:tomatoes', 'farmersdelight:tomato')
     e.add('forge:onions', 'farmersdelight:onion')
+    e.add('forge:dough', 'farmersdelight:wheat_dough')
+    e.add('forge:doughs', 'gtceu:dough')
     
     e.removeAll('diet:special_food') // Slicer recipes add nutrition to them already, keeping them in this tag makes it do double nutrition
     
@@ -43,11 +49,21 @@ ServerEvents.tags('item', e => {
     psi('gtceu:purple_drink')
     psi('kubejs:cosmic_meatballs')
     psi('malum:cursed_sap')
+    // Spice != flavor here. Spices tag is for ingredients that make your body heart up. This is why onions, salt and similar aren't included
+    spices('#forge:peppers')
+    spices('#forge:hot_spice')
+    spices('vintagedelight:ghost_charcoal')
+    spices('croptopia:pepper')
+    spices('croptopia:paprika')
+    spices('croptopia:pepper')
+    spices('minecraft:crimson_fungus')
+    spices('nethersdelight:propelpearl')
+    spices('minecraft:blaze_rod')
     proteins('gtceu:dough')
-    proteins('forge:nut_butter')
-    proteins('forge:eggs')
-    proteins('forge:mushrooms')
-    proteins('forge:milk')
+    proteins('#forge:nut_butter')
+    proteins('#forge:eggs')
+    proteins('#forge:mushrooms')
+    proteins('#forge:milk')
     proteins('nethersdelight:hoglin_loin')
     proteins('nethersdelight:hoglin_ear')
     proteins('nethersdelight:strider_slice')
@@ -58,6 +74,7 @@ ServerEvents.tags('item', e => {
     vegetables('legendarysurvivaloverhaul:golden_carrot_juice')
     vegetables('biomeswevegone:oddion_bulb')
     vegetables('biomeswevegone:white_puffball_cap')
+    vegetables('croptopia:tea_leaves')
     vegetables('undergarden:mogmoss')
     vegetables('undergarden:blue_mogmoss')
     vegetables('undergarden:glitterkelp')
@@ -103,6 +120,11 @@ ServerEvents.tags('item', e => {
     specialFood('undergarden:glitterkelp')
     specialFood('undergarden:blue_mogmoss')
     specialFood('undergarden:mogmoss')
+    specialFood('#forge:eggs')
+    specialFood('#forge:milk')
+    specialFood('#forge:mushrooms')
+
+    ingredients('#forge:dough')
 
     // Dietary groups
     function mana(item) {
@@ -125,6 +147,9 @@ ServerEvents.tags('item', e => {
     }
     function grains(item) {
         e.add('diet:grains', item)
+    }
+    function spices(item) {
+        e.add('diet:spices', item)
     }
     
     // Force add food groups to items whether its edible or not. Useful for cakes, etc. but slicer recipes make this useless for placeable foods.
