@@ -1,20 +1,50 @@
 const $UUID = Java.loadClass("java.util.UUID")
 let uuid = $UUID.randomUUID();
+
 ItemEvents.modification(event => {
-    event.modify('gtceu:basic_electronic_circuit', item => {
-      item.foodProperties = food => {
-          food.hunger(6)
-          food.saturation(0.80)
-          food.fastToEat(true)
-      }
-    })
-    event.modify('kubejs:cosmic_meatballs', item => {
-      item.foodProperties = food => {
-          food.hunger(1000000)
-          food.saturation(10000)
-          food.fastToEat(false)
-      }
-    })
+    food('kubejs:cosmic_meatballs', 1000000, 1000000)    
+    food('legendarysurvivaloverhaul:apple_juice', 6, 1)
+    food('legendarysurvivaloverhaul:beetroot_juice', 1.5, 1)
+    food('legendarysurvivaloverhaul:cactus_juice', 4.5, 1)
+    food('legendarysurvivaloverhaul:carrot_juice', 4.5, 1)
+    food('legendarysurvivaloverhaul:chorus_fruit_juice', 6, 1)
+    food('legendarysurvivaloverhaul:glistering_melon_juice', 4, 1)
+    food('legendarysurvivaloverhaul:golden_apple_juice', 6, 2.5)
+    food('legendarysurvivaloverhaul:golden_carrot_juice', 9, 2.5)
+    food('legendarysurvivaloverhaul:melon_juice', 3, 0.8)
+    food('legendarysurvivaloverhaul:pumpkin_juice', 4.5, 0.5)
+
+    snackFood('gtceu:basic_electronic_circuit', 6, 0.8, true)
+
+    function snackFood(foodItem, hunger, saturation, isSnack) {
+      event.modify(foodItem, item => {
+        item.foodProperties = food => {
+            food.hunger(hunger)
+            food.saturation(saturation)
+            food.fastToEat(isSnack)
+        }
+      })
+    }
+
+    function food(foodItem, hunger, saturation) {
+      event.modify(foodItem, item => {
+        item.foodProperties = food => {
+            food.hunger(hunger)
+            food.saturation(saturation)
+            food.fastToEat(false)
+        }
+      })
+    }
+
+    function foodWithEffect(foodItem, hunger, saturation, effectId, effectDuration, effectAmplifier, effectChance) {
+      event.modify(foodItem, item => {
+        item.foodProperties = food => {
+            food.hunger(hunger)
+            food.saturation(saturation)
+            food.effect(effectId, effectDuration, effectAmplifier, effectChance)
+        }
+      })
+    }
 })
 
 ItemEvents.armorTierRegistry(event => {
