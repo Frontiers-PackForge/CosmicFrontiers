@@ -588,7 +588,9 @@ ServerEvents.recipes(event => {
     D: 'ae2:fluix_smart_dense_cable',
     Q: 'ae2wtlib:quantum_bridge_card'
   })
-
+  event.shapeless('ae2:toggle_bus', [
+    'ae2:level_emitter', 'minecraft:lever'
+  ])
   //Interface Full to Thin and Thin to Full
   event.shapeless('ae2:cable_interface', [
     'ae2:interface'
