@@ -119,7 +119,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_ROD)
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_GEAR,)
+
     event.create('annealed_manasteel')
         .ingot()
         .liquid()
@@ -137,7 +141,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.NO_SMELTING
         )
-
 
     event.create('elementium')
         .color(0xf472c6)
