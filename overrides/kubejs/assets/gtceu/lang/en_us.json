@@ -269,7 +269,7 @@
   "material.gtceu.sodium_tungstate_solution": "Sodium Tungstate Solution",
   "material.gtceu.iron_hydroxide": "Iron Hydroxide",
   "material.gtceu.manganese_hydroxide": "Manganese Hydroxide",
-  "material.gtceu.sodium_molybdenum_sulfide": "Molybdenum Trisulfide",
+  "material.gtceu.sodium_molybdenum_sulfide": "Sodium Molybdenum Trisulfide",
   "material.gtceu.molybdenum_trisulfide": "Molybdenum Trisulfide",
   "material.gtceu.trioctylamine": "Trioctylamine",
   "material.gtceu.trioctylammonium_isopolytungstate": "Trioctylammonium Isopolytungstate",
@@ -484,6 +484,11 @@
   "material.gtceu.americium_oxide": "Americium Oxide",
   "material.gtceu.dreamwood": "Dreamwood",
   "material.gtceu.fungal_nutrient_waste": "Fungal Nutrient Waste",
+
+  "material.gtceu.molybdenum_oxide": "Molybdenum(IV) Oxide",
+  "material.gtceu.ammonium_molybdate": "Ammonium Molybdate",
+  "material.gtceu.ammonium_dimolybdate": "Ammonium Dimolybdate",
+  "material.gtceu.molybdenum_trioxide": "Molybdenum Trioxide",
 
   "gtceu.industrial_stoneworks": "Industrial Stoneworks",
   "block.gtceu.industrial_stoneworks": "Industrial Stoneworks",
