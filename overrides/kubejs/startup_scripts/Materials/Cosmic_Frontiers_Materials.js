@@ -611,8 +611,25 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
     event.create('veltharic_slough') //
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-    event.create('stardust_doped_diesel')
+    event.create('stardust_infused_gasoline')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('cracked_cetane_boosted_diesel')
+        .liquid()
+        .color(0x03fc98)
+    event.create('starry_fuel_mixture')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('illuminated_heavy_fuel_mixture')
+        .liquid()
+        .color(0xa8ddff)
+    event.create('illuminated_light_fuel_mixture')
+        .liquid()
+        .color(0x0cf0e8)
+
+
+    event.create('wispy_star_dew')
+        .gas()
+        .color(0x0cf0e8)
+
 
     event.create('moon_stone')
         .dust()
