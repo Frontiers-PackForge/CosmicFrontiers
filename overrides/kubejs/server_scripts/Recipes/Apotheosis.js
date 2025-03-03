@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
         A: 'cosmiccore:rune_slate_khoruth',
         R: 'cosmiccore:rune_slate_tylomir'
     })
-    event.shaped('apotheosis:hellshelf', [
+    event.shaped('apotheosis:dormant_deepshelf', [
         'LWL',
         'RBR',
         'LWL'
