@@ -119,6 +119,9 @@ ServerEvents.recipes(event => {
   event.remove({ input: coveredCableHidding })
 })
 
+
+
+
 ServerEvents.tags('item', event => {
   event.add('forge:viewers/hidden_from_recipe', denseCoverHidding)
   event.add('c:hidden_from_recipe_viewers', denseCoverHidding)
@@ -128,9 +131,9 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:viewers/hidden_from_recipe', coveredCableHidding)
   event.add('c:hidden_from_recipe_viewers', coveredCableHidding)
-
-  event.add('forge:viewers/hidden_from_recipe', matrix)
-  event.add('c:hidden_from_recipe_viewers', matrix)
+  //Start Work on Matrix Recipes
+  // event.add('forge:viewers/hidden_from_recipe', matrix)
+  // event.add('c:hidden_from_recipe_viewers', matrix)
   // event.add('forge:viewers/hidden_from_recipe', denseCoverHidding)
   // event.add('c:hidden_from_recipe_viewers', denseCoverHidding)
 })
@@ -171,6 +174,43 @@ ServerEvents.recipes(event => {
     .itemOutputs('ae2:singularity')
     .duration(12000)
     .EUt(GTValues.VA[GTValues.HV]);
+
+  event.recipes.gtceu.assembler(`frontiers:matrix_frame`)
+    .itemInputs(['4x gtceu:plascrete','gtceu:palladium_plate','gtceu:platinum_plate', 'gtceu:blue_steel_frame', '#gtceu:circuits/hv'])
+    .itemOutputs('expatternprovider:assembler_matrix_frame')
+    .duration(350)
+    .EUt(GTValues.VA[GTValues.EV]);
+  //Glass Version
+  event.recipes.gtceu.assembler(`frontiers:matrix_wall`)
+    .itemInputs(['4x gtceu:plascrete','gtceu:palladium_plate','gtceu:platinum_plate', 'ae2:fluix_smart_dense_cable', 'gtceu:dense_steel_plate'])
+    .itemOutputs('expatternprovider:assembler_matrix_wall')
+    .duration(350)
+    .EUt(GTValues.VA[GTValues.EV]);
+  event.recipes.gtceu.assembler(`frontiers:matrix_pattern_unit`)
+    .itemInputs(['4x gtceu:plascrete', 'expatternprovider:ex_pattern_provider', '#gtceu:circuits/ev'])
+    .itemOutputs('expatternprovider:assembler_matrix_pattern')
+    .duration(350)
+    .EUt(GTValues.VA[GTValues.EV]);
+  event.recipes.gtceu.assembler(`frontiers:matrix_crafting_unit`)
+    .itemInputs(['4x gtceu:plascrete', 'ae2:cell_component_16k', '#gtceu:circuits/ev'])
+    .itemOutputs('expatternprovider:assembler_matrix_crafter')
+    .duration(350)
+    .EUt(GTValues.VA[GTValues.EV]);
+  event.recipes.gtceu.assembler(`frontiers:matrix_speed_unit`)
+    .itemInputs(['4x gtceu:plascrete', '8x ae2:speed_card', 'ae2:cell_component_64k', '#gtceu:circuits/ev'])
+    .itemOutputs('expatternprovider:assembler_matrix_speed')
+    .duration(350)
+    .EUt(GTValues.VA[GTValues.EV]);
+  event.recipes.gtceu.assembler(`frontiers:matrix_glass_wall`)
+    .itemInputs(['expatternprovider:assembler_matrix_wall', 'gtceu:laminated_glass'])
+    .itemOutputs('expatternprovider:assembler_matrix_glass')
+    .duration(350)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+
+
+
+
 
   event.shaped('ae2:io_port', [
     'SCS',
