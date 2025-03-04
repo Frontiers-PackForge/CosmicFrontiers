@@ -576,6 +576,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
     event.create('veltharic_slough')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create("triphenyl_phosphine")
+        .liquid()
+        .color(0x825991)
+        .formula('P(C6H5)3')
 })
 
 GTCEuStartupEvents.materialModification(event => {
