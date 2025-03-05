@@ -45,20 +45,12 @@ ServerEvents.tags('item', e => {
     mana('ars_nouveau:frostaya_pod')
     mana('ars_nouveau:mendosteen_pod')
     mana('minecraft:enchanted_golden_apple')
+
     psi('gtceu:basic_electronic_circuit')
     psi('gtceu:purple_drink')
     psi('kubejs:cosmic_meatballs')
     psi('malum:cursed_sap')
-    // Spice != flavor here. Spices tag is for ingredients that make your body heart up. This is why onions, salt and similar aren't included
-    spices('#forge:peppers')
-    spices('#forge:hot_spice')
-    spices('vintagedelight:ghost_charcoal')
-    spices('croptopia:pepper')
-    spices('croptopia:paprika')
-    spices('croptopia:pepper')
-    spices('minecraft:crimson_fungus')
-    spices('nethersdelight:propelpearl')
-    spices('minecraft:blaze_rod')
+
     proteins('gtceu:dough')
     proteins('#forge:nut_butter')
     proteins('#forge:eggs')
@@ -68,6 +60,7 @@ ServerEvents.tags('item', e => {
     proteins('nethersdelight:hoglin_ear')
     proteins('nethersdelight:strider_slice')
     proteins('occultism:beaver_nugget')
+
     vegetables('legendarysurvivaloverhaul:beetroot_juice')
     vegetables('legendarysurvivaloverhaul:cactus_juice')
     vegetables('legendarysurvivaloverhaul:carrot_juice')
@@ -78,6 +71,7 @@ ServerEvents.tags('item', e => {
     vegetables('undergarden:mogmoss')
     vegetables('undergarden:blue_mogmoss')
     vegetables('undergarden:glitterkelp')
+
     fruits('legendarysurvivaloverhaul:apple_juice')
     fruits('legendarysurvivaloverhaul:chorus_fruit_juice')
     fruits('legendarysurvivaloverhaul:glistering_melon_juice')
@@ -99,6 +93,7 @@ ServerEvents.tags('item', e => {
     fruits('occultism:datura')
     fruits('undergarden:droopvine_item')
     fruits('nethersdelight:propelpearl')
+
     sugars('aether:candy_cane')
     sugars('aether:gingerbread_man')
     sugars('create:builders_tea')
@@ -112,6 +107,7 @@ ServerEvents.tags('item', e => {
     sugars('legendarysurvivaloverhaul:golden_apple_juice')
     sugars('legendarysurvivaloverhaul:melon_juice')
     sugars('legendarysurvivaloverhaul:pumpkin_juice')
+
     grains('aether:gingerbread_man')
     grains('gtceu:dough')
 
@@ -147,9 +143,6 @@ ServerEvents.tags('item', e => {
     }
     function grains(item) {
         e.add('diet:grains', item)
-    }
-    function spices(item) {
-        e.add('diet:spices', item)
     }
     
     // Force add food groups to items whether its edible or not. Useful for cakes, etc. but slicer recipes make this useless for placeable foods.
