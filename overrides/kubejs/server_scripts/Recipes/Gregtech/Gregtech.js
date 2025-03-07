@@ -81,6 +81,10 @@ ServerEvents.recipes(event => {
     'gtceu:iridium_frame',
     'gtceu:luminescent_utherium_frame'
   )
+  event.replaceInput({ output: 'gtceu:heat_vent' },
+    'gtceu:tantalum_carbide_plate',
+    'gtceu:titanium_carbide_plate'
+  )
 
 
 
@@ -1253,7 +1257,7 @@ ServerEvents.recipes(event => {
   ], {
     P: 'gtceu:titanium_carbide_plate',
     C: '#gtceu:circuits/luv',
-    W: 'gtceu:uranium_triplatinum_quadruple_wire',
+    W: 'gtceu:nichrome_quadruple_cable',
     F: 'gtceu:ev_alloy_smelter'
   })
   //Coils-new
