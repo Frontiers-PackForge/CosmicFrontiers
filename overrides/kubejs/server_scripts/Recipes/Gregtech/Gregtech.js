@@ -81,6 +81,10 @@ ServerEvents.recipes(event => {
     'gtceu:iridium_frame',
     'gtceu:luminescent_utherium_frame'
   )
+
+
+
+
   event.recipes.gtceu.spooling_machine('frontiers_ethersteel_lattice')
     .itemInputs(['gtceu:carbon_fiber_mesh', '8x gtceu:fine_galvanized_ethersteel_wire'])
     .inputFluids('gtceu:polytetrafluoroethylene 144')
@@ -155,10 +159,10 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:create_mixer/concrete_from_marble' })
   event.remove({ id: 'gtceu:shaped/casing_primitive_bricks' })
   event.recipes.gtceu.fluid_solidifier('firebricks')
-    .itemInputs('8x gtceu:firebrick')
+    .itemInputs('6x gtceu:firebrick')
     .inputFluids('gtceu:concrete 500')
     .itemOutputs('gtceu:firebricks')
-    .duration(100)
+    .duration(60)
     .EUt(12)
   event.remove({ output: 'gtceu:fireclay_dust' })
   event.recipes.gtceu.forming_press('waxed_leather_forming')
