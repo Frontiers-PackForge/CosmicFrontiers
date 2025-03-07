@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     event.remove({id: 'gtceu:electrolyzer/decomposition_electrolyzing_tantalite'})
     event.recipes.gtceu.electrolyzer("tantalite_electro_bad")
-        .itemInputs('9x gtceu:tantalite_dust')
+        .itemInputs('36x gtceu:small_tantalite_dust')
         .itemOutputs('2x gtceu:tiny_tantalum_dust')
         .itemOutputs('1x gtceu:small_manganese_dust')
         .outputFluids('gtceu:oxygen 6000')
