@@ -36,7 +36,7 @@
 			description: [
 				"Steam is mostly viable for the start of the game."
 				""
-				"I would strongly recommend moving away from it **entirely** by LV. Go make the ethanol power loop or suck down a few oil wells."
+				"I would strongly recommend moving away from it **entirely** by &8LV&r. Go make the ethanol power loop or suck down a few oil wells."
 				""
 				"I am not responsible for sanity loss from using steam beyond this point."
 				"Kthx"
@@ -56,69 +56,85 @@
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
+			description: ["Great for passive steam early game, though the HP Solar Boiler is better..."]
 			id: "0BB1B009E21A8D73"
+			subtitle: "Free Steam!"
 			tasks: [{
 				id: "3C87619324B2DA97"
 				item: "gtceu:lp_steam_solar_boiler"
 				type: "item"
 			}]
 			x: -3.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
+			description: [
+				"Welcome to the steam age! This will be your first producer of steam. The design is very human, and very easy to use. "
+				""
+				"&4DO NOT PUT WATER IN AN ALREADY HOT AND EMPTY BOILER&r"
+			]
 			id: "3B12EDE4D85AF194"
+			subtitle: "First Steam"
 			tasks: [{
 				id: "68B89F24E990572D"
 				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -2.5d
+			x: -3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
+			description: ["Got some extra liquid fuel flowing around? Well you can use that to make some steam!"]
 			id: "4863B9E3983A5463"
+			subtitle: "Liquid Power!"
 			tasks: [{
 				id: "4AEC33B37FB4C22B"
 				item: "gtceu:lp_steam_liquid_boiler"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -3.5d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
+			description: ["HP Solid Fuel boiler is pretty good, but it is still outperformed by the HP Solar Boiler."]
 			id: "7786A4BDC9C62461"
+			subtitle: "I have tons of coal!"
 			tasks: [{
 				id: "0E0D152491235E72"
 				item: "gtceu:hp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -2.5d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
+			description: ["If you have an infinite source of liquid fuel (Lava), then the HP Liquid Fuel boiler will be the best source of steam early game. Just keep it fed and watch the steam flow in!"]
 			id: "59BA549EAC602E63"
+			subtitle: "Steam Galore"
 			tasks: [{
 				id: "1091FDF0B76C8264"
 				item: "gtceu:hp_steam_liquid_boiler"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -3.5d
+			x: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
+			description: ["Now we're at it! HP Solar Boiler is arguably the best early game source of steam. Just plop one down, keep it fed with water, and worry no more about steam!"]
 			id: "7666C59B2C2A9C54"
+			subtitle: "Free Steam *3!"
 			tasks: [{
 				id: "14947C012D3A9AF2"
 				item: "gtceu:hp_steam_solar_boiler"
 				type: "item"
 			}]
 			x: -2.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
@@ -154,20 +170,23 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["31D607A0E640C8D8"]
+			dependencies: ["1C09B64DA2251E5E"]
 			description: ["This chonky Multiblock may be more relevant in the future. but for now you'll most likely be off steam after LV"]
 			id: "623B30FFF67B8E82"
+			shape: "hexagon"
+			size: 1.0d
 			subtitle: "This... Exists???"
 			tasks: [{
 				id: "763426A27172E46C"
 				item: "gtceu:steam_large_turbine"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 6.0d
+			x: 5.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["6146E12078CCA5D3"]
+			dependencies: ["31D607A0E640C8D8"]
+			description: ["By now, you should start to move away from steam to other sources of power. "]
 			id: "51FA210D5FCB8FF0"
 			shape: "hexagon"
 			size: 1.5d
@@ -176,6 +195,7 @@
 				item: "gtceu:lv_machine_hull"
 				type: "item"
 			}]
+			title: "LV"
 			x: -5.0d
 			y: 0.0d
 		}
@@ -194,7 +214,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -208,7 +228,7 @@
 			]
 			id: "020B8BDB99E667FC"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "The Staple Early Fuel"
 			tasks: [{
 				id: "70285B9A9852AB24"
@@ -228,6 +248,7 @@
 				item: "gtceu:mv_machine_hull"
 				type: "item"
 			}]
+			title: "MV"
 			x: -7.0d
 			y: 0.0d
 		}
@@ -275,8 +296,8 @@
 				item: "gtceu:lv_combustion"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 3.0d
+			x: -5.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["173C518F075DE29A"]
@@ -286,8 +307,8 @@
 				item: "gtceu:mv_combustion"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 4.5d
+			x: -5.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["173C518F075DE29A"]
@@ -297,8 +318,8 @@
 				item: "gtceu:hv_combustion"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 6.0d
+			x: -5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["79F43C17F6618C30"]
@@ -308,8 +329,8 @@
 				item: "gtceu:lv_gas_turbine"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 3.0d
+			x: -6.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["79F43C17F6618C30"]
@@ -319,8 +340,8 @@
 				item: "gtceu:mv_gas_turbine"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 4.5d
+			x: -6.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["79F43C17F6618C30"]
@@ -330,8 +351,8 @@
 				item: "gtceu:hv_gas_turbine"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 6.0d
+			x: -6.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -345,14 +366,24 @@
 				id: "3FF8E539F8378FD3"
 				type: "checkmark"
 			}]
-			x: -6.0d
+			title: "Liquid Based Generators"
+			x: -5.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["5F977625E0059F00"]
+			dependencies: [
+				"5F977625E0059F00"
+				"51FA210D5FCB8FF0"
+			]
+			dependency_requirement: "one_started"
 			icon: "createdeco:decal_fire"
 			id: "79F43C17F6618C30"
-			x: -7.5d
+			tasks: [{
+				id: "146C201B1F64BF8B"
+				type: "checkmark"
+			}]
+			title: "Gas Based Generators"
+			x: -6.5d
 			y: 1.5d
 		}
 		{
@@ -365,6 +396,7 @@
 				item: "gtceu:hv_machine_hull"
 				type: "item"
 			}]
+			title: "HV"
 			x: -9.0d
 			y: 0.0d
 		}
@@ -383,7 +415,7 @@
 			]
 			id: "2D890A90DC16FF25"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "The Era of Gas"
 			tasks: [{
 				id: "24CA043B3C73365E"
@@ -391,7 +423,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: -4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1E224019910AE6C7"]
@@ -403,38 +435,49 @@
 				item: "gtceu:ev_machine_hull"
 				type: "item"
 			}]
+			title: "EV"
 			x: -11.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["23AEF543AA92119E"]
+			dependencies: ["1546E2372CFB52F1"]
+			description: ["The &6Large Gas Turbine&r is one of the greatest generators. As long as you can keep it fed, it can be upgraded to suit your power needs all the way up to UV. "]
 			id: "0537993AD8D37102"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
+			subtitle: "Power Moment"
 			tasks: [{
 				id: "4E77E85BE81F66BB"
 				item: "gtceu:gas_large_turbine"
 				type: "item"
 			}]
-			x: -11.5d
+			x: 6.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["23AEF543AA92119E"]
+			dependencies: ["1546E2372CFB52F1"]
+			description: ["The Large Combustion Generator is a great power generator. It is recommended to boost it with oxygen as it will generate 3x the power for 2x the fuel. "]
 			id: "00797AA0C0F4AC06"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
+			subtitle: "I love diesel!"
 			tasks: [{
 				id: "5E41DB99814BAA62"
 				item: "gtceu:large_combustion_engine"
 				type: "item"
 			}]
-			x: -10.5d
+			x: 7.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["0537993AD8D37102"]
+			dependencies: ["478C629140D9453B"]
+			description: [
+				"Turbine rotors go spinny spinny."
+				""
+				"The efficiency, power generation, and durability of a rotor depends on the material it is made of. "
+			]
 			id: "636BBD84AF9B125B"
+			subtitle: "Spinny Spinny"
 			tasks: [{
 				id: "730B51DDE16E0877"
 				item: {
@@ -446,15 +489,13 @@
 				title: "\"Any Turbine Rotor\""
 				type: "item"
 			}]
-			x: -11.5d
-			y: 3.0d
+			x: 5.0d
+			y: -3.0d
 		}
 		{
-			dependencies: [
-				"0537993AD8D37102"
-				"636BBD84AF9B125B"
-			]
-			description: ["The higher the tier above EV, the more efficient the recipe becomes"]
+			dependencies: ["1C09B64DA2251E5E"]
+			dependency_requirement: "one_completed"
+			description: ["Rotor holders determine the maximum tier of power a turbine can produce. Each tier of rotor holder above &5EV&r gives a 10% increase to efficiency as well as doubling the power generated."]
 			id: "478C629140D9453B"
 			tasks: [{
 				id: "07EE6A6AED712682"
@@ -468,21 +509,21 @@
 				title: "Any Rotor Holder (HV-UV)"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 4.5d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4ECB7E470EED0932"]
 			id: "00E22C38E03E6739"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "5CD32696AAF42C2D"
 				item: "gtceu:diesel_bucket"
 				type: "item"
 			}]
 			x: -6.5d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["23AEF543AA92119E"]
@@ -494,20 +535,27 @@
 				item: "gtceu:iv_machine_hull"
 				type: "item"
 			}]
+			title: "IV"
 			x: -13.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["493D3AD6435FA70F"]
+			dependencies: ["49D3CC0A6ADC97DD"]
+			description: [
+				"Yay! Blue Combustion Generator!"
+				""
+				"The Extreme Combustion Generator is hungry. Feed it fuel and it will give you power in return. Give it some dessert of oxygen to go along with the fuel and it will give you 4x the power with only 2x the fuel."
+			]
 			id: "349CA7E4388B5E1A"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
+			subtitle: "I still love diesel!"
 			tasks: [{
 				id: "7573375A8DB91A7D"
 				item: "gtceu:extreme_combustion_engine"
 				type: "item"
 			}]
-			x: -12.5d
+			x: 9.0d
 			y: 1.5d
 		}
 		{
@@ -521,11 +569,12 @@
 				item: "gtceu:luv_machine_hull"
 				type: "item"
 			}]
+			title: "LuV"
 			x: -15.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["4C5594EAE0D1F1C8"]
+			dependencies: ["582CBA5F916E5BDE"]
 			description: [
 				"Oh boy, Naquahine Power."
 				""
@@ -540,14 +589,11 @@
 				item: "cosmiccore:naquahine_pressure_reactor"
 				type: "item"
 			}]
-			x: -15.0d
+			x: 11.0d
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"4C5594EAE0D1F1C8"
-				"1345EB5C8CE6EA96"
-			]
+			dependencies: ["1345EB5C8CE6EA96"]
 			description: [
 				"You can't really make any better tier of micro reactor atm. as they're not very viable to produce due to high material cost."
 				""
@@ -565,7 +611,7 @@
 				item: "gtceu:iv_naquahine_mini_reactor"
 				type: "item"
 			}]
-			x: -15.0d
+			x: 11.0d
 			y: 3.0d
 		}
 		{
@@ -579,6 +625,7 @@
 				item: "gtceu:zpm_machine_hull"
 				type: "item"
 			}]
+			title: "ZPM"
 			x: -17.0d
 			y: 0.0d
 		}
@@ -640,6 +687,76 @@
 			}]
 			x: -17.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["5AAA31F9541457A6"]
+			id: "1C09B64DA2251E5E"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "057A677610379371"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			title: "HV Options"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C09B64DA2251E5E"]
+			id: "1546E2372CFB52F1"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "772E8DD1A0936F17"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			title: "EV Options"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6146E12078CCA5D3"]
+			description: ["After getting into &6HV&r, singleblock power generators are too inefficient to stay, and some simply don't have tiers above &6HV&r anyways. This is where the multiblocks come in. Have fun building them! :)"]
+			id: "5AAA31F9541457A6"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "654948F8CDE3116B"
+				title: "Multiblock Power Generation"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1546E2372CFB52F1"]
+			id: "49D3CC0A6ADC97DD"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "2AF8D44E21F53815"
+				item: "gtceu:iv_machine_hull"
+				type: "item"
+			}]
+			title: "IV Options"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["49D3CC0A6ADC97DD"]
+			id: "582CBA5F916E5BDE"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "037B983F7E9B1722"
+				item: "gtceu:luv_machine_hull"
+				type: "item"
+			}]
+			title: "LuV Options"
+			x: 11.0d
+			y: 0.0d
 		}
 	]
 	title: "&fPower and Multiblocks"
