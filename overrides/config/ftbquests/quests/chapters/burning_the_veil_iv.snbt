@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "burning_the_veil_iv"
 	group: "3EC91AC584FC0BC3"
@@ -10,6 +11,7 @@
 	quests: [
 		{
 			dependencies: ["44DE661BAA434766"]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "52DAB014D2101F02"
 			shape: "hexagon"
@@ -529,7 +531,10 @@
 				"57898F6FBA8CE622"
 				"52DAB014D2101F02"
 			]
+			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "454AC43D9EAF4A55"
 			shape: "hexagon"
 			subtitle: "Have You Finished Platline?"

@@ -1,6 +1,7 @@
 {
 	autofocus_id: "1E72D62913EEB4EE"
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "navigation_error__log_1_hv"
 	group: "533DAA16C8D9D30C"
@@ -558,8 +559,11 @@
 				"This actually has nothing to do with gloompers, but the Virulent Mixture found deep within the undergarden. Toxic and Hot Slag containing various rare earths."
 				""
 				"You'll only be able to extract the light REE's for now, but with some EV Circuits you'll be able to extract more."
+				""
+				"Note that this entire Questline will auto-complete if you hold &664x Neodymium Dust&r"
 			]
 			id: "3302CF516C57AC40"
+			min_width: 300
 			shape: "hexagon"
 			subtitle: "Gloomper Chemistry - REE Extraction"
 			tasks: [{
@@ -569,7 +573,7 @@
 			}]
 			title: "Gloomper Chemistry"
 			x: 15.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["45823A74FF2F334D"]
@@ -584,26 +588,6 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["726331ACD701F2FD"]
-			icon: "gtceu:depleted_uranium_hexafluoride_bucket"
-			id: "43879AAA41015110"
-			tasks: [
-				{
-					id: "2981D233CC1C7937"
-					item: "gtceu:depleted_uranium_hexafluoride_bucket"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "270EDC98582AA320"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 10.0d
-			y: -10.0d
-		}
-		{
 			dependencies: [
 				"23A933976858723B"
 				"19B3D686A4E2FFC9"
@@ -611,7 +595,44 @@
 				"1B7405FD959C65B3"
 				"26E530EE80A932EB"
 			]
+			description: [
+				"&8Neodymium&r? Check."
+				"&5Luminescent Utherium&r? Check."
+				"&dTitanium&r? Check."
+				"&eEv Circuits&r? Check."
+				""
+				"By now you should have collected all the needed components to start producing &eEV machinery&r."
+				"Optionally, you've also set up &aplatinum&r and &apalladium&r processing, you'll have to do this in &5EV&r if you haven't already."
+				""
+				""
+				"&5EV&r will contain more &5elaborate extraction lines&r and &ematerial production&r than HV."
+				"Be prepared to &lexpand your power grid&r, &lbolster resource production&r, and &lexpand to new  worlds&r."
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "7C8367D922103E19"
+			min_width: 350
+			rewards: [
+				{
+					id: "76B31D4894E81E9A"
+					item: {
+						Count: 1
+						id: "trofers:small_plate"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "frontiers:materials/utherium"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "61E598A387E2650A"
+					item: "cosmiccore:cluster_of_perpetuity"
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "To EV and Beyond!"
@@ -643,28 +664,6 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["35FA8E7D591414DE"]
-			id: "504D0A68967D9CEE"
-			tasks: [{
-				id: "1073234F9E64F8D5"
-				item: "gtceu:uranium_235_dust"
-				type: "item"
-			}]
-			x: 11.0d
-			y: -11.0d
-		}
-		{
-			dependencies: ["43879AAA41015110"]
-			id: "69C238710AC5E0F5"
-			tasks: [{
-				id: "7ACF88B84594385C"
-				item: "gtceu:uranium_dust"
-				type: "item"
-			}]
-			x: 10.0d
-			y: -11.0d
-		}
-		{
 			dependencies: ["22693418B45740CB"]
 			id: "38D3B895535F1DCA"
 			shape: "hexagon"
@@ -687,8 +686,8 @@
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
-				id: "5350D6DE87FB4249"
-				item: "gtceu:luminescent_utherium_gem"
+				id: "5DEBBBA2828627E0"
+				item: "gtceu:luminescent_utherium_ingot"
 				type: "item"
 			}]
 			x: 7.5d
@@ -1507,7 +1506,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["78F9D5E55175D63B"]
+			dependencies: ["1A630507AAB765E6"]
 			id: "26E530EE80A932EB"
 			shape: "hexagon"
 			tasks: [{
@@ -1519,31 +1518,18 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["639BCEB8D8598E15"]
-			id: "78F9D5E55175D63B"
-			tasks: [{
-				count: 64L
-				id: "4F8426F45A4EB507"
-				item: { Count: 64, id: "gtceu:dried_mixed_lre_precipitate_dust" }
-				type: "item"
-			}]
-			x: 8.5d
-			y: 3.0d
-		}
-		{
 			dependencies: ["38032C6144C06B2B"]
 			id: "483EDAD71360C4C4"
 			tasks: [{
-				count: 64L
 				id: "63EE6EB3A825DC57"
-				item: { Count: 64, id: "gtceu:leached_lre_residue_dust" }
+				item: "gtceu:leached_lre_residue_dust"
 				type: "item"
 			}]
-			x: 11.75d
+			x: 10.0d
 			y: 3.5d
 		}
 		{
-			dependencies: ["78F9D5E55175D63B"]
+			dependencies: ["1A630507AAB765E6"]
 			id: "1D45DD161ABA718C"
 			shape: "rsquare"
 			tasks: [{
@@ -1555,7 +1541,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["78F9D5E55175D63B"]
+			dependencies: ["1A630507AAB765E6"]
 			id: "1C7C2E342E8A9654"
 			shape: "rsquare"
 			tasks: [{
@@ -1567,7 +1553,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["78F9D5E55175D63B"]
+			dependencies: ["1A630507AAB765E6"]
 			id: "050F8CA5E095DFD3"
 			shape: "rsquare"
 			tasks: [{
@@ -1580,26 +1566,6 @@
 		}
 		{
 			dependencies: ["3302CF516C57AC40"]
-			icon: "gtceu:xenotime_slag_bucket"
-			id: "638AE7406935FF84"
-			tasks: [
-				{
-					id: "7224C47FF1D9722C"
-					item: "gtceu:xenotime_slag_bucket"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "621781C7291DFCC7"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 15.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["638AE7406935FF84"]
 			icon: "gtceu:xenotime_concentrate_bucket"
 			id: "3EF7D47E41C41475"
 			tasks: [
@@ -1615,7 +1581,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 14.0d
+			x: 13.0d
 			y: 3.0d
 		}
 		{
@@ -1635,7 +1601,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 13.0d
+			x: 11.5d
 			y: 3.0d
 		}
 		{
@@ -1655,51 +1621,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 11.75d
+			x: 10.0d
 			y: 2.5d
-		}
-		{
-			dependencies: [
-				"483EDAD71360C4C4"
-				"3B6079B88AB61576"
-			]
-			icon: "gtceu:leached_lre_liquor_bucket"
-			id: "5BB7CCEA34AF431E"
-			tasks: [
-				{
-					id: "761E4B5F309CB291"
-					item: "gtceu:mixed_lre_leachate_bucket"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "08D6B22853FEEB39"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 10.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["5BB7CCEA34AF431E"]
-			icon: "gtceu:hydrofluoric_acid_bucket"
-			id: "639BCEB8D8598E15"
-			tasks: [
-				{
-					id: "30F378ECF9451C43"
-					item: "gtceu:wet_lre_precipitate_bucket"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "3C6BE5D61A30073C"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 9.5d
-			y: 3.0d
 		}
 		{
 			dependencies: ["7C280469C5926E0A"]
@@ -1722,44 +1645,195 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["726331ACD701F2FD"]
-			icon: "gtceu:enriched_uranium_hexafluoride_bucket"
-			id: "35FA8E7D591414DE"
-			tasks: [
-				{
-					id: "12BC876CFAB447FB"
-					item: "gtceu:enriched_uranium_hexafluoride_bucket"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "585410F20A6BBC14"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
+			dependencies: [
+				"3B6079B88AB61576"
+				"483EDAD71360C4C4"
 			]
-			x: 11.0d
-			y: -10.0d
+			id: "1A630507AAB765E6"
+			tasks: [{
+				id: "102D74DD3691DB10"
+				item: "gtceu:wet_lre_precipitate_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["75D695A6DC21520C"]
-			icon: "gtceu:uranium_hexafluoride_bucket"
-			id: "726331ACD701F2FD"
+			dependencies: ["431BE27F4F577A4E"]
+			id: "577A07DB9B629A0B"
+			tasks: [{
+				id: "2EFD0631BA68657C"
+				item: "gtceu:hv_chemical_bath"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["577A07DB9B629A0B"]
+			id: "53AF608E2487B30C"
+			tasks: [{
+				id: "4CB6D230A310053C"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["53AF608E2487B30C"]
+			id: "2CBD6ACC05AF0242"
+			tasks: [{
+				id: "784315F1809D60E1"
+				item: "gtceu:hv_sensor"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["53AF608E2487B30C"]
+			id: "06FD1A58EDBB533F"
+			tasks: [{
+				id: "56508790CAC8CDB3"
+				item: "gtceu:hv_emitter"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"06FD1A58EDBB533F"
+				"2CBD6ACC05AF0242"
+			]
+			id: "49AFA999A2DCC1D8"
+			tasks: [{
+				id: "35A609A12AC18B58"
+				item: "cosmiccore:hv_radio_module"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["49AFA999A2DCC1D8"]
+			description: [
+				"Will charge personal equipment and batteries within the players inventory."
+				""
+				"By default charges 1 A of power within a set radius around the machine."
+				"Using a Screwdriver will switch it to supercharger mode, which will charge 4A of power within half the original distance"
+			]
+			id: "531BEE978A697B28"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Remote Energy Distribution, Personalized!"
+			tasks: [{
+				id: "6D6E2BA27B21A9A6"
+				item: "cosmiccore:hv_wireless_charger"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["431BE27F4F577A4E"]
+			id: "119F5250E0C63F0C"
+			subtitle: "Byproducts! Finally!"
+			tasks: [{
+				id: "3CA3B3E8B2C6D65B"
+				item: "gtceu:hv_macerator"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["431BE27F4F577A4E"]
+			description: [
+				"You will need an HV Polarizer for Neodymium Rods soon."
+				""
+				"I don't know what else to write here."
+				"So Hi, again :)"
+			]
+			id: "4F7D3D13F0B1396C"
+			subtitle: "Better Polarizer"
+			tasks: [{
+				id: "452E1B4C136467D2"
+				item: "gtceu:hv_polarizer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["685847565997C803"]
+			description: [
+				"Perpetuity seems to reject any object, physical or otherwise, that isn’t directly bound to me. It only reacts when I apply a will or desire onto the glass surface."
+				""
+				"I tried to eat it; it became bread."
+				""
+				"I tried to throw it away; it became garbage."
+				""
+				"I tried to crush it; it became as solid as the earth."
+				""
+				"I tried humming a tune, and the shard vanished."
+				""
+				"A calming tone echoed around me, and my mind became clearer once again."
+				"Once more, I attempted to ask myself, “Who am I?”"
+				"Nothing."
+				""
+				"The headaches are gone. However, as I frequent the Aether, a soft humming can be heard."
+				"It’s the same tune the shard responded to—the entire song. I can’t help but wonder if there are others out there. I should try to establish some level of contact beyond the planet I inhabit."
+			]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: "minecraft:writable_book"
+			id: "4D1E521AC798D8C5"
+			shape: "diamond"
+			subtitle: "&r&7Story Entry 3 | Description Hidden Until Completed"
 			tasks: [
 				{
-					id: "6FF1813D9F3899E6"
-					item: "gtceu:uranium_hexafluoride_bucket"
-					type: "item"
-				}
-				{
 					disable_toast: true
-					id: "4D5EE4F69D1E2E7B"
-					title: "Chain Quest - Skip me!"
+					id: "06A1EA6E7B1E8441"
+					title: "Accept the Present."
 					type: "checkmark"
 				}
+				{
+					id: "4538B03F8BC30D83"
+					item: "cosmiccore:cluster_of_perpetuity"
+					type: "item"
+				}
 			]
-			x: 10.5d
-			y: -9.0d
+			title: "The Song"
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7C8367D922103E19"]
+			icon: "createdeco:decal_up"
+			id: "685847565997C803"
+			rewards: [{
+				id: "4B8D71C000BBC1DA"
+				item: {
+					Count: 1
+					id: "trofers:small_plate"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "frontiers:materials/utherium"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Complete this Quest to Unlock the EV Chapter."
+			tasks: [{
+				id: "3F9914ECC5B0FC31"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: -1.5d
 		}
 	]
 	title: "Gloomper Chemistry [HV]"

@@ -1,6 +1,7 @@
 {
 	autofocus_id: "12E540563DD5C5A9"
 	default_hide_dependency_lines: false
+	default_min_width: 350
 	default_quest_shape: ""
 	filename: "forged_in_galefury"
 	group: "4135A2BA7EBD719E"
@@ -63,9 +64,14 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["552C016EDCDE02B2"]
+			dependencies: [
+				"552C016EDCDE02B2"
+				"47338E363C32FF42"
+			]
+			description: ["The next tier of &eenergy hatch&r. Remember, if you want to run &6HV&r in your EBF recipes, you’ll need two of these and 4 amps of MV power."]
 			id: "0DA958E38153F414"
 			shape: "hexagon"
+			subtitle: "Upgrades people, upgrades!"
 			tasks: [{
 				id: "1B767105E5FC0C46"
 				item: "gtceu:mv_energy_input_hatch"
@@ -80,9 +86,9 @@
 				"246B6FBFDDAE6748"
 			]
 			description: [
-				"Kanthal Coils allow you to smelt silicon ingots and stainless steel."
+				"Kanthal Coils allow you to smelt &asilicon ingots&r and &astainless steel&r."
 				""
-				"You probably only need to make one set of coils for now until you have a Vacuum Freezer"
+				"These are a bit annoying to craft in large quantities until you have a vacuum freezer."
 			]
 			id: "3B327B774ABA8783"
 			rewards: [{
@@ -110,7 +116,11 @@
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
-			description: [""]
+			description: [
+				"Another day, another duplicated quest, that's how important the Chemical Bath is!"
+				""
+				"While I have you here, have you drank enough liquids?"
+			]
 			id: "2CB636C76965CC37"
 			subtitle: "Yup, This quest is here twice."
 			tasks: [{
@@ -123,8 +133,14 @@
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
+			description: [
+				"You'll need an MV Spooling machine for MV Voltage Coils and Kanthal Coils."
+				""
+				"Both are required for upgrading your EBF to smelt more complex metals."
+			]
 			id: "246B6FBFDDAE6748"
 			shape: "hexagon"
+			subtitle: "Spooling at MV"
 			tasks: [{
 				id: "3F52553DC6A85738"
 				item: "gtceu:mv_spooling_machine"
@@ -135,16 +151,24 @@
 		}
 		{
 			dependencies: ["4573B786F0ED6565"]
+			description: [
+				"Used to make the next tier of circuits, 'Micros' as they are commonlyy called."
+				""
+				"Micro circuits offer you the best MV circuit you can make, and unlock the EV and IV circuit tier."
+				""
+				"Make it now, rather than later."
+			]
 			id: "00747791826B2FB8"
 			shape: "hexagon"
-			size: 2.5d
+			size: 1.5d
+			subtitle: "Next up, better circuits!"
 			tasks: [{
 				id: "699ABF22006086C6"
 				item: "gtceu:mv_circuit_assembler"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 10.5d
+			x: 5.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["658FAEAC28F212F2"]
@@ -212,7 +236,13 @@
 		}
 		{
 			dependencies: ["246B6FBFDDAE6748"]
+			description: [
+				"An upgraded voltage coil that is capable of handling &bMV&r power."
+				""
+				"You'll probably want to make a few of these."
+			]
 			id: "552C016EDCDE02B2"
+			subtitle: "Next Kind of Coil Component"
 			tasks: [{
 				id: "2EBEE2E574DBDE8A"
 				item: "gtceu:mv_voltage_coil"
@@ -266,31 +296,17 @@
 			dependencies: [
 				"44372CC42BD4ABEF"
 				"001967805068521B"
+				"00747791826B2FB8"
 			]
 			description: [
 				"With Ethersteel and Stainless Steel, you can produce Hulls of expanded Arcane Prowess as well as Voltage."
 				""
-				"&l&bWelcome to HV&r"
 				""
+				"HV Will require you to expand your infrastructure to new heights, make sure you've made plenty of both!"
 				""
-				"Heads up, Quests beyond this point are &opretty bad at having descriptions&r"
-				""
-				"Come 0.7.0 All quest Tabs Below UV should be cleaned up and dealt with!"
+				"Welcome to HV!"
 			]
 			id: "2823B3BAEF820B50"
-			rewards: [{
-				id: "135A79F845DFAEF6"
-				item: {
-					Count: 1
-					id: "trofers:small_plate"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "frontiers:materials/ethersteel"
-						}
-					}
-				}
-				type: "item"
-			}]
 			shape: "hexagon"
 			size: 2.5d
 			subtitle: "Time to subdue the depths."
@@ -352,7 +368,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4EEB3A7642876547"]
@@ -363,7 +379,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -375,7 +391,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -387,7 +403,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -401,7 +417,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -415,7 +431,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -429,7 +445,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -455,7 +471,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["2C4D1AD906D66496"]
@@ -466,7 +482,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 7.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["63583107A604973F"]
@@ -477,7 +493,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["124FCFE63B0E5531"]
@@ -729,6 +745,11 @@
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
+			description: [
+				"Another day, another duplicated quest, that's how important the Chemical Bath is!"
+				""
+				"While I have you here, have you ate?"
+			]
 			id: "6CF5091019AA768B"
 			subtitle: "Yup, This quest is here twice."
 			tasks: [{
@@ -1163,23 +1184,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: [
-				"2823B3BAEF820B50"
-				"4573B786F0ED6565"
-			]
-			id: "051AAFDB824640E1"
-			shape: "octagon"
-			size: 1.5d
-			tasks: [{
-				id: "54C5B93B577957A9"
-				item: "ae2:pattern_provider"
-				type: "item"
-			}]
-			title: "Autocrafting, Unlocked!"
-			x: 5.0d
-			y: 8.5d
-		}
-		{
 			dependencies: ["4D9425267F0C2AB4"]
 			description: [
 				"You can collect air using Gas Collectors."
@@ -1231,8 +1235,8 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: 9.0d
+			x: 0.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -1493,22 +1497,6 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["50C0A5DD402583A2"]
-			description: [
-				"Now that you've made some chromium, you can work on making &eVanadium steel&r."
-				"&eVanadium steel&r is required to make a sawblade strong enough to cut your boules into wafers and wafers into chips."
-			]
-			id: "3615F22984D425AD"
-			subtitle: "A pretty good tool material"
-			tasks: [{
-				id: "19D31FDBC6B4F6FE"
-				item: "gtceu:vanadium_steel_dust"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 4.5d
-		}
-		{
 			dependencies: ["0D1EC6AD28F03DED"]
 			description: ["Onwards to making that buzzsaw, you can finally work on getting those MV Hatches now!"]
 			id: "47338E363C32FF42"
@@ -1518,12 +1506,15 @@
 				item: "gtceu:vanadium_steel_buzz_saw_blade"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.0d
+			x: 2.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["3615F22984D425AD"]
-			description: ["Now that you have your vanadiumsteel, toss it in any free EBF and let it smelt."]
+			dependencies: ["50C0A5DD402583A2"]
+			description: [
+				"Now that you've made some chromium, you can work on making &eVanadium steel&r."
+				"&eVanadium steel&r is required to make a sawblade strong enough to cut your boules into wafers and wafers into chips."
+			]
 			id: "0D1EC6AD28F03DED"
 			subtitle: "Ebf Time"
 			tasks: [{
@@ -1531,20 +1522,32 @@
 				item: "gtceu:vanadium_steel_ingot"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 3.0d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["0D2BAB45D2503E60"]
-			hide_dependency_lines: true
+			dependencies: [
+				"4D2BB636E77FC1F2"
+				"466C20EACAEF3394"
+			]
+			description: [
+				"Chromium is a vital component to many alloys, notably Stainless Steel and Vanadium Steel."
+				""
+				"You'll have to make a bunch of this in the future but setting up the chain may be too expensive for you currently."
+				""
+				"Fun little history lesson, this used to kill you if you weren't wearing a protective mask."
+			]
+			hide_dependency_lines: false
 			id: "50C0A5DD402583A2"
+			min_required_dependencies: 1
+			subtitle: "A new butter for your bread."
 			tasks: [{
 				id: "5221DB66CCAB05BC"
 				item: "gtceu:chromium_dust"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 6.0d
+			x: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -1628,6 +1631,107 @@
 			}]
 			x: 6.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			description: [
+				"If Chromium production is too overwhelming or not realistic for you to currently complete, you may smelt chromite in an EBF at an awful rate for chromium nuggets."
+				""
+				"The ratio of chromite dust to chromium nuggets is abysmal, but with enough you can make the chromium dust needed for your MV cutting machine."
+			]
+			hide_dependency_lines: true
+			id: "4D2BB636E77FC1F2"
+			min_width: 350
+			shape: "gear"
+			subtitle: "Don't want to do Chromium Line yet?"
+			tasks: [{
+				id: "26D8B4C571398365"
+				item: "gtceu:chromium_nugget"
+				type: "item"
+			}]
+			x: 1.214285714285701d
+			y: 0.9948979591836675d
+		}
+		{
+			dependencies: ["2823B3BAEF820B50"]
+			icon: "createdeco:decal_up"
+			id: "150C45A63355876F"
+			rewards: [
+				{
+					id: "09C8159C8E12487C"
+					item: {
+						Count: 1
+						id: "trofers:small_plate"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "frontiers:materials/ethersteel"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1CB2102659B12368"
+					item: "cosmiccore:cluster_of_perpetuity"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Complete this Quest to Unlock the HV Chapter."
+			tasks: [{
+				id: "5316EA0BADAF4E62"
+				type: "checkmark"
+			}]
+			title: "To HV!"
+			x: 3.5d
+			y: 6.25d
+		}
+		{
+			dependencies: ["150C45A63355876F"]
+			description: [
+				"After visiting the Aether, it feels as if a part of my being has become whole again. I was prepared to explore an unfamiliar landscape in the skies, and yet everything felt familiar. This sense of familiarity allowed me a brief moment of respite from these headaches."
+				""
+				"Questioning why this is the case, unfortunately, causes the headaches to come back stronger than before—and any attempts to define myself within this environment have resulted in agonizing migraines. It’s almost as if there’s a force working against me. Maybe my adventures near the Sculk caused a fungal infection to take root."
+				""
+				"For now, I’ll focus on tangible things in front of me until the cause of these headaches is alleviated. On one notable occurrence: one of these sparkling glass shards I keep finding reacted violently to a blueberry bush, and I instantly remembered the taste of a plant I’ve never tried."
+				""
+				"I’ve come to know these shards of glass as \"Perpetuity\". There’s no other way to explain these fragments of glass—they feel like a part of me. I’m just unsure how yet. The missing link might lie deeper within the confines of this mental repository I’ve been reading and writing into. "
+				"I will have to keep exploring to understand further."
+			]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: "minecraft:writable_book"
+			id: "1DD819E7483A3689"
+			min_width: 400
+			progression_mode: "linear"
+			shape: "diamond"
+			subtitle: "&r&7Story Entry 3 | Description Hidden Until Completed"
+			tasks: [
+				{
+					disable_toast: true
+					id: "70176B2BF3814FF3"
+					title: "Recall the past."
+					type: "checkmark"
+				}
+				{
+					icon: "aether:blue_berry"
+					id: "6F9239F06DF000CD"
+					observe_type: 0
+					timer: 0L
+					title: "Observe a Berry Bush in the Aether"
+					to_observe: "aether:berry_bush"
+					type: "observation"
+				}
+				{
+					id: "05781AB7327921E3"
+					item: "cosmiccore:large_shard_of_perpetuity"
+					type: "item"
+				}
+			]
+			title: "Recollection"
+			x: 2.5d
+			y: 6.25d
 		}
 	]
 	title: "Forged in Galefury [MV]"

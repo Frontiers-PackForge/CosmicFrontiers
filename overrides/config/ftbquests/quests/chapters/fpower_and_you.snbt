@@ -21,15 +21,15 @@
 			]
 			id: "6146E12078CCA5D3"
 			shape: "gear"
-			size: 3.0d
+			size: 1.0d
 			subtitle: "There's a lot here."
 			tasks: [{
 				id: "718E558A6F3FCE76"
 				title: "How to Navigate this page"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -11.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["6146E12078CCA5D3"]
@@ -41,18 +41,18 @@
 				"I am not responsible for sanity loss from using steam beyond this point."
 				"Kthx"
 			]
-			icon: "gtceu:steam_bucket"
+			icon: "gtceu:steam_machine_casing"
 			id: "31D607A0E640C8D8"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.25d
 			subtitle: "Steam."
 			tasks: [{
 				id: "2BF4D34170B88166"
 				type: "checkmark"
 			}]
 			title: "Steam Age"
-			x: -3.0d
-			y: 0.0d
+			x: -11.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
@@ -62,8 +62,8 @@
 				item: "gtceu:lp_steam_solar_boiler"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -1.5d
+			x: -7.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
@@ -73,8 +73,8 @@
 				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -2.5d
+			x: -8.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
@@ -84,8 +84,8 @@
 				item: "gtceu:lp_steam_liquid_boiler"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -3.5d
+			x: -9.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
@@ -95,8 +95,8 @@
 				item: "gtceu:hp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -2.5d
+			x: -5.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
@@ -106,8 +106,8 @@
 				item: "gtceu:hp_steam_liquid_boiler"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -3.5d
+			x: -4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
@@ -117,44 +117,33 @@
 				item: "gtceu:hp_steam_solar_boiler"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -1.5d
+			x: -6.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["31D607A0E640C8D8"]
-			id: "2ACAE0A625C441F6"
-			tasks: [{
-				id: "4CB743EB6F4C18E7"
-				item: "gtceu:lv_steam_turbine"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["31D607A0E640C8D8"]
+			dependencies: ["5F977625E0059F00"]
 			id: "4E1DA6A7F7A2FFC0"
 			tasks: [{
 				id: "03256D84AACB7025"
 				item: "gtceu:mv_steam_turbine"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 3.0d
+			x: -7.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["31D607A0E640C8D8"]
+			dependencies: ["1E224019910AE6C7"]
 			id: "7A2CDFC8A3B23671"
 			tasks: [{
 				id: "65098CCB9E298D64"
 				item: "gtceu:hv_steam_turbine"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.5d
+			x: -7.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["31D607A0E640C8D8"]
+			dependencies: ["23AEF543AA92119E"]
 			description: ["This chonky Multiblock may be more relevant in the future. but for now you'll most likely be off steam after LV"]
 			id: "623B30FFF67B8E82"
 			subtitle: "This... Exists???"
@@ -163,44 +152,24 @@
 				item: "gtceu:steam_large_turbine"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 6.0d
+			x: -7.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["6146E12078CCA5D3"]
+			dependencies: ["31D607A0E640C8D8"]
 			id: "51FA210D5FCB8FF0"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.25d
 			tasks: [{
 				id: "0BC1B254F21F6450"
 				item: "gtceu:lv_machine_hull"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.0d
+			x: -11.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["51FA210D5FCB8FF0"]
-			description: [
-				"You can self sustain your ethanol production... off ethanol?"
-				""
-				"I didn't intend for this at first but it's a pretty nifty earlygame solution"
-			]
-			id: "7250EED57A87F0AF"
-			subtitle: "Power Positive"
-			tasks: [{
-				id: "3C0CE4881EE95232"
-				item: "gtceu:ethanol_bucket"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -1.5d
-		}
-		{
-			dependencies: [
-				"4ECB7E470EED0932"
-				"7250EED57A87F0AF"
-			]
+			dependencies: ["5F977625E0059F00"]
 			description: [
 				"Better than Actual Diesel for the extra Effort."
 				""
@@ -208,48 +177,31 @@
 			]
 			id: "020B8BDB99E667FC"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "The Staple Early Fuel"
 			tasks: [{
 				id: "70285B9A9852AB24"
 				item: "gtceu:source_enhanced_bio_fuel_bucket"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -16.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["51FA210D5FCB8FF0"]
 			id: "5F977625E0059F00"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.25d
 			tasks: [{
 				id: "51F44444A46F62F2"
 				item: "gtceu:mv_machine_hull"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 0.0d
+			x: -11.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5F977625E0059F00"]
-			icon: "createdeco:decal_fluid"
-			id: "4ECB7E470EED0932"
-			subtitle: "Any Fuel Above this Icon is valid for MV"
-			title: "Liquid Fuels"
-			x: -6.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["5F977625E0059F00"]
-			icon: "createdeco:decal_fire"
-			id: "014A136E4FDA0552"
-			title: "Gas Fuels"
-			x: -7.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["014A136E4FDA0552"]
 			description: [
 				"Benzene in LV is possible, but not ideal."
 				""
@@ -258,121 +210,97 @@
 				"Get ready to farm a LOT of wood."
 			]
 			id: "369BF5B29AD2921A"
+			shape: "hexagon"
 			subtitle: "Wasn't very viable til now"
 			tasks: [{
 				id: "0ABB914A13E90AFE"
 				item: "gtceu:benzene_bucket"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -13.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["173C518F075DE29A"]
+			dependencies: ["51FA210D5FCB8FF0"]
 			id: "18BF6D245A7F7803"
 			tasks: [{
 				id: "08857F9058DC0220"
 				item: "gtceu:lv_combustion"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 3.0d
+			x: -8.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["173C518F075DE29A"]
+			dependencies: ["5F977625E0059F00"]
 			id: "6D7A6CE2330371AB"
 			tasks: [{
 				id: "466EF9A2F4440FE6"
 				item: "gtceu:mv_combustion"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 4.5d
+			x: -8.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["173C518F075DE29A"]
+			dependencies: ["1E224019910AE6C7"]
 			id: "57A39A31913B2F2F"
 			tasks: [{
 				id: "50ECFF26E787BD39"
 				item: "gtceu:hv_combustion"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 6.0d
+			x: -8.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["79F43C17F6618C30"]
+			dependencies: ["51FA210D5FCB8FF0"]
 			id: "237C5B775B855CB4"
 			tasks: [{
 				id: "59B1BEA945AA2D34"
 				item: "gtceu:lv_gas_turbine"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 3.0d
+			x: -9.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["79F43C17F6618C30"]
+			dependencies: ["5F977625E0059F00"]
 			id: "09B96E2BEE09C7C0"
 			tasks: [{
 				id: "4F8567AEC9F61578"
 				item: "gtceu:mv_gas_turbine"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 4.5d
+			x: -9.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["79F43C17F6618C30"]
+			dependencies: ["1E224019910AE6C7"]
 			id: "2B90AED89AFB2187"
 			tasks: [{
 				id: "7F8289383F0E51A0"
 				item: "gtceu:hv_gas_turbine"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 6.0d
-		}
-		{
-			dependencies: [
-				"5F977625E0059F00"
-				"51FA210D5FCB8FF0"
-			]
-			dependency_requirement: "one_started"
-			icon: "createdeco:decal_fluid"
-			id: "173C518F075DE29A"
-			tasks: [{
-				id: "3FF8E539F8378FD3"
-				type: "checkmark"
-			}]
-			x: -6.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["5F977625E0059F00"]
-			icon: "createdeco:decal_fire"
-			id: "79F43C17F6618C30"
-			x: -7.5d
-			y: 1.5d
+			x: -9.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5F977625E0059F00"]
 			id: "1E224019910AE6C7"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.25d
 			tasks: [{
 				id: "2752FD4381812892"
 				item: "gtceu:hv_machine_hull"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 0.0d
+			x: -11.0d
+			y: -1.5d
 		}
 		{
-			dependencies: [
-				"1E224019910AE6C7"
-				"369BF5B29AD2921A"
-			]
+			dependencies: ["1E224019910AE6C7"]
 			description: [
 				"Your source fuel production is probably holding out well enough."
 				""
@@ -383,21 +311,21 @@
 			]
 			id: "2D890A90DC16FF25"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "The Era of Gas"
 			tasks: [{
 				id: "24CA043B3C73365E"
 				item: "gtceu:nitrobenzene_bucket"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -4.5d
+			x: -13.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1E224019910AE6C7"]
 			id: "23AEF543AA92119E"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.25d
 			tasks: [{
 				id: "3E2D50FEF939D9A2"
 				item: "gtceu:ev_machine_hull"
@@ -410,30 +338,30 @@
 			dependencies: ["23AEF543AA92119E"]
 			id: "0537993AD8D37102"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "4E77E85BE81F66BB"
 				item: "gtceu:gas_large_turbine"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 1.5d
+			x: -9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["23AEF543AA92119E"]
 			id: "00797AA0C0F4AC06"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "5E41DB99814BAA62"
 				item: "gtceu:large_combustion_engine"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 1.5d
+			x: -8.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["0537993AD8D37102"]
+			dependencies: ["23AEF543AA92119E"]
 			id: "636BBD84AF9B125B"
 			tasks: [{
 				id: "730B51DDE16E0877"
@@ -446,15 +374,13 @@
 				title: "\"Any Turbine Rotor\""
 				type: "item"
 			}]
-			x: -11.5d
-			y: 3.0d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
-			dependencies: [
-				"0537993AD8D37102"
-				"636BBD84AF9B125B"
-			]
+			dependencies: ["636BBD84AF9B125B"]
 			description: ["The higher the tier above EV, the more efficient the recipe becomes"]
+			icon: "gtceu:uiv_rotor_holder"
 			id: "478C629140D9453B"
 			tasks: [{
 				id: "07EE6A6AED712682"
@@ -468,61 +394,61 @@
 				title: "Any Rotor Holder (HV-UV)"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 4.5d
+			x: -5.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["4ECB7E470EED0932"]
+			dependencies: ["5F977625E0059F00"]
 			id: "00E22C38E03E6739"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "5CD32696AAF42C2D"
 				item: "gtceu:diesel_bucket"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -4.5d
+			x: -14.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["23AEF543AA92119E"]
 			id: "493D3AD6435FA70F"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.25d
 			tasks: [{
 				id: "2DDC3B237CE5481B"
 				item: "gtceu:iv_machine_hull"
 				type: "item"
 			}]
-			x: -13.0d
-			y: 0.0d
+			x: -11.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["493D3AD6435FA70F"]
 			id: "349CA7E4388B5E1A"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "7573375A8DB91A7D"
 				item: "gtceu:extreme_combustion_engine"
 				type: "item"
 			}]
-			x: -12.5d
+			x: -9.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["493D3AD6435FA70F"]
 			id: "4C5594EAE0D1F1C8"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "The Age of Fusio- Wait no...?"
 			tasks: [{
 				id: "2ECF137DAE81F679"
 				item: "gtceu:luv_machine_hull"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 0.0d
+			x: -11.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4C5594EAE0D1F1C8"]
@@ -540,14 +466,11 @@
 				item: "cosmiccore:naquahine_pressure_reactor"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 1.5d
+			x: -8.5d
+			y: 3.0d
 		}
 		{
-			dependencies: [
-				"4C5594EAE0D1F1C8"
-				"1345EB5C8CE6EA96"
-			]
+			dependencies: ["7C04FB1E15ACCE47"]
 			description: [
 				"You can't really make any better tier of micro reactor atm. as they're not very viable to produce due to high material cost."
 				""
@@ -565,22 +488,22 @@
 				item: "gtceu:iv_naquahine_mini_reactor"
 				type: "item"
 			}]
-			x: -15.0d
-			y: 3.0d
+			x: -8.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4C5594EAE0D1F1C8"]
 			id: "7C04FB1E15ACCE47"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "TODO"
 			tasks: [{
 				id: "2B0BB2E1016867CA"
 				item: "gtceu:zpm_machine_hull"
 				type: "item"
 			}]
-			x: -17.0d
-			y: 0.0d
+			x: -11.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4C5594EAE0D1F1C8"]
@@ -593,30 +516,30 @@
 			]
 			id: "04DC79601BAC37A1"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "&fFusion Spam is lame."
 			tasks: [{
 				id: "20BD2F2B03B80149"
 				item: "gtceu:naquahine_superfuel_mk_one_bucket"
 				type: "item"
 			}]
-			x: -15.0d
-			y: -2.0d
+			x: -12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["23AEF543AA92119E"]
 			description: ["You're already making thundering mana for circuits soon, why not upgrade your power with it?"]
 			id: "2CD74038E57C8D1C"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "A Nice Upgrade"
 			tasks: [{
 				id: "2FD9052DBEF33249"
 				item: "gtceu:thunder_boosted_source_diesel_bucket"
 				type: "item"
 			}]
-			x: -11.0d
-			y: -2.0d
+			x: -16.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7C04FB1E15ACCE47"]
@@ -631,15 +554,63 @@
 			]
 			id: "492B9F9575618A8C"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "&fNaquahine Spam is also lame."
 			tasks: [{
 				id: "0995637A99417697"
 				item: "gtceu:naquahine_superfuel_mk_two_bucket"
 				type: "item"
 			}]
-			x: -17.0d
-			y: -2.0d
+			x: -12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1E224019910AE6C7"]
+			id: "51B3F6737BFE8614"
+			shape: "hexagon"
+			tasks: [{
+				id: "32DDE659BDEEDFF3"
+				item: "gtceu:cetane_boosted_diesel_bucket"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["51FA210D5FCB8FF0"]
+			id: "026E1B78D915A6B2"
+			shape: "hexagon"
+			tasks: [{
+				id: "4C46707459874D83"
+				item: "gtceu:bio_diesel_bucket"
+				type: "item"
+			}]
+			x: -15.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["51FA210D5FCB8FF0"]
+			id: "6A90C2D61D398B9A"
+			shape: "hexagon"
+			tasks: [{
+				id: "71455311C55B515D"
+				item: "gtceu:light_fuel_bucket"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["23AEF543AA92119E"]
+			id: "103933DBC275DD48"
+			shape: "hexagon"
+			tasks: [{
+				id: "3EF11079AF8CBEE5"
+				item: "gtceu:stardust_infused_gasoline_bucket"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 0.0d
 		}
 	]
 	title: "&fPower and Multiblocks"
