@@ -82,8 +82,12 @@ ServerEvents.recipes((event) => {
     .inputFluids("gtceu:source_enhanced_bio_fuel 1")
     .duration(15)
     .EUt(-32);
-
-  //Starry Diesel - An Alternate fo CBD using Primordial Oil
+  event.remove({ id: 'gtceu:combustion_generator/naphtha' })
+  event.recipes.gtceu.combustion_generator('worse_naphtha')
+    .inputFluids('gtceu:naphtha 1')
+    .duration(6)
+    .EUt(-GTValues.V[GTValues.LV])
+  //Starry Diesel - Superceeds CBD, Uses Gasoline , Luminite, and CBD to create an energy dense fuel
 
   // event.recipes.gtceu.distillation_tower("prim_oil_tier_1_distillation")
   //   .itemInputs("gtceu:tiny_sodium_hydroxide_dust")
@@ -94,7 +98,7 @@ ServerEvents.recipes((event) => {
   //   .duration(600)
   //   .EUt(GTValues.VA[GTValues.LV]);
 
-  
+
 
 
 
