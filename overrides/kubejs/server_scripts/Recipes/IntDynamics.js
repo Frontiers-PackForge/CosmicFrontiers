@@ -4,16 +4,6 @@ ServerEvents.tags('block', event => {
 })
 
 ServerEvents.recipes(event => {
-  //Waxed Leather
-  event.shaped('cosmiccore:waxed_leather', [
-    ' W ',
-    'WLW',
-    ' W '
-  ], {
-    W: 'minecraft:honeycomb',
-    L: 'minecraft:leather'
-  }
-  )
   // event.remove({ mod: 'integrateddynamics' })
   //Crafting Recipes
   // event.remove({ output: 'integrateddynamics:drying_basin' })
