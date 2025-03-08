@@ -15,9 +15,9 @@ StartupEvents.registry('item', event => {
     event.create('washed_magebloom')
     event.create('terraweave_cloth').displayName('Terraweave Cloth')
     event.create('carbon_ethersteel_lattice').displayName('Carbon Fiber Ethersteel Lattice')
+    event.create('resplendent_sylvan_nanolattice').displayName('Resplendent Sylvan Nanolattice')
     event.create('spooled_terraweave').displayName('Spooled Terraweave')
     event.create('t2_rocket_plating')
-    event.create('memory_shard').displayName('Memeroy Shards of Mortality')
     event.create('welded_rocket_plating_mk2').displayName('Welded Rocket Plating Mk.2')
     event.create('chromatically_doped_nether_star_boule').glow(true).displayName('Chromatically Doped Nether star Boule')
     //Nano Lithography 
