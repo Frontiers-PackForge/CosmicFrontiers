@@ -146,6 +146,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xf472c6)
         .iconSet(GTMaterialIconSet.SHINY)
         .ingot()
+        .cableProperties(GTValues.V[GTValues.EV], 3, 4, false)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
