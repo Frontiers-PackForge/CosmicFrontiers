@@ -86,6 +86,10 @@ ServerEvents.recipes(event => {
     'gtceu:titanium_carbide_plate'
   )
 
+  event.replaceInput({ output: 'gtceu:heat_vent' },
+    'gtceu:tantalum_carbide_plate',
+    'gtceu:titanium_carbide_plate'
+  )
 
 
 
@@ -383,23 +387,6 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:liquid_helium 250')
     .duration(400)
     .EUt(GTValues.VA[GTValues.IV]);
-  //IV MOTOR
-  event.remove({ output: 'gtceu:iv_electric_motor' })
-  event.recipes.gtceu.assembler('gtceu:iv_electric_motor')
-    .itemInputs(['2x gtceu:tungsten_steel_rod', '2x gtceu:tungsten_double_cable', '4x gtceu:virtue_meld_double_wire', 'gtceu:magnetic_neodymium_praseodymium_rod'])
-    .itemOutputs('gtceu:iv_electric_motor')
-    .duration(100)
-    .EUt(GTValues.VA[GTValues.LV]);
-  event.shaped('gtceu:iv_electric_motor', [
-    'CWR',
-    'WMW',
-    'RWC'
-  ], {
-    C: 'gtceu:tungsten_double_cable',
-    W: 'gtceu:virtue_meld_double_wire',
-    M: 'gtceu:magnetic_neodymium_praseodymium_rod',
-    R: 'gtceu:tungsten_steel_rod'
-  })
   event.shaped('gtceu:steam_mixing_vessel', [
     'PRP',
     'GCG',
@@ -816,24 +803,99 @@ ServerEvents.recipes(event => {
     C: 'gtceu:black_steel_single_cable',
     M: '#gtceu:circuits/ev'
   })
-  //IV MACHINE HULL AND CASING
+  //IV MACHINE PARTS
   event.remove({ output: 'gtceu:iv_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:iv_machine_casing_assembler')
-    .itemInputs(['4x gtceu:double_tungsten_steel_plate', '4x gtceu:virtue_meld_plate'])
+    .itemInputs(['4x gtceu:double_platinum_plate', '4x gtceu:virtue_meld_plate'])
     .itemOutputs('gtceu:iv_machine_casing')
-    .circuit(8)
     .duration(40)
+    .circuit(8)
     .EUt(GTValues.VA[GTValues.LV]);
   event.shaped('gtceu:iv_machine_casing', [
     'AMA',
     'MWM',
     'AMA'
   ], {
-    A: 'gtceu:double_tungsten_steel_plate',
+    A: 'gtceu:double_platinum_plate',
     M: 'gtceu:virtue_meld_plate',
     W: '#forge:tools/wrenches'
-  }
-  )
+  })
+  event.remove({ id: 'gtceu:shaped/iv_machine_hull' })
+  event.remove({ id: 'gtceu:assembler/hull_iv' })
+  event.shaped('gtceu:iv_machine_hull', [
+    'PMP',
+    'WCW',
+    'PSP'
+  ], {
+    P: 'kubejs:resplendent_sylvan_nanolattice',
+    M: 'gtceu:double_virtue_meld_plate',
+    W: 'gtceu:tungsten_steel_single_cable',
+    C: 'gtceu:iv_machine_casing',
+    S: 'cosmiccore:prismatic_tungstensteel_spring'
+  })
+  event.recipes.gtceu.assembler('gtceu:assembler_hull_iv')
+    .itemInputs(['2x gtceu:tungsten_steel_single_cable', 'gtceu:iv_machine_casing', '2x kubejs:resplendent_sylvan_nanolattice'])
+    .inputFluids('gtceu:polytetrafluoroethylene 576')
+    .itemOutputs('gtceu:iv_machine_hull')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  //START HERE
+  //MOTOR
+  event.remove({ id: 'gtceu:assembler/electric_motor_iv' })
+  event.remove({ id: 'gtceu:shaped/electric_motor_iv' })
+  event.recipes.gtceu.assembler('gtceu:new_iv_motor')
+    .itemInputs(['2x gtceu:elementium_quadruple_cable', '2x cosmiccore:prismatic_tungstensteel_rod', 'gtceu:magnetic_neodymium_praseodymium_rod', '4x gtceu:virtue_meld_octal_wire'])
+    .itemOutputs('gtceu:iv_electric_motor')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:iv_electric_motor', [
+    'CWR',
+    'WMW',
+    'RWC'
+  ], {
+    C: 'gtceu:elementium_quadruple_cable',
+    R: 'cosmiccore:prismatic_tungstensteel_rod',
+    M: 'gtceu:magnetic_neodymium_praseodymium_rod',
+    W: 'gtceu:virtue_meld_octal_wire'
+  })
+  //PISTON
+  event.remove({ id: 'gtceu:assembler/electric_piston_iv' })
+  event.remove({ id: 'gtceu:shaped/electric_piston_iv' })
+  event.recipes.gtceu.assembler('gtceu:new_iv_piston')
+    .itemInputs(['2x gtceu:elementium_single_cable', '2x cosmiccore:prismatic_tungstensteel_rod', '3x cosmiccore:prismatic_tungstensteel_plate', 'gtceu:iv_electric_motor', 'cosmiccore:small_prismatic_tungstensteel_gear'])
+    .itemOutputs('gtceu:iv_electric_piston')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:iv_electric_piston', [
+    'PPP',
+    'CRR',
+    'CMG'
+  ], {
+    P: 'cosmiccore:prismatic_tungstensteel_plate',
+    R: 'cosmiccore:prismatic_tungstensteel_rod',
+    G: 'cosmiccore:small_prismatic_tungstensteel_gear',
+    C: 'gtceu:elementium_single_cable',
+    M: 'gtceu:iv_electric_motor'
+  })
+  //ROBOARM
+  event.remove({ id: 'gtceu:shaped/robot_arm_iv' })
+  event.remove({ id: 'gtceu:assembler/robot_arm_iv' })
+  event.recipes.gtceu.assembler('gtceu:new_iv_robot_arm')
+    .itemInputs(['3x gtceu:elementium_single_cable', '2x cosmiccore:prismatic_tungstensteel_rod', '2x gtceu:iv_electric_motor', 'gtceu:iv_electric_piston', '#gtceu:circuits/iv'])
+    .itemOutputs('gtceu:iv_robot_arm')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:iv_robot_arm', [
+    'CCC',
+    'RGR',
+    'PMG'
+  ], {
+    P: 'gtceu:iv_electric_piston',
+    R: 'gtceu:iv_electric_motor',
+    G: 'cosmiccore:prismatic_tungstensteel_rod',
+    C: 'gtceu:elementium_single_cable',
+    M: '#gtceu:circuits/iv'
+  })
   //Crafting Recipes
   //Wrought Iron Base Molds 'gtceu:mv_machine_casing'
   event.remove({ output: 'gtceu:empty_mold' })
@@ -1257,7 +1319,7 @@ ServerEvents.recipes(event => {
   ], {
     P: 'gtceu:titanium_carbide_plate',
     C: '#gtceu:circuits/luv',
-    W: 'gtceu:nichrome_quadruple_cable',
+    W: 'gtceu:elementium_quadruple_wire',
     F: 'gtceu:ev_alloy_smelter'
   })
   //Coils-new
