@@ -176,13 +176,13 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.HV]);
 
   event.recipes.gtceu.assembler(`frontiers:matrix_frame`)
-    .itemInputs(['4x gtceu:plascrete','gtceu:palladium_plate','gtceu:platinum_plate', 'gtceu:blue_steel_frame', '#gtceu:circuits/hv'])
+    .itemInputs(['4x gtceu:plascrete', 'gtceu:palladium_plate', 'gtceu:platinum_plate', 'gtceu:blue_steel_frame', '#gtceu:circuits/hv'])
     .itemOutputs('expatternprovider:assembler_matrix_frame')
     .duration(350)
     .EUt(GTValues.VA[GTValues.EV]);
   //Glass Version
   event.recipes.gtceu.assembler(`frontiers:matrix_wall`)
-    .itemInputs(['4x gtceu:plascrete','gtceu:palladium_plate','gtceu:platinum_plate', 'ae2:fluix_smart_dense_cable', 'gtceu:dense_steel_plate'])
+    .itemInputs(['4x gtceu:plascrete', 'gtceu:palladium_plate', 'gtceu:platinum_plate', 'ae2:fluix_smart_dense_cable', 'gtceu:dense_steel_plate'])
     .itemOutputs('expatternprovider:assembler_matrix_wall')
     .duration(350)
     .EUt(GTValues.VA[GTValues.EV]);
@@ -608,6 +608,20 @@ ServerEvents.recipes(event => {
     .circuit(2)
     .duration(180)
     .EUt(GTValues.VA[GTValues.HV]);
+  event.remove({ id: 'gtceu:assembler/me_stocking_import_bus' })
+  event.recipes.gtceu.assembler('stocking_import_bust')
+    .itemInputs(['gtceu:iv_input_bus', 'expatternprovider:ex_interface', 'gtceu:iv_conveyor_module', 'cosmiccore:omnia_circuit_ev', 'ae2:speed_card'])
+    .inputFluids('cosmiccore:prisma 1000')
+    .itemOutputs('gtceu:me_stocking_input_bus')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.IV])
+  event.remove({ id: 'gtceu:assembler/me_stocking_import_hatch' })
+  event.recipes.gtceu.assembler('waxed_leather_forming')
+    .itemInputs(['gtceu:iv_input_bus', 'expatternprovider:ex_interface', 'gtceu:iv_electric_pump', 'cosmiccore:omnia_circuit_ev', 'ae2:speed_card'])
+    .inputFluids('cosmiccore:prisma 1000')
+    .itemOutputs('gtceu:me_stocking_input_hatch')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.IV])
   event.recipes.gtceu.assembler('frontiers:formation_plane')
     .itemInputs(['ae2:semi_dark_monitor', '3x ae2:formation_core', 'gtceu:mv_robot_arm'])
     .inputFluids(`gtceu:soldering_alloy 576`)
