@@ -91,7 +91,10 @@ ServerEvents.recipes(event => {
     'gtceu:titanium_carbide_plate'
   )
 
-
+  event.replaceInput({ output: 'gtceu:iv_extruder' },
+    'gtceu:rtm_alloy_quadruple_wire',
+    'cosmiccore:prismatic_tungstensteel_quadruple_wire'
+  )
 
   event.recipes.gtceu.spooling_machine('frontiers_ethersteel_lattice')
     .itemInputs(['gtceu:carbon_fiber_mesh', '8x gtceu:fine_galvanized_ethersteel_wire'])
@@ -99,6 +102,12 @@ ServerEvents.recipes(event => {
     .itemOutputs('kubejs:carbon_ethersteel_lattice')
     .duration(220)
     .EUt(GTValues.VA[GTValues.HV]);
+  event.recipes.gtceu.spooling_machine('sylvan_nano_lattice')
+    .itemInputs(['gtceu:graphene_foil', 'botania:pixie_dust'])
+    .inputFluids('cosmiccore:prisma 250')
+    .itemOutputs('kubejs:resplendent_sylvan_nanolattice')
+    .duration(220)
+    .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.alloy_smelter('firebrick_masonry')
     .itemInputs('gtceu:compressed_fireclay')
     .itemInputs('gtceu:coal_dust')
@@ -1067,8 +1076,23 @@ ServerEvents.recipes(event => {
     .itemOutputs('gtceu:gold_dust')
     .duration(200)
     .EUt(GTValues.VA[GTValues.LV]);
-
-
+  event.remove({ id: 'gtceu:electric_blast_furnace/blast_tungsten_steel' })
+  event.recipes.gtceu.electric_blast_furnace('tungstensteel_poor')
+    .itemInputs('gtceu:tungsten_steel_dust')
+    .itemOutputs('gtceu:hot_tungsten_steel_ingot')
+    .duration(1000)
+    .blastFurnaceTemp(4000)
+    .circuit(1)
+    .EUt(GTValues.VA[GTValues.EV]);
+  event.remove({ id: 'gtceu:electric_blast_furnace/blast_tungsten_steel_gas' })
+  event.recipes.gtceu.electric_blast_furnace('tungstensteel_good')
+    .itemInputs('gtceu:tungsten_steel_dust')
+    .inputFluids('gtceu:helium 100')
+    .itemOutputs('gtceu:hot_tungsten_steel_ingot')
+    .duration(670)
+    .blastFurnaceTemp(4000)
+    .circuit(2)
+    .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.mixer('gtceu:mixer/netherite_alloy')
     .itemInputs('2x gtceu:netherite_scrap_dust')
     .itemInputs('2x gtceu:rose_gold_dust')
