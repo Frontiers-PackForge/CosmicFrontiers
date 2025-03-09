@@ -237,7 +237,7 @@
 								MaxAoEColumn: 1
 								MaxAoELayer: 0
 								MaxAoERow: 1
-								TorchPlacing:1
+								TorchPlacing: 1
 							}
 							GT.Tool: {
 								Damage: 0
