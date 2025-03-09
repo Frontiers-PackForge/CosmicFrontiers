@@ -1,0 +1,9 @@
+{
+    "ldlib": {
+        "connection": "cosmiccore:block/casings/coils/prismatic_tungstensteel_ctm"
+    },
+    "animation":{
+      "interpolate": true,
+      "frametime":16
+   }
+}
