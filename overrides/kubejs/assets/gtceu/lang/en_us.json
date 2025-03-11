@@ -556,6 +556,17 @@
   "material.gtceu.luminent_silicon": "Luminent Silicon",
   "material.gtceu.naquadah_doped_silicon": "Naquadah Doped Silicon",
   "material.gtceu.dilumixal_naquadah_doped_silicon": "DiLumixal Naquadah Doped Silicon",
-  "material.gtceu.europium_silicide": "Europium Silicide"
+  "material.gtceu.europium_silicide": "Europium Silicide",
+
+    "material.gtceu.4_4_oxydianiline_pyromellitimide": "4,4-Oxydianiline-Pyromellitimide",
+    "material.gtceu.poly_amic_acid": "Poly(Amic Acid)",
+    "material.gtceu.pyromellitic_dianhydride": "Pyromellitic Dianhydride",
+    "material.gtceu.oxydianiline": "Oxydianiline",
+    "material.gtceu.aniline": "Aniline",
+    "material.gtceu.durene": "Durene",
+    "material.gtceu.ortho_xylene": "Ortho-Xylene",
+    "material.gtceu.fluorinated_ethylene_propylene": "Fluorinated Ethylene Propylene (FEP)",
+    "material.gtceu.hexafluoropropylene": "Hexafluoropropylene"
+
   
 }
