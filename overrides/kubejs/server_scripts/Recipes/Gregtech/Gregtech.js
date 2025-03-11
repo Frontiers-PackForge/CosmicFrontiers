@@ -396,6 +396,17 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:liquid_helium 250')
     .duration(400)
     .EUt(GTValues.VA[GTValues.IV]);
+  event.shaped('gtceu:large_lithographic_processor', [
+    'PRP',
+    'GCG',
+    'BBB'
+  ], {
+    P: 'gtceu:double_hsse_plate',
+    R: 'gtceu:iv_voltage_coil',
+    G: 'gtceu:iv_conveyor_module',
+    C: 'gtceu:iv_aio_lithography_processor',
+    B: 'gtceu:plascrete'
+  })
   event.shaped('gtceu:steam_mixing_vessel', [
     'PRP',
     'GCG',
