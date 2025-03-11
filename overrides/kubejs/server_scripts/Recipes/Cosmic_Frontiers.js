@@ -252,7 +252,7 @@ ServerEvents.recipes(event => {
        event.recipes.gtceu.chemical_dehydrator('lava_to_magma_block')
               .inputFluids('minecraft:lava 1000')
               .itemOutputs('minecraft:magma_block')
-              .duration(300)
+              .duration(150)
               .EUt(GTValues.VA[GTValues.MV]);
        event.recipes.gtceu.chemical_dehydrator('magma_block_to_netherrack')
               .itemInputs('minecraft:magma_block')

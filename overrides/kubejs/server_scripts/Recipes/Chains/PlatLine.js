@@ -15,6 +15,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:electrolyzer/raw_platinum_separation' })
     event.remove({ id: 'gtceu:chemical_reactor/inert_metal_mixture_separation' })
     event.remove({ id: 'gtceu:large_chemical_reactor/inert_metal_mixture_separation' })
+    event.remove({ id: 'gtceu:distillation_tower/acidic_osmium_solution_separation' })
     // event.remove({ output: 'gtceu:platinum_group_sludge_dust' })
     event.replaceOutput({ type: 'gtceu:large_chemical_reactor' }, 'gtceu:platinum_group_sludge_dust', 'gtceu:insoluble_plat_group_residue_dust')
     event.replaceOutput({ type: 'gtceu:chemical_reactor' }, 'gtceu:platinum_group_sludge_dust', 'gtceu:insoluble_plat_group_residue_dust')
@@ -232,7 +233,7 @@ ServerEvents.recipes(event => {
     // // Pd(NH3)4Cl2 + N2H4 -> ???????  // Current : 2 Pd(NH3)4Cl2 + N2H4 -> 2Pd + 4NH4Cl + 4 NH3 + 2 N
     // event.recipes.gtceu.large_chemical_reactor('palladium_dust_craft')
     //     .itemInputs('10x gtceu:tetraammine_palladium_chloride_dust')
-    //     .inputFluids('gtceu:hydrazine 1000')
+    //     .inputFluids('gtceu:hydrazine 1000')chloroiridic_acid
     //     .itemOutputs('2x gtceu:palladium_dust')
     //     .itemOutputs('8x gtceu:ammonium_chloride_dust')
     //     .outputFluids('gtceu:ammonia 4000')
@@ -241,50 +242,65 @@ ServerEvents.recipes(event => {
     //     .EUt(GTValues.VA[GTValues.MV]);
 
     // Extractions from the IPGS dusts
+    // 2 Rh + 3 NaHSO4 + 3 H2O -> Rh2(SO4)3 + 3 NaOH + 6 H
     event.recipes.gtceu.electric_blast_furnace('ipgs_to_rhdpgs')
         .itemInputs('9x gtceu:insoluble_plat_group_residue_dust')
         .itemInputs('42x gtceu:sodium_bisulfate_dust')
         .inputFluids('minecraft:water 7000')
         .blastFurnaceTemp(4500)
-        .itemOutputs('gtceu:rhodium_depleted_plat_group_residue_dust')
+        .itemOutputs('10x gtceu:rhodium_depleted_plat_group_residue_dust')
         .outputFluids('gtceu:rhodium_sulfate_solution 1000')
         .duration(128)
         .EUt(GTValues.VA[GTValues.HV]);
+
+    // i aint even writing this solution out :old:
+    
+    // Reactions Here: 
+    // Ru + 3 Na2O2 + 2 H2O -> Na2RuO4 + 4 NaOH // 3 mol
+    // Os + 4 Na2O2 + 4 H2O -> Na2OsO4(OH)2 + 6 NaOH // 4 mol
+    
+    // (3RuO4)(4OsO4)(2NaOH)(2NaCl)(14H2O)
     event.recipes.gtceu.electric_blast_furnace('rhdpgr_to_irpgr')
         .itemInputs('gtceu:rhodium_depleted_plat_group_residue_dust')
-        .itemInputs('17x gtceu:sodium_peroxide_dust')
-        .inputFluids('minecraft:water 15000')
+        .itemInputs('gtceu:sodium_peroxide_dust')
+        .inputFluids('minecraft:water 2200')
         .blastFurnaceTemp(4500)
         .itemOutputs('gtceu:iridium_rich_plat_group_residue_dust')
-        .outputFluids('gtceu:sodium_ruthenate_perosomate 1000')
-        .duration(420)
+        .outputFluids('gtceu:sodium_ruthenate_perosomate 100')
+        .duration(90)
         .EUt(GTValues.VA[GTValues.HV]);
+    
+    // Ir + 2 BaO2 + 6 HCl -> 2 (H2O)2(H2IrCl6) + 2 BaO (double molarity ig)
     event.recipes.gtceu.electric_blast_furnace('irpgr_ircl')
-        .itemInputs('gtceu:iridium_rich_plat_group_residue_dust')
-        .itemInputs('8x gtceu:barium_peroxide_dust')
+        .itemInputs('10x gtceu:iridium_rich_plat_group_residue_dust')
+        .itemInputs('12x gtceu:barium_peroxide_dust')
         .inputFluids('gtceu:hydrochloric_acid 12000')
         .blastFurnaceTemp(4500)
-        .itemOutputs('6x gtceu:barium_oxide_dust')
+        .itemOutputs('8x gtceu:barium_oxide_dust')
         .outputFluids('gtceu:chloroiridic_acid 6000')
         .duration(240)
         .EUt(GTValues.VA[GTValues.HV]);
 
     //BARIUM STUFF???
+    // Ba + O -> BaO
     event.recipes.gtceu.chemical_reactor('barium_oxide')
         .itemInputs('gtceu:barium_dust')
-        .inputFluids('gtceu:oxygen 2000')
-        .itemOutputs('3x gtceu:barium_oxide_dust')
+        .inputFluids('gtceu:oxygen 1000')
+        .itemOutputs('2x gtceu:barium_oxide_dust')
         .circuit(3)
         .duration(240)
         .EUt(GTValues.VA[GTValues.HV]);
+    // BaO + O -> BaO2
     event.recipes.gtceu.chemical_reactor('barium_peroxide')
-        .itemInputs('3x gtceu:barium_oxide_dust')
+        .itemInputs('2x gtceu:barium_oxide_dust')
         .inputFluids('gtceu:oxygen 1000')
-        .itemOutputs('4x gtceu:barium_peroxide_dust')
+        .itemOutputs('3x gtceu:barium_peroxide_dust')
         .circuit(4)
         .duration(240)
         .EUt(GTValues.VA[GTValues.HV]);
+
     //Chloroiridic to Hexa
+    // (H2O)2(H2IrCl6) + 2 NH4Cl -> (NH4)2IrCl6 + 2 HCl + 2 H2O
     event.recipes.gtceu.chemical_reactor('iridic_to_hexa')
         .itemInputs('10x gtceu:ammonium_chloride_dust')
         .inputFluids('gtceu:chloroiridic_acid 3000')
@@ -293,7 +309,9 @@ ServerEvents.recipes(event => {
         .outputFluids('minecraft:water 2000')
         .duration(120)
         .EUt(GTValues.VA[GTValues.EV]);
+
     //Iridium
+    // (NH4)2IrCl6 + 4FeCl2 -> Ir + 4 FeCl3 + 2 NH3 + 2 HCl 
     event.recipes.gtceu.large_chemical_reactor('hexair_to_iridium')
         .itemInputs('10x gtceu:ammonium_hexachloroiridate_dust')
         .inputFluids('gtceu:iron_ii_chloride 4000')
@@ -304,6 +322,7 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(GTValues.VA[GTValues.IV]);
 
+    // Fe + Cl2 -> FeCl2
     event.recipes.gtceu.chemical_reactor('iron_ii_chloride')
         .itemInputs('gtceu:iron_dust')
         .inputFluids('gtceu:chlorine 2000')
@@ -313,27 +332,33 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV]);
 
     //RHODIUM CHAIN
+    // Rh2(SO4)3 + 3 Zn -> 2Rh + 3 ZnSO4
     event.recipes.gtceu.chemical_dehydrator('rhodium_sulfate_to_crude_rhodium')
         .itemInputs('6x gtceu:zinc_dust')
         .inputFluids('gtceu:rhodium_sulfate_solution 1000')
-        .itemOutputs(['2x gtceu:crude_rhodium_dust', '36x gtceu:zinc_sulfate_dust', '18x gtceu:sodium_hydroxide_dust'])
+        .itemOutputs(['2x gtceu:crude_rhodium_dust', '18x gtceu:zinc_sulfate_dust', '18x gtceu:sodium_hydroxide_dust'])
         .duration(240)
         .EUt(GTValues.VA[GTValues.HV]);
+    // Rh + 3 NaCl + 3 Cl -> Na3RhCl6
     event.recipes.gtceu.large_chemical_reactor('crude_to_chlororhodate')
         .itemInputs(['gtceu:crude_rhodium_dust', '6x gtceu:salt_dust'])
         .inputFluids('gtceu:chlorine 3000')
         .itemOutputs('10x gtceu:sodium_hexachlororhodate_dust')
         .duration(120)
         .EUt(GTValues.VA[GTValues.HV]);
+
+    // 4 Na3RhCl6 + 3 N2H4 + 12 NaOH -> 4 Rh + 6 N + 24 NaCl + 12 H2O
     event.recipes.gtceu.large_chemical_reactor('chlorodate_to_rhodium')
-        .itemInputs(['10x gtceu:sodium_hexachlororhodate_dust', '9x gtceu:sodium_hydroxide_dust'])
-        .inputFluids('gtceu:hydrazine 750')
-        .itemOutputs(['gtceu:rhodium_dust', '12x gtceu:salt_dust'])
-        .outputFluids('minecraft:water 3000')
-        .outputFluids('gtceu:nitrogen 1500')
-        .duration(360)
+        .itemInputs(['40x gtceu:sodium_hexachlororhodate_dust', '36x gtceu:sodium_hydroxide_dust'])
+        .inputFluids('gtceu:hydrazine 3000')
+        .itemOutputs(['4x gtceu:rhodium_dust', '48x gtceu:salt_dust'])
+        .outputFluids('minecraft:water 12000')
+        .outputFluids('gtceu:nitrogen 6000')
+        .duration(1440)
         .EUt(GTValues.VA[GTValues.EV]);
+    
     //RUTHENIUM CHAIN
+    // 
     event.recipes.gtceu.cracker('ruthen_perosomate_to_tetroxide')
         .inputFluids('gtceu:sodium_ruthenate_perosomate 1000')
         .inputFluids('gtceu:chlorine 3000')
@@ -341,45 +366,57 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:ruthenium_osmium_tetroxides 1000')
         .duration(500)
         .EUt(GTValues.VA[GTValues.HV]);
+    
+    // i hate solutions
+    // (3RuO4)(4OsO4)(2NaOH)(2NaCl)(14H2O) + 32HCl -> 4(OsO4)(NaCl) + 22 H2O + 12 Cl + 3 (H2O)2(H2RuCl6)
     event.recipes.gtceu.mixer('tetroxide_to_chlororuthenic')
         .inputFluids('gtceu:ruthenium_osmium_tetroxides 100')
-        .inputFluids('gtceu:hydrochloric_acid 4600')
-        .outputFluids('gtceu:chlororuthenic_acid_osmium_tetroxide_solution 3100')
+        .inputFluids('gtceu:hydrochloric_acid 3200')
+        .outputFluids('gtceu:chlororuthenic_acid_osmium_tetroxide_solution 3300')
         .duration(50)
         .EUt(GTValues.VA[GTValues.EV]);
+        
     event.recipes.gtceu.distillation_tower('chlororuthenic_to_pure_ruthenic')
-        .inputFluids('gtceu:chlororuthenic_acid_osmium_tetroxide_solution 31000')
+        .inputFluids('gtceu:chlororuthenic_acid_osmium_tetroxide_solution 33000')
         .itemOutputs('20x gtceu:impure_osmium_tetroxide_dust')
         .outputFluids('gtceu:chlororuthenic_acid 9000')
         .outputFluids('gtceu:chlorine 12000')
         .outputFluids('minecraft:water 22000')
         .duration(600)
         .EUt(GTValues.VA[GTValues.EV]);
+
+    // (H2O)2(H2RuCl6) + 2 NH4Cl -> (NH4)2RuCl6 + 2 HCl + 2H2O
     event.recipes.gtceu.large_chemical_reactor('pure_ruthenic_to_chlororuthenate')
         .inputFluids('gtceu:chlororuthenic_acid 3000')
         .itemInputs('10x gtceu:ammonium_chloride_dust')
-        .itemOutputs('10x gtceu:ammonium_hexachlororuthenate_dust')
+        .itemOutputs('9x gtceu:ammonium_hexachlororuthenate_dust')
         .outputFluids('gtceu:hydrochloric_acid 2000')
         .outputFluids('minecraft:water 2000')
         .duration(240)
         .EUt(GTValues.VA[GTValues.EV]);
+    
+    // (NH4)2RuCl6 + 4 H -> Ru + 2 NH3 + 6 HCl
     event.recipes.gtceu.large_chemical_reactor('chlororuthenate_to_ruthenium')
         .inputFluids('gtceu:hydrogen 4000')
-        .itemInputs('10x gtceu:ammonium_hexachlororuthenate_dust')
+        .itemInputs('9x gtceu:ammonium_hexachlororuthenate_dust')
         .itemOutputs('gtceu:ruthenium_dust')
         .outputFluids('gtceu:ammonia 2000')
         .outputFluids('gtceu:hydrochloric_acid 6000')
         .duration(240)
         .EUt(GTValues.VA[GTValues.IV]);
+    
+    // CH4 + 8Cl -> CCl4 + 4HCl 
     event.recipes.gtceu.chemical_reactor('carbon_tetrachloride')
         .inputFluids('gtceu:methane 1000')
-        .inputFluids('gtceu:chlorine 4000')
+        .inputFluids('gtceu:chlorine 8000')
         .circuit(4)
         .outputFluids('gtceu:carbon_tetrachloride 1000')
         .outputFluids('gtceu:hydrochloric_acid 4000')
         .duration(60)
         .EUt(GTValues.VA[GTValues.HV]);
     //Sodium Oxide and Peroxide
+
+    // O2 + 4Na -> 2NaO2
     event.recipes.gtceu.chemical_reactor('sodium_oxide')
         .inputFluids('gtceu:oxygen 1000')
         .itemInputs('2x gtceu:sodium_dust')
@@ -387,6 +424,8 @@ ServerEvents.recipes(event => {
         .itemOutputs('3x gtceu:sodium_oxide_dust')
         .duration(60)
         .EUt(GTValues.VA[GTValues.MV]);
+
+    // O2 + 2Na2O -> 2Na2O2
     event.recipes.gtceu.chemical_reactor('sodium_peroxide')
         .inputFluids('gtceu:oxygen 1000')
         .itemInputs('3x gtceu:sodium_oxide_dust')
@@ -395,36 +434,46 @@ ServerEvents.recipes(event => {
         .duration(60)
         .EUt(GTValues.VA[GTValues.MV]);
     //This is an awful placeholder recipe, ask bun/tech if there's a better way to 'recycle/decomp' this ~G
-    event.recipes.gtceu.electrolyzer('sodium_accetate_decomp')
-        .inputFluids('8x gtceu:sodium_accetate_dust')
-        .itemInputs('10x gtceu:ammonium_hexachlororuthenate_dust')
+
+    // CH3COONa -> 2C + Na + 3H + 2O
+    event.recipes.gtceu.electrolyzer('sodium_acetate_decomp')
+        .itemInputs('8x gtceu:sodium_acetate_dust')
+        // .itemInputs('10x gtceu:ammonium_hexachlororuthenate_dust')
         .itemOutputs(['2x gtceu:carbon_dust', 'gtceu:sodium_dust'])
         .outputFluids('gtceu:oxygen 2000')
         .outputFluids('gtceu:hydrogen 3000')
-        .outputFluids('gtceu:hydrochloric_acid 6000')
+        // .outputFluids('gtceu:hydrochloric_acid 6000')
         .duration(240)
-        .EUt(GTValues.VA[GTValues.IV]);
+        .EUt(GTValues.VA[GTValues.MV]);
     //Osmium Time, this one I have the least confidence about the chemline balance, will need to check the stuff with stoik soonish
+    
+    //  2(OsO4)(NaCl) + [NC?]CCl4 -> 2OsO4 + 2NaCl + [NC?]CCl4
     event.recipes.gtceu.chemical_dehydrator('dry_impure_osmium_tetroxide')
         .itemInputs('10x gtceu:impure_osmium_tetroxide_dust')
-        .inputFluids('gtceu:carbon_tetrachloride 100')
-        .itemOutputs(['10x gtceu:osmium_tetroxide_dust', '34x gtceu:salt_dust'])
+        .notConsumableFluid('gtceu:carbon_tetrachloride 10000')
+        .itemOutputs(['10x gtceu:osmium_tetroxide_dust', '4x gtceu:salt_dust'])
         .duration(120)
         .EUt(GTValues.VA[GTValues.EV]);
+
+    // 2OsO4 + 5NaHO + C2H6O ->  CH3CO2Na + 2 Na2OsO2(OH)4
     event.recipes.gtceu.large_chemical_reactor('osmium_tetroxide_to_sodium_osmate')
-        .itemInputs(['20x gtceu:osmium_tetroxide_dust', '15x gtceu:sodium_hydroxide_dust'])
+        .itemInputs(['10x gtceu:osmium_tetroxide_dust', '15x gtceu:sodium_hydroxide_dust'])
         .inputFluids('gtceu:ethanol 1000')
         .itemOutputs(['20x gtceu:sodium_osmate_dust', '8x gtceu:sodium_acetate_dust'])
         .duration(240)
         .EUt(GTValues.VA[GTValues.EV]);
+
+    // Na2OsO2(OH)4 + 4(NH4)Cl  -> (NH3)4(OsO2)Cl2 + 2NaCl + 4H2O
     event.recipes.gtceu.large_chemical_reactor('sodium_osmate_dust_to_osyml_chloride')
-        .itemInputs(['10x gtceu:sodium_osmate_dust', '20x gtceu:ammonium_chloride_dust'])
-        .itemOutputs(['10x gtceu:tetraammine_osmyl_chloride_dust', '4x gtceu:salt_dust'])
+        .itemInputs(['9x gtceu:sodium_osmate_dust', '20x gtceu:ammonium_chloride_dust'])
+        .itemOutputs(['9x gtceu:tetraammine_osmyl_chloride_dust', '4x gtceu:salt_dust'])
         .outputFluids('minecraft:water 4000')
         .duration(120)
         .EUt(GTValues.VA[GTValues.IV]);
+
+    // (NH3)4(OsO2)Cl2 + 6H -> Os + 2HCl + 4NH3 + 2H2O
     event.recipes.gtceu.large_chemical_reactor('osmyl_to_osmium_dust')
-        .itemInputs('10x gtceu:tetraammine_osmyl_chloride_dust')
+        .itemInputs('9x gtceu:tetraammine_osmyl_chloride_dust')
         .inputFluids('gtceu:hydrogen 6000')
         .itemOutputs('gtceu:osmium_dust')
         .outputFluids('gtceu:hydrochloric_acid 2000')
