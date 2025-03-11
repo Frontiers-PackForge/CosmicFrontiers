@@ -1,7 +1,7 @@
 // Stonewall (throw bricks)
 ServerEvents.tags('item', event => {
-    event.add('#supplementaries:throwable_bricks', 'gtceu:coke_oven_brick')
-    event.add('#supplementaries:throwable_bricks', 'gtceu:firebrick')
+    event.add('supplementaries:throwable_bricks', 'gtceu:coke_oven_brick')
+    event.add('supplementaries:throwable_bricks', 'gtceu:firebrick')
 })
 
 //Item Recipes, gregified
