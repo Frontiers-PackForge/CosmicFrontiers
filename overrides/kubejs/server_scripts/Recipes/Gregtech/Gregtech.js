@@ -391,7 +391,7 @@ ServerEvents.recipes(event => {
     .duration(400)
     .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.assembler('beta_supercon')
-    .itemInputs(['16x gtceu:virtue_meld_foil', '4x gtceu:tungsten_steel_tiny_fluid_pipe', '4x gtceu:samarium_iron_arsenic_oxide_double_wire', 'gtceu:ev_electric_pump'])
+    .itemInputs(['16x gtceu:virtue_meld_foil', '4x gtceu:tungsten_steel_tiny_fluid_pipe', '4x gtceu:virtue_meld_double_wire', 'gtceu:ev_electric_pump'])
     .itemOutputs('16x gtceu:psi_superconductor_beta_single_wire')
     .inputFluids('gtceu:liquid_helium 250')
     .duration(400)
