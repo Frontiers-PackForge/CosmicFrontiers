@@ -10,7 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["44DE661BAA434766"]
+			dependencies: ["3C2F76C18CC1A56E"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "52DAB014D2101F02"
@@ -48,9 +48,10 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["57F13FE3E9215635"]
+			dependencies: ["52DAB014D2101F02"]
 			icon: "gtceu:radon_bucket"
 			id: "74B8764F1C1E149B"
+			subtitle: "A Radon Source?"
 			tasks: [
 				{
 					id: "4C17F5BED717F19A"
@@ -90,24 +91,6 @@
 			}]
 			x: -0.5d
 			y: -4.5d
-		}
-		{
-			dependencies: ["52DAB014D2101F02"]
-			id: "57F13FE3E9215635"
-			tasks: [
-				{
-					id: "5EDA98FAC7E82D91"
-					item: "gtceu:liquid_ender_air_bucket"
-					type: "item"
-				}
-				{
-					id: "20BA6D02D015F4A7"
-					title: "Got it!"
-					type: "checkmark"
-				}
-			]
-			x: 0.0d
-			y: -1.5d
 		}
 		{
 			dependencies: ["52DAB014D2101F02"]
@@ -461,6 +444,7 @@
 		}
 		{
 			dependencies: ["032621AA64B4E743"]
+			description: ["Mars Contains Pure Plutonium, this should make it easier to produce middle grade fuels."]
 			id: "5B89C5230F74CA3A"
 			tasks: [{
 				id: "26BF67D3C175D7A4"
@@ -1207,6 +1191,19 @@
 			}]
 			x: -4.5d
 			y: -11.5d
+		}
+		{
+			dependencies: ["75AC0231E1B539AB"]
+			description: ["After unlocking IV Energy Hatches, you can finish the Osmium section of platinum group metals"]
+			id: "5E753E490514FC62"
+			shape: "hexagon"
+			tasks: [{
+				id: "0DD5F74AB3F26831"
+				item: "gtceu:osmium_dust"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -8.0d
 		}
 	]
 	title: "Burning the Veil [IV]"
