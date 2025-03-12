@@ -33,6 +33,7 @@ ServerEvents.recipes(event => {
   event.remove({id : 'bloodmagic:alchemy_table'})
   event.remove({id : 'bloodmagic:sacrificial_dagger'})
   event.remove({id : 'bloodmagic:altar/apprenticebloodorb'})
+  event.remove({id : 'bloodmagic:alchemytable/reagent_binding'})
 
   event.recipes.bloodmagic.altar('cosmiccore:trinavine_dust', 'gtceu:trinium_dust').drainRate(50).consumptionRate(25).altarSyphon(2500)
   event.recipes.bloodmagic.altar('bloodmagic:blankslate', 'gtceu:carbon_fiber_plate').drainRate(50).consumptionRate(25).altarSyphon(1000)
