@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "digital_roots_ae2_basic"
 	group: "49DCE46B3EB22AEA"
@@ -23,6 +24,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["2B294BA5C36676EE"]
 			description: [
 				"Channels are enabled by default in Frontiers and thus are required in a normal playthrough."
 				""
@@ -54,12 +56,7 @@
 		}
 		{
 			dependencies: ["30E09C21E7032519"]
-			description: [
-				"Ouch, That's a &lLOT&r of Mana Steel. Well it's the best we can make rn."
-				""
-				"[NYI] When Phase 2 of AE2's Recipes Hit you will be able to make Controllers MUCH cheaper."
-				"This is just your early game recipe, so choose if you wish to soak the cost now or wait."
-			]
+			description: ["Ouch, That's a &lLOT&r of Mana Steel. Well it's the best we can make rn."]
 			id: "3FD06427649B0115"
 			shape: "hexagon"
 			size: 1.5d
@@ -72,22 +69,6 @@
 			title: "Digital Dominance"
 			x: 0.0d
 			y: -3.75d
-		}
-		{
-			dependencies: ["30E09C21E7032519"]
-			description: ["This includes the Crafting Cores - Autocrafting is planned for HV."]
-			hide_dependency_lines: true
-			id: "3EBD99B276396DF9"
-			shape: "gear"
-			size: 2.0d
-			subtitle: "16k And Above Storages NYI - HV+ Content"
-			tasks: [{
-				id: "3BADEFDC9B994DC7"
-				type: "custom"
-			}]
-			title: "In Dev!"
-			x: -5.0d
-			y: -3.0d
 		}
 		{
 			dependencies: ["30E09C21E7032519"]
@@ -108,7 +89,11 @@
 		}
 		{
 			dependencies: ["693C114EC35CE27E"]
-			description: ["Ah yes, the ME Drive. Make some drives and put shove em in here. Pretty self explanatory. "]
+			description: [
+				"Ah yes, the ME Drive. Make some drives and put shove em in here. It'll allow you to view your stored items and fluids across all your ME network."
+				""
+				"Note, these can be placed beside eachother and can carry 8 channels. "
+			]
 			id: "51AAF1B5592FD2EF"
 			shape: "hexagon"
 			size: 1.5d
@@ -262,6 +247,12 @@
 		}
 		{
 			dependencies: ["5F8CA7B469B59F0E"]
+			description: [
+				"Makes your ME System send out pattern batches more frequently, allowing your autocrafts to keep up with faster machines."
+				""
+				""
+				"You'll need to use these plenty as you progress and you will also want to multiply the size of your patterns to help as well."
+			]
 			id: "0FF4C007223DFD69"
 			subtitle: "MORE AT ONCE!!"
 			tasks: [{
@@ -277,7 +268,9 @@
 			description: [
 				"This big guy can carry a full 32 channels."
 				""
-				"However, it cannot connec to to most devices."
+				"However, this cable can't connect to most devices you can use on a smart cable."
+				""
+				"They can however connect to GT AE2 Parts without issue."
 			]
 			id: "60AF2AD64B94122B"
 			subtitle: "Glue 4 of them together!"
@@ -373,6 +366,7 @@
 		{
 			dependencies: ["788821E58479006C"]
 			id: "5BF9284D19367CBF"
+			subtitle: "Illuminated Panel but Darker"
 			tasks: [{
 				id: "48082750FDE82B64"
 				item: "ae2:dark_monitor"
@@ -384,6 +378,7 @@
 		{
 			dependencies: ["788821E58479006C"]
 			id: "1BA3BBE611310B0C"
+			subtitle: "Illuminated Panel but Brighter"
 			tasks: [{
 				id: "77CEC74FB14F44DC"
 				item: "ae2:monitor"
@@ -398,6 +393,9 @@
 				"The ME Requester will automatically request items once it falls below a threshold count set by you."
 				""
 				"You can set the amount to craft once it reaches below that threshold. "
+				""
+				""
+				"Crafting cards are much cheaper, but come without many of the benefits a ME Requester"
 			]
 			id: "284B42AA4FBD4F6E"
 			subtitle: "Better Crafting Card"
@@ -545,6 +543,7 @@
 			y: -1.5d
 		}
 		{
+			icon: "cosmiccore:omnia_circuit_lv"
 			id: "7FBB9735076AF60B"
 			tasks: [{
 				id: "262D9EEE70088CA6"
@@ -563,6 +562,7 @@
 			y: 1.5d
 		}
 		{
+			icon: "cosmiccore:omnia_circuit_mv"
 			id: "3EB9831F2956063E"
 			tasks: [{
 				id: "2E98C4843CB1F6B1"
@@ -581,6 +581,7 @@
 			y: -3.0d
 		}
 		{
+			icon: "cosmiccore:omnia_circuit_hv"
 			id: "081BA3F996FFA0A9"
 			tasks: [{
 				id: "2CA4144FAE5D4BBF"
@@ -599,6 +600,7 @@
 			y: 1.5d
 		}
 		{
+			icon: "cosmiccore:omnia_circuit_ev"
 			id: "4D0DCF9314C24E4D"
 			tasks: [{
 				id: "18F8424D9D42ED41"
@@ -617,6 +619,7 @@
 			y: -3.0d
 		}
 		{
+			icon: "cosmiccore:omnia_circuit_iv"
 			id: "648E83477E7C7D73"
 			tasks: [{
 				id: "08C53135DC788AF8"
@@ -635,6 +638,7 @@
 			y: 1.5d
 		}
 		{
+			icon: "cosmiccore:omnia_circuit_luv"
 			id: "6B03A23737F43585"
 			tasks: [{
 				id: "57D9241F164B2D83"
@@ -653,6 +657,7 @@
 			y: -3.0d
 		}
 		{
+			icon: "cosmiccore:omnia_circuit_zpm"
 			id: "48CE0A8813272374"
 			tasks: [{
 				id: "7B9BB3E1877E6575"
@@ -671,6 +676,7 @@
 			y: 1.5d
 		}
 		{
+			icon: "cosmiccore:omnia_circuit_uv"
 			id: "56B556AA11522EF1"
 			tasks: [{
 				id: "27AABC4CA4EB5A6D"
@@ -689,6 +695,7 @@
 			y: -3.0d
 		}
 		{
+			icon: "cosmiccore:omnia_circuit_uhv"
 			id: "5778BE53C013ADBB"
 			tasks: [{
 				id: "533C4942D6F6D3D8"
@@ -707,6 +714,7 @@
 			y: 1.5d
 		}
 		{
+			icon: "cosmiccore:omnia_circuit_uev"
 			id: "62C474BCC1360057"
 			tasks: [{
 				id: "4BA04EC637634568"
@@ -1003,6 +1011,12 @@
 				"571A02E2F93D1BD1"
 				"780989B23AC4635E"
 			]
+			description: [
+				"The extended ME Pattern Provider and Interface can both hold 36 unique items/patterns."
+				""
+				""
+				"These are a great way on using less space for your automation setups"
+			]
 			id: "12BF0EC1805A7548"
 			subtitle: "Move ALL The Items!"
 			tasks: [
@@ -1285,6 +1299,128 @@
 			}]
 			x: -10.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["648E83477E7C7D73"]
+			description: [
+				"The ME Stocking Bus has two modes: Filtered and Autopull."
+				""
+				"In Filtered Mode, you can select up to 16 items to automatically pull into your multiblock machine."
+				""
+				"In Autopull Mode, the Stocking Bus will auto-pull the first 16 items in your AE Network!"
+				"Use this with subnets to create powerful automation setups for your base!"
+			]
+			id: "3D08DFFE2DE3B399"
+			subtitle: "A much stronger interface"
+			tasks: [{
+				id: "68F110BE1E91697C"
+				item: "gtceu:me_stocking_input_bus"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["648E83477E7C7D73"]
+			description: [
+				"The ME Stocking Hatch has two modes: Filtered and Autopull."
+				""
+				"In Filtered Mode, you can select up to 16 fluids to automatically pull into your multiblock machine."
+				""
+				"In Autopull Mode, the Stocking Bus will auto-pull the first 16 fluids in your AE Network!"
+				"Use this with subnets to create powerful automation setups for your base!"
+				""
+				"These are just like the bus version."
+			]
+			id: "379BEDD16F96296B"
+			subtitle: "A Much Stronger Interface"
+			tasks: [{
+				id: "5B971BC0DE8DE46C"
+				item: "gtceu:me_stocking_input_hatch"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4D0DCF9314C24E4D"]
+			description: ["ME Output Busses allow you to directly insert into your ME System from GT Multiblocks."]
+			id: "41EDF4362B497409"
+			subtitle: "Multiblock AE Output"
+			tasks: [{
+				id: "6AE3AAF8DB099EBA"
+				item: "gtceu:me_output_bus"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4D0DCF9314C24E4D"]
+			description: [
+				"ME Output Hatches allow you to directly insert into your ME System from GT Multiblocks."
+				"Perfect for distilleries!"
+			]
+			id: "077AD4C248EC217B"
+			subtitle: "Multiblock AE Output"
+			tasks: [{
+				id: "316B9028E8F09AE0"
+				item: "gtceu:me_output_hatch"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6B03A23737F43585"]
+			description: [
+				"Oh boy, the ME Pattern Buffer is a bit complicated, so stick around!"
+				""
+				"ME Pattern Buffers can hold 27 patterns. One of their key features is that all recipes in the buffer will never conflict (this is currently broken, but it’s fixed in GTM 1.7.0, and this message will be removed then). This means you can do much more in one machine than before."
+				""
+				"Each Pattern Buffer shares three things with all patterns placed inside:"
+				""
+				"- The Ghost Circuit"
+				""
+				"- Any items in the Shared Item Slots"
+				""
+				"- Any fluids in the Shared Fluids Slots"
+				""
+				"These features allow you to do more with each buffer. A great example is using one fluid solidifier for all your patterns instead of several."
+				""
+				"These blocks get even stronger in future tiers, but you’ll have to wait until then."
+			]
+			id: "702FCB6B09F7811C"
+			subtitle: "The King of Crafting"
+			tasks: [{
+				id: "7BA185E4739D7BD1"
+				item: "gtceu:me_pattern_buffer"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["48CE0A8813272374"]
+			description: [
+				"The ME Pattern Proxy is a powerful tool when paired with the ME Pattern Buffer."
+				""
+				"You can link proxies to buffers using a datastick to pair them."
+				"When linked, Pattern Proxies will emulate ALL patterns, storage, and shared circuits/inventories of their linked buffer."
+				""
+				"This allows you to share buffers from one machine with proxies on many others, enabling much stronger and more parallelized crafting than before."
+				""
+				"Don’t forget to multiply your patterns!"
+			]
+			id: "6CAE8A6DBB415BB1"
+			subtitle: "The Queen of Crafting"
+			tasks: [{
+				id: "73F38809B48ECD2A"
+				item: "gtceu:me_pattern_buffer_proxy"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.5d
 		}
 	]
 	subtitle: ["AE2 and You!"]
