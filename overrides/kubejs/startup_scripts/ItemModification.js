@@ -66,5 +66,41 @@ ItemEvents.modification(event => {
         item.addAttribute("malum:soul_ward_capacity", 'b504bc09-b827-4b24-867f-553dc6dc5345', 'ward-capacity7', 7.5, "addition")
         item.addAttribute("malum:soul_ward_recovery_rate", '9b8b37d0-913e-425e-bd65-b87056f85ec3', 'recovery-rate7', 2.0, "addition")
       })
+      //Quarktechs
+      event.modify('gtceu:quarktech_helmet', item => {
+        item.armorProtection = 6.0
+        item.addAttribute("malum:soul_ward_capacity", 'dc478cf8-9ce4-4821-958a-9aad822a8e23', 'ward-capacity7', 9.5, "addition")
+        item.addAttribute("malum:soul_ward_recovery_rate", '1dafedad-6ca8-413c-8c89-86220a891942', 'recovery-rate7', 3.0, "addition")
+      })
+      event.modify('gtceu:quarktech_chestplate', item => {
+        item.armorProtection = 10.0
+        item.addAttribute("malum:soul_ward_capacity", 'c3b224d1-b6a8-4f86-ae7e-26494d4cde92', 'ward-capacity7', 14.5, "addition")
+        item.addAttribute("malum:soul_ward_recovery_rate", 'bdfb5c91-a5cd-45d4-a5e1-52061891cc36', 'recovery-rate7', 3.0, "addition")
+      })
+      event.modify('gtceu:quarktech_leggings', item => {
+        item.armorProtection = 8.0
+        item.addAttribute("malum:soul_ward_capacity", 'f44ae125-85d0-498d-9ad0-46f74fc3c4ec', 'ward-capacity7', 9.5, "addition")
+        item.addAttribute("malum:soul_ward_recovery_rate", '2288e382-c677-419a-8c6f-2357c11b33e2', 'recovery-rate7', 3.0, "addition")
+      })
+      event.modify('gtceu:quarktech_boots', item => {
+        item.armorProtection = 6.0
+        item.addAttribute("malum:soul_ward_capacity", 'b018428b-c402-4aeb-9576-a09ed8dc60a5', 'ward-capacity7', 9.5, "addition")
+        item.addAttribute("malum:soul_ward_recovery_rate", 'b9f45ad6-00fc-4e34-823f-d614e44b8e7a', 'recovery-rate7', 3.0, "addition")
+      })
+      event.modify('cosmiccore:space_quarktech_chestplate', item => {
+        item.armorProtection = 10.0
+        item.addAttribute("malum:soul_ward_capacity", '68065d69-2242-42ee-a0db-20c30ff6e700', 'ward-capacity7', 14.5, "addition")
+        item.addAttribute("malum:soul_ward_recovery_rate", 'ba6db1b7-73a2-41ed-8bc1-e439166590e5', 'recovery-rate7', 3.0, "addition")
+      })
+      event.modify('gtceu:advanced_quarktech_chestplate', item => {
+        item.armorProtection = 10.0
+        item.addAttribute("malum:soul_ward_capacity", 'bc206f33-3d8c-44c0-a0a8-6a078492c3b0', 'ward-capacity7', 14.5, "addition")
+        item.addAttribute("malum:soul_ward_recovery_rate", '9f531419-d739-496d-9f3a-40af3eb9c894', 'recovery-rate7', 3.0, "addition")
+      })
+      event.modify('cosmiccore:space_advanced_quarktech_chestplate', item => {
+        item.armorProtection = 10.0
+        item.addAttribute("malum:soul_ward_capacity", 'aa3c7f47-6df3-47ac-a349-a98b457f04e4', 'ward-capacity7', 14.5, "addition")
+        item.addAttribute("malum:soul_ward_recovery_rate", '7bb55156-4d51-424a-b9a1-e3bdf565bfff', 'recovery-rate7', 3.0, "addition")
+      })
   
     })
