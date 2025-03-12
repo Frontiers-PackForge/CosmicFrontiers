@@ -1,0 +1,10 @@
+ServerEvents.recipes(event => {
+    event.recipes.gtceu.large_chemical_reactor('triphenyl_phosphine')
+        .itemInputs('6x gtceu:sodium_dust')
+        .inputFluids('gtceu:phosphorus_trichloride 1000')
+        .inputFluids('gtceu:chlorobenzene 1000')
+        .itemOutputs('12x gtceu:salt_dust')
+        .outputFluids('gtceu:triphenyl_phosphine 1000')
+        .duration(240)
+        .EUt(GTValues.VH[GTValues.IV])
+})
