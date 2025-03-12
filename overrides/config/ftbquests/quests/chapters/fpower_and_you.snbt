@@ -10,6 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["38DA0B4E0DBAC364"]
 			description: [
 				"Placeholder desc"
 				""
@@ -19,6 +20,7 @@
 				""
 				"down - ?????"
 			]
+			hide_until_deps_complete: true
 			id: "6146E12078CCA5D3"
 			shape: "gear"
 			size: 1.0d

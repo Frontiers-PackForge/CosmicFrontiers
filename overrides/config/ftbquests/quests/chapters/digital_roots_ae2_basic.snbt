@@ -10,6 +10,10 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: [
+				"4F7C125D9EE9BC3F"
+				"5ABF9E529AEDFB8E"
+			]
 			description: ["You have to power your ME system for it to work. The energy acceptor is the cheapest and easiest way to do this. Slap some power into this baby and you're good to roll."]
 			id: "30E09C21E7032519"
 			shape: "gear"
@@ -51,8 +55,8 @@
 				type: "checkmark"
 			}]
 			title: "Oi! Read this!"
-			x: -3.0d
-			y: -3.0d
+			x: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["30E09C21E7032519"]
@@ -129,6 +133,7 @@
 				"51AAF1B5592FD2EF"
 				"7FBB9735076AF60B"
 			]
+			hide_until_deps_visible: true
 			id: "107EC463456438E2"
 			tasks: [{
 				id: "00B5A008DECE3DFC"
@@ -213,8 +218,8 @@
 				item: "ae2:semi_dark_monitor"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 3.0d
+			x: -2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["788821E58479006C"]
@@ -228,8 +233,8 @@
 				item: "ae2:terminal"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 4.5d
+			x: -4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -308,8 +313,8 @@
 				item: "ae2:crafting_terminal"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 6.0d
+			x: -5.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6F2176E189DB74C5"]
@@ -321,8 +326,8 @@
 				item: "ae2:pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 6.5d
+			x: -4.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6F2176E189DB74C5"]
@@ -334,8 +339,8 @@
 				item: "ae2:pattern_access_terminal"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 4.5d
+			x: -6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6F2176E189DB74C5"]
@@ -347,8 +352,8 @@
 				item: "merequester:requester_terminal"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 6.0d
+			x: -2.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6F2176E189DB74C5"]
@@ -360,8 +365,8 @@
 				item: "expatternprovider:ex_pattern_access_part"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 3.0d
+			x: -5.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["788821E58479006C"]
@@ -372,8 +377,8 @@
 				item: "ae2:dark_monitor"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 3.0d
+			x: -4.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["788821E58479006C"]
@@ -384,8 +389,8 @@
 				item: "ae2:monitor"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.5d
+			x: -2.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3FD06427649B0115"]
@@ -543,6 +548,8 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
 			icon: "cosmiccore:omnia_circuit_lv"
 			id: "7FBB9735076AF60B"
 			tasks: [{
@@ -562,6 +569,8 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
 			icon: "cosmiccore:omnia_circuit_mv"
 			id: "3EB9831F2956063E"
 			tasks: [{
@@ -581,6 +590,8 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
 			icon: "cosmiccore:omnia_circuit_hv"
 			id: "081BA3F996FFA0A9"
 			tasks: [{
@@ -600,6 +611,8 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
 			icon: "cosmiccore:omnia_circuit_ev"
 			id: "4D0DCF9314C24E4D"
 			tasks: [{
@@ -619,6 +632,8 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
 			icon: "cosmiccore:omnia_circuit_iv"
 			id: "648E83477E7C7D73"
 			tasks: [{
@@ -638,6 +653,8 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
 			icon: "cosmiccore:omnia_circuit_luv"
 			id: "6B03A23737F43585"
 			tasks: [{
@@ -657,6 +674,8 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
 			icon: "cosmiccore:omnia_circuit_zpm"
 			id: "48CE0A8813272374"
 			tasks: [{
@@ -676,6 +695,8 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
 			icon: "cosmiccore:omnia_circuit_uv"
 			id: "56B556AA11522EF1"
 			tasks: [{
@@ -695,6 +716,8 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
 			icon: "cosmiccore:omnia_circuit_uhv"
 			id: "5778BE53C013ADBB"
 			tasks: [{
@@ -714,6 +737,8 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
 			icon: "cosmiccore:omnia_circuit_uev"
 			id: "62C474BCC1360057"
 			tasks: [{
@@ -836,8 +861,8 @@
 				}
 			]
 			title: "Import/Export Busses"
-			x: -3.0d
-			y: 1.0d
+			x: -4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["30E09C21E7032519"]
@@ -848,8 +873,8 @@
 				title: "Devices"
 				type: "checkmark"
 			}]
-			x: -2.0d
-			y: 0.0d
+			x: -3.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["30E09C21E7032519"]
@@ -872,8 +897,8 @@
 				title: "Channels"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: -1.5d
+			x: -1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["74E4DA11919F24BD"]
@@ -885,8 +910,8 @@
 				item: "ae2:storage_bus"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -1.0d
+			x: -4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["74E4DA11919F24BD"]
@@ -910,8 +935,8 @@
 				}
 			]
 			title: "Cell Manipulation"
-			x: -4.0d
-			y: -1.0d
+			x: -5.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["74E4DA11919F24BD"]
@@ -931,11 +956,11 @@
 				item: "ae2:me_p2p_tunnel"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 1.0d
+			x: -5.5d
+			y: 2.5d
 		}
 		{
-			dependencies: ["74E4DA11919F24BD"]
+			dependencies: ["30E09C21E7032519"]
 			id: "141E740CB48C677B"
 			subtitle: "Upgrade Time"
 			tasks: [{
@@ -943,8 +968,8 @@
 				title: "Upgrade Cards"
 				type: "checkmark"
 			}]
-			x: -5.0d
-			y: 0.0d
+			x: -3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["141E740CB48C677B"]
@@ -956,8 +981,8 @@
 				item: "ae2:speed_card"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -1.0d
+			x: -4.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["141E740CB48C677B"]
@@ -973,8 +998,8 @@
 				item: "ae2:capacity_card"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 1.0d
+			x: -4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["141E740CB48C677B"]
@@ -986,8 +1011,8 @@
 				item: "ae2:fuzzy_card"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -1.0d
+			x: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["141E740CB48C677B"]
@@ -1003,8 +1028,8 @@
 				item: "ae2:crafting_card"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 1.0d
+			x: -5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1068,7 +1093,9 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["30E09C21E7032519"]
 			description: ["Infinite water in a cell. "]
+			hide_dependency_lines: true
 			id: "55DA5325B7B70908"
 			optional: true
 			subtitle: "Smaller Than A 2x2 Water Source"
@@ -1090,7 +1117,9 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["30E09C21E7032519"]
 			description: ["Provides you with all the cobblestone you could ever need."]
+			hide_dependency_lines: true
 			id: "26921AD67BA076FC"
 			optional: true
 			subtitle: "Cobblestone In A Cell"
@@ -1239,7 +1268,7 @@
 				title: "Extended AE"
 				type: "checkmark"
 			}]
-			x: -8.0d
+			x: -2.5d
 			y: 0.0d
 		}
 		{
@@ -1264,7 +1293,7 @@
 					type: "item"
 				}
 			]
-			x: -9.0d
+			x: -3.5d
 			y: -1.0d
 		}
 		{
@@ -1284,7 +1313,7 @@
 					type: "item"
 				}
 			]
-			x: -9.0d
+			x: -3.5d
 			y: 1.0d
 		}
 		{
@@ -1297,7 +1326,7 @@
 				item: "expatternprovider:ex_io_port"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -4.5d
 			y: 0.0d
 		}
 		{

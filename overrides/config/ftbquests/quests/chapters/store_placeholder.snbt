@@ -9,6 +9,8 @@
 	quests: [
 		{
 			can_repeat: true
+			dependencies: ["38DA0B4E0DBAC364"]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "botania:brew_flask"
@@ -42,6 +44,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["38DA0B4E0DBAC364"]
 			description: [
 				"Im not too sure how many shards each reward is worth atm, as the value of them is still very vague to me."
 				""
@@ -49,6 +52,7 @@
 				""
 				"Let me know in discord"
 			]
+			hide_until_deps_complete: true
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "344AEE2879AD24D1"
 			size: 2.0d
@@ -63,7 +67,9 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["38DA0B4E0DBAC364"]
 			description: ["This should allow you to hold off from grinding out an enchanting setup. If you so choose to."]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "minecraft:enchanted_book"
@@ -118,6 +124,8 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["38DA0B4E0DBAC364"]
+			hide_until_deps_complete: true
 			icon: "minecraft:beehive"
 			id: "3DE6E688D4062EAB"
 			optional: true
@@ -363,6 +371,8 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["38DA0B4E0DBAC364"]
+			hide_until_deps_complete: true
 			icon: "sophisticatedstorage:jukebox_upgrade"
 			id: "5F4BDDEA578C4893"
 			optional: true
@@ -386,6 +396,8 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["38DA0B4E0DBAC364"]
+			hide_until_deps_complete: true
 			icon: "gtceu:raw_gypsum"
 			id: "49C6A9B5C1242C24"
 			optional: true
@@ -408,6 +420,8 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["38DA0B4E0DBAC364"]
+			hide_until_deps_complete: true
 			icon: "minecraft:oak_sapling"
 			id: "286F9EC824333A02"
 			optional: true
@@ -442,6 +456,8 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["38DA0B4E0DBAC364"]
+			hide_until_deps_complete: true
 			icon: "minecraft:fire_charge"
 			id: "56027B63CB763306"
 			rewards: [{
@@ -463,6 +479,8 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["38DA0B4E0DBAC364"]
+			hide_until_deps_complete: true
 			icon: "legendarysurvivaloverhaul:ice_fern_leaf"
 			id: "68069806D0200CEF"
 			rewards: [{
@@ -484,6 +502,8 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["38DA0B4E0DBAC364"]
+			hide_until_deps_complete: true
 			icon: "legendarysurvivaloverhaul:sun_fern_leaf"
 			id: "1726749CD8452830"
 			rewards: [{
@@ -506,6 +526,8 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["38DA0B4E0DBAC364"]
+			hide_until_deps_complete: true
 			icon: "undergarden:gronglet"
 			id: "6A7BCD7889599C51"
 			rewards: [{
@@ -526,12 +548,15 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["38DA0B4E0DBAC364"]
 			description: [
 				"You'll notice the timer task in each quest doesn't start completed and  by proxy shops need to warm up before you can use them."
 				""
 				"I can't really do anything about that, apologies for now!"
 			]
+			hide_until_deps_complete: true
 			id: "6B9CFDEC789CAE40"
+			shape: "rsquare"
 			subtitle: "A Note about shop quests"
 			tasks: [{
 				id: "0A67CD7EEE28D657"
@@ -542,6 +567,8 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["38DA0B4E0DBAC364"]
+			hide_until_deps_complete: true
 			icon: "botania:cosmetic_anaglyph_glasses"
 			id: "03E2664F7314F18D"
 			optional: true
@@ -565,6 +592,8 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["38DA0B4E0DBAC364"]
+			hide_until_deps_complete: true
 			icon: "farmersdelight:chicken_sandwich"
 			id: "291017CD8B98263C"
 			optional: true
@@ -650,6 +679,8 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["38DA0B4E0DBAC364"]
+			hide_until_deps_complete: true
 			icon: "gtceu:tin_single_cable"
 			id: "71AE135D9582E87B"
 			optional: true
@@ -672,6 +703,8 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["38DA0B4E0DBAC364"]
+			hide_until_deps_complete: true
 			icon: "minecraft:experience_bottle"
 			id: "3C2C2146C005CABB"
 			optional: true
@@ -693,6 +726,8 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["38DA0B4E0DBAC364"]
+			hide_until_deps_complete: true
 			icon: "minecraft:experience_bottle"
 			id: "655B426FC4EC143E"
 			optional: true
@@ -713,6 +748,7 @@
 		}
 		{
 			can_repeat: false
+			dependencies: ["38DA0B4E0DBAC364"]
 			description: [
 				"16 Clusters is no cheap pricetag."
 				""
@@ -720,6 +756,7 @@
 				""
 				"You may only claim it once."
 			]
+			hide_until_deps_complete: true
 			icon: "gtceu:prospector.luv"
 			id: "4E5F99D0B1FEBE23"
 			rewards: [{

@@ -594,6 +594,7 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["75A4495610653B26"]
 			description: ["Demonic Will, will end up coming into play here in the future. I am just unsure how to implement it atm."]
 			id: "2FE7FBD01B53D1F2"
 			shape: "gear"
@@ -1866,7 +1867,10 @@
 			y: -7.0d
 		}
 		{
+			dependencies: ["635C885360A8A8A9"]
+			hide_dependency_lines: true
 			id: "0F563AE8107A0198"
+			shape: "rsquare"
 			tasks: [{
 				id: "738F3CB6378625E0"
 				item: {

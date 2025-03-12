@@ -20,8 +20,8 @@
 			image: "frontiers:textures/questimages/miscicons/wingedborder.png"
 			rotation: 0.0d
 			width: 4.0d
-			x: 6.0595238095238315d
-			y: 1.444770408163258d
+			x: 6.103749111584953d
+			y: -0.5d
 		}
 	]
 	order_index: 0
@@ -44,6 +44,7 @@
 				""
 				""
 				"        &7[This is not a bug, just story -Ghost]"
+				""
 			]
 			icon: {
 				Count: 1
@@ -63,6 +64,7 @@
 				type: "item"
 			}]
 			shape: "octagon"
+			size: 1.5d
 			subtitle: "\"Paying the Ultimate Price\""
 			tasks: [{
 				id: "1AE9E7415B27B019"
@@ -70,7 +72,7 @@
 			}]
 			title: "Judgement of the Eternal Cycle"
 			x: 6.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -106,7 +108,7 @@
 			}]
 			title: "Basic Metallurgy #1"
 			x: 6.0d
-			y: -1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
@@ -157,8 +159,8 @@
 				type: "checkmark"
 			}]
 			title: "Keeping Warm and Cool"
-			x: 3.5d
-			y: 3.5d
+			x: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
@@ -208,7 +210,7 @@
 			}]
 			title: "Emergency Supplies"
 			x: 6.0d
-			y: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["7C2BA4D773E57683"]
@@ -221,6 +223,29 @@
 				"I'm also giving you an unbreakable hammer to help with clearing of blocks"
 				"Yes, It is 'weirdly durable', You could take this hammer to the end of time with you."
 			]
+			icon: {
+				Count: 1
+				id: "gtceu:steel_mining_hammer"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						AoEColumn: 1
+						AoELayer: 0
+						AoERow: 1
+						MaxAoEColumn: 1
+						MaxAoELayer: 0
+						MaxAoERow: 1
+						TorchPlacing: 1b
+					}
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 3
+						MaxDamage: 1535
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
 			id: "5693AA8924634F44"
 			rewards: [
 				{
@@ -267,7 +292,7 @@
 			}]
 			title: "FTB: Ultimine and You"
 			x: 8.0d
-			y: -0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["012D3A0EBD06AEB3"]
@@ -294,7 +319,7 @@
 			}]
 			title: "Get Some Bi- I mean Wood"
 			x: 4.0d
-			y: -0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4276E47E7CF85DF0"]
@@ -487,7 +512,7 @@
 			]
 			title: "Tools fit for survival"
 			x: 6.0d
-			y: -0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2B84E90B712B6CD3"]
@@ -498,8 +523,6 @@
 				""
 				"I wish you luck!"
 			]
-			hide_dependency_lines: true
-			hide_dependent_lines: true
 			id: "38DA0B4E0DBAC364"
 			rewards: [{
 				id: "50A86F862ABBC6AE"
@@ -508,7 +531,7 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "Get ready."
+			subtitle: "Complete this quest to advanced the questbook"
 			tasks: [
 				{
 					count: 128L
@@ -525,7 +548,7 @@
 			]
 			title: "The Road Ahead"
 			x: 6.0d
-			y: 1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["423EB7A96CB261A3"]
@@ -550,7 +573,7 @@
 			}]
 			title: "Stamina and You"
 			x: 4.0d
-			y: 1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["423EB7A96CB261A3"]
@@ -579,7 +602,7 @@
 				}
 			]
 			x: 2.5d
-			y: 3.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["012D3A0EBD06AEB3"]
@@ -603,7 +626,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
@@ -641,8 +664,8 @@
 				type: "checkmark"
 			}]
 			title: "Nutrition and You."
-			x: 8.5d
-			y: 3.5d
+			x: 8.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0588F46F605A2E88"]
@@ -662,7 +685,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 3.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0588F46F605A2E88"]
@@ -714,49 +737,7 @@
 			}]
 			title: "Thin Air and You"
 			x: 8.0d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"5693AA8924634F44"
-				"4276E47E7CF85DF0"
-				"423EB7A96CB261A3"
-				"38DA0B4E0DBAC364"
-				"4D96DE63E82D8EAA"
-				"0588F46F605A2E88"
-				"012D3A0EBD06AEB3"
-				"2B84E90B712B6CD3"
-				"7C2BA4D773E57683"
-				"2F6DBFCBBC3A0827"
-			]
-			description: [
-				"You finished everything on this page? That's awesome!"
-				"Have some shards on the house."
-				""
-				""
-				"         &7&oThe Sky softly hums a familiar tune&r"
-				"          \"&6Watch this heartache transcend.&r\""
-			]
-			hide_dependency_lines: true
-			hide_text_until_complete: true
-			icon: "cosmiccore:large_shard_of_perpetuity"
-			id: "06408883200FAC36"
-			rewards: [{
-				count: 64
-				id: "33F66928FDE7898C"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
-			shape: "pentagon"
-			subtitle: "100% The QB Page to unlock."
-			tasks: [{
-				id: "5C7A35C4DA090EDF"
-				title: "Checkmark"
-				type: "checkmark"
-			}]
-			title: "Full Clear Chapter : An Eternal Dilemma"
-			x: 6.0d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
@@ -782,7 +763,7 @@
 				type: "checkmark"
 			}]
 			title: "Challenges/Victory Rewards"
-			x: 6.0d
+			x: 7.0d
 			y: 4.0d
 		}
 		{
@@ -794,15 +775,15 @@
 				"/spawn - Teleports you to the world spawnpoint"
 				"/rtp (Random Teleport) - Great for exploring/finding stuff"
 			]
-			hide_dependency_lines: true
 			id: "0081FE452DFE9D6D"
+			shape: "gear"
 			tasks: [{
 				id: "454A30936336BE28"
 				title: "Useful Commands"
 				type: "checkmark"
 			}]
-			x: 4.5d
-			y: 6.5d
+			x: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7C2BA4D773E57683"]
@@ -835,7 +816,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 1.5d
+			y: 4.5d
 		}
 		{
 			description: [
@@ -880,17 +861,28 @@
 			y: -5.5d
 		}
 		{
-			icon: "gtceu:lv_alloy_smelter"
-			id: "1DF33FF70395C34B"
-			subtitle: "GT Machines"
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"Don't worry your pack isn't broken, the questbook is hidden!"
+				""
+				"Advance forward in each quest chapter to unlock more quest pages and to discover more of the story of Cosmic Frontiers!"
+			]
+			id: "0746B093412C1AA8"
+			shape: "gear"
+			subtitle: "Calm down!"
 			tasks: [{
-				id: "197E2ACB77707CD1"
-				type: "checkmark"
+				id: "0F04030F98A99AEE"
+				item: "ftbquests:book"
+				type: "item"
 			}]
-			x: 3.5d
-			y: 4.5d
+			title: "Where's the Questbook!?"
+			x: 6.0d
+			y: 3.5d
 		}
 	]
-	subtitle: ["It all starts here"]
+	subtitle: [
+		"&fIt all starts here"
+		"&fFinish this chapter to Unlock Questbook"
+	]
 	title: "&fFirst Steps and Important Info"
 }
