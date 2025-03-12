@@ -31,21 +31,22 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV]);
 
     event.recipes.gtceu.large_chemical_reactor('frontiers:aniline')
-        .itemInputs('gtceu:zinc_dust')
+        .notConsumable('gtceu:zinc_dust')
         .inputFluids('gtceu:nitrobenzene 1000')
         .inputFluids('gtceu:hydrogen 6000')
         .outputFluids('gtceu:aniline 1000')
+        .outputFluids('minecraft:water 2000')
         .duration(110)
         .EUt(GTValues.VA[GTValues.HV]);
-    event.recipes.gtceu.mixer('frontiers:oxydianiline')
-        .itemInputs('gtceu:tin_dust')
+    event.recipes.gtceu.chemical_reactor('frontiers:oxydianiline')
+        .notConsumable('gtceu:tin_dust')
         .inputFluids('gtceu:phenol 1000')
         .inputFluids('gtceu:aniline 2000')
         .notConsumableFluid('gtceu:hydrochloric_acid 1000')
         .outputFluids('gtceu:oxydianiline 1000')
         .outputFluids('gtceu:methane 2000')
         .duration(430)
-        .EUt(GTValues.VA[GTValues.HV]);
+        .EUt(GTValues.VA[GTValues.IV]);
     event.recipes.gtceu.large_chemical_reactor('frontiers:poly_amic_acid')
         .itemInputs('18x gtceu:pyromellitic_dianhydride_dust')
         .inputFluids('gtceu:oxydianiline 1000')
