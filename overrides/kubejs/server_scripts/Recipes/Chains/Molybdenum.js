@@ -1,0 +1,53 @@
+ServerEvents.recipes(event => {
+
+    event.remove({id: "gtceu:smelting/smelt_dust_molybdenite_to_ingot"})
+    event.remove({id: "gtceu:electrolyzer/decomposition_electrolyzing_molybdenite"})
+
+    event.recipes.gtceu.chemical_reactor('molybdenite_to_moly_oxide')
+        .itemInputs('6x gtceu:molybdenite_dust')
+        .inputFluids('gtceu:oxygen 14000')
+        .itemOutputs('8x gtceu:molybdenum_oxide_dust')
+        .outputFluids('gtceu:sulfur_dioxide 4000')
+        .duration(500)
+        .EUt(GTValues.VA[GTValues.HV])
+        
+    event.recipes.gtceu.chemical_reactor('moly_oxide_to_ammonium_moly')
+        .itemInputs('8x gtceu:molybdenum_oxide_dust')
+        .inputFluids('gtceu:ammonia 2000')
+        .inputFluids('minecraft:water 1000')
+        .outputFluids('gtceu:ammonium_molybdate 1000')
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.fluid_heater('ammonium_moly_heating')
+        .inputFluids('gtceu:ammonium_molybdate 1000')
+        .circuit(2)
+        .outputFluids('gtceu:ammonium_dimolybdate 1000')
+        .duration(780)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_dehydrator('dimolybdate_heating')
+        .inputFluids('gtceu:ammonium_dimolybdate 1000')
+        .itemOutputs('11x gtceu:ammonium_dimolybdate_dust')
+        .duration(380)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.large_chemical_reactor('moly_trioxide')
+        .itemInputs('11x gtceu:ammonium_dimolybdate_dust')
+        .itemOutputs('8x gtceu:molybdenum_trioxide_dust')
+        .chancedOutput('1x gtceu:copper_dust', 5000, 500)
+        .outputFluids('gtceu:ammonia 2000')
+        .outputFluids('minecraft:water 1000')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.HV] * 3 / 4)
+
+    event.recipes.gtceu.electric_blast_furnace('molybdenum_ingor')
+        .itemInputs('4x gtceu:molybdenum_trioxide_dust')
+        .inputFluids('gtceu:hydrogen 6000')
+        .itemOutputs('1x gtceu:molybdenum_ingot')
+        .outputFluids('minecraft:water 3000')
+        .blastFurnaceTemp(3000)
+        .duration(500)
+        .EUt(GTValues.VA[GTValues.HV])
+
+})

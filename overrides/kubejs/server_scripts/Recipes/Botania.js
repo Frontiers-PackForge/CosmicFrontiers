@@ -39,21 +39,21 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'botania:gaia_ingot' })
     event.recipes.gtceu.essence_reactor('elementium_what')
         .itemInputs(['bloodmagic:reagentwater', 'bloodmagic:reagentlava', 'bloodmagic:reagentair', 'bloodmagic:reagentgrowth', '8x botania:terrasteel_ingot'])
-        .inputFluids('gtceu:potent_mana 32000')
+        .inputFluids('gtceu:potent_mana 8000')
         .inputFluids('gtceu:source_oils 4000')
         .itemOutputs('8x botania:elementium_ingot')
         .EUt(GTValues.VA[GTValues.EV])
         .duration(184)
     event.recipes.gtceu.essence_reactor('dragonstone_what')
         .itemInputs(['bloodmagic:reagentwater', 'bloodmagic:reagentlava', 'bloodmagic:reagentair', 'bloodmagic:reagentgrowth', '8x botania:mana_diamond'])
-        .inputFluids('gtceu:potent_mana 32000')
+        .inputFluids('gtceu:potent_mana 8000')
         .inputFluids('gtceu:source_oils 4000')
         .itemOutputs('8x botania:dragonstone')
         .EUt(GTValues.VA[GTValues.EV])
         .duration(184)
     event.recipes.gtceu.essence_reactor('pixedust_what')
         .itemInputs(['bloodmagic:reagentwater', 'bloodmagic:reagentlava', 'bloodmagic:reagentair', 'bloodmagic:reagentgrowth', '8x botania:mana_pearl'])
-        .inputFluids('gtceu:potent_mana 32000')
+        .inputFluids('gtceu:potent_mana 8000')
         .inputFluids('gtceu:source_oils 4000')
         .itemOutputs('8x botania:pixie_dust')
         .EUt(GTValues.VA[GTValues.EV])
@@ -248,8 +248,17 @@ ServerEvents.recipes(event => {
         .itemInputs(['3x botania:mana_string', '3x ars_nouveau:magebloom_fiber', 'cosmiccore:rune_conjunction_arklythar'])
         .inputFluids('gtceu:crude_source_oils 50')
         .itemOutputs('4x botania:manaweave_cloth')
+        .circuit(1)
         .duration(20)
         .EUt(GTValues.VA[GTValues.LV]);
+    event.recipes.gtceu.assembler('manaweave_assemble_improved')
+        .notConsumable('cosmiccore:rune_conjunction_arklythar')
+        .itemInputs(['3x botania:mana_string', '3x ars_nouveau:magebloom_fiber'])
+        .inputFluids('gtceu:potent_mana 250')
+        .itemOutputs('4x botania:manaweave_cloth')
+        .circuit(2)
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.HV]);
     //Petal Apothecary Mossy, leaving the rest as vanilla recipes. They are gated deep into botania anyways.
     event.remove({ output: 'botania:apothecary_mossy' })
     event.shaped('botania:apothecary_mossy', [
@@ -1206,7 +1215,8 @@ ServerEvents.recipes(event => {
         M: 'gtceu:manasteel_plate',
         I: 'botania:rune_water',
         O: 'minecraft:cod',
-        U: 'minecraft:pufferfish'
+        U: 'minecraft:pufferfish',
+        P: 'malum:gilded_ring'
     })
     //Mana Lens
     event.remove({ output: 'botania:lens_normal' })
@@ -1327,7 +1337,7 @@ ServerEvents.recipes(event => {
         S: 'gtceu:wrought_iron_screw',
         D: '#forge:tools/screwdrivers',
         P: 'gtceu:wrought_iron_plate',
-        E: 'minecraft:ender_pearl',
+        E: '#forge:ender_pearls',
         L: 'gtceu:emerald_lens'
     })
     //Spark
@@ -1714,10 +1724,10 @@ ServerEvents.recipes(event => {
         'PCP',
         'DPD'
     ], {
-        T: 'botania:corporea_spark',
         P: 'gtceu:glass_plate',
         E: 'botania:ender_air_bottle',
-        V: 'botania:dragonstone'
+        C: 'botania:corporea_spark_master',
+        D: 'botania:dragonstone'
     })
     //Mana Infusion Recipes
     //Dumping this example here for mana infusions, took me a while to figure it out. Will do the same for all recipe types.
@@ -1773,21 +1783,27 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV]);
     //Mana Pearl
     event.recipes.gtceu.mana_fluidizer('gtceu:mana_pearl')
-        .itemInputs('minecraft:ender_pearl')
+        .itemInputs('#forge:ender_pearls')
         .itemOutputs('botania:mana_pearl')
-        .inputFluids(Fluid.of('gtceu:potent_mana', 500))
+        .inputFluids(Fluid.of('gtceu:potent_mana', 250))
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
     //Mana Diamond
     event.recipes.gtceu.mana_fluidizer('gtceu:mana_diamond')
         .itemInputs('gtceu:flawless_diamond_gem')
         .itemOutputs('botania:mana_diamond')
-        .inputFluids(Fluid.of('gtceu:potent_mana', 1000))
+        .inputFluids(Fluid.of('gtceu:potent_mana', 500))
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.mana_fluidizer('gtceu:mana_powder')
         .itemInputs('gtceu:electrotine_dust')
         .itemOutputs('botania:mana_powder')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 50))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.mana_fluidizer('frontiers:mana_string')
+        .itemInputs('minecraft:string')
+        .itemOutputs('botania:mana_string')
         .inputFluids(Fluid.of('gtceu:potent_mana', 50))
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);

@@ -232,6 +232,10 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('kubejs:prismatic_lens', (item, advanced, text) => {
     text.add(1, Text.of('Creates a laser energetic enough to cut metal').lightPurple())
   })
+  event.addAdvanced('gtceu:primordial_oil', (item, advanced, text) => {
+    text.add(1, Text.of('An infinitely dense blob of primal perpetuity.').lightPurple())
+    text.add(2, Text.of('Tastes like peaches.').lightPurple())
+  })
   event.addAdvanced('integrateddynamics:mechanical_squeezer', (item, advanced, text) => {
     text.add(1, Text.of('Energy Consumption was set to 0!').green())
     text.add(2, Text.of('Will run without power!').green())

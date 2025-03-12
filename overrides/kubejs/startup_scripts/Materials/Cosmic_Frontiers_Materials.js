@@ -93,10 +93,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .ore()
         .dust()
+        .blastTemp(4500)
         // .toolStats(ToolProperty.Builder.of(6.0, 7.0, 768, 3).attackSpeed(0.1).enchantability(18).build())
         .flags(
             GTMaterialFlags.NO_ORE_SMELTING,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
         )
         // .element(GTElements.get('prism_tungstensteel'))
         .iconSet(GTMaterialIconSet.getByName('starry'))
@@ -135,6 +142,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xc3434c)
         .gem()
         .ore()
+
         .iconSet(GTMaterialIconSet.getByName('utherium'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -148,9 +156,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         )
     event.create('luminescent_utherium')
         .color(0x6A40B8)
-        .gem()
+        .ingot()
         .liquid()
-        .iconSet(GTMaterialIconSet.getByName('utherium'))
+        .cableProperties(GTValues.V[GTValues.EV], 4, 16, false)
+        .iconSet(GTMaterialIconSet.getByName('starry'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -158,6 +167,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_FRAME,
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.NO_ORE_SMELTING
         )
@@ -165,7 +177,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x4614a3)
         .gem()
         .liquid()
-        .iconSet(GTMaterialIconSet.getByName('luminite'))
+        .iconSet(GTMaterialIconSet.getByName('starry'))
         .cableProperties(GTValues.V[GTValues.EV], 8, 0, false)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -212,11 +224,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 
     event.create('psi_superconductor_alpha')
-        .color(0xfc642d)
+        .color(0xff2ee3)
         .cableProperties(GTValues.V[GTValues.EV], 16, 0, true)
     event.create('psi_superconductor_beta')
         .color(0xb940ff)
-        .cableProperties(GTValues.V[GTValues.IV], 32, 0, true)
+        .cableProperties(GTValues.V[GTValues.IV], 16, 0, true)
     event.create('neodymium_praseodymium')
         .dust()
         .color(0x473147)
@@ -561,25 +573,69 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('graphene_oxide')
         .dust()
         .color(0x292929).secondaryColor(0x353836).iconSet(GTMaterialIconSet.DULL)
+
+    event.create('primordial_gas')
+        .color(0xdb3dff)
+        .gas()
     event.create('primordial_oil')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-    event.create('star_dew')
+    event.create('lofty_primordial_oil')
+        .color(0xdb3dff)
+        .liquid()
+    event.create('refined_primordial_oil')
+        .color(0xdb3dff)
+        .liquid()
+    event.create('thick_primordial_oil')
+        .color(0xdb3dff)
+        .liquid()
+    event.create('energetic_primordial_oil')
+        .color(0xdb3dff)
+        .liquid()
+    event.create('super_dense_primordial_oil')
+        .color(0xdb3dff)
+        .liquid()
+    event.create('deepdrop_primordial_oil')
+        .color(0xdb3dff)
+        .liquid()
+
+    event.create('star_dew') //Skyline Cracked Product
         .liquid()
         .color(0xa8ddff)
-    event.create('genesis_resin')
+    event.create('genesis_resin') //Refined Primordial Oil Product
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-    event.create('void_tar')
+    event.create('void_tar') //Depth Touched Primordial Oil Product
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-    event.create('ourofluid')
+    event.create('ourofluid') //Energetic Primordial Oil Product
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-    event.create('abyss_grease')
+    event.create('abyss_grease') //Thick Primordial Oil Product
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-    event.create('veltharic_slough')
+    event.create('veltharic_slough') //
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('stardust_infused_gasoline')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('cracked_cetane_boosted_diesel')
+        .liquid()
+        .color(0x03fc98)
+    event.create('starry_fuel_mixture')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
     event.create("triphenyl_phosphine")
         .liquid()
         .color(0x825991)
         .formula('P(C6H5)3')
+    event.create('illuminated_heavy_fuel_mixture')
+        .liquid()
+        .color(0xa8ddff)
+    event.create('illuminated_light_fuel_mixture')
+        .liquid()
+        .color(0x0cf0e8)
+    event.create('wispy_star_dew')
+        .gas()
+        .color(0x0cf0e8)
+    event.create('moon_stone')
+        .dust()
+        .color(0x143d30)
+
 })
 
 GTCEuStartupEvents.materialModification(event => {
@@ -599,6 +655,5 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('void_tar').setFormula('(Ɽ∞)', true)
     GTMaterials.get('abyss_grease').setFormula('(⟓∞)', true)
     GTMaterials.get('veltharic_slough').setFormula('(√◉)', true)
-
 })
 

@@ -41,5 +41,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 GTCEuStartupEvents.materialModification(event => {
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('iesnium'), () => Item.getItem('occultism:iesnium_ingot'))
     TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('iesnium'), () => Item.getItem('occultism:iesnium_block'))
-    // TagPrefix.ore['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('iesnium'), () => Item.getItem('occultism:raw_iesnium'))
+    TagPrefix.rawOre['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('iesnium'), () => Item.getItem('occultism:raw_iesnium'))
+    TagPrefix.dust['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('iesnium'), () => Item.getItem('occultism:iesnium_dust'))
 })

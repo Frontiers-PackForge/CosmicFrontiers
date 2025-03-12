@@ -269,7 +269,7 @@
   "material.gtceu.sodium_tungstate_solution": "Sodium Tungstate Solution",
   "material.gtceu.iron_hydroxide": "Iron Hydroxide",
   "material.gtceu.manganese_hydroxide": "Manganese Hydroxide",
-  "material.gtceu.sodium_molybdenum_sulfide": "Molybdenum Trisulfide",
+  "material.gtceu.sodium_molybdenum_sulfide": "Sodium Molybdenum Trisulfide",
   "material.gtceu.molybdenum_trisulfide": "Molybdenum Trisulfide",
   "material.gtceu.trioctylamine": "Trioctylamine",
   "material.gtceu.trioctylammonium_isopolytungstate": "Trioctylammonium Isopolytungstate",
@@ -448,6 +448,13 @@
   "material.gtceu.ourofluid": "Ourofluid",
   "material.gtceu.abyss_grease": "Abyss Grease",
   "material.gtceu.veltharic_slough": "Veltharic Slough",
+  "material.gtceu.stardust_infused_gasoline": "Stardust Infused Gasoline",
+  "material.gtceu.moon_stone": "Moon Stone",
+
+  
+
+
+
   "material.gtceu.rhodium_sulfate_solution": "Rhodium Sulfate Solution",
   "material.gtceu.carbon_tetrachloride": "Carbon Tetrachloride",
   "material.gtceu.nether_bioslurry": "Nether Bioslurry",
@@ -458,14 +465,10 @@
   "material.gtceu.tungsten_trioxide": "Tungsten Trioxide",
   "material.gtceu.iesnium": "Iesnium",
   "material.gtceu.tempered_iesnium": "Tempered Iesnium",
-  "material.gtceu.impure_silt": "Impure Silt",
-  "material.gtceu.silt_seperation_composite": "Silt Seperation Composite",
   "material.gtceu.highest_grade_silica": "Highest Grade Silica",
   "material.gtceu.middle_grade_silica": "Middle Grade Silica",
   "material.gtceu.europium_blended_silica": "Europium Blended Silica",
   "material.gtceu.luminent_silica": "Luminent Silica",
-  "material.gtceu.dilumixal_naquadah_doped_silicon": "Dilumixal Naquadah Doped Silicon",
-  "material.gtceu.europium_silicide": "Europium Silicide",
   "material.gtceu.trinium_metallic": "Trinium Metallic Powder",
   "material.gtceu.graphene_oxide": "Graphene Oxide",
   "material.gtceu.diamine_dichloropalladium": "Diamine Dichloropalladium",
@@ -484,6 +487,11 @@
   "material.gtceu.fungal_nutrient_waste": "Fungal Nutrient Waste",
   "material.gtceu.triphenyl_phosphine": "Triphenyl Phosphine",
   "material.gtceu.phosphorus_trichloride": "Phosphorus Trichloride",
+
+  "material.gtceu.molybdenum_oxide": "Molybdenum(IV) Oxide",
+  "material.gtceu.ammonium_molybdate": "Ammonium Molybdate",
+  "material.gtceu.ammonium_dimolybdate": "Ammonium Dimolybdate",
+  "material.gtceu.molybdenum_trioxide": "Molybdenum Trioxide",
 
   "gtceu.industrial_stoneworks": "Industrial Stoneworks",
   "block.gtceu.industrial_stoneworks": "Industrial Stoneworks",
@@ -550,6 +558,17 @@
   "material.gtceu.luminent_silicon": "Luminent Silicon",
   "material.gtceu.naquadah_doped_silicon": "Naquadah Doped Silicon",
   "material.gtceu.dilumixal_naquadah_doped_silicon": "DiLumixal Naquadah Doped Silicon",
-  "material.gtceu.europium_silicide": "Europium Silicide"
+  "material.gtceu.europium_silicide": "Europium Silicide",
+
+    "material.gtceu.4_4_oxydianiline_pyromellitimide": "4,4-Oxydianiline-Pyromellitimide",
+    "material.gtceu.poly_amic_acid": "Poly(Amic Acid)",
+    "material.gtceu.pyromellitic_dianhydride": "Pyromellitic Dianhydride",
+    "material.gtceu.oxydianiline": "Oxydianiline",
+    "material.gtceu.aniline": "Aniline",
+    "material.gtceu.durene": "Durene",
+    "material.gtceu.ortho_xylene": "Ortho-Xylene",
+    "material.gtceu.fluorinated_ethylene_propylene": "Fluorinated Ethylene Propylene (FEP)",
+    "material.gtceu.hexafluoropropylene": "Hexafluoropropylene"
+
   
 }

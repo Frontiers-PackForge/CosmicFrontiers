@@ -77,6 +77,37 @@ ServerEvents.recipes(event => {
     'gtceu:steel_brick_casing',
     'gtceu:lp_steam_liquid_boiler'
   )
+  event.replaceInput({ output: 'gtceu:palladium_substation' },
+    'gtceu:iridium_frame',
+    'gtceu:luminescent_utherium_frame'
+  )
+  event.replaceInput({ output: 'gtceu:heat_vent' },
+    'gtceu:tantalum_carbide_plate',
+    'gtceu:titanium_carbide_plate'
+  )
+
+  event.replaceInput({ output: 'gtceu:heat_vent' },
+    'gtceu:tantalum_carbide_plate',
+    'gtceu:titanium_carbide_plate'
+  )
+
+  event.replaceInput({ output: 'gtceu:iv_extruder' },
+    'gtceu:rtm_alloy_quadruple_wire',
+    'cosmiccore:prismatic_tungstensteel_quadruple_wire'
+  )
+
+  event.recipes.gtceu.spooling_machine('frontiers_ethersteel_lattice')
+    .itemInputs(['gtceu:carbon_fiber_mesh', '8x gtceu:fine_galvanized_ethersteel_wire'])
+    .inputFluids('gtceu:polytetrafluoroethylene 144')
+    .itemOutputs('kubejs:carbon_ethersteel_lattice')
+    .duration(220)
+    .EUt(GTValues.VA[GTValues.HV]);
+  event.recipes.gtceu.spooling_machine('sylvan_nano_lattice')
+    .itemInputs(['gtceu:graphene_foil', 'botania:pixie_dust'])
+    .inputFluids('cosmiccore:prisma 250')
+    .itemOutputs('kubejs:resplendent_sylvan_nanolattice')
+    .duration(220)
+    .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.alloy_smelter('firebrick_masonry')
     .itemInputs('gtceu:compressed_fireclay')
     .itemInputs('gtceu:coal_dust')
@@ -109,11 +140,30 @@ ServerEvents.recipes(event => {
     .itemOutputs('create:andesite_alloy')
     .duration(100)
     .EUt(8);
+  event.remove('gtceu:macerator/macerate_nether_bricks')
   event.recipes.gtceu.macerator('gtceu:nether_brick_dust_shred')
     .itemInputs('minecraft:nether_bricks')
     .itemOutputs('gtceu:nether_brick_dust_dust')
     .duration(40)
     .EUt(16);
+  event.recipes.gtceu.macerator('frontiers:moonstone_dust_shred')
+    .itemInputs('ad_astra:moon_stone')
+    .itemOutputs('gtceu:moon_stone_dust')
+    .duration(40)
+    .EUt(2);
+  event.recipes.gtceu.macerator('frontiers:moonstone_dust_shred_cobble')
+    .itemInputs('ad_astra:moon_cobblestone')
+    .itemOutputs('gtceu:moon_stone_dust')
+    .duration(40)
+    .EUt(2);
+  event.recipes.gtceu.centrifuge('frontiers:moonstone_dust_centrifuge_resources')
+    .itemInputs('gtceu:moon_stone_dust')
+    .itemOutputs('gtceu:silicon_dioxide_dust')
+    .chancedOutput('gtceu:bauxite_dust', 3500, 0)
+    .chancedOutput('croptopia:cheese', 1500, 0)
+    .outputFluids('gtceu:helium 120')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.MV] * 0.75);
   event.remove({ id: 'gtceu:compressor/compressed_fireclay' })
   event.recipes.gtceu.compressor('compressed_fireclay')
     .itemInputs('cosmiccore:fireclay_ball')
@@ -126,10 +176,10 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:create_mixer/concrete_from_marble' })
   event.remove({ id: 'gtceu:shaped/casing_primitive_bricks' })
   event.recipes.gtceu.fluid_solidifier('firebricks')
-    .itemInputs('8x gtceu:firebrick')
+    .itemInputs('6x gtceu:firebrick')
     .inputFluids('gtceu:concrete 500')
     .itemOutputs('gtceu:firebricks')
-    .duration(100)
+    .duration(60)
     .EUt(12)
   event.remove({ output: 'gtceu:fireclay_dust' })
   event.recipes.gtceu.forming_press('waxed_leather_forming')
@@ -235,13 +285,6 @@ ServerEvents.recipes(event => {
     .duration(416)
     .EUt(GTValues.VA[GTValues.LV]);
 
-  event.recipes.gtceu.wiremill('gtceu:manasteel_fine_wire_recipe')
-    .itemInputs('gtceu:manasteel_single_wire')
-    .itemOutputs('4x gtceu:fine_manasteel_wire')
-    .duration(26)
-    .EUt(GTValues.VA[GTValues.LV]);
-
-
   event.recipes.gtceu.bender('gtceu:manasteel_plate')
     .itemInputs('botania:manasteel_ingot')
     .itemOutputs('gtceu:manasteel_plate')
@@ -342,33 +385,27 @@ ServerEvents.recipes(event => {
     .blastFurnaceTemp(1700)
     .EUt(GTValues.VA[GTValues.MV]);
   event.recipes.gtceu.assembler('alpha_supercon')
-    .itemInputs(['16x gtceu:virtue_meld_foil', '4x gtceu:titanium_tiny_fluid_pipe', '4x gtceu:uranium_triplatinum_double_wire', 'gtceu:hv_electric_pump'])
+    .itemInputs(['16x gtceu:galvanized_ethersteel_foil', '4x gtceu:titanium_tiny_fluid_pipe', '4x gtceu:luminescent_utherium_double_wire', 'gtceu:hv_electric_pump'])
     .itemOutputs('16x gtceu:psi_superconductor_alpha_single_wire')
-    .inputFluids('gtceu:liquid_helium 1000')
+    .inputFluids('gtceu:liquid_helium 250')
     .duration(400)
     .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.assembler('beta_supercon')
-    .itemInputs(['16x gtceu:virtue_meld_foil', '4x gtceu:tungsten_steel_tiny_fluid_pipe', '4x gtceu:samarium_iron_arsenic_oxide_double_wire', 'gtceu:ev_electric_pump'])
+    .itemInputs(['16x gtceu:virtue_meld_foil', '4x gtceu:tungsten_steel_tiny_fluid_pipe', '4x gtceu:virtue_meld_double_wire', 'gtceu:ev_electric_pump'])
     .itemOutputs('16x gtceu:psi_superconductor_beta_single_wire')
-    .inputFluids('gtceu:liquid_helium 1000')
+    .inputFluids('gtceu:liquid_helium 250')
     .duration(400)
     .EUt(GTValues.VA[GTValues.IV]);
-  //IV MOTOR
-  event.remove({ output: 'gtceu:iv_electric_motor' })
-  event.recipes.gtceu.assembler('gtceu:iv_electric_motor')
-    .itemInputs(['2x gtceu:tungsten_steel_rod', '2x gtceu:tungsten_double_cable', '4x gtceu:virtue_meld_double_wire', 'gtceu:magnetic_neodymium_praseodymium_rod'])
-    .itemOutputs('gtceu:iv_electric_motor')
-    .duration(100)
-    .EUt(GTValues.VA[GTValues.LV]);
-  event.shaped('gtceu:iv_electric_motor', [
-    'CWR',
-    'WMW',
-    'RWC'
+  event.shaped('gtceu:large_lithographic_processor', [
+    'PRP',
+    'GCG',
+    'BBB'
   ], {
-    C: 'gtceu:tungsten_double_cable',
-    W: 'gtceu:virtue_meld_double_wire',
-    M: 'gtceu:magnetic_neodymium_praseodymium_rod',
-    R: 'gtceu:tungsten_steel_rod'
+    P: 'gtceu:double_hsse_plate',
+    R: 'gtceu:iv_voltage_coil',
+    G: 'gtceu:iv_conveyor_module',
+    C: 'gtceu:iv_aio_lithography_processor',
+    B: 'gtceu:plascrete'
   })
   event.shaped('gtceu:steam_mixing_vessel', [
     'PRP',
@@ -538,6 +575,12 @@ ServerEvents.recipes(event => {
     .itemOutputs('gtceu:mv_machine_hull')
     .duration(50)
     .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.spooling_machine('frontiers:spirit_fabric_hv')
+    .itemInputs(['botania:manaweave_cloth', 'malum:aerial_spirit'])
+    .inputFluids('gtceu:styrene 288')
+    .itemOutputs('malum:spirit_fabric')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.HV]);
   //MOTOR
   event.remove({ id: 'gtceu:assembler/electric_motor_mv' })
   event.remove({ id: 'gtceu:shaped/electric_motor_mv' })
@@ -653,7 +696,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:assembler/electric_piston_hv' })
   event.remove({ id: 'gtceu:shaped/electric_piston_hv' })
   event.recipes.gtceu.assembler('gtceu:new_hv_piston')
-    .itemInputs(['2x gtceu:terrasteel_single_cable', '2x gtceu:galvanized_ethersteel_rod', '3x gtceu:galvanized_ethersteel_plating', 'gtceu:hv_electric_motor', 'gtceu:small_galvanized_ethersteel_gear'])
+    .itemInputs(['2x gtceu:terrasteel_single_cable', '2x gtceu:galvanized_ethersteel_rod', '3x gtceu:galvanized_ethersteel_plate', 'gtceu:hv_electric_motor', 'gtceu:small_galvanized_ethersteel_gear'])
     .itemOutputs('gtceu:hv_electric_piston')
     .duration(100)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -668,7 +711,7 @@ ServerEvents.recipes(event => {
     C: 'gtceu:terrasteel_single_cable',
     M: 'gtceu:hv_electric_motor'
   })
-  //ROBOARM (TODO)
+  //ROBOARM
   event.remove({ id: 'gtceu:shaped/robot_arm_hv' })
   event.remove({ id: 'gtceu:assembler/robot_arm_hv' })
   event.recipes.gtceu.assembler('gtceu:new_hv_robot_arm')
@@ -687,7 +730,7 @@ ServerEvents.recipes(event => {
     C: 'gtceu:terrasteel_single_cable',
     M: '#gtceu:circuits/hv'
   })
-  //EV MACHINE HULL AND CASING
+  //EV MACHINE HULL AND CASING AND PARTS
   event.remove({ output: 'gtceu:ev_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:ev_machine_casing_assembler')
     .itemInputs(['4x gtceu:double_titanium_plate', '4x gtceu:luminescent_utherium_plate'])
@@ -703,26 +746,176 @@ ServerEvents.recipes(event => {
     A: 'gtceu:double_titanium_plate',
     M: 'gtceu:luminescent_utherium_plate',
     W: '#forge:tools/wrenches'
-  }
-  )
-  //IV MACHINE HULL AND CASING
+  })
+  //EV Hulls
+  event.remove({ id: 'gtceu:shaped/ev_machine_hull' })
+  event.remove({ id: 'gtceu:assembler/hull_ev' })
+  event.shaped('gtceu:ev_machine_hull', [
+    'PMP',
+    'WCW',
+    'PSP'
+  ], {
+    P: 'kubejs:carbon_ethersteel_lattice',
+    M: 'gtceu:double_luminescent_utherium_plate',
+    W: 'gtceu:black_steel_single_cable',
+    C: 'gtceu:ev_machine_casing',
+    S: 'gtceu:nichrome_spring'
+  })
+  event.recipes.gtceu.assembler('gtceu:assembler_hull_ev')
+    .itemInputs(['2x gtceu:black_steel_single_cable', 'gtceu:ev_machine_casing', '2x kubejs:carbon_ethersteel_lattice'])
+    .inputFluids('gtceu:polytetrafluoroethylene 288')
+    .itemOutputs('gtceu:ev_machine_hull')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  //START HERE
+  event.remove({ id: 'gtceu:assembler/electric_motor_ev' })
+  event.remove({ id: 'gtceu:shaped/electric_motor_ev' })
+  event.recipes.gtceu.assembler('gtceu:new_ev_motor')
+    .itemInputs(['2x gtceu:black_steel_quadruple_cable', '2x gtceu:luminescent_utherium_rod', 'gtceu:magnetic_neodymium_rod', '4x gtceu:nichrome_quadruple_wire'])
+    .itemOutputs('gtceu:ev_electric_motor')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:ev_electric_motor', [
+    'CWR',
+    'WMW',
+    'RWC'
+  ], {
+    C: 'gtceu:black_steel_quadruple_cable',
+    R: 'gtceu:luminescent_utherium_rod',
+    M: 'gtceu:magnetic_neodymium_rod',
+    W: 'gtceu:nichrome_quadruple_wire'
+  })
+  //PISTON
+  event.remove({ id: 'gtceu:assembler/electric_piston_ev' })
+  event.remove({ id: 'gtceu:shaped/electric_piston_ev' })
+  event.recipes.gtceu.assembler('gtceu:new_ev_piston')
+    .itemInputs(['2x gtceu:black_steel_single_cable', '2x gtceu:luminescent_utherium_rod', '3x gtceu:luminescent_utherium_plate', 'gtceu:ev_electric_motor', 'gtceu:small_luminescent_utherium_gear'])
+    .itemOutputs('gtceu:ev_electric_piston')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:ev_electric_piston', [
+    'PPP',
+    'CRR',
+    'CMG'
+  ], {
+    P: 'gtceu:luminescent_utherium_plate',
+    R: 'gtceu:luminescent_utherium_rod',
+    G: 'gtceu:small_luminescent_utherium_gear',
+    C: 'gtceu:black_steel_single_cable',
+    M: 'gtceu:ev_electric_motor'
+  })
+  //ROBOARM
+  event.remove({ id: 'gtceu:shaped/robot_arm_ev' })
+  event.remove({ id: 'gtceu:assembler/robot_arm_ev' })
+  event.recipes.gtceu.assembler('gtceu:new_ev_robot_arm')
+    .itemInputs(['3x gtceu:black_steel_single_cable', '2x gtceu:luminescent_utherium_rod', '2x gtceu:ev_electric_motor', 'gtceu:ev_electric_piston', '#gtceu:circuits/ev'])
+    .itemOutputs('gtceu:ev_robot_arm')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:ev_robot_arm', [
+    'CCC',
+    'RGR',
+    'PMG'
+  ], {
+    P: 'gtceu:ev_electric_piston',
+    R: 'gtceu:ev_electric_motor',
+    G: 'gtceu:luminescent_utherium_rod',
+    C: 'gtceu:black_steel_single_cable',
+    M: '#gtceu:circuits/ev'
+  })
+  //IV MACHINE PARTS
   event.remove({ output: 'gtceu:iv_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:iv_machine_casing_assembler')
-    .itemInputs(['4x gtceu:double_tungsten_steel_plate', '4x gtceu:virtue_meld_plate'])
+    .itemInputs(['4x gtceu:double_platinum_plate', '4x gtceu:virtue_meld_plate'])
     .itemOutputs('gtceu:iv_machine_casing')
-    .circuit(8)
     .duration(40)
+    .circuit(8)
     .EUt(GTValues.VA[GTValues.LV]);
   event.shaped('gtceu:iv_machine_casing', [
     'AMA',
     'MWM',
     'AMA'
   ], {
-    A: 'gtceu:double_tungsten_steel_plate',
+    A: 'gtceu:double_platinum_plate',
     M: 'gtceu:virtue_meld_plate',
     W: '#forge:tools/wrenches'
-  }
-  )
+  })
+  event.remove({ id: 'gtceu:shaped/iv_machine_hull' })
+  event.remove({ id: 'gtceu:assembler/hull_iv' })
+  event.shaped('gtceu:iv_machine_hull', [
+    'PMP',
+    'WCW',
+    'PSP'
+  ], {
+    P: 'kubejs:resplendent_sylvan_nanolattice',
+    M: 'gtceu:double_virtue_meld_plate',
+    W: 'gtceu:tungsten_steel_single_cable',
+    C: 'gtceu:iv_machine_casing',
+    S: 'cosmiccore:prismatic_tungstensteel_spring'
+  })
+  event.recipes.gtceu.assembler('gtceu:assembler_hull_iv')
+    .itemInputs(['2x gtceu:tungsten_steel_single_cable', 'gtceu:iv_machine_casing', '2x kubejs:resplendent_sylvan_nanolattice'])
+    .inputFluids('gtceu:polytetrafluoroethylene 576')
+    .itemOutputs('gtceu:iv_machine_hull')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  //START HERE
+  //MOTOR
+  event.remove({ id: 'gtceu:assembler/electric_motor_iv' })
+  event.remove({ id: 'gtceu:shaped/electric_motor_iv' })
+  event.recipes.gtceu.assembler('gtceu:new_iv_motor')
+    .itemInputs(['2x gtceu:elementium_quadruple_cable', '2x cosmiccore:prismatic_tungstensteel_rod', 'gtceu:magnetic_neodymium_praseodymium_rod', '4x gtceu:virtue_meld_octal_wire'])
+    .itemOutputs('gtceu:iv_electric_motor')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:iv_electric_motor', [
+    'CWR',
+    'WMW',
+    'RWC'
+  ], {
+    C: 'gtceu:elementium_quadruple_cable',
+    R: 'cosmiccore:prismatic_tungstensteel_rod',
+    M: 'gtceu:magnetic_neodymium_praseodymium_rod',
+    W: 'gtceu:virtue_meld_octal_wire'
+  })
+  //PISTON
+  event.remove({ id: 'gtceu:assembler/electric_piston_iv' })
+  event.remove({ id: 'gtceu:shaped/electric_piston_iv' })
+  event.recipes.gtceu.assembler('gtceu:new_iv_piston')
+    .itemInputs(['2x gtceu:elementium_single_cable', '2x cosmiccore:prismatic_tungstensteel_rod', '3x cosmiccore:prismatic_tungstensteel_plate', 'gtceu:iv_electric_motor', 'cosmiccore:small_prismatic_tungstensteel_gear'])
+    .itemOutputs('gtceu:iv_electric_piston')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:iv_electric_piston', [
+    'PPP',
+    'CRR',
+    'CMG'
+  ], {
+    P: 'cosmiccore:prismatic_tungstensteel_plate',
+    R: 'cosmiccore:prismatic_tungstensteel_rod',
+    G: 'cosmiccore:small_prismatic_tungstensteel_gear',
+    C: 'gtceu:elementium_single_cable',
+    M: 'gtceu:iv_electric_motor'
+  })
+  //ROBOARM
+  event.remove({ id: 'gtceu:shaped/robot_arm_iv' })
+  event.remove({ id: 'gtceu:assembler/robot_arm_iv' })
+  event.recipes.gtceu.assembler('gtceu:new_iv_robot_arm')
+    .itemInputs(['3x gtceu:elementium_single_cable', '2x cosmiccore:prismatic_tungstensteel_rod', '2x gtceu:iv_electric_motor', 'gtceu:iv_electric_piston', '#gtceu:circuits/iv'])
+    .itemOutputs('gtceu:iv_robot_arm')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('gtceu:iv_robot_arm', [
+    'CCC',
+    'RGR',
+    'PMG'
+  ], {
+    P: 'gtceu:iv_electric_piston',
+    R: 'gtceu:iv_electric_motor',
+    G: 'cosmiccore:prismatic_tungstensteel_rod',
+    C: 'gtceu:elementium_single_cable',
+    M: '#gtceu:circuits/iv'
+  })
   //Crafting Recipes
   //Wrought Iron Base Molds 'gtceu:mv_machine_casing'
   event.remove({ output: 'gtceu:empty_mold' })
@@ -795,11 +988,6 @@ ServerEvents.tags('block', event => {
 // })
 
 ServerEvents.recipes(event => {
-  event.recipes.gtceu.macerator('gtceu:obsidian_dust')
-    .itemInputs('minecraft:obsidian')
-    .itemOutputs('gtceu:obsidian_dust')
-    .duration(600)
-    .EUt(GTValues.VA[GTValues.LV]);
 
 
   event.remove({ id: 'gtceu:mixer/rose_gold' })
@@ -899,8 +1087,23 @@ ServerEvents.recipes(event => {
     .itemOutputs('gtceu:gold_dust')
     .duration(200)
     .EUt(GTValues.VA[GTValues.LV]);
-
-
+  event.remove({ id: 'gtceu:electric_blast_furnace/blast_tungsten_steel' })
+  event.recipes.gtceu.electric_blast_furnace('tungstensteel_poor')
+    .itemInputs('gtceu:tungsten_steel_dust')
+    .itemOutputs('gtceu:hot_tungsten_steel_ingot')
+    .duration(1000)
+    .blastFurnaceTemp(4000)
+    .circuit(1)
+    .EUt(GTValues.VA[GTValues.EV]);
+  event.remove({ id: 'gtceu:electric_blast_furnace/blast_tungsten_steel_gas' })
+  event.recipes.gtceu.electric_blast_furnace('tungstensteel_good')
+    .itemInputs('gtceu:tungsten_steel_dust')
+    .inputFluids('gtceu:helium 100')
+    .itemOutputs('gtceu:hot_tungsten_steel_ingot')
+    .duration(670)
+    .blastFurnaceTemp(4000)
+    .circuit(2)
+    .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.mixer('gtceu:mixer/netherite_alloy')
     .itemInputs('2x gtceu:netherite_scrap_dust')
     .itemInputs('2x gtceu:rose_gold_dust')
@@ -983,6 +1186,20 @@ ServerEvents.recipes(event => {
     let springType = tierSpring[index]
     let coilType = coilTier[index]
     let lamType = laminatorTier[index]
+    if (Item.exists(`cosmiccore:${tier}_wireless_charger`)) {
+      event.shaped(`cosmiccore:${tier}_wireless_charger`, [
+        'CRC',
+        'EHS',
+        'ZCZ'
+      ], {
+        E: `gtceu:${tier}_emitter`,
+        S: `gtceu:${tier}_sensor`,
+        R: `cosmiccore:${tier}_radio_module`,
+        C: `#gtceu:circuits/${tier}`,
+        H: `gtceu:${tier}_machine_hull`,
+        Z: `gtceu:${cableType}_single_cable`
+      })
+    }
     event.shaped(`gtceu:${tier}_flora_nurturer`, [
       'CAC',
       'BHB',
@@ -1032,8 +1249,8 @@ ServerEvents.recipes(event => {
       C: `#gtceu:circuits/${tier}`,
       H: `gtceu:${tier}_machine_hull`,
       Z: `gtceu:${cableType}_single_cable`
-    }
-    )
+    })
+
     event.shaped(`gtceu:${tier}_laminator`, [
       'CAC',
       'BHB',
@@ -1137,7 +1354,7 @@ ServerEvents.recipes(event => {
   ], {
     P: 'gtceu:titanium_carbide_plate',
     C: '#gtceu:circuits/luv',
-    W: 'gtceu:uranium_triplatinum_quadruple_wire',
+    W: 'gtceu:elementium_quadruple_wire',
     F: 'gtceu:ev_alloy_smelter'
   })
   //Coils-new
@@ -1214,6 +1431,39 @@ ServerEvents.recipes(event => {
     .itemOutputs('gtceu:iv_voltage_coil')
     .duration(200)
     .EUt(GTValues.VA[GTValues.IV] / 2);
+
+
+  //Radio Modules (Too lazy to do a ForEach)
+  event.recipes.gtceu.assembler('radio_module_hv')
+    .itemInputs(['gtceu:hv_sensor', 'gtceu:hv_emitter', 'gtceu:stainless_steel_frame', '2x gtceu:galvanized_ethersteel_double_cable', '#gtceu:circuits/hv'])
+    .itemOutputs('cosmiccore:hv_radio_module')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.HV] / 2);
+  event.recipes.gtceu.assembler('radio_module_ev')
+    .itemInputs(['gtceu:ev_sensor', 'gtceu:ev_emitter', 'gtceu:titanium_frame', '2x gtceu:black_steel_double_cable', '#gtceu:circuits/ev'])
+    .itemOutputs('cosmiccore:ev_radio_module')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.EV] / 2);
+  event.recipes.gtceu.assembler('radio_module_iv')
+    .itemInputs(['gtceu:iv_sensor', 'gtceu:iv_emitter', 'gtceu:tungsten_steel_frame', '2x gtceu:platinum_double_cable', '#gtceu:circuits/iv'])
+    .itemOutputs('cosmiccore:iv_radio_module')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.IV] / 2);
+  event.recipes.gtceu.assembler('radio_module_luv')
+    .itemInputs(['gtceu:luv_sensor', 'gtceu:luv_emitter', 'gtceu:hssg_frame', '2x gtceu:niobium_titanium_double_cable', '#gtceu:circuits/luv'])
+    .itemOutputs('cosmiccore:luv_radio_module')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.LuV] / 2);
+  event.recipes.gtceu.assembler('radio_module_zpm')
+    .itemInputs(['gtceu:zpm_sensor', 'gtceu:zpm_emitter', 'gtceu:neutronite_frame', '2x gtceu:naquadah_double_cable', '#gtceu:circuits/zpm'])
+    .itemOutputs('cosmiccore:zpm_radio_module')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.ZPM] / 2);
+  event.recipes.gtceu.assembler('radio_module_uv')
+    .itemInputs(['gtceu:uv_sensor', 'gtceu:uv_emitter', 'cosmiccore:ichorium_frame', '2x cosmiccore:living_igniclad_double_cable', '#gtceu:circuits/uv'])
+    .itemOutputs('cosmiccore:uv_radio_module')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.UV] / 2);
 
 })
 

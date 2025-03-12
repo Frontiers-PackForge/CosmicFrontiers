@@ -191,7 +191,7 @@ ServerEvents.recipes(event => {
     'occultism:miner_foliot_unspecialized'
   )
   event.recipes.occultism.miner(
-    Item.of('gtceu:raw_iesnium').withChance(75),
+    Item.of('occultism:raw_iesnium').withChance(75),
     'occultism:iesnium_pickaxe'
   )
   event.recipes.occultism.miner(

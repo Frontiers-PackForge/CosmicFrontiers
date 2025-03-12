@@ -180,7 +180,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('5x gtceu:banded_iron_dust', 3000, 500)
         .chancedOutput('2x gtceu:quicklime_dust', 700, 250)
         .chancedOutput('5x gtceu:alumina_dust', 1500, 400)
-        .outputFluids('gtceu:water 2000')
+        .outputFluids('minecraft:water 2000')
         .duration(640)
         .EUt(GTValues.VA[GTValues.MV]);
 

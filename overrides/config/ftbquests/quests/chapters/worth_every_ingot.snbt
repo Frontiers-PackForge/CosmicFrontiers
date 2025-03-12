@@ -9,10 +9,8 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"2AF737CA4D527559"
-				"0CE1B054263D0C44"
-			]
+			dependencies: ["2AF737CA4D527559"]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "635C885360A8A8A9"
 			size: 2.0d

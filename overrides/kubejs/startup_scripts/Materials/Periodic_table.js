@@ -7,7 +7,7 @@ const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store
 const $BlastProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty')
 const $GemProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.GemProperty');
 const $oreProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty');
-
+const $MaterialFlags = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
 
 
 GTCEuStartupEvents.materialModification(event => {
@@ -17,6 +17,9 @@ GTCEuStartupEvents.materialModification(event => {
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     
+    
+    GTMaterials.Carbon.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    GTMaterials.Carbon.addFlags($MaterialFlags.GENERATE_ROD, $MaterialFlags.GENERATE_LONG_ROD);
 
     //Netherstar lmfao
     // GTMaterials.NetherStar.setProperty(PropertyKey.GEM, new $GemProperty());
@@ -194,7 +197,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Selenium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     addFluid(GTMaterials.Selenium, $FluidStorageKeys.LIQUID);
 
-
+    addFluid(GTMaterials.Salt, $FluidStorageKeys.LIQUID);
 })
 
 

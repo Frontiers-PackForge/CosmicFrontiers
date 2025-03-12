@@ -265,6 +265,75 @@
 			x: -2.0d
 			y: -1.0d
 		}
+		{
+			id: "2D906E829A64AF69"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 3302CF516C57AC40"
+					elevate_perms: true
+					id: "13AD72A59765E2D6"
+					silent: true
+					title: "Clogrum"
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/ftbquests change_progress @s complete 3EF7D47E41C41475"
+					elevate_perms: true
+					exclude_from_claim_all: true
+					id: "0FA7B5E1755A396A"
+					ignore_reward_blocking: true
+					silent: true
+					title: "Org Leachate Skip"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 38032C6144C06B2B"
+					elevate_perms: true
+					id: "28501756983157CC"
+					silent: true
+					title: "MRE Leachate Skip"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 3B6079B88AB61576"
+					elevate_perms: true
+					id: "598739DE0B1A6F3D"
+					silent: true
+					title: "MRE Chlorides Skip"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 483EDAD71360C4C4"
+					elevate_perms: true
+					id: "7C23FD3A67098894"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 1A630507AAB765E6"
+					elevate_perms: true
+					id: "6C3BE854B150F86B"
+					silent: true
+					title: "MRE Hydroxides"
+					type: "command"
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "51764C563BD0D500"
+				item: "gtceu:neodymium_dust"
+				type: "item"
+			}]
+			title: "MRE Skip"
+			x: -1.0d
+			y: -1.0d
+		}
 	]
 	title: "&4Dev - QuestLogic"
 }

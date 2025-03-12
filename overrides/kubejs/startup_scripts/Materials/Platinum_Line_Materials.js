@@ -47,6 +47,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('(NH4)2PtCl6')
     event.create('ammonium_hexachloropalladate')
         .dust() 
         .element(GTElements.get('ammonium_hexachloropalladate'))
@@ -55,6 +56,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('(NH4)2PdCl6')
     event.create('tetraammine_palladium_chloride')
         .dust()
         .element(GTElements.get('tetraammine_palladium_chloride'))
@@ -63,6 +65,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('Pd(NH3)4Cl2')
     event.create('diamine_dichloropalladium')
         .dust()
         .element(GTElements.get('diamine_dichloropalladium'))
@@ -71,6 +74,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('Pd(NH3)2Cl2')
     event.create('insoluble_plat_group_residue')
         .dust()
         .element(GTElements.get('insoluble_plat_group_residue'))
@@ -101,6 +105,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('Rh2(SO4)3')
     event.create('zinc_sulfate')
         .dust()
         .color(0x878072).iconSet(GTMaterialIconSet.DULL)
@@ -108,6 +113,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('ZnSO4')
     event.create('crude_rhodium')
         .dust()
         .color(0x7a4b72).iconSet(GTMaterialIconSet.DULL)
@@ -115,6 +121,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('Rh?')
     event.create('sodium_hexachlororhodate')
         .dust()
         .color(0x824965).iconSet(GTMaterialIconSet.DULL)
@@ -122,6 +129,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('Na3RhCl6')
     event.create('sodium_ruthenate_perosomate')
         .liquid()
         .color(0x414d54).iconSet(GTMaterialIconSet.DULL)
@@ -129,6 +137,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('(RuO4)(OsO4)(NaOH)(NaCl)(H2O)')
     event.create('ruthenium_osmium_tetroxides')
         .liquid()
         .color(0x364a5c).iconSet(GTMaterialIconSet.DULL)
@@ -136,6 +145,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('(RuO4)(OsO4)(NaOH)(NaCl)(H2O)')
     event.create('chlororuthenic_acid_osmium_tetroxide_solution')
         .liquid()
         .color(0x436c91).iconSet(GTMaterialIconSet.DULL)
@@ -143,6 +153,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('(3RuO4)(4OsO4)(2NaOH)(2NaCl)(14H2O)')
     event.create('impure_osmium_tetroxide')
         .dust()
         .color(0x496287).iconSet(GTMaterialIconSet.DULL)
@@ -150,6 +161,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('(OsO4)(NaCl)')
     event.create('chlororuthenic_acid')
         .liquid()
         .color(0x415953).iconSet(GTMaterialIconSet.DULL)
@@ -164,6 +176,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('(NH4)2RuCl6')
     event.create('sodium_osmate')
         .dust()
         .color(0x464d9e).iconSet(GTMaterialIconSet.DULL)
@@ -171,6 +184,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('Na2OsO2(OH)4')
     event.create('tetraammine_osmyl_chloride')
         .dust()
         .color(0xE9FFA7).iconSet(GTMaterialIconSet.DULL)
@@ -178,6 +192,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('(NH3)4(OsO2)Cl2')
     event.create('chloroiridic_acid')
         .liquid()
         .color(0xE9FFA7).iconSet(GTMaterialIconSet.DULL)
@@ -280,6 +295,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('CCl4')
     event.create('sodium_acetate')
         .dust()
         .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
@@ -287,6 +303,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('CH3COONa')
 
 })
 

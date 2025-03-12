@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'torchmaster:frozen_pearl' })
 	event.recipes.gtceu.chemical_bath('torchmaster:frozen_pearl')
 		.itemInputs(
-			'1x minecraft:ender_pearl'
+			'1x #forge:ender_pearls'
 		)
 		.inputFluids(
 			Fluid.of('gtceu:ice', 576)

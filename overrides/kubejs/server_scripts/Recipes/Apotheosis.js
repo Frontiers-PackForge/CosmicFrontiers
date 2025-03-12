@@ -4,6 +4,8 @@ ServerEvents.recipes(event => {
 
 
     event.remove({ id: 'apotheosis:hellshelf' })
+
+    
     event.remove({ output: 'apotheosis:hellshelf' })
     event.remove({ output: 'apotheosis:seashelf' })
     event.remove({ output: 'apotheosis:dormant_deepshelf' })
@@ -20,7 +22,7 @@ ServerEvents.recipes(event => {
         A: 'cosmiccore:rune_slate_khoruth',
         R: 'cosmiccore:rune_slate_tylomir'
     })
-    event.shaped('apotheosis:hellshelf', [
+    event.shaped('apotheosis:dormant_deepshelf', [
         'LWL',
         'RBR',
         'LWL'

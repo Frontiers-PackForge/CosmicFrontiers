@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
         .duration(390)
         .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.mixer('gtceu:mixer/raw_mana_crystal_slurry')
-        .itemInputs('2x botania:mana_diamond')
+        .itemInputs('botania:mana_diamond')
         .inputFluids('gtceu:sulfuric_acid 1000')
         .inputFluids('minecraft:water 2000')
         .outputFluids('gtceu:raw_mana_crystal_slurry 3000')
@@ -49,9 +49,9 @@ ServerEvents.recipes(event => {
         .duration(120)
         .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.chemical_dehydrator('gtceu:chemical_dehydrator/terrasteel_dust')
-        .itemInputs('gtceu:manasteel_dust')
+        .itemInputs(['gtceu:manasteel_dust','botania:mana_powder'])
         .inputFluids('gtceu:unstable_terrasteel 1000')
-        .itemOutputs('gtceu:terrasteel_dust')
+        .itemOutputs('2x gtceu:terrasteel_dust')
         .outputFluids('gtceu:chlorine 500')
         .duration(120)
         .EUt(GTValues.VA[GTValues.MV]);
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:terrasteel_dust')
         .itemOutputs('botania:terrasteel_ingot')
         .blastFurnaceTemp(1800)
-        .duration(2950)
+        .duration(2550)
         .circuit(1)
         .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.electric_blast_furnace('gtceu:ebf/terrasteel_ingot_recipe_good')
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:potent_mana 1000')
         .itemOutputs('botania:terrasteel_ingot')
         .blastFurnaceTemp(1800)
-        .duration(2400)
+        .duration(2000)
         .circuit(2)
         .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.electric_blast_furnace('manasteel_ebf_return_recipe')

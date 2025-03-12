@@ -157,6 +157,17 @@ ServerEvents.recipes(event => {
             B: 'ars_nouveau:source_gem_block',
         }
     )
+    event.shaped('ars_nouveau:relay_splitter', [
+        'AGA',
+        'ABA',
+        'AGA'
+    ],
+        {
+            A: 'gtceu:rose_gold_rod',
+            B: 'ars_nouveau:source_gem_block',
+            G: 'gtceu:glass_plate'
+        }
+    )
     event.remove({ output: 'ars_nouveau:imbuement_chamber' })
     event.shaped('ars_nouveau:imbuement_chamber', [
         'ARA',

@@ -14,8 +14,8 @@ ServerEvents.recipes(event => {
         .outputFluids(`gtceu:fluorine 6000`)
         .outputFluids(`gtceu:flinak 1000`)
         .itemOutputs('gtceu:plutonium_dust')
-        .itemOutputs('gtceu:neptunium_dust')
         .chancedOutput(`gtceu:uranium_dust`, 500, 500)
+        .itemOutputsRanged('gtceu:neptunium_dust', 2, 4)
         .itemOutputsRanged('gtceu:plutonium_dust', 1, 2)
         .itemOutputsRanged('gtceu:americium_dust', 1, 2)
         .chancedOutput(`gtceu:americium_dust`, 3500, 1500)
@@ -88,8 +88,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.EV]);
         event.recipes.gtceu.molten_salt_reactor(`${tier}_salt_reaction_breeder`)
             .inputFluids(`gtceu:${tier}_fuel_salt 1000`)
-            .outputFluids(`gtceu:superheated_${tier}_fuel_salt 250`)
-            .outputFluids(`gtceu:superheated_waste_${tier}_fuel_salt 750`)
+            .outputFluids([`gtceu:superheated_${tier}_fuel_salt 250`,`gtceu:superheated_waste_${tier}_fuel_salt 750`])
             .circuit(2)
             .duration(120)
             .EUt(GTValues.VA[GTValues.EV]);
