@@ -61,6 +61,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'gtceu:firebrick' })
   event.remove({ output: 'gtceu:flint_knife' })
   event.remove({ id: 'emi:crafting/repairing/gtceu/flint_knife' })
+  event.remove({ id: 'gtceu:centrifuge/rare_earth_separation' })
 
   event.replaceInput(
     { output: 'gtceu:hp_steam_solar_boiler' },
@@ -80,6 +81,10 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'gtceu:palladium_substation' },
     'gtceu:iridium_frame',
     'gtceu:luminescent_utherium_frame'
+  )
+  event.replaceInput({ output: 'gtceu:sturdy_machine_casing' },
+    'gtceu:europium_frame',
+    'gtceu:hssg_frame'
   )
   event.replaceInput({ output: 'gtceu:heat_vent' },
     'gtceu:tantalum_carbide_plate',
