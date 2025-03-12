@@ -192,6 +192,18 @@ ServerEvents.recipes(event => {
               R: 'gtceu:steel_ring'
 
        })
+       event.shaped('kubejs:nano_respirator', [
+              ' S ',
+              'RFR',
+              'CXC',
+       ], {
+              C: 'gtceu:mask_filter',
+              X: '#gtceu:circuits/hv',
+              F: 'kubejs:reinforced_respirator',
+              S: 'gtceu:carbon_fiber_plate',
+              R: 'gtceu:stainless_steel_ring'
+
+       })
        event.shaped('gtceu:molten_salt_reactor', [
               'CIC',
               'CPC',

@@ -56,7 +56,9 @@
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
+			description: ["Don't let the low generation fool you. Low pressure solar boiler is completely passive. Just keep it in the sun and boom, free steam."]
 			id: "0BB1B009E21A8D73"
+			subtitle: "Power of the SUN"
 			tasks: [{
 				id: "3C87619324B2DA97"
 				item: "gtceu:lp_steam_solar_boiler"
@@ -67,21 +69,16 @@
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
+			description: [
+				"The low pressure solid boiler will most likely be your first source of steam. The design is very human and very easy to use."
+				""
+				"&4DO NOT PUT WATER IN A HOT AND EMPTY BOILER"
+			]
 			id: "3B12EDE4D85AF194"
+			subtitle: "First Steam!"
 			tasks: [{
 				id: "68B89F24E990572D"
 				item: "gtceu:lp_steam_solid_boiler"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["31D607A0E640C8D8"]
-			id: "4863B9E3983A5463"
-			tasks: [{
-				id: "4AEC33B37FB4C22B"
-				item: "gtceu:lp_steam_liquid_boiler"
 				type: "item"
 			}]
 			x: -9.0d
@@ -89,40 +86,61 @@
 		}
 		{
 			dependencies: ["31D607A0E640C8D8"]
+			description: ["As the name suggests, the low pressure liquid boiler burns liquid for steam. Lava is highly recommended."]
+			id: "4863B9E3983A5463"
+			subtitle: "Liquid fuel?"
+			tasks: [{
+				id: "4AEC33B37FB4C22B"
+				item: "gtceu:lp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3B12EDE4D85AF194"]
+			description: ["Upgrades, people, upgrades! The high pressure solid boiler is a decent source of steam once you get some steel."]
 			id: "7786A4BDC9C62461"
+			subtitle: "Even more steam!"
 			tasks: [{
 				id: "0E0D152491235E72"
 				item: "gtceu:hp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -6.0d
+			x: -9.0d
+			y: -7.0d
 		}
 		{
-			dependencies: ["31D607A0E640C8D8"]
+			dependencies: ["4863B9E3983A5463"]
+			description: ["If you happen to have an abudent or infinite source of lava, the high pressure liquid boiler will be a great source of steam."]
 			id: "59BA549EAC602E63"
+			subtitle: "Steam galore!"
 			tasks: [{
 				id: "1091FDF0B76C8264"
 				item: "gtceu:hp_steam_liquid_boiler"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -6.0d
+			x: -8.0d
+			y: -7.0d
 		}
 		{
-			dependencies: ["31D607A0E640C8D8"]
+			dependencies: ["0BB1B009E21A8D73"]
+			description: ["Here we are. Arguably the best soruce of steam early game. The high pressure solar boiler is completely passive and generates a good amount of steam. "]
 			id: "7666C59B2C2A9C54"
+			subtitle: "Even MORE steam"
 			tasks: [{
 				id: "14947C012D3A9AF2"
 				item: "gtceu:hp_steam_solar_boiler"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -6.0d
+			x: -7.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["5F977625E0059F00"]
+			description: ["Gas turbines start to get viable in &bMV&r."]
 			id: "4E1DA6A7F7A2FFC0"
+			subtitle: "Burn them gasses"
 			tasks: [{
 				id: "03256D84AACB7025"
 				item: "gtceu:mv_steam_turbine"
@@ -133,7 +151,9 @@
 		}
 		{
 			dependencies: ["1E224019910AE6C7"]
+			description: ["Great choice! All my questbooks love gas turbines!"]
 			id: "7A2CDFC8A3B23671"
+			subtitle: "Burn even more gasses!"
 			tasks: [{
 				id: "65098CCB9E298D64"
 				item: "gtceu:hv_steam_turbine"
@@ -160,6 +180,7 @@
 			id: "51FA210D5FCB8FF0"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "First electricity"
 			tasks: [{
 				id: "0BC1B254F21F6450"
 				item: "gtceu:lv_machine_hull"
@@ -189,9 +210,11 @@
 		}
 		{
 			dependencies: ["51FA210D5FCB8FF0"]
+			description: ["MV unlocks diesel, source diesel, and benezene. All are great sources of fuel."]
 			id: "5F977625E0059F00"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "Diesel Time!"
 			tasks: [{
 				id: "51F44444A46F62F2"
 				item: "gtceu:mv_machine_hull"
@@ -222,7 +245,9 @@
 		}
 		{
 			dependencies: ["51FA210D5FCB8FF0"]
+			description: ["Combustion generators might be expensive, but with how energy dense diesel and source diesel is, you shouldn't have to worry about power for the time being."]
 			id: "18BF6D245A7F7803"
+			subtitle: "Diesel power!"
 			tasks: [{
 				id: "08857F9058DC0220"
 				item: "gtceu:lv_combustion"
@@ -234,6 +259,7 @@
 		{
 			dependencies: ["5F977625E0059F00"]
 			id: "6D7A6CE2330371AB"
+			subtitle: "Diesel power II"
 			tasks: [{
 				id: "466EF9A2F4440FE6"
 				item: "gtceu:mv_combustion"
@@ -245,6 +271,7 @@
 		{
 			dependencies: ["1E224019910AE6C7"]
 			id: "57A39A31913B2F2F"
+			subtitle: "Diesel power III"
 			tasks: [{
 				id: "50ECFF26E787BD39"
 				item: "gtceu:hv_combustion"
@@ -255,7 +282,13 @@
 		}
 		{
 			dependencies: ["51FA210D5FCB8FF0"]
+			description: [
+				"The &8LV&r steam turbine is going to be your first source of electricity. "
+				""
+				"&eHowever, try to move away from steam when possible.&r"
+			]
 			id: "237C5B775B855CB4"
+			subtitle: "Steam power!"
 			tasks: [{
 				id: "59B1BEA945AA2D34"
 				item: "gtceu:lv_gas_turbine"
@@ -266,7 +299,9 @@
 		}
 		{
 			dependencies: ["5F977625E0059F00"]
+			description: ["As said in the &8LV&r steam turbine quest, try to move away from steam when possible. You probably noticed how much steam this guy eats..."]
 			id: "09B96E2BEE09C7C0"
+			subtitle: "Steam power II"
 			tasks: [{
 				id: "4F8567AEC9F61578"
 				item: "gtceu:mv_gas_turbine"
@@ -277,7 +312,9 @@
 		}
 		{
 			dependencies: ["1E224019910AE6C7"]
+			description: ["No idea how many boilers you have to support this, but I've warned you twice. It's your choice now."]
 			id: "2B90AED89AFB2187"
+			subtitle: "Hey man you do you"
 			tasks: [{
 				id: "7F8289383F0E51A0"
 				item: "gtceu:hv_gas_turbine"
@@ -288,9 +325,11 @@
 		}
 		{
 			dependencies: ["5F977625E0059F00"]
+			description: ["In &6HV&r, you technically have access to the &6Large Steam Turbine&r, but I'd read the quest description of the &8Basic Steam Turbine&r up above."]
 			id: "1E224019910AE6C7"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "Almost there!"
 			tasks: [{
 				id: "2752FD4381812892"
 				item: "gtceu:hv_machine_hull"
@@ -323,9 +362,11 @@
 		}
 		{
 			dependencies: ["1E224019910AE6C7"]
+			description: ["&5EV&r is probably the best tier. Here, you unlock some of the best multiblocks such as the ones for power to the right."]
 			id: "23AEF543AA92119E"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "The Good Ones Finally"
 			tasks: [{
 				id: "3E2D50FEF939D9A2"
 				item: "gtceu:ev_machine_hull"
@@ -336,9 +377,17 @@
 		}
 		{
 			dependencies: ["23AEF543AA92119E"]
+			description: [
+				"&7Rotor go spinny spinny, fuel go yummy yummy.&r"
+				""
+				"The Large Gas Turbine is one of the best power generators starting &5EV&r up to &2UV&r. It is upgradable as long as you upgrade the rotor and its holder."
+				""
+				"The rotor holder determines that maximum tier of power it can produce and the rotor will affect its efficiency and power generation."
+			]
 			id: "0537993AD8D37102"
 			shape: "hexagon"
 			size: 1.0d
+			subtitle: "The GOAT?"
 			tasks: [{
 				id: "4E77E85BE81F66BB"
 				item: "gtceu:gas_large_turbine"
@@ -349,9 +398,15 @@
 		}
 		{
 			dependencies: ["23AEF543AA92119E"]
+			description: [
+				"The large combustion generator is a good choice for those who have invested a lot into diesel/soruce diesel. No need for rotor, rotor holder, and efficiency shenanigans. Give it fuel and let it rip."
+				""
+				"It is recommended to boost it with oxygen as it increases power generation by 3x while consuming 2x the fuel. "
+			]
 			id: "00797AA0C0F4AC06"
 			shape: "hexagon"
 			size: 1.0d
+			subtitle: "Me eat diesel"
 			tasks: [{
 				id: "5E41DB99814BAA62"
 				item: "gtceu:large_combustion_engine"
@@ -362,7 +417,15 @@
 		}
 		{
 			dependencies: ["23AEF543AA92119E"]
+			description: [
+				"Rotors spin."
+				""
+				"Efficiency and power generation of a rotor depends on its material. Better matierals yield better efficiency, power generation, and durability than others. "
+				""
+				"Some might have high efficiency but low power generation and vice versa. The choice on which rotor to you is your choice..."
+			]
 			id: "636BBD84AF9B125B"
+			subtitle: "Spinny Spinny"
 			tasks: [{
 				id: "730B51DDE16E0877"
 				item: {
@@ -379,9 +442,14 @@
 		}
 		{
 			dependencies: ["636BBD84AF9B125B"]
-			description: ["The higher the tier above EV, the more efficient the recipe becomes"]
+			description: [
+				"Rotor holders determine the maximum power tier a turbine can produce. "
+				""
+				"Each tier above &5EV&r will increase efficiency by 10% and power generation by 2x. (Read its description)"
+			]
 			icon: "gtceu:uiv_rotor_holder"
 			id: "478C629140D9453B"
+			subtitle: "Need something to spin in?"
 			tasks: [{
 				id: "07EE6A6AED712682"
 				item: {
@@ -399,9 +467,11 @@
 		}
 		{
 			dependencies: ["5F977625E0059F00"]
+			description: ["Diesel. Very common fuel. Easy to produce and decently dense. "]
 			id: "00E22C38E03E6739"
 			shape: "hexagon"
 			size: 1.0d
+			subtitle: "Jack of all trades"
 			tasks: [{
 				id: "5CD32696AAF42C2D"
 				item: "gtceu:diesel_bucket"
@@ -425,9 +495,15 @@
 		}
 		{
 			dependencies: ["493D3AD6435FA70F"]
+			description: [
+				"The beast. Feed the beast with fuel and it will give you power in return. Give it some dessert of oxygen and it'll quadruple your power while only eating 2x more."
+				""
+				"FYI: The beast is very hungry."
+			]
 			id: "349CA7E4388B5E1A"
 			shape: "hexagon"
 			size: 1.0d
+			subtitle: "Me see fuel me eat fuel"
 			tasks: [{
 				id: "7573375A8DB91A7D"
 				item: "gtceu:extreme_combustion_engine"
@@ -566,8 +642,10 @@
 		}
 		{
 			dependencies: ["1E224019910AE6C7"]
+			description: ["Better diesel. Very dense in power."]
 			id: "51B3F6737BFE8614"
 			shape: "hexagon"
+			subtitle: "Diesel II"
 			tasks: [{
 				id: "32DDE659BDEEDFF3"
 				item: "gtceu:cetane_boosted_diesel_bucket"
