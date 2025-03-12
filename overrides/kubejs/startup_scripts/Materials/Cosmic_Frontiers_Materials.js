@@ -618,22 +618,24 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x03fc98)
     event.create('starry_fuel_mixture')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create("triphenyl_phosphine")
+        .liquid()
+        .color(0x825991)
+        .formula('P(C6H5)3')
     event.create('illuminated_heavy_fuel_mixture')
         .liquid()
         .color(0xa8ddff)
     event.create('illuminated_light_fuel_mixture')
         .liquid()
         .color(0x0cf0e8)
-
-
     event.create('wispy_star_dew')
         .gas()
         .color(0x0cf0e8)
-
-
     event.create('moon_stone')
         .dust()
         .color(0x143d30)
+
 })
 
 GTCEuStartupEvents.materialModification(event => {
