@@ -676,9 +676,9 @@
 			id: "3C2C2146C005CABB"
 			optional: true
 			rewards: [{
-				id: "1B90E5D5EC802DFF"
-				type: "xp_levels"
-				xp_levels: 15
+				id: "745379B13AE24592"
+				type: "xp"
+				xp: 255
 			}]
 			tasks: [{
 				consume_items: true
@@ -697,9 +697,9 @@
 			id: "655B426FC4EC143E"
 			optional: true
 			rewards: [{
-				id: "35AA0121D77BD385"
-				type: "xp_levels"
-				xp_levels: 30
+				id: "493628607BAEC9DE"
+				type: "xp"
+				xp: 825
 			}]
 			tasks: [{
 				consume_items: true

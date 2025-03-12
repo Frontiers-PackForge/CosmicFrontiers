@@ -18,8 +18,11 @@
 			size: 2.0d
 			subtitle: "The Moon "
 			tasks: [{
-				id: "3D2E33BEC0E594E2"
-				type: "checkmark"
+				dimension: "ad_astra:moon"
+				icon: "ad_astra:moon_globe"
+				id: "12A47F509AA1CB2F"
+				title: "Visit the Moon"
+				type: "dimension"
 			}]
 			title: "Welcome to the Moon!"
 			x: 0.0d
@@ -41,8 +44,8 @@
 				}
 			]
 			title: "Luminite and Desh"
-			x: 0.0d
-			y: -2.0d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5E210BF6CFD50E13"]
@@ -53,7 +56,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5E210BF6CFD50E13"]
@@ -64,7 +67,7 @@
 				type: "item"
 			}]
 			title: "Lunar Manganese"
-			x: -2.0d
+			x: -1.5d
 			y: -1.5d
 		}
 		{
@@ -77,9 +80,34 @@
 				item: "ad_astra:moon_sand"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5E210BF6CFD50E13"]
+			description: ["There is more potent veins of chromite on the moon, useful for your chromium production."]
+			id: "3B8C3C0D5FBB46F0"
+			tasks: [{
+				id: "41523D01DAB85809"
+				item: "gtceu:raw_chromite"
+				type: "item"
+			}]
+			title: "Pure Chromite"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E210BF6CFD50E13"]
+			id: "2666FD103D9D1CDE"
+			subtitle: "New sources of.... cheese?"
+			tasks: [{
+				id: "16293FE9778DC665"
+				item: "ad_astra:moon_cobblestone"
+				type: "item"
+			}]
+			x: 1.0d
 			y: 2.0d
 		}
 	]
-	title: "A Moment Fractured"
+	title: "&fA Moment Fractured&r - [&fMoon&r]"
 }
