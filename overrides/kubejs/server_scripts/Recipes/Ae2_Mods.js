@@ -617,7 +617,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.IV])
   event.remove({ id: 'gtceu:assembler/me_stocking_import_hatch' })
   event.recipes.gtceu.assembler('waxed_leather_forming')
-    .itemInputs(['gtceu:iv_input_bus', 'expatternprovider:ex_interface', 'gtceu:iv_electric_pump', 'cosmiccore:omnia_circuit_ev', 'ae2:speed_card'])
+    .itemInputs(['gtceu:iv_input_hatch', 'expatternprovider:ex_interface', 'gtceu:iv_electric_pump', 'cosmiccore:omnia_circuit_ev', 'ae2:speed_card'])
     .inputFluids('cosmiccore:prisma 1000')
     .itemOutputs('gtceu:me_stocking_input_hatch')
     .duration(100)
