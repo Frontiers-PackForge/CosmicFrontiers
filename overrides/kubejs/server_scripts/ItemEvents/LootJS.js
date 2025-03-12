@@ -1,9 +1,4 @@
 LootJS.modifiers((event) => {
-    // event.enableLogging();
-});
-
-
-LootJS.modifiers((event) => {
     event.addLootTypeModifier(LootType.ENTITY)
         .removeLoot("minecraft:bow")
         .removeLoot("minecraft:nether_star")
@@ -18,8 +13,16 @@ LootJS.modifiers((event) => {
         .replaceLoot("minecraft:gold_nugget", LootEntry.of('gtceu:tiny_ash_dust').limitCount([1, 6]))
         .replaceLoot("minecraft:iron_ingot", LootEntry.of('gtceu:tiny_wrought_iron_dust').limitCount([1, 4]))
         .replaceLoot("minecraft:coal", LootEntry.of('gtceu:tiny_coal_dust').limitCount([1, 4]))
-});
-LootJS.modifiers((event) => {
+
+    event.addBlockLootModifier("thinair:signal_torch")
+        .addLoot("minecraft:torch");
+
+    event.addEntityLootModifier("minecraft:llama")
+        .addLoot("minecraft:beef");
+
+    event.addEntityLootModifier("minecraft:fox")
+        .addLoot("minecraft:beef");
+
     event.addLootTypeModifier(LootType.CHEST)
         .removeLoot('gtceu:bronze_ingot')
         .removeLoot('gtceu:steel_ingot')
@@ -30,18 +33,4 @@ LootJS.modifiers((event) => {
         .removeLoot('nether_remastered:seal_piece_3')
         .removeLoot('nether_remastered:seal_piece_4')
         .removeLoot('nether_remastered:seal_crystal')
-});
-LootJS.modifiers((event) => {
-    event.addLootTypeModifier(LootType.ENTITY)
-    .matchEntity((entity) => {
-        entity.anyType("minecraft:fox");
-    })
-        .addLoot("minecraft:beef")
-});
-LootJS.modifiers((event) => {
-    event.addLootTypeModifier(LootType.ENTITY)
-    .matchEntity((entity) => {
-        entity.anyType("minecraft:llama");
-    })
-        .addLoot("minecraft:beef")
 });
