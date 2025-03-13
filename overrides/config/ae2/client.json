@@ -36,7 +36,7 @@
     "syncWithExternalSearch_comment": "When REI/JEI is installed, automatically set the AE or REI/JEI search text when either is changed while the terminal is open",
     "syncWithExternalSearch": true,
     "rememberLastSearch_comment": "Remembers the last search term and restores it when the terminal opens",
-    "rememberLastSearch": true,
+    "rememberLastSearch": false,
     "autoFocusSearch_comment": "Automatically focuses the search field when the terminal opens",
     "autoFocusSearch": true
   },

@@ -20,23 +20,23 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV]);
     event.recipes.gtceu.chemical_dehydrator('slurry_drying')
-        .itemInputs('gtceu:molybdenum_dust')
+        .chancedInput('gtceu:molybdenum_dust', 750, 0)
         .inputFluids('gtceu:nether_star_distillate_slurry 1000')
         .itemOutputs('4x gtceu:dull_nether_star_dust')
         .dimension('minecraft:the_nether')
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV]);
     event.recipes.gtceu.electric_blast_furnace('star_boule')
-        .itemInputs(['16x gtceu:dull_nether_star_dust', '8x gtceu:silicon_block'])
+        .itemInputs(['4x gtceu:dull_nether_star_dust', '8x gtceu:silicon_block'])
         .inputFluids('cosmiccore:prisma 4000')
         .itemOutputs('kubejs:chromatically_doped_nether_star_boule')
         .blastFurnaceTemp(4500)
         .dimension('minecraft:the_nether')
         .duration(900)
         .EUt(GTValues.VA[GTValues.EV]);
-    event.recipes.gtceu.forge_hammer('shatter_the_boule')
+    event.recipes.gtceu.cutter('boule_processing')
         .itemInputs('kubejs:chromatically_doped_nether_star_boule')
-        .itemOutputs(['2x minecraft:nether_star'/*, 'gtceu:nether_star_dust', '2x gtceu:dull_nether_star_dust'*/])//remove comment when you find a way to have multiple outputs
+        .itemOutputs(['4x minecraft:nether_star','4x gtceu:nether_star_dust'])//remove comment when you find a way to have multiple outputs
         .dimension('minecraft:the_nether')
         .duration(150)
         .EUt(GTValues.VA[GTValues.EV]);

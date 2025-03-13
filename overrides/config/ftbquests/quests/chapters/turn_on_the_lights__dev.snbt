@@ -873,9 +873,7 @@
 			description: [
 				"Benzene can be a reliable fuel source early on if you’re willing to invest in it."
 				""
-				"You can produce it by extracting &acharcoal&r into &awood tar&r and then distilling the tar into &abenzene&r."
-				""
-				"For now, you’ll need to automate some &ecoke ovens&r for charcoal, but later on, you can upgrade to the pyrolyse oven, which is substantially more efficient!"
+				"You can produce it by extracting &acharcoal&r into &awood tar&r and then distilling the tar into &abenzene&r in MV, but for now you can use steam cracked light oil."
 			]
 			id: "4D7E9F896A899416"
 			min_width: 300

@@ -4,16 +4,6 @@ ServerEvents.tags('block', event => {
 })
 
 ServerEvents.recipes(event => {
-  //Waxed Leather
-  event.shaped('cosmiccore:waxed_leather', [
-    ' W ',
-    'WLW',
-    ' W '
-  ], {
-    W: 'minecraft:honeycomb',
-    L: 'minecraft:leather'
-  }
-  )
   // event.remove({ mod: 'integrateddynamics' })
   //Crafting Recipes
   // event.remove({ output: 'integrateddynamics:drying_basin' })
@@ -22,6 +12,8 @@ ServerEvents.recipes(event => {
 
   event.remove({ id: 'integrateddynamics:crafting/squeezer' })
   event.remove({ id: 'integrateddynamics:crafting/mechanical_squeezer' })
+  event.remove({ id: 'integrateddynamics:crafting/drying_basin' })
+  event.remove({ id: 'integrateddynamics:crafting/mechanical_drying_basin' })
   event.shaped('integrateddynamics:squeezer', [
     'BSB',
     'A A',
@@ -42,6 +34,28 @@ ServerEvents.recipes(event => {
     W: 'gtceu:double_steel_plate',
     T: 'gtceu:treated_wood_planks',
     A: 'ulvcovm:ulv_electric_piston',
+    B: 'gtceu:treated_wood_frame'
+  })
+event.shaped('integrateddynamics:drying_basin', [
+    'B B',
+    'ACA',
+    'TWT'
+  ], {
+    C: 'minecraft:cauldron',
+    W: 'gtceu:double_steel_plate',
+    T: 'gtceu:treated_wood_planks',
+    A: 'gtceu:treated_wood_rod',
+    B: 'gtceu:treated_wood_frame'
+  })
+event.shaped('integrateddynamics:mechanical_drying_basin', [
+    'B B',
+    'ACA',
+    'TWT'
+  ], {
+    C: 'minecraft:cauldron',
+    W: 'gtceu:double_steel_plate',
+    T: 'gtceu:treated_wood_planks',
+    A: 'ulvcovm:ulv_electric_pump',
     B: 'gtceu:treated_wood_frame'
   })
 
@@ -105,13 +119,13 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.extractor('cinder_wax_extractor')
     .itemInputs('nethersdelight:propelpearl')
-    .outputFluids('gtceu:cinderwax', 144)
+    .outputFluids('gtceu:cinderwax 144')
     .duration(50)
     .EUt(4);
 
   event.recipes.gtceu.extractor('soul_resin_extractor')
     .itemInputs('legendarysurvivaloverhaul:ice_fern_leaf')
-    .outputFluids('gtceu:soulresin', 144)
+    .outputFluids('gtceu:soulresin 144')
     .duration(50)
     .EUt(4);
 

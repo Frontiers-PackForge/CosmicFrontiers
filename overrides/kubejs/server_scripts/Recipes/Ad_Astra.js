@@ -80,6 +80,7 @@ ServerEvents.tags('fluid', event => {
   event.remove('ad_astra:fuel', `ad_astra:cryo_fuel`)
   event.remove(`forge:oxygen`, 'ad_astra:oxygen')
   event.remove(`forge:hydrogen`, 'ad_astra:hydrogen')
+  event.remove(`forge:oil`, 'ad_astra:oil')
   event.remove(`forge:virtue_meld`, 'cosmiccore:virtue_meld')
 })
 
@@ -258,7 +259,14 @@ ServerEvents.recipes(event => {
     .itemInputs('ad_astra:space_suit')
     .inputFluids('gtceu:oxygen 1000')
     .circuit(1)
-    .itemOutputs(Item.of('ad_astra:space_suit', '{BotariumData:{StoredFluids:[{Amount:1000L,Fluid:"gtceu:oxygen"}]}}'))
+    .itemOutputs(Item.of('ad_astra:space_suit', '{BotariumData:{StoredFluids:[{Amount:1000L,Fluid:"gtceu:oxygen"}]},Damage:0}'))
+    .duration(160)
+  event.recipes.gtceu.canner("ad_astra:space_suit/filling_t2")
+    .itemInputs('ad_astra:netherite_space_suit')
+    .inputFluids('gtceu:oxygen 2000')
+    .circuit(1)
+    .itemOutputs(Item.of('ad_astra:netherite_space_suit', '{BotariumData:{StoredFluids:[{Amount:2000L,Fluid:"gtceu:oxygen"}]},Damage:0}'))
+    .duration(320)
   event.recipes.gtceu.assembler("space_suit_t1")
     .itemInputs(['32x gtceu:polytetrafluoroethylene_plate', '4x gtceu:stainless_steel_plate', '4x gtceu:titanium_plate', 'ad_astra:gas_tank'])
     .circuit(1)
@@ -279,7 +287,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.assembler("space_boots_t1")
     .itemInputs(['16x gtceu:polytetrafluoroethylene_plate', '1x gtceu:stainless_steel_plate', '1x gtceu:titanium_plate'])
-    .circuit(2)
+    .circuit(3)
     .itemOutputs('ad_astra:space_boots')
     .duration(160)
     .EUt(GTValues.VA[GTValues.HV]);

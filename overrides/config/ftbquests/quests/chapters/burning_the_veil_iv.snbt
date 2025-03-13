@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "burning_the_veil_iv"
 	group: "3EC91AC584FC0BC3"
@@ -9,7 +10,8 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["44DE661BAA434766"]
+			dependencies: ["3C2F76C18CC1A56E"]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "52DAB014D2101F02"
 			shape: "hexagon"
@@ -46,9 +48,10 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["57F13FE3E9215635"]
+			dependencies: ["52DAB014D2101F02"]
 			icon: "gtceu:radon_bucket"
 			id: "74B8764F1C1E149B"
+			subtitle: "A Radon Source?"
 			tasks: [
 				{
 					id: "4C17F5BED717F19A"
@@ -88,37 +91,6 @@
 			}]
 			x: -0.5d
 			y: -4.5d
-		}
-		{
-			dependencies: ["52DAB014D2101F02"]
-			id: "57F13FE3E9215635"
-			tasks: [
-				{
-					id: "5EDA98FAC7E82D91"
-					item: "gtceu:liquid_ender_air_bucket"
-					type: "item"
-				}
-				{
-					id: "20BA6D02D015F4A7"
-					title: "Got it!"
-					type: "checkmark"
-				}
-			]
-			x: 0.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["52DAB014D2101F02"]
-			id: "2498E9178C0E62FA"
-			subtitle: "Things Get Tricky"
-			tasks: [{
-				id: "2A10A70C66637917"
-				item: "gtceu:waste_plutonium_fuel_salt_bucket"
-				type: "item"
-			}]
-			title: "Grade 2 Nuclear Reprocessing"
-			x: -1.5d
-			y: 0.0d
 		}
 		{
 			dependencies: ["52DAB014D2101F02"]
@@ -223,7 +195,11 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["52DAB014D2101F02"]
+			dependencies: [
+				"52DAB014D2101F02"
+				"17CF14AB53DAE8C2"
+				"186AAC50CF3B0086"
+			]
 			id: "77EA22B0339E070C"
 			tasks: [{
 				id: "6129B0D109FBFF4D"
@@ -329,14 +305,13 @@
 		{
 			dependencies: ["1EF7E793ED32B4C2"]
 			id: "1C69A670270A14F7"
-			subtitle: "One Last Time"
 			tasks: [{
 				id: "6630DEEC7A8F24B1"
 				item: "gtceu:berkelium_ingot"
 				type: "item"
 			}]
 			x: -6.0d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4FDA9A502C1B81B4"]
@@ -353,6 +328,7 @@
 			dependencies: [
 				"42865AA334F31C33"
 				"7B532242A29109CB"
+				"02DD510AEAA5CAC5"
 			]
 			id: "35A286B0D2B7DD32"
 			tasks: [{
@@ -367,6 +343,7 @@
 			dependencies: [
 				"35A286B0D2B7DD32"
 				"3338BD4AA7E9C7DB"
+				"02DD510AEAA5CAC5"
 			]
 			id: "27AAA83B011E5801"
 			tasks: [{
@@ -381,6 +358,7 @@
 			dependencies: [
 				"27AAA83B011E5801"
 				"3338BD4AA7E9C7DB"
+				"02DD510AEAA5CAC5"
 			]
 			id: "33876E07B5D45B10"
 			shape: "hexagon"
@@ -405,12 +383,12 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["2498E9178C0E62FA"]
+			dependencies: ["52DAB014D2101F02"]
 			id: "78B36006CB047EBE"
-			subtitle: "Psionic Abuse"
+			subtitle: "The Next Nuclear Fuel"
 			tasks: [{
 				id: "2BE252EA7BDA4ED4"
-				item: "gtceu:superheated_waste_plutonium_fuel_salt_bucket"
+				item: "gtceu:americium_fuel_salt_bucket"
 				type: "item"
 			}]
 			x: -3.0d
@@ -426,11 +404,13 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["52DAB014D2101F02"]
+			dependencies: ["2D715455EFC14463"]
 			id: "28B978C8D8129542"
+			shape: "pentagon"
+			size: 1.25d
 			tasks: [{
 				id: "1BD31CB7AE881513"
 				item: {
@@ -440,7 +420,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: -1.5d
 		}
 		{
@@ -454,20 +434,22 @@
 				title: "Visit Mars!"
 				type: "dimension"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["032621AA64B4E743"]
+			description: ["Mars Contains Pure Plutonium, this should make it easier to produce middle grade fuels."]
 			id: "5B89C5230F74CA3A"
+			shape: "gear"
 			tasks: [{
 				id: "26BF67D3C175D7A4"
 				item: "gtceu:raw_plutonium"
 				type: "item"
 			}]
 			title: "Easier Plutonium Sources"
-			x: -6.0d
-			y: -1.5d
+			x: -4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["21608DFB32451FB8"]
@@ -483,9 +465,13 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["21608DFB32451FB8"]
+			dependencies: [
+				"21608DFB32451FB8"
+				"309967788FF8D60E"
+			]
 			description: ["Allows much faster ore processing! Neat! "]
 			id: "3D77B19C91290765"
+			subtitle: "You need Yttrium"
 			tasks: [{
 				id: "5625D50852DC010D"
 				item: "gtceu:large_centrifuge"
@@ -529,7 +515,10 @@
 				"57898F6FBA8CE622"
 				"52DAB014D2101F02"
 			]
+			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "454AC43D9EAF4A55"
 			shape: "hexagon"
 			subtitle: "Have You Finished Platline?"
@@ -721,46 +710,65 @@
 			y: -7.5d
 		}
 		{
-			dependencies: [
-				"5B89C5230F74CA3A"
-				"1C69A670270A14F7"
-				"7DC21C56F2BFA0D2"
-			]
+			dependencies: ["1C69A670270A14F7"]
+			description: ["Your Binding Reagent uses the 'mana engraver' mode of the essence reactor."]
 			id: "043571B3B39ED283"
+			subtitle: "Heads up"
 			tasks: [{
-				id: "709DE6C8890CC231"
-				type: "item"
+				id: "1A0C8A8F44BE021D"
+				title: "Mana Engraver"
+				type: "checkmark"
 			}]
-			title: "Radcake Mk1"
-			x: -7.5d
-			y: -1.5d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
-			dependencies: [
-				"043571B3B39ED283"
-				"7DC21C56F2BFA0D2"
-			]
+			dependencies: ["043571B3B39ED283"]
 			id: "6B2A25D5C2C81847"
+			subtitle: "Cheap and Crude"
 			tasks: [{
 				id: "52D57C431FF7D682"
 				item: "bloodmagic:reagentbinding"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -1.5d
+			x: -8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"6B2A25D5C2C81847"
 				"1703D199F957F0C6"
 			]
+			description: [
+				"Utilizing the raw nature of blood, i can poorly infuse life into things which are inanimate."
+				""
+				"\"Life\" in this case may not always be the nature of living, but may be overall improvements to material properties as well."
+				""
+				"More testing will be required, and I feel I may only go so far."
+				"I have written most of my findings into this book ( Check for detailed info within ) "
+			]
+			icon: "bloodmagic:altar"
 			id: "2F953B6A0C8B2E96"
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "08D5195DA2D3AD11"
+			rewards: [{
+				id: "1D568DCD4267B287"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "bloodmagic:guide"
+					}
+				}
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The Art of Sanguimancy"
+			tasks: [{
+				id: "07039D72E26D8A72"
+				item: "bloodmagic:altar"
+				type: "item"
+			}]
+			title: "To Bleed Yourself Dry"
 			x: -10.5d
 			y: 0.0d
 		}
@@ -772,29 +780,8 @@
 				item: "gtceu:fine_berkelium_wire"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["0CE1B054263D0C44"]
-			description: [
-				"LUV and beyond are in WIP."
-				""
-				"However the next major update will be refining and finalizing the current chapters and content."
-				"So the LUV age may be a bit later."
-				""
-				""
-				"Update : I will instead be moving the QB quality pass to the Conclusion of the UV Update (0.8.0)"
-			]
-			id: "505B9B3240069C7D"
-			subtitle: "LUV +"
-			tasks: [{
-				id: "22AFE07FE23E739F"
-				type: "custom"
-			}]
-			title: "You are Here."
-			x: 0.0d
-			y: -14.5d
+			x: -8.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["52DAB014D2101F02"]
@@ -968,8 +955,8 @@
 				item: "gtceu:naquadric_metallic_powder_dust"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -1.5d
+			x: -6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -982,8 +969,8 @@
 				item: "gtceu:naquadah_concentrate_dust"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -7.5d
+			x: -6.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["0A1E02413DE3DDEE"]
@@ -1013,8 +1000,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.5d
-			y: -3.0d
+			x: -6.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5F629D78D02E813A"]
@@ -1033,8 +1020,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.5d
-			y: -4.5d
+			x: -6.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["0B18D2364A7E09B3"]
@@ -1053,8 +1040,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.5d
-			y: -6.0d
+			x: -6.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["135CFFFDB3E92F89"]
@@ -1073,8 +1060,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.5d
-			y: -9.0d
+			x: -6.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["2868E4E3E48830EC"]
@@ -1149,8 +1136,8 @@
 				item: "gtceu:indium_dust"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -7.5d
+			x: -4.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["24BFB90C3FF69DAF"]
@@ -1180,18 +1167,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["1C69A670270A14F7"]
-			description: ["These Are Reserved for LuV+ Tier content"]
-			id: "7DC21C56F2BFA0D2"
-			subtitle: "0.6.0 Content"
-			tasks: [{
-				id: "3BA6AB16DE6DEA35"
-				type: "checkmark"
-			}]
-			x: -7.5d
-			y: 0.0d
-		}
-		{
 			dependencies: ["52DAB014D2101F02"]
 			hide_dependency_lines: true
 			id: "350222013080795B"
@@ -1202,6 +1177,497 @@
 			}]
 			x: -4.5d
 			y: -11.5d
+		}
+		{
+			dependencies: ["75AC0231E1B539AB"]
+			description: ["After unlocking IV Energy Hatches, you can finish the Osmium section of platinum group metals"]
+			id: "5E753E490514FC62"
+			shape: "hexagon"
+			tasks: [{
+				id: "0DD5F74AB3F26831"
+				item: "gtceu:osmium_dust"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["52DAB014D2101F02"]
+			description: [
+				"You can't make the Osmiridium needed for your T2 rocket until you've make IV Energy hatches."
+				""
+				"Consider investing into large machines as well once you have IV energy hatches, they're very useful and can be provided multiple amps of power!"
+			]
+			id: "2D715455EFC14463"
+			subtitle: "The First Wall"
+			tasks: [{
+				id: "76AAA31B87B7F708"
+				item: "gtceu:osmiridium_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["032621AA64B4E743"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Check out \"A Moment Whole - [Mars]\" for more information on what other veins spawn on Mars!"
+				""
+				"(If anyone has some good suggestions for mars veins, hit me up on discord)"
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "4152C437EC55BA8D"
+			shape: "gear"
+			subtitle: "A wealth of better ores!"
+			tasks: [{
+				id: "5C02571522DA5876"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2F182B1B24F4C7F7"]
+			id: "02DD510AEAA5CAC5"
+			tasks: [{
+				id: "61BF2AA2FFA70C11"
+				item: "cosmiccore:aram_chip"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["67149E8C37547372"]
+			id: "2F182B1B24F4C7F7"
+			tasks: [{
+				id: "7AAF3E109E96838E"
+				item: "cosmiccore:aram_wafer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
+			id: "67149E8C37547372"
+			shape: "hexagon"
+			tasks: [{
+				id: "1C3D85FAF19F668F"
+				item: "gtceu:magenta_glass_lens"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2F953B6A0C8B2E96"]
+			id: "799D94D8D1C31A1C"
+			tasks: [{
+				id: "5FE76ADC54AC4190"
+				item: "bloodmagic:blankslate"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["799D94D8D1C31A1C"]
+			id: "2B624BCB0288F5FC"
+			subtitle: "An Altar Upgrade"
+			tasks: [{
+				id: "62FE03B5346DA87D"
+				item: "bloodmagic:blankrune"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["799D94D8D1C31A1C"]
+			description: [
+				"This weak orb helps diffuse powerful life essence into the roots of my being."
+				"Maybe the backpains will go away."
+				""
+				"This essence deep within is capable of acting on the world breifing through rune etching and ritualistic actions."
+				""
+				"There might be a way to interface this vessle of mine into mundane machinery."
+			]
+			id: "728C14F0E8C6AD6D"
+			shape: "hexagon"
+			subtitle: "Life Essence"
+			tasks: [{
+				id: "745D1A34BD9FDF3F"
+				item: "bloodmagic:weakbloodorb"
+				type: "item"
+			}]
+			title: "A Vessel within the Soul"
+			x: -9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["728C14F0E8C6AD6D"]
+			id: "42A3B6AE53A276C9"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "53088FE759F44249"
+				item: "cosmiccore:iv_soul_output_hatch"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["42A3B6AE53A276C9"]
+			description: [
+				"The Drygmy's in your grove seem to react positively to the essence of life, acting almost as a stimulant. "
+				""
+				"&eDrygmy Groves&r provided life essence will &nmultiply&r the base yield of any recipe ran inside."
+			]
+			icon: "ars_nouveau:familiar_drygmy"
+			id: "6B5E90FEF5C8AEFD"
+			rewards: [{
+				id: "1296A1953739497D"
+				item: "ars_nouveau:drygmy_shard"
+				type: "item"
+			}]
+			subtitle: "Blood shall be paid."
+			tasks: [{
+				id: "711A5E896087F62B"
+				type: "checkmark"
+			}]
+			title: "The Grove Hungers"
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["42A3B6AE53A276C9"]
+			id: "462AFE4CFE98A81B"
+			subtitle: "Pearl Replication"
+			tasks: [{
+				id: "1AA25B0EA122EB76"
+				item: "botania:life_essence"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["42A3B6AE53A276C9"]
+			description: ["Life Essence imbued into rune creation allows for a more efficient rune extraction method."]
+			id: "38E85FF8405B5D7E"
+			subtitle: "Rune Boosting"
+			tasks: [{
+				id: "38BE5F47D460E55A"
+				item: "gtceu:essence_reactor"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["728C14F0E8C6AD6D"]
+			id: "48B5A548F621E06B"
+			subtitle: "Tranquility"
+			tasks: [{
+				id: "0EEAD876C7330B40"
+				item: "bloodmagic:incensealtar"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2B624BCB0288F5FC"]
+			id: "1D962882C525C346"
+			subtitle: "TODO ; Make it a GT Structure"
+			tasks: [{
+				id: "3812E206493D5464"
+				item: "bloodmagic:soulforge"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1D962882C525C346"]
+			id: "035259769C57DD3D"
+			tasks: [{
+				id: "261D6F0D395BB30E"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulgempetty"
+					tag: {
+						souls: 64.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"1D962882C525C346"
+				"035259769C57DD3D"
+			]
+			id: "62F7C667E226E974"
+			shape: "hexagon"
+			subtitle: "As Far as you can go."
+			tasks: [{
+				id: "4E6F8B4671A4042D"
+				item: "bloodmagic:reinforcedslate"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["523DD0FBEF7C9B42"]
+			description: [
+				"The Dagger of Sacrifice allows to kill other mobs for LP."
+				""
+				"If you have an apotheosis spawner farm from before, this can be paired perfectly together."
+			]
+			id: "6AE34745529E373B"
+			subtitle: "Blood of Others"
+			tasks: [{
+				id: "701EF00E3AC35824"
+				item: "bloodmagic:daggerofsacrifice"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F953B6A0C8B2E96"]
+			id: "523DD0FBEF7C9B42"
+			subtitle: "The Blood of Yourself"
+			tasks: [{
+				id: "53B79DC2633C9FAA"
+				item: {
+					Count: 1
+					id: "bloodmagic:sacrificialdagger"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B624BCB0288F5FC"]
+			id: "666091C27FA1ABFD"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6B92B992964F1CB7"
+				item: "bloodmagic:apprenticebloodorb"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1C69A670270A14F7"]
+			id: "20C81A440C29EFC6"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Normalizing Gravity"
+			tasks: [{
+				id: "58FF64916D5683E2"
+				item: "cosmiccore:portable_gravity_core"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0CE1B054263D0C44"]
+			icon: "createdeco:decal_up"
+			id: "71C697E52A8CE267"
+			shape: "hexagon"
+			subtitle: "Complete this quest to unlock LuV"
+			tasks: [{
+				id: "159B714AA91A5A57"
+				type: "checkmark"
+			}]
+			title: "To LuV!"
+			x: 0.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["62AEF55670A1A23B"]
+			id: "17CF14AB53DAE8C2"
+			tasks: [{
+				id: "5AA0C20FA587AE3C"
+				item: "gtceu:4_4_oxydianiline_pyromellitimide_plate"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["00DB5DBE14C634B7"]
+			id: "71E84EF4A8B48D64"
+			tasks: [{
+				count: 18L
+				id: "03189AC8B994FA61"
+				item: "gtceu:pyromellitic_dianhydride_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"7A2B65B8C508CEEA"
+				"33EFC525528C4918"
+			]
+			icon: "gtceu:fluorinated_ethylene_propylene_bucket"
+			id: "186AAC50CF3B0086"
+			tasks: [{
+				id: "0EBF416D2379BFDB"
+				item: "gtceu:fluorinated_ethylene_propylene_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2EA63C132395CE58"]
+			id: "62AEF55670A1A23B"
+			tasks: [{
+				id: "4395AAD8CBA3B8DE"
+				item: "gtceu:4_4_oxydianiline_pyromellitimide_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"71E84EF4A8B48D64"
+				"13E59F7B98467576"
+			]
+			id: "2EA63C132395CE58"
+			tasks: [{
+				id: "5148F7FF0C6DBFED"
+				item: "gtceu:poly_amic_acid_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
+			id: "33EFC525528C4918"
+			tasks: [{
+				id: "41F4ADBEAE80FB67"
+				item: "gtceu:hexafluoropropylene_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["52DAB014D2101F02"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "7A2B65B8C508CEEA"
+			tasks: [{
+				id: "7EE80481004CE73B"
+				item: "gtceu:tetrafluoroethylene_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2F953B6A0C8B2E96"
+				"2FE7FBD01B53D1F2"
+			]
+			description: [
+				"Demon will as a mechanic (killing mobs for soul), is a bit bland considering you already did that for malum early on in LV."
+				""
+				""
+				"Demon Will Can be extracted two ways"
+				"- Killing mobs with a sentient weapon (Default method)"
+				"- Feeding Drygmy's Spirit Crystals, they will excude spirit will that can be used similarly."
+				""
+				"You won't need much manual will collection if you automate it right away."
+				""
+				"You won't see much usage for demon crystals until LuV, at which there will be mechanical rituals to make the automation more friendly to scaling"
+			]
+			id: "43EA92B4EAAFD316"
+			shape: "gear"
+			subtitle: "Stripping souls and imbuing spirits"
+			tasks: [{
+				id: "235AF08A5E540DD7"
+				item: {
+					Count: 1
+					id: "bloodmagic:basemonstersoul"
+					tag: {
+						souls: 5.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "Where's Demonic Will?"
+			x: -12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
+			id: "00DB5DBE14C634B7"
+			tasks: [{
+				id: "46B0AF829BFA3A8B"
+				item: "gtceu:durene_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3942BC2ED1C21713"]
+			id: "13E59F7B98467576"
+			tasks: [{
+				id: "23A2F0D575951A3D"
+				item: "gtceu:oxydianiline_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
+			id: "3942BC2ED1C21713"
+			tasks: [{
+				id: "54247D4A7ABE8E24"
+				item: "gtceu:aniline_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A6687C64AE5FC75"]
+			hide_dependent_lines: true
+			id: "309967788FF8D60E"
+			tasks: [{
+				id: "2258C02196D1A427"
+				item: "gtceu:yttrium_dust"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -9.0d
 		}
 	]
 	title: "Burning the Veil [IV]"

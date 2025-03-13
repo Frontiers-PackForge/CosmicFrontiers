@@ -119,6 +119,9 @@ ServerEvents.recipes(event => {
   event.remove({ input: coveredCableHidding })
 })
 
+
+
+
 ServerEvents.tags('item', event => {
   event.add('forge:viewers/hidden_from_recipe', denseCoverHidding)
   event.add('c:hidden_from_recipe_viewers', denseCoverHidding)
@@ -128,9 +131,9 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:viewers/hidden_from_recipe', coveredCableHidding)
   event.add('c:hidden_from_recipe_viewers', coveredCableHidding)
-
-  event.add('forge:viewers/hidden_from_recipe', matrix)
-  event.add('c:hidden_from_recipe_viewers', matrix)
+  //Start Work on Matrix Recipes
+  // event.add('forge:viewers/hidden_from_recipe', matrix)
+  // event.add('c:hidden_from_recipe_viewers', matrix)
   // event.add('forge:viewers/hidden_from_recipe', denseCoverHidding)
   // event.add('c:hidden_from_recipe_viewers', denseCoverHidding)
 })
@@ -172,6 +175,43 @@ ServerEvents.recipes(event => {
     .duration(12000)
     .EUt(GTValues.VA[GTValues.HV]);
 
+  event.recipes.gtceu.assembler(`frontiers:matrix_frame`)
+    .itemInputs(['4x gtceu:plascrete', 'gtceu:palladium_plate', 'gtceu:platinum_plate', 'gtceu:blue_steel_frame', '#gtceu:circuits/hv'])
+    .itemOutputs('expatternprovider:assembler_matrix_frame')
+    .duration(350)
+    .EUt(GTValues.VA[GTValues.EV]);
+  //Glass Version
+  event.recipes.gtceu.assembler(`frontiers:matrix_wall`)
+    .itemInputs(['4x gtceu:plascrete', 'gtceu:palladium_plate', 'gtceu:platinum_plate', 'ae2:fluix_smart_dense_cable', 'gtceu:dense_steel_plate'])
+    .itemOutputs('expatternprovider:assembler_matrix_wall')
+    .duration(350)
+    .EUt(GTValues.VA[GTValues.EV]);
+  event.recipes.gtceu.assembler(`frontiers:matrix_pattern_unit`)
+    .itemInputs(['4x gtceu:plascrete', 'expatternprovider:ex_pattern_provider', '#gtceu:circuits/ev'])
+    .itemOutputs('expatternprovider:assembler_matrix_pattern')
+    .duration(350)
+    .EUt(GTValues.VA[GTValues.EV]);
+  event.recipes.gtceu.assembler(`frontiers:matrix_crafting_unit`)
+    .itemInputs(['4x gtceu:plascrete', 'ae2:cell_component_16k', '#gtceu:circuits/ev'])
+    .itemOutputs('expatternprovider:assembler_matrix_crafter')
+    .duration(350)
+    .EUt(GTValues.VA[GTValues.EV]);
+  event.recipes.gtceu.assembler(`frontiers:matrix_speed_unit`)
+    .itemInputs(['4x gtceu:plascrete', '8x ae2:speed_card', 'ae2:cell_component_64k', '#gtceu:circuits/ev'])
+    .itemOutputs('expatternprovider:assembler_matrix_speed')
+    .duration(350)
+    .EUt(GTValues.VA[GTValues.EV]);
+  event.recipes.gtceu.assembler(`frontiers:matrix_glass_wall`)
+    .itemInputs(['expatternprovider:assembler_matrix_wall', 'gtceu:laminated_glass'])
+    .itemOutputs('expatternprovider:assembler_matrix_glass')
+    .duration(350)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+
+
+
+
+
   event.shaped('ae2:io_port', [
     'SCS',
     'BDB',
@@ -194,7 +234,7 @@ ServerEvents.recipes(event => {
   })
   event.shaped('ae2:chest', [
     'SCS',
-    'SDS',
+    'BDB',
     'SSS'
   ], {
     S: 'gtceu:aluminium_plate',
@@ -214,7 +254,7 @@ ServerEvents.recipes(event => {
   //   .duration(10)
   //   .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.laminator(`ae2:fluix_pearl_lamination`)
-    .itemInputs(['2x minecraft:ender_pearl', '8x gtceu:fluix_dust'])
+    .itemInputs(['2x #forge:ender_pearls', '8x gtceu:fluix_dust'])
     .itemOutputs('2x ae2:fluix_pearl')
     .duration(100)
     .EUt(GTValues.VA[GTValues.MV]);
@@ -511,28 +551,28 @@ ServerEvents.recipes(event => {
 
   //Extended Ae2
   event.recipes.gtceu.assembler('extended_interface')
-    .itemInputs(['4x ae2:interface', '4x cosmiccore:prismatic_tungstensteel_plate', 'gtceu:ev_robot_arm'])
+    .itemInputs(['4x ae2:interface', '4x gtceu:titanium_plate', '#gtceu:circuits/ev'])
     .inputFluids(`gtceu:soldering_alloy 576`)
     .itemOutputs('expatternprovider:ex_interface')
     .circuit(1)
     .duration(90)
     .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.assembler('extended_provider')
-    .itemInputs(['4x ae2:pattern_provider', '4x cosmiccore:prismatic_tungstensteel_plate', 'gtceu:ev_robot_arm'])
+    .itemInputs(['4x ae2:pattern_provider', '4x gtceu:titanium_plate', '#gtceu:circuits/ev'])
     .inputFluids(`gtceu:soldering_alloy 576`)
     .itemOutputs('expatternprovider:ex_pattern_provider')
     .circuit(1)
     .duration(90)
     .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.assembler('extended_interface_upgrade')
-    .itemInputs(['3x ae2:interface', '4x cosmiccore:prismatic_tungstensteel_plate', 'gtceu:ev_robot_arm'])
+    .itemInputs(['3x ae2:interface', '4x gtceu:titanium_plate', '#gtceu:circuits/ev'])
     .inputFluids(`gtceu:soldering_alloy 576`)
     .itemOutputs('expatternprovider:interface_upgrade')
     .circuit(2)
     .duration(90)
     .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.assembler('extended_provider_upgrade')
-    .itemInputs(['3x ae2:pattern_provider', '4x cosmiccore:prismatic_tungstensteel_plate', 'gtceu:ev_robot_arm'])
+    .itemInputs(['3x ae2:pattern_provider', '4x gtceu:titanium_plate', '#gtceu:circuits/ev'])
     .inputFluids(`gtceu:soldering_alloy 576`)
     .itemOutputs('expatternprovider:pattern_provider_upgrade')
     .circuit(2)
@@ -561,6 +601,34 @@ ServerEvents.recipes(event => {
     .circuit(3)
     .duration(90)
     .EUt(GTValues.VA[GTValues.EV]);
+  event.recipes.gtceu.assembler('frontiers:annihilation_plane')
+    .itemInputs(['ae2:semi_dark_monitor', '3x ae2:annihilation_core', 'gtceu:manasteel_drill_head'])
+    .inputFluids(`gtceu:soldering_alloy 576`)
+    .itemOutputs('ae2:annihilation_plane')
+    .circuit(2)
+    .duration(180)
+    .EUt(GTValues.VA[GTValues.HV]);
+  event.remove({ id: 'gtceu:assembler/me_stocking_import_bus' })
+  event.recipes.gtceu.assembler('stocking_import_bust')
+    .itemInputs(['gtceu:iv_input_bus', 'expatternprovider:ex_interface', 'gtceu:iv_conveyor_module', 'cosmiccore:omnia_circuit_ev', 'ae2:speed_card'])
+    .inputFluids('cosmiccore:prisma 1000')
+    .itemOutputs('gtceu:me_stocking_input_bus')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.IV])
+  event.remove({ id: 'gtceu:assembler/me_stocking_import_hatch' })
+  event.recipes.gtceu.assembler('waxed_leather_forming')
+    .itemInputs(['gtceu:iv_input_hatch', 'expatternprovider:ex_interface', 'gtceu:iv_electric_pump', 'cosmiccore:omnia_circuit_ev', 'ae2:speed_card'])
+    .inputFluids('cosmiccore:prisma 1000')
+    .itemOutputs('gtceu:me_stocking_input_hatch')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.IV])
+  event.recipes.gtceu.assembler('frontiers:formation_plane')
+    .itemInputs(['ae2:semi_dark_monitor', '3x ae2:formation_core', 'gtceu:mv_robot_arm'])
+    .inputFluids(`gtceu:soldering_alloy 576`)
+    .itemOutputs('ae2:formation_plane')
+    .circuit(3)
+    .duration(180)
+    .EUt(GTValues.VA[GTValues.HV]);
 
   event.shaped('2x expatternprovider:wireless_connect', [
     'RDE',
@@ -574,7 +642,9 @@ ServerEvents.recipes(event => {
     D: 'ae2:fluix_smart_dense_cable',
     Q: 'ae2wtlib:quantum_bridge_card'
   })
-
+  event.shapeless('ae2:toggle_bus', [
+    'ae2:level_emitter', 'minecraft:lever'
+  ])
   //Interface Full to Thin and Thin to Full
   event.shapeless('ae2:cable_interface', [
     'ae2:interface'
@@ -929,7 +999,7 @@ ServerEvents.recipes(event => {
     ],
     "result": {
       "count": 2,
-      "item": "gtceu:certus_quartz_flawless_gem"
+      "item": "gtceu:flawless_certus_quartz_gem"
     }
   })
   event.custom({

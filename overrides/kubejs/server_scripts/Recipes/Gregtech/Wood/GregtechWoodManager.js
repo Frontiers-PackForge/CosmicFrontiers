@@ -471,6 +471,53 @@ Wood.prototype = {
         }
         return this;
     },
+    bookshelf: function () {
+        const { modID, woodType, event } = this
+        //BOOKSHELF 
+        if (Item.exists(`${modID}:${woodType}_bookshelf`)) {
+            event.remove({ output: `${modID}:${woodType}_bookshelf` })
+            event.recipes.gtceu.assembler(`cosmicfrontiers:${modID}/${woodType}_bookshelf`)
+                .itemInputs(`6x ${modID}:${woodType}_slab`)
+                .itemInputs(`3x minecraft:book`)
+                .circuit(16)
+                .itemOutputs(`4x ${modID}:${woodType}_bookshelf`)
+                .duration(100)
+                .EUt(4);
+            event.shaped(`${modID}:${woodType}_bookshelf`, [
+                'WWW',
+                'BBB',
+                'WWW'
+            ],
+                {
+                    W: `${modID}:${woodType}_planks`,
+                    B: `minecraft:book`
+                })
+        }
+        return this;
+    },
+    craftingTable: function () {
+        const { modID, woodType, event } = this
+        //CRAFTING TABL 
+        if (Item.exists(`${modID}:${woodType}_crafting_table`)) {
+            event.remove({ output: `${modID}:${woodType}_crafting_table` })
+            event.recipes.gtceu.assembler(`cosmicfrontiers:${modID}/${woodType}_crafting_table`)
+                .itemInputs(`4x ${modID}:${woodType}_planks`)
+                .circuit(18)
+                .itemOutputs(`4x ${modID}:${woodType}_crafting_table`)
+                .duration(100)
+                .EUt(4);
+            event.shaped(`${modID}:${woodType}_crafting_table`, [
+                'FF ',
+                'WW ',
+                '   '
+            ],
+                {
+                    W: `${modID}:${woodType}_planks`,
+                    F: `minecraft:flint`
+                })
+        }
+        return this;
+    },
     all: function () {
         this.planks()
         this.slab()
@@ -482,6 +529,8 @@ Wood.prototype = {
         this.pressurePlate()
         this.button()
         this.boats()
+        this.bookshelf()
+        this.craftingTable()
     }
 }
 

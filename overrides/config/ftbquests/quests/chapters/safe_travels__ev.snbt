@@ -1,6 +1,7 @@
 {
 	autofocus_id: "5837A875D09D3E35"
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "safe_travels__ev"
 	group: "473CC3AD40832CD0"
@@ -10,14 +11,11 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["7C8367D922103E19"]
+			dependencies: ["685847565997C803"]
 			description: [
 				"Welcome forth to the age of &5EV&r"
 				""
-				"This is where your &eautomation skills&r will be put to the test, as &bprocessing chains&r and &bgeneral chemistry&r grow more complex as your revenge plans unfold."
-				""
-				"&3&oYour lamentations are known solely to the stars, while the void beyond remains oblivious to your motivations.&r"
-				"&c&oFor now.&r"
+				"This is where your &eautomation skills&r will be put to the test, as &bprocessing chains&r and &bgeneral chemistry&r grow more complex as your plans unfold."
 			]
 			hide_until_deps_visible: true
 			id: "5837A875D09D3E35"
@@ -29,7 +27,7 @@
 				item: "gtceu:ev_machine_hull"
 				type: "item"
 			}]
-			title: "EV CHAPTER WIP "
+			title: "EV Age"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -65,7 +63,7 @@
 				item: "kubejs:mana_deposited_wafer"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -109,27 +107,36 @@
 				item: "gtceu:uraninite_dust"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 2.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["55791C262EB37FB7"]
 			dependency_requirement: "one_completed"
-			icon: "gtceu:uv_fusion_reactor"
+			icon: "gtceu:molten_salt_reactor"
 			id: "74309E61E59DB15E"
 			shape: "hexagon"
 			size: 1.25d
-			tasks: [{
-				id: "5600EC34B9B878B8"
-				item: "gtceu:molten_salt_reactor"
-				type: "item"
-			}]
+			subtitle: "Time to get Critical!"
+			tasks: [
+				{
+					id: "5600EC34B9B878B8"
+					item: "gtceu:molten_salt_reactor"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "1B7F425AA5D1B839"
+					item: { Count: 64, id: "cosmiccore:high_temperature_fission_casing" }
+					type: "item"
+				}
+			]
 			title: "FUUUUS- Wait... FISSSSION!"
 			x: 8.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["2D8D515852B1107E"]
+			dependencies: ["66199EEBDDC26CD6"]
 			id: "4E624B18AFD31904"
 			shape: "hexagon"
 			tasks: [{
@@ -149,23 +156,25 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -4.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["50ADEFE7F2587791"]
+			dependencies: ["66199EEBDDC26CD6"]
 			id: "5E2D93FAA0E33E3D"
+			shape: "hexagon"
 			tasks: [{
 				id: "20E3ABFE5745EE07"
 				item: "gtceu:plutonium_ingot"
 				type: "item"
 			}]
 			x: 6.0d
-			y: -6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
 				"726C3FB991868CF4"
 				"2B03866847349B9D"
+				"0E71C56F27FBDB67"
 			]
 			id: "2F9A455A45B89627"
 			tasks: [{
@@ -177,10 +186,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: [
-				"2F9A455A45B89627"
-				"726C3FB991868CF4"
-			]
+			dependencies: ["2F9A455A45B89627"]
 			id: "2480C3B3F10F70EF"
 			tasks: [{
 				id: "6881FB5E0DAA12D0"
@@ -198,18 +204,17 @@
 				item: "gtceu:fine_plutonium_wire"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 6.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["5837A875D09D3E35"]
 			description: [
-				"Upon my attempts to establish connections with Alfheim, all I am met with is silence."
+				"Upon my attempts to establish connections with sentient worlds, all I am met with is silence."
 				""
-				"Alfheim has been destroyed here, and echos many stars share the same fate."
+				"A place known as Alfheim has been destroyed here, and echos many stars share the same fate."
 				""
-				"I need to stop this."
-				"\"I\" must of caused this in the past, there's no other way such a beautiful concept would go to die."
+				"I was provided with the designs to call out to the stars, potentially hope hasn't been lost."
 			]
 			id: "125CD8C8BF8E56AE"
 			shape: "hexagon"
@@ -226,9 +231,9 @@
 		{
 			dependencies: ["125CD8C8BF8E56AE"]
 			description: [
-				"Essence Reactor Mk1"
+				"The Essence reactor"
 				""
-				"Intakes mundane components and uses the basics of psionic manipulation through an arcane conduit to produce complex products."
+				"A piece of technology allowing emulation of complex arcana discovered in Alfheim."
 			]
 			id: "151A9B2F42C9284E"
 			subtitle: "A plan forms"
@@ -243,6 +248,7 @@
 		}
 		{
 			dependencies: ["627303BD04BDAC20"]
+			icon: "botania:elementium_ingot"
 			id: "40584BD5E47EF0D7"
 			tasks: [
 				{
@@ -267,37 +273,59 @@
 		{
 			dependencies: ["40584BD5E47EF0D7"]
 			description: [
-				"It's time to start fighting back."
+				"Virtue Pylons, what seem to be beacons and spatial markers for calling out to the stars."
 				""
-				"Sleeping among the stars, are arbiters of this world."
+				"I will need to construct a ritual in hopes of hearing back from any living being."
 				""
-				"I must strike one down to start to bend the laws of this place to my will."
 				""
-				"Only then I can break the shackles that tie me down."
-				""
-				"I'm coming for you."
+				"Follow the guide within the lexica botania. or Ponder a Beacon (TODO)"
 			]
+			icon: "botania:gaia_pylon"
 			id: "2C37D2FB314E1C7E"
-			shape: "hexagon"
-			size: 1.0d
-			subtitle: "Armed for Conflict"
-			tasks: [{
-				id: "292672F5B1FE626E"
-				item: "botania:gaia_pylon"
+			rewards: [{
+				id: "1FE0363EE846F48B"
+				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Curiosity"
+			tasks: [
+				{
+					count: 4L
+					id: "292672F5B1FE626E"
+					item: "botania:gaia_pylon"
+					type: "item"
+				}
+				{
+					id: "37C9E425C8C2ED96"
+					item: "minecraft:beacon"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["2C37D2FB314E1C7E"]
 			description: [
-				"Beating and swaying along the laws of arbitration, virtues push the limits by controlling god-like powers."
+				"This time, a headache— not from questions, but from actions."
 				""
-				"Directly infusing this godhood into myself would shatter my existence;"
-				"but maybe machine hulls can withstand the punishment."
+				"After calling down an accidental hostile force, I am almost certain they are of my design—a fragment of me. Every shard of Perpetuity on me exploded into violent static the moment it touched down. A violent whirl of emotions tugged at me, almost ripping my mind apart."
+				""
+				"What are they? Who am I? And unfortunately I am almost certain there are more of them."
+				"I need industry, and I need weaponry. I feel a large-scale conflict with these fragmentations will result in a demise worse than death."
+				""
+				"The corpse has turned into orbs of resplendent marbles. I can only assume this is a rarer type of Perpetuity— one I can’t create myself."
+				"I will name them \"&eVirtue Essence&r\" for ease of documentation."
 			]
+			hide_text_until_complete: true
 			id: "7821728DED2F1B37"
+			rewards: [{
+				id: "6F5BF95E7C66D16E"
+				item: "botania:gaia_head"
+				type: "item"
+			}]
 			subtitle: "The essence of false causality"
 			tasks: [{
 				id: "1C1E77BE73122C6D"
@@ -314,7 +342,8 @@
 				"43F0CB80703C49A2"
 			]
 			description: [
-				"&bVirtue Meld&r is an unique composition of several exotic materials you've acquired so far; And the essence of a dead god but that's not important."
+				"&bVirtue Meld&r is an unique composition of several exotic materials you've acquired so far; And the essence of a dead being but that isn't important"
+				""
 				""
 				"Due to it's steep cost in &aluminite&r, it is now strongly advised to passive &aluminite&r."
 				""
@@ -342,9 +371,34 @@
 				"296B15E940C09EDB"
 				"21BE154ED4F3F6C6"
 			]
+			description: [
+				"If you've gotten here, you've most likely made everything you need for IV."
+				""
+				"- Elementium"
+				"- Virtue Meld"
+				"- Tungsten Steel"
+				"- Praseodymium"
+				"- Nano Circuits"
+				""
+				"It is most likely a good time to set up permanent power infrastructure, if you haven't already as power cost will inflate from here onwards"
+			]
 			id: "44DE661BAA434766"
+			rewards: [{
+				id: "57895AE3A7CAB2DB"
+				item: {
+					Count: 1
+					id: "trofers:small_plate"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "frontiers:materials/virtue"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
+			subtitle: "Star Dancer"
 			tasks: [{
 				id: "74B6CB5AE39A2547"
 				item: "gtceu:iv_machine_hull"
@@ -388,50 +442,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["01662E3A99EA70D9"]
-			id: "3F1DFE1D8D16C136"
-			tasks: [{
-				id: "5F60C69EF01CD8A2"
-				item: "gtceu:thundering_aerocloud_solution_bucket"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["3F1DFE1D8D16C136"]
-			id: "7F96E862BBCFD0AE"
-			tasks: [{
-				id: "2996EB6196E9B351"
-				item: "gtceu:thundering_aerocloud_concentration_bucket"
-				type: "item"
-			}]
-			x: -4.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["7F96E862BBCFD0AE"]
-			id: "57323E8B9B2EAF65"
-			tasks: [{
-				id: "15D9FAEB18774B2C"
-				item: "gtceu:thundering_mana_bucket"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["57323E8B9B2EAF65"]
-			id: "7A5FFB69AAE757FB"
-			tasks: [{
-				id: "3B0F940F48A3A7C7"
-				item: "gtceu:thunder_boosted_source_diesel_bucket"
-				type: "item"
-			}]
-			x: -7.5d
-			y: 4.0d
-		}
-		{
 			dependencies: ["3CC0B57321E8DD80"]
 			id: "01662E3A99EA70D9"
 			tasks: [{
@@ -440,29 +450,18 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3CC0B57321E8DD80"]
-			id: "06E6DC704BE42D29"
-			tasks: [{
-				id: "0A2B523BB0F277A6"
-				item: "gtceu:nitrobenzene_bucket"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["06E6DC704BE42D29"]
 			id: "62D8A986F474023F"
 			tasks: [{
 				id: "195253EE9C441311"
 				item: "gtceu:gas_large_turbine"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.5d
+			x: -1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -471,6 +470,15 @@
 				"636BBD84AF9B125B"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "gtceu:turbine_rotor"
+				tag: {
+					GT.PartStats: {
+						Material: "gtceu:aluminium"
+					}
+				}
+			}
 			id: "44166B73DECEC3CA"
 			tasks: [{
 				id: "554AC50C216CD399"
@@ -483,13 +491,14 @@
 				title: "\"Any Turbine Rotor\""
 				type: "item"
 			}]
-			x: 1.5d
-			y: 5.5d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["44166B73DECEC3CA"]
 			description: ["The higher the tier above EV, the more efficient the recipe becomes"]
 			hide_until_deps_visible: true
+			icon: "gtceu:opv_rotor_holder"
 			id: "217D18CBDCF23123"
 			tasks: [{
 				id: "72CC81CF85A8869C"
@@ -503,8 +512,8 @@
 				title: "Any Rotor Holder (HV-UV)"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 6.5d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -517,6 +526,7 @@
 				{
 					id: "3797DCF3F4F6AB91"
 					item: "gtceu:uranium_hexafluoride_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -537,6 +547,7 @@
 				{
 					id: "356786A651B279D0"
 					item: "gtceu:enriched_uranium_hexafluoride_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -557,6 +568,7 @@
 				{
 					id: "2615586D2050EBE9"
 					item: "gtceu:depleted_uranium_hexafluoride_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -571,7 +583,6 @@
 		}
 		{
 			dependencies: [
-				"69C238710AC5E0F5"
 				"4B33D9E665298C60"
 				"42FBED68FB3BB538"
 				"2CF1EE05CF359064"
@@ -605,14 +616,22 @@
 		}
 		{
 			dependencies: ["71BB86F673F75CEF"]
+			description: [
+				"The Power Substation is a massive multiblock battery allowing you to centralize your power storage. It can take any kind accept any tier of hatch/dynamo as long as you have that tier of capacitor inside."
+				""
+				""
+				"Enjoy proper energy managment now!"
+			]
 			id: "4F18985BF0C10A39"
 			shape: "hexagon"
 			size: 1.75d
+			subtitle: "&fPower the world!"
 			tasks: [{
 				id: "0D4E388F306CC922"
 				item: "gtceu:power_substation"
 				type: "item"
 			}]
+			title: "&bMass Energy Distribution"
 			x: 3.5d
 			y: -12.0d
 		}
@@ -644,37 +663,6 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["66199EEBDDC26CD6"]
-			description: ["You'll also have to process neptunium into plutonium - you can most likely run it through the same setup you used to process your uranium."]
-			id: "2D8D515852B1107E"
-			shape: "gear"
-			subtitle: "The Cycle Continues"
-			tasks: [{
-				id: "7A04212E9D4DC416"
-				item: "gtceu:neptunium_dust"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4E624B18AFD31904"]
-			description: [
-				"As you progress, lower tier nuclear elements will be minable on distant planets."
-				""
-				"In short, it'll become easier to produce higher tier nuclear elements/more of the earlier ones."
-			]
-			id: "50ADEFE7F2587791"
-			subtitle: "One More Time"
-			tasks: [{
-				id: "436EB99C6CD074F7"
-				item: "gtceu:plutonium_dust"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -3.0d
-		}
-		{
 			dependencies: ["26EFA20A9C9A92A3"]
 			id: "329307C3E9C71752"
 			shape: "hexagon"
@@ -683,7 +671,7 @@
 				item: "gtceu:pulse_heat_exchanger"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 7.0d
 			y: 0.0d
 		}
 		{
@@ -694,7 +682,7 @@
 				item: "gtceu:waste_uranium_fuel_salt_bucket"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.25d
 			y: 0.0d
 		}
 		{
@@ -712,6 +700,7 @@
 		}
 		{
 			dependencies: ["5837A875D09D3E35"]
+			icon: "gtceu:raw_tungstate"
 			id: "78F750D2763EA42B"
 			subtitle: "Welcome to EV by the way."
 			tasks: [{
@@ -738,6 +727,7 @@
 				{
 					id: "2B81B835B6C79DA8"
 					item: "gtceu:impure_sodium_tungstate_solution_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -758,6 +748,7 @@
 				{
 					id: "4D67A058603634C0"
 					item: "gtceu:sodium_tungstate_solution_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -778,6 +769,7 @@
 				{
 					id: "144D108BBD9BBBD9"
 					item: "gtceu:trioctylammonium_isopolytungstate_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -826,17 +818,32 @@
 		{
 			dependencies: ["4F72526910AA673C"]
 			id: "746EE169EC0C51EA"
+			subtitle: "Your new favorite metal"
 			tasks: [{
 				id: "6F1859BDEC7D2263"
 				item: "gtceu:tungsten_dust"
 				type: "item"
 			}]
+			title: "&bTungsten!"
 			x: -3.5d
 			y: -9.0d
 		}
 		{
 			dependencies: ["0005DD30A37AB361"]
 			id: "3EE6B0A888940001"
+			rewards: [{
+				id: "4B890B2BE2B75A70"
+				item: {
+					Count: 1
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "frontiers:coils/pifew"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.25d
 			subtitle: "A weird conundrum"
@@ -862,32 +869,26 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["44DE661BAA434766"]
-			id: "0F6F2DC7E0F3E390"
-			size: 1.75d
-			tasks: [{
-				id: "084FCB67CD984210"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_2_rocket"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 0.0d
-			y: -16.5d
-		}
-		{
 			dependencies: [
 				"746EE169EC0C51EA"
 				"3EE6B0A888940001"
 			]
+			description: ["&aTungstensteel&r is the fruits of your labor, allowing you to create stronger machine hulls and components."]
 			id: "21BE154ED4F3F6C6"
+			rewards: [{
+				id: "3D0B6BDF1B8280F3"
+				item: "cosmiccore:cluster_of_perpetuity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "A Much Stronger Metal"
 			tasks: [{
 				id: "111F098763F0D489"
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
+			title: "Tungstenseel"
 			x: -3.5d
 			y: -14.0d
 		}
@@ -895,8 +896,17 @@
 			dependencies: [
 				"746EE169EC0C51EA"
 				"2B2C603190C490F2"
+				"7821728DED2F1B37"
 			]
+			description: [
+				"You're in a predicament, your current coils can't reach high enough temperatures to smelt pure Tungstensteel."
+				""
+				"Doping the mixture with prisma allows an overall lower forging temperature, but once tempered becomes capable of melting apart the glass marbles the fragment of yourself spilled into this world."
+			]
+			hide_text_until_complete: true
 			id: "0005DD30A37AB361"
+			shape: "hexagon"
+			subtitle: "Workable Tungsten  | Description Hidden until completion"
 			tasks: [{
 				id: "4DA453A8043EECAF"
 				item: "cosmiccore:prismatic_tungstensteel_ingot"
@@ -904,95 +914,6 @@
 			}]
 			x: -1.5d
 			y: -10.5d
-		}
-		{
-			dependencies: [
-				"0329F3565A24E95F"
-				"5837A875D09D3E35"
-			]
-			description: ["Placeholder : SOURCE - LRE / MRE "]
-			hide_dependency_lines: true
-			hide_until_deps_visible: true
-			icon: "gtceu:praseodymium_ingot"
-			id: "478B3130E4E9FE6B"
-			shape: "hexagon"
-			size: 1.25d
-			subtitle: "Yay more rare earths"
-			title: "Praseodymium Sources"
-			x: -12.0d
-			y: -14.0d
-		}
-		{
-			dependencies: ["478B3130E4E9FE6B"]
-			id: "2DF60BFD430D8928"
-			tasks: [{
-				id: "4EDD11ADAD9847F6"
-				item: "gtceu:neodymium_praseodymium_rod"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -14.0d
-		}
-		{
-			dependencies: [
-				"33CE2F436798DC0A"
-				"26EF2E92ED5362D2"
-				"7F4ED2D522BA6008"
-				"21BE154ED4F3F6C6"
-			]
-			id: "1B4341A2252E0EA3"
-			shape: "hexagon"
-			size: 1.25d
-			tasks: [{
-				id: "7E592A62CEDE1041"
-				item: "gtceu:iv_electric_motor"
-				type: "item"
-			}]
-			x: -5.5d
-			y: -14.0d
-		}
-		{
-			dependencies: ["296B15E940C09EDB"]
-			hide_dependency_lines: true
-			id: "33CE2F436798DC0A"
-			shape: "hexagon"
-			tasks: [{
-				id: "7302CD780CAC5CA1"
-				item: "gtceu:virtue_meld_double_wire"
-				type: "item"
-			}]
-			x: -5.5d
-			y: -15.5d
-		}
-		{
-			dependencies: ["2DF60BFD430D8928"]
-			description: [
-				"Yup, you need it."
-				"Yup, I did this solely to spite you"
-				"Yup, You'll need an IV one next"
-				"Yes, I made the polarizer vital to progression"
-				"Dw, you can make a large one in IV :)"
-			]
-			id: "3CA502E5762F362F"
-			subtitle: "L.M.A.O"
-			tasks: [{
-				id: "0686F5D779AA76F9"
-				item: "gtceu:ev_polarizer"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -14.0d
-		}
-		{
-			dependencies: ["3CA502E5762F362F"]
-			id: "26EF2E92ED5362D2"
-			tasks: [{
-				id: "36A02193C50E37B5"
-				item: "gtceu:magnetic_neodymium_praseodymium_rod"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -14.0d
 		}
 		{
 			dependencies: ["746EE169EC0C51EA"]
@@ -1003,24 +924,31 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -10.5d
+			y: -9.0d
 		}
 		{
-			dependencies: [
-				"03DB999CCE43BBAE"
-				"51A7A8BE11EC9864"
+			dependencies: ["03DB999CCE43BBAE"]
+			description: [
+				"If you haven't already, you'll need to produce a higher quality rubber."
+				"&aSilicon Rubber&r or &aStyrene Butadiene Rubber&r."
+				""
+				""
+				"You should know how to use &6EMI&r by now, no production chain for you."
+				"You will need these for various IV Parts- Namely Pump, Conveyor, Sensor and Emitter."
 			]
 			id: "7F4ED2D522BA6008"
+			subtitle: "Buh"
 			tasks: [{
-				id: "0BA9E56376A24184"
-				item: "gtceu:tungsten_double_cable"
+				id: "0A8BDC1DDC0BE03B"
+				item: "gtceu:tungsten_single_cable"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -12.0d
+			x: -7.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["151A9B2F42C9284E"]
+			icon: "bloodmagic:reagentgrowth"
 			id: "627303BD04BDAC20"
 			shape: "hexagon"
 			subtitle: "Yes, make them all."
@@ -1051,7 +979,10 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["71BB86F673F75CEF"]
+			dependencies: [
+				"71BB86F673F75CEF"
+				"20AB4ABE6202A357"
+			]
 			id: "43F0CB80703C49A2"
 			shape: "octagon"
 			size: 1.25d
@@ -1110,29 +1041,6 @@
 			}]
 			x: -2.5d
 			y: -6.0d
-		}
-		{
-			dependencies: ["283CC0607989316D"]
-			id: "51A7A8BE11EC9864"
-			tasks: [{
-				id: "7A9C318044165EF1"
-				item: "gtceu:silicone_rubber_bucket"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -10.5d
-		}
-		{
-			dependencies: ["5837A875D09D3E35"]
-			hide_dependency_lines: true
-			id: "283CC0607989316D"
-			tasks: [{
-				id: "78B697E42A7F8CF3"
-				item: "gtceu:polydimethylsiloxane_dust"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -9.0d
 		}
 		{
 			dependencies: ["151A9B2F42C9284E"]
@@ -1197,6 +1105,7 @@
 				{
 					id: "2BDF55E940487A2E"
 					item: "gtceu:astraline_prismatic_solution_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1235,10 +1144,12 @@
 			dependencies: ["42B3BA60563E4A51"]
 			icon: "gtceu:chloroiridic_acid_bucket"
 			id: "3A2BDEB1EED0073E"
+			shape: "circle"
 			tasks: [
 				{
 					id: "7B7E32EBD34E8ACB"
 					item: "gtceu:chloroiridic_acid_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1314,6 +1225,7 @@
 				{
 					id: "6C596085EFA50E1D"
 					item: "gtceu:ruthenium_osmium_tetroxides_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1328,12 +1240,14 @@
 		}
 		{
 			dependencies: ["0BEB8373FA0FA315"]
+			description: ["Note; the Cracking step preceeding this material consumes the chlorine, this is one of the few cases of mass-loss in platline."]
 			icon: "gtceu:chlororuthenic_acid_osmium_tetroxide_solution_bucket"
 			id: "28962A60FD7E3C73"
 			tasks: [
 				{
 					id: "0C9FFCA9C49DC0F7"
 					item: "gtceu:chlororuthenic_acid_osmium_tetroxide_solution_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1354,6 +1268,7 @@
 				{
 					id: "304CC98B94061E96"
 					item: "gtceu:chlororuthenic_acid_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1442,6 +1357,88 @@
 			}]
 			x: -8.5d
 			y: -10.5d
+		}
+		{
+			dependencies: ["40584BD5E47EF0D7"]
+			description: [
+				"The &eMana Simulator&r Is a Device Capable of converting raw materials directly into &aPotent Mana&r"
+				""
+				"You will need to provide at least one Mechanical Flower to this multiblock and the respective resources. On average the yield of potent mana is much higher than the amount of raw mana you'd recieve by using the botania flower."
+			]
+			id: "6AB3CA3AB3880037"
+			subtitle: "Mechanized Mana"
+			tasks: [{
+				id: "07ABDBE82C20E943"
+				item: "gtceu:mana_simulator"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5E2D93FAA0E33E3D"]
+			description: [
+				"Radon is needed for the EV Circuit Assembler ( Notably the EV Emitter ) "
+				""
+				"I'd recommend a passive setup."
+			]
+			id: "502E5E527584AB20"
+			shape: "hexagon"
+			subtitle: "Gassy Radiation"
+			tasks: [{
+				id: "02CAE9B129A28A6A"
+				item: "gtceu:radon_bucket"
+				type: "item"
+			}]
+			x: 5.25d
+			y: -2.5d
+		}
+		{
+			dependencies: ["502E5E527584AB20"]
+			id: "0E71C56F27FBDB67"
+			tasks: [{
+				id: "71C9BE46EF85747D"
+				item: "gtceu:ev_circuit_assembler"
+				type: "item"
+			}]
+			x: 5.25d
+			y: -4.5d
+		}
+		{
+			dependencies: ["40584BD5E47EF0D7"]
+			description: [
+				"The &eAlloy Blast Smelter&r handles many advanced alloying recipes, some of which may have extreme magical properties."
+				""
+				"A better power delivery system is needed to avoid frying your furnace entirely— ironic, right?"
+			]
+			id: "20AB4ABE6202A357"
+			rewards: [{
+				count: 8
+				id: "25C8299070A96A2E"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "ABS Power Control"
+			tasks: [{
+				id: "72A967D0C479ABDC"
+				item: "gtceu:elementium_quadruple_wire"
+				type: "item"
+			}]
+			title: "Elementium Wires"
+			x: 1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["44DE661BAA434766"]
+			icon: "createdeco:decal_up"
+			id: "3C2F76C18CC1A56E"
+			subtitle: "Ascend Higher"
+			tasks: [{
+				id: "7097E9723F20D550"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -16.0d
 		}
 	]
 	title: "Safe Travels - [EV]"

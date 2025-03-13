@@ -124,4 +124,8 @@ ServerEvents.recipes(event => {
         .itemOutputs('2x delightful:nut_dough')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(400);
+
+    event.replaceInput({ output: 'croptopia:roasted_nuts' }, '#forge:nuts', '#frontiers:croptopia/nuts')
+    event.replaceInput({ input: '#forge:peanut' }, 'vintagedelight:peanut', '#forge:peanuts')
+
 })
