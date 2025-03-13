@@ -352,8 +352,8 @@ ServerEvents.recipes(event => {
        event.recipes.gtceu.mixer('cosmiccore:sediment_sludge_mixing_good')
               .itemInputs(['2x biomesoplenty:blackstone_bulb', '3x gtceu:netherrack_dust', '2x minecraft:crimson_fungus'])
               .inputFluids('gtceu:nether_sediment_sludge 1000')
-              .inputFluids('minecraft:water 1000')
-              .outputFluids('gtceu:nether_sediment_sludge 2000')
+              .inputFluids('minecraft:water 3000')
+              .outputFluids('gtceu:nether_sediment_sludge 4000')
               .duration(80)
               .circuit(1)
               .EUt(GTValues.VA[GTValues.LV]);
