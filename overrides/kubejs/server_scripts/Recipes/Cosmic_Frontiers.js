@@ -548,6 +548,16 @@ ServerEvents.recipes(event => {
               .circuit(6)
               .duration(320)
               .EUt(GTValues.VA[GTValues.IV]);
+       event.remove({ id: 'gtceu:distillation_tower/distill_coal_gas'})
+       event.recipes.gtceu.distillation_tower('frontiers:distill_coal_gas')
+              .inputFluids('gtceu:coal_gas 1000')
+              .outputFluids('gtceu:carbon_dioxide 200')
+              .outputFluids('gtceu:coal_tar 200')
+              .outputFluids('gtceu:ammonia 200')
+              .outputFluids('gtceu:ethylbenzene 200')
+              .outputFluids('gtceu:kerosene 200')
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
        event.recipes.gtceu.assembler('phenolic_board_good')
               .itemInputs('botania:manaweave_cloth')
               .inputFluids('gtceu:glue 100')
