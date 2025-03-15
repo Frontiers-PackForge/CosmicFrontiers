@@ -15,9 +15,6 @@ ServerEvents.tags('item', e => {
     e.removeAll('diet:special_food') // Slicer recipes add nutrition to them already, keeping them in this tag makes it do double nutrition
     
     
-    spring('biomeswevegone:blueberries')
-    summer('biomeswevegone:blueberries')
-
     // Seasonal crops
     function spring(item) {
         e.add('serenseseasons:spring_crops', item)
