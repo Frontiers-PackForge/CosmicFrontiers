@@ -14,7 +14,7 @@ let yeet_f = (itemName) => {
   ServerEvents.tags('fluid', event => {
     event.add('c:hidden_from_recipe_viewers', itemName)
   })
-}   
+}
 
 yeet('bloodmagic:soul_forge')
 
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LuV]);
   event.recipes.bloodmagic.altar('bloodmagic:reinforcedslate', 'kubejs:wrapped_slate_tier_2').upgradeLevel(1).drainRate(25).consumptionRate(20).altarSyphon(500)
   event.recipes.gtceu.hellfire_foundry('t2_slate_prep')
-    .itemInputs('bloodmagic:blankslate','8x gtceu:polytetrafluoroethylene_foil')
+    .itemInputs('bloodmagic:blankslate', '8x gtceu:polytetrafluoroethylene_foil')
     .inputFluids('gtceu:grading_fluid_1 20')
     .itemOutputs('kubejs:wrapped_slate_tier_2')
     .soulInput(500)
@@ -101,10 +101,38 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'bloodmagic:altar/imbuedslate' })
   event.recipes.bloodmagic.altar('bloodmagic:infusedslate', 'kubejs:wrapped_slate_tier_3').upgradeLevel(2).drainRate(55).consumptionRate(70).altarSyphon(2500)
   event.recipes.gtceu.hellfire_foundry('t3_slate_prep')
-    .itemInputs('bloodmagic:reinforcedslate','8x gtceu:polybenzimidazole_foil')
+    .itemInputs('bloodmagic:reinforcedslate', '8x gtceu:polybenzimidazole_foil')
     .inputFluids('gtceu:grading_fluid_2 40')
     .itemOutputs('kubejs:wrapped_slate_tier_3')
     .soulInput(2500)
+    .duration(60)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.hellfire_foundry('apoth_upgrade_resource')
+    .itemInputs('apotheosis:common_material', 'apotheosis:common_material', 'apotheosis:common_material', 'apotheosis:common_material', 'apotheosis:common_material')
+    .inputFluids('gtceu:grading_fluid_1 250')
+    .itemOutputs('apotheosis:uncommon_material')
+    .soulInput(20000)
+    .duration(60)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.hellfire_foundry('apoth_upgrade_resource_2')
+    .itemInputs('apotheosis:uncommon_material', 'apotheosis:uncommon_material', 'apotheosis:uncommon_material', 'apotheosis:uncommon_material', 'apotheosis:uncommon_material')
+    .inputFluids('gtceu:grading_fluid_2 250')
+    .itemOutputs('apotheosis:rare_material')
+    .soulInput(20000)
+    .duration(60)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.hellfire_foundry('apoth_upgrade_resource_3')
+    .itemInputs('apotheosis:rare_material', 'apotheosis:rare_material', 'apotheosis:rare_material', 'apotheosis:rare_material', 'apotheosis:rare_material')
+    .inputFluids('gtceu:grading_fluid_3 250')
+    .itemOutputs('apotheosis:epic_material')
+    .soulInput(20000)
+    .duration(60)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.hellfire_foundry('apoth_upgrade_resource_4')
+    .itemInputs('apotheosis:epic_material', 'apotheosis:epic_material', 'apotheosis:epic_material', 'apotheosis:epic_material', 'apotheosis:epic_material')
+    .inputFluids('gtceu:grading_fluid_4 250')
+    .itemOutputs('apotheosis:mythic_material')
+    .soulInput(20000)
     .duration(60)
     .EUt(GTValues.VA[GTValues.LuV]);
   event.remove({ id: 'bloodmagic:altar/demonicslate' })
@@ -113,7 +141,7 @@ ServerEvents.recipes(event => {
   //TODO T5 Slate Recipes
 
   event.recipes.gtceu.mana_engraver('altar_engraver')
-    .itemInputs(['gtceu:iv_chemical_bath', 'botania:fabulous_pool','4x bloodmagic:reagentbinding', '2x gtceu:iv_electric_pump', '16x gtceu:stone_plate', 'botania:rune_spring', 'botania:rune_summer', 'botania:rune_autumn', 'botania:rune_winter'])
+    .itemInputs(['gtceu:iv_chemical_bath', 'botania:fabulous_pool', '4x bloodmagic:reagentbinding', '2x gtceu:iv_electric_pump', '16x gtceu:stone_plate', 'botania:rune_spring', 'botania:rune_summer', 'botania:rune_autumn', 'botania:rune_winter'])
     .itemOutputs('bloodmagic:altar')
     .duration(240)
     .EUt(GTValues.VA[GTValues.IV]);
