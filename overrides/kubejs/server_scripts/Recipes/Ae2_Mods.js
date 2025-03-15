@@ -27,8 +27,6 @@ ServerEvents.recipes(event => {
 })
 
 //Oh jeebus AE2 Recipe Yeeting
-yeet('gtceu:me_input_bus')
-yeet('gtceu:me_input_hatch')
 yeet('ae2:fluix_glass_cable')
 yeet('ae2:fluix_covered_cable')
 yeet('ae2:fluix_covered_dense_cable')
