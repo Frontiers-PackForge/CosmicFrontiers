@@ -66,6 +66,8 @@ ServerEvents.recipes(event => {
   event.recipes.bloodmagic.altar('bloodmagic:daggerofsacrifice', 'gtceu:nano_saber').drainRate(50).consumptionRate(25).altarSyphon(2000)
   event.recipes.bloodmagic.altar('bloodmagic:weakbloodorb', 'gtceu:ev_field_generator').drainRate(100).consumptionRate(50).altarSyphon(5000)
 
+  event.recipes.bloodmagic.altar('bloodmagic:apprenticebloodorb', 'apprenticebloodorb_frame').upgradeLevel(1).drainRate(100).consumptionRate(50).altarSyphon(5000)
+
 
   //T2 Orb
   event.recipes.bloodmagic.altar('bloodmagic:daggerofsacrifice', 'gtceu:nano_saber').upgradeLevel(0).drainRate(50).consumptionRate(25).altarSyphon(10000)
