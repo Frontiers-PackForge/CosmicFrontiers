@@ -62,6 +62,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'gtceu:flint_knife' })
   event.remove({ id: 'emi:crafting/repairing/gtceu/flint_knife' })
   event.remove({ id: 'gtceu:centrifuge/rare_earth_separation' })
+  event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_blue_alloy_dust_to_block' })
 
 
   event.replaceOutput({ id: 'gtceu:shaped/extreme_combustion_engine' }, 'gtceu:extreme_combustion_engine', 'gtceu:extreme_combustion_engine_cc')
@@ -474,6 +475,16 @@ ServerEvents.recipes(event => {
     C: 'gtceu:bronze_frame',
     B: 'minecraft:cauldron',
     Q: 'ulvcovm:ulv_electric_piston'
+  })
+  event.shaped('cosmiccore:hellfire_foundry', [
+    'LWL',
+    'CRC',
+    'LWL'
+  ], {
+    L: 'kubejs:resplendent_sylvan_nanolattice',
+    W: 'cosmiccore:highly_conductive_fission_casing',
+    C: '#gtceu:circuits/luv',
+    R: 'bloodmagic:blankrune',
   })
   event.shaped('gtceu:steam_fluid_input_hatch', [
     ' G ',
