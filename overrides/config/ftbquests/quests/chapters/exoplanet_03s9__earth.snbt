@@ -519,7 +519,7 @@
 			description: [
 				"This is the final quest for the starting chapter. "
 				""
-				"The Steam Age will make you craft a lot of bronze. Please present some copper and tin to continue and open up the &aNext Chapter&r as well as the &6Store&r"
+				"The Steam Age will make you craft a lot of bronze. Please present some copper and tin to continue and open up the &aNext Chapter&r as well as &6everything else!&r"
 				""
 				"I wish you luck!"
 			]
@@ -531,7 +531,7 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "Complete this quest to advanced the questbook"
+			subtitle: "Complete this quest to advance the questbook"
 			tasks: [
 				{
 					count: 128L

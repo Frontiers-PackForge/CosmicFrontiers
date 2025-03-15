@@ -439,7 +439,7 @@
 		}
 		{
 			dependencies: ["032621AA64B4E743"]
-			description: ["Mars Contains Pure Plutonium, this should make it easier to produce middle grade fuels."]
+			description: ["Mars contains a much higher concentration in radioactive materials than the moon, this should h elp with your salt reactors."]
 			id: "5B89C5230F74CA3A"
 			shape: "gear"
 			tasks: [{
@@ -447,7 +447,7 @@
 				item: "gtceu:raw_plutonium"
 				type: "item"
 			}]
-			title: "Easier Plutonium Sources"
+			title: "Easier Uranium/Plutonium Sources"
 			x: -4.5d
 			y: 0.0d
 		}
@@ -673,7 +673,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -9.0d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -690,7 +690,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -7.5d
+			y: -13.5d
 		}
 		{
 			dependencies: [
@@ -706,8 +706,8 @@
 				item: "gtceu:palladium_ingot"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -7.5d
+			x: -2.5d
+			y: -13.5d
 		}
 		{
 			dependencies: ["1C69A670270A14F7"]
@@ -723,9 +723,12 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["043571B3B39ED283"]
+			dependencies: [
+				"043571B3B39ED283"
+				"1C69A670270A14F7"
+			]
 			id: "6B2A25D5C2C81847"
-			subtitle: "Cheap and Crude"
+			subtitle: "Expensive and Crude"
 			tasks: [{
 				id: "52D57C431FF7D682"
 				item: "bloodmagic:reagentbinding"
@@ -1086,7 +1089,10 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["71BF44B9337D9A09"]
+			dependencies: [
+				"71BF44B9337D9A09"
+				"5B1D7A68D8767876"
+			]
 			description: [
 				"Shouldn't be too bad, you already have virtue automated, right?"
 				""
@@ -1264,14 +1270,20 @@
 		}
 		{
 			dependencies: ["2F953B6A0C8B2E96"]
+			description: [
+				"You'll need At least 567 of these for your first soul forge, though you may want to make a T2 altar for the sacrificial dagger."
+				""
+				"PS: You can use world accelerators on the blood altar, pretty useful early on and when you automate blood"
+			]
 			id: "799D94D8D1C31A1C"
+			subtitle: "Bleeding Clean"
 			tasks: [{
 				id: "5FE76ADC54AC4190"
 				item: "bloodmagic:blankslate"
 				type: "item"
 			}]
 			x: -10.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["799D94D8D1C31A1C"]
@@ -1283,10 +1295,10 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: -3.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["799D94D8D1C31A1C"]
+			dependencies: ["2F953B6A0C8B2E96"]
 			description: [
 				"This weak orb helps diffuse powerful life essence into the roots of my being."
 				"Maybe the backpains will go away."
@@ -1313,8 +1325,8 @@
 			shape: "hexagon"
 			size: 1.25d
 			tasks: [{
-				id: "53088FE759F44249"
-				item: "cosmiccore:iv_soul_output_hatch"
+				id: "14A5B05E8ACCA70D"
+				item: "cosmiccore:iv_soul_input_hatch"
 				type: "item"
 			}]
 			x: -8.0d
@@ -1326,6 +1338,9 @@
 				"The Drygmy's in your grove seem to react positively to the essence of life, acting almost as a stimulant. "
 				""
 				"&eDrygmy Groves&r provided life essence will &nmultiply&r the base yield of any recipe ran inside."
+				""
+				""
+				"Note; Not Yet Implemented, placed here as a reminder for later!"
 			]
 			icon: "ars_nouveau:familiar_drygmy"
 			id: "6B5E90FEF5C8AEFD"
@@ -1357,7 +1372,7 @@
 		}
 		{
 			dependencies: ["42A3B6AE53A276C9"]
-			description: ["Life Essence imbued into rune creation allows for a more efficient rune extraction method."]
+			description: ["You can use Life Essence to unlock new recipes and boost the output of some as well!"]
 			id: "38E85FF8405B5D7E"
 			subtitle: "Rune Boosting"
 			tasks: [{
@@ -1382,37 +1397,40 @@
 		}
 		{
 			dependencies: ["2B624BCB0288F5FC"]
+			description: [
+				"The &cHellfire Foundry&r allows creation of &amagic catalysts&r needed for higher grade magitechnology."
+				""
+				"Can accept Life Essence from your Soul Network, requires an &eSoul Input Hatch&r."
+				""
+				"Can only accept one &eEnergy hatch&r (multi-amp allowed)"
+			]
+			icon: "cosmiccore:hellfire_foundry"
 			id: "1D962882C525C346"
-			subtitle: "TODO ; Make it a GT Structure"
-			tasks: [{
-				id: "3812E206493D5464"
-				item: "bloodmagic:soulforge"
-				type: "item"
-			}]
-			x: -9.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["1D962882C525C346"]
-			id: "035259769C57DD3D"
-			tasks: [{
-				id: "261D6F0D395BB30E"
-				item: {
-					Count: 1
-					id: "bloodmagic:soulgempetty"
-					tag: {
-						souls: 64.0d
-					}
+			subtitle: "The New Hellforge"
+			tasks: [
+				{
+					id: "215793693F07F438"
+					item: "cosmiccore:hellfire_foundry"
+					type: "item"
 				}
-				type: "item"
-			}]
-			x: -7.0d
+				{
+					count: 63L
+					id: "6E980D3720F9B024"
+					item: { Count: 63, id: "bloodmagic:blankrune" }
+					type: "item"
+				}
+			]
+			x: -9.0d
 			y: -5.0d
 		}
 		{
 			dependencies: [
 				"1D962882C525C346"
-				"035259769C57DD3D"
+				"2AD10E5A6E78B880"
+			]
+			description: [
+				"An IV Energy hatch only allows for the Creation of T2 Slate Catalysts."
+				"You can produce T3/4 Slates in LuV and T5+ Slates in ZPM"
 			]
 			id: "62F7C667E226E974"
 			shape: "hexagon"
@@ -1426,7 +1444,7 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["523DD0FBEF7C9B42"]
+			dependencies: ["2F953B6A0C8B2E96"]
 			description: [
 				"The Dagger of Sacrifice allows to kill other mobs for LP."
 				""
@@ -1439,8 +1457,8 @@
 				item: "bloodmagic:daggerofsacrifice"
 				type: "item"
 			}]
-			x: -13.5d
-			y: 0.0d
+			x: -11.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2F953B6A0C8B2E96"]
@@ -1459,7 +1477,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2B624BCB0288F5FC"]
+			dependencies: [
+				"2B624BCB0288F5FC"
+				"62F7C667E226E974"
+			]
 			id: "666091C27FA1ABFD"
 			shape: "hexagon"
 			size: 1.5d
@@ -1469,7 +1490,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: -6.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["1C69A670270A14F7"]
@@ -1668,6 +1689,39 @@
 			}]
 			x: 7.0d
 			y: -9.0d
+		}
+		{
+			dependencies: ["38E85FF8405B5D7E"]
+			description: [
+				"&eGrading Catalyst&r is required for high level &cHellfire Foundry&r recipes."
+				""
+				"Each tier coresponds with a different blood orb tier and various quality fluids of the respective tech tier."
+				""
+				"Tier 1 ; &eWeak Blood Orb&r"
+				"Tier 2 ; &aApprentice Blood Orb&r"
+				"Tier 3 ; &9Magician's Blood Orb&r"
+				"Tier 4 ; &6Master Blood Orb&r"
+				"Tier 5 ; &dArchmage's Blood Orb&r"
+				"Tier 6 ; &6Ascendant Blood Orb&r"
+				"Tier 7 ; &8Voidsent Blood Orb&r"
+				"Tier 8 ; &eSovereign's Blood Orb&r"
+			]
+			hide_until_deps_complete: false
+			id: "2AD10E5A6E78B880"
+			rewards: [{
+				count: 4
+				id: "0099FC4DA6B9AF81"
+				item: "cosmiccore:cluster_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "The New Fuel ; Demon Will Replacement"
+			tasks: [{
+				id: "06053A2E6B6D3DF8"
+				item: "gtceu:grading_fluid_1_bucket"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.0d
 		}
 	]
 	title: "Burning the Veil [IV]"
