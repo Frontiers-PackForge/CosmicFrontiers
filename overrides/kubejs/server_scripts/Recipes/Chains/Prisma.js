@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.assembler(`essence_reactor_controller`)
-        .itemInputs(['botania:alfheim_portal', 'gtceu:ev_machine_hull', 'gtceu:terrasteel_frame', '4x gtceu:long_terrasteel_rod', '2x gtceu:micro_processor_computer'])
+        .itemInputs(['botania:alfheim_portal', 'gtceu:ev_machine_hull', 'gtceu:terrasteel_frame', '4x gtceu:long_terrasteel_rod', '2x #gtceu:circuits/ev'])
         .inputFluids('gtceu:potent_mana 1000')
         .itemOutputs('gtceu:essence_reactor')
         .duration(240)
