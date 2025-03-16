@@ -11,6 +11,8 @@ ServerEvents.tags('item', e => {
     e.add('forge:onions', 'farmersdelight:onion')
     e.add('forge:dough', 'farmersdelight:wheat_dough')
     e.add('forge:doughs', 'gtceu:dough')
+    e.add('croptopia:beef_mutton', 'farmersdelight:minced_beef')
+    e.add('croptopia:beef_mutton', 'farmersdelight:mutton_chops')
     
     e.removeAll('diet:special_food') // Slicer recipes add nutrition to them already, keeping them in this tag makes it do double nutrition
     

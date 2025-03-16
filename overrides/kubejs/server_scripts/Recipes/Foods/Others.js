@@ -3,6 +3,10 @@ ServerEvents.recipes(event => {
 
     event.replaceInput({ input: '#forge:doughs' }, '#forge:doughs', '#forge:dough')
     event.replaceInput({ input: '#forge:dough/wheat' }, '#forge:dough/wheat', '#forge:dough')
+    event.replaceInput({ input: '#croptopia:pork_replacements' }, '#croptopia:pork_replacements', '#forge:raw_pork')
+    event.replaceInput({ input: '#croptopia:beef_replacements' }, '#croptopia:beef_replacements', '#forge:raw_beef')
+    event.replaceInput({ input: '#croptopia:chicken_replacements' }, '#croptopia:chicken_replacements', '#forge:raw_chicken')
+    
 
     event.recipes.gtceu.macerator(`croptopia:paprika`)
         .itemInputs('croptopia:chile_pepper')
