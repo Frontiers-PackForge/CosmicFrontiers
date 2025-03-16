@@ -11,6 +11,7 @@ ServerEvents.tags('item', e => {
     e.add('forge:onions', 'farmersdelight:onion')
     e.add('forge:dough', 'farmersdelight:wheat_dough')
     e.add('forge:doughs', 'gtceu:dough')
+    e.add('forge:raw_pork', 'croptopia:ground_pork')
     e.add('croptopia:beef_mutton', 'farmersdelight:minced_beef')
     e.add('croptopia:beef_mutton', 'farmersdelight:mutton_chops')
     
