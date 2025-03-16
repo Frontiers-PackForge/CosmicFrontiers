@@ -31,6 +31,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'ars_ocultas:craft_stabilizer_tier4'})
     event.remove({id:'occultism:ritual/craft_stabilizer_tier4'})
     event.remove({ output: 'ars_nouveau:archwood_chest' })
+    event.remove({ output: 'arseng:source_cell_housing' })
 
     event.shaped('ars_nouveau:archwood_chest', [
         'ABA',
@@ -251,6 +252,18 @@ ServerEvents.recipes(event => {
             A: 'ars_nouveau:source_gem_block',
             C: 'minecraft:redstone',
             B: 'gtceu:rose_gold_plate',
+        }
+    )
+    event.remove({ id: 'ars_nouveau:scribes_table' })
+    event.shaped('ars_nouveau:scribes_table', [
+        'AAA',
+        'C C',
+        'B B'
+    ],
+        {
+            A: 'ars_nouveau:archwood_slab',
+            C: 'gtceu:rose_gold_nugget',
+            B: '#forge:logs/archwood',
         }
     )
     event.remove({ id: 'ars_nouveau:source_jar' })
