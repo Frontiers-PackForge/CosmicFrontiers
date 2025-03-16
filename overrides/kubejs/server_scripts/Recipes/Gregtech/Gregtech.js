@@ -74,6 +74,16 @@ ServerEvents.recipes(event => {
     'gtceu:coke_oven_bricks'
   )
   event.replaceInput(
+    { output: 'gtceu:steam_machine_casing' }, 
+    'minecraft:bricks',
+    'gtceu:coke_oven_bricks'
+  )
+  event.replaceInput(
+    { output: 'gtceu:lp_steam_solid_boiler' },
+    'minecraft:bricks',
+    'gtceu:coke_oven_bricks'
+  )
+  event.replaceInput(
     { output: 'gtceu:hp_steam_solar_boiler' },
     'gtceu:steel_brick_casing',
     'gtceu:lp_steam_solar_boiler'
@@ -82,6 +92,11 @@ ServerEvents.recipes(event => {
     { output: 'gtceu:hp_steam_solid_boiler' },
     'minecraft:furnace',
     'gtceu:lp_steam_solid_boiler'
+  )
+  event.replaceInput(
+    { output: 'gtceu:hp_steam_solid_boiler' },
+    'minecraft:bricks',
+    'gtceu:firebricks'
   )
   event.replaceInput(
     { output: 'gtceu:hp_steam_liquid_boiler' },
@@ -431,7 +446,7 @@ ServerEvents.recipes(event => {
     R: 'gtceu:bronze_rotor',
     G: 'ulvcovm:ulv_electric_motor',
     C: 'gtceu:bronze_brick_casing',
-    B: 'minecraft:bricks'
+    B: 'gtceu:coke_oven_bricks'
   })
   event.shaped('gtceu:hp_steam_bender', [
     'PWP',
