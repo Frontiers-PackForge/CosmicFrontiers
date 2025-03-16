@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
   event.recipes.bloodmagic.altar('bloodmagic:daggerofsacrifice', 'gtceu:nano_saber').drainRate(50).consumptionRate(25).altarSyphon(2000)
   event.recipes.bloodmagic.altar('bloodmagic:weakbloodorb', 'gtceu:ev_field_generator').drainRate(100).consumptionRate(50).altarSyphon(5000)
 
-  event.recipes.bloodmagic.altar('bloodmagic:apprenticebloodorb', 'apprenticebloodorb_frame').upgradeLevel(1).drainRate(100).consumptionRate(50).altarSyphon(5000)
+  event.recipes.bloodmagic.altar('bloodmagic:apprenticebloodorb', 'kubejs:apprenticebloodorb_frame').upgradeLevel(1).drainRate(100).consumptionRate(50).altarSyphon(5000)
 
 
   //T2 Orb
@@ -92,6 +92,13 @@ ServerEvents.recipes(event => {
     .soulInput(5000)
     .duration(240)
     .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.hellfire_foundry('t2_orb_prep')
+    .itemInputs('4x bloodmagic:reinforcedslate', '8x gtceu:tempered_glass','4x bloodmagic:reinforcedslate', '8x gtceu:tempered_glass','gtceu:iv_field_generator')
+    .inputFluids('gtceu:grading_fluid_1 5000')
+    .itemOutputs('kubejs:apprenticebloodorb_frame')
+    .soulInput(5000)
+    .duration(60)
+    .EUt(GTValues.VA[GTValues.IV]);
   event.recipes.bloodmagic.altar('bloodmagic:reinforcedslate', 'kubejs:wrapped_slate_tier_2').upgradeLevel(1).drainRate(25).consumptionRate(20).altarSyphon(500)
   event.recipes.gtceu.hellfire_foundry('t2_slate_prep')
     .itemInputs('bloodmagic:blankslate', '8x gtceu:polytetrafluoroethylene_foil')
@@ -152,7 +159,7 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.mana_engraver('frontiers:grading_fluid_1')
     .notConsumable('bloodmagic:weakbloodorb')
     .itemInputs(['16x gtceu:carbon_dust', '4x gtceu:polydimethylsiloxane_dust', 'gtceu:virtue_meld_dust'])
-    .inputFluids('cosmiccore:prisma 2000', 'gtceu:triphenyl_phosphine 2000', 'gtceu:distilled_water 2000', 'gtceu:source_oils 2000')
+    .inputFluids('cosmiccore:prisma 2000', 'cosmiccore:triphenylphosphine 2000', 'gtceu:distilled_water 2000', 'gtceu:source_oils 2000')
     .outputFluids('gtceu:grading_fluid_1 1000')
     .duration(4800)
     .EUt(GTValues.VA[GTValues.IV]);
