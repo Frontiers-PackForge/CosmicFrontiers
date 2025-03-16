@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         .itemInputs(['7x gtceu:tin_dust', 'gtceu:antimony_dust', 'gtceu:bismuth_dust', 'gtceu:copper_dust'])
         .inputFluids('gtceu:helium 1000')
         .blastFurnaceTemp(3600)
-        .circuit(31)
+        .circuit(17)
         .outputFluids('gtceu:high_grade_solder 1440')
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV]);
