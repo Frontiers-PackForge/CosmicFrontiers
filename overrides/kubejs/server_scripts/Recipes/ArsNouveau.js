@@ -31,6 +31,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'ars_ocultas:craft_stabilizer_tier4'})
     event.remove({id:'occultism:ritual/craft_stabilizer_tier4'})
     event.remove({ output: 'ars_nouveau:archwood_chest' })
+    event.remove({ output: 'arseng:source_cell_housing' })
 
     event.shaped('ars_nouveau:archwood_chest', [
         'ABA',
@@ -132,6 +133,137 @@ ServerEvents.recipes(event => {
             A: 'ars_nouveau:source_gem',
             B: 'gtceu:rose_gold_plate',
             C: 'minecraft:wheat',
+        }
+    )
+    event.remove({ id: 'ars_nouveau:volcanic_sourcelink' })
+    event.shaped('ars_nouveau:volcanic_sourcelink', [
+        ' A ',
+        'BCB',
+        ' A '
+    ],
+        {
+            A: 'ars_nouveau:source_gem',
+            B: 'gtceu:rose_gold_plate',
+            C: 'minecraft:lava_bucket',
+        }
+    )
+    event.remove({ id: 'ars_nouveau:alchemical_sourcelink' })
+    event.shaped('ars_nouveau:alchemical_sourcelink', [
+        ' A ',
+        'BCB',
+        ' A '
+    ],
+        {
+            A: 'ars_nouveau:source_gem',
+            B: 'gtceu:rose_gold_plate',
+            C: 'minecraft:brewing_stand',
+        }
+    )
+    event.remove({ id: 'ars_nouveau:vitalic_sourcelink' })
+    event.shaped('ars_nouveau:vitalic_sourcelink', [
+        ' A ',
+        'BCB',
+        ' A '
+    ],
+        {
+            A: 'ars_nouveau:source_gem',
+            B: 'gtceu:rose_gold_plate',
+            C: 'minecraft:glistering_melon_slice',
+        }
+    )
+    event.remove({ id: 'ars_nouveau:mycelial_sourcelink' })
+    event.shaped('ars_nouveau:mycelial_sourcelink', [
+        ' A ',
+        'BCB',
+        ' A '
+    ],
+        {
+            A: 'ars_nouveau:source_gem',
+            B: 'gtceu:rose_gold_plate',
+            C: 'minecraft:mushroom_stew',
+        }
+    )
+    event.remove({ id: 'ars_nouveau:ritual_brazier' })
+    event.shaped('ars_nouveau:ritual_brazier', [
+        ' B ',
+        'BCB',
+        ' A '
+    ],
+        {
+            A: 'ars_nouveau:source_gem_block',
+            B: 'gtceu:rose_gold_plate',
+            C: 'ars_nouveau:arcane_pedestal',
+        }
+    )
+    event.remove({ id: 'ars_nouveau:arcane_pedestal' })
+    event.shaped('ars_nouveau:arcane_pedestal', [
+        'BAB',
+        'CBC',
+        'CBC'
+    ],
+        {
+            A: 'ars_nouveau:source_gem',
+            C: 'gtceu:rose_gold_nugget',
+            B: 'ars_nouveau:sourcestone',
+        }
+    )
+    event.remove({ id: 'ars_nouveau:basic_spell_turret' })
+    event.shaped('ars_nouveau:basic_spell_turret', [
+        'BCB',
+        'CAC',
+        'BCB'
+    ],
+        {
+            A: 'minecraft:redstone_block',
+            C: 'gtceu:rose_gold_plate',
+            B: 'ars_nouveau:source_gem',
+        }
+    )
+    event.remove({ id: 'ars_nouveau:spell_prism' })
+    event.shaped('ars_nouveau:spell_prism', [
+        'BCB',
+        'CAC',
+        'BCB'
+    ],
+        {
+            A: '#forge:storage_blocks/quartz',
+            C: 'ars_nouveau:archwood_planks',
+            B: 'gtceu:rose_gold_plate',
+        }
+    )
+    event.remove({ id: 'ars_nouveau:magelight_torch' })
+    event.shaped('ars_nouveau:magelight_torch', [
+        'BCB',
+        ' B ',
+        '   '
+    ],
+        {
+            C: 'ars_nouveau:source_gem',
+            B: 'gtceu:rose_gold_nugget',
+        }
+    )
+    event.remove({ id: 'ars_nouveau:redstone_relay' })
+    event.shaped('ars_nouveau:redstone_relay', [
+        'BCB',
+        'BAB',
+        'BCB'
+    ],
+        {
+            A: 'ars_nouveau:source_gem_block',
+            C: 'minecraft:redstone',
+            B: 'gtceu:rose_gold_plate',
+        }
+    )
+    event.remove({ id: 'ars_nouveau:scribes_table' })
+    event.shaped('ars_nouveau:scribes_table', [
+        'AAA',
+        'C C',
+        'B B'
+    ],
+        {
+            A: 'ars_nouveau:archwood_slab',
+            C: 'gtceu:rose_gold_nugget',
+            B: '#forge:logs/archwood',
         }
     )
     event.remove({ id: 'ars_nouveau:source_jar' })
