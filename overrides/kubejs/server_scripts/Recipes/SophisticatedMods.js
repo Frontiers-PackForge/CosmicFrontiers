@@ -6,7 +6,7 @@
 //   })
 //   ServerEvents.tags('item', event => {
 //     event.add('forge:viewers/hidden_from_recipe', itemName)
-//
+
 //   })
 // }
 
