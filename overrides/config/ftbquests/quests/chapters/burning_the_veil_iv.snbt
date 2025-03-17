@@ -32,18 +32,58 @@
 				"75AC0231E1B539AB"
 			]
 			description: [
-				"TODO : ADD THE REST OF THE BLOCKS"
-				"TODO : REQUIRE AT LEAST A ASSLINE SIZE OF 10"
+				"Note; You'll need 13 Assembly Line casings in total"
+				" Four for the controller"
+				" Eight for Input Slices"
+				" One for  Output Slice"
+				""
+				"Recipes must be inserted into the assembly line matcing EMI, the slot closest to the controller represents &eslot 1&r."
+				""
+				"You'll have to get creative with how you automate this, I'd recommend using &eAE2 subnets&r"
 			]
 			id: "5B1D7A68D8767876"
+			rewards: [
+				{
+					id: "7DE89FEEBACA102E"
+					item: {
+						Count: 1
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "frontiers:multi/assemblyline"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1D6BA9C19C5CCACF"
+					item: "cosmiccore:cluster_of_perpetuity"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "The Automation King"
-			tasks: [{
-				id: "1B8211A7C3C8AB43"
-				item: "gtceu:assembly_line"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1B8211A7C3C8AB43"
+					item: "gtceu:assembly_line"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "104F51BB6DCAA145"
+					item: { Count: 8, id: "gtceu:assembly_line_casing" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "289B97CB596CF59A"
+					item: { Count: 8, id: "gtceu:assembly_line_unit" }
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: -9.0d
 		}
@@ -554,6 +594,16 @@
 		}
 		{
 			dependencies: ["5A39803D8A6BF62D"]
+			description: [
+				"You'll need at least 12 of them if you want to craft LUV parts."
+				""
+				""
+				"These are EXPENSIVE and will test your bases infrastructure and powergrid greatly upon crafting."
+				""
+				"During this time, observe what parts of your base is the slowest and consider upgrading weak infrastructure afterwards."
+				""
+				"This is advised as LuV is going to have many materials/machines/lines that are costly to set up."
+			]
 			id: "50512987C534E66F"
 			subtitle: "ZPM Circuits Required"
 			tasks: [{
@@ -581,7 +631,7 @@
 			]
 			id: "7FF2118F9BCC0F0B"
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "Getting Smarter"
 			tasks: [{
 				id: "3D7AD0EC27D09758"
@@ -589,42 +639,21 @@
 				type: "item"
 			}]
 			title: "Research and YOU"
-			x: 0.0d
+			x: -1.0d
 			y: -10.5d
 		}
 		{
 			dependencies: [
 				"5B1D7A68D8767876"
-				"2B5B95B71592BEBC"
 				"4FB9205222CC5B9A"
 				"7FF2118F9BCC0F0B"
 			]
 			id: "2AF737CA4D527559"
 			shape: "hexagon"
-			size: 1.25d
+			size: 2.0d
 			tasks: [{
 				id: "25165FB4F2B3E22D"
 				item: "gtceu:luv_machine_hull"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -10.5d
-		}
-		{
-			dependencies: [
-				"2AF737CA4D527559"
-				"5FC86F313B5C1A1E"
-			]
-			id: "0CE1B054263D0C44"
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "73A919D25B713A45"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_3_rocket"
-					tag: { }
-				}
 				type: "item"
 			}]
 			x: 0.0d
@@ -634,17 +663,16 @@
 			dependencies: [
 				"5B1D7A68D8767876"
 				"78DB4974FEABEEA2"
-				"7FF2118F9BCC0F0B"
 			]
 			id: "5FC86F313B5C1A1E"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "03FE22A27E6DEBA0"
 				item: "gtceu:luv_electric_motor"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: -10.5d
 		}
 		{
@@ -653,12 +681,13 @@
 				"350222013080795B"
 			]
 			id: "2B5B95B71592BEBC"
+			shape: "hexagon"
 			tasks: [{
 				id: "7BD608C996349064"
 				item: "gtceu:naquadah_ingot"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.5d
 			y: -10.5d
 		}
 		{
@@ -689,14 +718,11 @@
 				item: "gtceu:rhodium_ingot"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -13.5d
+			x: -3.0d
+			y: -13.0d
 		}
 		{
-			dependencies: [
-				"7C2579488595C534"
-				"52DAB014D2101F02"
-			]
+			dependencies: ["52DAB014D2101F02"]
 			hide_dependency_lines: true
 			hide_until_deps_visible: true
 			id: "1C8200AE86247D44"
@@ -706,8 +732,8 @@
 				item: "gtceu:palladium_ingot"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -13.5d
+			x: -3.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["1C69A670270A14F7"]
@@ -994,6 +1020,7 @@
 				{
 					id: "73BA910EC36BD1C1"
 					item: "gtceu:naquadric_solution_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1014,6 +1041,7 @@
 				{
 					id: "774763E78462E4B5"
 					item: "gtceu:fluoronaquadric_acid_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1034,6 +1062,7 @@
 				{
 					id: "45C101B4059CB9B1"
 					item: "gtceu:naquadah_difluoride_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1054,6 +1083,7 @@
 				{
 					id: "31FEE605F3B41630"
 					item: "gtceu:naquadah_sulfate_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1096,7 +1126,7 @@
 			description: [
 				"Shouldn't be too bad, you already have virtue automated, right?"
 				""
-				"Now that you have a small army of alloy blast smelters you can afford to probably on-demand this with an ME-Requester"
+				"Now that you have a small army of alloy blast smelters you can afford to probably on-demand this and not hate yourself."
 			]
 			id: "7318CB2F24DDEC93"
 			shape: "hexagon"
@@ -1373,12 +1403,12 @@
 		{
 			dependencies: ["42A3B6AE53A276C9"]
 			description: ["You can use Life Essence to unlock new recipes and boost the output of some as well!"]
+			icon: "gtceu:essence_reactor"
 			id: "38E85FF8405B5D7E"
 			subtitle: "Rune Boosting"
 			tasks: [{
-				id: "38BE5F47D460E55A"
-				item: "gtceu:essence_reactor"
-				type: "item"
+				id: "2DA7775389A0F5A6"
+				type: "checkmark"
 			}]
 			x: -7.0d
 			y: -3.5d
@@ -1507,7 +1537,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["0CE1B054263D0C44"]
+			dependencies: ["2AF737CA4D527559"]
 			icon: "createdeco:decal_up"
 			id: "71C697E52A8CE267"
 			shape: "hexagon"
@@ -1518,7 +1548,7 @@
 			}]
 			title: "To LuV!"
 			x: 0.0d
-			y: -14.0d
+			y: -13.5d
 		}
 		{
 			dependencies: ["62AEF55670A1A23B"]
@@ -1609,10 +1639,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"2F953B6A0C8B2E96"
-				"2FE7FBD01B53D1F2"
-			]
+			dependencies: ["2F953B6A0C8B2E96"]
 			description: [
 				"Demon will as a mechanic (killing mobs for soul), is a bit bland considering you already did that for malum early on in LV."
 				""
@@ -1625,19 +1652,19 @@
 				""
 				"You won't see much usage for demon crystals until LuV, at which there will be mechanical rituals to make the automation more friendly to scaling"
 			]
+			icon: {
+				Count: 1
+				id: "bloodmagic:basemonstersoul"
+				tag: {
+					souls: 5.0d
+				}
+			}
 			id: "43EA92B4EAAFD316"
 			shape: "gear"
 			subtitle: "Stripping souls and imbuing spirits"
 			tasks: [{
-				id: "235AF08A5E540DD7"
-				item: {
-					Count: 1
-					id: "bloodmagic:basemonstersoul"
-					tag: {
-						souls: 5.0d
-					}
-				}
-				type: "item"
+				id: "5E3D8206DF26E0D7"
+				type: "checkmark"
 			}]
 			title: "Where's Demonic Will?"
 			x: -12.0d
