@@ -106,6 +106,12 @@ ServerEvents.recipes(event => {
     'cosmiccore:prismatic_tungstensteel_quadruple_wire'
   )
 
+  event.recipes.gtceu.chemical_reactor('copper_oxidize_block')
+    .itemInputs('minecraft:copper_block')
+    .inputFluids('gtceu:oxygen 1000')
+    .itemOutputs('minecraft:oxidized_copper')
+    .duration(220)
+    .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.spooling_machine('frontiers_ethersteel_lattice')
     .itemInputs(['gtceu:carbon_fiber_mesh', '8x gtceu:fine_galvanized_ethersteel_wire'])
     .inputFluids('gtceu:polytetrafluoroethylene 144')
@@ -1452,6 +1458,11 @@ ServerEvents.recipes(event => {
     .duration(200)
     .EUt(GTValues.VA[GTValues.IV] / 2);
 
+  event.recipes.gtceu.spooling_machine('voltage_coil_luv')
+    .itemInputs(['gtceu:magnetic_samarium_rod', '16x gtceu:fine_naquadah_wire'])
+    .itemOutputs('gtceu:luv_voltage_coil')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.LuV] / 2);
 
   //Radio Modules (Too lazy to do a ForEach)
   event.recipes.gtceu.assembler('radio_module_hv')
