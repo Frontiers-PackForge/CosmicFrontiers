@@ -37,6 +37,7 @@ let DONOTEXIST = ['sophisticatedstorage:stack_upgrade_tier_5','sophisticatedstor
 'sophisticatedstorage:limited_gold_barrel_4',
 'sophisticatedstorage:copper_barrel',
 'sophisticatedstorage:copper_chest',
+'sophisticatedstorage:copper_shulker_box',
 'sophisticatedstorage:basic_to_copper_tier_upgrade',
 'sophisticatedstorage:copper_to_iron_tier_upgrade',
 'sophisticatedstorage:copper_to_gold_tier_upgrade',
