@@ -307,6 +307,7 @@
 			}]
 			subtitle: "You'll need this"
 			tasks: [{
+				icon: "minecraft:oak_log"
 				id: "78F01614D58508A8"
 				item: {
 					Count: 1
@@ -315,6 +316,7 @@
 						"ftbfiltersystem:filter": "item_tag(minecraft:logs)"
 					}
 				}
+				title: "Any wood log"
 				type: "item"
 			}]
 			title: "Get Some Bi- I mean Wood"
