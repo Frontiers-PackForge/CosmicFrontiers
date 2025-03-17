@@ -6,10 +6,45 @@
 //   })
 //   ServerEvents.tags('item', event => {
 //     event.add('forge:viewers/hidden_from_recipe', itemName)
-
+//
 //   })
 // }
-let DONOTEXIST = ['sophisticatedstorage:stack_upgrade_tier_5','sophisticatedstorage:basic_to_gold_tier_upgrade', 'sophisticatedstorage:basic_to_diamond_tier_upgrade', 'sophisticatedstorage:basic_to_netherite_tier_upgrade', 'sophisticatedstorage:iron_to_diamond_tier_upgrade', 'sophisticatedstorage:iron_to_netherite_tier_upgrade', 'sophisticatedstorage:gold_to_netherite_tier_upgrade','sophisticatedstorage:stack_upgrade_tier_3', 'sophisticatedstorage:stack_upgrade_tier_4', 'sophisticatedbackpacks:stack_upgrade_tier_1', 'sophisticatedbackpacks:stack_upgrade_tier_2', 'sophisticatedbackpacks:stack_upgrade_tier_3', 'sophisticatedbackpacks:stack_upgrade_tier_4','sophisticatedbackpacks:stack_upgrade_starter_tier','sophisticatedstorage:stack_upgrade_tier_1_plus']
+
+let DONOTEXIST = ['sophisticatedstorage:stack_upgrade_tier_5','sophisticatedstorage:basic_to_gold_tier_upgrade', 'sophisticatedstorage:basic_to_diamond_tier_upgrade', 'sophisticatedstorage:basic_to_netherite_tier_upgrade', 'sophisticatedstorage:iron_to_diamond_tier_upgrade', 'sophisticatedstorage:iron_to_netherite_tier_upgrade', 'sophisticatedstorage:gold_to_netherite_tier_upgrade','sophisticatedstorage:stack_upgrade_tier_3', 'sophisticatedstorage:stack_upgrade_tier_4', 'sophisticatedbackpacks:stack_upgrade_tier_1', 'sophisticatedbackpacks:stack_upgrade_tier_2', 'sophisticatedbackpacks:stack_upgrade_tier_3', 'sophisticatedbackpacks:stack_upgrade_tier_4','sophisticatedbackpacks:stack_upgrade_starter_tier','sophisticatedstorage:stack_upgrade_tier_1_plus',
+'sophisticatedstorage:limited_barrel_1',
+'sophisticatedstorage:limited_barrel_2',
+'sophisticatedstorage:limited_barrel_3',
+'sophisticatedstorage:limited_barrel_4',
+'sophisticatedstorage:limited_iron_barrel_1',
+'sophisticatedstorage:limited_iron_barrel_2',
+'sophisticatedstorage:limited_iron_barrel_3',
+'sophisticatedstorage:limited_iron_barrel_4',
+'sophisticatedstorage:limited_copper_barrel_1',
+'sophisticatedstorage:limited_copper_barrel_2',
+'sophisticatedstorage:limited_copper_barrel_3',
+'sophisticatedstorage:limited_copper_barrel_4',
+'sophisticatedstorage:limited_diamond_barrel_1',
+'sophisticatedstorage:limited_diamond_barrel_2',
+'sophisticatedstorage:limited_diamond_barrel_3',
+'sophisticatedstorage:limited_diamond_barrel_4',
+'sophisticatedstorage:limited_netherite_barrel_1',
+'sophisticatedstorage:limited_netherite_barrel_2',
+'sophisticatedstorage:limited_netherite_barrel_3',
+'sophisticatedstorage:limited_netherite_barrel_4',
+'sophisticatedstorage:limited_gold_barrel_1',
+'sophisticatedstorage:limited_gold_barrel_2',
+'sophisticatedstorage:limited_gold_barrel_3',
+'sophisticatedstorage:limited_gold_barrel_4',
+'sophisticatedstorage:copper_barrel',
+'sophisticatedstorage:copper_chest',
+'sophisticatedstorage:basic_to_copper_tier_upgrade',
+'sophisticatedstorage:copper_to_iron_tier_upgrade',
+'sophisticatedstorage:copper_to_gold_tier_upgrade',
+'sophisticatedstorage:copper_to_diamond_tier_upgrade',
+'sophisticatedstorage:copper_to_netherite_tier_upgrade',
+'sophisticatedstorage:stack_downgrade_tier_1',
+'sophisticatedstorage:stack_downgrade_tier_2',
+'sophisticatedstorage:stack_downgrade_tier_3',]
 
 ServerEvents.tags('item', event => {
   event.add('forge:viewers/hidden_from_recipe', DONOTEXIST)
@@ -438,12 +473,13 @@ ServerEvents.recipes(event => {
   upgradeBackpacks('#forge:obsidian', 'void');
   upgradeBackpacks('gtceu:lv_electric_piston', 'restock');
   upgradeBackpacks('minecraft:hopper', 'deposit');
-  upgradeBackpacks('#xd:i_dont_know_what_please_fill_in', 'refill');
+  upgradeBackpacks('minecraft:slime_block', 'refill');
 
   upgradeBackpacks('#create:toolboxes', 'tool_swapper');
 
-  upgradeUpgrade('sophisticatedbackpacks:backpack', 'cosmiccore:waxed_leather', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:inception_upgrade`);
+  upgradeUpgrade('sophisticatedbackpacks:netherite_backpack', 'cosmiccore:waxed_leather', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:inception_upgrade`);
   upgradeUpgrade('minecraft:nether_star', 'cosmiccore:waxed_leather', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:everlasting_upgrade`);
+  upgradeUpgrade('minecraft:smithing_table', 'cosmiccore:waxed_leather', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:smithing_upgrade`);
 
   upgradeSmeltingBackpacks('minecraft:furnace', 'smelting');
   upgradeSmeltingBackpacks('minecraft:smoker', 'smoking');
@@ -457,4 +493,15 @@ ServerEvents.recipes(event => {
   upgradeUpgrade('gtceu:lv_sodium_battery', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:battery_upgrade`);
   upgradeUpgrade('minecraft:anvil', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:anvil_upgrade`);
 
+//lets you dye barrels/backpacks
+event.shaped('sophisticatedstorage:decoration_table', [
+    'SCS',
+    'BDB',
+    'S S'
+  ], {
+    S: 'minecraft:oak_slab',
+    C: 'gtceu:wrought_iron_plate',
+    D: 'minecraft:oak_log',
+    B: 'gtceu:wrought_iron_screw'
+  })
 })
