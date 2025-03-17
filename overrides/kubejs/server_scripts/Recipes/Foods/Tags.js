@@ -1,35 +1,35 @@
 // priority: 999
 
-ServerEvents.tags('item', e => {
+ServerEvents.tags('item', event => {
     console.log('Registering Food Tags')
     
-    e.add('forge:flour', 'gtceu:wheat_dust')
-    e.add('forge:salt', 'gtceu:salt_dust')
-    e.add('forge:rice', 'farmersdelight:rice')
-    e.add('forge:cabbage', 'farmersdelight:cabbage')
-    e.add('forge:tomatoes', 'farmersdelight:tomato')
-    e.add('forge:onions', 'farmersdelight:onion')
-    e.add('forge:dough', 'farmersdelight:wheat_dough')
-    e.add('forge:doughs', 'gtceu:dough')
-    e.add('forge:raw_pork', 'croptopia:ground_pork')
-    e.add('croptopia:beef_mutton', 'farmersdelight:minced_beef')
-    e.add('croptopia:beef_mutton', 'farmersdelight:mutton_chops')
+    event.add('forge:flour', 'gtceu:wheat_dust')
+    event.add('forge:salt', 'gtceu:salt_dust')
+    event.add('forge:rice', 'farmersdelight:rice')
+    event.add('forge:cabbage', 'farmersdelight:cabbage')
+    event.add('forge:tomatoes', 'farmersdelight:tomato')
+    event.add('forge:onions', 'farmersdelight:onion')
+    event.add('forge:dough', 'farmersdelight:wheat_dough')
+    event.add('forge:doughs', 'gtceu:dough')
+    event.add('forge:raw_pork', 'croptopia:ground_pork')
+    event.add('croptopia:beef_mutton', 'farmersdelight:minced_beef')
+    event.add('croptopia:beef_mutton', 'farmersdelight:mutton_chops')
     
-    e.removeAll('diet:special_food') // Slicer recipes add nutrition to them already, keeping them in this tag makes it do double nutrition
+    event.removeAll('diet:special_food') // Slicer recipes add nutrition to them already, keeping them in this tag makes it do double nutrition
     
     
     // Seasonal crops
     function spring(item) {
-        e.add('serenseseasons:spring_crops', item)
+        event.add('serenseseasons:spring_crops', item)
     }
     function summer(item) {
-        e.add('serenseseasons:summer_crops', item)
+        event.add('serenseseasons:summer_crops', item)
     }
     function autumn(item) {
-        e.add('serenseseasons:autumn_crops', item)
+        event.add('serenseseasons:autumn_crops', item)
     }
     function winter(item) {
-        e.add('serenseseasons:winter_crops', item)
+        event.add('serenseseasons:winter_crops', item)
     }
 
     
@@ -124,43 +124,43 @@ ServerEvents.tags('item', e => {
 
     // Dietary groups
     function mana(item) {
-        e.add('diet:mana', item)
+        event.add('diet:mana', item)
     }
     function psi(item) {
-        e.add('diet:psi', item)
+        event.add('diet:psi', item)
     }
     function proteins(item) {
-        e.add('diet:proteins', item)
+        event.add('diet:proteins', item)
     }
     function fruits(item) {
-        e.add('diet:fruits', item)
+        event.add('diet:fruits', item)
     }
     function vegetables(item) {
-        e.add('diet:vegetables', item)
+        event.add('diet:vegetables', item)
     }
     function sugars(item) {
-        e.add('diet:sugars', item)
+        event.add('diet:sugars', item)
     }
     function grains(item) {
-        e.add('diet:grains', item)
+        event.add('diet:grains', item)
     }
     
     // Force add food groups to items whether its edible or not. Useful for cakes, etc. but slicer recipes make this useless for placeable foods.
     function specialFood(item) {
-        e.add('diet:special_food', item)
+        event.add('diet:special_food', item)
     }
     // Makes items not have food groups when eaten, but when used as ingredients for other recipes. Useful for condiments, seasonings, etc.
     function ingredients(item) {
-        e.add('diet:ingredients', item)
+        event.add('diet:ingredients', item)
     }
 
     // todo hot and cold foods
 
-    e.add('frontiers:croptopia/nuts', ['croptopia:almond', 'croptopia:pecan', 'croptopia:walnut']) // non peanut nuts from croptopia used for roasted nuts recipe
-    e.add('forge:peanuts', ['vintagedelight:peanut', 'croptopia:peanut']) // this is driving me *nuts* why does one have (s)
+    event.add('frontiers:croptopia/nuts', ['croptopia:almond', 'croptopia:pecan', 'croptopia:walnut']) // non peanut nuts from croptopia used for roasted nuts recipe
+    event.add('forge:peanuts', ['vintagedelight:peanut', 'croptopia:peanut']) // this is driving me *nuts* why does one have (s)
 })
 
-ServerEvents.tags('block', e => {
+ServerEvents.tags('block', event => {
     // spring('biomeswevegone:blueberry_bush')
     // summer('biomeswevegone:blueberries')
 
@@ -179,8 +179,8 @@ ServerEvents.tags('block', e => {
     // }
 })
 
-ServerEvents.tags('fluid', e => {
-    e.add('forge:milk', 'gtceu:soy_milk')
-    e.add('forge:milk', 'gtceu:milk')
-    e.add('forge:milk', 'minecraft:milk')
+ServerEvents.tags('fluid', event => {
+    event.add('forge:milk', 'gtceu:soy_milk')
+    event.add('forge:milk', 'gtceu:milk')
+    event.add('forge:milk', 'minecraft:milk')
 })
