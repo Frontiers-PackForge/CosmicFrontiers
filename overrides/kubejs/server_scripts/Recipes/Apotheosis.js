@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         'ABR',
         'LWL'
     ], {
-        W: Item.of('minecraft:potion', '{Potion:"long_water_breathing"}').weakNBT(),
+        W: 'legendarysurvivaloverhaul:purified_water_bottle', // closest i got it to "working" with a potion (only worked in emi) Item.of('minecraft:potion', '{Potion:long_water_breathing}').strongNBT(),
         L: 'minecraft:prismarine_bricks',
         B: '#forge:bookshelves',
         A: 'cosmiccore:rune_slate_tenura',
