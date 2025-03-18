@@ -27,8 +27,6 @@ ServerEvents.recipes(event => {
 })
 
 //Oh jeebus AE2 Recipe Yeeting
-yeet('gtceu:me_input_bus')
-yeet('gtceu:me_input_hatch')
 yeet('ae2:fluix_glass_cable')
 yeet('ae2:fluix_covered_cable')
 yeet('ae2:fluix_covered_dense_cable')
@@ -154,6 +152,12 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'ae2:interface' })
   event.remove({ id: 'ae2:network/parts/panels_semi_dark_monitor' })
   event.remove({ id: 'ae2:network/parts/storage_bus' })
+  event.remove({ output: 'ae2:tiny_tnt' })
+  event.remove({ output: 'expatternprovider:silicon_block' })
+  event.remove({ output: 'expatternprovider:circuit_cutter' })
+  event.remove({ output: 'expatternprovider:oversize_interface' })
+  event.remove({ output: 'expatternprovider:oversize_interface_part' })
+  event.remove({ output: 'betterp2p:advanced_memory_card' })
   // event.remove({ output:  })
   // event.remove({ output:  })
   event.recipes.gtceu.assembly_line('assline_creative_cell_recipe')

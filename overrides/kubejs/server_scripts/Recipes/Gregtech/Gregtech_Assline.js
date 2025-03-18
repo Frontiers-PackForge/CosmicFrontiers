@@ -9,15 +9,16 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:assembler/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_assembly_control' })
-  event.shaped('2x gtceu:assembly_line_casing', [
-    'SDS',
+  event.shaped('gtceu:assembly_line_casing', [
+    'SMS',
     'DCD',
     'BDB'
   ], {
     S: 'gtceu:hpic_chip',
     C: 'gtceu:tungsten_carbide_frame',
     D: '#gtceu:circuits/zpm',
-    B: 'gtceu:iv_electric_motor'
+    B: 'gtceu:iv_electric_motor',
+    M: 'cosmiccore:iv_radio_module'
   })
   event.recipes.gtceu.assembly_line('luv_hull_assline')
     .itemInputs(['gtceu:iridium_frame', '16x gtceu:rhodium_plated_palladium_plate', '8x cosmiccore:double_prismatic_tungstensteel_plate', '16x gtceu:osmiridium_screw', '#gtceu:circuits/hv', '2x gtceu:niobium_titanium_quadruple_cable'])
@@ -106,6 +107,18 @@ ServerEvents.recipes(event => {
       Fluid.of('gtceu:lubricant', 500),
     )
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:iv_robot_arm')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.IV])
+  //Frontiers Pattern Buffer
+  event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer' })
+  event.recipes.gtceu.assembly_line('pattern_buffer_new')
+    .itemInputs(['gtceu:luv_dual_output_hatch', '2x expatternprovider:ex_interface', '2x expatternprovider:ex_pattern_provider', 'expatternprovider:ex_io_port', '4x ae2:speed_card', '4x ae2:capacity_card', '2x #gtceu:circuits/luv'])
+    .itemOutputs('gtceu:me_pattern_buffer')
+    .inputFluids(
+      Fluid.of('gtceu:high_grade_solder', 1152),
+      Fluid.of('cosmiccore:triphenylphosphine', 4000),
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:luv_dual_input_hatch')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
     .duration(600)
     .EUt(GTValues.VA[GTValues.IV])
 

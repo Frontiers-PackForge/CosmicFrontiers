@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.electric_blast_furnace('gtceu:ebf/terrasteel_ingot_recipe_good')
         .itemInputs('gtceu:terrasteel_dust')
-        .inputFluids('gtceu:potent_mana 1000')
+        .inputFluids('gtceu:potent_mana 100')
         .itemOutputs('botania:terrasteel_ingot')
         .blastFurnaceTemp(1800)
         .duration(2000)

@@ -821,6 +821,7 @@
 				""
 				"Be careful with regular ME Smart Cables as they connect to everything."
 			]
+			icon: "ae2:fluix_smart_cable"
 			id: "225633E8DE7B4030"
 			subtitle: "Color Code Them All!"
 			tasks: [{

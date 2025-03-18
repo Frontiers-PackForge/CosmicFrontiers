@@ -10,8 +10,11 @@ ServerEvents.recipes(event => {
         'minecraft:obsidian',
         'aether:holystone',
         'minecraft:basalt',
-        'minecraft:deepslate'
+        'minecraft:deepslate',
+        'gtceu:marble',
+        'gtceu:red_granite'
     ]
+
     stoneworks.forEach(tier => {
         event.recipes.gtceu.industrial_stoneworks(`indust_stoneworks_${tier}`)
             .notConsumable(`${tier}`)
@@ -21,6 +24,26 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(GTValues.VA[GTValues.EV]);
     })
+
+    event.stonecutting('gtceu:marble_bricks', 'gtceu:marble')
+    event.stonecutting('gtceu:polished_marble', 'gtceu:marble')
+    event.stonecutting('gtceu:chiseled_marble', 'gtceu:marble')
+    event.stonecutting('gtceu:marble_tile', 'gtceu:marble')
+    event.stonecutting('gtceu:marble_small_tile', 'gtceu:marble')
+    event.stonecutting('gtceu:marble_windmill_a', 'gtceu:marble')
+    event.stonecutting('gtceu:marble_windmill_b', 'gtceu:marble')
+    event.stonecutting('gtceu:small_marble_bricks', 'gtceu:marble')
+    event.stonecutting('gtceu:square_marble_bricks', 'gtceu:marble')
+
+    event.stonecutting('gtceu:red_granite_bricks', 'gtceu:red_granite')
+    event.stonecutting('gtceu:polished_red_granite', 'gtceu:red_granite')
+    event.stonecutting('gtceu:chiseled_red_granite', 'gtceu:red_granite')
+    event.stonecutting('gtceu:red_granite_tile', 'gtceu:red_granite')
+    event.stonecutting('gtceu:red_granite_small_tile', 'gtceu:red_granite')
+    event.stonecutting('gtceu:red_granite_windmill_a', 'gtceu:red_granite')
+    event.stonecutting('gtceu:red_granite_windmill_b', 'gtceu:red_granite')
+    event.stonecutting('gtceu:small_red_granite_bricks', 'gtceu:red_granite')
+    event.stonecutting('gtceu:square_red_granite_bricks', 'gtceu:red_granite')
 
     event.recipes.gtceu.celestial_bore(`boremap_earth`)
         .notConsumable('ad_astra:earth_globe')

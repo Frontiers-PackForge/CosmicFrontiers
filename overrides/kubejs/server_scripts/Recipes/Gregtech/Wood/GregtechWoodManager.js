@@ -480,7 +480,7 @@ Wood.prototype = {
                 .itemInputs(`6x ${modID}:${woodType}_slab`)
                 .itemInputs(`3x minecraft:book`)
                 .circuit(16)
-                .itemOutputs(`4x ${modID}:${woodType}_bookshelf`)
+                .itemOutputs(`${modID}:${woodType}_bookshelf`)
                 .duration(100)
                 .EUt(4);
             event.shaped(`${modID}:${woodType}_bookshelf`, [
@@ -503,7 +503,7 @@ Wood.prototype = {
             event.recipes.gtceu.assembler(`cosmicfrontiers:${modID}/${woodType}_crafting_table`)
                 .itemInputs(`4x ${modID}:${woodType}_planks`)
                 .circuit(18)
-                .itemOutputs(`4x ${modID}:${woodType}_crafting_table`)
+                .itemOutputs(`${modID}:${woodType}_crafting_table`)
                 .duration(100)
                 .EUt(4);
             event.shaped(`${modID}:${woodType}_crafting_table`, [

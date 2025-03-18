@@ -1,5 +1,5 @@
 
-console.info('[COSMIC MANAGER] - TEST TEST 123 WORLDGEN FILE FOR ORE REMOVALS HIT')
+console.info('[COSMIC MANAGER] - Worldgen File loaded and attempting to modify worldgen!')
 
 WorldgenEvents.remove(event => {
   event.removeOres(props => {

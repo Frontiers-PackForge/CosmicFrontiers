@@ -182,8 +182,9 @@ ServerEvents.recipes(event => {
         K: 'vintagedelight:salt_block'
     })
     //Adding a one-way conversion recipe for delight salt, giving players a way to skip the evaporator and use the GT salt they already have
-    event.shapeless('6x vintagedelight:salt_dust', [
-        '2x gtceu:salt_dust'
+    //This used to be 2 salt to 6 salt dust, no, keep it 1:1 otherwise you create a infinite chlorine source!
+    event.shapeless('vintagedelight:salt_dust', [
+        'gtceu:salt_dust'
     ])
     // //Crabber's Delight
     // event.remove({ output: 'crabbersdelight:crab_trap' })

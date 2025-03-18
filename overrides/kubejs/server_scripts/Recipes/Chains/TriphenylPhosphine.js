@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:phosphorus_trichloride 1000')
         .inputFluids('gtceu:chlorobenzene 1000')
         .itemOutputs('12x gtceu:salt_dust')
-        .outputFluids('gtceu:triphenyl_phosphine 1000')
+        .outputFluids('cosmiccore:triphenylphosphine 1000')
         .duration(240)
         .EUt(GTValues.VH[GTValues.IV])
 })

@@ -314,6 +314,11 @@
   "material.gtceu.industrial_iron": "Industrial Iron",
   "material.gtceu.runed_steel": "Runed Steel",
   "material.gtceu.soul_stained_steel": "Soul Stained Alumina",
+
+  "material.gtceu.grading_fluid_1": "Tier 1 Grading Fluid",
+  "material.gtceu.grading_fluid_2": "Tier 2 Grading Fluid",
+  "material.gtceu.grading_fluid_3": "Tier 3 Grading Fluid",
+  "material.gtceu.grading_fluid_4": "Tier 4 Grading Fluid",
   
   "material.gtceu.uranium_fuel_salt": "Low Grade Uranium Fuel Salt",
   "material.gtceu.americium_fuel_salt": "Medium Grade Americium Fuel Salt",

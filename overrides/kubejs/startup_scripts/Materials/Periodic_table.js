@@ -6,7 +6,7 @@ const $FluidState = Java.loadClass('com.gregtechceu.gtceu.api.fluids.FluidState'
 const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys');
 const $BlastProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty')
 const $GemProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.GemProperty');
-const $oreProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty');
+const $OreProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty');
 const $MaterialFlags = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
 
 
@@ -17,9 +17,14 @@ GTCEuStartupEvents.materialModification(event => {
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     
-    
+    //Misc
     GTMaterials.Carbon.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Carbon.addFlags($MaterialFlags.GENERATE_ROD, $MaterialFlags.GENERATE_LONG_ROD);
+    //Ore Additions
+    GTMaterials.Rutile.setProperty(PropertyKey.ORE, new $OreProperty());
+    GTMaterials.Titanium.setProperty(PropertyKey.ORE, new $OreProperty());
+    GTMaterials.Uranium238.setProperty(PropertyKey.ORE, new $OreProperty());
+
 
     //Netherstar lmfao
     // GTMaterials.NetherStar.setProperty(PropertyKey.GEM, new $GemProperty());

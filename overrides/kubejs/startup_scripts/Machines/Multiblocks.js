@@ -44,6 +44,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
 
 
+
+
     event.create('mana_simulator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('mana_simulator')
@@ -102,7 +104,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks('botania:mana_glass'))
             .build())
         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/mana_fluidizer', false);
-// reference `.setPreviewCount(1)`
+    // reference `.setPreviewCount(1)`
     event.create('molten_salt_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('molten_salt_reactor')
@@ -118,11 +120,11 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('Q', Predicates.blocks(GTBlocks.CASING_TITANIUM_PIPE.get()))
             .where('A', Predicates.blocks(GTBlocks.FIREBOX_TITANIUM.get()))
             .where('T', Predicates.blocks('cosmiccore:high_temperature_fission_casing')
-                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMinGlobalLimited(1,1))
-                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMinGlobalLimited(1,1))
-                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1,1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMinGlobalLimited(1, 1))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMinGlobalLimited(1, 1))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1, 1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMinGlobalLimited(1,1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMinGlobalLimited(1, 1))
             )
             .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
             .build())

@@ -62,7 +62,27 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'gtceu:flint_knife' })
   event.remove({ id: 'emi:crafting/repairing/gtceu/flint_knife' })
   event.remove({ id: 'gtceu:centrifuge/rare_earth_separation' })
+  event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_blue_alloy_dust_to_block' })
 
+  event.replaceOutput({ id: 'gtceu:shaped/extreme_combustion_engine' }, 'gtceu:extreme_combustion_engine', 'gtceu:extreme_combustion_engine_cc')
+  event.replaceOutput({ id: 'gtceu:shaped/large_combustion_engine' }, 'gtceu:large_combustion_engine', 'gtceu:large_combustion_engine_cc')
+
+
+  event.replaceInput(
+    { id: 'gtceu:shaped/bronze_bricks_hull' }, 
+    'minecraft:bricks',
+    'gtceu:coke_oven_bricks'
+  )
+  event.replaceInput(
+    { output: 'gtceu:steam_machine_casing' }, 
+    'minecraft:bricks',
+    'gtceu:coke_oven_bricks'
+  )
+  event.replaceInput(
+    { output: 'gtceu:lp_steam_solid_boiler' },
+    'minecraft:bricks',
+    'gtceu:coke_oven_bricks'
+  )
   event.replaceInput(
     { output: 'gtceu:hp_steam_solar_boiler' },
     'gtceu:steel_brick_casing',
@@ -72,6 +92,11 @@ ServerEvents.recipes(event => {
     { output: 'gtceu:hp_steam_solid_boiler' },
     'minecraft:furnace',
     'gtceu:lp_steam_solid_boiler'
+  )
+  event.replaceInput(
+    { output: 'gtceu:hp_steam_solid_boiler' },
+    'minecraft:bricks',
+    'gtceu:firebricks'
   )
   event.replaceInput(
     { output: 'gtceu:hp_steam_liquid_boiler' },
@@ -100,17 +125,13 @@ ServerEvents.recipes(event => {
     'gtceu:rtm_alloy_quadruple_wire',
     'cosmiccore:prismatic_tungstensteel_quadruple_wire'
   )
-<<<<<<< Updated upstream
 
-=======
-  
   event.recipes.gtceu.chemical_reactor('copper_oxidize_block')
     .itemInputs('minecraft:copper_block')
     .inputFluids('gtceu:oxygen 1000')
     .itemOutputs('minecraft:oxidized_copper')
     .duration(220)
     .EUt(GTValues.VA[GTValues.LV]);
->>>>>>> Stashed changes
   event.recipes.gtceu.spooling_machine('frontiers_ethersteel_lattice')
     .itemInputs(['gtceu:carbon_fiber_mesh', '8x gtceu:fine_galvanized_ethersteel_wire'])
     .inputFluids('gtceu:polytetrafluoroethylene 144')
@@ -473,7 +494,7 @@ ServerEvents.recipes(event => {
     R: 'gtceu:bronze_rotor',
     G: 'ulvcovm:ulv_electric_motor',
     C: 'gtceu:bronze_brick_casing',
-    B: 'minecraft:bricks'
+    B: 'gtceu:coke_oven_bricks'
   })
   event.shaped('gtceu:hp_steam_bender', [
     'PWP',
@@ -522,6 +543,16 @@ ServerEvents.recipes(event => {
     C: 'gtceu:bronze_frame',
     B: 'minecraft:cauldron',
     Q: 'ulvcovm:ulv_electric_piston'
+  })
+  event.shaped('cosmiccore:hellfire_foundry', [
+    'LWL',
+    'CRC',
+    'LWL'
+  ], {
+    L: 'kubejs:resplendent_sylvan_nanolattice',
+    W: 'cosmiccore:highly_conductive_fission_casing',
+    C: '#gtceu:circuits/luv',
+    R: 'bloodmagic:blankrune',
   })
   event.shaped('gtceu:steam_fluid_input_hatch', [
     ' G ',
@@ -1489,6 +1520,11 @@ ServerEvents.recipes(event => {
     .duration(200)
     .EUt(GTValues.VA[GTValues.IV] / 2);
 
+  event.recipes.gtceu.spooling_machine('voltage_coil_luv')
+    .itemInputs(['gtceu:magnetic_samarium_rod', '16x gtceu:fine_naquadah_wire'])
+    .itemOutputs('gtceu:luv_voltage_coil')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.LuV] / 2);
 
   //Radio Modules (Too lazy to do a ForEach)
   event.recipes.gtceu.assembler('radio_module_hv')
