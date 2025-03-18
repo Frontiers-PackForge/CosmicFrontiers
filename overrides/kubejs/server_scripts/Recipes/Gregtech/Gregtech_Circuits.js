@@ -14,6 +14,11 @@ ServerEvents.recipes(event => {
         'gtceu:tungsten_carbide_gear',
         'gtceu:luminescent_utherium_gear'
     )
+    event.replaceInput(
+        { id: 'gtceu:assembly_line/lapotronic_energy_orb_cluster' },
+        'gtceu:europium_plate',
+        'gtceu:naquadah_plate'
+    )
     event.remove({ id: 'gtceu:shaped/vacuum_tube' })
     event.shaped('gtceu:vacuum_tube', [
         'CDC',
