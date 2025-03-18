@@ -334,7 +334,7 @@ ServerEvents.recipes(event => {
     //RHODIUM CHAIN
     // Rh2(SO4)3 + 3 Zn -> 2Rh + 3 ZnSO4
     event.recipes.gtceu.chemical_dehydrator('rhodium_sulfate_to_crude_rhodium')
-        .itemInputs('6x gtceu:zinc_dust')
+        .itemInputs('3x gtceu:zinc_dust')
         .inputFluids('gtceu:rhodium_sulfate_solution 1000')
         .itemOutputs(['2x gtceu:crude_rhodium_dust', '18x gtceu:zinc_sulfate_dust', '18x gtceu:sodium_hydroxide_dust'])
         .duration(240)

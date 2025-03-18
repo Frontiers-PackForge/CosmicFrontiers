@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.IV])
   //Naquadric Superalloy Coil
   event.recipes.gtceu.assembly_line('nsa_coil_assem')
-    .itemInputs(['2x cosmiccore:resonant_virtue_meld_frame', '4x gtceu:luv_voltage_coil', '16x cosmiccore:naquadric_superalloy_double_wire', '16x gtceu:naquadah_alloy_screw', '48x cosmiccore:resonant_virtue_meld_foil', '24x gtceu:naquadah_alloy_foil', '24x gtceu:osmiridium_foil'])
+    .itemInputs(['2x cosmiccore:resonant_virtue_meld_frame', '4x gtceu:luv_voltage_coil', '16x cosmiccore:naquadric_superalloy_double_wire', '16x gtceu:naquadah_alloy_screw', '48x cosmiccore:resonant_virtue_meld_foil', '24x gtceu:naquadah_alloy_foil', '24x cosmiccore:trinavine_foil'])
     .itemOutputs('cosmiccore:naquadric_superalloy_coil_block')
     .inputFluids(
       Fluid.of('gtceu:high_grade_solder', 1152),
