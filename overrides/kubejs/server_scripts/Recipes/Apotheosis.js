@@ -4,8 +4,9 @@ ServerEvents.recipes(event => {
 
 
     event.remove({ id: 'apotheosis:hellshelf' })
-
-    
+    event.remove({ output: 'apotheosis:rectifier' })
+    event.remove({ output: 'apotheosis:rectifier_t2' })
+    event.remove({ output: 'apotheosis:rectifier_t3' })
     event.remove({ output: 'apotheosis:hellshelf' })
     event.remove({ output: 'apotheosis:seashelf' })
     event.remove({ output: 'apotheosis:dormant_deepshelf' })
@@ -21,6 +22,26 @@ ServerEvents.recipes(event => {
         B: '#forge:bookshelves',
         A: 'cosmiccore:rune_slate_khoruth',
         R: 'cosmiccore:rune_slate_tylomir'
+    })
+    event.shaped('apotheosis:blazing_hellshelf', [
+        'LRL',
+        'WBW',
+        'LRL'
+    ], {
+        W: 'cosmiccore:rune_conjunction_arklythar',
+        L: 'minecraft:red_nether_bricks',
+        B: 'apotheosis:infused_hellshelf',
+        R: 'botania:blaze_block'
+    })
+    event.shaped('apotheosis:glowing_hellshelf', [
+        'LRL',
+        'WBW',
+        'LRL'
+    ], {
+        W: 'cosmiccore:rune_conjunction_arklythar',
+        L: 'minecraft:red_nether_bricks',
+        B: 'apotheosis:infused_hellshelf',
+        R: 'minecraft:glowstone'
     })
     event.shaped('apotheosis:dormant_deepshelf', [
         'LWL',
@@ -43,7 +64,27 @@ ServerEvents.recipes(event => {
         A: 'cosmiccore:rune_slate_tenura',
         R: 'cosmiccore:rune_slate_valdris'
     })
-event.shaped('apotheosis:melonshelf', [
+    event.shaped('apotheosis:crystal_seashelf', [
+        'LRL',
+        'WBW',
+        'LRL'
+    ], {
+        W: 'cosmiccore:rune_conjunction_arklythar',
+        L: 'minecraft:prismarine_bricks',
+        B: 'apotheosis:infused_seashelf',
+        R: 'minecraft:sea_lantern'
+    })
+    event.shaped('apotheosis:heart_seashelf', [
+        'LRL',
+        'WBW',
+        'LRL'
+    ], {
+        W: 'cosmiccore:rune_conjunction_arklythar',
+        L: 'minecraft:prismarine_bricks',
+        B: 'apotheosis:infused_seashelf',
+        R: 'minecraft:heart_of_the_sea'
+    })
+    event.shaped('apotheosis:melonshelf', [
         'LWL',
         'RBR',
         'LWL'
@@ -73,6 +114,33 @@ event.shaped('apotheosis:melonshelf', [
         B: '#forge:bookshelves',
         R: 'cosmiccore:rune_slate_valdris',
         E: 'cosmiccore:rune_slate_tenura'
+    })
+   event.shaped('apotheosis:rectifier', [
+        'LRL',
+        'RBR',
+        'LRL'
+    ], {
+        L: 'minecraft:amethyst_block',
+        B: 'apotheosis:infused_seashelf',
+        R: 'gtceu:double_steel_plate'
+    })
+   event.shaped('apotheosis:rectifier_t2', [
+        'LRL',
+        'RBR',
+        'LRL'
+    ], {
+        L: 'minecraft:amethyst_block',
+        B: 'apotheosis:rectifier',
+        R: 'gtceu:double_soul_stained_steel_plate'
+    })
+    event.shaped('apotheosis:rectifier_t3', [
+        'LRL',
+        'RBR',
+        'LRL'
+    ], {
+        L: 'minecraft:amethyst_block',
+        B: 'apotheosis:rectifier_t2',
+        R: 'gtceu:double_stainless_steel_plate'
     })
     event.shaped('apotheosis:prismatic_web', [
         'LRL',
