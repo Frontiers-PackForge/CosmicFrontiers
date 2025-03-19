@@ -106,4 +106,44 @@ ServerEvents.recipes(event => {
         .duration(120)
         .EUt(GTValues.VA[GTValues.LuV])
 
+    event.recipes.gtceu.chemical_dehydrator('rhenium_rich_nqh')
+        .inputFluids('gtceu:naquahine 2000')
+        .inputFluids('gtceu:pyroflux 2000')
+        .outputFluids('gtceu:rhenium_saturated_naquahine 750')
+        .chancedOutput('gtceu:inert_naquahine_dust', 3500, 0)
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.LuV] * 0.5)
+
+    event.recipes.gtceu.brewery('rhenium_rich_complex')
+        .inputFluids('gtceu:rhenium_saturated_naquahine 1250')
+        .itemInputs('bloodmagic:tauoil')
+        .outputFluids('gtceu:rhenium_rich_complex 100')
+        .duration(4500)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.chemical_bath('rhenium_slag')
+        .inputFluids('gtceu:rhenium_rich_complex 300')
+        .chancedInput('bloodmagic:reagentholding', 1111,0)
+        .itemOutputs('gtceu:rhenium_rich_slag_dust')
+        .duration(360)
+        .EUt(GTValues.VA[GTValues.IV] * 0.8)
+
+    event.recipes.gtceu.sifter('pure_rhenium')
+        .itemInputs('gtceu:rhenium_rich_slag_dust')
+        .itemOutputs('gtceu:rhenium_dust')
+        .chancedOutput('gtceu:rhenium_dust', 1000, 0)
+        .duration(360)
+        .EUt(GTValues.VA[GTValues.ZPM])
+
+
 })
+
+
+// event.recipes.gtceu.electric_blast_furnace('virtue_pearl_replication')
+// .chancedFluidInput('cosmiccore:resonant_virtue_meld 288', 8500,0)
+// .chancedInput('botania:life_essence', 1575,0)
+// .chancedOutput('botania:life_essence',7500,0)
+// .blastFurnaceTemp(5400)
+// .dimension('minecraft:the_nether')
+// .duration(1920)
+// .EUt(GTValues.VA[GTValues.LuV]);
