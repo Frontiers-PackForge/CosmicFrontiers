@@ -90,9 +90,7 @@ ServerEvents.recipes(event => {
             .EUt(4);
         //Oh boy, malum.. might just need to make a dedicated one for Malum
 
-        //misc bookshelf and no bookshelf conversion
-            event.remove({ id: `experienceobelisk:bookshelf_from_any` })
-
+        //misc bookshelf
             event.remove({ output: `framedblocks:framed_bookshelf` })
             event.recipes.gtceu.assembler(`framedblocks:framed_bookshelf`)
                 .itemInputs(`6x framedblocks:framed_cube`)
