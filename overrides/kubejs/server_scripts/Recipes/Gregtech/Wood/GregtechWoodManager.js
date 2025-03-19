@@ -89,6 +89,45 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(4);
         //Oh boy, malum.. might just need to make a dedicated one for Malum
+
+        //misc bookshelf and no bookshelf conversion
+            event.remove({ id: `experienceobelisk:bookshelf_from_any` })
+
+            event.remove({ output: `framedblocks:framed_bookshelf` })
+            event.recipes.gtceu.assembler(`framedblocks:framed_bookshelf`)
+                .itemInputs(`6x framedblocks:framed_cube`)
+                .itemInputs(`3x minecraft:book`)
+                .circuit(16)
+                .itemOutputs(`framedblocks:framed_bookshelf`)
+                .duration(100)
+                .EUt(4);
+
+            event.remove({ output: `framedblocks:framed_chiseled_bookshelf` })
+            event.recipes.gtceu.assembler(`framedblocks:framed_chiseled_bookshelf`)
+                .itemInputs(`6x framedblocks:framed_cube`)
+                .itemInputs(`3x framedblocks:framed_slab`)
+                .circuit(16)
+                .itemOutputs(`framedblocks:framed_chiseled_bookshelf`)
+                .duration(100)
+                .EUt(4);
+
+            event.remove({ output: `experienceobelisk:archivers_bookshelf` })
+            event.recipes.gtceu.assembler(`experienceobelisk:archivers_bookshelf`)
+                .itemInputs(`6x #minecraft:wooden_slabs`)
+                .itemInputs(`3x minecraft:writable_book`)
+                .circuit(16)
+                .itemOutputs(`experienceobelisk:archivers_bookshelf`)
+                .duration(100)
+                .EUt(4);
+
+            event.remove({ output: `experienceobelisk:enchanted_bookshelf` })
+            event.recipes.gtceu.assembler(`experienceobelisk:enchanted_bookshelf`)
+                .itemInputs(`6x #minecraft:wooden_slabs`)
+                .itemInputs(`3x minecraft:enchanted_book`)
+                .circuit(16)
+                .itemOutputs(`experienceobelisk:enchanted_bookshelf`)
+                .duration(100)
+                .EUt(4);
 })
 
 
@@ -483,15 +522,6 @@ Wood.prototype = {
                 .itemOutputs(`${modID}:${woodType}_bookshelf`)
                 .duration(100)
                 .EUt(4);
-            event.shaped(`${modID}:${woodType}_bookshelf`, [
-                'WWW',
-                'BBB',
-                'WWW'
-            ],
-                {
-                    W: `${modID}:${woodType}_planks`,
-                    B: `minecraft:book`
-                })
         }
         return this;
     },
