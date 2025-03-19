@@ -4,7 +4,7 @@
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('white_gold')
         .dust()
-        .color(0xada9aa).secondaryColor(0xd1bd97).iconSet(GTMaterialIconSet.SHINY)
+        .color(0xada9aa).secondaryColor(0xd1bd97).iconSet(GTMaterialIconSet.METALLIC)
         .blastTemp(3800)
         .flags(
             GTMaterialFlags.FORCE_GENERATE_BLOCK,
@@ -25,18 +25,21 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.IS_MAGNETIC
         )
-    event.create('condensed_naquahine')
-        .liquid()
+
     event.create('rhenium_saturated_naquahine') // Naquahine will lose some of it's mass in trade off for literally manifesting Nqh
         .liquid()
+        .color(0xbd3b17)
     event.create('rhenium_rich_complex')
         .liquid()
+        .color(0xc4735c)
     //For Sintering
     event.create('vaporized_rhenium')
         .gas()
+        .color(0xeddbc0)
     //Sintering Waste Product
     event.create('rhenium_rich_slag')
         .dust()
+        .color(0xebbe7c)
     //Base of all syhnthetic pthanterums
     event.create('rhenium_sintered_white_gold')
         .ingot()
@@ -85,7 +88,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('high_strength_low_alloy_pthanterum')
         .dust()
         .ingot()
-        .color(0x31292a).secondaryColor(0x802716).iconSet(GTMaterialIconSet.SHINY)
+        .color(0x31292a).secondaryColor(0x802716).iconSet(GTMaterialIconSet.METALLIC)
     //VSN is used in the creation of digital Mana-based devices with a computer interface.
     //TODO ; Somatic Mana & The Mana-Simulator TierUp Device
     event.create('vibrosomatic_sythetic_pthanterum')
