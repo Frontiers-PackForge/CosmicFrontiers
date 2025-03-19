@@ -224,6 +224,9 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('ae2:condenser', (item, advanced, text) => {
     text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
   })
+  event.addAdvanced('bloodmagic:arc', (item, advanced, text) => {
+    text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
+  })
   event.addAdvanced('malum:encyclopedia_arcana', (item, advanced, text) => {
     text.add(1, Text.of('Notice; Recipes may be incorrect, check EMI!').red())
   })
