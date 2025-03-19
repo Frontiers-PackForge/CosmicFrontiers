@@ -189,15 +189,24 @@ ServerEvents.recipes(event => {
     .itemInputs(['64x gtceu:graphene_dust', '64x gtceu:polydimethylsiloxane_dust', '4x cosmiccore:resonant_virtue_meld_dust'])
     .inputFluids('gtceu:grading_fluid_2 1000', 'gtceu:genesis_resin 2000', 'gtceu:neutronite 1152', 'gtceu:potent_mana 16000', 'cosmiccore:prisma 32000')
     .outputFluids('gtceu:grading_fluid_3 1000')
-    .duration(1200)
+    .duration(1500)
     .EUt(GTValues.VA[GTValues.ZPM]);
   event.recipes.gtceu.mana_engraver('frontiers:grading_fluid_4')
     .notConsumable('bloodmagic:magicianbloodorb')
     .itemInputs(['64x gtceu:graphene_dust', '64x gtceu:4_4_oxydianiline_pyromellitimide_dust', '8x botania:life_essence'])
     .inputFluids('gtceu:grading_fluid_3 1000', 'gtceu:void_tar 8000', 'cosmiccore:trinavine 1152', 'gtceu:potent_mana 32000', 'cosmiccore:prisma 64000')
     .outputFluids('gtceu:grading_fluid_4 1000')
-    .duration(1200)
+    .duration(150)
     .EUt(GTValues.VA[GTValues.ZPM]);
+
+  event.recipes.gtceu.hellfire_foundry('frontiers:tau_oil')
+    .itemInputs(['bloodmagic:weak_tau', 'bloodmagic:weak_tau', 'bloodmagic:weak_tau', 'gtceu:oilsands_dust', 'bloodmagic:reagentbinding'])
+    .outputFluids('gtceu:grading_fluid_3 1000')
+    .itemOutputs('bloodmagic:tau_oil')
+    .soulInput(30000)
+    .duration(430)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
   //CHALKS
   event.remove({ id: 'bloodmagic:altar/dusk_tool' })
   event.remove({ id: 'bloodmagic:altar/air_tool' })
@@ -245,7 +254,7 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.hellfire_foundry('better_binding')
     .itemInputs(['gtceu:osmium_dust', 'gtceu:berkelium_dust', 'occultism:otherworld_ashes', 'gtceu:naquadah_dust', 'bloodmagic:reagentwater'])
     .inputFluids('gtceu:grading_fluid_3 1000')
-    .itemOutputs('bloodmagic:duskscribetool')
+    .itemOutputs('bloodmagic:reagentbinding')
     .soulInput(20000)
     .duration(460)
     .EUt(GTValues.VA[GTValues.LuV]);

@@ -65,6 +65,25 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     //Rhenium
     GTMaterials.Rhenium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    GTMaterials.Rhenium.addFlags(
+        $MaterialFlags.FORCE_GENERATE_BLOCK,
+        $MaterialFlags.GENERATE_BOLT_SCREW,
+        $MaterialFlags.GENERATE_FINE_WIRE,
+        $MaterialFlags.GENERATE_FOIL,
+        $MaterialFlags.GENERATE_FRAME,
+        $MaterialFlags.GENERATE_GEAR,
+        $MaterialFlags.GENERATE_LONG_ROD,
+        $MaterialFlags.GENERATE_PLATE,
+        $MaterialFlags.GENERATE_RING,
+        $MaterialFlags.GENERATE_ROD,
+        $MaterialFlags.GENERATE_ROTOR,
+        $MaterialFlags.GENERATE_ROUND,
+        $MaterialFlags.GENERATE_SMALL_GEAR,
+        $MaterialFlags.GENERATE_SPRING,
+        $MaterialFlags.GENERATE_SPRING_SMALL,
+        $MaterialFlags.NO_SMELTING,
+        $MaterialFlags.IS_MAGNETIC
+    );
     addFluid(GTMaterials.Rhenium, $FluidStorageKeys.LIQUID);
 
     //Bohrium

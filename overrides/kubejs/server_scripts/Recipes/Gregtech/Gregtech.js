@@ -99,6 +99,26 @@ ServerEvents.recipes(event => {
     'gtceu:firebricks'
   )
   event.replaceInput(
+    { id: 'gtceu:assembler/computer_casing' },
+    'gtceu:iridium_frame',
+    'gtceu:rhenium_frame'
+  )
+  event.replaceInput(
+    { id: 'gtceu:assembler/computer_casing' },
+    'gtceu:iridium_plate',
+    'gtceu:rhenium_plate'
+  )
+  event.replaceInput(
+    { id: 'gtceu:assembler/high_power_casing' },
+    'gtceu:iridium_frame',
+    'gtceu:rhenium_frame'
+  )
+  event.replaceInput(
+    { id: 'gtceu:assembler/high_power_casing' },
+    'gtceu:iridium_plate',
+    'gtceu:rhenium_plate'
+  )
+  event.replaceInput(
     { output: 'gtceu:hp_steam_liquid_boiler' },
     'gtceu:steel_brick_casing',
     'gtceu:lp_steam_liquid_boiler'
