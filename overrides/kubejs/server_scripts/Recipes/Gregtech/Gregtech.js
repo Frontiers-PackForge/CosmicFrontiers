@@ -31,7 +31,9 @@ yeet('gtceu:tiny_magnetic_neodymium_praseodymium_dust')
 yeet('gtceu:small_magnetic_neodymium_praseodymium_dust')
 yeet('gtceu:magnetic_neodymium_praseodymium_dust')
 yeet('botania:endoflame')
+yeet('gtceu:large_plasma_turbine')
 yeet(/gtceu:(.*)butchery_knife$/)
+
 
 ServerEvents.recipes(event => {
   // //Lmao
