@@ -1,17 +1,9 @@
 ServerEvents.recipes(event => {
 
     // event.remove({ output: ['apotheosis:beeshelf', 'apotheosis:blazing_hellshelf', 'apotheosis:crystal_seashelf', 'apotheosis:deepshelf', 'apotheosis:dormant_deepshelf', 'apotheosis:hellshelf', 'apotheosis:infused_hellshelf', 'apotheosis:pearl_endshelf', 'apotheosis:rectifier', 'apotheosis:rectifier_t3', 'apotheosis:seashelf', 'apotheosis:sightshelf', 'apotheosis:sightshelf_t2', 'apotheosis:soul_touched_deepshelf', 'apotheosis:soul_touched_sculkshelf', 'apotheosis:stoneshelf', 'apotheosis:filtering_shelf', 'apotheosis:treasure_shelf', 'apotheosis:draconic_endshelf', 'apotheosis:echoing_deepshelf', 'apotheosis:echoing_sculkshelf', 'apotheosis:endshelf', 'apotheosis:glowing_hellshelf', 'apotheosis:heart_seashelf', 'apotheosis:infused_seashelf', 'apotheosis:melonshelf', 'apotheosis:rectifier_t2'] })
-
-
-    event.remove({ id: 'apotheosis:hellshelf' })
-    event.remove({ output: 'apotheosis:rectifier' })
-    event.remove({ output: 'apotheosis:rectifier_t2' })
-    event.remove({ output: 'apotheosis:rectifier_t3' })
+    
+    //hellshelf
     event.remove({ output: 'apotheosis:hellshelf' })
-    event.remove({ output: 'apotheosis:seashelf' })
-    event.remove({ output: 'apotheosis:dormant_deepshelf' })
-    event.remove({ output: 'apotheosis:stoneshelf' })
-
     event.shaped('apotheosis:hellshelf', [
         'LWL',
         'ABR',
@@ -43,6 +35,8 @@ ServerEvents.recipes(event => {
         B: 'apotheosis:infused_hellshelf',
         R: 'minecraft:glowstone'
     })
+    //deepshelf
+    event.remove({ output: 'apotheosis:dormant_deepshelf' })
     event.shaped('apotheosis:dormant_deepshelf', [
         'LWL',
         'RBR',
@@ -53,12 +47,94 @@ ServerEvents.recipes(event => {
         B: '#forge:bookshelves',
         R: 'minecraft:echo_shard'
     })
+    event.remove({ output: 'apotheosis:echoing_deepshelf' })
+    event.shaped('apotheosis:echoing_deepshelf', [
+        'LWL',
+        'RBR',
+        'LWL'
+    ], {
+        W: 'minecraft:sculk_sensor',
+        L: 'minecraft:deepslate_tiles',
+        B: 'apotheosis:deepshelf',
+        R: 'cosmiccore:rune_conjunction_arklythar'
+    })
+    event.remove({ output: 'apotheosis:soul_touched_deepshelf' })
+    event.shaped('apotheosis:soul_touched_deepshelf', [
+        'LWL',
+        'RBR',
+        'LWL'
+    ], {
+        W: 'minecraft:sculk_catalyst',
+        L: 'minecraft:deepslate_tiles',
+        B: 'apotheosis:deepshelf',
+        R: 'cosmiccore:rune_conjunction_arklythar'
+    })
+    event.remove({ output: 'apotheosis:echoing_sculkshelf' })
+    event.shaped('apotheosis:echoing_sculkshelf', [
+        'LEL',
+        'RBR',
+        'LWL'
+    ], {
+        W: 'minecraft:sculk_shrieker',
+        E: 'apotheosis:warden_tendril',
+        L: 'minecraft:deepslate_tiles',
+        B: 'apotheosis:echoing_deepshelf',
+        R: 'cosmiccore:rune_conjunction_arklythar'
+    })
+    event.remove({ output: 'apotheosis:soul_touched_sculkshelf' })
+    event.shaped('apotheosis:soul_touched_sculkshelf', [
+        'LEL',
+        'RBR',
+        'LWL'
+    ], {
+        W: 'minecraft:sculk_shrieker',
+        E: 'apotheosis:warden_tendril',
+        L: 'minecraft:deepslate_tiles',
+        B: 'apotheosis:soul_touched_deepshelf',
+        R: 'cosmiccore:rune_conjunction_arklythar'
+    })
+    //endshelf
+    event.remove({ output: 'apotheosis:endshelf' })
+    event.shaped('apotheosis:endshelf', [
+        'LWL',
+        'RBR',
+        'LWL'
+    ], {
+        W: 'botania:mana_diamond',
+        L: 'minecraft:end_stone_bricks',
+        B: '#forge:bookshelves',
+        R: 'gtceu:double_soul_stained_steel_plate'//placeholder for a higher tier/MV rune?
+    })
+
+    event.shaped('apotheosis:pearl_endshelf', [
+        'LWL',
+        'RBR',
+        'LWL'
+    ], {
+        W: 'botania:mana_pearl',
+        L: 'minecraft:end_stone_bricks',
+        B: 'apotheosis:endshelf',
+        R: 'gtceu:double_soul_stained_steel_plate'//placeholder for a higher tier/MV rune?
+    })
+    event.shaped('apotheosis:draconic_endshelf', [
+        'LWL',
+        'RBR',
+        'LWL'
+    ], {
+        W: 'botania:manaweave_cloth',
+        L: 'minecraft:end_stone_bricks',
+        B: 'apotheosis:endshelf',
+        R: 'gtceu:double_soul_stained_steel_plate'//placeholder for a higher tier/MV rune?
+    })
+    //seashelf
+    event.remove({ output: 'apotheosis:seashelf' })
     event.shaped('apotheosis:seashelf', [
         'LWL',
         'ABR',
-        'LWL'
+        'LEL'
     ], {
-        W: 'legendarysurvivaloverhaul:purified_water_bottle', // closest i got it to "working" with a potion (only worked in emi) Item.of('minecraft:potion', '{Potion:long_water_breathing}').strongNBT(),
+        E: 'minecraft:nautilus_shell', //Item.of('minecraft:potion', '{Potion:long_water_breathing}').strongNBT(), closest i got it to "working" with a potion (only worked in emi) (why tf is a water bottle a potion???)
+        W: 'minecraft:wet_sponge',
         L: 'minecraft:prismarine_bricks',
         B: '#forge:bookshelves',
         A: 'cosmiccore:rune_slate_tenura',
@@ -84,12 +160,13 @@ ServerEvents.recipes(event => {
         B: 'apotheosis:infused_seashelf',
         R: 'minecraft:heart_of_the_sea'
     })
+    //misc shelf
     event.shaped('apotheosis:melonshelf', [
         'LWL',
         'RBR',
         'LWL'
     ], {
-        W: 'legendarysurvivaloverhaul:purified_water_bottle',
+        W: 'minecraft:melon_slice',
         L: 'minecraft:melon',
         B: '#forge:bookshelves',
         R: 'cosmiccore:rune_slate_tenura'
@@ -104,6 +181,7 @@ ServerEvents.recipes(event => {
         B: '#forge:bookshelves',
         R: 'cosmiccore:rune_slate_valdris'
     })
+    event.remove({ output: 'apotheosis:stoneshelf' })
     event.shaped('apotheosis:stoneshelf', [
         'LWL',
         'RBE',
@@ -115,7 +193,43 @@ ServerEvents.recipes(event => {
         R: 'cosmiccore:rune_slate_valdris',
         E: 'cosmiccore:rune_slate_tenura'
     })
-   event.shaped('apotheosis:rectifier', [
+    event.remove({ output: 'apotheosis:sightshelf' })
+    event.shaped('apotheosis:sightshelf', [
+        'LWL',
+        'RBR',
+        'LWL'
+    ], {
+        W: 'minecraft:spyglass',
+        L: 'gtceu:double_rose_gold_plate',
+        B: 'apotheosis:infused_hellshelf',
+        R: 'cosmiccore:rune_conjunction_arklythar',
+    })
+    event.remove({ output: 'apotheosis:sightshelf_t2' })
+    event.shaped('apotheosis:sightshelf_t2', [
+        'LWL',
+        'RBR',
+        'LWL'
+    ], {
+        W: 'botania:monocle',
+        L: 'gtceu:exquisite_emerald_gem',
+        B: 'apotheosis:sightshelf',
+        R: 'cosmiccore:rune_conjunction_arklythar',
+    })
+    event.remove({ output: 'apotheosis:treasure_shelf' })
+    event.shaped('apotheosis:treasure_shelf', [
+        'LWL',
+        'RBR',
+        'LWL'
+    ], {
+        W: 'apotheosis:deepshelf',
+        L: 'gtceu:double_rose_gold_plate',
+        B: 'gtceu:exquisite_emerald_gem',
+        R: 'gtceu:exquisite_diamond_gem',
+    })
+
+   //rectifiers
+    event.remove({ output: 'apotheosis:rectifier' })
+    event.shaped('apotheosis:rectifier', [
         'LRL',
         'RBR',
         'LRL'
@@ -124,15 +238,17 @@ ServerEvents.recipes(event => {
         B: 'apotheosis:infused_seashelf',
         R: 'gtceu:double_steel_plate'
     })
-   event.shaped('apotheosis:rectifier_t2', [
+    event.remove({ output: 'apotheosis:rectifier_t2' })
+    event.shaped('apotheosis:rectifier_t2', [
         'LRL',
         'RBR',
         'LRL'
     ], {
         L: 'minecraft:amethyst_block',
         B: 'apotheosis:rectifier',
-        R: 'gtceu:double_soul_stained_steel_plate'
+        R: 'gtceu:double_runed_steel_plate'
     })
+    event.remove({ output: 'apotheosis:rectifier_t3' })
     event.shaped('apotheosis:rectifier_t3', [
         'LRL',
         'RBR',
@@ -140,7 +256,67 @@ ServerEvents.recipes(event => {
     ], {
         L: 'minecraft:amethyst_block',
         B: 'apotheosis:rectifier_t2',
-        R: 'gtceu:double_stainless_steel_plate'
+        R: 'gtceu:double_soul_stained_steel_plate'
+    })
+    //crafting stations
+    event.remove({ output: 'apotheosis:simple_reforging_table' })
+    event.shaped('apotheosis:simple_reforging_table', [
+        'RLR',
+        'LBL',
+        'EEE'
+    ], {
+        L: 'gtceu:wrought_iron_plate',
+        B: 'minecraft:enchanting_table',
+        R: 'apotheosis:gem_dust',
+        E: 'minecraft:stone_slab'
+    })
+    event.remove({ output: 'apotheosis:reforging_table' })
+    event.shaped('apotheosis:reforging_table', [
+        'RLR',
+        'LBL',
+        'EEE'
+    ], {
+        L: 'gtceu:double_soul_stained_steel_plate',
+        B: 'apotheosis:simple_reforging_table',
+        R: 'apotheosis:epic_material',
+        E: 'minecraft:red_nether_brick_slab'
+    })
+    event.remove({ output: 'apotheosis:salvaging_table' })
+    event.shaped('apotheosis:salvaging_table', [
+        'LLL',
+        'PBA',
+        'RER'
+    ], {
+        L: 'gtceu:double_copper_plate',
+        B: 'minecraft:smithing_table',
+        R: 'apotheosis:gem_dust',
+        P: 'minecraft:iron_pickaxe',
+        A: 'minecraft:iron_axe',
+        E: 'minecraft:magma_block'
+    })
+    event.remove({ output: 'apotheosis:gem_cutting_table' })
+    event.shaped('apotheosis:gem_cutting_table', [
+        'LEL',
+        'BRB',
+        'B B'
+    ], {
+        L: 'gtceu:double_wrought_iron_plate',
+        B: 'gtceu:treated_wood_planks',
+        R: 'apotheosis:gem_dust',
+        E: 'minecraft:shears'
+    })
+
+    //tomes
+    event.remove({ output: 'apotheosis:sigil_of_socketing' })
+    event.shaped('apotheosis:sigil_of_socketing', [
+        'LEL',
+        'LBL',
+        'LRL'
+    ], {
+        L: 'apotheosis:gem_dust',
+        B: 'minecraft:lodestone',
+        R: 'minecraft:amethyst_block',
+        E: 'minecraft:netherite_ingot'
     })
     event.shaped('apotheosis:prismatic_web', [
         'LRL',
@@ -156,7 +332,7 @@ ServerEvents.recipes(event => {
         'RBR',
         'LRL'
     ], {
-        L: 'malum:soul_stained_steel_plating',
+        L: 'gtceu:steel_plate',
         B: 'minecraft:anvil',
         R: 'minecraft:book'
     })
@@ -165,7 +341,7 @@ ServerEvents.recipes(event => {
         'RBR',
         '   '
     ], {
-        B: 'gtceu:double_soul_stained_steel_plate',
+        B: 'gtceu:double_steel_plate',
         R: 'minecraft:book'
     })
     event.shaped('8x apotheosis:chestplate_tome', [
@@ -173,7 +349,7 @@ ServerEvents.recipes(event => {
         'RRR',
         'RRR'
     ], {
-        B: 'gtceu:double_soul_stained_steel_plate',
+        B: 'gtceu:double_steel_plate',
         R: 'minecraft:book'
     })
     event.shaped('7x apotheosis:leggings_tome', [
@@ -181,7 +357,7 @@ ServerEvents.recipes(event => {
         'RBR',
         'R R'
     ], {
-        B: 'gtceu:double_soul_stained_steel_plate',
+        B: 'gtceu:double_steel_plate',
         R: 'minecraft:book'
     })
     event.shaped('4x apotheosis:boots_tome', [
@@ -189,7 +365,7 @@ ServerEvents.recipes(event => {
         'R R',
         '   '
     ], {
-        B: 'gtceu:double_soul_stained_steel_plate',
+        B: 'gtceu:double_steel_plate',
         R: 'minecraft:book'
     })
     event.shaped('2x apotheosis:weapon_tome', [
@@ -197,7 +373,7 @@ ServerEvents.recipes(event => {
         ' R ',
         ' B '
     ], {
-        B: 'gtceu:soul_stained_steel_rod',
+        B: 'gtceu:double_steel_rod',
         R: 'minecraft:book'
     })
     event.shaped('3x apotheosis:bow_tome', [
@@ -205,7 +381,7 @@ ServerEvents.recipes(event => {
         'RBS',
         ' RS'
     ], {
-        B: 'gtceu:soul_stained_steel_rod',
+        B: 'gtceu:double_steel_rod',
         R: 'minecraft:book',
         S: 'minecraft:string'
     })
@@ -214,7 +390,7 @@ ServerEvents.recipes(event => {
         ' B ',
         ' B '
     ], {
-        B: 'gtceu:soul_stained_steel_rod',
+        B: 'gtceu:double_steel_rod',
         R: 'minecraft:book'
     })
     event.shaped('2x apotheosis:fishing_tome', [
@@ -222,7 +398,7 @@ ServerEvents.recipes(event => {
         ' BS',
         'R S'
     ], {
-        B: 'gtceu:soul_stained_steel_rod',
+        B: 'gtceu:double_steel_rod',
         R: 'minecraft:book',
         S: 'minecraft:string'
     })
@@ -231,7 +407,7 @@ ServerEvents.recipes(event => {
         'RBR',
         ' R '
     ], {
-        B: 'gtceu:double_soul_stained_steel_plate',
+        B: 'gtceu:double_steel_plate',
         R: 'minecraft:book'
     })
 
