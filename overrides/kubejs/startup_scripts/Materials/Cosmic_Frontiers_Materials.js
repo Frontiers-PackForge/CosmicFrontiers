@@ -88,7 +88,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x8e46fa).iconSet(GTMaterialIconSet.SHINY)
         .element(GTElements.get('zano_alumate'))
     event.create('luminite')
-        .color(0x85ffad)
+        .color(0x85ffad).secondaryColor(0x6ac49d)
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .ingot()
         .ore()
