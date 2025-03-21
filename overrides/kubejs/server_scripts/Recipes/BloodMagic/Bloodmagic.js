@@ -17,8 +17,13 @@ let yeet_f = (itemName) => {
 }
 
 yeet('bloodmagic:soul_forge')
-
-
+ServerEvents.tags('item', event => {
+  event.remove('forge:dusts/iron', 'bloodmagic:ironsand')
+  event.remove('forge:dusts/copper', 'bloodmagic:coppersand')
+  event.remove('forge:dusts/coal', 'bloodmagic:coalsand')
+  event.remove('forge:dusts/gold', 'bloodmagic:goldsand')
+  event.remove('forge:dusts/netherite', 'bloodmagic:sand_netherite')
+})
 ServerEvents.recipes(event => {
 
   console.log('[BLOODMAGIC.JS] - Rewriting History')
@@ -113,6 +118,13 @@ ServerEvents.recipes(event => {
     .soulInput(5000)
     .duration(60)
     .EUt(GTValues.VA[GTValues.IV]);
+  event.recipes.gtceu.hellfire_foundry('t3_orb_prep')
+    .itemInputs('4x bloodmagic:imbuedslate', '8x gtceu:tempered_glass', '4x bloodmagic:imbuedslate', '8x gtceu:tempered_glass', 'gtceu:luv_field_generator')
+    .inputFluids('gtceu:grading_fluid_2 5000')
+    .itemOutputs('kubejs:magiciansbloodorb_frame')
+    .soulInput(5000)
+    .duration(60)
+    .EUt(GTValues.VA[GTValues.LuV]);
   event.recipes.bloodmagic.altar('bloodmagic:reinforcedslate', 'kubejs:wrapped_slate_tier_2').upgradeLevel(1).drainRate(25).consumptionRate(20).altarSyphon(500)
   event.recipes.gtceu.hellfire_foundry('t2_slate_prep')
     .itemInputs('bloodmagic:blankslate', '8x gtceu:polytetrafluoroethylene_foil')
@@ -187,23 +199,40 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.mana_engraver('frontiers:grading_fluid_3')
     .notConsumable('bloodmagic:magicianbloodorb')
     .itemInputs(['64x gtceu:graphene_dust', '64x gtceu:polydimethylsiloxane_dust', '4x cosmiccore:resonant_virtue_meld_dust'])
-    .inputFluids('gtceu:grading_fluid_2 1000', 'gtceu:lake_water 2000', 'gtceu:neutronite 1152', 'gtceu:potent_mana 16000', 'cosmiccore:prisma 32000')
+    .inputFluids('gtceu:grading_fluid_2 1000', 'gtceu:lake_water 2000', 'gtceu:resh_neutron_plasma 1152', 'gtceu:potent_mana 16000', 'cosmiccore:prisma 32000')
     .outputFluids('gtceu:grading_fluid_3 1000')
     .duration(1500)
     .EUt(GTValues.VA[GTValues.LuV]);
   event.recipes.gtceu.mana_engraver('frontiers:grading_fluid_4')
-    .notConsumable('bloodmagic:magicianbloodorb')
+    .notConsumable('bloodmagic:masterbloodorb')
     .itemInputs(['64x gtceu:graphene_dust', '64x gtceu:4_4_oxydianiline_pyromellitimide_dust', '8x botania:life_essence'])
     .inputFluids('gtceu:grading_fluid_3 1000', 'gtceu:sterilized_lake_water 8000', 'cosmiccore:trinavine 1152', 'gtceu:potent_mana 32000', 'cosmiccore:prisma 64000')
     .outputFluids('gtceu:grading_fluid_4 1000')
     .duration(150)
     .EUt(GTValues.VA[GTValues.LuV]);
-
+  event.remove({ id: "bloodmagic:ritual_stone_master" })
+  event.recipes.gtceu.mana_engraver('frontiers:master_ritual_stone')
+    .notConsumable('bloodmagic:magicianbloodorb')
+    .itemInputs(['botania:rune_winter', 'botania:rune_autumn', 'malum:rune_of_the_arena', 'malum:rune_of_warding', 'malum:rune_of_haste', 'botania:rune_summer', 'botania:rune_spring', 'malum:rune_of_the_seas', 'malum:rune_of_the_hells', 'botania:life_essence'])
+    .inputFluids('cosmiccore:prisma 64000')
+    .itemOutputs('bloodmagic:masterritualstone')
+    .duration(750)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.remove({ id: 'bloodmagic:alchemytable/tau_oil' })
   event.recipes.gtceu.hellfire_foundry('frontiers:tau_oil')
     .itemInputs(['bloodmagic:weak_tau', 'bloodmagic:weak_tau', 'bloodmagic:weak_tau', 'gtceu:oilsands_dust', 'bloodmagic:reagentbinding'])
     .outputFluids('gtceu:grading_fluid_3 1000')
-    .itemOutputs('bloodmagic:tau_oil')
+    .itemOutputs('bloodmagic:tauoil')
     .soulInput(30000)
+    .duration(430)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
+
+  event.recipes.gtceu.hellfire_foundry('frontiers:weakened_shard')
+    .itemInputs('bloodmagic:tauoil', 'gtceu:utherium_gem')
+    .outputFluids('gtceu:grading_fluid_3 1000')
+    .itemOutputs('bloodmagic:weakbloodshard')
+    .soulInput(5000)
     .duration(430)
     .EUt(GTValues.VA[GTValues.LuV]);
 
@@ -215,7 +244,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.hellfire_foundry('terra_chalk')
     .itemInputs(['occultism:chalk_white_impure', 'ars_nouveau:earth_essence', 'malum:earthen_spirit', 'botania:rune_earth', 'bloodmagic:reagentgrowth'])
-    .inputFluids('gtceu:grading_fluid_2 1000')
+    .inputFluids('gtceu:grading_fluid_3 1000')
     .itemOutputs('bloodmagic:earthscribetool')
     .soulInput(20000)
     .duration(460)
@@ -253,9 +282,17 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LuV]);
   event.recipes.gtceu.hellfire_foundry('better_binding')
     .itemInputs(['gtceu:osmium_dust', 'gtceu:berkelium_dust', 'occultism:otherworld_ashes', 'gtceu:naquadah_dust', 'bloodmagic:reagentwater'])
-    .inputFluids('gtceu:grading_fluid_3 1000')
+    .inputFluids('gtceu:grading_fluid_2 1000')
     .itemOutputs('bloodmagic:reagentbinding')
     .soulInput(20000)
+    .duration(460)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
+  event.recipes.gtceu.hellfire_foundry('ritual_stone')
+    .itemInputs(['4x bloodmagic:infusedslate', 'gtceu:polished_dark_concrete', '4x bloodmagic:infusedslate', 'gtceu:polished_dark_concrete', 'bloodmagic:reagentbinding'])
+    .inputFluids('gtceu:grading_fluid_2 750')
+    .itemOutputs('bloodmagic:ritualstone')
+    .soulInput(5000)
     .duration(460)
     .EUt(GTValues.VA[GTValues.LuV]);
 
