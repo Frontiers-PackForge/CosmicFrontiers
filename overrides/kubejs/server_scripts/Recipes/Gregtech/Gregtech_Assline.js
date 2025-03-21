@@ -20,6 +20,19 @@ ServerEvents.recipes(event => {
     B: 'gtceu:iv_electric_motor',
     M: 'cosmiccore:iv_radio_module'
   })
+  event.remove({id : 'bloodmagic:ritual_diviner_0'})
+  event.recipes.gtceu.assembly_line('inscriber_recipe')
+    .itemInputs(['botania:exchange_rod', Item.of('occultism:chalk_red', '{Damage:0}'), Item.of('occultism:chalk_purple', '{Damage:0}'), Item.of('occultism:chalk_gold', '{Damage:0}'), Item.of('occultism:chalk_white', '{Damage:0}'), Item.of('bloodmagic:airscribetool', '{Damage:0}'), Item.of('bloodmagic:firescribetool', '{Damage:0}'), Item.of('bloodmagic:waterscribetool', '{Damage:0}'), Item.of('bloodmagic:earthscribetool', '{Damage:0}')])
+    .itemOutputs('bloodmagic:ritualdiviner')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 9216',
+      'gtceu:grading_fluid_1 32000',
+      'gtceu:grading_fluid_2 16000'
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('occultism:chalk_red', '{Damage:0}')).EUt(GTValues.VA[GTValues.LuV]).duration(23800))
+    .duration(1200)
+    .EUt(GTValues.VA[GTValues.LuV])
+
   event.recipes.gtceu.assembly_line('luv_hull_assline')
     .itemInputs(['gtceu:iridium_frame', '16x gtceu:rhodium_plated_palladium_plate', '8x cosmiccore:double_prismatic_tungstensteel_plate', '16x gtceu:osmiridium_screw', '#gtceu:circuits/hv', '2x gtceu:niobium_titanium_quadruple_cable'])
     .itemOutputs('gtceu:luv_machine_hull')
@@ -238,18 +251,18 @@ ServerEvents.recipes(event => {
 
   //Interstellar Hulls
 
-  event.recipes.gtceu.assembly_line('cosmiccore:vomahine_certified_interstellar_grade_casing')
-    .itemInputs(['2x cosmiccore:trinavine_frame', '16x gtceu:double_titanium_plate', '32x gtceu:double_aluminium_plate', '32x gtceu:double_aluminium_plate', '64x gtceu:aluminium_screw', '64x gtceu:aluminium_screw', '64x gtceu:aluminium_rod', '64x gtceu:aluminium_rod', '64x gtceu:aluminium_rod'])
-    .itemOutputs('cosmiccore:vomahine_certified_interstellar_grade_casing')
-    .inputFluids(
-      Fluid.of('gtceu:high_grade_solder', 1152),
-    )
-    .stationResearch(b => b
-      .researchStack('gtceu:fusion_casing')
-      .CWUt(32)
-      .EUt(GTValues.VA[GTValues.ZPM]))
-    .duration(1750)
-    .EUt(GTValues.VA[GTValues.ZPM])
+  // event.recipes.gtceu.assembly_line('cosmiccore:vomahine_certified_interstellar_grade_casing')
+  //   .itemInputs(['2x cosmiccore:trinavine_frame', '16x gtceu:double_titanium_plate', '32x gtceu:double_aluminium_plate', '32x gtceu:double_aluminium_plate', '64x gtceu:aluminium_screw', '64x gtceu:aluminium_screw', '64x gtceu:aluminium_rod', '64x gtceu:aluminium_rod', '64x gtceu:aluminium_rod'])
+  //   .itemOutputs('cosmiccore:vomahine_certified_interstellar_grade_casing')
+  //   .inputFluids(
+  //     Fluid.of('gtceu:high_grade_solder', 1152),
+  //   )
+  //   .stationResearch(b => b
+  //     .researchStack('gtceu:fusion_casing')
+  //     .CWUt(32)
+  //     .EUt(GTValues.VA[GTValues.ZPM]))
+  //   .duration(1750)
+  //   .EUt(GTValues.VA[GTValues.ZPM])
 
 
 
