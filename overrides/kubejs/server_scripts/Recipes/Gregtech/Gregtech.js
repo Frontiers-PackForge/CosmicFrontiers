@@ -71,12 +71,12 @@ ServerEvents.recipes(event => {
 
 
   event.replaceInput(
-    { id: 'gtceu:shaped/bronze_bricks_hull' }, 
+    { id: 'gtceu:shaped/bronze_bricks_hull' },
     'minecraft:bricks',
     'gtceu:coke_oven_bricks'
   )
   event.replaceInput(
-    { output: 'gtceu:steam_machine_casing' }, 
+    { output: 'gtceu:steam_machine_casing' },
     'minecraft:bricks',
     'gtceu:coke_oven_bricks'
   )
@@ -450,39 +450,39 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:electric_blast_furnace/blast_indium_tin_barium_titanium_cuprate_gas' })
 
   event.recipes.gtceu.electric_blast_furnace('indium_tin_barium_titanium_cuprate_ingot')
-  .itemInputs('gtceu:indium_tin_barium_titanium_cuprate_dust')
-  .itemOutputs('gtceu:hot_indium_tin_barium_titanium_cuprate_ingot')
-  .duration(1000)
-  .circuit(1)
-  .blastFurnaceTemp(5900)
-  .EUt(GTValues.VA[GTValues.IV]);
+    .itemInputs('gtceu:indium_tin_barium_titanium_cuprate_dust')
+    .itemOutputs('gtceu:hot_indium_tin_barium_titanium_cuprate_ingot')
+    .duration(1000)
+    .circuit(1)
+    .blastFurnaceTemp(5900)
+    .EUt(GTValues.VA[GTValues.IV]);
 
   event.recipes.gtceu.electric_blast_furnace('indium_tin_barium_titanium_cuprate_ingot_gas')
-  .itemInputs('gtceu:indium_tin_barium_titanium_cuprate_dust')
-  .itemOutputs('gtceu:hot_indium_tin_barium_titanium_cuprate_ingot')
-  .inputFluids('gtceu:argon 100')
-  .duration(670)
-  .circuit(1)
-  .blastFurnaceTemp(5900)
-  .EUt(GTValues.VA[GTValues.IV]);
+    .itemInputs('gtceu:indium_tin_barium_titanium_cuprate_dust')
+    .itemOutputs('gtceu:hot_indium_tin_barium_titanium_cuprate_ingot')
+    .inputFluids('gtceu:argon 100')
+    .duration(670)
+    .circuit(1)
+    .blastFurnaceTemp(5900)
+    .EUt(GTValues.VA[GTValues.IV]);
 
   event.recipes.gtceu.alloy_blast_smelter('indium_tin_barium_titanium_cuprate_ingot_abs')
-  .itemInputs(['4x gtceu:indium_dust', '2x gtceu:tin_dust', '2x gtceu:barium_dust', 'gtceu:titanium_dust', '7x gtceu:copper_dust'])
-  .inputFluids('gtceu:oxygen 14000')
-  .outputFluids('gtceu:molten_indium_tin_barium_titanium_cuprate 2304')
-  .duration(12000)
-  .circuit(6)
-  .blastFurnaceTemp(5900)
-  .EUt(GTValues.VA[GTValues.IV]);
+    .itemInputs(['4x gtceu:indium_dust', '2x gtceu:tin_dust', '2x gtceu:barium_dust', 'gtceu:titanium_dust', '7x gtceu:copper_dust'])
+    .inputFluids('gtceu:oxygen 14000')
+    .outputFluids('gtceu:molten_indium_tin_barium_titanium_cuprate 2304')
+    .duration(12000)
+    .circuit(6)
+    .blastFurnaceTemp(5900)
+    .EUt(GTValues.VA[GTValues.IV]);
 
   event.recipes.gtceu.alloy_blast_smelter('indium_tin_barium_titanium_cuprate_ingot_abs_gas')
-  .itemInputs(['4x gtceu:indium_dust', '2x gtceu:tin_dust', '2x gtceu:barium_dust', 'gtceu:titanium_dust', '7x gtceu:copper_dust'])
-  .inputFluids('gtceu:oxygen 14000', 'gtceu:argon 800')
-  .outputFluids('gtceu:molten_indium_tin_barium_titanium_cuprate 2304')
-  .duration(8040)
-  .circuit(16)
-  .blastFurnaceTemp(5900)
-  .EUt(GTValues.VA[GTValues.IV]);
+    .itemInputs(['4x gtceu:indium_dust', '2x gtceu:tin_dust', '2x gtceu:barium_dust', 'gtceu:titanium_dust', '7x gtceu:copper_dust'])
+    .inputFluids('gtceu:oxygen 14000', 'gtceu:argon 800')
+    .outputFluids('gtceu:molten_indium_tin_barium_titanium_cuprate 2304')
+    .duration(8040)
+    .circuit(16)
+    .blastFurnaceTemp(5900)
+    .EUt(GTValues.VA[GTValues.IV]);
 
   event.recipes.gtceu.assembler('alpha_supercon')
     .itemInputs(['16x gtceu:galvanized_ethersteel_foil', '4x gtceu:titanium_tiny_fluid_pipe', '4x gtceu:luminescent_utherium_double_wire', 'gtceu:hv_electric_pump'])
@@ -1467,6 +1467,29 @@ ServerEvents.recipes(event => {
     W: 'gtceu:elementium_quadruple_wire',
     F: 'gtceu:ev_alloy_smelter'
   })
+  event.remove({ output: 'gtceu:electric_blast_furnace/trinium_sulfide_separation' })
+  event.recipes.gtceu.electric_blast_furnace('trinium_hot_ingot')
+    .itemInputs('2x gtceu:trinium_sulfide_dust', 'gtceu:zinc_dust')
+    .inputFluids('gtceu:pyroflux 250')
+    .itemOutputs('gtceu:hot_trinium_ingot')
+    .duration(750)
+    .blastFurnaceTemp(5400)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.electrolyzer('enriched_dust')
+    .itemInputs('6x gtceu:enriched_naquadah_sulfate_dust')
+    .inputFluids('gtceu:pyroflux 250')
+    .itemOutputs(['gtceu:enriched_naquadah_dust', 'gtceu:sulfur_dust'])
+    .outputFluids('gtceu:oxygen 4000')
+    .duration(340)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.electrolyzer('naqria_dust')
+    .itemInputs('6x gtceu:naquadria_sulfate_dust')
+    .inputFluids('gtceu:pyroflux 250')
+    .itemOutputs(['gtceu:naquadria_dust', 'gtceu:sulfur_dust'])
+    .outputFluids('gtceu:oxygen 4000')
+    .duration(440)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
   //Coils-new
   event.remove({ id: 'gtceu:assembler/coil_cupronickel' })
   event.recipes.gtceu.spooling_machine('coil_cupronickel')
