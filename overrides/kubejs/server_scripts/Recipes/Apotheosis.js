@@ -373,7 +373,7 @@ ServerEvents.recipes(event => {
         ' R ',
         ' B '
     ], {
-        B: 'gtceu:double_steel_rod',
+        B: 'gtceu:steel_long_rod',
         R: 'minecraft:book'
     })
     event.shaped('3x apotheosis:bow_tome', [
@@ -381,7 +381,7 @@ ServerEvents.recipes(event => {
         'RBS',
         ' RS'
     ], {
-        B: 'gtceu:double_steel_rod',
+        B: 'gtceu:steel_long_rod',
         R: 'minecraft:book',
         S: 'minecraft:string'
     })
@@ -390,7 +390,7 @@ ServerEvents.recipes(event => {
         ' B ',
         ' B '
     ], {
-        B: 'gtceu:double_steel_rod',
+        B: 'gtceu:steel_long_rod',
         R: 'minecraft:book'
     })
     event.shaped('2x apotheosis:fishing_tome', [
@@ -398,7 +398,7 @@ ServerEvents.recipes(event => {
         ' BS',
         'R S'
     ], {
-        B: 'gtceu:double_steel_rod',
+        B: 'gtceu:steel_long_rod',
         R: 'minecraft:book',
         S: 'minecraft:string'
     })
