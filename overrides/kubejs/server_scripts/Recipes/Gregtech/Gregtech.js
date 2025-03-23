@@ -1519,7 +1519,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.UV] / 2);
 
   event.shapeless('gtceu:magnetic_iron_bolt', [
-    'gtceu:iron_bolt', 'minecraft:redstone_dust', 'minecraft:redstone_dust', 'minecraft:redstone_dust', 'minecraft:redstone_dust'
+    'gtceu:iron_bolt', 'minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone'
   ])
 })
 
