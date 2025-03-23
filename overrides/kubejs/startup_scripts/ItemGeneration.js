@@ -19,6 +19,7 @@ StartupEvents.registry('item', event => {
     event.create('wrapped_slate_tier_2').displayName('Wrapped Blank Slate')
     event.create('wrapped_slate_tier_3').displayName('Wrapped Reinforced Slate')
     event.create('wrapped_slate_tier_4').displayName('Wrapped Imbued Slate')
+    event.create('wrapped_slate_tier_5').displayName('Wrapped Demonic Slate')
     event.create('spooled_terraweave').displayName('Spooled Terraweave')
     event.create('apprenticebloodorb_frame').displayName('Apprentice Blood Orb Frame')
     event.create('magicianbloodorb_frame').displayName('Magician Blood Orb Frame')

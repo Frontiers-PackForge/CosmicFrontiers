@@ -29,8 +29,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.mixer('gtceu:mixer/raw_mana_crystal_slurry')
         .itemInputs('botania:mana_diamond')
-        .inputFluids('gtceu:sulfuric_acid 1000')
-        .inputFluids('minecraft:water 2000')
+        .inputFluids('gtceu:sulfuric_acid 2000')
+        .inputFluids('minecraft:water 1000')
         .outputFluids('gtceu:raw_mana_crystal_slurry 3000')
         .duration(120)
         .EUt(GTValues.VA[GTValues.MV]);

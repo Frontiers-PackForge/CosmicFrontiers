@@ -90,8 +90,11 @@ ServerEvents.recipes(event => {
 
   event.recipes.bloodmagic.altar('bloodmagic:magicianbloodorb', 'kubejs:magicianbloodorb_frame').upgradeLevel(2).drainRate(100).consumptionRate(50).altarSyphon(5000)
   event.recipes.bloodmagic.altar('bloodmagic:masterbloodorb', 'kubejs:masterbloodorb_frame').upgradeLevel(3).drainRate(100).consumptionRate(50).altarSyphon(20000)
-  //T2 Orb
   event.recipes.bloodmagic.altar('bloodmagic:daggerofsacrifice', 'gtceu:nano_saber').upgradeLevel(0).drainRate(50).consumptionRate(25).altarSyphon(10000)
+  event.recipes.bloodmagic.altar('bloodmagic:infusedslate', 'kubejs:wrapped_slate_tier_3').upgradeLevel(2).drainRate(55).consumptionRate(70).altarSyphon(2500)
+  event.recipes.bloodmagic.altar('bloodmagic:reinforcedslate', 'kubejs:wrapped_slate_tier_2').upgradeLevel(1).drainRate(25).consumptionRate(20).altarSyphon(1000)
+  event.recipes.bloodmagic.altar('bloodmagic:demonslate', 'kubejs:wrapped_slate_tier_4').upgradeLevel(3).drainRate(55).consumptionRate(70).altarSyphon(5000)
+  event.recipes.bloodmagic.altar('bloodmagic:etherealslate', 'kubejs:wrapped_slate_tier_5').upgradeLevel(4).drainRate(55).consumptionRate(70).altarSyphon(10000)
 
 
   event.recipes.gtceu.compressor('slate_to_rune')
@@ -134,7 +137,6 @@ ServerEvents.recipes(event => {
     .soulInput(40000)
     .duration(500)
     .EUt(GTValues.VA[GTValues.IV]);
-  event.recipes.bloodmagic.altar('bloodmagic:reinforcedslate', 'kubejs:wrapped_slate_tier_2').upgradeLevel(1).drainRate(25).consumptionRate(20).altarSyphon(500)
   event.recipes.gtceu.hellfire_foundry('t2_slate_prep')
     .itemInputs('bloodmagic:blankslate', '8x gtceu:polytetrafluoroethylene_foil')
     .inputFluids('gtceu:grading_fluid_1 20')
@@ -143,7 +145,6 @@ ServerEvents.recipes(event => {
     .duration(60)
     .EUt(GTValues.VA[GTValues.IV]);
   event.remove({ id: 'bloodmagic:altar/imbuedslate' })
-  event.recipes.bloodmagic.altar('bloodmagic:infusedslate', 'kubejs:wrapped_slate_tier_3').upgradeLevel(2).drainRate(55).consumptionRate(70).altarSyphon(2500)
   event.recipes.gtceu.hellfire_foundry('t3_slate_prep')
     .itemInputs('bloodmagic:reinforcedslate', '16x gtceu:polybenzimidazole_foil')
     .inputFluids('gtceu:grading_fluid_2 40')
@@ -153,7 +154,6 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LuV]);
 
   event.remove({ id: 'bloodmagic:altar/demonicslate' })
-  event.recipes.bloodmagic.altar('bloodmagic:demonslate', 'kubejs:wrapped_slate_tier_4').upgradeLevel(3).drainRate(55).consumptionRate(70).altarSyphon(5000)
   event.recipes.gtceu.hellfire_foundry('t4_slate_prep')
     .itemInputs('bloodmagic:infusedslate', '32x gtceu:polybenzimidazole_foil')
     .inputFluids('gtceu:grading_fluid_3 40')
@@ -346,4 +346,48 @@ ServerEvents.recipes(event => {
   event.shapeless('bloodmagic:sacrificialdagger', [
     'gtceu:tungsten_steel_knife'
   ])
+
+  //MECHANICAL ALTAR RECIPES
+  /* By default should mimic all the normal altar recipes
+     Otherwise it may cause problems
+  */
+
+
+  event.recipes.gtceu.hemophagic_transfuser('slate_tier_one_bulk')
+    .itemInputs('16x gtceu:carbon_fiber_plate')
+    .itemOutputs('16x bloodmagic:blankslate')
+    .soulInput(8000)
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.hemophagic_transfuser('slate_tier_two_bulk')
+    .itemInputs('16x kubejs:wrapped_slate_tier_2')
+    .itemOutputs('16x bloodmagic:reinforcedslate')
+    .soulInput(16000)
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.hemophagic_transfuser('slate_tier_three_bulk')
+    .itemInputs('16x kubejs:wrapped_slate_tier_3')
+    .itemOutputs('16x bloodmagic:infusedslate')
+    .soulInput(40000)
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.hemophagic_transfuser('slate_tier_four_bulk')
+    .itemInputs('16x kubejs:wrapped_slate_tier_4')
+    .itemOutputs('16x bloodmagic:demonslate')
+    .soulInput(80000)
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.hemophagic_transfuser('slate_tier_five_bulk')
+    .itemInputs('16x kubejs:wrapped_slate_tier_5')
+    .itemOutputs('16x bloodmagic:etherealslate')
+    .soulInput(160000)
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.hemophagic_transfuser('blade_mechanical')
+    .itemInputs('16x gtceu:nano_saber')
+    .itemOutputs('16x bloodmagic:daggerofsacrifice')
+    .soulInput(2000)
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
 })
