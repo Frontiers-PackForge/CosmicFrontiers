@@ -52,23 +52,7 @@ GTCEuServerEvents.oreVeins(event => {
             .radius(4)
         )
     )
-    event.add('kubejs:mars_phosphor_vein', vein => vein
-        .weight(30).clusterSize(30).density(0.2)
-        .layer('moon_stone')
-        .heightRangeUniform(35, 50)
-        .layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.TricalciumPhosphate).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Pyrochlore).size(2, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.Apatite).size(1, 3))
-            )
-        )
-        .surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.Pyrochlore)
-            .density(0.2)
-            .radius(4)
-        )
-    )
+
     event.add('kubejs:tetrahedrite_vein_mars', vein => {
         vein.layer('moon_stone')
         vein.weight(40)

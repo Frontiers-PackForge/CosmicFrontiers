@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
     B: 'gtceu:iv_electric_motor',
     M: 'cosmiccore:iv_radio_module'
   })
-  event.remove({id : 'bloodmagic:ritual_diviner_0'})
+  event.remove({ id: 'bloodmagic:ritual_diviner_0' })
   event.recipes.gtceu.assembly_line('inscriber_recipe')
     .itemInputs(['botania:exchange_rod', Item.of('occultism:chalk_red', '{Damage:0}'), Item.of('occultism:chalk_purple', '{Damage:0}'), Item.of('occultism:chalk_gold', '{Damage:0}'), Item.of('occultism:chalk_white', '{Damage:0}'), Item.of('bloodmagic:airscribetool', '{Damage:0}'), Item.of('bloodmagic:firescribetool', '{Damage:0}'), Item.of('bloodmagic:waterscribetool', '{Damage:0}'), Item.of('bloodmagic:earthscribetool', '{Damage:0}')])
     .itemOutputs('bloodmagic:ritualdiviner')
@@ -247,7 +247,56 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LuV])
 
 
+  event.remove({ id: 'bloodmagic:blood_rune_speed' })
+  event.remove({ id: 'bloodmagic:blood_rune_capacity' })
+  event.remove({ id: 'bloodmagic:blood_rune_sacrifice' })
+  event.remove({ id: 'bloodmagic:blood_rune_self_sacrifice' })
 
+  event.recipes.gtceu.assembly_line('frontiers:speed_rune')
+    .itemInputs(['bloodmagic:blankrune', '4x botania:rune_spring', '4x botania:rune_air', '64x minecraft:sugar', 'botania:cosmetic_clock_eye'])
+    .itemOutputs('bloodmagic:speedrune')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 288',
+      'gtceu:grading_fluid_1 250'
+    )
+    ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
+
+  event.recipes.gtceu.assembly_line('frontiers:capacity_rune')
+    .itemInputs(['bloodmagic:blankrune', '4x botania:rune_summer', '4x botania:rune_water', 'gtceu:steel_fluid_cell', 'gtceu:aluminium_fluid_cell', 'gtceu:stainless_steel_fluid_cell', 'gtceu:titanium_fluid_cell', 'gtceu:tungstensteel_fluid_cell'])
+    .itemOutputs('bloodmagic:altarcapacityrune')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 288',
+      'gtceu:grading_fluid_2 250'
+    )
+    ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
+
+
+
+  event.recipes.gtceu.assembly_line('frontiers:sacrifice_rune')
+    .itemInputs(['bloodmagic:blankrune', 'gtceu:slicing_blades', '4x botania:rune_autumn', '4x botania:rune_fire', 'gtceu:tungsten_steel_buzz_saw_blade', 'gtceu:titanium_buzz_saw_blade'])
+    .itemOutputs('bloodmagic:sacrificerune')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 288',
+      'gtceu:grading_fluid_2 250'
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
+
+  event.recipes.gtceu.assembly_line('frontiers:self_sac_rune')
+    .itemInputs(['bloodmagic:blankrune', '4x botania:rune_earth', '4x botania:rune_winter', 'bloodmagic:sacrificialdagger', 'bloodmagic:sacrificialdagger', 'bloodmagic:sacrificialdagger'])
+    .itemOutputs('bloodmagic:selfsacrificerune')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 288',
+      'gtceu:grading_fluid_2 250'
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
 
   //Interstellar Hulls
 

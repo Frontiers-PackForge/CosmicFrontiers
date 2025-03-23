@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
 
   event.replaceOutput({ id: 'gtceu:shaped/extreme_combustion_engine' }, 'gtceu:extreme_combustion_engine', 'gtceu:extreme_combustion_engine_cc')
   event.replaceOutput({ id: 'gtceu:shaped/large_combustion_engine' }, 'gtceu:large_combustion_engine', 'gtceu:large_combustion_engine_cc')
-
+  event.replaceOutput({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_uvarovite' }, 'gtceu:chromium_dust', 'gtceu:chromite_dust')
 
   event.replaceInput(
     { id: 'gtceu:shaped/bronze_bricks_hull' },
@@ -1456,6 +1456,17 @@ ServerEvents.recipes(event => {
     }
     )
   })
+  event.shaped('cosmiccore:chromatic_flotation_plant',[
+    'ABA',
+    'CDC',
+    'EBE'
+], {
+    A: 'gtceu:tungsten_steel_drum',
+    B: '#gtceu:circuits/luv',
+    C: 'gtceu:luv_electric_pump',
+    D: 'gtceu:luv_machine_hull',
+    E: 'gtceu:luv_conveyor_module'
+})
   event.remove({ output: 'gtceu:alloy_blast_smelter' })
   event.shaped('gtceu:alloy_blast_smelter', [
     'PCP',

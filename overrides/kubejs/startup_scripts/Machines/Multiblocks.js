@@ -38,7 +38,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks('minecraft:moss_block'))
             .where('R', Predicates.blocks('minecraft:flowering_azalea'))
             .where('Q', Predicates.blocks('gtceu:tempered_glass'))
-            .where('L', Predicates.blocks('cosmiccore:antiblock_white'))
+            .where('L', Predicates.blocks('gtceu:white_borderless_lamp'))
             .build())
         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/flora_nurturer', false);
 

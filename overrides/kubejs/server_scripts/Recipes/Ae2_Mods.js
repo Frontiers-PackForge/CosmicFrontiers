@@ -13,7 +13,9 @@ let yeet = (itemName) => {
     event.add('forge:viewers/hidden_from_recipe', itemName)
   })
 }
-let DESTROY = ['mae2:256x_crafting_accelerator', 'mae2:64x_crafting_accelerator', 'mae2:16x_crafting_accelerator', 'mae2:4x_crafting_accelerator']
+//Multi Pattern P2P has bugs which alongside GT causes many crafting issues, if you choose to circumvent their removal, you have been warned.
+//Yes utilization of these is considered a role-invalidator
+let DESTROY = ['mae2:pattern_multi_p2p_tunnel', 'mae2:redstone_multi_p2p_tunnel', 'mae2:fe_multi_p2p_tunnel', 'mae2:fluid_multi_p2p_tunnel', 'mae2:item_multi_p2p_tunnel', 'mae2:eu_p2p_tunnel', 'mae2:eu_multi_p2p_tunnel']
 
 ServerEvents.tags('item', event => {
   event.add('forge:viewers/hidden_from_recipe', DESTROY)
