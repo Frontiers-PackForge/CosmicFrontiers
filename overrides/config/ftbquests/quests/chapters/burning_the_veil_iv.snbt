@@ -32,12 +32,12 @@
 				"75AC0231E1B539AB"
 			]
 			description: [
-				"Note; You'll need 13 Assembly Line casings in total"
+				"Note; You'll need 14 Assembly Line casings in total"
 				" Four for the controller"
-				" Eight for Input Slices"
-				" One for  Output Slice"
+				" Nine for Input Slices"
+				" One for Output Slice"
 				""
-				"Recipes must be inserted into the assembly line matcing EMI, the slot closest to the controller represents &eslot 1&r."
+				"Recipes must be inserted into the assembly line matching EMI, the slot closest to the controller represents &eslot 1&r."
 				""
 				"You'll have to get creative with how you automate this, I'd recommend using &eAE2 subnets&r"
 			]

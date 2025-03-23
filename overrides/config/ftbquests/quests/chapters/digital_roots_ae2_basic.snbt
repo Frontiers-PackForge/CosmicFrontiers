@@ -10,10 +10,8 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"4F7C125D9EE9BC3F"
-				"5ABF9E529AEDFB8E"
-			]
+			dependencies: ["5ABF9E529AEDFB8E"]
+			dependency_requirement: "one_completed"
 			description: ["You have to power your ME system for it to work. The energy acceptor is the cheapest and easiest way to do this. Slap some power into this baby and you're good to roll."]
 			id: "30E09C21E7032519"
 			shape: "gear"

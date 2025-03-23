@@ -1386,8 +1386,8 @@
 			dependencies: ["38DA0B4E0DBAC364"]
 			id: "04915FE56BD0E314"
 			tasks: [{
-				id: "15F081CA0ECD7594"
-				item: "gtceu:iodine_ingot"
+				id: "2A38F2DD4576799A"
+				item: "gtceu:iodine_dust"
 				type: "item"
 			}]
 			x: 13.5d

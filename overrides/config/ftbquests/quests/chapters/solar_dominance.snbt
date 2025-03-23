@@ -13,6 +13,237 @@
 	id: "725B72A265F32F12"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
-	title: "Solar Dominance"
+	quests: [
+		{
+			id: "1EDA6025077BAA5D"
+			size: 2.0d
+			tasks: [{
+				id: "4434E755BF9F2B0C"
+				item: "gtceu:zpm_machine_hull"
+				type: "item"
+			}]
+			title: "Welcome to ZPM"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1EDA6025077BAA5D"]
+			id: "0EB37211BFB94473"
+			tasks: [{
+				id: "0B73237379F32641"
+				item: "gtceu:grading_fluid_4_bucket"
+				type: "item"
+			}]
+			title: "Tier 5 Gradaing Catalyst"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0EB37211BFB94473"]
+			id: "00FD19CCFB41CF8A"
+			tasks: [{
+				id: "6D96D3D6A8A27225"
+				item: "cosmiccore:asc_blood_orb"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["00FD19CCFB41CF8A"]
+			icon: "bloodmagic:dungeon_controller"
+			id: "6AA384B858690CAD"
+			title: "Dawn of a new cycle"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			id: "3DCCE7A7C2B39FCE"
+			subtitle: "ZPM Rubber"
+			tasks: [{
+				id: "1089A2E77561CCDB"
+				item: "gtceu:silicone_rubber_foil"
+				type: "item"
+			}]
+			title: "Vibrosomatic Neoprene"
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			id: "2D8A52A43803DF61"
+			subtitle: "ZPM Polymer"
+			tasks: [{
+				id: "177871F871A61E19"
+				item: "gtceu:naquahine_foil"
+				type: "item"
+			}]
+			title: "Nylon"
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			id: "554E0A71016C4EE9"
+			tasks: [{
+				id: "086250441CA5BE3C"
+				item: "gtceu:research_station"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			id: "6ABD6ECFF6A5ACE4"
+			tasks: [{
+				id: "4F598501D529E29A"
+				item: "gtceu:high_performance_computation_array"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			id: "1B24263AD9282E23"
+			subtitle: "Mana with a thought"
+			tasks: [{
+				id: "23B7F1D9AE1D9C07"
+				item: "gtceu:research_station"
+				type: "item"
+			}]
+			title: "Mana Digitizer"
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			id: "15D6856B141AD56E"
+			tasks: [{
+				id: "7FC4C2E489BEC822"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_4_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["00FD19CCFB41CF8A"]
+			id: "33066F67B95D8F1B"
+			tasks: [{
+				id: "58B7519651E96DB7"
+				item: "gtceu:grading_fluid_4_bucket"
+				type: "item"
+			}]
+			title: "Tier 6 Grading Catalyst"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0EB37211BFB94473"]
+			id: "0D3FA9F6A3AA0568"
+			tasks: [{
+				id: "42CC7F2963CD2A63"
+				item: "bloodmagic:etherealslate"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			id: "0CA4111E6FFD6B3D"
+			tasks: [{
+				id: "5C351D8C55A50B84"
+				item: "gtceu:naquahine_superfuel_mk_two_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			id: "1B8F799F797D7B62"
+			tasks: [{
+				id: "16CBB612DEF4456E"
+				item: "gtceu:stardust_infused_gasoline_bucket"
+				type: "item"
+			}]
+			title: "Iso-octane doped Stardust Gasoline"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			description: ["An augmented version of Neutronite. Neutron Density has been increased by a factor of 100"]
+			id: "647D1F76EE4D2AE1"
+			subtitle: "The Real Deal."
+			tasks: [{
+				id: "230AB8C0AF911222"
+				item: "gtceu:neutronium_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "22E893A69FB7C197"
+			subtitle: "Luminites Big Brother"
+			tasks: [{
+				id: "1CCF154A04864F46"
+				item: "gtceu:desh_ingot"
+				type: "item"
+			}]
+			title: "Starmetal"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			id: "026155575C4F9913"
+			tasks: [{
+				id: "4F3E91E2E861668B"
+				item: "gtceu:graphene_dust"
+				type: "item"
+			}]
+			title: "Carbon Nanotubes"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			id: "1FB14148DD45B90D"
+			tasks: [{
+				id: "5421E4482C135F13"
+				item: "gtceu:naquadria_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			icon: "gtceu:grand_assembly_line"
+			id: "195241FCB0CC40DE"
+			title: "The Wings"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			id: "3FCCC1CCDEF90870"
+			tasks: [{
+				id: "79EA8EA1CBD03519"
+				item: "gtceu:zpm_fusion_reactor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "5D60F7DF595E5B82"
+			shape: "hexagon"
+			tasks: [{
+				id: "0DCFC28A546C6DBA"
+				item: "gtceu:mana_simulator"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "The Stygian Plague - [ZPM]"
 }

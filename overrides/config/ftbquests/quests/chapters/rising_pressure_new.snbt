@@ -1040,6 +1040,8 @@
 				""
 				""
 				"For now, normal nether portals will function as intended, feel free to enter the nether that way."
+				""
+				"&4You must consume the seal to enter, regardless.&r"
 			]
 			id: "370680B11E59D49C"
 			shape: "octagon"

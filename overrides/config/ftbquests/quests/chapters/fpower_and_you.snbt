@@ -689,7 +689,18 @@
 				item: "gtceu:stardust_infused_gasoline_bucket"
 				type: "item"
 			}]
-			x: -14.0d
+			x: -14.5d
+			y: 0.0d
+		}
+		{
+			id: "37CF60979B32CB99"
+			shape: "hexagon"
+			tasks: [{
+				id: "6C8157F5CDF9956E"
+				item: "gtceu:high_octane_gasoline_bucket"
+				type: "item"
+			}]
+			x: -13.5d
 			y: 0.0d
 		}
 	]
