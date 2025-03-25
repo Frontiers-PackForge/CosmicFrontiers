@@ -325,10 +325,12 @@
   "material.gtceu.high_strength_low_alloy_pthanterum": "High Strength Low Alloy Pthanterum",
   "material.gtceu.vibrosomatic_sythetic_pthanterum": "Vibrosomatic Synthetic Pthanterum",
 
-  "material.gtceu.grading_fluid_1": "Tier 1 Grading Fluid",
-  "material.gtceu.grading_fluid_2": "Tier 2 Grading Fluid",
-  "material.gtceu.grading_fluid_3": "Tier 3 Grading Fluid",
-  "material.gtceu.grading_fluid_4": "Tier 4 Grading Fluid",
+  "material.gtceu.grading_fluid_1": "Tier 1 Grading Catalyst",
+  "material.gtceu.grading_fluid_2": "Tier 2 Grading Catalyst",
+  "material.gtceu.grading_fluid_3": "Tier 3 Grading Catalyst",
+  "material.gtceu.grading_fluid_4": "Tier 4 Grading Catalyst",
+  "material.gtceu.grading_fluid_5": "Tier 5 Grading Catalyst",
+  "material.gtceu.grading_fluid_6": "Tier 6 Grading Catalyst",
   
   "material.gtceu.uranium_fuel_salt": "Low Grade Uranium Fuel Salt",
   "material.gtceu.americium_fuel_salt": "Medium Grade Americium Fuel Salt",
