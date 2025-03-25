@@ -309,6 +309,22 @@ ServerEvents.recipes(event => {
         .itemOutputs('16x legendarysurvivaloverhaul:ice_fern_leaf')
         .duration(160)
         .EUt(GTValues.VA[GTValues.MV] / 2);
+
+    event.recipes.gtceu.flora_nurturer('tau_berry_cultivation')
+        .notConsumable('bloodmagic:weak_tau')
+        .notConsumable('minecraft:moss_block')
+        .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 500))
+        .itemOutputs('2x bloodmagic:weak_tau')
+        .chancedOutput(Item.of('bloodmagic:weak_tau', 2), 2500, 500)
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.LV] / 2);
+    event.recipes.gtceu.flora_nurturer('tau_berry_cultivation_nutrient_sol')
+        .notConsumable('bloodmagic:weak_tau')
+        .notConsumable('minecraft:moss_block')
+        .inputFluids('gtceu:nutrient_solution 50')
+        .itemOutputs('16x bloodmagic:weak_tau')
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.MV] / 2);
     let floraNether = [
         'biomesoplenty:glowflower',
         'biomesoplenty:burning_blossom',
