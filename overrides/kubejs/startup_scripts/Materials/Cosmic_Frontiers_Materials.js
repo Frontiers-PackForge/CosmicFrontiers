@@ -635,7 +635,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('moon_stone')
         .dust()
         .color(0x143d30)
-
+    //TRINIUM
+    event.create('trinium_calx_solution')
+    .color(0xe50508b)
+    .liquid()
+    event.create('vitrolic_slurry')
+    .color(0x5b767b)
+    .liquid()
+    event.create('trinium_waste')
+    .color(0x348d8d)
+    .liquid()
+    event.create('trinium_oxide')
+    .dust()
+    .color(0x6d7283).secondaryColor(0x353836).iconSet(GTMaterialIconSet.DULL)
 })
 
 GTCEuStartupEvents.materialModification(event => {
