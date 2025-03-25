@@ -210,6 +210,8 @@
 				"&l&cDO NOT RUN MK2 FUEL IN A REACTOR CAPABLE OF HANDLING MK1&r"
 				""
 				"Welcome to your core power producer for the future. Oh and don't forget the mini reactors as well, they're great for remote power, albeit awfully inefficient."
+				""
+				"Dev note; I am still looking on making Gas/Liquid fuels scalable enough that there is some power choice variance, suggest other boosting fuels/lubricants on discord"
 			]
 			icon: "cosmiccore:naquahine_pressure_reactor"
 			id: "52E24C3A025D1A04"
@@ -513,9 +515,11 @@
 				"4C3664BE7F702120"
 				"7EBEBD486707B1AC"
 			]
+			description: ["You'll need a Large Electrolyzer to process this in LuV, as you will need two LuV Energy hatches."]
 			id: "4CB55CFBB968311A"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "High Density Naquadah"
 			tasks: [{
 				id: "216DE89A748681D9"
 				item: "gtceu:naquadria_ingot"
@@ -605,7 +609,7 @@
 				type: "item"
 			}]
 			title: "Will Crystals Without Will?"
-			x: 8.0d
+			x: 9.0d
 			y: -3.0d
 		}
 		{
@@ -625,6 +629,7 @@
 				item: "cosmiccore:vomahine_industrial_chemical_plant"
 				type: "item"
 			}]
+			title: "Industrial Chemical Vat"
 			x: 0.0d
 			y: 4.5d
 		}
@@ -632,6 +637,7 @@
 			dependencies: [
 				"635C885360A8A8A9"
 				"4281EF4DD50CB701"
+				"25BE42C85F9BA274"
 			]
 			id: "433CFBEBF8EFB418"
 			shape: "hexagon"
@@ -645,7 +651,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["44D9A9E10867D1BC"]
+			dependencies: [
+				"44D9A9E10867D1BC"
+				"52FDB03D36E94054"
+			]
 			description: [
 				"Welcome to Crystal CPU's, a much harder CPU core than Nano or Quantum. And require a multi-dimensional setup to fully automate. Some pointers before you start."
 				""
@@ -708,7 +717,6 @@
 		{
 			dependencies: [
 				"33EAB75E7D2CAFDA"
-				"6CFEE9FDE64A56F5"
 				"2C231CE663DDA562"
 			]
 			description: [
@@ -1355,7 +1363,10 @@
 			y: -14.0d
 		}
 		{
-			dependencies: ["2C231CE663DDA562"]
+			dependencies: [
+				"5E7BEAA0EA55C758"
+				"7B772D4F47A1390C"
+			]
 			description: [
 				"You can now automatically insert LP into your Soul Network."
 				""
@@ -1370,8 +1381,8 @@
 				item: "cosmiccore:luv_soul_output_hatch"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -4.5d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["75E3A149361EA931"]
@@ -1516,22 +1527,11 @@
 			y: -2.0d
 		}
 		{
-			icon: "cosmiccore:zpm_shredder_module"
-			id: "36FA67EE5DBC791C"
-			tasks: [{
-				id: "714AD23A3C4DD6B6"
-				type: "custom"
-			}]
-			title: "TODO ; Mechanical Altar Reagents"
-			x: 3.5d
-			y: -3.0d
-		}
-		{
 			dependencies: ["7F7D6A88A4870EE1"]
 			description: [
 				"From \"&nTier 5&r\" Blood Orb and higher you will instead use the \"&eSanguine Infuser&r\" to automate blood infusions &busing LP&r."
 				""
-				"You can generate LP with &cSanguine Sufferage Chambers&r OR &cWell of Suffering&r, though WOS will always be capped by &6orb tier&r- while SSC's are capped by &6soul output hatch tier&r."
+				"You can generate LP with &cSuffering Chambers&r OR &cWell of Suffering&r, though WOS will always be capped by &6orb tier&r- while SSC's are capped by &6soul output hatch tier&r."
 				""
 				"Each Tier of Blood Orb higher than T5 (T6-T9) allows you to make upgradable components for your Sanguine Infusers to increase their &emax recipe tier&r."
 				""
@@ -1539,14 +1539,14 @@
 				""
 				"Triva; Blood Magic for T6+ is meant to use a upgraded version of the blood altar. Do to current technical limitations, that Idea has been shelved and instead saved for future updates."
 			]
-			icon: "bloodmagic:altar"
+			icon: "cosmiccore:hemophagic_transfuser"
 			id: "15FA1625BC0CB121"
-			shape: "gear"
-			size: 1.25d
+			shape: "hexagon"
+			size: 1.75d
 			subtitle: "Altar Modulization"
 			tasks: [{
-				id: "6E30E2657AEBA8ED"
-				item: "cosmiccore:uhv_shredder_module"
+				id: "0C2DEA2276DC4B95"
+				item: "cosmiccore:hemophagic_transfuser"
 				type: "item"
 			}]
 			title: "Altar No More"
@@ -1554,40 +1554,37 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["36FA67EE5DBC791C"]
+			dependencies: ["5E7BEAA0EA55C758"]
 			description: [
 				"Device Capable of Extracting Raw LP from a contained entity."
 				""
 				""
-				"Mechanics TBD"
+				"Can Accept Mechanical Runes to Upgrade its base strength (NYI)"
 			]
 			id: "75A4495610653B26"
 			subtitle: "Big, Scary, Bloody."
 			tasks: [{
-				id: "0E2201E3BEC602A3"
-				item: "gtceu:essence_reactor"
+				id: "42A2C26A984EACF0"
+				item: "cosmiccore:suffering_chamber"
 				type: "item"
 			}]
-			title: "TODO ; Sanguine Sufferage Chamber"
-			x: 6.5d
+			title: "Suffering Chamber"
+			x: 7.5d
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"3F638ACC2A023574"
-				"36FA67EE5DBC791C"
-			]
+			dependencies: ["2C231CE663DDA562"]
 			icon: "bloodmagic:masterbloodorb"
 			id: "7B772D4F47A1390C"
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Big, Scary, Bloody."
+			subtitle: "Tier 4 and onwards"
 			tasks: [{
 				id: "2AD2737BCEDBF9D4"
 				item: "bloodmagic:masterbloodorb"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.5d
 			y: -4.5d
 		}
 		{
@@ -1867,8 +1864,8 @@
 				item: "gtceu:white_gold_dust"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 7.0d
+			x: 0.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["4281EF4DD50CB701"]
@@ -1986,7 +1983,7 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["22AAB45F4D7D23AF"]
+			dependencies: ["5F3EA5E12E6D193F"]
 			hide_dependent_lines: true
 			id: "0713A629FE353718"
 			shape: "hexagon"
@@ -1996,8 +1993,8 @@
 				item: "cosmiccore:resonantly_tuned_virtue_meld_casing"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: 2.5d
+			y: 8.75d
 		}
 		{
 			dependencies: ["1EB2D194054C6905"]
@@ -2100,7 +2097,10 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["3822951EF3C8636E"]
+			dependencies: [
+				"3822951EF3C8636E"
+				"4F63BA33F7F4C5EA"
+			]
 			id: "7F7D6A88A4870EE1"
 			tasks: [{
 				id: "361AB8B42BEAAACD"
@@ -2167,6 +2167,43 @@
 			title: "The Well of Suffering"
 			x: 2.0d
 			y: -6.5d
+		}
+		{
+			dependencies: ["3822951EF3C8636E"]
+			id: "4F63BA33F7F4C5EA"
+			tasks: [{
+				id: "7421D1381CF55A63"
+				item: "gtceu:grading_fluid_5_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1286BE8E609C719C"]
+			hide_dependency_lines: true
+			id: "25BE42C85F9BA274"
+			tasks: [{
+				id: "6A973ED1BF920297"
+				item: "gtceu:synthetic_pthanterum_ingot"
+				type: "item"
+			}]
+			x: -0.759523809523813d
+			y: 2.336904761904762d
+		}
+		{
+			dependencies: ["15FA1625BC0CB121"]
+			hide_dependent_lines: true
+			id: "52FDB03D36E94054"
+			shape: "hexagon"
+			subtitle: "Demon Will, Finally"
+			tasks: [{
+				id: "323921F15E070C28"
+				item: "bloodmagic:defaultcrystal"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -9.5d
 		}
 	]
 	title: "A Factory Soaked In Blood [&dLuV&r]"
