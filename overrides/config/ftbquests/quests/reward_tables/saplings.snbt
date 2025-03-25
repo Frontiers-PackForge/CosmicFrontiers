@@ -19,6 +19,8 @@
 		{ count: 8, item: "minecraft:jungle_sapling" }
 		{ count: 8, item: "minecraft:acacia_sapling" }
 		{ count: 8, item: "minecraft:dark_oak_sapling" }
+		{ count: 8, item: "minecraft:mangrove_propagule" }
+		{ count: 8, item: "minecraft:azalea" }
 		{ count: 8, item: "minecraft:cherry_sapling" }
 	]
 	title: "Saplings"
