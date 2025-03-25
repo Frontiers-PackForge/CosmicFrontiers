@@ -231,6 +231,13 @@ ServerEvents.recipes(event => {
               C: 'minecraft:charcoal'
        })
 
+       event.remove({ id: 'gtceu:assembler/stonecutter' })
+       event.recipes.gtceu.assembler('gtceu:assembler/stonecutter')
+              .itemInputs(['minecraft:stone_slab', 'gtceu:iron_buzz_saw_blade',])
+              .itemOutputs('minecraft:stonecutter')
+              .circuit(1)
+              .duration(80)
+              .EUt(6);
        event.recipes.gtceu.assembler('ug_catalyst')
               .itemInputs(['minecraft:heart_of_the_sea', 'aether:bronze_dungeon_key', 'aether:silver_dungeon_key', 'aether:gold_dungeon_key', '#gtceu:circuits/hv',])
               .inputFluids('gtceu:source_oils 12000')
