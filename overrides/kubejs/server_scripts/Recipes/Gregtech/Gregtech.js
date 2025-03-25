@@ -100,9 +100,6 @@ ServerEvents.recipes(event => {
     'gtceu:rtm_alloy_quadruple_wire',
     'cosmiccore:prismatic_tungstensteel_quadruple_wire'
   )
-<<<<<<< Updated upstream
-
-=======
   
   event.recipes.gtceu.chemical_reactor('copper_oxidize_block')
     .itemInputs('minecraft:copper_block')
@@ -110,7 +107,6 @@ ServerEvents.recipes(event => {
     .itemOutputs('minecraft:oxidized_copper')
     .duration(220)
     .EUt(GTValues.VA[GTValues.LV]);
->>>>>>> Stashed changes
   event.recipes.gtceu.spooling_machine('frontiers_ethersteel_lattice')
     .itemInputs(['gtceu:carbon_fiber_mesh', '8x gtceu:fine_galvanized_ethersteel_wire'])
     .inputFluids('gtceu:polytetrafluoroethylene 144')
@@ -1522,5 +1518,8 @@ ServerEvents.recipes(event => {
     .duration(320)
     .EUt(GTValues.VA[GTValues.UV] / 2);
 
+  event.shapeless('gtceu:magnetic_iron_bolt', [
+    'gtceu:iron_bolt', 'minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone'
+  ])
 })
 
