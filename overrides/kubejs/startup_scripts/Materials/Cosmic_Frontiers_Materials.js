@@ -608,6 +608,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
     event.create('grading_fluid_4')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('grading_fluid_5')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('grading_fluid_6')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
     event.create('star_dew') //Skyline Cracked Product
         .liquid()

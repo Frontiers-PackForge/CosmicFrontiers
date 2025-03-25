@@ -81,15 +81,20 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'bloodmagic:arc' })
   event.remove({ id: 'bloodmagic:altar/magicianbloodorb' })
   event.remove({ id: 'bloodmagic:altar/masterbloodorb' })
+  event.remove({ id: 'bloodmagic:altar/archmagebloodorb' })
 
   event.recipes.bloodmagic.altar('bloodmagic:blankslate', 'gtceu:carbon_fiber_plate').drainRate(50).consumptionRate(25).altarSyphon(500)
   event.recipes.bloodmagic.altar('bloodmagic:daggerofsacrifice', 'gtceu:nano_saber').drainRate(50).consumptionRate(25).altarSyphon(2000)
   event.recipes.bloodmagic.altar('bloodmagic:weakbloodorb', 'gtceu:ev_field_generator').drainRate(100).consumptionRate(50).altarSyphon(5000)
-
+  //TODO; Make Mech Altar Recipes for the Orbs
   event.recipes.bloodmagic.altar('bloodmagic:apprenticebloodorb', 'kubejs:apprenticebloodorb_frame').upgradeLevel(1).drainRate(100).consumptionRate(50).altarSyphon(5000)
-
   event.recipes.bloodmagic.altar('bloodmagic:magicianbloodorb', 'kubejs:magicianbloodorb_frame').upgradeLevel(2).drainRate(100).consumptionRate(50).altarSyphon(5000)
   event.recipes.bloodmagic.altar('bloodmagic:masterbloodorb', 'kubejs:masterbloodorb_frame').upgradeLevel(3).drainRate(100).consumptionRate(50).altarSyphon(20000)
+  event.recipes.bloodmagic.altar('bloodmagic:archmagebloodorb', 'kubejs:archmagebloodorb_frame').upgradeLevel(4).drainRate(100).consumptionRate(50).altarSyphon(50000)
+
+
+
+
   event.recipes.bloodmagic.altar('bloodmagic:daggerofsacrifice', 'gtceu:nano_saber').upgradeLevel(0).drainRate(50).consumptionRate(25).altarSyphon(10000)
   event.recipes.bloodmagic.altar('bloodmagic:infusedslate', 'kubejs:wrapped_slate_tier_3').upgradeLevel(2).drainRate(55).consumptionRate(70).altarSyphon(2500)
   event.recipes.bloodmagic.altar('bloodmagic:reinforcedslate', 'kubejs:wrapped_slate_tier_2').upgradeLevel(1).drainRate(25).consumptionRate(20).altarSyphon(1000)
@@ -117,14 +122,14 @@ ServerEvents.recipes(event => {
     .duration(240)
     .EUt(GTValues.VA[GTValues.LuV]);
   event.recipes.gtceu.hellfire_foundry('t2_orb_prep')
-    .itemInputs('4x bloodmagic:reinforcedslate', '8x gtceu:tempered_glass', '4x bloodmagic:reinforcedslate', '8x gtceu:tempered_glass', 'gtceu:iv_field_generator')
+    .itemInputs('4x bloodmagic:reinforcedslate', '8x gtceu:tempered_glass', '4x bloodmagic:reinforcedslate', '8x gtceu:tempered_glass', '4x gtceu:iv_field_generator')
     .inputFluids('gtceu:grading_fluid_1 5000')
     .itemOutputs('kubejs:apprenticebloodorb_frame')
     .soulInput(5000)
     .duration(380)
     .EUt(GTValues.VA[GTValues.IV]);
   event.recipes.gtceu.hellfire_foundry('t3_orb_prep')
-    .itemInputs('4x bloodmagic:infusedslate', '8x gtceu:tempered_glass', '4x bloodmagic:infusedslate', '8x gtceu:tempered_glass', '4x gtceu:iv_field_generator')
+    .itemInputs('4x bloodmagic:infusedslate', '8x gtceu:tempered_glass', '4x bloodmagic:infusedslate', '8x gtceu:tempered_glass', '8x gtceu:iv_field_generator')
     .inputFluids('gtceu:grading_fluid_2 5000')
     .itemOutputs('kubejs:magicianbloodorb_frame')
     .soulInput(20000)
@@ -137,6 +142,13 @@ ServerEvents.recipes(event => {
     .soulInput(40000)
     .duration(500)
     .EUt(GTValues.VA[GTValues.IV]);
+  event.recipes.gtceu.hellfire_foundry('t5_orb_prep')
+    .itemInputs('16x bloodmagic:etherealslate', '32x gtceu:tempered_glass', '16x bloodmagic:etherealslate', '32x gtceu:tempered_glass', '8x gtceu:luv_field_generator')
+    .inputFluids('gtceu:grading_fluid_4 5000')
+    .itemOutputs('kubejs:archmagebloodorb_frame')
+    .soulInput(50000)
+    .duration(500)
+    .EUt(GTValues.VA[GTValues.LuV]);
   event.recipes.gtceu.hellfire_foundry('t2_slate_prep')
     .itemInputs('bloodmagic:blankslate', '8x gtceu:polytetrafluoroethylene_foil')
     .inputFluids('gtceu:grading_fluid_1 20')
@@ -167,6 +179,20 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:grading_fluid_3 250')
     .itemOutputs('5x cosmiccore:trinavine_dust')
     .soulInput(20000)
+    .duration(920)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.hellfire_foundry('frontiers:grading_5_catalyst')
+    .itemInputs(['gtceu:trinium_dust', 'gtceu:trinium_dust', 'gtceu:trinium_dust', 'gtceu:trinium_dust', 'bloodmagic:reagentbinding'])
+    .inputFluids('gtceu:grading_fluid_3 250')
+    .itemOutputs('5x cosmiccore:trinavine_dust')
+    .soulInput(20000)
+    .duration(920)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.hellfire_foundry('frontiers:dawn_rune')
+    .itemInputs(['bloodmagic:ritualstone', 'gtceu:exquisite_andradite_gem', 'gtceu:exquisite_andradite_gem', 'gtceu:exquisite_andradite_gem', 'gtceu:exquisite_andradite_gem'])
+    .inputFluids('gtceu:grading_fluid_5 250')
+    .itemOutputs('bloodmagic:lightritualstone')
+    .soulInput(50000)
     .duration(920)
     .EUt(GTValues.VA[GTValues.LuV]);
 
@@ -241,6 +267,14 @@ ServerEvents.recipes(event => {
     .soulInput(15000)
     .duration(1000)
     .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.mana_engraver('frontiers:grading_fluid_5')
+    .notConsumable('bloodmagic:archmagebloodorb')
+    .itemInputs(['8x cosmiccore:trinavine_dust', '8x gtceu:4_4_oxydianiline_pyromellitimide_dust', '8x cosmiccore:naquadric_superalloy_dust', '8x gtceu:synthetic_pthanterum_dust', '8x gtceu:naquadria_dust'])
+    .inputFluids('gtceu:grading_fluid_4 2000', 'gtceu:nutrient_solution 8000', 'cosmiccore:neutronite 1152', 'gtceu:potent_mana 64000', 'cosmiccore:prisma 64000')
+    .outputFluids('gtceu:grading_fluid_5 1000')
+    .soulInput(50000)
+    .duration(950)
+    .EUt(GTValues.VA[GTValues.ZPM]);
   event.remove({ id: "bloodmagic:ritual_stone_master" })
   event.recipes.gtceu.mana_engraver('frontiers:master_ritual_stone')
     .notConsumable('bloodmagic:magicianbloodorb')
@@ -252,7 +286,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'bloodmagic:alchemytable/tau_oil' })
   event.recipes.gtceu.hellfire_foundry('frontiers:tau_oil')
     .itemInputs(['bloodmagic:weak_tau', 'bloodmagic:weak_tau', 'bloodmagic:weak_tau', 'gtceu:oilsands_dust', 'bloodmagic:reagentbinding'])
-    .inputFluids('gtceu:grading_fluid_2 1000')
+    .inputFluids('gtceu:grading_fluid_2 250')
     .itemOutputs('bloodmagic:tauoil')
     .soulInput(7500)
     .duration(430)
