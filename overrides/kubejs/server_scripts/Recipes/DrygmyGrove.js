@@ -49,6 +49,11 @@ ServerEvents.recipes(event => {
     .chancedOutput(Item.of('minecraft:honeycomb_block', 1), 2500,0)
     .duration(3000)
     .EUt(GTValues.VA[GTValues.HV]);
+  event.recipes.gtceu.suffering_chamber('suffering_chamber_villager_basic')
+    .notConsumable('minecraft:villager_spawn_egg')
+    .soulOutput(32000)
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.EV]);
 
   // event.recipes.gtceu.drygmy_grove('grove_wither_maybe')
   //   .notConsumable('ars_nouveau:drygmy_charm')
