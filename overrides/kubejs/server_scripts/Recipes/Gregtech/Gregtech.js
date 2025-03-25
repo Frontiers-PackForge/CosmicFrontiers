@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
   event.replaceInput(
     { id: 'gtceu:assembler/computer_casing' },
     'gtceu:iridium_plate',
-    'gtceu:rhenium_plate'
+    'gtceu:osmium_plate'
   )
   event.replaceInput(
     { id: 'gtceu:assembler/high_power_casing' },
@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
   event.replaceInput(
     { id: 'gtceu:assembler/high_power_casing' },
     'gtceu:iridium_plate',
-    'gtceu:rhenium_plate'
+    'gtceu:osmium_plate'
   )
   event.replaceInput(
     { output: 'gtceu:hp_steam_liquid_boiler' },
@@ -141,6 +141,10 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'gtceu:heat_vent' },
     'gtceu:tantalum_carbide_plate',
     'gtceu:titanium_carbide_plate'
+  )
+  event.replaceInput({ output: 'gtceu:luv_fusion_reactor' },
+    'gtceu:double_plutonium_241_plate',
+    'cosmiccore:double_trinavine_plate'
   )
 
   event.replaceInput({ output: 'gtceu:iv_extruder' },
@@ -442,6 +446,15 @@ ServerEvents.recipes(event => {
     .circuit(2)
     .blastFurnaceTemp(1700)
     .EUt(GTValues.VA[GTValues.MV]);
+
+  event.recipes.gtceu.electric_blast_furnace('rhenium')
+    .itemInputs('gtceu:rhenium_dust')
+    .itemOutputs('gtceu:rhenium_ingot')
+    .inputFluids('gtceu:krypton 100')
+    .duration(600)
+    .circuit(2)
+    .blastFurnaceTemp(1700)
+    .EUt(GTValues.VA[GTValues.LuV]);
 
   //Lowering the Temp of Indium Tin Barium Titanium Cuprate down to 5900 so you make it pre-NSA coils
   event.remove({ id: 'gtceu:alloy_blast_smelter/indium_tin_barium_titanium_cuprate' })
@@ -1456,17 +1469,17 @@ ServerEvents.recipes(event => {
     }
     )
   })
-  event.shaped('cosmiccore:chromatic_flotation_plant',[
+  event.shaped('cosmiccore:chromatic_flotation_plant', [
     'ABA',
     'CDC',
     'EBE'
-], {
+  ], {
     A: 'gtceu:tungsten_steel_drum',
     B: '#gtceu:circuits/luv',
     C: 'gtceu:luv_electric_pump',
     D: 'gtceu:luv_machine_hull',
     E: 'gtceu:luv_conveyor_module'
-})
+  })
   event.remove({ output: 'gtceu:alloy_blast_smelter' })
   event.shaped('gtceu:alloy_blast_smelter', [
     'PCP',
@@ -1500,7 +1513,13 @@ ServerEvents.recipes(event => {
     .outputFluids('gtceu:oxygen 4000')
     .duration(440)
     .EUt(GTValues.VA[GTValues.ZPM]);
-
+  event.remove({ id: "gtceu:gas_collector/ender_air" })
+  event.recipes.gtceu.cracker('aether_to_end_air')
+    .inputFluids('gtceu:aether_air 1000')
+    .inputFluids('gtceu:radon 5')
+    .outputFluids('gtceu:ender_air 1000')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.IV]);
   //Coils-new
   event.remove({ id: 'gtceu:assembler/coil_cupronickel' })
   event.recipes.gtceu.spooling_machine('coil_cupronickel')
@@ -1604,7 +1623,7 @@ ServerEvents.recipes(event => {
     .duration(320)
     .EUt(GTValues.VA[GTValues.LuV] / 2);
   event.recipes.gtceu.assembler('radio_module_zpm')
-    .itemInputs(['gtceu:zpm_sensor', 'gtceu:zpm_emitter', 'gtceu:neutronite_frame', '2x gtceu:naquadah_double_cable', '#gtceu:circuits/zpm'])
+    .itemInputs(['gtceu:zpm_sensor', 'gtceu:zpm_emitter', 'cosmiccore:neutronite_frame', '2x gtceu:naquadah_double_cable', '#gtceu:circuits/zpm'])
     .itemOutputs('cosmiccore:zpm_radio_module')
     .duration(320)
     .EUt(GTValues.VA[GTValues.ZPM] / 2);

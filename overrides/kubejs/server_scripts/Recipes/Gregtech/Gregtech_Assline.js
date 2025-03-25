@@ -188,7 +188,7 @@ ServerEvents.recipes(event => {
   //ZPM MOTOR
   event.remove({ id: 'gtceu:assembly_line/electric_motor_zpm' })
   event.recipes.gtceu.assembly_line('zpm_new_motor')
-    .itemInputs(['4x gtceu:long_magnetic_samarium_rod', '4x gtceu:long_neutronite_rod', '4x gtceu:neutronite_ring', '8x gtceu:neutronite_round', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '4x gtceu:vanadium_gallium_quadruple_cable'])
+    .itemInputs(['4x gtceu:long_magnetic_samarium_rod', '4x cosmiccore:long_neutronite_rod', '4x cosmiccore:neutronite_ring', '8x cosmiccore:neutronite_round', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '4x gtceu:vanadium_gallium_quadruple_cable'])
     .itemOutputs('gtceu:zpm_electric_motor')
     .inputFluids(
       Fluid.of('gtceu:high_grade_solder', 576),
@@ -201,7 +201,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:assembly_line/electric_piston_zpm' })
   //ZPM PISTON
   event.recipes.gtceu.assembly_line('new_zpm_piston_recipe')
-    .itemInputs(['gtceu:zpm_electric_motor', '4x gtceu:neutronite_plate', '6x gtceu:neutronite_ring', '48x gtceu:neutronite_round', '8x gtceu:neutronite_spring', '4x gtceu:long_neutronite_rod', 'gtceu:neutronite_gear', '2x gtceu:small_neutronite_gear', '2x gtceu:vanadium_gallium_quadruple_cable'])
+    .itemInputs(['gtceu:zpm_electric_motor', '4x cosmiccore:neutronite_plate', '6x cosmiccore:neutronite_ring', '48x cosmiccore:neutronite_round', '8x cosmiccore:neutronite_spring', '4x cosmiccore:long_neutronite_rod', 'cosmiccore:neutronite_gear', '2x cosmiccore:small_neutronite_gear', '2x gtceu:vanadium_gallium_quadruple_cable'])
     .itemOutputs('gtceu:zpm_electric_piston')
     .inputFluids(
       Fluid.of('gtceu:high_grade_solder', 576),
@@ -295,6 +295,40 @@ ServerEvents.recipes(event => {
       'gtceu:grading_fluid_2 250'
     )
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
+  event.recipes.gtceu.assembly_line('frontiers:mechanical_altar')
+    .itemInputs(['bloodmagic:altar', '4x gtceu:europium_frame', '4x cosmiccore:luv_radio_module', '4x gtceu:quantum_processor_mainframe', '16x bloodmagic:etherealslate', '16x bloodmagic:demonslate', '16x bloodmagic:infusedslate', '16x bloodmagic:reinforcedslate', '16x bloodmagic:blankslate'])
+    .itemOutputs('cosmiccore:hemophagic_transfuser')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 36884',
+      'gtceu:grading_fluid_4 16000',
+      'gtceu:grading_fluid_3 16000',
+      'gtceu:grading_fluid_2 16000'
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:altar').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
+  event.recipes.gtceu.assembly_line('frontiers:suffering_chamber')
+    .itemInputs(['gtceu:luv_macerator', '16x bloodmagic:etherealslate', '4x gtceu:quantum_processor_mainframe', '4x gtceu:luv_field_generator', '4x cosmiccore:luv_radio_module'])
+    .itemOutputs('cosmiccore:suffering_chamber')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 36884',
+      'gtceu:grading_fluid_4 16000',
+      'gtceu:grading_fluid_3 16000',
+      'gtceu:grading_fluid_2 16000'
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:luv_macerator').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
+  event.recipes.gtceu.assembly_line('frontiers:magnet')
+    .itemInputs(['gtceu:superconducting_coil', '8x gtceu:luv_voltage_coil', '16x gtceu:fine_europium_wire', '#gtceu:circuits/luv'])
+    .itemOutputs('cosmiccore:fusion_grade_magnet')
+    .inputFluids(
+   'gtceu:high_grade_solder 2304',
+   'cosmiccore:triphenylphosphine 2304',
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:superconducting_coil').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
     .duration(300)
     .EUt(GTValues.VA[GTValues.LuV])
 

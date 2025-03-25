@@ -559,11 +559,18 @@ ServerEvents.recipes(event => {
               .duration(320)
               .EUt(GTValues.VA[GTValues.IV]);
        event.recipes.gtceu.assembler('naq_pressure_casing')
-              .itemInputs(['gtceu:tungsten_frame', '6x gtceu:naquadah_plate'])
+              .itemInputs(['gtceu:naquadah_alloy_frame', '6x gtceu:synthetic_pthanterum_plate'])
               .itemOutputs('cosmiccore:naquadah_pressure_resistant_casing')
               .circuit(6)
               .duration(320)
               .EUt(GTValues.VA[GTValues.IV]);
+       event.recipes.gtceu.assembler('rvm_casing')
+              .itemInputs(['gtceu:resonant_virtue_meld_frame', '6x gtceu:osmiridium_plate'])
+              .itemOutputs('cosmiccore:resonantly_tuned_virtue_meld_casing')
+              .circuit(6)
+              .duration(320)
+              .EUt(GTValues.VA[GTValues.LuV]);
+              
        event.remove({ id: 'gtceu:distillation_tower/distill_coal_gas' })
        event.recipes.gtceu.distillation_tower('frontiers:distill_coal_gas')
               .inputFluids('gtceu:coal_gas 1000')
