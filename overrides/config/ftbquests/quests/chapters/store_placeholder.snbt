@@ -711,7 +711,7 @@
 			rewards: [{
 				id: "745379B13AE24592"
 				type: "xp"
-				xp: 255
+				xp: 315
 			}]
 			tasks: [{
 				consume_items: true
@@ -734,7 +734,7 @@
 			rewards: [{
 				id: "493628607BAEC9DE"
 				type: "xp"
-				xp: 825
+				xp: 1395
 			}]
 			tasks: [{
 				consume_items: true

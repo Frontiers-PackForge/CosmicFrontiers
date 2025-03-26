@@ -88,7 +88,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x8e46fa).iconSet(GTMaterialIconSet.SHINY)
         .element(GTElements.get('zano_alumate'))
     event.create('luminite')
-        .color(0x85ffad)
+        .color(0x85ffad).secondaryColor(0x6ac49d)
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .ingot()
         .ore()
@@ -457,6 +457,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     //Neutronite and precursor neutron states
     event.create('neutronite')
         .ingot()
+        .fluid()
         .blastTemp(7500)
         .color(0xa6f8ff).secondaryColor(0x181f47).iconSet(GTMaterialIconSet.BRIGHT)
         .flags(
@@ -597,6 +598,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('deepdrop_primordial_oil')
         .color(0xdb3dff)
         .liquid()
+
+
+    event.create('grading_fluid_1')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('grading_fluid_2')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('grading_fluid_3')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('grading_fluid_4')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('grading_fluid_5')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('grading_fluid_6')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
     event.create('star_dew') //Skyline Cracked Product
         .liquid()

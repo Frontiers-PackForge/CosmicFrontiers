@@ -9,16 +9,30 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:assembler/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_assembly_control' })
-  event.shaped('2x gtceu:assembly_line_casing', [
-    'SDS',
+  event.shaped('gtceu:assembly_line_casing', [
+    'SMS',
     'DCD',
     'BDB'
   ], {
     S: 'gtceu:hpic_chip',
     C: 'gtceu:tungsten_carbide_frame',
     D: '#gtceu:circuits/zpm',
-    B: 'gtceu:iv_electric_motor'
+    B: 'gtceu:iv_electric_motor',
+    M: 'cosmiccore:iv_radio_module'
   })
+  event.remove({ id: 'bloodmagic:ritual_diviner_0' })
+  event.recipes.gtceu.assembly_line('inscriber_recipe')
+    .itemInputs(['botania:exchange_rod', Item.of('occultism:chalk_red', '{Damage:0}'), Item.of('occultism:chalk_purple', '{Damage:0}'), Item.of('occultism:chalk_gold', '{Damage:0}'), Item.of('occultism:chalk_white', '{Damage:0}'), Item.of('bloodmagic:airscribetool', '{Damage:0}'), Item.of('bloodmagic:firescribetool', '{Damage:0}'), Item.of('bloodmagic:waterscribetool', '{Damage:0}'), Item.of('bloodmagic:earthscribetool', '{Damage:0}')])
+    .itemOutputs('bloodmagic:ritualdiviner')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 9216',
+      'gtceu:grading_fluid_1 32000',
+      'gtceu:grading_fluid_2 16000'
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('occultism:chalk_red', '{Damage:0}')).EUt(GTValues.VA[GTValues.LuV]).duration(23800))
+    .duration(1200)
+    .EUt(GTValues.VA[GTValues.LuV])
+
   event.recipes.gtceu.assembly_line('luv_hull_assline')
     .itemInputs(['gtceu:iridium_frame', '16x gtceu:rhodium_plated_palladium_plate', '8x cosmiccore:double_prismatic_tungstensteel_plate', '16x gtceu:osmiridium_screw', '#gtceu:circuits/hv', '2x gtceu:niobium_titanium_quadruple_cable'])
     .itemOutputs('gtceu:luv_machine_hull')
@@ -108,6 +122,18 @@ ServerEvents.recipes(event => {
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:iv_robot_arm')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
     .duration(600)
     .EUt(GTValues.VA[GTValues.IV])
+  //Frontiers Pattern Buffer
+  event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer' })
+  event.recipes.gtceu.assembly_line('pattern_buffer_new')
+    .itemInputs(['gtceu:luv_dual_output_hatch', '2x expatternprovider:ex_interface', '2x expatternprovider:ex_pattern_provider', 'expatternprovider:ex_io_port', '4x ae2:speed_card', '4x ae2:capacity_card', '2x #gtceu:circuits/luv'])
+    .itemOutputs('gtceu:me_pattern_buffer')
+    .inputFluids(
+      Fluid.of('gtceu:high_grade_solder', 1152),
+      Fluid.of('cosmiccore:triphenylphosphine', 4000),
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:luv_dual_input_hatch')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.IV])
 
   //R.Virtue Coil
   event.recipes.gtceu.assembly_line('resonant_virtue_coil_assem')
@@ -162,7 +188,7 @@ ServerEvents.recipes(event => {
   //ZPM MOTOR
   event.remove({ id: 'gtceu:assembly_line/electric_motor_zpm' })
   event.recipes.gtceu.assembly_line('zpm_new_motor')
-    .itemInputs(['4x gtceu:long_magnetic_samarium_rod', '4x gtceu:long_neutronite_rod', '4x gtceu:neutronite_ring', '8x gtceu:neutronite_round', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '4x gtceu:vanadium_gallium_quadruple_cable'])
+    .itemInputs(['4x gtceu:long_magnetic_samarium_rod', '4x cosmiccore:long_neutronite_rod', '4x cosmiccore:neutronite_ring', '8x cosmiccore:neutronite_round', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '4x gtceu:vanadium_gallium_quadruple_cable'])
     .itemOutputs('gtceu:zpm_electric_motor')
     .inputFluids(
       Fluid.of('gtceu:high_grade_solder', 576),
@@ -175,7 +201,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:assembly_line/electric_piston_zpm' })
   //ZPM PISTON
   event.recipes.gtceu.assembly_line('new_zpm_piston_recipe')
-    .itemInputs(['gtceu:zpm_electric_motor', '4x gtceu:neutronite_plate', '6x gtceu:neutronite_ring', '48x gtceu:neutronite_round', '8x gtceu:neutronite_spring', '4x gtceu:long_neutronite_rod', 'gtceu:neutronite_gear', '2x gtceu:small_neutronite_gear', '2x gtceu:vanadium_gallium_quadruple_cable'])
+    .itemInputs(['gtceu:zpm_electric_motor', '4x cosmiccore:neutronite_plate', '6x cosmiccore:neutronite_ring', '48x cosmiccore:neutronite_round', '8x cosmiccore:neutronite_spring', '4x cosmiccore:long_neutronite_rod', 'cosmiccore:neutronite_gear', '2x cosmiccore:small_neutronite_gear', '2x gtceu:vanadium_gallium_quadruple_cable'])
     .itemOutputs('gtceu:zpm_electric_piston')
     .inputFluids(
       Fluid.of('gtceu:high_grade_solder', 576),
@@ -221,22 +247,105 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LuV])
 
 
+  event.remove({ id: 'bloodmagic:blood_rune_speed' })
+  event.remove({ id: 'bloodmagic:blood_rune_capacity' })
+  event.remove({ id: 'bloodmagic:blood_rune_sacrifice' })
+  event.remove({ id: 'bloodmagic:blood_rune_self_sacrifice' })
 
+  event.recipes.gtceu.assembly_line('frontiers:speed_rune')
+    .itemInputs(['bloodmagic:blankrune', '4x botania:rune_spring', '4x botania:rune_air', '64x minecraft:sugar', 'botania:cosmetic_clock_eye'])
+    .itemOutputs('bloodmagic:speedrune')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 288',
+      'gtceu:grading_fluid_1 250'
+    )
+    ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
+
+  event.recipes.gtceu.assembly_line('frontiers:capacity_rune')
+    .itemInputs(['bloodmagic:blankrune', '4x botania:rune_summer', '4x botania:rune_water', 'gtceu:steel_fluid_cell', 'gtceu:aluminium_fluid_cell', 'gtceu:stainless_steel_fluid_cell', 'gtceu:titanium_fluid_cell', 'gtceu:tungstensteel_fluid_cell'])
+    .itemOutputs('bloodmagic:altarcapacityrune')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 288',
+      'gtceu:grading_fluid_2 250'
+    )
+    ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
+
+
+
+  event.recipes.gtceu.assembly_line('frontiers:sacrifice_rune')
+    .itemInputs(['bloodmagic:blankrune', 'gtceu:slicing_blades', '4x botania:rune_autumn', '4x botania:rune_fire', 'gtceu:tungsten_steel_buzz_saw_blade', 'gtceu:titanium_buzz_saw_blade'])
+    .itemOutputs('bloodmagic:sacrificerune')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 288',
+      'gtceu:grading_fluid_2 250'
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
+
+  event.recipes.gtceu.assembly_line('frontiers:self_sac_rune')
+    .itemInputs(['bloodmagic:blankrune', '4x botania:rune_earth', '4x botania:rune_winter', 'bloodmagic:sacrificialdagger', 'bloodmagic:sacrificialdagger', 'bloodmagic:sacrificialdagger'])
+    .itemOutputs('bloodmagic:selfsacrificerune')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 288',
+      'gtceu:grading_fluid_2 250'
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
+  event.recipes.gtceu.assembly_line('frontiers:mechanical_altar')
+    .itemInputs(['bloodmagic:altar', '4x gtceu:europium_frame', '4x cosmiccore:luv_radio_module', '4x gtceu:quantum_processor_mainframe', '16x bloodmagic:etherealslate', '16x bloodmagic:demonslate', '16x bloodmagic:infusedslate', '16x bloodmagic:reinforcedslate', '16x bloodmagic:blankslate'])
+    .itemOutputs('cosmiccore:hemophagic_transfuser')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 36884',
+      'gtceu:grading_fluid_4 16000',
+      'gtceu:grading_fluid_3 16000',
+      'gtceu:grading_fluid_2 16000'
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:altar').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
+  event.recipes.gtceu.assembly_line('frontiers:suffering_chamber')
+    .itemInputs(['gtceu:luv_macerator', '16x bloodmagic:etherealslate', '4x gtceu:quantum_processor_mainframe', '4x gtceu:luv_field_generator', '4x cosmiccore:luv_radio_module'])
+    .itemOutputs('cosmiccore:suffering_chamber')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 36884',
+      'gtceu:grading_fluid_4 16000',
+      'gtceu:grading_fluid_3 16000',
+      'gtceu:grading_fluid_2 16000'
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:luv_macerator').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
+  event.recipes.gtceu.assembly_line('frontiers:magnet')
+    .itemInputs(['gtceu:superconducting_coil', '8x gtceu:luv_voltage_coil', '16x gtceu:fine_europium_wire', '#gtceu:circuits/luv'])
+    .itemOutputs('cosmiccore:fusion_grade_magnet')
+    .inputFluids(
+   'gtceu:high_grade_solder 2304',
+   'cosmiccore:triphenylphosphine 2304',
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:superconducting_coil').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
 
   //Interstellar Hulls
 
-  event.recipes.gtceu.assembly_line('cosmiccore:vomahine_certified_interstellar_grade_casing')
-    .itemInputs(['2x cosmiccore:trinavine_frame', '16x gtceu:double_titanium_plate', '32x gtceu:double_aluminium_plate', '32x gtceu:double_aluminium_plate', '64x gtceu:aluminium_screw', '64x gtceu:aluminium_screw', '64x gtceu:aluminium_rod', '64x gtceu:aluminium_rod', '64x gtceu:aluminium_rod'])
-    .itemOutputs('cosmiccore:vomahine_certified_interstellar_grade_casing')
-    .inputFluids(
-      Fluid.of('gtceu:high_grade_solder', 1152),
-    )
-    .stationResearch(b => b
-      .researchStack('gtceu:fusion_casing')
-      .CWUt(32)
-      .EUt(GTValues.VA[GTValues.ZPM]))
-    .duration(1750)
-    .EUt(GTValues.VA[GTValues.ZPM])
+  // event.recipes.gtceu.assembly_line('cosmiccore:vomahine_certified_interstellar_grade_casing')
+  //   .itemInputs(['2x cosmiccore:trinavine_frame', '16x gtceu:double_titanium_plate', '32x gtceu:double_aluminium_plate', '32x gtceu:double_aluminium_plate', '64x gtceu:aluminium_screw', '64x gtceu:aluminium_screw', '64x gtceu:aluminium_rod', '64x gtceu:aluminium_rod', '64x gtceu:aluminium_rod'])
+  //   .itemOutputs('cosmiccore:vomahine_certified_interstellar_grade_casing')
+  //   .inputFluids(
+  //     Fluid.of('gtceu:high_grade_solder', 1152),
+  //   )
+  //   .stationResearch(b => b
+  //     .researchStack('gtceu:fusion_casing')
+  //     .CWUt(32)
+  //     .EUt(GTValues.VA[GTValues.ZPM]))
+  //   .duration(1750)
+  //   .EUt(GTValues.VA[GTValues.ZPM])
 
 
 

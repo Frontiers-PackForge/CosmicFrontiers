@@ -13,7 +13,9 @@ let yeet = (itemName) => {
     event.add('forge:viewers/hidden_from_recipe', itemName)
   })
 }
-let DESTROY = ['mae2:256x_crafting_accelerator', 'mae2:64x_crafting_accelerator', 'mae2:16x_crafting_accelerator', 'mae2:4x_crafting_accelerator']
+//Multi Pattern P2P has bugs which alongside GT causes many crafting issues, if you choose to circumvent their removal, you have been warned.
+//Yes utilization of these is considered a role-invalidator
+let DESTROY = ['mae2:pattern_multi_p2p_tunnel', 'mae2:redstone_multi_p2p_tunnel', 'mae2:fe_multi_p2p_tunnel', 'mae2:fluid_multi_p2p_tunnel', 'mae2:item_multi_p2p_tunnel', 'mae2:eu_p2p_tunnel', 'mae2:eu_multi_p2p_tunnel']
 
 ServerEvents.tags('item', event => {
   event.add('forge:viewers/hidden_from_recipe', DESTROY)
@@ -27,8 +29,6 @@ ServerEvents.recipes(event => {
 })
 
 //Oh jeebus AE2 Recipe Yeeting
-yeet('gtceu:me_input_bus')
-yeet('gtceu:me_input_hatch')
 yeet('ae2:fluix_glass_cable')
 yeet('ae2:fluix_covered_cable')
 yeet('ae2:fluix_covered_dense_cable')
@@ -154,6 +154,12 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'ae2:interface' })
   event.remove({ id: 'ae2:network/parts/panels_semi_dark_monitor' })
   event.remove({ id: 'ae2:network/parts/storage_bus' })
+  event.remove({ output: 'ae2:tiny_tnt' })
+  event.remove({ output: 'expatternprovider:silicon_block' })
+  event.remove({ output: 'expatternprovider:circuit_cutter' })
+  event.remove({ output: 'expatternprovider:oversize_interface' })
+  event.remove({ output: 'expatternprovider:oversize_interface_part' })
+  event.remove({ output: 'betterp2p:advanced_memory_card' })
   // event.remove({ output:  })
   // event.remove({ output:  })
   event.recipes.gtceu.assembly_line('assline_creative_cell_recipe')

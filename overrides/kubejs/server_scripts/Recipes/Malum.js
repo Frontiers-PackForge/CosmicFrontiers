@@ -26,6 +26,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'malum:void_favor/raw_soulstone' })
   event.remove({ id: 'malum:arcane_charcoal_from_runewood' })
   event.remove({ id: 'malum:arcane_charcoal_from_soulwood' })
+  event.remove({ id: 'malum:spirit_infusion/belt_of_the_prospector' })
   event.recipes.gtceu.coke_oven('arcane_charcoal_coking')
     .itemInputs('#malum:soulwood_logs')
     .itemOutputs('malum:arcane_charcoal')

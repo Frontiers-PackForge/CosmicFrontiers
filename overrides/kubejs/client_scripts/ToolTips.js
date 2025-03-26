@@ -134,7 +134,11 @@ ItemEvents.tooltip(event => {
     text.add(2, Text.of('empty, silent, and void of life, hanging with a heavy smell of death.').white().bold())
     text.add(3, Text.of('No trade with the elves will be possible').darkPurple().italic())
   })
-
+  event.addAdvanced('cosmiccore:hellfire_foundry', (item, advanced, text) => {
+    text.add(1, Text.of('A crucible capable of processing ').gray())
+    text.add(2, Text.of('various alchemical reactions. ').gray())
+    text.add(3, [Text.of('Accepts ').white(), Text.of('One ').gold(), Text.of('Energy Input Hatch.').white()])
+  })
   event.addAdvanced('cosmiccore:drygmy_grove', (item, advanced, text) => {
     text.add(1, Text.of('The Infinite Forest').white().bold())
     text.add(2, Text.of('------------------------------------------------------------').aqua())
@@ -218,6 +222,9 @@ ItemEvents.tooltip(event => {
     text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
   })
   event.addAdvanced('ae2:condenser', (item, advanced, text) => {
+    text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
+  })
+  event.addAdvanced('bloodmagic:arc', (item, advanced, text) => {
     text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
   })
   event.addAdvanced('malum:encyclopedia_arcana', (item, advanced, text) => {

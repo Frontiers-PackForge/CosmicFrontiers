@@ -1040,6 +1040,8 @@
 				""
 				""
 				"For now, normal nether portals will function as intended, feel free to enter the nether that way."
+				""
+				"&4You must consume the seal to enter, regardless.&r"
 			]
 			id: "370680B11E59D49C"
 			shape: "octagon"
@@ -1935,11 +1937,12 @@
 				"459F7333F240D028"
 				"29432A122031CB3E"
 				"739AF35CCA609F56"
+				"2C512064C6836B59"
 			]
 			description: [
 				"You'll need to summon an unbound Afrit and kill it to get the affrit essence needed for red chalk."
 				""
-				"Go stab a demon."
+				"Go stab a demon. Preferably with Looting, as you need affew of those."
 			]
 			id: "460CD4B7BA1C7DB5"
 			subtitle: "Abras Open Conjure"
@@ -2062,7 +2065,7 @@
 				}
 				type: "item"
 			}]
-			x: -14.5d
+			x: -14.0d
 			y: 4.5d
 		}
 		{
@@ -2437,41 +2440,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["30C980B828A48306"]
-			description: [
-				"Well this is awkward..."
-				""
-				""
-				""
-				"These existed for a short time, they are now considered deprecated."
-				""
-				"All recipes have been removed, I would recommend migrating away from them ASAP"
-			]
-			hide_dependency_lines: true
-			icon: "occultism:storage_controller"
-			id: "2F1F0288053F5229"
-			min_width: 400
-			rewards: [{
-				id: "12805EA934AF0624"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
-			subtitle: "Nerfed yet still good."
-			tasks: [
-				{
-					id: "2CB0D82BBE9C3C35"
-					item: "occultism:storage_controller"
-					type: "item"
-				}
-				{
-					id: "15401EF3F84514DA"
-					type: "checkmark"
-				}
-			]
-			x: -14.0d
-			y: 3.5d
-		}
-		{
 			dependencies: [
 				"2D14D28D2CD892DD"
 				"3D906FC110FE69D7"
@@ -2619,6 +2587,24 @@
 			}]
 			x: -12.0d
 			y: -3.5d
+		}
+		{
+			description: [
+				"Sun Ferns can be found in hot biomes across the Overworld."
+				""
+				"Golden variant of the Sun Fern. Has a 5% chance to grow from a normal Sun Fern crop, so get to farming! Growth can be sped up with Rich Soil and, obviously, Bone Meal."
+				""
+				"Also, Create contraptions will break the golden crop without replanting, be careful."
+			]
+			id: "2C512064C6836B59"
+			subtitle: "Used to be 1%"
+			tasks: [{
+				id: "48F1704ACD19CEAF"
+				item: "legendarysurvivaloverhaul:sun_fern_gold_leaf"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 3.5d
 		}
 	]
 	title: "Rising Pressure - [Steam]"

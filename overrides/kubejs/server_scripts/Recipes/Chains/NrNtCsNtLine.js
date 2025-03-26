@@ -62,14 +62,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.arc_furnace('neutronite_hot')
         .itemInputs('gtceu:hot_critical_neutron_mass_ingot')
         .inputFluids('gtceu:pey_neutron_gas 250')
-        .itemOutputs('gtceu:hot_neutronite_ingot')
+        .itemOutputs('cosmiccore:hot_neutronite_ingot')
         .duration(440)
         .EUt(GTValues.VA[GTValues.ZPM]);
 
     event.recipes.gtceu.vacuum_freezer('neutronite_cooling')
-        .itemInputs('gtceu:hot_neutronite_ingot')
+        .itemInputs('cosmiccore:hot_neutronite_ingot')
         .inputFluids('gtceu:liquid_helium 4000')
-        .itemOutputs('gtceu:neutronite_ingot')
+        .itemOutputs('cosmiccore:neutronite_ingot')
         .outputFluids(`gtceu:helium 1000`)
         .duration(440)
         .EUt(GTValues.VA[GTValues.ZPM]);

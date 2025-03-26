@@ -307,6 +307,7 @@
 			}]
 			subtitle: "You'll need this"
 			tasks: [{
+				icon: "minecraft:oak_log"
 				id: "78F01614D58508A8"
 				item: {
 					Count: 1
@@ -315,6 +316,7 @@
 						"ftbfiltersystem:filter": "item_tag(minecraft:logs)"
 					}
 				}
+				title: "Any wood log"
 				type: "item"
 			}]
 			title: "Get Some Bi- I mean Wood"
@@ -519,7 +521,7 @@
 			description: [
 				"This is the final quest for the starting chapter. "
 				""
-				"The Steam Age will make you craft a lot of bronze. Please present some copper and tin to continue and open up the &aNext Chapter&r as well as the &6Store&r"
+				"The Steam Age will make you craft a lot of bronze. Please present some copper and tin to continue and open up the &aNext Chapter&r as well as &6everything else!&r"
 				""
 				"I wish you luck!"
 			]
@@ -531,7 +533,7 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "Complete this quest to advanced the questbook"
+			subtitle: "Complete this quest to advance the questbook"
 			tasks: [
 				{
 					count: 128L

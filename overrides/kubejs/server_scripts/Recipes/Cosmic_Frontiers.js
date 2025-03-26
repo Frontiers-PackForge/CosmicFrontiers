@@ -48,6 +48,7 @@ yeet('gtceu:trinium_coil_block')
 yeet('gtceu:tritanium_coil_block')
 yeet('vintagedelight:ghost_charcoal')
 
+
 ServerEvents.recipes(event => {
 
        //MISC REMOVALS
@@ -230,6 +231,13 @@ ServerEvents.recipes(event => {
               C: 'minecraft:charcoal'
        })
 
+       event.remove({ id: 'gtceu:assembler/stonecutter' })
+       event.recipes.gtceu.assembler('gtceu:assembler/stonecutter')
+              .itemInputs(['minecraft:stone_slab', 'gtceu:iron_buzz_saw_blade',])
+              .itemOutputs('minecraft:stonecutter')
+              .circuit(1)
+              .duration(80)
+              .EUt(6);
        event.recipes.gtceu.assembler('ug_catalyst')
               .itemInputs(['minecraft:heart_of_the_sea', 'aether:bronze_dungeon_key', 'aether:silver_dungeon_key', 'aether:gold_dungeon_key', '#gtceu:circuits/hv',])
               .inputFluids('gtceu:source_oils 12000')
@@ -352,8 +360,8 @@ ServerEvents.recipes(event => {
        event.recipes.gtceu.mixer('cosmiccore:sediment_sludge_mixing_good')
               .itemInputs(['2x biomesoplenty:blackstone_bulb', '3x gtceu:netherrack_dust', '2x minecraft:crimson_fungus'])
               .inputFluids('gtceu:nether_sediment_sludge 1000')
-              .inputFluids('minecraft:water 1000')
-              .outputFluids('gtceu:nether_sediment_sludge 2000')
+              .inputFluids('minecraft:water 3000')
+              .outputFluids('gtceu:nether_sediment_sludge 4000')
               .duration(80)
               .circuit(1)
               .EUt(GTValues.VA[GTValues.LV]);
@@ -514,16 +522,31 @@ ServerEvents.recipes(event => {
               .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.assembler('nano_space_default')
               .itemInputs(['gtceu:nanomuscle_chestplate', '2x ad_astra:large_gas_tank'])
-              .itemOutputs(Item.of('cosmiccore:space_nanomuscle_chestplate', '{affix_data:{sockets:0}}'))
+              .itemOutputs('cosmiccore:space_nanomuscle_chestplate')
               .circuit(1)
               .duration(600)
               .EUt(GTValues.VA[GTValues.HV]);
        event.recipes.gtceu.assembler('adv_nano_space_default')
-              .itemInputs(['gtceu:advanced_nanomuscle_chestplate', '2x ad_astra:large_gas_tank'])
-              .itemOutputs(Item.of('cosmiccore:space_advanced_nanomuscle_chestplate', '{affix_data:{sockets:0}}'))
+              .itemInputs(['gtceu:avanced_nanomuscle_chestplate', '2x ad_astra:large_gas_tank'])
+              .itemOutputs('cosmiccore:space_advanced_nanomuscle_chestplate')
               .circuit(1)
               .duration(600)
               .EUt(GTValues.VA[GTValues.HV]);
+
+       event.recipes.gtceu.assembler('quark_spacesuit')
+              .itemInputs(['gtceu:quarktech_chestplate', '2x ad_astra:large_gas_tank'])
+              .itemOutputs('cosmiccore:space_quarktech_chestplate')
+              .circuit(2)
+              .duration(600)
+              .EUt(GTValues.VA[GTValues.LuV]);
+
+       event.recipes.gtceu.assembler('adv_quark_spacesuit')
+              .itemInputs(['gtceu:advanced_quarktech_chestplate', '2x ad_astra:large_gas_tank'])
+              .itemOutputs('cosmiccore:space_advanced_quarktech_chestplate')
+              .circuit(2)
+              .duration(600)
+              .EUt(GTValues.VA[GTValues.LuV]);
+
        event.recipes.gtceu.assembler('reactor_casing_default')
               .itemInputs(['gtceu:titanium_frame', '4x gtceu:double_lead_plate', '2x gtceu:beryllium_plate'])
               .itemOutputs('cosmiccore:high_temperature_fission_casing')
@@ -543,11 +566,28 @@ ServerEvents.recipes(event => {
               .duration(320)
               .EUt(GTValues.VA[GTValues.IV]);
        event.recipes.gtceu.assembler('naq_pressure_casing')
-              .itemInputs(['gtceu:tungsten_frame', '6x gtceu:naquadah_plate'])
+              .itemInputs(['gtceu:naquadah_alloy_frame', '6x gtceu:synthetic_pthanterum_plate'])
               .itemOutputs('cosmiccore:naquadah_pressure_resistant_casing')
               .circuit(6)
               .duration(320)
               .EUt(GTValues.VA[GTValues.IV]);
+       event.recipes.gtceu.assembler('rvm_casing')
+              .itemInputs(['gtceu:resonant_virtue_meld_frame', '6x gtceu:osmiridium_plate'])
+              .itemOutputs('cosmiccore:resonantly_tuned_virtue_meld_casing')
+              .circuit(6)
+              .duration(320)
+              .EUt(GTValues.VA[GTValues.LuV]);
+              
+       event.remove({ id: 'gtceu:distillation_tower/distill_coal_gas' })
+       event.recipes.gtceu.distillation_tower('frontiers:distill_coal_gas')
+              .inputFluids('gtceu:coal_gas 1000')
+              .outputFluids('gtceu:carbon_dioxide 200')
+              .outputFluids('gtceu:coal_tar 200')
+              .outputFluids('gtceu:ammonia 200')
+              .outputFluids('gtceu:ethylbenzene 200')
+              .outputFluids('gtceu:kerosene 200')
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
        event.recipes.gtceu.assembler('phenolic_board_good')
               .itemInputs('botania:manaweave_cloth')
               .inputFluids('gtceu:glue 100')

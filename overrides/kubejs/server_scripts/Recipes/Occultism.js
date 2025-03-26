@@ -174,6 +174,14 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:creosote 1000')
     .itemOutputs('occultism:chalk_purple_impure')
     .duration(800)
+
+    event.recipes.gtceu.electric_blast_furnace('purple_chalk_melding')
+    .itemInputs(['occultism:chalk_white_impure', '8x gtceu:soulresin_ingot', '4x gtceu:cinderwax_ingot'])
+    .inputFluids('gtceu:oxygen 250')
+    .itemOutputs('occultism:chalk_purple_impure')
+    .blastFurnaceTemp(800)
+    .duration(240)
+    .EUt(128)
   event.recipes.occultism.miner(
     Item.of('cosmiccore:rune_slate_arklys').withChance(50),
     'occultism:miner_foliot_unspecialized'

@@ -706,7 +706,7 @@ ServerEvents.recipes(event => {
     M: 'ulvcovm:ulv_electric_motor'
   })
   event.recipes.gtceu.assembler("create:mechanical_drill")
-    .itemInputs('2x create:andesite_casing', '2x gtceu:andesite_alloy_plate', 'gtceu:blue_steel_drill_head', 'gtceu:andesite_alloy_gear', 'ulvcovm:ulv_electric_motor')
+    .itemInputs('2x create:andesite_casing', '2x gtceu:andesite_alloy_plate', 'gtceu:steel_drill_head', 'gtceu:andesite_alloy_gear', 'ulvcovm:ulv_electric_motor')
     .itemOutputs('create:mechanical_drill')
     .duration(50)
     .circuit(0)

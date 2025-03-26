@@ -1350,6 +1350,7 @@
 		{
 			dependencies: ["3DA6DD3B448415FD"]
 			id: "3F7DD1C30AF3F5E8"
+			subtitle: "Osmium at Last!"
 			tasks: [{
 				id: "300EB0F0348DDFD7"
 				item: "gtceu:osmium_dust"
