@@ -1,27 +1,4 @@
 ServerEvents.recipes(event => {
-    /*
-    Let's Assume Trinium Metallic is made of
-
-Trinium
-Terbium
-??? Idk
-
-Step 1 
-Trininum Metallic Compound + FluoroAntimonic Acid + Aqua Regia -> Trinium Calx Solution + Vitrolic Slurry
-
-Step 2 : Cracking and Refinements
-
-Trinium Calx + Soda Ash Solution -> Trinium Oxide + Wastes (make recycling for it, whatever it is)
-
-Step 3.5 ; Trinium
-Trinium Oxide + Hydrogen -> Trinium
-
-
-Step 4 ; Virtrolic Slurry
-
-Could be a small subchain of splitting materials apart and getting back out your antimony, sulfates, etc 
-*/
-//sodium_carbonate_solution
     event.recipes.gtceu.chemical_reactor('trinium_metallic_decomp')
     .itemInputs('6x gtceu:trinium_metallic_dust')
     .inputFluids('gtceu:fluoroantimonic_acid 1000')
