@@ -447,6 +447,7 @@ ServerEvents.recipes(event => {
     .blastFurnaceTemp(1700)
     .EUt(GTValues.VA[GTValues.MV]);
 
+
   event.recipes.gtceu.electric_blast_furnace('rhenium')
     .itemInputs('gtceu:rhenium_dust')
     .itemOutputs('gtceu:rhenium_ingot')
@@ -1633,5 +1634,8 @@ ServerEvents.recipes(event => {
     .duration(320)
     .EUt(GTValues.VA[GTValues.UV] / 2);
 
+  event.shapeless('gtceu:magnetic_iron_bolt', [
+    'gtceu:iron_bolt', 'minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone'
+  ])
 })
 
