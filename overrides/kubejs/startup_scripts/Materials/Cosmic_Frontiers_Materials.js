@@ -455,30 +455,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .gas()
         .color(0x79ad53).iconSet(GTMaterialIconSet.DULL)
     //Neutronite and precursor neutron states
-    event.create('neutronite')
-        .ingot()
-        .fluid()
-        .blastTemp(7500)
-        .color(0xa6f8ff).secondaryColor(0x181f47).iconSet(GTMaterialIconSet.BRIGHT)
-        .flags(
-            GTMaterialFlags.FORCE_GENERATE_BLOCK,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_FINE_WIRE,
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.GENERATE_FRAME,
-            GTMaterialFlags.GENERATE_GEAR,
-            GTMaterialFlags.GENERATE_LONG_ROD,
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_RING,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_ROTOR,
-            GTMaterialFlags.GENERATE_ROUND,
-            GTMaterialFlags.GENERATE_SMALL_GEAR,
-            GTMaterialFlags.GENERATE_SPRING,
-            GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.IS_MAGNETIC
-        )
     event.create('critical_neutron_mass')
         .ingot()
         .blastTemp(7500)

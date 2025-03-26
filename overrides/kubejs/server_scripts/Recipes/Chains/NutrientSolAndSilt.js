@@ -3,7 +3,10 @@ ServerEvents.recipes(event => {
     // .inputFluids('gtceu:source_oils 100')
     // .itemOutputs('2x skilltree:wisdom_scroll')
 
-
+    event.remove({ output: 'gtceu:crystal_cpu'})
+    event.remove({ output: 'gtceu:engraved_crystal_chip'})
+    event.remove({ output: 'gtceu:raw_crystal_chip'})
+    event.remove({ output: 'gtceu:raw_crystal_chip_parts'})
     event.recipes.gtceu.distillation_tower('swamp_filtering')
         .inputFluids('gtceu:swamp_sediment 500') //Pumped Directly in the undergarden
         .outputFluids('gtceu:rotten_sediment 175') //Done Rotten -> Silt - Output requires a bit extra processing but gains more silt and lakewater

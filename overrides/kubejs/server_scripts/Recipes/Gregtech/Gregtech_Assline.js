@@ -152,8 +152,8 @@ ServerEvents.recipes(event => {
     .itemOutputs('cosmiccore:naquadric_superalloy_coil_block')
     .inputFluids(
       Fluid.of('gtceu:high_grade_solder', 1152),
-      Fluid.of('gtceu:argon', 4000),
-      Fluid.of('gtceu:uu_matter', 2000)
+      Fluid.of('cosmiccore:triphenylphosphine', 1152),
+      Fluid.of('gtceu:argon', 4000)
     )
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('cosmiccore:resonant_virtue_meld_coil_block')).EUt(GTValues.VA[GTValues.LuV]).duration(1000))
     .duration(800)
