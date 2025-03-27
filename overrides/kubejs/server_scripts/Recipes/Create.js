@@ -500,7 +500,7 @@ ServerEvents.recipes(event => {
     P: 'ulvcovm:ulv_electric_piston'
   })
   event.recipes.gtceu.assembler("create:mechanical_piston")
-    .itemInputs('3x gtceu:treated_wood_plate', 'ulvcovm:ulv_electric_piston', '2x gtceu:red_alloy_bolt', '2x create:andesite_casing', '2x create:piston_extension_pole')
+    .itemInputs('3x gtceu:treated_wood_plate', 'ulvcovm:ulv_electric_piston', '2x gtceu:red_alloy_bolt', '2x create:andesite_casing', 'create:piston_extension_pole')
     .itemOutputs('create:mechanical_piston')
     .duration(50)
     .circuit(0)
@@ -925,7 +925,7 @@ ServerEvents.recipes(event => {
   ], {
     P: 'gtceu:brass_plate',
     C: 'create:railway_casing',
-    E: '#gtceu:circuits/lv',
+    E: '#gtceu:circuits/mv',
     L: 'minecraft:lever',
     M: 'create:precision_mechanism'
   })
@@ -1122,7 +1122,7 @@ ServerEvents.recipes(event => {
   //Brass Hand 
   event.recipes.gtceu.assembler('create:brass_hand')
     .itemInputs('4x gtceu:brass_plate')
-    .itemInputs('gtceu:andesite_alloy_plate')
+    .itemInputs('create:andesite_alloy')
     .itemOutputs('create:brass_hand')
     .circuit(0)
     .duration(100)
