@@ -121,6 +121,13 @@ ServerEvents.recipes(event => {
     .soulInput(5000)
     .duration(240)
     .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.hellfire_foundry('luv_soul_output')
+    .itemInputs(['gtceu:luv_machine_hull', '16x kubejs:resplendent_sylvan_nanolattice', '16x bloodmagic:demonslate', 'gtceu:stainless_steel_fluid_cell', 'gtceu:luv_emitter'])
+    .inputFluids('gtceu:grading_fluid_4 500')
+    .itemOutputs('cosmiccore:luv_soul_output_hatch')
+    .soulInput(50000)
+    .duration(240)
+    .EUt(GTValues.VA[GTValues.LuV]);
   event.recipes.gtceu.hellfire_foundry('t2_orb_prep')
     .itemInputs('4x bloodmagic:reinforcedslate', '8x gtceu:tempered_glass', '4x bloodmagic:reinforcedslate', '8x gtceu:tempered_glass', '4x gtceu:iv_field_generator')
     .inputFluids('gtceu:grading_fluid_1 5000')
