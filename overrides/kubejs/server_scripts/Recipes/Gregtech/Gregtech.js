@@ -65,6 +65,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'emi:crafting/repairing/gtceu/flint_knife' })
   event.remove({ id: 'gtceu:centrifuge/rare_earth_separation' })
   event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_blue_alloy_dust_to_block' })
+  event.remove({ id: 'gtceu:shaped/bucket_of_concrete' })
 
   event.replaceOutput({ id: 'gtceu:shaped/extreme_combustion_engine' }, 'gtceu:extreme_combustion_engine', 'gtceu:extreme_combustion_engine_cc')
   event.replaceOutput({ id: 'gtceu:shaped/large_combustion_engine' }, 'gtceu:large_combustion_engine', 'gtceu:large_combustion_engine_cc')
