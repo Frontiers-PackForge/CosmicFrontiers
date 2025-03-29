@@ -222,7 +222,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:shaped/casing_zpm' })
   event.remove({ id: 'gtceu:shaped/zpm_machine_hull' })
   event.recipes.gtceu.assembly_line('zpm_hull_assline')
-    .itemInputs(['cosmiccore:trinavine_frame', '16x cosmiccore:naquadric_superalloy_plate', '8x gtceu:double_neutronite_plate', '16x cosmiccore:trinavine_screw', '#gtceu:circuits/ev', '2x gtceu:vanadium_gallium_quadruple_cable'])
+    .itemInputs(['cosmiccore:trinavine_frame', '16x cosmiccore:naquadric_superalloy_plate', '8x cosmiccore:double_neutronite_plate', '16x cosmiccore:trinavine_screw', '#gtceu:circuits/ev', '2x gtceu:vanadium_gallium_quadruple_cable'])
     .itemOutputs('gtceu:zpm_machine_hull')
     .inputFluids(
       Fluid.of('cosmiccore:prisma', 576),
@@ -234,7 +234,7 @@ ServerEvents.recipes(event => {
     .duration(300)
     .EUt(GTValues.VA[GTValues.LuV])
   event.recipes.gtceu.assembly_line('zpm_hull_assline_casing')
-    .itemInputs(['gtceu:zpm_machine_casing', '8x cosmiccore:naquadric_superalloy_plate', '4x gtceu:double_neutronite_plate', '8x cosmiccore:trinavine_screw', '#gtceu:circuits/ev', '2x gtceu:vanadium_gallium_quadruple_cable'])
+    .itemInputs(['gtceu:zpm_machine_casing', '8x cosmiccore:naquadric_superalloy_plate', '4x cosmiccore:double_neutronite_plate', '8x cosmiccore:trinavine_screw', '#gtceu:circuits/ev', '2x gtceu:vanadium_gallium_quadruple_cable'])
     .itemOutputs('gtceu:zpm_machine_hull')
     .inputFluids(
       Fluid.of('cosmiccore:prisma', 576),
@@ -331,6 +331,26 @@ ServerEvents.recipes(event => {
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:superconducting_coil').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
     .duration(300)
     .EUt(GTValues.VA[GTValues.LuV])
+  event.recipes.gtceu.assembly_line('frontiers:ludicrous_combustion_gen')
+    .itemInputs(['gtceu:luv_machine_hull', '2x #gtceu:circuits/luv', '4x gtceu:luv_electric_piston', '4x gtceu:luv_electric_motor', '4x gtceu:synthetic_pthanterum_gear', 'gtceu:niobium_titanium_quadruple_cable'])
+    .itemOutputs('gtceu:ludicrous_combustion_engine_cc')
+    .inputFluids(
+   'gtceu:high_grade_solder 2304',
+   'cosmiccore:triphenylphosphine 2304',
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:extreme_combustion_engine_cc').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
+  event.recipes.gtceu.assembly_line('frontiers:chemvat')
+    .itemInputs(['gtceu:large_chemical_reactor', '8x gtceu:synthetic_pthanterum_frame', '4x cosmiccore:cyclozine_chemically_repelling_pipe', '4x #gtceu:circuits/zpm', '32x gtceu:synthetic_pthanterum_plate', '2x gtceu:luv_electric_pump', 'gtceu:luv_field_generator', 'cosmiccore:luv_radio_module'])
+    .itemOutputs('cosmiccore:industrial_chemical_vat')
+    .inputFluids(
+   'gtceu:high_grade_solder 1152',
+   'cosmiccore:triphenylphosphine 2304',
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:large_chemical_reactor').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
+    .duration(940)
+    .EUt(GTValues.VA[GTValues.ZPM])
 
   //Interstellar Hulls
 
