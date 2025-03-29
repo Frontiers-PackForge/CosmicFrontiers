@@ -305,6 +305,59 @@ ServerEvents.recipes(event => {
     R: 'gtceu:steel_rod',
     P: 'gtceu:steel_plate'
   })
+  //Cyclozine Casings
+  event.recipes.gtceu.assembler('gtceu:cyclozine_casing_assem')
+    .itemInputs(['gtceu:rhenium_frame', '6x gtceu:synthetic_pthanterum_plate'])
+    .itemOutputs('cosmiccore:cyclozine_chemically_repelling_casing')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('cosmiccore:cyclozine_chemically_repelling_casing', [
+    'AHA',
+    'AFA',
+    'AWA'
+  ], {
+    A: 'gtceu:synthetic_pthanterum_plate',
+    F: 'gtceu:rhenium_frame',
+    W: '#forge:tools/wrenches',
+    H: '#forge:tools/hammers'
+  })
+  event.recipes.gtceu.assembler('gtceu:cyclozine_pipe_casing_assem')
+  .itemInputs(['gtceu:rhenium_frame', '4x gtceu:europium_normal_fluid_pipe', '4x gtceu:synthetic_pthanterum_plate'])
+  .itemOutputs('cosmiccore:cyclozine_chemically_repelling_pipe')
+  .circuit(6)
+  .duration(50)
+  .EUt(GTValues.VA[GTValues.LV]);
+event.shaped('cosmiccore:cyclozine_chemically_repelling_pipe', [
+  'PAP',
+  'AFA',
+  'PAP'
+], {
+  A: 'gtceu:synthetic_pthanterum_plate',
+  F: 'gtceu:rhenium_frame',
+  P: 'gtceu:europium_normal_fluid_pipe',
+})
+  event.recipes.gtceu.assembler('frontiers:gilded_pthanterum_casing')
+    .itemInputs(['gtceu:synthetic_pthanterum_frame', '4x gtceu:synthetic_pthanterum_plate'])
+    .inputFluids('gtceu:rose_gold 288')
+    .itemOutputs('cosmiccore:gilded_pthanterum_casing')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  event.recipes.gtceu.assembler('frontiers:pthanterum_intake')
+    .itemInputs(['cosmiccore:gilded_pthanterum_casing', '2x gtceu:synthetic_pthanterum_rotor', '4x gtceu:europium_normal_fluid_pipe'])
+    .inputFluids('gtceu:rose_gold 288')
+    .itemOutputs('cosmiccore:ludicrious_intake')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.assembler('frontiers:pthanterum_pipe')
+    .itemInputs(['4x gtceu:synthetic_pthanterum_plate', '2x gtceu:synthetic_pthanterum_gear', 'gtceu:synthetic_pthanterum_frame'])
+    .inputFluids('gtceu:rose_gold 288')
+    .itemOutputs('cosmiccore:machine_casing_gearbox_pthanterum')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+
   event.recipes.gtceu.assembler('gtceu:treated_wood_dust_shred')
     .itemInputs(['gtceu:bronze_machine_casing', '4x gtceu:steel_rod', '4x gtceu:steel_plate'])
     .itemOutputs('2x cosmiccore:steel_plated_bronze_casing')
