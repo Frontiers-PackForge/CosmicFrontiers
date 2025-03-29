@@ -572,7 +572,7 @@ ServerEvents.recipes(event => {
               .duration(320)
               .EUt(GTValues.VA[GTValues.IV]);
        event.recipes.gtceu.assembler('rvm_casing')
-              .itemInputs(['gtceu:resonant_virtue_meld_frame', '6x gtceu:osmiridium_plate'])
+              .itemInputs(['cosmiccore:resonant_virtue_meld_frame', '6x gtceu:osmiridium_plate'])
               .itemOutputs('cosmiccore:resonantly_tuned_virtue_meld_casing')
               .circuit(6)
               .duration(320)
