@@ -80,6 +80,12 @@ ServerEvents.recipes(event => {
 
     //SILT PROCESSING PREP
 
+    event.recipes.gtceu.mixer('silt_sep_composite')
+    .itemInputs(['8x gtceu:desh_dust', '8x cosmiccore:trinavine_dust', '8x cosmiccore:neutronite_dust'])
+    .itemOutputs('4x gtceu:silt_seperation_composite_dust')
+    .duration(550)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
     event.recipes.gtceu.distillery('silt_drying')
         .inputFluids('gtceu:silt_slurry 500')
         .itemOutputs('gtceu:impure_silt_dust')
