@@ -61,11 +61,11 @@ ServerEvents.recipes(event => {
   //LUV MOTOR
   event.remove({ id: 'gtceu:assembly_line/electric_motor_luv' })
   event.recipes.gtceu.assembly_line('luv_new_motor')
-    .itemInputs(['gtceu:long_magnetic_samarium_rod', '4x cosmiccore:long_resonant_virtue_meld_rod', '2x cosmiccore:resonant_virtue_meld_ring', '4x cosmiccore:resonant_virtue_meld_round', '64x gtceu:fine_ruridit_wire', '64x gtceu:fine_ruridit_wire', '64x gtceu:fine_ruridit_wire', '64x gtceu:fine_ruridit_wire', '2x gtceu:niobium_titanium_quadruple_cable'])
+    .itemInputs(['gtceu:long_magnetic_samarium_rod', '4x cosmiccore:long_resonant_virtue_meld_rod', '2x cosmiccore:resonant_virtue_meld_ring', '4x cosmiccore:resonant_virtue_meld_round', '64x gtceu:fine_ruridit_wire', '64x gtceu:fine_ruridit_wire', '64x gtceu:fine_ruridit_wire', '64x gtceu:fine_ruridit_wire', '2x gtceu:niobium_titanium_octal_cable'])
     .itemOutputs('gtceu:luv_electric_motor')
     .inputFluids(
       Fluid.of('gtceu:soldering_alloy', 288),
-      Fluid.of('gtceu:lubricant', 500)
+      Fluid.of('cosmiccore:triphenylphosphine', 500)
     )
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:iv_electric_motor')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
     .duration(600)
@@ -74,11 +74,11 @@ ServerEvents.recipes(event => {
   //LUV PISTON
   event.remove({ id: 'gtceu:assembly_line/electric_piston_luv' })
   event.recipes.gtceu.assembly_line('luv_new_piston')
-    .itemInputs(['gtceu:luv_electric_motor', '4x cosmiccore:resonant_virtue_meld_plate', '4x cosmiccore:resonant_virtue_meld_ring', '32x cosmiccore:resonant_virtue_meld_round', '4x cosmiccore:long_resonant_virtue_meld_rod', 'cosmiccore:resonant_virtue_meld_gear', '2x cosmiccore:small_resonant_virtue_meld_gear', '2x gtceu:niobium_titanium_quadruple_cable'])
+    .itemInputs(['gtceu:luv_electric_motor', '4x cosmiccore:resonant_virtue_meld_plate', '4x cosmiccore:resonant_virtue_meld_ring', '32x cosmiccore:resonant_virtue_meld_round', '4x cosmiccore:long_resonant_virtue_meld_rod', 'cosmiccore:resonant_virtue_meld_gear', '2x cosmiccore:small_resonant_virtue_meld_gear', '2x gtceu:niobium_titanium_octal_cable'])
     .itemOutputs('gtceu:luv_electric_piston')
     .inputFluids(
       Fluid.of('gtceu:soldering_alloy', 288),
-      Fluid.of('gtceu:lubricant', 500)
+      Fluid.of('cosmiccore:triphenylphosphine', 500)
     )
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:iv_electric_piston')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
     .duration(600)
@@ -87,11 +87,11 @@ ServerEvents.recipes(event => {
   //LUV PUMP
   event.remove({ id: 'gtceu:assembly_line/electric_pump_luv' })
   event.recipes.gtceu.assembly_line('luv_new_pump')
-    .itemInputs(['gtceu:luv_electric_motor', 'gtceu:niobium_titanium_normal_fluid_pipe', '4x cosmiccore:resonant_virtue_meld_plate', '8x cosmiccore:resonant_virtue_meld_screw', '4x gtceu:silicone_rubber_ring', 'cosmiccore:resonant_virtue_meld_rotor', '2x gtceu:niobium_titanium_quadruple_cable'])
+    .itemInputs(['gtceu:luv_electric_motor', 'gtceu:niobium_titanium_normal_fluid_pipe', '4x cosmiccore:resonant_virtue_meld_plate', '8x cosmiccore:resonant_virtue_meld_screw', '4x gtceu:silicone_rubber_ring', 'cosmiccore:resonant_virtue_meld_rotor', '2x gtceu:niobium_titanium_octal_cable'])
     .itemOutputs('gtceu:luv_electric_pump')
     .inputFluids(
       Fluid.of('gtceu:soldering_alloy', 288),
-      Fluid.of('gtceu:lubricant', 500)
+      Fluid.of('cosmiccore:triphenylphosphine', 500)
     )
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:iv_electric_pump')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
     .duration(600)
@@ -99,11 +99,11 @@ ServerEvents.recipes(event => {
   //LUV CONVEYOR
   event.remove({ id: 'gtceu:assembly_line/conveyor_module_luv' })
   event.recipes.gtceu.assembly_line('luv_conveyor_module_new')
-    .itemInputs(['2x gtceu:luv_electric_motor', '2x cosmiccore:resonant_virtue_meld_plate', '4x cosmiccore:resonant_virtue_meld_ring', '32x cosmiccore:resonant_virtue_meld_round', '4x cosmiccore:resonant_virtue_meld_screw', '2x gtceu:niobium_titanium_quadruple_cable'])
+    .itemInputs(['2x gtceu:luv_electric_motor', '2x cosmiccore:resonant_virtue_meld_plate', '4x cosmiccore:resonant_virtue_meld_ring', '32x cosmiccore:resonant_virtue_meld_round', '4x cosmiccore:resonant_virtue_meld_screw', '2x gtceu:niobium_titanium_octal_cable'])
     .itemOutputs('gtceu:luv_conveyor_module')
     .inputFluids(
       Fluid.of('gtceu:soldering_alloy', 288),
-      Fluid.of('gtceu:lubricant', 500),
+      Fluid.of('cosmiccore:triphenylphosphine', 500),
       Fluid.of('gtceu:styrene_butadiene_rubber', 1152)
     )
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:iv_conveyor_module')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
@@ -113,11 +113,11 @@ ServerEvents.recipes(event => {
   //LUV ROBOT-ARM
   event.remove({ id: 'gtceu:assembly_line/robot_arm_luv' })
   event.recipes.gtceu.assembly_line('robot_arm_luv_new')
-    .itemInputs(['4x cosmiccore:long_resonant_virtue_meld_rod', 'cosmiccore:resonant_virtue_meld_gear', 'cosmiccore:small_resonant_virtue_meld_gear', '2x gtceu:luv_electric_motor', 'gtceu:luv_electric_piston', '#gtceu:circuits/luv', '2x #gtceu:circuits/iv', '4x #gtceu:circuits/ev', '4x gtceu:niobium_titanium_quadruple_cable'])
+    .itemInputs(['4x cosmiccore:long_resonant_virtue_meld_rod', 'cosmiccore:resonant_virtue_meld_gear', 'cosmiccore:small_resonant_virtue_meld_gear', '2x gtceu:luv_electric_motor', 'gtceu:luv_electric_piston', '#gtceu:circuits/luv', '2x #gtceu:circuits/iv', '4x #gtceu:circuits/ev', '4x gtceu:niobium_titanium_octal_cable'])
     .itemOutputs('gtceu:luv_robot_arm')
     .inputFluids(
       Fluid.of('gtceu:soldering_alloy', 1152),
-      Fluid.of('gtceu:lubricant', 500),
+      Fluid.of('cosmiccore:triphenylphosphine', 500),
     )
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:iv_robot_arm')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
     .duration(600)
@@ -188,16 +188,15 @@ ServerEvents.recipes(event => {
   //ZPM MOTOR
   event.remove({ id: 'gtceu:assembly_line/electric_motor_zpm' })
   event.recipes.gtceu.assembly_line('zpm_new_motor')
-    .itemInputs(['4x gtceu:long_magnetic_samarium_rod', '4x cosmiccore:long_neutronite_rod', '4x cosmiccore:neutronite_ring', '8x cosmiccore:neutronite_round', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '4x gtceu:vanadium_gallium_quadruple_cable'])
+    .itemInputs(['4x gtceu:long_magnetic_samarium_rod', '4x cosmiccore:long_neutronite_rod', '4x cosmiccore:neutronite_ring', '8x cosmiccore:neutronite_round', '64x cosmiccore:fine_trinavine_wire', '64x cosmiccore:fine_trinavine_wire', '64x cosmiccore:fine_trinavine_wire', '64x cosmiccore:fine_trinavine_wire', '64x cosmiccore:fine_trinavine_wire', '4x gtceu:vanadium_gallium_quadruple_cable'])
     .itemOutputs('gtceu:zpm_electric_motor')
     .inputFluids(
       Fluid.of('gtceu:high_grade_solder', 576),
-      Fluid.of('gtceu:lubricant', 1000)
+      Fluid.of('cosmiccore:triphenylphosphine', 1000)
     )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:luv_electric_motor')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:luv_electric_motor')).EUt(GTValues.VA[GTValues.LuV]).duration(1000))
     .duration(600)
     .EUt(GTValues.VA[GTValues.LuV])
-
   event.remove({ id: 'gtceu:assembly_line/electric_piston_zpm' })
   //ZPM PISTON
   event.recipes.gtceu.assembly_line('new_zpm_piston_recipe')
@@ -205,16 +204,49 @@ ServerEvents.recipes(event => {
     .itemOutputs('gtceu:zpm_electric_piston')
     .inputFluids(
       Fluid.of('gtceu:high_grade_solder', 576),
-      Fluid.of('gtceu:lubricant', 1000)
+      Fluid.of('cosmiccore:triphenylphosphine', 1000)
     )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:luv_electric_piston')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:luv_electric_piston')).EUt(GTValues.VA[GTValues.LuV]).duration(1000))
     .duration(600)
     .EUt(GTValues.VA[GTValues.LuV])
 
-
-
-
-
+  //ZPM PUMP
+  event.remove({ id: 'gtceu:assembly_line/electric_pump_zpm' })
+  event.recipes.gtceu.assembly_line('zpm_new_pump')
+    .itemInputs(['gtceu:zpm_electric_motor', 'gtceu:polybenzimidazole_large_fluid_pipe', '6x cosmiccore:neutronite_plate', '12x cosmiccore:neutronite_screw', '8x gtceu:silicone_rubber_ring', 'cosmiccore:neutronite_rotor', '2x cosmiccore:trinavine_quadruple_cable'])
+    .itemOutputs('gtceu:zpm_electric_pump')
+    .inputFluids(
+      Fluid.of('gtceu:high_grade_solder', 288),
+      Fluid.of('cosmiccore:triphenylphosphine', 500)
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:luv_electric_pump')).EUt(GTValues.VA[GTValues.LuV]).duration(1000))
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.LuV])
+  //ZPM CONVEYOR
+  event.remove({ id: 'gtceu:assembly_line/conveyor_module_zpm' })
+  event.recipes.gtceu.assembly_line('zpm_conveyor_module_new')
+    .itemInputs(['2x gtceu:zpm_electric_motor', '4x cosmiccore:neutronite_plate', '8x cosmiccore:neutronite_ring', '64x cosmiccore:neutronite_round', '8x cosmiccore:neutronite_screw', '4x cosmiccore:trinavine_octal_cable'])
+    .itemOutputs('gtceu:zpm_conveyor_module')
+    .inputFluids(
+      Fluid.of('gtceu:soldering_alloy', 288),
+      Fluid.of('cosmiccore:triphenylphosphine', 1000),
+      Fluid.of('gtceu:styrene_butadiene_rubber', 1152)
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:luv_conveyor_module')).EUt(GTValues.VA[GTValues.LuV]).duration(1000))
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.LuV])
+  //LUV ROBOT-ARM
+  event.remove({ id: 'gtceu:assembly_line/robot_arm_zpm' })
+  event.recipes.gtceu.assembly_line('robot_arm_zpm_new')
+    .itemInputs(['8x cosmiccore:long_neutronite_rod', '2x cosmiccore:neutronite_gear', '4x cosmiccore:small_neutronite_gear', '2x gtceu:zpm_electric_motor', 'gtceu:zpm_electric_piston', '#gtceu:circuits/zpm', '2x #gtceu:circuits/zpm', '4x #gtceu:circuits/iv', '2x cosmiccore:trinavine_octal_cable'])
+    .itemOutputs('gtceu:zpm_robot_arm')
+    .inputFluids(
+      Fluid.of('gtceu:soldering_alloy', 1152),
+      Fluid.of('cosmiccore:triphenylphosphine', 1000),
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:luv_robot_arm')).EUt(GTValues.VA[GTValues.LuV]).duration(1000))
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.IV])
 
   // ZPM HULL AND CASING
   event.remove({ id: 'gtceu:assembler/casing_zpm' })
@@ -259,7 +291,7 @@ ServerEvents.recipes(event => {
       'gtceu:4_4_oxydianiline_pyromellitimide 288',
       'gtceu:grading_fluid_1 250'
     )
-    ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
     .duration(300)
     .EUt(GTValues.VA[GTValues.LuV])
 
@@ -270,7 +302,7 @@ ServerEvents.recipes(event => {
       'gtceu:4_4_oxydianiline_pyromellitimide 288',
       'gtceu:grading_fluid_2 250'
     )
-    ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
     .duration(300)
     .EUt(GTValues.VA[GTValues.LuV])
 
@@ -325,18 +357,18 @@ ServerEvents.recipes(event => {
     .itemInputs(['gtceu:superconducting_coil', '8x gtceu:luv_voltage_coil', '16x gtceu:fine_europium_wire', '#gtceu:circuits/luv'])
     .itemOutputs('cosmiccore:fusion_grade_magnet')
     .inputFluids(
-   'gtceu:high_grade_solder 2304',
-   'cosmiccore:triphenylphosphine 2304',
+      'gtceu:high_grade_solder 2304',
+      'cosmiccore:triphenylphosphine 2304',
     )
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:superconducting_coil').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
     .duration(300)
     .EUt(GTValues.VA[GTValues.LuV])
   event.recipes.gtceu.assembly_line('frontiers:ludicrous_combustion_gen')
-    .itemInputs(['gtceu:luv_machine_hull', '2x #gtceu:circuits/luv', '4x gtceu:luv_electric_piston', '4x gtceu:luv_electric_motor', '4x gtceu:synthetic_pthanterum_gear', 'gtceu:niobium_titanium_quadruple_cable'])
+    .itemInputs(['gtceu:luv_machine_hull', '2x #gtceu:circuits/luv', '4x gtceu:luv_electric_piston', '4x gtceu:luv_electric_motor', '4x gtceu:synthetic_pthanterum_gear', 'gtceu:niobium_titanium_octal_cable'])
     .itemOutputs('gtceu:ludicrous_combustion_engine_cc')
     .inputFluids(
-   'gtceu:high_grade_solder 2304',
-   'cosmiccore:triphenylphosphine 2304',
+      'gtceu:high_grade_solder 2304',
+      'cosmiccore:triphenylphosphine 2304',
     )
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:extreme_combustion_engine_cc').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
     .duration(300)
@@ -345,8 +377,8 @@ ServerEvents.recipes(event => {
     .itemInputs(['gtceu:large_chemical_reactor', '8x gtceu:synthetic_pthanterum_frame', '4x cosmiccore:cyclozine_chemically_repelling_pipe', '4x #gtceu:circuits/zpm', '32x gtceu:synthetic_pthanterum_plate', '2x gtceu:luv_electric_pump', 'gtceu:luv_field_generator', 'cosmiccore:luv_radio_module'])
     .itemOutputs('cosmiccore:industrial_chemical_vat')
     .inputFluids(
-   'gtceu:high_grade_solder 1152',
-   'cosmiccore:triphenylphosphine 2304',
+      'gtceu:high_grade_solder 1152',
+      'cosmiccore:triphenylphosphine 2304',
     )
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:large_chemical_reactor').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
     .duration(940)
@@ -374,18 +406,18 @@ ServerEvents.recipes(event => {
   ///////
 
 
-  event.recipes.gtceu.assembly_line('the_meatball')
-    .itemInputs(['64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe'])
-    .itemOutputs('kubejs:cosmic_meatballs')
-    .inputFluids(
-      Fluid.of('cosmiccore:prisma', 100000000),
-      Fluid.of('gtceu:uu_matter', 100000000),
-      Fluid.of('gtceu:neutronium', 100000000),
-      Fluid.of('gtceu:virtue_meld', 1),
-    )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('cosmiccore:macroverse_processor_mainframe')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
-    .duration(99999999)
-    .EUt(GTValues.VA[GTValues.MAX])
+  // event.recipes.gtceu.assembly_line('the_meatball')
+  //   .itemInputs(['64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe', '64x cosmiccore:macroverse_processor_mainframe'])
+  //   .itemOutputs('kubejs:cosmic_meatballs')
+  //   .inputFluids(
+  //     Fluid.of('cosmiccore:prisma', 100000000),
+  //     Fluid.of('gtceu:uu_matter', 100000000),
+  //     Fluid.of('gtceu:neutronium', 100000000),
+  //     Fluid.of('gtceu:virtue_meld', 1),
+  //   )
+  // ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('cosmiccore:macroverse_processor_mainframe')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
+  //   .duration(99999999)
+  //   .EUt(GTValues.VA[GTValues.MAX])
 
 
 
