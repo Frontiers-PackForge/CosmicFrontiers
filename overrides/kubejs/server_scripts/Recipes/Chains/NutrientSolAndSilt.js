@@ -3,10 +3,10 @@ ServerEvents.recipes(event => {
     // .inputFluids('gtceu:source_oils 100')
     // .itemOutputs('2x skilltree:wisdom_scroll')
 
-    event.remove({ output: 'gtceu:crystal_cpu'})
-    event.remove({ output: 'gtceu:engraved_crystal_chip'})
-    event.remove({ output: 'gtceu:raw_crystal_chip'})
-    event.remove({ output: 'gtceu:raw_crystal_chip_parts'})
+    event.remove({ output: 'gtceu:crystal_cpu' })
+    event.remove({ output: 'gtceu:engraved_crystal_chip' })
+    event.remove({ output: 'gtceu:raw_crystal_chip' })
+    event.remove({ output: 'gtceu:raw_crystal_chip_parts' })
     event.recipes.gtceu.distillation_tower('swamp_filtering')
         .inputFluids('gtceu:swamp_sediment 500') //Pumped Directly in the undergarden
         .outputFluids('gtceu:rotten_sediment 175') //Done Rotten -> Silt - Output requires a bit extra processing but gains more silt and lakewater
@@ -81,18 +81,19 @@ ServerEvents.recipes(event => {
     //SILT PROCESSING PREP
 
     event.recipes.gtceu.mixer('silt_sep_composite')
-    .itemInputs(['8x gtceu:desh_dust', '8x cosmiccore:trinavine_dust', '8x cosmiccore:neutronite_dust'])
-    .itemOutputs('4x gtceu:silt_seperation_composite_dust')
-    .duration(550)
-    .EUt(GTValues.VA[GTValues.LuV]);
+        .itemInputs(['8x gtceu:desh_dust', '8x cosmiccore:trinavine_dust', '8x cosmiccore:neutronite_dust'])
+        .itemOutputs('24x gtceu:silt_seperation_composite_dust')
+        .duration(550)
+        .EUt(GTValues.VA[GTValues.LuV]);
 
-    event.recipes.gtceu.distillery('silt_drying')
-        .inputFluids('gtceu:silt_slurry 500')
-        .itemOutputs('gtceu:impure_silt_dust')
+    event.recipes.gtceu.chemical_dehydrator('silt_drying')
+        .chancedInput('4x gtceu:silt_seperation_composite_dust', 4500, 0)
+        .inputFluids('gtceu:silt_slurry 16000')
+        .itemOutputs('32x gtceu:impure_silt_dust')
         .dimension('undergarden:undergarden')
         .duration(550)
         .EUt(GTValues.VA[GTValues.EV]);
-    //
+
     event.recipes.gtceu.mixer('europium_silicon')
         .itemInputs(['2x gtceu:silicon_dust', 'gtceu:europium_dust', 'gtceu:graphene_dust'])
         .itemOutputs('4x gtceu:europium_blended_silicon_dust')
@@ -107,30 +108,28 @@ ServerEvents.recipes(event => {
         .dimension('undergarden:undergarden')
         .duration(220)
         .EUt(GTValues.VA[GTValues.IV]);
-    event.recipes.gtceu.chemical_dehydrator('silt_sifting_default')
-        .notConsumable('32x gtceu:silt_seperation_composite_dust')
-        .itemInputs('16x gtceu:impure_silt_dust')
-        .inputFluids()
-        .chancedOutput('gtceu:high_grade_silicon_dust', 1500, 500)
-        .chancedOutput('gtceu:middle_grade_silicon_dust', 2550, 1500)
+    event.recipes.gtceu.sifter('silt_sifting_default')
+        .itemInputs('4x gtceu:impure_silt_dust')
+        .chancedOutput('2x gtceu:high_grade_silicon_dust', 1500, 500)
+        .chancedOutput('2x gtceu:middle_grade_silicon_dust', 2550, 1500)
         .itemOutputsRanged('gtceu:silicon_dust', 4, 8)
         .dimension('undergarden:undergarden')
         .duration(550)
         .EUt(GTValues.VA[GTValues.IV]);
     event.remove({ id: 'gtceu:electric_blast_furnace/naquadah_boule' })
     event.recipes.gtceu.alloy_blast_smelter('naq_boule_new')
-        .itemInputs(['36x gtceu:middle_grade_silicon_dust', '36x gtceu:high_grade_silicon_dust', '1x gtceu:gallium_arsenide_dust', '1x gtceu:naquadah_dust'])
+        .itemInputs(['54x gtceu:middle_grade_silicon_dust', '18x gtceu:high_grade_silicon_dust', '1x gtceu:gallium_arsenide_dust', '1x gtceu:naquadah_dust'])
         .outputFluids('gtceu:molten_naquadah_doped_silicon 9216')
         .blastFurnaceTemp(5400)
         .dimension('minecraft:the_nether')
-        .duration(3000)
+        .duration(1750)
         .EUt(GTValues.VA[GTValues.IV]);
-    event.recipes.gtceu.autoclave('naq_boule_solidify_autoclave')
+    event.recipes.gtceu.gravity_float_crucible('naq_boule_solidify_autoclave')
         .itemInputs('gtceu:silicon_nugget')
         .inputFluids('gtceu:molten_naquadah_doped_silicon 9216')
         .itemOutputs('gtceu:naquadah_boule')
-        .dimension('minecraft:the_nether')
-        .duration(12000)
+        .dimension('ad_astra:earth_orbit')
+        .duration(6000)
         .EUt(GTValues.VA[GTValues.IV]);
 
     //DiLumixal Boule Stuff
@@ -138,15 +137,15 @@ ServerEvents.recipes(event => {
         .itemInputs(['36x gtceu:middle_grade_silicon_dust', '36x gtceu:high_grade_silicon_dust', '32x minecraft:glowstone_dust', '1x gtceu:gallium_arsenide_dust'])
         .outputFluids('gtceu:molten_luminent_silicon 9216')
         .blastFurnaceTemp(7200)
-        .duration(2000)
+        .duration(1250)
         .dimension('minecraft:the_nether')
         .EUt(GTValues.VA[GTValues.IV]);
-    event.recipes.gtceu.autoclave('lumial_boule_solidify_autoclave')
+    event.recipes.gtceu.gravity_float_crucible('lumial_boule_solidify_autoclave')
         .itemInputs('gtceu:exquisite_malachite_gem')
         .inputFluids('gtceu:molten_luminent_silicon 9216')
         .itemOutputs('cosmiccore:dilumixal_naquadah_doped_silicon_boule')
         .dimension('ad_astra:earth_orbit')
-        .duration(10000)
+        .duration(5000)
         .EUt(GTValues.VA[GTValues.LuV]);
     event.recipes.gtceu.cutter('cut_lumial_boule')
         .itemInputs('cosmiccore:dilumixal_naquadah_doped_silicon_boule')
