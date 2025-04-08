@@ -5,40 +5,37 @@ ServerEvents.recipes(event => {
     .notConsumable('ars_nouveau:drygmy_charm')
     .notConsumable('minecraft:rotten_flesh')
     .itemOutputs('16x minecraft:rotten_flesh')
-    .chancedOutput(Item.of('minecraft:iron_ingot', 1), 1000, 0)
+    .itemOutputs('minecraft:iron_ingot')
     .duration(6000)
     .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.drygmy_grove('grove_guardian')
     .notConsumable('ars_nouveau:drygmy_charm')
     .notConsumable('oceansdelight:guardian')
     .itemOutputs('32x minecraft:prismarine_shard')
-    .chancedOutput(Item.of('minecraft:prismarine_crystals', 8), 5000, 0)
-    .chancedOutput(Item.of('minecraft:cod', 4), 3500, 0)
+    .itemOutputs('8x minecraft:prismarine_crystals')
+    .itemOutputs('2x minecraft:cod')
     .duration(6000)
     .EUt(GTValues.VA[GTValues.EV]);
   // todo enderman
-  // event.recipes.gtceu.drygmy_grove('grove_enderman')
-  //   .notConsumable('ars_nouveau:drygmy_charm')
-  //   .notConsumable('oceansdelight:guardian')
-  //   .itemOutputs('32x minecraft:prismarine_shard')
-  //   .chancedOutput(Item.of('minecraft:prismarine_crystals', 8), 4000, 1500)
-  //   .chancedOutput(Item.of('minecraft:cod', 4), 2000, 1000)
-  //   .duration(6000)
-  //   .EUt(GTValues.VA[GTValues.EV]);
+  event.recipes.gtceu.drygmy_grove('grove_enderman')
+    .notConsumable('ars_nouveau:drygmy_charm')
+    .notConsumable('gtceu:quantum_eye')
+    .itemOutputs('16x minecraft:ender_pearl')
+    .duration(6000)
+    .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.drygmy_grove('grove_blaze')
     .notConsumable('ars_nouveau:drygmy_charm')
     .notConsumable('create:blaze_cake')
     .itemOutputs('16x minecraft:blaze_rod')
-    .chancedOutput(Item.of('gtceu:ash_dust', 8), 4500, 0)
-    .chancedOutput(Item.of('gtceu:sulfur_dust', 2), 3000, 0)
+    .itemOutputs('gtceu:ash_dust')
     .duration(6000)
     .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.drygmy_grove('grove_skeleton')
     .notConsumable('ars_nouveau:drygmy_charm')
     .notConsumable('minecraft:skeleton_skull')
     .itemOutputs('32x minecraft:bone')
-    .chancedOutput(Item.of('minecraft:arrow', 8), 4500, 0)
-    .chancedOutput(Item.of('gtceu:calcium_dust', 2), 3000, 0)
+    .itemOutputs('4x minecraft:arrow')
+    .itemOutputs('gtceu:calcium_dust')
     .duration(6000)
     .EUt(GTValues.VA[GTValues.EV]);
 
@@ -46,7 +43,6 @@ ServerEvents.recipes(event => {
     .notConsumable('ars_nouveau:drygmy_charm')
     .notConsumable('minecraft:honeycomb_block')
     .itemOutputs('4x minecraft:honey_block', '4x minecraft:honeycomb_block')
-    .chancedOutput(Item.of('minecraft:honeycomb_block', 1), 2500,0)
     .duration(3000)
     .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.suffering_chamber('suffering_chamber_villager_basic')
@@ -55,19 +51,4 @@ ServerEvents.recipes(event => {
     .duration(600)
     .EUt(GTValues.VA[GTValues.EV]);
 
-  // event.recipes.gtceu.drygmy_grove('grove_wither_maybe')
-  //   .notConsumable('ars_nouveau:drygmy_charm')
-  //   .notConsumable('oceansdelight:guardian')
-  //   .itemOutputs('32x minecraft:prismarine_shard')
-  //   .chancedOutput(Item.of('', 8), 4000, 1500)
-  //   .chancedOutput(Item.of('minecraft:nether_star', 4), 100, 1000)
-  //   .duration(6000)
-  //   .EUt(GTValues.VA[GTValues.EV]);
-
-  // event.recipes.gtceu.soul_forge('bm_tester')
-  //   .input("soul", 200) // doesn't display 
-  //   .notConsumable('ars_nouveau:drygmy_charm')
-  //   .itemOutputs('minecraft:sand')
-  //   .duration(10)
-  //   .EUt(GTValues.VA[GTValues.EV]);
 })
