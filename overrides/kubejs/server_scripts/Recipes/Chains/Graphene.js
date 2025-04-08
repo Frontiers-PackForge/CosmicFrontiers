@@ -21,6 +21,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV]);
     event.recipes.gtceu.chemical_reactor('graphene_creation_skip')
         .itemInputs('gtceu:graphite_dust')
+        .inputFluids('gtceu:nitration_mixture 2000')
         .notConsumable('cosmiccore:fusion_grade_magnet')
         .itemOutputs('gtceu:graphene_dust')
         .outputFluids('gtceu:sulfuric_acid 1000')
