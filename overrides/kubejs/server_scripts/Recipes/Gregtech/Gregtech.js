@@ -66,6 +66,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:centrifuge/rare_earth_separation' })
   event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_blue_alloy_dust_to_block' })
   event.remove({ id: 'gtceu:shaped/bucket_of_concrete' })
+  event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_neutronite_ingot' })
 
   event.replaceOutput({ id: 'gtceu:shaped/extreme_combustion_engine' }, 'gtceu:extreme_combustion_engine', 'gtceu:extreme_combustion_engine_cc')
   event.replaceOutput({ id: 'gtceu:shaped/large_combustion_engine' }, 'gtceu:large_combustion_engine', 'gtceu:large_combustion_engine_cc')
@@ -323,21 +324,68 @@ ServerEvents.recipes(event => {
     W: '#forge:tools/wrenches',
     H: '#forge:tools/hammers'
   })
+  //Rhenium High Tolerance Casings
+  event.recipes.gtceu.assembler('gtceu:costly_rhenium_casing_assem')
+    .itemInputs(['gtceu:rhenium_frame', '6x gtceu:double_rhenium_plate'])
+    .itemOutputs('cosmiccore:high_tolerance_rhenium_casing')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('cosmiccore:high_tolerance_rhenium_casing', [
+    'AHA',
+    'AFA',
+    'AWA'
+  ], {
+    A: 'gtceu:double_rhenium_plate',
+    F: 'gtceu:rhenium_frame',
+    W: '#forge:tools/wrenches',
+    H: '#forge:tools/hammers'
+  })
+  event.shaped('gtceu:large_dryer', [
+    'CBC',
+    'DEF',
+    'AGA'
+  ], {
+    A: 'gtceu:platinum_single_cable',
+    B: 'cosmiccore:prismatic_tungstensteel_coil_block',
+    C: '#gtceu:circuits/iv',
+    D: 'gtceu:iv_electric_pump',
+    E: 'gtceu:iv_chemical_dehydrator',
+    F: 'gtceu:iv_conveyor_module',
+    G: 'gtceu:clean_machine_casing'
+  })
+  //Trinavine Flex Casings
+  event.recipes.gtceu.assembler('gtceu:trinavine_casing_assem')
+    .itemInputs(['cosmiccore:trinavine_frame', '6x cosmiccore:trinavine_plate'])
+    .itemOutputs('cosmiccore:highly_flexible_reinforced_trinavine_casing')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('cosmiccore:highly_flexible_reinforced_trinavine_casing', [
+    'AHA',
+    'AFA',
+    'AWA'
+  ], {
+    A: 'cosmiccore:trinavine_plate',
+    F: 'cosmiccore:trinavine_frame',
+    W: '#forge:tools/wrenches',
+    H: '#forge:tools/hammers'
+  })
   event.recipes.gtceu.assembler('gtceu:cyclozine_pipe_casing_assem')
-  .itemInputs(['gtceu:rhenium_frame', '4x gtceu:europium_normal_fluid_pipe', '4x gtceu:synthetic_pthanterum_plate'])
-  .itemOutputs('cosmiccore:cyclozine_chemically_repelling_pipe')
-  .circuit(6)
-  .duration(50)
-  .EUt(GTValues.VA[GTValues.LV]);
-event.shaped('cosmiccore:cyclozine_chemically_repelling_pipe', [
-  'PAP',
-  'AFA',
-  'PAP'
-], {
-  A: 'gtceu:synthetic_pthanterum_plate',
-  F: 'gtceu:rhenium_frame',
-  P: 'gtceu:europium_normal_fluid_pipe',
-})
+    .itemInputs(['gtceu:rhenium_frame', '4x gtceu:europium_normal_fluid_pipe', '4x gtceu:synthetic_pthanterum_plate'])
+    .itemOutputs('cosmiccore:cyclozine_chemically_repelling_pipe')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('cosmiccore:cyclozine_chemically_repelling_pipe', [
+    'PAP',
+    'AFA',
+    'PAP'
+  ], {
+    A: 'gtceu:synthetic_pthanterum_plate',
+    F: 'gtceu:rhenium_frame',
+    P: 'gtceu:europium_normal_fluid_pipe',
+  })
   event.recipes.gtceu.assembler('frontiers:gilded_pthanterum_casing')
     .itemInputs(['gtceu:synthetic_pthanterum_frame', '4x gtceu:synthetic_pthanterum_plate'])
     .inputFluids('gtceu:rose_gold 288')
