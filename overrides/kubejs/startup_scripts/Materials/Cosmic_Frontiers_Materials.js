@@ -600,7 +600,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
     event.create('abyss_grease') //Thick Primordial Oil Product
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-    event.create('veltharic_slough') //
+    event.create('veltharic_slough') 
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
     event.create('stardust_infused_gasoline')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
