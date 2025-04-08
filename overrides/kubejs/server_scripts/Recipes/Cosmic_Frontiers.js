@@ -449,6 +449,28 @@ ServerEvents.recipes(event => {
               .outputFluids(Fluid.of('gtceu:luminite', 144))
               .duration(48)
               .EUt(GTValues.VA[GTValues.HV]);
+       event.recipes.gtceu.extractor('experience_gem_extract')
+              .itemInputs('ars_nouveau:experience_gem')
+              .outputFluids(Fluid.of('experienceobelisk:cognitium', 60))
+              .duration(60)
+              .EUt(GTValues.VA[GTValues.MV]);
+       event.recipes.gtceu.extractor('greater_experience_gem_extract')
+              .itemInputs('ars_nouveau:greater_experience_gem')
+              .outputFluids(Fluid.of('experienceobelisk:cognitium', 240))
+              .duration(200)
+              .EUt(GTValues.VA[GTValues.MV]);
+       event.recipes.gtceu.packer('greater_experience_gem_packing')
+              .itemInputs('4x ars_nouveau:experience_gem')
+              .itemOutputs('ars_nouveau:greater_experience_gem')
+              .duration(10)
+              .circuit(1)
+              .EUt(GTValues.VA[GTValues.LV]);
+       event.recipes.gtceu.packer('greater_experience_gem_unpacking')
+              .itemInputs('ars_nouveau:greater_experience_gem')
+              .itemOutputs('4x ars_nouveau:experience_gem')
+              .duration(10)
+              .circuit(1)
+              .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.autoclave('lumi_utherium_bad')
               .inputFluids('gtceu:luminite 144')
               .itemInputs('2x gtceu:utherium_dust')
