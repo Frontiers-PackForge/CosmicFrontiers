@@ -472,6 +472,14 @@
 
 
 
+  "material.gtceu.ka_oil": "KA Oil",
+  "material.gtceu.adipic_acid": "Adipic Acid",
+  "material.gtceu.adiponitrile": "Adiponitrile",
+  "material.gtceu.hexamethylenediamine": "Hexamethylenediamine",
+  "material.gtceu.nylon_jelly_polymer": "Nylon Jelly Polymer",
+  "material.gtceu.nylon_6_6": "Nylon-6,6",
+  "material.gtceu.trinanylon_6_6": "Trinanylon-6,6",
+  
   "material.gtceu.rhodium_sulfate_solution": "Rhodium Sulfate Solution",
   "material.gtceu.carbon_tetrachloride": "Carbon Tetrachloride",
   "material.gtceu.nether_bioslurry": "Nether Bioslurry",
@@ -507,7 +515,11 @@
   "material.gtceu.ammonium_molybdate": "Ammonium Molybdate",
   "material.gtceu.ammonium_dimolybdate": "Ammonium Dimolybdate",
   "material.gtceu.molybdenum_trioxide": "Molybdenum Trioxide",
+  "recipe.condition.gamestage.locked_stage": "Blocked By Research: %s",
+  "recipe.condition.gamestage.unlocked_stage": "Research: %s",
 
+  "gtceu.gravity_float_crucible": "Gravity Float Crucible",
+  "block.gtceu.gravity_float_crucible": "Gravity Float Crucible",
   "gtceu.industrial_stoneworks": "Industrial Stoneworks",
   "block.gtceu.industrial_stoneworks": "Industrial Stoneworks",
   "gtceu.industrial_chemvat": "\nIndustrial Chemical Vat",
