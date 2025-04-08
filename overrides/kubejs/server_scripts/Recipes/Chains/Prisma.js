@@ -30,6 +30,15 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(GTValues.VA[GTValues.EV]);
 
+
+    event.recipes.gtceu.mana_engraver(`vitrius_creation`)
+        .itemInputs(['gtceu:naquadria_dust', 'gtceu:californium_dust'])
+        .inputFluids('cosmiccore:prisma 2000')
+        .outputFluids('cosmiccore:vitrius 2000')
+        .duration(340)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+
     //T1 Essences
     event.recipes.gtceu.essence_reactor(`water_reagent`)
         .itemInputs('2x biomesoplenty:waterlily')
