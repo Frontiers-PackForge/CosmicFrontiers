@@ -431,4 +431,25 @@ ServerEvents.recipes(event => {
     .duration(320)
     .EUt(GTValues.VA[GTValues.LuV]);
 
+
+
+  event.recipes.gtceu.large_chemical_reactor(`frontiers:wicked_essence`)
+    .chancedInput('botania:life_essence', 5000, 0)
+    .chancedOutput('cosmiccore:wicked_essence', 5000, 0)
+    .inputFluids('cosmiccore:vitrius 500')
+    .duration(340)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.chemical_bath(`frontiers:aberrant_essence`)
+    .itemInputs('cosmiccore:wicked_essence')
+    .inputFluids('cosmiccore:vitrius 2500')
+    .itemOutputs('cosmiccore:aberrant_essence')
+    .duration(340)
+    .EUt(GTValues.VA[GTValues.LuV]);
+  event.recipes.gtceu.forge_hammer(`frontiers:demon_will_crystal`)
+    .itemInputs('cosmiccore:aberrant_essence')
+    .itemOutputs('8x bloodmagic:defaultcrystal')
+    .duration(340)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
+
 })
