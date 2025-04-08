@@ -64,4 +64,17 @@ ServerEvents.recipes(event => {
         'createdeco:industrial_iron_nugget',
         'gtceu:industrial_iron_nugget'
     )
+
+  event.recipes.gtceu.alloy_smelter("create:industrial_iron_ingot")
+    .itemInputs('4x minecraft:iron_ingot', '2x gtceu:coal_dust')
+    .itemOutputs('4x createdeco:industrial_iron_ingot')
+    .duration(100)
+    .EUt(16);
+
+  event.recipes.gtceu.mixer("gtceu:industrial_iron_dust")
+    .itemInputs('4x gtceu:iron_dust', '2x gtceu:coal_dust')
+    .circuit(1)
+    .itemOutputs('4x gtceu:industrial_iron_dust')
+    .duration(50)
+    .EUt(16);
 })
