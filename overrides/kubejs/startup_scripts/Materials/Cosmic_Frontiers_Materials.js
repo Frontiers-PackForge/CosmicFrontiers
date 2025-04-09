@@ -505,6 +505,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xd6d6d6).iconSet(GTMaterialIconSet.DULL)
     event.create('crystaline_neutronium_gas')
         .gas()
+        .temperature(8500)
         .color(0xe3eeff).iconSet(GTMaterialIconSet.DULL)
     event.create('sifted_neutronium')
         .plasma()
