@@ -479,6 +479,15 @@
   "material.gtceu.nylon_jelly_polymer": "Nylon Jelly Polymer",
   "material.gtceu.nylon_6_6": "Nylon-6,6",
   "material.gtceu.trinanylon_6_6": "Trinanylon-6,6",
+
+  "material.gtceu.1_4_dichlorobutadiene": "1,4 Dichlorobutadiene",
+  "material.gtceu.3_4_dichlorobutadiene": "3,4 Dichlorobutadiene",
+  "material.gtceu.chloroprene": "Chloroprene",
+  "material.gtceu.ethylene_dichloride": "Ethylene Dichloride",
+  "material.gtceu.ethylenediamine": "Ethylenediamine",
+  "material.gtceu.ethylene_thiourea": "Ethylene Thiourea",
+  "material.gtceu.carbon_disulfide": "Carbon Disulfide",
+  "material.gtceu.neoprene": "Neoprene",
   
   "material.gtceu.rhodium_sulfate_solution": "Rhodium Sulfate Solution",
   "material.gtceu.carbon_tetrachloride": "Carbon Tetrachloride",
