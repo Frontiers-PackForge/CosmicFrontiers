@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:chlorine 2000')
         .outputFluids('gtceu:1_4_dichlorobutadiene 1000')
         .duration(300)
-        .EUt(GTValues.VA[GTValues.IV])
+        .EUt(GTValues.VA[GTValues.LuV])
 
     // C4H6Cl2 (l) -> C4H6Cl2 (l)
     event.recipes.gtceu.chemical_reactor('3_4_dichlorobuta')
@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
         .notConsumable('12x gtceu:copper_foil')
         .outputFluids('gtceu:3_4_dichlorobutadiene 1000')
         .duration(800)
-        .EUt(GTValues.VA[GTValues.EV])
+        .EUt(GTValues.VA[GTValues.LuV])
 
     // C4H6Cl2 (l) + NaOH (s) -> C4H5Cl (l) + NaCl (aq) + H2O (l)
     event.recipes.gtceu.chemical_reactor('chloroprene')
@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('2x gtceu:salt_dust')
         .outputFluids('minecraft:water 1000')
         .duration(900)
-        .EUt(GTValues.VA[GTValues.HV])
+        .EUt(GTValues.VA[GTValues.EV])
 
     // C2H4 (g) + Cl2 (g) -> C2H4Cl2 (l)
     event.recipes.gtceu.chemical_reactor('ethylene_dichloride')
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         .notConsumableFluid('gtceu:iron_iii_chloride 4000')
         .outputFluids('gtceu:ethylene_dichloride 1000')
         .duration(400)
-        .EUt(GTValues.VA[GTValues.HV])
+        .EUt(GTValues.VA[GTValues.IV])
 
     // C2H4Cl2 (l) + 2NH3 (g) -> C2H4(NH2)2 (l)
     event.recipes.gtceu.chemical_reactor('ethylenediamine')
@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:ammonia 2000')
         .outputFluids('gtceu:ethylenediamine 1000')
         .duration(800)
-        .EUt(GTValues.VA[GTValues.EV])
+        .EUt(GTValues.VA[GTValues.IV])
 
     // C (s) + 2S (s) -> CS2 (l)
     event.recipes.gtceu.electric_blast_furnace('carbon_disulfide')
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:carbon_disulfide 1000')
         .blastFurnaceTemp(1200)
         .duration(450)
-        .EUt(GTValues.VH[GTValues.MV])
+        .EUt(GTValues.VH[GTValues.IV])
 
     // C2H8N2 (l) + CS2 (l) -> C3H6N2S (s) + H2S (g)
     event.recipes.gtceu.chemical_reactor('ethylene_thiourea')
@@ -58,13 +58,14 @@ ServerEvents.recipes(event => {
         .itemOutputs('12x gtceu:ethylene_thiourea_dust')
         .outputFluids('gtceu:hydrogen_sulfide 1000')
         .duration(800)
-        .EUt(GTValues.VA[GTValues.EV])
+        .EUt(GTValues.VA[GTValues.IV])
 
-    event.recipes.gtceu.mixer('neoprene')
+    event.recipes.gtceu.polymerizer('neoprene')
+        .dimension('ad_astra:venus')
         .inputFluids('gtceu:chloroprene 1000')
         .itemInputs('gtceu:sulfur_dust', '12x gtceu:ethylene_thiourea_dust')
         .outputFluids('gtceu:neoprene 1728')
         .duration(650)
-        .EUt(GTValues.VA[GTValues.IV])
+        .EUt(GTValues.VA[GTValues.ZPM])
 
 })
