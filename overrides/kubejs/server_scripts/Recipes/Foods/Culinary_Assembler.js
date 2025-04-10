@@ -227,6 +227,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.culinary_assembler(`croptopia:scrambled_eggs`)
         .itemInputs('minecraft:egg', '#forge:cheese')
         .itemOutputs(`croptopia:scrambled_eggs`)
+        .circuit(3)
         .duration(recipeDuration)
         .EUt(recipeEUt);
 
@@ -263,6 +264,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.culinary_assembler(`croptopia:grilled_cheese`)
         .itemInputs('minecraft:bread', '#forge:cheese')
         .itemOutputs(`croptopia:grilled_cheese`)
+        .circuit(2)
         .duration(recipeDuration)
         .EUt(recipeEUt);
 
@@ -289,6 +291,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.culinary_assembler(`croptopia:pizza`)
         .itemInputs('#forge:doughs', '#forge:cheese', '#forge:tomatoes')
         .itemOutputs(`croptopia:pizza`)
+        .circuit(1)
         .duration(recipeDuration)
         .EUt(recipeEUt);
 
@@ -303,7 +306,6 @@ ServerEvents.recipes(event => {
         .itemInputs('#forge:doughs', '#forge:cheese', '#forge:tomatoes',
             'croptopia:bellpepper', 'croptopia:olive', '#croptopia:meat_replacements')
         .itemOutputs(`croptopia:supreme_pizza`)
-        .circuit(1)
         .duration(recipeDuration)
         .EUt(recipeEUt);
 
@@ -311,7 +313,6 @@ ServerEvents.recipes(event => {
         .itemInputs('#forge:doughs', '#forge:cheese', '#forge:tomatoes',
             '2x #forge:pineapples', 'croptopia:pepperoni')
         .itemOutputs(`croptopia:pineapple_pepperoni_pizza`)
-        .circuit(1)
         .duration(recipeDuration)
         .EUt(recipeEUt);
 
@@ -423,6 +424,7 @@ ServerEvents.recipes(event => {
         .itemInputs('croptopia:cinnamon', 'minecraft:sugar', '#forge:flour')
         .inputFluids('minecraft:milk 100')
         .itemOutputs(`4x croptopia:snicker_doodle`)
+        .circuit(1)
         .duration(recipeDuration)
         .EUt(recipeEUt);
 
@@ -430,6 +432,7 @@ ServerEvents.recipes(event => {
         .itemInputs('croptopia:cinnamon', 'minecraft:sugar', '#forge:flour', 'croptopia:banana', '#forge:nuts')
         .inputFluids('minecraft:milk 100')
         .itemOutputs(`2x croptopia:banana_nut_bread`)
+        .circuit(1)
         .duration(recipeDuration)
         .EUt(recipeEUt);
 
@@ -492,12 +495,14 @@ ServerEvents.recipes(event => {
         .itemInputs('#forge:flour', 'minecraft:sugar', 'croptopia:cinnamon')
         .inputFluids('minecraft:milk 100')
         .itemOutputs(`3x croptopia:churros`)
+        .circuit(2)
         .duration(recipeDuration)
         .EUt(recipeEUt);
 
     event.recipes.gtceu.culinary_assembler(`croptopia:tamales`)
         .itemInputs('#forge:onions', 'croptopia:chile_pepper', '#forge:flour', '#forge:salt', 'croptopia:corn_husk', '#forge:raw_chicken')
         .itemOutputs(`croptopia:tamales`)
+        .circuit(1)
         .duration(recipeDuration)
         .EUt(recipeEUt);
 
@@ -570,6 +575,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.culinary_assembler('croptopia:fish_and_chips')
         .itemInputs('#forge:flour', '#forge:salt', 'croptopia:pepper', '#minecraft:fishes', 'minecraft:potato')
         .itemOutputs('croptopia:fish_and_chips')
+        .circuit(1)
         .EUt(recipeEUt)
         .duration(recipeDuration);
 
@@ -681,6 +687,7 @@ ServerEvents.recipes(event => {
         .itemInputs('croptopia:basil', 'minecraft:egg', 'croptopia:pepper', '#forge:cheese', 'minecraft:bread')
         .inputFluids('croptopia:olive_oil 100')
         .itemOutputs('croptopia:eggplant_parmesan')
+        .circuit(1)
         .EUt(recipeEUt)
         .duration(recipeDuration);
 
@@ -811,6 +818,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.culinary_assembler('croptopia:pumpkin_bars')
         .itemInputs('2x minecraft:pumpkin', 'croptopia:cinnamon', 'croptopia:vanilla', '#forge:salt', 'minecraft:egg', 'minecraft:sugar', '#forge:flour', 'croptopia:butter')
         .itemOutputs('3x croptopia:pumpkin_bars')
+        .circuit(1)
         .EUt(recipeEUt)
         .duration(recipeDuration);
 
@@ -836,6 +844,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.culinary_assembler('croptopia:cabbage_roll')
         .itemInputs('#croptopia:beef_replacements', '#forge:onions', '#forge:salt', '3x #forge:cabbage', '#forge:rice')
         .itemOutputs('2x croptopia:cabbage_roll')
+        .circuit(2)
         .EUt(recipeEUt)
         .duration(recipeDuration);
 
@@ -1130,6 +1139,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.culinary_assembler('farmersdelight:cabbage_rolls')
         .itemInputs('#forge:cabbage', '#farmersdelight:cabbage_roll_ingredients')
         .itemOutputs('farmersdelight:cabbage_rolls')
+        .circuit(1)
         .EUt(recipeEUt)
         .duration(recipeDuration);
 
@@ -1203,6 +1213,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.culinary_assembler('farmersdelight:fish_stew')
         .itemInputs('#forge:raw_fishes', 'farmersdelight:tomato_sauce', '#forge:onions', 'minecraft:bowl')
         .itemOutputs('farmersdelight:fish_stew')
+        .circuit(1)
         .EUt(recipeEUt)
         .duration(recipeDuration);
 
@@ -1306,6 +1317,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.culinary_assembler('farmersdelight:stuffed_pumpkin_block')
         .itemInputs('#forge:rice', '#forge:vegetables', '#forge:onions', 'minecraft:brown_mushroom', 'minecraft:potato', '#forge:berries', 'minecraft:pumpkin')
         .itemOutputs('farmersdelight:stuffed_pumpkin_block')
+        .circuit(2)
         .EUt(recipeEUt)
         .duration(recipeDuration);
 
@@ -1400,36 +1412,42 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.culinary_assembler('vintagedelight:pickled_pepper')
         .itemInputs('5x vintagedelight:ghost_pepper', '#forge:salt')
         .itemOutputs('5x vintagedelight:pickled_pepper')
+        .circuit(2)
         .EUt(recipeEUt)
         .duration(1200);
 
     event.recipes.gtceu.culinary_assembler('vintagedelight:pickle')
         .itemInputs('5x #forge:cucumber', '#forge:salt')
         .itemOutputs('5x vintagedelight:pickle')
+        .circuit(2)
         .EUt(recipeEUt)
         .duration(1200);
 
     event.recipes.gtceu.culinary_assembler('vintagedelight:pickled_onion')
         .itemInputs('5x #forge:onions', '#forge:salt')
         .itemOutputs('5x vintagedelight:pickled_onion')
+        .circuit(2)
         .EUt(recipeEUt)
         .duration(1200);
 
     event.recipes.gtceu.culinary_assembler('vintagedelight:pickled_beetroot')
         .itemInputs('5x minecraft:beetroot', '#forge:salt')
         .itemOutputs('5x vintagedelight:pickled_beetroot')
+        .circuit(2)
         .EUt(recipeEUt)
         .duration(1200);
 
     event.recipes.gtceu.culinary_assembler('vintagedelight:pickled_egg')
         .itemInputs('5x minecraft:egg', '#forge:salt')
         .itemOutputs('5x vintagedelight:pickled_egg')
+        .circuit(2)
         .EUt(recipeEUt)
         .duration(1200);
 
     event.recipes.gtceu.culinary_assembler('vintagedelight:surstromming')
         .itemInputs('5x #forge:raw_fishes', '#forge:salt')
         .itemOutputs('5x vintagedelight:surstromming')
+        .circuit(2)
         .EUt(recipeEUt)
         .duration(1200);
 
@@ -1518,7 +1536,7 @@ ServerEvents.recipes(event => {
         .duration(recipeDuration);
 
     event.recipes.gtceu.culinary_assembler('vintagedelight:nut_mash_mason_jar')
-        .itemInputs('5x #forge:coooked_nuts', 'minecraft:sugar', 'vintagedelight:mason_jar')
+        .itemInputs('5x #forge:cooked_nuts', 'minecraft:sugar', 'vintagedelight:mason_jar')
         .itemOutputs('vintagedelight:nut_mash_mason_jar')
         .EUt(recipeEUt)
         .duration(recipeDuration);
@@ -1569,7 +1587,7 @@ ServerEvents.recipes(event => {
         .EUt(recipeEUt)
         .circuit(1)
         .duration(recipeDuration);
-
+    
     event.recipes.gtceu.culinary_assembler('vintagedelight:relish_bottle')
         .itemInputs('vintagedelight:relish_mason_jar', '3x minecraft:glass_bottle')
         .itemOutputs('3x vintagedelight:relish_bottle')
@@ -1600,6 +1618,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.culinary_assembler('vintagedelight:cheese_pizza')
         .itemInputs('3x #forge:cheese', '2x #forge:dough', 'farmersdelight:tomato_sauce')
         .itemOutputs('vintagedelight:cheese_pizza')
+        .circuit(3)
         .EUt(recipeEUt)
         .duration(recipeDuration);
 
@@ -1608,7 +1627,7 @@ ServerEvents.recipes(event => {
             .itemInputs('3x #forge:cheese', '2x #forge:dough', 'farmersdelight:tomato_sauce', meat)
             .itemOutputs('vintagedelight:meat_pizza')
             .EUt(recipeEUt)
-            .circuit(1)
+            .circuit(2)
             .duration(recipeDuration);
     });
 
@@ -1796,6 +1815,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.culinary_assembler('delightful:sinigang')
         .itemInputs('#forge:raw_fishes', '#forge:raw_pork', '#forge:onions', '#forge:fruits/citrus', 'croptopia:ginger', 'farmersdelight:tomato_sauce', 'minecraft:bowl')
         .itemOutputs('delightful:sinigang')
+        .circuit(2)
         .EUt(recipeEUt)
         .duration(recipeDuration);
 
@@ -1912,17 +1932,47 @@ ServerEvents.recipes(event => {
         .EUt(recipeEUt)
         .duration(recipeDuration);
 
-    ['delightful:salmonberries', 'delightful:matcha', '#forge:cantaloupes'].forEach((ingredient, index) => {
-        let flavor = ingredient.split(':')[1].replace('ies', 'y').replace('s', '')
-        event.recipes.gtceu.culinary_assembler(`delightful:${flavor}_gummy`)
-            .itemInputs('minecraft:kelp', 'minecraft:sugar', 'minecraft:honey_bottle', ingredient)
-            .itemOutputs(`delightful:${flavor}_gummy`, 'minecraft:glass_bottle')
-            .EUt(recipeEUt)
-            .duration(recipeDuration);
-        event.recipes.gtceu.culinary_assembler(`delightful:${flavor}_gummy_2`)
-            .itemInputs('minecraft:kelp', 'minecraft:sugar', 'minecraft:honey_block', ingredient)
-            .itemOutputs(`9x delightful:${flavor}_gummy`)
-            .EUt(recipeEUt)
-            .duration(recipeDuration);
-    })
+    event.recipes.gtceu.culinary_assembler(`delightful:salmonberry_gummy`)
+        .itemInputs('minecraft:kelp', 'minecraft:sugar', 'minecraft:honey_bottle', 'delightful:salmonberries')
+        .itemOutputs(`delightful:salmonberry_gummy`, 'minecraft:glass_bottle')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+    event.recipes.gtceu.culinary_assembler(`delightful:salmonberry_gummy_2`)
+        .itemInputs('minecraft:kelp', 'minecraft:sugar', 'minecraft:honey_block', 'delightful:salmonberries')
+        .itemOutputs(`9x delightful:salmonberry_gummy`)
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler(`delightful:source_berry_gummy`)
+        .itemInputs('minecraft:kelp', 'minecraft:sugar', 'minecraft:honey_bottle', 'ars_nouveau:sourceberry_bush')
+        .itemOutputs(`delightful:source_berry_gummy`, 'minecraft:glass_bottle')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+    event.recipes.gtceu.culinary_assembler(`delightful:source_berry_gummy_2`)
+        .itemInputs('minecraft:kelp', 'minecraft:sugar', 'minecraft:honey_block', 'ars_nouveau:sourceberry_bush')
+        .itemOutputs(`9x delightful:source_berry_gummy`)
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler(`delightful:matcha_gummy`)
+        .itemInputs('minecraft:kelp', 'minecraft:sugar', 'minecraft:honey_bottle', 'delightful:matcha')
+        .itemOutputs(`delightful:matcha_gummy`, 'minecraft:glass_bottle')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+    event.recipes.gtceu.culinary_assembler(`delightful:matcha_gummy_2`)
+        .itemInputs('minecraft:kelp', 'minecraft:sugar', 'minecraft:honey_block', 'delightful:matcha')
+        .itemOutputs(`9x delightful:matcha_gummy`)
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+
+    event.recipes.gtceu.culinary_assembler(`delightful:cantaloupe_gummy`)
+        .itemInputs('minecraft:kelp', 'minecraft:sugar', 'minecraft:honey_bottle', '#forge:cantaloupes')
+        .itemOutputs(`delightful:cantaloupe_gummy`, 'minecraft:glass_bottle')
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
+    event.recipes.gtceu.culinary_assembler(`delightful:cantaloupe_gummy_2`)
+        .itemInputs('minecraft:kelp', 'minecraft:sugar', 'minecraft:honey_block', '#forge:cantaloupes')
+        .itemOutputs(`9x delightful:cantaloupe_gummy`)
+        .EUt(recipeEUt)
+        .duration(recipeDuration);
 })
