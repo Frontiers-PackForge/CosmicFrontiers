@@ -163,11 +163,13 @@ ServerEvents.recipes(event => {
     'gtceu:rtm_alloy_quadruple_wire',
     'cosmiccore:prismatic_tungstensteel_quadruple_wire'
   )
+
   event.recipes.gtceu.assembler('local_power_cap')
     .itemInputs(['gtceu:palladium_substation', '2x gtceu:mpic_chip', '#gtceu:circuits/luv', '2x gtceu:lapotron_crystal'])
     .itemOutputs('cosmiccore:capacitor_array')
     .duration(220)
     .EUt(GTValues.VA[GTValues.EV]);
+
   event.recipes.gtceu.chemical_reactor('copper_oxidize_block')
     .itemInputs('minecraft:copper_block')
     .inputFluids('gtceu:oxygen 1000')
@@ -631,6 +633,44 @@ ServerEvents.recipes(event => {
     .circuit(16)
     .blastFurnaceTemp(5900)
     .EUt(GTValues.VA[GTValues.IV]);
+=======
+  event.remove({ id: 'gtceu:electric_blast_furnace/blast_indium_tin_barium_titanium_cuprate_gas' })
+
+  event.recipes.gtceu.electric_blast_furnace('indium_tin_barium_titanium_cuprate_ingot')
+  .itemInputs('gtceu:indium_tin_barium_titanium_cuprate_dust')
+  .itemOutputs('gtceu:hot_indium_tin_barium_titanium_cuprate_ingot')
+  .duration(1000)
+  .circuit(1)
+  .blastFurnaceTemp(5900)
+  .EUt(GTValues.VA[GTValues.IV]);
+
+  event.recipes.gtceu.electric_blast_furnace('indium_tin_barium_titanium_cuprate_ingot_gas')
+  .itemInputs('gtceu:indium_tin_barium_titanium_cuprate_dust')
+  .itemOutputs('gtceu:hot_indium_tin_barium_titanium_cuprate_ingot')
+  .inputFluids('gtceu:argon 100')
+  .duration(670)
+  .circuit(1)
+  .blastFurnaceTemp(5900)
+  .EUt(GTValues.VA[GTValues.IV]);
+
+  event.recipes.gtceu.alloy_blast_smelter('indium_tin_barium_titanium_cuprate_ingot_abs')
+  .itemInputs(['4x gtceu:indium_dust', '2x gtceu:tin_dust', '2x gtceu:barium_dust', 'gtceu:titanium_dust', '7x gtceu:copper_dust'])
+  .inputFluids('gtceu:oxygen 14000')
+  .outputFluids('gtceu:molten_indium_tin_barium_titanium_cuprate 2304')
+  .duration(12000)
+  .circuit(6)
+  .blastFurnaceTemp(5900)
+  .EUt(GTValues.VA[GTValues.IV]);
+
+  event.recipes.gtceu.alloy_blast_smelter('indium_tin_barium_titanium_cuprate_ingot_abs_gas')
+  .itemInputs(['4x gtceu:indium_dust', '2x gtceu:tin_dust', '2x gtceu:barium_dust', 'gtceu:titanium_dust', '7x gtceu:copper_dust'])
+  .inputFluids('gtceu:oxygen 14000', 'gtceu:argon 800')
+  .outputFluids('gtceu:molten_indium_tin_barium_titanium_cuprate 2304')
+  .duration(8040)
+  .circuit(16)
+  .blastFurnaceTemp(5900)
+  .EUt(GTValues.VA[GTValues.IV]);
+
 
   event.recipes.gtceu.assembler('alpha_supercon')
     .itemInputs(['16x gtceu:galvanized_ethersteel_foil', '4x gtceu:titanium_tiny_fluid_pipe', '4x gtceu:luminescent_utherium_double_wire', 'gtceu:hv_electric_pump'])
