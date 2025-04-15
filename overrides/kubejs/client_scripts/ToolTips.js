@@ -221,6 +221,10 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('ae2:condenser', (item, advanced, text) => {
     text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
   })
+  event.addAdvanced('gtceu:power_substation', (item, advanced, text) => {
+    text.add(1, Text.of('DEPRECATED: Use shapeless recipe to migrate to CosmicCore version!').red())
+    text.add(2, Text.of('Without it you will not be able to access wireless power! \n You have been warned!').red())
+  })
   event.addAdvanced('ae2:condenser', (item, advanced, text) => {
     text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
   })

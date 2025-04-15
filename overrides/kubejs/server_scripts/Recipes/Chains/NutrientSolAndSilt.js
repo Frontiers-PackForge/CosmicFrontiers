@@ -117,6 +117,7 @@ ServerEvents.recipes(event => {
         .duration(550)
         .EUt(GTValues.VA[GTValues.IV]);
     event.remove({ id: 'gtceu:electric_blast_furnace/naquadah_boule' })
+    event.remove({ id: 'gtceu:orbital_forge/naquadah_boule' })
     event.recipes.gtceu.alloy_blast_smelter('naq_boule_new')
         .itemInputs(['54x gtceu:middle_grade_silicon_dust', '18x gtceu:high_grade_silicon_dust', '1x gtceu:gallium_arsenide_dust', '1x gtceu:naquadah_dust'])
         .outputFluids('gtceu:molten_naquadah_doped_silicon 9216')

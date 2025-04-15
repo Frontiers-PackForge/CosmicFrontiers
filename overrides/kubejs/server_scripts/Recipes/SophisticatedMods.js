@@ -1,15 +1,3 @@
-//A Simple "REMOVE AND HIDE" function akin to GroovyScript's Jei.yeet() function - This will tag the item for hiding from recipe viewers and remove the recipe
-//This one also has a tag removal function to remove the forge:tools/knives tag from what is removed so bear that in mind if you copy/paste this around
-// let yeet = (itemName) => {
-//   ServerEvents.recipes(event => {
-//     event.remove({ output: itemName })
-//   })
-//   ServerEvents.tags('item', event => {
-//     event.add('forge:viewers/hidden_from_recipe', itemName)
-
-//   })
-// }
-
 let DONOTEXIST = ['sophisticatedstorage:stack_upgrade_tier_5','sophisticatedstorage:basic_to_gold_tier_upgrade', 'sophisticatedstorage:basic_to_diamond_tier_upgrade', 'sophisticatedstorage:basic_to_netherite_tier_upgrade', 'sophisticatedstorage:iron_to_diamond_tier_upgrade', 'sophisticatedstorage:iron_to_netherite_tier_upgrade', 'sophisticatedstorage:gold_to_netherite_tier_upgrade','sophisticatedstorage:stack_upgrade_tier_3', 'sophisticatedstorage:stack_upgrade_tier_4', 'sophisticatedbackpacks:stack_upgrade_tier_1', 'sophisticatedbackpacks:stack_upgrade_tier_2', 'sophisticatedbackpacks:stack_upgrade_tier_3', 'sophisticatedbackpacks:stack_upgrade_tier_4','sophisticatedbackpacks:stack_upgrade_starter_tier','sophisticatedstorage:stack_upgrade_tier_1_plus',
 'sophisticatedstorage:limited_barrel_1',
 'sophisticatedstorage:limited_barrel_2',
@@ -48,6 +36,7 @@ let DONOTEXIST = ['sophisticatedstorage:stack_upgrade_tier_5','sophisticatedstor
 'sophisticatedstorage:stack_downgrade_tier_3',]
 
 ServerEvents.tags('item', event => {
+  console.log('[16] - [1] - TAG-WATCHER')
   event.add('forge:viewers/hidden_from_recipe', DONOTEXIST)
   event.add('c:hidden_from_recipe_viewers', DONOTEXIST)
   event.add('minecraft:bamboo_logs', 'minecraft:stripped_bamboo_block')

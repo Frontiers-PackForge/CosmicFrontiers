@@ -1,8 +1,7 @@
 // priority: 999
 
 ServerEvents.tags('item', event => {
-    console.log('Registering Food Tags')
-    
+    console.log('[20] - [1] - TAG-WATCHER')
     event.add('forge:flour', 'gtceu:wheat_dust')
     event.add('forge:salt', 'gtceu:salt_dust')
     event.add('forge:rice', 'farmersdelight:rice')
@@ -161,6 +160,7 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.tags('block', event => {
+    console.log('[20] - [2] - TAG-WATCHER')
     // spring('biomeswevegone:blueberry_bush')
     // summer('biomeswevegone:blueberries')
 
@@ -180,6 +180,7 @@ ServerEvents.tags('block', event => {
 })
 
 ServerEvents.tags('fluid', event => {
+    console.log('[20] - [3] - TAG-WATCHER')
     event.add('forge:milk', 'gtceu:soy_milk')
     event.add('forge:milk', 'gtceu:milk')
     event.add('forge:milk', 'minecraft:milk')

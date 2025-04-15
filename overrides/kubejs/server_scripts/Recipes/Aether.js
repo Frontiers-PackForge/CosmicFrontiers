@@ -1,4 +1,5 @@
 ServerEvents.tags('block', event => {
+  console.log('[4] - [1] - TAG-WATCHER')
     event.remove('aether:aether_portal_blocks', 'minecraft:glowstone'),
     event.add('aether:aether_portal_blocks', 'cosmiccore:plated_aerocloud')
   })

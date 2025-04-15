@@ -45,7 +45,9 @@ WorldgenEvents.remove(event => {
       'malum:natural_quartz_ore',
       'malum:cthonic_gold_ore',
       'malum:brilliant_stone',
-      'malum:brilliant_deepslate'
+      'malum:brilliant_deepslate',
+      'cosmosportals:block_cosmic_ore',
+      'cosmosportals:block_deepslate_cosmic_ore'
     ]
   })
   event.removeFeatureById('raw_generation', [
@@ -66,7 +68,9 @@ WorldgenEvents.remove(event => {
     'malum:natural_quartz_ore',
     'malum:cthonic_gold_ore',
     'malum:brilliant_stone',
-    'malum:brilliant_deepslate'
+    'malum:brilliant_deepslate',
+    'cosmosportals:block_cosmic_ore',
+    'cosmosportals:block_deepslate_cosmic_ore'
   ])
   event.removeFeatureById('underground_ores', [
     //FOR SOME REASON ADASTRA GENERATES ORES AT THIS GENERATION STEP      
@@ -105,7 +109,9 @@ WorldgenEvents.remove(event => {
     'malum:natural_quartz_ore',
     'malum:cthonic_gold_ore',
     'malum:brilliant_stone',
-    'malum:brilliant_deepslate'
+    'malum:brilliant_deepslate',
+    'cosmosportals:block_cosmic_ore',
+    'cosmosportals:block_deepslate_cosmic_ore'
   ])
 })
 

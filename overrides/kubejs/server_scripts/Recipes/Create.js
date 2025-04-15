@@ -3,6 +3,7 @@ let yeet = (itemName) => {
     event.remove({ output: itemName })
   })
   ServerEvents.tags('item', event => {
+    console.log('[8] - [1] - TAG-WATCHER')
     event.add('c:hidden_from_recipe_viewers', itemName)
   })
 }
@@ -26,7 +27,7 @@ yeet('balancedflight:ascended_flight_ring')
 yeet('create:propeller')
 
 ServerEvents.tags('item', event => {
-  console.log('Hello! The item tags event has fired!')
+  console.log('[8] - [2] - TAG-WATCHER')
 
   //Other Modded Plate Removals From the Forge Tag - Remember to Hide in EMI if needed below
   event.remove('forge:plates/copper', 'create:copper_sheet')

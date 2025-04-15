@@ -3,6 +3,7 @@ let yeet = (itemName) => {
     event.remove({ output: itemName })
   })
   ServerEvents.tags('item', event => {
+    console.log('[18] - [1] - TAG-WATCHER')
     event.add('c:hidden_from_recipe_viewers', itemName)
     event.remove('forge:tools/hammers', itemName)
   })
@@ -12,12 +13,14 @@ let yeet_f = (itemName) => {
     event.remove({ output: Fluid.of(itemName) })
   })
   ServerEvents.tags('fluid', event => {
+    console.log('[18] - [2] - TAG-WATCHER')
     event.add('c:hidden_from_recipe_viewers', itemName)
   })
 }
 
 yeet('bloodmagic:soul_forge')
 ServerEvents.tags('item', event => {
+  console.log('[18] - [3] - TAG-WATCHER')
   event.remove('forge:dusts/iron', 'bloodmagic:ironsand')
   event.remove('forge:dusts/copper', 'bloodmagic:coppersand')
   event.remove('forge:dusts/coal', 'bloodmagic:coalsand')

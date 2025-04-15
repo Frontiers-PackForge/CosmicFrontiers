@@ -3,6 +3,7 @@ let yeet = (itemName) => {
     event.remove({ output: itemName })
   })
   ServerEvents.tags('item', event => {
+    console.log('[2] - [1] - TAG-WATCHER')
     event.add('c:hidden_from_recipe_viewers', itemName)
     event.remove('forge:tools/hammers', itemName)
   })
@@ -12,6 +13,7 @@ let yeet_f = (itemName) => {
     event.remove({ output: Fluid.of(itemName) })
   })
   ServerEvents.tags('fluid', event => {
+    console.log('[2] - [1] - TAG-WATCHER')
     event.add('c:hidden_from_recipe_viewers', itemName)
   })
 }   //This regex is apparently messing with the CEU steel ingot as well we also don't wanna hide the AA higher tier ingots quite yet 
@@ -61,6 +63,7 @@ yeet_f('cosmiccore:virtue_meld')
 
 //Last fix didn't work, i'm just removing the steel tag from ad astra steel lul - Srdra
 ServerEvents.tags('item', event => {
+  console.log('[2] - [3] - TAG-WATCHER')
   event.remove('forge:ingots/steel', 'ad_astra:steel_ingot')
   event.remove('forge:plates/steel', 'ad_astra:steel_plate')
   event.remove('forge:plates/iron', 'ad_astra:iron_plate')
@@ -74,6 +77,7 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.tags('fluid', event => {
+  console.log('[2] - [4] - TAG-WATCHER')
   event.add('ad_astra:fuel', `gtceu:rocket_fuel`)
   event.remove('ad_astra:fuel', `gtceu:diesel`)
   event.remove('ad_astra:fuel', `ad_astra:fuel`)

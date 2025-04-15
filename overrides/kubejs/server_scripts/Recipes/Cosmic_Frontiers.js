@@ -5,12 +5,14 @@ let yeet = (itemName) => {
               event.remove({ output: itemName })
        })
        ServerEvents.tags('item', event => {
+              console.log('[5] - [1] - TAG-WATCHER')
               event.add('c:hidden_from_recipe_viewers', itemName)
 
        })
 }
 
 ServerEvents.tags('item', event => {
+       console.log('[5] - [2] - TAG-WATCHER')
        event.add('thinair:heavy_breathing_equipment', 'ad_astra:space_helmet')
        event.add('thinair:heavy_breathing_equipment', 'kubejs:nano_respirator')
        event.add('thinair:breathing_equipment', 'kubejs:nano_respirator')
@@ -493,6 +495,14 @@ ServerEvents.recipes(event => {
               .circuit(4)
               .duration(9600)
               .EUt(GTValues.VA[GTValues.EV]);
+       event.recipes.gtceu.alloy_blast_smelter('zbland_glass_crafting')
+              .inputFluids('gtceu:fluorine 6000')
+              .itemInputs(['5x gtceu:zirconium_dust', '2x gtceu:barium_dust', 'gtceu:lanthanum_dust', 'gtceu:aluminium_dust', '2x gtceu:sodium_dust'])
+              .outputFluids('gtceu:zblan_glass 2448')
+              .duration(4800)
+              .circuit(16)
+              .blastFurnaceTemp(7000)
+              .EUt(GTValues.VA[GTValues.EV]);
        event.recipes.gtceu.alloy_blast_smelter('virtue_meld_molten_good')
               .notConsumableFluid('gtceu:molten_virtue_meld 1152')
               .inputFluids('gtceu:luminite 1152')
@@ -599,7 +609,7 @@ ServerEvents.recipes(event => {
               .circuit(6)
               .duration(320)
               .EUt(GTValues.VA[GTValues.LuV]);
-              
+
        event.remove({ id: 'gtceu:distillation_tower/distill_coal_gas' })
        event.recipes.gtceu.distillation_tower('frontiers:distill_coal_gas')
               .inputFluids('gtceu:coal_gas 1000')

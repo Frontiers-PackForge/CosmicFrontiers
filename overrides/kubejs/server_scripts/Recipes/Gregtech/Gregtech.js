@@ -4,6 +4,7 @@ let yeet = (itemName) => {
     event.remove({ output: itemName })
   })
   ServerEvents.tags('item', event => {
+    console.log('[21] - [1] - TAG-WATCHER')
     event.add('forge:viewers/hidden_from_recipe', itemName)
     event.add('c:hidden_from_recipe_viewers', itemName)
 
@@ -11,6 +12,7 @@ let yeet = (itemName) => {
 }
 
 ServerEvents.tags('item', event => {
+  console.log('[21] - [2] - TAG-WATCHER')
   event.add('forge:lenses/ruby', 'gtceu:redstone_lens')
   event.add('forge:lenses/red', 'gtceu:redstone_lens')
   event.add('c:hidden_from_recipe_viewers', 'gtceu:lp_steam_bender')
@@ -59,6 +61,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:smelting/smelt_dust_blue_alloy_to_ingot' })
   event.remove({ id: 'gtceu:centrifuge/deuterium_separation' })
   event.remove({ id: 'gtceu:centrifuge/uranium_hexafluoride_separation' })
+  event.remove({ id: 'gtceu:orbital_forge/star_boule' })
+  event.remove({ id: 'gtceu:orbital_forge/virtue_pearl_replication' })
   event.remove({ id: 'ae2:network/cables/smart_fluix' })
   event.remove({ output: 'gtceu:firebrick' })
   event.remove({ output: 'gtceu:flint_knife' })
@@ -70,7 +74,13 @@ ServerEvents.recipes(event => {
 
   event.replaceOutput({ id: 'gtceu:shaped/extreme_combustion_engine' }, 'gtceu:extreme_combustion_engine', 'gtceu:extreme_combustion_engine_cc')
   event.replaceOutput({ id: 'gtceu:shaped/large_combustion_engine' }, 'gtceu:large_combustion_engine', 'gtceu:large_combustion_engine_cc')
+  event.replaceOutput({ id: 'gtceu:shaped/power_substation' }, 'gtceu:power_substation', 'cosmiccore:dimensional_energy_capacitor')
   event.replaceOutput({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_uvarovite' }, 'gtceu:chromium_dust', 'gtceu:chromite_dust')
+
+  event.shapeless('cosmiccore:dimensional_energy_capacitor', [
+    'gtceu:power_substation'
+  ])
+
 
   event.replaceInput(
     { id: 'gtceu:shaped/bronze_bricks_hull' },
@@ -153,7 +163,11 @@ ServerEvents.recipes(event => {
     'gtceu:rtm_alloy_quadruple_wire',
     'cosmiccore:prismatic_tungstensteel_quadruple_wire'
   )
-
+  event.recipes.gtceu.assembler('local_power_cap')
+    .itemInputs(['gtceu:palladium_substation', '2x gtceu:mpic_chip', '#gtceu:circuits/luv', '2x gtceu:lapotron_crystal'])
+    .itemOutputs('cosmiccore:capacitor_array')
+    .duration(220)
+    .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.chemical_reactor('copper_oxidize_block')
     .itemInputs('minecraft:copper_block')
     .inputFluids('gtceu:oxygen 1000')
@@ -563,7 +577,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:alloy_blast_smelter/indium_tin_barium_titanium_cuprate' })
   event.remove({ id: 'gtceu:alloy_blast_smelter/indium_tin_barium_titanium_cuprate_gas' })
   event.remove({ id: 'gtceu:electric_blast_furnace/blast_indium_tin_barium_titanium_cuprate' })
-  event.remove({ id: 'gtceu:electric_blast_furnace/blast_indium_tin_barium_titanium_cuprate_gas' })
+  event.remove({ id: 'gtceu:orbital_forge/blast_indium_tin_barium_titanium_cuprate' })
+  event.remove({ id: 'gtceu:orbital_forge/blast_indium_tin_barium_titanium_cuprate_gas' })
 
   event.recipes.gtceu.electric_blast_furnace('indium_tin_barium_titanium_cuprate_ingot')
     .itemInputs('gtceu:indium_tin_barium_titanium_cuprate_dust')
@@ -1079,6 +1094,18 @@ ServerEvents.recipes(event => {
     C: 'gtceu:iv_machine_casing',
     S: 'cosmiccore:prismatic_tungstensteel_spring'
   })
+
+  event.recipes.gtceu.assembler('frontiers:assembler_casing_luv')
+    .itemInputs(['gtceu:iridium_frame', '8x gtceu:rhodium_plated_palladium_plate', '4x cosmiccore:double_prismatic_tungstensteel_plate', '8x gtceu:osmiridium_screw'])
+    .itemOutputs('gtceu:luv_machine_casing')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.assembler('frontiers:assembler_casing_zpm')
+    .itemInputs(['cosmiccore:trinavine_frame', '8x cosmiccore:naquadric_superalloy_plate', '4x cosmiccore:double_neutronite_plate', '8x cosmiccore:trinavine_screw'])
+    .itemOutputs('gtceu:zpm_machine_casing')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+
   event.recipes.gtceu.assembler('gtceu:assembler_hull_iv')
     .itemInputs(['2x gtceu:tungsten_steel_single_cable', 'gtceu:iv_machine_casing', '2x kubejs:resplendent_sylvan_nanolattice'])
     .inputFluids('gtceu:polytetrafluoroethylene 576')
@@ -1191,6 +1218,7 @@ ServerEvents.recipes(event => {
 })
 
 ServerEvents.tags('block', event => {
+  console.log('[21] - [3] - TAG-WATCHER')
   event.remove('aether:aether_portal_blocks', 'minecraft:glowstone'),
     event.add('aether:aether_portal_blocks', 'gtceu:frostproof_machine_casing')
   event.add('ae2:blacklisted/spatial', 'minecraft:netherite_block')
@@ -1314,6 +1342,7 @@ ServerEvents.recipes(event => {
     .duration(200)
     .EUt(GTValues.VA[GTValues.LV]);
   event.remove({ id: 'gtceu:electric_blast_furnace/blast_tungsten_steel' })
+  event.remove({ id: 'gtceu:orbital_forge/blast_tungsten_steel' })
   event.recipes.gtceu.electric_blast_furnace('tungstensteel_poor')
     .itemInputs('gtceu:tungsten_steel_dust')
     .itemOutputs('gtceu:hot_tungsten_steel_ingot')
@@ -1322,6 +1351,7 @@ ServerEvents.recipes(event => {
     .circuit(1)
     .EUt(GTValues.VA[GTValues.EV]);
   event.remove({ id: 'gtceu:electric_blast_furnace/blast_tungsten_steel_gas' })
+  event.remove({ id: 'gtceu:orbital_forge/blast_tungsten_steel_gas' })
   event.recipes.gtceu.electric_blast_furnace('tungstensteel_good')
     .itemInputs('gtceu:tungsten_steel_dust')
     .inputFluids('gtceu:helium 100')

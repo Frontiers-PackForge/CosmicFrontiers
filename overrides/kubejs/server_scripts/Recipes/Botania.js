@@ -1,9 +1,3 @@
-//Have to remove the wood tag from livingwood if i want to add specific gt recipes :(
-ServerEvents.tags('item', event => {
-    //event.remove('minecraft:logs', 'botania:livingwood_log')
-    //event.remove('minecraft:planks', 'botania:livingwood_planks')          
-})
-
 //Adding recipes for registered materials
 ServerEvents.recipes(event => {
     //Livingrock

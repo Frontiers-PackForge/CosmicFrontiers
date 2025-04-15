@@ -9,6 +9,7 @@ let yeet = (itemName) => {
     event.remove({ output: itemName })
   })
   ServerEvents.tags('item', event => {
+    console.log('[3] - [1] - TAG-WATCHER')
     event.add('c:hidden_from_recipe_viewers', itemName)
     event.add('forge:viewers/hidden_from_recipe', itemName)
   })
@@ -18,6 +19,7 @@ let yeet = (itemName) => {
 let DESTROY = ['mae2:pattern_multi_p2p_tunnel', 'mae2:redstone_multi_p2p_tunnel', 'mae2:fe_multi_p2p_tunnel', 'mae2:fluid_multi_p2p_tunnel', 'mae2:item_multi_p2p_tunnel', 'mae2:eu_p2p_tunnel', 'mae2:eu_multi_p2p_tunnel']
 
 ServerEvents.tags('item', event => {
+  console.log('[3] - [2] - TAG-WATCHER')
   event.add('forge:viewers/hidden_from_recipe', DESTROY)
   event.add('c:hidden_from_recipe_viewers', DESTROY)
 })
@@ -123,6 +125,7 @@ ServerEvents.recipes(event => {
 
 
 ServerEvents.tags('item', event => {
+  console.log('[3] - [3] - TAG-WATCHER')
   event.add('forge:viewers/hidden_from_recipe', denseCoverHidding)
   event.add('c:hidden_from_recipe_viewers', denseCoverHidding)
 

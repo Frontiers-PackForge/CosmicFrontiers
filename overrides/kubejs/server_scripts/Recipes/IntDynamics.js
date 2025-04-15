@@ -1,4 +1,5 @@
 ServerEvents.tags('block', event => {
+  console.log('[11] - [1] - TAG-WATCHER')
   event.add('cosmicfrontiers:menril_ultimine_group', 'integrateddynamics:menril_log_filled')
   event.add('cosmicfrontiers:menril_ultimine_group', 'integrateddynamics:menril_log')
 })

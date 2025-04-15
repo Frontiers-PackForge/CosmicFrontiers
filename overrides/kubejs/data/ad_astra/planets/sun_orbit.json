@@ -1,7 +1,6 @@
 {
-    "dimension": "frontiers:sun",
+    "dimension": "frontiers:sun_orbit",
     "gravity": 20,
-    "orbit": "frontiers:sun_orbit",
     "oxygen": false,
     "solar_power": 9999,
     "solar_system": "ad_astra:solar_system",

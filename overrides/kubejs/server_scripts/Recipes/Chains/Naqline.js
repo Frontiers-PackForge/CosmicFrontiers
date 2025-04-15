@@ -4,37 +4,23 @@ let yeet = (itemName) => {
         event.remove({ output: itemName })
     })
     ServerEvents.tags('item', event => {
+        console.log('[19] - [1] - TAG-WATCHER')
         event.add('forge:viewers/hidden_from_recipe', itemName)
         event.add('c:hidden_from_recipe_viewers', itemName)
 
     })
 }
-
-ServerEvents.tags('item', event => {
-})
-
-//   yeet('gtceu:tiny_psi_superconductor_alpha_dust')
-//   yeet('gtceu:small_psi_superconductor_alpha_dust')
-//   yeet('gtceu:psi_superconductor_alpha_dust')
-//   yeet('gtceu:tiny_psi_superconductor_beta_dust')
-//   yeet('gtceu:small_psi_superconductor_beta_dust')
-//   yeet('gtceu:psi_superconductor_beta_dust')
-//   yeet('gtceu:tiny_neodymium_praseodymium_dust')
-//   yeet('gtceu:small_neodymium_praseodymium_dust')
-//   yeet('gtceu:neodymium_praseodymium_dust')
-//   yeet('gtceu:tiny_magnetic_neodymium_praseodymium_dust')
-//   yeet('gtceu:small_magnetic_neodymium_praseodymium_dust')
-//   yeet('gtceu:magnetic_neodymium_praseodymium_dust')
-
 ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadah' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadah_gas' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_enriched_naquadah' })
     event.remove({ id: 'gtceu:electric_blast_furnace/enriched_naquadah_sulfate_separation' })
+    event.remove({ id: 'gtceu:orbital_forge/enriched_naquadah_sulfate_separation' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_enriched_naquadah_gas' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadria' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadria_gas' })
     event.remove({ id: 'gtceu:electric_blast_furnace/naquadria_sulfate_separation' })
+    
     event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_naquadah_ingot' })
     event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_enriched_naquadah_ingot' })
     event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_naquadah_ingot' })

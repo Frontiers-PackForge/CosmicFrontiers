@@ -1,5 +1,6 @@
 // Stonewall (throw bricks)
 ServerEvents.tags('item', event => {
+    console.log('[17] - [1] - TAG-WATCHER')
     event.add('supplementaries:throwable_bricks', 'gtceu:coke_oven_brick')
     event.add('supplementaries:throwable_bricks', 'gtceu:firebrick')
 })

@@ -25,6 +25,7 @@ event.shaped('sophisticatedstorage:controller', [
 
 
 ServerEvents.tags('item', event => {
+  console.log('[6] - [1] - TAG-WATCHER')
   event.add('gtceu:circuits/zpm', 'cosmiccore:echo_processor')
   event.add('gtceu:circuits/uv', ['cosmiccore:echo_processor_assembly', 'cosmiccore:optical_processor'])
   event.add('gtceu:circuits/uhv', ['cosmiccore:echo_processor_supercomputer', 'cosmiccore:optical_processor_assembly', 'cosmiccore:cosmic_processor'])

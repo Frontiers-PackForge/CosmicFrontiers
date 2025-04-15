@@ -3,6 +3,7 @@ let yeet = (itemName) => {
       event.remove({ output: itemName })
     })
   ServerEvents.tags('item', event => {
+    console.log('[10] - [1] - TAG-WATCHER')
       event.add('c:hidden_from_recipe_viewers', itemName)
       event.remove('forge:tools/hammers', itemName)
   })

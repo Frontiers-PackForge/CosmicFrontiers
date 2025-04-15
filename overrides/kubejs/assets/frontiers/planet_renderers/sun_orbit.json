@@ -2,7 +2,7 @@
     "custom_clouds": true,
     "custom_sky": true,
     "custom_weather": false,
-    "dimension": "frontiers:sun",
+    "dimension": "frontiers:sun_orbit",
     "has_fog": false,
     "has_thick_fog": false,
     "render_in_rain": true,
@@ -22,7 +22,7 @@
           0.0
         ],
         "movement_type": "STATIC",
-        "scale": 2500.0,
+        "scale": 240.0,
         "texture": "ad_astra:textures/environment/sun.png"
       }
     ],

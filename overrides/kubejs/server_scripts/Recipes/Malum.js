@@ -2,12 +2,14 @@ console.log('[Malum.js loading]')
 let massHideMalum = ['malum:belt_of_the_prospector', 'malum:brilliant_stone', 'malum:natural_quartz_ore', 'malum:natural_quartz', 'malum:cthonic_gold_ore', 'malum:deepslate_soulstone_ore', 'malum:soulstone_ore', 'malum:brilliant_deepslate', 'malum:deepslate_quartz_ore', 'malum:blazing_quartz_ore']
 
 ServerEvents.tags('item', event => {
+  console.log('[14] - [1] - TAG-WATCHER')
   event.add('c:hidden_from_recipe_viewers', massHideMalum)
   event.remove('forge:gems/quartz', 'malum:natural_quartz_ore')
   event.remove('forge:gems/quartz', 'malum:deepslate_quartz_ore')
 })
 
 ServerEvents.tags('block', event => {
+  console.log('[14] - [2] - TAG-WATCHER')
   event.add('cosmicfrontiers:soulwood_ultimine_group', 'malum:exposed_soulwood_log')
   event.add('cosmicfrontiers:soulwood_ultimine_group', 'malum:soulwood_log')
   event.add('cosmicfrontiers:soulwood_ultimine_group', 'malum:blighted_soulwood')

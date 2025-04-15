@@ -383,7 +383,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x544940).iconSet(GTMaterialIconSet.DULL)
 
 
-    //TODO - COLORS & TEXTURES! ! ! !
+
+
+
+
+
+
+
     event.create('impure_silt')
         .dust()
         .color(0x544940).iconSet(GTMaterialIconSet.DULL)
@@ -496,20 +502,27 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xa10840).iconSet(GTMaterialIconSet.DULL)
     event.create('ultralight_neutronium')
         .plasma()
+        .liquid()
         .color(0x0d1eb).iconSet(GTMaterialIconSet.DULL)
     event.create('moderate_neutronium')
         .plasma()
         .color(0xe3eeff).iconSet(GTMaterialIconSet.DULL)
     event.create('ultradense_neutronium')
         .plasma()
+        .liquid()
         .color(0xd6d6d6).iconSet(GTMaterialIconSet.DULL)
-    event.create('crystaline_neutronium_gas')
+    event.create('crystaline_neutronium')
         .gas()
-        .temperature(8500)
+        .plasma()
         .color(0xe3eeff).iconSet(GTMaterialIconSet.DULL)
     event.create('sifted_neutronium')
         .plasma()
+        .gas()
         .color(0xd6d6d6).iconSet(GTMaterialIconSet.DULL)
+
+    event.create('neutronium_crystals')
+        .gem()
+        .color(0xd6d6d6).iconSet(GTMaterialIconSet.EMERALD)
 
     GTMaterials.get('neptunium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.get('plutonium').addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
@@ -569,12 +582,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('graphene_oxide')
         .dust()
         .color(0x292929).secondaryColor(0x353836).iconSet(GTMaterialIconSet.DULL)
+    // Reference     ["fluid(com.gregtechceu.gtceu.api.fluids.store.FluidStorageKey,com.gregtechceu.gtceu.api.fluids.FluidBuilder)"]($FluidStorageKeys.MOLTEN, new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(18400))
+
+    event.create('zblan_glass')
+    ["fluid(com.gregtechceu.gtceu.api.fluids.store.FluidStorageKey,com.gregtechceu.gtceu.api.fluids.FluidBuilder)"]($FluidStorageKeys.LIQUID, new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(4500))
+        .color(0xa2edf2)
+
+
 
     event.create('primordial_gas')
         .color(0xdb3dff)
         .gas()
     event.create('primordial_oil')
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .liquid(new GTFluidBuilder().customStill())
     event.create('lofty_primordial_oil')
         .color(0xdb3dff)
         .liquid()
@@ -629,10 +649,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('starry_fuel_mixture')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
-    event.create("triphenyl_phosphine")
-        .liquid()
-        .color(0x825991)
-        .formula('P(C6H5)3')
+    // event.create("triphenyl_phosphine")
+    //     .liquid()
+    //     .color(0x825991)
+    //     .formula('P(C6H5)3')
     event.create('illuminated_heavy_fuel_mixture')
         .liquid()
         .color(0xa8ddff)

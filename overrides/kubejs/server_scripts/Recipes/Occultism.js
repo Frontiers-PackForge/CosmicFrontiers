@@ -5,6 +5,7 @@ let yeet = (itemName) => {
     event.remove({ output: itemName })
   })
   ServerEvents.tags('item', event => {
+    console.log('[15] - [1] - TAG-WATCHER')
     event.add('c:hidden_from_recipe_viewers', itemName)
 
   })
@@ -45,6 +46,7 @@ yeet('occultism:satchel')
 
 
 ServerEvents.tags('item', event => {
+  console.log('[15] - [2] - TAG-WATCHER')
   event.remove('forge:ingots/silver', 'occultism:silver_ingot')
   event.remove('forge:dusts/iron', 'occultism:iron_dust')
   event.remove('forge:dusts/gold', 'occultism:gold_dust')
@@ -317,7 +319,7 @@ ServerEvents.recipes(event => {
         "item": "minecraft:gunpowder"
       },
       {
-        "item": "legendarysurvivaloverhaul:sun_fern_gold_leaf"
+        "item": "minecraft:gold_ingot"
       }
     ],
     "result": {
