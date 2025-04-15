@@ -8,6 +8,7 @@ GTCEuServerEvents.oreVeins(event => {
             .buildLayerPattern(pattern => pattern
                 .layer(l => l.weight(3).mat(GTMaterials.get('naquadric_metallic_powder')).size(2, 4))
                 .layer(l => l.weight(2).mat(GTMaterials.Plutonium239).size(1, 3))
+                .layer(l => l.weight(1).mat(GTMaterials.Beryllium).size(2, 3))
                 .layer(l => l.weight(1).mat(GTMaterials.Uranium238).size(2, 3))
                 .layer(l => l.weight(1).mat(GTMaterials.Uraninite).size(2, 3))
             )
