@@ -64,9 +64,8 @@ ServerEvents.recipes(event => {
         .chancedInput('botania:life_essence', 1575,0)
         .chancedOutput('botania:life_essence',7500,0)
         .blastFurnaceTemp(5400)
-        .dimension('minecraft:the_nether')
-        .duration(1920)
-        .EUt(GTValues.VA[GTValues.LuV]);
+        .duration(925)
+        .EUt(GTValues.VA[GTValues.IV]);
     event.recipes.gtceu.mana_fluidizer('mana_glass_fluidizer')
         .itemInputs('minecraft:glass')
         .inputFluids('gtceu:potent_mana 15')
