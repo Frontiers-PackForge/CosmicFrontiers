@@ -544,6 +544,7 @@
   "block.gtceu.molten_salt_reactor": "Molten Salt Reactor (MSR)",
   "gtceu.spooling_machine": "Spooling Machine",
   "block.gtceu.spooling_machine": "Spooling Machine",
+  "block.cosmiccore.large_spooling_machine": "Large Spooling Machine",
   "gtceu.aio_lithography_processor": "AIO Lithography",
   "block.gtceu.aio_lithography_processor": "AIO Lithography",
   "gtceu.nether_catalyzer": "Nether Catalyzer",
