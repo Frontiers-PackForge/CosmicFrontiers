@@ -321,6 +321,23 @@ ServerEvents.recipes(event => {
     R: 'gtceu:steel_rod',
     P: 'gtceu:steel_plate'
   })
+  //Ruridit Casings
+  event.recipes.gtceu.assembler('gtceu:ruridit_casing_assem')
+    .itemInputs(['gtceu:ruridit_frame', '6x gtceu:ruridit_plate'])
+    .itemOutputs('cosmiccore:wear_resistant_ruridit_casing')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('cosmiccore:wear_resistant_ruridit_casing', [
+    'AHA',
+    'AFA',
+    'AWA'
+  ], {
+    A: 'gtceu:ruridit_plate',
+    F: 'gtceu:ruridit_frame',
+    W: '#forge:tools/wrenches',
+    H: '#forge:tools/hammers'
+  })
   //Cyclozine Casings
   event.recipes.gtceu.assembler('gtceu:cyclozine_casing_assem')
     .itemInputs(['gtceu:rhenium_frame', '6x gtceu:synthetic_pthanterum_plate'])
@@ -637,6 +654,17 @@ ServerEvents.recipes(event => {
     G: 'gtceu:iv_conveyor_module',
     C: 'gtceu:iv_aio_lithography_processor',
     B: 'gtceu:plascrete'
+  })
+  event.shaped('cosmiccore:large_spooling_machine', [
+    'PRP',
+    'GCG',
+    'BBB'
+  ], {
+    P: '#gtceu:circuits/iv',
+    R: 'gtceu:iv_voltage_coil',
+    G: 'gtceu:iv_conveyor_module',
+    C: 'gtceu:iv_spooling_machine',
+    B: 'cosmiccore:wear_resistant_ruridit_casing'
   })
   event.shaped('gtceu:steam_mixing_vessel', [
     'PRP',
