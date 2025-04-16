@@ -258,15 +258,62 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:circuit_assembler/quantum_mainframe_zpm_soldering_alloy' })
     event.remove({ id: 'gtceu:circuit_assembler/quantum_mainframe_zpm_asmd_soldering_alloy' })
     event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_frontiers')
-        .itemInputs(['2x cosmiccore:prismatic_tungstensteel_frame', '6x gtceu:quantum_processor_computer', '64x gtceu:smd_capacitor', '32x gtceu:smd_inductor', '12x cosmiccore:aram_chip', '32x gtceu:hssg_single_wire'])
-        .inputFluids('gtceu:high_grade_solder 576')
-        .itemOutputs('gtceu:quantum_processor_mainframe')
-        .duration(300)
+    .itemInputs(['2x cosmiccore:prismatic_tungstensteel_frame', '6x gtceu:quantum_processor_computer', '64x gtceu:smd_capacitor', '32x gtceu:smd_inductor', '12x cosmiccore:aram_chip', '32x gtceu:hssg_single_wire'])
+    .inputFluids('gtceu:high_grade_solder 576')
+    .itemOutputs('gtceu:quantum_processor_mainframe')
+    .duration(300)
+    .cleanroom(CleanroomType.CLEANROOM)
+    .EUt(GTValues.VA[GTValues.IV]);
+    //CRYSTAL BOARD
+    event.remove({ id: 'gtceu:chemical_reactor/multilayer_fiber_board' })
+    event.remove({ id: 'gtceu:large_chemical_reactor/multilayer_fiber_board' })
+    event.remove({ id: 'gtceu:industrial_chemvat/multilayer_fiber_board' })
+    event.recipes.gtceu.chemical_reactor('fiber_reinforced_circuit_board_frontiers')
+        .itemInputs(['2x gtceu:fiber_reinforced_circuit_board', '4x gtceu:naquadah_alloy_foil'])
+        .inputFluids('gtceu:sulfuric_acid 500')
+        .itemOutputs('gtceu:multilayer_fiber_reinforced_circuit_board')
+        .duration(500)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.IV]);
-    //CRYSTAL
+    //PROCESSOR
+    event.remove({ id: 'gtceu:circuit_assembler/crystal_processor_iv_soc_soldering_alloy' })
+    event.remove({ id: 'gtceu:circuit_assembler/crystal_processor_iv_soldering_alloy' })
+    event.remove({ id: 'gtceu:circuit_assembler/crystal_processor_iv' })
+    event.remove({ id: 'gtceu:circuit_assembler/crystal_processor_iv_soc' })
+    event.recipes.gtceu.circuit_assembler('crystal_processor_iv_frontiers')
+        .itemInputs(['gtceu:multilayer_fiber_reinforced_printed_circuit_board', 'gtceu:crystal_cpu', '4x gtceu:qbit_cpu_chip', '8x gtceu:advanced_smd_capacitor', '8x gtceu:advanced_smd_transistor', '8x gtceu:fine_californium_wire'])
+        .inputFluids('gtceu:high_grade_solder 288')
+        .itemOutputs('2x gtceu:crystal_processor')
+        .duration(300)
+        // .cleanroom(CleanroomType.CLEANROOM) Basically can't use this until fixed see https://discord.com/channels/1277366317648707666/1277366318659665972/1361760995835641877
+        .dimension('ad_astra:earth_orbit')
+        .EUt(GTValues.VA[GTValues.LuV]);
+    //ASSEMBLY
+    event.remove({ id: 'gtceu:circuit_assembler/crystal_assembly_luv' })
+    event.remove({ id: 'gtceu:circuit_assembler/crystal_assembly_luv_soldering_alloy' })
+    event.recipes.gtceu.circuit_assembler('crystal_assem_luv_frontiers')
+        .itemInputs(['gtceu:multilayer_fiber_reinforced_printed_circuit_board', '2x gtceu:crystal_processor', '8x gtceu:advanced_smd_inductor', '16x gtceu:advanced_smd_capacitor', '12x cosmiccore:aram_chip', '16x gtceu:fine_californium_wire'])
+        .inputFluids('gtceu:high_grade_solder 576')
+        .itemOutputs('gtceu:crystal_processor_assembly')
+        .duration(450)
+        // .cleanroom(CleanroomType.CLEANROOM) Basically can't use this until fixed see https://discord.com/channels/1277366317648707666/1277366318659665972/1361760995835641877
+        .dimension('ad_astra:earth_orbit')
+        .EUt(GTValues.VA[GTValues.LuV]);
 
-    event.remove({id: 'gtceu:assembly_line/crystal_mainframe_uv'})
+    //SUPERCOMPUTER
+    event.remove({ id: 'gtceu:circuit_assembler/crystal_computer_zpm_soldering_alloy' })
+    event.remove({ id: 'gtceu:circuit_assembler/crystal_computer_zpm' })
+    event.recipes.gtceu.circuit_assembler('crystal_supercomputer_zpm_frontiers')
+        .itemInputs(['gtceu:multilayer_fiber_reinforced_printed_circuit_board', '4x gtceu:crystal_processor_assembly', '16x cosmiccore:aram_chip', '64x gtceu:nand_memory_chip', '64x gtceu:nor_memory_chip', '64x gtceu:fine_berkelium_wire'])
+        .inputFluids('gtceu:high_grade_solder 1152')
+        .itemOutputs('gtceu:crystal_processor_computer')
+        .duration(300)
+        // .cleanroom(CleanroomType.CLEANROOM) Basically can't use this until fixed see https://discord.com/channels/1277366317648707666/1277366318659665972/1361760995835641877
+        .dimension('ad_astra:earth_orbit')
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+    //MAINFRAME
+    event.remove({ id: 'gtceu:assembly_line/crystal_mainframe_uv' })
     event.recipes.gtceu.assembly_line('crystal_mainframe_new')
         .itemInputs(['2x cosmiccore:trinavine_frame', '6x gtceu:crystal_processor_computer', '16x cosmiccore:aram_chip', '4x gtceu:hpic_chip', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '8x cosmiccore:crystalline_inductor', '16x cosmiccore:crystalline_capacitor', '8x cosmiccore:crystalline_diode'])
         .itemOutputs('gtceu:crystal_processor_mainframe')
@@ -279,7 +326,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.LuV]))
         .duration(1750)
         .dimension('ad_astra:earth_orbit')
-        .EUt(GTValues.VA[GTValues.LuV])
+        .EUt(GTValues.VA[GTValues.ZPM])
 
 
 
