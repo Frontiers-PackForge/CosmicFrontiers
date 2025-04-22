@@ -575,6 +575,13 @@
   "block.gtceu.large_lithographic_processor": "§3Large Lithographic Processor",
   "gtceu.industrial_primitive_blast_furnace": "Industrial Primitive Blast Furnace",
 
+  "material.gtceu.argyodite": "Argyodite",
+  "material.gtceu.calaverite": "Calaverite",
+  "material.gtceu.sylvanite": "Sylvanite",
+  "material.gtceu.bismuthinite": "Bismuthinite",
+  "material.gtceu.hadalite": "Hadalite",
+  "material.gtceu.naumannite": "Naumannite",
+
   "material.gtceu.cyanex_272": "Cyanex-272",
   "material.gtceu.tert_butanol": "Tert-butanol",
   "material.gtceu.isobutene": "Isobutene",
