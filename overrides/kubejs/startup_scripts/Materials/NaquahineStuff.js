@@ -70,4 +70,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('naquahine_superfuel_mk_two')
         .liquid(new GTFluidBuilder().customStill())
 
+
+    event.create('extracted_tau')
+        .color(0xbf3d55)
+        .liquid()
+    event.create('tau_oil')
+        .color(0xba0b2b)
+        .liquid()
+    event.create('tau')
+        .color(0xf23a5c)
+        .plasma()
 }) 

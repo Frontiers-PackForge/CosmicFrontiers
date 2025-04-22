@@ -219,7 +219,7 @@ event.recipes.gtceu.fake_meteor_ritual('naq_luv_meteor')
 .itemOutputsRanged('minecraft:blackstone', 500, 1500)
 .itemOutputsRanged('gtceu:raw_naquadric_metallic_powder', 1000, 2500)
 .itemOutputsRanged('gtceu:raw_naquadah', 1000, 2500)
-.soulInput(45000000);
+.soulInput(25000000);
 event.custom({
   "type": "bloodmagic:meteor",
   "explosion": 30.0,
@@ -249,7 +249,7 @@ event.custom({
       ]
     }
   ],
-  "syphon": 45000000
+  "syphon": 25000000
 })
 //Tin
 event.recipes.gtceu.fake_meteor_ritual('tin_meteor')

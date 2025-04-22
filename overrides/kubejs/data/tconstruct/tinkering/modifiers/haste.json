@@ -1,0 +1,27 @@
+{
+  "level_display": {
+    "type": "tconstruct:unique",
+    "first_unique": false,
+    "unique_until": 100
+  },
+  "modules": [
+    {
+      "type": "tconstruct:stat_boost",
+      "each_level": 4.0,
+      "operation": "add",
+      "stat": "tconstruct:mining_speed"
+    },
+    {
+      "type": "tconstruct:armor_stat",
+      "allow_broken": false,
+      "each_level": 0.1,
+      "key": "tconstruct:mining_speed",
+      "tool": {
+        "type": "mantle:tag",
+        "tag": "tconstruct:modifiable/armor"
+      },
+      "tooltip_style": "percent"
+    }
+  ],
+  "tooltip_display": "always"
+}

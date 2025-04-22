@@ -106,6 +106,17 @@ ServerEvents.recipes(event => {
         .duration(120)
         .EUt(GTValues.VA[GTValues.LuV])
 
+    event.recipes.gtceu.mixer('naquahine_superfuel_mk_two')
+        .inputFluids('gtceu:naquahine_superfuel_mk_one 4000')
+        .itemInputs('gtceu:naquadria_dust')
+        .inputFluids('gtceu:tau_plasma 250')
+        .outputFluids('gtceu:naquahine_superfuel_mk_two 4000')
+        .duration(840)
+        .EUt(GTValues.VA[GTValues.ZPM])
+
+
+
+
     event.recipes.gtceu.chemical_dehydrator('rhenium_rich_nqh')
         .inputFluids('gtceu:naquahine 200')
         .inputFluids('gtceu:pyroflux 2000')

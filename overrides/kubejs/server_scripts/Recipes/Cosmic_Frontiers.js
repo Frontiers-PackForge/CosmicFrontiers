@@ -54,6 +54,7 @@ yeet('vintagedelight:ghost_charcoal')
 ServerEvents.recipes(event => {
 
        //MISC REMOVALS
+       event.remove({ id: 'experienceobelisk:molecular_metamorpher' })
        event.remove({ id: 'gtceu:extractor/extract_luminite_dust' })
        event.remove({ id: 'gtceu:shaped_fluid_container/casing_primitive_bricks' })
        event.remove({ id: 'gtceu:extractor/extract_luminite_ingot' })
