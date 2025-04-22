@@ -156,6 +156,8 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'ae2:quartz_glass' })
   event.remove({ output: 'ae2:interface' })
   event.remove({ id: 'ae2:network/parts/panels_semi_dark_monitor' })
+  event.remove({ id: 'ae2:network/cables/dense_smart_from_smart' })
+  event.remove({ id: 'ae2:network/cables/dense_smart_fluix' })
   event.remove({ id: 'ae2:network/parts/storage_bus' })
   event.remove({ output: 'ae2:tiny_tnt' })
   event.remove({ output: 'expatternprovider:silicon_block' })
