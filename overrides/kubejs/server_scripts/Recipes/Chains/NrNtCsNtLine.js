@@ -141,7 +141,7 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:fermium 144') //1
     .outputFluids('gtceu:moderate_neutronium_plasma 216') //1.5
     .outputFluids('gtceu:ultralight_neutronium_plasma 72') //0.5
-    .fusionStartEU(160000000)
+    .fusionStartEU(120000000)
     .duration(723)
     .EUt(GTValues.VA[GTValues.LuV]); 
     
@@ -152,7 +152,6 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:sifted_neutronium_plasma 468') //3.25
         .outputFluids('gtceu:ultradense_neutronium_plasma') //4.5 Means this is lossy by 0.25 of an ingot in most cases
         .chancedOutput('gtceu:small_neutronium_dust', 2500, 0)
-        .dimension('ad_astra:mercury_orbit')
         .duration(200)
         .EUt(GTValues.VA[GTValues.UV]);
 
@@ -164,7 +163,6 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:sifted_neutronium_plasma 144') //1
         .outputFluids('gtceu:ultralight_neutronium_plasma 288') //2
         .itemOutputs('kubejs:neutronium_lattice')
-        .dimension('ad_astra:mercury')
         .duration(490)
         .EUt(GTValues.VA[GTValues.UV]);
 
