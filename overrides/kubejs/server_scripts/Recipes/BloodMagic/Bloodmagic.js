@@ -251,7 +251,7 @@ ServerEvents.recipes(event => {
     .itemInputs(['16x gtceu:carbon_dust', '4x gtceu:polydimethylsiloxane_dust', 'gtceu:virtue_meld_dust'])
     .inputFluids('cosmiccore:prisma 2000', 'cosmiccore:triphenylphosphine 2000', 'gtceu:distilled_water 2000', 'gtceu:source_oils 2000')
     .outputFluids('gtceu:grading_fluid_1 1000')
-    .duration(3600)
+    .duration(2000)
     .EUt(GTValues.VA[GTValues.IV]);
   event.recipes.gtceu.mana_engraver('frontiers:grading_fluid_2')
     .notConsumable('bloodmagic:apprenticebloodorb')
@@ -328,7 +328,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.hellfire_foundry('fire_chalk')
     .itemInputs(['occultism:chalk_white_impure', 'ars_nouveau:fire_essence', 'malum:sacred_spirit', 'botania:rune_fire', 'bloodmagic:reagentlava'])
-    .inputFluids('gtceu:grading_fluid_2 1000')
+    .inputFluids('gtceu:grading_fluid_3 1000')
     .itemOutputs('bloodmagic:firescribetool')
     .soulInput(20000)
     .duration(460)
@@ -336,7 +336,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.hellfire_foundry('water_chalk')
     .itemInputs(['occultism:chalk_white_impure', 'ars_nouveau:water_essence', 'malum:aqueous_spirit', 'botania:rune_water', 'bloodmagic:reagentwater'])
-    .inputFluids('gtceu:grading_fluid_2 1000')
+    .inputFluids('gtceu:grading_fluid_3 1000')
     .itemOutputs('bloodmagic:waterscribetool')
     .soulInput(20000)
     .duration(460)
@@ -344,14 +344,14 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.hellfire_foundry('air_chalk')
     .itemInputs(['occultism:chalk_white_impure', 'ars_nouveau:air_essence', 'malum:aerial_spirit', 'botania:rune_air', 'bloodmagic:reagentair'])
-    .inputFluids('gtceu:grading_fluid_2 1000')
+    .inputFluids('gtceu:grading_fluid_3 1000')
     .itemOutputs('bloodmagic:airscribetool')
     .soulInput(20000)
     .duration(460)
     .EUt(GTValues.VA[GTValues.LuV]);
   event.recipes.gtceu.hellfire_foundry('dusk_chalk')
     .itemInputs(['occultism:chalk_purple_impure', 'gtceu:quantum_star', 'ad_astra:moon_globe', 'gtceu:trinium_block'])
-    .inputFluids('gtceu:grading_fluid_3 1000')
+    .inputFluids('gtceu:grading_fluid_4 1000')
     .itemOutputs('bloodmagic:duskscribetool')
     .soulInput(20000)
     .duration(460)
