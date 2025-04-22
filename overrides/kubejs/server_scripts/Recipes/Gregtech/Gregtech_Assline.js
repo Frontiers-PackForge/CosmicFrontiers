@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LuV])
   //Reinforced Trinavine Coil
   event.recipes.gtceu.assembly_line('frontiers:trinavine_coil')
-    .itemInputs(['4x cosmiccore:trinavine_frame', '8x gtceu:zpm_voltage_coil', '16x cosmiccore:trinavine_quadruple_wire', '32x cosmiccore:neutronite_screw', '64x cosmiccore:neutronite_foil', '32x cosmiccore:neutronite_foil', '64x gtceu:trinanylon_6_6_foil', '32x cosmiccore:trinavine_foil'])
+    .itemInputs(['4x cosmiccore:trinavine_frame', '8x gtceu:zpm_voltage_coil', '16x cosmiccore:trinavine_quadruple_wire', '32x cosmiccore:neutronite_screw', '64x cosmiccore:neutronite_foil', '32x cosmiccore:neutronite_foil', '64x gtceu:nylon_6_6_foil', '32x cosmiccore:trinavine_foil'])
     .itemOutputs('cosmiccore:reinforced_trinavine_coil_block')
     .inputFluids(
       Fluid.of('gtceu:high_grade_solder', 1152),
@@ -219,7 +219,7 @@ ServerEvents.recipes(event => {
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:tungsten_steel_fluid_cell')).EUt(GTValues.VA[GTValues.LuV]).duration(1000))
     .duration(600)
     .EUt(GTValues.VA[GTValues.LuV])
-    
+
   event.recipes.gtceu.assembly_line('frontiers:t3_rocket_thruster')
     .itemInputs(['gtceu:luv_machine_hull', '4x gtceu:luv_electric_pump', '4x cosmiccore:dense_trinavine_plate', '4x cosmiccore:dense_neutronite_plate', '2x cosmiccore:neutronite_rotor'])
     .itemOutputs('kubejs:trinavine_engine')
@@ -471,20 +471,134 @@ ServerEvents.recipes(event => {
     .duration(940)
     .EUt(GTValues.VA[GTValues.ZPM])
 
+  //Polymerizer
+  event.recipes.gtceu.assembly_line('frontiers:polymerizer_assline')
+    .itemInputs(['2x cosmiccore:high_tolerance_rhenium_casing', '4x gtceu:quantum_processor_mainframe', '16x gtceu:double_rhenium_plate', 'gtceu:zpm_fluid_regulator', 'gtceu:zpm_robot_arm'])
+    .itemOutputs('cosmiccore:polymerizer')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 1296'
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('32x gtceu:double_4_4_oxydianiline_pyromellitimide_plate').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LuV])
+
+  event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer_proxy' })
+  event.recipes.gtceu.assembly_line('frontiers:pattern_proxy')
+    .itemInputs(['gtceu:luv_machine_hull', 'cosmiccore:luv_radio_module', 'cosmiccore:omnia_circuit_zpm', '64x cosmiccore:fine_trinavine_wire', '64x cosmiccore:fine_neutronite_wire'])
+    .itemOutputs('gtceu:me_pattern_buffer_proxy')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 1296',
+      'gtceu:high_grade_solder 1152',
+      'cosmiccore:triphenylphosphine 2304',
+    )
+    .stationResearch(b => b
+      .researchStack('gtceu:me_pattern_buffer')
+      .CWUt(16)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(1750)
+    .EUt(GTValues.VA[GTValues.ZPM])
+
+
+  event.recipes.gtceu.assembly_line('frontiers:orbital_tempering_forge')
+    .itemInputs(['32x cosmiccore:trinavine_frame', '8x cosmiccore:multi_purpose_interstellar_grade_casing', '8x cosmiccore:cyclozine_chemically_repelling_casing', 'cosmiccore:reinforced_trinavine_coil_block', '8x gtceu:zpm_field_generator', '8x gtceu:zpm_voltage_coil', '4x gtceu:circuits/zpm'])
+    .itemOutputs('cosmiccore:orbital_tempering_forge')
+    .inputFluids(
+      'gtceu:nylon_6_6 1296',
+      'gtceu:high_grade_solder 2304',
+      'cosmiccore:triphenylphosphine 1500',
+    )
+    .stationResearch(b => b
+      .researchStack('gtceu:electric_blast_furnace')
+      .CWUt(16)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(1750)
+    .EUt(GTValues.VA[GTValues.ZPM])
+
+  event.recipes.gtceu.assembly_line('frontiers:ultra_powered_casing')
+    .itemInputs(['cosmiccore:trinavine_frame', '32x gtceu:double_black_steel_plate', '32x gtceu:double_black_steel_plate', '32x gtceu:double_black_steel_plate', '32x gtceu:double_black_steel_plate', '#gtceu:circuits/uv', '64x gtceu:fine_ruridit_wire', '64x gtceu:fine_ruridit_wire', '64x gtceu:fine_galvanized_ethersteel_wire', '64x gtceu:fine_galvanized_ethersteel_wire', '8x gtceu:tritanium_double_wire'])
+    .itemOutputs('cosmiccore:ultra_powered_casing')
+    .inputFluids(
+      'gtceu:trinanylon_6_6 1296',
+      'gtceu:high_grade_solder 1152',
+      'cosmiccore:triphenylphosphine 2304',
+    )
+    .stationResearch(b => b
+      .researchStack('gtceu:high_power_casing')
+      .CWUt(16)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(1750)
+    .EUt(GTValues.VA[GTValues.ZPM])
+
+  event.recipes.gtceu.assembly_line('frontiers:neutron_filter')
+    .itemInputs(['gtceu:item_smart_filter', '8x gtceu:graphene_plate', 'gtceu:lapotron_crystal', 'gtceu:luv_voltage_coil', 'gtceu:iv_voltage_coil', 'gtceu:ev_voltage_coil', 'gtceu:hv_voltage_coil'])
+    .itemOutputs('kubejs:heavy_neutron_filter')
+    .inputFluids(
+      'gtceu:trinanylon_6_6 1296',
+      'gtceu:high_grade_solder 1152',
+      'cosmiccore:triphenylphosphine 2304',
+    )
+    .stationResearch(b => b
+      .researchStack('gtceu:item_smart_filter')
+      .CWUt(16)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(1750)
+    .EUt(GTValues.VA[GTValues.ZPM])
+
+  event.recipes.gtceu.assembly_line('frontiers:neutronium_casing')
+    .itemInputs(['gtceu:neutronium_frame', '12x gtceu:long_tritanium_rod', '8x gtceu:double_neutronium_plate', '8x gtceu:neutronium_rod', '8x gtceu:neutronium_bolt'])
+    .itemOutputs('cosmiccore:tritanium_lined_heavy_neutronium_casing')
+    .inputFluids(
+      'gtceu:high_grade_solder 9126',
+      'gtceu:trinium 288',
+    )
+    .stationResearch(b => b
+      .researchStack('gtceu:neutronium_frame')
+      .CWUt(16)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(1750)
+    .EUt(GTValues.VA[GTValues.ZPM])
+  event.recipes.gtceu.assembly_line('frontiers:zpm_combustion_engine')
+    .itemInputs(['gtceu:zpm_machine_hull', '2x gtceu:circuits/zpm', '4x gtceu:zpm_electric_piston', '4x gtceu:zpm_electric_motor', '8x cosmiccore:neutronite_gear', 'gtceu:vanadium_gallium_quadruple_cable', 'gtceu:zpm_machine_hull'])
+    .itemOutputs('gtceu:ultimate_combustion_engine_cc')
+    .inputFluids(
+      'gtceu:trinanylon_6_6 1296',
+      'gtceu:high_grade_solder 4608',
+      'cosmiccore:triphenylphosphine 2304',
+    )
+    .stationResearch(b => b
+      .researchStack('gtceu:ludicrous_combustion_engine_cc')
+      .CWUt(16)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(1750)
+    .EUt(GTValues.VA[GTValues.ZPM])
+  event.recipes.gtceu.assembly_line('frontiers:neutronium_magnet')
+    .itemInputs(['cosmiccore:fusion_grade_magnet', '32x gtceu:fine_trinanylon_6_6_wire', '4x gtceu:zpm_field_generator', '4x gtceu:zpm_voltage_coil', '4x gtceu:double_neutronium_plate', '#gtceu:circuit/zpm'])
+    .itemOutputs('cosmiccore:stellar_neutronium_grade_magnet')
+    .inputFluids(
+      'gtceu:trinanylon_6_6 1296',
+      'gtceu:high_grade_solder 4608',
+      'cosmiccore:triphenylphosphine 2304',
+    )
+    .stationResearch(b => b
+      .researchStack('cosmiccore:fusion_grade_magnet')
+      .CWUt(16)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(1750)
+    .EUt(GTValues.VA[GTValues.ZPM])
   //Interstellar Hulls
 
-  // event.recipes.gtceu.assembly_line('cosmiccore:vomahine_certified_interstellar_grade_casing')
-  //   .itemInputs(['2x cosmiccore:trinavine_frame', '16x gtceu:double_titanium_plate', '32x gtceu:double_aluminium_plate', '32x gtceu:double_aluminium_plate', '64x gtceu:aluminium_screw', '64x gtceu:aluminium_screw', '64x gtceu:aluminium_rod', '64x gtceu:aluminium_rod', '64x gtceu:aluminium_rod'])
-  //   .itemOutputs('cosmiccore:vomahine_certified_interstellar_grade_casing')
-  //   .inputFluids(
-  //     Fluid.of('gtceu:high_grade_solder', 1152),
-  //   )
-  //   .stationResearch(b => b
-  //     .researchStack('gtceu:fusion_casing')
-  //     .CWUt(32)
-  //     .EUt(GTValues.VA[GTValues.ZPM]))
-  //   .duration(1750)
-  //   .EUt(GTValues.VA[GTValues.ZPM])
+  event.recipes.gtceu.assembly_line('cosmiccore:multi_purpose_interstellar_grade_casing')
+    .itemInputs(['2x cosmiccore:trinavine_frame', '16x gtceu:double_titanium_plate', '32x gtceu:double_aluminium_plate', '32x gtceu:double_aluminium_plate', '64x gtceu:aluminium_screw', '64x gtceu:aluminium_screw', '64x gtceu:aluminium_rod', '64x gtceu:aluminium_rod', '64x gtceu:aluminium_rod'])
+    .itemOutputs('cosmiccore:multi_purpose_interstellar_grade_casing')
+    .inputFluids(
+      Fluid.of('gtceu:high_grade_solder', 1152),
+    )
+    .stationResearch(b => b
+      .researchStack('cosmiccore:cyclozine_chemically_repelling_casing')
+      .CWUt(16)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(1750)
+    .EUt(GTValues.VA[GTValues.ZPM])
 
 
 

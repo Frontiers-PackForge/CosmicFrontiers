@@ -284,7 +284,7 @@ ServerEvents.recipes(event => {
         .itemInputs(['gtceu:multilayer_fiber_reinforced_printed_circuit_board', 'gtceu:crystal_cpu', '4x gtceu:qbit_cpu_chip', '8x gtceu:advanced_smd_capacitor', '8x gtceu:advanced_smd_transistor', '8x gtceu:fine_californium_wire'])
         .inputFluids('gtceu:high_grade_solder 288')
         .itemOutputs('2x gtceu:crystal_processor')
-        .duration(300)
+        .duration(250)
         // .cleanroom(CleanroomType.CLEANROOM) Basically can't use this until fixed see https://discord.com/channels/1277366317648707666/1277366318659665972/1361760995835641877
         .dimension('ad_astra:earth_orbit')
         .EUt(GTValues.VA[GTValues.LuV]);
@@ -295,7 +295,7 @@ ServerEvents.recipes(event => {
         .itemInputs(['gtceu:multilayer_fiber_reinforced_printed_circuit_board', '2x gtceu:crystal_processor', '8x gtceu:advanced_smd_inductor', '16x gtceu:advanced_smd_capacitor', '12x cosmiccore:aram_chip', '16x gtceu:fine_californium_wire'])
         .inputFluids('gtceu:high_grade_solder 576')
         .itemOutputs('gtceu:crystal_processor_assembly')
-        .duration(450)
+        .duration(275)
         // .cleanroom(CleanroomType.CLEANROOM) Basically can't use this until fixed see https://discord.com/channels/1277366317648707666/1277366318659665972/1361760995835641877
         .dimension('ad_astra:earth_orbit')
         .EUt(GTValues.VA[GTValues.LuV]);
@@ -307,7 +307,7 @@ ServerEvents.recipes(event => {
         .itemInputs(['gtceu:multilayer_fiber_reinforced_printed_circuit_board', '4x gtceu:crystal_processor_assembly', '16x cosmiccore:aram_chip', '64x gtceu:nand_memory_chip', '64x gtceu:nor_memory_chip', '64x gtceu:fine_berkelium_wire'])
         .inputFluids('gtceu:high_grade_solder 1152')
         .itemOutputs('gtceu:crystal_processor_computer')
-        .duration(300)
+        .duration(325)
         // .cleanroom(CleanroomType.CLEANROOM) Basically can't use this until fixed see https://discord.com/channels/1277366317648707666/1277366318659665972/1361760995835641877
         .dimension('ad_astra:earth_orbit')
         .EUt(GTValues.VA[GTValues.LuV]);
@@ -322,7 +322,7 @@ ServerEvents.recipes(event => {
         )
         .stationResearch(b => b
             .researchStack('gtceu:crystal_processor_computer')
-            .CWUt(32)
+            .CWUt(16)
             .EUt(GTValues.VA[GTValues.LuV]))
         .duration(1750)
         .dimension('ad_astra:earth_orbit')

@@ -10,7 +10,7 @@ let yeet = (itemName) => {
 
   })
 }
-
+'cosmiccore:wireless_pda'
 ServerEvents.tags('item', event => {
   console.log('[21] - [2] - TAG-WATCHER')
   event.add('forge:lenses/ruby', 'gtceu:redstone_lens')
@@ -18,6 +18,7 @@ ServerEvents.tags('item', event => {
   event.add('c:hidden_from_recipe_viewers', 'gtceu:lp_steam_bender')
   event.add('c:hidden_from_recipe_viewers', 'gtceu:lp_steam_wiremill')
   event.remove('minecraft:planks', 'gtceu:treated_wood_planks')
+  event.add('curios:head', 'cosmiccore:wireless_pda')
 })
 
 yeet('gtceu:tiny_psi_superconductor_alpha_dust')
@@ -424,7 +425,6 @@ ServerEvents.recipes(event => {
     .circuit(6)
     .duration(50)
     .EUt(GTValues.VA[GTValues.LV]);
-
   event.recipes.gtceu.assembler('frontiers:pthanterum_intake')
     .itemInputs(['cosmiccore:gilded_pthanterum_casing', '2x gtceu:synthetic_pthanterum_rotor', '4x gtceu:europium_normal_fluid_pipe'])
     .inputFluids('gtceu:rose_gold 288')
@@ -437,6 +437,46 @@ ServerEvents.recipes(event => {
     .itemOutputs('cosmiccore:machine_casing_gearbox_pthanterum')
     .duration(50)
     .EUt(GTValues.VA[GTValues.LV]);
+
+
+  event.recipes.gtceu.assembler('frontiers:reinforced_naquadria_casing')
+    .itemInputs(['cosmiccore:naquadric_superalloy_frame', '6x gtceu:naquadria_plate', '2x cosmiccore:neutronite_plate'])
+    .inputFluids('gtceu:naquadria 288')
+    .itemOutputs('cosmiccore:reinforced_naquadria_casing')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  event.recipes.gtceu.assembler('frontiers:naqria_intake')
+    .itemInputs(['cosmiccore:reinforced_naquadria_casing', '2x gtceu:naquadah_alloy_rotor', '4x gtceu:duranium_normal_fluid_pipe'])
+    .inputFluids('gtceu:naquadria 288')
+    .itemOutputs('cosmiccore:ultimate_intake')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.assembler('frontiers:naquadria_gearbox')
+    .itemInputs(['4x gtceu:naquadria_plate', '2x gtceu:naquadria_gear', 'cosmiccore:naquadric_superalloy_frame'])
+    .inputFluids('gtceu:naquadria 288')
+    .itemOutputs('cosmiccore:machine_casing_gearbox_naquadria')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  event.recipes.gtceu.laser_engraver('frontiers:neutronium_cooling')
+    .notConsumable('4x gtceu:zpm_emitter')
+    .itemInputs('gtceu:hot_neutronium_ingot')
+    .inputFluids('gtceu:argon_plasma 25')
+    .itemOutputs('gtceu:neutronium_ingot')
+    .outputFluids('gtceu:argon 25')
+    .duration(200)
+    .cleanroom(CleanroomType.CLEANROOM)
+    .EUt(GTValues.VA[GTValues.UV]);
+
+  event.remove({ id: 'gtceu:shaped/mega_vacuum_freezer' })
+  event.recipes.gtceu.assembler('frontiers:blast_chiller_new')
+    .itemInputs(['gtceu:vacuum_freezer', '2x gtceu:duranium_normal_fluid_pipe', '2x gtceu:zpm_field_generator', '8x gtceu:neutronium_plate', 'gtceu:uranium_rhodium_dinaquadide_octal_wire'])
+    .itemOutputs('gtceu:mega_vacuum_freezer')
+    .duration(200)
+    .cleanroom(CleanroomType.CLEANROOM)
+    .EUt(GTValues.VA[GTValues.ZPM]);
 
   event.recipes.gtceu.assembler('gtceu:treated_wood_dust_shred')
     .itemInputs(['gtceu:bronze_machine_casing', '4x gtceu:steel_rod', '4x gtceu:steel_plate'])
@@ -1762,6 +1802,11 @@ ServerEvents.recipes(event => {
     .duration(200)
     .EUt(GTValues.VA[GTValues.LuV] / 2);
 
+  event.recipes.gtceu.spooling_machine('voltage_coil_zpm')
+    .itemInputs(['gtceu:long_magnetic_samarium_rod', '16x cosmiccore:fine_neutronite_wire'])
+    .itemOutputs('gtceu:zpm_voltage_coil')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.ZPM] / 2);
   //Radio Modules (Too lazy to do a ForEach)
   event.recipes.gtceu.assembler('radio_module_hv')
     .itemInputs(['gtceu:hv_sensor', 'gtceu:hv_emitter', 'gtceu:stainless_steel_frame', '2x gtceu:galvanized_ethersteel_double_cable', '#gtceu:circuits/hv'])
