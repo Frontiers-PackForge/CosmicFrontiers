@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM]);
     event.recipes.gtceu.polymerizer('frontiers:nylon_polymer')
         .notConsumable('gtceu:ingot_extruder_mold')
-        .inputFluids('gtceu:nylon_jelly_polymer 4000')
+        .inputFluids('gtceu:nylon_jelly_polymer 1000')
         .inputFluids('gtceu:titanium_tetrachloride 250')
         .outputFluids('gtceu:nylon_6_6 144')
         .duration(450)
@@ -57,8 +57,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.polymerizer('frontiers:trinanylon_polymer')
         .notConsumable('gtceu:ingot_extruder_mold')
-        .inputFluids('gtceu:nylon_jelly_polymer 4000')
-        .inputFluids('cosmiccore:trinavine 250')
+        .inputFluids('gtceu:nylon_jelly_polymer 1000')
+        .inputFluids('cosmiccore:trinavine 144')
         .outputFluids('gtceu:trinanylon_6_6 144')
         .duration(890)
         .EUt(GTValues.VA[GTValues.ZPM]);
