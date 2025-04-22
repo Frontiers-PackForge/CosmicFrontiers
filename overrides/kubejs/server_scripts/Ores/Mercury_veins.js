@@ -22,4 +22,13 @@ GTCEuServerEvents.oreVeins(event => {
 
 
 
-//ad_astra:moon
+/* 
+
+Germanium Ores? - Argyodite has it! Extraction time! ! ! Make it a bit rough ig? 
+
+Tellerium Ores? - Calaverite and Sylvanite has it! Extraction time! ! !
+
+Caesium Ores? - Already comes from lepidolite and, so just make a vein that contains it?
+
+
+*/
