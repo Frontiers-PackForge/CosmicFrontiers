@@ -652,10 +652,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('starry_fuel_mixture')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
-    // event.create("triphenyl_phosphine")
-    //     .liquid()
-    //     .color(0x825991)
-    //     .formula('P(C6H5)3')
     event.create('illuminated_heavy_fuel_mixture')
         .liquid()
         .color(0xa8ddff)
@@ -681,6 +677,23 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('trinium_oxide')
         .dust()
         .color(0x6d7283).secondaryColor(0x353836).iconSet(GTMaterialIconSet.DULL)
+
+    //While my eyes bleed from the rot
+    event.create('ghost_matter')
+    .color(0x34ebbd)
+    .plasma()
+    //My Blood is Stained with the worlds of many souls
+    event.create('sol_blood')
+    .color(0xc28e1f)
+    .plasma()
+    //And this star, a point among many, is the one I call home
+    event.create('homeward_resin')
+    .color(0xf0912b)
+    .plasma()
+    //Break this wrathful cycle, star killer.
+    event.create('perpetuity_slag')
+    .color(0x696969)
+    .plasma()
 })
 
 GTCEuStartupEvents.materialModification(event => {
