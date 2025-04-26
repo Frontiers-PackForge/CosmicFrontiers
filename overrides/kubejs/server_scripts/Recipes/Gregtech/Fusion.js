@@ -16,10 +16,13 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:fusion_reactor/xenon_and_zinc_to_plutonium_239_plasma' })
     event.remove({ id: 'gtceu:fusion_reactor/silicon_and_magnesium_to_iron_plasma' })
     event.remove({ id: 'gtceu:fusion_reactor/gold_and_aluminium_to_uranium_238_plasma' })
+    event.remove({ id: 'gtceu:fusion_reactor/plutonium_241_and_hydrogen_gas_to_americium_plasma' })
+    event.remove({ id: 'gtceu:fusion_reactor/lutenium_and_chromium_to_americium_plasma' })
+    event.remove({ id: 'gtceu:fusion_reactor/neodymium_and_hydrogen_to_europium_plasma' })
 
     //NOTE ; Enable these after you've made replacements for the old fusion recipes.
-    // event.remove({ id: 'gtceu:fusion_reactor/titanium_and_duranium_to_tritanium_plasma' })
-    // event.remove({ id: 'gtceu:fusion_reactor/gallium_and_radon_to_duranium_plasma' })
+    event.remove({ id: 'gtceu:fusion_reactor/titanium_and_duranium_to_tritanium_plasma' })
+    event.remove({ id: 'gtceu:fusion_reactor/gallium_and_radon_to_duranium_plasma' })
     // event.remove({ id: 'gtceu:fusion_reactor/arsenic_and_ruthenium_to_darmstadtium_plasma' })
 
 
@@ -33,4 +36,20 @@ ServerEvents.recipes(event => {
     Tau Plasma (And better tau oil creation methods.)
     
     */
+
+    event.recipes.gtceu.fusion_reactor('frontiers:new_duranium_and_tritanium')
+        .chancedInput('gtceu:neutron_reflector', 1550, 0)
+        .chancedInput('gtceu:neutron_reflector', 1200, 0)
+        .chancedInput('gtceu:neutron_reflector', 1200, 0)
+        .inputFluids('gtceu:titanium 432') //3
+        .inputFluids('gtceu:gallium 576') //4 -> Two Ingots of Duranium and 1 of Tritanium
+        .inputFluids('gtceu:radon 4500') //4.5
+        .outputFluids('gtceu:duranium 288') //2
+        .outputFluids('gtceu:tritanium 144') //1
+        .fusionStartEU(320000000)
+        .duration(380)
+        .EUt(GTValues.VA[GTValues.ZPM]);
+
+
+
 })

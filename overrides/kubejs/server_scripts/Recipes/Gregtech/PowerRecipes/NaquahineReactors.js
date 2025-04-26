@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         .EUt(-GTValues.V[GTValues.LuV])
     event.recipes.gtceu.naquahine_reactor('naquahine_mk_two')
         .chancedInput('gtceu:industrial_tnt', 5000, 0)
-        .magnetStats(1000000, 1500, true)
+        .magnetStats(225000, 1500, true)
         .inputFluids('gtceu:naquahine_superfuel_mk_two 100')
         .duration(800)
         .EUt(-GTValues.V[GTValues.ZPM])
@@ -106,17 +106,6 @@ ServerEvents.recipes(event => {
         .duration(120)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    event.recipes.gtceu.mixer('naquahine_superfuel_mk_two')
-        .inputFluids('gtceu:naquahine_superfuel_mk_one 4000')
-        .itemInputs('gtceu:naquadria_dust')
-        .inputFluids('gtceu:tau_plasma 250')
-        .outputFluids('gtceu:naquahine_superfuel_mk_two 4000')
-        .duration(840)
-        .EUt(GTValues.VA[GTValues.ZPM])
-
-
-
-
     event.recipes.gtceu.chemical_dehydrator('rhenium_rich_nqh')
         .inputFluids('gtceu:naquahine 200')
         .inputFluids('gtceu:pyroflux 2000')
@@ -150,6 +139,49 @@ ServerEvents.recipes(event => {
         .duration(360)
         .EUt(GTValues.VA[GTValues.ZPM])
 
+    //MK2 Fuel
+
+    event.recipes.gtceu.industrial_chemvat('naquahine_superfuel_mk_two')
+        .inputFluids('gtceu:naquahine_superfuel_mk_one 4000')
+        .itemInputs('gtceu:naquadria_dust')
+        .inputFluids('gtceu:tau_plasma 250')
+        .chancedOutput('gtceu:naquadria_dust', 1, 0)
+        .outputFluids('gtceu:naquahine_superfuel_mk_two 4000')
+        .stationResearch(b => b
+            .researchStack('malum:block_of_malignant_pewter')
+            .CWUt(32)
+            .EUt(GTValues.VA[GTValues.UV]))
+        .duration(840)
+        .EUt(GTValues.VA[GTValues.ZPM])
+
+
+    event.recipes.gtceu.extractor('frontiers:extract_raw_tau')
+        .itemInputs('64x bloodmagic:weak_tau')
+        .outputFluids('gtceu:extracted_tau 1000')
+        .duration(430)
+        .EUt(GTValues.VA[GTValues.LuV])
+    event.recipes.gtceu.fermenter('frontiers:distill_pure_tau_oil')
+        .chancedInput('bloodmagic:reagentbinding', 500, 0)
+        .inputFluids('gtceu:extracted_tau 16000')
+        .outputFluids('gtceu:tau_oil 1000')
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.LuV])
+    event.recipes.gtceu.canner('frontiers:tau_oil_to_tau_oil_bottle')
+        .itemInputs('gtceu:glass_vial')
+        .inputFluids('gtceu:tau_oil 100')
+        .itemOutputs('bloodmagic:tauoil')
+        .duration(230)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.fusion_reactor('tau_plasma')
+        .chancedInput('gtceu:neutron_reflector', 1550, 0)
+        .chancedInput('gtceu:neutron_reflector', 1200, 0)
+        .inputFluids('gtceu:tau_oil 100') //1
+        .inputFluids('gtceu:enriched_naquadah 144') //1
+        .outputFluids('gtceu:tau_plasma 250') //0.5
+        .fusionStartEU(120000000)
+        .duration(230)
+        .EUt(GTValues.VA[GTValues.LuV]);
 
 })
 

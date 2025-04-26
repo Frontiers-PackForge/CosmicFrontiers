@@ -114,4 +114,25 @@ ServerEvents.recipes(event => {
         .outputFluids('minecraft:lava 2500000')
         .duration(288000)
         .EUt(GTValues.VA[GTValues.IV]);
+
+
+
+    //BOREMAP SOL
+    event.recipes.gtceu.celestial_bore(`boremap_sol`)
+    .notConsumable('ad_astra:sun_globe')
+    .dimension('frontiers:sun_orbit')
+    .inputFluids('gtceu:grading_fluid_5 100000')
+    .outputFluids('gtceu:ghost_matter_plasma 3200000')
+    .outputFluids('gtceu:sol_blood_plasma 1380000')
+    .outputFluids('gtceu:homeward_resin_plasma 2400000')
+    .outputFluids('gtceu:perpetuity_slag_plasma 5500000')
+    .outputFluids('gtceu:argon_plasma 3000000')
+    .outputFluids('gtceu:helium_plasma 750000')
+    .outputFluids('gtceu:iron_plasma 550000')
+    .outputFluids('gtceu:nickel_plasma 240000')
+    .outputFluids('gtceu:nitrogen_plasma 7500000')
+    .outputFluids('gtceu:oxygen_plasma 4500000')
+    .outputFluids('gtceu:ultralight_neutronium_plasma 55000')
+    .duration(72000)
+    .EUt(GTValues.VA[GTValues.ZPM]);
 })

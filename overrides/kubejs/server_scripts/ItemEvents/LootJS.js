@@ -1,7 +1,10 @@
 LootJS.modifiers((event) => {
+
+    event.disableWitherStarDrop()
+
+
     event.addLootTypeModifier(LootType.ENTITY)
         .removeLoot("minecraft:bow")
-        .removeLoot("minecraft:nether_star")
         .removeLoot("paraglider:heart_container")
         .removeLoot('nether_remastered:seal_piece_1')
         .removeLoot('nether_remastered:seal_piece_2')

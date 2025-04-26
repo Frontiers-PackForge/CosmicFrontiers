@@ -164,6 +164,33 @@ ServerEvents.recipes(event => {
     'gtceu:rtm_alloy_quadruple_wire',
     'cosmiccore:prismatic_tungstensteel_quadruple_wire'
   )
+
+  //Beacon Replacement
+  event.remove({ id: 'tconstruct:common/glass/vanilla/beacon' })
+  event.recipes.gtceu.mana_engraver('frontiers:bad_beacon_recipe')
+    .itemInputs(['16x bloodmagic:reagentwater', '16x bloodmagic:reagentlava', '16x bloodmagic:reagentgrowth', '16x bloodmagic:reagentair', '8x malum:arcane_spirited_glass', '16x malum:infernal_spirit', '6x gtceu:dense_obsidian_plate'])
+    .itemOutputs(['minecraft:beacon'])
+    .duration(40)
+    .circuit(2)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+  event.recipes.gtceu.mana_engraver('frontiers:alf_glass')
+    .itemInputs('botania:mana_glass')
+    .inputFluids('cosmiccore:prisma 25')
+    .itemOutputs('botania:elf_glass')
+    .duration(5)
+    .circuit(1)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+    event.remove({ id: 'gtceu:fluid_solidifier/petri_dish_pbi' })
+    event.remove({ id: 'gtceu:fluid_solidifier/petri_dish_ptfe' })
+    event.recipes.gtceu.fluid_solidifier('frontiers:petri_dish')
+    .notConsumable('gtceu:ball_mold')
+    .inputFluids('gtceu:trinanylon_6_6 288')
+    .itemOutputs('gtceu:petri_dish')
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
   event.recipes.gtceu.assembler('local_power_cap')
     .itemInputs(['gtceu:palladium_substation', '2x gtceu:mpic_chip', '#gtceu:circuits/luv', '2x gtceu:lapotron_crystal'])
     .itemOutputs('cosmiccore:capacitor_array')
