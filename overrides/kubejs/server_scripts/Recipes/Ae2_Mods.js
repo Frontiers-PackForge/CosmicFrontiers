@@ -1010,7 +1010,7 @@ ServerEvents.recipes(event => {
     ],
     "result": {
       "count": 2,
-      "item": "gtceu:flawless_certus_quartz_gem"
+      "item": "ae2:charged_certus_quartz_crystal"
     }
   })
   event.custom({
