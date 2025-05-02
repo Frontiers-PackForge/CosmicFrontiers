@@ -600,6 +600,34 @@ ServerEvents.recipes(event => {
     .duration(1750)
     .EUt(GTValues.VA[GTValues.ZPM])
 
+  event.recipes.gtceu.assembly_line('frontiers:computation_support_unit')
+    .itemInputs(['16x cosmiccore:fine_trinavine_wire', '4x gtceu:duranium_plate', '4x gtceu:polybenzimidazole_small_fluid_pipe', '2x cosmiccore:bifidobacterium_breve', 'gtceu:luv_electric_pump'])
+    .itemOutputs('4x cosmiccore:computation_support_unit')
+    .inputFluids(
+      'gtceu:4_4_oxydianiline_pyromellitimide 1152'
+    )
+    .stationResearch(b => b
+      .researchStack('cosmiccore:bifidobacterium_breve')
+      .CWUt(32)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(1750)
+    .EUt(GTValues.VA[GTValues.ZPM])
+
+  event.recipes.gtceu.assembly_line('frontiers:neuro_processing_assembly')
+    .itemInputs(['64x cosmiccore:fine_neutronite_wire', '8x gtceu:nylon_6_6_foil', '8x cosmiccore:crystalline_transistor', '8x cosmiccore:crystalline_diode', '8x cosmiccore:crystalline_resistor', 'cosmiccore:wired_petri_dish', 'gtceu:wetware_printed_circuit_board', 'gtceu:stem_cells', 'cosmiccore:computation_support_unit'])
+    .itemOutputs('4x cosmiccore:neuro_processing_assembly')
+    .inputFluids(
+      'gtceu:polybenzimidazole 1152',
+      'gtceu:sterilized_growth_medium 1000',
+      'gtceu:tritanium 1296'
+    )
+    .stationResearch(b => b
+      .researchStack('cosmiccore:computation_support_unit')
+      .CWUt(32)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(1750)
+    .EUt(GTValues.VA[GTValues.ZPM])
+
 
 
 

@@ -16,7 +16,7 @@ GTCEuStartupEvents.materialModification(event => {
 
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    
+    addFluid(GTMaterials.Agar, $FluidStorageKeys.LIQUID);
     //Misc
     GTMaterials.Carbon.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Carbon.addFlags($MaterialFlags.GENERATE_ROD, $MaterialFlags.GENERATE_LONG_ROD);

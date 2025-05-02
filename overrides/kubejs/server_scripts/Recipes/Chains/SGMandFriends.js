@@ -258,10 +258,10 @@ ServerEvents.recipes(event => {
     //Maybe the Dust will be used in the future???? make it apart of RGM ig lol
 
     event.recipes.gtceu.centrifuge('frontiers:petri_dishing')
-    .inputFluids('gtceu:agar 144')
-    .itemInputs('gtceu:petri_dish')
-    .itemOutputs('cosmiccore:prepared_petri_dish')
-    .duration(960)
-    .cleanroom(CleanroomType.STERILE_CLEANROOM)
-    .EUt(GTValues.VH[GTValues.IV]);
+        .inputFluids('gtceu:agar 144')
+        .itemInputs('gtceu:petri_dish')
+        .itemOutputs('cosmiccore:prepared_petri_dish')
+        .duration(960)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .EUt(GTValues.VH[GTValues.IV]);
 })
