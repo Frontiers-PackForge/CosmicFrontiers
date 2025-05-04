@@ -76,7 +76,7 @@ ServerEvents.recipes( e => {
       'BCB', 
       'ABA'  
     ], {
-      B: `gtceu:steel_frame`, 
+      B: `framedblocks:framed_cube`, 
       A: 'gtceu:iron_screw',  
       C: '#forge:chests'   
     }
@@ -86,7 +86,7 @@ ServerEvents.recipes( e => {
       'BBB', 
       'ACA'  
     ], {
-      B: `gtceu:steel_frame`, 
+      B: `framedblocks:framed_cube`, 
       A: 'gtceu:iron_screw',  
       C: '#forge:chests'   
     }
@@ -96,7 +96,7 @@ ServerEvents.recipes( e => {
       'BCB', 
       'ABA'  
     ], {
-      C: `gtceu:steel_frame`, 
+      C: `framedblocks:framed_cube`, 
       B: 'gtceu:iron_screw',  
       A: '#forge:chests'   
     }
