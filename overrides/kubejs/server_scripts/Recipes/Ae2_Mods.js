@@ -332,7 +332,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LV]);
   //Energy Cell
   event.recipes.gtceu.assembler('ae2:cell_assem')
-    .itemInputs(['4x gtceu:steel_plate', '4x ae2:charged_certus_quartz_crystal', 'ae2:energy_acceptor', 'gtceu:lv_sodium_battery'])
+    .itemInputs(['4x gtceu:steel_plate', '4x ae2:charged_certus_quartz_crystal', 'ae2:energy_acceptor', '#gtceu:batteries/lv'])
     .itemOutputs('ae2:energy_cell')
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
