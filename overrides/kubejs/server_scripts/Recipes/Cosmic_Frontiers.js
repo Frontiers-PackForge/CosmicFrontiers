@@ -759,8 +759,22 @@ ServerEvents.recipes(event => {
               .duration(10)
               .EUt(GTValues.VA[GTValues.LV] / 2);
 
-
-
+       //sun fern flora nurturer recipes -- placed here since the ice fern ones are autogenned(?) while these aren't
+       event.recipes.gtceu.flora_nurturer('cosmiccore:sun_fern_cultivation_sludge')
+              .notConsumable('legendarysurvivaloverhaul:sun_fern_leaf')
+              .notConsumable('minecraft:moss_block')
+              .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 500))
+              .itemOutputs('legendarysurvivaloverhaul:sun_fern_leaf')
+              .chancedOutput(Item.of('legendarysurvivaloverhaul:sun_fern_leaf', 1), 2500, 50)
+              .duration(160)
+              .EUt(15);
+       event.recipes.gtceu.flora_nurturer('cosmiccore:sun_fern_cultivation_nutrient_solution')
+              .notConsumable('legendarysurvivaloverhaul:sun_fern_leaf')
+              .notConsumable('minecraft:moss_block')
+              .inputFluids(Fluid.of('gtceu:nutrient_solution', 50))
+              .itemOutputs('16x legendarysurvivaloverhaul:sun_fern_leaf')
+              .duration(160)
+              .EUt(60);
 
        //TODO - Mechanical Flower Recipes
        event.recipes.botania.runic_altar('gtceu:mana_simulator', ['#gtceu:circuits/ev', 'gtceu:terrasteel_octal_wire', 'gtceu:terrasteel_octal_wire', 'gtceu:terrasteel_plate', 'gtceu:terrasteel_plate', 'gtceu:terrasteel_plate', 'gtceu:terrasteel_plate', 'botania:gourmaryllis', 'botania:entropinnyum', '#gtceu:circuits/ev', 'botania:narslimmus', 'botania:spectrolus', 'botania:blacker_lotus'], 250000)
@@ -827,4 +841,46 @@ ServerEvents.recipes(event => {
               .itemOutputs('minecraft:ender_pearl')
               .duration(100)
               .EUt(4)
+
+       //netherite blocks are stupid. removing recipes and adding them back, seeing as i cant see the recipes im just removing by output :utmostsin:
+       event.remove({ output: 'minecraft:netherite_block' })
+       event.recipes.gtceu.alloy_smelter('netherite_block_smelter')
+              .notConsumable('gtceu:block_casting_mold')
+              .itemInputs('9x minecraft:netherite_ingot')
+              .itemOutputs('minecraft:netherite_block')
+              .duration(200)
+              .EUt(28)
+
+       event.recipes.gtceu.compressor('netherite_block_compressor')
+              .itemInputs('9x minecraft:netherite_ingot')
+              .itemOutputs('minecraft:netherite_block')
+              .duration(900)
+              .EUt(2)
+
+       event.recipes.gtceu.extruder('netherite_block_extruder')
+              .notConsumable('gtceu:block_extruder_mold')
+              .itemInputs('9x minecraft:netherite_ingot')
+              .itemOutputs('minecraft:netherite_block')
+              .duration(20)
+              .EUt(56)
+
+       event.recipes.gtceu.alloy_smelter('netherite_block_smelter_dust')
+              .notConsumable('gtceu:block_casting_mold')
+              .itemInputs('9x gtceu:netherite_dust')
+              .itemOutputs('minecraft:netherite_block')
+              .duration(400)
+              .EUt(28)
+
+       event.recipes.gtceu.alloy_smelter('netherite_ingot_smelter')
+              .notConsumable('gtceu:ingot_casting_mold')
+              .itemInputs('minecraft:netherite_block')
+              .itemOutputs('9x minecraft:netherite_ingot')
+              .duration(1200)
+              .EUt(7)
+
+       event.recipes.gtceu.macerator('netherite_dust_block_macerator')
+              .itemInputs('minecraft:netherite_block')
+              .itemOutputs('9x gtceu:netherite_dust')
+              .duration(900)
+              .EUt(2)
 })

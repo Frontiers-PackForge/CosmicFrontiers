@@ -42,10 +42,10 @@ ServerEvents.recipes(event => {
         'RBR',
         'LWL'
     ], {
-        W: 'cosmiccore:rune_conjunction_arklythar',
+        W: 'minecraft:echo_shard',
         L: 'minecraft:deepslate_tiles',
         B: '#forge:bookshelves',
-        R: 'minecraft:echo_shard'
+        R: 'kubejs:terraweave_cloth'
     })
     event.remove({ output: 'apotheosis:echoing_deepshelf' })
     event.shaped('apotheosis:echoing_deepshelf', [
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         W: 'minecraft:sculk_sensor',
         L: 'minecraft:deepslate_tiles',
         B: 'apotheosis:deepshelf',
-        R: 'cosmiccore:rune_conjunction_arklythar'
+        R: 'gtceu:double_terrasteel_plate'
     })
     event.remove({ output: 'apotheosis:soul_touched_deepshelf' })
     event.shaped('apotheosis:soul_touched_deepshelf', [
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         W: 'minecraft:sculk_catalyst',
         L: 'minecraft:deepslate_tiles',
         B: 'apotheosis:deepshelf',
-        R: 'cosmiccore:rune_conjunction_arklythar'
+        R: 'gtceu:double_terrasteel_plate'
     })
     event.remove({ output: 'apotheosis:echoing_sculkshelf' })
     event.shaped('apotheosis:echoing_sculkshelf', [
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
         E: 'apotheosis:warden_tendril',
         L: 'minecraft:deepslate_tiles',
         B: 'apotheosis:echoing_deepshelf',
-        R: 'cosmiccore:rune_conjunction_arklythar'
+        R: 'gtceu:double_terrasteel_plate'
     })
     event.remove({ output: 'apotheosis:soul_touched_sculkshelf' })
     event.shaped('apotheosis:soul_touched_sculkshelf', [
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
         E: 'apotheosis:warden_tendril',
         L: 'minecraft:deepslate_tiles',
         B: 'apotheosis:soul_touched_deepshelf',
-        R: 'cosmiccore:rune_conjunction_arklythar'
+        R: 'gtceu:double_terrasteel_plate'
     })
     //endshelf
     event.remove({ output: 'apotheosis:endshelf' })
@@ -100,10 +100,10 @@ ServerEvents.recipes(event => {
         'RBR',
         'LWL'
     ], {
-        W: 'botania:mana_diamond',
+        W: 'botania:dragonstone',
         L: 'minecraft:end_stone_bricks',
         B: '#forge:bookshelves',
-        R: 'gtceu:double_soul_stained_steel_plate'//placeholder for a higher tier/MV rune?
+        R: 'gtceu:double_elementium_plate'
     })
 
     event.shaped('apotheosis:pearl_endshelf', [
@@ -111,20 +111,20 @@ ServerEvents.recipes(event => {
         'RBR',
         'LWL'
     ], {
-        W: 'botania:mana_pearl',
+        W: 'botania:dragonstone',
         L: 'minecraft:end_stone_bricks',
         B: 'apotheosis:endshelf',
-        R: 'gtceu:double_soul_stained_steel_plate'//placeholder for a higher tier/MV rune?
+        R: 'gtceu:double_elementium_plate'
     })
     event.shaped('apotheosis:draconic_endshelf', [
         'LWL',
         'RBR',
         'LWL'
     ], {
-        W: 'botania:manaweave_cloth',
+        W: 'botania:dragonstone_block',
         L: 'minecraft:end_stone_bricks',
         B: 'apotheosis:endshelf',
-        R: 'gtceu:double_soul_stained_steel_plate'//placeholder for a higher tier/MV rune?
+        R: 'gtceu:double_elementium_plate'
     })
     //seashelf
     event.remove({ output: 'apotheosis:seashelf' })
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
         'ABR',
         'LEL'
     ], {
-        E: 'minecraft:nautilus_shell', //Item.of('minecraft:potion', '{Potion:long_water_breathing}').strongNBT(), closest i got it to "working" with a potion (only worked in emi) (why tf is a water bottle a potion???)
+        E: 'minecraft:nautilus_shell',
         W: 'minecraft:wet_sponge',
         L: 'minecraft:prismarine_bricks',
         B: '#forge:bookshelves',
@@ -236,7 +236,7 @@ ServerEvents.recipes(event => {
     ], {
         L: 'minecraft:amethyst_block',
         B: 'apotheosis:infused_seashelf',
-        R: 'gtceu:double_steel_plate'
+        R: 'gtceu:double_soul_stained_steel_plate'
     })
     event.remove({ output: 'apotheosis:rectifier_t2' })
     event.shaped('apotheosis:rectifier_t2', [
@@ -246,7 +246,7 @@ ServerEvents.recipes(event => {
     ], {
         L: 'minecraft:amethyst_block',
         B: 'apotheosis:rectifier',
-        R: 'gtceu:double_runed_steel_plate'
+        R: 'gtceu:double_terrasteel_plate'
     })
     event.remove({ output: 'apotheosis:rectifier_t3' })
     event.shaped('apotheosis:rectifier_t3', [
@@ -256,7 +256,7 @@ ServerEvents.recipes(event => {
     ], {
         L: 'minecraft:amethyst_block',
         B: 'apotheosis:rectifier_t2',
-        R: 'gtceu:double_soul_stained_steel_plate'
+        R: 'gtceu:double_elementium_plate'
     })
     //crafting stations
     event.remove({ output: 'apotheosis:simple_reforging_table' })
@@ -430,5 +430,3 @@ ServerEvents.recipes(event => {
 
 
 })
-
-

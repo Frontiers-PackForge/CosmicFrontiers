@@ -174,7 +174,7 @@ ServerEvents.recipes(event => {
   //CleanroomMaintHatch
   event.remove({ id: 'gtceu:shaped/maintenance_hatch_cleaning' })
   event.recipes.gtceu.assembly_line('clean_hatch_assemblyline')
-    .itemInputs(['64x gtceu:plascrete', '64x gtceu:plascrete', '16x gtceu:filter_casing', '16x gtceu:hssg_spring', '4x gtceu:nano_processor_mainframe', '4x gtceu:luv_robot_arm', 'gtceu:auto_maintenance_hatch', 'gtceu:cleanroom', 'gtceu:luv_diode'])
+    .itemInputs(['64x gtceu:plascrete', '64x gtceu:plascrete', '16x gtceu:filter_casing', '16x gtceu:hssg_spring', '4x #gtceu:circuits/luv', '4x gtceu:luv_robot_arm', 'gtceu:auto_maintenance_hatch', 'gtceu:cleanroom', 'gtceu:luv_diode'])
     .itemOutputs('gtceu:cleaning_maintenance_hatch')
     .inputFluids(
       Fluid.of('gtceu:high_grade_solder', 1440),
