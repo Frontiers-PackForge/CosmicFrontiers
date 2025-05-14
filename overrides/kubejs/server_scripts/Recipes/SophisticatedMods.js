@@ -487,6 +487,8 @@ ServerEvents.recipes(event => {
   upgradeUpgrade('minecraft:crafting_table', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:crafting_upgrade`);
   upgradeUpgrade('minecraft:stonecutter', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:stonecutter_upgrade`);
   upgradeUpgrade('minecraft:jukebox', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:jukebox_upgrade`);
+  upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', 'sophisticatedbackpacks:jukebox_upgrade', `sophisticatedbackpacks:advanced_jukebox_upgrade`);
+  upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', 'sophisticatedstorage:jukebox_upgrade', `sophisticatedstorage:advanced_jukebox_upgrade`);
 
   upgradeUpgrade('gtceu:bronze_drum', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:tank_upgrade`); //really bad upgrade without stack upgrades
   upgradeUpgrade('#gtceu:batteries/lv', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:battery_upgrade`);
