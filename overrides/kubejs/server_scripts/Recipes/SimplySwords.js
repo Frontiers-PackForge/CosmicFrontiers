@@ -24,7 +24,8 @@ ServerEvents.recipes( e => {
         'claymore',  
         'greathammer',  
         'greataxe', 
-        'chakram'
+        'chakram',
+        'halberd'
     ]
     
 
@@ -42,7 +43,7 @@ e.remove({ output: /(.*)claymore/ })
 e.remove({ output: /(.*)greathammer/ })
 e.remove({ output: /(.*)greataxe/ })
 e.remove({ output: /(.*)chakram/ })
-// e.remove({ output: /(.*)scythe/ })
+e.remove({ output: /(.*)scythe/ })
 e.remove({ output: /(.*)halberd/ })
 
 v_materials.forEach(item => {
