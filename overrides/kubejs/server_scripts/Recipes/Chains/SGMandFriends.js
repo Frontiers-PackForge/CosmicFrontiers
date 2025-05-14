@@ -264,4 +264,19 @@ ServerEvents.recipes(event => {
         .duration(960)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
         .EUt(GTValues.VH[GTValues.IV]);
+
+
+
+    event.recipes.gtceu.assembler('frontiers:fermium_charge')
+        .itemInputs(['gtceu:tungsten_steel_fluid_cell', '2x gtceu:neutron_reflector', '4x gtceu:fermium_ingot'])
+        .itemOutputs('cosmiccore:fermium_rad_charges')
+        .duration(230)
+        .EUt(GTValues.VA[GTValues.IV]);
+
+    event.recipes.gtceu.assembler('frontiers:bacteria')
+        .inputFluids('gtceu:distilled_water 1000')
+        .itemInputs(['2x cosmiccore:bifidobacterium_breve', '2x cosmiccore:streptococcus_pyogenes', '6x cosmiccore:inert_fungal_spores'])
+        .outputFluids('gtceu:bacteria 1000')
+        .duration(440)
+        .EUt(GTValues.VA[GTValues.IV]);
 })

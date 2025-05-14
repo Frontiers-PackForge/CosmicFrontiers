@@ -701,7 +701,3 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('abyss_grease').setFormula('(⟓∞)', true)
     GTMaterials.get('veltharic_slough').setFormula('(√◉)', true)
 })
-
-GTCEuStartupEvents.registry("gtceu:material", event => {
-    $CosmicMaterials.Neutronite.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(8, 4, 512, 3).build()) //harvestSpeed, attackDamage, durability, harvestLevel
-})
