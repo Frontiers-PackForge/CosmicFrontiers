@@ -107,10 +107,9 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.chemical_dehydrator('rhenium_rich_nqh')
-        .inputFluids('gtceu:naquahine 200')
+        .inputFluids('gtceu:naquahine 1500')
         .inputFluids('gtceu:pyroflux 2000')
         .outputFluids('gtceu:rhenium_saturated_naquahine 1750')
-        .chancedOutput('gtceu:inert_naquahine_dust', 3500, 0)
         .duration(120)
         .EUt(GTValues.VA[GTValues.LuV] * 0.5)
 
