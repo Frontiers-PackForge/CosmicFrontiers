@@ -183,6 +183,8 @@ ServerEvents.recipes(event => {
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:auto_maintenance_hatch')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
     .duration(600)
     .EUt(GTValues.VA[GTValues.IV])
+    .removePreviousMaterialInfo()
+    .addMaterialInfo(true)
   //NPR
   event.recipes.gtceu.assembly_line('naquahine_reactor_controller')
     .itemInputs(['4x cosmiccore:fusion_grade_magnet', '4x gtceu:quantum_processor_mainframe', 'gtceu:iv_lapotronic_battery', '16x gtceu:iv_field_generator', '64x gtceu:uhpic_chip', '32x gtceu:indium_tin_barium_titanium_cuprate_single_wire', '16x gtceu:iv_field_generator'])

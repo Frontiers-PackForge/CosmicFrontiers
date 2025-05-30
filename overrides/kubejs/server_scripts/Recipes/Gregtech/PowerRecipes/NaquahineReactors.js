@@ -107,16 +107,16 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.chemical_dehydrator('rhenium_rich_nqh')
-        .inputFluids('gtceu:naquahine 1500')
+        .inputFluids('gtceu:naquahine 8000')
         .inputFluids('gtceu:pyroflux 2000')
-        .outputFluids('gtceu:rhenium_saturated_naquahine 1750')
+        .outputFluids('gtceu:rhenium_saturated_naquahine 750')
         .duration(120)
         .EUt(GTValues.VA[GTValues.LuV] * 0.5)
 
     event.recipes.gtceu.brewery('rhenium_rich_complex')
         .inputFluids('gtceu:rhenium_saturated_naquahine 250')
         .chancedInput('bloodmagic:tauoil', 1500, 0)
-        .outputFluids('gtceu:rhenium_rich_complex 250')
+        .outputFluids('gtceu:rhenium_rich_complex 125')
         .duration(450)
         .EUt(GTValues.VA[GTValues.IV])
 

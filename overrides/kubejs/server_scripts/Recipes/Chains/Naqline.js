@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadria' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadria_gas' })
     event.remove({ id: 'gtceu:electric_blast_furnace/naquadria_sulfate_separation' })
-    
+
     event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_naquadah_ingot' })
     event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_enriched_naquadah_ingot' })
     event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_naquadah_ingot' })
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.large_chemical_reactor('nq_metallic_to_solution')
         .itemInputs('2x gtceu:naquadric_metallic_powder_dust')
-        .inputFluids('gtceu:aqua_regia 4000')
+        .inputFluids('gtceu:aqua_regia 6000')
         .outputFluids('gtceu:naquadric_solution 2000')
         .outputFluids('gtceu:diluted_nitric_acid 2000')
         .outputFluids('gtceu:hydrochloric_acid 2000')
