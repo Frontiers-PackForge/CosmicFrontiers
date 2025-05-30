@@ -182,9 +182,9 @@ ServerEvents.recipes(event => {
     .circuit(1)
     .EUt(GTValues.VA[GTValues.EV]);
 
-    event.remove({ id: 'gtceu:fluid_solidifier/petri_dish_pbi' })
-    event.remove({ id: 'gtceu:fluid_solidifier/petri_dish_ptfe' })
-    event.recipes.gtceu.fluid_solidifier('frontiers:petri_dish')
+  event.remove({ id: 'gtceu:fluid_solidifier/petri_dish_pbi' })
+  event.remove({ id: 'gtceu:fluid_solidifier/petri_dish_ptfe' })
+  event.recipes.gtceu.fluid_solidifier('frontiers:petri_dish')
     .notConsumable('gtceu:ball_mold')
     .inputFluids('gtceu:trinanylon_6_6 288')
     .itemOutputs('gtceu:petri_dish')
@@ -349,6 +349,12 @@ ServerEvents.recipes(event => {
     R: 'gtceu:steel_rod',
     P: 'gtceu:steel_plate'
   })
+  event.recipes.gtceu.laminator('gtceu:prisma_lense')
+    .itemInputs(['gtceu:glass_lens', 'malum:prismatic_focus_lens'])
+    .inputFluids('cosmiccore:prisma 8000')
+    .itemOutputs('kubejs:prismatic_lens')
+    .duration(1700)
+    .EUt(GTValues.VA[GTValues.LuV]);
   //Ruridit Casings
   event.recipes.gtceu.assembler('gtceu:ruridit_casing_assem')
     .itemInputs(['gtceu:ruridit_frame', '6x gtceu:ruridit_plate'])
@@ -1792,6 +1798,13 @@ ServerEvents.recipes(event => {
     .itemOutputs('gtceu:ulv_voltage_coil')
     .duration(200)
     .EUt(GTValues.VA[GTValues.ULV] / 2);
+
+  event.recipes.gtceu.large_chemical_reactor('uraninite_brute_force_processing')
+    .itemInputs('gtceu:uranium_dust')
+    .inputFluids('gtceu:oxygen 2000')
+    .itemOutputs('3x gtceu:uraninite_dust')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.IV] / 2);
 
   event.recipes.gtceu.spooling_machine('voltage_coil_lv')
     .itemInputs(['gtceu:magnetic_iron_rod', '16x gtceu:fine_steel_wire'])
