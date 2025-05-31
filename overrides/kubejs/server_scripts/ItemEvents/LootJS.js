@@ -23,9 +23,6 @@ LootJS.modifiers((event) => {
     event.addEntityLootModifier("minecraft:llama")
         .addLoot("minecraft:beef");
 
-    event.addEntityLootModifier("minecraft:fox")
-        .addLoot("minecraft:beef");
-
     event.addLootTypeModifier(LootType.CHEST)
         .removeLoot('gtceu:bronze_ingot')
         .removeLoot('gtceu:steel_ingot')
