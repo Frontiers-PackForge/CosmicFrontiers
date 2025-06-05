@@ -29,6 +29,10 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:mixer/raw_growth_medium' })
     event.remove({ id: 'gtceu:autoclave/agar' })
 
+    event.remove({ id: 'gtceu:brewery/enriched_bacterial_sludge_from_u235' })
+    event.remove({ id: 'gtceu:brewery/enriched_bacterial_sludge_from_u238' })
+    event.remove({ id: 'gtceu:brewery/enriched_bacterial_sludge_from_naquadria' })
+    event.remove({ id: 'gtceu:distillery/mutagen' })
 
 
 
@@ -54,7 +58,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:prophine_dust')
         .inputFluids('gtceu:acetic_acid 1000', 'gtceu:formaldehyde 4000', 'gtceu:methyl_formate 2000', 'gtceu:chlorine 4000', 'gtceu:vinyl_chloride 1000', 'gtceu:chloroethane 1000', 'gtceu:chloromethane 4000')
         .outputFluids('gtceu:hydrochloric_acid 1000', 'minecraft:water 1000')
-        .itemOutputs('cosmiccore:heme_ring')
+        .itemOutputs('4x cosmiccore:heme_ring')
         .duration(440)
         .stationResearch(b => b
             .researchStack('cosmiccore:sculk_fibroblast')
@@ -130,11 +134,78 @@ ServerEvents.recipes(event => {
         .itemInputs('cosmiccore:sculk_myofibroblast')
         .inputFluids('gtceu:fibroblast_growth_factor 1000', 'gtceu:tau_oil 800')
         .itemOutputs('cosmiccore:resipiratory_sculk_hemocytoblast')
-        .soulInput(75000)
         .duration(440)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
         .EUt(GTValues.VA[GTValues.LuV]);
 
+    event.recipes.gtceu.biovat('frontiers:saturated_sculk_hemocytoblast')
+        .itemInputs('cosmiccore:resipiratory_sculk_hemocytoblast')
+        .inputFluids('gtceu:synthetic_blood 125')
+        .itemOutputs('cosmiccore:saturated_sculk_hemocytoblast')
+        .duration(440)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+    event.recipes.gtceu.biovat('frontiers:pure_blood')
+        .inputFluids('gtceu:gelatin_concentrate 250', 'gtceu:blood_plasma 1000', '')
+        .itemOutputs('gtceu:gelatin_dust')
+        .duration(200)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .EUt(GTValues.VA[GTValues.IV]);
+
+    event.recipes.gtceu.chemical_dehydrator('frontiers:gelatin_dust')
+        .inputFluids('gtceu:gelatin_concentrate 250')
+        .itemOutputs('gtceu:gelatin_dust')
+        .duration(200)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .EUt(GTValues.VA[GTValues.IV]);
+
+    event.recipes.gtceu.chemical_dehydrator('frontiers:agar_dust')
+        .inputFluids('gtceu:agar 144')
+        .itemOutputs('gtceu:agar_dust')
+        .duration(200)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .EUt(GTValues.VA[GTValues.IV]);
+
+    event.recipes.gtceu.biovat('frontiers:bacteria')
+        .itemInputs(['2x cosmiccore:bifidobacterium_breve', '2x cosmiccore:streptococcus_pyogenes', '8x cosmiccore:inert_fungal_spores'])
+        .inputFluids('gtceu:sterilized_lake_water 16000')
+        .outputFluids('gtceu:bacteria 16000')
+        .duration(2500)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+    event.recipes.gtceu.biovat('frontiers:bacterial_sludge')
+        .notConsumable('cosmiccore:ultrasonic_homogenizer')
+        .inputFluids('gtceu:bacteria 4000')
+        .outputFluids('gtceu:bacterial_sludge 2000')
+        .duration(800)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+    event.recipes.gtceu.mixer('frontiers:enriched_bacterial_sludge')
+        .inputFluids('gtceu:bacterial_sludge 1000', 'gtceu:agar 432')
+        .outputFluids('gtceu:enriched_bacterial_sludge 3000')
+        .duration(300)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .EUt(GTValues.VA[GTValues.ZPM]);
+
+    event.recipes.gtceu.laser_engraver('frontiers:fermium_rad_bombardment')
+        .itemInputs('cosmiccore:fermium_rad_charges')
+        .inputFluids('gtceu:enriched_bacterial_sludge 64000')
+        .outputFluids('gtceu:mutagen 64000')
+        .duration(800)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .EUt(GTValues.VA[GTValues.ZPM]);
+
+    //This Recipe is Entirely a Shitpost. It's 25000 cheese and there's easier methods to get cheese but this is just FUNNY.
+    event.recipes.gtceu.fermenter(`croptopia:cheese_insane`)
+        .itemInputs('64x cosmiccore:bifidobacterium_breve')
+        .inputFluids('minecraft:milk 1000000')
+        .itemOutputs(`25000x croptopia:cheese`)
+        .circuit(2)
+        .duration(8390)
+        .EUt(676767);
     //Vit C
 
     //sugar to glucose
@@ -257,7 +328,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VH[GTValues.EV]);
     //Maybe the Dust will be used in the future???? make it apart of RGM ig lol
 
-    event.recipes.gtceu.centrifuge('frontiers:petri_dishing')
+    event.recipes.gtceu.laminator('frontiers:petri_dishing')
         .inputFluids('gtceu:agar 144')
         .itemInputs('gtceu:petri_dish')
         .itemOutputs('cosmiccore:prepared_petri_dish')

@@ -311,6 +311,8 @@ ServerEvents.recipes(event => {
     H: '#forge:tools/hammers',
     W: '#forge:tools/wrenches'
   })
+  event.remove({ id: 'gtceu:centrifuge/sapphire_slurry_centrifuging' })
+  event.remove({ id: 'gtceu:centrifuge/green_sapphire_slurry_centrifuging' })
   event.remove({ id: 'clickmachine:auto_clicker' })
   event.shaped('clickmachine:auto_clicker', [
     'PRP',
@@ -322,14 +324,14 @@ ServerEvents.recipes(event => {
     C: 'gtceu:ulv_machine_hull',
     W: '#gtceu:circuits/ulv',
   })
-  event.shaped('gtceu:treated_wood_plate', [
-    ' S ',
-    ' P ',
-    '   '
-  ], {
-    P: 'gtceu:treated_wood_slab',
-    S: '#forge:tools/saws'
-  })
+  // event.shaped('gtceu:treated_wood_plate', [
+  //   ' S ',
+  //   ' P ',
+  //   '   '
+  // ], {
+  //   P: 'gtceu:treated_wood_slab',
+  //   S: '#forge:tools/saws'
+  // })
   event.shaped('gtceu:high_pressure_assembler', [
     'VRV',
     'RCR',

@@ -606,7 +606,8 @@ ServerEvents.recipes(event => {
     .itemInputs(['16x cosmiccore:fine_trinavine_wire', '4x gtceu:duranium_plate', '4x gtceu:polybenzimidazole_small_fluid_pipe', '4x cosmiccore:saturated_sculk_hemocytoblast', 'gtceu:luv_electric_pump'])
     .itemOutputs('4x cosmiccore:computation_support_unit')
     .inputFluids(
-      'gtceu:4_4_oxydianiline_pyromellitimide 1152'
+      'gtceu:4_4_oxydianiline_pyromellitimide 1152',
+      'gtceu:synthetic_blood 1000'
     )
     .stationResearch(b => b
       .researchStack('cosmiccore:bifidobacterium_breve')

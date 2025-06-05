@@ -320,7 +320,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.hellfire_foundry('terra_chalk')
     .itemInputs(['occultism:chalk_white_impure', 'ars_nouveau:earth_essence', 'malum:earthen_spirit', 'botania:rune_earth', 'bloodmagic:reagentgrowth'])
-    .inputFluids('gtceu:grading_fluid_3 1000')
+    .inputFluids('gtceu:grading_fluid_2 1000')
     .itemOutputs('bloodmagic:earthscribetool')
     .soulInput(20000)
     .duration(460)
@@ -328,7 +328,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.hellfire_foundry('fire_chalk')
     .itemInputs(['occultism:chalk_white_impure', 'ars_nouveau:fire_essence', 'malum:sacred_spirit', 'botania:rune_fire', 'bloodmagic:reagentlava'])
-    .inputFluids('gtceu:grading_fluid_3 1000')
+    .inputFluids('gtceu:grading_fluid_2 1000')
     .itemOutputs('bloodmagic:firescribetool')
     .soulInput(20000)
     .duration(460)
@@ -336,7 +336,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.hellfire_foundry('water_chalk')
     .itemInputs(['occultism:chalk_white_impure', 'ars_nouveau:water_essence', 'malum:aqueous_spirit', 'botania:rune_water', 'bloodmagic:reagentwater'])
-    .inputFluids('gtceu:grading_fluid_3 1000')
+    .inputFluids('gtceu:grading_fluid_2 1000')
     .itemOutputs('bloodmagic:waterscribetool')
     .soulInput(20000)
     .duration(460)
@@ -344,14 +344,14 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.hellfire_foundry('air_chalk')
     .itemInputs(['occultism:chalk_white_impure', 'ars_nouveau:air_essence', 'malum:aerial_spirit', 'botania:rune_air', 'bloodmagic:reagentair'])
-    .inputFluids('gtceu:grading_fluid_3 1000')
+    .inputFluids('gtceu:grading_fluid_2 1000')
     .itemOutputs('bloodmagic:airscribetool')
     .soulInput(20000)
     .duration(460)
     .EUt(GTValues.VA[GTValues.LuV]);
   event.recipes.gtceu.hellfire_foundry('dusk_chalk')
     .itemInputs(['occultism:chalk_purple_impure', 'gtceu:quantum_star', 'ad_astra:moon_globe', 'gtceu:trinium_block'])
-    .inputFluids('gtceu:grading_fluid_4 1000')
+    .inputFluids('gtceu:grading_fluid_3 1000')
     .itemOutputs('bloodmagic:duskscribetool')
     .soulInput(20000)
     .duration(460)
@@ -380,7 +380,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LuV]);
   event.recipes.gtceu.hellfire_foundry('lava_crystal')
     .itemInputs(['botania:blaze_block', 'botania:blaze_block', 'botania:blaze_block', 'gtceu:exquisite_nether_quartz_gem', 'botania:mana_diamond_block'])
-    .inputFluids('gtceu:grading_fluid_3 500')
+    .inputFluids('gtceu:grading_fluid_2 500')
     .itemOutputs('bloodmagic:lavacrystal')
     .soulInput(10000)
     .duration(460)
