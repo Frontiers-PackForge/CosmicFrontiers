@@ -660,6 +660,9 @@ ServerEvents.recipes(event => {
   event.shapeless('ae2:cable_interface', [
     'ae2:interface'
   ])
+  event.shapeless('ae2:cable_energy_acceptor', [
+    'ae2:energy_acceptor'
+  ])
   event.shapeless('ae2:interface', [
     'ae2:cable_interface'
   ])
