@@ -13,6 +13,7 @@ ServerEvents.tags('item', event => {
     event.add('forge:raw_pork', 'croptopia:ground_pork')
     event.add('croptopia:beef_mutton', 'farmersdelight:minced_beef')
     event.add('croptopia:beef_mutton', 'farmersdelight:mutton_chops')
+    event.remove('forge:oat', 'vintagedelight:oat') //this removes vintagedelight oat from one recipe (oat cutting) 
     
     event.removeAll('diet:special_food') // Slicer recipes add nutrition to them already, keeping them in this tag makes it do double nutrition
     
