@@ -61,6 +61,7 @@ ServerEvents.recipes(event => {
        event.remove({ id: 'gtceu:extractor/extract_luminite_block' })
        event.remove({ id: 'gtceu:extractor/extract_luminite_nugget' })
        event.remove({ id: 'gtceu:arc_furnace/arc_empty_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_sculk' })
        event.remove({ id: 'gtceu:macerator/macerate_empty_mold' })
        event.remove({ id: 'gtceu:arc_furnace/arc_plate_casting_mold' })
        event.remove({ id: 'gtceu:macerator/macerate_plate_casting_mold' })

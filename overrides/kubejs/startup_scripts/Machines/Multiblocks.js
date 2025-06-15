@@ -92,7 +92,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', Predicates.blocks('malum:wicked_spirited_glass'))
             .where('E', Predicates.blocks('malum:block_of_soul_stained_steel'))
             .where('B', Predicates.blocks(GTBlocks.CASING_ALUMINIUM_FROSTPROOF.get()))
-            .where('A', Predicates.blocks(GTBlocks.CASING_TITANIUM_STABLE.get())
+            .where('A', Predicates.blocks(GTBlocks.CASING_TITANIUM_STABLE.get()).setMinGlobalLimited(30, 30)
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
