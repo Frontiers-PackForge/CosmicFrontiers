@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "exoplanet_03s9__earth"
 	group: "49DCE46B3EB22AEA"
@@ -29,22 +30,24 @@
 	quests: [
 		{
 			description: [
-				"          —----- Script #1.216e939 —-----"
-				"                &eEnviroment Settings&r - &aOK&r!"
-				"       &eMemory Status&r - &cUnrecoverable Error&r"
-				"         &7Can not disconnect memory storage&r."
-				"               &7Inducing Temporal Amnesia&r."
-				"             &cAll other checks have failed&r."
-				"               Starting Script #1.216e939 "
-				"          —---------------------—-----"
-				"                    VERDICT - GUILTY"
-				"            STATUS - Sub Dimensional Prison"
+				"                —----- Script #1.216e939 —-----"
+				"                      &eEnviroment Settings&r - &aOK&r!"
+				"             &eMemory Status&r - &cUnrecoverable Error&r"
+				"               &7Can not disconnect memory storage&r."
+				"                     &7Inducing Temporal Amnesia&r."
+				"                   &cAll other checks have failed&r."
+				"                     Starting Script #1.216e939 "
+				"                —---------------------—-----"
+				"                          VERDICT - GUILTY"
+				"                  STATUS - Sub Dimensional Prison"
 				"          "
-				"               Error Loading Information"
+				"                     Error Loading Information"
 				""
 				""
-				"        &7[This is not a bug, just story -Ghost]"
-				""
+				" &l&c[Frontiers is an extremely curated experience]"
+				"         &c&l[DO NOT report issues to other mods]"
+				"          &c&l[report all issues to the Frontiers]"
+				"                &c&l[Github before anything! ! !]"
 			]
 			icon: {
 				Count: 1
@@ -57,7 +60,7 @@
 				}
 			}
 			id: "4D96DE63E82D8EAA"
-			min_width: 256
+			min_width: 300
 			rewards: [{
 				id: "5305EDA65C560BED"
 				item: "cosmiccore:shard_of_perpetuity"
@@ -123,32 +126,26 @@
 				"Being outside or indoors"
 				"Being Dry or Wet&r"
 				""
-				"{@pagebreak}"
+				"The Sewing Table allows you to apply various coatings to your armor which modify temperature resistances, they're pretty bad and I think I will end up buffing them in the future."
 				""
-				"Your PDA(*HUD) shows two values for temperature; to the right is the environment's temperature. Being in too hot or cold of an environment will make your Body Temperature start to climb (color indicating if you are freezing or overheating); as you become more afflicted by the temperature around you, your body will begin to shut down in various ways, either restricting your movement or vision. "
+				"Cooling Coat - &cHeat Resistance&r"
+				"Warming Coat - &bCold Resistance&r"
+				"Thermal Coat - &5Thermal Resistance&r (Resists both hot/cold)"
 				""
 				""
-				"You can insulate yourself with armor, and apply layers to any armor in the game with the sewing table."
-				""
-				"Valid Insulators are"
-				""
-				"Leather - &5Well-rounded Insulation&r"
-				"Goat Fur - &bStrong Cold Insulation&r"
-				"Hoglin Hide - &cStrong Heat Insulation&r"
-				"Chameleon Molt - &aAdaptive Insulation which adjusted slowly over time&r"
-				""
-				"Potions &6completely nullify&r any negatives applied by heat/cold"
+				"There are various Potions which can make you able to resist or completely immune to hot/cold effects.  Though Heat/Ice Immunity Potions shouldn't ever really be needed and may be swapped with more unique methods in the future"
 			]
 			icon: {
 				Count: 1
 				ForgeCaps: {
 					Parent: {
-						temperature: 36.2f
+						temperature: 6.8f
 					}
 				}
 				id: "legendarysurvivaloverhaul:thermometer"
 			}
 			id: "423EB7A96CB261A3"
+			min_width: 400
 			rewards: [{
 				id: "0343745A0E5CD43E"
 				item: "cosmiccore:shard_of_perpetuity"
@@ -222,6 +219,8 @@
 				""
 				"I'm also giving you an unbreakable hammer to help with clearing of blocks"
 				"Yes, It is 'weirdly durable', You could take this hammer to the end of time with you."
+				""
+				"&cKNOWN BUG: SOMETIMES THE HAMMER QUEST DUPLICATES THE REWARD, PLEASE THROW IT OUT TY LOL&r"
 			]
 			icon: {
 				Count: 1
@@ -247,44 +246,36 @@
 				}
 			}
 			id: "5693AA8924634F44"
-			rewards: [
-				{
-					id: "59BDAF6281D18447"
-					item: {
-						Count: 1
-						id: "gtceu:steel_mining_hammer"
-						tag: {
-							DisallowContainerItem: 0b
-							GT.Behaviours: {
-								AoEColumn: 1
-								AoELayer: 0
-								AoERow: 1
-								MaxAoEColumn: 1
-								MaxAoELayer: 0
-								MaxAoERow: 1
-								TorchPlacing: 1
-							}
-							GT.Tool: {
-								Damage: 0
-								HarvestLevel: 3
-								MaxDamage: 1535
-								ToolSpeed: 6.0f
-							}
-							HideFlags: 2
-							Unbreakable: 1
-							display: {
-								Name: "{\"text\":\"Weirdly Durable Hammer\"}"
-							}
+			rewards: [{
+				id: "77B394833AAFBC59"
+				item: {
+					Count: 1
+					id: "gtceu:steel_mining_hammer"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							AoEColumn: 1
+							AoELayer: 0
+							AoERow: 1
+							MaxAoEColumn: 1
+							MaxAoELayer: 0
+							MaxAoERow: 1
+						}
+						GT.Tool: {
+							Damage: 0
+							HarvestLevel: 3
+							MaxDamage: 1535
+							ToolSpeed: 6.0f
+						}
+						HideFlags: 2
+						Unbreakable: 1
+						display: {
+							Name: "{\"text\":\"Weirdly Durable Hammer\"}"
 						}
 					}
-					type: "item"
 				}
-				{
-					id: "52D84DDE25372FDE"
-					item: "cosmiccore:shard_of_perpetuity"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			subtitle: "I don't care how you get it."
 			tasks: [{
 				id: "08C287391F806DE9"
@@ -869,17 +860,46 @@
 				""
 				"Advance forward in each quest chapter to unlock more quest pages and to discover more of the story of Cosmic Frontiers!"
 			]
+			icon: "ftbquests:book"
 			id: "0746B093412C1AA8"
 			shape: "gear"
 			subtitle: "Calm down!"
 			tasks: [{
-				id: "0F04030F98A99AEE"
-				item: "ftbquests:book"
-				type: "item"
+				id: "24328E93068BFC89"
+				type: "checkmark"
 			}]
 			title: "Where's the Questbook!?"
 			x: 6.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"Before access to coal or charcoal, you can make torches out of sticky resin."
+				""
+				"This can be useful for lighting up your first coal mines before you have truly settled down."
+				""
+				""
+				"The night is cold, so best to start searching for flammable fuels now rather than later."
+				""
+				""
+				"&7&oHave a single torch on the house ~G&r"
+			]
+			icon: "minecraft:torch"
+			id: "61E27B0501373628"
+			rewards: [{
+				id: "33F44A4D2C0F8624"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			subtitle: "Torches and You"
+			tasks: [{
+				id: "2746BC2A90FB3060"
+				type: "checkmark"
+			}]
+			title: "Need a Light?"
+			x: 7.5d
+			y: 7.0d
 		}
 	]
 	subtitle: [

@@ -200,7 +200,6 @@
 				"3030163CA604944A"
 				"3822951EF3C8636E"
 				"254290F20F62F959"
-				"0713A629FE353718"
 			]
 			description: [
 				"Who would have thought aerating a concoction of fuel along with Naquadah would make such a powerful fuel. Just make sure your reactors don't go critical as you might just erase the planet you stand on."
@@ -625,8 +624,8 @@
 			size: 1.5d
 			subtitle: "Larger and Better LCR"
 			tasks: [{
-				id: "40B7773B7F8F9A96"
-				item: "cosmiccore:vomahine_industrial_chemical_plant"
+				id: "729F9809BBCF9DBC"
+				item: "cosmiccore:industrial_chemical_vat"
 				type: "item"
 			}]
 			title: "Industrial Chemical Vat"
@@ -688,14 +687,14 @@
 				""
 				"No other field of microgravity will work, please make sure you set this up in the orbit of earth."
 			]
+			icon: "ad_astra:earth_globe"
 			id: "741EF8867F73802F"
 			shape: "hexagon"
 			size: 1.75d
 			subtitle: "To Orbit!"
 			tasks: [{
-				id: "1B5AE134D80E7986"
-				item: "ad_astra:earth_globe"
-				type: "item"
+				id: "326C6A09FE2AD868"
+				type: "checkmark"
 			}]
 			title: "Things are getting tricky"
 			x: -6.0d
@@ -727,6 +726,27 @@
 			]
 			icon: "gtceu:luv_fusion_reactor"
 			id: "6EA6009DEC0F3345"
+			rewards: [
+				{
+					id: "14A930AB1395CC58"
+					item: {
+						Count: 1
+						id: "trofers:medium_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "frontiers:multi/fusion"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "10E862209F62BD2B"
+					item: "cosmiccore:cluster_of_perpetuity"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 2.5d
 			subtitle: "The power to fuse."
@@ -766,6 +786,7 @@
 				{
 					id: "70542BCF4E3C7F94"
 					item: "gtceu:resh_neutron_plasma_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -786,6 +807,7 @@
 				{
 					id: "3D5771A62138EA36"
 					item: "gtceu:alef_neutron_plasma_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -806,6 +828,7 @@
 				{
 					id: "087B7E20DB143F6D"
 					item: "gtceu:pey_neutron_plasma_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -826,6 +849,7 @@
 				{
 					id: "60BA5D2CEE43C0EC"
 					item: "gtceu:ayin_neutron_plasma_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -902,7 +926,7 @@
 				item: "cosmiccore:neutronite_ingot"
 				type: "item"
 			}]
-			title: "Neutronite - ZPM Gate #1"
+			title: "&aNeutronite, Get!"
 			x: 0.0d
 			y: -11.0d
 		}
@@ -929,8 +953,25 @@
 				"52AD639AE0BC4241"
 				"7631222987D9363E"
 			]
-			description: ["This Quest will Open up the ZPM Tab, which may prove of some usefulness even if you do not have Crystal Circuits. As non-major gates can be build from ZPM without UV Circuitry."]
+			description: [
+				"This Quest will Open up the ZPM Tab, which may prove of some usefulness even if you do not have Crystal Circuits. As non-major gates can be build from ZPM without UV Circuitry."
+				""
+				"For Example, ZPM Soul Hatches are possible (for now)"
+			]
 			id: "3F5E81046FD4215B"
+			rewards: [{
+				id: "161949FCE693AA4C"
+				item: {
+					Count: 1
+					id: "trofers:small_plate"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "frontiers:materials/neutronite"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "Only half the climb"
@@ -1022,6 +1063,8 @@
 				"6548740681BDAE49"
 			]
 			description: [
+				"Note; Requires Research Station, so you must progress to ZPM."
+				""
 				"&bCrystal Mainframes&r at last! It only took you constructing a thriving &espace industry&r!"
 				""
 				"These powerful mainframes allow you to crack through major roadblocks that come in ZPM."
@@ -1072,9 +1115,8 @@
 			size: 1.75d
 			subtitle: "Back to the deep!"
 			tasks: [{
-				id: "752BCF58D95740DC"
-				item: "undergarden:goo_ball"
-				type: "item"
+				id: "1A0969DFA8979ACB"
+				type: "checkmark"
 			}]
 			title: "Returning to the Gardens"
 			x: -8.0d
@@ -1290,13 +1332,13 @@
 		}
 		{
 			dependencies: ["741EF8867F73802F"]
+			icon: "gtceu:assembly_line"
 			id: "6548740681BDAE49"
 			shape: "hexagon"
 			size: 1.25d
 			tasks: [{
-				id: "539F9F51EFEAED86"
-				item: "gtceu:assembly_line"
-				type: "item"
+				id: "3E3B6624349DCC3F"
+				type: "checkmark"
 			}]
 			title: "Assembly line, in Space!"
 			x: -6.0d
@@ -1439,7 +1481,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["2C231CE663DDA562"]
+			dependencies: ["75E3A149361EA931"]
 			icon: "bloodmagic:ritualdiviner"
 			id: "4E823028C4B3309D"
 			tasks: [{
@@ -1509,6 +1551,7 @@
 				""
 				"You have access to Grading Catalyst T2 now, go make some T3 slates and upgrade your altar!"
 			]
+			hide_until_deps_visible: true
 			id: "435441F1145C9166"
 			subtitle: "Tier 3 Slates"
 			tasks: [
@@ -1529,7 +1572,7 @@
 		{
 			dependencies: ["7F7D6A88A4870EE1"]
 			description: [
-				"From \"&nTier 5&r\" Blood Orb and higher you will instead use the \"&eSanguine Infuser&r\" to automate blood infusions &busing LP&r."
+				"From \"&nTier 5&r\" Blood Orb and higher you will instead use the \"&eHemophagic Transfuser&r\" to automate blood infusions &busing LP&r."
 				""
 				"You can generate LP with &cSuffering Chambers&r OR &cWell of Suffering&r, though WOS will always be capped by &6orb tier&r- while SSC's are capped by &6soul output hatch tier&r."
 				""
@@ -1619,10 +1662,17 @@
 		}
 		{
 			dependencies: ["20B72AA21636E2E6"]
+			description: [
+				"Bloodmagic Meteors Offer you rare and Unique Materials generally off the beaten path."
+				""
+				""
+				"Most Meteors are too costly for your current SoulHatches/Blood Orbs, so you will need to proceed to ZPM first"
+			]
 			icon: "rechiseled:netherite_block_meteoric"
 			id: "27DAD4B0E8BDA6B5"
 			shape: "octagon"
 			size: 2.0d
+			subtitle: "Pull down the Sky"
 			tasks: [{
 				id: "2BC147682A52FD81"
 				type: "checkmark"
@@ -1711,13 +1761,24 @@
 		{
 			dependencies: [
 				"547AB876F988026C"
-				"22AAB45F4D7D23AF"
 				"7EBEBD486707B1AC"
 			]
+			description: [
+				"This Rocket is considerably more expensive than your previous rockets, allowing you to travel to two new locations- Venus and Mercury."
+				""
+				"&eMercury&r and &eVenus&r both have unique atmospheres allowing some machines to process better recipes than before. "
+				""
+				""
+				""
+				"Notably, the &6Polymerizer&r is only able to be used on &bVenus&r, and Unlocks doubling your plastics as well as &eNylon-6,6&r"
+				""
+				"&cDev Note; They are pretty barren, I would like to add some more structures but Worldgen is something I am afraid of and need to take the time to learn in the future. For now just getting access to them for Crafts/Resources will be established, but in the Future/Beta I will take the time to clean up the planets and make them more unique.&r"
+			]
 			id: "0F563AE8107A0198"
+			min_width: 350
 			shape: "rsquare"
 			size: 2.0d
-			subtitle: "No More Rocket Table"
+			subtitle: "A Trinavine Singularity"
 			tasks: [{
 				id: "738F3CB6378625E0"
 				item: {
@@ -1768,31 +1829,29 @@
 		}
 		{
 			dependencies: ["5D5F6E9D1A21EA72"]
+			description: [
+				"You will need to continue norwards in the LuV chapter to unlock &cTrinavine&r"
+				""
+				"This quest serves as a reminder to make sure your infrastructure can keep up with the costly demands of this new material."
+			]
 			id: "547AB876F988026C"
+			subtitle: "Progression Gate"
 			tasks: [{
-				icon: "cosmiccore:stygian_plague_bucket"
-				id: "6721B1FD75B308C0"
-				type: "custom"
+				id: "193D9FC2EB4EBB93"
+				item: "cosmiccore:trinavine_ingot"
+				type: "item"
 			}]
 			x: -3.0d
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"079024EEE895822F"
-				"6354D6CB595585EA"
+			dependencies: ["6354D6CB595585EA"]
+			description: [
+				"While Nutrient Solution isn't required for progression in LuV, it can provide you with a valuable boost to all your crop growing."
+				""
+				""
+				"Maybe this will solve your chlorine problems after all.."
 			]
-			id: "27032F2089A58279"
-			tasks: [{
-				id: "643040C341C3D4D6"
-				item: "gtceu:sterilized_lake_water_bucket"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["27032F2089A58279"]
 			id: "585524C706B8667B"
 			shape: "hexagon"
 			size: 1.25d
@@ -1802,31 +1861,8 @@
 				item: "gtceu:nutrient_solution_base_bucket"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"4CB55CFBB968311A"
-				"585524C706B8667B"
-			]
-			description: [
-				"Dealing with the Stygian Plague within specalized multiblocks will require heavy dosages of radiation to prevent containment failures of this horrible bioweapon."
-				""
-				"You will need to utilize the heavy radiation properties of Naquadria to coax this virus to not try and wear away machine frames and casings. All devices that handle the plague will require specalized care."
-			]
-			icon: "gtceu:wetware_processor_mainframe"
-			id: "73982F415DAFA734"
-			shape: "gear"
-			size: 1.25d
-			subtitle: "Wetware Dangers"
-			tasks: [{
-				id: "75FF01ABBE60574A"
-				type: "checkmark"
-			}]
-			title: "Wetware Warnings"
-			x: -10.0d
-			y: 1.0d
+			x: -8.75d
+			y: -6.25d
 		}
 		{
 			dependencies: ["5C557676D480C3BA"]
@@ -1864,8 +1900,8 @@
 				item: "gtceu:white_gold_dust"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4281EF4DD50CB701"]
@@ -1880,8 +1916,8 @@
 		}
 		{
 			dependencies: [
-				"05769648F4F48956"
 				"0C61F4D61E9D3965"
+				"05769648F4F48956"
 			]
 			id: "1286BE8E609C719C"
 			tasks: [{
@@ -1889,8 +1925,8 @@
 				item: "gtceu:rhenium_sintered_white_gold_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 6.0d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["3303DCA22F0AC9C6"]
@@ -1912,89 +1948,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["1286BE8E609C719C"]
-			id: "5F3EA5E12E6D193F"
-			shape: "hexagon"
-			size: 1.25d
-			tasks: [{
-				id: "3390888704852262"
-				item: "gtceu:high_strength_low_alloy_pthanterum_ingot"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["5C557676D480C3BA"]
-			id: "45D0B1E7877BA790"
-			shape: "octagon"
-			subtitle: "VERY Radioactive"
-			tasks: [{
-				id: "2A871726216C08C3"
-				item: "gtceu:astatine_ingot"
-				type: "item"
-			}]
-			x: 3.0d
 			y: 4.5d
-		}
-		{
-			dependencies: ["45D0B1E7877BA790"]
-			id: "40292B12D8E71562"
-			shape: "hexagon"
-			size: 1.0d
-			tasks: [{
-				id: "3D283BF93C8FB9C6"
-				item: "gtceu:radium_bucket"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 4.5d
-		}
-		{
-			dependencies: [
-				"1286BE8E609C719C"
-				"5D5F6E9D1A21EA72"
-			]
-			id: "22AAB45F4D7D23AF"
-			shape: "rsquare"
-			size: 1.25d
-			tasks: [{
-				id: "747ABD4106CCE850"
-				item: "gtceu:vibrosomatic_sythetic_pthanterum_ingot"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["5F3EA5E12E6D193F"]
-			id: "4F23700553577A8E"
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "1960C29CDF948969"
-				item: "cosmiccore:vomahine_certified_interstellar_grade_casing"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["5F3EA5E12E6D193F"]
-			hide_dependent_lines: true
-			id: "0713A629FE353718"
-			shape: "hexagon"
-			size: 1.25d
-			tasks: [{
-				id: "49A1BEC69035E947"
-				item: "cosmiccore:resonantly_tuned_virtue_meld_casing"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 8.75d
 		}
 		{
 			dependencies: ["1EB2D194054C6905"]
@@ -2111,17 +2065,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["5D5F6E9D1A21EA72"]
-			id: "576366682DFCEDC2"
-			tasks: [{
-				id: "77267BF65AF65101"
-				item: "minecraft:oak_log"
-				type: "item"
-			}]
-			x: -1.240476190476187d
-			y: 5.298809523809531d
-		}
-		{
 			dependencies: ["669EB7FC0C6A0756"]
 			description: [
 				"Allows the use or laser target/source hatches to move energy around in massive quantities."
@@ -2147,7 +2090,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: -14.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["720CCC24CB7E693F"]
@@ -2192,8 +2135,7 @@
 			y: 2.336904761904762d
 		}
 		{
-			dependencies: ["15FA1625BC0CB121"]
-			hide_dependent_lines: true
+			dependencies: ["131B7870338CC02C"]
 			id: "52FDB03D36E94054"
 			shape: "hexagon"
 			subtitle: "Demon Will, Finally"
@@ -2203,7 +2145,62 @@
 				type: "item"
 			}]
 			x: 10.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["15FA1625BC0CB121"]
+			description: ["Vitrius is a radioactive variant of prisma that can deconstruct and reassemble matter into new forms—though the results often differ from the original."]
+			icon: "cosmiccore:vitrius_bucket"
+			id: "255DB5EC1085FA61"
+			shape: "hexagon"
+			subtitle: "Chromatic Corruption"
+			tasks: [
+				{
+					id: "1DC87E5A5BB6CCC8"
+					item: "cosmiccore:vitrius_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2386A2F1D740FA30"
+					title: "Fluid Quest - Skip"
+					type: "checkmark"
+				}
+			]
+			x: 10.0d
 			y: -9.5d
+		}
+		{
+			dependencies: ["255DB5EC1085FA61"]
+			description: [
+				"Once again, your experiments lead you back to the glass marbles—those fragments of your memories. You can't help but wonder if provoking a reaction with this fluid is wise."
+				""
+				"The moment you pour it, the world falls eerily silent—then comes the crack."
+				""
+				"Now the marble glows a stained purple hue. And it won't let go of your hand."
+			]
+			hide_text_until_complete: true
+			id: "4373FA6BCA9DA7FA"
+			shape: "octagon"
+			subtitle: "Perpetuity Violations | Lore Entry"
+			tasks: [{
+				id: "0A0E2627F569E9F5"
+				item: "cosmiccore:wicked_essence"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["4373FA6BCA9DA7FA"]
+			id: "131B7870338CC02C"
+			tasks: [{
+				id: "716665A0052B9CB5"
+				item: "cosmiccore:aberrant_essence"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -12.5d
 		}
 	]
 	title: "A Factory Soaked In Blood [&dLuV&r]"

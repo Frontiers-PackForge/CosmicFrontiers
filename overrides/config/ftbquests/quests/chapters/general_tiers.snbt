@@ -54,7 +54,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -70,7 +70,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -3.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -86,7 +86,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -535,8 +535,8 @@
 			shape: "gear"
 			size: 1.0d
 			tasks: [{
-				id: "37C10D36A3542F8C"
-				item: "cosmiccore:macroverse_processor"
+				id: "1FED7CB77FDE326B"
+				item: "cosmiccore:eschaton_processor"
 				type: "item"
 			}]
 			x: 7.5d
@@ -615,8 +615,8 @@
 			id: "4E7E1D8DD97AB90D"
 			size: 1.0d
 			tasks: [{
-				id: "57AF08048A069841"
-				item: "cosmiccore:macroverse_processor_assembly"
+				id: "4194AEB83B1FBD47"
+				item: "cosmiccore:eschaton_processor_assembly"
 				type: "item"
 			}]
 			x: 7.5d
@@ -708,12 +708,11 @@
 				"4E7E1D8DD97AB90D"
 				"38DA0B4E0DBAC364"
 			]
-			hide_until_deps_complete: true
 			id: "6953D7B284072690"
 			size: 1.0d
 			tasks: [{
-				id: "0EE2F4A190B81B54"
-				item: "cosmiccore:macroverse_processor_supercomputer"
+				id: "15BC5E55F5FEA8E9"
+				item: "cosmiccore:eschaton_processor_supercomputer"
 				type: "item"
 			}]
 			x: 7.5d
@@ -778,8 +777,8 @@
 			id: "17B81787A8E750A2"
 			size: 1.0d
 			tasks: [{
-				id: "0107C3CA5CCD2A1A"
-				item: "cosmiccore:macroverse_processor_mainframe"
+				id: "323DCDD110FE5861"
+				item: "cosmiccore:eschaton_processor_mainframe"
 				type: "item"
 			}]
 			x: 7.5d

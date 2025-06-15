@@ -1036,12 +1036,9 @@
 				"WARNING : DON't CONSUME THE SEAL YET IF YOU ARE PLAYING MULTIPLAYER"
 				""
 				""
-				"In the future. A multi known as the \"Gateway Triangulator\" will be what allows you to open portals to the nether, aether, and undergarden"
+				"To Assemble the Seal of the underworld, look at the '&bWeak Fusion Ritual&r' within the &eDictionary of Spirits&r, this will allow you to make a vessel capable of withstanding the soul-reaping effects of the nether."
 				""
-				""
-				"For now, normal nether portals will function as intended, feel free to enter the nether that way."
-				""
-				"&4You must consume the seal to enter, regardless.&r"
+				"&4You must consume the seal to enter (eat it!), regardless.&r"
 			]
 			id: "370680B11E59D49C"
 			shape: "octagon"
@@ -1108,6 +1105,7 @@
 				""
 				"Thankfully, there's a shortcut recipe that doesn't require LV circuits"
 				""
+				"EMI DOESNT SHOW THE RECIPE! ! ! - YOU CAN MAKE THESE BY PLACING A VAC TUBE IN YOUR CRAFTING GRID!"
 				""
 				"You'll need at least 2."
 			]
@@ -1937,7 +1935,6 @@
 				"459F7333F240D028"
 				"29432A122031CB3E"
 				"739AF35CCA609F56"
-				"2C512064C6836B59"
 			]
 			description: [
 				"You'll need to summon an unbound Afrit and kill it to get the affrit essence needed for red chalk."
@@ -2065,7 +2062,7 @@
 				}
 				type: "item"
 			}]
-			x: -14.0d
+			x: -14.5d
 			y: 4.5d
 		}
 		{
@@ -2589,22 +2586,44 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["7AAEE0AD98A72BE7"]
 			description: [
-				"Sun Ferns can be found in hot biomes across the Overworld."
+				"This is a multiblock version of the steam macerator. Which can run 8 recipes at a time!"
 				""
-				"Golden variant of the Sun Fern. Has a 5% chance to grow from a normal Sun Fern crop, so get to farming! Growth can be sped up with Rich Soil and, obviously, Bone Meal."
-				""
-				"Also, Create contraptions will break the golden crop without replanting, be careful."
+				"While expensive on bronze, making this will stretch your early game ores much farther!"
 			]
-			id: "2C512064C6836B59"
-			subtitle: "Used to be 1%"
-			tasks: [{
-				id: "48F1704ACD19CEAF"
-				item: "legendarysurvivaloverhaul:sun_fern_gold_leaf"
+			id: "66260F7A264970EB"
+			rewards: [{
+				id: "224F2CCD5EF7E65F"
+				item: "cosmiccore:large_shard_of_perpetuity"
 				type: "item"
 			}]
-			x: -14.0d
-			y: 3.5d
+			subtitle: "Bigger IS better!"
+			tasks: [{
+				id: "04320CCAB0B5C1F2"
+				item: "gtceu:steam_grinder"
+				type: "item"
+			}]
+			x: -2.7857142857142847d
+			y: -3.232142857142854d
+		}
+		{
+			dependencies: ["0FF5358645CE9BD5"]
+			description: [
+				"You can create large quantities of &eWrought Iron&r by throwing &aCharcoal Dust&r and &aIron Ingots&r into a pool of &6lava&r."
+				""
+				""
+				"&eWrought Iron&r cooks into &eSteel&r faster alongside &eCoal Coke&r. Doing this in the &6Industrial Primitive Blast Furnace&r with &aWrought Iron Blocks&r reduces the total time per steel ingot by a whopping &b50&r%!"
+			]
+			icon: "gtceu:wrought_iron_ingot"
+			id: "790749CE28487E29"
+			tasks: [{
+				id: "0DECF28458BD45D8"
+				type: "checkmark"
+			}]
+			title: "Need Steel Faster? Try Wrought Iron!"
+			x: 1.0d
+			y: 4.5d
 		}
 	]
 	title: "Rising Pressure - [Steam]"

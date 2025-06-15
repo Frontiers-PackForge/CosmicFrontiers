@@ -1029,7 +1029,11 @@
 		}
 		{
 			dependencies: ["7769523BB907D543"]
-			description: ["Placing &ablaze burners&r under your boilers and fueling them will create more SU from your &esteam engines&r."]
+			description: [
+				"Placing &ablaze burners&r under your boilers and fueling them will create more SU from your &esteam engines&r."
+				""
+				"Unlike Basic Burners, Blaze Burners can also accept lava as a fuel!"
+			]
 			id: "14A3403205AC0A2C"
 			rewards: [{
 				count: 4
@@ -1919,6 +1923,7 @@
 				"I'll make small tweaks to it over the time from 0.6.0 to 0.7.0"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "14692B6B9EEE3212"
 			subtitle: "A WORK IN PROGRESS!"
 			tasks: [{

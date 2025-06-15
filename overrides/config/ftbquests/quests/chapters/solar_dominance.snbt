@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 350
 	default_quest_shape: ""
 	filename: "solar_dominance"
 	group: "7295A11F0DD1E8D1"
@@ -15,8 +16,17 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["6DA881815E8DE99D"]
+			description: [
+				"ZPM IS **INCOMPLETE**"
+				""
+				""
+				"YOU. HAVE. BEEN. WARNED."
+			]
+			hide_until_deps_visible: true
 			id: "1EDA6025077BAA5D"
 			size: 2.0d
+			subtitle: "DANGER AHEAD! ! ! !"
 			tasks: [{
 				id: "4434E755BF9F2B0C"
 				item: "gtceu:zpm_machine_hull"
@@ -36,73 +46,86 @@
 			}]
 			title: "Tier 5 Gradaing Catalyst"
 			x: 0.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0EB37211BFB94473"]
 			id: "00FD19CCFB41CF8A"
+			subtitle: "25M LP Capacity"
 			tasks: [{
 				id: "6D96D3D6A8A27225"
 				item: "cosmiccore:asc_blood_orb"
 				type: "item"
 			}]
 			x: 0.0d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["00FD19CCFB41CF8A"]
+			dependencies: [
+				"00FD19CCFB41CF8A"
+				"6F803279C5027E5C"
+			]
 			icon: "bloodmagic:dungeon_controller"
 			id: "6AA384B858690CAD"
+			shape: "octagon"
 			title: "Dawn of a new cycle"
-			x: 0.0d
-			y: -5.5d
+			x: 3.0d
+			y: -4.5d
 		}
 		{
+			dependencies: ["33E3A30B9A5C165B"]
 			id: "3DCCE7A7C2B39FCE"
-			subtitle: "ZPM Rubber"
+			subtitle: "ZPM High Grade Rubber"
 			tasks: [{
 				id: "1089A2E77561CCDB"
 				item: "gtceu:silicone_rubber_foil"
 				type: "item"
 			}]
 			title: "Vibrosomatic Neoprene"
-			x: 3.0d
-			y: 3.5d
-		}
-		{
-			id: "2D8A52A43803DF61"
-			subtitle: "ZPM Polymer"
-			tasks: [{
-				id: "177871F871A61E19"
-				item: "gtceu:naquahine_foil"
-				type: "item"
-			}]
-			title: "Nylon"
-			x: 4.5d
-			y: 2.0d
-		}
-		{
-			id: "554E0A71016C4EE9"
-			tasks: [{
-				id: "086250441CA5BE3C"
-				item: "gtceu:research_station"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 0.0d
-		}
-		{
-			id: "6ABD6ECFF6A5ACE4"
-			tasks: [{
-				id: "4F598501D529E29A"
-				item: "gtceu:high_performance_computation_array"
-				type: "item"
-			}]
-			x: -3.5d
+			x: 5.5d
 			y: -1.5d
 		}
 		{
+			dependencies: ["0EB991442E63BE79"]
+			id: "2D8A52A43803DF61"
+			subtitle: "ZPM Polymer"
+			tasks: [{
+				id: "4CAFBD23894099B9"
+				item: "gtceu:nylon_6_6_foil"
+				type: "item"
+			}]
+			title: "Nylon"
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["71EE1119F936C025"]
+			description: [
+				"Note; The behavior of the HPCA from base GTCEU has been changed, see below."
+				""
+				""
+				"The High Performance Computation Array (HPCA) is a multiblock designed to consume power to create computation. "
+			]
+			id: "6ABD6ECFF6A5ACE4"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "New and Full of Color"
+			tasks: [{
+				id: "294EC232F8EC5AB4"
+				item: "cosmiccore:high_performance_computation_array"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"3DCCE7A7C2B39FCE"
+				"33E3A30B9A5C165B"
+			]
 			id: "1B24263AD9282E23"
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "Mana with a thought"
 			tasks: [{
 				id: "23B7F1D9AE1D9C07"
@@ -110,11 +133,13 @@
 				type: "item"
 			}]
 			title: "Mana Digitizer"
-			x: -3.5d
-			y: 1.5d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["5E4004EE418B6CD6"]
 			id: "15D6856B141AD56E"
+			size: 1.25d
 			tasks: [{
 				id: "7FC4C2E489BEC822"
 				item: {
@@ -124,20 +149,20 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.5d
+			x: 3.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["00FD19CCFB41CF8A"]
 			id: "33066F67B95D8F1B"
 			tasks: [{
-				id: "58B7519651E96DB7"
-				item: "gtceu:grading_fluid_4_bucket"
+				id: "0816B481C153A189"
+				item: "gtceu:grading_fluid_6_bucket"
 				type: "item"
 			}]
 			title: "Tier 6 Grading Catalyst"
 			x: 1.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0EB37211BFB94473"]
@@ -148,19 +173,28 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
+			dependencies: [
+				"1C26EFBD68B35D1F"
+				"71EE1119F936C025"
+				"1B8F799F797D7B62"
+			]
 			id: "0CA4111E6FFD6B3D"
 			tasks: [{
 				id: "5C351D8C55A50B84"
 				item: "gtceu:naquahine_superfuel_mk_two_bucket"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.5d
+			x: -11.0d
+			y: 8.0d
 		}
 		{
+			dependencies: [
+				"71EE1119F936C025"
+				"22E893A69FB7C197"
+			]
 			id: "1B8F799F797D7B62"
 			tasks: [{
 				id: "16CBB612DEF4456E"
@@ -168,34 +202,45 @@
 				type: "item"
 			}]
 			title: "Iso-octane doped Stardust Gasoline"
-			x: 1.5d
-			y: 3.5d
+			x: -11.0d
+			y: 4.5d
 		}
 		{
+			dependencies: [
+				"5087296EF0C8C152"
+				"1910A173A44CE16A"
+				"380EDB0E6E4C5BC6"
+				"059FE2EA330761B9"
+			]
 			description: ["An augmented version of Neutronite. Neutron Density has been increased by a factor of 100"]
 			id: "647D1F76EE4D2AE1"
+			shape: "hexagon"
+			size: 1.0d
 			subtitle: "The Real Deal."
 			tasks: [{
 				id: "230AB8C0AF911222"
 				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: 8.0d
+			y: 2.5d
 		}
 		{
+			dependencies: ["77AC87C4258DCDD4"]
 			id: "22E893A69FB7C197"
+			shape: "hexagon"
 			subtitle: "Luminites Big Brother"
 			tasks: [{
-				id: "1CCF154A04864F46"
-				item: "gtceu:desh_ingot"
+				id: "39B0E3198F7B5F61"
+				item: "gtceu:star_metal_ingot"
 				type: "item"
 			}]
 			title: "Starmetal"
-			x: 1.5d
-			y: 2.0d
+			x: -11.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["0D95AAE11C69BE92"]
 			id: "026155575C4F9913"
 			tasks: [{
 				id: "4F3E91E2E861668B"
@@ -203,37 +248,61 @@
 				type: "item"
 			}]
 			title: "Carbon Nanotubes"
-			x: 3.0d
-			y: 2.0d
+			x: -3.5d
+			y: -7.5d
 		}
 		{
+			dependencies: ["1EDA6025077BAA5D"]
 			id: "1FB14148DD45B90D"
+			shape: "pentagon"
 			tasks: [{
 				id: "5421E4482C135F13"
 				item: "gtceu:naquadria_ingot"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 3.5d
+			x: 1.5d
+			y: 2.0d
 		}
 		{
+			dependencies: [
+				"426FAAA49BD81213"
+				"51AC9E9464EE5EE2"
+				"464A2E409E25DD93"
+				"6CF0A6DA136B0B1F"
+				"77AC87C4258DCDD4"
+			]
 			icon: "gtceu:grand_assembly_line"
 			id: "195241FCB0CC40DE"
-			title: "The Wings"
-			x: -5.0d
-			y: 0.0d
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "TODO ; Spirit Altar Multi"
+			tasks: [{
+				id: "4070E241A34E76AC"
+				type: "checkmark"
+			}]
+			title: "The Spirit Well"
+			x: -9.0d
+			y: -3.5d
 		}
 		{
+			dependencies: [
+				"2D31FF8D1689647E"
+				"1FB14148DD45B90D"
+				"6CE9646FEF50045B"
+			]
 			id: "3FCCC1CCDEF90870"
+			shape: "hexagon"
+			size: 1.75d
 			tasks: [{
 				id: "79EA8EA1CBD03519"
 				item: "gtceu:zpm_fusion_reactor"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 0.0d
+			x: 3.5d
+			y: 2.0d
 		}
 		{
+			dependencies: ["6ABD6ECFF6A5ACE4"]
 			id: "5D60F7DF595E5B82"
 			shape: "hexagon"
 			tasks: [{
@@ -241,9 +310,2534 @@
 				item: "gtceu:mana_simulator"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"057D9F8E4E2945C8"
+				"08A7BFAEA4D41E28"
+			]
+			id: "565FABB86902012B"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "Ore Galore"
+			tasks: [{
+				id: "14BEBCD067CC1023"
+				item: "cosmiccore:vomahine_celestial_laser_bore"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["56BF88E18FEDA2AC"]
+			id: "5C1A28DFEA13F6C1"
+			tasks: [{
+				id: "245377636037B2B2"
+				item: "gtceu:wetware_processor"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["08FAF69EBD16AF20"]
+			id: "6CAE04A3F2F4057F"
+			tasks: [{
+				id: "52E14FF7AAC8A2FF"
+				item: "gtceu:wetware_processor_assembly"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"6CAE04A3F2F4057F"
+				"4CE90992174CC2C6"
+				"3076511246E4CB17"
+			]
+			id: "6CED2A043415127F"
+			tasks: [{
+				id: "5794B4CB5D76F755"
+				item: "gtceu:wetware_processor_computer"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"6CED2A043415127F"
+				"15761F4497FC0218"
+			]
+			id: "31CE310C898AC695"
+			subtitle: "Wetware Mainframes"
+			tasks: [{
+				id: "3D1331D498844A7D"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			title: "Your First UHV Circuit"
+			x: 12.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["647D1F76EE4D2AE1"]
+			id: "43EB8098B004F233"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "2547E50EA95692FC"
+				item: "gtceu:mega_vacuum_freezer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"49B55FA57B05FDCC"
+				"2D31FF8D1689647E"
+			]
+			id: "319AFED3381689C0"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Powerful Alloys"
+			tasks: [{
+				id: "4B8A47FFC7285C9E"
+				item: "cosmiccore:orbital_tempering_forge"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"33066F67B95D8F1B"
+				"0D3FA9F6A3AA0568"
+			]
+			id: "6F803279C5027E5C"
+			subtitle: "You heard that right."
+			tasks: [{
+				id: "6BA03A63A44019F0"
+				item: "cosmiccore:void_blood_orb"
+				type: "item"
+			}]
+			title: "Wait, Tier 7?"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["00FD19CCFB41CF8A"]
+			id: "053CA2DEB31524C1"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "1ED5FB95B09F68E5"
+				item: "cosmiccore:zpm_soul_output_hatch"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["053CA2DEB31524C1"]
+			icon: "rechiseled:netherite_block_meteoric"
+			id: "7F030FBE37FF64FA"
+			shape: "gear"
+			size: 1.5d
+			title: "More Powerful Meteors"
+			x: -5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1EDA6025077BAA5D"]
+			id: "23D6FB186E6B935B"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "3E8E34A4923FD101"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_3_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["23D6FB186E6B935B"]
+			icon: "ad_astra:mercury_globe"
+			id: "684AAECC1FC5BA3A"
+			shape: "hexagon"
+			title: "Mercury"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["23D6FB186E6B935B"]
+			icon: "ad_astra:venus_globe"
+			id: "2985993F79D84B6D"
+			tasks: [{
+				dimension: "ad_astra:venus"
+				icon: "ad_astra:venus_globe"
+				id: "7D8A2B6912693767"
+				title: "Visit Venus!"
+				type: "dimension"
+			}]
+			title: "Venus"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["684AAECC1FC5BA3A"]
+			id: "0695F0388872E64C"
+			subtitle: "Pure Tungstate Veins"
+			tasks: [{
+				id: "6F8A515CF5491E17"
+				item: "gtceu:raw_wolframite"
+				type: "item"
+			}]
+			title: "Wolframite"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["684AAECC1FC5BA3A"]
+			id: "261D67D401B54854"
+			subtitle: "Purest Luminite Veins"
+			tasks: [{
+				id: "52E4BD27D4B86EA4"
+				item: "gtceu:raw_luminite"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1EDA6025077BAA5D"
+				"6ABD6ECFF6A5ACE4"
+				"6C96A9A80B62FC90"
+				"2066E83B44ACE6E6"
+			]
+			description: ["The Research Station is the next stage to scanning recipes, you will need to provide the Research Station with Computer Work Units (Known as CWU) to advance the recipe."]
+			id: "3721D1E1F204378F"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Time to get smarter."
+			tasks: [{
+				id: "35140276DD2926F3"
+				item: "gtceu:research_station"
+				type: "item"
+			}]
+			title: "Research Station, Data Computation"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2D8A52A43803DF61"]
+			id: "77AC87C4258DCDD4"
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [{
+				id: "5C2D3BB2260DDDEE"
+				item: "cosmiccore:reinforced_trinavine_coil_block"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77AC87C4258DCDD4"]
+			id: "71EE1119F936C025"
+			shape: "hexagon"
+			tasks: [{
+				id: "1AB71427C0CD1DCB"
+				item: "gtceu:uranium_rhodium_dinaquadide_ingot"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1EDA6025077BAA5D"]
+			id: "6CE9646FEF50045B"
+			shape: "pentagon"
+			tasks: [{
+				id: "3774BBB105DF3ED0"
+				item: "cosmiccore:neutronite_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3FCCC1CCDEF90870"]
+			id: "49B55FA57B05FDCC"
+			subtitle: "Powerful Titanium"
+			tasks: [{
+				id: "675511C821726EFC"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			id: "50F34E3143E529C9"
+			tasks: [{
+				id: "40A8642B7861539E"
+				item: "bloodmagic:componentframeparts"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"50F34E3143E529C9"
+				"07CDFAD2D24E929F"
+			]
+			id: "1EC282333491563B"
+			tasks: [{
+				id: "314AA571E9984ACF"
+				item: "gtceu:sterilized_growth_medium_bucket"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"565FABB86902012B"
+				"4F671EE1854DA640"
+				"15761F4497FC0218"
+				"391543973682C8A6"
+			]
+			id: "38A4EF785F5765BF"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "3267B86F336DE899"
+				item: "gtceu:uv_machine_hull"
+				type: "item"
+			}]
+			title: "Onto UV"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["00FD19CCFB41CF8A"]
+			id: "5BB9D2C0CB96AB3C"
+			tasks: [{
+				id: "7A71C524DDF3DEEF"
+				item: "gtceu:energy_module"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"6AA384B858690CAD"
+				"5BB9D2C0CB96AB3C"
+				"6F78B755BD7972DE"
+			]
+			id: "78FB364EAC082F63"
+			tasks: [{
+				id: "7F613940FB94EB9F"
+				item: "gtceu:zpm_lapotronic_battery"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"1EF59593A9EA8676"
+				"380EDB0E6E4C5BC6"
+				"3076511246E4CB17"
+			]
+			id: "4CE90992174CC2C6"
+			tasks: [{
+				id: "75B9AD12A76E2C6B"
+				item: "cosmiccore:crystalline_capacitor"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1B24263AD9282E23"
+				"1389F155BB2B4FE4"
+			]
+			id: "1EF59593A9EA8676"
+			shape: "hexagon"
+			tasks: [{
+				id: "0DFAFA0AA9FC3899"
+				item: "gtceu:annealed_manasteel_bucket"
+				type: "item"
+			}]
+			title: "Somatic Mana"
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1EF59593A9EA8676"]
+			description: ["You're going to need plenty of runes from here on, Somatic Mana can help with the growing mana pains"]
+			id: "750D6DED17C8C014"
+			shape: "gear"
+			subtitle: "Better Mana Imbument Rates"
+			tasks: [{
+				id: "738216F02D2B1399"
+				item: "botania:dragonstone_block"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1EDA6025077BAA5D"]
+			hide_dependency_lines: true
+			id: "426FAAA49BD81213"
+			tasks: [{
+				id: "7D1798EB782A8564"
+				item: "botania:rune_pride"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1EDA6025077BAA5D"]
+			hide_dependency_lines: true
+			id: "51AC9E9464EE5EE2"
+			tasks: [{
+				id: "7410BB2801E541A7"
+				item: "botania:rune_envy"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1EDA6025077BAA5D"]
+			hide_dependency_lines: true
+			id: "464A2E409E25DD93"
+			tasks: [{
+				id: "108C93739A157E11"
+				item: "botania:rune_wrath"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1EDA6025077BAA5D"]
+			hide_dependency_lines: true
+			id: "6CF0A6DA136B0B1F"
+			tasks: [{
+				id: "1D051582E5A8D918"
+				item: "botania:rune_sloth"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["195241FCB0CC40DE"]
+			id: "497C88F09884E47E"
+			tasks: [{
+				id: "7AC72E742F7325B5"
+				item: "malum:sacred_spirit"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["195241FCB0CC40DE"]
+			id: "23473D0783C4CA98"
+			tasks: [{
+				id: "201D99A91E78B513"
+				item: "malum:wicked_spirit"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["195241FCB0CC40DE"]
+			id: "12C0977AC42F87E8"
+			tasks: [{
+				id: "48095896003BF100"
+				item: "malum:arcane_spirit"
+				type: "item"
+			}]
+			x: -9.75d
+			y: -4.5d
+		}
+		{
+			dependencies: ["195241FCB0CC40DE"]
+			id: "1DBFD4E118C5FF5B"
+			tasks: [{
+				id: "676A5137E3974511"
+				item: "malum:aerial_spirit"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["195241FCB0CC40DE"]
+			id: "204189A22B9BCC11"
+			tasks: [{
+				id: "0F00480E64E0336E"
+				item: "malum:aqueous_spirit"
+				type: "item"
+			}]
+			x: -8.25d
+			y: -4.5d
+		}
+		{
+			dependencies: ["195241FCB0CC40DE"]
+			id: "668B16FEB0B0BF8C"
+			tasks: [{
+				id: "79191854882974CC"
+				item: "malum:earthen_spirit"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["195241FCB0CC40DE"]
+			id: "36963D57C67F3540"
+			tasks: [{
+				id: "1E4D7D44C7248275"
+				item: "malum:infernal_spirit"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"1DBFD4E118C5FF5B"
+				"497C88F09884E47E"
+				"668B16FEB0B0BF8C"
+				"204189A22B9BCC11"
+				"23473D0783C4CA98"
+				"12C0977AC42F87E8"
+				"36963D57C67F3540"
+				"0D95AAE11C69BE92"
+			]
+			id: "44DF4EBD1CB75DE1"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "5C4289D4CE7F45CE"
+				item: "malum:umbral_spirit"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7F030FBE37FF64FA"]
+			id: "0D95AAE11C69BE92"
+			tasks: [{
+				id: "45F830492348D860"
+				item: "gtceu:raw_opal"
+				type: "item"
+			}]
+			title: "Raw Jade"
+			x: -5.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["565FABB86902012B"]
+			id: "5E4004EE418B6CD6"
+			tasks: [{
+				id: "670BCA95209C3724"
+				item: "gtceu:raw_realgar"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["026155575C4F9913"]
+			id: "08A7BFAEA4D41E28"
+			tasks: [{
+				id: "6112F5C9C205888C"
+				item: "cosmiccore:multi_purpose_interstellar_grade_casing"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["78FB364EAC082F63"]
+			id: "057D9F8E4E2945C8"
+			tasks: [{
+				id: "29B9787921E48785"
+				item: "cosmiccore:ultra_powered_casing"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["31CE310C898AC695"]
+			id: "5033B5CD528EDCAF"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "5ACD41CF52A29341"
+				item: {
+					Count: 1
+					id: "cosmiccore:sanguine_warptech_helmet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6AA384B858690CAD"]
+			id: "6F78B755BD7972DE"
+			tasks: [{
+				id: "745DA0E9996C4D9E"
+				item: "cosmiccore:zpm_radio_module"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"1EC282333491563B"
+				"3B5071D6C659C26F"
+			]
+			id: "19147C056A6C469C"
+			tasks: [{
+				id: "62675C0268AA2926"
+				item: "gtceu:wetware_printed_circuit_board"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["38A4EF785F5765BF"]
+			icon: "createdeco:decal_up"
+			id: "38E8D3C8D4F791D8"
+			tasks: [{
+				id: "729B144D09DC01FF"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["38E8D3C8D4F791D8"]
+			id: "250AC5E5038F03CC"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "28BC8415AD0DAF70"
+				item: "minecraft:writable_book"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["6ABD6ECFF6A5ACE4"]
+			id: "2BFC92DBF3A17A90"
+			tasks: [{
+				id: "7479020657946878"
+				item: "cosmiccore:mantle_bore"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2BFC92DBF3A17A90"]
+			id: "66F8003117849F50"
+			shape: "hexagon"
+			tasks: [{
+				id: "4D7252229169EF85"
+				item: "gtceu:cylinder_casting_mold"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6ABD6ECFF6A5ACE4"]
+			id: "2066E83B44ACE6E6"
+			size: 1.25d
+			tasks: [{
+				id: "2E11DE64D45CA4F7"
+				item: "gtceu:hpca_computation_component"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.75d
+		}
+		{
+			dependencies: ["6ABD6ECFF6A5ACE4"]
+			id: "6C96A9A80B62FC90"
+			size: 1.25d
+			tasks: [
+				{
+					id: "69EEC5FE7FC69A48"
+					item: "gtceu:hpca_heat_sink_component"
+					type: "item"
+				}
+				{
+					id: "43283646DF9B58B0"
+					item: "gtceu:hpca_active_cooler_component"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["125538385CF65A31"]
+			id: "37BF3CC9EC3905EB"
+			tasks: [{
+				id: "171E6AADC3D06FB9"
+				item: "gtceu:trinanylon_6_6_foil"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2985993F79D84B6D"]
+			id: "29DC0AAC3ADF8FEA"
+			shape: "hexagon"
+			subtitle: "Better Plastics and Rubbers"
+			tasks: [{
+				id: "19EE0B120ACF6429"
+				item: "cosmiccore:polymerizer"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E3463A518B1BC4B"]
+			id: "3D99615F43AE55B7"
+			tasks: [{
+				id: "014A4AEA8A577D3B"
+				item: "gtceu:ka_oil_bucket"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1EDA6025077BAA5D"]
+			hide_dependency_lines: true
+			id: "1E3463A518B1BC4B"
+			tasks: [{
+				id: "11CF872286BCE620"
+				item: "gtceu:cyclohexane_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D99615F43AE55B7"]
+			id: "5A917E2170F393E5"
+			tasks: [{
+				id: "17F13EF365839CB3"
+				item: "gtceu:adipic_acid_bucket"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1EDA6025077BAA5D"]
+			hide_dependency_lines: true
+			id: "412B63DD9523D66F"
+			tasks: [{
+				id: "4123E7BDFB6DC0EE"
+				item: "gtceu:hydrogen_cyanide_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["412B63DD9523D66F"]
+			id: "665E249457F5900D"
+			tasks: [{
+				id: "3AF94853F0699B5B"
+				item: "gtceu:adiponitrile_bucket"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["665E249457F5900D"]
+			id: "2B762870F6086E7A"
+			tasks: [{
+				id: "3A82A9DAEABEE7B1"
+				item: "gtceu:hexamethylenediamine_dust"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2B762870F6086E7A"
+				"5A917E2170F393E5"
+			]
+			id: "346F80CAAE2ABEE2"
+			shape: "hexagon"
+			tasks: [{
+				id: "4DCD67F4710E076B"
+				item: "gtceu:nylon_jelly_polymer_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"346F80CAAE2ABEE2"
+				"29DC0AAC3ADF8FEA"
+			]
+			id: "0EB991442E63BE79"
+			tasks: [{
+				id: "598EBC4507E27764"
+				item: "gtceu:nylon_6_6_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"346F80CAAE2ABEE2"
+				"29DC0AAC3ADF8FEA"
+			]
+			id: "125538385CF65A31"
+			tasks: [{
+				id: "176C673C9B179AEE"
+				item: "gtceu:trinanylon_6_6_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7F030FBE37FF64FA"]
+			id: "7B9A47A4029E86FA"
+			tasks: [{
+				id: "7C1A175F9B639BFB"
+				item: "gtceu:raw_naquadah"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7F030FBE37FF64FA"]
+			id: "4C2264B012D642E7"
+			tasks: [{
+				id: "3685C3BE10333539"
+				item: "gtceu:raw_trinium_metallic"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4C2264B012D642E7"]
+			id: "0B706188E9FA1808"
+			tasks: [{
+				id: "6CE61F11F9A6C823"
+				item: "gtceu:trinium_calx_solution_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4C2264B012D642E7"]
+			id: "472BF8AE5724EFC2"
+			tasks: [{
+				id: "11932059C047C7D0"
+				item: "gtceu:vitrolic_slurry_bucket"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0B706188E9FA1808"]
+			id: "608355BC1278AE34"
+			subtitle: "Another Trinium Source!"
+			tasks: [{
+				id: "38CD69AECC28E563"
+				item: "gtceu:trinium_dust"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3721D1E1F204378F"]
+			id: "2D31FF8D1689647E"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "280324C205EAD89F"
+				item: "gtceu:crystal_processor_mainframe"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D95AAE11C69BE92"]
+			id: "7B72AB991FEECEB7"
+			tasks: [{
+				id: "62C4EB34D622C32F"
+				item: "cosmiccore:psionic_galvorn_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["7B72AB991FEECEB7"]
+			id: "4F671EE1854DA640"
+			tasks: [{
+				id: "77571073EB5F7CF5"
+				item: "cosmiccore:psionic_galvorn_ingot"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["565FABB86902012B"]
+			id: "391543973682C8A6"
+			subtitle: "Harvest the Sun"
+			tasks: [{
+				id: "31CB569B5CB2B59F"
+				item: "cosmiccore:sol_steel_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"1E8BB0C611E2AA8D"
+				"2CF053FB2CA94F43"
+			]
+			id: "15761F4497FC0218"
+			tasks: [{
+				id: "5A30F2E5F86A6FF9"
+				item: "cosmiccore:voidspark_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1B24263AD9282E23"]
+			id: "1389F155BB2B4FE4"
+			tasks: [{
+				id: "207CE03F5554001E"
+				item: "botania:dandelifeon"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1EF59593A9EA8676"
+				"1389F155BB2B4FE4"
+				"381B6F540EFA23B6"
+			]
+			id: "1E8BB0C611E2AA8D"
+			tasks: [{
+				id: "39CABC86AD71C595"
+				item: "gtceu:void_tar_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["15D6856B141AD56E"]
+			id: "412EF339514E92AB"
+			subtitle: "The Planet of Frost"
+			tasks: [{
+				id: "2C51A451E2311E3B"
+				item: "ad_astra:glacio_globe"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -8.0d
+		}
+		{
+			id: "3076511246E4CB17"
+			tasks: [{
+				id: "24AFD19A8AFA297F"
+				item: "gtceu:vibrant_alloy_ingot"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.25d
+		}
+		{
+			description: [
+				"You'll need a lot, and perfectly enough star metal is easier to make in the Orbit of Venus."
+				""
+				"Once you can approach the sun without issues you can make this material at an even better rate."
+			]
+			id: "3B5071D6C659C26F"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "More Effienct StarMetal"
+			tasks: [{
+				id: "7147DFA5DB0A4BDF"
+				item: "gtceu:star_metal_ingot"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"3FCCC1CCDEF90870"
+				"1910A173A44CE16A"
+			]
+			id: "5087296EF0C8C152"
+			tasks: [{
+				id: "3589E56D2F851A85"
+				item: "gtceu:ultradense_neutronium_plasma_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3FCCC1CCDEF90870"]
+			id: "6EE245B5020684A4"
+			shape: "hexagon"
+			tasks: [{
+				id: "5D143D8847F4E928"
+				item: "gtceu:ultralight_neutronium_plasma_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3FCCC1CCDEF90870"
+				"6EE245B5020684A4"
+			]
+			id: "1910A173A44CE16A"
+			tasks: [{
+				id: "35E6E9253D845E57"
+				item: "gtceu:moderate_neutronium_plasma_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6F803279C5027E5C"
+				"7F3BE65039BBDB8E"
+			]
+			id: "381B6F540EFA23B6"
+			subtitle: "TODO TIER 7 CATA"
+			tasks: [{
+				id: "19A070BBFDCE5673"
+				item: "gtceu:grading_fluid_6_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5087296EF0C8C152"]
+			id: "059FE2EA330761B9"
+			tasks: [{
+				id: "334DB084B4AFF203"
+				item: "gtceu:sifted_neutronium_plasma_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1EDA6025077BAA5D"]
+			id: "6455ACF94BD2F79B"
+			tasks: [{
+				id: "78F2E9C68288EE5F"
+				item: "gtceu:ethylene_dichloride_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6455ACF94BD2F79B"]
+			id: "6FF7FDC43730FE21"
+			tasks: [{
+				id: "4109C84F4EAC0E28"
+				item: "gtceu:ethylenediamine_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6FF7FDC43730FE21"]
+			id: "2B1D79AE8BD803B2"
+			tasks: [{
+				id: "3B97445392970192"
+				item: "gtceu:ethylene_thiourea_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1EDA6025077BAA5D"]
+			id: "3BCF396CCE1CDB62"
+			tasks: [{
+				id: "1FF1CC7CA4836225"
+				item: "gtceu:1_4_dichlorobutadiene_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3BCF396CCE1CDB62"]
+			id: "5B876C986D5A7CDA"
+			tasks: [{
+				id: "70B6762C9F83D94C"
+				item: "gtceu:3_4_dichlorobutadiene_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5B876C986D5A7CDA"]
+			id: "1035E707CE2FB728"
+			tasks: [{
+				id: "5C6AA63170C2CE3B"
+				item: "gtceu:chloroprene_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2B1D79AE8BD803B2"
+				"1035E707CE2FB728"
+			]
+			id: "33E3A30B9A5C165B"
+			tasks: [{
+				id: "61C44F75B88E67A4"
+				item: "gtceu:neoprene_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6EE245B5020684A4"
+				"1910A173A44CE16A"
+			]
+			id: "380EDB0E6E4C5BC6"
+			tasks: [{
+				id: "46E9749BC72F61D1"
+				item: "gtceu:crystaline_neutronium_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3FCCC1CCDEF90870"]
+			hide_dependency_lines: true
+			id: "7F3BE65039BBDB8E"
+			shape: "pentagon"
+			tasks: [{
+				id: "3CE4FD7F48CBA423"
+				item: "gtceu:ultralight_neutronium_plasma_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1E8BB0C611E2AA8D"
+				"1EF59593A9EA8676"
+			]
+			description: ["You can Now make Abberant Essence From Void Tar, Somatic Mana, and Virtue Essence at a much more reliable rate."]
+			id: "2CF053FB2CA94F43"
+			subtitle: "Easier Aberrant Essence"
+			tasks: [{
+				id: "0151373CF726214E"
+				item: "cosmiccore:aberrant_essence"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3721D1E1F204378F"]
+			id: "6F8DE2247B7ED19C"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "44B9F846BD4498DB"
+				item: "gtceu:me_pattern_buffer_proxy"
+				type: "item"
+			}]
+			x: -0.75d
+			y: 6.0d
+		}
+		{
+			dependencies: ["31CE310C898AC695"]
+			id: "5502492F581EEA27"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "394884A129F1027A"
+				item: "merequester:requester"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5502492F581EEA27"]
+			id: "1D5A5C7500441494"
+			tasks: [{
+				id: "49C245249D7F0E16"
+				item: "merequester:requester_terminal"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"1EC282333491563B"
+				"643EC624429EABD5"
+			]
+			id: "59B6C50CF2D6A00A"
+			tasks: [{
+				id: "3C6BC75B3FB8766A"
+				item: "gtceu:stem_cells"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"19147C056A6C469C"
+				"59B6C50CF2D6A00A"
+			]
+			id: "56BF88E18FEDA2AC"
+			tasks: [{
+				id: "20EFCB6655EA5640"
+				item: "gtceu:neuro_processing_unit"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["5C1A28DFEA13F6C1"]
+			description: [
+				"Wetware Assemblies, Computers, and Mainframes must all be made in an assembly line in a sterile enviroment."
+				""
+				"Welcome back, cleanroom machines."
+			]
+			id: "08FAF69EBD16AF20"
+			subtitle: "Circuit Woes"
+			tasks: [{
+				id: "00086EDFF0767BEB"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 7.0d
+		}
+		{
+			id: "07CDFAD2D24E929F"
+			tasks: [{
+				id: "5E72801872F6DD60"
+				item: "gtceu:diluted_hydrochloric_acid_bucket"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 10.0d
+		}
+		{
+			description: ["Nutrient Rich and generally able to be sterilized enough to be used in Growth Medium."]
+			id: "643EC624429EABD5"
+			subtitle: "Welcome Back Bioslurry!"
+			tasks: [{
+				id: "758E9886A8B4A795"
+				item: "gtceu:nether_bioslurry_bucket"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1EF59593A9EA8676"]
+			id: "0EDFABC26AD3479F"
+			shape: "gear"
+			tasks: [{
+				id: "1337D88DD4459669"
+				item: "bloodmagic:reagentbinding"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1EF59593A9EA8676"]
+			id: "69B506ACE264FACE"
+			shape: "gear"
+			tasks: [{
+				id: "1C69067134C3EB7B"
+				item: "gtceu:potent_mana_bucket"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"66F8003117849F50"
+				"53382ABFD35EBF0F"
+			]
+			description: [
+				"Mercury has abnormally high magnetic surges due to being so close to the sun."
+				""
+				""
+				"Extract metal from the core of mercury and bathe it in the lightning of Jupiter to create Ionized Fulgorinth"
+			]
+			id: "1C26EFBD68B35D1F"
+			subtitle: "Storms of Mercury"
+			tasks: [{
+				id: "01DBD4824E7D6E6E"
+				item: "gtceu:ionized_fulgorinth_ingot"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2BFC92DBF3A17A90"]
+			id: "53382ABFD35EBF0F"
+			tasks: [{
+				id: "6AA338AFD4EB2E6C"
+				item: "ad_astra:mercury_globe"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["66F8003117849F50"]
+			id: "36712A8CD579394E"
+			tasks: [{
+				id: "14A7350620F30E72"
+				item: "bloodmagic:hellforgedparts"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["36712A8CD579394E"]
+			id: "132E18897587A6CB"
+			tasks: [{
+				id: "53A5DB34EAC39338"
+				item: "bloodmagic:orbcapacityrune2"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"010925F22AA1F809"
+				"77B2690C199DA311"
+			]
+			id: "6107D72E0B0C000B"
+			tasks: [{
+				id: "4CCC2732A90C3849"
+				item: "undergarden:blood_mushroom"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6107D72E0B0C000B"]
+			id: "1853F776E3AD34A3"
+			tasks: [{
+				id: "3E7106638E0DBDDF"
+				item: "undergarden:blood_globule"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1853F776E3AD34A3"]
+			description: ["A Strangly Hallucinogenic Fluid, Containing the Essence of squashed bloody mushrooms."]
+			id: "62ED421DF727E379"
+			subtitle: "Fungal Shifting the World"
+			tasks: [{
+				id: "30912F0AA59A856E"
+				item: "gtceu:fungal_blood_bucket"
+				type: "item"
+			}]
+			title: "Fungal Blood"
+			x: 1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1853F776E3AD34A3"]
+			id: "4C08B8488AAC39ED"
+			tasks: [{
+				id: "17AEBA6A75555D3F"
+				item: "gtceu:blood_plasma_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1853F776E3AD34A3"]
+			id: "38291B29162C4174"
+			tasks: [{
+				id: "5E19C1389E13D658"
+				item: "gtceu:meat_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			id: "3E9DF49F86748862"
+			tasks: [{
+				id: "0A381C66DB590F30"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"3E9DF49F86748862"
+				"38291B29162C4174"
+			]
+			id: "5284A60F9A444452"
+			tasks: [{
+				id: "719803E1DC07B77A"
+				item: "gtceu:collagen_dust"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"5284A60F9A444452"
+				"4C08B8488AAC39ED"
+			]
+			id: "2DAF6BD2AEA6CFBF"
+			tasks: [{
+				id: "02BDF0447FE86A0E"
+				item: "gtceu:gelatin_concentrate_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2DAF6BD2AEA6CFBF"]
+			id: "2C303709431461ED"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "75383B106E0F68DB"
+				item: "cosmiccore:gelatin_scaffold"
+				type: "item"
+			}]
+			title: "Gelatine Print Scaffold"
+			x: 4.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3721D1E1F204378F"]
+			description: [
+				"All this &cblood&r split for your plans makes you yearn for a more intimate connection with your machinery. You can't help but wonder"
+				"\"Can we give life to circuits? Can &oI&r interface with my armor and tools more efficiently?\""
+				"It all starts here, the &e\"Fusion of Flesh and Circuits\"&r."
+				""
+				"Welcome to &aWetware Products&r, currently the hardest set of chains you will encounter for &6several&r tech tiers."
+				"These production lines &6intentionally consume&r copious amounts of resources in the process of creating biological life. So it's best to limit how much you make or boost production of basic chemistry before continuing."
+				""
+				"Your main goals are:"
+				""
+				" \"&eSterilized \\& Raw Growth Medium&r\" (SGM/RGM), required for the next tier of circuits and beyond."
+				""
+				" \"&eCellular Cultures&r\", powerful microboes aiding in the chemical synthesis of many complex materials."
+				""
+				"There's &l&ca lot&r to unpack here, and there is a good chance this is the &l&cmajority&r of your &cZPM&r power demand and Infrastructure!- I was not joking about harder Recipe Chains in the Crystal Circuit Quest. &l&aGoodluck!&r"
+			]
+			icon: "cosmiccore:sculk_myofibroblast"
+			id: "77B2690C199DA311"
+			min_width: 400
+			rewards: [{
+				id: "385282AF2C69EEC2"
+				item: "delightful:source_berry_gummy"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "It only gets worse from here"
+			tasks: [{
+				id: "1A9C085E5A9F5152"
+				type: "checkmark"
+			}]
+			title: "&fWelcome to Superchain #1 - &aWetware Products&f."
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			id: "010925F22AA1F809"
+			tasks: [{
+				id: "6B45DDC36FBEAAEF"
+				item: "gtceu:nutrient_solution_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			id: "2DEF577DCC4CFCF2"
+			tasks: [{
+				id: "2FE0A2F00C51DA51"
+				item: "minecraft:sculk"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"2C303709431461ED"
+				"49FB0E8A6C7BFA30"
+			]
+			id: "17029805C6D20086"
+			tasks: [{
+				id: "701947ED0C2C8D12"
+				item: "cosmiccore:sculk_fibroblast"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["2DEF577DCC4CFCF2"]
+			id: "49FB0E8A6C7BFA30"
+			tasks: [{
+				id: "355C968D5A139031"
+				item: "gtceu:echoing_sludge_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"13B9368F13B5E0C8"
+				"3E562FB89714759E"
+				"379B3BC57B9B744D"
+			]
+			id: "48D4A407D76B99EB"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "42159FD4F91B3D5A"
+				item: "cosmiccore:heme_ring"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"17029805C6D20086"
+				"48D4A407D76B99EB"
+			]
+			id: "187B8BB59E1A21FF"
+			tasks: [{
+				id: "0ED8E6A2B423B04C"
+				item: "cosmiccore:resipiratory_sculk_hemocytoblast"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"187B8BB59E1A21FF"
+				"4908B167DF0F546F"
+			]
+			id: "55386D5CF8B7D512"
+			subtitle: "TODO ; Wetware Stuff"
+			tasks: [{
+				id: "128FB37299F1BC8F"
+				item: "cosmiccore:saturated_sculk_hemocytoblast"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["77B2690C199DA311"]
+			id: "74E2206FBB451DDA"
+			tasks: [{
+				id: "74CCB2C943107CE3"
+				item: "cosmiccore:biovat"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["01D25926BE7CCAF2"]
+			id: "39F334209FE7C505"
+			tasks: [{
+				id: "0DF6079D7EB395DE"
+				item: "cosmiccore:bifidobacterium_breve_culture"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["01D25926BE7CCAF2"]
+			id: "284502B94635EDB1"
+			tasks: [{
+				id: "48ED123ADF445D18"
+				item: "cosmiccore:streptococcus_pyogenes_culture"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["01D25926BE7CCAF2"]
+			id: "5D9FCBF1EA2DCDDC"
+			tasks: [{
+				id: "5CEB543B21F9B3F6"
+				item: "cosmiccore:escherichia_coli_culture"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["284502B94635EDB1"]
+			id: "5A9D080A6A26E26B"
+			subtitle: "The Clot-Buster"
+			tasks: [{
+				id: "0E7A7735ED2816C0"
+				item: "cosmiccore:streptococcus_pyogenes"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5D9FCBF1EA2DCDDC"]
+			id: "57C3D3B4AD44F933"
+			tasks: [{
+				id: "6BAA415C6ABD0633"
+				item: "cosmiccore:escherichia_coli"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["39F334209FE7C505"]
+			id: "35CFF0BD416B2801"
+			tasks: [{
+				id: "28BF9F3A85538C80"
+				item: "cosmiccore:bifidobacterium_breve"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"74E2206FBB451DDA"
+				"1CE2A9A46212A073"
+			]
+			id: "01D25926BE7CCAF2"
+			tasks: [{
+				id: "07D292B30C8DDC54"
+				item: "cosmiccore:prepared_petri_dish"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["77B2690C199DA311"]
+			hide_dependency_lines: true
+			id: "27DA9F6BC1806BFF"
+			shape: "octagon"
+			size: 1.0d
+			tasks: [{
+				id: "599279F306F892AC"
+				item: "cosmiccore:fermium_rad_charges"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"62ED421DF727E379"
+				"18190FEC30657527"
+			]
+			id: "37C8F8158AE98020"
+			tasks: [{
+				id: "05B4E2B2C164ADBF"
+				item: "cosmiccore:inert_fungal_spores"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"1CF8551D396EA83C"
+				"253A047A7B1E09B6"
+				"37C8F8158AE98020"
+			]
+			description: ["A slurry of bacteria and other microbes, perfect to create a rich nutrient base for rapid cellular growth."]
+			id: "59CD98CC80093BF4"
+			subtitle: "But wait there's fungi- shut up!"
+			tasks: [{
+				id: "12C369AD688C9430"
+				item: "gtceu:bacteria_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"3AA1ED09059B8A0C"
+				"59CD98CC80093BF4"
+			]
+			description: ["Crank the Vibrations to 11 and melt the cellular walls of all bacteria inside of the bacteria solution. This will leave behind a vat of nutrients from dead bacteria."]
+			id: "04BB51C45A750A1B"
+			subtitle: "Resonate So Hard They Die ( The Bacteria )"
+			tasks: [{
+				id: "38DA162621ADCFA3"
+				item: "gtceu:bacterial_sludge_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["57C3D3B4AD44F933"]
+			id: "5E7D98A1315A8C58"
+			tasks: [{
+				id: "32C5BE77B28B212B"
+				item: "gtceu:cas_9_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"16A05076647BB77B"
+				"27DA9F6BC1806BFF"
+			]
+			id: "187C70E040E9186F"
+			shape: "hexagon"
+			tasks: [{
+				id: "6E156A2D276DBA79"
+				item: "gtceu:rapidly_mutating_cancer_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 17.25d
+		}
+		{
+			dependencies: [
+				"04BB51C45A750A1B"
+				"142C68E3FBE0CEC9"
+			]
+			description: ["Enrich this bacteria sludge into something suitable to be a mutagen base."]
+			id: "68A24A357BA349D2"
+			subtitle: "Flavorful"
+			tasks: [{
+				id: "69A7B38213DBDDD1"
+				item: "gtceu:enriched_bacterial_sludge_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"68A24A357BA349D2"
+				"27DA9F6BC1806BFF"
+			]
+			description: [
+				"Mutagen, a sludge of biomatter and radioactive materials, perect for sending any cells into a rapid mutation frenzy."
+				""
+				"Using this on Synthetic Blood Sounds like a great idea. you should do that."
+			]
+			id: "16A05076647BB77B"
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Warping Fluid"
+			tasks: [{
+				id: "7EA8CFBA32538096"
+				item: "gtceu:mutagen_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["2DAF6BD2AEA6CFBF"]
+			id: "00BAAF3A6108E983"
+			tasks: [{
+				id: "6361BC0233726038"
+				item: "gtceu:gelatin_dust"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4C08B8488AAC39ED"]
+			description: [
+				"A rare and synthetic version of life essence, required for T7 Grading Catalyst."
+				""
+				"Rudimentary LP can't reach the same purity. You wonder if you can refine LP into a more potent fluid."
+			]
+			id: "4908B167DF0F546F"
+			shape: "hexagon"
+			subtitle: "For Futuristic Blood Mages"
+			tasks: [{
+				id: "08432A5041EA29EA"
+				item: "gtceu:synthetic_blood_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["35CFF0BD416B2801"]
+			id: "3072B32A21293DEF"
+			tasks: [{
+				id: "3B64391A6425F50A"
+				item: "gtceu:chitin_bucket"
+				type: "item"
+			}]
+			title: "Chitin"
+			x: -6.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"3072B32A21293DEF"
+				"7906B2CC847DD0F3"
+			]
+			id: "35CA32C13643D5FA"
+			tasks: [{
+				id: "45DA232964872AA8"
+				item: "gtceu:chitosan_bucket"
+				type: "item"
+			}]
+			title: "Chitosan"
+			x: -6.0d
+			y: 23.0d
+		}
+		{
+			id: "7906B2CC847DD0F3"
+			tasks: [{
+				id: "7C386DB326B55EFA"
+				item: "undergarden:ink_mushroom"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["187C70E040E9186F"]
+			id: "0C467B1C7BDCF1CD"
+			tasks: [{
+				id: "77D01410AD1D84EA"
+				item: "gtceu:oct_4_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["187C70E040E9186F"]
+			id: "599FBE0238DFD83B"
+			tasks: [{
+				id: "4950F099CE02590E"
+				item: "gtceu:myc_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["187C70E040E9186F"]
+			id: "108FBAB2417554D0"
+			tasks: [{
+				id: "435EB670CC556D70"
+				item: "gtceu:kfl_4_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["187C70E040E9186F"]
+			id: "014A9E1B464D9EAA"
+			tasks: [{
+				id: "5937CC03642F8CDA"
+				item: "gtceu:sox_2_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"014A9E1B464D9EAA"
+				"108FBAB2417554D0"
+				"599FBE0238DFD83B"
+				"0C467B1C7BDCF1CD"
+				"5E7D98A1315A8C58"
+			]
+			id: "46090C0F9DA3A9FE"
+			tasks: [{
+				id: "1205F380C9BCE628"
+				item: "gtceu:gene_plasmids_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"35CA32C13643D5FA"
+				"46090C0F9DA3A9FE"
+			]
+			id: "6B7B9CD5445C17B5"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "21E3251D9A0C0A06"
+				item: "gtceu:genetic_therapy_solution_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 23.0d
+		}
+		{
+			dependencies: [
+				"6B7B9CD5445C17B5"
+				"2A2BB37FB10C9C77"
+			]
+			id: "630E1A4B457E4810"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "6BBCD7D2E99B285C"
+				item: "gtceu:stem_cells"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["25CA54B1D9EB0211"]
+			id: "2A2BB37FB10C9C77"
+			subtitle: "Sterilizing it is the easy part!"
+			tasks: [{
+				id: "69367A085107CE97"
+				item: "gtceu:sterilized_growth_medium_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"6F89E1D42D9EFB15"
+				"3E4C43BD2A70B630"
+				"16A05076647BB77B"
+				"184F09CD8C3C5F57"
+				"58DA66D2EDD7A008"
+				"2EBF10745C5B3298"
+				"460C571B5E79F54D"
+				"44F74EF617402098"
+			]
+			id: "25CA54B1D9EB0211"
+			size: 2.0d
+			subtitle: "The Hardest part of Sterile Growth Medium."
+			tasks: [{
+				id: "5A67742B36342FE9"
+				item: "gtceu:raw_growth_medium_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"6EE3D7DDD58C50C0"
+				"35F51A6D4E2644C9"
+				"3B35C4B3B781639F"
+				"5FC0EAF5ABF3666F"
+			]
+			description: [
+				"Probably &lthe&r worst portion of Sterile Growth Medium is the 'Complex Multivitamin'"
+				""
+				""
+				"Several critical vitamin production methods are nested within this chain that will get used externally. Either automate these passively or set up the infrastructure to handle making them in larger quantities later."
+			]
+			id: "6F89E1D42D9EFB15"
+			subtitle: "Oh Sweet Lord."
+			tasks: [{
+				id: "4A0DE108A31144D7"
+				item: "gtceu:complex_multivitamin_solution_bucket"
+				type: "item"
+			}]
+			title: "Complex Multivitamin Solution"
+			x: 8.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"054A012EEEC1129A"
+				"78DEC96D40885061"
+			]
+			id: "6EE3D7DDD58C50C0"
+			tasks: [{
+				id: "375BCE70DDCF9CEE"
+				item: "gtceu:retinol_bucket"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["1CC804843BB50981"]
+			id: "35F51A6D4E2644C9"
+			tasks: [{
+				id: "1F61875FB6D98125"
+				item: "gtceu:ethanolamine_bucket"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["18525ED16685DEA9"]
+			id: "3B35C4B3B781639F"
+			shape: "pentagon"
+			size: 1.25d
+			tasks: [{
+				id: "531388483C9334EA"
+				item: "gtceu:biotin_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["78F612E4C2E2CAD0"]
+			id: "5FC0EAF5ABF3666F"
+			tasks: [{
+				id: "673356FC5EFBC41F"
+				item: "gtceu:ascorbic_acid_bucket"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["1CE2A9A46212A073"]
+			hide_dependency_lines: true
+			id: "3E4C43BD2A70B630"
+			shape: "hexagon"
+			tasks: [{
+				id: "30381BEB890F87FC"
+				item: "gtceu:agar_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["4C08B8488AAC39ED"]
+			hide_dependency_lines: true
+			id: "184F09CD8C3C5F57"
+			tasks: [{
+				id: "2822E9E78AEEEF47"
+				item: "gtceu:fibroblast_growth_factor_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["77B2690C199DA311"]
+			hide_dependency_lines: true
+			id: "58DA66D2EDD7A008"
+			tasks: [{
+				id: "4332C4106D6DFDAD"
+				item: "gtceu:glucose_dust"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 18.0d
+		}
+		{
+			id: "460C571B5E79F54D"
+			tasks: [{
+				id: "5C8DC9D2D4548F0D"
+				item: "gtceu:calcium_dust"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 20.0d
+		}
+		{
+			id: "2EBF10745C5B3298"
+			tasks: [{
+				id: "3533C09BE0CB59F6"
+				item: "gtceu:flawless_salt_gem"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["77B2690C199DA311"]
+			id: "0917AFD4F18621D1"
+			tasks: [{
+				id: "14E84B2F09528A19"
+				item: "undergarden:glitterkelp"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["5ABD13E85958619A"]
+			id: "78F612E4C2E2CAD0"
+			tasks: [{
+				id: "0A868A00407C18C8"
+				item: "gtceu:sorbose_dust"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["77B2690C199DA311"]
+			hide_dependency_lines: true
+			id: "5ABD13E85958619A"
+			tasks: [{
+				id: "67D840CF08138494"
+				item: "gtceu:glucose_dust"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["41AC412EEA7F878A"]
+			id: "78DEC96D40885061"
+			tasks: [{
+				id: "78847D36962FBF74"
+				item: "gtceu:beta_ionone_bucket"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["311C35660BA233E0"]
+			id: "054A012EEEC1129A"
+			tasks: [{
+				id: "44FE3761CA1FF05D"
+				item: "gtceu:propargyl_chloride_bucket"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["510A931555C8E60C"]
+			id: "311C35660BA233E0"
+			tasks: [{
+				id: "68FD2ACDA9FED429"
+				item: "gtceu:propargyl_alcohol_bucket"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["011C0E2FA54B7A73"]
+			id: "41AC412EEA7F878A"
+			tasks: [{
+				id: "61B62A111834FBC2"
+				item: "gtceu:citral_bucket"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["0566F3287938A013"]
+			id: "011C0E2FA54B7A73"
+			tasks: [{
+				id: "449EFF9AB8C73158"
+				item: "gtceu:beta_pinene_dust"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["77B2690C199DA311"]
+			dependency_requirement: "all_started"
+			hide_dependency_lines: true
+			id: "0566F3287938A013"
+			tasks: [{
+				id: "79B24D114E34C463"
+				item: "gtceu:turpentine_bucket"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["77B2690C199DA311"]
+			hide_dependency_lines: true
+			id: "510A931555C8E60C"
+			tasks: [{
+				id: "17356A8D0FF9C812"
+				item: "gtceu:acetylene_bucket"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["77B2690C199DA311"]
+			hide_dependency_lines: true
+			id: "1CC804843BB50981"
+			tasks: [{
+				id: "50E7C1BCC622ACF2"
+				item: "gtceu:ethylene_oxide_bucket"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"17029805C6D20086"
+				"48D4A407D76B99EB"
+			]
+			id: "18525ED16685DEA9"
+			size: 1.25d
+			tasks: [{
+				id: "437062B4DAFECA8F"
+				item: "cosmiccore:sculk_myofibroblast"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["77B2690C199DA311"]
+			hide_dependency_lines: true
+			id: "70A4E46F0E6BCC02"
+			tasks: [{
+				id: "7005304ECB7AD530"
+				item: "gtceu:oxolane_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["70A4E46F0E6BCC02"]
+			id: "0AF797532AA2189D"
+			tasks: [{
+				id: "4B2DB8A67D2A7B0B"
+				item: "gtceu:pyrrole_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["0AF797532AA2189D"]
+			id: "13B9368F13B5E0C8"
+			tasks: [{
+				id: "2E1BFC4D95396E24"
+				item: "gtceu:prophine_dust"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["77B2690C199DA311"]
+			hide_dependency_lines: true
+			id: "379B3BC57B9B744D"
+			tasks: [{
+				id: "64EB3A72B20527E8"
+				item: "gtceu:methyl_formate_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["77B2690C199DA311"]
+			hide_dependency_lines: true
+			id: "3E562FB89714759E"
+			tasks: [{
+				id: "51B105EAF2678F79"
+				item: "gtceu:chloroethane_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["0917AFD4F18621D1"]
+			id: "328E7B6F9D8527AD"
+			tasks: [{
+				id: "309242B691FFE5D6"
+				item: "gtceu:agar_sludge_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["328E7B6F9D8527AD"]
+			id: "1CE2A9A46212A073"
+			tasks: [{
+				id: "076D7379F9F9AA04"
+				item: "gtceu:agar_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["328E7B6F9D8527AD"]
+			id: "456AC3958A4062A5"
+			shape: "gear"
+			tasks: [{
+				id: "080F2C16E6A8DDDA"
+				item: "gtceu:plant_ball"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["39F334209FE7C505"]
+			hide_dependency_lines: true
+			id: "253A047A7B1E09B6"
+			tasks: [{
+				id: "7CCB7A4AC1E0E6D9"
+				item: "cosmiccore:bifidobacterium_breve"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["284502B94635EDB1"]
+			hide_dependency_lines: true
+			id: "1CF8551D396EA83C"
+			tasks: [{
+				id: "2B21922399545150"
+				item: "cosmiccore:streptococcus_pyogenes"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"55386D5CF8B7D512"
+				"4908B167DF0F546F"
+			]
+			description: [
+				"Yap about what this is idfk"
+				"It's the basis of the wetware circuit board so"
+			]
+			id: "15D91ED5CBDA2B17"
+			subtitle: "Bio Compatible Hardware"
+			tasks: [{
+				id: "27405B3F2F881FC9"
+				item: "cosmiccore:computation_support_unit"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["77B2690C199DA311"]
+			hide_dependency_lines: true
+			id: "3AA1ED09059B8A0C"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "4FA6A4D1D593DBA2"
+				item: "cosmiccore:ultrasonic_homogenizer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["328E7B6F9D8527AD"]
+			hide_dependency_lines: true
+			id: "142C68E3FBE0CEC9"
+			tasks: [{
+				id: "3912CE91AD383A90"
+				item: "gtceu:agar_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["35CFF0BD416B2801"]
+			description: [
+				"Maybe you'll be really hungry one day."
+				"Maybe one day some material will require hundreds of fats."
+				""
+				"You hear the cry of an eagle in the background. And the smell of french fries."
+				"And heart disease.."
+				""
+				""
+				"Note; No you don't need to finish this quest."
+				"HOWEVER, if you want to for some reason have to scale infrastructure for cheese of all things."
+				"here's a fun goal for you do tackel!"
+			]
+			id: "03A4B381E49BE93A"
+			subtitle: "Infinite Cheese"
+			tasks: [{
+				consume_items: true
+				count: 100000000L
+				id: "7935385F100D769B"
+				item: "croptopia:cheese"
+				type: "item"
+			}]
+			title: "The Quest for Infinite Cheese"
+			x: -7.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["2DAF6BD2AEA6CFBF"]
+			hide_dependency_lines: true
+			id: "44F74EF617402098"
+			tasks: [{
+				id: "31DEB4DCEEF24039"
+				item: "gtceu:gelatin_dust"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["6107D72E0B0C000B"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "18190FEC30657527"
+			tasks: [{
+				id: "607C30A80CEF4DB6"
+				item: "gtceu:fungal_nutrient_waste_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 11.0d
+		}
 	]
-	title: "The Stygian Plague - [ZPM]"
+	title: "The Sanguine Peak - [ZPM]"
 }

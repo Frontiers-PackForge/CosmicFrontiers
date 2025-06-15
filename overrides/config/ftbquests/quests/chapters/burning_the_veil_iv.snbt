@@ -701,7 +701,7 @@
 				item: "gtceu:rhodium_plated_palladium_ingot"
 				type: "item"
 			}]
-			x: -1.5d
+			x: 1.5d
 			y: -12.0d
 		}
 		{
@@ -718,7 +718,7 @@
 				item: "gtceu:rhodium_ingot"
 				type: "item"
 			}]
-			x: -3.0d
+			x: 2.5d
 			y: -13.0d
 		}
 		{
@@ -732,7 +732,7 @@
 				item: "gtceu:palladium_ingot"
 				type: "item"
 			}]
-			x: -3.0d
+			x: 2.5d
 			y: -12.0d
 		}
 		{
@@ -1537,7 +1537,10 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["2AF737CA4D527559"]
+			dependencies: [
+				"2AF737CA4D527559"
+				"4C91E2312927C904"
+			]
 			icon: "createdeco:decal_up"
 			id: "71C697E52A8CE267"
 			shape: "hexagon"
@@ -1749,6 +1752,84 @@
 			}]
 			x: -7.0d
 			y: -5.0d
+		}
+		{
+			dependencies: ["2B5B95B71592BEBC"]
+			id: "496FC028AF5444BC"
+			tasks: [{
+				id: "65C0D8650EBBB0D8"
+				item: "botania:gaia_ingot"
+				type: "item"
+			}]
+			title: "Perpetuity Meld Ingot"
+			x: -2.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["496FC028AF5444BC"]
+			description: [
+				"My Theory was right"
+				"These fragmentations are me- each lamenting their own story, yet all wailing the same truth:"
+				""
+				"They are in pain."
+				"A pain so pure and distilled across eternity. The Kind that cannot fade, cannot end, cannot even blink."
+				""
+				"When I listen to these wails- these shattered echoes of my past- the realization coils around my neck in horror:"
+				""
+				"I am trapped."
+				"And endless cycle where death would be mercy. If i was to perish now, I will simply wake up again. But they are not shown this mercy, forced to relieve their incomplete stories for eternity while mine waltzs' onward."
+				""
+				"Is this all some cruel joke? A script where every choice has been set in stone from the beginning? Am I just foolishly written ink on some cosmic page?"
+				""
+				"What am I- A tool? A Vessel? A wound that will never close?"
+				""
+				""
+				"How am I meant to live if living has no merit. I need to dig deeper. "
+			]
+			hide_text_until_complete: true
+			icon: "botania:gaia_head"
+			id: "4C91E2312927C904"
+			shape: "rsquare"
+			subtitle: "I want Answers. | Lore Quest"
+			tasks: [
+				{
+					entity: "botania:doppleganger"
+					icon: "botania:gaia_head"
+					id: "2A94CD1F2E024A11"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "363AA57A03DC2C4E"
+					item: "botania:dice"
+					type: "item"
+				}
+			]
+			title: "Slay them again"
+			x: -2.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["71C697E52A8CE267"]
+			description: [
+				"I see only one path forward: augment everything. My body. My tools. My mind’s defenses. If those fragmented reflections of myself return—if they corner me again—I won’t survive the torture awaiting my mind and body."
+				""
+				"So I’ll carve the answers from this world’s living essence. From the forests. From beasts. From my own veins, if necessary. I will spill rivers of blood to map the way of my own unique purpose."
+				""
+				"This war against my own echoes begins now. Even if it consumes me I will oppose whatever this will is."
+				""
+				""
+				"                 &lEND OF ACT 1 - FORGOTTEN&r"
+			]
+			id: "2857B46DF6D42D6B"
+			subtitle: "Lore Entry #6"
+			tasks: [{
+				id: "05858EE3643F52F9"
+				item: "minecraft:writable_book"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -15.0d
 		}
 	]
 	title: "Burning the Veil [IV]"

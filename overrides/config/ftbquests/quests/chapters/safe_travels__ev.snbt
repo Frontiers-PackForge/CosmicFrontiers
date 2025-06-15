@@ -17,6 +17,7 @@
 				""
 				"This is where your &eautomation skills&r will be put to the test, as &bprocessing chains&r and &bgeneral chemistry&r grow more complex as your plans unfold."
 			]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "5837A875D09D3E35"
 			shape: "hexagon"
@@ -248,8 +249,10 @@
 		}
 		{
 			dependencies: ["627303BD04BDAC20"]
+			description: ["Alfheim had many unique materials, many of which are suitable for chemistry with non-standard materials, i should invest into the creation of these materials."]
 			icon: "botania:elementium_ingot"
 			id: "40584BD5E47EF0D7"
+			subtitle: "Robust Magical Materials"
 			tasks: [
 				{
 					id: "50399CECDD476662"
@@ -431,6 +434,7 @@
 				""
 				"Supercritical Steam Will have more uses outside of power in the future, but for now I would just vent your SC Steam."
 			]
+			hide_until_deps_complete: true
 			id: "03A8BEC02D989C10"
 			subtitle: "Is it worth it?"
 			tasks: [{
@@ -520,6 +524,7 @@
 				"75D695A6DC21520C"
 				"5177EBAEC06D1F27"
 			]
+			hide_until_deps_visible: true
 			icon: "gtceu:uranium_hexafluoride_bucket"
 			id: "3C2F34FF72E0ED3F"
 			tasks: [
@@ -1440,6 +1445,35 @@
 			}]
 			x: 0.0d
 			y: -16.0d
+		}
+		{
+			dependencies: ["3C2F76C18CC1A56E"]
+			description: [
+				"After my near-death encounter with that hostile force—the one that made the world itself tremble—I can’t help but question:"
+				"Am I trapped here? Or is this a world I’ve known before?"
+				""
+				"Perpetuity pulses like a second heartbeat now. It recoils from anything that opposes me, as if rejecting possibilities that shouldn't exist."
+				""
+				"This place… it’s too familiar. Every action I take leaves a hollow ache in my chest, like grieving for something I’ve forgotten. The connection is undeniable, yet every attempt to uncover the truth is met with violent resistance either in mind or in reality."
+				""
+				"I must mentally prepare for the worst, and keep pushing forward, I believe I am almost to a conclusion here."
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: "minecraft:writable_book"
+			id: "73A096EA934A49C7"
+			min_width: 400
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Weapons of the Soul | Lore Entry"
+			tasks: [{
+				id: "2B209571E694A1AF"
+				item: "botania:life_essence"
+				type: "item"
+			}]
+			title: "Lore Entry #5"
+			x: 0.0d
+			y: -17.5d
 		}
 	]
 	title: "Safe Travels - [EV]"

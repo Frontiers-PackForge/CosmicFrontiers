@@ -51,6 +51,11 @@
 				"Expect agressive nerfs of buffs to this page with each update. I NEED feedback on these as well."
 				""
 				"Let me know in discord"
+				""
+				""
+				"NOTICE 0.7.0"
+				""
+				"The Shop may be removed in future updates."
 			]
 			hide_until_deps_complete: true
 			icon: "botania:cosmetic_questgiver_mark"
@@ -112,9 +117,10 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 32L
 					id: "48D4937B7512B6A7"
-					item: { Count: 32, id: "cosmiccore:shard_of_perpetuity" }
+					item: "cosmiccore:shard_of_perpetuity"
 					type: "item"
 				}
 			]
@@ -479,52 +485,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["38DA0B4E0DBAC364"]
-			hide_until_deps_complete: true
-			icon: "legendarysurvivaloverhaul:ice_fern_leaf"
-			id: "68069806D0200CEF"
-			rewards: [{
-				count: 4
-				id: "4798D85166B9977B"
-				item: "legendarysurvivaloverhaul:ice_fern_seeds"
-				type: "item"
-			}]
-			subtitle: "&fCooling you down"
-			tasks: [{
-				consume_items: true
-				count: 16L
-				id: "4D4623C7570B1822"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
-			title: "Shop : Ice Fern Seed"
-			x: -4.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["38DA0B4E0DBAC364"]
-			hide_until_deps_complete: true
-			icon: "legendarysurvivaloverhaul:sun_fern_leaf"
-			id: "1726749CD8452830"
-			rewards: [{
-				count: 4
-				id: "51F118AC6BEDD5BD"
-				item: "legendarysurvivaloverhaul:sun_fern_seeds"
-				type: "item"
-			}]
-			subtitle: "&fA quick ignition"
-			tasks: [{
-				consume_items: true
-				count: 16L
-				id: "593A5F311E2AEB0B"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
-			title: "Shop : Fire Charge"
-			x: -2.5d
-			y: 3.0d
-		}
-		{
 			can_repeat: true
 			dependencies: ["38DA0B4E0DBAC364"]
 			hide_until_deps_complete: true
@@ -698,7 +658,7 @@
 				type: "item"
 			}]
 			title: "Shop : Tin Cable"
-			x: -1.0d
+			x: -4.0d
 			y: 3.0d
 		}
 		{
@@ -721,8 +681,8 @@
 				type: "item"
 			}]
 			title: "Shop : 15 Levels"
-			x: 0.5d
-			y: 1.5d
+			x: -1.0d
+			y: 3.0d
 		}
 		{
 			can_repeat: true
@@ -743,45 +703,8 @@
 				type: "item"
 			}]
 			title: "Shop : 30 Levels"
-			x: 0.5d
+			x: -2.5d
 			y: 3.0d
-		}
-		{
-			can_repeat: false
-			dependencies: ["38DA0B4E0DBAC364"]
-			description: [
-				"16 Clusters is no cheap pricetag."
-				""
-				"However a longing feeling of familiarity draws you towards this reward."
-				""
-				"You may only claim it once."
-			]
-			hide_until_deps_complete: true
-			icon: "gtceu:prospector.luv"
-			id: "4E5F99D0B1FEBE23"
-			rewards: [{
-				id: "0E446BE2D23F82EB"
-				item: {
-					Count: 1
-					id: "gtceu:prospector.luv"
-					tag: {
-						Charge: 1000000000L
-					}
-				}
-				type: "item"
-			}]
-			shape: "hexagon"
-			subtitle: "A Major Sacrifice"
-			tasks: [{
-				consume_items: true
-				count: 16L
-				id: "5F544487EFB42CE6"
-				item: "cosmiccore:cluster_of_perpetuity"
-				type: "item"
-			}]
-			title: "Shop : LUV Prospector"
-			x: 0.5d
-			y: -3.0d
 		}
 	]
 	title: "Store (placeholder)"
