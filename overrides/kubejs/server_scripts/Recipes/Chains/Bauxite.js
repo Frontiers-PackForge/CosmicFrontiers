@@ -5,6 +5,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:macerator/macerate_bauxite_crushed_ore_to_dust' })
     event.remove({ id: 'gtceu:centrifuge/centrifuge_bauxite_pure_dust_to_dust' })
     event.remove({ id: 'gtceu:extractor/extract_cryolite_dust' })
+    event.remove({ id: 'gtceu:mixer/bauxite_slurry_from_washed_bauxite' })
+    event.remove({ id: 'gtceu:cracker/cracked_bauxite_slurry' })
+    event.remove({ id: 'gtceu:large_chemical_reactor/bauxite_sludge_from_slurry' })
+    event.remove({ id: 'gtceu:distillery/bauxite_sludge_decalcification' })
+    event.remove({ id: 'gtceu:centrifuge/bauxite_sludge_centrifuge' })
+    event.remove({ id: 'gtceu:electromagnetic_separator/bauxite_slag_separation' })
 
     event.recipes.gtceu.thermal_centrifuge('centrifuge_bauxite_purified_ore_to_refined_ore')
         .itemInputs('gtceu:purified_bauxite_ore')
