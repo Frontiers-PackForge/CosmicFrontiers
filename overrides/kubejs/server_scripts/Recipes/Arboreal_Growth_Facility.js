@@ -278,4 +278,23 @@ ServerEvents.recipes(event => {
                 .EUt(GTValues.VA[GTValues.MV] / 2)
         }
     })
+
+    let FungiUG = [
+        'undergarden:veil',,
+        'undergarden:ink',
+        'undergarden:indigo',
+    ]
+
+    FungiUG.forEach(tree => {
+        event.recipes.gtceu.arboreal_growth_facility(`${tree}_growth_solution`)
+            .notConsumable(`1x ${tree}_mushroom`)
+            .notConsumable(`1x undergarden:deepsoil`)
+            .inputFluids(['gtceu:nutrient_solution 25', 'gtceu:undergarden_smog 100'])
+            .itemOutputs(`24x ${tree}_mushroom_stem`, `6x ${tree}_mushroom_cap`)
+            .chancedOutput(`12x ${tree}_mushroom_stem`, 5000, 500)
+            .chancedOutput(`3x ${tree}_mushroom_cap`, 5000, 500)
+            .chancedOutput(`4x ${tree}_mushroom`, 500, 0)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.HV] / 2)
+    })
 })
