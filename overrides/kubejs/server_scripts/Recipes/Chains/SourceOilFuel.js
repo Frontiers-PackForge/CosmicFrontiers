@@ -41,8 +41,8 @@ ServerEvents.recipes((event) => {
   //Extraction
   event.recipes.gtceu.chemical_reactor("gtceu:centrifuge/source_oil_spinny")
     .itemInputs("4x kubejs:shredded_magebloom")
-    .inputFluids("gtceu:potent_mana 1000")
-    .inputFluids("water 3000")
+    .inputFluids("gtceu:potent_mana 250")
+    .inputFluids("water 3750")
     .outputFluids("gtceu:dirty_magebloom_slurry 4000")
     .duration(160)
     .EUt(24);
