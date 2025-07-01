@@ -190,18 +190,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('4x gtceu:livingwood_plate')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(120)
-    // //ManaSteel Rods IDK WHY GTCEU DOESNT AUTOGEN THEM SHRUG?
-    event.recipes.gtceu.lathe('manasteel_ingot_to_rod')
-        .itemInputs('botania:manasteel_ingot')
-        .itemOutputs('2x gtceu:manasteel_rod')
-        .EUt(GTValues.VA[GTValues.LV])
-        .duration(12)
-    event.recipes.gtceu.extruder('manasteel_ingot_to_rod')
-        .itemInputs('botania:manasteel_ingot')
-        .notConsumable('gtceu:rod_extruder_mold')
-        .itemOutputs('2x gtceu:manasteel_rod')
-        .EUt(GTValues.VA[GTValues.LV])
-        .duration(12)
     // //Terrasteel Rods
     // event.recipes.gtceu.extruder('terrasteel_ingot_to_rod')
     //     .itemInputs('botania:terrasteel_ingot')
