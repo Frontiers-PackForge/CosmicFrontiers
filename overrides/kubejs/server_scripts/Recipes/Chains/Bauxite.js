@@ -13,6 +13,14 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:distillery/bauxite_sludge_decalcification' })
     event.remove({ id: 'gtceu:centrifuge/bauxite_sludge_centrifuge' })
     event.remove({ id: 'gtceu:electromagnetic_separator/bauxite_slag_separation' })
+    event.remove({ id: 'gtceu:electrolyzer/bauxite_electrolysis'})
+
+    event.recipes.gtceu.electrolyzer('bauxite_electrolysis_cf')
+        .itemInputs('5x gtceu:bauxite_dust')
+        .itemOutputs('2x gtceu:aluminium_dust')
+        .outputFluids('gtceu:oxygen 3000')
+        .duration(270)
+        .EUt(GTValues.VA[GTValues.MV] / 2)
 
     event.recipes.gtceu.thermal_centrifuge('centrifuge_bauxite_purified_ore_to_refined_ore')
         .itemInputs('gtceu:purified_bauxite_ore')
