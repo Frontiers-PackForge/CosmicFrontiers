@@ -15,6 +15,9 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'integrateddynamics:crafting/mechanical_squeezer' })
   event.remove({ id: 'integrateddynamics:crafting/drying_basin' })
   event.remove({ id: 'integrateddynamics:crafting/mechanical_drying_basin' })
+  event.remove({ id: 'integrateddynamics:crafting/crystalized_menril_block'})
+  event.remove({ id: 'integrateddynamics:crafting/crystalized_menril_chunk'})
+
   event.shaped('integrateddynamics:squeezer', [
     'BSB',
     'A A',
@@ -59,6 +62,7 @@ event.shaped('integrateddynamics:mechanical_drying_basin', [
     A: 'ulvcovm:ulv_electric_pump',
     B: 'gtceu:treated_wood_frame'
   })
+  
 
   // Custom Recipe Handler? - Reference - Otherwise just dump the recipe in questions JSON into event.custom()
   let drying = (dryingoutput, dryingInput, duration) => {
@@ -116,7 +120,10 @@ event.shaped('integrateddynamics:mechanical_drying_basin', [
   mech_squeeze('legendarysurvivaloverhaul:ice_fern_leaf', 'gtceu:soulresin', 144)
   squeezing('nethersdelight:propelpearl', 'gtceu:cinderwax', 144)
   mech_squeeze('nethersdelight:propelpearl', 'gtceu:cinderwax', 144)
-
+  squeezing('integrateddynamics:menril_log', 'integrateddynamics:menril_resin', 1000)
+  mech_squeeze('integrateddynamics:menril_log', 'integrateddynamics:menril_resin', 1000)
+  squeezing('integrateddynamics:menril_planks', 'integrateddynamics:menril_resin', 250)
+  mech_squeeze('integrateddynamics:menril_planks', 'integrateddynamics:menril_resin', 250)
 
   event.recipes.gtceu.extractor('cinder_wax_extractor')
     .itemInputs('nethersdelight:propelpearl')
@@ -129,8 +136,31 @@ event.shaped('integrateddynamics:mechanical_drying_basin', [
     .outputFluids('gtceu:soulresin 144')
     .duration(50)
     .EUt(4);
+  
+  event.recipes.gtceu.extractor('menril_log_extractor')
+    .itemInputs('integrateddynamics:menril_log')
+    .outputFluids('integrateddynamics:menril_resin 1000')
+    .duration(50)
+    .EUt(4);
 
+  event.recipes.gtceu.extractor('menril_plank_extractor')
+    .itemInputs('integrateddynamics:menril_planks')
+    .outputFluids('integrateddynamics:menril_resin 250')
+    .duration(50)
+    .EUt(4);
 
+  event.recipes.gtceu.fluid_solidifier('menril_block_solidification')
+    .inputFluids('integrateddynamics:menril_resin 1000')
+    .notConsumable('gtceu:block_casting_mold')
+    .itemOutputs('integrateddynamics:crystalized_menril_block')
+    .duration(50)
+    .EUt(4);
+
+  event.recipes.gtceu.forge_hammer('menril_block_hammering')
+    .itemInputs('integrateddynamics:crystalized_menril_block')
+    .itemOutputs('9x integrateddynamics:crystalized_menril_chunk')
+    .duration(50)
+    .EUt(4);
 
 
 
