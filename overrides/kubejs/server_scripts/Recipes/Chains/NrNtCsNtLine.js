@@ -183,6 +183,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(8700)
         .duration(2000)
         .gameStage('Mana Optimization')
+        .dimension('frontiers:sun_orbit')
         .EUt(GTValues.VA[GTValues.ZPM]);
 
 })
