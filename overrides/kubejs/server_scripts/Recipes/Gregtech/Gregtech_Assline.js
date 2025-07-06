@@ -29,8 +29,8 @@ ServerEvents.recipes(event => {
       'gtceu:grading_fluid_1 32000',
       'gtceu:grading_fluid_2 16000'
     )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('occultism:chalk_red', '{Damage:0}')).EUt(GTValues.VA[GTValues.LuV]).duration(23800))
-    .duration(300)
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('occultism:chalk_red', '{Damage:0}')).EUt(GTValues.VA[GTValues.LuV]).duration(3200))
+    .duration(1200)
     .EUt(GTValues.VA[GTValues.LuV])
 
   event.recipes.gtceu.assembly_line('luv_hull_assline')
