@@ -66,20 +66,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('hydrazine')
         .liquid()
         .color(0xff2e51)
-    //Netherite Line Materials
-    event.create('ancient_debris')
-        .dust()
-        .color(0x422a25)
-
-
-    event.create('netherite_scrap')
-        .dust()
-        .color(0x53332b).iconSet(GTMaterialIconSet.SHINY)
-
-
-    event.create('netherite_alloy')
-        .dust()
-        .color(0x393435).iconSet(GTMaterialIconSet.SHINY)
     event.create('raw_mana_crystal_slurry')
         .liquid()
         .color(0x32a88d).iconSet(GTMaterialIconSet.SHINY)

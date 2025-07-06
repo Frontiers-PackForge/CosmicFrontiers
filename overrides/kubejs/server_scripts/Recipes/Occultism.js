@@ -216,6 +216,10 @@ ServerEvents.recipes(event => {
     Item.of('malum:cluster_of_brilliance').withChance(75),
     'malum:soul_stained_steel_pickaxe'
   )
+  event.recipes.occultism.miner(
+    Item.of('minecraft:ancient_debris').withChance(2),
+    'minecraft:netherite_pickaxe'
+  )
   event.recipes.occultism.ritual(
     '16x gtceu:runed_steel_ingot',
     [
