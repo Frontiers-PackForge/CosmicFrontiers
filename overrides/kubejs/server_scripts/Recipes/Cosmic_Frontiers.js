@@ -442,9 +442,15 @@ ServerEvents.recipes(event => {
               .outputFluids(Fluid.of('gtceu:potent_mana', 6000))
               .duration(2100)
               .EUt(GTValues.VA[GTValues.EV]);
-       event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_entropinnyum')
+       event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_entropinnyum_tnt')
               .notConsumable('kubejs:mechanical_entropinnyum')
               .itemInputs('4x minecraft:tnt')
+              .outputFluids(Fluid.of('gtceu:potent_mana', 6000))
+              .duration(120)
+              .EUt(GTValues.VA[GTValues.EV]);
+       event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_entropinnyum_itnt')
+              .notConsumable('kubejs:mechanical_entropinnyum')
+              .itemInputs('1x gtceu:industrial_tnt')
               .outputFluids(Fluid.of('gtceu:potent_mana', 6000))
               .duration(120)
               .EUt(GTValues.VA[GTValues.EV]);
