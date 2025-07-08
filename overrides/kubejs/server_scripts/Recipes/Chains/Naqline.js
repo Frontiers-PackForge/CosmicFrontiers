@@ -106,4 +106,51 @@ ServerEvents.recipes(event => {
         .outputFluids('minecraft:water 1000')
         .duration(600)
         .EUt(GTValues.VA[GTValues.MV]);
+
+    // Naquadah Alloy EBF
+
+    event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadah_alloy'})
+    event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadah_alloy_gas'})
+    event.remove({ id: 'gtceu:orbital_forge/blast_naquadah_alloy'})
+    event.remove({ id: 'gtceu:orbital_forge/blast_naquadah_alloy_gas'})
+
+    event.recipes.gtceu.electric_blast_furnace('naquadah_alloy_ingot_gas1')
+        .itemInputs('1x gtceu:naquadah_alloy_dust')
+        .inputFluids('gtceu:argon 50')
+        .itemOutputs('gtceu:hot_naquadah_alloy_ingot')
+        .duration(670)
+        .blastFurnaceTemp(5900)
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+    event.recipes.gtceu.electric_blast_furnace('naquadah_alloy_ingot1')
+        .itemInputs('1x gtceu:naquadah_alloy_dust')
+        .itemOutputs('gtceu:hot_naquadah_alloy_ingot')
+        .duration(1000)
+        .blastFurnaceTemp(5900)
+        .circuit(1)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+
+    // Naquadah Alloy ABS
+
+    event.remove({ id: 'gtceu:alloy_blast_smelter/naquadah_alloy'})
+    event.remove({ id: 'gtceu:alloy_blast_smelter/naquadah_alloy_gas'})
+
+    event.recipes.gtceu.alloy_blast_smelter('naquadah_alloy_gas1')
+        .itemInputs('2x gtceu:naquadah_dust' , '1x gtceu:osmiridium_dust' , '1x gtceu:trinium_dust')
+        .inputFluids('gtceu:argon 200')
+        .outputFluids('gtceu:molten_naquadah_alloy 576')
+        .duration(2010)
+        .blastFurnaceTemp(5900)
+        .circuit(13)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+    event.recipes.gtceu.alloy_blast_smelter('naquadah_alloy1')
+        .itemInputs('2x gtceu:naquadah_dust' , '1x gtceu:osmiridium_dust' , '1x gtceu:trinium_dust')
+        .outputFluids('gtceu:molten_naquadah_alloy 576')
+        .duration(3000)
+        .blastFurnaceTemp(5900)
+        .circuit(3)
+        .EUt(GTValues.VA[GTValues.LuV]);
 })
