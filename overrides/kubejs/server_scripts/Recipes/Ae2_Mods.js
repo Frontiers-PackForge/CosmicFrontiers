@@ -788,7 +788,7 @@ ServerEvents.recipes(event => {
       .inputFluids('gtceu:redstone 288')
       .itemOutputs(`${componentType}`)
       .duration(100)
-      .EUt(`${euType}`);
+      .EUt(euType);
   })
 
 
@@ -893,18 +893,18 @@ ServerEvents.recipes(event => {
       .inputFluids(`gtceu:${fluids} 144`)
       .itemOutputs(`${output}x ae2:fluix_smart_cable`)
       .duration(100)
-      .EUt(`${euType}`);
+      .EUt(euType);
     event.recipes.gtceu.laminator(`dense_cable_${tier}`)
       .itemInputs([`gtceu:${tier}_quadruple_cable`, `16x ${polymer}`])
       .inputFluids(`gtceu:${fluids} 144`)
       .itemOutputs(`${output}x ae2:fluix_smart_dense_cable`)
       .duration(100)
-      .EUt(`${euType}`);
+      .EUt(euType);
     event.recipes.gtceu.cutter(`ae2:${tier}_cable_anchor`)
       .itemInputs(`gtceu:${fluids}_bolt`)
       .itemOutputs(`${output}x ae2:cable_anchor`)
       .duration(100)
-      .EUt(`${euType}`);
+      .EUt(euType);
   })
 
   event.recipes.gtceu.lathe(`ae2:fiber`)
