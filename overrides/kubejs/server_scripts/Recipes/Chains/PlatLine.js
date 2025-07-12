@@ -64,6 +64,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:oxygen 6000')
         .outputFluids('gtceu:hydrogen_peroxide 2000')
         .outputFluids('gtceu:carbon_dioxide 1000')
+        .circuit(7)
         .duration(160)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.chemical_reactor('hydrazine_craft')
