@@ -40,7 +40,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('Q', Predicates.blocks('gtceu:tempered_glass'))
             .where('L', Predicates.blocks('gtceu:white_borderless_lamp'))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/flora_nurturer', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/flora_nurturer');
 
 
 
@@ -68,7 +68,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .where('G', Predicates.blocks('botania:mana_glass'))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_frost_proof', 'gtceu:block/machines/mana_fluidizer', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_frost_proof', 'gtceu:block/machines/mana_fluidizer');
 
 
 
@@ -103,7 +103,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .where('G', Predicates.blocks('botania:mana_glass'))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/mana_fluidizer', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/mana_fluidizer');
     // reference `.setPreviewCount(1)`
     event.create('molten_salt_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -128,13 +128,14 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
             .build())
-        .workableCasingRenderer('cosmiccore:block/casings/solid/high_temperature_fission_casing', 'gtceu:block/multiblock/fusion_reactor', false);
+        .workableCasingModel('cosmiccore:block/casings/solid/high_temperature_fission_casing', 'gtceu:block/multiblock/fusion_reactor');
     //WHAT THE FUCK IS A FUNCTIONAL PLATLINE, PRESENT! LARGE! DRYER???? CUBOID??? HEAT! ! !  OWIE! ROASTED! ! ! ?????????
     // ????? ? ? ????? ?? ???? ? ? ??? ???? ? ? ???? ?? ?? ?  ?? ? ?? ? ?? ? ?? ? ?? ?? ? ??  ? ?? ? ?? ?? ?? ?? ??? ?????????
     // **FUCK**
     event.create('large_dryer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('chemical_dehydrator')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('TTTTT', 'TGGGT', 'TTTTT')
@@ -156,7 +157,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/flora_nurturer', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/flora_nurturer');
 
 
     event.create('pulse_heat_exchanger', 'multiblock')
@@ -180,7 +181,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
             .build())
-        .workableCasingRenderer('cosmiccore:block/casings/solid/highly_conductive_fission_casing', 'gtceu:block/multiblock/fusion_reactor', false);
+        .workableCasingModel('cosmiccore:block/casings/solid/highly_conductive_fission_casing', 'gtceu:block/multiblock/fusion_reactor');
 
 
     event.create('arboreal_growth_facility', 'multiblock')
@@ -213,7 +214,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
             )
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/mana_fluidizer', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/mana_fluidizer');
 
     event.create('industrial_stoneworks', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -243,7 +244,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
             )
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/rock_crusher', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/rock_crusher');
 
     event.create('soul_forge', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -273,7 +274,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities($CosmicPartAbility.IMPORT_SOUL))
             )
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/rock_crusher', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/rock_crusher');
     event.create('leaching_plant', 'multiblock')
         .rotationState(RotationState.ALL)
         .recipeType('leaching_plant')
@@ -298,7 +299,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
             )
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/mana_fluidizer', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/mana_fluidizer');
 
     event.create('grand_assembly_line', 'multiblock')
         .rotationState(RotationState.ALL)
@@ -340,7 +341,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('V', Predicates.blocks(GTBlocks.COMPUTER_HEAT_VENT.get()))
             .where('O', Predicates.abilities(PartAbility.EXPORT_ITEMS))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/hpca/computer_casing/side', 'gtceu:block/multiblock/network_switch', false);
+        .workableCasingModel('gtceu:block/casings/hpca/computer_casing/side', 'gtceu:block/multiblock/network_switch');
 
 
 
@@ -369,7 +370,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_sturdy_hsse', 'gtceu:block/machines/flora_nurturer', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_sturdy_hsse', 'gtceu:block/machines/flora_nurturer');
 
     event.create('gravity_float_crucible', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -377,22 +378,22 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
         .pattern(definition => FactoryBlockPattern.start()
-        .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       A       ", "      ABA      ", "      ABA      ", "       A       ", "               ")
-        .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       A       ", "      AAA      ", "      ACA      ", "       A       ", "               ")
-        .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "     DDDDD     ", "               ", "               ", "     DDADD     ", "      AAA      ", "    AAACAAA    ", "       A       ", "   AAAAAAAAA   ")
-        .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "    DD E DD    ", "               ", "               ", "    DD A DD    ", "     DAAAD     ", "   A  ACA  A   ", "    FFFAFFF    ", "  AA       AA  ")
-        .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "   D   E   D   ", "               ", "               ", "   D   A   D   ", "     DAAAD     ", "  A   ACA   A  ", "   FF  A  FF   ", "  A         A  ")
-        .aisle("               ", "               ", "               ", "       A       ", "      ABA      ", "      ABA      ", "      ABA      ", "  DD  ABA  DD  ", "      ABA      ", "      ABA      ", "  DD  ABA  DD  ", "   DDDAAADDD   ", "  A  AACAA  A  ", "   F   A   F   ", "  A         A  ")
-        .aisle("       D       ", "       D       ", "      DDD      ", "      DDD      ", "     AC CA     ", "     AC CA     ", "     AC CA     ", "  D  AC CA  D  ", "     AC CA     ", "     AC CA     ", "  D  A   A  D  ", "AAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAA", "   F  AAA  F   ", "  A         A  ")
-        .aisle("      DDD      ", "      DDD      ", "      D D      ", "     ADDDA     ", "     B G B     ", "     B G B     ", "     B G B     ", "  DEEB G BEED  ", "     B G B     ", "     B G B     ", "AAAAAB G BAAAAA", "BAAAAAAGAAAAAAB", "BCCCCCAGACCCCCB", "AAAAAAAQAAAAAAA", "  A         A  ")
-        .aisle("       D       ", "       D       ", "      DDD      ", "      DDD      ", "     AC CA     ", "     AC CA     ", "     AC CA     ", "  D  AC CA  D  ", "     AC CA     ", "     AC CA     ", "  D  A   A  D  ", "AAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAA", "   F  AAA  F   ", "  A         A  ")
-        .aisle("               ", "               ", "               ", "       A       ", "      AAA      ", "      ABA      ", "      ABA      ", "  DD  ABA  DD  ", "      ABA      ", "      ABA      ", "  DD  ABA  DD  ", "   DDDAAADDD   ", "  A  AACAA  A  ", "   F   A   F   ", "  A         A  ")
-        .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "   D   E   D   ", "               ", "               ", "   D   A   D   ", "     DAAAD     ", "  A   ACA   A  ", "   FF  A  FF   ", "  A         A  ")
-        .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "    DD E DD    ", "               ", "               ", "    DD A DD    ", "     DAAAD     ", "   A  ACA  A   ", "    FFFAFFF    ", "  AA       AA  ")
-        .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "     DDDDD     ", "               ", "               ", "     DDADD     ", "      AAA      ", "    AAACAAA    ", "       A       ", "   AAAAAAAAA   ")
-        .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       A       ", "      AAA      ", "      ACA      ", "       A       ", "               ")
-        .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       A       ", "      ABA      ", "      ABA      ", "       A       ", "               ")
-        
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       A       ", "      ABA      ", "      ABA      ", "       A       ", "               ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       A       ", "      AAA      ", "      ACA      ", "       A       ", "               ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "     DDDDD     ", "               ", "               ", "     DDADD     ", "      AAA      ", "    AAACAAA    ", "       A       ", "   AAAAAAAAA   ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "    DD E DD    ", "               ", "               ", "    DD A DD    ", "     DAAAD     ", "   A  ACA  A   ", "    FFFAFFF    ", "  AA       AA  ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "   D   E   D   ", "               ", "               ", "   D   A   D   ", "     DAAAD     ", "  A   ACA   A  ", "   FF  A  FF   ", "  A         A  ")
+            .aisle("               ", "               ", "               ", "       A       ", "      ABA      ", "      ABA      ", "      ABA      ", "  DD  ABA  DD  ", "      ABA      ", "      ABA      ", "  DD  ABA  DD  ", "   DDDAAADDD   ", "  A  AACAA  A  ", "   F   A   F   ", "  A         A  ")
+            .aisle("       D       ", "       D       ", "      DDD      ", "      DDD      ", "     AC CA     ", "     AC CA     ", "     AC CA     ", "  D  AC CA  D  ", "     AC CA     ", "     AC CA     ", "  D  A   A  D  ", "AAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAA", "   F  AAA  F   ", "  A         A  ")
+            .aisle("      DDD      ", "      DDD      ", "      D D      ", "     ADDDA     ", "     B G B     ", "     B G B     ", "     B G B     ", "  DEEB G BEED  ", "     B G B     ", "     B G B     ", "AAAAAB G BAAAAA", "BAAAAAAGAAAAAAB", "BCCCCCAGACCCCCB", "AAAAAAAQAAAAAAA", "  A         A  ")
+            .aisle("       D       ", "       D       ", "      DDD      ", "      DDD      ", "     AC CA     ", "     AC CA     ", "     AC CA     ", "  D  AC CA  D  ", "     AC CA     ", "     AC CA     ", "  D  A   A  D  ", "AAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAA", "   F  AAA  F   ", "  A         A  ")
+            .aisle("               ", "               ", "               ", "       A       ", "      AAA      ", "      ABA      ", "      ABA      ", "  DD  ABA  DD  ", "      ABA      ", "      ABA      ", "  DD  ABA  DD  ", "   DDDAAADDD   ", "  A  AACAA  A  ", "   F   A   F   ", "  A         A  ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "   D   E   D   ", "               ", "               ", "   D   A   D   ", "     DAAAD     ", "  A   ACA   A  ", "   FF  A  FF   ", "  A         A  ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "    DD E DD    ", "               ", "               ", "    DD A DD    ", "     DAAAD     ", "   A  ACA  A   ", "    FFFAFFF    ", "  AA       AA  ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "     DDDDD     ", "               ", "               ", "     DDADD     ", "      AAA      ", "    AAACAAA    ", "       A       ", "   AAAAAAAAA   ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       A       ", "      AAA      ", "      ACA      ", "       A       ", "               ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       A       ", "      ABA      ", "      ABA      ", "       A       ", "               ")
+
             .where('Q', Predicates.controller(Predicates.blocks(definition.get())))
             .where(' ', Predicates.any())
             .where('A', Predicates.blocks('gtceu:high_temperature_smelting_casing')
@@ -411,7 +412,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks('cosmiccore:highly_flexible_reinforced_trinavine_casing'))
             .where('F', Predicates.blocks('cosmiccore:resonantly_tuned_virtue_meld_casing'))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/gcym/high_temperature_smelting_casing', 'gtceu:block/multiblock/cleanroom', false);
+        .workableCasingModel('gtceu:block/casings/gcym/high_temperature_smelting_casing', 'gtceu:block/multiblock/cleanroom');
 
 
 
