@@ -184,6 +184,15 @@ ServerEvents.recipes(event => {
     .duration(60)
     .EUt(GTValues.VA[GTValues.LuV]);
 
+    // Wrapped Demonic Slate
+  event.recipes.gtceu.hellfire_foundry('t5_slate_prep')
+    .itemInputs('bloodmagic:demonslate', '64x gtceu:polybenzimidazole_foil')
+    .inputFluids('gtceu:grading_fluid_4 80')
+    .itemOutputs('kubejs:wrapped_slate_tier_5')
+    .soulInput(10000)
+    .duration(60)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
   event.recipes.gtceu.hellfire_foundry('frontiers:trinavine')
     .itemInputs(['gtceu:trinium_dust', 'gtceu:trinium_dust', 'gtceu:trinium_dust', 'gtceu:trinium_dust', 'bloodmagic:reagentbinding'])
     .inputFluids('gtceu:grading_fluid_3 250')
