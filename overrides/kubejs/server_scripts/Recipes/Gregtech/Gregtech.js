@@ -320,7 +320,7 @@ ServerEvents.recipes(event => {
     'PWP'
   ], {
     P: 'gtceu:double_wrought_iron_plate',
-    R: 'ulvcovm:ulv_robot_arm',
+    R: 'cosmiccore:shard_of_perpetuity',
     C: 'gtceu:ulv_machine_hull',
     W: '#gtceu:circuits/ulv',
   })
@@ -340,7 +340,7 @@ ServerEvents.recipes(event => {
     B: 'cosmiccore:steel_plated_bronze_casing',
     C: 'gtceu:steel_machine_casing',
     V: 'gtceu:vacuum_tube',
-    R: 'ulvcovm:ulv_robot_arm'
+    R: 'cosmiccore:shard_of_perpetuity'
   })
   event.shaped('2x cosmiccore:steel_plated_bronze_casing', [
     'PRP',
@@ -748,7 +748,7 @@ ServerEvents.recipes(event => {
   ], {
     P: 'gtceu:bronze_normal_fluid_pipe',
     R: 'gtceu:bronze_rotor',
-    G: 'ulvcovm:ulv_electric_motor',
+    G: 'cosmiccore:shard_of_perpetuity',
     C: 'gtceu:bronze_brick_casing',
     B: 'gtceu:coke_oven_bricks'
   })
@@ -757,8 +757,8 @@ ServerEvents.recipes(event => {
     'MCM',
     'FFF'
   ], {
-    M: 'ulvcovm:ulv_electric_motor',
-    P: 'ulvcovm:ulv_electric_piston',
+    M: 'cosmiccore:shard_of_perpetuity',
+    P: 'cosmiccore:shard_of_perpetuity',
     C: 'gtceu:steel_brick_casing',
     F: 'gtceu:firebricks',
     W: '#forge:tools/hammers'
@@ -768,7 +768,7 @@ ServerEvents.recipes(event => {
     'FCF',
     'MFM'
   ], {
-    M: 'ulvcovm:ulv_electric_motor',
+    M: 'cosmiccore:shard_of_perpetuity',
     C: 'gtceu:steel_brick_casing',
     F: 'gtceu:firebricks',
     W: '#forge:tools/hammers'
@@ -798,7 +798,7 @@ ServerEvents.recipes(event => {
     G: 'gtceu:coke_oven_bricks',
     C: 'gtceu:bronze_frame',
     B: 'minecraft:cauldron',
-    Q: 'ulvcovm:ulv_electric_piston'
+    Q: 'cosmiccore:shard_of_perpetuity'
   })
   event.shaped('cosmiccore:hellfire_foundry', [
     'LWL',
