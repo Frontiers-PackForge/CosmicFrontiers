@@ -741,7 +741,7 @@ ServerEvents.recipes(event => {
     C: 'gtceu:iv_spooling_machine',
     B: 'cosmiccore:wear_resistant_ruridit_casing'
   })
-  event.shaped('gtceu:steam_mixing_vessel', [
+  event.shaped('cosmiccore:steam_mixing_vessel', [
     'PRP',
     'GCG',
     'BBB'
@@ -752,7 +752,7 @@ ServerEvents.recipes(event => {
     C: 'gtceu:bronze_brick_casing',
     B: 'gtceu:coke_oven_bricks'
   })
-  event.shaped('gtceu:hp_steam_bender', [
+  event.shaped('cosmiccore:hp_steam_bender', [
     'PWP',
     'MCM',
     'FFF'
@@ -763,7 +763,7 @@ ServerEvents.recipes(event => {
     F: 'gtceu:firebricks',
     W: '#forge:tools/hammers'
   })
-  event.shaped('gtceu:hp_steam_wiremill', [
+  event.shaped('cosmiccore:hp_steam_wiremill', [
     'MWM',
     'FCF',
     'MFM'
