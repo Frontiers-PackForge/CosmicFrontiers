@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.fluid_heater('lake_to_rich_lake')
         .inputFluids('gtceu:lake_water 1000')
-        .outputFluids('gtceu:cultured_lake_water 1000')
+        .outputFluids('gtceu:sterilized_lake_water 1000')
         .dimension('undergarden:undergarden')
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV]);
