@@ -180,14 +180,14 @@ ServerEvents.recipes(event => {
     .itemOutputs('1x create:gearshift')
     .duration(50)
     .circuit(0)
-    .EUt(8);  
+    .EUt(8);
   //Encased Chain Drive
   event.recipes.gtceu.assembler("create:encased_chain_drive")
     .itemInputs('1x create:andesite_casing', '3x minecraft:iron_nugget')
     .itemOutputs('1x create:encased_chain_drive')
     .duration(50)
     .circuit(0)
-    .EUt(8);   
+    .EUt(8);
   //Adjustable Chain Gearshift
   event.recipes.gtceu.assembler("create:adjustable_chain_gearshift")
   .itemInputs('1x create:encased_chain_drive', '1x create:electron_tube')
@@ -431,7 +431,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('create:item_drain')
     .duration(50)
     .circuit(0)
-    .EUt(8);  
+    .EUt(8);
   //Spout
   event.remove({output: 'create:spout'})
   event.shaped('create:spout', [
@@ -500,7 +500,7 @@ ServerEvents.recipes(event => {
     P: 'ulvcovm:ulv_electric_piston'
   })
   event.recipes.gtceu.assembler("create:mechanical_piston")
-    .itemInputs('3x gtceu:treated_wood_plate', 'ulvcovm:ulv_electric_piston', '2x gtceu:red_alloy_bolt', '2x create:andesite_casing', '2x create:piston_extension_pole')
+    .itemInputs('3x gtceu:treated_wood_plate', 'ulvcovm:ulv_electric_piston', '2x gtceu:red_alloy_bolt', '2x create:andesite_casing', 'create:piston_extension_pole')
     .itemOutputs('create:mechanical_piston')
     .duration(50)
     .circuit(0)
@@ -706,7 +706,7 @@ ServerEvents.recipes(event => {
     M: 'ulvcovm:ulv_electric_motor'
   })
   event.recipes.gtceu.assembler("create:mechanical_drill")
-    .itemInputs('2x create:andesite_casing', '2x gtceu:andesite_alloy_plate', 'gtceu:blue_steel_drill_head', 'gtceu:andesite_alloy_gear', 'ulvcovm:ulv_electric_motor')
+    .itemInputs('2x create:andesite_casing', '2x gtceu:andesite_alloy_plate', 'gtceu:steel_drill_head', 'gtceu:andesite_alloy_gear', 'ulvcovm:ulv_electric_motor')
     .itemOutputs('create:mechanical_drill')
     .duration(50)
     .circuit(0)
@@ -925,7 +925,7 @@ ServerEvents.recipes(event => {
   ], {
     P: 'gtceu:brass_plate',
     C: 'create:railway_casing',
-    E: '#gtceu:circuits/lv',
+    E: '#gtceu:circuits/mv',
     L: 'minecraft:lever',
     M: 'create:precision_mechanism'
   })
@@ -967,7 +967,7 @@ ServerEvents.recipes(event => {
   .itemOutputs('4x create:andesite_funnel')
   .circuit(9)
   .duration(50)
-  .EUt(8);  
+  .EUt(8);
   //Brass Funnel
   event.remove({output: "create:brass_funnel"})
   event.shaped('2x create:brass_funnel', [
@@ -984,7 +984,7 @@ ServerEvents.recipes(event => {
   .itemOutputs('4x create:brass_funnel')
   .circuit(9)
   .duration(50)
-  .EUt(8);  
+  .EUt(8);
   //Andesite Tunnel
   event.remove({output: "create:andesite_tunnel"})
   event.shaped('2x create:andesite_tunnel', [
@@ -1000,7 +1000,7 @@ ServerEvents.recipes(event => {
   .itemOutputs('4x create:andesite_tunnel')
   .circuit(10)
   .duration(50)
-  .EUt(8);  
+  .EUt(8);
   //Brass Tunnel
   event.remove({output: "create:brass_tunnel"})
   event.shaped('2x create:brass_tunnel', [
@@ -1064,7 +1064,7 @@ ServerEvents.recipes(event => {
   .EUt(8);
   //Redstone Link
   event.recipes.gtceu.assembler("create:redstone_link")
-  .itemInputs('create:brass_casing', 'minecraft:redstone_torch') 
+  .itemInputs('create:brass_casing', 'minecraft:redstone_torch')
   .itemOutputs('2x create:redstone_link')
   .circuit(2)
   .duration(50)
@@ -1119,7 +1119,12 @@ ServerEvents.recipes(event => {
     G: 'gtceu:long_steel_rod',
     N: 'minecraft:netherrack'
   })
-  //Brass Hand 
+  //Brass Hand
+  event.replaceInput(
+      { output: 'create:brass_hand' },
+      'create:andesite_alloy',
+      'gtceu:andesite_alloy_plate'
+  )
   event.recipes.gtceu.assembler('create:brass_hand')
     .itemInputs('4x gtceu:brass_plate')
     .itemInputs('gtceu:andesite_alloy_plate')
