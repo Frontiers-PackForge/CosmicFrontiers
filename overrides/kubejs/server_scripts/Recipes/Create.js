@@ -3,6 +3,7 @@ let yeet = (itemName) => {
     event.remove({ output: itemName })
   })
   ServerEvents.tags('item', event => {
+    console.log('[8] - [1] - TAG-WATCHER')
     event.add('c:hidden_from_recipe_viewers', itemName)
   })
 }
@@ -26,7 +27,7 @@ yeet('balancedflight:ascended_flight_ring')
 yeet('create:propeller')
 
 ServerEvents.tags('item', event => {
-  console.log('Hello! The item tags event has fired!')
+  console.log('[8] - [2] - TAG-WATCHER')
 
   //Other Modded Plate Removals From the Forge Tag - Remember to Hide in EMI if needed below
   event.remove('forge:plates/copper', 'create:copper_sheet')
@@ -254,11 +255,11 @@ ServerEvents.recipes(event => {
     C: 'create:cogwheel',
     A: 'create:andesite_casing',
     S: 'gtceu:stone_gear',
-    M: 'ulvcovm:ulv_electric_motor',
+    M: 'cosmiccore:shard_of_perpetuity',
     F: '#forge:stone'
   })
   event.recipes.gtceu.assembler("create:millstone")
-    .itemInputs('2x gtceu:stone_gear', 'create:cogwheel', 'create:andesite_casing', '2x #forge:stone', 'ulvcovm:ulv_electric_motor')
+    .itemInputs('2x gtceu:stone_gear', 'create:cogwheel', 'create:andesite_casing', '2x #forge:stone', 'cosmiccore:shard_of_perpetuity')
     .itemOutputs('create:millstone')
     .duration(50)
     .circuit(0)
@@ -272,11 +273,11 @@ ServerEvents.recipes(event => {
   ], {
     S: 'create:shaft',
     A: 'create:andesite_casing',
-    M: 'ulvcovm:ulv_electric_piston',
+    M: 'cosmiccore:shard_of_perpetuity',
     W: 'gtceu:wrought_iron_block'
   })
   event.recipes.gtceu.assembler("create:mechanical_press")
-  .itemInputs('gtceu:wrought_iron_block', 'create:shaft', '2x create:andesite_casing', 'ulvcovm:ulv_electric_piston')
+  .itemInputs('gtceu:wrought_iron_block', 'create:shaft', '2x create:andesite_casing', 'cosmiccore:shard_of_perpetuity')
   .itemOutputs('create:mechanical_press')
   .duration(50)
   .circuit(0)
@@ -306,11 +307,11 @@ ServerEvents.recipes(event => {
   ], {
     C: 'create:cogwheel',
     A: 'create:andesite_casing',
-    M: 'ulvcovm:ulv_electric_motor',
+    M: 'cosmiccore:shard_of_perpetuity',
     W: 'create:whisk'
   })
   event.recipes.gtceu.assembler('create:mechanical_mixer')
-  .itemInputs('create:whisk', '2x create:andesite_casing', 'create:cogwheel', 'ulvcovm:ulv_electric_motor')
+  .itemInputs('create:whisk', '2x create:andesite_casing', 'create:cogwheel', 'cosmiccore:shard_of_perpetuity')
   .itemOutputs('create:mechanical_mixer')
   .duration(100)
   .circuit(0)
@@ -406,11 +407,11 @@ ServerEvents.recipes(event => {
   ], {
     C: 'gtceu:copper_plate',
     K: 'minecraft:dried_kelp_block',
-    P: 'ulvcovm:ulv_electric_pump',
+    P: 'cosmiccore:shard_of_perpetuity',
     F: 'gtceu:bronze_normal_fluid_pipe'
   })
   event.recipes.gtceu.assembler("create:hose_pulley")
-    .itemInputs('ulvcovm:ulv_electric_pump', '5x gtceu:copper_plate','minecraft:dried_kelp_block', 'gtceu:bronze_normal_fluid_pipe')
+    .itemInputs('cosmiccore:shard_of_perpetuity', '5x gtceu:copper_plate','minecraft:dried_kelp_block', 'gtceu:bronze_normal_fluid_pipe')
     .itemOutputs('create:hose_pulley')
     .duration(50)
     .circuit(0)
@@ -441,11 +442,11 @@ ServerEvents.recipes(event => {
   ], {
     C: 'create:copper_casing',
     B: 'gtceu:bronze_plate',
-    P: 'ulvcovm:ulv_electric_pump',
+    P: 'cosmiccore:shard_of_perpetuity',
     F: 'gtceu:bronze_normal_fluid_pipe'
   })
   event.recipes.gtceu.assembler("create:spout")
-    .itemInputs('2x gtceu:bronze_plate', 'ulvcovm:ulv_electric_pump', 'create:copper_casing', 'gtceu:bronze_normal_fluid_pipe')
+    .itemInputs('2x gtceu:bronze_plate', 'cosmiccore:shard_of_perpetuity', 'create:copper_casing', 'gtceu:bronze_normal_fluid_pipe')
     .itemOutputs('create:spout')
     .duration(50)
     .circuit(0)
@@ -458,11 +459,11 @@ ServerEvents.recipes(event => {
     '   '
   ], {
     C: 'create:copper_casing',
-    O: 'ulvcovm:ulv_electric_pump',
+    O: 'cosmiccore:shard_of_perpetuity',
     H: 'create:chute'
   })
   event.recipes.gtceu.assembler("create:portable_fluid_interface")
-    .itemInputs('ulvcovm:ulv_electric_pump', 'create:copper_casing', 'create:chute')
+    .itemInputs('cosmiccore:shard_of_perpetuity', 'create:copper_casing', 'create:chute')
     .itemOutputs('create:portable_fluid_interface')
     .duration(50)
     .circuit(0)
@@ -478,10 +479,10 @@ ServerEvents.recipes(event => {
     F: 'gtceu:andesite_alloy_frame',
     A: 'gtceu:andesite_alloy_plate',
     C: 'minecraft:copper_block',
-    R: 'ulvcovm:ulv_electric_piston'
+    R: 'cosmiccore:shard_of_perpetuity'
   })
   event.recipes.gtceu.assembler("create:steam_engine")
-    .itemInputs('gtceu:gold_plate', 'ulvcovm:ulv_electric_piston', 'gtceu:andesite_alloy_frame', '2x gtceu:andesite_alloy_plate', '2x minecraft:copper_block')
+    .itemInputs('gtceu:gold_plate', 'cosmiccore:shard_of_perpetuity', 'gtceu:andesite_alloy_frame', '2x gtceu:andesite_alloy_plate', '2x minecraft:copper_block')
     .itemOutputs('create:steam_engine')
     .duration(50)
     .circuit(0)
@@ -497,10 +498,10 @@ ServerEvents.recipes(event => {
     R: 'gtceu:red_alloy_bolt',
     A: 'create:andesite_casing',
     E: 'create:piston_extension_pole',
-    P: 'ulvcovm:ulv_electric_piston'
+    P: 'cosmiccore:shard_of_perpetuity'
   })
   event.recipes.gtceu.assembler("create:mechanical_piston")
-    .itemInputs('3x gtceu:treated_wood_plate', 'ulvcovm:ulv_electric_piston', '2x gtceu:red_alloy_bolt', '2x create:andesite_casing', '2x create:piston_extension_pole')
+    .itemInputs('3x gtceu:treated_wood_plate', 'cosmiccore:shard_of_perpetuity', '2x gtceu:red_alloy_bolt', '2x create:andesite_casing', 'create:piston_extension_pole')
     .itemOutputs('create:mechanical_piston')
     .duration(50)
     .circuit(0)
@@ -529,12 +530,12 @@ ServerEvents.recipes(event => {
     'CCC'
   ], {
     W: 'gtceu:treated_wood_plate',
-    R: 'ulvcovm:ulv_electric_motor',
+    R: 'cosmiccore:shard_of_perpetuity',
     A: 'create:andesite_casing',
     C: 'create:cogwheel'
   })
   event.recipes.gtceu.assembler("create:gantry_carriage")
-    .itemInputs('gtceu:treated_wood_plate', 'ulvcovm:ulv_electric_motor', '2x create:andesite_casing', '3x create:cogwheel')
+    .itemInputs('gtceu:treated_wood_plate', 'cosmiccore:shard_of_perpetuity', '2x create:andesite_casing', '3x create:cogwheel')
     .itemOutputs('create:gantry_carriage')
     .duration(50)
     .circuit(0)
@@ -566,11 +567,11 @@ ServerEvents.recipes(event => {
     W: 'gtceu:treated_wood_plate',
     A: 'create:andesite_casing',
     C: 'create:cogwheel',
-    M: 'ulvcovm:ulv_electric_motor',
+    M: 'cosmiccore:shard_of_perpetuity',
     S: 'create:shaft'
   })
   event.recipes.gtceu.assembler("create:mechanical_bearing")
-    .itemInputs('3x gtceu:treated_wood_plate', '2x create:andesite_casing', '2x create:cogwheel', 'ulvcovm:ulv_electric_motor', 'create:shaft')
+    .itemInputs('3x gtceu:treated_wood_plate', '2x create:andesite_casing', '2x create:cogwheel', 'cosmiccore:shard_of_perpetuity', 'create:shaft')
     .itemOutputs('create:mechanical_bearing')
     .duration(50)
     .circuit(0)
@@ -585,11 +586,11 @@ ServerEvents.recipes(event => {
     W: 'gtceu:treated_wood_plate',
     A: 'create:brass_casing',
     C: 'create:cogwheel',
-    M: 'ulvcovm:ulv_electric_motor',
+    M: 'cosmiccore:shard_of_perpetuity',
     S: 'create:electron_tube'
   })
   event.recipes.gtceu.assembler("create:clockwork_bearing")
-    .itemInputs('3x gtceu:treated_wood_plate', '2x create:brass_casing', '2x create:cogwheel', 'ulvcovm:ulv_electric_motor', 'create:electron_tube')
+    .itemInputs('3x gtceu:treated_wood_plate', '2x create:brass_casing', '2x create:cogwheel', 'cosmiccore:shard_of_perpetuity', 'create:electron_tube')
     .itemOutputs('create:clockwork_bearing')
     .duration(50)
     .circuit(0)
@@ -603,12 +604,12 @@ ServerEvents.recipes(event => {
   ], {
     P: 'gtceu:andesite_alloy_plate',
     A: 'create:andesite_casing',
-    M: 'ulvcovm:ulv_electric_motor',
+    M: 'cosmiccore:shard_of_perpetuity',
     S: 'create:shaft',
     R: '#forge:rope'
   })
   event.recipes.gtceu.assembler("create:rope_pulley")
-    .itemInputs('3x gtceu:andesite_alloy_plate', '2x create:andesite_casing', '2x create:shaft', 'ulvcovm:ulv_electric_motor', '#forge:rope')
+    .itemInputs('3x gtceu:andesite_alloy_plate', '2x create:andesite_casing', '2x create:shaft', 'cosmiccore:shard_of_perpetuity', '#forge:rope')
     .itemOutputs('create:rope_pulley')
     .duration(50)
     .circuit(0)
@@ -622,12 +623,12 @@ ServerEvents.recipes(event => {
   ], {
     P: 'gtceu:andesite_alloy_plate',
     A: 'create:brass_casing',
-    M: 'ulvcovm:ulv_electric_motor',
+    M: 'cosmiccore:shard_of_perpetuity',
     S: 'create:shaft',
     R: '#forge:rope'
   })
   event.recipes.gtceu.assembler("create:elevator_pulley")
-    .itemInputs('3x gtceu:andesite_alloy_plate', '2x create:brass_casing', '2x create:shaft', 'ulvcovm:ulv_electric_motor', '#forge:rope')
+    .itemInputs('3x gtceu:andesite_alloy_plate', '2x create:brass_casing', '2x create:shaft', 'cosmiccore:shard_of_perpetuity', '#forge:rope')
     .itemOutputs('create:elevator_pulley')
     .duration(50)
     .circuit(0)
@@ -703,10 +704,10 @@ ServerEvents.recipes(event => {
     P: 'gtceu:andesite_alloy_plate',
     G: 'gtceu:andesite_alloy_gear',
     D: 'gtceu:steel_drill_head',
-    M: 'ulvcovm:ulv_electric_motor'
+    M: 'cosmiccore:shard_of_perpetuity'
   })
   event.recipes.gtceu.assembler("create:mechanical_drill")
-    .itemInputs('2x create:andesite_casing', '2x gtceu:andesite_alloy_plate', 'gtceu:blue_steel_drill_head', 'gtceu:andesite_alloy_gear', 'ulvcovm:ulv_electric_motor')
+    .itemInputs('2x create:andesite_casing', '2x gtceu:andesite_alloy_plate', 'gtceu:steel_drill_head', 'gtceu:andesite_alloy_gear', 'cosmiccore:shard_of_perpetuity')
     .itemOutputs('create:mechanical_drill')
     .duration(50)
     .circuit(0)
@@ -722,10 +723,10 @@ ServerEvents.recipes(event => {
     P: 'gtceu:andesite_alloy_plate',
     G: 'gtceu:andesite_alloy_gear',
     D: 'gtceu:wrought_iron_buzz_saw_blade',
-    M: 'ulvcovm:ulv_electric_motor'
+    M: 'cosmiccore:shard_of_perpetuity'
   })
   event.recipes.gtceu.assembler("create:mechanical_saw")
-    .itemInputs('2x create:andesite_casing', '2x gtceu:andesite_alloy_plate', 'gtceu:wrought_iron_buzz_saw_blade', 'gtceu:andesite_alloy_gear', 'ulvcovm:ulv_electric_motor')
+    .itemInputs('2x create:andesite_casing', '2x gtceu:andesite_alloy_plate', 'gtceu:wrought_iron_buzz_saw_blade', 'gtceu:andesite_alloy_gear', 'cosmiccore:shard_of_perpetuity')
     .itemOutputs('create:mechanical_saw')
     .duration(50)
     .circuit(0)
@@ -741,10 +742,10 @@ ServerEvents.recipes(event => {
     P: 'gtceu:andesite_alloy_plate',
     G: 'create:shaft',
     D: 'create:brass_hand',
-    M: 'ulvcovm:ulv_electric_piston'
+    M: 'cosmiccore:shard_of_perpetuity'
   })
   event.recipes.gtceu.assembler("create:deployer")
-    .itemInputs('2x create:andesite_casing', '2x gtceu:andesite_alloy_plate', 'create:brass_hand', 'create:shaft', 'ulvcovm:ulv_electric_piston')
+    .itemInputs('2x create:andesite_casing', '2x gtceu:andesite_alloy_plate', 'create:brass_hand', 'create:shaft', 'cosmiccore:shard_of_perpetuity')
     .itemOutputs('create:deployer')
     .duration(50)
     .circuit(0)
@@ -757,11 +758,11 @@ ServerEvents.recipes(event => {
     '   '
   ], {
     C: 'create:andesite_casing',
-    O: 'ulvcovm:ulv_conveyor_module',
+    O: 'cosmiccore:shard_of_perpetuity',
     H: 'create:chute'
   })
   event.recipes.gtceu.assembler("create:portable_storage_interface")
-    .itemInputs('ulvcovm:ulv_conveyor_module', 'create:andesite_casing', 'create:chute')
+    .itemInputs('cosmiccore:shard_of_perpetuity', 'create:andesite_casing', 'create:chute')
     .itemOutputs('create:portable_storage_interface')
     .duration(50)
     .circuit(0)
@@ -925,7 +926,7 @@ ServerEvents.recipes(event => {
   ], {
     P: 'gtceu:brass_plate',
     C: 'create:railway_casing',
-    E: '#gtceu:circuits/lv',
+    E: '#gtceu:circuits/mv',
     L: 'minecraft:lever',
     M: 'create:precision_mechanism'
   })
@@ -1077,11 +1078,11 @@ ServerEvents.recipes(event => {
     '   '
   ], {
     C: 'create:cogwheel',
-    P: 'ulvcovm:ulv_electric_pump',
+    P: 'cosmiccore:shard_of_perpetuity',
     F: 'create:fluid_pipe'
   })
   event.recipes.gtceu.assembler("create:mechanical_pump")
-  .itemInputs('create:fluid_pipe', 'ulvcovm:ulv_electric_pump', 'create:cogwheel')
+  .itemInputs('create:fluid_pipe', 'cosmiccore:shard_of_perpetuity', 'create:cogwheel')
   .itemOutputs('create:mechanical_pump')
   .circuit(10)
   .duration(50)
@@ -1122,7 +1123,7 @@ ServerEvents.recipes(event => {
   //Brass Hand 
   event.recipes.gtceu.assembler('create:brass_hand')
     .itemInputs('4x gtceu:brass_plate')
-    .itemInputs('gtceu:andesite_alloy_plate')
+    .itemInputs('create:andesite_alloy')
     .itemOutputs('create:brass_hand')
     .circuit(0)
     .duration(100)

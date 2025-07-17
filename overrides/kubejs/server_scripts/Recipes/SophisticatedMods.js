@@ -1,17 +1,51 @@
-//A Simple "REMOVE AND HIDE" function akin to GroovyScript's Jei.yeet() function - This will tag the item for hiding from recipe viewers and remove the recipe
-//This one also has a tag removal function to remove the forge:tools/knives tag from what is removed so bear that in mind if you copy/paste this around
-// let yeet = (itemName) => {
-//   ServerEvents.recipes(event => {
-//     event.remove({ output: itemName })
-//   })
-//   ServerEvents.tags('item', event => {
-//     event.add('forge:viewers/hidden_from_recipe', itemName)
-
-//   })
-// }
-let DONOTEXIST = ['sophisticatedstorage:stack_upgrade_tier_5','sophisticatedstorage:basic_to_gold_tier_upgrade', 'sophisticatedstorage:basic_to_diamond_tier_upgrade', 'sophisticatedstorage:basic_to_netherite_tier_upgrade', 'sophisticatedstorage:iron_to_diamond_tier_upgrade', 'sophisticatedstorage:iron_to_netherite_tier_upgrade', 'sophisticatedstorage:gold_to_netherite_tier_upgrade','sophisticatedstorage:stack_upgrade_tier_3', 'sophisticatedstorage:stack_upgrade_tier_4', 'sophisticatedbackpacks:stack_upgrade_tier_1', 'sophisticatedbackpacks:stack_upgrade_tier_2', 'sophisticatedbackpacks:stack_upgrade_tier_3', 'sophisticatedbackpacks:stack_upgrade_tier_4','sophisticatedbackpacks:stack_upgrade_starter_tier','sophisticatedstorage:stack_upgrade_tier_1_plus']
-
+let DONOTEXIST = ['sophisticatedstorage:stack_upgrade_tier_5','sophisticatedstorage:basic_to_gold_tier_upgrade', 'sophisticatedstorage:basic_to_diamond_tier_upgrade', 'sophisticatedstorage:basic_to_netherite_tier_upgrade', 'sophisticatedstorage:iron_to_diamond_tier_upgrade', 'sophisticatedstorage:iron_to_netherite_tier_upgrade', 'sophisticatedstorage:gold_to_netherite_tier_upgrade','sophisticatedstorage:stack_upgrade_tier_3', 'sophisticatedstorage:stack_upgrade_tier_4', 'sophisticatedbackpacks:stack_upgrade_tier_1', 'sophisticatedbackpacks:stack_upgrade_tier_2', 'sophisticatedbackpacks:stack_upgrade_tier_3', 'sophisticatedbackpacks:stack_upgrade_tier_4','sophisticatedbackpacks:stack_upgrade_starter_tier','sophisticatedstorage:stack_upgrade_tier_1_plus',
+'sophisticatedstorage:limited_barrel_1',
+'sophisticatedstorage:limited_barrel_2',
+'sophisticatedstorage:limited_barrel_3',
+'sophisticatedstorage:limited_barrel_4',
+'sophisticatedstorage:limited_iron_barrel_1',
+'sophisticatedstorage:limited_iron_barrel_2',
+'sophisticatedstorage:limited_iron_barrel_3',
+'sophisticatedstorage:limited_iron_barrel_4',
+'sophisticatedstorage:limited_copper_barrel_1',
+'sophisticatedstorage:limited_copper_barrel_2',
+'sophisticatedstorage:limited_copper_barrel_3',
+'sophisticatedstorage:limited_copper_barrel_4',
+'sophisticatedstorage:limited_diamond_barrel_1',
+'sophisticatedstorage:limited_diamond_barrel_2',
+'sophisticatedstorage:limited_diamond_barrel_3',
+'sophisticatedstorage:limited_diamond_barrel_4',
+'sophisticatedstorage:limited_netherite_barrel_1',
+'sophisticatedstorage:limited_netherite_barrel_2',
+'sophisticatedstorage:limited_netherite_barrel_3',
+'sophisticatedstorage:limited_netherite_barrel_4',
+'sophisticatedstorage:limited_gold_barrel_1',
+'sophisticatedstorage:limited_gold_barrel_2',
+'sophisticatedstorage:limited_gold_barrel_3',
+'sophisticatedstorage:limited_gold_barrel_4',
+'sophisticatedstorage:copper_barrel',
+'sophisticatedstorage:copper_chest',
+'sophisticatedstorage:copper_shulker_box',
+'sophisticatedstorage:basic_to_copper_tier_upgrade',
+'sophisticatedstorage:copper_to_iron_tier_upgrade',
+'sophisticatedstorage:copper_to_gold_tier_upgrade',
+'sophisticatedstorage:copper_to_diamond_tier_upgrade',
+'sophisticatedstorage:copper_to_netherite_tier_upgrade',
+'sophisticatedstorage:pump_upgrade',
+'sophisticatedstorage:advanced_pump_upgrade',
+'sophisticatedstorage:xp_pump_upgrade',
+'sophisticatedbackpacks:pump_upgrade',
+'sophisticatedbackpacks:advanced_pump_upgrade',
+'sophisticatedbackpacks:xp_pump_upgrade',
+'sophisticatedstorage:stack_upgrade_omega_tier',
+'sophisticatedstorage:infinity_upgrade',
+'sophisticatedbackpacks:stack_upgrade_omega_tier',
+'sophisticatedbackpacks:infinity_upgrade',
+'sophisticatedstorage:survival_infinity_upgrade',
+'sophisticatedbackpacks:survival_infinity_upgrade',
+]
 ServerEvents.tags('item', event => {
+  console.log('[16] - [1] - TAG-WATCHER')
   event.add('forge:viewers/hidden_from_recipe', DONOTEXIST)
   event.add('c:hidden_from_recipe_viewers', DONOTEXIST)
   event.add('minecraft:bamboo_logs', 'minecraft:stripped_bamboo_block')
@@ -86,7 +120,7 @@ ServerEvents.recipes(event => {
       'BRB',
       'ABA'
     ], {
-      A: `#minecraft:${woodType}_logs`,
+      A: `minecraft:${woodType}_stem`,
       B: `minecraft:${woodType}_planks`,
       R: `minecraft:chest`,
     })
@@ -438,12 +472,13 @@ ServerEvents.recipes(event => {
   upgradeBackpacks('#forge:obsidian', 'void');
   upgradeBackpacks('gtceu:lv_electric_piston', 'restock');
   upgradeBackpacks('minecraft:hopper', 'deposit');
-  upgradeBackpacks('#xd:i_dont_know_what_please_fill_in', 'refill');
+  upgradeBackpacks('minecraft:slime_block', 'refill');
 
   upgradeBackpacks('#create:toolboxes', 'tool_swapper');
 
-  upgradeUpgrade('sophisticatedbackpacks:backpack', 'cosmiccore:waxed_leather', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:inception_upgrade`);
+  upgradeUpgrade('sophisticatedbackpacks:netherite_backpack', 'cosmiccore:waxed_leather', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:inception_upgrade`);
   upgradeUpgrade('minecraft:nether_star', 'cosmiccore:waxed_leather', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:everlasting_upgrade`);
+  upgradeUpgrade('minecraft:smithing_table', 'cosmiccore:waxed_leather', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:smithing_upgrade`);
 
   upgradeSmeltingBackpacks('minecraft:furnace', 'smelting');
   upgradeSmeltingBackpacks('minecraft:smoker', 'smoking');
@@ -452,9 +487,119 @@ ServerEvents.recipes(event => {
   upgradeUpgrade('minecraft:crafting_table', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:crafting_upgrade`);
   upgradeUpgrade('minecraft:stonecutter', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:stonecutter_upgrade`);
   upgradeUpgrade('minecraft:jukebox', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:jukebox_upgrade`);
+  upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', 'sophisticatedbackpacks:jukebox_upgrade', `sophisticatedbackpacks:advanced_jukebox_upgrade`);
+  upgradeUpgrade('gtceu:rose_gold_screw', '#forge:dusts/redstone', 'sophisticatedstorage:jukebox_upgrade', `sophisticatedstorage:advanced_jukebox_upgrade`);
 
-  upgradeUpgrade('gtceu:lv_super_tank', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:tank_upgrade`);
-  upgradeUpgrade('gtceu:lv_sodium_battery', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:battery_upgrade`);
+  upgradeUpgrade('gtceu:bronze_drum', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:tank_upgrade`); //really bad upgrade without stack upgrades
+  upgradeUpgrade('#gtceu:batteries/lv', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:battery_upgrade`);
   upgradeUpgrade('minecraft:anvil', '#forge:dusts/redstone', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:anvil_upgrade`);
+  upgradeUpgrade('gtceu:iron_plate', 'gtceu:coal_dust','sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:stack_downgrade_tier_1`);
+  upgradeUpgrade('gtceu:iron_plate', 'gtceu:coal_dust','sophisticatedstorage:upgrade_base', `sophisticatedstorage:stack_downgrade_tier_1`);
+  upgradeUpgrade('gtceu:iron_plate', 'minecraft:flint', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:stack_downgrade_tier_2`);
+  upgradeUpgrade('gtceu:iron_plate', 'minecraft:flint', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:stack_downgrade_tier_2`);
+  upgradeUpgrade('gtceu:coal_dust', 'minecraft:flint', 'sophisticatedbackpacks:upgrade_base', `sophisticatedbackpacks:stack_downgrade_tier_3`);
+  upgradeUpgrade('gtceu:coal_dust', 'minecraft:flint', 'sophisticatedstorage:upgrade_base', `sophisticatedstorage:stack_downgrade_tier_3`);
 
+//assembler recipes so you can more easily automate with ae2 :shrug:
+  event.recipes.gtceu.assembler('sophisticatedstorage:upgrade_base')
+    .itemInputs(['4x #minecraft:planks', '4x gtceu:wood_screw',])
+    .circuit(0)
+    .itemOutputs('sophisticatedstorage:upgrade_base')
+    .duration(50)
+    .EUt(8);
+
+  event.recipes.gtceu.assembler('sophisticatedbackpacks:upgrade_base') //just for consistency 
+    .itemInputs(['4x #forge:string', '4x gtceu:wrought_iron_plate', 'cosmiccore:waxed_leather',])
+    .circuit(1)
+    .itemOutputs('sophisticatedbackpacks:upgrade_base')
+    .duration(50)
+    .EUt(12);
+
+  event.recipes.gtceu.assembler('sophisticatedstorage:basic_tier_upgrade')
+    .itemInputs(['sophisticatedstorage:upgrade_base', '4x gtceu:wood_plate', '4x gtceu:wood_screw',])
+    .circuit(2)
+    .itemOutputs('sophisticatedstorage:basic_tier_upgrade')
+    .duration(50)
+    .EUt(8);
+
+  event.recipes.gtceu.assembler('sophisticatedstorage:basic_to_iron_tier_upgrade')
+    .itemInputs(['sophisticatedstorage:basic_tier_upgrade', '4x gtceu:wrought_iron_plate', '4x gtceu:wrought_iron_screw',])
+    .circuit(3)
+    .itemOutputs('sophisticatedstorage:basic_to_iron_tier_upgrade')
+    .duration(50)
+    .EUt(12);
+
+  event.recipes.gtceu.assembler('sophisticatedstorage:iron_to_gold_tier_upgrade')
+    .itemInputs(['4x gtceu:rose_gold_plate', '4x gtceu:rose_gold_screw',])
+    .circuit(4)
+    .itemOutputs('sophisticatedstorage:iron_to_gold_tier_upgrade')
+    .duration(50)
+    .EUt(16);
+
+  event.recipes.gtceu.assembler('sophisticatedstorage:gold_to_diamond_tier_upgrade')
+    .itemInputs(['4x gtceu:diamond_plate', '4x gtceu:exquisite_diamond_gem',])
+    .circuit(5)
+    .itemOutputs('sophisticatedstorage:gold_to_diamond_tier_upgrade')
+    .duration(50)
+    .EUt(20);
+
+  event.recipes.gtceu.assembler('sophisticatedstorage:diamond_to_netherite_tier_upgrade')
+    .itemInputs(['sophisticatedstorage:gold_to_diamond_tier_upgrade', 'minecraft:netherite_block',])
+    .circuit(6)
+    .itemOutputs('sophisticatedstorage:diamond_to_netherite_tier_upgrade')
+    .duration(50)
+    .EUt(24);
+
+//storage configuration stuff
+event.shaped('sophisticatedstorage:storage_tool', [
+    ' RW',
+    ' SR',
+    'S  '
+  ], {
+    S: 'minecraft:stick',
+    R: 'gtceu:rubber_plate',
+    W: 'gtceu:iron_ring'
+  })
+
+event.shaped('sophisticatedstorage:paintbrush', [
+    ' RW',
+    ' SR',
+    'S  '
+  ], {
+    S: 'minecraft:stick',
+    R: 'gtceu:rubber_plate',
+    W: '#minecraft:wool'
+  })
+
+  event.recipes.gtceu.assembler('sophisticatedstorage:storage_io')
+    .itemInputs(['sophisticatedstorage:controller'])
+    .circuit(1)
+    .itemOutputs('4x sophisticatedstorage:storage_io')
+    .duration(50)
+    .EUt(16);
+
+  event.recipes.gtceu.assembler('sophisticatedstorage:storage_link')
+    .itemInputs(['sophisticatedstorage:storage_io'])
+    .circuit(2)
+    .itemOutputs('2x sophisticatedstorage:storage_link')
+    .duration(50)
+    .EUt(16);
+
+//might confuse people less if this has a recipe instead of having to craft the netherite chest/barrel directly idk
+  event.shapeless('sophisticatedstorage:diamond_to_netherite_tier_upgrade', [
+    'sophisticatedstorage:gold_to_diamond_tier_upgrade',
+    'minecraft:netherite_block'
+  ])
+
+//lets you dye barrels/backpacks
+event.shaped('sophisticatedstorage:decoration_table', [
+    'SCS',
+    'BDB',
+    'S S'
+  ], {
+    S: 'minecraft:oak_slab',
+    C: 'gtceu:wrought_iron_plate',
+    D: 'minecraft:oak_log',
+    B: 'gtceu:wrought_iron_screw'
+  })
 })

@@ -194,9 +194,9 @@
 		{
 			dependencies: ["5F977625E0059F00"]
 			description: [
-				"Better than Actual Diesel for the extra Effort."
+				"Similar to Diesel, however infinite once started as it is entirely plant based!"
 				""
-				"Oh but disel is still pretty good!"
+				"Oh but disel is still pretty good both Source Diesel and Diesel have Different upgrade paths!"
 			]
 			id: "020B8BDB99E667FC"
 			shape: "hexagon"
@@ -657,7 +657,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["51FA210D5FCB8FF0"]
+			dependencies: ["5F977625E0059F00"]
 			id: "026E1B78D915A6B2"
 			shape: "hexagon"
 			tasks: [{
@@ -666,7 +666,7 @@
 				type: "item"
 			}]
 			x: -15.0d
-			y: -4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["51FA210D5FCB8FF0"]
@@ -689,7 +689,18 @@
 				item: "gtceu:stardust_infused_gasoline_bucket"
 				type: "item"
 			}]
-			x: -14.0d
+			x: -14.5d
+			y: 0.0d
+		}
+		{
+			id: "37CF60979B32CB99"
+			shape: "hexagon"
+			tasks: [{
+				id: "6C8157F5CDF9956E"
+				item: "gtceu:high_octane_gasoline_bucket"
+				type: "item"
+			}]
+			x: -13.5d
 			y: 0.0d
 		}
 	]

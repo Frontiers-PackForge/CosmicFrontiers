@@ -608,8 +608,7 @@
 				"&5EV&r will contain more &5elaborate extraction lines&r and &ematerial production&r than HV."
 				"Be prepared to &lexpand your power grid&r, &lbolster resource production&r, and &lexpand to new  worlds&r."
 			]
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
+			hide_until_deps_visible: false
 			id: "7C8367D922103E19"
 			min_width: 350
 			rewards: [

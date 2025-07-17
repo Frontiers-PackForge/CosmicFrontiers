@@ -134,7 +134,11 @@ ItemEvents.tooltip(event => {
     text.add(2, Text.of('empty, silent, and void of life, hanging with a heavy smell of death.').white().bold())
     text.add(3, Text.of('No trade with the elves will be possible').darkPurple().italic())
   })
-
+  event.addAdvanced('cosmiccore:hellfire_foundry', (item, advanced, text) => {
+    text.add(1, Text.of('A crucible capable of processing ').gray())
+    text.add(2, Text.of('various alchemical reactions. ').gray())
+    text.add(3, [Text.of('Accepts ').white(), Text.of('One ').gold(), Text.of('Energy Input Hatch.').white()])
+  })
   event.addAdvanced('cosmiccore:drygmy_grove', (item, advanced, text) => {
     text.add(1, Text.of('The Infinite Forest').white().bold())
     text.add(2, Text.of('------------------------------------------------------------').aqua())
@@ -217,7 +221,14 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('ae2:condenser', (item, advanced, text) => {
     text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
   })
+  event.addAdvanced('gtceu:power_substation', (item, advanced, text) => {
+    text.add(1, Text.of('DEPRECATED: Use shapeless recipe to migrate to CosmicCore version!').red())
+    text.add(2, Text.of('Without it you will not be able to access wireless power! \n You have been warned!').red())
+  })
   event.addAdvanced('ae2:condenser', (item, advanced, text) => {
+    text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
+  })
+  event.addAdvanced('bloodmagic:arc', (item, advanced, text) => {
     text.add(1, Text.of('Disabled: Use the GregTech based recipes!').red())
   })
   event.addAdvanced('malum:encyclopedia_arcana', (item, advanced, text) => {
@@ -226,9 +237,9 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('malum:encyclopedia_esoterica', (item, advanced, text) => {
     text.add(1, Text.of('Notice; Recipes may be incorrect, check EMI!').red())
   })
-  event.addAdvanced('botania:gaia_ingot', (item, advanced, text) => {
-    text.add(1, Text.of('Disabled: T2 Gaia and Ingot Recipe for Summon will be added when it is time to unlock them!').red())
-  })
+  // event.addAdvanced('botania:gaia_ingot', (item, advanced, text) => {
+  //   text.add(1, Text.of('Disabled: T2 Gaia and Ingot Recipe for Summon will be added when it is time to unlock them!').red())
+  // })
   event.addAdvanced('kubejs:prismatic_lens', (item, advanced, text) => {
     text.add(1, Text.of('Creates a laser energetic enough to cut metal').lightPurple())
   })

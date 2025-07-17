@@ -12,6 +12,21 @@
 		{
 			dependencies: ["71C697E52A8CE267"]
 			dependency_requirement: "one_completed"
+			description: [
+				"I seriously recommend you upgrade your Naqline, as there is SEVERAL Naquadah sinks in LuV."
+				""
+				"Rhenium uses it"
+				"Enriched Naq uses it"
+				"Naquadria uses it"
+				"Naquahine and The Superfuel use it"
+				""
+				"Coils need it"
+				"materials need it"
+				""
+				""
+				""
+				"Someone who's better with numbers go get the exact rates that Rhenium consumes Nq at. Please I am stupid!"
+			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "635C885360A8A8A9"
@@ -100,7 +115,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3765B035BBEAC369"]
@@ -111,7 +126,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["714301AC254290AB"]
@@ -184,6 +199,7 @@
 				"46D8E8E4D6AAF98F"
 				"3030163CA604944A"
 				"3822951EF3C8636E"
+				"254290F20F62F959"
 			]
 			description: [
 				"Who would have thought aerating a concoction of fuel along with Naquadah would make such a powerful fuel. Just make sure your reactors don't go critical as you might just erase the planet you stand on."
@@ -193,6 +209,8 @@
 				"&l&cDO NOT RUN MK2 FUEL IN A REACTOR CAPABLE OF HANDLING MK1&r"
 				""
 				"Welcome to your core power producer for the future. Oh and don't forget the mini reactors as well, they're great for remote power, albeit awfully inefficient."
+				""
+				"Dev note; I am still looking on making Gas/Liquid fuels scalable enough that there is some power choice variance, suggest other boosting fuels/lubricants on discord"
 			]
 			icon: "cosmiccore:naquahine_pressure_reactor"
 			id: "52E24C3A025D1A04"
@@ -492,10 +510,15 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["4C3664BE7F702120"]
+			dependencies: [
+				"4C3664BE7F702120"
+				"7EBEBD486707B1AC"
+			]
+			description: ["You'll need a Large Electrolyzer to process this in LuV, as you will need two LuV Energy hatches."]
 			id: "4CB55CFBB968311A"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "High Density Naquadah"
 			tasks: [{
 				id: "216DE89A748681D9"
 				item: "gtceu:naquadria_ingot"
@@ -527,13 +550,13 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"27C17BA22F91CDA0"
 				"7700F9B9E7EA4F91"
-				"4D0330D421EDD5B1"
+				"33EAB75E7D2CAFDA"
 			]
 			id: "079024EEE895822F"
 			shape: "hexagon"
@@ -544,243 +567,93 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["33EAB75E7D2CAFDA"]
-			id: "4D0330D421EDD5B1"
-			tasks: [{
-				id: "79699BBDA184D1EF"
-				item: "gtceu:luv_energy_input_hatch"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["48EA04671E16859B"]
-			description: [
-				"Soaking trinium powder into life essence makes it exhibit more durability and flexibility than before."
-				""
-				"This new material is dubbed, 'Trinavine'"
-				""
-				""
-				"You expect this will help in more robust magic structures"
-			]
-			id: "32EC05BCE9911025"
-			shape: "diamond"
-			size: 1.0d
-			subtitle: "Bloody Metal"
-			tasks: [{
-				id: "1D5A7EB40247C63F"
-				item: "cosmiccore:trinavine_dust"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
-				"32EC05BCE9911025"
 				"6CFEE9FDE64A56F5"
+				"48EA04671E16859B"
+				"5F7196C657801DBD"
+			]
+			description: [
+				"Fusing &eTau Oil&r onto &eTrinium&r creates a metal capable of rapid expansion and compression without the typical shortcomings associated with rapid material changes."
+				""
+				"Trinavine is a viable material for robust smelting applications, as heating coils laced with trinavine are more resilient to wear."
+				""
+				"At room temperature this metal seems to beat rythmically, applying an electrical signal causes the material to retain shape and structure. "
+				"I swear I can hear a heartbeat."
 			]
 			id: "33EAB75E7D2CAFDA"
+			subtitle: "A 'Living' Metal"
 			tasks: [{
 				id: "41E621F6C01C94FD"
 				item: "cosmiccore:trinavine_ingot"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -5.0d
+			x: -3.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["75A4495610653B26"]
-			description: ["Demonic Will, will end up coming into play here in the future. I am just unsure how to implement it atm."]
+			description: [
+				"As Mentioned, demonic will as a mechanic sees very little use in frontiers currently."
+				""
+				"Will Crystals and their attuned variations will be more used later on with their own aquisition methods beyond the standard bloodmagic rituals"
+			]
 			id: "2FE7FBD01B53D1F2"
 			shape: "gear"
 			tasks: [{
-				id: "78EC6061ACD5984F"
-				item: {
-					Count: 1
-					id: "bloodmagic:basemonstersoul"
-					tag: {
-						souls: 5.0d
-					}
-				}
+				id: "2AA63336D902D92F"
+				item: "bloodmagic:defaultcrystal"
 				type: "item"
 			}]
-			title: "Where's Demonic Will?"
-			x: 8.0d
+			title: "Will Crystals Without Will?"
+			x: 9.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["433CFBEBF8EFB418"]
+			description: [
+				"This multiblock is perfect for large scale chemistry, as it can accept Parallel, Cosmic Parallel, and Laser Hatches."
+				""
+				""
+				"Do note laser hatches will result in insane power-draws"
+			]
 			id: "5D5F6E9D1A21EA72"
-			tasks: [{
-				id: "40B7773B7F8F9A96"
-				item: "cosmiccore:vomahine_industrial_chemical_plant"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["635C885360A8A8A9"]
-			icon: "gtceu:ammonia_bucket"
-			id: "68AF42F991DCD6B2"
-			shape: "gear"
-			tasks: [
-				{
-					id: "0F348D52A661624C"
-					item: "gtceu:ammonia_bucket"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "5680AE095E49A6BC"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: -1.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["635C885360A8A8A9"]
-			icon: "gtceu:dichlorobenzidine_bucket"
-			id: "687C43EDB932FBA2"
-			tasks: [
-				{
-					id: "1BBE5B9967DA565A"
-					item: "gtceu:dichlorobenzidine_bucket"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "60E873B378DAA5DE"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: -0.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["635C885360A8A8A9"]
-			icon: "gtceu:phthalic_acid_bucket"
-			id: "3C630109F2785191"
-			tasks: [
-				{
-					id: "603ECFFD2E57747D"
-					item: "gtceu:phthalic_acid_bucket"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "7873B8EE2E030B93"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 0.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["635C885360A8A8A9"]
-			icon: "gtceu:phenol_bucket"
-			id: "4840CA975F57D3AD"
-			shape: "gear"
-			tasks: [
-				{
-					id: "49E65610DC6976DB"
-					item: "gtceu:phenol_bucket"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "169165DB7272C462"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 1.5d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"687C43EDB932FBA2"
-				"68AF42F991DCD6B2"
-			]
-			icon: "gtceu:diaminobenzidine_bucket"
-			id: "13B8104B0C8CB453"
-			tasks: [
-				{
-					id: "78A0E024143121D2"
-					item: "gtceu:diaminobenzidine_bucket"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "4DCED395E5E1BF0C"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: -1.0d
-			y: 2.5d
-		}
-		{
-			dependencies: [
-				"3C630109F2785191"
-				"4840CA975F57D3AD"
-			]
-			icon: "gtceu:diphenyl_isophthalate_bucket"
-			id: "6542A15289EA7EBB"
-			tasks: [
-				{
-					id: "3829A99D87D5A154"
-					item: "gtceu:diphenyl_isophthalate_bucket"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "7D5E187AB19AF5A4"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 1.0d
-			y: 2.5d
-		}
-		{
-			dependencies: [
-				"6542A15289EA7EBB"
-				"13B8104B0C8CB453"
-			]
-			id: "4620E116B11CB283"
-			tasks: [{
-				id: "3D097F52DDD20824"
-				item: "gtceu:polybenzimidazole_bucket"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["4620E116B11CB283"]
-			id: "433CFBEBF8EFB418"
 			shape: "hexagon"
 			size: 1.5d
+			subtitle: "Larger and Better LCR"
 			tasks: [{
-				id: "03331934E24D0122"
-				item: "cosmiccore:vomahine_certified_chemically_resistant_casing"
+				id: "729F9809BBCF9DBC"
+				item: "cosmiccore:industrial_chemical_vat"
+				type: "item"
+			}]
+			title: "Industrial Chemical Vat"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"635C885360A8A8A9"
+				"4281EF4DD50CB701"
+				"25BE42C85F9BA274"
+			]
+			id: "433CFBEBF8EFB418"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "290304DED6DA32A4"
+				item: "cosmiccore:cyclozine_chemically_repelling_casing"
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["44D9A9E10867D1BC"]
+			dependencies: [
+				"44D9A9E10867D1BC"
+				"52FDB03D36E94054"
+			]
 			description: [
 				"Welcome to Crystal CPU's, a much harder CPU core than Nano or Quantum. And require a multi-dimensional setup to fully automate. Some pointers before you start."
 				""
@@ -808,20 +681,20 @@
 			y: -14.0d
 		}
 		{
-			dependencies: ["076D910F19A6E439"]
+			dependencies: ["079024EEE895822F"]
 			description: [
 				"The process for asembling your crystal circuits will require an adventure to the orbit of earth."
 				""
 				"No other field of microgravity will work, please make sure you set this up in the orbit of earth."
 			]
+			icon: "ad_astra:earth_globe"
 			id: "741EF8867F73802F"
 			shape: "hexagon"
 			size: 1.75d
 			subtitle: "To Orbit!"
 			tasks: [{
-				id: "1B5AE134D80E7986"
-				item: "ad_astra:earth_globe"
-				type: "item"
+				id: "326C6A09FE2AD868"
+				type: "checkmark"
 			}]
 			title: "Things are getting tricky"
 			x: -6.0d
@@ -830,19 +703,20 @@
 		{
 			dependencies: ["079024EEE895822F"]
 			id: "076D910F19A6E439"
+			shape: "gear"
 			subtitle: "You can smelt it now"
 			tasks: [{
 				id: "438322CFFCF84CDD"
 				item: "gtceu:europium_ingot"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -6.0d
+			x: -6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
 				"33EAB75E7D2CAFDA"
-				"60F6B49FD1D129B9"
+				"2C231CE663DDA562"
 			]
 			description: [
 				"Fusion unlocks the basics of plasma crafting. "
@@ -852,6 +726,27 @@
 			]
 			icon: "gtceu:luv_fusion_reactor"
 			id: "6EA6009DEC0F3345"
+			rewards: [
+				{
+					id: "14A930AB1395CC58"
+					item: {
+						Count: 1
+						id: "trofers:medium_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "frontiers:multi/fusion"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "10E862209F62BD2B"
+					item: "cosmiccore:cluster_of_perpetuity"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 2.5d
 			subtitle: "The power to fuse."
@@ -891,6 +786,7 @@
 				{
 					id: "70542BCF4E3C7F94"
 					item: "gtceu:resh_neutron_plasma_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -911,6 +807,7 @@
 				{
 					id: "3D5771A62138EA36"
 					item: "gtceu:alef_neutron_plasma_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -931,6 +828,7 @@
 				{
 					id: "087B7E20DB143F6D"
 					item: "gtceu:pey_neutron_plasma_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -951,6 +849,7 @@
 				{
 					id: "60BA5D2CEE43C0EC"
 					item: "gtceu:ayin_neutron_plasma_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1023,11 +922,11 @@
 			size: 1.5d
 			subtitle: "The First Gateway"
 			tasks: [{
-				id: "41E0A03FBFD9EFEB"
-				item: "gtceu:neutronite_ingot"
+				id: "219B2815350C4090"
+				item: "cosmiccore:neutronite_ingot"
 				type: "item"
 			}]
-			title: "Neutronite - ZPM Gate #1"
+			title: "&aNeutronite, Get!"
 			x: 0.0d
 			y: -11.0d
 		}
@@ -1054,8 +953,25 @@
 				"52AD639AE0BC4241"
 				"7631222987D9363E"
 			]
-			description: ["This Quest will Open up the ZPM Tab, which may prove of some usefulness even if you do not have Crystal Circuits. As non-major gates can be build from ZPM without UV Circuitry."]
+			description: [
+				"This Quest will Open up the ZPM Tab, which may prove of some usefulness even if you do not have Crystal Circuits. As non-major gates can be build from ZPM without UV Circuitry."
+				""
+				"For Example, ZPM Soul Hatches are possible (for now)"
+			]
 			id: "3F5E81046FD4215B"
+			rewards: [{
+				id: "161949FCE693AA4C"
+				item: {
+					Count: 1
+					id: "trofers:small_plate"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "frontiers:materials/neutronite"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "Only half the climb"
@@ -1097,7 +1013,6 @@
 			dependencies: [
 				"45AE9844B1C84454"
 				"6548740681BDAE49"
-				"0A2EFEC1F4B31C06"
 			]
 			id: "34E7B99E411B3E44"
 			shape: "hexagon"
@@ -1114,7 +1029,6 @@
 			dependencies: [
 				"34E7B99E411B3E44"
 				"6548740681BDAE49"
-				"0A2EFEC1F4B31C06"
 			]
 			id: "688DD6F7473A121E"
 			shape: "hexagon"
@@ -1131,7 +1045,6 @@
 			dependencies: [
 				"688DD6F7473A121E"
 				"6548740681BDAE49"
-				"0A2EFEC1F4B31C06"
 			]
 			id: "0F68C0E627CE724F"
 			shape: "hexagon"
@@ -1148,9 +1061,10 @@
 			dependencies: [
 				"0F68C0E627CE724F"
 				"6548740681BDAE49"
-				"0A2EFEC1F4B31C06"
 			]
 			description: [
+				"Note; Requires Research Station, so you must progress to ZPM."
+				""
 				"&bCrystal Mainframes&r at last! It only took you constructing a thriving &espace industry&r!"
 				""
 				"These powerful mainframes allow you to crack through major roadblocks that come in ZPM."
@@ -1189,7 +1103,7 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["076D910F19A6E439"]
+			dependencies: ["079024EEE895822F"]
 			description: [
 				"The highest grade of silicon can only be produced by the best sediment extraction possible."
 				""
@@ -1201,9 +1115,8 @@
 			size: 1.75d
 			subtitle: "Back to the deep!"
 			tasks: [{
-				id: "752BCF58D95740DC"
-				item: "undergarden:goo_ball"
-				type: "item"
+				id: "1A0969DFA8979ACB"
+				type: "checkmark"
 			}]
 			title: "Returning to the Gardens"
 			x: -8.0d
@@ -1239,8 +1152,8 @@
 				item: "gtceu:lake_water_bucket"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -6.5d
+			x: -10.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -1404,42 +1317,6 @@
 			y: -14.0d
 		}
 		{
-			dependencies: ["635C885360A8A8A9"]
-			hide_dependency_lines: true
-			id: "0A2EFEC1F4B31C06"
-			shape: "hexagon"
-			size: 1.25d
-			tasks: [
-				{
-					id: "43048A248DFE3A99"
-					item: "cosmiccore:crystalline_transistor"
-					type: "item"
-				}
-				{
-					id: "101912FF1CF8EAC8"
-					item: "cosmiccore:crystalline_resistor"
-					type: "item"
-				}
-				{
-					id: "4B7D5908674C21A6"
-					item: "cosmiccore:crystalline_capacitor"
-					type: "item"
-				}
-				{
-					id: "417240CD217F2CDE"
-					item: "cosmiccore:crystalline_diode"
-					type: "item"
-				}
-				{
-					id: "47D56A0197304AC1"
-					item: "cosmiccore:crystalline_inductor"
-					type: "item"
-				}
-			]
-			x: -2.5d
-			y: -11.0d
-		}
-		{
 			dependencies: [
 				"35A2AB65C30E0D61"
 				"1E21874328BDB088"
@@ -1455,13 +1332,13 @@
 		}
 		{
 			dependencies: ["741EF8867F73802F"]
+			icon: "gtceu:assembly_line"
 			id: "6548740681BDAE49"
 			shape: "hexagon"
 			size: 1.25d
 			tasks: [{
-				id: "539F9F51EFEAED86"
-				item: "gtceu:assembly_line"
-				type: "item"
+				id: "3E3B6624349DCC3F"
+				type: "checkmark"
 			}]
 			title: "Assembly line, in Space!"
 			x: -6.0d
@@ -1469,40 +1346,18 @@
 		}
 		{
 			dependencies: [
-				"1EB2D194054C6905"
 				"5F7196C657801DBD"
 				"7B7B30CED0ECA8E0"
+				"2C231CE663DDA562"
 			]
 			id: "6CFEE9FDE64A56F5"
 			tasks: [{
-				id: "2C1D2FD6EAEBA8A8"
-				item: "bloodmagic:infusedslate"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["6CFEE9FDE64A56F5"]
-			id: "60F6B49FD1D129B9"
-			tasks: [{
-				id: "5A66A9793F73BF1C"
+				id: "0AA056EB77C7126C"
 				item: "bloodmagic:demonslate"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["2C231CE663DDA562"]
-			id: "23023C4EAFC98F4B"
-			tasks: [{
-				id: "07ED132A9F7A0FD3"
-				item: "bloodmagic:etherealslate"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -6.0d
+			x: -1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["635C885360A8A8A9"]
@@ -1550,7 +1405,10 @@
 			y: -14.0d
 		}
 		{
-			dependencies: ["2C231CE663DDA562"]
+			dependencies: [
+				"5E7BEAA0EA55C758"
+				"7B772D4F47A1390C"
+			]
 			description: [
 				"You can now automatically insert LP into your Soul Network."
 				""
@@ -1561,42 +1419,45 @@
 			size: 1.0d
 			subtitle: "Life Injection"
 			tasks: [{
-				id: "0E88047C63386782"
-				item: "cosmiccore:luv_soul_input_hatch"
+				id: "66B0F62327432B0A"
+				item: "cosmiccore:luv_soul_output_hatch"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -6.0d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
-			dependencies: [
-				"60F6B49FD1D129B9"
-				"20B72AA21636E2E6"
-			]
-			icon: "cosmiccore:drygmy_grove"
+			dependencies: ["75E3A149361EA931"]
+			icon: "gtceu:grading_fluid_3_bucket"
 			id: "2C231CE663DDA562"
-			subtitle: "The T5+ Blood Altar"
+			shape: "hexagon"
+			subtitle: "Bleeding Harder"
 			tasks: [{
-				id: "174DB3D37E7F05CA"
-				title: "Placeholder ; Make Mechanical Well"
-				type: "checkmark"
+				id: "46C5651AC408140B"
+				item: "gtceu:grading_fluid_3_bucket"
+				type: "item"
 			}]
-			x: 3.5d
+			x: 1.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["635C885360A8A8A9"]
+			icon: "gtceu:grading_fluid_2_bucket"
 			id: "1EB2D194054C6905"
+			shape: "hexagon"
 			tasks: [{
-				id: "5C889CCAB6B4F17D"
-				item: "bloodmagic:reagentsuppression"
+				id: "74439E8CD84D08E6"
+				item: "gtceu:grading_fluid_2_bucket"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -1.5d
+			x: 1.0d
+			y: -1.0d
 		}
 		{
-			dependencies: ["635C885360A8A8A9"]
+			dependencies: [
+				"635C885360A8A8A9"
+				"1EB2D194054C6905"
+			]
 			id: "5F7196C657801DBD"
 			shape: "hexagon"
 			subtitle: "Better Binding Recipe"
@@ -1605,22 +1466,22 @@
 				item: "bloodmagic:reagentbinding"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -1.5d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["6CFEE9FDE64A56F5"]
+			dependencies: ["720CCC24CB7E693F"]
 			id: "20B72AA21636E2E6"
 			tasks: [{
-				id: "0696580E6B9D6BC1"
-				item: "bloodmagic:ritualdiviner"
+				id: "421F7A45F50F1BDD"
+				item: "bloodmagic:ritualdivinerdusk"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -3.5d
+			x: 3.5d
+			y: -6.0d
 		}
 		{
-			dependencies: ["1EB2D194054C6905"]
+			dependencies: ["75E3A149361EA931"]
 			icon: "bloodmagic:ritualdiviner"
 			id: "4E823028C4B3309D"
 			tasks: [{
@@ -1629,18 +1490,25 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
-				"635C885360A8A8A9"
 				"4E823028C4B3309D"
 				"435441F1145C9166"
+			]
+			description: [
+				"You'll have to adventure into a new dimension to locate the shards required for T4 progression."
+				""
+				""
+				"This is a dungeon, so prepare well!"
+				""
+				"Do note you can just like, also break out of it, rooms will not spawn unless you use keys."
 			]
 			icon: "bloodmagic:dungeon_alternator"
 			id: "44290011E2FA4181"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "Edge of the Hidden Realm"
 			tasks: [
 				{
@@ -1657,135 +1525,159 @@
 			]
 			title: "Break out of Bounds"
 			x: 0.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["44290011E2FA4181"]
 			id: "7B7B30CED0ECA8E0"
 			shape: "hexagon"
+			subtitle: "Demonic Plants"
 			tasks: [{
-				id: "02E45B326B814E61"
-				item: "bloodmagic:weakbloodshard"
+				id: "1476006707E95F73"
+				item: "bloodmagic:weak_tau"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: -1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
 				"5F7196C657801DBD"
-				"635C885360A8A8A9"
+				"197EA5F24A4344F5"
+				"75E3A149361EA931"
 			]
+			description: [
+				"Ritual Stones will require T3 slates to produce. "
+				""
+				"You have access to Grading Catalyst T2 now, go make some T3 slates and upgrade your altar!"
+			]
+			hide_until_deps_visible: true
 			id: "435441F1145C9166"
-			tasks: [{
-				id: "4BF584B3A75245F4"
-				item: "bloodmagic:ritualstone"
-				type: "item"
-			}]
-			x: -1.0d
+			subtitle: "Tier 3 Slates"
+			tasks: [
+				{
+					id: "4BF584B3A75245F4"
+					item: "bloodmagic:ritualstone"
+					type: "item"
+				}
+				{
+					id: "320CBC70B55F3A0A"
+					item: "bloodmagic:masterritualstone"
+					type: "item"
+				}
+			]
+			x: 0.0d
 			y: -2.0d
 		}
 		{
-			dependencies: ["2C231CE663DDA562"]
-			id: "36FA67EE5DBC791C"
+			dependencies: ["7F7D6A88A4870EE1"]
+			description: [
+				"From \"&nTier 5&r\" Blood Orb and higher you will instead use the \"&eHemophagic Transfuser&r\" to automate blood infusions &busing LP&r."
+				""
+				"You can generate LP with &cSuffering Chambers&r OR &cWell of Suffering&r, though WOS will always be capped by &6orb tier&r- while SSC's are capped by &6soul output hatch tier&r."
+				""
+				"Each Tier of Blood Orb higher than T5 (T6-T9) allows you to make upgradable components for your Sanguine Infusers to increase their &emax recipe tier&r."
+				""
+				""
+				""
+				"Triva; Blood Magic for T6+ is meant to use a upgraded version of the blood altar. Do to current technical limitations, that Idea has been shelved and instead saved for future updates."
+			]
+			icon: "cosmiccore:hemophagic_transfuser"
+			id: "15FA1625BC0CB121"
+			shape: "hexagon"
+			size: 1.75d
+			subtitle: "Altar Modulization"
 			tasks: [{
-				id: "714AD23A3C4DD6B6"
-				type: "custom"
+				id: "0C2DEA2276DC4B95"
+				item: "cosmiccore:hemophagic_transfuser"
+				type: "item"
 			}]
-			title: "TODO ; Mechanical Altar Reagents"
-			x: 4.5d
-			y: -3.0d
+			title: "Altar No More"
+			x: 10.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["5E7BEAA0EA55C758"]
-			id: "15FA1625BC0CB121"
-			shape: "hexagon"
-			size: 1.25d
-			tasks: [{
-				id: "3A22DCEBE5DD0529"
-				item: "cosmiccore:drygmy_grove"
-				type: "item"
-			}]
-			x: 8.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["36FA67EE5DBC791C"]
+			description: [
+				"Device Capable of Extracting Raw LP from a contained entity."
+				""
+				""
+				"Can Accept Mechanical Runes to Upgrade its base strength (NYI)"
+			]
 			id: "75A4495610653B26"
+			subtitle: "Big, Scary, Bloody."
 			tasks: [{
-				id: "0E2201E3BEC602A3"
-				item: "gtceu:essence_reactor"
+				id: "42A2C26A984EACF0"
+				item: "cosmiccore:suffering_chamber"
 				type: "item"
 			}]
-			x: 6.5d
+			title: "Suffering Chamber"
+			x: 7.5d
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"3F638ACC2A023574"
-				"36FA67EE5DBC791C"
-			]
+			dependencies: ["2C231CE663DDA562"]
+			icon: "bloodmagic:masterbloodorb"
 			id: "7B772D4F47A1390C"
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "Big, Scary, Bloody."
+			subtitle: "Tier 4 and onwards"
 			tasks: [{
-				id: "5A9DDDE88A345B9E"
-				item: "cosmiccore:vomahine_shredder"
+				id: "2AD2737BCEDBF9D4"
+				item: "bloodmagic:masterbloodorb"
 				type: "item"
 			}]
-			title: "Sanguine Sufferage Chamber"
-			x: 5.0d
+			x: 4.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["7B772D4F47A1390C"]
+			icon: "gtceu:grading_fluid_4_bucket"
 			id: "5E7BEAA0EA55C758"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "Shiny, and very expensive"
 			tasks: [{
-				id: "2C85FBBAD05CDE34"
-				item: "bloodmagic:archmagebloodorb"
+				id: "37D6885C44AD332A"
+				item: "gtceu:grading_fluid_4_bucket"
 				type: "item"
 			}]
-			x: 6.5d
+			title: "Tier 4 Grading Catalyst"
+			x: 7.5d
 			y: -4.5d
 		}
 		{
-			dependencies: ["15FA1625BC0CB121"]
+			dependencies: ["5E7BEAA0EA55C758"]
 			id: "3822951EF3C8636E"
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
-				id: "7BAD96AC97F851B1"
-				item: "cosmiccore:asc_blood_orb"
+				id: "25CA208980EA6A7D"
+				item: "bloodmagic:archmagebloodorb"
 				type: "item"
 			}]
+			title: "Tier 5 Blood Orb"
 			x: 10.0d
 			y: -4.5d
 		}
 		{
-			dependencies: ["23023C4EAFC98F4B"]
-			id: "0F86DD6F08DC06BB"
-			tasks: [{
-				id: "2CE2CEBCC9D37173"
-				item: "bloodmagic:ritualdivinerdusk"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["0F86DD6F08DC06BB"]
+			dependencies: ["20B72AA21636E2E6"]
+			description: [
+				"Bloodmagic Meteors Offer you rare and Unique Materials generally off the beaten path."
+				""
+				""
+				"Most Meteors are too costly for your current SoulHatches/Blood Orbs, so you will need to proceed to ZPM first"
+			]
 			icon: "rechiseled:netherite_block_meteoric"
 			id: "27DAD4B0E8BDA6B5"
 			shape: "octagon"
 			size: 2.0d
+			subtitle: "Pull down the Sky"
 			tasks: [{
-				id: "3140062272535184"
-				item: "rechiseled:netherite_block_meteoric"
-				type: "item"
+				id: "2BC147682A52FD81"
+				type: "checkmark"
 			}]
+			title: "Meteor Rituals"
 			x: 5.0d
 			y: -8.0d
 		}
@@ -1867,10 +1759,26 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["635C885360A8A8A9"]
-			hide_dependency_lines: true
+			dependencies: [
+				"547AB876F988026C"
+				"7EBEBD486707B1AC"
+			]
+			description: [
+				"This Rocket is considerably more expensive than your previous rockets, allowing you to travel to two new locations- Venus and Mercury."
+				""
+				"&eMercury&r and &eVenus&r both have unique atmospheres allowing some machines to process better recipes than before. "
+				""
+				""
+				""
+				"Notably, the &6Polymerizer&r is only able to be used on &bVenus&r, and Unlocks doubling your plastics as well as &eNylon-6,6&r"
+				""
+				"&cDev Note; They are pretty barren, I would like to add some more structures but Worldgen is something I am afraid of and need to take the time to learn in the future. For now just getting access to them for Crafts/Resources will be established, but in the Future/Beta I will take the time to clean up the planets and make them more unique.&r"
+			]
 			id: "0F563AE8107A0198"
+			min_width: 350
 			shape: "rsquare"
+			size: 2.0d
+			subtitle: "A Trinavine Singularity"
 			tasks: [{
 				id: "738F3CB6378625E0"
 				item: {
@@ -1880,8 +1788,419 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
+			x: -5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["54AE5A2C992C6F54"]
+			id: "7EBEBD486707B1AC"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "You know the Drill!"
+			tasks: [{
+				id: "47E67285FDEA0753"
+				item: "gtceu:luv_energy_input_hatch"
+				type: "item"
+			}]
+			x: -5.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["7CB34C25B484ADAB"]
+			id: "54AE5A2C992C6F54"
+			tasks: [{
+				id: "5E5065CD6A6765B1"
+				item: "gtceu:luv_voltage_coil"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			id: "7CB34C25B484ADAB"
+			tasks: [{
+				id: "0541AD0901111EBE"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5D5F6E9D1A21EA72"]
+			description: [
+				"You will need to continue norwards in the LuV chapter to unlock &cTrinavine&r"
+				""
+				"This quest serves as a reminder to make sure your infrastructure can keep up with the costly demands of this new material."
+			]
+			id: "547AB876F988026C"
+			subtitle: "Progression Gate"
+			tasks: [{
+				id: "193D9FC2EB4EBB93"
+				item: "cosmiccore:trinavine_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6354D6CB595585EA"]
+			description: [
+				"While Nutrient Solution isn't required for progression in LuV, it can provide you with a valuable boost to all your crop growing."
+				""
+				""
+				"Maybe this will solve your chlorine problems after all.."
+			]
+			id: "585524C706B8667B"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Better Fertilizer"
+			tasks: [{
+				id: "5A8F9FEDE7FCD64E"
+				item: "gtceu:nutrient_solution_base_bucket"
+				type: "item"
+			}]
+			x: -8.75d
+			y: -6.25d
+		}
+		{
+			dependencies: ["5C557676D480C3BA"]
+			id: "4281EF4DD50CB701"
+			tasks: [{
+				id: "5280E79424E6A192"
+				item: "gtceu:rhenium_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4281EF4DD50CB701"]
+			description: [""]
+			id: "2CC49ED8CD3FA4AA"
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "For Those Researchers"
+			tasks: [{
+				id: "4BE0A2F9840ED4BC"
+				item: "gtceu:computer_casing"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["635C885360A8A8A9"]
+			hide_dependency_lines: true
+			id: "05769648F4F48956"
+			shape: "square"
+			tasks: [{
+				id: "715FB573E1A917E9"
+				item: "gtceu:white_gold_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4281EF4DD50CB701"]
+			id: "0C61F4D61E9D3965"
+			tasks: [{
+				id: "2B77F535735EED00"
+				item: "gtceu:vaporized_rhenium_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0C61F4D61E9D3965"
+				"05769648F4F48956"
+			]
+			id: "1286BE8E609C719C"
+			tasks: [{
+				id: "1EA0B0B42DBACE26"
+				item: "gtceu:rhenium_sintered_white_gold_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3303DCA22F0AC9C6"]
+			id: "5C557676D480C3BA"
+			tasks: [{
+				id: "4D6A4962E13B1466"
+				item: "gtceu:rhenium_rich_slag_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1286BE8E609C719C"]
+			id: "254290F20F62F959"
+			tasks: [{
+				id: "7D6618F041E20C53"
+				item: "gtceu:synthetic_pthanterum_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1EB2D194054C6905"]
+			description: [
+				"&nTier 3 Slates&r, also known as &bImbued Slates&r, can now be created with &aT2 Grading Catalyst&r and &aLuV Energy&r in your Hellfire Forge."
+				""
+				"Go upgrade your altar to T3!"
+			]
+			id: "75E3A149361EA931"
+			shape: "hexagon"
+			subtitle: "Whoa!"
+			tasks: [{
+				id: "51F86BDF86E92EB8"
+				item: "bloodmagic:infusedslate"
+				type: "item"
+			}]
+			title: "Tier 3 Slates"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4281EF4DD50CB701"]
+			id: "669EB7FC0C6A0756"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "294DEE387509341C"
+				item: "gtceu:high_power_casing"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2CC49ED8CD3FA4AA"
+				"669EB7FC0C6A0756"
+			]
+			hide_dependency_lines: false
+			id: "2040C4D801EB1B9D"
+			tasks: [{
+				id: "36C3D95BF3B65089"
+				item: "gtceu:data_bank"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6EA6009DEC0F3345"]
+			description: [
+				"No more, gone, not happening, and don't ask for it to come back :)"
+				""
+				"Combustion Generations, LGT's and Various Other Fuel Sources have been empowered to make this pack more interesting."
+				""
+				""
+				"Naquahine Reactors are massive structures but produce 16 AMPS of LUV power each, and can support Laser Hatches!"
+				""
+				"Try them out or the reworked Combustion Generators"
+			]
+			icon: "gtceu:plasma_large_turbine"
+			id: "36C47FA0037483B1"
+			shape: "gear"
+			subtitle: "Gone, Turned to Ashes"
+			tasks: [{
+				id: "18DF31B304C243D3"
+				title: "Ok."
+				type: "checkmark"
+			}]
+			title: "Where's the Plasma Turbine!"
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7B7B30CED0ECA8E0"]
+			id: "331A3E9B7203865E"
+			tasks: [{
+				id: "632CE4FCAF9BF3BD"
+				item: "bloodmagic:weakbloodshard"
+				type: "item"
+			}]
+			x: 0.004761904761913627d
+			y: -3.8488095238095283d
+		}
+		{
+			dependencies: ["2C231CE663DDA562"]
+			id: "720CCC24CB7E693F"
+			tasks: [{
+				id: "309A409726D45269"
+				item: {
+					Count: 1
+					id: "bloodmagic:duskscribetool"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"3822951EF3C8636E"
+				"4F63BA33F7F4C5EA"
+			]
+			id: "7F7D6A88A4870EE1"
+			tasks: [{
+				id: "361AB8B42BEAAACD"
+				item: "bloodmagic:lightritualstone"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["669EB7FC0C6A0756"]
+			description: [
+				"Allows the use or laser target/source hatches to move energy around in massive quantities."
+				""
+				"Your current base maynot fit the needs of a Active transformer powerspine, so it is recommended to upgrade and clean up your wiring around this time."
+			]
+			id: "1CD9E48993F3574A"
+			subtitle: "Bulk Power Delivery"
+			tasks: [{
+				id: "0BCC014FB1A59C00"
+				item: "gtceu:active_transformer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3F5E81046FD4215B"]
+			icon: "createdeco:decal_up"
+			id: "6DA881815E8DE99D"
+			tasks: [{
+				id: "5405C1F0DC7D29F5"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["720CCC24CB7E693F"]
+			description: [
+				"The ritual 'well of suffering' allows you to damage mobs nearby the ritual to automatically refill the LP of the blood altar, this is your first serious way to generate LP until later."
+				""
+				"Later on (After T5 Blood Orb) you'll be able to craft machines capable of outputing LP into your soul network automatically"
+			]
+			icon: "bloodmagic:daggerofsacrifice"
+			id: "1DF89B293781586D"
+			shape: "gear"
+			subtitle: "Early Automated Blood Collection"
+			tasks: [{
+				id: "5A2371BEADB4B927"
+				type: "checkmark"
+			}]
+			title: "The Well of Suffering"
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3822951EF3C8636E"]
+			id: "4F63BA33F7F4C5EA"
+			tasks: [{
+				id: "7421D1381CF55A63"
+				item: "gtceu:grading_fluid_5_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1286BE8E609C719C"]
+			hide_dependency_lines: true
+			id: "25BE42C85F9BA274"
+			tasks: [{
+				id: "6A973ED1BF920297"
+				item: "gtceu:synthetic_pthanterum_ingot"
+				type: "item"
+			}]
+			x: -0.759523809523813d
+			y: 2.336904761904762d
+		}
+		{
+			dependencies: ["131B7870338CC02C"]
+			id: "52FDB03D36E94054"
+			shape: "hexagon"
+			subtitle: "Demon Will, Finally"
+			tasks: [{
+				id: "323921F15E070C28"
+				item: "bloodmagic:defaultcrystal"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["15FA1625BC0CB121"]
+			description: ["Vitrius is a radioactive variant of prisma that can deconstruct and reassemble matter into new forms—though the results often differ from the original."]
+			icon: "cosmiccore:vitrius_bucket"
+			id: "255DB5EC1085FA61"
+			shape: "hexagon"
+			subtitle: "Chromatic Corruption"
+			tasks: [
+				{
+					id: "1DC87E5A5BB6CCC8"
+					item: "cosmiccore:vitrius_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2386A2F1D740FA30"
+					title: "Fluid Quest - Skip"
+					type: "checkmark"
+				}
+			]
+			x: 10.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["255DB5EC1085FA61"]
+			description: [
+				"Once again, your experiments lead you back to the glass marbles—those fragments of your memories. You can't help but wonder if provoking a reaction with this fluid is wise."
+				""
+				"The moment you pour it, the world falls eerily silent—then comes the crack."
+				""
+				"Now the marble glows a stained purple hue. And it won't let go of your hand."
+			]
+			hide_text_until_complete: true
+			id: "4373FA6BCA9DA7FA"
+			shape: "octagon"
+			subtitle: "Perpetuity Violations | Lore Entry"
+			tasks: [{
+				id: "0A0E2627F569E9F5"
+				item: "cosmiccore:wicked_essence"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["4373FA6BCA9DA7FA"]
+			id: "131B7870338CC02C"
+			tasks: [{
+				id: "716665A0052B9CB5"
+				item: "cosmiccore:aberrant_essence"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -12.5d
 		}
 	]
 	title: "A Factory Soaked In Blood [&dLuV&r]"

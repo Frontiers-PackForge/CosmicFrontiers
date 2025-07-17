@@ -152,7 +152,7 @@
 		{
 			dependencies: ["4573B786F0ED6565"]
 			description: [
-				"Used to make the next tier of circuits, 'Micros' as they are commonlyy called."
+				"Used to make the next tier of circuits, 'Micros' as they are commonly called."
 				""
 				"Micro circuits offer you the best MV circuit you can make, and unlock the EV and IV circuit tier."
 				""
@@ -1436,7 +1436,7 @@
 		}
 		{
 			dependencies: ["308F457E26E57039"]
-			description: ["Next, Take your &eSodium Chromate Soltion&r and some &eSulfuric Acid&r and slap that inside a &aChemical Dehydrator&r. You'll end up with &bSodium Dichromate Solution&r and some S&6odium Sulfate&r as a byproduct."]
+			description: ["Next, Take your &eSodium Chromate Solution&r and some &eSulfuric Acid&r and slap that inside a &aChemical Dehydrator&r. You'll end up with &bSodium Dichromate Solution&r and some &6Sodium Sulfate&r as a byproduct."]
 			icon: "gtceu:sodium_dichromate_solution_bucket"
 			id: "1C64908E1A380A95"
 			subtitle: "Time to concentrate it."

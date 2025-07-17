@@ -4,37 +4,23 @@ let yeet = (itemName) => {
         event.remove({ output: itemName })
     })
     ServerEvents.tags('item', event => {
+        console.log('[19] - [1] - TAG-WATCHER')
         event.add('forge:viewers/hidden_from_recipe', itemName)
         event.add('c:hidden_from_recipe_viewers', itemName)
 
     })
 }
-
-ServerEvents.tags('item', event => {
-})
-
-//   yeet('gtceu:tiny_psi_superconductor_alpha_dust')
-//   yeet('gtceu:small_psi_superconductor_alpha_dust')
-//   yeet('gtceu:psi_superconductor_alpha_dust')
-//   yeet('gtceu:tiny_psi_superconductor_beta_dust')
-//   yeet('gtceu:small_psi_superconductor_beta_dust')
-//   yeet('gtceu:psi_superconductor_beta_dust')
-//   yeet('gtceu:tiny_neodymium_praseodymium_dust')
-//   yeet('gtceu:small_neodymium_praseodymium_dust')
-//   yeet('gtceu:neodymium_praseodymium_dust')
-//   yeet('gtceu:tiny_magnetic_neodymium_praseodymium_dust')
-//   yeet('gtceu:small_magnetic_neodymium_praseodymium_dust')
-//   yeet('gtceu:magnetic_neodymium_praseodymium_dust')
-
 ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadah' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadah_gas' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_enriched_naquadah' })
     event.remove({ id: 'gtceu:electric_blast_furnace/enriched_naquadah_sulfate_separation' })
+    event.remove({ id: 'gtceu:orbital_forge/enriched_naquadah_sulfate_separation' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_enriched_naquadah_gas' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadria' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadria_gas' })
     event.remove({ id: 'gtceu:electric_blast_furnace/naquadria_sulfate_separation' })
+
     event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_naquadah_ingot' })
     event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_enriched_naquadah_ingot' })
     event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_naquadah_ingot' })
@@ -61,7 +47,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.large_chemical_reactor('nq_metallic_to_solution')
         .itemInputs('2x gtceu:naquadric_metallic_powder_dust')
-        .inputFluids('gtceu:aqua_regia 4000')
+        .inputFluids('gtceu:aqua_regia 6000')
         .outputFluids('gtceu:naquadric_solution 2000')
         .outputFluids('gtceu:diluted_nitric_acid 2000')
         .outputFluids('gtceu:hydrochloric_acid 2000')
@@ -120,4 +106,51 @@ ServerEvents.recipes(event => {
         .outputFluids('minecraft:water 1000')
         .duration(600)
         .EUt(GTValues.VA[GTValues.MV]);
+
+    // Naquadah Alloy EBF
+
+    event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadah_alloy'})
+    event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadah_alloy_gas'})
+    event.remove({ id: 'gtceu:orbital_forge/blast_naquadah_alloy'})
+    event.remove({ id: 'gtceu:orbital_forge/blast_naquadah_alloy_gas'})
+
+    event.recipes.gtceu.electric_blast_furnace('naquadah_alloy_ingot_gas1')
+        .itemInputs('1x gtceu:naquadah_alloy_dust')
+        .inputFluids('gtceu:argon 50')
+        .itemOutputs('gtceu:hot_naquadah_alloy_ingot')
+        .duration(670)
+        .blastFurnaceTemp(5900)
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+    event.recipes.gtceu.electric_blast_furnace('naquadah_alloy_ingot1')
+        .itemInputs('1x gtceu:naquadah_alloy_dust')
+        .itemOutputs('gtceu:hot_naquadah_alloy_ingot')
+        .duration(1000)
+        .blastFurnaceTemp(5900)
+        .circuit(1)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+
+    // Naquadah Alloy ABS
+
+    event.remove({ id: 'gtceu:alloy_blast_smelter/naquadah_alloy'})
+    event.remove({ id: 'gtceu:alloy_blast_smelter/naquadah_alloy_gas'})
+
+    event.recipes.gtceu.alloy_blast_smelter('naquadah_alloy_gas1')
+        .itemInputs('2x gtceu:naquadah_dust' , '1x gtceu:osmiridium_dust' , '1x gtceu:trinium_dust')
+        .inputFluids('gtceu:argon 200')
+        .outputFluids('gtceu:molten_naquadah_alloy 576')
+        .duration(2010)
+        .blastFurnaceTemp(5900)
+        .circuit(13)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+    event.recipes.gtceu.alloy_blast_smelter('naquadah_alloy1')
+        .itemInputs('2x gtceu:naquadah_dust' , '1x gtceu:osmiridium_dust' , '1x gtceu:trinium_dust')
+        .outputFluids('gtceu:molten_naquadah_alloy 576')
+        .duration(3000)
+        .blastFurnaceTemp(5900)
+        .circuit(3)
+        .EUt(GTValues.VA[GTValues.LuV]);
 })

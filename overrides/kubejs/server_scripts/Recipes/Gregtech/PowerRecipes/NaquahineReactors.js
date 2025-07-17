@@ -1,16 +1,16 @@
 ServerEvents.recipes(event => {
     event.recipes.gtceu.naquahine_reactor('naquahine_mk_one')
-        .itemInputs('64x gtceu:industrial_tnt')
+        .chancedInput('gtceu:industrial_tnt', 2500, 0)
         .magnetStats(50000, 450, true)
-        .inputFluids('gtceu:naquahine_superfuel_mk_one 6000')
-        .duration(1200)
-        .EUt(-GTValues.V[GTValues.UV])
+        .inputFluids('gtceu:naquahine_superfuel_mk_one 100')
+        .duration(400)
+        .EUt(-GTValues.V[GTValues.LuV])
     event.recipes.gtceu.naquahine_reactor('naquahine_mk_two')
-        .itemInputs('64x gtceu:industrial_tnt')
-        .magnetStats(1000000, 1500, true)
-        .inputFluids('gtceu:naquahine_superfuel_mk_two 6000')
-        .duration(1200)
-        .EUt(-GTValues.V[GTValues.UHV])
+        .chancedInput('gtceu:industrial_tnt', 5000, 0)
+        .magnetStats(225000, 1500, true)
+        .inputFluids('gtceu:naquahine_superfuel_mk_two 100')
+        .duration(800)
+        .EUt(-GTValues.V[GTValues.ZPM])
     //Tiny Naq Reactors 
     event.recipes.gtceu.mini_naquahine_reactor('naquahine_mk_one_smol')
         .itemInputs('1x gtceu:industrial_tnt')
@@ -106,4 +106,90 @@ ServerEvents.recipes(event => {
         .duration(120)
         .EUt(GTValues.VA[GTValues.LuV])
 
+    event.recipes.gtceu.chemical_dehydrator('rhenium_rich_nqh')
+        .inputFluids('gtceu:naquahine 8000')
+        .inputFluids('gtceu:pyroflux 2000')
+        .outputFluids('gtceu:rhenium_saturated_naquahine 750')
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.LuV] * 0.5)
+
+    event.recipes.gtceu.brewery('rhenium_rich_complex')
+        .inputFluids('gtceu:rhenium_saturated_naquahine 250')
+        .chancedInput('bloodmagic:tauoil', 1500, 0)
+        .outputFluids('gtceu:rhenium_rich_complex 125')
+        .duration(450)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.chemical_bath('rhenium_slag')
+        .inputFluids('gtceu:rhenium_rich_complex 500')
+        .chancedInput('bloodmagic:reagentholding', 1111, 0)
+        .itemOutputs('gtceu:rhenium_rich_slag_dust')
+        .duration(360)
+        .EUt(GTValues.VA[GTValues.IV] * 0.8)
+
+    event.recipes.gtceu.sifter('pure_rhenium')
+        .itemInputs('gtceu:rhenium_rich_slag_dust')
+        .itemOutputs('2x gtceu:rhenium_dust')
+        .chancedOutput('gtceu:rhenium_dust', 1000, 0)
+        .chancedOutput('gtceu:rhenium_dust', 1000, 0)
+        .chancedOutput('gtceu:rhenium_dust', 1000, 0)
+        .chancedOutput('gtceu:rhenium_dust', 1000, 0)
+        .chancedOutput('gtceu:rhenium_dust', 1000, 0)
+        .duration(360)
+        .EUt(GTValues.VA[GTValues.ZPM])
+
+    //MK2 Fuel
+
+    event.recipes.gtceu.industrial_chemvat('naquahine_superfuel_mk_two')
+        .inputFluids('gtceu:naquahine_superfuel_mk_one 4000')
+        .itemInputs('gtceu:naquadria_dust')
+        .inputFluids('gtceu:tau_plasma 250')
+        .chancedOutput('gtceu:naquadria_dust', 1, 0)
+        .outputFluids('gtceu:naquahine_superfuel_mk_two 4000')
+        .stationResearch(b => b
+            .researchStack('malum:block_of_malignant_pewter')
+            .CWUt(32)
+            .EUt(GTValues.VA[GTValues.UV]))
+        .duration(840)
+        .EUt(GTValues.VA[GTValues.ZPM])
+
+
+    event.recipes.gtceu.extractor('frontiers:extract_raw_tau')
+        .itemInputs('64x bloodmagic:weak_tau')
+        .outputFluids('gtceu:extracted_tau 1000')
+        .duration(430)
+        .EUt(GTValues.VA[GTValues.LuV])
+    event.recipes.gtceu.fermenter('frontiers:distill_pure_tau_oil')
+        .chancedInput('bloodmagic:reagentbinding', 500, 0)
+        .inputFluids('gtceu:extracted_tau 16000')
+        .outputFluids('gtceu:tau_oil 1000')
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.LuV])
+    event.recipes.gtceu.canner('frontiers:tau_oil_to_tau_oil_bottle')
+        .itemInputs('gtceu:glass_vial')
+        .inputFluids('gtceu:tau_oil 100')
+        .itemOutputs('bloodmagic:tauoil')
+        .duration(230)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    event.recipes.gtceu.fusion_reactor('tau_plasma')
+        .chancedInput('gtceu:neutron_reflector', 1550, 0)
+        .chancedInput('gtceu:neutron_reflector', 1200, 0)
+        .inputFluids('gtceu:tau_oil 100') //1
+        .inputFluids('gtceu:enriched_naquadah 144') //1
+        .outputFluids('gtceu:tau_plasma 250') //0.5
+        .fusionStartEU(120000000)
+        .duration(230)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
 })
+
+
+// event.recipes.gtceu.electric_blast_furnace('virtue_pearl_replication')
+// .chancedFluidInput('cosmiccore:resonant_virtue_meld 288', 8500,0)
+// .chancedInput('botania:life_essence', 1575,0)
+// .chancedOutput('botania:life_essence',7500,0)
+// .blastFurnaceTemp(5400)
+// .dimension('minecraft:the_nether')
+// .duration(1920)
+// .EUt(GTValues.VA[GTValues.LuV]);

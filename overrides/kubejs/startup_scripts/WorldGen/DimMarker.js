@@ -7,4 +7,8 @@ GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
         .iconSupplier(() => Item.of('kubejs:undergarden_dim').getItem())
         .tier(0)
         .overrideName('The Undergarden')
+    event.create('frontiers:sun_orbit')
+        .iconSupplier(() => Item.of('ad_astra:sun_globe').getItem())
+        .tier(3)
+        .overrideName('Sun Orbit')
 })

@@ -64,6 +64,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:oxygen 6000')
         .outputFluids('gtceu:hydrogen_peroxide 2000')
         .outputFluids('gtceu:carbon_dioxide 1000')
+        .circuit(7)
         .duration(160)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.chemical_reactor('hydrazine_craft')
@@ -245,7 +246,7 @@ ServerEvents.recipes(event => {
     // 2 Rh + 3 NaHSO4 + 3 H2O -> Rh2(SO4)3 + 3 NaOH + 6 H
     event.recipes.gtceu.electric_blast_furnace('ipgs_to_rhdpgs')
         .itemInputs('9x gtceu:insoluble_plat_group_residue_dust')
-        .itemInputs('42x gtceu:sodium_bisulfate_dust')
+        .itemInputs('21x gtceu:sodium_bisulfate_dust')
         .inputFluids('minecraft:water 7000')
         .blastFurnaceTemp(4500)
         .itemOutputs('10x gtceu:rhodium_depleted_plat_group_residue_dust')
@@ -311,13 +312,14 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV]);
 
     //Iridium
-    // (NH4)2IrCl6 + 4FeCl2 -> Ir + 4 FeCl3 + 2 NH3 + 2 HCl 
+    // (NH4)2IrCl6 + 4FeCl2 -> Ir + 4 FeCl3 + 2 NH3 + 2 HCl
+    //Soren Suggested Patch Ammonia 2000 -> 5000 
     event.recipes.gtceu.large_chemical_reactor('hexair_to_iridium')
         .itemInputs('10x gtceu:ammonium_hexachloroiridate_dust')
         .inputFluids('gtceu:iron_ii_chloride 4000')
         .itemOutputs('gtceu:iridium_dust')
         .outputFluids('gtceu:iron_iii_chloride 4000')
-        .outputFluids('gtceu:ammonia 2000')
+        .outputFluids('gtceu:ammonia 5000')
         .outputFluids('gtceu:hydrochloric_acid 2000')
         .duration(80)
         .EUt(GTValues.VA[GTValues.IV]);
@@ -396,11 +398,13 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV]);
     
     // (NH4)2RuCl6 + 4 H -> Ru + 2 NH3 + 6 HCl
+    // Soren Suggested Patch Ammonia 3000 -> 5000
+    // I believe there's meant to also be a increase of HCl SOMEWHERE, it just wasn't clarified so i'm a bit lost - double check this ~G
     event.recipes.gtceu.large_chemical_reactor('chlororuthenate_to_ruthenium')
         .inputFluids('gtceu:hydrogen 4000')
         .itemInputs('9x gtceu:ammonium_hexachlororuthenate_dust')
         .itemOutputs('gtceu:ruthenium_dust')
-        .outputFluids('gtceu:ammonia 2000')
+        .outputFluids('gtceu:ammonia 5000')
         .outputFluids('gtceu:hydrochloric_acid 6000')
         .duration(240)
         .EUt(GTValues.VA[GTValues.IV]);
@@ -448,10 +452,11 @@ ServerEvents.recipes(event => {
     //Osmium Time, this one I have the least confidence about the chemline balance, will need to check the stuff with stoik soonish
     
     //  2(OsO4)(NaCl) + [NC?]CCl4 -> 2OsO4 + 2NaCl + [NC?]CCl4
+    //Sorens Suggested Patch - Salt Dust 4 -> 10 
     event.recipes.gtceu.chemical_dehydrator('dry_impure_osmium_tetroxide')
         .itemInputs('10x gtceu:impure_osmium_tetroxide_dust')
         .notConsumableFluid('gtceu:carbon_tetrachloride 10000')
-        .itemOutputs(['10x gtceu:osmium_tetroxide_dust', '4x gtceu:salt_dust'])
+        .itemOutputs(['10x gtceu:osmium_tetroxide_dust', '10x gtceu:salt_dust'])
         .duration(120)
         .EUt(GTValues.VA[GTValues.EV]);
 
@@ -465,19 +470,20 @@ ServerEvents.recipes(event => {
 
     // Na2OsO2(OH)4 + 4(NH4)Cl  -> (NH3)4(OsO2)Cl2 + 2NaCl + 4H2O
     event.recipes.gtceu.large_chemical_reactor('sodium_osmate_dust_to_osyml_chloride')
-        .itemInputs(['9x gtceu:sodium_osmate_dust', '20x gtceu:ammonium_chloride_dust'])
+        .itemInputs(['10x gtceu:sodium_osmate_dust', '20x gtceu:ammonium_chloride_dust'])
         .itemOutputs(['9x gtceu:tetraammine_osmyl_chloride_dust', '4x gtceu:salt_dust'])
         .outputFluids('minecraft:water 4000')
         .duration(120)
         .EUt(GTValues.VA[GTValues.IV]);
 
     // (NH3)4(OsO2)Cl2 + 6H -> Os + 2HCl + 4NH3 + 2H2O
+    //Soren Suggested Patch Ammonia 4000 -> 10000
     event.recipes.gtceu.large_chemical_reactor('osmyl_to_osmium_dust')
         .itemInputs('9x gtceu:tetraammine_osmyl_chloride_dust')
         .inputFluids('gtceu:hydrogen 6000')
         .itemOutputs('gtceu:osmium_dust')
         .outputFluids('gtceu:hydrochloric_acid 2000')
-        .outputFluids('gtceu:ammonia 4000')
+        .outputFluids('gtceu:ammonia 10000')
         .outputFluids('minecraft:water 2000')
         .duration(60)
         .EUt(GTValues.VA[GTValues.LuV]);

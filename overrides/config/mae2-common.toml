@@ -1,5 +1,5 @@
 
 [Parts]
 	#Whether the EU P2P is enabled
-	euP2P = true
+	euP2P = false
 

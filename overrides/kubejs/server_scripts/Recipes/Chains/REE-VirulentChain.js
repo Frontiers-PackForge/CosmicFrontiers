@@ -153,7 +153,7 @@ ServerEvents.recipes((event) => {
         .inputFluids('gtceu:mre_chlorides 1000')
         .chancedFluidInput('gtceu:mre_extraction_mix 1000', 1500,0)
         .outputFluids('gtceu:mre_leachate 2000')
-        .duration(1200)
+        .duration(300)
         .EUt(GTValues.VA[GTValues.EV]);
     event.recipes.gtceu.centrifuge('mre_phase_separation')
         .inputFluids('gtceu:mre_leachate 4000')
