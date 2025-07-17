@@ -454,12 +454,12 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LuV])
   event.recipes.gtceu.assembly_line('frontiers:ludicrous_combustion_gen')
     .itemInputs(['gtceu:luv_machine_hull', '2x #gtceu:circuits/luv', '4x gtceu:luv_electric_piston', '4x gtceu:luv_electric_motor', '4x gtceu:synthetic_pthanterum_gear', 'gtceu:niobium_titanium_quadruple_cable'])
-    .itemOutputs('gtceu:ludicrous_combustion_engine_cc')
+    .itemOutputs('cosmiccore:ludicrous_combustion_engine_cc')
     .inputFluids(
       'gtceu:high_grade_solder 2304',
       'cosmiccore:triphenylphosphine 2304',
     )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:extreme_combustion_engine_cc').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('cosmiccore:extreme_combustion_engine_cc').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
     .duration(300)
     .EUt(GTValues.VA[GTValues.LuV])
   event.recipes.gtceu.assembly_line('frontiers:chemvat')
@@ -561,14 +561,14 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.ZPM])
   event.recipes.gtceu.assembly_line('frontiers:zpm_combustion_engine')
     .itemInputs(['gtceu:zpm_machine_hull', '2x gtceu:circuits/zpm', '4x gtceu:zpm_electric_piston', '4x gtceu:zpm_electric_motor', '8x cosmiccore:neutronite_gear', 'gtceu:vanadium_gallium_quadruple_cable', 'gtceu:zpm_machine_hull'])
-    .itemOutputs('gtceu:ultimate_combustion_engine_cc')
+    .itemOutputs('cosmiccore:ultimate_combustion_engine_cc')
     .inputFluids(
       'gtceu:trinanylon_6_6 1296',
       'gtceu:high_grade_solder 4608',
       'cosmiccore:triphenylphosphine 2304',
     )
     .stationResearch(b => b
-      .researchStack('gtceu:ludicrous_combustion_engine_cc')
+      .researchStack('cosmiccore:ludicrous_combustion_engine_cc')
       .CWUt(16)
       .EUt(GTValues.VA[GTValues.ZPM]))
     .duration(1750)
