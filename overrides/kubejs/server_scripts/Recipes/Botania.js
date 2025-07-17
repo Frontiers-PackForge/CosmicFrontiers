@@ -1741,6 +1741,7 @@ ServerEvents.recipes(event => {
     event.recipes.botania.mana_infusion('botania:blacker_lotus', 'minecraft:wither_rose', 100000)
 
     event.remove({ id: 'botania:mana_infusion/mana_diamond' })
+    event.remove({ id: 'botania:mana_infusion/mana_diamond_block'})
     event.recipes.botania.mana_infusion('botania:mana_diamond', 'gtceu:flawless_diamond_gem', 10000)
 
     event.remove({ output: 'botania:mana_powder' })
