@@ -736,7 +736,7 @@
 			dependencies: ["4D96DE63E82D8EAA"]
 			description: [
 				""
-				"\"&l&bFrontiers Monarch&r\" - Given to those who seek a true challenge, complete the pack in \"&l&eGlory Mode&r\" [NYI] - Will be Implemented in 1.X.0"
+				"\"&l&bFrontiers Monarch&r\" - Given to those who have seen the story of Frontiers to the end, for every ending. Unobtainable as of current release and won't be attainable until 1.0.0"
 				""
 				"\"&l&4Frontiers Dominator&r\" - Given to those who complete the pack with the &ndefault settings&r."
 				""
@@ -856,7 +856,7 @@
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
 			description: [
-				"Don't worry your pack isn't broken, the questbook is hidden!"
+				"Don't worry your pack isn't broken, the questbook is hidden to prevent story spoilers!!!"
 				""
 				"Advance forward in each quest chapter to unlock more quest pages and to discover more of the story of Cosmic Frontiers!"
 			]

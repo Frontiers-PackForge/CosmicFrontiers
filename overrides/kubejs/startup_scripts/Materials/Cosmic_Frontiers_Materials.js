@@ -678,6 +678,7 @@ GTCEuStartupEvents.materialModification(event => {
     TagPrefix.plate['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('soul_stained_steel'), () => Item.getItem('malum:soul_stained_steel_plating'))
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('soul_stained_steel'), () => Item.getItem('malum:soul_stained_steel_ingot'))
 })
+
 GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('primordial_oil').setFormula('√∞₍Ω₎', true)
     GTMaterials.get('star_dew').setFormula('(℧ₓ∞)', true)

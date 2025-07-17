@@ -6,6 +6,14 @@
 	group: "3EC91AC584FC0BC3"
 	icon: "gtceu:alloy_blast_smelter"
 	id: "435C67C6C672A96B"
+	images: [{
+		height: 3.5d
+		image: "frontiers:textures/questimages/miscicons/wingedborder.png"
+		rotation: 0.0d
+		width: 3.5d
+		x: 0.0714285714285694d
+		y: -11.94642857142857d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -1551,7 +1559,7 @@
 			}]
 			title: "To LuV!"
 			x: 0.0d
-			y: -13.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["62AEF55670A1A23B"]
@@ -1791,23 +1799,14 @@
 			id: "4C91E2312927C904"
 			shape: "rsquare"
 			subtitle: "I want Answers. | Lore Quest"
-			tasks: [
-				{
-					entity: "botania:doppleganger"
-					icon: "botania:gaia_head"
-					id: "2A94CD1F2E024A11"
-					type: "kill"
-					value: 1L
-				}
-				{
-					id: "363AA57A03DC2C4E"
-					item: "botania:dice"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "363AA57A03DC2C4E"
+				item: "botania:dice"
+				type: "item"
+			}]
 			title: "Slay them again"
 			x: -2.5d
-			y: -13.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["71C697E52A8CE267"]

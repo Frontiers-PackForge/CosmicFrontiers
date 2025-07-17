@@ -61,29 +61,13 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"00FD19CCFB41CF8A"
-				"6F803279C5027E5C"
-			]
+			dependencies: ["00FD19CCFB41CF8A"]
 			icon: "bloodmagic:dungeon_controller"
 			id: "6AA384B858690CAD"
 			shape: "octagon"
 			title: "Dawn of a new cycle"
-			x: 3.0d
+			x: -1.0d
 			y: -4.5d
-		}
-		{
-			dependencies: ["33E3A30B9A5C165B"]
-			id: "3DCCE7A7C2B39FCE"
-			subtitle: "ZPM High Grade Rubber"
-			tasks: [{
-				id: "1089A2E77561CCDB"
-				item: "gtceu:silicone_rubber_foil"
-				type: "item"
-			}]
-			title: "Vibrosomatic Neoprene"
-			x: 5.5d
-			y: -1.5d
 		}
 		{
 			dependencies: ["0EB991442E63BE79"]
@@ -119,27 +103,23 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"3DCCE7A7C2B39FCE"
-				"33E3A30B9A5C165B"
-			]
+			dependencies: ["33E3A30B9A5C165B"]
+			icon: "gtceu:research_station"
 			id: "1B24263AD9282E23"
 			shape: "octagon"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "Mana with a thought"
-			tasks: [{
-				id: "23B7F1D9AE1D9C07"
-				item: "gtceu:research_station"
-				type: "item"
-			}]
 			title: "Mana Digitizer"
-			x: 8.0d
-			y: 0.0d
+			x: 8.5d
+			y: -2.5d
 		}
 		{
-			dependencies: ["5E4004EE418B6CD6"]
+			dependencies: [
+				"5E4004EE418B6CD6"
+				"15761F4497FC0218"
+			]
 			id: "15D6856B141AD56E"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "7FC4C2E489BEC822"
 				item: {
@@ -149,7 +129,7 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
+			x: 4.5d
 			y: -8.0d
 		}
 		{
@@ -207,23 +187,21 @@
 		}
 		{
 			dependencies: [
-				"5087296EF0C8C152"
-				"1910A173A44CE16A"
-				"380EDB0E6E4C5BC6"
-				"059FE2EA330761B9"
+				"499D83343EC6C108"
+				"25BD7A1DD7EDD974"
 			]
 			description: ["An augmented version of Neutronite. Neutron Density has been increased by a factor of 100"]
 			id: "647D1F76EE4D2AE1"
 			shape: "hexagon"
-			size: 1.0d
+			size: 1.5d
 			subtitle: "The Real Deal."
 			tasks: [{
 				id: "230AB8C0AF911222"
 				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 2.5d
+			x: 9.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["77AC87C4258DCDD4"]
@@ -271,15 +249,22 @@
 				"6CF0A6DA136B0B1F"
 				"77AC87C4258DCDD4"
 			]
-			icon: "gtceu:grand_assembly_line"
+			icon: "cosmiccore:arcane_distillery"
 			id: "195241FCB0CC40DE"
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "TODO ; Spirit Altar Multi"
-			tasks: [{
-				id: "4070E241A34E76AC"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "4070E241A34E76AC"
+					type: "checkmark"
+				}
+				{
+					id: "2B4DC65C7C363448"
+					item: "cosmiccore:arcane_distillery"
+					type: "item"
+				}
+			]
 			title: "The Spirit Well"
 			x: -9.0d
 			y: -3.5d
@@ -331,26 +316,33 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["56BF88E18FEDA2AC"]
+			dependencies: ["70CCB18CA57E256F"]
 			id: "5C1A28DFEA13F6C1"
+			shape: "hexagon"
+			size: 1.75d
 			tasks: [{
 				id: "245377636037B2B2"
 				item: "gtceu:wetware_processor"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 10.0d
+			x: 13.5d
+			y: 23.0d
 		}
 		{
-			dependencies: ["08FAF69EBD16AF20"]
+			dependencies: [
+				"08FAF69EBD16AF20"
+				"647D1F76EE4D2AE1"
+			]
 			id: "6CAE04A3F2F4057F"
+			shape: "hexagon"
+			size: 1.75d
 			tasks: [{
 				id: "52E14FF7AAC8A2FF"
 				item: "gtceu:wetware_processor_assembly"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 4.5d
+			x: 13.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -359,13 +351,15 @@
 				"3076511246E4CB17"
 			]
 			id: "6CED2A043415127F"
+			shape: "hexagon"
+			size: 1.75d
 			tasks: [{
 				id: "5794B4CB5D76F755"
 				item: "gtceu:wetware_processor_computer"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 1.0d
+			x: 13.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -373,6 +367,8 @@
 				"15761F4497FC0218"
 			]
 			id: "31CE310C898AC695"
+			shape: "hexagon"
+			size: 1.75d
 			subtitle: "Wetware Mainframes"
 			tasks: [{
 				id: "3D1331D498844A7D"
@@ -380,8 +376,8 @@
 				type: "item"
 			}]
 			title: "Your First UHV Circuit"
-			x: 12.5d
-			y: -7.0d
+			x: 13.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["647D1F76EE4D2AE1"]
@@ -393,13 +389,13 @@
 				item: "gtceu:mega_vacuum_freezer"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 4.5d
+			x: 12.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
-				"49B55FA57B05FDCC"
 				"2D31FF8D1689647E"
+				"49B55FA57B05FDCC"
 			]
 			id: "319AFED3381689C0"
 			shape: "hexagon"
@@ -410,8 +406,8 @@
 				item: "cosmiccore:orbital_tempering_forge"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 4.5d
+			x: 8.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -430,7 +426,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["00FD19CCFB41CF8A"]
+			dependencies: ["0EB37211BFB94473"]
 			id: "053CA2DEB31524C1"
 			shape: "hexagon"
 			size: 1.0d
@@ -439,18 +435,22 @@
 				item: "cosmiccore:zpm_soul_output_hatch"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -3.0d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["053CA2DEB31524C1"]
+			dependencies: [
+				"053CA2DEB31524C1"
+				"00FD19CCFB41CF8A"
+			]
+			dependency_requirement: "one_completed"
 			icon: "rechiseled:netherite_block_meteoric"
 			id: "7F030FBE37FF64FA"
 			shape: "gear"
 			size: 1.5d
 			title: "More Powerful Meteors"
-			x: -5.5d
-			y: -5.5d
+			x: -5.25d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1EDA6025077BAA5D"]
@@ -585,32 +585,8 @@
 				item: "gtceu:tritanium_ingot"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 3.0d
-		}
-		{
-			id: "50F34E3143E529C9"
-			tasks: [{
-				id: "40A8642B7861539E"
-				item: "bloodmagic:componentframeparts"
-				type: "item"
-			}]
-			x: 15.5d
-			y: 7.0d
-		}
-		{
-			dependencies: [
-				"50F34E3143E529C9"
-				"07CDFAD2D24E929F"
-			]
-			id: "1EC282333491563B"
-			tasks: [{
-				id: "314AA571E9984ACF"
-				item: "gtceu:sterilized_growth_medium_bucket"
-				type: "item"
-			}]
-			x: 14.5d
-			y: 8.5d
+			x: 4.333333333333343d
+			y: 4.791666666666693d
 		}
 		{
 			dependencies: [
@@ -639,23 +615,8 @@
 				item: "gtceu:energy_module"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"6AA384B858690CAD"
-				"5BB9D2C0CB96AB3C"
-				"6F78B755BD7972DE"
-			]
-			id: "78FB364EAC082F63"
-			tasks: [{
-				id: "7F613940FB94EB9F"
-				item: "gtceu:zpm_lapotronic_battery"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -6.0d
+			x: -2.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -670,7 +631,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: 1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -685,8 +646,8 @@
 				type: "item"
 			}]
 			title: "Somatic Mana"
-			x: 8.0d
-			y: -2.5d
+			x: 8.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1EF59593A9EA8676"]
@@ -700,7 +661,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: -2.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["1EDA6025077BAA5D"]
@@ -884,15 +845,15 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["78FB364EAC082F63"]
+			dependencies: ["6F78B755BD7972DE"]
 			id: "057D9F8E4E2945C8"
 			tasks: [{
 				id: "29B9787921E48785"
 				item: "cosmiccore:ultra_powered_casing"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -7.0d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["31CE310C898AC695"]
@@ -908,33 +869,19 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: -7.0d
+			x: 12.5d
+			y: -7.5d
 		}
 		{
-			dependencies: ["6AA384B858690CAD"]
+			dependencies: ["381B6F540EFA23B6"]
 			id: "6F78B755BD7972DE"
 			tasks: [{
 				id: "745DA0E9996C4D9E"
 				item: "cosmiccore:zpm_radio_module"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -6.0d
-		}
-		{
-			dependencies: [
-				"1EC282333491563B"
-				"3B5071D6C659C26F"
-			]
-			id: "19147C056A6C469C"
-			tasks: [{
-				id: "62675C0268AA2926"
-				item: "gtceu:wetware_printed_circuit_board"
-				type: "item"
-			}]
-			x: 16.5d
-			y: 8.5d
+			x: 3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["38A4EF785F5765BF"]
@@ -1190,8 +1137,8 @@
 				item: "gtceu:vitrolic_slurry_bucket"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -4.0d
+			x: -3.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["0B706188E9FA1808"]
@@ -1209,14 +1156,14 @@
 			dependencies: ["3721D1E1F204378F"]
 			id: "2D31FF8D1689647E"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "280324C205EAD89F"
 				item: "gtceu:crystal_processor_mainframe"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 4.5d
+			x: 3.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["0D95AAE11C69BE92"]
@@ -1263,7 +1210,7 @@
 				item: "cosmiccore:voidspark_ingot"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 6.0d
 			y: -9.0d
 		}
 		{
@@ -1302,9 +1249,10 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -8.0d
+			y: -6.5d
 		}
 		{
+			dependencies: ["43EB8098B004F233"]
 			id: "3076511246E4CB17"
 			tasks: [{
 				id: "24AFD19A8AFA297F"
@@ -1312,25 +1260,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 2.25d
-		}
-		{
-			description: [
-				"You'll need a lot, and perfectly enough star metal is easier to make in the Orbit of Venus."
-				""
-				"Once you can approach the sun without issues you can make this material at an even better rate."
-			]
-			id: "3B5071D6C659C26F"
-			shape: "gear"
-			size: 1.25d
-			subtitle: "More Effienct StarMetal"
-			tasks: [{
-				id: "7147DFA5DB0A4BDF"
-				item: "gtceu:star_metal_ingot"
-				type: "item"
-			}]
-			x: 16.5d
-			y: 7.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1475,7 +1405,7 @@
 				item: "gtceu:neoprene_bucket"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -1503,7 +1433,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -3.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1518,8 +1448,8 @@
 				item: "cosmiccore:aberrant_essence"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -6.0d
+			x: 7.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["3721D1E1F204378F"]
@@ -1544,8 +1474,8 @@
 				item: "merequester:requester"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -7.0d
+			x: 15.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["5502492F581EEA27"]
@@ -1555,36 +1485,8 @@
 				item: "merequester:requester_terminal"
 				type: "item"
 			}]
-			x: 16.0d
-			y: -7.0d
-		}
-		{
-			dependencies: [
-				"1EC282333491563B"
-				"643EC624429EABD5"
-			]
-			id: "59B6C50CF2D6A00A"
-			tasks: [{
-				id: "3C6BC75B3FB8766A"
-				item: "gtceu:stem_cells"
-				type: "item"
-			}]
-			x: 15.5d
-			y: 10.0d
-		}
-		{
-			dependencies: [
-				"19147C056A6C469C"
-				"59B6C50CF2D6A00A"
-			]
-			id: "56BF88E18FEDA2AC"
-			tasks: [{
-				id: "20EFCB6655EA5640"
-				item: "gtceu:neuro_processing_unit"
-				type: "item"
-			}]
 			x: 16.5d
-			y: 10.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["5C1A28DFEA13F6C1"]
@@ -1593,37 +1495,15 @@
 				""
 				"Welcome back, cleanroom machines."
 			]
+			icon: "gtceu:assembly_line"
 			id: "08FAF69EBD16AF20"
 			subtitle: "Circuit Woes"
 			tasks: [{
-				id: "00086EDFF0767BEB"
-				item: "gtceu:assembly_line"
-				type: "item"
+				id: "7241F130C336875A"
+				type: "checkmark"
 			}]
-			x: 18.0d
-			y: 7.0d
-		}
-		{
-			id: "07CDFAD2D24E929F"
-			tasks: [{
-				id: "5E72801872F6DD60"
-				item: "gtceu:diluted_hydrochloric_acid_bucket"
-				type: "item"
-			}]
-			x: 14.5d
-			y: 10.0d
-		}
-		{
-			description: ["Nutrient Rich and generally able to be sterilized enough to be used in Growth Medium."]
-			id: "643EC624429EABD5"
-			subtitle: "Welcome Back Bioslurry!"
-			tasks: [{
-				id: "758E9886A8B4A795"
-				item: "gtceu:nether_bioslurry_bucket"
-				type: "item"
-			}]
-			x: 15.5d
-			y: 11.0d
+			x: 13.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["1EF59593A9EA8676"]
@@ -1635,7 +1515,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: -3.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1EF59593A9EA8676"]
@@ -1646,8 +1526,8 @@
 				item: "gtceu:potent_mana_bucket"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -4.5d
+			x: 9.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1714,8 +1594,8 @@
 				item: "undergarden:blood_mushroom"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 6.0d
+			x: 1.511904761904752d
+			y: 6.916666666666671d
 		}
 		{
 			dependencies: ["6107D72E0B0C000B"]
@@ -1725,8 +1605,8 @@
 				item: "undergarden:blood_globule"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 7.5d
+			x: 1.511904761904752d
+			y: 8.416666666666671d
 		}
 		{
 			dependencies: ["1853F776E3AD34A3"]
@@ -1750,8 +1630,8 @@
 				item: "gtceu:blood_plasma_bucket"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 7.5d
+			x: 5.511904761904752d
+			y: 8.416666666666671d
 		}
 		{
 			dependencies: ["1853F776E3AD34A3"]
@@ -1761,18 +1641,20 @@
 				item: "gtceu:meat_dust"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 6.0d
+			x: 4.511904761904752d
+			y: 6.916666666666671d
 		}
 		{
+			dependencies: ["77B2690C199DA311"]
+			hide_dependency_lines: true
 			id: "3E9DF49F86748862"
 			tasks: [{
 				id: "0A381C66DB590F30"
 				item: "minecraft:bone_meal"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 6.0d
+			x: 9.011904761904752d
+			y: 6.916666666666671d
 		}
 		{
 			dependencies: [
@@ -1785,8 +1667,8 @@
 				item: "gtceu:collagen_dust"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 6.0d
+			x: 7.011904761904752d
+			y: 6.916666666666671d
 		}
 		{
 			dependencies: [
@@ -1854,16 +1736,20 @@
 			y: 9.5d
 		}
 		{
+			dependencies: ["77B2690C199DA311"]
+			hide_dependency_lines: true
 			id: "010925F22AA1F809"
 			tasks: [{
 				id: "6B45DDC36FBEAAEF"
 				item: "gtceu:nutrient_solution_bucket"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 6.0d
+			x: 3.011904761904752d
+			y: 6.916666666666671d
 		}
 		{
+			dependencies: ["77B2690C199DA311"]
+			hide_dependency_lines: true
 			id: "2DEF577DCC4CFCF2"
 			tasks: [{
 				id: "2FE0A2F00C51DA51"
@@ -1941,8 +1827,8 @@
 				item: "cosmiccore:saturated_sculk_hemocytoblast"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 10.0d
+			x: 3.011904761904752d
+			y: 10.916666666666671d
 		}
 		{
 			dependencies: ["77B2690C199DA311"]
@@ -2187,8 +2073,8 @@
 				item: "gtceu:synthetic_blood_bucket"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 8.5d
+			x: 4.511904761904752d
+			y: 9.416666666666671d
 		}
 		{
 			dependencies: ["35CFF0BD416B2801"]
@@ -2218,6 +2104,8 @@
 			y: 23.0d
 		}
 		{
+			dependencies: ["77B2690C199DA311"]
+			hide_dependency_lines: true
 			id: "7906B2CC847DD0F3"
 			tasks: [{
 				id: "7C386DB326B55EFA"
@@ -2465,6 +2353,8 @@
 			y: 18.0d
 		}
 		{
+			dependencies: ["77B2690C199DA311"]
+			hide_dependency_lines: true
 			id: "460C571B5E79F54D"
 			tasks: [{
 				id: "5C8DC9D2D4548F0D"
@@ -2475,6 +2365,8 @@
 			y: 20.0d
 		}
 		{
+			dependencies: ["77B2690C199DA311"]
+			hide_dependency_lines: true
 			id: "2EBF10745C5B3298"
 			tasks: [{
 				id: "3533C09BE0CB59F6"
@@ -2757,8 +2649,8 @@
 				item: "cosmiccore:computation_support_unit"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 8.5d
+			x: 3.011904761904752d
+			y: 9.416666666666671d
 		}
 		{
 			dependencies: ["77B2690C199DA311"]
@@ -2837,6 +2729,104 @@
 			}]
 			x: 2.0d
 			y: 11.0d
+		}
+		{
+			dependencies: ["32487CEABEA13790"]
+			description: [
+				"Some extremely hot ingots require extra steps before cooling down in a vac freezer."
+				""
+				"One of these is &eNeutronium&r, you'll need a laser engraver and &eArgon Plasma&r to bring thing material down to a usable temperature."
+			]
+			icon: "gtceu:large_engraving_laser"
+			id: "25BD7A1DD7EDD974"
+			tasks: [{
+				id: "652F96EAF28791B5"
+				type: "checkmark"
+			}]
+			title: "Plasma Laser Cooling"
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3FCCC1CCDEF90870"]
+			description: [
+				"Yes collect a cell of &aArgon Plasma&r to proceed."
+				""
+				"Indestructable Fluid Cells are the only container which can hold plasmas currently."
+			]
+			id: "32487CEABEA13790"
+			subtitle: "A unlikely \"coolant\""
+			tasks: [{
+				id: "70425F32B7A81D48"
+				item: {
+					Count: 1
+					id: "gtceu:indestructible_fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:argon_plasma"
+						}
+					}
+				}
+				title: "Argon Plasma"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"319AFED3381689C0"
+				"5087296EF0C8C152"
+				"1910A173A44CE16A"
+				"059FE2EA330761B9"
+				"380EDB0E6E4C5BC6"
+			]
+			id: "499D83343EC6C108"
+			tasks: [{
+				id: "5DBBEDEE96256A29"
+				item: "gtceu:hot_neutronium_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2A2BB37FB10C9C77"
+				"599DD95E8C657EE5"
+				"630E1A4B457E4810"
+			]
+			id: "70CCB18CA57E256F"
+			tasks: [{
+				id: "206633D826B3D082"
+				item: "cosmiccore:neuro_processing_assembly"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 23.0d
+		}
+		{
+			dependencies: [
+				"55386D5CF8B7D512"
+				"4908B167DF0F546F"
+			]
+			description: [
+				"This is a cloned quest for keeping the QB clean."
+				"As such there is no reward."
+			]
+			hide_dependency_lines: true
+			id: "599DD95E8C657EE5"
+			shape: "pentagon"
+			subtitle: "Bio Compatible Hardware"
+			tasks: [{
+				id: "07D3535DEB3D243F"
+				item: "cosmiccore:computation_support_unit"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 21.0d
 		}
 	]
 	title: "The Sanguine Peak - [ZPM]"

@@ -184,7 +184,7 @@ ServerEvents.recipes(event => {
         .duration(480)
         .EUt(GTValues.VA[GTValues.ZPM]);
     event.recipes.gtceu.assembly_line('chiplet_assembly')
-        .notConsumable('gtceu:iv_emitter')
+        // .notConsumable('gtceu:iv_emitter')
         .itemInputs(['cosmiccore:unsealed_crystal_cpu', '4x gtceu:emerald_plate', '2x bloodmagic:defaultcrystal', '2x gtceu:luminescent_utherium_plate'])
         .itemOutputs('gtceu:crystal_cpu')
         .inputFluids(

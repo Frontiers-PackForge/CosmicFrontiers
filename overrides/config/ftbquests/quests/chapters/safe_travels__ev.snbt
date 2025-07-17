@@ -7,6 +7,14 @@
 	group: "473CC3AD40832CD0"
 	icon: "ad_astra:desh_ingot"
 	id: "6048ED915FA8486C"
+	images: [{
+		height: 3.5d
+		image: "frontiers:textures/questimages/miscicons/wingedborder.png"
+		rotation: 0.0d
+		width: 3.5d
+		x: 0.047619047619051d
+		y: -14.023809523809526d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

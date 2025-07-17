@@ -8,6 +8,14 @@
 	hide_quest_until_deps_visible: true
 	icon: "gtceu:galvanized_ethersteel_ingot"
 	id: "2AF6C950A3B12568"
+	images: [{
+		height: 3.5d
+		image: "frontiers:textures/questimages/miscicons/wingedborder.png"
+		rotation: 0.0d
+		width: 3.5d
+		x: 5.090476190476188d
+		y: 6.214285714285708d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -308,7 +316,7 @@
 			]
 			id: "2823B3BAEF820B50"
 			shape: "hexagon"
-			size: 2.5d
+			size: 2.0d
 			subtitle: "Time to subdue the depths."
 			tasks: [{
 				id: "31A6572E4A197DC7"
@@ -1682,7 +1690,7 @@
 				type: "checkmark"
 			}]
 			title: "To HV!"
-			x: 3.5d
+			x: 2.5d
 			y: 6.25d
 		}
 		{
@@ -1730,7 +1738,7 @@
 			]
 			title: "Recollection"
 			x: 2.5d
-			y: 6.25d
+			y: 5.0d
 		}
 	]
 	title: "Forged in Galefury [MV]"

@@ -244,6 +244,7 @@
 				{
 					count: 169L
 					id: "326655AF3482D030"
+					item: "cosmiccore:naquadah_pressure_resistant_casing"
 					type: "item"
 				}
 				{
@@ -2083,12 +2084,21 @@
 		}
 		{
 			dependencies: ["3F5E81046FD4215B"]
+			description: [
+				"Ahead is ZPM, a currently unfinished part of progression."
+				""
+				""
+				"It is heavily recommended you wait until a proper mid-progress patch is made for ZPM; if you wish to advance foward and accept the risks, force-complete this quest."
+			]
 			icon: "createdeco:decal_up"
 			id: "6DA881815E8DE99D"
+			subtitle: "A HEAVY WARNING"
 			tasks: [{
-				id: "5405C1F0DC7D29F5"
-				type: "checkmark"
+				id: "7C3A54535E325D8D"
+				title: "End of Current Progression 0.7.0"
+				type: "custom"
 			}]
+			title: "DANGER - UNFINISHED CONTENT AHEAD"
 			x: 0.0d
 			y: -15.0d
 		}
@@ -2136,6 +2146,10 @@
 		}
 		{
 			dependencies: ["131B7870338CC02C"]
+			description: [
+				"One of the First possible ways to create demon will."
+				"It is very lossy and uses rather expensive materials, scaling it's usages will require extra research."
+			]
 			id: "52FDB03D36E94054"
 			shape: "hexagon"
 			subtitle: "Demon Will, Finally"

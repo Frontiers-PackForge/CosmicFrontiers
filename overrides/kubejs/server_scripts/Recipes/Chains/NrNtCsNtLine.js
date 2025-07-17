@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:ultralight_neutronium_plasma 1152') //8
         .fusionStartEU(240000000)
         .duration(400)
-        .EUt(GTValues.VA[GTValues.ZPM]);
+        .EUt(131072,16);
 
     event.recipes.gtceu.vacuum_freezer('crystal_plasma_cooling')
         .inputFluids('gtceu:crystaline_neutronium_plasma 144') //1
