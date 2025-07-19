@@ -300,7 +300,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('4x cosmiccore:fireclay_ball')
     .duration(200)
     .EUt(2)
-  event.shaped('gtceu:industrial_primitive_blast_furnace', [
+  event.shaped('cosmiccore:industrial_primitive_blast_furnace', [
     'WSH',
     'SCS',
     'FSF'
@@ -332,7 +332,7 @@ ServerEvents.recipes(event => {
   //   P: 'gtceu:treated_wood_slab',
   //   S: '#forge:tools/saws'
   // })
-  event.shaped('gtceu:high_pressure_assembler', [
+  event.shaped('cosmiccore:high_pressure_assembler', [
     'VRV',
     'RCR',
     'BBB'
@@ -788,7 +788,7 @@ ServerEvents.recipes(event => {
     'gtceu:vacuum_tube'
   ])
 
-  event.shaped('gtceu:steam_caster', [
+  event.shaped('cosmiccore:steam_caster', [
     'CBC',
     'QGH',
     'PPP'
@@ -810,7 +810,7 @@ ServerEvents.recipes(event => {
     C: '#gtceu:circuits/luv',
     R: 'bloodmagic:blankrune',
   })
-  event.shaped('gtceu:steam_fluid_input_hatch', [
+  event.shaped('cosmiccore:steam_fluid_input_hatch', [
     ' G ',
     ' C ',
     '   '
@@ -818,7 +818,7 @@ ServerEvents.recipes(event => {
     G: 'minecraft:glass',
     C: 'gtceu:bronze_machine_casing'
   })
-  event.shaped('gtceu:steam_fluid_output_hatch', [
+  event.shaped('cosmiccore:steam_fluid_output_hatch', [
     ' C ',
     ' G ',
     '   '
