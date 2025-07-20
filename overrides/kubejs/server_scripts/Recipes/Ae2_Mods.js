@@ -886,19 +886,55 @@ ServerEvents.recipes(event => {
     } else {
       polymer = 'gtceu:polybenzimidazole_foil'
     }
+    const dyeColors = [
+    'white',
+    'light_gray',
+    'gray',
+    'black',
+    'brown',
+    'red',
+    'orange',
+    'yellow',
+    'lime',
+    'green',
+    'cyan',
+    'light_blue',
+    'blue',
+    'purple',
+    'magenta',
+    'pink'
+  ]
 
+    dyeColors.forEach(dye => {
+      event.recipes.gtceu.laminator(`smart_cable_${tier}_${dye}`)
+        .itemInputs([`gtceu:${tier}_single_cable`, `${polymer}`])
+        .inputFluids([`gtceu:${fluids} 144`, `gtceu:${dye}_dye 288`])
+        .itemOutputs(`${output}x ae2:${dye}_smart_cable`)
+        .circuit(2)
+        .duration(100)
+        .EUt(euType);
+      event.recipes.gtceu.laminator(`dense_cable_${tier}_${dye}`)
+      .itemInputs([`gtceu:${tier}_quadruple_cable`, `16x ${polymer}`])
+      .inputFluids([`gtceu:${fluids} 144`, `gtceu:${dye}_dye 2304`])
+      .itemOutputs(`${output}x ae2:${dye}_smart_dense_cable`)
+      .duration(100)
+      .circuit(2)
+      .EUt(euType);
+    });
 
     event.recipes.gtceu.laminator(`smart_cable_${tier}`)
       .itemInputs([`gtceu:${tier}_single_cable`, `${polymer}`])
       .inputFluids(`gtceu:${fluids} 144`)
       .itemOutputs(`${output}x ae2:fluix_smart_cable`)
       .duration(100)
+      .circuit(1)
       .EUt(euType);
     event.recipes.gtceu.laminator(`dense_cable_${tier}`)
       .itemInputs([`gtceu:${tier}_quadruple_cable`, `16x ${polymer}`])
       .inputFluids(`gtceu:${fluids} 144`)
       .itemOutputs(`${output}x ae2:fluix_smart_dense_cable`)
       .duration(100)
+      .circuit(1)
       .EUt(euType);
     event.recipes.gtceu.cutter(`ae2:${tier}_cable_anchor`)
       .itemInputs(`gtceu:${fluids}_bolt`)
