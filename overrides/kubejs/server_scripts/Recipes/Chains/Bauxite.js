@@ -90,14 +90,12 @@ ServerEvents.recipes(event => {
         .duration(15)
         .EUt(GTValues.VA[GTValues.IV]);
     event.recipes.gtceu.fluid_heater('sodium_hydroxide_bauxite_to_heated')
-        .circuit(0)
         .inputFluids('gtceu:sodium_hydroxide_bauxite 6000')
         .outputFluids('gtceu:heated_sodium_hydroxide_bauxite 6000')
         .duration(30)
         .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.centrifuge('bauxite_to_red_mud')
-        .circuit(0)
         .inputFluids('gtceu:heated_sodium_hydroxide_bauxite 12000')
         .outputFluids('gtceu:red_mud 3000')
         .outputFluids('gtceu:sodium_aluminate_solution 9000')
