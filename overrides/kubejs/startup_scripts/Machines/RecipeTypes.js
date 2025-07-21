@@ -29,7 +29,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('laminator')
         .category('frontiers')
-        .setMaxIOSize(2, 2, 2, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+        .setMaxIOSize(3, 2, 2, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
         .setSlotOverlay(false, false, GuiTextures.NEUTRAL_MATTER_OVERLAY)
         .setEUIO('in')
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
