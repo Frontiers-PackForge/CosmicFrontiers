@@ -237,9 +237,6 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('malum:encyclopedia_esoterica', (item, advanced, text) => {
     text.add(1, Text.of('Notice; Recipes may be incorrect, check EMI!').red())
   })
-  event.addAdvanced('botania:gaia_ingot', (item, advanced, text) => {
-    text.add(1, Text.of('Disabled: T2 Gaia and Ingot Recipe for Summon will be added when it is time to unlock them!').red())
-  })
   event.addAdvanced('kubejs:prismatic_lens', (item, advanced, text) => {
     text.add(1, Text.of('Creates a laser energetic enough to cut metal').lightPurple())
   })
