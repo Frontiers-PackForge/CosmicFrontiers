@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
     //     .itemInputs(['gtceu:livingrock_plate', '2x #minecraft:fishes', '4x minecraft:sugar_cane', '4x minecraft:bone_meal', '2x gtceu:manasteel_plate', '2x botania:mana_powder'])
     //     .inputFluids('gtceu:potent_mana 4000')
     //     .circuit(2)
-    //     .soulInput('50000')
+    //     //.soulInput('50000')
     //     .itemOutputs('16x botania:rune_water')
     //     .EUt(GTValues.VA[GTValues.EV])
     //     .duration(300)

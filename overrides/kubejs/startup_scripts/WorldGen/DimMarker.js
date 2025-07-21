@@ -11,4 +11,8 @@ GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
         .iconSupplier(() => Item.of('ad_astra:sun_globe').getItem())
         .tier(3)
         .overrideName('Sun Orbit')
+    event.create('ad_astra:moon')
+        .iconSupplier(() => Item.of('ad_astra:moon_globe').getItem())
+        .tier(3)
+        .overrideName('§bThe Moon')
 })

@@ -17,6 +17,7 @@ StartupEvents.registry('item', event => {
     event.create('americium_engine')
     event.create('shredded_magebloom')
     event.create('washed_magebloom')
+    event.create('embraced_luminite_ingot')
     event.create('neutronium_lattice').displayName('Neutronium Lattice')
     event.create('heavy_neutron_filter').displayName('Heavy Neutron Filter')
     event.create('neutronium_seedling').displayName('Neutronium Seedling')

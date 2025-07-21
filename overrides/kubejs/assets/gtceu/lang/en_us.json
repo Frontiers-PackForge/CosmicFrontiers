@@ -533,9 +533,22 @@
   "material.gtceu.ammonium_molybdate": "Ammonium Molybdate",
   "material.gtceu.ammonium_dimolybdate": "Ammonium Dimolybdate",
   "material.gtceu.molybdenum_trioxide": "Molybdenum Trioxide",
+
+  "material.gtceu.starlight": "Starlight",
+  "material.gtceu.star_metal": "Star Metal Alloy",
+  "material.gtceu.ionized_fulgorinth": "Ionized Fulgorinth",
+  "material.gtceu.vibrant_alloy": "Vibrant Alloy",
+  "material.gtceu.chromaplast": "Chromaplast (Brilliant)",
+
+
+
   "recipe.condition.gamestage.locked_stage": "Blocked By Research: %s",
   "recipe.condition.gamestage.unlocked_stage": "Research: %s",
 
+
+
+  "gtceu.lunar_tapestry": "Lunar Tapestry",
+  "block.gtceu.lunar_tapestry": "Lunar Tapestry",
   "gtceu.orbital_forge": "Orbital Forge",
   "gtceu.gravity_float_crucible": "Gravity Float Crucible",
   "block.gtceu.gravity_float_crucible": "Gravity Float Crucible",
