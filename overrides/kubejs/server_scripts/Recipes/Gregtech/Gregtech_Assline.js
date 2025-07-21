@@ -560,7 +560,7 @@ ServerEvents.recipes(event => {
     .duration(1750)
     .EUt(GTValues.VA[GTValues.ZPM])
   event.recipes.gtceu.assembly_line('frontiers:zpm_combustion_engine')
-    .itemInputs(['gtceu:zpm_machine_hull', '2x gtceu:circuits/zpm', '4x gtceu:zpm_electric_piston', '4x gtceu:zpm_electric_motor', '8x cosmiccore:neutronite_gear', 'gtceu:vanadium_gallium_quadruple_cable', 'gtceu:zpm_machine_hull'])
+    .itemInputs(['gtceu:zpm_machine_hull', '2x #gtceu:circuits/zpm', '4x gtceu:zpm_electric_piston', '4x gtceu:zpm_electric_motor', '8x cosmiccore:neutronite_gear', 'gtceu:vanadium_gallium_quadruple_cable', 'gtceu:zpm_machine_hull'])
     .itemOutputs('cosmiccore:ultimate_combustion_engine_cc')
     .inputFluids(
       'gtceu:trinanylon_6_6 1296',
