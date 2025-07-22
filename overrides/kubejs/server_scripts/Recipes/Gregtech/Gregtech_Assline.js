@@ -23,6 +23,12 @@ ServerEvents.recipes(event => {
     B: 'gtceu:iv_electric_motor',
     M: 'cosmiccore:iv_radio_module'
   })
+  event.recipes.gtceu.assembler('assembly_line_casing')
+    .itemInputs(['gtceu:tungsten_carbide_frame', 'cosmiccore:iv_radio_module', '2x gtceu:hpic_chip', '2x gtceu:iv_electric_motor', '3x #gtceu:circuits/zpm'])
+    .itemOutputs('gtceu:assembly_line_casing')
+    .circuit(2)
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.IV])
   event.recipes.gtceu.assembly_line('lunar_tapestry')
     .itemInputs(['gtceu:luv_scanner', '64x gtceu:computer_monitor_cover', '16x gtceu:lv_solar_panel', '8x kubejs:prismatic_lens', '8x gtceu:luv_sensor', '8x cosmiccore:luv_radio_module', '4x gtceu:luv_field_generator', '16x gtceu:uranium_rhodium_dinaquadide_double_wire', '16x gtceu:normal_optical_pipe'])
     .itemOutputs('gtceu:lunar_tapestry')
