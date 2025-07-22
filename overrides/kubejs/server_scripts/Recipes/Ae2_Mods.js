@@ -168,17 +168,20 @@ ServerEvents.recipes(event => {
   // event.remove({ output:  })
   // event.remove({ output:  })
   event.recipes.gtceu.assembly_line('assline_creative_cell_recipe')
-    .itemInputs('64x megacells:mega_energy_cell', '8x #gtceu:circuits/luv', '16x gtceu:superconducting_coil', '64x ae2:fluix_smart_dense_cable', '64x ae2:fluix_smart_dense_cable', '32x gtceu:neutron_reflector')
+    .itemInputs('64x megacells:mega_energy_cell', '8x #gtceu:circuits/uv', '16x cosmiccore:reinforced_trinavine_coil_block', '64x ae2:fluix_smart_dense_cable', '64x ae2:fluix_smart_dense_cable', '32x gtceu:neutron_reflector')
     .itemOutputs('ae2:creative_energy_cell')
     .inputFluids(
-      Fluid.of('gtceu:uu_matter', 666),
-      Fluid.of('gtceu:titanium_tungsten_carbide', 4608),
-      Fluid.of('gtceu:soldering_alloy', 8192),
+      Fluid.of('gtceu:starlight', 16000),
+      Fluid.of('gtceu:crystaline_neutronium', 4608),
+      Fluid.of('gtceu:high_grade_solder', 8192),
 
     )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('megacells:mega_energy_cell')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
-    .duration(500)
-    .EUt(GTValues.VA[GTValues.LuV])
+    .stationResearch(b => b
+      .researchStack('megacells:mega_energy_cell')
+      .CWUt(16)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(1750)
+    .EUt(GTValues.VA[GTValues.LuV], 6)
 
   event.recipes.gtceu.assembler(`ae2:singularity_creation`)
     .itemInputs(['ae2:dense_energy_cell', '4x gtceu:hv_emitter', '4x gtceu:hv_sensor', 'gtceu:hv_field_generator'])
@@ -342,6 +345,12 @@ ServerEvents.recipes(event => {
     .itemOutputs('ae2:dense_energy_cell')
     .duration(320)
     .EUt(GTValues.VA[GTValues.HV]);
+  //Superdense Cell
+  event.recipes.gtceu.assembler('ae2:superdense_cell_assem')
+    .itemInputs(['8x ae2:dense_energy_cell', '16x cosmiccore:trinavine_plate', '32x gtceu:rhenium_foil', 'gtceu:lapotronic_energy_orb_cluster'])
+    .itemOutputs('megacells:mega_energy_cell')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.LuV]);
   //Pattern Crafting Terminal
   //Pattern Terminal
   event.recipes.gtceu.assembler('ae2:data_terminal')
