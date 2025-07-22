@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:assembler/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_assembly_control' })
+  event.remove({ id: 'gtceu:assembler/assembly_control_casing' })
   event.shaped('gtceu:assembly_line_casing', [
     'SMS',
     'DCD',
@@ -20,6 +21,12 @@ ServerEvents.recipes(event => {
     B: 'gtceu:iv_electric_motor',
     M: 'cosmiccore:iv_radio_module'
   })
+  event.recipes.gtceu.assembler('assembly_line_casing')
+    .itemInputs(['gtceu:tungsten_carbide_frame', 'cosmiccore:iv_radio_module', '2x gtceu:hpic_chip', '2x gtceu:iv_electric_motor', '3x #gtceu:circuits/zpm'])
+    .itemOutputs('gtceu:assembly_line_casing')
+    .circuit(2)
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.IV])
   event.remove({ id: 'bloodmagic:ritual_diviner_0' })
   event.recipes.gtceu.assembly_line('inscriber_recipe')
     .itemInputs(['16x bloodmagic:infusedslate','botania:exchange_rod', Item.of('occultism:chalk_red', '{Damage:0}'), Item.of('occultism:chalk_purple', '{Damage:0}'), Item.of('occultism:chalk_gold', '{Damage:0}'), Item.of('occultism:chalk_white', '{Damage:0}'), Item.of('bloodmagic:airscribetool', '{Damage:0}'), Item.of('bloodmagic:firescribetool', '{Damage:0}'), Item.of('bloodmagic:waterscribetool', '{Damage:0}'), Item.of('bloodmagic:earthscribetool', '{Damage:0}')])
