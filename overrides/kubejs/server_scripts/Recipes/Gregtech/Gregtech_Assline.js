@@ -9,6 +9,9 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:assembler/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_assembly_control' })
+
+  event.replaceOutput({ id: 'gtceu:assembly_line/high_performance_computing_array' }, 'gtceu:high_performance_computation_array', 'cosmiccore:high_performance_computation_array')
+
   event.shaped('gtceu:assembly_line_casing', [
     'SMS',
     'DCD',
@@ -20,9 +23,20 @@ ServerEvents.recipes(event => {
     B: 'gtceu:iv_electric_motor',
     M: 'cosmiccore:iv_radio_module'
   })
+  event.recipes.gtceu.assembly_line('lunar_tapestry')
+    .itemInputs(['gtceu:luv_scanner', '64x gtceu:computer_monitor_cover', '16x gtceu:lv_solar_panel', '8x kubejs:prismatic_lens', '8x gtceu:luv_sensor', '8x cosmiccore:luv_radio_module', '4x gtceu:luv_field_generator', '16x gtceu:uranium_rhodium_dinaquadide_double_wire', '16x gtceu:normal_optical_pipe'])
+    .itemOutputs('gtceu:lunar_tapestry')
+    .inputFluids(
+      'gtceu:star_dew 16000',
+      'cosmiccore:triphenylphosphine 8500',
+      'gtceu:grading_fluid_2 16000'
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('occultism:chalk_red', '{Damage:0}')).EUt(GTValues.VA[GTValues.LuV]).duration(3200))
+    .duration(1200)
+    .EUt(GTValues.VA[GTValues.LuV])
   event.remove({ id: 'bloodmagic:ritual_diviner_0' })
   event.recipes.gtceu.assembly_line('inscriber_recipe')
-    .itemInputs(['16x bloodmagic:infusedslate','botania:exchange_rod', Item.of('occultism:chalk_red', '{Damage:0}'), Item.of('occultism:chalk_purple', '{Damage:0}'), Item.of('occultism:chalk_gold', '{Damage:0}'), Item.of('occultism:chalk_white', '{Damage:0}'), Item.of('bloodmagic:airscribetool', '{Damage:0}'), Item.of('bloodmagic:firescribetool', '{Damage:0}'), Item.of('bloodmagic:waterscribetool', '{Damage:0}'), Item.of('bloodmagic:earthscribetool', '{Damage:0}')])
+    .itemInputs(['16x bloodmagic:infusedslate', 'botania:exchange_rod', Item.of('occultism:chalk_red', '{Damage:0}'), Item.of('occultism:chalk_purple', '{Damage:0}'), Item.of('occultism:chalk_gold', '{Damage:0}'), Item.of('occultism:chalk_white', '{Damage:0}'), Item.of('bloodmagic:airscribetool', '{Damage:0}'), Item.of('bloodmagic:firescribetool', '{Damage:0}'), Item.of('bloodmagic:waterscribetool', '{Damage:0}'), Item.of('bloodmagic:earthscribetool', '{Damage:0}')])
     .itemOutputs('bloodmagic:ritualdiviner')
     .inputFluids(
       'gtceu:4_4_oxydianiline_pyromellitimide 9216',
