@@ -774,7 +774,7 @@ ServerEvents.recipes(event => {
     .CWUt(64)
     .duration(600)
     .EUt(GTValues.V[GTValues.IV], 16);
-    
+
   event.recipes.gtceu.lunar_tapestry('starlight_extraction_4')
     .circuit(4)
     .perTick(true)
@@ -820,6 +820,13 @@ ServerEvents.recipes(event => {
     .CWUt(1024)
     .duration(600)
     .EUt(GTValues.V[GTValues.IV], 16384);
+
+  event.recipes.gtceu.assembler('hpca_indicator_part')
+    .itemInputs(['gtceu:zpm_machine_hull', '#gtceu:circuits/zpm', 'gtceu:computer_monitor_cover'])
+    .itemOutputs('cosmiccore:hpca_indicator')
+    .circuit(3)
+    .duration(600)
+    .EUt(GTValues.V[GTValues.IV], 6);
 
   event.recipes.gtceu.assembler('alpha_supercon')
     .itemInputs(['16x gtceu:galvanized_ethersteel_foil', '4x gtceu:titanium_tiny_fluid_pipe', '4x gtceu:luminescent_utherium_double_wire', 'gtceu:hv_electric_pump'])
