@@ -49,7 +49,6 @@ ServerEvents.recipes(event => {
         .itemInputs('2x gtceu:naquadric_metallic_powder_dust')
         .inputFluids('gtceu:aqua_regia 6000')
         .outputFluids('gtceu:naquadric_solution 2000')
-        .outputFluids('gtceu:diluted_nitric_acid 2000')
         .outputFluids('gtceu:hydrochloric_acid 2000')
         .outputFluids('gtceu:chlorine 2000')
         .duration(100)
