@@ -1,5 +1,21 @@
 GTCEuServerEvents.oreVeins(event => {
-
+    event.add('kubejs:mars_phosphor_vein', vein => vein
+        .weight(30).clusterSize(30).density(0.2)
+        .layer('moon_stone')
+        .heightRangeUniform(35, 50)
+        .layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(3).mat(GTMaterials.TricalciumPhosphate).size(2, 4))
+                .layer(l => l.weight(2).mat(GTMaterials.Pyrochlore).size(2, 3))
+                .layer(l => l.weight(1).mat(GTMaterials.Apatite).size(4, 6))
+            )
+        )
+        .surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Pyrochlore)
+            .density(0.2)
+            .radius(4)
+        )
+    )
     event.add('kubejs:desh_vein', vein => vein
         .weight(20).clusterSize(30).density(0.2)
         .layer('moon_stone')
@@ -93,16 +109,16 @@ GTCEuServerEvents.oreVeins(event => {
         .layer('moon_stone')
         .heightRangeUniform(15, 80)
         .veinedVeinGenerator(generator => generator
-            .oreBlock(GTMaterials.Pitchblende, 4) 
-            .oreBlock(GTMaterials.Pitchblende, 4) 
-            .oreBlock(GTMaterials.Cobaltite, 2) 
+            .oreBlock(GTMaterials.Pitchblende, 4)
+            .oreBlock(GTMaterials.Pitchblende, 4)
+            .oreBlock(GTMaterials.Cobaltite, 2)
             .rareBlock(GTMaterials.Uraninite, 2)
             .rareBlockChance(0.45)
             .veininessThreshold(0.1)
             .maxRichnessThreshold(0.7)
             .minRichness(0.7)
             .maxRichness(0.85)
-            .edgeRoundoffBegin(5) 
+            .edgeRoundoffBegin(5)
             .maxEdgeRoundoff(0.2)
         )
         .surfaceIndicatorGenerator(indicator => indicator

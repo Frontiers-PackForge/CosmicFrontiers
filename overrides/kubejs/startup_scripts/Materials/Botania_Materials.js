@@ -80,6 +80,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x67b9ee)
         .element(GTElements.get('manasteel'))
         .cableProperties(GTValues.V[GTValues.LV], 8, 0, false)
+
         .toolStats(new ToolProperty(8, 5, 2048, 4,
             [
                 GTToolType.SWORD,
@@ -128,6 +129,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .liquid()
         .color(0xa8ddff)
+        .components("manasteel")
         .element(GTElements.get('manasteel'))
         .cableProperties(GTValues.V[GTValues.MV], 2, 3, false)
         .iconSet(GTMaterialIconSet.getByName('mana'))
@@ -212,6 +214,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         )
 
 
+})
+StartupEvents.postInit(event => {
+    GTMaterials.get('manasteel').getProperty(PropertyKey.INGOT).setArcSmeltingInto('annealed_manasteel')
 })
 
 GTCEuStartupEvents.materialModification(event => {

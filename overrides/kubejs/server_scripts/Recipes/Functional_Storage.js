@@ -3,6 +3,7 @@ let yeet = (itemName) => {
       event.remove({ output: itemName })
     })
   ServerEvents.tags('item', event => {
+    console.log('[10] - [1] - TAG-WATCHER')
       event.add('c:hidden_from_recipe_viewers', itemName)
       event.remove('forge:tools/hammers', itemName)
   })
@@ -75,7 +76,7 @@ ServerEvents.recipes( e => {
       'BCB', 
       'ABA'  
     ], {
-      B: `gtceu:steel_frame`, 
+      B: `framedblocks:framed_cube`, 
       A: 'gtceu:iron_screw',  
       C: '#forge:chests'   
     }
@@ -85,7 +86,7 @@ ServerEvents.recipes( e => {
       'BBB', 
       'ACA'  
     ], {
-      B: `gtceu:steel_frame`, 
+      B: `framedblocks:framed_cube`, 
       A: 'gtceu:iron_screw',  
       C: '#forge:chests'   
     }
@@ -95,7 +96,7 @@ ServerEvents.recipes( e => {
       'BCB', 
       'ABA'  
     ], {
-      C: `gtceu:steel_frame`, 
+      C: `framedblocks:framed_cube`, 
       B: 'gtceu:iron_screw',  
       A: '#forge:chests'   
     }
@@ -167,6 +168,13 @@ ServerEvents.recipes( e => {
       D: '#forge:tools/hammers'
     }
     )
+
+  e.recipes.gtceu.assembler('copper_upgrade_assembly')
+    .itemInputs(['5x gtceu:double_copper_plate', '2x #forge:chests', '#functionalstorage:drawer'])
+    .itemOutputs('functionalstorage:copper_upgrade')
+    .duration(80)
+    .EUt(16);
+
     e.shaped(`functionalstorage:gold_upgrade`, [
       'ADA', 
       'BCB', 
@@ -178,6 +186,12 @@ ServerEvents.recipes( e => {
       D: '#forge:tools/hammers'
     }
     )
+
+  e.recipes.gtceu.assembler('gold_upgrade_assembly')
+    .itemInputs(['functionalstorage:copper_upgrade', '5x gtceu:rose_gold_plate', '2x sophisticatedstorage:gold_chest', '#functionalstorage:drawer'])
+    .itemOutputs('functionalstorage:gold_upgrade')
+    .duration(160)
+    .EUt(16);
 
     e.recipes.gtceu.assembler('functionalstorage:diamond_upgrade') 
            .itemInputs('functionalstorage:gold_upgrade')
@@ -225,6 +239,13 @@ ServerEvents.recipes( e => {
     D: '#forge:tools/hammers'
     }
     )
+
+  e.recipes.gtceu.assembler('redstone_upgrade_assembly')
+    .itemInputs(['5x gtceu:red_alloy_plate', '2x minecraft:comparator', '#functionalstorage:drawer'])
+    .itemOutputs('functionalstorage:redstone_upgrade')
+    .duration(80)
+    .EUt(16);
+
     e.shaped(`functionalstorage:void_upgrade`, [
       'ADA', 
       'BCB', 
@@ -236,6 +257,13 @@ ServerEvents.recipes( e => {
     D: '#forge:tools/hammers'
     }
     )
+
+  e.recipes.gtceu.assembler('void_upgrade_assembly')
+    .itemInputs(['4x gtceu:obsidian_plate', '3x #forge:ender_pearls', '#functionalstorage:drawer'])
+    .itemOutputs('functionalstorage:void_upgrade')
+    .duration(160)
+    .EUt(28);
+
     e.shaped(`functionalstorage:puller_upgrade`, [
       'AEA', 
       'DCF', 
@@ -249,6 +277,14 @@ ServerEvents.recipes( e => {
     F: '#forge:tools/wrenches'
     }
     )
+
+  e.recipes.gtceu.assembler('puller_upgrade_assembly')
+    .itemInputs(['4x gtceu:stone_plate', 'gtceu:red_alloy_ingot', 'minecraft:hopper', '#functionalstorage:drawer'])
+    .circuit(1)
+    .itemOutputs('functionalstorage:puller_upgrade')
+    .duration(80)
+    .EUt(16);
+
     e.shaped(`functionalstorage:pusher_upgrade`, [
       'AEA', 
       'DCF', 
@@ -262,6 +298,14 @@ ServerEvents.recipes( e => {
     F: '#forge:tools/wrenches'
     }
     )
+
+  e.recipes.gtceu.assembler('pusher_upgrade_assembly')
+    .itemInputs(['4x gtceu:stone_plate', 'minecraft:hopper','gtceu:red_alloy_ingot', '#functionalstorage:drawer'])
+    .circuit(2)
+    .itemOutputs('functionalstorage:pusher_upgrade')
+    .duration(80)
+    .EUt(16);
+
     e.shaped(`functionalstorage:collector_upgrade`, [
       'AAA', 
       'CDE', 
@@ -273,6 +317,13 @@ ServerEvents.recipes( e => {
     E: 'functionalstorage:pusher_upgrade'
     }
     )
+
+  e.recipes.gtceu.assembler('collector_upgrade_assembly')
+    .itemInputs(['6x gtceu:stone_plate', 'functionalstorage:puller_upgrade', 'functionalstorage:pusher_upgrade', '#functionalstorage:drawer'])
+    .itemOutputs('functionalstorage:collector_upgrade')
+    .duration(160)
+    .EUt(24);
+
     e.shaped('functionalstorage:linking_tool', [
       'ABA', 
       'CDC', 

@@ -31,7 +31,28 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xc4085d)
     event.create('naquahine')
         .gas()
+        .dust()
         .color(0xc4083d)
+        .blastTemp(5000)
+        .flags(
+            GTMaterialFlags.FORCE_GENERATE_BLOCK,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_RING,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_ROTOR,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.IS_MAGNETIC
+        )
     event.create('thunder_charged_naquahine_mixture')
         .liquid()
         .color(0x681C76)
@@ -49,4 +70,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('naquahine_superfuel_mk_two')
         .liquid(new GTFluidBuilder().customStill())
 
+
+    event.create('extracted_tau')
+        .color(0xbf3d55)
+        .liquid()
+    event.create('tau_oil')
+        .color(0xba0b2b)
+        .liquid()
+    event.create('tau')
+        .color(0xf23a5c)
+        .plasma()
 }) 

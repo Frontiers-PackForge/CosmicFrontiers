@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(["flora_nurturer", "nether_catalyzer"])
         .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK), GTRecipeModifiers.BATCH_MODE])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('BBBBBBB', 'BQQQQQB', 'BQQQQQB', 'BQQQQQB', 'BBBBBBB')
             .aisle('BBBBBBB', 'QGGGGGQ', 'QRRRRRQ', 'Q#####Q', 'BLLLLLB')
@@ -38,9 +38,11 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks('minecraft:moss_block'))
             .where('R', Predicates.blocks('minecraft:flowering_azalea'))
             .where('Q', Predicates.blocks('gtceu:tempered_glass'))
-            .where('L', Predicates.blocks('cosmiccore:antiblock_white'))
+            .where('L', Predicates.blocks('gtceu:white_borderless_lamp'))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/flora_nurturer', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/flora_nurturer');
+
+
 
 
 
@@ -48,7 +50,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('mana_simulator')
         .appearanceBlock(GTBlocks.CASING_ALUMINIUM_FROSTPROOF)
-        .recipeModifier(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
+        .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK), GTRecipeModifiers.BATCH_MODE])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('##B##', '##G##', '##G##', '##G##', '##G##', '##G##', '##B##')
             .aisle('#BBB#', '#G#G#', '#G#G#', '#G#G#', '#G#G#', '#G#G#', '#BBB#')
@@ -66,7 +68,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .where('G', Predicates.blocks('botania:mana_glass'))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_frost_proof', 'gtceu:block/machines/mana_fluidizer', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_frost_proof', 'gtceu:block/machines/mana_fluidizer');
 
 
 
@@ -74,7 +76,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(['essence_reactor', 'mana_engraver'])
         .appearanceBlock(GTBlocks.CASING_TITANIUM_STABLE)
-        .recipeModifier(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
+        .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK), GTRecipeModifiers.BATCH_MODE])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(" AAA ", " BBB ", "  B  ", "     ", "  B  ", " BBB ", " AAA ")
             .aisle("AAAAA", "BCDCB", "     ", "     ", "     ", "BCDCB", "AAAAA")
@@ -90,7 +92,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', Predicates.blocks('malum:wicked_spirited_glass'))
             .where('E', Predicates.blocks('malum:block_of_soul_stained_steel'))
             .where('B', Predicates.blocks(GTBlocks.CASING_ALUMINIUM_FROSTPROOF.get()))
-            .where('A', Predicates.blocks(GTBlocks.CASING_TITANIUM_STABLE.get())
+            .where('A', Predicates.blocks(GTBlocks.CASING_TITANIUM_STABLE.get()).setMinGlobalLimited(30, 30)
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
@@ -101,8 +103,42 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .where('G', Predicates.blocks('botania:mana_glass'))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/mana_fluidizer', false);
-// reference `.setPreviewCount(1)`
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/mana_fluidizer');
+
+    event.create('lunar_tapestry', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes(['lunar_tapestry'])
+        .appearanceBlock(() => Block.getBlock('cosmiccore:high_tolerance_rhenium_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("    AAA    ", "    AAA    ", "    AAA    ", "           ", "           ", "           ", "           ", "           ", "           ", "           ", "           ", "           ")
+            .aisle("   BBBBB   ", "   CCCCC   ", "   BBBBB   ", "   CCCCC   ", "           ", "           ", "           ", "           ", "           ", "    DDD    ", "  DDDDDDD  ", "    DDD    ")
+            .aisle("  ABBBBBA  ", "  ACBBBCA  ", "  ABBBBBA  ", "   CBBBC   ", "    BBB    ", "    BBB    ", "    BBB    ", "    DDD    ", "  DDDDDDD  ", " DDD   DDD ", "     D     ", "           ")
+            .aisle("  ABBBBBA  ", "  ACBBBCA  ", "  ABBBBBA  ", "   CBBBC   ", "    BBB    ", "    BBB    ", "    DDD    ", "  DD C DD  ", "DD       DD", "           ", "     D     ", "           ")
+            .aisle("  ABBBBBA  ", "  ACBBBCA  ", "  ABBBBBA  ", "   CBBBC   ", "    B B    ", "    DDD    ", "  DD C DD  ", "DD       DD", "           ", "           ", "    EEE    ", "           ")
+            .aisle("   BBBBB   ", "   CCCCC   ", "   BBBBB   ", "   CCCCC   ", "           ", "  DDDDDDD  ", "DD       DD", "           ", "           ", "   EEEEE   ", "           ", "           ")
+            .aisle("    AAA    ", "    AHA    ", "    AAA    ", "           ", "    DDD    ", " DDD   DDD ", "           ", "           ", "   EEEEE   ", "           ", "           ", "           ")
+            .aisle("           ", "           ", "           ", "           ", "  DDDDDDD  ", "     D     ", "     D     ", "    EEE    ", "           ", "           ", "           ", "           ")
+            .aisle("           ", "           ", "           ", "           ", "    DDD    ", "           ", "           ", "           ", "           ", "           ", "           ", "           ")
+            .where('H', Predicates.controller(Predicates.blocks(definition.get())))
+            .where(' ', Predicates.any())
+            .where('E', Predicates.blocks('minecraft:tinted_glass'))
+            .where('D', Predicates.blocks('cosmiccore:high_tolerance_rhenium_casing'))
+            .where('C', Predicates.blocks('cosmiccore:highly_flexible_reinforced_trinavine_casing'))
+            .where('B', Predicates.blocks('cosmiccore:reinforced_naquadria_casing'))
+            .where('A', Predicates.blocks('cosmiccore:high_tolerance_rhenium_casing').setMinGlobalLimited(28, 30)
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
+            )
+            .build())
+        .workableCasingModel('cosmiccore:block/casings/solid/high_tolerance_rhenium_casing', 'gtceu:block/machines/mana_fluidizer');
+
+
+
+    // reference `.setPreviewCount(1)`
     event.create('molten_salt_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('molten_salt_reactor')
@@ -118,21 +154,22 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('Q', Predicates.blocks(GTBlocks.CASING_TITANIUM_PIPE.get()))
             .where('A', Predicates.blocks(GTBlocks.FIREBOX_TITANIUM.get()))
             .where('T', Predicates.blocks('cosmiccore:high_temperature_fission_casing')
-                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMinGlobalLimited(1,1))
-                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMinGlobalLimited(1,1))
-                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1,1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMinGlobalLimited(1, 1))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMinGlobalLimited(1, 1))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1, 1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMinGlobalLimited(1,1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMinGlobalLimited(1, 1))
             )
             .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
             .build())
-        .workableCasingRenderer('cosmiccore:block/casings/solid/high_temperature_fission_casing', 'gtceu:block/multiblock/fusion_reactor', false);
+        .workableCasingModel('cosmiccore:block/casings/solid/high_temperature_fission_casing', 'gtceu:block/multiblock/fusion_reactor');
     //WHAT THE FUCK IS A FUNCTIONAL PLATLINE, PRESENT! LARGE! DRYER???? CUBOID??? HEAT! ! !  OWIE! ROASTED! ! ! ?????????
     // ????? ? ? ????? ?? ???? ? ? ??? ???? ? ? ???? ?? ?? ?  ?? ? ?? ? ?? ? ?? ? ?? ?? ? ??  ? ?? ? ?? ?? ?? ?? ??? ?????????
     // **FUCK**
     event.create('large_dryer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('chemical_dehydrator')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK), GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('TTTTT', 'TGGGT', 'TTTTT')
@@ -151,17 +188,18 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.MAINTENANCE))
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
             )
             .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/flora_nurturer', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/flora_nurturer');
 
 
     event.create('pulse_heat_exchanger', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(["pulse_exchange_steam_vent", "pulse_exchange_steam"])
         // ["recipeTypes(com.gregtechceu.gtceu.api.recipe.GTRecipeType[])"]('pulse_exchange_steam_vent','pulse_exchange_steam' )
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK), GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('cosmiccore:highly_conductive_fission_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('TTT', 'TGT', 'TGT', 'TGT', 'TTT',)
@@ -178,14 +216,14 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
             .build())
-        .workableCasingRenderer('cosmiccore:block/casings/solid/highly_conductive_fission_casing', 'gtceu:block/multiblock/fusion_reactor', false);
+        .workableCasingModel('cosmiccore:block/casings/solid/highly_conductive_fission_casing', 'gtceu:block/multiblock/fusion_reactor');
 
 
     event.create('arboreal_growth_facility', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('arboreal_growth_facility')
         .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK), GTRecipeModifiers.BATCH_MODE])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('##TTT##', '##SGS##', '##SGS##', '##SGS##', '##SGS##', '##SGS##', '##SGS##', '##SGS##', '##TTT##', '#######')
             .aisle('#TTTTT#', '#FTMTF#', '#FT#TF#', '#FT#TF#', '#FT#TF#', '#FT#TF#', '#FT#TF#', '#FT#TF#', '#TTTTT#', '##SSS##')
@@ -211,13 +249,13 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
             )
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/mana_fluidizer', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/mana_fluidizer');
 
     event.create('industrial_stoneworks', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('industrial_stoneworks')
         .appearanceBlock(GTBlocks.CASING_TITANIUM_STABLE)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK), GTRecipeModifiers.BATCH_MODE])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('#TTT#', '#TTT#', '#TTT#')
             .aisle('TTTTT', 'TWQLT', 'TGGGT')
@@ -241,13 +279,13 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
             )
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/rock_crusher', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/rock_crusher');
 
     event.create('soul_forge', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('soul_forge')
         .appearanceBlock(GTBlocks.CASING_TITANIUM_STABLE)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK), GTRecipeModifiers.BATCH_MODE])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('#TTT#', '#TTT#', '#TTT#')
             .aisle('TTTTT', 'TWQLT', 'TGGGT')
@@ -271,12 +309,12 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities($CosmicPartAbility.IMPORT_SOUL))
             )
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/rock_crusher', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_stable_titanium', 'gtceu:block/machines/rock_crusher');
     event.create('leaching_plant', 'multiblock')
         .rotationState(RotationState.ALL)
         .recipeType('leaching_plant')
         .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK), GTRecipeModifiers.BATCH_MODE])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('TTTTTTT', 'TTTTTTT', 'TTTT###',)
             .aisle('TTTTTTT', 'TPPTP#T', 'T##T###',)
@@ -296,7 +334,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
             )
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/mana_fluidizer', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/mana_fluidizer');
 
     event.create('grand_assembly_line', 'multiblock')
         .rotationState(RotationState.ALL)
@@ -338,7 +376,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('V', Predicates.blocks(GTBlocks.COMPUTER_HEAT_VENT.get()))
             .where('O', Predicates.abilities(PartAbility.EXPORT_ITEMS))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/hpca/computer_casing/side', 'gtceu:block/multiblock/network_switch', false);
+        .workableCasingModel('gtceu:block/casings/hpca/computer_casing/side', 'gtceu:block/multiblock/network_switch');
 
 
 
@@ -346,7 +384,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.ALL)
         .recipeType('aio_lithography_processor')
         .appearanceBlock(GTBlocks.CASING_HSSE_STURDY)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK), GTRecipeModifiers.BATCH_MODE])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('TTTTTTT', 'TGGGGGT', 'TTTTTTT', 'TGT####', 'TTT####')
             .aisle('TTTTTTT', 'GQQQQQG', 'TQTTTTT', 'GQG####', 'TTT####')
@@ -367,42 +405,49 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_sturdy_hsse', 'gtceu:block/machines/flora_nurturer', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_sturdy_hsse', 'gtceu:block/machines/flora_nurturer');
 
     event.create('gravity_float_crucible', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(['gravity_float_crucible', 'sintering_extruder'])
-        .appearanceBlock(GTBlocks.COMPUTER_CASING)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+        .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK), GTRecipeModifiers.BATCH_MODE])
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle("           ", "           ", "           ", "           ", "           ", "           ", "           ", "   AABAA   ", "           ", "           ", "           ", "           ")
-            .aisle("           ", "           ", "           ", "           ", "           ", "           ", "           ", "  A  C  A  ", "           ", "           ", "           ", "           ")
-            .aisle("           ", "           ", "           ", "     A     ", "     A     ", "    AAA    ", "    BAB    ", " A  BAB  A ", "    BAB    ", "           ", "           ", "           ")
-            .aisle("           ", "    CCC    ", "    DDD    ", "    DDD    ", "    DDD    ", "   ABBBA   ", "   BBBBB   ", "A  BBBBB  A", "   BBBBB   ", "    BBB    ", "           ", "           ")
-            .aisle("    BBB    ", "   CBBBC   ", "   DE ED   ", "   DE ED   ", "   DE ED   ", "  ABE EBA  ", "  BBE EBB  ", "A BBE EBB A", "  BBB BBB  ", "   BB BB   ", "    BBB    ", "           ")
-            .aisle("    BBB    ", "   CB BC   ", "   D   D   ", "  AD   DA  ", "  AD   DA  ", "  AB   BA  ", "  AB   BA  ", "BCAB   BACB", "  AB   BA  ", "   B   B   ", "    BBB    ", "           ")
-            .aisle("    BBB    ", "   CBBBC   ", "   DE ED   ", "   DE ED   ", "   DE ED   ", "  ABE EBA  ", "  BBE EBB  ", "A BBE EBB A", "  BBB BBB  ", "   BB BB   ", "    BBB    ", "           ")
-            .aisle("           ", "    CCC    ", "    DDD    ", "    DDD    ", "    DDD    ", "   ABBBA   ", "   BBBBB   ", "A  BBBBB  A", "   BBBBB   ", "    BBB    ", "           ", "           ")
-            .aisle("           ", "           ", "           ", "     A     ", "     A     ", "    AAA    ", "    BAB    ", " A  BAB  A ", "    BAB    ", "           ", "           ", "           ")
-            .aisle("           ", "           ", "           ", "           ", "           ", "           ", "           ", "  A  C  A  ", "           ", "           ", "           ", "           ")
-            .aisle("           ", "           ", "           ", "           ", "           ", "           ", "           ", "   AAQAA   ", "           ", "           ", "           ", "           ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       A       ", "      ABA      ", "      ABA      ", "       A       ", "               ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       A       ", "      AAA      ", "      ACA      ", "       A       ", "               ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "     DDDDD     ", "               ", "               ", "     DDADD     ", "      AAA      ", "    AAACAAA    ", "       A       ", "   AAAAAAAAA   ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "    DD E DD    ", "               ", "               ", "    DD A DD    ", "     DAAAD     ", "   A  ACA  A   ", "    FFFAFFF    ", "  AA       AA  ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "   D   E   D   ", "               ", "               ", "   D   A   D   ", "     DAAAD     ", "  A   ACA   A  ", "   FF  A  FF   ", "  A         A  ")
+            .aisle("               ", "               ", "               ", "       A       ", "      ABA      ", "      ABA      ", "      ABA      ", "  DD  ABA  DD  ", "      ABA      ", "      ABA      ", "  DD  ABA  DD  ", "   DDDAAADDD   ", "  A  AACAA  A  ", "   F   A   F   ", "  A         A  ")
+            .aisle("       D       ", "       D       ", "      DDD      ", "      DDD      ", "     AC CA     ", "     AC CA     ", "     AC CA     ", "  D  AC CA  D  ", "     AC CA     ", "     AC CA     ", "  D  A   A  D  ", "AAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAA", "   F  AAA  F   ", "  A         A  ")
+            .aisle("      DDD      ", "      DDD      ", "      D D      ", "     ADDDA     ", "     B G B     ", "     B G B     ", "     B G B     ", "  DEEB G BEED  ", "     B G B     ", "     B G B     ", "AAAAAB G BAAAAA", "BAAAAAAGAAAAAAB", "BCCCCCAGACCCCCB", "AAAAAAAQAAAAAAA", "  A         A  ")
+            .aisle("       D       ", "       D       ", "      DDD      ", "      DDD      ", "     AC CA     ", "     AC CA     ", "     AC CA     ", "  D  AC CA  D  ", "     AC CA     ", "     AC CA     ", "  D  A   A  D  ", "AAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAA", "   F  AAA  F   ", "  A         A  ")
+            .aisle("               ", "               ", "               ", "       A       ", "      AAA      ", "      ABA      ", "      ABA      ", "  DD  ABA  DD  ", "      ABA      ", "      ABA      ", "  DD  ABA  DD  ", "   DDDAAADDD   ", "  A  AACAA  A  ", "   F   A   F   ", "  A         A  ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "   D   E   D   ", "               ", "               ", "   D   A   D   ", "     DAAAD     ", "  A   ACA   A  ", "   FF  A  FF   ", "  A         A  ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "    DD E DD    ", "               ", "               ", "    DD A DD    ", "     DAAAD     ", "   A  ACA  A   ", "    FFFAFFF    ", "  AA       AA  ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "     DDDDD     ", "               ", "               ", "     DDADD     ", "      AAA      ", "    AAACAAA    ", "       A       ", "   AAAAAAAAA   ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       A       ", "      AAA      ", "      ACA      ", "       A       ", "               ")
+            .aisle("               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "               ", "       A       ", "      ABA      ", "      ABA      ", "       A       ", "               ")
+
             .where('Q', Predicates.controller(Predicates.blocks(definition.get())))
             .where(' ', Predicates.any())
-            .where('B', Predicates.blocks(GTBlocks.COMPUTER_CASING.get())
-                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
-                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
-                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
-                .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
-                .or(Predicates.abilities(PartAbility.MAINTENANCE))
-                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
+            .where('A', Predicates.blocks('gtceu:high_temperature_smelting_casing')
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setPreviewCount(1))
             )
-            .where('A', Predicates.blocks('gtceu:high_power_casing'))
-            .where('C', Predicates.blocks('gtceu:computer_heat_vent'))
-            .where('D', Predicates.blocks('gtceu:laminated_glass'))
-            .where('E', Predicates.blocks('gtceu:molybdenum_disilicide_coil_block'))
+            .where('B', Predicates.blocks('gtceu:heat_vent'))
+            .where('C', Predicates.blocks('gtceu:molybdenum_disilicide_coil_block'))
+            .where('D', Predicates.blocks('cosmiccore:high_tolerance_rhenium_casing'))
+            .where('E', Predicates.blocks('gtceu:naquadah_alloy_frame'))
+            .where('G', Predicates.blocks('cosmiccore:highly_flexible_reinforced_trinavine_casing'))
+            .where('F', Predicates.blocks('cosmiccore:resonantly_tuned_virtue_meld_casing'))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/flora_nurturer', false);
+        .workableCasingModel('gtceu:block/casings/gcym/high_temperature_smelting_casing', 'gtceu:block/multiblock/cleanroom');
 
 
 

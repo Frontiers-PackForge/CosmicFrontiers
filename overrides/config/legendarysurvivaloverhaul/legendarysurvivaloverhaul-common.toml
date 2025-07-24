@@ -9,10 +9,10 @@
 	# Whether body members receive localized damages.
 	"Localized Body Damage Enabled" = false
 	# Whether the overhaul health system is enabled.
-	"Health Overhaul Enabled" = true
+	"Health Overhaul Enabled" = false
 
 	[core.advanced]
-		# How often player temperature is regularly synced between the client and server, in ticks.
+		# How often player temperature, thirst, body damage and health is regularly synced between the client and server, in ticks.
 		# Lower values will increase accuracy at the cost of performance.
 		#Range: > 1
 		"Routine Packet Sync" = 20
@@ -21,8 +21,10 @@
 		# What information the compass returns when player is using it or in an item frame.
 		#Allowed Values: FULL, HORIZONTAL, NONE
 		"Compass Info Mode" = "FULL"
+		# If enabled, use on a filled map will show destination coordinates.
+		"Show Coordinate On Filled Map" = true
 		# If enabled, information like position and direction will be hidden from the debug screen (F3).
-		"Hide Info From Debug" = true
+		"Hide Info From Debug" = false
 		# If enabled, the player can regenerate health naturally if their hunger is full enough (doesn't affect external healing, such as golden apples, the Regeneration effect, etc.)
 		"Natural Regeneration Enabled" = true
 		# If enabled, the player suffers vanilla freeze when inside powder snow.
@@ -30,8 +32,6 @@
 		# How much health player will have initially.
 		#Range: 1.0 ~ 10000.0
 		"Initial Player Health" = 20.0
-		# If enabled, use on a filled map will show destination coordinates.
-		"Show Coordinate On Filled Map" = true
 
 # Options related to the player food data
 [food]
@@ -53,7 +53,7 @@
 	"Dangerous Cold Temperature Effects" = true
 	# Chance of the ferns to become a gold fern when grow mature.
 	#Range: 0.0 ~ 1.0
-	"Gold Fern Chance" = 0.01
+	"Gold Fern Chance" = 0.05
 	# How much of an effect being on fire has on a player's temperature.
 	#Range: -1000.0 ~ 1000.0
 	"Player On Fire Modifier" = 12.5
@@ -99,7 +99,7 @@
 		# How much being wet influences the player's temperature.
 		# It means that for a value of -10, the body temperature of the player is reduced by 10.
 		#Range: -1000.0 ~ 1000.0
-		"Wetness Modifier" = -10.0
+		"Wetness Modifier" = -15.0
 		# How much the wetness decrease when out of water.
 		#Range: -1000 ~ 0
 		"Wetness Decrease" = -5
@@ -127,7 +127,7 @@
 	[temperature.biomes]
 		# How much a biome's temperature effects are multiplied.
 		#Range: 0.0 ~ 1000.0
-		"Biome Temperature Multiplier" = 18.0
+		"Biome Temperature Multiplier" = 9.0
 		# Whether biomes will have an effect on a player's temperature.
 		"Biomes affect Temperature" = true
 		# How much hot biome's dryness will make nights really cold.
@@ -174,11 +174,11 @@
 		# How much Time has effect on Temperature.
 		# Maximum effect at noon (positive) and midnight (negative), following a sinusoidal
 		#Range: 0.0 ~ Infinity
-		"Time Based Temperature Modifier" = 5.0
+		"Time Based Temperature Modifier" = 3.0
 		# How strongly time in extreme temperature biomes affect player's temperature.
 		# Extreme temperature biomes (like snowy taiga, deserts, ...) will multiply the time based temperature by this value, while temperate biome won't be affected by this value, following a linear.
 		#Range: 1.0 ~ Infinity
-		"Biome Time Multiplier" = 2.75
+		"Biome Time Multiplier" = 1.75
 		# Staying in the shade or during cloudy weather will reduce player's temperature by this amount based on time of the day (maximum effect at noon, following sinusoidal).
 		# It means that for a value of -6, the body temperature of the player is reduced by 6.
 		# Only effective in hot biomes and during day time!
@@ -192,50 +192,50 @@
 		# Add a heating resistance on armors.
 		[temperature.coat.heating]
 			#Range: 0.0 ~ 1000.0
-			"Heating Coat I" = 1.0
+			"Heating Coat I" = 3.0
 			#Range: 0.0 ~ 1000.0
-			"Heating Coat II" = 2.0
+			"Heating Coat II" = 5.0
 			#Range: 0.0 ~ 1000.0
-			"Heating Coat III" = 3.0
+			"Heating Coat III" = 7.0
 
 		# Add a cooling resistance on armors.
 		[temperature.coat.cooling]
 			#Range: 0.0 ~ 1000.0
-			"Cooling Coat I" = 1.0
+			"Cooling Coat I" = 3.0
 			#Range: 0.0 ~ 1000.0
-			"Cooling Coat II" = 2.0
+			"Cooling Coat II" = 5.0
 			#Range: 0.0 ~ 1000.0
-			"Cooling Coat III" = 3.0
+			"Cooling Coat III" = 7.0
 
 		# Add a temperature resistance on armors that can both heat and cool the player.
 		[temperature.coat.thermal]
 			#Range: 0.0 ~ 1000.0
-			"Thermal Coat I" = 1.0
+			"Thermal Coat I" = 2.0
 			#Range: 0.0 ~ 1000.0
-			"Thermal Coat II" = 2.0
+			"Thermal Coat II" = 4.0
 			#Range: 0.0 ~ 1000.0
-			"Thermal Coat III" = 3.0
+			"Thermal Coat III" = 6.0
 
 	[temperature.advanced]
 		# Maximum influence distance, in blocks, where thermal sources will have an effect on temperature.
 		#Range: 1 ~ 40
-		"Temperature Influence Maximum Distance" = 10
+		"Temperature Influence Maximum Distance" = 15
 		# How strongly influence distance above the player is reduced for thermal sources to have an effect on temperature.
 		# Example max dist is 10, up mult is 0.75 -> max distance is 10 * 0.75 = 7.5 blocks above the player.
 		# Logic is that heat goes up, the strength of the heat source above the player is decreased faster with distance.
 		#Range: 0.0 ~ 1.0
-		"Temperature Influence Up Distance Multiplier" = 0.75
+		"Temperature Influence Up Distance Multiplier" = 0.65
 		# How strongly influence distance outside a structure is reduced for thermal sources to have an effect on temperature.
 		# The outside maximum distance is defined as the maximum distance * this value
 		#Range: 0.0 ~ 1.0
-		"Temperature Influence Outside Distance Multiplier" = 0.75
+		"Temperature Influence Outside Distance Multiplier" = 0.55
 
 		# The player's temperature will be adjusted at each temperature tick time,
 		# by an amount of temperature defined between the minimum and the maximum temperature modification adjusted linearly.
 		[temperature.advanced.temperature-modification]
 			# Amount of time in ticks between 2 player temperature modification. The bigger is this value, the more time it takes between temperature adjustments.
 			#Range: > 5
-			"Temperature Tick Time" = 20
+			"Temperature Tick Time" = 30
 			# Maximum amount of temperature the player's temperature can be modified at each temperature tick time.
 			# Correspond to the amount of temperature given when temperature difference is maximum, meaning 40.
 			#Range: 0.1 ~ 2.147483647E9
@@ -264,7 +264,7 @@
 			# If disabled, dry and wet seasons are applied for hot biomes.
 			"Tropical Seasons Enabled" = false
 			# If season cards are enabled, season cards will appear at every season changes.
-			"Season Cards Enabled" = false
+			"Season Cards Enabled" = true
 			# If default season is enabled, when serene season defines no season effect in a biome, the normal season temperature will be applied.
 			# If disabled, when serene season defines no season effects, no season temperature will be applied.
 			"Default Season Enabled" = true
@@ -282,11 +282,11 @@
 
 				[temperature.integration.seasons.temperate.summer]
 					#Range: -1000.0 ~ 1000.0
-					"Early Summer Modifier" = 6.0
+					"Early Summer Modifier" = 10.0
 					#Range: -1000.0 ~ 1000.0
-					"Mid Summer Modifier" = 11.0
+					"Mid Summer Modifier" = 21.0
 					#Range: -1000.0 ~ 1000.0
-					"Late Summer Modifier" = 6.0
+					"Late Summer Modifier" = 8.0
 
 				[temperature.integration.seasons.temperate.autumn]
 					#Range: -1000.0 ~ 1000.0
@@ -298,11 +298,11 @@
 
 				[temperature.integration.seasons.temperate.winter]
 					#Range: -1000.0 ~ 1000.0
-					"Early Winter Modifier" = -9.0
+					"Early Winter Modifier" = -15.0
 					#Range: -1000.0 ~ 1000.0
-					"Mid Winter Modifier" = -15.0
+					"Mid Winter Modifier" = -25.0
 					#Range: -1000.0 ~ 1000.0
-					"Late Winter Modifier" = -7.0
+					"Late Winter Modifier" = -11.0
 
 			# Temperature modifiers per season in tropical biomes.
 			[temperature.integration.seasons.tropical]
@@ -441,11 +441,12 @@
 		"Permanent Hearts" = 10
 
 	[health-overhaul.broken-hearts]
-		# Broken Hearts are an integration with the localized body damage feature. Enables both feature to have it.
-		# Broken Heart are lost hearts when a player's limb is severely injured and can be recovered by healing it.
-		# Resilient hearts number below which Broken Hearts can no longer be added.
+		# Broken Hearts are an interaction with the localized body damage feature. Enables both feature to have it.
+		# Broken Hearts are lost hearts when a player's limb is severely injured and it can be recovered by healing the injured limb.
+		# The Resilient hearts is the number of heart below which Broken Hearts can no longer be added.
+		# By default, the player has 2 resilient heart, meaning no matter the amount of broken hearts, the player won't go below 2 hearts.
 		#Range: 1 ~ 10000
-		"Minimum Player's Heart number With Broken Hearts (Broken Heart Resilience)" = 2
+		"Minimum Amount Of Player's Heart With Broken Hearts (Broken Heart Resilience)" = 2
 		# Amount of Broken Hearts added per limbs fully injured.
 		#Range: 0 ~ 10000
 		"Added Broken Hearts Per Injured Limb" = 1

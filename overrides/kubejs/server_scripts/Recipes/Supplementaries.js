@@ -1,5 +1,6 @@
 // Stonewall (throw bricks)
 ServerEvents.tags('item', event => {
+    console.log('[17] - [1] - TAG-WATCHER')
     event.add('supplementaries:throwable_bricks', 'gtceu:coke_oven_brick')
     event.add('supplementaries:throwable_bricks', 'gtceu:firebrick')
 })
@@ -451,16 +452,16 @@ ServerEvents.recipes(event => {
         G: 'gtceu:iron_small_gear',
         R: 'gtceu:red_alloy_rod'
     })
-    event.remove({output:'supplementaries:faucet'})
-    event.shaped('supplementaries:faucet', [
-        ' G ',
-        'SST',
-        '  T'
-    ], {
-        G: 'gtceu:iron_small_gear',
-        S: 'gtceu:tin_alloy_small_fluid_pipe',
-        T: 'gtceu:tin_alloy_tiny_fluid_pipe'
-    })
+    event.remove({output:'supplementaries:faucet'}) // removing this as it can corrupt a chunk/world if placed on a cognition xp obelisk.
+    //event.shaped('supplementaries:faucet', [
+    //    ' G ',
+    //    'SST',
+    //    '  T'
+    //], {
+    //    G: 'gtceu:iron_small_gear',
+    //    S: 'gtceu:tin_alloy_small_fluid_pipe',
+    //    T: 'gtceu:tin_alloy_tiny_fluid_pipe'
+    //})
     event.remove({output:'supplementaries:crank'})
     event.shaped('supplementaries:crank', [
         'OS ',

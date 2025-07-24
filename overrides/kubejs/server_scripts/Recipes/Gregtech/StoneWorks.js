@@ -10,8 +10,11 @@ ServerEvents.recipes(event => {
         'minecraft:obsidian',
         'aether:holystone',
         'minecraft:basalt',
-        'minecraft:deepslate'
+        'minecraft:deepslate',
+        'gtceu:marble',
+        'gtceu:red_granite'
     ]
+
     stoneworks.forEach(tier => {
         event.recipes.gtceu.industrial_stoneworks(`indust_stoneworks_${tier}`)
             .notConsumable(`${tier}`)
@@ -21,6 +24,26 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(GTValues.VA[GTValues.EV]);
     })
+
+    event.stonecutting('gtceu:marble_bricks', 'gtceu:marble')
+    event.stonecutting('gtceu:polished_marble', 'gtceu:marble')
+    event.stonecutting('gtceu:chiseled_marble', 'gtceu:marble')
+    event.stonecutting('gtceu:marble_tile', 'gtceu:marble')
+    event.stonecutting('gtceu:marble_small_tile', 'gtceu:marble')
+    event.stonecutting('gtceu:marble_windmill_a', 'gtceu:marble')
+    event.stonecutting('gtceu:marble_windmill_b', 'gtceu:marble')
+    event.stonecutting('gtceu:small_marble_bricks', 'gtceu:marble')
+    event.stonecutting('gtceu:square_marble_bricks', 'gtceu:marble')
+
+    event.stonecutting('gtceu:red_granite_bricks', 'gtceu:red_granite')
+    event.stonecutting('gtceu:polished_red_granite', 'gtceu:red_granite')
+    event.stonecutting('gtceu:chiseled_red_granite', 'gtceu:red_granite')
+    event.stonecutting('gtceu:red_granite_tile', 'gtceu:red_granite')
+    event.stonecutting('gtceu:red_granite_small_tile', 'gtceu:red_granite')
+    event.stonecutting('gtceu:red_granite_windmill_a', 'gtceu:red_granite')
+    event.stonecutting('gtceu:red_granite_windmill_b', 'gtceu:red_granite')
+    event.stonecutting('gtceu:small_red_granite_bricks', 'gtceu:red_granite')
+    event.stonecutting('gtceu:square_red_granite_bricks', 'gtceu:red_granite')
 
     event.recipes.gtceu.celestial_bore(`boremap_earth`)
         .notConsumable('ad_astra:earth_globe')
@@ -91,4 +114,25 @@ ServerEvents.recipes(event => {
         .outputFluids('minecraft:lava 2500000')
         .duration(288000)
         .EUt(GTValues.VA[GTValues.IV]);
+
+
+
+    //BOREMAP SOL
+    event.recipes.gtceu.celestial_bore(`boremap_sol`)
+    .notConsumable('ad_astra:sun_globe')
+    .dimension('frontiers:sun_orbit')
+    .inputFluids('gtceu:grading_fluid_5 100000')
+    .outputFluids('gtceu:ghost_matter_plasma 3200000')
+    .outputFluids('gtceu:sol_blood_plasma 1380000')
+    .outputFluids('gtceu:homeward_resin_plasma 2400000')
+    .outputFluids('gtceu:perpetuity_slag_plasma 5500000')
+    .outputFluids('gtceu:argon_plasma 3000000')
+    .outputFluids('gtceu:helium_plasma 750000')
+    .outputFluids('gtceu:iron_plasma 550000')
+    .outputFluids('gtceu:nickel_plasma 240000')
+    .outputFluids('gtceu:nitrogen_plasma 7500000')
+    .outputFluids('gtceu:oxygen_plasma 4500000')
+    .outputFluids('gtceu:ultralight_neutronium_plasma 55000')
+    .duration(72000)
+    .EUt(GTValues.VA[GTValues.ZPM]);
 })

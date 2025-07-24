@@ -1,5 +1,6 @@
 // Add missing item tags
 ServerEvents.tags('item', event => {
+	console.log('[22] - [1] - TAG-WATCHER')
 	let itemTags = ['minecraft:logs', 'minecraft:logs_that_burn']
 	let items = ['vintagedelight:magic_vine', 'vintagedelight:stripped_magic_vine', 'vintagedelight:magic_vine_block', 'vintagedelight:stripped_magic_vine_block']
 	itemTags.forEach((tag) => {
@@ -13,19 +14,6 @@ ServerEvents.tags('item', event => {
     event.add('minecraft:slabs', [`vintagedelight:vine_tile_slab`])
     event.add('minecraft:wooden_slabs', [`vintagedelight:vine_tile_slab`])
 })
-
-
-
-// Apparently no longer needed
-// ServerEvents.tags('block', event => {
-// 	let blockTags = ['ars_nouveau:harvest/fellable', 'minecraft:logs', 'minecraft:logs_that_burn']
-// 	let blocks = ['vintagedelight:magic_vine', 'vintagedelight:stripped_magic_vine', 'vintagedelight:magic_vine_block', 'vintagedelight:stripped_magic_vine_block']
-// 	blockTags.forEach((tag) => {
-// 		blocks.forEach((block) => {
-// 			event.add(tag, block)
-// 		})
-// 	})
-// })
 
 ServerEvents.recipes(event => {
 	if (Item.exists(`vintagedelight:magic_vine`)) {

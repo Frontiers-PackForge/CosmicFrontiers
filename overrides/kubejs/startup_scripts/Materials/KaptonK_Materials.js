@@ -13,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xF0B272)
     event.create('poly_amic_acid')
         .liquid()
-        .formula('C22H14N2o7')
+        .formula('C22H14N2O7')
         .color(0xF0C772)
     event.create('pyromellitic_dianhydride')
         .dust()

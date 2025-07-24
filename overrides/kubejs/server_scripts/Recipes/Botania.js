@@ -1,12 +1,11 @@
-//Have to remove the wood tag from livingwood if i want to add specific gt recipes :(
-ServerEvents.tags('item', event => {
-    //event.remove('minecraft:logs', 'botania:livingwood_log')
-    //event.remove('minecraft:planks', 'botania:livingwood_planks')          
-})
-
 //Adding recipes for registered materials
 ServerEvents.recipes(event => {
     //Livingrock
+    event.recipes.gtceu.alloy_smelter('t2_gia_ingot_smelting')
+        .itemInputs(['gtceu:naquadah_ingot', '16x botania:life_essence'])
+        .itemOutputs('botania:gaia_ingot')
+        .EUt(GTValues.VA[GTValues.LuV])
+        .duration(184)
     event.recipes.gtceu.cutter('gtceu:cutter/cut_livingrock_block_to_plate_water')
         .itemInputs('botania:livingrock')
         .inputFluids('minecraft:water 17')
@@ -58,6 +57,20 @@ ServerEvents.recipes(event => {
         .itemOutputs('8x botania:pixie_dust')
         .EUt(GTValues.VA[GTValues.EV])
         .duration(184)
+    event.recipes.gtceu.essence_reactor('binding_reagent')
+        .itemInputs(['16x bloodmagic:reagentwater', '16x bloodmagic:reagentlava', '16x bloodmagic:reagentair', '16x bloodmagic:reagentgrowth', '8x gtceu:berkelium_block', '4x gtceu:osmiridium_dust'])
+        .inputFluids('gtceu:potent_mana 32000')
+        .inputFluids('gtceu:source_oils 16000')
+        .itemOutputs('4x bloodmagic:reagentbinding')
+        .EUt(GTValues.VA[GTValues.IV])
+        .duration(184)
+    event.recipes.gtceu.electric_blast_furnace('virtue_pearl_replication')
+        .chancedFluidInput('cosmiccore:resonant_virtue_meld 288', 8500, 0)
+        .chancedInput('botania:life_essence', 1575, 0)
+        .chancedOutput('botania:life_essence', 7500, 0)
+        .blastFurnaceTemp(5400)
+        .duration(925)
+        .EUt(GTValues.VA[GTValues.IV]);
     event.recipes.gtceu.mana_fluidizer('mana_glass_fluidizer')
         .itemInputs('minecraft:glass')
         .inputFluids('gtceu:potent_mana 15')
@@ -77,7 +90,7 @@ ServerEvents.recipes(event => {
     //     .itemInputs(['gtceu:livingrock_plate', '2x #minecraft:fishes', '4x minecraft:sugar_cane', '4x minecraft:bone_meal', '2x gtceu:manasteel_plate', '2x botania:mana_powder'])
     //     .inputFluids('gtceu:potent_mana 4000')
     //     .circuit(2)
-    //     .soulInput('50000')
+    //     //.soulInput('50000')
     //     .itemOutputs('16x botania:rune_water')
     //     .EUt(GTValues.VA[GTValues.EV])
     //     .duration(300)
@@ -182,18 +195,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('4x gtceu:livingwood_plate')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(120)
-    // //ManaSteel Rods IDK WHY GTCEU DOESNT AUTOGEN THEM SHRUG?
-    event.recipes.gtceu.lathe('manasteel_ingot_to_rod')
-        .itemInputs('botania:manasteel_ingot')
-        .itemOutputs('2x gtceu:manasteel_rod')
-        .EUt(GTValues.VA[GTValues.LV])
-        .duration(12)
-    event.recipes.gtceu.extruder('manasteel_ingot_to_rod')
-        .itemInputs('botania:manasteel_ingot')
-        .notConsumable('gtceu:rod_extruder_mold')
-        .itemOutputs('2x gtceu:manasteel_rod')
-        .EUt(GTValues.VA[GTValues.LV])
-        .duration(12)
     // //Terrasteel Rods
     // event.recipes.gtceu.extruder('terrasteel_ingot_to_rod')
     //     .itemInputs('botania:terrasteel_ingot')
@@ -320,14 +321,13 @@ ServerEvents.recipes(event => {
     //Runic Altar
     event.remove({ output: 'botania:runic_altar' })
     event.shaped('botania:runic_altar', [
-        'PMP',
-        'QDQ',
+        'PQP',
+        'DLD',
         'LCL'
     ], {
         C: '#gtceu:circuits/mv',
         P: 'gtceu:livingrock_plate',
         D: 'botania:mana_diamond',
-        M: 'gtceu:manasteel_plate',
         L: 'botania:livingrock',
         Q: 'botania:blacker_lotus'
     })
@@ -1741,6 +1741,7 @@ ServerEvents.recipes(event => {
     event.recipes.botania.mana_infusion('botania:blacker_lotus', 'minecraft:wither_rose', 100000)
 
     event.remove({ id: 'botania:mana_infusion/mana_diamond' })
+    event.remove({ id: 'botania:mana_infusion/mana_diamond_block' })
     event.recipes.botania.mana_infusion('botania:mana_diamond', 'gtceu:flawless_diamond_gem', 10000)
 
     event.remove({ output: 'botania:mana_powder' })

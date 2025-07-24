@@ -7,6 +7,14 @@
 	group: "533DAA16C8D9D30C"
 	icon: "gtceu:titanium_ingot"
 	id: "124E2C5B9FAD4967"
+	images: [{
+		height: 3.5d
+		image: "frontiers:textures/questimages/miscicons/wingedborder.png"
+		rotation: 0.0d
+		width: 3.5d
+		x: 5.571428571428569d
+		y: 0.023809523809518396d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -608,8 +616,7 @@
 				"&5EV&r will contain more &5elaborate extraction lines&r and &ematerial production&r than HV."
 				"Be prepared to &lexpand your power grid&r, &lbolster resource production&r, and &lexpand to new  worlds&r."
 			]
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
+			hide_until_deps_visible: false
 			id: "7C8367D922103E19"
 			min_width: 350
 			rewards: [
@@ -633,8 +640,8 @@
 					type: "item"
 				}
 			]
-			shape: "octagon"
-			size: 2.0d
+			shape: "hexagon"
+			size: 1.75d
 			subtitle: "To EV and Beyond!"
 			tasks: [{
 				id: "7F5E3BB7347B9FBF"
@@ -1808,7 +1815,7 @@
 			]
 			title: "The Song"
 			x: 6.5d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7C8367D922103E19"]
@@ -1833,7 +1840,7 @@
 				type: "checkmark"
 			}]
 			x: 6.5d
-			y: -1.5d
+			y: -2.0d
 		}
 	]
 	title: "Gloomper Chemistry [HV]"

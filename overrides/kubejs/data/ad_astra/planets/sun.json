@@ -1,0 +1,10 @@
+{
+    "dimension": "frontiers:sun",
+    "gravity": 20,
+    "orbit": "frontiers:sun_orbit",
+    "oxygen": false,
+    "solar_power": 9999,
+    "solar_system": "ad_astra:solar_system",
+    "temperature": 167,
+    "tier": 3
+  }
