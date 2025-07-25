@@ -288,4 +288,25 @@ ItemEvents.tooltip(event => {
       text.add(4, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
     }
   })
+
+
+
+  event.addAdvanced('cosmiccore:void_miner', (item, advanced, text) => {
+    text.add(1, Text.of('Multiblock Classification: Bedrock Dredging Drill').aqua().bold())
+    text.add(2, Text.of('Ores Galore!').white().bold())
+    text.add(3, Text.of('Rips apart bedrock for various ore and mineral deposits.'))
+    if (event.isShift()) {
+      text.add(4, Text.of('------------------------------------------------------------').aqua())
+      text.add(5, [Text.of('ALL EMI RECIPES USE').white(), Text.of(' XOR RECIPE LOGIC').aqua()])
+      text.add(6, [Text.of('This means you will get 1 ore type, from the listed ore page per cycle.').gray()])
+      text.add(7, [Text.of('Requires').white(), Text.of(' Pyroflux & Drilling Fluid').gold(), Text.of(' and be placed near the void to run.').white()])
+      text.add(8, Text.of('------------------------------------------------------------').aqua())
+      text.add(12, Text.of('Overclock Type : IMPERFECT SUBTICK'))
+    } else {
+      text.add(4, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+  })
+
+
+
 })

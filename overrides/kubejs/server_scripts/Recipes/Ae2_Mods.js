@@ -763,7 +763,7 @@ ServerEvents.recipes(event => {
     'tungsten_steel',
     'rhodium_plated_palladium',
     'naquadah_alloy',
-    'darmstadtium',
+    'tritanium',
     'neutronium'
   ]
   let componentTier = [

@@ -315,7 +315,7 @@ ServerEvents.recipes(event => {
     //MAINFRAME
     event.remove({ id: 'gtceu:assembly_line/crystal_mainframe_uv' })
     event.recipes.gtceu.assembly_line('crystal_mainframe_new')
-        .itemInputs(['2x cosmiccore:trinavine_frame', '6x gtceu:crystal_processor_computer', '16x cosmiccore:aram_chip', '4x gtceu:hpic_chip', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '8x cosmiccore:crystalline_inductor', '16x cosmiccore:crystalline_capacitor', '8x cosmiccore:crystalline_diode'])
+        .itemInputs(['2x cosmiccore:trinavine_frame', '6x gtceu:crystal_processor_computer', '16x cosmiccore:aram_chip', '4x gtceu:hpic_chip', '64x cosmiccore:fine_naquadric_superalloy_wire', '64x cosmiccore:fine_naquadric_superalloy_wire', '8x gtceu:advanced_smd_inductor', '16x gtceu:advanced_smd_capacitor', '8x gtceu:advanced_smd_diode'])
         .itemOutputs('gtceu:crystal_processor_mainframe')
         .inputFluids(
             Fluid.of('gtceu:high_grade_solder', 1152),
