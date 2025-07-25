@@ -1090,8 +1090,8 @@
 			}]
 			subtitle: "1:2 Wires in Steam"
 			tasks: [{
-				id: "4F42DEDDEAF3FEFE"
-				item: "cosmiccore:hp_steam_bender"
+				id: "4FD7919A9537E117"
+				item: "cosmiccore:hp_steam_wiremill"
 				type: "item"
 			}]
 			x: -4.5d

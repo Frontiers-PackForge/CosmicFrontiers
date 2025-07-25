@@ -2085,10 +2085,13 @@
 		{
 			dependencies: ["3F5E81046FD4215B"]
 			description: [
-				"Ahead is ZPM, a currently unfinished part of progression."
+				""
+				"&7&oYour soul twists in agony, a vision unknown terrifies you.&r"
 				""
 				""
-				"It is heavily recommended you wait until a proper mid-progress patch is made for ZPM; if you wish to advance foward and accept the risks, force-complete this quest."
+				"&lAhead is ZPM, a currently unfinished part of progression."
+				""
+				"It is heavily recommended you wait until a proper mid-progress patch is made for ZPM; if you wish to advance foward and accept the risks, force-complete this quest.&r"
 			]
 			icon: "createdeco:decal_up"
 			id: "6DA881815E8DE99D"

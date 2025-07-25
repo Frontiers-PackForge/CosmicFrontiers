@@ -640,8 +640,8 @@
 			size: 1.75d
 			subtitle: "&fPower the world!"
 			tasks: [{
-				id: "0D4E388F306CC922"
-				item: "gtceu:power_substation"
+				id: "2D31288069EBC19E"
+				item: "cosmiccore:dimensional_energy_capacitor"
 				type: "item"
 			}]
 			title: "&bMass Energy Distribution"
