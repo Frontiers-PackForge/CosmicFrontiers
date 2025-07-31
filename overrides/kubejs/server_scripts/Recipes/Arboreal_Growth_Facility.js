@@ -281,7 +281,7 @@ ServerEvents.recipes(event => {
 
     let FungiUG = [
         'undergarden:veil',,
-        'undergarden:ink',
+
         'undergarden:indigo',
     ]
 
@@ -289,7 +289,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.arboreal_growth_facility(`${tree}_growth_solution`)
             .notConsumable(`1x ${tree}_mushroom`)
             .notConsumable(`1x undergarden:deepsoil`)
-            .inputFluids(['gtceu:nutrient_solution 25', 'gtceu:undergarden_smog 100'])
+            .inputFluids(['gtceu:nutrient_solution 25', 'gtceu:sulfur_trioxide 100'])
             .itemOutputs(`24x ${tree}_mushroom_stem`, `6x ${tree}_mushroom_cap`)
             .chancedOutput(`12x ${tree}_mushroom_stem`, 5000, 0)
             .chancedOutput(`3x ${tree}_mushroom_cap`, 5000, 0)
@@ -297,4 +297,16 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(GTValues.VA[GTValues.HV] / 2)
     })
+
+    event.recipes.gtceu.arboreal_growth_facility(`ink_growth_solution`)
+            .notConsumable('undergarden:ink_mushroom')
+            .notConsumable(`1x undergarden:deepsoil`)
+            .inputFluids(['gtceu:nutrient_solution 25', 'gtceu:sulfur_trioxide 100'])
+            .itemOutputs(`8x undergarden:ink_mushroom_stem`, `6x undergarden:ink_mushroom_cap`)
+            .chancedOutput(`12x undergarden:ink_mushroom_stem`, 5000, 0)
+            .chancedOutput(`3x undergarden:ink_mushroom_cap`, 5000, 0)
+            .chancedOutput(`64x undergarden:ink_mushroom`, 9500, 0)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.HV] / 2)
+
 })

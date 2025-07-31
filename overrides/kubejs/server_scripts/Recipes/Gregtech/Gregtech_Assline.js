@@ -565,6 +565,21 @@ ServerEvents.recipes(event => {
     .duration(1750)
     .EUt(GTValues.VA[GTValues.ZPM])
 
+  event.recipes.gtceu.assembly_line('frontiers:prisma_foundry')
+    .itemInputs(['4x gtceu:large_maceration_tower', '4x gtceu:large_chemical_bath', '4x gtceu:leaching_plant', '4x gtceu:large_centrifuge', '4x gtceu:large_distillery', '8x gtceu:crystal_processor_mainframe', '64x gtceu:uranium_rhodium_dinaquadide_quadruple_wire', '64x gtceu:uranium_rhodium_dinaquadide_quadruple_wire', '16x gtceu:tritanium_modular_shelling', '16x gtceu:heavy_tritanium_beam', '4x gtceu:ultradense_tritanium_plate', '64x gtceu:tungsten_grinding_head', '64x gtceu:tungsten_grinding_head', '64x gtceu:tungsten_grinding_head', '64x gtceu:tungsten_grinding_head'])
+    .itemOutputs('cosmiccore:prismatic_ore_foundry')
+    .inputFluids(
+      'gtceu:trinanylon_6_6 1296',
+      'gtceu:high_grade_solder 1152',
+      'cosmiccore:triphenylphosphine 2304',
+    )
+    .stationResearch(b => b
+      .researchStack('gtceu:large_maceration_tower')
+      .CWUt(240)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(17500)
+    .EUt(GTValues.VA[GTValues.ZPM])
+
   event.recipes.gtceu.assembly_line('frontiers:neutronium_casing')
     .itemInputs(['gtceu:neutronium_frame', '12x gtceu:long_tritanium_rod', '8x gtceu:double_neutronium_plate', '8x gtceu:neutronium_rod', '8x gtceu:neutronium_bolt'])
     .itemOutputs('cosmiccore:tritanium_lined_heavy_neutronium_casing')

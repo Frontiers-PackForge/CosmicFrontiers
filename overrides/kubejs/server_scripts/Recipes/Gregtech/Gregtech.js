@@ -83,7 +83,11 @@ ServerEvents.recipes(event => {
   event.shapeless('cosmiccore:dimensional_energy_capacitor', [
     'gtceu:power_substation'
   ])
+  event.shapeless('cosmiccore:ultrasonic_homogenizer', [
+      'cosmiccore:long_neutronite_rod',
+      'gtceu:zpm_electric_piston'
 
+    ])
 
   event.replaceInput(
     { id: 'gtceu:shaped/bronze_bricks_hull' },
@@ -167,6 +171,12 @@ ServerEvents.recipes(event => {
     'cosmiccore:prismatic_tungstensteel_quadruple_wire'
   )
 
+
+  event.replaceInput({ id: 'gtceu:circuit_assembler/data_module_soldering_alloy' },
+    'gtceu:wetware_printed_circuit_board',
+    'gtceu:multilayer_fiber_reinforced_printed_circuit_board'
+  )
+
   //Beacon Replacement
   event.remove({ id: 'tconstruct:common/glass/vanilla/beacon' })
   event.recipes.gtceu.mana_engraver('frontiers:bad_beacon_recipe')
@@ -187,7 +197,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:fluid_solidifier/petri_dish_pbi' })
   event.remove({ id: 'gtceu:fluid_solidifier/petri_dish_ptfe' })
   event.recipes.gtceu.fluid_solidifier('frontiers:petri_dish')
-    .notConsumable('gtceu:ball_mold')
+    .notConsumable('gtceu:ball_casting_mold')
     .inputFluids('gtceu:trinanylon_6_6 288')
     .itemOutputs('gtceu:petri_dish')
     .duration(90)
@@ -361,7 +371,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LuV]);
   //Starmetal Casings
   event.recipes.gtceu.assembler('gtceu:starmetal_casing_assem')
-    .itemInputs(['gtceu:star_metal_frame', '6x gtceu:star_metal_plate'])
+    .itemInputs(['cosmiccore:star_metal_frame', '6x cosmiccore:star_metal_plate'])
     .itemOutputs('gtceu:reflective_starmetal_casing')
     .circuit(6)
     .duration(50)
@@ -371,8 +381,8 @@ ServerEvents.recipes(event => {
     'AFA',
     'AWA'
   ], {
-    A: 'gtceu:star_metal_plate',
-    F: 'gtceu:star_metal_frame',
+    A: 'cosmiccore:star_metal_plate',
+    F: 'cosmiccore:star_metal_frame',
     W: '#forge:tools/wrenches',
     H: '#forge:tools/hammers'
   })
@@ -494,7 +504,7 @@ ServerEvents.recipes(event => {
 
 
   event.recipes.gtceu.assembler('frontiers:reinforced_naquadria_casing')
-    .itemInputs(['cosmiccore:naquadric_superalloy_frame', '6x gtceu:naquadria_plate', '2x gtceu:uranium_rhodium_dinaquadide_plate'])
+    .itemInputs(['cosmiccore:naquadric_superalloy_modular_shelling', '4x gtceu:heavy_naquadria_beam', '2x gtceu:heavy_naquadah_alloy_beam'])
     .inputFluids('gtceu:naquadria 288')
     .itemOutputs('cosmiccore:reinforced_naquadria_casing')
     .circuit(6)
@@ -738,7 +748,7 @@ ServerEvents.recipes(event => {
     .itemInputs(['kubejs:embraced_luminite_ingot', '4x gtceu:nether_star_dust'])
     .inputFluids('gtceu:pyroflux 100')
     .inputFluids('gtceu:starlight 300')
-    .itemOutputs('gtceu:star_metal_ingot')
+    .itemOutputs('cosmiccore:star_metal_ingot')
     .dimension('frontiers:sun_orbit')
     .blastFurnaceTemp(7000)
     .duration(200)

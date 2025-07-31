@@ -1,23 +1,23 @@
 GTCEuStartupEvents.registry('gtceu:material', event => {
 
-    event.create('star_metal')
-        .color(0x263040).secondaryColor(0x0e051a)
-        .ingot()
-        .iconSet(GTMaterialIconSet.DULL)
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_FRAME,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_RING,
-            GTMaterialFlags.GENERATE_GEAR,
-            GTMaterialFlags.GENERATE_SMALL_GEAR,
-            GTMaterialFlags.GENERATE_SPRING,
-            GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.GENERATE_FRAME
-        )
+    // event.create('star_metal')
+    //     .color(0x263040).secondaryColor(0x0e051a)
+    //     .ingot()
+    //     .iconSet(GTMaterialIconSet.DULL)
+    //     .flags(
+    //         GTMaterialFlags.GENERATE_PLATE,
+    //         GTMaterialFlags.GENERATE_ROD,
+    //         GTMaterialFlags.GENERATE_FRAME,
+    //         GTMaterialFlags.GENERATE_BOLT_SCREW,
+    //         GTMaterialFlags.GENERATE_RING,
+    //         GTMaterialFlags.GENERATE_GEAR,
+    //         GTMaterialFlags.GENERATE_SMALL_GEAR,
+    //         GTMaterialFlags.GENERATE_SPRING,
+    //         GTMaterialFlags.GENERATE_SPRING_SMALL,
+    //         GTMaterialFlags.GENERATE_FOIL,
+    //         GTMaterialFlags.NO_SMELTING,
+    //         GTMaterialFlags.GENERATE_FRAME
+    //     )
     event.create('chromaplast')
         .color(0x55f609)
         .ingot()

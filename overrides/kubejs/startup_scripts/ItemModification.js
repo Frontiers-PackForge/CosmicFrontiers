@@ -133,5 +133,28 @@ ItemEvents.modification(event => {
         item.addAttribute("malum:soul_ward_capacity", 'aa3c7f47-6df3-47ac-a349-a98b457f04e4', 'ward-capacity7', 14.5, "addition")
         item.addAttribute("malum:soul_ward_recovery_rate", '7bb55156-4d51-424a-b9a1-e3bdf565bfff', 'recovery-rate7', 3.0, "addition")
       })
-  
+      //Sanguines
+
+      //Quarktechs
+      event.modify('cosmiccore:sanguine_warptech_helmet', item => {
+        item.armorProtection = 10.0
+        item.addAttribute("malum:soul_ward_capacity", 'e9cb771d-aa94-46ec-a13e-4863d77799c8', 'ward-capacity7', 15.5, "addition")
+        item.addAttribute("malum:soul_ward_recovery_rate", '9d968e1c-fd92-42a5-9495-48a02a2bb7c5', 'recovery-rate7', 3.0, "addition")
+      })
+      event.modify('cosmiccore:sanguine_warptech_chestplate', item => {
+        item.armorProtection = 20.0
+        item.addAttribute("malum:soul_ward_capacity", '08969395-58d5-4dd0-8b80-b22814c0a355', 'ward-capacity7', 30.5, "addition")
+        item.addAttribute("malum:soul_ward_recovery_rate", '77053c89-93a5-49b8-90c9-7fa0b7506ee2', 'recovery-rate7', 3.0, "addition")
+      })
+      event.modify('cosmiccore:sanguine_warptech_leggings', item => {
+        item.armorProtection = 20.0
+        item.addAttribute("malum:soul_ward_capacity", '2b0474d8-e408-497b-baa1-5a1fcc17a83f', 'ward-capacity7', 15.5, "addition")
+        item.addAttribute("malum:soul_ward_recovery_rate", 'e3241c10-5758-4404-8e37-54224998382b', 'recovery-rate7', 3.0, "addition")
+      })
+      event.modify('cosmiccore:sanguine_warptech_boots', item => {
+        item.armorProtection = 10.0
+        item.addAttribute("malum:soul_ward_capacity", '40f284b0-4b8a-4629-9736-34c66f653e3e', 'ward-capacity7', 15.5, "addition")
+        item.addAttribute("malum:soul_ward_recovery_rate", '40f284b0-4b8a-4629-9736-34c66f653e3e', 'recovery-rate7', 3.0, "addition")
+      })
+
     })

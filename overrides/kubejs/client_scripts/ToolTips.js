@@ -248,6 +248,9 @@ ItemEvents.tooltip(event => {
     text.add(1, Text.of('Energy Consumption was set to 0!').green())
     text.add(2, Text.of('Will run without power!').green())
   })
+    event.addAdvanced('minecraft:nether_star', (item, advanced, text) => {
+    text.add(1, Text.of('Netherstars no longer drop from withers.').red())
+  })
 })
 
 ItemEvents.tooltip(event => {

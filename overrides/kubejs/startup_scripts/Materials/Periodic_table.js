@@ -27,6 +27,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     //Netherstar lmfao
     // GTMaterials.NetherStar.setProperty(PropertyKey.GEM, new $GemProperty());
+    //Plasmite Plasmas
+    GTMaterials.Gold.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.PLASMA, new GTFluidBuilder());
+    GTMaterials.Europium.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.PLASMA, new GTFluidBuilder());
+    GTMaterials.Copper.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.PLASMA, new GTFluidBuilder());
+    GTMaterials.Aluminium.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.PLASMA, new GTFluidBuilder());
+    GTMaterials.Tritanium.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.PLASMA, new GTFluidBuilder());
+
     //Naquadah
     GTMaterials.Naquadah.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.MOLTEN, new GTFluidBuilder());
     GTMaterials.NaquadahEnriched.getProperty(PropertyKey.FLUID).storage.enqueueRegistration(GTFluidStorageKeys.MOLTEN, new GTFluidBuilder());

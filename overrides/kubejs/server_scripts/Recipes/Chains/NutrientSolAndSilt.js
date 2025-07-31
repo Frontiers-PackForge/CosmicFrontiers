@@ -50,10 +50,17 @@ ServerEvents.recipes(event => {
         .itemOutputs('32x undergarden:blood_mushroom_stem')
         .itemOutputs('24x undergarden:blood_globule')
         .itemOutputs('16x undergarden:engorged_blood_mushroom_cap')
-        .dimension('undergarden:undergarden')
         .duration(600)
         .EUt(GTValues.VA[GTValues.IV]);
 
+
+
+    event.recipes.gtceu.flora_nurturer('glitter_kelp')
+        .notConsumable('undergarden:glitterkelp')
+        .inputFluids('gtceu:nutrient_solution 25')
+        .itemOutputs('64x undergarden:glitterkelp')
+        .duration(240)
+        .EUt(GTValues.VA[GTValues.IV]);
 
     event.recipes.gtceu.fluid_heater('lake_to_rich_lake')
         .inputFluids('gtceu:lake_water 1000')
@@ -61,6 +68,8 @@ ServerEvents.recipes(event => {
         .dimension('undergarden:undergarden')
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV]);
+
+
 
     event.recipes.gtceu.brewery('rich_lake_to_plant_juice_one')
         .inputFluids('gtceu:lake_water 8000')
