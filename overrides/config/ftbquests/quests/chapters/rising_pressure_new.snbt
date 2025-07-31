@@ -112,7 +112,9 @@
 		{
 			dependencies: ["5AB046A0E1BFBE1E"]
 			description: [
-				"You can get Nautilus Shells from Drowned which hold them, fishing, and looting some types of chests."
+				"You can get Music Discs by making a skeleton kill a creeper or looting most kinds of chests."
+				""
+				"Waffles are better, tho."
 				""
 				"&7NOTICE : You used to be able to collect these from monsters, that has been disabled. you must now craft them yourself.&r"
 			]
@@ -124,7 +126,7 @@
 				item: "cosmiccore:shard_of_perpetuity"
 				type: "item"
 			}]
-			subtitle: "Nautulis Shell"
+			subtitle: "Music Disc"
 			tasks: [{
 				id: "68B250C4CCD1FE52"
 				item: "nether_remastered:seal_piece_2"
