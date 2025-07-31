@@ -191,7 +191,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:red_mud_slurry 1000')
         .chancedOutput('3x gtceu:rutile_dust', 8500, 300)
         .chancedOutput('2x gtceu:vanadium_dust', 500, 400)
-        .chancedOutput('5x gtceu:banded_iron_dust', 3000, 500)
+        .chancedOutput('5x gtceu:hematite_dust', 3000, 500)
         .chancedOutput('2x gtceu:quicklime_dust', 700, 250)
         .chancedOutput('5x gtceu:alumina_dust', 1500, 400)
         .outputFluids('minecraft:water 2000')
