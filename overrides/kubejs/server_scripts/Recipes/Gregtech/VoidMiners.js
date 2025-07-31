@@ -168,6 +168,7 @@ ServerEvents.recipes(event => {
         .itemOutputsRanged('gtceu:raw_uraninite', 1, 3)
         .itemOutputsRanged('gtceu:raw_electrotine', 1, 3)
         .itemOutputsRanged('gtceu:raw_cobaltite', 1, 3)
+        .itemOutputsRanged('gtceu:raw_uranium', 1, 3)
         .duration(80)
         .EUt(GTValues.VA[GTValues.ZPM], 4);
 
@@ -194,6 +195,7 @@ ServerEvents.recipes(event => {
         .itemOutputsRanged('gtceu:raw_hadalite', 1, 3)
         .itemOutputsRanged('gtceu:raw_scheelite', 1, 3)
         .itemOutputsRanged('gtceu:raw_calcite', 1, 3)
+        .itemOutputsRanged('gtceu:raw_uranium', 1, 3)
         .duration(80)
         .EUt(GTValues.VA[GTValues.ZPM], 4);
 

@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.biovat('frontiers:myofibroblast_to_hemocytoblast')
         .itemInputs('cosmiccore:sculk_myofibroblast')
-        .inputFluids('gtceu:fibroblast_growth_factor 1000', 'gtceu:tau_oil 800')
+        .inputFluids('gtceu:fibroblast_growth_factor 1000', 'gtceu:tau_oil 200')
         .itemOutputs('cosmiccore:resipiratory_sculk_hemocytoblast')
         .duration(440)
         //.cleanroom(CleanroomType.STERILE_CLEANROOM)

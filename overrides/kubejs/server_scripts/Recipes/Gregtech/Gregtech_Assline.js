@@ -651,7 +651,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.ZPM])
 
   event.recipes.gtceu.assembly_line('frontiers:neuro_processing_assembly')
-    .itemInputs(['64x cosmiccore:fine_neutronite_wire', '8x gtceu:nylon_6_6_foil', '8x cosmiccore:crystalline_transistor', '8x cosmiccore:crystalline_diode', '8x cosmiccore:crystalline_resistor', 'cosmiccore:wired_petri_dish', 'gtceu:wetware_printed_circuit_board', 'gtceu:stem_cells', 'cosmiccore:computation_support_unit'])
+    .itemInputs(['64x cosmiccore:fine_neutronite_wire', '8x gtceu:nylon_6_6_foil', '8x gtceu:advanced_smd_transistor', '8x gtceu:advanced_smd_diode', '8x gtceu:advanced_smd_resistor', 'cosmiccore:wired_petri_dish', 'gtceu:wetware_printed_circuit_board', 'gtceu:stem_cells', 'cosmiccore:computation_support_unit'])
     .itemOutputs('4x cosmiccore:neuro_processing_assembly')
     .inputFluids(
       'gtceu:polybenzimidazole 1152',

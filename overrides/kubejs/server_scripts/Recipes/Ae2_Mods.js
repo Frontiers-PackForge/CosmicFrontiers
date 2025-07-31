@@ -995,12 +995,12 @@ ServerEvents.recipes(event => {
 
   //merequesters
   event.recipes.gtceu.assembly_line('merequester_block')
-    .itemInputs(['gtceu:uv_hermetic_casing', '16x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire', '4x gtceu:wetware_processor_mainframe', '4x ae2:cell_component_256k', 'ae2:level_emitter', 'ae2:energy_level_emitter', 'expatternprovider:threshold_level_emitter', 'ae2:crafting_card'])
+    .itemInputs(['gtceu:zpm_hermetic_casing', '16x gtceu:uranium_rhodium_dinaquadide_quadruple_wire', '1x gtceu:wetware_processor_mainframe', '4x ae2:cell_component_256k', 'ae2:level_emitter', 'ae2:energy_level_emitter', 'expatternprovider:threshold_level_emitter', 'ae2:crafting_card'])
     .itemOutputs('merequester:requester')
     .inputFluids(
-      Fluid.of('gtceu:veltharic_slough', 15000),
-      Fluid.of('gtceu:abyss_grease', 9216),
-      Fluid.of('gtceu:void_tar', 1440),
+      Fluid.of('cosmiccore:trinavine', 2304),
+      Fluid.of('gtceu:platinum', 9216),
+      Fluid.of('gtceu:europium', 1440),
     )
     .stationResearch(b => b
       .researchStack('megacells:cell_component_1m')

@@ -117,6 +117,13 @@ ServerEvents.recipes(event => {
     .duration(240)
     .EUt(GTValues.VA[GTValues.IV]);
 
+  event.recipes.gtceu.mixer('synth_blood')
+    .itemInputs(['bloodmagic:weak_tau', 'bloodmagic:weak_tau', 'bloodmagic:weak_tau', 'bloodmagic:weak_tau'])
+    .inputFluids('gtceu:tau_oil 125')
+    .outputFluids('gtceu:synthetic_blood 500')
+    .duration(240)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
   event.recipes.gtceu.hellfire_foundry('luv_soul_input')
     .itemInputs(['gtceu:luv_machine_hull', '16x kubejs:resplendent_sylvan_nanolattice', '16x bloodmagic:reinforcedslate', 'gtceu:stainless_steel_fluid_cell', 'gtceu:luv_sensor'])
     .inputFluids('gtceu:grading_fluid_1 500')
@@ -184,7 +191,7 @@ ServerEvents.recipes(event => {
     .duration(60)
     .EUt(GTValues.VA[GTValues.LuV]);
 
-    // Wrapped Demonic Slate
+  // Wrapped Demonic Slate
   event.recipes.gtceu.hellfire_foundry('t5_slate_prep')
     .itemInputs('bloodmagic:demonslate', '64x gtceu:polybenzimidazole_foil')
     .inputFluids('gtceu:grading_fluid_4 80')

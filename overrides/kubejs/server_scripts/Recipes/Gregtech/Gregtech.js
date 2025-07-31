@@ -74,6 +74,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_neutronite_ingot' })
   event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_terrasteel_dust_to_block' })
   event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_rhenium_dust_to_block' })
+  event.remove({ id: 'terralith:piston_alt' })
 
   event.replaceOutput({ id: 'gtceu:shaped/extreme_combustion_engine' }, 'gtceu:extreme_combustion_engine', 'gtceu:extreme_combustion_engine_cc')
   event.replaceOutput({ id: 'gtceu:shaped/large_combustion_engine' }, 'gtceu:large_combustion_engine', 'gtceu:large_combustion_engine_cc')
@@ -84,10 +85,10 @@ ServerEvents.recipes(event => {
     'gtceu:power_substation'
   ])
   event.shapeless('cosmiccore:ultrasonic_homogenizer', [
-      'cosmiccore:long_neutronite_rod',
-      'gtceu:zpm_electric_piston'
+    'cosmiccore:long_neutronite_rod',
+    'gtceu:zpm_electric_piston'
 
-    ])
+  ])
 
   event.replaceInput(
     { id: 'gtceu:shaped/bronze_bricks_hull' },
@@ -194,8 +195,40 @@ ServerEvents.recipes(event => {
     .circuit(1)
     .EUt(GTValues.VA[GTValues.EV]);
 
+
+    event.recipes.gtceu.plasmite_forge('frontiers:copper_forging')
+    .itemInputs('gtceu:graphene_dust')
+    .inputFluids('gtceu:copper 2304')
+    .itemOutputs('gtceu:copper_plasmites')
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
+    event.recipes.gtceu.plasmite_forge('frontiers:europium_forging')
+    .itemInputs('gtceu:graphene_dust')
+    .inputFluids('gtceu:europium 2304')
+    .itemOutputs('gtceu:europium_plasmites')
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
+
   event.remove({ id: 'gtceu:fluid_solidifier/petri_dish_pbi' })
   event.remove({ id: 'gtceu:fluid_solidifier/petri_dish_ptfe' })
+
+  event.recipes.gtceu.chemical_bath('frontiers:stem_cells')
+    .itemInputs('cosmiccore:saturated_sculk_hemocytoblast')
+    .inputFluids('gtceu:sterilized_growth_medium 250')
+    .itemOutputs('gtceu:stem_cells')
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
+  event.recipes.gtceu.assembler('frontiers:petri_dish_electric')
+    .itemInputs('gtceu:petri_dish')
+    .itemInputs('8x gtceu:fine_soul_stained_steel_wire')
+    .inputFluids('gtceu:sterilized_growth_medium 250')
+    .itemOutputs('cosmiccore:wired_petri_dish')
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
   event.recipes.gtceu.fluid_solidifier('frontiers:petri_dish')
     .notConsumable('gtceu:ball_casting_mold')
     .inputFluids('gtceu:trinanylon_6_6 288')
@@ -761,7 +794,6 @@ ServerEvents.recipes(event => {
     .outputFluids('gtceu:starlight 5')
     .dimension('ad_astra:moon')
     .perTick(false)
-    .CWUt(64)
     .duration(600)
     .EUt(GTValues.V[GTValues.IV]);
 
