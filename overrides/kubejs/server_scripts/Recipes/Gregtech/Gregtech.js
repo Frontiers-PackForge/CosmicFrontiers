@@ -72,6 +72,9 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_blue_alloy_dust_to_block' })
   event.remove({ id: 'gtceu:shaped/bucket_of_concrete' })
   event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_neutronite_ingot' })
+  event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_terrasteel_dust_to_block' })
+  event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_rhenium_dust_to_block' })
+  event.remove({ id: 'terralith:piston_alt' })
 
   event.replaceOutput({ id: 'gtceu:shaped/extreme_combustion_engine' }, 'gtceu:extreme_combustion_engine', 'gtceu:extreme_combustion_engine_cc')
   event.replaceOutput({ id: 'gtceu:shaped/large_combustion_engine' }, 'gtceu:large_combustion_engine', 'gtceu:large_combustion_engine_cc')
@@ -81,7 +84,11 @@ ServerEvents.recipes(event => {
   event.shapeless('cosmiccore:dimensional_energy_capacitor', [
     'gtceu:power_substation'
   ])
+  event.shapeless('cosmiccore:ultrasonic_homogenizer', [
+    'cosmiccore:long_neutronite_rod',
+    'gtceu:zpm_electric_piston'
 
+  ])
 
   event.replaceInput(
     { id: 'gtceu:shaped/bronze_bricks_hull' },
@@ -165,6 +172,12 @@ ServerEvents.recipes(event => {
     'cosmiccore:prismatic_tungstensteel_quadruple_wire'
   )
 
+
+  event.replaceInput({ id: 'gtceu:circuit_assembler/data_module_soldering_alloy' },
+    'gtceu:wetware_printed_circuit_board',
+    'gtceu:multilayer_fiber_reinforced_printed_circuit_board'
+  )
+
   //Beacon Replacement
   event.remove({ id: 'tconstruct:common/glass/vanilla/beacon' })
   event.recipes.gtceu.mana_engraver('frontiers:bad_beacon_recipe')
@@ -182,10 +195,42 @@ ServerEvents.recipes(event => {
     .circuit(1)
     .EUt(GTValues.VA[GTValues.EV]);
 
+
+    event.recipes.gtceu.plasmite_forge('frontiers:copper_forging')
+    .itemInputs('gtceu:graphene_dust')
+    .inputFluids('gtceu:copper 2304')
+    .itemOutputs('gtceu:copper_plasmites')
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
+    event.recipes.gtceu.plasmite_forge('frontiers:europium_forging')
+    .itemInputs('gtceu:graphene_dust')
+    .inputFluids('gtceu:europium 2304')
+    .itemOutputs('gtceu:europium_plasmites')
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
+
   event.remove({ id: 'gtceu:fluid_solidifier/petri_dish_pbi' })
   event.remove({ id: 'gtceu:fluid_solidifier/petri_dish_ptfe' })
+
+  event.recipes.gtceu.chemical_bath('frontiers:stem_cells')
+    .itemInputs('cosmiccore:saturated_sculk_hemocytoblast')
+    .inputFluids('gtceu:sterilized_growth_medium 250')
+    .itemOutputs('gtceu:stem_cells')
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
+  event.recipes.gtceu.assembler('frontiers:petri_dish_electric')
+    .itemInputs('gtceu:petri_dish')
+    .itemInputs('8x gtceu:fine_soul_stained_steel_wire')
+    .inputFluids('gtceu:sterilized_growth_medium 250')
+    .itemOutputs('cosmiccore:wired_petri_dish')
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
   event.recipes.gtceu.fluid_solidifier('frontiers:petri_dish')
-    .notConsumable('gtceu:ball_mold')
+    .notConsumable('gtceu:ball_casting_mold')
     .inputFluids('gtceu:trinanylon_6_6 288')
     .itemOutputs('gtceu:petri_dish')
     .duration(90)
@@ -300,7 +345,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('4x cosmiccore:fireclay_ball')
     .duration(200)
     .EUt(2)
-  event.shaped('gtceu:industrial_primitive_blast_furnace', [
+  event.shaped('cosmiccore:industrial_primitive_blast_furnace', [
     'WSH',
     'SCS',
     'FSF'
@@ -320,7 +365,7 @@ ServerEvents.recipes(event => {
     'PWP'
   ], {
     P: 'gtceu:double_wrought_iron_plate',
-    R: 'cosmiccore:shard_of_perpetuity',
+    R: 'ulvcovm:ulv_robot_arm',
     C: 'gtceu:ulv_machine_hull',
     W: '#gtceu:circuits/ulv',
   })
@@ -332,7 +377,7 @@ ServerEvents.recipes(event => {
   //   P: 'gtceu:treated_wood_slab',
   //   S: '#forge:tools/saws'
   // })
-  event.shaped('gtceu:high_pressure_assembler', [
+  event.shaped('cosmiccore:high_pressure_assembler', [
     'VRV',
     'RCR',
     'BBB'
@@ -340,7 +385,7 @@ ServerEvents.recipes(event => {
     B: 'cosmiccore:steel_plated_bronze_casing',
     C: 'gtceu:steel_machine_casing',
     V: 'gtceu:vacuum_tube',
-    R: 'cosmiccore:shard_of_perpetuity'
+    R: 'ulvcovm:ulv_robot_arm'
   })
   event.shaped('2x cosmiccore:steel_plated_bronze_casing', [
     'PRP',
@@ -357,6 +402,23 @@ ServerEvents.recipes(event => {
     .itemOutputs('kubejs:prismatic_lens')
     .duration(1700)
     .EUt(GTValues.VA[GTValues.LuV]);
+  //Starmetal Casings
+  event.recipes.gtceu.assembler('gtceu:starmetal_casing_assem')
+    .itemInputs(['cosmiccore:star_metal_frame', '6x cosmiccore:star_metal_plate'])
+    .itemOutputs('gtceu:reflective_starmetal_casing')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('cosmiccore:reflective_starmetal_casing', [
+    'AHA',
+    'AFA',
+    'AWA'
+  ], {
+    A: 'cosmiccore:star_metal_plate',
+    F: 'cosmiccore:star_metal_frame',
+    W: '#forge:tools/wrenches',
+    H: '#forge:tools/hammers'
+  })
   //Ruridit Casings
   event.recipes.gtceu.assembler('gtceu:ruridit_casing_assem')
     .itemInputs(['gtceu:ruridit_frame', '6x gtceu:ruridit_plate'])
@@ -475,7 +537,7 @@ ServerEvents.recipes(event => {
 
 
   event.recipes.gtceu.assembler('frontiers:reinforced_naquadria_casing')
-    .itemInputs(['cosmiccore:naquadric_superalloy_frame', '6x gtceu:naquadria_plate', '2x cosmiccore:neutronite_plate'])
+    .itemInputs(['cosmiccore:naquadric_superalloy_modular_shelling', '4x gtceu:heavy_naquadria_beam', '2x gtceu:heavy_naquadah_alloy_beam'])
     .inputFluids('gtceu:naquadria 288')
     .itemOutputs('cosmiccore:reinforced_naquadria_casing')
     .circuit(6)
@@ -503,7 +565,7 @@ ServerEvents.recipes(event => {
     .outputFluids('gtceu:argon 25')
     .duration(200)
     .cleanroom(CleanroomType.CLEANROOM)
-    .EUt(GTValues.VA[GTValues.UV]);
+    .EUt(GTValues.V[GTValues.UV], 4);
 
   event.remove({ id: 'gtceu:shaped/mega_vacuum_freezer' })
   event.recipes.gtceu.assembler('frontiers:blast_chiller_new')
@@ -707,6 +769,107 @@ ServerEvents.recipes(event => {
     .blastFurnaceTemp(5900)
     .EUt(GTValues.VA[GTValues.IV]);
 
+  event.recipes.gtceu.assembler('embraced_luminite')
+    .itemInputs(['gtceu:luminite_ingot', '4x gtceu:duranium_foil', '4x gtceu:tungsten_carbide_foil'])
+    .itemOutputs('kubejs:embraced_luminite_ingot')
+    .inputFluids('cosmiccore:triphenylphosphine 250')
+    .duration(859)
+    .EUt(GTValues.VA[GTValues.IV]);
+
+
+  event.recipes.gtceu.orbital_forge('starmetal_alloy')
+    .itemInputs(['kubejs:embraced_luminite_ingot', '4x gtceu:nether_star_dust'])
+    .inputFluids('gtceu:pyroflux 100')
+    .inputFluids('gtceu:starlight 300')
+    .itemOutputs('cosmiccore:star_metal_ingot')
+    .dimension('frontiers:sun_orbit')
+    .blastFurnaceTemp(7000)
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.UV], 5);
+
+
+  event.recipes.gtceu.lunar_tapestry('starlight_extraction_1')
+    .circuit(1)
+    .perTick(true)
+    .outputFluids('gtceu:starlight 5')
+    .dimension('ad_astra:moon')
+    .perTick(false)
+    .duration(600)
+    .EUt(GTValues.V[GTValues.IV]);
+
+  event.recipes.gtceu.lunar_tapestry('starlight_extraction_2')
+    .circuit(2)
+    .perTick(true)
+    .outputFluids('gtceu:starlight 10')
+    .dimension('ad_astra:moon')
+    .perTick(false)
+    .CWUt(32)
+    .duration(600)
+    .EUt(GTValues.V[GTValues.IV], 4);
+
+  event.recipes.gtceu.lunar_tapestry('starlight_extraction_3')
+    .circuit(3)
+    .perTick(true)
+    .outputFluids('gtceu:starlight 20')
+    .dimension('ad_astra:moon')
+    .perTick(false)
+    .CWUt(64)
+    .duration(600)
+    .EUt(GTValues.V[GTValues.IV], 16);
+
+  event.recipes.gtceu.lunar_tapestry('starlight_extraction_4')
+    .circuit(4)
+    .perTick(true)
+    .outputFluids('gtceu:starlight 40')
+    .dimension('ad_astra:moon')
+    .perTick(false)
+    .CWUt(128)
+    .duration(600)
+    .EUt(GTValues.V[GTValues.IV], 64);
+  event.recipes.gtceu.lunar_tapestry('starlight_extraction_5')
+    .circuit(5)
+    .perTick(true)
+    .outputFluids('gtceu:starlight 80')
+    .dimension('ad_astra:moon')
+    .perTick(false)
+    .CWUt(256)
+    .duration(600)
+    .EUt(GTValues.V[GTValues.IV], 256);
+  event.recipes.gtceu.lunar_tapestry('starlight_extraction_6')
+    .circuit(6)
+    .perTick(true)
+    .outputFluids('gtceu:starlight 160')
+    .dimension('ad_astra:moon')
+    .perTick(false)
+    .CWUt(1024)
+    .duration(600)
+    .EUt(GTValues.V[GTValues.IV], 1024);
+  event.recipes.gtceu.lunar_tapestry('starlight_extraction_7')
+    .circuit(7)
+    .perTick(true)
+    .outputFluids('gtceu:starlight 320')
+    .dimension('ad_astra:moon')
+    .perTick(false)
+    .CWUt(1024)
+    .duration(600)
+    .EUt(GTValues.V[GTValues.IV], 4096);
+  event.recipes.gtceu.lunar_tapestry('starlight_extraction_8')
+    .circuit(8)
+    .perTick(true)
+    .outputFluids('gtceu:starlight 640')
+    .dimension('ad_astra:moon')
+    .perTick(false)
+    .CWUt(1024)
+    .duration(600)
+    .EUt(GTValues.V[GTValues.IV], 16384);
+
+  event.recipes.gtceu.assembler('hpca_indicator_part')
+    .itemInputs(['gtceu:zpm_machine_hull', '#gtceu:circuits/zpm', 'gtceu:computer_monitor_cover'])
+    .itemOutputs('cosmiccore:hpca_indicator')
+    .circuit(3)
+    .duration(600)
+    .EUt(GTValues.V[GTValues.IV], 6);
+
   event.recipes.gtceu.assembler('alpha_supercon')
     .itemInputs(['16x gtceu:galvanized_ethersteel_foil', '4x gtceu:titanium_tiny_fluid_pipe', '4x gtceu:luminescent_utherium_double_wire', 'gtceu:hv_electric_pump'])
     .itemOutputs('16x gtceu:psi_superconductor_alpha_single_wire')
@@ -748,7 +911,7 @@ ServerEvents.recipes(event => {
   ], {
     P: 'gtceu:bronze_normal_fluid_pipe',
     R: 'gtceu:bronze_rotor',
-    G: 'cosmiccore:shard_of_perpetuity',
+    G: 'ulvcovm:ulv_electric_motor',
     C: 'gtceu:bronze_brick_casing',
     B: 'gtceu:coke_oven_bricks'
   })
@@ -757,8 +920,8 @@ ServerEvents.recipes(event => {
     'MCM',
     'FFF'
   ], {
-    M: 'cosmiccore:shard_of_perpetuity',
-    P: 'cosmiccore:shard_of_perpetuity',
+    M: 'ulvcovm:ulv_electric_motor',
+    P: 'ulvcovm:ulv_electric_piston',
     C: 'gtceu:steel_brick_casing',
     F: 'gtceu:firebricks',
     W: '#forge:tools/hammers'
@@ -768,7 +931,7 @@ ServerEvents.recipes(event => {
     'FCF',
     'MFM'
   ], {
-    M: 'cosmiccore:shard_of_perpetuity',
+    M: 'ulvcovm:ulv_electric_motor',
     C: 'gtceu:steel_brick_casing',
     F: 'gtceu:firebricks',
     W: '#forge:tools/hammers'
@@ -788,7 +951,7 @@ ServerEvents.recipes(event => {
     'gtceu:vacuum_tube'
   ])
 
-  event.shaped('gtceu:steam_caster', [
+  event.shaped('cosmiccore:steam_caster', [
     'CBC',
     'QGH',
     'PPP'
@@ -798,7 +961,7 @@ ServerEvents.recipes(event => {
     G: 'gtceu:coke_oven_bricks',
     C: 'gtceu:bronze_frame',
     B: 'minecraft:cauldron',
-    Q: 'cosmiccore:shard_of_perpetuity'
+    Q: 'ulvcovm:ulv_electric_piston'
   })
   event.shaped('cosmiccore:hellfire_foundry', [
     'LWL',
@@ -810,7 +973,7 @@ ServerEvents.recipes(event => {
     C: '#gtceu:circuits/luv',
     R: 'bloodmagic:blankrune',
   })
-  event.shaped('gtceu:steam_fluid_input_hatch', [
+  event.shaped('cosmiccore:steam_fluid_input_hatch', [
     ' G ',
     ' C ',
     '   '
@@ -818,7 +981,7 @@ ServerEvents.recipes(event => {
     G: 'minecraft:glass',
     C: 'gtceu:bronze_machine_casing'
   })
-  event.shaped('gtceu:steam_fluid_output_hatch', [
+  event.shaped('cosmiccore:steam_fluid_output_hatch', [
     ' C ',
     ' G ',
     '   '
@@ -1383,6 +1546,8 @@ ServerEvents.recipes(event => {
     .itemOutputs('gtceu:naquadah_ingot')
     .duration(320)
     .EUt(GTValues.VA[GTValues.EV]);
+
+
 
   event.recipes.gtceu.electric_blast_furnace('gtceu:electric_blast_furnace/blue_alloy')
     .itemInputs('gtceu:blue_alloy_dust')

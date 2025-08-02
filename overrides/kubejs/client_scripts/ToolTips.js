@@ -237,9 +237,6 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('malum:encyclopedia_esoterica', (item, advanced, text) => {
     text.add(1, Text.of('Notice; Recipes may be incorrect, check EMI!').red())
   })
-  // event.addAdvanced('botania:gaia_ingot', (item, advanced, text) => {
-  //   text.add(1, Text.of('Disabled: T2 Gaia and Ingot Recipe for Summon will be added when it is time to unlock them!').red())
-  // })
   event.addAdvanced('kubejs:prismatic_lens', (item, advanced, text) => {
     text.add(1, Text.of('Creates a laser energetic enough to cut metal').lightPurple())
   })
@@ -250,6 +247,9 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('integrateddynamics:mechanical_squeezer', (item, advanced, text) => {
     text.add(1, Text.of('Energy Consumption was set to 0!').green())
     text.add(2, Text.of('Will run without power!').green())
+  })
+    event.addAdvanced('minecraft:nether_star', (item, advanced, text) => {
+    text.add(1, Text.of('Netherstars no longer drop from withers.').red())
   })
 })
 
@@ -272,4 +272,44 @@ ItemEvents.tooltip(event => {
       text.add(4, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
     }
   })
+
+  event.addAdvanced('gtceu:lunar_tapestry', (item, advanced, text) => {
+    text.add(1, Text.of('Multiblock Classification: High Quality Lunar Sail').aqua().bold())
+    text.add(2, Text.of('Collecting the tears of stars. ').white().bold())
+    text.add(3, Text.of('Gathers otherworldly materials out of cosmic winds.'))
+    if (event.isShift()) {
+      text.add(4, Text.of('------------------------------------------------------------').aqua())
+      text.add(5, [Text.of('Can not be').white(), Text.of(' Overclocked!').aqua()])
+      text.add(6, [Text.of('Takes').gray(), Text.of(' Computation & EU/t').green(), Text.of(' to run.').gray()])
+      text.add(7, [Text.of('Generates exotic stellar liquids depending on').white(), Text.of(' the planet').gold(), Text.of(' it is placed on.').white()])
+      text.add(8, Text.of('------------------------------------------------------------').aqua())
+      text.add(9, Text.of('Change Optical Targeting Circuit to increase the collectors strength').gold())
+      text.add(10, Text.of('CWU/t Required is multiplied by 4 each time.').white().italic())
+      text.add(11, Text.of('------------------------------------------------------------').aqua())
+      text.add(12, Text.of('Overclock Type : SILENT'))
+    } else {
+      text.add(4, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+  })
+
+
+
+  event.addAdvanced('cosmiccore:void_miner', (item, advanced, text) => {
+    text.add(1, Text.of('Multiblock Classification: Bedrock Dredging Drill').aqua().bold())
+    text.add(2, Text.of('Ores Galore!').white().bold())
+    text.add(3, Text.of('Rips apart bedrock for various ore and mineral deposits.'))
+    if (event.isShift()) {
+      text.add(4, Text.of('------------------------------------------------------------').aqua())
+      text.add(5, [Text.of('ALL EMI RECIPES USE').white(), Text.of(' XOR RECIPE LOGIC').aqua()])
+      text.add(6, [Text.of('This means you will get 1 ore type, from the listed ore page per cycle.').gray()])
+      text.add(7, [Text.of('Requires').white(), Text.of(' Pyroflux & Drilling Fluid').gold(), Text.of(' and be placed near the void to run.').white()])
+      text.add(8, Text.of('------------------------------------------------------------').aqua())
+      text.add(12, Text.of('Overclock Type : IMPERFECT SUBTICK'))
+    } else {
+      text.add(4, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+  })
+
+
+
 })

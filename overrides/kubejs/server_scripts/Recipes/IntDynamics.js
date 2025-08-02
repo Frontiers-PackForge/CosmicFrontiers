@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
     S: 'gtceu:steel_block',
     W: 'gtceu:double_steel_plate',
     T: 'gtceu:treated_wood_planks',
-    A: 'cosmiccore:shard_of_perpetuity',
+    A: 'ulvcovm:ulv_electric_piston',
     B: 'gtceu:treated_wood_frame'
   })
 event.shaped('integrateddynamics:drying_basin', [
@@ -59,7 +59,7 @@ event.shaped('integrateddynamics:mechanical_drying_basin', [
     C: 'minecraft:cauldron',
     W: 'gtceu:double_steel_plate',
     T: 'gtceu:treated_wood_planks',
-    A: 'cosmiccore:shard_of_perpetuity',
+    A: 'ulvcovm:ulv_electric_pump',
     B: 'gtceu:treated_wood_frame'
   })
   

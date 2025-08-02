@@ -156,7 +156,7 @@ machines:
   # Whether insufficient energy supply should reset Machine recipe progress to zero.
   # If true, progress will reset.
   # If false, progress will decrease to zero with 2x speed
-  # Default: false
+  # Default: true
   recipeProgressLowEnergy: true
 
   # Whether to require a Wrench, Wirecutter, or other GregTech tools to break machines, casings, wires, and more.
@@ -187,6 +187,10 @@ machines:
   # Whether to play machine sounds while machines are active.
   # Default: true
   machineSounds: true
+
+  # Duration in ticks that batching will try to reach.
+  # Default: 100
+  batchDuration: 100
 
   # Whether Steam Multiblocks should use Steel instead of Bronze.
   # Default: false
@@ -369,8 +373,8 @@ client:
   defaultPaintingColor: #FFFFFF
 
   # The default color to overlay onto Machine (and other) UIs.
-  # 16777215 (#FFFFFF) is no coloring (like GTCE) (default).
-  # 13819135 (#D2DCFF in decimal) is the classic blue from GT5.
+  # #FFFFFF is no coloring (like GTCE) (default).
+  # #D2DCFF is the classic blue from GT5.
   defaultUIColor: #FFFFFF
 
   # Use VBO cache for multiblock preview.
@@ -407,6 +411,14 @@ client:
     # Render fluids in multiblocks that support them?
     # Default: true
     renderFluids: true
+
+    # Whether or not to color tiered machine highlights in the tier color
+    # Default: true
+    coloredTieredMachineOutline: true
+
+    # Whether or not to color wire/cable highlights based on voltage tier
+    # Default: true
+    coloredWireOutline: true
 
 # Config options for Tools and Armor
 tools:

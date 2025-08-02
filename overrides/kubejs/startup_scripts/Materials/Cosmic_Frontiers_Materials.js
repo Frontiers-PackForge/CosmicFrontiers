@@ -604,6 +604,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('grading_fluid_6')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
+    event.create('starlight') //Refined Primordial Oil Product
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+
     event.create('star_dew') //Skyline Cracked Product
         .liquid()
         .color(0xa8ddff)
@@ -653,20 +657,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     //While my eyes bleed from the rot
     event.create('ghost_matter')
-    .color(0x34ebbd)
-    .plasma()
+        .color(0x34ebbd)
+        .plasma()
     //My Blood is Stained with the worlds of many souls
     event.create('sol_blood')
-    .color(0xc28e1f)
-    .plasma()
+        .color(0xc28e1f)
+        .plasma()
     //And this star, a point among many, is the one I call home
     event.create('homeward_resin')
-    .color(0xf0912b)
-    .plasma()
+        .color(0xf0912b)
+        .plasma()
     //Break this wrathful cycle, star killer.
     event.create('perpetuity_slag')
-    .color(0x696969)
-    .plasma()
+        .color(0x696969)
+        .plasma()
 })
 
 GTCEuStartupEvents.materialModification(event => {
@@ -678,6 +682,7 @@ GTCEuStartupEvents.materialModification(event => {
     TagPrefix.plate['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('soul_stained_steel'), () => Item.getItem('malum:soul_stained_steel_plating'))
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('soul_stained_steel'), () => Item.getItem('malum:soul_stained_steel_ingot'))
 })
+
 GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('primordial_oil').setFormula('√∞₍Ω₎', true)
     GTMaterials.get('star_dew').setFormula('(℧ₓ∞)', true)

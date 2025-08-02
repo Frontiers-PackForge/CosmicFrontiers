@@ -34,8 +34,8 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV]);
 
-    event.recipes.gtceu.juicer(`croptopia:soy_milk`)
-        .itemInputs('minecraft:glass_bottle', 'croptopia:soybean')
+    event.recipes.gtceu.extractor(`croptopia:soy_milk`)
+        .itemInputs('croptopia:soybean')
         .outputFluids('croptopia:soy_milk 100')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV]);

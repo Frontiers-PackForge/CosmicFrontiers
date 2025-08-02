@@ -112,7 +112,9 @@
 		{
 			dependencies: ["5AB046A0E1BFBE1E"]
 			description: [
-				"You can get Nautilus Shells from Drowned which hold them, fishing, and looting some types of chests."
+				"You can get Music Discs by making a skeleton kill a creeper or looting most kinds of chests."
+				""
+				"Waffles are better, tho."
 				""
 				"&7NOTICE : You used to be able to collect these from monsters, that has been disabled. you must now craft them yourself.&r"
 			]
@@ -124,7 +126,7 @@
 				item: "cosmiccore:shard_of_perpetuity"
 				type: "item"
 			}]
-			subtitle: "Nautulis Shell"
+			subtitle: "Music Disc"
 			tasks: [{
 				id: "68B250C4CCD1FE52"
 				item: "nether_remastered:seal_piece_2"
@@ -625,8 +627,8 @@
 			size: 1.5d
 			subtitle: "Blending in the Steam Age"
 			tasks: [{
-				id: "3C5BE5CFD20722E6"
-				item: "gtceu:steam_mixing_vessel"
+				id: "31599924A84E7993"
+				item: "cosmiccore:steam_mixing_vessel"
 				type: "item"
 			}]
 			title: "Steam Mixing Vessel"
@@ -724,14 +726,14 @@
 				"This is the only way you can handle some hotter fluids solidification as well."
 			]
 			hide_dependency_lines: true
-			icon: "gtceu:steam_caster"
+			icon: "cosmiccore:steam_caster"
 			id: "7D085A647AEC2485"
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "Molding better bricks"
 			tasks: [{
 				id: "0D87DCE88DE5D667"
-				item: "gtceu:steam_caster"
+				item: "cosmiccore:steam_caster"
 				type: "item"
 			}]
 			x: 0.0d
@@ -980,8 +982,8 @@
 			}]
 			subtitle: "1:1 Plates in Steam"
 			tasks: [{
-				id: "0E1C8898BECFF0A3"
-				item: "gtceu:hp_steam_bender"
+				id: "5CCACAB213BE9896"
+				item: "cosmiccore:hp_steam_bender"
 				type: "item"
 			}]
 			x: -2.0d
@@ -1005,7 +1007,7 @@
 				""
 				"&cThe world shudders in pain&r. A &6Cluster of Perpetuity&r has formed."
 			]
-			icon: "gtceu:high_pressure_assembler"
+			icon: "cosmiccore:high_pressure_assembler"
 			id: "5AB046A0E1BFBE1E"
 			rewards: [{
 				id: "3CC33E876B57145A"
@@ -1017,7 +1019,7 @@
 			subtitle: "To build a vessel"
 			tasks: [{
 				id: "7A49BD055E124C2B"
-				item: "gtceu:high_pressure_assembler"
+				item: "cosmiccore:high_pressure_assembler"
 				type: "item"
 			}]
 			title: "High Pressure Assembler"
@@ -1090,8 +1092,8 @@
 			}]
 			subtitle: "1:2 Wires in Steam"
 			tasks: [{
-				id: "4F42DEDDEAF3FEFE"
-				item: "gtceu:hp_steam_wiremill"
+				id: "4FD7919A9537E117"
+				item: "cosmiccore:hp_steam_wiremill"
 				type: "item"
 			}]
 			x: -4.5d
@@ -1210,7 +1212,7 @@
 			subtitle: "Turn up the heat!"
 			tasks: [{
 				id: "534C830C7C617697"
-				item: "gtceu:industrial_primitive_blast_furnace"
+				item: "cosmiccore:industrial_primitive_blast_furnace"
 				type: "item"
 			}]
 			x: -7.0d

@@ -470,8 +470,8 @@
 			id: "74F72B62EE622F19"
 			size: 1.0d
 			tasks: [{
-				id: "6150987D9F3B49C2"
-				item: "cosmiccore:echo_processor"
+				id: "1DD420C8DACE14AA"
+				item: "cosmiccore:harmonic_processor"
 				type: "item"
 			}]
 			x: 3.5d
@@ -502,8 +502,8 @@
 			id: "76C755373C4156A9"
 			size: 1.0d
 			tasks: [{
-				id: "1BBDD8DF8F39DD81"
-				item: "cosmiccore:cosmic_processor"
+				id: "123F464A5345E34A"
+				item: "cosmiccore:suelescent_processor"
 				type: "item"
 			}]
 			x: 5.5d
@@ -518,8 +518,8 @@
 			id: "53F49F66BBA9D21E"
 			size: 1.0d
 			tasks: [{
-				id: "07D120A8344B7703"
-				item: "cosmiccore:psionic_processor"
+				id: "2A8D8B1E09403585"
+				item: "cosmiccore:akashic_processor"
 				type: "item"
 			}]
 			x: 6.5d
@@ -551,8 +551,8 @@
 			id: "526F43C43375ACDC"
 			size: 1.0d
 			tasks: [{
-				id: "795C580ECA5D1956"
-				item: "cosmiccore:echo_processor_assembly"
+				id: "3CB3A030DED0FE1A"
+				item: "cosmiccore:harmonic_processor_assembly"
 				type: "item"
 			}]
 			x: 3.5d
@@ -583,8 +583,8 @@
 			id: "5406CD734BE9DAE8"
 			size: 1.0d
 			tasks: [{
-				id: "3407CEB0AB5AB7B1"
-				item: "cosmiccore:cosmic_processor_assembly"
+				id: "4E398091C6B47487"
+				item: "cosmiccore:suelescent_processor_assembly"
 				type: "item"
 			}]
 			x: 5.5d
@@ -599,8 +599,8 @@
 			id: "484BADE6658C0DFD"
 			size: 1.0d
 			tasks: [{
-				id: "27EC4AE15F90CFFD"
-				item: "cosmiccore:psionic_processor_assembly"
+				id: "23DCC9638FD50BB5"
+				item: "cosmiccore:akashic_processor_assembly"
 				type: "item"
 			}]
 			x: 6.5d
@@ -631,8 +631,8 @@
 			id: "736E2F37708D5610"
 			size: 1.0d
 			tasks: [{
-				id: "2044F51B712C7E74"
-				item: "cosmiccore:echo_processor_supercomputer"
+				id: "087B153B6AC89B25"
+				item: "cosmiccore:harmonic_processor_supercomputer"
 				type: "item"
 			}]
 			x: 3.5d
@@ -647,8 +647,8 @@
 			id: "0FD5C3C104E02383"
 			size: 1.0d
 			tasks: [{
-				id: "200DE1903ACF18B3"
-				item: "cosmiccore:echo_processor_mainframe"
+				id: "4E25796FB8325F2D"
+				item: "cosmiccore:harmonic_processor_mainframe"
 				type: "item"
 			}]
 			x: 3.5d
@@ -680,8 +680,8 @@
 			id: "4F5E425C710EBF2F"
 			size: 1.0d
 			tasks: [{
-				id: "794B4FF4A4103E15"
-				item: "cosmiccore:cosmic_processor_supercomputer"
+				id: "256417C7CAB90CCF"
+				item: "cosmiccore:suelescent_processor_supercomputer"
 				type: "item"
 			}]
 			x: 5.5d
@@ -696,8 +696,8 @@
 			id: "3552413A7D76A5D8"
 			size: 1.0d
 			tasks: [{
-				id: "6B1FB1085B983798"
-				item: "cosmiccore:psionic_processor_supercomputer"
+				id: "6357E7CD1B4E9885"
+				item: "cosmiccore:akashic_processor_supercomputer"
 				type: "item"
 			}]
 			x: 6.5d
@@ -744,8 +744,8 @@
 			id: "224B5B000F897E56"
 			size: 1.0d
 			tasks: [{
-				id: "04E4FDCA5743C2A6"
-				item: "cosmiccore:cosmic_processor_mainframe"
+				id: "337BF4923E514D62"
+				item: "cosmiccore:suelescent_processor_mainframe"
 				type: "item"
 			}]
 			x: 5.5d
@@ -760,8 +760,8 @@
 			id: "6161F44575E98BD5"
 			size: 1.0d
 			tasks: [{
-				id: "5E6C498C116FA67E"
-				item: "cosmiccore:psionic_processor_mainframe"
+				id: "01C0FF37B932AE2D"
+				item: "cosmiccore:akashic_processor_mainframe"
 				type: "item"
 			}]
 			x: 6.5d

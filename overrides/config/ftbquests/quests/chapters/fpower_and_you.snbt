@@ -563,7 +563,7 @@
 			subtitle: "Well then"
 			tasks: [{
 				id: "6E70B654A4C359DB"
-				item: "gtceu:iv_naquahine_mini_reactor"
+				item: "cosmiccore:iv_naquahine_mini_reactor"
 				type: "item"
 			}]
 			x: -8.5d

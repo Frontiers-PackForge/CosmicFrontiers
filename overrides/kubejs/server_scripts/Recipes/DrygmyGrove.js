@@ -51,4 +51,19 @@ ServerEvents.recipes(event => {
     .duration(600)
     .EUt(GTValues.VA[GTValues.EV]);
 
+  event.recipes.gtceu.drygmy_grove('sculk_outbreak')
+    .notConsumable('ars_nouveau:drygmy_charm')
+    .notConsumable('minecraft:sculk_catalyst')
+    .itemOutputs('8x minecraft:sculk')
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+  event.recipes.gtceu.drygmy_grove('sheep')
+    .notConsumable('ars_nouveau:drygmy_charm')
+    .notConsumable('minecraft:shears')
+    .itemOutputs('8x minecraft:white_wool')
+    .itemOutputs('8x minecraft:mutton')
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.EV]);
+
 })

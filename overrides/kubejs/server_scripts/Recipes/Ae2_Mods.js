@@ -168,17 +168,20 @@ ServerEvents.recipes(event => {
   // event.remove({ output:  })
   // event.remove({ output:  })
   event.recipes.gtceu.assembly_line('assline_creative_cell_recipe')
-    .itemInputs('64x megacells:mega_energy_cell', '8x #gtceu:circuits/luv', '16x gtceu:superconducting_coil', '64x ae2:fluix_smart_dense_cable', '64x ae2:fluix_smart_dense_cable', '32x gtceu:neutron_reflector')
+    .itemInputs('64x megacells:mega_energy_cell', '8x #gtceu:circuits/uv', '16x cosmiccore:reinforced_trinavine_coil_block', '64x ae2:fluix_smart_dense_cable', '64x ae2:fluix_smart_dense_cable', '32x gtceu:neutron_reflector')
     .itemOutputs('ae2:creative_energy_cell')
     .inputFluids(
-      Fluid.of('gtceu:uu_matter', 666),
-      Fluid.of('gtceu:titanium_tungsten_carbide', 4608),
-      Fluid.of('gtceu:soldering_alloy', 8192),
+      Fluid.of('gtceu:starlight', 16000),
+      Fluid.of('gtceu:crystaline_neutronium', 4608),
+      Fluid.of('gtceu:high_grade_solder', 8192),
 
     )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('megacells:mega_energy_cell')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
-    .duration(500)
-    .EUt(GTValues.VA[GTValues.LuV])
+    .stationResearch(b => b
+      .researchStack('megacells:mega_energy_cell')
+      .CWUt(16)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(1750)
+    .EUt(GTValues.VA[GTValues.LuV], 6)
 
   event.recipes.gtceu.assembler(`ae2:singularity_creation`)
     .itemInputs(['ae2:dense_energy_cell', '4x gtceu:hv_emitter', '4x gtceu:hv_sensor', 'gtceu:hv_field_generator'])
@@ -342,6 +345,12 @@ ServerEvents.recipes(event => {
     .itemOutputs('ae2:dense_energy_cell')
     .duration(320)
     .EUt(GTValues.VA[GTValues.HV]);
+  //Superdense Cell
+  event.recipes.gtceu.assembler('ae2:superdense_cell_assem')
+    .itemInputs(['8x ae2:dense_energy_cell', '16x cosmiccore:trinavine_plate', '32x gtceu:rhenium_foil', 'gtceu:lapotronic_energy_orb_cluster'])
+    .itemOutputs('megacells:mega_energy_cell')
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.LuV]);
   //Pattern Crafting Terminal
   //Pattern Terminal
   event.recipes.gtceu.assembler('ae2:data_terminal')
@@ -754,7 +763,7 @@ ServerEvents.recipes(event => {
     'tungsten_steel',
     'rhodium_plated_palladium',
     'naquadah_alloy',
-    'darmstadtium',
+    'tritanium',
     'neutronium'
   ]
   let componentTier = [
@@ -886,19 +895,55 @@ ServerEvents.recipes(event => {
     } else {
       polymer = 'gtceu:polybenzimidazole_foil'
     }
+    const dyeColors = [
+    'white',
+    'light_gray',
+    'gray',
+    'black',
+    'brown',
+    'red',
+    'orange',
+    'yellow',
+    'lime',
+    'green',
+    'cyan',
+    'light_blue',
+    'blue',
+    'purple',
+    'magenta',
+    'pink'
+  ]
 
+    dyeColors.forEach(dye => {
+      event.recipes.gtceu.laminator(`smart_cable_${tier}_${dye}`)
+        .itemInputs([`gtceu:${tier}_single_cable`, `${polymer}`])
+        .inputFluids([`gtceu:${fluids} 144`, `gtceu:${dye}_dye 288`])
+        .itemOutputs(`${output}x ae2:${dye}_smart_cable`)
+        .circuit(2)
+        .duration(100)
+        .EUt(euType);
+      event.recipes.gtceu.laminator(`dense_cable_${tier}_${dye}`)
+      .itemInputs([`gtceu:${tier}_quadruple_cable`, `16x ${polymer}`])
+      .inputFluids([`gtceu:${fluids} 144`, `gtceu:${dye}_dye 2304`])
+      .itemOutputs(`${output}x ae2:${dye}_smart_dense_cable`)
+      .duration(100)
+      .circuit(2)
+      .EUt(euType);
+    });
 
     event.recipes.gtceu.laminator(`smart_cable_${tier}`)
       .itemInputs([`gtceu:${tier}_single_cable`, `${polymer}`])
       .inputFluids(`gtceu:${fluids} 144`)
       .itemOutputs(`${output}x ae2:fluix_smart_cable`)
       .duration(100)
+      .circuit(1)
       .EUt(euType);
     event.recipes.gtceu.laminator(`dense_cable_${tier}`)
       .itemInputs([`gtceu:${tier}_quadruple_cable`, `16x ${polymer}`])
       .inputFluids(`gtceu:${fluids} 144`)
       .itemOutputs(`${output}x ae2:fluix_smart_dense_cable`)
       .duration(100)
+      .circuit(1)
       .EUt(euType);
     event.recipes.gtceu.cutter(`ae2:${tier}_cable_anchor`)
       .itemInputs(`gtceu:${fluids}_bolt`)
@@ -950,12 +995,12 @@ ServerEvents.recipes(event => {
 
   //merequesters
   event.recipes.gtceu.assembly_line('merequester_block')
-    .itemInputs(['gtceu:uv_hermetic_casing', '16x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire', '4x gtceu:wetware_processor_mainframe', '4x ae2:cell_component_256k', 'ae2:level_emitter', 'ae2:energy_level_emitter', 'expatternprovider:threshold_level_emitter', 'ae2:crafting_card'])
+    .itemInputs(['gtceu:zpm_hermetic_casing', '16x gtceu:uranium_rhodium_dinaquadide_quadruple_wire', '1x gtceu:wetware_processor_mainframe', '4x ae2:cell_component_256k', 'ae2:level_emitter', 'ae2:energy_level_emitter', 'expatternprovider:threshold_level_emitter', 'ae2:crafting_card'])
     .itemOutputs('merequester:requester')
     .inputFluids(
-      Fluid.of('gtceu:veltharic_slough', 15000),
-      Fluid.of('gtceu:abyss_grease', 9216),
-      Fluid.of('gtceu:void_tar', 1440),
+      Fluid.of('cosmiccore:trinavine', 2304),
+      Fluid.of('gtceu:platinum', 9216),
+      Fluid.of('gtceu:europium', 1440),
     )
     .stationResearch(b => b
       .researchStack('megacells:cell_component_1m')

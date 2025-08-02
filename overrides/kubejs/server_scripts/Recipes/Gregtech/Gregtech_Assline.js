@@ -9,6 +9,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:assembler/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_assembly_control' })
+
+  event.replaceOutput({ id: 'gtceu:assembly_line/high_performance_computing_array' }, 'gtceu:high_performance_computation_array', 'cosmiccore:high_performance_computation_array')
   event.shaped('gtceu:assembly_line_casing', [
     'SMS',
     'DCD',
@@ -20,9 +22,26 @@ ServerEvents.recipes(event => {
     B: 'gtceu:iv_electric_motor',
     M: 'cosmiccore:iv_radio_module'
   })
+  event.recipes.gtceu.assembler('assembly_line_casing')
+    .itemInputs(['gtceu:tungsten_carbide_frame', 'cosmiccore:iv_radio_module', '2x gtceu:hpic_chip', '2x gtceu:iv_electric_motor', '3x #gtceu:circuits/zpm'])
+    .itemOutputs('gtceu:assembly_line_casing')
+    .circuit(2)
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.IV])
+  event.recipes.gtceu.assembly_line('lunar_tapestry')
+    .itemInputs(['gtceu:luv_scanner', '64x gtceu:computer_monitor_cover', '16x gtceu:lv_solar_panel', '8x kubejs:prismatic_lens', '8x gtceu:luv_sensor', '8x cosmiccore:luv_radio_module', '4x gtceu:luv_field_generator', '16x gtceu:uranium_rhodium_dinaquadide_double_wire', '16x gtceu:normal_optical_pipe'])
+    .itemOutputs('gtceu:lunar_tapestry')
+    .inputFluids(
+      'gtceu:star_dew 16000',
+      'cosmiccore:triphenylphosphine 8500',
+      'gtceu:grading_fluid_2 16000'
+    )
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('occultism:chalk_red', '{Damage:0}')).EUt(GTValues.VA[GTValues.LuV]).duration(3200))
+    .duration(1200)
+    .EUt(GTValues.VA[GTValues.LuV])
   event.remove({ id: 'bloodmagic:ritual_diviner_0' })
   event.recipes.gtceu.assembly_line('inscriber_recipe')
-    .itemInputs(['16x bloodmagic:infusedslate','botania:exchange_rod', Item.of('occultism:chalk_red', '{Damage:0}'), Item.of('occultism:chalk_purple', '{Damage:0}'), Item.of('occultism:chalk_gold', '{Damage:0}'), Item.of('occultism:chalk_white', '{Damage:0}'), Item.of('bloodmagic:airscribetool', '{Damage:0}'), Item.of('bloodmagic:firescribetool', '{Damage:0}'), Item.of('bloodmagic:waterscribetool', '{Damage:0}'), Item.of('bloodmagic:earthscribetool', '{Damage:0}')])
+    .itemInputs(['16x bloodmagic:infusedslate', 'botania:exchange_rod', Item.of('occultism:chalk_red', '{Damage:0}'), Item.of('occultism:chalk_purple', '{Damage:0}'), Item.of('occultism:chalk_gold', '{Damage:0}'), Item.of('occultism:chalk_white', '{Damage:0}'), Item.of('bloodmagic:airscribetool', '{Damage:0}'), Item.of('bloodmagic:firescribetool', '{Damage:0}'), Item.of('bloodmagic:waterscribetool', '{Damage:0}'), Item.of('bloodmagic:earthscribetool', '{Damage:0}')])
     .itemOutputs('bloodmagic:ritualdiviner')
     .inputFluids(
       'gtceu:4_4_oxydianiline_pyromellitimide 9216',
@@ -454,12 +473,12 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LuV])
   event.recipes.gtceu.assembly_line('frontiers:ludicrous_combustion_gen')
     .itemInputs(['gtceu:luv_machine_hull', '2x #gtceu:circuits/luv', '4x gtceu:luv_electric_piston', '4x gtceu:luv_electric_motor', '4x gtceu:synthetic_pthanterum_gear', 'gtceu:niobium_titanium_quadruple_cable'])
-    .itemOutputs('gtceu:ludicrous_combustion_engine_cc')
+    .itemOutputs('cosmiccore:ludicrous_combustion_engine_cc')
     .inputFluids(
       'gtceu:high_grade_solder 2304',
       'cosmiccore:triphenylphosphine 2304',
     )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:extreme_combustion_engine_cc').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('cosmiccore:extreme_combustion_engine_cc').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
     .duration(300)
     .EUt(GTValues.VA[GTValues.LuV])
   event.recipes.gtceu.assembly_line('frontiers:chemvat')
@@ -546,6 +565,21 @@ ServerEvents.recipes(event => {
     .duration(1750)
     .EUt(GTValues.VA[GTValues.ZPM])
 
+  event.recipes.gtceu.assembly_line('frontiers:prisma_foundry')
+    .itemInputs(['4x gtceu:large_maceration_tower', '4x gtceu:large_chemical_bath', '4x gtceu:leaching_plant', '4x gtceu:large_centrifuge', '4x gtceu:large_distillery', '8x gtceu:crystal_processor_mainframe', '64x gtceu:uranium_rhodium_dinaquadide_quadruple_wire', '64x gtceu:uranium_rhodium_dinaquadide_quadruple_wire', '16x gtceu:tritanium_modular_shelling', '16x gtceu:heavy_tritanium_beam', '4x gtceu:ultradense_tritanium_plate', '64x gtceu:tungsten_grinding_head', '64x gtceu:tungsten_grinding_head', '64x gtceu:tungsten_grinding_head', '64x gtceu:tungsten_grinding_head'])
+    .itemOutputs('cosmiccore:prismatic_ore_foundry')
+    .inputFluids(
+      'gtceu:trinanylon_6_6 1296',
+      'gtceu:high_grade_solder 1152',
+      'cosmiccore:triphenylphosphine 2304',
+    )
+    .stationResearch(b => b
+      .researchStack('gtceu:large_maceration_tower')
+      .CWUt(240)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(17500)
+    .EUt(GTValues.VA[GTValues.ZPM])
+
   event.recipes.gtceu.assembly_line('frontiers:neutronium_casing')
     .itemInputs(['gtceu:neutronium_frame', '12x gtceu:long_tritanium_rod', '8x gtceu:double_neutronium_plate', '8x gtceu:neutronium_rod', '8x gtceu:neutronium_bolt'])
     .itemOutputs('cosmiccore:tritanium_lined_heavy_neutronium_casing')
@@ -560,15 +594,15 @@ ServerEvents.recipes(event => {
     .duration(1750)
     .EUt(GTValues.VA[GTValues.ZPM])
   event.recipes.gtceu.assembly_line('frontiers:zpm_combustion_engine')
-    .itemInputs(['gtceu:zpm_machine_hull', '2x gtceu:circuits/zpm', '4x gtceu:zpm_electric_piston', '4x gtceu:zpm_electric_motor', '8x cosmiccore:neutronite_gear', 'gtceu:vanadium_gallium_quadruple_cable', 'gtceu:zpm_machine_hull'])
-    .itemOutputs('gtceu:ultimate_combustion_engine_cc')
+    .itemInputs(['gtceu:zpm_machine_hull', '2x #gtceu:circuits/zpm', '4x gtceu:zpm_electric_piston', '4x gtceu:zpm_electric_motor', '8x cosmiccore:neutronite_gear', 'gtceu:vanadium_gallium_quadruple_cable', 'gtceu:zpm_machine_hull'])
+    .itemOutputs('cosmiccore:ultimate_combustion_engine_cc')
     .inputFluids(
       'gtceu:trinanylon_6_6 1296',
       'gtceu:high_grade_solder 4608',
       'cosmiccore:triphenylphosphine 2304',
     )
     .stationResearch(b => b
-      .researchStack('gtceu:ludicrous_combustion_engine_cc')
+      .researchStack('cosmiccore:ludicrous_combustion_engine_cc')
       .CWUt(16)
       .EUt(GTValues.VA[GTValues.ZPM]))
     .duration(1750)
@@ -617,7 +651,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.ZPM])
 
   event.recipes.gtceu.assembly_line('frontiers:neuro_processing_assembly')
-    .itemInputs(['64x cosmiccore:fine_neutronite_wire', '8x gtceu:nylon_6_6_foil', '8x cosmiccore:crystalline_transistor', '8x cosmiccore:crystalline_diode', '8x cosmiccore:crystalline_resistor', 'cosmiccore:wired_petri_dish', 'gtceu:wetware_printed_circuit_board', 'gtceu:stem_cells', 'cosmiccore:computation_support_unit'])
+    .itemInputs(['64x cosmiccore:fine_neutronite_wire', '8x gtceu:nylon_6_6_foil', '8x gtceu:advanced_smd_transistor', '8x gtceu:advanced_smd_diode', '8x gtceu:advanced_smd_resistor', 'cosmiccore:wired_petri_dish', 'gtceu:wetware_printed_circuit_board', 'gtceu:stem_cells', 'cosmiccore:computation_support_unit'])
     .itemOutputs('4x cosmiccore:neuro_processing_assembly')
     .inputFluids(
       'gtceu:polybenzimidazole 1152',
