@@ -21,5 +21,9 @@
   {"name":  "Sodium Options API", "id":  1103431, "thirdPartyLock":  false},
   {"name":  "Sound Physics Remastered", "id":  535489, "thirdPartyLock":  false},
   {"name":  "Tips", "id":  306549, "thirdPartyLock":  false},
-  {"name":  "A Campfire", "id": 1023913, "thirdPartyLock":  true}
+  {"name":  "Better Smithing UI", "id":  875744, "thirdPartyLock":  false},
+  {"name":  "Forgematica", "id":  912441, "thirdPartyLock":  false},
+  {"name":  "Forgematica Printer", "id":  1223456, "thirdPartyLock":  false},
+  {"name":  "MaFgLib", "id":  910766, "thirdPartyLock":  false},
+  {"name":  "A Campfire", "id": 1023913, "thirdPartyLock":  false}
 ]

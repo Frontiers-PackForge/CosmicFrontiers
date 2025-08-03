@@ -1,8 +1,0 @@
-[
-  "littletiles.rendering.useQuadCache",
-  "littletiles.rendering.useCubeCache",
-  "littletiles.rendering.highlightStructureBox",
-  "littletiles.rendering.uploadToVBODirectly",
-  "littletiles.rendering.entityCacheBuildThreads",
-  "littletiles.rendering.connectedShapeBlocksLimit"
-]

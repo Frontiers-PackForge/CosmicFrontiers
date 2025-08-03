@@ -1,12 +1,13 @@
 #!/bin/sh
 set -eu
-FORGE_VERSION=47.4.0
+MINECRAFT_VERSION={{MINECRAFT_VERSION}}
+FORGE_VERSION={{FORGE_VERSION}}
 # To use a specific Java runtime, set an environment variable named ATM9_JAVA to the full path of java.exe.
 # To disable automatic restarts, set an environment variable named ATM9_RESTART to false.
 # To install the pack without starting the server, set an environment variable named ATM9_INSTALL_ONLY to true.
 
-INSTALLER="forge-1.20.1-$FORGE_VERSION-installer.jar"
-FORGE_URL="https://maven.minecraftforge.net/net/minecraftforge/forge/1.20.1-$FORGE_VERSION/forge-1.20.1-$FORGE_VERSION-installer.jar"
+INSTALLER="forge-$MINECRAFT_VERSION-$FORGE_VERSION-installer.jar"
+FORGE_URL="https://maven.minecraftforge.net/net/minecraftforge/forge/$MINECRAFT_VERSION-$FORGE_VERSION/forge-$MINECRAFT_VERSION-$FORGE_VERSION-installer.jar"
 
 pause() {
     printf "%s\n" "Press enter to continue..."
@@ -14,7 +15,7 @@ pause() {
 }
 
 if ! command -v "${ATM9_JAVA:-java}" >/dev/null 2>&1; then
-    echo "Minecraft 1.20.1 requires Java 17 - Java not found"
+    echo "Minecraft $MINECRAFT_VERSION requires Java 17 - Java not found"
     pause
     exit 1
 fi

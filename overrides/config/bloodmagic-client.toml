@@ -1,9 +1,0 @@
-
-#Always render the beams between routing nodes.
-#If disabled, the beams will only render while the Node Router is held.
-[client]
-	alwaysRenderRoutingLines = false
-	#When cycling through slots, the Sigil of Holding will skip over empty slots and move to the next occupied one.
-	#If disabled, it will behave identically to the default hotbar.
-	sigilHoldingSkipsEmptySlots = false
-

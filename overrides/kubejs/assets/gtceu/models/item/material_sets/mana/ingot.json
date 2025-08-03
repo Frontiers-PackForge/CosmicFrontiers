@@ -1,8 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-      "layer0": "gtceu:item/material_sets/mana/ingot",
-      "layer1": "gtceu:item/material_sets/mana/ingot_secondary",
-      "layer2": "gtceu:item/material_sets/mana/ingot_overlay"
-    }
-  }

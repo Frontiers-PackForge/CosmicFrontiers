@@ -1,19 +1,20 @@
 @echo off
-set FORGE_VERSION=47.4.0
-:: To use a specific Java runtime, set an environment variable named ATM9_JAVA to the full path of java.exe.
-:: To disable automatic restarts, set an environment variable named ATM9_RESTART to false.
-:: To install the pack without starting the server, set an environment variable named ATM9_INSTALL_ONLY to true.
+set MINECRAFT_VERSION={{MINECRAFT_VERSION}}
+set FORGE_VERSION={{FORGE_VERSION}}
+:: To use a specific Java runtime, set an environment variable named CC_JAVA to the full path of java.exe.
+:: To disable automatic restarts, set an environment variable named CC_RESTART to false.
+:: To install the pack without starting the server, set an environment variable named CC_INSTALL_ONLY to true.
 
-set INSTALLER="%~dp0forge-1.20.1-%FORGE_VERSION%-installer.jar"
-set FORGE_URL="https://maven.minecraftforge.net/net/minecraftforge/forge/1.20.1-%FORGE_VERSION%/forge-1.20.1-%FORGE_VERSION%-installer.jar"
+set INSTALLER="%~dp0forge-%MINECRAFT_VERSION%-%FORGE_VERSION%-installer.jar"
+set FORGE_URL="https://maven.minecraftforge.net/net/minecraftforge/forge/%MINECRAFT_VERSION%-%FORGE_VERSION%/forge-%MINECRAFT_VERSION%-%FORGE_VERSION%-installer.jar"
 
 :JAVA
-if not defined ATM9_JAVA (
-    set ATM9_JAVA=java
+if not defined CC_JAVA (
+    set CC_JAVA=java
 )
 
-"%ATM9_JAVA%" -version 1>nul 2>nul || (
-   echo Minecraft 1.20.1 requires Java 17 - Java not found
+"%CC_JAVA%" -version 1>nul 2>nul || (
+   echo Minecraft %MINECRAFT_VERSION% requires Java 17 - Java not found
    pause
    exit /b 1
 )
@@ -29,7 +30,7 @@ if not exist "libraries" (
     )
     
     echo Running Forge installer.
-    "%ATM9_JAVA%" -jar %INSTALLER% -installServer
+    "%CC_JAVA%" -jar %INSTALLER% -installServer
 )
 
 if not exist "server.properties" (
@@ -40,12 +41,12 @@ if not exist "server.properties" (
     )> "server.properties"
 )
 
-if "%ATM9_INSTALL_ONLY%" == "true" (
+if "%CC_INSTALL_ONLY%" == "true" (
     echo INSTALL_ONLY: complete
     goto:EOF
 )
 
-for /f tokens^=2-5^ delims^=.-_^" %%j in ('"%ATM9_JAVA%" -fullversion 2^>^&1') do set "jver=%%j"
+for /f tokens^=2-5^ delims^=.-_^" %%j in ('"%CC_JAVA%" -fullversion 2^>^&1') do set "jver=%%j"
 if not %jver% geq 17  (
     echo Minecraft 1.20.1 requires Java 17 - found Java %jver%
     pause
@@ -53,9 +54,9 @@ if not %jver% geq 17  (
 ) 
 
 :START
-"%ATM9_JAVA%" @user_jvm_args.txt @libraries/net/minecraftforge/forge/1.20.1-%FORGE_VERSION%/win_args.txt nogui
+"%CC_JAVA%" @user_jvm_args.txt @libraries/net/minecraftforge/forge/1.20.1-%FORGE_VERSION%/win_args.txt nogui
 
-if "%ATM9_RESTART%" == "false" ( 
+if "%CC_RESTART%" == "false" ( 
     goto:EOF 
 )
 

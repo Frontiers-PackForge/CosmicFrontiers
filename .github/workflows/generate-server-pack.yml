@@ -1,0 +1,57 @@
+name: generate-server-pack.yml
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "release tag to process"
+        required: true
+
+jobs:
+  generate-server-pack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set release tag
+        id: set_tag
+        run: |
+          if [ -z "${{ github.event.inputs.release_tag }}" ]; then
+            echo "tag=${{ github.event.release.tag_name }}" >> $GITHUB_OUTPUT
+          else
+            echo "tag=${{ github.event.inputs.release_tag }}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Download released modpack
+        uses: robinraju/release-downloader@v1
+        with:
+          repository: ${{ github.repository }}
+          tag: ${{ steps.set_tag.outputs.tag }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fileName: Cosmic.Frontiers.*.zip
+          extract: true
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y zip jq wget
+
+      - name: Generate server pack
+        run: |
+          cd scripts
+          chmod +x generate-server-pack.sh
+          ./generate-server-pack.sh
+        env:
+          CURSEFORGE_API_KEY: ${{ secrets.CURSE_TOKEN }}
+
+      - name: Zip server pack
+        run: |
+          zip -r Cosmic.Frontiers.${{ steps.set_tag.outputs.tag }}.Server.zip server-pack
+
+      - name: Upload processed zip to release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.set_tag.outputs.tag }}
+          files: Cosmic.Frontiers.${{ steps.set_tag.outputs.tag }}.Server.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
