@@ -1,5 +1,11 @@
 //none of the materials that have ores generate atm because i still don't understand kubejs gt ore generation, i (would)/(will) (if i could)/(when i can)
 GTCEuStartupEvents.registry('gtceu:material', event => {
+
+    event.create('trinium_tetraoxide_dichloride')
+    .dust()
+    .formula("KeO4Cl2")
+    .color(0x6b4b6e).iconSet(GTMaterialIconSet.DULL)
+
     event.create('alumina')
         .dust()
         .ore()
@@ -9,11 +15,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0x3dc34d).iconSet(GTMaterialIconSet.DULL)
         .element(GTElements.get('chromium_iii_oxide'))
-    event.create('banded_iron')
-        .ingot()
-        .ore()
-        .color(0x513232).iconSet(GTMaterialIconSet.DULL)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR)
     event.create('sodium_carbonate_solution')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .color(0x636389)

@@ -1,4 +1,4 @@
 {
-    "groups.diet.psi_group.name": "Psi Energy",
-    "groups.diet.mana_group.name": "Mana"  
+    "groups.diet.psi.name": "Psi Energy",
+    "groups.diet.mana.name": "Mana"  
 }

@@ -3,10 +3,10 @@
 	default_quest_shape: ""
 	filename: "freshly_forged_souls"
 	group: "34809FA43B03812C"
-	icon: "blue_skies:soul_fragment"
+	icon: "biomesoplenty:lumaloop"
 	id: "26631A1C73AF31BA"
 	order_index: 0
 	quest_links: [ ]
 	quests: [ ]
-	title: "Freshly Forged Souls"
+	title: "The Progenitor - [&3UV]"
 }

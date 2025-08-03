@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:oxygen 5000')
         .outputFluids('gtceu:thundering_aerocloud_solution 4000')
         .outputFluids('gtceu:argon 2000')
-        .duration(80)
+        .duration(800)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.mixer('nutritious_tears_of_the_sky')
         .itemInputs('4x aether:aechor_petal', '1x aether:golden_amber')

@@ -8,6 +8,14 @@
 	hide_quest_until_deps_visible: true
 	icon: "gtceu:galvanized_ethersteel_ingot"
 	id: "2AF6C950A3B12568"
+	images: [{
+		height: 3.5d
+		image: "frontiers:textures/questimages/miscicons/wingedborder.png"
+		rotation: 0.0d
+		width: 3.5d
+		x: 5.090476190476188d
+		y: 6.214285714285708d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -152,7 +160,7 @@
 		{
 			dependencies: ["4573B786F0ED6565"]
 			description: [
-				"Used to make the next tier of circuits, 'Micros' as they are commonlyy called."
+				"Used to make the next tier of circuits, 'Micros' as they are commonly called."
 				""
 				"Micro circuits offer you the best MV circuit you can make, and unlock the EV and IV circuit tier."
 				""
@@ -308,7 +316,7 @@
 			]
 			id: "2823B3BAEF820B50"
 			shape: "hexagon"
-			size: 2.5d
+			size: 2.0d
 			subtitle: "Time to subdue the depths."
 			tasks: [{
 				id: "31A6572E4A197DC7"
@@ -1436,7 +1444,7 @@
 		}
 		{
 			dependencies: ["308F457E26E57039"]
-			description: ["Next, Take your &eSodium Chromate Soltion&r and some &eSulfuric Acid&r and slap that inside a &aChemical Dehydrator&r. You'll end up with &bSodium Dichromate Solution&r and some S&6odium Sulfate&r as a byproduct."]
+			description: ["Next, Take your &eSodium Chromate Solution&r and some &eSulfuric Acid&r and slap that inside a &aChemical Dehydrator&r. You'll end up with &bSodium Dichromate Solution&r and some &6Sodium Sulfate&r as a byproduct."]
 			icon: "gtceu:sodium_dichromate_solution_bucket"
 			id: "1C64908E1A380A95"
 			subtitle: "Time to concentrate it."
@@ -1682,7 +1690,7 @@
 				type: "checkmark"
 			}]
 			title: "To HV!"
-			x: 3.5d
+			x: 2.5d
 			y: 6.25d
 		}
 		{
@@ -1730,7 +1738,7 @@
 			]
 			title: "Recollection"
 			x: 2.5d
-			y: 6.25d
+			y: 5.0d
 		}
 	]
 	title: "Forged in Galefury [MV]"

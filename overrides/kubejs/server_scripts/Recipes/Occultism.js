@@ -5,6 +5,7 @@ let yeet = (itemName) => {
     event.remove({ output: itemName })
   })
   ServerEvents.tags('item', event => {
+    console.log('[15] - [1] - TAG-WATCHER')
     event.add('c:hidden_from_recipe_viewers', itemName)
 
   })
@@ -45,6 +46,7 @@ yeet('occultism:satchel')
 
 
 ServerEvents.tags('item', event => {
+  console.log('[15] - [2] - TAG-WATCHER')
   event.remove('forge:ingots/silver', 'occultism:silver_ingot')
   event.remove('forge:dusts/iron', 'occultism:iron_dust')
   event.remove('forge:dusts/gold', 'occultism:gold_dust')
@@ -174,6 +176,14 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:creosote 1000')
     .itemOutputs('occultism:chalk_purple_impure')
     .duration(800)
+
+    event.recipes.gtceu.electric_blast_furnace('purple_chalk_melding')
+    .itemInputs(['occultism:chalk_white_impure', '8x gtceu:soulresin_ingot', '4x gtceu:cinderwax_ingot'])
+    .inputFluids('gtceu:oxygen 250')
+    .itemOutputs('occultism:chalk_purple_impure')
+    .blastFurnaceTemp(800)
+    .duration(240)
+    .EUt(128)
   event.recipes.occultism.miner(
     Item.of('cosmiccore:rune_slate_arklys').withChance(50),
     'occultism:miner_foliot_unspecialized'
@@ -205,6 +215,10 @@ ServerEvents.recipes(event => {
   event.recipes.occultism.miner(
     Item.of('malum:cluster_of_brilliance').withChance(75),
     'malum:soul_stained_steel_pickaxe'
+  )
+  event.recipes.occultism.miner(
+    Item.of('minecraft:ancient_debris').withChance(2),
+    'minecraft:netherite_pickaxe'
   )
   event.recipes.occultism.ritual(
     '16x gtceu:runed_steel_ingot',
@@ -309,7 +323,7 @@ ServerEvents.recipes(event => {
         "item": "minecraft:gunpowder"
       },
       {
-        "item": "legendarysurvivaloverhaul:sun_fern_gold_leaf"
+        "item": "minecraft:gold_ingot"
       }
     ],
     "result": {

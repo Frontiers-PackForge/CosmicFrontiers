@@ -1,10 +1,14 @@
-ServerEvents.tags('item', event => {
-    console.log('Registering Food Tags')
-    event.add('gtceu:wheat_dust', 'forge:flour')
-})
-
 ServerEvents.recipes(event => {
     console.log('Registering Other Food Recipes')
+
+    event.replaceInput({ input: '#forge:doughs' }, '#forge:doughs', '#forge:dough')
+    event.replaceInput({ input: '#forge:dough/wheat' }, '#forge:dough/wheat', '#forge:dough')
+    event.replaceInput({ input: '#croptopia:pork_replacements' }, '#croptopia:pork_replacements', '#forge:raw_pork')
+    event.replaceInput({ input: '#croptopia:beef_replacements' }, '#croptopia:beef_replacements', '#forge:raw_beef')
+    event.replaceInput({ input: '#croptopia:chicken_replacements' }, '#croptopia:chicken_replacements', '#forge:raw_chicken')
+    event.replaceInput({ input: 'croptopia:frying_pan' }, 'croptopia:frying_pan', 'farmersdelight:skillet')
+    event.replaceInput({ input: 'croptopia:salt' }, 'croptopia:salt', '#forge:salt')
+    
 
     event.recipes.gtceu.macerator(`croptopia:paprika`)
         .itemInputs('croptopia:chile_pepper')

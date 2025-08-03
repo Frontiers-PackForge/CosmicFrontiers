@@ -1195,7 +1195,7 @@ ServerEvents.recipes(event => {
         .duration(recipeDuration);
 
     event.recipes.gtceu.culinary_assembler('farmersdelight:vegetable_soup')
-        .itemInputs('minecraft:carrot', 'minecraft:potato', 'minecraft:potato', '#forge:salad_ingredients', 'minecraft:bowl')
+        .itemInputs('minecraft:carrot', 'minecraft:potato', 'minecraft:beetroot', '#forge:salad_ingredients', 'minecraft:bowl')
         .itemOutputs('farmersdelight:vegetable_soup')
         .EUt(recipeEUt)
         .duration(recipeDuration);

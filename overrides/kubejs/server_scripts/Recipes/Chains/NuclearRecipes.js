@@ -33,11 +33,11 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:californium_dust', 3500, 1500)
         .duration(120)
         .EUt(GTValues.VA[GTValues.IV]);
-    // event.recipes.gtceu.chemical_reactor("test_and")
+    // event.recipes.gtceu.chemical_reactor("test_xor")
     //     .itemInputs('1x minecraft:stone')
-    //     .chancedItemOutputLogic($ChanceLogic.XOR)
-    //     .chancedOutput('2x minecraft:dirt', 5000, 100)
-    //     .chancedOutput('4x minecraft:dirt', 2500, 600)
+    //     .chancedFluidOutputLogic($ChanceLogic.XOR)
+    //     .chancedFluidOutput('gtceu:oxygen 500', 5000, 0)
+    //     .chancedFluidOutput('gtceu:fluorine 500', 2500, 0)
     //     .duration(400)
     //     .EUt(25)
     let saltFuelt1 = [
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.EV]);
         event.recipes.gtceu.molten_salt_reactor(`${tier}_salt_reaction_breeder`)
             .inputFluids(`gtceu:${tier}_fuel_salt 1000`)
-            .outputFluids([`gtceu:superheated_${tier}_fuel_salt 250`,`gtceu:superheated_waste_${tier}_fuel_salt 750`])
+            .outputFluids([`gtceu:superheated_${tier}_fuel_salt 250`, `gtceu:superheated_waste_${tier}_fuel_salt 750`])
             .circuit(2)
             .duration(120)
             .EUt(GTValues.VA[GTValues.EV]);

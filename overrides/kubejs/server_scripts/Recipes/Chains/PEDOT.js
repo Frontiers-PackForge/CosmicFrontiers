@@ -24,8 +24,9 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV]);
 
     event.recipes.gtceu.large_chemical_reactor('ethylene_oxide')
-        .itemInputs('gtceu:silver_dust')
+        .notConsumable('gtceu:silver_dust')
         .inputFluids('gtceu:ethylene 7000')
+        .inputFluids('gtceu:oxygen 12000')
         .outputFluids('gtceu:ethylene_oxide 6000')
         .outputFluids('gtceu:carbon_dioxide 2000')
         .outputFluids('minecraft:water 2000')

@@ -21,15 +21,15 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.large_chemical_reactor('fuel_mix_injection_into_gasoline')
         .itemInputs('4x gtceu:gelled_toluene')
         .inputFluids('gtceu:raw_gasoline 10000')
-        .inputFluids('gtceu:starry_fuel_mixture 1000')
-        .outputFluids('gtceu:stardust_infused_gasoline 16000')
+        .inputFluids('gtceu:starry_fuel_mixture 4000')
+        .outputFluids('gtceu:stardust_infused_gasoline 20000')
         .duration(240)
         .EUt(GTValues.VA[GTValues.EV]);
 
 
     event.recipes.gtceu.combustion_generator('starry_gasoline')
         .inputFluids('gtceu:stardust_infused_gasoline 1')
-        .duration(75)
+        .duration(125)
         .EUt(-GTValues.V[GTValues.LV])
 
 })

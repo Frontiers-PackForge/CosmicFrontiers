@@ -30,6 +30,15 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(GTValues.VA[GTValues.EV]);
 
+
+    event.recipes.gtceu.mana_engraver(`vitrius_creation`)
+        .itemInputs(['gtceu:naquadria_dust', 'gtceu:californium_dust'])
+        .inputFluids('cosmiccore:prisma 2000')
+        .outputFluids('cosmiccore:vitrius 2000')
+        .duration(340)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+
     //T1 Essences
     event.recipes.gtceu.essence_reactor(`water_reagent`)
         .itemInputs('2x biomesoplenty:waterlily')
@@ -71,7 +80,7 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.assembler(`essence_reactor_controller`)
-        .itemInputs(['botania:alfheim_portal', 'gtceu:ev_machine_hull', 'gtceu:terrasteel_frame', '4x gtceu:long_terrasteel_rod', '2x gtceu:micro_processor_computer'])
+        .itemInputs(['botania:alfheim_portal', 'gtceu:ev_machine_hull', 'gtceu:terrasteel_frame', '4x gtceu:long_terrasteel_rod', '2x #gtceu:circuits/ev'])
         .inputFluids('gtceu:potent_mana 1000')
         .itemOutputs('gtceu:essence_reactor')
         .duration(240)

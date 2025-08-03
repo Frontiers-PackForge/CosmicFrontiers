@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV]);
     event.recipes.gtceu.combustion_generator('boosted_combustion_source_fuel')
         .inputFluids('gtceu:thunder_boosted_source_diesel 1')
-        .duration(100)
+        .duration(75)
         .EUt(-GTValues.V[GTValues.LV])
 
 })

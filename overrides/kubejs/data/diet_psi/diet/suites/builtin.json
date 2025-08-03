@@ -1,7 +1,7 @@
 {
   "replace": false,
   "groups": [
-    "psi_group"
+    "psi"
   ],
   "effects": [
     {
@@ -13,7 +13,7 @@
       ],
       "conditions": [
         {
-          "groups": ["psi_group"],
+          "groups": ["psi"],
           "match": "all",
           "above": 0.8,
           "below": 1.0

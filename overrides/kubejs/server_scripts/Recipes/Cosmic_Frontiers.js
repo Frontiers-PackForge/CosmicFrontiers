@@ -5,12 +5,14 @@ let yeet = (itemName) => {
               event.remove({ output: itemName })
        })
        ServerEvents.tags('item', event => {
+              console.log('[5] - [1] - TAG-WATCHER')
               event.add('c:hidden_from_recipe_viewers', itemName)
 
        })
 }
 
 ServerEvents.tags('item', event => {
+       console.log('[5] - [2] - TAG-WATCHER')
        event.add('thinair:heavy_breathing_equipment', 'ad_astra:space_helmet')
        event.add('thinair:heavy_breathing_equipment', 'kubejs:nano_respirator')
        event.add('thinair:breathing_equipment', 'kubejs:nano_respirator')
@@ -48,15 +50,18 @@ yeet('gtceu:trinium_coil_block')
 yeet('gtceu:tritanium_coil_block')
 yeet('vintagedelight:ghost_charcoal')
 
+
 ServerEvents.recipes(event => {
 
        //MISC REMOVALS
+       event.remove({ id: 'experienceobelisk:molecular_metamorpher' })
        event.remove({ id: 'gtceu:extractor/extract_luminite_dust' })
        event.remove({ id: 'gtceu:shaped_fluid_container/casing_primitive_bricks' })
        event.remove({ id: 'gtceu:extractor/extract_luminite_ingot' })
        event.remove({ id: 'gtceu:extractor/extract_luminite_block' })
        event.remove({ id: 'gtceu:extractor/extract_luminite_nugget' })
        event.remove({ id: 'gtceu:arc_furnace/arc_empty_mold' })
+       event.remove({ id: 'gtceu:macerator/macerate_sculk' })
        event.remove({ id: 'gtceu:macerator/macerate_empty_mold' })
        event.remove({ id: 'gtceu:arc_furnace/arc_plate_casting_mold' })
        event.remove({ id: 'gtceu:macerator/macerate_plate_casting_mold' })
@@ -230,6 +235,13 @@ ServerEvents.recipes(event => {
               C: 'minecraft:charcoal'
        })
 
+       event.remove({ id: 'gtceu:assembler/stonecutter' })
+       event.recipes.gtceu.assembler('gtceu:assembler/stonecutter')
+              .itemInputs(['minecraft:stone_slab', 'gtceu:iron_buzz_saw_blade',])
+              .itemOutputs('minecraft:stonecutter')
+              .circuit(1)
+              .duration(80)
+              .EUt(6);
        event.recipes.gtceu.assembler('ug_catalyst')
               .itemInputs(['minecraft:heart_of_the_sea', 'aether:bronze_dungeon_key', 'aether:silver_dungeon_key', 'aether:gold_dungeon_key', '#gtceu:circuits/hv',])
               .inputFluids('gtceu:source_oils 12000')
@@ -352,8 +364,8 @@ ServerEvents.recipes(event => {
        event.recipes.gtceu.mixer('cosmiccore:sediment_sludge_mixing_good')
               .itemInputs(['2x biomesoplenty:blackstone_bulb', '3x gtceu:netherrack_dust', '2x minecraft:crimson_fungus'])
               .inputFluids('gtceu:nether_sediment_sludge 1000')
-              .inputFluids('minecraft:water 1000')
-              .outputFluids('gtceu:nether_sediment_sludge 2000')
+              .inputFluids('minecraft:water 3000')
+              .outputFluids('gtceu:nether_sediment_sludge 4000')
               .duration(80)
               .circuit(1)
               .EUt(GTValues.VA[GTValues.LV]);
@@ -430,9 +442,15 @@ ServerEvents.recipes(event => {
               .outputFluids(Fluid.of('gtceu:potent_mana', 6000))
               .duration(2100)
               .EUt(GTValues.VA[GTValues.EV]);
-       event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_entropinnyum')
+       event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_entropinnyum_tnt')
               .notConsumable('kubejs:mechanical_entropinnyum')
               .itemInputs('4x minecraft:tnt')
+              .outputFluids(Fluid.of('gtceu:potent_mana', 6000))
+              .duration(120)
+              .EUt(GTValues.VA[GTValues.EV]);
+       event.recipes.gtceu.mana_simulator('cosmiccore:mechanical_entropinnyum_itnt')
+              .notConsumable('kubejs:mechanical_entropinnyum')
+              .itemInputs('1x gtceu:industrial_tnt')
               .outputFluids(Fluid.of('gtceu:potent_mana', 6000))
               .duration(120)
               .EUt(GTValues.VA[GTValues.EV]);
@@ -441,6 +459,28 @@ ServerEvents.recipes(event => {
               .outputFluids(Fluid.of('gtceu:luminite', 144))
               .duration(48)
               .EUt(GTValues.VA[GTValues.HV]);
+       event.recipes.gtceu.extractor('experience_gem_extract')
+              .itemInputs('ars_nouveau:experience_gem')
+              .outputFluids(Fluid.of('experienceobelisk:cognitium', 60))
+              .duration(60)
+              .EUt(GTValues.VA[GTValues.MV]);
+       event.recipes.gtceu.extractor('greater_experience_gem_extract')
+              .itemInputs('ars_nouveau:greater_experience_gem')
+              .outputFluids(Fluid.of('experienceobelisk:cognitium', 240))
+              .duration(200)
+              .EUt(GTValues.VA[GTValues.MV]);
+       event.recipes.gtceu.packer('greater_experience_gem_packing')
+              .itemInputs('4x ars_nouveau:experience_gem')
+              .itemOutputs('ars_nouveau:greater_experience_gem')
+              .duration(10)
+              .circuit(1)
+              .EUt(GTValues.VA[GTValues.LV]);
+       event.recipes.gtceu.packer('greater_experience_gem_unpacking')
+              .itemInputs('ars_nouveau:greater_experience_gem')
+              .itemOutputs('4x ars_nouveau:experience_gem')
+              .duration(10)
+              .circuit(1)
+              .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.autoclave('lumi_utherium_bad')
               .inputFluids('gtceu:luminite 144')
               .itemInputs('2x gtceu:utherium_dust')
@@ -462,6 +502,14 @@ ServerEvents.recipes(event => {
               .blastFurnaceTemp(4500)
               .circuit(4)
               .duration(9600)
+              .EUt(GTValues.VA[GTValues.EV]);
+       event.recipes.gtceu.alloy_blast_smelter('zbland_glass_crafting')
+              .inputFluids('gtceu:fluorine 6000')
+              .itemInputs(['5x gtceu:zirconium_dust', '2x gtceu:barium_dust', 'gtceu:lanthanum_dust', 'gtceu:aluminium_dust', '2x gtceu:sodium_dust'])
+              .outputFluids('gtceu:zblan_glass 2448')
+              .duration(4800)
+              .circuit(16)
+              .blastFurnaceTemp(7000)
               .EUt(GTValues.VA[GTValues.EV]);
        event.recipes.gtceu.alloy_blast_smelter('virtue_meld_molten_good')
               .notConsumableFluid('gtceu:molten_virtue_meld 1152')
@@ -514,16 +562,31 @@ ServerEvents.recipes(event => {
               .EUt(GTValues.VA[GTValues.LV]);
        event.recipes.gtceu.assembler('nano_space_default')
               .itemInputs(['gtceu:nanomuscle_chestplate', '2x ad_astra:large_gas_tank'])
-              .itemOutputs(Item.of('cosmiccore:space_nanomuscle_chestplate', '{affix_data:{sockets:0}}'))
+              .itemOutputs('cosmiccore:space_nanomuscle_chestplate')
               .circuit(1)
               .duration(600)
               .EUt(GTValues.VA[GTValues.HV]);
        event.recipes.gtceu.assembler('adv_nano_space_default')
-              .itemInputs(['gtceu:advanced_nanomuscle_chestplate', '2x ad_astra:large_gas_tank'])
-              .itemOutputs(Item.of('cosmiccore:space_advanced_nanomuscle_chestplate', '{affix_data:{sockets:0}}'))
+              .itemInputs(['gtceu:avanced_nanomuscle_chestplate', '2x ad_astra:large_gas_tank'])
+              .itemOutputs('cosmiccore:space_advanced_nanomuscle_chestplate')
               .circuit(1)
               .duration(600)
               .EUt(GTValues.VA[GTValues.HV]);
+
+       event.recipes.gtceu.assembler('quark_spacesuit')
+              .itemInputs(['gtceu:quarktech_chestplate', '2x ad_astra:large_gas_tank'])
+              .itemOutputs('cosmiccore:space_quarktech_chestplate')
+              .circuit(2)
+              .duration(600)
+              .EUt(GTValues.VA[GTValues.LuV]);
+
+       event.recipes.gtceu.assembler('adv_quark_spacesuit')
+              .itemInputs(['gtceu:advanced_quarktech_chestplate', '2x ad_astra:large_gas_tank'])
+              .itemOutputs('cosmiccore:space_advanced_quarktech_chestplate')
+              .circuit(2)
+              .duration(600)
+              .EUt(GTValues.VA[GTValues.LuV]);
+
        event.recipes.gtceu.assembler('reactor_casing_default')
               .itemInputs(['gtceu:titanium_frame', '4x gtceu:double_lead_plate', '2x gtceu:beryllium_plate'])
               .itemOutputs('cosmiccore:high_temperature_fission_casing')
@@ -543,11 +606,28 @@ ServerEvents.recipes(event => {
               .duration(320)
               .EUt(GTValues.VA[GTValues.IV]);
        event.recipes.gtceu.assembler('naq_pressure_casing')
-              .itemInputs(['gtceu:tungsten_frame', '6x gtceu:naquadah_plate'])
+              .itemInputs(['gtceu:naquadah_alloy_frame', '6x gtceu:synthetic_pthanterum_plate'])
               .itemOutputs('cosmiccore:naquadah_pressure_resistant_casing')
               .circuit(6)
               .duration(320)
               .EUt(GTValues.VA[GTValues.IV]);
+       event.recipes.gtceu.assembler('rvm_casing')
+              .itemInputs(['cosmiccore:resonant_virtue_meld_frame', '6x gtceu:osmiridium_plate'])
+              .itemOutputs('cosmiccore:resonantly_tuned_virtue_meld_casing')
+              .circuit(6)
+              .duration(320)
+              .EUt(GTValues.VA[GTValues.LuV]);
+
+       event.remove({ id: 'gtceu:distillation_tower/distill_coal_gas' })
+       event.recipes.gtceu.distillation_tower('frontiers:distill_coal_gas')
+              .inputFluids('gtceu:coal_gas 1000')
+              .outputFluids('gtceu:carbon_dioxide 200')
+              .outputFluids('gtceu:coal_tar 200')
+              .outputFluids('gtceu:ammonia 200')
+              .outputFluids('gtceu:ethylbenzene 200')
+              .outputFluids('gtceu:kerosene 200')
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
        event.recipes.gtceu.assembler('phenolic_board_good')
               .itemInputs('botania:manaweave_cloth')
               .inputFluids('gtceu:glue 100')
@@ -686,8 +766,22 @@ ServerEvents.recipes(event => {
               .duration(10)
               .EUt(GTValues.VA[GTValues.LV] / 2);
 
-
-
+       //sun fern flora nurturer recipes -- placed here since the ice fern ones are autogenned(?) while these aren't
+       event.recipes.gtceu.flora_nurturer('cosmiccore:sun_fern_cultivation_sludge')
+              .notConsumable('legendarysurvivaloverhaul:sun_fern_leaf')
+              .notConsumable('minecraft:moss_block')
+              .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 500))
+              .itemOutputs('legendarysurvivaloverhaul:sun_fern_leaf')
+              .chancedOutput(Item.of('legendarysurvivaloverhaul:sun_fern_leaf', 1), 2500, 50)
+              .duration(160)
+              .EUt(15);
+       event.recipes.gtceu.flora_nurturer('cosmiccore:sun_fern_cultivation_nutrient_solution')
+              .notConsumable('legendarysurvivaloverhaul:sun_fern_leaf')
+              .notConsumable('minecraft:moss_block')
+              .inputFluids(Fluid.of('gtceu:nutrient_solution', 50))
+              .itemOutputs('16x legendarysurvivaloverhaul:sun_fern_leaf')
+              .duration(160)
+              .EUt(60);
 
        //TODO - Mechanical Flower Recipes
        event.recipes.botania.runic_altar('gtceu:mana_simulator', ['#gtceu:circuits/ev', 'gtceu:terrasteel_octal_wire', 'gtceu:terrasteel_octal_wire', 'gtceu:terrasteel_plate', 'gtceu:terrasteel_plate', 'gtceu:terrasteel_plate', 'gtceu:terrasteel_plate', 'botania:gourmaryllis', 'botania:entropinnyum', '#gtceu:circuits/ev', 'botania:narslimmus', 'botania:spectrolus', 'botania:blacker_lotus'], 250000)
@@ -754,4 +848,46 @@ ServerEvents.recipes(event => {
               .itemOutputs('minecraft:ender_pearl')
               .duration(100)
               .EUt(4)
+
+       //netherite blocks are stupid. removing recipes and adding them back, seeing as i cant see the recipes im just removing by output :utmostsin:
+       event.remove({ output: 'minecraft:netherite_block' })
+       event.recipes.gtceu.alloy_smelter('netherite_block_smelter')
+              .notConsumable('gtceu:block_casting_mold')
+              .itemInputs('9x minecraft:netherite_ingot')
+              .itemOutputs('minecraft:netherite_block')
+              .duration(200)
+              .EUt(28)
+
+       event.recipes.gtceu.compressor('netherite_block_compressor')
+              .itemInputs('9x minecraft:netherite_ingot')
+              .itemOutputs('minecraft:netherite_block')
+              .duration(900)
+              .EUt(2)
+
+       event.recipes.gtceu.extruder('netherite_block_extruder')
+              .notConsumable('gtceu:block_extruder_mold')
+              .itemInputs('9x minecraft:netherite_ingot')
+              .itemOutputs('minecraft:netherite_block')
+              .duration(20)
+              .EUt(56)
+
+       event.recipes.gtceu.alloy_smelter('netherite_block_smelter_dust')
+              .notConsumable('gtceu:block_casting_mold')
+              .itemInputs('9x gtceu:netherite_dust')
+              .itemOutputs('minecraft:netherite_block')
+              .duration(400)
+              .EUt(28)
+
+       event.recipes.gtceu.alloy_smelter('netherite_ingot_smelter')
+              .notConsumable('gtceu:ingot_casting_mold')
+              .itemInputs('minecraft:netherite_block')
+              .itemOutputs('9x minecraft:netherite_ingot')
+              .duration(1200)
+              .EUt(7)
+
+       event.recipes.gtceu.macerator('netherite_dust_block_macerator')
+              .itemInputs('minecraft:netherite_block')
+              .itemOutputs('9x gtceu:netherite_dust')
+              .duration(900)
+              .EUt(2)
 })

@@ -36,9 +36,9 @@ net.minecraft.client.gui.screens.AccessibilityOptionsScreen {
 net.minecraft.client.gui.screens.packs.PackSelectionScreen {
 }
 
-net.minecraft.client.gui.screens.TitleScreen {
+de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
 }
 
-de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
+net.minecraft.client.gui.screens.TitleScreen {
 }
 

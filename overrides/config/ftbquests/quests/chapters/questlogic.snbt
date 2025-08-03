@@ -334,6 +334,23 @@
 			x: -1.0d
 			y: -1.0d
 		}
+		{
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "197EA5F24A4344F5"
+			invisible: true
+			tasks: [{
+				id: "2C2FD701C6709BCD"
+				item: "bloodmagic:infusedslate"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
 	]
 	title: "&4Dev - QuestLogic"
 }

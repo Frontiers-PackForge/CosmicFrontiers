@@ -14,7 +14,7 @@
     "energyBarY": 95,
     // Type: Float
     "energyBarScale": 1.0,
-    "spaceMuffler": true,
+    "spaceMuffler": false,
     "radio": {
         // Range: 0 - 100
         "volume": 50,

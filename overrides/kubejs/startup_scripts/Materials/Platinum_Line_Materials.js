@@ -207,20 +207,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-    event.create('ascorbic_acid')
-        .dust()
-        .color(0xa1b0bf).iconSet(GTMaterialIconSet.DULL)
-        .flags(
-            GTMaterialFlags.DISABLE_DECOMPOSITION,
-            GTMaterialFlags.NO_UNIFICATION
-        )
-    event.create('dehydroascorbic_acid')
-        .dust()
-        .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
-        .flags(
-            GTMaterialFlags.DISABLE_DECOMPOSITION,
-            GTMaterialFlags.NO_UNIFICATION
-        )
     event.create('cerium_oxide')
         .dust()
         .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)

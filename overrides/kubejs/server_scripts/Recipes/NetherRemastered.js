@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     .duration(800)
     .EUt(8);  
     event.recipes.gtceu.assembler('gtceu:shard_fragment_2') 
-    .itemInputs(['2x gtceu:double_gold_plate', 'gtceu:steel_ring','minecraft:nautilus_shell'])
+    .itemInputs(['2x gtceu:double_gold_plate', 'gtceu:steel_ring','#minecraft:music_discs'])
     .itemOutputs('nether_remastered:seal_piece_2')
     .duration(800)
     .EUt(8);  
