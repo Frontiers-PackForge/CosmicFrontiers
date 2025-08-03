@@ -35,6 +35,9 @@ yeet('gtceu:small_magnetic_neodymium_praseodymium_dust')
 yeet('gtceu:magnetic_neodymium_praseodymium_dust')
 yeet('botania:endoflame')
 yeet('gtceu:large_plasma_turbine')
+yeet('expandedae:exp_pattern_provider')
+yeet('expandedae:exp_pattern_provider_upgrade')
+yeet('expandedae:exp_pattern_provider_part')
 yeet(/gtceu:(.*)butchery_knife$/)
 
 
@@ -81,11 +84,13 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_terrasteel_dust_to_block' })
   event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_rhenium_dust_to_block' })
   event.remove({ id: 'terralith:piston_alt' })
+  event.remove({ id: 'gtceu:macerator/macerate_treated_wood_planks' })
 
   event.replaceOutput({ id: 'gtceu:shaped/extreme_combustion_engine' }, 'gtceu:extreme_combustion_engine', 'gtceu:extreme_combustion_engine_cc')
   event.replaceOutput({ id: 'gtceu:shaped/large_combustion_engine' }, 'gtceu:large_combustion_engine', 'gtceu:large_combustion_engine_cc')
   event.replaceOutput({ id: 'gtceu:shaped/power_substation' }, 'gtceu:power_substation', 'cosmiccore:dimensional_energy_capacitor')
   event.replaceOutput({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_uvarovite' }, 'gtceu:chromium_dust', 'gtceu:chromite_dust')
+
 
   event.shapeless('cosmiccore:dimensional_energy_capacitor', [
     'gtceu:power_substation'
@@ -192,6 +197,12 @@ ServerEvents.recipes(event => {
     .duration(40)
     .circuit(2)
     .EUt(GTValues.VA[GTValues.EV]);
+
+  event.recipes.gtceu.macerator('frontiers:treated_wood_dust')
+    .itemInputs('gtceu:treated_wood_planks')
+    .itemOutputs('gtceu:treated_wood_dust')
+    .duration(400)
+    .EUt(2);
 
   event.recipes.gtceu.mana_engraver('frontiers:alf_glass')
     .itemInputs('botania:mana_glass')
