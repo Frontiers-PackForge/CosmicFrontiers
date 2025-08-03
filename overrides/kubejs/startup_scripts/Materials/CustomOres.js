@@ -51,4 +51,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION
         )
+
+    event.create("vamerite")
+        .dust().ore()
+        .color(0xc1aa82).iconSet("dull")
+        .components("2x naquadriaSulfate", "gold", "silver")
+        .addOreByproducts("gold", "silver")
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        )
+        
 })

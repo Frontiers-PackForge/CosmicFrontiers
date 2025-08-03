@@ -1,11 +1,11 @@
 //
 let cables = ['gtceu:manasteel_single_cable', 'gtceu:manasteel_double_cable', 'gtceu:manasteel_quadruple_cable', 'gtceu:manasteel_octal_cable', 'gtceu:manasteel_hex_cable']
 let wires = ['gtceu:manasteel_single_wire', 'gtceu:manasteel_double_wire', 'gtceu:manasteel_quadruple_wire', 'gtceu:manasteel_octal_wire', 'gtceu:manasteel_hex_wire']
-let echo = ['cosmiccore:echo_processor', 'cosmiccore:echo_processor_assembly', 'cosmiccore:echo_processor_supercomputer', 'cosmiccore:echo_processor_mainframe']
+let echo = ['cosmiccore:harmonic_processor', 'cosmiccore:harmonic_processor_assembly', 'cosmiccore:harmonic_processor_supercomputer', 'cosmiccore:harmonic_processor_mainframe']
 let optical = ['cosmiccore:optical_processor', 'cosmiccore:optical_processor_assembly', 'cosmiccore:optical_processor_supercomputer', 'cosmiccore:optical_processor_mainframe']
-let cosmic = ['cosmiccore:cosmic_processor', 'cosmiccore:cosmic_processor_assembly', 'cosmiccore:cosmic_processor_supercomputer', 'cosmiccore:cosmic_processor_mainframe']
-let psionic = ['cosmiccore:psionic_processor', 'cosmiccore:psionic_processor_assembly', 'cosmiccore:psionic_processor_supercomputer', 'cosmiccore:psionic_processor_mainframe']
-let macroverse = ['cosmiccore:macroverse_processor', 'cosmiccore:macroverse_processor_assembly', 'cosmiccore:macroverse_processor_supercomputer', 'cosmiccore:macroverse_processor_mainframe']
+let cosmic = ['cosmiccore:suelescent_processor', 'cosmiccore:suelescent_processor_assembly', 'cosmiccore:suelescent_processor_supercomputer', 'cosmiccore:suelescent_processor_mainframe']
+let akashic = ['cosmiccore:akashic_processor', 'cosmiccore:akashic_processor_assembly', 'cosmiccore:akashic_processor_supercomputer', 'cosmiccore:akashic_processor_mainframe']
+let eschaton = ['cosmiccore:eschaton_processor', 'cosmiccore:eschaton_processor_assembly', 'cosmiccore:eschaton_processor_supercomputer', 'cosmiccore:eschaton_processor_mainframe']
 let boilaway = ['gtceu:bronze_large_boiler', 'gtceu:steel_large_boiler', 'gtceu:titanium_large_boiler', 'gtceu:tungstensteel_large_boiler']
 ItemEvents.tooltip(event => {
   // event.add('gtceu:manasteel_single_cable', Text.of('LV Superconductor'))
@@ -23,16 +23,16 @@ ItemEvents.tooltip(event => {
   event.addAdvanced(echo, (item, advanced, text) => {
     text.add(1, Text.of('Circuits Resonating with the World').gray())
   })
-  event.addAdvanced('cosmiccore:echo_processor', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:harmonic_processor', (item, advanced, text) => {
     text.add(2, Text.of('ZPM-Tier Circuit').darkAqua())
   })
-  event.addAdvanced('cosmiccore:echo_processor_assembly', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:harmonic_processor_assembly', (item, advanced, text) => {
     text.add(2, Text.of('UV-Tier Circuit').darkAqua())
   })
-  event.addAdvanced('cosmiccore:echo_processor_supercomputer', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:harmonic_processor_supercomputer', (item, advanced, text) => {
     text.add(2, Text.of('UHV-Tier Circuit').darkAqua())
   })
-  event.addAdvanced('cosmiccore:echo_processor_mainframe', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:harmonic_processor_mainframe', (item, advanced, text) => {
     text.add(2, Text.of('UEV-Tier Circuit').darkAqua())
   })
   //OPTICAL CIRCUITS
@@ -55,48 +55,48 @@ ItemEvents.tooltip(event => {
   event.addAdvanced(cosmic, (item, advanced, text) => {
     text.add(1, Text.of('Planck Computation').gray())
   })
-  event.addAdvanced('cosmiccore:cosmic_processor', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:suelescent_processor', (item, advanced, text) => {
     text.add(2, Text.of('UHV-Tier Circuit').darkPurple())
   })
-  event.addAdvanced('cosmiccore:cosmic_processor_assembly', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:suelescent_processor_assembly', (item, advanced, text) => {
     text.add(2, Text.of('UEV-Tier Circuit').darkPurple())
   })
-  event.addAdvanced('cosmiccore:cosmic_processor_supercomputer', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:suelescent_processor_supercomputer', (item, advanced, text) => {
     text.add(2, Text.of('UIV-Tier Circuit').darkPurple())
   })
-  event.addAdvanced('cosmiccore:cosmic_processor_mainframe', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:suelescent_processor_mainframe', (item, advanced, text) => {
     text.add(2, Text.of('UXV-Tier Circuit').darkPurple())
   })
-  //PSIONIC CIRCUITS
-  event.addAdvanced(psionic, (item, advanced, text) => {
-    text.add(1, Text.of('Perfected Bioresonance Calculations').gray())
+  //akashic CIRCUITS
+  event.addAdvanced(akashic, (item, advanced, text) => {
+    text.add(1, Text.of('Perfected Recordkeeping Calculations').gray())
   })
-  event.addAdvanced('cosmiccore:psionic_processor', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:akashic_processor', (item, advanced, text) => {
     text.add(2, Text.of('UEV-Tier Circuit').lightPurple())
   })
-  event.addAdvanced('cosmiccore:psionic_processor_assembly', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:akashic_processor_assembly', (item, advanced, text) => {
     text.add(2, Text.of('UIV-Tier Circuit').lightPurple())
   })
-  event.addAdvanced('cosmiccore:psionic_processor_supercomputer', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:akashic_processor_supercomputer', (item, advanced, text) => {
     text.add(2, Text.of('UXV-Tier Circuit').lightPurple())
   })
-  event.addAdvanced('cosmiccore:psionic_processor_mainframe', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:akashic_processor_mainframe', (item, advanced, text) => {
     text.add(2, Text.of('OPV-Tier Circuit').lightPurple())
   })
-  //MACROVERSE CIRCUITS
-  event.addAdvanced(macroverse, (item, advanced, text) => {
-    text.add(1, Text.of('The Universe in the Palm of Your Hands').red().bold())
+  //eschaton CIRCUITS
+  event.addAdvanced(eschaton, (item, advanced, text) => {
+    text.add(1, Text.of('The Universe Within Your Universe.').red().bold())
   })
-  event.addAdvanced('cosmiccore:macroverse_processor', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:eschaton_processor', (item, advanced, text) => {
     text.add(2, Text.of('UIV-Tier Circuit'))
   })
-  event.addAdvanced('cosmiccore:macroverse_processor_assembly', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:eschaton_processor_assembly', (item, advanced, text) => {
     text.add(2, Text.of('UXV-Tier Circuit'))
   })
-  event.addAdvanced('cosmiccore:macroverse_processor_supercomputer', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:eschaton_processor_supercomputer', (item, advanced, text) => {
     text.add(2, Text.of('OPV-Tier Circuit'))
   })
-  event.addAdvanced('cosmiccore:macroverse_processor_mainframe', (item, advanced, text) => {
+  event.addAdvanced('cosmiccore:eschaton_processor_mainframe', (item, advanced, text) => {
     text.add(2, Text.of('MAX-Tier Circuit'))
     text.add(3, Text.of('Can run Minecraft without lagging, satisfactory!').gray())
   })
@@ -161,7 +161,7 @@ ItemEvents.tooltip(event => {
       text.add(8, Text.of('------------------------------------------------------------').aqua())
       text.add(9, Text.of('Planets will collect Molten Slag, Fluids, and Ores').darkGreen())
       text.add(10, Text.of('Gas Giants will collect Gasses, and Exotic Solids').gold())
-      text.add(11, Text.of('Stars and Blackholes will collect Plasma, Exotic Particles, and Rich Psionic Waveforms').yellow())
+      text.add(11, Text.of('Stars and Blackholes will collect Plasma, Exotic Particles, and Rich akashic Waveforms').yellow())
       text.add(12, Text.of('------------------------------------------------------------').aqua())
       text.add(13, Text.of('EUTotal = (RecipeEU*BeamTier)/SolarTier').gold())
       text.add(14, Text.of('Multiple Bores owned by the same user in a dimension will cause ALL bores to shut down').red().italic())

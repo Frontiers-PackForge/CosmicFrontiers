@@ -221,6 +221,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('psi_superconductor_beta')
         .color(0xb940ff)
         .cableProperties(GTValues.V[GTValues.IV], 16, 0, true)
+    event.create('psi_superconductor_omega')
+        .color(0xffffff)
+        .cableProperties(GTValues.V[GTValues.MAX], 2048, 0, true)
     event.create('neodymium_praseodymium')
         .dust()
         .color(0x473147)
@@ -590,6 +593,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xdb3dff)
         .liquid()
 
+    event.create('dew_light')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
     event.create('grading_fluid_1')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
@@ -602,6 +607,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('grading_fluid_5')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
     event.create('grading_fluid_6')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('grading_fluid_7')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
     event.create('starlight') //Refined Primordial Oil Product

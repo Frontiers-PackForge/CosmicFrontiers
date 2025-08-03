@@ -666,6 +666,27 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.ZPM])
 
 
+  event.recipes.gtceu.assembly_line('frontiers:mana_complex')
+    .itemInputs(['gtceu:mana_simulator', '#gtceu:circuits/uhv', '4x gtceu:ultradense_elementium_plate', '4x gtceu:terrasteel_wire_spool', '4x gtceu:heavy_synthetic_pthanterum_beam'])
+    .itemOutputs('cosmiccore:botanical_simulation_complex')
+    .inputFluids(
+      'gtceu:polybenzimidazole 1152',
+      'gtceu:potent_mana 16000',
+      'gtceu:starlight 16000'
+    )
+    .stationResearch(b => b
+      .researchStack('gtceu:mana_simulator')
+      .CWUt(32)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(1750)
+    .EUt(GTValues.VA[GTValues.ZPM])
+
+
+
+  event.remove({ id: 'gtceu:assembly_line/electric_motor_uv' })
+  event.remove({ id: 'gtceu:assembly_line/electric_piston_uv' })
+  event.remove({ id: 'gtceu:assembly_line/conveyor_module_uv' })
+  event.remove({ id: 'gtceu:assembly_line/robot_arm_uv' })
 
 
 

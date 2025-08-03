@@ -24,6 +24,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Rutile.setProperty(PropertyKey.ORE, new $OreProperty());
     GTMaterials.Titanium.setProperty(PropertyKey.ORE, new $OreProperty());
     GTMaterials.Uranium238.setProperty(PropertyKey.ORE, new $OreProperty());
+    GTMaterials.Indium.setProperty(PropertyKey.ORE, new $OreProperty());
+    GTMaterials.NaquadriaSulfate.setProperty(PropertyKey.ORE, new $OreProperty());
+    
 
     //Netherstar lmfao
     // GTMaterials.NetherStar.setProperty(PropertyKey.GEM, new $GemProperty());
