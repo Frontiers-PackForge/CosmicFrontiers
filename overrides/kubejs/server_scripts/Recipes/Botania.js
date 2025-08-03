@@ -71,12 +71,6 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(5400)
         .duration(925)
         .EUt(GTValues.VA[GTValues.IV]);
-    event.recipes.gtceu.mana_fluidizer('mana_glass_fluidizer')
-        .itemInputs('minecraft:glass')
-        .inputFluids('gtceu:potent_mana 15')
-        .itemOutputs('botania:mana_glass')
-        .EUt(GTValues.VA[GTValues.LV])
-        .duration(20)
     //Rune Etching
     event.recipes.gtceu.mana_engraver('er_water_rune')
         .itemInputs(['gtceu:livingrock_plate', '2x #minecraft:fishes', '4x minecraft:sugar_cane', '4x minecraft:bone_meal', '2x gtceu:manasteel_plate', '2x botania:mana_powder'])
@@ -1768,7 +1762,12 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('gtceu:potent_mana', 10000))
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV]);
-
+    event.recipes.gtceu.mana_fluidizer('mana_glass_fluidizer')
+        .itemInputs('minecraft:glass')
+        .inputFluids('gtceu:potent_mana 15')
+        .itemOutputs('botania:mana_glass')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(20)
     //ManaSteel Ingots
     event.recipes.gtceu.mana_fluidizer('manasteel_ingot_best')
         .itemInputs('gtceu:blue_alloy_ingot')
@@ -1834,5 +1833,66 @@ ServerEvents.recipes(event => {
         .circuit(3)
         .EUt(GTValues.VA[GTValues.HV]);
 
+    event.recipes.gtceu.mana_digitizer('frontiers:somatic_mana_1')
+        .notConsumable('cosmiccore:raymarching_dandilifeon')
+        .inputFluids('gtceu:potent_mana 2400')
+        .perTick(true)
+        .outputFluids('gtceu:somatic_mana 1')
+        .perTick(false)
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+
+    event.recipes.gtceu.mana_digitizer('gtceu:mana_fluid_to_mana_charge')
+        .itemOutputs('botania:blacker_lotus')
+        .itemInputs('minecraft:wither_rose')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 10000))
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.mana_digitizer('mana_glass_fluidizer')
+        .itemInputs('minecraft:glass')
+        .inputFluids('gtceu:potent_mana 15')
+        .itemOutputs('botania:mana_glass')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(20)
+    //ManaSteel Ingots
+    event.recipes.gtceu.mana_digitizer('manasteel_ingot_best')
+        .itemInputs('gtceu:blue_alloy_ingot')
+        .itemOutputs('botania:manasteel_ingot')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 250))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.mana_digitizer('manasteel_block_best')
+        .itemInputs('gtceu:blue_alloy_block')
+        .itemOutputs('botania:manasteel_block')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 2000))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
+    //Mana Pearl
+    event.recipes.gtceu.mana_digitizer('gtceu:mana_pearl')
+        .itemInputs('#forge:ender_pearls')
+        .itemOutputs('botania:mana_pearl')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 250))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
+    //Mana Diamond
+    event.recipes.gtceu.mana_digitizer('gtceu:mana_diamond')
+        .itemInputs('gtceu:flawless_diamond_gem')
+        .itemOutputs('botania:mana_diamond')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 500))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.mana_digitizer('gtceu:mana_powder')
+        .itemInputs('gtceu:electrotine_dust')
+        .itemOutputs('botania:mana_powder')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 50))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.mana_digitizer('frontiers:mana_string')
+        .itemInputs('minecraft:string')
+        .itemOutputs('botania:mana_string')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 50))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
 })
 

@@ -89,7 +89,6 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.centrifuge('frontiers:blood_plasma_to_other_stuff')
         .inputFluids('gtceu:blood_plasma 8000')
-        .itemInputs('cosmiccore:gelatin_scaffold')
         .outputFluids('gtceu:catalase 1000', 'gtceu:fibroblast_growth_factor 3000')
         .chancedOutput('gtceu:meat_dust', 1500, 0)
         .duration(650)

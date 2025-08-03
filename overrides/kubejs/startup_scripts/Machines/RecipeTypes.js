@@ -27,13 +27,13 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ASSEMBLER);
 
-    event.create('laminator')
-        .category('frontiers')
-        .setMaxIOSize(3, 2, 2, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
-        .setSlotOverlay(false, false, GuiTextures.NEUTRAL_MATTER_OVERLAY)
-        .setEUIO('in')
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.MIXER)
+    // event.create('laminator')
+    //     .category('frontiers')
+    //     .setMaxIOSize(3, 2, 2, 0) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+    //     .setSlotOverlay(false, false, GuiTextures.NEUTRAL_MATTER_OVERLAY)
+    //     .setEUIO('in')
+    //     .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+    //     .setSound(GTSoundEntries.MIXER)
 
     event.create('aio_lithography_processor')
         .category('frontiers')
@@ -43,13 +43,13 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
 
-    event.create('mana_fluidizer')
-        .category('frontiers')
-        .setMaxIOSize(1, 1, 1, 1) //Max Item in, max item out, max fluid in, max fluid out (in slots)
-        .setSlotOverlay(false, false, GuiTextures.NEUTRAL_MATTER_OVERLAY)
-        .setEUIO('in')
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.ELECTROLYZER)
+    // event.create('mana_fluidizer')
+    //     .category('frontiers')
+    //     .setMaxIOSize(1, 1, 1, 1) //Max Item in, max item out, max fluid in, max fluid out (in slots)
+    //     .setSlotOverlay(false, false, GuiTextures.NEUTRAL_MATTER_OVERLAY)
+    //     .setEUIO('in')
+    //     .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+    //     .setSound(GTSoundEntries.ELECTROLYZER)
 
     event.create('chemical_dehydrator')
         .category('frontiers')

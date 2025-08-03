@@ -57,6 +57,12 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'gtceu:psi_superconductor_beta_quadruple_wire', type: 'gtceu:wiremill' })
   event.remove({ output: 'gtceu:psi_superconductor_beta_octal_wire', type: 'gtceu:wiremill' })
   event.remove({ output: 'gtceu:psi_superconductor_beta_hex_wire', type: 'gtceu:wiremill' })
+
+  event.remove({ output: 'gtceu:psi_superconductor_omega_single_wire', type: 'gtceu:wiremill', type: 'gtceu:extruder' },)
+  event.remove({ output: 'gtceu:psi_superconductor_omega_double_wire', type: 'gtceu:wiremill' })
+  event.remove({ output: 'gtceu:psi_superconductor_omega_quadruple_wire', type: 'gtceu:wiremill' })
+  event.remove({ output: 'gtceu:psi_superconductor_omega_octal_wire', type: 'gtceu:wiremill' })
+  event.remove({ output: 'gtceu:psi_superconductor_omega_hex_wire', type: 'gtceu:wiremill' })
   // event.remove({ type: 'gtceu:fusion_reactor' })
   event.remove({ type: 'gtceu:plasma_turbine' })
   event.remove({ id: 'gtceu:smelting/smelt_dust_blue_alloy_to_ingot' })
@@ -196,14 +202,14 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.EV]);
 
 
-    event.recipes.gtceu.plasmite_forge('frontiers:copper_forging')
+  event.recipes.gtceu.plasmite_forge('frontiers:copper_forging')
     .itemInputs('gtceu:graphene_dust')
     .inputFluids('gtceu:copper 2304')
     .itemOutputs('gtceu:copper_plasmites')
     .duration(90)
     .EUt(GTValues.VA[GTValues.ZPM]);
 
-    event.recipes.gtceu.plasmite_forge('frontiers:europium_forging')
+  event.recipes.gtceu.plasmite_forge('frontiers:europium_forging')
     .itemInputs('gtceu:graphene_dust')
     .inputFluids('gtceu:europium 2304')
     .itemOutputs('gtceu:europium_plasmites')
@@ -777,11 +783,12 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.IV]);
 
 
+
   event.recipes.gtceu.orbital_forge('starmetal_alloy')
     .itemInputs(['kubejs:embraced_luminite_ingot', '4x gtceu:nether_star_dust'])
     .inputFluids('gtceu:pyroflux 100')
     .inputFluids('gtceu:starlight 300')
-    .itemOutputs('cosmiccore:star_metal_ingot')
+    .itemOutputs('cosmiccore:hot_starmetal_ingot')
     .dimension('frontiers:sun_orbit')
     .blastFurnaceTemp(7000)
     .duration(200)
@@ -882,6 +889,13 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:liquid_helium 250')
     .duration(400)
     .EUt(GTValues.VA[GTValues.IV]);
+
+  event.recipes.gtceu.assembler('omega_supercon')
+    .itemInputs(['64x cosmiccore:voidspark_foil', '4x cosmiccore:sol_steel_tiny_fluid_pipe', 'gtceu:uranium_rhodium_dinaquadide_octal_wire', 'gtceu:uv_electric_pump'])
+    .itemOutputs('16x gtceu:psi_superconductor_omega_single_wire')
+    .inputFluids('gtceu:starlight 250')
+    .duration(400)
+    .EUt(GTValues.VA[GTValues.UV]);
   event.shaped('gtceu:large_lithographic_processor', [
     'PRP',
     'GCG',
@@ -1519,6 +1533,14 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LV]);
 
 
+  event.recipes.gtceu.assembler('frontiers:mana_sim_shortcut')
+    .itemInputs(['4x gtceu:frostproof_machine_casing', '2x #gtceu:circuits/luv', '2x gtceu:terrasteel_octal_wire', 'botania:blacker_lotus'])
+    .inputFluids('gtceu:starlight 250')
+    .itemOutputs('gtceu:mana_simulator')
+    .duration(839)
+    .circuit(1)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
   event.remove({ id: 'gtceu:smelting/dust_blue_alloy__demagnetize_from_dust' })
   event.remove({ id: 'gtceu:alloy_smelter/silver_ingot_and_electrotine_dust_into_blue_alloy' })
   event.remove({ id: 'gtceu:alloy_smelter/silver_dust_and_electrotine_dust_into_blue_alloy' })
@@ -1877,7 +1899,7 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:pyroflux 250')
     .itemOutputs(['gtceu:naquadria_dust', 'gtceu:sulfur_dust'])
     .outputFluids('gtceu:oxygen 4000')
-    .duration(440)
+    .duration(180)
     .EUt(GTValues.VA[GTValues.ZPM]);
   event.remove({ id: "gtceu:gas_collector/ender_air" })
   event.recipes.gtceu.cracker('aether_to_end_air')
@@ -2010,6 +2032,37 @@ ServerEvents.recipes(event => {
     .itemOutputs('cosmiccore:uv_radio_module')
     .duration(320)
     .EUt(GTValues.VA[GTValues.UV] / 2);
+
+  event.recipes.gtceu.mixer('void_tar')
+    .itemInputs('4x cosmiccore:aberrant_essence')
+    .inputFluids('gtceu:somatic_mana 1000')
+    .outputFluids('gtceu:void_tar 2000')
+    .duration(400)
+    .EUt(GTValues.VA[GTValues.UV]);
+
+  event.recipes.gtceu.mixer('void_tar_replication')
+    .itemInputs('cosmiccore:aberrant_essence')
+    .inputFluids('gtceu:void_tar 500')
+    .outputFluids('gtceu:void_tar 1000')
+    .duration(35)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
+  event.recipes.gtceu.chemical_bath(`frontiers:aberrant_essence_best`)
+    .itemInputs('cosmiccore:wicked_essence')
+    .inputFluids('gtceu:void_tar 10')
+    .itemOutputs('cosmiccore:aberrant_essence')
+    .duration(230)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
+  event.recipes.gtceu.electric_blast_furnace(`frontiers:voidspark`)
+    .itemInputs(['4x gtceu:hastelloy_x_ingot', 'cosmiccore:aberrant_essence'])
+    .itemOutputs('cosmiccore:hot_voidspark_ingot')
+    .inputFluids('gtceu:void_tar 250')
+    .duration(1340)
+    .circuit(2)
+    .blastFurnaceTemp(9500)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
 
   event.shapeless('gtceu:magnetic_iron_bolt', [
     'gtceu:iron_bolt', 'minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone'
