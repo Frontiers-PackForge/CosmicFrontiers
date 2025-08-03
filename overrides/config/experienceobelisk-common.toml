@@ -1,0 +1,68 @@
+
+["Allowed Experience Fluids"]
+	#Add IDs of fluids you want the obelisk to support here in the form mod_id:fluid_name. Fluids have to be tagged forge:experience.
+	AllowedFluids = ["mob_grinding_utils:fluid_xp", "cofh_core:experience", "industrialforegoing:essence", "sophisticatedcore:xp_still", "enderio:xp_juice"]
+
+["Experience Obelisk Capacity"]
+	#The fluid capacity of the obelisk in mB. Default = 100000000, which is ~1072 levels' worth. Ensure that the new value is divisible by 20.
+	#Warning: setting this value above the default may lead to unintended loss or gain of XP.
+	#Range: 1000 ~ 2147483640
+	Capacity = 100000000
+
+["Enlightened Amulet Range"]
+	#The range of the enlightened amulet in blocks. Accepts decimals. Default = 8.0.
+	#Range: 1.0 ~ 16.0
+	Range = 8.0
+
+["Staff of Attunement Range"]
+	#The binding range of the Staff of Attunement in blocks. Accepts decimals. Default = 48.0.
+	#Lower this if you experience issues with bound blocks not working correctly.
+	#Range: 4.0 ~ 100.0
+	Range = 48.0
+
+["Enable Name Formatting Anvil Recipes"]
+	#Whether custom recipes that allow for the changing of item name color & formatting are enabled
+	Formatting = true
+
+["Infected Bookshelf Settings"]
+	#The minimum spawn delay of Infected Bookshelves in ticks. Default = 150
+	#Range: 1 ~ 10000
+	SpawnDelayMin = 150
+	#The maximum spawn delay of Infected Bookshelves in ticks. Default = 250
+	#Range: 1 ~ 10000
+	SpawnDelayMax = 250
+	#The XP value of spawned orbs. Default = 6
+	#Range: 1 ~ 32767
+	OrbValue = 6
+	#The number of spawns until the bookshelf decays. Default = 100
+	#Range: 1 ~ 10000
+	Spawns = 100
+
+["Enchanted Bookshelf Settings"]
+	#The minimum spawn delay of Enchanted Bookshelves in ticks. Default = 100
+	#Range: 1 ~ 10000
+	SpawnDelayMin = 100
+	#The maximum spawn delay of Enchanted Bookshelves in ticks. Default = 300
+	#Range: 1 ~ 10000
+	SpawnDelayMax = 300
+	#The XP value of spawned orbs. Default = 12
+	#Range: 1 ~ 32767
+	OrbValue = 12
+	#The number of spawns until the bookshelf decays. Default = 200
+	#Range: 1 ~ 10000
+	Range = 200
+
+["Archiver's Bookshelf Settings"]
+	#The minimum spawn delay of Archiver's Bookshelves in ticks. Default = 180
+	#Range: 1 ~ 10000
+	SpawnDelayMin = 180
+	#The maximum spawn delay of Archiver's Bookshelves in ticks. Default = 220
+	#Range: 1 ~ 10000
+	SpawnDelayMax = 220
+	#The XP value of spawned orbs. Default = 6
+	#Range: 1 ~ 32767
+	OrbValue = 6
+	#The number of spawns until the bookshelf decays. Default = 200
+	#Range: 1 ~ 10000
+	Spawns = 200
+

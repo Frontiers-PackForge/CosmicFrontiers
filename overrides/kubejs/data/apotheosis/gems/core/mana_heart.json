@@ -1,0 +1,31 @@
+{
+	"variant": "mana_heart",
+	"weight": 0,
+	"quality": 0,
+	"unique": true,
+	"dimensions": [],
+	"bonuses": [
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "all_armor",
+				"types": [
+					"helmet",
+					"leggings",
+					"chestplate",
+					"boots"
+				]
+			},
+			"attribute": "ars_nouveau:ars_nouveau.perk.max_mana",
+			"operation": "ADDITION",
+			"values": {
+				"common": 60,
+				"uncommon": 120,
+				"rare": 150,
+				"epic": 180,
+				"mythic": 210,
+				"ancient": 240
+			}
+		}
+	]
+}

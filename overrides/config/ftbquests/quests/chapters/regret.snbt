@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "regret"
+	group: "3189B6C95DDE02C3"
+	icon: "forbidden_arcanus:elementarium"
+	id: "18D9F2A68ACED915"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Regret"
+}

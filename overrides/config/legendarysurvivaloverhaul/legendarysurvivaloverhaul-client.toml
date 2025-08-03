@@ -1,0 +1,106 @@
+
+# Options related to the heads up display.
+# These options will automatically update upon being saved.
+[hud]
+
+	[hud.general]
+		# If enabled, the food saturation will be rendered on the Food Bar while the player suffers Cold Hunger Effect (secondary temperature effect).
+		"Show Food Saturation Bar" = true
+		# Whether the vanilla animation of the Food bar and Hydration bar is rendered. The bar shakes more the lower they are.
+		# This mod render a new food bar as a secondary effect of a cold temperature.
+		# Disable this animation if the temperature secondary effect is enabled to allow a compatibility with other mods rendering the food bar (for example Appleskin).
+		"Show Vanilla Bar Animation Overlay" = true
+
+	[hud.temperature]
+		# How temperature is displayed. Accepted values are as follows:
+		#    SYMBOL - Display the player's current temperature as a symbol above the hotbar.
+		#    NONE - Disable the temperature indicator.
+		#Allowed Values: SYMBOL, NONE
+		"Temperature Display Mode" = "SYMBOL"
+		# The X and Y offset of the temperature indicator. Set both to 0 for no offset.
+		#Range: -10000 ~ 10000
+		"Temperature Display X Offset" = 0
+		#Range: -10000 ~ 10000
+		"Temperature Display Y Offset" = 0
+		# The X and Y offset of the body temperature, shown when thermometer is equipped as a bauble (needs the curios mod).
+		# Set both to 0 for no offset.
+		#Range: -10000 ~ 10000
+		"Body Temperature Display X Offset" = 0
+		#Range: -10000 ~ 10000
+		"Body Temperature Display Y Offset" = 0
+		# If enabled, player will see a foggy effect when the heat is high.
+		"Heat Temperature Overlay" = true
+		# If enabled, player will see a frost effect when the cold is low.
+		"Cold Temperature Overlay" = true
+		# If enabled, breathing sound can be heard while player faces harsh temperatures.
+		"Breathing Sound Enabled" = false
+		# Temperature threshold below which a cold breath effect is rendered by the player. -1000 disable the feature.
+		#Range: -1000.0 ~ 1000.0
+		"Cold Breath Temperature Threshold" = 10.0
+		# If enabled, render the temperature values in Fahrenheit.
+		"Temperature In Fahrenheit" = false
+
+		[hud.temperature.wetness]
+			# The X and Y offset of the wetness indicator. Set both to 0 for no offset.
+			#Range: -10000 ~ 10000
+			"Wetness Indicator X Offset" = 0
+			#Range: -10000 ~ 10000
+			"Wetness Indicator Y Offset" = 0
+
+[body-damage]
+	# The X and Y offset of the body damage indicator. Set both to 0 for no offset.
+	# By default, render next to the inventory bar.
+	#Range: -10000 ~ 10000
+	"Body Damage Indicator X Offset" = 0
+	#Range: -10000 ~ 10000
+	"Body Damage Indicator Y Offset" = 0
+	# Limb health threshold below which the body damage indicator is rendered.
+	# If set to 1.1, the body damage indicator is always rendered.
+	# If set to 1.0, the body damage indicator is rendered as soon as a limb is wounded.
+	#Range: 0.0 ~ 1.1
+	"Body Damage Indicator Limb Health Threshold" = 1.0
+
+[season-cards]
+	# The X and Y offset of the season cards. Set both to 0 for no offset.
+	# By default, render first top quarter vertically and centered horizontally.
+	#Range: -10000 ~ 10000
+	"Season Cards Display X Offset" = 0
+	#Range: -10000 ~ 10000
+	"Season Cards Display Y Offset" = 0
+	# The delay before rendering the season card at first player spawn or player dimension change.
+	#Range: > 0
+	"Season Cards Delay In Ticks" = 80
+	# The display time in ticks that the season card will be fully rendered.
+	#Range: > 0
+	"Season Cards Display Time In Ticks" = 40
+	# The fade in time in ticks that the season card will appear.
+	#Range: > 0
+	"Season Cards Fade in In Ticks" = 20
+	# The fade out time in ticks that the season card will disappear.
+	#Range: > 0
+	"Season Cards Fade Out In Ticks" = 20
+
+[thirst]
+	# Whether the Thirst Saturation is displayed or not.
+	"Render the thirst saturation" = true
+	# If enabled, player's vision will become blurry when running low on hydration.
+	"Low Thirst Effect" = true
+
+	[thirst.tooltip]
+		# If enabled, show the hydration values in the item tooltip.
+		"Show Hydration Tooltip" = true
+		# If enabled, show the hydration and the saturation values on the same line in the tooltip.
+		"Merge Hydration And Saturation Tooltip" = true
+
+	[thirst.hydration-bar]
+		# If enabled, the hydration bar will be displayed.
+		"Show Hydration Bar" = true
+		# If enabled, a preview on hydration bar will be displayed if player holds a drink item.
+		"Show Drink Preview" = true
+		# How much the hydration bar is moved to the right.
+		#Range: -10000 ~ 10000
+		"Hydration Bar Offset X" = 0
+		# How much the hydration bar is moved to the bottom.
+		#Range: -10000 ~ 10000
+		"Hydration Bar Offset Y" = 0
+

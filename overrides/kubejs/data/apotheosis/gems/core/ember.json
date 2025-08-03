@@ -1,0 +1,31 @@
+{
+	"variant": "ember",
+	"weight": 0,
+	"quality": 0,
+	"unique": true,
+	"dimensions": [],
+	"bonuses": [
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "all_armor",
+				"types": [
+					"helmet",
+					"leggings",
+					"chestplate",
+					"boots"
+				]
+			},
+			"attribute": "legendarysurvivaloverhaul:cold_resistance",
+			"operation": "ADDITION",
+			"values": {
+				"common": 0.5,
+				"uncommon": 1,
+				"rare": 1.5,
+				"epic": 2,
+				"mythic": 2.5,
+				"ancient": 3
+			}
+		}
+	]
+}

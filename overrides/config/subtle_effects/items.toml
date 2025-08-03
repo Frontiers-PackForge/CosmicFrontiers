@@ -1,0 +1,6 @@
+# Don't change this! Version used to track needed updates.
+version = 0
+axeStripParticles = true
+waterEvaporateFromBucketSteam = true
+boneMealUsingParticles = true
+flintAndSteelParticles = true

@@ -1,0 +1,31 @@
+{
+	"variant": "mana_core",
+	"weight": 0,
+	"quality": 0,
+	"unique": true,
+	"dimensions": [],
+	"bonuses": [
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "all_armor",
+				"types": [
+					"helmet",
+					"leggings",
+					"chestplate",
+					"boots"
+				]
+			},
+			"attribute": "ars_nouveau:ars_nouveau.perk.mana_regen",
+			"operation": "ADDITION",
+			"values": {
+				"common": 2,
+				"uncommon": 4,
+				"rare": 6,
+				"epic": 8,
+				"mythic": 10,
+				"ancient": 12
+			}
+		}
+	]
+}

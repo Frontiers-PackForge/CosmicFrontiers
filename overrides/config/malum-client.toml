@@ -1,0 +1,8 @@
+
+[codex]
+	#What theme should the encyclopedia arcana be in?
+	#Allowed Values: DEFAULT, EASY_READING
+	bookTheme = "DEFAULT"
+	#Should the scroll direction be reversed in the encyclopedia arcana entry screen? This simply affects how you move through pages in an entry.
+	scrollDirection = false
+

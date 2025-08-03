@@ -1,0 +1,1456 @@
+{
+	default_hide_dependency_lines: false
+	default_min_width: 300
+	default_quest_shape: ""
+	filename: "digital_roots_ae2_basic"
+	group: "49DCE46B3EB22AEA"
+	icon: "ae2:energy_acceptor"
+	id: "0C28466180A127C3"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5ABF9E529AEDFB8E"]
+			dependency_requirement: "one_completed"
+			description: ["You have to power your ME system for it to work. The energy acceptor is the cheapest and easiest way to do this. Slap some power into this baby and you're good to roll."]
+			id: "30E09C21E7032519"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "The Start of Something Amazing"
+			tasks: [{
+				id: "389C808CBD56FB7A"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B294BA5C36676EE"]
+			description: [
+				"Channels are enabled by default in Frontiers and thus are required in a normal playthrough."
+				""
+				"Disabling Channels, while allowed, will Invalidate you from acquiring the \"&4Frontiers Dominator&r\" Role. - Which is only given to players playing with &cstock settings or harder&r."
+				"(You will still be eligable for the \"&aFrontiers Conqueror&r\" role.)"
+				""
+				"The AE2 \"GUIDE\" Is absolutely amazing for info related to Ae2, and explains it better than I ever could."
+				""
+				"Take one on the house. ~Ghost"
+			]
+			hide_dependency_lines: false
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "78388FDB6280B106"
+			rewards: [{
+				id: "35E820BD36BEC21A"
+				item: "ae2:guide"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Important Info Regarding Channels, and Pack Challenge Roles"
+			tasks: [{
+				id: "5624D91F189CD281"
+				type: "checkmark"
+			}]
+			title: "Oi! Read this!"
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			description: ["Ouch, That's a &lLOT&r of Mana Steel. Well it's the best we can make rn."]
+			id: "3FD06427649B0115"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "A Small price to pay for logistical dominance."
+			tasks: [{
+				id: "2A00B506B92CC513"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			title: "Digital Dominance"
+			x: 0.0d
+			y: -3.75d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			description: [
+				"ME Smart Cables and its dense counterparts are the only available AE2 cables. Have fun crafting these! :)"
+				""
+				"These cables are only able to carry 8 channels."
+			]
+			id: "693C114EC35CE27E"
+			subtitle: "Wait this isn't the recipe?"
+			tasks: [{
+				id: "74F449B6E36DA6BE"
+				item: "ae2:fluix_smart_cable"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["693C114EC35CE27E"]
+			description: [
+				"Ah yes, the ME Drive. Make some drives and put shove em in here. It'll allow you to view your stored items and fluids across all your ME network."
+				""
+				"Note, these can be placed beside eachother and can carry 8 channels. "
+			]
+			id: "51AAF1B5592FD2EF"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Store all the things!"
+			tasks: [{
+				id: "0D838D9F7676068E"
+				item: "ae2:drive"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"51AAF1B5592FD2EF"
+				"60AF2AD64B94122B"
+			]
+			description: ["An ME Drive with double the space. Storage cell away!"]
+			id: "4AFAD69EBABFE400"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Need more space?"
+			tasks: [{
+				id: "4A91397E1200124E"
+				item: "expatternprovider:ex_drive"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"51AAF1B5592FD2EF"
+				"7FBB9735076AF60B"
+			]
+			hide_until_deps_visible: true
+			id: "107EC463456438E2"
+			tasks: [{
+				id: "00B5A008DECE3DFC"
+				item: "ae2:cell_component_1k"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"107EC463456438E2"
+				"3EB9831F2956063E"
+			]
+			id: "064734CEA59B6D81"
+			tasks: [{
+				id: "5BC32962F2CB2C34"
+				item: "ae2:cell_component_4k"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"064734CEA59B6D81"
+				"081BA3F996FFA0A9"
+			]
+			id: "1A0484C0D2547ECB"
+			tasks: [{
+				id: "43A5A65D97FAC15D"
+				item: "ae2:cell_component_16k"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1A0484C0D2547ECB"
+				"4D0DCF9314C24E4D"
+			]
+			id: "293B392CCA33752F"
+			tasks: [{
+				id: "37BB814B059A5FEE"
+				item: "ae2:cell_component_64k"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["51AAF1B5592FD2EF"]
+			description: [
+				"Autocrafting in AE2 can be slightly confusing for newer players."
+				""
+				"Crafting storage is how complex a craft can be. Basically, more storage means bigger crafts."
+				""
+				"Crafting Co-Processor allows for mutiple things to be crafted at once. Basically, more things being crafted at the same time, rather than one by one."
+			]
+			id: "5F8CA7B469B59F0E"
+			subtitle: "Finally, autocrafting!"
+			tasks: [{
+				id: "61ED5A4EF7F2CF34"
+				item: "ae2:crafting_unit"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			description: [
+				"These illuminated panels are purely decorative blocks and don't serve any functions. "
+				""
+				"However, they are needed to craft terminals."
+			]
+			id: "788821E58479006C"
+			subtitle: "One step away..."
+			tasks: [{
+				id: "3E7908F1C16B8046"
+				item: "ae2:semi_dark_monitor"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["788821E58479006C"]
+			description: ["The ME Terminal allows you to acess the items you stored in the cells. Very simple. "]
+			id: "6F2176E189DB74C5"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Storage at last!"
+			tasks: [{
+				id: "16045EF14FFD27B0"
+				item: "ae2:terminal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"293B392CCA33752F"
+				"648E83477E7C7D73"
+			]
+			id: "2FCDBAEC924BAC94"
+			tasks: [{
+				id: "7544211D83982F37"
+				item: "ae2:cell_component_256k"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F8CA7B469B59F0E"]
+			description: [
+				"Makes your ME System send out pattern batches more frequently, allowing your autocrafts to keep up with faster machines."
+				""
+				""
+				"You'll need to use these plenty as you progress and you will also want to multiply the size of your patterns to help as well."
+			]
+			id: "0FF4C007223DFD69"
+			subtitle: "MORE AT ONCE!!"
+			tasks: [{
+				id: "12416E024B52DCE1"
+				item: "ae2:crafting_accelerator"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["693C114EC35CE27E"]
+			description: [
+				"This big guy can carry a full 32 channels."
+				""
+				"However, this cable can't connect to most devices you can use on a smart cable."
+				""
+				"They can however connect to GT AE2 Parts without issue."
+			]
+			id: "60AF2AD64B94122B"
+			subtitle: "Glue 4 of them together!"
+			tasks: [{
+				id: "2646A07010C73095"
+				item: "ae2:fluix_smart_dense_cable"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5F8CA7B469B59F0E"
+				"780989B23AC4635E"
+			]
+			description: ["This bad boy is used to simulate a crafting table. Craft all the things your heart desires!"]
+			id: "57CAA2CEC60FDF59"
+			subtitle: "True autocrafting!"
+			tasks: [{
+				id: "63FD3C2C2CF49C29"
+				item: "ae2:molecular_assembler"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6F2176E189DB74C5"]
+			description: ["The ME Crafting Terminal does everything the regular Terminal does, but with an added 3x3 crafting GUI that lets you craft things with the items you have."]
+			id: "4BDE7462DFDE2938"
+			subtitle: "The Best Terminal"
+			tasks: [{
+				id: "56B1046384790248"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6F2176E189DB74C5"]
+			description: ["Autocrafting requires patterns, and to encode those patterns you need this bad boy. "]
+			id: "0139B60B0545B4C8"
+			subtitle: "Encode All The Things"
+			tasks: [{
+				id: "34301CED40F08059"
+				item: "ae2:pattern_encoding_terminal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6F2176E189DB74C5"]
+			description: ["Lets you see all of the Pattern Providers on your system as well as access their patterns."]
+			id: "35A05873FC02CFAB"
+			subtitle: "See All Your Patterns"
+			tasks: [{
+				id: "0A0D1F0BD8E12F80"
+				item: "ae2:pattern_access_terminal"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6F2176E189DB74C5"]
+			description: ["This nifty thing lets you see all the things are you are requesting with the ME Requesters."]
+			id: "22E78673AC611424"
+			subtitle: "Requester Galore"
+			tasks: [{
+				id: "3A83E6144BE3014F"
+				item: "merequester:requester_terminal"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6F2176E189DB74C5"]
+			description: ["Does the same thing the regular Pattern Access Terminal does, but lets you search for patterns based off its inputs/outputs."]
+			id: "36A20F7BB0D81CA8"
+			subtitle: "Search All The Patterns"
+			tasks: [{
+				id: "62C6422743A79928"
+				item: "expatternprovider:ex_pattern_access_part"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["788821E58479006C"]
+			id: "5BF9284D19367CBF"
+			subtitle: "Illuminated Panel but Darker"
+			tasks: [{
+				id: "48082750FDE82B64"
+				item: "ae2:dark_monitor"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["788821E58479006C"]
+			id: "1BA3BBE611310B0C"
+			subtitle: "Illuminated Panel but Brighter"
+			tasks: [{
+				id: "77CEC74FB14F44DC"
+				item: "ae2:monitor"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3FD06427649B0115"]
+			description: [
+				"The ME Requester will automatically request items once it falls below a threshold count set by you."
+				""
+				"You can set the amount to craft once it reaches below that threshold. "
+				""
+				""
+				"Crafting cards are much cheaper, but come without many of the benefits a ME Requester"
+			]
+			id: "284B42AA4FBD4F6E"
+			subtitle: "Better Crafting Card"
+			tasks: [{
+				id: "377DD9D896C47233"
+				item: "merequester:requester"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3FD06427649B0115"]
+			description: [
+				"The Quantum Ring lets you carry 32 channels to anywhere, including cross dimensions."
+				""
+				"Use Quantum Entangled Singularities to link rings."
+			]
+			id: "2C59DBD1902BF8B6"
+			subtitle: "Break Through The Dimensions"
+			tasks: [
+				{
+					count: 16L
+					id: "2F78A413C2D70D1B"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4855517189D194C0"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+			]
+			title: "Interdimensional System"
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3FD06427649B0115"]
+			description: ["Finally, wireless channel transfer... if you can ignore the cost."]
+			id: "17851CF8B7A7B1C4"
+			subtitle: "Cableless"
+			tasks: [
+				{
+					count: 2L
+					id: "3227C1F0DAC59057"
+					item: "expatternprovider:wireless_connect"
+					type: "item"
+				}
+				{
+					id: "3CB66C653934947A"
+					item: "expatternprovider:wireless_tool"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"2FCDBAEC924BAC94"
+				"6B03A23737F43585"
+			]
+			id: "506D18E7210FA7DC"
+			tasks: [{
+				id: "2BDFB7565809A8ED"
+				item: "megacells:cell_component_1m"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"506D18E7210FA7DC"
+				"48CE0A8813272374"
+			]
+			id: "40D5164C706395CA"
+			tasks: [{
+				id: "2897543A449428A2"
+				item: "megacells:cell_component_4m"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"40D5164C706395CA"
+				"56B556AA11522EF1"
+			]
+			id: "14947B6929623CF7"
+			tasks: [{
+				id: "6D30340CB2B28F26"
+				item: "megacells:cell_component_16m"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"34076D3D1D4B35BA"
+				"62C474BCC1360057"
+			]
+			id: "75B047025A1B30AA"
+			tasks: [{
+				id: "04D10C49FE74813A"
+				item: "megacells:cell_component_256m"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"14947B6929623CF7"
+				"5778BE53C013ADBB"
+			]
+			id: "34076D3D1D4B35BA"
+			tasks: [{
+				id: "3411E0FE118A36F2"
+				item: "megacells:cell_component_64m"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51AAF1B5592FD2EF"]
+			description: [
+				"Unlike in regular AE2, you have to craft the housing and then craft it with the component to combine them. "
+				""
+				"Same thing goes for the other types of cells you might want to make such as fluid ones."
+			]
+			id: "74528784F3504927"
+			subtitle: "Components Gotta Live Somewhere!"
+			tasks: [{
+				id: "65A90D0EB0CA1D58"
+				item: "ae2:item_cell_housing"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
+			icon: "cosmiccore:omnia_circuit_lv"
+			id: "7FBB9735076AF60B"
+			tasks: [{
+				id: "262D9EEE70088CA6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/lv)"
+					}
+				}
+				title: "Any #gtceu:circuits/lv"
+				type: "item"
+			}]
+			title: "LV Circuits"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
+			icon: "cosmiccore:omnia_circuit_mv"
+			id: "3EB9831F2956063E"
+			tasks: [{
+				id: "2E98C4843CB1F6B1"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/mv)"
+					}
+				}
+				title: "Any #gtceu:circuits/mv"
+				type: "item"
+			}]
+			title: "MV Circuits"
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
+			icon: "cosmiccore:omnia_circuit_hv"
+			id: "081BA3F996FFA0A9"
+			tasks: [{
+				id: "2CA4144FAE5D4BBF"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/hv)"
+					}
+				}
+				title: "Any #gtceu:circuits/hv"
+				type: "item"
+			}]
+			title: "HV Circuits"
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
+			icon: "cosmiccore:omnia_circuit_ev"
+			id: "4D0DCF9314C24E4D"
+			tasks: [{
+				id: "18F8424D9D42ED41"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/ev)"
+					}
+				}
+				title: "Any #gtceu:circuits/ev"
+				type: "item"
+			}]
+			title: "EV Circuits"
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
+			icon: "cosmiccore:omnia_circuit_iv"
+			id: "648E83477E7C7D73"
+			tasks: [{
+				id: "08C53135DC788AF8"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/iv)"
+					}
+				}
+				title: "Any #gtceu:circuits/iv"
+				type: "item"
+			}]
+			title: "IV Circuits"
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
+			icon: "cosmiccore:omnia_circuit_luv"
+			id: "6B03A23737F43585"
+			tasks: [{
+				id: "57D9241F164B2D83"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/luv)"
+					}
+				}
+				title: "Any #gtceu:circuits/luv"
+				type: "item"
+			}]
+			title: "LuV Circuits"
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
+			icon: "cosmiccore:omnia_circuit_zpm"
+			id: "48CE0A8813272374"
+			tasks: [{
+				id: "7B9BB3E1877E6575"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/zpm)"
+					}
+				}
+				title: "Any #gtceu:circuits/zpm"
+				type: "item"
+			}]
+			title: "ZPM Circuits"
+			x: 12.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
+			icon: "cosmiccore:omnia_circuit_uv"
+			id: "56B556AA11522EF1"
+			tasks: [{
+				id: "27AABC4CA4EB5A6D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/uv)"
+					}
+				}
+				title: "Any #gtceu:circuits/uv"
+				type: "item"
+			}]
+			title: "UV Circuits"
+			x: 12.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
+			icon: "cosmiccore:omnia_circuit_uhv"
+			id: "5778BE53C013ADBB"
+			tasks: [{
+				id: "533C4942D6F6D3D8"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/uhv)"
+					}
+				}
+				title: "Any #gtceu:circuits/uhv"
+				type: "item"
+			}]
+			title: "UHV Circuits"
+			x: 14.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			hide_dependency_lines: true
+			icon: "cosmiccore:omnia_circuit_uev"
+			id: "62C474BCC1360057"
+			tasks: [{
+				id: "4BA04EC637634568"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/uev)"
+					}
+				}
+				title: "Any #gtceu:circuits/uev"
+				type: "item"
+			}]
+			title: "UEV Circuits"
+			x: 14.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			id: "395A9DB21BD45F76"
+			subtitle: "The Cores of AE2"
+			tasks: [
+				{
+					id: "2D994FA67F30932B"
+					item: "ae2:formation_core"
+					type: "item"
+				}
+				{
+					id: "30EBC36935938BB0"
+					item: "ae2:annihilation_core"
+					type: "item"
+				}
+			]
+			title: "Formation/Destruction Core"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["395A9DB21BD45F76"]
+			id: "571A02E2F93D1BD1"
+			subtitle: "Gotta Move These Things Somehow"
+			tasks: [{
+				id: "7ABCD25CB4D40FE1"
+				item: "ae2:interface"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			description: [
+				"Cable anchors can be used to seperate 2 lines of cables. (Or use different color ones)"
+				""
+				"Quartz Fiber is used to send ONLY power to a subnet. No channels will go though a quartz fiber."
+			]
+			id: "3AFE2F078445B96B"
+			subtitle: "More Nets?"
+			tasks: [
+				{
+					id: "04F518C420A4C68F"
+					item: "ae2:cable_anchor"
+					type: "item"
+				}
+				{
+					id: "6DE643571DACB706"
+					item: "ae2:quartz_fiber"
+					type: "item"
+				}
+			]
+			title: "Subnetting"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["693C114EC35CE27E"]
+			description: [
+				"Different colored cables do not connect with each other. "
+				""
+				"Be careful with regular ME Smart Cables as they connect to everything."
+			]
+			icon: "ae2:fluix_smart_cable"
+			id: "225633E8DE7B4030"
+			subtitle: "Color Code Them All!"
+			tasks: [{
+				id: "327013F2C09832B4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(ae2:smart_cable)"
+					}
+				}
+				title: "Any #ae2:smart_cable"
+				type: "item"
+			}]
+			title: "Colored Cables"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["74E4DA11919F24BD"]
+			description: [
+				"Importer imports stuff &6INTO&r your system."
+				""
+				"Exporters exports stuff &6OUT&r of your system,"
+			]
+			id: "718D0AAD191BCB49"
+			subtitle: "Automatic Item Movement"
+			tasks: [
+				{
+					id: "2E2F6833566B1AC7"
+					item: "ae2:export_bus"
+					type: "item"
+				}
+				{
+					id: "162D21CEE9A03CF5"
+					item: "ae2:import_bus"
+					type: "item"
+				}
+			]
+			title: "Import/Export Busses"
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			id: "74E4DA11919F24BD"
+			subtitle: "All The Functions"
+			tasks: [{
+				id: "4380D9AC669C4DA6"
+				title: "Devices"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			description: [
+				"AE2 Devices run on channels. Each device uses 1 channel. Regular Smart Cables are able to carry 8 channels and dense ones 32. "
+				""
+				"Each side of an ME Controller supplies 32 channels. You can chain ME Controllers together to make a bigger controller."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "gtceu:block/machines/item_collector/overlay_top_active"
+				}
+			}
+			id: "2B294BA5C36676EE"
+			subtitle: "Confused Yet?"
+			tasks: [{
+				id: "59FBBCEE09B9D8D6"
+				title: "Channels"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["74E4DA11919F24BD"]
+			description: ["Slap this on an external storage that's not part of your system and make it part of your system."]
+			id: "5A63BB541C49F8C1"
+			subtitle: "Store All The Things"
+			tasks: [{
+				id: "7C430CE4E293D7E5"
+				item: "ae2:storage_bus"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["74E4DA11919F24BD"]
+			description: [
+				"Cell Workbench allows you to filter your cells. Very useful to keep your drives clean."
+				""
+				"ME I/O port lets you very quickly, empty or fill cells. "
+			]
+			id: "624FF59F6F5C1EDD"
+			subtitle: "Clean Them Cells"
+			tasks: [
+				{
+					id: "1588B7FD06051633"
+					item: "ae2:cell_workbench"
+					type: "item"
+				}
+				{
+					id: "5E90D22A5468B3D2"
+					item: "ae2:io_port"
+					type: "item"
+				}
+			]
+			title: "Cell Manipulation"
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["74E4DA11919F24BD"]
+			description: [
+				"&6P2P&r or Point 2 Point are devices that can transfer things from one point to another, as the name suggests."
+				""
+				"By using a memory card, you can select an input side, then you can select output sides. "
+				""
+				"Think of &6P2P&r as a tunnel with mutiple ways out. You have a way in and it goes from that entrance to the exits."
+				""
+				"&6P2P&r do NOT push or pull. You have to make sure whatever you're inputting is being pushed into the tunnel. "
+			]
+			id: "78E7DEA3EB654550"
+			subtitle: "From Here to There"
+			tasks: [{
+				id: "6F67175A6F730778"
+				item: "ae2:me_p2p_tunnel"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			id: "141E740CB48C677B"
+			subtitle: "Upgrade Time"
+			tasks: [{
+				id: "5C335488259A7654"
+				title: "Upgrade Cards"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["141E740CB48C677B"]
+			description: ["Speeds up devices. Speed is life!"]
+			id: "1F936624B1DCE77D"
+			subtitle: "FASTER"
+			tasks: [{
+				id: "7EC7249513938630"
+				item: "ae2:speed_card"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["141E740CB48C677B"]
+			description: [
+				"Increases the amount of items you can request in export busses."
+				""
+				"Also increases the amount of items you can filter in storage busses."
+			]
+			id: "120EC97B2FA1B67A"
+			subtitle: "Need More Space?"
+			tasks: [{
+				id: "6BFA5528F3DD0C99"
+				item: "ae2:capacity_card"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["141E740CB48C677B"]
+			description: ["Lets you export/filter things without worry about NBT data. "]
+			id: "21FCEC266F4F7DD9"
+			subtitle: "My Eyesight Is Kinda..."
+			tasks: [{
+				id: "6E113544EE91ECA1"
+				item: "ae2:fuzzy_card"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["141E740CB48C677B"]
+			description: [
+				"Put this in an interface/export bus and it will autocraft the item you're exporting."
+				""
+				"You have to have a pattern for the item you're requesting."
+			]
+			id: "483704BAB62E1233"
+			subtitle: "Love Hate Relationship"
+			tasks: [{
+				id: "19FB1D7248220D8A"
+				item: "ae2:crafting_card"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"571A02E2F93D1BD1"
+				"780989B23AC4635E"
+			]
+			description: [
+				"The extended ME Pattern Provider and Interface can both hold 36 unique items/patterns."
+				""
+				""
+				"These are a great way on using less space for your automation setups"
+			]
+			id: "12BF0EC1805A7548"
+			subtitle: "Move ALL The Items!"
+			tasks: [
+				{
+					id: "17815D6E47902A4F"
+					item: "expatternprovider:ex_interface"
+					type: "item"
+				}
+				{
+					id: "4A2B27A68EE1270F"
+					item: "expatternprovider:ex_pattern_provider"
+					type: "item"
+				}
+			]
+			title: "Moving Items x2"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["57CAA2CEC60FDF59"]
+			description: [
+				"Extended Molecular Assembler is extremely powerful. "
+				""
+				"It is 2x faster than regular Molecular Assemblers and can run 8 crafting jobs at once."
+				""
+				"You will need co-processors to utilize all 8 parallel."
+			]
+			id: "66CD348405F607BF"
+			subtitle: "Even Faster Autocrafting"
+			tasks: [{
+				id: "4DA6765A00162C59"
+				item: "expatternprovider:ex_molecular_assembler"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["51AAF1B5592FD2EF"]
+			description: ["ME Chest is very useful when you need to check the contents of one drive. "]
+			id: "29688DA2389BAE33"
+			subtitle: "Single Cell Storage"
+			tasks: [{
+				id: "2D84AD2F2DAC84F1"
+				item: "ae2:chest"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			description: ["Infinite water in a cell. "]
+			hide_dependency_lines: true
+			id: "55DA5325B7B70908"
+			optional: true
+			subtitle: "Smaller Than A 2x2 Water Source"
+			tasks: [{
+				id: "1A051FB81A09A9E8"
+				item: {
+					Count: 1
+					id: "expatternprovider:infinity_cell"
+					tag: {
+						record: {
+							"#c": "ae2:f"
+							id: "minecraft:water"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			description: ["Provides you with all the cobblestone you could ever need."]
+			hide_dependency_lines: true
+			id: "26921AD67BA076FC"
+			optional: true
+			subtitle: "Cobblestone In A Cell"
+			tasks: [{
+				id: "415B6E1563FD82BD"
+				item: {
+					Count: 1
+					id: "expatternprovider:infinity_cell"
+					tag: {
+						record: {
+							"#c": "ae2:i"
+							id: "minecraft:cobblestone"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["51AAF1B5592FD2EF"]
+			description: [
+				"There are many cells that can store things. If you want to store something, it can probably go in a cell."
+				""
+				"They each require a diffrent housing so be prepared for that."
+			]
+			hide_dependency_lines: true
+			id: "6D8BAD8DDC74B2DA"
+			optional: true
+			subtitle: "Store Everything!"
+			tasks: [{
+				id: "155064030A82E17E"
+				title: "All Kinds of Cells"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6D8BAD8DDC74B2DA"]
+			id: "7D35876AC16FAE20"
+			optional: true
+			tasks: [{
+				id: "51832CB1154A2F29"
+				item: {
+					Count: 1
+					id: "arseng:source_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6D8BAD8DDC74B2DA"]
+			id: "6CB236275FA54AC3"
+			optional: true
+			tasks: [{
+				id: "711933608DE6D260"
+				item: {
+					Count: 1
+					id: "ae2:fluid_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6D8BAD8DDC74B2DA"]
+			id: "2C7D538D3A43A9A1"
+			optional: true
+			tasks: [{
+				id: "13209C81073FD14B"
+				item: {
+					Count: 1
+					id: "appbot:mana_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"57CAA2CEC60FDF59"
+				"780989B23AC4635E"
+			]
+			id: "40906E409FCF0A4C"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft Literally Everything"
+			tasks: [
+				{
+					id: "33AD4A77BA81F16B"
+					item: "expatternprovider:assembler_matrix_frame"
+					type: "item"
+				}
+				{
+					id: "776637D04671402D"
+					item: "expatternprovider:assembler_matrix_wall"
+					type: "item"
+				}
+				{
+					id: "41E53BBBFD2D976C"
+					item: "expatternprovider:assembler_matrix_pattern"
+					type: "item"
+				}
+				{
+					id: "21CE9AE17F6E9799"
+					item: "expatternprovider:assembler_matrix_crafter"
+					type: "item"
+				}
+				{
+					id: "597E6F7270892689"
+					item: "expatternprovider:assembler_matrix_speed"
+					type: "item"
+				}
+			]
+			title: "Assembler Matrix"
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["395A9DB21BD45F76"]
+			id: "780989B23AC4635E"
+			tasks: [{
+				id: "732127BC5C799278"
+				item: "ae2:pattern_provider"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["30E09C21E7032519"]
+			description: ["Adds very useful devices that are direct upgrades of existing ones, as well as new ones."]
+			id: "1E110C19F0EAEF5B"
+			subtitle: "Extension of AE2"
+			tasks: [{
+				id: "698FE6A5A7CB5577"
+				title: "Extended AE"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E110C19F0EAEF5B"]
+			description: ["These types of storage busses allow you to better sort the things that you want to be stored externally."]
+			id: "7B280038B8AF71EA"
+			subtitle: "Filtered Storage Bus"
+			tasks: [
+				{
+					id: "19792D5E6B99BF68"
+					item: "expatternprovider:tag_storage_bus"
+					type: "item"
+				}
+				{
+					id: "6D45357F5EF0F4BE"
+					item: "expatternprovider:mod_storage_bus"
+					type: "item"
+				}
+				{
+					id: "53E29FFC17A7679A"
+					item: "expatternprovider:precise_storage_bus"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1E110C19F0EAEF5B"]
+			description: ["Better versions of the existing import/output busses."]
+			id: "35DD7A9A143EA891"
+			subtitle: "Better Busses"
+			tasks: [
+				{
+					id: "74A54FBF08A4FC5B"
+					item: "expatternprovider:ex_export_bus_part"
+					type: "item"
+				}
+				{
+					id: "4ABE7BDFD84ED1A6"
+					item: "expatternprovider:ex_import_bus_part"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1E110C19F0EAEF5B"]
+			description: ["Ridiculously fast way of emptying or filling your storage cells. "]
+			id: "7EDCCE938A6669B4"
+			subtitle: "Clear Your Drives!"
+			tasks: [{
+				id: "690E2E754067501A"
+				item: "expatternprovider:ex_io_port"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["648E83477E7C7D73"]
+			description: [
+				"The ME Stocking Bus has two modes: Filtered and Autopull."
+				""
+				"In Filtered Mode, you can select up to 16 items to automatically pull into your multiblock machine."
+				""
+				"In Autopull Mode, the Stocking Bus will auto-pull the first 16 items in your AE Network!"
+				"Use this with subnets to create powerful automation setups for your base!"
+			]
+			id: "3D08DFFE2DE3B399"
+			subtitle: "A much stronger interface"
+			tasks: [{
+				id: "68F110BE1E91697C"
+				item: "gtceu:me_stocking_input_bus"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["648E83477E7C7D73"]
+			description: [
+				"The ME Stocking Hatch has two modes: Filtered and Autopull."
+				""
+				"In Filtered Mode, you can select up to 16 fluids to automatically pull into your multiblock machine."
+				""
+				"In Autopull Mode, the Stocking Bus will auto-pull the first 16 fluids in your AE Network!"
+				"Use this with subnets to create powerful automation setups for your base!"
+				""
+				"These are just like the bus version."
+			]
+			id: "379BEDD16F96296B"
+			subtitle: "A Much Stronger Interface"
+			tasks: [{
+				id: "5B971BC0DE8DE46C"
+				item: "gtceu:me_stocking_input_hatch"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4D0DCF9314C24E4D"]
+			description: ["ME Output Busses allow you to directly insert into your ME System from GT Multiblocks."]
+			id: "41EDF4362B497409"
+			subtitle: "Multiblock AE Output"
+			tasks: [{
+				id: "6AE3AAF8DB099EBA"
+				item: "gtceu:me_output_bus"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4D0DCF9314C24E4D"]
+			description: [
+				"ME Output Hatches allow you to directly insert into your ME System from GT Multiblocks."
+				"Perfect for distilleries!"
+			]
+			id: "077AD4C248EC217B"
+			subtitle: "Multiblock AE Output"
+			tasks: [{
+				id: "316B9028E8F09AE0"
+				item: "gtceu:me_output_hatch"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6B03A23737F43585"]
+			description: [
+				"Oh boy, the ME Pattern Buffer is a bit complicated, so stick around!"
+				""
+				"ME Pattern Buffers can hold 27 patterns. One of their key features is that all recipes in the buffer will never conflict (this is currently broken, but it’s fixed in GTM 1.7.0, and this message will be removed then). This means you can do much more in one machine than before."
+				""
+				"Each Pattern Buffer shares three things with all patterns placed inside:"
+				""
+				"- The Ghost Circuit"
+				""
+				"- Any items in the Shared Item Slots"
+				""
+				"- Any fluids in the Shared Fluids Slots"
+				""
+				"These features allow you to do more with each buffer. A great example is using one fluid solidifier for all your patterns instead of several."
+				""
+				"These blocks get even stronger in future tiers, but you’ll have to wait until then."
+			]
+			id: "702FCB6B09F7811C"
+			subtitle: "The King of Crafting"
+			tasks: [{
+				id: "7BA185E4739D7BD1"
+				item: "gtceu:me_pattern_buffer"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["48CE0A8813272374"]
+			description: [
+				"The ME Pattern Proxy is a powerful tool when paired with the ME Pattern Buffer."
+				""
+				"You can link proxies to buffers using a datastick to pair them."
+				"When linked, Pattern Proxies will emulate ALL patterns, storage, and shared circuits/inventories of their linked buffer."
+				""
+				"This allows you to share buffers from one machine with proxies on many others, enabling much stronger and more parallelized crafting than before."
+				""
+				"Don’t forget to multiply your patterns!"
+			]
+			id: "6CAE8A6DBB415BB1"
+			subtitle: "The Queen of Crafting"
+			tasks: [{
+				id: "73F38809B48ECD2A"
+				item: "gtceu:me_pattern_buffer_proxy"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.5d
+		}
+	]
+	subtitle: ["AE2 and You!"]
+	title: "&fDigital Roots"
+}

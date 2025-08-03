@@ -1,0 +1,356 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "questlogic"
+	group: "49DCE46B3EB22AEA"
+	icon: {
+		Count: 1
+		id: "aether:hammer_of_kingbdogz"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "11F4C9727AB4FD82"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"This Chapter (If you can see it) means you have Edit mode enabled in the questbook OR you clicked on a quest that relies on one of these quest gates."
+				""
+				""
+				"Hi It's Ghost, this chapter here is for questbook logic/quests that would make other pages look messy. This isn't an actual quest chapter but moreso a place for logicgates to be placed."
+				""
+				""
+				"&4BE CAREFUL, SOME QUEST LOGIC GATES WILL PERTAIN TO HEAVY SPOILERS IN THE STORY OF FRONTIERS! YOU HAVE BEEN WARNED&r"
+				""
+				""
+				"You can have a cookie for breaking out of bounds or intentionally getting here with edit mode."
+			]
+			id: "6022F9D216B741CD"
+			shape: "gear"
+			subtitle: "Dev Zone Ahead. Danger"
+			tasks: [{
+				id: "683AB6D197C8B112"
+				title: "Wtf is this?"
+				type: "custom"
+			}]
+			title: "What is This!?"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "7FAD4D62BDB7506F"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 7A6687C64AE5FC75"
+					elevate_perms: true
+					id: "57DACD633CF36EA3"
+					silent: true
+					title: "MRE Mixed Dust Skip"
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/ftbquests change_progress @s complete 7ED9269DEE3DE5B6"
+					elevate_perms: true
+					exclude_from_claim_all: true
+					id: "6868BB7CA5DAD4FB"
+					ignore_reward_blocking: true
+					silent: true
+					title: "Org Leachate Skip"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 78B9EDF7A35B406F"
+					elevate_perms: true
+					id: "1343D7825ADB85FE"
+					silent: true
+					title: "MRE Leachate Skip"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 719E4D2B41063805"
+					elevate_perms: true
+					id: "34C8427E5F8AFF3C"
+					silent: true
+					title: "MRE Chlorides Skip"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 1C11F4F6BE70E0D8"
+					elevate_perms: true
+					id: "6055C7A3EB294B03"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 3B052FE1B75E1A21"
+					elevate_perms: true
+					id: "219D94421EE2365B"
+					silent: true
+					title: "MRE Hydroxides"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 6C2C175660333686"
+					elevate_perms: true
+					id: "1A7498DFAB9343E2"
+					silent: true
+					title: "Middle Rare Earth Slag Bucket Skip"
+					type: "command"
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "4A1A7A69BE1E508E"
+				item: "gtceu:samarium_dust"
+				type: "item"
+			}]
+			title: "MRE Skip"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			id: "261BD31156DD2E12"
+			tasks: [{
+				id: "5FB17F5D30834650"
+				item: "gtceu:mre_leachate_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "7B77F3153085E884"
+			tasks: [{
+				id: "3B6B1C74F1B95C32"
+				item: "gtceu:electric_blast_furnace"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5DB465F3C5F5171A"]
+			hide_dependency_lines: true
+			id: "3C9EB6B3762A6573"
+			tasks: [{
+				id: "7CEDA296C6364128"
+				item: "malum:spirit_altar"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			id: "639606F130EFC88B"
+			rewards: [
+				{
+					auto: "no_toast"
+					command: "/ftbquests change_progress @s complete 159750F7321A983A"
+					elevate_perms: true
+					id: "6569E36E69C60D8C"
+					silent: true
+					team_reward: true
+					title: "Chromium Dust SKIP"
+					type: "command"
+				}
+				{
+					auto: "no_toast"
+					command: "/ftbquests change_progress @s complete 308F457E26E57039"
+					elevate_perms: true
+					id: "2F6CF04BA237624C"
+					silent: true
+					team_reward: true
+					title: "DICHROMATE SKIP"
+					type: "command"
+				}
+				{
+					auto: "no_toast"
+					command: "/ftbquests change_progress @s complete 1C64908E1A380A95"
+					elevate_perms: true
+					id: "706DD1A8B9CD64B3"
+					silent: true
+					team_reward: true
+					title: "SECOND BUCKET"
+					type: "command"
+				}
+				{
+					auto: "no_toast"
+					command: "/ftbquests change_progress @s complete 0D2BAB45D2503E60"
+					elevate_perms: true
+					id: "0F707EF0CB95382C"
+					silent: true
+					team_reward: true
+					title: "DUST 1"
+					type: "command"
+				}
+				{
+					auto: "no_toast"
+					command: "/ftbquests change_progress @s complete 2C615AE7B76CE145"
+					elevate_perms: true
+					id: "653BC66106B2D1B9"
+					silent: true
+					team_reward: true
+					title: "CHROMITE"
+					type: "command"
+				}
+			]
+			tasks: [{
+				count: 16L
+				id: "2082FA9E25A76A39"
+				item: { Count: 16, id: "gtceu:chromium_ingot" }
+				type: "item"
+			}]
+			title: "Chain Skip ; Chromium"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "2550D9A43A0B259F"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 1C11F4F6BE70E0D8"
+					elevate_perms: true
+					id: "27789ECEE4785A91"
+					silent: true
+					type: "command"
+				}
+				{
+					command: "/ftbquests change_progress @s complete 6BE64F9BD1F1F303"
+					elevate_perms: true
+					id: "1753BB2A4F50B5AD"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 33757BC3FFE5AD18"
+					elevate_perms: true
+					id: "7B170A0861A545C8"
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+				{
+					command: "/ftbquests change_progress @s complete 673AB6E8C654D518"
+					elevate_perms: true
+					id: "3A8A2B90D942B62D"
+					silent: true
+					type: "command"
+				}
+				{
+					command: "/ftbquests change_progress @s complete 167D8002070C9B69"
+					elevate_perms: true
+					id: "3712A87B982EC133"
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0A05F38D8620C4B9"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			id: "2D906E829A64AF69"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 3302CF516C57AC40"
+					elevate_perms: true
+					id: "13AD72A59765E2D6"
+					silent: true
+					title: "Clogrum"
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/ftbquests change_progress @s complete 3EF7D47E41C41475"
+					elevate_perms: true
+					exclude_from_claim_all: true
+					id: "0FA7B5E1755A396A"
+					ignore_reward_blocking: true
+					silent: true
+					title: "Org Leachate Skip"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 38032C6144C06B2B"
+					elevate_perms: true
+					id: "28501756983157CC"
+					silent: true
+					title: "MRE Leachate Skip"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 3B6079B88AB61576"
+					elevate_perms: true
+					id: "598739DE0B1A6F3D"
+					silent: true
+					title: "MRE Chlorides Skip"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 483EDAD71360C4C4"
+					elevate_perms: true
+					id: "7C23FD3A67098894"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/ftbquests change_progress @s complete 1A630507AAB765E6"
+					elevate_perms: true
+					id: "6C3BE854B150F86B"
+					silent: true
+					title: "MRE Hydroxides"
+					type: "command"
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "51764C563BD0D500"
+				item: "gtceu:neodymium_dust"
+				type: "item"
+			}]
+			title: "MRE Skip"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "197EA5F24A4344F5"
+			invisible: true
+			tasks: [{
+				id: "2C2FD701C6709BCD"
+				item: "bloodmagic:infusedslate"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+	]
+	title: "&4Dev - QuestLogic"
+}

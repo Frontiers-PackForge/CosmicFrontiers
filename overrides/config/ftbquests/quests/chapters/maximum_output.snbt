@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "maximum_output"
+	group: "3189B6C95DDE02C3"
+	icon: "cosmiccore:donk"
+	id: "33E3D439B5E1F84B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "MAXIMUM OUTPUT"
+}

@@ -1,0 +1,139 @@
+
+#Settings for machine/item/misc parameters
+[parameters]
+
+	[parameters.mechanical_core]
+		#The maximum distance that mechanical cores can proxy capabilities and upgrades.
+		max_distance = 3
+
+	[parameters.emberBore]
+		#The speed modifier of the Ember Bore before upgrades.
+		speedMod = 1.0
+		#The time in ticks it takes to try one dig attempt.
+		processTime = 200
+		#The amount of fuel consumed each tick.
+		fuelCost = 3.0
+
+	[parameters.reservoir]
+		#How much fluid (in mb) fits into each Caminite Ring on a Reservoir.
+		capacity = 40000
+
+	[parameters.mini_boiler]
+		#How much fluid and gas (in mb) fits into a Mini Boiler.
+		capacity = 16000
+		#How much fluid (in mb) a Mini Boiler boils for each ember used/generated.
+		heat_multiplier = 1.0
+		#Whether the Mini Boiler can explode when overfilled with gas
+		can_explode = true
+
+	[parameters.melter]
+		#The time in ticks it takes to process one recipe.
+		processTime = 200
+		#The ember cost per tick.
+		cost = 1.0
+		#How much fluid (in mb) fits into a Melter.
+		capacity = 4000
+
+	[parameters.geoSeparator]
+		#How much fluid (in mb) fits into a Geologic Seperator.
+		capacity = 1000
+
+	[parameters.stamper]
+		#How much fluid (in mb) fits into the Stamp Base.
+		capacity = 1500
+
+	[parameters.charger]
+		#How much ember is transferred between item and charger per tick.
+		transfer = 10.0
+
+	[parameters.fluidVessel]
+		#How much fluid (in mb) fits into the Fluid Vessel.
+		capacity = 16000
+
+	[parameters.ember_injector]
+		#The maximum distance that Ember Injectors can be placed from a crystal seed.
+		max_distance = 1
+
+	[parameters.hearth_coil]
+		#The amount of ember consumed per tick.
+		ember_cost = 1.0
+		#The amount of heat gained per tick when consuming ember.
+		heating_speed = 1.0
+		#The amount of heat lost per tick when not consuming ember.
+		cooling_speed = 1.0
+		#The maximum heat value the hearth coil can reach without upgrades.
+		max_heat = 280.0
+		#The time in ticks it takes to cook 1 item at the highest heat.
+		min_cook_time = 20
+		#The time in ticks it takes to cook 1 item at the lowest heat.
+		max_cook_time = 300
+
+	[parameters.dawnstone_anvil]
+		#The amount of hits required to perform one recipe on a dawnstone anvil.
+		max_hits = 40
+
+	[parameters.blazingRay]
+		#Ember used up by each shot.
+		cost = 25.0
+		#Cooldown in ticks between each shot.
+		cooldown = 10
+		#Time in ticks to fully charge.
+		charge = 20
+		#Damage dealt by one shot.
+		damage = 7.0
+		#Maximum spread.
+		spread = 30.0
+		#Maximum shot distance.
+		distance = 96.0
+
+	[parameters.cinderStaff]
+		#Ember used up by each shot.
+		cost = 25.0
+		#Cooldown in ticks between each shot.
+		cooldown = 10
+		#Time in ticks to fully charge.
+		charge = 60
+		#Damage dealt by one shot.
+		damage = 17.0
+		#Size of the projectile.
+		size = 17.0
+		#Area of Effect on impact.
+		aoe = 2.125
+		#Maximum lifetime in ticks of projectile.
+		lifetime = 160
+
+	[parameters.ashen]
+
+		[parameters.ashen.goggles]
+			#How many inflictor gems can fit in the ashen goggles.
+			gem_slots = 2
+
+		[parameters.ashen.cloak]
+			#How many inflictor gems can fit in the ashen cloak.
+			gem_slots = 7
+
+		[parameters.ashen.leggings]
+			#How many inflictor gems can fit in the ashen leggings.
+			gem_slots = 5
+
+		[parameters.ashen.boots]
+			#How many inflictor gems can fit in the ashen boots.
+			gem_slots = 3
+
+	[parameters.shiftingScales]
+		#Syntax is 'damagetype:rate'. Determines which damage types are partially unaffected by the shifting scales augment.
+		damagePasses = ["drown:1.0", "starve:1.0"]
+		#Syntax is 'damagetype:rate'. Specifies a separate damage rate for depleting the scales.
+		damageRates = []
+
+#Miscellaneous settings
+[misc]
+	#Codex entries need to be completed before the next one unlocks.
+	codexProgression = true
+	#If true, Embers homing projectiles will go for neutral players.
+	everybodyIsEnemy = false
+	#Which domains are preferred for recipes with dynamic outputs.
+	tagPreferences = ["minecraft", "embers"]
+	#Which items are preferred as the result of breaking down a tool on an anvil.
+	itemPreferences = ["minecraft:oak_planks", "minecraft:cobblestone"]
+

@@ -1,0 +1,170 @@
+{
+  "name": "MonoGeneric",
+  "author": "Arcaratus",
+  "workspaceBackground": [
+    200,
+    200,
+    200
+  ],
+  "windowBorderActive": [
+    0,
+    0,
+    0
+  ],
+  "windowBorderInactive": [
+    180,
+    180,
+    180
+  ],
+  "windowBackground": [
+    50,
+    50,
+    50
+  ],
+  "elementButtonBackgroundInactive": [
+    80,
+    80,
+    80
+  ],
+  "elementButtonBackgroundActive": [
+    80,
+    80,
+    80
+  ],
+  "elementButtonBackgroundHover": [
+    20,
+    20,
+    20
+  ],
+  "elementButtonBorder": [
+    180,
+    180,
+    180
+  ],
+  "elementButtonClick": [
+    160,
+    160,
+    160
+  ],
+  "elementButtonToggle": [
+    190,
+    190,
+    190
+  ],
+  "elementButtonToggleHover": [
+    170,
+    170,
+    170
+  ],
+  "elementInputBackgroundInactive": [
+    75,
+    75,
+    75
+  ],
+  "elementInputBackgroundHover": [
+    100,
+    100,
+    100
+  ],
+  "elementInputBorder": [
+    0,
+    0,
+    0
+  ],
+  "elementInputUpDownHover": [
+    100,
+    100,
+    100
+  ],
+  "elementInputUpDownClick": [
+    140,
+    140,
+    140
+  ],
+  "elementListBorder": [
+    20,
+    20,
+    20
+  ],
+  "elementListItemBorder": [
+    45,
+    45,
+    45
+  ],
+  "elementListItemBackground": [
+    90,
+    90,
+    90
+  ],
+  "elementListItemBackgroundSelect": [
+    120,
+    120,
+    120
+  ],
+  "elementListItemBackgroundHover": [
+    105,
+    105,
+    105
+  ],
+  "elementTabHover": [
+    20,
+    20,
+    20
+  ],
+  "elementTabBackgroundActive": [
+    190,
+    190,
+    190
+  ],
+  "elementTabBorderActive": [
+    255,
+    255,
+    255
+  ],
+  "elementTabBackgroundInactive": [
+    60,
+    60,
+    60
+  ],
+  "elementTabBorderInactive": [
+    150,
+    150,
+    150
+  ],
+  "elementScrollBar": [
+    60,
+    60,
+    60
+  ],
+  "elementScrollBarBorder": [
+    35,
+    35,
+    35
+  ],
+  "elementScrollBarBackground": [
+    35,
+    35,
+    35
+  ],
+  "font": [
+    255,
+    255,
+    255
+  ],
+  "fontLight": [
+    255,
+    255,
+    255
+  ],
+  "fontMid": [
+    170,
+    170,
+    170
+  ],
+  "fontDim": [
+    235,
+    235,
+    235
+  ],
+  "workspaceBlock": "minecraft:smooth_stone_slab"
+}

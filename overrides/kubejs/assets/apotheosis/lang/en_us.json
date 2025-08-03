@@ -1,0 +1,10 @@
+{
+    "item.apotheosis.gem.apotheosis:core/ember" : "Ember Shard",
+    "item.apotheosis.gem.apotheosis:core/frost" : "Frost Chunk",
+    "affix.apotheosis:armor/attribute/robust" : "Robust",
+    "affix.apotheosis:armor/attribute/robust.suffix" : "of Insulation",
+    "affix.apotheosis:armor/attribute/soul_ward" : "Warding",
+    "affix.apotheosis:armor/attribute/soul_ward.suffix" : "of Soul Reinforcement",
+    "affix.apotheosis:armor/attribute/soul_recharge" : "Quick Soul",
+    "affix.apotheosis:armor/attribute/soul_recharge.suffix" : "of Regenerating Might"
+}

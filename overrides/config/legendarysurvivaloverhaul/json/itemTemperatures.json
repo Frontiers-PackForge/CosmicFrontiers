@@ -1,0 +1,348 @@
+{
+  "minecraft:iron_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 1.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:blue_ice": {
+    "temperature": -3.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:leather_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.5,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:iron_leggings": {
+    "temperature": 0.0,
+    "heat_resistance": 1.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "endermanoverhaul:savanna_hood": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 2.5,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:leather_leggings": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.0,
+    "thermal_resistance": 0.0
+  },
+  "legendarysurvivaloverhaul:desert_leggings": {
+    "temperature": 0.0,
+    "heat_resistance": 2.5,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:netherite_helmet": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:golden_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.5,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:soul_torch": {
+    "temperature": -1.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:netherite_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 2.0,
+    "thermal_resistance": 0.0
+  },
+  "legendarysurvivaloverhaul:snow_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 3.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:iron_helmet": {
+    "temperature": 0.0,
+    "heat_resistance": 0.5,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "endermanoverhaul:snowy_hood": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 2.5,
+    "thermal_resistance": 0.0
+  },
+  "legendarysurvivaloverhaul:desert_helmet": {
+    "temperature": 0.0,
+    "heat_resistance": 1.5,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:ice": {
+    "temperature": -1.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "legendarysurvivaloverhaul:snow_leggings": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 2.5,
+    "thermal_resistance": 0.0
+  },
+  "legendarysurvivaloverhaul:desert_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.5,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:torch": {
+    "temperature": 1.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:diamond_helmet": {
+    "temperature": 0.0,
+    "heat_resistance": 0.5,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "legendarysurvivaloverhaul:snow_helmet": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.5,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:lava_bucket": {
+    "temperature": 6.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:diamond_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 1.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:golden_leggings": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.0,
+    "thermal_resistance": 0.0
+  },
+  "legendarysurvivaloverhaul:snow_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.5,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:leather_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:diamond_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 1.5,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "endermanoverhaul:badlands_hood": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 2.5,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:netherite_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.5,
+    "thermal_resistance": 0.0
+  },
+  "legendarysurvivaloverhaul:desert_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 3.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:magma_block": {
+    "temperature": 6.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:iron_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.5,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "legendarysurvivaloverhaul:nether_chalice": {
+    "temperature": 2.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:leather_helmet": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.5,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:netherite_leggings": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.5,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:diamond_leggings": {
+    "temperature": 0.0,
+    "heat_resistance": 1.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:golden_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.0,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:golden_helmet": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.5,
+    "thermal_resistance": 0.0
+  },
+  "minecraft:packed_ice": {
+    "temperature": -2.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "gtceu:nanomuscle_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 2.0
+  },
+  "gtceu:nanomuscle_leggings": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 2.0
+  },
+  "gtceu:nanomuscle_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 2.0
+  },
+  "gtceu:nanomuscle_helmet": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 2.0
+  },
+  "cosmiccore:space_nanomuscle_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 2.0
+  },
+  "gtceu:avanced_nanomuscle_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 2.0
+  },
+  "cosmiccore:space_advanced_nanomuscle_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 2.0
+  },
+  "gtceu:quarktech_helmet": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 10.0
+  },
+  "gtceu:quarktech_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 10.0
+  },
+  "gtceu:quarktech_leggings": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 10.0
+  },
+  "gtceu:quarktech_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 10.0
+  },
+  "gtceu:advanced_quarktech_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 10.0
+  },
+  "cosmiccore:space_advanced_quarktech_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 10.0
+  },
+  "cosmiccore:space_quarktech_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 10.0
+  },
+  "botania:manaweave_helmet": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 5.0,
+    "thermal_resistance": 0.0
+  },
+  "botania:manaweave_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 5.0,
+    "thermal_resistance": 0.0
+  },
+  "botania:manaweave_leggings": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 5.0,
+    "thermal_resistance": 0.0
+  },
+  "botania:manaweave_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 5.0,
+    "thermal_resistance": 0.0
+  }
+  
+}
+
+
+

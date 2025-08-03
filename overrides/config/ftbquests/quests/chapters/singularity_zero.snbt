@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "singularity_zero"
+	group: "0FA2E8AE749DD85D"
+	icon: "extendedcrafting:ultimate_singularity"
+	id: "1EC106AF60EFB5AF"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Singularity Zero"
+}

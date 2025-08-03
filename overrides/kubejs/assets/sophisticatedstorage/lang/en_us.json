@@ -1,0 +1,9 @@
+{
+    "block.sophisticatedstorage.iron_barrel": "%s%sWrought Iron Barrel",
+    "block.sophisticatedstorage.gold_barrel": "%s%sRose Gold Barrel",
+    "block.sophisticatedstorage.iron_chest": "%s%sWrought Iron Chest",
+    "block.sophisticatedstorage.gold_chest": "%s%sRose Gold Chest",
+    "item.sophisticatedstorage.basic_to_iron_tier_upgrade": "Basic to Wrought Iron Tier Upgrade",
+    "item.sophisticatedstorage.iron_to_gold_tier_upgrade": "Wrought Iron to Rose Gold Tier Upgrade",
+    "item.sophisticatedstorage.gold_to_diamond_tier_upgrade": "Rose Gold to Diamond Tier Upgrade"
+}

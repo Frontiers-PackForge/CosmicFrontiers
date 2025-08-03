@@ -1,0 +1,27 @@
+{
+  "legendarysurvivaloverhaul:healing_herbs": {
+    "healingCharges": 1,
+    "healingValue": 2.0,
+    "healingTime": 600
+  },
+  "legendarysurvivaloverhaul:medikit": {
+    "healingCharges": 0,
+    "healingValue": 8.0,
+    "healingTime": 400
+  },
+  "legendarysurvivaloverhaul:tonic": {
+    "healingCharges": 0,
+    "healingValue": 5.0,
+    "healingTime": 600
+  },
+  "legendarysurvivaloverhaul:plaster": {
+    "healingCharges": 1,
+    "healingValue": 3.0,
+    "healingTime": 400
+  },
+  "legendarysurvivaloverhaul:bandage": {
+    "healingCharges": 3,
+    "healingValue": 3.0,
+    "healingTime": 300
+  }
+}

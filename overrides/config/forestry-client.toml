@@ -1,0 +1,21 @@
+#Whether any of Forestry's particles are rendered.
+particles = true
+#Whether the "Did you know?" ledgers are shown in Forestry menus.
+enable_hints = true
+
+[mail]
+	#Whether alerts are enabled for Forestry's mail system.
+	mail_alerts_enable = true
+	#Whether mail alerts are shown on the right of the screen instead of the left.
+	mail_alerts_on_right = false
+	#Whether mail alerts are shown on the bottom of the screen instead of the top.
+	mail_alerts_on_bottom = false
+
+[jei_bees]
+	#Set to false to disable display of mutation requirements
+	show_requirements = true
+	#Set to false to disable display of secret mutations
+	show_secret_mutations = true
+	#Set to false to disable showing identified genome in recipes
+	show_analyzed_tooltip = true
+

@@ -1,0 +1,40 @@
+{
+	"type": "apotheosis:attribute",
+	"attribute": "attributeslib:current_hp_damage",
+	"operation": "ADDITION",
+	"values": {
+		"common": {
+			"min": 0.01,
+			"steps": 3,
+			"step": 0.01
+		},
+		"uncommon": {
+			"min": 0.02,
+			"steps": 2,
+			"step": 0.01
+		},
+		"rare": {
+			"min": 0.02,
+			"steps": 4,
+			"step": 0.01
+		},
+		"epic": {
+			"min": 0.05,
+			"steps": 2,
+			"step": 0.01
+		},
+		"mythic": {
+			"min": 0.05,
+			"steps": 4,
+			"step": 0.01
+		},
+		"ancient": {
+			"min": 0.05,
+			"steps": 10,
+			"step": 0.01
+		}
+	},
+	"types": [
+		"heavy_weapon"
+	]
+}

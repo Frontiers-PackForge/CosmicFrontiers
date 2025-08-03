@@ -1,0 +1,22 @@
+{
+  "conditions": [{
+    "type": "apotheosis:module",
+    "module": "village"
+  }],
+  "type": "apotheosis:basic_trade",
+  "input_1": {
+    "item": "minecraft:emerald",
+    "count": 10
+  },
+  "input_2": {
+    "item": "minecraft:air",
+    "count": 0
+  },
+  "output": {
+    "item": "minecraft:wither_skeleton_skull",
+    "count": 1
+  },
+  "max_trades": 6,
+  "xp": 5,
+  "price_mult": 1.0
+}

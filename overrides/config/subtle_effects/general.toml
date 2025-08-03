@@ -1,0 +1,6 @@
+# Don't change this! Version used to track needed updates.
+version = 0
+mobSkullShaders = false
+particleRenderDistance = 5
+cullParticlesWithNoAlpha = true
+sparksScale = 1.0

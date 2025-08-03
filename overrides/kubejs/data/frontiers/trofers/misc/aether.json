@@ -1,0 +1,31 @@
+{
+    "name": "The Aether",
+    "tooltip": [
+        "Welcome to the Aether!"
+    ],
+    "item": {
+        "item": "aether:aether_portal_frame",
+        "count": 1
+    },
+    "display": {
+        "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "scale": 1.5
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.6
+    },
+    "colors": {
+        "base": "#faf67a",
+        "accent": "#faab7a"
+    }
+}

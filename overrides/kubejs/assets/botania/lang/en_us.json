@@ -1,0 +1,18 @@
+{
+    "entity.botania.doppleganger": "Virtue of 03S9",
+    "entity.botania.magic_landmine": "Virtue",
+    "advancement.botania:gaiaGuardianKill": "Starkiller slain",
+    "advancement.botania:gaiaGuardianKill.desc": "Anger a Virtue and slay it for its essence",
+    "advancement.botania:gaiaGuardianNoArmor": "A Terrifying Force",
+    "advancement.botania:gaiaGuardianNoArmor.desc": "Slay a Virtue without wearing any armor at any point during the fight",
+    "advancement.botania:gaiaGuardianHardmode": "At the Mercy of a Dream",
+    "advancement.botania:gaiaGuardianHardmode.desc": "Summon and slay an Angels Memory",
+    "block.botania.gaia_pylon": "Virtue Pylon",
+    "block.botania.gaia_spreader": "Virtue Mana Spreader",
+    "block.botania.gaia_head": "Virtue's Head",
+    "item.botania.gaiahead": "Virtue's Head",
+    "item.botania.life_essence": "Virtue Essence",
+    "item.botania.gaia_ingot": "Virtue Meld Ingot",
+    "item.botania.record_gaia_1.desc": "Hakita - Death of Gods Will",
+    "item.botania.record_gaia_2.desc": "Hakita - The World Looks Red"
+}

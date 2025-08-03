@@ -1,0 +1,53 @@
+
+["Visual Preferences"]
+	#Sets all temperatures to be displayed in Celsius
+	Celsius = true
+	#Visually offsets the world temperature to better match the user's definition of "hot" and "cold"
+	#Range: > -2147483647
+	"Temperature Offset" = 0
+	#The amount of smoothing applied to gauges in the UI
+	#A value of 1 has no smoothing
+	#Range: 1.0 ~ 2.147483647E9
+	"Temperature Smoothing" = 10.0
+	#Displays a dripping water effect on-screen when the player is wet
+	"Show Water Effect" = true
+
+["UI Options"]
+	"Custom hotbar layout" = true
+	#Controls whether UI elements will shake when in critical conditions
+	"Icon Bobbing" = true
+	#The position of the body temperature icon relative to default
+	"Body Temperature Icon Offset" = [0, 0]
+	#Enables the body temperature icon above the hotbar
+	"Show Body Temperature Icon" = true
+	#Moves the body temperature icon to make way for the advanced readout when a thermometer is equipped
+	"Move Body Icon For Advanced Info" = true
+	#The position of the body temperature readout relative to default
+	"Body Temperature Readout Offset" = [0, 0]
+	#Enables the body temperature readout above the hotbar
+	"Show Body Temperature Readout" = true
+	#The position of the world temperature gauge relative to default
+	"World Temperature UI Offset" = [0, 0]
+	#Enables the world temperature gauge next to the hotbar
+	"Show World Temperature Gauge" = true
+
+[Accessibility]
+	#Enables visual distortion effects when the player is too hot or cold
+	"Distortion Effects" = true
+	#Enables high contrast mode for UI elements
+	"High Contrast" = false
+
+[Misc]
+	#Show the config menu button in the Options menu
+	"Enable In-Game Config" = true
+	#The position (offset) of the config button on the screen
+	"Config Button Position" = [0, 0]
+	#Warns the player about a bug that clears armor insulation when in creative mode
+	"Enable Creative Mode Warning" = true
+	#Displays areas that the Hearth is affecting when the F3 debug menu is open
+	"Hearth Debug" = true
+	#Hides insulation tooltips for items, armor, and curios unless SHIFT is held
+	"Hide Tooltips" = false
+	#Automatically expands all collapsible tooltips
+	"Expand Tooltips" = false
+

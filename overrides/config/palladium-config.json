@@ -1,0 +1,12 @@
+{
+  "enableShaderUniformCaching": false,
+  "enableShaderICaching": false,
+  "enableShaderLogInfoCaching": false,
+  "enableResourceKeyDedup": false,
+  "enableQuadsDedup": false,
+  "enableComposterFix": false,
+  "disableDataFixes": false,
+  "lightweightWolfAndCatAttackAi": false,
+  "lightweightWolfAndRabbitFleeAi": false,
+  "resourceLocationDeduplication": "ALL"
+}

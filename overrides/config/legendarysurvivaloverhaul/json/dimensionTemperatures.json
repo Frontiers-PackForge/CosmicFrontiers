@@ -1,0 +1,18 @@
+{
+  "minecraft:overworld": {
+    "temperature": 20.0
+  },
+  "minecraft:the_nether": {
+    "temperature": 35.0
+  },
+  "aether:the_aether": {
+    "temperature": 0.0
+  },
+  "undergarden:undergarden": {
+    "temperature": 50.0
+  },
+  "ad_astra:earth_orbit": {
+    "temperature": -30.0
+  } 
+
+}

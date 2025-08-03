@@ -1,0 +1,49 @@
+{
+	id: "77EB5235D3FD6F87"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "cosmetics"
+	}
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ item: "botania:cosmetic_black_tie" }
+		{ item: "botania:cosmetic_red_glasses" }
+		{ item: "botania:cosmetic_puffy_scarf" }
+		{ item: "botania:cosmetic_engineer_goggles" }
+		{ item: "botania:cosmetic_eyepatch" }
+		{ item: "botania:cosmetic_wicked_eyepatch" }
+		{ item: "botania:cosmetic_blue_butterfly" }
+		{ item: "botania:cosmetic_cat_ears" }
+		{ item: "botania:cosmetic_witch_pin" }
+		{ item: "botania:cosmetic_devil_tail" }
+		{ item: "botania:cosmetic_kamui_eye" }
+		{ item: "botania:cosmetic_googly_eyes" }
+		{ item: "botania:cosmetic_clock_eye" }
+		{ item: "botania:cosmetic_four_leaf_clover" }
+		{ item: "botania:cosmetic_unicorn_horn" }
+		{ item: "botania:cosmetic_devil_horns" }
+		{ item: "botania:cosmetic_hyper_plus" }
+		{ item: "botania:cosmetic_botanist_emblem" }
+		{ item: "botania:cosmetic_ancient_mask" }
+		{ item: "botania:cosmetic_eerie_mask" }
+		{ item: "botania:cosmetic_alien_antenna" }
+		{ item: "botania:cosmetic_anaglyph_glasses" }
+		{ item: "botania:cosmetic_orange_shades" }
+		{ item: "botania:cosmetic_groucho_glasses" }
+		{ item: "botania:cosmetic_thick_eyebrows" }
+		{ item: "botania:cosmetic_lusitanic_shield" }
+		{ item: "botania:cosmetic_questgiver_mark" }
+		{ item: "botania:cosmetic_tiny_potato_mask" }
+		{ item: "botania:cosmetic_thinking_hand" }
+		{ item: "botania:cosmetic_polka_dotted_bows" }
+		{ item: "botania:cosmetic_pink_flower_bud" }
+		{ item: "botania:cosmetic_red_ribbons" }
+	]
+	title: "Cosmetics"
+}

@@ -1,0 +1,23 @@
+{
+	id: "0A64E2AB2FCA41CC"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{ item: "farmersdelight:mutton_wrap" }
+		{ item: "farmersdelight:dumplings" }
+		{ item: "farmersdelight:bacon_sandwich" }
+		{ item: "farmersdelight:stuffed_potato" }
+		{ item: "farmersdelight:cabbage_rolls" }
+		{ item: "farmersdelight:salmon_roll" }
+		{ item: "farmersdelight:cod_roll" }
+		{ item: "farmersdelight:egg_sandwich" }
+		{ item: "farmersdelight:barbecue_stick" }
+		{ item: "farmersdelight:chicken_sandwich" }
+		{ item: "farmersdelight:sweet_berry_cookie" }
+		{ item: "farmersdelight:honey_cookie" }
+		{ item: "farmersdelight:cooked_bacon" }
+		{ item: "farmersdelight:cooked_chicken_cuts" }
+		{ item: "farmersdelight:kelp_roll" }
+	]
+	title: "Light Lunch"
+}

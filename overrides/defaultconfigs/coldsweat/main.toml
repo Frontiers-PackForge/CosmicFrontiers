@@ -1,0 +1,64 @@
+
+[Difficulty]
+	#Defines the minimum habitable temperature
+	#Range: -Infinity ~ Infinity
+	"Minimum Habitable Temperature" = 0.4
+	#Defines the maximum habitable temperature
+	#Range: -Infinity ~ Infinity
+	"Maximum Habitable Temperature" = 1.511111111111111
+	#Rate at which the player's body temperature changes (default: 1.0 (100%))
+	#Range: 0.0 ~ Infinity
+	"Rate Multiplier" = 1.0
+	#Damage dealt to the player when they are too hot or too cold
+	#Range: 0.0 ~ Infinity
+	"Temperature Damage" = 2.0
+	#Sets whether damage scales with difficulty
+	"Damage Scaling" = true
+
+[Items]
+	#Allow fire resistance to block overheating damage
+	"Fire Resistance Immunity" = true
+	#Allow ice resistance to block freezing damage
+	"Ice Resistance Immunity" = true
+	#Thermometer item is required to see detailed world temperature
+	"Require Thermometer" = true
+
+["Temperature Effects"]
+
+	["Temperature Effects".Hot]
+		#Defines the distance at which the player's vision is obscured by heatstroke fog
+		#Set to a value above 64 to disable the effect
+		#Range: 0.0 ~ Infinity
+		"Heatstroke Fog" = 6.0
+
+	["Temperature Effects".Cold]
+		#When set to true, this percentage of the player's hearts will freeze over when they are too cold, preventing regeneration
+		#Represented as a percentage
+		#Range: 0.0 ~ 1.0
+		"Freezing Hearts Percentage" = 0.5
+		#When set to true, the player's attack knockback will be reduced by this amount when they are too cold
+		#Represented as a percentage
+		#Range: 0.0 ~ 1.0
+		"Chilled Knockback Reduction" = 0.5
+		#When set to true, the player's movement speed will be reduced by this amount when they are too cold
+		#Represented as a percentage
+		#Range: 0.0 ~ 1.0
+		"Chilled Movement Slowdown" = 0.5
+		#When set to true, the player's mining speed will be reduced by this amount when they are too cold
+		#Represented as a percentage
+		#Range: 0.0 ~ 1.0
+		"Chilled Mining Speed Reduction" = 0.5
+
+["Grace Period"]
+	#The amount of time (in ticks) after the player spawns during which they are immune to temperature effects
+	#Range: > 0
+	"Grace Period Length" = 6000
+	#Enables the grace period
+	"Grace Period Enabled" = true
+
+#DO NOT EDIT THE SETTINGS IN THIS SECTION
+[Builtin]
+	#Range: 0 ~ 4
+	Difficulty = 2
+	Version = "2.3.4"
+

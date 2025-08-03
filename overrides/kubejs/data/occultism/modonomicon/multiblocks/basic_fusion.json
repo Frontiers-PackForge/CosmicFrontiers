@@ -1,0 +1,45 @@
+{
+  "type": "modonomicon:dense",
+  "mapping": {
+    "*": {
+      "type": "modonomicon:display",
+      "display": "occultism:otherstone"
+    },
+    "+": {
+      "type": "modonomicon:display",
+      "display": "minecraft:stone"
+    },
+    "0": {
+      "type": "modonomicon:block",
+      "block": "occultism:golden_sacrificial_bowl"
+    },
+    "B": {
+      "type": "modonomicon:tag",
+      "tag": "#minecraft:candles"
+    },
+    "C": {
+      "type": "modonomicon:block",
+      "block": "occultism:chalk_glyph_white"
+    }
+  },
+  "pattern": [
+    [
+      "_BCCCB_",
+      "BC___CB",
+      "C_____C",
+      "C__0__C",
+      "C_____C",
+      "BC___CB",
+      "_BCCCB_"
+    ],
+    [
+      "*+*+*+*",
+      "+*+*+*+",
+      "*+*+*+*",
+      "+*+*+*+",
+      "*+*+*+*",
+      "+*+*+*+",
+      "*+*+*+*"
+    ]
+  ]
+}

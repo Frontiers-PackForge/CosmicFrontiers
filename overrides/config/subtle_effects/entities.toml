@@ -1,0 +1,87 @@
+# Don't change this! Version used to track needed updates.
+version = 0
+enderPearlTrail = true
+snowballTrailDensity = 0.2
+allayMagicDensity = 0.2
+vexMagicDensity = 0.2
+sheepShearFluff = true
+improvedDragonFireballTrail = true
+commandBlockMinecartParticles = "ON"
+endCrystalParticles = true
+minecartLandingSparks = true
+slimeTrails = true
+magmaCubeTrails = true
+replaceSlimeSquishParticles = true
+replaceSpellCasterParticles = true
+ironGolemCrackParticles = true
+spectralArrowParticles = true
+wardenDeathSoulParticles = true
+xpBottleParticlesDisplayType = "DEFAULT"
+xpBottleParticlesDensity = 10
+
+[attacked]
+chickenFeathers = true
+parrotFeathers = true
+snowGolemSnowflakes = true
+
+[sleeping]
+playerSnoreChance = 0.0
+playerSnoreSoundVolume = 0.0
+playersHaveSleepingZs = true
+villagerSnoreChance = 1.0
+villagerSnoreSoundVolume = 1.0
+villagersHaveSleepingZs = true
+foxesHaveSleepingZs = true
+batsHaveSleepingZs = true
+catsHaveSleepingZs = true
+otherMobsHaveSleepingZs = true
+displaySleepingZsOnlyWhenSnoring = false
+adjustNameTagWhenSleeping = true
+
+[humanoids]
+drowningBubbles = "DEFAULT"
+drowningBubblesDensity = 10
+
+[humanoids.frostyBreath]
+displayType = "THIRD_PERSON_ONLY"
+alpha = 0.5
+waitTime = 60
+seasons = "DEFAULT"
+
+[humanoids.player]
+stomachGrowlingThreshold = 0
+stomachGrowlingVolume = 0.0
+heartBeatingThreshold = 0
+heartbeatVolume = 0.0
+
+[dustClouds]
+scale = 2.0
+alpha = 1.0
+playerFell = true
+playerRunning = true
+playerRunningRequiresSpeed = false
+mobFell = true
+mobRunning = true
+landMaceAttack = true
+preventWhenRaining = false
+
+[burning]
+smoke = "DEFAULT"
+flames = true
+sparks = true
+sounds = true
+
+[itemRarity]
+particlesDisplayType = "ON"
+particleColor = "NAME_COLOR"
+mixedColorName = true
+particleMaxHeight = 1.4078431
+particleMaxSpeed = 1.0
+particleDensity = 0.15470588235294108
+
+[explosives]
+tntUpdateSmoke = true
+tntFlames = true
+tntSparks = true
+creeperSmoke = "UPDATED"
+creeperSparks = true

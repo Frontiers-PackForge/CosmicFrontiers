@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+      "all": "kubejs:block/casings/high_temperature_fission_casing"
+    }
+  }

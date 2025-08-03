@@ -1,0 +1,30 @@
+
+[General]
+	#Search distance for when creating coastal waves.
+	#Range: > 0
+	waveSearchDistance = 32
+	#Spawn distance for when creating coastal waves.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	waveSpawnDistance = 256.0
+	#Maximum amount of waves to spawn at most.
+	#Range: > 0
+	waveSpawnAmount = 20
+	#Time in ticks between each spawn sequence of waves.
+	#Range: > 1
+	waveSpawnFrequency = 10
+	#Maximum spawn distance from shore.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	waveSpawnDistanceFromShoreMax = 28.0
+	#Minimum spawn distance from shore.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	waveSpawnDistanceFromShoreMin = 4.0
+	#Amount of sprites for waves. Zero indexed.
+	#Range: > 1
+	waveSpriteCount = 5
+	#How great should the chance for waves to deposit blocks be? Lower value = higher chance.
+	#Range: > 1
+	waveBlockDepositChance = 100
+	#How often the waves should make a sound. Lower value = rarer.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	waveBreakingSoundChance = 0.5
+

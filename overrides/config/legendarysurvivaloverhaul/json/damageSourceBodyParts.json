@@ -1,0 +1,165 @@
+{
+  "magic": {
+    "bodyParts": [],
+    "damageDistribution": "NONE"
+  },
+  "bad_respawn_point": {
+    "bodyParts": [
+      "HEAD",
+      "RIGHT_ARM",
+      "LEFT_ARM",
+      "CHEST",
+      "RIGHT_LEG",
+      "RIGHT_FOOT",
+      "LEFT_LEG",
+      "LEFT_FOOT"
+    ],
+    "damageDistribution": "ALL"
+  },
+  "legendarysurvivaloverhaul.hyperthermia": {
+    "bodyParts": [],
+    "damageDistribution": "NONE"
+  },
+  "legendarysurvivaloverhaul.dehydration": {
+    "bodyParts": [],
+    "damageDistribution": "NONE"
+  },
+  "anvil": {
+    "bodyParts": [
+      "HEAD"
+    ],
+    "damageDistribution": "ALL"
+  },
+  "inFire": {
+    "bodyParts": [
+      "LEFT_FOOT",
+      "RIGHT_FOOT",
+      "LEFT_LEG",
+      "RIGHT_LEG"
+    ],
+    "damageDistribution": "ALL"
+  },
+  "onFire": {
+    "bodyParts": [
+      "HEAD",
+      "RIGHT_ARM",
+      "LEFT_ARM",
+      "CHEST",
+      "RIGHT_LEG",
+      "RIGHT_FOOT",
+      "LEFT_LEG",
+      "LEFT_FOOT"
+    ],
+    "damageDistribution": "ALL"
+  },
+  "starve": {
+    "bodyParts": [],
+    "damageDistribution": "NONE"
+  },
+  "supplementaries.bamboo_spikes": {
+    "bodyParts": [
+      "LEFT_FOOT",
+      "RIGHT_FOOT"
+    ],
+    "damageDistribution": "ALL"
+  },
+  "fallingBlock": {
+    "bodyParts": [
+      "HEAD"
+    ],
+    "damageDistribution": "ALL"
+  },
+  "dragonBreath": {
+    "bodyParts": [
+      "HEAD",
+      "RIGHT_ARM",
+      "LEFT_ARM",
+      "CHEST",
+      "RIGHT_LEG",
+      "RIGHT_FOOT",
+      "LEFT_LEG",
+      "LEFT_FOOT"
+    ],
+    "damageDistribution": "ALL"
+  },
+  "drown": {
+    "bodyParts": [],
+    "damageDistribution": "NONE"
+  },
+  "lightningBolt": {
+    "bodyParts": [
+      "HEAD",
+      "RIGHT_ARM",
+      "LEFT_ARM",
+      "CHEST",
+      "RIGHT_LEG",
+      "RIGHT_FOOT",
+      "LEFT_LEG",
+      "LEFT_FOOT"
+    ],
+    "damageDistribution": "ALL"
+  },
+  "explosion": {
+    "bodyParts": [
+      "HEAD",
+      "RIGHT_ARM",
+      "LEFT_ARM",
+      "CHEST",
+      "RIGHT_LEG",
+      "RIGHT_FOOT",
+      "LEFT_LEG",
+      "LEFT_FOOT"
+    ],
+    "damageDistribution": "ALL"
+  },
+  "in_wall": {
+    "bodyParts": [],
+    "damageDistribution": "NONE"
+  },
+  "legendarysurvivaloverhaul.hypothermia": {
+    "bodyParts": [],
+    "damageDistribution": "NONE"
+  },
+  "hotFloor": {
+    "bodyParts": [
+      "LEFT_FOOT",
+      "RIGHT_FOOT"
+    ],
+    "damageDistribution": "ALL"
+  },
+  "flyIntoWall": {
+    "bodyParts": [
+      "HEAD"
+    ],
+    "damageDistribution": "ALL"
+  },
+  "fall": {
+    "bodyParts": [
+      "LEFT_FOOT",
+      "RIGHT_FOOT"
+    ],
+    "damageDistribution": "ALL"
+  },
+  "cactus": {
+    "bodyParts": [
+      "LEFT_FOOT",
+      "RIGHT_FOOT",
+      "LEFT_LEG",
+      "RIGHT_LEG"
+    ],
+    "damageDistribution": "ONE_OF"
+  },
+  "sweetBerryBush": {
+    "bodyParts": [
+      "LEFT_FOOT",
+      "RIGHT_FOOT",
+      "LEFT_LEG",
+      "RIGHT_LEG"
+    ],
+    "damageDistribution": "ONE_OF"
+  },
+  "wither": {
+    "bodyParts": [],
+    "damageDistribution": "NONE"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "conditions": [{
+    "type": "apotheosis:module",
+    "module": "village"
+  }],
+  "type": "apotheosis:basic_trade",
+  "rare": true,
+  "input_1": {
+    "item": "minecraft:diamond_chestplate",
+    "count": 1
+  },
+  "input_2": {
+    "item": "minecraft:emerald",
+    "count": 56
+  },
+  "output": {
+    "item": "minecraft:diamond_chestplate",
+    "count": 1,
+        "nbt": {
+        "Enchantments": [
+            {
+                "lvl": 5,
+                "id": "minecraft:protection"
+            },
+            {
+                "lvl": 5,
+                "id": "minecraft:projectile_protection"
+            },
+            {
+                "lvl": 1,
+                "id": "minecraft:mending"
+            },
+            {
+                "lvl": 5,
+                "id": "minecraft:unbreaking"
+            },
+            {
+                "lvl": 2,
+                "id": "apotheosis:berserkers_fury"
+            }
+        ],
+        "display": {
+            "Name": "{\"translate\":\"name.apotheosis.merch_chest\", \"italic\": false, \"color\": \"#1ABBE0\"}"
+        },
+        "Damage": 0
+    }
+  },
+  "max_trades": 1,
+  "xp": 500,
+  "price_mult": 1.0
+}

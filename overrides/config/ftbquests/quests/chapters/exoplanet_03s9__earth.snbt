@@ -1,0 +1,910 @@
+{
+	default_hide_dependency_lines: false
+	default_min_width: 300
+	default_quest_shape: ""
+	filename: "exoplanet_03s9__earth"
+	group: "49DCE46B3EB22AEA"
+	icon: "gtceu:prospector.lv"
+	id: "706EB66D1162963D"
+	images: [
+		{
+			height: 3.0d
+			image: "frontiers:textures/questimages/miscicons/frontiersdefault.png"
+			order: 9999
+			rotation: 0.0d
+			width: 9.438805970149254d
+			x: 6.130952380952401d
+			y: -3.305229591836735d
+		}
+		{
+			height: 4.0d
+			image: "frontiers:textures/questimages/miscicons/wingedborder.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 6.103749111584953d
+			y: -0.5d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"                —----- Script #1.216e939 —-----"
+				"                      &eEnviroment Settings&r - &aOK&r!"
+				"             &eMemory Status&r - &cUnrecoverable Error&r"
+				"               &7Can not disconnect memory storage&r."
+				"                     &7Inducing Temporal Amnesia&r."
+				"                   &cAll other checks have failed&r."
+				"                     Starting Script #1.216e939 "
+				"                —---------------------—-----"
+				"                          VERDICT - GUILTY"
+				"                  STATUS - Sub Dimensional Prison"
+				"          "
+				"                     Error Loading Information"
+				""
+				""
+				" &l&c[Frontiers is an extremely curated experience]"
+				"         &c&l[DO NOT report issues to other mods]"
+				"          &c&l[report all issues to the Frontiers]"
+				"                &c&l[Github before anything! ! !]"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:hsse_hammer"
+				tag: {
+					Damage: 0
+					GT.Tool: {
+						Damage: 0
+					}
+				}
+			}
+			id: "4D96DE63E82D8EAA"
+			min_width: 300
+			rewards: [{
+				id: "5305EDA65C560BED"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "\"Paying the Ultimate Price\""
+			tasks: [{
+				id: "1AE9E7415B27B019"
+				type: "checkmark"
+			}]
+			title: "Judgement of the Eternal Cycle"
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"2F6DBFCBBC3A0827"
+				"5693AA8924634F44"
+			]
+			description: [
+				""
+				"Find some Iron Ore and smelt it down!"
+				""
+				"Some common ore veins that contain Iron bearing ores"
+				""
+				"- Limonite"
+				"- Magnetite"
+				"- Chalcopyrite"
+				"- Basaltic/Granatic Mineral Sands"
+			]
+			icon: "minecraft:furnace"
+			id: "4276E47E7CF85DF0"
+			rewards: [{
+				count: 2
+				id: "412CAE2791191B42"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "You'll need iron, lots of it!"
+			tasks: [{
+				count: 64L
+				id: "595D1BBD97722943"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "Basic Metallurgy #1"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"This world hosts a wide variety of biome diversity; this also entails a variety of temperature locales that may be undesirable for your fragile body."
+				""
+				"Your body temperature is affected by several factors."
+				""
+				"&eThe Time of Day"
+				"Season"
+				"Blocks nearby"
+				"Being outside or indoors"
+				"Being Dry or Wet&r"
+				""
+				"The Sewing Table allows you to apply various coatings to your armor which modify temperature resistances, they're pretty bad and I think I will end up buffing them in the future."
+				""
+				"Cooling Coat - &cHeat Resistance&r"
+				"Warming Coat - &bCold Resistance&r"
+				"Thermal Coat - &5Thermal Resistance&r (Resists both hot/cold)"
+				""
+				""
+				"There are various Potions which can make you able to resist or completely immune to hot/cold effects.  Though Heat/Ice Immunity Potions shouldn't ever really be needed and may be swapped with more unique methods in the future"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						temperature: 6.8f
+					}
+				}
+				id: "legendarysurvivaloverhaul:thermometer"
+			}
+			id: "423EB7A96CB261A3"
+			min_width: 400
+			rewards: [{
+				id: "0343745A0E5CD43E"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E6F7A6878D4F4C7"
+				type: "checkmark"
+			}]
+			title: "Keeping Warm and Cool"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"&lInfo&r: The natural environment mimics that of your home planet Earth. "
+				"Your scanner can help you locate rich deposits of ore. "
+				""
+				"As luck would have it, you were sent along in a sturdy capsule equipped with a set of essential tools that would prove incredibly useful in your journey."
+				""
+				"&6Our sensors have detected the presence of unidentified physical and psionic entities within the vicinity.&r"
+				""
+				"&4Exercise extreme caution.&r"
+			]
+			icon: "gtceu:prospector.lv"
+			id: "78DFF9184296F7F6"
+			optional: true
+			rewards: [
+				{
+					id: "288FB56F6F1C79E3"
+					item: {
+						Count: 1
+						id: "gtceu:prospector.lv"
+						tag: {
+							Charge: 100000L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "053320D905EF39AF"
+					item: {
+						Count: 1
+						id: "gtceu:energy_crystal"
+						tag: {
+							Charge: 6400000L
+							DischargeMode: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "006D430FCB0F5666"
+				type: "checkmark"
+			}]
+			title: "Emergency Supplies"
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7C2BA4D773E57683"]
+			description: [
+				"FTB: Ultimine is a powerful collection tool, allowing you to harvest a large area in various shapes"
+				""
+				""
+				"FTB:Ultimine &4&lDOES NOT&r work on GTCEU Ores, this functionality has been disabled to encourage Hammers and Miners. A few other blocks have also been blacklisted."
+				""
+				"I'm also giving you an unbreakable hammer to help with clearing of blocks"
+				"Yes, It is 'weirdly durable', You could take this hammer to the end of time with you."
+				""
+				"&cKNOWN BUG: SOMETIMES THE HAMMER QUEST DUPLICATES THE REWARD, PLEASE THROW IT OUT TY LOL&r"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:steel_mining_hammer"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						AoEColumn: 1
+						AoELayer: 0
+						AoERow: 1
+						MaxAoEColumn: 1
+						MaxAoELayer: 0
+						MaxAoERow: 1
+						TorchPlacing: 1b
+					}
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 3
+						MaxDamage: 1535
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "5693AA8924634F44"
+			rewards: [{
+				id: "77B394833AAFBC59"
+				item: {
+					Count: 1
+					id: "gtceu:steel_mining_hammer"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							AoEColumn: 1
+							AoELayer: 0
+							AoERow: 1
+							MaxAoEColumn: 1
+							MaxAoELayer: 0
+							MaxAoERow: 1
+						}
+						GT.Tool: {
+							Damage: 0
+							HarvestLevel: 3
+							MaxDamage: 1535
+							ToolSpeed: 6.0f
+						}
+						HideFlags: 2
+						Unbreakable: 1
+						display: {
+							Name: "{\"text\":\"Weirdly Durable Hammer\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "I don't care how you get it."
+			tasks: [{
+				id: "08C287391F806DE9"
+				type: "checkmark"
+			}]
+			title: "FTB: Ultimine and You"
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["012D3A0EBD06AEB3"]
+			description: ["Btw, This pack has FTB: Ultimine"]
+			icon: "minecraft:oak_log"
+			id: "2F6DBFCBBC3A0827"
+			rewards: [{
+				count: 2
+				id: "66E981CB30D36635"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "You'll need this"
+			tasks: [{
+				icon: "minecraft:oak_log"
+				id: "78F01614D58508A8"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(minecraft:logs)"
+					}
+				}
+				title: "Any wood log"
+				type: "item"
+			}]
+			title: "Get Some Bi- I mean Wood"
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4276E47E7CF85DF0"]
+			description: [
+				"You'll need several of the tools listed below, here's some of their basic functions."
+				""
+				"&6Hammers&r are used to make ingots into plates."
+				""
+				"&6Wrenches&r are used to break GregTech blocks, as well as to set the output face of machines."
+				""
+				"&6Screwdrivers&r are used to interact with machine covers."
+				""
+				"&6Wire cutters&r are used to cut plates into wires as well as connect wires/cables."
+				""
+				"&6Files&r are used to make ingots into rods."
+				""
+				"&6Mortars&r are used to grind down metals and other materials."
+				""
+				"&6Saws&r are used to cut apart rods, planks, and other various things that need to be split apart."
+				""
+				"While there are several tools not mentioned here, these are the ones required to get through early game gregtech. Almost all the crafting functionality of these hand tools will be superceded by machines once you unlock LV and basic electricity, but some of the tools (screwdriver and wrench in particular) will become a mainstay in your inventory. While you are still using the tools for crafting, expect to go through them fairly quickly. Don't get too attached..."
+				""
+				"Remember your workplace safety! Don't lose your fingers.."
+			]
+			id: "2B84E90B712B6CD3"
+			min_width: 350
+			rewards: [{
+				count: 32
+				id: "26EE20C7652D568C"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "Tools of the Trade"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "gtceu:iron_hammer"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					id: "3CD086DF3214B1FB"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:tools/hammers)"
+						}
+					}
+					title: "Any Hammer"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "gtceu:iron_wrench"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					id: "1FCEBF1D7C6D4F12"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:tools/wrenches)"
+						}
+					}
+					title: "Any Wrench"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "gtceu:iron_file"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					id: "53845C521325E232"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:tools/files)"
+						}
+					}
+					title: "Any File"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "gtceu:iron_saw"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					id: "4BCF77A595638786"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:tools/saws)"
+						}
+					}
+					title: "Any Saw"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "gtceu:iron_screwdriver"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					id: "4A1A547444B29038"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:tools/screwdrivers)"
+						}
+					}
+					title: "Any Screwdriver"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "gtceu:iron_mortar"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					id: "32F31D914A67040F"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:tools/mortars)"
+						}
+					}
+					title: "Any Mortar"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "gtceu:iron_wire_cutter"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					id: "3F6E0509177C8A6F"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(forge:tools/wire_cutters)"
+						}
+					}
+					title: "Any Wire Cutter"
+					type: "item"
+				}
+			]
+			title: "Tools fit for survival"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2B84E90B712B6CD3"]
+			description: [
+				"This is the final quest for the starting chapter. "
+				""
+				"The Steam Age will make you craft a lot of bronze. Please present some copper and tin to continue and open up the &aNext Chapter&r as well as &6everything else!&r"
+				""
+				"I wish you luck!"
+			]
+			id: "38DA0B4E0DBAC364"
+			rewards: [{
+				id: "50A86F862ABBC6AE"
+				item: "cosmiccore:large_shard_of_perpetuity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Complete this quest to advance the questbook"
+			tasks: [
+				{
+					count: 128L
+					id: "48ED4A3C61EEB9EF"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "75E94DE9FEC011EA"
+					item: "gtceu:tin_ingot"
+					type: "item"
+				}
+			]
+			title: "The Road Ahead"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["423EB7A96CB261A3"]
+			description: [
+				"Stamina allows you to glide with the paraglider, as well as sprint and swim."
+				""
+				"The Stamina duration has been massively buffed."
+				""
+				"In the future stamina will have more integrations."
+			]
+			icon: "paraglider:stamina_vessel"
+			id: "012D3A0EBD06AEB3"
+			rewards: [{
+				id: "6FB73E55958ADF15"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			subtitle: "Configure GUI with CTRL+P"
+			tasks: [{
+				id: "0967F63809AE56C6"
+				type: "checkmark"
+			}]
+			title: "Stamina and You"
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["423EB7A96CB261A3"]
+			description: [
+				"Don't like constantly freezing and overheating in your own base?"
+				""
+				"Make a boilers or ice boxes and give it some warm/cold blocks and fluids, it'll keep you nice and comfortable."
+				""
+				"Unlike Coldsweat, these blocks don't make you more resistant to temperature, they just help modify your local enviroment."
+				""
+				"A small price to pay, For not crashing every other game load :')"
+			]
+			id: "536D3BFD33A78DBF"
+			optional: true
+			subtitle: "Keeping Places Livable"
+			tasks: [
+				{
+					id: "0A4E6B73A3070E6E"
+					item: "legendarysurvivaloverhaul:cooler"
+					type: "item"
+				}
+				{
+					id: "25ECF621490C048B"
+					item: "legendarysurvivaloverhaul:heater"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["012D3A0EBD06AEB3"]
+			description: [
+				"Using an altar allows you to augment your stamina, allowing more sprinting and parkour actions."
+				""
+				"NYI : In the future, certain foods will allow you to reduce stamina consumption rate as well as potions."
+			]
+			id: "5E8484FF7701ACE3"
+			optional: true
+			rewards: [{
+				id: "3F359B22B7FC83E6"
+				item: "paraglider:goddess_statue"
+				type: "item"
+			}]
+			subtitle: "Spirit Orbs Galore"
+			tasks: [{
+				count: 4L
+				id: "1670C7288BF3A9EC"
+				item: "paraglider:spirit_orb"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"Right off the bat, Nutrition is NOT needed to ward off negative buffs."
+				""
+				"Food and Nutrition/Diet Balance only serves to augment the player."
+				""
+				"While not outright required, eating a well balanced diet of the core foodgroups will help you greatly."
+				""
+				"Sub Foodgroups (Psi, Mana) are optional and augment your player even further, at a cost."
+				""
+				""
+				"Someone out there told me if you max all food groups, you may even be able to do the impossible."
+			]
+			icon: "solonion:lunchbox"
+			id: "0588F46F605A2E88"
+			rewards: [{
+				id: "7F77AA88929CD09E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 9
+						}
+					}
+					id: "solonion:lunchbox"
+				}
+				type: "item"
+			}]
+			subtitle: "Wait, you'll actually like this."
+			tasks: [{
+				id: "7C6730621E6A72E9"
+				type: "checkmark"
+			}]
+			title: "Nutrition and You."
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0588F46F605A2E88"]
+			description: [
+				"Most crops have an 'ideal' season to grow in. "
+				"However, all plants will grow year-round at a slower speed outside of their proper season."
+				""
+				"You can ignore this mechanic entirely by growing your plants under a glass roof (Greenhouse)"
+			]
+			icon: "sereneseasons:calendar"
+			id: "5526F519E59B8C98"
+			optional: true
+			shape: "gear"
+			tasks: [{
+				id: "24A4404A7C2C330B"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0588F46F605A2E88"]
+			description: [
+				"Certain Dimensions as well as Y Levels in the overworld are thin on oxygen."
+				"You can craft a &arespirator&r to overcome this. "
+				""
+				"In the future you will need to prepare oxygen tanks to travel to places that lack oxygen entirely."
+				""
+				"You managed to come across a bottle of &bfree breathing&r, this should help early on."
+				""
+				"&8Psst, did you know there's a vanilla way to get charcoal without a furnace, hint hint."
+			]
+			icon: {
+				Count: 1
+				id: "thinair:respirator"
+				tag: {
+					Damage: 214
+					display: {
+						Name: "{\"text\":\"Oddly Damaged Respirator\"}"
+					}
+				}
+			}
+			id: "7C2BA4D773E57683"
+			optional: true
+			rewards: [
+				{
+					id: "76D335B0BAE970B0"
+					item: {
+						Count: 1
+						id: "botania:brew_vial"
+						tag: {
+							brewKey: "botania:water_breathing"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1FAD66946AD21656"
+					item: "cosmiccore:shard_of_perpetuity"
+					type: "item"
+				}
+			]
+			subtitle: "Hold your breath."
+			tasks: [{
+				id: "7E6F8B260B75D219"
+				title: "Low Oxygen"
+				type: "checkmark"
+			}]
+			title: "Thin Air and You"
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				""
+				"\"&l&bFrontiers Monarch&r\" - Given to those who have seen the story of Frontiers to the end, for every ending. Unobtainable as of current release and won't be attainable until 1.0.0"
+				""
+				"\"&l&4Frontiers Dominator&r\" - Given to those who complete the pack with the &ndefault settings&r."
+				""
+				"Disabling Curated Configs/Difficulty Mods Will Invalidate this role."
+				""
+				"\"&l&aFrontiers Conqueror&r\" - Given to those who complete the pack with difficulty nerfs/changes"
+				"Your Prison was less hostile, your reward, partially hollow."
+			]
+			icon: "cosmiccore:donk"
+			id: "192AC19C353976D9"
+			min_width: 350
+			shape: "gear"
+			size: 1.0d
+			subtitle: "&fCosmetic Discord Roles, And how to get them."
+			tasks: [{
+				id: "279E7A3098A3B6EF"
+				type: "checkmark"
+			}]
+			title: "Challenges/Victory Rewards"
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"Some helpful command reminders"
+				""
+				"/sethome and /home - let's you set a home you can warp to any time with /home "
+				"/spawn - Teleports you to the world spawnpoint"
+				"/rtp (Random Teleport) - Great for exploring/finding stuff"
+			]
+			id: "0081FE452DFE9D6D"
+			shape: "gear"
+			tasks: [{
+				id: "454A30936336BE28"
+				title: "Useful Commands"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7C2BA4D773E57683"]
+			description: [
+				"This respirator can be crafted late into steam and repaired with steel. "
+				"It has &l14 Times the Durability of the respirator"
+				""
+				"Currently the armor model isn't done so expect a massive pink cube on your skull."
+				"lmao."
+				""
+				"God I hate coding this game."
+			]
+			id: "1F5442CB5217C1B1"
+			shape: "gear"
+			subtitle: "Better Breathing"
+			tasks: [{
+				id: "0BA57AC9A721A3FB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "kubejs:reinforced_respirator"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			description: [
+				"Replaced Better Combat with Epic Fight, Swap Combat Mode with \"R\" by default"
+				"Also configure your clientside features by opening the configs in the \"MODS\" tab"
+				""
+				"Fixed a bunch of random recipes"
+				"Added the last of the AE2 recipes"
+				"EV and IV are complete and ready for playing"
+				""
+				"&aCheckout a more detailed changelog with all changes on the github"
+			]
+			icon: "minecraft:writable_book"
+			id: "06070B096D0D65F5"
+			subtitle: "Changelogs 0.4.0 -> 0.5.0"
+			title: "Changelogs / Updates"
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			description: [
+				"Redid mods. Some food mods and other contents mods got the axe"
+				""
+				"Make sure to regen your aether dim if you had it generated."
+				""
+				"Fixed a variety of bugs in QB/Recipes/Progression Locks"
+				""
+				"LuV Progression is slowly being made. "
+				""
+				""
+				"NOTICE : THE QUESTBOOK WILL START ITS OVERHAUL SOON "
+				""
+				"EXPECT FINALIZED VERSIONS OF QUESTS  BETWEEN 0.5.1->0.7.0! ! !"
+				""
+				"THIS NOTICE WILL PERSIST UNTIL COMPLETION OF THE FIRST HALF OF THE QB CLEANUP!"
+			]
+			icon: "minecraft:writable_book"
+			id: "001ABD786A9CF26D"
+			subtitle: "Changelog 0.5.0 -> 0.5.1"
+			title: "Changelogs / Updates"
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"Don't worry your pack isn't broken, the questbook is hidden to prevent story spoilers!!!"
+				""
+				"Advance forward in each quest chapter to unlock more quest pages and to discover more of the story of Cosmic Frontiers!"
+			]
+			icon: "ftbquests:book"
+			id: "0746B093412C1AA8"
+			shape: "gear"
+			subtitle: "Calm down!"
+			tasks: [{
+				id: "24328E93068BFC89"
+				type: "checkmark"
+			}]
+			title: "Where's the Questbook!?"
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"Before access to coal or charcoal, you can make torches out of sticky resin."
+				""
+				"This can be useful for lighting up your first coal mines before you have truly settled down."
+				""
+				""
+				"The night is cold, so best to start searching for flammable fuels now rather than later."
+				""
+				""
+				"&7&oHave a single torch on the house ~G&r"
+			]
+			icon: "minecraft:torch"
+			id: "61E27B0501373628"
+			rewards: [{
+				id: "33F44A4D2C0F8624"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			subtitle: "Torches and You"
+			tasks: [{
+				id: "2746BC2A90FB3060"
+				type: "checkmark"
+			}]
+			title: "Need a Light?"
+			x: 7.5d
+			y: 7.0d
+		}
+	]
+	subtitle: [
+		"&fIt all starts here"
+		"&fFinish this chapter to Unlock Questbook"
+	]
+	title: "&fFirst Steps and Important Info"
+}

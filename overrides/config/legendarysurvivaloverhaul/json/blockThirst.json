@@ -1,0 +1,55 @@
+{
+  "minecraft:rain": [
+    {
+      "hydration": 1,
+      "saturation": 0.0,
+      "effects": [],
+      "properties": {}
+    }
+  ],
+  "minecraft:water": [
+    {
+      "hydration": 3,
+      "saturation": 0.0,
+      "effects": [
+        {
+          "chance": 0.75,
+          "effect": "legendarysurvivaloverhaul:thirst",
+          "duration": 300,
+          "amplifier": 0
+        }
+      ],
+      "properties": {}
+    }
+  ],
+  "minecraft:water_cauldron": [
+    {
+      "hydration": 3,
+      "saturation": 0.0,
+      "effects": [
+        {
+          "chance": 0.75,
+          "effect": "legendarysurvivaloverhaul:thirst",
+          "duration": 300,
+          "amplifier": 0
+        }
+      ],
+      "properties": {}
+    }
+  ],
+  "minecraft:flowing_water": [
+    {
+      "hydration": 3,
+      "saturation": 0.0,
+      "effects": [
+        {
+          "chance": 0.75,
+          "effect": "legendarysurvivaloverhaul:thirst",
+          "duration": 300,
+          "amplifier": 0
+        }
+      ],
+      "properties": {}
+    }
+  ]
+}

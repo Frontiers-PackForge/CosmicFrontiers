@@ -1,0 +1,12 @@
+{
+    "title": {
+        "text": "Fun Fact",
+        "bold": true,
+        "color": "yellow"
+    },
+    "tip": {
+      "text": "Cosmic Core is the heart that keeps this pack alive.",
+      "bold": true,
+      "color": "green"
+    }
+  }

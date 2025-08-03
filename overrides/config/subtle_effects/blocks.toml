@@ -1,0 +1,89 @@
+# Don't change this! Version used to track needed updates.
+version = 0
+redstoneBlockDust = true
+redstoneBlockDustDensity = "DEFAULT"
+glowstoneBlockDustDisplayType = "ON"
+glowstoneBlockDustDensity = "DEFAULT"
+beehivesHaveSleepingZs = true
+fallingBlockDust = true
+fallingBlockDustBlocks = [
+    "minecraft:sand",
+    "minecraft:red_sand",
+    "minecraft:gravel",
+    "minecraft:white_concrete_powder",
+    "minecraft:orange_concrete_powder",
+    "minecraft:magenta_concrete_powder",
+    "minecraft:light_blue_concrete_powder",
+    "minecraft:yellow_concrete_powder",
+    "minecraft:lime_concrete_powder",
+    "minecraft:pink_concrete_powder",
+    "minecraft:gray_concrete_powder",
+    "minecraft:light_gray_concrete_powder",
+    "minecraft:cyan_concrete_powder",
+    "minecraft:purple_concrete_powder",
+    "minecraft:blue_concrete_powder",
+    "minecraft:brown_concrete_powder",
+    "minecraft:green_concrete_powder",
+    "minecraft:red_concrete_powder",
+    "minecraft:black_concrete_powder"
+]
+torchflowerSmoke = "DEFAULT"
+torchflowerFlames = true
+dragonEggParticles = true
+replaceEndPortalSmoke = true
+pumpkinCarvedParticles = true
+anvilBreakParticles = true
+anvilUseParticles = true
+grindstoneUseParticles = true
+commandBlockParticles = "ON"
+slimeBlockBounceSounds = true
+beaconParticlesDisplayType = "ON"
+compostingParticles = true
+respawnAnchorParticles = true
+beehiveShearParticles = true
+endPortalParticles = true
+leavesDecayEffects = true
+farmlandDestroyEffects = true
+amethystSparkleDisplayType = "ON"
+amethystSparkleSounds = true
+floweringAzaleaPetals = true
+sculkBlockSculkDust = true
+sculkVeinSculkDust = true
+sculkShriekerDestroySouls = true
+sculkCatalystDestroySouls = true
+calibratedSculkSensorAmethystSparkle = true
+campfireSizzlingSounds = true
+campfireSizzlingSoundVolume = 0.5
+vegetationFirefliesDensity = 30
+vegetationFirefliesSpawnType = "FLOWERS_ONLY"
+
+[sparks]
+removeVanillaCampfireSparks = true
+candleSparks = true
+furnaceSparks = true
+fireSparks = true
+campfireSparks = true
+torchSparks = true
+lanternSparksDensity = 5
+lavaCauldronSparks = true
+lavaSparks = "ON"
+
+[updatedSmoke]
+candleSmoke = true
+furnaceSmoke = true
+fireSmoke = true
+torchSmoke = true
+lavaSparkSmoke = true
+campfireDowseSmoke = true
+
+[steam]
+lavaFizzSteam = true
+replaceCampfireFoodSmoke = true
+spongeDryingOutSteam = true
+spawnLogic = "BRIGHTNESS"
+steamingWater = false
+boilingWater = false
+steamingWaterCauldron = false
+boilingWaterCauldron = false
+steamingThreshold = 11
+boilingThreshold = 13

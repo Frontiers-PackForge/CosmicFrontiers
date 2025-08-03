@@ -1,0 +1,12 @@
+{
+    "title": {
+        "text": "Lore",
+        "bold": true,
+        "color": "aqua"
+    },
+    "tip": {
+        "text": "You're the only prisoner casted into this universe.",
+        "bold": false,
+        "color": "white"
+    }
+}

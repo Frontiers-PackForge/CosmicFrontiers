@@ -1,0 +1,33 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "eternal_reward"
+	group: "74CC5D172863EBC5"
+	id: "315513863365827E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"##############################"
+			""
+			"You could go for a bite to eat."
+			""
+			"Cook up something only a god of the multiverse would find a &l&adelicacy&r"
+			""
+			"Thank you for playing Cosmic Frontiers, This pack took so long- wait the pack isn't done, this is just a placeholder yada yada I still love you."
+		]
+		id: "56557720CAFDA087"
+		shape: "octagon"
+		size: 5.0d
+		subtitle: "One Final Meal"
+		tasks: [{
+			id: "4156A35ABFCA7E30"
+			item: "kubejs:cosmic_meatballs"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "ETERNAL REWARD"
+}

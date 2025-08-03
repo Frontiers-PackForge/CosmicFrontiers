@@ -1,0 +1,86 @@
+{
+	"variant": "brawlers",
+	"weight": 10,
+	"quality": 0,
+	"dimensions": [
+	],
+	"bonuses": [{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "light_weapon",
+				"types": [
+					"sword",
+					"trident"
+				]
+			},
+			"attribute": "minecraft:generic.attack_speed",
+			"operation": "MULTIPLY_BASE",
+			"values": {
+				"common": 0.1,
+				"uncommon": 0.2,
+				"rare": 0.3,
+				"epic": 0.4,
+				"mythic": 0.5,
+				"ancient": 0.7
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "core_armor",
+				"types": [
+					"leggings",
+					"chestplate"
+				]
+			},
+			"attribute": "minecraft:generic.max_health",
+			"operation": "ADDITION",
+			"values": {
+				"common": 0.25,
+				"uncommon": 0.5,
+				"rare": 1,
+				"epic": 1.5,
+				"mythic": 2,
+				"ancient": 4
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "heavy_weapon",
+				"types": [
+					"heavy_weapon"
+				]
+			},
+			"attribute": "attributeslib:armor_pierce",
+			"operation": "ADDITION",
+			"values": {
+				"common": 0.5,
+				"uncommon": 1,
+				"rare": 2,
+				"epic": 3.25,
+				"mythic": 4.5,
+				"ancient": 7
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "shield",
+				"types": [
+					"shield"
+				]
+			},
+			"attribute": "minecraft:generic.max_health",
+			"operation": "MULTIPLY_TOTAL",
+			"values": {
+				"common": 0.06,
+				"uncommon": 0.07,
+				"rare": 0.08,
+				"epic": 0.09,
+				"mythic": 0.10,
+				"ancient": 0.20
+			}
+		}
+	]
+}

@@ -1,0 +1,170 @@
+{
+  "name": "Green & Black",
+  "author": "SizzlinBacen",
+  "workspaceBackground": [
+    204,
+    204,
+    204
+  ],
+  "windowBorderActive": [
+    0,
+    175,
+    0
+  ],
+  "windowBorderInactive": [
+    0,
+    152,
+    0
+  ],
+  "windowBackground": [
+    34,
+    34,
+    34
+  ],
+  "elementButtonBackgroundInactive": [
+    60,
+    60,
+    60
+  ],
+  "elementButtonBackgroundActive": [
+    60,
+    60,
+    60
+  ],
+  "elementButtonBackgroundHover": [
+    0,
+    204,
+    0
+  ],
+  "elementButtonBorder": [
+    0,
+    152,
+    0
+  ],
+  "elementButtonClick": [
+    100,
+    100,
+    100
+  ],
+  "elementButtonToggle": [
+    30,
+    30,
+    30
+  ],
+  "elementButtonToggleHover": [
+    170,
+    170,
+    170
+  ],
+  "elementInputBackgroundInactive": [
+    60,
+    60,
+    60
+  ],
+  "elementInputBackgroundHover": [
+    70,
+    70,
+    70
+  ],
+  "elementInputBorder": [
+    0,
+    175,
+    0
+  ],
+  "elementInputUpDownHover": [
+    0,
+    150,
+    0
+  ],
+  "elementInputUpDownClick": [
+    0,
+    225,
+    0
+  ],
+  "elementListBorder": [
+    0,
+    204,
+    0
+  ],
+  "elementListItemBorder": [
+    0,
+    175,
+    0
+  ],
+  "elementListItemBackground": [
+    60,
+    60,
+    60
+  ],
+  "elementListItemBackgroundSelect": [
+    100,
+    100,
+    100
+  ],
+  "elementListItemBackgroundHover": [
+    120,
+    120,
+    120
+  ],
+  "elementTabHover": [
+    0,
+    204,
+    0
+  ],
+  "elementTabBackgroundActive": [
+    60,
+    60,
+    60
+  ],
+  "elementTabBorderActive": [
+    255,
+    255,
+    255
+  ],
+  "elementTabBackgroundInactive": [
+    34,
+    34,
+    34
+  ],
+  "elementTabBorderInactive": [
+    100,
+    100,
+    100
+  ],
+  "elementScrollBar": [
+    34,
+    34,
+    34
+  ],
+  "elementScrollBarBorder": [
+    0,
+    175,
+    0
+  ],
+  "elementScrollBarBackground": [
+    0,
+    175,
+    0
+  ],
+  "font": [
+    255,
+    255,
+    255
+  ],
+  "fontLight": [
+    220,
+    220,
+    220
+  ],
+  "fontMid": [
+    170,
+    170,
+    170
+  ],
+  "fontDim": [
+    150,
+    150,
+    150
+  ],
+  "workspaceBlock": "minecraft:lime_wool"
+}

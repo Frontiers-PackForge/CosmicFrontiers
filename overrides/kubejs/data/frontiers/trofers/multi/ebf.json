@@ -1,0 +1,31 @@
+{
+    "name": "§eElectric Blast Furnace",
+    "tooltip": [
+        "§aYour New Forge!"
+    ],
+    "item": {
+        "item": "gtceu:electric_blast_furnace",
+        "count": 1
+    },
+    "display": {
+        "offset": {
+            "x": 0,
+            "y": 0.23,
+            "z": 0
+        },
+        "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "scale": 0.8
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.4
+    },
+    "colors": {
+        "base": "#3d3d3d",
+        "accent": "#d6b572"
+    }
+}

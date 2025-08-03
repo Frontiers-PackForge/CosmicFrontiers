@@ -1,0 +1,14 @@
+{
+	"type": "apotheosis:spawner_modifier",
+	"conditions": [{
+		"type": "apotheosis:module",
+		"module": "spawner"
+	}],
+	"mainhand": {
+		"item": "gtceu:neutron_reflector"
+	},
+	"stat_changes": [{
+		"id": "ignore_players",
+		"value": true
+	}]
+}

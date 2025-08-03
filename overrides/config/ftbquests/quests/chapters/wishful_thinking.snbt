@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "wishful_thinking"
+	group: "492B135B053E111A"
+	icon: "cosmiccore:echo_processor_supercomputer"
+	id: "5F438F7491FF4F28"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Wishful Thinking "
+}

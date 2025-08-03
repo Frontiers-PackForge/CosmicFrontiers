@@ -1,0 +1,46 @@
+{
+  "biomesoplenty:crystalline_chasm": {
+    "temperature": 0.8,
+    "isDry": false
+  },
+  "minecraft:frozen_ocean": {
+    "temperature": -0.5,
+    "isDry": false
+  },
+  "minecraft:crimson_forest": {
+    "temperature": 0.75,
+    "isDry": false
+  },
+  "minecraft:deep_frozen_ocean": {
+    "temperature": -0.5,
+    "isDry": false
+  },
+  "minecraft:nether_wastes": {
+    "temperature": 1.0,
+    "isDry": false
+  },
+  "minecraft:soul_sand_valley": {
+    "temperature": 1.0,
+    "isDry": false
+  },
+  "minecraft:warped_forest": {
+    "temperature": 0.75,
+    "isDry": false
+  },
+  "minecraft:basalt_deltas": {
+    "temperature": 1.45,
+    "isDry": false
+  },
+  "biomesoplenty:withered_abyss": {
+    "temperature": 1.5,
+    "isDry": false
+  },
+  "biomesoplenty:undergrowth": {
+    "temperature": 0.75,
+    "isDry": false
+  },
+  "biomesoplenty:visceral_heap": {
+    "temperature": 0.9,
+    "isDry": false
+  }
+}
