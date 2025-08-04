@@ -35,9 +35,9 @@ jobs:
 #        run: |
 #          python scripts/release.py
 
-#      - name: "Build Changelog"
-#        id: build_changelog
-#        uses: mikepenz/release-changelog-builder-action@v5
+      - name: "Build Changelog"
+        id: build_changelog
+        uses: mikepenz/release-changelog-builder-action@v5
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
