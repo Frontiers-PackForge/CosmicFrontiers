@@ -35,13 +35,19 @@ jobs:
         run: |
           python scripts/release.py
 
+      - name: "✏️ Generate release changelog"
+        id: changelog
+        uses: janheinrichmerker/action-github-changelog-generator@v2.3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.version }}
           name: Cosmic Frontier ${{ github.event.inputs.version }}
           prerelease: ${{ github.event.inputs.prerelease }}
-          generate_release_notes: true
+          body: ${{ steps.changelog.outputs.changelog }}
           files: |
             Cosmic.Frontier.${{ github.event.inputs.version }}.zip
             Cosmic.Frontier.Server.${{ github.event.inputs.version }}.zip
