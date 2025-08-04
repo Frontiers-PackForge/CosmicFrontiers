@@ -17,11 +17,15 @@ let yeet = (itemName) => {
 //Multi Pattern P2P has bugs which alongside GT causes many crafting issues, if you choose to circumvent their removal, you have been warned.
 //Yes utilization of these is considered a role-invalidator
 let DESTROY = ['mae2:pattern_multi_p2p_tunnel', 'mae2:redstone_multi_p2p_tunnel', 'mae2:fe_multi_p2p_tunnel', 'mae2:fluid_multi_p2p_tunnel', 'mae2:item_multi_p2p_tunnel', 'mae2:eu_p2p_tunnel', 'mae2:eu_multi_p2p_tunnel']
-
 ServerEvents.tags('item', event => {
   console.log('[3] - [2] - TAG-WATCHER')
   event.add('forge:viewers/hidden_from_recipe', DESTROY)
   event.add('c:hidden_from_recipe_viewers', DESTROY)
+})
+ServerEvents.tags('block', event => {
+  console.log('[3] - [3] - TAG-WATCHER-BLOCKS')
+  event.add('gtceu:mineable/wire_cutter', 'ae2:cable_bus')
+  event.add('gtceu:mineable/pickaxe_or_wire_cutter', 'ae2:cable_bus')
 })
 
 ServerEvents.recipes(event => {
