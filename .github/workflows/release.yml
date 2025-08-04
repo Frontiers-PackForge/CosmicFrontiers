@@ -38,9 +38,13 @@ jobs:
       - name: "Build Changelog"
         id: build_changelog
         uses: mikepenz/release-changelog-builder-action@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          toTag: ${{ github.event.inputs.version }}
           mode: "COMMIT"
+          ignorePreReleases: true
+          fetchViaCommits: true
+          failOnError: true
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
