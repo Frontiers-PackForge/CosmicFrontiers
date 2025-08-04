@@ -47,7 +47,7 @@ jobs:
           fetchViaCommits: true
           failOnError: true
           configurationJson: |
-            {"template": "<summary>📚Changelog</summary>\n\n#{{UNCATEGORIZED}}"}
+            {"template": "#{{UNCATEGORIZED}}"}
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
