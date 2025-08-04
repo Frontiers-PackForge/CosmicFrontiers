@@ -6,7 +6,6 @@ from bs4 import BeautifulSoup
 
 SERVERPACK_DIRECTORY = "serverpack"
 
-
 def generate_serverpack_zip(version=None):
     base_dir = os.path.dirname(os.path.abspath(__file__))
     root_dir = os.path.abspath(os.path.join(base_dir, '..'))
@@ -42,6 +41,9 @@ def generate_serverpack_zip(version=None):
 
     # Replace MINECRAFT_VERSION and FORGE_VERSION in startserver.bat and startserver.sh
     update_server_scripts_with_versions(serverpack_dir)
+
+    # Download mods from CurseForge API
+    download_mods_from_curseforge(serverpack_dir)
 
     # Zip the directory (only include the contents, not the root folder)
     zip_name = f'Cosmic.Frontier.Server.{version}.zip' if version else f'Cosmic.Frontier.Server.zip'
@@ -151,3 +153,53 @@ def update_server_scripts_with_versions(serverpack_dir):
             content = re.sub(r'FORGE_VERSION=\{\{FORGE_VERSION\}\}', f'FORGE_VERSION={forge_version}', content)
         with open(sh_path, 'w', encoding='utf-8') as f:
             f.write(content)
+
+
+def download_mods_from_curseforge(serverpack_dir):
+    import requests
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    api_key = os.environ.get('CURSEFORGE_API_KEY')
+    if not api_key:
+        raise RuntimeError('CURSEFORGE_API_KEY environment variable not set. Aborting mod downloads.')
+    mods_dir = os.path.join(serverpack_dir, 'mods')
+    os.makedirs(mods_dir, exist_ok=True)
+    manifest_path = os.path.join(serverpack_dir, 'manifest.json')
+    with open(manifest_path, 'r', encoding='utf-8') as f:
+        manifest = json.load(f)
+    files = manifest.get('files', [])
+    api_url = 'https://api.curseforge.com/v1/mods/'
+    headers = {
+        'Accept': 'application/json',
+        'x-api-key': api_key
+    }
+
+    def download_mod(mod):
+        project_id = mod.get('projectID')
+        file_id = mod.get('fileID')
+        if not project_id or not file_id:
+            raise RuntimeError(f"ERROR: Failed to parse project id or file id for mod '{mod}'")
+        url = f"{api_url}{project_id}/files/{file_id}/download-url"
+        resp = requests.get(url, headers=headers)
+        if resp.status_code != 200:
+            raise RuntimeError(f"ERROR: No download url found for mod {project_id} {file_id}\n{url}")
+        file_url = resp.json().get('data')
+        if not file_url:
+            raise RuntimeError(f"ERROR: No download url found for mod {project_id} {file_id}\n{url}")
+        print(f"\tDownloading {file_url}")
+        mod_resp = requests.get(file_url, stream=True)
+        if mod_resp.status_code == 200:
+            filename = file_url.split('/')[-1]
+            out_path = os.path.join(mods_dir, filename)
+            with open(out_path, 'wb') as out_file:
+                for chunk in mod_resp.iter_content(chunk_size=8192):
+                    out_file.write(chunk)
+        else:
+            raise RuntimeError(f"ERROR: Failed to download mod {project_id} {file_id}")
+
+    # Use ThreadPoolExecutor for parallel downloads (limit to 8 threads by default)
+    max_workers = min(8, len(files))
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = [executor.submit(download_mod, mod) for mod in files]
+        for future in as_completed(futures):
+            # Will raise exception if any download fails
+            future.result()

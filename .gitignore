@@ -48,3 +48,4 @@ mmc-pack.json
 modpack/
 serverpack/
 Cosmic.Frontier*.zip
+.env
