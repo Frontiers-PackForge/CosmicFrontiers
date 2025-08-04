@@ -16,24 +16,24 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-#      - name: Checkout repository
-#        uses: actions/checkout@v4
-#
-#      - name: Install Python
-#        uses: actions/setup-python@v5
-#        with:
-#          python-version: '3.x'
-#
-#      - name: Install Python dependencies
-#        run: pip install -r scripts/requirements.txt
-#
-#      - name: Run release script
-#        env:
-#          RELEASE_VERSION: ${{ github.event.inputs.version }}
-#          RELEASE_PRERELEASE: ${{ github.event.inputs.prerelease }}
-#          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
-#        run: |
-#          python scripts/release.py
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Python dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run release script
+        env:
+          RELEASE_VERSION: ${{ github.event.inputs.version }}
+          RELEASE_PRERELEASE: ${{ github.event.inputs.prerelease }}
+          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+        run: |
+          python scripts/release.py
 
       - name: "Build Changelog"
         id: build_changelog
@@ -46,6 +46,8 @@ jobs:
           ignorePreReleases: true
           fetchViaCommits: true
           failOnError: true
+          configurationJson: |
+            {"template": "#{{UNCATEGORIZED}}"}
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
@@ -54,6 +56,6 @@ jobs:
           name: Cosmic Frontier ${{ github.event.inputs.version }}
           prerelease: ${{ github.event.inputs.prerelease }}
           body: ${{ steps.build_changelog.outputs.changelog }}
-#          files: |
-#            Cosmic.Frontier.${{ github.event.inputs.version }}.zip
-#            Cosmic.Frontier.Server.${{ github.event.inputs.version }}.zip
+          files: |
+            Cosmic.Frontier.${{ github.event.inputs.version }}.zip
+            Cosmic.Frontier.Server.${{ github.event.inputs.version }}.zip
