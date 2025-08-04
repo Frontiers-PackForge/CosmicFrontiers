@@ -40,7 +40,6 @@ jobs:
         uses: mikepenz/release-changelog-builder-action@v5
         with:
           ignorePreReleases: "true"
-          fetchViaCommits: "true"
           mode: "COMMIT"
 
       - name: Create GitHub Release
@@ -49,7 +48,7 @@ jobs:
           tag_name: ${{ github.event.inputs.version }}
           name: Cosmic Frontier ${{ github.event.inputs.version }}
           prerelease: ${{ github.event.inputs.prerelease }}
-          body: ${{ steps.changelog.outputs.changelog }}
+          body: ${{ steps.build_changelog.outputs.changelog }}
           files: |
             Cosmic.Frontier.${{ github.event.inputs.version }}.zip
             Cosmic.Frontier.Server.${{ github.event.inputs.version }}.zip
