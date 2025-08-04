@@ -41,6 +41,7 @@ jobs:
           tag_name: ${{ github.event.inputs.version }}
           name: Cosmic Frontier ${{ github.event.inputs.version }}
           prerelease: ${{ github.event.inputs.prerelease }}
+          generate_release_notes: true
           files: |
             Cosmic.Frontier.${{ github.event.inputs.version }}.zip
             Cosmic.Frontier.Server.${{ github.event.inputs.version }}.zip
