@@ -292,6 +292,69 @@ ServerEvents.recipes(event => {
     'occultism:craft_djinni'
   ).dummy('occultism:ritual_dummy/craft_dimensional_mineshaft').id("occultism:frontiers.fusion_ritual.dim_mineshaft")
 
+  event.recipes.occultism.ritual(
+   '3x legendarysurvivaloverhaul:sun_fern_seeds',
+   [
+     "minecraft:glowstone",
+     "minecraft:glowstone",
+     "biomesoplenty:burning_blossom",
+     "biomesoplenty:burning_blossom",
+     "#botania:petals",
+     "#botania:petals",
+     "#ars_nouveau:magic_shards",
+     "#ars_nouveau:magic_shards"
+   ],
+   "minecraft:fern",
+   'occultism:basic_fusion'
+ ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.sun_fern1")
+ event.recipes.occultism.ritual(
+    '3x legendarysurvivaloverhaul:sun_fern_seeds',
+    [
+      "minecraft:glowstone",
+      "minecraft:glowstone",
+      "biomesoplenty:burning_blossom",
+      "biomesoplenty:burning_blossom",
+      "#botania:petals",
+      "#botania:petals",
+      "legendarysurvivaloverhaul:ice_fern_leaf",
+      "legendarysurvivaloverhaul:ice_fern_leaf"
+    ],
+    "minecraft:fern",
+    'occultism:basic_fusion'
+  ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.sun_fern2")
+
+  event.recipes.occultism.ritual(
+     '3x legendarysurvivaloverhaul:ice_fern_seeds',
+     [
+       "minecraft:snow_block",
+       "minecraft:snow_block",
+       "#forge:dusts/ice",
+       "#forge:dusts/ice",
+       "#botania:petals",
+       "#botania:petals",
+       "#ars_nouveau:magic_shards",
+       "#ars_nouveau:magic_shards"
+     ],
+     "minecraft:fern",
+     'occultism:basic_fusion'
+   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.ice_fern1")
+   event.recipes.occultism.ritual(
+      '3x legendarysurvivaloverhaul:ice_fern_seeds',
+      [
+        "minecraft:snow_block",
+        "minecraft:snow_block",
+        "#forge:dusts/ice",
+        "#forge:dusts/ice",
+        "#botania:petals",
+        "#botania:petals",
+        "legendarysurvivaloverhaul:sun_fern_leaf",
+        "legendarysurvivaloverhaul:sun_fern_leaf"
+      ],
+      "minecraft:fern",
+      'occultism:basic_fusion'
+    ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.ice_fern2")
+
+
   //Using Event.custom because i'm too lazy to try and parse this
   event.custom({
     "type": "occultism:ritual",
