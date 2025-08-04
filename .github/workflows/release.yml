@@ -21,7 +21,7 @@ jobs:
 
       - name: Run release script
         env:
-          RELEASE_VERSION: ${{ inputs.tag-name }}
+          RELEASE_VERSION: ${{ github.event.release.tag_name }}
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
         run: |
           python scripts/release.py
@@ -29,7 +29,7 @@ jobs:
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: build-artifacts-${{ inputs.branch }}
+          name: build-artifacts-${{ github.event.release.tag_name }}
           path: Cosmic.Frontier*.zip
           if-no-files-found: error
           retention-days: 3
@@ -44,11 +44,11 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
-          name: build-artifacts-${{ inputs.branch }}
+          name: build-artifacts-${{ github.event.release.tag_name }}
       - name: Upload artifacts to release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ inputs.tag-name }}
+          tag_name: ${{ github.event.release.tag_name }}
           files: ./*.zip
           fail_on_unmatched_files: true
 
@@ -63,7 +63,7 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
-          name: build-artifacts-${{ inputs.branch }}
+          name: build-artifacts-${{ github.event.release.tag_name }}
 
       - name: Upload to Curseforge
         uses: Kir-Antipov/mc-publish@v3.3.0
@@ -71,8 +71,9 @@ jobs:
           curseforge-id: ${{ vars.CURSE_ID }}
           curseforge-token: ${{ secrets.CURSEFORGE_API_KEY }}
           files: ./Cosmic.Frontier*.zip
-          name: "Cosmic Frontier ${{ github.event.inputs.version }}"
-          version: ${{ github.event.inputs.version }}
+          name: "Cosmic Frontier ${{ github.event.release.tag_name }}"
+          version: ${{ github.event.release.tag_name }}
+          changelog: ${{ github.event.release.body }}
           version-type: release
           loaders: forge
           game-versions: 1.20.1
