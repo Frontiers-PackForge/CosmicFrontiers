@@ -31,14 +31,13 @@ def generate_modpack_zip(version=None):
     if os.path.exists(modlist_src):
         shutil.copy2(modlist_src, modpack_dir)
 
-    # Zip the directory
+    # Zip the directory (only include the contents, not the root folder)
     zip_name = f'Cosmic.Frontier.{version}.zip' if version else f'Cosmic.Frontier.zip'
     zip_path = os.path.join(root_dir, zip_name)
     with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for root, dirs, files in os.walk(modpack_dir):
             for file in files:
                 abs_path = os.path.join(root, file)
-                rel_path = os.path.relpath(abs_path, modpack_dir)
-                zipf.write(abs_path, os.path.join(MODPACK_DIRECTORY, rel_path))
+                rel_path = os.path.relpath(abs_path, modpack_dir)  # relative to modpack_dir, not including modpack_dir itself
+                zipf.write(abs_path, rel_path)
     print(f'Modpack zipped at: {zip_path}')
-

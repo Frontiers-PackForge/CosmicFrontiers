@@ -43,15 +43,15 @@ def generate_serverpack_zip(version=None):
     # Replace MINECRAFT_VERSION and FORGE_VERSION in startserver.bat and startserver.sh
     update_server_scripts_with_versions(serverpack_dir)
 
-    # Zip the directory
+    # Zip the directory (only include the contents, not the root folder)
     zip_name = f'Cosmic.Frontier.Server.{version}.zip' if version else f'Cosmic.Frontier.Server.zip'
     zip_path = os.path.join(root_dir, zip_name)
     with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for root, dirs, files in os.walk(serverpack_dir):
             for file in files:
                 abs_path = os.path.join(root, file)
-                rel_path = os.path.relpath(abs_path, serverpack_dir)
-                zipf.write(abs_path, os.path.join(SERVERPACK_DIRECTORY, rel_path))
+                rel_path = os.path.relpath(abs_path, serverpack_dir)  # relative to serverpack_dir, not including serverpack_dir itself
+                zipf.write(abs_path, rel_path)
     print(f'Serverpack zipped at: {zip_path}')
 
 
