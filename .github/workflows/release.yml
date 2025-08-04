@@ -30,3 +30,9 @@ jobs:
           RELEASE_PRERELEASE: ${{ github.event.inputs.prerelease }}
         run: |
           python scripts/release.py
+
+      - name: Upload modpack zip artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Cosmic.Frontier.${{ github.event.inputs.version }}
+          path: Cosmic.Frontier.${{ github.event.inputs.version }}.zip
