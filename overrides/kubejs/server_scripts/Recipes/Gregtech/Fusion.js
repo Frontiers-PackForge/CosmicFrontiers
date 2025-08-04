@@ -51,5 +51,17 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM]);
 
 
+    event.recipes.gtceu.fusion_reactor('frontiers:americium')
+        .chancedInput('gtceu:neutron_reflector', 850, 0)
+        .chancedInput('gtceu:neutron_reflector', 700, 0)
+        .chancedInput('gtceu:neutron_reflector', 700, 0)
+        .inputFluids('gtceu:uranium 432') //3
+        .inputFluids('gtceu:cobalt 576') //4 -> Two Ingots of Duranium and 1 of Tritanium
+        .inputFluids('gtceu:radon 144')
+        .outputFluids('gtceu:americium 576') //2
+        .outputFluids('gtceu:tennessine 144') //1
+        .fusionStartEU(320000000)
+        .duration(270)
+        .EUt(GTValues.VA[GTValues.ZPM]);
 
 })

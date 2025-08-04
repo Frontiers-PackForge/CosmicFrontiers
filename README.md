@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/Frontiers-PackForge/CosmicFrontiers/assets/46772882/be7e0694-9b1b-473d-a3cc-adcf04661689" alt="Logo"></p>
 <p align="center"><b>A minecraft 1.20.1 Modpack centered around Arcane & Sci-fi themes.</b></p>
-<p align="center"><b>LATEST MAJOR UPDATE : 0.6.0 - Labor of Love Mk.1</b></p>
+<p align="center"><b>LATEST MAJOR UPDATE : 0.7.0 - SCARLET STREAMS</b></p>
 <h1 align="center">
     <a href="https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial"><img src="https://img.shields.io/badge/Available%20for-MC%201.20.1+%20-informational?style=for-the-badge" alt="Supported Versions"></a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial"><img src="https://img.shields.io/github/license/GregTechCEu/GregTech?style=for-the-badge" alt="License"></a>
