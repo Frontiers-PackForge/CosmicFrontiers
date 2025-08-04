@@ -19,16 +19,6 @@ ServerEvents.recipes(event => {
         'gtceu:europium_plate',
         'gtceu:naquadah_plate'
     )
-    event.replaceInput(
-        { id: 'gtceu:shaped/iv_fluid_heater' },
-        'gtceu:rtm_alloy_quadruple_wire',
-        'gtceu:tungsten_carbide_normal_fluid_pipe'
-    )
-       event.replaceInput(
-        { id: 'gtceu:shaped/iv_brewery' },
-        'gtceu:rtm_alloy_spring',
-        'gtceu:tungsten_carbide_spring'
-    )
     event.remove({ id: 'gtceu:shaped/vacuum_tube' })
     event.shaped('gtceu:vacuum_tube', [
         'CDC',
