@@ -1,10 +1,8 @@
 # release.py
 
-import sys
 import os
 import shutil
 import zipfile
-import json
 
 MODPACK_DIRECTORY = "modpack"
 SERVERPACK_DIRECTORY = "serverpack"
@@ -18,7 +16,7 @@ def main():
 def generate_modpack_zip(version=None):
     base_dir = os.path.dirname(os.path.abspath(__file__))
     root_dir = os.path.abspath(os.path.join(base_dir, '..'))
-    modpack_dir = os.path.join(base_dir, MODPACK_DIRECTORY)
+    modpack_dir = os.path.join(root_dir, MODPACK_DIRECTORY)  # <-- changed to root
 
     # Clean up previous modpack dir if exists
     if os.path.exists(modpack_dir):
@@ -43,7 +41,7 @@ def generate_modpack_zip(version=None):
 
     # Zip the directory
     zip_name = f'Cosmic.Frontier.{version}.zip' if version else f'Cosmic.Frontier.zip'
-    zip_path = os.path.join(base_dir, zip_name)
+    zip_path = os.path.join(root_dir, zip_name)  # <-- changed to root
     with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for root, dirs, files in os.walk(modpack_dir):
             for file in files:
