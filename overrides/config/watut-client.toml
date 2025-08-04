@@ -25,7 +25,7 @@
 	showPlayerActiveNonChatGui = true
 	#Show the chat typing Gui in world
 	showPlayerActiveChatGui = true
-	#If there isnt an exact Gui available for what the player is using, it will show the Chest Gui. If this is false, it will show nothing, lots of modded Guis will use this for now
+	#This is for the older non dynamic GUI only. If there isnt an exact Gui available for what the player is using, it will show the Chest Gui. If this is false, it will show nothing, lots of modded Guis will use this for now
 	showPlayerActiveGuiIfNotExactMatch = true
 	#Show 'Player is typing...' on the chat screen
 	screenTypingVisible = true
@@ -46,4 +46,16 @@
 	playScreenOpenSounds = true
 	#Plays a sutble sound when a player clicks their mouse in a Gui
 	playMouseClickSounds = true
+	#SETTING THESE CLIENT SIDE SETTINGS TO FALSE WILL OVERRIDE ANY OF THE SAME SERVER SETTINGS THAT ARE SET TO TRUE (for your client only)
+	dummySetting = true
+	#Adjusts the size of the gui visual that appears infront of a player, 2 = twice the size
+	#Range: 0.1 ~ 1.7976931348623157E308
+	particleSizeScale = 1.0
+	#Delay between ticks your client will accept and update new image of another players gui, you can only increase the delay from what the server/other client is set to, 10 = twice a second
+	#Range: > -2147483648
+	tickReceiveAndRenderRateOfGUIUpdates = 10
+	#Privacy setting, if you dont want to send very detailed info of your screen for everyone to see and instead use the old basic gui visual, set this to true
+	dontSendDetailedGUIInfo = false
+	#Privacy setting, if you dont want to show the items you are transferring to and from yourself and containers, set this to true
+	dontSendItemInfo = false
 

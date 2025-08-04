@@ -6,7 +6,7 @@
 		#Whether advancements should be announced in chat.
 		announce_advancements = true
 		#Whether command blocks should notify admins when they perform commands.
-		command_block_output = true
+		command_block_output = false
 		#Whether to log admin commands to server log.
 		log_admin_commands = true
 		#Whether the feedback from commands executed by a player should show up in chat. Also affects the default behavior of whether command blocks store their output text.
@@ -44,7 +44,7 @@
 		#Whether the server should skip checking player speed when the player is wearing elytra. Often helps with jittering due to lag in multiplayer.
 		disable_elytra_movement_check = false
 		#Players respawn immediately without showing the death screen.
-		do_immediate_respawn = false
+		do_immediate_respawn = true
 		#Whether players can craft only those recipes that they have unlocked.
 		do_limited_crafting = false
 		#Whether the player should take damage when drowning.
@@ -56,7 +56,7 @@
 		#Whether the player should take damage when inside powder snow.
 		freeze_damage = true
 		#Whether the player should keep items and experience in their inventory after death .
-		keep_inventory = false
+		keep_inventory = true
 		#Whether the player can regenerate health naturally if their hunger is full enough (doesn't affect external healing, such as golden apples, the Regeneration effect, etc.)
 		natural_regeneration = true
 		#What percentage of players must sleep to skip the night.
@@ -91,7 +91,7 @@
 		#Whether vines can spread to other blocks. Cave vines, weeping vines, and twisting vines are not affected.
 		do_vines_spread = true
 		#Whether the weather can change naturally. The /weather command can still change weather.
-		do_weather_cycle = false
+		do_weather_cycle = true
 		#Whether new sources of lava are allowed to form.
 		lava_source_conversion = false
 		#How often a random block tick occurs (such as plant growth, leaf decay, etc.) per chunk section per game tick. 0 and negative values disables random ticks, higher numbers increase random ticks. Setting to a high integer results in high speeds of decay and growth. Numbers over 4096 make plant growth or leaf decay instantaneous.
@@ -133,7 +133,7 @@
 #A collection of misc configs
 [misc]
 	#If gamerules should be saved to config on world unload
-	save_gamerules = true
+	save_gamerules = false
 	#A comma separated list of commands to run on world join, @p is replaced with joining player name, command is run by the server
 	#Example: default_commands = ["/tellraw @p [\"\",{\"text\":\"Hi \"},{\"text\":\"@p\",\"color\":\"aqua\"}]"]
 	default_commands = []

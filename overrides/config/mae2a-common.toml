@@ -1,0 +1,19 @@
+#Set Provider Plus max slot, must be a multiple of 9
+#Range: 36 ~ 576
+plus_max_slot = 54
+#Allow other pattern provide to show amount on the screen
+allow_other_show_amount = false
+
+[preview]
+	#Set the color of the preview box
+	color = "FF0EBEFF"
+	#Set up to 4 button multipliers/divide on the preview screen.
+	#Range: 2 ~ 65536
+	button_0 = 2
+	#Range: 2 ~ 65536
+	button_1 = 16
+	#Range: 2 ~ 65536
+	button_2 = 64
+	#Range: 2 ~ 65536
+	button_3 = 100
+

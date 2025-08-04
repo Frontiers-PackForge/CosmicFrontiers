@@ -7,6 +7,43 @@
 	id: "26631A1C73AF31BA"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
-	title: "The Progenitor - [&3UV]"
+	quests: [
+		{
+			dependencies: ["38E8D3C8D4F791D8"]
+			id: "729E3A063736105A"
+			subtitle: "To Reinforce the Soul"
+			tasks: [{
+				id: "07C220FE77515F2B"
+				item: "gtceu:uv_machine_hull"
+				type: "item"
+			}]
+			title: "Soul Breacher"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			id: "70B8E558642EB722"
+			tasks: [{
+				id: "3ECA2312610BC169"
+				item: "gtceu:uv_electric_motor"
+				type: "item"
+			}]
+			title: "Welcome to Hell"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			id: "59361EB519AFF0B7"
+			tasks: [{
+				id: "11905A174C44E48B"
+				item: "cosmiccore:sov_blood_orb"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+	title: "The Progenitor - [&3UV&7]"
 }

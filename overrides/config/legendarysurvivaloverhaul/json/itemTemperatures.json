@@ -340,6 +340,30 @@
     "heat_resistance": 0.0,
     "cold_resistance": 5.0,
     "thermal_resistance": 0.0
+  },
+  "cosmiccore:sanguine_warptech_helmet": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 30.0
+  },
+  "cosmiccore:sanguine_warptech_chestplate": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 50.0
+  },
+  "cosmiccore:sanguine_warptech_leggings": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 50.0
+  },
+  "cosmiccore:sanguine_warptech_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 30.0
   }
   
 }

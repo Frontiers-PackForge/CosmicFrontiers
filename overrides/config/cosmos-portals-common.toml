@@ -1,0 +1,31 @@
+
+[general]
+	#Allows you to change the maximum size of Portals. WARNING: Larger portals WILL create lag
+	#Range: 2 ~ 9
+	internal_height = 5
+	#Whether this mod will play Portal Travel Sounds
+	travel_sounds = true
+	#Whether this mod will play Ambient Portal Sounds
+	ambient_sounds = true
+	#Whether Wardens can travel through Portals
+	warden_teleport = true
+
+[console_messages]
+	#Whether this mod will print [INFO] messages to the console/log
+	info = true
+	#Whether this mod will print [DEBUG] messages to the console/log
+	debug = false
+
+[visual]
+	#Whether or not Portal Frames use Connected Textures
+	frame_connected_textures = true
+	#Whether or not Portals use Connected Textures
+	portal_connected_textures = true
+	#Whether or not Portal Labels are rendered
+	render_portal_labels = true
+	#Whether or not Portal Particle Effects are rendered
+	render_portal_particle_effects = true
+	#How far away Portal Labels will still render.
+	#Range: 8 ~ 64
+	label_maximum_distance = 32
+

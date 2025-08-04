@@ -9,7 +9,7 @@
 		#Configure FPS Display mode
 		#Complete mode gives you min FPS count and average count
 		#Allowed Values: OFF, SIMPLE, ADVANCED
-		fpsDisplay = "SIMPLE"
+		fpsDisplay = "OFF"
 		#Configure FPS Display gravity
 		#Places counter on specified corner of your screen
 		#Allowed Values: LEFT, CENTER, RIGHT
@@ -44,7 +44,7 @@
 			#Allowed Values: PITCH_BLACK, TOTAL_DARKNESS, DARK, DIM, OFF
 			mode = "OFF"
 			#Toggle Darkness on Overworld dimension
-			enableOnOverworld = true
+			enableOnOverworld = false
 			#Toggle Darkness on Nether dimension
 			enableOnNether = false
 			#Configure fog brightness on nether when darkness is enabled

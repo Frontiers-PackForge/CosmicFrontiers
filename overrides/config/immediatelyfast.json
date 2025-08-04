@@ -6,7 +6,7 @@
   "fast_text_lookup": true,
   "fast_buffer_upload": true,
   "COSMETIC_INFO": "----- Cosmetic only config values below (Does not optimize anything) -----",
-  "dont_add_info_into_debug_hud": false,
+  "dont_add_info_into_debug_hud": true,
   "EXPERIMENTAL_INFO": "----- Experimental config values below (Rendering glitches may occur) -----",
   "experimental_disable_error_checking": false,
   "experimental_disable_resource_pack_conflict_handling": false,

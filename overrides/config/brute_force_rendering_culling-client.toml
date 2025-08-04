@@ -17,7 +17,7 @@
 	enabled = true
 
 ["Async chunk rebuild"]
-	enabled = false
+	enabled = true
 
 #Entity skip CULLING
 ["Entity ResourceLocation"]

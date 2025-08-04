@@ -416,9 +416,9 @@
 			subtitle: "&fIf you're having trouble!"
 			tasks: [{
 				consume_items: true
-				count: 4L
+				count: 16L
 				id: "04CA22D5DA13D5D6"
-				item: "cosmiccore:large_shard_of_perpetuity"
+				item: "cosmiccore:shard_of_perpetuity"
 				type: "item"
 			}]
 			x: -2.5d
@@ -641,15 +641,21 @@
 			can_repeat: true
 			dependencies: ["38DA0B4E0DBAC364"]
 			hide_until_deps_complete: true
-			icon: "gtceu:tin_single_cable"
+			icon: "legendarysurvivaloverhaul:water_plant_seeds"
 			id: "71AE135D9582E87B"
 			optional: true
-			rewards: [{
-				count: 8
-				id: "6E4CB4195E3E8274"
-				item: "gtceu:tin_single_cable"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "080C2988731D6E01"
+					item: "legendarysurvivaloverhaul:sun_fern_seeds"
+					type: "item"
+				}
+				{
+					id: "53D424D2AF4C63A3"
+					item: "legendarysurvivaloverhaul:ice_fern_seeds"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				count: 16L
@@ -657,7 +663,7 @@
 				item: "cosmiccore:shard_of_perpetuity"
 				type: "item"
 			}]
-			title: "Shop : Tin Cable"
+			title: "Shop : Fern Seds"
 			x: -4.0d
 			y: 3.0d
 		}

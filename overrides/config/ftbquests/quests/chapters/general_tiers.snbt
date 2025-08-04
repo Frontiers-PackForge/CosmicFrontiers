@@ -708,6 +708,7 @@
 				"4E7E1D8DD97AB90D"
 				"38DA0B4E0DBAC364"
 			]
+			hide_until_deps_visible: true
 			id: "6953D7B284072690"
 			size: 1.0d
 			tasks: [{

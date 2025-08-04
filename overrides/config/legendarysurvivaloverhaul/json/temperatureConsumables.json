@@ -6,6 +6,13 @@
       "duration": 2400
     }
   ],
+  "legendarysurvivaloverhaul:melon_juice": [
+    {
+      "group": "DRINK",
+      "temperatureLevel": -1,
+      "duration": 1200
+    }
+  ],
   "minecraft:rabbit_stew": [
     {
       "group": "FOOD",
@@ -34,6 +41,13 @@
       "duration": 2400
     }
   ],
+  "minecraft:melon_slice": [
+    {
+      "group": "FOOD",
+      "temperatureLevel": -1,
+      "duration": 1200
+    }
+  ],
   "farmersdelight:baked_cod_stew": [
     {
       "group": "FOOD",
@@ -44,6 +58,11 @@
   "minecraft:mushroom_stew": [
     {
       "group": "FOOD",
+      "temperatureLevel": 1,
+      "duration": 1200
+    },
+    {
+      "group": "DRINK",
       "temperatureLevel": 1,
       "duration": 1200
     }
@@ -62,6 +81,13 @@
       "duration": 2400
     }
   ],
+  "legendarysurvivaloverhaul:glistering_melon_juice": [
+    {
+      "group": "DRINK",
+      "temperatureLevel": -2,
+      "duration": 3600
+    }
+  ],
   "farmersdelight:beef_stew": [
     {
       "group": "FOOD",
@@ -69,263 +95,11 @@
       "duration": 2400
     }
   ],
-  "minecraft:melon_slice": [
-    {
-      "group": "FOOD",
-      "temperatureLevel": -1,
-      "duration": 2400
-    }
-  ],
   "delightful:cantaloupe_slice": [
     {
       "group": "FOOD",
       "temperatureLevel": -1,
-      "duration": 2400
-    }
-  ],
-  "ars_nouveau:frostaya_pod": [
-    {
-      "group": "FOOD",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "delightful:cantaloupe_popsicle": [
-    {
-      "group": "FOOD",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "delightful:matcha_ice_cream": [
-    {
-      "group": "FOOD",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "delightful:salmonberry_ice_cream": [
-    {
-      "group": "FOOD",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "delightful:source_berry_ice_cream": [
-    {
-      "group": "FOOD",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "farmersdelight:melon_popsicle": [
-    {
-      "group": "FOOD",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "farmersdelight:fruit_salad": [
-    {
-      "group": "FOOD",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "croptopia:chocolate_ice_cream": [
-    {
-      "group": "FOOD",
-      "temperatureLevel": -4,
-      "duration": 2400
-    }
-  ],
-  "croptopia:mango_ice_cream": [
-    {
-      "group": "FOOD",
-      "temperatureLevel": -4,
-      "duration": 2400
-    }
-  ],
-  "croptopia:pecan_ice_cream": [
-    {
-      "group": "FOOD",
-      "temperatureLevel": -4,
-      "duration": 2400
-    }
-  ],
-  "croptopia:rum_raisin_ice_cream": [
-    {
-      "group": "FOOD",
-      "temperatureLevel": -4,
-      "duration": 2400
-    }
-  ],
-  "croptopia:strawberry_ice_cream": [
-    {
-      "group": "FOOD",
-      "temperatureLevel": -4,
-      "duration": 2400
-    }
-  ],
-  "croptopia:vanilla_ice_cream": [
-    {
-      "group": "FOOD",
-      "temperatureLevel": -4,
-      "duration": 2400
-    }
-  ],
-  "croptopia:apple_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -1,
-      "duration": 2400
-    }
-  ],
-  "croptopia:cranberry_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -1,
-      "duration": 2400
-    }
-  ],
-  "croptopia:grape_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -1,
-      "duration": 2400
-    }
-  ],
-  "croptopia:orange_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -1,
-      "duration": 2400
-    }
-  ],
-  "croptopia:pineapple_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -1,
-      "duration": 2400
-    }
-  ],
-  "croptopia:saguaro_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -1,
-      "duration": 2400
-    }
-  ],
-  "croptopia:tomato_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -1,
-      "duration": 2400
-    }
-  ],
-  "croptopia:melon_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "croptopia:banana_smoothie": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "croptopia:fruit_smoothie": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "croptopia:strawberry_smoothie": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "farmersdelight:melon_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "legendarysurvivaloverhaul:beetroot_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "legendarysurvivaloverhaul:cactus_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "legendarysurvivaloverhaul:carrot_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "legendarysurvivaloverhaul:melon_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "legendarysurvivaloverhaul:pumpkin_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -2,
-      "duration": 2400
-    }
-  ],
-  "croptopia:kale_smoothie": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -4,
-      "duration": 2400
-    }
-  ],
-  "delightful:berry_matcha_latte": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -4,
-      "duration": 2400
-    }
-  ],
-  "legendarysurvivaloverhaul:glistering_melon_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -4,
-      "duration": 2400
-    }
-  ],
-  "legendarysurvivaloverhaul:golden_apple_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -4,
-      "duration": 2400
-    }
-  ],
-  "legendarysurvivaloverhaul:golden_carrot_juice": [
-    {
-      "group": "DRINK",
-      "temperatureLevel": -4,
-      "duration": 2400
+      "duration": 600
     }
   ]
 }

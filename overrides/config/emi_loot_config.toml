@@ -4,7 +4,7 @@ debugMode = false
 parseChestLoot = false
 parseBlockLoot = false
 parseMobLoot = true
-parseGameplayLoot = true
+parseGameplayLoot = false
 parseArchaeologyLoot = true
 skippedKeys = [
     "emi_loot.function.set_count_add",

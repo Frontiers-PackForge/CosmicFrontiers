@@ -13,6 +13,16 @@
   },
   "ad_astra:earth_orbit": {
     "temperature": -30.0
+  },
+  "frontiers:sun": {
+    "temperature": 99999.0
+  },
+  "frontiers:sun_orbit": {
+    "temperature": 550.0
+  },
+  "ad_astra:venus": {
+    "temperature": 100.0
   } 
+
 
 }

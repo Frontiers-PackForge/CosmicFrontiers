@@ -1,0 +1,16 @@
+# Whether to use the broker to get the best relay based on location or use a hard-coded relay.
+# default: true
+useBroker = true
+# default: https://broker.e4mc.link/getBestRelay
+brokerUrl = "https://broker.e4mc.link/getBestRelay"
+# default: test.e4mc.link
+relayHost = "test.e4mc.link"
+# default: 25575
+relayPort = 25575
+# Allows use of certain dedicated server commands such as /ban and /whitelist
+# default: true
+restoreDedicatedCommands = true
+# Whether to use whitelists on LAN worlds
+# default: false
+useWhiteList = false
+

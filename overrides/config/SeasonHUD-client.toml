@@ -8,14 +8,20 @@
 	[SeasonHUD.HUD]
 		#Where to display the Hud when no minimap is installed.
 		#Default is TOP_LEFT.
-		#Allowed Values: TOP_LEFT, TOP_CENTER, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+		#Allowed Values: TOP_LEFT, TOP_CENTER, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT, CUSTOM
 		hud_location = "TOP_LEFT"
 		#The horizontal offset of the HUD when no minimap is installed (in pixels)
+		#'hudLocation' must be set to 'CUSTOM'
 		#Default is 2.
 		hud_x_position = 2
 		#The vertical offset of the HUD when no minimap is installed (in pixels)
+		#'hudLocation' must be set to 'CUSTOM'
 		#Default is 2.
 		hud_y_position = 2
+		#The scale of the HUD when no minimap is installed.
+		#Default is 1.0.
+		#Range: 0.5 ~ 10.0
+		hud_scale = 1.0
 
 		[SeasonHUD.HUD.Colors]
 			#Display the season name in a color?

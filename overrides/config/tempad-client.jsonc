@@ -1,0 +1,9 @@
+{
+    /*
+     * The color of the Tempad's gui text and the portals.
+     * Type: Integer
+     */
+    "color": -37120,
+    // Whether or not to render the blur on summoned Timedoors. This feature is experimental, having it enabled may make it incompatible with certain mods.
+    "renderBlur": false
+}

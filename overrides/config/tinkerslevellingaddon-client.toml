@@ -1,0 +1,12 @@
+
+#Client only settings
+[client]
+	#If true, shows chat message on tool level ups.
+	message = true
+	#If true, uses alternative level name suffix for high level tools.
+	#Instead of appending '+' signs for each consecutive level appearance, +1, +2, +3, etc. notation will be used.
+	squashPluses = false
+	#
+	#Allowed Values: NONE, CHIME, SNARE_DRUM, YAY, BONK
+	sound = "SNARE_DRUM"
+

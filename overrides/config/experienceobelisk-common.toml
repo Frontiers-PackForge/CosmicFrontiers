@@ -5,64 +5,104 @@
 
 ["Experience Obelisk Capacity"]
 	#The fluid capacity of the obelisk in mB. Default = 100000000, which is ~1072 levels' worth. Ensure that the new value is divisible by 20.
-	#Warning: setting this value above the default may lead to unintended loss or gain of XP.
+	#Warning: setting this value above the default may lead to unintended loss or gain of XP. This is due to a rounding error in Minecraft's XP handling
 	#Range: 1000 ~ 2147483640
 	Capacity = 100000000
 
-["Enlightened Amulet Range"]
-	#The range of the enlightened amulet in blocks. Accepts decimals. Default = 8.0.
-	#Range: 1.0 ~ 16.0
-	Range = 8.0
-
 ["Staff of Attunement Range"]
-	#The binding range of the Staff of Attunement in blocks. Accepts decimals. Default = 48.0.
+	#The binding range of the Staff of Attunement & Memory Tablet in blocks. Accepts decimals. Default = 48.0.
 	#Lower this if you experience issues with bound blocks not working correctly.
 	#Range: 4.0 ~ 100.0
 	Range = 48.0
 
-["Enable Name Formatting Anvil Recipes"]
-	#Whether custom recipes that allow for the changing of item name color & formatting are enabled
+["Enlightened Amulet"]
+	#The range of the enlightened amulet in blocks. Accepts decimals. Default = 8.0.
+	#Range: 1.0 ~ 16.0
+	Range = 8.0
+	#Whether the enlightened amulet ignores orbs spawned by Experience Fountains. Default = true
+	Ignores = true
+	#Whether the enlightened amulet ignores orbs spawned by Infected Bookshelves. Default = false
+	IgnoresBookshelfOrbs = false
+
+["Metamorpher Name Formatting Recipes"]
+	#Whether custom recipes that allow for the changing of item name color & formatting are enabled. Default = true
 	Formatting = true
 
-["Infected Bookshelf Settings"]
-	#The minimum spawn delay of Infected Bookshelves in ticks. Default = 150
-	#Range: 1 ~ 10000
-	SpawnDelayMin = 150
-	#The maximum spawn delay of Infected Bookshelves in ticks. Default = 250
-	#Range: 1 ~ 10000
-	SpawnDelayMax = 250
-	#The XP value of spawned orbs. Default = 6
-	#Range: 1 ~ 32767
-	OrbValue = 6
-	#The number of spawns until the bookshelf decays. Default = 100
-	#Range: 1 ~ 10000
-	Spawns = 100
+["Fluorescent Jelly"]
+	#How many hunger points Fluorescent Jelly gives the player. Set to 0 to disable eating completely. Default = 2
+	Nutrition = 2
+	#How much saturation Fluorescent Jelly gives the player. Default = 1.0
+	Saturation = 1.0
 
-["Enchanted Bookshelf Settings"]
-	#The minimum spawn delay of Enchanted Bookshelves in ticks. Default = 100
-	#Range: 1 ~ 10000
-	SpawnDelayMin = 100
-	#The maximum spawn delay of Enchanted Bookshelves in ticks. Default = 300
-	#Range: 1 ~ 10000
-	SpawnDelayMax = 300
-	#The XP value of spawned orbs. Default = 12
-	#Range: 1 ~ 32767
-	OrbValue = 12
-	#The number of spawns until the bookshelf decays. Default = 200
-	#Range: 1 ~ 10000
-	Range = 200
+["Bookshelf Settings"]
+	#The chance that infected bookshelves of any kind drop Forgotten Dust upon decaying. Default = 0.5
+	#Set this value to 0.0 to prevent drops from decaying bookshelves completely
+	#Range: 0.0 ~ 1.0
+	DropDustChance = 0.5
+	#Whether Infected Bookshelves are permeable to Forgotten Dust item entities. Default = false
+	ShelvesPermeableToDust = false
 
-["Archiver's Bookshelf Settings"]
-	#The minimum spawn delay of Archiver's Bookshelves in ticks. Default = 180
-	#Range: 1 ~ 10000
-	SpawnDelayMin = 180
-	#The maximum spawn delay of Archiver's Bookshelves in ticks. Default = 220
-	#Range: 1 ~ 10000
-	SpawnDelayMax = 220
-	#The XP value of spawned orbs. Default = 6
-	#Range: 1 ~ 32767
-	OrbValue = 6
-	#The number of spawns until the bookshelf decays. Default = 200
-	#Range: 1 ~ 10000
-	Spawns = 200
+	["Bookshelf Settings"."Infected Bookshelves"]
+		#The minimum spawn delay of Infected Bookshelves in ticks. Default = 300
+		#Range: 1 ~ 10000
+		SpawnDelayMin = 300
+		#The maximum spawn delay of Infected Bookshelves in ticks. Default = 500
+		#Range: 1 ~ 10000
+		SpawnDelayMax = 500
+		#The XP value of spawned orbs. Default = 12
+		#Range: 1 ~ 32767
+		OrbValue = 12
+		#The number of spawns until the bookshelf decays. Default = 50
+		#Range: 1 ~ 10000
+		Spawns = 50
+
+	["Bookshelf Settings"."Infected Enchanted Bookshelves"]
+		#The minimum spawn delay of Enchanted Bookshelves in ticks. Default = 100
+		#Range: 1 ~ 10000
+		SpawnDelayMin = 300
+		#The maximum spawn delay of Enchanted Bookshelves in ticks. Default = 300
+		#Range: 1 ~ 10000
+		SpawnDelayMax = 500
+		#The XP value of spawned orbs. Default = 24
+		#Range: 1 ~ 32767
+		OrbValue = 24
+		#The number of spawns until the bookshelf decays. Default = 100
+		#Range: 1 ~ 10000
+		Spawns = 100
+
+	["Bookshelf Settings"."Infected Archiver's Bookshelves"]
+		#The minimum spawn delay of Archiver's Bookshelves in ticks. Default = 180
+		#Range: 1 ~ 10000
+		SpawnDelayMin = 300
+		#The maximum spawn delay of Archiver's Bookshelves in ticks. Default = 220
+		#Range: 1 ~ 10000
+		SpawnDelayMax = 500
+		#The XP value of spawned orbs. Default = 12
+		#Range: 1 ~ 32767
+		OrbValue = 12
+		#The number of spawns until the bookshelf decays. Default = 50
+		#Range: 1 ~ 10000
+		Spawns = 100
+
+["Agar Settings"]
+	#The bonus that Insightful & Extravagant Agar apply to bookshelves sharing a face. Default = 1.35
+	#Range: 0.0 ~ 4.0
+	AgarFaceBonus = 1.35
+	#The bonus that Insightful & Extravagant Agar apply to bookshelves sharing an edge. Default = 1.15
+	#Range: 0.0 ~ 4.0
+	AgarEdgeBonus = 1.15
+	#The bonus that Insightful & Extravagant Agar apply to bookshelves sharing a vertex. Default = 1.10
+	#Range: 0.0 ~ 4.0
+	AgarVertexBonus = 1.1
+	#Whether or not Agar blocks emit light. Default = true.
+	#Set this to false if you are using intensive shader settings and are experiencing fps drops.
+	AgarEmitsLight = true
+	#Whether Agar blocks are permeable to Forgotten Dust item entities. Default = false
+	ShelvesPermeableToDust = false
+
+["Allowed Experience Items"]
+	#Add IDs of items you want the fountain to support here in the form mod_id:item_name = value in experience points.
+	#Whitelisted items will be able to be converted to Cognitium by right-clicking / shift-right-clicking a bound fountain.
+	#This list has to be identical on both client and server for valid items to be viewed in JEI
+	AllowedItems = ["forbidden_arcanus:xpetrified_orb = 91.0f", "mysticalagriculture:experience_droplet = 12.5f", "actuallyadditions:solidified_experience = 8.0f"]
 

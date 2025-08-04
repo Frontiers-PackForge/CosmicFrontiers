@@ -2,14 +2,10 @@
 particles = true
 #Whether the "Did you know?" ledgers are shown in Forestry menus.
 enable_hints = true
-
-[mail]
-	#Whether alerts are enabled for Forestry's mail system.
-	mail_alerts_enable = true
-	#Whether mail alerts are shown on the right of the screen instead of the left.
-	mail_alerts_on_right = false
-	#Whether mail alerts are shown on the bottom of the screen instead of the top.
-	mail_alerts_on_bottom = false
+#Whether certain specimens, like Imperial Bees, will have enchantment glints on them.
+enable_glints = true
+#Whether alerts are enabled for Forestry's mail system.
+mail_alerts_enable = true
 
 [jei_bees]
 	#Set to false to disable display of mutation requirements

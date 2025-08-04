@@ -1,0 +1,52 @@
+
+[ingame]
+	use_animation_shader = false
+	show_epicfight_attributes = true
+	#Range: 1 ~ 10
+	long_press_count = 2
+	auto_preparation = false
+	mining_autoswitch_items = []
+	blood_effects = true
+	show_target_indicator = true
+	#Range: 0.0 ~ 1.0
+	laser_pointer_color = 0.328125
+	enable_laser_pointer = true
+	#Allowed Values: NONE, HURT, TARGET
+	health_bar_show_option = "HURT"
+	camera_auto_switch = false
+	filter_animation = false
+	aiming_correction = true
+	first_person_model = true
+	#Range: 0 ~ 30
+	max_hit_projectiles = 30
+	no_mining_in_combat = true
+	battle_autoswitch_items = []
+
+	[ingame.ui]
+		#Allowed Values: LEFT, RIGHT, CENTER
+		stamina_bar_x_base = "RIGHT"
+		weapon_innate_x = 42
+		weapon_innate_y = 48
+		charging_bar_y = 60
+		#Allowed Values: LEFT, RIGHT, CENTER
+		weapon_innate_x_base = "RIGHT"
+		charging_bar_x = -119
+		#Allowed Values: HORIZONTAL, VERTICAL
+		passives_align_direction = "HORIZONTAL"
+		#Allowed Values: TOP, BOTTOM, CENTER
+		charging_bar_y_base = "CENTER"
+		#Allowed Values: LEFT, RIGHT, CENTER
+		passives_x_base = "RIGHT"
+		passives_y = 36
+		#Allowed Values: TOP, BOTTOM, CENTER
+		passives_y_base = "BOTTOM"
+		stamina_bar_x = 120
+		#Allowed Values: TOP, BOTTOM, CENTER
+		stamina_bar_y_base = "BOTTOM"
+		stamina_bar_y = 10
+		passives_x = 70
+		#Allowed Values: TOP, BOTTOM, CENTER
+		weapon_innate_y_base = "BOTTOM"
+		#Allowed Values: LEFT, RIGHT, CENTER
+		charging_bar_x_base = "CENTER"
+

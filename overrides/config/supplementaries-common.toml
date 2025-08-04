@@ -208,8 +208,18 @@
 		#Time for a cannon to be able to fire again after it has been fired
 		#Range: 0 ~ 500
 		cooldown = 60
-		cannonball = true
 		music_disc_heave_ho = true
+		#Makes TNT-like block shot from a cannon explode on impact
+		explode_tnt = true
+
+		[functional.cannon.cannonball]
+			enabled = true
+			#Cannonball power scaling. Higher values will make cannonballs have more energy. Reminder that the damage and breaking power of a cannonball is proportional to its energy (speed squared) times this constant
+			#Range: 0.0 ~ 100.0
+			power_scaling = 3.5
+			#Radius of the 'explosion' when a cannonball hits a block. Set to 0 to disable
+			#Range: 0.0 ~ 10.0
+			break_radius = 1.1
 
 	[functional.lumisene]
 		enabled = true
@@ -435,7 +445,7 @@
 
 	[tools.rope_arrow]
 		enabled = true
-		#Max number of robe items allowed to be stored inside a rope arrow
+		#Max number of rope items allowed to be stored inside a rope arrow
 		#Range: 1 ~ 256
 		capacity = 32
 		#Makes rope arrows exclusive to crossbows
@@ -541,7 +551,7 @@
 		enabled = true
 
 	[tweaks.traders_open_doors]
-		#Allows traders to open doors (because they couldnt aparently)
+		#Allows traders to open doors (because they couldn't apparently)
 		enabled = true
 
 	[tweaks.dispenser_tweaks]

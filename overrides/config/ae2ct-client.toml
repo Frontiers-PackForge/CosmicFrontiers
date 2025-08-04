@@ -1,0 +1,5 @@
+#true: compact, false: loose
+use_compact_tree = false
+#show count in screenshot
+screenshot_show_count = false
+

@@ -1,6 +1,9 @@
 {
   "defaultCycleTime": 5000,
-  "ignoredNamespaces": [],
+  "ignoredNamespaces": [
+    "tipsmod",
+    "aether"
+  ],
   "ignoredTips": [],
   "hideUnlocalizedTips": false,
   "tipRenderWidthPercent": 0.35,

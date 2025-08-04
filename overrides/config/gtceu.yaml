@@ -9,7 +9,7 @@ recipes:
   disableManualCompression: true
 
   # Change the recipe of Rods in the Lathe to 1 Rod and 2 Small Piles of Dust, instead of 2 Rods.
-  # Default: false
+  # Default: true
   harderRods: true
 
   # Whether to make crafting recipes for Bricks, Firebricks, Nether Bricks, and Coke Bricks harder.
@@ -50,7 +50,7 @@ recipes:
   nerfPaperCrafting: true
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
-  # Default: false
+  # Default: true
   hardAdvancedIronRecipes: true
 
   # Whether to make coloring blocks like Concrete or Glass harder.
@@ -86,7 +86,7 @@ recipes:
   hardMultiRecipes: false
 
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
-  # Default: true
+  # Default: false
   enchantedTools: true
 
 worldgen:
@@ -153,14 +153,8 @@ worldgen:
     oreIndicatorChunkCacheSize: 2048
 
 machines:
-  # Whether insufficient energy supply should reset Machine recipe progress to zero.
-  # If true, progress will reset.
-  # If false, progress will decrease to zero with 2x speed
-  # Default: true
-  recipeProgressLowEnergy: true
-
   # Whether to require a Wrench, Wirecutter, or other GregTech tools to break machines, casings, wires, and more.
-  # Default: false
+  # Default: true
   requireGTToolsForBlocks: true
 
   # Whether machines explode in rainy weather or when placed next to certain terrain, such as fire or lava
@@ -283,8 +277,8 @@ machines:
 
   # Whether the Assembly Line should require the fluid inputs to be in order.
   # (Requires Ordered Assembly Line Item Inputs to be enabled.)
-  # Default: false
-  orderedAssemblyLineFluids: true
+  # Default: true
+  orderedAssemblyLineFluids: false
 
   # Default maximum parallel of steam multiblocks
   # Default: 8
@@ -358,6 +352,11 @@ client:
   # Whether or not to enable Emissive Textures for GregTech Machines.
   # Default: true
   machinesEmissiveTextures: true
+
+  # Whether most machines will have block entity renderers, mainly used for rendering certain covers. (Restart required)
+  # Disable if experiencing performance issues.
+  # Default: true
+  machinesHaveBERsByDefault: true
 
   # Whether or not sounds should be played when using tools outside of crafting.
   # Default: true
@@ -525,10 +524,10 @@ compat:
     # The interval between ME Hatch/Bus interact ME network.
     # It may cause lag if the interval is too small.
     # Default: 2 sec
-    updateIntervals: 40
+    updateIntervals: 1
 
     # The energy consumption of ME Hatch/Bus.
-    # Default: 1.0AE/t
+    # Default: 4.0AE/t
     meHatchEnergyUsage: 1.0
 
   # Config options regarding GTCEu compatibility with minimap mods
@@ -618,7 +617,7 @@ compat:
 dev:
   # Debug general events? (will print recipe conficts etc. to server's debug.log)
   # Default: false
-  debug: true
+  debug: false
 
   # Debug ore vein placement? (will print placed veins to server's debug.log)
   # Default: false (no placement printout in debug.log)

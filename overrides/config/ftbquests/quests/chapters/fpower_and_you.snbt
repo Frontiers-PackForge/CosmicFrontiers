@@ -693,6 +693,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["23AEF543AA92119E"]
 			id: "37CF60979B32CB99"
 			shape: "hexagon"
 			tasks: [{

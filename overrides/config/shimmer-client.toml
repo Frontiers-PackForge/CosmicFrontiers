@@ -26,5 +26,5 @@
 "inset shader" = false
 #whether enable buildin shimmer.json
 #
-"enable buildin setting" = true
+"enable buildin setting" = false
 
