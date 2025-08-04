@@ -59,3 +59,18 @@ jobs:
           files: |
             Cosmic.Frontier.${{ github.event.inputs.version }}.zip
             Cosmic.Frontier.Server.${{ github.event.inputs.version }}.zip
+
+      - name: Upload Releases (Curseforge)
+        if: ${{ !github.event.inputs.prerelease }}
+        id: forge_release
+        uses: Kir-Antipov/mc-publish@v3.3.0
+        with:
+          curseforge-id: ${{ vars.CURSE_ID }}
+          curseforge-token: ${{ secrets.CURSEFORGE_API_KEY }}
+
+          files: ./Cosmic.Frontier*.zip
+          name: "Cosmic Test ${{ github.event.inputs.version }}"
+          version: ${{ github.event.inputs.version }}
+          version-type: release
+          loaders: forge
+          game-versions: 1.20.1
