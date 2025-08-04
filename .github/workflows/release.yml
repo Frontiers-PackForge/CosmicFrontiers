@@ -31,17 +31,16 @@ jobs:
         env:
           RELEASE_VERSION: ${{ github.event.inputs.version }}
           RELEASE_PRERELEASE: ${{ github.event.inputs.prerelease }}
+          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
         run: |
           python scripts/release.py
 
-      - name: Upload modpack zip artifact
-        uses: actions/upload-artifact@v4
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
         with:
-          name: Cosmic.Frontier.${{ github.event.inputs.version }}
-          path: Cosmic.Frontier.${{ github.event.inputs.version }}.zip
-
-      - name: Upload serverpack zip artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: Cosmic.Frontier.Server.${{ github.event.inputs.version }}
-          path: Cosmic.Frontier.Server.${{ github.event.inputs.version }}.zip
+          tag_name: ${{ github.event.inputs.version }}
+          name: Cosmic Frontier ${{ github.event.inputs.version }}
+          prerelease: ${{ github.event.inputs.prerelease }}
+          files: |
+            Cosmic.Frontier.${{ github.event.inputs.version }}.zip
+            Cosmic.Frontier.Server.${{ github.event.inputs.version }}.zip

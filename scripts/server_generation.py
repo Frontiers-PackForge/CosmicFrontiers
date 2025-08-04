@@ -13,7 +13,7 @@ from curse_client import get_mod_website_url, get_mod_download_url, get_api_key,
 SERVERPACK_DIRECTORY = "serverpack"
 MAX_CONCURRENT_DOWNLOADS = 8
 
-def generate_serverpack_zip(version=None):
+def generate_serverpack_zip(version=None, curseforge_api_key=None):
     base_dir = os.path.dirname(os.path.abspath(__file__))
     root_dir = os.path.abspath(os.path.join(base_dir, '..'))
     serverpack_dir = os.path.join(root_dir, SERVERPACK_DIRECTORY)
@@ -47,7 +47,7 @@ def generate_serverpack_zip(version=None):
     update_server_scripts_with_versions(serverpack_dir)
 
     # Download mods from CurseForge API
-    download_mods_from_curseforge(serverpack_dir)
+    download_mods_from_curseforge(serverpack_dir, curseforge_api_key=curseforge_api_key)
 
     # Append manual download links to README
     readme_update(root_dir, serverpack_dir)
@@ -171,10 +171,13 @@ def update_server_scripts_with_versions(serverpack_dir):
             f.write(content)
 
 
-def download_mods_from_curseforge(serverpack_dir):
+def download_mods_from_curseforge(serverpack_dir, curseforge_api_key=None):
     from concurrent.futures import ThreadPoolExecutor, as_completed
     import requests
-    api_key = get_api_key()
+    # Use the passed API key instead of the one from the environment
+    api_key = curseforge_api_key or os.environ.get('CURSEFORGE_API_KEY')
+    if not api_key:
+        raise RuntimeError('CURSEFORGE_API_KEY must be provided.')
     mods_dir = os.path.join(serverpack_dir, 'mods')
     os.makedirs(mods_dir, exist_ok=True)
     manifest_path = os.path.join(serverpack_dir, 'manifest.json')
@@ -202,7 +205,8 @@ def download_mods_from_curseforge(serverpack_dir):
             file_id = server_only_mods[project_id]['fileID']
         if not project_id or not file_id:
             raise RuntimeError(f"ERROR: Failed to parse project id or file id for mod '{mod}'")
-        file_url = get_mod_download_url(project_id, file_id)
+        # Use the passed API key
+        file_url = get_mod_download_url(project_id, file_id, api_key=api_key)
         if not file_url:
             raise RuntimeError(f"ERROR: No download url found for mod {project_id} {file_id}")
         print(f"\tDownloading {file_url}")
