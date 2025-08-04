@@ -25,5 +25,6 @@
   {"name":  "Forgematica", "id":  912441, "thirdPartyLock":  false},
   {"name":  "Forgematica Printer", "id":  1223456, "thirdPartyLock":  false},
   {"name":  "MaFgLib", "id":  910766, "thirdPartyLock":  false},
-  {"name":  "A Campfire", "id": 1023913, "thirdPartyLock":  false}
+  {"name":  "A Campfire", "id": 1023913, "thirdPartyLock":  false},
+  {"name":  "Structory", "id": 636540, "thirdPartyLock":  true}
 ]

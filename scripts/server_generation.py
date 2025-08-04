@@ -3,8 +3,15 @@ import shutil
 import zipfile
 import json
 from bs4 import BeautifulSoup
+import sys
+
+sys.path.append(os.path.dirname(__file__))
+
+from utils import copy_any, load_json, save_json
+from curse_client import get_mod_website_url, get_mod_download_url, get_api_key, get_headers
 
 SERVERPACK_DIRECTORY = "serverpack"
+MAX_CONCURRENT_DOWNLOADS = 8
 
 def generate_serverpack_zip(version=None):
     base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -16,11 +23,11 @@ def generate_serverpack_zip(version=None):
         shutil.rmtree(serverpack_dir)
     os.makedirs(serverpack_dir)
 
-    # Copy overrides (if needed, adjust as per your serverpack structure)
+    # Copy overrides
     overrides_src = os.path.join(root_dir, 'overrides')
     overrides_dst = os.path.join(serverpack_dir, 'overrides')
     if os.path.exists(overrides_src):
-        shutil.copytree(overrides_src, overrides_dst)
+        copy_any(overrides_src, overrides_dst)
 
     # Copy server-files content into serverpack directory
     server_files_src = os.path.join(root_dir, 'server-files')
@@ -28,10 +35,7 @@ def generate_serverpack_zip(version=None):
         for item in os.listdir(server_files_src):
             s = os.path.join(server_files_src, item)
             d = os.path.join(serverpack_dir, item)
-            if os.path.isdir(s):
-                shutil.copytree(s, d, dirs_exist_ok=True)
-            else:
-                shutil.copy2(s, d)
+            copy_any(s, d)
 
     # Copy manifest.json (if needed for serverpack)
     generate_filtered_manifest(root_dir, serverpack_dir)
@@ -45,6 +49,9 @@ def generate_serverpack_zip(version=None):
     # Download mods from CurseForge API
     download_mods_from_curseforge(serverpack_dir)
 
+    # Append manual download links to README
+    append_manual_download_links(root_dir, serverpack_dir)
+
     # Zip the directory (only include the contents, not the root folder)
     zip_name = f'Cosmic.Frontier.Server.{version}.zip' if version else f'Cosmic.Frontier.Server.zip'
     zip_path = os.path.join(root_dir, zip_name)
@@ -52,40 +59,34 @@ def generate_serverpack_zip(version=None):
         for root, dirs, files in os.walk(serverpack_dir):
             for file in files:
                 abs_path = os.path.join(root, file)
-                rel_path = os.path.relpath(abs_path, serverpack_dir)  # relative to serverpack_dir, not including serverpack_dir itself
+                rel_path = os.path.relpath(abs_path, serverpack_dir)
                 zipf.write(abs_path, rel_path)
     print(f'Serverpack zipped at: {zip_path}')
 
 
 def generate_filtered_modlist(root_dir, serverpack_dir):
     modlist_path = os.path.join(root_dir, 'modlist.html')
-    blacklist_path = os.path.join(root_dir, 'server-mod-blacklist.json')
+    config_path = os.path.join(root_dir, 'server-mods-config.json')
     output_path = os.path.join(serverpack_dir, 'modlist.html')
 
-    # Load blacklist IDs as strings
-    with open(blacklist_path, 'r', encoding='utf-8') as f:
-        blacklist = json.load(f)
-    blacklist_ids = {str(entry['id']) for entry in blacklist}
+    config = load_json(config_path)
+    blacklist_ids = {str(entry['id']) for entry in config.get('blacklist', [])}
 
-    # Parse modlist.html
     with open(modlist_path, 'r', encoding='utf-8') as f:
         soup = BeautifulSoup(f, 'html.parser')
 
-    # Filter <li> elements
     filtered_lis = []
     for li in soup.find_all('li'):
         a = li.find('a', href=True)
         if a and any(black_id in a['href'] for black_id in blacklist_ids):
-            continue  # skip blacklisted
+            continue
         filtered_lis.append(li)
 
-    # Create new soup with filtered <li>s
     new_soup = BeautifulSoup('<ul></ul>', 'html.parser')
     ul = new_soup.ul
     for li in filtered_lis:
         ul.append(li)
 
-    # Write filtered modlist.html
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(str(new_soup))
     print(f'Filtered modlist.html generated at: {output_path}')
@@ -93,26 +94,18 @@ def generate_filtered_modlist(root_dir, serverpack_dir):
 
 def generate_filtered_manifest(root_dir, serverpack_dir):
     manifest_path = os.path.join(root_dir, 'manifest.json')
-    blacklist_path = os.path.join(root_dir, 'server-mod-blacklist.json')
+    config_path = os.path.join(root_dir, 'server-mods-config.json')
     output_path = os.path.join(serverpack_dir, 'manifest.json')
 
-    # Load blacklist IDs as strings
-    with open(blacklist_path, 'r', encoding='utf-8') as f:
-        blacklist = json.load(f)
-    blacklist_ids = {str(entry['id']) for entry in blacklist}
+    config = load_json(config_path)
+    blacklist_ids = {str(entry['id']) for entry in config.get('blacklist', [])}
+    manifest = load_json(manifest_path)
 
-    # Load manifest.json
-    with open(manifest_path, 'r', encoding='utf-8') as f:
-        manifest = json.load(f)
-
-    # Filter files array (CurseForge manifest structure)
     if 'files' in manifest and isinstance(manifest['files'], list):
         filtered_files = [obj for obj in manifest['files'] if str(obj.get('projectID')) not in blacklist_ids]
         manifest['files'] = filtered_files
 
-    # Write filtered manifest.json
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(manifest, f, indent=2)
+    save_json(manifest, output_path)
     print(f'Filtered manifest.json generated at: {output_path}')
 
 
@@ -156,35 +149,35 @@ def update_server_scripts_with_versions(serverpack_dir):
 
 
 def download_mods_from_curseforge(serverpack_dir):
-    import requests
     from concurrent.futures import ThreadPoolExecutor, as_completed
-    api_key = os.environ.get('CURSEFORGE_API_KEY')
-    if not api_key:
-        raise RuntimeError('CURSEFORGE_API_KEY environment variable not set. Aborting mod downloads.')
+    import requests
+    api_key = get_api_key()
     mods_dir = os.path.join(serverpack_dir, 'mods')
     os.makedirs(mods_dir, exist_ok=True)
     manifest_path = os.path.join(serverpack_dir, 'manifest.json')
+    config_path = os.path.join(os.path.dirname(serverpack_dir), 'server-mods-config.json')
     with open(manifest_path, 'r', encoding='utf-8') as f:
         manifest = json.load(f)
     files = manifest.get('files', [])
-    api_url = 'https://api.curseforge.com/v1/mods/'
-    headers = {
-        'Accept': 'application/json',
-        'x-api-key': api_key
-    }
+    config = load_json(config_path)
+    manual_download_ids = {mod['id'] for mod in config.get('manual_download', [])}
 
     def download_mod(mod):
         project_id = mod.get('projectID')
         file_id = mod.get('fileID')
+        # Skip mods that are not required
+        if not mod.get('required', True):
+            print(f"Skipping optional mod {project_id} (required: false)")
+            return
+        # Skip mods that are in the manual download section
+        if project_id in manual_download_ids:
+            print(f"Skipping manual download mod {project_id}")
+            return
         if not project_id or not file_id:
             raise RuntimeError(f"ERROR: Failed to parse project id or file id for mod '{mod}'")
-        url = f"{api_url}{project_id}/files/{file_id}/download-url"
-        resp = requests.get(url, headers=headers)
-        if resp.status_code != 200:
-            raise RuntimeError(f"ERROR: No download url found for mod {project_id} {file_id}\n{url}")
-        file_url = resp.json().get('data')
+        file_url = get_mod_download_url(project_id, file_id)
         if not file_url:
-            raise RuntimeError(f"ERROR: No download url found for mod {project_id} {file_id}\n{url}")
+            raise RuntimeError(f"ERROR: No download url found for mod {project_id} {file_id}")
         print(f"\tDownloading {file_url}")
         mod_resp = requests.get(file_url, stream=True)
         if mod_resp.status_code == 200:
@@ -196,10 +189,54 @@ def download_mods_from_curseforge(serverpack_dir):
         else:
             raise RuntimeError(f"ERROR: Failed to download mod {project_id} {file_id}")
 
-    # Use ThreadPoolExecutor for parallel downloads (limit to 8 threads by default)
-    max_workers = min(8, len(files))
+    max_workers = min(MAX_CONCURRENT_DOWNLOADS, len(files))
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = [executor.submit(download_mod, mod) for mod in files]
         for future in as_completed(futures):
-            # Will raise exception if any download fails
             future.result()
+
+
+def append_manual_download_links(root_dir, serverpack_dir):
+    config_path = os.path.join(root_dir, 'server-mods-config.json')
+    manifest_path = os.path.join(serverpack_dir, 'manifest.json')
+    readme_path = os.path.join(serverpack_dir, 'README.md')
+    config = load_json(config_path)
+    manual_download_mods = config.get('manual_download', [])
+    with open(manifest_path, 'r', encoding='utf-8') as f:
+        manifest = json.load(f)
+    root_manifest_path = os.path.join(root_dir, 'manifest.json')
+    with open(root_manifest_path, 'r', encoding='utf-8') as f:
+        root_manifest = json.load(f)
+    root_mod_ids = {f['projectID'] for f in root_manifest.get('files', [])}
+    files = manifest.get('files', [])
+    # Manual Downloads Section
+    with open(readme_path, 'a', encoding='utf-8') as readme:
+        readme.write('\n## Manual Downloads\n')
+        for mod in manual_download_mods:
+            mod_id = mod['id']
+            if mod_id not in root_mod_ids:
+                continue
+            file_id = None
+            for f in files:
+                if f.get('projectID') == mod_id:
+                    file_id = f.get('fileID')
+                    break
+            if not file_id:
+                continue
+            mod_url = get_mod_website_url(mod_id)
+            if not mod_url:
+                continue
+            file_url = f"{mod_url}/download/{file_id}"
+            readme.write(f"- {file_url}\n")
+        # Optional Mods Section
+        readme.write('\n## Optional Mods\n')
+        for f in files:
+            if not f.get('required', True):
+                mod_id = f.get('projectID')
+                file_id = f.get('fileID')
+                mod_url = get_mod_website_url(mod_id)
+                if not mod_url:
+                    continue
+                file_url = f"{mod_url}/download/{file_id}"
+                readme.write(f"- {file_url}\n")
+    print(f'Manual download links and optional mods appended to: {readme_path}')

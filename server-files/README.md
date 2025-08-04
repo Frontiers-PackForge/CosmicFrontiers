@@ -6,10 +6,8 @@ If you encounter any issues please report them on our [Discord Server](https://d
 
 ## Installation instructions
 
-- Before installing the server pack, make sure you have added the Manual Downloads mods from the section [below](#manual-doawnloads) to your mod folder
+- Before installing the server pack, make sure you have added the Manual Downloads mods from the section [below](#manual-doawnloads) to your mod folder. if empty or absent nothing needs to be done
 - To use a specific Java runtime, set an environment variable named ***CC_JAVA*** to the full path of java.exe.
 - To disable automatic restarts, set an environment variable named ***CC_RESTART*** to false.
 - To install the pack without starting the server, set an environment variable named ***CC_INSTALL_ONLY*** to true.
 - simply run the `startserver` file corresponding to your OS. It wil download forge if missing and start the server except if parameterized otherwise.
-
-## Manual Doawnloads
