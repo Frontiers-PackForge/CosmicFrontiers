@@ -39,6 +39,7 @@ jobs:
         id: build_changelog
         uses: mikepenz/release-changelog-builder-action@v5
         with:
+          toTag: ${{ github.event.inputs.version }}
           mode: "COMMIT"
 
       - name: Create GitHub Release
