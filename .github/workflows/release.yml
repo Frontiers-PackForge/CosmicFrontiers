@@ -35,19 +35,13 @@ jobs:
 #        run: |
 #          python scripts/release.py
 
-      - name: Create tag for release
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git tag ${{ github.event.inputs.version }}
-          git push origin ${{ github.event.inputs.version }}
-
       - name: "Build Changelog"
         id: build_changelog
         uses: mikepenz/release-changelog-builder-action@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          toTag: ${{ github.ref }}
           mode: "COMMIT"
           ignorePreReleases: true
           fetchViaCommits: true
