@@ -50,6 +50,7 @@ ServerEvents.recipes(event => {
         .duration(380)
         .EUt(GTValues.VA[GTValues.ZPM]);
 
+
     event.recipes.gtceu.fusion_reactor('frontiers:americium')
         .chancedInput('gtceu:neutron_reflector', 850, 0)
         .chancedInput('gtceu:neutron_reflector', 700, 0)
@@ -62,7 +63,5 @@ ServerEvents.recipes(event => {
         .fusionStartEU(320000000)
         .duration(270)
         .EUt(GTValues.VA[GTValues.ZPM]);
-
-
 
 })
