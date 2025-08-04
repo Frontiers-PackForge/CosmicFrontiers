@@ -1,19 +1,11 @@
 name: release
 
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'Release version'
-        required: true
-        type: string
-      prerelease:
-        description: 'Is this a pre-release?'
-        required: true
-        type: boolean
+  release:
+    types: [ released ]
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -29,47 +21,57 @@ jobs:
 
       - name: Run release script
         env:
-          RELEASE_VERSION: ${{ github.event.inputs.version }}
-          RELEASE_PRERELEASE: ${{ github.event.inputs.prerelease }}
+          RELEASE_VERSION: ${{ inputs.tag-name }}
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
         run: |
           python scripts/release.py
 
-      - name: "Build Changelog"
-        id: build_changelog
-        uses: mikepenz/release-changelog-builder-action@v5
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
         with:
-          toTag: ${{ github.ref }}
-          mode: "COMMIT"
-          ignorePreReleases: true
-          fetchViaCommits: true
-          failOnError: true
-          configurationJson: |
-            {"template": "<summary>📚Changelog</summary>\n\n#{{UNCATEGORIZED}}"}
+          name: build-artifacts-${{ inputs.branch }}
+          path: Cosmic.Frontier*.zip
+          if-no-files-found: error
+          retention-days: 3
 
-      - name: Create GitHub Release
+  upload-release-artifacts:
+    name: Upload Artifacts
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifacts-${{ inputs.branch }}
+      - name: Upload artifacts to release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.event.inputs.version }}
-          name: Cosmic Frontier ${{ github.event.inputs.version }}
-          prerelease: ${{ github.event.inputs.prerelease }}
-          body: ${{ steps.build_changelog.outputs.changelog }}
-          files: |
-            Cosmic.Frontier.${{ github.event.inputs.version }}.zip
-            Cosmic.Frontier.Server.${{ github.event.inputs.version }}.zip
+          tag_name: ${{ inputs.tag-name }}
+          files: ./*.zip
+          fail_on_unmatched_files: true
 
-      - name: Upload Releases (Curseforge)
-        if: ${{ !github.event.inputs.prerelease }}
-        id: forge_release
+  publish-curseforge:
+    name: Publish to Curseforge
+    needs: build
+    if: ${{ !github.event.release.prerelease }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifacts-${{ inputs.branch }}
+
+      - name: Upload to Curseforge
         uses: Kir-Antipov/mc-publish@v3.3.0
         with:
           curseforge-id: ${{ vars.CURSE_ID }}
           curseforge-token: ${{ secrets.CURSEFORGE_API_KEY }}
-
           files: ./Cosmic.Frontier*.zip
-          name: "Cosmic Test ${{ github.event.inputs.version }}"
+          name: "Cosmic Frontier ${{ github.event.inputs.version }}"
           version: ${{ github.event.inputs.version }}
           version-type: release
           loaders: forge
