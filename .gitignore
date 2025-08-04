@@ -47,5 +47,4 @@ instance.cfg
 mmc-pack.json
 modpack/
 serverpack/
-Cosmic.Frontier.*.zip
-Cosmic.Frontier.Server.*.zip
+Cosmic.Frontier*.zip

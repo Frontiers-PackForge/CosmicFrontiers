@@ -24,6 +24,9 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install Python dependencies
+        run: pip install -r scripts/requirements.txt
+
       - name: Run release script
         env:
           RELEASE_VERSION: ${{ github.event.inputs.version }}
@@ -36,3 +39,9 @@ jobs:
         with:
           name: Cosmic.Frontier.${{ github.event.inputs.version }}
           path: Cosmic.Frontier.${{ github.event.inputs.version }}.zip
+
+      - name: Upload serverpack zip artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Cosmic.Frontier.Server.${{ github.event.inputs.version }}
+          path: Cosmic.Frontier.Server.${{ github.event.inputs.version }}.zip
