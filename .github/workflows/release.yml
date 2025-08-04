@@ -35,11 +35,13 @@ jobs:
         run: |
           python scripts/release.py
 
-      - name: "✏️ Generate release changelog"
-        id: changelog
-        uses: janheinrichmerker/action-github-changelog-generator@v2.3
+      - name: "Build Changelog"
+        id: build_changelog
+        uses: mikepenz/release-changelog-builder-action@v5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          ignorePreReleases: "true"
+          fetchViaCommits: "true"
+          mode: "COMMIT"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
