@@ -50,7 +50,7 @@ def generate_serverpack_zip(version=None):
     download_mods_from_curseforge(serverpack_dir)
 
     # Append manual download links to README
-    append_manual_download_links(root_dir, serverpack_dir)
+    readme_update(root_dir, serverpack_dir)
 
     # Zip the directory (only include the contents, not the root folder)
     zip_name = f'Cosmic.Frontier.Server.{version}.zip' if version else f'Cosmic.Frontier.Server.zip'
@@ -71,6 +71,7 @@ def generate_filtered_modlist(root_dir, serverpack_dir):
 
     config = load_json(config_path)
     blacklist_ids = {str(entry['id']) for entry in config.get('blacklist', [])}
+    server_only_mods = config.get('server_only', [])
 
     with open(modlist_path, 'r', encoding='utf-8') as f:
         soup = BeautifulSoup(f, 'html.parser')
@@ -81,6 +82,16 @@ def generate_filtered_modlist(root_dir, serverpack_dir):
         if a and any(black_id in a['href'] for black_id in blacklist_ids):
             continue
         filtered_lis.append(li)
+
+    # Add server-only mods to modlist
+    for mod in server_only_mods:
+        mod_url = get_mod_website_url(mod['id'])
+        if mod_url:
+            new_li = soup.new_tag('li')
+            a_tag = soup.new_tag('a', href=mod_url)
+            a_tag.string = mod['name']
+            new_li.append(a_tag)
+            filtered_lis.append(new_li)
 
     new_soup = BeautifulSoup('<ul></ul>', 'html.parser')
     ul = new_soup.ul
@@ -101,8 +112,20 @@ def generate_filtered_manifest(root_dir, serverpack_dir):
     blacklist_ids = {str(entry['id']) for entry in config.get('blacklist', [])}
     manifest = load_json(manifest_path)
 
+    # Add server-only mods to manifest
+    server_only_mods = config.get('server_only', [])
     if 'files' in manifest and isinstance(manifest['files'], list):
         filtered_files = [obj for obj in manifest['files'] if str(obj.get('projectID')) not in blacklist_ids]
+        # Add server-only mods if not already present
+        server_only_ids = {mod['id'] for mod in server_only_mods}
+        present_ids = {obj.get('projectID') for obj in filtered_files}
+        for mod in server_only_mods:
+            if mod['id'] not in present_ids:
+                filtered_files.append({
+                    'projectID': mod['id'],
+                    'fileID': mod['file_id'],
+                    'required': True
+                })
         manifest['files'] = filtered_files
 
     save_json(manifest, output_path)
@@ -161,6 +184,7 @@ def download_mods_from_curseforge(serverpack_dir):
     files = manifest.get('files', [])
     config = load_json(config_path)
     manual_download_ids = {mod['id'] for mod in config.get('manual_download', [])}
+    server_only_mods = {mod['id']: mod for mod in config.get('server_only', [])}
 
     def download_mod(mod):
         project_id = mod.get('projectID')
@@ -173,6 +197,9 @@ def download_mods_from_curseforge(serverpack_dir):
         if project_id in manual_download_ids:
             print(f"Skipping manual download mod {project_id}")
             return
+        # Only download server-only mods if they are in the config or regular mods
+        if project_id in server_only_mods:
+            file_id = server_only_mods[project_id]['fileID']
         if not project_id or not file_id:
             raise RuntimeError(f"ERROR: Failed to parse project id or file id for mod '{mod}'")
         file_url = get_mod_download_url(project_id, file_id)
@@ -196,12 +223,13 @@ def download_mods_from_curseforge(serverpack_dir):
             future.result()
 
 
-def append_manual_download_links(root_dir, serverpack_dir):
+def readme_update(root_dir, serverpack_dir):
     config_path = os.path.join(root_dir, 'server-mods-config.json')
     manifest_path = os.path.join(serverpack_dir, 'manifest.json')
     readme_path = os.path.join(serverpack_dir, 'README.md')
     config = load_json(config_path)
     manual_download_mods = config.get('manual_download', [])
+    server_only_mods = config.get('server_only', [])
     with open(manifest_path, 'r', encoding='utf-8') as f:
         manifest = json.load(f)
     root_manifest_path = os.path.join(root_dir, 'manifest.json')
@@ -209,34 +237,47 @@ def append_manual_download_links(root_dir, serverpack_dir):
         root_manifest = json.load(f)
     root_mod_ids = {f['projectID'] for f in root_manifest.get('files', [])}
     files = manifest.get('files', [])
-    # Manual Downloads Section
-    with open(readme_path, 'a', encoding='utf-8') as readme:
-        readme.write('\n## Manual Downloads\n')
-        for mod in manual_download_mods:
-            mod_id = mod['id']
-            if mod_id not in root_mod_ids:
-                continue
-            file_id = None
-            for f in files:
-                if f.get('projectID') == mod_id:
-                    file_id = f.get('fileID')
-                    break
-            if not file_id:
-                continue
+    manual_links = []
+    for mod in manual_download_mods:
+        mod_id = mod['id']
+        if mod_id not in root_mod_ids:
+            continue
+        file_id = None
+        for f in files:
+            if f.get('projectID') == mod_id:
+                file_id = f.get('fileID')
+                break
+        if not file_id:
+            continue
+        mod_url = get_mod_website_url(mod_id)
+        if not mod_url:
+            continue
+        file_url = f"{mod_url}/download/{file_id}"
+        manual_links.append(f"- {file_url}\n")
+    optional_links = []
+    for f in files:
+        if not f.get('required', True):
+            mod_id = f.get('projectID')
+            file_id = f.get('fileID')
             mod_url = get_mod_website_url(mod_id)
             if not mod_url:
                 continue
             file_url = f"{mod_url}/download/{file_id}"
-            readme.write(f"- {file_url}\n")
-        # Optional Mods Section
-        readme.write('\n## Optional Mods\n')
-        for f in files:
-            if not f.get('required', True):
-                mod_id = f.get('projectID')
-                file_id = f.get('fileID')
-                mod_url = get_mod_website_url(mod_id)
-                if not mod_url:
-                    continue
-                file_url = f"{mod_url}/download/{file_id}"
-                readme.write(f"- {file_url}\n")
-    print(f'Manual download links and optional mods appended to: {readme_path}')
+            optional_links.append(f"- {file_url}\n")
+    server_only_links = []
+    for mod in server_only_mods:
+        mod_url = get_mod_website_url(mod['id'])
+        if not mod_url:
+            continue
+        server_only_links.append(f"- {mod['name']}: {mod_url}\n")
+    with open(readme_path, 'a', encoding='utf-8') as readme:
+        if manual_links:
+            readme.write('\n## Manual Downloads\n')
+            readme.writelines(manual_links)
+        if optional_links:
+            readme.write('\n## Optional Mods\n')
+            readme.writelines(optional_links)
+        if server_only_links:
+            readme.write('\n## Server Only Mods\n')
+            readme.writelines(server_only_links)
+    print(f'READEME.md updated at: {readme_path}')
