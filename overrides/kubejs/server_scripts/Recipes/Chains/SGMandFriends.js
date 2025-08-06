@@ -493,7 +493,8 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:myc 1000')
         .inputFluids('gtceu:kfl_4 1000')
         .inputFluids('gtceu:oct_4 1000')
-        .outputFluids('gtceu:gene_plasmids 4000')
+        .inputFluids('gtceu:cas_9 1000')
+        .outputFluids('gtceu:gene_plasmids 5000')
         .duration(200)
         .EUt(GTValues.VA[GTValues.ZPM]);
 
