@@ -2083,6 +2083,14 @@ ServerEvents.recipes(event => {
     .circuit(1)
     .EUt(GTValues.VA[GTValues.ZPM]);
 
+  event.recipes.gtceu.heavy_assembler(`frontiers:heat_vent`)
+    .itemInputs(['cosmiccore:multi_purpose_interstellar_grade_casing', 'gtceu:synthetic_pthanterum_rotor', 'gtceu:duranium_normal_fluid_pipe', 'gtceu:duranium_normal_fluid_pipe'])
+    .itemOutputs('cosmiccore:heat_fan')
+    .inputFluids('gtceu:high_grade_solder 1152')
+    .duration(890)
+    .circuit(2)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
 
   event.shapeless('gtceu:magnetic_iron_bolt', [
     'gtceu:iron_bolt', 'minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone'
