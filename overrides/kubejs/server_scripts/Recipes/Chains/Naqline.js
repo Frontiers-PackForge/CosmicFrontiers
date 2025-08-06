@@ -17,9 +17,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:electric_blast_furnace/enriched_naquadah_sulfate_separation' })
     event.remove({ id: 'gtceu:orbital_forge/enriched_naquadah_sulfate_separation' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_enriched_naquadah_gas' })
-    event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadria' })
-    event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadria_gas' })
-    event.remove({ id: 'gtceu:electric_blast_furnace/naquadria_sulfate_separation' })
 
     event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_naquadah_ingot' })
     event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_enriched_naquadah_ingot' })
