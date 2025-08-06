@@ -206,7 +206,7 @@ ServerEvents.recipes(event => {
     .addMaterialInfo(true)
   //NPR
   event.recipes.gtceu.assembly_line('naquahine_reactor_controller')
-    .itemInputs(['4x cosmiccore:fusion_grade_magnet', '4x gtceu:quantum_processor_mainframe', 'gtceu:iv_lapotronic_battery', '16x gtceu:iv_field_generator', '64x gtceu:uhpic_chip', '32x gtceu:indium_tin_barium_titanium_cuprate_single_wire', '16x gtceu:iv_field_generator'])
+    .itemInputs(['4x cosmiccore:fusion_grade_magnet', '4x #gtceu:circuits/zpm', 'gtceu:iv_lapotronic_battery', '16x gtceu:iv_field_generator', '64x gtceu:uhpic_chip', '32x gtceu:indium_tin_barium_titanium_cuprate_single_wire', '16x gtceu:iv_field_generator'])
     .itemOutputs('cosmiccore:naquahine_pressure_reactor')
     .inputFluids(
       Fluid.of('gtceu:high_grade_solder', 2880),
@@ -438,7 +438,7 @@ ServerEvents.recipes(event => {
     .duration(300)
     .EUt(GTValues.VA[GTValues.LuV])
   event.recipes.gtceu.assembly_line('frontiers:mechanical_altar')
-    .itemInputs(['bloodmagic:altar', '4x gtceu:europium_frame', '4x cosmiccore:luv_radio_module', '4x gtceu:quantum_processor_mainframe', '16x bloodmagic:etherealslate', '16x bloodmagic:demonslate', '16x bloodmagic:infusedslate', '16x bloodmagic:reinforcedslate', '16x bloodmagic:blankslate'])
+    .itemInputs(['bloodmagic:altar', '4x gtceu:europium_frame', '4x cosmiccore:luv_radio_module', '4x #gtceu:circuits/zpm', '16x bloodmagic:etherealslate', '16x bloodmagic:demonslate', '16x bloodmagic:infusedslate', '16x bloodmagic:reinforcedslate', '16x bloodmagic:blankslate'])
     .itemOutputs('cosmiccore:hemophagic_transfuser')
     .inputFluids(
       'gtceu:4_4_oxydianiline_pyromellitimide 36884',
@@ -450,7 +450,7 @@ ServerEvents.recipes(event => {
     .duration(300)
     .EUt(GTValues.VA[GTValues.LuV])
   event.recipes.gtceu.assembly_line('frontiers:suffering_chamber')
-    .itemInputs(['gtceu:luv_macerator', '16x bloodmagic:etherealslate', '4x gtceu:quantum_processor_mainframe', '4x gtceu:luv_field_generator', '4x cosmiccore:luv_radio_module'])
+    .itemInputs(['gtceu:luv_macerator', '16x bloodmagic:etherealslate', '4x #gtceu:circuits/zpm', '4x gtceu:luv_field_generator', '4x cosmiccore:luv_radio_module'])
     .itemOutputs('cosmiccore:suffering_chamber')
     .inputFluids(
       'gtceu:4_4_oxydianiline_pyromellitimide 36884',
@@ -494,7 +494,7 @@ ServerEvents.recipes(event => {
 
   //Polymerizer
   event.recipes.gtceu.assembly_line('frontiers:polymerizer_assline')
-    .itemInputs(['2x cosmiccore:high_tolerance_rhenium_casing', '4x gtceu:quantum_processor_mainframe', '16x gtceu:double_rhenium_plate', 'gtceu:zpm_fluid_regulator', 'gtceu:zpm_robot_arm'])
+    .itemInputs(['2x cosmiccore:high_tolerance_rhenium_casing', '4x #gtceu:circuits/zpm', '16x gtceu:double_rhenium_plate', 'gtceu:zpm_fluid_regulator', 'gtceu:zpm_robot_arm'])
     .itemOutputs('cosmiccore:polymerizer')
     .inputFluids(
       'gtceu:4_4_oxydianiline_pyromellitimide 1296'
@@ -566,7 +566,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.ZPM])
 
   event.recipes.gtceu.assembly_line('frontiers:prisma_foundry')
-    .itemInputs(['4x gtceu:large_maceration_tower', '4x gtceu:large_chemical_bath', '4x gtceu:leaching_plant', '4x gtceu:large_centrifuge', '4x gtceu:large_distillery', '8x gtceu:crystal_processor_mainframe', '64x gtceu:uranium_rhodium_dinaquadide_quadruple_wire', '64x gtceu:uranium_rhodium_dinaquadide_quadruple_wire', '16x gtceu:tritanium_modular_shelling', '16x gtceu:heavy_tritanium_beam', '4x gtceu:ultradense_tritanium_plate', '64x gtceu:tungsten_grinding_head', '64x gtceu:tungsten_grinding_head', '64x gtceu:tungsten_grinding_head', '64x gtceu:tungsten_grinding_head'])
+    .itemInputs(['4x gtceu:large_maceration_tower', '4x gtceu:large_chemical_bath', '4x gtceu:leaching_plant', '4x gtceu:large_centrifuge', '4x gtceu:large_distillery', '8x #gtceu:circuits/uv', '64x gtceu:uranium_rhodium_dinaquadide_quadruple_wire', '64x gtceu:uranium_rhodium_dinaquadide_quadruple_wire', '16x gtceu:tritanium_modular_shelling', '16x gtceu:heavy_tritanium_beam', '4x gtceu:ultradense_tritanium_plate', '64x gtceu:tungsten_grinding_head', '64x gtceu:tungsten_grinding_head', '64x gtceu:tungsten_grinding_head', '64x gtceu:tungsten_grinding_head'])
     .itemOutputs('cosmiccore:prismatic_ore_foundry')
     .inputFluids(
       'gtceu:trinanylon_6_6 1296',
@@ -696,7 +696,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.ZPM])
 
   event.recipes.gtceu.assembly_line('frontiers:void_miner')
-    .itemInputs(['gtceu:luv_large_miner', 'gtceu:luv_lapotronic_battery', '4x gtceu:quantum_processor_mainframe', '4x gtceu:ultradense_rhenium_plate', '4x cosmiccore:zpm_radio_module', '4x gtceu:neutronium_drill_head', '16x cosmiccore:fine_starmetal_wire'])
+    .itemInputs(['gtceu:luv_large_miner', 'gtceu:luv_lapotronic_battery', '4x #gtceu:circuits/zpm', '4x gtceu:ultradense_rhenium_plate', '4x cosmiccore:zpm_radio_module', '4x gtceu:neutronium_drill_head', '16x cosmiccore:fine_starmetal_wire'])
     .itemOutputs('cosmiccore:void_miner')
     .inputFluids(
       'gtceu:nylon_6_6 1152',
@@ -711,7 +711,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.ZPM])
 
   event.recipes.gtceu.assembly_line('frontiers:biovat')
-    .itemInputs(['gtceu:luv_large_miner', 'gtceu:luv_lapotronic_battery', '4x gtceu:quantum_processor_mainframe', '4x gtceu:ultradense_rhenium_plate', '4x cosmiccore:zpm_radio_module', '4x gtceu:neutronium_drill_head', '16x cosmiccore:fine_starmetal_wire'])
+    .itemInputs(['gtceu:luv_large_miner', 'gtceu:luv_lapotronic_battery', '4x #gtceu:circuits/zpm', '4x gtceu:ultradense_rhenium_plate', '4x cosmiccore:zpm_radio_module', '4x gtceu:neutronium_drill_head', '16x cosmiccore:fine_starmetal_wire'])
     .itemOutputs('cosmiccore:biovat')
     .inputFluids(
       'gtceu:nylon_6_6 1152',
@@ -725,7 +725,7 @@ ServerEvents.recipes(event => {
     .duration(2300)
     .EUt(GTValues.VA[GTValues.ZPM])
   event.recipes.gtceu.assembly_line('frontiers:dimensional_interface')
-    .itemInputs(['gtceu:active_transformer', 'gtceu:zpm_lapotronic_battery', '4x gtceu:quantum_processor_mainframe', '4x cosmiccore:zpm_radio_module', '4x gtceu:neutronium_modular_shelling', '4x cosmiccore:neutronite_modular_shelling', '4x gtceu:rhenium_modular_shelling', '4x gtceu:stainless_steel_modular_shelling'])
+    .itemInputs(['gtceu:active_transformer', 'gtceu:zpm_lapotronic_battery', '4x #gtceu:circuits/zpm', '4x cosmiccore:zpm_radio_module', '4x gtceu:neutronium_modular_shelling', '4x cosmiccore:neutronite_modular_shelling', '4x gtceu:rhenium_modular_shelling', '4x gtceu:stainless_steel_modular_shelling'])
     .itemOutputs('cosmiccore:dimensional_energy_interface')
     .inputFluids(
       'gtceu:nylon_6_6 1152',
@@ -739,7 +739,7 @@ ServerEvents.recipes(event => {
     .duration(2300)
     .EUt(GTValues.VA[GTValues.ZPM])
   event.recipes.gtceu.assembly_line('frontiers:atomic')
-    .itemInputs(['gtceu:luminescent_utherium_modular_shelling', 'gtceu:heavy_tennessine_beam', 'gtceu:heavy_tennessine_beam', 'gtceu:heavy_tennessine_beam', 'gtceu:heavy_tennessine_beam'])
+    .itemInputs(['gtceu:luminescent_utherium_modular_shelling', 'gtceu:heavy_tennessine_beam', 'cosmiccore:heavy_trinavine_beam', 'gtceu:heavy_neutronium_beam'])
     .itemOutputs('gtceu:atomic_casing')
     .inputFluids(
       'gtceu:nylon_6_6 1152',
@@ -773,7 +773,7 @@ ServerEvents.recipes(event => {
 
   //Chest - Working
   event.recipes.gtceu.assembly_line('frontiers:sanguine_chest')
-    .itemInputs(['4x gtceu:uhpic_chip', '8x gtceu:uranium_rhodium_dinaquadide_octal_wire', '16x cosmiccore:double_trinavine_plate', '4x gtceu:gravitation_engine_unit', '4x #gtceu:circuits/zpm', 'gtceu:ultradense_neutronium_plate', 'gtceu:energy_module', '4x cosmiccore:zpm_radio_module', '4x gtceu:zpm_field_generator', '4x gtceu:neutronium_screw'])
+    .itemInputs(['4x gtceu:uhpic_chip', '8x gtceu:uranium_rhodium_dinaquadide_octal_wire', '16x cosmiccore:double_trinavine_plate', '4x gtceu:gravitation_engine_unit', '4x #gtceu:circuits/uhv', 'gtceu:ultradense_neutronium_plate', 'gtceu:energy_module', '4x cosmiccore:zpm_radio_module', '4x gtceu:zpm_field_generator', '4x gtceu:neutronium_screw'])
     .itemOutputs('cosmiccore:sanguine_warptech_chestplate')
     .inputFluids(
       'gtceu:grading_fluid_5 16000',
@@ -791,9 +791,9 @@ ServerEvents.recipes(event => {
 
 
 
-//Leggins - Working
+  //Leggins - Working
   event.recipes.gtceu.assembly_line('frontiers:sanguine_legs')
-    .itemInputs(['4x gtceu:uhpic_chip', '8x gtceu:uranium_rhodium_dinaquadide_octal_wire', '16x cosmiccore:double_trinavine_plate', '4x gtceu:zpm_electric_piston', '4x #gtceu:circuits/zpm', 'gtceu:ultradense_neutronium_plate', 'gtceu:energy_module', '4x cosmiccore:zpm_radio_module', '4x gtceu:zpm_field_generator', '4x gtceu:neutronium_screw'])
+    .itemInputs(['4x gtceu:uhpic_chip', '8x gtceu:uranium_rhodium_dinaquadide_octal_wire', '16x cosmiccore:double_trinavine_plate', '4x gtceu:zpm_electric_piston', '4x #gtceu:circuits/uhv', 'gtceu:ultradense_neutronium_plate', 'gtceu:energy_module', '4x cosmiccore:zpm_radio_module', '4x gtceu:zpm_field_generator', '4x gtceu:neutronium_screw'])
     .itemOutputs('cosmiccore:sanguine_warptech_leggings')
     .inputFluids(
       'gtceu:grading_fluid_5 16000',
@@ -813,7 +813,7 @@ ServerEvents.recipes(event => {
 
   //Sanguine Boots
   event.recipes.gtceu.assembly_line('frontiers:sanguine_boots')
-    .itemInputs(['4x gtceu:uhpic_chip', '8x gtceu:uranium_rhodium_dinaquadide_octal_wire', '16x cosmiccore:double_trinavine_plate', '4x gtceu:zpm_conveyor_module', '4x #gtceu:circuits/zpm', 'gtceu:ultradense_neutronium_plate', 'gtceu:energy_module', '4x cosmiccore:zpm_radio_module', '4x gtceu:zpm_field_generator', '4x gtceu:neutronium_screw'])
+    .itemInputs(['4x gtceu:uhpic_chip', '8x gtceu:uranium_rhodium_dinaquadide_octal_wire', '16x cosmiccore:double_trinavine_plate', '4x gtceu:zpm_conveyor_module', '4x #gtceu:circuits/uhv', 'gtceu:ultradense_neutronium_plate', 'gtceu:energy_module', '4x cosmiccore:zpm_radio_module', '4x gtceu:zpm_field_generator', '4x gtceu:neutronium_screw'])
     .itemOutputs('cosmiccore:sanguine_warptech_boots')
     .inputFluids(
       'gtceu:grading_fluid_5 16000',
@@ -832,7 +832,7 @@ ServerEvents.recipes(event => {
 
 
   event.recipes.gtceu.assembly_line('frontiers:sanguine_helm')
-    .itemInputs(['4x gtceu:uhpic_chip', '8x gtceu:uranium_rhodium_dinaquadide_octal_wire', '16x cosmiccore:double_trinavine_plate', '4x gtceu:zpm_sensor', '4x #gtceu:circuits/zpm', 'gtceu:ultradense_neutronium_plate', 'gtceu:energy_module', '4x cosmiccore:zpm_radio_module', '4x gtceu:zpm_field_generator', '4x gtceu:neutronium_screw'])
+    .itemInputs(['4x gtceu:uhpic_chip', '8x gtceu:uranium_rhodium_dinaquadide_octal_wire', '16x cosmiccore:double_trinavine_plate', '4x gtceu:zpm_sensor', '4x #gtceu:circuits/uhv', 'gtceu:ultradense_neutronium_plate', 'gtceu:energy_module', '4x cosmiccore:zpm_radio_module', '4x gtceu:zpm_field_generator', '4x gtceu:neutronium_screw'])
     .itemOutputs('cosmiccore:sanguine_warptech_helmet')
     .inputFluids(
       'gtceu:grading_fluid_5 16000',
@@ -849,7 +849,7 @@ ServerEvents.recipes(event => {
 
 
 
-  event.recipes.gtceu.assembly_line('frontiers:sanguine_helm')
+  event.recipes.gtceu.assembly_line('frontiers:siphon')
     .itemInputs(['8x gtceu:zpm_gas_collector', '4x #gtceu:circuits/uhv', '4x gtceu:zpm_electric_pump', '8x gtceu:ultradense_neutronium_plate', '4x gtceu:heavy_neutronium_beam', '64x cosmiccore:fine_trinavine_wire', '64x cosmiccore:fine_trinavine_wire', '5x cosmiccore:fine_trinavine_wire'])
     .itemOutputs('cosmiccore:atmo_pump')
     .inputFluids(
@@ -858,11 +858,28 @@ ServerEvents.recipes(event => {
       'gtceu:high_grade_solder 1152',
       'gtceu:tin_alloy 1152'
     )
+    .duration(240)
     .stationResearch(b => b
       .researchStack('gtceu:zpm_gas_collector')
-      .CWUt(32)
+      .CWUt(32,8000)
+      .dataStack('gtceu:data_module')
       .EUt(GTValues.VA[GTValues.ZPM]))
+    .EUt(GTValues.VA[GTValues.ZPM])
+
+  event.recipes.gtceu.assembly_line('frontiers:vorax')
+    .itemInputs(['cosmiccore:naquahine_pressure_reactor', '4x gtceu:zpm_hermetic_casing', '4x #gtceu:circuits/uhv', '16x gtceu:exquisite_echo_shard_gem', '8x gtceu:ultradense_neutronium_plate', '8x gtceu:neutronium_modular_shelling', '8x gtceu:heavy_neutronium_beam'])
+    .itemOutputs('cosmiccore:vorax_reactpr')
+    .inputFluids(
+      'gtceu:nylon_6_6 1152',
+      'gtceu:high_grade_solder 2304',
+      'gtceu:tin_alloy 1152'
+    )
     .duration(240)
+    .stationResearch(b => b
+      .researchStack('cosmiccore:naquahine_pressure_reactor')
+      .CWUt(64,9600000)
+      .dataStack('gtceu:data_orb')
+      .EUt(GTValues.VA[GTValues.ZPM]))
     .EUt(GTValues.VA[GTValues.ZPM])
 
 
