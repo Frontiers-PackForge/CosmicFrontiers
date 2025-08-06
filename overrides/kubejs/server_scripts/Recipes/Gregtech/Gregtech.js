@@ -85,6 +85,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_rhenium_dust_to_block' })
   event.remove({ id: 'terralith:piston_alt' })
   event.remove({ id: 'gtceu:macerator/macerate_treated_wood_planks' })
+  event.remove({ id: 'gtceu:alloy_blast_smelter/starmetal_gas' })
 
   event.replaceOutput({ id: 'gtceu:shaped/extreme_combustion_engine' }, 'gtceu:extreme_combustion_engine', 'gtceu:extreme_combustion_engine_cc')
   event.replaceOutput({ id: 'gtceu:shaped/large_combustion_engine' }, 'gtceu:large_combustion_engine', 'gtceu:large_combustion_engine_cc')
@@ -420,9 +421,9 @@ ServerEvents.recipes(event => {
     .duration(1700)
     .EUt(GTValues.VA[GTValues.LuV]);
   //Starmetal Casings
-  event.recipes.gtceu.assembler('gtceu:starmetal_casing_assem')
-    .itemInputs(['cosmiccore:star_metal_frame', '6x cosmiccore:star_metal_plate'])
-    .itemOutputs('gtceu:reflective_starmetal_casing')
+  event.recipes.gtceu.assembler('starmetal_casing_assem')
+    .itemInputs('cosmiccore:starmetal_modular_shelling', '6x cosmiccore:heavy_starmetal_beam')
+    .itemOutputs('cosmiccore:reflective_starmetal_casing')
     .circuit(6)
     .duration(50)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -431,8 +432,8 @@ ServerEvents.recipes(event => {
     'AFA',
     'AWA'
   ], {
-    A: 'cosmiccore:star_metal_plate',
-    F: 'cosmiccore:star_metal_frame',
+    A: 'cosmiccore:heavy_starmetal_beam',
+    F: 'cosmiccore:starmetal_modular_shelling',
     W: '#forge:tools/wrenches',
     H: '#forge:tools/hammers'
   })
@@ -2072,6 +2073,14 @@ ServerEvents.recipes(event => {
     .duration(1340)
     .circuit(2)
     .blastFurnaceTemp(9500)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
+  event.recipes.gtceu.heavy_assembler(`frontiers:rad_filter_casing`)
+    .itemInputs(['16x gtceu:blacklight', '4x gtceu:heavy_naquadah_alloy_beam', '2x cosmiccore:naquadric_superalloy_modular_shelling'])
+    .itemOutputs('cosmiccore:radioactive_filter_casing')
+    .inputFluids('gtceu:high_grade_solder 1152')
+    .duration(890)
+    .circuit(1)
     .EUt(GTValues.VA[GTValues.ZPM]);
 
 
