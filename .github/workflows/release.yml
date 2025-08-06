@@ -56,7 +56,7 @@ jobs:
   publish-curseforge:
     name: Publish to Curseforge
     needs: build
-    if: ${{ !github.event.release.prerelease && (github.repository_owner != 'Frontiers-PackForge' || startsWith(github.event.release.name, 'simulate'))  }}
+    if: ${{ !github.event.release.prerelease && (github.repository_owner == 'Frontiers-PackForge' || !startsWith(github.event.release.name, 'simulate'))  }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
