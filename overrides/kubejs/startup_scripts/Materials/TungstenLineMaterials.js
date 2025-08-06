@@ -41,6 +41,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0x000F75).iconSet(GTMaterialIconSet.SHINY)
 
+
+
+    event.create('finely_ground_wolframite')
+        .dust()
+        .color(0x231b2e).iconSet(GTMaterialIconSet.DULL)
+    event.create('finely_ground_scheelite')
+        .dust()
+        .color(0xd7e8b3).secondaryColor(0x143cae).iconSet(GTMaterialIconSet.DULL)
+    event.create('finely_ground_tungstate')
+        .dust()
+        .color(0xe0ffc4).secondaryColor(0xab4400).iconSet(GTMaterialIconSet.SHINY)
+
+
+
     event.create('triethylaluminium')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .color(0x76f593).iconSet(GTMaterialIconSet.DULL)
