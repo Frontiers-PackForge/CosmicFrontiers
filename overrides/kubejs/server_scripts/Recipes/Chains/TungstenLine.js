@@ -166,4 +166,93 @@ ServerEvents.recipes(event => {
         .duration(60)
         .EUt(GTValues.VA[GTValues.EV]);
 
+
+    //Optimized Recipes #1
+
+
+    event.recipes.gtceu.macerator('fine_wolframite')
+        .itemInputs('gtceu:wolframite_dust')
+        .itemOutputs('gtceu:finely_ground_wolframite_dust')
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.macerator('fine_scheelite')
+        .itemInputs('gtceu:scheelite_dust')
+        .itemOutputs('gtceu:finely_ground_scheelite_dust')
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV]);
+    event.recipes.gtceu.macerator('fine_tungstate')
+        .itemInputs('gtceu:tungstate_dust')
+        .itemOutputs('gtceu:finely_ground_tungstate_dust')
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.MV]);
+
+
+    //Wolframite
+    // 12 Wolframite (s) + 12 Sodium Hydroxide (s) + 2 Water (l) -> 2 Impure Sodium Tungstate Solution (l) + 5 Iron Hydroxide (s) + 5 Manganese Hydroxide (s)
+    event.recipes.gtceu.industrial_chemvat('wolframite_to_impure_naw')
+        .itemInputs('12x gtceu:finely_ground_wolframite_dust')
+        .inputFluids('gtceu:hydrochloric_acid 2000')
+        .itemOutputs('7x gtceu:tungstic_acid_dust')
+        .itemOutputs('5x gtceu:salt_dust')
+        .stationResearch(b => b
+            .researchStack('gtceu:ultradense_tungsten_plate')
+            .CWUt(16)
+            .EUt(GTValues.VA[GTValues.ZPM]))
+        .duration(120)
+        .EUt(GTValues.VH[GTValues.IV], 4);
+    //Scheelite
+    // 6 Scheelite (s) + 6 Sodium Carbonate (s) + Water (l) -> Impure Sodium Tungstate Solution (l) + 5 Calcite (s)
+    event.recipes.gtceu.industrial_chemvat('scheelite_to_impure_naw')
+        .itemInputs('6x gtceu:finely_ground_scheelite_dust')
+        .inputFluids('gtceu:hydrochloric_acid 2000')
+        .itemOutputs('7x gtceu:tungstic_acid_dust')
+        .itemOutputs('5x gtceu:salt_dust')
+        .stationResearch(b => b
+            .researchStack('gtceu:ultradense_tungsten_plate')
+            .CWUt(16)
+            .EUt(GTValues.VA[GTValues.ZPM]))
+        .duration(120)
+        .EUt(GTValues.VH[GTValues.IV], 4);
+    //Tunstate
+    // 7 Tungstate (s) + 6 Sodium Hydroxide (s) + Water (l) -> Impure Sodium Tungstate Solution (l) + 6 Lithium Hydroxide (s)
+    event.recipes.gtceu.industrial_chemvat('tunstate_to_impure_naw')
+        .itemInputs('7x gtceu:finely_ground_tungstate_dust')
+        .inputFluids('gtceu:hydrochloric_acid 2000')
+        .itemOutputs('7x gtceu:tungstic_acid_dust')
+        .itemOutputs('5x gtceu:salt_dust')
+        .stationResearch(b => b
+            .researchStack('gtceu:ultradense_tungsten_plate')
+            .CWUt(16)
+            .EUt(GTValues.VA[GTValues.ZPM]))
+        .duration(120)
+        .EUt(GTValues.VH[GTValues.IV], 4);
+
+
+    event.recipes.gtceu.industrial_chemvat('tungstic_dust_ebf_research')
+        .itemInputs('7x gtceu:tungstic_acid_dust')
+        .inputFluids('gtceu:hydrogen 6000')
+        .itemOutputs('gtceu:tungsten_dust')
+        .blastFurnaceTemp(3700)
+        .duration(60)
+        .stationResearch(b => b
+            .researchStack('gtceu:ultradense_tungsten_plate')
+            .CWUt(16)
+            .EUt(GTValues.VA[GTValues.ZPM]))
+        .EUt(GTValues.VH[GTValues.IV], 4);
+
+    // event.recipes.gtceu.industrial_chemvat('frontiers:heme_ring_but_its_actually_chlorophyte_and_im_just_lazy')
+    //     .itemInputs('gtceu:prophine_dust')
+    //     .inputFluids('gtceu:acetic_acid 1000', 'gtceu:formaldehyde 4000', 'gtceu:methyl_formate 2000', 'gtceu:chlorine 4000', 'gtceu:vinyl_chloride 1000', 'gtceu:chloromethane 4000')
+    //     .outputFluids('gtceu:hydrochloric_acid 1000', 'minecraft:water 1000')
+    //     .itemOutputs('4x cosmiccore:heme_ring')
+    //     .circuit(31)
+    //     .duration(440)
+    //     .stationResearch(b => b
+    //         .researchStack('cosmiccore:sculk_fibroblast')
+    //         .CWUt(16)
+    //         .EUt(GTValues.VA[GTValues.ZPM]))
+    //     .cleanroom(CleanroomType.STERILE_CLEANROOM)
+    //     .EUt(GTValues.VA[GTValues.LuV]);
+
+
 })
