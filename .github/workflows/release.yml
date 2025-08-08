@@ -1,4 +1,4 @@
-name: release
+name: Curseforge Release
 
 on:
   release:
