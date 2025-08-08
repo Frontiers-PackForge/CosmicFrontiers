@@ -70,7 +70,7 @@ jobs:
         uses: Kir-Antipov/mc-publish@v3.3.0
         with:
           curseforge-id: ${{ vars.CURSE_ID }}
-          curseforge-token: ${{ secrets.CURSEFORGE_API_KEY }}
+          curseforge-token: ${{ secrets.CURSE_TOKEN }}
           files: ./Cosmic.Frontier*.zip
           name: "Cosmic Frontier ${{ github.event.release.tag_name }}"
           version: ${{ github.event.release.tag_name }}
