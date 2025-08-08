@@ -1,0 +1,80 @@
+name: release
+
+on:
+  release:
+    types: [ published ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run release script
+        env:
+          RELEASE_VERSION: ${{ github.event.release.tag_name }}
+          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+        run: |
+          python scripts/release.py
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifacts-${{ github.event.release.tag_name }}
+          path: Cosmic.Frontier*.zip
+          if-no-files-found: error
+          retention-days: 3
+
+  upload-release-artifacts:
+    name: Upload Artifacts
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifacts-${{ github.event.release.tag_name }}
+      - name: Upload artifacts to release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event.release.tag_name }}
+          files: ./*.zip
+          fail_on_unmatched_files: true
+
+  publish-curseforge:
+    name: Publish to Curseforge
+    needs: build
+    if: ${{ !github.event.release.prerelease && (github.repository_owner == 'Frontiers-PackForge' || !startsWith(github.event.release.name, 'simulate'))  }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifacts-${{ github.event.release.tag_name }}
+
+      - name: Upload to Curseforge
+        uses: Kir-Antipov/mc-publish@v3.3.0
+        with:
+          curseforge-id: ${{ vars.CURSE_ID }}
+          curseforge-token: ${{ secrets.CURSEFORGE_API_KEY }}
+          files: ./Cosmic.Frontier*.zip
+          name: "Cosmic Frontier ${{ github.event.release.tag_name }}"
+          version: ${{ github.event.release.tag_name }}
+          changelog: ${{ github.event.release.body }}
+          version-type: release
+          loaders: forge
+          game-versions: 1.20.1
