@@ -72,14 +72,14 @@
 		#Whether raids are disabled.
 		disable_raids = false
 		#Makes angered neutral mobs stop being angry when the targeted player dies nearby.
-		forgive_dead_players = true
+		forgive_dead_players = false
 		#The maximum number of pushable entities a mob or player can push, before taking 6 (♥♥♥) entity cramming damage per half-second. Setting to 0 or lower disables the rule. Damage affects Survival-mode or Adventure-mode players, and all mobs but bats. Pushable entities include non-Spectator-mode players, any mob except bats, as well as boats and minecarts.
 		#Range: > 0
 		max_entity_cramming = 24
 		#Whether creepers, zombies, endermen, ghasts, withers, ender dragons, rabbits, sheep, villagers, silverfish, snow golems, and end crystals should be able to change blocks, and whether mobs can pick up items. When mobGriefing is disabled, piglins do not pick up gold ingots, but a player can still barter with them by using the item on the mob. Similarly, villagers do not pick up food items but can still breed until they run out of any food already in their inventory. This also affects the capability of zombie-like creatures like zombified piglins and drowned to pathfind to turtle eggs.
 		mob_griefing = true
 		#Makes angered neutral mobs attack any nearby player, not just the player that angered them. Works best if forgiveDeadPlayers is disabled.
-		universal_anger = false
+		universal_anger = true
 
 	[gamerules.updates]
 		#Whether the daylight cycle and moon phases progress.

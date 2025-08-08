@@ -176,14 +176,14 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.UV]);
 
-    event.recipes.gtceu.orbital_forge('frontiers:terrasteel_skip')
-        .itemInputs('4x gtceu:blue_alloy_dust','2x botania:mana_diamond','2x botania:mana_pearl')
-        .inputFluids('gtceu:potent_mana 100')
-        .itemOutputs('6x botania:terrasteel_ingot')
-        .blastFurnaceTemp(8700)
-        .duration(2000)
-        .gameStage('Mana Optimization')
-        .dimension('frontiers:sun_orbit')
-        .EUt(GTValues.VA[GTValues.ZPM]);
+    // event.recipes.gtceu.orbital_forge('frontiers:terrasteel_skip')
+    //     .itemInputs('4x gtceu:blue_alloy_dust','2x botania:mana_diamond','2x botania:mana_pearl')
+    //     .inputFluids('gtceu:potent_mana 100')
+    //     .itemOutputs('6x botania:terrasteel_ingot')
+    //     .blastFurnaceTemp(8700)
+    //     .duration(2000)
+    //     .gameStage('Mana Optimization')
+    //     .dimension('frontiers:sun_orbit')
+    //     .EUt(GTValues.VA[GTValues.ZPM]);
 
 })

@@ -208,6 +208,24 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // Tennessine
     GTMaterials.Tennessine.setProperty(PropertyKey.INGOT, new $IngotProperty());
     addFluid(GTMaterials.Tennessine, $FluidStorageKeys.LIQUID);
+    GTMaterials.Tennessine.addFlags(
+        $MaterialFlags.FORCE_GENERATE_BLOCK,
+        $MaterialFlags.GENERATE_BOLT_SCREW,
+        $MaterialFlags.GENERATE_FINE_WIRE,
+        $MaterialFlags.GENERATE_FOIL,
+        $MaterialFlags.GENERATE_FRAME,
+        $MaterialFlags.GENERATE_GEAR,
+        $MaterialFlags.GENERATE_LONG_ROD,
+        $MaterialFlags.GENERATE_PLATE,
+        $MaterialFlags.GENERATE_RING,
+        $MaterialFlags.GENERATE_ROD,
+        $MaterialFlags.GENERATE_ROTOR,
+        $MaterialFlags.GENERATE_ROUND,
+        $MaterialFlags.GENERATE_SMALL_GEAR,
+        $MaterialFlags.GENERATE_SPRING,
+        $MaterialFlags.GENERATE_SPRING_SMALL,
+        $MaterialFlags.NO_SMELTING
+    );
     // Oganesson
     GTMaterials.Oganesson.setProperty(PropertyKey.INGOT, new $IngotProperty());
     addFluid(GTMaterials.Oganesson, $FluidStorageKeys.LIQUID);

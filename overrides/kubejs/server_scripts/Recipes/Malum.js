@@ -221,6 +221,27 @@ ServerEvents.recipes(event => {
     'occultism:rune_ritual'
   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.raw_soul_stone_ritual")
 
+
+
+ event.recipes.gtceu.spirit_crucible('frontiers:forge_3')
+    .itemInputs('botania:life_essence')
+    .inputFluids('gtceu:pyroflux 250')
+    .itemOutputs(['8x malum:aerial_spirit', '8x malum:sacred_spirit', '8x malum:aqueous_spirit', '8x malum:earthen_spirit','8x malum:infernal_spirit'])
+    .duration(350)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
+
+ event.recipes.gtceu.spirit_crucible('frontiers:forge_4')
+    .itemInputs('botania:life_essence')
+    .inputFluids('gtceu:starlight 250')
+    .itemOutputs(['8x malum:eldritch_spirit', '8x malum:wicked_spirit', '8x malum:arcane_spirit', 'malum:umbral_spirit'])
+    .duration(400)
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
+
+
+    
+
 })
 
 // Mass Removal

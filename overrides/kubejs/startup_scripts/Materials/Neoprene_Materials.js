@@ -38,6 +38,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('neoprene')
         .liquid()
+        .ingot()
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        )
         .formula('[C4H5Cl]n')
         .color(0x5e0020)
 

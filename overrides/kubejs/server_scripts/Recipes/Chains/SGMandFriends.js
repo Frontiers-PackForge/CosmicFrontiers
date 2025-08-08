@@ -377,16 +377,6 @@ ServerEvents.recipes(event => {
 
 
 
-    event.recipes.gtceu.flora_nurturer('frontiers:sculk_growth')
-        .itemInputs('cosmiccore:fermium_rad_charges')
-        .inputFluids('gtceu:enriched_bacterial_sludge 64000')
-        .outputFluids('gtceu:mutagen 64000')
-        .duration(800)
-        //.cleanroom(CleanroomType.STERILE_CLEANROOM)
-        .EUt(GTValues.VA[GTValues.ZPM]);
-
-
-
     //Culture
     event.recipes.gtceu.biovat('frontiers:breve_dish')
         .itemInputs('16x gtceu:meat_dust', '8x cosmiccore:prepared_petri_dish')
@@ -493,7 +483,8 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:myc 1000')
         .inputFluids('gtceu:kfl_4 1000')
         .inputFluids('gtceu:oct_4 1000')
-        .outputFluids('gtceu:gene_plasmids 4000')
+        .inputFluids('gtceu:cas_9 1000')
+        .outputFluids('gtceu:gene_plasmids 5000')
         .duration(200)
         .EUt(GTValues.VA[GTValues.ZPM]);
 

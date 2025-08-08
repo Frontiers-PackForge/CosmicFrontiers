@@ -55,11 +55,11 @@ ServerEvents.recipes(event => {
         .chancedInput('gtceu:neutron_reflector', 850, 0)
         .chancedInput('gtceu:neutron_reflector', 700, 0)
         .chancedInput('gtceu:neutron_reflector', 700, 0)
-        .inputFluids('gtceu:uranium 432') //3
-        .inputFluids('gtceu:cobalt 576') //4 -> Two Ingots of Duranium and 1 of Tritanium
+        .inputFluids('gtceu:uranium 576') //4
+        .inputFluids('gtceu:cobalt 576') //4 
         .inputFluids('gtceu:radon 144')
-        .outputFluids('gtceu:americium 576') //2
-        .outputFluids('gtceu:tennessine 144') //1
+        .outputFluids('gtceu:americium 576') //4
+        .outputFluids('gtceu:tennessine 576') //4
         .fusionStartEU(320000000)
         .duration(270)
         .EUt(GTValues.VA[GTValues.ZPM]);
