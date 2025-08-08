@@ -343,7 +343,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM]);
 
     event.recipes.gtceu.circuit_assembler('wetware_bad_recipe')
-        .itemInputs(['gtceu:crystal_soc', 'cosmiccore:neuro_processing_assembly', '4x gtceu:stem_cells', '16x gtceu:advanced_smd_capacitor', '16x gtceu:advanced_smd_transistor', '4x gtceu:europium_plasmites'])
+        .itemInputs(['gtceu:crystal_soc', 'cosmiccore:neuro_processing_assembly', '4x gtceu:stem_cells', '16x gtceu:advanced_smd_capacitor', '16x gtceu:advanced_smd_transistor', '4x gtceu:copper_plasmites'])
         .inputFluids('gtceu:high_grade_solder 1152')
         .itemOutputs('2x gtceu:wetware_processor')
         .duration(250)
@@ -374,7 +374,7 @@ ServerEvents.recipes(event => {
         .dimension('ad_astra:earth_orbit')
         .EUt(GTValues.VA[GTValues.ZPM])
     event.recipes.gtceu.assembly_line('wetware_mainframe')
-        .itemInputs(['2x gtceu:neutronium_frame', '6x gtceu:wetware_processor_computer', '64x cosmiccore:aram_chip', '64x cosmiccore:aram_chip', '8x gtceu:uhpic_chip', '8x gtceu:uranium_rhodium_dinaquadide_wire_spool', '64x gtceu:advanced_smd_capacitor', '64x gtceu:advanced_smd_transistor', '32x gtceu:advanced_smd_inductor', '32x gtceu:advanced_smd_resistor', 'gtceu:europium_plasmites'])
+        .itemInputs(['2x gtceu:neutronium_frame', '6x gtceu:wetware_processor_computer', '64x cosmiccore:aram_chip', '64x cosmiccore:aram_chip', '8x gtceu:uhpic_chip', '4x gtceu:uranium_rhodium_dinaquadide_wire_spool', '64x gtceu:advanced_smd_capacitor', '64x gtceu:advanced_smd_transistor', '32x gtceu:advanced_smd_inductor', '32x gtceu:advanced_smd_resistor', 'gtceu:europium_plasmites'])
         .itemOutputs('gtceu:wetware_processor_mainframe')
         .inputFluids(
             Fluid.of('gtceu:high_grade_solder', 2304),

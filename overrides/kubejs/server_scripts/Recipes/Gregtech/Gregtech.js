@@ -61,11 +61,11 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'gtceu:psi_superconductor_beta_octal_wire', type: 'gtceu:wiremill' })
   event.remove({ output: 'gtceu:psi_superconductor_beta_hex_wire', type: 'gtceu:wiremill' })
 
-  event.remove({ output: 'gtceu:psi_superconductor_omega_single_wire', type: 'gtceu:wiremill', type: 'gtceu:extruder' },)
-  event.remove({ output: 'gtceu:psi_superconductor_omega_double_wire', type: 'gtceu:wiremill' })
-  event.remove({ output: 'gtceu:psi_superconductor_omega_quadruple_wire', type: 'gtceu:wiremill' })
-  event.remove({ output: 'gtceu:psi_superconductor_omega_octal_wire', type: 'gtceu:wiremill' })
-  event.remove({ output: 'gtceu:psi_superconductor_omega_hex_wire', type: 'gtceu:wiremill' })
+  event.remove({ output: 'gtceu:psi_superconductor_eterna_single_wire', type: 'gtceu:wiremill', type: 'gtceu:extruder' },)
+  event.remove({ output: 'gtceu:psi_superconductor_eterna_double_wire', type: 'gtceu:wiremill' })
+  event.remove({ output: 'gtceu:psi_superconductor_eterna_quadruple_wire', type: 'gtceu:wiremill' })
+  event.remove({ output: 'gtceu:psi_superconductor_eterna_octal_wire', type: 'gtceu:wiremill' })
+  event.remove({ output: 'gtceu:psi_superconductor_eterna_hex_wire', type: 'gtceu:wiremill' })
   // event.remove({ type: 'gtceu:fusion_reactor' })
   event.remove({ type: 'gtceu:plasma_turbine' })
   event.remove({ id: 'gtceu:smelting/smelt_dust_blue_alloy_to_ingot' })
@@ -212,22 +212,6 @@ ServerEvents.recipes(event => {
     .duration(5)
     .circuit(1)
     .EUt(GTValues.VA[GTValues.EV]);
-
-
-  event.recipes.gtceu.plasmite_forge('frontiers:copper_forging')
-    .itemInputs('gtceu:graphene_dust')
-    .inputFluids('gtceu:copper 2304')
-    .itemOutputs('gtceu:copper_plasmites')
-    .duration(90)
-    .EUt(GTValues.VA[GTValues.ZPM]);
-
-  event.recipes.gtceu.plasmite_forge('frontiers:europium_forging')
-    .itemInputs('gtceu:graphene_dust')
-    .inputFluids('gtceu:europium 2304')
-    .itemOutputs('gtceu:europium_plasmites')
-    .duration(90)
-    .EUt(GTValues.VA[GTValues.ZPM]);
-
 
   event.remove({ id: 'gtceu:fluid_solidifier/petri_dish_pbi' })
   event.remove({ id: 'gtceu:fluid_solidifier/petri_dish_ptfe' })
@@ -806,6 +790,29 @@ ServerEvents.recipes(event => {
     .duration(200)
     .EUt(GTValues.VA[GTValues.UV], 5);
 
+  event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_sol_steel_ingot' })
+
+  event.recipes.gtceu.orbital_forge('sol_steel')
+    .itemInputs(['cosmiccore:hot_starmetal_ingot', '12x gtceu:naumannite_dust', 'gtceu:gravi_star'])
+    .inputFluids('gtceu:homeward_resin_plasma 2000')
+    .inputFluids('gtceu:starlight 4000')
+    .inputFluids('gtceu:sol_blood_plasma 2500')
+    .itemOutputs('4x cosmiccore:hot_sol_steel_ingot')
+    .dimension('frontiers:sun_orbit')
+    .blastFurnaceTemp(7000)
+    .duration(1300)
+    .EUt(GTValues.VA[GTValues.UV]);
+
+
+  event.recipes.gtceu.laser_engraver('frontiers:sol_steel_cooling')
+    .notConsumable('4x gtceu:zpm_emitter')
+    .itemInputs('cosmiccore:hot_sol_steel_ingot')
+    .inputFluids('gtceu:perpetuity_slag_plasma 50')
+    .itemOutputs('cosmiccore:sol_steel_ingot')
+    .outputFluids('gtceu:ender_air 25')
+    .duration(200)
+    .cleanroom(CleanroomType.CLEANROOM)
+    .EUt(GTValues.V[GTValues.UV], 4);
 
   event.recipes.gtceu.lunar_tapestry('starlight_extraction_1')
     .circuit(1)
@@ -902,9 +909,9 @@ ServerEvents.recipes(event => {
     .duration(400)
     .EUt(GTValues.VA[GTValues.IV]);
 
-  event.recipes.gtceu.assembler('omega_supercon')
+  event.recipes.gtceu.assembler('eterna_supercon')
     .itemInputs(['64x cosmiccore:voidspark_foil', '4x cosmiccore:sol_steel_tiny_fluid_pipe', 'gtceu:uranium_rhodium_dinaquadide_octal_wire', 'gtceu:uv_electric_pump'])
-    .itemOutputs('16x gtceu:psi_superconductor_omega_single_wire')
+    .itemOutputs('16x gtceu:psi_superconductor_eterna_single_wire')
     .inputFluids('gtceu:starlight 250')
     .duration(400)
     .EUt(GTValues.VA[GTValues.UV]);
@@ -963,6 +970,7 @@ ServerEvents.recipes(event => {
     W: '#forge:tools/hammers'
   })
   event.remove({ id: 'gtceu:shaped/steel_bricks_hull' })
+  event.remove({ id: 'gtceu:assembly_line/electric_pump_uv' })
   event.shaped('gtceu:steel_brick_casing', [
     'PPP',
     'PHP',

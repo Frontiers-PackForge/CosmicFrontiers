@@ -221,7 +221,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('psi_superconductor_beta')
         .color(0xb940ff)
         .cableProperties(GTValues.V[GTValues.IV], 16, 0, true)
-    event.create('psi_superconductor_omega')
+    event.create('psi_superconductor_eterna')
         .color(0xffffff)
         .cableProperties(GTValues.V[GTValues.MAX], 2048, 0, true)
     event.create('neodymium_praseodymium')
