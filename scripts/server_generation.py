@@ -23,11 +23,13 @@ def generate_serverpack_zip(version=None, curseforge_api_key=None):
         shutil.rmtree(serverpack_dir)
     os.makedirs(serverpack_dir)
 
-    # Copy overrides
+    # Copy overrides (copy content, not the folder itself)
     overrides_src = os.path.join(root_dir, 'overrides')
-    overrides_dst = os.path.join(serverpack_dir, 'overrides')
     if os.path.exists(overrides_src):
-        copy_any(overrides_src, overrides_dst)
+        for item in os.listdir(overrides_src):
+            s = os.path.join(overrides_src, item)
+            d = os.path.join(serverpack_dir, item)
+            copy_any(s, d)
 
     # Copy server-files content into serverpack directory
     server_files_src = os.path.join(root_dir, 'server-files')
