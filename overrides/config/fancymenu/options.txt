@@ -1,7 +1,7 @@
 ##[general]
 
 I:default_gui_scale = '-1';
-B:play_vanilla_menu_music = 'true';
+B:play_vanilla_menu_music = 'false';
 B:force_fullscreen = 'false';
 
 
@@ -24,11 +24,11 @@ B:game_intro_fade_out = 'true';
 
 ##[window]
 
-B:show_custom_window_icon = 'false';
-S:custom_window_icon_macos = '';
-S:custom_window_icon_32 = '';
-S:custom_window_title = '';
-S:custom_window_icon_16 = '';
+B:show_custom_window_icon = 'true';
+S:custom_window_icon_macos = '/config/fancymenu/assets/fmenu/frontiers16x.icns';
+S:custom_window_icon_32 = '/config/fancymenu/assets/fmenu/frontiers32x.png';
+S:custom_window_title = 'Cosmic Frontiers';
+S:custom_window_icon_16 = '/config/fancymenu/assets/fmenu/frontiers16x.png';
 
 
 ##[multiplayer_screen]
