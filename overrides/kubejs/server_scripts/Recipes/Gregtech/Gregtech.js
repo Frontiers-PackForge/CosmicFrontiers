@@ -38,6 +38,9 @@ yeet('gtceu:large_plasma_turbine')
 yeet('expandedae:exp_pattern_provider')
 yeet('expandedae:exp_pattern_provider_upgrade')
 yeet('expandedae:exp_pattern_provider_part')
+yeet('gtceu:extreme_combustion_engine')
+yeet('gtceu:large_combustion_engine')
+
 yeet(/gtceu:(.*)butchery_knife$/)
 
 
@@ -87,8 +90,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:macerator/macerate_treated_wood_planks' })
   event.remove({ id: 'gtceu:alloy_blast_smelter/starmetal_gas' })
 
-  event.replaceOutput({ id: 'gtceu:shaped/extreme_combustion_engine' }, 'gtceu:extreme_combustion_engine', 'gtceu:extreme_combustion_engine_cc')
-  event.replaceOutput({ id: 'gtceu:shaped/large_combustion_engine' }, 'gtceu:large_combustion_engine', 'gtceu:large_combustion_engine_cc')
+
   event.replaceOutput({ id: 'gtceu:shaped/power_substation' }, 'gtceu:power_substation', 'cosmiccore:dimensional_energy_capacitor')
   event.replaceOutput({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_uvarovite' }, 'gtceu:chromium_dust', 'gtceu:chromite_dust')
 
@@ -328,6 +330,21 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:create_mixer/concrete_from_clay' })
   event.remove({ id: 'gtceu:create_mixer/concrete_from_marble' })
   event.remove({ id: 'gtceu:shaped/casing_primitive_bricks' })
+
+
+  event.recipes.gtceu.assembler('combustion_large_1')
+    .itemInputs(['2x gtceu:ev_electric_piston', '2x gtceu:ev_electric_motor', '2x gtceu:titanium_gear', 'gtceu:aluminium_single_cable', 'gtceu:ev_machine_hull', '#gtceu:circuits/iv'])
+    .inputFluids('gtceu:lubricant 1500')
+    .itemOutputs('cosmiccore:large_combustion_engine_cc')
+    .duration(60)
+    .EUt(2000)
+  event.recipes.gtceu.assembler('combustion_large_2')
+    .itemInputs(['2x gtceu:iv_electric_piston', '2x gtceu:iv_electric_motor', '2x gtceu:tungsten_steel_gear', 'gtceu:hssg_single_cable', 'gtceu:iv_machine_hull', '#gtceu:circuits/luv'])
+    .inputFluids('gtceu:lubricant 1500')
+    .itemOutputs('cosmiccore:extreme_combustion_engine_cc')
+    .duration(60)
+    .EUt(2000)
+
   event.recipes.gtceu.fluid_solidifier('firebricks')
     .itemInputs('6x gtceu:firebrick')
     .inputFluids('gtceu:concrete 500')
@@ -347,6 +364,18 @@ ServerEvents.recipes(event => {
     .itemOutputs('4x cosmiccore:fireclay_ball')
     .duration(200)
     .EUt(2)
+  event.shaped('cosmiccore:linked_terminal', [
+    'WSH',
+    'SCS',
+    'FFF'
+  ], {
+    C: 'gtceu:terminal',
+    F: 'gtceu:tungsten_steel_plate',
+    S: '#gtceu:circuits/luv',
+    H: 'cosmiccore:iv_radio_module',
+    W: 'gtceu:iv_emitter'
+  })
+
   event.shaped('cosmiccore:industrial_primitive_blast_furnace', [
     'WSH',
     'SCS',
