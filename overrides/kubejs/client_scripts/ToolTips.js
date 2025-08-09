@@ -315,9 +315,7 @@ ItemEvents.tooltip(event => {
 
   // Multiblock Code or Design Credits; a Loose category to give thanks to the wonderful devs making machines possible
   // Do not edit unless you are Ghostipedia or have explicit approval to do so, thank you!
-
-
-
+  
   event.addAdvanced('cosmiccore:drone_station', (item, advanced, text) => {
     text.add(1, Text.of('Multiblock Classification: The Repair Swarm').aqua().bold())
     text.add(2, Text.of('What is all that noise!?').white().bold())
