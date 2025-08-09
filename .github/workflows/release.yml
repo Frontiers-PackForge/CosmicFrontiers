@@ -24,6 +24,7 @@ jobs:
         env:
           RELEASE_VERSION: ${{ github.event.release.tag_name }}
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+          IS_PRERELEASE: ${{ github.event.release.prerelease }}
         run: |
           python scripts/release.py
 
@@ -50,7 +51,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.release.tag_name }}
-          files: ./*.zip
+          files: ./Cosmic.Frontier.${{ github.event.release.tag_name }}.zip
           fail_on_unmatched_files: true
 
   publish-curseforge:
