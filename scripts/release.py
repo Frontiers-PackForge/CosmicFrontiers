@@ -7,9 +7,11 @@ from server_generation import generate_serverpack_zip
 def main():
     version = os.environ.get('RELEASE_VERSION')
     curseforge_api_key = os.environ.get('CURSEFORGE_API_KEY')
-    print(f"Release script running. Version: {version}")
+    is_prerelease = os.environ.get('IS_PRERELEASE', 'false').lower() == 'true'
+    print(f"Release script running. Version: {version}, Pre-release: {is_prerelease}")
     generate_modpack_zip(version)
-    generate_serverpack_zip(version, curseforge_api_key=curseforge_api_key)
+    if not is_prerelease:
+        generate_serverpack_zip(version, curseforge_api_key=curseforge_api_key)
 
 if __name__ == "__main__":
     main()
