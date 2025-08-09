@@ -131,16 +131,20 @@
 			dependencies: [
 				"00FD19CCFB41CF8A"
 				"7F3BE65039BBDB8E"
+				"1E8BB0C611E2AA8D"
+				"248C64F2AEC291A5"
 			]
 			id: "33066F67B95D8F1B"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "0816B481C153A189"
 				item: "gtceu:grading_fluid_6_bucket"
 				type: "item"
 			}]
 			title: "Tier 6 Grading Catalyst"
-			x: 2.5d
-			y: -3.0d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["0EB37211BFB94473"]
@@ -155,18 +159,28 @@
 		}
 		{
 			dependencies: [
-				"1C26EFBD68B35D1F"
 				"71EE1119F936C025"
 				"1B8F799F797D7B62"
+				"7DDF928C621AD72A"
+			]
+			description: [
+				"This fuel creates 16A ZPM per while each batch runs."
+				""
+				""
+				""
+				"Making each NPR yield a cool 1 UHV Ampere!"
+				""
+				"Hopefully your naq production can keep up."
 			]
 			id: "0CA4111E6FFD6B3D"
+			subtitle: "Meta Shaker"
 			tasks: [{
 				id: "5C351D8C55A50B84"
 				item: "gtceu:naquahine_superfuel_mk_two_bucket"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 8.0d
+			x: -7.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["71EE1119F936C025"]
@@ -177,8 +191,8 @@
 				type: "item"
 			}]
 			title: "Iso-octane doped Stardust Gasoline"
-			x: -10.0d
-			y: 8.0d
+			x: -10.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -213,25 +227,13 @@
 			shape: "hexagon"
 			subtitle: "Luminites Big Brother"
 			tasks: [{
-				id: "4A5A19B2D219336F"
-				item: "cosmiccore:hot_starmetal_ingot"
+				id: "4C070013E01F5715"
+				item: "cosmiccore:starmetal_ingot"
 				type: "item"
 			}]
-			title: "Starmetal"
+			title: "Starmetal : Moonlight Purified"
 			x: -13.5d
 			y: 0.0d
-		}
-		{
-			dependencies: ["381B6F540EFA23B6"]
-			id: "026155575C4F9913"
-			tasks: [{
-				id: "4F3E91E2E861668B"
-				item: "gtceu:graphene_dust"
-				type: "item"
-			}]
-			title: "Carbon Nanotubes"
-			x: 3.0d
-			y: -6.0d
 		}
 		{
 			dependencies: ["1EDA6025077BAA5D"]
@@ -247,30 +249,26 @@
 		}
 		{
 			dependencies: [
-				"426FAAA49BD81213"
-				"51AC9E9464EE5EE2"
-				"464A2E409E25DD93"
-				"6CF0A6DA136B0B1F"
 				"0B97C846BEAA2ED8"
+				"6FC9F7B2AA41CDF5"
 			]
-			icon: "cosmiccore:arcane_distillery"
+			description: [
+				"The Spirit Crucible allows the production of synthetic spirits as well as creation of naturally bound spirits."
+				""
+				"The ceiling for this technology seems massive, I'll have to investigate further."
+			]
+			icon: "cosmiccore:spirit_crucible"
 			id: "195241FCB0CC40DE"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "TODO ; Spirit Altar Multi"
-			tasks: [
-				{
-					id: "4070E241A34E76AC"
-					type: "checkmark"
-				}
-				{
-					id: "2B4DC65C7C363448"
-					item: "cosmiccore:arcane_distillery"
-					type: "item"
-				}
-			]
+			subtitle: "The Crucible and the Forge"
+			tasks: [{
+				id: "466AA4659C9D054E"
+				item: "cosmiccore:spirit_crucible"
+				type: "item"
+			}]
 			title: "The Spirit Well"
-			x: -16.0d
+			x: -13.5d
 			y: -4.0d
 		}
 		{
@@ -292,8 +290,8 @@
 		}
 		{
 			dependencies: [
-				"057D9F8E4E2945C8"
-				"08A7BFAEA4D41E28"
+				"6F78B755BD7972DE"
+				"33066F67B95D8F1B"
 			]
 			id: "565FABB86902012B"
 			shape: "octagon"
@@ -308,7 +306,10 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["70CCB18CA57E256F"]
+			dependencies: [
+				"70CCB18CA57E256F"
+				"0347EE525F6FA5E6"
+			]
 			id: "5C1A28DFEA13F6C1"
 			shape: "hexagon"
 			size: 1.75d
@@ -392,22 +393,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: [
-				"33066F67B95D8F1B"
-				"0D3FA9F6A3AA0568"
-			]
-			id: "6F803279C5027E5C"
-			subtitle: "You heard that right."
-			tasks: [{
-				id: "6BA03A63A44019F0"
-				item: "cosmiccore:void_blood_orb"
-				type: "item"
-			}]
-			title: "Wait, Tier 7?"
-			x: 4.5d
-			y: -3.0d
-		}
-		{
 			dependencies: ["0EB37211BFB94473"]
 			id: "053CA2DEB31524C1"
 			shape: "hexagon"
@@ -431,7 +416,7 @@
 			shape: "gear"
 			size: 1.5d
 			title: "More Powerful Meteors"
-			x: -5.0d
+			x: -6.0d
 			y: -3.0d
 		}
 		{
@@ -453,9 +438,22 @@
 		}
 		{
 			dependencies: ["23D6FB186E6B935B"]
+			description: [
+				"Mercury seems to have no yield of surface ores; however, the planet is nearly pure metal."
+				""
+				"There will most likely be a way I can exploit Mercury in the future. For now, I guess I can place down a tower fan and try to beat the heat."
+				""
+				"~In memory of that stupid tower fan that survived with me since 2014"
+			]
 			icon: "ad_astra:mercury_globe"
 			id: "684AAECC1FC5BA3A"
+			rewards: [{
+				id: "1AAA5E5D9989674B"
+				item: "cosmiccore:large_shard_of_perpetuity"
+				type: "item"
+			}]
 			shape: "hexagon"
+			subtitle: "Barren and Empty"
 			title: "Mercury"
 			x: -2.0d
 			y: 2.0d
@@ -620,54 +618,6 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["1EDA6025077BAA5D"]
-			hide_dependency_lines: true
-			id: "426FAAA49BD81213"
-			tasks: [{
-				id: "7D1798EB782A8564"
-				item: "botania:rune_pride"
-				type: "item"
-			}]
-			x: -14.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["1EDA6025077BAA5D"]
-			hide_dependency_lines: true
-			id: "51AC9E9464EE5EE2"
-			tasks: [{
-				id: "7410BB2801E541A7"
-				item: "botania:rune_envy"
-				type: "item"
-			}]
-			x: -17.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["1EDA6025077BAA5D"]
-			hide_dependency_lines: true
-			id: "464A2E409E25DD93"
-			tasks: [{
-				id: "108C93739A157E11"
-				item: "botania:rune_wrath"
-				type: "item"
-			}]
-			x: -17.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["1EDA6025077BAA5D"]
-			hide_dependency_lines: true
-			id: "6CF0A6DA136B0B1F"
-			tasks: [{
-				id: "1D051582E5A8D918"
-				item: "botania:rune_sloth"
-				type: "item"
-			}]
-			x: -15.0d
-			y: -2.5d
-		}
-		{
 			dependencies: ["195241FCB0CC40DE"]
 			id: "497C88F09884E47E"
 			tasks: [{
@@ -675,7 +625,7 @@
 				item: "malum:sacred_spirit"
 				type: "item"
 			}]
-			x: -18.5d
+			x: -15.0d
 			y: -4.0d
 		}
 		{
@@ -686,8 +636,8 @@
 				item: "malum:wicked_spirit"
 				type: "item"
 			}]
-			x: -17.5d
-			y: -4.5d
+			x: -15.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["195241FCB0CC40DE"]
@@ -697,8 +647,8 @@
 				item: "malum:arcane_spirit"
 				type: "item"
 			}]
-			x: -16.75d
-			y: -5.0d
+			x: -15.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["195241FCB0CC40DE"]
@@ -708,7 +658,7 @@
 				item: "malum:aerial_spirit"
 				type: "item"
 			}]
-			x: -16.0d
+			x: -12.0d
 			y: -6.0d
 		}
 		{
@@ -719,7 +669,7 @@
 				item: "malum:aqueous_spirit"
 				type: "item"
 			}]
-			x: -15.25d
+			x: -12.0d
 			y: -5.0d
 		}
 		{
@@ -730,40 +680,32 @@
 				item: "malum:earthen_spirit"
 				type: "item"
 			}]
-			x: -14.5d
-			y: -4.5d
+			x: -12.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["195241FCB0CC40DE"]
+			hide_dependency_lines: true
 			id: "36963D57C67F3540"
 			tasks: [{
 				id: "1E4D7D44C7248275"
 				item: "malum:infernal_spirit"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -4.0d
+			x: -2.5d
+			y: -10.5d
 		}
 		{
-			dependencies: [
-				"1DBFD4E118C5FF5B"
-				"497C88F09884E47E"
-				"668B16FEB0B0BF8C"
-				"204189A22B9BCC11"
-				"23473D0783C4CA98"
-				"12C0977AC42F87E8"
-				"36963D57C67F3540"
-			]
+			dependencies: ["195241FCB0CC40DE"]
 			id: "44DF4EBD1CB75DE1"
-			shape: "hexagon"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "5C4289D4CE7F45CE"
 				item: "malum:umbral_spirit"
 				type: "item"
 			}]
-			x: -16.0d
-			y: -8.0d
+			x: -14.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["565FABB86902012B"]
@@ -775,28 +717,6 @@
 			}]
 			x: 1.5d
 			y: -8.0d
-		}
-		{
-			dependencies: ["026155575C4F9913"]
-			id: "08A7BFAEA4D41E28"
-			tasks: [{
-				id: "6112F5C9C205888C"
-				item: "cosmiccore:multi_purpose_interstellar_grade_casing"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["6F78B755BD7972DE"]
-			id: "057D9F8E4E2945C8"
-			tasks: [{
-				id: "29B9787921E48785"
-				item: "cosmiccore:ultra_powered_casing"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -4.5d
 		}
 		{
 			dependencies: ["31CE310C898AC695"]
@@ -816,15 +736,14 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["381B6F540EFA23B6"]
 			id: "6F78B755BD7972DE"
 			tasks: [{
 				id: "745DA0E9996C4D9E"
 				item: "cosmiccore:zpm_radio_module"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.5d
+			x: 3.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["38A4EF785F5765BF"]
@@ -849,29 +768,6 @@
 			}]
 			x: 0.0d
 			y: -12.5d
-		}
-		{
-			dependencies: ["6ABD6ECFF6A5ACE4"]
-			id: "2BFC92DBF3A17A90"
-			tasks: [{
-				id: "7479020657946878"
-				item: "cosmiccore:mantle_bore"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["2BFC92DBF3A17A90"]
-			id: "66F8003117849F50"
-			shape: "hexagon"
-			tasks: [{
-				id: "4D7252229169EF85"
-				item: "gtceu:cylinder_casting_mold"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 8.0d
 		}
 		{
 			dependencies: ["6ABD6ECFF6A5ACE4"]
@@ -1047,8 +943,8 @@
 				item: "gtceu:raw_naquadah"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -5.0d
+			x: -7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7F030FBE37FF64FA"]
@@ -1058,8 +954,8 @@
 				item: "gtceu:raw_trinium_metallic"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -4.0d
+			x: -4.045238095238069d
+			y: -3.769047619047612d
 		}
 		{
 			dependencies: ["4C2264B012D642E7"]
@@ -1069,8 +965,8 @@
 				item: "gtceu:trinium_calx_solution_bucket"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -4.0d
+			x: -2.5452380952380693d
+			y: -3.769047619047612d
 		}
 		{
 			dependencies: ["4C2264B012D642E7"]
@@ -1080,8 +976,8 @@
 				item: "gtceu:vitrolic_slurry_bucket"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -5.0d
+			x: -3.0452380952380693d
+			y: -4.769047619047612d
 		}
 		{
 			dependencies: ["0B706188E9FA1808"]
@@ -1092,8 +988,8 @@
 				item: "gtceu:trinium_dust"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -4.0d
+			x: -1.0452380952380693d
+			y: -3.769047619047612d
 		}
 		{
 			dependencies: ["3721D1E1F204378F"]
@@ -1111,7 +1007,9 @@
 		{
 			dependencies: [
 				"2C87BFC8DC901E3B"
+				"587A8BE39E9C9D9A"
 				"09F1559F5FDF2B74"
+				"36963D57C67F3540"
 			]
 			id: "391543973682C8A6"
 			subtitle: "Harvest the Sun"
@@ -1137,6 +1035,7 @@
 				item: "cosmiccore:voidspark_ingot"
 				type: "item"
 			}]
+			title: "Voidspark : Absolute Midnight"
 			x: 6.0d
 			y: -9.0d
 		}
@@ -1216,22 +1115,6 @@
 			}]
 			x: 6.0d
 			y: 1.5d
-		}
-		{
-			dependencies: [
-				"6F803279C5027E5C"
-				"1E8BB0C611E2AA8D"
-			]
-			icon: "gtceu:grading_fluid_7_bucket"
-			id: "381B6F540EFA23B6"
-			subtitle: "TODO TIER 7 CATA"
-			tasks: [{
-				id: "77B90406DA0AF93B"
-				item: "gtceu:grading_fluid_7_bucket"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -4.5d
 		}
 		{
 			dependencies: ["5087296EF0C8C152"]
@@ -1348,8 +1231,8 @@
 				item: "gtceu:ultralight_neutronium_plasma_bucket"
 				type: "item"
 			}]
-			x: 3.5089285714285836d
-			y: -2.3125000000000284d
+			x: 3.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1444,60 +1327,6 @@
 			}]
 			x: 10.0d
 			y: -6.0d
-		}
-		{
-			dependencies: [
-				"66F8003117849F50"
-				"53382ABFD35EBF0F"
-			]
-			description: [
-				"Mercury has abnormally high magnetic surges due to being so close to the sun."
-				""
-				""
-				"Extract metal from the core of mercury and bathe it in the lightning of Jupiter to create Ionized Fulgorinth"
-			]
-			id: "1C26EFBD68B35D1F"
-			subtitle: "Storms of Mercury"
-			tasks: [{
-				id: "01DBD4824E7D6E6E"
-				item: "gtceu:ionized_fulgorinth_ingot"
-				type: "item"
-			}]
-			x: -7.5d
-			y: 8.0d
-		}
-		{
-			dependencies: ["2BFC92DBF3A17A90"]
-			id: "53382ABFD35EBF0F"
-			tasks: [{
-				id: "6AA338AFD4EB2E6C"
-				item: "ad_astra:mercury_globe"
-				type: "item"
-			}]
-			x: -7.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["66F8003117849F50"]
-			id: "36712A8CD579394E"
-			tasks: [{
-				id: "14A7350620F30E72"
-				item: "bloodmagic:hellforgedparts"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["36712A8CD579394E"]
-			id: "132E18897587A6CB"
-			tasks: [{
-				id: "53A5DB34EAC39338"
-				item: "bloodmagic:orbcapacityrune2"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -2848,26 +2677,19 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["48BC2327A7121269"]
+			dependencies: [
+				"24651D97CC947814"
+				"22E893A69FB7C197"
+			]
+			hide_dependent_lines: true
 			id: "0B97C846BEAA2ED8"
 			tasks: [{
 				id: "2B237655A7CE864A"
 				item: "cosmiccore:heavy_starmetal_beam"
 				type: "item"
 			}]
-			x: -16.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["22E893A69FB7C197"]
-			id: "48BC2327A7121269"
-			tasks: [{
-				id: "465B1D2E225B7D07"
-				item: "cosmiccore:submerged_welder"
-				type: "item"
-			}]
-			x: -16.0d
-			y: 0.0d
+			x: -11.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3721D1E1F204378F"]
@@ -2891,37 +2713,8 @@
 				item: "gtceu:copper_plasmites"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"693EC3E04A6F74B7"
-				"7BC6D4CA5105DAD5"
-				"5B80F2DA944E24D2"
-			]
-			id: "4BE0886804DD5181"
-			tasks: [{
-				id: "3D1BAFBB9D01C230"
-				item: "gtceu:iron_plasmites"
-				type: "item"
-			}]
-			x: -11.0d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"7BC6D4CA5105DAD5"
-				"5B80F2DA944E24D2"
-			]
-			id: "275FCF17A5906780"
-			tasks: [{
-				id: "5342D297BF953DCE"
-				item: "gtceu:gold_plasmites"
-				type: "item"
-			}]
-			x: -9.0d
-			y: -5.0d
+			x: -10.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -2939,15 +2732,26 @@
 		}
 		{
 			dependencies: ["77AC87C4258DCDD4"]
+			description: [
+				"&ePlasmites&r, what a wonderful little... creature this is."
+				""
+				"While most life I've encountered seems to be made of the same carbon makeup, plasmites are unique in their composition. Seemingly bound together by sheer will, these particles can simulate basic tasks like motion, memory, and even object permanence in some of the rarer species I've seen."
+				""
+				"It seems the matter composing a plasmite is crucial not only to its behavior but also to its abilities."
+				""
+				"I believe that, with the right use of fusion, I can distill and create my own basic plasmites — and potentially even start alloying plasmites for more targeted uses."
+			]
 			id: "5B80F2DA944E24D2"
-			subtitle: "Bio Engineer the Sun."
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Bio Engineered Solar Life"
 			tasks: [{
 				id: "5E278446386FDDC3"
 				item: "cosmiccore:plasmite_distillery"
 				type: "item"
 			}]
 			x: -9.0d
-			y: -2.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["77B2690C199DA311"]
@@ -2959,30 +2763,22 @@
 				item: "cosmiccore:saturated_sculk_hemocytoblast"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -5.0d
+			x: -10.5d
+			y: -9.0d
 		}
 		{
-			dependencies: ["5B80F2DA944E24D2"]
-			id: "693EC3E04A6F74B7"
-			tasks: [{
-				id: "446B706AAD91A474"
-				item: "gtceu:iron_plasma_bucket"
-				type: "item"
-			}]
-			x: -11.0d
-			y: -6.5d
-		}
-		{
-			dependencies: ["5B80F2DA944E24D2"]
+			dependencies: [
+				"5B80F2DA944E24D2"
+				"565FABB86902012B"
+			]
 			id: "5A99879DF7230F18"
 			tasks: [{
 				id: "69D42DEF930EC9D1"
 				item: "gtceu:ghost_matter_plasma_bucket"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -8.0d
+			x: -7.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["565FABB86902012B"]
@@ -3097,6 +2893,195 @@
 			}]
 			x: 4.5d
 			y: -8.0d
+		}
+		{
+			dependencies: ["1EDA6025077BAA5D"]
+			dependency_requirement: "one_started"
+			hide_dependency_lines: true
+			hide_text_until_complete: false
+			id: "7DDF928C621AD72A"
+			tasks: [{
+				id: "1D82E71D6777D6FC"
+				item: "gtceu:naquadria_dust"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0CA4111E6FFD6B3D"]
+			id: "36C432DB5BEA82F4"
+			tasks: [{
+				id: "3EEB6FFFA2FC9F0F"
+				item: "gtceu:tau_plasma_bucket"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"36C432DB5BEA82F4"
+				"77633CDEDC947247"
+				"050D19FA0A97DAC3"
+			]
+			description: [
+				"Superfuel Mk3 has a whopping 64A ZPM per recipe. Meaning a Single Naquahine reactor can produce unseen levels of power."
+				""
+				""
+				""
+				""
+				"It does, however, come at a great cost to many resources and infrastructure than before."
+			]
+			id: "2A629DC0EF7E9848"
+			subtitle: "Meta Maker"
+			tasks: [{
+				id: "2D430332CB0AB526"
+				item: "gtceu:naquahine_superfuel_mk_three_bucket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1EDA6025077BAA5D"]
+			hide_dependency_lines: true
+			id: "77633CDEDC947247"
+			tasks: [{
+				id: "0D4F675F86D280F6"
+				item: "gtceu:starlight_bucket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1EDA6025077BAA5D"]
+			hide_dependency_lines: true
+			id: "050D19FA0A97DAC3"
+			tasks: [{
+				id: "73B01E56F9041DE4"
+				item: "gtceu:americium_plasmites"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"24651D97CC947814"
+				"22E893A69FB7C197"
+			]
+			hide_dependent_lines: true
+			id: "6299AC7703B67256"
+			tasks: [{
+				id: "572C3B5B81102FD5"
+				item: "cosmiccore:heavy_starmetal_beam"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"24651D97CC947814"
+				"22E893A69FB7C197"
+			]
+			hide_dependency_lines: true
+			id: "6FC9F7B2AA41CDF5"
+			tasks: [{
+				id: "4811AA8F240120C1"
+				item: "cosmiccore:heavy_starmetal_beam"
+				type: "item"
+			}]
+			x: -13.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["31CE310C898AC695"]
+			id: "31DC7272AC2FB97E"
+			tasks: [{
+				id: "2F118749E1FCC989"
+				item: "cosmiccore:atmo_pump"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["565FABB86902012B"]
+			hide_dependency_lines: true
+			id: "587A8BE39E9C9D9A"
+			tasks: [{
+				id: "79696B037555A56C"
+				item: "gtceu:naumannite_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["195241FCB0CC40DE"]
+			id: "502A142D1FE28D32"
+			tasks: [{
+				id: "23DEB9BF8B95E6B7"
+				item: "malum:infernal_spirit"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["09F1559F5FDF2B74"]
+			description: [
+				"UHV Circuits have been grossly expensive for you."
+				""
+				"You have devised a way to make them much cheaper ahead of schedule, allowing for more exploitation of your new circuit hardware!"
+			]
+			id: "7BC802FE39FBA4BC"
+			shape: "hexagon"
+			subtitle: "A very important Upgrade"
+			tasks: [{
+				id: "7C652C6BA43C96FE"
+				item: "gtceu:neuro_processing_unit"
+				type: "item"
+			}]
+			title: "Cheaper Wetwares"
+			x: -5.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5B80F2DA944E24D2"]
+			description: [
+				"Carbon plasmite testing seems to obliterate itself from the heat — which is, for lack of better words, unfortunate."
+				""
+				"Graphene, being a more stable carbon structure, seems capable of withstanding fusion impacts long enough to form a graphene plasmite."
+				""
+				"It is, unfortunately, very power-intensive to maintain the pressure chambers needed."
+			]
+			id: "248C64F2AEC291A5"
+			shape: "hexagon"
+			subtitle: "Difficult."
+			tasks: [{
+				id: "1DC3E7F4C240C56A"
+				item: "gtceu:graphene_plasmites"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5B80F2DA944E24D2"]
+			hide_dependency_lines: true
+			id: "0347EE525F6FA5E6"
+			shape: "hexagon"
+			tasks: [{
+				id: "57A9BD2FF66BEF4A"
+				item: "gtceu:copper_plasmites"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 21.5d
 		}
 	]
 	title: "The Sanguine Peak - [ZPM]"
