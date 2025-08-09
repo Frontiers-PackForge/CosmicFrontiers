@@ -1,0 +1,18 @@
+{
+    "entity.botania.doppleganger":"03S9的善行",
+    "entity.botania.magic_landmine":"善意",
+    "advancement.botania:gaiaGuardianKill":"击杀弑星者",
+    "advancement.botania:gaiaGuardianKill.desc":"激怒一个善行造物，然后击杀它以获取精华",
+    "advancement.botania:gaiaGuardianNoArmor":"令人颤栗的伟力",
+    "advancement.botania:gaiaGuardianNoArmor.desc":"战斗从头至尾不穿任何护甲击杀一只善行造物",
+    "advancement.botania:gaiaGuardianHardmode":"夢のまにまに",
+    "advancement.botania:gaiaGuardianHardmode.desc":"召唤并杀死一只天使的记忆",
+    "block.botania.gaia_pylon":"善行之塔",
+    "block.botania.gaia_spreader":"美德魔力发射器",
+    "block.botania.gaia_head":"善行造物的头",
+    "item.botania.gaiahead":"善行造物的头",
+    "item.botania.life_essence":"美德精华",
+    "item.botania.gaia_ingot":"圣德融合物锭",
+    "item.botania.record_gaia_1.desc":"Hakita - Death of Gods Will",
+    "item.botania.record_gaia_2.desc":"Hakita - The World Looks Red"
+}
