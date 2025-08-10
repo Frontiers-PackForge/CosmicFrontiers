@@ -65,6 +65,10 @@ ServerEvents.recipes(event => {
         'createdeco:industrial_iron_nugget',
         'gtceu:industrial_iron_nugget'
     )
+    event.replaceInput({ mod: 'copycats' },
+        'create:zinc_ingot',
+        'gtceu:zinc_ingot'  
+    )
 
   event.recipes.gtceu.alloy_smelter("create:industrial_iron_ingot")
     .itemInputs('4x minecraft:iron_ingot', '2x gtceu:coal_dust')
