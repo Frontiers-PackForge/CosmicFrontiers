@@ -39,7 +39,7 @@ yeet('occultism:ritual_dummy/summon_djinni_crusher')
 yeet('occultism:ritual_dummy/summon_afrit_crusher')
 yeet('occultism:ritual_dummy/summon_marid_crusher')
 yeet('occultism:wormhole_frame')
-yeet('occultism:satchel')
+// yeet('occultism:satchel')
 
 
 
