@@ -1444,6 +1444,7 @@ ServerEvents.recipes(event => {
   //START HERE
   //MOTOR
   event.remove({ id: 'gtceu:assembler/electric_motor_iv' })
+  event.remove({ id: 'experienceobelisk:book_from_any_leather' })
   event.remove({ id: 'gtceu:shaped/electric_motor_iv' })
   event.recipes.gtceu.assembler('gtceu:new_iv_motor')
     .itemInputs(['2x gtceu:elementium_quadruple_cable', '2x cosmiccore:prismatic_tungstensteel_rod', 'gtceu:magnetic_neodymium_praseodymium_rod', '4x gtceu:virtue_meld_octal_wire'])
