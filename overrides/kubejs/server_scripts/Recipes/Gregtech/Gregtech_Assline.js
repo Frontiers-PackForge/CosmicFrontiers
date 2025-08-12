@@ -190,16 +190,16 @@ ServerEvents.recipes(event => {
     .duration(800)
     .EUt(GTValues.VA[GTValues.LuV])
 
-  //CleanroomMaintHatch
+  //CleanroomMaintHatch Temp Recipe until i smooth over balancing
   event.remove({ id: 'gtceu:shaped/maintenance_hatch_cleaning' })
   event.recipes.gtceu.assembly_line('clean_hatch_assemblyline')
-    .itemInputs(['64x gtceu:plascrete', '64x gtceu:plascrete', '16x gtceu:filter_casing', '16x gtceu:hssg_spring', '4x #gtceu:circuits/luv', '4x gtceu:luv_robot_arm', 'gtceu:auto_maintenance_hatch', 'gtceu:cleanroom', 'gtceu:luv_diode'])
+    .itemInputs(['64x gtceu:plascrete', '64x gtceu:plascrete', '16x gtceu:filter_casing', '16x gtceu:hssg_spring', '4x #gtceu:circuits/luv', '4x gtceu:luv_robot_arm', 'gtceu:maintenance_hatch', 'gtceu:cleanroom', 'gtceu:luv_diode'])
     .itemOutputs('gtceu:cleaning_maintenance_hatch')
     .inputFluids(
       Fluid.of('gtceu:high_grade_solder', 1440),
       Fluid.of('gtceu:argon', 16000)
     )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:auto_maintenance_hatch')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:maintenance_hatch')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
     .duration(600)
     .EUt(GTValues.VA[GTValues.IV])
     .removePreviousMaterialInfo()

@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV]);
     event.recipes.gtceu.assembler('drone_mk4')
         .itemInputs(['cosmiccore:drone_frame_4', '4x minecraft:honeycomb', '4x gtceu:cinderwax_foil', '4x gtceu:steel_rod', 'gtceu:stainless_steel_rotor'])
-        .itemOutputs('4x cosmiccore:sanguine_dron')
+        .itemOutputs('4x cosmiccore:sanguine_drone')
         .duration(40)
         .EUt(GTValues.VA[GTValues.LV]);
     event.recipes.gtceu.assembler('drone_mk5')
@@ -63,10 +63,11 @@ ServerEvents.recipes(event => {
         .itemOutputs('4x cosmiccore:plasmatic_drone')
         .duration(40)
         .EUt(GTValues.VA[GTValues.LV]);
-
+    
+    event.remove({ id: 'gtceu:shaped/maintenance_hatch_automatic' })
     event.recipes.gtceu.assembler('drone_hatch_mk1')
-        .itemInputs(['cosmiccore:drone_frame_5', '4x minecraft:honeycomb', '4x gtceu:cinderwax_foil', '4x gtceu:steel_rod', 'gtceu:stainless_steel_rotor'])
-        .itemOutputs('4x cosmiccore:plasmatic_drone')
+        .itemInputs(['gtceu:maintenance_hatch', 'gtceu:titanium_plate','minecraft:beehive', '2x minecraft:honeycomb', '#gtceu:circuits/ev'])
+        .itemOutputs('cosmiccore:drone_maintenance_interface')
         .duration(40)
         .EUt(GTValues.VA[GTValues.LV]);
 })
