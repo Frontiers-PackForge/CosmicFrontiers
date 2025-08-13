@@ -11,6 +11,7 @@
 	quests: [
 		{
 			dependencies: ["38E8D3C8D4F791D8"]
+			hide_until_deps_complete: true
 			id: "729E3A063736105A"
 			subtitle: "To Reinforce the Soul"
 			tasks: [{
@@ -61,6 +62,7 @@
 				"59361EB519AFF0B7"
 				"38E8D3C8D4F791D8"
 			]
+			hide_until_deps_visible: true
 			id: "7FFC6A5147C321B9"
 			tasks: [{
 				id: "3FEA87B668E48119"
@@ -104,6 +106,7 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["729E3A063736105A"]
 			id: "66C6D44F64D58727"
 			tasks: [{
 				id: "770A8AB76D0CE256"
@@ -114,6 +117,7 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["729E3A063736105A"]
 			id: "674A9D3C2507C044"
 			tasks: [{
 				id: "71652E541CEFB46D"
@@ -124,6 +128,7 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["729E3A063736105A"]
 			id: "2EAF0FD35B9DE2FC"
 			tasks: [{
 				id: "2AD7C45FB11B7A27"
@@ -134,6 +139,7 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["729E3A063736105A"]
 			id: "2A34B8F3D5A6C7BB"
 			tasks: [{
 				id: "70A5318A32B687E9"
@@ -144,6 +150,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["729E3A063736105A"]
 			id: "482FC79E15210C24"
 			tasks: [{
 				id: "45A1FFA92B7E2A60"
@@ -154,6 +161,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["729E3A063736105A"]
 			description: [
 				""
 				""

@@ -154,8 +154,8 @@
 				item: "bloodmagic:etherealslate"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -1.5d
+			x: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -736,6 +736,8 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["1EDA6025077BAA5D"]
+			hide_dependency_lines: true
 			id: "6F78B755BD7972DE"
 			tasks: [{
 				id: "745DA0E9996C4D9E"
