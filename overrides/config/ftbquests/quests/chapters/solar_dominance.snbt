@@ -749,10 +749,12 @@
 			dependencies: ["38A4EF785F5765BF"]
 			icon: "createdeco:decal_up"
 			id: "38E8D3C8D4F791D8"
+			subtitle: "A Step Forward"
 			tasks: [{
 				id: "729B144D09DC01FF"
 				type: "checkmark"
 			}]
+			title: "Ascend to UV"
 			x: 0.0d
 			y: -10.5d
 		}
@@ -766,6 +768,7 @@
 				item: "minecraft:writable_book"
 				type: "item"
 			}]
+			title: "The Breakthrough"
 			x: 0.0d
 			y: -12.5d
 		}

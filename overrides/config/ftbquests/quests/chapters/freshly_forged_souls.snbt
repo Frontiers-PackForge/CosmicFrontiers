@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "freshly_forged_souls"
 	group: "34809FA43B03812C"
@@ -23,7 +24,18 @@
 		}
 		{
 			dependencies: ["729E3A063736105A"]
+			description: [
+				"Sol plasma eludes to the fact I can bleed at a spiritual level, and I'm bleeding fast."
+				""
+				"I should look into stronger machine hardware to better protect my body."
+				""
+				"This is a race against time, let's get to work."
+				""
+				""
+				"UV will test a lot of your current infrastructure to verify it is up to part, the cost spikes at the end of ZPM should have elluded to this well enough"
+			]
 			id: "70B8E558642EB722"
+			subtitle: "How have you been."
 			tasks: [{
 				id: "3ECA2312610BC169"
 				item: "gtceu:uv_electric_motor"
@@ -43,6 +55,260 @@
 			}]
 			x: 0.0d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"59361EB519AFF0B7"
+				"38E8D3C8D4F791D8"
+			]
+			id: "7FFC6A5147C321B9"
+			tasks: [{
+				id: "3FEA87B668E48119"
+				item: "gtceu:grading_fluid_7_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["70B8E558642EB722"]
+			id: "2D2FEAAD9A788F11"
+			tasks: [{
+				id: "22CCDDBC3B42C2D2"
+				item: "gtceu:sol_blood_plasma_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2D2FEAAD9A788F11"]
+			id: "27507A35114E29AC"
+			tasks: [{
+				id: "63EA892F76947E8D"
+				item: "cosmiccore:ichor_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["27507A35114E29AC"]
+			id: "14A576C56B158FE3"
+			tasks: [{
+				id: "02D2CF0E97D95E50"
+				item: "cosmiccore:ichorium_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			id: "66C6D44F64D58727"
+			tasks: [{
+				id: "770A8AB76D0CE256"
+				item: "cosmiccore:temmerite_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.0d
+		}
+		{
+			id: "674A9D3C2507C044"
+			tasks: [{
+				id: "71652E541CEFB46D"
+				item: "gtceu:rubidium_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			id: "2EAF0FD35B9DE2FC"
+			tasks: [{
+				id: "2AD7C45FB11B7A27"
+				item: "cosmiccore:taranium_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -8.0d
+		}
+		{
+			id: "2A34B8F3D5A6C7BB"
+			tasks: [{
+				id: "70A5318A32B687E9"
+				item: "cosmiccore:living_igniclad_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.5d
+		}
+		{
+			id: "482FC79E15210C24"
+			tasks: [{
+				id: "45A1FFA92B7E2A60"
+				item: "gtceu:ionized_fulgorinth_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.5d
+		}
+		{
+			description: [
+				""
+				""
+				"FTB Quests Does not like looping deps so I'll only be listing the important particle outputs you may want"
+				""
+				""
+				"Particle Folding is a very annoying complex process involving several large machines and many supporting machines for the folders themselves."
+			]
+			id: "6966ADADA86CBCC4"
+			subtitle: "Help"
+			tasks: [{
+				id: "602E71149D3280B1"
+				item: "cosmiccore:arcane_distillery"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			id: "0AB11364D13764CD"
+			tasks: [{
+				id: "7D67EBD0F5F6AE0F"
+				item: "cosmiccore:tessaron"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			id: "44BD916C3C1DF317"
+			tasks: [{
+				id: "5928FDD36664A47D"
+				item: "cosmiccore:vexiun"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"6966ADADA86CBCC4"
+				"4D9DC8539212C3F9"
+			]
+			id: "5E1D369BFBEFC22E"
+			tasks: [{
+				id: "61046C03CAFC47AA"
+				item: "cosmiccore:ambrion"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			id: "00BC8EACC0A65FAA"
+			tasks: [{
+				id: "4595CD822DBDEC4F"
+				item: "cosmiccore:ethera"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"5E1D369BFBEFC22E"
+				"00BC8EACC0A65FAA"
+				"4D32AA9E6F5C80D3"
+				"599804BD824DC5D8"
+			]
+			id: "5BA9E4FD6905BF16"
+			tasks: [{
+				id: "6D8B884CEB879D17"
+				item: "cosmiccore:echon"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"44BD916C3C1DF317"
+				"0AB11364D13764CD"
+			]
+			id: "6C55921CF278EEB7"
+			tasks: [{
+				id: "30366CD5175BCD22"
+				item: "cosmiccore:dynamia"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"44BD916C3C1DF317"
+				"0E500AC04B5CE25F"
+			]
+			id: "4D9DC8539212C3F9"
+			tasks: [{
+				id: "2A63CC9E22DD136D"
+				item: "cosmiccore:nyxon"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5E1D369BFBEFC22E"]
+			id: "4D32AA9E6F5C80D3"
+			tasks: [{
+				id: "179DE332197B7BC0"
+				item: "cosmiccore:spectil"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"599804BD824DC5D8"
+				"4D32AA9E6F5C80D3"
+			]
+			id: "39E48F7D0735EE22"
+			tasks: [{
+				id: "64E84726A7E3384F"
+				item: "cosmiccore:chronia"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			id: "0E500AC04B5CE25F"
+			tasks: [{
+				id: "3D21FB4E0DB5CEC1"
+				item: "cosmiccore:pyrith"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["00BC8EACC0A65FAA"]
+			id: "599804BD824DC5D8"
+			tasks: [{
+				id: "134F17CBED9DF8B5"
+				item: "cosmiccore:nyxon"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -7.0d
 		}
 	]
 	title: "The Progenitor - [&3UV&7]"
