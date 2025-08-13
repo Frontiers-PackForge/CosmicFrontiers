@@ -467,6 +467,17 @@ ServerEvents.recipes(event => {
     W: '#forge:tools/wrenches',
     H: '#forge:tools/hammers'
   })
+  //Bee Box Controller
+  event.shaped('cosmiccore:wear_resistant_ruridit_casing', [
+    'FAF',
+    'WHW',
+    'FAF'
+  ], {
+    A: 'minecraft:beehive',
+    F: 'gtceu:stainless_steel_plate',
+    W: '#gtceu:circuits/ev',
+    H: 'gtceu:titanium_frame'
+  })
   //Cyclozine Casings
   event.recipes.gtceu.assembler('gtceu:cyclozine_casing_assem')
     .itemInputs(['gtceu:rhenium_frame', '6x gtceu:synthetic_pthanterum_plate'])
