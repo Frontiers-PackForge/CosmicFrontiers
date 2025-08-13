@@ -820,9 +820,10 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.UV], 5);
 
   event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_sol_steel_ingot' })
+  event.remove({ id: 'gtceu:vacuum_freezer/sol_steel' })
 
   event.recipes.gtceu.orbital_forge('sol_steel')
-    .itemInputs(['cosmiccore:hot_starmetal_ingot', '12x gtceu:naumannite_dust', 'gtceu:gravi_star'])
+    .itemInputs(['12x gtceu:naumannite_dust', '24x malum:infernal_spirit', '4x gtceu:europium_plasmites'])
     .inputFluids('gtceu:homeward_resin_plasma 2000')
     .inputFluids('gtceu:starlight 4000')
     .inputFluids('gtceu:sol_blood_plasma 2500')
