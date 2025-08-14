@@ -479,7 +479,7 @@ ServerEvents.recipes(event => {
     H: '#forge:tools/hammers'
   })
   //Bee Box Controller
-  event.shaped('cosmiccore:wear_resistant_ruridit_casing', [
+  event.shaped('cosmiccore:drone_station', [
     'FAF',
     'WHW',
     'FAF'

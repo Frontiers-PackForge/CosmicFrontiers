@@ -322,7 +322,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.ZPM]);
   event.recipes.gtceu.mana_engraver('frontiers:grading_fluid_6') // This Step is unested
     .notConsumable('cosmiccore:asc_blood_orb')
-    .itemInputs(['gtceu:trinanylon_6_6_dust', 'gtceu:neoprene_dust', 'gtceu:neutronium_dust', 'gtceu:synthetic_pthanterum_dust'])
+    .itemInputs(['gtceu:trinanylon_6_6_dust', 'gtceu:neoprene_dust', 'gtceu:graphene_plasmites', 'gtceu:synthetic_pthanterum_dust'])
     .inputFluids('gtceu:sterilized_lake_water 4000', 'gtceu:raw_growth_medium 1000', 'gtceu:argon_plasma 2000', 'gtceu:hydrogen 4000')
     .outputFluids('gtceu:grading_fluid_6 1000')
     .soulInput(50000)

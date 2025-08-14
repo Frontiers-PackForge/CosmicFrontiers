@@ -969,6 +969,22 @@ ServerEvents.recipes(event => {
       .EUt(GTValues.VA[GTValues.ZPM]))
     .EUt(GTValues.VA[GTValues.ZPM])
 
+  event.recipes.gtceu.assembly_line('frontiers:spirit_crucible')
+    .itemInputs(['cosmiccore:hellfire_foundry', '4x gtceu:atomic_casing', '2x gtceu:wetware_processor_mainframe', '2x cosmiccore:zpm_radio_module', '2x cosmiccore:zpm_radio_module', 'botania:rune_autumn', 'botania:rune_winter', 'botania:rune_spring', 'botania:rune_summer'])
+    .itemOutputs('cosmiccore:spirit_crucible')
+    .inputFluids(
+      'gtceu:high_grade_solder 2304',
+      'gtceu:grading_fluid_5 6000',
+      'gtceu:nylon_6_6 1152',
+      'gtceu:neoprene 576',
+    )
+    .duration(240)
+    .stationResearch(b => b
+      .researchStack('gtceu:hellfire_foundry')
+      .CWUt(250, 1500000)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .EUt(GTValues.VA[GTValues.ZPM])
+
   event.remove({ id: 'gtceu:assembly_line/electric_motor_uv' })
   event.remove({ id: 'gtceu:assembly_line/electric_piston_uv' })
   event.remove({ id: 'gtceu:assembly_line/conveyor_module_uv' })
