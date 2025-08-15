@@ -850,6 +850,16 @@ ServerEvents.recipes(event => {
     .duration(1300)
     .EUt(GTValues.VA[GTValues.UV]);
 
+  event.recipes.gtceu.orbital_forge('pure_trinavine_forging')
+    .itemInputs('gtceu:trinium_ingot')
+    .inputFluids('gtceu:tau_plasma 50')
+    .inputFluids('gtceu:xenon 250')
+    .itemOutputs('cosmiccore:hot_trinavine_ingot')
+    .dimension('frontiers:sun_orbit')
+    .circuit(7)
+    .blastFurnaceTemp(7000)
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.UV]);
 
   event.recipes.gtceu.laser_engraver('frontiers:sol_steel_cooling')
     .notConsumable('4x gtceu:zpm_emitter')
