@@ -980,7 +980,7 @@ ServerEvents.recipes(event => {
     )
     .duration(240)
     .stationResearch(b => b
-      .researchStack('gtceu:hellfire_foundry')
+      .researchStack('cosmiccore:hellfire_foundry')
       .CWUt(250, 1500000)
       .EUt(GTValues.VA[GTValues.ZPM]))
     .EUt(GTValues.VA[GTValues.ZPM])
