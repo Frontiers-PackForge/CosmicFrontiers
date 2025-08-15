@@ -37,7 +37,14 @@ title: Home
     3. You should see the modpack listed, click on it once, then navigate to the bottom right of the window and click `OK`, it will always install the latest official release.  
 
     ![Alt text](https://raw.githubusercontent.com/Frontiers-PackForge/CosmicFrontiers/refs/heads/main-1.20.1-Forge/docs/content/assets/prism2.png)
+    3.5. You will be prompted with optional mods you wish to enable, these are generally more performance heavy so keep that in mind, Chunky is used for chunk pregen. The Rest are solely cosmetic or visual.
+
+    ![Alt text](https://raw.githubusercontent.com/Frontiers-PackForge/CosmicFrontiers/refs/heads/main-1.20.1-Forge/docs/content/assets/prism3.png)  
     
+    Navigate to where your instance was installed in the main window, right click your instance, and select `edit`  
+    ![Alt text](https://raw.githubusercontent.com/Frontiers-PackForge/CosmicFrontiers/refs/heads/main-1.20.1-Forge/docs/content/assets/prism4.png)
+    
+
     !!! tip
         This Next Image Contains a lot! each step will be detailed below with a reasoning as to "WHY" we are doing this.
 
