@@ -12,8 +12,11 @@ title: Home
     
     If you can't find what you're looking for, feel free to ask us on [our Discord](https://discord.gg/fkxPAq9VQp).
 
-=== "Installation and Migration"
-    !!! question
+
+# <span style="font-size:40px; font-weight:bold; color:white"> Installing the Pack or Migrating </span>
+
+=== "<span style="font-size:20px; font-weight:bold; color:white"> First Time Install </span>"
+    !!! info
         Due to there being many launchers, the best recommended Experience is Java 21 and Prism Launcher Version 9+. (1)  
           { .annotate }
 
@@ -67,9 +70,24 @@ title: Home
 
 
     
-=== "Content"
+=== "<span style="font-size:20px; font-weight:bold; color:white"> Migrating Pack Versions </span>"
+    !!! tip "Unfamiliar? Check out the Install Guide if you are lost!"
+    <span style="font-size:30px; font-weight:bold; color:white"> The Easy Way </span>
 
-    PlaceHolder (1)
-    { .annotate }
+    1. Install the pack fresh, like usual.
+    2. Open the .minecraft folder of your old pack and your new pack by right-clicking and selecting `Folder`.
+    3. Copy your `saves` and `journeymap` folders and place them into your new instance.
+    (optional) 4. If you want your keybinds, copy and paste `options.txt` into the `minecraft` folder.
+    (optional) 5. If you want your EMI configuration, go into `config` and copy `emi.css` to your new `config` folder in your instance.
+    6. Go into your save folder, open your save file, and find the folder called `serverConfig` — delete it. This is required.
+    Note: If you are technically savvy enough to understand why we do this, please continue to do so and cherry-pick any saved changes you may have made yourself.
 
-    1.  PlaceHolder!
+    <span style="font-size:30px; font-weight:bold; color:white"> The Hard Way </span>
+
+    This generally riskier way of updating assumes you are a bit more skilled with file management.
+
+    1. Install the pack fresh again.
+    2. Open your new pack instance folder WITHOUT LAUNCHING.
+    3. Go to your old instance, delete `config`, `defaultconfigs`, `kubejs`, and `mods` (while saving anything relevant to you). 
+    4. From your new instance that you did not launch, copy all four of the same folders you just deleted into your old instance.
+    5. Go into your save folder, open your save file, and find the folder called `serverConfig` — delete it. This is required.
