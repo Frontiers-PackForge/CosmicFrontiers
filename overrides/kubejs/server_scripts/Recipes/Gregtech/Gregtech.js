@@ -628,16 +628,11 @@ ServerEvents.recipes(event => {
     .cleanroom(CleanroomType.CLEANROOM)
     .EUt(GTValues.VA[GTValues.ZPM]);
 
-  event.recipes.gtceu.assembler('gtceu:treated_wood_dust_shred')
+  event.recipes.gtceu.assembler('gtceu:steel_plated_bronze_casing_assem')
     .itemInputs(['gtceu:bronze_machine_casing', '4x gtceu:steel_rod', '4x gtceu:steel_plate'])
     .itemOutputs('2x cosmiccore:steel_plated_bronze_casing')
     .duration(40)
     .EUt(16);
-  event.recipes.gtceu.macerator('gtceu:treated_wood_dust_shred')
-    .itemInputs('gtceu:treated_wood_planks')
-    .itemOutputs('gtceu:treated_wood_dust')
-    .duration(40)
-    .EUt(8);
   //ManaSteel Stuff
   event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe')
     .itemInputs('botania:manasteel_ingot')
