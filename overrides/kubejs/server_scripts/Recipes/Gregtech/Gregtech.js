@@ -280,6 +280,12 @@ ServerEvents.recipes(event => {
     .itemOutputs('gtceu:firebrick')
     .duration(10)
     .EUt(8);
+  event.recipes.gtceu.alloy_smelter('firebrick_masonry_ch')
+    .itemInputs('gtceu:compressed_fireclay')
+    .itemInputs('gtceu:charcoal_dust')
+    .itemOutputs('gtceu:firebrick')
+    .duration(10)
+    .EUt(8);
   event.recipes.gtceu.electrolyzer('trifluoride_elec')
     .itemInputs('4x gtceu:antimony_trifluoride_dust')
     .itemOutputs('gtceu:antimony_dust')
