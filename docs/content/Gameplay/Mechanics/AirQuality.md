@@ -31,7 +31,7 @@ inventory and in the world. Use it if you're unsure of the air quality! </span>
 
 <span style="font-size:20px; font-weight:bold; color:white"> How to breathe 101: </span> <br>
 
-- Drink a potion of free breathing (NOT water breathing)
+- Drink a potion of free breathing (renamed from water breathing)
 - Use a respirator
 - Take a breath using an Air Bladder
-- You can create a small pocket of air with Soul Fire, Soul Toches, or Soul Campfires
+- You can create a small pocket of breathable air with Soul Fire, Soul Toches, or Soul Campfires
