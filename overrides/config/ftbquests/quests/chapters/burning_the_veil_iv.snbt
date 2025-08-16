@@ -1830,6 +1830,26 @@
 			x: 0.0d
 			y: -15.0d
 		}
+		{
+			dependencies: ["5A39803D8A6BF62D"]
+			description: [
+				"The Linked Terminal automatically pulls blocks from your AE2 system for building with a few exeptions."
+				""
+				"This terminal will never place hatches, you must locate the 2-3 miissing blocks on your structure where those may have been placed"
+				""
+				""
+				"It is likely to cause a small hiccup of performance for the larger structures, so don't spam-click it!"
+			]
+			id: "6FCCB7421CE9D6ED"
+			subtitle: "Be Careful"
+			tasks: [{
+				id: "4A4AEBF9BFB391D6"
+				item: "cosmiccore:linked_terminal"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.0d
+		}
 	]
 	title: "Burning the Veil [IV]"
 }

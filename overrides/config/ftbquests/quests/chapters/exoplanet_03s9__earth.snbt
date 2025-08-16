@@ -742,8 +742,12 @@
 				""
 				"Disabling Curated Configs/Difficulty Mods Will Invalidate this role."
 				""
-				"\"&l&aFrontiers Conqueror&r\" - Given to those who complete the pack with difficulty nerfs/changes"
-				"Your Prison was less hostile, your reward, partially hollow."
+				"\"&l&aFrontiers Conqueror&r\" - Given to those who complete the pack with difficulty nerfs/changes (Eg, disable temp, ae2 channels, mostly play peaceful etc)"
+				""
+				""
+				"&cDisclaimer; BOTH Dominator and Conqueror require time, dedication and passion from a user, while they may be seperate they are one of the same whole. DO NOT DISCRIMINATE OR LOOK DOWN ON&r"
+				"&cANYONE because of their choices. If i discover such behavior occuring when these roles are handed out. I will strip you of these roles faster than you ever got them.&r"
+				"~Ghost"
 			]
 			icon: "cosmiccore:donk"
 			id: "192AC19C353976D9"
@@ -812,48 +816,6 @@
 			y: 4.5d
 		}
 		{
-			description: [
-				"Replaced Better Combat with Epic Fight, Swap Combat Mode with \"R\" by default"
-				"Also configure your clientside features by opening the configs in the \"MODS\" tab"
-				""
-				"Fixed a bunch of random recipes"
-				"Added the last of the AE2 recipes"
-				"EV and IV are complete and ready for playing"
-				""
-				"&aCheckout a more detailed changelog with all changes on the github"
-			]
-			icon: "minecraft:writable_book"
-			id: "06070B096D0D65F5"
-			subtitle: "Changelogs 0.4.0 -> 0.5.0"
-			title: "Changelogs / Updates"
-			x: 1.5d
-			y: -5.5d
-		}
-		{
-			description: [
-				"Redid mods. Some food mods and other contents mods got the axe"
-				""
-				"Make sure to regen your aether dim if you had it generated."
-				""
-				"Fixed a variety of bugs in QB/Recipes/Progression Locks"
-				""
-				"LuV Progression is slowly being made. "
-				""
-				""
-				"NOTICE : THE QUESTBOOK WILL START ITS OVERHAUL SOON "
-				""
-				"EXPECT FINALIZED VERSIONS OF QUESTS  BETWEEN 0.5.1->0.7.0! ! !"
-				""
-				"THIS NOTICE WILL PERSIST UNTIL COMPLETION OF THE FIRST HALF OF THE QB CLEANUP!"
-			]
-			icon: "minecraft:writable_book"
-			id: "001ABD786A9CF26D"
-			subtitle: "Changelog 0.5.0 -> 0.5.1"
-			title: "Changelogs / Updates"
-			x: 2.5d
-			y: -5.5d
-		}
-		{
 			dependencies: ["4D96DE63E82D8EAA"]
 			description: [
 				"Don't worry your pack isn't broken, the questbook is hidden to prevent story spoilers!!!"
@@ -900,6 +862,31 @@
 			title: "Need a Light?"
 			x: 7.5d
 			y: 7.0d
+		}
+		{
+			description: [
+				"This is a brief overlook at what occured from 0.6 to 0.7"
+				""
+				""
+				"Questbook Cleanups"
+				"New Chains"
+				"New Content (LuV)"
+				"New Rebalances, Tweaks, and Changes"
+				"Plenty of Patches, Bugfixes and cleanups."
+				""
+				""
+				"QB is a bit rusty, i plan to ideally focus on that for 0.9 somewhat."
+			]
+			icon: "create:schematic_and_quill"
+			id: "419FDB1DA84AD143"
+			subtitle: "Hi"
+			tasks: [{
+				id: "56D8FCE812AA59ED"
+				type: "checkmark"
+			}]
+			title: "Changes from 0.6.0 -> 0.7.0"
+			x: 4.0d
+			y: 1.0d
 		}
 	]
 	subtitle: [

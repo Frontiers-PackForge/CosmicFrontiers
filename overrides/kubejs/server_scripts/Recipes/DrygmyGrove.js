@@ -66,4 +66,79 @@ ServerEvents.recipes(event => {
     .duration(600)
     .EUt(GTValues.VA[GTValues.EV]);
 
+  event.recipes.gtceu.drygmy_grove('grove_wilden')
+    .notConsumable('ars_nouveau:drygmy_charm')
+    .notConsumable('ars_nouveau:ritual_wilden_summon')
+    .itemOutputs('8x ars_nouveau:wilden_horn')
+    .itemOutputs('8x ars_nouveau:wilden_spike')
+    .itemOutputs('8x ars_nouveau:wilden_wing')
+    .duration(6000)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+  event.recipes.gtceu.drygmy_grove('grove_cow')
+    .notConsumable('ars_nouveau:drygmy_charm')
+    .notConsumable('minecraft:bucket')
+    .itemOutputs('8x minecraft:leather')
+    .itemOutputs('8x minecraft:beef')
+    .outputFluids('minecraft:milk 1000')
+    .duration(6000)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+  event.recipes.gtceu.drygmy_grove('grove_pig')
+    .notConsumable('ars_nouveau:drygmy_charm')
+    .notConsumable('gtceu:iron_knife')
+    .itemOutputs('8x farmersdelight:ham')
+    .itemOutputs('8x delightful:animal_fat')
+    .duration(6000)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+  event.recipes.gtceu.drygmy_grove('grove_chicken')
+    .notConsumable('ars_nouveau:drygmy_charm')
+    .notConsumable('minecraft:egg')
+    .itemOutputs('8x minecraft:egg')
+    .itemOutputs('8x minecraft:chicken')
+    .itemOutputs('8x minecraft:feather')
+    .duration(6000)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+  event.recipes.gtceu.drygmy_grove('grove_frog')
+    .notConsumable('ars_nouveau:drygmy_charm')
+    .notConsumable('minecraft:frogspawn')
+    .itemOutputs('8x minecraft:ochre_froglight')
+    .itemOutputs('8x minecraft:verdant_froglight')
+    .itemOutputs('8x minecraft:pearlescent_froglight')
+    .duration(6000)
+    .EUt(GTValues.VA[GTValues.EV]);
+  
+  event.recipes.gtceu.drygmy_grove('grove_ghast')
+    .notConsumable('ars_nouveau:drygmy_charm')
+    .notConsumable('minecraft:diamond')
+    .itemOutputs('8x minecraft:gunpowder')
+    .itemOutputs('8x minecraft:ghast_tear')
+    .duration(6000)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+  event.recipes.gtceu.drygmy_grove('grove_slime')
+    .notConsumable('ars_nouveau:drygmy_charm')
+    .notConsumable('botania:slime_bottle')
+    .itemOutputs('8x minecraft:slime_ball')
+    .duration(6000)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+  event.recipes.gtceu.drygmy_grove('grove_spider')
+    .notConsumable('ars_nouveau:drygmy_charm')
+    .notConsumable('biomesoplenty:spider_egg')
+    .itemOutputs('8x minecraft:string')
+    .itemOutputs('8x minecraft:spider_eye')
+    .duration(6000)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+  event.recipes.gtceu.drygmy_grove('grove_horse_obliterator')
+    .notConsumable('ars_nouveau:drygmy_charm')
+    .notConsumable('farmersdelight:horse_feed')
+    .itemOutputs('8x minecraft:leather')
+    .outputFluids('gtceu:glue 1000')
+    .duration(6000)
+    .EUt(GTValues.VA[GTValues.EV]);
+  
 })

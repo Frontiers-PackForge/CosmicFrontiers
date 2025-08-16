@@ -260,7 +260,15 @@ ServerEvents.recipes(event => {
     D: 'ae2:drive',
     B: 'gtceu:mv_conveyor_module'
   })
-
+ event.shaped('expatternprovider:me_packing_tape', [
+    'ASA',
+    'STS',
+    'ASA'
+  ], {
+    A: 'ae2:cable_anchor',
+    S: 'gtceu:polyethylene_foil',
+    T: 'gtceu:duct_tape',
+  })
 
 
   //Lord forgive me for what I'm about to make

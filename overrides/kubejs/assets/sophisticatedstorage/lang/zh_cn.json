@@ -1,0 +1,9 @@
+{
+    "block.sophisticatedstorage.iron_barrel":"%s%s锻铁桶",
+    "block.sophisticatedstorage.gold_barrel":"%s%s玫瑰金桶",
+    "block.sophisticatedstorage.iron_chest":"%s%s锻铁箱子",
+    "block.sophisticatedstorage.gold_chest":"%s%s玫瑰金箱子",
+    "item.sophisticatedstorage.basic_to_iron_tier_upgrade":"基础->锻铁升级",
+    "item.sophisticatedstorage.iron_to_gold_tier_upgrade":"锻铁->玫瑰金升级",
+    "item.sophisticatedstorage.gold_to_diamond_tier_upgrade":"玫瑰金->钻石升级"
+}

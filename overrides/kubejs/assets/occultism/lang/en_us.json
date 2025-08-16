@@ -11,14 +11,14 @@
     "item.occultism.ritual_dummy.craft_dimensional_mineshaft": "Ritual: Craft Weak Dimensional Mineshaft",
     "item.occultism.ritual_dummy.craft_dimensional_mineshaft.tooltip": "Allows extraction of basic runestones from an unknown language.",
     "item.occultism.miner_foliot_unspecialized.tooltip": "%s will extract random runes from an unknown dimension.",
-    "book.occultism.dictionary_of_spirits.frontiers.fusion_intro.demo.title": "Weak Fusion Ritual",
+    "book.occultism.dictionary_of_spirits.frontiers.fusion_intro.demo.title": "Basic Fusion Ritual",
     "book.occultism.dictionary_of_spirits.pentacles.basic_fusion.intro.title": "Basics of Soul Reinforcement",
     "book.occultism.dictionary_of_spirits.pentacles.basic_fusion.intro.text": "A Simple Ritual allowing you to assemble a vessle for your soul. \n It is nothing fancy but it should allow you to return from restricted enviroments with your soul.",
 
     "book.occultism.dictionary_of_spirits.pentacles.rune_writing.intro.title": "To Carve a Way Forward",
     "book.occultism.dictionary_of_spirits.pentacles.rune_writing.intro.text": "A Stable Ritual to aid in the etching of runes onto steel. You guess there is more effective ways to do this but they are currently lost on you.",
     "book.occultism.dictionary_of_spirits.pentacles.rune_writing.name" : "Rune Writing",
-    "book.occultism.dictionary_of_spirits.pentacles.basic_fusion.name" :  "Weak Fusion Ritual"
+    "book.occultism.dictionary_of_spirits.pentacles.basic_fusion.name" :  "Basic Fusion Ritual"
 
 
 
