@@ -124,32 +124,6 @@ ServerEvents.recipes(event => {
 
 
     let TreesFruit = [
-        'croptopia:almond',
-        'croptopia:apricot',
-        'croptopia:avocado',
-        'croptopia:banana',
-        'croptopia:cashew',
-        'croptopia:cherry',
-        'croptopia:coconut',
-        'croptopia:date',
-        'croptopia:dragonfruit',
-        'croptopia:fig',
-        'croptopia:grapefruit',
-        'croptopia:kumquat',
-        'croptopia:lemon',
-        'croptopia:lime',
-        'croptopia:mango',
-        'croptopia:nectarine',
-        'croptopia:nutmeg',
-        'croptopia:orange',
-        'croptopia:peach',
-        'croptopia:pear',
-        'croptopia:pecan',
-        'croptopia:persimmon',
-        'croptopia:plum',
-        'croptopia:starfruit',
-        'croptopia:walnut',
-        'croptopia:cinnamon'
     ]
 
     TreesFruit.forEach(tree => {
@@ -165,20 +139,6 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(GTValues.VA[GTValues.LV] / 2)
     })
-
-    event.recipes.gtceu.arboreal_growth_facility(`apple_nether_sediment`)
-        .notConsumable(`1x croptopia:apple_sapling`)
-        .notConsumable(`1x minecraft:dirt`)
-        .inputFluids(['gtceu:nether_sediment_sludge 50', 'gtceu:air 100'])
-        .itemOutputs('12x minecraft:oak_log', '3x minecraft:apple', '3x minecraft:stick')
-        .chancedOutput(`3x minecraft:oak_log`, 5000, 0)
-        .chancedOutput(`1x minecraft:apple`, 5000, 0)
-        .chancedOutput('1x minecraft:stick', 5000, 0)
-        .chancedOutput(`1x croptopia:apple_sapling`, 500, 0)
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.LV] / 2)
-
-
     let TreesArs = [
         'ars_nouveau:green_archwood',
         'ars_nouveau:purple_archwood',

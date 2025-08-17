@@ -216,10 +216,10 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM]);
 
     //This Recipe is Entirely a Shitpost. It's 25000 cheese and there's easier methods to get cheese but this is just FUNNY.
-    event.recipes.gtceu.fermenter(`croptopia:cheese_insane`)
+    event.recipes.gtceu.fermenter(`ad_astra:cheese_insane`)
         .itemInputs('64x cosmiccore:bifidobacterium_breve')
         .inputFluids('minecraft:milk 1000000')
-        .itemOutputs(`25000x croptopia:cheese`)
+        .itemOutputs(`25000x ad_astra:cheese`)
         .circuit(2)
         .duration(8390)
         .EUt(676767);
@@ -396,7 +396,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.biovat('frontiers:ecoli_dish')
         .itemInputs('8x cosmiccore:prepared_petri_dish')
-        .inputFluids('croptopia:soy_milk 1600', 'gtceu:agar 250')
+        .inputFluids('vegandelight:soymilk 16000', 'gtceu:agar 250')
         .outputFluids('gtceu:agar_sludge 75')
         .itemOutputs('8x cosmiccore:escherichia_coli_culture')
         .duration(440)
@@ -436,18 +436,24 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV]);
 
     event.recipes.gtceu.drygmy_grove('frontiers:summon_a_bajillion_crabs')
-        .notConsumable('croptopia:crab')
+        .notConsumable('crabbersdelight:clawster')
         .notConsumable('ars_nouveau:drygmy_charm')
         .inputFluids('gtceu:salt_water 50000')
-        .itemOutputs('croptopia:crab')
+        .itemOutputs('crabbersdelight:clawster')
         .duration(940)
         .EUt(GTValues.VA[GTValues.EV]);
 
     event.recipes.gtceu.extractor('frontiers:crab_juice')
-        .itemInputs('croptopia:crab')
+        .itemInputs('crabbersdelight:clawster')
         .outputFluids('gtceu:chitin 150')
         .duration(50)
         .EUt(GTValues.VA[GTValues.EV]);
+
+    event.recipes.gtceu.extractor(`vegandelight:soymilk`)
+        .itemInputs('vegandelight:soybean')
+        .outputFluids('vegandelight:soymilk 1000')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.mixer('frontiers:chitosan')
         .itemInputs('4x undergarden:ink_mushroom')

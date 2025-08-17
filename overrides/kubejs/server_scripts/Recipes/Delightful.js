@@ -42,9 +42,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'jei:/moredelight/farmersdelight/cutting/bread_slice' })
     event.remove({ id: 'moredelight:farmersdelight/cutting/bread_slice' })
     event.remove({ output: 'farmersdelight:stove' })
-    event.shapeless('croptopia:tuna_sandwich', [
-        'croptopia:tuna', 'minecraft:bread'
-    ])
     event.shaped('farmersdelight:stove', [
         'IGI',
         'BHB',
@@ -317,7 +314,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'farmersdelight:paper_from_tree_bark' })
     event.remove({ id: 'farmersdelight:painting_from_canvas' })
     event.remove({ id: 'farmersdelight:book_from_canvas' })
-    event.remove({ id: 'croptopia:noodle' })
+
     event.remove({ id: 'create:campfire_cooking/bread' })
     event.remove({ id: 'create:crafting/curiosities/cake' })
     event.remove({ id: 'farmersdelight:cutting/pufferfish' })

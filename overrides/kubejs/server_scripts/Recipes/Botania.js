@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
         .duration(300)
     //Spring Rune
     event.recipes.gtceu.mana_engraver('er_spring_rune')
-        .itemInputs(['gtceu:livingrock_plate', '4x minecraft:carrot', '4x farmersdelight:onion', '4x integrateddynamics:menril_sapling', '4x botania:rune_fire', '4x botania:rune_water', '2x gtceu:manasteel_plate', 'botania:pixie_dust', '4x croptopia:tea_leaves'])
+        .itemInputs(['gtceu:livingrock_plate', '4x minecraft:carrot', '4x farmersdelight:onion', '4x integrateddynamics:menril_sapling', '4x botania:rune_fire', '4x botania:rune_water', '2x gtceu:manasteel_plate', 'botania:pixie_dust', '4x delightful:green_tea_leaf'])
         .inputFluids('gtceu:potent_mana 8000')
         .circuit(1)
         .itemOutputs('12x botania:rune_spring')
@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
         .duration(200)
     //Autumn Rune
     event.recipes.gtceu.mana_engraver('er_autumn_rune')
-        .itemInputs(['gtceu:livingrock_plate', '4x minecraft:fermented_spider_eye', '4x croptopia:tea_leaves', '12x architects_palette:twisted_leaves', '4x botania:rune_fire', '4x botania:rune_air', '2x gtceu:manasteel_plate', 'botania:pixie_dust'])
+        .itemInputs(['gtceu:livingrock_plate', '4x minecraft:fermented_spider_eye', '4x delightful:green_tea_leaf', '12x architects_palette:twisted_leaves', '4x botania:rune_fire', '4x botania:rune_air', '2x gtceu:manasteel_plate', 'botania:pixie_dust'])
         .inputFluids('gtceu:potent_mana 8000')
         .circuit(1)
         .itemOutputs('12x botania:rune_autumn')
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
         .duration(200)
     //Winter Rune
     event.recipes.gtceu.mana_engraver('er_winter_rune')
-        .itemInputs(['gtceu:livingrock_plate', '4x farmersdelight:cake_slice', '4x gtceu:ice_dust', '4x minecraft:snow_block', '4x botania:rune_water', '4x botania:rune_earth', '2x gtceu:manasteel_plate', 'botania:pixie_dust', '4x croptopia:tea_leaves'])
+        .itemInputs(['gtceu:livingrock_plate', '4x farmersdelight:cake_slice', '4x gtceu:ice_dust', '4x minecraft:snow_block', '4x botania:rune_water', '4x botania:rune_earth', '2x gtceu:manasteel_plate', 'botania:pixie_dust', '4x delightful:green_tea_leaf'])
         .inputFluids('gtceu:potent_mana 8000')
         .circuit(1)
         .itemOutputs('12x botania:rune_winter')

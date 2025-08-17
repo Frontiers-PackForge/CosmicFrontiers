@@ -96,10 +96,6 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('cosmiccore:eschaton_processor_supercomputer', (item, advanced, text) => {
     text.add(2, Text.of('OPV-Tier Circuit'))
   })
-  event.addAdvanced('cosmiccore:eschaton_processor_mainframe', (item, advanced, text) => {
-    text.add(2, Text.of('MAX-Tier Circuit'))
-    text.add(3, Text.of('Can run Minecraft without lagging, satisfactory!').gray())
-  })
   event.addAdvanced('botania:mana_diamond', (item, advanced, text) => {
     text.add(1, Text.of('MaC₄').yellow())
   })

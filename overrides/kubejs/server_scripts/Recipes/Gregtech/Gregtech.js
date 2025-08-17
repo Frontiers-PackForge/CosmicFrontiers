@@ -332,7 +332,7 @@ ServerEvents.recipes(event => {
     .itemInputs('gtceu:moon_stone_dust')
     .itemOutputs('gtceu:silicon_dioxide_dust')
     .chancedOutput('gtceu:bauxite_dust', 3500, 0)
-    .chancedOutput('croptopia:cheese', 1500, 0)
+    .chancedOutput('ad_astra:cheese', 1500, 0)
     .outputFluids('gtceu:helium 120')
     .duration(160)
     .EUt(GTValues.VA[GTValues.MV] * 0.75);
