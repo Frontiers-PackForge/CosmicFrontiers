@@ -13,13 +13,7 @@ let yeet = (itemName) => {
 ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadah' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_naquadah_gas' })
-    event.remove({ id: 'gtceu:electric_blast_furnace/blast_enriched_naquadah' })
-    event.remove({ id: 'gtceu:electric_blast_furnace/enriched_naquadah_sulfate_separation' })
-    event.remove({ id: 'gtceu:orbital_forge/enriched_naquadah_sulfate_separation' })
-    event.remove({ id: 'gtceu:electric_blast_furnace/blast_enriched_naquadah_gas' })
 
-    event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_naquadah_ingot' })
-    event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_enriched_naquadah_ingot' })
     event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_naquadah_ingot' })
 
     event.recipes.gtceu.electrolyzer('indium_trifluoride_elec')
