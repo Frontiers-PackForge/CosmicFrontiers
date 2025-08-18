@@ -21,6 +21,9 @@
   "tagprefix.shiverstone": "Shiverstone %s Ore",
   "tagprefix.scoria": "Scoria %s Ore",
   "tagprefix.large_wire_spool": "Large %s Spool",
+  "tagprefix.shape_memory_foil": "%s Shape Memory Foil",
+  "tagprefix.alve_foil_insulator": "Alvefoil %s Insulator",
+
   "block.gtceu.lp_steam_masonry_oven": "Low Pressure Masonry Oven",
   "block.gtceu.hp_steam_masonry_oven": "High Pressure Masonry Oven",
   "block.gtceu.lv_masonry_oven": "Basic Masonry Oven",
