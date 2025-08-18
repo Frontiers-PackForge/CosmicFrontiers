@@ -2,13 +2,28 @@
 GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('hadalite_sludge') //Mixture of Thallium, Sulfates, and Obsidian Dust - Gross
+<<<<<<< Updated upstream:overrides/kubejs/startup_scripts/Materials/Holmium_Materials.js
         .liquid()
         .formula('Tl2S3(MgFeSi3O4)4(H20)')
         .color(0xf6fc9c).secondaryColor(0xa3a3a3)
+=======
+        .formula('Tl2S3(MgFeSi3O4)4(H2O)')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+>>>>>>> Stashed changes:overrides/kubejs/startup_scripts/Materials/UVProcessingMaterials.js
     event.create('sparkling_hadalite') //Add Carbonation to get rid of the Sulfates
         .liquid()
         .formula('Tl2(HCO3)6(MgFeSi3O4)4(H2O)')
+<<<<<<< Updated upstream:overrides/kubejs/startup_scripts/Materials/Holmium_Materials.js
         .color(0xf6fc9c).secondaryColor(0xa3a3a3)
+=======
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('rubidine_froth') //Rubidium Precursor and has more sulfates again due to higher quality extraction methods.
+        .formula('RbS3(H2O)')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+>>>>>>> Stashed changes:overrides/kubejs/startup_scripts/Materials/UVProcessingMaterials.js
     event.create('excited_hadalite') //Remove the Obsidian, blast the fuck with lasers, the latent holmium isn't happy
         .liquid()
         .formula('Tl2S3')
@@ -18,6 +33,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .formula('')
         .color(0xf6fc9c).secondaryColor(0xa3a3a3)
     event.create('holmium_rubidium_colloid') // Mixture of Rubidium Supercoolant and Holmium Slush
+<<<<<<< Updated upstream:overrides/kubejs/startup_scripts/Materials/Holmium_Materials.js
         .liquid()
         .formula('')
         .color(0xbd1593)
@@ -25,6 +41,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .formula('(H20)Ho')
         .color(0xbd6a95)
+=======
+        .formula('[RuHo]/H2O')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('holmium_solution') // Stable Solution of unchilled Holium Particles in water
+        .formula('(H2O)Ho')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+>>>>>>> Stashed changes:overrides/kubejs/startup_scripts/Materials/UVProcessingMaterials.js
     event.create('tauin_hexafluoroholmate') // Mixing Trinavine Plasmites, Fluorine and Holmium Solution sticks the holmium to the plasmites
         .liquid()
         .formula('?Lp(F6Ho)')
