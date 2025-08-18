@@ -181,14 +181,13 @@ ServerEvents.recipes( e => {
       'AAA'  
     ], {
       A: `gtceu:rose_gold_plate`, 
-      B: 'sophisticatedstorage:gold_chest',  
+      B: 'gtceu:aluminium_crate',  
       C: 'functionalstorage:copper_upgrade',
       D: '#forge:tools/hammers'
     }
     )
-
   e.recipes.gtceu.assembler('gold_upgrade_assembly')
-    .itemInputs(['functionalstorage:copper_upgrade', '5x gtceu:rose_gold_plate', '2x sophisticatedstorage:gold_chest', '#functionalstorage:drawer'])
+    .itemInputs(['functionalstorage:copper_upgrade', '5x gtceu:rose_gold_plate', '2x gtceu:aluminium_crate', '#functionalstorage:drawer'])
     .itemOutputs('functionalstorage:gold_upgrade')
     .duration(160)
     .EUt(16);
@@ -196,7 +195,7 @@ ServerEvents.recipes( e => {
     e.recipes.gtceu.assembler('functionalstorage:diamond_upgrade') 
            .itemInputs('functionalstorage:gold_upgrade')
            .itemInputs('4x gtceu:diamond_plate')
-           .itemInputs('2x sophisticatedstorage:diamond_chest')
+           .itemInputs('2x gtceu:stainless_steel_crate')
            .itemInputs('botania:mana_diamond_block')
            .itemOutputs('functionalstorage:diamond_upgrade')
            .duration(100)
@@ -204,7 +203,7 @@ ServerEvents.recipes( e => {
     e.recipes.gtceu.assembler('functionalstorage:netherite_upgrade') 
            .itemInputs('functionalstorage:diamond_upgrade')
            .itemInputs('2x minecraft:netherite_block')
-           .itemInputs('sophisticatedstorage:netherite_chest')
+           .itemInputs('gtceu:titanium_crate')
            .itemOutputs('functionalstorage:netherite_upgrade')
            .duration(100)
            .EUt(1920);
