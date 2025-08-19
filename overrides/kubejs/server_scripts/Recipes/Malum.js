@@ -220,7 +220,17 @@ ServerEvents.recipes(event => {
     'minecraft:cobblestone',
     'occultism:rune_ritual'
   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.raw_soul_stone_ritual")
-
+  //cthonic gold
+  event.remove({ id: 'malum:create/crushing/crush_rare_earths' })
+  event.recipes.occultism.ritual(
+    '16x malum:cthonic_gold_fragment',
+    ['malum:infernal_spirit',
+      'malum:raw_soulstone',
+      'gtceu:crushed_lead_ore',
+      'gtceu:crushed_gold_ore',],
+    'malum:hallowed_gold_ingot',
+    'occultism:rune_ritual'
+  ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.cthonic_gold_ritual")
 
 
  event.recipes.gtceu.spirit_crucible('frontiers:forge_3')
