@@ -6,6 +6,14 @@
 	group: "4B9C53F35CAB9BEE"
 	icon: "bloodmagic:altar"
 	id: "653B8423C4F4FB7B"
+	images: [{
+		height: 3.5d
+		image: "frontiers:textures/questimages/miscicons/wingedborder.png"
+		rotation: 0.0d
+		width: 3.5d
+		x: 0.0714285714285694d
+		y: -13.017857142857146d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

@@ -12,6 +12,14 @@
 		}
 	}
 	id: "725B72A265F32F12"
+	images: [{
+		height: 3.5d
+		image: "frontiers:textures/questimages/miscicons/wingedborder.png"
+		rotation: 0.0d
+		width: 3.5d
+		x: 0.035714285714291805d
+		y: -9.035714285714285d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -2467,7 +2475,7 @@
 				consume_items: true
 				count: 100000000L
 				id: "7935385F100D769B"
-				item: "croptopia:cheese"
+				item: "ad_astra:cheese"
 				type: "item"
 			}]
 			title: "The Quest for Infinite Cheese"
@@ -2901,8 +2909,8 @@
 			shape: "square"
 			subtitle: "You sell sea shells by the glow of the sun"
 			tasks: [{
-				id: "14B76345FDC1C5EF"
-				item: "croptopia:crab"
+				id: "2554B428AB87EECE"
+				item: "crabbersdelight:clawster"
 				type: "item"
 			}]
 			x: -6.0d
@@ -2935,6 +2943,8 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["71EE1119F936C025"]
+			hide_dependency_lines: true
 			id: "36C432DB5BEA82F4"
 			shape: "pentagon"
 			tasks: [{
