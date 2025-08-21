@@ -336,6 +336,14 @@ ItemEvents.tooltip(event => {
 
 ItemEvents.tooltip(event => {
 
+  event.addAdvanced('legendarysurvivaloverhaul:purified_water_bottle', (item, advanced, text) => {
+    text.add(1, Text.of('Recipes Do Not Work In Iron Furnaces').red())
+  })
+
+})
+
+ItemEvents.tooltip(event => {
+
   event.addAdvanced(/sophisticatedstorage:(.*)/, (item, advanced, text) => {
     text.add(1, Text.of('DEPRECATED DEPRECATED DEPRECATED').red().italic())
     text.add(2, Text.of('MOD REMOVAL IN 0.9.0').red().bold())
