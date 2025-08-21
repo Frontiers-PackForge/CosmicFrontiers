@@ -1,5 +1,5 @@
 console.log('[Malum.js loading]')
-let massHideMalum = ['malum:belt_of_the_prospector', 'malum:brilliant_stone', 'malum:natural_quartz_ore', 'malum:natural_quartz', 'malum:cthonic_gold_ore', 'malum:deepslate_soulstone_ore', 'malum:soulstone_ore', 'malum:brilliant_deepslate', 'malum:deepslate_quartz_ore', 'malum:blazing_quartz_ore']
+let massHideMalum = ['malum:belt_of_the_prospector', 'malum:brilliant_stone', 'malum:natural_quartz_ore', 'malum:natural_quartz', 'malum:cthonic_gold_ore', 'malum:deepslate_soulstone_ore', 'malum:soulstone_ore', 'malum:brilliant_deepslate', 'malum:deepslate_quartz_ore', 'malum:blazing_quartz_ore', /malum:(.*)_impetus/, /malum:(.*)_node/, 'malum:spirit_crucible', 'malum:spirit_catalyzer', ]
 
 ServerEvents.tags('item', event => {
   console.log('[14] - [1] - TAG-WATCHER')
@@ -220,6 +220,7 @@ ServerEvents.recipes(event => {
     'minecraft:cobblestone',
     'occultism:rune_ritual'
   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.raw_soul_stone_ritual")
+
   //cthonic gold
   event.remove({ id: 'malum:create/crushing/crush_rare_earths' })
   event.recipes.occultism.ritual(
@@ -231,6 +232,19 @@ ServerEvents.recipes(event => {
     'malum:hallowed_gold_ingot',
     'occultism:rune_ritual'
   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.cthonic_gold_ritual")
+
+  //impetus/spirit crucible removal
+  event.remove({ id: /malum:spirit_crucible(.*)/ })
+  event.remove({ id: /malum:impetus_creation(.*)/ })
+  event.remove({ id: /malum:node_focusing(.*)/ })
+  event.remove({ id: /malum:spirit_infusion(.*)_impetus/ })
+  event.remove({ id: /malum:(.*)_from_node_smelting/ })
+  event.remove({ id: /malum:(.*)_from_node_blasting/ })
+  event.remove({ id: 'malum:spirit_infusion/spirit_crucible' })
+  event.remove({ id: 'malum:spirit_infusion/spirit_catalyzer' })
+  event.remove({ id: 'malum:spirit_crucible/repair/metal_impetus_restoration' })
+  event.remove({ id: 'malum:spirit_crucible/repair/alchemical_impetus_restoration' })
+
 
 
  event.recipes.gtceu.spirit_crucible('frontiers:forge_3')
@@ -256,4 +270,5 @@ ServerEvents.recipes(event => {
 
 // Mass Removal
 console.log('[Malum.js finished loading]')
+
 
