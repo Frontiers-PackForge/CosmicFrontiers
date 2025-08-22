@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
        event.remove({ id: 'bhc:god_apple' })
        event.remove({ id: 'create:industrial_iron_block_from_ingots_iron_stonecutting' })
        event.remove({ id: 'biomesoplenty:tnt_from_bop_sand' })
-
+       event.remove({ id: 'terralith:observer_alt' })
 
        event.remove({ id: 'paraglider:paraglider' })
        event.remove({ id: 'gtceu:alloy_smelter/rubber_bar' })

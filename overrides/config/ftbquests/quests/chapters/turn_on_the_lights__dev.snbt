@@ -613,7 +613,7 @@
 			rewards: [{
 				count: 4
 				id: "6AA6AC202CA12144"
-				item: "ad_astra:ice_shard"
+				item: "cosmiccore:shard_of_perpetuity"
 				type: "item"
 			}]
 			subtitle: "The 2nd step"
