@@ -1166,8 +1166,8 @@
 			dependencies: ["482FC79E15210C24"]
 			id: "5A88249574FA8C51"
 			tasks: [{
-				id: "2458CF8A2106C4C2"
-				item: "gtceu:ionized_fulgorinth_alve_foil_insulator"
+				id: "386C0FFF283062E1"
+				item: "gtceu:enriched_naquadah_trinium_europium_duranide_alve_foil_insulator"
 				type: "item"
 			}]
 			x: 0.5d

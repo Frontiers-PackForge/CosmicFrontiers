@@ -1,0 +1,344 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "useful_baubles"
+	group: "49DCE46B3EB22AEA"
+	icon: "malum:necklace_of_the_watcher"
+	id: "3B3C3A999E10A52A"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "gtceu:bronze_machine_casing"
+			id: "7B4F0BE29E6CD211"
+			tasks: [{
+				id: "0A7F42BE385C1F52"
+				item: "gtceu:bronze_machine_casing"
+				type: "item"
+			}]
+			title: "Steam"
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7B4F0BE29E6CD211"]
+			id: "7461DC1FA0C21CBF"
+			tasks: [{
+				id: "54B55E3344B65B86"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			title: "LV Gear"
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7461DC1FA0C21CBF"]
+			id: "5CF68C4521A85ABE"
+			tasks: [{
+				id: "0AE25ED7F3D30088"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			title: "MV Gear"
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5CF68C4521A85ABE"]
+			id: "37AD6DDBBB513954"
+			tasks: [{
+				id: "3579A38006A42300"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			title: "HV Gear"
+			x: -8.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["37AD6DDBBB513954"]
+			id: "76CA225B7EDF0924"
+			tasks: [{
+				id: "346CB75851EA5C4A"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			title: "EV Gear"
+			x: -12.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["76CA225B7EDF0924"]
+			id: "17CFAED4B5733E27"
+			tasks: [{
+				id: "5ECF9A3D5EFA18DB"
+				item: "gtceu:iv_machine_hull"
+				type: "item"
+			}]
+			title: "IV Gear"
+			x: -12.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["17CFAED4B5733E27"]
+			id: "3CBBCDD95B39B1E3"
+			tasks: [{
+				id: "1EBE5008BEF2A4E0"
+				item: "gtceu:luv_machine_hull"
+				type: "item"
+			}]
+			title: "LuV Gear"
+			x: -12.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3CBBCDD95B39B1E3"]
+			id: "6BB6475D6BFC8BB2"
+			tasks: [{
+				id: "0D10FFABE892CD3C"
+				item: "gtceu:zpm_machine_hull"
+				type: "item"
+			}]
+			title: "ZPM Gear"
+			x: -9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6BB6475D6BFC8BB2"]
+			id: "6F5CEAAEDB9C1671"
+			tasks: [{
+				id: "4893B786D8DA0882"
+				item: "gtceu:uv_machine_hull"
+				type: "item"
+			}]
+			title: "UV Gear"
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["17CFAED4B5733E27"]
+			id: "1701E89B338BFD66"
+			tasks: [{
+				id: "4A46109D3F6DC9A5"
+				item: {
+					Count: 1
+					id: "gtceu:quarktech_helmet"
+					tag: {
+						Charge: 100000000L
+					}
+				}
+				type: "item"
+			}]
+			x: -11.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6BB6475D6BFC8BB2"]
+			id: "5AD0974242345CA3"
+			tasks: [{
+				id: "77780F7A7B8A4451"
+				item: {
+					Count: 1
+					id: "cosmiccore:sanguine_warptech_helmet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -10.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["37AD6DDBBB513954"]
+			id: "0A9EAB737C46B188"
+			tasks: [{
+				id: "746270808E15AE6F"
+				item: {
+					Count: 1
+					id: "gtceu:nanomuscle_helmet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0A9EAB737C46B188"]
+			id: "04A7D49C1A2FDAEE"
+			tasks: [{
+				id: "429C035AB9F9645D"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_nanomuscle_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1701E89B338BFD66"]
+			id: "3EDB71F5D600B0B1"
+			tasks: [{
+				id: "7BB0B2EF0309B345"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_quarktech_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -10.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["04A7D49C1A2FDAEE"]
+			id: "2F02678D151FDACD"
+			tasks: [{
+				id: "7E666FADF0D37A21"
+				item: {
+					Count: 1
+					id: "cosmiccore:space_advanced_nanomuscle_chestplate"
+					tag: {
+						Charge: 12800000L
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3EDB71F5D600B0B1"]
+			id: "2FECD3BA6CEB6DF8"
+			tasks: [{
+				id: "3E0ABC214471BDA7"
+				item: {
+					Count: 1
+					id: "cosmiccore:space_advanced_quarktech_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B4F0BE29E6CD211"]
+			id: "1BB491044EABC15B"
+			tasks: [{
+				id: "0196835D00FC7102"
+				item: "rehooked:wood_hook"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1BB491044EABC15B"]
+			id: "6A51727068306BC9"
+			tasks: [{
+				id: "40724E8C0B313898"
+				item: "rehooked:iron_hook"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"6A51727068306BC9"
+				"7461DC1FA0C21CBF"
+			]
+			id: "1F4CEA0EC2484A6B"
+			subtitle: "Requires : Cutter"
+			tasks: [{
+				id: "1530DF2CB278E04C"
+				item: "rehooked:diamond_hook"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6BB6475D6BFC8BB2"]
+			id: "29986EAA80AAFDEE"
+			tasks: [{
+				id: "7EAB79EBADE19531"
+				item: {
+					Count: 1
+					id: "cosmiccore:trinavine_meld_tool"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							DisableShields: 1b
+							Mode: 2b
+							RelocateMinedBlocks: 1b
+							RelocateMobDrops: 1b
+						}
+						GT.Tool: {
+							AttackDamage: 40.0f
+							AttackSpeed: 3.5f
+							Damage: 0
+							HarvestLevel: 6
+							MaxDamage: 8191
+							ToolSpeed: 20.0f
+						}
+						HideFlags: 2
+						Unbreakable: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7B4F0BE29E6CD211"]
+			id: "70FD03A814E0C91E"
+			tasks: [{
+				id: "0A6816EBD295B649"
+				item: {
+					Count: 1
+					id: "occultism:satchel"
+					tag: {
+						spiritName: "Rakgornmorn"
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7B4F0BE29E6CD211"]
+			id: "11356B860D9A1C04"
+			subtitle: "It's a quest reward in Steam."
+			tasks: [{
+				id: "3BBBCEAC8441BCFC"
+				item: {
+					Count: 1
+					id: "ae2:portable_item_cell_4k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7B4F0BE29E6CD211"]
+			id: "4B594DE220396249"
+			tasks: [{
+				id: "60E6CD86DDFEC523"
+				item: "toolbelt:belt"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.5d
+		}
+	]
+	title: "Useful Baubles"
+}
