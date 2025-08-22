@@ -26,6 +26,17 @@ yeet('occultism:copper_dust')
 yeet('occultism:silver_dust')
 yeet('occultism:obsidian_dust')
 yeet('occultism:crushed_end_stone')
+yeet('occultism:raw_silver_block')
+yeet('occultism:silver_block')
+yeet('occultism:silver_nugget')
+yeet('occultism:raw_silver')
+yeet('occultism:silver_ore')
+yeet('occultism:silver_ore_deepslate')
+yeet('occultism:dimensional_matrix')
+yeet('occultism:storage_controller')
+yeet('occultism:storage_controller_base')
+yeet('occultism:storage_stabilizer_tier1')
+yeet('occultism:storage_stabilizer_tier2')
 yeet('occultism:storage_stabilizer_tier3')
 yeet('occultism:storage_stabilizer_tier4')
 
@@ -74,7 +85,7 @@ ServerEvents.recipes(event => {
     'TC ',
   ], {
     T: 'gtceu:talc_dust',
-    C: 'gtceu:ash_dust'
+    C: '#forge:dusts/ash'
   })
 
   event.shaped('occultism:magic_lamp_empty', [
@@ -85,7 +96,6 @@ ServerEvents.recipes(event => {
     T: 'gtceu:double_iesnium_plate',
     C: 'gtceu:double_silver_plate'
   })
-  event.remove({ id: 'occultism:crafting/storage_controller' })
   //Iesnium Pickaxe
   event.remove({ id: 'occultism:crafting/iesnium_pickaxe' })
   event.shaped('occultism:iesnium_pickaxe', [
@@ -161,16 +171,37 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:creosote 1000')
     .itemOutputs('occultism:chalk_white')
     .duration(3000)
+  event.recipes.gtceu.electric_blast_furnace('chalk_purify_ebf')
+    .itemInputs(['occultism:chalk_white_impure','4x gtceu:calcite_dust'])
+    .inputFluids('gtceu:oxygen 250')
+    .itemOutputs('occultism:chalk_white')
+    .blastFurnaceTemp(800)
+    .duration(700)
+    .EUt(128)
   event.recipes.gtceu.industrial_primitive_blast_furnace('chalk_bake_red_ipbf')
     .itemInputs(['occultism:chalk_white_impure', '3x gtceu:raw_pyrope', '3x occultism:afrit_essence'])
     .inputFluids('gtceu:creosote 1000')
     .itemOutputs('occultism:chalk_red_impure')
     .duration(1500)
+  event.recipes.gtceu.electric_blast_furnace('chalk_bake_red_ebf')
+    .itemInputs(['occultism:chalk_white_impure', '3x gtceu:raw_pyrope', '3x occultism:afrit_essence'])
+    .inputFluids('gtceu:oxygen 250')
+    .itemOutputs('occultism:chalk_red_impure')
+    .blastFurnaceTemp(800)
+    .duration(500)
+    .EUt(128)
   event.recipes.gtceu.industrial_primitive_blast_furnace('yellow_chalk_melding_ipbf')
     .itemInputs(['occultism:chalk_white_impure', 'gtceu:ancient_debris_dust', '2x gtceu:gold_sulfide_amalgam_dust'])
     .inputFluids('gtceu:creosote 1000')
     .itemOutputs('occultism:chalk_gold_impure')
     .duration(800)
+  event.recipes.gtceu.electric_blast_furnace('yellow_chalk_melding_ebf')
+    .itemInputs(['occultism:chalk_white_impure', 'gtceu:ancient_debris_dust', '2x gtceu:gold_sulfide_amalgam_dust'])
+    .inputFluids('gtceu:oxygen 250')
+    .itemOutputs('occultism:chalk_gold_impure')
+    .blastFurnaceTemp(800)
+    .duration(300)
+    .EUt(128)
   event.recipes.gtceu.industrial_primitive_blast_furnace('purple_chalk_melding_ipbf')
     .itemInputs(['occultism:chalk_white_impure', '8x gtceu:soulresin_ingot', '4x gtceu:cinderwax_ingot'])
     .inputFluids('gtceu:creosote 1000')
@@ -263,21 +294,6 @@ ServerEvents.recipes(event => {
     "gtceu:gold_dust",
     'occultism:basic_fusion'
   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.fusion_ritual.gold_glob")
-  event.remove({ id: 'occultism:ritual/craft_storage_controller_base' })
-  event.recipes.occultism.ritual(
-    'occultism:storage_controller_base',
-    ['gtceu:double_gold_plate',
-      'gtceu:double_gold_plate',
-      'gtceu:double_gold_plate',
-      'gtceu:double_gold_plate',
-      'gtceu:double_gold_plate',
-      'gtceu:double_gold_plate',
-      'gtceu:double_gold_plate',
-      'gtceu:double_gold_plate',
-    ],
-    'occultism:otherstone_pedestal',
-    'occultism:craft_foliot'
-  ).dummy('occultism:ritual_dummy/craft_storage_controller_base').id("occultism:frontiers.fusion_ritual.actuator_base")
   event.remove({ id: 'occultism:ritual/craft_dimensional_mineshaft' })
   event.recipes.occultism.ritual(
     'occultism:dimensional_mineshaft',
