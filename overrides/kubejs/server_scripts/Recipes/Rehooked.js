@@ -66,7 +66,11 @@ ServerEvents.recipes( event => {
         'R H'
     ],{
         H: 'rehooked:iron_hook',
+<<<<<<< Updated upstream
         P: 'gtceu:kanthal_rod',
+=======
+        P: 'gtceu:galvanized_ethersteel_rod',
+>>>>>>> Stashed changes
         R: 'minecraft:redstone_block'
     })
     //ender_hook => MV
