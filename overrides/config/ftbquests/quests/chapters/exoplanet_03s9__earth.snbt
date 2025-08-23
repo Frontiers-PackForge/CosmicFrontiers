@@ -54,9 +54,7 @@
 				id: "gtceu:hsse_hammer"
 				tag: {
 					Damage: 0
-					GT.Tool: {
-						Damage: 0
-					}
+					GT.Tool: { }
 				}
 			}
 			id: "4D96DE63E82D8EAA"
@@ -226,6 +224,7 @@
 				Count: 1
 				id: "gtceu:steel_mining_hammer"
 				tag: {
+					Damage: 0
 					DisallowContainerItem: 0b
 					GT.Behaviours: {
 						AoEColumn: 1
@@ -237,7 +236,6 @@
 						TorchPlacing: 1b
 					}
 					GT.Tool: {
-						Damage: 0
 						HarvestLevel: 3
 						MaxDamage: 1535
 						ToolSpeed: 6.0f
@@ -252,6 +250,7 @@
 					Count: 1
 					id: "gtceu:steel_mining_hammer"
 					tag: {
+						Damage: 0
 						DisallowContainerItem: 0b
 						GT.Behaviours: {
 							AoEColumn: 1
@@ -262,7 +261,6 @@
 							MaxAoERow: 1
 						}
 						GT.Tool: {
-							Damage: 0
 							HarvestLevel: 3
 							MaxDamage: 1535
 							ToolSpeed: 6.0f
@@ -354,9 +352,7 @@
 						id: "gtceu:iron_hammer"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					id: "3CD086DF3214B1FB"
@@ -376,9 +372,7 @@
 						id: "gtceu:iron_wrench"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					id: "1FCEBF1D7C6D4F12"
@@ -398,9 +392,7 @@
 						id: "gtceu:iron_file"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					id: "53845C521325E232"
@@ -420,9 +412,7 @@
 						id: "gtceu:iron_saw"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					id: "4BCF77A595638786"
@@ -442,9 +432,7 @@
 						id: "gtceu:iron_screwdriver"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					id: "4A1A547444B29038"
@@ -464,9 +452,7 @@
 						id: "gtceu:iron_mortar"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					id: "32F31D914A67040F"
@@ -486,9 +472,7 @@
 						id: "gtceu:iron_wire_cutter"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					id: "3F6E0509177C8A6F"

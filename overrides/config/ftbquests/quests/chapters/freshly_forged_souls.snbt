@@ -116,8 +116,8 @@
 				item: "cosmiccore:ichorium_ingot"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -9.5d
+			x: -4.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["729E3A063736105A"]
@@ -248,8 +248,8 @@
 				item: "cosmiccore:ethera"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -3.5d
+			x: -6.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -410,8 +410,8 @@
 				item: "gtceu:uhv_electric_motor"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -11.5d
+			x: -1.5d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -901,6 +901,7 @@
 			id: "754B08E28142469D"
 			shape: "octagon"
 			size: 1.75d
+			subtitle: "TODO: "
 			tasks: [{
 				id: "79C07E07B4973990"
 				item: "gtceu:naquahine_modular_shelling"
@@ -1159,7 +1160,7 @@
 				item: "cosmiccore:harmonic_processor_mainframe"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 5.5d
 			y: -15.0d
 		}
 		{
