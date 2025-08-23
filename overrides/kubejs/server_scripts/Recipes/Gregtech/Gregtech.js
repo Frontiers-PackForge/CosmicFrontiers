@@ -52,6 +52,10 @@ yeet('projectred_transmission:low_load_framed_power_wire')
 yeet('projectred_core:electrotine_generator')
 yeet('projectred_core:electrotine_dust')
 
+
+yeet('trials:crafter')
+
+
 yeet(/gtceu:(.*)butchery_knife$/)
 
 

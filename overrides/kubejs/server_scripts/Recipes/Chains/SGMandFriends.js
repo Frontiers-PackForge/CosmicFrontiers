@@ -44,7 +44,9 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:oxolane 1000', 'gtceu:ammonia 1000', 'gtceu:butene 2000')
         .outputFluids('gtceu:pyrrole 1000', 'minecraft:water 1000', 'gtceu:butane 2000')
         .duration(240)
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .perTick(true)
+        .sterileInput('gtceu:chlorine_plasma 1')
+        .perTick(false)
         .EUt(GTValues.VA[GTValues.IV]);
 
     event.recipes.gtceu.industrial_chemvat('frontiers:prophine')
@@ -52,7 +54,9 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:hydrogen 6000', 'minecraft:water 4000')
         .itemOutputs('gtceu:prophine_dust')
         .duration(180)
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .perTick(true)
+        .sterileInput('gtceu:chlorine_plasma 1')
+        .perTick(false)
         .EUt(GTValues.VA[GTValues.IV]);
 
     //This is an Extremely Lossy Step.
@@ -67,7 +71,9 @@ ServerEvents.recipes(event => {
             .researchStack('cosmiccore:sculk_fibroblast')
             .CWUt(16)
             .EUt(GTValues.VA[GTValues.ZPM]))
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .perTick(true)
+        .sterileInput('gtceu:chlorine_plasma 1')
+        .perTick(false)
         .EUt(GTValues.VA[GTValues.LuV]);
 
     event.recipes.gtceu.industrial_chemvat('frontiers:raw_growth_medium')
@@ -76,7 +82,9 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:raw_growth_medium 32000')
         .itemOutputs('5x gtceu:phosphate_dust')
         .duration(1239)
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .perTick(true)
+        .sterileInput('gtceu:chlorine_plasma 1')
+        .perTick(false)
         .EUt(GTValues.VA[GTValues.UV]);
     //Blood Portion (Globules etc)
     event.recipes.gtceu.centrifuge('frontiers:glob_to_blood')
@@ -84,7 +92,9 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:fungal_blood 125', 'gtceu:blood_plasma 125')
         .chancedOutput('gtceu:meat_dust', 2500, 0)
         .duration(650)
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .perTick(true)
+        .sterileInput('gtceu:chlorine_plasma 1')
+        .perTick(false)
         .EUt(GTValues.VA[GTValues.IV]);
 
     event.recipes.gtceu.centrifuge('frontiers:blood_plasma_to_other_stuff')
