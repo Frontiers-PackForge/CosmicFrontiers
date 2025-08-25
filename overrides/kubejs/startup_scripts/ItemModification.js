@@ -1,4 +1,4 @@
-const $UUID = Java.loadClass("java.util.UUID")
+const $UUID = Java.loadClass("java.util.UUID");
 let uuid = $UUID.randomUUID();
 
 ItemEvents.modification(event => {
@@ -144,8 +144,6 @@ ItemEvents.modification(event => {
         item.addAttribute("malum:soul_ward_recovery_rate", '7bb55156-4d51-424a-b9a1-e3bdf565bfff', 'recovery-rate7', 3.0, "addition")
       })
       //Sanguines
-
-      //Quarktechs
       event.modify('cosmiccore:sanguine_warptech_helmet', item => {
         item.armorProtection = 10.0
         item.addAttribute("malum:soul_ward_capacity", 'e9cb771d-aa94-46ec-a13e-4863d77799c8', 'ward-capacity7', 15.5, "addition")
@@ -166,5 +164,337 @@ ItemEvents.modification(event => {
         item.addAttribute("malum:soul_ward_capacity", '40f284b0-4b8a-4629-9736-34c66f653e3e', 'ward-capacity7', 15.5, "addition")
         item.addAttribute("malum:soul_ward_recovery_rate", '40f284b0-4b8a-4629-9736-34c66f653e3e', 'recovery-rate7', 3.0, "addition")
       })
-
+      //logic for some of these is its a worse armor so it should have better thermal res to make you want to use it, and also better armor = better res
+      //malum
+      //soulstained
+      event.modify('malum:soul_stained_steel_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 2, "addition")
+      })
+      event.modify('malum:soul_stained_steel_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 2, "addition")
+      })
+      event.modify('malum:soul_stained_steel_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 2, "addition")
+      })
+      event.modify('malum:soul_stained_steel_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 1, "addition")
+      })
+      //soul hunter
+      event.modify('malum:soul_hunter_cloak', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 2, "addition")
+      })
+      event.modify('malum:soul_hunter_robe', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 2, "addition")
+      })
+      event.modify('malum:soul_hunter_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 2, "addition")
+      })
+      event.modify('malum:soul_hunter_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 2, "addition")
+      })
+      //malignant
+      event.modify('malum:malignant_stronghold_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      event.modify('malum:malignant_stronghold_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      event.modify('malum:malignant_stronghold_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      event.modify('malum:malignant_stronghold_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      //create
+      event.modify('create:copper_backtank', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 2, "addition")
+      })
+      event.modify('create:netherite_backtank', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 2, "addition")
+      })
+      event.modify('create:netherite_diving_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 2, "addition")
+      })
+      event.modify('create:netherite_diving_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 2, "addition")
+      })
+      event.modify('create:copper_diving_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 2, "addition")
+      })
+      event.modify('create:copper_diving_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 2, "addition")
+      })
+      //minecraft
+      event.modify('minecraft:turtle_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 2, "addition")
+      })
+      //cognition
+      event.modify('experienceobelisk:cognitive_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 2, "addition")
+      })
+      event.modify('experienceobelisk:cognitive_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 2, "addition")
+      })
+      event.modify('experienceobelisk:cognitive_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 2, "addition")
+      })
+      event.modify('experienceobelisk:cognitive_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 2, "addition")
+      })
+      //botania
+      //mana steel
+      event.modify('botania:manasteel_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 3, "addition")
+      })
+      event.modify('botania:manasteel_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 3, "addition")
+      })
+      event.modify('botania:manasteel_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 3, "addition")
+      })
+      event.modify('botania:manasteel_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 3, "addition")
+      })
+      //elementium
+      event.modify('botania:elementium_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 7, "addition")
+      })
+      event.modify('botania:elementium_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 7, "addition")
+      })
+      event.modify('botania:elementium_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 7, "addition")
+      })
+      event.modify('botania:elementium_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 7, "addition")
+      })
+      //terrasteel
+      event.modify('botania:terrasteel_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 5, "addition")
+      })
+      event.modify('botania:terrasteel_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 5, "addition")
+      })
+      event.modify('botania:terrasteel_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 5, "addition")
+      })
+      event.modify('botania:terrasteel_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 5, "addition")
+      })
+      //aether
+      //zanite
+      event.modify('aether:zanite_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 3, "addition")
+      })
+      event.modify('aether:zanite_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 3, "addition")
+      })
+      event.modify('aether:zanite_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 3, "addition")
+      })
+      event.modify('aether:zanite_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 3, "addition")
+      })
+      //gravitite
+      event.modify('aether:gravitite_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 4, "addition")
+      })
+      event.modify('aether:gravitite_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 4, "addition")
+      })
+      event.modify('aether:gravitite_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 4, "addition")
+      })
+      event.modify('aether:gravitite_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 4, "addition")
+      })
+      //neptune
+      event.modify('aether:neptune_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 4, "addition")
+      })
+      event.modify('aether:neptune_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 4, "addition")
+      })
+      event.modify('aether:neptune_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 4, "addition")
+      })
+      event.modify('aether:neptune_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 4, "addition")
+      })   
+      //valkyrie
+      event.modify('aether:valkyrie_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 4, "addition")
+      })
+      event.modify('aether:valkyrie_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 4, "addition")
+      })
+      event.modify('aether:valkyrie_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 4, "addition")
+      })
+      event.modify('aether:valkyrie_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 4, "addition")
+      })    
+      //phoenix
+      event.modify('aether:phoenix_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 5, "addition")
+      })
+      event.modify('aether:phoenix_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 5, "addition")
+      })
+      event.modify('aether:phoenix_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 5, "addition")
+      })
+      event.modify('aether:phoenix_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 5, "addition")
+      })
+      //obsidian
+      event.modify('aether:obsidian_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
+      })
+      event.modify('aether:obsidian_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
+      })
+      event.modify('aether:obsidian_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
+      })
+      event.modify('aether:obsidian_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
+      })  
+      //gloves <<< needs LSO to be updated
+      //event.modify('aether:leather_gloves', item => {
+      //  item.addAttribute("legendarysurvivaloverhaul:cold_resistance", $UUID.randomUUID().toString(), 'cold-resistance', 1, "addition")
+      //})
+      //undergarden
+      //cloggrum
+      event.modify('undergarden:cloggrum_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 3, "addition")
+      })
+      event.modify('undergarden:cloggrum_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 3, "addition")
+      })
+      event.modify('undergarden:cloggrum_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 3, "addition")
+      })
+      event.modify('undergarden:cloggrum_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 3, "addition")
+      })
+      //froststeel
+      event.modify('undergarden:froststeel_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
+      })
+      event.modify('undergarden:froststeel_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
+      })
+      event.modify('undergarden:froststeel_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
+      })
+      event.modify('undergarden:froststeel_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
+      })   
+      //utherium
+      event.modify('undergarden:utherium_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 4, "addition")
+      })
+      event.modify('undergarden:utherium_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 4, "addition")
+      })
+      event.modify('undergarden:utherium_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 4, "addition")
+      })
+      event.modify('undergarden:utherium_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 4, "addition")
+      })   
+      //ancient
+      event.modify('undergarden:ancient_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 7, "addition")
+      })
+      event.modify('undergarden:ancient_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 7, "addition")
+      })
+      event.modify('undergarden:ancient_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 7, "addition")
+      })
+      event.modify('undergarden:ancient_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 7, "addition")
+      })    
+      //gtm
+      //bronze
+      event.modify('gtceu:bronze_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 1, "addition")
+      })
+      event.modify('gtceu:bronze_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 1, "addition")
+      })
+      event.modify('gtceu:bronze_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 1, "addition")
+      })
+      event.modify('gtceu:bronze_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 1, "addition")
+      })  
+      //steel
+      event.modify('gtceu:steel_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 2, "addition")
+      })
+      event.modify('gtceu:steel_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 2, "addition")
+      })
+      event.modify('gtceu:steel_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 2, "addition")
+      })
+      event.modify('gtceu:steel_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 2, "addition")
+      })   
+      //titanium
+      event.modify('gtceu:titanium_helmet', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      event.modify('gtceu:titanium_chestplate', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      event.modify('gtceu:titanium_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      event.modify('gtceu:titanium_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })  
+      //ars (idt i can get the dif tiers to have dif resistances as its done by tags)
+      //sorcerer
+      event.modify('ars_nouveau:sorcerer_hood', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      event.modify('ars_nouveau:sorcerer_robes', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      event.modify('ars_nouveau:sorcerer_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      event.modify('ars_nouveau:sorcerer_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      }) 
+      //arcanist
+      event.modify('ars_nouveau:arcanist_hood', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      event.modify('ars_nouveau:arcanist_robes', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      event.modify('ars_nouveau:arcanist_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      event.modify('ars_nouveau:arcanist_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      }) 
+      //battlemage
+      event.modify('ars_nouveau:battlemage_hood', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      event.modify('ars_nouveau:battlemage_robes', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      event.modify('ars_nouveau:battlemage_leggings', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      })
+      event.modify('ars_nouveau:battlemage_boots', item => {
+        item.addAttribute("legendarysurvivaloverhaul:thermal_resistance", $UUID.randomUUID().toString(), 'thermal-resistance', 3, "addition")
+      }) 
     })
