@@ -378,18 +378,18 @@ ItemEvents.modification(event => {
       event.modify('undergarden:cloggrum_boots', item => {
         item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 3, "addition")
       })
-      //froststeel
-      event.modify('undergarden:froststeel_helmet', item => {
-        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
-      })
-      event.modify('undergarden:froststeel_chestplate', item => {
-        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
-      })
-      event.modify('undergarden:froststeel_leggings', item => {
-        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
-      })
-      event.modify('undergarden:froststeel_boots', item => {
-        item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
+      //froststeel < doesnt work, probably hardcoded or something
+      //event.modify('undergarden:froststeel_helmet', item => {
+      //  item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
+      //})
+      //event.modify('undergarden:froststeel_chestplate', item => {
+      //  item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
+      //})
+      //event.modify('undergarden:froststeel_leggings', item => {
+      //  item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
+      //})
+      //event.modify('undergarden:froststeel_boots', item => {
+      //  item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
       })   
       //utherium
       event.modify('undergarden:utherium_helmet', item => {
