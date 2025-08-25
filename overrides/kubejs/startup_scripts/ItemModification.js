@@ -390,7 +390,7 @@ ItemEvents.modification(event => {
       //})
       //event.modify('undergarden:froststeel_boots', item => {
       //  item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 5, "addition")
-      })   
+      //})   
       //utherium
       event.modify('undergarden:utherium_helmet', item => {
         item.addAttribute("legendarysurvivaloverhaul:heat_resistance", $UUID.randomUUID().toString(), 'heat-resistance', 4, "addition")
