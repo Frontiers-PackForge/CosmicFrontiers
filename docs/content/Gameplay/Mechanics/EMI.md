@@ -29,7 +29,22 @@ this one, will not be possible without taking a stupid amount of time.
 Those are your bookmarks. Hover your mouse over an item in the regular item list (the right one. get it?) and press `A` on your keyboard. You've just saved this
 item for future use. Now you don't have to search up this item for its recipe every 4.3 seconds!
 
-<!--> add bookmarks photo </!-->
+<br>
+![Alt text](https://raw.githubusercontent.com/Frontiers-PackForge/CosmicFrontiers/refs/heads/main-1.20.1-Forge/docs/content/assets/EMIBookmarks.png)
+<br>
+
+### <span style="font-size:20px; font-weight:bold; color:white"> The Search Bar </span><br>
+The search bar is the most used tool you will use on your journey. As its name implies, it allows you to seach the item you need in EMI. It may seem simple, but
+there are some pretty nifty functions that you can use to aid in your search for the item you want.
+
+| Function | Description                                |
+| -------- | -------------------------------------------|
+| `@`      | Seaches by mod name                        |
+| `#`      | Searches by item tags                      |
+| `$`      | Searches by item description               |
+| `|`      | (or) Used to search mutiple items at once. |
+!!! Info
+    `|` is the long bar that's on the same key as `backslash`
 
 ### <span style="font-size:20px; font-weight:bold; color:white"> EMI's Crafting Tree </span><br>
 One of EMI's most prominent features is its crafting tree. Save some recipes and a full tree with all the resources you need to craft that item will be generated. It's able
@@ -63,6 +78,3 @@ Here's how to get started with crafting trees:
 
 Now you have your recipe tree! Hover your mouse over the `x1` to adjust batch size. EMI will automatically calculate everything for you, including the machines you need,
 any circuit numbers/catalysts, fluids, the total cost, and it will also display the leftover items. 
-
-### <span style="font-size:20px; font-weight:bold; color:white"> The Search Bar </span><br>
-search bar stuff
