@@ -11,3 +11,5 @@ title: The Stone Age
     
     
 <span style="font-size:35px; font-weight:bold; color:white"> The Stone Age </span> 
+
+<span style="font-size:20px; color: white"><i> Your new journey begins here. </i></span>
