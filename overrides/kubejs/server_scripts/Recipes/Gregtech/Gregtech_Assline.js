@@ -190,16 +190,16 @@ ServerEvents.recipes(event => {
     .duration(800)
     .EUt(GTValues.VA[GTValues.LuV])
 
-  //CleanroomMaintHatch
+  //CleanroomMaintHatch Temp Recipe until i smooth over balancing
   event.remove({ id: 'gtceu:shaped/maintenance_hatch_cleaning' })
   event.recipes.gtceu.assembly_line('clean_hatch_assemblyline')
-    .itemInputs(['64x gtceu:plascrete', '64x gtceu:plascrete', '16x gtceu:filter_casing', '16x gtceu:hssg_spring', '4x #gtceu:circuits/luv', '4x gtceu:luv_robot_arm', 'gtceu:auto_maintenance_hatch', 'gtceu:cleanroom', 'gtceu:luv_diode'])
+    .itemInputs(['64x gtceu:plascrete', '64x gtceu:plascrete', '16x gtceu:filter_casing', '16x gtceu:hssg_spring', '4x #gtceu:circuits/luv', '4x gtceu:luv_robot_arm', 'gtceu:maintenance_hatch', 'gtceu:cleanroom', 'gtceu:luv_diode'])
     .itemOutputs('gtceu:cleaning_maintenance_hatch')
     .inputFluids(
       Fluid.of('gtceu:high_grade_solder', 1440),
       Fluid.of('gtceu:argon', 16000)
     )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:auto_maintenance_hatch')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:maintenance_hatch')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
     .duration(600)
     .EUt(GTValues.VA[GTValues.IV])
     .removePreviousMaterialInfo()
@@ -373,6 +373,7 @@ ServerEvents.recipes(event => {
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:luv_machine_hull')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
     .duration(300)
     .EUt(GTValues.VA[GTValues.LuV])
+
   event.recipes.gtceu.assembly_line('zpm_hull_assline_casing')
     .itemInputs(['gtceu:zpm_machine_casing', '8x cosmiccore:naquadric_superalloy_plate', '4x cosmiccore:double_neutronite_plate', '8x cosmiccore:trinavine_screw', '#gtceu:circuits/ev', '2x cosmiccore:trinavine_quadruple_cable'])
     .itemOutputs('gtceu:zpm_machine_hull')
@@ -386,6 +387,28 @@ ServerEvents.recipes(event => {
     .duration(300)
     .EUt(GTValues.VA[GTValues.LuV])
 
+
+  //UV Casing / Hull
+  event.remove({ id: 'gtceu:shaped/uv_machine_hull' })
+  event.remove({ id: 'gtceu:assembler/hull_uv' })
+  event.remove({ id: 'gtceu:assembler/fusion_casing_mk3' })
+  event.remove({ id: 'gtceu:assembler/casing_uv' })
+  event.remove({ id: 'gtceu:shaped/casing_uv' })
+  event.recipes.gtceu.assembly_line('uv_hull_assline')
+    .itemInputs(['cosmiccore:starmetal_modular_shelling', '2x gtceu:heavy_neutronium_beam', '2x cosmiccore:heavy_voidspark_beam', '16x gtceu:neutronium_screw', '#gtceu:circuits/iv', '4x gtceu:tritanium_quadruple_cable'])
+    .itemOutputs('gtceu:uv_machine_hull')
+    .inputFluids(
+      'gtceu:high_grade_solder 2304',
+      'gtceu:nylon_6_6 1152',
+      'gtceu:neoprene 576',
+      'gtceu:starlight 4000',
+    )
+    .stationResearch(b => b
+      .researchStack('gtceu:zpm_machine_hull')
+      .CWUt(250, 1500000)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.ZPM])
 
   event.remove({ id: 'bloodmagic:blood_rune_speed' })
   event.remove({ id: 'bloodmagic:blood_rune_capacity' })
@@ -942,6 +965,22 @@ ServerEvents.recipes(event => {
     .duration(240)
     .stationResearch(b => b
       .researchStack('gtceu:zpm_robot_arm')
+      .CWUt(250, 1500000)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .EUt(GTValues.VA[GTValues.ZPM])
+
+  event.recipes.gtceu.assembly_line('frontiers:spirit_crucible')
+    .itemInputs(['cosmiccore:hellfire_foundry', '4x gtceu:atomic_casing', '2x gtceu:wetware_processor_mainframe', '2x cosmiccore:zpm_radio_module', '2x cosmiccore:zpm_radio_module', 'botania:rune_autumn', 'botania:rune_winter', 'botania:rune_spring', 'botania:rune_summer'])
+    .itemOutputs('cosmiccore:spirit_crucible')
+    .inputFluids(
+      'gtceu:high_grade_solder 2304',
+      'gtceu:grading_fluid_5 6000',
+      'gtceu:nylon_6_6 1152',
+      'gtceu:neoprene 576',
+    )
+    .duration(240)
+    .stationResearch(b => b
+      .researchStack('cosmiccore:hellfire_foundry')
       .CWUt(250, 1500000)
       .EUt(GTValues.VA[GTValues.ZPM]))
     .EUt(GTValues.VA[GTValues.ZPM])

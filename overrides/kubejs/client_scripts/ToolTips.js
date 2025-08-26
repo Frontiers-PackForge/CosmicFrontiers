@@ -96,10 +96,6 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('cosmiccore:eschaton_processor_supercomputer', (item, advanced, text) => {
     text.add(2, Text.of('OPV-Tier Circuit'))
   })
-  event.addAdvanced('cosmiccore:eschaton_processor_mainframe', (item, advanced, text) => {
-    text.add(2, Text.of('MAX-Tier Circuit'))
-    text.add(3, Text.of('Can run Minecraft without lagging, satisfactory!').gray())
-  })
   event.addAdvanced('botania:mana_diamond', (item, advanced, text) => {
     text.add(1, Text.of('MaC₄').yellow())
   })
@@ -248,7 +244,7 @@ ItemEvents.tooltip(event => {
     text.add(1, Text.of('Energy Consumption was set to 0!').green())
     text.add(2, Text.of('Will run without power!').green())
   })
-    event.addAdvanced('minecraft:nether_star', (item, advanced, text) => {
+  event.addAdvanced('minecraft:nether_star', (item, advanced, text) => {
     text.add(1, Text.of('Netherstars no longer drop from withers.').red())
   })
 })
@@ -312,4 +308,44 @@ ItemEvents.tooltip(event => {
 
 
 
+
+  // Multiblock Code or Design Credits; a Loose category to give thanks to the wonderful devs making machines possible
+  // Do not edit unless you are Ghostipedia or have explicit approval to do so, thank you!
+  
+  event.addAdvanced('cosmiccore:drone_station', (item, advanced, text) => {
+    text.add(1, Text.of('Multiblock Classification: The Repair Swarm').aqua().bold())
+    text.add(2, Text.of('What is all that noise!?').white().bold())
+    text.add(3, Text.of('Automatically repairs multiblock damage, with Bees!'))
+    if (event.isShift()) {
+      text.add(4, Text.of('-------------------------------------------').aqua())
+      text.add(5, [Text.of('Consumes Drones to Fix Structural Damage').white()])
+      text.add(6, [Text.of('Higher tier drones grant higher range, and Plasmatic grants cleanroom status.').gray()])
+      text.add(7, Text.of('-------------------------------------------').aqua())
+      text.add(8, Text.of('Credits:'))
+      text.add(9, Text.of('Major Code Contributors:').aqua())
+      text.add(10, Text.of('JurreJelle & Kathryne').white())
+      text.add(11, [Text.of('Art & UI: ').gold(), Text.of('Ghostipedia').white()])
+    } else {
+      text.add(4, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+  })
+
+
+
+})
+
+ItemEvents.tooltip(event => {
+
+  event.addAdvanced(/sophisticatedstorage:(.*)/, (item, advanced, text) => {
+    text.add(1, Text.of('DEPRECATED DEPRECATED DEPRECATED').red().italic())
+    text.add(2, Text.of('MOD REMOVAL IN 0.9.0').red().bold())
+  })
+
+})
+
+ItemEvents.tooltip(event => {
+  event.addAdvanced(/sophisticatedbackpacks:(.*)/, (item, advanced, text) => {
+    text.add(1, Text.of('DEPRECATED DEPRECATED DEPRECATED').red().italic())
+    text.add(2, Text.of('MOD REMOVAL IN 0.9.0').red().bold())
+  })
 })

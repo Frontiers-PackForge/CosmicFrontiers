@@ -35,6 +35,12 @@ ServerEvents.tags('item', event => {
   event.remove('forge:plates/iron', 'create:iron_sheet')
   event.remove('forge:plates/gold', 'create:golden_sheet')
 
+  //Other Modded ingot Removals From the Forge Tag
+  event.remove('forge:ingots/zinc', 'create:zinc_ingot')
+  event.remove('forge:ingots/brass', 'create:brass_ingot')
+  event.remove('forge:nuggets/zinc', 'create:zinc_nugget')
+  event.remove('forge:nuggets/brass', 'create:brass_nugget')
+
   //Hiding the Above Removals from EMI
   event.add('c:hidden_from_recipe_viewers', 'create:copper_sheet')
   event.add('c:hidden_from_recipe_viewers', 'create:brass_sheet')
@@ -62,6 +68,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'create:cutting/compat/forbidden_arcanus/stripped_mysterywood_log' })
   event.remove({ id: 'create:pressing/sugar_cane' })
   event.remove({ output: 'create:andesite_alloy' })
+  event.remove({ id: 'create:crafting/appliances/chain_from_zinc' })
 
   //Cogs
   event.remove({ output: 'create:cogwheel' })

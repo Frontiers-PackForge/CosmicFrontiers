@@ -1533,7 +1533,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1A630507AAB765E6"]
@@ -1612,26 +1612,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["38032C6144C06B2B"]
-			icon: "gtceu:mixed_lre_leachate_bucket"
-			id: "3B6079B88AB61576"
-			tasks: [
-				{
-					id: "055D50D90E9D917B"
-					item: "gtceu:mixed_lre_leachate_bucket"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "03933F1576500CAA"
-					title: "Chain Quest - Skip me!"
-					type: "checkmark"
-				}
-			]
-			x: 10.0d
-			y: 2.5d
-		}
-		{
 			dependencies: ["7C280469C5926E0A"]
 			description: [
 				"Platinum and Palladium Production isn't really needed in HV - However it's listed here be cause this is the earliest you CAN do it. - It's useful for SMD diodes."
@@ -1652,10 +1632,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"3B6079B88AB61576"
-				"483EDAD71360C4C4"
-			]
+			dependencies: ["483EDAD71360C4C4"]
 			id: "1A630507AAB765E6"
 			tasks: [{
 				id: "102D74DD3691DB10"

@@ -16,6 +16,16 @@ ItemEvents.modification(event => {
     food('croptoia:ravioli', 3, 0.9)
 
     snackFood('gtceu:basic_electronic_circuit', 6, 0.8, true)
+    snackFood('gtceu:micro_processor', 2, 0.3, true)
+    snackFood('gtceu:nano_processor', 4, 0.4, true)
+    snackFood('gtceu:quantum_processor', 6, 0.6, true)
+    snackFood('gtceu:crystal_processor', 8, 0.7, true)
+    snackFood('gtceu:wetware_processor', 10, 0.8, true)
+    snackFood('cosmiccore:harmonic_processor', 12, 0.9, true)
+    snackFood('cosmiccore:optical_processor', 14, 1.0, true)
+    snackFood('cosmiccore:suelescent_processor', 16, 1.0, true)
+    snackFood('cosmiccore:akashic_processor', 18, 1.0, true)
+    snackFood('cosmiccore:eschaton_processor', 20, 1.0, true)
 
     function snackFood(foodItem, hunger, saturation, isSnack) {
       event.modify(foodItem, item => {

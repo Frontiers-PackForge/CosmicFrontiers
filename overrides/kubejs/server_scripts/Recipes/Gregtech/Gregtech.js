@@ -18,6 +18,9 @@ ServerEvents.tags('item', event => {
   event.add('c:hidden_from_recipe_viewers', 'gtceu:lp_steam_bender')
   event.add('c:hidden_from_recipe_viewers', 'gtceu:lp_steam_wiremill')
   event.remove('minecraft:planks', 'gtceu:treated_wood_planks')
+  event.remove('forge:ingots/red_alloy', 'projectred_core:red_ingot')
+  event.remove('forge:dusts/electrotine', 'projectred_core:electrotine_dust')
+  event.remove('minecraft:planks', 'gtceu:treated_wood_planks')
   event.add('curios:head', 'cosmiccore:wireless_pda')
 })
 
@@ -38,6 +41,17 @@ yeet('gtceu:large_plasma_turbine')
 yeet('expandedae:exp_pattern_provider')
 yeet('expandedae:exp_pattern_provider_upgrade')
 yeet('expandedae:exp_pattern_provider_part')
+yeet('gtceu:extreme_combustion_engine')
+yeet('gtceu:large_combustion_engine')
+yeet('projectred_core:red_ingot')
+yeet('projectred_core:electrotine_ingot')
+yeet('projectred_core:electrotine_iron_comp')
+yeet('projectred_core:red_iron_comp')
+yeet('projectred_transmission:low_load_power_wire')
+yeet('projectred_transmission:low_load_framed_power_wire')
+yeet('projectred_core:electrotine_generator')
+yeet('projectred_core:electrotine_dust')
+
 yeet(/gtceu:(.*)butchery_knife$/)
 
 
@@ -87,8 +101,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:macerator/macerate_treated_wood_planks' })
   event.remove({ id: 'gtceu:alloy_blast_smelter/starmetal_gas' })
 
-  event.replaceOutput({ id: 'gtceu:shaped/extreme_combustion_engine' }, 'gtceu:extreme_combustion_engine', 'gtceu:extreme_combustion_engine_cc')
-  event.replaceOutput({ id: 'gtceu:shaped/large_combustion_engine' }, 'gtceu:large_combustion_engine', 'gtceu:large_combustion_engine_cc')
+
   event.replaceOutput({ id: 'gtceu:shaped/power_substation' }, 'gtceu:power_substation', 'cosmiccore:dimensional_energy_capacitor')
   event.replaceOutput({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_uvarovite' }, 'gtceu:chromium_dust', 'gtceu:chromite_dust')
 
@@ -267,6 +280,12 @@ ServerEvents.recipes(event => {
     .itemOutputs('gtceu:firebrick')
     .duration(10)
     .EUt(8);
+  event.recipes.gtceu.alloy_smelter('firebrick_masonry_ch')
+    .itemInputs('gtceu:compressed_fireclay')
+    .itemInputs('gtceu:charcoal_dust')
+    .itemOutputs('gtceu:firebrick')
+    .duration(10)
+    .EUt(8);
   event.recipes.gtceu.electrolyzer('trifluoride_elec')
     .itemInputs('4x gtceu:antimony_trifluoride_dust')
     .itemOutputs('gtceu:antimony_dust')
@@ -313,7 +332,7 @@ ServerEvents.recipes(event => {
     .itemInputs('gtceu:moon_stone_dust')
     .itemOutputs('gtceu:silicon_dioxide_dust')
     .chancedOutput('gtceu:bauxite_dust', 3500, 0)
-    .chancedOutput('croptopia:cheese', 1500, 0)
+    .chancedOutput('ad_astra:cheese', 1500, 0)
     .outputFluids('gtceu:helium 120')
     .duration(160)
     .EUt(GTValues.VA[GTValues.MV] * 0.75);
@@ -328,6 +347,21 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:create_mixer/concrete_from_clay' })
   event.remove({ id: 'gtceu:create_mixer/concrete_from_marble' })
   event.remove({ id: 'gtceu:shaped/casing_primitive_bricks' })
+
+
+  event.recipes.gtceu.assembler('combustion_large_1')
+    .itemInputs(['2x gtceu:ev_electric_piston', '2x gtceu:ev_electric_motor', '2x gtceu:titanium_gear', 'gtceu:aluminium_single_cable', 'gtceu:ev_machine_hull', '#gtceu:circuits/iv'])
+    .inputFluids('gtceu:lubricant 1500')
+    .itemOutputs('cosmiccore:large_combustion_engine_cc')
+    .duration(60)
+    .EUt(2000)
+  event.recipes.gtceu.assembler('combustion_large_2')
+    .itemInputs(['2x gtceu:iv_electric_piston', '2x gtceu:iv_electric_motor', '2x gtceu:tungsten_steel_gear', 'gtceu:hssg_single_cable', 'gtceu:iv_machine_hull', '#gtceu:circuits/luv'])
+    .inputFluids('gtceu:lubricant 1500')
+    .itemOutputs('cosmiccore:extreme_combustion_engine_cc')
+    .duration(60)
+    .EUt(2000)
+
   event.recipes.gtceu.fluid_solidifier('firebricks')
     .itemInputs('6x gtceu:firebrick')
     .inputFluids('gtceu:concrete 500')
@@ -347,6 +381,18 @@ ServerEvents.recipes(event => {
     .itemOutputs('4x cosmiccore:fireclay_ball')
     .duration(200)
     .EUt(2)
+  event.shaped('cosmiccore:linked_terminal', [
+    'WSH',
+    'SCS',
+    'FFF'
+  ], {
+    C: 'gtceu:terminal',
+    F: 'gtceu:tungsten_steel_plate',
+    S: '#gtceu:circuits/luv',
+    H: 'cosmiccore:iv_radio_module',
+    W: 'gtceu:iv_emitter'
+  })
+
   event.shaped('cosmiccore:industrial_primitive_blast_furnace', [
     'WSH',
     'SCS',
@@ -437,6 +483,17 @@ ServerEvents.recipes(event => {
     F: 'gtceu:ruridit_frame',
     W: '#forge:tools/wrenches',
     H: '#forge:tools/hammers'
+  })
+  //Bee Box Controller
+  event.shaped('cosmiccore:drone_station', [
+    'FAF',
+    'WHW',
+    'FAF'
+  ], {
+    A: 'minecraft:beehive',
+    F: 'gtceu:stainless_steel_plate',
+    W: '#gtceu:circuits/ev',
+    H: 'gtceu:titanium_frame'
   })
   //Cyclozine Casings
   event.recipes.gtceu.assembler('gtceu:cyclozine_casing_assem')
@@ -577,16 +634,11 @@ ServerEvents.recipes(event => {
     .cleanroom(CleanroomType.CLEANROOM)
     .EUt(GTValues.VA[GTValues.ZPM]);
 
-  event.recipes.gtceu.assembler('gtceu:treated_wood_dust_shred')
+  event.recipes.gtceu.assembler('gtceu:steel_plated_bronze_casing_assem')
     .itemInputs(['gtceu:bronze_machine_casing', '4x gtceu:steel_rod', '4x gtceu:steel_plate'])
     .itemOutputs('2x cosmiccore:steel_plated_bronze_casing')
     .duration(40)
     .EUt(16);
-  event.recipes.gtceu.macerator('gtceu:treated_wood_dust_shred')
-    .itemInputs('gtceu:treated_wood_planks')
-    .itemOutputs('gtceu:treated_wood_dust')
-    .duration(40)
-    .EUt(8);
   //ManaSteel Stuff
   event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe')
     .itemInputs('botania:manasteel_ingot')
@@ -791,9 +843,10 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.UV], 5);
 
   event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_sol_steel_ingot' })
+  event.remove({ id: 'gtceu:vacuum_freezer/sol_steel' })
 
   event.recipes.gtceu.orbital_forge('sol_steel')
-    .itemInputs(['cosmiccore:hot_starmetal_ingot', '12x gtceu:naumannite_dust', 'gtceu:gravi_star'])
+    .itemInputs(['12x gtceu:naumannite_dust', '24x malum:infernal_spirit', '4x gtceu:europium_plasmites'])
     .inputFluids('gtceu:homeward_resin_plasma 2000')
     .inputFluids('gtceu:starlight 4000')
     .inputFluids('gtceu:sol_blood_plasma 2500')
@@ -803,6 +856,16 @@ ServerEvents.recipes(event => {
     .duration(1300)
     .EUt(GTValues.VA[GTValues.UV]);
 
+  event.recipes.gtceu.orbital_forge('pure_trinavine_forging')
+    .itemInputs('gtceu:trinium_ingot')
+    .inputFluids('gtceu:tau_plasma 50')
+    .inputFluids('gtceu:xenon 250')
+    .itemOutputs('cosmiccore:hot_trinavine_ingot')
+    .dimension('frontiers:sun_orbit')
+    .circuit(7)
+    .blastFurnaceTemp(7000)
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.UV]);
 
   event.recipes.gtceu.laser_engraver('frontiers:sol_steel_cooling')
     .notConsumable('4x gtceu:zpm_emitter')
@@ -1415,6 +1478,7 @@ ServerEvents.recipes(event => {
   //START HERE
   //MOTOR
   event.remove({ id: 'gtceu:assembler/electric_motor_iv' })
+  event.remove({ id: 'experienceobelisk:book_from_any_leather' })
   event.remove({ id: 'gtceu:shaped/electric_motor_iv' })
   event.recipes.gtceu.assembler('gtceu:new_iv_motor')
     .itemInputs(['2x gtceu:elementium_quadruple_cable', '2x cosmiccore:prismatic_tungstensteel_rod', 'gtceu:magnetic_neodymium_praseodymium_rod', '4x gtceu:virtue_meld_octal_wire'])

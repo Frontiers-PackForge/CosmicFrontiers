@@ -45,7 +45,7 @@ if [ ! -d libraries ]; then
 fi
 
 if [ ! -e server.properties ]; then
-    printf "allow-flight=true\nmotd=All the Mods 9\nmax-tick-time=180000" > server.properties
+    printf "allow-flight=true\nmotd=Cosmic Frontiers\nmax-tick-time=180000" > server.properties
 fi
 
 if [ "${ATM9_INSTALL_ONLY:-false}" = "true" ]; then

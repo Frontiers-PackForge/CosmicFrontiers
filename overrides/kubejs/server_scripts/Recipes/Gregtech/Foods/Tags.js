@@ -10,14 +10,11 @@ ServerEvents.tags('item', event => {
     event.add('forge:onions', 'farmersdelight:onion')
     event.add('forge:dough', 'farmersdelight:wheat_dough')
     event.add('forge:doughs', 'gtceu:dough')
-    event.add('forge:raw_pork', 'croptopia:ground_pork')
-    event.add('croptopia:beef_mutton', 'farmersdelight:minced_beef')
-    event.add('croptopia:beef_mutton', 'farmersdelight:mutton_chops')
     event.remove('forge:oat', 'vintagedelight:oat') //this removes vintagedelight oat from one recipe (oat cutting) 
-    
+
     event.removeAll('diet:special_food') // Slicer recipes add nutrition to them already, keeping them in this tag makes it do double nutrition
-    
-    
+
+
     // Seasonal crops
     function spring(item) {
         event.add('serenseseasons:spring_crops', item)
@@ -32,7 +29,7 @@ ServerEvents.tags('item', event => {
         event.add('serenseseasons:winter_crops', item)
     }
 
-    
+
     mana('aether:blue_gummy_swet')
     mana('aether:golden_gummy_swet')
     mana('aether:enchanted_berry')
@@ -67,7 +64,6 @@ ServerEvents.tags('item', event => {
     vegetables('legendarysurvivaloverhaul:golden_carrot_juice')
     vegetables('biomeswevegone:oddion_bulb')
     vegetables('biomeswevegone:white_puffball_cap')
-    vegetables('croptopia:tea_leaves')
     vegetables('undergarden:mogmoss')
     vegetables('undergarden:blue_mogmoss')
     vegetables('undergarden:glitterkelp')
@@ -111,6 +107,70 @@ ServerEvents.tags('item', event => {
     grains('aether:gingerbread_man')
     grains('gtceu:dough')
 
+
+
+    psi('gtceu:micro_processor')
+    mana('gtceu:micro_processor')
+
+    psi('gtceu:nano_processor')
+    mana('gtceu:nano_processor')
+    proteins('gtceu:nano_processor')
+
+    psi('gtceu:quantum_processor')
+    mana('gtceu:quantum_processor')
+    proteins('gtceu:quantum_processor')
+    vegetables('gtceu:quantum_processor')
+
+    psi('gtceu:crystal_processor')
+    mana('gtceu:crystal_processor')
+    proteins('gtceu:crystal_processor')
+    vegetables('gtceu:crystal_processor')
+    fruits('gtceu:crystal_processor')
+    grains()
+
+    psi('gtceu:wetware_processor')
+    mana('gtceu:wetware_processor')
+    proteins('gtceu:wetware_processor')
+    vegetables('gtceu:wetware_processor')
+    fruits('gtceu:wetware_processor')
+    grains('gtceu:wetware_processor')
+
+    psi('cosmiccore:harmonic_processor')
+    mana('cosmiccore:harmonic_processor')
+    proteins('cosmiccore:harmonic_processor')
+    vegetables('cosmiccore:harmonic_processor')
+    fruits('cosmiccore:harmonic_processor')
+    grains('cosmiccore:harmonic_processor')
+
+    psi('cosmiccore:optical_processor')
+    mana('cosmiccore:optical_processor')
+    proteins('cosmiccore:optical_processor')
+    vegetables('cosmiccore:optical_processor')
+    fruits('cosmiccore:optical_processor')
+    grains('cosmiccore:optical_processor')
+
+    psi('cosmiccore:suelescent_processor')
+    mana('cosmiccore:suelescent_processor')
+    proteins('cosmiccore:suelescent_processor')
+    vegetables('cosmiccore:suelescent_processor')
+    fruits('cosmiccore:suelescent_processor')
+    grains('cosmiccore:suelescent_processor')
+
+    psi('cosmiccore:akashic_processor')
+    mana('cosmiccore:akashic_processor')
+    proteins('cosmiccore:akashic_processor')
+    vegetables('cosmiccore:akashic_processor')
+    fruits('cosmiccore:akashic_processor')
+    grains('cosmiccore:akashic_processor')
+
+    mana('cosmiccore:eschaton_processor_mainframe')
+    psi('cosmiccore:eschaton_processor_mainframe')
+    proteins('cosmiccore:eschaton_processor_mainframe')
+    vegetables('cosmiccore:eschaton_processor_mainframe')
+    fruits('cosmiccore:eschaton_processor_mainframe')
+    grains('cosmiccore:eschaton_processor_mainframe')
+
+
     specialFood('create:builders_tea')
     specialFood('supplementaries:pancake')
     specialFood('undergarden:glitterkelp')
@@ -123,11 +183,11 @@ ServerEvents.tags('item', event => {
     ingredients('#forge:dough')
 
     // Dietary groups
-    function mana(item) {
-        event.add('diet:mana', item)
-    }
     function psi(item) {
         event.add('diet:psi', item)
+    }
+    function mana(item) {
+        event.add('diet:mana', item)
     }
     function proteins(item) {
         event.add('diet:proteins', item)
@@ -144,7 +204,7 @@ ServerEvents.tags('item', event => {
     function grains(item) {
         event.add('diet:grains', item)
     }
-    
+
     // Force add food groups to items whether its edible or not. Useful for cakes, etc. but slicer recipes make this useless for placeable foods.
     function specialFood(item) {
         event.add('diet:special_food', item)
@@ -156,8 +216,6 @@ ServerEvents.tags('item', event => {
 
     // todo hot and cold foods
 
-    event.add('frontiers:croptopia/nuts', ['croptopia:almond', 'croptopia:pecan', 'croptopia:walnut']) // non peanut nuts from croptopia used for roasted nuts recipe
-    event.add('forge:peanuts', ['vintagedelight:peanut', 'croptopia:peanut']) // this is driving me *nuts* why does one have (s)
 })
 
 ServerEvents.tags('block', event => {
@@ -183,6 +241,7 @@ ServerEvents.tags('block', event => {
 ServerEvents.tags('fluid', event => {
     console.log('[20] - [3] - TAG-WATCHER')
     event.add('forge:milk', 'gtceu:soy_milk')
+    event.add('forge:milk', 'vegandelight:soymilk')
     event.add('forge:milk', 'gtceu:milk')
     event.add('forge:milk', 'minecraft:milk')
 })

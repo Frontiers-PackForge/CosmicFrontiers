@@ -64,4 +64,16 @@ ServerEvents.recipes(event => {
         .duration(270)
         .EUt(GTValues.VA[GTValues.ZPM]);
 
+
+
+    event.recipes.gtceu.fusion_reactor('chlorine_plasma')
+        .chancedInput('gtceu:neutron_reflector', 1250, 0)
+        .chancedInput('gtceu:neutron_reflector', 1200, 0)
+        .chancedInput('kubejs:heavy_neutron_filter', 250, 0)
+        .inputFluids('gtceu:phosphorus_trichloride 100') //1
+        .inputFluids('gtceu:helium_3 100') //1
+        .outputFluids('gtceu:chlorine_plasma 50') //1.5
+        .fusionStartEU(120000000)
+        .duration(30)
+        .EUt(GTValues.VA[GTValues.LuV]);
 })

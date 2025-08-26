@@ -24,7 +24,6 @@ ServerEvents.tags('item', event => {
        event.add('curios:head', 'kubejs:nano_respirator')
        event.add('curios:charm', 'gtceu:hv_item_magnet')
        event.add('curios:charm', 'gtceu:lv_item_magnet')
-       event.add('frontiers:peanut', 'croptopia:peanut')
        event.add('frontiers:peanut', 'vintagedelight:peanut_crop')
        event.add('curios:charm', 'cosmiccore:portable_gravity_core')
 })
