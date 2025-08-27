@@ -44,6 +44,126 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .formula('?')
         .color(0xad5569)
 
+    event.create('dusty_fermium')
+        .plasma()
+        .formula('Fr')
+        .color(0xad5569)
 
 
+    event.create('seaborgium_seeded')
+        .plasma()
+        .formula('Sg-')
+        .color(0xad5569)
+
+    event.create('seaborgium_rich')
+        .plasma()
+        .formula('Sg')
+        .color(0xad5569)
+
+
+    event.create('bedrock_soot')
+        .gas()
+        .formula('')
+        .color(0xad5569)
+
+
+    event.create('bedrock_smoke')
+        .gas()
+        .formula('')
+        .color(0xad5569)
+
+    event.create('bedrock_gas')
+        .gas()
+        .formula('')
+        .color(0xad5569)
+
+    event.create('bedrock_soot_solution')
+        .liquid()
+        .formula('')
+        .color(0xad5569)
+
+    event.create('purified_bedrock_soot_solution')
+        .liquid()
+        .formula('')
+        .color(0xad5569)
+
+    //Different Bedrock Gas States
+    event.create('ultra_heavy_bedrock_gas')
+        .gas()
+        .formula('')
+        .color(0x1f2021)
+    event.create('heavy_bedrock_gas')
+        .gas()
+        .formula('')
+        .color(0x262a2e)
+    event.create('medium_bedrock_gas')
+        .gas()
+        .formula('')
+        .color(0xad5569)
+    event.create('light_bedrock_gas')
+        .liquid()
+        .formula('')
+        .color(0x84878a)
+    event.create('ultra_light_bedrock_gas')
+        .gas()
+        .formula('')
+        .color(0xa9acb0)
+
+    //The Start of OUR Taranium Processing
+    event.create('varible_taranium_slush')
+        .gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill())
+        .formula('')
+        .color(0x383838)
+
+
+    //Split it into 3 purities
+    event.create('severely_xenon_cracked_taranium_slush')
+        .liquid()
+        .formula('')
+        .color(0x94cdff)
+
+    event.create('low_purity_taranium') //Chemical Discharge Required
+        .dust()
+        .formula('')
+        .color(0x383838).secondaryColor(0x73147).iconSet(GTMaterialIconSet.BRIGHT)
+    event.create('middle_purity_taranium') // Discharger Required
+        .dust()
+        .formula('')
+        .color(0x383838).secondaryColor(0x7a365e).iconSet(GTMaterialIconSet.BRIGHT)
+    event.create('high_purity_taranium') // Cant be Discharged Normally
+        .dust()
+        .formula('')
+        .color(0x383838).secondaryColor(0x8f105a).iconSet(GTMaterialIconSet.BRIGHT)
+
+
+
+    event.create('taranium_rich_blend')
+        .dust()
+        .formula('')
+        .color(0xad5569)
+
+    //Actual Taranium Goes Here
+
+    event.create('unstable_taranium') // Used for Taranium charges, wastes off to Taranium
+        .dust()
+        .formula('')
+        .color(0xad5569)
+
+
+
+    //The NPR and the VRM "Exotic" Fuels ; Requires the Protocyte Module to Activate these powerful Fuels.
+    event.create('hyperfuel_mk1')
+        .liquid()
+        .formula('')
+        .color(0xad5569)
+
+    event.create('hyperfuel_mk2')
+        .liquid()
+        .formula('')
+        .color(0xad5569)
+
+    event.create('hyperfuel_mk3')
+        .liquid()
+        .formula('')
+        .color(0xad5569)
 })
