@@ -26,10 +26,10 @@
 		{
 			dependencies: ["6DA881815E8DE99D"]
 			description: [
-				"ZPM IS **INCOMPLETE**"
+				"ZPM is wrapping up completion but still has plenty of issues"
 				""
 				""
-				"YOU. HAVE. BEEN. WARNED."
+				"Please help me find them if you've reached this point."
 			]
 			hide_until_deps_visible: true
 			id: "1EDA6025077BAA5D"

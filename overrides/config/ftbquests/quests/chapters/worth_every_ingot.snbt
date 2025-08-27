@@ -660,8 +660,8 @@
 		}
 		{
 			dependencies: [
-				"44D9A9E10867D1BC"
 				"52FDB03D36E94054"
+				"333F819E70468E50"
 			]
 			description: [
 				"Welcome to Crystal CPU's, a much harder CPU core than Nano or Quantum. And require a multi-dimensional setup to fully automate. Some pointers before you start."
@@ -1400,17 +1400,6 @@
 				type: "item"
 			}]
 			x: -8.25d
-			y: -14.0d
-		}
-		{
-			dependencies: ["333F819E70468E50"]
-			id: "44D9A9E10867D1BC"
-			tasks: [{
-				id: "0CE41648307A785C"
-				item: "cosmiccore:engraved_crystal_chiplet"
-				type: "item"
-			}]
-			x: -5.5d
 			y: -14.0d
 		}
 		{
