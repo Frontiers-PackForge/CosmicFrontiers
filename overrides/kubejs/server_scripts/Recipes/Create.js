@@ -1172,7 +1172,7 @@ ServerEvents.recipes(event => {
     S: 'gtceu:andesite_alloy_rod',
     C: '#gtceu:circuits/mv'
   })
-  //frogport
+  //frogport, kinda like a hopper
   event.remove({id: "create:crafting/logistics/package_frogport"})
   event.shaped('create:package_frogport', [
     'SXS',
@@ -1185,7 +1185,7 @@ ServerEvents.recipes(event => {
     S: 'gtceu:andesite_alloy_plate',
     C: '#gtceu:circuits/mv'
   })
-  //stock link
+  //stock link, basically a storage bus?
   event.remove({id: "create:crafting/logistics/stock_link"})
   event.shaped('create:stock_link', [
     'SXS',
@@ -1198,7 +1198,7 @@ ServerEvents.recipes(event => {
     S: 'gtceu:brass_plate',
     C: '#gtceu:circuits/mv'
   })
-  //stock ticker
+  //stock ticker, basically an ae terminal
   event.remove({id: "create:crafting/logistics/stock_ticker"})
   event.shaped('create:stock_ticker', [
     'SXS',
@@ -1211,7 +1211,7 @@ ServerEvents.recipes(event => {
     S: '#forge:glass',
     C: '#gtceu:circuits/mv'
   })
-  //redstone requester
+  //redstone requester, requests items from a to b
   event.remove({id: "create:crafting/logistics/redstone_requester"})
   event.shaped('create:redstone_requester', [
     'SXS',
@@ -1224,7 +1224,7 @@ ServerEvents.recipes(event => {
     S: 'gtceu:andesite_alloy_plate',
     C: '#gtceu:circuits/mv'
   })
-  //factory gauge
+  //factory gauge, the actual "autocrafting" block
   event.remove({id: "create:crafting/logistics/factory_gauge"})
   event.shaped('6x create:factory_gauge', [
     'SXS',
