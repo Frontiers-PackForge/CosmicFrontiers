@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
     //This is an Extremely Lossy Step.
     event.recipes.gtceu.industrial_chemvat('frontiers:heme_ring_but_its_actually_chlorophyte_and_im_just_lazy')
         .itemInputs('gtceu:prophine_dust')
-        .inputFluids('gtceu:acetic_acid 1000', 'gtceu:formaldehyde 4000', 'gtceu:methyl_formate 2000', 'gtceu:chlorine 4000', 'gtceu:vinyl_chloride 1000', 'gtceu:chloromethane 4000')
+        .inputFluids('gtceu:acetic_acid 1000', 'gtceu:formaldehyde 4000', 'gtceu:acetic_acid 2000', 'gtceu:chlorine 4000', 'gtceu:vinyl_chloride 1000', 'gtceu:chloromethane 4000')
         .outputFluids('gtceu:hydrochloric_acid 1000', 'minecraft:water 1000')
         .itemOutputs('4x cosmiccore:heme_ring')
         .circuit(31)
@@ -294,12 +294,6 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:citral 1000', 'gtceu:acetone 1000')
         .outputFluids('gtceu:beta_ionone 1000')
         .duration(350)
-        .EUt(GTValues.VH[GTValues.EV]);
-
-    event.recipes.gtceu.large_chemical_reactor('frontiers:methyl_formate')
-        .inputFluids('gtceu:methanol 1000', 'gtceu:carbon_monoxide 1000')
-        .outputFluids('gtceu:methyl_formate 2000')
-        .duration(130)
         .EUt(GTValues.VH[GTValues.EV]);
 
     event.recipes.gtceu.large_chemical_reactor('frontiers:chloroethane')

@@ -11,12 +11,6 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:alef_neutron_plasma 500')
         .outputFluids('gtceu:pey_neutron_plasma 250')
         .outputFluids('gtceu:ayin_neutron_plasma 500')
-        //borkeed, scream at onyon wtf is a ambiguous type
-        // .chancedFluidOutput('gtceu:resh_neutron_plasma', 2500, 1000)
-        // .chancedFluidOutput('gtceu:alef_neutron_plasma', 2500, 1000)
-        // .chancedFluidOutput('gtceu:resh_neutron_plasma', 2500, 1000)
-        // .chancedFluidOutput('gtceu:pey_neutron_plasma', 2500, 1000)
-        // .chancedFluidOutput('gtceu:ayin_neutron_plasma', 2500, 1000)
         .fusionStartEU(160000000)
         .duration(400)
         .EUt(GTValues.VA[GTValues.LuV]);

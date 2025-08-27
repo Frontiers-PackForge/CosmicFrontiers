@@ -116,7 +116,22 @@ ServerEvents.recipes(event => {
   event.shapeless('cosmiccore:ultrasonic_homogenizer', [
     'cosmiccore:long_neutronite_rod',
     'gtceu:zpm_electric_piston'
+  ])
+  event.shapeless('cosmiccore:sensor_hatch', [
+    'gtceu:advanced_energy_detector_cover', 'gtceu:hv_machine_hull'
+  ])
 
+
+  event.shapeless('cosmiccore:wireless_pda',[
+    'cosmiccore:iv_radio_module'
+  ])
+
+
+  event.shapeless('cosmiccore:portable_gravity_core',[
+    'gtceu:gravitation_engine_unit'
+  ])
+  event.shapeless('bloodmagic:alchemytable',[
+    ['botania:brewery', 'minecraft:crafting_table']
   ])
 
   event.replaceInput(
@@ -563,6 +578,26 @@ ServerEvents.recipes(event => {
     W: '#forge:tools/wrenches',
     H: '#forge:tools/hammers'
   })
+
+  event.recipes.gtceu.assembler('gtceu:nevramite_casing_assem')
+    .itemInputs(['cosmiccore:nevramite_frame', '6x cosmiccore:nevramite_plate'])
+    .itemOutputs('cosmiccore:bichromal_nevramite_casing')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  event.shaped('cosmiccore:bichromal_nevramite_casing', [
+    'AHA',
+    'AFA',
+    'AWA'
+  ], {
+    A: 'cosmiccore:nevramite_plate',
+    F: 'cosmiccore:nevramite_frame',
+    W: '#forge:tools/wrenches',
+    H: '#forge:tools/hammers'
+  });
+
+
   event.recipes.gtceu.assembler('gtceu:cyclozine_pipe_casing_assem')
     .itemInputs(['gtceu:rhenium_frame', '4x gtceu:europium_normal_fluid_pipe', '4x gtceu:synthetic_pthanterum_plate'])
     .itemOutputs('cosmiccore:cyclozine_chemically_repelling_pipe')
