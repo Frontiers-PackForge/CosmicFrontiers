@@ -73,7 +73,7 @@ ServerEvents.tags('item', event => {
     proteins('nethersdelight:hoglin_ear')
     proteins('nethersdelight:strider_slice')
     proteins('occultism:beaver_nugget')
-    proteins(/arsdelight:(.*)_chimera/) 
+    proteins('arsdelight:bowl_of_honey_glazed_chimera')  
 
     vegetables('legendarysurvivaloverhaul:beetroot_juice')
     vegetables('legendarysurvivaloverhaul:cactus_juice')
@@ -84,7 +84,7 @@ ServerEvents.tags('item', event => {
     vegetables('undergarden:mogmoss')
     vegetables('undergarden:blue_mogmoss')
     vegetables('undergarden:glitterkelp')
-    vegetables(/arsdelight:(.*)_salad/) 
+    vegetables('arsdelight:bowl_of_wilden_salad') 
 
     fruits('legendarysurvivaloverhaul:apple_juice')
     fruits('legendarysurvivaloverhaul:chorus_fruit_juice')
@@ -107,8 +107,8 @@ ServerEvents.tags('item', event => {
     fruits('occultism:datura')
     fruits('undergarden:droopvine_item')
     fruits('nethersdelight:propelpearl')
-    fruits(/arsdelight:(.*)_chimera/) 
-    fruits(/arsdelight:(.*)_salad/) 
+    fruits('arsdelight:bowl_of_honey_glazed_chimera') 
+    fruits('arsdelight:bowl_of_wilden_salad') 
 
     sugars('aether:candy_cane')
     sugars('aether:gingerbread_man')
@@ -123,7 +123,7 @@ ServerEvents.tags('item', event => {
     sugars('legendarysurvivaloverhaul:golden_apple_juice')
     sugars('legendarysurvivaloverhaul:melon_juice')
     sugars('legendarysurvivaloverhaul:pumpkin_juice')
-    sugars(/arsdelight:(.*)_chimera/) 
+    sugars('arsdelight:bowl_of_honey_glazed_chimera') 
 
     grains('aether:gingerbread_man')
     grains('gtceu:dough')
