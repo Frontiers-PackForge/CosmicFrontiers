@@ -90,8 +90,16 @@ ServerEvents.recipes(event => {
         'botania:cyan_double_flower',
         'botania:brown_double_flower',
         'botania:magenta_double_flower',
-        'botania:purple_double_flower'
-        
+        'botania:purple_double_flower',
+        'farmersdelight:rice_panicle',
+        'culturaldelights:avocado',
+        'culturaldelights:cucumber',
+        'culturaldelights:eggplant',
+        'culturaldelights:white_eggplant',
+        'culturaldelights:corn_cob',
+        'delightful:salmonberries',   
+        'delightful:acorn',
+        'seeddelight:cherry',        
     ]
 
     floraOverworld.forEach(floraOw => {
@@ -188,8 +196,8 @@ ServerEvents.recipes(event => {
             .duration(120)
             .EUt(GTValues.VA[GTValues.MV] / 2)
     })
-    //Soul Sprout
-    event.recipes.gtceu.flora_nurturer('soul_cultivation')
+    //ferns
+    event.recipes.gtceu.flora_nurturer('ice_fern_cultivation')
         .notConsumable('legendarysurvivaloverhaul:ice_fern_leaf')
         .notConsumable('minecraft:moss_block')
         .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 500))
@@ -197,11 +205,29 @@ ServerEvents.recipes(event => {
         .chancedOutput(Item.of('legendarysurvivaloverhaul:ice_fern_leaf', 2), 2500, 500)
         .duration(160)
         .EUt(GTValues.VA[GTValues.LV] / 2);
-    event.recipes.gtceu.flora_nurturer('soul_cultivation_nutrient_sol')
+    event.recipes.gtceu.flora_nurturer('ice_fern_cultivation_nutrient_sol')
         .notConsumable('legendarysurvivaloverhaul:ice_fern_leaf')
         .notConsumable('minecraft:moss_block')
         .inputFluids('gtceu:nutrient_solution 50')
         .itemOutputs('16x legendarysurvivaloverhaul:ice_fern_leaf')
+        .chancedOutput(Item.of('legendarysurvivaloverhaul:ice_fern_leaf', 8), 2500, 500)
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.MV] / 2);
+
+    event.recipes.gtceu.flora_nurturer('sun_fern_cultivation')
+        .notConsumable('legendarysurvivaloverhaul:sun_fern_leaf')
+        .notConsumable('minecraft:moss_block')
+        .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 500))
+        .itemOutputs('2x legendarysurvivaloverhaul:sun_fern_leaf')
+        .chancedOutput(Item.of('legendarysurvivaloverhaul:sun_fern_leaf', 2), 2500, 500)
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.LV] / 2);
+    event.recipes.gtceu.flora_nurturer('sun_fern_cultivation_nutrient_sol')
+        .notConsumable('legendarysurvivaloverhaul:sun_fern_leaf')
+        .notConsumable('minecraft:moss_block')
+        .inputFluids('gtceu:nutrient_solution 50')
+        .itemOutputs('16x legendarysurvivaloverhaul:sun_fern_leaf')
+        .chancedOutput(Item.of('legendarysurvivaloverhaul:sun_fern_leaf', 8), 2500, 500)
         .duration(160)
         .EUt(GTValues.VA[GTValues.MV] / 2);
 
