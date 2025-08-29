@@ -110,4 +110,38 @@ ServerEvents.recipes(event => {
         S: '#minecraft:wooden_slabs',
         R: 'minecraft:redstone_dust'
     })
+    //boiler
+    event.remove({ id: 'legendarysurvivaloverhaul:heater' }) 
+    event.shaped( 'legendarysurvivaloverhaul:heater', [
+        ' A ',
+        'AFA',
+        'SCS'
+    ], {
+        A: 'gtceu:copper_plate',
+        F: 'minecraft:campfire',
+        S: 'gtceu:iron_plate',
+        C: 'minecraft:coal_block'
+    })
+    //icebox
+    event.remove({ id: 'legendarysurvivaloverhaul:cooler' }) 
+    event.shaped( 'legendarysurvivaloverhaul:cooler', [
+        'ASA',
+        'ARA',
+        'EAE'
+    ], {
+        A: 'gtceu:treated_wood_planks',
+        R: 'minecraft:redstone_torch',
+        S: 'gtceu:ice_dust',
+        E: 'gtceu:iron_plate',
+    })
+       event.recipes.gtceu.spooling_machine('cold_string')
+              .itemInputs(['minecraft:string', 'legendarysurvivaloverhaul:ice_fern_leaf'])
+              .itemOutputs('legendarysurvivaloverhaul:cold_string')
+              .duration(40)
+              .EUt(8)
+       event.recipes.gtceu.spooling_machine('warm_string')
+              .itemInputs(['minecraft:string', 'legendarysurvivaloverhaul:sun_fern_leaf'])
+              .itemOutputs('legendarysurvivaloverhaul:warm_string')
+              .duration(40)
+              .EUt(8)
 })
