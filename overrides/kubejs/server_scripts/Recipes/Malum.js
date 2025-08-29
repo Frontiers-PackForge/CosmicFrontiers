@@ -201,6 +201,47 @@ ServerEvents.recipes(event => {
         },
       ]
     }
+//chorus (already 2 ways to get chorus flower using chorus fruit so this is basically a "one time" recipe)
+  ).id("malum:spirit_infusion.frontiers.chorus_fruit")
+
+
+
+  event.custom(
+    {
+      "type": "malum:spirit_infusion",
+      "extra_items": [
+        {
+          "count": 32,
+          "item": "minecraft:end_stone"
+        },
+        {
+          "count": 8,
+          "item": "ars_nouveau:sourceberry_sack"
+        }
+      ],
+      "input": {
+        "count": 1,
+        "item": "gtceu:hv_field_generator"
+      },
+      "output": {
+        "count": 8,
+        "item": "minecraft:chorus_fruit"
+      },
+      "spirits": [
+        {
+          "type": "eldritch",
+          "count": 16
+        },
+        {
+          "type": "wicked",
+          "count": 16
+        },
+        {
+          "type": "aerial",
+          "count": 16
+        },
+      ]
+    }
   ).id("malum:spirit_infusion.frontiers.aether_frame_first")
   // Soulstone
   event.recipes.occultism.ritual(
