@@ -29,7 +29,7 @@
 				type: "item"
 			}]
 			title: "LV Gear"
-			x: -4.5d
+			x: -1.0d
 			y: -1.0d
 		}
 		{
@@ -41,7 +41,7 @@
 				type: "item"
 			}]
 			title: "MV Gear"
-			x: -4.5d
+			x: -1.0d
 			y: -6.5d
 		}
 		{
@@ -53,7 +53,7 @@
 				type: "item"
 			}]
 			title: "HV Gear"
-			x: -8.5d
+			x: -8.0d
 			y: -6.5d
 		}
 		{
@@ -65,7 +65,7 @@
 				type: "item"
 			}]
 			title: "EV Gear"
-			x: -12.5d
+			x: -14.0d
 			y: -6.5d
 		}
 		{
@@ -77,8 +77,8 @@
 				type: "item"
 			}]
 			title: "IV Gear"
-			x: -12.5d
-			y: -2.5d
+			x: -14.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["17CFAED4B5733E27"]
@@ -89,7 +89,7 @@
 				type: "item"
 			}]
 			title: "LuV Gear"
-			x: -12.5d
+			x: -14.0d
 			y: 4.5d
 		}
 		{
@@ -101,7 +101,7 @@
 				type: "item"
 			}]
 			title: "ZPM Gear"
-			x: -9.5d
+			x: -8.0d
 			y: 4.5d
 		}
 		{
@@ -113,7 +113,7 @@
 				type: "item"
 			}]
 			title: "UV Gear"
-			x: -4.5d
+			x: -1.0d
 			y: 4.5d
 		}
 		{
@@ -130,8 +130,8 @@
 				}
 				type: "item"
 			}]
-			x: -11.5d
-			y: -2.5d
+			x: -13.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6BB6475D6BFC8BB2"]
@@ -145,7 +145,7 @@
 				}
 				type: "item"
 			}]
-			x: -10.5d
+			x: -9.0d
 			y: 3.5d
 		}
 		{
@@ -160,7 +160,7 @@
 				}
 				type: "item"
 			}]
-			x: -8.5d
+			x: -8.0d
 			y: -5.0d
 		}
 		{
@@ -175,7 +175,7 @@
 				}
 				type: "item"
 			}]
-			x: -8.5d
+			x: -8.0d
 			y: -4.0d
 		}
 		{
@@ -190,8 +190,8 @@
 				}
 				type: "item"
 			}]
-			x: -10.5d
-			y: -2.5d
+			x: -12.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["04A7D49C1A2FDAEE"]
@@ -207,7 +207,7 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
+			x: -7.0d
 			y: -4.0d
 		}
 		{
@@ -222,8 +222,8 @@
 				}
 				type: "item"
 			}]
-			x: -10.5d
-			y: -1.5d
+			x: -12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7B4F0BE29E6CD211"]
@@ -262,7 +262,7 @@
 				item: "rehooked:diamond_hook"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -1.0d
 			y: 1.0d
 		}
 		{
@@ -295,7 +295,7 @@
 				}
 				type: "item"
 			}]
-			x: -8.5d
+			x: -7.0d
 			y: 3.5d
 		}
 		{
@@ -319,7 +319,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7B4F0BE29E6CD211"]
@@ -335,7 +335,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5CF68C4521A85ABE"]
@@ -383,7 +383,7 @@
 				}
 			]
 			title: "Building Gadgets"
-			x: -3.0d
+			x: 1.0d
 			y: -6.5d
 		}
 		{
@@ -443,8 +443,8 @@
 				}
 			]
 			title: "Bulding Gadgets"
-			x: -8.5d
-			y: -8.0d
+			x: -8.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["7B4F0BE29E6CD211"]
@@ -482,7 +482,7 @@
 			]
 			title: "Thermal Coats"
 			x: -8.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			description: [
@@ -525,7 +525,7 @@
 				}
 			]
 			title: "Cognition"
-			x: 0.0d
+			x: 4.0d
 			y: -6.5d
 		}
 		{
@@ -548,7 +548,7 @@
 				type: "item"
 			}]
 			title: "Ars Nouveau"
-			x: -3.0d
+			x: 1.0d
 			y: 0.0d
 		}
 		{
@@ -566,7 +566,7 @@
 				item: "ars_nouveau:void_jar"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -604,7 +604,7 @@
 				}
 			]
 			title: "Ars Automatica"
-			x: -2.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -630,7 +630,7 @@
 			}]
 			title: "Totemancy"
 			x: -3.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7B4F0BE29E6CD211"]
@@ -665,8 +665,8 @@
 				type: "item"
 			}]
 			title: "Familiars"
-			x: -9.0d
-			y: 0.0d
+			x: -10.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7B4F0BE29E6CD211"]
@@ -690,8 +690,8 @@
 				type: "item"
 			}]
 			title: "Occultism Automation"
-			x: -9.0d
-			y: -1.0d
+			x: -10.0d
+			y: -2.0d
 		}
 		{
 			description: ["Collects items in its range. Automatically outputs them into a storage below. That's about it."]
@@ -702,7 +702,7 @@
 				item: "itemcollectors:basic_collector"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 4.0d
 			y: -5.5d
 		}
 		{
@@ -732,7 +732,7 @@
 				}
 			]
 			title: "Waystones"
-			x: 0.0d
+			x: 4.0d
 			y: -4.5d
 		}
 		{
@@ -749,7 +749,7 @@
 				type: "item"
 			}]
 			title: "Little Tiles"
-			x: 0.0d
+			x: 4.0d
 			y: -3.5d
 		}
 		{
@@ -808,7 +808,7 @@
 				}
 			]
 			title: "Create!"
-			x: 1.0d
+			x: 5.0d
 			y: -4.5d
 		}
 		{
@@ -842,7 +842,7 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
+			x: 5.0d
 			y: -5.5d
 		}
 		{
@@ -858,7 +858,7 @@
 				item: "paraglider:paraglider"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 5.0d
 			y: -6.5d
 		}
 		{
@@ -874,7 +874,7 @@
 				item: "clickmachine:auto_clicker"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 5.0d
 			y: -3.5d
 		}
 		{
@@ -894,7 +894,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
+			x: 6.0d
 			y: -6.5d
 		}
 		{
@@ -937,7 +937,7 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
+			x: 6.0d
 			y: -5.5d
 		}
 		{
@@ -949,7 +949,7 @@
 				item: "animal_feeding_trough:feeding_trough"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 6.0d
 			y: -4.5d
 		}
 		{
@@ -976,7 +976,7 @@
 				type: "item"
 			}]
 			title: "Apotheosis"
-			x: 2.0d
+			x: 6.0d
 			y: -3.5d
 		}
 		{
@@ -993,11 +993,11 @@
 				item: "botania:teru_teru_bozu"
 				type: "item"
 			}]
-			x: -3.0d
+			x: 1.0d
 			y: -1.0d
 		}
 		{
-			dependencies: ["5CF68C4521A85ABE"]
+			dependencies: ["76CA225B7EDF0924"]
 			description: [
 				"An infinite potion, basically."
 				""
@@ -1010,7 +1010,7 @@
 				item: "botania:blood_pendant"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -15.5d
 			y: -8.0d
 		}
 		{
@@ -1020,7 +1020,7 @@
 				""
 				"Can be filtered."
 				""
-				"Has a special sloot in curios."
+				"Has a special slot in curios."
 			]
 			id: "72B955C9A7D0A4E2"
 			subtitle: "Greedy Familiar 2: LV Boogaloo"
@@ -1030,7 +1030,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -5.5d
+			x: -3.0d
 			y: -2.0d
 		}
 		{
@@ -1047,8 +1047,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: -8.0d
+			x: 1.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["5CF68C4521A85ABE"]
@@ -1064,8 +1064,8 @@
 				item: "rehooked:red_hook"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -5.0d
+			x: 1.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["37AD6DDBBB513954"]
@@ -1085,8 +1085,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: -8.0d
+			x: -7.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["5CF68C4521A85ABE"]
@@ -1127,8 +1127,8 @@
 				type: "item"
 			}]
 			title: "Drills"
-			x: -4.5d
-			y: -8.0d
+			x: -1.0d
+			y: -8.5d
 		}
 		{
 			description: [
@@ -1158,7 +1158,7 @@
 				}
 			]
 			title: "Torchmaster"
-			x: 1.0d
+			x: 5.0d
 			y: -2.5d
 		}
 		{
@@ -1170,7 +1170,7 @@
 				item: "comforts:sleeping_bag_white"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 4.0d
 			y: -2.5d
 		}
 		{
@@ -1178,7 +1178,7 @@
 			description: [
 				"Configurable Maintenance Hatch is an interesting toy. You can balance the frequency of maintenance issues against the speed of the machine."
 				""
-				"Values range from &l90% recipe duration and 5x the time between repairs&r and &l110% recipe duration and 1/3 the time between repairs&r."
+				"Values range from &l110% recipe duration and 5x the time between repairs&r and &l90% recipe duration and 1/3 the time between repairs&r."
 				""
 				"You might want to find a set of values you're comfortable with, or crank it up to max speed and leave a stack of duct tape inside - its up to you!"
 			]
@@ -1189,8 +1189,8 @@
 				item: "gtceu:configurable_maintenance_hatch"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -8.0d
+			x: -9.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["76CA225B7EDF0924"]
@@ -1226,7 +1226,7 @@
 					type: "item"
 				}
 			]
-			x: -14.0d
+			x: -16.0d
 			y: -6.5d
 		}
 		{
@@ -1238,8 +1238,8 @@
 				item: "cosmiccore:robust_drone"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -3.5d
+			x: -16.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3CBBCDD95B39B1E3"]
@@ -1250,8 +1250,8 @@
 				item: "cosmiccore:industrial_drone"
 				type: "item"
 			}]
-			x: -14.0d
-			y: 6.0d
+			x: -13.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6BB6475D6BFC8BB2"]
@@ -1262,8 +1262,8 @@
 				item: "cosmiccore:sanguine_drone"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 6.0d
+			x: -8.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6F5CEAAEDB9C1671"]
@@ -1275,8 +1275,8 @@
 				type: "item"
 			}]
 			title: "Plasmatic Drone"
-			x: -4.5d
-			y: 6.0d
+			x: -1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["17CFAED4B5733E27"]
@@ -1288,8 +1288,8 @@
 				type: "item"
 			}]
 			title: "Creative Energy Cell Get!"
-			x: -14.0d
-			y: -2.5d
+			x: -16.0d
+			y: -1.0d
 		}
 		{
 			description: [
@@ -1320,7 +1320,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
+			x: 6.0d
 			y: -2.5d
 		}
 		{
@@ -1340,8 +1340,8 @@
 				item: "cosmiccore:linked_terminal"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -1.5d
+			x: -16.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1E09F7083D002A82"]
@@ -1352,7 +1352,7 @@
 				item: "kubejs:nano_respirator"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 6.0d
 			y: -1.5d
 		}
 		{
@@ -1365,7 +1365,7 @@
 				item: "gtceu:machine_memory_card"
 				type: "item"
 			}]
-			x: -3.0d
+			x: 1.0d
 			y: -2.0d
 		}
 		{
@@ -1389,8 +1389,8 @@
 				}
 				type: "item"
 			}]
-			x: -12.5d
-			y: -8.0d
+			x: -14.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["1F4CEA0EC2484A6B"]
@@ -1402,8 +1402,8 @@
 				item: "rehooked:blaze_hook"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 2.0d
+			x: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["37AD6DDBBB513954"]
@@ -1415,7 +1415,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -7.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7B4F0BE29E6CD211"]
@@ -1453,7 +1453,7 @@
 				}
 			]
 			title: "Gateways"
-			x: -7.0d
+			x: -10.0d
 			y: 0.0d
 		}
 		{
@@ -1521,8 +1521,28 @@
 				}
 			]
 			title: "Gateways 2"
-			x: -10.0d
-			y: -7.0d
+			x: -9.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7B4F0BE29E6CD211"]
+			description: ["Shows your temperature."]
+			id: "6E13172CADB60E53"
+			tasks: [{
+				id: "58CD376B13FBEA90"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							temperature: 7.2f
+						}
+					}
+					id: "legendarysurvivaloverhaul:thermometer"
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 1.0d
 		}
 	]
 	title: "Useful Baubles"
