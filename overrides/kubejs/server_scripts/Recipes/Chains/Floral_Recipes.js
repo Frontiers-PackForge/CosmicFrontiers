@@ -211,7 +211,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:nutrient_solution 50')
         .itemOutputs('16x legendarysurvivaloverhaul:ice_fern_leaf')
         .chancedOutput(Item.of('legendarysurvivaloverhaul:ice_fern_leaf', 8), 2500, 500)
-        .duration(160)
+        .duration(120)
         .EUt(GTValues.VA[GTValues.MV] / 2);
 
     event.recipes.gtceu.flora_nurturer('sun_fern_cultivation')
@@ -228,9 +228,34 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:nutrient_solution 50')
         .itemOutputs('16x legendarysurvivaloverhaul:sun_fern_leaf')
         .chancedOutput(Item.of('legendarysurvivaloverhaul:sun_fern_leaf', 8), 2500, 500)
-        .duration(160)
+        .duration(120)
         .EUt(GTValues.VA[GTValues.MV] / 2);
-
+    //chorus fruit
+    event.recipes.gtceu.flora_nurturer('chorus_fruit_cultivation')
+        .notConsumable('minecraft:chorus_flower')
+        .notConsumable('minecraft:end_stone')
+        .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 100))
+        .itemOutputs('2x minecraft:chorus_fruit')
+        .chancedOutput(Item.of('minecraft:chorus_fruit', 2), 2500, 500)
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.LV] / 2);
+    event.recipes.gtceu.flora_nurturer('chorus_fruit_cultivation_aether_sediment')
+        .notConsumable('minecraft:chorus_flower')
+        .notConsumable('minecraft:end_stone')
+        .inputFluids('gtceu:aether_augmented_sediment 100')
+        .itemOutputs('8x minecraft:chorus_fruit')
+        .chancedOutput(Item.of('minecraft:chorus_fruit', 4), 2500, 500)
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.MV] / 2);
+    event.recipes.gtceu.flora_nurturer('chorus_fruit_cultivation_nutrient_sol')
+        .notConsumable('minecraft:chorus_flower')
+        .notConsumable('minecraft:end_stone')
+        .inputFluids('gtceu:nutrient_solution 50')
+        .itemOutputs('24x minecraft:chorus_fruit')
+        .chancedOutput(Item.of('minecraft:chorus_fruit', 16), 2500, 500)
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.MV] / 2);
+    //tau berry
     event.recipes.gtceu.flora_nurturer('tau_berry_cultivation')
         .notConsumable('bloodmagic:weak_tau')
         .notConsumable('minecraft:moss_block')
@@ -246,6 +271,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('16x bloodmagic:weak_tau')
         .duration(160)
         .EUt(GTValues.VA[GTValues.MV] / 2);
+    //nether flora    
     let floraNether = [
         'biomesoplenty:glowflower',
         'biomesoplenty:burning_blossom',
@@ -278,7 +304,7 @@ ServerEvents.recipes(event => {
             .duration(120)
             .EUt(GTValues.VA[GTValues.MV] / 2 / 2)
     })
-
+    //aether flora
     let floraAether = [
         'aether:purple_flower',
         'aether:white_flower',
