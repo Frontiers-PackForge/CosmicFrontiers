@@ -201,8 +201,8 @@ ServerEvents.recipes(event => {
         },
       ]
     }
-//chorus (already 2 ways to get chorus flower using chorus fruit so this is basically a "one time" recipe)
-  ).id("malum:spirit_infusion.frontiers.chorus_fruit")
+  //chorus (one of the flower recipes doesnt work so just gonna make it output a flower)
+  ).id("malum:spirit_infusion.frontiers.chorus_flower")
 
 
 
@@ -224,8 +224,8 @@ ServerEvents.recipes(event => {
         "item": "gtceu:hv_field_generator"
       },
       "output": {
-        "count": 8,
-        "item": "minecraft:chorus_fruit"
+        "count": 1,
+        "item": "minecraft:chorus_flower"
       },
       "spirits": [
         {
