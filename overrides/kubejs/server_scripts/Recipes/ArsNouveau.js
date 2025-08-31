@@ -310,4 +310,144 @@ ServerEvents.recipes(event => {
         R: 'gtceu:rose_gold_plate'
     }
     )
+    //spellbooks
+  .id("malum:spirit_infusion.frontiers.novice_spell_book")
+  event.remove({ id: 'ars_nouveau:novice_spell_book' })
+  event.custom(
+    {
+      "type": "malum:spirit_infusion",
+      "extra_items": [
+        {
+          "count": 1,
+          "item": "botania:manasteel_sword"
+        },
+        {
+          "count": 1,
+          "item": "botania:manasteel_pick"
+        },
+        {
+          "count": 1,
+          "item": "botania:manasteel_axe"
+        },
+        {
+          "count": 1,
+          "item": "botania:manasteel_shovel"
+        },
+      ],
+      "input": {
+        "count": 1,
+        "item": "minecraft:book"
+      },
+      "output": {
+        "count": 1,
+        "item": "ars_nouveau:novice_spell_book"
+      },
+      "spirits": [
+        {
+          "type": "arcane",
+          "count": 32
+        },
+        {
+          "type": "aqueous",
+          "count": 16
+        },
+        {
+          "type": "aerial",
+          "count": 16
+        },
+        {
+          "type": "sacred",
+          "count": 16
+        },
+      ]
+    }
+  )
+
+  .id("malum:spirit_infusion.frontiers.apprentice_spell_book")
+  event.remove({ id: 'ars_nouveau:apprentice_spell_book_upgrade' })
+  event.custom(
+    {
+      "type": "malum:spirit_infusion",
+      "extra_items": [
+        {
+          "count": 8,
+          "item": "botania:mana_diamond"
+        },
+        {
+          "count": 8,
+          "item": "kubejs:terraweave_cloth"
+        },
+        {
+          "count": 1,
+          "item": "botania:blacker_lotus"
+        },
+      ],
+      "input": {
+        "count": 1,
+        "item": "ars_nouveau:novice_spell_book"
+      },
+      "output": {
+        "count": 1,
+        "item": "ars_nouveau:apprentice_spell_book"
+      },
+      "spirits": [
+        {
+          "type": "arcane",
+          "count": 32
+        },
+        {
+          "type": "infernal",
+          "count": 16
+        },
+        {
+          "type": "earthen",
+          "count": 16
+        },
+      ]
+    }
+  )
+
+  .id("malum:spirit_infusion.frontiers.archmage_spell_book")
+  event.remove({ id: 'ars_nouveau:archmage_spell_book_upgrade' })
+  event.custom(
+    {
+      "type": "malum:spirit_infusion",
+      "extra_items": [
+        {
+          "count": 8,
+          "item": "gtceu:quantum_eye"
+        },
+        {
+          "count": 8,
+          "item": "gtceu:luminescent_utherium_ingot"
+        },
+        {
+          "count": 1,
+          "item": "ars_nouveau:wilden_tribute"
+        },
+      ],
+      "input": {
+        "count": 1,
+        "item": "ars_nouveau:apprentice_spell_book"
+      },
+      "output": {
+        "count": 1,
+        "item": "ars_nouveau:archmage_spell_book"
+      },
+      "spirits": [
+        {
+          "type": "arcane",
+          "count": 32
+        },
+        {
+          "type": "eldritch",
+          "count": 16
+        },
+        {
+          "type": "wicked",
+          "count": 16
+        },
+      ]
+    }
+  )
 })
