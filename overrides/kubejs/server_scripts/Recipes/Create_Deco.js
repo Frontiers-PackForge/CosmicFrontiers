@@ -14,7 +14,7 @@ yeet('createdeco:industrial_iron_sheet')
 yeet('createdeco:industrial_iron_nugget')
 yeet('createdeco:netherite_sheet')
 yeet('createdeco:netherite_nugget')
-
+yeet('copycats:copycat_fluid_pipe')
 
 ServerEvents.recipes(event => {
     event.replaceInput({ mod: 'createdeco' },
