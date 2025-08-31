@@ -764,24 +764,6 @@ ServerEvents.recipes(event => {
               .itemOutputs('architects_palette:hadaline_pillar')
               .duration(10)
               .EUt(GTValues.VA[GTValues.LV] / 2);
-
-       //sun fern flora nurturer recipes -- placed here since the ice fern ones are autogenned(?) while these aren't
-       event.recipes.gtceu.flora_nurturer('cosmiccore:sun_fern_cultivation_sludge')
-              .notConsumable('legendarysurvivaloverhaul:sun_fern_leaf')
-              .notConsumable('minecraft:moss_block')
-              .inputFluids(Fluid.of('gtceu:nether_sediment_sludge', 500))
-              .itemOutputs('legendarysurvivaloverhaul:sun_fern_leaf')
-              .chancedOutput(Item.of('legendarysurvivaloverhaul:sun_fern_leaf', 1), 2500, 50)
-              .duration(160)
-              .EUt(15);
-       event.recipes.gtceu.flora_nurturer('cosmiccore:sun_fern_cultivation_nutrient_solution')
-              .notConsumable('legendarysurvivaloverhaul:sun_fern_leaf')
-              .notConsumable('minecraft:moss_block')
-              .inputFluids(Fluid.of('gtceu:nutrient_solution', 50))
-              .itemOutputs('16x legendarysurvivaloverhaul:sun_fern_leaf')
-              .duration(160)
-              .EUt(60);
-
        //TODO - Mechanical Flower Recipes
        event.recipes.botania.runic_altar('gtceu:mana_simulator', ['#gtceu:circuits/ev', 'gtceu:terrasteel_octal_wire', 'gtceu:terrasteel_octal_wire', 'gtceu:terrasteel_plate', 'gtceu:terrasteel_plate', 'gtceu:terrasteel_plate', 'gtceu:terrasteel_plate', 'botania:gourmaryllis', 'botania:entropinnyum', '#gtceu:circuits/ev', 'botania:narslimmus', 'botania:spectrolus', 'botania:blacker_lotus'], 250000)
        event.recipes.botania.runic_altar('kubejs:mechanical_thermalily', ['botania:thermalily', 'botania:blacker_lotus', '#gtceu:circuits/ev', 'botania:rune_mana', 'gtceu:manasteel_plate', 'gtceu:manasteel_plate', '#gtceu:circuits/ev'], 50000)
