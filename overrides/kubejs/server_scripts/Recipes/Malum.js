@@ -201,7 +201,7 @@ ServerEvents.recipes(event => {
         },
       ]
     }
-  //chorus (one of the flower recipes doesnt work so just gonna make it output a flower)
+  //chorus 
   ).id("malum:spirit_infusion.frontiers.chorus_flower")
 
 
@@ -274,6 +274,37 @@ ServerEvents.recipes(event => {
     'occultism:rune_ritual'
   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.cthonic_gold_ritual")
 
+  //blazing quartz
+  .id("malum:spirit_infusion.frontiers.blazing_quartz")
+  event.custom(
+    {
+      "type": "malum:spirit_infusion",
+      "extra_items": [
+        {
+          "count": 1,
+          "item": "minecraft:blaze_powder"
+        },
+      ],
+      "input": {
+        "count": 8,
+        "item": "minecraft:quartz"
+      },
+      "output": {
+        "count": 32,
+        "item": "malum:blazing_quartz"
+      },
+      "spirits": [
+        {
+          "type": "arcane",
+          "count": 16
+        },
+        {
+          "type": "infernal",
+          "count": 16
+        },
+      ]
+    }
+  )
   //impetus/spirit crucible removal
   event.remove({ id: /malum:spirit_crucible(.*)/ })
   event.remove({ id: /malum:impetus_creation(.*)/ })
@@ -311,5 +342,4 @@ ServerEvents.recipes(event => {
 
 // Mass Removal
 console.log('[Malum.js finished loading]')
-
 
