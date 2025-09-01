@@ -305,6 +305,42 @@ ServerEvents.recipes(event => {
       ]
     }
   )
+  //necklace of the mystic mirror (one of the only malum curios that is gated to hv because of an eye of ender)
+  .id("malum:spirit_infusion.frontiers.necklace_of_the_mystic_mirror")
+  event.remove({ id: 'malum:spirit_infusion/necklace_of_the_mystic_mirror' })
+  event.custom(
+    {
+      "type": "malum:spirit_infusion",
+      "extra_items": [
+        {
+          "count": 8,
+          "item": "malum:runewood_planks"
+        },
+        {
+          "count": 1,
+          "item": "malum:spectral_optic"
+        },
+        {
+          "count": 1,
+          "item": "botania:mana_pearl"
+        },
+      ],
+      "input": {
+        "count": 1,
+        "item": "malum:ornate_necklace"
+      },
+      "output": {
+        "count": 1,
+        "item": "malum:necklace_of_the_mystic_mirror"
+      },
+      "spirits": [
+        {
+          "type": "sacred",
+          "count": 24
+        },
+      ]
+    }
+  )
   //impetus/spirit crucible removal
   event.remove({ id: /malum:spirit_crucible(.*)/ })
   event.remove({ id: /malum:impetus_creation(.*)/ })
