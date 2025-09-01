@@ -48,7 +48,7 @@ yeet('gtceu:naquadah_coil_block')
 yeet('gtceu:trinium_coil_block')
 yeet('gtceu:tritanium_coil_block')
 yeet('vintagedelight:ghost_charcoal')
-
+yeet('trials:crafter')
 
 ServerEvents.recipes(event => {
 
