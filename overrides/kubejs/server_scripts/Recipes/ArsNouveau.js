@@ -311,57 +311,17 @@ ServerEvents.recipes(event => {
     }
     )
     //spellbooks
-  .id("malum:spirit_infusion.frontiers.novice_spell_book")
-  event.remove({ id: 'ars_nouveau:novice_spell_book' })
-  event.custom(
-    {
-      "type": "malum:spirit_infusion",
-      "extra_items": [
-        {
-          "count": 1,
-          "item": "botania:manasteel_sword"
-        },
-        {
-          "count": 1,
-          "item": "botania:manasteel_pick"
-        },
-        {
-          "count": 1,
-          "item": "botania:manasteel_axe"
-        },
-        {
-          "count": 1,
-          "item": "botania:manasteel_shovel"
-        },
-      ],
-      "input": {
-        "count": 1,
-        "item": "minecraft:book"
-      },
-      "output": {
-        "count": 1,
-        "item": "ars_nouveau:novice_spell_book"
-      },
-      "spirits": [
-        {
-          "type": "arcane",
-          "count": 32
-        },
-        {
-          "type": "aqueous",
-          "count": 16
-        },
-        {
-          "type": "aerial",
-          "count": 16
-        },
-        {
-          "type": "sacred",
-          "count": 16
-        },
-      ]
-    }
-  )
+    //incase an occultism recipe is wanted instead
+  //event.remove({ id: 'ars_nouveau:novice_spell_book' })
+  //event.recipes.occultism.ritual(
+  //  'ars_nouveau:novice_spell_book',
+  //  ['minecraft:iron_sword',
+  //    'minecraft:iron_pickaxe',
+  //    'minecraft:iron_axe',
+  //    'minecraft:iron_shovel',],
+  //  'minecraft:book',
+  //  'occultism:rune_ritual'
+  //).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.novice_spell_book_ritual")
 
   .id("malum:spirit_infusion.frontiers.apprentice_spell_book")
   event.remove({ id: 'ars_nouveau:apprentice_spell_book_upgrade' })
@@ -371,11 +331,11 @@ ServerEvents.recipes(event => {
       "extra_items": [
         {
           "count": 8,
-          "item": "botania:mana_diamond"
+          "item": "malum:spirit_fabric"
         },
         {
           "count": 8,
-          "item": "kubejs:terraweave_cloth"
+          "item": "botania:manasteel_ingot"
         },
         {
           "count": 1,
@@ -396,7 +356,11 @@ ServerEvents.recipes(event => {
           "count": 32
         },
         {
-          "type": "infernal",
+          "type": "aerial",
+          "count": 16
+        },
+        {
+          "type": "aqueous",
           "count": 16
         },
         {
@@ -415,11 +379,11 @@ ServerEvents.recipes(event => {
       "extra_items": [
         {
           "count": 8,
-          "item": "gtceu:quantum_eye"
+          "item": "kubejs:terraweave_cloth"
         },
         {
           "count": 8,
-          "item": "gtceu:luminescent_utherium_ingot"
+          "item": "gtceu:galvanized_ethersteel_ingot"
         },
         {
           "count": 1,
@@ -445,6 +409,10 @@ ServerEvents.recipes(event => {
         },
         {
           "type": "wicked",
+          "count": 16
+        },
+        {
+          "type": "infernal",
           "count": 16
         },
       ]
