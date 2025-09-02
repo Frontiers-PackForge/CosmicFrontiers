@@ -453,10 +453,50 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(GTValues.VA[GTValues.EV]);
 
-    event.recipes.gtceu.extractor(`vegandelight:soymilk`)
+    event.recipes.gtceu.extractor('vegandelight:soymilk')
         .itemInputs('vegandelight:soybean')
         .outputFluids('vegandelight:soymilk 1000')
         .duration(200)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    event.recipes.gtceu.mixer('frontiers:gtceu_tofu')
+        .itemInputs('#forge:salt')
+        .inputFluids('vegandelight:soymilk 250')
+        .itemOutputs('vegandelight:tofu')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    event.recipes.gtceu.mixer('frontiers:gtceu_silken_tofu')
+        .itemInputs('#forge:salt')
+        .itemInputs('minecraft:bowl')
+        .inputFluids('vegandelight:soymilk 250')
+        .inputFluids('minecraft:water 250')
+        .itemOutputs('vegandelight:silken_tofu')
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    event.recipes.gtceu.mixer('frontiers:gtceu_tofu_slices')
+        .itemInputs('vegandelight:tofu')
+        .itemOutputs('vegandelight:tofu_slices 2')
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    event.recipes.gtceu.mixer('frontiers:gtceu_cooked_tofu_slices')
+        .itemInputs('vegandelight:cooked_tofu')
+        .itemOutputs('vegandelight:cooked_tofu_slices 2')
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    event.recipes.gtceu.mixer('frontiers:gtceu_cooked_smoked_tofu_slices')
+        .itemInputs('vegandelight:cooked_smoked_tofu')
+        .itemOutputs('vegandelight:cooked_smoked_tofu_slices 2')
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    event.recipes.gtceu.mixer('frontiers:gtceu_minced_tofu')
+        .itemInputs('vegandelight:tofu_slices')
+        .itemOutputs('vegandelight:minced_tofu')
+        .duration(80)
         .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.mixer('frontiers:chitosan')
