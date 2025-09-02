@@ -499,6 +499,13 @@ ServerEvents.recipes(event => {
         .duration(40)
         .EUt(GTValues.VA[GTValues.LV]);
 
+    event.recipes.gtceu.canner('frontiers:gtceu_soymilk_bottle_empty')
+        .itemInputs('vegandelight:soymilk_bottle')
+        .outputFluids('vegandelight:soymilk 250')
+        .itemOutputs('minecraft:glass_bottle')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.LV]);
+
     event.recipes.gtceu.mixer('frontiers:gtceu_silken_tofu')
         .itemInputs('#forge:salt')
         .itemInputs('minecraft:bowl')
