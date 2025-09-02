@@ -281,12 +281,12 @@ ServerEvents.recipes(event => {
       "type": "malum:spirit_infusion",
       "extra_items": [
         {
-          "count": 1,
+          "count": 4,
           "item": "minecraft:blaze_powder"
         },
       ],
       "input": {
-        "count": 8,
+        "count": 32,
         "item": "minecraft:quartz"
       },
       "output": {
