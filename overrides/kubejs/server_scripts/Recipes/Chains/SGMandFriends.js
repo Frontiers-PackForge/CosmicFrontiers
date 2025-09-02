@@ -475,25 +475,25 @@ ServerEvents.recipes(event => {
         .duration(60)
         .EUt(GTValues.VA[GTValues.LV]);
 
-    event.recipes.gtceu.mixer('frontiers:gtceu_tofu_slices')
+    event.recipes.gtceu.slicer('frontiers:gtceu_tofu_slices')
         .itemInputs('vegandelight:tofu')
         .itemOutputs('vegandelight:tofu_slices 2')
         .duration(80)
         .EUt(GTValues.VA[GTValues.LV]);
 
-    event.recipes.gtceu.mixer('frontiers:gtceu_cooked_tofu_slices')
+    event.recipes.gtceu.slicer('frontiers:gtceu_cooked_tofu_slices')
         .itemInputs('vegandelight:cooked_tofu')
         .itemOutputs('vegandelight:cooked_tofu_slices 2')
         .duration(120)
         .EUt(GTValues.VA[GTValues.LV]);
 
-    event.recipes.gtceu.mixer('frontiers:gtceu_cooked_smoked_tofu_slices')
+    event.recipes.gtceu.slicer('frontiers:gtceu_cooked_smoked_tofu_slices')
         .itemInputs('vegandelight:cooked_smoked_tofu')
         .itemOutputs('vegandelight:cooked_smoked_tofu_slices 2')
         .duration(160)
         .EUt(GTValues.VA[GTValues.LV]);
 
-    event.recipes.gtceu.mixer('frontiers:gtceu_minced_tofu')
+    event.recipes.gtceu.slicer('frontiers:gtceu_minced_tofu')
         .itemInputs('vegandelight:tofu_slices')
         .itemOutputs('vegandelight:minced_tofu')
         .duration(80)
