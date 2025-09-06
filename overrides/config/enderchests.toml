@@ -12,9 +12,9 @@ full_stack_linking = true
 	#Items used to make the chests team chests
 	team = ["tag|forge:gems/emerald"]
 	#Items that upgrade storage capacity by 3
-	small_capacity = ["minecraft:ender_pearl"]
+	small_capacity = ["gtceu:lv_field_generator"]
 	#Items that upgrade storage capacity by 9
-	large_capacity = ["minecraft:ender_eye"]
+	large_capacity = ["gtceu:mv_field_generator"]
 	#Items that upgrade storage capacity by 3
 	#Each item can only be use once per chest
 	small_capacity_singleuse = []
