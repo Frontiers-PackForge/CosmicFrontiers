@@ -418,4 +418,50 @@ ServerEvents.recipes(event => {
       ]
     }
   )
+  //pity recipe cause the wilden dens spawn *very* rarely, should be a one time craft
+  event.custom(
+    {
+      "type": "malum:spirit_infusion",
+      "extra_items": [
+        {
+          "count": 8,
+          "item": "minecraft:phantom_membrane"
+        },
+        {
+          "count": 8,
+          "item": "minecraft:rotten_flesh"
+        },
+        {
+          "count": 1,
+          "item": "minecraft:wither_skeleton_skull"
+        },
+      ],
+      "input": {
+        "count": 1,
+        "item": "ars_nouveau:purple_archwood_log"
+      },
+      "output": {
+        "count": 1,
+        "item": "ars_nouveau:ritual_wilden_summon"
+      },
+      "spirits": [
+        {
+          "type": "arcane",
+          "count": 32
+        },
+        {
+          "type": "earthen",
+          "count": 32
+        },
+        {
+          "type": "aerial",
+          "count": 16
+        },
+        {
+          "type": "wicked",
+          "count": 16
+        },
+      ]
+    }
+  )
 })
