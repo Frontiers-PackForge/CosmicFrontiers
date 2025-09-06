@@ -27,9 +27,8 @@ ServerEvents.recipes(event => {
         ],
         "sourceCost": 2000
       })
-    event.remove({id:'occultism:ritual/craft_stabilizer_tier3'})
-    event.remove({id:'ars_ocultas:craft_stabilizer_tier4'})
-    event.remove({id:'occultism:ritual/craft_stabilizer_tier4'})
+
+    event.remove({id:'delightful:integration/ars_nouveau/cutting/magebloom'})
     event.remove({ output: 'ars_nouveau:archwood_chest' })
     event.remove({ output: 'arseng:source_cell_housing' })
 
