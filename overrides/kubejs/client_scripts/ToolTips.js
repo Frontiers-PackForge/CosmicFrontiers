@@ -341,20 +341,18 @@ ItemEvents.tooltip(event => {
   })
   //ender tanks/chests
   event.addAdvanced('endertanks:ender_tank', (item, advanced, text) => {
-    text.add(1, Text.of('Requires GT Components To Upgrade').blue().italic())
     if (event.isShift()) {
     text.add(2, [Text.of('Capacity: ').aqua(), Text.of('LV Field Generator, 8B Per').gray(), Text.of(' Or ').gold(), Text.of('MV Field Generator, 32B Per, Max').gray().gray(), Text.of(' 256B ').gold()])
     text.add(3, [Text.of('Pump Speed: ').aqua(), Text.of('LV Electric Piston, 1B Per, Max').gray(), Text.of(' 4B ').gold()])
     } else {
-      text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+      text.add(2, [Text.of('Can be upgraded, Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
     }
   })
   event.addAdvanced('enderchests:ender_chest', (item, advanced, text) => {
-    text.add(1, Text.of('Requires GT Components To Upgrade').blue().italic())
     if (event.isShift()) {
     text.add(2, [Text.of('Inventory Slots: ').aqua(), Text.of('LV Field Generator, 3 Slots Per').gray(), Text.of(' Or ').gold(), Text.of('MV Field Generator, 9 Slots Per, Max').gray(), Text.of(' 27 ').gold()])
     } else {
-      text.add(2, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+      text.add(2, [Text.of('Can be upgraded, Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
     }
   })
 
