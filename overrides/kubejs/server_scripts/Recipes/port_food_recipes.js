@@ -381,6 +381,10 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
                         newIngredients.splice(newIngredients.indexOf(ingredient), 1);
                         newIngredients.push(itemEntries);
 
+                        if (fluidIngredients && fluidIngredients.length > 0) {
+                            newIngredients = newIngredients.concat(fluidIngredients);
+                        }
+
                         if (recipe.json.has("ingredient")) {
                             recipe.json.remove("ingredient");
                         }
