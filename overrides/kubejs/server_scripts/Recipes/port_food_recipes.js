@@ -231,7 +231,9 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
     //I hate indexing it this way; if someone knows how to do this better please do
     //these should all be com.google.gson.JsonArray
     var ingredients = recipe.json.has("ingredient") ? recipe.json.get("ingredient") : recipe.json.get("ingredients");
-    var toolIngredient = recipe.json.has("tool") ? recipe.json.get("tool") : recipe.json.get("tool");
+    var toolIngredient = recipe.json.has("tool") ? recipe.json.get("tool") : null; //barbequesdelight support
+    var sideIngredient = recipe.json.has("side") ? recipe.json.get("side") : null; //barbequesdelight support
+    var ingredientCount = recipe.json.has("ingredientCount") ? parseInt(recipe.json.get("ingredientCount")): null; //WHYYY
     var results = recipe.json.has("result") ? recipe.json.get("result")
     : recipe.json.has("results") ? recipe.json.get("results")
     : recipe.json.has("output") ? recipe.json.get("output")
@@ -246,6 +248,10 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
         toolIngredient = JsonIO.parse(JsonIO.toString([toolIngredient]));
         //console.log("transformed ingredients into array");
     }
+    if (sideIngredient != null && (sideIngredient.getClass == undefined || sideIngredient.getClass() == "class com.google.gson.JsonObject")) {
+        sideIngredient = JsonIO.parse(JsonIO.toString([sideIngredient]));
+        //console.log("transformed sideIngredient into array");
+    }
 
     if (results != null && (results.getClass == undefined || results.getClass() == "class com.google.gson.JsonObject")) {
         results = JsonIO.parse(JsonIO.toString([results]));
@@ -254,6 +260,30 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
     if (secondaryOutputs != null && (secondaryOutputs.getClass == undefined || secondaryOutputs.getClass() == "class com.google.gson.JsonObject")) {
         secondaryOutputs = JsonIO.parse(JsonIO.toString([secondaryOutputs]));
         //console.log("transformed secondaryOutputs into array");
+    }
+
+    if (sideIngredient != null) {
+        if (sideIngredient.length > 0) {
+            ingredients.addAll(sideIngredient);
+        }
+    }
+
+    //i hate you barbeques delight
+    if (ingredientCount != null && ingredientCount > 1) {
+        var newIngs = [];
+        ingredients.forEach((x) => {
+            //this just doesn't work for some reason? maybe just for tags but aaaaaaahhhhhh
+//            if (x.has("count")) {
+//                x.remove("count");
+//            }
+//            x.add("count", ingredientCount);
+            for (let i = 0; i < ingredientCount - 1; i++) {
+                newIngs.push(x)
+            }
+        })
+        if (newIngs.length > 0) {
+            ingredients.addAll(newIngs);
+        }
     }
 
     //console.log("raw json ingredients:")
@@ -267,6 +297,7 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
             //console.log("appended tool ingredients to ingredients");
         }
     }
+
     //console.log("raw json results:")
     //console.log(results)
     if (secondaryOutputs != null) {
@@ -288,6 +319,8 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
     //e.g. [[{"item":"vegandelight:soymilk_bucket"},{"item":"vegandelight:soymilk_bottle"}], [{"tag":"forge:salts"},{"tag":"forge:salt"}], [{"item":"minecraft:water_bucket"}]]
     var itemIngredients = autoportIngredientResultFilter(ingredients, itemPredicate);
     var fluidIngredients = autoportIngredientResultFilter(ingredients, fluidPredicate);
+
+
 
     //console.log("parsed json ingredients:")
     //console.log(JsonIO.toString(itemIngredients));
