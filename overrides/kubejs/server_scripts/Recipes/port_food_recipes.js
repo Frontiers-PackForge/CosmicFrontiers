@@ -343,7 +343,7 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
 
     //we're gunna (potentially) do some recursive stuff because having an ingredient as an array of tags just doesn't work
     //ingredients are an array
-    if (itemIngredients.forEach != null) {
+    if (itemIngredients && itemIngredients.forEach != null) {
         //{result={"item":"vegandelight:tofu"}, ingredients=[[{"item":"vegandelight:soymilk_bucket"},{"item":"vegandelight:soymilk_bottle"}],
         //[{"tag":"forge:salts"},{"tag":"forge:salt"}]], type="farmersdelight:cooking", experience=1.0, recipe_book_tab="meals", cookingtime=200}
 
@@ -400,7 +400,7 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
                 //add another recipe for milk (liquid) if milk (bucket) is present
                 //todo: update this to support fluids based on a dictionary of item => fluid conversion
                 if (recursiveCall == false) {
-                    if (ingredient.item == "minecraft:milk_bucket") {
+                    if (ingredient.item == "minecraft:milk_bucket" || ingredient.tag == "forge:milk") {
                         //console.log("recipe using milk bucket found, creating duplicate using milk fluid...")
                         var newIngredients = itemIngredients.slice();
                         newIngredients.splice(newIngredients.indexOf(ingredient), 1);
@@ -436,7 +436,12 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
     //check for container requirements, such as bowls, and add them to the ingredients list
     if (recipe.json.has("container")){
         var container = recipe.json.get("container");
-        itemIngredients.push(container);
+        if (itemIngredients) {
+            itemIngredients.push(container);
+        }
+        else {
+            itemIngredients = [container];
+        }
         //console.log(`appended container '${container}'`);
     }
     //wow I... hate this
