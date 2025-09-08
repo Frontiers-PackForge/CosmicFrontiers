@@ -406,6 +406,13 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
         }
     }
 
+    if (machSelObj.machine == "slicer" && itemIngredients.find) {
+        var findTheKnife = itemIngredients.find(x=>x.tag == "forge:tools/knives");
+        if (findTheKnife != null) {
+            itemIngredients.splice(itemIngredients.indexOf(findTheKnife))
+        }
+    }
+
     //console.log(`machine selected: ${JsonIO.toString(machSelObj)}`)
 
     if (machSelObj.additionalItems && machSelObj.additionalItems.length > 0) {
