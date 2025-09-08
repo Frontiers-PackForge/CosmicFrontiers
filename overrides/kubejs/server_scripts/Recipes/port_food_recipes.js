@@ -113,10 +113,10 @@ ServerEvents.recipes(event => {
         }
 
         if (origRecipeName.includes("fried_")) {
-            if ((itemIngredients == null || itemIngredients.length < 7) && (fluidIngredients == null || fluidIngredients.length < 2)) {
+            if ((itemIngredients == null || itemIngredients.length < 7)) {
                 ret.machine = "fryer";
             }
-            if (fluidIngredients && fluidIngredients.length < 1) {
+            if (fluidIngredients == null || fluidIngredients.length < 1) {
                 ret.additionalFluids.push([{fluid: "gtceu:seed_oil", amount: 20}, {fluid: "gtceu:fish_oil", amount: 20}]);
             }
         }
