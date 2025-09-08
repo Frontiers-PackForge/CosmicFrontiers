@@ -396,6 +396,35 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
                     }
                 }
             }
+            else {
+                //add another recipe for milk (liquid) if milk (bucket) is present
+                //todo: update this to support fluids based on a dictionary of item => fluid conversion
+                if (recursiveCall == false) {
+                    if (ingredient.item == "minecraft:milk_bucket") {
+                        //console.log("recipe using milk bucket found, creating duplicate using milk fluid...")
+                        var newIngredients = itemIngredients.slice();
+                        newIngredients.splice(newIngredients.indexOf(ingredient), 1);
+
+                        var newFluidIngredients = fluidIngredients == null ? [] : fluidIngredients.slice();
+                        newFluidIngredients.push({fluid: "minecraft:milk", amount: 1000});
+
+                        newIngredients = newIngredients.concat(newFluidIngredients);
+
+                        if (recipe.json.has("ingredient")) {
+                            recipe.json.remove("ingredient");
+                        }
+                        if (recipe.json.has("ingredients")) {
+                            recipe.json.remove("ingredients");
+                        }
+                        recipe.json.add("ingredients", newIngredients);
+
+                        //console.log("adding new recipe using ingredients: " + JsonIO.toString(newIngredients));
+                        addedRecipes.push(recipeName); //workaround to generate a circuit for the new recipe and not create a duplicate
+                        autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, recipeBlacklistPredicate);
+                        addedRecipes.splice(addedRecipes.indexOf(recipeName), 1); //if the above errors, splice(length-2) is invalid
+                    }
+                }
+            }
         });
 
         if (recursiveCall == true) {
