@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
         }
 
         if (origRecipeName.includes("fried_")) {
-            if ((itemIngredients == null || itemIngredients.length < 7)) {
+            if ((itemIngredients == null || itemIngredients.length < 7) && (fluidIngredients == null || fluidIngredients.length < 2)) {
                 ret.machine = "fryer";
             }
             if (fluidIngredients == null || fluidIngredients.length < 1) {
