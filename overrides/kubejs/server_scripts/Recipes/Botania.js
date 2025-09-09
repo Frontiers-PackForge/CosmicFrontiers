@@ -24,6 +24,13 @@ ServerEvents.recipes(event => {
         .itemOutputs('9x gtceu:livingrock_plate')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(184)
+    //lexica botania elven edition
+    event.recipes.gtceu.essence_reactor('lexica_botania_elven_edition')
+        .itemInputs(['botania:lexicon',])
+        .inputFluids('gtceu:potent_mana 1000')
+        .itemOutputs((Item.of('botania:lexicon', '{"botania:elven_unlock": 1b}')))
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(100)
     //Essence Reactor Alfheim Materials - The Elves are dead, don't use the portal.
     event.remove({ id: 'botania:elven_trade/dragonstone_block' })
     event.remove({ id: 'botania:elven_trade/dragonstone' })
