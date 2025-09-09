@@ -426,6 +426,43 @@ ServerEvents.recipes(event => {
         'occultism:craft_djinni'
     ).dummy('occultism:ritual_dummy/craft_dimensional_mineshaft').id("occultism:frontiers.fusion_ritual.embers-gem-ritual")
 
+  //malignant soulstone
+  .id("malum:spirit_infusion.frontiers.malignant_soulstone")
+  event.custom(
+    {
+      "type": "malum:spirit_infusion",
+      "extra_items": [
+        {
+          "count": 1,
+          "item": "malum:malignant_lead"
+        },
+      ],
+      "input": {
+        "count": 1,
+        "item": "malum:block_of_raw_soulstone"
+      },
+    "output": {
+        "type": "forge:nbt",
+        "item": "apotheosis:gem",
+        "nbt": {affix_data:{rarity:"apotheosis:common"},gem:"apotheosis:core/malignant"}
+        
+    },
+      "spirits": [
+        {
+          "type": "arcane",
+          "count": 16
+        },
+        {
+          "type": "wicked",
+          "count": 16
+        },
+        {
+          "type": "eldritch",
+          "count": 16
+        },
+      ]
+    }
+  )
 
 
 
