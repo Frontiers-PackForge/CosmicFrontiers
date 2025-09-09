@@ -104,6 +104,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'terralith:piston_alt' })
   event.remove({ id: 'gtceu:macerator/macerate_treated_wood_planks' })
   event.remove({ id: 'gtceu:alloy_blast_smelter/starmetal_gas' })
+  event.remove({ id: 'gtceu:orbital_forge/neutronium_boule' })
+  event.remove({ id: 'gtceu:electric_blast_furnace/neutronium_boule' })
 
 
   event.replaceOutput({ id: 'gtceu:shaped/power_substation' }, 'gtceu:power_substation', 'cosmiccore:dimensional_energy_capacitor')
@@ -547,6 +549,22 @@ ServerEvents.recipes(event => {
     F: 'gtceu:rhenium_frame',
     W: '#forge:tools/wrenches',
     H: '#forge:tools/hammers'
+  })
+  //Oscillating Casings
+  event.recipes.gtceu.assembler('gtceu:costly_osc_gilded_casing_assem')
+    .itemInputs(['cosmiccore:gilded_pthanterum_casing', '4x gtceu:heavy_hsla_steel_beam', '4x gtceu:long_hsla_steel_rod'])
+    .itemOutputs('cosmiccore:oscillating_gilded_pthanterum_casings')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('cosmiccore:oscillating_gilded_pthanterum_casings', [
+    'AFA',
+    'FWF',
+    'AFA'
+  ], {
+    A: 'gtceu:heavy_hsla_steel_beam',
+    F: 'gtceu:long_hsla_steel_rod',
+    W: 'cosmiccore:gilded_pthanterum_casing',
   })
   event.shaped('gtceu:large_dryer', [
     'CBC',
