@@ -109,6 +109,21 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .formula('')
         .color(0xa9acb0)
 
+
+    event.create('primed_bedrock_gas')
+        .gas()
+        .formula('')
+        .color(0xa9acb0)
+
+    event.create('cold_ignis')
+        .gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill())
+        .formula('')
+        .color(0x383838)
+    event.create('ignis')
+        .gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill())
+        .formula('')
+        .color(0x383838)
+
     //The Start of OUR Taranium Processing
     event.create('varible_taranium_slush')
         .gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill())
