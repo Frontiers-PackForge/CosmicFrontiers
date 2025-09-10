@@ -1,0 +1,11 @@
+{
+  "type": "frontiers:the_deep_below",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "frontiers:the_deep_below",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "biomesoplenty:withered_abyss"
+    }
+  }
+}
