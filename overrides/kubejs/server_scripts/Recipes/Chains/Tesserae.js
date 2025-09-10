@@ -63,167 +63,158 @@ ServerEvents.recipes(event => {
         .chancedOutput('4x cosmiccore:thaumica_wafer', 5000, 0)
         .duration(400)
         .EUt(GTValues.VA[GTValues.UV])
-    //Folding Recipes
 
-
-    //Take Primary Result -1A +1B secondary result
-
-
-    //A Group
-    let vexil = [
-        "tessaron",
-        "vexiun",
-        "ambrion",
-        "ethera",
-        "pyrith",
-        "tenaebrum",
-        "crystala",
-        "chronia"
-    ]
-    //B Group
-    let luminon = [
-        "echon",
-        "mystrix",
-        "dynamia",
-        "seraphon",
-        "nyxon",
-        "spectil",
-        "phantnon",
-        "esson",
-    ]
-
-
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_1')
-        .itemInputs('cosmiccore:' + vexil[0]) //1A
-        .itemInputs('cosmiccore:' + luminon[0]) //1B
-        .itemOutputs('cosmiccore:' + luminon[7]) //8B
-        .itemOutputs('cosmiccore:' + vexil[6]) //7A
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_2')
-        .itemInputs('cosmiccore:' + vexil[1]) //2A
-        .itemInputs('cosmiccore:' + luminon[0]) //1B
-        .itemOutputs('cosmiccore:' + luminon[2]) //1B
-        .itemOutputs('cosmiccore:' + vexil[7]) //8A
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_3')
-        .itemInputs('cosmiccore:' + vexil[2]) //3A
-        .itemInputs('cosmiccore:' + luminon[0]) //1B
-        .itemOutputs('cosmiccore:' + vexil[6]) //7A
-        .itemOutputs('cosmiccore:' + luminon[7]) //8B
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-
-
-    //Second Row (2B)
-
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_5')
-        .itemInputs('cosmiccore:' + vexil[1]) //2A
-        .itemInputs('cosmiccore:' + luminon[1]) //2B
-        .itemOutputs('cosmiccore:' + luminon[6]) //7A
-        .itemOutputs('cosmiccore:' + vexil[7]) //8B
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_6')
-        .itemInputs('cosmiccore:' + vexil[2]) //3A
-        .itemInputs('cosmiccore:' + luminon[1]) //2B
-        .itemOutputs('cosmiccore:' + luminon[1]) //2A
-        .itemOutputs('cosmiccore:' + vexil[2]) //3B
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_7')
-        .itemInputs('cosmiccore:' + vexil[3]) //4A
-        .itemInputs('cosmiccore:' + luminon[1]) //2B
-        .itemOutputs('cosmiccore:' + luminon[5]) //6A
-        .itemOutputs('cosmiccore:' + vexil[6]) //7B
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-
-
-    //Third Row (3B)
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_8')
-        .itemInputs('cosmiccore:' + vexil[0]) //1A
-        .itemInputs('cosmiccore:' + luminon[2]) //3B
-        .itemOutputs('cosmiccore:' + luminon[6]) //6B
-        .itemOutputs('cosmiccore:' + vexil[4]) //5A
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_9')
-        .itemInputs('cosmiccore:' + vexil[1]) //2A
-        .itemInputs('cosmiccore:' + luminon[2]) //3B
-        .itemOutputs('cosmiccore:' + luminon[6]) //2B
-        .itemOutputs('cosmiccore:' + vexil[2]) //1A
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_10')
-        .itemInputs('cosmiccore:' + vexil[2]) //3A
-        .itemInputs('cosmiccore:' + luminon[2]) //3B
-        .itemOutputs('cosmiccore:' + luminon[6]) //6B
-        .itemOutputs('cosmiccore:' + vexil[4]) //5A
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_11')
-        .itemInputs('cosmiccore:' + vexil[3]) //4A
-        .itemInputs('cosmiccore:' + luminon[2]) //3B
-        .itemOutputs('cosmiccore:' + luminon[6]) //3B
-        .itemOutputs('cosmiccore:' + vexil[4]) //2A
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_12')
-        .itemInputs('cosmiccore:' + vexil[4]) //5A
-        .itemInputs('cosmiccore:' + luminon[2]) //3B
-        .itemOutputs('cosmiccore:' + vexil[4]) //5A
-        .itemOutputs('cosmiccore:' + vexil[5]) //6B
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-
-
-    //Fourth Row (4B)
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_13')
-        .itemInputs('cosmiccore:' + vexil[0])
-        .itemInputs('cosmiccore:' + luminon[3]) //4B
-        .itemOutputs('cosmiccore:' + vexil[1]) //GRAY : 2B
-        .itemOutputs('cosmiccore:' + vexil[0]) //RED : 1A
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_14')
-        .itemInputs('cosmiccore:' + vexil[1])
-        .itemInputs('cosmiccore:' + luminon[3]) //4B
-        .itemOutputs('cosmiccore:' + vexil[4]) //GRAY : 5A
-        .itemOutputs('cosmiccore:' + luminon[5]) //RED : 6B
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_15')
-        .itemInputs('cosmiccore:' + vexil[2])
-        .itemInputs('cosmiccore:' + luminon[3]) //4B
-        .itemOutputs('cosmiccore:' + vexil[2]) //GRAY : 3A
-        .itemOutputs('cosmiccore:' + luminon[3]) //RED : 4B
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_16')
-        .itemInputs('cosmiccore:' + vexil[3])
-        .itemInputs('cosmiccore:' + luminon[3]) //4B
-        .itemOutputs('cosmiccore:' + vexil[4]) //GRAY : 5A
-        .itemOutputs('cosmiccore:' + luminon[5]) //RED : 6B
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_17')
-        .itemInputs('cosmiccore:' + vexil[4])
-        .itemInputs('cosmiccore:' + luminon[3]) //4B
-        .itemOutputs('cosmiccore:' + vexil[3]) //GRAY : 4A
-        .itemOutputs('cosmiccore:' + luminon[4]) //RED : 5B
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
-    event.recipes.gtceu.arcane_folding('frontiers:arcane_fold_18')
-        .itemInputs('cosmiccore:' + vexil[5])
-        .itemInputs('cosmiccore:' + luminon[3]) //4B
-        .itemOutputs('cosmiccore:' + vexil[3]) //GRAY : 4A
-        .itemOutputs('cosmiccore:' + luminon[5]) //RED : 6B
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.UV]);
 })
+//Folding Recipes I didn't want to do this in the same event because god wtf is this i hate it i understand it
+//but god sure doesn't want me to unleash this on the world there is a higher power out there begging me
+//literally pleading for me to not let this exist this is horrible this is awful
+//the double for loop is a sin but at least it isn't the like 8 deep nested for loop inside of blockPattern.java
+//that thing actually is the most hellish thing i've ever had to deal with and if i have to be reminded
+//of it's awful existence you have to as well for reading this i no longer have mercy for you why are you here.
+// This was 4 hours of head smashing and asking llms and friends how math and javascript worked, you forced my hand.
+ServerEvents.recipes(function (event) {
+  var vexilItems = [
+    "tessaron","vexiun","ambrion","ethera",
+    "pyrith","tenaebrum","crystala","chronia"
+  ];
+  var luminonItems = [
+    "echon","mystrix","dynamia","seraphon",
+    "nyxon","spectil","phantnon","esson"
+  ];
+  var allSixteenItems = vexilItems.concat(luminonItems);
+
+  var starterItems = ["tessaron","vexiun","ambrion","ethera"];
+  var isStarterItem = { tessaron:true, vexiun:true, ambrion:true, ethera:true };
+
+  var nonStarterItems = [];
+  for (var i = 0; i < allSixteenItems.length; i++) {
+    var itemName = allSixteenItems[i];
+    if (!isStarterItem[itemName]) nonStarterItems.push(itemName);
+  }
+
+  var recipeDurationTicks = 80;
+  var recipeEnergyEUt = GTValues.VA[GTValues.UV];
+
+  function createRecipeId(inputOne, inputTwo, suffix) {
+    return "frontiers:arcane_fold_" + inputOne + "__" + inputTwo + (suffix || "");
+  }
+
+  var usedRecipeIds = {};
+  var seenInputPairs = {};
+
+  function makeInputKey(inputOne, inputTwo) {
+    return inputOne + "|" + inputTwo;
+  }
+
+  function addArcaneFoldingRecipe(inputOne, inputTwo, outputOne, outputTwo, suffix) {
+    if (inputOne === inputTwo) return;
+    if (outputOne === outputTwo) return;
+    if (outputOne === inputOne || outputOne === inputTwo) return;
+    if (outputTwo === inputOne || outputTwo === inputTwo) return;
+
+    var inputKey = makeInputKey(inputOne, inputTwo);
+    if (seenInputPairs[inputKey]) return;
+    seenInputPairs[inputKey] = true;
+
+    var recipeId = createRecipeId(inputOne, inputTwo, suffix);
+    if (usedRecipeIds[recipeId]) return;
+    usedRecipeIds[recipeId] = true;
+
+    event.recipes.gtceu.arcane_folding(recipeId)
+      .itemInputs("cosmiccore:" + inputOne)
+      .itemInputs("cosmiccore:" + inputTwo)
+      .itemOutputs("cosmiccore:" + outputOne)
+      .itemOutputs("cosmiccore:" + outputTwo)
+      .duration(recipeDurationTicks)
+      .EUt(recipeEnergyEUt);
+  }
+
+  function pickValidItemFromRing(itemRing, startIndex, forbiddenItems) {
+    var length = itemRing.length;
+    for (var step = 0; step < length; step++) {
+      var index = (startIndex + step) % length;
+      var candidate = itemRing[index];
+      if (!forbiddenItems[candidate]) return { value: candidate, index: index };
+    }
+    return { value: itemRing[startIndex % length], index: startIndex % length };
+  }
+
+  var permutationRingSixteen = new Array(16);
+  for (var a = 0; a < 16; a++) permutationRingSixteen[a] = allSixteenItems[(11 * a + 7) % 16];
+
+  var permutationRingTwelve = new Array(12);
+  for (var b = 0; b < 12; b++) permutationRingTwelve[b] = nonStarterItems[(5 * b + 3) % 12];
+
+  for (var iStarter = 0; iStarter < 4; iStarter++) {
+    for (var jStarter = 0; jStarter < 4; jStarter++) {
+      if (iStarter === jStarter) continue;
+
+      var starterOne = starterItems[iStarter];
+      var starterTwo = starterItems[jStarter];
+
+      var indexSixteen = (iStarter * 9 + jStarter * 11 + 3) % 16;
+
+      var forbiddenOutputsPhaseOne = {};
+      forbiddenOutputsPhaseOne[starterOne] = true;
+      forbiddenOutputsPhaseOne[starterTwo] = true;
+      var firstOutputPhaseOne = pickValidItemFromRing(permutationRingSixteen, indexSixteen, forbiddenOutputsPhaseOne);
+
+      var forbiddenOutputsSecondPhaseOne = {};
+      forbiddenOutputsSecondPhaseOne[starterOne] = true;
+      forbiddenOutputsSecondPhaseOne[starterTwo] = true;
+      forbiddenOutputsSecondPhaseOne[firstOutputPhaseOne.value] = true;
+      var secondOutputPhaseOne = pickValidItemFromRing(permutationRingSixteen, firstOutputPhaseOne.index + 1, forbiddenOutputsSecondPhaseOne);
+
+      addArcaneFoldingRecipe(starterOne, starterTwo, firstOutputPhaseOne.value, secondOutputPhaseOne.value, "_seed16");
+    }
+  }
+
+  for (var iStarterOther = 0; iStarterOther < 4; iStarterOther++) {
+    var starterItem = starterItems[iStarterOther];
+    for (var jOther = 0; jOther < nonStarterItems.length; jOther++) {
+      var nonStarterItem = nonStarterItems[jOther];
+
+      var indexTwelve = (iStarterOther * 7 + jOther * 5 + 4) % 12;
+      var forbiddenOutputsPhaseTwo = {};
+      forbiddenOutputsPhaseTwo[starterItem] = true;
+      forbiddenOutputsPhaseTwo[nonStarterItem] = true;
+      var firstOutputPhaseTwo = pickValidItemFromRing(permutationRingTwelve, indexTwelve, forbiddenOutputsPhaseTwo);
+
+      var indexSixteenB = (iStarterOther * 11 + jOther * 9 + 1) % 16;
+      var forbiddenOutputsSecondPhaseTwo = {};
+      forbiddenOutputsSecondPhaseTwo[starterItem] = true;
+      forbiddenOutputsSecondPhaseTwo[nonStarterItem] = true;
+      forbiddenOutputsSecondPhaseTwo[firstOutputPhaseTwo.value] = true;
+      var secondOutputPhaseTwo = pickValidItemFromRing(permutationRingSixteen, indexSixteenB, forbiddenOutputsSecondPhaseTwo);
+
+      addArcaneFoldingRecipe(starterItem, nonStarterItem, firstOutputPhaseTwo.value, secondOutputPhaseTwo.value, "_starter_other");
+    }
+  }
+
+  for (var iOther = 0; iOther < nonStarterItems.length; iOther++) {
+    for (var jOtherB = iOther + 1; jOtherB < nonStarterItems.length; jOtherB++) {
+      var otherItemOne = nonStarterItems[iOther];
+      var otherItemTwo = nonStarterItems[jOtherB];
+
+      var indexTwelvePair = (iOther * 3 + jOtherB * 8 + 6) % 12;
+
+      var forbiddenOutputsPhaseThree = {};
+      forbiddenOutputsPhaseThree[otherItemOne] = true;
+      forbiddenOutputsPhaseThree[otherItemTwo] = true;
+      var firstOutputPhaseThree = pickValidItemFromRing(permutationRingTwelve, indexTwelvePair, forbiddenOutputsPhaseThree);
+
+      var forbiddenOutputsSecondPhaseThree = {};
+      forbiddenOutputsSecondPhaseThree[otherItemOne] = true;
+      forbiddenOutputsSecondPhaseThree[otherItemTwo] = true;
+      forbiddenOutputsSecondPhaseThree[firstOutputPhaseThree.value] = true;
+      var secondOutputPhaseThree = pickValidItemFromRing(permutationRingTwelve, firstOutputPhaseThree.index + 1, forbiddenOutputsSecondPhaseThree);
+
+      addArcaneFoldingRecipe(otherItemOne, otherItemTwo, firstOutputPhaseThree.value, secondOutputPhaseThree.value, "_perm12");
+    }
+  }
+});
+
+
 
 /*
 VEXIL = A
