@@ -5,7 +5,7 @@
     "settings": "frontiers:the_deep_below",
     "biome_source": {
       "type": "minecraft:fixed",
-      "biome": "biomesoplenty:withered_abyss"
+      "biome": "frontiers:the_deep_below"
     }
   }
 }
