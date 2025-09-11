@@ -1,509 +1,175 @@
+// Malum has more block sets than other mods for its woods, hence the use of a seperate file for it
+// Also a lot (BUT NOT ALL FOR SOME REASON) of block ids follow the format type_planks_block
+// instead of type_block, so its a bit annoying
+
+const malumWoods = [
+    'soulwood',
+    'runewood'
+]
+
+// 'type' is replaced by the wood type
+const malumDecorPlanks = [
+    'type_planks',
+    'type_boards',
+    'vertical_type_boards',
+    'vertical_type_planks',
+    'type_tiles',
+    'rustic_type_planks',
+    'vertical_rustic_type_planks',
+    'rustic_type_tiles',
+]
+
 ServerEvents.recipes(event => {
-    //We'll consider all special blocks to use the default planks, i cbfa to deal with this more rn.
-    new WoodMalum('malum', 'soulwood_planks', event).all();
-    new WoodMalum('malum', 'runewood_planks', event).all();
+    malumWoods.forEach(wood => {
+        event.remove({ output: `malum:${wood}_door` })
+        event.shaped(`2x malum:${wood}_door`, [
+            'PTD',
+            'PRS',
+            'PPW'
+        ], {
+            P: `#malum:${wood}_planks`,
+            T: `malum:${wood}_trapdoor`,
+            W: `#forge:tools/saws`,
+            S: 'gtceu:iron_screw',
+            R: 'gtceu:iron_ring',
+            D: '#forge:tools/screwdrivers',
+        }).id(`cosmicfrontiers:${wood}_door`)
+        event.recipes.gtceu.assembler(`cosmicfrontiers:${wood}_door`)
+        .itemInputs([`5x #malum:${wood}_planks`])
+        .itemOutputs(`3x malum:${wood}_door`)
+        .inputFluids('gtceu:iron 16')
+        .circuit(3)
+        .duration(100)
+        .EUt(4);
 
+        event.remove({ id: `malum:solid_${wood}_trapdoor` })
+        event.shaped(`2x malum:solid_${wood}_trapdoor`, [
+            'PPP',
+            'PPP'
+        ], {
+            P: `#malum:${wood}_slabs`
+        }).id(`cosmicfrontiers:solid_${wood}_trapdoor`)
+        event.recipes.gtceu.assembler(`cosmicfrontiers:solid_${wood}_trapdoor`)
+        .itemInputs(`3x #malum:${wood}_slabs`)
+        .itemOutputs(`3x malum:solid_${wood}_trapdoor`)
+        .circuit(6)
+        .duration(100)
+        .EUt(4);
 
-    new WoodMalum('malum', 'runewood_panel', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'runewood_beam', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'rustic_runewood_tiles', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'runewood_tiles', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'vertical_runewood_boards', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'runewood_boards', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'vertical_rustic_runewood_planks', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'rustic_runewood_planks', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'vertical_runewood_planks', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'cut_runewood_planks', event)
-        .slab()
-        .stairs();
+        event.remove({ output: `malum:${wood}_planks_fence` })
+        event.recipes.gtceu.assembler(`cosmicfrontiers:${wood}_planks_fence`)
+        .itemInputs(`#malum:${wood}_planks`)
+        .itemOutputs(`malum:${wood}_planks_fence`)
+        .circuit(1)
+        .duration(100)
+        .EUt(4);
+        event.shaped(`malum:${wood}_planks_fence`, [
+            'PSP',
+            'PSP',
+            'PSP'
+        ], {
+            P: `#malum:${wood}_planks`,
+            S: `#forge:rods/wooden`
+        }).id(`cosmicfrontiers:${wood}_planks_fence`)
+        
 
+        event.remove({ output: `malum:${wood}_planks_fence_gate` })
+        event.shaped(`2x malum:${wood}_planks_fence_gate`, [
+            'QWQ',
+            'SPS',
+            'SPS'
+        ], {
+            P: `#malum:${wood}_planks`,
+            S: `#forge:rods/wooden`,
+            W: `#forge:tools/screwdrivers`,
+            Q: `gtceu:iron_screw`
+        }).id(`cosmicfrontiers:${wood}_planks_fence_gate`)
 
-    //Need precise allocations
-    new WoodMalum('malum', 'soulwood_panel', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'soulwood_beam', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'rustic_soulwood_tiles', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'soulwood_tiles', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'vertical_soulwood_boards', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'soulwood_boards', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'vertical_rustic_soulwood_planks', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'rustic_soulwood_planks', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'vertical_soulwood_planks', event)
-        .slab()
-        .stairs();
-    new WoodMalum('malum', 'cut_soulwood_planks', event)
-        .slab()
-        .stairs();
-
-    //Handle All WoodMalum/Logs into default soulwood planks
-    event.remove({ output: 'malum:soulwood_planks' })
-    event.shapeless(`malum:soulwood_planks`, [
-        '#malum:soulwood_logs'
-    ])
-    event.recipes.gtceu.cutter(`cosmicfrontiers:malum/stupid_malum_wood_cutting`)
-        .itemInputs('#malum:soulwood_logs')
-        .itemOutputs([`6x malum:soulwood_planks`, '2x gtceu:wood_dust'])
-        .duration(200)
-        .EUt(7);
-    event.shaped(`4x malum:soulwood_planks`, [
-        '   ',
-        ' T ',
-        ' P '
-    ],
+        event.shaped(`2x malum:${wood}_planks_fence_gate`, [
+            'Q Q',
+            'SPS',
+            'SPS'
+        ],
         {
-            T: '#forge:tools/saws',
-            P: '#malum:soulwood_logs'
-        })
-    //Now Runewood
-    event.remove({ output: 'malum:runewood_planks' })
-    event.shapeless(`2x malum:runewood_planks`, [
-        '#malum:runewood_logs'
-    ])
-    event.recipes.gtceu.cutter(`cosmicfrontiers:malum/stupid_malum_wood_cutting_2`)
-        .itemInputs('#malum:runewood_logs')
-        .itemOutputs([`6x malum:runewood_planks`, '2x gtceu:wood_dust'])
-        .duration(200)
-        .EUt(7);
-    event.shaped(`4x malum:runewood_planks`, [
-        '   ',
-        ' T ',
-        ' P '
-    ],
-        {
-            T: '#forge:tools/saws',
-            P: '#malum:runewood_logs'
-        })
+            P: `#malum:${wood}_planks`,
+            S: `#forge:rods/wooden`,
+            Q: `minecraft:flint`
+        }).id(`cosmicfrontiers:${wood}_planks_fence_alt`)
+        event.recipes.gtceu.assembler(`cosmicfrontiers:${wood}_planks_fence_gate`)
+        .itemInputs([`2x #malum:${wood}_planks`, "2x #forge:rods/wooden"])
+        .itemOutputs(`malum:${wood}_planks_fence_gate`)
+        .circuit(2)
+        .duration(100)
+        .EUt(4);
 
+        event.remove({ output: `malum:${wood}_planks_pressure_plate` })
+        event.recipes.gtceu.cutter(`cosmicfrontiers:${wood}_planks_pressure_plate`)
+        .itemInputs(`#malum:${wood}_slabs`)
+        .itemOutputs(`4x malum:${wood}_planks_pressure_plate`)
+        .duration(100)
+        .EUt(4);
+        event.shaped(`2x malum:${wood}_planks_pressure_plate`, [
+            'S',
+            'P'
+        ], {
+            P: `#malum:${wood}_slabs`,
+            S: `#forge:tools/saws`
+        }).id(`cosmicfrontiers:${wood}_planks_pressure_plate`)
+
+        event.remove({ output: `malum:${wood}_planks_button` })
+        event.recipes.gtceu.cutter(`cosmicfrontiers:${wood}_planks_button`)
+        .itemInputs(`malum:${wood}_pressure_plate`)
+        .itemOutputs(`4x malum:${wood}_planks_button`)
+        .duration(100)
+        .EUt(4);
+        event.shaped(`2x malum:${wood}_planks_button`, [
+            'S',
+            'P'
+        ], {
+            P: `malum:${wood}_planks_pressure_plate`,
+            S: `#forge:tools/saws`
+        }).id(`cosmicfrontiers:${wood}_planks_button`)
+
+        event.remove({ output: `malum:${wood}_boat` })
+        event.recipes.gtceu.assembler(`cosmicfrontiers:${wood}_boat`)
+        .itemInputs(`5x #malum:${wood}_planks`)
+        .itemOutputs(`malum:${wood}_boat`)
+        .circuit(15)
+        .duration(100)
+        .EUt(4);
+        event.shaped(`malum:${wood}_boat`, [
+            'SWS',
+            'SKS',
+            'PPP'
+        ], {
+            P: `#malum:${wood}_planks`,
+            S: `#malum:${wood}_slabs`,
+            K: `#forge:tools/knives`,
+            W: `#forge:tools/shovels`
+        }).id(`cosmicfrontiers:${wood}_boat`)
+        
+        malumDecorPlanks.forEach(decorType => {
+            let block = decorType.replace('type', wood)
+            
+            event.recipes.gtceu.assembler(`cosmicfrontiers:${block}_stairs`)
+            .itemInputs(`3x malum:${block}`)
+            .itemOutputs(`4x malum:${block}_stairs`)
+            .circuit(7)
+            .duration(100)
+            .EUt(4);
+            
+            event.remove({ output: `malum:${block}_slab` })
+            event.shaped(`2x malum:${block}_slab`, [
+                'SP'
+            ], {
+                S: '#forge:tools/saws',
+                P: `malum:${block}`
+            }).id(`cosmicfrontiers:${block}_slab`)
+            event.recipes.gtceu.cutter(`cosmicfrontiers:${block}_slab_cutting`)
+            .itemInputs(`malum:${block}`)
+            .itemOutputs(`2x malum:${block}_slab`)
+            .duration(100)
+            .EUt(4);
+        })
+    })
 })
-
-
-
-
-function WoodMalum(modID, wood, event) {
-    this.modID = modID;
-    this.woodType = wood;
-    this.event = event;
-    return this;
-}
-
-WoodMalum.prototype = {
-
-    planks: function () {
-        const { modID, woodType, event } = this
-        //Log -> Plank
-        if (Item.exists(`${modID}:${woodType}`)) {
-            event.remove({ output: `${modID}:${woodType}` })
-            event.recipes.gtceu.cutter(`cosmicfrontiers:${modID}/${woodType}_cutting`)
-                .itemInputs(`${modID}:${woodType}`)
-                .itemOutputs([`6x ${modID}:${woodType}`, '2x gtceu:wood_dust'])
-                .duration(200)
-                .EUt(7);
-            event.shaped(`4x ${modID}:${woodType}`, [
-                '   ',
-                ' T ',
-                ' P '
-            ],
-                {
-                    T: '#forge:tools/saws',
-                    P: `${modID}:${woodType}`
-                })
-            event.shaped(`2x ${modID}:${woodType}`, [
-                '   ',
-                '   ',
-                ' P '
-            ],
-                {
-                    P: `${modID}:${woodType}`
-                })
-        }
-        //Stripped Log -> Plank
-        if (Item.exists(`${modID}:stripped_${woodType}`)) {
-            event.recipes.gtceu.cutter(`cosmicfrontiers:${modID}/stripped_${woodType}_cutting`)
-                .itemInputs(`${modID}:stripped_${woodType}`)
-                .itemOutputs([`6x ${modID}:${woodType}`, '2x gtceu:wood_dust'])
-                .duration(200)
-                .EUt(7);
-            event.shaped(`4x ${modID}:${woodType}`, [
-                '   ',
-                ' T ',
-                ' P '
-            ],
-                {
-                    T: '#forge:tools/saws',
-                    P: `${modID}:stripped_${woodType}`
-                })
-            event.shaped(`2x ${modID}:${woodType}`, [
-                '   ',
-                '   ',
-                ' P '
-            ],
-                {
-                    P: `${modID}:stripped_${woodType}`
-                })
-        }
-        //WoodMalum -> Plank
-        if (Item.exists(`${modID}:${woodType}`)) {
-            event.recipes.gtceu.cutter(`cosmicfrontiers:${modID}/${woodType}_cutting`)
-                .itemInputs(`${modID}:${woodType}`)
-                .itemOutputs([`6x ${modID}:${woodType}`, '2x gtceu:wood_dust'])
-                .duration(200)
-                .EUt(7);
-            event.shaped(`4x ${modID}:${woodType}`, [
-                '   ',
-                ' T ',
-                ' P '
-            ],
-                {
-                    T: '#forge:tools/saws',
-                    P: `${modID}:${woodType}`
-                })
-            event.shaped(`2x ${modID}:${woodType}`, [
-                '   ',
-                '   ',
-                ' P '
-            ],
-                {
-                    P: `${modID}:${woodType}`
-                })
-        }
-        //Stripped WoodMalum -> plank
-        if (Item.exists(`${modID}:stripped_${woodType}`)) {
-            event.recipes.gtceu.cutter(`cosmicfrontiers:${modID}/stripped_${woodType}_cutting`)
-                .itemInputs(`${modID}:stripped_${woodType}`)
-                .itemOutputs([`6x ${modID}:${woodType}`, '2x gtceu:wood_dust'])
-                .duration(200)
-                .EUt(7);
-            event.shaped(`4x ${modID}:${woodType}`, [
-                '   ',
-                ' T ',
-                ' P '
-            ],
-                {
-                    T: '#forge:tools/saws',
-                    P: `${modID}:stripped_${woodType}`
-                })
-            event.shaped(`2x ${modID}:${woodType}`, [
-                '   ',
-                '   ',
-                ' P '
-            ],
-                {
-                    P: `${modID}:stripped_${woodType}`
-                })
-        }
-        return this;
-    },
-    stairs: function () {
-        const { modID, woodType, event } = this
-        if (Item.exists(`${modID}:${woodType}_stairs`)) {
-            event.remove({ output: `${modID}:${woodType}_stairs` })
-            event.shaped(`4x ${modID}:${woodType}_stairs`, [
-                'W  ',
-                'WW ',
-                'WWW'
-            ],
-                {
-                    W: `${modID}:${woodType}`
-                })
-            event.recipes.gtceu.assembler(`cosmicfrontiers:${modID}/${woodType}_stairs`)
-                .itemInputs(`6x ${modID}:${woodType}`)
-                .itemOutputs(`4x ${modID}:${woodType}_stairs`)
-                .circuit(7)
-                .duration(100)
-                .EUt(4);
-        }
-        return this;
-    },
-    slab: function () {
-        const { modID, woodType, event } = this
-        if (Item.exists(`${modID}:${woodType}_slab`)) {
-            event.remove({ output: `${modID}:${woodType}_slab` })
-            event.shaped(`2x ${modID}:${woodType}_slab`, [
-                '   ',
-                '   ',
-                'TP '
-            ],
-                {
-                    T: '#forge:tools/saws',
-                    P: `${modID}:${woodType}`
-                })
-            event.recipes.gtceu.cutter(`cosmicfrontiers:${modID}/${woodType}_slab_cutting`)
-                .itemInputs(`${modID}:${woodType}`)
-                .itemOutputs(`2x ${modID}:${woodType}_slab`)
-                .duration(100)
-                .EUt(4);
-        }
-        return this;
-    },
-    door: function () {
-        const { modID, woodType, event } = this
-        if (Item.exists(`${modID}:${woodType}_door`)) {
-            event.remove({ output: `${modID}:${woodType}_door` })
-            event.shaped(`2x ${modID}:${woodType}_door`, [
-                'PTD',
-                'PRS',
-                'PPW'
-            ],
-                {
-                    P: `${modID}:${woodType}`,
-                    T: `${modID}:${woodType}_trapdoor`,
-                    W: `#forge:tools/saws`,
-                    S: 'gtceu:iron_screw',
-                    R: 'gtceu:iron_ring',
-                    D: '#forge:tools/screwdrivers',
-                })
-            event.recipes.gtceu.assembler(`cosmicfrontiers:${modID}/${woodType}_door`)
-                .itemInputs([`5x ${modID}:${woodType}`])
-                .itemOutputs(`3x ${modID}:${woodType}_door`)
-                .inputFluids('gtceu:iron 16')
-                .circuit(3)
-                .duration(100)
-                .EUt(4);
-        }
-        return this;
-    },
-    trapdoor: function () {
-        const { modID, woodType, event } = this
-        if (Item.exists(`${modID}:${woodType}_trapdoor`)) {
-            event.remove({ output: `${modID}:${woodType}_trapdoor` })
-            event.shaped(`2x ${modID}:${woodType}_trapdoor`, [
-                '   ',
-                'PPP',
-                'PPP'
-            ],
-                {
-                    P: `${modID}:${woodType}_slab`
-                })
-            event.recipes.gtceu.assembler(`cosmicfrontiers:${modID}/${woodType}_trapdoor`)
-                .itemInputs(`3x ${modID}:${woodType}_slab`)
-                .itemOutputs(`3x ${modID}:${woodType}_trapdoor`)
-                .circuit(6)
-                .duration(100)
-                .EUt(4);
-        }
-        return this;
-    },
-    signs: function () {
-        const { modID, woodType, event } = this
-        if (Item.exists(`${modID}:${woodType}_sign`)) {
-            event.remove({ output: `${modID}:${woodType}_sign` })
-            event.recipes.gtceu.assembler(`cosmicfrontiers:${modID}/${woodType}_sign`)
-                .itemInputs([`6x ${modID}:${woodType}`, 'minecraft:stick'])
-                .itemOutputs(`4x ${modID}:${woodType}_sign`)
-                .circuit(3)
-                .duration(100)
-                .EUt(4);
-            event.shaped(`2x ${modID}:${woodType}_sign`, [
-                'PPP',
-                'PPP',
-                'FSW'
-            ],
-                {
-                    P: `${modID}:${woodType}`,
-                    W: `#forge:tools/saws`,
-                    S: 'minecraft:stick',
-                    F: '#forge:tools/files',
-                })
-        }
-        //hanging
-        if (Item.exists(`${modID}:${woodType}_hanging_sign`)) {
-            event.remove({ output: `${modID}:${woodType}_hanging_sign` })
-            event.recipes.gtceu.assembler(`cosmicfrontiers:${modID}/${woodType}_hanging_sign`)
-                .itemInputs([`6x ${modID}:${woodType}`, 'minecraft:chain'])
-                .itemOutputs(`${modID}:${woodType}_hanging_sign`)
-                .circuit(4)
-                .duration(100)
-                .EUt(4);
-            event.shaped(`2x ${modID}:${woodType}_hanging_sign`, [
-                'SRS',
-                'PPP',
-                'PPP'
-            ],
-                {
-                    P: `${modID}:${woodType}`,
-                    S: 'minecraft:chain',
-                    R: 'gtceu:iron_ring'
-                })
-        }
-        return this;
-    },
-    fences: function () {
-        const { modID, woodType, event } = this
-        //Fence
-        if (Item.exists(`${modID}:${woodType}_fence`)) {
-            event.remove({ output: `${modID}:${woodType}_fence` })
-            event.recipes.gtceu.assembler(`cosmicfrontiers:${modID}/${woodType}_fence`)
-                .itemInputs(`${modID}:${woodType}`)
-                .itemOutputs(`${modID}:${woodType}_fence`)
-                .circuit(1)
-                .duration(100)
-                .EUt(4);
-            event.shaped(`${modID}:${woodType}_fence`, [
-                'PSP',
-                'PSP',
-                'PSP'
-            ],
-                {
-                    P: `${modID}:${woodType}`,
-                    S: `minecraft:stick`
-                })
-        }
-        //Fence Gate
-        if (Item.exists(`${modID}:${woodType}_fence_gate`)) {
-            event.remove({ output: `${modID}:${woodType}_fence_gate` })
-            event.shaped(`2x ${modID}:${woodType}_fence_gate`, [
-                'QWQ',
-                'SPS',
-                'SPS'
-            ],
-                {
-                    P: `${modID}:${woodType}`,
-                    S: `minecraft:stick`,
-                    W: `#forge:tools/screwdrivers`,
-                    Q: `gtceu:iron_screw`
-                })
-            event.shaped(`2x ${modID}:${woodType}_fence_gate`, [
-                'Q Q',
-                'SPS',
-                'SPS'
-            ],
-                {
-                    P: `${modID}:${woodType}`,
-                    S: `minecraft:stick`,
-                    Q: `minecraft:flint`
-                })
-            event.recipes.gtceu.assembler(`cosmicfrontiers:${modID}/${woodType}_fence_gate`)
-                .itemInputs([`2x ${modID}:${woodType}`, "2x minecraft:stick"])
-                .itemOutputs(`${modID}:${woodType}_fence_gate`)
-                .circuit(2)
-                .duration(100)
-                .EUt(4);
-        }
-        return this;
-    },
-    pressurePlate: function () {
-        const { modID, woodType, event } = this
-        if (Item.exists(`${modID}:${woodType}_pressure_plate`)) {
-            event.remove({ output: `${modID}:${woodType}_pressure_plate` })
-            event.recipes.gtceu.cutter(`cosmicfrontiers:${modID}/${woodType}_pressure_plate`)
-                .itemInputs(`${modID}:${woodType}_slab`)
-                .itemOutputs(`4x ${modID}:${woodType}_pressure_plate`)
-                .duration(100)
-                .EUt(4);
-            event.shaped(`2x ${modID}:${woodType}_pressure_plate`, [
-                '   ',
-                ' S ',
-                ' P '
-            ],
-                {
-                    P: `${modID}:${woodType}_slab`,
-                    S: `#forge:tools/saws`
-                })
-        }
-        return this;
-    },
-    button: function () {
-        const { modID, woodType, event } = this
-        if (Item.exists(`${modID}:${woodType}_button`)) {
-            event.remove({ output: `${modID}:${woodType}_button` })
-            event.recipes.gtceu.cutter(`cosmicfrontiers:${modID}/${woodType}_button`)
-                .itemInputs(`${modID}:${woodType}_pressure_plate`)
-                .itemOutputs(`4x ${modID}:${woodType}_button`)
-                .duration(100)
-                .EUt(4);
-            event.shaped(`2x ${modID}:${woodType}_button`, [
-                '   ',
-                ' S ',
-                ' P '
-            ],
-                {
-                    P: `${modID}:${woodType}_pressure_plate`,
-                    S: `#forge:tools/saws`
-                })
-        }
-        return this;
-    },
-    boats: function () {
-        const { modID, woodType, event } = this
-        //BOAT 
-        if (Item.exists(`${modID}:${woodType}_boat`)) {
-            event.remove({ output: `${modID}:${woodType}_boat` })
-            event.recipes.gtceu.assembler(`cosmicfrontiers:${modID}/${woodType}`)
-                .itemInputs(`5x ${modID}:${woodType}`)
-                .circuit(15)
-                .itemOutputs(`4x ${modID}:${woodType}_boat`)
-                .duration(100)
-                .EUt(4);
-            event.shaped(`${modID}:${woodType}_boat`, [
-                'SWS',
-                'SKS',
-                'PPP'
-            ],
-                {
-                    P: `${modID}:${woodType}`,
-                    S: `${modID}:${woodType}_slab`,
-                    K: `#forge:tools/knives`,
-                    W: '#forge:tools/shovels'
-                })
-        }
-        //CHEST-BOAT
-        if (Item.exists(`${modID}:${woodType}_chest_boat`)) {
-            event.remove({ output: `${modID}:${woodType}_chest_boat` })
-            event.shapeless(`${modID}:${woodType}_chest_boat`, [
-                `${modID}:${woodType}_boat`,
-                `minecraft:chest`
-            ])
-        }
-        return this;
-    },
-    all: function () {
-        this.slab()
-        this.stairs()
-        this.door()
-        this.trapdoor()
-        this.fences()
-        this.signs()
-        this.pressurePlate()
-        this.button()
-        this.boats()
-    }
-}
-
-
-
-
-
-
