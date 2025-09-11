@@ -89,6 +89,30 @@ recipes:
   # Default: false
   enchantedTools: true
 
+  # Whether to enable macerator decomposition recycling
+  # Default: true
+  enableMaceratorRecycling: true
+
+  # Percentage yield of macerator decomposition recycling outputs, 1.0 means 100%
+  # Default: 1.0f
+  maceratorRecyclingYield: 0.1
+
+  # Whether to enable arc furnace decomposition recycling
+  # Default: true
+  enableArcRecycling: false
+
+  # Percentage yield of arc furnace decomposition recycling outputs, 1.0 means 100%
+  # Default: 1.0f
+  arcRecyclingYield: 1.0
+
+  # Whether to enable extractor decomposition recycling
+  # Default: true
+  enableExtractorRecycling: false
+
+  # Percentage yield of extractor decomposition recycling outputs, 1.0 means 100%
+  # Default: 1.0f
+  extractorRecyclingYield: 1.0
+
 worldgen:
   # Rubber Tree spawn chance (decimal % per chunk)
   # Default: 0.5
@@ -159,7 +183,7 @@ machines:
 
   # Whether machines explode in rainy weather or when placed next to certain terrain, such as fire or lava
   # Default: false
-  shouldWeatherOrTerrainExplosion: true
+  shouldWeatherOrTerrainExplosion: false
 
   # Energy use multiplier for electric items.
   # Default: 100
@@ -210,6 +234,10 @@ machines:
   # Whether to enable the Maintenance Hatch, required for Multiblocks.
   # Default: true
   enableMaintenance: true
+
+  # Time in ticks between when Multiblocks can require Maintenance. By default, 48 hours.
+  # Default: 3456000
+  maintenanceTime: 3456000
 
   # Whether to enable World Accelerators, which accelerate ticks for surrounding Tile Entities, Crops, etc.
   # Default: true
@@ -278,7 +306,7 @@ machines:
   # Whether the Assembly Line should require the fluid inputs to be in order.
   # (Requires Ordered Assembly Line Item Inputs to be enabled.)
   # Default: true
-  orderedAssemblyLineFluids: false
+  orderedAssemblyLineFluids: true
 
   # Default maximum parallel of steam multiblocks
   # Default: 8
