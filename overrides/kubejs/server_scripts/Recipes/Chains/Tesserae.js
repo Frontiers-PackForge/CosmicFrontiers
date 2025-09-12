@@ -64,13 +64,40 @@ ServerEvents.recipes(event => {
     .itemOutputs('4x cosmiccore:refined_harmonics_wafer')
     .duration(220)
     .EUt(GTValues.VA[GTValues.UV])
-    
+
   event.recipes.gtceu.cutter("wafer2_to_chip2")
-    .itemInputs('cosmiccore:nullified_harmonics_wafer')
-    .itemOutputs('4x cosmiccore:null_refined_resonant_wafer')
+    .itemOutputs('4x cosmiccore:nullified_harmonics_wafer')
+    .itemInputs('cosmiccore:null_refined_resonant_wafer')
     .duration(220)
     .EUt(GTValues.VA[GTValues.UV])
 
+
+
+  event.recipes.gtceu.aio_lithography_processor("harmonics_wafer_1")
+    .itemInputs('4x cosmiccore:refined_harmonics_wafer', 'cosmiccore:etheric_spirit')
+    .itemOutputs('cosmiccore:wafer_pragmiso')
+    .duration(110)
+    .EUt(GTValues.VA[GTValues.UV])
+
+  event.recipes.gtceu.aio_lithography_processor("harmonics_wafer_2")
+    .itemInputs('4x cosmiccore:refined_harmonics_wafer')
+    .inputFluids('gtceu:perpetuity_slag_plasma 2000')
+    .itemOutputs('cosmiccore:alchemia_wafer')
+    .duration(110)
+    .EUt(GTValues.VA[GTValues.UV])
+
+  event.recipes.gtceu.aio_lithography_processor("null_harmonics_wafer_1")
+    .itemInputs('4x cosmiccore:nullified_harmonics_wafer', 'gtceu:blacklight')
+    .itemOutputs('cosmiccore:wafer_pragmiso')
+    .duration(110)
+    .EUt(GTValues.VA[GTValues.UV])
+
+  event.recipes.gtceu.aio_lithography_processor("null_harmonics_wafer_2")
+    .itemInputs('4x cosmiccore:nullified_harmonics_wafer')
+    .inputFluids('gtceu:genesis_resin 2000')
+    .itemOutputs('cosmiccore:alchemia_wafer')
+    .duration(110)
+    .EUt(GTValues.VA[GTValues.UV])
 })
 //Folding Recipes I didn't want to do this in the same event because god wtf is this i hate it i understand it
 //but god sure doesn't want me to unleash this on the world there is a higher power out there begging me
