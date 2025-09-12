@@ -79,7 +79,7 @@
 			}]
 			title: "Nylon"
 			x: -7.5d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["71EE1119F936C025"]
@@ -442,23 +442,6 @@
 		}
 		{
 			dependencies: ["1EDA6025077BAA5D"]
-			id: "23D6FB186E6B935B"
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "3E8E34A4923FD101"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_3_rocket"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["23D6FB186E6B935B"]
 			description: [
 				"Mercury seems to have no yield of surface ores; however, the planet is nearly pure metal."
 				""
@@ -476,23 +459,8 @@
 			shape: "hexagon"
 			subtitle: "Barren and Empty"
 			title: "Mercury"
-			x: -2.0d
+			x: -1.5d
 			y: 2.0d
-		}
-		{
-			dependencies: ["23D6FB186E6B935B"]
-			icon: "ad_astra:venus_globe"
-			id: "2985993F79D84B6D"
-			tasks: [{
-				dimension: "ad_astra:venus"
-				icon: "ad_astra:venus_globe"
-				id: "7D8A2B6912693767"
-				title: "Visit Venus!"
-				type: "dimension"
-			}]
-			title: "Venus"
-			x: -3.5d
-			y: 0.0d
 		}
 		{
 			dependencies: ["684AAECC1FC5BA3A"]
@@ -504,8 +472,8 @@
 				type: "item"
 			}]
 			title: "Wolframite"
-			x: -1.0d
-			y: 2.0d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["684AAECC1FC5BA3A"]
@@ -516,8 +484,8 @@
 				item: "gtceu:raw_luminite"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 1.0d
+			x: -4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -839,7 +807,8 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["2985993F79D84B6D"]
+			dependencies: ["1EDA6025077BAA5D"]
+			hide_dependency_lines: true
 			id: "29DC0AAC3ADF8FEA"
 			shape: "hexagon"
 			subtitle: "Better Plastics and Rubbers"
@@ -848,7 +817,7 @@
 				item: "cosmiccore:polymerizer"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.5d
 			y: 0.0d
 		}
 		{
@@ -859,19 +828,18 @@
 				item: "gtceu:ka_oil_bucket"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -3.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["1EDA6025077BAA5D"]
-			hide_dependency_lines: true
 			id: "1E3463A518B1BC4B"
 			tasks: [{
 				id: "11CF872286BCE620"
 				item: "gtceu:cyclohexane_bucket"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.5d
 			y: -1.0d
 		}
 		{
@@ -882,19 +850,18 @@
 				item: "gtceu:adipic_acid_bucket"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["1EDA6025077BAA5D"]
-			hide_dependency_lines: true
 			id: "412B63DD9523D66F"
 			tasks: [{
 				id: "4123E7BDFB6DC0EE"
 				item: "gtceu:hydrogen_cyanide_bucket"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.5d
 			y: 1.0d
 		}
 		{
@@ -905,7 +872,7 @@
 				item: "gtceu:adiponitrile_bucket"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -3.5d
 			y: 1.0d
 		}
 		{
@@ -916,7 +883,7 @@
 				item: "gtceu:hexamethylenediamine_dust"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.5d
 			y: 1.0d
 		}
 		{
@@ -931,7 +898,7 @@
 				item: "gtceu:nylon_jelly_polymer_bucket"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -4.5d
 			y: 0.0d
 		}
 		{
@@ -945,7 +912,7 @@
 				item: "gtceu:nylon_6_6_bucket"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -5.5d
 			y: 1.0d
 		}
 		{
@@ -959,7 +926,7 @@
 				item: "gtceu:trinanylon_6_6_bucket"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -5.5d
 			y: -1.0d
 		}
 		{
@@ -2545,9 +2512,9 @@
 						}
 					}
 				}
+				match_nbt: true
 				title: "Argon Plasma"
 				type: "item"
-				weak_nbt_match: true
 			}]
 			x: 6.0d
 			y: 4.5d
@@ -3157,6 +3124,17 @@
 			}]
 			x: -5.5d
 			y: 6.5d
+		}
+		{
+			dependencies: ["33E3A30B9A5C165B"]
+			id: "0DB9D8C1E10C8FFF"
+			tasks: [{
+				id: "6367155B0F6AC02E"
+				item: "gtceu:zpm_energy_input_hatch"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.5d
 		}
 	]
 	title: "The Sanguine Peak - [ZPM]"
