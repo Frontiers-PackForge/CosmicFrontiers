@@ -1,6 +1,12 @@
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
 
+
+    event.create('liquid_shadows')
+        .formula('⊖')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+
     event.create('hadalite_sludge') //Mixture of Thallium, Sulfates, and Obsidian Dust - Gross
         .formula('Tl2S3(MgFeSi3O4)4(H20)')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())

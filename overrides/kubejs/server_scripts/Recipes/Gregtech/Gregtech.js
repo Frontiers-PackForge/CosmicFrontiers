@@ -106,6 +106,9 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:alloy_blast_smelter/starmetal_gas' })
   event.remove({ id: 'gtceu:orbital_forge/neutronium_boule' })
   event.remove({ id: 'gtceu:electric_blast_furnace/neutronium_boule' })
+  event.remove({ id: 'gtceu:industrial_chemvat/hydrogen_peroxide' })
+  event.remove({ id: 'gtceu:large_chemical_reactor/hydrogen_peroxide' })
+  event.remove({ id: 'gtceu:chemical_reactor/hydrogen_peroxide' })
 
 
   event.replaceOutput({ id: 'gtceu:shaped/power_substation' }, 'gtceu:power_substation', 'cosmiccore:dimensional_energy_capacitor')

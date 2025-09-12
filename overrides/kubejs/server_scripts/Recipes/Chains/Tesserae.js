@@ -1,68 +1,75 @@
 ServerEvents.recipes(event => {
-    // event.remove({ input: 'gtceu:manasteel_dust' })
-    event.recipes.gtceu.arcane_distillery('frontiers:arcane_distil_1')
-        .inputFluids('blasmatech:mana 8000', 'gtceu:argon_plasma 1000')
-        .chancedOutput('cosmiccore:tessaron', 100, 0)
-        .chancedOutput('cosmiccore:vexiun', 100, 0)
-        .duration(390)
-        .EUt(GTValues.VA[GTValues.UV]);
-    event.recipes.gtceu.arcane_distillery('frontiers:arcane_distil_2')
-        .inputFluids('gtceu:source_oils 8000', 'gtceu:argon_plasma 1000')
-        .chancedOutput('cosmiccore:ambrion', 100, 0)
-        .chancedOutput('cosmiccore:ethera', 100, 0)
-        .duration(390)
-        .EUt(GTValues.VA[GTValues.UV]);
+  // event.remove({ input: 'gtceu:manasteel_dust' })
+  event.recipes.gtceu.arcane_distillery('frontiers:arcane_distil_1')
+    .inputFluids('blasmatech:mana 8000', 'gtceu:argon_plasma 1000')
+    .chancedOutput('cosmiccore:tessaron', 100, 0)
+    .chancedOutput('cosmiccore:vexiun', 100, 0)
+    .duration(390)
+    .EUt(GTValues.VA[GTValues.UV]);
+  event.recipes.gtceu.arcane_distillery('frontiers:arcane_distil_2')
+    .inputFluids('gtceu:source_oils 8000', 'gtceu:argon_plasma 1000')
+    .chancedOutput('cosmiccore:ambrion', 100, 0)
+    .chancedOutput('cosmiccore:ethera', 100, 0)
+    .duration(390)
+    .EUt(GTValues.VA[GTValues.UV]);
 
 
 
 
-    //Wafer Making
-    event.recipes.gtceu.arcane_folding('frontiers:wafer_fold_1')
-        .itemInputs(['cosmiccore:echon', 'cosmiccore:flawed_resonant_wafer'])
-        .itemOutputs('cosmiccore:chronia', 'cosmiccore:null_refined_resonant_wafer')
-        .duration(150)
-        .EUt(GTValues.VA[GTValues.UV]);
+  //Wafer Making
+  event.recipes.gtceu.arcane_folding('frontiers:wafer_fold_1')
+    .itemInputs(['cosmiccore:echon', 'cosmiccore:flawed_resonant_wafer'])
+    .itemOutputs('cosmiccore:chronia', 'cosmiccore:null_refined_resonant_wafer')
+    .duration(150)
+    .EUt(GTValues.VA[GTValues.UV]);
 
-    event.recipes.gtceu.arcane_folding('frontiers:wafer_fold_2')
-        .itemInputs(['cosmiccore:chronia', 'cosmiccore:flawed_resonant_wafer'])
-        .itemOutputs('cosmiccore:echon', 'cosmiccore:refined_resonant_wafer')
-        .duration(150)
-        .EUt(GTValues.VA[GTValues.UV]);
+  event.recipes.gtceu.arcane_folding('frontiers:wafer_fold_2')
+    .itemInputs(['cosmiccore:chronia', 'cosmiccore:flawed_resonant_wafer'])
+    .itemOutputs('cosmiccore:echon', 'cosmiccore:refined_resonant_wafer')
+    .duration(150)
+    .EUt(GTValues.VA[GTValues.UV]);
 
-    event.recipes.gtceu.cutter("xor_pure_wafers")
-        .itemInputs('cosmiccore:refined_resonant_wafer')
-        .chancedItemOutputLogic($ChanceLogic.XOR)
-        .chancedOutput('4x cosmiccore:alchemia_wafer', 5000, 0)
-        .chancedOutput('4x cosmiccore:wafer_pragmiso', 5000, 0)
-        .duration(400)
-        .EUt(GTValues.VA[GTValues.UV])
+  event.recipes.gtceu.aio_lithography_processor("fused_logo_wafer")
+    .itemInputs(['gtceu:highly_advanced_soc', '2x cosmiccore:wafer_pragmiso', '2x cosmiccore:alchemia_wafer'])
+    .chancedItemOutputLogic($ChanceLogic.XOR)
+    .chancedOutput('4x cosmiccore:fused_wafer_of_logos', 9000, 0)
+    .chancedOutput('2x cosmiccore:alchemia_wafer', 500, 0)
+    .chancedOutput('2x cosmiccore:wafer_pragmiso', 500, 0)
+    .duration(220)
+    .EUt(GTValues.VA[GTValues.UV])
 
 
-    event.recipes.gtceu.aio_lithography_processor("fused_logo_wafer")
-        .itemInputs(['gtceu:highly_advanced_soc', '2x cosmiccore:wafer_pragmiso', '2x cosmiccore:alchemia_wafer'])
-        .chancedItemOutputLogic($ChanceLogic.XOR)
-        .chancedOutput('4x cosmiccore:fused_wafer_of_logos', 9000, 0)
-        .chancedOutput('2x cosmiccore:alchemia_wafer', 500, 0)
-        .chancedOutput('2x cosmiccore:wafer_pragmiso', 500, 0)
-        .duration(220)
-        .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.gtceu.aio_lithography_processor("fused_eso_wafer")
-        .itemInputs(['gtceu:highly_advanced_soc', '2x cosmiccore:thaumica_wafer', '2x cosmiccore:eterna_wafer'])
-        .chancedItemOutputLogic($ChanceLogic.XOR)
-        .chancedOutput('4x cosmiccore:fused_wafer_of_esoterica', 9000, 0)
-        .chancedOutput('2x cosmiccore:thaumica_wafer', 500, 0)
-        .chancedOutput('2x cosmiccore:eterna_wafer', 500, 0)
-        .duration(220)
-        .EUt(GTValues.VA[GTValues.UV])
+  event.recipes.gtceu.aio_lithography_processor("pragmiso")
+    .itemInputs()
+    .chancedItemOutputLogic($ChanceLogic.XOR)
+    .chancedOutput('4x cosmiccore:fused_wafer_of_logos', 9000, 0)
+    .chancedOutput('2x cosmiccore:alchemia_wafer', 500, 0)
+    .chancedOutput('2x cosmiccore:wafer_pragmiso', 500, 0)
+    .duration(220)
+    .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.gtceu.cutter("xor_null_pure_wafers")
-        .itemInputs('cosmiccore:null_refined_resonant_wafer')
-        .chancedItemOutputLogic($ChanceLogic.XOR)
-        .chancedOutput('4x cosmiccore:eterna_wafer', 5000, 0)
-        .chancedOutput('4x cosmiccore:thaumica_wafer', 5000, 0)
-        .duration(400)
-        .EUt(GTValues.VA[GTValues.UV])
+  event.recipes.gtceu.aio_lithography_processor("fused_eso_wafer")
+    .itemInputs(['gtceu:highly_advanced_soc', '2x cosmiccore:thaumica_wafer', '2x cosmiccore:eterna_wafer'])
+    .chancedItemOutputLogic($ChanceLogic.XOR)
+    .chancedOutput('4x cosmiccore:fused_wafer_of_esoterica', 9000, 0)
+    .chancedOutput('2x cosmiccore:thaumica_wafer', 500, 0)
+    .chancedOutput('2x cosmiccore:eterna_wafer', 500, 0)
+    .duration(220)
+    .EUt(GTValues.VA[GTValues.UV])
+
+
+  event.recipes.gtceu.cutter("wafer1_to_chip1")
+    .itemInputs('cosmiccore:refined_resonant_wafer')
+    .itemOutputs('4x cosmiccore:refined_harmonics_wafer')
+    .duration(220)
+    .EUt(GTValues.VA[GTValues.UV])
+    
+  event.recipes.gtceu.cutter("wafer2_to_chip2")
+    .itemInputs('cosmiccore:nullified_harmonics_wafer')
+    .itemOutputs('4x cosmiccore:null_refined_resonant_wafer')
+    .duration(220)
+    .EUt(GTValues.VA[GTValues.UV])
 
 })
 //Folding Recipes I didn't want to do this in the same event because god wtf is this i hate it i understand it
@@ -74,17 +81,17 @@ ServerEvents.recipes(event => {
 // This was 4 hours of head smashing and asking llms and friends how math and javascript worked, you forced my hand.
 ServerEvents.recipes(function (event) {
   var vexilItems = [
-    "tessaron","vexiun","ambrion","ethera",
-    "pyrith","tenaebrum","crystala","chronia"
+    "tessaron", "vexiun", "ambrion", "ethera",
+    "pyrith", "tenaebrum", "crystala", "chronia"
   ];
   var luminonItems = [
-    "echon","mystrix","dynamia","seraphon",
-    "nyxon","spectil","phantnon","esson"
+    "echon", "mystrix", "dynamia", "seraphon",
+    "nyxon", "spectil", "phantnon", "esson"
   ];
   var allSixteenItems = vexilItems.concat(luminonItems);
 
-  var starterItems = ["tessaron","vexiun","ambrion","ethera"];
-  var isStarterItem = { tessaron:true, vexiun:true, ambrion:true, ethera:true };
+  var starterItems = ["tessaron", "vexiun", "ambrion", "ethera"];
+  var isStarterItem = { tessaron: true, vexiun: true, ambrion: true, ethera: true };
 
   var nonStarterItems = [];
   for (var i = 0; i < allSixteenItems.length; i++) {
