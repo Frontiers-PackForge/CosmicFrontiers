@@ -63,7 +63,8 @@ ServerEvents.recipes(event => {
             "planks",
             "coral", //this is.... it technically makes foods? unsure on this one
             "leather",
-            "brick"
+            "brick",
+            "minecraft:potion"
         ];
 
         //strip out by result wildcard includes()
@@ -180,11 +181,63 @@ ServerEvents.recipes(event => {
         autoportRecipe(addedRecipes, event, recipe, defaultAutoportFunction, defaultRecipeBlacklistPredicate);
     });
 
+    //bottling and unbottling create:honey from bottles/buckets
+    event.recipes.gtceu.canner("frontiers:canner/gtceu_create_unbottle_honey")
+        .itemInputs("minecraft:honey_bottle")
+        .itemOutputs("minecraft:glass_bottle")
+        .outputFluids("create:honey 250")
+        .duration(10)
+        .EUt(GTValues.VA[GTValues.LV]);
+    event.recipes.gtceu.canner("frontiers:canner/gtceu_create_unbucket_honey")
+        .itemInputs("create:honey_bucket")
+        .itemOutputs("minecraft:bucket")
+        .outputFluids("create:honey 1000")
+        .duration(10)
+        .EUt(GTValues.VA[GTValues.LV]);
+    event.recipes.gtceu.canner("frontiers:canner/gtceu_create_bottle_honey")
+        .itemInputs("minecraft:glass_bottle")
+        .itemOutputs("minecraft:honey_bottle")
+        .inputFluids("create:honey 250")
+        .duration(10)
+        .EUt(GTValues.VA[GTValues.LV]);
+    event.recipes.gtceu.canner("frontiers:canner/gtceu_create_bucket_honey")
+        .itemInputs("minecraft:bucket")
+        .itemOutputs("create:honey_bucket")
+        .inputFluids("create:honey 1000")
+        .duration(10)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    //bottling and unbottling vegandelight:soymilk from bottles/buckets
+    event.recipes.gtceu.canner("frontiers:canner/gtceu_create_unbottle_soymilk")
+        .itemInputs("vegandelight:soymilk_bottle")
+        .itemOutputs("minecraft:glass_bottle")
+        .outputFluids("vegandelight:soymilk 250")
+        .duration(10)
+        .EUt(GTValues.VA[GTValues.LV]);
+    event.recipes.gtceu.canner("frontiers:canner/gtceu_create_unbucket_soymilk")
+        .itemInputs("vegandelight:soymilk_bucket")
+        .itemOutputs("minecraft:bucket")
+        .outputFluids("vegandelight:soymilk 1000")
+        .duration(10)
+        .EUt(GTValues.VA[GTValues.LV]);
+    event.recipes.gtceu.canner("frontiers:canner/gtceu_create_bottle_soymilk")
+        .itemInputs("minecraft:glass_bottle")
+        .itemOutputs("vegandelight:soymilk_bottle")
+        .inputFluids("vegandelight:soymilk 250")
+        .duration(10)
+        .EUt(GTValues.VA[GTValues.LV]);
+    event.recipes.gtceu.canner("frontiers:canner/gtceu_vegendelight_bucket_soymilk")
+        .itemInputs("minecraft:bucket")
+        .itemOutputs("vegandelight:soymilk_bucket")
+        .inputFluids("vegandelight:soymilk 1000")
+        .duration(10)
+        .EUt(GTValues.VA[GTValues.LV]);
+
     //aging cheemse
     //(producing cheese from curds isn't an actual recipe, it's a weird world-block interaction, so append it manually)
-    var newRecipe = event.recipes.gtceu["fermenter"]("frontiers:gtceu_age_cheese_curds")
-        newRecipe.itemOutputs("vintagedelight:cheese_wheel")
-        newRecipe.itemInputs("4x vintagedelight:cheese_curds")
+    event.recipes.gtceu["fermenter"]("frontiers:gtceu_age_cheese_curds")
+        .itemOutputs("vintagedelight:cheese_wheel")
+        .itemInputs("4x vintagedelight:cheese_curds")
         .duration(4000)
         .EUt(GTValues.VA[GTValues.LV]);
 });
@@ -200,9 +253,9 @@ ServerEvents.recipes(event => {
 ///         to port the recipe to a specific machine without further logic, the function can be set to e.g.: () => "mixer"
 /// recipeBlacklistPredicate: predicate to determine whether or not a recipe should be skipped
 ///         the predicate receives the same parameters: 'type', 'origRecipeName', 'newRecipeName', 'itemIngredients', 'fluidIngredients', 'itemResults', 'fluidResults'
-function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, recipeBlacklistPredicate) {
+function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, recipeBlacklistPredicate, requireCircuit) {
     //console.log(recipe.getClass());
-    //console.log(recipe.json);  //recipe.json = class com.google.gson.JsonObject
+    console.log(recipe.json);  //recipe.json = class com.google.gson.JsonObject
     // recipe name format: create:mixing/mud_by_mixing[create:mixing]
     var origRecipeName = recipe.toString().split("\\[")[0].toString();
     var recipeName = origRecipeName.includes("\/") ? origRecipeName.split("\/") : origRecipeName.split("\:");
@@ -214,16 +267,16 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
 
     //this doesn't usually come up but certain things have an ingredient that's an array of tags,
     //so I'm splitting them into multiple recipes which means this will happen and get a circuit
-    var idx = 2;
-    var useCircuit = false;
+    var idx = 1;
+    var useCircuit = requireCircuit == null ? false : requireCircuit;
     while (addedRecipes.includes(recipeName)) {
+        idx++;
         var potentialNewName = `${recipeName}_${idx}`;
         if (!addedRecipes.includes(potentialNewName)) {
             recipeName = potentialNewName;
             useCircuit = true;
             break;
         }
-        idx++;
     }
 
     //console.log(`processing base recipe '${origRecipeName}' into '${recipeName}' @ type '${type}'...`);
@@ -345,6 +398,22 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
         return;
     }
 
+    //define a list of item -> fluid conversions for recipes
+    //normally I'd declare this outside of the per-recipe function but I don't want it bleeding into other kjs files
+    var itemFluidDict = {
+        "minecraft:potion": {fluid: "minecraft:water", amount: 250}, //water bottle :c
+        "forge:water": {fluid: "minecraft:water", amount: 1000}, //water... bucket?
+        "minecraft:water_bucket": {fluid: "minecraft:water", amount: 1000},
+        "minecraft:milk_bucket": {fluidTag: "forge:milk", amount: 1000},
+        "minecraft:honey_bottle": {fluid: "create:honey", amount: 250},
+        "create:honey_bucket": {fluid: "create:honey", amount: 1000},
+        "vegandelight:soymilk_bucket": {fluid: "vegandelight:soymilk", amount: 1000},
+        "vegandelight:soymilk_bottle": {fluid: "vegandelight:soymilk", amount: 250},
+        "forge:milk": {fluidTag: "forge:milk", amount: 250}, //this includes bottles so we're just going to use 250
+        "forge:milk/milk_bottle": {fluidTag: "forge:milk", amount: 250},
+        "toughasnails:thirst/3_thirst_drinks": {fluid: "vegandelight:soymilk", amount: 250} //why does soymilk have a weird fluid tag..
+    };
+
     //we're gunna (potentially) do some recursive stuff because having an ingredient as an array of tags just doesn't work
     //ingredients are an array
     if (itemIngredients && itemIngredients.forEach != null) {
@@ -353,7 +422,17 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
 
         var recursiveCall = false;
 
+        var iix = 0;
         itemIngredients.forEach((ingredient) => {
+            if (recursiveCall) {
+                return;
+            }
+
+            if (ingredient.forEach != null && ingredient.length == 1) //why
+            {
+                ingredient = ingredient[0];
+            }
+
             //a specific ingredient is an array of ingredients
             //works fine with items and fluids but not tags
             if (ingredient.forEach != null) {
@@ -364,6 +443,10 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
                         var newIngredients = itemIngredients.slice();
                         newIngredients.splice(newIngredients.indexOf(ingredient), 1);
                         newIngredients.push(tagEntry);
+
+                        if (fluidIngredients && fluidIngredients.length > 0) {
+                            newIngredients = newIngredients.concat(fluidIngredients);
+                        }
 
                         if (recipe.json.has("ingredient")) {
                             recipe.json.remove("ingredient");
@@ -376,7 +459,7 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
                         recursiveCall = true;
 
                         //console.log("calling recursive recipe creation for tag " + JsonIO.toString(tagEntry));
-                        autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, recipeBlacklistPredicate);
+                        autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, recipeBlacklistPredicate, true);
                     });
 
                     //if we split out a tag recipe, we need to create a new recipe for all the non-tag items
@@ -400,21 +483,52 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
                         recursiveCall = true;
 
                         //console.log("calling recursive recipe creation for items " + JsonIO.toString(itemEntries));
-                        autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, recipeBlacklistPredicate);
+                        autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, recipeBlacklistPredicate, true);
                     }
                 }
-            }
-            else {
-                //add another recipe for milk (liquid) if milk (bucket) is present
-                //todo: update this to support fluids based on a dictionary of item => fluid conversion
+
+                //post-process to check if any element of the array'd ingredients is in the item fluid dict
                 if (recursiveCall == false) {
-                    if (ingredient.item == "minecraft:milk_bucket" || ingredient.tag == "forge:milk") {
-                        //console.log("recipe using milk bucket found, creating duplicate using milk fluid...")
+                    //this is so infuriating
+                    var fluidDictReplacement = null;
+                    itemEntries.forEach(ie => {
+                        if (fluidDictReplacement)
+                                return;
+                        fluidDictReplacement = itemFluidDict[ie.item] || itemFluidDict[ie.tag];
+                    });
+                    if (fluidDictReplacement != null) {
                         var newIngredients = itemIngredients.slice();
                         newIngredients.splice(newIngredients.indexOf(ingredient), 1);
 
                         var newFluidIngredients = fluidIngredients == null ? [] : fluidIngredients.slice();
-                        newFluidIngredients.push({fluid: "minecraft:milk", amount: 1000});
+                        newFluidIngredients.push(fluidDictReplacement);
+
+                        newIngredients = newIngredients.concat(newFluidIngredients);
+
+                        if (recipe.json.has("ingredient")) {
+                            recipe.json.remove("ingredient");
+                        }
+                        if (recipe.json.has("ingredients")) {
+                            recipe.json.remove("ingredients");
+                        }
+                        recipe.json.add("ingredients", newIngredients);
+
+                        autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, recipeBlacklistPredicate, true);
+                        recursiveCall = true; //don't create recipes for buckets, force fluids
+                    }
+                }
+            }
+            else {
+                if (recursiveCall == false) {
+                    //and then replace ingredients with fluid counterparts
+                    var fluidDictReplacement = itemFluidDict[ingredient.item] || itemFluidDict[ingredient.tag];
+                    if (fluidDictReplacement != null) {
+                        console.log(`found replacement ingredient for '${JsonIO.toString(ingredient)}': '${JsonIO.toString(fluidDictReplacement)}'`);
+                        var newIngredients = itemIngredients.slice();
+                        newIngredients.splice(iix, 1);
+
+                        var newFluidIngredients = fluidIngredients == null ? [] : fluidIngredients.slice();
+                        newFluidIngredients.push(fluidDictReplacement);
 
                         newIngredients = newIngredients.concat(newFluidIngredients);
 
@@ -427,12 +541,12 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
                         recipe.json.add("ingredients", newIngredients);
 
                         //console.log("adding new recipe using ingredients: " + JsonIO.toString(newIngredients));
-                        addedRecipes.push(recipeName); //workaround to generate a circuit for the new recipe and not create a duplicate
-                        autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, recipeBlacklistPredicate);
-                        addedRecipes.splice(addedRecipes.indexOf(recipeName), 1); //if the above errors, splice(length-2) is invalid
+                        autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, recipeBlacklistPredicate, requireCircuit);
+                        recursiveCall = true; //don't create recipes for buckets, force fluids
                     }
                 }
             }
+            iix++;
         });
 
         if (recursiveCall == true) {
@@ -440,28 +554,83 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
         }
     }
 
+    //and now convert any itemFluidDict outputs to their fluid conterparts
+    if (itemResults && itemResults.forEach) {
+        var recursiveCall = false;
+
+        itemResults.forEach(result => {
+            if (recursiveCall) {
+                return;
+            }
+
+            var fluidDictReplacement = itemFluidDict[result.item] || itemFluidDict[result.tag];
+            if (fluidDictReplacement != null) {
+                var newResults = itemResults.slice();
+                newResults.splice(newResults.indexOf(result), 1);
+
+                var newFluidResults = fluidResults == null ? [] : fluidResults.slice();
+                newFluidResults.push(fluidDictReplacement);
+
+                newResults = newResults.concat(newFluidResults);
+
+                if (recipe.json.has("result")) {
+                    recipe.json.remove("result");
+                }
+                if (recipe.json.has("results")) {
+                    recipe.json.remove("results");
+                }
+                recipe.json.add("results", newResults);
+
+                autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, recipeBlacklistPredicate);
+                recursiveCall = true; //don't create recipes for buckets, force fluids
+            }
+        });
+
+        if (recursiveCall == true) {
+            return;
+        }
+    }
 
     //check for container requirements, such as bowls, and add them to the ingredients list
-    if (recipe.json.has("container")){
-        var container = recipe.json.get("container");
-        if (itemIngredients) {
-            itemIngredients.push(container);
+    //unless there are NO item results
+    if (itemResults && itemResults.length > 0) {
+        if (recipe.json.has("container")){
+            var container = recipe.json.get("container");
+            var containerName = container.has("item") ? container.get("item").toString().replaceAll("\"", "") : "";
+            if (itemFluidDict[containerName] != null) {
+                if (fluidIngredients) {
+                    fluidIngredients.push(itemFluidDict[containerName])
+                }
+                else {
+                    fluidIngredients = itemFluidDict[containerName];
+                }
+            }
+            else {
+                if (itemIngredients) {
+                    if (containerName == "minecraft:bucket" && itemIngredients.find(x=>x.item && x.item.includes("bucket"))) {
+                        //do NOT add a bucket to recipes already using a bucket
+                    }
+                    else {
+                        itemIngredients.push(container);
+                    }
+                }
+                else {
+                    itemIngredients = [container];
+                }
+            }
+            //console.log(`appended container '${container}'`);
         }
-        else {
-            itemIngredients = [container];
-        }
-        //console.log(`appended container '${container}'`);
-    }
-    //wow I... hate this
-    //tldr some recipes don't have a {container=} but need one, e.g. ratatouille
-    else if (type == "farmersdelight:cooking") {
-        if (itemResults.forEach && itemResults.length == 1) {
-            var outputItemStack = Item.of(itemResults[0]);
-            var outputItem = outputItemStack.getItem();
-            if (outputItem.hasCraftingRemainingItem() == true) {
-                var remainingItem = outputItem.getItem().getCraftingRemainingItem();
-                if (remainingItem != null) {
-                    itemIngredients.push(remainingItem);
+        //wow I... hate this
+        //tldr some recipes don't have a {container=} but need one, e.g. ratatouille
+        else if (type == "farmersdelight:cooking") {
+            if (itemResults.forEach && itemResults.length == 1) {
+                var outputItemStack = Item.of(itemResults[0]);
+                var outputItem = outputItemStack.getItem();
+                if (outputItem.hasCraftingRemainingItem() == true) {
+                    var remainingItem = outputItem.getItem().getCraftingRemainingItem();
+                    if (remainingItem != null) {
+                        itemIngredients.push(remainingItem);
+                    }
                 }
             }
         }
@@ -516,36 +685,37 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
         newRecipe.circuit(idx);
     }
 
-    //console.log("process itemIngredients")
     if (itemIngredients && itemIngredients.length > 0) {
-        //console.log(JsonIO.toString(itemIngredients));
         newRecipe.itemInputs(itemIngredients);
     }
 
-    //console.log("process fluidIngredients")
     if (fluidIngredients && fluidIngredients.length > 0) {
-        //console.log(JsonIO.toString(fluidIngredients))
-        newRecipe.inputFluids(fluidIngredients);
+        //object notation wasn't working for fluid ingredients so... this
+        var rawFluidIngredients = [];
+        fluidIngredients.forEach(ing => {
+           if (ing.fluidTag != null) {
+               rawFluidIngredients.push(`#${ing.fluidTag} ${ing.amount == null ? '' : ing.amount}`);
+           } else {
+               rawFluidIngredients.push(`${ing.fluid} ${ing.amount == null ? '' : ing.amount}`);
+           }
+        });
+        newRecipe.inputFluids(rawFluidIngredients);
     }
 
-    //console.log("process itemResults")
     if (itemResults && itemResults.length > 0) {
-        //console.log(JsonIO.toString(itemResults));
         newRecipe.itemOutputs(itemResults);
     }
 
-    //console.log("process fluidResults")
     if (fluidResults && fluidResults.length > 0) {
-        //console.log(JsonIO.toString(fluidResults))
         newRecipe.outputFluids(fluidResults);
     }
 
-//    console.log(`created recipe '${recipeName}' @ '${newRecipe}'
-//            \tinput items: ${JsonIO.toString(itemIngredients)}
-//            \tinput fluids: ${JsonIO.toString(fluidIngredients)}
-//            \toutput items: ${JsonIO.toString(itemResults)}
-//            \toutput fluids: ${JsonIO.toString(fluidResults)}
-//            `);
+    console.log(`created recipe '${recipeName}' @ '${newRecipe}'
+            \tinput items: ${JsonIO.toString(itemIngredients)}
+            \tinput fluids: ${JsonIO.toString(fluidIngredients)}
+            \toutput items: ${JsonIO.toString(itemResults)}
+            \toutput fluids: ${JsonIO.toString(fluidResults)}
+            `);
 
     addedRecipes.push(recipeName);
 }
@@ -617,12 +787,13 @@ function autoportIngredientResultFilter(javaArrayList, predicate) {
     else {
         javaArrayList.forEach((x) => {
             //I don't know how to instanceof to check the type so I'm falling back to a getClass()
-            if (x.getClass() == "class com.google.gson.JsonObject") {
+            var javaClass = x.getClass();
+            if (javaClass == "class com.google.gson.JsonObject") {
                 if (predicate(x) === true) {
                     arr.push(autoportFactoryIngredientWrapper(x))
                 }
             }
-            else if (x.getClass() == "class com.google.gson.JsonArray") {
+            else if (javaClass == "class com.google.gson.JsonArray") {
                 var subArr = [];
                 x.forEach((y) => {
                     if (predicate(y) === true) {
