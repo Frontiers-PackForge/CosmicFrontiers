@@ -255,7 +255,7 @@ ServerEvents.recipes(event => {
 ///         the predicate receives the same parameters: 'type', 'origRecipeName', 'newRecipeName', 'itemIngredients', 'fluidIngredients', 'itemResults', 'fluidResults'
 function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, recipeBlacklistPredicate, requireCircuit) {
     //console.log(recipe.getClass());
-    console.log(recipe.json);  //recipe.json = class com.google.gson.JsonObject
+    //console.log(recipe.json);  //recipe.json = class com.google.gson.JsonObject
     // recipe name format: create:mixing/mud_by_mixing[create:mixing]
     var origRecipeName = recipe.toString().split("\\[")[0].toString();
     var recipeName = origRecipeName.includes("\/") ? origRecipeName.split("\/") : origRecipeName.split("\:");
@@ -523,7 +523,7 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
                     //and then replace ingredients with fluid counterparts
                     var fluidDictReplacement = itemFluidDict[ingredient.item] || itemFluidDict[ingredient.tag];
                     if (fluidDictReplacement != null) {
-                        console.log(`found replacement ingredient for '${JsonIO.toString(ingredient)}': '${JsonIO.toString(fluidDictReplacement)}'`);
+                        //console.log(`found replacement ingredient for '${JsonIO.toString(ingredient)}': '${JsonIO.toString(fluidDictReplacement)}'`);
                         var newIngredients = itemIngredients.slice();
                         newIngredients.splice(iix, 1);
 
@@ -710,12 +710,12 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
         newRecipe.outputFluids(fluidResults);
     }
 
-    console.log(`created recipe '${recipeName}' @ '${newRecipe}'
-            \tinput items: ${JsonIO.toString(itemIngredients)}
-            \tinput fluids: ${JsonIO.toString(fluidIngredients)}
-            \toutput items: ${JsonIO.toString(itemResults)}
-            \toutput fluids: ${JsonIO.toString(fluidResults)}
-            `);
+//    console.log(`created recipe '${recipeName}' @ '${newRecipe}'
+//            \tinput items: ${JsonIO.toString(itemIngredients)}
+//            \tinput fluids: ${JsonIO.toString(fluidIngredients)}
+//            \toutput items: ${JsonIO.toString(itemResults)}
+//            \toutput fluids: ${JsonIO.toString(fluidResults)}
+//            `);
 
     addedRecipes.push(recipeName);
 }
