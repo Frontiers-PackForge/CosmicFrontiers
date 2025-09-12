@@ -226,14 +226,11 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
         idx++;
     }
 
-    //console.log(`processing base recipe '${origRecipeName}' into '${recipeName}'...`);
+    //console.log(`processing base recipe '${origRecipeName}' into '${recipeName}' @ type '${type}'...`);
 
     //I hate indexing it this way; if someone knows how to do this better please do
     //these should all be com.google.gson.JsonArray
     var ingredients = recipe.json.has("ingredient") ? recipe.json.get("ingredient") : recipe.json.get("ingredients");
-    var toolIngredient = recipe.json.has("tool") ? recipe.json.get("tool") : null; //barbequesdelight support
-    var sideIngredient = recipe.json.has("side") ? recipe.json.get("side") : null; //barbequesdelight support
-    var ingredientCount = recipe.json.has("ingredientCount") ? parseInt(recipe.json.get("ingredientCount")): null; //WHYYY
     var results = recipe.json.has("result") ? recipe.json.get("result")
     : recipe.json.has("results") ? recipe.json.get("results")
     : recipe.json.has("output") ? recipe.json.get("output")
@@ -243,14 +240,6 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
     if (ingredients != null && (ingredients.getClass == undefined || ingredients.getClass() == "class com.google.gson.JsonObject")) {
         ingredients = JsonIO.parse(JsonIO.toString([ingredients]));
         //console.log("transformed ingredients into array");
-    }
-    if (toolIngredient != null && (toolIngredient.getClass == undefined || toolIngredient.getClass() == "class com.google.gson.JsonObject")) {
-        toolIngredient = JsonIO.parse(JsonIO.toString([toolIngredient]));
-        //console.log("transformed ingredients into array");
-    }
-    if (sideIngredient != null && (sideIngredient.getClass == undefined || sideIngredient.getClass() == "class com.google.gson.JsonObject")) {
-        sideIngredient = JsonIO.parse(JsonIO.toString([sideIngredient]));
-        //console.log("transformed sideIngredient into array");
     }
 
     if (results != null && (results.getClass == undefined || results.getClass() == "class com.google.gson.JsonObject")) {
@@ -262,39 +251,54 @@ function autoportRecipe(addedRecipes, event, recipe, machineSelectorFunction, re
         //console.log("transformed secondaryOutputs into array");
     }
 
-    if (sideIngredient != null) {
-        if (sideIngredient.length > 0) {
-            ingredients.addAll(sideIngredient);
-        }
-    }
+    if (type.startsWith("barbequesdelight:")) {
+        var sideIngredient = recipe.json.has("side") ? recipe.json.get("side") : null; //barbequesdelight support
+        var toolIngredient = recipe.json.has("tool") ? recipe.json.get("tool") : null; //barbequesdelight support
+        var ingredientCount = recipe.json.has("ingredientCount") ? parseInt(recipe.json.get("ingredientCount")): null; //WHYYY
 
-    //i hate you barbeques delight
-    if (ingredientCount != null && ingredientCount > 1) {
-        var newIngs = [];
-        ingredients.forEach((x) => {
-            //this just doesn't work for some reason? maybe just for tags but aaaaaaahhhhhh
-//            if (x.has("count")) {
-//                x.remove("count");
-//            }
-//            x.add("count", ingredientCount);
-            for (let i = 0; i < ingredientCount - 1; i++) {
-                newIngs.push(x)
+        if (toolIngredient != null && (toolIngredient.getClass == undefined || toolIngredient.getClass() == "class com.google.gson.JsonObject")) {
+            toolIngredient = JsonIO.parse(JsonIO.toString([toolIngredient]));
+            //console.log("transformed ingredients into array");
+        }
+        if (sideIngredient != null && (sideIngredient.getClass == undefined || sideIngredient.getClass() == "class com.google.gson.JsonObject")) {
+            sideIngredient = JsonIO.parse(JsonIO.toString([sideIngredient]));
+            //console.log("transformed sideIngredient into array");
+        }
+
+        if (sideIngredient != null) {
+            if (sideIngredient.length > 0) {
+                ingredients.addAll(sideIngredient);
             }
-        })
-        if (newIngs.length > 0) {
-            ingredients.addAll(newIngs);
         }
-    }
 
-    //console.log("raw json ingredients:")
-    //console.log(ingredients)
-    if (toolIngredient != null) {
-        //console.log("raw tool ingredients:")
-        //console.log(toolIngredient)
+        //i hate you barbeques delight
+        if (ingredientCount != null && ingredientCount > 1) {
+            var newIngs = [];
+            ingredients.forEach((x) => {
+                //this just doesn't work for some reason? maybe just for tags but aaaaaaahhhhhh
+                //            if (x.has("count")) {
+                //                x.remove("count");
+                //            }
+                //            x.add("count", ingredientCount);
+                for (let i = 0; i < ingredientCount - 1; i++) {
+                    newIngs.push(x)
+                }
+            })
+            if (newIngs.length > 0) {
+                ingredients.addAll(newIngs);
+            }
+        }
 
-        if (toolIngredient.length > 0) {
-            ingredients.addAll(toolIngredient);
-            //console.log("appended tool ingredients to ingredients");
+        //console.log("raw json ingredients:")
+        //console.log(ingredients)
+        if (toolIngredient != null) {
+            //console.log("raw tool ingredients:")
+            //console.log(toolIngredient)
+
+            if (toolIngredient.length > 0) {
+                ingredients.addAll(toolIngredient);
+                //console.log("appended tool ingredients to ingredients");
+            }
         }
     }
 
