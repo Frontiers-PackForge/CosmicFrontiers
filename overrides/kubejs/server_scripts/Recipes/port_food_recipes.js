@@ -63,7 +63,8 @@ ServerEvents.recipes(event => {
             "planks",
             "coral", //this is.... it technically makes foods? unsure on this one
             "leather",
-            "brick"
+            "brick",
+            "minecraft:potion"
         ];
 
         //strip out by result wildcard includes()
