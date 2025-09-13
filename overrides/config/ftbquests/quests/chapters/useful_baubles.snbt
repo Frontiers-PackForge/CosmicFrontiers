@@ -9,6 +9,8 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["38DA0B4E0DBAC364"]
+			hide_until_deps_complete: true
 			icon: "gtceu:bronze_machine_casing"
 			id: "7B4F0BE29E6CD211"
 			tasks: [{
@@ -485,6 +487,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: [
 				"Cognition is a mod centered around everything experience. "
 				""
@@ -496,6 +499,7 @@
 				""
 				"It gives many more different tools, you might want to check all that out in EMI!"
 			]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1
 				id: "experienceobelisk:experience_obelisk"
@@ -694,7 +698,9 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: ["Collects items in its range. Automatically outputs them into a storage below. That's about it."]
+			hide_dependency_lines: true
 			id: "06310CD9F4CFD127"
 			subtitle: "Item Collector, Basically"
 			tasks: [{
@@ -706,11 +712,13 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: [
 				"Basically cheap teleportation. Can be found for free in the world, or crafted."
 				""
 				"Yes, the Warp Stone is mandatory for progression."
 			]
+			hide_dependency_lines: true
 			icon: "waystones:waystone"
 			id: "0E60A5EB3F3BA8F6"
 			tasks: [
@@ -736,7 +744,9 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: ["Actually more than just voxels. Basically lets you do whatever you want with sub-block shapes. Can even be functional, act as storage, etc."]
+			hide_dependency_lines: true
 			id: "55F0A2DDABEF9A10"
 			subtitle: "Voxel Shenanigans"
 			tasks: [{
@@ -753,6 +763,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: [
 				"Create Mod is in the pack, as you can notice. But not for progression, only as a toolbox for your creativity!"
 				""
@@ -760,6 +771,7 @@
 				""
 				"Trains are also in there!"
 			]
+			hide_dependency_lines: true
 			icon: "create:clipboard"
 			id: "787E04FF82833D7E"
 			subtitle: "@cinobi"
@@ -812,6 +824,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: [
 				"A quick access belt for your tools! Check your keybinds to use it!"
 				""
@@ -819,6 +832,7 @@
 				""
 				"Can be upgraded with Belt Pouches via an anvil."
 			]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1
 				id: "toolbelt:belt"
@@ -846,11 +860,13 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: [
 				"Your average glider."
 				""
 				"Do not forget to upgrade your stamina, if you can!"
 			]
+			hide_dependency_lines: true
 			id: "7D8FC72DE68DB3E4"
 			subtitle: "Feather Falling X"
 			tasks: [{
@@ -862,11 +878,13 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: [
 				"It clicks. For free. Up to 20 times per second. No energy required."
 				""
 				"The best option for semi-automating Occultism rituals."
 			]
+			hide_dependency_lines: true
 			id: "57D148CF26B3C346"
 			subtitle: "clickyclickyclicky"
 			tasks: [{
@@ -878,11 +896,13 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: [
 				"Finds biomes."
 				""
 				"If you want to get one before the Nether, you can find a normal compass in ruined portals and some other chests."
 			]
+			hide_dependency_lines: true
 			id: "3786794C10D25519"
 			subtitle: "/locate"
 			tasks: [{
@@ -898,6 +918,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: [
 				"Building Wands. Extend the area/row of blocks."
 				""
@@ -909,6 +930,7 @@
 				""
 				"Destruction Core unlocks the ability to mass remove blocks &lwithout any drops"
 			]
+			hide_dependency_lines: true
 			id: "19A24D6E2132AC5C"
 			subtitle: "Win+Ctrl+Alt+Shift+L"
 			tasks: [
@@ -941,7 +963,9 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: ["Feeds animals to breed them. Be careful, it has no options or controls, you might overcrowd your animal farm!"]
+			hide_dependency_lines: true
 			id: "6DD0575D2AFD6A14"
 			subtitle: "Through what?"
 			tasks: [{
@@ -953,6 +977,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: [
 				"This book should be enough to figure out Apotheosis enchanting."
 				""
@@ -961,6 +986,7 @@
 				""
 				"Do note that you can pick up spawners with CarryOn for your xp farm!"
 			]
+			hide_dependency_lines: true
 			icon: "minecraft:enchanting_table"
 			id: "0604CE9D9DC8D2B2"
 			subtitle: "As overpowered as it gets"
@@ -1131,6 +1157,7 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: [
 				"Mega Torch prevents monster spawns in a 64 block radius horizontally and 32 blocks vertically."
 				""
@@ -1138,6 +1165,7 @@
 				""
 				"Dread Lamp prevents neutral mob spawning in the same radius as Mega Torch."
 			]
+			hide_dependency_lines: true
 			icon: "torchmaster:megatorch"
 			id: "4E59D7A0E9DB173B"
 			tasks: [
@@ -1162,7 +1190,9 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: ["Bed on the go. "]
+			hide_dependency_lines: true
 			id: "59A2CC8730B76F31"
 			subtitle: "*snooze mimimi*"
 			tasks: [{
@@ -1292,6 +1322,7 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: [
 				"This respirator can be crafted late into steam and repaired with steel. "
 				"It has &l14 Times the Durability of the respirator"
@@ -1301,6 +1332,7 @@
 				""
 				"God I hate coding this game."
 			]
+			hide_dependency_lines: true
 			id: "1E09F7083D002A82"
 			shape: "gear"
 			subtitle: "Better Breathing"
