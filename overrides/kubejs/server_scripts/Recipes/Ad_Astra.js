@@ -71,7 +71,7 @@ ServerEvents.tags('item', event => {
   event.add('ad_astra:space_suit_items', 'gtceu:quarktech_leggings')
   event.add('ad_astra:space_suit_items', 'gtceu:quarktech_boots')
   event.add('ad_astra:space_suit_items', 'gtceu:quarktech_helmet')
-  
+
   event.add('ad_astra:space_suit_items', 'cosmiccore:sanguine_warptech_helmet')
   event.add('ad_astra:space_suit_items', 'cosmiccore:sanguine_warptech_leggings')
   event.add('ad_astra:space_suit_items', 'cosmiccore:sanguine_warptech_boots')
@@ -92,6 +92,14 @@ ServerEvents.tags('fluid', event => {
 })
 
 ServerEvents.recipes(event => {
+
+
+  event.remove({ type: 'ad_astra:cryo_freezing' })
+  event.remove({ type: 'ad_astra:refining' })
+  event.remove({ type: 'ad_astra:oxygen_loading' })
+  event.remove({ type: 'ad_astra:alloying' })
+  event.remove({ type: 'ad_astra:compressing' })
+
   event.remove({ output: 'ad_astra:tier_1_rocket' })
   event.remove({ output: 'ad_astra:tier_2_rocket' })
   event.remove({ output: 'ad_astra:tier_3_rocket' })
