@@ -51,6 +51,8 @@ yeet('projectred_transmission:low_load_power_wire')
 yeet('projectred_transmission:low_load_framed_power_wire')
 yeet('projectred_core:electrotine_generator')
 yeet('projectred_core:electrotine_dust')
+yeet('gtceu:auto_maintenance_hatch')
+yeet('gtceu:cleaning_maintenance_hatch')
 
 
 yeet('trials:crafter')
@@ -110,6 +112,11 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:large_chemical_reactor/hydrogen_peroxide' })
   event.remove({ id: 'gtceu:chemical_reactor/hydrogen_peroxide' })
 
+  event.remove({ id: 'gtceu:electric_blast_furnace/blast_nevramite' })
+  event.remove({ id: 'gtceu:electric_blast_furnace/blast_nevramite_gas' })
+  event.remove({ id: 'gtceu:orbital_forge/blast_nevramite_gas' })
+  event.remove({ id: 'gtceu:orbital_forge/blast_nevramite' })
+
 
   event.replaceOutput({ id: 'gtceu:shaped/power_substation' }, 'gtceu:power_substation', 'cosmiccore:dimensional_energy_capacitor')
   event.replaceOutput({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_uvarovite' }, 'gtceu:chromium_dust', 'gtceu:chromite_dust')
@@ -127,15 +134,15 @@ ServerEvents.recipes(event => {
   ])
 
 
-  event.shapeless('cosmiccore:wireless_pda',[
+  event.shapeless('cosmiccore:wireless_pda', [
     'cosmiccore:iv_radio_module'
   ])
 
 
-  event.shapeless('cosmiccore:portable_gravity_core',[
+  event.shapeless('cosmiccore:portable_gravity_core', [
     'gtceu:gravitation_engine_unit'
   ])
-  event.shapeless('bloodmagic:alchemytable',[
+  event.shapeless('bloodmagic:alchemytable', [
     ['botania:brewery', 'minecraft:crafting_table']
   ])
 
@@ -2190,6 +2197,14 @@ ServerEvents.recipes(event => {
     .outputFluids('gtceu:void_tar 1000')
     .duration(35)
     .EUt(GTValues.VA[GTValues.ZPM]);
+
+
+  event.recipes.gtceu.mixer('nevramite_dust_bad')
+    .itemInputs(['8x gtceu:osmium_dust', '3x gtceu:gadolinium_dust', '3x gtceu:rhenium_dust', '2x gtceu:molybdenum_dust', 'gtceu:activated_carbon_dust', 'cosmiccore:starmetal_dust'])
+    .inputFluids('gtceu:void_tar 72000')
+    .itemOutputs('18x cosmiccore:nevramite_dust')
+    .duration(1170)
+    .EUt(GTValues.VA[GTValues.UV]);
 
   event.recipes.gtceu.chemical_bath(`frontiers:aberrant_essence_best`)
     .itemInputs('cosmiccore:wicked_essence')

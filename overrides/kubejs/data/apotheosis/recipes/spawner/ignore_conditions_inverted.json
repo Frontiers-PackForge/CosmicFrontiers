@@ -5,7 +5,7 @@
 		"module": "spawner"
 	}],
 	"mainhand": {
-		"item": "minecraft:dragon_egg"
+		"item": "minecraft:barrier"
 	},
 	"offhand": {
 		"item": "minecraft:quartz"

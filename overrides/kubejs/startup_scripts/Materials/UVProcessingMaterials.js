@@ -6,6 +6,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .formula('⊖')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
+    event.create('shadow_pitch')
+        .formula('⊖')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('shadow_tar')
+        .formula('⊖?')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('shaded_bedrock_oil')
+        .formula('?')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+
+
 
     event.create('hadalite_sludge') //Mixture of Thallium, Sulfates, and Obsidian Dust - Gross
         .formula('Tl2S3(MgFeSi3O4)4(H20)')

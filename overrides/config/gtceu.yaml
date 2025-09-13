@@ -95,11 +95,11 @@ recipes:
 
   # Percentage yield of macerator decomposition recycling outputs, 1.0 means 100%
   # Default: 1.0f
-  maceratorRecyclingYield: 0.1
+  maceratorRecyclingYield: 1.0
 
   # Whether to enable arc furnace decomposition recycling
   # Default: true
-  enableArcRecycling: false
+  enableArcRecycling: true
 
   # Percentage yield of arc furnace decomposition recycling outputs, 1.0 means 100%
   # Default: 1.0f
@@ -107,7 +107,7 @@ recipes:
 
   # Whether to enable extractor decomposition recycling
   # Default: true
-  enableExtractorRecycling: false
+  enableExtractorRecycling: true
 
   # Percentage yield of extractor decomposition recycling outputs, 1.0 means 100%
   # Default: 1.0f
@@ -446,6 +446,13 @@ client:
     # Whether or not to color wire/cable highlights based on voltage tier
     # Default: true
     coloredWireOutline: true
+
+  tankItemFluidPreview:
+    # Set true to render the including fluid icons to GT Drums
+    drum: false
+
+    # Set true to render the including fluid icons to Super (Quantum) Tanks
+    quantumTank: false
 
 # Config options for Tools and Armor
 tools:

@@ -44,6 +44,7 @@ yeet('ironfurnaces:upgrade_netherite');
 yeet('ironfurnaces:crystal_furnace');
 
 ServerEvents.recipes(event => { 
+    event.remove({ mod: 'ironfurnaces' })
     event.remove({ output: 'ironfurnaces:copper_furnace' }) 
     event.shaped( 'ironfurnaces:copper_furnace', [
         'PDP',
