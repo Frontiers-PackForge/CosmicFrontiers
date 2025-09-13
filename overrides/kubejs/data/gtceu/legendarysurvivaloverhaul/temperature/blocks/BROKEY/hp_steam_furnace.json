@@ -1,0 +1,14 @@
+[
+  {
+    "temperature": 18,
+    "properties": {
+      "recipe_logic_status": "working"
+    }
+  },
+  {
+    "temperature": 0,
+    "properties": {
+      "recipe_logic_status": "idle"
+    }
+  }
+]
