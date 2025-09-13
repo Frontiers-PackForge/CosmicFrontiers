@@ -871,4 +871,31 @@ ServerEvents.recipes(event => {
               .itemOutputs('9x gtceu:netherite_dust')
               .duration(900)
               .EUt(2)
+
+       //adding recipes for unobtainable end related items
+       //arc furnace only has one item input slot soo... canner it is
+       //canner also didnt work cause it conflicts with the ender air bottle and would need a circuit (only has 2 item input slots, so wont show in emi)
+       event.recipes.gtceu.essence_reactor(`frontiers:dragon_breath`)
+              .itemInputs('minecraft:glass_bottle')
+              .itemInputs('gtceu:elementium_dust') //could be replaced with a dragonstone dust in the future
+              .inputFluids(`gtceu:ender_air 100`)
+              .itemOutputs(`minecraft:dragon_breath`)
+              .duration(160)
+              .EUt(480)
+
+       event.recipes.gtceu.canner(`frontiers:ender_air_bottle`)
+              .itemInputs('minecraft:glass_bottle')
+              .inputFluids(`gtceu:ender_air 100`)
+              .itemOutputs(`botania:ender_air_bottle`)
+              .duration(80)
+              .EUt(480)
+
+       event.recipes.gtceu.assembler(`frontiers:elytra`)
+              .itemInputs('aether:valkyrie_cape') //already slows fall time so feels right to use it for a reward for the aether
+              .itemInputs('8x malum:astral_weave') //drops from phantoms when using magic weapons
+              .itemInputs('4x kubejs:terraweave_cloth')
+              .itemInputs('2x gtceu:steel_ring') //to connect the wings together i suppose
+              .itemOutputs(`minecraft:elytra`)
+              .duration(400)
+              .EUt(120)
 })
