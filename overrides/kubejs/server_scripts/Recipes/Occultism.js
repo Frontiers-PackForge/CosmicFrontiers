@@ -371,6 +371,21 @@ ServerEvents.recipes(event => {
     ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.ice_fern2")
 
 
+  event.remove({ id: 'occultism:ritual/craft_satchel' })
+  event.recipes.occultism.ritual(
+    'occultism:satchel',
+    ['legendarysurvivaloverhaul:cold_string',
+    'legendarysurvivaloverhaul:cold_string',
+      'cosmiccore:waxed_leather',
+      'cosmiccore:waxed_leather',
+      'cosmiccore:waxed_leather',
+      'cosmiccore:waxed_leather',
+    'legendarysurvivaloverhaul:warm_string',
+    'legendarysurvivaloverhaul:warm_string',],
+    "gtceu:aluminium_crate",
+    'occultism:craft_djinni'
+  ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.fusion_ritual.satchel")
+
   //Using Event.custom because i'm too lazy to try and parse this
   event.custom({
     "type": "occultism:ritual",
