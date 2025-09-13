@@ -239,20 +239,4 @@ ServerEvents.recipes(event => {
             .CWUt(16)
             .EUt(GTValues.VA[GTValues.ZPM]))
         .EUt(GTValues.VH[GTValues.IV], 4);
-
-    // event.recipes.gtceu.industrial_chemvat('frontiers:heme_ring_but_its_actually_chlorophyte_and_im_just_lazy')
-    //     .itemInputs('gtceu:prophine_dust')
-    //     .inputFluids('gtceu:acetic_acid 1000', 'gtceu:formaldehyde 4000', 'gtceu:methyl_formate 2000', 'gtceu:chlorine 4000', 'gtceu:vinyl_chloride 1000', 'gtceu:chloromethane 4000')
-    //     .outputFluids('gtceu:hydrochloric_acid 1000', 'minecraft:water 1000')
-    //     .itemOutputs('4x cosmiccore:heme_ring')
-    //     .circuit(31)
-    //     .duration(440)
-    //     .stationResearch(b => b
-    //         .researchStack('cosmiccore:sculk_fibroblast')
-    //         .CWUt(16)
-    //         .EUt(GTValues.VA[GTValues.ZPM]))
-    //     .cleanroom(CleanroomType.STERILE_CLEANROOM)
-    //     .EUt(GTValues.VA[GTValues.LuV]);
-
-
 })

@@ -202,6 +202,163 @@ ServerEvents.recipes(event => {
 
     // })
 
+    //Vanilla Delight
+    event.remove({ output: 'vanilladelight:deepslate_bricks_stove' })
+    event.shaped('vanilladelight:deepslate_bricks_stove', [
+        'IGI',
+        'BHB',
+        'BCB'
+    ], {
+        I: 'gtceu:iron_plate',
+        G: 'minecraft:iron_bars',
+        B: 'minecraft:deepslate_bricks',
+        C: 'minecraft:campfire',
+        H: '#forge:tools/hammers'
+    })
+    event.remove({ output: 'vanilladelight:end_stone_bricks_stove' })
+    event.shaped('vanilladelight:end_stone_bricks_stove', [
+        'IGI',
+        'BHB',
+        'BCB'
+    ], {
+        I: 'gtceu:iron_plate',
+        G: 'minecraft:iron_bars',
+        B: 'minecraft:end_stone_bricks',
+        C: 'minecraft:campfire',
+        H: '#forge:tools/hammers'
+    })
+    event.remove({ output: 'vanilladelight:mud_bricks_stove' })
+    event.shaped('vanilladelight:mud_bricks_stove', [
+        'IGI',
+        'BHB',
+        'BCB'
+    ], {
+        I: 'gtceu:iron_plate',
+        G: 'minecraft:iron_bars',
+        B: 'minecraft:mud_bricks',
+        C: 'minecraft:campfire',
+        H: '#forge:tools/hammers'
+    })
+    event.remove({ output: 'vanilladelight:nether_bricks_stove' })
+    event.shaped('vanilladelight:nether_bricks_stove', [
+        'IGI',
+        'BHB',
+        'BCB'
+    ], {
+        I: 'gtceu:iron_plate',
+        G: 'minecraft:iron_bars',
+        B: 'minecraft:nether_bricks',
+        C: 'minecraft:campfire',
+        H: '#forge:tools/hammers'
+    })
+    event.remove({ output: 'vanilladelight:stone_bricks_stove' })
+    event.shaped('vanilladelight:stone_bricks_stove', [
+        'IGI',
+        'BHB',
+        'BCB'
+    ], {
+        I: 'gtceu:iron_plate',
+        G: 'minecraft:iron_bars',
+        B: 'minecraft:stone_bricks',
+        C: 'minecraft:campfire',
+        H: '#forge:tools/hammers'
+    })
+    event.remove({ output: 'vanilladelight:polished_andesite_stove' })
+    event.shaped('vanilladelight:polished_andesite_stove', [
+        'IGI',
+        'BHB',
+        'BCB'
+    ], {
+        I: 'gtceu:iron_plate',
+        G: 'minecraft:iron_bars',
+        B: 'minecraft:polished_andesite',
+        C: 'minecraft:campfire',
+        H: '#forge:tools/hammers'
+    })
+    event.remove({ output: 'vanilladelight:polished_basalt_stove' })
+    event.shaped('vanilladelight:polished_basalt_stove', [
+        'IGI',
+        'BHB',
+        'BCB'
+    ], {
+        I: 'gtceu:iron_plate',
+        G: 'minecraft:iron_bars',
+        B: 'minecraft:polished_basalt',
+        C: 'minecraft:campfire',
+        H: '#forge:tools/hammers'
+    })
+    event.remove({ output: 'vanilladelight:polished_deepslate_stove' })
+    event.shaped('vanilladelight:polished_deepslate_stove', [
+        'IGI',
+        'BHB',
+        'BCB'
+    ], {
+        I: 'gtceu:iron_plate',
+        G: 'minecraft:iron_bars',
+        B: 'minecraft:polished_deepslate',
+        C: 'minecraft:campfire',
+        H: '#forge:tools/hammers'
+    })
+    event.remove({ output: 'vanilladelight:polished_diorite_stove' })
+    event.shaped('vanilladelight:polished_diorite_stove', [
+        'IGI',
+        'BHB',
+        'BCB'
+    ], {
+        I: 'gtceu:iron_plate',
+        G: 'minecraft:iron_bars',
+        B: 'minecraft:polished_diorite',
+        C: 'minecraft:campfire',
+        H: '#forge:tools/hammers'
+    })
+    event.remove({ output: 'vanilladelight:polished_granite_stove' })
+    event.shaped('vanilladelight:polished_granite_stove', [
+        'IGI',
+        'BHB',
+        'BCB'
+    ], {
+        I: 'gtceu:iron_plate',
+        G: 'minecraft:iron_bars',
+        B: 'minecraft:polished_granite',
+        C: 'minecraft:campfire',
+        H: '#forge:tools/hammers'
+    })
+    event.remove({ output: 'vanilladelight:purpur_stove' })
+    event.shaped('vanilladelight:purpur_stove', [
+        'IGI',
+        'BHB',
+        'BCB'
+    ], {
+        I: 'gtceu:iron_plate',
+        G: 'minecraft:iron_bars',
+        B: 'minecraft:purpur_block',
+        C: 'minecraft:campfire',
+        H: '#forge:tools/hammers'
+    })
+    event.remove({ output: 'vanilladelight:red_sandstone_stove' })
+    event.shaped('vanilladelight:red_sandstone_stove', [
+        'IGI',
+        'BHB',
+        'BCB'
+    ], {
+        I: 'gtceu:iron_plate',
+        G: 'minecraft:iron_bars',
+        B: 'minecraft:red_sandstone',
+        C: 'minecraft:campfire',
+        H: '#forge:tools/hammers'
+    })
+    event.remove({ output: 'vanilladelight:sandstone_stove' })
+    event.shaped('vanilladelight:sandstone_stove', [
+        'IGI',
+        'BHB',
+        'BCB'
+    ], {
+        I: 'gtceu:iron_plate',
+        G: 'minecraft:iron_bars',
+        B: 'minecraft:sandstone',
+        C: 'minecraft:campfire',
+        H: '#forge:tools/hammers'
+    })
 })
 
 //Cabinets, starting with the cabinet function

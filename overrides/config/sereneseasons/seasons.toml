@@ -14,7 +14,7 @@
 #Please be advised that certain season-related options are world-specific and are located in <Path to your world folder>/serverconfig/sereneseasons-server.toml.
 [weather_settings]
 	#Change the frequency of rain/snow/storms based on the season
-	change_weather_frequency = true
+	change_weather_frequency = false
 	#Generate snow and ice during the Winter season
 	generate_snow_ice = false
 

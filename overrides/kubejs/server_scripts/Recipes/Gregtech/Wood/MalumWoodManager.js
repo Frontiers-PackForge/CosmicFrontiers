@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
 
     //Handle All WoodMalum/Logs into default soulwood planks
     event.remove({ output: 'malum:soulwood_planks' })
-    event.shapeless(`malum:soulwood_planks`, [
+    event.shapeless(`2x malum:soulwood_planks`, [
         '#malum:soulwood_logs'
     ])
     event.recipes.gtceu.cutter(`cosmicfrontiers:malum/stupid_malum_wood_cutting`)

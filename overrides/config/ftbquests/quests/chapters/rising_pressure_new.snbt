@@ -2446,6 +2446,11 @@
 				"The Divination Rod will highlight Iesnium ore nearby."
 				""
 				"Attune the rod by using shift-rightclick on netherrack"
+				""
+				"After Attuning, hold right click to scan the nearby area around you."
+				""
+				""
+				"If you are having trouble seeing outlines and have an AMD GPU, you will need to go into occultism's client config and enable the compatibility mode for AMD gpus."
 			]
 			hide_dependency_lines: true
 			id: "68AAF390B75DAD61"

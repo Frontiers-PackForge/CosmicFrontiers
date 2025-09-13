@@ -150,6 +150,22 @@ ServerEvents.recipes(event => {
         .duration(1250)
         .dimension('minecraft:the_nether')
         .EUt(GTValues.VA[GTValues.IV]);
+
+    event.recipes.gtceu.alloy_blast_smelter('neutronium_molten_silicon')
+        .itemInputs(['36x gtceu:middle_grade_silicon_dust', '36x gtceu:high_grade_silicon_dust', 'gtceu:neutronium_plasmites'])
+        .outputFluids('gtceu:neutronium_doped_silicon 9216')
+        .blastFurnaceTemp(7200)
+        .duration(3250)
+        .dimension('minecraft:the_nether')
+        .EUt(GTValues.VA[GTValues.LuV]);
+    event.recipes.gtceu.gravity_float_crucible('solidify_neutronium_boule')
+        .itemInputs('gtceu:neutronium_nugget')
+        .inputFluids('gtceu:neutronium_doped_silicon 9216')
+        .itemOutputs('gtceu:neutronium_boule')
+        .dimension('frontiers:sun_orbit')
+        .duration(5000)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
     event.recipes.gtceu.gravity_float_crucible('lumial_boule_solidify_autoclave')
         .itemInputs('gtceu:exquisite_malachite_gem')
         .inputFluids('gtceu:molten_luminent_silicon 9216')
@@ -171,6 +187,15 @@ ServerEvents.recipes(event => {
         .dimension('ad_astra:earth_orbit')
         .duration(640)
         .EUt(GTValues.VA[GTValues.LuV]);
+
+    event.recipes.gtceu.laser_engraver('laser_into_impure_wafers')
+        .itemInputs('gtceu:neutronium_wafer')
+        .notConsumable('kubejs:prismatic_lens')
+        .itemOutputs('cosmiccore:flawed_resonant_wafer')
+        .dimension('ad_astra:earth_orbit')
+        .duration(640)
+        .EUt(GTValues.VA[GTValues.UV]);
+
     event.recipes.gtceu.aio_lithography_processor('chiplet_masking')
         .itemInputs(['8x cosmiccore:crystal_chiplet_mask', '8x cosmiccore:crystal_chiplet_base', 'gtceu:polybenzimidazole_dust'])
         .inputFluids('gtceu:hydrogensilesquioxane 2500')

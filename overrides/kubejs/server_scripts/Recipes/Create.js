@@ -300,7 +300,7 @@ ServerEvents.recipes(event => {
     I: 'gtceu:andesite_alloy_ring'
   })
   event.recipes.gtceu.assembler('create:whisk')
-    .itemInputs('3x gtceu:iron_rod', '1x gtceu:andesite_alloy_ring')
+    .itemInputs('gtceu:andesite_alloy_plate', '3x gtceu:andesite_alloy_ring')
     .circuit(4)
     .itemOutputs('create:whisk')
     .duration(100)
@@ -1042,7 +1042,7 @@ ServerEvents.recipes(event => {
   .EUt(8);
   //Display Link
   event.recipes.gtceu.assembler("create:display_link")
-  .itemInputs('create:brass_casing', 'minecraft:redstone_torch', 'create:copper_plate')
+  .itemInputs('create:brass_casing', 'create:transmitter', 'create:copper_plate')
   .itemOutputs('create:display_link')
   .circuit(6)
   .duration(50)
@@ -1072,7 +1072,7 @@ ServerEvents.recipes(event => {
   .EUt(8);
   //Redstone Link
   event.recipes.gtceu.assembler("create:redstone_link")
-  .itemInputs('create:brass_casing', 'minecraft:redstone_torch') 
+  .itemInputs('create:andesite_casing', 'create:transmitter') 
   .itemOutputs('2x create:redstone_link')
   .circuit(2)
   .duration(50)
@@ -1127,6 +1127,16 @@ ServerEvents.recipes(event => {
     G: 'gtceu:long_steel_rod',
     N: 'minecraft:netherrack'
   })
+  //basic_burner
+  event.remove({id: "createlowheated:basic_burner"})
+  event.shaped('createlowheated:basic_burner', [
+    '   ',
+    'G G',
+    'CGC'
+  ], {
+    C: 'gtceu:andesite_alloy_ring',
+    G: 'gtceu:andesite_alloy_plate',
+  })
   //Brass Hand 
   event.recipes.gtceu.assembler('create:brass_hand')
     .itemInputs('4x gtceu:brass_plate')
@@ -1149,6 +1159,98 @@ ServerEvents.recipes(event => {
   .itemOutputs('create:polished_rose_quartz')
   .duration(50)
   .EUt(8);
+  //packager
+  event.remove({id: "create:crafting/logistics/packager"})
+  event.shaped('create:packager', [
+    'SXS',
+    'EFE',
+    'SCS'
+  ], {
+    F: 'create:cardboard_block',
+    X: 'gtceu:lv_conveyor_module',
+    E: 'gtceu:andesite_alloy_plate',
+    S: 'gtceu:andesite_alloy_rod',
+    C: '#gtceu:circuits/mv'
+  })
+  //frogport, kinda like a hopper
+  event.remove({id: "create:crafting/logistics/package_frogport"})
+  event.shaped('create:package_frogport', [
+    'SXS',
+    'CFC',
+    'SES'
+  ], {
+    F: 'create:item_vault',
+    X: 'gtceu:lv_robot_arm',
+    E: 'gtceu:andesite_alloy_spring',
+    S: 'gtceu:andesite_alloy_plate',
+    C: '#gtceu:circuits/mv'
+  })
+  //stock link, basically a storage bus?
+  event.remove({id: "create:crafting/logistics/stock_link"})
+  event.shaped('create:stock_link', [
+    'SXS',
+    'CFC',
+    'SES'
+  ], {
+    F: 'create:display_link',
+    X: 'gtceu:item_detector_cover',
+    E: 'create:item_vault',
+    S: 'gtceu:brass_plate',
+    C: '#gtceu:circuits/mv'
+  })
+  //stock ticker, basically an ae terminal
+  event.remove({id: "create:crafting/logistics/stock_ticker"})
+  event.shaped('create:stock_ticker', [
+    'SXS',
+    'CFC',
+    'SES'
+  ], {
+    F: 'create:stock_link',
+    X: 'gtceu:terminal',
+    E: 'minecraft:gold_block',
+    S: '#forge:glass',
+    C: '#gtceu:circuits/mv'
+  })
+  //redstone requester, requests items from a to b
+  event.remove({id: "create:crafting/logistics/redstone_requester"})
+  event.shaped('create:redstone_requester', [
+    'SXS',
+    'CFC',
+    'SES'
+  ], {
+    F: 'create:stock_link',
+    X: 'gtceu:machine_controller_cover',
+    E: 'gtceu:steel_block',
+    S: 'gtceu:andesite_alloy_plate',
+    C: '#gtceu:circuits/mv'
+  })
+  //factory gauge, the actual "autocrafting" block
+  event.remove({id: "create:crafting/logistics/factory_gauge"})
+  event.shaped('6x create:factory_gauge', [
+    'SXS',
+    'CFC',
+    'SES'
+  ], {
+    F: 'ae2:pattern_provider',
+    X: 'gtceu:advanced_item_detector_cover',
+    E: 'create:stock_link',
+    S: 'create:precision_mechanism',
+    C: '#gtceu:circuits/hv'
+  })
+  //cardboard
+  event.remove({id: "create:mixing/cardboard_pulp"})
+  event.remove({id: "create:pressing/cardboard"})
+  event.recipes.gtceu.chemical_bath("create:pulp")
+  .itemInputs('4x gtceu:wood_dust')
+  .inputFluids('minecraft:water 400')
+  .itemOutputs('create:pulp')
+  .duration(50)
+  .EUt(16);
+  event.recipes.gtceu.compressor("create:cardboard")
+  .itemInputs('create:pulp')
+  .itemOutputs('create:cardboard')
+  .duration(100)
+  .EUt(16);
 })
 
 

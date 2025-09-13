@@ -52,6 +52,10 @@ yeet('projectred_transmission:low_load_framed_power_wire')
 yeet('projectred_core:electrotine_generator')
 yeet('projectred_core:electrotine_dust')
 
+
+yeet('trials:crafter')
+
+
 yeet(/gtceu:(.*)butchery_knife$/)
 
 
@@ -100,6 +104,11 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'terralith:piston_alt' })
   event.remove({ id: 'gtceu:macerator/macerate_treated_wood_planks' })
   event.remove({ id: 'gtceu:alloy_blast_smelter/starmetal_gas' })
+  event.remove({ id: 'gtceu:orbital_forge/neutronium_boule' })
+  event.remove({ id: 'gtceu:electric_blast_furnace/neutronium_boule' })
+  event.remove({ id: 'gtceu:industrial_chemvat/hydrogen_peroxide' })
+  event.remove({ id: 'gtceu:large_chemical_reactor/hydrogen_peroxide' })
+  event.remove({ id: 'gtceu:chemical_reactor/hydrogen_peroxide' })
 
 
   event.replaceOutput({ id: 'gtceu:shaped/power_substation' }, 'gtceu:power_substation', 'cosmiccore:dimensional_energy_capacitor')
@@ -112,7 +121,22 @@ ServerEvents.recipes(event => {
   event.shapeless('cosmiccore:ultrasonic_homogenizer', [
     'cosmiccore:long_neutronite_rod',
     'gtceu:zpm_electric_piston'
+  ])
+  event.shapeless('cosmiccore:sensor_hatch', [
+    'gtceu:advanced_energy_detector_cover', 'gtceu:hv_machine_hull'
+  ])
 
+
+  event.shapeless('cosmiccore:wireless_pda',[
+    'cosmiccore:iv_radio_module'
+  ])
+
+
+  event.shapeless('cosmiccore:portable_gravity_core',[
+    'gtceu:gravitation_engine_unit'
+  ])
+  event.shapeless('bloodmagic:alchemytable',[
+    ['botania:brewery', 'minecraft:crafting_table']
   ])
 
   event.replaceInput(
@@ -529,6 +553,22 @@ ServerEvents.recipes(event => {
     W: '#forge:tools/wrenches',
     H: '#forge:tools/hammers'
   })
+  //Oscillating Casings
+  event.recipes.gtceu.assembler('gtceu:costly_osc_gilded_casing_assem')
+    .itemInputs(['cosmiccore:gilded_pthanterum_casing', '4x gtceu:heavy_hsla_steel_beam', '4x gtceu:long_hsla_steel_rod'])
+    .itemOutputs('cosmiccore:oscillating_gilded_pthanterum_casings')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('cosmiccore:oscillating_gilded_pthanterum_casings', [
+    'AFA',
+    'FWF',
+    'AFA'
+  ], {
+    A: 'gtceu:heavy_hsla_steel_beam',
+    F: 'gtceu:long_hsla_steel_rod',
+    W: 'cosmiccore:gilded_pthanterum_casing',
+  })
   event.shaped('gtceu:large_dryer', [
     'CBC',
     'DEF',
@@ -559,6 +599,26 @@ ServerEvents.recipes(event => {
     W: '#forge:tools/wrenches',
     H: '#forge:tools/hammers'
   })
+
+  event.recipes.gtceu.assembler('gtceu:nevramite_casing_assem')
+    .itemInputs(['cosmiccore:nevramite_frame', '6x cosmiccore:nevramite_plate'])
+    .itemOutputs('cosmiccore:bichromal_nevramite_casing')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  event.shaped('cosmiccore:bichromal_nevramite_casing', [
+    'AHA',
+    'AFA',
+    'AWA'
+  ], {
+    A: 'cosmiccore:nevramite_plate',
+    F: 'cosmiccore:nevramite_frame',
+    W: '#forge:tools/wrenches',
+    H: '#forge:tools/hammers'
+  });
+
+
   event.recipes.gtceu.assembler('gtceu:cyclozine_pipe_casing_assem')
     .itemInputs(['gtceu:rhenium_frame', '4x gtceu:europium_normal_fluid_pipe', '4x gtceu:synthetic_pthanterum_plate'])
     .itemOutputs('cosmiccore:cyclozine_chemically_repelling_pipe')

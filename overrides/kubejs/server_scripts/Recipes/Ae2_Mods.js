@@ -1039,7 +1039,12 @@ ServerEvents.recipes(event => {
     .itemOutputs('betterp2p:advanced_memory_card')
     .duration(400)
     .EUt(GTValues.VA[GTValues.EV])
-
+  //certus block
+  event.recipes.gtceu.compressor(`gtceu:certus_quartz_block`)
+    .itemInputs('4x gtceu:certus_quartz_gem')
+    .itemOutputs('gtceu:certus_quartz_block')
+    .duration(200)
+    .EUt(24);
 
 
 

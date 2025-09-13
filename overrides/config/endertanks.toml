@@ -12,11 +12,11 @@ full_stack_linking = true
 	#Items used to make the tanks team tanks
 	team = ["tag|forge:gems/emerald"]
 	#Items that apply a small storage capacity upgrade
-	small_capacity = ["minecraft:ender_pearl"]
+	small_capacity = ["gtceu:lv_field_generator"]
 	#Items that apply a large storage capacity upgrade
-	large_capacity = ["minecraft:ender_eye"]
+	large_capacity = ["gtceu:mv_field_generator"]
 	#Items that are used to increase the tanks internal transfer pump
-	pump = ["minecraft:piston"]
+	pump = ["gtceu:lv_electric_piston"]
 	#Items that apply a small storage capacity upgrade
 	#Each item can only be use once per tank
 	small_capacity_singleuse = []
@@ -44,7 +44,7 @@ full_stack_linking = true
 	small_capacity_upgrade = 8
 	#Capacity increased by large capacity upgrade items
 	#Range: 4 ~ 32
-	large_capacity_upgrade = 16
+	large_capacity_upgrade = 32
 
 [access_settings]
 	#Enables the usage of public tanks, if disabled tanks must be upgraded before use

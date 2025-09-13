@@ -39,12 +39,12 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletionChance(1)
         vein.depletedYield(200)
     })
-    event.add('gtceu:primordial_oil', vein => {
-        vein.dimensions('aether:the_aether')
-        vein.fluid(() => Fluid.of('gtceu:primordial_oil').fluid)
+    event.add('gtceu:liquid_shadows', vein => {
+        vein.dimensions('frontiers:the_deep_below')
+        vein.fluid(() => Fluid.of('gtceu:liquid_shadows').fluid)
         vein.weight(20)
-        vein.minimumYield(250)
-        vein.maximumYield(960)
+        vein.minimumYield(2500)
+        vein.maximumYield(20000)
         vein.depletionAmount(1)
         vein.depletionChance(1)
         vein.depletedYield(200)

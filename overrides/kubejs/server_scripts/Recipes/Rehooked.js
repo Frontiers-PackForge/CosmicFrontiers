@@ -1,7 +1,5 @@
 ServerEvents.recipes( event => {
 
-    //I didn't change wooden hook's recipe as it's meant to be made in start stage and should be treated like other wooden tools.
-    
     //iron_hook => steam
     event.remove({id: 'rehooked:iron_hook'})
     event.shaped('rehooked:iron_hook',[
@@ -66,10 +64,10 @@ ServerEvents.recipes( event => {
         'R H'
     ],{
         H: 'rehooked:iron_hook',
-        P: 'gtceu:kanthal_rod',
+        P: 'gtceu:galvanized_ethersteel_rod',
         R: 'minecraft:redstone_block'
     })
-    //ender_hook => MV
+    //ender_hook => HV
     event.remove({id: 'rehooked:ender_hook'})
     event.shaped('rehooked:ender_hook',[
         'ESE',

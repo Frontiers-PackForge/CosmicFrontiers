@@ -23,7 +23,12 @@
     .duration(290)
     .EUt(GTValues.VA[GTValues.ZPM]);
 
-
+  event.recipes.gtceu.plasmite_forge('frontiers:neutronium_plasmite_forging')
+    .itemInputs(['cosmiccore:neutronite_dust', '4x cosmiccore:echon', '4x cosmiccore:esson'])
+    .inputFluids('gtceu:neutronium 2304','gtceu:ghost_matter_plasma 3200')
+    .itemOutputs('gtceu:neutronium_plasmites','4x cosmiccore:chronia', '4x cosmiccore:tessaron')
+    .duration(290)
+    .EUt(GTValues.VA[GTValues.ZPM]);
 
   })
   

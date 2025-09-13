@@ -84,6 +84,8 @@ ServerEvents.tags('fluid', event => {
   event.remove('ad_astra:fuel', `ad_astra:fuel`)
   event.remove('ad_astra:fuel', `ad_astra:cryo_fuel`)
   event.remove(`forge:oxygen`, 'ad_astra:oxygen')
+  event.remove(`forge:water`, 'blasmatech:mana')
+  event.remove(`minecraft:water`, 'blasmatech:mana')
   event.remove(`forge:hydrogen`, 'ad_astra:hydrogen')
   event.remove(`forge:oil`, 'ad_astra:oil')
   event.remove(`forge:virtue_meld`, 'cosmiccore:virtue_meld')
