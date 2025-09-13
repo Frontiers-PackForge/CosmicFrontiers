@@ -511,14 +511,14 @@
 				item: "gtceu:extreme_combustion_engine"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -8.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["493D3AD6435FA70F"]
 			id: "4C5594EAE0D1F1C8"
 			shape: "hexagon"
-			size: 1.0d
+			size: 1.25d
 			subtitle: "The Age of Fusio- Wait no...?"
 			tasks: [{
 				id: "2ECF137DAE81F679"
@@ -544,7 +544,7 @@
 				item: "cosmiccore:naquahine_pressure_reactor"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -6.5d
 			y: 3.0d
 		}
 		{
@@ -566,14 +566,14 @@
 				item: "cosmiccore:iv_naquahine_mini_reactor"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 4.0d
+			x: -6.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4C5594EAE0D1F1C8"]
 			id: "7C04FB1E15ACCE47"
 			shape: "hexagon"
-			size: 1.0d
+			size: 1.25d
 			subtitle: "TODO"
 			tasks: [{
 				id: "2B0BB2E1016867CA"
@@ -581,7 +581,7 @@
 				type: "item"
 			}]
 			x: -11.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4C5594EAE0D1F1C8"]
@@ -601,7 +601,7 @@
 				item: "gtceu:naquahine_superfuel_mk_one_bucket"
 				type: "item"
 			}]
-			x: -12.0d
+			x: -12.5d
 			y: 3.0d
 		}
 		{
@@ -639,8 +639,8 @@
 				item: "gtceu:naquahine_superfuel_mk_two_bucket"
 				type: "item"
 			}]
-			x: -12.0d
-			y: 4.0d
+			x: -12.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1E224019910AE6C7"]
@@ -703,6 +703,81 @@
 			}]
 			x: -13.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["4C5594EAE0D1F1C8"]
+			id: "40C3B613782E1621"
+			shape: "hexagon"
+			tasks: [{
+				id: "7C10FB254B4655F2"
+				item: "cosmiccore:ludicrous_combustion_engine_cc"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7C04FB1E15ACCE47"]
+			id: "10ADB3522527C780"
+			shape: "hexagon"
+			tasks: [{
+				id: "52B6AC2CF2842E21"
+				item: "cosmiccore:ultimate_combustion_engine_cc"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["274FD4B3DB57A8AF"]
+			id: "1C1AEB7ED8400B11"
+			shape: "hexagon"
+			subtitle: "The King of Midgame"
+			tasks: [{
+				id: "6F2B99DD32BECD5C"
+				item: "cosmiccore:vorax_reactor"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7C04FB1E15ACCE47"]
+			id: "274FD4B3DB57A8AF"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "560EAD1CC8EF56F9"
+				item: "gtceu:uv_machine_hull"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["274FD4B3DB57A8AF"]
+			id: "66EB35C81F46C2B0"
+			shape: "hexagon"
+			tasks: [{
+				id: "3D2655898627A626"
+				item: "gtceu:homeward_resin_plasma_bucket"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["274FD4B3DB57A8AF"]
+			id: "4AA00DBA651653F9"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "7B7CB4644CEDADA2"
+				item: "gtceu:uhv_machine_hull"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 7.5d
 		}
 	]
 	title: "&fPower and Multiblocks"

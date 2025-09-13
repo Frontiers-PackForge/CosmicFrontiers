@@ -98,6 +98,8 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["729E3A063736105A"]
+			hide_dependency_lines: true
 			id: "2D2FEAAD9A788F11"
 			tasks: [{
 				id: "22CCDDBC3B42C2D2"
@@ -1056,7 +1058,7 @@
 				type: "item"
 			}]
 			title: "Bedrock Soot"
-			x: 3.0d
+			x: 2.0d
 			y: -6.0d
 		}
 		{
@@ -1172,17 +1174,17 @@
 			y: -16.0d
 		}
 		{
-			dependencies: [
-				"08F74C6D9455DA3F"
-				"32EBF6A2431F7A81"
-			]
+			dependencies: ["08F74C6D9455DA3F"]
 			id: "5A88249574FA8C51"
+			shape: "hexagon"
+			subtitle: "Honey Comb Insulation"
 			tasks: [{
 				id: "386C0FFF283062E1"
 				item: "gtceu:enriched_naquadah_trinium_europium_duranide_alve_foil_insulator"
 				type: "item"
 			}]
-			x: 4.0d
+			title: "Alvefoil"
+			x: 5.0d
 			y: -13.0d
 		}
 		{
@@ -1240,14 +1242,17 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["166FACA43B1432B3"]
+			dependencies: [
+				"166FACA43B1432B3"
+				"7144C60B4704D89D"
+			]
 			id: "56B559C6F5323B72"
 			tasks: [{
 				id: "25E32646CC1741EB"
 				item: "gtceu:bedrock_soot_solution_bucket"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 4.0d
 			y: -6.0d
 		}
 		{
@@ -1530,7 +1535,7 @@
 				item: "cosmiccore:ultradense_infinity_plate"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.0d
 			y: -16.0d
 		}
 		{
@@ -1567,25 +1572,22 @@
 			y: -13.5d
 		}
 		{
-			dependencies: ["16EB487F86BF58E0"]
+			dependencies: ["63AD917A66644A39"]
+			description: [
+				"Hi this is a duplicate quest to make the QB look more structured."
+				""
+				"you know the drill, go get some water and take care of yourself."
+			]
+			hide_dependency_lines: true
+			icon: "cosmiccore:lunar_sheer_hammer"
 			id: "08F74C6D9455DA3F"
+			shape: "rsquare"
+			subtitle: "BWAH"
 			tasks: [{
-				id: "1C05888A8029872C"
-				item: "cosmiccore:lunar_sheer_hammer"
-				type: "item"
+				id: "499BDE931F7E7EE2"
+				type: "checkmark"
 			}]
 			x: 8.5d
-			y: -13.0d
-		}
-		{
-			dependencies: ["055810D03A9249E8"]
-			id: "16EB487F86BF58E0"
-			tasks: [{
-				id: "105239A4E30E568E"
-				title: "Glossy Seaborgium Casing"
-				type: "custom"
-			}]
-			x: 14.0d
 			y: -13.0d
 		}
 		{
@@ -1651,17 +1653,6 @@
 			y: -11.5d
 		}
 		{
-			dependencies: ["08F74C6D9455DA3F"]
-			id: "32EBF6A2431F7A81"
-			tasks: [{
-				id: "369A788832D6CFB3"
-				item: "kubejs:naquadria_resonantion_charge"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -14.0d
-		}
-		{
 			dependencies: ["2A34B8F3D5A6C7BB"]
 			hide_dependency_lines: true
 			id: "2E3214F7161CA189"
@@ -1689,7 +1680,7 @@
 				item: "cosmiccore:void_miner"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: -3.0d
 		}
 		{
@@ -1775,8 +1766,7 @@
 			y: -18.0d
 		}
 		{
-			dependencies: ["729E3A063736105A"]
-			hide_dependency_lines: true
+			dependencies: ["63AD917A66644A39"]
 			id: "4DB8FD24F1E67BE3"
 			subtitle: "Midnight Stars"
 			tasks: [{
@@ -1789,7 +1779,10 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["23DBF1B5344256C9"]
+			dependencies: [
+				"23DBF1B5344256C9"
+				"3F8968E9F09F0106"
+			]
 			id: "5D3ECF60ECEC3248"
 			shape: "hexagon"
 			size: 1.5d
@@ -2059,7 +2052,7 @@
 				item: "create:shadow_steel"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -6.5d
 			y: -4.0d
 		}
 		{
@@ -2087,8 +2080,8 @@
 				type: "item"
 			}]
 			title: "Nevramite The Cheap Way"
-			x: -4.0d
-			y: -2.0d
+			x: -8.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["482FC79E15210C24"]
@@ -2173,14 +2166,40 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["3F8968E9F09F0106"]
 			id: "5017A3A8755FFADD"
 			tasks: [{
 				id: "379291B292713CF1"
 				item: "create:shadow_steel_casing"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4043F8ECA792A3A2"]
+			id: "7144C60B4704D89D"
+			tasks: [{
+				id: "07FDAAF20C8366BA"
+				item: "gtceu:shaded_bedrock_oil_bucket"
+				type: "item"
+			}]
+			x: 4.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			hide_dependency_lines: true
+			id: "63AD917A66644A39"
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [{
+				id: "1FF2363AE60F6031"
+				item: "cosmiccore:lunar_sheer_hammer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.0d
 		}
 	]
 	title: "Soulforging - [&3UV&7]"
