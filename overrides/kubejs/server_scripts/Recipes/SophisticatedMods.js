@@ -129,6 +129,8 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'ironchest:gold_to_diamond_chest_upgrade' })
   event.remove({ output: 'ironchest:diamond_to_crystal_chest_upgrade' })
   event.remove({ output: 'ironchest:diamond_to_obsidian_chest_upgrade' })
+  event.remove({ output: 'usefulbackpacks:backpack_small' })
+  event.remove({ output: 'usefulbackpacks:backpack_medium' })
   event.remove({ output: 'usefulbackpacks:backpack_large' })
 
   event.shaped('ironchest:copper_chest', [
