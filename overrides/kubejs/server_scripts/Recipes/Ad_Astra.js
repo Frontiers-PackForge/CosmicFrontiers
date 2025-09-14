@@ -454,6 +454,11 @@ ServerEvents.recipes(event => {
     'ad_astra:steel_rod',
     'gtceu:steel_rod'
   )
+  event.replaceInput(
+    { id: 'ad_astra:iron_sliding_door' },
+    '#ad_astra:steel_blocks',
+    'minecraft:iron_block'
+  )
 })
 
 
