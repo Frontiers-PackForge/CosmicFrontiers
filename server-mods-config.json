@@ -1,5 +1,6 @@
 {
   "blacklist": [
+    {"name": "Better Smithing UI", "id": 875744},
     {"name": "Colorful Hearts", "id": 854213},
     {"name": "Controlling", "id": 250398},
     {"name": "Ding", "id": 231275},
@@ -10,8 +11,11 @@
     {"name": "Euphoria Patcher", "id": 915902},
     {"name": "Extreme Sound Muffler", "id": 363363},
     {"name": "FancyMenu", "id": 367706},
+    {"name": "Forgematica", "id": 912441},
+    {"name": "Forgematica Printer", "id": 1223456},
     {"name": "ImmediatelyFast", "id": 686911},
     {"name": "JourneyMap Integration", "id": 525447},
+    {"name": "MaFgLib", "id": 910766},
     {"name": "Mod Name Tooltip", "id": 238747},
     {"name": "Oculus", "id": 581495},
     {"name": "Ok Zoomer", "id": 631278},
@@ -21,13 +25,9 @@
     {"name": "Sodium Extras", "id": 558905},
     {"name": "Sodium Options API", "id": 1103431},
     {"name": "Sound Physics Remastered", "id": 535489},
+    {"name": "Subtle Effects", "id": 1023913}
     {"name": "Tips", "id": 306549},
-    {"name": "Better Smithing UI", "id": 875744},
-    {"name": "Forgematica", "id": 912441},
-    {"name": "Forgematica Printer", "id": 1223456},
-    {"name": "MaFgLib", "id": 910766},
     {"name": "World Preview", "id": 891429},
-    {"name": "A Campfire", "id": 1023913}
   ],
   "manual_download": [
   ],
