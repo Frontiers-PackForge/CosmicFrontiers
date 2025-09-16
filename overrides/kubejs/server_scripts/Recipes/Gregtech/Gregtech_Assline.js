@@ -969,6 +969,19 @@ ServerEvents.recipes(event => {
       .CWUt(250, 1500000)
       .EUt(GTValues.VA[GTValues.ZPM]))
     .EUt(GTValues.VA[GTValues.ZPM])
+  event.recipes.gtceu.assembly_line('frontiers:heavy_frost_casing')
+    .itemInputs(['4x gtceu:aluminium_modular_shelling', '4x gtceu:heavy_aluminium_beam', 'gtceu:ultradense_aluminium_plate', 'gtceu:ultradense_aluminium_plate', 'gtceu:ultradense_aluminium_plate', 'gtceu:ultradense_aluminium_plate'])
+    .itemOutputs('cosmiccore:heavy_frost_proof_casing')
+    .inputFluids(
+      'gtceu:high_grade_solder 2304',
+      'gtceu:neoprene 576',
+    )
+    .duration(240)
+    .stationResearch(b => b
+      .researchStack('gtceu:frostproof_machine_casing')
+      .CWUt(450, 5500000)
+      .EUt(GTValues.VA[GTValues.UV]))
+    .EUt(GTValues.VA[GTValues.UV])
 
   event.remove({ id: 'gtceu:assembly_line/electric_motor_uv' })
   event.remove({ id: 'gtceu:assembly_line/electric_piston_uv' })

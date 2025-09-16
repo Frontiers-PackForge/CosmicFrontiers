@@ -582,7 +582,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xdb3dff)
         .liquid()
     event.create('refined_primordial_oil')
-        .color(0xdb3dff)
+        .color(0xad5953)
         .liquid()
     event.create('thick_primordial_oil')
         .color(0xdb3dff)

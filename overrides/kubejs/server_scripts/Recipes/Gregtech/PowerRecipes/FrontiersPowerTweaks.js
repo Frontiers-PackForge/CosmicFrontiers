@@ -25,6 +25,24 @@ ServerEvents.recipes(event => {
     .duration(20)
     .EUt(-3750000, 64)
 
+  event.remove({ id: 'gtceu:combustion_generator/naphtha' })
+  event.recipes.gtceu.combustion_generator('worse_naphtha')
+    .inputFluids('gtceu:naphtha 1')
+    .duration(6)
+    .EUt(-GTValues.V[GTValues.LV])
+
+
+
+  //NBZ has power density cut by about 40% 
+  //Still insanely strong for the volume and this is a trial run of what CEU's nerfs will look like
+  event.remove({ id: 'gtceu:gas_turbine/nitrobenzene' })
+  event.recipes.gtceu.combustion_generator('worse_nitrobenzene')
+    .inputFluids('gtceu:nitrobenzene 1')
+    .duration(25)
+    .EUt(-GTValues.V[GTValues.LV])
+
+
+
 })
 
 

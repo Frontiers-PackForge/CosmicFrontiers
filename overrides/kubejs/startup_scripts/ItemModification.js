@@ -2,60 +2,60 @@ const $UUID = Java.loadClass("java.util.UUID");
 let uuid = $UUID.randomUUID();
 
 ItemEvents.modification(event => {
-    food('kubejs:cosmic_meatballs', 1000000, 1000000)    
-    food('legendarysurvivaloverhaul:apple_juice',9, 1)
-    food('legendarysurvivaloverhaul:beetroot_juice', 2, 0.9)
-    food('legendarysurvivaloverhaul:cactus_juice', 6, 0.9)
-    food('legendarysurvivaloverhaul:carrot_juice', 6, 0.9)
-    food('legendarysurvivaloverhaul:chorus_fruit_juice', 8, 0.9)
-    food('legendarysurvivaloverhaul:glistering_melon_juice', 6, 1)
-    food('legendarysurvivaloverhaul:golden_apple_juice', 8, 2.5)
-    food('legendarysurvivaloverhaul:golden_carrot_juice', 13.5, 2.5)
-    food('legendarysurvivaloverhaul:melon_juice', 4.5, 1)
-    food('legendarysurvivaloverhaul:pumpkin_juice', 6, 0.5)
-    food('croptoia:ravioli', 3, 0.9)
+    // food('kubejs:cosmic_meatballs', 1000000, 1000000)    
+    // food('legendarysurvivaloverhaul:apple_juice',9, 1)
+    // food('legendarysurvivaloverhaul:beetroot_juice', 2, 0.9)
+    // food('legendarysurvivaloverhaul:cactus_juice', 6, 0.9)
+    // food('legendarysurvivaloverhaul:carrot_juice', 6, 0.9)
+    // food('legendarysurvivaloverhaul:chorus_fruit_juice', 8, 0.9)
+    // food('legendarysurvivaloverhaul:glistering_melon_juice', 6, 1)
+    // food('legendarysurvivaloverhaul:golden_apple_juice', 8, 2.5)
+    // food('legendarysurvivaloverhaul:golden_carrot_juice', 13.5, 2.5)
+    // food('legendarysurvivaloverhaul:melon_juice', 4.5, 1)
+    // food('legendarysurvivaloverhaul:pumpkin_juice', 6, 0.5)
+    // food('croptoia:ravioli', 3, 0.9)
 
-    snackFood('gtceu:basic_electronic_circuit', 6, 0.8, true)
-    snackFood('gtceu:micro_processor', 2, 0.3, true)
-    snackFood('gtceu:nano_processor', 4, 0.4, true)
-    snackFood('gtceu:quantum_processor', 6, 0.6, true)
-    snackFood('gtceu:crystal_processor', 8, 0.7, true)
-    snackFood('gtceu:wetware_processor', 10, 0.8, true)
-    snackFood('cosmiccore:harmonic_processor', 12, 0.9, true)
-    snackFood('cosmiccore:optical_processor', 14, 1.0, true)
-    snackFood('cosmiccore:suelescent_processor', 16, 1.0, true)
-    snackFood('cosmiccore:akashic_processor', 18, 1.0, true)
-    snackFood('cosmiccore:eschaton_processor', 20, 1.0, true)
+    // snackFood('gtceu:basic_electronic_circuit', 6, 0.8, true)
+    // snackFood('gtceu:micro_processor', 2, 0.3, true)
+    // snackFood('gtceu:nano_processor', 4, 0.4, true)
+    // snackFood('gtceu:quantum_processor', 6, 0.6, true)
+    // snackFood('gtceu:crystal_processor', 8, 0.7, true)
+    // snackFood('gtceu:wetware_processor', 10, 0.8, true)
+    // snackFood('cosmiccore:harmonic_processor', 12, 0.9, true)
+    // snackFood('cosmiccore:optical_processor', 14, 1.0, true)
+    // snackFood('cosmiccore:suelescent_processor', 16, 1.0, true)
+    // snackFood('cosmiccore:akashic_processor', 18, 1.0, true)
+    // snackFood('cosmiccore:eschaton_processor', 20, 1.0, true)
 
-    function snackFood(foodItem, hunger, saturation, isSnack) {
-      event.modify(foodItem, item => {
-        item.foodProperties = food => {
-            food.hunger(hunger)
-            food.saturation(saturation)
-            food.fastToEat(isSnack)
-        }
-      })
-    }
+    // function snackFood(foodItem, hunger, saturation, isSnack) {
+    //   event.modify(foodItem, item => {
+    //     item.foodProperties = food => {
+    //         food.hunger(hunger)
+    //         food.saturation(saturation)
+    //         food.fastToEat(isSnack)
+    //     }
+    //   })
+    // }
 
-    function food(foodItem, hunger, saturation) {
-      event.modify(foodItem, item => {
-        item.foodProperties = food => {
-            food.hunger(hunger)
-            food.saturation(saturation)
-            food.fastToEat(false)
-        }
-      })
-    }
+    // // function food(foodItem, hunger, saturation) {
+    // //   event.modify(foodItem, item => {
+    // //     item.foodProperties = food => {
+    // //         food.hunger(hunger)
+    // //         food.saturation(saturation)
+    // //         food.fastToEat(false)
+    // //     }
+    // //   })
+    // // }
 
-    function foodWithEffect(foodItem, hunger, saturation, effectId, effectDuration, effectAmplifier, effectChance) {
-      event.modify(foodItem, item => {
-        item.foodProperties = food => {
-            food.hunger(hunger)
-            food.saturation(saturation)
-            food.effect(effectId, effectDuration, effectAmplifier, effectChance)
-        }
-      })
-    }
+    // function foodWithEffect(foodItem, hunger, saturation, effectId, effectDuration, effectAmplifier, effectChance) {
+    //   event.modify(foodItem, item => {
+    //     item.foodProperties = food => {
+    //         food.hunger(hunger)
+    //         food.saturation(saturation)
+    //         food.effect(effectId, effectDuration, effectAmplifier, effectChance)
+    //     }
+    //   })
+    // }
 })
 
 ItemEvents.armorTierRegistry(event => {

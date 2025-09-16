@@ -22,28 +22,28 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 
     event.create('hadalite_sludge') //Mixture of Thallium, Sulfates, and Obsidian Dust - Gross
-        .formula('Tl2S3(MgFeSi3O4)4(H20)')
+        .formula('Tl2S3(MgFeSi2O4)4(H20)')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
     event.create('sparkling_hadalite') //Add Carbonation to get rid of the Sulfates
-        .formula('Tl2(HCO3)6(MgFeSi3O4)4(H2O)')
+        .formula('Tl2(HCO3)6(MgFeSi2O4)4(H2O)')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
     event.create('rubidine_froth') //Rubidium Precursor and has more sulfates again due to higher quality extraction methods.
-        .formula('RuS32(H2O)')
+        .formula('RuS3(H2O)')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
     event.create('excited_hadalite') //Remove the Obsidian, blast the fuck with lasers, the latent holmium isn't happy
         .formula('Tl2S3')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
     event.create('holmium_slush_mixture') // Mix Supercoolant, Ice, and Holmium Flakes/Ore
-        .formula('')
+        .formula('[HoCaS3][H20]')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-    event.create('holmium_rubidium_colloid') // Mixture of Rubidium Supercoolant and Holmium Slush
-        .formula('[RuHo]/H20')
+    event.create('holmium_rubidium_colloid_with_supercoolant') // Mixture of Rubidium Supercoolant and Holmium Slush
+        .formula('([RbHo]/H20)(LiNa(BeF2)2(AlF3)(AuF3))')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
     event.create('holmium_solution') // Stable Solution of unchilled Holium Particles in water
-        .formula('(H20)Ho')
+        .formula('Ho(H20)')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
     event.create('tauin_hexafluoroholmate') // Mixing Trinavine Plasmites, Fluorine and Holmium Solution sticks the holmium to the plasmites
         .dust()
@@ -53,10 +53,40 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()                    // get the pure metals back as Trinavine is too valuable to waste
         .formula('F6Ho')
         .color(0xad5569)
-    event.create('aerofluoride_liquid_glass_supercoolant') //TODO: How to Rubidium. Was going to do components but uh... No.
+
+    //Create enough of a crystal network to help keep it from freezing
+    event.create('liquid_glass_supercoolant') //TODO: How to Rubidium. Was going to do components but uh... No.
         .liquid()
-        .formula('Rb3LiNa(BeF2)2(AlF3)(AuF3)')
+        .formula('LiNa(BeF2)2(AlF3)(AuF3)')
         .color(0x99082a)
+    event.create('rubidium_doped_liquid_glass_supercoolant') //TODO: How to Rubidium. Was going to do components but uh... No.
+        .liquid()
+        .formula('LiNa(BeF2)2(AlF3)(AuF3)')
+        .color(0x99082a)
+
+    event.create('hot_fluornated_beryllate')
+        .liquid()
+        .formula('LiNa(BeF2)2')
+        .color(0x7af9b3)
+
+    event.create('beryllium_fluoride')
+        .liquid()
+        .formula('BeF2')
+        .color(0x5fc791).secondaryColor(0x2f574b)
+    event.create('beryllium_oxide')
+        .dust()
+        .formula('BeO')
+        .color(0x73d73d).secondaryColor(0x2f574b)
+
+
+
+
+
+    event.create('rubidine_honey')
+        .liquid()
+        .formula('Rb(?)')
+        .color(0xad5569)
+
 
 
     event.create('rubidine_extraction_rosin')

@@ -112,7 +112,7 @@
 		{
 			dependencies: [
 				"2D2FEAAD9A788F11"
-				"08F74C6D9455DA3F"
+				"72D3D7AA1239F8D1"
 			]
 			id: "27507A35114E29AC"
 			tasks: [{
@@ -135,29 +135,23 @@
 			y: -18.0d
 		}
 		{
-			dependencies: ["729E3A063736105A"]
+			dependencies: [
+				"41D6062B5A1485FC"
+				"26313B90F718378F"
+				"5A80D8880B005FF4"
+				"002781F4A495B329"
+				"315B333E617513CF"
+			]
 			id: "66C6D44F64D58727"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "770A8AB76D0CE256"
 				item: "cosmiccore:temmerite_ingot"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"729E3A063736105A"
-				"255575546A89D103"
-			]
-			id: "674A9D3C2507C044"
-			tasks: [{
-				id: "71652E541CEFB46D"
-				item: "gtceu:rubidium_ingot"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 3.5d
+			x: 18.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -329,6 +323,7 @@
 		}
 		{
 			dependencies: ["6966ADADA86CBCC4"]
+			hide_dependency_lines: true
 			id: "599804BD824DC5D8"
 			tasks: [{
 				id: "134F17CBED9DF8B5"
@@ -735,12 +730,12 @@
 		{
 			dependencies: [
 				"29DC4D01FB155CCC"
-				"4C895CF182CF568E"
+				"79AED8686EBD940E"
 			]
 			id: "06E9A4E56E403733"
 			tasks: [{
-				id: "6E8E6E1DE8D032FB"
-				item: "gtceu:holmium_rubidium_colloid_bucket"
+				id: "4DCCC4D8663A1E15"
+				item: "gtceu:holmium_rubidium_colloid_with_supercoolant_bucket"
 				type: "item"
 			}]
 			x: 8.0d
@@ -793,6 +788,8 @@
 		{
 			dependencies: ["36963640FA14DD0C"]
 			id: "715D6991C92A7DD2"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "76976D01A12AE201"
 				item: "gtceu:thallium_dust"
@@ -801,30 +798,6 @@
 			title: "Easy Extraction : Thallium"
 			x: 5.0d
 			y: 1.5d
-		}
-		{
-			dependencies: ["729E3A063736105A"]
-			hide_dependency_lines: true
-			id: "75672FA5E11773C1"
-			tasks: [{
-				id: "3B5B482E0389FA27"
-				item: "gtceu:indium_plasmites"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["75672FA5E11773C1"]
-			id: "255575546A89D103"
-			tasks: [{
-				id: "1B3E20311F63F416"
-				item: "gtceu:rubidium_dust"
-				type: "item"
-			}]
-			title: "Hard Extraction : Rubidium"
-			x: 8.0d
-			y: 3.5d
 		}
 		{
 			dependencies: ["06E9A4E56E403733"]
@@ -849,19 +822,10 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["674A9D3C2507C044"]
-			id: "78D7DC10F57D363E"
-			tasks: [{
-				id: "5AD58C1AFFD8D2A1"
-				item: "cosmiccore:vibrant_rubidium_casing"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 3.5d
-		}
-		{
 			dependencies: ["78D10E0AFA1D1E52"]
 			id: "1941E698806C576E"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "23C0117A713D06C4"
 				item: "gtceu:holmium_ingot"
@@ -881,17 +845,6 @@
 			}]
 			x: 5.0d
 			y: -1.5d
-		}
-		{
-			dependencies: ["255575546A89D103"]
-			id: "4C895CF182CF568E"
-			tasks: [{
-				id: "7DF2640C6300B712"
-				item: "gtceu:aerofluoride_liquid_glass_supercoolant_bucket"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -953,8 +906,8 @@
 			]
 			id: "1677F8470F3A44FA"
 			tasks: [{
-				id: "7464973296A0CDFD"
-				item: "gtceu:aerofluoride_liquid_glass_supercoolant_bucket"
+				id: "290F73834A22AC40"
+				item: "gtceu:waste_medelevium_fuel_salt_bucket"
 				type: "item"
 			}]
 			title: "ionized_hadalite_waste"
@@ -1115,8 +1068,8 @@
 			dependencies: ["6F2267A343C5000B"]
 			id: "3FCCA2B19F736BA1"
 			tasks: [{
-				id: "522983DA279524D9"
-				item: "minecraft:oak_log"
+				id: "534A8842E4D8B943"
+				item: "gtceu:pure_basaltic_mineral_sand_dust"
 				type: "item"
 			}]
 			title: "Clumped Waste Metals"
@@ -1174,7 +1127,7 @@
 			y: -16.0d
 		}
 		{
-			dependencies: ["08F74C6D9455DA3F"]
+			dependencies: ["72D3D7AA1239F8D1"]
 			id: "5A88249574FA8C51"
 			shape: "hexagon"
 			subtitle: "Honey Comb Insulation"
@@ -1539,7 +1492,7 @@
 			y: -16.0d
 		}
 		{
-			dependencies: ["08F74C6D9455DA3F"]
+			dependencies: ["72D3D7AA1239F8D1"]
 			id: "1BA89E5BDE25C2DE"
 			tasks: [{
 				id: "6DC5802E40A051D1"
@@ -1570,25 +1523,6 @@
 			}]
 			x: -10.0d
 			y: -13.5d
-		}
-		{
-			dependencies: ["63AD917A66644A39"]
-			description: [
-				"Hi this is a duplicate quest to make the QB look more structured."
-				""
-				"you know the drill, go get some water and take care of yourself."
-			]
-			hide_dependency_lines: true
-			icon: "cosmiccore:lunar_sheer_hammer"
-			id: "08F74C6D9455DA3F"
-			shape: "rsquare"
-			subtitle: "BWAH"
-			tasks: [{
-				id: "499BDE931F7E7EE2"
-				type: "checkmark"
-			}]
-			x: 8.5d
-			y: -13.0d
 		}
 		{
 			dependencies: [
@@ -1641,7 +1575,7 @@
 		{
 			dependencies: [
 				"60E302A72B5CCD13"
-				"08F74C6D9455DA3F"
+				"72D3D7AA1239F8D1"
 			]
 			id: "26B490867C52BE00"
 			tasks: [{
@@ -1898,8 +1832,8 @@
 			shape: "octagon"
 			size: 1.5d
 			tasks: [{
-				id: "61B825E3B14C27B1"
-				item: "cosmiccore:heavy_assembler"
+				id: "6DC6BFC135BE7A18"
+				item: "cosmiccore:submerged_welder"
 				type: "item"
 			}]
 			x: 15.5d
@@ -2193,6 +2127,7 @@
 			id: "63AD917A66644A39"
 			shape: "rsquare"
 			size: 2.0d
+			subtitle: "Compress the World, Shear the Sky"
 			tasks: [{
 				id: "1FF2363AE60F6031"
 				item: "cosmiccore:lunar_sheer_hammer"
@@ -2200,6 +2135,184 @@
 			}]
 			x: 2.5d
 			y: -8.0d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			hide_dependency_lines: true
+			id: "72D3D7AA1239F8D1"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "7906C9C16AECE985"
+				item: "cosmiccore:lunar_sheer_hammer"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"4CF34CFEFA852F2D"
+				"7E2FA41C01816E1D"
+			]
+			id: "32B37FF27D50965D"
+			tasks: [{
+				id: "0C603370F0E6E043"
+				item: "gtceu:rubidine_froth_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6491F28510DF07E0"
+				"1DECB94387046DF6"
+			]
+			id: "79AED8686EBD940E"
+			tasks: [{
+				id: "277D9B90E3650FE2"
+				item: "gtceu:rubidium_doped_liquid_glass_supercoolant_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			id: "6491F28510DF07E0"
+			tasks: [{
+				id: "1E17517875EB63A0"
+				item: "gtceu:liquid_glass_supercoolant_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["06E9A4E56E403733"]
+			id: "290316514E0D3BD5"
+			shape: "gear"
+			tasks: [{
+				id: "3CA917470AFF4F58"
+				item: "gtceu:liquid_glass_supercoolant_bucket"
+				type: "item"
+			}]
+			title: "You get your coolants back!"
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["09E9AD02604929C0"]
+			id: "1DECB94387046DF6"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "12FA5E01733149A9"
+				item: "gtceu:rubidium_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["32B37FF27D50965D"]
+			id: "09E9AD02604929C0"
+			tasks: [{
+				id: "746B1B6E8859FD6F"
+				item: "gtceu:rubidine_honey_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			id: "7E2FA41C01816E1D"
+			tasks: [{
+				id: "35AF95DB9581C097"
+				item: "gtceu:rubidine_extraction_rosin_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1941E698806C576E"]
+			id: "5948078CB5B7166B"
+			tasks: [{
+				id: "600AE3B36A8F55A7"
+				type: "custom"
+			}]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			hide_dependency_lines: true
+			id: "315B333E617513CF"
+			tasks: [{
+				id: "212CE5636805DDF4"
+				item: "cosmiccore:tenaebrum"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			hide_dependency_lines: true
+			id: "41D6062B5A1485FC"
+			tasks: [{
+				id: "10F8B3446AD5FA11"
+				item: "cosmiccore:seraphon"
+				type: "item"
+			}]
+			x: 17.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			hide_dependency_lines: true
+			id: "002781F4A495B329"
+			tasks: [{
+				id: "614AFF1723920CBA"
+				item: "cosmiccore:crystala"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			hide_dependency_lines: true
+			id: "26313B90F718378F"
+			tasks: [{
+				id: "584C02AC2FA9F9C7"
+				item: "cosmiccore:tessaron"
+				type: "item"
+			}]
+			x: 19.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5948078CB5B7166B"]
+			id: "5A80D8880B005FF4"
+			tasks: [{
+				id: "6090C66458C2FC45"
+				type: "custom"
+			}]
+			x: 18.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			id: "4CF34CFEFA852F2D"
+			tasks: [{
+				id: "4C17F7BAE7908774"
+				item: "gtceu:naumannite_dust"
+				type: "item"
+			}]
+			x: 1.3214285714285623d
+			y: 1.982142857142854d
 		}
 	]
 	title: "Soulforging - [&3UV&7]"

@@ -14,7 +14,7 @@
 		Count: 1
 		id: "ftbquests:custom_icon"
 		tag: {
-			Icon: "frontiers:textures/questimages/firststeps/frontiers.png"
+			Icon: "frontiers:textures/questimages/firststeps/frontiers32x.png"
 		}
 	}
 	lock_message: ""

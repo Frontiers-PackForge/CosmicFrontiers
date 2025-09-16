@@ -1,5 +1,5 @@
 
 [logbegone]
-	regex = ["Disconnecting VANILLA connection attempt", "Channels "]
-	phrases = ["Disconnecting VANILLA connection attempt", "Channels "]
+	regex = ["Disconnecting VANILLA connection attempt", "Channels ", "ConcurrentModificationException ", " ConcurrentModificationException", "BREW_REGISTRY", "Error parsing recipe ", "No key duration in MapLike ", " falling back to sync saving", "Failed to execute ", "loot_tables ", " loot_tables", " load tag", "CheckedThreadLocalRandom", "FileNotFoundException", "NoSuchMethodException", "Failed to load model", " Failed to load model ", " Failed to load model", "Failed to load model ", " ThreadLocalRandom ", "ThreadLocalRandom ", " ThreadLocalRandom"]
+	phrases = ["Disconnecting VANILLA connection attempt", "Channels ", "ConcurrentModificationException ", " ConcurrentModificationException", "BREW_REGISTRY", "Error parsing recipe ", "No key duration in MapLike", " falling back to sync saving", "Failed to execute ", "loot_tables ", " loot_tables", " load tag", "CheckedThreadLocalRandom", "FileNotFoundException", "NoSuchMethodException", "Failed to load model"]
 

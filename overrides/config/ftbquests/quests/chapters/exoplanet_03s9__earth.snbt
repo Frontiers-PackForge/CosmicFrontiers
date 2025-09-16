@@ -844,8 +844,8 @@
 				type: "checkmark"
 			}]
 			title: "Need a Light?"
-			x: 7.5d
-			y: 7.0d
+			x: 8.0d
+			y: 7.5d
 		}
 		{
 			description: [
@@ -871,6 +871,68 @@
 			title: "Changes from 0.6.0 -> 0.7.0"
 			x: 4.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"Chunky is a mod that allows you to 'pregen' your worlds, effectively generating all chunks in a radius."
+				""
+				"check out the /chunky command to get started"
+				""
+				"notably you'll want to set /chunky center and /chunky radius [xrad] [zrad]"
+				""
+				"start pre-gen via /chunky start"
+				""
+				""
+				"This process may take some time depending on hardware, but is recommended to do before exploring"
+				""
+				""
+				""
+				"General other tips that help with worldgen lag"
+				"- Use a world Border (set chunky radius to the world border)"
+				"- Pregen everything inside the worldborder"
+				""
+				""
+				"If you are experience performance problems that seem abnormal, please reach out to me on discord."
+			]
+			icon: "gtceu:overworld_marker"
+			id: "35BC4EDD34F49C5D"
+			min_width: 450
+			shape: "rsquare"
+			subtitle: "Recommended prior to Exploration"
+			tasks: [{
+				id: "3BABA51DAD7B142A"
+				title: "Chunky - Pregenerating Worlds"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"C2ME uses extra computer resources to async load your world."
+				""
+				"What does this mean?"
+				"Computer use more resource to make the worldgen go faster*"
+				""
+				"(*In Most cases)"
+				""
+				""
+				""
+				"If you are experiencing horrible performance, I suggest disabling it(C2ME) and Sinytra Connector."
+			]
+			icon: "gtceu:small_vibrant_alloy_gear"
+			id: "0C12BB97C29D4CD2"
+			shape: "rsquare"
+			subtitle: "Save us from thine horrid worldgen performance!"
+			tasks: [{
+				id: "1F59BF679E9E63B3"
+				type: "checkmark"
+			}]
+			title: "Congruent Chunk Managment Engine [C2ME]"
+			x: 3.738095238095255d
+			y: 7.240242346938771d
 		}
 	]
 	subtitle: [
