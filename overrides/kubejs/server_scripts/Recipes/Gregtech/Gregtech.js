@@ -228,12 +228,6 @@ ServerEvents.recipes(event => {
     'cosmiccore:prismatic_tungstensteel_quadruple_wire'
   )
 
-
-  event.replaceInput({ id: 'gtceu:circuit_assembler/data_module_soldering_alloy' },
-    'gtceu:wetware_printed_circuit_board',
-    'gtceu:multilayer_fiber_reinforced_printed_circuit_board'
-  )
-
   //Beacon Replacement
   event.remove({ id: 'tconstruct:common/glass/vanilla/beacon' })
   event.recipes.gtceu.mana_engraver('frontiers:bad_beacon_recipe')
@@ -1782,6 +1776,20 @@ ServerEvents.recipes(event => {
     .blastFurnaceTemp(4000)
     .circuit(2)
     .EUt(GTValues.VA[GTValues.EV]);
+
+
+  event.remove({ id: 'gtceu:circuit_assembler/data_module' })
+  event.remove({ id: 'gtceu:circuit_assembler/data_module_soldering_alloy' })
+  event.recipes.gtceu.circuit_assembler('frontiers:data_module')
+    .itemInputs(['gtceu:multilayer_fiber_reinforced_printed_circuit_board', '2x #gtceu:circuits/zpm', '64x cosmiccore:aram_chip', '32x gtceu:nor_memory_chip', '32x gtceu:nand_memory_chip', '16x gtceu:fine_yttrium_barium_cuprate_wire'])
+    .inputFluids('gtceu:starlight 100')
+    .itemOutputs('gtceu:data_module')
+    .duration(540)
+    .dimension('ad_astra:earth_orbit')
+    .EUt(GTValues.VA[GTValues.ZPM]);
+
+
+
   let machineTier = [
     'lv',
     'mv',
