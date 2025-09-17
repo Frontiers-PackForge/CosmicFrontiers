@@ -425,6 +425,26 @@ ServerEvents.recipes(event => {
     'ad_astra:desh_block'
   )
   event.replaceInput(
+    { input: '#ad_astra:steel_block' },
+    '#ad_astra:steel_blocks',
+    'gtceu:steel_block'
+  )
+  event.replaceInput(
+    { input: '#ad_astra:iron_plates' },
+    '#ad_astra:iron_plates',
+    'gtceu:iron_plate'
+  )
+  event.replaceInput(
+    { input: '#ad_astra:steel_plates' },
+    '#ad_astra:steel_plates',
+    'gtceu:steel_plate'
+  )
+  event.replaceInput(
+    { input: '#ad_astra:steel_ingots' },
+    '#ad_astra:steel_ingots',
+    'gtceu:steel_ingot'
+  )
+  event.replaceInput(
     { input: 'ad_astra:iron_rod' },
     'ad_astra:iron_rod',
     'gtceu:iron_rod'
@@ -433,6 +453,11 @@ ServerEvents.recipes(event => {
     { input: 'ad_astra:steel_rod' },
     'ad_astra:steel_rod',
     'gtceu:steel_rod'
+  )
+  event.replaceInput(
+    { id: 'ad_astra:iron_sliding_door' },
+    '#ad_astra:steel_blocks',
+    'minecraft:iron_block'
   )
 })
 
