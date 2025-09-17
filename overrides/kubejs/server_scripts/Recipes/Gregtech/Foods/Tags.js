@@ -10,6 +10,12 @@ ServerEvents.tags('item', event => {
     event.add('forge:onions', 'farmersdelight:onion')
     event.add('forge:dough', 'farmersdelight:wheat_dough')
     event.add('forge:doughs', 'gtceu:dough')
+    event.add('forge:tentacles', [
+        'crabbersdelight:raw_squid_tentacles',
+        'crabbersdelight:raw_glow_squid_tentacles',
+        'oceansdelight:tentacles',
+        'oceansdelight:cut_tentacles',
+    ])
     event.remove('forge:oat', 'vintagedelight:oat') //this removes vintagedelight oat from one recipe (oat cutting) 
 
     event.removeAll('diet:special_food') // Slicer recipes add nutrition to them already, keeping them in this tag makes it do double nutrition
