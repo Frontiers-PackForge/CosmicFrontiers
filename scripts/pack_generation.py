@@ -33,7 +33,7 @@ def generate_modpack_zip(version=None):
         copy_any(modlist_src, modpack_dir)
 
     # Zip the directory (only include the contents, not the root folder)
-    zip_name = f'Cosmic.Frontier.{version}.zip' if version else f'Cosmic.Frontier.zip'
+    zip_name = f'Cosmic.Frontiers.{version}.zip' if version else f'Cosmic.Frontiers.zip'
     zip_path = os.path.join(root_dir, zip_name)
     with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for root, dirs, files in os.walk(modpack_dir):

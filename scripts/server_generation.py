@@ -55,7 +55,7 @@ def generate_serverpack_zip(version=None, curseforge_api_key=None):
     readme_update(root_dir, serverpack_dir)
 
     # Zip the directory (only include the contents, not the root folder)
-    zip_name = f'Cosmic.Frontier.Server.{version}.zip' if version else f'Cosmic.Frontier.Server.zip'
+    zip_name = f'Cosmic.Frontiers.Server.{version}.zip' if version else f'Cosmic.Frontiers.Server.zip'
     zip_path = os.path.join(root_dir, zip_name)
     with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for root, dirs, files in os.walk(serverpack_dir):
