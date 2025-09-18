@@ -118,6 +118,10 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:orbital_forge/blast_nevramite' })
 
 
+  event.remove({ id: 'gtceu:orbital_forge_abs/voidspark' })
+  event.remove({ id: 'gtceu:alloy_blast_smelter/voidspark' })
+
+
   event.replaceOutput({ id: 'gtceu:shaped/power_substation' }, 'gtceu:power_substation', 'cosmiccore:dimensional_energy_capacitor')
   event.replaceOutput({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_uvarovite' }, 'gtceu:chromium_dust', 'gtceu:chromite_dust')
 
