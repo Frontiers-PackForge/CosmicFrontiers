@@ -465,4 +465,12 @@ ServerEvents.recipes(event => {
         .itemOutputs('cosmiccore:omnia_circuit_opv')
         .duration(10)
         .EUt(GTValues.VH[GTValues.LV]);
+        
+    //ae2 engineering processor > ev omnia circuit, for when you accidentally shift r click with a co processing unit in your hand...
+    event.recipes.gtceu.laser_engraver('omnia_ev_from_processor')
+        .itemInputs('ae2:engineering_processor')
+        .notConsumable('malum:prismatic_focus_lens')
+        .itemOutputs('cosmiccore:omnia_circuit_ev')
+        .duration(10)
+        .EUt(GTValues.VH[GTValues.LV]);
 })
