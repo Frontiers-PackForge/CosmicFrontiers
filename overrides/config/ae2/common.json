@@ -24,7 +24,7 @@
   },
   "crafting": {
     "disassemblyCrafting_comment": "Enable shift-clicking with the crafting units in hand to disassemble them.",
-    "disassemblyCrafting": true,
+    "disassemblyCrafting": false,
     "growthAccelerator_comment": "Number of ticks between two crystal growth accelerator ticks",
     "growthAccelerator": 10
   },
