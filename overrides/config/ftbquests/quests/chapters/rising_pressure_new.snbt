@@ -279,6 +279,7 @@
 			}]
 			subtitle: "A bricks best friend."
 			tasks: [{
+				count: 512L
 				id: "7CEE6D99E2292546"
 				item: "minecraft:clay_ball"
 				type: "item"
