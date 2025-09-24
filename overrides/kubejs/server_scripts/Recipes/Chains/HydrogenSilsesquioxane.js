@@ -14,6 +14,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:trichlorosilane 1000')
         .outputFluids('gtceu:hydrogen 2000')
         .duration(240)
+        .circuit(3)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.chemical_reactor('hsq_synth')
         .notConsumableFluid('gtceu:sulfuric_acid 500')
