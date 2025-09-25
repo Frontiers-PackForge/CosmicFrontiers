@@ -32,6 +32,20 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'frontiers:large_chemical_reactor/complex_multivitamin_solution' })
 
 
+
+
+    event.remove({ id: 'gtceu:chemical_reactor/collagen_from_bone' })
+    event.remove({ id: 'gtceu:chemical_reactor/collagen_from_bone_meal' })
+    event.recipes.gtceu.chemical_reactor('gtceu:collagen_dust_ICV')
+        .itemInputs('2x gtceu:meat_dust', 'minecraft:bone')
+        .inputFluids('gtceu:sulfuric_acid 1000')
+        .outputFluids('gtceu:diluted_sulfuric_acid 1000')
+        .itemOutputs('2x gtceu:collagen_dust')
+        .sterileInput('gtceu:chlorine_plasma 1')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+
     event.recipes.gtceu.cracker('frontiers:oxolane')
         .inputFluids('gtceu:butadiene 1000')
         .notConsumableFluid('gtceu:sulfuric_acid 500')
