@@ -7,6 +7,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:shaped/luv_machine_hull' })
   event.remove({ id: 'gtceu:assembler/hull_luv' })
   event.remove({ id: 'gtceu:assembler/casing_luv' })
+  event.remove({ id: 'gtceu:assembler/casing_assembly_control' })
   event.remove({ id: 'gtceu:shaped/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_assembly_control' })
 
