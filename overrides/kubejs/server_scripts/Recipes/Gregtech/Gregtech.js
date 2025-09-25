@@ -122,7 +122,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:alloy_blast_smelter/voidspark' })
 
 
-  event.replaceOutput({ id: 'gtceu:shaped/power_substation' }, 'gtceu:power_substation', 'cosmiccore:dimensional_energy_capacitor')
+  event.replaceInput({ id: 'gtceu:shaped/lv_machine_hull' }, 'gtceu:wrought_iron_plate', 'gtceu:dawnstone_plate')
+  
   event.replaceOutput({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_uvarovite' }, 'gtceu:chromium_dust', 'gtceu:chromite_dust')
 
 
@@ -1192,19 +1193,20 @@ ServerEvents.recipes(event => {
   //LV MACHINE HULL AND CASING
   event.remove({ output: 'gtceu:lv_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:lv_machine_casing_assembler')
-    .itemInputs(['4x gtceu:double_runed_steel_plate', '4x gtceu:steel_plate'])
+    .itemInputs(['4x gtceu:runed_steel_plate', '2x gtceu:steel_plate','2x cosmiccore:lv_wildfire_core'])
     .itemOutputs('gtceu:lv_machine_casing')
     .circuit(8)
     .duration(40)
     .EUt(GTValues.VA[GTValues.LV]);
   event.shaped('gtceu:lv_machine_casing', [
     'AMA',
-    'MWM',
+    'QWQ',
     'AMA'
   ], {
-    A: 'gtceu:double_runed_steel_plate',
+    A: 'gtceu:runed_steel_plate',
     M: 'gtceu:steel_plate',
-    W: '#forge:tools/wrenches'
+    W: '#forge:tools/wrenches',
+    Q: 'cosmiccore:lv_wildfire_core'
   })
   //MV MACHINE HULL AND COMPONENT
   event.remove({ output: 'gtceu:mv_machine_casing' })
