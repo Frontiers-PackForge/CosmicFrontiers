@@ -4,19 +4,19 @@ ServerEvents.recipes(event => {
         .magnetStats(50000, 450, true)
         .inputFluids('gtceu:naquahine_superfuel_mk_one 1600')
         .duration(400)
-        .EUt(-GTValues.V[GTValues.LuV],16)
+        .EUt(-GTValues.V[GTValues.LuV], 16)
     event.recipes.gtceu.naquahine_reactor('naquahine_mk_two')
         .chancedInput('gtceu:industrial_tnt', 5000, 0)
         .magnetStats(225000, 1500, true)
         .inputFluids('gtceu:naquahine_superfuel_mk_two 1600')
         .duration(800)
-        .EUt(-GTValues.V[GTValues.ZPM],16)
+        .EUt(-GTValues.V[GTValues.ZPM], 16)
     event.recipes.gtceu.naquahine_reactor('naquahine_mk_three')
         .chancedInput('gtceu:industrial_tnt', 5000, 0)
         .magnetStats(225000, 1500, true)
         .inputFluids('gtceu:naquahine_superfuel_mk_three 1600')
         .duration(800)
-        .EUt(-GTValues.V[GTValues.ZPM],64)
+        .EUt(-GTValues.V[GTValues.ZPM], 64)
     //Tiny Naq Reactors 
     event.recipes.gtceu.mini_naquahine_reactor('naquahine_mk_one_smol')
         .itemInputs('1x gtceu:industrial_tnt')
@@ -143,6 +143,37 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:rhenium_dust', 1000, 0)
         .duration(360)
         .EUt(GTValues.VA[GTValues.ZPM])
+
+
+
+    // 11 Naq : 3 Rhenium (Old Ratio)
+    // 10 Naq : 5 Rhenium (New Ratio)
+
+
+
+    event.recipes.gtceu.industrial_chemvat('frontiers:naq_and_tau_oil_make_rich_complex')
+        .itemInputs('5x gtceu:naquadah_dust')
+        .inputFluids('gtceu:tau_oil 500')
+        .outputFluids('gtceu:rhenium_rich_complex 500')
+        .stationResearch(b => b
+            .researchStack('gtceu:ultradense_rhenium_plate')
+            .CWUt(1500,50000000)
+            .EUt(GTValues.VA[GTValues.LuV]))
+        .duration(450)
+        .EUt(GTValues.VA[GTValues.UV])
+
+    event.recipes.gtceu.industrial_chemvat('frontiers:complex_to_rhenium_dust')
+        .notConsumable('bloodmagic:reagentholding')
+        .inputFluids('gtceu:rhenium_rich_complex 500')
+        .itemOutputs('5x gtceu:rhenium_dust')
+        .stationResearch(b => b
+            .researchStack('gtceu:ultradense_rhenium_plate')
+            .CWUt(1500,50000000)
+            .EUt(GTValues.VA[GTValues.LuV]))
+        .duration(450)
+        .EUt(GTValues.VA[GTValues.UV])
+
+
 
     //MK2 Fuel
 
