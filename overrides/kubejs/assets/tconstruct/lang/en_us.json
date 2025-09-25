@@ -1,5 +1,7 @@
 {
     "modifier.tconstruct.creative_slot": "Perpetuity Echos",
     "modifier.tconstruct.creative_slot.flavor": "Songs of past, present, and future resonate inside this tool.",
-    "modifier.tconstruct.creative_slot.description": "Extra modifiers applied by an apathetic observer."
+    "modifier.tconstruct.creative_slot.description": "Extra modifiers applied by an apathetic observer.",
+    "modifier.tconstruct.fortune.description": "Gives you more nice things when mining! (EXCLUDES GT ORES)",
+    "modifier.tconstruct.luck.description": "Gives you more nice things when mining or killing mobs! (EXCLUDES GT ORES)"
 }

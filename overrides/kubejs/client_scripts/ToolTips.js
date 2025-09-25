@@ -367,9 +367,31 @@ ItemEvents.tooltip(event => {
 
 })
 
+  event.addAdvanced("tconstruct:luck", (item, advanced, text) => {
+    text.add(1, Text.of('Fortune does not work on GT Ores').red().italic())
+  })
 ItemEvents.tooltip(event => {
   event.addAdvanced(/sophisticatedbackpacks:(.*)/, (item, advanced, text) => {
     text.add(1, Text.of('DEPRECATED DEPRECATED DEPRECATED').red().italic())
     text.add(2, Text.of('MOD REMOVAL IN 0.9.0').red().bold())
+  })
+})
+
+
+ItemEvents.tooltip(event => {
+  event.addAdvanced(/biomancy:(.*)/, (item, advanced, text) => {
+    text.add(1, Text.of('Coming Soon - In Dev').red().italic())
+  })
+})
+
+ItemEvents.tooltip(event => {
+  event.addAdvanced(/embers:(.*)/, (item, advanced, text) => {
+    text.add(1, Text.of('Coming Soon - In Dev').red().italic())
+  })
+})
+
+ItemEvents.tooltip(event => {
+  event.addAdvanced(/forestry:(.*)/, (item, advanced, text) => {
+    text.add(1, Text.of('Coming Soon - In Dev').red().italic())
   })
 })

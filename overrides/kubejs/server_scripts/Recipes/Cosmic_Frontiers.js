@@ -137,6 +137,11 @@ ServerEvents.recipes(event => {
        event.remove({ id: 'biomesoplenty:tnt_from_bop_sand' })
        event.remove({ id: 'terralith:observer_alt' })
 
+       event.remove({ mod: 'biomancy' })
+
+
+
+
        event.remove({ id: 'paraglider:paraglider' })
        event.remove({ id: 'gtceu:alloy_smelter/rubber_bar' })
        event.shaped('paraglider:paraglider', [
