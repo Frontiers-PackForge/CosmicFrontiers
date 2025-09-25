@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:plates/electrum"
+      }
+    }
+  ],
+  "input": {
+    "tag": "forge:plates/electrum"
+  },
+  "output": {
+    "amount": 144,
+    "tag": "forge:electrum"
+  }
+}

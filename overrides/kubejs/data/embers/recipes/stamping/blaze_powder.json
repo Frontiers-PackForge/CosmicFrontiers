@@ -1,0 +1,13 @@
+{
+  "type": "embers:stamping",
+  "input": {
+    "tag": "forge:rods/blaze"
+  },
+  "output": {
+    "count": 4,
+    "item": "minecraft:blaze_powder"
+  },
+  "stamp": {
+    "item": "embers:flat_stamp"
+  }
+}

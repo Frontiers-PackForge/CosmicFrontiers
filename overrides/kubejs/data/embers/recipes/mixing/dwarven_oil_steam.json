@@ -1,0 +1,17 @@
+{
+  "type": "embers:mixing",
+  "inputs": [
+    {
+      "amount": 5,
+      "fluid": "embers:soul_crude"
+    },
+    {
+      "amount": 20,
+      "tag": "forge:steam"
+    }
+  ],
+  "output": {
+    "amount": 16,
+    "fluid": "embers:dwarven_oil"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "embers:mixing",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ingots/invar"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "amount": 2,
+      "tag": "forge:iron"
+    },
+    {
+      "amount": 1,
+      "tag": "forge:nickel"
+    }
+  ],
+  "output": {
+    "amount": 3,
+    "tag": "forge:invar"
+  }
+}

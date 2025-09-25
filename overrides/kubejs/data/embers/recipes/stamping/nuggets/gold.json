@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:nuggets/gold"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 16,
+    "tag": "forge:gold"
+  },
+  "output": {
+    "tag": "forge:nuggets/gold"
+  },
+  "stamp": {
+    "item": "embers:nugget_stamp"
+  }
+}

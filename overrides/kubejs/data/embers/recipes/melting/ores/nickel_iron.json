@@ -1,0 +1,28 @@
+{
+  "type": "embers:melting",
+  "bonus": {
+    "amount": 0,
+    "tag": "forge:iron"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ores/nickel"
+          }
+        }
+      ]
+    }
+  ],
+  "input": {
+    "tag": "forge:ores/nickel"
+  },
+  "output": {
+    "amount": 288,
+    "tag": "forge:nickel"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:storage_blocks/bronze"
+      }
+    }
+  ],
+  "input": {
+    "tag": "forge:storage_blocks/bronze"
+  },
+  "output": {
+    "amount": 810,
+    "tag": "forge:bronze"
+  }
+}

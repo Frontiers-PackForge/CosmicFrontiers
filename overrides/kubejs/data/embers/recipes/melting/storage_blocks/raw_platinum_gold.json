@@ -1,0 +1,28 @@
+{
+  "type": "embers:melting",
+  "bonus": {
+    "amount": 144,
+    "tag": "forge:gold"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:storage_blocks/raw_platinum"
+          }
+        }
+      ]
+    }
+  ],
+  "input": {
+    "tag": "forge:storage_blocks/raw_platinum"
+  },
+  "output": {
+    "amount": 1080,
+    "tag": "forge:platinum"
+  }
+}

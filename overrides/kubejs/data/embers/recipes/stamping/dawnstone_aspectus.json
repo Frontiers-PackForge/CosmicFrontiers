@@ -1,0 +1,16 @@
+{
+  "type": "embers:stamping",
+  "fluid": {
+    "amount": 144,
+    "tag": "forge:molten_dawnstone"
+  },
+  "input": {
+    "item": "embers:ember_shard"
+  },
+  "output": {
+    "item": "embers:dawnstone_aspectus"
+  },
+  "stamp": {
+    "item": "embers:ingot_stamp"
+  }
+}

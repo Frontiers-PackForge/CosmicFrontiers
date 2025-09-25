@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:nuggets/invar"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 16,
+    "tag": "forge:invar"
+  },
+  "output": {
+    "tag": "forge:nuggets/invar"
+  },
+  "stamp": {
+    "item": "embers:nugget_stamp"
+  }
+}

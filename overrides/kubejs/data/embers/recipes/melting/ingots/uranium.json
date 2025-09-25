@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ingots/uranium"
+      }
+    }
+  ],
+  "input": {
+    "tag": "forge:ingots/uranium"
+  },
+  "output": {
+    "amount": 144,
+    "tag": "forge:uranium"
+  }
+}

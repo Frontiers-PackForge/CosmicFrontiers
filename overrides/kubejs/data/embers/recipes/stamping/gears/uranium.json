@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:gears/uranium"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 576,
+    "tag": "forge:uranium"
+  },
+  "output": {
+    "tag": "forge:gears/uranium"
+  },
+  "stamp": {
+    "item": "embers:gear_stamp"
+  }
+}

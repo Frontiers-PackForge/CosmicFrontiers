@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:gears/bronze"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 576,
+    "tag": "forge:bronze"
+  },
+  "output": {
+    "tag": "forge:gears/bronze"
+  },
+  "stamp": {
+    "item": "embers:gear_stamp"
+  }
+}

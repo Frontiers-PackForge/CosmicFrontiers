@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:gears/platinum"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 576,
+    "tag": "forge:platinum"
+  },
+  "output": {
+    "tag": "forge:gears/platinum"
+  },
+  "stamp": {
+    "item": "embers:gear_stamp"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "embers:mixing",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ingots/bronze"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "amount": 3,
+      "tag": "forge:copper"
+    },
+    {
+      "amount": 1,
+      "tag": "forge:tin"
+    }
+  ],
+  "output": {
+    "amount": 4,
+    "tag": "forge:bronze"
+  }
+}

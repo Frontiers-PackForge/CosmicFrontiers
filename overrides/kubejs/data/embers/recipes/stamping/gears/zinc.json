@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:gears/zinc"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 576,
+    "tag": "forge:zinc"
+  },
+  "output": {
+    "tag": "forge:gears/zinc"
+  },
+  "stamp": {
+    "item": "embers:gear_stamp"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:nuggets/dawnstone"
+      }
+    }
+  ],
+  "input": {
+    "tag": "forge:nuggets/dawnstone"
+  },
+  "output": {
+    "amount": 16,
+    "tag": "forge:molten_dawnstone"
+  }
+}

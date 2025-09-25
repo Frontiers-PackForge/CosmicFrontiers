@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:plates/lead"
+      }
+    }
+  ],
+  "input": {
+    "tag": "forge:plates/lead"
+  },
+  "output": {
+    "amount": 144,
+    "tag": "forge:lead"
+  }
+}

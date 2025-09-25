@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:plates/dawnstone"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 144,
+    "tag": "forge:molten_dawnstone"
+  },
+  "output": {
+    "tag": "forge:plates/dawnstone"
+  },
+  "stamp": {
+    "item": "embers:plate_stamp"
+  }
+}

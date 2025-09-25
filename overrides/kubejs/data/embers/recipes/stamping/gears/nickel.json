@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:gears/nickel"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 576,
+    "tag": "forge:nickel"
+  },
+  "output": {
+    "tag": "forge:gears/nickel"
+  },
+  "stamp": {
+    "item": "embers:gear_stamp"
+  }
+}

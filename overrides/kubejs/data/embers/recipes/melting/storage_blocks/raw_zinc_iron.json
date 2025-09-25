@@ -1,0 +1,32 @@
+{
+  "type": "embers:melting",
+  "bonus": {
+    "amount": 144,
+    "tag": "forge:iron"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:ingots/tin"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:storage_blocks/raw_zinc"
+          }
+        }
+      ]
+    }
+  ],
+  "input": {
+    "tag": "forge:storage_blocks/raw_zinc"
+  },
+  "output": {
+    "amount": 1080,
+    "tag": "forge:zinc"
+  }
+}
