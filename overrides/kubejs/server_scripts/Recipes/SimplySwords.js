@@ -25,7 +25,8 @@ ServerEvents.recipes( e => {
         'greathammer',  
         'greataxe', 
         'chakram',
-        'halberd'
+        'halberd',
+        'scythe'
     ]
     
 
