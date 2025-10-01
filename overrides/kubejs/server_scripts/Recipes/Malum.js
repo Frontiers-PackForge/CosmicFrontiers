@@ -353,6 +353,15 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'malum:spirit_crucible/repair/metal_impetus_restoration' })
   event.remove({ id: 'malum:spirit_crucible/repair/alchemical_impetus_restoration' })
 
+  //soulstained steel/alumina default block recipe removal + adding a way to turn the dust back into ingots
+  event.remove({ id: 'malum:block_of_soul_stained_steel' })
+  event.remove({ id: 'malum:soul_stained_steel_from_block' })
+ event.recipes.gtceu.arc_furnace('frontiers:soul_stained_ingot_from_dust')
+    .itemInputs('gtceu:soul_stained_steel_dust')
+    .inputFluids('gtceu:oxygen 56')
+    .itemOutputs(['malum:soul_stained_steel_ingot'])
+    .duration(50)
+    .EUt(24,);
 
 
  event.recipes.gtceu.spirit_crucible('frontiers:forge_3')
