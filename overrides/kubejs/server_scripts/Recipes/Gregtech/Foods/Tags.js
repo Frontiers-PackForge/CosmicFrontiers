@@ -84,6 +84,7 @@ ServerEvents.tags('item', event => {
     proteins('nethersdelight:strider_slice')
     proteins('occultism:beaver_nugget')
     proteins('arsdelight:bowl_of_honey_glazed_chimera')  
+    proteins('oceanic_delight:salmon_eggs')  
 
     vegetables('legendarysurvivaloverhaul:beetroot_juice')
     vegetables('legendarysurvivaloverhaul:cactus_juice')
