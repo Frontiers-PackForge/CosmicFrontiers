@@ -330,7 +330,24 @@ ItemEvents.tooltip(event => {
     }
   })
 
-
+  event.addAdvanced('cosmiccore:honey_alveary', (item, advanced, text) => {
+    text.add(1, Text.of('Multiblock Classification: The Great Hive').aqua().bold())
+    text.add(2, Text.of('What is all that noise!? AGAIN!?!?!').white().bold())
+    text.add(3, Text.of('Automatically take care of your bee needs!'))
+    if (event.isShift()) {
+      text.add(4, Text.of('-------------------------------------------').aqua())
+      text.add(5, [Text.of('Consumes Nutrient Boosters to Speed Up and Multiply Production Rates!').white()])
+      text.add(6, [Text.of('Overclock Nutrient reduces time between yields.').gray()])
+      text.add(7, [Text.of('Production Nutrient multiplies comb yields.').gray()])
+      text.add(8, Text.of('-------------------------------------------').aqua())
+      text.add(9, Text.of('Credits:'))
+      text.add(10, Text.of('Major Code Contributors:').aqua())
+      text.add(11, Text.of('JurreJelle').white())
+      text.add(12, [Text.of('Art & UI: ').gold(), Text.of('Ghostipedia').white()])
+    } else {
+      text.add(4, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+  })
 
 })
 
