@@ -5,7 +5,7 @@
 	group: "49DCE46B3EB22AEA"
 	icon: "malum:necklace_of_the_watcher"
 	id: "3B3C3A999E10A52A"
-	order_index: 7
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
@@ -301,14 +301,14 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["7B4F0BE29E6CD211"]
+			dependencies: ["7461DC1FA0C21CBF"]
 			description: [
 				"A pretty big backpack. 117 slots should cover all your needs for tools, drums, cells, magic stuff and everything in-between."
 				""
 				"For bulk personal storage (like ores) use Portable Item Cells."
 			]
 			id: "70FD03A814E0C91E"
-			subtitle: "Beltpack"
+			subtitle: "Beltpack after EBF"
 			tasks: [{
 				id: "0A6816EBD295B649"
 				item: {
@@ -320,8 +320,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: -2.0d
+			x: -5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7B4F0BE29E6CD211"]

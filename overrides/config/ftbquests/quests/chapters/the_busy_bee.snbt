@@ -1,0 +1,4352 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_busy_bee"
+	group: "49DCE46B3EB22AEA"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			Parent: {
+				analyzed: 0b
+				genome: {
+					"forestry:activity": {
+						active: "forestry:activity_cathemeral"
+						inactive: "forestry:activity_cathemeral"
+					}
+					"forestry:bee_effect": {
+						active: "forestry:bee_effect_none"
+						inactive: "forestry:bee_effect_none"
+					}
+					"forestry:bee_species": {
+						active: "cosmiccore:bee_pale"
+						inactive: "cosmiccore:bee_pale"
+					}
+					"forestry:cave_dwelling": {
+						active: "forestry:falsed"
+						inactive: "forestry:falsed"
+					}
+					"forestry:fertility": {
+						active: "forestry:1id"
+						inactive: "forestry:1id"
+					}
+					"forestry:flower_type": {
+						active: "forestry:flower_type_vanilla"
+						inactive: "forestry:flower_type_vanilla"
+					}
+					"forestry:humidity_tolerance": {
+						active: "forestry:tolerance_none"
+						inactive: "forestry:tolerance_none"
+					}
+					"forestry:lifespan": {
+						active: "forestry:60i"
+						inactive: "forestry:60i"
+					}
+					"forestry:pollination": {
+						active: "forestry:5id"
+						inactive: "forestry:5id"
+					}
+					"forestry:speed": {
+						active: "forestry:1.7f"
+						inactive: "forestry:1.7f"
+					}
+					"forestry:temperature_tolerance": {
+						active: "forestry:tolerance_none"
+						inactive: "forestry:tolerance_none"
+					}
+					"forestry:territory": {
+						active: "forestry:9_6_9"
+						inactive: "forestry:9_6_9"
+					}
+					"forestry:tolerates_rain": {
+						active: "forestry:falsed"
+						inactive: "forestry:falsed"
+					}
+				}
+				health: 60
+				max_heath: 60
+				pristine: 1b
+			}
+		}
+		id: "forestry:bee_queen_ge"
+		tag: {
+			ForgeCaps: {
+				Parent: {
+					analyzed: 0b
+					genome: {
+						"forestry:activity": {
+							active: "forestry:activity_cathemeral"
+							inactive: "forestry:activity_cathemeral"
+						}
+						"forestry:bee_effect": {
+							active: "forestry:bee_effect_none"
+							inactive: "forestry:bee_effect_none"
+						}
+						"forestry:bee_species": {
+							active: "cosmiccore:bee_pale"
+							inactive: "cosmiccore:bee_pale"
+						}
+						"forestry:cave_dwelling": {
+							active: "forestry:falsed"
+							inactive: "forestry:falsed"
+						}
+						"forestry:fertility": {
+							active: "forestry:1id"
+							inactive: "forestry:1id"
+						}
+						"forestry:flower_type": {
+							active: "forestry:flower_type_vanilla"
+							inactive: "forestry:flower_type_vanilla"
+						}
+						"forestry:humidity_tolerance": {
+							active: "forestry:tolerance_none"
+							inactive: "forestry:tolerance_none"
+						}
+						"forestry:lifespan": {
+							active: "forestry:60i"
+							inactive: "forestry:60i"
+						}
+						"forestry:pollination": {
+							active: "forestry:5id"
+							inactive: "forestry:5id"
+						}
+						"forestry:speed": {
+							active: "forestry:1.7f"
+							inactive: "forestry:1.7f"
+						}
+						"forestry:temperature_tolerance": {
+							active: "forestry:tolerance_none"
+							inactive: "forestry:tolerance_none"
+						}
+						"forestry:territory": {
+							active: "forestry:9_6_9"
+							inactive: "forestry:9_6_9"
+						}
+						"forestry:tolerates_rain": {
+							active: "forestry:falsed"
+							inactive: "forestry:falsed"
+						}
+					}
+					health: 60
+					max_heath: 60
+					pristine: 1b
+				}
+			}
+		}
+	}
+	id: "4D4DA44BCB12CD07"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["38DA0B4E0DBAC364"]
+			description: [
+				"Please Bee patient opening quests on this page, the use of quest filters causes a rather large lagspike at times."
+				""
+				""
+				""
+				"NOTICE : BEES ARE UNDER HEAVY REWRITES - DO NOT EXPECT ANYTHING TO WORK OR MAKE SENSE!"
+				"BEES WILL BECOME AMAZING SIDE CONTENT AS WELL AS REQUIRED FOR PROGRESSION, HOWEVER WITH MANY NEW GENETIC TOOLS AT YOUR DISPOSAL YOU CAN CRAFT SPECIES AND SKIP BREEDING IN SOME CASES!"
+			]
+			id: "7468F231E14E2584"
+			subtitle: "The Bees"
+			tasks: [
+				{
+					id: "6EF195B5B205497D"
+					item: {
+						Count: 1
+						id: "forestry:scoop"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "648CE2245055B6B5"
+					item: "forestry:smoker"
+					type: "item"
+				}
+			]
+			title: "Getting Started with Forestry"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7468F231E14E2584"]
+			id: "3EF751F46288A00A"
+			subtitle: "To be Added"
+			tasks: [{
+				id: "66D0EF177002F895"
+				item: "forestry:beehive_end"
+				type: "item"
+			}]
+			title: "Crafting the Ender Hive"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7468F231E14E2584"]
+			id: "71CF3E55EFEFE15F"
+			tasks: [{
+				id: "5374C5B791FBE000"
+				item: "forestry:beehive_forest"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7468F231E14E2584"]
+			id: "79936505F92E3C2E"
+			tasks: [{
+				id: "6C1F1330C5DA14BC"
+				item: "forestry:beehive_meadows"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7468F231E14E2584"]
+			id: "0916414731C705D3"
+			tasks: [{
+				id: "5349CEEA9526D4D4"
+				item: "forestry:beehive_desert"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7468F231E14E2584"]
+			id: "5742D0233FC583C7"
+			tasks: [{
+				id: "405E565E60C87FC5"
+				item: "forestry:beehive_jungle"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7468F231E14E2584"]
+			id: "54FCA6200108E5E2"
+			tasks: [{
+				id: "5F898C146E8CD69B"
+				item: "forestry:beehive_snow"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7468F231E14E2584"]
+			id: "52D08C538A5414A5"
+			tasks: [{
+				id: "1205D3385755BA24"
+				item: "forestry:beehive_swamp"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7468F231E14E2584"]
+			id: "2A3FB748EEA4BF18"
+			tasks: [{
+				id: "177D76F1F6B42A8A"
+				item: "forestry:beehive_savanna"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7468F231E14E2584"]
+			id: "6097551859B2EAFB"
+			tasks: [{
+				id: "3E7A8E4727A40589"
+				item: "forestry:beehive_lush"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7468F231E14E2584"]
+			id: "7F90F98F29AD7EA9"
+			tasks: [{
+				id: "5E26586100F8DFAD"
+				item: "forestry:beehive_aquatic"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7468F231E14E2584"]
+			id: "1EEF34E537B29E54"
+			tasks: [{
+				id: "384DC3CD04DB726F"
+				item: "forestry:beehive_nether"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["10D4F011F778A733"]
+			id: "2478EA22966C5A4F"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "42E8E78A62C0326C"
+					item: "gendustry:blank_gene_sample"
+					type: "item"
+				}
+				{
+					id: "2DC16AB16EB3B072"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(gendustry:gene_sample)"
+						}
+					}
+					title: "Any Allelellelelelelelelele"
+					type: "item"
+				}
+			]
+			title: "Welcome to Gendustry's Real Meat, Genetics"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2C50692401A1971B"]
+			id: "10D4F011F778A733"
+			tasks: [{
+				id: "1FE3C456AA11A99C"
+				item: "gendustry:sampler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"693BBF2976D83341"
+				"2F6E1A982990E850"
+			]
+			description: [
+				"Allows direct selection of the mutation your queen bee will become."
+				""
+				"This will aid in production of new species massively"
+			]
+			id: "546EAA0F051B70C5"
+			subtitle: "Selective Breeding Enhanced"
+			tasks: [{
+				id: "13B2DC4FA4023256"
+				item: "gendustry:advanced_mutatron"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2F6E1A982990E850"]
+			description: [
+				"Will create a queen mutation based on the inputs of the parents at random."
+				""
+				""
+				"If you want to select your species output, make an Advanced Mutatron in IV."
+			]
+			id: "693BBF2976D83341"
+			subtitle: "Mutation Station"
+			tasks: [{
+				id: "1DD8F21C5F57B74A"
+				item: "gendustry:mutatron"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2C50692401A1971B"]
+			description: ["This unstable version of Mutagen can be used to invoke mutations in your bees."]
+			id: "2F6E1A982990E850"
+			subtitle: "Producing Impure Mutagen"
+			tasks: [{
+				id: "48482AEF5F8503C7"
+				item: "gendustry:mutagen_producer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7468F231E14E2584"]
+			id: "2C50692401A1971B"
+			shape: "hexagon"
+			subtitle: "Come back once you've reached EV"
+			tasks: [{
+				id: "4C2D0098D9DDE92A"
+				item: "gendustry:genetics_processor"
+				type: "item"
+			}]
+			title: "Welcome to Gendustry"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7468F231E14E2584"
+				"738518B9A3484AC1"
+			]
+			description: [
+				"The Industrial Apiary is a useful block for bee breeding, making ideal enviroments and automating drone creation for gendustry later."
+				""
+				""
+				"The trade off is you can't use frames, you can however use many unique upgrades for the IApiary."
+				""
+				""
+				"Once you get to EV, Genecrafting species becomes more viable and this device becomes mostly used for Drone Farming."
+			]
+			id: "50E9484BA3B2584A"
+			subtitle: "Unlocked in MV"
+			tasks: [{
+				id: "1E1B8732984BC34F"
+				item: "gendustry:industrial_apiary"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2478EA22966C5A4F"]
+			id: "67209FC20EC95027"
+			tasks: [{
+				id: "56E7832153FA3B37"
+				item: "gendustry:blank_genetic_template"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["10D4F011F778A733"]
+			description: [
+				"The Genetic Transposer will become a centerpiece of your new gene production, allowing you to copy/paste genes across templates."
+				""
+				""
+				"I would strongly recommend making a 'default' 12/13 Chromosome template for production bees, and filling in the species chromosome as you need to 'use' them."
+			]
+			id: "0DF34D6DB822A5FD"
+			subtitle: "Copy Gene Samples and Template"
+			tasks: [{
+				id: "619EA297E9BA139F"
+				item: "gendustry:genetic_transposer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["67209FC20EC95027"]
+			description: [
+				"To use a genetic template, it must be *full*, this is different then previous versions of Gendustry "
+				"(That I'm aware of, at least)"
+				""
+				""
+				"My advice: make an &b12/13 Template&r and make a &6Genetic Transposer&r.  "
+				"Clone the 12/13 Template over and over. Then just change out the species chromosome as you need."
+			]
+			id: "693E2D26168C5B99"
+			tasks: [{
+				id: "3E3A61CF3F680C8E"
+				item: "gendustry:imprinter"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.75d
+		}
+		{
+			dependencies: [
+				"2478EA22966C5A4F"
+				"5DC0790A6AE04CE2"
+			]
+			description: [
+				"Genecrafted bees are created either as a way to skip breeding entirely, skip part of the breeding process, OR to force creation of a species synthetically."
+				""
+				"Go Extract some CAS-9 and let us do some very very poorly overseen genetics."
+				""
+				"You'll need a Biolab, a small device for simple biological chemistry and genetics."
+				"You knowledge on biology is limited in EV, but should suffice for some basic species mutations."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						analyzed: 0b
+						genome: {
+							"forestry:activity": {
+								active: "forestry:activity_metaturnal"
+								inactive: "forestry:activity_metaturnal"
+							}
+							"forestry:bee_effect": {
+								active: "forestry:bee_effect_none"
+								inactive: "forestry:bee_effect_none"
+							}
+							"forestry:bee_species": {
+								active: "cosmiccore:bee_abrasive"
+								inactive: "cosmiccore:bee_abrasive"
+							}
+							"forestry:cave_dwelling": {
+								active: "forestry:falsed"
+								inactive: "forestry:falsed"
+							}
+							"forestry:fertility": {
+								active: "forestry:2id"
+								inactive: "forestry:2id"
+							}
+							"forestry:flower_type": {
+								active: "forestry:flower_type_vanilla"
+								inactive: "forestry:flower_type_vanilla"
+							}
+							"forestry:humidity_tolerance": {
+								active: "forestry:tolerance_none"
+								inactive: "forestry:tolerance_none"
+							}
+							"forestry:lifespan": {
+								active: "forestry:40i"
+								inactive: "forestry:40i"
+							}
+							"forestry:pollination": {
+								active: "forestry:25i"
+								inactive: "forestry:25i"
+							}
+							"forestry:speed": {
+								active: "forestry:1.7f"
+								inactive: "forestry:1.7f"
+							}
+							"forestry:temperature_tolerance": {
+								active: "forestry:tolerance_none"
+								inactive: "forestry:tolerance_none"
+							}
+							"forestry:territory": {
+								active: "forestry:9_6_9"
+								inactive: "forestry:9_6_9"
+							}
+							"forestry:tolerates_rain": {
+								active: "forestry:trued"
+								inactive: "forestry:trued"
+							}
+						}
+						health: 40
+						max_heath: 40
+						pristine: 1b
+					}
+				}
+				id: "forestry:bee_queen_ge"
+				tag: {
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_metaturnal"
+									inactive: "forestry:activity_metaturnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "cosmiccore:bee_abrasive"
+									inactive: "cosmiccore:bee_abrasive"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:2id"
+									inactive: "forestry:2id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:40i"
+									inactive: "forestry:40i"
+								}
+								"forestry:pollination": {
+									active: "forestry:25i"
+									inactive: "forestry:25i"
+								}
+								"forestry:speed": {
+									active: "forestry:1.7f"
+									inactive: "forestry:1.7f"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:trued"
+									inactive: "forestry:trued"
+								}
+							}
+							health: 40
+							max_heath: 40
+							pristine: 1b
+						}
+					}
+				}
+			}
+			id: "208A91611A66F60E"
+			subtitle: "No Breeding?"
+			tasks: [{
+				id: "34ECF2D8D0F29933"
+				item: {
+					Count: 1
+					id: "gendustry:gene_sample"
+					tag: {
+						allele: "cosmiccore:bee_abrasive"
+						chromosome: "forestry:bee_species"
+						speciesType: "forestry:bee_species"
+					}
+				}
+				type: "item"
+			}]
+			title: "Genecrafting - Abrasive Bee"
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["50E9484BA3B2584A"]
+			description: [
+				"If you are looking to amass drones for gene collection, this upgrade is what you're looking for."
+				""
+				"Automatically places the princess and drones back in the input of the Apiary, allowing for continued use."
+				""
+				"If you are just looking for pure resource output, you most likely want to look into the &6Industrial Production Apiary&r instead"
+				""
+				"Note ; These both have the exact same functionality according to the tooltip???"
+			]
+			id: "5CA53F51BFFAAB24"
+			subtitle: "Drone Farming"
+			tasks: [
+				{
+					id: "223CF38A786C44B7"
+					item: "gendustry:sieve_upgrade"
+					type: "item"
+				}
+				{
+					id: "1D7B566E87A1C744"
+					item: "gendustry:automation_upgrade"
+					type: "item"
+				}
+			]
+			title: "Automated Hive"
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["50E9484BA3B2584A"]
+			description: [
+				"Tricks your bees into thinking the earth is fake and light is artificial and that sometimes cheese i s infact on the moon."
+				""
+				"&7&oThey grant immunity to the respective traits listed, useful for new species if you do your genetics in doors."
+			]
+			id: "03970E30F28E2C27"
+			subtitle: "An ever more busy bee!"
+			tasks: [
+				{
+					id: "3641CCDF7E4E2DDF"
+					item: "gendustry:lighting_upgrade"
+					type: "item"
+				}
+				{
+					id: "65AFF9F83E4DDD96"
+					item: "gendustry:weatherproof_upgrade"
+					type: "item"
+				}
+				{
+					id: "47053F2D1F0DB0C2"
+					item: "gendustry:sky_upgrade"
+					type: "item"
+				}
+			]
+			title: "Enviromental Immunity Upgrades"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["50E9484BA3B2584A"]
+			description: [
+				"Allows modifying the temperature of the hive."
+				""
+				"Just like, plug it in, yo."
+				""
+				"Also go hydrate."
+			]
+			id: "0535CC0318B0BA1E"
+			subtitle: "Turn up the AC and Heat!"
+			tasks: [
+				{
+					id: "29C22CFF1AB813E6"
+					item: "gendustry:heater_upgrade"
+					type: "item"
+				}
+				{
+					id: "29CA16903276ED0F"
+					item: "gendustry:cooler_upgrade"
+					type: "item"
+				}
+			]
+			title: "Temp. Upgrades"
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["50E9484BA3B2584A"]
+			description: [
+				"Humidity upgrades allow you to modify the humidy enviroment of the hive."
+				""
+				"Useful when dealing with bees outside of your normal climate ranges"
+			]
+			id: "45BAF665E5C641B2"
+			subtitle: "This is MY Swamp."
+			tasks: [
+				{
+					id: "715F2DF9F410B362"
+					item: "gendustry:humidifier_upgrade"
+					type: "item"
+				}
+				{
+					id: "71E11D7C87831330"
+					item: "gendustry:dryer_upgrade"
+					type: "item"
+				}
+			]
+			title: "Humidity Upgrades"
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["50E9484BA3B2584A"]
+			id: "2ACAD8A13912A6FA"
+			tasks: [{
+				id: "0930E9A5B49B6940"
+				item: "gendustry:productivity_upgrade"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2ACAD8A13912A6FA"]
+			id: "41E1C0740B02FC49"
+			tasks: [{
+				id: "14D20B0A422B45CB"
+				item: "gendustry:productivity_elite_upgrade"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2C50692401A1971B"
+				"50E9484BA3B2584A"
+			]
+			id: "066E7A70552E0EB1"
+			tasks: [{
+				id: "38E595151EB0F4AD"
+				item: "gendustry:mutation_elite_upgrade"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["03970E30F28E2C27"]
+			id: "443D0C1A16819467"
+			tasks: [{
+				id: "44FA219038E89157"
+				item: "gendustry:activity_simulator_elite_upgrade"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"50E9484BA3B2584A"
+				"2C50692401A1971B"
+			]
+			id: "219180680284D6C1"
+			tasks: [{
+				id: "3423E09493FDCB1D"
+				item: "gendustry:fertility_elite_upgrade"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["50E9484BA3B2584A"]
+			description: [
+				"One increases the lifespan of your inserted bee, useful for production farming, though it is recommended to invest into &6Industrial Production Apiaries&r"
+				""
+				"One decreases the lifespam of your inserted bee, useful for mutation farming"
+			]
+			id: "1BBDFAF4A1B04F77"
+			subtitle: "Modifying Lifetimes."
+			tasks: [
+				{
+					id: "70A6BE367A0DF010"
+					item: "gendustry:youth_elite_upgrade"
+					type: "item"
+				}
+				{
+					id: "13264A8DDF07FC1A"
+					item: "gendustry:lifespan_upgrade"
+					type: "item"
+				}
+			]
+			title: "Lifespan Upgrades"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3EF751F46288A00A"
+				"7F90F98F29AD7EA9"
+			]
+			id: "52B7B54AF8F2987E"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_nocturnal"
+									inactive: "forestry:activity_nocturnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "forestry:bee_abyssal"
+									inactive: "forestry:bee_abyssal"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:trued"
+									inactive: "forestry:trued"
+								}
+								"forestry:fertility": {
+									active: "forestry:1id"
+									inactive: "forestry:1id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_sea"
+									inactive: "forestry:flower_type_sea"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:60i"
+									inactive: "forestry:60i"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:0.3fd"
+									inactive: "forestry:0.3fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:15_13_15"
+									inactive: "forestry:15_13_15"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:trued"
+									inactive: "forestry:trued"
+								}
+							}
+							health: 60
+							max_heath: 60
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_nocturnal"
+										inactive: "forestry:activity_nocturnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "forestry:bee_abyssal"
+										inactive: "forestry:bee_abyssal"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:trued"
+										inactive: "forestry:trued"
+									}
+									"forestry:fertility": {
+										active: "forestry:1id"
+										inactive: "forestry:1id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_sea"
+										inactive: "forestry:flower_type_sea"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:60i"
+										inactive: "forestry:60i"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:0.3fd"
+										inactive: "forestry:0.3fd"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:15_13_15"
+										inactive: "forestry:15_13_15"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:trued"
+										inactive: "forestry:trued"
+									}
+								}
+								health: 60
+								max_heath: 60
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "4813583CE5E9DB28"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"forestry:bee_abyssal\"}}}}})"
+					}
+				}
+				title: "Any Abyssal Bee"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"52D08C538A5414A5"
+				"5742D0233FC583C7"
+				"0916414731C705D3"
+				"79936505F92E3C2E"
+				"54FCA6200108E5E2"
+				"6097551859B2EAFB"
+				"71CF3E55EFEFE15F"
+				"2A3FB748EEA4BF18"
+				"1EEF34E537B29E54"
+			]
+			dependency_requirement: "one_completed"
+			id: "387F71758908F534"
+			min_required_dependencies: 2
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							generation: 1
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "forestry:bee_common"
+									inactive: "forestry:bee_forest"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:2id"
+									inactive: "forestry:3i"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_down_1d"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:20id"
+									inactive: "forestry:20id"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:10i"
+								}
+								"forestry:speed": {
+									active: "forestry:0.6fd"
+									inactive: "forestry:0.3fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_down_1d"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 20
+							max_heath: 20
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								generation: 1
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "forestry:bee_common"
+										inactive: "forestry:bee_forest"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:2id"
+										inactive: "forestry:3i"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_down_1d"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:20id"
+										inactive: "forestry:20id"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:10i"
+									}
+									"forestry:speed": {
+										active: "forestry:0.6fd"
+										inactive: "forestry:0.3fd"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_down_1d"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 20
+								max_heath: 20
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "47FCA4F5F0DD19AE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"forestry:bee_common\"}}}}})"
+					}
+				}
+				title: "Any Common Species"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Any Common Bee"
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["387F71758908F534"]
+			id: "669E6FD81F3B095E"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "forestry:bee_cultivated"
+									inactive: "forestry:bee_cultivated"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:2id"
+									inactive: "forestry:2id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:10id"
+									inactive: "forestry:10id"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:1.2fd"
+									inactive: "forestry:1.2fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 10
+							max_heath: 10
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "forestry:bee_cultivated"
+										inactive: "forestry:bee_cultivated"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:2id"
+										inactive: "forestry:2id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:10id"
+										inactive: "forestry:10id"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:1.2fd"
+										inactive: "forestry:1.2fd"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 10
+								max_heath: 10
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "1F790C8D4839F3DD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"forestry:bee_cultivated\"}}}}}))"
+					}
+				}
+				title: "Any Cultivated Species"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Cultivated"
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"669E6FD81F3B095E"
+				"387F71758908F534"
+			]
+			id: "4B31333072B59004"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "forestry:bee_noble"
+									inactive: "forestry:bee_noble"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:2id"
+									inactive: "forestry:2id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:30id"
+									inactive: "forestry:30id"
+								}
+								"forestry:pollination": {
+									active: "forestry:15i"
+									inactive: "forestry:15i"
+								}
+								"forestry:speed": {
+									active: "forestry:0.6fd"
+									inactive: "forestry:0.6fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 30
+							max_heath: 30
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "forestry:bee_noble"
+										inactive: "forestry:bee_noble"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:2id"
+										inactive: "forestry:2id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:30id"
+										inactive: "forestry:30id"
+									}
+									"forestry:pollination": {
+										active: "forestry:15i"
+										inactive: "forestry:15i"
+									}
+									"forestry:speed": {
+										active: "forestry:0.6fd"
+										inactive: "forestry:0.6fd"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 30
+								max_heath: 30
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "270F629FD8E461CF"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"forestry:bee_noble\"}}}}}))"
+					}
+				}
+				title: "Any Noble Bee"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["669E6FD81F3B095E"]
+			id: "2A45621D0AD6FCC5"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "forestry:bee_majestic"
+									inactive: "forestry:bee_majestic"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:4i"
+									inactive: "forestry:4i"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:35id"
+									inactive: "forestry:35id"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:1.0f"
+									inactive: "forestry:1.0f"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 35
+							max_heath: 35
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "forestry:bee_majestic"
+										inactive: "forestry:bee_majestic"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:4i"
+										inactive: "forestry:4i"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:35id"
+										inactive: "forestry:35id"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:1.0f"
+										inactive: "forestry:1.0f"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 35
+								max_heath: 35
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "1B1970A3C4A5E8C2"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"forestry:bee_majestic\"}}}}}))"
+					}
+				}
+				title: "Any Majestic Bee"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"4B31333072B59004"
+				"2A45621D0AD6FCC5"
+			]
+			id: "373000ECA5523384"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_beatific"
+									inactive: "forestry:bee_effect_beatific"
+								}
+								"forestry:bee_species": {
+									active: "forestry:bee_imperial"
+									inactive: "forestry:bee_imperial"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:2id"
+									inactive: "forestry:2id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:40i"
+									inactive: "forestry:40i"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:0.6fd"
+									inactive: "forestry:0.6fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 40
+							max_heath: 40
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_beatific"
+										inactive: "forestry:bee_effect_beatific"
+									}
+									"forestry:bee_species": {
+										active: "forestry:bee_imperial"
+										inactive: "forestry:bee_imperial"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:2id"
+										inactive: "forestry:2id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:40i"
+										inactive: "forestry:40i"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:0.6fd"
+										inactive: "forestry:0.6fd"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 40
+								max_heath: 40
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "1365A479D3FC7A47"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"forestry:bee_imperial\"}}}}}))"
+					}
+				}
+				title: "Any Imperial Bee"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"373000ECA5523384"
+				"52B7B54AF8F2987E"
+			]
+			id: "53E10A4A42B0C3FA"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "cosmiccore:bee_oxygen"
+									inactive: "cosmiccore:bee_oxygen"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:3i"
+									inactive: "forestry:3i"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_coral"
+									inactive: "forestry:flower_type_coral"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_up_2"
+									inactive: "forestry:tolerance_up_2"
+								}
+								"forestry:lifespan": {
+									active: "forestry:30id"
+									inactive: "forestry:30id"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:0.3fd"
+									inactive: "forestry:0.3fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 30
+							max_heath: 30
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "cosmiccore:bee_oxygen"
+										inactive: "cosmiccore:bee_oxygen"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:3i"
+										inactive: "forestry:3i"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_coral"
+										inactive: "forestry:flower_type_coral"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_up_2"
+										inactive: "forestry:tolerance_up_2"
+									}
+									"forestry:lifespan": {
+										active: "forestry:30id"
+										inactive: "forestry:30id"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:0.3fd"
+										inactive: "forestry:0.3fd"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 30
+								max_heath: 30
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "02F84467000B95C7"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"cosmiccore:bee_oxygen\"}}}}}))"
+					}
+				}
+				title: "Any Lofty Oxygen Bee"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["669E6FD81F3B095E"]
+			id: "5B6BACBBC34AF0CA"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "forestry:bee_diligent"
+									inactive: "forestry:bee_diligent"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:2id"
+									inactive: "forestry:2id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:30id"
+									inactive: "forestry:30id"
+								}
+								"forestry:pollination": {
+									active: "forestry:15i"
+									inactive: "forestry:15i"
+								}
+								"forestry:speed": {
+									active: "forestry:0.6fd"
+									inactive: "forestry:0.6fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 30
+							max_heath: 30
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "forestry:bee_diligent"
+										inactive: "forestry:bee_diligent"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:2id"
+										inactive: "forestry:2id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:30id"
+										inactive: "forestry:30id"
+									}
+									"forestry:pollination": {
+										active: "forestry:15i"
+										inactive: "forestry:15i"
+									}
+									"forestry:speed": {
+										active: "forestry:0.6fd"
+										inactive: "forestry:0.6fd"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 30
+								max_heath: 30
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "2473B7B2840F5AE6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"forestry:bee_diligent\"}}}}}))"
+					}
+				}
+				title: "Any Diligent Bee"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5B6BACBBC34AF0CA"]
+			id: "54A03FCAD442C8E2"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "forestry:bee_rural"
+									inactive: "forestry:bee_rural"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:2id"
+									inactive: "forestry:2id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_wheat"
+									inactive: "forestry:flower_type_wheat"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:20id"
+									inactive: "forestry:20id"
+								}
+								"forestry:pollination": {
+									active: "forestry:30i"
+									inactive: "forestry:30i"
+								}
+								"forestry:speed": {
+									active: "forestry:0.6fd"
+									inactive: "forestry:0.6fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 20
+							max_heath: 20
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "forestry:bee_rural"
+										inactive: "forestry:bee_rural"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:2id"
+										inactive: "forestry:2id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_wheat"
+										inactive: "forestry:flower_type_wheat"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:20id"
+										inactive: "forestry:20id"
+									}
+									"forestry:pollination": {
+										active: "forestry:30i"
+										inactive: "forestry:30i"
+									}
+									"forestry:speed": {
+										active: "forestry:0.6fd"
+										inactive: "forestry:0.6fd"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 20
+								max_heath: 20
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "2138C2FCE799294C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"forestry:bee_rural\"}}}}}))"
+					}
+				}
+				title: "Any Rural Bee"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"5B6BACBBC34AF0CA"
+				"669E6FD81F3B095E"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						analyzed: 0b
+						genome: {
+							"forestry:activity": {
+								active: "forestry:activity_diurnal"
+								inactive: "forestry:activity_diurnal"
+							}
+							"forestry:bee_effect": {
+								active: "forestry:bee_effect_none"
+								inactive: "forestry:bee_effect_none"
+							}
+							"forestry:bee_species": {
+								active: "forestry:bee_unweary"
+								inactive: "forestry:bee_unweary"
+							}
+							"forestry:cave_dwelling": {
+								active: "forestry:falsed"
+								inactive: "forestry:falsed"
+							}
+							"forestry:fertility": {
+								active: "forestry:2id"
+								inactive: "forestry:2id"
+							}
+							"forestry:flower_type": {
+								active: "forestry:flower_type_vanilla"
+								inactive: "forestry:flower_type_vanilla"
+							}
+							"forestry:humidity_tolerance": {
+								active: "forestry:tolerance_none"
+								inactive: "forestry:tolerance_none"
+							}
+							"forestry:lifespan": {
+								active: "forestry:35id"
+								inactive: "forestry:35id"
+							}
+							"forestry:pollination": {
+								active: "forestry:5id"
+								inactive: "forestry:5id"
+							}
+							"forestry:speed": {
+								active: "forestry:1.0f"
+								inactive: "forestry:1.0f"
+							}
+							"forestry:temperature_tolerance": {
+								active: "forestry:tolerance_none"
+								inactive: "forestry:tolerance_none"
+							}
+							"forestry:territory": {
+								active: "forestry:9_6_9"
+								inactive: "forestry:9_6_9"
+							}
+							"forestry:tolerates_rain": {
+								active: "forestry:falsed"
+								inactive: "forestry:falsed"
+							}
+						}
+						health: 35
+						max_heath: 35
+						pristine: 1b
+					}
+				}
+				id: "forestry:bee_princess_ge"
+				tag: {
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "forestry:bee_unweary"
+									inactive: "forestry:bee_unweary"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:2id"
+									inactive: "forestry:2id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:35id"
+									inactive: "forestry:35id"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:1.0f"
+									inactive: "forestry:1.0f"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 35
+							max_heath: 35
+							pristine: 1b
+						}
+					}
+				}
+			}
+			id: "6C391C0D5B18CEE8"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "forestry:bee_unweary"
+									inactive: "forestry:bee_unweary"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:2id"
+									inactive: "forestry:2id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:35id"
+									inactive: "forestry:35id"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:1.0f"
+									inactive: "forestry:1.0f"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 35
+							max_heath: 35
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "forestry:bee_unweary"
+										inactive: "forestry:bee_unweary"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:2id"
+										inactive: "forestry:2id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:35id"
+										inactive: "forestry:35id"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:1.0f"
+										inactive: "forestry:1.0f"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 35
+								max_heath: 35
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "19BAD58897898867"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"forestry:bee_unweary\"}}}}}))"
+					}
+				}
+				title: "Any Unweary Bee"
+				type: "item"
+			}]
+			title: "Any Unweary Bee"
+			x: 7.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"6C391C0D5B18CEE8"
+				"54A03FCAD442C8E2"
+			]
+			id: "3646C859253CCA93"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "forestry:bee_farmerly"
+									inactive: "forestry:bee_farmerly"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:2id"
+									inactive: "forestry:2id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_wheat"
+									inactive: "forestry:flower_type_wheat"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:20id"
+									inactive: "forestry:20id"
+								}
+								"forestry:pollination": {
+									active: "forestry:30i"
+									inactive: "forestry:30i"
+								}
+								"forestry:speed": {
+									active: "forestry:0.8fd"
+									inactive: "forestry:0.8fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:11_8_11"
+									inactive: "forestry:11_8_11"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 20
+							max_heath: 20
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "forestry:bee_farmerly"
+										inactive: "forestry:bee_farmerly"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:2id"
+										inactive: "forestry:2id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_wheat"
+										inactive: "forestry:flower_type_wheat"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:20id"
+										inactive: "forestry:20id"
+									}
+									"forestry:pollination": {
+										active: "forestry:30i"
+										inactive: "forestry:30i"
+									}
+									"forestry:speed": {
+										active: "forestry:0.8fd"
+										inactive: "forestry:0.8fd"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:11_8_11"
+										inactive: "forestry:11_8_11"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 20
+								max_heath: 20
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "46486C7D6FB9AC01"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"forestry:bee_farmerly\"}}}}}))"
+					}
+				}
+				title: "Any Farmerly Bee"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"5B6BACBBC34AF0CA"
+				"6C391C0D5B18CEE8"
+			]
+			id: "6F0678ECB17FD59E"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "forestry:bee_industrious"
+									inactive: "forestry:bee_industrious"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:2id"
+									inactive: "forestry:2id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:40i"
+									inactive: "forestry:40i"
+								}
+								"forestry:pollination": {
+									active: "forestry:25i"
+									inactive: "forestry:25i"
+								}
+								"forestry:speed": {
+									active: "forestry:0.6fd"
+									inactive: "forestry:0.6fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 40
+							max_heath: 40
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "forestry:bee_industrious"
+										inactive: "forestry:bee_industrious"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:2id"
+										inactive: "forestry:2id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:40i"
+										inactive: "forestry:40i"
+									}
+									"forestry:pollination": {
+										active: "forestry:25i"
+										inactive: "forestry:25i"
+									}
+									"forestry:speed": {
+										active: "forestry:0.6fd"
+										inactive: "forestry:0.6fd"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 40
+								max_heath: 40
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "601BF08E49CEAFBD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"forestry:bee_industrious\"}}}}}))"
+					}
+				}
+				title: "Any Industrious Bee"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 10.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"3646C859253CCA93"
+				"6F0678ECB17FD59E"
+			]
+			id: "312526219FBCE5CA"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_fertile"
+									inactive: "forestry:bee_effect_fertile"
+								}
+								"forestry:bee_species": {
+									active: "forestry:bee_agrarian"
+									inactive: "forestry:bee_agrarian"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:2id"
+									inactive: "forestry:2id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_wheat"
+									inactive: "forestry:flower_type_wheat"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_both_2"
+									inactive: "forestry:tolerance_both_2"
+								}
+								"forestry:lifespan": {
+									active: "forestry:20id"
+									inactive: "forestry:20id"
+								}
+								"forestry:pollination": {
+									active: "forestry:30i"
+									inactive: "forestry:30i"
+								}
+								"forestry:speed": {
+									active: "forestry:0.8fd"
+									inactive: "forestry:0.8fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:11_8_11"
+									inactive: "forestry:11_8_11"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 20
+							max_heath: 20
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_fertile"
+										inactive: "forestry:bee_effect_fertile"
+									}
+									"forestry:bee_species": {
+										active: "forestry:bee_agrarian"
+										inactive: "forestry:bee_agrarian"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:2id"
+										inactive: "forestry:2id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_wheat"
+										inactive: "forestry:flower_type_wheat"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_both_2"
+										inactive: "forestry:tolerance_both_2"
+									}
+									"forestry:lifespan": {
+										active: "forestry:20id"
+										inactive: "forestry:20id"
+									}
+									"forestry:pollination": {
+										active: "forestry:30i"
+										inactive: "forestry:30i"
+									}
+									"forestry:speed": {
+										active: "forestry:0.8fd"
+										inactive: "forestry:0.8fd"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:11_8_11"
+										inactive: "forestry:11_8_11"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 20
+								max_heath: 20
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "07E3DBB388E013BA"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"forestry:bee_agrarian\"}}}}}))"
+					}
+				}
+				title: "Any Agrarian Bee"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -11.0d
+		}
+		{
+			dependencies: [
+				"52B7B54AF8F2987E"
+				"312526219FBCE5CA"
+			]
+			id: "1F608D446BD26FB0"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "cosmiccore:bee_hydrogen"
+									inactive: "cosmiccore:bee_hydrogen"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:3i"
+									inactive: "forestry:3i"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_coral"
+									inactive: "forestry:flower_type_coral"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_up_2"
+									inactive: "forestry:tolerance_up_2"
+								}
+								"forestry:lifespan": {
+									active: "forestry:30id"
+									inactive: "forestry:30id"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:0.3fd"
+									inactive: "forestry:0.3fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 30
+							max_heath: 30
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "cosmiccore:bee_hydrogen"
+										inactive: "cosmiccore:bee_hydrogen"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:3i"
+										inactive: "forestry:3i"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_coral"
+										inactive: "forestry:flower_type_coral"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_up_2"
+										inactive: "forestry:tolerance_up_2"
+									}
+									"forestry:lifespan": {
+										active: "forestry:30id"
+										inactive: "forestry:30id"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:0.3fd"
+										inactive: "forestry:0.3fd"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 30
+								max_heath: 30
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "281B05242346306A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"cosmiccore:bee_hydrogen\"}}}}}))"
+					}
+				}
+				title: "Any Lofty Hydrogen Bee"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Any Lofty Hydrogen Bee"
+			x: 0.0d
+			y: -11.0d
+		}
+		{
+			dependencies: [
+				"4347A62289435A3F"
+				"52B7B54AF8F2987E"
+			]
+			id: "0C585706A4F4515C"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "cosmiccore:bee_nitrogen"
+									inactive: "cosmiccore:bee_nitrogen"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:3i"
+									inactive: "forestry:3i"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_coral"
+									inactive: "forestry:flower_type_coral"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_up_2"
+									inactive: "forestry:tolerance_up_2"
+								}
+								"forestry:lifespan": {
+									active: "forestry:30id"
+									inactive: "forestry:30id"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:0.3fd"
+									inactive: "forestry:0.3fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 30
+							max_heath: 30
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "cosmiccore:bee_nitrogen"
+										inactive: "cosmiccore:bee_nitrogen"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:3i"
+										inactive: "forestry:3i"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_coral"
+										inactive: "forestry:flower_type_coral"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_up_2"
+										inactive: "forestry:tolerance_up_2"
+									}
+									"forestry:lifespan": {
+										active: "forestry:30id"
+										inactive: "forestry:30id"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:0.3fd"
+										inactive: "forestry:0.3fd"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 30
+								max_heath: 30
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "205FFE9FC938CDD8"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"cosmiccore:bee_nitrogen\"}}}}}))"
+					}
+				}
+				title: "Any Lofty Nitrogen Bee"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["387F71758908F534"]
+			id: "4347A62289435A3F"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "forestry:bee_cultivated"
+									inactive: "forestry:bee_cultivated"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:2id"
+									inactive: "forestry:2id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:10id"
+									inactive: "forestry:10id"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:1.2fd"
+									inactive: "forestry:1.2fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 10
+							max_heath: 10
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "forestry:bee_cultivated"
+										inactive: "forestry:bee_cultivated"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:2id"
+										inactive: "forestry:2id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:10id"
+										inactive: "forestry:10id"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:1.2fd"
+										inactive: "forestry:1.2fd"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 10
+								max_heath: 10
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "2C27C11FDC413E29"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"forestry:bee_cultivated\"}}}}}))"
+					}
+				}
+				title: "Any Cultivated Species"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Any Cultivated Bee"
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"387F71758908F534"
+				"52B7B54AF8F2987E"
+			]
+			id: "25541A222D843D38"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_diurnal"
+									inactive: "forestry:activity_diurnal"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "cosmiccore:bee_argon"
+									inactive: "cosmiccore:bee_argon"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:3i"
+									inactive: "forestry:3i"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_coral"
+									inactive: "forestry:flower_type_coral"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_up_2"
+									inactive: "forestry:tolerance_up_2"
+								}
+								"forestry:lifespan": {
+									active: "forestry:30id"
+									inactive: "forestry:30id"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:0.3fd"
+									inactive: "forestry:0.3fd"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 30
+							max_heath: 30
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_diurnal"
+										inactive: "forestry:activity_diurnal"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "cosmiccore:bee_argon"
+										inactive: "cosmiccore:bee_argon"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:3i"
+										inactive: "forestry:3i"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_coral"
+										inactive: "forestry:flower_type_coral"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_up_2"
+										inactive: "forestry:tolerance_up_2"
+									}
+									"forestry:lifespan": {
+										active: "forestry:30id"
+										inactive: "forestry:30id"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:0.3fd"
+										inactive: "forestry:0.3fd"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 30
+								max_heath: 30
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "236F641D23E7402B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"cosmiccore:bee_argon\"}}}}}))"
+					}
+				}
+				title: "Any Lofty Argon Bee"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["208A91611A66F60E"]
+			description: [
+				"Can be added to the leaching step of ore processing to guarantee a 1:2 output vs the averaged 1:1.5 output that leaching normally provides."
+				""
+				"This combined with frothing allows for much higher ore yields."
+				""
+				"You can even use this with machines in higher tiers (ZPM) that will massively increase your ore yields."
+			]
+			id: "3F2A27A3E893378D"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Even more resources"
+			tasks: [{
+				id: "4A422E35F36E711F"
+				item: "cosmiccore:abrasive_rosin_millstones"
+				type: "item"
+			}]
+			title: "More Ore!"
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["23C9174CB7E004A4"]
+			id: "4659BFC309EE3EAB"
+			tasks: [{
+				id: "5671383E7DB41D64"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_cathemeral"
+									inactive: "forestry:activity_cathemeral"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "cosmiccore:bee_pale"
+									inactive: "cosmiccore:bee_pale"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:1id"
+									inactive: "forestry:1id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:60i"
+									inactive: "forestry:60i"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:1.7f"
+									inactive: "forestry:1.7f"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 60
+							max_heath: 60
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_queen_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_cathemeral"
+										inactive: "forestry:activity_cathemeral"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "cosmiccore:bee_pale"
+										inactive: "cosmiccore:bee_pale"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:1id"
+										inactive: "forestry:1id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:60i"
+										inactive: "forestry:60i"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:1.7f"
+										inactive: "forestry:1.7f"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 60
+								max_heath: 60
+								pristine: 1b
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["2C50692401A1971B"]
+			hide_dependency_lines: true
+			id: "5DC0790A6AE04CE2"
+			tasks: [{
+				id: "757581E499A34DD5"
+				item: "cosmiccore:ev_biolab"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2C50692401A1971B"]
+			hide_dependency_lines: true
+			id: "11DFCF701251122D"
+			tasks: [{
+				id: "6A34421070EB3A2F"
+				item: "cosmiccore:iv_biolab"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2C50692401A1971B"]
+			hide_dependency_lines: true
+			id: "5E91B8DBCE21F6AC"
+			tasks: [{
+				id: "722767C0D4B4C4BB"
+				item: "cosmiccore:luv_biolab"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["2C50692401A1971B"]
+			hide_dependency_lines: true
+			id: "23C9174CB7E004A4"
+			tasks: [{
+				id: "32DE9DC211F1C6AD"
+				item: "cosmiccore:zpm_biolab"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["2C50692401A1971B"]
+			hide_dependency_lines: true
+			id: "7E2D85A176882D12"
+			tasks: [{
+				id: "6FE4D520BBCEFCB1"
+				item: "cosmiccore:uv_biolab"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["0B364C5141859E7F"]
+			id: "5392EAC6309B5073"
+			shape: "hexagon"
+			tasks: [{
+				id: "479280543497F597"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_cathemeral"
+									inactive: "forestry:activity_cathemeral"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "cosmiccore:bee_biohazard"
+									inactive: "cosmiccore:bee_biohazard"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:1id"
+									inactive: "forestry:1id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:60i"
+									inactive: "forestry:60i"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:1.7f"
+									inactive: "forestry:1.7f"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 60
+							max_heath: 60
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_queen_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_cathemeral"
+										inactive: "forestry:activity_cathemeral"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "cosmiccore:bee_biohazard"
+										inactive: "cosmiccore:bee_biohazard"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:1id"
+										inactive: "forestry:1id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:60i"
+										inactive: "forestry:60i"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:1.7f"
+										inactive: "forestry:1.7f"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 60
+								max_heath: 60
+								pristine: 1b
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["5E91B8DBCE21F6AC"]
+			id: "1E3B96AFBD9EFE12"
+			tasks: [{
+				id: "1E45710BF9D3C9F7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_cathemeral"
+									inactive: "forestry:activity_cathemeral"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "cosmiccore:bee_soul"
+									inactive: "cosmiccore:bee_soul"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:1id"
+									inactive: "forestry:1id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:60i"
+									inactive: "forestry:60i"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:1.7f"
+									inactive: "forestry:1.7f"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 60
+							max_heath: 60
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_queen_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_cathemeral"
+										inactive: "forestry:activity_cathemeral"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "cosmiccore:bee_soul"
+										inactive: "cosmiccore:bee_soul"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:1id"
+										inactive: "forestry:1id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:60i"
+										inactive: "forestry:60i"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:1.7f"
+										inactive: "forestry:1.7f"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 60
+								max_heath: 60
+								pristine: 1b
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7E2D85A176882D12"]
+			id: "144DB315EBB75C11"
+			tasks: [{
+				id: "1C92C6BAFBCA0347"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_cathemeral"
+									inactive: "forestry:activity_cathemeral"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "cosmiccore:bee_runic"
+									inactive: "cosmiccore:bee_runic"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:1id"
+									inactive: "forestry:1id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:60i"
+									inactive: "forestry:60i"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:1.7f"
+									inactive: "forestry:1.7f"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 60
+							max_heath: 60
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_queen_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_cathemeral"
+										inactive: "forestry:activity_cathemeral"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "cosmiccore:bee_runic"
+										inactive: "cosmiccore:bee_runic"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:1id"
+										inactive: "forestry:1id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:60i"
+										inactive: "forestry:60i"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:1.7f"
+										inactive: "forestry:1.7f"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 60
+								max_heath: 60
+								pristine: 1b
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["23C9174CB7E004A4"]
+			id: "1FC583EEB20C0438"
+			tasks: [{
+				id: "15988CB9CC170271"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_cathemeral"
+									inactive: "forestry:activity_cathemeral"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "cosmiccore:bee_ambrosic"
+									inactive: "cosmiccore:bee_ambrosic"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:1id"
+									inactive: "forestry:1id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:60i"
+									inactive: "forestry:60i"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:1.7f"
+									inactive: "forestry:1.7f"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 60
+							max_heath: 60
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_queen_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_cathemeral"
+										inactive: "forestry:activity_cathemeral"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "cosmiccore:bee_ambrosic"
+										inactive: "cosmiccore:bee_ambrosic"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:1id"
+										inactive: "forestry:1id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:60i"
+										inactive: "forestry:60i"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:1.7f"
+										inactive: "forestry:1.7f"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 60
+								max_heath: 60
+								pristine: 1b
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["77B2690C199DA311"]
+			description: ["Allows creation of all <UV Tier Bees via UHV Gene Culture Recipes"]
+			id: "0B364C5141859E7F"
+			subtitle: "To go beyond"
+			tasks: [{
+				id: "1EBE535B3FA22321"
+				item: "cosmiccore:biovat"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["7468F231E14E2584"]
+			description: [
+				"God this page sucks to make"
+				""
+				"if anyone wants to add more bee entries please be my guest just make it a PR"
+			]
+			id: "2C2158BDC8CB25A1"
+			subtitle: "WAAAAAAAAAAAAA"
+			tasks: [{
+				id: "4CE4C74A1F48525B"
+				title: "THIS ENTIRE QB PAGE IS A WIP"
+				type: "custom"
+			}]
+			x: -8.5d
+			y: -8.0d
+		}
+	]
+	title: "The Busy Bee"
+}

@@ -17,11 +17,11 @@
 			y: -3.305229591836735d
 		}
 		{
-			height: 4.0d
-			image: "frontiers:textures/questimages/miscicons/wingedborder.png"
+			height: 1.5d
+			image: "frontiers:textures/questimages/miscicons/blank_borders.png"
 			rotation: 0.0d
 			width: 4.0d
-			x: 6.103749111584953d
+			x: 6.0d
 			y: -0.5d
 		}
 	]
@@ -245,33 +245,98 @@
 			}
 			id: "5693AA8924634F44"
 			rewards: [{
-				id: "77B394833AAFBC59"
+				id: "629E504A38989AE9"
 				item: {
 					Count: 1
-					id: "gtceu:steel_mining_hammer"
+					id: "tconstruct:sledge_hammer"
 					tag: {
 						Damage: 0
-						DisallowContainerItem: 0b
-						GT.Behaviours: {
-							AoEColumn: 1
-							AoELayer: 0
-							AoERow: 1
-							MaxAoEColumn: 1
-							MaxAoELayer: 0
-							MaxAoERow: 1
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:cobalt"
+							"tconstruct:cobalt"
+							"tconstruct:cobalt"
+							"tconstruct:cobalt"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tconstruct:unbreakable"
+							}
+							{
+								level: 1
+								name: "tconstruct:creative_slot"
+							}
+							{
+								level: 5
+								name: "tconstruct:reinforced"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+							{
+								level: 4
+								name: "tconstruct:lightweight"
+							}
+							{
+								level: 2
+								name: "tconstruct:smite"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.35f
+							"tconstruct:durability": 4.0f
+							"tconstruct:mining_speed": 0.4f
 						}
-						GT.Tool: {
-							HarvestLevel: 3
-							MaxDamage: 1535
-							ToolSpeed: 6.0f
+						tic_name: "Weirdly Durable Hammer"
+						tic_persistent: {
+							abilities: -1
+							"tconstruct:creative": {
+								abilities: 1
+								upgrades: 6
+							}
+							upgrades: -6
 						}
-						HideFlags: 2
-						Unbreakable: 1
-						display: {
-							Name: "{\"text\":\"Weirdly Durable Hammer\"}"
+						tic_stats: {
+							"tconstruct:armor_toughness": 1.0f
+							"tconstruct:attack_damage": 8.505001f
+							"tconstruct:attack_speed": 1.0079999f
+							"tconstruct:draw_speed": 1.12f
+							"tconstruct:durability": 4031.9998f
+							"tconstruct:harvest_tier": "minecraft:netherite"
+							"tconstruct:knockback_resistance": 0.05f
+							"tconstruct:mining_speed": 4.3679996f
+							"tconstruct:velocity": 1.232f
 						}
+						tic_upgrades: [
+							{
+								level: 1
+								name: "tconstruct:creative_slot"
+							}
+							{
+								level: 5
+								name: "tconstruct:reinforced"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+							{
+								level: 1
+								name: "tconstruct:unbreakable"
+							}
+						]
+						tic_volatile_data: {
+							abilities: 2
+							"tconstruct:indestructible": 1b
+							"tconstruct:rarity": 2
+							upgrades: 8
+						}
+						toolExp: 13.420000000000002d
 					}
 				}
+				only_one: true
 				type: "item"
 			}]
 			subtitle: "I don't care how you get it."
@@ -920,7 +985,7 @@
 				""
 				""
 				""
-				"If you are experiencing horrible performance, I suggest disabling it(C2ME) and Sinytra Connector."
+				"If you are experiencing horrible performance, I suggest disabling it(C2ME)."
 			]
 			icon: "gtceu:small_vibrant_alloy_gear"
 			id: "0C12BB97C29D4CD2"
@@ -930,7 +995,7 @@
 				id: "1F59BF679E9E63B3"
 				type: "checkmark"
 			}]
-			title: "Congruent Chunk Managment Engine [C2ME]"
+			title: "Concurrent Chunk Managment Engine [C2ME]"
 			x: 3.738095238095255d
 			y: 7.240242346938771d
 		}

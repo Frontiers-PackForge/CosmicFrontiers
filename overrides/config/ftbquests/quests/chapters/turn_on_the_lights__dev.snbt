@@ -15,14 +15,25 @@
 		}
 	}
 	id: "587D4E7488759F63"
-	images: [{
-		height: 3.5d
-		image: "frontiers:textures/questimages/miscicons/wingedborder.png"
-		rotation: 0.0d
-		width: 3.5d
-		x: 1.0714285714285694d
-		y: 8.488095238095234d
-	}]
+	images: [
+		{
+			height: 1.5d
+			image: "frontiers:textures/questimages/miscicons/blank_borders.png"
+			order: 10
+			rotation: 90.0d
+			width: 4.0d
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			height: 2.5d
+			image: "frontiers:textures/questimages/miscicons/lv.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 9.0d
+			y: -2.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -1797,8 +1808,8 @@
 				title: "Travel to the Aether"
 				type: "dimension"
 			}]
-			x: 0.0d
-			y: 11.0d
+			x: 3.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["333BADC53E165610"]
@@ -1821,14 +1832,11 @@
 				item: "cosmiccore:plated_aerocloud"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 11.0d
+			x: 5.5d
+			y: 12.5d
 		}
 		{
-			dependencies: [
-				"1187EE2E425DD12B"
-				"09A62C4DA9DBF45A"
-			]
+			dependencies: ["1187EE2E425DD12B"]
 			icon: "createdeco:decal_up"
 			id: "738518B9A3484AC1"
 			rewards: [{
@@ -1942,7 +1950,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["09A62C4DA9DBF45A"]
+			dependencies: ["738518B9A3484AC1"]
 			description: [
 				"Something was here, but I can’t remember."
 				""
@@ -1974,7 +1982,7 @@
 				}
 			]
 			title: "Consistent Headaches"
-			x: -2.0d
+			x: -1.0d
 			y: 11.0d
 		}
 		{
@@ -2062,7 +2070,7 @@
 				type: "checkmark"
 			}]
 			title: "Surviving the Frost"
-			x: 0.0d
+			x: 1.0d
 			y: 12.5d
 		}
 		{

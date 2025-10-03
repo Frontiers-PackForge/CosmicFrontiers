@@ -323,7 +323,7 @@
 		}
 		{
 			dependencies: ["6966ADADA86CBCC4"]
-			hide_dependency_lines: true
+			hide_dependency_lines: false
 			id: "599804BD824DC5D8"
 			tasks: [{
 				id: "134F17CBED9DF8B5"
@@ -654,8 +654,8 @@
 				item: "gtceu:tellurium_ingot"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -1.0d
+			x: 2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["736DDA50FF3E152B"]
@@ -684,7 +684,24 @@
 		}
 		{
 			dependencies: ["729E3A063736105A"]
+			description: [
+				"&7Hadalite, a material swirling with darkness and abyssal vibrations."
+				""
+				"&7Your initial chemical analysis has revealed extremely value materials such as Holmium and Thallium.&r"
+				""
+				"&7You should dig deeper and unlock the true nature of this ore, you might be nearing a breakthrough.&r"
+				""
+				"Welcome to Superchain #2, this chain itself will represent a achievement similar to when you constructed your first Platinum metallic Products. "
+				""
+				"You'll be extracting, fusing, fissioning, and processing your way to several new materials all overlapping eachother in their own ways"
+				""
+				"Firstly, &eThallium&r, followed by &eHolmium&r and &eGermanium&r, then pushing your way into exotic materials like &eSeaborgium&r, &eTaranium&r, and the fabled living flame, &cIgniclad&r."
+				""
+				"You'll also need to process down Naummunite into &e&lRubidium&r for a unique &6glass supercoolant&r."
+			]
 			id: "223863B177481FD0"
+			min_width: 450
+			subtitle: "The Great Ore Chain"
 			tasks: [{
 				id: "56EE24EAFB05B55C"
 				item: "gtceu:hadalite_sludge_bucket"
@@ -1713,10 +1730,7 @@
 			y: -9.0d
 		}
 		{
-			dependencies: [
-				"23DBF1B5344256C9"
-				"3F8968E9F09F0106"
-			]
+			dependencies: ["23DBF1B5344256C9"]
 			id: "5D3ECF60ECEC3248"
 			shape: "hexagon"
 			size: 1.5d
@@ -1975,25 +1989,14 @@
 				item: "gtceu:liquid_shadows_bucket"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["4043F8ECA792A3A2"]
-			id: "3F8968E9F09F0106"
-			tasks: [{
-				id: "32B64CE50C45A687"
-				item: "create:shadow_steel"
-				type: "item"
-			}]
-			x: -6.5d
+			x: 1.0d
 			y: -4.0d
 		}
 		{
 			dependencies: [
-				"3F8968E9F09F0106"
 				"4DB8FD24F1E67BE3"
 				"39097F62BFC78AD3"
+				"79305C826B2705FD"
 			]
 			id: "23DBF1B5344256C9"
 			tasks: [{
@@ -2003,19 +2006,6 @@
 			}]
 			x: -4.0d
 			y: -6.0d
-		}
-		{
-			dependencies: ["3F8968E9F09F0106"]
-			id: "23A6378BC33142A3"
-			shape: "gear"
-			tasks: [{
-				id: "44827A2E8356FD7D"
-				item: "cosmiccore:nevramite_ingot"
-				type: "item"
-			}]
-			title: "Nevramite The Cheap Way"
-			x: -8.0d
-			y: -3.5d
 		}
 		{
 			dependencies: ["482FC79E15210C24"]
@@ -2098,17 +2088,6 @@
 			}]
 			x: -8.0d
 			y: -7.5d
-		}
-		{
-			dependencies: ["3F8968E9F09F0106"]
-			id: "5017A3A8755FFADD"
-			tasks: [{
-				id: "379291B292713CF1"
-				item: "create:shadow_steel_casing"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -4.5d
 		}
 		{
 			dependencies: ["4043F8ECA792A3A2"]
@@ -2313,6 +2292,235 @@
 			}]
 			x: 1.3214285714285623d
 			y: 1.982142857142854d
+		}
+		{
+			dependencies: ["00DFD27B37363F4F"]
+			description: [
+				"\"Why does this bee produce sawblades\""
+				""
+				"Don't ask, I don't know either."
+				""
+				"Careful, they're sharp and there is another pallet of them from your hives."
+			]
+			id: "7D957FA65DEA6955"
+			subtitle: "A Painful Path"
+			tasks: [{
+				id: "2F76D48CBA2B089C"
+				item: "cosmiccore:pale_saw"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"7B10104A79CA3447"
+				"482614E3EB8D5DE0"
+				"5CBF270FCD625753"
+				"1D50B3BB5B643383"
+			]
+			id: "79305C826B2705FD"
+			tasks: [{
+				id: "207F777199C0AB18"
+				item: "cosmiccore:pale_steel_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["00DFD27B37363F4F"]
+			id: "7B10104A79CA3447"
+			tasks: [{
+				id: "062C0E0FE8FC3053"
+				item: "cosmiccore:bee_comb_pale"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			id: "00DFD27B37363F4F"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_cathemeral"
+									inactive: "forestry:activity_cathemeral"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "cosmiccore:bee_pale"
+									inactive: "cosmiccore:bee_pale"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:1id"
+									inactive: "forestry:1id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:60i"
+									inactive: "forestry:60i"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:1.7f"
+									inactive: "forestry:1.7f"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 60
+							max_heath: 60
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_cathemeral"
+										inactive: "forestry:activity_cathemeral"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "cosmiccore:bee_pale"
+										inactive: "cosmiccore:bee_pale"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:1id"
+										inactive: "forestry:1id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:60i"
+										inactive: "forestry:60i"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:1.7f"
+										inactive: "forestry:1.7f"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 60
+								max_heath: 60
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "7F46ADE22665D95D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"cosmiccore:bee_pale\"}},health:60,max_heath:60,pristine:1b}}})"
+					}
+				}
+				title: "Any Pale Species"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B10104A79CA3447"]
+			id: "5CBF270FCD625753"
+			subtitle: "Powerful Lubricant"
+			tasks: [{
+				id: "695B00B72CEB4394"
+				item: "cosmiccore:pale_oil_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D957FA65DEA6955"]
+			id: "482614E3EB8D5DE0"
+			subtitle: "Shimmers in the dark"
+			tasks: [{
+				id: "6BDEB44D39758820"
+				item: "cosmiccore:pale_scrap"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B10104A79CA3447"]
+			id: "1D50B3BB5B643383"
+			subtitle: "An Ore Forgotten"
+			tasks: [{
+				id: "2ADE5855E883B03C"
+				item: "cosmiccore:raw_reclaimed_pale_ore"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.696428571428555d
 		}
 	]
 	title: "Soulforging - [&3UV&7]"

@@ -1259,8 +1259,8 @@
 				item: "gtceu:me_pattern_buffer_proxy"
 				type: "item"
 			}]
-			x: -0.75d
-			y: 6.0d
+			x: -1.5d
+			y: 8.25d
 		}
 		{
 			dependencies: ["31CE310C898AC695"]
@@ -3135,6 +3135,40 @@
 			}]
 			x: 5.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["3721D1E1F204378F"]
+			description: [
+				"The &6Hyper Optimized Nectar Extraction Yard&r - Aptly Known as &6H.O.N.E.Y&r is the largest bee production facility you can make."
+				""
+				"This multiblock comes with some unique features"
+				""
+				"- It only accepts 1 Energy Hatch, and can accept no more than 3 of any I/O hatch type (unstacked)"
+				""
+				"- Feeding it various &aOverclock Nutrient&r and &bProduction Nutrient&r"
+				"will boost the &aspeed&r and &byield&r. Check them out in &lEMI&r"
+				""
+				"- Each Queen Inserted requires 1 Amp of &cZPM&r Energy to run"
+				"    &oEg. 5 Queens * 131,072 EU/t = Requires 655,360 EU/t&r"
+				""
+				"- May Accept Any Combination of Queens, up to a Max of 64."
+				""
+				"- Bees have '&6Perfect Conditions&r', '&eImmortal Lifespans&r' "
+				"    and '&6Maximum Production&r' when inside the HONEY."
+				"     &cThis makes gene selection irrelevant&r."
+			]
+			id: "63FC9DA1B7A17D14"
+			min_width: 350
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "The Largest Hive"
+			tasks: [{
+				id: "6F8183A6A7DA9516"
+				item: "cosmiccore:honey_alveary"
+				type: "item"
+			}]
+			x: -2.25d
+			y: 6.75d
 		}
 	]
 	title: "The Sanguine Peak - [ZPM]"

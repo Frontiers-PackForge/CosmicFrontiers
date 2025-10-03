@@ -6,6 +6,33 @@
 	group: "43A79D0106662C02"
 	icon: "gtceu:basic_electronic_circuit"
 	id: "55EDC9570618B12B"
+	images: [
+		{
+			height: 1.5d
+			image: "frontiers:textures/questimages/miscicons/blank_borders.png"
+			order: 10
+			rotation: 0.0d
+			width: 4.0d
+			x: -10.5d
+			y: 7.5d
+		}
+		{
+			height: 1.5d
+			image: "frontiers:textures/questimages/miscicons/blank_borders.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -17.0d
+			y: 7.5d
+		}
+		{
+			height: 2.5d
+			image: "frontiers:textures/questimages/miscicons/steam.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: -7.0714285714285765d
+			y: -8.571428571428605d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -52,15 +79,11 @@
 				item: "gtceu:bronze_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.5d
+			x: -2.0d
+			y: -7.0d
 		}
 		{
-			dependencies: [
-				"620A26CBDA730340"
-				"38DF96F993008505"
-				"30C980B828A48306"
-			]
+			dependencies: ["2D3A8F1BB20E6734"]
 			description: [
 				"You'll need &a29 Coke Bricks Blocks&r to Assemble your &eCoke oven&r."
 				""
@@ -106,8 +129,8 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: -5.5d
+			x: 0.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["5AB046A0E1BFBE1E"]
@@ -234,8 +257,8 @@
 				item: "gtceu:primitive_pump"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -2.5d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["30C980B828A48306"]
@@ -244,7 +267,6 @@
 				""
 				"Don't forget you have access to &aFTB:Ultimine&r. Go get 4 stacks."
 			]
-			hide_dependency_lines: true
 			id: "620A26CBDA730340"
 			rewards: [{
 				count: 4
@@ -252,6 +274,8 @@
 				item: "cosmiccore:shard_of_perpetuity"
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.0d
 			subtitle: "It's in your clothes!"
 			tasks: [{
 				count: 256L
@@ -259,8 +283,8 @@
 				item: "minecraft:sand"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -6.5d
+			x: -1.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["30C980B828A48306"]
@@ -269,7 +293,6 @@
 				""
 				"Don't forget you have access to &aFTB:Ultimine&r. Go get 8 stacks."
 			]
-			hide_dependency_lines: true
 			id: "38DF96F993008505"
 			rewards: [{
 				count: 4
@@ -277,14 +300,16 @@
 				item: "cosmiccore:shard_of_perpetuity"
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.0d
 			subtitle: "A bricks best friend."
 			tasks: [{
 				id: "7CEE6D99E2292546"
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -6.5d
+			x: -2.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["30C980B828A48306"]
@@ -312,7 +337,6 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["30C980B828A48306"]
 			description: [
 				"&eBronze Bricked Casings&r find usage in several multi-blocks and singleblocks."
 				""
@@ -474,7 +498,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["18A9A17A7A12A615"]
@@ -490,8 +514,8 @@
 				item: "gtceu:treated_wood_planks"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -3.5d
+			x: 4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["4CF936349B23F7B3"]
@@ -501,6 +525,7 @@
 				"Just slather it all over your wood, and it's good enough to handle water exposure."
 				"I don't think rubbing creosote on wood makes it less flammable."
 			]
+			hide_dependency_lines: true
 			id: "18A9A17A7A12A615"
 			rewards: [{
 				count: 4
@@ -508,6 +533,8 @@
 				item: "cosmiccore:shard_of_perpetuity"
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.25d
 			subtitle: "What even is this?"
 			tasks: [{
 				id: "3E929817608097FD"
@@ -515,7 +542,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -4.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -574,8 +601,8 @@
 				type: "checkmark"
 			}]
 			title: "Create?!"
-			x: 0.0d
-			y: -4.25d
+			x: -3.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["0FF5358645CE9BD5"]
@@ -1068,8 +1095,8 @@
 				item: "gtceu:steel_brick_casing"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -5.5d
+			x: -6.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -1362,7 +1389,7 @@
 				type: "checkmark"
 			}]
 			title: "Surviving the Inferno"
-			x: -9.5d
+			x: -7.0d
 			y: -3.5d
 		}
 		{
@@ -1464,8 +1491,8 @@
 				type: "item"
 			}]
 			title: "Playing Multiplayer?"
-			x: -9.5d
-			y: -2.5d
+			x: -6.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1797,6 +1824,7 @@
 			dependencies: [
 				"1206EA8BA057A00F"
 				"0584B3650BE26B9C"
+				"0F6A6D47919F7738"
 			]
 			description: [
 				"&6Rune Language&r allows you to define &estatic magic circuits&r into &amatter&r."
@@ -2008,6 +2036,7 @@
 			dependencies: [
 				"65776EEC99D33056"
 				"549B34408EBE9582"
+				"4C7FC02A5141CA39"
 			]
 			description: ["You'll need to wear these to see Iesnium Ore which is located in the Nether."]
 			id: "2D14D28D2CD892DD"
@@ -2079,11 +2108,14 @@
 				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.5d
+			x: 1.0d
+			y: -5.5d
 		}
 		{
-			dependencies: ["226A43815ECB2818"]
+			dependencies: [
+				"226A43815ECB2818"
+				"403E2DB441D65A4D"
+			]
 			description: [
 				"These motors allow some more complex steam devices to inately convert incoming steam to energy for recipe processing."
 				""
@@ -2110,8 +2142,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: -2.5d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["6ABAAE95062134B2"]
@@ -2241,12 +2273,13 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: 7.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
 				"1D6235CDF7886C1C"
 				"272C72FCE24CC4E4"
+				"0F660B20D7552DD3"
 			]
 			description: ["LV Machine Hulls are the foundation for LV Machines, which will allow you start working on proper electrical industry!"]
 			id: "124AD3DE3B043A7A"
@@ -2264,8 +2297,8 @@
 				item: "gtceu:lv_machine_hull"
 				type: "item"
 			}]
-			x: -16.5d
-			y: 7.0d
+			x: -17.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["7A0DD41E3C9BA413"]
@@ -2317,15 +2350,15 @@
 				type: "item"
 			}]
 			shape: "pentagon"
-			size: 2.5d
+			size: 1.5d
 			subtitle: "Onward and Upward!"
 			tasks: [{
 				id: "10219158B65B959D"
 				type: "checkmark"
 			}]
 			title: "Ready for LV?"
-			x: -13.5d
-			y: 7.0d
+			x: -13.75d
+			y: 7.5d
 		}
 		{
 			dependencies: ["0FF5358645CE9BD5"]
@@ -2336,7 +2369,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 7.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["47B9B1900C760C90"]
@@ -2533,8 +2566,8 @@
 				type: "item"
 			}]
 			title: "To Question What's Here"
-			x: -13.5d
-			y: 9.0d
+			x: -13.75d
+			y: 9.5d
 		}
 		{
 			dependencies: ["30C980B828A48306"]
@@ -2564,8 +2597,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: -7.0d
+			x: -3.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["00B281664EDD41AA"]
@@ -2645,8 +2678,8 @@
 				type: "item"
 			}]
 			title: "Better Storage? : Bronze Crate!"
-			x: 0.0d
-			y: -7.0d
+			x: -3.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["0FF5358645CE9BD5"]
@@ -2687,6 +2720,389 @@
 				type: "item"
 			}]
 			title: "A Small Reward"
+			x: -3.5d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"620A26CBDA730340"
+				"38DF96F993008505"
+			]
+			hide_dependency_lines: true
+			id: "67453A3DA986CB97"
+			tasks: [{
+				id: "5771D43471F0E945"
+				item: "tconstruct:grout"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"4CF936349B23F7B3"
+				"67453A3DA986CB97"
+			]
+			id: "3D4680752E4D4864"
+			tasks: [{
+				id: "073A79D2EBE5B214"
+				item: "tconstruct:seared_brick"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["3D4680752E4D4864"]
+			id: "41E267DD971DB49E"
+			tasks: [{
+				id: "0B8B3D0158E18553"
+				item: "tconstruct:seared_melter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"41E267DD971DB49E"
+				"3D4680752E4D4864"
+			]
+			id: "62B75C630DA0373F"
+			tasks: [{
+				id: "6EFB647F8592F449"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			id: "435A29E177F02CA5"
+			tasks: [{
+				id: "393277226AF4120F"
+				item: "embers:dawnstone_block"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"30C980B828A48306"
+				"1A19173669EE0069"
+			]
+			id: "7AE3FEB598611E19"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "170A547B5F0924BF"
+				item: {
+					Count: 1
+					id: "cosmiccore:wire_cutter"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:bronze"
+							"tconstruct:bronze"
+							"tconstruct:bronze"
+							"tconstruct:bronze"
+							"tconstruct:bronze"
+						]
+						tic_modifiers: [{
+							level: 5
+							name: "tconstruct:maintained"
+						}]
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:attack_damage": 4.5f
+							"tconstruct:attack_speed": 0.9f
+							"tconstruct:durability": 1824.0001f
+							"tconstruct:harvest_tier": "minecraft:diamond"
+							"tconstruct:mining_speed": 14.3f
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7AE3FEB598611E19"]
+			id: "403E2DB441D65A4D"
+			tasks: [{
+				id: "3A31A34AC4970B01"
+				item: "gtceu:lead_single_wire"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"620A26CBDA730340"
+				"38DF96F993008505"
+			]
+			hide_dependency_lines: true
+			id: "2D3A8F1BB20E6734"
+			tasks: [{
+				id: "62DBFCF098DDC06F"
+				item: "gtceu:compressed_coke_clay"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["00B281664EDD41AA"]
+			id: "4874241C7EA134EC"
+			tasks: [{
+				id: "6534F17AB0E9A286"
+				item: "tconstruct:raw_cobalt"
+				type: "item"
+			}]
+			title: "Nether Pure Cobalt"
+			x: -9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4874241C7EA134EC"]
+			id: "0815B0C34E1E001E"
+			tasks: [{
+				id: "3513F85A47B7F4F9"
+				item: "embers:ember_bore"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"36386E5701A66BB3"
+				"7CB6F107009BAF72"
+			]
+			id: "0F6A6D47919F7738"
+			tasks: [{
+				id: "7318722C710F1F04"
+				item: "embers:resonating_bell"
+				type: "item"
+			}]
+			x: -19.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0815B0C34E1E001E"]
+			hide_dependency_lines: true
+			id: "36386E5701A66BB3"
+			tasks: [{
+				id: "2E05897BDF5E4595"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			x: -19.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4874241C7EA134EC"]
+			id: "6C7AB15C0BA7DFB4"
+			tasks: [{
+				id: "3265EA1589ADC116"
+				item: "embers:field_chart"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"36386E5701A66BB3"
+				"33F12EC34D6CBDD5"
+			]
+			id: "4C7FC02A5141CA39"
+			tasks: [{
+				id: "65BBED728D60C86B"
+				item: "embers:focal_lens"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7CB6F107009BAF72"]
+			id: "0F660B20D7552DD3"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "7108832C95746EA9"
+				item: "cosmiccore:lv_wildfire_core"
+				type: "item"
+			}]
+			x: -22.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0815B0C34E1E001E"]
+			id: "3CA8963AE73EBA6D"
+			subtitle: "The Fuel of Ancients"
+			tasks: [{
+				id: "77B65E60C97BFF1A"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3CA8963AE73EBA6D"]
+			id: "48BDFCB2679E3F89"
+			tasks: [{
+				id: "7FAC75C6FFBFB13B"
+				item: "embers:ember_activator"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["48BDFCB2679E3F89"]
+			id: "017EEFCAD66AEA73"
+			tasks: [{
+				id: "7F4EAA508AFCDB86"
+				item: "embers:mixer_centrifuge"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["017EEFCAD66AEA73"]
+			id: "0A689FB9773F31CB"
+			tasks: [{
+				id: "43FF54BFC74E7D31"
+				item: "embers:molten_dawnstone_bucket"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["48BDFCB2679E3F89"]
+			description: [
+				"Ember Emitters allow transmission of embers with a redstone signal."
+				""
+				"Relays allow you to extend the range ember may be transfered between devices"
+				""
+				"Ember Receptors accept Ember on the same connected network from relays or emitters."
+				""
+				""
+				"Connect these devices together using the Tinker's Hammer"
+				""
+				"Note; Ashen goggles will show your routing for nodes"
+			]
+			id: "2899EC950870F83C"
+			subtitle: "Moving Ember around"
+			tasks: [
+				{
+					id: "0155B7AE41F4F0F0"
+					item: "embers:ember_emitter"
+					type: "item"
+				}
+				{
+					id: "220BF31225B1C24F"
+					item: "embers:ember_receiver"
+					type: "item"
+				}
+				{
+					id: "0B760AC3A4840CB4"
+					item: "embers:ember_relay"
+					type: "item"
+				}
+				{
+					id: "3F51BC5D31C96C20"
+					item: "embers:tinker_hammer"
+					type: "item"
+				}
+			]
+			title: "Ember Transfer"
+			x: -11.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"6C2C0D312A4438EF"
+				"0A689FB9773F31CB"
+			]
+			id: "33F12EC34D6CBDD5"
+			tasks: [{
+				id: "1F6CB5BC8F70FA83"
+				item: "embers:dawnstone_ingot"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["017EEFCAD66AEA73"]
+			id: "6C2C0D312A4438EF"
+			subtitle: "Molding Dawnstone, the hard way."
+			tasks: [
+				{
+					id: "50132B6665F79E65"
+					item: "embers:stamp_base"
+					type: "item"
+				}
+				{
+					id: "04FCADCB168DD316"
+					item: "embers:stamper"
+					type: "item"
+				}
+				{
+					id: "3A12E2FAC7C116FC"
+					item: "embers:ingot_stamp"
+					type: "item"
+				}
+			]
+			x: -15.5d
+			y: -7.0d
+		}
+		{
+			icon: "cosmiccore:dawn_forge"
+			id: "7CB6F107009BAF72"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "55E45A54340B8340"
+					item: "cosmiccore:light_dawnstone_casing"
+					type: "item"
+				}
+				{
+					id: "765674CF736C9425"
+					item: "cosmiccore:reinforced_dawnstone_casing"
+					type: "item"
+				}
+				{
+					id: "336CAE7F89BC5699"
+					item: "cosmiccore:dawn_forge"
+					type: "item"
+				}
+			]
+			title: "The Dawn of Forging"
+			x: -22.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3D4680752E4D4864"
+				"62B75C630DA0373F"
+			]
+			id: "1A19173669EE0069"
+			tasks: [{
+				id: "0FE20C1AF51DEC1C"
+				item: "tconstruct:tinkers_anvil"
+				type: "item"
+			}]
 			x: 1.5d
 			y: -7.0d
 		}
