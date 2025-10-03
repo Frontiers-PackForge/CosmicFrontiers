@@ -22,6 +22,7 @@ ServerEvents.tags('item', event => {
        event.add('thinair:breathing_equipment', 'kubejs:reinforced_respirator')
        event.add('curios:head', 'kubejs:reinforced_respirator')
        event.add('curios:head', 'kubejs:nano_respirator')
+       event.add('curios:head', 'embers:ashen_goggles')
        event.add('curios:charm', 'gtceu:hv_item_magnet')
        event.add('curios:charm', 'gtceu:lv_item_magnet')
        event.add('frontiers:peanut', 'vintagedelight:peanut_crop')

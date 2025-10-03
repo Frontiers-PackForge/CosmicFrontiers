@@ -231,4 +231,50 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .formula('')
         .color(0xad5569)
+
+
+
+
+
+    //HONEYS
+    event.create('waxy_polymer_honey')
+        .formula('')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('citrus_polymer_honey')
+        .formula('')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('rose_polymer_honey')
+        .formula('')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('argon_honey')
+        .formula('')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('nitrogen_honey')
+        .formula('')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('oxygen_honey')
+        .formula('')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('hydrogen_honey')
+        .formula('')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('citrus_polymer')
+        .formula('')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('waxy_polymer')
+        .formula('')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('rose_polymer')
+        .formula('')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+
 })

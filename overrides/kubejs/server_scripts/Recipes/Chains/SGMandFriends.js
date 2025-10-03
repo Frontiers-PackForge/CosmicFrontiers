@@ -373,6 +373,16 @@ ServerEvents.recipes(event => {
         .itemOutputs('36x gtceu:plant_ball')
         .outputFluids('gtceu:agar 288')
         .duration(960)
+        .circuit(1)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VH[GTValues.EV]);
+    event.recipes.gtceu.centrifuge('frontiers:agar_fluid_booster')
+        .inputFluids('gtceu:agar_sludge 1000')
+        .itemInputs('16x cosmiccore:bee_comb_biohazard')
+        .itemOutputs('36x gtceu:plant_ball')
+        .outputFluids('gtceu:agar 1152')
+        .duration(960)
+        .circuit(2)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VH[GTValues.EV]);
     //Maybe the Dust will be used in the future???? make it apart of RGM ig lol
