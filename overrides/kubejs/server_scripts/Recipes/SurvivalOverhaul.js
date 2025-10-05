@@ -1,4 +1,16 @@
 
+let yeet = (itemName) => {
+       ServerEvents.recipes(event => {
+              event.remove({ output: itemName })
+       })
+       ServerEvents.tags('item', event => {
+              console.log('[5] - [1] - TAG-WATCHER')
+              event.add('c:hidden_from_recipe_viewers', itemName)
+
+       })
+}
+yeet('legendarysurvivaloverhaul:seasonal_calendar')
+
 ServerEvents.compostableRecipes(event => {
     event.add(Item.of('legendarysurvivaloverhaul:ice_fern_seeds'), 0.3)
     event.add(Item.of('legendarysurvivaloverhaul:sun_fern_seeds'), 0.3)

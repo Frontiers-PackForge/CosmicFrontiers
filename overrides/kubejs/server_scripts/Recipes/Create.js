@@ -1154,11 +1154,34 @@ ServerEvents.recipes(event => {
   .EUt(8);
   //Polished Rose Quartz
   event.recipes.gtceu.mixer("create:rose_quartz")
-  .itemInputs('create:rose_quartz')
+  .itemInputs('#forge:gems/rose_quartz')
   .notConsumable('minecraft:sand')
   .itemOutputs('create:polished_rose_quartz')
   .duration(50)
   .EUt(8);
+  //bop rose quartz block hammering
+  event.remove({id: "create:rose_quartz_block_from_rose_quartz_stonecutting"})
+  event.remove({id: "biomesoplenty:rose_quartz_block"})
+  event.recipes.gtceu.forge_hammer("biomesoplenty:rose_quartz_hammering")
+  .itemInputs('biomesoplenty:rose_quartz_block')
+  .itemOutputs('4x biomesoplenty:rose_quartz_chunk')
+  .duration(100)
+  .EUt(24);
+  event.recipes.gtceu.forge_hammer("create:rose_quartz")
+  .itemInputs('create:rose_quartz_block')
+  .itemOutputs('4x create:rose_quartz')
+  .duration(100)
+  .EUt(24);
+  event.recipes.gtceu.compressor("biomesoplenty:rose_quartz_hammering")
+  .itemInputs('4x biomesoplenty:rose_quartz_chunk')
+  .itemOutputs('biomesoplenty:rose_quartz_block')
+  .duration(300)
+  .EUt(2);
+  event.recipes.gtceu.compressor("create:rose_quartz_block")
+  .itemInputs('4x create:rose_quartz')
+  .itemOutputs('create:rose_quartz_block')
+  .duration(300)
+  .EUt(2);
   //packager
   event.remove({id: "create:crafting/logistics/packager"})
   event.shaped('create:packager', [

@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:assembler/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_assembly_control' })
+  event.remove({ id: 'gtceu:assembler/assembly_control_casing' })
 
   event.replaceOutput({ id: 'gtceu:assembly_line/high_performance_computing_array' }, 'gtceu:high_performance_computation_array', 'cosmiccore:high_performance_computation_array')
   event.shaped('gtceu:assembly_line_casing', [
