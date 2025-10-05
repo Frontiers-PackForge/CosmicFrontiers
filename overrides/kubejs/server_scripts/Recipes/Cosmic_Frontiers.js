@@ -27,6 +27,27 @@ ServerEvents.tags('item', event => {
        event.add('curios:charm', 'gtceu:lv_item_magnet')
        event.add('frontiers:peanut', 'vintagedelight:peanut_crop')
        event.add('curios:charm', 'cosmiccore:portable_gravity_core')
+
+
+       event.add('embers:augmentables', 'cosmiccore:sanguine_warptech_helmet')
+       event.add('embers:augmentables', 'cosmiccore:sanguine_warptech_chestplate')
+       event.add('embers:augmentables', 'cosmiccore:sanguine_warptech_leggings')
+       event.add('embers:augmentables', 'cosmiccore:sanguine_warptech_boots')
+
+       event.add('embers:augmentables/armors', 'cosmiccore:sanguine_warptech_helmet')
+       event.add('embers:augmentables/armors', 'cosmiccore:sanguine_warptech_chestplate')
+       event.add('embers:augmentables/armors', 'cosmiccore:sanguine_warptech_leggings')
+       event.add('embers:augmentables/armors', 'cosmiccore:sanguine_warptech_boots')
+
+       event.add('embers:augmentables/armors/helmets', 'cosmiccore:sanguine_warptech_helmet')
+       event.add('embers:augmentables/armors/chestplates', 'cosmiccore:sanguine_warptech_chestplate')
+       event.add('embers:augmentables/armors/leggings', 'cosmiccore:sanguine_warptech_leggings')
+       event.add('embers:augmentables/armors/boots', 'cosmiccore:sanguine_warptech_boots')
+       
+       event.add('embers:augmentables/tools_armors', 'cosmiccore:sanguine_warptech_helmet')
+       event.add('embers:augmentables/tools_armors', 'cosmiccore:sanguine_warptech_chestplate')
+       event.add('embers:augmentables/tools_armors', 'cosmiccore:sanguine_warptech_leggings')
+       event.add('embers:augmentables/tools_armors', 'cosmiccore:sanguine_warptech_boots')
 })
 //Generator Removal - WILL RETURN WITH UH, """BETTER""" CREATE FUNCTIONALITY
 // yeet('gtceu:lv_combustion')
