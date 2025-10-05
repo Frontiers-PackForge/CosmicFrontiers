@@ -416,7 +416,7 @@ ServerEvents.recipes(event => {
 
 //Machetes, but... uh... oh yeah! Gregified
 ServerEvents.recipes(event => {
-    event.remove({ output: '#forge:tools/machetes' })
+    event.remove({ output: '#nethersdelight:tools/machetes' })
     event.shaped('nethersdelight:iron_machete', [
         '  I',
         'FI ',

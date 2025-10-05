@@ -10,6 +10,17 @@ ServerEvents.tags('item', event => {
     event.add('forge:onions', 'farmersdelight:onion')
     event.add('forge:dough', 'farmersdelight:wheat_dough')
     event.add('forge:doughs', 'gtceu:dough')
+    event.add('forge:tentacles', [
+        'crabbersdelight:raw_squid_tentacles',
+        'crabbersdelight:raw_glow_squid_tentacles',
+        'oceansdelight:tentacles',
+        'oceansdelight:cut_tentacles',
+    ])
+    event.add('forge:golden_apple_slices', [
+        'some_assembly_required:golden_apple_slices',
+        'vanilladelight:golden_apple_slice'
+    ])
+
     event.remove('forge:oat', 'vintagedelight:oat') //this removes vintagedelight oat from one recipe (oat cutting) 
 
     event.removeAll('diet:special_food') // Slicer recipes add nutrition to them already, keeping them in this tag makes it do double nutrition
@@ -73,6 +84,7 @@ ServerEvents.tags('item', event => {
     proteins('nethersdelight:strider_slice')
     proteins('occultism:beaver_nugget')
     proteins('arsdelight:bowl_of_honey_glazed_chimera')  
+    proteins('oceanic_delight:salmon_eggs')  
 
     vegetables('legendarysurvivaloverhaul:beetroot_juice')
     vegetables('legendarysurvivaloverhaul:cactus_juice')
