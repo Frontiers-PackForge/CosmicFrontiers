@@ -38,7 +38,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'experienceobelisk:whisperglass' })
     event.remove({ id: /experienceobelisk:metamorpher(.*)/})
     event.remove({ id: /experienceobelisk:infecting(.*)/})
-     
+    event.remove({ id: 'experienceobelisk:filling/golden_apple_filling' })
+         
     event.recipes.gtceu.mixer('cognitive_flux_mixer')
         .itemInputs(['4x gtceu:nether_quartz_dust', '4x gtceu:lapis_dust', '4x minecraft:soul_sand'])
         .itemOutputs('4x experienceobelisk:cognitive_flux')
