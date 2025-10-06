@@ -303,13 +303,25 @@ ServerEvents.recipes(event => {
        event.recipes.gtceu.chemical_dehydrator('lava_to_magma_block')
               .inputFluids('minecraft:lava 1000')
               .itemOutputs('minecraft:magma_block')
-              .duration(150)
-              .EUt(GTValues.VA[GTValues.MV]);
+              .duration(100)
+              .EUt(20,);
        event.recipes.gtceu.chemical_dehydrator('magma_block_to_netherrack')
               .itemInputs('minecraft:magma_block')
               .itemOutputs('minecraft:netherrack')
-              .duration(100)
-              .EUt(GTValues.VA[GTValues.MV]);
+              .duration(10)
+              .EUt(20,);
+       event.remove({ id: "gtceu:extractor/soul_resin_extractor" })
+       event.recipes.gtceu.extractor('soul_resin_extraction')
+              .itemInputs('legendarysurvivaloverhaul:ice_fern_leaf')
+              .outputFluids('gtceu:soulresin 144')
+              .duration(20)
+              .EUt(2,);
+       event.remove({ id: "gtceu:extractor/cinder_wax_extractor" })
+       event.recipes.gtceu.extractor('cinder_wax_extraction')
+              .itemInputs('nethersdelight:propelpearl')
+              .outputFluids('gtceu:cinderwax 144')
+              .duration(20)
+              .EUt(2,);
        //Basic Circuit Shit, the steam assembler re-routes all the basic parts to be mandatory in it, as otherwise who cares.
        event.remove({ output: "gtceu:resistor" })
        event.recipes.gtceu.assembler('resistor_good')
