@@ -1263,6 +1263,7 @@ ServerEvents.recipes(event => {
   //cardboard
   event.remove({id: "create:mixing/cardboard_pulp"})
   event.remove({id: "create:pressing/cardboard"})
+  event.remove({id: "create:crafting/appliances/book"})
   event.recipes.gtceu.mixer("create:pulp")
   .circuit(1)
   .itemInputs('4x gtceu:wood_dust')
