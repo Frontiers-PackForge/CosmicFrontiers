@@ -311,10 +311,10 @@ ServerEvents.recipes(event => {
   event.recipes.occultism.ritual(
    '3x legendarysurvivaloverhaul:sun_fern_seeds',
    [
-     "minecraft:glowstone",
-     "minecraft:glowstone",
-     "biomesoplenty:burning_blossom",
-     "biomesoplenty:burning_blossom",
+     "minecraft:magma_block",
+     "minecraft:magma_block",
+     "gtceu:netherrack_dust",
+     "gtceu:netherrack_dust",
      "#botania:petals",
      "#botania:petals",
      "#ars_nouveau:magic_shards",
@@ -326,10 +326,10 @@ ServerEvents.recipes(event => {
  event.recipes.occultism.ritual(
     '3x legendarysurvivaloverhaul:sun_fern_seeds',
     [
-      "minecraft:glowstone",
-      "minecraft:glowstone",
-      "biomesoplenty:burning_blossom",
-      "biomesoplenty:burning_blossom",
+      "minecraft:magma_block",
+      "minecraft:magma_block",
+      "gtceu:netherrack_dust",
+      "gtceu:netherrack_dust",
       "#botania:petals",
       "#botania:petals",
       "legendarysurvivaloverhaul:ice_fern_leaf",
