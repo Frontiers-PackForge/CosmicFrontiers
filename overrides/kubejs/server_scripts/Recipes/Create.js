@@ -1263,7 +1263,8 @@ ServerEvents.recipes(event => {
   //cardboard
   event.remove({id: "create:mixing/cardboard_pulp"})
   event.remove({id: "create:pressing/cardboard"})
-  event.recipes.gtceu.chemical_bath("create:pulp")
+  event.recipes.gtceu.mixer("create:pulp")
+  .circuit(1)
   .itemInputs('4x gtceu:wood_dust')
   .inputFluids('minecraft:water 400')
   .itemOutputs('create:pulp')
