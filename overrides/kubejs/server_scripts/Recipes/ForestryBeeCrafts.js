@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
 
-    //Unfortunately I don't think we can do better than this.
+    //Unfortunately I don't think we can do better than this - we might want to expand the EMI mixin to handle the NBT of these better! ! !
 
 
 
