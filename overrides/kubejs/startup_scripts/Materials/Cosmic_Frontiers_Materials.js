@@ -702,13 +702,16 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     //Cinder Fuel stuff
 
-    event.create('inert_cinder_fuel')
+    event.create('inert_cinder_gas')
         .liquid(new GTFluidBuilder().customStill())
 
-    event.create('cinder_fuel')
+    event.create('cinder_gas')
         .liquid(new GTFluidBuilder().customStill())
 
-    event.create('awakened_cinder_fuel')
+    event.create('awakened_cinder_gas')
+        .liquid(new GTFluidBuilder().customStill())
+
+    event.create('pure_cinder_gas')
         .liquid(new GTFluidBuilder().customStill())
 
     event.create('emberite')

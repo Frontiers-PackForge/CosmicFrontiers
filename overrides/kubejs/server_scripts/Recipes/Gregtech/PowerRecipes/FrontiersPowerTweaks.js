@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VH[GTValues.LV]);
 
   event.recipes.gtceu.dawn_forge('frontiers:ember_pellets')
-    .itemInputs('embers:ember_crystal','embers:ember_crystal','embers:ember_crystal','embers:ember_crystal')
+    .itemInputs('embers:ember_crystal', 'embers:ember_crystal', 'embers:ember_crystal', 'embers:ember_crystal')
     .itemOutputs('16x kubejs:cinder_fuel_pellets')
     .emberInput(250)
     .duration(40)
@@ -66,6 +66,29 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:cinder_fuel 1')
     .duration(11)
     .EUt(-GTValues.V[GTValues.LV])
+
+  //Awakened Cinder Gas (Uses Ember, quite a bit)
+
+  // Dilute HCl + Infernal spirit + 'create:cinder_flour' -> Infernal Rosin Emulsion 
+
+  // Infernal Rosin Emulsion -> Infernal Yeast Solution + Dilute HCL (loopps)
+
+  // Infernal Yeast Solution + Cinder Fuel + Refinery Gas - Awakened Cinder Gas
+
+
+  // Pure Cinder Gas (Uses a LOT of Ember)
+
+  //Tears of the Sky + Ammonium Aerocloud Solution -> Heavy Aerocloud Seltzer
+
+  // Heavy Aerocloud Seltzer + Toulene + Infernal Yeast Solution +(EMBER)-> Smoldering Cinder Yeast Solution
+
+  // Smoldering Cinder Yeast Sol. + Awakened Cinder Gas -> Pure Cinder Gas.
+
+
+
+
+
+
 })
 
 

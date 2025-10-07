@@ -68,6 +68,15 @@ ServerEvents.recipes(event => {
     .duration(120)
     .EUt(GTValues.VA[GTValues.LV], 4);
 
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_hv_core')
+    .notConsumable('embers:silver_aspectus')
+    .notConsumable('embers:lead_aspectus')
+    .itemInputs(['embers:ember_crystal_cluster', 'gtceu:kanthal_plate', 'gtceu:galvanized_ethersteel_foil', 'gtceu:kanthal_plate', 'gtceu:galvanized_ethersteel_foil'])
+    .itemOutputs('cosmiccore:hv_wildfire_core')
+    .emberInput(1500)
+    .duration(120)
+    .EUt(GTValues.VA[GTValues.LV], 16);
+
 
   event.remove({ id: 'embers:dawnstone_plate_hammering' })
   event.remove({ id: 'embers:mixing/molten_dawnstone' })
