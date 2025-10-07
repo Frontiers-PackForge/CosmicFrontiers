@@ -26,12 +26,7 @@ ServerEvents.recipes(event => {
     .EUt(-3750000, 64)
 
   event.remove({ id: 'gtceu:combustion_generator/naphtha' })
-  event.recipes.gtceu.combustion_generator('worse_naphtha')
-    .inputFluids('gtceu:naphtha 1')
-    .duration(6)
-    .EUt(-GTValues.V[GTValues.LV])
-
-
+  //TODO : CINDER FUEL 
 
   //NBZ has power density cut by about 40% 
   //Still insanely strong for the volume and this is a trial run of what CEU's nerfs will look like
@@ -43,6 +38,34 @@ ServerEvents.recipes(event => {
 
 
 
+  // Cinder Fuel Stuff
+
+  event.recipes.gtceu.mixer('frontiers:ember_fuel_unrefined')
+    .itemInputs('embers:ember_grit')
+    .inputFluids('gtceu:sulfuric_naphtha 1500')
+    .inputFluids('gtceu:steam 1000')
+    .outputFluids('gtceu:inert_cinder_fuel 1000')
+    .duration(40)
+    .EUt(GTValues.VH[GTValues.LV]);
+
+  event.recipes.gtceu.dawn_forge('frontiers:ember_pellets')
+    .itemInputs('embers:ember_crystal','embers:ember_crystal','embers:ember_crystal','embers:ember_crystal')
+    .itemOutputs('16x kubejs:cinder_fuel_pellets')
+    .emberInput(250)
+    .duration(40)
+    .EUt(GTValues.VH[GTValues.LV]);
+
+  event.recipes.gtceu.arc_furnace('frontiers:cinder_fuel')
+    .itemInputs('kubejs:cinder_fuel_pellets')
+    .inputFluids('gtceu:inert_cinder_fuel 1000')
+    .outputFluids('gtceu:cinder_fuel 1250')
+    .duration(160)
+    .EUt(GTValues.VH[GTValues.LV]);
+
+  event.recipes.gtceu.gas_turbine('frontiers:ember_fuel_basic')
+    .inputFluids('gtceu:cinder_fuel 1')
+    .duration(11)
+    .EUt(-GTValues.V[GTValues.LV])
 })
 
 
