@@ -50,6 +50,8 @@ StartupEvents.registry('item', event => {
     event.create('cosmic_meatballs').displayName('Cosmic Meatballs')
     event.create('prismatic_lens').displayName('Prismatic Lens')
 
+    event.create('cinder_fuel_pellets').displayName('Cinder Fuel Ember Pellets')
+
     event.create('reinforced_respirator', 'helmet').displayName('Reinforced Respirator').maxDamage(1024).modifyTier(tier => 'breather')
 
 

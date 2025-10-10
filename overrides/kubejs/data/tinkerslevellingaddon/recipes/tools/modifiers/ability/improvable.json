@@ -1,0 +1,29 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "inputs": [
+    {
+      "item": "cosmiccore:shard_of_perpetuity"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    {
+      "item": "cosmiccore:shard_of_perpetuity"
+    },
+    {
+      "item": "cosmiccore:shard_of_perpetuity"
+    },
+    {
+      "item": "cosmiccore:shard_of_perpetuity"
+    }
+  ],
+  "level": 1,
+  "result": "tinkerslevellingaddon:improvable",
+  "slots": {
+    "abilities": 1
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  }
+}

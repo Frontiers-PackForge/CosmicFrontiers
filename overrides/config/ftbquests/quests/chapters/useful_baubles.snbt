@@ -1556,6 +1556,31 @@
 			x: -10.0d
 			y: -7.0d
 		}
+		{
+			dependencies: ["7B4F0BE29E6CD211"]
+			hide_dependency_lines: true
+			id: "237E02D952F3F7DB"
+			tasks: [{
+				id: "12A395F41874098F"
+				item: "usefulbackpacks:backpack_small"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B4F0BE29E6CD211"]
+			hide_dependency_lines: true
+			id: "10B48F9AA50584FD"
+			subtitle: "After Steel"
+			tasks: [{
+				id: "1FF4613AD33B7E6C"
+				item: "usefulbackpacks:backpack_medium"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
 	]
 	title: "Useful Baubles"
 }

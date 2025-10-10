@@ -29,8 +29,8 @@
 			image: "frontiers:textures/questimages/miscicons/steam.png"
 			rotation: 0.0d
 			width: 7.0d
-			x: -7.0714285714285765d
-			y: -8.571428571428605d
+			x: -6.5d
+			y: -12.0d
 		}
 	]
 	order_index: 0
@@ -337,11 +337,13 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["30C980B828A48306"]
 			description: [
 				"&eBronze Bricked Casings&r find usage in several multi-blocks and singleblocks."
 				""
 				"Completing this quest will unlock quests related to &athis casing&r."
 			]
+			hide_dependency_lines: true
 			id: "5B16C4D1A2356E3D"
 			rewards: [{
 				count: 4
@@ -1095,8 +1097,8 @@
 				item: "gtceu:steel_brick_casing"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -5.0d
+			x: -5.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1389,8 +1391,8 @@
 				type: "checkmark"
 			}]
 			title: "Surviving the Inferno"
-			x: -7.0d
-			y: -3.5d
+			x: -8.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5AB046A0E1BFBE1E"]
@@ -1491,8 +1493,8 @@
 				type: "item"
 			}]
 			title: "Playing Multiplayer?"
-			x: -6.0d
-			y: -3.5d
+			x: -8.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1824,7 +1826,7 @@
 			dependencies: [
 				"1206EA8BA057A00F"
 				"0584B3650BE26B9C"
-				"0F6A6D47919F7738"
+				"3F027270165BC22D"
 			]
 			description: [
 				"&6Rune Language&r allows you to define &estatic magic circuits&r into &amatter&r."
@@ -2036,7 +2038,6 @@
 			dependencies: [
 				"65776EEC99D33056"
 				"549B34408EBE9582"
-				"4C7FC02A5141CA39"
 			]
 			description: ["You'll need to wear these to see Iesnium Ore which is located in the Nether."]
 			id: "2D14D28D2CD892DD"
@@ -2660,7 +2661,7 @@
 				type: "checkmark"
 			}]
 			title: "Need Steel Faster? Try Wrought Iron!"
-			x: 1.0d
+			x: 2.0d
 			y: 4.5d
 		}
 		{
@@ -2689,7 +2690,7 @@
 				item: "gtceu:steel_crate"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.0d
 			y: 5.0d
 		}
 		{
@@ -2778,53 +2779,24 @@
 			y: -7.0d
 		}
 		{
-			id: "435A29E177F02CA5"
-			tasks: [{
-				id: "393277226AF4120F"
-				item: "embers:dawnstone_block"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 2.0d
-		}
-		{
 			dependencies: [
 				"30C980B828A48306"
 				"1A19173669EE0069"
 			]
+			description: [
+				"This is the quest that'll ask you to make Tinkers Construct GT tools, in the future."
+				""
+				"For now, you can safely ignore the impending tinkers overhaul,"
+				""
+				"Won't be around for easily 3-4 Months with 0.9.0"
+			]
 			id: "7AE3FEB598611E19"
 			shape: "hexagon"
 			size: 1.5d
+			subtitle: "Uh, Don't worry about this"
 			tasks: [{
-				id: "170A547B5F0924BF"
-				item: {
-					Count: 1
-					id: "cosmiccore:wire_cutter"
-					tag: {
-						Damage: 0
-						tic_broken: 0b
-						tic_materials: [
-							"tconstruct:bronze"
-							"tconstruct:bronze"
-							"tconstruct:bronze"
-							"tconstruct:bronze"
-							"tconstruct:bronze"
-						]
-						tic_modifiers: [{
-							level: 5
-							name: "tconstruct:maintained"
-						}]
-						tic_persistent: { }
-						tic_stats: {
-							"tconstruct:attack_damage": 4.5f
-							"tconstruct:attack_speed": 0.9f
-							"tconstruct:durability": 1824.0001f
-							"tconstruct:harvest_tier": "minecraft:diamond"
-							"tconstruct:mining_speed": 14.3f
-						}
-					}
-				}
-				type: "item"
+				id: "69B36F8D8E3802E5"
+				type: "checkmark"
 			}]
 			x: 0.0d
 			y: -7.0d
@@ -2857,52 +2829,36 @@
 		}
 		{
 			dependencies: ["00B281664EDD41AA"]
+			description: [
+				"&eCobaltite Ore&r can be found in the &cNether&r along with &eNickel bearing ores&r."
+				""
+				"If you're finding it in the overworld, don't be alarmed, it's most likely an old vein before I moved it into the nether exclusively."
+			]
 			id: "4874241C7EA134EC"
+			subtitle: "Cobalt, yeah."
 			tasks: [{
-				id: "6534F17AB0E9A286"
-				item: "tconstruct:raw_cobalt"
+				id: "42D5658C8040409D"
+				item: "gtceu:cobalt_ingot"
 				type: "item"
 			}]
-			title: "Nether Pure Cobalt"
-			x: -9.5d
-			y: -3.5d
+			title: "Cobalt"
+			x: -8.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["4874241C7EA134EC"]
+			dependencies: [
+				"4874241C7EA134EC"
+				"75A868B9BFF96CEE"
+			]
 			id: "0815B0C34E1E001E"
 			tasks: [{
 				id: "3513F85A47B7F4F9"
 				item: "embers:ember_bore"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -5.5d
-		}
-		{
-			dependencies: [
-				"36386E5701A66BB3"
-				"7CB6F107009BAF72"
-			]
-			id: "0F6A6D47919F7738"
-			tasks: [{
-				id: "7318722C710F1F04"
-				item: "embers:resonating_bell"
-				type: "item"
-			}]
-			x: -19.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["0815B0C34E1E001E"]
-			hide_dependency_lines: true
-			id: "36386E5701A66BB3"
-			tasks: [{
-				id: "2E05897BDF5E4595"
-				item: "embers:ember_crystal"
-				type: "item"
-			}]
-			x: -19.5d
-			y: -2.5d
+			title: "Ember In Bulk : Passive Style!"
+			x: -8.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["4874241C7EA134EC"]
@@ -2912,22 +2868,8 @@
 				item: "embers:field_chart"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"36386E5701A66BB3"
-				"33F12EC34D6CBDD5"
-			]
-			id: "4C7FC02A5141CA39"
-			tasks: [{
-				id: "65BBED728D60C86B"
-				item: "embers:focal_lens"
-				type: "item"
-			}]
-			x: -18.0d
-			y: -2.5d
+			x: -7.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7CB6F107009BAF72"]
@@ -2939,11 +2881,29 @@
 				item: "cosmiccore:lv_wildfire_core"
 				type: "item"
 			}]
-			x: -22.0d
+			x: -19.875d
 			y: 7.5d
 		}
 		{
-			dependencies: ["0815B0C34E1E001E"]
+			dependencies: [
+				"0815B0C34E1E001E"
+				"793FC4800C56AE66"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"These shiny large crystals allow you to produce Ember in valid machines."
+				""
+				""
+				"If you're Curious on the values each type of Gemstone gives, here are values below"
+				""
+				"&bExquisite Emberite&r - 4400"
+				"&eFlawless Emberite&r - 3400"
+				"&6Ember Crystals&r - 2400"
+				"&cFlawed Emberite&r - 600"
+				"&4Chipped Emberite&r - 200"
+				""
+				"Once you reach LV, a &6Sifter&r will help you get more Ember gems per ore!"
+			]
 			id: "3CA8963AE73EBA6D"
 			subtitle: "The Fuel of Ancients"
 			tasks: [{
@@ -2956,7 +2916,20 @@
 		}
 		{
 			dependencies: ["3CA8963AE73EBA6D"]
+			description: [
+				"Use &bpipes&r or &bhoppers&r to insert &eember crystals&r into the bottom half of the activator, it will consume your ember crystals to produce ember energy."
+				""
+				"Remember, &eEmber Grit&r can not be used in the &6Ember Activator&r, check out the &cAncient Codex&r for more information. Only higher tier ember creators can utilize the dust."
+				""
+				"Check the quest above this for information on how to move that Ember around!"
+				""
+				""
+				""
+				"{image:frontiers:textures/questimages/questimages/emberactivator.png width:400 height:150 align:center}"
+			]
 			id: "48BDFCB2679E3F89"
+			min_width: 500
+			subtitle: "The Ignition"
 			tasks: [{
 				id: "7FAC75C6FFBFB13B"
 				item: "embers:ember_activator"
@@ -2968,24 +2941,28 @@
 		{
 			dependencies: ["48BDFCB2679E3F89"]
 			id: "017EEFCAD66AEA73"
+			subtitle: "&fWill it Blend: Molten Edition"
 			tasks: [{
 				id: "7F4EAA508AFCDB86"
 				item: "embers:mixer_centrifuge"
 				type: "item"
 			}]
 			x: -13.0d
-			y: -7.0d
+			y: -8.0d
 		}
 		{
-			dependencies: ["017EEFCAD66AEA73"]
+			dependencies: [
+				"017EEFCAD66AEA73"
+				"0E3F7F4506F6D621"
+			]
 			id: "0A689FB9773F31CB"
 			tasks: [{
 				id: "43FF54BFC74E7D31"
 				item: "embers:molten_dawnstone_bucket"
 				type: "item"
 			}]
-			x: -15.5d
-			y: -8.5d
+			x: -14.5d
+			y: -7.25d
 		}
 		{
 			dependencies: ["48BDFCB2679E3F89"]
@@ -3032,7 +3009,7 @@
 		{
 			dependencies: [
 				"6C2C0D312A4438EF"
-				"0A689FB9773F31CB"
+				"4061CC52DD1CFF66"
 			]
 			id: "33F12EC34D6CBDD5"
 			tasks: [{
@@ -3040,11 +3017,11 @@
 				item: "embers:dawnstone_ingot"
 				type: "item"
 			}]
-			x: -18.0d
+			x: -18.5d
 			y: -7.0d
 		}
 		{
-			dependencies: ["017EEFCAD66AEA73"]
+			dependencies: ["0A689FB9773F31CB"]
 			id: "6C2C0D312A4438EF"
 			subtitle: "Molding Dawnstone, the hard way."
 			tasks: [
@@ -3064,10 +3041,11 @@
 					type: "item"
 				}
 			]
-			x: -15.5d
-			y: -7.0d
+			x: -16.5d
+			y: -8.0d
 		}
 		{
+			dependencies: ["38822087BBF91787"]
 			icon: "cosmiccore:dawn_forge"
 			id: "7CB6F107009BAF72"
 			shape: "hexagon"
@@ -3089,7 +3067,7 @@
 				}
 			]
 			title: "The Dawn of Forging"
-			x: -22.0d
+			x: -20.0d
 			y: 2.0d
 		}
 		{
@@ -3105,6 +3083,208 @@
 			}]
 			x: 1.5d
 			y: -7.0d
+		}
+		{
+			dependencies: ["33F12EC34D6CBDD5"]
+			id: "38822087BBF91787"
+			tasks: [
+				{
+					id: "6D1F38099DB3F530"
+					item: "embers:ember_ejector"
+					type: "item"
+				}
+				{
+					id: "4CAFBB4633D14907"
+					item: "embers:ember_funnel"
+					type: "item"
+				}
+			]
+			title: "Better Ember Transfer"
+			x: -20.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0A689FB9773F31CB"]
+			description: [
+				"Honestly, just use a casting table."
+				""
+				"You can fluid solidify it in later tiers as well."
+			]
+			id: "4061CC52DD1CFF66"
+			subtitle: "Molding Ember Easier Way"
+			tasks: [{
+				id: "30C6CCF4D40AF060"
+				item: "tconstruct:ingot_cast"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["48BDFCB2679E3F89"]
+			description: [
+				"Wait, LV?"
+				""
+				"Check the Occultism Ritual, there is (very expensive) recipe that allows you to craft the LV Ember Hatch earlier than intended."
+				""
+				"This allows you to create &6Dawnstone&r in the &eSteam Mixing Vessel&r instead of the &6Ember Mixing Centrifuge&r!"
+			]
+			id: "0E3F7F4506F6D621"
+			subtitle: "Your First Ember Hatch"
+			tasks: [{
+				id: "787145E9935B5434"
+				item: "cosmiccore:lv_ember_input_hatch"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0FF5358645CE9BD5"]
+			id: "4687EF6039A6777C"
+			shape: "hexagon"
+			tasks: [{
+				id: "1560169EA091E248"
+				item: "forestry:worktable"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4874241C7EA134EC"]
+			id: "49ACDB5343005086"
+			subtitle: "Embers Guidebook"
+			tasks: [{
+				id: "565A73856A2024BF"
+				item: "embers:ancient_codex"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["00B281664EDD41AA"]
+			hide_dependency_lines: true
+			id: "75A868B9BFF96CEE"
+			tasks: [{
+				id: "57F7E1C93309C401"
+				item: "embers:caminite_brick"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7CB6F107009BAF72"]
+			description: [
+				"Im slowly migrating stuff away from the Alchemy system in embers."
+				""
+				"It's slow and tedious work, so bear with me."
+			]
+			id: "290EB4C135192D6E"
+			subtitle: "Alchemy is Dead."
+			tasks: [{
+				id: "3485933A1515DA71"
+				type: "checkmark"
+			}]
+			title: "No More Alchemy"
+			x: -21.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7CB6F107009BAF72"]
+			id: "3F027270165BC22D"
+			tasks: [{
+				id: "576E6BFE6AEFFACD"
+				item: "embers:eldritch_insignia"
+				type: "item"
+			}]
+			x: -18.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["00B281664EDD41AA"]
+			description: [
+				"Fun Fact, I was going to call it Cinder Ore, I might still do that but only for the lang values."
+				""
+				""
+				"This stuff can be used in ember activators and other ember producing machines."
+				""
+				"Remember, Ember Grit doesn't give you ember fuel so you'll need to process these with a forge hammer or furnace."
+			]
+			id: "793FC4800C56AE66"
+			subtitle: "Stupid name, embers gamechanger"
+			tasks: [{
+				id: "701B753F250CC315"
+				item: "gtceu:raw_emberite"
+				type: "item"
+			}]
+			title: "Ember In Bulk, Emberite Ore"
+			x: -9.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["48BDFCB2679E3F89"]
+			description: [
+				"Ashen Goggles give you valuable information about what capabilities a block uses."
+				""
+				"You can look at embers machines and see what sides/blocks accept what items/fluids/ember this way."
+			]
+			id: "3937A21A337AF66B"
+			subtitle: "Viewing Data"
+			tasks: [{
+				id: "50899FF10652AB34"
+				item: {
+					Count: 1
+					id: "embers:ashen_goggles"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -12.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["48BDFCB2679E3F89"]
+			description: [
+				"This CAN use Ember Grit."
+				"It also needs to be provided a steady supply of water and a metallic block with heat sources below."
+				"{image:frontiers:textures/questimages/questimages/pressurerefinery.png width:400 height:250 align:center}"
+			]
+			id: "7020F96E0AFD19EF"
+			min_width: 500
+			subtitle: "Stronger Ember Generation"
+			tasks: [{
+				id: "0AE9674629CDDDD2"
+				item: "embers:pressure_refinery"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["7020F96E0AFD19EF"]
+			description: [
+				"I've never used this."
+				""
+				"So uh."
+				""
+				"Yeah your guess is as good as mine."
+				""
+				"I'll update this quest when someone tells me lol."
+			]
+			id: "352ADD12E0F80B0F"
+			subtitle: "Uhhhhhhh"
+			tasks: [{
+				id: "2D88DE3B63FF0D42"
+				item: "embers:ignem_reactor"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -10.0d
 		}
 	]
 	title: "Rising Pressure - [Steam]"

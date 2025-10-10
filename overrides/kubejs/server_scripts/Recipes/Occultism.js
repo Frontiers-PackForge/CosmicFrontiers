@@ -167,12 +167,12 @@ ServerEvents.recipes(event => {
   //   .duration(800)
   //IPBF VERSIONS
   event.recipes.gtceu.industrial_primitive_blast_furnace('chalk_purify_ipbf')
-    .itemInputs(['occultism:chalk_white_impure','4x gtceu:calcite_dust'])
+    .itemInputs(['occultism:chalk_white_impure', '4x gtceu:calcite_dust'])
     .inputFluids('gtceu:creosote 1000')
     .itemOutputs('occultism:chalk_white')
     .duration(3000)
   event.recipes.gtceu.electric_blast_furnace('chalk_purify_ebf')
-    .itemInputs(['occultism:chalk_white_impure','4x gtceu:calcite_dust'])
+    .itemInputs(['occultism:chalk_white_impure', '4x gtceu:calcite_dust'])
     .inputFluids('gtceu:oxygen 250')
     .itemOutputs('occultism:chalk_white')
     .blastFurnaceTemp(800)
@@ -208,7 +208,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('occultism:chalk_purple_impure')
     .duration(800)
 
-    event.recipes.gtceu.electric_blast_furnace('purple_chalk_melding')
+  event.recipes.gtceu.electric_blast_furnace('purple_chalk_melding')
     .itemInputs(['occultism:chalk_white_impure', '8x gtceu:soulresin_ingot', '4x gtceu:cinderwax_ingot'])
     .inputFluids('gtceu:oxygen 250')
     .itemOutputs('occultism:chalk_purple_impure')
@@ -251,6 +251,56 @@ ServerEvents.recipes(event => {
     Item.of('minecraft:ancient_debris').withChance(2),
     'minecraft:netherite_pickaxe'
   )
+
+  //Malum Spirits
+  event.recipes.occultism.miner(
+    Item.of('malum:sacred_spirit').withChance(75),
+    'malum:soul_stained_steel_scythe'
+  )
+  event.recipes.occultism.miner(
+    Item.of('malum:wicked_spirit').withChance(75),
+    'malum:soul_stained_steel_scythe'
+  )
+  event.recipes.occultism.miner(
+    Item.of('malum:arcane_spirit').withChance(75),
+    'malum:soul_stained_steel_scythe'
+  )
+  event.recipes.occultism.miner(
+    Item.of('malum:eldritch_spirit').withChance(75),
+    'malum:soul_stained_steel_scythe'
+  )
+  event.recipes.occultism.miner(
+    Item.of('malum:aerial_spirit').withChance(75),
+    'malum:soul_stained_steel_scythe'
+  )
+  event.recipes.occultism.miner(
+    Item.of('malum:aqueous_spirit').withChance(75),
+    'malum:soul_stained_steel_scythe'
+  )
+  event.recipes.occultism.miner(
+    Item.of('malum:earthen_spirit').withChance(75),
+    'malum:soul_stained_steel_scythe'
+  )
+  event.recipes.occultism.miner(
+    Item.of('malum:infernal_spirit').withChance(75),
+    'malum:soul_stained_steel_scythe'
+  )
+
+
+  event.remove({ id: 'occultism:ritual/craft_miner_foliot_unspecialized' })
+  event.recipes.occultism.ritual(
+    'occultism:miner_foliot_unspecialized',
+    ['occultism:spirit_attuned_crystal',
+      'embers:eldritch_insignia',
+      'occultism:magic_lamp_empty',
+      'occultism:iesnium_pickaxe',
+      'minecraft:raw_iron',
+      'gtceu:double_gold_plate'],
+    'occultism:book_of_binding_bound_foliot',
+    'occultism:craft_foliot'
+  ).dummy('occultism:ritual_dummy/craft_miner_foliot_unspecialized').id("occultism:frontiers.fusion_ritual.ritual_miner")
+
+
   event.recipes.occultism.ritual(
     '16x gtceu:runed_steel_ingot',
     [
@@ -309,21 +359,21 @@ ServerEvents.recipes(event => {
   ).dummy('occultism:ritual_dummy/craft_dimensional_mineshaft').id("occultism:frontiers.fusion_ritual.dim_mineshaft")
 
   event.recipes.occultism.ritual(
-   '3x legendarysurvivaloverhaul:sun_fern_seeds',
-   [
-     "minecraft:glowstone",
-     "minecraft:glowstone",
-     "biomesoplenty:burning_blossom",
-     "biomesoplenty:burning_blossom",
-     "#botania:petals",
-     "#botania:petals",
-     "#ars_nouveau:magic_shards",
-     "#ars_nouveau:magic_shards"
-   ],
-   "minecraft:fern",
-   'occultism:basic_fusion'
- ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.sun_fern1")
- event.recipes.occultism.ritual(
+    '3x legendarysurvivaloverhaul:sun_fern_seeds',
+    [
+      "minecraft:glowstone",
+      "minecraft:glowstone",
+      "biomesoplenty:burning_blossom",
+      "biomesoplenty:burning_blossom",
+      "#botania:petals",
+      "#botania:petals",
+      "#ars_nouveau:magic_shards",
+      "#ars_nouveau:magic_shards"
+    ],
+    "minecraft:fern",
+    'occultism:basic_fusion'
+  ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.sun_fern1")
+  event.recipes.occultism.ritual(
     '3x legendarysurvivaloverhaul:sun_fern_seeds',
     [
       "minecraft:glowstone",
@@ -340,48 +390,48 @@ ServerEvents.recipes(event => {
   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.sun_fern2")
 
   event.recipes.occultism.ritual(
-     '3x legendarysurvivaloverhaul:ice_fern_seeds',
-     [
-       "minecraft:snow_block",
-       "minecraft:snow_block",
-       "#forge:dusts/ice",
-       "#forge:dusts/ice",
-       "#botania:petals",
-       "#botania:petals",
-       "#ars_nouveau:magic_shards",
-       "#ars_nouveau:magic_shards"
-     ],
-     "minecraft:fern",
-     'occultism:basic_fusion'
-   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.ice_fern1")
-   event.recipes.occultism.ritual(
-      '3x legendarysurvivaloverhaul:ice_fern_seeds',
-      [
-        "minecraft:snow_block",
-        "minecraft:snow_block",
-        "#forge:dusts/ice",
-        "#forge:dusts/ice",
-        "#botania:petals",
-        "#botania:petals",
-        "legendarysurvivaloverhaul:sun_fern_leaf",
-        "legendarysurvivaloverhaul:sun_fern_leaf"
-      ],
-      "minecraft:fern",
-      'occultism:basic_fusion'
-    ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.ice_fern2")
+    '3x legendarysurvivaloverhaul:ice_fern_seeds',
+    [
+      "minecraft:snow_block",
+      "minecraft:snow_block",
+      "#forge:dusts/ice",
+      "#forge:dusts/ice",
+      "#botania:petals",
+      "#botania:petals",
+      "#ars_nouveau:magic_shards",
+      "#ars_nouveau:magic_shards"
+    ],
+    "minecraft:fern",
+    'occultism:basic_fusion'
+  ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.ice_fern1")
+  event.recipes.occultism.ritual(
+    '3x legendarysurvivaloverhaul:ice_fern_seeds',
+    [
+      "minecraft:snow_block",
+      "minecraft:snow_block",
+      "#forge:dusts/ice",
+      "#forge:dusts/ice",
+      "#botania:petals",
+      "#botania:petals",
+      "legendarysurvivaloverhaul:sun_fern_leaf",
+      "legendarysurvivaloverhaul:sun_fern_leaf"
+    ],
+    "minecraft:fern",
+    'occultism:basic_fusion'
+  ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.ice_fern2")
 
 
   event.remove({ id: 'occultism:ritual/craft_satchel' })
   event.recipes.occultism.ritual(
     'occultism:satchel',
     ['legendarysurvivaloverhaul:cold_string',
-    'legendarysurvivaloverhaul:cold_string',
+      'legendarysurvivaloverhaul:cold_string',
       'cosmiccore:waxed_leather',
       'cosmiccore:waxed_leather',
       'cosmiccore:waxed_leather',
       'cosmiccore:waxed_leather',
-    'legendarysurvivaloverhaul:warm_string',
-    'legendarysurvivaloverhaul:warm_string',],
+      'legendarysurvivaloverhaul:warm_string',
+      'legendarysurvivaloverhaul:warm_string',],
     "gtceu:aluminium_crate",
     'occultism:craft_djinni'
   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.fusion_ritual.satchel")

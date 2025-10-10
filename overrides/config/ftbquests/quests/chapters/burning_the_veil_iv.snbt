@@ -6,14 +6,25 @@
 	group: "3EC91AC584FC0BC3"
 	icon: "gtceu:alloy_blast_smelter"
 	id: "435C67C6C672A96B"
-	images: [{
-		height: 3.5d
-		image: "frontiers:textures/questimages/miscicons/wingedborder.png"
-		rotation: 0.0d
-		width: 3.5d
-		x: 0.0714285714285694d
-		y: -11.94642857142857d
-	}]
+	images: [
+		{
+			height: 2.5d
+			image: "frontiers:textures/questimages/miscicons/iv.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: -10.0d
+			y: -9.5d
+		}
+		{
+			height: 1.5d
+			image: "frontiers:textures/questimages/miscicons/blank_borders.png"
+			order: 10
+			rotation: 0.0d
+			width: 4.0d
+			x: 0.0d
+			y: -12.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -709,7 +720,7 @@
 				item: "gtceu:rhodium_plated_palladium_ingot"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.0d
 			y: -12.0d
 		}
 		{
@@ -726,7 +737,7 @@
 				item: "gtceu:rhodium_ingot"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 4.0d
 			y: -13.0d
 		}
 		{
@@ -740,7 +751,7 @@
 				item: "gtceu:palladium_ingot"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 4.0d
 			y: -12.0d
 		}
 		{
