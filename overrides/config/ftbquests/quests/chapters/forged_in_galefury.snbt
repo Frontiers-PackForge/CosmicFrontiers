@@ -8,15 +8,25 @@
 	hide_quest_until_deps_visible: true
 	icon: "gtceu:galvanized_ethersteel_ingot"
 	id: "2AF6C950A3B12568"
-	images: [{
-		height: 1.5d
-		image: "frontiers:textures/questimages/miscicons/blank_borders.png"
-		order: 10
-		rotation: 0.0d
-		width: 4.0d
-		x: 5.0d
-		y: 6.25d
-	}]
+	images: [
+		{
+			height: 1.5d
+			image: "frontiers:textures/questimages/miscicons/blank_borders.png"
+			order: 10
+			rotation: 0.0d
+			width: 4.0d
+			x: 5.0d
+			y: 10.25d
+		}
+		{
+			height: 2.5d
+			image: "frontiers:textures/questimages/miscicons/mv.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 10.0d
+			y: -5.5d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -75,7 +85,7 @@
 		{
 			dependencies: [
 				"552C016EDCDE02B2"
-				"47338E363C32FF42"
+				"496911AF51A740C2"
 			]
 			description: ["The next tier of &eenergy hatch&r. Remember, if you want to run &6HV&r in your EBF recipes, you’ll need two of these and 4 amps of MV power."]
 			id: "0DA958E38153F414"
@@ -159,7 +169,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["4573B786F0ED6565"]
+			dependencies: ["36581D627CFEE81B"]
 			description: [
 				"Used to make the next tier of circuits, 'Micros' as they are commonly called."
 				""
@@ -169,7 +179,7 @@
 			]
 			id: "00747791826B2FB8"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "Next up, better circuits!"
 			tasks: [{
 				id: "699ABF22006086C6"
@@ -177,7 +187,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 8.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["658FAEAC28F212F2"]
@@ -281,7 +291,6 @@
 			dependencies: [
 				"12E540563DD5C5A9"
 				"7CA92A5D7A2300BC"
-				"673AB6E8C654D518"
 			]
 			description: [
 				"With a comically long chemical name."
@@ -291,7 +300,7 @@
 			hide_until_deps_visible: true
 			id: "44372CC42BD4ABEF"
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "One Stable Alloy"
 			tasks: [{
 				id: "7130323F6D02C333"
@@ -299,13 +308,14 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
 				"44372CC42BD4ABEF"
 				"001967805068521B"
 				"00747791826B2FB8"
+				"1B6A7E58B2593E22"
 			]
 			description: [
 				"With Ethersteel and Stainless Steel, you can produce Hulls of expanded Arcane Prowess as well as Voltage."
@@ -325,7 +335,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 6.25d
+			y: 10.25d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -341,8 +351,8 @@
 				item: "gtceu:silicon_boule"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7DB0DC421621FC05"]
@@ -376,19 +386,19 @@
 				item: "gtceu:mv_cutter"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.5d
+			x: 1.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["4EEB3A7642876547"]
 			id: "7C0CCAFCC3B869C2"
 			tasks: [{
-				id: "054AE86A70BBB0B7"
-				item: "gtceu:silicon_wafer"
+				id: "3AF0980605BF2F46"
+				item: "gtceu:mv_laser_engraver"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
+			x: 1.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -400,7 +410,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 4.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -411,8 +421,8 @@
 				item: "gtceu:emerald_lens"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.5d
+			x: 3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -425,8 +435,8 @@
 				item: "gtceu:ilc_wafer"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.5d
+			x: 0.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -439,37 +449,8 @@
 				item: "gtceu:ram_wafer"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 5.5d
-		}
-		{
-			dependencies: [
-				"31AFAD2FD1E20E11"
-				"63583107A604973F"
-			]
-			id: "0043370513B224E8"
-			tasks: [{
-				id: "27DD8486356EAE70"
-				item: "gtceu:good_integrated_circuit"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 7.5d
-		}
-		{
-			dependencies: [
-				"0282FBA66372D27F"
-				"0043370513B224E8"
-				"0DB94D5D36DDB48E"
-			]
-			id: "4573B786F0ED6565"
-			tasks: [{
-				id: "115C9F15C482E6C8"
-				item: "gtceu:advanced_integrated_circuit"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 8.5d
+			x: 2.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2122669781258E24"]
@@ -480,7 +461,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["2C4D1AD906D66496"]
@@ -490,19 +471,8 @@
 				item: "gtceu:ram_chip"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["63583107A604973F"]
-			id: "31AFAD2FD1E20E11"
-			tasks: [{
-				id: "02AC8EB4A736324B"
-				item: "gtceu:basic_integrated_circuit"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 6.5d
+			x: 2.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["124FCFE63B0E5531"]
@@ -526,8 +496,8 @@
 				item: "gtceu:hot_silicon_ingot"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 1.5d
+			x: -3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -540,8 +510,8 @@
 				item: "gtceu:silicon_ingot"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 3.0d
+			x: -3.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["336D03FB8C8EF1CC"]
@@ -551,13 +521,14 @@
 				item: "gtceu:silicon_plate"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 6.0d
+			x: -3.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
 				"53ECAB6ADA8126F9"
 				"18D417A2E0D50FDB"
+				"1539D39E026BF91F"
 			]
 			id: "0282FBA66372D27F"
 			tasks: [{
@@ -565,8 +536,8 @@
 				item: "gtceu:transistor"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 8.5d
+			x: -3.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -642,115 +613,18 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"2031072CF3844102"
-				"43C5977655A4460F"
-			]
+			dependencies: ["466C20EACAEF3394"]
+			hide_dependency_lines: true
 			id: "53ECAB6ADA8126F9"
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				id: "0C00FFF33CFAB846"
 				item: "gtceu:polyethylene_bucket"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 8.5d
-		}
-		{
-			dependencies: [
-				"43C5977655A4460F"
-				"7A7FF903F9600094"
-			]
-			description: [
-				"You have a few options to make Ethylene"
-				""
-				"The first and most likely more accessable for you is Ethanol + Sulfuric Acid."
-				"This is really only relevant because you have been producing Ethanol from Nether flora since LV"
-				""
-				"The Second Option is Steam Cracking Oils to make Ethylene, this will become your main source later on. but for now you can ignore it if you wish."
-				""
-				"There's also Glycerol, but that's better saved for elsewhere."
-			]
-			icon: "gtceu:ethylene_bucket"
-			id: "2031072CF3844102"
-			subtitle: "How to get your plastic"
-			tasks: [{
-				id: "2BB4D3CE1BB75E01"
-				type: "checkmark"
-			}]
-			title: "Ethylene"
-			x: -5.0d
-			y: 8.5d
-		}
-		{
-			dependencies: ["124FCFE63B0E5531"]
-			id: "43C5977655A4460F"
-			tasks: [{
-				id: "490A756FB22405E8"
-				item: "gtceu:mv_chemical_reactor"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["4D9425267F0C2AB4"]
-			icon: "gtceu:sulfur_trioxide_bucket"
-			id: "310BA3D469D11050"
-			tasks: [
-				{
-					id: "769F4415F2B3F770"
-					item: "gtceu:sulfur_trioxide_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "21C862AC5682B5D2"
-					title: "Checkmark - SKIP ME!"
-					type: "checkmark"
-				}
-			]
-			x: -5.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["466C20EACAEF3394"]
-			hide_dependency_lines: true
-			icon: "gtceu:sulfur_dioxide_bucket"
-			id: "4D9425267F0C2AB4"
-			optional: true
-			tasks: [{
-				consume_items: false
-				id: "112CFAF0DA51C1C2"
-				item: "gtceu:sulfur_dioxide_bucket"
-				only_from_crafting: false
-				optional_task: true
-				type: "item"
-			}]
-			x: -5.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["310BA3D469D11050"]
-			dependency_requirement: "one_completed"
-			icon: "gtceu:sulfuric_acid_bucket"
-			id: "7A7FF903F9600094"
-			tasks: [
-				{
-					id: "4ADC335F03D8C17C"
-					item: "gtceu:sulfuric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "391A86BDB2A3C2EF"
-					title: "Checkmark - SKIP ME!"
-					type: "checkmark"
-				}
-			]
-			x: -5.0d
-			y: 6.5d
+			x: -5.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -759,6 +633,7 @@
 				""
 				"While I have you here, have you ate?"
 			]
+			hide_dependency_lines: true
 			id: "6CF5091019AA768B"
 			subtitle: "Yup, This quest is here twice."
 			tasks: [{
@@ -766,8 +641,8 @@
 				item: "gtceu:mv_chemical_bath"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 1.5d
+			x: -2.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -782,7 +657,7 @@
 				type: "item"
 			}]
 			title: "Mana, UP!"
-			x: 10.0d
+			x: 11.5d
 			y: 0.0d
 		}
 		{
@@ -796,7 +671,7 @@
 				item: "botania:diluted_pool"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 9.5d
 			y: -3.5d
 		}
 		{
@@ -807,7 +682,7 @@
 				item: "botania:mana_diamond"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 14.0d
 			y: -3.5d
 		}
 		{
@@ -818,8 +693,8 @@
 				item: "botania:mana_pool"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 0.0d
+			x: 16.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2B844CDAF9BD63C4"]
@@ -902,8 +777,8 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
-			y: 0.0d
+			x: 11.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -920,8 +795,8 @@
 				item: "botania:runic_altar"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 3.0d
+			x: 16.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2B844CDAF9BD63C4"]
@@ -932,8 +807,8 @@
 				item: "botania:pure_daisy"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -1.5d
+			x: 9.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0D9C29134B9081A6"]
@@ -950,7 +825,7 @@
 					type: "item"
 				}
 			]
-			x: 10.0d
+			x: 9.5d
 			y: -2.5d
 		}
 		{
@@ -964,20 +839,20 @@
 				item: "gtceu:zano_aluminate_dust"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 3.0d
+			x: 12.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["235C063EE75D22F0"]
-			icon: "gtceu:zanite_gem"
+			icon: "aether:zanite_gemstone"
 			id: "4859FC0AAFBC1C06"
 			tasks: [{
-				id: "0D15857F24035EA7"
-				item: "gtceu:zanite_gem"
+				id: "09E0429091234E87"
+				item: "aether:zanite_gemstone"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 1.5d
+			x: 11.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["33757BC3FFE5AD18"]
@@ -988,7 +863,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["067F1B88CE39C61C"]
@@ -1002,37 +877,23 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["4D73ECB2608CBE31"]
-			hide_dependency_lines: true
-			id: "62C2245ABBF054F3"
-			tasks: [{
-				id: "3F587CBAD4D7F00D"
-				item: "aether:ambrosium_shard"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 1.0d
-		}
-		{
 			dependencies: ["466C20EACAEF3394"]
 			hide_dependency_lines: true
 			icon: "aether:aether_portal_frame"
 			id: "235C063EE75D22F0"
 			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				dimension: "aether:the_aether"
 				id: "4EB59475591A5728"
 				type: "dimension"
 			}]
 			title: "Been to the Aether yet?"
-			x: 8.5d
-			y: 0.0d
+			x: 11.0d
+			y: 7.0d
 		}
 		{
-			dependencies: [
-				"167D8002070C9B69"
-				"5284106D3A924B36"
-			]
+			dependencies: ["167D8002070C9B69"]
 			dependency_requirement: "one_completed"
 			id: "7CA92A5D7A2300BC"
 			tasks: [{
@@ -1040,8 +901,8 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 3.0d
+			x: 7.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["235A2AE1AC57A5E3"]
@@ -1055,13 +916,13 @@
 				item: "botania:blacker_lotus"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 3.0d
+			x: 16.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["18E59533B89D6005"]
 			description: [
-				"The Mana simulator has been moved to HV tier requiring EV power to encourage the use of botania."
+				"The Mana simulator has been moved to EV tier requiring EV power to encourage the use of botania."
 				""
 				"Friendly reminder you can pipe mana!"
 			]
@@ -1069,27 +930,14 @@
 			id: "22EF1AEF0213682D"
 			shape: "gear"
 			subtitle: "Basic Mana Simulation"
-			tasks: [
-				{
-					id: "051F3158DA8AB3AD"
-					item: "gtceu:mana_simulator"
-					type: "item"
-				}
-				{
-					id: "70A2AB42FD1F44D4"
-					item: "gtceu:mv_energy_input_hatch"
-					type: "item"
-				}
-				{
-					count: 40L
-					id: "1A4AF3085B8CF88B"
-					item: "botania:mana_glass"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "051F3158DA8AB3AD"
+				item: "gtceu:mana_simulator"
+				type: "item"
+			}]
 			title: "What Happened to the Mana simulator!?"
-			x: 9.0d
-			y: 4.0d
+			x: 14.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5B43AF700AA037C4"]
@@ -1101,7 +949,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["437582A970E60E97"]
@@ -1113,13 +961,13 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
 				"6BE64F9BD1F1F303"
-				"673AB6E8C654D518"
-				"5284106D3A924B36"
+				"0E5348C5C358E715"
+				"3B54725B72ADA0FE"
 			]
 			icon: "gtceu:unstable_terrasteel_bucket"
 			id: "33757BC3FFE5AD18"
@@ -1137,18 +985,18 @@
 				}
 			]
 			x: 7.5d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["235C063EE75D22F0"]
 			id: "4D73ECB2608CBE31"
 			tasks: [{
-				id: "5B008367DD57CDF9"
-				item: "gtceu:ambrosium_gem"
+				id: "2CD24D10622C199C"
+				item: "aether:ambrosium_shard"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 1.5d
+			x: 12.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["18E59533B89D6005"]
@@ -1159,26 +1007,30 @@
 			size: 1.5d
 			subtitle: "Mmmmm plant"
 			tasks: [{
-				id: "3F857A61D14C7841"
+				icon: "botania:thermalily"
+				id: "4151FAF9714568D7"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(botania:dandelifeon)item(botania:rafflowsia)item(botania:shulk_me_not)item(botania:thermalily)item(botania:rosa_arcana)item(botania:munchdew)item(botania:entropinnyum)item(botania:kekimurus)item(botania:gourmaryllis)item(botania:narslimmus)item(botania:spectrolus))"
+						"ftbfiltersystem:filter": "or(item(botania:thermalily)item(botania:rosa_arcana)item(botania:munchdew)item(botania:entropinnyum)item(botania:gourmaryllis)item(botania:narslimmus))"
 					}
 				}
-				title: "Any Rune Containing Flower"
+				title: "Any Rune Containing Flower without Pixie Dust"
 				type: "item"
 			}]
 			title: "Better Flowers!"
-			x: 10.0d
-			y: 5.5d
+			x: 14.25d
+			y: 1.5d
 		}
 		{
 			dependencies: ["073167015AC853E9"]
 			description: [
 				"Potent mana allows for the gregification of many botania materials, allowing ease of automation."
-				"You can finally dismantle your cheesy FPS shredding Endoflame setup now..."
+				""
+				"You will need several distilleries to keep up with your production needs."
+				""
+				"For reference, I in my personal save started with 4 MV Distilleries and then moved to 6 HV later."
 			]
 			icon: "gtceu:potent_mana_bucket"
 			id: "5284106D3A924B36"
@@ -1188,32 +1040,11 @@
 				item: "gtceu:potent_mana_bucket"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 5.5d
+			x: 9.5d
+			y: 8.5d
 		}
 		{
-			dependencies: ["4D9425267F0C2AB4"]
-			description: [
-				"You can collect air using Gas Collectors."
-				""
-				"Nether Air has some useful stuff, like a passive source of sulfur."
-				""
-				"Once you have HV Circuits you can make Ender Tanks to pipe fuel to the nether and nether air to your base for processing."
-			]
-			id: "57244A33FB03141D"
-			optional: true
-			shape: "gear"
-			subtitle: "Nether Air"
-			tasks: [{
-				id: "434B11E0384EDE2B"
-				item: "gtceu:nether_air_bucket"
-				type: "item"
-			}]
-			x: -6.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["4573B786F0ED6565"]
+			dependencies: ["36581D627CFEE81B"]
 			description: ["With HV Circuits you can make the parts needed for ender tanks and chests."]
 			id: "4EB50D5DE689465A"
 			subtitle: "Dimensional Logistics"
@@ -1243,8 +1074,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 9.5d
+			x: 1.0d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -1284,8 +1115,8 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: 7.5d
-			y: 8.5d
+			x: 9.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -1298,8 +1129,8 @@
 				item: "ars_nouveau:magebloom"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 8.5d
+			x: 14.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["048310EB0EFC4086"]
@@ -1319,8 +1150,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 10.0d
-			y: 8.5d
+			x: 12.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -1333,8 +1164,8 @@
 				item: "legendarysurvivaloverhaul:ice_fern_leaf"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 10.0d
+			x: 14.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["78EA8FE634ECDC35"]
@@ -1354,8 +1185,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 10.0d
-			y: 10.0d
+			x: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["38C69387B3B1C20E"]
@@ -1370,8 +1201,8 @@
 				item: "gtceu:sodium_hydroxide_dust"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 10.0d
+			x: 9.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -1398,8 +1229,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 10.0d
-			y: 7.5d
+			x: 12.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["0D2BAB45D2503E60"]
@@ -1514,8 +1345,8 @@
 				item: "gtceu:vanadium_steel_buzz_saw_blade"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.5d
+			x: -1.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["50C0A5DD402583A2"]
@@ -1530,8 +1361,8 @@
 				item: "gtceu:vanadium_steel_ingot"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.5d
+			x: -1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1554,8 +1385,8 @@
 				item: "gtceu:chromium_dust"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 2.0d
+			x: -1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -1588,19 +1419,21 @@
 				item: "botania:hydroangeas"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["55FEFCA7B9B0A473"]
+			hide_dependency_lines: true
 			id: "073167015AC853E9"
+			shape: "rsquare"
 			tasks: [{
 				id: "0A3C1E6B759CFEAF"
 				item: "gtceu:mv_distillery"
 				type: "item"
 			}]
-			x: 8.75d
-			y: 5.5d
+			x: 9.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["250CDA3928BA5113"]
@@ -1623,7 +1456,7 @@
 				id: "5D9C2EE433D7303F"
 				type: "checkmark"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: -2.5d
 		}
 		{
@@ -1637,8 +1470,8 @@
 				item: "kubejs:terraweave_cloth"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 4.5d
+			x: 7.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -1657,8 +1490,8 @@
 				item: "gtceu:chromium_nugget"
 				type: "item"
 			}]
-			x: 1.214285714285701d
-			y: 0.9948979591836675d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2823B3BAEF820B50"]
@@ -1692,7 +1525,7 @@
 			}]
 			title: "To HV!"
 			x: 4.0d
-			y: 7.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["150C45A63355876F"]
@@ -1738,8 +1571,576 @@
 				}
 			]
 			title: "Recollection"
-			x: 2.5d
+			x: 3.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["073167015AC853E9"]
+			description: [
+				"Potent mana allows for the gregification of many botania materials, allowing ease of automation."
+				"You can finally dismantle your cheesy FPS shredding Endoflame setup now..."
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:potent_mana_bucket"
+			id: "3B54725B72ADA0FE"
+			shape: "rsquare"
+			subtitle: "Mana Potency 10x"
+			tasks: [{
+				id: "56A90EFBABBEA33D"
+				item: "gtceu:potent_mana_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3803EC5F6A44E714"
+				"673AB6E8C654D518"
+			]
+			id: "76A77D09776DCAFD"
+			tasks: [{
+				id: "418332170F143AEC"
+				item: "gtceu:faded_dusk_alloy_ingot"
+				type: "item"
+			}]
+			title: "Dusk Alloy"
+			x: 13.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			hide_dependency_lines: true
+			id: "3803EC5F6A44E714"
+			tasks: [{
+				id: "31BC777431DD5477"
+				item: "embers:dawnstone_ingot"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"2B55E42F3FD22C4E"
+				"7C0CCAFCC3B869C2"
+			]
+			id: "496911AF51A740C2"
+			tasks: [{
+				id: "2CE0355E0924710A"
+				item: "gtceu:ulpic_wafer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			hide_dependency_lines: true
+			icon: "gtceu:sapphire_lens"
+			id: "2B55E42F3FD22C4E"
+			tasks: [{
+				id: "18F3476C3F8674A3"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:lenses/blue)"
+					}
+				}
+				title: "Any #forge:lenses/blue"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D9C29134B9081A6"]
+			id: "44F4AC0681063AB4"
+			tasks: [{
+				id: "68484B451DC4C7E7"
+				item: "cosmiccore:livingrock_tiles"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			hide_dependency_lines: true
+			id: "3A9F568C6E3C8E92"
+			tasks: [{
+				id: "541A84515C3B1CFD"
+				item: "cosmiccore:soul_stained_steel_aluminium_plated_casing"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"18E59533B89D6005"
+				"44F4AC0681063AB4"
+				"3A9F568C6E3C8E92"
+			]
+			id: "0C8CC8189ED87A0C"
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [{
+				id: "3FA316DEB3F95764"
+				item: "cosmiccore:mana_etching_factory"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"0C8CC8189ED87A0C"
+				"353982F466D35E38"
+			]
+			icon: "cosmiccore:latent_capacity_wafer"
+			id: "714ED0E22CC49575"
+			tasks: [
+				{
+					id: "6AB671E9A23CFE6A"
+					item: "cosmiccore:latent_capacity_wafer"
+					type: "item"
+				}
+				{
+					id: "5DF274A1F007CDCB"
+					item: "cosmiccore:capacity_chip"
+					type: "item"
+				}
+			]
+			x: 15.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0C8CC8189ED87A0C"]
+			icon: "cosmiccore:latent_verbosity_wafer"
+			id: "0E947AE31D894D9A"
+			tasks: [
+				{
+					id: "61B5314F405AA63B"
+					item: "cosmiccore:latent_verbosity_wafer"
+					type: "item"
+				}
+				{
+					id: "5E0AB16C6E21DA80"
+					item: "cosmiccore:verbosity_chip"
+					type: "item"
+				}
+			]
+			x: 17.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"0E947AE31D894D9A"
+				"714ED0E22CC49575"
+				"76A77D09776DCAFD"
+			]
+			id: "08A28ACA0FD7152B"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "3BDB9DFF11204BCF"
+				item: "cosmiccore:mv_ember_input_hatch"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"08A28ACA0FD7152B"
+				"76A77D09776DCAFD"
+			]
+			id: "1B6A7E58B2593E22"
+			tasks: [{
+				id: "045DAEF2E121EFFE"
+				item: "cosmiccore:hv_wildfire_core"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 10.25d
+		}
+		{
+			dependencies: ["235C063EE75D22F0"]
+			id: "4A32BE4D92DD9120"
+			tasks: [{
+				id: "0BD14CCC3F2EA792"
+				item: "aether:cold_aercloud"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4A32BE4D92DD9120"]
+			id: "353982F466D35E38"
+			tasks: [{
+				id: "167D10D6EE7AD4F3"
+				item: "aether:blue_aercloud"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"08A28ACA0FD7152B"
+				"255AC7906DF1B30B"
+				"0DFCEE12C462B723"
+			]
+			id: "12DCC6BA4CB329D6"
+			tasks: [{
+				id: "7614BC721010B43C"
+				item: {
+					Count: 1
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:awakened_cinder_gas"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 18.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["63583107A604973F"]
+			id: "2AD6273989011514"
+			tasks: [{
+				id: "2BBA2C5BBD844FF1"
+				item: "gtceu:basic_integrated_circuit"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["2AD6273989011514"]
+			id: "284F8402D822EA5F"
+			tasks: [{
+				id: "46951033452A6824"
+				item: "gtceu:good_integrated_circuit"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"0DB94D5D36DDB48E"
+				"284F8402D822EA5F"
+				"0282FBA66372D27F"
+			]
+			id: "36581D627CFEE81B"
+			tasks: [{
+				id: "3C3D30CE78AE84DF"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0C8CC8189ED87A0C"]
+			hide_dependency_lines: true
+			id: "1539D39E026BF91F"
+			shape: "rsquare"
+			tasks: [{
+				id: "32CAA8AA28CDC73D"
+				item: "cosmiccore:latent_efficacy_wafer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"4859FC0AAFBC1C06"
+				"4D73ECB2608CBE31"
+			]
+			hide_dependency_lines: true
+			id: "0E5348C5C358E715"
+			shape: "rsquare"
+			tasks: [{
+				id: "6282E2EE6157597A"
+				item: "gtceu:zano_aluminate_dust"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["36581D627CFEE81B"]
+			id: "4B4EA430F781DCC0"
+			tasks: [{
+				id: "00368BC05DAFA291"
+				item: "gtceu:multi_smelter"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			id: "4F803E9D98A404AD"
+			tasks: [{
+				id: "313BD8F8CB268B30"
+				item: "gendustry:industrial_apiary"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			id: "75F242DFD977001E"
+			tasks: [{
+				id: "69E6DFF3BC7F3D27"
+				item: "cosmiccore:mv_electric_apiary"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4F803E9D98A404AD"]
+			id: "0EFC9B955F4C8C5D"
+			tasks: [{
+				id: "1D534B66413CFAE2"
+				item: "cosmiccore:decaying_cosmic_upgrade"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4F803E9D98A404AD"]
+			id: "4C244E156371D865"
+			tasks: [{
+				id: "5A59A127A4C7C30B"
+				item: "cosmiccore:wailing_cosmic_upgrade"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4F803E9D98A404AD"]
+			description: ["The Other Industrial Apiary Upgrades can bee found in \"&cThe Busty Bee&r\" Chapter."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						analyzed: 0b
+						genome: {
+							"forestry:activity": {
+								active: "forestry:activity_cathemeral"
+								inactive: "forestry:activity_cathemeral"
+							}
+							"forestry:bee_effect": {
+								active: "forestry:bee_effect_none"
+								inactive: "forestry:bee_effect_none"
+							}
+							"forestry:bee_species": {
+								active: "cosmiccore:bee_illusive"
+								inactive: "cosmiccore:bee_illusive"
+							}
+							"forestry:cave_dwelling": {
+								active: "forestry:falsed"
+								inactive: "forestry:falsed"
+							}
+							"forestry:fertility": {
+								active: "forestry:1id"
+								inactive: "forestry:1id"
+							}
+							"forestry:flower_type": {
+								active: "forestry:flower_type_vanilla"
+								inactive: "forestry:flower_type_vanilla"
+							}
+							"forestry:humidity_tolerance": {
+								active: "forestry:tolerance_none"
+								inactive: "forestry:tolerance_none"
+							}
+							"forestry:lifespan": {
+								active: "forestry:60i"
+								inactive: "forestry:60i"
+							}
+							"forestry:pollination": {
+								active: "forestry:5id"
+								inactive: "forestry:5id"
+							}
+							"forestry:speed": {
+								active: "forestry:1.7f"
+								inactive: "forestry:1.7f"
+							}
+							"forestry:temperature_tolerance": {
+								active: "forestry:tolerance_none"
+								inactive: "forestry:tolerance_none"
+							}
+							"forestry:territory": {
+								active: "forestry:9_6_9"
+								inactive: "forestry:9_6_9"
+							}
+							"forestry:tolerates_rain": {
+								active: "forestry:falsed"
+								inactive: "forestry:falsed"
+							}
+						}
+						health: 60
+						max_heath: 60
+						pristine: 1b
+					}
+				}
+				id: "forestry:bee_queen_ge"
+				tag: {
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_cathemeral"
+									inactive: "forestry:activity_cathemeral"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "cosmiccore:bee_illusive"
+									inactive: "cosmiccore:bee_illusive"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:1id"
+									inactive: "forestry:1id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:60i"
+									inactive: "forestry:60i"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:1.7f"
+									inactive: "forestry:1.7f"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 60
+							max_heath: 60
+							pristine: 1b
+						}
+					}
+				}
+			}
+			id: "5639AEE98CE13219"
+			shape: "gear"
+			tasks: [{
+				id: "6EF9E188FB6C5861"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["51D6C5C7C0E2A94C"]
+			id: "255AC7906DF1B30B"
+			tasks: [{
+				id: "1B1D3F07308D0BD7"
+				type: "custom"
+			}]
+			x: 18.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"761016830D2FCFF9"
+				"683E01771F48E902"
+			]
+			id: "51D6C5C7C0E2A94C"
+			tasks: [{
+				id: "3B9DCE3818DB923C"
+				type: "custom"
+			}]
+			x: 18.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			hide_dependency_lines: true
+			id: "761016830D2FCFF9"
+			tasks: [{
+				id: "33CC074BE6B68908"
+				item: "malum:infernal_spirit"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			hide_dependency_lines: true
+			id: "683E01771F48E902"
+			tasks: [{
+				id: "635B72607537D238"
+				type: "custom"
+			}]
+			x: 18.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["466C20EACAEF3394"]
+			hide_dependency_lines: true
+			id: "4B41F5E77B5260B1"
+			tasks: [{
+				id: "0767D142DF32C61E"
+				type: "custom"
+			}]
+			x: 20.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["4B41F5E77B5260B1"]
+			id: "0DFCEE12C462B723"
+			tasks: [{
+				id: "652A0D50B679F410"
+				type: "custom"
+			}]
+			x: 20.0d
+			y: 9.5d
 		}
 	]
 	title: "Forged in Galefury [MV]"

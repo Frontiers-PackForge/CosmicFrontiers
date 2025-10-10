@@ -7,14 +7,25 @@
 	group: "533DAA16C8D9D30C"
 	icon: "gtceu:titanium_ingot"
 	id: "124E2C5B9FAD4967"
-	images: [{
-		height: 3.5d
-		image: "frontiers:textures/questimages/miscicons/wingedborder.png"
-		rotation: 0.0d
-		width: 3.5d
-		x: 5.571428571428569d
-		y: 0.023809523809518396d
-	}]
+	images: [
+		{
+			height: 1.5d
+			image: "frontiers:textures/questimages/miscicons/blank_borders.png"
+			order: 10
+			rotation: 0.0d
+			width: 4.0d
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			height: 2.5d
+			image: "frontiers:textures/questimages/miscicons/hv.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: -5.0d
+			y: -1.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -56,7 +67,7 @@
 				}
 			]
 			title: "HV Chapter Unlocked!"
-			x: 0.0d
+			x: -0.5d
 			y: 0.0d
 		}
 		{
@@ -71,7 +82,7 @@
 				item: "gtceu:hv_assembler"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -94,7 +105,7 @@
 					type: "item"
 				}
 			]
-			x: 15.0d
+			x: 15.5d
 			y: 0.0d
 		}
 		{
@@ -120,7 +131,7 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
+			x: -0.5d
 			y: -1.5d
 		}
 		{
@@ -134,7 +145,7 @@
 				item: "gtceu:cleanroom"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: -3.0d
 		}
 		{
@@ -146,7 +157,7 @@
 				item: "gtceu:smd_transistor"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: -4.5d
 		}
 		{
@@ -158,7 +169,7 @@
 				item: "gtceu:smd_resistor"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: -4.5d
 		}
 		{
@@ -170,7 +181,7 @@
 				item: "gtceu:smd_capacitor"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: -4.5d
 		}
 		{
@@ -182,7 +193,7 @@
 				item: "gtceu:smd_diode"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: -7.5d
 		}
 		{
@@ -194,7 +205,7 @@
 				item: "gtceu:smd_inductor"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: -7.0d
 		}
 		{
@@ -210,7 +221,7 @@
 				item: "gtceu:micro_processor"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: -5.5d
 		}
 		{
@@ -224,7 +235,7 @@
 				item: "gtceu:micro_processor_assembly"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: -7.0d
 		}
 		{
@@ -240,7 +251,7 @@
 				type: "item"
 			}]
 			title: "Your First EV Circuits!"
-			x: 0.0d
+			x: -0.5d
 			y: -8.5d
 		}
 		{
@@ -252,7 +263,7 @@
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: -12.5d
 		}
 		{
@@ -264,7 +275,7 @@
 				type: "item"
 			}]
 			title: "Your First IV Circuit!"
-			x: 7.5d
+			x: 8.0d
 			y: -12.5d
 		}
 		{
@@ -282,7 +293,7 @@
 				item: "ad_astra:nasa_workbench"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: -6.0d
 		}
 		{
@@ -295,7 +306,7 @@
 				item: "gtceu:vacuum_freezer"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: -8.5d
 		}
 		{
@@ -312,7 +323,7 @@
 				type: "item"
 			}]
 			title: "Nichrome! Finally!"
-			x: 2.0d
+			x: 1.5d
 			y: -6.0d
 		}
 		{
@@ -329,7 +340,7 @@
 				type: "item"
 			}]
 			title: "Water won't work"
-			x: 2.0d
+			x: 1.5d
 			y: -4.5d
 		}
 		{
@@ -340,7 +351,7 @@
 				item: "gtceu:nichrome_dust"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: -1.0d
 		}
 		{
@@ -372,7 +383,7 @@
 				type: "item"
 			}]
 			title: "Hot and Ready"
-			x: 3.5d
+			x: 3.0d
 			y: -6.0d
 		}
 		{
@@ -407,7 +418,7 @@
 				item: "gtceu:hv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 3.0d
 			y: 1.5d
 		}
 		{
@@ -419,7 +430,7 @@
 				item: "gtceu:sodium_potassium_bucket"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: 1.5d
 		}
 		{
@@ -558,7 +569,7 @@
 				item: "gtceu:raw_cooperite"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 15.5d
 			y: -1.5d
 		}
 		{
@@ -580,7 +591,7 @@
 				type: "item"
 			}]
 			title: "Gloomper Chemistry"
-			x: 15.0d
+			x: 15.5d
 			y: 3.0d
 		}
 		{
@@ -592,7 +603,7 @@
 				item: "gtceu:raw_uraninite"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.0d
 			y: -7.5d
 		}
 		{
@@ -667,7 +678,7 @@
 				item: "gtceu:distillation_tower"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -2.5d
 			y: -8.5d
 		}
 		{
@@ -680,7 +691,7 @@
 				item: "gtceu:utherium_gem"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.0d
 			y: 0.0d
 		}
 		{
@@ -697,7 +708,7 @@
 				item: "gtceu:luminescent_utherium_ingot"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -720,7 +731,7 @@
 				item: "gtceu:luminite_ingot"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: -4.0d
 		}
 		{
@@ -839,7 +850,7 @@
 				item: "gtceu:large_chemical_reactor"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 3.0d
 			y: 3.0d
 		}
 		{
@@ -860,7 +871,7 @@
 				}
 			]
 			title: "Steam Cracking."
-			x: -6.0d
+			x: -6.5d
 			y: -10.5d
 		}
 		{
@@ -884,7 +895,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -5.5d
+			x: -6.0d
 			y: -8.5d
 		}
 		{
@@ -904,7 +915,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -7.0d
+			x: -7.5d
 			y: -12.5d
 		}
 		{
@@ -924,7 +935,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -8.0d
+			x: -8.5d
 			y: -12.5d
 		}
 		{
@@ -944,7 +955,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -6.0d
+			x: -6.5d
 			y: -12.5d
 		}
 		{
@@ -968,7 +979,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.5d
+			x: -5.0d
 			y: -8.5d
 		}
 		{
@@ -988,7 +999,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.0d
+			x: -4.5d
 			y: -12.5d
 		}
 		{
@@ -1012,7 +1023,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -7.5d
+			x: -8.0d
 			y: -8.5d
 		}
 		{
@@ -1036,7 +1047,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -6.5d
+			x: -7.0d
 			y: -8.5d
 		}
 		{
@@ -1056,7 +1067,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -5.0d
+			x: -5.5d
 			y: -12.5d
 		}
 		{
@@ -1069,7 +1080,7 @@
 				item: "gtceu:pyrolyse_oven"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -6.5d
 			y: -6.5d
 		}
 		{
@@ -1082,7 +1093,7 @@
 				id: "3A38876635FD0F84"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: 3.0d
 		}
 		{
@@ -1093,7 +1104,7 @@
 				item: "gtceu:cooperite_dust"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.0d
 			y: -1.5d
 		}
 		{
@@ -1104,7 +1115,7 @@
 				item: "gtceu:roasted_cooperite_dust"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 12.5d
 			y: -1.5d
 		}
 		{
@@ -1115,7 +1126,7 @@
 				item: "gtceu:nickel_depleted_cooperite_dust"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 12.5d
 			y: -3.0d
 		}
 		{
@@ -1135,7 +1146,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 12.0d
+			x: 12.5d
 			y: -4.5d
 		}
 		{
@@ -1155,7 +1166,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 13.5d
+			x: 14.0d
 			y: -4.5d
 		}
 		{
@@ -1166,7 +1177,7 @@
 				item: "gtceu:ammonium_hexachloroplatinate_dust"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 12.5d
 			y: -6.0d
 		}
 		{
@@ -1177,7 +1188,7 @@
 				item: "gtceu:platinum_dust"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 12.5d
 			y: -7.5d
 		}
 		{
@@ -1191,7 +1202,7 @@
 				id: "7C15A93D65EA6CE4"
 				type: "checkmark"
 			}]
-			x: 12.0d
+			x: 12.5d
 			y: -9.0d
 		}
 		{
@@ -1211,7 +1222,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 10.5d
+			x: 11.0d
 			y: -1.5d
 		}
 		{
@@ -1222,7 +1233,7 @@
 				item: "gtceu:nickel_dust"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.0d
 			y: -3.0d
 		}
 		{
@@ -1233,7 +1244,7 @@
 				item: "gtceu:ammonium_hexachloropalladate_dust"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.0d
 			y: -6.0d
 		}
 		{
@@ -1244,7 +1255,7 @@
 				item: "gtceu:tetraammine_palladium_chloride_dust"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.0d
 			y: -7.5d
 		}
 		{
@@ -1255,7 +1266,7 @@
 				item: "gtceu:palladium_dust"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.0d
 			y: -9.0d
 		}
 		{
@@ -1268,7 +1279,7 @@
 				item: "gtceu:platinum_group_sludge_dust"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 15.5d
 			y: -4.5d
 		}
 		{
@@ -1289,7 +1300,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -8.5d
+			x: -9.0d
 			y: -4.5d
 		}
 		{
@@ -1310,7 +1321,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -8.5d
+			x: -9.0d
 			y: -6.5d
 		}
 		{
@@ -1331,7 +1342,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -3.5d
+			x: -4.0d
 			y: -6.5d
 		}
 		{
@@ -1352,7 +1363,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -3.5d
+			x: -4.0d
 			y: -4.5d
 		}
 		{
@@ -1373,7 +1384,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -3.5d
+			x: -4.0d
 			y: -5.5d
 		}
 		{
@@ -1394,7 +1405,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.5d
+			x: -5.0d
 			y: -4.5d
 		}
 		{
@@ -1415,7 +1426,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -7.5d
+			x: -8.0d
 			y: -4.5d
 		}
 		{
@@ -1436,7 +1447,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -8.5d
+			x: -9.0d
 			y: -5.5d
 		}
 		{
@@ -1457,7 +1468,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -6.5d
+			x: -7.0d
 			y: -4.5d
 		}
 		{
@@ -1478,7 +1489,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -5.5d
+			x: -6.0d
 			y: -4.5d
 		}
 		{
@@ -1495,7 +1506,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.0d
 			y: -6.0d
 		}
 		{
@@ -1509,7 +1520,7 @@
 				title: "Visit the Moon!"
 				type: "dimension"
 			}]
-			x: 10.5d
+			x: 11.0d
 			y: -4.0d
 		}
 		{
@@ -1521,7 +1532,7 @@
 				item: "gtceu:neodymium_dust"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: 2.0d
 		}
 		{
@@ -1532,7 +1543,7 @@
 				item: "gtceu:leached_lre_residue_dust"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 10.5d
 			y: 3.0d
 		}
 		{
@@ -1544,7 +1555,7 @@
 				item: "gtceu:praseodymium_dust"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: 3.0d
 		}
 		{
@@ -1556,7 +1567,7 @@
 				item: "gtceu:cerium_dust"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: 4.0d
 		}
 		{
@@ -1568,7 +1579,7 @@
 				item: "gtceu:lanthanum_dust"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 9.0d
 			y: 4.0d
 		}
 		{
@@ -1588,7 +1599,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 13.0d
+			x: 13.5d
 			y: 3.0d
 		}
 		{
@@ -1608,7 +1619,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 11.5d
+			x: 12.0d
 			y: 3.0d
 		}
 		{
@@ -1628,7 +1639,7 @@
 				type: "checkmark"
 			}]
 			title: "About Platinum/Palladium"
-			x: 15.0d
+			x: 15.5d
 			y: -3.0d
 		}
 		{
@@ -1639,7 +1650,7 @@
 				item: "gtceu:wet_lre_precipitate_bucket"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 9.0d
 			y: 3.0d
 		}
 		{
@@ -1650,7 +1661,7 @@
 				item: "gtceu:hv_chemical_bath"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: 3.0d
 		}
 		{
@@ -1661,7 +1672,7 @@
 				item: "minecraft:ender_eye"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.5d
 			y: 3.0d
 		}
 		{
@@ -1672,7 +1683,7 @@
 				item: "gtceu:hv_sensor"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.5d
 			y: 2.0d
 		}
 		{
@@ -1683,7 +1694,7 @@
 				item: "gtceu:hv_emitter"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.5d
 			y: 4.0d
 		}
 		{
@@ -1697,7 +1708,7 @@
 				item: "cosmiccore:hv_radio_module"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -5.5d
 			y: 3.0d
 		}
 		{
@@ -1717,7 +1728,7 @@
 				item: "cosmiccore:hv_wireless_charger"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -7.0d
 			y: 3.0d
 		}
 		{
@@ -1729,7 +1740,7 @@
 				item: "gtceu:hv_macerator"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: 4.5d
 		}
 		{
@@ -1747,7 +1758,7 @@
 				item: "gtceu:hv_polarizer"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: 5.0d
 		}
 		{

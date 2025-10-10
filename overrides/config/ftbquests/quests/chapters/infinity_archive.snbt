@@ -74,11 +74,6 @@
 			id: "463DB0B29657C699"
 			invisible: true
 			min_width: 300
-			rewards: [{
-				id: "2057F80CB98EBF31"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
 			shape: "octagon"
 			size: 1.5d
 			subtitle: "\"Paying the Ultimate Price\""
@@ -289,6 +284,7 @@
 				""
 				"                 &lEND OF ACT 1 - FORGOTTEN&r"
 			]
+			hide_until_deps_complete: true
 			id: "4A4E0FE812B06F4E"
 			subtitle: "Lore Entry #6"
 			tasks: [{
@@ -315,6 +311,7 @@
 				""
 				"                 &lEND OF ACT 1 - FORGOTTEN&r"
 			]
+			hide_until_deps_complete: true
 			id: "0EC20B7189FB7861"
 			subtitle: "Lore Entry #6"
 			tasks: [{
@@ -340,6 +337,9 @@
 				""
 				"                 &lEND OF ACT 1 - FORGOTTEN&r"
 			]
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
 			id: "67B0F78C0D10741F"
 			subtitle: "Lore Entry #6"
 			tasks: [{
@@ -365,6 +365,8 @@
 				""
 				"                 &lEND OF ACT 1 - FORGOTTEN&r"
 			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "4AA4BAF5561FF1F0"
 			subtitle: "Lore Entry #6"
 			tasks: [{
@@ -523,6 +525,26 @@
 			title: "More to Come in Future Updates"
 			x: 0.0d
 			y: 16.0d
+		}
+		{
+			dependencies: ["463DB0B29657C699"]
+			description: [
+				"This Quest Page is unique in it contains all the story and lore for the pack."
+				""
+				"Beware opening this page with &cAdmin EDIT MODE&r will &4SPOIL THE PACK'S STORY&r."
+				""
+				"These quests will naturally show up here as you find them normally in play, as a collective of what you've discovered."
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "42016E224BD14174"
+			subtitle: "This QB Page Looks Empty, that's okay!"
+			tasks: [{
+				id: "446974CEFB25327F"
+				title: "Notice!"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
 		}
 	]
 	title: "&fInfinity Archive&7 - [&fStory&7]"
