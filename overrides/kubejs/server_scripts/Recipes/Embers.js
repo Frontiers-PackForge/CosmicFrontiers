@@ -38,19 +38,15 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'embers:copper_plate' })
   event.remove({ output: 'embers:lead_plate' })
   event.remove({ output: 'embers:silver_plate' })
+  event.remove({ type: 'embers:alchemy' })
 
 
   event.recipes.gtceu.dawn_forge('frontiers:dawn_eldritch_eye')
-    .notConsumable('embers:iron_aspectus')
-    .notConsumable('embers:copper_aspectus')
-    .notConsumable('2x embers:lead_aspectus')
-    .itemInputs(['embers:archaic_circuit', '2x embers:archaic_brick', '2x minecraft:coal'])
+    .itemInputs(['embers:archaic_circuit', 'embers:archaic_brick','embers:archaic_brick', 'minecraft:coal','minecraft:coal'])
     .itemOutputs('embers:eldritch_insignia')
     .emberInput(2000)
     .duration(150)
     .EUt(GTValues.VA[GTValues.LV]);
-
-
 
   event.recipes.gtceu.mixer('frontiers:large_mixer_dawnstone')
     .inputFluids('gtceu:gold 1152', 'gtceu:copper 288')
@@ -62,7 +58,7 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.dawn_forge('frontiers:dawn_lv_core')
     .notConsumable('embers:iron_aspectus')
     .notConsumable('embers:copper_aspectus')
-    .itemInputs(['embers:ember_shard', 'gtceu:runed_steel_foil', 'gtceu:dawnstone_plate', 'gtceu:runed_steel_foil', 'gtceu:dawnstone_plate'])
+    .itemInputs(['embers:ember_shard', 'gtceu:runed_steel_foil', 'embers:dawnstone_plate', 'gtceu:runed_steel_foil', 'embers:dawnstone_plate'])
     .itemOutputs('cosmiccore:lv_wildfire_core')
     .emberInput(750)
     .duration(60)
@@ -203,6 +199,262 @@ ServerEvents.recipes(event => {
         "item": "gtceu:chipped_emberite_gem"
       }
     })
+
+// source: inflictor_gem.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_inflictor_gem')
+    .itemInputs(["#forge:ingots/dawnstone", "#minecraft:coals", "#minecraft:coals", "#minecraft:coals", "#forge:gems/diamond"])
+    .itemOutputs("embers:inflictor_gem")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: intelligent_apparatus.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_intelligent_apparatus')
+    .itemInputs(["#forge:ingots/copper", "embers:archaic_circuit", "#forge:ingots/copper", "embers:archaic_circuit", "#forge:plates/copper"])
+    .itemOutputs("embers:intelligent_apparatus")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: iron_crystal_seed.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_iron_crystal_seed')
+    .itemInputs(["#forge:ingots/iron", "#forge:ingots/iron", "#forge:ingots/iron", "#embers:crystal_seeds"])
+    .itemOutputs("embers:iron_crystal_seed")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: isolated_materia.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_isolated_materia')
+    .itemInputs(["#forge:gems/quartz", "minecraft:clay_ball", "#forge:gems/lapis", "#forge:ingots/iron"])
+    .itemOutputs("4x embers:isolated_materia")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: lead_crystal_seed.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_lead_crystal_seed')
+    .itemInputs(["#forge:ingots/lead", "#forge:ingots/lead", "#forge:ingots/lead", "#embers:crystal_seeds"])
+    .itemOutputs("embers:lead_crystal_seed")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: netherrack.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_netherrack')
+    .itemInputs(["minecraft:cobblestone", "minecraft:cobblestone", "minecraft:cobblestone", "minecraft:cobblestone", "embers:ember_grit"])
+    .itemOutputs("4x minecraft:netherrack")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: nickel_crystal_seed.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_nickel_crystal_seed')
+    .itemInputs(["#forge:ingots/nickel", "#forge:ingots/nickel", "#forge:ingots/nickel", "#embers:crystal_seeds"])
+    .itemOutputs("embers:nickel_crystal_seed")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: nonbeliever_amulet.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_nonbeliever_amulet')
+    .itemInputs(["embers:eldritch_insignia", "embers:archaic_circuit", "embers:archaic_brick", "embers:archaic_circuit", "embers:ashen_amulet"])
+    .itemOutputs("embers:nonbeliever_amulet")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: shifting_scales.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_shifting_scales')
+    .itemInputs(["#forge:plates/lead", "#forge:plates/lead", "#forge:plates/lead", "#forge:plates/lead", "#forge:plates/lead", "embers:ashen_fabric"])
+    .itemOutputs("embers:shifting_scales")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: silver_crystal_seed.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_silver_crystal_seed')
+    .itemInputs(["#forge:ingots/silver", "#forge:ingots/silver", "#forge:ingots/silver", "#embers:crystal_seeds"])
+    .itemOutputs("embers:silver_crystal_seed")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: soul_sand.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_soul_sand')
+    .itemInputs(["minecraft:sand", "minecraft:sand", "minecraft:sand", "minecraft:sand", "embers:ash"])
+    .itemOutputs("4x minecraft:soul_sand")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: tin_crystal_seed.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_tin_crystal_seed')
+    .itemInputs(["#forge:ingots/tin", "#forge:ingots/tin", "#forge:ingots/tin", "#embers:crystal_seeds"])
+    .itemOutputs("embers:tin_crystal_seed")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: tyrfing.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_tyrfing')
+    .itemInputs(["#forge:storage_blocks/coal", "#forge:obsidian", "#forge:ingots/lead", "#forge:ingots/lead", "embers:lead_sword"])
+    .itemOutputs("embers:tyrfing")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: wildfire_core.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_wildfire_core')
+    .itemInputs(["#forge:ingots/dawnstone", "embers:ember_crystal_cluster", "#forge:ingots/dawnstone", "#forge:plates/copper", "embers:ancient_motive_core"])
+    .itemOutputs("embers:wildfire_core")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: winding_gears.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_winding_gears')
+    .itemInputs(["#forge:plates/dawnstone", "#forge:plates/dawnstone", "#forge:plates/dawnstone", "#forge:plates/dawnstone", "#forge:ingots/dawnstone"])
+    .itemOutputs("embers:winding_gears")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: zinc_crystal_seed.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_zinc_crystal_seed')
+    .itemInputs(["#forge:ingots/zinc", "#forge:ingots/zinc", "#forge:ingots/zinc", "#embers:crystal_seeds"])
+    .itemOutputs("embers:zinc_crystal_seed")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: adhesive.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_adhesive')
+    .itemInputs(["minecraft:bone_meal", "minecraft:bone_meal", "minecraft:clay_ball"])
+    .itemOutputs("6x embers:adhesive")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: aluminium_crystal_seed.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_aluminium_crystal_seed')
+    .itemInputs(["#forge:ingots/aluminium", "#forge:ingots/aluminium", "#forge:ingots/aluminium", "#embers:crystal_seeds"])
+    .itemOutputs("embers:aluminium_crystal_seed")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: ancient_motive_core.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_ancient_motive_core')
+    .itemInputs(["embers:archaic_brick", "embers:archaic_brick", "embers:archaic_brick", "embers:ember_shard"])
+    .itemOutputs("embers:ancient_motive_core")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: archaic_brick.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_archaic_brick')
+    .itemInputs(["minecraft:soul_sand", "minecraft:clay_ball", "minecraft:clay_ball", "embers:archaic_brick"])
+    .itemOutputs("5x embers:archaic_brick")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: ashen_fabric.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_ashen_fabric')
+    .itemInputs(["#forge:dusts/ash", "#forge:dusts/ash", "#forge:string", "#forge:string", "#minecraft:wool"])
+    .itemOutputs("embers:ashen_fabric")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: blasting_core.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_blasting_core')
+    .itemInputs(["#forge:plates/iron", "#forge:plates/iron", "#forge:plates/iron", "#forge:ingots/copper", "#forge:gunpowder"])
+    .itemOutputs("embers:blasting_core")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: catalytic_plug.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_catalytic_plug')
+    .itemInputs(["embers:fluid_pipe", "#forge:glass/silica", "embers:fluid_pipe", "#forge:ingots/silver"])
+    .itemOutputs("embers:catalytic_plug")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: copper_crystal_seed.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_copper_crystal_seed')
+    .itemInputs(["#forge:ingots/copper", "#forge:ingots/copper", "#forge:ingots/copper", "#embers:crystal_seeds"])
+    .itemOutputs("embers:copper_crystal_seed")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: ember_crystal_cluster.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_ember_crystal_cluster')
+    .itemInputs(["#forge:gunpowder", "embers:ember_shard", "embers:ember_shard", "embers:ember_shard", "embers:ember_crystal"])
+    .itemOutputs("embers:ember_crystal_cluster")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: entropic_enumerator.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_entropic_enumerator')
+    .itemInputs(["#forge:ingots/copper", "#forge:ingots/iron", "#forge:ingots/gold", "#forge:ingots/lead", "#forge:ingots/silver", "#forge:ingots/dawnstone", "embers:ashen_tile"])
+    .itemOutputs("embers:entropic_enumerator")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: explosion_charm.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_explosion_charm')
+    .itemInputs(["embers:archaic_brick", "embers:archaic_brick", "#forge:leather", "embers:archaic_brick", "embers:ember_crystal_cluster"])
+    .itemOutputs("embers:explosion_charm")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: explosion_pedestal.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_explosion_pedestal')
+    .itemInputs(["embers:explosion_charm", "embers:alchemy_pedestal"])
+    .itemOutputs("embers:explosion_pedestal")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: flame_barrier.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_flame_barrier')
+    .itemInputs(["#forge:plates/dawnstone", "#forge:plates/dawnstone", "#forge:plates/dawnstone", "#forge:ingots/silver", "embers:ember_crystal"])
+    .itemOutputs("embers:flame_barrier")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: focal_lens.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_focal_lens')
+    .itemInputs(["#forge:plates/dawnstone", "#forge:plates/silver", "#forge:plates/dawnstone", "#forge:plates/silver", "embers:ember_crystal"])
+    .itemOutputs("embers:focal_lens")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: glimmer_crystal.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_glimmer_crystal')
+    .itemInputs(["#forge:gunpowder", "#forge:gunpowder", "embers:ember_shard", "embers:ember_shard", "#forge:gems/quartz"])
+    .itemOutputs("embers:glimmer_crystal")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  // source: gold_crystal_seed.json
+  event.recipes.gtceu.dawn_forge('frontiers:dawn_gold_crystal_seed')
+    .itemInputs(["#forge:ingots/gold", "#forge:ingots/gold", "#forge:ingots/gold", "#embers:crystal_seeds"])
+    .itemOutputs("embers:gold_crystal_seed")
+    .emberInput(500)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
 
 
 })
