@@ -1,6 +1,16 @@
 //Adding recipes for registered materials
 ServerEvents.recipes(event => {
     //Livingrock
+    event.custom({
+        "type": "botania:pure_daisy",
+        "input": {
+            "type": "block",
+            "block": "minecraft:bricks"
+        },
+        "output": {
+            "name": "cosmiccore:livingrock_tiles"
+        }
+    })
     event.recipes.gtceu.alloy_smelter('t2_gia_ingot_smelting')
         .itemInputs(['gtceu:naquadah_ingot', '16x botania:life_essence'])
         .itemOutputs('botania:gaia_ingot')

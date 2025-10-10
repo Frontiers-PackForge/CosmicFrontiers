@@ -49,21 +49,6 @@ ServerEvents.tags('item', event => {
        event.add('embers:augmentables/tools_armors', 'cosmiccore:sanguine_warptech_leggings')
        event.add('embers:augmentables/tools_armors', 'cosmiccore:sanguine_warptech_boots')
 })
-//Generator Removal - WILL RETURN WITH UH, """BETTER""" CREATE FUNCTIONALITY
-// yeet('gtceu:lv_combustion')
-// yeet('gtceu:mv_combustion')
-// yeet('gtceu:hv_combustion')
-// yeet('gtceu:large_combustion_engine')
-// yeet('gtceu:extreme_combustion_engine')
-// yeet('gtceu:lv_gas_turbine')
-// yeet('gtceu:mv_gas_turbine')
-// yeet('gtceu:hv_gas_turbine')
-// yeet('gtceu:gas_large_turbine')
-// yeet('gtceu:lv_steam_turbine')
-// yeet('gtceu:mv_steam_turbine')
-// yeet('gtceu:hv_steam_turbine')
-// yeet('gtceu:lv_steam_turbine')
-// yeet('gtceu:steam_large_turbine')
 yeet('gtceu:rtm_alloy_coil_block')
 yeet('gtceu:hssg_coil_block')
 yeet('gtceu:naquadah_coil_block')
@@ -303,13 +288,25 @@ ServerEvents.recipes(event => {
        event.recipes.gtceu.chemical_dehydrator('lava_to_magma_block')
               .inputFluids('minecraft:lava 1000')
               .itemOutputs('minecraft:magma_block')
-              .duration(150)
-              .EUt(GTValues.VA[GTValues.MV]);
+              .duration(100)
+              .EUt(20);
        event.recipes.gtceu.chemical_dehydrator('magma_block_to_netherrack')
               .itemInputs('minecraft:magma_block')
               .itemOutputs('minecraft:netherrack')
-              .duration(100)
-              .EUt(GTValues.VA[GTValues.MV]);
+              .duration(10)
+              .EUt(20);
+       event.remove({ id: "gtceu:extractor/soul_resin_extractor" })
+       event.recipes.gtceu.extractor('soul_resin_extraction')
+              .itemInputs('legendarysurvivaloverhaul:ice_fern_leaf')
+              .outputFluids('gtceu:soulresin 144')
+              .duration(20)
+              .EUt(2);
+       event.remove({ id: "gtceu:extractor/cinder_wax_extractor" })
+       event.recipes.gtceu.extractor('cinder_wax_extraction')
+              .itemInputs('nethersdelight:propelpearl')
+              .outputFluids('gtceu:cinderwax 144')
+              .duration(20)
+              .EUt(2);
        //Basic Circuit Shit, the steam assembler re-routes all the basic parts to be mandatory in it, as otherwise who cares.
        event.remove({ output: "gtceu:resistor" })
        event.recipes.gtceu.assembler('resistor_good')

@@ -3161,7 +3161,7 @@
 			min_width: 350
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "The Largest Hive"
+			subtitle: "The Largest Hive - NYI"
 			tasks: [{
 				id: "6F8183A6A7DA9516"
 				item: "cosmiccore:honey_alveary"

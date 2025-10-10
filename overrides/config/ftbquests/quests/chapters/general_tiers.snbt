@@ -716,7 +716,7 @@
 				item: "cosmiccore:eschaton_processor_supercomputer"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.5d
 			y: 6.5d
 		}
 		{
@@ -773,6 +773,7 @@
 				"4E7E1D8DD97AB90D"
 				"6953D7B284072690"
 				"38DA0B4E0DBAC364"
+				"16D61FBA4E6A2DCF"
 			]
 			hide_until_deps_visible: true
 			id: "17B81787A8E750A2"
@@ -782,7 +783,7 @@
 				item: "cosmiccore:eschaton_processor_mainframe"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 9.5d
 			y: 7.5d
 		}
 		{
@@ -1024,7 +1025,6 @@
 		{
 			dependencies: [
 				"17B81787A8E750A2"
-				"16D61FBA4E6A2DCF"
 				"38DA0B4E0DBAC364"
 			]
 			description: [
@@ -1039,14 +1039,7 @@
 				"Goodluck."
 				""
 				""
-				"If you've gotten this far (And the Pack is finished) - Look forward to &e\"Glory Mode\""
-				""
-				"{@pagebreak}"
-				"What is Glory Mode? "
-				""
-				"Ever wanted an expert pack to have a New Game+?"
-				"Ever wanted to suffer for fun?"
-				"Glory mode sets out to turn a fun expert pack into a brutal challenge. No punches held back Harder recipes, more costly infrastructure, a more deadly world, all catered to kill you."
+				"If you've gotten this far (And the Pack is finished) - I sincerely thank you for playing. <3"
 			]
 			hide_until_deps_visible: true
 			id: "123B5B4397914F0F"

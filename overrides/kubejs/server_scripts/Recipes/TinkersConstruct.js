@@ -54,5 +54,11 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:smeltery/melting/quartz/ore_sparse' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/ore_dense' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/ore_dense' })
+	
+	
+	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick' })
+	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick_kiln' })
+
+
     
 })

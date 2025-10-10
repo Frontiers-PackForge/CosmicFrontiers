@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
 
 
   event.replaceInput({ id: 'gtceu:shaped/lv_machine_hull' }, 'gtceu:wrought_iron_plate', 'gtceu:dawnstone_plate')
-  
+
   event.replaceOutput({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_uvarovite' }, 'gtceu:chromium_dust', 'gtceu:chromite_dust')
 
 
@@ -411,6 +411,15 @@ ServerEvents.recipes(event => {
     .itemOutputs('4x cosmiccore:fireclay_ball')
     .duration(200)
     .EUt(2)
+
+  event.remove({ id: 'embers:caminite_blend' })
+  event.recipes.gtceu.mixer('caminite_mixing')
+    .itemInputs(['#forge:dusts/ash', '3x gtceu:netherrack_dust'])
+    .inputFluids('minecraft:lava 100')
+    .itemOutputs('6x embers:caminite_blend')
+    .duration(200)
+    .EUt(2)
+
   event.shaped('cosmiccore:linked_terminal', [
     'WSH',
     'SCS',
@@ -1193,7 +1202,7 @@ ServerEvents.recipes(event => {
   //LV MACHINE HULL AND CASING
   event.remove({ output: 'gtceu:lv_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:lv_machine_casing_assembler')
-    .itemInputs(['4x gtceu:runed_steel_plate', '2x gtceu:steel_plate','2x cosmiccore:lv_wildfire_core'])
+    .itemInputs(['4x gtceu:runed_steel_plate', '2x gtceu:steel_plate', '2x cosmiccore:lv_wildfire_core'])
     .itemOutputs('gtceu:lv_machine_casing')
     .circuit(8)
     .duration(40)

@@ -583,33 +583,33 @@ ServerEvents.recipes(event => {
 
   //Extended Ae2
   event.recipes.gtceu.assembler('extended_interface')
-    .itemInputs(['4x ae2:interface', '4x gtceu:titanium_plate', '#gtceu:circuits/ev'])
+    .itemInputs(['ae2:interface', '8x cosmiccore:hv_wildfire_core', '#gtceu:circuits/ev'])
     .inputFluids(`gtceu:soldering_alloy 576`)
     .itemOutputs('expatternprovider:ex_interface')
     .circuit(1)
     .duration(90)
-    .EUt(GTValues.VA[GTValues.EV]);
+    .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.assembler('extended_provider')
-    .itemInputs(['4x ae2:pattern_provider', '4x gtceu:titanium_plate', '#gtceu:circuits/ev'])
+    .itemInputs(['ae2:pattern_provider', '8x cosmiccore:hv_wildfire_core', '#gtceu:circuits/ev'])
     .inputFluids(`gtceu:soldering_alloy 576`)
     .itemOutputs('expatternprovider:ex_pattern_provider')
     .circuit(1)
     .duration(90)
-    .EUt(GTValues.VA[GTValues.EV]);
+    .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.assembler('extended_interface_upgrade')
-    .itemInputs(['3x ae2:interface', '4x gtceu:titanium_plate', '#gtceu:circuits/ev'])
+    .itemInputs(['8x cosmiccore:hv_wildfire_core', '#gtceu:circuits/ev'])
     .inputFluids(`gtceu:soldering_alloy 576`)
     .itemOutputs('expatternprovider:interface_upgrade')
     .circuit(2)
     .duration(90)
-    .EUt(GTValues.VA[GTValues.EV]);
+    .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.assembler('extended_provider_upgrade')
-    .itemInputs(['3x ae2:pattern_provider', '4x gtceu:titanium_plate', '#gtceu:circuits/ev'])
+    .itemInputs(['8x cosmiccore:hv_wildfire_core', '#gtceu:circuits/ev'])
     .inputFluids(`gtceu:soldering_alloy 576`)
     .itemOutputs('expatternprovider:pattern_provider_upgrade')
-    .circuit(2)
+    .circuit(3)
     .duration(90)
-    .EUt(GTValues.VA[GTValues.EV]);
+    .EUt(GTValues.VA[GTValues.HV]);
 
   //extended buses
   event.recipes.gtceu.assembler('extended_bus_upgrade_kit')

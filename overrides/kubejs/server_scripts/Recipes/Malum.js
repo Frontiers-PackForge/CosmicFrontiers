@@ -1,5 +1,5 @@
 console.log('[Malum.js loading]')
-let massHideMalum = ['malum:belt_of_the_prospector', 'malum:brilliant_stone', 'malum:natural_quartz_ore', 'malum:natural_quartz', 'malum:cthonic_gold_ore', 'malum:deepslate_soulstone_ore', 'malum:soulstone_ore', 'malum:brilliant_deepslate', 'malum:deepslate_quartz_ore', 'malum:blazing_quartz_ore', /malum:(.*)_impetus/, /malum:(.*)_node/, 'malum:spirit_crucible', 'malum:spirit_catalyzer', ]
+let massHideMalum = ['malum:belt_of_the_prospector', 'malum:brilliant_stone', 'malum:natural_quartz_ore', 'malum:natural_quartz', 'malum:cthonic_gold_ore', 'malum:deepslate_soulstone_ore', 'malum:soulstone_ore', 'malum:brilliant_deepslate', 'malum:deepslate_quartz_ore', 'malum:blazing_quartz_ore', /malum:(.*)_impetus/, /malum:(.*)_node/, 'malum:spirit_crucible', 'malum:spirit_catalyzer',]
 
 ServerEvents.tags('item', event => {
   console.log('[14] - [1] - TAG-WATCHER')
@@ -29,6 +29,12 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'malum:arcane_charcoal_from_runewood' })
   event.remove({ id: 'malum:arcane_charcoal_from_soulwood' })
   event.remove({ id: 'malum:spirit_infusion/belt_of_the_prospector' })
+
+  event.recipes.gtceu.coke_oven('grout_smelting')
+    .itemInputs('tconstruct:grout')
+    .itemOutputs('tconstruct:seared_brick')
+    .duration(200)
+
   event.recipes.gtceu.coke_oven('arcane_charcoal_coking')
     .itemInputs('#malum:soulwood_logs')
     .itemOutputs('malum:arcane_charcoal')
@@ -170,7 +176,7 @@ ServerEvents.recipes(event => {
           "item": "malum:tainted_rock_tablet"
         },
         {
-          "count": 4,
+          "count": 2,
           "item": "malum:soul_stained_steel_plating"
         },
         {
@@ -180,7 +186,7 @@ ServerEvents.recipes(event => {
       ],
       "input": {
         "count": 1,
-        "item": "gtceu:frostproof_machine_casing"
+        "item": "gtceu:solid_machine_casing"
       },
       "output": {
         "count": 1,
@@ -201,7 +207,7 @@ ServerEvents.recipes(event => {
         },
       ]
     }
-  //chorus 
+    //chorus 
   ).id("malum:spirit_infusion.frontiers.chorus_flower")
 
 
@@ -274,8 +280,8 @@ ServerEvents.recipes(event => {
     'occultism:rune_ritual'
   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.cthonic_gold_ritual")
 
-  //blazing quartz
-  .id("malum:spirit_infusion.frontiers.blazing_quartz")
+    //blazing quartz
+    .id("malum:spirit_infusion.frontiers.blazing_quartz")
   event.custom(
     {
       "type": "malum:spirit_infusion",
@@ -305,8 +311,8 @@ ServerEvents.recipes(event => {
       ]
     }
   )
-  //necklace of the mystic mirror (one of the only malum curios that is gated to hv because of an eye of ender)
-  .id("malum:spirit_infusion.frontiers.necklace_of_the_mystic_mirror")
+    //necklace of the mystic mirror (one of the only malum curios that is gated to hv because of an eye of ender)
+    .id("malum:spirit_infusion.frontiers.necklace_of_the_mystic_mirror")
   event.remove({ id: 'malum:spirit_infusion/necklace_of_the_mystic_mirror' })
   event.custom(
     {
@@ -356,7 +362,7 @@ ServerEvents.recipes(event => {
   //soulstained steel/alumina default block recipe removal + adding a way to turn the dust back into ingots
   event.remove({ id: 'malum:block_of_soul_stained_steel' })
   event.remove({ id: 'malum:soul_stained_steel_from_block' })
- event.recipes.gtceu.arc_furnace('frontiers:soul_stained_ingot_from_dust')
+  event.recipes.gtceu.arc_furnace('frontiers:soul_stained_ingot_from_dust')
     .itemInputs('gtceu:soul_stained_steel_dust')
     .inputFluids('gtceu:oxygen 56')
     .itemOutputs(['malum:soul_stained_steel_ingot'])
@@ -364,15 +370,15 @@ ServerEvents.recipes(event => {
     .EUt(24,);
 
 
- event.recipes.gtceu.spirit_crucible('frontiers:forge_3')
+  event.recipes.gtceu.spirit_crucible('frontiers:forge_3')
     .itemInputs('botania:life_essence')
     .inputFluids('gtceu:pyroflux 250')
-    .itemOutputs(['8x malum:aerial_spirit', '8x malum:sacred_spirit', '8x malum:aqueous_spirit', '8x malum:earthen_spirit','8x malum:infernal_spirit'])
+    .itemOutputs(['8x malum:aerial_spirit', '8x malum:sacred_spirit', '8x malum:aqueous_spirit', '8x malum:earthen_spirit', '8x malum:infernal_spirit'])
     .duration(350)
     .EUt(GTValues.VA[GTValues.ZPM]);
 
 
- event.recipes.gtceu.spirit_crucible('frontiers:forge_4')
+  event.recipes.gtceu.spirit_crucible('frontiers:forge_4')
     .itemInputs('botania:life_essence')
     .inputFluids('gtceu:starlight 250')
     .itemOutputs(['8x malum:eldritch_spirit', '8x malum:wicked_spirit', '8x malum:arcane_spirit', 'malum:umbral_spirit'])
@@ -381,7 +387,7 @@ ServerEvents.recipes(event => {
 
 
 
-    
+
 
 })
 

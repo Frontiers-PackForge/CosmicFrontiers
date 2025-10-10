@@ -114,9 +114,14 @@
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
 			description: [
-				"This world hosts a wide variety of biome diversity; this also entails a variety of temperature locales that may be undesirable for your fragile body."
+				"This world hosts a wide variety of &ebiome diversity&r; this also entails a variety of &6varying temperature locales&r that may be undesirable for your fragile body."
 				""
-				"Your body temperature is affected by several factors."
+				"Your body temperature is affected by several factors. If you've spawned somewhere hostile you'll want to look into &eSnow Armor&r or &eDesert Armor&r FAST, as you have limited immunity."
+				""
+				"If you manage to find lava, magma blocks, or various snow blocks, you can hold those as well to cool down or warm up!"
+				""
+				"If your enviroment is too hostile or you wish to find a new location to settle, you also have access to /rtp"
+				""
 				""
 				"&eThe Time of Day"
 				"Season"
@@ -137,13 +142,13 @@
 				Count: 1
 				ForgeCaps: {
 					Parent: {
-						temperature: 6.8f
+						temperature: 41.8f
 					}
 				}
 				id: "legendarysurvivaloverhaul:thermometer"
 			}
 			id: "423EB7A96CB261A3"
-			min_width: 400
+			min_width: 450
 			rewards: [{
 				id: "0343745A0E5CD43E"
 				item: "cosmiccore:shard_of_perpetuity"
@@ -245,7 +250,7 @@
 			}
 			id: "5693AA8924634F44"
 			rewards: [{
-				id: "629E504A38989AE9"
+				id: "1F845ED6240BBE27"
 				item: {
 					Count: 1
 					id: "tconstruct:sledge_hammer"
@@ -259,6 +264,10 @@
 							"tconstruct:cobalt"
 						]
 						tic_modifiers: [
+							{
+								level: 1
+								name: "tinkerslevellingaddon:improvable"
+							}
 							{
 								level: 1
 								name: "tconstruct:unbreakable"
@@ -291,7 +300,7 @@
 						}
 						tic_name: "Weirdly Durable Hammer"
 						tic_persistent: {
-							abilities: -1
+							abilities: -2
 							"tconstruct:creative": {
 								abilities: 1
 								upgrades: 6
@@ -326,6 +335,10 @@
 								level: 1
 								name: "tconstruct:unbreakable"
 							}
+							{
+								level: 1
+								name: "tinkerslevellingaddon:improvable"
+							}
 						]
 						tic_volatile_data: {
 							abilities: 2
@@ -336,7 +349,6 @@
 						toolExp: 13.420000000000002d
 					}
 				}
-				only_one: true
 				type: "item"
 			}]
 			subtitle: "I don't care how you get it."

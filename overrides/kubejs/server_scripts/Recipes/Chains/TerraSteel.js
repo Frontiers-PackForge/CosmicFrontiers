@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:nitrogen 1000')
         .itemOutputs(['8x gtceu:galvanized_ethersteel_ingot', '5x gtceu:alumina_dust', '2x gtceu:electrum_ingot'])
         .blastFurnaceTemp(2000)
-        .duration(1200)
+        .duration(600)
         .EUt(GTValues.VA[GTValues.HV]);
 
 
