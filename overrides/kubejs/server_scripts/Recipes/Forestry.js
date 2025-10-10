@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
     // event.remove({ type: 'forestry:centrifuge' })
     event.remove({ type: 'forestry:fermenter' })
     event.remove({ type: 'forestry:moistener' })
-    // event.remove({ type: 'forestry:squeezer' })
+    event.remove({ mod: 'gendustry' })
 
 
 
@@ -291,9 +291,5 @@ ServerEvents.recipes(event => {
         .itemOutputs('64x cosmiccore:abrasive_rosin_millstones')
         .duration(40)
         .EUt(GTValues.VA[GTValues.LV]);
-
-
-
-
 })
 
