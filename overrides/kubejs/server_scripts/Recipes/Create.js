@@ -1272,14 +1272,16 @@ ServerEvents.recipes(event => {
     C: '#gtceu:circuits/hv'
   })
   //cardboard
-  event.remove({ id: "create:mixing/cardboard_pulp" })
-  event.remove({ id: "create:pressing/cardboard" })
-  event.recipes.gtceu.chemical_bath("create:pulp")
-    .itemInputs('4x gtceu:wood_dust')
-    .inputFluids('minecraft:water 400')
-    .itemOutputs('create:pulp')
-    .duration(50)
-    .EUt(16);
+  event.remove({id: "create:mixing/cardboard_pulp"})
+  event.remove({id: "create:pressing/cardboard"})
+  event.remove({id: "create:crafting/appliances/book"})
+  event.recipes.gtceu.mixer("create:pulp")
+  .circuit(1)
+  .itemInputs('4x gtceu:wood_dust')
+  .inputFluids('minecraft:water 400')
+  .itemOutputs('create:pulp')
+  .duration(50)
+  .EUt(16);
   event.recipes.gtceu.compressor("create:cardboard")
     .itemInputs('create:pulp')
     .itemOutputs('create:cardboard')
