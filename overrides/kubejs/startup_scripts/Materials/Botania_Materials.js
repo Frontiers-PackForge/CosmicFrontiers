@@ -230,5 +230,6 @@ GTCEuStartupEvents.materialModification(event => {
 
     //Embers Dawnstone
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('dawnstone'), () => Item.getItem('embers:dawnstone_ingot'))
+    TagPrefix.plate['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('dawnstone'), () => Item.getItem('embers:dawnstone_plate'))
    
 })

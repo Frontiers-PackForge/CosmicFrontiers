@@ -287,6 +287,20 @@ ServerEvents.recipes(event => {
   )
 
 
+  event.remove({ id: 'occultism:ritual/craft_miner_foliot_unspecialized' })
+  event.recipes.occultism.ritual(
+    'occultism:miner_foliot_unspecialized',
+    ['occultism:spirit_attuned_crystal',
+      'embers:eldritch_insignia',
+      'occultism:magic_lamp_empty',
+      'occultism:iesnium_pickaxe',
+      'minecraft:raw_iron',
+      'gtceu:double_gold_plate'],
+    'occultism:book_of_binding_bound_foliot',
+    'occultism:craft_foliot'
+  ).dummy('occultism:ritual_dummy/craft_miner_foliot_unspecialized').id("occultism:frontiers.fusion_ritual.ritual_miner")
+
+
   event.recipes.occultism.ritual(
     '16x gtceu:runed_steel_ingot',
     [
