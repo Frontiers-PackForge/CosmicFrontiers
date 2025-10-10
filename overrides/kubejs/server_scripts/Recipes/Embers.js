@@ -50,6 +50,15 @@ ServerEvents.recipes(event => {
     .duration(150)
     .EUt(GTValues.VA[GTValues.LV]);
 
+
+
+  event.recipes.gtceu.mixer('frontiers:large_mixer_dawnstone')
+    .inputFluids('gtceu:gold 1152', 'gtceu:copper 288')
+    .outputFluids('embers:molten_dawnstone 1440')
+    .emberInput(250)
+    .duration(120)
+    .EUt(GTValues.VA[GTValues.LV], 2);
+
   event.recipes.gtceu.dawn_forge('frontiers:dawn_lv_core')
     .notConsumable('embers:iron_aspectus')
     .notConsumable('embers:copper_aspectus')
@@ -62,7 +71,7 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.dawn_forge('frontiers:dawn_mv_core')
     .notConsumable('embers:iron_aspectus')
     .notConsumable('embers:copper_aspectus')
-    .itemInputs(['embers:ember_crystal', 'gtceu:soul_stained_steel_foil', 'gtceu:aluminium_plate', 'gtceu:soul_stained_steel_foil', 'gtceu:aluminium_plate'])
+    .itemInputs(['embers:ember_crystal', 'gtceu:annealed_manasteel_foil', 'gtceu:aluminium_plate', 'gtceu:soul_stained_steel_foil', 'gtceu:aluminium_plate'])
     .itemOutputs('cosmiccore:mv_wildfire_core')
     .emberInput(750)
     .duration(120)
@@ -76,6 +85,68 @@ ServerEvents.recipes(event => {
     .emberInput(1500)
     .duration(120)
     .EUt(GTValues.VA[GTValues.LV], 16);
+
+  event.remove({ id: 'embers:ashen_goggles' })
+  event.shaped('embers:ashen_goggles', [
+    'CLC',
+    'RCR',
+    'GBG'
+  ], {
+    G: 'experienceobelisk:whisperglass',
+    B: 'gtceu:double_bronze_plate',
+    R: 'gtceu:steel_ring',
+    L: 'cosmiccore:waxed_leather',
+    C: 'projectred_core:woven_cloth'
+  })
+  event.remove({ id: 'embers:ember_bore' })
+  event.shaped('embers:ember_bore', [
+    'BPB',
+    'BCB',
+    'PDP'
+  ], {
+    C: 'embers:mechanical_core',
+    B: 'embers:caminite_bricks',
+    P: Item.of('tconstruct:large_plate').withNBT({ Material: 'tconstruct:cobalt' }).weakNBT(),
+    D: 'gtceu:steel_drill_head'
+  })
+
+  event.recipes.occultism.ritual(
+    'cosmiccore:lv_ember_input_hatch',
+    [
+      "gtceu:steel_block",
+      "gtceu:steel_block",
+      "gtceu:steel_block",
+      "gtceu:steel_block",
+      "gtceu:steel_block",
+      "gtceu:steel_block",
+      "gtceu:steel_block",
+      "gtceu:steel_block",
+      'embers:ember_crystal',
+      'embers:ember_crystal',
+      'embers:ember_crystal',
+      'embers:ember_crystal',
+    ],
+    'embers:caminite_ring',
+    'occultism:craft_djinni'
+  ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.bad_lv_ember_hatch")
+
+  event.recipes.occultism.ritual(
+    'cosmiccore:mv_ember_input_hatch',
+    [
+      "gtceu:flawless_emberite_gem",
+      "gtceu:faded_dusk_alloy_plate",
+      "gtceu:double_soul_stained_steel_plate",
+      "gtceu:double_soul_stained_steel_plate",
+      "gtceu:faded_dusk_alloy_plate",
+      "gtceu:flawless_emberite_gem",
+      'cosmiccore:capacity_chip',
+      'cosmiccore:capacity_chip',
+      'cosmiccore:verbosity_chip',
+      'cosmiccore:verbosity_chip',
+    ],
+    'gtceu:mv_machine_hull',
+    'occultism:craft_djinni'
+  ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.mv_ember_hatch")
 
 
   event.remove({ id: 'embers:dawnstone_plate_hammering' })
@@ -98,5 +169,40 @@ ServerEvents.recipes(event => {
         "tag": "forge:molten_dawnstone"
       }
     })
+
+
+  event.custom(
+    {
+      "type": "embers:ember_activation",
+      "ember": 4400,
+      "input": {
+        "item": "gtceu:exquisite_emberite_gem"
+      }
+    })
+  event.custom(
+    {
+      "type": "embers:ember_activation",
+      "ember": 3400,
+      "input": {
+        "item": "gtceu:flawless_emberite_gem"
+      }
+    })
+  event.custom(
+    {
+      "type": "embers:ember_activation",
+      "ember": 600,
+      "input": {
+        "item": "gtceu:flawed_emberite_gem"
+      }
+    })
+  event.custom(
+    {
+      "type": "embers:ember_activation",
+      "ember": 200,
+      "input": {
+        "item": "gtceu:chipped_emberite_gem"
+      }
+    })
+
 
 })
