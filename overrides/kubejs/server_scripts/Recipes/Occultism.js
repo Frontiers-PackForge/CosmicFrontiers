@@ -359,27 +359,27 @@ ServerEvents.recipes(event => {
   ).dummy('occultism:ritual_dummy/craft_dimensional_mineshaft').id("occultism:frontiers.fusion_ritual.dim_mineshaft")
 
   event.recipes.occultism.ritual(
+   '3x legendarysurvivaloverhaul:sun_fern_seeds',
+   [
+     "minecraft:magma_block",
+     "minecraft:magma_block",
+     "gtceu:netherrack_dust",
+     "gtceu:netherrack_dust",
+     "#botania:petals",
+     "#botania:petals",
+     "#ars_nouveau:magic_shards",
+     "#ars_nouveau:magic_shards"
+   ],
+   "minecraft:fern",
+   'occultism:basic_fusion'
+ ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.sun_fern1")
+ event.recipes.occultism.ritual(
     '3x legendarysurvivaloverhaul:sun_fern_seeds',
     [
-      "minecraft:glowstone",
-      "minecraft:glowstone",
-      "biomesoplenty:burning_blossom",
-      "biomesoplenty:burning_blossom",
-      "#botania:petals",
-      "#botania:petals",
-      "#ars_nouveau:magic_shards",
-      "#ars_nouveau:magic_shards"
-    ],
-    "minecraft:fern",
-    'occultism:basic_fusion'
-  ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.sun_fern1")
-  event.recipes.occultism.ritual(
-    '3x legendarysurvivaloverhaul:sun_fern_seeds',
-    [
-      "minecraft:glowstone",
-      "minecraft:glowstone",
-      "biomesoplenty:burning_blossom",
-      "biomesoplenty:burning_blossom",
+      "minecraft:magma_block",
+      "minecraft:magma_block",
+      "gtceu:netherrack_dust",
+      "gtceu:netherrack_dust",
       "#botania:petals",
       "#botania:petals",
       "legendarysurvivaloverhaul:ice_fern_leaf",
