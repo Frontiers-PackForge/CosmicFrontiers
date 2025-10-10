@@ -81,33 +81,14 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV]);
     //Decomp Recipe 1
-    event.recipes.gtceu.chemical_reactor('gtceu:chemical_reactor/sodium_sulfide_from_sodium_sulfate')
+    event.recipes.gtceu.chemical_reactor('gtceu:chemical_reactor/soda_ash_from_sodium_sulfate')
         .itemInputs('7x gtceu:sodium_sulfate_dust')
-        .itemInputs('2x gtceu:carbon_dust')
-        .itemOutputs('3x gtceu:sodium_sulfide_dust')
-        .outputFluids('gtceu:carbon_dioxide 2000')
-        .duration(40)
-        .EUt(GTValues.VA[GTValues.MV]);
-    //Decomp Recipe 2
-    event.recipes.gtceu.chemical_reactor('gtceu:chemical_reactor/soda_ash_from_sodium_sulfide')
-        .itemInputs('3x gtceu:sodium_sulfide_dust')
-        .itemInputs('2x gtceu:quicklime_dust')
-        .inputFluids('gtceu:carbon_dioxide 1000')
+        .inputFluids('gtceu:carbon_monoxide 1000')
         .itemOutputs('6x gtceu:soda_ash_dust')
-        .itemOutputs('2x gtceu:calcium_sulfide_dust')
+        .outputFluids('gtceu:sulfur_dioxide 1000')
         .duration(40)
         .EUt(GTValues.VA[GTValues.MV]);
-
-    //Fuckin Quicklime.
-    event.remove({ id: 'gtceu:chemical_reactor/calcite_from_quicklime' })
-    event.remove({ id: 'gtceu:large_chemical_reactor/calcite_from_quicklime' })
-    event.recipes.gtceu.chemical_reactor('gtceu_calcite_fix')
-    .itemInputs('2x gtceu:quicklime_dust')
-    .inputFluids('gtceu:carbon_dioxide 1000')
-    .itemOutputs('5x gtceu:calcite_dust')
-    .circuit(3)
-    .duration(80)
-    .EUt(GTValues.VA[GTValues.LV]);
+    
 
     
     // event.recipes.gtceu.chemical_reactor('gtceu:electrolyzer/calcium_sulfide_decomp')
