@@ -747,12 +747,6 @@ ServerEvents.recipes(event => {
     .duration(416)
     .EUt(GTValues.VA[GTValues.LV]);
 
-  event.recipes.gtceu.bender('gtceu:manasteel_plate')
-    .itemInputs('botania:manasteel_ingot')
-    .itemOutputs('gtceu:manasteel_plate')
-    .duration(26)
-    .circuit(1)
-    .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.bender('gtceu:manasteel_plate_to_foil')
     .itemInputs('gtceu:manasteel_plate')
     .itemOutputs('4x gtceu:manasteel_foil')
