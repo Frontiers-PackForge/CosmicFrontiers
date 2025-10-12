@@ -735,6 +735,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ore()
         .color(0xff7300).iconSet(GTMaterialIconSet.CERTUS)
 
+    // Awakened Cinder Gas Stuff
+
+    event.create('infernal_rosin_emulsion')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('infernal_yeast_froth')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('heavy_aerocloud_seltzer')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('smoldering_cinder_brew')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
 })
 
 GTCEuStartupEvents.materialModification(event => {

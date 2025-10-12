@@ -87,7 +87,6 @@ ServerEvents.recipes(event => {
     .circuit(11)
     .duration(100)
     .EUt(8);
-
   event.remove({ output: 'create:large_cogwheel' })
   event.shaped('create:large_cogwheel', [
     ' T ',
@@ -117,7 +116,7 @@ ServerEvents.recipes(event => {
     F: '#forge:tools/files'
   })
 
-  event.recipes.gtceu.assembler("frontiers:sifting_cinder_flour")
+  event.recipes.gtceu.sifter("frontiers:sifting_cinder_flour")
     .itemInputs('gtceu:netherrack_dust')
     .itemOutputs('create:cinder_flour')
     .chancedOutput('create:cinder_flour', 5000, 0)

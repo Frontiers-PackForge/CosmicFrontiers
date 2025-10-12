@@ -85,13 +85,14 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1800)
         .duration(440)
         .EUt(GTValues.VA[GTValues.MV]);
-    event.recipes.gtceu.electric_blast_furnace('gtceu:ebf/ethersteel_ingot_recipe')
+        
+    event.recipes.gtceu.arcane_crucible('gtceu:ebf/ethersteel_ingot_recipe')
         .itemInputs(['4x gtceu:stainless_steel_ingot', '2x botania:terrasteel_ingot', '4x gtceu:zano_aluminate_dust'])
         .inputFluids('gtceu:nitrogen 1000')
         .itemOutputs(['8x gtceu:galvanized_ethersteel_ingot', '5x gtceu:alumina_dust', '2x gtceu:electrum_ingot'])
-        .blastFurnaceTemp(2000)
+        .emberInput(1000)
         .duration(600)
-        .EUt(GTValues.VA[GTValues.HV]);
+        .EUt(GTValues.VA[GTValues.MV]);
 
 
     event.recipes.gtceu.industrial_chemvat('terra_steel_skip_part_1')

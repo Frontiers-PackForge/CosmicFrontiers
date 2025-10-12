@@ -25,6 +25,12 @@ ServerEvents.recipes(event => {
     .duration(20)
     .EUt(-3750000, 64)
 
+
+  event.recipes.gtceu.combustion_generator("combustion_source_fuel")
+    .inputFluids("gtceu:source_enhanced_bio_fuel 1")
+    .duration(15)
+    .EUt(-32);
+
   event.remove({ id: 'gtceu:combustion_generator/naphtha' })
   //TODO : CINDER FUEL 
 
@@ -32,39 +38,42 @@ ServerEvents.recipes(event => {
   //Still insanely strong for the volume and this is a trial run of what CEU's nerfs will look like
   event.remove({ id: 'gtceu:gas_turbine/nitrobenzene' })
   event.recipes.gtceu.combustion_generator('worse_nitrobenzene')
-    .inputFluids('gtceu:nitrobenzene 1')
+    .inputFluids('gtceu:nitrobenzene 2')
     .duration(25)
     .EUt(-GTValues.V[GTValues.LV])
 
-
-
   // Cinder Fuel Stuff
 
-  event.recipes.gtceu.mixer('frontiers:ember_fuel_unrefined')
+  event.recipes.gtceu.mixer('frontiers:ember_gas_unrefined')
     .itemInputs('embers:ember_grit')
-    .inputFluids('gtceu:sulfuric_naphtha 1500')
+    .inputFluids('gtceu:naphtha 1500')
     .inputFluids('gtceu:steam 1000')
-    .outputFluids('gtceu:inert_cinder_fuel 1000')
+    .outputFluids('gtceu:inert_cinder_gas 1000')
     .duration(40)
     .EUt(GTValues.VH[GTValues.LV]);
 
   event.recipes.gtceu.dawn_forge('frontiers:ember_pellets')
     .itemInputs('embers:ember_crystal', 'embers:ember_crystal', 'embers:ember_crystal', 'embers:ember_crystal')
-    .itemOutputs('16x kubejs:cinder_fuel_pellets')
+    .itemOutputs('16x kubejs:cinder_gas_pellets')
     .emberInput(250)
     .duration(40)
     .EUt(GTValues.VH[GTValues.LV]);
 
-  event.recipes.gtceu.arc_furnace('frontiers:cinder_fuel')
+  event.recipes.gtceu.arc_furnace('frontiers:cinder_gas')
     .itemInputs('kubejs:cinder_fuel_pellets')
-    .inputFluids('gtceu:inert_cinder_fuel 1000')
-    .outputFluids('gtceu:cinder_fuel 1250')
+    .inputFluids('gtceu:inert_cinder_gas 1000')
+    .outputFluids('gtceu:cinder_gas 1250')
     .duration(160)
     .EUt(GTValues.VH[GTValues.LV]);
 
-  event.recipes.gtceu.gas_turbine('frontiers:ember_fuel_basic')
-    .inputFluids('gtceu:cinder_fuel 1')
+  event.recipes.gtceu.gas_turbine('frontiers:ember_gas_basic')
+    .inputFluids('gtceu:cinder_gas 1')
     .duration(11)
+    .EUt(-GTValues.V[GTValues.LV])
+
+  event.recipes.gtceu.gas_turbine('frontiers:ember_gas_good')
+    .inputFluids('gtceu:awakened_cinder_gas 1')
+    .duration(20)
     .EUt(-GTValues.V[GTValues.LV])
 
   //Awakened Cinder Gas (Uses Ember, quite a bit)
@@ -74,6 +83,32 @@ ServerEvents.recipes(event => {
   // Infernal Rosin Emulsion -> Infernal Yeast Solution + Dilute HCL (loopps)
 
   // Infernal Yeast Solution + Cinder Fuel + Refinery Gas - Awakened Cinder Gas
+
+
+  event.recipes.gtceu.brewery('frontiers:cinder_emulsion')
+    .itemInputs('4x create:cinder_flour')
+    .inputFluids('gtceu:diluted_hydrochloric_acid 1000')
+    .outputFluids('gtceu:infernal_rosin_emulsion 2000')
+    .duration(160)
+    .EUt(GTValues.VH[GTValues.LV]);
+
+  event.recipes.gtceu.centrifuge('frontiers:yeast_solution')
+    .inputFluids('gtceu:infernal_rosin_emulsion 1000')
+    .outputFluids('gtceu:infernal_yeast_froth 500')
+    .outputFluids('gtceu:diluted_hydrochloric_acid 500')
+    .duration(320)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.chemical_reactor('frontiers:awakened_cinder_gas')
+    .itemInputs('cosmiccore:tiny_moondrop_dust')
+    .inputFluids('gtceu:infernal_yeast_froth 250')
+    .inputFluids('gtceu:refinery_gas 500')
+    .inputFluids('gtceu:cinder_gas 5000')
+    .outputFluids('gtceu:awakened_cinder_gas 5000')
+    .duration(80)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+
 
 
   // Pure Cinder Gas (Uses a LOT of Ember)

@@ -590,7 +590,14 @@
   "material.gtceu.vibrant_alloy": "Vibrant Alloy",
   "material.gtceu.chromaplast": "Chromaplast (Brilliant)",
 
-
+  "material.gtceu.inert_cinder_gas": "Inert Cinder Gas",
+  "material.gtceu.cinder_gas": "Cinder Gas",
+  "material.gtceu.awakened_cinder_gas": "Awakened Cinder Gas",
+  "material.gtceu.pure_cinder_gas": "Pure Cinder Gas",
+  "material.gtceu.infernal_rosin_emulsion": "Infernal Rosin Emulsion",
+  "material.gtceu.infernal_yeast_froth": "Infernal Yeast Froth",
+  "material.gtceu.heavy_aerocloud_seltzer": "Heavy Aerocloud Seltzer",
+  "material.gtceu.smoldering_cinder_brew": "Smoldering Cinder Brew",
 
   "recipe.condition.gamestage.locked_stage": "Blocked By Research: %s",
   "recipe.condition.gamestage.unlocked_stage": "Research: %s",
