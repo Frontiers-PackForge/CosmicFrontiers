@@ -329,7 +329,7 @@ ServerEvents.recipes( e => {
       'ABA'  
     ], {
     A: 'minecraft:diamond', 
-    B: 'gtceu:gold_single_cable',
+    B: 'gtceu:red_alloy_double_cable',
     C: 'minecraft:paper',
     D: 'gtceu:stone_plate'
     }
@@ -340,7 +340,7 @@ ServerEvents.recipes( e => {
       'ABA'  
     ], {
     A: 'minecraft:emerald', 
-    B: 'gtceu:gold_single_cable',
+    B: 'gtceu:red_alloy_double_cable',
     C: 'minecraft:paper',
     D: 'gtceu:stone_plate'
     }
