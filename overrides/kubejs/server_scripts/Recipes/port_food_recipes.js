@@ -239,7 +239,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("vintagedelight:cheese_wheel")
         .itemInputs("4x vintagedelight:cheese_curds")
         .duration(4000)
-        .EUt(GTValues.VA[GTValues.LV]);
+        .EUt(4);
 });
 
 /// addedRecipes: all of the recipes that have been added thus far
