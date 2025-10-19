@@ -289,8 +289,9 @@
 		}
 		{
 			dependencies: [
-				"12E540563DD5C5A9"
 				"7CA92A5D7A2300BC"
+				"2BCDE0709BC21EB0"
+				"37D2D87F516D11F2"
 			]
 			description: [
 				"With a comically long chemical name."
@@ -800,8 +801,16 @@
 		}
 		{
 			dependencies: ["2B844CDAF9BD63C4"]
+			description: [
+				"The Pure Daisy allows you to create various magical blocks and *some* machines."
+				""
+				"They're also a nice decoration."
+				""
+				"You can tell the pure daisy is working when the blocks you place nearby have small white particles coming off them."
+			]
 			id: "0D9C29134B9081A6"
 			shape: "hexagon"
+			subtitle: "Convert this to that"
 			tasks: [{
 				id: "1B747B8160E18458"
 				item: "botania:pure_daisy"
@@ -834,25 +843,27 @@
 				"4D73ECB2608CBE31"
 			]
 			id: "673AB6E8C654D518"
+			shape: "hexagon"
 			tasks: [{
 				id: "2FC0BB03B98EF48F"
 				item: "gtceu:zano_aluminate_dust"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 8.5d
+			x: 9.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["235C063EE75D22F0"]
 			icon: "aether:zanite_gemstone"
 			id: "4859FC0AAFBC1C06"
+			subtitle: "A fragment of power"
 			tasks: [{
 				id: "09E0429091234E87"
 				item: "aether:zanite_gemstone"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 8.5d
+			x: 9.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["33757BC3FFE5AD18"]
@@ -885,7 +896,9 @@
 			size: 1.5d
 			tasks: [{
 				dimension: "aether:the_aether"
+				icon: "aether:aether_portal_frame"
 				id: "4EB59475591A5728"
+				title: "Visit the Aether"
 				type: "dimension"
 			}]
 			title: "Been to the Aether yet?"
@@ -966,8 +979,8 @@
 		{
 			dependencies: [
 				"6BE64F9BD1F1F303"
-				"0E5348C5C358E715"
 				"3B54725B72ADA0FE"
+				"673AB6E8C654D518"
 			]
 			icon: "gtceu:unstable_terrasteel_bucket"
 			id: "33757BC3FFE5AD18"
@@ -990,13 +1003,14 @@
 		{
 			dependencies: ["235C063EE75D22F0"]
 			id: "4D73ECB2608CBE31"
+			subtitle: "A fragment of brilliance"
 			tasks: [{
 				id: "2CD24D10622C199C"
 				item: "aether:ambrosium_shard"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 7.0d
+			x: 11.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["18E59533B89D6005"]
@@ -1081,8 +1095,8 @@
 			dependencies: [
 				"5284106D3A924B36"
 				"3B8E55A57B977480"
-				"01923DB115EF2910"
 				"7C9C7718AAC2972E"
+				"528DD09694B6FF1B"
 			]
 			dependency_requirement: "one_completed"
 			description: ["&bSource Diesel&r, through combining the &aoil found in Mageblooms&r and &eEthanol&r (or &eMethanol&r), and a tiny amount of &esodium hydroxide&r you can produce a suitable fuel for powering your base."]
@@ -1164,8 +1178,8 @@
 				item: "legendarysurvivaloverhaul:ice_fern_leaf"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 13.5d
+			x: -6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["78EA8FE634ECDC35"]
@@ -1185,8 +1199,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 12.0d
-			y: 13.5d
+			x: -6.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["38C69387B3B1C20E"]
@@ -1201,8 +1215,8 @@
 				item: "gtceu:sodium_hydroxide_dust"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 13.5d
+			x: -7.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -1433,7 +1447,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 7.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["250CDA3928BA5113"]
@@ -1596,7 +1610,8 @@
 		{
 			dependencies: [
 				"3803EC5F6A44E714"
-				"673AB6E8C654D518"
+				"693FC249BF4438D8"
+				"07B3F4BF35E98A30"
 			]
 			id: "76A77D09776DCAFD"
 			tasks: [{
@@ -1605,7 +1620,7 @@
 				type: "item"
 			}]
 			title: "Dusk Alloy"
-			x: 13.5d
+			x: 14.25d
 			y: 7.5d
 		}
 		{
@@ -1617,7 +1632,7 @@
 				item: "embers:dawnstone_ingot"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.25d
 			y: 9.5d
 		}
 		{
@@ -1651,6 +1666,7 @@
 				title: "Any #forge:lenses/blue"
 				type: "item"
 			}]
+			title: "Any Blue Lens"
 			x: 2.5d
 			y: 4.5d
 		}
@@ -1663,7 +1679,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["466C20EACAEF3394"]
@@ -1675,7 +1691,7 @@
 				type: "item"
 			}]
 			x: 17.0d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1683,24 +1699,35 @@
 				"44F4AC0681063AB4"
 				"3A9F568C6E3C8E92"
 			]
+			description: [
+				"The Mana Etching Factory allows you to draw basic mana runes into livingrock wafers."
+				""
+				"It can also be used to engrave other magical essences into basic materials. Unlocking unique alternate crafting recipes (In time)"
+				""
+				"These can help magical apparatuses withstand more abuse before breakdown."
+			]
 			id: "0C8CC8189ED87A0C"
 			shape: "hexagon"
 			size: 1.75d
+			subtitle: "Mana Burn"
 			tasks: [{
 				id: "3FA316DEB3F95764"
 				item: "cosmiccore:mana_etching_factory"
 				type: "item"
 			}]
 			x: 16.0d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
 				"0C8CC8189ED87A0C"
 				"353982F466D35E38"
+				"599E3381E1B24C93"
 			]
+			description: ["Capacity wafers, allowing more latent mana storage in devices as well as utilization per action."]
 			icon: "cosmiccore:latent_capacity_wafer"
 			id: "714ED0E22CC49575"
+			subtitle: "Expansion"
 			tasks: [
 				{
 					id: "6AB671E9A23CFE6A"
@@ -1717,9 +1744,14 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["0C8CC8189ED87A0C"]
+			dependencies: [
+				"0C8CC8189ED87A0C"
+				"599E3381E1B24C93"
+			]
+			description: ["Verbosity wafers, slightly stronger sensory chips for your magical hardware"]
 			icon: "cosmiccore:latent_verbosity_wafer"
 			id: "0E947AE31D894D9A"
+			subtitle: "Awareness"
 			tasks: [
 				{
 					id: "61B5314F405AA63B"
@@ -1744,6 +1776,7 @@
 			id: "08A28ACA0FD7152B"
 			shape: "hexagon"
 			size: 1.5d
+			subtitle: "Better Ember Consumption"
 			tasks: [{
 				id: "3BDB9DFF11204BCF"
 				item: "cosmiccore:mv_ember_input_hatch"
@@ -1792,9 +1825,10 @@
 			dependencies: [
 				"08A28ACA0FD7152B"
 				"255AC7906DF1B30B"
-				"0DFCEE12C462B723"
 			]
 			id: "12DCC6BA4CB329D6"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "7614BC721010B43C"
 				item: {
@@ -1850,10 +1884,15 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["0C8CC8189ED87A0C"]
+			dependencies: [
+				"0C8CC8189ED87A0C"
+				"04AFC359C2D3AA05"
+			]
+			description: ["Efficacy wafers. Useful for basic transistor switches and smoother opperation of electronics. "]
 			hide_dependency_lines: true
 			id: "1539D39E026BF91F"
 			shape: "rsquare"
+			subtitle: "Efficiency"
 			tasks: [{
 				id: "32CAA8AA28CDC73D"
 				item: "cosmiccore:latent_efficacy_wafer"
@@ -1861,22 +1900,6 @@
 			}]
 			x: -2.0d
 			y: 11.0d
-		}
-		{
-			dependencies: [
-				"4859FC0AAFBC1C06"
-				"4D73ECB2608CBE31"
-			]
-			hide_dependency_lines: true
-			id: "0E5348C5C358E715"
-			shape: "rsquare"
-			tasks: [{
-				id: "6282E2EE6157597A"
-				item: "gtceu:zano_aluminate_dust"
-				type: "item"
-			}]
-			x: 8.5d
-			y: 1.5d
 		}
 		{
 			dependencies: ["36581D627CFEE81B"]
@@ -1892,6 +1915,7 @@
 		{
 			dependencies: ["466C20EACAEF3394"]
 			id: "4F803E9D98A404AD"
+			subtitle: "TODO : Not Yet Implemented"
 			tasks: [{
 				id: "313BD8F8CB268B30"
 				item: "gendustry:industrial_apiary"
@@ -2072,6 +2096,7 @@
 				id: "6EF9E188FB6C5861"
 				type: "checkmark"
 			}]
+			title: "Notice About Upgrades"
 			x: -5.0d
 			y: 4.5d
 		}
@@ -2079,8 +2104,9 @@
 			dependencies: ["51D6C5C7C0E2A94C"]
 			id: "255AC7906DF1B30B"
 			tasks: [{
-				id: "1B1D3F07308D0BD7"
-				type: "custom"
+				id: "47DAF4397D845FCE"
+				item: "gtceu:infernal_yeast_froth_bucket"
+				type: "item"
 			}]
 			x: 18.5d
 			y: 9.5d
@@ -2090,10 +2116,12 @@
 				"761016830D2FCFF9"
 				"683E01771F48E902"
 			]
+			icon: "gtceu:wood_gas_bucket"
 			id: "51D6C5C7C0E2A94C"
 			tasks: [{
-				id: "3B9DCE3818DB923C"
-				type: "custom"
+				id: "563731FDFD0C9537"
+				item: "gtceu:infernal_rosin_emulsion_bucket"
+				type: "item"
 			}]
 			x: 18.5d
 			y: 12.0d
@@ -2115,32 +2143,148 @@
 			hide_dependency_lines: true
 			id: "683E01771F48E902"
 			tasks: [{
-				id: "635B72607537D238"
-				type: "custom"
+				id: "477444C7885128B8"
+				item: "gtceu:diluted_hydrochloric_acid_bucket"
+				type: "item"
 			}]
 			x: 18.5d
 			y: 13.5d
 		}
 		{
-			dependencies: ["466C20EACAEF3394"]
-			hide_dependency_lines: true
-			id: "4B41F5E77B5260B1"
+			dependencies: ["12E540563DD5C5A9"]
+			id: "2BCDE0709BC21EB0"
+			shape: "rsquare"
+			size: 1.5d
 			tasks: [{
-				id: "0767D142DF32C61E"
-				type: "custom"
+				id: "687EAA89386AF184"
+				item: "cosmiccore:arcane_crucible"
+				type: "item"
 			}]
-			x: 20.0d
-			y: 12.0d
+			x: 5.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["4B41F5E77B5260B1"]
-			id: "0DFCEE12C462B723"
+			dependencies: [
+				"0E947AE31D894D9A"
+				"714ED0E22CC49575"
+				"76A77D09776DCAFD"
+			]
+			description: ["To smelt higher quality magic materials you will need a better source of ember, make sure to finish crafting a MV Ember Hatch before advancing to HV."]
+			hide_dependency_lines: true
+			id: "37D2D87F516D11F2"
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "A Foreward"
 			tasks: [{
-				id: "652A0D50B679F410"
-				type: "custom"
+				id: "2D2A73831CFB0ED7"
+				item: "cosmiccore:mv_ember_input_hatch"
+				type: "item"
 			}]
-			x: 20.0d
-			y: 9.5d
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["235C063EE75D22F0"]
+			id: "693FC249BF4438D8"
+			subtitle: "A fragment of stars"
+			tasks: [{
+				id: "568387BABD65DACC"
+				item: "cosmiccore:moondrop_gem"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["235C063EE75D22F0"]
+			id: "528DD09694B6FF1B"
+			subtitle: "A fragment of a dream"
+			tasks: [{
+				id: "68FC1F51D79B141D"
+				item: "cosmiccore:somanone_gem"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["38C69387B3B1C20E"]
+			icon: "gtceu:hydrogen_bucket"
+			id: "435D55BEADDDCAAA"
+			tasks: [
+				{
+					id: "1FE1481E3B7F3C12"
+					item: "gtceu:hydrogen_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2375D00C9FB5B295"
+					title: "Skip!"
+					type: "checkmark"
+				}
+			]
+			x: -7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["38C69387B3B1C20E"]
+			icon: "gtceu:chlorine_bucket"
+			id: "3C127E978831FC56"
+			tasks: [
+				{
+					id: "2AD5687E0890129E"
+					item: "gtceu:chlorine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "75EC993AE42B6C00"
+					title: "Skip!"
+					type: "checkmark"
+				}
+			]
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"673AB6E8C654D518"
+				"44F4AC0681063AB4"
+			]
+			id: "04AFC359C2D3AA05"
+			shape: "hexagon"
+			tasks: [{
+				id: "0EB47E09877FCC32"
+				item: "cosmiccore:livingrock_aluminate_boule"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["673AB6E8C654D518"]
+			hide_dependency_lines: true
+			id: "599E3381E1B24C93"
+			shape: "rsquare"
+			tasks: [{
+				id: "5CABC1D86EBFB222"
+				item: "cosmiccore:livingrock_aluminate_boule"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["528DD09694B6FF1B"]
+			id: "07B3F4BF35E98A30"
+			tasks: [{
+				id: "493804D357E080F5"
+				item: "cosmiccore:somanone_dust"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 9.0d
 		}
 	]
 	title: "Forged in Galefury [MV]"

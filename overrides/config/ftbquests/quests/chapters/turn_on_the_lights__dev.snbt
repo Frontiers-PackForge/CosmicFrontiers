@@ -588,9 +588,9 @@
 			description: [
 				"Steam is arguably the worst method of generating power due to its low EU density per millibucket."
 				""
-				"You’ll want to move away from steam power as soon as possible. You can continue using it if you really want to, but it’s not recommended."
+				"Steam has been slightly improved but still poses logistic problems due to pipe size limitations."
 				""
-				"Unfortunately, it is the only option at first that makes sense."
+				"You can circumvent this with AE2 storage busses and interfaces, but that'll get expensive fast."
 			]
 			id: "2DC12827E0DB45CC"
 			rewards: [{
@@ -1505,79 +1505,6 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["2ABCB641104E43EC"]
-			description: [
-				"Rose gold allows the creation of gold coated storage upgrades and backpacks!"
-				"Go upgrade your chests!"
-			]
-			id: "1E2024C4083F2E46"
-			rewards: [{
-				count: 16
-				id: "7393CC9EDF34A060"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
-			subtitle: "Gold Upgrade!"
-			tasks: [{
-				id: "1684074E134AB7FE"
-				item: "gtceu:rose_gold_ingot"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["1E2024C4083F2E46"]
-			description: [
-				"Has more upgrade slots and storage than an iron chest."
-				"Remember you can transport sophisticated storage containers around if you wrap them using &etape&r."
-			]
-			icon: "sophisticatedstorage:basic_to_gold_tier_upgrade"
-			id: "623E9E16422D7D82"
-			rewards: [{
-				count: 16
-				id: "6EF02E5450CB4BA0"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
-			shape: "gear"
-			subtitle: "Better chests"
-			tasks: [{
-				id: "1922FD684D826DCB"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(sophisticatedstorage:basic_to_gold_tier_upgrade)item(sophisticatedstorage:copper_to_gold_tier_upgrade)item(sophisticatedstorage:iron_to_gold_tier_upgrade))"
-					}
-				}
-				type: "item"
-			}]
-			title: "Gold Storage Upgrades"
-			x: 7.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["1E2024C4083F2E46"]
-			description: ["Has more upgrade slots and storage than an iron backpack, and piglins will ignore you!"]
-			id: "5A3505D36A318205"
-			rewards: [{
-				count: 16
-				id: "142FCD5E047A5921"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
-			shape: "gear"
-			subtitle: "Better Backpack"
-			tasks: [{
-				id: "32F38C9EF23969B9"
-				item: "sophisticatedbackpacks:gold_backpack"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 2.0d
-		}
-		{
 			dependencies: ["07BBA5C211143D67"]
 			id: "5B4C6D8FAA0C7A9F"
 			tasks: [{
@@ -2183,8 +2110,8 @@
 			id: "7C76C174D8CC747D"
 			shape: "hexagon"
 			tasks: [{
-				id: "1FE30CD267F1CFBA"
-				item: "gtceu:cinder_fuel_bucket"
+				id: "26F9C3C3E4EEFFAD"
+				item: "gtceu:cinder_gas_bucket"
 				type: "item"
 			}]
 			title: "Automation Challenge : Cinder Fuel"

@@ -251,6 +251,8 @@
 				item: "cosmiccore:shard_of_perpetuity"
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.5d
 			subtitle: "Automated Water"
 			tasks: [{
 				id: "5FF715E9B527FC7B"
@@ -258,7 +260,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["30C980B828A48306"]
@@ -360,7 +362,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -499,7 +501,7 @@
 				item: "create:spout"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 7.5d
 			y: -5.5d
 		}
 		{
@@ -516,7 +518,7 @@
 				item: "gtceu:treated_wood_planks"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 6.0d
 			y: -4.5d
 		}
 		{
@@ -543,7 +545,7 @@
 				item: "gtceu:creosote_bucket"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 6.0d
 			y: -7.0d
 		}
 		{
@@ -1168,7 +1170,7 @@
 			description: [
 				"&6Note; For info on surviving in the nether, check out the \"Surviving the Inferno\" quest&r"
 				""
-				"No idea when I'll get that done so just use a normal portal for now"
+				"Due to the extreme depths, Netherrack is harder to mine."
 				""
 				"The Nether is full of biology and minerals not found in the overworld. Most notably, you are on the hunt for."
 				""
@@ -2109,7 +2111,7 @@
 				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.0d
 			y: -5.5d
 		}
 		{
@@ -2736,7 +2738,7 @@
 				item: "tconstruct:grout"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.0d
 			y: -10.0d
 		}
 		{
@@ -2750,33 +2752,45 @@
 				item: "tconstruct:seared_brick"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.0d
 			y: -8.5d
 		}
 		{
-			dependencies: ["3D4680752E4D4864"]
+			dependencies: [
+				"3D4680752E4D4864"
+				"25133645B23A8E0A"
+			]
 			id: "41E267DD971DB49E"
 			tasks: [{
 				id: "0B8B3D0158E18553"
 				item: "tconstruct:seared_melter"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -8.5d
+			x: 4.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
 				"41E267DD971DB49E"
 				"3D4680752E4D4864"
 			]
+			description: [
+				"Early Tinker Tool parts need to be casted."
+				""
+				"While the seared melter may do, it is recommended to upgrade to a smeltery."
+				""
+				"This multiblock can also melt ores down semi-efficiently, if you'd like to squeeze out that little extra material."
+			]
 			id: "62B75C630DA0373F"
+			shape: "gear"
+			subtitle: "Ore Smelter and Part Maker"
 			tasks: [{
 				id: "6EFB647F8592F449"
 				item: "tconstruct:smeltery_controller"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -7.0d
+			x: 4.5d
+			y: -8.5d
 		}
 		{
 			dependencies: [
@@ -2956,11 +2970,19 @@
 				"0E3F7F4506F6D621"
 			]
 			id: "0A689FB9773F31CB"
-			tasks: [{
-				id: "43FF54BFC74E7D31"
-				item: "embers:molten_dawnstone_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "43FF54BFC74E7D31"
+					item: "embers:molten_dawnstone_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "668582B39EE264DB"
+					title: "Skip me, I got it!"
+					type: "checkmark"
+				}
+			]
 			x: -14.5d
 			y: -7.25d
 		}
@@ -2982,16 +3004,6 @@
 			subtitle: "Moving Ember around"
 			tasks: [
 				{
-					id: "0155B7AE41F4F0F0"
-					item: "embers:ember_emitter"
-					type: "item"
-				}
-				{
-					id: "220BF31225B1C24F"
-					item: "embers:ember_receiver"
-					type: "item"
-				}
-				{
 					id: "0B760AC3A4840CB4"
 					item: "embers:ember_relay"
 					type: "item"
@@ -2999,6 +3011,16 @@
 				{
 					id: "3F51BC5D31C96C20"
 					item: "embers:tinker_hammer"
+					type: "item"
+				}
+				{
+					id: "1459425245F9D3B1"
+					item: "cosmiccore:steam_ember_emitter"
+					type: "item"
+				}
+				{
+					id: "5896BFDA8710F0C6"
+					item: "cosmiccore:steam_ember_receptor"
 					type: "item"
 				}
 			]
@@ -3011,13 +3033,14 @@
 				"6C2C0D312A4438EF"
 				"4061CC52DD1CFF66"
 			]
+			dependency_requirement: "one_completed"
 			id: "33F12EC34D6CBDD5"
 			tasks: [{
 				id: "1F6CB5BC8F70FA83"
 				item: "embers:dawnstone_ingot"
 				type: "item"
 			}]
-			x: -18.5d
+			x: -20.0d
 			y: -7.0d
 		}
 		{
@@ -3045,7 +3068,11 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["38822087BBF91787"]
+			dependencies: [
+				"33F12EC34D6CBDD5"
+				"0C613899A5C1CF9F"
+				"532CF2A3354ED4AA"
+			]
 			icon: "cosmiccore:dawn_forge"
 			id: "7CB6F107009BAF72"
 			shape: "hexagon"
@@ -3073,34 +3100,25 @@
 		{
 			dependencies: [
 				"3D4680752E4D4864"
-				"62B75C630DA0373F"
+				"41E267DD971DB49E"
+			]
+			description: [
+				"Come 0.9.0 this will be required for making your first gregtech tools"
+				""
+				""
+				"For now it grants you access to higher quality tinkers tools with large AOE features."
+				""
+				""
+				"I'd recommend investing in a lumber axe if you're tired of your veinminer not cutting large trees down."
 			]
 			id: "1A19173669EE0069"
+			subtitle: "Required"
 			tasks: [{
 				id: "0FE20C1AF51DEC1C"
 				item: "tconstruct:tinkers_anvil"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["33F12EC34D6CBDD5"]
-			id: "38822087BBF91787"
-			tasks: [
-				{
-					id: "6D1F38099DB3F530"
-					item: "embers:ember_ejector"
-					type: "item"
-				}
-				{
-					id: "4CAFBB4633D14907"
-					item: "embers:ember_funnel"
-					type: "item"
-				}
-			]
-			title: "Better Ember Transfer"
-			x: -20.0d
+			x: 2.0d
 			y: -7.0d
 		}
 		{
@@ -3285,6 +3303,82 @@
 			}]
 			x: -10.0d
 			y: -10.0d
+		}
+		{
+			dependencies: ["2899EC950870F83C"]
+			description: ["Allows you to split Ember routes into 1 input and 2 outputs"]
+			id: "0CF6B03270D27BB3"
+			subtitle: "Advanced Ember Locomotion"
+			tasks: [{
+				id: "15DFB38F6750ACD9"
+				item: "embers:beam_splitter"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"098D091401CDCCD2"
+				"226A43815ECB2818"
+			]
+			id: "25133645B23A8E0A"
+			tasks: [
+				{
+					id: "4E0561453CC0EC2D"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "0F4B7DA2D9A1E3C6"
+					item: "gtceu:glass_dust"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["226A43815ECB2818"]
+			description: [
+				"Glass blocks require a Steam Alloy Smelter."
+				""
+				""
+				"If you haven't already, invest into a boiler and a primitive pump."
+				""
+				"Make a few solid fuel boilers to start."
+			]
+			id: "098D091401CDCCD2"
+			subtitle: "Molding your first glass"
+			tasks: [{
+				id: "0C6353378FF941FB"
+				item: "gtceu:block_casting_mold"
+				type: "item"
+			}]
+			x: 3.25d
+			y: -5.5d
+		}
+		{
+			dependencies: ["33F12EC34D6CBDD5"]
+			id: "532CF2A3354ED4AA"
+			tasks: [{
+				id: "496E8FF3E91F9472"
+				item: "cosmiccore:light_dawnstone_casing"
+				type: "item"
+			}]
+			x: -19.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["33F12EC34D6CBDD5"]
+			id: "0C613899A5C1CF9F"
+			tasks: [{
+				id: "2EFAD8180E810F01"
+				item: "cosmiccore:reinforced_dawnstone_casing"
+				type: "item"
+			}]
+			x: -21.0d
+			y: -2.5d
 		}
 	]
 	title: "Rising Pressure - [Steam]"

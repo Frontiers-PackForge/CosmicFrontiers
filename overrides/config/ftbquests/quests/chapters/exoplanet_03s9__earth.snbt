@@ -921,8 +921,8 @@
 				type: "checkmark"
 			}]
 			title: "Need a Light?"
-			x: 8.0d
-			y: 7.5d
+			x: 8.5d
+			y: 7.0d
 		}
 		{
 			description: [
@@ -1010,6 +1010,47 @@
 			title: "Concurrent Chunk Managment Engine [C2ME]"
 			x: 3.738095238095255d
 			y: 7.240242346938771d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"Your first tools will NOT automatically level up, and thus require the 'Improvable' trait."
+				""
+				"Take 4 Improvable Shards on the house. this will cover most basic tools you will make."
+				""
+				"If you waste them, there's a valid recipe as well taking Shards of Perpetuity and Enderpearls."
+				""
+				""
+				"Yes I made this quest because I didn't want to do this at the start of the game."
+				"Sue me."
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:modifier_crystal"
+				tag: {
+					modifier: "tinkerslevellingaddon:improvable"
+				}
+			}
+			id: "76BE51F6D87B7C74"
+			rewards: [{
+				count: 4
+				id: "1881CF191B4B4B56"
+				item: {
+					Count: 1
+					id: "tconstruct:modifier_crystal"
+					tag: {
+						modifier: "tinkerslevellingaddon:improvable"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Upgrades on the House"
+			tasks: [{
+				id: "6A8592F237A25101"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 7.5d
 		}
 	]
 	subtitle: [
