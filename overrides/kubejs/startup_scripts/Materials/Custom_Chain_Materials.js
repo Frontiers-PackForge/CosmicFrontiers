@@ -74,7 +74,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xb38a2d).iconSet(GTMaterialIconSet.DULL)
     // di(2_ethylhexyl)_phosphite
     event.create('di_2_ethylhexyl_phosphite')
-    .formula('C16H35O4P')
+        .formula('C16H35O4P')
         .liquid()
         .color(0xd4c23d).iconSet(GTMaterialIconSet.DULL)
     //di(2_ethylhexyl)_phosphorochloridate
@@ -124,6 +124,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('crude_source_oils')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .color(0xe642f5)
+
+    event.create('smoldering_steam')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill().temperature(680))
+    event.create('ashdew_steam')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill().temperature(1355))
     //Nether Bioslurry
     event.create('nether_bioslurry')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
