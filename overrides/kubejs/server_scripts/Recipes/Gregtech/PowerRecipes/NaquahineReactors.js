@@ -196,18 +196,20 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:extracted_tau 1000')
         .duration(430)
         .EUt(GTValues.VA[GTValues.LuV])
+
     event.recipes.gtceu.fermenter('frontiers:distill_pure_tau_oil')
         .chancedInput('bloodmagic:reagentbinding', 500, 0)
         .inputFluids('gtceu:extracted_tau 16000')
         .outputFluids('gtceu:tau_oil 1000')
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])
+    //This is a Skip Recipe, whoops why was it LuV for like 4 months.
     event.recipes.gtceu.canner('frontiers:tau_oil_to_tau_oil_bottle')
         .itemInputs('gtceu:glass_vial')
         .inputFluids('gtceu:tau_oil 100')
         .itemOutputs('bloodmagic:tauoil')
-        .duration(230)
-        .EUt(GTValues.VA[GTValues.LuV])
+        .duration(10)
+        .EUt(GTValues.VA[GTValues.UV], 16)
 
     event.recipes.gtceu.fusion_reactor('tau_plasma')
         .chancedInput('gtceu:neutron_reflector', 1550, 0)

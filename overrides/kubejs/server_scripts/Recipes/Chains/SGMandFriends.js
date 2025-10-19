@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'gtceu:chemical_reactor/collagen_from_bone' })
     event.remove({ id: 'gtceu:chemical_reactor/collagen_from_bone_meal' })
-    event.recipes.gtceu.chemical_reactor('gtceu:collagen_dust_ICV')
+    event.recipes.gtceu.chemical_reactor('gtceu:collagen_dust_icv')
         .itemInputs('2x gtceu:meat_dust', 'minecraft:bone')
         .inputFluids('gtceu:sulfuric_acid 1000')
         .outputFluids('gtceu:diluted_sulfuric_acid 1000')

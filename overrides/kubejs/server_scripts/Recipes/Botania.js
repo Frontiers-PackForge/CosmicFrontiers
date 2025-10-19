@@ -11,6 +11,17 @@ ServerEvents.recipes(event => {
             "name": "cosmiccore:livingrock_tiles"
         }
     })
+
+    event.custom({
+        "type": "botania:pure_daisy",
+        "input": {
+            "type": "block",
+            "block": "gtceu:mv_laser_engraver"
+        },
+        "output": {
+            "name": "cosmiccore:mana_etching_factory"
+        }
+    })
     event.recipes.gtceu.alloy_smelter('t2_gia_ingot_smelting')
         .itemInputs(['gtceu:naquadah_ingot', '16x botania:life_essence'])
         .itemOutputs('botania:gaia_ingot')
@@ -1828,7 +1839,7 @@ ServerEvents.recipes(event => {
         .inputFluids('blasmatech:mana 100')
         .outputFluids('gtceu:potent_mana 10')
         .duration(20)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(64);
     event.recipes.gtceu.fluid_heater('mana_evap_1')
         .inputFluids('gtceu:potent_mana 10')
         .outputFluids('blasmatech:mana 100')
@@ -1839,6 +1850,13 @@ ServerEvents.recipes(event => {
         .itemInputs(['4x ars_nouveau:magebloom_fiber', '4x botania:mana_string', '2x gtceu:terrasteel_foil', 'botania:manaweave_cloth'])
         .itemOutputs('kubejs:terraweave_cloth')
         .inputFluids(Fluid.of('gtceu:potent_mana', 500))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
+
+    event.recipes.gtceu.cutter('livingrock_aluminate_wafer')
+        .itemInputs(['cosmiccore:livingrock_aluminate_boule'])
+        .itemOutputs('16x cosmiccore:livirock_aluminite_wafer')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 40))
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
 

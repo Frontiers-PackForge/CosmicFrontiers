@@ -6,15 +6,10 @@ let yeet = (itemName) => {
   })
 
 }
-//Removal of Large Boilers and their recipemaps - DO NOT revert these changes, as eventually they will also be stripped out and overwritten via coremod
-// YOU HAVE BEEN WARNED, THIS **WILL** RESULT IN IRREVERSIBLE DAMAGE TO WORLDS - NO SUPPORT WILL BE GIVEN FOR PEOPLE WHO IGNORE THIS WARNING
-yeet('gtceu:bronze_large_boiler')
-yeet('gtceu:steel_large_boiler')
-yeet('gtceu:titanium_large_boiler')
-yeet('gtceu:tungstensteel_large_boiler')
-//Disabled Until 0.6.0 - Recipes Will vanish then.
+
+
 ServerEvents.recipes(event => {
-  // event.remove({ id: /([^:]+):large_boiler(.*)$/ })
+  event.remove({ id: 'gtceu:large_boiler/minecraft_lava' })
 
 
   event.recipes.gtceu.vorax('vorax_tier_3')
@@ -37,11 +32,16 @@ ServerEvents.recipes(event => {
   //NBZ has power density cut by about 40% 
   //Still insanely strong for the volume and this is a trial run of what CEU's nerfs will look like
   event.remove({ id: 'gtceu:gas_turbine/nitrobenzene' })
-  event.recipes.gtceu.combustion_generator('worse_nitrobenzene')
+  event.recipes.gtceu.gas_turbine('worse_nitrobenzene')
     .inputFluids('gtceu:nitrobenzene 2')
     .duration(25)
     .EUt(-GTValues.V[GTValues.LV])
+  event.remove({ id: 'gtceu:gas_turbine/benzene' })
 
+  event.recipes.gtceu.gas_turbine('worse_benzene')
+    .inputFluids('gtceu:benzene 2')
+    .duration(11)
+    .EUt(-GTValues.V[GTValues.LV])
   // Cinder Fuel Stuff
 
   event.recipes.gtceu.mixer('frontiers:ember_gas_unrefined')
@@ -76,6 +76,12 @@ ServerEvents.recipes(event => {
     .duration(20)
     .EUt(-GTValues.V[GTValues.LV])
 
+  event.recipes.gtceu.steam_turbine('frontiers:steam_mk2')
+    .inputFluids('gtceu:smoldering_steam 96')
+    .duration(10)
+    .EUt(-GTValues.V[GTValues.LV])
+
+
   //Awakened Cinder Gas (Uses Ember, quite a bit)
 
   // Dilute HCl + Infernal spirit + 'create:cinder_flour' -> Infernal Rosin Emulsion 
@@ -108,6 +114,167 @@ ServerEvents.recipes(event => {
     .duration(80)
     .EUt(GTValues.VH[GTValues.MV]);
 
+
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_1')
+    .circuit(1)
+    .emberInput(250)
+    .perTick(true)
+    .inputFluids('gtceu:steam 1800')
+    .outputFluids('gtceu:smoldering_steam 360')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_2')
+    .circuit(2)
+    .emberInput(375)
+    .perTick(true)
+    .inputFluids('gtceu:steam 3600')
+    .outputFluids('gtceu:smoldering_steam 720')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_3')
+    .circuit(3)
+    .emberInput(500)
+    .perTick(true)
+    .inputFluids('gtceu:steam 5400')
+    .outputFluids('gtceu:smoldering_steam 1080')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_4')
+    .circuit(4)
+    .emberInput(625)
+    .perTick(true)
+    .inputFluids('gtceu:steam 7200')
+    .outputFluids('gtceu:smoldering_steam 1440')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_5')
+    .circuit(5)
+    .emberInput(750)
+    .perTick(true)
+    .inputFluids('gtceu:steam 9000')
+    .outputFluids('gtceu:smoldering_steam 1800')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_6')
+    .circuit(6)
+    .emberInput(875)
+    .perTick(true)
+    .inputFluids('gtceu:steam 10800')
+    .outputFluids('gtceu:smoldering_steam 2160')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_7')
+    .circuit(7)
+    .emberInput(1000)
+    .perTick(true)
+    .inputFluids('gtceu:steam 12600')
+    .outputFluids('gtceu:smoldering_steam 2520')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_8')
+    .circuit(8)
+    .emberInput(1125)
+    .perTick(true)
+    .inputFluids('gtceu:steam 14400')
+    .outputFluids('gtceu:smoldering_steam 2880')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_9')
+    .circuit(9)
+    .emberInput(1250)
+    .perTick(true)
+    .inputFluids('gtceu:steam 16200')
+    .outputFluids('gtceu:smoldering_steam 3240')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_10')
+    .circuit(10)
+    .emberInput(1375)
+    .perTick(true)
+    .inputFluids('gtceu:steam 18000')
+    .outputFluids('gtceu:smoldering_steam 3600')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_11')
+    .circuit(11)
+    .emberInput(1500)
+    .perTick(true)
+    .inputFluids('gtceu:steam 19800')
+    .outputFluids('gtceu:smoldering_steam 3960')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_12')
+    .circuit(12)
+    .emberInput(1625)
+    .perTick(true)
+    .inputFluids('gtceu:steam 21600')
+    .outputFluids('gtceu:smoldering_steam 4320')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_13')
+    .circuit(13)
+    .emberInput(1750)
+    .perTick(true)
+    .inputFluids('gtceu:steam 23400')
+    .outputFluids('gtceu:smoldering_steam 4680')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_14')
+    .circuit(14)
+    .emberInput(1875)
+    .perTick(true)
+    .inputFluids('gtceu:steam 25200')
+    .outputFluids('gtceu:smoldering_steam 5040')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_15')
+    .circuit(15)
+    .emberInput(2000)
+    .perTick(true)
+    .inputFluids('gtceu:steam 27000')
+    .outputFluids('gtceu:smoldering_steam 5400')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
+
+  event.recipes.gtceu.pyrothermic_refinery('frontiers:smoldering_steam_16')
+    .circuit(16)
+    .emberInput(2125)
+    .perTick(true)
+    .inputFluids('gtceu:steam 28800')
+    .outputFluids('gtceu:smoldering_steam 5760')
+    .perTick(false)
+    .duration(200)
+    .EUt(GTValues.VH[GTValues.MV]);
 
 
 

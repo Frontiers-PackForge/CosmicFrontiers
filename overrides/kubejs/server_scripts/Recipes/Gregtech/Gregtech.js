@@ -117,6 +117,11 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:orbital_forge/blast_nevramite_gas' })
   event.remove({ id: 'gtceu:orbital_forge/blast_nevramite' })
 
+  //Part Grinding Mutation Exploit Fixes until Onion cleans up the GTM recycling nonsense
+  event.remove({ id: 'gtceu:arc_furnace/arc_palladium_substation' })
+  event.remove({ id: 'gtceu:macerator/macerate_palladium_substation' })
+  event.remove({ id: 'gtceu:alloy_blast_smelter/tungsten_steel_gas' })
+  event.remove({ id: 'gtceu:alloy_blast_smelter/tungsten_steel' })
 
   event.remove({ id: 'gtceu:orbital_forge_abs/voidspark' })
   event.remove({ id: 'gtceu:alloy_blast_smelter/voidspark' })
@@ -232,6 +237,16 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'gtceu:iv_extruder' },
     'gtceu:rtm_alloy_quadruple_wire',
     'cosmiccore:prismatic_tungstensteel_quadruple_wire'
+  )
+
+  event.replaceInput({ output: 'gtceu:cleanroom_glass' },
+    'gtceu:steel_frame',
+    'gtceu:blue_steel_frame'
+  )
+
+  event.replaceInput({ output: 'gtceu:plascrete' },
+    'gtceu:steel_frame',
+    'gtceu:blue_steel_frame'
   )
 
   //Beacon Replacement
@@ -433,6 +448,17 @@ ServerEvents.recipes(event => {
     W: 'gtceu:iv_emitter'
   })
 
+  event.shaped('cosmiccore:arcane_crucible', [
+    'CCC',
+    'CQC',
+    'WHW'
+  ], {
+    C: 'gtceu:kanthal_coil_block',
+    Q: 'minecraft:cauldron',
+    W: 'gtceu:terrasteel_quadruple_cable',
+    H: 'gtceu:mv_machine_hull'
+  })
+  
   event.shaped('cosmiccore:industrial_primitive_blast_furnace', [
     'WSH',
     'SCS',
@@ -821,6 +847,31 @@ ServerEvents.recipes(event => {
     .duration(50)
     .EUt(GTValues.VA[GTValues.IV]);
 
+  event.recipes.gtceu.mana_etching('frontiers:mana_wafer_1')
+    .notConsumable('botania:lens_efficiency')
+    .itemInputs('cosmiccore:livirock_aluminite_wafer', 'minecraft:prismarine_shard')
+    .itemOutputs('cosmiccore:latent_efficacy_wafer')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.MV]);
+  event.recipes.gtceu.mana_etching('frontiers:mana_wafer_2')
+    .notConsumable('botania:lens_power')
+    .itemInputs('cosmiccore:livirock_aluminite_wafer', 'aether:blue_aercloud')
+    .itemOutputs('cosmiccore:latent_capacity_wafer')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.MV]);
+  event.recipes.gtceu.mana_etching('frontiers:mana_wafer_3')
+    .notConsumable('botania:lens_time')
+    .itemInputs('cosmiccore:livirock_aluminite_wafer', 'minecraft:blaze_rod')
+    .itemOutputs('cosmiccore:latent_potency_wafer')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.MV]);
+  event.recipes.gtceu.mana_etching('frontiers:mana_wafer_4')
+    .notConsumable('botania:lens_speed')
+    .itemInputs('cosmiccore:livirock_aluminite_wafer', 'minecraft:lapis_lazuli')
+    .itemOutputs('cosmiccore:latent_verbosity_wafer')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.MV]);
+
 
   event.recipes.gtceu.assembler('ethersteel_smd_diode')
     .itemInputs(['gtceu:gallium_arsenide_dust', '16x gtceu:fine_galvanized_ethersteel_wire'])
@@ -906,7 +957,20 @@ ServerEvents.recipes(event => {
     .duration(859)
     .EUt(GTValues.VA[GTValues.IV]);
 
+  event.recipes.gtceu.pyrolyse_oven('frontiers:arcane_charcoal_pyro')
+    .itemInputs('16x #malum:runewood_logs')
+    .itemOutputs('24x malum:arcane_charcoal')
+    .inputFluids('gtceu:nitrogen 1000')
+    .circuit(2)
+    .duration(240)
+    .EUt(GTValues.VA[GTValues.MV]);
 
+  event.recipes.gtceu.pyrolyse_oven('frontiers:arcane_charcoal_pyro_bad')
+    .itemInputs('16x #malum:runewood_logs')
+    .itemOutputs('24x malum:arcane_charcoal')
+    .duration(480)
+    .circuit(1)
+    .EUt(GTValues.VA[GTValues.MV]);
 
   event.recipes.gtceu.orbital_forge('starmetal_alloy')
     .itemInputs(['kubejs:embraced_luminite_ingot', '4x gtceu:nether_star_dust'])
@@ -2273,6 +2337,16 @@ ServerEvents.recipes(event => {
     .duration(890)
     .circuit(2)
     .EUt(GTValues.VA[GTValues.ZPM]);
+
+  event.shaped('ae2:nether_quartz_cutting_knife', [
+    'HS ',
+    'M  ',
+    '   '
+  ], {
+    M: 'botania:manaweave_cloth',
+    H: '#forge:tools/knives',
+    S: 'minecraft:stick'
+  })
 
 
   event.shapeless('gtceu:magnetic_iron_bolt', [

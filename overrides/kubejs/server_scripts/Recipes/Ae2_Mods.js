@@ -1035,10 +1035,12 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.assembler(`betterp2p:advanced_memory_card_assembly`)
     .itemInputs('ae2:memory_card')
     .itemInputs('ae2netanalyser:network_analyser')
-    .itemInputs('ae2:cell_component_64k')
+    .itemInputs('ae2:cell_component_4k')
     .itemOutputs('betterp2p:advanced_memory_card')
     .duration(400)
-    .EUt(GTValues.VA[GTValues.EV])
+    .EUt(GTValues.VA[GTValues.MV])
+
+    
   //certus block
   event.recipes.gtceu.compressor(`gtceu:certus_quartz_block`)
     .itemInputs('4x gtceu:certus_quartz_gem')

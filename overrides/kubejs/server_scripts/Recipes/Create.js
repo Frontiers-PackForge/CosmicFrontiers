@@ -8,14 +8,6 @@ let yeet = (itemName) => {
   })
 }
 
-
-//SU sources removal
-yeet('create:large_water_wheel')
-yeet('create:water_wheel')
-yeet('create:windmill_bearing')
-yeet('create:white_sail')
-yeet('create:sail_frame')
-
 //Ore related removals
 yeet('create:brass_ingot')
 yeet('create:brass_nugget')
@@ -40,6 +32,8 @@ ServerEvents.tags('item', event => {
   event.remove('forge:ingots/brass', 'create:brass_ingot')
   event.remove('forge:nuggets/zinc', 'create:zinc_nugget')
   event.remove('forge:nuggets/brass', 'create:brass_nugget')
+
+
 
   //Hiding the Above Removals from EMI
   event.add('c:hidden_from_recipe_viewers', 'create:copper_sheet')
@@ -1203,7 +1197,7 @@ ServerEvents.recipes(event => {
     X: 'gtceu:lv_conveyor_module',
     E: 'gtceu:andesite_alloy_plate',
     S: 'gtceu:andesite_alloy_rod',
-    C: '#gtceu:circuits/mv'
+    C: '#gtceu:circuits/ulv'
   })
   //frogport, kinda like a hopper
   event.remove({ id: "create:crafting/logistics/package_frogport" })
@@ -1216,7 +1210,7 @@ ServerEvents.recipes(event => {
     X: 'gtceu:lv_robot_arm',
     E: 'gtceu:andesite_alloy_spring',
     S: 'gtceu:andesite_alloy_plate',
-    C: '#gtceu:circuits/mv'
+    C: '#gtceu:circuits/ulv'
   })
   //stock link, basically a storage bus?
   event.remove({ id: "create:crafting/logistics/stock_link" })
@@ -1229,7 +1223,7 @@ ServerEvents.recipes(event => {
     X: 'gtceu:item_detector_cover',
     E: 'create:item_vault',
     S: 'gtceu:brass_plate',
-    C: '#gtceu:circuits/mv'
+    C: '#gtceu:circuits/ulv'
   })
   //stock ticker, basically an ae terminal
   event.remove({ id: "create:crafting/logistics/stock_ticker" })
@@ -1242,7 +1236,7 @@ ServerEvents.recipes(event => {
     X: 'gtceu:terminal',
     E: 'minecraft:gold_block',
     S: '#forge:glass',
-    C: '#gtceu:circuits/mv'
+    C: '#gtceu:circuits/ulv'
   })
   //redstone requester, requests items from a to b
   event.remove({ id: "create:crafting/logistics/redstone_requester" })
@@ -1255,7 +1249,7 @@ ServerEvents.recipes(event => {
     X: 'gtceu:machine_controller_cover',
     E: 'gtceu:steel_block',
     S: 'gtceu:andesite_alloy_plate',
-    C: '#gtceu:circuits/mv'
+    C: '#gtceu:circuits/ulv'
   })
   //factory gauge, the actual "autocrafting" block
   event.remove({ id: "create:crafting/logistics/factory_gauge" })

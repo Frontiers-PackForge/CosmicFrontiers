@@ -43,11 +43,19 @@ ServerEvents.tags('item', event => {
        event.add('embers:augmentables/armors/chestplates', 'cosmiccore:sanguine_warptech_chestplate')
        event.add('embers:augmentables/armors/leggings', 'cosmiccore:sanguine_warptech_leggings')
        event.add('embers:augmentables/armors/boots', 'cosmiccore:sanguine_warptech_boots')
-       
+
        event.add('embers:augmentables/tools_armors', 'cosmiccore:sanguine_warptech_helmet')
        event.add('embers:augmentables/tools_armors', 'cosmiccore:sanguine_warptech_chestplate')
        event.add('embers:augmentables/tools_armors', 'cosmiccore:sanguine_warptech_leggings')
        event.add('embers:augmentables/tools_armors', 'cosmiccore:sanguine_warptech_boots')
+
+
+       event.remove('forestry:backpack/allow/miner', 'gtceu:netherrack_dust')
+       event.remove('forestry:backpack/allow/miner', 'gtceu:granite_dust')
+       event.remove('forestry:backpack/allow/miner', 'gtceu:diorite_dust')
+       event.remove('forestry:backpack/allow/miner', 'gtceu:andesite_dust')
+       event.remove('forestry:backpack/allow/miner', 'gtceu:stone_dust')
+
 })
 yeet('gtceu:rtm_alloy_coil_block')
 yeet('gtceu:hssg_coil_block')
@@ -347,6 +355,34 @@ ServerEvents.recipes(event => {
               .chancedOutput(Item.of('biomesoplenty:blackstone_bulb', 1), 5000, 500)
               .duration(100)
               .EUt(GTValues.VA[GTValues.LV] / 2);
+
+
+       event.recipes.gtceu.cutter('cosmiccore:latent_capacity_wafer_to_chip')
+              .itemInputs('cosmiccore:latent_capacity_wafer')
+              .itemOutputs('4x cosmiccore:capacity_chip')
+              .duration(100)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+
+       event.recipes.gtceu.cutter('cosmiccore:latent_efficacy_wafer_to_chip')
+              .itemInputs('cosmiccore:latent_efficacy_wafer')
+              .itemOutputs('4x cosmiccore:efficacy_chip')
+              .duration(100)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+
+       event.recipes.gtceu.cutter('cosmiccore:latent_potency_wafer_to_chip')
+              .itemInputs('cosmiccore:latent_potency_wafer')
+              .itemOutputs('4x cosmiccore:potency_chip')
+              .duration(100)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+
+       event.recipes.gtceu.cutter('cosmiccore:latent_verbosity_wafer_to_chip')
+              .itemInputs('cosmiccore:latent_verbosity_wafer')
+              .itemOutputs('4x cosmiccore:verbosity_chip')
+              .duration(100)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+
+
+
        event.recipes.gtceu.cutter('stone_slab_to_pressureplate')
               .itemInputs('minecraft:stone_slab')
               .itemOutputs('4x minecraft:stone_pressure_plate')
@@ -609,6 +645,36 @@ ServerEvents.recipes(event => {
               .circuit(2)
               .duration(600)
               .EUt(GTValues.VA[GTValues.LuV]);
+
+       event.recipes.gtceu.assembler('light_dawncasing')
+              .itemInputs(['gtceu:dawnstone_frame', '4x gtceu:dawnstone_foil'])
+              .itemOutputs('cosmiccore:light_dawnstone_casing')
+              .circuit(1)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV]);
+
+       event.recipes.gtceu.assembler('heavy_dawncasing')
+              .itemInputs(['gtceu:dawnstone_frame', '6x embers:dawnstone_plate'])
+              .itemOutputs('cosmiccore:reinforced_dawnstone_casing')
+              .circuit(2)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.LV]);
+
+
+       event.recipes.gtceu.assembler('frontiers:runed_alu')
+              .itemInputs(['4x gtceu:double_runed_steel_plate', '6x gtceu:aluminium_plate'])
+              .itemOutputs('cosmiccore:soul_stained_steel_aluminium_plated_casing')
+              .circuit(7)
+              .duration(160)
+              .EUt(GTValues.VA[GTValues.MV]);
+
+       event.recipes.gtceu.electric_blast_furnace('livingrock_boule')
+              .itemInputs(['16x cosmiccore:livingrock_tiles', '36x gtceu:zano_aluminate_dust'])
+              .inputFluids('gtceu:nitrogen 4000')
+              .itemOutputs('cosmiccore:livingrock_aluminate_boule')
+              .blastFurnaceTemp(2700)
+              .duration(900)
+              .EUt(GTValues.VA[GTValues.HV]);
 
        event.recipes.gtceu.assembler('reactor_casing_default')
               .itemInputs(['gtceu:titanium_frame', '4x gtceu:double_lead_plate', '2x gtceu:beryllium_plate'])
@@ -920,6 +986,12 @@ ServerEvents.recipes(event => {
               .itemInputs('4x kubejs:terraweave_cloth')
               .itemInputs('2x gtceu:steel_ring') //to connect the wings together i suppose
               .itemOutputs(`minecraft:elytra`)
+              .duration(400)
+              .EUt(120)
+              
+       event.recipes.gtceu.assembler(`frontiers:rose_light`)
+              .itemInputs(['gtceu:steel_frame', 'create:rose_quartz_lamp'])
+              .itemOutputs('cosmiccore:steel_rose_light')
               .duration(400)
               .EUt(120)
 

@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
 
 
   event.recipes.gtceu.dawn_forge('frontiers:dawn_eldritch_eye')
-    .itemInputs(['embers:archaic_circuit', 'embers:archaic_brick','embers:archaic_brick', 'minecraft:coal','minecraft:coal'])
+    .itemInputs(['embers:archaic_circuit', 'embers:archaic_brick', 'embers:archaic_brick', 'minecraft:coal', 'minecraft:coal'])
     .itemOutputs('embers:eldritch_insignia')
     .emberInput(2000)
     .duration(150)
@@ -54,6 +54,15 @@ ServerEvents.recipes(event => {
     .emberInput(250)
     .duration(120)
     .EUt(GTValues.VA[GTValues.LV], 2);
+
+
+  event.recipes.gtceu.dawn_forge('frontiers:dusk_alloy')
+    .itemInputs(['4x cosmiccore:somanone_dust', '4x cosmiccore:moondrop_gem'])
+    .inputFluids('embers:molten_dawnstone 576')
+    .itemOutputs('4x gtceu:faded_dusk_alloy_ingot')
+    .emberInput(2000)
+    .duration(120)
+    .EUt(GTValues.VA[GTValues.LV], 4);
 
   event.recipes.gtceu.dawn_forge('frontiers:dawn_lv_core')
     .notConsumable('embers:iron_aspectus')
@@ -76,7 +85,7 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.dawn_forge('frontiers:dawn_hv_core')
     .notConsumable('embers:silver_aspectus')
     .notConsumable('embers:lead_aspectus')
-    .itemInputs(['embers:ember_crystal_cluster', 'gtceu:kanthal_plate', 'gtceu:galvanized_ethersteel_foil', 'gtceu:kanthal_plate', 'gtceu:galvanized_ethersteel_foil'])
+    .itemInputs(['embers:ember_crystal_cluster', 'gtceu:kanthal_plate', 'gtceu:faded_dusk_alloy_foil', 'gtceu:kanthal_plate', 'gtceu:galvanized_ethersteel_foil'])
     .itemOutputs('cosmiccore:hv_wildfire_core')
     .emberInput(1500)
     .duration(120)
@@ -200,7 +209,7 @@ ServerEvents.recipes(event => {
       }
     })
 
-// source: inflictor_gem.json
+  // source: inflictor_gem.json
   event.recipes.gtceu.dawn_forge('frontiers:dawn_inflictor_gem')
     .itemInputs(["#forge:ingots/dawnstone", "#minecraft:coals", "#minecraft:coals", "#minecraft:coals", "#forge:gems/diamond"])
     .itemOutputs("embers:inflictor_gem")
@@ -448,13 +457,133 @@ ServerEvents.recipes(event => {
     .duration(100)
     .EUt(GTValues.VA[GTValues.LV]);
 
-  // source: gold_crystal_seed.json
+  // Dawnstone Casting in Dawnforge
+  event.recipes.gtceu.dawn_forge('frontiers:dawnforge_casting_dawnstone_ingot')
+    .inputFluids('embers:molten_dawnstone 144')
+    .itemOutputs('embers:dawnstone_ingot')
+    .emberInput(250)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.recipes.gtceu.dawn_forge('frontiers:dawnstone_extraction')
+    .itemInputs('embers:dawnstone_ingot')
+    .outputFluids('embers:molten_dawnstone 144')
+    .duration(40)
+    .EUt(GTValues.VA[GTValues.LV]);
+
   event.recipes.gtceu.dawn_forge('frontiers:dawn_gold_crystal_seed')
     .itemInputs(["#forge:ingots/gold", "#forge:ingots/gold", "#forge:ingots/gold", "#embers:crystal_seeds"])
     .itemOutputs("embers:gold_crystal_seed")
     .emberInput(500)
     .duration(100)
     .EUt(GTValues.VA[GTValues.LV]);
+
+  //Cinder hearth recipes
+  event.recipes.gtceu.cinder_hearth('frontiers:cinder_hearth_grit')
+    .itemInputs('embers:ember_grit')
+    .perTick(true)
+    .inputFluids('minecraft:water 25')
+    .emberOutput(24)
+    .perTick(false)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  event.recipes.gtceu.cinder_hearth('frontiers:cinder_hearth_shard')
+    .itemInputs('embers:ember_shard')
+    .perTick(true)
+    .inputFluids('minecraft:water 25')
+    .emberOutput(36)
+    .perTick(false)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  event.recipes.gtceu.cinder_hearth('frontiers:cinder_hearth_crystal')
+    .itemInputs('embers:ember_crystal')
+    .perTick(true)
+    .inputFluids('minecraft:water 25')
+    .emberOutput(48)
+    .perTick(false)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+
+  event.recipes.gtceu.cinder_hearth('frontiers:cinder_hearth_chipped')
+    .itemInputs('gtceu:chipped_emberite_gem')
+    .perTick(true)
+    .inputFluids('minecraft:water 25')
+    .emberOutput(24)
+    .perTick(false)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+
+  event.recipes.gtceu.cinder_hearth('frontiers:cinder_hearth_flawed')
+    .itemInputs('gtceu:flawed_emberite_gem')
+    .perTick(true)
+    .inputFluids('minecraft:water 25')
+    .emberOutput(36)
+    .perTick(false)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+
+  event.recipes.gtceu.cinder_hearth('frontiers:cinder_hearth_flawless')
+    .itemInputs('gtceu:flawless_emberite_gem')
+    .perTick(true)
+    .inputFluids('minecraft:water 25')
+    .emberOutput(96)
+    .perTick(false)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  event.recipes.gtceu.cinder_hearth('frontiers:cinder_hearth_exquisite')
+    .itemInputs('gtceu:exquisite_emberite_gem')
+    .perTick(true)
+    .inputFluids('minecraft:water 25')
+    .emberOutput(256)
+    .perTick(false)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+
+
+
+  let primaryMaterials = [
+    'gtceu:bronze_ingot',
+    'gtceu:runed_steel_ingot',
+    'malum:soul_stained_steel_ingot',
+    'gtceu:galvanized_ethersteel_ingot']
+
+  let secondaryMaterials = [
+    'gtceu:wrought_iron_ingot',
+    'gtceu:steel_ingot',
+    'botania:manasteel_ingot',
+    'gtceu:stainless_steel_ingot']
+
+  let machineTier = [
+    'steam',
+    'lv',
+    'mv',
+    'hv'
+  ]
+
+  primaryMaterials.forEach((primary, index) => {
+    let tierType = machineTier[index]
+    let secondary = secondaryMaterials[index]
+    event.shaped(`cosmiccore:${tierType}_ember_emitter`, [
+      ' W ',
+      ' W ',
+      'QAQ'
+    ], {
+      W: `${primary}`,
+      Q: `${secondary}`,
+      A: 'embers:caminite_plate'
+    })
+
+
+
+
+  })
+
 
 
 })
