@@ -18,6 +18,12 @@ ServerEvents.tags('block', event => {
   event.add('cosmicfrontiers:runewood_ultimine_group', 'malum:runewood_log')
 })
 
+//removing malum logs from the burnable logs tag so they can be turned into arcane charcoal in the coke oven without recipe conflict
+ServerEvents.tags('item', event => {
+  console.log('[14] - [3] - TAG-WATCHER')
+  event.remove('minecraft:logs_that_burn', ['#malum:soulwood_logs', '#malum:runewood_logs'])
+})
+
 ServerEvents.recipes(event => {
   let massRemovalMalum = ['malum:brilliant_stone', 'malum:natural_quartz_ore', 'malum:natural_quartz', 'malum:cthonic_gold_ore', 'malum:deepslate_soulstone_ore', 'malum:soulstone_ore', 'malum:brilliant_deepslate', 'malum:deepslate_quartz_ore', 'malum:blazing_quartz_ore']
 
