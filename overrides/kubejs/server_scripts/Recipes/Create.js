@@ -17,6 +17,17 @@ yeet('create:zinc_nugget')
 yeet('balancedflight:ascended_flight_ring')
 
 yeet('create:propeller')
+//create connected removals
+yeet(/create_connected:copycat_(.*)/)
+yeet('create_connected:control_chip')
+yeet('create_connected:incomplete_control_chip')
+yeet('create_connected:fan_seething_catalyst')
+yeet('create_connected:fan_ending_catalyst_dragon_head')
+yeet('create_connected:fan_ending_catalyst__dragons_breath')
+yeet('create_connected:fan_freezing_catalyst')
+yeet('create_connected:fan_enriched_catalyst')
+yeet('moreburners:copper_coil')
+yeet('create_connected:fluid_vessel')
 
 ServerEvents.tags('item', event => {
   console.log('[8] - [2] - TAG-WATCHER')
@@ -1280,6 +1291,94 @@ ServerEvents.recipes(event => {
     .itemOutputs('create:cardboard')
     .duration(100)
     .EUt(16);
+  //create connected
+  //replacing the input instead of making 8 new recipes and switching a single item
+  event.replaceInput({ mod: 'create_connected' }, 'create:iron_sheet', 'gtceu:iron_plate')
+  event.replaceInput({ mod: 'create_connected' }, 'create:brass_sheet', 'gtceu:brass_plate')
+  //fan catalyst
+  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst'})
+  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_seething'})
+  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_ending_dragon_head'})
+  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_freezing'})
+  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_ending_dragons_breath'})
+  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_enriched'})
+  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_withering'})
+  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_sanding'})
+
+  event.shaped('create_connected:empty_fan_catalyst' ,[
+    'RGR',
+    'G G',
+    'RGR'
+  ], {
+    R: 'gtceu:brass_ingot',
+    G: 'minecraft:iron_bars',
+  })
+  //Item silo, this is just the regular item vault recipe but rods/plates swapped and a dif circuit
+  event.remove({output: "create_connected:item_silo"})
+  event.shaped('create_connected:item_silo', [
+    'PRP',
+    'RCR',
+    'PRP'
+  ], {
+    P: 'gtceu:steel_rod',
+    C: 'gtceu:steel_crate',
+    R: 'gtceu:steel_plate'
+  })
+  event.recipes.gtceu.assembler("create_connected:item_silo")
+  .itemInputs('4x gtceu:steel_plate', '4x gtceu:steel_rod', 'gtceu:steel_crate')
+  .itemOutputs('2x create_connected:item_silo')
+  .circuit(10)
+  .duration(50)
+  .EUt(8);
+  //Fluid Vessel, these crash when fluid is put into them (either by create or gt methods) create:connected ver 1.1.7
+  //also the regular fluid tank recipe but rotated/dif circuit
+  event.remove({output: 'create_connected:fluid_vessel'})
+//  event.shaped('4x create_connected:fluid_vessel' ,[
+//    'CBC',
+//    'GDG',
+//    'CBC'
+//  ], {
+//    D: 'gtceu:bronze_drum',
+//    C: 'gtceu:copper_plate',
+//    B: 'minecraft:glass_pane',
+//    G: 'gtceu:bronze_plate'
+//  })
+//  event.recipes.gtceu.assembler("create_connected:fluid_vessel")
+//    .itemInputs('gtceu:bronze_drum', '4x gtceu:copper_plate','2x minecraft:glass_pane', '2x gtceu:bronze_plate')
+//    .itemOutputs('4x create_connected:fluid_vessel')
+//    .duration(50)
+//    .circuit(10)
+//    .EUt(8);
+
+  //sequenced pulse generator
+  event.remove({output: 'create_connected:sequenced_pulse_generator'})
+  event.shaped('create_connected:sequenced_pulse_generator' ,[
+    'EC ',
+    'EBR',
+    'SSS'
+  ], {
+    C: '#gtceu:circuits/ulv',
+    E: 'create:electron_tube',
+    B: 'gtceu:brass_plate',
+    R: 'minecraft:redstone_torch',
+    S: '#forge:stone'
+  })
+  //hypertube
+  event.remove({output: 'create_hypertube:hypertube'})
+  event.shaped('16x create_hypertube:hypertube' ,[
+    'RGR',
+    'G G',
+    'RGR'
+  ], {
+    R: 'gtceu:brass_plate',
+    G: '#forge:glass_panes',
+  })
+  event.recipes.gtceu.assembler("create_hypertube:hypertube")
+    .itemInputs('2x gtceu:double_brass_plate', '8x #forge:glass_panes')
+    .itemOutputs('32x create_hypertube:hypertube')
+    .circuit(1)
+    .duration(100)
+    .EUt(24);
 })
 
 
