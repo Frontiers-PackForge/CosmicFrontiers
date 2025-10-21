@@ -1,0 +1,17 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": false,
+  "inputs": [
+    {
+      "item": "malum:soul_stained_steel_plating"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    }
+  ],
+  "level": 1,
+  "result": "tconstruct:draconic",
+  "tools": {
+    "tag": "tconstruct:modifiable/bonus_slots"
+  }
+}

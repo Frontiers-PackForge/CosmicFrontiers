@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "inputs": [
+    {
+      "item": "gtceu:steel_block"
+    }
+  ],
+  "level": 1,
+  "result": "tconstruct:draconic",
+  "tools": {
+    "tag": "tconstruct:modifiable/bonus_slots"
+  }
+}
