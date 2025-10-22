@@ -1309,7 +1309,7 @@ ServerEvents.recipes(event => {
     A: 'gtceu:aluminium_plate',
     M: 'malum:soul_stained_steel_plating',
     W: '#forge:tools/wrenches',
-    C: 'cosmiccore:lv_wildfire_core'
+    C: 'cosmiccore:mv_wildfire_core'
   })
   //['2x gtceu:manasteel_single_cable', 'gtceu:mv_machine_casing', '2x malum:spirit_fabric', 'gtceu:double_aluminium_plate']
   event.remove({ id: 'gtceu:shaped/mv_machine_hull' })

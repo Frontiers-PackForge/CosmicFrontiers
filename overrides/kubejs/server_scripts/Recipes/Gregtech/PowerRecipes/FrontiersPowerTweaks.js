@@ -57,6 +57,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('16x kubejs:cinder_gas_pellets')
     .emberInput(250)
     .duration(40)
+    .circuit(1)
     .EUt(GTValues.VH[GTValues.LV]);
 
   event.recipes.gtceu.arc_furnace('frontiers:cinder_gas')
