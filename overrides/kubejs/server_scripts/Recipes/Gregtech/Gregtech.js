@@ -742,55 +742,6 @@ ServerEvents.recipes(event => {
     .duration(40)
     .EUt(16);
   //ManaSteel Stuff
-  event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe')
-    .itemInputs('botania:manasteel_ingot')
-    .itemOutputs('2x gtceu:manasteel_single_wire')
-    .circuit(1)
-    .duration(26)
-    .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe2x')
-    .itemInputs('botania:manasteel_ingot')
-    .itemOutputs('gtceu:manasteel_double_wire')
-    .circuit(2)
-    .duration(52)
-    .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe4x')
-    .itemInputs('2x botania:manasteel_ingot')
-    .itemOutputs('gtceu:manasteel_quadruple_wire')
-    .circuit(4)
-    .duration(104)
-    .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe8x')
-    .itemInputs('4x botania:manasteel_ingot')
-    .itemOutputs('gtceu:manasteel_octal_wire')
-    .circuit(8)
-    .duration(208)
-    .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.wiremill('gtceu:manasteel_wire_recipe16x')
-    .itemInputs('8x botania:manasteel_ingot')
-    .itemOutputs('gtceu:manasteel_hex_wire')
-    .circuit(16)
-    .duration(416)
-    .EUt(GTValues.VA[GTValues.LV]);
-
-  event.recipes.gtceu.bender('gtceu:manasteel_plate')
-    .itemInputs('botania:manasteel_ingot')
-    .itemOutputs('gtceu:manasteel_plate')
-    .duration(26)
-    .circuit(1)
-    .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.bender('gtceu:manasteel_plate_to_foil')
-    .itemInputs('gtceu:manasteel_plate')
-    .itemOutputs('4x gtceu:manasteel_foil')
-    .duration(26)
-    .circuit(1)
-    .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.bender('gtceu:manasteel_ingot_to_foil')
-    .itemInputs('botania:manasteel_ingot')
-    .itemOutputs('4x gtceu:manasteel_foil')
-    .duration(26)
-    .circuit(10)
-    .EUt(GTValues.VA[GTValues.LV]);
   let manawires = ['gtceu:manasteel_single_cable', 'gtceu:manasteel_double_cable', 'gtceu:manasteel_quadruple_cable', 'gtceu:manasteel_octal_cable', 'gtceu:manasteel_hex_cable']
   event.remove({ output: manawires })
   event.recipes.gtceu.spooling_machine('gtceu:manasteel_single_cable_wrapping')
