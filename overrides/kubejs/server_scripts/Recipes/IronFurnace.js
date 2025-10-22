@@ -115,7 +115,36 @@ ServerEvents.recipes(event => {
         D: 'create:sturdy_sheet',
         F: 'ironfurnaces:diamond_furnace',
     })
-
+    event.shaped( 'ironfurnaces:netherite_furnace', [
+        'PDP',
+        'DFD',
+        'PBP'
+    ], {
+        P: 'minecraft:netherite_ingot',
+        D: 'gtceu:silicon_plate',
+        F: 'ironfurnaces:obsidian_furnace',
+        B: 'tconstruct:blazing_blood_bucket', //thought itd be funny, could be replaced with a lava bucket
+    })
+    event.shaped( 'ironfurnaces:augment_blasting', [
+        'PDP',
+        'DFD',
+        'PBP'
+    ], {
+        P: 'gtceu:iron_plate',
+        D: 'minecraft:redstone',
+        F: 'minecraft:blast_furnace',
+        B: 'minecraft:stone',
+    })
+    event.shaped( 'ironfurnaces:augment_smoking', [
+        'PDP',
+        'DFD',
+        'PBP'
+    ], {
+        P: 'gtceu:iron_plate',
+        D: 'minecraft:redstone',
+        F: 'minecraft:smoker',
+        B: 'minecraft:stone',
+    })
 
 
 
