@@ -62,6 +62,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('4x gtceu:faded_dusk_alloy_ingot')
     .emberInput(2000)
     .duration(120)
+    .circuit(2)
     .EUt(GTValues.VA[GTValues.LV], 4);
 
   event.recipes.gtceu.dawn_forge('frontiers:dawn_lv_core')
@@ -463,11 +464,13 @@ ServerEvents.recipes(event => {
     .itemOutputs('embers:dawnstone_ingot')
     .emberInput(250)
     .duration(100)
+    .circuit(1)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.dawn_forge('frontiers:dawnstone_extraction')
     .itemInputs('embers:dawnstone_ingot')
     .outputFluids('embers:molten_dawnstone 144')
     .duration(40)
+    .circuit(1)
     .EUt(GTValues.VA[GTValues.LV]);
 
   event.recipes.gtceu.dawn_forge('frontiers:dawn_gold_crystal_seed')
