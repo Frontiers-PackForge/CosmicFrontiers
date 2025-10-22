@@ -1836,13 +1836,13 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.distillery('mana_condensation')
-        .inputFluids('blasmatech:mana 100')
-        .outputFluids('gtceu:potent_mana 10')
+        .inputFluids('blasmatech:mana 1000')
+        .outputFluids('gtceu:potent_mana 100')
         .duration(20)
         .EUt(64);
     event.recipes.gtceu.fluid_heater('mana_evap_1')
-        .inputFluids('gtceu:potent_mana 10')
-        .outputFluids('blasmatech:mana 100')
+        .inputFluids('gtceu:potent_mana 100')
+        .outputFluids('blasmatech:mana 1000')
         .circuit(3)
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
