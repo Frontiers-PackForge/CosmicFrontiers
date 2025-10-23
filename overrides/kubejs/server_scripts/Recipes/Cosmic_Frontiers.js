@@ -381,6 +381,14 @@ ServerEvents.recipes(event => {
               .duration(100)
               .EUt(GTValues.VA[GTValues.LV] / 2);
 
+       event.recipes.gtceu.cutter('cosmiccore:hex_wafer_to_chip')
+              .itemInputs('cosmiccore:runic_hex_cpu_wafer')
+              .itemOutputs('4x cosmiccore:runic_hex_cpu')
+              .duration(100)
+              .cleanroom(CleanroomType.CLEANROOM)
+              .EUt(GTValues.VA[GTValues.LV] / 2);
+              
+
 
 
        event.recipes.gtceu.cutter('stone_slab_to_pressureplate')
@@ -988,7 +996,7 @@ ServerEvents.recipes(event => {
               .itemOutputs(`minecraft:elytra`)
               .duration(400)
               .EUt(120)
-              
+
        event.recipes.gtceu.assembler(`frontiers:rose_light`)
               .itemInputs(['gtceu:steel_frame', 'create:rose_quartz_lamp'])
               .itemOutputs('cosmiccore:steel_rose_light')

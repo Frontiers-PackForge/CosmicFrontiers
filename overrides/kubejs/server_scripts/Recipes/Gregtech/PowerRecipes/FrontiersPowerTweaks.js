@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.dawn_forge('frontiers:ember_pellets')
     .itemInputs('embers:ember_crystal', 'embers:ember_crystal', 'embers:ember_crystal', 'embers:ember_crystal')
-    .itemOutputs('16x kubejs:cinder_gas_pellets')
+    .itemOutputs('16x kubejs:cinder_fuel_pellets')
     .emberInput(250)
     .duration(40)
     .circuit(1)

@@ -53,7 +53,10 @@ yeet('projectred_core:electrotine_generator')
 yeet('projectred_core:electrotine_dust')
 yeet('gtceu:auto_maintenance_hatch')
 yeet('gtceu:cleaning_maintenance_hatch')
-
+yeet('gtceu:plastic_printed_circuit_board')
+yeet('gtceu:plastic_circuit_board')
+yeet('gtceu:cpu_chip')
+yeet('gtceu:cpu_wafer')
 
 yeet('trials:crafter')
 
@@ -127,8 +130,23 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:alloy_blast_smelter/voidspark' })
 
 
+
   event.replaceInput({ id: 'gtceu:shaped/lv_machine_hull' }, 'gtceu:wrought_iron_plate', 'gtceu:dawnstone_plate')
   event.replaceInput({ id: 'gtceu:assembler/transistor' }, 'gtceu:fine_tin_wire', '4x cosmiccore:efficacy_chip')
+
+  event.replaceInput({ id: 'gtceu:assembler/smd_transistor_tantalum' }, 'gtceu:fine_tantalum_wire', '8x gtceu:fine_annealed_manasteel_wire')
+  event.replaceInput({ id: 'gtceu:assembler/smd_resistor_tantalum' }, 'gtceu:fine_tantalum_wire', '4x gtceu:fine_soul_stained_steel_wire')
+  event.replaceInput({ id: 'gtceu:assembler/smd_capacitor_pvc_tantalum' }, 'gtceu:tantalum_foil', 'gtceu:runed_steel_foil')
+  event.replaceInput({ id: 'gtceu:assembler/smd_capacitor_silicone_tantalum' }, 'gtceu:tantalum_foil', 'gtceu:runed_steel_foil')
+  event.replaceInput({ id: 'gtceu:assembler/inductor_tantalum' }, 'gtceu:fine_tantalum_wire', '4x gtceu:fine_iesnium_wire')
+
+  //Safety, Should replace all removed with the ones we use.
+  event.remove({ output: 'gtceu:plastic_printed_circuit_board' })
+  event.remove({ output: 'gtceu:plastic_circuit_board' })
+  event.remove({ output: 'gtceu:cpu_chip' })
+  event.remove({ output: 'gtceu:cpu_wafer' })
+  event.replaceInput({}, 'gtceu:plastic_printed_circuit_board', 'cosmiccore:runewoven_plastic_circuit_board')
+  event.replaceInput({}, 'gtceu:cpu_chip', 'cosmiccore:runic_hex_cpu')
 
   event.replaceOutput({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_uvarovite' }, 'gtceu:chromium_dust', 'gtceu:chromite_dust')
 
@@ -458,7 +476,7 @@ ServerEvents.recipes(event => {
     W: 'gtceu:terrasteel_quadruple_cable',
     H: 'gtceu:mv_machine_hull'
   })
-  
+
   event.shaped('cosmiccore:industrial_primitive_blast_furnace', [
     'WSH',
     'SCS',
@@ -823,6 +841,48 @@ ServerEvents.recipes(event => {
     .duration(50)
     .EUt(GTValues.VA[GTValues.MV]);
 
+  event.recipes.gtceu.mana_etching('frontiers:hex_cpu_wafer')
+    .notConsumable('botania:lens_light')
+    .itemInputs('cosmiccore:livirock_aluminite_wafer', 'gtceu:faded_dusk_alloy_foil')
+    .inputFluids('gtceu:galvanized_ethersteel 16')
+    .itemOutputs('cosmiccore:runic_hex_cpu_wafer')
+    .cleanroom(CleanroomType.CLEANROOM)
+    .duration(320)
+    .EUt(GTValues.VA[GTValues.HV]);
+
+  event.recipes.gtceu.chemical_reactor('frontiers:woven_plastic_board')
+    .itemInputs(['4x ars_nouveau:magebloom_fiber', '2x gtceu:gold_foil'])
+    .inputFluids('gtceu:polyethylene 144')
+    .itemOutputs('cosmiccore:plastic_circuit_board')
+    .cleanroom(CleanroomType.CLEANROOM)
+    .duration(120)
+    .EUt(GTValues.VA[GTValues.HV]);
+
+  event.recipes.gtceu.large_chemical_reactor('frontiers:woven_plastic_board_chloride')
+    .notConsumable('cosmiccore:rune_conjunction_arklythar')
+    .itemInputs('cosmiccore:plastic_circuit_board', '6x gtceu:runed_steel_foil')
+    .inputFluids('gtceu:iron_iii_chloride 250')
+    .itemOutputs('cosmiccore:runewoven_plastic_circuit_board')
+    .cleanroom(CleanroomType.CLEANROOM)
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  event.recipes.gtceu.large_chemical_reactor('frontiers:woven_plastic_board_persulfate')
+    .notConsumable('cosmiccore:rune_conjunction_arklythar')
+    .itemInputs('cosmiccore:plastic_circuit_board', '6x gtceu:runed_steel_foil')
+    .inputFluids('gtceu:sodium_persulfate 500')
+    .itemOutputs('cosmiccore:runewoven_plastic_circuit_board')
+    .cleanroom(CleanroomType.CLEANROOM)
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.LV]);
+
+  event.recipes.gtceu.mana_etching('frontiers:woven_plastic_board')
+    .itemInputs(['4x ars_nouveau:magebloom_fiber', '2x gtceu:gold_foil'])
+    .inputFluids('gtceu:polyethylene 144')
+    .itemOutputs('cosmiccore:plastic_circuit_board')
+    .cleanroom(CleanroomType.CLEANROOM)
+    .duration(120)
+    .EUt(GTValues.VA[GTValues.HV]);
 
   event.recipes.gtceu.assembler('ethersteel_smd_diode')
     .itemInputs(['gtceu:gallium_arsenide_dust', '16x gtceu:fine_galvanized_ethersteel_wire'])

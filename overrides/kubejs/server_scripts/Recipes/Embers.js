@@ -466,11 +466,10 @@ ServerEvents.recipes(event => {
     .duration(100)
     .circuit(1)
     .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.dawn_forge('frontiers:dawnstone_extraction')
+  event.recipes.gtceu.extractor('frontiers:dawnstone_extraction')
     .itemInputs('embers:dawnstone_ingot')
     .outputFluids('embers:molten_dawnstone 144')
     .duration(40)
-    .circuit(1)
     .EUt(GTValues.VA[GTValues.LV]);
 
   event.recipes.gtceu.dawn_forge('frontiers:dawn_gold_crystal_seed')
