@@ -3,22 +3,22 @@
   "allow_crystal": false,
   "inputs": [
     {
-      "item": "malum:soul_stained_steel_plating"
+      "item": "gtceu:double_galvanized_ethersteel_plate"
     },
     {
-      "item": "malum:spirit_fabric"
+      "item": "kubejs:terraweave_cloth"
     },
     {
-      "item": "malum:soul_stained_steel_plating"
+      "item": "gtceu:double_galvanized_ethersteel_plate"
     },
     {
-      "item": "malum:soul_stained_steel_plating"
+      "item": "gtceu:double_galvanized_ethersteel_plate"
     },
     {
-      "item": "malum:soul_stained_steel_plating"
+      "item": "gtceu:double_galvanized_ethersteel_plate"
     }
   ],
-  "level": 1,
+  "level": 2,
   "result": "tconstruct:draconic",
   "tools": {
     "tag": "tconstruct:modifiable/bonus_slots"
