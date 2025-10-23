@@ -1,0 +1,16 @@
+{
+  "type": "tconstruct:incremental_modifier",
+  "allow_crystal": true,
+  "amount_per_item": 1,
+  "input": {
+    "item": "malum:spirit_fabric"
+  },
+  "needed_per_level": 10,
+  "result": "tconstruct:dragonborn",
+  "slots": {
+    "defense": 1
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable/armor"
+  }
+}

@@ -1,10 +1,8 @@
 {
   "type": "tconstruct:modifier",
-  "allow_crystal": false,
+  "allow_crystal": true,
+  "check_trait_level": true,
   "inputs": [
-    {
-      "item": "malum:soul_stained_steel_plating"
-    },
     {
       "item": "malum:soul_stained_steel_plating"
     },
@@ -15,12 +13,18 @@
       "item": "malum:soul_stained_steel_plating"
     },
     {
-      "item": "malum:soul_stained_steel_plating"
+      "tag": "forge:ingots/netherite"
+    },
+    {
+      "tag": "forge:ingots/netherite"
     }
   ],
   "level": 1,
-  "result": "tconstruct:draconic",
+  "result": "tconstruct:unbreakable",
+  "slots": {
+    "abilities": 1
+  },
   "tools": {
-    "tag": "tconstruct:modifiable/bonus_slots"
+    "tag": "tconstruct:modifiable/durability"
   }
 }

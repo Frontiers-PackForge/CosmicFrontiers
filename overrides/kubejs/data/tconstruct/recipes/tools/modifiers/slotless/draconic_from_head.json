@@ -3,7 +3,19 @@
   "allow_crystal": true,
   "inputs": [
     {
-      "item": "gtceu:steel_block"
+      "item": "gtceu:double_steel_plate"
+    },
+    {
+      "item": "gtceu:double_steel_plate"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    {
+      "item": "gtceu:double_steel_plate"
+    },
+    {
+      "item": "gtceu:double_steel_plate"
     }
   ],
   "level": 1,
