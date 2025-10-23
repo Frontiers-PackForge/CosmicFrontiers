@@ -232,7 +232,7 @@
 		#Range: > 0
 		shooting = 9
 		#Range: > 0
-		takingDamage = 1
+		takingDamage = 3
 		#Range: > 0
 		blockingDamage = 0
 		#As with Thorns damage calculations, this is the upper bound of the bonus experience that could be granted.
