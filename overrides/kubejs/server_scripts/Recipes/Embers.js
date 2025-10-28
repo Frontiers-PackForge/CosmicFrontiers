@@ -12,6 +12,9 @@ let yeet = (itemName) => {
 
 // yeet('embers:tinker_hammer');
 yeet('embers:grandhammer');
+yeet('embers:ember_receiver');
+yeet('embers:ember_emitter');
+
 ServerEvents.recipes(event => {
 
   // console.log('[EMBERS.JS] - Sealing Successful')
@@ -39,7 +42,9 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'embers:lead_plate' })
   event.remove({ output: 'embers:silver_plate' })
   event.remove({ type: 'embers:alchemy' })
-
+  //uncraftable with the regular versions removed so replacing the input instead of making shaped recipes
+  event.replaceInput({ id: 'embers:ember_ejector' }, 'embers:ember_emitter', 'cosmiccore:steam_ember_emitter')
+  event.replaceInput({ id: 'embers:ember_funnel' }, 'embers:ember_receiver', 'cosmiccore:steam_ember_receptor')
 
   event.recipes.gtceu.dawn_forge('frontiers:dawn_eldritch_eye')
     .itemInputs(['embers:archaic_circuit', 'embers:archaic_brick', 'embers:archaic_brick', 'minecraft:coal', 'minecraft:coal'])
@@ -580,10 +585,20 @@ ServerEvents.recipes(event => {
       Q: `${secondary}`,
       A: 'embers:caminite_plate'
     })
+  })
 
-
-
-
+  primaryMaterials.forEach((primary, index) => {
+    let tierType = machineTier[index]
+    let secondary = secondaryMaterials[index]
+    event.shaped(`cosmiccore:${tierType}_ember_receptor`, [
+      'Q Q',
+      'WAW',
+      '   '
+    ], {
+      W: `${primary}`,
+      Q: `${secondary}`,
+      A: 'embers:caminite_plate'
+    })
   })
 
 
