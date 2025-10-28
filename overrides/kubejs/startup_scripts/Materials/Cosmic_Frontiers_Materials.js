@@ -214,6 +214,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x949494)
         .dust()
 
+    event.create('psi_superconductor_primordia')
+        .color(0xfc0345)
+        .cableProperties(GTValues.V[GTValues.HV], 16, 0, true)
 
     event.create('psi_superconductor_alpha')
         .color(0xff2ee3)

@@ -23,7 +23,9 @@ ServerEvents.tags('item', event => {
   event.remove('minecraft:planks', 'gtceu:treated_wood_planks')
   event.add('curios:head', 'cosmiccore:wireless_pda')
 })
-
+yeet('gtceu:tiny_psi_superconductor_primordia_dust')
+yeet('gtceu:small_psi_superconductor_primordia_dust')
+yeet('gtceu:psi_superconductor_primordia_dust')
 yeet('gtceu:tiny_psi_superconductor_alpha_dust')
 yeet('gtceu:small_psi_superconductor_alpha_dust')
 yeet('gtceu:psi_superconductor_alpha_dust')
@@ -89,6 +91,12 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'gtceu:psi_superconductor_eterna_quadruple_wire', type: 'gtceu:wiremill' })
   event.remove({ output: 'gtceu:psi_superconductor_eterna_octal_wire', type: 'gtceu:wiremill' })
   event.remove({ output: 'gtceu:psi_superconductor_eterna_hex_wire', type: 'gtceu:wiremill' })
+
+  event.remove({ output: 'gtceu:psi_superconductor_primordia_single_wire', type: 'gtceu:wiremill', type: 'gtceu:extruder' },)
+  event.remove({ output: 'gtceu:psi_superconductor_primordia_double_wire', type: 'gtceu:wiremill' })
+  event.remove({ output: 'gtceu:psi_superconductor_primordia_quadruple_wire', type: 'gtceu:wiremill' })
+  event.remove({ output: 'gtceu:psi_superconductor_primordia_octal_wire', type: 'gtceu:wiremill' })
+  event.remove({ output: 'gtceu:psi_superconductor_primordia_hex_wire', type: 'gtceu:wiremill' })
   // event.remove({ type: 'gtceu:fusion_reactor' })
   event.remove({ type: 'gtceu:plasma_turbine' })
   event.remove({ id: 'gtceu:smelting/smelt_dust_blue_alloy_to_ingot' })
@@ -1109,15 +1117,20 @@ ServerEvents.recipes(event => {
     .circuit(3)
     .duration(600)
     .EUt(GTValues.V[GTValues.IV], 6);
-
+  event.recipes.gtceu.assembler('primordia_supercon')
+    .itemInputs(['16x gtceu:annealed_manasteel_foil', '4x gtceu:stainless_steel_tiny_fluid_pipe', '4x gtceu:galvanized_ethersteel_double_wire', 'gtceu:hv_electric_pump'])
+    .itemOutputs('16x gtceu:psi_superconductor_primordia_single_wire')
+    .inputFluids('gtceu:liquid_helium 250')
+    .duration(400)
+    .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.assembler('alpha_supercon')
-    .itemInputs(['16x gtceu:galvanized_ethersteel_foil', '4x gtceu:titanium_tiny_fluid_pipe', '4x gtceu:luminescent_utherium_double_wire', 'gtceu:hv_electric_pump'])
+    .itemInputs(['16x gtceu:galvanized_ethersteel_foil', '4x gtceu:titanium_tiny_fluid_pipe', '4x gtceu:luminescent_utherium_double_wire', 'gtceu:ev_electric_pump'])
     .itemOutputs('16x gtceu:psi_superconductor_alpha_single_wire')
     .inputFluids('gtceu:liquid_helium 250')
     .duration(400)
     .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.assembler('beta_supercon')
-    .itemInputs(['16x gtceu:virtue_meld_foil', '4x gtceu:tungsten_steel_tiny_fluid_pipe', '4x gtceu:virtue_meld_double_wire', 'gtceu:ev_electric_pump'])
+    .itemInputs(['16x gtceu:virtue_meld_foil', '4x gtceu:tungsten_steel_tiny_fluid_pipe', '4x gtceu:virtue_meld_double_wire', 'gtceu:iv_electric_pump'])
     .itemOutputs('16x gtceu:psi_superconductor_beta_single_wire')
     .inputFluids('gtceu:liquid_helium 250')
     .duration(400)
