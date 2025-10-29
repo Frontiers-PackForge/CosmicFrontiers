@@ -7,6 +7,7 @@ let cosmic = ['cosmiccore:suelescent_processor', 'cosmiccore:suelescent_processo
 let akashic = ['cosmiccore:akashic_processor', 'cosmiccore:akashic_processor_assembly', 'cosmiccore:akashic_processor_supercomputer', 'cosmiccore:akashic_processor_mainframe']
 let eschaton = ['cosmiccore:eschaton_processor', 'cosmiccore:eschaton_processor_assembly', 'cosmiccore:eschaton_processor_supercomputer', 'cosmiccore:eschaton_processor_mainframe']
 let boilaway = ['gtceu:bronze_large_boiler', 'gtceu:steel_large_boiler', 'gtceu:titanium_large_boiler', 'gtceu:tungstensteel_large_boiler']
+let hex = ['cosmiccore:hex_processor', 'cosmiccore:hex_processor_assembly', 'cosmiccore:hex_processor_supercomputer', 'cosmiccore:hex_processor_mainframe']
 ItemEvents.tooltip(event => {
   // event.add('gtceu:manasteel_single_cable', Text.of('LV Superconductor'))
   event.addAdvanced('forbidden_arcanus:eternal_stella', (item, advanced, text) => {
@@ -18,6 +19,22 @@ ItemEvents.tooltip(event => {
   //BOILER WARNING : 
   event.addAdvanced(boilaway, (item, advanced, text) => {
     text.add(1, Text.of('Deprecated - Recipes will still run in Large Boilers, But come 0.6.0 the recipe map and recipes will be removed for the steam age overhaul').gray())
+  })
+    //HEX CIRCUITS[, , , ]
+  event.addAdvanced(hex, (item, advanced, text) => {
+    text.add(1, Text.of('Circuits of Arcane Logic').gray())
+  })
+  event.addAdvanced('cosmiccore:hex_processor', (item, advanced, text) => {
+    text.add(2, Text.of('MV-Tier Circuit').gold())
+  })
+  event.addAdvanced('cosmiccore:hex_processor_assembly', (item, advanced, text) => {
+    text.add(2, Text.of('HV-Tier Circuit').gold())
+  })
+  event.addAdvanced('cosmiccore:hex_processor_supercomputer', (item, advanced, text) => {
+    text.add(2, Text.of('EV-Tier Circuit').gold())
+  })
+  event.addAdvanced('cosmiccore:hex_processor_mainframe', (item, advanced, text) => {
+    text.add(2, Text.of('IV-Tier Circuit').gold())
   })
   //ECHO CIRCUITS
   event.addAdvanced(echo, (item, advanced, text) => {
