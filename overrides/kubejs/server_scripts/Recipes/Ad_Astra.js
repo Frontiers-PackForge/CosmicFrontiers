@@ -247,7 +247,7 @@ ServerEvents.recipes(event => {
     .duration(10)
     .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.forming_press("t2_welded_plate")
-    .itemInputs(['4x gtceu:virtue_meld_plate', '4x gtceu:tungsten_steel_plate', '4x gtceu:thorium_plate', '4x gtceu:luminescent_utherium_plate'])
+    .itemInputs(['4x gtceu:virtue_meld_plate', '4x gtceu:tungsten_steel_plate', '4x gtceu:thorium_plate', '4x gtceu:tempered_iesnium_plate'])
     .circuit(1)
     .itemOutputs('kubejs:welded_rocket_plating_mk2')
     .duration(160)

@@ -387,7 +387,7 @@ ServerEvents.recipes(event => {
               .duration(100)
               .cleanroom(CleanroomType.CLEANROOM)
               .EUt(GTValues.VA[GTValues.LV] / 2);
-              
+
 
 
 
@@ -548,22 +548,10 @@ ServerEvents.recipes(event => {
               .duration(10)
               .circuit(1)
               .EUt(GTValues.VA[GTValues.LV]);
-       event.recipes.gtceu.autoclave('lumi_utherium_bad')
-              .inputFluids('gtceu:luminite 144')
-              .itemInputs('2x gtceu:utherium_dust')
-              .itemOutputs('gtceu:luminescent_utherium_ingot')
-              .duration(480)
-              .EUt(GTValues.VA[GTValues.HV]);
-       event.recipes.gtceu.autoclave('lumi_utherium_good')
-              .inputFluids('gtceu:luminite 144')
-              .itemInputs('gtceu:utherium_gem')
-              .itemOutputs('gtceu:luminescent_utherium_ingot')
-              .duration(120)
-              .EUt(GTValues.VA[GTValues.HV]);
        event.recipes.gtceu.alloy_blast_smelter('virtue_meld_molten_bad')
               .inputFluids('gtceu:galvanized_ethersteel 2304')
               .inputFluids('gtceu:luminite 1152')
-              .itemInputs('8x gtceu:luminescent_utherium_ingot')
+              .itemInputs('8x gtceu:tempered_iesnium_ingot')
               .itemInputs('8x botania:life_essence')
               .outputFluids('gtceu:molten_virtue_meld 4608')
               .blastFurnaceTemp(4500)
@@ -581,7 +569,7 @@ ServerEvents.recipes(event => {
        event.recipes.gtceu.alloy_blast_smelter('virtue_meld_molten_good')
               .notConsumableFluid('gtceu:molten_virtue_meld 1152')
               .inputFluids('gtceu:luminite 1152')
-              .itemInputs('16x gtceu:luminescent_utherium_ingot')
+              .itemInputs('16x gtceu:tempered_iesnium_ingot')
               .outputFluids('gtceu:molten_virtue_meld 4608')
               .duration(4800)
               .circuit(14)
@@ -634,7 +622,7 @@ ServerEvents.recipes(event => {
               .duration(600)
               .EUt(GTValues.VA[GTValues.HV]);
        event.recipes.gtceu.assembler('adv_nano_space_default')
-              .itemInputs(['gtceu:avanced_nanomuscle_chestplate', '2x ad_astra:large_gas_tank'])
+              .itemInputs(['gtceu:advanced_nanomuscle_chestplate', '2x ad_astra:large_gas_tank'])
               .itemOutputs('cosmiccore:space_advanced_nanomuscle_chestplate')
               .circuit(1)
               .duration(600)
@@ -1063,7 +1051,19 @@ ServerEvents.recipes(event => {
               .itemOutputs(`64x dustydecorations:honey_seaglass_fragments`)
               .duration(1200)
               .EUt(16)
-
+       event.recipes.gtceu.autoclave('lumi_utherium_bad')
+              .inputFluids('gtceu:luminite 144')
+              .itemInputs('2x gtceu:utherium_dust')
+              .itemOutputs('gtceu:luminescent_utherium_ingot')
+              .duration(480)
+              .EUt(GTValues.VA[GTValues.HV]);
+       event.recipes.gtceu.autoclave('lumi_utherium_good')
+              .inputFluids('gtceu:luminite 144')
+              .itemInputs('gtceu:utherium_gem')
+              .itemOutputs('gtceu:luminescent_utherium_ingot')
+              .duration(120)
+              .EUt(GTValues.VA[GTValues.HV]);
+              
        event.recipes.gtceu.mixer(`frontiers:taupe_seaglass`)
               .itemInputs('16x minecraft:glass')
               .itemInputs('4x #forge:sand')
@@ -1083,4 +1083,19 @@ ServerEvents.recipes(event => {
               .itemOutputs(`64x dustydecorations:mocha_seaglass_fragments`)
               .duration(1200)
               .EUt(16)
+
+       event.recipes.gtceu.arcane_crucible('frontiers:arcane_crucible/tempered_iesnium_ingot')
+              .itemInputs(['4x occultism:iesnium_ingot', '2x gtceu:utherium_gem', '2x gtceu:lanthanum_dust'])
+              .itemOutputs('8xgtceu:tempered_iesnium_ingot')
+              .emberInput(8000)
+              .duration(120)
+              .EUt(GTValues.VA[GTValues.EV]);
+
+       event.recipes.gtceu.arcane_crucible('frontiers:arcane_crucible/luminized_titanium_ingot')
+              .itemInputs(['2x gtceu:titanium_ingot', 'gtceu:luminite_ingot', 'gtceu:platinum_ingot'])
+              .itemOutputs('4x gtceu:luminized_titanium_ingot')
+              .emberInput(8000)
+              .duration(120)
+              .EUt(GTValues.VA[GTValues.EV]);
+
 })

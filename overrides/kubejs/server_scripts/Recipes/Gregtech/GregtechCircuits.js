@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     event.replaceInput(
         { output: 'gtceu:hv_fluid_drilling_rig' },
         'gtceu:tungsten_carbide_gear',
-        'gtceu:luminescent_utherium_gear'
+        'gtceu:tempered_iesnium_gear'
     )
     event.replaceInput(
         { id: 'gtceu:assembly_line/lapotronic_energy_orb_cluster' },

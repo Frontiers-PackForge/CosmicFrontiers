@@ -748,7 +748,7 @@ ServerEvents.recipes(event => {
     .duration(2300)
     .EUt(GTValues.VA[GTValues.ZPM])
   event.recipes.gtceu.assembly_line('frontiers:atomic')
-    .itemInputs(['gtceu:luminescent_utherium_modular_shelling', 'gtceu:heavy_tennessine_beam', 'cosmiccore:heavy_trinavine_beam', 'gtceu:heavy_neutronium_beam'])
+    .itemInputs(['gtceu:tempered_iesnium_modular_shelling', 'gtceu:heavy_tennessine_beam', 'cosmiccore:heavy_trinavine_beam', 'gtceu:heavy_neutronium_beam'])
     .itemOutputs('gtceu:atomic_casing')
     .inputFluids(
       'gtceu:nylon_6_6 1152',
