@@ -484,6 +484,16 @@ ServerEvents.recipes(event => {
     .duration(100)
     .EUt(GTValues.VA[GTValues.LV]);
 
+
+
+
+  event.recipes.gtceu.eclipsed_dawnforge('frontiers:ev_core')
+    .itemInputs(['embers:wildfire_core', 'gtceu:nichrome_plate', 'gtceu:luminescent_utherium_foil', 'gtceu:nichrome_plate', 'gtceu:luminite_foil', 'cosmiccore:potency_chip', 'cosmiccore:verbosity_chip'])
+    .itemOutputs('cosmiccore:ev_wildfire_core')
+    .emberInput(32000)
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.HV]);
+
   //Cinder hearth recipes
   event.recipes.gtceu.cinder_hearth('frontiers:cinder_hearth_grit')
     .itemInputs('embers:ember_grit')

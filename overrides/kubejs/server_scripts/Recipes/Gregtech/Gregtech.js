@@ -240,7 +240,7 @@ ServerEvents.recipes(event => {
   )
   event.replaceInput({ output: 'gtceu:palladium_substation' },
     'gtceu:iridium_frame',
-    'gtceu:luminescent_utherium_frame'
+    'gtceu:tempered_iesnium_frame'
   )
   event.replaceInput({ output: 'gtceu:sturdy_machine_casing' },
     'gtceu:europium_frame',
@@ -1124,7 +1124,7 @@ ServerEvents.recipes(event => {
     .duration(400)
     .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.assembler('alpha_supercon')
-    .itemInputs(['16x gtceu:galvanized_ethersteel_foil', '4x gtceu:titanium_tiny_fluid_pipe', '4x gtceu:luminescent_utherium_double_wire', 'gtceu:ev_electric_pump'])
+    .itemInputs(['16x gtceu:galvanized_ethersteel_foil', '4x gtceu:titanium_tiny_fluid_pipe', '4x gtceu:tempered_iesnium_double_wire', 'gtceu:ev_electric_pump'])
     .itemOutputs('16x gtceu:psi_superconductor_alpha_single_wire')
     .inputFluids('gtceu:liquid_helium 250')
     .duration(400)
@@ -1421,17 +1421,18 @@ ServerEvents.recipes(event => {
   //HV HULLS AND COMPONENTS
   event.remove({ output: 'gtceu:hv_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:hv_machine_casing_assembler')
-    .itemInputs(['4x gtceu:double_stainless_steel_plate', '4x gtceu:galvanized_ethersteel_plate'])
+    .itemInputs(['4x gtceu:stainless_steel_plate', '2x gtceu:galvanized_ethersteel_plate','2x cosmiccore:hv_wildfire_core'])
     .itemOutputs('gtceu:hv_machine_casing')
     .circuit(8)
     .duration(40)
     .EUt(GTValues.VA[GTValues.LV]);
   event.shaped('gtceu:hv_machine_casing', [
     'AMA',
-    'MWM',
+    'CWC',
     'AMA'
   ], {
-    A: 'gtceu:double_stainless_steel_plate',
+    A: 'gtceu:stainless_steel_plate',
+    C: 'cosmiccore:hv_wildfire_core',
     M: 'gtceu:galvanized_ethersteel_plate',
     W: '#forge:tools/wrenches'
   })
@@ -1514,18 +1515,19 @@ ServerEvents.recipes(event => {
   //EV MACHINE HULL AND CASING AND PARTS
   event.remove({ output: 'gtceu:ev_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:ev_machine_casing_assembler')
-    .itemInputs(['4x gtceu:double_titanium_plate', '4x gtceu:luminescent_utherium_plate'])
+    .itemInputs(['4x gtceu:luminized_titanium_plate', '2x gtceu:tempered_iesnium_plate', '2x cosmiccore:ev_wildfire_core'])
     .itemOutputs('gtceu:ev_machine_casing')
     .duration(40)
     .circuit(8)
     .EUt(GTValues.VA[GTValues.LV]);
   event.shaped('gtceu:ev_machine_casing', [
     'AMA',
-    'MWM',
+    'CWC',
     'AMA'
   ], {
-    A: 'gtceu:double_titanium_plate',
-    M: 'gtceu:luminescent_utherium_plate',
+    A: 'gtceu:luminized_titanium_plate',
+    C: 'cosmiccore:ev_wildfire_core',
+    M: 'gtceu:tempered_iesnium_plate',
     W: '#forge:tools/wrenches'
   })
   //EV Hulls
@@ -1537,7 +1539,7 @@ ServerEvents.recipes(event => {
     'PSP'
   ], {
     P: 'kubejs:carbon_ethersteel_lattice',
-    M: 'gtceu:double_luminescent_utherium_plate',
+    M: 'gtceu:double_tempered_iesnium_plate',
     W: 'gtceu:black_steel_single_cable',
     C: 'gtceu:ev_machine_casing',
     S: 'gtceu:nichrome_spring'
@@ -1552,7 +1554,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:assembler/electric_motor_ev' })
   event.remove({ id: 'gtceu:shaped/electric_motor_ev' })
   event.recipes.gtceu.assembler('gtceu:new_ev_motor')
-    .itemInputs(['2x gtceu:black_steel_quadruple_cable', '2x gtceu:luminescent_utherium_rod', 'gtceu:magnetic_neodymium_rod', '4x gtceu:nichrome_quadruple_wire'])
+    .itemInputs(['2x gtceu:black_steel_quadruple_cable', '2x gtceu:tempered_iesnium_rod', 'gtceu:magnetic_neodymium_rod', '4x gtceu:nichrome_quadruple_wire'])
     .itemOutputs('gtceu:ev_electric_motor')
     .duration(100)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -1562,7 +1564,7 @@ ServerEvents.recipes(event => {
     'RWC'
   ], {
     C: 'gtceu:black_steel_quadruple_cable',
-    R: 'gtceu:luminescent_utherium_rod',
+    R: 'gtceu:tempered_iesnium_rod',
     M: 'gtceu:magnetic_neodymium_rod',
     W: 'gtceu:nichrome_quadruple_wire'
   })
@@ -1570,7 +1572,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:assembler/electric_piston_ev' })
   event.remove({ id: 'gtceu:shaped/electric_piston_ev' })
   event.recipes.gtceu.assembler('gtceu:new_ev_piston')
-    .itemInputs(['2x gtceu:black_steel_single_cable', '2x gtceu:luminescent_utherium_rod', '3x gtceu:luminescent_utherium_plate', 'gtceu:ev_electric_motor', 'gtceu:small_luminescent_utherium_gear'])
+    .itemInputs(['2x gtceu:black_steel_single_cable', '2x gtceu:tempered_iesnium_rod', '3x gtceu:tempered_iesnium_plate', 'gtceu:ev_electric_motor', 'gtceu:small_tempered_iesnium_gear'])
     .itemOutputs('gtceu:ev_electric_piston')
     .duration(100)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -1579,9 +1581,9 @@ ServerEvents.recipes(event => {
     'CRR',
     'CMG'
   ], {
-    P: 'gtceu:luminescent_utherium_plate',
-    R: 'gtceu:luminescent_utherium_rod',
-    G: 'gtceu:small_luminescent_utherium_gear',
+    P: 'gtceu:tempered_iesnium_plate',
+    R: 'gtceu:tempered_iesnium_rod',
+    G: 'gtceu:small_tempered_iesnium_gear',
     C: 'gtceu:black_steel_single_cable',
     M: 'gtceu:ev_electric_motor'
   })
@@ -1589,7 +1591,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:shaped/robot_arm_ev' })
   event.remove({ id: 'gtceu:assembler/robot_arm_ev' })
   event.recipes.gtceu.assembler('gtceu:new_ev_robot_arm')
-    .itemInputs(['3x gtceu:black_steel_single_cable', '2x gtceu:luminescent_utherium_rod', '2x gtceu:ev_electric_motor', 'gtceu:ev_electric_piston', '#gtceu:circuits/ev'])
+    .itemInputs(['3x gtceu:black_steel_single_cable', '2x gtceu:tempered_iesnium_rod', '2x gtceu:ev_electric_motor', 'gtceu:ev_electric_piston', '#gtceu:circuits/ev'])
     .itemOutputs('gtceu:ev_robot_arm')
     .duration(100)
     .EUt(GTValues.VA[GTValues.LV]);
@@ -1600,7 +1602,7 @@ ServerEvents.recipes(event => {
   ], {
     P: 'gtceu:ev_electric_piston',
     R: 'gtceu:ev_electric_motor',
-    G: 'gtceu:luminescent_utherium_rod',
+    G: 'gtceu:tempered_iesnium_rod',
     C: 'gtceu:black_steel_single_cable',
     M: '#gtceu:circuits/ev'
   })
