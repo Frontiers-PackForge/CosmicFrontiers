@@ -313,7 +313,7 @@ ServerEvents.recipes(event => {
 
   // source: tyrfing.json
   event.recipes.gtceu.dawn_forge('frontiers:dawn_tyrfing')
-    .itemInputs(["#forge:storage_blocks/coal", "#forge:obsidian", "#forge:ingots/lead", "#forge:ingots/lead", "embers:lead_sword"])
+    .itemInputs(["#forge:storage_blocks/coal", "#forge:obsidian", "#forge:ingots/lead", "#forge:ingots/lead", "gtceu:steel_sword"]) //changed to steel sword cause i removed the embers lead one
     .itemOutputs("embers:tyrfing")
     .emberInput(500)
     .duration(100)
@@ -354,7 +354,7 @@ ServerEvents.recipes(event => {
   // source: aluminium_crystal_seed.json
   event.recipes.gtceu.dawn_forge('frontiers:dawn_aluminium_crystal_seed')
     .itemInputs(["#forge:ingots/aluminium", "#forge:ingots/aluminium", "#forge:ingots/aluminium", "#embers:crystal_seeds"])
-    .itemOutputs("embers:aluminium_crystal_seed")
+    .itemOutputs("embers:aluminum_crystal_seed")
     .emberInput(500)
     .duration(100)
     .EUt(GTValues.VA[GTValues.LV]);
