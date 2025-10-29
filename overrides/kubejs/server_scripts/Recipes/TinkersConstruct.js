@@ -124,5 +124,7 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick_kiln' })
 
 
-    
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/molten_debris/ore' })
+	event.remove({ id: 'tconstruct:smeltery/alloys/molten_rose_gold' })
+	event.remove({ id: 'tconstruct:smeltery/alloys/molten_netherite' })    
 })
