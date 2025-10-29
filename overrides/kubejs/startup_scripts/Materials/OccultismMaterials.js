@@ -22,7 +22,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.BRIGHT)
     event.create('tempered_iesnium')
         .color(0x1bd1ad).secondaryColor(0x00a383)
-        .ore()
         .ingot()
         .dust()
         .iconSet(GTMaterialIconSet.SHINY)
@@ -33,9 +32,29 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_SPRING,
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
             GTMaterialFlags.GENERATE_FRAME,
-            GTMaterialFlags.GENERATE_FINE_WIRE
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING
+        )
+    event.create('luminized_titanium')
+        .color(0x8A8FA6).secondaryColor(0x7C8595)
+        .ingot()
+        .dust()
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING
         )
 })
 GTCEuStartupEvents.materialModification(event => {
