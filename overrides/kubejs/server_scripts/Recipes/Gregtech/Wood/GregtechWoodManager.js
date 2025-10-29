@@ -129,10 +129,41 @@ ServerEvents.recipes(event => {
     new Wood('forestry','padauk_fireproof',event).all();
     new Wood('forestry','cocobolo_fireproof',event).all();
     new Wood('forestry','zebrawook_fireproof',event).all();
+    //Tinkers Construct
+    new Wood('tconstruct','greenheart',event).all();
+    new Wood('tconstruct','skyroot',event).all();
+    new Wood('tconstruct','bloodshroom',event).all();
+    new Wood('tconstruct','enderbark',event).all();
 
     
 
         //Manual Recipes (For Edgecases) 
+
+        //ars nouveau
+        event.remove({id:'ars_nouveau:archwood_button'})
+        event.remove({id:'ars_nouveau:archwood_slab'})
+        event.remove({id:'ars_nouveau:archwood_fence_gate'})
+        event.remove({id:'ars_nouveau:archwood_trapdoor'})
+        event.remove({id:'ars_nouveau:archwood_pressure_plate'})
+        event.remove({id:'ars_nouveau:archwood_fence'})
+        event.remove({id:'ars_nouveau:archwood_door'})
+        event.shaped('2x ars_nouveau:archwood_slab',[
+            '   ',
+            '   ',
+            'TP '
+        ],
+            {
+                T:'#forge:tools/saws',
+                P:'ars_nouveau:archwood_planks'
+            })
+        event.recipes.gtceu.cutter(`cosmicfrontiers:ars_nouveau_aechwood_slab_cutting`)
+                .itemInputs(`ars_nouveau:archwood_planks`)
+                .itemOutputs(`2x ars_nouveau:archwood_slab`)
+                .duration(100)
+                .EUt(4);
+
+        //Farmers Delight
+        event.remove({id:'farmersdelight:canvas_sign'})
 
         //Menril Trapdoors... Do not exist?
         event.remove({id : 'integrateddynamics:crafting/menril_door'})
