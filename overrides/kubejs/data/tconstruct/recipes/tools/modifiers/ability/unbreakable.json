@@ -1,0 +1,30 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "check_trait_level": true,
+  "inputs": [
+    {
+      "item": "malum:soul_stained_steel_plating"
+    },
+    {
+      "item": "malum:spirit_fabric"
+    },
+    {
+      "item": "malum:soul_stained_steel_plating"
+    },
+    {
+      "tag": "forge:ingots/netherite"
+    },
+    {
+      "tag": "forge:ingots/netherite"
+    }
+  ],
+  "level": 1,
+  "result": "tconstruct:unbreakable",
+  "slots": {
+    "abilities": 1
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable/durability"
+  }
+}
