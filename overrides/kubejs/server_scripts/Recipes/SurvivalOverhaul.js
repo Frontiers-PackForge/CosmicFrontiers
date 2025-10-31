@@ -156,4 +156,11 @@ ServerEvents.recipes(event => {
               .itemOutputs('legendarysurvivaloverhaul:warm_string')
               .duration(40)
               .EUt(8)
+    //fern seeds from crops
+    event.shapeless('legendarysurvivaloverhaul:sun_fern_seeds', [
+        'legendarysurvivaloverhaul:sun_fern_leaf'
+    ])
+    event.shapeless('legendarysurvivaloverhaul:ice_fern_seeds', [
+        'legendarysurvivaloverhaul:ice_fern_leaf'
+    ])
 })
