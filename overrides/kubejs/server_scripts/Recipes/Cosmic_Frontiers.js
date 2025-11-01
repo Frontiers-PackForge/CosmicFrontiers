@@ -1086,16 +1086,16 @@ ServerEvents.recipes(event => {
 
        event.recipes.gtceu.arcane_crucible('frontiers:arcane_crucible/tempered_iesnium_ingot')
               .itemInputs(['4x occultism:iesnium_ingot', '2x gtceu:utherium_gem', '2x gtceu:lanthanum_dust'])
-              .itemOutputs('8xgtceu:tempered_iesnium_ingot')
+              .itemOutputs('8x gtceu:tempered_iesnium_ingot')
               .emberInput(8000)
-              .duration(120)
+              .duration(1600)
               .EUt(GTValues.VA[GTValues.EV]);
 
        event.recipes.gtceu.arcane_crucible('frontiers:arcane_crucible/luminized_titanium_ingot')
               .itemInputs(['2x gtceu:titanium_ingot', 'gtceu:luminite_ingot', 'gtceu:platinum_ingot'])
               .itemOutputs('4x gtceu:luminized_titanium_ingot')
               .emberInput(8000)
-              .duration(120)
+              .duration(1000)
               .EUt(GTValues.VA[GTValues.EV]);
 
 })
