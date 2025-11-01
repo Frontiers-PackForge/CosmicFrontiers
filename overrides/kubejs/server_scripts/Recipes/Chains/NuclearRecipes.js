@@ -102,7 +102,9 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.pulse_exchange_steam(`${tier}_salt_waste_freezing_steamy`)
             .inputFluids(`gtceu:superheated_waste_${tier}_fuel_salt 1000`)
             .outputFluids(`gtceu:waste_${tier}_fuel_salt 1000`)
-            .outputFluids(`gtceu:super_critical_steam 32000`)
+            .perTick(true)
+            .outputFluids(`gtceu:super_critical_steam 8000`)
+            .perTick(false)
             .duration(240)
             .EUt(GTValues.VA[GTValues.EV]);
         event.recipes.gtceu.pulse_exchange_steam_vent(`${tier}_salt_waste_freezing_steamy_lossy`)
@@ -113,7 +115,9 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.pulse_exchange_steam(`${tier}_salt_freezing_steamy`)
             .inputFluids(`gtceu:superheated_${tier}_fuel_salt 1000`)
             .outputFluids(`gtceu:${tier}_fuel_salt 1000`)
-            .outputFluids(`gtceu:super_critical_steam 32000`)
+            .perTick(true)
+            .outputFluids(`gtceu:super_critical_steam 8000`)
+            .perTick(false)
             .duration(240)
             .EUt(GTValues.VA[GTValues.EV]);
         event.recipes.gtceu.pulse_exchange_steam_vent(`${tier}_salt_freezing_steamy_lossy`)
@@ -176,7 +180,9 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.pulse_exchange_steam(`${tier}_salt_waste_freezing_steamy`)
             .inputFluids(`gtceu:superheated_waste_${tier}_fuel_salt 1000`)
             .outputFluids(`gtceu:waste_${tier}_fuel_salt 1000`)
-            .outputFluids(`gtceu:super_critical_steam 32000`)
+            .perTick(true)
+            .outputFluids(`gtceu:super_critical_steam 8000`)
+            .perTick(false)
             .duration(240)
             .EUt(GTValues.VA[GTValues.EV]);
         event.recipes.gtceu.pulse_exchange_steam_vent(`${tier}_salt_waste_freezing_steamy_lossy`)
@@ -187,7 +193,9 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.pulse_exchange_steam(`${tier}_salt_freezing_steamy`)
             .inputFluids(`gtceu:superheated_${tier}_fuel_salt 1000`)
             .outputFluids(`gtceu:${tier}_fuel_salt 1000`)
-            .outputFluids(`gtceu:super_critical_steam 32000`)
+            .perTick(true)
+            .outputFluids(`gtceu:super_critical_steam 8000`)
+            .perTick(false)
             .duration(240)
             .EUt(GTValues.VA[GTValues.EV]);
         event.recipes.gtceu.pulse_exchange_steam_vent(`${tier}_salt_freezing_steamy_lossy`)

@@ -82,6 +82,15 @@ ServerEvents.recipes(event => {
     .duration(10)
     .EUt(-GTValues.V[GTValues.LV])
 
+  event.recipes.gtceu.steam_turbine('frontiers:steam_mk3')
+    .inputFluids('gtceu:super_critical_steam 12')
+    .duration(10)
+    .EUt(-GTValues.V[GTValues.LV])
+
+  event.recipes.gtceu.steam_turbine('frontiers:steam_mk4')
+    .inputFluids('gtceu:ashdew_steam 1')
+    .duration(60)
+    .EUt(-GTValues.V[GTValues.LV])
 
   //Awakened Cinder Gas (Uses Ember, quite a bit)
 
