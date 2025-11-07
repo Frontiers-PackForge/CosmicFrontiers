@@ -2,9 +2,7 @@
 title: Everything about Crafting
 ---
 
-
-
-increase pattern encoding limit
+### Increase pattern encoding limit: You can now encode patterns with input/output amounts of up to MAX_LONG(2^63 -1)
 
 ### Highlight stacks from crafting status screen: You can now shift click any stacks in the crafting status screen to highlight the corresponding pattern provider(works with pattern buffers)
 ![highlight.png](../../assets/ae2/crafting/highlight.png)
