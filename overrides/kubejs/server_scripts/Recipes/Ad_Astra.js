@@ -321,7 +321,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.EV]);
 
   event.recipes.gtceu.assembler('osmiridium_nose_cone')
-    .itemInputs(['8x gtceu:double_osmiridium_plate', '4x gtceu:osmiridium_rod', 'gtceu:nano_processor_mainframe', 'create:rose_quartz_lamp'])
+    .itemInputs(['8x gtceu:double_osmiridium_plate', '4x gtceu:osmiridium_rod', '#gtceu:circuits/luv', 'create:rose_quartz_lamp'])
     .circuit(15)
     .itemOutputs('kubejs:osmiridium_nose_cone')
     .duration(160)
