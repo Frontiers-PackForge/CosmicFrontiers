@@ -127,8 +127,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.NO_ORE_SMELTING
-
+            GTMaterialFlags.NO_ORE_SMELTING,
+            GTMaterialFlags.GENERATE_FINE_WIRE
         )
     event.create('utherium')
         .color(0xc3434c)
