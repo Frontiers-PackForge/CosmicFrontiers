@@ -1,0 +1,16 @@
+{
+  "type": "embers:stamping",
+  "fluid": {
+    "amount": 144,
+    "tag": "forge:lead"
+  },
+  "input": {
+    "item": "embers:ember_shard"
+  },
+  "output": {
+    "item": "embers:lead_aspectus"
+  },
+  "stamp": {
+    "item": "embers:ingot_stamp"
+  }
+}

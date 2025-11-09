@@ -1,3 +1,33 @@
+let yeet = (itemName) => {
+  ServerEvents.recipes(event => {
+    event.remove({ output: itemName })
+  })
+  ServerEvents.tags('item', event => {
+    console.log('[3] - [1] - TAG-WATCHER') //not sure if i should change the log numbers? copied from the ae2_mods.js
+    event.add('c:hidden_from_recipe_viewers', itemName)
+    event.add('forge:viewers/hidden_from_recipe', itemName)
+  })
+}
+yeet('experienceobelisk:molecular_metamorpher')
+yeet('experienceobelisk:primordial_assembly')
+yeet('experienceobelisk:flask_of_poseidon')
+yeet('experienceobelisk:flask_of_hades')
+yeet('experienceobelisk:flask_of_chaos')
+yeet('experienceobelisk:transforming_focus')
+yeet('experienceobelisk:mending_neurogel_blob')
+yeet('experienceobelisk:mending_neurogel')
+yeet('experienceobelisk:fluorescent_agar')
+yeet('experienceobelisk:nutrient_agar')
+yeet('experienceobelisk:insightful_agar')
+yeet('experienceobelisk:extravagant_agar')
+yeet('experienceobelisk:bibliophage')
+yeet('experienceobelisk:experience_jelly')
+yeet('experienceobelisk:forgotten_dust')
+yeet('experienceobelisk:forgotten_dust_block')
+yeet('experienceobelisk:infected_bookshelf')
+yeet('experienceobelisk:infected_enchanted_bookshelf')
+yeet('experienceobelisk:infected_archivers_bookshelf')
+
 ServerEvents.recipes(event => {
     event.remove({ id: 'experienceobelisk:bibliophage' })
     event.remove({ id: 'experienceobelisk:metamorpher/primordial_assembly' })
@@ -6,11 +36,10 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'experienceobelisk:cognitive_alloy' })
     event.remove({ id: 'experienceobelisk:cognitive_flux' })
     event.remove({ id: 'experienceobelisk:whisperglass' })
-    event.remove({ id: 'experienceobelisk:metamorpher/cognitive_alloy_metamorphosis' })
-
-
-
-
+    event.remove({ id: /experienceobelisk:metamorpher(.*)/})
+    event.remove({ id: /experienceobelisk:infecting(.*)/})
+    event.remove({ id: 'experienceobelisk:filling/golden_apple_filling' })
+         
     event.recipes.gtceu.mixer('cognitive_flux_mixer')
         .itemInputs(['4x gtceu:nether_quartz_dust', '4x gtceu:lapis_dust', '4x minecraft:soul_sand'])
         .itemOutputs('4x experienceobelisk:cognitive_flux')
@@ -26,4 +55,9 @@ ServerEvents.recipes(event => {
         .itemOutputs('experienceobelisk:whisperglass')
         .duration(160)
         .EUt(12)
+    event.recipes.gtceu.alloy_smelter('calcarine_matrix')
+        .itemInputs(['2x experienceobelisk:astute_assembly', '2x experienceobelisk:nightmare_bottle'])
+        .itemOutputs('experienceobelisk:calcarine_matrix')
+        .duration(500)
+        .EUt(24)
 })

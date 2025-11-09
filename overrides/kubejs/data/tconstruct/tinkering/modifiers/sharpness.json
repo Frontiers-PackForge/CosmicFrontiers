@@ -1,0 +1,16 @@
+{
+  "level_display": {
+    "type": "tconstruct:unique",
+    "first_unique": true,
+    "unique_until": 100
+  },
+  "modules": [
+    {
+      "type": "tconstruct:stat_boost",
+      "each_level": 0.75,
+      "operation": "add",
+      "stat": "tconstruct:attack_damage"
+    }
+  ],
+  "tooltip_display": "always"
+}

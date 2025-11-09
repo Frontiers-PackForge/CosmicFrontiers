@@ -1,0 +1,26 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": false,
+  "inputs": [
+    {
+      "item": "gtceu:double_galvanized_ethersteel_plate"
+    },
+    {
+      "item": "kubejs:terraweave_cloth"
+    },
+    {
+      "item": "gtceu:double_galvanized_ethersteel_plate"
+    },
+    {
+      "item": "gtceu:double_galvanized_ethersteel_plate"
+    },
+    {
+      "item": "gtceu:double_galvanized_ethersteel_plate"
+    }
+  ],
+  "level": 2,
+  "result": "tconstruct:draconic",
+  "tools": {
+    "tag": "tconstruct:modifiable/bonus_slots"
+  }
+}

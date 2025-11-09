@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:assembler/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_luv' })
   event.remove({ id: 'gtceu:shaped/casing_assembly_control' })
+  event.remove({ id: 'gtceu:assembler/assembly_control_casing' })
 
   event.replaceOutput({ id: 'gtceu:assembly_line/high_performance_computing_array' }, 'gtceu:high_performance_computation_array', 'cosmiccore:high_performance_computation_array')
   event.shaped('gtceu:assembly_line_casing', [
@@ -189,21 +190,6 @@ ServerEvents.recipes(event => {
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('cosmiccore:naquadric_superalloy_coil_block')).EUt(GTValues.VA[GTValues.LuV]).duration(1000))
     .duration(800)
     .EUt(GTValues.VA[GTValues.LuV])
-
-  //CleanroomMaintHatch Temp Recipe until i smooth over balancing
-  event.remove({ id: 'gtceu:shaped/maintenance_hatch_cleaning' })
-  event.recipes.gtceu.assembly_line('clean_hatch_assemblyline')
-    .itemInputs(['64x gtceu:plascrete', '64x gtceu:plascrete', '16x gtceu:filter_casing', '16x gtceu:hssg_spring', '4x #gtceu:circuits/luv', '4x gtceu:luv_robot_arm', 'gtceu:maintenance_hatch', 'gtceu:cleanroom', 'gtceu:luv_diode'])
-    .itemOutputs('gtceu:cleaning_maintenance_hatch')
-    .inputFluids(
-      Fluid.of('gtceu:high_grade_solder', 1440),
-      Fluid.of('gtceu:argon', 16000)
-    )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:maintenance_hatch')).EUt(GTValues.VA[GTValues.IV]).duration(1000))
-    .duration(600)
-    .EUt(GTValues.VA[GTValues.IV])
-    .removePreviousMaterialInfo()
-    .addMaterialInfo(true)
   //NPR
   event.recipes.gtceu.assembly_line('naquahine_reactor_controller')
     .itemInputs(['4x cosmiccore:fusion_grade_magnet', '4x #gtceu:circuits/zpm', 'gtceu:iv_lapotronic_battery', '16x gtceu:iv_field_generator', '64x gtceu:uhpic_chip', '32x gtceu:indium_tin_barium_titanium_cuprate_single_wire', '16x gtceu:iv_field_generator'])
@@ -762,7 +748,7 @@ ServerEvents.recipes(event => {
     .duration(2300)
     .EUt(GTValues.VA[GTValues.ZPM])
   event.recipes.gtceu.assembly_line('frontiers:atomic')
-    .itemInputs(['gtceu:luminescent_utherium_modular_shelling', 'gtceu:heavy_tennessine_beam', 'cosmiccore:heavy_trinavine_beam', 'gtceu:heavy_neutronium_beam'])
+    .itemInputs(['gtceu:tempered_iesnium_modular_shelling', 'gtceu:heavy_tennessine_beam', 'cosmiccore:heavy_trinavine_beam', 'gtceu:heavy_neutronium_beam'])
     .itemOutputs('gtceu:atomic_casing')
     .inputFluids(
       'gtceu:nylon_6_6 1152',
@@ -984,6 +970,50 @@ ServerEvents.recipes(event => {
       .CWUt(250, 1500000)
       .EUt(GTValues.VA[GTValues.ZPM]))
     .EUt(GTValues.VA[GTValues.ZPM])
+
+  event.recipes.gtceu.assembly_line('frontiers:cryo_chamber')
+    .itemInputs(['cosmiccore:industrial_chemical_vat', 'gtceu:mega_vacuum_freezer', '4x #gtceu:circuits/uhv', 'gtceu:ultradense_aluminium_plate', 'gtceu:ultradense_aluminium_plate', 'gtceu:ultradense_aluminium_plate', 'gtceu:ultradense_aluminium_plate'])
+    .itemOutputs('cosmiccore:cryogenics_chamber')
+    .inputFluids(
+      'gtceu:high_grade_solder 2304',
+      'gtceu:nylon_6_6 1152',
+      'gtceu:neoprene 576',
+    )
+    .duration(240)
+    .stationResearch(b => b
+      .researchStack('gtceu:mega_vacuum_freezer')
+      .CWUt(250, 1500000)
+      .EUt(GTValues.VA[GTValues.ZPM]))
+    .EUt(GTValues.VA[GTValues.ZPM])
+
+  event.recipes.gtceu.assembly_line('frontiers:cryogenics_casing')
+    .itemInputs(['4x gtceu:synthetic_pthanterum_modular_shelling', 'gtceu:ultradense_naquadah_plate', 'gtceu:ultradense_osmiridium_plate', 'gtceu:ultradense_naquadah_plate', 'gtceu:ultradense_osmiridium_plate', 'gtceu:ultradense_naquadah_plate', 'gtceu:ultradense_osmiridium_plate'])
+    .itemOutputs('cosmiccore:cryogenic_casing')
+    .inputFluids(
+      'gtceu:high_grade_solder 2304',
+      'gtceu:neoprene 576',
+    )
+    .duration(240)
+    .stationResearch(b => b
+      .researchStack('cosmiccore:heavy_frost_proof_casing')
+      .CWUt(450, 5500000)
+      .EUt(GTValues.VA[GTValues.UV]))
+    .EUt(GTValues.VA[GTValues.UV])
+
+
+  event.recipes.gtceu.assembly_line('frontiers:heavy_frost_casing')
+    .itemInputs(['4x gtceu:aluminium_modular_shelling', '4x gtceu:heavy_aluminium_beam', 'gtceu:ultradense_aluminium_plate', 'gtceu:ultradense_aluminium_plate', 'gtceu:ultradense_aluminium_plate', 'gtceu:ultradense_aluminium_plate'])
+    .itemOutputs('cosmiccore:heavy_frost_proof_casing')
+    .inputFluids(
+      'gtceu:high_grade_solder 2304',
+      'gtceu:neoprene 576',
+    )
+    .duration(240)
+    .stationResearch(b => b
+      .researchStack('gtceu:frostproof_machine_casing')
+      .CWUt(450, 5500000)
+      .EUt(GTValues.VA[GTValues.UV]))
+    .EUt(GTValues.VA[GTValues.UV])
 
   event.remove({ id: 'gtceu:assembly_line/electric_motor_uv' })
   event.remove({ id: 'gtceu:assembly_line/electric_piston_uv' })

@@ -62,14 +62,17 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV]);
     // Sodium Tungstate Solution 
-    // Impure Sodium Tungstate Solution (l) + 12 Sodium Sulfide (s) + 4 Water (l) -> Sodium Tungstate Solution (l) + 7 Sodium Molybdenum Sulfide (s) + 24 Sodium Hydroxide (s)
+    // OLD - WAS IMBALANCED AND LOSSY   Impure Sodium Tungstate Solution (l) + 12 Sodium Sulfide (s) + 4 Water (l) -> Sodium Tungstate Solution (l) + 7 Sodium Molybdenum Sulfide (s) + 24 Sodium Hydroxide (s)
+    // NEW Na2WO4[H2O] + 5 H2O + 4 Na2S -> Na2MoS4 + 6 NaOH + [h] + 3 H2
+    // Impure Sodium Tungstate Solution (l) + 6 Water + 8 Sodium Sulfide - > Sodium Tungstate Solution (l) + 7 Sodium Molybdenum Sulfide (s) + 18 Sodium Hydroxide (s) + 6 Hydrogen (g)
     event.recipes.gtceu.large_chemical_reactor('impure_w_sol_to_w_sol')
         .inputFluids('gtceu:impure_sodium_tungstate_solution 1000')
         .itemInputs('12x gtceu:sodium_sulfide_dust')
-        .inputFluids('minecraft:water 1000')
-        .outputFluids('gtceu:sodium_tungstate_solution 1000')
+        .inputFluids('minecraft:water 6000')
         .itemOutputs('7x gtceu:sodium_molybdenum_sulfide_dust')
-        .itemOutputs('24x gtceu:sodium_hydroxide_dust')
+        .itemOutputs('18x gtceu:sodium_hydroxide_dust')
+        .outputFluids('gtceu:sodium_tungstate_solution 1000')
+        .outputFluids('gtceu:hydrogen 6000')
         .duration(100)
         .EUt(GTValues.VA[GTValues.EV]);
 
@@ -239,20 +242,4 @@ ServerEvents.recipes(event => {
             .CWUt(16)
             .EUt(GTValues.VA[GTValues.ZPM]))
         .EUt(GTValues.VH[GTValues.IV], 4);
-
-    // event.recipes.gtceu.industrial_chemvat('frontiers:heme_ring_but_its_actually_chlorophyte_and_im_just_lazy')
-    //     .itemInputs('gtceu:prophine_dust')
-    //     .inputFluids('gtceu:acetic_acid 1000', 'gtceu:formaldehyde 4000', 'gtceu:methyl_formate 2000', 'gtceu:chlorine 4000', 'gtceu:vinyl_chloride 1000', 'gtceu:chloromethane 4000')
-    //     .outputFluids('gtceu:hydrochloric_acid 1000', 'minecraft:water 1000')
-    //     .itemOutputs('4x cosmiccore:heme_ring')
-    //     .circuit(31)
-    //     .duration(440)
-    //     .stationResearch(b => b
-    //         .researchStack('cosmiccore:sculk_fibroblast')
-    //         .CWUt(16)
-    //         .EUt(GTValues.VA[GTValues.ZPM]))
-    //     .cleanroom(CleanroomType.STERILE_CLEANROOM)
-    //     .EUt(GTValues.VA[GTValues.LuV]);
-
-
 })

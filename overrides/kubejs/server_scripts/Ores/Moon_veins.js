@@ -52,6 +52,23 @@ GTCEuServerEvents.oreVeins(event => {
             .radius(4)
         )
     )
+
+    event.add('kubejs:lunar_diamond_pure_mana', vein => vein
+        .weight(30).clusterSize(30).density(0.2)
+        .layer('moon_stone')
+        .heightRangeUniform(35, 50)
+        .layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(3).mat(GTMaterials.Diamond).size(2, 4))
+                .layer(l => l.weight(2).mat(GTMaterials.Electrotine).size(1, 3))
+            )
+        )
+        .surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Diamond)
+            .density(0.2)
+            .radius(4)
+        )
+    )
     event.add('kubejs:lunar_maganese', vein => vein
         .weight(30).clusterSize(30).density(0.2)
         .layer('moon_stone')

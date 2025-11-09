@@ -27,9 +27,8 @@ ServerEvents.recipes(event => {
         ],
         "sourceCost": 2000
       })
-    event.remove({id:'occultism:ritual/craft_stabilizer_tier3'})
-    event.remove({id:'ars_ocultas:craft_stabilizer_tier4'})
-    event.remove({id:'occultism:ritual/craft_stabilizer_tier4'})
+
+    event.remove({id:'delightful:integration/ars_nouveau/cutting/magebloom'})
     event.remove({ output: 'ars_nouveau:archwood_chest' })
     event.remove({ output: 'arseng:source_cell_housing' })
 
@@ -310,4 +309,158 @@ ServerEvents.recipes(event => {
         R: 'gtceu:rose_gold_plate'
     }
     )
+    //spellbooks
+    //incase an occultism recipe is wanted instead
+  //event.remove({ id: 'ars_nouveau:novice_spell_book' })
+  //event.recipes.occultism.ritual(
+  //  'ars_nouveau:novice_spell_book',
+  //  ['minecraft:iron_sword',
+  //    'minecraft:iron_pickaxe',
+  //    'minecraft:iron_axe',
+  //    'minecraft:iron_shovel',],
+  //  'minecraft:book',
+  //  'occultism:rune_ritual'
+  //).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.novice_spell_book_ritual")
+
+  .id("malum:spirit_infusion.frontiers.apprentice_spell_book")
+  event.remove({ id: 'ars_nouveau:apprentice_spell_book_upgrade' })
+  event.custom(
+    {
+      "type": "malum:spirit_infusion",
+      "extra_items": [
+        {
+          "count": 8,
+          "item": "malum:spirit_fabric"
+        },
+        {
+          "count": 8,
+          "item": "botania:manasteel_ingot"
+        },
+        {
+          "count": 1,
+          "item": "botania:blacker_lotus"
+        },
+      ],
+      "input": {
+        "count": 1,
+        "item": "ars_nouveau:novice_spell_book"
+      },
+      "output": {
+        "count": 1,
+        "item": "ars_nouveau:apprentice_spell_book"
+      },
+      "spirits": [
+        {
+          "type": "arcane",
+          "count": 32
+        },
+        {
+          "type": "aerial",
+          "count": 16
+        },
+        {
+          "type": "aqueous",
+          "count": 16
+        },
+        {
+          "type": "earthen",
+          "count": 16
+        },
+      ]
+    }
+  )
+
+  .id("malum:spirit_infusion.frontiers.archmage_spell_book")
+  event.remove({ id: 'ars_nouveau:archmage_spell_book_upgrade' })
+  event.custom(
+    {
+      "type": "malum:spirit_infusion",
+      "extra_items": [
+        {
+          "count": 8,
+          "item": "kubejs:terraweave_cloth"
+        },
+        {
+          "count": 8,
+          "item": "gtceu:galvanized_ethersteel_ingot"
+        },
+        {
+          "count": 1,
+          "item": "ars_nouveau:wilden_tribute"
+        },
+      ],
+      "input": {
+        "count": 1,
+        "item": "ars_nouveau:apprentice_spell_book"
+      },
+      "output": {
+        "count": 1,
+        "item": "ars_nouveau:archmage_spell_book"
+      },
+      "spirits": [
+        {
+          "type": "arcane",
+          "count": 32
+        },
+        {
+          "type": "eldritch",
+          "count": 16
+        },
+        {
+          "type": "wicked",
+          "count": 16
+        },
+        {
+          "type": "infernal",
+          "count": 16
+        },
+      ]
+    }
+  )
+  //pity recipe cause the wilden dens spawn *very* rarely, should be a one time craft
+  event.custom(
+    {
+      "type": "malum:spirit_infusion",
+      "extra_items": [
+        {
+          "count": 8,
+          "item": "minecraft:phantom_membrane"
+        },
+        {
+          "count": 8,
+          "item": "minecraft:rotten_flesh"
+        },
+        {
+          "count": 1,
+          "item": "minecraft:wither_skeleton_skull"
+        },
+      ],
+      "input": {
+        "count": 1,
+        "item": "ars_nouveau:purple_archwood_log"
+      },
+      "output": {
+        "count": 1,
+        "item": "ars_nouveau:ritual_wilden_summon"
+      },
+      "spirits": [
+        {
+          "type": "arcane",
+          "count": 32
+        },
+        {
+          "type": "earthen",
+          "count": 32
+        },
+        {
+          "type": "aerial",
+          "count": 16
+        },
+        {
+          "type": "wicked",
+          "count": 16
+        },
+      ]
+    }
+  )
 })

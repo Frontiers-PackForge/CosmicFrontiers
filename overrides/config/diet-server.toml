@@ -1,15 +1,15 @@
 #The minimum percentage that diet groups can be reduced to upon death.
 #Range: 0 ~ 100
-deathPenaltyMin = 0
+deathPenaltyMin = 1
 #The reduction in percentage applied to all diet groups upon death.
 #Range: 0 ~ 100
-deathPenaltyLoss = 100
+deathPenaltyLoss = 5
 #The method to apply for losses due to death penalties.
 #AMOUNT = Reduce by a flat percentage amount
 #PERCENT = Reduce by a percent of the current value
 #RESET = Reset value to defaults
 #Allowed Values: AMOUNT, PERCENT, RESET
-deathPenaltyMethod = "AMOUNT"
+deathPenaltyMethod = "PERCENT"
 #The percentage reduction in total gain for each diet group consumed at once.
 #Range: 0 ~ 100
 gainPenaltyPerGroup = 15

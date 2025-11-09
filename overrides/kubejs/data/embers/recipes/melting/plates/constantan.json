@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:plates/constantan"
+      }
+    }
+  ],
+  "input": {
+    "tag": "forge:plates/constantan"
+  },
+  "output": {
+    "amount": 144,
+    "tag": "forge:constantan"
+  }
+}

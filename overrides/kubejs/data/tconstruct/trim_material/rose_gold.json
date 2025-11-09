@@ -1,0 +1,14 @@
+{
+  "asset_name": "tconstruct_rose_gold",
+  "description": {
+    "color": "#F7CDBB",
+    "translate": "trim_material.tconstruct.format",
+    "with": [
+      {
+        "translate": "material.tconstruct.rose_gold"
+      }
+    ]
+  },
+  "ingredient": "gtceu:rose_gold_ingot",
+  "item_model_index": 0.1
+}

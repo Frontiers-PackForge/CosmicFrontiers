@@ -9,7 +9,7 @@
 		tag: { }
 	}
 	id: "4BD032111E85E14A"
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -219,5 +219,5 @@
 			y: -12.0d
 		}
 	]
-	title: "Space Tiers"
+	title: "&fSpace Tiers"
 }

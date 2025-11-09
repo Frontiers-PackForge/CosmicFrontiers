@@ -7,6 +7,7 @@ let cosmic = ['cosmiccore:suelescent_processor', 'cosmiccore:suelescent_processo
 let akashic = ['cosmiccore:akashic_processor', 'cosmiccore:akashic_processor_assembly', 'cosmiccore:akashic_processor_supercomputer', 'cosmiccore:akashic_processor_mainframe']
 let eschaton = ['cosmiccore:eschaton_processor', 'cosmiccore:eschaton_processor_assembly', 'cosmiccore:eschaton_processor_supercomputer', 'cosmiccore:eschaton_processor_mainframe']
 let boilaway = ['gtceu:bronze_large_boiler', 'gtceu:steel_large_boiler', 'gtceu:titanium_large_boiler', 'gtceu:tungstensteel_large_boiler']
+let hex = ['cosmiccore:hex_processor', 'cosmiccore:hex_processor_assembly', 'cosmiccore:hex_processor_supercomputer', 'cosmiccore:hex_processor_mainframe']
 ItemEvents.tooltip(event => {
   // event.add('gtceu:manasteel_single_cable', Text.of('LV Superconductor'))
   event.addAdvanced('forbidden_arcanus:eternal_stella', (item, advanced, text) => {
@@ -18,6 +19,22 @@ ItemEvents.tooltip(event => {
   //BOILER WARNING : 
   event.addAdvanced(boilaway, (item, advanced, text) => {
     text.add(1, Text.of('Deprecated - Recipes will still run in Large Boilers, But come 0.6.0 the recipe map and recipes will be removed for the steam age overhaul').gray())
+  })
+    //HEX CIRCUITS[, , , ]
+  event.addAdvanced(hex, (item, advanced, text) => {
+    text.add(1, Text.of('Circuits of Arcane Logic').gray())
+  })
+  event.addAdvanced('cosmiccore:hex_processor', (item, advanced, text) => {
+    text.add(2, Text.of('MV-Tier Circuit').gold())
+  })
+  event.addAdvanced('cosmiccore:hex_processor_assembly', (item, advanced, text) => {
+    text.add(2, Text.of('HV-Tier Circuit').gold())
+  })
+  event.addAdvanced('cosmiccore:hex_processor_supercomputer', (item, advanced, text) => {
+    text.add(2, Text.of('EV-Tier Circuit').gold())
+  })
+  event.addAdvanced('cosmiccore:hex_processor_mainframe', (item, advanced, text) => {
+    text.add(2, Text.of('IV-Tier Circuit').gold())
   })
   //ECHO CIRCUITS
   event.addAdvanced(echo, (item, advanced, text) => {
@@ -330,7 +347,48 @@ ItemEvents.tooltip(event => {
     }
   })
 
+  event.addAdvanced('cosmiccore:honey_alveary', (item, advanced, text) => {
+    text.add(1, Text.of('Multiblock Classification: The Great Hive').aqua().bold())
+    text.add(2, Text.of('What is all that noise!? AGAIN!?!?!').white().bold())
+    text.add(3, Text.of('Automatically take care of your bee needs!'))
+    if (event.isShift()) {
+      text.add(4, Text.of('-------------------------------------------').aqua())
+      text.add(5, [Text.of('Consumes Nutrient Boosters to Speed Up and Multiply Production Rates!').white()])
+      text.add(6, [Text.of('Overclock Nutrient reduces time between yields.').gray()])
+      text.add(7, [Text.of('Production Nutrient multiplies comb yields.').gray()])
+      text.add(8, Text.of('-------------------------------------------').aqua())
+      text.add(9, Text.of('Credits:'))
+      text.add(10, Text.of('Major Code Contributors:').aqua())
+      text.add(11, Text.of('JurreJelle').white())
+      text.add(12, [Text.of('Art & UI: ').gold(), Text.of('Ghostipedia').white()])
+    } else {
+      text.add(4, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+  })
 
+})
+
+ItemEvents.tooltip(event => {
+
+  event.addAdvanced('legendarysurvivaloverhaul:purified_water_bottle', (item, advanced, text) => {
+    text.add(1, Text.of('Recipes Do Not Work In Iron Furnaces').red())
+  })
+  //ender tanks/chests
+  event.addAdvanced('endertanks:ender_tank', (item, advanced, text) => {
+    if (event.isShift()) {
+    text.add(2, [Text.of('Capacity: ').aqua(), Text.of('LV Field Generator, 8B Per').gray(), Text.of(' Or ').gold(), Text.of('MV Field Generator, 32B Per, Max').gray().gray(), Text.of(' 256B ').gold()])
+    text.add(3, [Text.of('Pump Speed: ').aqua(), Text.of('LV Electric Piston, 1B Per, Max').gray(), Text.of(' 4B ').gold()])
+    } else {
+      text.add(2, [Text.of('Can be upgraded, Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+  })
+  event.addAdvanced('enderchests:ender_chest', (item, advanced, text) => {
+    if (event.isShift()) {
+    text.add(2, [Text.of('Inventory Slots: ').aqua(), Text.of('LV Field Generator, 3 Slots Per').gray(), Text.of(' Or ').gold(), Text.of('MV Field Generator, 9 Slots Per, Max').gray(), Text.of(' 27 ').gold()])
+    } else {
+      text.add(2, [Text.of('Can be upgraded, Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+  })
 
 })
 
@@ -343,9 +401,31 @@ ItemEvents.tooltip(event => {
 
 })
 
+  event.addAdvanced("tconstruct:luck", (item, advanced, text) => {
+    text.add(1, Text.of('Fortune does not work on GT Ores').red().italic())
+  })
 ItemEvents.tooltip(event => {
   event.addAdvanced(/sophisticatedbackpacks:(.*)/, (item, advanced, text) => {
     text.add(1, Text.of('DEPRECATED DEPRECATED DEPRECATED').red().italic())
     text.add(2, Text.of('MOD REMOVAL IN 0.9.0').red().bold())
+  })
+})
+
+
+ItemEvents.tooltip(event => {
+  event.addAdvanced(/biomancy:(.*)/, (item, advanced, text) => {
+    text.add(1, Text.of('Coming Soon - In Dev').red().italic())
+  })
+})
+
+ItemEvents.tooltip(event => {
+  event.addAdvanced(/embers:(.*)/, (item, advanced, text) => {
+    text.add(1, Text.of('Coming Soon - In Dev').red().italic())
+  })
+})
+
+ItemEvents.tooltip(event => {
+  event.addAdvanced(/forestry:(.*)/, (item, advanced, text) => {
+    text.add(1, Text.of('Coming Soon - In Dev').red().italic())
   })
 })

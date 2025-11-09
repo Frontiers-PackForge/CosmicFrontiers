@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
 
 
     //ATMO SIPHONS
-      event.recipes.gtceu.atmo_siphon('atmo_overworld')
+    event.recipes.gtceu.atmo_siphon('atmo_overworld')
         .circuit(1)
         .outputFluids('gtceu:helium 100000')
         .outputFluids('gtceu:argon 50000')
@@ -214,6 +214,17 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:xenon 2500')
         .outputFluids('gtceu:neon 5000')
         .duration(1230)
+        .EUt(GTValues.VA[GTValues.ZPM])
+
+    //ATMO SIPHONS
+    event.recipes.gtceu.atmo_siphon('atmo_nether')
+        .circuit(2)
+        .outputFluids('gtceu:carbon_monoxide 3500000')
+        .outputFluids('gtceu:coal_gas 1000000')
+        .outputFluids('gtceu:sulfur_dioxide 250000')
+        .outputFluids('gtceu:neon 125000')
+        .outputFluids('gtceu:helium 50000')
+        .duration(850)
         .EUt(GTValues.VA[GTValues.ZPM])
 
 })

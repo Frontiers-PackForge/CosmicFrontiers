@@ -1,0 +1,26 @@
+{
+  "type": "embers:mixing",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ingots/electrum"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "amount": 2,
+      "tag": "forge:silver"
+    },
+    {
+      "amount": 2,
+      "tag": "forge:gold"
+    }
+  ],
+  "output": {
+    "amount": 4,
+    "tag": "forge:electrum"
+  }
+}

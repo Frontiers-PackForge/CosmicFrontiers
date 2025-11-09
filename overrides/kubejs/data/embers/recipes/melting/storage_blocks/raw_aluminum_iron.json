@@ -1,0 +1,28 @@
+{
+  "type": "embers:melting",
+  "bonus": {
+    "amount": 144,
+    "tag": "forge:iron"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:storage_blocks/raw_aluminum"
+          }
+        }
+      ]
+    }
+  ],
+  "input": {
+    "tag": "forge:storage_blocks/raw_aluminum"
+  },
+  "output": {
+    "amount": 1080,
+    "tag": "forge:aluminum"
+  }
+}

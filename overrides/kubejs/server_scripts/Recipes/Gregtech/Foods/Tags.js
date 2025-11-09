@@ -10,6 +10,17 @@ ServerEvents.tags('item', event => {
     event.add('forge:onions', 'farmersdelight:onion')
     event.add('forge:dough', 'farmersdelight:wheat_dough')
     event.add('forge:doughs', 'gtceu:dough')
+    event.add('forge:tentacles', [
+        'crabbersdelight:raw_squid_tentacles',
+        'crabbersdelight:raw_glow_squid_tentacles',
+        'oceansdelight:tentacles',
+        'oceansdelight:cut_tentacles',
+    ])
+    event.add('forge:golden_apple_slices', [
+        'some_assembly_required:golden_apple_slices',
+        'vanilladelight:golden_apple_slice'
+    ])
+
     event.remove('forge:oat', 'vintagedelight:oat') //this removes vintagedelight oat from one recipe (oat cutting) 
 
     event.removeAll('diet:special_food') // Slicer recipes add nutrition to them already, keeping them in this tag makes it do double nutrition
@@ -34,14 +45,29 @@ ServerEvents.tags('item', event => {
     mana('aether:golden_gummy_swet')
     mana('aether:enchanted_berry')
     mana('malum:runic_sap')
-    mana('ars_nouveau:source_berry_roll')
-    mana('ars_nouveau:source_berry_pie')
     mana('ars_nouveau:sourceberry_bush')
     mana('ars_nouveau:bastion_pod')
     mana('ars_nouveau:bombegranate_pod')
     mana('ars_nouveau:frostaya_pod')
     mana('ars_nouveau:mendosteen_pod')
     mana('minecraft:enchanted_golden_apple')
+    mana('arsdelight:source_berry_cookie') 
+    mana(/arsdelight:(.*)_jelly/)
+    mana(/arsdelight:(.*)_pie_slice/)
+    mana(/arsdelight:(.*)_meat/)
+    mana(/arsdelight:(.*)_meat_slice/)
+    mana(/arsdelight:(.*)_skewer/) 
+    mana(/arsdelight:(.*)_stew/)
+    mana(/arsdelight:(.*)_sauce/)
+    mana(/arsdelight:(.*)_soup/)
+    mana(/arsdelight:(.*)_cupcake/)
+    mana(/arsdelight:(.*)_roll/)
+    mana(/arsdelight:(.*)_chicken/)
+    mana(/arsdelight:(.*)_pork/)
+    mana(/arsdelight:(.*)_steak/)
+    mana(/arsdelight:(.*)_mutton/)
+    mana(/arsdelight:(.*)_salad/)
+    mana(/arsdelight:(.*)_chimera/) 
 
     psi('gtceu:basic_electronic_circuit')
     psi('gtceu:purple_drink')
@@ -57,6 +83,8 @@ ServerEvents.tags('item', event => {
     proteins('nethersdelight:hoglin_ear')
     proteins('nethersdelight:strider_slice')
     proteins('occultism:beaver_nugget')
+    proteins('arsdelight:bowl_of_honey_glazed_chimera')  
+    proteins('oceanic_delight:salmon_eggs')  
 
     vegetables('legendarysurvivaloverhaul:beetroot_juice')
     vegetables('legendarysurvivaloverhaul:cactus_juice')
@@ -67,6 +95,7 @@ ServerEvents.tags('item', event => {
     vegetables('undergarden:mogmoss')
     vegetables('undergarden:blue_mogmoss')
     vegetables('undergarden:glitterkelp')
+    vegetables('arsdelight:bowl_of_wilden_salad') 
 
     fruits('legendarysurvivaloverhaul:apple_juice')
     fruits('legendarysurvivaloverhaul:chorus_fruit_juice')
@@ -89,6 +118,8 @@ ServerEvents.tags('item', event => {
     fruits('occultism:datura')
     fruits('undergarden:droopvine_item')
     fruits('nethersdelight:propelpearl')
+    fruits('arsdelight:bowl_of_honey_glazed_chimera') 
+    fruits('arsdelight:bowl_of_wilden_salad') 
 
     sugars('aether:candy_cane')
     sugars('aether:gingerbread_man')
@@ -103,6 +134,7 @@ ServerEvents.tags('item', event => {
     sugars('legendarysurvivaloverhaul:golden_apple_juice')
     sugars('legendarysurvivaloverhaul:melon_juice')
     sugars('legendarysurvivaloverhaul:pumpkin_juice')
+    sugars('arsdelight:bowl_of_honey_glazed_chimera') 
 
     grains('aether:gingerbread_man')
     grains('gtceu:dough')

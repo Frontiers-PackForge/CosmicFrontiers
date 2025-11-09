@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ingots/bronze"
+      }
+    }
+  ],
+  "input": {
+    "tag": "forge:ingots/bronze"
+  },
+  "output": {
+    "amount": 144,
+    "tag": "forge:bronze"
+  }
+}

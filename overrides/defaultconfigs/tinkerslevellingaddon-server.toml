@@ -27,16 +27,16 @@
 	staffStatGainingMethod = "NONE"
 	#Maximum tool level that could be achieved. If set to 0 there is no upper limit.
 	#Range: > 0
-	maxLevel = 50
+	maxLevel = 0
 	#Base amount of experience required to reach next level.
 	#Range: > 1
 	baseExperience = 500
 	#How much the amount of experience required to reach next level will be multiplied per level.
 	#Range: 1.0 ~ 10.0
-	requiredXpMultiplier = 2.0
+	requiredXpMultiplier = 1.5
 	#Additional multiplier for broad tools for experience required to level up.
 	#Range: 1.0 ~ 10.0
-	broadToolRequiredXpMultiplier = 3.0
+	broadToolRequiredXpMultiplier = 2.0
 
 	#Modifier slots settings
 	[general.slots]
@@ -230,15 +230,15 @@
 		#Range: > 0
 		attacking = 0
 		#Range: > 0
-		shooting = 0
+		shooting = 9
 		#Range: > 0
-		takingDamage = 0
+		takingDamage = 5
 		#Range: > 0
 		blockingDamage = 0
 		#As with Thorns damage calculations, this is the upper bound of the bonus experience that could be granted.
 		#For example, for the value of 3 (default), we get: 1 (base xp) + 0 to 3 (bonus xp) = 1 to 4 (result xp)
 		#Range: > 0
-		thorns = 3
+		thorns = 10
 		#Range: > 0
 		flying = 0
 		#Range: > 0

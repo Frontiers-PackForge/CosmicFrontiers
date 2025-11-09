@@ -14,7 +14,7 @@ yeet('createdeco:industrial_iron_sheet')
 yeet('createdeco:industrial_iron_nugget')
 yeet('createdeco:netherite_sheet')
 yeet('createdeco:netherite_nugget')
-
+yeet('copycats:copycat_fluid_pipe') //crashes the game when looking at the pipe while it has running fluid, copycats+ ver 3.0.2
 
 ServerEvents.recipes(event => {
     event.replaceInput({ mod: 'createdeco' },

@@ -346,11 +346,23 @@ ServerEvents.recipes(event => {
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
   //Energy Cell
-  event.recipes.gtceu.assembler('ae2:cell_assem')
+  event.recipes.gtceu.assembler('ae2:cell_assem_t1')
     .itemInputs(['4x gtceu:steel_plate', '4x ae2:charged_certus_quartz_crystal', 'ae2:energy_acceptor', '#gtceu:batteries/lv'])
     .itemOutputs('ae2:energy_cell')
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
+  //Energy Cell 4x
+  event.recipes.gtceu.assembler('ae2:cell_assem_t2')
+    .itemInputs(['4x gtceu:stainless_steel_plate', '4x ae2:charged_certus_quartz_crystal', '4x ae2:energy_acceptor', '#gtceu:batteries/hv'])
+    .itemOutputs('4x ae2:energy_cell')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.HV])
+  //Energy Cell 8x
+  event.recipes.gtceu.assembler('ae2:cell_assem_t3')
+    .itemInputs(['4x gtceu:tungsten_steel_plate', '4x ae2:charged_certus_quartz_crystal', '8x ae2:energy_acceptor', '#gtceu:batteries/iv'])
+    .itemOutputs('8x ae2:energy_cell')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.IV])
   //Dense cell
   event.recipes.gtceu.assembler('ae2:dense_cell_assem')
     .itemInputs(['8x ae2:energy_cell', '16x gtceu:galvanized_ethersteel_plate', '32x gtceu:electrum_foil', '8x gtceu:terrasteel_double_wire'])
@@ -385,11 +397,23 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.MV]);
   //Acceptor
   event.remove({ output: 'ae2:energy_acceptor' })
-  event.recipes.gtceu.assembler('ae2:acceptor_assembly')
+  event.recipes.gtceu.assembler('ae2:acceptor_assembly_t1')
     .itemInputs(['6x gtceu:steel_plate', '4x gtceu:lv_voltage_coil', '4x #gtceu:circuits/lv', 'gtceu:lv_machine_hull'])
     .itemOutputs('ae2:energy_acceptor')
     .duration(160)
     .EUt(GTValues.VA[GTValues.LV]);
+  //Acceptor 4x
+  event.recipes.gtceu.assembler('ae2:acceptor_assembly_t2')
+    .itemInputs(['6x gtceu:stainless_steel_plate', '4x gtceu:hv_voltage_coil', '4x #gtceu:circuits/hv', 'gtceu:hv_machine_hull'])
+    .itemOutputs('4x ae2:energy_acceptor')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.HV])
+  //Acceptor 8x
+  event.recipes.gtceu.assembler('ae2:acceptor_assembly_t3')
+    .itemInputs(['6x gtceu:tungsten_steel_plate', '4x gtceu:iv_voltage_coil', '4x #gtceu:circuits/iv', 'gtceu:iv_machine_hull'])
+    .itemOutputs('8x ae2:energy_acceptor')
+    .duration(160)
+    .EUt(GTValues.VA[GTValues.IV])
   //Controller
   event.recipes.gtceu.circuit_assembler('ae2:controller_assembly')
     .itemInputs(['4x gtceu:manasteel_hex_wire', '4x #gtceu:circuits/mv', '4x malum:cluster_of_brilliance', 'ae2:energy_acceptor'])
@@ -574,42 +598,56 @@ ServerEvents.recipes(event => {
     .duration(15)
     .EUt(GTValues.VA[GTValues.MV]);
   //Patterns bc apparently we lost em
-  event.recipes.gtceu.assembler('pattern_recipe')
+  event.recipes.gtceu.assembler('pattern_recipe_hv')
     .itemInputs(['32x gtceu:fine_galvanized_ethersteel_wire', '16x gtceu:stainless_steel_plate', '2x #gtceu:circuits/hv', 'gtceu:diamond_lens'])
     .inputFluids(`gtceu:soldering_alloy 576`)
     .itemOutputs('8x ae2:blank_pattern')
     .duration(90)
     .EUt(GTValues.VA[GTValues.HV]);
+  //Patterns use IV material, 4x
+  event.recipes.gtceu.assembler('pattern_recipe_iv')
+    .itemInputs(['32x gtceu:fine_virtue_meld_wire', '16x gtceu:tungsten_steel_plate', '2x #gtceu:circuits/iv', 'gtceu:diamond_lens'])
+    .inputFluids('gtceu:soldering_alloy 576')
+    .itemOutputs('32x ae2:blank_pattern')
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.IV])
+  //Patterns use LuV material, 8x
+  event.recipes.gtceu.assembler('pattern_recipe_luv')
+    .itemInputs(['32x cosmiccore:fine_prismatic_tungstensteel_wire', '16x gtceu:rhodium_plated_palladium_plate', '2x #gtceu:circuits/luv', 'gtceu:diamond_lens'])
+    .inputFluids('gtceu:soldering_alloy 576')
+    .itemOutputs('64x ae2:blank_pattern')
+    .duration(90)
+    .EUt(GTValues.VA[GTValues.LuV])
 
   //Extended Ae2
   event.recipes.gtceu.assembler('extended_interface')
-    .itemInputs(['4x ae2:interface', '4x gtceu:titanium_plate', '#gtceu:circuits/ev'])
+    .itemInputs(['ae2:interface', '8x cosmiccore:hv_wildfire_core', '#gtceu:circuits/ev'])
     .inputFluids(`gtceu:soldering_alloy 576`)
     .itemOutputs('expatternprovider:ex_interface')
     .circuit(1)
     .duration(90)
-    .EUt(GTValues.VA[GTValues.EV]);
+    .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.assembler('extended_provider')
-    .itemInputs(['4x ae2:pattern_provider', '4x gtceu:titanium_plate', '#gtceu:circuits/ev'])
+    .itemInputs(['ae2:pattern_provider', '8x cosmiccore:hv_wildfire_core', '#gtceu:circuits/ev'])
     .inputFluids(`gtceu:soldering_alloy 576`)
     .itemOutputs('expatternprovider:ex_pattern_provider')
     .circuit(1)
     .duration(90)
-    .EUt(GTValues.VA[GTValues.EV]);
+    .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.assembler('extended_interface_upgrade')
-    .itemInputs(['3x ae2:interface', '4x gtceu:titanium_plate', '#gtceu:circuits/ev'])
+    .itemInputs(['8x cosmiccore:hv_wildfire_core', '#gtceu:circuits/ev'])
     .inputFluids(`gtceu:soldering_alloy 576`)
     .itemOutputs('expatternprovider:interface_upgrade')
     .circuit(2)
     .duration(90)
-    .EUt(GTValues.VA[GTValues.EV]);
+    .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.assembler('extended_provider_upgrade')
-    .itemInputs(['3x ae2:pattern_provider', '4x gtceu:titanium_plate', '#gtceu:circuits/ev'])
+    .itemInputs(['8x cosmiccore:hv_wildfire_core', '#gtceu:circuits/ev'])
     .inputFluids(`gtceu:soldering_alloy 576`)
     .itemOutputs('expatternprovider:pattern_provider_upgrade')
-    .circuit(2)
+    .circuit(3)
     .duration(90)
-    .EUt(GTValues.VA[GTValues.EV]);
+    .EUt(GTValues.VA[GTValues.HV]);
 
   //extended buses
   event.recipes.gtceu.assembler('extended_bus_upgrade_kit')
@@ -1035,11 +1073,18 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.assembler(`betterp2p:advanced_memory_card_assembly`)
     .itemInputs('ae2:memory_card')
     .itemInputs('ae2netanalyser:network_analyser')
-    .itemInputs('ae2:cell_component_64k')
+    .itemInputs('ae2:cell_component_4k')
     .itemOutputs('betterp2p:advanced_memory_card')
     .duration(400)
-    .EUt(GTValues.VA[GTValues.EV])
+    .EUt(GTValues.VA[GTValues.MV])
 
+    
+  //certus block
+  event.recipes.gtceu.compressor(`gtceu:certus_quartz_block`)
+    .itemInputs('4x gtceu:certus_quartz_gem')
+    .itemOutputs('gtceu:certus_quartz_block')
+    .duration(200)
+    .EUt(24);
 
 
 

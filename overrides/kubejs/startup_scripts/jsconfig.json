@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "skipDefaultLibCheck": true,
+        "types": [
+            "../../.probe/startup/packages",
+            "../../.probe/startup/global",
+            "../../.probe/shared"
+        ],
+        "lib": [
+            "ES5",
+            "ES2015"
+        ],
+        "skipLibCheck": true,
+        "composite": true,
+        "module": "commonjs",
+        "isolatedModules": true,
+        "rootDir": ".",
+        "moduleResolution": "classic",
+        "incremental": true,
+        "allowJs": true,
+        "target": "ES2015"
+    },
+    "include": [
+        "./**/*.js"
+    ]
+}

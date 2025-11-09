@@ -2,9 +2,9 @@
 GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('trinium_tetraoxide_dichloride')
-    .dust()
-    .formula("KeO4Cl2")
-    .color(0x6b4b6e).iconSet(GTMaterialIconSet.DULL)
+        .dust()
+        .formula("KeO4Cl2")
+        .color(0x6b4b6e).iconSet(GTMaterialIconSet.DULL)
 
     event.create('alumina')
         .dust()
@@ -72,11 +72,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('phosphorus_trichloride')
         .liquid()
         .color(0xb38a2d).iconSet(GTMaterialIconSet.DULL)
-        // di(2_ethylhexyl)_phosphite
+    // di(2_ethylhexyl)_phosphite
     event.create('di_2_ethylhexyl_phosphite')
+        .formula('C16H35O4P')
         .liquid()
         .color(0xd4c23d).iconSet(GTMaterialIconSet.DULL)
-        //di(2_ethylhexyl)_phosphorochloridate
+    //di(2_ethylhexyl)_phosphorochloridate
     event.create('di_2_ethylhexyl_phosphorochloridate')
         .liquid()
         .color(0xc5d43d).iconSet(GTMaterialIconSet.DULL)
@@ -92,8 +93,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x2694d4).iconSet(GTMaterialIconSet.DULL)
     //Cyanex-272
     event.create('cyanex_272')
+        .formula('C16H35O2P')
         .liquid()
-        .color(0xf5f5f5).iconSet(GTMaterialIconSet.DULL)
+        .color(0x346eeb).iconSet(GTMaterialIconSet.DULL)
     event.create('tert_butanol')
         .liquid()
         .color(0xf5f5f5).iconSet(GTMaterialIconSet.DULL)
@@ -120,12 +122,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xf5f5f5).iconSet(GTMaterialIconSet.DULL)
     //Guh
     event.create('crude_source_oils')
-    .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-    .color(0xe642f5)
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .color(0xe642f5)
+
+    event.create('smoldering_steam')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill().temperature(680))
+    event.create('ashdew_steam')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill().temperature(1355))
     //Nether Bioslurry
     event.create('nether_bioslurry')
-    .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-    .color(0xe642f5)
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .color(0xe642f5)
 
 })
 
@@ -134,4 +141,3 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('sodium_hypophosphite').setFormula('NaPO₂H₂', true)
     GTMaterials.get('ferric_alumina').setFormula('FeAl₂O₃', true)
 })
-    

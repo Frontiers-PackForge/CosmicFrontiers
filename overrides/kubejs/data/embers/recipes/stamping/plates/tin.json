@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:plates/tin"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 144,
+    "tag": "forge:tin"
+  },
+  "output": {
+    "tag": "forge:plates/tin"
+  },
+  "stamp": {
+    "item": "embers:plate_stamp"
+  }
+}

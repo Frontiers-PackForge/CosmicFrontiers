@@ -1,4 +1,16 @@
 
+let yeet = (itemName) => {
+       ServerEvents.recipes(event => {
+              event.remove({ output: itemName })
+       })
+       ServerEvents.tags('item', event => {
+              console.log('[5] - [1] - TAG-WATCHER')
+              event.add('c:hidden_from_recipe_viewers', itemName)
+
+       })
+}
+yeet('legendarysurvivaloverhaul:seasonal_calendar')
+
 ServerEvents.compostableRecipes(event => {
     event.add(Item.of('legendarysurvivaloverhaul:ice_fern_seeds'), 0.3)
     event.add(Item.of('legendarysurvivaloverhaul:sun_fern_seeds'), 0.3)
@@ -110,4 +122,45 @@ ServerEvents.recipes(event => {
         S: '#minecraft:wooden_slabs',
         R: 'minecraft:redstone_dust'
     })
+    //boiler
+    event.remove({ id: 'legendarysurvivaloverhaul:heater' }) 
+    event.shaped( 'legendarysurvivaloverhaul:heater', [
+        ' A ',
+        'AFA',
+        'SCS'
+    ], {
+        A: 'gtceu:copper_plate',
+        F: 'minecraft:campfire',
+        S: 'gtceu:iron_plate',
+        C: 'minecraft:coal_block'
+    })
+    //icebox
+    event.remove({ id: 'legendarysurvivaloverhaul:cooler' }) 
+    event.shaped( 'legendarysurvivaloverhaul:cooler', [
+        'ASA',
+        'ARA',
+        'EAE'
+    ], {
+        A: 'gtceu:treated_wood_planks',
+        R: 'minecraft:redstone_torch',
+        S: 'gtceu:ice_dust',
+        E: 'gtceu:iron_plate',
+    })
+       event.recipes.gtceu.spooling_machine('cold_string')
+              .itemInputs(['minecraft:string', 'legendarysurvivaloverhaul:ice_fern_leaf'])
+              .itemOutputs('legendarysurvivaloverhaul:cold_string')
+              .duration(40)
+              .EUt(8)
+       event.recipes.gtceu.spooling_machine('warm_string')
+              .itemInputs(['minecraft:string', 'legendarysurvivaloverhaul:sun_fern_leaf'])
+              .itemOutputs('legendarysurvivaloverhaul:warm_string')
+              .duration(40)
+              .EUt(8)
+    //fern seeds from crops
+    event.shapeless('legendarysurvivaloverhaul:sun_fern_seeds', [
+        'legendarysurvivaloverhaul:sun_fern_leaf'
+    ])
+    event.shapeless('legendarysurvivaloverhaul:ice_fern_seeds', [
+        'legendarysurvivaloverhaul:ice_fern_leaf'
+    ])
 })

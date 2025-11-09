@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:gears/constantan"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 576,
+    "tag": "forge:constantan"
+  },
+  "output": {
+    "tag": "forge:gears/constantan"
+  },
+  "stamp": {
+    "item": "embers:gear_stamp"
+  }
+}

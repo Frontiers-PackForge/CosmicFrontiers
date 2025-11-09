@@ -33,6 +33,8 @@ StartupEvents.registry('item', event => {
     event.create('magicianbloodorb_frame').displayName('Magician Blood Orb Frame')
     event.create('masterbloodorb_frame').displayName('Master Blood Orb Frame')
     event.create('archmagebloodorb_frame').displayName('Archmage Blood Orb Frame')
+    event.create('taranium_resonantion_charge').displayName('Taranium Resonantion Charge')
+    event.create('naquadria_resonantion_charge').displayName('Naquadria Resonantion Charge')
     event.create('t2_rocket_plating')
     event.create('welded_rocket_plating_mk2').displayName('Welded Rocket Plating Mk.2')
     event.create('chromatically_doped_nether_star_boule').glow(true).displayName('Chromatically Doped Nether star Boule')
@@ -47,6 +49,8 @@ StartupEvents.registry('item', event => {
     event.create('seal_shards').displayName('Shards of the Underworld')
     event.create('cosmic_meatballs').displayName('Cosmic Meatballs')
     event.create('prismatic_lens').displayName('Prismatic Lens')
+
+    event.create('cinder_fuel_pellets').displayName('Cinder Fuel Ember Pellets')
 
     event.create('reinforced_respirator', 'helmet').displayName('Reinforced Respirator').maxDamage(1024).modifyTier(tier => 'breather')
 

@@ -15,14 +15,25 @@
 		}
 	}
 	id: "587D4E7488759F63"
-	images: [{
-		height: 3.5d
-		image: "frontiers:textures/questimages/miscicons/wingedborder.png"
-		rotation: 0.0d
-		width: 3.5d
-		x: 1.0714285714285694d
-		y: 8.488095238095234d
-	}]
+	images: [
+		{
+			height: 1.5d
+			image: "frontiers:textures/questimages/miscicons/blank_borders.png"
+			order: 10
+			rotation: 90.0d
+			width: 4.0d
+			x: 1.0d
+			y: 10.5d
+		}
+		{
+			height: 2.5d
+			image: "frontiers:textures/questimages/miscicons/lv.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 9.0d
+			y: -2.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -577,9 +588,9 @@
 			description: [
 				"Steam is arguably the worst method of generating power due to its low EU density per millibucket."
 				""
-				"You’ll want to move away from steam power as soon as possible. You can continue using it if you really want to, but it’s not recommended."
+				"Steam has been slightly improved but still poses logistic problems due to pipe size limitations."
 				""
-				"Unfortunately, it is the only option at first that makes sense."
+				"You can circumvent this with AE2 storage busses and interfaces, but that'll get expensive fast."
 			]
 			id: "2DC12827E0DB45CC"
 			rewards: [{
@@ -613,7 +624,7 @@
 			rewards: [{
 				count: 4
 				id: "6AA6AC202CA12144"
-				item: "ad_astra:ice_shard"
+				item: "cosmiccore:shard_of_perpetuity"
 				type: "item"
 			}]
 			subtitle: "The 2nd step"
@@ -851,7 +862,7 @@
 			}]
 			title: "Better Power Sources"
 			x: -6.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3DFF24F1BAF0B341"]
@@ -873,33 +884,11 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -0.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["3DFF24F1BAF0B341"]
-			description: [
-				"Benzene can be a reliable fuel source early on if you’re willing to invest in it."
-				""
-				"You can produce it by extracting &acharcoal&r into &awood tar&r and then distilling the tar into &abenzene&r in MV, but for now you can use steam cracked light oil."
-			]
-			id: "4D7E9F896A899416"
-			min_width: 300
-			rewards: [{
-				id: "426CB03B979D9830"
-				item: "cosmiccore:large_shard_of_perpetuity"
-				type: "item"
-			}]
-			subtitle: "Wood Good"
-			tasks: [{
-				id: "369884EF9359A9F4"
-				item: "gtceu:benzene_bucket"
-				type: "item"
-			}]
-			x: -7.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["4D7E9F896A899416"]
+			dependencies: ["7C76C174D8CC747D"]
+			dependency_requirement: "one_completed"
 			description: [
 				"&aGas Turbines&r will burn any gas fuel to produce &eEU&r."
 				"Each generator produces &a1 Amp&r of power."
@@ -917,7 +906,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: 0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["10EA8761CF143417"]
@@ -938,7 +927,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: -0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2AA8C5151457CB01"]
@@ -1330,8 +1319,8 @@
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 7.5d
+			x: -1.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -1365,7 +1354,7 @@
 			dependencies: [
 				"5C6575216349AB84"
 				"333BADC53E165610"
-				"5B4BF323B68CAC96"
+				"1C13BC3E9AA4F07E"
 			]
 			description: ["Congrats on getting through LV, you're almost ready to move onto MV, i would recommend improving your gear before moving forward"]
 			id: "1187EE2E425DD12B"
@@ -1384,7 +1373,7 @@
 			}]
 			title: "&fAlmost Ready for MV"
 			x: 1.0d
-			y: 8.535714285714292d
+			y: 10.535714285714292d
 		}
 		{
 			dependencies: [
@@ -1514,79 +1503,6 @@
 			}]
 			x: -1.5d
 			y: 6.5d
-		}
-		{
-			dependencies: ["2ABCB641104E43EC"]
-			description: [
-				"Rose gold allows the creation of gold coated storage upgrades and backpacks!"
-				"Go upgrade your chests!"
-			]
-			id: "1E2024C4083F2E46"
-			rewards: [{
-				count: 16
-				id: "7393CC9EDF34A060"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
-			subtitle: "Gold Upgrade!"
-			tasks: [{
-				id: "1684074E134AB7FE"
-				item: "gtceu:rose_gold_ingot"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["1E2024C4083F2E46"]
-			description: [
-				"Has more upgrade slots and storage than an iron chest."
-				"Remember you can transport sophisticated storage containers around if you wrap them using &etape&r."
-			]
-			icon: "sophisticatedstorage:basic_to_gold_tier_upgrade"
-			id: "623E9E16422D7D82"
-			rewards: [{
-				count: 16
-				id: "6EF02E5450CB4BA0"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
-			shape: "gear"
-			subtitle: "Better chests"
-			tasks: [{
-				id: "1922FD684D826DCB"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(sophisticatedstorage:basic_to_gold_tier_upgrade)item(sophisticatedstorage:copper_to_gold_tier_upgrade)item(sophisticatedstorage:iron_to_gold_tier_upgrade))"
-					}
-				}
-				type: "item"
-			}]
-			title: "Gold Storage Upgrades"
-			x: 7.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["1E2024C4083F2E46"]
-			description: ["Has more upgrade slots and storage than an iron backpack, and piglins will ignore you!"]
-			id: "5A3505D36A318205"
-			rewards: [{
-				count: 16
-				id: "142FCD5E047A5921"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
-			shape: "gear"
-			subtitle: "Better Backpack"
-			tasks: [{
-				id: "32F38C9EF23969B9"
-				item: "sophisticatedbackpacks:gold_backpack"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 2.0d
 		}
 		{
 			dependencies: ["07BBA5C211143D67"]
@@ -1726,7 +1642,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["7DF6C7E855FF9CD9"]
@@ -1759,8 +1675,8 @@
 				}
 			]
 			title: "Manasteel Cables"
-			x: -1.0d
-			y: 7.5d
+			x: 0.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["69032BA5838613C8"]
@@ -1797,8 +1713,8 @@
 				title: "Travel to the Aether"
 				type: "dimension"
 			}]
-			x: 0.0d
-			y: 11.0d
+			x: 1.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["333BADC53E165610"]
@@ -1821,14 +1737,11 @@
 				item: "cosmiccore:plated_aerocloud"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 11.0d
+			x: 5.5d
+			y: 14.5d
 		}
 		{
-			dependencies: [
-				"1187EE2E425DD12B"
-				"09A62C4DA9DBF45A"
-			]
+			dependencies: ["1187EE2E425DD12B"]
 			icon: "createdeco:decal_up"
 			id: "738518B9A3484AC1"
 			rewards: [{
@@ -1851,8 +1764,8 @@
 				type: "checkmark"
 			}]
 			title: "To MV!"
-			x: -1.011904761904752d
-			y: 9.738095238095255d
+			x: 2.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["040A441E24915620"]
@@ -1878,7 +1791,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["01E8872C0129F82F"]
@@ -1897,7 +1810,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["3ABBC800E5AB71B7"]
@@ -1942,7 +1855,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["09A62C4DA9DBF45A"]
+			dependencies: ["738518B9A3484AC1"]
 			description: [
 				"Something was here, but I can’t remember."
 				""
@@ -1974,8 +1887,8 @@
 				}
 			]
 			title: "Consistent Headaches"
-			x: -2.0d
-			y: 11.0d
+			x: 2.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1FA44E93D85C2671"]
@@ -2062,8 +1975,8 @@
 				type: "checkmark"
 			}]
 			title: "Surviving the Frost"
-			x: 0.0d
-			y: 12.5d
+			x: -1.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["310A5BD05D1C60AB"]
@@ -2105,7 +2018,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["5D5C773CC6B64168"]
@@ -2189,23 +2102,49 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["7DF6C7E855FF9CD9"]
-			description: ["Annealed Manasteel is useful for MV machine hulls, as it can handle higher currents than regular Manasteel."]
-			id: "5B4BF323B68CAC96"
-			rewards: [{
-				count: 16
-				id: "5C332369E5C243B3"
-				item: "cosmiccore:shard_of_perpetuity"
+			dependencies: [
+				"3DFF24F1BAF0B341"
+				"10EA8761CF143417"
+			]
+			description: ["While only a little stronger than light fuel, Cinder fuel works in gas turbines which are generally cheaper than the combustion generators"]
+			id: "7C76C174D8CC747D"
+			shape: "hexagon"
+			tasks: [{
+				id: "26F9C3C3E4EEFFAD"
+				item: "gtceu:cinder_gas_bucket"
 				type: "item"
 			}]
-			subtitle: "Even better mana steel"
+			title: "Automation Challenge : Cinder Fuel"
+			x: -6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7DF6C7E855FF9CD9"]
+			id: "1C13BC3E9AA4F07E"
 			tasks: [{
-				id: "2B9D593260DF1069"
-				item: "gtceu:annealed_manasteel_ingot"
+				id: "606745593975A545"
+				item: "cosmiccore:mv_wildfire_core"
 				type: "item"
 			}]
 			x: -1.5d
-			y: 8.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["01E8872C0129F82F"]
+			id: "3F1890380B7067F6"
+			tasks: [{
+				id: "3DF2AEB597B46E28"
+				item: {
+					Count: 1
+					id: "malum:soul_stained_steel_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.0d
 		}
 	]
 	title: "Turn on the Lights - [LV]"

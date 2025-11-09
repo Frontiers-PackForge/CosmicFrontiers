@@ -1,6 +1,27 @@
 //Adding recipes for registered materials
 ServerEvents.recipes(event => {
     //Livingrock
+    event.custom({
+        "type": "botania:pure_daisy",
+        "input": {
+            "type": "block",
+            "block": "minecraft:bricks"
+        },
+        "output": {
+            "name": "cosmiccore:livingrock_tiles"
+        }
+    })
+
+    event.custom({
+        "type": "botania:pure_daisy",
+        "input": {
+            "type": "block",
+            "block": "gtceu:mv_laser_engraver"
+        },
+        "output": {
+            "name": "cosmiccore:mana_etching_factory"
+        }
+    })
     event.recipes.gtceu.alloy_smelter('t2_gia_ingot_smelting')
         .itemInputs(['gtceu:naquadah_ingot', '16x botania:life_essence'])
         .itemOutputs('botania:gaia_ingot')
@@ -24,6 +45,13 @@ ServerEvents.recipes(event => {
         .itemOutputs('9x gtceu:livingrock_plate')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(184)
+    //lexica botania elven edition
+    event.recipes.gtceu.essence_reactor('lexica_botania_elven_edition')
+        .itemInputs(['botania:lexicon',])
+        .inputFluids('gtceu:potent_mana 1000')
+        .itemOutputs((Item.of('botania:lexicon', '{"botania:elven_unlock": 1b}')))
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(100)
     //Essence Reactor Alfheim Materials - The Elves are dead, don't use the portal.
     event.remove({ id: 'botania:elven_trade/dragonstone_block' })
     event.remove({ id: 'botania:elven_trade/dragonstone' })
@@ -1808,13 +1836,13 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.distillery('mana_condensation')
-        .inputFluids('blasmatech:mana 100')
-        .outputFluids('gtceu:potent_mana 10')
+        .inputFluids('blasmatech:mana 1000')
+        .outputFluids('gtceu:potent_mana 100')
         .duration(20)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(64);
     event.recipes.gtceu.fluid_heater('mana_evap_1')
-        .inputFluids('gtceu:potent_mana 10')
-        .outputFluids('blasmatech:mana 100')
+        .inputFluids('gtceu:potent_mana 100')
+        .outputFluids('blasmatech:mana 1000')
         .circuit(3)
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
@@ -1822,6 +1850,13 @@ ServerEvents.recipes(event => {
         .itemInputs(['4x ars_nouveau:magebloom_fiber', '4x botania:mana_string', '2x gtceu:terrasteel_foil', 'botania:manaweave_cloth'])
         .itemOutputs('kubejs:terraweave_cloth')
         .inputFluids(Fluid.of('gtceu:potent_mana', 500))
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.MV]);
+
+    event.recipes.gtceu.cutter('livingrock_aluminate_wafer')
+        .itemInputs(['cosmiccore:livingrock_aluminate_boule'])
+        .itemOutputs('16x cosmiccore:livirock_aluminite_wafer')
+        .inputFluids(Fluid.of('gtceu:potent_mana', 40))
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV]);
 

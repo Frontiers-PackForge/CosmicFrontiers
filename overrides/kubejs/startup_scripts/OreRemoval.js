@@ -51,9 +51,17 @@ WorldgenEvents.remove(event => {
       'malum:brilliant_stone',
       'malum:brilliant_deepslate',
       'cosmosportals:block_cosmic_ore',
-      'cosmosportals:block_deepslate_cosmic_ore'
+      'cosmosportals:block_deepslate_cosmic_ore',
+      'tconstruct:cobalt_ore',
+      'forestry:deepslate_tin_ore',
+      'forestry:tin_ore',
+      'forestry:deepslate_apatite_ore',
+      'forestry:apatite_ore'
     ]
   })
+
+
+
   event.removeFeatureById('raw_generation', [
     //FOR SOME REASON ADASTRA GENERATES ORES AT THIS GENERATION STEP      
     'ad_astra:moon_iron_ore',
@@ -78,7 +86,12 @@ WorldgenEvents.remove(event => {
     'malum:brilliant_stone',
     'malum:brilliant_deepslate',
     'cosmosportals:block_cosmic_ore',
-    'cosmosportals:block_deepslate_cosmic_ore'
+    'cosmosportals:block_deepslate_cosmic_ore',
+    'tconstruct:cobalt_ore',
+    'forestry:deepslate_tin_ore',
+    'forestry:tin_ore',
+    'forestry:deepslate_apatite_ore',
+    'forestry:apatite_ore'
   ])
   event.removeFeatureById('underground_ores', [
     //FOR SOME REASON ADASTRA GENERATES ORES AT THIS GENERATION STEP      
@@ -123,7 +136,12 @@ WorldgenEvents.remove(event => {
     'malum:brilliant_stone',
     'malum:brilliant_deepslate',
     'cosmosportals:block_cosmic_ore',
-    'cosmosportals:block_deepslate_cosmic_ore'
+    'cosmosportals:block_deepslate_cosmic_ore',
+    'tconstruct:cobalt_ore',
+    'forestry:deepslate_tin_ore',
+    'forestry:tin_ore',
+    'forestry:deepslate_apatite_ore',
+    'forestry:apatite_ore'
   ])
 })
 

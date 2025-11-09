@@ -2,7 +2,12 @@ ServerEvents.recipes(event => {
       //JEI PREVIEW
   event.recipes.gtceu.fake_meteor_ritual('trinavine_meteor')
   .itemInputs('cosmiccore:trinavine_block')
-  .itemOutputs(['minecraft:smooth_basalt','gtceu:raw_graphite','gtceu:raw_tantalite','gtceu:raw_platinum','gtceu:raw_electrotine','gtceu:raw_trinium_metallic'])
+  .itemOutputsRanged('minecraft:smooth_basalt', 500, 1500)
+  .itemOutputsRanged('gtceu:raw_graphite', 1000, 2500)
+  .itemOutputsRanged('gtceu:raw_tantalite', 1000, 2500)
+  .itemOutputsRanged('gtceu:raw_platinum', 1000, 2500)
+  .itemOutputsRanged('gtceu:raw_electrotine', 1000, 2500)
+  .itemOutputsRanged('gtceu:raw_trinium_metallic', 1000, 2500)
   .soulInput(13000000);
 event.custom({
   "type": "bloodmagic:meteor",
@@ -49,7 +54,15 @@ event.custom({
 })
 event.recipes.gtceu.fake_meteor_ritual('plat_group_meteor')
   .itemInputs('gtceu:ev_field_generator')
-  .itemOutputs(['create:cut_ochrum', 'gtceu:raw_tetrahedrite', 'gtceu:raw_chalcopyrite', 'gtceu:raw_pentlandite', 'gtceu:raw_cooperite', 'gtceu:raw_bornite', 'gtceu:raw_chalcocite', 'gtceu:raw_platinum', 'gtceu:raw_palladium'])
+  .itemOutputsRanged('create:cut_ochrum', 500, 1500)
+  .itemOutputsRanged('gtceu:raw_tetrahedrite', 1000, 2500)
+  .itemOutputsRanged('gtceu:raw_chalcopyrite', 1000, 2500)
+  .itemOutputsRanged('gtceu:raw_pentlandite', 1000, 2500)
+  .itemOutputsRanged('gtceu:raw_cooperite', 1000, 2500)
+  .itemOutputsRanged('gtceu:raw_bornite', 1000, 2500)
+  .itemOutputsRanged('gtceu:raw_chalcocite', 1000, 2500)
+  .itemOutputsRanged('gtceu:raw_platinum', 1000, 2500)
+  .itemOutputsRanged('gtceu:raw_palladium', 1000, 2500)
   .soulInput(5000000);
 event.custom({
   "type": "bloodmagic:meteor",
@@ -108,7 +121,11 @@ event.custom({
 })
 event.recipes.gtceu.fake_meteor_ritual('apatite_meteor_mv')
 .itemInputs('gtceu:mv_emitter')
-.itemOutputs(['minecraft:tuff', 'gtceu:raw_tetrahedrite', 'gtceu:raw_pyrochlore', 'gtceu:raw_tricalcium_phosphate', 'gtceu:raw_apatite'])
+.itemOutputsRanged('minecraft:tuff', 500, 1500)
+.itemOutputsRanged('gtceu:raw_tetrahedrite', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_pyrochlore', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_tricalcium_phosphate', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_apatite', 1000, 2500)
 .soulInput(3000000);
 event.custom({
   "type": "bloodmagic:meteor",
@@ -293,5 +310,101 @@ event.custom({
     }
   ],
   "syphon": 2500000
+})
+//utherium
+event.recipes.gtceu.fake_meteor_ritual('utherium_meteor')
+.itemInputs('gtceu:iv_field_generator')
+.itemOutputsRanged('undergarden:shiverstone', 500, 1500)
+.itemOutputsRanged('gtceu:raw_utherium_block', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_utherium', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_ruby', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_almandine', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_chromite', 1000, 2500)
+.soulInput(5000000);
+event.custom({
+  "type": "bloodmagic:meteor",
+  "explosion": 30.0,
+  "input": {
+    "item": 'gtceu:iv_field_generator'
+  },
+  "layers": [
+    {
+      "additionalWeight": 0,
+      "fill": {
+        "block": "undergarden:shiverstone"
+      },
+      "minWeight": 50,
+      "radius": 16,
+      "shell": {
+        "block": "undergarden:shiverstone"
+      },
+      "weightMap": [
+        {
+          "block": "gtceu:raw_utherium_block",
+          "weight": 20
+        },
+        {
+          "block": "gtceu:soul_soil_utherium_ore",
+          "weight": 30
+        },
+        {
+          "block": "gtceu:soul_soil_ruby_ore",
+          "weight": 20
+        },
+        {
+          "block": "gtceu:soul_soil_almandine_ore",
+          "weight": 20
+        },
+        {
+          "block": "gtceu:soul_soil_chromite_ore",
+          "weight": 20
+        }
+      ]
+    }
+  ],
+  "syphon": 5000000
+})
+//uranium
+event.recipes.gtceu.fake_meteor_ritual('uranium_meteor')
+.itemInputs('gtceu:iv_sensor')
+.itemOutputsRanged('create:veridium', 500, 1500)
+.itemOutputsRanged('gtceu:raw_uranium', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_pitchblende', 1000, 2500)
+.itemOutputsRanged('gtceu:raw_uraninite', 1000, 2500)
+.soulInput(8000000);
+event.custom({
+  "type": "bloodmagic:meteor",
+  "explosion": 30.0,
+  "input": {
+    "item": 'gtceu:iv_sensor'
+  },
+  "layers": [
+    {
+      "additionalWeight": 0,
+      "fill": {
+        "block": "create:veridium"
+      },
+      "minWeight": 50,
+      "radius": 16,
+      "shell": {
+        "block": "create:veridium"
+      },
+      "weightMap": [
+        {
+          "block": "gtceu:uranium_ore",
+          "weight": 25
+        },
+        {
+          "block": "gtceu:pitchblende_ore",
+          "weight": 25
+        },
+        {
+          "block": "gtceu:uraninite_ore",
+          "weight": 25
+        }
+      ]
+    }
+  ],
+  "syphon": 8000000
 })
 })

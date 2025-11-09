@@ -1,0 +1,28 @@
+{
+  "type": "embers:melting",
+  "bonus": {
+    "amount": 16,
+    "tag": "forge:lead"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:raw_materials/uranium"
+          }
+        }
+      ]
+    }
+  ],
+  "input": {
+    "tag": "forge:raw_materials/uranium"
+  },
+  "output": {
+    "amount": 120,
+    "tag": "forge:uranium"
+  }
+}

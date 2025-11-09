@@ -8,6 +8,7 @@ GTCEuServerEvents.oreVeins(event => {
     event.remove("gtceu:monazite_vein")
     event.remove("gtceu:molybdenum_vein")
     event.remove("gtceu:pitchblende_vein_end")
+    event.remove("gtceu:nickel_vein")
 
 })
 

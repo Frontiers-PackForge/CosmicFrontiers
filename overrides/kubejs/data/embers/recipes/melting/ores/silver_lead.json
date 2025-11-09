@@ -1,0 +1,28 @@
+{
+  "type": "embers:melting",
+  "bonus": {
+    "amount": 0,
+    "tag": "forge:lead"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ores/silver"
+          }
+        }
+      ]
+    }
+  ],
+  "input": {
+    "tag": "forge:ores/silver"
+  },
+  "output": {
+    "amount": 288,
+    "tag": "forge:silver"
+  }
+}

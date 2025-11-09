@@ -32,6 +32,20 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'frontiers:large_chemical_reactor/complex_multivitamin_solution' })
 
 
+
+
+    event.remove({ id: 'gtceu:chemical_reactor/collagen_from_bone' })
+    event.remove({ id: 'gtceu:chemical_reactor/collagen_from_bone_meal' })
+    event.recipes.gtceu.chemical_reactor('gtceu:collagen_dust_icv')
+        .itemInputs('2x gtceu:meat_dust', 'minecraft:bone')
+        .inputFluids('gtceu:sulfuric_acid 1000')
+        .outputFluids('gtceu:diluted_sulfuric_acid 1000')
+        .itemOutputs('2x gtceu:collagen_dust')
+        .sterileInput('gtceu:chlorine_plasma 1')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+
     event.recipes.gtceu.cracker('frontiers:oxolane')
         .inputFluids('gtceu:butadiene 1000')
         .notConsumableFluid('gtceu:sulfuric_acid 500')
@@ -44,7 +58,9 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:oxolane 1000', 'gtceu:ammonia 1000', 'gtceu:butene 2000')
         .outputFluids('gtceu:pyrrole 1000', 'minecraft:water 1000', 'gtceu:butane 2000')
         .duration(240)
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .perTick(true)
+        .sterileInput('gtceu:chlorine_plasma 1')
+        .perTick(false)
         .EUt(GTValues.VA[GTValues.IV]);
 
     event.recipes.gtceu.industrial_chemvat('frontiers:prophine')
@@ -52,13 +68,15 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:hydrogen 6000', 'minecraft:water 4000')
         .itemOutputs('gtceu:prophine_dust')
         .duration(180)
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .perTick(true)
+        .sterileInput('gtceu:chlorine_plasma 1')
+        .perTick(false)
         .EUt(GTValues.VA[GTValues.IV]);
 
     //This is an Extremely Lossy Step.
     event.recipes.gtceu.industrial_chemvat('frontiers:heme_ring_but_its_actually_chlorophyte_and_im_just_lazy')
         .itemInputs('gtceu:prophine_dust')
-        .inputFluids('gtceu:acetic_acid 1000', 'gtceu:formaldehyde 4000', 'gtceu:methyl_formate 2000', 'gtceu:chlorine 4000', 'gtceu:vinyl_chloride 1000', 'gtceu:chloromethane 4000')
+        .inputFluids('gtceu:acetic_acid 1000', 'gtceu:formaldehyde 4000', 'gtceu:acetic_acid 2000', 'gtceu:chlorine 4000', 'gtceu:vinyl_chloride 1000', 'gtceu:chloromethane 4000')
         .outputFluids('gtceu:hydrochloric_acid 1000', 'minecraft:water 1000')
         .itemOutputs('4x cosmiccore:heme_ring')
         .circuit(31)
@@ -67,7 +85,9 @@ ServerEvents.recipes(event => {
             .researchStack('cosmiccore:sculk_fibroblast')
             .CWUt(16)
             .EUt(GTValues.VA[GTValues.ZPM]))
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .perTick(true)
+        .sterileInput('gtceu:chlorine_plasma 1')
+        .perTick(false)
         .EUt(GTValues.VA[GTValues.LuV]);
 
     event.recipes.gtceu.industrial_chemvat('frontiers:raw_growth_medium')
@@ -76,7 +96,9 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:raw_growth_medium 32000')
         .itemOutputs('5x gtceu:phosphate_dust')
         .duration(1239)
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .perTick(true)
+        .sterileInput('gtceu:chlorine_plasma 1')
+        .perTick(false)
         .EUt(GTValues.VA[GTValues.UV]);
     //Blood Portion (Globules etc)
     event.recipes.gtceu.centrifuge('frontiers:glob_to_blood')
@@ -84,7 +106,9 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:fungal_blood 125', 'gtceu:blood_plasma 125')
         .chancedOutput('gtceu:meat_dust', 2500, 0)
         .duration(650)
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .perTick(true)
+        .sterileInput('gtceu:chlorine_plasma 1')
+        .perTick(false)
         .EUt(GTValues.VA[GTValues.IV]);
 
     event.recipes.gtceu.centrifuge('frontiers:blood_plasma_to_other_stuff')
@@ -286,12 +310,6 @@ ServerEvents.recipes(event => {
         .duration(350)
         .EUt(GTValues.VH[GTValues.EV]);
 
-    event.recipes.gtceu.large_chemical_reactor('frontiers:methyl_formate')
-        .inputFluids('gtceu:methanol 1000', 'gtceu:carbon_monoxide 1000')
-        .outputFluids('gtceu:methyl_formate 2000')
-        .duration(130)
-        .EUt(GTValues.VH[GTValues.EV]);
-
     event.recipes.gtceu.large_chemical_reactor('frontiers:chloroethane')
         .inputFluids('gtceu:ethanol 1000', 'gtceu:hydrochloric_acid 1000')
         .outputFluids('gtceu:chloroethane 1000', 'minecraft:water 1000')
@@ -355,6 +373,16 @@ ServerEvents.recipes(event => {
         .itemOutputs('36x gtceu:plant_ball')
         .outputFluids('gtceu:agar 288')
         .duration(960)
+        .circuit(1)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VH[GTValues.EV]);
+    event.recipes.gtceu.centrifuge('frontiers:agar_fluid_booster')
+        .inputFluids('gtceu:agar_sludge 1000')
+        .itemInputs('16x cosmiccore:bee_comb_biohazard')
+        .itemOutputs('36x gtceu:plant_ball')
+        .outputFluids('gtceu:agar 1152')
+        .duration(960)
+        .circuit(2)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VH[GTValues.EV]);
     //Maybe the Dust will be used in the future???? make it apart of RGM ig lol

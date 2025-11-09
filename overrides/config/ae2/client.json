@@ -1,6 +1,6 @@
 {
   "client": {
-    "disableColoredCableRecipesInJEI": true,
+    "disableColoredCableRecipesInJEI": false,
     "enableFacadesInJEI_comment": "Show facades in JEI ingredient list",
     "enableFacadesInJEI": false,
     "enableFacadeRecipesInJEI_comment": "Show facade recipes in JEI for supported blocks",

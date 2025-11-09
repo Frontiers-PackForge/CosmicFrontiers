@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ingots/nickel"
+      }
+    }
+  ],
+  "input": {
+    "tag": "forge:ingots/nickel"
+  },
+  "output": {
+    "amount": 144,
+    "tag": "forge:nickel"
+  }
+}

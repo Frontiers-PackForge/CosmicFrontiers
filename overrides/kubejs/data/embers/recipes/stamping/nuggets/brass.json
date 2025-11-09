@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:nuggets/brass"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 16,
+    "tag": "forge:brass"
+  },
+  "output": {
+    "tag": "forge:nuggets/brass"
+  },
+  "stamp": {
+    "item": "embers:nugget_stamp"
+  }
+}

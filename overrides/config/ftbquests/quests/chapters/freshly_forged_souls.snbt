@@ -6,13 +6,38 @@
 	group: "34809FA43B03812C"
 	icon: "biomesoplenty:lumaloop"
 	id: "26631A1C73AF31BA"
+	images: [
+		{
+			height: 3.5d
+			image: "frontiers:textures/questimages/miscicons/wingedborder.png"
+			rotation: 0.0d
+			width: 3.5d
+			x: 0.06505102040816269d
+			y: -21.445578231292522d
+		}
+		{
+			height: 7.0d
+			hover: [
+				"Use EMI"
+				"to figure out how to get each particle."
+			]
+			image: "frontiers:textures/questimages/miscicons/tessarae.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: -16.5d
+			y: 0.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["38E8D3C8D4F791D8"]
+			description: ["The next chapter, UHV, requires Multiple quests on this page to be completed, look for the orange borders on quests. You need to complete all of them."]
 			hide_until_deps_complete: true
 			id: "729E3A063736105A"
+			shape: "hexagon"
+			size: 2.0d
 			subtitle: "To Reinforce the Soul"
 			tasks: [{
 				id: "07C220FE77515F2B"
@@ -43,8 +68,8 @@
 				type: "item"
 			}]
 			title: "Welcome to Hell"
-			x: -2.5d
-			y: -2.5d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["729E3A063736105A"]
@@ -73,20 +98,21 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["70B8E558642EB722"]
+			dependencies: ["729E3A063736105A"]
+			hide_dependency_lines: true
 			id: "2D2FEAAD9A788F11"
 			tasks: [{
 				id: "22CCDDBC3B42C2D2"
 				item: "gtceu:sol_blood_plasma_bucket"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -4.0d
+			x: 12.5d
+			y: -15.0d
 		}
 		{
 			dependencies: [
 				"2D2FEAAD9A788F11"
-				"5BA9E4FD6905BF16"
+				"72D3D7AA1239F8D1"
 			]
 			id: "27507A35114E29AC"
 			tasks: [{
@@ -94,8 +120,8 @@
 				item: "cosmiccore:ichor_bucket"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -6.5d
+			x: 10.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["27507A35114E29AC"]
@@ -105,33 +131,33 @@
 				item: "cosmiccore:ichorium_ingot"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -9.5d
+			x: 8.5d
+			y: -18.0d
 		}
 		{
-			dependencies: ["729E3A063736105A"]
+			dependencies: [
+				"41D6062B5A1485FC"
+				"26313B90F718378F"
+				"5A80D8880B005FF4"
+				"002781F4A495B329"
+				"315B333E617513CF"
+			]
 			id: "66C6D44F64D58727"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "770A8AB76D0CE256"
 				item: "cosmiccore:temmerite_ingot"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -9.5d
+			x: 18.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["729E3A063736105A"]
-			id: "674A9D3C2507C044"
-			tasks: [{
-				id: "71652E541CEFB46D"
-				item: "gtceu:rubidium_ingot"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["729E3A063736105A"]
+			dependencies: [
+				"4BE3B51B5C5E1C0C"
+				"15C9C9E5FB51FAE6"
+			]
 			id: "2EAF0FD35B9DE2FC"
 			tasks: [{
 				id: "2AD7C45FB11B7A27"
@@ -139,55 +165,62 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -9.5d
+			y: -11.5d
 		}
 		{
 			dependencies: [
-				"729E3A063736105A"
-				"674A9D3C2507C044"
+				"1FB847F398F7BEAC"
+				"7D72FDBC832A8BA5"
+				"090BC9A98CCFE5FF"
+				"26B490867C52BE00"
 			]
 			id: "2A34B8F3D5A6C7BB"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "70A5318A32B687E9"
 				item: "cosmiccore:living_igniclad_ingot"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -6.5d
+			x: 11.0d
+			y: -11.5d
 		}
 		{
-			dependencies: [
-				"729E3A063736105A"
-				"5F9168C4700B6EB5"
-			]
+			dependencies: ["5F9168C4700B6EB5"]
 			id: "482FC79E15210C24"
 			tasks: [{
 				id: "45A1FFA92B7E2A60"
 				item: "gtceu:ionized_fulgorinth_ingot"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -6.5d
+			x: -5.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["729E3A063736105A"]
 			description: [
+				"I'm going to be entirely honest. You're going to need to use EMI for this one."
 				""
 				""
-				"FTB Quests Does not like looping deps so I'll only be listing the important particle outputs you may want"
+				"If you've gotten to this quest without using EMI, seek immediate help."
 				""
+				"For the rest of the individuals here, hi, these suck."
 				""
-				"Particle Folding is a very annoying complex process involving several large machines and many supporting machines for the folders themselves."
+				"Generally speaking unless you make new Tessarae, you'll always have the same stockpile you started with."
+				""
+				"The goal is to have a balanced stockpile of all particles, how you do that is up to you."
 			]
 			id: "6966ADADA86CBCC4"
+			shape: "hexagon"
+			size: 2.0d
 			subtitle: "Help"
 			tasks: [{
 				id: "602E71149D3280B1"
 				item: "cosmiccore:arcane_distillery"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -3.0d
+			x: -9.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6966ADADA86CBCC4"]
@@ -197,8 +230,8 @@
 				item: "cosmiccore:tessaron"
 				type: "item"
 			}]
-			x: -13.5d
-			y: -4.0d
+			x: -8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6966ADADA86CBCC4"]
@@ -208,22 +241,19 @@
 				item: "cosmiccore:vexiun"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -4.5d
+			x: -9.0d
+			y: 2.0d
 		}
 		{
-			dependencies: [
-				"6966ADADA86CBCC4"
-				"4D9DC8539212C3F9"
-			]
+			dependencies: ["6966ADADA86CBCC4"]
 			id: "5E1D369BFBEFC22E"
 			tasks: [{
 				id: "61046C03CAFC47AA"
 				item: "cosmiccore:ambrion"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -6.0d
+			x: -10.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6966ADADA86CBCC4"]
@@ -233,77 +263,52 @@
 				item: "cosmiccore:ethera"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -3.5d
+			x: -6.0d
+			y: 2.0d
 		}
 		{
-			dependencies: [
-				"5E1D369BFBEFC22E"
-				"00BC8EACC0A65FAA"
-				"4D32AA9E6F5C80D3"
-				"599804BD824DC5D8"
-			]
+			dependencies: ["6966ADADA86CBCC4"]
 			id: "5BA9E4FD6905BF16"
 			tasks: [{
 				id: "6D8B884CEB879D17"
 				item: "cosmiccore:echon"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -8.0d
+			x: -12.0d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"44BD916C3C1DF317"
-				"0AB11364D13764CD"
-			]
+			dependencies: ["6966ADADA86CBCC4"]
 			id: "6C55921CF278EEB7"
 			tasks: [{
 				id: "30366CD5175BCD22"
 				item: "cosmiccore:dynamia"
 				type: "item"
 			}]
-			x: -14.5d
-			y: -7.5d
+			x: -11.0d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"44BD916C3C1DF317"
-				"0E500AC04B5CE25F"
-			]
-			id: "4D9DC8539212C3F9"
-			tasks: [{
-				id: "2A63CC9E22DD136D"
-				item: "cosmiccore:nyxon"
-				type: "item"
-			}]
-			x: -12.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["5E1D369BFBEFC22E"]
+			dependencies: ["6966ADADA86CBCC4"]
 			id: "4D32AA9E6F5C80D3"
 			tasks: [{
 				id: "179DE332197B7BC0"
 				item: "cosmiccore:spectil"
 				type: "item"
 			}]
-			x: -11.0d
-			y: -7.0d
+			x: -10.0d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"599804BD824DC5D8"
-				"4D32AA9E6F5C80D3"
-			]
+			dependencies: ["6966ADADA86CBCC4"]
 			id: "39E48F7D0735EE22"
 			tasks: [{
 				id: "64E84726A7E3384F"
 				item: "cosmiccore:chronia"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -8.5d
+			x: -11.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6966ADADA86CBCC4"]
@@ -313,36 +318,47 @@
 				item: "cosmiccore:pyrith"
 				type: "item"
 			}]
-			x: -11.0d
-			y: -5.0d
+			x: -7.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["00BC8EACC0A65FAA"]
+			dependencies: ["6966ADADA86CBCC4"]
+			hide_dependency_lines: false
 			id: "599804BD824DC5D8"
 			tasks: [{
 				id: "134F17CBED9DF8B5"
 				item: "cosmiccore:nyxon"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -5.5d
+			x: -6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
-				"2EAF0FD35B9DE2FC"
-				"055810D03A9249E8"
+				"36BE5C588DF13263"
+				"185EFACDD5C99C37"
+				"7699EB44B24B3745"
+				"41D69650AF81F79C"
+				"23DE19C089CF4F87"
+				"7C658A2177187ED5"
+				"79ADB5985314E48D"
 			]
 			id: "7C281261A1A7C05E"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "To Fight the Heavens"
 			tasks: [{
 				id: "173145259479545F"
 				item: "gtceu:uhv_machine_hull"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -10.5d
+			title: "Ready for UHV?"
+			x: 0.0d
+			y: -21.5d
 		}
 		{
-			dependencies: ["729E3A063736105A"]
+			dependencies: ["3B156357B3B09546"]
+			icon: "cosmiccore:etheric_spirit"
 			id: "2A541D3BB567747C"
 			tasks: [
 				{
@@ -356,17 +372,18 @@
 					type: "item"
 				}
 				{
-					id: "7492DF3649A0F4DB"
-					item: "malum:umbral_spirit"
+					id: "0BCC69FE9FFC41E2"
+					item: "cosmiccore:prideful_spirit"
 					type: "item"
 				}
 			]
 			title: "The Soul : PRIDE"
 			x: -2.0d
-			y: 1.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["729E3A063736105A"]
+			dependencies: ["3B156357B3B09546"]
+			icon: "cosmiccore:etheric_spirit"
 			id: "7E88AA8CCDA14810"
 			tasks: [
 				{
@@ -379,43 +396,51 @@
 					item: "malum:sacred_spirit"
 					type: "item"
 				}
+				{
+					id: "7F0418F518711B1B"
+					item: "cosmiccore:etheric_spirit"
+					type: "item"
+				}
 			]
 			title: "The Soul : LUST"
 			x: -3.5d
-			y: -0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
 				"14A576C56B158FE3"
-				"66C6D44F64D58727"
+				"7C658A2177187ED5"
 			]
 			id: "5C4BED093ADA89EB"
+			shape: "hexagon"
 			tasks: [{
 				id: "2A93FF2A20D5DBAA"
 				item: "gtceu:uhv_electric_motor"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -11.5d
+			x: 6.5d
+			y: -18.0d
 		}
 		{
 			dependencies: [
-				"2A34B8F3D5A6C7BB"
-				"482FC79E15210C24"
+				"5A88249574FA8C51"
+				"2E3214F7161CA189"
 			]
 			id: "4BE3B51B5C5E1C0C"
+			shape: "hexagon"
 			tasks: [{
 				id: "6A45F7F859639507"
 				item: "cosmiccore:living_igniclad_coil_block"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -2.0d
+			x: 1.5d
+			y: -13.0d
 		}
 		{
-			dependencies: ["729E3A063736105A"]
-			hide_dependency_lines: true
+			dependencies: ["34146855E88D1684"]
 			id: "5F9168C4700B6EB5"
+			shape: "hexagon"
+			size: 1.0d
 			tasks: [{
 				id: "0C7C6B65B47D34F3"
 				item: {
@@ -425,23 +450,23 @@
 				}
 				type: "item"
 			}]
-			x: 5.5d
-			y: -2.0d
+			x: -3.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
-				"4D32AA9E6F5C80D3"
-				"4D9DC8539212C3F9"
-				"6C55921CF278EEB7"
+				"5D3ECF60ECEC3248"
+				"5BA9E4FD6905BF16"
+				"657129F4C767F9D7"
 			]
 			id: "715ABE87B5D80EA9"
 			tasks: [{
-				id: "57A249209BDEEFC0"
-				item: "cosmiccore:logical_infinity_ingot"
+				id: "5B408A62176DA646"
+				item: "gtceu:neutronium_plasmites"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -8.0d
+			x: -12.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["715ABE87B5D80EA9"]
@@ -451,8 +476,8 @@
 				item: "gtceu:neutronium_boule"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -10.0d
+			x: -12.0d
+			y: -7.25d
 		}
 		{
 			dependencies: ["667C1EABE0D4346D"]
@@ -462,85 +487,77 @@
 				item: "cosmiccore:flawed_resonant_wafer"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -10.0d
+			x: -12.0d
+			y: -8.5d
 		}
 		{
-			dependencies: [
-				"39E48F7D0735EE22"
-				"3F10428D79FBCCE8"
-			]
+			dependencies: ["3F10428D79FBCCE8"]
 			id: "6CF4791506C25CF8"
 			tasks: [{
 				id: "3C43927270BCEC4F"
 				item: "cosmiccore:refined_resonant_wafer"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -11.0d
+			x: -10.0d
+			y: -8.5d
 		}
 		{
-			dependencies: [
-				"5BA9E4FD6905BF16"
-				"3F10428D79FBCCE8"
-			]
+			dependencies: ["3F10428D79FBCCE8"]
 			id: "703C590EE8E208B1"
 			tasks: [{
 				id: "0848CB9C57E8A6B9"
 				item: "cosmiccore:null_refined_resonant_wafer"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -9.5d
+			x: -14.0d
+			y: -8.5d
 		}
 		{
-			dependencies: ["6CF4791506C25CF8"]
+			dependencies: [
+				"293515B5BC88BA43"
+				"3FE4F80DC7E8900F"
+			]
 			id: "439531466E9005F2"
 			tasks: [{
 				id: "5286E56B70300CC8"
 				item: "cosmiccore:alchemia_wafer"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -12.5d
+			x: -10.5d
+			y: -10.5d
 		}
 		{
-			dependencies: ["6CF4791506C25CF8"]
+			dependencies: [
+				"2DA606E29F9EA22B"
+				"3FE4F80DC7E8900F"
+			]
 			id: "3CCAD2173CF034D1"
 			tasks: [{
 				id: "67F2FE83C53CAA2A"
 				item: "cosmiccore:wafer_pragmiso"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -12.5d
+			x: -9.5d
+			y: -10.5d
 		}
 		{
-			dependencies: ["703C590EE8E208B1"]
+			dependencies: [
+				"4DC7D5540C4B0637"
+				"6CDD6541577BD264"
+			]
 			id: "3EB68B8E8997971D"
 			tasks: [{
 				id: "55D1F19FD0E5FEA6"
 				item: "cosmiccore:eterna_wafer"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -11.5d
-		}
-		{
-			dependencies: ["703C590EE8E208B1"]
-			id: "7E7C585A0739E5A8"
-			tasks: [{
-				id: "206E2BA73632EFD2"
-				item: "cosmiccore:thaumica_wafer"
-				type: "item"
-			}]
-			x: -6.0d
+			x: -14.5d
 			y: -10.5d
 		}
 		{
 			dependencies: [
 				"3EB68B8E8997971D"
-				"7E7C585A0739E5A8"
+				"12CB452B8307234A"
 			]
 			id: "133F606262DF3108"
 			tasks: [{
@@ -548,8 +565,8 @@
 				item: "cosmiccore:fused_wafer_of_esoterica"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -13.0d
+			x: -14.0d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -562,8 +579,8 @@
 				item: "cosmiccore:fused_wafer_of_logos"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -14.0d
+			x: -10.0d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -576,8 +593,8 @@
 				item: "cosmiccore:harmonic_chiplet_oscillating"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -14.5d
+			x: -12.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["703C590EE8E208B1"]
@@ -587,8 +604,8 @@
 				item: "cosmiccore:chronia"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -9.5d
+			x: -14.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["6CF4791506C25CF8"]
@@ -598,52 +615,36 @@
 				item: "cosmiccore:echon"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -12.0d
+			x: -10.0d
+			y: -7.5d
 		}
 		{
-			dependencies: ["729E3A063736105A"]
+			dependencies: ["4E440D6E8745CE17"]
 			id: "055810D03A9249E8"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "UHV Hull Part #1"
 			tasks: [{
 				id: "382F20F5E6F6EEB8"
 				item: "gtceu:seaborgium_ingot"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -9.5d
+			x: 14.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["729E3A063736105A"]
-			id: "10ED2DC95E9C5EB9"
-			tasks: [{
-				id: "219E53E3DA5B8DEF"
-				item: "gtceu:holmium_ingot"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["729E3A063736105A"]
+			dependencies: [
+				"0BF6889D9F13C2F3"
+				"7DF2F05E0F30E80E"
+			]
 			id: "6A5734A4433388DA"
 			tasks: [{
-				id: "067D6691FBC8B6DA"
-				item: "gtceu:astatine_ingot"
+				id: "4193755D7F0281EA"
+				item: "gtceu:astatine_dust"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["729E3A063736105A"]
-			id: "0F13B420B19DBFDF"
-			tasks: [{
-				id: "26279E320128EA8C"
-				item: "gtceu:germanium_ingot"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -6.5d
+			x: 5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["729E3A063736105A"]
@@ -653,8 +654,8 @@
 				item: "gtceu:tellurium_ingot"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -6.5d
+			x: 2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["736DDA50FF3E152B"]
@@ -664,20 +665,1868 @@
 				item: "cosmiccore:harmonic_processor"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -15.0d
+			x: -7.5d
+			y: -16.0d
 		}
 		{
-			dependencies: ["447B55D076D9B5AA"]
+			dependencies: [
+				"447B55D076D9B5AA"
+				"3BC0AA44626D4643"
+			]
 			id: "736DDA50FF3E152B"
 			tasks: [{
 				id: "6503F4937329F0EA"
 				item: "cosmiccore:somatic_processing_assembly"
 				type: "item"
 			}]
+			x: -12.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			description: [
+				"&7Hadalite, a material swirling with darkness and abyssal vibrations."
+				""
+				"&7Your initial chemical analysis has revealed extremely value materials such as Holmium and Thallium.&r"
+				""
+				"&7You should dig deeper and unlock the true nature of this ore, you might be nearing a breakthrough.&r"
+				""
+				"Welcome to Superchain #2, this chain itself will represent a achievement similar to when you constructed your first Platinum metallic Products. "
+				""
+				"You'll be extracting, fusing, fissioning, and processing your way to several new materials all overlapping eachother in their own ways"
+				""
+				"Firstly, &eThallium&r, followed by &eHolmium&r and &eGermanium&r, then pushing your way into exotic materials like &eSeaborgium&r, &eTaranium&r, and the fabled living flame, &cIgniclad&r."
+				""
+				"You'll also need to process down Naummunite into &e&lRubidium&r for a unique &6glass supercoolant&r."
+			]
+			id: "223863B177481FD0"
+			min_width: 450
+			subtitle: "The Great Ore Chain"
+			tasks: [{
+				id: "56EE24EAFB05B55C"
+				item: "gtceu:hadalite_sludge_bucket"
+				type: "item"
+			}]
+			title: "Superchain #2 : Metallic Refinement"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["223863B177481FD0"]
+			id: "4F417883CFEA15FE"
+			tasks: [{
+				id: "1C24CA9BA55F4714"
+				item: "gtceu:sparkling_hadalite_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F417883CFEA15FE"]
+			id: "36963640FA14DD0C"
+			tasks: [{
+				id: "115E0D67E6CA6480"
+				item: "gtceu:excited_hadalite_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36963640FA14DD0C"]
+			id: "29DC4D01FB155CCC"
+			tasks: [{
+				id: "6185378E59278B0F"
+				item: "gtceu:holmium_slush_mixture_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"29DC4D01FB155CCC"
+				"79AED8686EBD940E"
+			]
+			id: "06E9A4E56E403733"
+			tasks: [{
+				id: "4DCCC4D8663A1E15"
+				item: "gtceu:holmium_rubidium_colloid_with_supercoolant_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["06E9A4E56E403733"]
+			id: "57CAE8E368617448"
+			tasks: [{
+				id: "3EF35485F8E0501B"
+				item: "gtceu:holmium_solution_bucket"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57CAE8E368617448"]
+			id: "4C8440CDF2341A6E"
+			tasks: [{
+				id: "587D94AC3E1ADACA"
+				item: "gtceu:tauin_hexafluoroholmate_dust"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C8440CDF2341A6E"]
+			id: "0ECDD0F5F318808F"
+			tasks: [{
+				id: "3090F51274839DD2"
+				item: "gtceu:tauin_hexafluoroholmate_dust"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0ECDD0F5F318808F"]
+			id: "78D10E0AFA1D1E52"
+			tasks: [{
+				id: "20C5B725483E8E3E"
+				item: "gtceu:holmium_bucket"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36963640FA14DD0C"]
+			id: "715D6991C92A7DD2"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "76976D01A12AE201"
+				item: "gtceu:thallium_dust"
+				type: "item"
+			}]
+			title: "Easy Extraction : Thallium"
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["06E9A4E56E403733"]
+			id: "0F384B26F3544267"
+			tasks: [{
+				id: "1F85EFF336666CDA"
+				title: "heavy plasmite waste"
+				type: "custom"
+			}]
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0F384B26F3544267"]
+			id: "1AE1DD66C76EF227"
+			tasks: [{
+				id: "677CEA2BC87D4D43"
+				item: "gtceu:indium_dust"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["78D10E0AFA1D1E52"]
+			id: "1941E698806C576E"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "23C0117A713D06C4"
+				item: "gtceu:holmium_ingot"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["223863B177481FD0"]
+			hide_dependency_lines: true
+			id: "0BF6889D9F13C2F3"
+			tasks: [{
+				id: "7E66E54B9B7C776B"
+				item: "cosmiccore:fermium_rad_charges"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1941E698806C576E"
+				"6DF30406CA7E91FD"
+			]
+			description: [
+				"Parallel Modules grant flat bonus Parallels per module"
+				""
+				"&aTier 1&r : +16"
+				"&bTier 2&r : +32"
+				"&eTier 3&r : +64"
+				"&6Tier 4&r : +256"
+				""
+				"The Effect Stacks based on the amount of Parallel Modules you have in a Module Hatch"
+				""
+				"Examples:"
+				"&aSmall Module Hatch&r (4 Slots) * &aTier 1&r Parallel Modules = 64 Bonus Parallel"
+				"&aHuge Module Hatch&r (12 Slots) * &6Tier 4&r Parallel Modules = 3072 Bonus Parallel "
+			]
+			id: "754B08E28142469D"
+			min_width: 450
+			rewards: [{
+				count: 4
+				id: "001A9CDB55B93C5F"
+				item: "cosmiccore:cluster_of_perpetuity"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.75d
+			subtitle: "Pushing The Limits"
+			tasks: [{
+				id: "619E858D35F1AC33"
+				item: "cosmiccore:para_mod_1"
+				type: "item"
+			}]
+			title: "Increasing Production"
+			x: 15.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0F384B26F3544267"]
+			id: "6F2267A343C5000B"
+			tasks: [{
+				count: 64L
+				id: "59E702B49A32E009"
+				item: { Count: 64, id: "gtceu:hadalite_dust" }
+				type: "item"
+			}]
+			title: "Heavy Hadalite Sludge Dust"
+			x: 9.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1AE02CCA93949742"
+				"6F2267A343C5000B"
+				"6A5734A4433388DA"
+			]
+			id: "1677F8470F3A44FA"
+			tasks: [{
+				id: "290F73834A22AC40"
+				item: "gtceu:waste_medelevium_fuel_salt_bucket"
+				type: "item"
+			}]
+			title: "ionized_hadalite_waste"
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["06E9A4E56E403733"]
+			id: "1AE02CCA93949742"
+			tasks: [{
+				id: "127CF5764762F354"
+				item: "gtceu:holmium_solution_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["223863B177481FD0"]
+			hide_dependency_lines: true
+			id: "7DF2F05E0F30E80E"
+			tasks: [{
+				id: "27DE3E7006152E9F"
+				item: "gtceu:radon_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["551B4D7C767D52F5"]
+			id: "6180035E1C09ABA8"
+			shape: "diamond"
+			tasks: [{
+				id: "1A7000364B2FE330"
+				item: "gtceu:radon_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1677F8470F3A44FA"]
+			id: "551B4D7C767D52F5"
+			tasks: [{
+				id: "1E1B226A108A2667"
+				item: "gtceu:homeward_resin_plasma_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["551B4D7C767D52F5"]
+			id: "738FD35EEC40B750"
+			tasks: [{
+				id: "2A3E01CF8C3EB6B8"
+				item: "gtceu:dusty_fermium_plasma_bucket"
+				type: "item"
+			}]
+			title: "Dusty Fermium Plasma"
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"657910D76FF611E7"
+				"738FD35EEC40B750"
+			]
+			id: "7A7A4530DD9C2C9E"
+			tasks: [{
+				id: "36B1A034DA08D71A"
+				item: "gtceu:seaborgium_seeded_plasma_bucket"
+				type: "item"
+			}]
+			title: "Seaborgium Seeded Plasma"
+			x: 11.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"657910D76FF611E7"
+				"7A7A4530DD9C2C9E"
+			]
+			id: "4E440D6E8745CE17"
+			tasks: [{
+				id: "009454A98FC5609E"
+				item: "gtceu:seaborgium_rich_plasma_bucket"
+				type: "item"
+			}]
+			title: "Seaborgium Rich Plasma"
+			x: 12.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["61A9FE7CDEF59513"]
+			id: "166FACA43B1432B3"
+			tasks: [{
+				id: "5E8A846E9C3219AC"
+				item: "gtceu:bedrock_smoke_bucket"
+				type: "item"
+			}]
+			title: "Bedrock Soot"
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3735C6AD0D7AA447"]
+			id: "657910D76FF611E7"
+			tasks: [{
+				id: "2107E76BC93B1C2D"
+				item: "gtceu:lanthanum_bucket"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			hide_dependency_lines: true
+			id: "3735C6AD0D7AA447"
+			shape: "hexagon"
+			subtitle: "Hey finally a use!"
+			tasks: [{
+				id: "70E6DAA64431C69B"
+				item: "gtceu:lanthanum_dust"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["30759A7020DA07A5"]
+			icon: "gtceu:germanium_ingot"
+			id: "6DF30406CA7E91FD"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "103C04BC1CE9E801"
+				item: "gtceu:germanium_dust"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3FCCA2B19F736BA1"]
+			id: "30759A7020DA07A5"
+			tasks: [{
+				id: "4BDDD87CBD72EA38"
+				item: "gtceu:germanium_dust"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6F2267A343C5000B"]
+			id: "3FCCA2B19F736BA1"
+			tasks: [{
+				id: "534A8842E4D8B943"
+				item: "gtceu:pure_basaltic_mineral_sand_dust"
+				type: "item"
+			}]
+			title: "Clumped Waste Metals"
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3FCCA2B19F736BA1"]
+			id: "57C3819C0A75B44A"
+			subtitle: "A little extra for your troubles"
+			tasks: [{
+				id: "0384B42BD0E471BA"
+				item: "gtceu:thallium_dust"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6BA41190CCDD018A"]
+			id: "7A5B8D42731224BB"
+			tasks: [{
+				id: "28421F914FF0077B"
+				item: "cosmiccore:harmonic_processor_assembly"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["7A5B8D42731224BB"]
+			id: "5A6D76DE56224F7D"
+			tasks: [{
+				id: "26F33604F05EFD13"
+				item: "cosmiccore:harmonic_processor_supercomputer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -16.0d
+		}
+		{
+			dependencies: [
+				"5A6D76DE56224F7D"
+				"2EAF0FD35B9DE2FC"
+				"1D891827C3CAC72D"
+			]
+			id: "05F44DC28A4AAEEE"
+			shape: "hexagon"
+			tasks: [{
+				id: "5AD4C02E9F3F9A7C"
+				item: "cosmiccore:harmonic_processor_mainframe"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["72D3D7AA1239F8D1"]
+			id: "5A88249574FA8C51"
+			shape: "hexagon"
+			subtitle: "Honey Comb Insulation"
+			tasks: [{
+				id: "386C0FFF283062E1"
+				item: "gtceu:enriched_naquadah_trinium_europium_duranide_alve_foil_insulator"
+				type: "item"
+			}]
+			title: "Alvefoil"
+			x: 5.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["4DB8FD24F1E67BE3"]
+			description: [
+				"Upon further inspection, flying down into neptune seems to be gravely dangerous beyond the high pressure and stormy conditons."
+				""
+				"Something is in the atmosphere, a type of bio scan unlike anything i've encountered."
+				""
+				"It's extremely hostile"
+				"It's capable of rending my armor to pulp"
+				"It's microscopic"
+				""
+				"And in 100% of situations should never have the chance to escape this ice giant."
+				""
+				""
+				""
+				"I do however, wonder if I can exploit it's unique properties or behaviors by deploying drones down to neptune."
+			]
+			icon: "cosmiccore:uv_thruster"
+			id: "34146855E88D1684"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Nasty Surface Below"
+			tasks: [
+				{
+					id: "3770BF0FD9D0A51B"
+					item: "cosmiccore:uv_thruster"
+					type: "item"
+				}
+				{
+					id: "287BD239A17E9841"
+					item: "cosmiccore:uv_powercell"
+					type: "item"
+				}
+				{
+					id: "3E3DF54C9ACC9C1C"
+					item: "cosmiccore:uv_gyroscope"
+					type: "item"
+				}
+			]
+			title: "Neptune : The Deployment Zone"
+			x: -1.75d
+			y: -9.0d
+		}
+		{
+			dependencies: ["6DF30406CA7E91FD"]
+			id: "488ADA08FAE3088E"
+			tasks: [{
+				id: "607B5299BDDA5099"
+				item: "gtceu:trinium_shape_memory_foil"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"166FACA43B1432B3"
+				"7144C60B4704D89D"
+			]
+			id: "56B559C6F5323B72"
+			tasks: [{
+				id: "25E32646CC1741EB"
+				item: "gtceu:bedrock_soot_solution_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"56B559C6F5323B72"
+				"738FD35EEC40B750"
+			]
+			id: "71ED6F90EAB5A91B"
+			tasks: [{
+				id: "0266AD59D802ACF0"
+				item: "gtceu:purified_bedrock_soot_solution_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["71ED6F90EAB5A91B"]
+			id: "1D0F0F0417FEDE82"
+			tasks: [{
+				id: "6D4AA82694827524"
+				item: "gtceu:ultra_heavy_bedrock_gas_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["71ED6F90EAB5A91B"]
+			id: "7158DA838EE3D9CC"
+			tasks: [{
+				id: "41AC4018CB495F8D"
+				item: "gtceu:heavy_bedrock_gas_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["71ED6F90EAB5A91B"]
+			id: "7F7342E8CCD71492"
+			tasks: [{
+				id: "43BCC8817067D8CD"
+				item: "gtceu:medium_bedrock_gas_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["71ED6F90EAB5A91B"]
+			id: "2C3923AA7D13E67E"
+			tasks: [{
+				id: "52A0713A814906D0"
+				item: "gtceu:light_bedrock_gas_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["71ED6F90EAB5A91B"]
+			id: "1CA952BE18E3040E"
+			tasks: [{
+				id: "366C076387F3F084"
+				item: "gtceu:ultra_light_bedrock_gas_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"7158DA838EE3D9CC"
+				"1D0F0F0417FEDE82"
+				"7F7342E8CCD71492"
+			]
+			id: "634B23254E43AB4A"
+			tasks: [{
+				id: "2FFBE2FB3E4004AF"
+				item: "gtceu:varible_taranium_slush_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["634B23254E43AB4A"]
+			id: "14870486ABA7A013"
+			tasks: [{
+				id: "746C614C1AD1EEF1"
+				item: "gtceu:severely_xenon_cracked_taranium_slush_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["14870486ABA7A013"]
+			id: "1F4EBE94F92B2A16"
+			tasks: [{
+				id: "1A359D1AFA1B912A"
+				item: "gtceu:middle_purity_taranium_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["14870486ABA7A013"]
+			id: "43F57D31181F5DFE"
+			tasks: [{
+				id: "5CF11D34CEF18C3D"
+				item: "gtceu:low_purity_taranium_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["14870486ABA7A013"]
+			id: "1DDC8A38EE9EC601"
+			tasks: [{
+				id: "060BBFB88B8200B2"
+				item: "gtceu:high_purity_taranium_dust"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"43F57D31181F5DFE"
+				"1F4EBE94F92B2A16"
+			]
+			id: "15C9C9E5FB51FAE6"
+			tasks: [{
+				id: "0C0398A462B5CF99"
+				item: "gtceu:taranium_rich_blend_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["1DDC8A38EE9EC601"]
+			id: "60E302A72B5CCD13"
+			tasks: [{
+				id: "13F22E74C7CD3AAC"
+				item: "gtceu:unstable_taranium_dust"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"729E3A063736105A"
+				"4E440D6E8745CE17"
+			]
+			hide_dependency_lines: true
+			id: "36BE5C588DF13263"
+			tasks: [{
+				id: "1E698BA91574425F"
+				item: "gtceu:seaborgium_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -20.5d
+		}
+		{
+			dependencies: [
+				"729E3A063736105A"
+				"15C9C9E5FB51FAE6"
+			]
+			hide_dependency_lines: true
+			id: "185EFACDD5C99C37"
+			tasks: [{
+				id: "3601C284A237A8BF"
+				item: "cosmiccore:taranium_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -20.5d
+		}
+		{
+			dependencies: [
+				"729E3A063736105A"
+				"5A6D76DE56224F7D"
+			]
+			hide_dependency_lines: true
+			id: "7699EB44B24B3745"
+			tasks: [{
+				id: "098E8F16BF9FAF4C"
+				item: "cosmiccore:harmonic_processor_mainframe"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -19.5d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			hide_dependency_lines: true
+			id: "41D69650AF81F79C"
+			tasks: [{
+				id: "5154F806E036E7A5"
+				item: "cosmiccore:ichorium_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -22.5d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			hide_dependency_lines: true
+			id: "7C658A2177187ED5"
+			tasks: [{
+				id: "1D1ABC183F735385"
+				item: "cosmiccore:temmerite_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -22.5d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			hide_dependency_lines: true
+			id: "23DE19C089CF4F87"
+			tasks: [{
+				id: "36A419860C806A57"
+				item: "cosmiccore:living_igniclad_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -21.5d
+		}
+		{
+			dependencies: ["7C281261A1A7C05E"]
+			id: "4D4F575B6EE619FE"
+			shape: "hexagon"
+			tasks: [{
+				id: "7E5E0EBA59C66864"
+				item: "createdeco:decal_up"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -23.5d
+		}
+		{
+			dependencies: ["4D4F575B6EE619FE"]
+			id: "57B87A84E44834C1"
+			tasks: [{
+				id: "0786C941CA44712F"
+				item: "minecraft:writable_book"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -25.0d
+		}
+		{
+			dependencies: [
+				"729E3A063736105A"
+				"34146855E88D1684"
+			]
+			hide_dependency_lines: true
+			id: "79ADB5985314E48D"
+			tasks: [{
+				id: "15655605EB20842B"
+				item: "gtceu:ionized_fulgorinth_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -21.5d
+		}
+		{
+			dependencies: ["1BA89E5BDE25C2DE"]
+			id: "1D891827C3CAC72D"
+			tasks: [{
+				id: "47CD5CB0E9EC5C8C"
+				item: "cosmiccore:ultradense_infinity_plate"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["72D3D7AA1239F8D1"]
+			id: "1BA89E5BDE25C2DE"
+			tasks: [{
+				id: "6DC5802E40A051D1"
+				item: "cosmiccore:infinity_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["037C4908534E7469"]
+			id: "66B72FD7E0AE31AA"
+			tasks: [{
+				id: "097BD25C49F74F15"
+				item: "cosmiccore:harmonically_tuned_circuit_board"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["66B72FD7E0AE31AA"]
+			id: "3BC0AA44626D4643"
+			tasks: [{
+				id: "21C66988D203D15F"
+				item: "cosmiccore:harmonically_tuned_printed_circuit_board"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -13.5d
+		}
+		{
+			dependencies: [
+				"1CA952BE18E3040E"
+				"2C3923AA7D13E67E"
+			]
+			id: "5641E94A61B98784"
+			tasks: [{
+				id: "277DF340C6E8E489"
+				item: "gtceu:primed_bedrock_gas_bucket"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5641E94A61B98784"]
+			id: "7D72FDBC832A8BA5"
+			tasks: [{
+				id: "6C8929F8105502C9"
+				item: "gtceu:cold_ignis_bucket"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5641E94A61B98784"]
+			id: "1FB847F398F7BEAC"
+			tasks: [{
+				id: "2F0434EA081B8865"
+				item: "gtceu:ignis_bucket"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5641E94A61B98784"]
+			hide_dependency_lines: true
+			id: "090BC9A98CCFE5FF"
+			tasks: [{
+				id: "05CB6FD9BB330DE0"
+				item: "cosmiccore:sculk_myofibroblast"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"60E302A72B5CCD13"
+				"72D3D7AA1239F8D1"
+			]
+			id: "26B490867C52BE00"
+			tasks: [{
+				id: "15E02FCC970B01B9"
+				item: "kubejs:taranium_resonantion_charge"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["2A34B8F3D5A6C7BB"]
+			hide_dependency_lines: true
+			id: "2E3214F7161CA189"
+			tasks: [{
+				id: "2DF8622268BC866A"
+				item: "cosmiccore:living_igniclad_wire_spool"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -14.25d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			description: [
+				"I'm not even sure how you got here without making one void miner."
+				""
+				"This quest is here entirely just to tell you that you need to make one now."
+				""
+				"Bedrock Soot Requires a Void Miner at Y -50 or lower with a special mining apparatus."
+			]
+			id: "61A9FE7CDEF59513"
+			subtitle: "If you haven't already.."
+			tasks: [{
+				id: "1F6DFEB29A5E1B92"
+				item: "cosmiccore:void_miner"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			id: "1B3A5251A89F4D3A"
+			tasks: [{
+				id: "7D5CC0D0D6E3170E"
+				item: "cosmiccore:phantnon"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			id: "438A37EF47D3D476"
+			tasks: [{
+				id: "21622CFEE452BCC6"
+				item: "cosmiccore:seraphon"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			id: "657129F4C767F9D7"
+			tasks: [{
+				id: "64B446964C8A333E"
+				item: "cosmiccore:esson"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			id: "6381733067BEB5BB"
+			tasks: [{
+				id: "09CBBA67538C05D1"
+				item: "cosmiccore:mystrix"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			id: "3DDDDC6AE5E3E256"
+			tasks: [{
+				id: "658457DB8C5A110A"
+				item: "cosmiccore:tenaebrum"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			id: "33F38331BD8FE009"
+			tasks: [{
+				id: "4A9687A3BB6E9FCE"
+				item: "cosmiccore:crystala"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"05F44DC28A4AAEEE"
+				"5C4BED093ADA89EB"
+			]
+			id: "6425ADB1D1C80E87"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7656F8F4626DD029"
+				item: "cosmiccore:component_assembly_line"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["63AD917A66644A39"]
+			id: "4DB8FD24F1E67BE3"
+			subtitle: "Midnight Stars"
+			tasks: [{
+				id: "05FDAA3304E48B79"
+				item: "cosmiccore:nevramite_ingot"
+				type: "item"
+			}]
+			title: "Nevramite, The Expensive Way"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["23DBF1B5344256C9"]
+			id: "5D3ECF60ECEC3248"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "469BA5AC671E4C59"
+				item: "cosmiccore:titan_fusion_reactor"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			id: "3B156357B3B09546"
+			tasks: [{
+				id: "4793225DB5593434"
+				item: "cosmiccore:spirit_crucible"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4DB8FD24F1E67BE3"]
+			id: "037C4908534E7469"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "230946E84BF3479B"
+				item: "cosmiccore:pcb_foundry"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["5D3ECF60ECEC3248"]
+			id: "50E6A0D34503B837"
+			shape: "gear"
+			subtitle: "One Step Neutronite + Byproducts"
+			tasks: [{
+				id: "0E50ACB88EBA979A"
+				item: "cosmiccore:neutronite_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5D3ECF60ECEC3248"]
+			id: "4ED1DA059D57BF07"
+			shape: "gear"
+			subtitle: "One Step Europium"
+			tasks: [{
+				id: "7CC63083C519846C"
+				item: "gtceu:europium_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7E88AA8CCDA14810"]
+			id: "6AE9918F168143DF"
+			tasks: [{
+				id: "26ABE914CE9709B6"
+				item: "cosmiccore:rune_conjunction_kholys"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2A541D3BB567747C"]
+			id: "3B35A406FBD866DA"
+			tasks: [{
+				id: "7FF9EF2D7CAE9543"
+				item: "cosmiccore:rune_conjunction_valkruth"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			hide_dependency_lines: true
+			id: "1BC747D256EA46E4"
+			tasks: [{
+				id: "305E6A95E020813C"
+				item: "malum:malignant_pewter_plating"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"6AE9918F168143DF"
+				"1BC747D256EA46E4"
+			]
+			id: "090D0C7C4E4843E1"
+			tasks: [{
+				id: "261D0988E4C192BE"
+				item: "cosmiccore:heavy_assembler"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1941E698806C576E"]
+			id: "709F3DEEBB823DC5"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "6DC6BFC135BE7A18"
+				item: "cosmiccore:submerged_welder"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3F10428D79FBCCE8"]
+			hide_dependency_lines: true
+			id: "2DA606E29F9EA22B"
+			tasks: [{
+				id: "308C4FB609710404"
+				item: "gtceu:blacklight"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["3F10428D79FBCCE8"]
+			hide_dependency_lines: true
+			id: "293515B5BC88BA43"
+			tasks: [{
+				id: "4D1B1181AC623480"
+				item: "gtceu:genesis_resin_bucket"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["3F10428D79FBCCE8"]
+			hide_dependency_lines: true
+			id: "4DC7D5540C4B0637"
+			tasks: [{
+				id: "6CD1F5039471B328"
+				item: "gtceu:perpetuity_slag_plasma_bucket"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["3F10428D79FBCCE8"]
+			hide_dependency_lines: true
+			id: "499E1AEA473F54ED"
+			tasks: [{
+				id: "4F775787DCE01D89"
+				item: "cosmiccore:etheric_spirit"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["7B031A058742F195"]
+			id: "6F929BF8E68C9DE6"
+			tasks: [{
+				id: "038475AD68115DC1"
+				item: "cosmiccore:crystalline_transistor"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["7B031A058742F195"]
+			id: "6D217E17DBF899BD"
+			tasks: [{
+				id: "7963A07D0AB6C37B"
+				item: "cosmiccore:crystalline_resistor"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["7B031A058742F195"]
+			id: "37CDC52112269C5A"
+			tasks: [{
+				id: "3E388ACD484512A4"
+				item: "cosmiccore:crystalline_capacitor"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["7B031A058742F195"]
+			id: "2384FC11945FB780"
+			tasks: [{
+				id: "267DA1D344A4C05F"
+				item: "cosmiccore:crystalline_diode"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7B031A058742F195"]
+			id: "3A6CE7C17C11968D"
+			tasks: [{
+				id: "38A96DFCDB4FB9D5"
+				item: "cosmiccore:crystalline_inductor"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"729E3A063736105A"
+				"4DB8FD24F1E67BE3"
+			]
+			icon: "architects_palette:hadaline_lamp"
+			id: "39097F62BFC78AD3"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				dimension: "frontiers:the_deep_below"
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "botania:block/alfheim_portal_swirl"
+					}
+				}
+				id: "5CF34D052B141E3C"
+				title: "The Deep Below"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["39097F62BFC78AD3"]
+			id: "4043F8ECA792A3A2"
+			tasks: [{
+				id: "47E86B5DF69761C2"
+				item: "gtceu:liquid_shadows_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"4DB8FD24F1E67BE3"
+				"39097F62BFC78AD3"
+				"79305C826B2705FD"
+			]
+			id: "23DBF1B5344256C9"
+			tasks: [{
+				id: "3031DF3E9D8A34D9"
+				item: "cosmiccore:bichromal_nevramite_casing"
+				type: "item"
+			}]
 			x: -4.0d
-			y: -15.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["482FC79E15210C24"]
+			id: "7B031A058742F195"
+			tasks: [{
+				id: "6B466C9DCA05D43F"
+				item: "gtceu:grand_assembly_line"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"499E1AEA473F54ED"
+				"6CDD6541577BD264"
+			]
+			id: "12CB452B8307234A"
+			tasks: [{
+				id: "1A0C1BB2836B1CC6"
+				item: "cosmiccore:thaumica_wafer"
+				type: "item"
+			}]
+			x: -13.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["6CF4791506C25CF8"]
+			id: "3FE4F80DC7E8900F"
+			tasks: [{
+				id: "5900CC806B198F92"
+				item: "cosmiccore:refined_harmonics_wafer"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["703C590EE8E208B1"]
+			id: "6CDD6541577BD264"
+			tasks: [{
+				id: "100870D0EA3372FB"
+				item: "cosmiccore:nullified_harmonics_wafer"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5F9168C4700B6EB5"]
+			id: "490CC06FA6FB3CBD"
+			tasks: [{
+				id: "7BDA303C93D83433"
+				item: "ad_astra:glacio_globe"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["5D3ECF60ECEC3248"]
+			id: "546555BAE6D13B34"
+			shape: "gear"
+			tasks: [{
+				id: "4D4A1A822B09D768"
+				item: "gtceu:duranium_ingot"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5D3ECF60ECEC3248"]
+			id: "14C0EF451061C5FF"
+			shape: "gear"
+			tasks: [{
+				id: "74A14B6469CB95EC"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4043F8ECA792A3A2"]
+			id: "7144C60B4704D89D"
+			tasks: [{
+				id: "07FDAAF20C8366BA"
+				item: "gtceu:shaded_bedrock_oil_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			hide_dependency_lines: true
+			id: "63AD917A66644A39"
+			shape: "rsquare"
+			size: 2.0d
+			subtitle: "Compress the World, Shear the Sky"
+			tasks: [{
+				id: "1FF2363AE60F6031"
+				item: "cosmiccore:lunar_sheer_hammer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			hide_dependency_lines: true
+			id: "72D3D7AA1239F8D1"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "7906C9C16AECE985"
+				item: "cosmiccore:lunar_sheer_hammer"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"4CF34CFEFA852F2D"
+				"7E2FA41C01816E1D"
+			]
+			id: "32B37FF27D50965D"
+			tasks: [{
+				id: "0C603370F0E6E043"
+				item: "gtceu:rubidine_froth_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6491F28510DF07E0"
+				"1DECB94387046DF6"
+			]
+			id: "79AED8686EBD940E"
+			tasks: [{
+				id: "277D9B90E3650FE2"
+				item: "gtceu:rubidium_doped_liquid_glass_supercoolant_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			hide_dependency_lines: true
+			id: "6491F28510DF07E0"
+			tasks: [{
+				id: "1E17517875EB63A0"
+				item: "gtceu:liquid_glass_supercoolant_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["06E9A4E56E403733"]
+			id: "290316514E0D3BD5"
+			shape: "gear"
+			tasks: [{
+				id: "3CA917470AFF4F58"
+				item: "gtceu:liquid_glass_supercoolant_bucket"
+				type: "item"
+			}]
+			title: "You get your coolants back!"
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["09E9AD02604929C0"]
+			id: "1DECB94387046DF6"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "12FA5E01733149A9"
+				item: "gtceu:rubidium_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["32B37FF27D50965D"]
+			id: "09E9AD02604929C0"
+			tasks: [{
+				id: "746B1B6E8859FD6F"
+				item: "gtceu:rubidine_honey_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			hide_dependency_lines: true
+			id: "7E2FA41C01816E1D"
+			tasks: [{
+				id: "35AF95DB9581C097"
+				item: "gtceu:rubidine_extraction_rosin_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1941E698806C576E"]
+			id: "5948078CB5B7166B"
+			tasks: [{
+				id: "600AE3B36A8F55A7"
+				type: "custom"
+			}]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			hide_dependency_lines: true
+			id: "315B333E617513CF"
+			tasks: [{
+				id: "212CE5636805DDF4"
+				item: "cosmiccore:tenaebrum"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			hide_dependency_lines: true
+			id: "41D6062B5A1485FC"
+			tasks: [{
+				id: "10F8B3446AD5FA11"
+				item: "cosmiccore:seraphon"
+				type: "item"
+			}]
+			x: 17.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			hide_dependency_lines: true
+			id: "002781F4A495B329"
+			tasks: [{
+				id: "614AFF1723920CBA"
+				item: "cosmiccore:crystala"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6966ADADA86CBCC4"]
+			hide_dependency_lines: true
+			id: "26313B90F718378F"
+			tasks: [{
+				id: "584C02AC2FA9F9C7"
+				item: "cosmiccore:tessaron"
+				type: "item"
+			}]
+			x: 19.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5948078CB5B7166B"]
+			id: "5A80D8880B005FF4"
+			tasks: [{
+				id: "6090C66458C2FC45"
+				type: "custom"
+			}]
+			x: 18.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			id: "4CF34CFEFA852F2D"
+			tasks: [{
+				id: "4C17F7BAE7908774"
+				item: "gtceu:naumannite_dust"
+				type: "item"
+			}]
+			x: 1.3214285714285623d
+			y: 1.982142857142854d
+		}
+		{
+			dependencies: ["00DFD27B37363F4F"]
+			description: [
+				"\"Why does this bee produce sawblades\""
+				""
+				"Don't ask, I don't know either."
+				""
+				"Careful, they're sharp and there is another pallet of them from your hives."
+			]
+			id: "7D957FA65DEA6955"
+			subtitle: "A Painful Path"
+			tasks: [{
+				id: "2F76D48CBA2B089C"
+				item: "cosmiccore:pale_saw"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"7B10104A79CA3447"
+				"482614E3EB8D5DE0"
+				"5CBF270FCD625753"
+				"1D50B3BB5B643383"
+			]
+			id: "79305C826B2705FD"
+			tasks: [{
+				id: "207F777199C0AB18"
+				item: "cosmiccore:pale_steel_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["00DFD27B37363F4F"]
+			id: "7B10104A79CA3447"
+			tasks: [{
+				id: "062C0E0FE8FC3053"
+				item: "cosmiccore:bee_comb_pale"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["729E3A063736105A"]
+			id: "00DFD27B37363F4F"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							analyzed: 0b
+							genome: {
+								"forestry:activity": {
+									active: "forestry:activity_cathemeral"
+									inactive: "forestry:activity_cathemeral"
+								}
+								"forestry:bee_effect": {
+									active: "forestry:bee_effect_none"
+									inactive: "forestry:bee_effect_none"
+								}
+								"forestry:bee_species": {
+									active: "cosmiccore:bee_pale"
+									inactive: "cosmiccore:bee_pale"
+								}
+								"forestry:cave_dwelling": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+								"forestry:fertility": {
+									active: "forestry:1id"
+									inactive: "forestry:1id"
+								}
+								"forestry:flower_type": {
+									active: "forestry:flower_type_vanilla"
+									inactive: "forestry:flower_type_vanilla"
+								}
+								"forestry:humidity_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:lifespan": {
+									active: "forestry:60i"
+									inactive: "forestry:60i"
+								}
+								"forestry:pollination": {
+									active: "forestry:5id"
+									inactive: "forestry:5id"
+								}
+								"forestry:speed": {
+									active: "forestry:1.7f"
+									inactive: "forestry:1.7f"
+								}
+								"forestry:temperature_tolerance": {
+									active: "forestry:tolerance_none"
+									inactive: "forestry:tolerance_none"
+								}
+								"forestry:territory": {
+									active: "forestry:9_6_9"
+									inactive: "forestry:9_6_9"
+								}
+								"forestry:tolerates_rain": {
+									active: "forestry:falsed"
+									inactive: "forestry:falsed"
+								}
+							}
+							health: 60
+							max_heath: 60
+							pristine: 1b
+						}
+					}
+					id: "forestry:bee_princess_ge"
+					tag: {
+						ForgeCaps: {
+							Parent: {
+								analyzed: 0b
+								genome: {
+									"forestry:activity": {
+										active: "forestry:activity_cathemeral"
+										inactive: "forestry:activity_cathemeral"
+									}
+									"forestry:bee_effect": {
+										active: "forestry:bee_effect_none"
+										inactive: "forestry:bee_effect_none"
+									}
+									"forestry:bee_species": {
+										active: "cosmiccore:bee_pale"
+										inactive: "cosmiccore:bee_pale"
+									}
+									"forestry:cave_dwelling": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+									"forestry:fertility": {
+										active: "forestry:1id"
+										inactive: "forestry:1id"
+									}
+									"forestry:flower_type": {
+										active: "forestry:flower_type_vanilla"
+										inactive: "forestry:flower_type_vanilla"
+									}
+									"forestry:humidity_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:lifespan": {
+										active: "forestry:60i"
+										inactive: "forestry:60i"
+									}
+									"forestry:pollination": {
+										active: "forestry:5id"
+										inactive: "forestry:5id"
+									}
+									"forestry:speed": {
+										active: "forestry:1.7f"
+										inactive: "forestry:1.7f"
+									}
+									"forestry:temperature_tolerance": {
+										active: "forestry:tolerance_none"
+										inactive: "forestry:tolerance_none"
+									}
+									"forestry:territory": {
+										active: "forestry:9_6_9"
+										inactive: "forestry:9_6_9"
+									}
+									"forestry:tolerates_rain": {
+										active: "forestry:falsed"
+										inactive: "forestry:falsed"
+									}
+								}
+								health: 60
+								max_heath: 60
+								pristine: 1b
+							}
+						}
+					}
+				}
+				id: "7F46ADE22665D95D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "nbt(fuzzy:{ForgeCaps:{Parent:{genome:{\"forestry:bee_species\":{active:\"cosmiccore:bee_pale\"}},health:60,max_heath:60,pristine:1b}}})"
+					}
+				}
+				title: "Any Pale Species"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B10104A79CA3447"]
+			id: "5CBF270FCD625753"
+			subtitle: "Powerful Lubricant"
+			tasks: [{
+				id: "695B00B72CEB4394"
+				item: "cosmiccore:pale_oil_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D957FA65DEA6955"]
+			id: "482614E3EB8D5DE0"
+			subtitle: "Shimmers in the dark"
+			tasks: [{
+				id: "6BDEB44D39758820"
+				item: "cosmiccore:pale_scrap"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B10104A79CA3447"]
+			id: "1D50B3BB5B643383"
+			subtitle: "An Ore Forgotten"
+			tasks: [{
+				id: "2ADE5855E883B03C"
+				item: "cosmiccore:raw_reclaimed_pale_ore"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.696428571428555d
 		}
 	]
-	title: "The Progenitor - [&3UV&7]"
+	title: "Soulforging - [&3UV&7]"
 }

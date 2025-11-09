@@ -1,0 +1,12 @@
+{
+  "type": "embers:stamping",
+  "input": {
+    "item": "embers:ember_shard"
+  },
+  "output": {
+    "item": "embers:ember_grit"
+  },
+  "stamp": {
+    "item": "embers:flat_stamp"
+  }
+}

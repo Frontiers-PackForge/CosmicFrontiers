@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor('cracking_cbd_to_cracked_cbd')
-        .notConsumable('96x gtceu:luminescent_utherium_dust')
+        .notConsumable('96x gtceu:tempered_iesnium_dust')
         .inputFluids('gtceu:cetane_boosted_diesel 1000')
         .inputFluids('gtceu:ammonia 500')
         .inputFluids('gtceu:hydrogen 500')

@@ -4,7 +4,7 @@
   "allow_crystal": true,
   "amount_per_item": 1,
   "input": {
-    "item": "malum:hex_ash"
+    "item": "minecraft:redstone"
   },
   "level": {
     "max": 10

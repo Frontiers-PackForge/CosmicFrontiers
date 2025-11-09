@@ -17,11 +17,11 @@
 			y: -3.305229591836735d
 		}
 		{
-			height: 4.0d
-			image: "frontiers:textures/questimages/miscicons/wingedborder.png"
+			height: 1.5d
+			image: "frontiers:textures/questimages/miscicons/blank_borders.png"
 			rotation: 0.0d
 			width: 4.0d
-			x: 6.103749111584953d
+			x: 6.0d
 			y: -0.5d
 		}
 	]
@@ -54,9 +54,7 @@
 				id: "gtceu:hsse_hammer"
 				tag: {
 					Damage: 0
-					GT.Tool: {
-						Damage: 0
-					}
+					GT.Tool: { }
 				}
 			}
 			id: "4D96DE63E82D8EAA"
@@ -116,9 +114,14 @@
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
 			description: [
-				"This world hosts a wide variety of biome diversity; this also entails a variety of temperature locales that may be undesirable for your fragile body."
+				"This world hosts a wide variety of &ebiome diversity&r; this also entails a variety of &6varying temperature locales&r that may be undesirable for your fragile body."
 				""
-				"Your body temperature is affected by several factors."
+				"Your body temperature is affected by several factors. If you've spawned somewhere hostile you'll want to look into &eSnow Armor&r or &eDesert Armor&r FAST, as you have limited immunity."
+				""
+				"If you manage to find lava, magma blocks, or various snow blocks, you can hold those as well to cool down or warm up!"
+				""
+				"If your enviroment is too hostile or you wish to find a new location to settle, you also have access to /rtp"
+				""
 				""
 				"&eThe Time of Day"
 				"Season"
@@ -139,13 +142,13 @@
 				Count: 1
 				ForgeCaps: {
 					Parent: {
-						temperature: 6.8f
+						temperature: 41.8f
 					}
 				}
 				id: "legendarysurvivaloverhaul:thermometer"
 			}
 			id: "423EB7A96CB261A3"
-			min_width: 400
+			min_width: 450
 			rewards: [{
 				id: "0343745A0E5CD43E"
 				item: "cosmiccore:shard_of_perpetuity"
@@ -226,6 +229,7 @@
 				Count: 1
 				id: "gtceu:steel_mining_hammer"
 				tag: {
+					Damage: 0
 					DisallowContainerItem: 0b
 					GT.Behaviours: {
 						AoEColumn: 1
@@ -237,7 +241,6 @@
 						TorchPlacing: 1b
 					}
 					GT.Tool: {
-						Damage: 0
 						HarvestLevel: 3
 						MaxDamage: 1535
 						ToolSpeed: 6.0f
@@ -247,31 +250,103 @@
 			}
 			id: "5693AA8924634F44"
 			rewards: [{
-				id: "77B394833AAFBC59"
+				id: "1F845ED6240BBE27"
 				item: {
 					Count: 1
-					id: "gtceu:steel_mining_hammer"
+					id: "tconstruct:sledge_hammer"
 					tag: {
-						DisallowContainerItem: 0b
-						GT.Behaviours: {
-							AoEColumn: 1
-							AoELayer: 0
-							AoERow: 1
-							MaxAoEColumn: 1
-							MaxAoELayer: 0
-							MaxAoERow: 1
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:cobalt"
+							"tconstruct:cobalt"
+							"tconstruct:cobalt"
+							"tconstruct:cobalt"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tinkerslevellingaddon:improvable"
+							}
+							{
+								level: 1
+								name: "tconstruct:unbreakable"
+							}
+							{
+								level: 1
+								name: "tconstruct:creative_slot"
+							}
+							{
+								level: 5
+								name: "tconstruct:reinforced"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+							{
+								level: 4
+								name: "tconstruct:lightweight"
+							}
+							{
+								level: 2
+								name: "tconstruct:smite"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.35f
+							"tconstruct:durability": 4.0f
+							"tconstruct:mining_speed": 0.4f
 						}
-						GT.Tool: {
-							Damage: 0
-							HarvestLevel: 3
-							MaxDamage: 1535
-							ToolSpeed: 6.0f
+						tic_name: "Weirdly Durable Hammer"
+						tic_persistent: {
+							abilities: -2
+							"tconstruct:creative": {
+								abilities: 1
+								upgrades: 6
+							}
+							upgrades: -6
 						}
-						HideFlags: 2
-						Unbreakable: 1
-						display: {
-							Name: "{\"text\":\"Weirdly Durable Hammer\"}"
+						tic_stats: {
+							"tconstruct:armor_toughness": 1.0f
+							"tconstruct:attack_damage": 8.505001f
+							"tconstruct:attack_speed": 1.0079999f
+							"tconstruct:draw_speed": 1.12f
+							"tconstruct:durability": 4031.9998f
+							"tconstruct:harvest_tier": "minecraft:netherite"
+							"tconstruct:knockback_resistance": 0.05f
+							"tconstruct:mining_speed": 4.3679996f
+							"tconstruct:velocity": 1.232f
 						}
+						tic_upgrades: [
+							{
+								level: 1
+								name: "tconstruct:creative_slot"
+							}
+							{
+								level: 5
+								name: "tconstruct:reinforced"
+							}
+							{
+								level: 1
+								name: "tconstruct:netherite"
+							}
+							{
+								level: 1
+								name: "tconstruct:unbreakable"
+							}
+							{
+								level: 1
+								name: "tinkerslevellingaddon:improvable"
+							}
+						]
+						tic_volatile_data: {
+							abilities: 2
+							"tconstruct:indestructible": 1b
+							"tconstruct:rarity": 2
+							upgrades: 8
+						}
+						toolExp: 13.420000000000002d
 					}
 				}
 				type: "item"
@@ -354,9 +429,7 @@
 						id: "gtceu:iron_hammer"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					id: "3CD086DF3214B1FB"
@@ -376,9 +449,7 @@
 						id: "gtceu:iron_wrench"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					id: "1FCEBF1D7C6D4F12"
@@ -398,9 +469,7 @@
 						id: "gtceu:iron_file"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					id: "53845C521325E232"
@@ -420,9 +489,7 @@
 						id: "gtceu:iron_saw"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					id: "4BCF77A595638786"
@@ -442,9 +509,7 @@
 						id: "gtceu:iron_screwdriver"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					id: "4A1A547444B29038"
@@ -464,9 +529,7 @@
 						id: "gtceu:iron_mortar"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					id: "32F31D914A67040F"
@@ -486,9 +549,7 @@
 						id: "gtceu:iron_wire_cutter"
 						tag: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
+							GT.Tool: { }
 						}
 					}
 					id: "3F6E0509177C8A6F"
@@ -860,7 +921,7 @@
 				type: "checkmark"
 			}]
 			title: "Need a Light?"
-			x: 7.5d
+			x: 8.5d
 			y: 7.0d
 		}
 		{
@@ -888,10 +949,113 @@
 			x: 4.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"Chunky is a mod that allows you to 'pregen' your worlds, effectively generating all chunks in a radius."
+				""
+				"check out the /chunky command to get started"
+				""
+				"notably you'll want to set /chunky center and /chunky radius [xrad] [zrad]"
+				""
+				"start pre-gen via /chunky start"
+				""
+				""
+				"This process may take some time depending on hardware, but is recommended to do before exploring"
+				""
+				""
+				""
+				"General other tips that help with worldgen lag"
+				"- Use a world Border (set chunky radius to the world border)"
+				"- Pregen everything inside the worldborder"
+				""
+				""
+				"If you are experience performance problems that seem abnormal, please reach out to me on discord."
+			]
+			icon: "gtceu:overworld_marker"
+			id: "35BC4EDD34F49C5D"
+			min_width: 450
+			shape: "rsquare"
+			subtitle: "Recommended prior to Exploration"
+			tasks: [{
+				id: "3BABA51DAD7B142A"
+				title: "Chunky - Pregenerating Worlds"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"C2ME uses extra computer resources to async load your world."
+				""
+				"What does this mean?"
+				"Computer use more resource to make the worldgen go faster*"
+				""
+				"(*In Most cases)"
+				""
+				""
+				""
+				"If you are experiencing horrible performance, I suggest disabling it(C2ME)."
+			]
+			icon: "gtceu:small_vibrant_alloy_gear"
+			id: "0C12BB97C29D4CD2"
+			shape: "rsquare"
+			subtitle: "Save us from thine horrid worldgen performance!"
+			tasks: [{
+				id: "1F59BF679E9E63B3"
+				type: "checkmark"
+			}]
+			title: "Concurrent Chunk Managment Engine [C2ME]"
+			x: 3.738095238095255d
+			y: 7.240242346938771d
+		}
+		{
+			dependencies: ["4D96DE63E82D8EAA"]
+			description: [
+				"Your first tools will NOT automatically level up, and thus require the 'Improvable' trait."
+				""
+				"Take 4 Improvable Shards on the house. this will cover most basic tools you will make."
+				""
+				"If you waste them, there's a valid recipe as well taking Shards of Perpetuity and Enderpearls."
+				""
+				""
+				"Yes I made this quest because I didn't want to do this at the start of the game."
+				"Sue me."
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:modifier_crystal"
+				tag: {
+					modifier: "tinkerslevellingaddon:improvable"
+				}
+			}
+			id: "76BE51F6D87B7C74"
+			rewards: [{
+				count: 4
+				id: "1881CF191B4B4B56"
+				item: {
+					Count: 1
+					id: "tconstruct:modifier_crystal"
+					tag: {
+						modifier: "tinkerslevellingaddon:improvable"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Upgrades on the House"
+			tasks: [{
+				id: "6A8592F237A25101"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 7.5d
+		}
 	]
 	subtitle: [
 		"&fIt all starts here"
 		"&fFinish this chapter to Unlock Questbook"
 	]
-	title: "&fFirst Steps and Important Info"
+	title: "&fAwakening [Start and Info]"
 }

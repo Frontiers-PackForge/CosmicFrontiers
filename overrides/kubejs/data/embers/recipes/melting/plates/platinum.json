@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:plates/platinum"
+      }
+    }
+  ],
+  "input": {
+    "tag": "forge:plates/platinum"
+  },
+  "output": {
+    "amount": 144,
+    "tag": "forge:platinum"
+  }
+}

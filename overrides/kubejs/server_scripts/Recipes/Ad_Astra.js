@@ -71,7 +71,7 @@ ServerEvents.tags('item', event => {
   event.add('ad_astra:space_suit_items', 'gtceu:quarktech_leggings')
   event.add('ad_astra:space_suit_items', 'gtceu:quarktech_boots')
   event.add('ad_astra:space_suit_items', 'gtceu:quarktech_helmet')
-  
+
   event.add('ad_astra:space_suit_items', 'cosmiccore:sanguine_warptech_helmet')
   event.add('ad_astra:space_suit_items', 'cosmiccore:sanguine_warptech_leggings')
   event.add('ad_astra:space_suit_items', 'cosmiccore:sanguine_warptech_boots')
@@ -84,12 +84,22 @@ ServerEvents.tags('fluid', event => {
   event.remove('ad_astra:fuel', `ad_astra:fuel`)
   event.remove('ad_astra:fuel', `ad_astra:cryo_fuel`)
   event.remove(`forge:oxygen`, 'ad_astra:oxygen')
+  event.remove(`forge:water`, 'blasmatech:mana')
+  event.remove(`minecraft:water`, 'blasmatech:mana')
   event.remove(`forge:hydrogen`, 'ad_astra:hydrogen')
   event.remove(`forge:oil`, 'ad_astra:oil')
   event.remove(`forge:virtue_meld`, 'cosmiccore:virtue_meld')
 })
 
 ServerEvents.recipes(event => {
+
+
+  event.remove({ type: 'ad_astra:cryo_freezing' })
+  event.remove({ type: 'ad_astra:refining' })
+  event.remove({ type: 'ad_astra:oxygen_loading' })
+  event.remove({ type: 'ad_astra:alloying' })
+  event.remove({ type: 'ad_astra:compressing' })
+
   event.remove({ output: 'ad_astra:tier_1_rocket' })
   event.remove({ output: 'ad_astra:tier_2_rocket' })
   event.remove({ output: 'ad_astra:tier_3_rocket' })
@@ -237,7 +247,7 @@ ServerEvents.recipes(event => {
     .duration(10)
     .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.forming_press("t2_welded_plate")
-    .itemInputs(['4x gtceu:virtue_meld_plate', '4x gtceu:tungsten_steel_plate', '4x gtceu:thorium_plate', '4x gtceu:luminescent_utherium_plate'])
+    .itemInputs(['4x gtceu:virtue_meld_plate', '4x gtceu:tungsten_steel_plate', '4x gtceu:thorium_plate', '4x gtceu:tempered_iesnium_plate'])
     .circuit(1)
     .itemOutputs('kubejs:welded_rocket_plating_mk2')
     .duration(160)
@@ -311,7 +321,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.EV]);
 
   event.recipes.gtceu.assembler('osmiridium_nose_cone')
-    .itemInputs(['8x gtceu:double_osmiridium_plate', '4x gtceu:osmiridium_rod', 'gtceu:nano_processor_mainframe', 'create:rose_quartz_lamp'])
+    .itemInputs(['8x gtceu:double_osmiridium_plate', '4x gtceu:osmiridium_rod', '#gtceu:circuits/luv', 'create:rose_quartz_lamp'])
     .circuit(15)
     .itemOutputs('kubejs:osmiridium_nose_cone')
     .duration(160)
@@ -415,6 +425,26 @@ ServerEvents.recipes(event => {
     'ad_astra:desh_block'
   )
   event.replaceInput(
+    { input: '#ad_astra:steel_block' },
+    '#ad_astra:steel_blocks',
+    'gtceu:steel_block'
+  )
+  event.replaceInput(
+    { input: '#ad_astra:iron_plates' },
+    '#ad_astra:iron_plates',
+    'gtceu:iron_plate'
+  )
+  event.replaceInput(
+    { input: '#ad_astra:steel_plates' },
+    '#ad_astra:steel_plates',
+    'gtceu:steel_plate'
+  )
+  event.replaceInput(
+    { input: '#ad_astra:steel_ingots' },
+    '#ad_astra:steel_ingots',
+    'gtceu:steel_ingot'
+  )
+  event.replaceInput(
     { input: 'ad_astra:iron_rod' },
     'ad_astra:iron_rod',
     'gtceu:iron_rod'
@@ -423,6 +453,11 @@ ServerEvents.recipes(event => {
     { input: 'ad_astra:steel_rod' },
     'ad_astra:steel_rod',
     'gtceu:steel_rod'
+  )
+  event.replaceInput(
+    { id: 'ad_astra:iron_sliding_door' },
+    '#ad_astra:steel_blocks',
+    'minecraft:iron_block'
   )
 })
 

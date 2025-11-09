@@ -53,6 +53,15 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:unstable_terrasteel 1000')
         .itemOutputs('2x gtceu:terrasteel_dust')
         .outputFluids('gtceu:chlorine 500')
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.MV]);
+    //AC route for those who wish to spend some Ember for it to be faster
+    event.recipes.gtceu.arcane_crucible('frontiers:arcane_crucible/terrasteel_dust')
+        .itemInputs(['gtceu:manasteel_dust', 'botania:mana_powder'])
+        .inputFluids('gtceu:unstable_terrasteel 1000')
+        .itemOutputs('2x botania:terrasteel_ingot')
+        .outputFluids('gtceu:chlorine 500')
+        .emberInput(2500)
         .duration(120)
         .EUt(GTValues.VA[GTValues.MV]);
     event.recipes.gtceu.electric_blast_furnace('gtceu:ebf/terrasteel_ingot_recipe')
@@ -85,13 +94,14 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1800)
         .duration(440)
         .EUt(GTValues.VA[GTValues.MV]);
-    event.recipes.gtceu.electric_blast_furnace('gtceu:ebf/ethersteel_ingot_recipe')
+
+    event.recipes.gtceu.arcane_crucible('gtceu:ebf/ethersteel_ingot_recipe')
         .itemInputs(['4x gtceu:stainless_steel_ingot', '2x botania:terrasteel_ingot', '4x gtceu:zano_aluminate_dust'])
         .inputFluids('gtceu:nitrogen 1000')
         .itemOutputs(['8x gtceu:galvanized_ethersteel_ingot', '5x gtceu:alumina_dust', '2x gtceu:electrum_ingot'])
-        .blastFurnaceTemp(2000)
-        .duration(1200)
-        .EUt(GTValues.VA[GTValues.HV]);
+        .emberInput(1000)
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.MV]);
 
 
     event.recipes.gtceu.industrial_chemvat('terra_steel_skip_part_1')

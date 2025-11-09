@@ -49,3 +49,5 @@ modpack/
 serverpack/
 Cosmic.Frontier*.zip
 .env
+overrides/kubejs/client_scripts/jsconfig.json
+overrides/kubejs/jsconfig.json

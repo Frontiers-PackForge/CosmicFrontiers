@@ -70,7 +70,7 @@ ServerEvents.recipes((event) => {
 
   //Transestrification
   event.recipes.gtceu.chemical_reactor("source_enhanced_bio_fuel")
-    .itemInputs("gtceu:tiny_sodium_hydroxide_dust")
+    .itemInputs('cosmiccore:tiny_somanone_dust')
     .inputFluids("gtceu:source_oils 6000")
     .inputFluids("gtceu:ethanol 1000")
     .outputFluids("gtceu:source_enhanced_bio_fuel 6000")
@@ -78,22 +78,15 @@ ServerEvents.recipes((event) => {
     .duration(600)
     .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.large_chemical_reactor("source_enhanced_bio_fuel_batch")
-    .itemInputs("gtceu:sodium_hydroxide_dust")
+    .itemInputs('cosmiccore:somanone_dust')
     .inputFluids("gtceu:source_oils 54000")
     .inputFluids("gtceu:ethanol 9000")
     .outputFluids("gtceu:source_enhanced_bio_fuel 54000")
     .outputFluids("gtceu:glycerol 9000")
     .duration(600)
     .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.combustion_generator("combustion_source_fuel")
-    .inputFluids("gtceu:source_enhanced_bio_fuel 1")
-    .duration(15)
-    .EUt(-32);
-  event.remove({ id: 'gtceu:combustion_generator/naphtha' })
-  event.recipes.gtceu.combustion_generator('worse_naphtha')
-    .inputFluids('gtceu:naphtha 1')
-    .duration(6)
-    .EUt(-GTValues.V[GTValues.LV])
+
+
   //Starry Diesel - Superceeds CBD, Uses Gasoline , Luminite, and CBD to create an energy dense fuel
 
   // event.recipes.gtceu.distillation_tower("prim_oil_tier_1_distillation")

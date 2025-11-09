@@ -1,0 +1,551 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "infinity_archive"
+	group: "49DCE46B3EB22AEA"
+	icon: "dustydecorations:ink_n_quill"
+	id: "6E5F5557508709FC"
+	images: [
+		{
+			dependency: "5BD25BE41EC1BDBB"
+			height: 5.0d
+			image: "frontiers:textures/questimages/miscicons/a.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependency: "46CA8F3DC854CAF6"
+			height: 5.0d
+			image: "frontiers:textures/questimages/miscicons/b.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 4.0d
+			y: 11.0d
+		}
+		{
+			height: 4.0d
+			image: "frontiers:textures/questimages/miscicons/story-title.png"
+			rotation: 0.0d
+			width: 11.0d
+			x: 0.0d
+			y: -3.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"                —----- Script #1.216e939 —-----"
+				"                      &eEnviroment Settings&r - &aOK&r!"
+				"             &eMemory Status&r - &cUnrecoverable Error&r"
+				"               &7Can not disconnect memory storage&r."
+				"                     &7Inducing Temporal Amnesia&r."
+				"                   &cAll other checks have failed&r."
+				"                     Starting Script #1.216e939 "
+				"                —---------------------—-----"
+				"                          VERDICT - GUILTY"
+				"                  STATUS - Sub Dimensional Prison"
+				"          "
+				"                     Error Loading Information"
+				""
+				""
+				" &l&c[Frontiers is an extremely curated experience]"
+				"         &c&l[DO NOT report issues to other mods]"
+				"          &c&l[report all issues to the Frontiers]"
+				"                &c&l[Github before anything! ! !]"
+			]
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "gtceu:hsse_hammer"
+				tag: {
+					Damage: 0
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+					}
+				}
+			}
+			id: "463DB0B29657C699"
+			invisible: true
+			min_width: 300
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "\"Paying the Ultimate Price\""
+			tasks: [{
+				id: "214CE32AA5E1FA36"
+				type: "checkmark"
+			}]
+			title: "Judgement of the Eternal Cycle"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5BD25BE41EC1BDBB"
+				"41BF7343783527D1"
+			]
+			id: "5EA2D50F8F165D66"
+			tasks: [{
+				id: "0D51C37882FD8497"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"5EA2D50F8F165D66"
+				"5EB119EB594C25A7"
+			]
+			id: "335B1E06DD962DD8"
+			tasks: [{
+				id: "21BFA7D9D1C32F7F"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"335B1E06DD962DD8"
+				"31EBF16B0F6F6FA4"
+			]
+			id: "2F8F2641882B0ACB"
+			tasks: [{
+				id: "08F1C49F616B088C"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"2F8F2641882B0ACB"
+				"7336F68927AEC595"
+			]
+			id: "29AC9B19E4A088C4"
+			tasks: [{
+				id: "23DBC72B4D954A1C"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"29AC9B19E4A088C4"
+				"7215A00849C8F5CD"
+			]
+			id: "74D13FED9D51C73C"
+			tasks: [{
+				id: "06D06565598D56BC"
+				item: "gtceu:iv_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"74D13FED9D51C73C"
+				"4A4E0FE812B06F4E"
+			]
+			id: "46CA8F3DC854CAF6"
+			tasks: [{
+				id: "220968EF2AA6B458"
+				item: "gtceu:luv_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"46CA8F3DC854CAF6"
+				"0EC20B7189FB7861"
+			]
+			id: "2F794D6CDEC3506E"
+			tasks: [{
+				id: "5D66D42D4036B7A4"
+				item: "gtceu:zpm_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"2F794D6CDEC3506E"
+				"67B0F78C0D10741F"
+			]
+			id: "68B29284E8F11755"
+			tasks: [{
+				id: "7E3F4A1D30F185E1"
+				item: "gtceu:uv_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["463DB0B29657C699"]
+			id: "5BD25BE41EC1BDBB"
+			tasks: [{
+				id: "3D30E95EF1D12036"
+				item: "gtceu:bronze_brick_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"14988E390F2CD204"
+				"5BD25BE41EC1BDBB"
+			]
+			description: [
+				"Something was meant to be here, but I can't seem to remember."
+				""
+				"This story that seems similar yet foreign, remembered but also forgotten, is burning a hole in my head."
+				"If I keep establishing myself in this world, I should be able to find a starting point for this story."
+				""
+				"These headaches have gotten unbearably loud."
+			]
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			hide_until_deps_visible: true
+			icon: "minecraft:writable_book"
+			id: "41BF7343783527D1"
+			shape: "diamond"
+			subtitle: "Story Entry 1 | Description Hidden Until Completed"
+			tasks: [{
+				id: "655E2351DD16E295"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
+			title: "Major Story #1"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3C2F76C18CC1A56E"
+				"29AC9B19E4A088C4"
+			]
+			description: [
+				"After my near-death encounter with that hostile force—the one that made the world itself tremble—I can’t help but question:"
+				"Am I trapped here? Or is this a world I’ve known before?"
+				""
+				"Perpetuity pulses like a second heartbeat now. It recoils from anything that opposes me, as if rejecting possibilities that shouldn't exist."
+				""
+				"This place… it’s too familiar. Every action I take leaves a hollow ache in my chest, like grieving for something I’ve forgotten. The connection is undeniable, yet every attempt to uncover the truth is met with violent resistance either in mind or in reality."
+				""
+				"I must mentally prepare for the worst, and keep pushing forward, I believe I am almost to a conclusion here."
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: "minecraft:writable_book"
+			id: "7215A00849C8F5CD"
+			min_width: 400
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Weapons of the Soul | Lore Entry"
+			tasks: [{
+				id: "1DB1FEBDB2871BA4"
+				item: "botania:life_essence"
+				type: "item"
+			}]
+			title: "Major Story #5"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"71C697E52A8CE267"
+				"74D13FED9D51C73C"
+			]
+			description: [
+				"I see only one path forward: augment everything. My body. My tools. My mind’s defenses. If those fragmented reflections of myself return—if they corner me again—I won’t survive the torture awaiting my mind and body."
+				""
+				"So I’ll carve the answers from this world’s living essence. From the forests. From beasts. From my own veins, if necessary. I will spill rivers of blood to map the way of my own unique purpose."
+				""
+				"This war against my own echoes begins now. Even if it consumes me I will oppose whatever this will is."
+				""
+				""
+				"                 &lEND OF ACT 1 - FORGOTTEN&r"
+			]
+			hide_until_deps_complete: true
+			id: "4A4E0FE812B06F4E"
+			subtitle: "Lore Entry #6"
+			tasks: [{
+				id: "30B30BCB43A31880"
+				item: "minecraft:writable_book"
+				type: "item"
+			}]
+			title: "Major Story #6"
+			x: 2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"71C697E52A8CE267"
+				"46CA8F3DC854CAF6"
+			]
+			description: [
+				"I see only one path forward: augment everything. My body. My tools. My mind’s defenses. If those fragmented reflections of myself return—if they corner me again—I won’t survive the torture awaiting my mind and body."
+				""
+				"So I’ll carve the answers from this world’s living essence. From the forests. From beasts. From my own veins, if necessary. I will spill rivers of blood to map the way of my own unique purpose."
+				""
+				"This war against my own echoes begins now. Even if it consumes me I will oppose whatever this will is."
+				""
+				""
+				"                 &lEND OF ACT 1 - FORGOTTEN&r"
+			]
+			hide_until_deps_complete: true
+			id: "0EC20B7189FB7861"
+			subtitle: "Lore Entry #6"
+			tasks: [{
+				id: "61907FD128FBFB68"
+				item: "minecraft:writable_book"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"71C697E52A8CE267"
+				"2F794D6CDEC3506E"
+			]
+			description: [
+				"I see only one path forward: augment everything. My body. My tools. My mind’s defenses. If those fragmented reflections of myself return—if they corner me again—I won’t survive the torture awaiting my mind and body."
+				""
+				"So I’ll carve the answers from this world’s living essence. From the forests. From beasts. From my own veins, if necessary. I will spill rivers of blood to map the way of my own unique purpose."
+				""
+				"This war against my own echoes begins now. Even if it consumes me I will oppose whatever this will is."
+				""
+				""
+				"                 &lEND OF ACT 1 - FORGOTTEN&r"
+			]
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			id: "67B0F78C0D10741F"
+			subtitle: "Lore Entry #6"
+			tasks: [{
+				id: "0C2977A5A2DC61E4"
+				item: "minecraft:writable_book"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"71C697E52A8CE267"
+				"68B29284E8F11755"
+			]
+			description: [
+				"I see only one path forward: augment everything. My body. My tools. My mind’s defenses. If those fragmented reflections of myself return—if they corner me again—I won’t survive the torture awaiting my mind and body."
+				""
+				"So I’ll carve the answers from this world’s living essence. From the forests. From beasts. From my own veins, if necessary. I will spill rivers of blood to map the way of my own unique purpose."
+				""
+				"This war against my own echoes begins now. Even if it consumes me I will oppose whatever this will is."
+				""
+				""
+				"                 &lEND OF ACT 1 - FORGOTTEN&r"
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "4AA4BAF5561FF1F0"
+			subtitle: "Lore Entry #6"
+			tasks: [{
+				id: "3283FB470297D171"
+				item: "minecraft:writable_book"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"09A62C4DA9DBF45A"
+				"5EA2D50F8F165D66"
+			]
+			description: [
+				"Something was here, but I can’t remember."
+				""
+				"I am not allowed to remember. Whether it’s an outside force or my own biology, something tugs at my mind as I ponder."
+				"While my understanding of the soul is basic, I can sense latent damage to my own vessel. My attempts to fortify it for Nether travel were not sufficient."
+				""
+				"I should look into a method that can gently heal the scars dug deep into my being."
+				"The best place to look is up into the skylands known as the Aether."
+				""
+				"These headaches must be cured."
+			]
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			hide_until_deps_visible: true
+			icon: "minecraft:writable_book"
+			id: "5EB119EB594C25A7"
+			shape: "diamond"
+			subtitle: "Story Entry 2 | Description Hidden Until Completed"
+			tasks: [
+				{
+					id: "28989C179D40F342"
+					title: "Reveal a Memory"
+					type: "checkmark"
+				}
+				{
+					id: "13D83D372FE74CA2"
+					item: "cosmiccore:large_shard_of_perpetuity"
+					type: "item"
+				}
+			]
+			title: "Major Story #2"
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"150C45A63355876F"
+				"335B1E06DD962DD8"
+			]
+			description: [
+				"After visiting the Aether, it feels as if a part of my being has become whole again. I was prepared to explore an unfamiliar landscape in the skies, and yet everything felt familiar. This sense of familiarity allowed me a brief moment of respite from these headaches."
+				""
+				"Questioning why this is the case, unfortunately, causes the headaches to come back stronger than before—and any attempts to define myself within this environment have resulted in agonizing migraines. It’s almost as if there’s a force working against me. Maybe my adventures near the Sculk caused a fungal infection to take root."
+				""
+				"For now, I’ll focus on tangible things in front of me until the cause of these headaches is alleviated. On one notable occurrence: one of these sparkling glass shards I keep finding reacted violently to a blueberry bush, and I instantly remembered the taste of a plant I’ve never tried."
+				""
+				"I’ve come to know these shards of glass as \"Perpetuity\". There’s no other way to explain these fragments of glass—they feel like a part of me. I’m just unsure how yet. The missing link might lie deeper within the confines of this mental repository I’ve been reading and writing into. "
+				"I will have to keep exploring to understand further."
+			]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: "minecraft:writable_book"
+			id: "31EBF16B0F6F6FA4"
+			min_width: 400
+			progression_mode: "linear"
+			shape: "diamond"
+			subtitle: "&r&7Story Entry 3 | Description Hidden Until Completed"
+			tasks: [
+				{
+					disable_toast: true
+					id: "79F29DBB569E4E38"
+					title: "Recall the past."
+					type: "checkmark"
+				}
+				{
+					icon: "aether:blue_berry"
+					id: "615D6EC1DA93A15D"
+					observe_type: 0
+					timer: 0L
+					title: "Observe a Berry Bush in the Aether"
+					to_observe: "aether:berry_bush"
+					type: "observation"
+				}
+				{
+					id: "4314A70AC71967B8"
+					item: "cosmiccore:large_shard_of_perpetuity"
+					type: "item"
+				}
+			]
+			title: "Major Story #3"
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"685847565997C803"
+				"2F8F2641882B0ACB"
+			]
+			description: [
+				"Perpetuity seems to reject any object, physical or otherwise, that isn’t directly bound to me. It only reacts when I apply a will or desire onto the glass surface."
+				""
+				"I tried to eat it; it became bread."
+				""
+				"I tried to throw it away; it became garbage."
+				""
+				"I tried to crush it; it became as solid as the earth."
+				""
+				"I tried humming a tune, and the shard vanished."
+				""
+				"A calming tone echoed around me, and my mind became clearer once again."
+				"Once more, I attempted to ask myself, “Who am I?”"
+				"Nothing."
+				""
+				"The headaches are gone. However, as I frequent the Aether, a soft humming can be heard."
+				"It’s the same tune the shard responded to—the entire song. I can’t help but wonder if there are others out there. I should try to establish some level of contact beyond the planet I inhabit."
+			]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: "minecraft:writable_book"
+			id: "7336F68927AEC595"
+			shape: "diamond"
+			subtitle: "&r&7Story Entry 3 | Description Hidden Until Completed"
+			tasks: [
+				{
+					disable_toast: true
+					id: "0BA56AC60D432C9A"
+					title: "Accept the Present."
+					type: "checkmark"
+				}
+				{
+					id: "575907AA2FCD0933"
+					item: "cosmiccore:cluster_of_perpetuity"
+					type: "item"
+				}
+			]
+			title: "Major Story #4"
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4AA4BAF5561FF1F0"]
+			icon: "minecraft:barrier"
+			id: "1496169F357CFAE0"
+			tasks: [{
+				id: "7C9B461226F4A52A"
+				title: ":("
+				type: "checkmark"
+			}]
+			title: "More to Come in Future Updates"
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["463DB0B29657C699"]
+			description: [
+				"This Quest Page is unique in it contains all the story and lore for the pack."
+				""
+				"Beware opening this page with &cAdmin EDIT MODE&r will &4SPOIL THE PACK'S STORY&r."
+				""
+				"These quests will naturally show up here as you find them normally in play, as a collective of what you've discovered."
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "42016E224BD14174"
+			subtitle: "This QB Page Looks Empty, that's okay!"
+			tasks: [{
+				id: "446974CEFB25327F"
+				title: "Notice!"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "&fInfinity Archive&7 - [&fStory&7]"
+}

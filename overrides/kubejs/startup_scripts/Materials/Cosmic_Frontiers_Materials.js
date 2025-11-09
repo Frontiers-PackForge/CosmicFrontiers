@@ -127,8 +127,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_SPRING_SMALL,
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.NO_ORE_SMELTING
-
+            GTMaterialFlags.NO_ORE_SMELTING,
+            GTMaterialFlags.GENERATE_FINE_WIRE
         )
     event.create('utherium')
         .color(0xc3434c)
@@ -214,6 +214,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x949494)
         .dust()
 
+    event.create('psi_superconductor_primordia')
+        .color(0xfc0345)
+        .cableProperties(GTValues.V[GTValues.HV], 16, 0, true)
 
     event.create('psi_superconductor_alpha')
         .color(0xff2ee3)
@@ -376,9 +379,41 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 
 
+    event.create('dawnstone')
+        .color(0xfa9d32)
+        .ingot()
+        .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR
+        )
 
-
-
+    event.create('faded_dusk_alloy')
+        .color(0x741db3).secondaryColor(0x1c85c7)
+        .ingot()
+        .iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR
+        )
 
 
 
@@ -411,6 +446,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('dilumixal_naquadah_doped_silicon')
         .fluid($FluidStorageKeys.MOLTEN, $FluidState.LIQUID)
         .color(0x544940).iconSet(GTMaterialIconSet.DULL)
+    event.create('neutronium_doped_silicon')
+        .liquid()
+        .fluid($FluidStorageKeys.MOLTEN, $FluidState.LIQUID)
+        .color(0x575724).iconSet(GTMaterialIconSet.DULL)
     event.create('europium_silicide')
         .dust()
         .color(0x20323d).iconSet(GTMaterialIconSet.DULL)
@@ -578,7 +617,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xdb3dff)
         .liquid()
     event.create('refined_primordial_oil')
-        .color(0xdb3dff)
+        .color(0xad5953)
         .liquid()
     event.create('thick_primordial_oil')
         .color(0xdb3dff)
@@ -678,6 +717,120 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('perpetuity_slag')
         .color(0x696969)
         .plasma()
+
+
+    //Cinder Fuel stuff
+
+    event.create('inert_cinder_gas')
+        .liquid(new GTFluidBuilder().customStill())
+
+    event.create('cinder_gas')
+        .liquid(new GTFluidBuilder().customStill())
+
+    event.create('awakened_cinder_gas')
+        .liquid(new GTFluidBuilder().customStill())
+
+    event.create('pure_cinder_gas')
+        .liquid(new GTFluidBuilder().customStill())
+
+    event.create('emberite')
+        .gem()
+        .ore()
+        .color(0xff7300).iconSet(GTMaterialIconSet.CERTUS)
+
+    // Awakened Cinder Gas Stuff
+
+    event.create('infernal_rosin_emulsion')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('infernal_yeast_froth')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('heavy_aerocloud_seltzer')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('smoldering_cinder_brew')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    //Resin for Oil Line
+    event.create('lofty_primordial_resin')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('thick_primordial_resin')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('heavy_primordial_resin')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('dense_primordial_resin')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('slick_primordial_resin')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('oscillating_primordial_resin')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('twin_primordial_resin')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('alpha_primordial_resin')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('omega_primordial_resin')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('twisting_primordial_resin')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('ichorvein_primordial_resin')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create('absolute_primordial_resin')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create('wispy_primordial_oil')
+        .liquid()
+        .color(0xa8fff4)
+    event.create('warm_primordial_oil')
+        .liquid()
+        .color(0xffc47a)
+    event.create('overlubricated_primordial_resin')
+        .liquid()
+        .color(0xf5b642)
+    event.create('impure_primordial_broth')
+        .liquid()
+        .color(0x8a5b32)
+    event.create('cleaned_primordial_broth')
+        .liquid()
+        .color(0xd5c97a)
+    event.create('thickened_primordial_broth')
+        .liquid()
+        .color(0xc5b23d)
+    event.create('steam_cracked_primordial_tar')
+        .liquid()
+        .color(0x2e2a26)
+    event.create('fuming_primordial_sludge')
+        .liquid()
+        .color(0x5b3a6b)
+    event.create('asphaltenes')
+        .liquid()
+        .color(0x1f1c1b)
+    event.create('halrium')
+        .liquid()
+        .color(0x3de0d0)
+    event.create('primordial_coke')
+        .liquid()
+        .color(0x444444)
+    event.create('reactive_primordial_slush')
+        .liquid()
+        .color(0xb54ef2)
+    event.create('voscous_primordial_goo')
+        .liquid()
+        .color(0x85cc3a)
+    event.create('primordial_gel')
+        .liquid()
+        .color(0x72f2d4)
+    event.create('slippery_primordial_jelly')
+        .liquid()
+        .color(0xe382db)
+    event.create('overwhelmed_primordial_mucus')
+        .liquid()
+        .color(0x4a9959)
+    event.create('royal_carnivorous_cocktail')
+        .liquid()
+        .color(0xff47a3)
+
+
 })
 
 GTCEuStartupEvents.materialModification(event => {
@@ -688,6 +841,13 @@ GTCEuStartupEvents.materialModification(event => {
     TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('soul_stained_steel'), () => Item.getItem('malum:block_of_soul_stained_steel'))
     TagPrefix.plate['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('soul_stained_steel'), () => Item.getItem('malum:soul_stained_steel_plating'))
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('soul_stained_steel'), () => Item.getItem('malum:soul_stained_steel_ingot'))
+    TagPrefix.gem['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('ambrosium'), () => Item.getItem('aether:ambrosium_shard'))
+    TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('ambrosium'), () => Item.getItem('aether:ambrosium_block'))
+    TagPrefix.gem['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('zanite'), () => Item.getItem('aether:zanite_gemstone'))
+    TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('zanite'), () => Item.getItem('aether:zanite_block'))
+
+    TagPrefix.gem['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('emberite'), () => Item.getItem('embers:ember_crystal'))
+    TagPrefix.dust['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('emberite'), () => Item.getItem('embers:ember_grit'))
 })
 
 GTCEuStartupEvents.materialModification(event => {
