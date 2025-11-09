@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
     //ZPM Excluding Trinavine
-    new global.Cable('gtceu', 'vanadium_gallium', 1, event).cables()
     new global.Cable('gtceu', 'naquadah', 1, event).cables()
     new global.Cable('gtceu', 'trinium', 1, event).cables()
     //UV

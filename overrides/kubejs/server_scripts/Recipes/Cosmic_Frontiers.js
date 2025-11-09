@@ -391,16 +391,6 @@ ServerEvents.recipes(event => {
 
 
 
-       event.recipes.gtceu.cutter('stone_slab_to_pressureplate')
-              .itemInputs('minecraft:stone_slab')
-              .itemOutputs('4x minecraft:stone_pressure_plate')
-              .duration(160)
-              .EUt(GTValues.VA[GTValues.LV] / 2);
-       event.recipes.gtceu.cutter('stone_plate_to_button')
-              .itemInputs('minecraft:stone_pressure_plate')
-              .itemOutputs('4x minecraft:stone_button')
-              .duration(160)
-              .EUt(GTValues.VA[GTValues.LV] / 2);
        event.recipes.gtceu.mixer('cosmiccore:bioslurry_mixing')
               .itemInputs(['2x minecraft:crimson_fungus', '2x minecraft:warped_fungus', '2x cosmiccore:blackstone_pustule', 'cosmiccore:overloaded_pearls'])
               .inputFluids('gtceu:nether_sediment_sludge 5000')
