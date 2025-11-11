@@ -25,7 +25,6 @@ ServerEvents.tags('item', event => {
        event.add('curios:head', 'embers:ashen_goggles')
        event.add('curios:charm', 'gtceu:hv_item_magnet')
        event.add('curios:charm', 'gtceu:lv_item_magnet')
-       event.add('frontiers:peanut', 'vintagedelight:peanut_crop')
        event.add('curios:charm', 'cosmiccore:portable_gravity_core')
 
 
@@ -62,7 +61,6 @@ yeet('gtceu:hssg_coil_block')
 yeet('gtceu:naquadah_coil_block')
 yeet('gtceu:trinium_coil_block')
 yeet('gtceu:tritanium_coil_block')
-yeet('vintagedelight:ghost_charcoal')
 yeet('trials:crafter')
 
 ServerEvents.recipes(event => {

@@ -59,9 +59,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .element(GTElements.get('di_2_ethylhexyl_phosphoric_acid'))
         .color(0x4e466d).iconSet(GTMaterialIconSet.DULL)
-    event.create('chromium_hydroxide')
-        .dust()
-        .color(0x169EAB).iconSet(GTMaterialIconSet.DULL)
     //D2EHPA synthesis
     event.create('butanol')
         .liquid()

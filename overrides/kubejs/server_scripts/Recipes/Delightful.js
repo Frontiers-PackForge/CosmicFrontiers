@@ -31,14 +31,13 @@ ServerEvents.tags('item', event => {
     event.add('nethersdelight:tools/hunting_tools', /gtceu:(.*)knife$/)
     event.add('occultism:tools/knives', /gtceu:(.*)knife$/)
     event.add('farmersdelight:tools/knives', /gtceu:(.*)knife$/)
-    event.add('forge:doughs', ['create:dough', 'delightful:nut_dough', 'farmersdelight:wheat_dough', 'festive_delight:gingerbread_dough', 'vintagedelight:oat_dough'])
+    event.add('forge:doughs', ['create:dough', 'delightful:nut_dough', 'farmersdelight:wheat_dough', 'festive_delight:gingerbread_dough'])
 })
 
 //Functional Blocks, Gregified
 ServerEvents.recipes(event => {
     //Farmer's Delight
-    event.remove({ id: 'vintagedelight:charcoal_from_magic_vine' })
-    event.remove({ id: 'vintagedelight:charcoal_from_magic_vine' })
+
     event.remove({ id: 'jei:/moredelight/farmersdelight/cutting/bread_slice' })
     event.remove({ id: 'moredelight:farmersdelight/cutting/bread_slice' })
     event.remove({ output: 'farmersdelight:stove' })
@@ -155,38 +154,7 @@ ServerEvents.recipes(event => {
     //     H: '#forge:tools/hammers'
     // })
     //Vintage Delight
-    event.remove({ output: 'vintagedelight:cheese_mold' })
-    event.shaped('vintagedelight:cheese_mold', [
-        'PIP',
-        '   ',
-        '   '
-    ], {
-        P: 'gtceu:iron_plate',
-        I: 'minecraft:heavy_weighted_pressure_plate'
-    })
-    event.remove({ output: 'vintagedelight:fermenting_jar' })
-    event.shaped('vintagedelight:fermenting_jar', [
-        'GSG',
-        'G G',
-        'GGG'
-    ], {
-        G: '#forge:glass',
-        S: '#minecraft:wooden_slabs'
-    })
-    event.remove({ output: 'vintagedelight:evaporator' })
-    event.shaped('vintagedelight:evaporator', [
-        ' T ',
-        'TKT',
-        ' T '
-    ], {
-        T: 'gtceu:treated_wood_frame',
-        K: 'vintagedelight:salt_block'
-    })
-    //Adding a one-way conversion recipe for delight salt, giving players a way to skip the evaporator and use the GT salt they already have
-    //This used to be 2 salt to 6 salt dust, no, keep it 1:1 otherwise you create a infinite chlorine source!
-    event.shapeless('vintagedelight:salt_dust', [
-        'gtceu:salt_dust'
-    ])
+
     // //Crabber's Delight
     // event.remove({ output: 'crabbersdelight:crab_trap' })
     // event.shaped('crabbersdelight:crab_trap', [

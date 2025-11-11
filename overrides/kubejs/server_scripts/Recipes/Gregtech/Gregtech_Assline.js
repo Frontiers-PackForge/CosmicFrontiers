@@ -878,7 +878,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.assembly_line('frontiers:vorax')
     .itemInputs(['cosmiccore:naquahine_pressure_reactor', '4x gtceu:zpm_hermetic_casing', '4x #gtceu:circuits/uhv', '16x gtceu:exquisite_echo_shard_gem', 'gtceu:ultradense_neutronium_plate', 'gtceu:ultradense_neutronium_plate', 'gtceu:ultradense_neutronium_plate', 'gtceu:ultradense_neutronium_plate', '8x gtceu:neutronium_modular_shelling', '8x gtceu:heavy_neutronium_beam'])
-    .itemOutputs('cosmiccore:vorax_reactpr')
+    .itemOutputs('cosmiccore:vorax_reactor')
     .inputFluids(
       'gtceu:nylon_6_6 1152',
       'gtceu:high_grade_solder 2304',

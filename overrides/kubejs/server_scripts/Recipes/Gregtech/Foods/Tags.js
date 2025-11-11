@@ -20,8 +20,7 @@ ServerEvents.tags('item', event => {
         'some_assembly_required:golden_apple_slices',
         'vanilladelight:golden_apple_slice'
     ])
-
-    event.remove('forge:oat', 'vintagedelight:oat') //this removes vintagedelight oat from one recipe (oat cutting) 
+ 
 
     event.removeAll('diet:special_food') // Slicer recipes add nutrition to them already, keeping them in this tag makes it do double nutrition
 
