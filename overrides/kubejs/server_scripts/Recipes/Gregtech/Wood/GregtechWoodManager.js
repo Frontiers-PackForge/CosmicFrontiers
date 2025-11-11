@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
         .pressurePlate()
         .button()
         .boats();
-    //Forestry
+    // //Forestry
     new Wood('forestry','walnut',event).all();
     new Wood('forestry','larch',event).all();
     new Wood('forestry','teak',event).all();
@@ -130,10 +130,11 @@ ServerEvents.recipes(event => {
     new Wood('forestry','cocobolo_fireproof',event).all();
     new Wood('forestry','zebrawook_fireproof',event).all();
     //Tinkers Construct
-    new Wood('tconstruct','greenheart',event).all();
-    new Wood('tconstruct','skyroot',event).all();
-    new Wood('tconstruct','bloodshroom',event).all();
-    new Wood('tconstruct','enderbark',event).all();
+    //DANGER THIS CAUSES KUBEJS TO ERROR, KEEP DISABLED FOR NOW!
+    // new Wood('tconstruct','greenheart',event).all();
+    // new Wood('tconstruct','skyroot',event).all();
+    // new Wood('tconstruct','bloodshroom',event).all();
+    // new Wood('tconstruct','enderbark',event).all();
 
     
 

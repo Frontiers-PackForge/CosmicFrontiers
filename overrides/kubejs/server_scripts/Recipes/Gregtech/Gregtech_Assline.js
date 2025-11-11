@@ -530,7 +530,7 @@ ServerEvents.recipes(event => {
 
 
   event.recipes.gtceu.assembly_line('frontiers:orbital_tempering_forge')
-    .itemInputs(['32x cosmiccore:trinavine_frame', '8x cosmiccore:multi_purpose_interstellar_grade_casing', '8x cosmiccore:cyclozine_chemically_repelling_casing', 'cosmiccore:reinforced_trinavine_coil_block', '8x gtceu:zpm_field_generator', '8x gtceu:zpm_voltage_coil', '4x gtceu:circuits/zpm'])
+    .itemInputs(['32x cosmiccore:trinavine_frame', '8x cosmiccore:multi_purpose_interstellar_grade_casing', '8x cosmiccore:cyclozine_chemically_repelling_casing', 'cosmiccore:reinforced_trinavine_coil_block', '8x gtceu:zpm_field_generator', '8x gtceu:zpm_voltage_coil', '4x #gtceu:circuits/zpm'])
     .itemOutputs('cosmiccore:orbital_tempering_forge')
     .inputFluids(
       'gtceu:nylon_6_6 1296',
@@ -617,7 +617,7 @@ ServerEvents.recipes(event => {
     .duration(900)
     .EUt(GTValues.VA[GTValues.ZPM])
   event.recipes.gtceu.assembly_line('frontiers:neutronium_magnet')
-    .itemInputs(['cosmiccore:fusion_grade_magnet', '32x gtceu:fine_trinanylon_6_6_wire', 'gtceu:zpm_field_generator', '4x gtceu:zpm_voltage_coil', '4x gtceu:double_neutronium_plate', '#gtceu:circuit/zpm'])
+    .itemInputs(['cosmiccore:fusion_grade_magnet', '32x gtceu:fine_trinanylon_6_6_wire', 'gtceu:zpm_field_generator', '4x gtceu:zpm_voltage_coil', '4x gtceu:double_neutronium_plate', '#gtceu:circuits/zpm'])
     .itemOutputs('cosmiccore:stellar_neutronium_grade_magnet')
     .inputFluids(
       'gtceu:trinanylon_6_6 1296',
