@@ -42,6 +42,7 @@ ServerEvents.recipes(event => {
         "vegandelight:cooking/ink_sac",
         "delightful:food/cooking/nut_milk",
         "seeddelight:cooking/stir_fried_cabbage_with_acorn",
+        "farmersdelight:cooking/shrimp_fried_rice",
 
         //just.. the whole mod
         "supplementaries:",
