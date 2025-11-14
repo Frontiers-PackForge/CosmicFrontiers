@@ -386,7 +386,20 @@ ServerEvents.recipes(event => {
               .cleanroom(CleanroomType.CLEANROOM)
               .EUt(GTValues.VA[GTValues.LV] / 2);
 
+       event.recipes.gtceu.cutter('cosmiccore:enthel_wafer_to_chip')
+              .itemInputs('cosmiccore:spirit_runed_enthel_cpu_wafer')
+              .itemOutputs('4x cosmiccore:spirit_runed_enthel_cpu')
+              .duration(100)
+              .cleanroom(CleanroomType.CLEANROOM)
+              .EUt(GTValues.VA[GTValues.EV] / 2);
 
+       event.recipes.gtceu.mana_engraver('engraver_wafer_enthelic')
+              .notConsumable('gtceu:light_gray_glass_lens')
+              .itemInputs(['cosmiccore:livirock_aluminite_wafer', '4x gtceu:elementium_foil'])
+              .inputFluids('gtceu:potent_mana 500')
+              .itemOutputs('cosmiccore:spirit_runed_enthel_cpu_wafer')
+              .EUt(GTValues.VA[GTValues.EV])
+              .duration(20 * 160)
 
 
        event.recipes.gtceu.mixer('cosmiccore:bioslurry_mixing')
@@ -1051,7 +1064,7 @@ ServerEvents.recipes(event => {
               .itemOutputs('gtceu:luminescent_utherium_ingot')
               .duration(120)
               .EUt(GTValues.VA[GTValues.HV]);
-              
+
        event.recipes.gtceu.mixer(`frontiers:taupe_seaglass`)
               .itemInputs('16x minecraft:glass')
               .itemInputs('4x #forge:sand')

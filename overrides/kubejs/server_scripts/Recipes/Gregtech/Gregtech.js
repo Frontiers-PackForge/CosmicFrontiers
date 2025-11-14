@@ -858,14 +858,6 @@ ServerEvents.recipes(event => {
     .duration(320)
     .EUt(GTValues.VA[GTValues.HV]);
 
-  event.recipes.gtceu.chemical_reactor('frontiers:woven_plastic_board')
-    .itemInputs(['4x ars_nouveau:magebloom_fiber', '2x gtceu:gold_foil'])
-    .inputFluids('gtceu:polyethylene 144')
-    .itemOutputs('cosmiccore:plastic_circuit_board')
-    .cleanroom(CleanroomType.CLEANROOM)
-    .duration(120)
-    .EUt(GTValues.VA[GTValues.HV]);
-
   event.recipes.gtceu.large_chemical_reactor('frontiers:woven_plastic_board_chloride')
     .notConsumable('cosmiccore:rune_conjunction_arklythar')
     .itemInputs('cosmiccore:plastic_circuit_board', '6x gtceu:runed_steel_foil')
@@ -891,6 +883,30 @@ ServerEvents.recipes(event => {
     .cleanroom(CleanroomType.CLEANROOM)
     .duration(120)
     .EUt(GTValues.VA[GTValues.HV]);
+
+  event.recipes.gtceu.mana_etching('frontiers:woven_enthel_board')
+    .itemInputs(['4x malum:wicked_spirit', '4x kubejs:carbon_ethersteel_lattice', '4x gtceu:tempered_iesnium_foil'])
+    .inputFluids('gtceu:epoxy 144')
+    .itemOutputs('cosmiccore:multilayered_enthel_circuit_board')
+    .cleanroom(CleanroomType.CLEANROOM)
+    .duration(120)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+  event.recipes.gtceu.large_chemical_reactor('frontiers:woven_enthel_board_persulfate')
+    .itemInputs(['cosmiccore:multilayered_enthel_circuit_board', '4x gtceu:blue_alloy_shape_memory_foil', '4x malum:infernal_spirit'])
+    .inputFluids('gtceu:sodium_persulfate 1000')
+    .itemOutputs('cosmiccore:spirit_engraved_enthel_circuit_board')
+    .cleanroom(CleanroomType.CLEANROOM)
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.MV]);
+
+  event.recipes.gtceu.large_chemical_reactor('frontiers:woven_enthel_board_iron_chloride')
+    .itemInputs(['cosmiccore:multilayered_enthel_circuit_board', '4x gtceu:blue_alloy_shape_memory_foil', '4x malum:infernal_spirit'])
+    .inputFluids('gtceu:iron_iii_chloride 500')
+    .itemOutputs('cosmiccore:spirit_engraved_enthel_circuit_board')
+    .cleanroom(CleanroomType.CLEANROOM)
+    .duration(600)
+    .EUt(GTValues.VA[GTValues.MV]);
 
   event.recipes.gtceu.assembler('ethersteel_smd_diode')
     .itemInputs(['gtceu:gallium_arsenide_dust', '16x gtceu:fine_galvanized_ethersteel_wire'])
@@ -1421,7 +1437,7 @@ ServerEvents.recipes(event => {
   //HV HULLS AND COMPONENTS
   event.remove({ output: 'gtceu:hv_machine_casing' })
   event.recipes.gtceu.assembler('gtceu:hv_machine_casing_assembler')
-    .itemInputs(['4x gtceu:stainless_steel_plate', '2x gtceu:galvanized_ethersteel_plate','2x cosmiccore:hv_wildfire_core'])
+    .itemInputs(['4x gtceu:stainless_steel_plate', '2x gtceu:galvanized_ethersteel_plate', '2x cosmiccore:hv_wildfire_core'])
     .itemOutputs('gtceu:hv_machine_casing')
     .circuit(8)
     .duration(40)
