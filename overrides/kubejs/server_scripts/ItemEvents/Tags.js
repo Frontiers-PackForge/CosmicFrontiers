@@ -50,7 +50,7 @@ ServerEvents.tags("item", event => {
     event.add("mae2:p2p_attunements/pattern_p2p_tunnel", [
         '/expatternprovider:ex.*provider(?:_part)?/'                                                                    //ex pattern provier from EAE
     ]);
-});
+
 
     //Add Ember augment support for the CosmicCore chestplate
     event.add("embers:augmentables/tools_armors", ['/cosmiccore:.*chestplate/']);
