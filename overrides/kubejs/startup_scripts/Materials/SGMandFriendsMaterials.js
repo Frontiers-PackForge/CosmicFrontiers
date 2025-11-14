@@ -2,14 +2,6 @@
 GTCEuStartupEvents.registry('gtceu:material', event => {
 
 
-    event.create("complex_multivitamin_solution")
-        .fluid()
-        .color(0xeffdb70).iconSet("dull")
-        .components("4x retinol", "6x linoleic_acid", "3x biotin")
-        .flags(
-            GTMaterialFlags.DISABLE_DECOMPOSITION
-        )
-
     event.create("retinol")
         .fluid()
         .color(0x845ca1).iconSet("dull")
@@ -38,6 +30,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xa6bf8e).iconSet("dull")
         .components("10x carbon", "16x hydrogen", "2x nitrogen", "3x oxygen", "1x sulfur")
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        )
+
+    event.create("complex_multivitamin_solution")
+        .fluid()
+        .color(0xeffdb70).iconSet("dull")
+        .components("4x retinol", "6x linoleic_acid", "3x biotin")
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION
         )
