@@ -140,12 +140,12 @@ ServerEvents.tags('item', event => {
 
 
 
-    psi('gtceu:micro_processor')
-    mana('gtceu:micro_processor')
+    psi('cosmiccore:hex_processor')
+    mana('cosmiccore:hex_processor')
 
-    psi('gtceu:nano_processor')
-    mana('gtceu:nano_processor')
-    proteins('gtceu:nano_processor')
+    psi('cosmiccore:enthelic_processor')
+    mana('cosmiccore:enthelic_processor')
+    proteins('cosmiccore:enthelic_processor')
 
     psi('gtceu:quantum_processor')
     mana('gtceu:quantum_processor')

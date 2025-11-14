@@ -908,6 +908,12 @@ ServerEvents.recipes(event => {
     .duration(600)
     .EUt(GTValues.VA[GTValues.MV]);
 
+  event.recipes.gtceu.mana_etching('blue_alloy_shape_memory_foil')
+    .itemInputs(['4x malum:living_flesh', 'ars_nouveau:manipulation_essence', 'gtceu:blue_alloy_plate'])
+    .itemOutputs('4x gtceu:blue_alloy_shape_memory_foil')
+    .duration(240)
+    .EUt(GTValues.VA[GTValues.HV]);
+
   event.recipes.gtceu.assembler('ethersteel_smd_diode')
     .itemInputs(['gtceu:gallium_arsenide_dust', '16x gtceu:fine_galvanized_ethersteel_wire'])
     .itemOutputs('16x gtceu:smd_diode')
