@@ -1057,7 +1057,7 @@ ServerEvents.recipes(event => {
     .EUt(8);
   //Display Link
   event.recipes.gtceu.assembler("create:display_link")
-    .itemInputs('create:brass_casing', 'create:transmitter', 'create:copper_plate')
+    .itemInputs('create:brass_casing', 'create:transmitter', 'gtceu:copper_plate')
     .itemOutputs('create:display_link')
     .circuit(6)
     .duration(50)

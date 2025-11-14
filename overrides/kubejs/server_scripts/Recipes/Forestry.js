@@ -172,16 +172,6 @@ ServerEvents.recipes(event => {
         .chancedOutput('forestry:beeswax', 2000, 0)
         .duration(100)
         .EUt(GTValues.VA[GTValues.MV]);
-
-    event.recipes.gtceu.centrifuge('forestry:bee_comb_vintage')
-        .itemInputs('forestry:bee_comb_vintage')
-        .chancedOutput('vintagedelight:cheese_curds', 9600, 0)
-        .chancedOutput('forestry:honey_drop', 2000, 0)
-        .chancedOutput('forestry:beeswax', 2000, 0)
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
-
-
     event.recipes.gtceu.extractor('frontiers:lunar_comb_moon_dust')
         .itemInputs('4x cosmiccore:bee_comb_lunar')
         .itemOutputs('2x gtceu:moon_stone_dust')
