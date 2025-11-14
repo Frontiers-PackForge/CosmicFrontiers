@@ -26,7 +26,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Uranium238.setProperty(PropertyKey.ORE, new $OreProperty());
     GTMaterials.Indium.setProperty(PropertyKey.ORE, new $OreProperty());
     GTMaterials.NaquadriaSulfate.setProperty(PropertyKey.ORE, new $OreProperty());
-    
+
 
     //Netherstar lmfao
     // GTMaterials.NetherStar.setProperty(PropertyKey.GEM, new $GemProperty());
@@ -189,6 +189,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     addFluid(GTMaterials.Lawrencium, $FluidStorageKeys.LIQUID);
     // Holmium
     GTMaterials.Holmium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    GTMaterials.Holmium.setProperty(PropertyKey.BLAST, new $BlastProperty(9500))
+    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_PLATE)
+    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW)
+    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_ROD)
+    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_SPRING)
+    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_SPRING_SMALL)
+    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FOIL)
+    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FRAME)
+    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_GEAR)
+    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_SMALL_GEAR)
+
+
+
     addFluid(GTMaterials.Holmium, $FluidStorageKeys.LIQUID);
     // Erbium
     GTMaterials.Erbium.setProperty(PropertyKey.INGOT, new $IngotProperty());
