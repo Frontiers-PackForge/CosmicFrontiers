@@ -60,18 +60,6 @@ ServerEvents.recipes((event) => {
         .chancedOutput('4x gtceu:neodymium_dust', 6000, 500)
         .duration(600)
         .EUt(GTValues.VA[GTValues.HV]);
-    // //Chromate recycling
-    event.recipes.gtceu.chemical_reactor('chromium_hydroxide_reactor')
-        .itemInputs('6x gtceu:sodium_hydroxide')
-        .inputFluids('gtceu:chromate_waste_water 1000')
-        .itemOutputs('2x gtceu:chromium_hydroxide_dust')
-        .duration(60)
-        .EUt(GTValues.VA[GTValues.MV]);
-    event.recipes.gtceu.chemical_dehydrator('chromium_oxide_vvarm')
-        .itemInputs('gtceu:chromium_hydroxide_dust')
-        .itemOutputs('gtceu:chromium_iii_oxide_dust')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.HV]);
 
     // //D2EHPA synthesis
     event.recipes.gtceu.chemical_reactor('butanol_maker')
