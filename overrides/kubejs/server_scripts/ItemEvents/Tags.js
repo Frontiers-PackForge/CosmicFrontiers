@@ -1,3 +1,9 @@
+
+ServerEvents.tags('minecraft:fluid', event => {
+    //Add molten tag for molten virtue meld
+    event.add("forge:molten", ['gtceu:molten_virtue_meld']);
+});
+
 let voltages=['lv', 'mv', 'hv', 'ev', 'iv', 'luv', 'zpm', 'uv', 'uhv', 'uev', 'uiv', 'uxv', 'opv'];
 let gt_material=['wood', 'bronze', 'steel', 'aluminium', 'stainless_steel', 'gold', 'titanium', 'tungsten_steel'];
 let chest_material=['dirt', 'copper', 'iron', 'gold', 'diamond', 'crystal', 'obsidian'];
