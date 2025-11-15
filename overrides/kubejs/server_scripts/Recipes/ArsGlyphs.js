@@ -143,4 +143,14 @@ ServerEvents.recipes(event => {
         ],
         27
     )
+
+    event.remove("ars_nouveau:glyph_fell")
+    event.recipes.ars_nouveau.glyph(
+        "ars_nouveau:glyph_fell",
+        [
+            "ars_nouveau:earth_essence",
+            "gtceu:aluminium_axe"
+        ],
+        27
+    )
 })
