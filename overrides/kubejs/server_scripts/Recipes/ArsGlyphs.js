@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
             "gtceu:tin_rotor",
             "gtceu:lv_electric_motor"
         ],
-        55
+        27
     )
 
     event.remove("ars_nouveau:glyph_interact")
@@ -109,6 +109,16 @@ ServerEvents.recipes(event => {
             "ars_nouveau:manipulation_essence",
             "gtceu:lv_robot_arm"
         ],
-        55
+        27
+    )
+
+    event.remove("ars_nouveau:glyph_crush")
+    event.recipes.ars_nouveau.glyph(
+        "ars_nouveau:glyph_crush",
+        [
+            "ars_nouveau:earth_essence",
+            "gtceu:diamond_grinding_head"
+        ],
+        27
     )
 })
