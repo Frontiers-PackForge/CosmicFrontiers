@@ -121,4 +121,15 @@ ServerEvents.recipes(event => {
         ],
         27
     )
+
+    event.remove("ars_nouveau:glyph_gust")
+    event.recipes.ars_nouveau.glyph(
+        "ars_nouveau:glyph_gust",
+        [
+            "ars_nouveau:air_essence",
+            "gtceu:lv_electric_piston",
+            "gtceu:lv_electric_piston"
+        ],
+        27
+    )
 })
