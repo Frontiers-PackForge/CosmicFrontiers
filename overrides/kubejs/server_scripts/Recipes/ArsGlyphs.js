@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
         [
             "ars_nouveau:earth_essence",
             "gtceu:lv_emitter",
-            "minecraft;bone_block"
+            "minecraft:bone_block"
         ],
         55
     )
