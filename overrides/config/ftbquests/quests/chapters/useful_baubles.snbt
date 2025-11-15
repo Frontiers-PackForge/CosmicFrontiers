@@ -556,7 +556,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["16C68448A7ADA9D4"]
+			dependencies: ["7B4F0BE29E6CD211"]
 			description: [
 				"Voids items you pick up. Obviously useful for mining."
 				""
@@ -570,8 +570,8 @@
 				item: "ars_nouveau:void_jar"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 0.0d
+			x: -7.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["16C68448A7ADA9D4"]
