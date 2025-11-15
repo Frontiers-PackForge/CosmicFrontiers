@@ -860,7 +860,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.large_chemical_reactor('frontiers:woven_plastic_board_chloride')
     .notConsumable('cosmiccore:rune_conjunction_arklythar')
-    .itemInputs('cosmiccore:plastic_circuit_board', '6x gtceu:runed_steel_foil')
+    .itemInputs('cosmiccore:plastic_circuit_board', '6x cosmiccore:energetic_alloy_foil')
     .inputFluids('gtceu:iron_iii_chloride 250')
     .itemOutputs('cosmiccore:runewoven_plastic_circuit_board')
     .cleanroom(CleanroomType.CLEANROOM)
@@ -869,7 +869,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.large_chemical_reactor('frontiers:woven_plastic_board_persulfate')
     .notConsumable('cosmiccore:rune_conjunction_arklythar')
-    .itemInputs('cosmiccore:plastic_circuit_board', '6x gtceu:runed_steel_foil')
+    .itemInputs('cosmiccore:plastic_circuit_board', '6x cosmiccore:energetic_alloy_foil')
     .inputFluids('gtceu:sodium_persulfate 500')
     .itemOutputs('cosmiccore:runewoven_plastic_circuit_board')
     .cleanroom(CleanroomType.CLEANROOM)
@@ -885,7 +885,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.HV]);
 
   event.recipes.gtceu.mana_etching('frontiers:woven_enthel_board')
-    .itemInputs(['4x malum:wicked_spirit', '4x kubejs:carbon_ethersteel_lattice', '4x gtceu:tempered_iesnium_foil'])
+    .itemInputs(['4x malum:wicked_spirit', '4x kubejs:carbon_ethersteel_lattice', '6x cosmiccore:vibrant_alloy_foil'])
     .inputFluids('gtceu:epoxy 144')
     .itemOutputs('cosmiccore:multilayered_enthel_circuit_board')
     .cleanroom(CleanroomType.CLEANROOM)
