@@ -132,4 +132,15 @@ ServerEvents.recipes(event => {
         ],
         27
     )
+
+    event.remove("ars_nouveau:glyph_split")
+    event.recipes.ars_nouveau.glyph(
+        "ars_nouveau:glyph_split",
+        [
+            "ars_nouveau:relay_splitter",
+            "ars_nouveau:wilden_spike",
+            "gtceu:lv_emitter"
+        ],
+        27
+    )
 })
