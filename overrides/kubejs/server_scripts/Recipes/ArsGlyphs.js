@@ -153,4 +153,15 @@ ServerEvents.recipes(event => {
         ],
         27
     )
+
+    event.remove("ars_nouveau:glyph_grow")
+    event.recipes.ars_nouveau.glyph(
+        "ars_nouveau:glyph_grow",
+        [
+            "ars_nouveau:earth_essence",
+            "gtceu:lv_emitter",
+            "minecraft;bone_block"
+        ],
+        55
+    )
 })
