@@ -97,10 +97,18 @@ ServerEvents.recipes(event => {
         "ars_nouveau:glyph_pickup",
         [
             "gtceu:tin_rotor",
-            "gtceu:lv_electric_motor",
+            "gtceu:lv_electric_motor"
         ],
         55
     )
 
-
+    event.remove("ars_nouveau:glyph_interact")
+    event.recipes.ars_nouveau.glyph(
+        "ars_nouveau:glyph_interact",
+        [
+            "ars_nouveau:manipulation_essence",
+            "gtceu:lv_robot_arm"
+        ],
+        55
+    )
 })
