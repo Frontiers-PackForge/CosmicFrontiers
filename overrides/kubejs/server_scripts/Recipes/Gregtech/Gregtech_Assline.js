@@ -412,16 +412,16 @@ ServerEvents.recipes(event => {
     .duration(300)
     .EUt(GTValues.VA[GTValues.LuV])
 
-  event.recipes.gtceu.assembly_line('frontiers:capacity_rune')
-    .itemInputs(['bloodmagic:blankrune', '4x botania:rune_summer', '4x botania:rune_water', 'gtceu:steel_fluid_cell', 'gtceu:aluminium_fluid_cell', 'gtceu:stainless_steel_fluid_cell', 'gtceu:titanium_fluid_cell', 'gtceu:tungstensteel_fluid_cell'])
-    .itemOutputs('bloodmagic:altarcapacityrune')
-    .inputFluids(
-      'gtceu:4_4_oxydianiline_pyromellitimide 288',
-      'gtceu:grading_fluid_2 250'
-    )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
-    .duration(300)
-    .EUt(GTValues.VA[GTValues.LuV])
+  // event.recipes.gtceu.assembly_line('frontiers:capacity_rune')
+  //   .itemInputs(['bloodmagic:blankrune', '4x botania:rune_summer', '4x botania:rune_water', 'gtceu:steel_fluid_cell', 'gtceu:aluminium_fluid_cell', 'gtceu:stainless_steel_fluid_cell', 'gtceu:titanium_fluid_cell', 'gtceu:tungstensteel_fluid_cell'])
+  //   .itemOutputs('bloodmagic:altarcapacityrune')
+  //   .inputFluids(
+  //     'gtceu:4_4_oxydianiline_pyromellitimide 288',
+  //     'gtceu:grading_fluid_2 250'
+  //   )
+  // ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
+  //   .duration(300)
+  //   .EUt(GTValues.VA[GTValues.LuV])
 
 
 
