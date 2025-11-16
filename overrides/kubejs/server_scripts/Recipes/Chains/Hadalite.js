@@ -47,6 +47,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:excited_hadalite 1000') // 2 Tl2S3
         .inputFluids('gtceu:ice 1000')        // Literally Water lol
         .itemOutputs('2x gtceu:thallium_dust')     // Thallium Dust
+        .itemOutputs('9x gtceu:heavy_hadalite_sludge_dust')     // Thallium Dust
         .outputFluids('gtceu:holmium_slush_mixture 2000') // Start of Holmium Extraction
         .duration(900)
         .EUt(GTValues.VA[GTValues.LuV]);
@@ -94,22 +95,22 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.biovat('rubussy_froth')
         .itemInputs('3x gtceu:naumannite_dust')
         .notConsumableFluid('gtceu:cyanex_272 1000')
-        .inputFluids('gtceu:hydrogen_sulfide 3000','minecraft:water 1000')
-        .itemOutputs('1x gtceu:gold_dust','2x gtceu:selenium_dust')   
+        .inputFluids('gtceu:hydrogen_sulfide 3000', 'minecraft:water 1000')
+        .itemOutputs('1x gtceu:gold_dust', '2x gtceu:selenium_dust')
         .outputFluids('gtceu:rubidine_froth 1000')
         .duration(340)
         .EUt(GTValues.VA[GTValues.ZPM]);
 
     // Rubidine Froth + Rubidine Extraction Rosin (Oxalic Acid e+ Plasmites) -> Rubidine Honey
     event.recipes.gtceu.biovat('rubidine_honey')
-        .inputFluids('gtceu:rubidine_froth 2000','gtceu:rubidine_extraction_rosin 1000') 
+        .inputFluids('gtceu:rubidine_froth 2000', 'gtceu:rubidine_extraction_rosin 1000')
         .outputFluids('gtceu:rubidine_honey 1000')
         .duration(340)
         .EUt(GTValues.VA[GTValues.ZPM]);
 
     //Rubidine Honey + hydrogen -> Rubidium Dust
     event.recipes.gtceu.biovat('rubidium_dust')
-        .inputFluids('gtceu:rubidine_honey 1000','gtceu:hydrogen 1000') 
+        .inputFluids('gtceu:rubidine_honey 1000', 'gtceu:hydrogen 1000')
         .itemOutputs('1x gtceu:rubidium_dust')
         .duration(200)
         .EUt(GTValues.VA[GTValues.UHV]);
@@ -123,4 +124,69 @@ ServerEvents.recipes(event => {
         .sterileInput('gtceu:ghost_matter_plasma 250')
         .duration(800)
         .EUt(GTValues.VA[GTValues.ZPM]);
+
+
+    // HOLMIUM
+    // More Exotic Extraction using liquid glass supercoolant
+    event.recipes.gtceu.mixer('holmium_colloid')
+        .itemInputs('gtceu:rubidium_dust')
+        .inputFluids('gtceu:holmium_slush_mixture 1000', 'gtceu:liquid_glass_supercoolant 1000')
+        .outputFluids('gtceu:holmium_rubidium_colloid_with_supercoolant 1000')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UHV]);
+
+
+    event.recipes.gtceu.centrifuge('holmium_solution')
+        .inputFluids('gtceu:holmium_rubidium_colloid_with_supercoolant 1000')
+        .itemOutputs('2x gtceu:calcium_sulfide_dust')
+        .outputFluids('gtceu:holmium_solution 1000')
+        .outputFluids('gtceu:liquid_glass_supercoolant 1000')
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.UHV]);
+
+    event.recipes.gtceu.hemophagic_transfuser('holmium_solution')
+        .inputFluids('gtceu:holmium_solution 1000')
+        .inputFluids('gtceu:tau_plasma 250')
+        .inputFluids('gtceu:fluorine 6000')
+        .itemOutputs('9x gtceu:tauin_hexafluoroholmate_dust')
+        .soulInput(100000)
+        .duration(150)
+        .EUt(GTValues.VA[GTValues.UV]);
+
+    event.recipes.gtceu.chemical_dehydrator('holmium_dust')
+        .inputFluids('gtceu:hydrogen 6000')
+        .itemInputs('9x gtceu:tauin_hexafluoroholmate_dust')
+        .outputFluids('gtceu:hydrofluoric_acid 6000')
+        .itemOutputs('gtceu:holmium_dust')
+        .itemOutputs('gtceu:rubidium_dust')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.UHV]);
+
+    event.remove({ id: 'gtceu:electric_blast_furnace/blast_holmium' })
+    event.remove({ id: 'gtceu:orbital_forge/blast_holmium' })
+    event.recipes.gtceu.electric_blast_furnace('holmium_ingot')
+        .itemInputs('gtceu:holmium_dust')
+        .itemOutputs('gtceu:hot_holmium_ingot')
+        .inputFluids('gtceu:pyroflux 1000')
+        .blastFurnaceTemp(9500)
+        .duration(925)
+        .EUt(GTValues.VA[GTValues.IV]);
+
+
+    //Astatine
+    event.recipes.gtceu.laser_engraver('astatine_dust')
+        .itemInputs('81x gtceu:heavy_hadalite_sludge_dust')
+        .itemInputs('cosmiccore:fermium_rad_charges')
+        .itemOutputs('4x gtceu:astatine_dust')
+        .itemOutputs('gtceu:clumped_waste_metals_dust')
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.UV]);
+
+
+    event.recipes.gtceu.sifter('clumped_waste_metals_separation')
+        .itemInputs('gtceu:clumped_waste_metals_dust')
+        .itemOutputs(['gtceu:indium_dust', 'gtceu:thallium_dust', 'gtceu:germanium_dust'])
+        .duration(240)
+        .EUt(GTValues.VA[GTValues.UV]);
+
 })

@@ -38,23 +38,12 @@
 			dependencies: ["57A955955309A292"]
 			id: "797990C3066AD3FB"
 			tasks: [{
-				id: "4E08A4070C9F22D9"
-				item: "gtceu:zanite_gem"
+				id: "74D384048D3275F2"
+				item: "aether:zanite_gemstone"
 				type: "item"
 			}]
 			x: -1.5d
 			y: -2.5d
-		}
-		{
-			dependencies: ["57A955955309A292"]
-			id: "436731F4DEA413B4"
-			tasks: [{
-				id: "5F96E269E9C7FD72"
-				item: "gtceu:ambrosium_gem"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 0.0d
 		}
 		{
 			dependencies: ["57A955955309A292"]
@@ -65,8 +54,8 @@
 				item: "gtceu:raw_barite"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -1.0d
+			x: -2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["57A955955309A292"]
@@ -92,8 +81,8 @@
 				item: "gtceu:raw_bauxite"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -2.0d
+			x: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["57A955955309A292"]
@@ -179,8 +168,8 @@
 				title: "In Development!"
 				type: "custom"
 			}]
-			x: -1.5d
-			y: 1.0d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["467DD8A59876EDFE"]
@@ -261,15 +250,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["436731F4DEA413B4"]
+			dependencies: ["57A955955309A292"]
 			id: "48525FDB778385BF"
 			tasks: [{
 				id: "767B4AF7D92E030C"
 				item: "aether:ambrosium_shard"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["57A955955309A292"]

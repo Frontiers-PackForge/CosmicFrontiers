@@ -309,6 +309,20 @@ ServerEvents.recipes(event => {
         R: 'gtceu:rose_gold_plate'
     }
     )
+
+    event.remove({ output: 'ars_nouveau:void_jar' })
+    event.shaped('ars_nouveau:void_jar', [
+        'PHP',
+        'GLG',
+        'EGE'
+    ], {
+        P: 'gtceu:steel_plate',
+        H: '#forge:tools/hammers',
+        G: '#forge:glass',
+        L: 'minecraft:lava_bucket',
+        E: '#forge:ender_pearls'
+    })
+    
     //spellbooks
     //incase an occultism recipe is wanted instead
   //event.remove({ id: 'ars_nouveau:novice_spell_book' })

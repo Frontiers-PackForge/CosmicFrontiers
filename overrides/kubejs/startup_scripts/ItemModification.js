@@ -16,8 +16,8 @@ ItemEvents.modification(event => {
     food('croptoia:ravioli', 3, 0.9)
 
     snackFood('gtceu:basic_electronic_circuit', 6, 0.8, true)
-    snackFood('gtceu:micro_processor', 2, 0.3, true)
-    snackFood('gtceu:nano_processor', 4, 0.4, true)
+    snackFood('cosmiccore:hex_processor', 2, 0.3, true)
+    snackFood('cosmiccore:enthelic_processor', 4, 0.4, true)
     snackFood('gtceu:quantum_processor', 6, 0.6, true)
     snackFood('gtceu:crystal_processor', 8, 0.7, true)
     snackFood('gtceu:wetware_processor', 10, 0.8, true)

@@ -24,7 +24,53 @@ yeet('tconstruct:cobalt_ingot')
 yeet('tconstruct:cobalt_block')
 yeet('tconstruct:raw_cobalt_block')
 yeet('tconstruct:raw_cobalt')
+yeet('tconstruct:molten_lumium_bucket')
+yeet('tconstruct:molten_signalum_bucket')
+yeet('tconstruct:molten_enderium_bucket')
 
+//hiding the molten fluids
+let yoot = (fluidName) => {
+  ServerEvents.tags('fluid', event => {
+    event.add('c:hidden_from_recipe_viewers', fluidName)
+  })
+}
+
+yoot('tconstruct:molten_lumium')
+yoot('tconstruct:molten_signalum')
+yoot('tconstruct:molten_enderium')
+
+//removing all tcon recipes for these 3
+//this could probably be used for any future unwanted tcon recipes aswell
+ServerEvents.recipes(event => {
+
+  let tcondumb = [
+    'lumium',
+    'signalum',
+    'enderium'
+  ]
+
+   tcondumb.forEach(tcondumb => {
+	   //casting
+       event.remove({ id: `tconstruct:smeltery/alloys/molten_${tcondumb}`})
+	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/ingot_gold_cast`})
+	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/ingot_sand_cast`})
+	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/nugget_gold_cast`})
+	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/nugget_sand_cast`})
+	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/block`})
+	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/plate_gold_cast`})
+	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/plate_sand_cast`})
+	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/gear_gold_cast`})
+	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/gear_sand_cast`})
+       //melting
+	   event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/ingot`})
+	   event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/nugget`})
+	   event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/block`})
+	   event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/plate`})
+	   event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/gear`})
+	   event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/dust`})
+
+   })
+})
 
 ServerEvents.tags('item', event => {
   //ore blocks
@@ -118,13 +164,18 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:smeltery/melting/quartz/ore_sparse' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/ore_dense' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/ore_dense' })
+
+	event.remove({ id: 'tconstruct:smeltery/casting/ender/eye' })
 	
 	
 	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick' })
 	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick_kiln' })
 
-
+	
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/molten_debris/ore' })
 	event.remove({ id: 'tconstruct:smeltery/alloys/molten_rose_gold' })
-	event.remove({ id: 'tconstruct:smeltery/alloys/molten_netherite' })    
+	event.remove({ id: 'tconstruct:smeltery/alloys/molten_netherite' })
+
+
+    
 })

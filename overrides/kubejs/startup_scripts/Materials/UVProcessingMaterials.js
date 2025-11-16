@@ -49,6 +49,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .formula('?Lp(F6Ho)')
         .color(0xfc4ea8)
+
+    event.create('heavy_hadalite_sludge') 
+        .dust()
+        .formula('?')
+        .color(0x24015A).secondaryColor(0x150238)
+
+        
+    event.create('clumped_waste_metals') 
+        .dust()
+        .formula('InGeTl')
+        .color(0x24015A).secondaryColor(0x150238)
+
     event.create('hexafluoroholmate') // get rid of the plasmites - Add "Dead Plasmite" to CosmicCore or some way to 'spend' them and 
         .dust()                    // get the pure metals back as Trinavine is too valuable to waste
         .formula('F6Ho')

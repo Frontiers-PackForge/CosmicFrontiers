@@ -51,8 +51,6 @@ ServerEvents.recipes(event => {
         'minecraft:moss_block',
         'minecraft:moss_carpet',
         'farmersdelight:onion',
-        'vintagedelight:peanut',
-        'vintagedelight:gearo_berry',
         'delightful:green_tea_leaf',
         'biomesoplenty:reed',
         'biomesoplenty:cattail',
@@ -164,10 +162,7 @@ ServerEvents.recipes(event => {
         'farmersdelight:tomato',
         'supplementaries:flax',
         'occultism:datura',
-        'delightful:cantaloupe',
-        'vintagedelight:oat',
-        'vintagedelight:ghost_pepper',
-        'vintagedelight:cucumber',
+        'delightful:cantaloupe'
     ]
 
     floraOverworldSeeds.forEach(floraOw => {
