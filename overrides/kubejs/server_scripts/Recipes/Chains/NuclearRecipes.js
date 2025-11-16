@@ -25,9 +25,9 @@ ServerEvents.recipes(event => {
         .duration(6000)
         .EUt(GTValues.VA[GTValues.HV]);
 
-    event.recipes.gtceu.electric_blast_furnace('yeah_fleshy_waste_fuel_rod')
-        .itemInputs('cosmiccore:spent_flesh_packed_uranium_fuel')
-        .itemOutputs(['cosmiccore:superheated_fuel_rod', '64x cosmiccore:fleshy_uranium_waste', '64x cosmiccore:fleshy_uranium_waste'])
+    event.recipes.gtceu.electric_blast_furnace('yeah_fleshy_waste_fuel_rod_plutonium')
+        .itemInputs('cosmiccore:spent_flesh_packed_plutonium_fuel')
+        .itemOutputs(['cosmiccore:superheated_fuel_rod', '64x cosmiccore:fleshy_plutonium_waste', '64x cosmiccore:fleshy_plutonium_waste'])
         .blastFurnaceTemp(3600)
         .duration(700)
         .EUt(GTValues.VA[GTValues.EV]);
