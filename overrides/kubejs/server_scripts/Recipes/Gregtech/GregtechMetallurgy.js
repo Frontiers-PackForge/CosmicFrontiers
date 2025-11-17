@@ -35,7 +35,12 @@ ServerEvents.recipes(event => {
         .duration(360)
         .EUt(GTValues.VA[GTValues.EV]);
 
- 
+     event.recipes.gtceu.orbital_forge_abs('gtceu:mixer/signalum_dust_skip_zpm')
+        .itemInputs(['1x gtceu:sterling_silver_dust', '1x gtceu:coke_dust', '1x gtceu:scandium_dust', '16x gtceu:red_alloy_dust'])
+        .circuit(14)
+        .outputFluids('cosmiccore:signalum 576')
+        .duration(1240)
+        .EUt(GTValues.VA[GTValues.ZPM]);
 
     event.recipes.gtceu.arcane_crucible('frontiers:arcane_crucible/lumium_ingot')
         .itemInputs(['gtceu:palladium_ingot', 'minecraft:blaze_powder', 'minecraft:glowstone_dust', 'minecraft:honeycomb'])
