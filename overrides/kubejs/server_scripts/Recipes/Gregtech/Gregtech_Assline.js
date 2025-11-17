@@ -514,7 +514,7 @@ ServerEvents.recipes(event => {
 
   event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer_proxy' })
   event.recipes.gtceu.assembly_line('frontiers:pattern_proxy')
-    .itemInputs(['gtceu:luv_machine_hull', 'cosmiccore:luv_radio_module', 'cosmiccore:omnia_circuit_zpm', '64x cosmiccore:fine_trinavine_wire', '64x cosmiccore:fine_neutronite_wire'])
+    .itemInputs(['gtceu:luv_machine_hull', 'cosmiccore:luv_radio_module', '#gtceu:circuits/zpm', '64x cosmiccore:fine_trinavine_wire', '64x cosmiccore:fine_neutronite_wire'])
     .itemOutputs('gtceu:me_pattern_buffer_proxy')
     .inputFluids(
       'gtceu:4_4_oxydianiline_pyromellitimide 1296',
