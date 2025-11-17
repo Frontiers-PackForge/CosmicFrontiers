@@ -267,12 +267,12 @@ ServerEvents.recipes(event => {
 
   event.replaceInput({ output: 'gtceu:cleanroom_glass' },
     'gtceu:steel_frame',
-    'gtceu:blue_steel_frame'
+    'cosmiccore:energetic_alloy_frame'
   )
 
   event.replaceInput({ output: 'gtceu:plascrete' },
     'gtceu:steel_frame',
-    'gtceu:blue_steel_frame'
+    'cosmiccore:energetic_alloy_frame'
   )
 
   //Beacon Replacement
