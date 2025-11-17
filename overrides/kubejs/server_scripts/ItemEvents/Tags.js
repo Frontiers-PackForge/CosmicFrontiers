@@ -57,5 +57,8 @@ ServerEvents.tags("item", event => {
     event.add("embers:augmentables", ['/cosmiccore:.*chestplate/']);
     event.add("embers:augmentables/armors", ['/cosmiccore:.*chestplate/']);
     event.add("embers:augmentables/armors/chestplates", ['/cosmiccore:.*chestplate/']);
+    
+    event.remove("forestry:backpack/allow/miner", "minecraft:honeycomb")
+    event.add("forestry:backpack/allow/apiarist", "minecraft:honeycomb")
 })
 
