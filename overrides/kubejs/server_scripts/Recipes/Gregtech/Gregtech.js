@@ -485,6 +485,45 @@ ServerEvents.recipes(event => {
     H: 'gtceu:mv_machine_hull'
   })
 
+  event.shaped('cosmiccore:pyrothermic_refinery', [
+    'ABA',
+    'CDC',
+    'EFE'
+  ], {
+    A: 'gtceu:terrasteel_hex_wire',
+    B: 'gtceu:double_dawnstone_plate',
+    C: 'gtceu:hv_electric_pump',
+    D: 'gtceu:hv_machine_hull',
+    E: 'gtceu:hv_electric_piston',
+    F: '#gtceu:circuits/hv'
+  })
+
+  event.remove({ id: 'gtceu:shaped/large_steam_turbine' })
+  event.shaped('cosmiccore:steam_large_turbine', [
+    'ABA',
+    'BDB',
+    'CBC'
+  ], {
+    A: '#gtceu:circuits/hv',
+    B: '#forge:gears/steel',
+    C: 'gtceu:steel_large_fluid_pipe',
+    D: 'gtceu:hv_machine_hull'
+  })
+  event.shapeless('cosmiccore:steam_large_turbine', //Converting recipe for old large steam turbine to core ones
+    ['gtceu:steam_large_turbine'])
+
+  event.recipes.gtceu.assembler('hv_energy_output_hatch_4a')
+    .itemInputs('gtceu:hv_energy_output_hatch', '2x gtceu:gold_quadruple_wire', '2x gtceu:stainless_steel_plate')
+    .itemOutputs('cosmiccore:hv_energy_output_hatch_4a')
+    .duration(20*5)
+    .EUt(GTValues.VA[GTValues.MV]);
+
+  event.recipes.gtceu.assembler('hv_energy_output_hatch_16a')
+    .itemInputs('cosmiccore:hv_energy_output_hatch_4a', 'gtceu:hv_transformer_1a', '2x gtceu:gold_octal_wire', '4x gtceu:stainless_steel_plate')
+    .itemOutputs('cosmiccore:hv_energy_output_hatch_16a')
+    .duration(20*10)
+    .EUt(GTValues.VA[GTValues.HV]);
+
   event.shaped('cosmiccore:industrial_primitive_blast_furnace', [
     'WSH',
     'SCS',
