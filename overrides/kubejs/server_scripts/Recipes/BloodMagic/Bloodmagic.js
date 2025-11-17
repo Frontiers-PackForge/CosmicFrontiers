@@ -274,6 +274,14 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'bloodmagic:altar/etherealslate' })
   //TODO T5 Slate Recipes
 
+  event.recipes.gtceu.hellfire_foundry('simple_key')
+    .itemInputs('2x bloodmagic:demonslate', 'gtceu:enriched_naquadah_plate', '8x gtceu:fine_iesnium_wire')
+    .inputFluids('gtceu:grading_fluid_4 160')
+    .itemOutputs('bloodmagic:simplekey')
+    .soulInput(10000)
+    .duration(5)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
   event.recipes.gtceu.mana_engraver('altar_engraver')
     .itemInputs(['gtceu:iv_chemical_bath', 'botania:fabulous_pool', '4x bloodmagic:reagentbinding', '2x gtceu:iv_electric_pump', '16x gtceu:stone_plate', 'botania:rune_spring', 'botania:rune_summer', 'botania:rune_autumn', 'botania:rune_winter'])
     .itemOutputs('bloodmagic:altar')
