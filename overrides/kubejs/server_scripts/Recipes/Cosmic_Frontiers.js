@@ -259,6 +259,30 @@ ServerEvents.recipes(event => {
               .circuit(1)
               .duration(80)
               .EUt(6);
+
+       event.shaped('cosmiccore:portable_gravity_core', [
+              'CIC',
+              'EPE',
+              'CIC',
+       ], {
+              P: 'gtceu:lapotron_crystal',
+              C: 'gtceu:ev_emitter',
+              E: 'cosmiccore:double_signalum_plate',
+              I: 'cosmiccore:dense_vibrant_alloy_plate'
+       })
+
+              event.shaped('cosmiccore:portable_gravity_core', [
+              'CIC',
+              'CEC',
+              'CIC',
+       ], {
+              P: 'cosmiccore:dense_enderium_plate',
+              I: 'gtceu:solvent_spray_can',
+              E: 'gtceu:empty_spray_can'
+       })
+
+
+
        event.recipes.gtceu.assembler('ug_catalyst')
               .itemInputs(['minecraft:heart_of_the_sea', 'aether:bronze_dungeon_key', 'aether:silver_dungeon_key', 'aether:gold_dungeon_key', '#gtceu:circuits/hv',])
               .inputFluids('gtceu:source_oils 12000')
