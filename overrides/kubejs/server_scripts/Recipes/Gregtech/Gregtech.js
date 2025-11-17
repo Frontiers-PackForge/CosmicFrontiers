@@ -2393,12 +2393,13 @@ ServerEvents.recipes(event => {
     .duration(1170)
     .EUt(GTValues.VA[GTValues.UV]);
 
-  event.recipes.gtceu.chemical_bath(`frontiers:energetic_alloy_ingot`)
+  event.recipes.gtceu.chemical_bath(`frontiers:energetic_alloy_ingot_bath`)
     .itemInputs('cosmiccore:hot_energetic_alloy_ingot')
     .inputFluids('minecraft:water 250')
     .itemOutputs('cosmiccore:energetic_alloy_ingot')
     .duration(400)
     .EUt(GTValues.VA[GTValues.MV]);
+
 
 
   event.recipes.gtceu.chemical_bath(`frontiers:aberrant_essence_best`)

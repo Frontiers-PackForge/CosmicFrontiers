@@ -25,6 +25,17 @@ ServerEvents.recipes(event => {
         .duration(720)
         .EUt(GTValues.VA[GTValues.EV]);
 
+    //I Hate you :)
+    event.recipes.gtceu.arcane_crucible('frontiers:arcane_crucible/signalum_ingot')
+        .itemInputs(['1x gtceu:sterling_silver_ingot', '1x gtceu:coke_dust', '1x gtceu:scandium_dust', '16x gtceu:red_alloy_dust'])
+        .chancedItemOutputLogic($ChanceLogic.XOR)
+        .chancedOutput('cosmiccore:hot_signalum_ingot', 6500, 0)
+        .chancedOutput('4x gtceu:red_alloy_ingot', 3500, 0)
+        .emberInput(32000)
+        .duration(360)
+        .EUt(GTValues.VA[GTValues.EV]);
+
+ 
 
     event.recipes.gtceu.arcane_crucible('frontiers:arcane_crucible/lumium_ingot')
         .itemInputs(['gtceu:palladium_ingot', 'minecraft:blaze_powder', 'minecraft:glowstone_dust', 'minecraft:honeycomb'])
