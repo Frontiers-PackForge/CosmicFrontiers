@@ -18,6 +18,13 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.EV])
 
+    event.recipes.gtceu.mixer('gtceu:mixer/melodic_alloy')
+        .itemInputs(['2x gtceu:black_steel_dust', '4x cosmiccore:moondrop_dust', '2x gtceu:ender_pearl_dust', '3x gtceu:hafnium_dust'])
+        .circuit(4)
+        .itemOutputs('11x cosmiccore:melodic_alloy_dust')
+        .duration(720)
+        .EUt(GTValues.VA[GTValues.EV]);
+
 
     event.recipes.gtceu.arcane_crucible('frontiers:arcane_crucible/lumium_ingot')
         .itemInputs(['gtceu:palladium_ingot', 'minecraft:blaze_powder', 'minecraft:glowstone_dust', 'minecraft:honeycomb'])
