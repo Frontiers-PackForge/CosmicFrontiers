@@ -135,11 +135,13 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'forestry:bottler' })
     event.remove({ type: 'forestry:carpenter' })
     event.remove({ type: 'forestry:fabricator' })
-    // event.remove({ type: 'forestry:centrifuge' })
+    event.remove({ type: 'forestry:centrifuge' })
     event.remove({ type: 'forestry:fermenter' })
     event.remove({ type: 'forestry:moistener' })
     event.remove({ type: 'forestry:squeezer' })
     event.remove({ mod: 'gendustry' })
+
+    //Bee products
 
     event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_mellow')
         .itemInputs('forestry:bee_comb_mellow')
@@ -147,35 +149,35 @@ ServerEvents.recipes(event => {
         .chancedOutput('minecraft:quartz', 2000, 0)
         .chancedOutput('forestry:beeswax', 3000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_regular_bee')
         .itemInputs('forestry:bee_comb_honey')
         .chancedOutput('forestry:beeswax', 10000, 0)
         .chancedOutput('forestry:honey_drop', 9000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_cocoa')
         .itemInputs('forestry:bee_comb_cocoa')
         .chancedOutput('forestry:beeswax', 10000, 0)
         .chancedOutput('minecraft:cocoa_beans', 5000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_simmering')
         .itemInputs('forestry:bee_comb_simmering')
         .itemOutputs('forestry:refractory_wax')
         .chancedOutput('forestry:honey_drop', 7000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_stringy')
         .itemInputs('forestry:bee_comb_stringy')
         .itemOutputs('forestry:propolis_normal')
         .chancedOutput('forestry:honey_drop', 4000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_frozen')
         .itemInputs('forestry:bee_comb_frozen')
@@ -184,129 +186,199 @@ ServerEvents.recipes(event => {
         .chancedOutput('minecraft:snowball', 4000, 0)
         .chancedOutput('forestry:pollen_cluster_crystalline', 2000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
-    event.recipes.gtceu.centrifuge('forestry:bee_comb_dripping')
+    event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_dripping')
         .itemInputs('forestry:bee_comb_dripping')
         .itemOutputs('forestry:honeydew')
         .chancedOutput('forestry:honey_drop', 4000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
-    event.recipes.gtceu.centrifuge('forestry:bee_comb_silky')
+    event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_silky')
         .itemInputs('forestry:bee_comb_silky')
         .itemOutputs('forestry:honey_drop')
         .chancedOutput('forestry:propolis_silky', 8000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
+        
+    event.recipes.gtceu.centrifuge('forestry:propolis_silky')
+        .itemInputs('forestry:propolis_silky')
+        .chancedOutput('forestry:silk_wisp', 6000, 0)
+        .chancedOutput('forestry:propolis_normal', 1000, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV]);
+        
+    //1:1 as opposed to 3:1 crafting
+    event.recipes.gtceu.wiremill('forestry:propolis_silky_to_string')
+        .itemInputs('forestry:silk_wisp')
+        .itemOutputs('minecraft:string')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV]);
 
-    event.recipes.gtceu.centrifuge('forestry:bee_comb_parched')
+    event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_parched')
         .itemInputs('forestry:bee_comb_parched')
         .itemOutputs('forestry:beeswax')
         .chancedOutput('forestry:honey_drop', 8000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
-    event.recipes.gtceu.centrifuge('forestry:bee_comb_mysterious')
+    event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_mysterious')
         .itemInputs('forestry:bee_comb_mysterious')
         .itemOutputs('forestry:propolis_pulsating')
         .chancedOutput('forestry:honey_drop', 4000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
-    event.recipes.gtceu.centrifuge('forestry:bee_comb_powdery')
+    event.remove({ output: 'forestry:pulsating_mesh' })
+    event.recipes.gtceu.spooling_machine('forestry:pulsating_mesh')
+        .itemInputs('6x forestry:propolis_pulsating')
+        .itemOutputs('forestry:pulsating_mesh')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+    
+    event.recipes.gtceu.spooling_machine('forestry:pulsating_mesh_magebloom')
+        .itemInputs(['ars_nouveau:magebloom_fiber', '3x forestry:propolis_pulsating'])
+        .itemOutputs('2x forestry:pulsating_mesh')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor('forestry:pulsating_mesh_ender_pearl')
+        .itemInputs(['gtceu:ender_pearl_dust', 'forestry:pulsating_mesh'])
+        .itemOutputs('minecraft:ender_pearl')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_powdery')
         .itemInputs('forestry:bee_comb_powdery')
         .chancedOutput('minecraft:gunpowder', 8000, 0)
         .chancedOutput('forestry:honey_drop', 4000, 0)
         .chancedOutput('forestry:beeswax', 4000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
-    event.recipes.gtceu.centrifuge('forestry:bee_comb_wheaten')
+    event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_wheaten')
         .itemInputs('forestry:bee_comb_wheaten')
         .chancedOutput('minecraft:wheat', 8000, 0)
         .chancedOutput('forestry:honey_drop', 2000, 0)
         .chancedOutput('forestry:beeswax', 2000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
-    event.recipes.gtceu.centrifuge('forestry:bee_comb_mossy')
+    event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_mossy')
         .itemInputs('forestry:bee_comb_mossy')
         .chancedOutput('minecraft:moss_block', 8000, 0)
         .chancedOutput('forestry:honey_drop', 2000, 0)
         .chancedOutput('forestry:beeswax', 2000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
-    event.recipes.gtceu.centrifuge('forestry:bee_comb_kaolin')
+    event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_kaolin')
         .itemInputs('forestry:bee_comb_kaolin')
         .chancedOutput('minecraft:clay', 9600, 0)
         .chancedOutput('forestry:honey_drop', 2000, 0)
         .chancedOutput('forestry:beeswax', 2000, 0)
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_vintage')
+        .itemInputs('forestry:bee_comb_vintage')
+        .itemOutputs('forestry:beeswax')
+        .chancedOutput('forestry:honeydew', 9000, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_sponge')
+        .itemInputs('forestry:bee_comb_sponge')
+        .chancedOutput('minecraft:cod', 5000, 0)
+        .chancedOutput('minecraft:salmon', 5000, 0)
+        .chancedOutput('minecraft:sponge', 2000, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_sculken')
+        .itemInputs('forestry:bee_comb_sculken')
+        .itemOutputs('forestry:beeswax')
+        .chancedOutput('forestry:experience_drop', 9000, 0)
+        .chancedOutput('minecraft:sculk', 2000, 0)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    //vanilla comb
+    event.recipes.gtceu.centrifuge('frontiers:comb_centrifuge_honeycomb')
+        .itemInputs('minecraft:honeycomb')
+        .itemOutputs('forestry:beeswax')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV]);
+
     event.recipes.gtceu.extractor('frontiers:lunar_comb_moon_dust')
         .itemInputs('4x cosmiccore:bee_comb_lunar')
         .itemOutputs('2x gtceu:moon_stone_dust')
         .outputFluids('cosmiccore:prisma 250')
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.extractor('frontiers:lofty_comb_hydrogen_extract_1')
         .itemInputs('4x cosmiccore:bee_comb_lofty_hydrogen')
         .itemOutputs('4x forestry:refractory_wax')
         .outputFluids('gtceu:hydrogen_honey 1000')
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.chemical_dehydrator('frontiers:lofty_comb_hydrogen_extract_2')
         .inputFluids('gtceu:hydrogen_honey 1000')
         .outputFluids('create:honey 1000')
         .outputFluids('gtceu:hydrogen 4000')
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.extractor('frontiers:lofty_comb_oxygen_extract_1')
         .itemInputs('4x cosmiccore:bee_comb_lofty_oxygen')
         .itemOutputs('4x forestry:refractory_wax')
         .outputFluids('gtceu:oxygen_honey 1000')
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.chemical_dehydrator('frontiers:lofty_comb_oxygen_extract_2')
         .inputFluids('gtceu:oxygen_honey 1000')
         .outputFluids('create:honey 1000')
         .outputFluids('gtceu:oxygen 4000')
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.extractor('frontiers:lofty_comb_nitrogen_extract_1')
         .itemInputs('4x cosmiccore:bee_comb_lofty_nitrogen')
         .itemOutputs('4x forestry:refractory_wax')
         .outputFluids('gtceu:nitrogen_honey 1000')
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.chemical_dehydrator('frontiers:lofty_comb_nitrogen_extract_2')
         .inputFluids('gtceu:nitrogen_honey 1000')
         .outputFluids('create:honey 1000')
         .outputFluids('gtceu:nitrogen 4000')
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.extractor('frontiers:lofty_comb_argon_extract_1')
         .itemInputs('4x cosmiccore:bee_comb_lofty_argon')
         .itemOutputs('4x forestry:refractory_wax')
         .outputFluids('gtceu:argon_honey 1000')
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.chemical_dehydrator('frontiers:lofty_comb_argon_extract_2')
         .inputFluids('gtceu:argon_honey 1000')
         .outputFluids('create:honey 1000')
         .outputFluids('gtceu:argon 4000')
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
+
+    event.recipes.gtceu.extractor('frontiers:honey_to_create_honey')
+        .itemInputs('forestry:honey_drop')
+        .outputFluids('create:honey 125') //two honey is a bottle and a bottle is 250L
+        .duration(32)
+        .EUt(2);
 
     event.recipes.gtceu.electrolyzer('frontiers:create_honey_to_stuff')
         .inputFluids('create:honey 1000')
@@ -314,7 +386,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:hydrogen 12000')
         .outputFluids('gtceu:oxygen 6000')
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.mixer('frontiers:basic_production_nutrient')
         .inputFluids('create:honey 1000')
@@ -901,6 +973,8 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
 
+    
+
     //end hive """crafting"""
     event.custom(
         {
@@ -912,6 +986,195 @@ ServerEvents.recipes(event => {
               "item": "forestry:beehive_end"
             }
         }).id("malum:spirit_infusion.frontiers.end_hive")
+
+    //Fireproof Wood
+
+    let forestryWoods = [
+        'larch',
+        'teak',
+        'acacia_desert',
+        'lime',
+        'chestnut',
+        'wenge',
+        'baobab',
+        'sequoia',
+        'kapok',
+        'ebony',
+        'mahogany',
+        'balsa',
+        'willow',
+        'walnut',
+        'greenheart',
+        'hill_cherry',
+        'mahoe',
+        'poplar',
+        'palm',
+        'papaya',
+        'pine',
+        'plum',
+        'maple',
+        'citrus',
+        'giganteum',
+        'ipe',
+        'padauk',
+        'cocobolo',
+        'zebrawood'
+    ]
+
+    let minecraftWoods = [
+        'oak',
+        'spruce',
+        'birch',
+        'jungle',
+        'acacia',
+        'cherry',
+        'dark_oak'
+    ]
+
+    forestryWoods.forEach(woodType => {
+        event.recipes.gtceu.laminator(`forestry:${woodType}_fireproof_log`)
+            .itemInputs([`16x forestry:${woodType}_log`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_log`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`forestry:${woodType}_fireproof_stripped_log`)
+            .itemInputs([`16x forestry:${woodType}_stripped_log`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_stripped_log`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`forestry:${woodType}_fireproof_wood`)
+            .itemInputs([`16x forestry:${woodType}_wood`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_wood`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`forestry:${woodType}_fireproof_stripped_wood`)
+            .itemInputs([`16x forestry:${woodType}_stripped_wood`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_stripped_wood`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`forestry:${woodType}_fireproof_planks`)
+            .itemInputs([`16x forestry:${woodType}_planks`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_planks`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`forestry:${woodType}_fireproof_slab`)
+            .itemInputs([`16x forestry:${woodType}_slab`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_slab`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`forestry:${woodType}_fireproof_fence`)
+            .itemInputs([`16x forestry:${woodType}_fence`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_fence`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`forestry:${woodType}_fireproof_fence_gate`)
+            .itemInputs([`16x forestry:${woodType}_fence_gate`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_fence_gate`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`forestry:${woodType}_fireproof_stairs`)
+            .itemInputs([`16x forestry:${woodType}_stairs`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_stairs`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+    })
+
+    minecraftWoods.forEach(woodType => {
+        event.recipes.gtceu.laminator(`minecraft:${woodType}_fireproof_log`)
+            .itemInputs([`16x minecraft:${woodType}_log`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_log`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`minecraft:${woodType}_fireproof_stripped_log`)
+            .itemInputs([`16x minecraft:stripped_${woodType}_log`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_stripped_log`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`minecraft:${woodType}_fireproof_wood`)
+            .itemInputs([`16x minecraft:${woodType}_wood`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_wood`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`minecraft:${woodType}_fireproof_stripped_wood`)
+            .itemInputs([`16x minecraft:stripped_${woodType}_wood`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_stripped_wood`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`minecraft:${woodType}_fireproof_planks`)
+            .itemInputs([`16x minecraft:${woodType}_planks`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_planks`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`minecraft:${woodType}_fireproof_slab`)
+            .itemInputs([`16x minecraft:${woodType}_slab`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_slab`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`minecraft:${woodType}_fireproof_fence`)
+            .itemInputs([`16x minecraft:${woodType}_fence`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_fence`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`minecraft:${woodType}_fireproof_fence_gate`)
+            .itemInputs([`16x minecraft:${woodType}_fence_gate`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_fence_gate`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.laminator(`minecraft:${woodType}_fireproof_stairs`)
+            .itemInputs([`16x minecraft:${woodType}_stairs`, '2x forestry:refractory_wax'])
+            .inputFluids('gtceu:glass 144')
+            .itemOutputs(`16x forestry:${woodType}_fireproof_stairs`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+    })
+
+    //fruit stuff
+
+    event.recipes.gtceu.extractor('forestry:chestnut_seed_oil')
+        .itemInputs('forestry:fruit_chestnut')
+        .outputFluids('gtceu:seed_oil 144')
+        .duration(32)
+        .EUt(2);
+
+    event.recipes.gtceu.extractor('forestry:walnut_seed_oil')
+        .itemInputs('forestry:fruit_walnut')
+        .outputFluids('gtceu:seed_oil 144')
+        .duration(32)
+        .EUt(2);
+
 
     //Misc
 
@@ -1017,5 +1280,14 @@ ServerEvents.recipes(event => {
         A: 'forestry:silk_wisp',
         B: 'minecraft:stick'
     }).id('frontiers:woven_cloth_silk')
+
+    event.shaped('cosmiccore:waxed_leather', [
+        ' A ',
+        'ABA',
+        ' A '
+    ], {
+        A: '#forestry:combs',
+        B: 'minecraft:leather'
+    }).id('frontiers:waxed_leather_forestry')
     
 })
