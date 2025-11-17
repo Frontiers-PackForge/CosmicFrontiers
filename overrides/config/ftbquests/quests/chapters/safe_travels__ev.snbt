@@ -59,8 +59,8 @@
 				item: "gtceu:neodymium_ingot"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -1.5d
+			x: -1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5837A875D09D3E35"]
@@ -79,7 +79,7 @@
 			dependencies: ["5837A875D09D3E35"]
 			id: "413DBCE12C126205"
 			tasks: [{
-				id: "2BCAD7F89DD99022"
+				id: "6A843B7E8CBCCC87"
 				item: "kubejs:mana_deposited_wafer"
 				type: "item"
 			}]
@@ -121,7 +121,15 @@
 		}
 		{
 			dependencies: ["5837A875D09D3E35"]
+			description: [
+				"You're going to need a good amount of Uraninite. "
+				""
+				"Each fuel rod roughly equates to ~180 Uraninite Dust, as fuel rods are extremely dense and slow."
+				""
+				"At this time I'd suggest upgrading your ore processing to use leaching plants if you haven't."
+			]
 			id: "5177EBAEC06D1F27"
+			subtitle: "Yummy Uranium"
 			tasks: [{
 				id: "161EEF72F6883229"
 				item: "gtceu:uraninite_dust"
@@ -131,55 +139,18 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["55791C262EB37FB7"]
-			dependency_requirement: "one_completed"
-			icon: "gtceu:molten_salt_reactor"
-			id: "74309E61E59DB15E"
-			shape: "hexagon"
-			size: 1.25d
-			subtitle: "Time to get Critical!"
-			tasks: [
-				{
-					id: "5600EC34B9B878B8"
-					item: "gtceu:molten_salt_reactor"
-					type: "item"
-				}
-				{
-					count: 64L
-					id: "1B7F425AA5D1B839"
-					item: { Count: 64, id: "cosmiccore:high_temperature_fission_casing" }
-					type: "item"
-				}
-			]
-			title: "FUUUUS- Wait... FISSSSION!"
-			x: 8.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["66199EEBDDC26CD6"]
-			id: "4E624B18AFD31904"
-			shape: "hexagon"
-			tasks: [{
-				id: "7A0FDEB58B2455D0"
-				item: "gtceu:neptunium_ingot"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["4E624B18AFD31904"]
+			dependencies: ["069BA15ED0D2CD1C"]
 			id: "726C3FB991868CF4"
 			tasks: [{
-				id: "3B2CB908CF1FF729"
-				item: "gtceu:fine_neptunium_wire"
+				id: "0AC4FCF13184830E"
+				item: "cosmiccore:fine_melodic_alloy_wire"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -3.5d
+			x: 5.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["66199EEBDDC26CD6"]
+			dependencies: ["227A79CFB7910739"]
 			id: "5E2D93FAA0E33E3D"
 			shape: "hexagon"
 			tasks: [{
@@ -187,44 +158,57 @@
 				item: "gtceu:plutonium_ingot"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.5d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"726C3FB991868CF4"
 				"2B03866847349B9D"
 				"0E71C56F27FBDB67"
+				"11517F9F6461FC6A"
+				"1265BDBFB8EBC559"
 			]
 			id: "2F9A455A45B89627"
 			tasks: [{
-				id: "099770A867A00747"
-				item: "gtceu:nano_processor"
+				id: "39EC5FA07AC4540D"
+				item: "cosmiccore:enthelic_processor"
 				type: "item"
 			}]
 			x: 3.5d
 			y: -4.5d
 		}
 		{
-			dependencies: ["2F9A455A45B89627"]
+			dependencies: [
+				"2F9A455A45B89627"
+				"726C3FB991868CF4"
+			]
 			id: "2480C3B3F10F70EF"
 			tasks: [{
-				id: "6881FB5E0DAA12D0"
-				item: "gtceu:nano_processor_assembly"
+				id: "3B4DE25360B351D5"
+				item: "cosmiccore:enthelic_processor_assembly"
 				type: "item"
 			}]
 			x: 3.5d
 			y: -6.0d
 		}
 		{
-			dependencies: ["5E2D93FAA0E33E3D"]
+			dependencies: ["58AF9837D8CE5BFE"]
+			description: [
+				"Your efforts are worth it! &eSignalum&r is a wonderfully conductor and is robust enough to withstand the elements."
+				""
+				"This will allow the creation of a powerful multiblock, &6The Power Substation&r. An invaluable structure allowing you to &bstore power into a local dimensional pocket&r. You assume remote connections can be made with stronger electronics in the future."
+				""
+				"&7&oYou hear your own heartbeat within these circuits, strange.&r"
+			]
 			id: "3631A4B5AA4AD349"
+			subtitle: "Success!"
 			tasks: [{
-				id: "461C59C8C1949705"
-				item: "gtceu:fine_plutonium_wire"
+				id: "0930C9E8E7E0ADAF"
+				item: "cosmiccore:fine_signalum_wire"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: -7.5d
 		}
 		{
@@ -362,6 +346,7 @@
 				"7821728DED2F1B37"
 				"3EE6B0A888940001"
 				"43F0CB80703C49A2"
+				"5807A9610DCBFB12"
 			]
 			description: [
 				"&bVirtue Meld&r is an unique composition of several exotic materials you've acquired so far; And the essence of a dead being but that isn't important"
@@ -430,7 +415,6 @@
 			y: -14.0d
 		}
 		{
-			dependencies: ["74309E61E59DB15E"]
 			description: ["Supercritical Steam Will have more uses outside of power in the future, but for now I would just vent your SC Steam."]
 			id: "60C28AEB7C50E3E3"
 			tasks: [{
@@ -438,8 +422,8 @@
 				item: "gtceu:super_critical_steam_bucket"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 4.0d
+			x: 1.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -560,7 +544,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.5d
+			x: 3.5d
 			y: 1.5d
 		}
 		{
@@ -581,7 +565,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 6.0d
+			x: 5.0d
 			y: 1.0d
 		}
 		{
@@ -602,41 +586,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 6.0d
+			x: 5.0d
 			y: 2.0d
-		}
-		{
-			dependencies: [
-				"4B33D9E665298C60"
-				"42FBED68FB3BB538"
-				"2CF1EE05CF359064"
-			]
-			id: "55791C262EB37FB7"
-			tasks: [{
-				id: "7E7CA5B976EB4B95"
-				item: "gtceu:uranium_fuel_salt_bucket"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["74309E61E59DB15E"]
-			id: "26EFA20A9C9A92A3"
-			tasks: [
-				{
-					id: "7E5EB9B98FD25CAF"
-					item: "gtceu:superheated_waste_uranium_fuel_salt_bucket"
-					type: "item"
-				}
-				{
-					id: "42A657AAE1CFD6DF"
-					item: "gtceu:superheated_uranium_fuel_salt_bucket"
-					type: "item"
-				}
-			]
-			x: 8.5d
-			y: 0.0d
 		}
 		{
 			dependencies: ["71BB86F673F75CEF"]
@@ -657,7 +608,7 @@
 			}]
 			title: "&bMass Energy Distribution"
 			x: 3.5d
-			y: -12.0d
+			y: -10.5d
 		}
 		{
 			dependencies: [
@@ -666,61 +617,28 @@
 			]
 			id: "2B33818821F17BB4"
 			tasks: [{
-				id: "5A8CEC56DA22B4DE"
-				item: "gtceu:nano_processor_computer"
+				id: "6777CA6BE57BC3B8"
+				item: "cosmiccore:enthelic_processor_supercomputer"
 				type: "item"
 			}]
 			x: 3.5d
 			y: -7.5d
 		}
 		{
-			dependencies: ["2B33818821F17BB4"]
+			dependencies: [
+				"2B33818821F17BB4"
+				"3631A4B5AA4AD349"
+			]
 			id: "71BB86F673F75CEF"
 			shape: "hexagon"
 			size: 1.0d
 			tasks: [{
-				id: "0586462F306B2EE8"
-				item: "gtceu:nano_processor_mainframe"
+				id: "55A13AC36D287A94"
+				item: "cosmiccore:enthelic_processor_mainframe"
 				type: "item"
 			}]
 			x: 3.5d
 			y: -9.0d
-		}
-		{
-			dependencies: ["26EFA20A9C9A92A3"]
-			id: "329307C3E9C71752"
-			shape: "hexagon"
-			tasks: [{
-				id: "2570637BB372FB07"
-				item: "gtceu:pulse_heat_exchanger"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["329307C3E9C71752"]
-			id: "66199EEBDDC26CD6"
-			tasks: [{
-				id: "097EC7B85AF7F5CA"
-				item: "gtceu:waste_uranium_fuel_salt_bucket"
-				type: "item"
-			}]
-			x: 5.25d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5837A875D09D3E35"]
-			hide_dependency_lines: true
-			id: "4B33D9E665298C60"
-			subtitle: "FLiNaK - Reactor Salt Mixture"
-			tasks: [{
-				id: "386CE6617808EC02"
-				item: "gtceu:flinak_bucket"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 3.0d
 		}
 		{
 			dependencies: ["5837A875D09D3E35"]
@@ -1009,24 +927,23 @@
 			]
 			id: "43F0CB80703C49A2"
 			shape: "octagon"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "511AE6176BDFBB5B"
 				item: "gtceu:alloy_blast_smelter"
 				type: "item"
 			}]
 			x: 1.5d
-			y: -12.0d
+			y: -10.5d
 		}
 		{
 			dependencies: [
 				"42FBED68FB3BB538"
 				"2CF1EE05CF359064"
 			]
-			description: ["If you need the dusts you can optionally electrolyze them"]
+			description: ["Required to start creating fissle fuels"]
 			id: "394A617CE2B7112D"
-			optional: true
-			shape: "gear"
+			shape: "circle"
 			subtitle: "Do not eat"
 			tasks: [
 				{
@@ -1040,8 +957,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 3.0d
+			x: 6.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["720E3273A6040AD6"]
@@ -1415,18 +1332,21 @@
 				item: "gtceu:radon_bucket"
 				type: "item"
 			}]
-			x: 5.25d
+			x: 5.0d
 			y: -2.5d
 		}
 		{
-			dependencies: ["502E5E527584AB20"]
+			dependencies: [
+				"502E5E527584AB20"
+				"069BA15ED0D2CD1C"
+			]
 			id: "0E71C56F27FBDB67"
 			tasks: [{
 				id: "71C9BE46EF85747D"
 				item: "gtceu:ev_circuit_assembler"
 				type: "item"
 			}]
-			x: 5.25d
+			x: 5.0d
 			y: -4.5d
 		}
 		{
@@ -1493,6 +1413,214 @@
 			title: "Lore Entry #5"
 			x: 0.0d
 			y: -17.5d
+		}
+		{
+			dependencies: ["11517F9F6461FC6A"]
+			id: "1265BDBFB8EBC559"
+			tasks: [{
+				id: "207C4E9E2BD27135"
+				item: "cosmiccore:spirit_engraved_enthel_circuit_board"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5837A875D09D3E35"]
+			id: "11517F9F6461FC6A"
+			tasks: [{
+				id: "7CE4525E32DDAB02"
+				item: "cosmiccore:vibrant_alloy_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["394A617CE2B7112D"]
+			id: "39005D17366E64B9"
+			tasks: [{
+				id: "704C4E0CE1FB0310"
+				item: "cosmiccore:flesh_packed_uranium_fuel"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["39005D17366E64B9"]
+			id: "227A79CFB7910739"
+			tasks: [{
+				id: "5506A81058C3A554"
+				item: "cosmiccore:fleshy_uranium_waste"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["694E11440C5940AD"]
+			id: "069BA15ED0D2CD1C"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "580E318D83674A87"
+				item: "cosmiccore:melodic_alloy_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["227A79CFB7910739"]
+			id: "694E11440C5940AD"
+			tasks: [{
+				id: "238504B9C116BFF7"
+				item: "gtceu:hafnium_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["227A79CFB7910739"]
+			id: "659F53592E84C6AB"
+			tasks: [{
+				id: "459D2D5CA43CE464"
+				item: "cosmiccore:flesh_packed_plutonium_fuel"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["659F53592E84C6AB"]
+			id: "302FCBE318F16124"
+			tasks: [{
+				id: "26B90BA250F50543"
+				item: "cosmiccore:fleshy_plutonium_waste"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["302FCBE318F16124"]
+			id: "2325F9EB88AD321F"
+			tasks: [{
+				id: "12686084BE51326A"
+				item: "gtceu:scandium_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2325F9EB88AD321F"]
+			description: [
+				"Scandium and Red Alloy generally do not chemically work together."
+				""
+				"You decide that isn't an issue for yourself, and start to design an ingot capable of harnessing the voltaic power of redstone and the alloy capability of Scandium."
+				""
+				"There is a chance that during alloying your mixture becomes unstable, &cyou'll lose red alloy and fail to create an ingot 35% of the time&r."
+				""
+				"This ingot glows softly like the sun, Lumium and Signalum seem to be sister ingots."
+			]
+			id: "58AF9837D8CE5BFE"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Making the implausible, probable"
+			tasks: [{
+				id: "278AE17D173F1F64"
+				item: "cosmiccore:signalum_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["39005D17366E64B9"]
+			id: "0478E1C9F989ED3F"
+			size: 1.5d
+			tasks: [{
+				id: "12559AE3FAC0B951"
+				item: "cosmiccore:vile_fission"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["58AF9837D8CE5BFE"]
+			id: "602D8FB79F3D5091"
+			tasks: [{
+				id: "5BA93D448C26139D"
+				item: "cosmiccore:portable_gravity_core"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["302FCBE318F16124"]
+			id: "633EFC0A5A57A5B6"
+			tasks: [{
+				id: "3336717CA09EA3C9"
+				item: "cosmiccore:flesh_packed_neptunium_fuel"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["633EFC0A5A57A5B6"]
+			id: "0DD0B45AD29265AC"
+			tasks: [{
+				id: "636B4AD0BE81F747"
+				item: "cosmiccore:fleshy_neptunium_waste"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["3A4C5CF80EA9B474"]
+			id: "5807A9610DCBFB12"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "761C6D38B3DAB3B8"
+				item: "cosmiccore:enderium_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0DD0B45AD29265AC"]
+			id: "3A4C5CF80EA9B474"
+			tasks: [{
+				id: "1311A74132FA9E1F"
+				item: "gtceu:actinium_dust"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["5807A9610DCBFB12"]
+			id: "3FBDAAEA2D8FE3BB"
+			tasks: [{
+				id: "0732007955DC2F91"
+				item: {
+					Count: 1
+					id: "cosmiccore:infinite_spray_can"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: -10.0d
 		}
 	]
 	title: "Safe Travels - [EV]"

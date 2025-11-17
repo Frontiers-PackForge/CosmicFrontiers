@@ -1855,7 +1855,10 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["1E72D62913EEB4EE"]
+			hide_dependency_lines: true
 			id: "1B9172203812659B"
+			shape: "hexagon"
 			tasks: [{
 				id: "63CC1F15EEFC62BD"
 				item: "occultism:iesnium_ingot"
