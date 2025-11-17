@@ -77,50 +77,6 @@
 		}
 		{
 			dependencies: ["5837A875D09D3E35"]
-			id: "413DBCE12C126205"
-			tasks: [{
-				id: "6A843B7E8CBCCC87"
-				item: "kubejs:mana_deposited_wafer"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["413DBCE12C126205"]
-			id: "06F4BDD255BB8D0F"
-			tasks: [{
-				id: "447A553FFD0BBE16"
-				item: "kubejs:prepared_nano_cpu_wafer"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["06F4BDD255BB8D0F"]
-			id: "3DA27217BDFDE615"
-			tasks: [{
-				id: "23AE11A34D96F7CF"
-				item: "gtceu:nano_cpu_wafer"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["3DA27217BDFDE615"]
-			id: "2B03866847349B9D"
-			tasks: [{
-				id: "1AF5FED5952FFE27"
-				item: "gtceu:nano_cpu_chip"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["5837A875D09D3E35"]
 			description: [
 				"You're going to need a good amount of Uraninite. "
 				""
@@ -164,10 +120,10 @@
 		{
 			dependencies: [
 				"726C3FB991868CF4"
-				"2B03866847349B9D"
 				"0E71C56F27FBDB67"
 				"11517F9F6461FC6A"
 				"1265BDBFB8EBC559"
+				"21DAEB363D3B04AC"
 			]
 			id: "2F9A455A45B89627"
 			tasks: [{
@@ -415,7 +371,9 @@
 			y: -14.0d
 		}
 		{
+			dependencies: ["5837A875D09D3E35"]
 			description: ["Supercritical Steam Will have more uses outside of power in the future, but for now I would just vent your SC Steam."]
+			hide_dependency_lines: true
 			id: "60C28AEB7C50E3E3"
 			tasks: [{
 				id: "1B0A0848C4D0325B"
@@ -1415,19 +1373,25 @@
 			y: -17.5d
 		}
 		{
-			dependencies: ["11517F9F6461FC6A"]
+			dependencies: [
+				"11517F9F6461FC6A"
+				"331702F0A7FE821A"
+				"508CDF0D46D392E5"
+			]
 			id: "1265BDBFB8EBC559"
 			tasks: [{
 				id: "207C4E9E2BD27135"
 				item: "cosmiccore:spirit_engraved_enthel_circuit_board"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -4.5d
+			x: 3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5837A875D09D3E35"]
 			id: "11517F9F6461FC6A"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "7CE4525E32DDAB02"
 				item: "cosmiccore:vibrant_alloy_ingot"
@@ -1621,6 +1585,41 @@
 			}]
 			x: 8.0d
 			y: -10.0d
+		}
+		{
+			dependencies: ["40584BD5E47EF0D7"]
+			id: "21DAEB363D3B04AC"
+			tasks: [{
+				id: "779CE3D361DE8DAF"
+				item: "cosmiccore:spirit_runed_enthel_cpu_wafer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5837A875D09D3E35"]
+			hide_dependency_lines: true
+			id: "508CDF0D46D392E5"
+			shape: "hexagon"
+			tasks: [{
+				id: "6D846994E83A400C"
+				item: "gtceu:blue_alloy_shape_memory_foil"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5837A875D09D3E35"]
+			id: "331702F0A7FE821A"
+			tasks: [{
+				id: "26B22F0DD3F87201"
+				item: "cosmiccore:multilayered_enthel_circuit_board"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
 		}
 	]
 	title: "Safe Travels - [EV]"
