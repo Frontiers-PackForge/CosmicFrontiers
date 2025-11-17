@@ -81,16 +81,16 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.gtceu.electric_blast_furnace('enderium_blasting_slow')
-        .itemInputs('gtceu:enderium_dust')
-        .itemOutputs('gtceu:hot_enderium_ingot')
+        .itemInputs('cosmiccore:enderium_dust')
+        .itemOutputs('cosmiccore:hot_enderium_ingot')
         .circuit(1)
         .blastFurnaceTemp(4500)
         .duration(2400)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.electric_blast_furnace('enderium_blasting_fast')
-        .itemInputs('gtceu:enderium_dust')
+        .itemInputs('cosmiccore:enderium_dust')
         .inputFluids('gtceu:helium 100')
-        .itemOutputs('gtceu:hot_enderium_ingot')
+        .itemOutputs('cosmiccore:hot_enderium_ingot')
         .circuit(2)
         .blastFurnaceTemp(4500)
         .duration(1800)
