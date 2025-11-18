@@ -270,10 +270,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: [
-				"71C697E52A8CE267"
-				"74D13FED9D51C73C"
-			]
+			dependencies: ["74D13FED9D51C73C"]
 			description: [
 				"I see only one path forward: augment everything. My body. My tools. My mind’s defenses. If those fragmented reflections of myself return—if they corner me again—I won’t survive the torture awaiting my mind and body."
 				""
@@ -297,10 +294,7 @@
 			y: 9.5d
 		}
 		{
-			dependencies: [
-				"71C697E52A8CE267"
-				"46CA8F3DC854CAF6"
-			]
+			dependencies: ["46CA8F3DC854CAF6"]
 			description: [
 				"I see only one path forward: augment everything. My body. My tools. My mind’s defenses. If those fragmented reflections of myself return—if they corner me again—I won’t survive the torture awaiting my mind and body."
 				""
@@ -323,10 +317,7 @@
 			y: 11.0d
 		}
 		{
-			dependencies: [
-				"71C697E52A8CE267"
-				"2F794D6CDEC3506E"
-			]
+			dependencies: ["2F794D6CDEC3506E"]
 			description: [
 				"I see only one path forward: augment everything. My body. My tools. My mind’s defenses. If those fragmented reflections of myself return—if they corner me again—I won’t survive the torture awaiting my mind and body."
 				""
@@ -351,10 +342,7 @@
 			y: 12.5d
 		}
 		{
-			dependencies: [
-				"71C697E52A8CE267"
-				"68B29284E8F11755"
-			]
+			dependencies: ["68B29284E8F11755"]
 			description: [
 				"I see only one path forward: augment everything. My body. My tools. My mind’s defenses. If those fragmented reflections of myself return—if they corner me again—I won’t survive the torture awaiting my mind and body."
 				""
