@@ -3380,6 +3380,36 @@
 			x: -21.0d
 			y: -2.5d
 		}
+		{
+			dependencies: ["61E763C4211D88C8"]
+			id: "222313A0CC826396"
+			tasks: [
+				{
+					id: "49CC52E74D60ED98"
+					item: "create:package_frogport"
+					type: "item"
+				}
+				{
+					id: "3837B162B59E18E8"
+					item: "create:packager"
+					type: "item"
+				}
+			]
+			title: "Create Storage"
+			x: -3.75d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6D0887AA0BEF3B4C"]
+			id: "6AE6CF9875861A7B"
+			tasks: [{
+				id: "5D9036A86A3E555C"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -7.5d
+		}
 	]
 	title: "Rising Pressure - [Steam]"
 }

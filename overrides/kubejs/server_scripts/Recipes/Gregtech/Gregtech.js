@@ -515,13 +515,13 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.assembler('hv_energy_output_hatch_4a')
     .itemInputs('gtceu:hv_energy_output_hatch', '2x gtceu:gold_quadruple_wire', '2x gtceu:stainless_steel_plate')
     .itemOutputs('cosmiccore:hv_energy_output_hatch_4a')
-    .duration(20*5)
+    .duration(20 * 5)
     .EUt(GTValues.VA[GTValues.MV]);
 
   event.recipes.gtceu.assembler('hv_energy_output_hatch_16a')
     .itemInputs('cosmiccore:hv_energy_output_hatch_4a', 'gtceu:hv_transformer_1a', '2x gtceu:gold_octal_wire', '4x gtceu:stainless_steel_plate')
     .itemOutputs('cosmiccore:hv_energy_output_hatch_16a')
-    .duration(20*10)
+    .duration(20 * 10)
     .EUt(GTValues.VA[GTValues.HV]);
 
   event.shaped('cosmiccore:industrial_primitive_blast_furnace', [
@@ -959,6 +959,15 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:polyethylene 576')
     .duration(400)
     .EUt(GTValues.VA[GTValues.HV]);
+
+
+  event.recipes.gtceu.assembler('fuel_rod_empty_titanium')
+    .itemInputs(['8x gtceu:long_titanium_rod', '2x gtceu:double_titanium_plate'])
+    .itemOutputs('cosmiccore:empty_fuel_rod')
+    .inputFluids('gtceu:soldering_alloy 576')
+    .duration(400)
+    .EUt(GTValues.VA[GTValues.EV]);
+
   event.recipes.gtceu.alloy_smelter('neo_prase')
     .itemInputs(['4x gtceu:praseodymium_rod', '3x gtceu:neodymium_ingot'])
     .itemOutputs('4x gtceu:neodymium_praseodymium_rod')

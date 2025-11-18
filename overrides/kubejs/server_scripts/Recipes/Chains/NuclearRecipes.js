@@ -17,6 +17,17 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(GTValues.VA[GTValues.HV]);
 
+    event.recipes.gtceu.assembler(`fleshy_plutonium_rod_production`)
+        .itemInputs(['cosmiccore:empty_fuel_rod', '60x gtceu:plutonium_dust', '16x malum:living_flesh'])
+        .itemOutputs('cosmiccore:flesh_packed_plutonium_fuel')
+        .duration(2000)
+        .EUt(GTValues.VA[GTValues.HV]);
+
+    event.recipes.gtceu.assembler(`fleshy_neptunium_rod_production`)
+        .itemInputs(['cosmiccore:empty_fuel_rod', '60x gtceu:neptunium_dust', '16x malum:living_flesh'])
+        .itemOutputs('cosmiccore:flesh_packed_neptunium_fuel')
+        .duration(2000)
+        .EUt(GTValues.VA[GTValues.HV]);
 
 
     event.recipes.gtceu.vile_fission(`fleshy_uranium`)
@@ -32,7 +43,11 @@ ServerEvents.recipes(event => {
         .duration(700)
         .EUt(GTValues.VA[GTValues.EV]);
 
-
+    event.recipes.gtceu.vacuum_freezer('cool_heated_fuel_rod')
+        .itemInputs('cosmiccore:superheated_fuel_rod')
+        .itemOutputs('cosmiccore:empty_fuel_rod')
+        .duration(390)
+        .EUt(GTValues.VA[GTValues.EV]);
 
 
     event.recipes.gtceu.vile_fission(`fleshy_plutonium`)

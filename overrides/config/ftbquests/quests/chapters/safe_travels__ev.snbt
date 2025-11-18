@@ -1545,7 +1545,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -10.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["3A4C5CF80EA9B474"]
@@ -1620,6 +1620,16 @@
 			}]
 			x: 2.5d
 			y: 0.0d
+		}
+		{
+			id: "0F99A7202B86BC10"
+			tasks: [{
+				id: "1B0FC03344412C03"
+				item: "gtceu:uranium_fuel_salt_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
 		}
 	]
 	title: "Safe Travels - [EV]"

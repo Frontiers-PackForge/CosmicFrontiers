@@ -271,7 +271,7 @@ ServerEvents.recipes(event => {
               I: 'cosmiccore:dense_vibrant_alloy_plate'
        })
 
-              event.shaped('cosmiccore:portable_gravity_core', [
+       event.shaped('cosmiccore:infinite_spray_can', [
               'CIC',
               'CEC',
               'CIC',
