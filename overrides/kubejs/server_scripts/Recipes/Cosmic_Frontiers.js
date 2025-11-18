@@ -1086,4 +1086,30 @@ ServerEvents.recipes(event => {
               .duration(1000)
               .EUt(GTValues.VA[GTValues.EV]);
 
+       //Recipes for Iron Plated Deepslate but I'm not sure where to put it
+       event.recipes.gtceu.assembler('cosmiccore:iron_plated_deepslate_tile')
+              .itemInputs(['minecraft:deepslate_tiles', '2x #forge:plates/iron'])
+              .itemOutputs('cosmiccore:iron_plated_deepslate_tile')
+              .circuit(4)
+              .duration(20*4)
+              .EUt(GTValues.VHA[GTValues.ULV]);
+       event.stonecutting('2x cosmiccore:iron_plated_deepslate_tile_slab', 'cosmiccore:iron_plated_deepslate_tile')
+       event.stonecutting('cosmiccore:iron_plated_deepslate_tile_stairs', 'cosmiccore:iron_plated_deepslate_tile')
+       event.stonecutting('cosmiccore:iron_plated_deepslate_tile', 'cosmiccore:iron_plated_deepslate_tile_stairs')
+       event.recipes.gtceu.cutter('cosmiccore:iron_plated_deepslate_tile_slab')
+              .itemInputs('cosmiccore:iron_plated_deepslate_tile')
+              .itemOutputs('2x cosmiccore:iron_plated_deepslate_tile_slab')
+              .circuit(4)
+              .duration(20*4)
+              .EUt(GTValues.VHA[GTValues.ULV]);
+       event.shapeless('cosmiccore:iron_plated_deepslate_tile',
+    ['cosmiccore:iron_plated_deepslate_tile_slab', 'cosmiccore:iron_plated_deepslate_tile_slab'])
+       event.shaped('6x cosmiccore:iron_plated_deepslate_tile_stairs', [
+              'A  ',
+              'AA ',
+              'AAA',
+       ], {
+              A: 'cosmiccore:iron_plated_deepslate_tile'
+       })
+
 })
