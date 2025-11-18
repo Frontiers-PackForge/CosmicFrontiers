@@ -27,6 +27,16 @@ yeet('tconstruct:raw_cobalt')
 yeet('tconstruct:molten_lumium_bucket')
 yeet('tconstruct:molten_signalum_bucket')
 yeet('tconstruct:molten_enderium_bucket')
+yeet('tconstruct:plate_cast')
+yeet('tconstruct:plate_sand_cast')
+yeet('tconstruct:plate_red_sand_cast')
+yeet('tconstruct:gem_cast')
+yeet('tconstruct:gem_sand_cast')
+yeet('tconstruct:gem_red_sand_cast')
+yeet('tconstruct:foundry_controller')
+yeet('tconstruct:scorched_drain')
+yeet('tconstruct:scorched_duct')
+yeet('tconstruct:scorched_chute')
 
 //hiding the molten fluids
 let yoot = (fluidName) => {
@@ -109,6 +119,16 @@ ServerEvents.tags('item', event => {
 
 
 ServerEvents.recipes(event => {
+
+	event.remove({ type: 'tconstruct:foundry' })
+		
+	event.remove({ input: 'tconstruct:plate_cast' })
+	event.remove({ input: 'tconstruct:plate_sand_cast' })
+	event.remove({ input: 'tconstruct:plate_red_sand_cast' })
+	event.remove({ input: 'tconstruct:gem_cast' })
+	event.remove({ input: 'tconstruct:gem_sand_cast' })
+	event.remove({ input: 'tconstruct:gem_red_sand_cast' })
+
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/ore_sparse' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/raw' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/raw_block' })
@@ -164,9 +184,30 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:smeltery/melting/quartz/ore_sparse' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/ore_dense' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/ore_dense' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/ore_singular' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/netherite/lodestone' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/osmium/dust' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/rose_gold/dust' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/rose_gold/silky_cloth' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/tungsten/dust' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/amethyst/spyglass' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/diamond/jukebox' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/gold/bell' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/gold/clock' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/chain' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/chain_boots' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/chain_chestplate' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/chain_leggings' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/chain_helmet' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/crossbow' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/ingot_4' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/ingot_5' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/nugget_3' })
+	event.remove({ id: 'tconstruct:smeltery/melting/quartz/gem_1' })
 
 	event.remove({ id: 'tconstruct:smeltery/casting/ender/eye' })
-	
+	event.remove({ id: 'tconstruct:smeltery/casting/metal/gold/clock' })
+	event.remove({ id: 'tconstruct:smeltery/casting/metal/iron/compass' })
 	
 	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick' })
 	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick_kiln' })
@@ -175,7 +216,44 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/molten_debris/ore' })
 	event.remove({ id: 'tconstruct:smeltery/alloys/molten_rose_gold' })
 	event.remove({ id: 'tconstruct:smeltery/alloys/molten_netherite' })
+	
+	event.remove({ output: 'tconstruct:silky_cloth' })
+	event.recipes.gtceu.assembler('frontiers:silky_cloth')
+        .itemInputs(['4x projectred_core:woven_cloth', '#forge:gems/rose_quartz'])
+        .itemOutputs('tconstruct:silky_cloth')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV])
 
+	event.remove({ output: 'tconstruct:seared_drain' })
+    event.shaped('tconstruct:seared_drain', [
+        'BHB',
+        'CCC',
+        'B B'
+    ], {
+        H: '#forge:tools/hammers',
+		C: 'gtceu:copper_plate',
+		B: 'tconstruct:seared_brick'
+    })
 
-    
+	event.remove({ output: 'tconstruct:seared_duct' })
+    event.shaped('tconstruct:seared_duct', [
+        'BHB',
+        'CCC',
+        'B B'
+    ], {
+        H: '#forge:tools/hammers',
+		C: 'gtceu:gold_plate',
+		B: 'tconstruct:seared_brick'
+    })
+
+	event.remove({ output: 'tconstruct:seared_chute' })
+    event.shaped('tconstruct:seared_chute', [
+        'BCB',
+        'HC ',
+        'BCB'
+    ], {
+        H: '#forge:tools/hammers',
+		C: 'gtceu:copper_plate',
+		B: 'tconstruct:seared_brick'
+    })
 })

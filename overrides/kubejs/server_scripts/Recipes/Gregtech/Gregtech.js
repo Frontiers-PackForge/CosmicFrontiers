@@ -267,12 +267,12 @@ ServerEvents.recipes(event => {
 
   event.replaceInput({ output: 'gtceu:cleanroom_glass' },
     'gtceu:steel_frame',
-    'gtceu:blue_steel_frame'
+    'cosmiccore:energetic_alloy_frame'
   )
 
   event.replaceInput({ output: 'gtceu:plascrete' },
     'gtceu:steel_frame',
-    'gtceu:blue_steel_frame'
+    'cosmiccore:energetic_alloy_frame'
   )
 
   //Beacon Replacement
@@ -484,6 +484,45 @@ ServerEvents.recipes(event => {
     W: 'gtceu:terrasteel_quadruple_cable',
     H: 'gtceu:mv_machine_hull'
   })
+
+  event.shaped('cosmiccore:pyrothermic_refinery', [
+    'ABA',
+    'CDC',
+    'EFE'
+  ], {
+    A: 'gtceu:terrasteel_hex_wire',
+    B: 'gtceu:double_dawnstone_plate',
+    C: 'gtceu:hv_electric_pump',
+    D: 'gtceu:hv_machine_hull',
+    E: 'gtceu:hv_electric_piston',
+    F: '#gtceu:circuits/hv'
+  })
+
+  event.remove({ id: 'gtceu:shaped/large_steam_turbine' })
+  event.shaped('cosmiccore:steam_large_turbine', [
+    'ABA',
+    'BDB',
+    'CBC'
+  ], {
+    A: '#gtceu:circuits/hv',
+    B: '#forge:gears/steel',
+    C: 'gtceu:steel_large_fluid_pipe',
+    D: 'gtceu:hv_machine_hull'
+  })
+  event.shapeless('cosmiccore:steam_large_turbine', //Converting recipe for old large steam turbine to core ones
+    ['gtceu:steam_large_turbine'])
+
+  event.recipes.gtceu.assembler('hv_energy_output_hatch_4a')
+    .itemInputs('gtceu:hv_energy_output_hatch', '2x gtceu:gold_quadruple_wire', '2x gtceu:stainless_steel_plate')
+    .itemOutputs('cosmiccore:hv_energy_output_hatch_4a')
+    .duration(20 * 5)
+    .EUt(GTValues.VA[GTValues.MV]);
+
+  event.recipes.gtceu.assembler('hv_energy_output_hatch_16a')
+    .itemInputs('cosmiccore:hv_energy_output_hatch_4a', 'gtceu:hv_transformer_1a', '2x gtceu:gold_octal_wire', '4x gtceu:stainless_steel_plate')
+    .itemOutputs('cosmiccore:hv_energy_output_hatch_16a')
+    .duration(20 * 10)
+    .EUt(GTValues.VA[GTValues.HV]);
 
   event.shaped('cosmiccore:industrial_primitive_blast_furnace', [
     'WSH',
@@ -920,6 +959,15 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:polyethylene 576')
     .duration(400)
     .EUt(GTValues.VA[GTValues.HV]);
+
+
+  event.recipes.gtceu.assembler('fuel_rod_empty_titanium')
+    .itemInputs(['8x gtceu:long_titanium_rod', '2x gtceu:double_titanium_plate'])
+    .itemOutputs('cosmiccore:empty_fuel_rod')
+    .inputFluids('gtceu:soldering_alloy 576')
+    .duration(400)
+    .EUt(GTValues.VA[GTValues.EV]);
+
   event.recipes.gtceu.alloy_smelter('neo_prase')
     .itemInputs(['4x gtceu:praseodymium_rod', '3x gtceu:neodymium_ingot'])
     .itemOutputs('4x gtceu:neodymium_praseodymium_rod')
@@ -2353,6 +2401,15 @@ ServerEvents.recipes(event => {
     .itemOutputs('18x cosmiccore:nevramite_dust')
     .duration(1170)
     .EUt(GTValues.VA[GTValues.UV]);
+
+  event.recipes.gtceu.chemical_bath(`frontiers:energetic_alloy_ingot_bath`)
+    .itemInputs('cosmiccore:hot_energetic_alloy_ingot')
+    .inputFluids('minecraft:water 250')
+    .itemOutputs('cosmiccore:energetic_alloy_ingot')
+    .duration(400)
+    .EUt(GTValues.VA[GTValues.MV]);
+
+
 
   event.recipes.gtceu.chemical_bath(`frontiers:aberrant_essence_best`)
     .itemInputs('cosmiccore:wicked_essence')

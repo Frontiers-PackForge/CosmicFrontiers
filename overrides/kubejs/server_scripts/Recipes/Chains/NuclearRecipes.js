@@ -12,11 +12,22 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.gtceu.assembler(`fleshy_uranium_rod_production`)
-        .itemInputs(['cosmiccore:empty_fuel_rod','54x gtceu:uranium_dust', '6x gtceu:uranium_235_dust', '16x malum:living_flesh'])
+        .itemInputs(['cosmiccore:empty_fuel_rod', '54x gtceu:uranium_dust', '6x gtceu:uranium_235_dust', '16x malum:living_flesh'])
         .itemOutputs('cosmiccore:flesh_packed_uranium_fuel')
         .duration(2000)
         .EUt(GTValues.VA[GTValues.HV]);
 
+    event.recipes.gtceu.assembler(`fleshy_plutonium_rod_production`)
+        .itemInputs(['cosmiccore:empty_fuel_rod', '60x gtceu:plutonium_dust', '16x malum:living_flesh'])
+        .itemOutputs('cosmiccore:flesh_packed_plutonium_fuel')
+        .duration(2000)
+        .EUt(GTValues.VA[GTValues.HV]);
+
+    event.recipes.gtceu.assembler(`fleshy_neptunium_rod_production`)
+        .itemInputs(['cosmiccore:empty_fuel_rod', '60x gtceu:neptunium_dust', '16x malum:living_flesh'])
+        .itemOutputs('cosmiccore:flesh_packed_neptunium_fuel')
+        .duration(2000)
+        .EUt(GTValues.VA[GTValues.HV]);
 
 
     event.recipes.gtceu.vile_fission(`fleshy_uranium`)
@@ -25,14 +36,18 @@ ServerEvents.recipes(event => {
         .duration(6000)
         .EUt(GTValues.VA[GTValues.HV]);
 
-    event.recipes.gtceu.electric_blast_furnace('yeah_fleshy_waste_fuel_rod_plutonium')
-        .itemInputs('cosmiccore:spent_flesh_packed_plutonium_fuel')
-        .itemOutputs(['cosmiccore:superheated_fuel_rod', '64x cosmiccore:fleshy_plutonium_waste', '64x cosmiccore:fleshy_plutonium_waste'])
+    event.recipes.gtceu.electric_blast_furnace('yeah_fleshy_waste_fuel_rod_uranium')
+        .itemInputs('cosmiccore:spent_flesh_packed_uranium_fuel')
+        .itemOutputs(['cosmiccore:superheated_fuel_rod', '64x cosmiccore:fleshy_uranium_waste', '64x cosmiccore:fleshy_uranium_waste'])
         .blastFurnaceTemp(3600)
         .duration(700)
         .EUt(GTValues.VA[GTValues.EV]);
 
-
+    event.recipes.gtceu.vacuum_freezer('cool_heated_fuel_rod')
+        .itemInputs('cosmiccore:superheated_fuel_rod')
+        .itemOutputs('cosmiccore:empty_fuel_rod')
+        .duration(390)
+        .EUt(GTValues.VA[GTValues.EV]);
 
 
     event.recipes.gtceu.vile_fission(`fleshy_plutonium`)
@@ -47,6 +62,32 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(3600)
         .duration(700)
         .EUt(GTValues.VA[GTValues.EV]);
+
+
+    event.recipes.gtceu.vile_fission(`fleshy_neptunium`)
+        .itemInputs('cosmiccore:flesh_packed_neptunium_fuel')
+        .itemOutputs('cosmiccore:spent_flesh_packed_neptunium_fuel')
+        .duration(6000)
+        .EUt(GTValues.VA[GTValues.HV]);
+
+    event.recipes.gtceu.electric_blast_furnace('yeah_fleshy_waste_fuel_rod_neptunium')
+        .itemInputs('cosmiccore:spent_flesh_packed_neptunium_fuel')
+        .itemOutputs(['cosmiccore:superheated_fuel_rod', '64x cosmiccore:fleshy_neptunium_waste', '64x cosmiccore:fleshy_neptunium_waste'])
+        .blastFurnaceTemp(3600)
+        .duration(700)
+        .EUt(GTValues.VA[GTValues.EV]);
+
+
+    event.recipes.gtceu.sifter(`fleshy_neptunium`)
+        .itemInputs('cosmiccore:fleshy_neptunium_waste')
+        .chancedOutput('malum:rotting_essence', 9500, 0)
+        .chancedOutput('malum:void_salts', 8000, 0)
+        .chancedOutput('gtceu:tantalum_dust', 6500, 0)
+        .chancedOutput('gtceu:indium_dust', 3500, 0)
+        .chancedOutput('gtceu:actinium_dust', 3500, 0)
+        .chancedOutput('gtceu:californium_dust', 3500, 0)
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.HV]);
 
 
     event.recipes.gtceu.sifter(`fleshy_plutonium`)

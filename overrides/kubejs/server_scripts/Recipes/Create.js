@@ -960,18 +960,18 @@ ServerEvents.recipes(event => {
     .EUt(8);
   //Item Vault
   event.remove({ output: "create:item_vault" })
-  event.shaped('create:item_vault', [
+  event.shaped('3x create:item_vault', [
     'PRP',
     'RCR',
     'PRP'
   ], {
-    P: 'gtceu:steel_plate',
-    C: 'gtceu:steel_crate',
-    R: 'gtceu:steel_rod'
+    P: 'gtceu:bronze_plate',
+    C: 'gtceu:bronze_crate',
+    R: 'gtceu:bronze_rod'
   })
   event.recipes.gtceu.assembler("create:item_vault")
-    .itemInputs('4x gtceu:steel_plate', '4x gtceu:steel_rod', 'gtceu:steel_crate')
-    .itemOutputs('2x create:item_vault')
+    .itemInputs('4x gtceu:bronze_plate', '4x gtceu:bronze_rod', 'gtceu:bronze_crate')
+    .itemOutputs('3x create:item_vault')
     .circuit(11)
     .duration(50)
     .EUt(8);
@@ -1205,7 +1205,7 @@ ServerEvents.recipes(event => {
     'SCS'
   ], {
     F: 'create:cardboard_block',
-    X: 'gtceu:lv_conveyor_module',
+    X: 'ulvcovm:ulv_conveyor_module',
     E: 'gtceu:andesite_alloy_plate',
     S: 'gtceu:andesite_alloy_rod',
     C: '#gtceu:circuits/ulv'
@@ -1218,7 +1218,7 @@ ServerEvents.recipes(event => {
     'SES'
   ], {
     F: 'create:item_vault',
-    X: 'gtceu:lv_robot_arm',
+    X: 'ulvcovm:ulv_robot_arm',
     E: 'gtceu:andesite_alloy_spring',
     S: 'gtceu:andesite_alloy_plate',
     C: '#gtceu:circuits/ulv'
@@ -1231,7 +1231,7 @@ ServerEvents.recipes(event => {
     'SES'
   ], {
     F: 'create:display_link',
-    X: 'gtceu:item_detector_cover',
+    X: 'gtceu:tin_plate',
     E: 'create:item_vault',
     S: 'gtceu:brass_plate',
     C: '#gtceu:circuits/ulv'
@@ -1276,8 +1276,6 @@ ServerEvents.recipes(event => {
     C: '#gtceu:circuits/hv'
   })
   //cardboard
-  event.remove({id: "create:mixing/cardboard_pulp"})
-  event.remove({id: "create:pressing/cardboard"})
   event.remove({id: "create:crafting/appliances/book"})
   event.recipes.gtceu.mixer("create:pulp")
   .circuit(1)

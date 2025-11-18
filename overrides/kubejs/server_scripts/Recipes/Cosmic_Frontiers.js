@@ -259,6 +259,30 @@ ServerEvents.recipes(event => {
               .circuit(1)
               .duration(80)
               .EUt(6);
+
+       event.shaped('cosmiccore:portable_gravity_core', [
+              'CIC',
+              'EPE',
+              'CIC',
+       ], {
+              P: 'gtceu:lapotron_crystal',
+              C: 'gtceu:ev_emitter',
+              E: 'cosmiccore:double_signalum_plate',
+              I: 'cosmiccore:dense_vibrant_alloy_plate'
+       })
+
+       event.shaped('cosmiccore:infinite_spray_can', [
+              'CIC',
+              'CEC',
+              'CIC',
+       ], {
+              P: 'cosmiccore:dense_enderium_plate',
+              I: 'gtceu:solvent_spray_can',
+              E: 'gtceu:empty_spray_can'
+       })
+
+
+
        event.recipes.gtceu.assembler('ug_catalyst')
               .itemInputs(['minecraft:heart_of_the_sea', 'aether:bronze_dungeon_key', 'aether:silver_dungeon_key', 'aether:gold_dungeon_key', '#gtceu:circuits/hv',])
               .inputFluids('gtceu:source_oils 12000')
@@ -549,16 +573,7 @@ ServerEvents.recipes(event => {
               .duration(10)
               .circuit(1)
               .EUt(GTValues.VA[GTValues.LV]);
-       event.recipes.gtceu.alloy_blast_smelter('virtue_meld_molten_bad')
-              .inputFluids('gtceu:galvanized_ethersteel 2304')
-              .inputFluids('gtceu:luminite 1152')
-              .itemInputs('8x gtceu:tempered_iesnium_ingot')
-              .itemInputs('8x botania:life_essence')
-              .outputFluids('gtceu:molten_virtue_meld 4608')
-              .blastFurnaceTemp(4500)
-              .circuit(4)
-              .duration(9600)
-              .EUt(GTValues.VA[GTValues.EV]);
+
        event.recipes.gtceu.alloy_blast_smelter('zbland_glass_crafting')
               .inputFluids('gtceu:fluorine 6000')
               .itemInputs(['5x gtceu:zirconium_dust', '2x gtceu:barium_dust', 'gtceu:lanthanum_dust', 'gtceu:aluminium_dust', '2x gtceu:sodium_dust'])
@@ -567,42 +582,14 @@ ServerEvents.recipes(event => {
               .circuit(16)
               .blastFurnaceTemp(7000)
               .EUt(GTValues.VA[GTValues.EV]);
-       event.recipes.gtceu.alloy_blast_smelter('virtue_meld_molten_good')
-              .notConsumableFluid('gtceu:molten_virtue_meld 1152')
-              .inputFluids('gtceu:luminite 1152')
-              .itemInputs('16x gtceu:tempered_iesnium_ingot')
-              .outputFluids('gtceu:molten_virtue_meld 4608')
-              .duration(4800)
-              .circuit(14)
-              .blastFurnaceTemp(4500)
-              .EUt(GTValues.VA[GTValues.EV]);
+
        event.recipes.gtceu.vacuum_freezer('virtue_meld_cooling')
               .notConsumable('gtceu:ingot_casting_mold')
               .inputFluids('gtceu:molten_virtue_meld 144')
               .itemOutputs('gtceu:virtue_meld_ingot')
               .duration(300)
               .EUt(GTValues.VA[GTValues.HV]);
-       event.recipes.gtceu.electric_blast_furnace('luminite_blasting_slow')
-              .itemInputs('gtceu:luminite_dust')
-              .itemOutputs('gtceu:hot_luminite_ingot')
-              .circuit(1)
-              .blastFurnaceTemp(3600)
-              .duration(2400)
-              .EUt(GTValues.VA[GTValues.HV]);
-       event.recipes.gtceu.vacuum_freezer('luminite_cooling')
-              .itemInputs('gtceu:hot_luminite_ingot')
-              .inputFluids('gtceu:ethane 250')
-              .itemOutputs('gtceu:luminite_ingot')
-              .duration(160)
-              .EUt(GTValues.VA[GTValues.HV]);
-       event.recipes.gtceu.electric_blast_furnace('luminite_blasting_fast')
-              .itemInputs('gtceu:luminite_dust')
-              .inputFluids('gtceu:helium 100')
-              .itemOutputs('gtceu:hot_luminite_ingot')
-              .circuit(2)
-              .blastFurnaceTemp(3600)
-              .duration(1800)
-              .EUt(GTValues.VA[GTValues.HV])
+
        event.recipes.gtceu.electric_blast_furnace('manasteel_first')
               .itemInputs(['8x gtceu:blue_alloy_ingot', '8x botania:manaweave_cloth'])
               .inputFluids('gtceu:crude_source_oils 250')
