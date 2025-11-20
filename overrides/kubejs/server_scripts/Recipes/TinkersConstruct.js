@@ -216,7 +216,36 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/molten_debris/ore' })
 	event.remove({ id: 'tconstruct:smeltery/alloys/molten_rose_gold' })
 	event.remove({ id: 'tconstruct:smeltery/alloys/molten_netherite' })
-	
+
+	event.remove({ id: 'tconstruct:common/glass/vanilla/daylight_detector' })
+	event.remove({ id: 'tconstruct:common/basalt_blast_furnace' })
+	event.remove({ id: 'tconstruct:common/flint' })
+	event.remove({ id: 'tconstruct:common/glass/vanilla/glass_bottle' })
+
+	event.remove({ id: 'tconstruct:tables/pattern' })
+	event.shaped('6x tconstruct:pattern', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: '#forge:rods/wooden',
+		B: '#minecraft:planks',
+		C: 'gtceu:sticky_resin'
+    })
+
+	//"What if you knife a cheese ingot on a cutting board to get ad astra cheese before moon" (c) ghost
+	//IN CASE FD KUBEJS ADDON GETS ADDED CHANGE THAT UP FOR A PROPER RECIPE
+	event.custom({
+		type: 'farmersdelight:cutting',
+		ingredients: [
+		  { item: 'tconstruct:cheese_ingot' }
+		],
+		tool: { tag: 'forge:tools/knives' },
+		result: [
+		  { item: 'ad_astra:cheese', count: 2 }
+		]
+	}).id('frontiers:cheese_cutting')
+
 	event.remove({ output: 'tconstruct:silky_cloth' })
 	event.recipes.gtceu.assembler('frontiers:silky_cloth')
         .itemInputs(['4x projectred_core:woven_cloth', '#forge:gems/rose_quartz'])
