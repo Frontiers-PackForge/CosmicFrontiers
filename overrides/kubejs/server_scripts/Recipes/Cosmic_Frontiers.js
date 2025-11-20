@@ -1093,7 +1093,7 @@ ServerEvents.recipes(event => {
 
        event.replaceInput({ id: 'gtceu:shaped/sticky_piston' },
               'minecraft:string',
-              ['minecraft:string', 'undergarden:twsity_twig']
+              ['minecraft:string', 'undergarden:twisty_twig']
        )
 
        event.replaceInput({ id: 'create:crafting/appliances/name_tags' },
