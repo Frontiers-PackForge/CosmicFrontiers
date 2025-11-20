@@ -97,6 +97,23 @@ ServerEvents.recipes(event => {
     .duration(120)
     .EUt(GTValues.VA[GTValues.LV], 16);
 
+  event.recipes.gtceu.dawn_forge('frontiers:dawnforge_eclipsed')
+    .notConsumable('embers:inflictor_gem')
+    .notConsumable('embers:lead_aspectus')
+    .itemInputs(['kubejs:carbon_ethersteel_lattice', 'embers:shifting_scales', 'kubejs:carbon_ethersteel_lattice', 'embers:shifting_scales', 'embers:dawnstone_anvil', 'embers:caminite_tiles'])
+    .inputFluids('gtceu:polytetrafluoroethylene 576', 'gtceu:galvanized_ethersteel 1440')
+    .itemOutputs('cosmiccore:dawnforge_eclipsed')
+    .emberInput(15000)
+    .duration(20*60)
+    .EUt(GTValues.V[GTValues.LV], 16);
+
+  event.recipes.gtceu.dawn_forge('frontiers:dethersteel_plated_ash_tiles')
+    .itemInputs(['gtceu:galvanized_ethersteel_frame', 'kubejs:carbon_ethersteel_lattice', 'kubejs:carbon_ethersteel_lattice', 'embers:ashen_fabric'])
+    .itemOutputs('cosmiccore:ethersteel_plated_ash_tiles')
+    .emberInput(500)
+    .duration(20*8)
+    .EUt(GTValues.VA[GTValues.LV]);
+
   event.remove({ id: 'embers:ashen_goggles' })
   event.shaped('embers:ashen_goggles', [
     'CLC',
