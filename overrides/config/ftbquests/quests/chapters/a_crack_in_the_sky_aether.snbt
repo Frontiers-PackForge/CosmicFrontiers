@@ -102,7 +102,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["2501BE8FAD0FD89B"]
+			dependencies: ["57A955955309A292"]
 			id: "50401BF5E3938AE9"
 			rewards: [{
 				id: "15D9E7DD5F412FDF"
@@ -119,7 +119,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["50401BF5E3938AE9"]
+			dependencies: ["57A955955309A292"]
 			id: "696EA94AB22229DA"
 			rewards: [{
 				id: "58812ED4EB18639B"
@@ -136,7 +136,11 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["696EA94AB22229DA"]
+			dependencies: [
+				"2501BE8FAD0FD89B"
+				"696EA94AB22229DA"
+				"50401BF5E3938AE9"
+			]
 			description: [
 				"You still have those keys, right?"
 				"You didn't waste the free keys I gave you in the quests &o&lRIGHT&r"
