@@ -101,14 +101,14 @@ ServerEvents.recipes(event => {
     .notConsumable('embers:inflictor_gem')
     .notConsumable('embers:lead_aspectus')
     .itemInputs(['kubejs:carbon_ethersteel_lattice', 'embers:shifting_scales', 'kubejs:carbon_ethersteel_lattice', 'embers:shifting_scales', 'embers:dawnstone_anvil', 'embers:caminite_tiles'])
-    .inputFluids('gtceu:polytetrafluoroethylene 576', 'gtceu:galvanized_ethersteel 1440')
+    .inputFluids('gtceu:polytetrafluoroethylene 48000', 'gtceu:galvanized_ethersteel 18432')
     .itemOutputs('cosmiccore:dawnforge_eclipsed')
-    .emberInput(15000)
+    .emberInput(32000)
     .duration(20*60)
     .EUt(GTValues.V[GTValues.LV], 16);
 
   event.recipes.gtceu.dawn_forge('frontiers:dethersteel_plated_ash_tiles')
-    .itemInputs(['gtceu:galvanized_ethersteel_frame', 'kubejs:carbon_ethersteel_lattice', 'kubejs:carbon_ethersteel_lattice', 'embers:ashen_fabric'])
+    .itemInputs(['gtceu:galvanized_ethersteel_frame', 'kubejs:carbon_ethersteel_lattice', 'kubejs:carbon_ethersteel_lattice', 'kubejs:carbon_ethersteel_lattice', 'embers:ashen_fabric', 'embers:ashen_fabric'])
     .itemOutputs('cosmiccore:ethersteel_plated_ash_tiles')
     .emberInput(500)
     .duration(20*8)
@@ -175,6 +175,24 @@ ServerEvents.recipes(event => {
     'gtceu:mv_machine_hull',
     'occultism:craft_djinni'
   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.mv_ember_hatch")
+
+  event.recipes.occultism.ritual(
+    'cosmiccore:hv_ember_input_hatch',
+    [
+      "gtceu:exquisite_diamond_gem",
+      "gtceu:galvanized_ethersteel_plate",
+      "gtceu:double_luminite_plate",
+      "gtceu:double_luminite_plate",
+      "gtceu:galvanized_ethersteel_plate",
+      "gtceu:exquisite_diamond_gem",
+      'cosmiccore:runic_hex_cpu',
+      'cosmiccore:runic_hex_cpu',
+      'cosmiccore:energetic_alloy_foil',
+      'cosmiccore:energetic_alloy_foil',
+    ],
+    'gtceu:hv_machine_hull',
+    'occultism:craft_djinni'
+  ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.hv_ember_hatch")
 
 
   event.remove({ id: 'embers:dawnstone_plate_hammering' })
