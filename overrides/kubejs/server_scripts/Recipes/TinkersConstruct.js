@@ -217,8 +217,6 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:smeltery/alloys/molten_rose_gold' })
 	event.remove({ id: 'tconstruct:smeltery/alloys/molten_netherite' })
 
-	event.remove({ id: 'tconstruct:common/glass/vanilla/daylight_detector' })
-	event.remove({ id: 'tconstruct:common/basalt_blast_furnace' })
 	event.remove({ id: 'tconstruct:common/flint' })
 	event.remove({ id: 'tconstruct:common/glass/vanilla/glass_bottle' })
 
