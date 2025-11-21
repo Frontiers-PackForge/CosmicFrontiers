@@ -58,8 +58,8 @@ ServerEvents.recipes(event => {
         .EUt(2);
 
     event.recipes.gtceu.dawn_forge('frontiers:mace')
-        .itemInputs('trials:ominous_core', 'trials:breeze_rod', 'trials:breeze_rod', '16x malum:aerial_spirit')
-        .itemOutputs("4x minecraft:soul_sand")
+        .itemInputs('trials:heavy_core', 'trials:breeze_rod', 'trials:breeze_rod', '16x malum:aerial_spirit')
+        .itemOutputs('trials:mace')
         .emberInput(500)
         .duration(1000)
         .EUt(GTValues.VA[GTValues.LV]);
