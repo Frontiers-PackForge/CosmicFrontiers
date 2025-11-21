@@ -1,6 +1,6 @@
 {
     "tip": {
-      "text": "Made with love by Ghostipedia & The Frontiers Dev Team",
+      "translate": "frontiers.tips.love.message",
       "bold": true,
       "color": "aqua"
     }

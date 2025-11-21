@@ -1,6 +1,6 @@
 {
     "tip": {
-      "text": "What tier is the Sun? -Ghost @ 2am",
+      "translate": "frontiers.tips.sun_tier",
       "bold": true,
       "color": "green"
     }
