@@ -893,6 +893,13 @@
   "gtceu.jei.ore_vein.dreamstone": "Dreamstone Vein",
   "gtceu.jei.ore_vein.venus_hadalite_vein": "Venus Hadalite Vein",
   "gtceu.jei.ore_vein.desh_vein": "Desh Vein",
-  "gtceu.jei.ore_vein.ug_utherium_vein": "Undergarden Utherium Vein"
+  "gtceu.jei.ore_vein.ug_utherium_vein": "Undergarden Utherium Vein",
+
+  "gtceu.jei.bedrock_fluid.nether_slag_mk_1": "Nether Slag Deposit",
+  "gtceu.jei.bedrock_fluid.undergarden_virulent_cloggrum_mixture": "Virulent Cloggrum Mixture Deposit",
+  "gtceu.jei.bedrock_fluid.primordial_oil": "Primordial Oil Deposit",
+  "gtceu.jei.bedrock_fluid.liquid_shadows": "Liquid Shadows Deposit",
+  "gtceu.jei.bedrock_fluid.pyroflux": "Pyroflux Deposit",
+  "gtceu.jei.bedrock_fluid.swamp_sediment": "Swamp Sediment Deposit"
 
 }
