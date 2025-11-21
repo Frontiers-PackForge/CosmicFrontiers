@@ -1,6 +1,6 @@
 {
     "tip": {
-      "translate": "frontiers.tips.sun_tier",
+      "translate": "frontiers.tips.sun_tier.message",
       "bold": true,
       "color": "green"
     }
