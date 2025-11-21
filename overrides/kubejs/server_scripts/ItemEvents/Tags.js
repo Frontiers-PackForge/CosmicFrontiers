@@ -60,5 +60,7 @@ ServerEvents.tags("item", event => {
     
     event.remove("forestry:backpack/allow/miner", "minecraft:honeycomb")
     event.add("forestry:backpack/allow/apiarist", "minecraft:honeycomb")
+    
+    event.add('forge:chests/wooden', 'framedblocks:framed_chest')
 })
 

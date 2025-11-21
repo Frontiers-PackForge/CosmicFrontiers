@@ -1086,4 +1086,90 @@ ServerEvents.recipes(event => {
               .duration(1000)
               .EUt(GTValues.VA[GTValues.EV]);
 
+       event.replaceInput({ id: 'gtceu:shaped/scaffolding' },
+              'minecraft:slime_ball',
+              '#forge:slimeballs'
+       )
+
+       event.replaceInput({ id: 'gtceu:shaped/sticky_piston' },
+              'minecraft:string',
+              ['minecraft:string', 'undergarden:twisty_twig']
+       )
+
+       event.replaceInput({ id: 'create:crafting/appliances/name_tags' },
+              'create:cardboard',
+              ['create:cardboard', 'farmersdelight:canvas']
+       )
+
+       event.replaceInput({ id: 'gtceu:shaped/lead' },
+              'minecraft:string',
+              ['minecraft:string', 'farmersdelight:straw']
+       )
+
+       event.replaceInput({ id: 'gtceu:shaped/lead' },
+              'minecraft:slime_ball',
+              '#forge:slimeballs'
+       )
+
+       event.replaceInput({ id: 'gtceu:assembler/lead' },
+              'minecraft:string',
+              ['minecraft:string', 'farmersdelight:straw']
+       )
+
+       event.replaceInput({ id: 'gtceu:assembler/lead' },
+              'minecraft:slime_ball',
+              '#forge:slimeballs'
+       )
+
+       event.shaped('8x minecraft:scaffolding', [
+              'BSB',
+              'BWB',
+              'BMB'
+       ], {
+              B: 'minecraft:bamboo',
+              S: 'farmersdelight:canvas',
+              W: 'gtceu:wood_bolt',
+              M: '#forge:tools/mallets'
+       })
+
+       event.shapeless('minecraft:bamboo_chest_raft', ['minecraft:bamboo_raft', '#forge:chests/wooden'])
+
+       event.recipes.gtceu.assembler(`frontiers:scaffolding_from_canvas`)
+              .itemInputs(['6x minecraft:bamboo', 'farmersdelight:canvas'])
+              .itemOutputs('8x minecraft:scaffolding')
+              .duration(100)
+              .EUt(GTValues.VA[GTValues.ULV]);
+
+       event.recipes.gtceu.assembler(`frontiers:item_frame_from_cardboard`)
+              .itemInputs(['8x minecraft:stick', 'create:cardboard'])
+              .itemOutputs('2x minecraft:item_frame')
+              .duration(100)
+              .EUt(GTValues.VA[GTValues.ULV]);
+
+       //Recipes for Iron Plated Deepslate but I'm not sure where to put it
+       event.recipes.gtceu.assembler('cosmiccore:iron_plated_deepslate_tile')
+              .itemInputs(['minecraft:deepslate_tiles', '2x #forge:plates/iron'])
+              .itemOutputs('cosmiccore:iron_plated_deepslate_tile')
+              .circuit(4)
+              .duration(20*4)
+              .EUt(GTValues.VHA[GTValues.ULV]);
+       event.stonecutting('2x cosmiccore:iron_plated_deepslate_tile_slab', 'cosmiccore:iron_plated_deepslate_tile')
+       event.stonecutting('cosmiccore:iron_plated_deepslate_tile_stairs', 'cosmiccore:iron_plated_deepslate_tile')
+       event.stonecutting('cosmiccore:iron_plated_deepslate_tile', 'cosmiccore:iron_plated_deepslate_tile_stairs')
+       event.recipes.gtceu.cutter('cosmiccore:iron_plated_deepslate_tile_slab')
+              .itemInputs('cosmiccore:iron_plated_deepslate_tile')
+              .itemOutputs('2x cosmiccore:iron_plated_deepslate_tile_slab')
+              .circuit(4)
+              .duration(20*4)
+              .EUt(GTValues.VHA[GTValues.ULV]);
+       event.shapeless('cosmiccore:iron_plated_deepslate_tile',
+    ['cosmiccore:iron_plated_deepslate_tile_slab', 'cosmiccore:iron_plated_deepslate_tile_slab'])
+       event.shaped('6x cosmiccore:iron_plated_deepslate_tile_stairs', [
+              'A  ',
+              'AA ',
+              'AAA',
+       ], {
+              A: 'cosmiccore:iron_plated_deepslate_tile'
+       })
+       
 })
