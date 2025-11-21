@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_reactor(`frontiers:music_disc_creator`)
         .itemInputs('trials:music_disc_creator_box')
-        .fluidInputs('gtceu:oxygen 500')
+        .inputFluids('gtceu:oxygen 500')
         .itemOutputs('trials:music_disc_creator')
         .duration(220)
         .EUt(GTValues.VA[GTValues.LV]);
