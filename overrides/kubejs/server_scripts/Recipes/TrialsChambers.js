@@ -2,6 +2,7 @@ ServerEvents.recipes(event => {
     event.remove('trials:chiseled_tuff_bulb')
     event.remove('trials:copper_bulb')
     event.remove('trials:wind_charge')
+    event.remove('trials:mace')
 
     event.shaped(`3x trials:copper_bulb`, [
         ' B ',
@@ -55,4 +56,11 @@ ServerEvents.recipes(event => {
         .itemOutputs('trials:breeze_rod')
         .duration(200)
         .EUt(2);
+
+    event.recipes.gtceu.dawn_forge('frontiers:mace')
+        .itemInputs('trials:ominous_core', 'trials:breeze_rod', 'trials:breeze_rod', '16x malum:aerial_spirit')
+        .itemOutputs("4x minecraft:soul_sand")
+        .emberInput(500)
+        .duration(1000)
+        .EUt(GTValues.VA[GTValues.LV]);
 })
