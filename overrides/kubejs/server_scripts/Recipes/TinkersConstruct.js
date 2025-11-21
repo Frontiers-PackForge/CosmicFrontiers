@@ -30,6 +30,9 @@ yeet('tconstruct:molten_enderium_bucket')
 yeet('tconstruct:plate_cast')
 yeet('tconstruct:plate_sand_cast')
 yeet('tconstruct:plate_red_sand_cast')
+yeet('tconstruct:gem_cast')
+yeet('tconstruct:gem_sand_cast')
+yeet('tconstruct:gem_red_sand_cast')
 yeet('tconstruct:gear_cast')
 yeet('tconstruct:gear_sand_cast')
 yeet('tconstruct:gear_red_sand_cast')
@@ -207,8 +210,6 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/ingot_5' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/nugget_3' })
 	event.remove({ id: 'tconstruct:smeltery/melting/quartz/gem_1' })
-	event.remove({ id: 'tconstruct:smeltery/melting/diamond/dust' })
-	event.remove({ id: 'tconstruct:smeltery/melting/emerald/dust' })
 	event.remove({ id: 'tconstruct:smeltery/melting/glass/sand_cast' })
 
 
