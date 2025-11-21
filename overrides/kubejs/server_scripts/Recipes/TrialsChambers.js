@@ -1,6 +1,7 @@
 ServerEvents.recipes(event => {
     event.remove('trials:chiseled_tuff_bulb')
     event.remove('trials:copper_bulb')
+    event.remove('trials:wind_charge')
 
     event.shaped(`3x trials:copper_bulb`, [
         ' B ',
@@ -40,4 +41,18 @@ ServerEvents.recipes(event => {
         .itemOutputs('trials:music_disc_creator')
         .duration(220)
         .EUt(GTValues.VA[GTValues.LV]);
+
+    event.shapeless('2x trials:breeze_charge', 'trials:breeze_rod')
+
+    event.recipes.gtceu.macerator(`frontiers:breeze_charge`)
+        .itemInputs('trials:breeze_rod')
+        .itemOutputs('4x trials:breeze_charge')
+        .duration(88)
+        .EUt(2);
+
+    event.recipes.gtceu.compressor(`frontiers:breeze_rod`)
+        .itemInputs('4x trials:breeze_charge')
+        .itemOutputs('trials:breeze_rod')
+        .duration(200)
+        .EUt(2);
 })
