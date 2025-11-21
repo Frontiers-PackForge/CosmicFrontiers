@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         .EUt(2);
 
     event.recipes.gtceu.dawn_forge('frontiers:mace')
-        .itemInputs('trials:heavy_core', 'trials:breeze_rod', 'trials:breeze_rod', '16x malum:aerial_spirit')
+        .itemInputs('trials:heavy_core', '2x trials:breeze_rod', '16x malum:aerial_spirit', '4x gtceu:obsidian_plate', 'embers:ancient_motive_core')
         .itemOutputs('trials:mace')
         .emberInput(500)
         .duration(1000)
