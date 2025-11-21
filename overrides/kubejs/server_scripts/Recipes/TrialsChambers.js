@@ -43,16 +43,16 @@ ServerEvents.recipes(event => {
         .duration(220)
         .EUt(GTValues.VA[GTValues.LV]);
 
-    event.shapeless('2x trials:breeze_charge', 'trials:breeze_rod')
+    event.shapeless('2x trials:wind_charge', 'trials:breeze_rod')
 
-    event.recipes.gtceu.macerator(`frontiers:breeze_charge`)
+    event.recipes.gtceu.macerator(`frontiers:wind_charge`)
         .itemInputs('trials:breeze_rod')
-        .itemOutputs('4x trials:breeze_charge')
+        .itemOutputs('4x trials:wind_charge')
         .duration(88)
         .EUt(2);
 
     event.recipes.gtceu.compressor(`frontiers:breeze_rod`)
-        .itemInputs('4x trials:breeze_charge')
+        .itemInputs('4x trials:wind_charge')
         .itemOutputs('trials:breeze_rod')
         .duration(200)
         .EUt(2);
