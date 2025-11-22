@@ -74,6 +74,64 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'create:pressing/sugar_cane' })
   event.remove({ output: 'create:andesite_alloy' })
   event.remove({ id: 'create:crafting/appliances/chain_from_zinc' })
+  event.remove({ id: "create:crushing/crimsite"})
+  event.remove({ id: "create:crushing/crimsite_recycling"})
+  event.remove({ id: "create:crushing/ochrum"})
+  event.remove({ id: "create:crushing/ochrum_recycling"})
+  event.remove({ id: "create:crushing/veridium"})
+  event.remove({ id: "create:crushing/veridium_recycling"})
+  event.remove({ id: "create:crushing/asurine"})
+  event.remove({ id: "create:crushing/asurine_recycling"})
+  
+  //rock crusher
+  //CS = Create Stones
+  let CSreg = [
+    'crimsite',
+    'ochrum',
+    'veridium',
+    'asurine'
+  ]
+  let CSchoc = [
+    'scoria',
+    'scorchia',
+  ]
+  let CShoney = [
+    'limestone'
+  ]
+
+  CSreg.forEach(CSreg => {
+  event.recipes.gtceu.rock_breaker(`create:${CSreg}_rock_breaker`)
+    .notConsumable(`create:${CSreg}`)
+    .itemOutputs(`create:${CSreg}`)
+    .adjacentFluids(["minecraft:lava", "minecraft:water"])
+    .duration(16)
+    .EUt(7);
+   })
+
+  CSchoc.forEach(CSchoc => {
+  event.recipes.gtceu.rock_breaker(`create:${CSchoc}_rock_breaker`)
+    .notConsumable(`create:${CSchoc}`)
+    .itemOutputs(`create:${CSchoc}`)
+    .adjacentFluids(["minecraft:lava", "create:chocolate"])
+    .duration(16)
+    .EUt(7);
+   })
+
+  CShoney.forEach(CShoney => {
+  event.recipes.gtceu.rock_breaker(`create:${CShoney}_rock_breaker`)
+    .notConsumable(`create:${CShoney}`)
+    .itemOutputs(`create:${CShoney}`)
+    .adjacentFluids(["minecraft:lava", "create:honey"])
+    .duration(16)
+    .EUt(7);
+   })
+
+  event.recipes.gtceu.rock_breaker(`create:tuff_rock_breaker`)
+    .notConsumable(`minecraft:tuff`)
+    .itemOutputs(`minecraft:tuff`)
+    .adjacentFluids(["minecraft:lava", "minecraft:water"])
+    .duration(16)
+    .EUt(7);
 
   //Cogs
   event.remove({ output: 'create:cogwheel' })
