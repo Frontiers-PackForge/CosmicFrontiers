@@ -29,9 +29,9 @@ ItemEvents.tooltip(event => {
     text.add(1, Text.of('LV Superconductor - Arcane Stabilization')) // Adds text in first line, pushing the items name down a line. If you want the line below the item name, the index must be 1
   })
   //BOILER WARNING : 
-  event.addAdvanced(boilaway, (item, advanced, text) => {
-    text.add(1, Text.of('Deprecated - Recipes will still run in Large Boilers, But come 0.6.0 the recipe map and recipes will be removed for the steam age overhaul').gray())
-  })
+  //event.addAdvanced(boilaway, (item, advanced, text) => {
+  //  text.add(1, Text.of('Deprecated - Recipes will still run in Large Boilers, But come 0.6.0 the recipe map and recipes will be removed for the steam age overhaul').gray())
+  //})
   //HEX CIRCUITS[, , , ]
   hv_tier.map(element => {
     event.addAdvanced(element, (item, advanced, text) => {
