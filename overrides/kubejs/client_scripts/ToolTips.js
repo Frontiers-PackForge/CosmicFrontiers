@@ -227,9 +227,9 @@ ItemEvents.tooltip(event => {
     text.add(1, Text.translate('frontiers.tooltip.power_substation.1').red())
     text.add(2, Text.translate('frontiers.tooltip.power_substation.2').red())
   })
-  event.addAdvanced('ae2:condenser', (item, advanced, text) => {
-    text.add(1, Text.translate('frontiers.tooltip.disabled.gregtech_recipes').red())
-  })
+  //event.addAdvanced('ae2:condenser', (item, advanced, text) => {
+  //  text.add(1, Text.translate('frontiers.tooltip.disabled.gregtech_recipes').red())
+  //})
   event.addAdvanced('bloodmagic:arc', (item, advanced, text) => {
     text.add(1, Text.translate('frontiers.tooltip.disabled.gregtech_recipes').red())
   })
@@ -389,7 +389,7 @@ ItemEvents.tooltip(event => {
   })
 
   event.addAdvanced("tconstruct:luck", (item, advanced, text) => {
-    text.add(1, Text.translate('frontiers.tooltip.tconstruct_luck').red().italic())
+    text.add(1, Text.translate('frontiers.tooltip.tconstruct_luck').red().italic()) //It seems to have not taken effect
   })
 })
 
