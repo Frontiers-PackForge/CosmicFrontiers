@@ -14,5 +14,19 @@
     "frontiers.tips.soup.message":"Ghostipedia is full of soup.",
     "frontiers.tips.temp.message":"Insulate your armors with the sewing table! EBFs are dangerous!",
     "frontiers.tips.warden.message":"Wardens can be lured onto create seats, think about all the ways you can cheese.",
-    "frontiers.tips.sun_tier.message":"What tier is the Sun? -Ghost @ 2am"
+    "frontiers.tips.sun_tier.message":"What tier is the Sun? -Ghost @ 2am",
+
+    "cosmiccore.circuit.mv_tier.tooltip": "MV-Tier Circuit",
+    "cosmiccore.circuit.hv_tier.tooltip": "HV-Tier Circuit",
+    "cosmiccore.circuit.ev_tier.tooltip": "EV-Tier Circuit",
+    "cosmiccore.circuit.iv_tier.tooltip": "IV-Tier Circuit",
+    "cosmiccore.circuit.luv_tier.tooltip": "LuV-Tier Circuit",
+    "cosmiccore.circuit.zpm_tier.tooltip": "ZPM-Tier Circuit",
+    "cosmiccore.circuit.uv_tier.tooltip": "UV-Tier Circuit",
+    "cosmiccore.circuit.uhv_tier.tooltip": "UHV-Tier Circuit",
+    "cosmiccore.circuit.uev_tier.tooltip": "UEV-Tier Circuit",
+    "cosmiccore.circuit.uiv_tier.tooltip": "UIV-Tier Circuit",
+    "cosmiccore.circuit.uxv_tier.tooltip": "UXV-Tier Circuit",
+    "cosmiccore.circuit.opv_tier.tooltip": "OpV-Tier Circuit",
+    "cosmiccore.circuit.max_tier.tooltip": "MAX-Tier Circuit"
 }

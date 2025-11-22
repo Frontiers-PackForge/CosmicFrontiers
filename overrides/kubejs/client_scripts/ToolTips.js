@@ -1,13 +1,25 @@
 //
 let cables = ['gtceu:manasteel_single_cable', 'gtceu:manasteel_double_cable', 'gtceu:manasteel_quadruple_cable', 'gtceu:manasteel_octal_cable', 'gtceu:manasteel_hex_cable']
 let wires = ['gtceu:manasteel_single_wire', 'gtceu:manasteel_double_wire', 'gtceu:manasteel_quadruple_wire', 'gtceu:manasteel_octal_wire', 'gtceu:manasteel_hex_wire']
-let echo = ['cosmiccore:harmonic_processor', 'cosmiccore:harmonic_processor_assembly', 'cosmiccore:harmonic_processor_supercomputer', 'cosmiccore:harmonic_processor_mainframe']
-let optical = ['cosmiccore:optical_processor', 'cosmiccore:optical_processor_assembly', 'cosmiccore:optical_processor_supercomputer', 'cosmiccore:optical_processor_mainframe']
-let cosmic = ['cosmiccore:suelescent_processor', 'cosmiccore:suelescent_processor_assembly', 'cosmiccore:suelescent_processor_supercomputer', 'cosmiccore:suelescent_processor_mainframe']
-let akashic = ['cosmiccore:akashic_processor', 'cosmiccore:akashic_processor_assembly', 'cosmiccore:akashic_processor_supercomputer', 'cosmiccore:akashic_processor_mainframe']
-let eschaton = ['cosmiccore:eschaton_processor', 'cosmiccore:eschaton_processor_assembly', 'cosmiccore:eschaton_processor_supercomputer', 'cosmiccore:eschaton_processor_mainframe']
 let boilaway = ['gtceu:bronze_large_boiler', 'gtceu:steel_large_boiler', 'gtceu:titanium_large_boiler', 'gtceu:tungstensteel_large_boiler']
-let hex = ['cosmiccore:hex_processor', 'cosmiccore:hex_processor_assembly', 'cosmiccore:hex_processor_supercomputer', 'cosmiccore:hex_processor_mainframe']
+let circuit_series=['hex', 'enthelic', 'lucidic', 'luv', 'zpm', 'harmonic', 'optical', 'suelescent', 'akashic', 'eschaton']           //Series Name, change here!
+let circuit_tier=['_processor', '_processor_assembly', '_processor_supercomputer', '_processor_mainframe']
+let voltage=[
+  'cosmiccore.circuit.mv_tier.tooltip', 'cosmiccore.circuit.hv_tier.tooltip', 'cosmiccore.circuit.ev_tier.tooltip', 'cosmiccore.circuit.iv_tier.tooltip', 'cosmiccore.circuit.luv_tier.tooltip',
+  'cosmiccore.circuit.zpm_tier.tooltip', 'cosmiccore.circuit.uv_tier.tooltip', 'cosmiccore.circuit.uhv_tier.tooltip', 'cosmiccore.circuit.uev_tier.tooltip', 'cosmiccore.circuit.uiv_tier.tooltip',
+  'cosmiccore.circuit.uxv_tier.tooltip', 'cosmiccore.circuit.opv_tier.tooltip', 'cosmiccore.circuit.max_tier.tooltip'
+]
+let circuits=circuit_series.map(series => circuit_tier.map(tier => 'cosmiccore:'+series+tier))
+let [hv_tier, ev_tier, iv_tier, luv_tier, zpm_tier, uv_tier, uhv_tier, uev_tier, uiv_tier, uxv_tier]=circuits                         //Segmented by series
+let voltage_series=[]
+for (var start=0; start<voltage.length; start++)                                                                                      //Segmented by tiers
+{
+  for (var i=(start<3?0:start-3); i<=(start>9?9:start) ; i++)
+  {
+    voltage_series[circuits[i][Math.abs(i-start)]]=voltage[start];
+  }
+}
+
 ItemEvents.tooltip(event => {
   // event.add('gtceu:manasteel_single_cable', Text.of('LV Superconductor'))
   event.addAdvanced('forbidden_arcanus:eternal_stella', (item, advanced, text) => {
@@ -20,99 +32,77 @@ ItemEvents.tooltip(event => {
   event.addAdvanced(boilaway, (item, advanced, text) => {
     text.add(1, Text.of('Deprecated - Recipes will still run in Large Boilers, But come 0.6.0 the recipe map and recipes will be removed for the steam age overhaul').gray())
   })
-    //HEX CIRCUITS[, , , ]
-  event.addAdvanced(hex, (item, advanced, text) => {
-    text.add(1, Text.of('Circuits of Arcane Logic').gray())
+  //HEX CIRCUITS[, , , ]
+  hv_tier.map(element => {
+    event.addAdvanced(element, (item, advanced, text) => {
+      text.add(1, Text.of('Circuits of Arcane Logic').gray())
+      text.add(2, Text.translate(voltage_series[element]).gold())
+    })
   })
-  event.addAdvanced('cosmiccore:hex_processor', (item, advanced, text) => {
-    text.add(2, Text.of('MV-Tier Circuit').gold())
+  //enthelic CIRCUITS
+  ev_tier.map(element => {
+    event.addAdvanced(element, (item, advanced, text) => {
+      text.add(1, Text.translate('cosmiccore.circuit.enthelic.tooltip').gray())
+      text.add(2, Text.translate(voltage_series[element]).color(0xF38BAA))  //Pink, perfect for enthelic processor
+    })
   })
-  event.addAdvanced('cosmiccore:hex_processor_assembly', (item, advanced, text) => {
-    text.add(2, Text.of('HV-Tier Circuit').gold())
+  //lucidic CIRCUITS
+  iv_tier.map(element => {
+    event.addAdvanced(element, (item, advanced, text) => {
+      text.add(1, Text.translate('cosmiccore.circuit.lucidic.tooltip').gray())
+      text.add(2, Text.translate(voltage_series[element]).yellow())
+    })
   })
-  event.addAdvanced('cosmiccore:hex_processor_supercomputer', (item, advanced, text) => {
-    text.add(2, Text.of('EV-Tier Circuit').gold())
+  //luv CIRCUITS FOR FUTURE
+  luv_tier.map(element => {
+    event.addAdvanced(element, (item, advanced, text) => {
+      text.add(1, Text.translate('cosmiccore.circuit.luv.tooltip').gray())
+      text.add(2, Text.translate(voltage_series[element]).yellow())
+    })
   })
-  event.addAdvanced('cosmiccore:hex_processor_mainframe', (item, advanced, text) => {
-    text.add(2, Text.of('IV-Tier Circuit').gold())
+  //zpm CIRCUITS FOR FUTURE
+  zpm_tier.map(element => {
+    event.addAdvanced(element, (item, advanced, text) => {
+      text.add(1, Text.translate('cosmiccore.circuit.zpm.tooltip').gray())
+      text.add(2, Text.translate(voltage_series[element]).yellow())
+    })
   })
-  //ECHO CIRCUITS
-  event.addAdvanced(echo, (item, advanced, text) => {
-    text.add(1, Text.of('Circuits Resonating with the World').gray())
-  })
-  event.addAdvanced('cosmiccore:harmonic_processor', (item, advanced, text) => {
-    text.add(2, Text.of('ZPM-Tier Circuit').darkAqua())
-  })
-  event.addAdvanced('cosmiccore:harmonic_processor_assembly', (item, advanced, text) => {
-    text.add(2, Text.of('UV-Tier Circuit').darkAqua())
-  })
-  event.addAdvanced('cosmiccore:harmonic_processor_supercomputer', (item, advanced, text) => {
-    text.add(2, Text.of('UHV-Tier Circuit').darkAqua())
-  })
-  event.addAdvanced('cosmiccore:harmonic_processor_mainframe', (item, advanced, text) => {
-    text.add(2, Text.of('UEV-Tier Circuit').darkAqua())
+  //harmonic CIRCUITS
+  uv_tier.map(element => {
+    event.addAdvanced(element, (item, advanced, text) => {
+      text.add(1, Text.of('Circuits Resonating with the World').gray())
+      text.add(2, Text.translate(voltage_series[element]).darkAqua())
+    })
   })
   //OPTICAL CIRCUITS
-  event.addAdvanced(optical, (item, advanced, text) => {
-    text.add(1, Text.of('Lightspeed Computation').gray())
+  uhv_tier.map(element => {
+    event.addAdvanced(element, (item, advanced, text) => {
+      text.add(1, Text.of('Lightspeed Computation').gray())
+      text.add(2, Text.translate(voltage_series[element]).gold())
+    })
   })
-  event.addAdvanced('cosmiccore:optical_processor', (item, advanced, text) => {
-    text.add(2, Text.of('UV-Tier Circuit').gold())
-  })
-  event.addAdvanced('cosmiccore:optical_processor_assembly', (item, advanced, text) => {
-    text.add(2, Text.of('UHV-Tier Circuit').gold())
-  })
-  event.addAdvanced('cosmiccore:optical_processor_supercomputer', (item, advanced, text) => {
-    text.add(2, Text.of('UEV-Tier Circuit').gold())
-  })
-  event.addAdvanced('cosmiccore:optical_processor_mainframe', (item, advanced, text) => {
-    text.add(2, Text.of('UIV-Tier Circuit').gold())
-  })
-  //COSMIC CIRCUITS
-  event.addAdvanced(cosmic, (item, advanced, text) => {
-    text.add(1, Text.of('Planck Computation').gray())
-  })
-  event.addAdvanced('cosmiccore:suelescent_processor', (item, advanced, text) => {
-    text.add(2, Text.of('UHV-Tier Circuit').darkPurple())
-  })
-  event.addAdvanced('cosmiccore:suelescent_processor_assembly', (item, advanced, text) => {
-    text.add(2, Text.of('UEV-Tier Circuit').darkPurple())
-  })
-  event.addAdvanced('cosmiccore:suelescent_processor_supercomputer', (item, advanced, text) => {
-    text.add(2, Text.of('UIV-Tier Circuit').darkPurple())
-  })
-  event.addAdvanced('cosmiccore:suelescent_processor_mainframe', (item, advanced, text) => {
-    text.add(2, Text.of('UXV-Tier Circuit').darkPurple())
+  //suelescent CIRCUITS
+  uev_tier.map(element => {
+    event.addAdvanced(element, (item, advanced, text) => {
+      text.add(1, Text.of('Planck Computation').gray())
+      text.add(2, Text.translate(voltage_series[element]).darkPurple())
+    })
   })
   //akashic CIRCUITS
-  event.addAdvanced(akashic, (item, advanced, text) => {
-    text.add(1, Text.of('Perfected Recordkeeping Calculations').gray())
-  })
-  event.addAdvanced('cosmiccore:akashic_processor', (item, advanced, text) => {
-    text.add(2, Text.of('UEV-Tier Circuit').lightPurple())
-  })
-  event.addAdvanced('cosmiccore:akashic_processor_assembly', (item, advanced, text) => {
-    text.add(2, Text.of('UIV-Tier Circuit').lightPurple())
-  })
-  event.addAdvanced('cosmiccore:akashic_processor_supercomputer', (item, advanced, text) => {
-    text.add(2, Text.of('UXV-Tier Circuit').lightPurple())
-  })
-  event.addAdvanced('cosmiccore:akashic_processor_mainframe', (item, advanced, text) => {
-    text.add(2, Text.of('OPV-Tier Circuit').lightPurple())
+  uiv_tier.map(element => {
+    event.addAdvanced(element, (item, advanced, text) => {
+      text.add(1, Text.of('Perfected Recordkeeping Calculations').gray())
+      text.add(2, Text.translate(voltage_series[element]).lightPurple())
+    })
   })
   //eschaton CIRCUITS
-  event.addAdvanced(eschaton, (item, advanced, text) => {
-    text.add(1, Text.of('The Universe Within Your Universe.').red().bold())
+  uxv_tier.map(element => {
+    event.addAdvanced(element, (item, advanced, text) => {
+      text.add(1, Text.of('The Universe Within Your Universe.').red().bold())
+      text.add(2, Text.translate(voltage_series[element]))
+    })
   })
-  event.addAdvanced('cosmiccore:eschaton_processor', (item, advanced, text) => {
-    text.add(2, Text.of('UIV-Tier Circuit'))
-  })
-  event.addAdvanced('cosmiccore:eschaton_processor_assembly', (item, advanced, text) => {
-    text.add(2, Text.of('UXV-Tier Circuit'))
-  })
-  event.addAdvanced('cosmiccore:eschaton_processor_supercomputer', (item, advanced, text) => {
-    text.add(2, Text.of('OPV-Tier Circuit'))
-  })
+
   event.addAdvanced('botania:mana_diamond', (item, advanced, text) => {
     text.add(1, Text.of('MaC₄').yellow())
   })
