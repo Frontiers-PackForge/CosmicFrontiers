@@ -35,7 +35,7 @@ ItemEvents.tooltip(event => {
   //HEX CIRCUITS[, , , ]
   hv_tier.map(element => {
     event.addAdvanced(element, (item, advanced, text) => {
-      text.add(1, Text.of('Circuits of Arcane Logic').gray())
+      text.add(1, Text.translate('cosmiccore.circuit.hex.tooltip').gray())
       text.add(2, Text.translate(voltage_series[element]).gold())
     })
   })
@@ -70,35 +70,35 @@ ItemEvents.tooltip(event => {
   //harmonic CIRCUITS
   uv_tier.map(element => {
     event.addAdvanced(element, (item, advanced, text) => {
-      text.add(1, Text.of('Circuits Resonating with the World').gray())
+      text.add(1, Text.translate('cosmiccore.circuit.harmonic.tooltip').gray())
       text.add(2, Text.translate(voltage_series[element]).darkAqua())
     })
   })
   //OPTICAL CIRCUITS
   uhv_tier.map(element => {
     event.addAdvanced(element, (item, advanced, text) => {
-      text.add(1, Text.of('Lightspeed Computation').gray())
+      text.add(1, Text.translate('cosmiccore.circuit.optical.tooltip').gray())
       text.add(2, Text.translate(voltage_series[element]).gold())
     })
   })
   //suelescent CIRCUITS
   uev_tier.map(element => {
     event.addAdvanced(element, (item, advanced, text) => {
-      text.add(1, Text.of('Planck Computation').gray())
+      text.add(1, Text.translate('cosmiccore.circuit.suelescent.tooltip').gray())
       text.add(2, Text.translate(voltage_series[element]).darkPurple())
     })
   })
   //akashic CIRCUITS
   uiv_tier.map(element => {
     event.addAdvanced(element, (item, advanced, text) => {
-      text.add(1, Text.of('Perfected Recordkeeping Calculations').gray())
+      text.add(1, Text.translate('cosmiccore.circuit.akashic.tooltip').gray())
       text.add(2, Text.translate(voltage_series[element]).lightPurple())
     })
   })
   //eschaton CIRCUITS
   uxv_tier.map(element => {
     event.addAdvanced(element, (item, advanced, text) => {
-      text.add(1, Text.of('The Universe Within Your Universe.').red().bold())
+      text.add(1, Text.translate('cosmiccore.circuit.eschaton.tooltip').red().bold())
       text.add(2, Text.translate(voltage_series[element]))
     })
   })

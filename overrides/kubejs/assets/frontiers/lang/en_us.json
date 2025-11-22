@@ -28,5 +28,16 @@
     "cosmiccore.circuit.uiv_tier.tooltip": "UIV-Tier Circuit",
     "cosmiccore.circuit.uxv_tier.tooltip": "UXV-Tier Circuit",
     "cosmiccore.circuit.opv_tier.tooltip": "OpV-Tier Circuit",
-    "cosmiccore.circuit.max_tier.tooltip": "MAX-Tier Circuit"
+    "cosmiccore.circuit.max_tier.tooltip": "MAX-Tier Circuit",
+
+    "cosmiccore.circuit.hex.tooltip": "Circuits of Arcane Logic",
+    "cosmiccore.circuit.enthelic.tooltip": "",
+    "cosmiccore.circuit.lucidic.tooltip": "",
+    "cosmiccore.circuit.luv.tooltip": "",
+    "cosmiccore.circuit.zpm.tooltip": "",
+    "cosmiccore.circuit.harmonic.tooltip": "Circuits Resonating with the World",
+    "cosmiccore.circuit.optical.tooltip": "Lightspeed Computation",
+    "cosmiccore.circuit.suelescent.tooltip": "Planck Computation",
+    "cosmiccore.circuit.akashic.tooltip": "Perfected Recordkeeping Calculations",
+    "cosmiccore.circuit.eschaton.tooltip": "The Universe Within Your Universe."
 }
