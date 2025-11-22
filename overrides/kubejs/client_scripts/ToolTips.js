@@ -36,14 +36,14 @@ ItemEvents.tooltip(event => {
   hv_tier.map(element => {
     event.addAdvanced(element, (item, advanced, text) => {
       text.add(1, Text.translate('cosmiccore.circuit.hex.tooltip').gray())
-      text.add(2, Text.translate(voltage_series[element]).gold())
+      text.add(2, Text.translate(voltage_series[element]).color(0x9A5CC6))  //Amethyst color, which matches the color of the Hex processor very well o(*￣▽￣*)ブ
     })
   })
   //enthelic CIRCUITS
   ev_tier.map(element => {
     event.addAdvanced(element, (item, advanced, text) => {
       text.add(1, Text.translate('cosmiccore.circuit.enthelic.tooltip').gray())
-      text.add(2, Text.translate(voltage_series[element]).color(0xF38BAA))  //Pink, perfect for enthelic processor
+      text.add(2, Text.translate(voltage_series[element]).color(0xF38BAA))  //Pink, which matches the color of the Enthelic processor very well o(*￣▽￣*)ブ
     })
   })
   //lucidic CIRCUITS
@@ -57,14 +57,14 @@ ItemEvents.tooltip(event => {
   luv_tier.map(element => {
     event.addAdvanced(element, (item, advanced, text) => {
       text.add(1, Text.translate('cosmiccore.circuit.luv.tooltip').gray())
-      text.add(2, Text.translate(voltage_series[element]).yellow())
+      text.add(2, Text.translate(voltage_series[element]).blue())
     })
   })
   //zpm CIRCUITS FOR FUTURE
   zpm_tier.map(element => {
     event.addAdvanced(element, (item, advanced, text) => {
       text.add(1, Text.translate('cosmiccore.circuit.zpm.tooltip').gray())
-      text.add(2, Text.translate(voltage_series[element]).yellow())
+      text.add(2, Text.translate(voltage_series[element]).red())
     })
   })
   //harmonic CIRCUITS
@@ -99,7 +99,7 @@ ItemEvents.tooltip(event => {
   uxv_tier.map(element => {
     event.addAdvanced(element, (item, advanced, text) => {
       text.add(1, Text.translate('cosmiccore.circuit.eschaton.tooltip').red().bold())
-      text.add(2, Text.translate(voltage_series[element]))
+      element.includes('main')?pass:text.add(2, Text.translate(voltage_series[element]))
     })
   })
 
