@@ -28,7 +28,9 @@
     {"name": "MaFgLib", "id": 910766},
     {"name": "World Preview", "id": 891429},
     {"name": "A Campfire", "id": 1023913},
-    {"name": "Forgematica", "id": 912441}
+    {"name": "Forgematica", "id": 912441},
+    {"name": "Colorwheel", "id": 1254143},
+    {"name": "Colorwheel Patcher", "id": 1285475}
   ],
   "manual_download": [
   ],
