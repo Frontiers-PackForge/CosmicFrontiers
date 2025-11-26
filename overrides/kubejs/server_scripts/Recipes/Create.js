@@ -1233,7 +1233,7 @@ ServerEvents.recipes(event => {
     F: 'create:display_link',
     X: 'gtceu:tin_plate',
     E: 'create:item_vault',
-    S: 'gtceu:brass_plate',
+    S: 'gtceu:bronze_plate',
     C: '#gtceu:circuits/ulv'
   })
   //stock ticker, basically an ae terminal
