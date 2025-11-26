@@ -244,7 +244,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.chemical_reactor('forestry:pulsating_mesh_ender_pearl')
-        .itemInputs(['gtceu:ender_pearl_dust', 'forestry:pulsating_mesh'])
+        .itemInputs('forestry:pulsating_mesh')
+        .notConsumable('gtceu:ender_pearl_dust')
         .itemOutputs('minecraft:ender_pearl')
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
