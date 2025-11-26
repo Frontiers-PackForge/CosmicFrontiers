@@ -211,7 +211,7 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/nugget_3' })
 	event.remove({ id: 'tconstruct:smeltery/melting/quartz/gem_1' })
 	event.remove({ id: 'tconstruct:smeltery/melting/glass/sand_cast' })
-
+	event.remove({ id: 'gm_construct:smeltery/casting/metal/malachite/block' })
 
 	event.remove({ id: 'tconstruct:smeltery/casting/ender/eye' })
 	event.remove({ id: 'tconstruct:smeltery/casting/metal/gold/clock' })
