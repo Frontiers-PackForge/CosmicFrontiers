@@ -444,3 +444,17 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'create:crafting/curiosities/cake' })
     event.remove({ id: 'farmersdelight:cutting/pufferfish' })
 })
+
+// Misc food-related recipes
+ServerEvents.recipes(event => {
+    event.custom({
+		type: 'farmersdelight:cutting',
+		ingredients: [
+		  { item: 'crabbersdelight:shrimp' }
+		],
+		tool: { tag: 'forge:tools/knives' },
+		result: [
+		  { item: 'crabbersdelight:shrimp_slices', count: 2 }
+		]
+	}).id('frontiers:shrimp_cutting')
+})
