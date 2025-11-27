@@ -62,5 +62,29 @@ ServerEvents.tags("item", event => {
     event.add("forestry:backpack/allow/apiarist", "minecraft:honeycomb")
     
     event.add('forge:chests/wooden', 'framedblocks:framed_chest')
+
+    // Seafood unification
+    event.add('crabbersdelight:raw_seafood', [
+        '#forge:tentacles',
+        'oceanicdelight:shrimp',
+        'oceanicdelight:elder_guardian_eye',
+        'oceanicdelight:elder_guardian_slice',
+        'oceanicdelight:guardian',
+        'oceanicdelight:guardian tail',
+        'oceanicdelight:fugu_slice'
+    ])
+
+    event.add('forge:raw_fishes', [
+        'oceanicdelight:elder_guardian_slice',
+        'oceanicdelight:fugu_slice'
+    ])
+
+    event.add('forge:raw_fishes/pufferfish', [
+        'crabbersdelight:pufferfish_slice',
+        'oceanicdelight:fugu_slice'
+    ])
+
+    event.add('forge:shrimps', 'crabbersdelight:shrimp')
+
 })
 
