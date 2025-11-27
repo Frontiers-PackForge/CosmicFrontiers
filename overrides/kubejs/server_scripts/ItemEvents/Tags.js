@@ -66,22 +66,22 @@ ServerEvents.tags("item", event => {
     // Seafood unification
     event.add('crabbersdelight:raw_seafood', [
         '#forge:tentacles',
-        'oceanicdelight:shrimp',
-        'oceanicdelight:elder_guardian_eye',
-        'oceanicdelight:elder_guardian_slice',
-        'oceanicdelight:guardian',
-        'oceanicdelight:guardian tail',
-        'oceanicdelight:fugu_slice'
+        'oceanic_delight:shrimp',
+        'oceanic_delight:elder_guardian_eye',
+        'oceanic_delight:elder_guardian_slice',
+        'oceanic_delight:guardian',
+        'oceanic_delight:guardian tail',
+        'oceanic_delight:fugu_slice'
     ])
 
     event.add('forge:raw_fishes', [
-        'oceanicdelight:elder_guardian_slice',
-        'oceanicdelight:fugu_slice'
+        'oceanic_delight:elder_guardian_slice',
+        'oceanic_delight:fugu_slice'
     ])
 
     event.add('forge:raw_fishes/pufferfish', [
         'crabbersdelight:pufferfish_slice',
-        'oceanicdelight:fugu_slice'
+        'oceanic_delight:fugu_slice'
     ])
 
     event.add('forge:shrimps', 'crabbersdelight:shrimp')

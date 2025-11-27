@@ -454,7 +454,7 @@ ServerEvents.recipes(event => {
 		],
 		tool: { tag: 'forge:tools/knives' },
 		result: [
-		  { item: 'crabbersdelight:shrimp_slices', count: 2 }
+		  { item: 'oceanic_delight:shrimp_slices', count: 2 }
 		]
 	}).id('frontiers:shrimp_cutting')
 })
