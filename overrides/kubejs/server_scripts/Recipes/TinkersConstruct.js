@@ -447,20 +447,27 @@ ServerEvents.recipes(event => {
 	}).id("frontiers:smeltery_copper_block_casting")
 
 	//slimy crystals
-	event.recipes.gtceu.forge_hammer('frontiers:forge_hammer_earth_slime_crystal')
-        .itemInputs('tconstruct:earth_slime_crystal_block')
-        .itemOutputs('4x tconstruct:earth_slime_crystal')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.LV])
-	event.recipes.gtceu.forge_hammer('frontiers:forge_hammer_sky_slime_crystal')
-        .itemInputs('tconstruct:sky_slime_crystal_block')
-        .itemOutputs('4x tconstruct:sky_slime_crystal')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.LV])
-	event.recipes.gtceu.forge_hammer('frontiers:forge_hammer_ichor_slime_crystal')
-        .itemInputs('tconstruct:ichor_slime_crystal_block')
-        .itemOutputs('4x tconstruct:ichor_slime_crystal')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.LV])
+	
+	let TCslime = [
+	    'earth',
+	    'sky',
+	    'ichor',
+	    'ender'
+  	]
+	
+  	TCslime.forEach(TCslime => {
+		
+  	event.remove({ id: `tconstruct:common/slime/${TCslime}/crystal_block`})    
+  	event.recipes.gtceu.forge_hammer(`frontiers:${TCslime}_slime_crystal_hammer`)
+	    .itemInputs(`tconstruct:${TCslime}_slime_crystal_block`)
+	    .itemOutputs(`4x tconstruct:${TCslime}_slime_crystal`)
+	    .duration(100)
+	    .EUt(24);
+ 	event.recipes.gtceu.compressor(`frontiers:${TCslime}_slime_crystal_compress`)
+	    .itemInputs(`4x tconstruct:${TCslime}_slime_crystal`)
+	    .itemOutputs(`tconstruct:${TCslime}_slime_crystal_block`)
+	    .duration(300)
+	    .EUt(2);
+   	})`
 	
 })
