@@ -3281,28 +3281,43 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: -8.5d
+			y: -9.0d
 		}
 		{
-			dependencies: ["7020F96E0AFD19EF"]
+			dependencies: [
+				"7020F96E0AFD19EF"
+				"7CB6F107009BAF72"
+			]
 			description: [
-				"I've never used this."
+				"The Ignem Reactor must be placed between the top sections of a &6Catalysis Chamber&r and &6Combustion Chamber&r. "
 				""
-				"So uh."
+				"To function, the reactor must be fueled with ember, and the Catalysis and Combustion Chambers must be fueled with specific items."
 				""
-				"Yeah your guess is as good as mine."
+				"The various catalysis and combustion fuels each provide a multiplier to the amount of ember produced, with a maximum of &69x&r ember production."
 				""
-				"I'll update this quest when someone tells me lol."
+				"The various items that can be provided to each chamber are shown by viewing the usages of either chamber in EMI."
 			]
 			id: "352ADD12E0F80B0F"
-			subtitle: "Uhhhhhhh"
-			tasks: [{
-				id: "2D88DE3B63FF0D42"
-				item: "embers:ignem_reactor"
-				type: "item"
-			}]
+			subtitle: "The Strongest Ember Generator"
+			tasks: [
+				{
+					id: "2D88DE3B63FF0D42"
+					item: "embers:ignem_reactor"
+					type: "item"
+				}
+				{
+					id: "449140CDEB14A094"
+					item: "embers:combustion_chamber"
+					type: "item"
+				}
+				{
+					id: "636BFB26E69BD351"
+					item: "embers:catalysis_chamber"
+					type: "item"
+				}
+			]
 			x: -10.0d
-			y: -10.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["2899EC950870F83C"]
@@ -3409,6 +3424,42 @@
 			}]
 			x: -5.5d
 			y: -7.5d
+		}
+		{
+			dependencies: ["48BDFCB2679E3F89"]
+			description: [
+				"When attached to the bottom of an &6Ember Activator&r, the Heat Exchanger allows for &eEmber Grit&r to produce smaller amounts of ember."
+				""
+				"The Ember Activator gives Ember Grit a base ember value of &e300&r, but reduces the overall output of the Ember Activator by &c10%&r."
+			]
+			id: "2AD8D468EA944B52"
+			optional: true
+			subtitle: "Making Ember Grit Useful "
+			tasks: [{
+				id: "764ADEA1B61FDC94"
+				item: "embers:heat_exchanger"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7CB6F107009BAF72"]
+			description: [
+				"When supplied with &6Steam&r, the Catalytic Plug &6doubles&r the speed of ember machinery."
+				""
+				"Two Catalytic Plugs can be attached to a machine at once, giving a &64x&r speed boost."
+			]
+			id: "3FE3332C254CC3AA"
+			optional: true
+			subtitle: "We Have Overclocking at Home"
+			tasks: [{
+				id: "68F06E152B338A8D"
+				item: "embers:catalytic_plug"
+				type: "item"
+			}]
+			x: -21.0d
+			y: 2.5d
 		}
 	]
 	title: "Rising Pressure - [Steam]"
