@@ -113,7 +113,14 @@
 					consume_items: true
 					count: 64L
 					id: "3E4B7D5833F448BD"
-					item: "minecraft:white_wool"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:wool)"
+						}
+					}
+					title: "Wool"
 					type: "item"
 				}
 				{
