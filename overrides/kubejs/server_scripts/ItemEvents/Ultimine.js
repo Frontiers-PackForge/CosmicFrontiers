@@ -10,14 +10,8 @@ ServerEvents.tags('item', event => {
     })
     
     event.add('ftbultimine:excluded_tools', [
-      'tconstruct:kama',
-      'tconstruct:pickadze',
-      'tconstruct:hand_axe',
-      'tconstruct:mattock',
-      'tconstruct:pickaxe',
       'tconstruct:excavator',
       'tconstruct:sledge_hammer',
-      'tconstruct:broad_axe',
       'tconstruct:scythe'
     ])
 }
