@@ -1176,6 +1176,23 @@ ServerEvents.recipes(event => {
     .circuit(10)
     .duration(50)
     .EUt(8);
+  //sails
+  event.shaped('4x create:sail_frame', [
+    'ETE',
+    'T T',
+    'ETE'
+  ], {
+    E: 'gtceu:treated_wood_planks',
+    T: 'gtceu:treated_wood_rod'
+  })
+  event.shaped('2x create:white_sail', [
+    'ETE',
+    '   ',
+    '   '
+  ], {
+    E: 'create:sail_frame',
+    T: 'minecraft:wite_wool'
+  })
   //Diving Helm
   event.remove({ output: Item.of('create:copper_diving_helmet', '{Damage:0}') })
   event.shaped(Item.of('create:copper_diving_helmet', '{Damage:0}'), [
