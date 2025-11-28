@@ -325,7 +325,7 @@ ServerEvents.recipes(event => {
     .circuit(6)
     .duration(100)
     .EUt(8);
-  //Millstone
+  //Millstone, this was locked to lv because of stone rods....
   event.remove({ output: 'create:millstone' })
   event.shaped('create:millstone', [
     ' C ',
@@ -334,12 +334,12 @@ ServerEvents.recipes(event => {
   ], {
     C: 'create:cogwheel',
     A: 'create:andesite_casing',
-    S: 'gtceu:stone_gear',
+    S: 'gtceu:andesite_alloy_gear',
     M: 'ulvcovm:ulv_electric_motor',
     F: '#forge:stone'
   })
   event.recipes.gtceu.assembler("create:millstone")
-    .itemInputs('2x gtceu:stone_gear', 'create:cogwheel', 'create:andesite_casing', '2x #forge:stone', 'ulvcovm:ulv_electric_motor')
+    .itemInputs('2x gtceu:andesite_alloy_gear', 'create:cogwheel', 'create:andesite_casing', '2x #forge:stone', 'ulvcovm:ulv_electric_motor')
     .itemOutputs('create:millstone')
     .duration(50)
     .circuit(11)
@@ -478,7 +478,7 @@ ServerEvents.recipes(event => {
     .duration(50)
     .circuit(11)
     .EUt(8);
-  //Hose Pulley
+  //Hose Pulley, not gonna change this from a pump to a motor, its rather strong and probably good to be post nether
   event.remove({ output: 'create:hose_pulley' })
   event.shaped('create:hose_pulley', [
     'CCC',
@@ -522,11 +522,11 @@ ServerEvents.recipes(event => {
   ], {
     C: 'create:copper_casing',
     B: 'gtceu:bronze_plate',
-    P: 'ulvcovm:ulv_electric_pump',
+    P: 'ulvcovm:ulv_electric_motor',
     F: 'gtceu:bronze_normal_fluid_pipe'
   })
   event.recipes.gtceu.assembler("create:spout")
-    .itemInputs('2x gtceu:bronze_plate', 'ulvcovm:ulv_electric_pump', 'create:copper_casing', 'gtceu:bronze_normal_fluid_pipe')
+    .itemInputs('2x gtceu:bronze_plate', 'ulvcovm:ulv_electric_motor', 'create:copper_casing', 'gtceu:bronze_normal_fluid_pipe')
     .itemOutputs('create:spout')
     .duration(50)
     .circuit(11)
@@ -539,11 +539,11 @@ ServerEvents.recipes(event => {
     '   '
   ], {
     C: 'create:copper_casing',
-    O: 'ulvcovm:ulv_electric_pump',
+    O: 'ulvcovm:ulv_electric_motor',
     H: 'create:chute'
   })
   event.recipes.gtceu.assembler("create:portable_fluid_interface")
-    .itemInputs('ulvcovm:ulv_electric_pump', 'create:copper_casing', 'create:chute')
+    .itemInputs('ulvcovm:ulv_electric_motor', 'create:copper_casing', 'create:chute')
     .itemOutputs('create:portable_fluid_interface')
     .duration(50)
     .circuit(11)
@@ -902,19 +902,19 @@ ServerEvents.recipes(event => {
     'CPC'
   ], {
     B: 'gtceu:brass_plate',
-    R: 'gtceu:aluminium_rod',
+    R: 'gtceu:steel_rod',
     C: 'create:brass_casing',
     P: 'create:precision_mechanism',
   })
   event.recipes.gtceu.assembler("create:rotation_speed_controller")
-    .itemInputs('4x create:brass_casing', '2x gtceu:brass_plate', 'gtceu:aluminium_rod', 'create:precision_mechanism')
+    .itemInputs('4x create:brass_casing', '2x gtceu:brass_plate', 'gtceu:steel_rod', 'create:precision_mechanism')
     .itemOutputs('create:rotation_speed_controller')
     .circuit(5)
     .duration(50)
     .EUt(8);
   //Precision Mechanism
   event.recipes.gtceu.assembler("create:precision_mechanism")
-    .itemInputs('gtceu:brass_plate', '2x gtceu:small_aluminium_gear', '#gtceu:circuits/lv')
+    .itemInputs('gtceu:brass_plate', '2x gtceu:small_steel_gear', '#gtceu:circuits/ulv')
     .itemOutputs('create:precision_mechanism')
     .circuit(5)
     .duration(50)
@@ -926,14 +926,14 @@ ServerEvents.recipes(event => {
     'PR ',
     'CGC'
   ], {
-    A: 'gtceu:lv_robot_arm',
-    R: 'gtceu:aluminium_rod',
+    A: 'ulvcovm:ulv_robot_arm',
+    R: 'gtceu:steel_rod',
     C: 'create:brass_casing',
     P: 'create:precision_mechanism',
     G: 'gtceu:bronze_gear'
   })
   event.recipes.gtceu.assembler("create:mechanical_arm")
-    .itemInputs('2x create:brass_casing', 'gtceu:aluminium_rod', 'create:precision_mechanism', 'gtceu:lv_robot_arm', 'gtceu:bronze_gear')
+    .itemInputs('2x create:brass_casing', 'gtceu:steel_rod', 'create:precision_mechanism', 'ulvcovm:ulv_robot_arm', 'gtceu:bronze_gear')
     .itemOutputs('create:mechanical_arm')
     .circuit(5)
     .duration(50)
@@ -997,7 +997,7 @@ ServerEvents.recipes(event => {
     .circuit(11)
     .duration(50)
     .EUt(8);
-  //Train Controls
+  //Train Controls, i think its odd that this is locked to mv when the other train parts are lv idk -V
   event.remove({ output: "create:controls" })
   event.shaped('create:controls', [
     'PLP',
@@ -1006,18 +1006,18 @@ ServerEvents.recipes(event => {
   ], {
     P: 'gtceu:brass_plate',
     C: 'create:railway_casing',
-    E: '#gtceu:circuits/mv',
+    E: '#gtceu:circuits/lv',
     L: 'minecraft:lever',
     M: 'create:precision_mechanism'
   })
   event.recipes.gtceu.assembler("create:controls")
-    .itemInputs('4x gtceu:brass_plate', '2x create:railway_casing', '#gtceu:circuits/mv', 'create:precision_mechanism', 'minecraft:lever')
+    .itemInputs('4x gtceu:brass_plate', '2x create:railway_casing', '#gtceu:circuits/lv', 'create:precision_mechanism', 'minecraft:lever')
     .itemOutputs('create:controls')
     .circuit(11)
     .duration(50)
     .EUt(8);
   //Item Vault
-  event.remove({ output: "create:item_vault" })
+  event.remove({ id: "create:crafting/kinetics/item_vault" })
   event.shaped('3x create:item_vault', [
     'PRP',
     'RCR',
@@ -1113,9 +1113,18 @@ ServerEvents.recipes(event => {
     .circuit(6)
     .duration(50)
     .EUt(8);
-  //Display Link
+  //Display Link, makes this pre nether too (used to craft stock link)
+  event.remove({ id: 'create:crafting/logistics/display_link'})
+  event.shaped('2x create:brass_tunnel', [
+    ' T ',
+    ' C ',
+    '   '
+  ], {
+    T: 'create:transmitter',
+    C: 'create:copper_casing'
+  })
   event.recipes.gtceu.assembler("create:display_link")
-    .itemInputs('create:brass_casing', 'create:transmitter', 'gtceu:copper_plate')
+    .itemInputs('create:copper_casing', 'create:transmitter',)
     .itemOutputs('create:display_link')
     .circuit(6)
     .duration(50)
@@ -1158,11 +1167,11 @@ ServerEvents.recipes(event => {
     '   '
   ], {
     C: 'create:cogwheel',
-    P: 'ulvcovm:ulv_electric_pump',
+    P: 'ulvcovm:ulv_electric_motor',
     F: 'create:fluid_pipe'
   })
   event.recipes.gtceu.assembler("create:mechanical_pump")
-    .itemInputs('create:fluid_pipe', 'ulvcovm:ulv_electric_pump', 'create:cogwheel')
+    .itemInputs('create:fluid_pipe', 'ulvcovm:ulv_electric_motor', 'create:cogwheel')
     .itemOutputs('create:mechanical_pump')
     .circuit(10)
     .duration(50)
@@ -1291,7 +1300,7 @@ ServerEvents.recipes(event => {
     F: 'create:display_link',
     X: 'gtceu:tin_plate',
     E: 'create:item_vault',
-    S: 'gtceu:brass_plate',
+    S: 'gtceu:bronze_plate',
     C: '#gtceu:circuits/ulv'
   })
   //stock ticker, basically an ae terminal
@@ -1370,19 +1379,19 @@ ServerEvents.recipes(event => {
     G: 'minecraft:iron_bars',
   })
   //Item silo, this is just the regular item vault recipe but rods/plates swapped and a dif circuit
-  event.remove({output: "create_connected:item_silo"})
-  event.shaped('create_connected:item_silo', [
+  event.remove({id: 'create_connected:crafting/kinetics/item_silo'})
+  event.shaped('3x create_connected:item_silo', [
     'PRP',
     'RCR',
     'PRP'
   ], {
-    P: 'gtceu:steel_rod',
-    C: 'gtceu:steel_crate',
-    R: 'gtceu:steel_plate'
+    P: 'gtceu:bronze_rod',
+    C: 'gtceu:bronze_crate',
+    R: 'gtceu:bronze_plate'
   })
   event.recipes.gtceu.assembler("create_connected:item_silo")
-  .itemInputs('4x gtceu:steel_plate', '4x gtceu:steel_rod', 'gtceu:steel_crate')
-  .itemOutputs('2x create_connected:item_silo')
+  .itemInputs('4x gtceu:bronze_plate', '4x gtceu:bronze_rod', 'gtceu:bronze_crate')
+  .itemOutputs('3x create_connected:item_silo')
   .circuit(10)
   .duration(50)
   .EUt(8);
