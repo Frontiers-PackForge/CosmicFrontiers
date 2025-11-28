@@ -8,6 +8,19 @@ ServerEvents.tags('item', event => {
     GTMaterialRegistry.getRegisteredMaterials().forEach(id => {
       event.add('ftbultimine:excluded_tools', [`gtceu:${id.name}_mining_hammer`])
     })
+
+    
+    event.add('ftbultimine:excluded_tools', [
+      'tconstruct:kama',
+      'tconstruct:pickadze',
+      'tconstruct:hand_axe',
+      'tconstruct:mattock',
+      'tconstruct:pickaxe',
+      'tconstruct:excavator',
+      'tconstruct:sledge_hammer',
+      'tconstruct:broad_axe',
+      'tconstruct:scythe'
+    ])
 }
 
 })
