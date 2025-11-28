@@ -1191,7 +1191,7 @@ ServerEvents.recipes(event => {
     '   '
   ], {
     E: 'create:sail_frame',
-    T: 'minecraft:wite_wool'
+    T: 'minecraft:white_wool'
   })
   //Diving Helm
   event.remove({ output: Item.of('create:copper_diving_helmet', '{Damage:0}') })
