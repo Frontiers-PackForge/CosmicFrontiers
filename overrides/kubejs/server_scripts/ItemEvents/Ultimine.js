@@ -8,7 +8,6 @@ ServerEvents.tags('item', event => {
     GTMaterialRegistry.getRegisteredMaterials().forEach(id => {
       event.add('ftbultimine:excluded_tools', [`gtceu:${id.name}_mining_hammer`])
     })
-
     
     event.add('ftbultimine:excluded_tools', [
       'tconstruct:kama',
