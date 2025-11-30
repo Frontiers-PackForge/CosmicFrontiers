@@ -132,6 +132,32 @@ ServerEvents.recipes(event => {
     .adjacentFluids(["minecraft:lava", "minecraft:water"])
     .duration(16)
     .EUt(7);
+    
+  event.recipes.gtceu.rock_breaker(`create:calcite_rock_breaker`)
+    .notConsumable(`minecraft:calcite`)
+    .itemOutputs(`minecraft:calcite`)
+    .adjacentFluids(["minecraft:lava", "minecraft:water"])
+    .duration(16)
+    .EUt(7);
+
+  //dripstone can be directly crushed via create -> clay balls, so i am nerfing the rates on that to a % instead of guaranteed
+  event.recipes.gtceu.rock_breaker(`create:dripstone_block_rock_breaker`)
+    .notConsumable(`minecraft:dripstone_block`)
+    .itemOutputs(`minecraft:dripstone_block`)
+    .adjacentFluids(["minecraft:lava", "minecraft:water"])
+    .duration(16)
+    .EUt(7);
+    
+    event.remove({ id: 'create:milling/dripstone_block'})
+    event.remove({ id: 'create:crushing/dripstone_block'})
+
+    event.recipes.createMilling([
+      Item.of('minecraft:clay_ball').withChance(0.10)
+   ], 'minecraft:dripstone_block')
+
+    event.recipes.createCrushing([
+      Item.of('minecraft:clay_ball').withChance(0.15)
+   ], 'minecraft:dripstone_block')
 
   //Cogs
   event.remove({ output: 'create:cogwheel' })
