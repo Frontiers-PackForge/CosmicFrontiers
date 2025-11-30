@@ -429,3 +429,68 @@ ItemEvents.tooltip(event => {
     text.add(1, Text.of('Coming Soon - In Dev').red().italic())
   })
 })
+
+//Add tooltips for Drone and Drone Frame
+//Change color of Drone name to improve visibility
+ItemEvents.tooltip(event => {
+  event.addAdvanced('cosmiccore:rusty_drone', (item, advanced, text) => {
+    text.add(1, [Text.translate('frontiers.tooltip.drone.range').gold().bold(), Text.of('128').darkPurple()])
+    text.add(2, [Text.translate('frontiers.tooltip.drone.energy').gold().bold(), Text.of('EV').darkPurple()])
+    text.add(3, [Text.translate('frontiers.tooltip.drone.chance').gold().bold(), Text.of('100%').darkPurple()])
+  })
+  event.addAdvanced('cosmiccore:robust_drone', (item, advanced, text) => {
+    text.remove(0)
+    text.add(0, Text.translate('item.cosmiccore.robust_drone').aqua())
+    text.add(1, [Text.translate('frontiers.tooltip.drone.range').gold().bold(), Text.of('256').blue()])
+    text.add(2, [Text.translate('frontiers.tooltip.drone.energy').gold().bold(), Text.of('IV').blue()])
+    text.add(3, [Text.translate('frontiers.tooltip.drone.chance').gold().bold(), Text.of('75%').blue()])
+  })
+  event.addAdvanced('cosmiccore:industrial_drone', (item, advanced, text) => {
+    text.remove(0)
+    text.add(0, Text.translate('item.cosmiccore.industrial_drone').gold())
+    text.add(1, [Text.translate('frontiers.tooltip.drone.range').gold().bold(), Text.of('512').lightPurple()])
+    text.add(2, [Text.translate('frontiers.tooltip.drone.energy').gold().bold(), Text.of('LuV').lightPurple()])
+    text.add(3, [Text.translate('frontiers.tooltip.drone.chance').gold().bold(), Text.of('50%').lightPurple()])
+  })
+  event.addAdvanced('cosmiccore:sanguine_drone', (item, advanced, text) => {
+    text.remove(0)
+    text.add(0, Text.translate('item.cosmiccore.sanguine_drone').darkRed())
+    text.add(1, [Text.translate('frontiers.tooltip.drone.range').gold().bold(), Text.of('1024').red()])
+    text.add(2, [Text.translate('frontiers.tooltip.drone.energy').gold().bold(), Text.of('ZPM').red()])
+    text.add(3, [Text.translate('frontiers.tooltip.drone.chance').gold().bold(), Text.of('25%').red()])
+  })
+  event.addAdvanced('cosmiccore:plasmatic_drone', (item, advanced, text) => {
+    text.remove(0)
+    text.add(0, Text.translate('item.cosmiccore.plasmatic_drone').green())
+    text.add(1, [Text.translate('frontiers.tooltip.drone.range').gold().bold(), Text.of('4096').darkAqua()])
+    text.add(2, [Text.translate('frontiers.tooltip.drone.energy').gold().bold(), Text.of('UV').darkAqua()])
+    text.add(3, [Text.translate('frontiers.tooltip.drone.chance').gold().bold(), Text.of('0%').darkAqua()])
+    text.add(4, Text.translate('frontiers.tooltip.drone.cleanroom').color(rainbow(2250)).italic())
+  })
+
+  event.addAdvanced('cosmiccore:drone_frame_1', (item, advanced, text) => {
+    text.add(1, [Text.translate('frontiers.tooltip.drone_frame.flag'), Text.translate('item.cosmiccore.rusty_drone')])
+  })
+  event.addAdvanced('cosmiccore:drone_frame_2', (item, advanced, text) => {
+    text.add(1, [Text.translate('frontiers.tooltip.drone_frame.flag'), Text.translate('item.cosmiccore.robust_drone').aqua()])
+  })
+  event.addAdvanced('cosmiccore:drone_frame_3', (item, advanced, text) => {
+    text.add(1, [Text.translate('frontiers.tooltip.drone_frame.flag'), Text.translate('item.cosmiccore.industrial_drone').gold()])
+  })
+  event.addAdvanced('cosmiccore:drone_frame_4', (item, advanced, text) => {
+    text.add(1, [Text.translate('frontiers.tooltip.drone_frame.flag'), Text.translate('item.cosmiccore.sanguine_drone').darkRed()])
+  })
+  event.addAdvanced('cosmiccore:drone_frame_5', (item, advanced, text) => {
+    text.add(1, [Text.translate('frontiers.tooltip.drone_frame.flag'), Text.translate('item.cosmiccore.plasmatic_drone').green()])
+  })
+})
+
+//Color Utils
+const $Color  =Java.loadClass('java.awt.Color')
+const pink    =0xF38BAA
+const amethyst=0x9A5CC6
+
+function rainbow(speed){
+  let hue = Date.now() % speed / speed
+  return $Color.HSBtoRGB(hue, 1, 1)
+}
