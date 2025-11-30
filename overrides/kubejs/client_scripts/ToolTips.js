@@ -35,14 +35,14 @@ ItemEvents.tooltip(event => {
   hv_tier.map(element => {
     event.addAdvanced(element, (item, advanced, text) => {
       text.add(1, Text.translate('cosmiccore.circuit.hex.tooltip').gray())
-      text.add(2, Text.translate(voltage_series[element]).color(0x9A5CC6))  //Amethyst color, which matches the color of the Hex processor very well o(*￣▽￣*)ブ
+      text.add(2, Text.translate(voltage_series[element]).color(amethyst))  //Amethyst color, which matches the color of the Hex processor very well o(*￣▽￣*)ブ
     })
   })
   //enthelic CIRCUITS
   ev_tier.map(element => {
     event.addAdvanced(element, (item, advanced, text) => {
       text.add(1, Text.translate('cosmiccore.circuit.enthelic.tooltip').gray())
-      text.add(2, Text.translate(voltage_series[element]).color(0xF38BAA))  //Pink, which matches the color of the Enthelic processor very well o(*￣▽￣*)ブ
+      text.add(2, Text.translate(voltage_series[element]).color(pink))  //Pink, which matches the color of the Enthelic processor very well o(*￣▽￣*)ブ
     })
   })
   //lucidic CIRCUITS
@@ -417,3 +417,13 @@ ItemEvents.tooltip(event => {
     text.add(1, Text.translate('frontiers.tooltip.coming_soon').red().italic())
   })
 })
+
+//Color Utils
+const $Color  =Java.loadClass('java.awt.Color')
+const pink    =0xF38BAA
+const amethyst=0x9A5CC6
+
+function rainbow(speed){
+  let hue = Date.now() % speed / speed
+  return $Color.HSBtoRGB(hue, 1, 1)
+}
