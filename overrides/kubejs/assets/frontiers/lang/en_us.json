@@ -1,0 +1,7 @@
+{
+    "frontiers.tooltip.drone.range": "Range: ",
+    "frontiers.tooltip.drone.energy": "Energy Tier: ",
+    "frontiers.tooltip.drone.chance": "Consumption Chance: ",
+    "frontiers.tooltip.drone.cleanroom": "Cleanroom ENABLED!",
+    "frontiers.tooltip.drone_frame.flag": "Used for manufacturing: "
+}
