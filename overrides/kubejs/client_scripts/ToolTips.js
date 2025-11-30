@@ -465,7 +465,7 @@ ItemEvents.tooltip(event => {
     text.add(1, [Text.translate('frontiers.tooltip.drone.range').gold().bold(), Text.of('4096').darkAqua()])
     text.add(2, [Text.translate('frontiers.tooltip.drone.energy').gold().bold(), Text.of('UV').darkAqua()])
     text.add(3, [Text.translate('frontiers.tooltip.drone.chance').gold().bold(), Text.of('0%').darkAqua()])
-    text.add(4, Text.translate('frontiers.tooltip.drone.cleanroom').color(rainbow(2250)).italic())
+    text.add(4, Text.translate('frontiers.tooltip.drone.cleanroom').color(rainbow(2250)))
   })
 
   event.addAdvanced('cosmiccore:drone_frame_1', (item, advanced, text) => {
