@@ -212,30 +212,30 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:smeltery/melting/quartz/gem_1' })
 	event.remove({ id: 'tconstruct:smeltery/melting/glass/sand_cast' })
 	event.remove({ id: 'gm_construct:smeltery/casting/metal/malachite/block' })
-
 	event.remove({ id: 'tconstruct:smeltery/casting/ender/eye' })
 	event.remove({ id: 'tconstruct:smeltery/casting/metal/gold/clock' })
 	event.remove({ id: 'tconstruct:smeltery/casting/metal/iron/compass' })
-	
 	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick' })
-	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick_kiln' })
-
-	
+	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick_kiln' })	
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/molten_debris/ore' })
 	event.remove({ id: 'tconstruct:smeltery/alloys/molten_rose_gold' })
 	event.remove({ id: 'tconstruct:smeltery/alloys/molten_netherite' })
+	event.remove({ id: 'tconstruct:common/glass/vanilla/daylight_detector' })
+	event.remove({ id: 'tconstruct:common/basalt_blast_furnace' })
+	event.remove({ id: 'tconstruct:common/flint' })
+	event.remove({ id: 'tconstruct:common/glass/vanilla/glass_bottle' })
 
+    //scorched bricks
 	event.remove({ id: 'tconstruct:smeltery/scorched/scorched_brick' })
 	event.remove({ id: 'tconstruct:smeltery/scorched/scorched_brick_kiln' })
 	event.recipes.gtceu.coke_oven('frontiers:scorched_bricks')
         .itemInputs(['tconstruct:nether_grout'])
         .itemOutputs('tconstruct:scorched_brick')
         .duration(400)
-	event.remove({ id: 'tconstruct:common/glass/vanilla/daylight_detector' })
-	event.remove({ id: 'tconstruct:common/basalt_blast_furnace' })
-	event.remove({ id: 'tconstruct:common/flint' })
-	event.remove({ id: 'tconstruct:common/glass/vanilla/glass_bottle' })
-
+	//clear glass stonecutting (instead of having a roundabout way via clear -> framed -> rechiseled chisel)
+	//also lets framed glass from create be turned back into normal glass
+    event.stonecutting('minecraft:glass', '#forge:glass/colorless')
+	//tcon pattern
 	event.remove({ id: 'tconstruct:tables/pattern' })
 	event.shaped('6x tconstruct:pattern', [
         'ABA',
