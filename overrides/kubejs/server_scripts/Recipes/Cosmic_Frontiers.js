@@ -152,7 +152,17 @@ ServerEvents.recipes(event => {
 
        event.remove({ mod: 'biomancy' })
 
-
+     //stone buttons bruh
+     event.remove({ id: 'terralith:lever_alt' })
+     event.shaped('6x minecraft:stone_button', [
+             '   ',
+             'TP ',
+             '   '
+         ],
+         {
+             T: '#forge:tools/saws',
+             P: 'minecraft:stone_pressure_plate'
+         })
 
 
        event.remove({ id: 'paraglider:paraglider' })
