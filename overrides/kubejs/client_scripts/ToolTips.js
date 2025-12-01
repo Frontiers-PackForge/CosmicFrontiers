@@ -98,7 +98,7 @@ ItemEvents.tooltip(event => {
   uxv_tier.map(element => {
     event.addAdvanced(element, (item, advanced, text) => {
       text.add(1, Text.translate('cosmiccore.circuit.eschaton.tooltip').red().bold())
-      element.includes('main')?pass:text.add(2, Text.translate(voltage_series[element]))
+      element.includes('main')?pass:text.add(2, Text.translate(voltage_series[element]).color(rainbow(4500)))  //Rainbow, which matches the color of the Enthelic processor very well o(*￣▽￣*)ブ
     })
   })
 
