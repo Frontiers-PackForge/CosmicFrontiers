@@ -20,6 +20,11 @@ ServerEvents.tags('item', event => {
         'some_assembly_required:golden_apple_slices',
         'vanilladelight:golden_apple_slice'
     ])
+    event.add('forge:foods/meat/raw', [
+        '#forge:tentacles',
+        'crabbersdelight:raw_frog_leg',
+        'nethersdelight:hoglin_loin'
+    ])
  
 
     event.removeAll('diet:special_food') // Slicer recipes add nutrition to them already, keeping them in this tag makes it do double nutrition
@@ -72,18 +77,27 @@ ServerEvents.tags('item', event => {
     psi('gtceu:purple_drink')
     psi('kubejs:cosmic_meatballs')
     psi('malum:cursed_sap')
+    psi('malum:rotting_essence')
+    psi('malum:concentrated_gluttony')
 
     proteins('gtceu:dough')
     proteins('#forge:nut_butter')
     proteins('#forge:eggs')
     proteins('#forge:mushrooms')
     proteins('#forge:milk')
+    proteins('#forge:foods/meat')
     proteins('nethersdelight:hoglin_loin')
     proteins('nethersdelight:hoglin_ear')
     proteins('nethersdelight:strider_slice')
     proteins('occultism:beaver_nugget')
     proteins('arsdelight:bowl_of_honey_glazed_chimera')  
     proteins('oceanic_delight:salmon_eggs')  
+    proteins('forestry:fruit_walnut')
+    proteins('forestry:fruit_chestnut')
+    proteins('ad_astra:cheese')
+    proteins('tconstruct:cheese_ingot')
+    proteins('#crabbersdelight:raw_seafood')
+    proteins('/barbequesdelight:raw_(?!vegetable)\w+_skewer/')
 
     vegetables('legendarysurvivaloverhaul:beetroot_juice')
     vegetables('legendarysurvivaloverhaul:cactus_juice')
@@ -95,6 +109,13 @@ ServerEvents.tags('item', event => {
     vegetables('undergarden:blue_mogmoss')
     vegetables('undergarden:glitterkelp')
     vegetables('arsdelight:bowl_of_wilden_salad') 
+    vegetables('culturaldelights:corn')
+    vegetables('delightful:matcha')
+    vegetables('delightful:chopped_vlocer')
+    vegetables('vegandelight:soybean')
+    vegetables('crabberdelight:coconut_halve')
+    vegetables('some_assembly_required:burger_bun_top')
+    vegetables('/barbequesdelight:raw_(?!lamb|pork_sausage)\w+_skewer/')
 
     fruits('legendarysurvivaloverhaul:apple_juice')
     fruits('legendarysurvivaloverhaul:chorus_fruit_juice')
@@ -119,6 +140,12 @@ ServerEvents.tags('item', event => {
     fruits('nethersdelight:propelpearl')
     fruits('arsdelight:bowl_of_honey_glazed_chimera') 
     fruits('arsdelight:bowl_of_wilden_salad') 
+    fruits('seeddelight:cherry')
+    fruits('forestry:fruit_cherry')
+    fruits('forestry:fruit_plum')
+    fruits('forestry:fruit_date')
+    fruits('forestry:fruit_papaya')
+    fruits('barbequesdelight:raw_vegetable_skewer')
 
     sugars('aether:candy_cane')
     sugars('aether:gingerbread_man')
@@ -137,6 +164,10 @@ ServerEvents.tags('item', event => {
 
     grains('aether:gingerbread_man')
     grains('gtceu:dough')
+    grains('culturaldelights:corn_dough')
+    grains('some_assembly_required:burger_bun')
+    grains('some_assembly_required:burger_bun_bottom')
+    grains('some_assembly_required:burger_bun_top')
 
 
 
@@ -157,7 +188,6 @@ ServerEvents.tags('item', event => {
     proteins('gtceu:crystal_processor')
     vegetables('gtceu:crystal_processor')
     fruits('gtceu:crystal_processor')
-    grains()
 
     psi('gtceu:wetware_processor')
     mana('gtceu:wetware_processor')
