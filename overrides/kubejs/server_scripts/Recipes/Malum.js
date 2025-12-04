@@ -391,6 +391,11 @@ ServerEvents.recipes(event => {
     .duration(400)
     .EUt(GTValues.VA[GTValues.ZPM]);
 
+  event.recipes.gtceu.compressor("frontiers:living_flesh_block")
+    .itemInputs('9x malum:living_flesh')
+    .itemOutputs('malum:block_of_living_flesh')
+    .duration(300)
+    .EUt(2);
 
 
 
