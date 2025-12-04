@@ -246,7 +246,7 @@ WoodMinecraft.prototype = {
             event.remove({ output: `minecraft:${woodType}_hanging_sign` })
             event.recipes.gtceu.assembler(`cosmicfrontiers:minecraft/${woodType}_hanging_sign`)
                 .itemInputs([`6x minecraft:${woodType}_planks`, 'minecraft:chain'])
-                .itemOutputs(`minecraft:${woodType}_hanging_sign`)
+                .itemOutputs(`4x minecraft:${woodType}_hanging_sign`)
                 .circuit(4)
                 .duration(100)
                 .EUt(4);

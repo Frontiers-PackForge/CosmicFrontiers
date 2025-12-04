@@ -343,7 +343,7 @@ WoodMalum.prototype = {
             event.remove({ output: `${modID}:${woodType}_hanging_sign` })
             event.recipes.gtceu.assembler(`cosmicfrontiers:${modID}/${woodType}_hanging_sign`)
                 .itemInputs([`6x ${modID}:${woodType}`, 'minecraft:chain'])
-                .itemOutputs(`${modID}:${woodType}_hanging_sign`)
+                .itemOutputs(`4x ${modID}:${woodType}_hanging_sign`)
                 .circuit(4)
                 .duration(100)
                 .EUt(4);
