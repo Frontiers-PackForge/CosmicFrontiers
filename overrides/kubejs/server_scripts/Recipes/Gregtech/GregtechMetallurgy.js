@@ -119,4 +119,47 @@ ServerEvents.recipes(event => {
         .circuit(14)
         .blastFurnaceTemp(4500)
         .EUt(GTValues.VA[GTValues.EV]);
+
+    // Melodic Alloy Softlock Fix
+    event.remove({ id: 'gtceu:electric_blast_furnace/blast_melodic_alloy' })
+    event.remove({ id: 'gtceu:electric_blast_furnace/blast_melodic_alloy_gas' })
+    event.remove({ id: 'gtceu:alloy_blast_smelter/melodic_alloy' })
+    event.remove({ id: 'gtceu:alloy_blast_smelter/melodic_alloy_gas' })
+    event.remove({ id: 'gtceu:orbital_forge/blast_melodic_alloy' })
+    event.remove({ id: 'gtceu:orbital_forge/blast_melodic_alloy_gas' })
+    event.remove({ id: 'gtceu:orbital_forge_abs/melodic_alloy' })
+    event.remove({ id: 'gtceu:orbital_forge_abs/melodic_alloy_gas' })
+
+    event.recipes.gtceu.electric_blast_furnace('melodic_ebf_bad')
+         .itemInputs('cosmiccore:melodic_alloy_dust')
+         .itemOutputs('cosmiccore:hot_melodic_alloy_ingot')
+         .duration(2430)
+         .circuit(1)
+         .blastFurnaceTemp(3600)
+         .EUt(GTValues.VA[GTValues.IV]);
+
+    event.recipes.gtceu.electric_blast_furnace('melodic_ebf_good')
+         .itemInputs('cosmiccore:melodic_alloy_dust')
+         .inputFluids('gtceu:neon 25')
+         .itemOutputs('cosmiccore:hot_melodic_alloy_ingot')
+         .duration(1620)
+         .circuit(2)
+         .blastFurnaceTemp(3600)
+         .EUt(GTValues.VA[GTValues.IV]);
+
+    event.recipes.gtceu.alloy_blast_smelter('melodic_abs_bad')
+        .itemInputs('2x gtceu:black_steel_dust','4x cosmiccore:moondrop_dust','2x gtceu:ender_pearl_dust','3x gtceu:hafnium_dust')
+        .outputFluids('cosmiccore:molten_melodic_alloy 1584')
+        .duration(20047)
+        .circuit(4)
+        .blastFurnaceTemp(3600)
+        .EUt(GTValues.VA[GTValues.IV]);
+    event.recipes.gtceu.alloy_blast_smelter('melodic_abs_good')
+        .itemInputs('2x gtceu:black_steel_dust','4x cosmiccore:moondrop_dust','2x gtceu:ender_pearl_dust','3x gtceu:hafnium_dust')
+        .inputFluids('gtceu:neon 275')
+        .outputFluids('cosmiccore:molten_melodic_alloy 1584')
+        .duration(13365)
+        .circuit(14)
+        .blastFurnaceTemp(3600)
+        .EUt(GTValues.VA[GTValues.IV]);
 })
