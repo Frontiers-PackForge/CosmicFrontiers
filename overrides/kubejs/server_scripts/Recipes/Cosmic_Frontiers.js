@@ -1082,6 +1082,10 @@ ServerEvents.recipes(event => {
               .duration(1200)
               .EUt(16)
 
+       //sneaky gold dupe removal, (you can still dupe but just not turn em back into gold lol)
+       event.remove({ id: 'dustydecorations:coins_to_nuggets_recipe'})
+       event.remove({ id: 'dustydecorations:coins_to_nuggets_recipe_2'})
+
        event.recipes.gtceu.arcane_crucible('frontiers:arcane_crucible/tempered_iesnium_ingot')
               .itemInputs(['4x occultism:iesnium_ingot', '2x gtceu:utherium_gem', '2x gtceu:lanthanum_dust'])
               .itemOutputs('8x gtceu:tempered_iesnium_ingot')
