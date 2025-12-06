@@ -974,6 +974,8 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
 
+    event.replaceInput({ id: 'forestry:frame_untreated'}, '#forge:rods/wooden', 'minecraft:stick')
+
     
 
     //end hive """crafting"""
