@@ -129,6 +129,8 @@ ServerEvents.recipes(event => {
     new Wood('forestry','padauk_fireproof',event).all();
     new Wood('forestry','cocobolo_fireproof',event).all();
     new Wood('forestry','zebrawook_fireproof',event).all();
+    //crabbers delight
+    new Wood('crabbersdelight','palm',event).all();
     //Tinkers Construct
     //DANGER THIS CAUSES KUBEJS TO ERROR, KEEP DISABLED FOR NOW!
     // new Wood('tconstruct','greenheart',event).all();
@@ -343,6 +345,98 @@ Wood.prototype = {
                     P: `${modID}:stripped_${woodType}_wood`
                 })
         }
+        //log -> stripped log, FD cutting
+        if (Item.exists(`${modID}:${woodType}_log`))
+        if (Item.exists(`${modID}:stripped_${woodType}_log`)) {
+         event.custom({
+         type: 'farmersdelight:cutting',
+         ingredients: [
+          {
+          item: (`${modID}:${woodType}_log`),
+          },
+           ],
+           tool: {
+           tag: 'minecraft:axes',
+           },
+          result: [
+          {
+          item: (`${modID}:stripped_${woodType}_log`),
+          },
+         {
+         item: 'farmersdelight:tree_bark',
+         },
+       ],
+     })
+    }
+        //wood -> stripped wood, FD cutting
+        if (Item.exists(`${modID}:${woodType}_wood`))
+        if (Item.exists(`${modID}:stripped_${woodType}_wood`)) {
+         event.custom({
+         type: 'farmersdelight:cutting',
+         ingredients: [
+          {
+          item: (`${modID}:${woodType}_wood`),
+          },
+           ],
+           tool: {
+           tag: 'minecraft:axes',
+           },
+          result: [
+          {
+          item: (`${modID}:stripped_${woodType}_wood`),
+          },
+         {
+         item: 'farmersdelight:tree_bark',
+         },
+       ],
+     })
+    }
+        //forestry log -> stripped log, FD cutting, this creates 2 recipes for baobab stripped logs (non fireproof) and i got no clue why :sob:
+        if (Item.exists(`forestry:${woodType}_log`))
+        if (Item.exists(`forestry:${woodType}_stripped_log`)) {
+         event.custom({
+         type: 'farmersdelight:cutting',
+         ingredients: [
+          {
+          item: (`forestry:${woodType}_log`),
+          },
+           ],
+           tool: {
+           tag: 'minecraft:axes',
+           },
+          result: [
+          {
+          item: (`forestry:${woodType}_stripped_log`),
+          },
+         {
+         item: 'farmersdelight:tree_bark',
+         },
+       ],
+     })
+    }
+        //forestry wood -> stripped wood, FD cutting
+        if (Item.exists(`forestry:${woodType}_wood`))
+        if (Item.exists(`forestry:${woodType}_stripped_wood`)) {
+         event.custom({
+         type: 'farmersdelight:cutting',
+         ingredients: [
+          {
+          item: (`forestry:${woodType}_wood`),
+          },
+           ],
+           tool: {
+           tag: 'minecraft:axes',
+           },
+          result: [
+          {
+          item: (`forestry:${woodType}_stripped_wood`),
+          },
+         {
+         item: 'farmersdelight:tree_bark',
+         },
+       ],
+     })
+    }
         return this;
     },
     stairs: function () {
