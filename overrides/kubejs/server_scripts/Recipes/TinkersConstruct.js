@@ -245,7 +245,7 @@ ServerEvents.recipes(event => {
         A: '#forge:rods/wooden',
 		B: '#minecraft:planks',
 		C: 'gtceu:sticky_resin'
-    })
+    }).id('frontiers:tconstruct_pattern')
 
 	//"What if you knife a cheese ingot on a cutting board to get ad astra cheese before moon" (c) ghost
 	//IN CASE FD KUBEJS ADDON GETS ADDED CHANGE THAT UP FOR A PROPER RECIPE
@@ -276,7 +276,7 @@ ServerEvents.recipes(event => {
         H: '#forge:tools/hammers',
 		C: 'gtceu:copper_plate',
 		B: 'tconstruct:seared_brick'
-    })
+    }).id('frontiers:seared_drain')
 
 	event.remove({ output: 'tconstruct:seared_duct' })
     event.shaped('tconstruct:seared_duct', [
@@ -287,7 +287,7 @@ ServerEvents.recipes(event => {
         H: '#forge:tools/hammers',
 		C: 'gtceu:gold_plate',
 		B: 'tconstruct:seared_brick'
-    })
+    }).id('frontiers:seared_duct')
 
 	event.remove({ output: 'tconstruct:seared_chute' })
     event.shaped('tconstruct:seared_chute', [
@@ -298,5 +298,191 @@ ServerEvents.recipes(event => {
         H: '#forge:tools/hammers',
 		C: 'gtceu:copper_plate',
 		B: 'tconstruct:seared_brick'
+    }).id('frontiers:seared_chute')
+
+	//ticon mob smelting, reduced by 40-50%
+	event.remove({ id: 'tconstruct:smeltery/entity_melting/drowned' })
+	event.custom({
+		"type": "tconstruct:entity_melting",
+		"damage": 4,
+		"entity": {
+		  "type": "minecraft:drowned"
+		},
+		"result": {
+		  "amount": 10,
+		  "fluid": "gtceu:copper"
+		}
+	}).id("frontiers:smeltery_drowned_melting")
+	event.remove({ id: 'tconstruct:smeltery/entity_melting/creeper' })
+	event.custom({
+		"type": "tconstruct:entity_melting",
+		"damage": 2,
+		"entity": {
+		  "type": "minecraft:creeper"
+		},
+		"result": {
+			"amount": 25,
+			"fluid": "tconstruct:molten_glass"
+		}
+	}).id("frontiers:smeltery_creeper_melting")
+	event.remove({ id: 'tconstruct:smeltery/entity_melting/creeper' })
+	event.custom({
+		"type": "tconstruct:entity_melting",
+		"damage": 2,
+		"entity": {
+		  "types": [
+			"minecraft:enderman",
+			"minecraft:endermite",
+			"minecraft:ender_dragon"
+		  ]
+		},
+		"result": {
+		  "amount": 15,
+		  "tag": "forge:ender"
+		}
+	}).id("frontiers:smeltery_ender_melting")
+	event.remove({ id: 'tconstruct:smeltery/entity_melting/illager' })
+	event.custom({
+		"type": "tconstruct:entity_melting",
+		"damage": 2,
+		"entity": {
+		  "tag": "forge:illagers"
+		},
+		"result": {
+		  "amount": 15,
+		  "fluid": "tconstruct:molten_emerald"
+		}
+	}).id("frontiers:smeltery_illager_melting")
+	event.remove({ id: 'tconstruct:smeltery/entity_melting/iron_golem' })
+	event.custom({
+		"type": "tconstruct:entity_melting",
+		"damage": 4,
+		"entity": {
+		  "type": "minecraft:iron_golem"
+		},
+		"result": {
+		  "amount": 5,
+		  "fluid": "gtceu:iron"
+		}
+	}).id("frontiers:smeltery_iron_golem_melting")
+	event.remove({ id: 'tconstruct:smeltery/entity_melting/piglin' })
+	event.custom({
+		"type": "tconstruct:entity_melting",
+		"damage": 4,
+		"entity": {
+		  "types": [
+			"minecraft:piglin",
+			"minecraft:piglin_brute",
+			"minecraft:zombified_piglin"
+		  ]
+		},
+		"result": {
+		  "amount": 5,
+		  "fluid": "gtceu:gold"
+		}
+	}).id("frontiers:smeltery_piglin_melting")
+	event.remove({ id: 'tconstruct:smeltery/entity_melting/villager' })
+	event.custom({
+		"type": "tconstruct:entity_melting",
+		"damage": 5,
+		"entity": {
+		  "tag": "forge:villagers"
+		},
+		"result": {
+		  "amount": 15,
+		  "fluid": "tconstruct:molten_emerald"
+		}
+	}).id("frontiers:smeltery_villager_melting")
+	event.remove({ id: 'tconstruct:smeltery/entity_melting/zombie' })
+	event.custom({
+		"type": "tconstruct:entity_melting",
+		"damage": 4,
+		"entity": {
+		  "types": [
+			"minecraft:zombie",
+			"minecraft:husk",
+			"minecraft:zombie_horse"
+		  ]
+		},
+		"result": {
+		  "amount": 5,
+		  "fluid": "gtceu:iron"
+		}
+	}).id("frontiers:smeltery_zombie_melting")
+
+	//making ticon cast correct blocks
+	event.remove({ id: 'tconstruct:smeltery/casting/metal/brass/block' })
+	event.custom({
+		"type": "tconstruct:casting_basin",
+		"cooling_time": 161,
+		"fluid": {
+		  "amount": 1296,
+		  "fluid": "gtceu:brass"
+		},
+		"result": {
+		  "item": "gtceu:brass_block"
+		}
+	}).id("frontiers:smeltery_brass_block_casting")
+	event.remove({ id: 'tconstruct:smeltery/casting/metal/steel/block' })
+	event.custom({
+		"type": "tconstruct:casting_basin",
+		"cooling_time": 194,
+		"fluid": {
+		  "amount": 1296,
+		  "fluid": "gtceu:steel"
+		},
+		"result": {
+		  "item": "gtceu:steel_block"
+		}
+	}).id("frontiers:smeltery_steel_block_casting")
+	event.remove({ id: 'tconstruct:smeltery/casting/metal/zinc/block'})
+	event.custom({
+		"type": "tconstruct:casting_basin",
+		"cooling_time": 141,
+		"fluid": {
+		  "amount": 1296,
+		  "fluid": "gtceu:zinc"
+		},
+		"result": {
+		  "item": "gtceu:zinc_block"
+		}
+	}).id("frontiers:smeltery_zinc_block_casting")
+	event.remove({ id: 'gm_construct:smeltery/casting/metal/malachite/block' })
+	event.custom({
+		"type": "tconstruct:casting_basin",
+		"cooling_time": 121,
+		"fluid": {
+		  "amount": 1296,
+		  "fluid": "gtceu:copper"
+		},
+		"result": {
+		  "item": "gtceu:copper_block"
+		}
+	}).id("frontiers:smeltery_copper_block_casting")
+
+	//slimy crystals
+	
+	let TCslime = [
+	    'earth',
+	    'sky',
+	    'ichor',
+	    'ender'
+  	]
+	
+  	TCslime.forEach(TCslime => {
+		
+  	event.remove({ id: `tconstruct:common/slime/${TCslime}/crystal_block`})    
+  	event.recipes.gtceu.forge_hammer(`frontiers:${TCslime}_slime_crystal_hammer`)
+	    .itemInputs(`tconstruct:${TCslime}_slime_crystal_block`)
+	    .itemOutputs(`4x tconstruct:${TCslime}_slime_crystal`)
+	    .duration(100)
+	    .EUt(24);
+ 	event.recipes.gtceu.compressor(`frontiers:${TCslime}_slime_crystal_compress`)
+	    .itemInputs(`4x tconstruct:${TCslime}_slime_crystal`)
+	    .itemOutputs(`tconstruct:${TCslime}_slime_crystal_block`)
+	    .duration(300)
+	    .EUt(2);
+   	})`
+	
     })
 })

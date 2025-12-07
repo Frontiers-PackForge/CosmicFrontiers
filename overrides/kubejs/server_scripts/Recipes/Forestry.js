@@ -244,7 +244,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.chemical_reactor('forestry:pulsating_mesh_ender_pearl')
-        .itemInputs(['gtceu:ender_pearl_dust', 'forestry:pulsating_mesh'])
+        .itemInputs('forestry:pulsating_mesh')
+        .notConsumable('gtceu:ender_pearl_dust')
         .itemOutputs('minecraft:ender_pearl')
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
@@ -973,6 +974,8 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
 
+    event.replaceInput({ id: 'forestry:frame_untreated'}, '#forge:rods/wooden', 'minecraft:stick')
+
     
 
     //end hive """crafting"""
@@ -1290,4 +1293,24 @@ ServerEvents.recipes(event => {
         B: 'minecraft:leather'
     }).id('frontiers:waxed_leather_forestry')
     
+    event.custom({
+        "type": "integrateddynamics:mechanical_squeezer",
+        "item": {
+          "tag": "forestry:combs"
+        },
+        "result": {
+            "items": [
+                {
+                    "item": "forestry:honey_drop",
+                    "chance": 0.4
+                },
+                {
+                    "item": "forestry:beeswax",
+                    "chance": 0.6
+                }
+            ]
+        },
+        "duration": 20
+    }).id('frontiers:primitive_forestry_comb_extraction')
+
 })
