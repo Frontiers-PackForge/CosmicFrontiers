@@ -33,10 +33,15 @@ yeet('tconstruct:plate_red_sand_cast')
 yeet('tconstruct:gem_cast')
 yeet('tconstruct:gem_sand_cast')
 yeet('tconstruct:gem_red_sand_cast')
+yeet('tconstruct:gear_cast')
+yeet('tconstruct:gear_sand_cast')
+yeet('tconstruct:gear_red_sand_cast')
 yeet('tconstruct:foundry_controller')
 yeet('tconstruct:scorched_drain')
 yeet('tconstruct:scorched_duct')
 yeet('tconstruct:scorched_chute')
+yeet('tconstruct:scorched_alloyer')
+yeet('tconstruct:fantastic_froundry')
 
 //hiding the molten fluids
 let yoot = (fluidName) => {
@@ -125,9 +130,9 @@ ServerEvents.recipes(event => {
 	event.remove({ input: 'tconstruct:plate_cast' })
 	event.remove({ input: 'tconstruct:plate_sand_cast' })
 	event.remove({ input: 'tconstruct:plate_red_sand_cast' })
-	event.remove({ input: 'tconstruct:gem_cast' })
-	event.remove({ input: 'tconstruct:gem_sand_cast' })
-	event.remove({ input: 'tconstruct:gem_red_sand_cast' })
+	event.remove({ input: 'tconstruct:gear_cast' })
+	event.remove({ input: 'tconstruct:gear_sand_cast' })
+	event.remove({ input: 'tconstruct:gear_red_sand_cast' })
 
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/ore_sparse' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/raw' })
@@ -190,8 +195,9 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/rose_gold/dust' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/rose_gold/silky_cloth' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/tungsten/dust' })
-	event.remove({ id: 'tconstruct:smeltery/melting/metal/amethyst/spyglass' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/diamond/jukebox' })
+	event.remove({ id: 'tconstruct:smeltery/melting/diamond/jukebox' })
+	event.remove({ id: 'tconstruct:smeltery/melting/amethyst/spyglass' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/gold/bell' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/gold/clock' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/chain' })
@@ -204,22 +210,32 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/ingot_5' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/nugget_3' })
 	event.remove({ id: 'tconstruct:smeltery/melting/quartz/gem_1' })
-
+	event.remove({ id: 'tconstruct:smeltery/melting/glass/sand_cast' })
+	event.remove({ id: 'gm_construct:smeltery/casting/metal/malachite/block' })
 	event.remove({ id: 'tconstruct:smeltery/casting/ender/eye' })
 	event.remove({ id: 'tconstruct:smeltery/casting/metal/gold/clock' })
 	event.remove({ id: 'tconstruct:smeltery/casting/metal/iron/compass' })
-	
 	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick' })
-	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick_kiln' })
-
-	
+	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick_kiln' })	
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/molten_debris/ore' })
 	event.remove({ id: 'tconstruct:smeltery/alloys/molten_rose_gold' })
 	event.remove({ id: 'tconstruct:smeltery/alloys/molten_netherite' })
-
+	event.remove({ id: 'tconstruct:common/glass/vanilla/daylight_detector' })
+	event.remove({ id: 'tconstruct:common/basalt_blast_furnace' })
 	event.remove({ id: 'tconstruct:common/flint' })
 	event.remove({ id: 'tconstruct:common/glass/vanilla/glass_bottle' })
 
+    //scorched bricks
+	event.remove({ id: 'tconstruct:smeltery/scorched/scorched_brick' })
+	event.remove({ id: 'tconstruct:smeltery/scorched/scorched_brick_kiln' })
+	event.recipes.gtceu.coke_oven('frontiers:scorched_bricks')
+        .itemInputs(['tconstruct:nether_grout'])
+        .itemOutputs('tconstruct:scorched_brick')
+        .duration(400)
+	//clear glass stonecutting (instead of having a roundabout way via clear -> framed -> rechiseled chisel)
+	//also lets framed glass from create be turned back into normal glass
+    event.stonecutting('minecraft:glass', '#forge:glass/colorless')
+	//tcon pattern
 	event.remove({ id: 'tconstruct:tables/pattern' })
 	event.shaped('6x tconstruct:pattern', [
         'ABA',
