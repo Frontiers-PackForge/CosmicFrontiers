@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "forge:seeds"
+  },
+  "cast_consumed": true,
+  "cooling_time": 20,
+  "fluid": {
+    "amount": 250,
+    "tag": "tconstruct:earth_slime"
+  },
+  "result": "tconstruct:earth_slime_grass_seeds"
+}
