@@ -281,6 +281,9 @@ ServerEvents.recipes(event => {
               E: 'gtceu:empty_spray_can'
        })
 
+       event.replaceInput({ mod: 'gtceu', id: /iron_/, output: '#minecraft:tools'}, 'minecraft:stick', 'gtceu:long_wood_rod')
+       event.replaceInput({ mod: 'gtceu', id: /golden_/, output: '#minecraft:tools'}, 'minecraft:stick', 'gtceu:long_wood_rod')
+       event.replaceInput({ mod: 'gtceu', id: /diamond_/, output: '#minecraft:tools'}, 'minecraft:stick', 'gtceu:long_wood_rod')
 
 
        event.recipes.gtceu.assembler('ug_catalyst')

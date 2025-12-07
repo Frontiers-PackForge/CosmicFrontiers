@@ -86,5 +86,10 @@ ServerEvents.tags("item", event => {
 
     event.add('forge:shrimps', 'crabbersdelight:shrimp')
 
+    // Add Nether's Delight machetes and TiCon daggers to knife tags for loot
+    event.add('occultism:tools/knives', '#nethersdelight:tools/machetes')
+    event.add('occultism:tools/knives', 'tconstruct:dagger')
+    event.add('forge:tools/knives', '#nethersdelight:tools/machetes')
+    event.add('forge:tools/knives', 'tconstruct:dagger')
 })
 

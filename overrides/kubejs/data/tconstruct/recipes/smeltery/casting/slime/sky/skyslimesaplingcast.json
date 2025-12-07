@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "minecraft:saplings"
+  },
+  "cast_consumed": true,
+  "cooling_time": 60,
+  "fluid": {
+    "amount": 1000,
+    "tag": "tconstruct:sky_slime"
+  },
+  "result": "tconstruct:sky_slime_sapling"
+}

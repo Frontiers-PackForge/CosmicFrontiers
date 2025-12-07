@@ -1,6 +1,6 @@
 {
     "tip": {
-      "text": "You can carry and stack animals with the mod Carry On!",
+      "translate": "frontiers.tips.carry.message",
       "bold": true,
       "color": "green"
     }
