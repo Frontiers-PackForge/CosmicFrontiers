@@ -152,7 +152,17 @@ ServerEvents.recipes(event => {
 
        event.remove({ mod: 'biomancy' })
 
-
+     //stone buttons bruh
+     event.remove({ id: 'terralith:lever_alt' })
+     event.shaped('6x minecraft:stone_button', [
+             '   ',
+             'TP ',
+             '   '
+         ],
+         {
+             T: '#forge:tools/saws',
+             P: 'minecraft:stone_pressure_plate'
+         })
 
 
        event.remove({ id: 'paraglider:paraglider' })
@@ -1074,6 +1084,10 @@ ServerEvents.recipes(event => {
               .itemOutputs(`64x dustydecorations:mocha_seaglass_fragments`)
               .duration(1200)
               .EUt(16)
+
+       //sneaky gold dupe removal, (you can still dupe but just not turn em back into gold lol)
+       event.remove({ id: 'dustydecorations:coins_to_nuggets_recipe'})
+       event.remove({ id: 'dustydecorations:coins_to_nuggets_recipe_2'})
 
        event.recipes.gtceu.arcane_crucible('frontiers:arcane_crucible/tempered_iesnium_ingot')
               .itemInputs(['4x occultism:iesnium_ingot', '2x gtceu:utherium_gem', '2x gtceu:lanthanum_dust'])
