@@ -829,7 +829,7 @@ ServerEvents.recipes(event => {
     MultiFarmShit('sandstone_chiseled', 'minecraft:chiseled_sandstone')
     MultiFarmShit('brick_nether', 'minecraft:nether_bricks')
     MultiFarmShit('quartz', 'minecraft:quartz_block')
-    MultiFarmShit('quartz_chiseled', 'minecraft:chiseled_quartz')
+    MultiFarmShit('quartz_chiseled', 'minecraft:chiseled_quartz_block')
     MultiFarmShit('quartz_lines', 'minecraft:quartz_pillar')
 
     //Beefuckery
