@@ -1,6 +1,6 @@
 {
     "tip": {
-      "text": "Ghostipedia is full of soup.",
+      "translate": "frontiers.tips.soup.message",
       "bold": true,
       "color": "green"
     }

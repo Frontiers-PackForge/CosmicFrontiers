@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "forge:seeds"
+  },
+  "cast_consumed": true,
+  "cooling_time": 20,
+  "fluid": {
+    "amount": 200,
+    "tag": "tconstruct:ichor_slime"
+  },
+  "result": "tconstruct:blood_slime_grass_seeds"
+}

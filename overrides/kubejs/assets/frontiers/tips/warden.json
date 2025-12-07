@@ -1,6 +1,6 @@
 {
     "tip": {
-      "text": "Wardens can be lured onto create seats, think about all the ways you can cheese.",
+      "translate": "frontiers.tips.warden.message",
       "bold": true,
       "color": "green"
     }

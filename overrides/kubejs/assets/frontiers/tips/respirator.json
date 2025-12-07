@@ -1,11 +1,11 @@
 {
     "title": {
-        "text": "Tip",
+        "translate": "frontiers.tips.respirator.title",
         "bold": true,
         "color": "yellow"
     },
     "tip": {
-        "text": "Out of breath? Craft a Respirator to survive deep underground.",
+        "translate": "frontiers.tips.respirator.message",
         "bold": false,
         "color": "white"
     }

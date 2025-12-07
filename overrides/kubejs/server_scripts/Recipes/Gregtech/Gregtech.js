@@ -2457,5 +2457,39 @@ ServerEvents.recipes(event => {
   event.shapeless('gtceu:magnetic_iron_bolt', [
     'gtceu:iron_bolt', 'minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone'
   ])
+
+  // HV Quad Hatches
+  event.shaped('cosmiccore:hv_input_hatch_4x', [
+    ' H ',
+    ' M ',
+    '   '
+  ], {
+    M: 'cosmiccore:hv_output_hatch_4x',
+    H: '#forge:tools/screwdrivers'
+  })
+  event.shaped('cosmiccore:hv_input_hatch_4x', [
+    ' H ',
+    ' M ',
+    '   '
+  ], {
+    M: 'gtceu:hv_input_hatch',
+    H: 'gtceu:stainless_steel_quadruple_fluid_pipe'
+  })
+  event.shaped('cosmiccore:hv_output_hatch_4x', [
+    ' H ',
+    ' M ',
+    '   '
+  ], {
+    M: 'cosmiccore:hv_input_hatch_4x',
+    H: '#forge:tools/screwdrivers'
+  })
+  event.shaped('cosmiccore:hv_output_hatch_4x', [
+    ' M ',
+    ' H ',
+    '   '
+  ], {
+    M: 'gtceu:hv_output_hatch',
+    H: 'gtceu:stainless_steel_quadruple_fluid_pipe'
+  })
 })
 

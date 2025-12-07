@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:ore_melting",
+  "ingredient": {
+    "item": "tconstruct:medium_ichor_slime_crystal_bud"
+  },
+  "rate": "gem",
+  "result": {
+    "amount": 400,
+    "fluid": "tconstruct:ichor"
+  },
+  "temperature": 1500,
+  "time": 120
+}
