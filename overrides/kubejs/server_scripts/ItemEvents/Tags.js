@@ -63,6 +63,29 @@ ServerEvents.tags("item", event => {
     
     event.add('forge:chests/wooden', 'framedblocks:framed_chest')
 
+    // Seafood unification
+    event.add('crabbersdelight:raw_seafood', [
+        '#forge:tentacles',
+        'oceanic_delight:shrimp',
+        'oceanic_delight:elder_guardian_eye',
+        'oceanic_delight:elder_guardian_slice',
+        'oceanic_delight:guardian',
+        'oceanic_delight:guardian tail',
+        'oceanic_delight:fugu_slice'
+    ])
+
+    event.add('forge:raw_fishes', [
+        'oceanic_delight:elder_guardian_slice',
+        'oceanic_delight:fugu_slice'
+    ])
+
+    event.add('forge:raw_fishes/pufferfish', [
+        'crabbersdelight:pufferfish_slice',
+        'oceanic_delight:fugu_slice'
+    ])
+
+    event.add('forge:shrimps', 'crabbersdelight:shrimp')
+
     // Add Nether's Delight machetes and TiCon daggers to knife tags for loot
     event.add('occultism:tools/knives', '#nethersdelight:tools/machetes')
     event.add('occultism:tools/knives', 'tconstruct:dagger')
