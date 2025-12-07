@@ -70,7 +70,7 @@ ServerEvents.tags("item", event => {
         'oceanic_delight:elder_guardian_eye',
         'oceanic_delight:elder_guardian_slice',
         'oceanic_delight:guardian',
-        'oceanic_delight:guardian tail',
+        'oceanic_delight:guardian_tail',
         'oceanic_delight:fugu_slice'
     ])
 
