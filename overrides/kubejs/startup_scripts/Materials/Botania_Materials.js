@@ -24,10 +24,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 
     event.create('terrasteel')
-        .color(0x78ff62).secondaryColor(0x0e8f31)
+        .color(0x55f609)
         .ingot()
         .element(GTElements.get('terrasteel'))
-        .iconSet(GTMaterialIconSet.getByName('magic'))
+        .iconSet(GTMaterialIconSet.SHINY)
         .cableProperties(GTValues.V[GTValues.MV], 8, 1, false)
         .toolStats(new ToolProperty(12, 7, 3072, 6,
             [
@@ -77,7 +77,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('manasteel')
         .liquid()
-        .color(0x6fb6ff).secondaryColor(0x1e1fff)
+        .color(0x67b9ee)
         .element(GTElements.get('manasteel'))
         .cableProperties(GTValues.V[GTValues.LV], 8, 0, false)
 
@@ -116,7 +116,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
                 GTToolType.SCREWDRIVER_LV
             ]
         ))
-        .iconSet(GTMaterialIconSet.getByName('magic'))
+        .iconSet(GTMaterialIconSet.getByName('mana'))
         .flags(
             GTMaterialFlags.GENERATE_FINE_WIRE,
             GTMaterialFlags.GENERATE_PLATE,
@@ -128,11 +128,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('annealed_manasteel')
         .ingot()
         .liquid()
-        .color(0xafeffd).secondaryColor(0x0842ea)
+        .color(0xa8ddff)
         .components("manasteel")
         .element(GTElements.get('manasteel'))
         .cableProperties(GTValues.V[GTValues.MV], 2, 3, false)
-        .iconSet(GTMaterialIconSet.getByName('magic'))
+        .iconSet(GTMaterialIconSet.getByName('mana'))
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -145,8 +145,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         )
 
     event.create('elementium')
-        .color(0xff91b8).secondaryColor(0x5c0f7b)
-        .iconSet(GTMaterialIconSet.getByName('crystal'))
+        .color(0xf472c6)
+        .iconSet(GTMaterialIconSet.SHINY)
         .ingot()
         .cableProperties(GTValues.V[GTValues.EV], 3, 4, false)
         .flags(
@@ -193,7 +193,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             ]
         ))
     event.create('galvanized_ethersteel')
-        .color(0xeb4258).secondaryColor(0x8f0e5c)
+        .color(0xcf325b)
         .ingot()
         .liquid()
         .element(GTElements.get('ether_steel'))
