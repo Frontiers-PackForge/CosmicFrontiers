@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "minecraft:saplings"
+  },
+  "cast_consumed": true,
+  "cooling_time": 60,
+  "fluid": {
+    "amount": 1000,
+    "tag": "tconstruct:ichor_slime"
+  },
+  "result": "tconstruct:blood_slime_sapling"
+}
