@@ -1,12 +1,12 @@
 //just gonna do all the smelting/material tag removal here instead of splitting it between tcon filer/embers file
 //probably could have used an array or something for this but uhh... yeah
 let yeet = (itemName) => {
-  ServerEvents.recipes(event => {
-    event.remove({ output: itemName })
-  })
-  ServerEvents.tags('item', event => {
-    event.add('c:hidden_from_recipe_viewers', itemName)
-  })
+	ServerEvents.recipes(event => {
+		event.remove({ output: itemName })
+	})
+	ServerEvents.tags('item', event => {
+		event.add('c:hidden_from_recipe_viewers', itemName)
+	})
 }
 
 yeet(/embers:(.*)_lead/)
@@ -45,9 +45,9 @@ yeet('tconstruct:fantastic_froundry')
 
 //hiding the molten fluids
 let yoot = (fluidName) => {
-  ServerEvents.tags('fluid', event => {
-    event.add('c:hidden_from_recipe_viewers', fluidName)
-  })
+	ServerEvents.tags('fluid', event => {
+		event.add('c:hidden_from_recipe_viewers', fluidName)
+	})
 }
 
 yoot('tconstruct:molten_lumium')
@@ -58,75 +58,75 @@ yoot('tconstruct:molten_enderium')
 //this could probably be used for any future unwanted tcon recipes aswell
 ServerEvents.recipes(event => {
 
-  let tcondumb = [
-    'lumium',
-    'signalum',
-    'enderium'
-  ]
+	let tcondumb = [
+		'lumium',
+		'signalum',
+		'enderium'
+	]
 
-   tcondumb.forEach(tcondumb => {
-	   //casting
-       event.remove({ id: `tconstruct:smeltery/alloys/molten_${tcondumb}`})
-	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/ingot_gold_cast`})
-	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/ingot_sand_cast`})
-	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/nugget_gold_cast`})
-	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/nugget_sand_cast`})
-	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/block`})
-	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/plate_gold_cast`})
-	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/plate_sand_cast`})
-	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/gear_gold_cast`})
-	   event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/gear_sand_cast`})
-       //melting
-	   event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/ingot`})
-	   event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/nugget`})
-	   event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/block`})
-	   event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/plate`})
-	   event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/gear`})
-	   event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/dust`})
+	tcondumb.forEach(tcondumb => {
+		//casting
+		event.remove({ id: `tconstruct:smeltery/alloys/molten_${tcondumb}` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/ingot_gold_cast` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/ingot_sand_cast` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/nugget_gold_cast` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/nugget_sand_cast` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/block` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/plate_gold_cast` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/plate_sand_cast` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/gear_gold_cast` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/gear_sand_cast` })
+		//melting
+		event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/ingot` })
+		event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/nugget` })
+		event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/block` })
+		event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/plate` })
+		event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/gear` })
+		event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/dust` })
 
-   })
+	})
 })
 
 ServerEvents.tags('item', event => {
-  //ore blocks
-  event.remove('forge:ores/lead', 'embers:lead_ore')
-  event.remove('forge:ores/lead', 'embers:deepslate_lead_ore')
-  event.remove('forge:ores/silver', 'embers:silver_ore')
-  event.remove('forge:ores/silver', 'embers:deepslate_silver_ore')
-  event.remove('forge:ores/cobalt', 'tconstruct:cobalt_ore') //pretty sure tcon cobalt was removed from generating
-  //raw ores
-  event.remove('forge:raw_materials/lead', 'embers:raw_lead')
-  event.remove('forge:raw_materials/silver', 'embers:raw_silver')
-  event.remove('forge:raw_materials/cobalt', 'tconstruct:raw_cobalt')
-  //raw ore blocks
-  event.remove('forge:storage_blocks/raw_lead', 'embers:raw_lead_block')
-  event.remove('forge:storage_blocks/raw_silver', 'embers:raw_silver_block')
-  event.remove('forge:storage_blocks/raw_cobalt', 'tconstruct:raw_cobalt_block')
-  //blocks
-  event.remove('forge:storage_blocks/lead', 'embers:lead_block')
-  event.remove('forge:storage_blocks/silver', 'embers:silver_block')
-  event.remove('forge:storage_blocks/cobalt', 'tconstruct:cobalt_block')
-  event.remove('forge:storage_blocks/rose_gold', 'tconstruct:rose_gold_block')
-  event.remove('forge:storage_blocks/steel', 'tconstruct:steel_block')
-  //ingots
-  event.remove('forge:ingots/lead', 'embers:lead_ingot')
-  event.remove('forge:ingots/silver', 'embers:silver_ingot')
-  event.remove('forge:ingots/cobalt', 'tconstruct:cobalt_ingot')
-  event.remove('forge:ingots/rose_gold', 'tconstruct:rose_gold_ingot')
-  event.remove('forge:ingots/steel', 'tconstruct:steel_ingot')
-  //nuggets
-  event.remove('forge:nuggets/lead', 'embers:lead_nugget')
-  event.remove('forge:nuggets/silver', 'embers:silver_nugget')
-  event.remove('forge:nuggets/cobalt', 'tconstruct:cobalt_nugget')
-  event.remove('forge:nuggets/rose_gold', 'tconstruct:rose_gold_nugget')
-  event.remove('forge:nuggets/steel', 'tconstruct:steel_nugget')
+	//ore blocks
+	event.remove('forge:ores/lead', 'embers:lead_ore')
+	event.remove('forge:ores/lead', 'embers:deepslate_lead_ore')
+	event.remove('forge:ores/silver', 'embers:silver_ore')
+	event.remove('forge:ores/silver', 'embers:deepslate_silver_ore')
+	event.remove('forge:ores/cobalt', 'tconstruct:cobalt_ore') //pretty sure tcon cobalt was removed from generating
+	//raw ores
+	event.remove('forge:raw_materials/lead', 'embers:raw_lead')
+	event.remove('forge:raw_materials/silver', 'embers:raw_silver')
+	event.remove('forge:raw_materials/cobalt', 'tconstruct:raw_cobalt')
+	//raw ore blocks
+	event.remove('forge:storage_blocks/raw_lead', 'embers:raw_lead_block')
+	event.remove('forge:storage_blocks/raw_silver', 'embers:raw_silver_block')
+	event.remove('forge:storage_blocks/raw_cobalt', 'tconstruct:raw_cobalt_block')
+	//blocks
+	event.remove('forge:storage_blocks/lead', 'embers:lead_block')
+	event.remove('forge:storage_blocks/silver', 'embers:silver_block')
+	event.remove('forge:storage_blocks/cobalt', 'tconstruct:cobalt_block')
+	event.remove('forge:storage_blocks/rose_gold', 'tconstruct:rose_gold_block')
+	event.remove('forge:storage_blocks/steel', 'tconstruct:steel_block')
+	//ingots
+	event.remove('forge:ingots/lead', 'embers:lead_ingot')
+	event.remove('forge:ingots/silver', 'embers:silver_ingot')
+	event.remove('forge:ingots/cobalt', 'tconstruct:cobalt_ingot')
+	event.remove('forge:ingots/rose_gold', 'tconstruct:rose_gold_ingot')
+	event.remove('forge:ingots/steel', 'tconstruct:steel_ingot')
+	//nuggets
+	event.remove('forge:nuggets/lead', 'embers:lead_nugget')
+	event.remove('forge:nuggets/silver', 'embers:silver_nugget')
+	event.remove('forge:nuggets/cobalt', 'tconstruct:cobalt_nugget')
+	event.remove('forge:nuggets/rose_gold', 'tconstruct:rose_gold_nugget')
+	event.remove('forge:nuggets/steel', 'tconstruct:steel_nugget')
 })
 
 
 ServerEvents.recipes(event => {
 
 	event.remove({ type: 'tconstruct:foundry' })
-		
+
 	event.remove({ input: 'tconstruct:plate_cast' })
 	event.remove({ input: 'tconstruct:plate_sand_cast' })
 	event.remove({ input: 'tconstruct:plate_red_sand_cast' })
@@ -216,7 +216,7 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:smeltery/casting/metal/gold/clock' })
 	event.remove({ id: 'tconstruct:smeltery/casting/metal/iron/compass' })
 	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick' })
-	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick_kiln' })	
+	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick_kiln' })
 	event.remove({ id: 'tconstruct:smeltery/melting/metal/molten_debris/ore' })
 	event.remove({ id: 'tconstruct:smeltery/alloys/molten_rose_gold' })
 	event.remove({ id: 'tconstruct:smeltery/alloys/molten_netherite' })
@@ -225,80 +225,80 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'tconstruct:common/flint' })
 	event.remove({ id: 'tconstruct:common/glass/vanilla/glass_bottle' })
 
-    //scorched bricks
+	//scorched bricks
 	event.remove({ id: 'tconstruct:smeltery/scorched/scorched_brick' })
 	event.remove({ id: 'tconstruct:smeltery/scorched/scorched_brick_kiln' })
 	event.recipes.gtceu.coke_oven('frontiers:scorched_bricks')
-        .itemInputs(['tconstruct:nether_grout'])
-        .itemOutputs('tconstruct:scorched_brick')
-        .duration(400)
+		.itemInputs(['tconstruct:nether_grout'])
+		.itemOutputs('tconstruct:scorched_brick')
+		.duration(400)
 	//clear glass stonecutting (instead of having a roundabout way via clear -> framed -> rechiseled chisel)
 	//also lets framed glass from create be turned back into normal glass
-    event.stonecutting('minecraft:glass', '#forge:glass/colorless')
+	event.stonecutting('minecraft:glass', '#forge:glass/colorless')
 	//tcon pattern
 	event.remove({ id: 'tconstruct:tables/pattern' })
 	event.shaped('6x tconstruct:pattern', [
-        'ABA',
-        'BCB',
-        'ABA'
-    ], {
-        A: '#forge:rods/wooden',
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: '#forge:rods/wooden',
 		B: '#minecraft:planks',
 		C: 'gtceu:sticky_resin'
-    }).id('frontiers:tconstruct_pattern')
+	}).id('frontiers:tconstruct_pattern')
 
 	//"What if you knife a cheese ingot on a cutting board to get ad astra cheese before moon" (c) ghost
 	//IN CASE FD KUBEJS ADDON GETS ADDED CHANGE THAT UP FOR A PROPER RECIPE
 	event.custom({
 		type: 'farmersdelight:cutting',
 		ingredients: [
-		  { item: 'tconstruct:cheese_ingot' }
+			{ item: 'tconstruct:cheese_ingot' }
 		],
 		tool: { tag: 'forge:tools/knives' },
 		result: [
-		  { item: 'ad_astra:cheese', count: 2 }
+			{ item: 'ad_astra:cheese', count: 2 }
 		]
 	}).id('frontiers:cheese_cutting')
 
 	event.remove({ output: 'tconstruct:silky_cloth' })
 	event.recipes.gtceu.assembler('frontiers:silky_cloth')
-        .itemInputs(['4x projectred_core:woven_cloth', '#forge:gems/rose_quartz'])
-        .itemOutputs('tconstruct:silky_cloth')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.LV])
+		.itemInputs(['4x projectred_core:woven_cloth', '#forge:gems/rose_quartz'])
+		.itemOutputs('tconstruct:silky_cloth')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.remove({ output: 'tconstruct:seared_drain' })
-    event.shaped('tconstruct:seared_drain', [
-        'BHB',
-        'CCC',
-        'B B'
-    ], {
-        H: '#forge:tools/hammers',
+	event.shaped('tconstruct:seared_drain', [
+		'BHB',
+		'CCC',
+		'B B'
+	], {
+		H: '#forge:tools/hammers',
 		C: 'gtceu:copper_plate',
 		B: 'tconstruct:seared_brick'
-    }).id('frontiers:seared_drain')
+	}).id('frontiers:seared_drain')
 
 	event.remove({ output: 'tconstruct:seared_duct' })
-    event.shaped('tconstruct:seared_duct', [
-        'BHB',
-        'CCC',
-        'B B'
-    ], {
-        H: '#forge:tools/hammers',
+	event.shaped('tconstruct:seared_duct', [
+		'BHB',
+		'CCC',
+		'B B'
+	], {
+		H: '#forge:tools/hammers',
 		C: 'gtceu:gold_plate',
 		B: 'tconstruct:seared_brick'
-    }).id('frontiers:seared_duct')
+	}).id('frontiers:seared_duct')
 
 	event.remove({ output: 'tconstruct:seared_chute' })
-    event.shaped('tconstruct:seared_chute', [
-        'BCB',
-        'HC ',
-        'BCB'
-    ], {
-        H: '#forge:tools/hammers',
+	event.shaped('tconstruct:seared_chute', [
+		'BCB',
+		'HC ',
+		'BCB'
+	], {
+		H: '#forge:tools/hammers',
 		C: 'gtceu:copper_plate',
 		B: 'tconstruct:seared_brick'
-    }).id('frontiers:seared_chute')
+	}).id('frontiers:seared_chute')
 
 	//ticon mob smelting, reduced by 40-50%
 	event.remove({ id: 'tconstruct:smeltery/entity_melting/drowned' })
@@ -306,11 +306,11 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:entity_melting",
 		"damage": 4,
 		"entity": {
-		  "type": "minecraft:drowned"
+			"type": "minecraft:drowned"
 		},
 		"result": {
-		  "amount": 10,
-		  "fluid": "gtceu:copper"
+			"amount": 10,
+			"fluid": "gtceu:copper"
 		}
 	}).id("frontiers:smeltery_drowned_melting")
 	event.remove({ id: 'tconstruct:smeltery/entity_melting/creeper' })
@@ -318,7 +318,7 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:entity_melting",
 		"damage": 2,
 		"entity": {
-		  "type": "minecraft:creeper"
+			"type": "minecraft:creeper"
 		},
 		"result": {
 			"amount": 25,
@@ -330,15 +330,15 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:entity_melting",
 		"damage": 2,
 		"entity": {
-		  "types": [
-			"minecraft:enderman",
-			"minecraft:endermite",
-			"minecraft:ender_dragon"
-		  ]
+			"types": [
+				"minecraft:enderman",
+				"minecraft:endermite",
+				"minecraft:ender_dragon"
+			]
 		},
 		"result": {
-		  "amount": 15,
-		  "tag": "forge:ender"
+			"amount": 15,
+			"tag": "forge:ender"
 		}
 	}).id("frontiers:smeltery_ender_melting")
 	event.remove({ id: 'tconstruct:smeltery/entity_melting/illager' })
@@ -346,11 +346,11 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:entity_melting",
 		"damage": 2,
 		"entity": {
-		  "tag": "forge:illagers"
+			"tag": "forge:illagers"
 		},
 		"result": {
-		  "amount": 15,
-		  "fluid": "tconstruct:molten_emerald"
+			"amount": 15,
+			"fluid": "tconstruct:molten_emerald"
 		}
 	}).id("frontiers:smeltery_illager_melting")
 	event.remove({ id: 'tconstruct:smeltery/entity_melting/iron_golem' })
@@ -358,11 +358,11 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:entity_melting",
 		"damage": 4,
 		"entity": {
-		  "type": "minecraft:iron_golem"
+			"type": "minecraft:iron_golem"
 		},
 		"result": {
-		  "amount": 5,
-		  "fluid": "gtceu:iron"
+			"amount": 5,
+			"fluid": "gtceu:iron"
 		}
 	}).id("frontiers:smeltery_iron_golem_melting")
 	event.remove({ id: 'tconstruct:smeltery/entity_melting/piglin' })
@@ -370,15 +370,15 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:entity_melting",
 		"damage": 4,
 		"entity": {
-		  "types": [
-			"minecraft:piglin",
-			"minecraft:piglin_brute",
-			"minecraft:zombified_piglin"
-		  ]
+			"types": [
+				"minecraft:piglin",
+				"minecraft:piglin_brute",
+				"minecraft:zombified_piglin"
+			]
 		},
 		"result": {
-		  "amount": 5,
-		  "fluid": "gtceu:gold"
+			"amount": 5,
+			"fluid": "gtceu:gold"
 		}
 	}).id("frontiers:smeltery_piglin_melting")
 	event.remove({ id: 'tconstruct:smeltery/entity_melting/villager' })
@@ -386,11 +386,11 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:entity_melting",
 		"damage": 5,
 		"entity": {
-		  "tag": "forge:villagers"
+			"tag": "forge:villagers"
 		},
 		"result": {
-		  "amount": 15,
-		  "fluid": "tconstruct:molten_emerald"
+			"amount": 15,
+			"fluid": "tconstruct:molten_emerald"
 		}
 	}).id("frontiers:smeltery_villager_melting")
 	event.remove({ id: 'tconstruct:smeltery/entity_melting/zombie' })
@@ -398,15 +398,15 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:entity_melting",
 		"damage": 4,
 		"entity": {
-		  "types": [
-			"minecraft:zombie",
-			"minecraft:husk",
-			"minecraft:zombie_horse"
-		  ]
+			"types": [
+				"minecraft:zombie",
+				"minecraft:husk",
+				"minecraft:zombie_horse"
+			]
 		},
 		"result": {
-		  "amount": 5,
-		  "fluid": "gtceu:iron"
+			"amount": 5,
+			"fluid": "gtceu:iron"
 		}
 	}).id("frontiers:smeltery_zombie_melting")
 
@@ -416,11 +416,11 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:casting_basin",
 		"cooling_time": 161,
 		"fluid": {
-		  "amount": 1296,
-		  "fluid": "gtceu:brass"
+			"amount": 1296,
+			"fluid": "gtceu:brass"
 		},
 		"result": {
-		  "item": "gtceu:brass_block"
+			"item": "gtceu:brass_block"
 		}
 	}).id("frontiers:smeltery_brass_block_casting")
 	event.remove({ id: 'tconstruct:smeltery/casting/metal/steel/block' })
@@ -428,23 +428,23 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:casting_basin",
 		"cooling_time": 194,
 		"fluid": {
-		  "amount": 1296,
-		  "fluid": "gtceu:steel"
+			"amount": 1296,
+			"fluid": "gtceu:steel"
 		},
 		"result": {
-		  "item": "gtceu:steel_block"
+			"item": "gtceu:steel_block"
 		}
 	}).id("frontiers:smeltery_steel_block_casting")
-	event.remove({ id: 'tconstruct:smeltery/casting/metal/zinc/block'})
+	event.remove({ id: 'tconstruct:smeltery/casting/metal/zinc/block' })
 	event.custom({
 		"type": "tconstruct:casting_basin",
 		"cooling_time": 141,
 		"fluid": {
-		  "amount": 1296,
-		  "fluid": "gtceu:zinc"
+			"amount": 1296,
+			"fluid": "gtceu:zinc"
 		},
 		"result": {
-		  "item": "gtceu:zinc_block"
+			"item": "gtceu:zinc_block"
 		}
 	}).id("frontiers:smeltery_zinc_block_casting")
 	event.remove({ id: 'gm_construct:smeltery/casting/metal/malachite/block' })
@@ -452,80 +452,79 @@ ServerEvents.recipes(event => {
 		"type": "tconstruct:casting_basin",
 		"cooling_time": 121,
 		"fluid": {
-		  "amount": 1296,
-		  "fluid": "gtceu:copper"
+			"amount": 1296,
+			"fluid": "gtceu:copper"
 		},
 		"result": {
-		  "item": "gtceu:copper_block"
+			"item": "gtceu:copper_block"
 		}
 	}).id("frontiers:smeltery_copper_block_casting")
 
 	//slimy crystals
-	
+
 	let TCslime = [
-	    'earth',
-	    'sky',
-	    'ichor',
-	    'ender'
-  	]
-	
-  	TCslime.forEach(TCslime => {
-		
-  	event.remove({ id: `tconstruct:common/slime/${TCslime}/crystal_block`})    
-  	event.recipes.gtceu.forge_hammer(`frontiers:${TCslime}_slime_crystal_hammer`)
-	    .itemInputs(`tconstruct:${TCslime}_slime_crystal_block`)
-	    .itemOutputs(`4x tconstruct:${TCslime}_slime_crystal`)
-	    .duration(100)
-	    .EUt(24);
- 	event.recipes.gtceu.compressor(`frontiers:${TCslime}_slime_crystal_compress`)
-	    .itemInputs(`4x tconstruct:${TCslime}_slime_crystal`)
-	    .itemOutputs(`tconstruct:${TCslime}_slime_crystal_block`)
-	    .duration(300)
-	    .EUt(2);
-   	})`
-	
-    })
+		'earth',
+		'sky',
+		'ichor',
+		'ender'
+	]
+
+	TCslime.forEach(TCslime => {
+
+		event.remove({ id: `tconstruct:common/slime/${TCslime}/crystal_block` })
+		event.recipes.gtceu.forge_hammer(`frontiers:${TCslime}_slime_crystal_hammer`)
+			.itemInputs(`tconstruct:${TCslime}_slime_crystal_block`)
+			.itemOutputs(`4x tconstruct:${TCslime}_slime_crystal`)
+			.duration(100)
+			.EUt(24);
+		event.recipes.gtceu.compressor(`frontiers:${TCslime}_slime_crystal_compress`)
+			.itemInputs(`4x tconstruct:${TCslime}_slime_crystal`)
+			.itemOutputs(`tconstruct:${TCslime}_slime_crystal_block`)
+			.duration(300)
+			.EUt(2);
+	})
+
 
 	// Tinkers' Construct sapling growth
 	event.recipes.gtceu.arboreal_growth_facility('earth_slime_sol')
-        .notConsumable('tconstruct:earth_slime_sapling')
-        .notConsumable('/tconstruct:earth.*_slime_(?:dirt|grass)(?!_seeds)/')
-        .inputFluids(['gtceu:nutrient_solution 10', 'gtceu:air 100'])
-        .itemOutputs(['24x tconstruct:greenheart_log', '6x minecraft:slime_ball'])
-        .chancedOutput('12x tconstruct:greenheart_log', 5000, 0)
-        .chancedOutput('4x minecraft:slime_ball', 5000, 0)
-        .chancedOutput('4x tconstruct:earth_slime_sapling', 500, 0)
-        .duration(100)
-        .EUt(LV/2)
-    event.recipes.gtceu.arboreal_growth_facility('sky_slime_sol')
-        .notConsumable('tconstruct:sky_slime_sapling')
-        .notConsumable('/tconstruct:sky.*_slime_(?:dirt|grass)(?!_seeds)/')
-        .inputFluids(['gtceu:nutrient_solution 10', 'gtceu:aether_air 100'])
-        .itemOutputs(['24x tconstruct:skyroot_log', '6x tconstruct:sky_slime_ball'])
-        .chancedOutput('12x tconstruct:skyroot_log', 5000, 0)
-        .chancedOutput('4x tconstruct:sky_slime_ball', 5000, 0)
-        .chancedOutput('4x tconstruct:sky_slime_sapling', 500, 0)
-        .duration(100)
-        .EUt(LV/2)
-    event.recipes.gtceu.arboreal_growth_facility('ender_slime_sol')
-        .notConsumable('tconstruct:ender_slime_sapling')
-        .notConsumable('/tconstruct:ender.*_slime_(?:dirt|grass)(?!_seeds)/')
-        .inputFluids(['gtceu:nutrient_solution 10', 'gtceu:ender_air 100'])
-        .itemOutputs(['24x tconstruct:enderbark_log', '3x tconstruct:enderbark_roots', '3x tconstruct:ender_slime_ball'])
-        .chancedOutput('12x tconstruct:enderbark_log', 5000, 0)
-        .chancedOutput('tconstruct:enderbark_roots', 5000, 0)
-        .chancedOutput('tconstruct:ender_slime_ball', 5000, 0)
-        .chancedOutput('tconstruct:ender_slime_sapling', 500, 0)
-        .duration(100)
-        .EUt(LV/2)
-    event.recipes.gtceu.arboreal_growth_facility('blood_slime_sol')
-        .notConsumable('tconstruct:blood_slime_sapling')
-        .notConsumable('/tconstruct:blood.*_slime_(?:dirt|grass)(?!_seeds)/')
-        .inputFluids(['gtceu:nutrient_solution 25', 'gtceu:nether_air 100'])
-        .itemOutputs(['24x tconstruct:bloodshroom_log', '3x tconstruct:ichor_congealed_slime'])
-        .chancedOutput('12x tconstruct:bloodshroom_log', 5000, 0)
-        .chancedOutput('tconstruct:ichor_congealed_slime', 5000, 0)
-        .chancedOutput('4x tconstruct:blood_slime_sapling', 500, 0)
-        .duration(100)
-        .EUt(LV/2)
+		.notConsumable('tconstruct:earth_slime_sapling')
+		.notConsumable('/tconstruct:earth.*_slime_(?:dirt|grass)(?!_seeds)/')
+		.inputFluids(['gtceu:nutrient_solution 10', 'gtceu:air 100'])
+		.itemOutputs(['24x tconstruct:greenheart_log', '6x minecraft:slime_ball'])
+		.chancedOutput('12x tconstruct:greenheart_log', 5000, 0)
+		.chancedOutput('4x minecraft:slime_ball', 5000, 0)
+		.chancedOutput('4x tconstruct:earth_slime_sapling', 500, 0)
+		.duration(100)
+		.EUt(LV / 2)
+	event.recipes.gtceu.arboreal_growth_facility('sky_slime_sol')
+		.notConsumable('tconstruct:sky_slime_sapling')
+		.notConsumable('/tconstruct:sky.*_slime_(?:dirt|grass)(?!_seeds)/')
+		.inputFluids(['gtceu:nutrient_solution 10', 'gtceu:aether_air 100'])
+		.itemOutputs(['24x tconstruct:skyroot_log', '6x tconstruct:sky_slime_ball'])
+		.chancedOutput('12x tconstruct:skyroot_log', 5000, 0)
+		.chancedOutput('4x tconstruct:sky_slime_ball', 5000, 0)
+		.chancedOutput('4x tconstruct:sky_slime_sapling', 500, 0)
+		.duration(100)
+		.EUt(LV / 2)
+	event.recipes.gtceu.arboreal_growth_facility('ender_slime_sol')
+		.notConsumable('tconstruct:ender_slime_sapling')
+		.notConsumable('/tconstruct:ender.*_slime_(?:dirt|grass)(?!_seeds)/')
+		.inputFluids(['gtceu:nutrient_solution 10', 'gtceu:ender_air 100'])
+		.itemOutputs(['24x tconstruct:enderbark_log', '3x tconstruct:enderbark_roots', '3x tconstruct:ender_slime_ball'])
+		.chancedOutput('12x tconstruct:enderbark_log', 5000, 0)
+		.chancedOutput('tconstruct:enderbark_roots', 5000, 0)
+		.chancedOutput('tconstruct:ender_slime_ball', 5000, 0)
+		.chancedOutput('tconstruct:ender_slime_sapling', 500, 0)
+		.duration(100)
+		.EUt(LV / 2)
+	event.recipes.gtceu.arboreal_growth_facility('blood_slime_sol')
+		.notConsumable('tconstruct:blood_slime_sapling')
+		.notConsumable('/tconstruct:blood.*_slime_(?:dirt|grass)(?!_seeds)/')
+		.inputFluids(['gtceu:nutrient_solution 25', 'gtceu:nether_air 100'])
+		.itemOutputs(['24x tconstruct:bloodshroom_log', '3x tconstruct:ichor_congealed_slime'])
+		.chancedOutput('12x tconstruct:bloodshroom_log', 5000, 0)
+		.chancedOutput('tconstruct:ichor_congealed_slime', 5000, 0)
+		.chancedOutput('4x tconstruct:blood_slime_sapling', 500, 0)
+		.duration(100)
+		.EUt(LV / 2)
 })
