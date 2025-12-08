@@ -464,6 +464,57 @@ ServerEvents.recipes(event => {
     }
   )
 
+  //spawner recipe
+  .id("malum:spirit_infusion.frontiers.spawner_infusion")
+  event.custom(
+    {
+      "type": "malum:spirit_infusion",
+      "extra_items": [
+        {
+          "count": 64,
+          "item": "gtceu:steel_ingot"
+        },
+        {
+          "count": 64,
+          "item": "gtceu:runed_steel_ingot"
+        },
+        {
+          "count": 32,
+          "item": "malum:spirit_fabric"
+        },
+        {
+          "count": 16,
+          "item": "malum:block_of_brilliance"
+        },
+      ],
+      "input": {
+        "count": 1,
+        "item": "gtceu:lv_machine_hull"
+      },
+    "output": {
+        "item": "minecraft:spawner",
+        
+    },
+      "spirits": [
+        {
+          "type": "earthen",
+          "count": 64
+        },
+        {
+          "type": "arcane",
+          "count": 64
+        },
+        {
+          "type": "wicked",
+          "count": 64
+        },
+        {
+          "type": "eldritch",
+          "count": 16
+        },
+      ]
+    }
+  )
 
 
 })

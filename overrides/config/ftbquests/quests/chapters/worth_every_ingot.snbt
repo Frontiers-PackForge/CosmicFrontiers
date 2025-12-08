@@ -18,7 +18,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["71C697E52A8CE267"]
 			dependency_requirement: "one_completed"
 			description: [
 				"I seriously recommend you upgrade your Naqline, as there is SEVERAL Naquadah sinks in LuV."

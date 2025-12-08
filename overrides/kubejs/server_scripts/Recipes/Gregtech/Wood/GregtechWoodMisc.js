@@ -159,7 +159,7 @@ ServerEvents.recipes(event => {
     if (Item.exists(`ars_nouveau:archwood_hanging_sign`)) {
         event.recipes.gtceu.assembler(`ars_nouveau:archwood_hanging_sign`)
             .itemInputs([`6x ars_nouveau:archwood_planks`, 'minecraft:chain'])
-            .itemOutputs(`ars_nouveau:archwood_hanging_sign`)
+            .itemOutputs(`4x ars_nouveau:archwood_hanging_sign`)
             .circuit(4)
             .duration(100)
             .EUt(4);
