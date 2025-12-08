@@ -3,7 +3,7 @@
     "frontiers.tooltip.drone.energy": "Energy Tier: ",
     "frontiers.tooltip.drone.chance": "Consumption Chance: ",
     "frontiers.tooltip.drone.cleanroom": "Cleanroom ENABLED!",
-    "frontiers.tooltip.drone_frame.flag": "Used for manufacturing: "
+    "frontiers.tooltip.drone_frame.flag": "Used for manufacturing: ",
     "frontiers.tips.carry.message":"You can carry and stack animals with the mod Carry On!",
     "frontiers.tips.ccore.message":"Cosmic Core is the heart that keeps this pack alive.",
     "frontiers.tips.ccore.title":"Fun Fact",
@@ -36,7 +36,7 @@
     "cosmiccore.circuit.max_tier.tooltip": "MAX-Tier Circuit",
 
     "cosmiccore.circuit.hex.tooltip": "Circuits of Arcane Logic",
-    "cosmiccore.circuit.enthelic.tooltip": "",
+    "cosmiccore.circuit.enthelic.tooltip": "Circuits of a False Dream",
     "cosmiccore.circuit.lucidic.tooltip": "",
     "cosmiccore.circuit.luv.tooltip": "",
     "cosmiccore.circuit.zpm.tooltip": "",
