@@ -33,7 +33,7 @@
 	baseExperience = 500
 	#How much the amount of experience required to reach next level will be multiplied per level.
 	#Range: 1.0 ~ 10.0
-	requiredXpMultiplier = 1.5
+	requiredXpMultiplier = 1.4
 	#Additional multiplier for broad tools for experience required to level up.
 	#Range: 1.0 ~ 10.0
 	broadToolRequiredXpMultiplier = 2.0
@@ -176,7 +176,7 @@
 	#The time (in ticks) of continuous flight using an elytra after which experience points will be awarded.
 	#20 ticks = 1 second
 	#Range: 1 ~ 1200
-	flyingTime = 300
+	flyingTime = 200
 
 	#If true, given action will yield tool experience.
 	[toolLevelling.actions]
@@ -232,15 +232,15 @@
 		#Range: > 0
 		shooting = 9
 		#Range: > 0
-		takingDamage = 5
+		takingDamage = 15
 		#Range: > 0
-		blockingDamage = 0
+		blockingDamage = 10
 		#As with Thorns damage calculations, this is the upper bound of the bonus experience that could be granted.
 		#For example, for the value of 3 (default), we get: 1 (base xp) + 0 to 3 (bonus xp) = 1 to 4 (result xp)
 		#Range: > 0
-		thorns = 10
+		thorns = 25
 		#Range: > 0
-		flying = 0
+		flying = 10
 		#Range: > 0
 		plowing = 0
 		#Range: > 0
