@@ -116,7 +116,7 @@ copper.prototype = {
                     amount: 288
                 },
                 temperature: 500,
-                time: 185
+                time: 80
             }).id(`cosmicfrontiers:tconstruct/melting/${modID}/${copperType}`)
         }
         //waxed copper block -> liquid copper melting
@@ -131,7 +131,7 @@ copper.prototype = {
                     amount: 288
                 },
                 temperature: 500,
-                time: 185
+                time: 80
             }).id(`cosmicfrontiers:tconstruct/melting/${modID}/waxed_${copperType}`)
         }
         return this;
