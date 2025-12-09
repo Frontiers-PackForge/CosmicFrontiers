@@ -498,6 +498,17 @@ ServerEvents.recipes(event => {
     F: '#gtceu:circuits/hv'
   })
 
+  event.shaped("cosmiccore:vile_fission", [
+    'ABA',
+    'CDC',
+    'ABA'
+  ], {
+    A: "#gtceu:circuits/iv",
+    B: "malum:living_flesh",
+    C: "gtceu:psi_superconductor_alpha_octal_wire",
+    D: "cosmiccore:high_temperature_fission_casing"
+  })
+
   event.remove({ id: 'gtceu:shaped/large_steam_turbine' })
   event.shaped('cosmiccore:steam_large_turbine', [
     'ABA',
