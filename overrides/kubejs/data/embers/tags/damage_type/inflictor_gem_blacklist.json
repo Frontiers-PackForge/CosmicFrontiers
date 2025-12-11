@@ -1,0 +1,14 @@
+{
+  "values": [
+    "minecraft:mob_attack",
+    "minecraft:mob_attack_no_aggro",
+    "minecraft:mob_projectile",
+    "minecraft:generic",
+    "minecraft:generic_kill",
+    "minecraft:player_attack",
+    "minecraft:arrow",
+    "#minecraft:bypasses_invulnerability",
+    "legendarysurvivaloverhaul:hypothermia",
+    "legendarysurvivaloverhaul:heatstroke"
+  ]
+}
