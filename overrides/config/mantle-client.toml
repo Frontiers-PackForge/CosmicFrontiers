@@ -1,7 +1,0 @@
-#If not DISABLE, enables the Mantle heart renderer, which stacks hearts by changing the color instead of vertically stacking them.
-#WITH_MAX will show the max health in colored containers behind the health bar. NO_MAX will show just the health bar
-#If DISABLE, uses the Forge heart renderer.
-#Mod authors: this config is not meant for compatibility with your heart renderer, cancel the RenderGameOverlayEvent.Pre event and our logic won't run
-#Allowed Values: DISABLE, NO_MAX, WITH_MAX
-heartRenderer = "WITH_MAX"
-

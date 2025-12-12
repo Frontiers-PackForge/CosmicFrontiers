@@ -1,7 +1,0 @@
-
-[visuals]
-	#Should the blaze hook use the chain or particle effect? [particles, chain]
-	blaze_hook_link = "particles"
-	#Should the ender hook use the chain or particle effect? [particles, chain]
-	ender_hook_link = "particles"
-

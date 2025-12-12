@@ -1,9 +1,0 @@
-{
-    "ldlib": {
-        "connection": "gtceu:block/casings/coils/prismatic_tungsten_coil_ctm"
-    },
-    "animation":{
-      "interpolate": true,
-      "frametime":16
-   }
-}
