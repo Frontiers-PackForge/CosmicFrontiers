@@ -1,0 +1,767 @@
+# Options related to enabling/disabling specific features
+# See the data packs to customize the temperature of specific blocks, liquids, armors, etc.
+[core]
+	# Whether the temperature system is enabled.
+	"Temperature Enabled" = true
+	# Whether the thirst system is enabled.
+	"Thirst Enabled" = true
+	# Whether the overhaul health system is enabled.
+	"Health Overhaul Enabled" = true
+	# Whether body members receive localized damages.
+	"Localized Body Damage Enabled" = true
+	# How the mod represents a challenge for the player.
+	# Accepted values are as follows:
+	#   PEACEFUL - Temperature doesn't harm the player and the hydration doesn't decrease.
+	#   EASY - Temperature and Thirst won't hurt the player health below 10 hearts.
+	#   NORMAL - Temperature and Thirst hurts the player down to 1 heart.
+	#   HARD - Temperature and Thirst can kill the player.
+	# Any other value will default to HARD.
+	#Allowed Values: PEACEFUL, EASY, NORMAL, HARD
+	"Temperature Difficulty Mode" = "HARD"
+
+	[core.advanced]
+		# How often player temperature, thirst, body damage and health is regularly synced between the client and server, in ticks.
+		# Lower values will increase accuracy at the cost of performance.
+		# Default: 30
+		# Range: > 1
+		"Routine Packet Sync" = 30
+
+	[core.misc]
+		# What information the compass returns when player is using it or in an item frame.
+		#Allowed Values: FULL, HORIZONTAL, NONE
+		"Compass Info Mode" = "FULL"
+		# If enabled, use on a filled map will show destination coordinates.
+		"Show Coordinate On Filled Map" = true
+		# If enabled, information like position and direction will be hidden from the debug screen (F3).
+		"Hide Info From Debug" = true
+		# If enabled, the player can regenerate health naturally if their hunger is full enough (doesn't affect external healing, such as golden apples, the Regeneration effect, etc.)
+		"Natural Regeneration Enabled" = true
+		# If enabled, the player suffers vanilla freeze when inside powder snow.
+		"Vanilla Freeze Enabled" = false
+		# How much health player will have initially.
+		# Default: 20.0
+		# Range: 1.0 ~ 10000.0
+		"Initial Player Health" = 20.0
+
+# Options related to the player food data
+[food]
+	# Food exhausted every 10 ticks. Increase the base minecraft food exhaustion.
+	# Default: 0.05
+	# Range: 0.0 ~ 1000.0
+	"Base Food Exhaustion" = 0.05
+	# Food exhausted every 10 ticks while sprinting in addition to the sprinting minecraft food exhaustion.
+	# Default: 0.1
+	# Range: 0.0 ~ 1000.0
+	"Sprinting Food Exhaustion" = 0.1
+	# Food exhausted on every attack in addition to the minecraft attack food exhaustion.
+	# Default: 0.1
+	# Range: 0.0 ~ 1000.0
+	"On Attack Food Exhaustion" = 0.1
+
+# Options related to the temperature system
+[temperature]
+	# If enabled, players will take damage from the effects of high temperature.
+	"Dangerous Heat Temperature Effects" = true
+	# If enabled, players will take damage from the effects of low temperature.
+	"Dangerous Cold Temperature Effects" = true
+	# Chance of the ferns to become a gold fern when grow mature.
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	"Gold Fern Chance" = 0.01
+	# How much of an effect being on fire has on a player's temperature.
+	# Default: 12.5
+	# Range: -1000.0 ~ 1000.0
+	"Player On Fire Modifier" = 12.5
+	# How much of an effect sprinting has on a player's temperature.
+	# Default: 1.5
+	# Range: -1000.0 ~ 1000.0
+	"Player Sprint Modifier" = 1.5
+	# How much of an effect altitude has on player's temperature.
+	# Each 64 blocks further from sea level will impact player's temperature by this value.
+	# The sea level can be defined via datapack under the dimension's temperature.
+	# As an example, a value of -6 will reduce the player's temperature by 6 for each 64 blocks (the calculus is done linearly).
+	# Default: -6.0
+	# Range: -1000.0 ~ 1000.0
+	"Altitude Modifier" = -6.0
+
+	[temperature.temperature-immunity]
+		# If enabled, players will be immune to temperature effects after death.
+		"Temperature Immunity On Death Enabled" = true
+		# Temperature immunity period in ticks while the player is immune to temperature effects after death.
+		# Default: 1800
+		# Range: 0 ~ 100000
+		"Temperature Immunity On Death Time" = 1800
+		# If enabled, players will be immune to temperature effects on first spawn in a world.
+		"Temperature Immunity On First Spawn Enabled" = true
+		# Temperature immunity period in ticks while the player is immune to temperature effects on first spawn.
+		# Default: 1800
+		# Range: 0 ~ 100000
+		"Temperature Immunity On First Spawn Time" = 1800
+
+	[temperature.secondary_effects]
+		# If enabled, players will also receive other effects from their current temperature state.
+		# If the player is too hot, hydration will deplete faster.
+		"Heat Temperature Secondary Effects" = true
+		# If enabled, players will also receive other effects from their current temperature state.
+		# If the player is too cold, hunger will deplete faster.
+		"Cold Temperature Secondary Effects" = true
+		# How much thirst exhaustion will be added every 50 ticks with no amplification effect, when the player suffers from heat.
+		# Default: 0.2
+		# Range: 0.0 ~ 1000.0
+		"Heat Thirst Effect Modifier" = 0.2
+		# How much food exhaustion will be added every 50 ticks with no amplification effect, when the player suffers from frostbite.
+		# As reference, the hunger effect add 0.025 food exhaustion every 50 ticks.
+		# Default: 0.1
+		# Range: 0.0 ~ 1000.0
+		"Cold Hunger Modifier" = 0.1
+
+	[temperature.wetness]
+		# Enable the wetness mechanic.
+		"Wetness Enabled" = true
+		# List of mounts that provide a wetness immunity.
+		"Wetness Immunity Mounts" = ["alexscaves:submarine", "immersive_machinery:bamboo_bee", "immersive_machinery:tunnel_digger", "immersive_machinery:redstone_sheep", "immersive_machinery:copperfin"]
+		# How much being wet influences the player's temperature.
+		# It means that for a value of -10, the body temperature of the player is reduced by 10.
+		# Default: -10.0
+		# Range: -1000.0 ~ 1000.0
+		"Wetness Modifier" = -10.0
+		# How frequently the wetness is modified.
+		# By default, every 10 ticks, the wetness will either increase or decrease, based on the conditions.
+		# Default: 10
+		# Range: 1 ~ 100000
+		"Wetness Tick Timer" = 10
+		# How much the wetness decrease when out of water.
+		# Default: -3
+		# Range: -1000 ~ 0
+		"Wetness Decrease" = -3
+		# How much the wetness increase when under rain.
+		# Default: 7
+		# Range: 0 ~ 1000
+		"Wetness Under Rain Increase" = 7
+		# How much the wetness increase when the player is in a fluid, scale by the amount of fluid in the block.
+		# The defined value is for a full block of fluid, and goes up to 2 times this value when fully immerge.
+		# Default: 10
+		# Range: 0 ~ 1000
+		"Wetness In Fluid Increase" = 10
+
+	[temperature.huddling]
+		# How much nearby players increase the ambient temperature by.
+		# Note that this value stacks!
+		# Default: 0.5
+		# Range: -1000.0 ~ 1000.0
+		"Player Huddling Modifier" = 0.5
+		# The radius, in blocks, around which players will add to each other's temperature.
+		# Default: 1
+		# Range: 0 ~ 10
+		"Player Huddling Radius" = 1
+
+	[temperature.biomes]
+		# How much a biome's temperature effects are multiplied.
+		# Default: 18.0
+		# Range: 0.0 ~ 1000.0
+		"Biome Temperature Multiplier" = 18.0
+		# Whether biomes will have an effect on a player's temperature.
+		"Biomes affect Temperature" = true
+		# How much hot biome's dryness will make nights really cold.
+		# Affects only dry (minecraft down fall <0.2) and hot biome.
+		# 1 means no dryness effect; 0.5 means the biome temp will be divided by 2 at the middle of the night.
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		"Biome's Dryness Multiplier" = 0.2
+
+	# The underground effect starts apply at Start Distance to the world surface.
+	# The underground effect will linearly apply a multiplier on the biome temperature, and averages the time and season temperature effects.
+	[temperature.underground]
+		# How much a biomes temperature effects are multiplied when player is underground
+		# Default: 0.8
+		# Range: 0.0 ~ 1000.0
+		"Underground Biome Temperature Multiplier" = 0.8
+		# Distance to the World Surface where underground effect will start to be applied.
+		# Smaller distance, no underground effect are applied.
+		# Default: 10
+		# Range: 0 ~ 400
+		"Start Distance To World Surface For Underground Effect" = 10
+		# Distance to the World Surface where underground effect will be maximal.
+		# Bigger distance, the underground effect is maximal. Between the Start and End Distance, the increase of underground effect is linear.
+		# Default: 16
+		# Range: 0 ~ 400
+		"End Distance To World Surface For Underground Effect" = 16
+
+	[temperature.weather]
+		# How much of an effect rain has on temperature.
+		# It means that for a value of -2, the body temperature of the player is reduced by 2.
+		# Default: -2.0
+		# Range: -1000.0 ~ 1000.0
+		"Rain Temperature Modifier" = -2.0
+		# How much of an effect snow has on temperature.
+		# It means that for a value of -6, the body temperature of the player is reduced by 6.
+		# Default: -6.0
+		# Range: -1000.0 ~ 1000.0
+		"Snow Temperature Modifier" = -6.0
+
+	# Freeze effect increases while inside snow powder.
+	[temperature.freeze]
+		# How much of an effect freeze has on temperature when reaching maximum tick time. Starts at 0 and increases linearly.
+		# Default: -10.0
+		# Range: -1000.0 ~ 1000.0
+		"Max Freeze Temperature Modifier" = -10.0
+		# How long in tick before freeze modifier reaches its maximum effect.
+		# Default: 400
+		# Range: 0 ~ 100000
+		"Max Freeze Effect Tick" = 400
+
+	[temperature.time]
+		# How much Time has effect on Temperature.
+		# Maximum effect at noon (positive) and midnight (negative), following a sinusoidal
+		# Default: 2.0
+		# Range: 0.0 ~ Infinity
+		"Time Based Temperature Modifier" = 2.0
+		# How strongly time in extreme temperature biomes affect player's temperature.
+		# Extreme temperature biomes (like snowy taiga, deserts, ...) will multiply the time based temperature by this value, while temperate biome won't be affected by this value, following a linear.
+		# Default: 1.75
+		# Range: 1.0 ~ Infinity
+		"Biome Time Multiplier" = 1.75
+		# Staying in the shade or during cloudy weather will reduce player's temperature by this amount based on time of the day (maximum effect at noon, following sinusoidal).
+		# It means that for a value of -6, the body temperature of the player is reduced by 6.
+		# Only effective when reaching the threshold and during day time!
+		# Default: -6.0
+		# Range: -1000.0 ~ 1000.0
+		"Shade Time Modifier" = -6.0
+		# Defines when the biome temperature added by the season temperature (if seasons mod loaded) will trigger a shade effect.
+		# Default: 9.0
+		# Range: 0.0 ~ 10000.0
+		"Shade Time Modifier Threshold" = 9.0
+
+	# Temperature coat adds temperature effects on armors by using the sewing table.
+	# Adaptive means the coating will maintain the player's temperature temperate.
+	[temperature.coat]
+
+		# Add a heating resistance on armors.
+		[temperature.coat.heating]
+			# Default: 2.0
+			# Range: 0.0 ~ 1000.0
+			"Heating Coat I" = 2.0
+			# Default: 3.0
+			# Range: 0.0 ~ 1000.0
+			"Heating Coat II" = 3.0
+			# Default: 4.0
+			# Range: 0.0 ~ 1000.0
+			"Heating Coat III" = 4.0
+
+		# Add a cooling resistance on armors.
+		[temperature.coat.cooling]
+			# Default: 2.0
+			# Range: 0.0 ~ 1000.0
+			"Cooling Coat I" = 2.0
+			# Default: 3.0
+			# Range: 0.0 ~ 1000.0
+			"Cooling Coat II" = 3.0
+			# Default: 4.0
+			# Range: 0.0 ~ 1000.0
+			"Cooling Coat III" = 4.0
+
+		# Add a temperature resistance on armors that can both heat and cool the player.
+		[temperature.coat.thermal]
+			# Default: 2.0
+			# Range: 0.0 ~ 1000.0
+			"Thermal Coat I" = 2.0
+			# Default: 3.0
+			# Range: 0.0 ~ 1000.0
+			"Thermal Coat II" = 3.0
+			# Default: 4.0
+			# Range: 0.0 ~ 1000.0
+			"Thermal Coat III" = 4.0
+
+	[temperature.advanced]
+		# Maximum influence distance, in blocks, where thermal sources will have an effect on temperature.
+		# Default: 20
+		# Range: 1 ~ 40
+		"Temperature Influence Maximum Distance" = 20
+		# How strongly influence distance above the player is reduced for thermal sources to have an effect on temperature.
+		# Example max dist is 10, up mult is 0.75 -> max distance is 10 * 0.75 = 7.5 blocks above the player.
+		# Logic is that heat goes up, the strength of the heat source above the player is decreased faster with distance.
+		# Default: 0.75
+		# Range: 0.0 ~ 1.0
+		"Temperature Influence Up Distance Multiplier" = 0.75
+		# How strongly influence distance outside a structure is reduced for thermal sources to have an effect on temperature.
+		# The outside maximum distance is defined as the maximum distance * this value
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		"Temperature Influence Outside Distance Multiplier" = 0.5
+
+		# The player's temperature will be adjusted at each temperature tick time,
+		# by an amount of temperature defined between the minimum and the maximum temperature modification adjusted linearly.
+		[temperature.advanced.temperature-modification]
+			# Amount of time in ticks between 2 player temperature modification. The bigger is this value, the more time it takes between temperature adjustments.
+			# Default: 20
+			# Range: > 5
+			"Temperature Tick Time" = 20
+			# Maximum amount of temperature the player's temperature can be modified at each temperature tick time.
+			# Correspond to the amount of temperature given when temperature difference is maximum, meaning 40.
+			# Default: 1.0
+			# Range: 0.1 ~ 2.147483647E9
+			"Maximum Temperature Modification" = 1.0
+			# Minimum amount of temperature the player's temperature can be modified at each temperature tick time.
+			# Correspond to the amount of temperature given when there is no temperature difference
+			# Default: 0.2
+			# Range: 0.1 ~ 2.147483647E9
+			"Minimum Temperature Modification" = 0.2
+
+		# If TerraFirmaCraft is installed, then biome, time, season (if serene seasons installed) and altitude modifiers will be disabled, and TerraFirmaCraft calculation used instead.
+		# All other modifiers remain to calculate Player temperature.
+		[temperature.integration.terrafirmacraft]
+			# How much the heat of the item provided by TerraFirmaCraft is multiplied. 0 deactivates the impact on temperature.
+			# Default: 0.01
+			# Range: 0.0 ~ 1000.0
+			"TerraFirmaCraft Item Heat Multiplier" = 0.01
+			# How much the temperature given from TerraFirmaCraft is multiplied. 0 deactivates the impact on temperature.
+			# Default: 1.0
+			# Range: 0.0 ~ 1000.0
+			"TerraFirmaCraft Temperature Multiplier" = 1.0
+
+		[temperature.integration.serene-seasons]
+			# If Serene Seasons is installed, whether the seasons have an effect on the player's temperature.
+			"Serene Seasons Enabled" = true
+			# If the tropical seasons are disabled, the normal summer-autumn-winter-spring seasons are applied.
+			# If disabled, dry and wet seasons are applied for hot biomes.
+			"Tropical Seasons Enabled" = false
+			# If season cards are enabled, season cards will appear at every season changes.
+			"Season Cards Enabled" = false
+			# If default season is enabled, when serene season defines no season effect in a biome, the normal season temperature will be applied.
+			# If disabled, when serene season defines no season effects, no season temperature will be applied.
+			"Default Season Enabled" = true
+
+			# Temperature modifiers per season in temperate biomes. The value is reached at the middle of the sub season, and smoothly transition from one to another.
+			[temperature.integration.serene-seasons.temperate]
+
+				[temperature.integration.serene-seasons.temperate.spring]
+					# Default: -3.0
+					# Range: -1000.0 ~ 1000.0
+					"Early Spring Modifier" = -3.0
+					# Default: 0.0
+					# Range: -1000.0 ~ 1000.0
+					"Mid Spring Modifier" = 0.0
+					# Default: 3.0
+					# Range: -1000.0 ~ 1000.0
+					"Late Spring Modifier" = 3.0
+
+				[temperature.integration.serene-seasons.temperate.summer]
+					# Default: 6.0
+					# Range: -1000.0 ~ 1000.0
+					"Early Summer Modifier" = 6.0
+					# Default: 10.0
+					# Range: -1000.0 ~ 1000.0
+					"Mid Summer Modifier" = 10.0
+					# Default: 6.0
+					# Range: -1000.0 ~ 1000.0
+					"Late Summer Modifier" = 6.0
+
+				[temperature.integration.serene-seasons.temperate.autumn]
+					# Default: 3.0
+					# Range: -1000.0 ~ 1000.0
+					"Early Autumn Modifier" = 3.0
+					# Default: 0.0
+					# Range: -1000.0 ~ 1000.0
+					"Mid Autumn Modifier" = 0.0
+					# Default: -3.0
+					# Range: -1000.0 ~ 1000.0
+					"Late Autumn Modifier" = -3.0
+
+				[temperature.integration.serene-seasons.temperate.winter]
+					# Default: -7.0
+					# Range: -1000.0 ~ 1000.0
+					"Early Winter Modifier" = -7.0
+					# Default: -12.0
+					# Range: -1000.0 ~ 1000.0
+					"Mid Winter Modifier" = -12.0
+					# Default: -7.0
+					# Range: -1000.0 ~ 1000.0
+					"Late Winter Modifier" = -7.0
+
+			# Temperature modifiers per season in tropical biomes.
+			[temperature.integration.serene-seasons.tropical]
+
+				[temperature.integration.serene-seasons.tropical.wet-season]
+					# Default: -1.0
+					# Range: -1000.0 ~ 1000.0
+					"Early Wet Season Modifier" = -1.0
+					# Default: -5.0
+					# Range: -1000.0 ~ 1000.0
+					"Mid Wet Season Modifier" = -5.0
+					# Default: -1.0
+					# Range: -1000.0 ~ 1000.0
+					"Late Wet Season Modifier" = -1.0
+
+				[temperature.integration.serene-seasons.tropical.dry-season]
+					# Default: 3.0
+					# Range: -1000.0 ~ 1000.0
+					"Early Dry Season Modifier" = 3.0
+					# Default: 7.0
+					# Range: -1000.0 ~ 1000.0
+					"Mid Dry Season Modifier" = 7.0
+					# Default: 3.0
+					# Range: -1000.0 ~ 1000.0
+					"Late Dry Season Modifier" = 3.0
+
+		[temperature.integration.ecliptic-seasons]
+			# If Ecliptic Seasons is installed, whether the seasons have an effect on the player's temperature.
+			"Ecliptic Seasons Enabled" = true
+
+			# Temperature modifiers per season. Each season is subdivided in 6 sub seasons. The value is reached at the middle of the sub season, and smoothly transition from one to another.
+			[temperature.integration.ecliptic-seasons.temperature]
+				"Spring Modifier" = [-10.0, -7.0, -5.0, -3.0, -1.0, 0.0]
+				"Summer Modifier" = [1.0, 3.0, 5.0, 7.0, 9.0, 10.0]
+				"Autumn Modifier" = [9.0, 7.0, 5.0, 3.0, 1.0, 0.0]
+				"Winter Modifier" = [-1.0, -3.0, -5.0, -7.0, -10.0, -12.0]
+
+# Options related to thirst feature
+[thirst]
+	# If enabled, players will take damage from the complete dehydration.
+	"Dangerous Dehydration" = true
+	# If enabled, each time the player receives a thirst effect, its duration will be added to the thirst effect duration if already on the player.
+	"Cumulative Thirst Effect Duration" = true
+	# Scaling of the damages dealt when completely dehydrated. Each tick damage will be increased by this value.
+	# Default: 0.3
+	# Range: 0.0 ~ 1000.0
+	"Dehydration Damage Scaling" = 0.3
+	# How much thirst exhaustion will be added every 50 ticks when the player suffers from non amplified Thirst Effect.
+	# The player will suffer Thirst Effect from dirty water for example.
+	# Default: 0.25
+	# Range: 0.0 ~ 1000.0
+	"Thirst Effect Modifier" = 0.25
+
+	[thirst.exhaustion]
+		# Hydration exhausted every 10 ticks.
+		# Default: 0.03
+		# Range: 0.0 ~ 1000.0
+		"Base Hydration Exhaustion" = 0.03
+		# Hydration exhausted when sprinting, replacing the base hydration exhausted.
+		# Default: 0.1
+		# Range: 0.0 ~ 1000.0
+		"Sprinting Hydration Exhaustion" = 0.1
+		# Hydration exhausted on every jump.
+		# Default: 0.15
+		# Range: 0.0 ~ 1000.0
+		"On Jump Hydration Exhaustion" = 0.15
+		# Hydration exhausted on every block break.
+		# Default: 0.07
+		# Range: 0.0 ~ 1000.0
+		"On Block Break Hydration Exhaustion" = 0.07
+		# Hydration exhausted on every attack.
+		# Default: 0.3
+		# Range: 0.0 ~ 1000.0
+		"On Attack Hydration Exhaustion" = 0.3
+
+	[thirst.canteen]
+		# If enabled, the player can water himself by using the canteen while crouching.
+		# This will increase the player wetness and remove fire.
+		"Self Watering Canteen Enabled" = true
+		# If Self Watering Canteen and Wetness are enabled, defines how much wetness is added to the player.
+		# Set this value to 0 to have no wetness added. By default, the maximum wetness is 400.
+		# Default: 400
+		# Range: 0 ~ 10000
+		"Self Watering Canteen Wetness" = 400
+		# Capacity of the canteen used to store water.
+		# Default: 10
+		# Range: 0 ~ 1000
+		"Canteen Capacity" = 10
+		# Capacity of the large canteen used to store water.
+		# Default: 20
+		# Range: 0 ~ 1000
+		"Large Canteen Capacity" = 20
+		# Allow override of purified water stored in canteen with normal water.
+		"Allow Override Purified Water" = true
+
+	# Allows drinking from lava. Can be used as bauble.
+	[thirst.nether_chalice]
+		# Amount of hydration recovered when drinking from lava.
+		# Default: 6
+		# Range: 0 ~ 20
+		"Lava Hydration" = 6
+		# Amount of saturation recovered when drinking from lava.
+		# Default: 4.0
+		# Range: 0.0 ~ 20.0
+		"Lava Saturation" = 4.0
+
+	[thirst.juices]
+		# Whether the player retrieves a glass bottle after drinking a juice.
+		"Glass Bottle Loot After Drinking A Juice" = true
+
+			# Temperature won't increase while on fire
+			# Immune to wetness
+			# Can drink lava
+			[thirst.integration.origins.blazeborn]
+				# Amount of hydration recovered when drinking from lava.
+				# Default: 3
+				# Range: 0 ~ 20
+				"Lava Hydration For Blazeborn" = 3
+				# Amount of saturation recovered when drinking from lava.
+				# Default: 1.0
+				# Range: 0.0 ~ 20.0
+				"Lava Saturation For Blazeborn" = 1.0
+
+			# Thirst depletes slightly faster
+			[thirst.integration.origins.shulk]
+				# Amount of thirst exhaustion added every 20 ticks.
+				# Default: 0.1
+				# Range: 0.0 ~ 1000.0
+				"Extra Thirst Exhaustion For Shulk" = 0.1
+
+			# Thirst depletes slightly faster
+			[thirst.integration.origins.phantom]
+				# Amount of thirst exhaustion added every 20 ticks.
+				# Default: 0.1
+				# Range: 0.0 ~ 1000.0
+				"Extra Thirst Exhaustion For Phantom" = 0.1
+
+		[thirst.integration.vampirism]
+			# If Vampirism is installed and if thirst enabled while being a vampire, keep the thirst system in addition to the vampiric one.
+			# If disabled, the thirst system will be disabled for vampires.
+			"Thirst Enabled If Vampire" = false
+
+# Options related to health overhaul
+[health-overhaul]
+	# How much of Additional Health a player can accumulate. 2 Heath means a full heart.
+	# Default: 20.0
+	# Range: 0.0 ~ 10000.0
+	"Maximum Additional Health" = 20.0
+
+	[health-overhaul.shield-health]
+		# How much of Shield Health a player can accumulate. 2 Shield Heath means a full shield.
+		# Shield Health are lost when the player suffers damages and can't regenerate. Works similarly as the Minecraft Absorption.
+		# Default: 20.0
+		# Range: 1.0 ~ 10000.0
+		"Maximum Shield Health" = 20.0
+		# Override the absorption effect by a shield health increase of 2.
+		# The absorption is typically given by the Golden Apple.
+		"Absorption Effect Override" = true
+
+	[health-overhaul.heart-loss]
+		# The number of Hearts lost on death.
+		# Default: 0
+		# Range: 0 ~ 10000
+		"Hearts Lost On Death" = 0
+		# The number of Hearts below which player can't lose hearts upon death.
+		# The hearts below this limit are de facto Permanent Hearts.
+		# Default: 10
+		# Range: 1 ~ 10000
+		"Permanent Hearts" = 10
+
+	[health-overhaul.broken-hearts]
+		# Broken Hearts are an interaction with the localized body damage feature. Enables both feature to have it.
+		# Broken Hearts are lost hearts when a player's limb is severely injured and it can be recovered by healing the injured limb.
+		# The Resilient Hearts is the number of heart below which Broken Hearts can no longer be added.
+		# By default, the player has 2 resilient heart, meaning no matter the amount of broken hearts, the player won't go below 2 hearts.
+		# Default: 2
+		# Range: 1 ~ 10000
+		"Minimum Amount Of Player's Heart With Broken Hearts (Broken Heart Resilience)" = 2
+		# Amount of Broken Hearts added per limbs fully injured.
+		# Default: 0.1
+		# Range: 0.0 ~ 10000.0
+		"Added Broken Hearts Per Injured Limb" = 0.1
+		# How broken hearts inflicted per injured limbs are calculated. The total amount will be round down to have an integer amount of broken hearts.
+		# For example, if the amount per injured limb is 0.1 with mode Player Dynamic and the player has 3 limbs injured, the total amount is 3 * (0.1 * 20), 20 being the default player max health, so 6 broken hearts will be inflicted.
+		# Accepted values are as follows:
+		#   SIMPLE - The broken heart amount is a fixed value defined in Broken Hearts Per Injured Limb.
+		#   PLAYER_DYNAMIC - The broken heart amount is a percentage value of the player max health using the percentage value defined in Broken Hearts Per Injured Limb.
+		#   LIMB_DYNAMIC - The broken heart amount is a percentage value of the injured limb max health using the percentage value defined in Broken Hearts Per Injured Limb.
+		# Any other value will default to SIMPLE.
+		#Allowed Values: SIMPLE, PLAYER_DYNAMIC, LIMB_DYNAMIC
+		"Broken Hearts Per Injured Limb Mode" = "PLAYER_DYNAMIC"
+
+# Options related to localized body damage
+# The damageSourceBodyParts.json allows you to define for specific damage source, the damage spread across specified body parts.
+# The damage distribution can either be ONE_OF or ALL. ALL means the damage are equally divided across all body parts.
+[body-damage]
+	# Multiply the damage taken by the player when shot in the head without helmet.
+	# Default: 2.0
+	# Range: 1.0 ~ 1000.0
+	"Headshot Multiplier" = 2.0
+	# How much of the hurt player's damage is assigned to the body parts.
+	# Default: 1.0
+	# Range: 0.0 ~ 1000.0
+	"Body Damage Multiplier" = 1.0
+	# How much health ratio are recovered in all body parts from bed sleeping.
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	"Body Part Health Ratio Recovered" = 1.0
+	# How much health ratio are recovered from bed sleeping.
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	"Health Ratio Recovered" = 1.0
+	# How much food is exhausted when a limb regenerates based on the amount of health regenerated.
+	# For each 1 health regenerated, the food is exhausted by this value.
+	# Default: 0.5
+	# Range: 0.0 ~ 1000.0
+	"Body Healing Food Exhaustion" = 0.5
+	# The hunger bar won't drop below this value while body is healing.
+	# Each hunger icon has a value of 2 in the hunger bar.
+	# Default: 0
+	# Range: 0 ~ 1000
+	"Minimum Food On Body Healing" = 0
+	# How long in ticks is the Addiction Effect lasting. 0 deactivates the feature.
+	# The Addiction Effect prevents you from re-using the morphine item.
+	# Default: 3600
+	# Range: 0 ~ 100000
+	"Painkiller Addiction Duration" = 3600
+
+		[body-damage.healing-limbs.passive-regeneration]
+			# The limbs will be healed when the player is at max health.
+			" Passive Limb Regeneration On Full Health" = false
+			# The limbs will be healed when the player is under one of the mentioned effect, the most damaged limb first.
+			"Passive Limb Regeneration On Effects" = ["minecraft:regeneration"]
+			# Whether the amplification of the effect increase the limb regeneration speed.
+			# The speed increase follows the same logic as the Regeneration Effect Amplification :
+			#    Amplifier 1 -> tick timer /2, Amplifier 2 -> tick timer /4, ...
+			"Passive Limb Regeneration Amplification Enabled" = true
+			# Amount of limb health regenerated, the most damaged limb first.
+			# Default: 0.01
+			# Range: 0.0 ~ 1000.0
+			"Passive Limb Health Regenerated" = 0.01
+			# How fast in ticks the limbs regenerate passively. 20 ticks = 1s
+			# Default: 200
+			# Range: 0 ~ 10000
+			"Passive Limb Regeneration Tick Timer" = 200
+
+		# The First Aid Supplies overrides the passive limb regeneration as its effects is meant to be stronger.
+		[body-damage.healing-limbs.first-aid-supplies]
+			# The First Aid Supplies regenerate limb health passively, either by holding it or using Curios mod, the most damaged limb first.
+			# Default: 0.01
+			# Range: 0.0 ~ 1000.0
+			"First Aid Supplies Limb Health Regenerated" = 0.01
+			# How a player's limb health regenerated is defined. Accepted values are as follows:
+			#   SIMPLE - The limb health regenerated is a fixed value defined in First Aid Supplies Limb Health Regenerated.
+			#   PLAYER_DYNAMIC - The limb health regenerated is a percentage value of the player max health using the percentage value defined in First Aid Supplies Limb Health Regenerated.
+			#   LIMB_DYNAMIC - The limb health regenerated is a percentage value of the limb max health using the percentage value defined in First Aid Supplies Limb Health Regenerated.
+			# Any other value will default to SIMPLE.
+			#Allowed Values: SIMPLE, PLAYER_DYNAMIC, LIMB_DYNAMIC
+			"First Aid Supplies Limb Regeneration Mode" = "PLAYER_DYNAMIC"
+			# Whether the exceeded limb health regenerated will heal the next most damaged limb.
+			# Only available for Regeneration Mode SIMPLE or PLAYER_DYNAMIC.
+			"First Aid Supplies Healing Overflow" = true
+			# How fast in ticks the First Aid Supplies will heal limbs. 20 ticks = 1s
+			# Default: 100
+			# Range: 0 ~ 10000
+			"First Aid Supplies Tick Timer" = 100
+			# Whether the First Aid Supplies exhaust food when healing limbs, such as the other healing items.
+			"First Aid Supplies Exhausts Food" = true
+			# The First Aid Supplies will heal limbs faster when the player is under one of the mentioned effect.
+			"First Aid Supplies Boosted On Effects" = ["minecraft:regeneration", "farmersdelight:comfort"]
+			# How much the First Aid Supplies tick timer is multiplied when boosted. 
+			# A value of 1 would deactivate the speed boost. 0.5 makes the heal twice faster.
+			# Default: 0.5
+			# Range: 0.1 ~ 1.0
+			"First Aid Supplies Tick Timer Multiplier" = 0.5
+
+		[body-damage.healing-limbs.healing-items]
+			# Amount of player health regenerated by the Recovery Effect every effect tick.
+			# For comparison, the Regeneration Effect healing amount is 1.
+			# Default: 0.1
+			# Range: 0.0 ~ 1000.0
+			"Recovery Effect Healing Amount" = 0.1
+			# Item use time in ticks.
+			# Default: 20
+			# Range: 0 ~ 1000
+			"Healing Herbs Use Time" = 20
+			# Item use time in ticks.
+			# Default: 20
+			# Range: 0 ~ 1000
+			"Plaster Use Time" = 20
+			# Item use time in ticks.
+			# Default: 30
+			# Range: 0 ~ 1000
+			"Bandage Use Time" = 30
+			# Item use time in ticks.
+			# Default: 50
+			# Range: 0 ~ 1000
+			"Tonic Use Time" = 50
+			# Item use time in ticks.
+			# Default: 50
+			# Range: 0 ~ 1000
+			"Medkit Use Time" = 50
+
+		[body-damage.healing-limbs.morphine]
+			# Item use time in ticks.
+			# Default: 30
+			# Range: 0 ~ 1000
+			"Morphine Use Time" = 30
+			# Painkiller effect duration in ticks. This effect prevents the player to be affected by broken limbs effects.
+			# Default: 1800
+			# Range: 0 ~ 10000
+			"Morphine Painkiller Duration" = 1800
+
+	[body-damage.body-parts-health]
+		# How a player's body part health is determined. Accepted values are as follows:
+		#   SIMPLE - Body parts will have initial fixed values. The body parts health define the health value.
+		#       In this case, if the 'headPartHeath = 10', the head will have '10' health.
+		#   DYNAMIC - Body parts will have dynamic values based on the player's max health. In this case, the body parts health is a multiplier of the player's max health.
+		#       In this case, if the 'headPartHeath = 0.3', the head will have '0.3' * 'player max health' health.
+		# Any other value will default to SIMPLE.
+		#Allowed Values: SIMPLE, DYNAMIC
+		"Body Part Health Mode" = "DYNAMIC"
+		# Default: 0.4
+		# Range: 0.0 ~ 1000.0
+		"Head Part Health" = 0.4
+		# Both arms will have this health.
+		# Default: 0.4
+		# Range: 0.0 ~ 1000.0
+		"Arms Part Health" = 0.4
+		# Default: 0.6
+		# Range: 0.0 ~ 1000.0
+		"Chest Part Health" = 0.6
+		# Both legs will have this health.
+		# Default: 0.6
+		# Range: 0.0 ~ 1000.0
+		"Legs Part Health" = 0.6
+		# Both feet will have this health.
+		# Default: 0.4
+		# Range: 0.0 ~ 1000.0
+		"Feet Part Health" = 0.4
+
+		# Each effect, threshold and amplifier lists must have the same number of items.
+		# The first effect will be triggered with the first amplifier value when the first threshold is reach.
+		[body-damage.body-parts-effects.head]
+			# The list of effects that will be triggered when the head is damaged by the percentage of remaining head health defined in the thresholds.
+			"Head Part Effects" = ["legendarysurvivaloverhaul:headache"]
+			# The list of amplifiers the effect will have.
+			# 0 means the basic effect, 1 means the effect is amplified once.
+			"Head Part Effect Amplifiers" = [0]
+			# The list of thresholds for which each effect will be triggered. A threshold is a percentage of remaining head health.
+			# 0 means the head is fully damaged.
+			"Head Part Effect Thresholds" = [0.2]
+
+		[body-damage.body-parts-effects.arms]
+			"Arms Part Effects" = ["minecraft:mining_fatigue"]
+			"Arms Part Effect Amplifiers" = [0]
+			"Arms Part Effect Thresholds" = [0.2]
+			# These effects will be triggered when both arms reach the thresholds.
+			# If a same effect is used with a higher amplifier, the higher prevails (normal Minecraft behaviour).
+			"Both Arms Part Effects" = ["minecraft:weakness"]
+			"Both Arms Part Effect Amplifiers" = [0]
+			"Both Arms Part Effect Thresholds" = [0.2]
+
+		[body-damage.body-parts-effects.chest]
+			"Chest Part Effects" = ["legendarysurvivaloverhaul:vulnerability"]
+			"Chest Part Effect Amplifier" = [0]
+			"Chest Part Effect Thresholds" = [0.2]
+
+		[body-damage.body-parts-effects.legs]
+			"Legs Part Effects" = ["legendarysurvivaloverhaul:hard_falling"]
+			"Legs Part Effect Amplifiers" = [0]
+			"Legs Part Effect Thresholds" = [0.2]
+			"Both Legs Part Effects" = ["legendarysurvivaloverhaul:hard_falling"]
+			"Both Legs Part Effect Amplifiers" = [1]
+			"Both Legs Part Effect Thresholds" = [0.2]
+
+		[body-damage.body-parts-effects.feet]
+			"Feet Part Effects" = ["minecraft:slowness"]
+			"Feet Part Effect Amplifiers" = [0]
+			"Feet Part Effect Thresholds" = [0.2]
+			"Both Feet Part Effects" = ["minecraft:slowness"]
+			"Both Feet Part Effect Amplifiers" = [1]
+			"Both Feet Part Effect Thresholds" = [0.2]
+
+		[body-damage.integration.meds_and_herbs]
+			# Painkiller Addiction effect prevents the abusive usage of Painkiller effect that prevents all negative effects from limbs.
+			# Syringe Morphine share the same configuration as Morphine item
+			"Syringe Morphine Apply Painkiller Addiction" = true

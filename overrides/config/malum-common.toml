@@ -1,0 +1,49 @@
+[staff_charge]
+	#Base time in ticks it takes for one segment of a staff charge to recover.
+	staffChargeRate = 100
+
+[soul_ward]
+	#Multiplier for physical damage taken while soul ward is active.
+	# Default: 0.699999988079071
+	# Range: 0.0 ~ 1.0
+	soulWardPhysical = 0.699999988079071
+	#Multiplier for magic damage taken while soul ward is active.
+	# Default: 0.10000000149011612
+	# Range: 0.0 ~ 1.0
+	soulWardMagic = 0.10000000149011612
+	#Base time in ticks it takes for one point of soul ward to recover.
+	soulWardRate = 100
+
+[malignant_aegis]
+	#Base time in ticks it takes for one point of malignant aegis to recover.
+	malignantAegisRate = 200
+
+[spirit]
+	#If set to true, any spirits dropped will simply take the form of an item.
+	noFancySpirits = false
+
+	[spirit.spawner]
+		#If set to true, mob spawners will create soulless mobs instead.
+		lameSpawners = false
+
+	[spirit.defaults]
+		#Whether entities without spirit jsons will use the default spirit data for their category.
+		defaultSpiritValues = true
+
+	[compat.irons_spellbooks]
+		#Should Iron's Spellbooks' magic damage count as Soul Damage?
+		ironsSpellbooksPlayerSpiritDrops = true
+		#Should Iron's Spellbooks' magic damage when dealt by non-players count as Soul Damage
+		ironsSpellbooksNonPlayerSpiritDrops = true
+
+[progression]
+	#If set to true, malum will hide some of it's content related to a certain feature. This is the intended way to play the mod.
+	hide_recipes = true
+
+[codex]
+	#If set to true, one of the first undead enemies a player slays will drop the encyclopedia arcana.
+	enableCodexDrop = true
+
+[magic_damage]
+	#If set to true, damage types tagged under malum:bypasses_half_armor will pierce only half of the player's armor stat, as opposed to piercing it entirely. In addition, armor will not take durability damage.
+	magicDamageReducedArmorPiercing = true

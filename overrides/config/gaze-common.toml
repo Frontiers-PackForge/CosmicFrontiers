@@ -1,0 +1,22 @@
+#Whether to disable Gaze rites entirely.
+disableGazeRites = false
+#Whether to allow Villagers to drop Umbral Spirits on a multiplayer server. Singleplayer is always allowed.
+doVillagerUmbralsOnServer = true
+#List of entity IDs (e.g., 'minecraft:villager') that can drop Umbral Spirits when killed with a Veil Dagger. Players are always on this list.
+umbralDropEntities = ["minecraft:villager"]
+#Chance (0.0 to 1.0) for configured entities to drop Umbral Spirits when killed with a Veil Dagger. It's always 100% for players.
+# Default: 0.1
+# Range: 0.0 ~ 1.0
+umbralDropChance = 0.1
+#How much Soul Ward Integrity for a single Armour Toughness point
+# Default: 5.0
+# Range: 1.0 ~ 10.0
+integrityRatio = 5.0
+#List of healing-related attribute IDs that should convert into Soul Ward Recovery Rate if present. Example: ['apothic_attributes:healing_received','othermod:attr_name'] (Options other than apotic haven't been tested)
+healingConversionAttributes = ["apothic_attributes:healing_received"]
+#If mobs holding Veil's Edge (e.g Zombies) can trigger umbral drops from configured mobs or players
+farmUmbrals = true
+#Whether to do fancy particles for the Gaze addon (this is NOT currently a client-side option)
+fancyParticles = true
+#Bestiary entries require kills to be visible (requires statistics to be opened to reveal entries)
+bestiary = true

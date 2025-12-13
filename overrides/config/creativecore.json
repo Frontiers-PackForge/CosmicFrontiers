@@ -1,0 +1,19 @@
+{
+  "usergroups": {
+    "creative": {
+      "filters": [
+        "{id:\"mode\",mode:1}"
+      ]
+    },
+    "survival": {
+      "filters": [
+        "{id:\"mode\",mode:0}"
+      ]
+    },
+    "adventure": {
+      "filters": [
+        "{id:\"mode\",mode:2}"
+      ]
+    }
+  }
+}

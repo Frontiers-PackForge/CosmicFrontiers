@@ -1,0 +1,13 @@
+{
+	// This value determines the size of a bee. By default 0.25, which means they are 1/4th of their vanilla size. Set to 1.0 to disable the different bee size feature.
+	// min: 0.01, max: 5.0
+	"beeSizeModifier": 0.25,
+	// In order to make bees a little more common. Whenever a bee naturally spawns, the mod spawns an additional 'extraBeeSpawnsPerBee' bees.
+	// min: 0, max: 50
+	"extraBeeSpawnsPerBee": 9,
+	// How many bees should be able to enter the hive in total. Minecraft's default is 3, but bees are a lot smaller so there should be more space.
+	// min: 0, max: 50
+	"beeHiveBeeSpace": 20,
+	// The smaller (baby) bees can sometimes do something unexpected with their AI and get suffocation damage. Preventing this damage fixes them disappearing.
+	"preventBeeSuffocationDamage": true
+}

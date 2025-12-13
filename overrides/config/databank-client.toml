@@ -1,0 +1,15 @@
+[compatibility]
+	#Should the alternate method for block/item coloring be forcibly enabled? This is normally only applied for sodium and embeddium, Do not change unless there are problems
+	forceAlternateHiddenColors = false
+	#Should the alternate method for reloading chunks when hidden blocks are updated be forcibly enabled? This is normally only applied for sodium and embeddium, Do not change unless there are problems
+	forceAlternateChunkReload = false
+
+[accessibility]
+	#screenshakeMultiplier
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	screenshakeMultiplier = 1.0
+	#Should impact visuals be allowed?
+	allowImpactVisuals = true
+	#Should impact visuals be allowed to flash?
+	allowFlashOnImpactVisuals = true

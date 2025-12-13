@@ -1,0 +1,84 @@
+	[darksteel.darksteelaxe]
+		energyUsePerFelledLog = 500
+
+	[darksteel.darksteelpickaxe]
+		obsidianBreakPowerUse = 50
+		speedBoostWhenObsidian = 50
+		useObsidianBreakSpeedAtHardness = 30
+
+	[darksteel.darksteelsword]
+		modHeadChance_l1 = 0.07
+		modHeadChance_l2 = 0.09
+		modHeadChance_l3 = 0.11
+		modHeadChance_l4 = 0.13
+		attackDamageIncrease_l1 = 1
+		attackDamageIncrease_l2 = 2
+		attackDamageIncrease_l3 = 3
+		attackDamageIncrease_l4 = 4
+		attackSpeedIncrease_l1 = 0.4
+		attackSpeedIncrease_l2 = 0.45
+		attackSpeedIncrease_l3 = 0.5
+		attackSpeedIncrease_l4 = 0.55
+
+	[darksteel.upgrades]
+		spoonActivationCost = 4
+		forkActivationCost = 4
+		directActivationCost = 8
+		travelActivationCost = 12
+		stepAssistActivationCost = 4
+		gliderActivationCost = 4
+		elytraActivationCost = 10
+
+		[darksteel.upgrades.empowered]
+			efficiencyBoost = 2
+			energyUsePerDamagePoint = 750
+			activationCost_l1 = 4
+			damageAbsorptionChance_l1 = 0.5
+			maxEnergy_l1 = 100000
+			activationCost_l2 = 8
+			damageAbsorptionChance_l2 = 0.6
+			maxEnergy_l2 = 150000
+			activationCost_l3 = 12
+			damageAbsorptionChance_l3 = 0.7
+			maxEnergy_l3 = 250000
+			activationCost_l4 = 16
+			damageAbsorptionChance_l4 = 0.85
+			maxEnergy_l4 = 1000000
+
+		[darksteel.upgrades.explosive]
+			explosiveEnergyPerBlock = 30
+			explosiveActivationCost_l1 = 8
+			explosive_range_l1 = 1
+			explosiveActivationCost_l2 = 12
+			explosive_range_l2 = 2
+
+		[darksteel.upgrades.explosivePenetration]
+			explosivePenetrationActivationCost_l1 = 8
+			explosivePenetration_l1 = 1
+			explosivePenetrationActivationCost_l2 = 12
+			explosivePenetration_l2 = 2
+
+		[darksteel.upgrades.nightVision]
+			nightVisionActivationCost = 4
+			nightVisionEnergyUse = 2
+
+		[darksteel.upgrades.solar]
+			solarActivationCost_l1 = 4
+			solarActivationCost_l2 = 8
+			solarActivationCost_l3 = 16
+
+		[darksteel.upgrades.speed]
+			speedEnergyUsePerUnitMoved = 20
+			speedActivationCost_l1 = 4
+			speedBoost_l1 = 0.15
+			speedActivationCost_l2 = 6
+			speedBoost_l2 = 0.3
+			speedActivationCost_l3 = 8
+			speedBoost_l3 = 0.45
+
+		[darksteel.upgrades.jump]
+			jumpEnergyUsePerUnitMoved = 100
+			jumpCount_l1 = 2
+			jumpActivationCost_l1 = 6
+			jumpCount_l2 = 3
+			jumpActivationCost_l2 = 8

@@ -1,0 +1,28 @@
+#Enable or disable the passive bonus of the foci
+["Elemental Spell Foci - Abilities"]
+	#Adjust this value to define how much the matching spell cost gets discounted by the greater focus
+	# Default: 0.25
+	# Range: 0.0 ~ 0.99
+	elemental_maj_focus_discount = 0.25
+	#Enable regen bonus under special conditions
+	regen_bonus = true
+
+#Adjust these values to balance how much a spell gets amplified by the matching spell focus, doubled for major foci.
+["Elemental Spell Foci - Amplify"]
+	tempest_focus_buff = 1.0
+	silt_focus_buff = 1.0
+	vapor_focus_buff = 1.0
+	mire_focus_buff = 1.0
+	fire_focus_buff = 1.0
+	cinder_focus_buff = 1.0
+
+	#Adjust Elemental Armor Mana Buffs
+	["Elemental Spell Foci - Amplify"."Elemental Armors"]
+		#Max mana bonus for each elemental armor piece
+		# Default: 100
+		# Range: 0 ~ 10000
+		armorMaxMana = 100
+		#Mana regen bonus for each elemental armor piece
+		# Default: 4
+		# Range: 0 ~ 100
+		armorManaRegen = 4

@@ -1,0 +1,4 @@
+#Potions effect stink lines transparency in first person
+# Default: 0.2
+# Range: 0.0 ~ 1.0
+positonEffectTransparency = 0.2

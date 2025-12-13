@@ -1,0 +1,27 @@
+[loot]
+	# Default: 0
+	# Range: -100 ~ 100
+	skill_book_mob_drop_chance_modifier = 0
+	# Default: 0
+	# Range: -100 ~ 100
+	skill_book_chest_drop_chance_modifier = 0
+
+[default_gamerule]
+	globalStun = true
+	keepSkills = true
+	hasFallAnimation = true
+	disapleEntityUI = false
+	canSwitchPlayerMode = true
+	stiffComboAttacks = true
+	noMobsInBossfight = true
+	#0 = vanilla, 1 = epicfight
+	# Default: 1
+	# Range: 0 ~ 1
+	initialMode = 1
+	# Default: 100
+	# Range: 0 ~ 100
+	weightPenalty = 100
+	epicDrop = false
+	# Default: 6000
+	# Range: > 0
+	skillReplaceCooldown = 6000

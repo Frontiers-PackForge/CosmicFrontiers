@@ -1,0 +1,3 @@
+#.
+#If Deployer held items in #create:handheld_in_deployer_use should have custom transform at Use mode
+renderDeployerUsingItemWithCustomTransform = true

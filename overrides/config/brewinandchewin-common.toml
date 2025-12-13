@@ -1,0 +1,43 @@
+#At what amplifier of Tipsy should the chat scramble?
+#Default: 3
+levelChatScramble = 3
+#At what amplifier of Tipsy should signs scramble?
+#Default: 3
+levelSignScramble = 3
+#At what amplifier of Tipsy should nametags scramble?
+#Default: 3
+levelNameScramble = 3
+
+[keg]
+	#Which unit the capacity field should use.
+	#Should be 'liters', 'millibuckets' or 'droplets'
+	#1 L = 1 mB = 81 d
+	#Default: millibuckets
+	kegCapacityUnit = "millibuckets"
+	#How much fluid (unit specified by capacityUnit) can the Keg hold?
+	#Range: 1 ~ 10000
+	#Default: 1000(millibuckets)
+	kegCapacity = 1000
+	#How many cold blocks are required for a cold temperature in the Keg?
+	#Default: 2
+	kegCold = 2
+	#How many cold blocks are required for a chilly temperature in the Keg?
+	#Default: 1
+	kegChilly = 1
+	#How many hot blocks are required for a warm temperature in the Keg?
+	#Default: 1
+	kegWarm = 1
+	#How many hot blocks are required for a hot temperature in the Keg?
+	#Default: 2
+	kegHot = 2
+	#Should the biome temperature influence the temperature in the Keg?
+	#Default: true
+	kegBiomeTemp = true
+	#Should the dimension temperature influence the temperature in the Keg?
+	#Default: true
+	kegDimTemp = true
+
+[recipe_book]
+	#Should the Keg have a Recipe Book available on its interface?
+	#Default: true
+	enableRecipeBookKeg = true

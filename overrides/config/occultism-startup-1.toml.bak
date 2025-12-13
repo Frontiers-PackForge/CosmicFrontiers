@@ -1,0 +1,12 @@
+
+#Ritual Settings
+[rituals]
+	#By default spirit names are generated randomly. This list can be used as an additional source of spirit names, or even a full replacement, depending on the configuration of "usePossibleSpiritNamesChance".
+	possibleSpiritNames = []
+	#0.0 (default) to only use random names.
+	#1.0 to only use the names in "possibleSpiritNames"
+	#0.1-0.9 to use a mix of both, the higher the value the higher the chance of using a name from this list instead of a random name.
+	#Will be ignored if "possibleSpiritNames" is empty.
+	#Range: 0.0 ~ 1.0
+	usePossibleSpiritNamesChance = 0.0
+

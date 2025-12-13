@@ -1,0 +1,71 @@
+# Don't change this! Version used to track needed updates.
+version = 0
+disabledPowers = [  ]
+
+[activeDefence]
+frequency = 20
+radius = 5.0
+
+[floating]
+chance = 15
+duration = 50
+
+[freeze]
+chance = 15
+duration = 120
+
+[frostWard]
+frequency = 20
+radius = 5.0
+duration = 60
+
+[imbued]
+chance = 15
+
+[momentum]
+cooldown = 140
+
+[shielding]
+chance = 15
+duration = 120
+
+[slow]
+chance = 50
+duration = 50
+
+[stoneskin]
+chance = 15
+duration = 60
+
+[swiftness]
+chance = 15
+duration = 300
+
+[trailblaze]
+chance = 15
+duration = 120
+
+[unstable]
+frequency = 140
+duration = 140
+
+[weaken]
+chance = 15
+duration = 120
+
+[wildfire]
+chance = 10
+duration = 180
+radius = 10.0
+
+[zephyr]
+chance = 15
+duration = 180
+
+[simplySkills]
+preciseChance = 30
+mightyChance = 30
+stealthyChance = 30
+renewedChance = 30
+leapingChance = 65
+spellshieldChance = 15

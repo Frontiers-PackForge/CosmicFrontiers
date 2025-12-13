@@ -1,0 +1,2 @@
+#A priority list of Mod IDs that results for recipe tag output should stem from, aka which mod you want the resource to come from.
+modPreference = ["productivebees", "productivetrees", "alltheores", "ato", "thermal", "tconstruct", "create", "immersiveengineering", "mekanism", "enderio", "silents_mechanisms"]

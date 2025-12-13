@@ -1,0 +1,5 @@
+
+[general]
+	#Apply a fancy glitch effect on projector mode renders. Reload resources to apply change.
+	enableProjectorModeGlitch = true
+

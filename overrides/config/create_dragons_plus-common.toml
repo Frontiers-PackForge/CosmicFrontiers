@@ -1,0 +1,49 @@
+#.
+#Enable/Disable features of Create: Dragons Plus
+#Mods depending on certain features may forcibly enable/disable them, in that case, the corresponding config will be ignored
+#[@cui:RequiresReload:both]
+[features]
+
+	#.
+	#.
+	#Fluid Feature Elements
+	[features.fluid]
+		#.
+		#If Dye Fluids should be enabled
+		"fluid/dye" = true
+		#.
+		#If Dragon's Breath Fluid should be enabled
+		"fluid/dragon_breath" = true
+		#.
+		#If colored concrete should be generated when Fye Fluid meets Lava
+		"fluid/dye/lava_interaction_generate_colored_concrete" = true
+
+	#.
+	#Block Feature Elements
+	[features.block]
+		#.
+		#If Fluid Hatch should be enabled
+		"block/fluid_hatch" = true
+
+	#.
+	#Item Feature Elements
+	[features.item]
+		#.
+		#If Blaze Upgrade Smithing Template should be enabled
+		"item/blaze_upgrade_smithing_template" = false
+
+	#.
+	#Recipe Feature Elements
+	[features.recipe]
+		#.
+		#If Automated Brewing Recipes for Dragon's Breath Fluid should be generated
+		"recipe/automatic_brewing/dragon_breath" = true
+		#.
+		#If Sand Paper Polishing Recipes for Polished Blocks should be generated
+		"recipe/sand_paper_polishing/polished_blocks" = true
+		#.
+		#If Sand Paper Polishing Recipes for Oxidized Blocks should be generated
+		"recipe/sand_paper_polishing/oxidized_blocks" = true
+		#.
+		#If Sand Paper Polishing Recipes for Waxed Blocks should be generated
+		"recipe/sand_paper_polishing/waxed_blocks" = true

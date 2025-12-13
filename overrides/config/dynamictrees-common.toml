@@ -1,0 +1,36 @@
+#Vanilla Trees Settings
+[vanilla]
+	#Right clicking with a vanilla sapling places a dynamic sapling instead.
+	replaceVanillaSaplings = false
+	#Crimson Fungus and Warped Fungus that sprout from nylium will be dynamic instead.
+	replaceNyliumFungi = true
+	#If enabled, cancels the non-dynamic trees that spawn with vanilla villages.
+	cancelVanillaVillageTrees = true
+	#The maximum number of leaves blocks that will fling particles when a falling tree crashes into the ground. Higher values might have a performance impact.
+	# Default: 400
+	# Range: 0 ~ 4096
+	maxFallingTreeLeavesParticles = 400
+
+#Miscellaneous Settings
+[misc]
+	#If enabled, dirt bucket recipes will be automatically generated.
+	generateDirtBucketRecipes = true
+	#If enabled, seeds for mega species can be crafted with four regular seeds.
+	generateMegaSeedRecipe = false
+	#The base potion the Biochar Base is brewed from. Minecraft potions use 'awkward'. If you change this, don't forget to update the patchouli manual page too.
+	biocharBrewingBase = "minecraft:thick"
+
+#Mod Integration Settings
+[integration]
+	#The mod ID of preferred season mod. If a season provider for this mod ID is present, it will be used for integration with seasons. Set this to "!" to disable integration or "*" to accept the any integration (the first available).
+	preferredSeasonMod = "*"
+	#If enabled, seed drop rates will be multiplied based on the current season (requires serene seasons).
+	enableSeasonalSeedDropFactor = true
+	#If enabled, growth rates will be multiplied based on the current season (requires serene seasons).
+	enableSeasonalGrowthFactor = true
+	#If enabled, fruit production rates will be multiplied based on the current season (requires serene seasons).
+	enableSeasonalFruitProductionFactor = true
+	#The seasonal offset of the wet season relative to summer. Tropical and arid climates use wet/dry seasons instead of regular summer/fall/winter/spring seasons. Tree growth and fruit production usually peak during the wet season. If set to 0.0 the wet season happens at the same time as summer. The default of 2.5 means it happens between fall and winter.
+	# Default: 2.5
+	# Range: 0.0 ~ 4.0
+	wetSeasonOffset = 2.5

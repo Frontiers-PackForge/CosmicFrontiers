@@ -1,0 +1,12 @@
+# Don't change this! Version used to track needed updates.
+version = 0
+enableWeaponImpactSounds = true
+weaponImpactSoundsVolume = 0.3
+enableWeaponFootfalls = true
+enablePassiveParticles = true
+enableUniqueGemSockets = true
+enableTooltipInfoButtons = true
+tooltipInfoButtonsRequireInventoryScreen = true
+containedRemnantTransformFrequency = 18000
+compatGobberEndWeaponsUnbreakable = true
+compatEnableSpellPowerScaling = true

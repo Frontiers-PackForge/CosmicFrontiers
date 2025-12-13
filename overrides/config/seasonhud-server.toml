@@ -1,0 +1,12 @@
+[Season]
+	#Require the calendar item to be in the players inventory to show the HUD?
+	#(true/false)
+	#Default is false.
+	need_calendar = false
+	#Having the calendar item shows the detailed version of the HUDDefault is false.
+	calendar_detail = false
+	#Change if you are using a Minecraft day length other than vanilla value and using Fabric Seasons.
+	#Default Minecraft day is 24000.
+	# Default: 24000
+	# Range: > 0
+	day_length = 24000

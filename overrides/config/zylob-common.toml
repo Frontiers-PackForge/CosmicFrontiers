@@ -1,0 +1,16 @@
+["EpicFight Sword Light Modifications"]
+	modSwitch = true
+	darkRendering = true
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	opacity = 1.0
+	# Default: 2.0
+	# Range: 1.0 ~ 2.0
+	colorEn = 2.0
+	# Default: 255.0
+	# Range: 0.0 ~ 255.0
+	textureLight = 255.0
+	extraLightSwitch = false
+	# Default: 1.0
+	# Range: 1.0 ~ 20.0
+	ExtraLight = 1.0

@@ -1,0 +1,8 @@
+{
+  "showServerPlayTime": false,
+  "serverPlayTimePosition": "after_name",
+  "serverPlayTimeColor": "(128, 128, 128, 255)",
+  "showWorldPlayTime": true,
+  "worldPlayTimePosition": "top_right",
+  "worldPlayTimeColor": "(128, 128, 128, 255)"
+}

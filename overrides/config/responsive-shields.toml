@@ -1,0 +1,9 @@
+#The amount of time, in ticks, before a shield will block
+#Setting to 5 is the same as vanilla.
+#Setting to 0 makes shields capable of blocking instantly.
+#The shield's 'Block' animation takes roughly 1 tick to complete, so setting to 1 is a good balance to prevent block-hitting.
+# Default: 0
+# Range: > 0
+raiseTime = 0
+#Whether or not the mods effect is enabled.
+enabled = true

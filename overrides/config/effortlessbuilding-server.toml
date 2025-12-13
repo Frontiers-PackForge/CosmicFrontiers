@@ -1,0 +1,17 @@
+[Validation]
+	#Allow use of the mod for players that are in survival mode. Otherwise, only creative mode players can use the mod.
+	allowInSurvival = true
+	#Use a whitelist to determine which players can use the mod. If false, all players can use the mod.
+	useWhitelist = false
+	#List of player names that can use the mod.
+	whitelist = ["Player1", "Player2"]
+	#Maximum number of blocks that can be placed at once. This is a last check. If you want the player to receive visual feedback instead of an error message, change values in the common config.
+	# Default: 10000
+	# Range: 1 ~ 100000
+	maxBlocksPlacedAtOnce = 10000
+
+[Memory]
+	#How many sets of blocks are remembered for the undo functionality, per player.
+	# Default: 50
+	# Range: 10 ~ 200
+	undoStackSize = 50

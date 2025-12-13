@@ -1,0 +1,10 @@
+#.
+#The vision range through Dye Fluids will be multiplied by this factor
+# Default: 1.0
+# Range: 1.0 ~ 256.0
+dyeVisionMultiplier = 1.0
+#.
+#The vision range through Dragon's Breath Fluid will be multiplied by this factor
+# Default: 1.0
+# Range: 1.0 ~ 256.0
+dragonBreathVisionMultiplier = 1.0

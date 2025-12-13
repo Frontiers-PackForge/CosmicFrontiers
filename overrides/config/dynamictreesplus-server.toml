@@ -1,0 +1,8 @@
+#Cactus Settings
+[cactus]
+	#If enabled bone meal can be used to speed up cactus growth.
+	canBoneMealCactus = false
+	#If enabled dynamic cacti will only prickle when moving (similar to how berry bushes prickle)
+	cactusPrickleOnMoveOnly = true
+	#If enabled dynamic cacti will destroy items on contact
+	cactusKillItems = false

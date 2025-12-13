@@ -1,0 +1,6 @@
+#If true, the general damage bonuses from Irons Spellbooks will be added to Ars Nouveau spells.
+IronsDamageBonusMerge = false
+#Scaling factor for school-specific damage bonuses from Irons Spellbooks when applied to Ars Nouveau spells.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+IronsDamageBonusScaling = 1.0

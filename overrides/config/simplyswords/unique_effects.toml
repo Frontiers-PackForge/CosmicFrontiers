@@ -1,0 +1,265 @@
+# Don't change this! Version used to track needed updates.
+version = 0
+abilityAbsorptionCap = 20.0
+
+[harbinger]
+chance = 15
+cooldown = 700
+damage = 3.0
+spellScaling = 1.2
+
+[arcanethyst]
+chance = 25
+cooldown = 220
+damage = 1.0
+duration = 120
+radius = 6
+spellScaling = 1.4
+
+[caelestis]
+chance = 5
+cooldown = 420
+damageMax = 300.0
+damageModifier = 1.0
+duration = 100
+
+[bramblethorn]
+chance = 45
+
+[brimstone_claymore]
+chance = 15
+
+[stars_edge]
+cooldown = 120
+duration = 120
+damageModifier = 0.4
+lifestealModifier = 0.1
+stacks = 6
+
+[emberblade]
+chance = 30
+duration = 150
+
+[flamewind]
+cooldown = 980
+damage = 5.0
+spellScaling = 0.4
+detonationDamage = 15.0
+maxHaste = 10
+spreadCap = 6
+
+[enigma]
+enigmaCooldown = 800
+enigmaChaseRadius = 16.0
+enigmaDecayRate = 2
+
+[whisperwind]
+chance = 15
+cooldown = 175
+maxStacks = 99
+radius = 3
+dashVelocity = 3.0
+
+[twisted_blade]
+chance = 75
+duration = 100
+maxStacks = 15
+strengthTier = 2
+
+[wickpiercer]
+damage = 1.0
+duration = 80
+
+[frostfall]
+chance = 25
+cooldown = 3
+damage = 11.0
+pulseDamage = 11.0
+duration = 80
+radius = 8.0
+spellScaling = 1.4
+
+[livyatan]
+returnDamage = 8.0
+damage = 8.0
+duration = 100
+radius = 0.5
+spellScaling = 1.7
+
+[hiveheart]
+cooldown = 60
+damage = 1.1
+duration = 450
+
+[magiblade]
+cooldown = 35
+damageModifier = 0.7
+repelChance = 55
+repelRadius = 4.0
+sonicDistance = 16.0
+
+[magispear]
+cooldown = 20
+damageModifier = 2.0
+radius = 4.0
+magicChance = 35
+magicModifier = 2.0
+
+[magiscythe]
+cooldown = 980
+damage = 3.0
+duration = 400
+radius = 4.0
+repairChance = 0.25
+spellScaling = 0.5
+
+[molten_edge]
+chance = 15
+cooldown = 320
+duration = 100
+knockbackStrength = 5.0
+radius = 5.0
+
+[icewhisper]
+cooldown = 600
+damage = 1.0
+duration = 200
+radius = 4
+spellScaling = 0.9
+
+[toxic_longsword]
+chance = 55
+
+[ribboncleaver]
+cooldown = 40
+damageBonusPercent = 0.95
+resilienceAmplifier = 1
+
+[sunfire]
+chance = 15
+cooldown = 700
+damage = 3.0
+spellScaling = 1.1
+spellScalingHeal = 1.3
+
+[shadowsting]
+chance = 25
+cooldown = 200
+damageMulti = 0.8
+radius = 4
+blindDuration = 60
+
+[stormbringer]
+cooldown = 90
+damage = 12.0
+spellScaling = 2.3
+blockDuration = 35
+parryDuration = 10
+
+[emberlash]
+cooldown = 80
+heal = 15.0
+maxStacks = 5
+spellScaling = 0.4
+
+[lichblade]
+absorptionCap = 8
+cooldown = 700
+damage = 6.0
+duration = 200
+heal = 0.5
+radius = 3
+range = 22.0
+spellScaling = 1.6
+
+[soulkeeper]
+chance = 75
+duration = 250
+radius = 5.0
+
+[soulrender]
+chance = 85
+duration = 500
+maxStacks = 8
+radius = 10.0
+healMulti = 0.5
+damageMulti = 3.0
+spellScaling = 0.4
+
+[soulpyre]
+pulseCount = 10
+radius = 12.0
+damage = 11.0
+heal = 1
+cooldown = 400
+
+[soulstealer]
+chance = 25
+duration = 400
+radius = 30.0
+spellScaling = 2.6
+blindDuration = 200
+invisDuration = 120
+
+[mjolnir]
+chance = 15
+cooldown = 700
+duration = 200
+frequency = 10
+radius = 10
+
+[storms_edge]
+chance = 15
+cooldown = 100
+
+[thunderbrand]
+chance = 15
+cooldown = 250
+damage = 3.0
+radius = 2
+spellScaling = 1.7
+
+[hearthflame]
+chance = 25
+cooldown = 300
+damage = 3.0
+radius = 3
+spellScaling = 1.4
+
+[tempest]
+duration = 1200
+maxSize = 30
+maxStacks = 10
+spellScaling = 0.3
+
+[watcher]
+watcherChance = 5
+watcherRadius = 8.0
+watcherRestoreAmount = 0.5
+omenAbsorptionCap = 20.0
+omenChance = 5
+omenInstantKillThreshold = 0.25
+
+[waxweaver]
+cooldown = 1200
+maxStacks = 3
+
+[wraithfang]
+hasteAmplifier = 1
+duration = 80
+
+[chompolotl]
+cooldown = 60
+damage = 1.0
+duration = 500
+breedChance = 0.0266
+dolphinsGrace = true
+
+[dreadtide]
+damageModifier = 1.0
+duration = 250
+corruptionFrequency = 60
+corruptionPerTick = 1.0
+corruptionDuration = 1200
+corruptionMax = 100.0
+startingTickFrequency = 12

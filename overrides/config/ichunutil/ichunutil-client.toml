@@ -1,0 +1,27 @@
+#These configs affect GUIs using B&S.
+[bns]
+	#Renders B&S's GUIs in a Minecraft Style instead.
+	#0 = Default Style
+	#1 = Vanilla Style
+	#2 = Texture Pack Style.
+	# Default: 0
+	# Range: 0 ~ 2
+	bnsMinecraftStyle = 0
+	#How much padding to add to the docked windows.
+	# Default: 0
+	# Range: 0 ~ 50
+	bnsDockPadding = 0
+	#Number of pixels before iChunUtil thinks you're trying to dock a window.
+	# Default: 8
+	# Range: > 1
+	bnsDockBorder = 8
+	#Speed (in ticks) to register a double click.
+	# Default: 10
+	# Range: > 1
+	bnsDoubleClickSpeed = 10
+	#How long to mouse over an element (in ticks) before showing a tooltip.
+	# Default: 10
+	# Range: 0 ~ 6000
+	bnsTooltipCooldown = 10
+	#Theme to use for Boxes & Stuff
+	bnsTheme = "default"

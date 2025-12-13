@@ -1,0 +1,53 @@
+# Client-specific configuration for FTB Ultimine
+# Modpack defaults should be defined in <instance>/config/ftbultimine-client.snbt
+#   (may be overwritten on modpack update)
+# Players may locally override this by copying into <instance>/local/ftbultimine-client.snbt
+#   (will NOT be overwritten on modpack update)
+
+{
+	general: {
+		# Does the player need to be holding the Ultimine key to cycle through shapes with the keyboard?
+		# Default: true
+		require_ultimine_key_for_cycling: true
+		
+		# When true, display the newly-selected shape as a hotbar message after an Ultimine shape change
+		# Default: false
+		shape_feedback_hotbar_message: false
+	}
+	overlay: {
+		# Default: 2
+		# Range: -∞ ~ +∞
+		overlay_inset_x: 2
+		
+		# Default: 2
+		# Range: -∞ ~ +∞
+		overlay_inset_y: 2
+		
+		# Default: "top_left"
+		# Valid values: "top_left", "top", "top_right", "right", "bottom_right", "bottom", "bottom_left", "left"
+		overlay_pos: "top_left"
+		
+		# When holding the Ultimine key, must the player also be sneaking to show the shapes menu?
+		# Default: true
+		require_sneak_for_menu: true
+		
+		# When displaying the shape selection menu by holding the Ultimine key
+		# and sneaking at the same time, the number of shape names to display
+		# above and below the selected shape
+		# Default: 2
+		# Range: 1 ~ 5
+		shape_menu_context_lines: 2
+	}
+	rendering: {
+		# Alpha value (0-255) for dig preview lines which are 'inside' blocks
+		# Default: 45
+		# Range: 0 ~ 255
+		preview_line_alpha: 45
+		
+		# Maximum number of blocks the white outline should be rendered for
+		# Keep in mind this may get *very* laggy for large amounts of blocks!
+		# Default: 256
+		# Range: 0 ~ 2147483647
+		render_outline: 256
+	}
+}

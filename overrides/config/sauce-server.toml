@@ -1,0 +1,4 @@
+#Enable Spell Critical Hits
+[spell_crit]
+	#Enable Spell Critical Hits, if another mod doesn't enable it already.
+	enable_spell_crit = true

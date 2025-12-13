@@ -1,0 +1,16 @@
+#.
+#Packmakers' control panel for internal recipe compat
+[recipes]
+	#.
+	#.
+	#If Bulk Coloring should be enabled
+	enableBulkColoring = true
+	#.
+	#If Bulk Freezing should be enabled
+	enableBulkFreezing = true
+	#.
+	#If Bulk Sanding should be enabled
+	enableBulkSanding = true
+	#.
+	#If Bulk Ending should be enabled
+	enableBulkEnding = true

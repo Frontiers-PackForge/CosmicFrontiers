@@ -1,0 +1,28 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Ghostipedia",
+      "uniqueId": "c43b3c3d-7da6-4c2b-b335-703fce2ed795"
+    },
+    "time": 1765631022391,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/CUp8CNOe94"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Ghostipedia",
+      "uniqueId": "c43b3c3d-7da6-4c2b-b335-703fce2ed795"
+    },
+    "time": 1765627861813,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/wGDo7FTmYf"
+    }
+  }
+]

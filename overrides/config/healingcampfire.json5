@@ -1,0 +1,26 @@
+{
+	// How often in ticks the mod checks for campfires around the player. 1 second = 20 ticks, so by default every 2 seconds.
+	// min: 1, max: 1200
+	"checkForCampfireDelayInTicks": 40,
+	// The radius around the campfire in blocks where players receive the regeneration effect.
+	// min: 1, max: 64
+	"healingRadius": 16,
+	// The duration of the regeneration effect which the campfire applies.
+	// min: 1, max: 600
+	"effectDurationSeconds": 60,
+	// The level of regeneration which the campfire applies, by default 1.
+	// min: 1, max: 50
+	"regenerationLevel": 1,
+	// When enabled, the campfire heals passive mobs around where the radius is half the width of a bounding box.
+	"healPassiveMobs": true,
+	// When enabled, hides the particles from the regeneration effect around the campfire.
+	"hideEffectParticles": true,
+	// When enabled, the campfire only has an effect when the block is lit up.
+	"campfireMustBeLit": true,
+	// When enabled, the campfire only has an effect when the block is signalling.
+	"campfireMustBeSignalling": false,
+	// When enabled, the mod will work with normal campfires.
+	"enableEffectForNormalCampfires": true,
+	// When enabled, the mod will work with soul campfires.
+	"enableEffectForSoulCampfires": true
+}

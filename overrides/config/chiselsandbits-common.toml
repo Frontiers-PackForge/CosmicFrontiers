@@ -1,0 +1,19 @@
+[help]
+	#Should the help information be visible in tooltips?
+	enabled-in-tooltips = true
+
+		[performance.caches.sizes]
+			#Size of the collision box cache.
+			# Default: 10000
+			# Range: 0 ~ 9223372036854775807
+			collision-boxes = 10000
+			#Size of the class metadata cache.
+			# Default: 10000
+			# Range: 0 ~ 9223372036854775807
+			class-metadata = 10000
+
+	[performance.saving]
+		#The thread count used during saving and compressing of data from chiseled block entity.
+		# Default: 8
+		# Range: 1 ~ 16
+		thread-count = 8

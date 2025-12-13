@@ -1,0 +1,31 @@
+# Don't change this! Version used to track needed updates.
+version = 0
+enableLootDrops = true
+enableLootInVillages = false
+standardLootTableWeight = 0.1
+rareLootTableWeight = 0.4
+runicLootTableWeight = 0.7
+uniqueLootTableWeight = 0.3
+enableContainedRemnants = true
+disabledUniqueWeaponLoot = [  ]
+
+[uniqueLootTableOptions]
+"minecraft:entities/wither" = 5.0
+"minecraft:entities/ender_dragon" = 50.0
+"minecraft:chests/ruined_portal" = 0.0
+"minecraft:chests/village/village_armorer" = 0.0
+"minecraft:chests/village/village_butcher" = 0.0
+"minecraft:chests/village/village_cartographer" = 0.0
+"minecraft:chests/village/village_desert_house" = 0.0
+"minecraft:chests/village/village_fisher" = 0.0
+"minecraft:chests/village/village_fletcher" = 0.0
+"minecraft:chests/village/village_mason" = 0.0
+"minecraft:chests/village/village_plains_house" = 0.0
+"minecraft:chests/village/village_savanna_house" = 0.0
+"minecraft:chests/village/village_shepherd" = 0.0
+"minecraft:chests/village/village_snowy_house" = 0.0
+"minecraft:chests/village/village_taiga_house" = 0.0
+"minecraft:chests/village/village_tannery" = 0.0
+"minecraft:chests/village/village_temple" = 0.0
+"minecraft:chests/village/village_toolsmith" = 0.0
+"minecraft:chests/village/village_weaponsmith" = 0.0

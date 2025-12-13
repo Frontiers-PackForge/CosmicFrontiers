@@ -1,0 +1,6 @@
+{
+	// Show the flashing colour picker hint (auto disables after first use)
+	showColorPickerIndicator: true,
+	// Load .webp and .gif during Minecraft resource reload instead of on-demand (can decrease startup time)
+	preloadComplexImageFormats: false
+}

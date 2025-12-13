@@ -1,0 +1,131 @@
+#Visual Settings
+[visual]
+	#Shows all tags an item has in the tooltip on hover if advanced tooltips (F3+H) are enabled.
+	showItemTagsInTooltip = false
+	#Disables the headache- and possibly seizure-inducing visual effects of Demon's Dream.
+	disableDemonsDreamShaders = false
+	#Disables holiday themed visual content such as familiar skins.
+	disableHolidayTheming = false
+	#When true the old divination rod selected block renderer will be used.
+	#May work for some people that do not see selected block outlines when using the divination rod.
+	useAlternativeDivinationRodRenderer = false
+	#The integer code of the color of the white chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 16777215
+	# Range: 0 ~ 16777215
+	whiteChalkGlyphColor = 16777215
+	#The integer code of the color of the purple chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 10224531
+	# Range: 0 ~ 16777215
+	purpleChalkGlyphColor = 10224531
+	#The integer code of the  color of the red chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness this value should be changed to a green color, we recommend 33289 (= Hex 0x008209)
+	# Default: 13369601
+	# Range: 0 ~ 16777215
+	redChalkGlyphColor = 13369601
+	#The integer code of the color of the light gray chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 10329495
+	# Range: 0 ~ 16777215
+	lightGrayChalkGlyphColor = 10329495
+	#The integer code of the color of the gray chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 4673362
+	# Range: 0 ~ 16777215
+	grayChalkGlyphColor = 4673362
+	#The integer code of the color of the black chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 1908001
+	# Range: 0 ~ 16777215
+	blackChalkGlyphColor = 1908001
+	#The integer code of the color of the brown chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 8606770
+	# Range: 0 ~ 16777215
+	brownChalkGlyphColor = 8606770
+	#The integer code of the color of the orange chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 16351261
+	# Range: 0 ~ 16777215
+	orangeChalkGlyphColor = 16351261
+	#The integer code of the color of the yellow chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 15783680
+	# Range: 0 ~ 16777215
+	yellowChalkGlyphColor = 15783680
+	#The integer code of the color of the lime chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 8439583
+	# Range: 0 ~ 16777215
+	limeChalkGlyphColor = 8439583
+	#The integer code of the color of the green chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 6192150
+	# Range: 0 ~ 16777215
+	greenChalkGlyphColor = 6192150
+	#The integer code of the color of the cyan chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 1481884
+	# Range: 0 ~ 16777215
+	cyanChalkGlyphColor = 1481884
+	#The integer code of the color of the light blue chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 8432615
+	# Range: 0 ~ 16777215
+	lightBlueChalkGlyphColor = 8432615
+	#The integer code of the color of the blue chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 3949738
+	# Range: 0 ~ 16777215
+	blueChalkGlyphColor = 3949738
+	#The integer code of the color of the magenta chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 13061821
+	# Range: 0 ~ 16777215
+	magentaChalkGlyphColor = 13061821
+	#The integer code of the color of the pink chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 15961002
+	# Range: 0 ~ 16777215
+	pinkChalkGlyphColor = 15961002
+
+#Misc Settings
+[misc]
+	#Sync JEI search in storage actuator.
+	syncJeiSearch = false
+	#If true, divination rod will render all matching blocks with an outline. Disable if it causes lag.
+	#This setting will be unused, if Theurgy is installed alongside, as Occultism will use Theurgy's divination rod result rendering instead.
+	divinationRodHighlightAllResults = false
+	#The scan range in blocks for the divination rod. Too high might cause lags
+	# Default: 129
+	# Range: > 1
+	divinationRodScanRange = 129
+	#Disables the sound played when a spirit fire successfully crafted an item.
+	disableSpiritFireSuccessSound = false
+	#Enables EMI sync for the storage actuator.
+	enableEMISync = true
+	#How many pentagrams to show at one time on the bowl information
+	# Default: 3
+	# Range: > 1
+	pentagramInBowlInfoCount = 3
+	#How many ticks between each page for the pentagram information on a bowl
+	# Default: 40
+	# Range: > 1
+	pentagramInBowlInfoTicks = 40

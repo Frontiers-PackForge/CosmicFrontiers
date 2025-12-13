@@ -1,0 +1,26 @@
+[balancing]
+	#Disallow blocks which tick randomly from being chiseled.
+	blacklist-random-ticking-blocks = false
+	#Enables the compatibility mode of the chiselability checked.
+	enable-compatibility-mode = false
+	#The max size of the stacks of bits in the bit bag.
+	# Default: 512
+	# Range: > 64
+	bit-bag-stack-size = 512
+	#The amount of changes that are being held in the change track.
+	# Default: 20
+	# Range: 10 ~ 40
+	change-tracker-size = 20
+	#When enabled this deletes excess bits which are created during chisel operations but which don't fit into the players inventory and bit bags.
+	delete-excess-bits = true
+	#Multiplies a chiseled blocks light output with this value. Allows for users to override the default scaling of the light value with the amount of bits. 0 Disables light emission, 1 Keeps the linear growth with the amount of light emitting bits. And any value above makes each bit emit more light then it normally should. Using the amount of bits in a block as a value (normally 4096 makes any bit emit light-level 15).
+	# Default: 1.0
+	# Range: 0.0 ~ 4096.0
+	light-factor-multiplier = 1.0
+	#Whether or not the player needs to have a chisel in the off hand, when trying to break a bit, using another bit.
+	require-chisel-in-off-hand-for-bit-breaking = false
+
+[style]
+	#Configures the size of a single bit, relative to one block.
+	#Allowed Values: ONE_SIXTEENTH, ONE_EIGHT, ONE_QUARTER, ONE_HALF, ONE
+	bit-size = "ONE_SIXTEENTH"

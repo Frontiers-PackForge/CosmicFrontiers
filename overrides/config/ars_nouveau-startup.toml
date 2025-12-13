@@ -1,0 +1,6 @@
+#Mana
+[mana]
+	#Regen bonus per potion level
+	# Default: 10
+	# Range: > 0
+	potionRegen = 10

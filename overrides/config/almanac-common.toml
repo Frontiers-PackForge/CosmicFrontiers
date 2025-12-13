@@ -1,0 +1,9 @@
+#Almanac Config file for empty Nbt Bug Fix
+[blacklist_settings]
+	# Items in this list will not be modified by Almanac.
+	# Supports wildcard '*'. For example:
+	#   - 'minecraft:diamond' matches exactly 'minecraft:diamond'
+	#   - '*:diamond*' matches any item from any mod that contains 'diamond'
+	#   - 'minecraft:*' matches all items from minecraft namespace
+	#   - '*nec*' matches any item that contains 'nec', eg. 'necromancy:abc', 'my_mod:necklace'
+	blacklist = ["alexscaves:sack_of_sating", "hexerei:*", "spelunkery:*", "minecraft:spyglass", "technicalcores:*"]

@@ -1,0 +1,43 @@
+[device]
+	#ME Extend Import/Export Bus speed multiplier
+	# Default: 8
+	# Range: 2 ~ 128
+	extended_io_bus_multiplier = 8
+	#The max range between two wireless connector
+	# Default: 1000.0
+	# Range: 10.0 ~ 10000.0
+	wireless_connector_max_range = 1000.0
+	#Power usage multiplier for wireless connectors
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	wireless_connector_power_multiplier = 1.0
+	#Size multiplier of oversize interface
+	# Default: 16
+	# Range: 2 ~ 4096
+	oversize_interface_multiplier = 16
+	#Set multiplier for specific AEKeyType in oversize interface
+	custom_oversize_interface_multiplier = ["appbot:mana 2", "appflux:flux 4"]
+	#Allow Crystal Assembler to do processor inscriber recipes
+	enable_crystal_assembler_inscribe_processors = true
+	#The max size of Assembler Matrix
+	# Default: 6
+	# Range: 3 ~ 16
+	assembler_matrix_max_size = 6
+
+[item]
+	#ME Infinity Cell idle energy cost (unit: AE/t)
+	# Default: 8.0
+	# Range: 0.1 ~ 64.0
+	infinity_cell_energy_cost = 8.0
+	#Pattern modifier multipliers
+	pattern_modifier_multipliers = [2, 3, 5, 7]
+	#The AE device/part that can be packed by ME Packing Tape
+	me_packing_tape_whitelist = ["extendedae:ex_interface_part", "extendedae:ex_pattern_provider_part", "extendedae:ex_interface", "extendedae:ex_pattern_provider", "extendedae:ex_drive", "extendedae:oversize_interface", "extendedae:oversize_interface_part", "ae2:cable_interface", "ae2:cable_pattern_provider", "ae2:interface", "ae2:pattern_provider", "ae2:drive"]
+
+[client]
+	#Disable Extended Inscriber's item render, it only works in client side
+	disable_inscriber_item_render = false
+
+[misc]
+	#Enable debug logging.
+	debug_mode = false

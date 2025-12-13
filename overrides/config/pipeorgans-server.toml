@@ -1,0 +1,16 @@
+#The maximum allowed file size of uploaded MIDI files. [in KiloBytes]
+# Default: 256
+# Range: 64 ~ 1024
+midiFileSizeLimit = 256
+#The amount of MIDI files a player can upload until previous ones are overwritten.
+# Default: 16
+# Range: 1 ~ 128
+maxMidiFiles = 16
+#The maximum packet size uploaded MIDI files are split into. [in Bytes]
+# Default: 1024
+# Range: 256 ~ 32767
+maxMidiPacketSize = 1024
+#Amount of game ticks without new packets arriving until an active MIDI upload process is discarded.
+# Default: 600
+# Range: 100 ~ 1200
+midiIdleTimeout = 600

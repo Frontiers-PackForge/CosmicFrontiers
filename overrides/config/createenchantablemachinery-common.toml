@@ -1,0 +1,21 @@
+#.
+#Kinetics
+[kinetics]
+
+		#.
+		#.
+		#Fine tune the kinetic stats of individual components
+		[kinetics.stressValues.v2]
+
+			#.
+			#.
+			#[in Stress Units]
+			#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
+			[kinetics.stressValues.v2.impact]
+				enchantable_mechanical_press = 8.0
+				enchantable_mechanical_saw = 4.0
+				enchantable_encased_fan = 2.0
+				enchantable_mechanical_drill = 4.0
+				enchantable_millstone = 4.0
+				enchantable_crushing_wheel = 8.0
+				enchantable_mechanical_mixer = 4.0

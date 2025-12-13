@@ -1,0 +1,89 @@
+#Ritual Settings
+[rituals]
+	#By default spirit names are generated randomly. This list can be used as an additional source of spirit names, or even a full replacement, depending on the configuration of "usePossibleSpiritNamesChance".
+	possibleSpiritNames = []
+	#0.0 (default) to only use random names.
+	#1.0 to only use the names in "possibleSpiritNames"
+	#0.1-0.9 to use a mix of both, the higher the value the higher the chance of using a name from this list instead of a random name.
+	#Will be ignored if "possibleSpiritNames" is empty.
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	usePossibleSpiritNamesChance = 0.0
+
+#Dimensional Mineshaft Settings
+[dimensional_mineshaft]
+
+	#Miner Spirit Settings
+	[dimensional_mineshaft.miner_foliot_unspecialized]
+		#The amount of time it takes the spirit to perform one mining operation.
+		# Default: 400
+		# Range: > 0
+		maxMiningTime = 400
+		#The amount of blocks the spirit will obtain per mining operation
+		# Default: 1
+		# Range: > 0
+		rollsPerOperation = 1
+		#The amount of mining operations the spirit can perform before breaking.
+		# Default: 1000
+		# Range: > 0
+		durability = 1000
+
+	#Miner Spirit Settings
+	[dimensional_mineshaft.miner_djinni_ores]
+		#The amount of time it takes the spirit to perform one mining operation.
+		# Default: 300
+		# Range: > 0
+		maxMiningTime = 300
+		#The amount of blocks the spirit will obtain per mining operation
+		# Default: 1
+		# Range: > 0
+		rollsPerOperation = 1
+		#The amount of mining operations the spirit can perform before breaking.
+		# Default: 400
+		# Range: > 0
+		durability = 400
+
+	#Miner Spirit Settings
+	[dimensional_mineshaft.miner_afrit_deeps]
+		#The amount of time it takes the spirit to perform one mining operation.
+		# Default: 200
+		# Range: > 0
+		maxMiningTime = 200
+		#The amount of blocks the spirit will obtain per mining operation
+		# Default: 1
+		# Range: > 0
+		rollsPerOperation = 1
+		#The amount of mining operations the spirit can perform before breaking.
+		# Default: 800
+		# Range: > 0
+		durability = 800
+
+	#Miner Spirit Settings
+	[dimensional_mineshaft.miner_marid_master]
+		#The amount of time it takes the spirit to perform one mining operation.
+		# Default: 100
+		# Range: > 0
+		maxMiningTime = 100
+		#The amount of blocks the spirit will obtain per mining operation
+		# Default: 1
+		# Range: > 0
+		rollsPerOperation = 1
+		#The amount of mining operations the spirit can perform before breaking.
+		# Default: 1600
+		# Range: > 0
+		durability = 1600
+
+	#Miner Spirit Settings
+	[dimensional_mineshaft.miner_ancient_eldritch]
+		#The amount of time it takes the spirit to perform one mining operation.
+		# Default: 15
+		# Range: > 0
+		maxMiningTime = 15
+		#The amount of blocks the spirit will obtain per mining operation
+		# Default: 1
+		# Range: > 0
+		rollsPerOperation = 1
+		#The amount of mining operations the spirit can perform before breaking.
+		# Default: 3200
+		# Range: > 0
+		durability = 3200

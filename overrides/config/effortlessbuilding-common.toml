@@ -1,0 +1,81 @@
+[Reach]
+	#How far away the player can place and break blocks.
+	# Default: 200
+	# Range: 0 ~ 1000
+	reachCreative = 200
+	#Maximum reach in survival without upgrades
+	#Consume Power Level upgrades to permanently increase this.
+	# Default: 0
+	# Range: 0 ~ 1000
+	reachLevel0 = 0
+	# Default: 8
+	# Range: 0 ~ 1000
+	reachLevel1 = 8
+	# Default: 16
+	# Range: 0 ~ 1000
+	reachLevel2 = 16
+	# Default: 32
+	# Range: 0 ~ 1000
+	reachLevel3 = 32
+
+[MaxBlocksPlacedAtOnce]
+	#How many blocks can be placed in one click.
+	# Default: 10000
+	# Range: 0 ~ 100000
+	maxBlocksPlacedAtOnceCreative = 10000
+	#In survival without upgrades
+	#Consume Power Level upgrades to permanently increase this.
+	#Set to 0 to disable Effortless Building until the player has increased their Building Power Level.
+	# Default: 128
+	# Range: 0 ~ 100000
+	maxBlocksPlacedAtOnceLevel0 = 128
+	# Default: 192
+	# Range: 0 ~ 100000
+	maxBlocksPlacedAtOnceLevel1 = 192
+	# Default: 320
+	# Range: 0 ~ 100000
+	maxBlocksPlacedAtOnceLevel2 = 320
+	# Default: 640
+	# Range: 0 ~ 100000
+	maxBlocksPlacedAtOnceLevel3 = 640
+
+[MaxBlocksPerAxis]
+	#How many blocks can be placed at once per axis when using build modes (e.g. walls).
+	#Also affects the array modifier.
+	# Default: 1000
+	# Range: 0 ~ 1000
+	maxBlocksPerAxisCreative = 1000
+	#In survival without upgrades
+	#Consume Power Level upgrades to permanently increase this.
+	# Default: 8
+	# Range: 0 ~ 1000
+	maxBlocksPerAxisLevel0 = 8
+	# Default: 12
+	# Range: 0 ~ 1000
+	maxBlocksPerAxisLevel1 = 12
+	# Default: 16
+	# Range: 0 ~ 1000
+	maxBlocksPerAxisLevel2 = 16
+	# Default: 20
+	# Range: 0 ~ 1000
+	maxBlocksPerAxisLevel3 = 20
+
+[MaxMirrorRadius]
+	#The maximum (radial) mirror radius.
+	# Default: 200
+	# Range: 0 ~ 1000
+	maxMirrorRadiusCreative = 200
+	#Maximum reach in survival without upgrades
+	#Consume Power Level upgrades upgrades to permanently increase this.
+	# Default: 16
+	# Range: 0 ~ 1000
+	maxMirrorRadiusLevel0 = 16
+	# Default: 32
+	# Range: 0 ~ 1000
+	maxMirrorRadiusLevel1 = 32
+	# Default: 48
+	# Range: 0 ~ 1000
+	maxMirrorRadiusLevel2 = 48
+	# Default: 64
+	# Range: 0 ~ 1000
+	maxMirrorRadiusLevel3 = 64

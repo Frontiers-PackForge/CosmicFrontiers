@@ -1,0 +1,58 @@
+#Disabled timed crafting
+disableTimedCrafting = false
+#The max amount of dynamites that can be held
+maxDynamites = 50
+#Max drill size
+drillSize = 4
+#The amount of power the basic solar module will produce
+basicSolarProduction = 10
+#The amount of power the compact solar module will produce
+compactSolarProduction = 20
+#The amount of power the standard solar module will produce
+standardSolarProduction = 20
+#Repair item for Diamond Woodcutter
+woodcutterRepairDiamond = "minecraft:diamond"
+#Repair value for Diamond Woodcutter repair item
+woodcutterRepairAmountDiamond = 160000
+#Diamond Woodcutter max durability
+woodcutterDurabilityDiamond = 320000
+#Repair item for Hardened Woodcutter
+woodcutterRepairHardened = "stevescarts:component_reinforced_metal"
+#Repair value for Hardened Woodcutter repair item
+woodcutterRepairAmountHardened = 320000
+#Hardened Woodcutter max durability
+woodcutterDurabilityHardened = 640000
+#Repair item for Netherite Woodcutter
+woodcutterRepairNetherite = "minecraft:netherite_ingot"
+#Repair value for Netherite Woodcutter repair item
+woodcutterRepairAmountNetherite = 450000
+#Netherite Woodcutter max durability
+woodcutterDurabilityNetherite = 1000000
+#Repair item for Iron Drill
+drillRepairIron = "minecraft:iron_ingot"
+#Repair value for Iron Drill repair item
+drillRepairAmountIron = 20000
+#Iron Drill max durability
+drillDurabilityIron = 50000
+#Repair item for Diamond Drill
+drillRepairDiamond = "minecraft:diamond"
+#Repair value for Diamond Drill repair item
+drillRepairAmountDiamond = 100000
+#Diamond Drill max durability
+drillDurabilityDiamond = 300000
+#Repair item for Hardened Drill
+drillRepairHardened = "stevescarts:component_reinforced_metal"
+#Repair value for Hardened Drill repair item
+drillRepairAmountHardened = 450000
+#Hardened Drill max durability
+drillDurabilityHardened = 1000000
+#Repair item for Diamond farmer
+farmerRepairDiamond = "minecraft:diamond"
+#Repair value for Diamond farmer repair item
+farmerRepairAmountDiamond = 150000
+#Diamond farmer max durability
+farmerDurabilityDiamond = 300000
+#Allow carts to run with items in the tool repair slot
+allowCartToRunWithRepairItems = false
+#Allow fuel to be auto inserted into the cart assembler
+assemblerInsertFuel = false

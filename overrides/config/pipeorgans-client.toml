@@ -1,0 +1,4 @@
+#Whether to display the sounding pitch on mutation pipes while wearing goggles.
+displayMutationSoundingPitch = true
+#If true, octave values in goggle tooltips are shown in parentheses.
+showOctaveBrackets = false

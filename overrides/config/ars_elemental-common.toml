@@ -1,0 +1,119 @@
+#Enable iframe skip glyph recipe
+frame_skip_recipe = false
+
+#Adjust these values to balance how much the matching spell cost gets discounted by foci.
+["Elemental Spell Foci - Discount"]
+	#Adjust this value to define how much the matching spell cost gets discounted by the lesser focus
+	# Default: 0.15
+	# Range: 0.0 ~ 0.99
+	elemental_less_focus_discount = 0.15
+	#Adjust this value to define how much the matching spell cost gets discounted by the greater focus
+	# Default: 0.25
+	# Range: 0.0 ~ 0.99
+	elemental_maj_focus_discount = 0.25
+
+#Adjust these values to balance how much a spell gets amplified by the matching spell focus, doubled for major foci.
+["Elemental Spell Foci - Amplify"]
+	fire_focus_buff = 1.0
+	water_focus_buff = 1.0
+	air_focus_buff = 1.0
+	earth_focus_buff = 1.0
+
+#Adjust these values to balance how much an elemental spell gets dampened by a not-matching lesser spell focus
+["Elemental Spell Foci - Dampening"]
+	fire_focus_debuff = -1.0
+	water_focus_debuff = -1.0
+	air_focus_debuff = -1.0
+	earth_focus_debuff = -1.0
+
+#Enable or disable the passive bonus of the foci
+["Elemental Spell Foci - Abilities"]
+	#Enable glyph empowering
+	glyph_empower = true
+	#Enable regen bonus under special conditions
+	regen_bonus = true
+
+#Adjust Elemental Armor Mana Buffs
+["Elemental Armors"]
+	#Max mana bonus for each elemental armor piece
+	# Default: 100
+	# Range: 0 ~ 10000
+	armorMaxMana = 100
+	#Mana regen bonus for each elemental armor piece
+	# Default: 4
+	# Range: 0 ~ 100
+	armorManaRegen = 4
+
+["Mermaid Fishing"]
+	#How much source mermaids consume per generation
+	# Default: 1000
+	# Range: 0 ~ 10000
+	mermaidManaCost = 1000
+	#How many channels must occur before a siren produces loot.
+	# Default: 30
+	# Range: 0 ~ 300
+	mermaidMaxProgress = 30
+	#Max number of extra item rolls a shrine produces if the mood is high.
+	# Default: 2
+	# Range: 0 ~ 10
+	mermaidScoreBonus = 2
+	#Chance multiplier to produce a treasure relative to the siren shrine score.
+	# Default: 0.002
+	# Range: 0.0 ~ 1.0
+	mermaidTreasureBonus = 0.002
+	#Base number of items rolls a shrine produces per cycle.
+	# Default: 1
+	# Range: 0 ~ 300
+	mermaidBaseItems = 1
+	#Max number of items a siren shrine can produce per cycle.
+	# Default: 5
+	# Range: 0 ~ 300
+	mermaidQuantityCap = 5
+
+["Source cost"]
+	#How much source does the water urn consume.
+	# Default: 100
+	# Range: 0 ~ 10000
+	waterUrnCost = 100
+	#How much source does the slipstream elevator consume.
+	# Default: 10
+	# Range: 0 ~ 1000
+	airElevatorCost = 10
+	#How much source does the bubble elevator consume.
+	# Default: 0
+	# Range: 0 ~ 1000
+	waterElevatorCost = 0
+	#How much source does the magmatic elevator consume.
+	# Default: 0
+	# Range: 0 ~ 1000
+	lavaElevatorCost = 0
+
+[Misc]
+	#If enabled, flarecannons will simply die and drop the charm, instead of deactivating, if killed by their owner
+	flarecannon_owner_kill = true
+	#Set over 0 to enable archwood forests with specific trees
+	# Default: 1
+	# Range: 0 ~ 100
+	extra_biomes = 1
+	#Set to false to disable the lightning crashing often on flashing archwood biome(s).
+	always_thunder = true
+	#If enabled, homing will be able to target mobs only if they're glowing
+	homing_nerf = false
+	#Define the refresh rate of the Squirrel Ritual buff, in ticks.
+	# Default: 600
+	# Range: > 1
+	squirrelRefreshRate = 600
+	#If enabled, soulbound enchantment can appear in randomly enchanted loot chests.
+	soulbound_loot = true
+	#Define the maximum number of pierce that a piercing lens can apply to a projectile.
+	# Default: 10
+	# Range: > 1
+	pierceLensLimit = 10
+	#Define the maximum number of glyph that a chain lens can add to a projectile. This limit includes the existing glyphs on the projectile.
+	# Default: 15
+	# Range: > 1
+	chainLensLimit = 15
+
+[Mobs-Disabled]
+	#If true, the wandering mages will target players too, unless they wear the focus of the same school.
+	magesAggro = true
