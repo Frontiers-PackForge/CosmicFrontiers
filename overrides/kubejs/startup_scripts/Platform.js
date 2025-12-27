@@ -1,0 +1,1 @@
+Platform.mods.kubejs.name = 'CosmicCore'
