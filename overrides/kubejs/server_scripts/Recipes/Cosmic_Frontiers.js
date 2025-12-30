@@ -148,12 +148,12 @@ ServerEvents.recipes(event => {
        event.remove({ id: 'bhc:god_apple' })
        event.remove({ id: 'create:industrial_iron_block_from_ingots_iron_stonecutting' })
        event.remove({ id: 'biomesoplenty:tnt_from_bop_sand' })
-       event.remove({ id: 'terralith:observer_alt' })
+       // Remove all of Terralith's alt recipes for vanilla blocks (e.g Dropper, Observer, Lever, Dispenser, Piston)
+       event.remove({ id: /terralith:(.*)_alt/ })
 
        event.remove({ mod: 'biomancy' })
 
      //stone buttons bruh
-     event.remove({ id: 'terralith:lever_alt' })
      event.shaped('6x minecraft:stone_button', [
              '   ',
              'TP ',
