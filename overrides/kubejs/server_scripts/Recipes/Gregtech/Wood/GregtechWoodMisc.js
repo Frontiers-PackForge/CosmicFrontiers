@@ -45,8 +45,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'minecraft:kjs/aether_skyroot_fence' })
     event.remove({ id: 'aether:skyroot_bed' })
     event.remove({ id: 'aether:skyroot_stick' })
-    event.remove({ id: 'aether:skyroot_chest'})
-    event.remove({ id: 'aether:skyroot_lectern'})
 
 
     //DANGEROUS : WOOD PLANK REMOVALS - BY RECIPE - if something is broken attempt to check it against this matcher first
