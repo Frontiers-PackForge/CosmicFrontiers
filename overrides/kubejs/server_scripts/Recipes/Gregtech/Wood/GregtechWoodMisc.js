@@ -45,6 +45,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'minecraft:kjs/aether_skyroot_fence' })
     event.remove({ id: 'aether:skyroot_bed' })
     event.remove({ id: 'aether:skyroot_stick' })
+    event.remove({ id: 'aether:skyroot_chest'})
+    event.remove({ id: 'aether:skyroot_lectern'})
 
 
     //DANGEROUS : WOOD PLANK REMOVALS - BY RECIPE - if something is broken attempt to check it against this matcher first
@@ -92,6 +94,10 @@ ServerEvents.recipes(event => {
             P: '#forge:logs/archwood'
         })
     event.shapeless('2x ars_nouveau:archwood_planks', ['#forge:logs/archwood'])
+})
+
+ServerEvents.tags('item', event => {
+    event.add('minecraft:planks', 'aether:skyroot_planks')
 })
 
 ServerEvents.recipes(event => {
