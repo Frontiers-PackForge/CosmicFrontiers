@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
         .itemInputs('cosmiccore:fleshy_plutonium_waste')
         .chancedOutput('malum:rotting_essence', 9500, 0)
         .chancedOutput('malum:void_salts', 8000, 0)
-        .chancedOutput('gtceu:tantalum_dust', 6500, 0)
+        .chancedOutput('gtceu:scandium_dust', 6500, 0)
         .chancedOutput('gtceu:indium_dust', 3500, 0)
         .chancedOutput('cosmiccore:somanone_dust', 3500, 0)
         .chancedOutput('gtceu:neptunium_dust', 3500, 0)
