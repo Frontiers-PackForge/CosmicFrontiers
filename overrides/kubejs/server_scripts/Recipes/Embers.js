@@ -89,8 +89,8 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.LV], 4);
 
   event.recipes.gtceu.dawn_forge('frontiers:dawn_hv_core')
-    .notConsumable('embers:silver_aspectus')
-    .notConsumable('embers:lead_aspectus')
+    .notConsumable('embers:dawnstone_aspectus')
+    .notConsumable('embers:dawnstone_aspectus')
     .itemInputs(['embers:ember_crystal_cluster', 'gtceu:kanthal_plate', 'gtceu:faded_dusk_alloy_foil', 'gtceu:kanthal_plate', 'gtceu:galvanized_ethersteel_foil'])
     .itemOutputs('cosmiccore:hv_wildfire_core')
     .emberInput(1500)
@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.gtceu.dawn_forge('frontiers:dawnforge_eclipsed')
     .notConsumable('embers:inflictor_gem')
-    .notConsumable('embers:lead_aspectus')
+    .notConsumable('embers:dawnstone_aspectus')
     .itemInputs(['kubejs:carbon_ethersteel_lattice', 'embers:shifting_scales', 'kubejs:carbon_ethersteel_lattice', 'embers:shifting_scales', 'embers:dawnstone_anvil', 'embers:caminite_tiles'])
     .inputFluids('gtceu:polytetrafluoroethylene 48000', 'gtceu:galvanized_ethersteel 18432')
     .itemOutputs('cosmiccore:dawnforge_eclipsed')
