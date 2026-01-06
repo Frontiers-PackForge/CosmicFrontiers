@@ -757,6 +757,7 @@
 		}
 		{
 			dependencies: ["5837A875D09D3E35"]
+			description: ["Note : Osmium is gated to IV energy Hatches, so you will need to progress before you can entirely complete platline"]
 			id: "7090D7E23692B1F6"
 			shape: "hexagon"
 			tasks: [{
@@ -1412,7 +1413,10 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["39005D17366E64B9"]
+			dependencies: [
+				"39005D17366E64B9"
+				"0478E1C9F989ED3F"
+			]
 			id: "227A79CFB7910739"
 			tasks: [{
 				id: "5506A81058C3A554"
@@ -1503,7 +1507,6 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["39005D17366E64B9"]
 			id: "0478E1C9F989ED3F"
 			size: 1.5d
 			tasks: [{
