@@ -1099,9 +1099,9 @@ ServerEvents.recipes(event => {
        event.recipes.gtceu.arcane_crucible('frontiers:arcane_crucible/luminized_titanium_ingot')
               .itemInputs(['2x gtceu:titanium_ingot', 'gtceu:luminite_ingot', 'gtceu:platinum_ingot'])
               .itemOutputs('4x gtceu:luminized_titanium_ingot')
-              .emberInput(8000)
+              .emberInput(16000)
               .duration(1000)
-              .EUt(GTValues.VA[GTValues.EV]);
+              .EUt(GTValues.VA[GTValues.HV]);
 
        event.replaceInput({ id: 'gtceu:shaped/scaffolding' },
               'minecraft:slime_ball',
