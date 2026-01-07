@@ -127,4 +127,36 @@ ServerEvents.recipes(event => {
     event.stonecutting('trials:copper_door', 'createdeco:copper_door')
     event.stonecutting('createdeco:copper_trapdoor', 'trials:copper_trapdoor')
     event.stonecutting('trials:copper_trapdoor', 'createdeco:copper_trapdoor')
+
+    let dyeColors = [
+    'white',
+    'light_gray',
+    'gray',
+    'black',
+    'brown',
+    'red',
+    'orange',
+    'yellow',
+    'lime',
+    'green',
+    'cyan',
+    'light_blue',
+    'blue',
+    'purple',
+    'magenta',
+    'pink'
+  ]
+
+  dyeColors.forEach(dyeColors => {
+  event.remove({id: `createdeco:${dyeColors}_shipping_container`})
+  //cheaper recipe cause buh (we now have a 1 dye 1 vault recipe and this 1 dye 8 vault recipe)
+  event.shaped(`8x createdeco:${dyeColors}_shipping_container`, [
+    'VVV',
+    'VDV',
+    'VVV'
+    ], {
+    V: 'create:item_vault',
+    D: `minecraft:${dyeColors}_dye`,
+    })  
+  })
 })
