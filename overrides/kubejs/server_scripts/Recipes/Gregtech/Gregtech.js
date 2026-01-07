@@ -114,7 +114,6 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_neutronite_ingot' })
   event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_terrasteel_dust_to_block' })
   event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_rhenium_dust_to_block' })
-  event.remove({ id: 'terralith:piston_alt' })
   event.remove({ id: 'gtceu:macerator/macerate_treated_wood_planks' })
   event.remove({ id: 'gtceu:alloy_blast_smelter/starmetal_gas' })
   event.remove({ id: 'gtceu:orbital_forge/neutronium_boule' })

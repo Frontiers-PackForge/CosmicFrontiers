@@ -94,6 +94,10 @@ ServerEvents.recipes(event => {
     event.shapeless('2x ars_nouveau:archwood_planks', ['#forge:logs/archwood'])
 })
 
+ServerEvents.tags('item', event => {
+    event.add('minecraft:planks', 'aether:skyroot_planks')
+})
+
 ServerEvents.recipes(event => {
     //Door
     if (Item.exists(`ars_nouveau:archwood_door`)) {
