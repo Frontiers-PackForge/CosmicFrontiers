@@ -756,24 +756,11 @@
 			icon: "cosmiccore:simple_rebreather"
 			id: "7C2BA4D773E57683"
 			optional: true
-			rewards: [
-				{
-					id: "76D335B0BAE970B0"
-					item: {
-						Count: 1
-						id: "botania:brew_vial"
-						tag: {
-							brewKey: "botania:water_breathing"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1FAD66946AD21656"
-					item: "cosmiccore:shard_of_perpetuity"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "1FAD66946AD21656"
+				item: "cosmiccore:shard_of_perpetuity"
+				type: "item"
+			}]
 			subtitle: "Hold your breath."
 			tasks: [{
 				id: "7E6F8B260B75D219"
@@ -990,7 +977,7 @@
 				""
 				"If you are experiencing horrible performance, I suggest disabling it(C2ME)."
 			]
-			icon: "gtceu:small_vibrant_alloy_gear"
+			icon: "cosmiccore:small_vibrant_alloy_gear"
 			id: "0C12BB97C29D4CD2"
 			shape: "rsquare"
 			subtitle: "Save us from thine horrid worldgen performance!"
@@ -1040,6 +1027,7 @@
 				id: "6A8592F237A25101"
 				type: "checkmark"
 			}]
+			title: "Some Improvements Can Be Made!"
 			x: 7.5d
 			y: 7.5d
 		}
