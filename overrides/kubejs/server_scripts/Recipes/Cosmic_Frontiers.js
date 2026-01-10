@@ -13,15 +13,6 @@ let yeet = (itemName) => {
 
 ServerEvents.tags('item', event => {
        console.log('[5] - [2] - TAG-WATCHER')
-       event.add('thinair:heavy_breathing_equipment', 'ad_astra:space_helmet')
-       event.add('thinair:heavy_breathing_equipment', 'kubejs:nano_respirator')
-       event.add('thinair:breathing_equipment', 'kubejs:nano_respirator')
-       event.add('gtceu:ppe_armor', 'kubejs:nano_respirator')
-       event.add('gtceu:ppe_armor', 'kubejs:reinforced_respirator')
-       event.add('gtceu:ppe_armor', 'thinair:respirator')
-       event.add('thinair:breathing_equipment', 'kubejs:reinforced_respirator')
-       event.add('curios:head', 'kubejs:reinforced_respirator')
-       event.add('curios:head', 'kubejs:nano_respirator')
        event.add('curios:head', 'embers:ashen_goggles')
        event.add('curios:charm', 'gtceu:hv_item_magnet')
        event.add('curios:charm', 'gtceu:lv_item_magnet')
@@ -213,27 +204,28 @@ ServerEvents.recipes(event => {
               S: 'gtceu:ev_flora_nurturer',
               P: 'gtceu:palladium_plate'
        })
-       event.shaped('kubejs:reinforced_respirator', [
+
+       event.shaped('cosmiccore:simple_rebreather', [
+              ' R ',
+              'RFR',
+              'CSC',
+       ], {
+              C: 'minecraft:paper',
+              S: 'gtceu:bronze_plate',
+              F: 'minecraft:charcoal',
+              R: 'minecraft:string'
+
+       })
+
+       event.shaped('cosmiccore:pressurized_rebreather', [
               ' R ',
               'RFR',
               'CSC',
        ], {
               C: 'gtceu:charcoal_dust',
-              S: 'gtceu:steel_plate',
-              F: 'thinair:respirator',
+              S: '#gtceu:circuits/lv',
+              F: 'cosmiccore:simple_rebreather',
               R: 'gtceu:steel_ring'
-
-       })
-       event.shaped('kubejs:nano_respirator', [
-              ' S ',
-              'RFR',
-              'CXC',
-       ], {
-              C: 'gtceu:mask_filter',
-              X: '#gtceu:circuits/hv',
-              F: 'kubejs:reinforced_respirator',
-              S: 'gtceu:carbon_fiber_plate',
-              R: 'gtceu:stainless_steel_ring'
 
        })
        event.shaped('gtceu:molten_salt_reactor', [

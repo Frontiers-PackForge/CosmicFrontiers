@@ -401,18 +401,6 @@ ItemEvents.tooltip(event => {
 })
 
 ItemEvents.tooltip(event => {
-  event.addAdvanced(/biomancy:(.*)/, (item, advanced, text) => {
-    text.add(1, Text.translate('frontiers.tooltip.coming_soon').red().italic())
-  })
-})
-
-ItemEvents.tooltip(event => {
-  event.addAdvanced(/embers:(.*)/, (item, advanced, text) => {
-    text.add(1, Text.translate('frontiers.tooltip.coming_soon').red().italic())
-  })
-})
-
-ItemEvents.tooltip(event => {
   event.addAdvanced(/forestry:(.*)/, (item, advanced, text) => {
     text.add(1, Text.translate('frontiers.tooltip.coming_soon').red().italic())
   })

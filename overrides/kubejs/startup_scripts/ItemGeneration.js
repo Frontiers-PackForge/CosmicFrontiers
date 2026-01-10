@@ -52,9 +52,6 @@ StartupEvents.registry('item', event => {
 
     event.create('cinder_fuel_pellets').displayName('Cinder Fuel Ember Pellets')
 
-    event.create('reinforced_respirator', 'helmet').displayName('Reinforced Respirator').maxDamage(1024).modifyTier(tier => 'breather')
-
-
     //Planet and Orbit Icons
     event.create('undergarden_dim').displayName('Undergarden')
 })

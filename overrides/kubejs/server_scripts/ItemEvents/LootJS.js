@@ -17,8 +17,6 @@ LootJS.modifiers((event) => {
         .replaceLoot("minecraft:iron_ingot", LootEntry.of('gtceu:tiny_wrought_iron_dust').limitCount([1, 4]))
         .replaceLoot("minecraft:coal", LootEntry.of('gtceu:tiny_coal_dust').limitCount([1, 4]))
 
-    event.addBlockLootModifier("thinair:signal_torch")
-        .addLoot("minecraft:torch");
 
     event.addEntityLootModifier("minecraft:llama")
         .addLoot("minecraft:beef");

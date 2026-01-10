@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
         },
         {
           "count": 1,
-          "item": "thinair:soulfire_bottle"
+          "item": "supplementaries:lumisene_bottle"
         }
       ],
       "input": {
@@ -266,10 +266,10 @@ ServerEvents.recipes(event => {
       'minecraft:stone',
       'malum:earthen_spirit',
       'minecraft:stone',
-      'thinair:soulfire_bottle',
-      'thinair:soulfire_bottle',
-      'thinair:soulfire_bottle',
-      'thinair:soulfire_bottle'],
+      'supplementaries:lumisene_bottle',
+      'supplementaries:lumisene_bottle',
+      'supplementaries:lumisene_bottle',
+      'supplementaries:lumisene_bottle'],
     'minecraft:cobblestone',
     'occultism:rune_ritual'
   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.raw_soul_stone_ritual")

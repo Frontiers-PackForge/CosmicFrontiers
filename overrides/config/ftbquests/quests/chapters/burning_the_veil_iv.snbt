@@ -524,6 +524,7 @@
 			y: -9.5d
 		}
 		{
+			dependencies: ["52DAB014D2101F02"]
 			icon: "cosmiccore:aram_wafer"
 			id: "43114755CCB0642B"
 			tasks: [
@@ -606,6 +607,7 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["52DAB014D2101F02"]
 			id: "22F57579B83579B4"
 			tasks: [{
 				id: "56A2012792544CB7"
@@ -627,6 +629,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["52DAB014D2101F02"]
 			id: "55298AE1E39A7CB1"
 			tasks: [{
 				id: "0807E245C0EA0E4D"
@@ -651,6 +654,7 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["52DAB014D2101F02"]
 			id: "294F39523EE166D8"
 			tasks: [{
 				id: "1BEE3FB9BA21A76A"

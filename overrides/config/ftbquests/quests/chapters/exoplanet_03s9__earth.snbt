@@ -753,16 +753,7 @@
 				""
 				"&8Psst, did you know there's a vanilla way to get charcoal without a furnace, hint hint."
 			]
-			icon: {
-				Count: 1
-				id: "thinair:respirator"
-				tag: {
-					Damage: 214
-					display: {
-						Name: "{\"text\":\"Oddly Damaged Respirator\"}"
-					}
-				}
-			}
+			icon: "cosmiccore:simple_rebreather"
 			id: "7C2BA4D773E57683"
 			optional: true
 			rewards: [
@@ -789,7 +780,7 @@
 				title: "Low Oxygen"
 				type: "checkmark"
 			}]
-			title: "Thin Air and You"
+			title: "Air and You"
 			x: 8.0d
 			y: 4.5d
 		}
