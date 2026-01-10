@@ -46,7 +46,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["0EB887FF13AB1458"]
+			dependencies: [
+				"0EB887FF13AB1458"
+				"4BD17BFAAA55E17D"
+			]
 			id: "2AF737CA4D527559"
 			shape: "hexagon"
 			size: 2.0d
@@ -66,67 +69,47 @@
 				item: "minecraft:nether_star"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 0.0d
+			x: 2.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["52DAB014D2101F02"]
+			dependencies: [
+				"52DAB014D2101F02"
+				"05F6865BC12989CE"
+			]
 			id: "08C67C6A423E236B"
 			tasks: [{
 				id: "4F8A67BA1A0A2A9B"
 				item: "cosmiccore:hellfire_foundry"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["24C21636848036ED"]
+			dependencies: [
+				"24C21636848036ED"
+				"4E2D747A9BECE567"
+			]
+			description: ["Striking various materials with various flavors of high intensity beams in the presence of temporal essence will cause rapid shifts in the molecular structures of seemingly stable materials."]
 			id: "52A19C845A5BD42B"
+			subtitle: "Zap Zap"
 			tasks: [{
 				id: "6B98FE6EC9A3B13C"
 				item: "cosmiccore:atomic_reconstructor"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -2.5d
+			x: -2.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["52DAB014D2101F02"]
-			id: "0896AFC18F9FFF25"
-			tasks: [{
-				id: "457F49F6D70F3275"
-				item: "bloodmagic:altar"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["52DAB014D2101F02"]
-			id: "2C4295D2500A1506"
-			tasks: [{
-				id: "540F3A2B6966DD7A"
-				item: "minecraft:oak_planks"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["52DAB014D2101F02"]
-			id: "34034762BACAA86C"
-			tasks: [{
-				id: "42A9B8A935991173"
-				item: "minecraft:oak_planks"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["52DAB014D2101F02"]
+			dependencies: [
+				"52DAB014D2101F02"
+				"3948598D795FE325"
+			]
 			id: "37503D7E0A9D9633"
+			shape: "hexagon"
+			size: 1.25d
 			tasks: [{
 				id: "32537678A7721A49"
 				item: {
@@ -137,7 +120,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["37503D7E0A9D9633"]
@@ -148,7 +131,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6CEE990C70617870"]
@@ -159,7 +142,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -5.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["52A56FF1B93EC8B7"]
@@ -170,7 +153,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["39AC02C53D5D6A7A"]
@@ -181,7 +164,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["6BD0B34D8070F5B7"]
@@ -192,7 +175,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -7.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1140FD3A07BE5ADC"]
@@ -203,40 +186,47 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -7.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["76B2D1AD3E0996E0"]
 			id: "7BD375990F402C7E"
+			subtitle: "Hold a Stack to skip the chain quests!"
 			tasks: [{
 				id: "4DF1E59A195466AF"
 				item: "gtceu:naquadah_dust"
 				type: "item"
 			}]
 			x: 0.0d
-			y: -8.5d
+			y: -7.5d
 		}
 		{
-			dependencies: ["7BD375990F402C7E"]
+			dependencies: [
+				"7BD375990F402C7E"
+				"5544D88C75719FF5"
+			]
 			id: "0EB887FF13AB1458"
+			subtitle: "The Titan of Industry"
 			tasks: [{
 				id: "282E45F386949EC6"
 				item: "gtceu:assembly_line"
 				type: "item"
 			}]
 			x: 0.0d
-			y: -10.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
 			id: "0B7390AF3A06185E"
+			shape: "rsquare"
 			tasks: [{
 				id: "0DA0196B500C3C4A"
 				item: "gtceu:deeply_withered_nether_slag_bucket"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 0.0d
+			x: 2.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["0B7390AF3A06185E"]
@@ -246,8 +236,8 @@
 				item: "gtceu:nether_star_distillate_slurry_bucket"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 0.0d
+			x: 4.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["0736BF9BB4A993A8"]
@@ -257,8 +247,8 @@
 				item: "kubejs:chromatically_doped_nether_star_boule"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 0.0d
+			x: 4.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["52DAB014D2101F02"]
@@ -276,26 +266,13 @@
 				}
 			]
 			x: 2.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["52DAB014D2101F02"]
-			id: "31DEC36148116AEF"
-			tasks: [{
-				id: "1ECBCF713AA2B145"
-				item: {
-					Count: 1
-					id: "cosmiccore:tenbrium_ingot"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 4.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
 			id: "4BD17BFAAA55E17D"
+			shape: "hexagon"
 			tasks: [{
 				id: "39D5459C11FE9295"
 				item: {
@@ -305,8 +282,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: 1.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["52DAB014D2101F02"]
@@ -320,11 +297,11 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
-			y: 4.0d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["52DAB014D2101F02"]
+			dependencies: ["05F6865BC12989CE"]
 			id: "430C0A80C4128B09"
 			tasks: [{
 				id: "09171497AD1EE49D"
@@ -335,8 +312,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 4.0d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["525281FE6D8CE8F6"]
@@ -347,7 +324,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1507E1D8972EBBCE"]
@@ -358,7 +335,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["52DAB014D2101F02"]
@@ -368,8 +345,343 @@
 				item: "cosmiccore:lumium_ingot"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"52A19C845A5BD42B"
+				"7BD375990F402C7E"
+			]
+			id: "6B0991E170738B5F"
+			tasks: [{
+				id: "7857D143150D4BE9"
+				item: "cosmiccore:tenbrium_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["585032A07826E40E"]
+			id: "4B09CEC760544B58"
+			tasks: [{
+				id: "0785E0DB1C562EC6"
+				item: "gtceu:iv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4B09CEC760544B58"]
+			id: "3948598D795FE325"
+			tasks: [{
+				id: "01E22589F9AD378B"
+				item: "gtceu:osmiridium_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["12FD20955C24A831"]
+			icon: "gtceu:hpic_wafer"
+			id: "585032A07826E40E"
+			tasks: [
+				{
+					id: "5F122053EE89036E"
+					item: "gtceu:hpic_wafer"
+					type: "item"
+				}
+				{
+					id: "70B2EC24E6E6E898"
+					item: "gtceu:hpic_chip"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1F53F5783FED6FA9"]
+			id: "60B8F8313A02F765"
+			tasks: [{
+				id: "2052F42500BAFE34"
+				item: "cosmiccore:lucidic_processor"
+				type: "item"
+			}]
+			x: -3.5d
 			y: -1.5d
+		}
+		{
+			dependencies: [
+				"24C21636848036ED"
+				"43114755CCB0642B"
+				"60B8F8313A02F765"
+			]
+			id: "58AC4361884EC9F6"
+			tasks: [{
+				id: "41572FC692469B67"
+				item: "cosmiccore:lucidic_processor_assembly"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["58AC4361884EC9F6"]
+			id: "30136B012B8330FF"
+			tasks: [{
+				id: "4138CCEED2C4AE70"
+				item: "cosmiccore:lucidic_processor_supercomputer"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["30136B012B8330FF"]
+			id: "4E2D747A9BECE567"
+			tasks: [{
+				id: "577312921A4D52C3"
+				item: "cosmiccore:lucidic_processor_mainframe"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["536BE118721A5C2C"]
+			id: "286A3FB938CD464B"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6F806C4F0E3C8E22"
+				item: "gtceu:iv_parallel_hatch"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"3948598D795FE325"
+				"6F1CDA84C100FA72"
+			]
+			id: "536BE118721A5C2C"
+			tasks: [
+				{
+					id: "265B59A76D7DA345"
+					item: "gtceu:iv_sensor"
+					type: "item"
+				}
+				{
+					id: "3E7FFC35CFEA4128"
+					item: "gtceu:iv_emitter"
+					type: "item"
+				}
+			]
+			title: "You're gonna hate thi- wait wrong questbook."
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0EB887FF13AB1458"]
+			id: "337B67EA3CA85CD9"
+			shape: "gear"
+			tasks: [{
+				id: "20E58D8130BB80E1"
+				item: "gtceu:iv_scanner"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"6B0991E170738B5F"
+				"4E2D747A9BECE567"
+			]
+			description: [
+				"The &eAssembly Line Casing&r is required to make your &bAssembly Line Controller&r as well as the &6structure itself&r."
+				""
+				""
+				"To make your life easier, to adequately handle LUV you will need an &nAssembly Line length&r of &a10&r (If you are confused, see the next quest regarding the Assembly Line Multiblock)"
+				""
+				"Meaning you will need &a14&r of these."
+				""
+				"Go tell AE2 to craft these now, they will take a while from the heavy input of ZPM circuits, you'll need 40 Mainframes for these casings alone!"
+			]
+			id: "5544D88C75719FF5"
+			subtitle: "The Most Expensive Part!"
+			tasks: [{
+				id: "468D2E10B8169B20"
+				item: "gtceu:assembly_line_casing"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -9.5d
+		}
+		{
+			icon: "cosmiccore:aram_wafer"
+			id: "43114755CCB0642B"
+			tasks: [
+				{
+					id: "107CCB60DD943E0B"
+					item: "cosmiccore:aram_wafer"
+					type: "item"
+				}
+				{
+					id: "407B534C20ED1EF5"
+					item: "cosmiccore:aram_chip"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"0F12F880B94DD02B"
+				"3102A9DF9E420300"
+			]
+			id: "1F53F5783FED6FA9"
+			tasks: [{
+				id: "65EAB5F722C46F24"
+				item: "gtceu:fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"267D99FDECEF73D9"
+				"396CFA20C4FF6001"
+			]
+			id: "0F12F880B94DD02B"
+			tasks: [{
+				id: "17F49BA695F2FE37"
+				item: "gtceu:fiber_reinforced_circuit_board"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7DC75D27BBB5EAE3"]
+			id: "267D99FDECEF73D9"
+			tasks: [{
+				id: "77D1E93396D0AB1F"
+				item: "gtceu:4_4_oxydianiline_pyromellitimide_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"450F232063E7C41E"
+				"1BC724D6C344F2E6"
+			]
+			id: "7DC75D27BBB5EAE3"
+			tasks: [{
+				id: "380B60EA7B52792C"
+				item: "gtceu:poly_amic_acid_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["22F57579B83579B4"]
+			id: "1BC724D6C344F2E6"
+			tasks: [{
+				id: "1FE92EC0DD18EE14"
+				item: "gtceu:oxydianiline_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			id: "22F57579B83579B4"
+			tasks: [{
+				id: "56A2012792544CB7"
+				item: "gtceu:aniline_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["55298AE1E39A7CB1"]
+			id: "450F232063E7C41E"
+			tasks: [{
+				id: "1A9E95F3556EC0FC"
+				item: "gtceu:pyromellitic_dianhydride_dust"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			id: "55298AE1E39A7CB1"
+			tasks: [{
+				id: "0807E245C0EA0E4D"
+				item: "gtceu:durene_dust"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"621C313A09916A95"
+				"294F39523EE166D8"
+			]
+			id: "396CFA20C4FF6001"
+			tasks: [{
+				id: "2776ABA740FECE8C"
+				item: "gtceu:fluorinated_ethylene_propylene_bucket"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			id: "294F39523EE166D8"
+			tasks: [{
+				id: "1BEE3FB9BA21A76A"
+				item: "gtceu:tetrafluoroethylene_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["294F39523EE166D8"]
+			id: "621C313A09916A95"
+			tasks: [{
+				id: "294B66AE77601726"
+				item: "gtceu:hexafluoropropylene_bucket"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["52DAB014D2101F02"]
+			id: "3102A9DF9E420300"
+			shape: "hexagon"
+			tasks: [{
+				id: "2296737A17F2B1E1"
+				item: "cosmiccore:halizine_alloy_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
 		}
 	]
 	title: "Burning the Veil [IV]"

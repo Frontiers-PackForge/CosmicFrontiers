@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
     .emberInput(750)
     .duration(120)
     .EUt(GTValues.VA[GTValues.LV], 4);
-
+  //Alas Github Forgets the Change?
   event.recipes.gtceu.dawn_forge('frontiers:dawn_hv_core')
     .notConsumable('embers:dawnstone_aspectus')
     .notConsumable('embers:dawnstone_aspectus')

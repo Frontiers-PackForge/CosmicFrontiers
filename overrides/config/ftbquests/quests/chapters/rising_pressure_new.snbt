@@ -3286,7 +3286,7 @@
 		{
 			dependencies: [
 				"7020F96E0AFD19EF"
-				"7CB6F107009BAF72"
+				"444121A9A5008568"
 			]
 			description: [
 				"The Ignem Reactor must be placed between the top sections of a &6Catalysis Chamber&r and &6Combustion Chamber&r. "
@@ -3460,6 +3460,32 @@
 			}]
 			x: -21.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["33F12EC34D6CBDD5"]
+			icon: "cosmiccore:dawn_forge"
+			id: "444121A9A5008568"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "252FE393E0B59A73"
+					item: "cosmiccore:light_dawnstone_casing"
+					type: "item"
+				}
+				{
+					id: "0C22CD3880DEF42D"
+					item: "cosmiccore:reinforced_dawnstone_casing"
+					type: "item"
+				}
+				{
+					id: "57AA82185585AA16"
+					item: "cosmiccore:dawn_forge"
+					type: "item"
+				}
+			]
+			title: "The Dawn of Forging"
+			x: -20.0d
+			y: -10.5d
 		}
 	]
 	title: "Rising Pressure - [Steam]"
