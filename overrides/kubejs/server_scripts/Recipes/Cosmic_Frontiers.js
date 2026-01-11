@@ -39,12 +39,58 @@ ServerEvents.tags('item', event => {
        event.add('embers:augmentables/tools_armors', 'cosmiccore:sanguine_warptech_leggings')
        event.add('embers:augmentables/tools_armors', 'cosmiccore:sanguine_warptech_boots')
 
+       event.add('forestry:backpack/reject/miner', 'gtceu:netherrack_dust')
+       event.add('forestry:backpack/reject/miner', 'gtceu:granite_dust')
+       event.add('forestry:backpack/reject/miner', 'gtceu:diorite_dust')
+       event.add('forestry:backpack/reject/miner', 'gtceu:andesite_dust')
+       event.add('forestry:backpack/reject/miner', 'gtceu:stone_dust')
 
-       event.remove('forestry:backpack/allow/miner', 'gtceu:netherrack_dust')
-       event.remove('forestry:backpack/allow/miner', 'gtceu:granite_dust')
-       event.remove('forestry:backpack/allow/miner', 'gtceu:diorite_dust')
-       event.remove('forestry:backpack/allow/miner', 'gtceu:andesite_dust')
-       event.remove('forestry:backpack/allow/miner', 'gtceu:stone_dust')
+       event.add('forestry:backpack/allow/digger', [
+           '#create:stone_types/dripstone',
+           '#create:stone_types/asurine',
+           '#create:stone_types/crimsite',
+           '#create:stone_types/limestone',
+           '#create:stone_types/ochrum',
+           '#create:stone_types/scoria',
+           '#create:stone_types/veridium',
+           '#forge:cobblestone',
+           '#forge:granite_red',
+           '#forge:marble',
+           '#aether:holystone',
+           '#tconstruct:congealed_slime',
+           'aether:icestone',
+           'aether:aether_dirt',
+           'aether:aether_grass',
+           'gtceu:red_granite_cobblestone',
+           'gtceu:marble_cobblestone',
+           'ae2:sky_stone_block',
+           'ad_astra:cheese_block',
+           'ad_astra:sky_stone',
+           'ad_astra:moon_sand',
+           'ad_astra:moon_stone',
+           'ad_astra:moon_deepslate',
+           'ad_astra:moon_cobblestone',
+           'ad_astra:mars_sand',
+           'ad_astra:mars_stone',
+           'ad_astra:mars_cobblestone',
+           'ad_astra:venus_sandstone',
+           'ad_astra:venus_sand',
+           'ad_astra:venus_stone',
+           'ad_astra:venus_cobblestone',
+           'ad_astra:mercury_stone',
+           'ad_astra:mercury_cobblestone',
+           'ad_astra:glacio_stone',
+           'ad_astra:glacio_cobblestone',
+           'ad_astra:permafrost',
+           'tconstruct:earth_slime_dirt',
+           'tconstruct:earth_earth_slime_grass',
+           'tconstruct:earth_sky_slime_grass',
+           'tconstruct:earth_ichor_slime_grass',
+           'tconstruct:earth_ender_slime_grass',
+           'tconstruct:sky_slime_dirt',
+           'tconstruct:ichor_slime_dirt',
+           'tconstruct:ender_slime_dirt'
+       ])
 
 })
 yeet('gtceu:rtm_alloy_coil_block')
