@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:large_chemical_reactor/osmium_tetroxide_separation' })
     event.remove({ id: 'gtceu:chemical_reactor/iridium_chloride_separation' })
     event.remove({ id: 'gtceu:large_chemical_reactor/iridium_chloride_separation' })
-    event.remove({ id: 'gtceu:vomahine_industrial_chemvat/iridium_chloride_separation' })
+    event.remove({ id: 'gtceu:industrial_chemvat/iridium_chloride_separation' })
     event.remove({ id: 'gtceu:electrolyzer/raw_platinum_separation' })
     event.remove({ id: 'gtceu:chemical_reactor/inert_metal_mixture_separation' })
     event.remove({ id: 'gtceu:large_chemical_reactor/inert_metal_mixture_separation' })
@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     // event.remove({ output: 'gtceu:platinum_group_sludge_dust' })
     event.replaceOutput({ type: 'gtceu:large_chemical_reactor' }, 'gtceu:platinum_group_sludge_dust', 'gtceu:insoluble_plat_group_residue_dust')
     event.replaceOutput({ type: 'gtceu:chemical_reactor' }, 'gtceu:platinum_group_sludge_dust', 'gtceu:insoluble_plat_group_residue_dust')
-    event.replaceOutput({ type: 'gtceu:vomahine_industrial_chemvat' }, 'gtceu:platinum_group_sludge_dust', 'gtceu:insoluble_plat_group_residue_dust')
+    event.replaceOutput({ type: 'gtceu:industrial_chemvat' }, 'gtceu:platinum_group_sludge_dust', 'gtceu:insoluble_plat_group_residue_dust')
     event.replaceOutput({ id: 'gtceu:centrifuge/endstone_separation' }, 'gtceu:platinum_dust', 'gtceu:cooperite_dust')
 
     event.recipes.gtceu.chemical_reactor('ammonium_chloride_dust')

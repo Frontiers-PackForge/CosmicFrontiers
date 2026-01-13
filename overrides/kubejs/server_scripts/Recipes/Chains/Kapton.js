@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV]);
     event.remove({ id: 'gtceu:chemical_reactor/fiber_board' })
     event.remove({ id: 'gtceu:large_chemical_reactor/fiber_board' })
-    event.remove({ id: 'gtceu:vomahine_industrial_chemvat/fiber_board' })
+    event.remove({ id: 'gtceu:industrial_chemvat/fiber_board' })
     event.recipes.gtceu.aio_lithography_processor('frontiers:new_circuit_board')
         .itemInputs('1x gtceu:4_4_oxydianiline_pyromellitimide_plate')
         .itemInputs('gtceu:carbon_fibers')
