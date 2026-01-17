@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
         },
         {
           "count": 1,
-          "item": "supplementaries:lumisene_bottle"
+          "item": "tconstruct:magma_bottle"
         }
       ],
       "input": {
