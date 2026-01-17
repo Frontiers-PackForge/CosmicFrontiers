@@ -74,15 +74,15 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'create:pressing/sugar_cane' })
   event.remove({ output: 'create:andesite_alloy' })
   event.remove({ id: 'create:crafting/appliances/chain_from_zinc' })
-  event.remove({ id: "create:crushing/crimsite"})
-  event.remove({ id: "create:crushing/crimsite_recycling"})
-  event.remove({ id: "create:crushing/ochrum"})
-  event.remove({ id: "create:crushing/ochrum_recycling"})
-  event.remove({ id: "create:crushing/veridium"})
-  event.remove({ id: "create:crushing/veridium_recycling"})
-  event.remove({ id: "create:crushing/asurine"})
-  event.remove({ id: "create:crushing/asurine_recycling"})
-  
+  event.remove({ id: "create:crushing/crimsite" })
+  event.remove({ id: "create:crushing/crimsite_recycling" })
+  event.remove({ id: "create:crushing/ochrum" })
+  event.remove({ id: "create:crushing/ochrum_recycling" })
+  event.remove({ id: "create:crushing/veridium" })
+  event.remove({ id: "create:crushing/veridium_recycling" })
+  event.remove({ id: "create:crushing/asurine" })
+  event.remove({ id: "create:crushing/asurine_recycling" })
+
   //rock crusher
   //CS = Create Stones
   let CSreg = [
@@ -100,31 +100,31 @@ ServerEvents.recipes(event => {
   ]
 
   CSreg.forEach(CSreg => {
-  event.recipes.gtceu.rock_breaker(`create:${CSreg}_rock_breaker`)
-    .notConsumable(`create:${CSreg}`)
-    .itemOutputs(`create:${CSreg}`)
-    .adjacentFluids(["minecraft:lava", "minecraft:water"])
-    .duration(16)
-    .EUt(7);
-   })
+    event.recipes.gtceu.rock_breaker(`create:${CSreg}_rock_breaker`)
+      .notConsumable(`create:${CSreg}`)
+      .itemOutputs(`create:${CSreg}`)
+      .adjacentFluids(["minecraft:lava", "minecraft:water"])
+      .duration(16)
+      .EUt(7);
+  })
 
   CSchoc.forEach(CSchoc => {
-  event.recipes.gtceu.rock_breaker(`create:${CSchoc}_rock_breaker`)
-    .notConsumable(`create:${CSchoc}`)
-    .itemOutputs(`create:${CSchoc}`)
-    .adjacentFluids(["minecraft:lava", "create:chocolate"])
-    .duration(16)
-    .EUt(7);
-   })
+    event.recipes.gtceu.rock_breaker(`create:${CSchoc}_rock_breaker`)
+      .notConsumable(`create:${CSchoc}`)
+      .itemOutputs(`create:${CSchoc}`)
+      .adjacentFluids(["minecraft:lava", "create:chocolate"])
+      .duration(16)
+      .EUt(7);
+  })
 
   CShoney.forEach(CShoney => {
-  event.recipes.gtceu.rock_breaker(`create:${CShoney}_rock_breaker`)
-    .notConsumable(`create:${CShoney}`)
-    .itemOutputs(`create:${CShoney}`)
-    .adjacentFluids(["minecraft:lava", "create:honey"])
-    .duration(16)
-    .EUt(7);
-   })
+    event.recipes.gtceu.rock_breaker(`create:${CShoney}_rock_breaker`)
+      .notConsumable(`create:${CShoney}`)
+      .itemOutputs(`create:${CShoney}`)
+      .adjacentFluids(["minecraft:lava", "create:honey"])
+      .duration(16)
+      .EUt(7);
+  })
 
   event.recipes.gtceu.rock_breaker(`create:tuff_rock_breaker`)
     .notConsumable(`minecraft:tuff`)
@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
     .adjacentFluids(["minecraft:lava", "minecraft:water"])
     .duration(16)
     .EUt(7);
-    
+
   event.recipes.gtceu.rock_breaker(`create:calcite_rock_breaker`)
     .notConsumable(`minecraft:calcite`)
     .itemOutputs(`minecraft:calcite`)
@@ -147,17 +147,17 @@ ServerEvents.recipes(event => {
     .adjacentFluids(["minecraft:lava", "minecraft:water"])
     .duration(16)
     .EUt(7);
-    
-    event.remove({ id: 'create:milling/dripstone_block'})
-    event.remove({ id: 'create:crushing/dripstone_block'})
 
-    event.recipes.createMilling([
-      Item.of('minecraft:clay_ball').withChance(0.10)
-   ], 'minecraft:dripstone_block')
+  event.remove({ id: 'create:milling/dripstone_block' })
+  event.remove({ id: 'create:crushing/dripstone_block' })
 
-    event.recipes.createCrushing([
-      Item.of('minecraft:clay_ball').withChance(0.15)
-   ], 'minecraft:dripstone_block')
+  event.recipes.createMilling([
+    Item.of('minecraft:clay_ball').withChance(0.10)
+  ], 'minecraft:dripstone_block')
+
+  event.recipes.createCrushing([
+    Item.of('minecraft:clay_ball').withChance(0.15)
+  ], 'minecraft:dripstone_block')
 
   //Cogs
   event.remove({ output: 'create:cogwheel' })
@@ -980,10 +980,10 @@ ServerEvents.recipes(event => {
     'CCC'
   ], {
     C: 'create:railway_casing',
-    F: '#supplementaries:flags'
+    F: '#minecraft:banners'
   })
   event.recipes.gtceu.assembler("create:track_station")
-    .itemInputs('3x create:railway_casing', '#supplementaries:flags')
+    .itemInputs('3x create:railway_casing', '#minecraft:banners')
     .itemOutputs('2x create:track_station')
     .circuit(11)
     .duration(50)
@@ -1140,7 +1140,7 @@ ServerEvents.recipes(event => {
     .duration(50)
     .EUt(8);
   //Display Link, makes this pre nether too (used to craft stock link)
-  event.remove({ id: 'create:crafting/logistics/display_link'})
+  event.remove({ id: 'create:crafting/logistics/display_link' })
   event.shaped('2x create:brass_tunnel', [
     ' T ',
     ' C ',
@@ -1279,11 +1279,19 @@ ServerEvents.recipes(event => {
     .EUt(8);
   //Polished Rose Quartz
   event.recipes.gtceu.mixer("create:rose_quartz")
-    .itemInputs('#forge:gems/rose_quartz')
+    .itemInputs('create:rose_quartz')
     .notConsumable('minecraft:sand')
     .itemOutputs('create:polished_rose_quartz')
     .duration(50)
     .EUt(8);
+
+  event.recipes.gtceu.mixer("create:rose_quartz_bop")
+    .itemInputs('biomesoplenty:rose_quartz_chunk')
+    .notConsumable('minecraft:sand')
+    .itemOutputs('create:polished_rose_quartz')
+    .duration(50)
+    .EUt(8);
+
   //bop rose quartz block hammering
   event.remove({ id: "create:rose_quartz_block_from_rose_quartz_stonecutting" })
   event.remove({ id: "biomesoplenty:rose_quartz_block" })
@@ -1386,14 +1394,14 @@ ServerEvents.recipes(event => {
     C: '#gtceu:circuits/hv'
   })
   //cardboard
-  event.remove({id: "create:crafting/appliances/book"})
+  event.remove({ id: "create:crafting/appliances/book" })
   event.recipes.gtceu.mixer("create:pulp")
-  .circuit(1)
-  .itemInputs('4x gtceu:wood_dust')
-  .inputFluids('minecraft:water 400')
-  .itemOutputs('create:pulp')
-  .duration(50)
-  .EUt(16);
+    .circuit(1)
+    .itemInputs('4x gtceu:wood_dust')
+    .inputFluids('minecraft:water 400')
+    .itemOutputs('create:pulp')
+    .duration(50)
+    .EUt(16);
   event.recipes.gtceu.compressor("create:cardboard")
     .itemInputs('create:pulp')
     .itemOutputs('create:cardboard')
@@ -1404,16 +1412,16 @@ ServerEvents.recipes(event => {
   event.replaceInput({ mod: 'create_connected' }, 'create:iron_sheet', 'gtceu:iron_plate')
   event.replaceInput({ mod: 'create_connected' }, 'create:brass_sheet', 'gtceu:brass_plate')
   //fan catalyst
-  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst'})
-  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_seething'})
-  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_ending_dragon_head'})
-  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_freezing'})
-  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_ending_dragons_breath'})
-  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_enriched'})
-  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_withering'})
-  event.remove({id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_sanding'})
+  event.remove({ id: 'create_connected:crafting/kinetics/empty_fan_catalyst' })
+  event.remove({ id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_seething' })
+  event.remove({ id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_ending_dragon_head' })
+  event.remove({ id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_freezing' })
+  event.remove({ id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_ending_dragons_breath' })
+  event.remove({ id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_enriched' })
+  event.remove({ id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_withering' })
+  event.remove({ id: 'create_connected:crafting/kinetics/empty_fan_catalyst_from_sanding' })
 
-  event.shaped('create_connected:empty_fan_catalyst' ,[
+  event.shaped('create_connected:empty_fan_catalyst', [
     'RGR',
     'G G',
     'RGR'
@@ -1422,7 +1430,7 @@ ServerEvents.recipes(event => {
     G: 'minecraft:iron_bars',
   })
   //Item silo, this is just the regular item vault recipe but rods/plates swapped and a dif circuit
-  event.remove({id: 'create_connected:crafting/kinetics/item_silo'})
+  event.remove({ id: 'create_connected:crafting/kinetics/item_silo' })
   event.shaped('3x create_connected:item_silo', [
     'PRP',
     'RCR',
@@ -1433,34 +1441,34 @@ ServerEvents.recipes(event => {
     R: 'gtceu:bronze_plate'
   })
   event.recipes.gtceu.assembler("create_connected:item_silo")
-  .itemInputs('4x gtceu:bronze_plate', '4x gtceu:bronze_rod', 'gtceu:bronze_crate')
-  .itemOutputs('3x create_connected:item_silo')
-  .circuit(10)
-  .duration(50)
-  .EUt(8);
+    .itemInputs('4x gtceu:bronze_plate', '4x gtceu:bronze_rod', 'gtceu:bronze_crate')
+    .itemOutputs('3x create_connected:item_silo')
+    .circuit(10)
+    .duration(50)
+    .EUt(8);
   //Fluid Vessel, these crash when fluid is put into them (either by create or gt methods) create:connected ver 1.1.7
   //also the regular fluid tank recipe but rotated/dif circuit
-  event.remove({output: 'create_connected:fluid_vessel'})
-//  event.shaped('4x create_connected:fluid_vessel' ,[
-//    'CBC',
-//    'GDG',
-//    'CBC'
-//  ], {
-//    D: 'gtceu:bronze_drum',
-//    C: 'gtceu:copper_plate',
-//    B: 'minecraft:glass_pane',
-//    G: 'gtceu:bronze_plate'
-//  })
-//  event.recipes.gtceu.assembler("create_connected:fluid_vessel")
-//    .itemInputs('gtceu:bronze_drum', '4x gtceu:copper_plate','2x minecraft:glass_pane', '2x gtceu:bronze_plate')
-//    .itemOutputs('4x create_connected:fluid_vessel')
-//    .duration(50)
-//    .circuit(10)
-//    .EUt(8);
+  event.remove({ output: 'create_connected:fluid_vessel' })
+  //  event.shaped('4x create_connected:fluid_vessel' ,[
+  //    'CBC',
+  //    'GDG',
+  //    'CBC'
+  //  ], {
+  //    D: 'gtceu:bronze_drum',
+  //    C: 'gtceu:copper_plate',
+  //    B: 'minecraft:glass_pane',
+  //    G: 'gtceu:bronze_plate'
+  //  })
+  //  event.recipes.gtceu.assembler("create_connected:fluid_vessel")
+  //    .itemInputs('gtceu:bronze_drum', '4x gtceu:copper_plate','2x minecraft:glass_pane', '2x gtceu:bronze_plate')
+  //    .itemOutputs('4x create_connected:fluid_vessel')
+  //    .duration(50)
+  //    .circuit(10)
+  //    .EUt(8);
 
   //sequenced pulse generator
-  event.remove({output: 'create_connected:sequenced_pulse_generator'})
-  event.shaped('create_connected:sequenced_pulse_generator' ,[
+  event.remove({ output: 'create_connected:sequenced_pulse_generator' })
+  event.shaped('create_connected:sequenced_pulse_generator', [
     'EC ',
     'EBR',
     'SSS'
@@ -1472,8 +1480,8 @@ ServerEvents.recipes(event => {
     S: '#forge:stone'
   })
   //hypertube
-  event.remove({output: 'create_hypertube:hypertube'})
-  event.shaped('16x create_hypertube:hypertube' ,[
+  event.remove({ output: 'create_hypertube:hypertube' })
+  event.shaped('16x create_hypertube:hypertube', [
     'RGR',
     'G G',
     'RGR'

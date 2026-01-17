@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
 
 
   event.recipes.gtceu.aio_lithography_processor("pragmiso")
-    .itemInputs()
+    .itemInputs(['gtceu:highly_advanced_soc', '2x cosmiccore:thaumica_wafer', '2x cosmiccore:eterna_wafer'])
     .chancedItemOutputLogic($ChanceLogic.XOR)
     .chancedOutput('4x cosmiccore:fused_wafer_of_logos', 9000, 0)
     .chancedOutput('2x cosmiccore:alchemia_wafer', 500, 0)

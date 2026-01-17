@@ -148,7 +148,6 @@ ServerEvents.tags('item', event => {
 ServerEvents.recipes(event => {
   event.remove({ output: 'ae2:item_cell_housing' })
   event.remove({ output: 'ae2:fluid_cell_housing' })
-  event.remove({ output: 'appbot:mana_cell_housing' })
   event.remove({ output: 'megacells:mega_item_cell_housing' })
   event.remove({ output: 'megacells:mega_fluid_cell_housing' })
   event.remove({ output: 'megacells:mega_mana_cell_housing' })
@@ -555,18 +554,6 @@ ServerEvents.recipes(event => {
     .itemOutputs('ae2:fluid_cell_housing')
     .duration(80)
     .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.assembler('appbot:mana_cell_housing')
-    .itemInputs(['3x gtceu:manasteel_plate', '2x gtceu:tempered_glass', '2x gtceu:red_alloy_single_cable', 'ae2:formation_core', 'ae2:annihilation_core'])
-    .inputFluids(`gtceu:redstone 144`)
-    .itemOutputs('appbot:mana_cell_housing')
-    .duration(80)
-    .EUt(GTValues.VA[GTValues.LV]);
-  event.recipes.gtceu.assembler('arseng:source_cell_housing')
-    .itemInputs(['3x gtceu:rose_gold_plate', '2x gtceu:tempered_glass', '2x gtceu:red_alloy_single_cable', 'ae2:formation_core', 'ae2:annihilation_core'])
-    .inputFluids(`gtceu:redstone 144`)
-    .itemOutputs('arseng:source_cell_housing')
-    .duration(80)
-    .EUt(GTValues.VA[GTValues.LV]);
   event.recipes.gtceu.assembler('arseng:basic_card_craft')
     .itemInputs(['16x gtceu:fine_red_alloy_wire', '4x gtceu:steel_plate', '4x gtceu:rose_gold_plate', '#gtceu:circuits/mv'])
     .inputFluids(`gtceu:soldering_alloy 144`)
@@ -863,7 +850,6 @@ ServerEvents.recipes(event => {
   ae2Components.forEach(ae2comp => {
     event.remove({ output: `ae2:item_storage_cell_${ae2comp}k` })
     event.remove({ output: `ae2:fluid_storage_cell_${ae2comp}k` })
-    event.remove({ output: `appbot:mana_storage_cell_${ae2comp}k` })
     event.remove({ output: `megacells:item_storage_cell_${ae2comp}m` })
     event.remove({ output: `megacells:fluid_storage_cell_${ae2comp}m` })
     event.remove({ output: `megacells:mana_storage_cell_${ae2comp}m` })
@@ -877,11 +863,6 @@ ServerEvents.recipes(event => {
       `ae2:cell_component_${ae2comp}k`
 
     ])
-    event.shapeless(`appbot:mana_storage_cell_${ae2comp}k`, [
-      'appbot:mana_cell_housing',
-      `ae2:cell_component_${ae2comp}k`
-
-    ])
     //Now the Mega Cells
     event.shapeless(`megacells:item_storage_cell_${ae2comp}m`, [
       'megacells:mega_item_cell_housing',
@@ -890,11 +871,6 @@ ServerEvents.recipes(event => {
     ])
     event.shapeless(`megacells:fluid_storage_cell_${ae2comp}m`, [
       'megacells:mega_fluid_cell_housing',
-      `megacells:cell_component_${ae2comp}m`
-
-    ])
-    event.shapeless(`megacells:mana_storage_cell_${ae2comp}m`, [
-      'megacells:mega_mana_cell_housing',
       `megacells:cell_component_${ae2comp}m`
 
     ])

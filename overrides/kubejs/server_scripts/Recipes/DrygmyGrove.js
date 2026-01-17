@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.EV]);
   event.recipes.gtceu.drygmy_grove('grove_guardian')
     .notConsumable('ars_nouveau:drygmy_charm')
-    .notConsumable('oceansdelight:guardian')
+    .notConsumable('minecraft:sponge')
     .itemOutputs('32x minecraft:prismarine_shard')
     .itemOutputs('8x minecraft:prismarine_crystals')
     .itemOutputs('2x minecraft:cod')

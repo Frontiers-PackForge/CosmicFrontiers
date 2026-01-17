@@ -266,10 +266,10 @@ ServerEvents.recipes(event => {
       'minecraft:stone',
       'malum:earthen_spirit',
       'minecraft:stone',
-      'supplementaries:lumisene_bottle',
-      'supplementaries:lumisene_bottle',
-      'supplementaries:lumisene_bottle',
-      'supplementaries:lumisene_bottle'],
+      'tconstruct:magma_bottle',
+      'tconstruct:magma_bottle',
+      'tconstruct:magma_bottle',
+      'tconstruct:magma_bottle'],
     'minecraft:cobblestone',
     'occultism:rune_ritual'
   ).dummy("kubejs:dummy_ritual_thing").id("occultism:frontiers.raw_soul_stone_ritual")

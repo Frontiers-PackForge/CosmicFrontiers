@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:grading_fluid_1 1000')
         .inputFluids('gtceu:butadiene 1000')
         .inputFluids('gtceu:hydrogen_cyanide 1000')
-        .outputFluids('gtceu:adiponitrile')
+        .outputFluids('gtceu:adiponitrile 1000')
         .duration(440)
         .EUt(GTValues.VA[GTValues.IV]);
     event.recipes.gtceu.chemical_reactor('frontiers:hexamethylenediamine')
@@ -43,7 +43,6 @@ ServerEvents.recipes(event => {
         .itemInputs('4x gtceu:hexamethylenediamine_dust', 'bloodmagic:tauoil')
         .inputFluids('gtceu:source_oils 1000')
         .inputFluids('gtceu:adipic_acid 1000')
-        .itemOutputs()
         .outputFluids('gtceu:nylon_jelly_polymer 4000')
         .duration(350)
         .EUt(GTValues.VA[GTValues.ZPM]);

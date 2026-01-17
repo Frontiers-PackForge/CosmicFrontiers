@@ -51,7 +51,6 @@ ServerEvents.recipes(event => {
         'minecraft:moss_block',
         'minecraft:moss_carpet',
         'farmersdelight:onion',
-        'delightful:green_tea_leaf',
         'biomesoplenty:reed',
         'biomesoplenty:cattail',
         'biomesoplenty:huge_lily_pad',
@@ -89,15 +88,7 @@ ServerEvents.recipes(event => {
         'botania:brown_double_flower',
         'botania:magenta_double_flower',
         'botania:purple_double_flower',
-        'farmersdelight:rice_panicle',
-        'culturaldelights:avocado',
-        'culturaldelights:cucumber',
-        'culturaldelights:eggplant',
-        'culturaldelights:white_eggplant',
-        'culturaldelights:corn_cob',
-        'delightful:salmonberries',   
-        'delightful:acorn',
-        'seeddelight:cherry',        
+        'farmersdelight:rice_panicle'  
     ]
 
     floraOverworld.forEach(floraOw => {
@@ -160,9 +151,7 @@ ServerEvents.recipes(event => {
         'minecraft:torchflower',
         'farmersdelight:cabbage',
         'farmersdelight:tomato',
-        'supplementaries:flax',
-        'occultism:datura',
-        'delightful:cantaloupe'
+        'occultism:datura'
     ]
 
     floraOverworldSeeds.forEach(floraOw => {

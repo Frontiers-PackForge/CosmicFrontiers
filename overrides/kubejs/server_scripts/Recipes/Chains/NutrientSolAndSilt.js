@@ -211,12 +211,12 @@ ServerEvents.recipes(event => {
         .dimension('ad_astra:earth_orbit')
         .duration(480)
         .EUt(GTValues.VA[GTValues.IV]);
-    event.recipes.gtceu.assembler('chiplet_assembly')
-        .itemInputs()
-        .dimension('ad_astra:earth_orbit')
-        .itemOutputs('8x cosmiccore:engraved_crystal_chiplet')
-        .duration(480)
-        .EUt(GTValues.VA[GTValues.ZPM]);
+    // event.recipes.gtceu.assembler('chiplet_assembly')
+    //     .itemInputs()
+    //     .dimension('ad_astra:earth_orbit')
+    //     .itemOutputs('8x cosmiccore:engraved_crystal_chiplet')
+    //     .duration(480)
+    //     .EUt(GTValues.VA[GTValues.ZPM]);
     event.recipes.gtceu.assembly_line('chiplet_assembly')
         // .notConsumable('gtceu:iv_emitter')
         .itemInputs(['cosmiccore:unsealed_crystal_cpu', '4x gtceu:emerald_plate', '2x bloodmagic:defaultcrystal', '2x gtceu:tempered_iesnium_plate'])

@@ -114,19 +114,13 @@ ServerEvents.recipes(event => {
     trapdoor('createdeco:copper_trapdoor', 'gtceu:copper_plate')
     trapdoor('createdeco:industrial_iron_trapdoor', 'gtceu:industrial_iron_plate')
     trapdoor('createdeco:zinc_trapdoor', 'gtceu:zinc_plate')
-    trapdoor('trials:copper_trapdoor', 'gtceu:copper_plate')
     
     door('createdeco:andesite_door', 'andesite_alloy', 'createdeco:andesite_trapdoor')
     door('createdeco:brass_door', 'brass', 'createdeco:brass_trapdoor')
     door('createdeco:copper_door', 'copper', 'createdeco:copper_trapdoor')
     door('createdeco:industrial_iron_door', 'industrial_iron', 'createdeco:industrial_iron_trapdoor')
     door('createdeco:zinc_door', 'zinc', 'createdeco:zinc_trapdoor')
-    door('trials:copper_door', 'copper', 'gtceu:copper_plate')
     
-    event.stonecutting('createdeco:copper_door', 'trials:copper_door')
-    event.stonecutting('trials:copper_door', 'createdeco:copper_door')
-    event.stonecutting('createdeco:copper_trapdoor', 'trials:copper_trapdoor')
-    event.stonecutting('trials:copper_trapdoor', 'createdeco:copper_trapdoor')
 
     let dyeColors = [
     'white',

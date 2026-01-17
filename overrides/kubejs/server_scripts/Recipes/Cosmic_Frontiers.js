@@ -204,14 +204,6 @@ ServerEvents.recipes(event => {
 
        event.remove({ id: 'paraglider:paraglider' })
        event.remove({ id: 'gtceu:alloy_smelter/rubber_bar' })
-       event.shaped('paraglider:paraglider', [
-              'SWS',
-              'WSW',
-              'S S',
-       ], {
-              W: 'cosmiccore:waxed_leather',
-              S: 'minecraft:stick'
-       })
        event.shaped('nether_remastered:seal_of_the_underworld_item', [
               'SWS',
               'WSW',
@@ -948,12 +940,12 @@ ServerEvents.recipes(event => {
        // replace all recipes kube can access using ender pearl to use pearl tag 
        event.replaceInput({ input: 'minecraft:ender_pearl' }, 'minecraft:ender_pearl', '#forge:ender_pearls')
        // allow ender overhaul pearls to be made into regular pearls using shapeless or extractor for potential high parallels
-       event.shapeless('ender_pearl', '#endermanoverhaul:ender_pearls')
-       event.recipes.gtceu.extractor('ender_pearl')
-              .itemInputs('#endermanoverhaul:ender_pearls')
-              .itemOutputs('minecraft:ender_pearl')
-              .duration(100)
-              .EUt(4)
+       // event.shapeless('ender_pearl', '#endermanoverhaul:ender_pearls')
+       // event.recipes.gtceu.extractor('ender_pearl')
+       //        .itemInputs('#endermanoverhaul:ender_pearls')
+       //        .itemOutputs('minecraft:ender_pearl')
+       //        .duration(100)
+       //        .EUt(4)
 
        //netherite blocks are stupid. removing recipes and adding them back, seeing as i cant see the recipes im just removing by output :utmostsin:
        event.remove({ output: 'minecraft:netherite_block' })

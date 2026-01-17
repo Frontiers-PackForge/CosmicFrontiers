@@ -262,7 +262,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ output: 'tconstruct:silky_cloth' })
 	event.recipes.gtceu.assembler('frontiers:silky_cloth')
-		.itemInputs(['4x projectred_core:woven_cloth', '#forge:gems/rose_quartz'])
+		.itemInputs(['4x projectred_core:woven_cloth', 'create:polished_rose_quartz'])
 		.itemOutputs('tconstruct:silky_cloth')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])

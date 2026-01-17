@@ -181,7 +181,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV]);
 
     event.recipes.gtceu.biovat('frontiers:pure_blood')
-        .inputFluids('gtceu:gelatin_concentrate 250', 'gtceu:blood_plasma 1000', '')
+        .inputFluids('gtceu:gelatin_concentrate 250', 'gtceu:blood_plasma 1000')
         .itemOutputs('gtceu:gelatin_dust')
         .duration(200)
         //.cleanroom(CleanroomType.STERILE_CLEANROOM)
@@ -240,13 +240,13 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM]);
 
     //This Recipe is Entirely a Shitpost. It's 25000 cheese and there's easier methods to get cheese but this is just FUNNY.
-    event.recipes.gtceu.fermenter(`ad_astra:cheese_insane`)
-        .itemInputs('64x cosmiccore:bifidobacterium_breve')
-        .inputFluids('minecraft:milk 1000000')
-        .itemOutputs(`25000x ad_astra:cheese`)
-        .circuit(2)
-        .duration(8390)
-        .EUt(676767);
+//     event.recipes.gtceu.fermenter(`ad_astra:cheese_insane`)
+//         .itemInputs('64x cosmiccore:bifidobacterium_breve')
+//         .inputFluids('minecraft:milk 1000000')
+//         .itemOutputs(`25000x ad_astra:cheese`)
+//         .circuit(2)
+//         .duration(8390)
+//         .EUt(676767);
     //Vit C
 
     //sugar to glucose
@@ -463,16 +463,16 @@ ServerEvents.recipes(event => {
         .duration(250)
         .EUt(GTValues.VA[GTValues.LuV]);
 
-    event.recipes.gtceu.drygmy_grove('frontiers:summon_a_bajillion_crabs')
-        .notConsumable('crabbersdelight:clawster')
-        .notConsumable('ars_nouveau:drygmy_charm')
-        .inputFluids('gtceu:salt_water 50000')
-        .itemOutputs('crabbersdelight:clawster')
-        .duration(940)
-        .EUt(GTValues.VA[GTValues.EV]);
+    // event.recipes.gtceu.drygmy_grove('frontiers:summon_a_bajillion_crabs')
+    //     .notConsumable('crabbersdelight:clawster')
+    //     .notConsumable('ars_nouveau:drygmy_charm')
+    //     .inputFluids('gtceu:salt_water 50000')
+    //     .itemOutputs('crabbersdelight:clawster')
+    //     .duration(940)
+    //     .EUt(GTValues.VA[GTValues.EV]);
 
     event.recipes.gtceu.extractor('frontiers:crab_juice')
-        .itemInputs('crabbersdelight:clawster')
+        .itemInputs('undergarden:ditchbulb')
         .outputFluids('gtceu:chitin 150')
         .duration(50)
         .EUt(GTValues.VA[GTValues.EV]);
