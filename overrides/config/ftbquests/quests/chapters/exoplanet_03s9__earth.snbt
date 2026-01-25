@@ -201,6 +201,17 @@
 					}
 					type: "item"
 				}
+				{
+					id: "3ED038A60354843C"
+					item: {
+						Count: 1
+						id: "cosmiccore:vein_survey_scanner_lv"
+						tag: {
+							Charge: 100000L
+						}
+					}
+					type: "item"
+				}
 			]
 			shape: "gear"
 			size: 1.5d
@@ -308,15 +319,11 @@
 							upgrades: -6
 						}
 						tic_stats: {
-							"tconstruct:armor_toughness": 1.0f
 							"tconstruct:attack_damage": 8.505001f
-							"tconstruct:attack_speed": 1.0079999f
-							"tconstruct:draw_speed": 1.12f
+							"tconstruct:attack_speed": 1.0394999f
 							"tconstruct:durability": 4031.9998f
 							"tconstruct:harvest_tier": "minecraft:netherite"
-							"tconstruct:knockback_resistance": 0.05f
-							"tconstruct:mining_speed": 4.3679996f
-							"tconstruct:velocity": 1.232f
+							"tconstruct:mining_speed": 4.5044994f
 						}
 						tic_upgrades: [
 							{
@@ -361,7 +368,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["012D3A0EBD06AEB3"]
+			dependencies: ["423EB7A96CB261A3"]
 			description: ["Btw, This pack has FTB: Ultimine"]
 			icon: "minecraft:oak_log"
 			id: "2F6DBFCBBC3A0827"
@@ -607,31 +614,6 @@
 		{
 			dependencies: ["423EB7A96CB261A3"]
 			description: [
-				"Stamina allows you to glide with the paraglider, as well as sprint and swim."
-				""
-				"The Stamina duration has been massively buffed."
-				""
-				"In the future stamina will have more integrations."
-			]
-			icon: "paraglider:stamina_vessel"
-			id: "012D3A0EBD06AEB3"
-			rewards: [{
-				id: "6FB73E55958ADF15"
-				item: "cosmiccore:shard_of_perpetuity"
-				type: "item"
-			}]
-			subtitle: "Configure GUI with CTRL+P"
-			tasks: [{
-				id: "0967F63809AE56C6"
-				type: "checkmark"
-			}]
-			title: "Stamina and You"
-			x: 4.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["423EB7A96CB261A3"]
-			description: [
 				"Don't like constantly freezing and overheating in your own base?"
 				""
 				"Make a boilers or ice boxes and give it some warm/cold blocks and fluids, it'll keep you nice and comfortable."
@@ -657,30 +639,6 @@
 			]
 			x: 2.5d
 			y: 6.0d
-		}
-		{
-			dependencies: ["012D3A0EBD06AEB3"]
-			description: [
-				"Using an altar allows you to augment your stamina, allowing more sprinting and parkour actions."
-				""
-				"NYI : In the future, certain foods will allow you to reduce stamina consumption rate as well as potions."
-			]
-			id: "5E8484FF7701ACE3"
-			optional: true
-			rewards: [{
-				id: "3F359B22B7FC83E6"
-				item: "paraglider:goddess_statue"
-				type: "item"
-			}]
-			subtitle: "Spirit Orbs Galore"
-			tasks: [{
-				count: 4L
-				id: "1670C7288BF3A9EC"
-				item: "paraglider:spirit_orb"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 4.5d
 		}
 		{
 			dependencies: ["4D96DE63E82D8EAA"]
@@ -832,25 +790,40 @@
 				""
 				"God I hate coding this game."
 			]
+			icon: "cosmiccore:pressurized_rebreather"
 			id: "1F5442CB5217C1B1"
 			shape: "gear"
 			subtitle: "Better Breathing"
-			tasks: [{
-				id: "0BA57AC9A721A3FB"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"cold_sweat:item_insulation": {
-							Insulation: [ ]
+			tasks: [
+				{
+					id: "4F47A47317F8E8D8"
+					item: "cosmiccore:pressurized_rebreather"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "cosmiccore:bronze_supply_tank"
+						tag: {
+							CosmicCoreO2: {
+								CapacityMb: 1000
+								TicksPerMb: 10
+								TransferPerTick: 5
+							}
 						}
 					}
-					id: "kubejs:reinforced_respirator"
-					tag: {
-						Damage: 0
+					id: "11000B95C4F5F7FD"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(cosmiccore:bronze_supply_tank)item(cosmiccore:steel_supply_tank))"
+						}
 					}
+					title: "Any Oxygen Tank"
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			x: 9.5d
 			y: 4.5d
 		}
@@ -1030,6 +1003,28 @@
 			title: "Some Improvements Can Be Made!"
 			x: 7.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["423EB7A96CB261A3"]
+			description: [
+				"Death is but a pathway."
+				""
+				"(Dying 3 Times Will Unlock this System)"
+			]
+			icon: "cosmiccore:reflection_mirror"
+			id: "5CE17E0A231238F3"
+			rewards: [{
+				id: "42323A3361E178AD"
+				item: "cosmiccore:reflection_mirror"
+				type: "item"
+			}]
+			subtitle: "..."
+			tasks: [{
+				id: "3D3EE18057D0EDF2"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 4.5d
 		}
 	]
 	subtitle: [

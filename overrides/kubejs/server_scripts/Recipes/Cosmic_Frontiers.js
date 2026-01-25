@@ -46,50 +46,50 @@ ServerEvents.tags('item', event => {
        event.add('forestry:backpack/reject/miner', 'gtceu:stone_dust')
 
        event.add('forestry:backpack/allow/digger', [
-           '#create:stone_types/dripstone',
-           '#create:stone_types/asurine',
-           '#create:stone_types/crimsite',
-           '#create:stone_types/limestone',
-           '#create:stone_types/ochrum',
-           '#create:stone_types/scoria',
-           '#create:stone_types/veridium',
-           '#forge:cobblestone',
-           '#forge:granite_red',
-           '#forge:marble',
-           '#aether:holystone',
-           '#tconstruct:congealed_slime',
-           'aether:icestone',
-           'aether:aether_dirt',
-           'aether:aether_grass',
-           'gtceu:red_granite_cobblestone',
-           'gtceu:marble_cobblestone',
-           'ae2:sky_stone_block',
-           'ad_astra:cheese_block',
-           'ad_astra:sky_stone',
-           'ad_astra:moon_sand',
-           'ad_astra:moon_stone',
-           'ad_astra:moon_deepslate',
-           'ad_astra:moon_cobblestone',
-           'ad_astra:mars_sand',
-           'ad_astra:mars_stone',
-           'ad_astra:mars_cobblestone',
-           'ad_astra:venus_sandstone',
-           'ad_astra:venus_sand',
-           'ad_astra:venus_stone',
-           'ad_astra:venus_cobblestone',
-           'ad_astra:mercury_stone',
-           'ad_astra:mercury_cobblestone',
-           'ad_astra:glacio_stone',
-           'ad_astra:glacio_cobblestone',
-           'ad_astra:permafrost',
-           'tconstruct:earth_slime_dirt',
-           'tconstruct:earth_earth_slime_grass',
-           'tconstruct:earth_sky_slime_grass',
-           'tconstruct:earth_ichor_slime_grass',
-           'tconstruct:earth_ender_slime_grass',
-           'tconstruct:sky_slime_dirt',
-           'tconstruct:ichor_slime_dirt',
-           'tconstruct:ender_slime_dirt'
+              '#create:stone_types/dripstone',
+              '#create:stone_types/asurine',
+              '#create:stone_types/crimsite',
+              '#create:stone_types/limestone',
+              '#create:stone_types/ochrum',
+              '#create:stone_types/scoria',
+              '#create:stone_types/veridium',
+              '#forge:cobblestone',
+              '#forge:granite_red',
+              '#forge:marble',
+              '#aether:holystone',
+              '#tconstruct:congealed_slime',
+              'aether:icestone',
+              'aether:aether_dirt',
+              'aether:aether_grass',
+              'gtceu:red_granite_cobblestone',
+              'gtceu:marble_cobblestone',
+              'ae2:sky_stone_block',
+              'ad_astra:cheese_block',
+              'ad_astra:sky_stone',
+              'ad_astra:moon_sand',
+              'ad_astra:moon_stone',
+              'ad_astra:moon_deepslate',
+              'ad_astra:moon_cobblestone',
+              'ad_astra:mars_sand',
+              'ad_astra:mars_stone',
+              'ad_astra:mars_cobblestone',
+              'ad_astra:venus_sandstone',
+              'ad_astra:venus_sand',
+              'ad_astra:venus_stone',
+              'ad_astra:venus_cobblestone',
+              'ad_astra:mercury_stone',
+              'ad_astra:mercury_cobblestone',
+              'ad_astra:glacio_stone',
+              'ad_astra:glacio_cobblestone',
+              'ad_astra:permafrost',
+              'tconstruct:earth_slime_dirt',
+              'tconstruct:earth_earth_slime_grass',
+              'tconstruct:earth_sky_slime_grass',
+              'tconstruct:earth_ichor_slime_grass',
+              'tconstruct:earth_ender_slime_grass',
+              'tconstruct:sky_slime_dirt',
+              'tconstruct:ichor_slime_dirt',
+              'tconstruct:ender_slime_dirt'
        ])
 
 })
@@ -185,22 +185,25 @@ ServerEvents.recipes(event => {
        event.remove({ id: 'bhc:god_apple' })
        event.remove({ id: 'create:industrial_iron_block_from_ingots_iron_stonecutting' })
        event.remove({ id: 'biomesoplenty:tnt_from_bop_sand' })
+       event.remove({ id: 'minecraft:kjs/bloodmagic_alchemytable' })
        // Remove all of Terralith's alt recipes for vanilla blocks (e.g Dropper, Observer, Lever, Dispenser, Piston)
        event.remove({ id: /terralith:(.*)_alt/ })
 
        event.remove({ mod: 'biomancy' })
 
-     //stone buttons bruh
-     event.shaped('6x minecraft:stone_button', [
-             '   ',
-             'TP ',
-             '   '
-         ],
-         {
-             T: '#forge:tools/saws',
-             P: 'minecraft:stone_pressure_plate'
-         })
+       //stone buttons bruh
+       event.shaped('6x minecraft:stone_button', [
+              '   ',
+              'TP ',
+              '   '
+       ],
+              {
+                     T: '#forge:tools/saws',
+                     P: 'minecraft:stone_pressure_plate'
+              })
 
+
+       event.smelting('4x embers:ash','gtceu:coal_dust')
 
        event.remove({ id: 'paraglider:paraglider' })
        event.remove({ id: 'gtceu:alloy_smelter/rubber_bar' })
@@ -321,9 +324,9 @@ ServerEvents.recipes(event => {
               E: 'gtceu:empty_spray_can'
        })
 
-       event.replaceInput({ mod: 'gtceu', id: /iron_/, output: '#minecraft:tools'}, 'minecraft:stick', 'gtceu:long_wood_rod')
-       event.replaceInput({ mod: 'gtceu', id: /golden_/, output: '#minecraft:tools'}, 'minecraft:stick', 'gtceu:long_wood_rod')
-       event.replaceInput({ mod: 'gtceu', id: /diamond_/, output: '#minecraft:tools'}, 'minecraft:stick', 'gtceu:long_wood_rod')
+       event.replaceInput({ mod: 'gtceu', id: /iron_/, output: '#minecraft:tools' }, 'minecraft:stick', 'gtceu:long_wood_rod')
+       event.replaceInput({ mod: 'gtceu', id: /golden_/, output: '#minecraft:tools' }, 'minecraft:stick', 'gtceu:long_wood_rod')
+       event.replaceInput({ mod: 'gtceu', id: /diamond_/, output: '#minecraft:tools' }, 'minecraft:stick', 'gtceu:long_wood_rod')
 
 
        event.recipes.gtceu.assembler('ug_catalyst')
@@ -1116,8 +1119,8 @@ ServerEvents.recipes(event => {
               .EUt(16)
 
        //sneaky gold dupe removal, (you can still dupe but just not turn em back into gold lol)
-       event.remove({ id: 'dustydecorations:coins_to_nuggets_recipe'})
-       event.remove({ id: 'dustydecorations:coins_to_nuggets_recipe_2'})
+       event.remove({ id: 'dustydecorations:coins_to_nuggets_recipe' })
+       event.remove({ id: 'dustydecorations:coins_to_nuggets_recipe_2' })
 
        event.recipes.gtceu.arcane_crucible('frontiers:arcane_crucible/tempered_iesnium_ingot')
               .itemInputs(['4x occultism:iesnium_ingot', '2x gtceu:utherium_gem', '2x gtceu:lanthanum_dust'])
@@ -1198,7 +1201,7 @@ ServerEvents.recipes(event => {
               .itemInputs(['minecraft:deepslate_tiles', '2x #forge:plates/iron'])
               .itemOutputs('cosmiccore:iron_plated_deepslate_tile')
               .circuit(4)
-              .duration(20*4)
+              .duration(20 * 4)
               .EUt(GTValues.VHA[GTValues.ULV]);
        event.stonecutting('2x cosmiccore:iron_plated_deepslate_tile_slab', 'cosmiccore:iron_plated_deepslate_tile')
        event.stonecutting('cosmiccore:iron_plated_deepslate_tile_stairs', 'cosmiccore:iron_plated_deepslate_tile')
@@ -1207,10 +1210,10 @@ ServerEvents.recipes(event => {
               .itemInputs('cosmiccore:iron_plated_deepslate_tile')
               .itemOutputs('2x cosmiccore:iron_plated_deepslate_tile_slab')
               .circuit(4)
-              .duration(20*4)
+              .duration(20 * 4)
               .EUt(GTValues.VHA[GTValues.ULV]);
        event.shapeless('cosmiccore:iron_plated_deepslate_tile',
-    ['cosmiccore:iron_plated_deepslate_tile_slab', 'cosmiccore:iron_plated_deepslate_tile_slab'])
+              ['cosmiccore:iron_plated_deepslate_tile_slab', 'cosmiccore:iron_plated_deepslate_tile_slab'])
        event.shaped('6x cosmiccore:iron_plated_deepslate_tile_stairs', [
               'A  ',
               'AA ',
@@ -1218,5 +1221,5 @@ ServerEvents.recipes(event => {
        ], {
               A: 'cosmiccore:iron_plated_deepslate_tile'
        })
-       
+
 })

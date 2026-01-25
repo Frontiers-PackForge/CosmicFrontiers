@@ -178,9 +178,6 @@ ServerEvents.recipes(event => {
   event.shapeless('cosmiccore:portable_gravity_core', [
     'gtceu:gravitation_engine_unit'
   ])
-  event.shapeless('bloodmagic:alchemytable', [
-    ['botania:brewery', 'minecraft:crafting_table']
-  ])
 
   event.replaceInput(
     { id: 'gtceu:shaped/bronze_bricks_hull' },

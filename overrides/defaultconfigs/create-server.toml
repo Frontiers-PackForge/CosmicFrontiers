@@ -295,7 +295,7 @@
 				hose_pulley = 4.0
 				elevator_pulley = 4.0
 				mechanical_crafter = 2.0
-				chain_conveyor = 1.0
+				chain_conveyor = 0.0
 
 			#.
 			#[in Stress Units]

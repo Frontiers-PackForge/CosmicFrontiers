@@ -2876,8 +2876,8 @@
 			shape: "square"
 			subtitle: "You sell sea shells by the glow of the sun"
 			tasks: [{
-				id: "2554B428AB87EECE"
-				item: "crabbersdelight:clawster"
+				id: "3BE53CDD74A57BED"
+				item: "undergarden:ditchbulb"
 				type: "item"
 			}]
 			x: -6.0d

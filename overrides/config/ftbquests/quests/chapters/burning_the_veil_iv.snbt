@@ -74,8 +74,8 @@
 		}
 		{
 			dependencies: [
-				"52DAB014D2101F02"
 				"05F6865BC12989CE"
+				"3963DF51E15873E4"
 			]
 			id: "08C67C6A423E236B"
 			tasks: [{
@@ -83,8 +83,8 @@
 				item: "cosmiccore:hellfire_foundry"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.5d
+			x: 5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -286,7 +286,10 @@
 			y: -10.5d
 		}
 		{
-			dependencies: ["52DAB014D2101F02"]
+			dependencies: [
+				"52DAB014D2101F02"
+				"5BD8E3AF6223E28C"
+			]
 			id: "05F6865BC12989CE"
 			tasks: [{
 				id: "4B0F89A9AB872357"
@@ -298,22 +301,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["05F6865BC12989CE"]
-			id: "430C0A80C4128B09"
-			tasks: [{
-				id: "09171497AD1EE49D"
-				item: {
-					Count: 1
-					id: "cosmiccore:kuvite_ingot"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 0.0d
-			y: 5.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["525281FE6D8CE8F6"]
@@ -525,6 +513,7 @@
 		}
 		{
 			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
 			icon: "cosmiccore:aram_wafer"
 			id: "43114755CCB0642B"
 			tasks: [
@@ -608,6 +597,7 @@
 		}
 		{
 			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
 			id: "22F57579B83579B4"
 			tasks: [{
 				id: "56A2012792544CB7"
@@ -630,6 +620,7 @@
 		}
 		{
 			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
 			id: "55298AE1E39A7CB1"
 			tasks: [{
 				id: "0807E245C0EA0E4D"
@@ -655,6 +646,7 @@
 		}
 		{
 			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
 			id: "294F39523EE166D8"
 			tasks: [{
 				id: "1BEE3FB9BA21A76A"
@@ -680,12 +672,110 @@
 			id: "3102A9DF9E420300"
 			shape: "hexagon"
 			tasks: [{
-				id: "2296737A17F2B1E1"
-				item: "cosmiccore:halizine_alloy_ingot"
+				id: "2E202430FCD4D452"
+				item: "cosmiccore:halizine_ingot"
 				type: "item"
 			}]
 			x: -2.0d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7BD375990F402C7E"
+				"0EB887FF13AB1458"
+			]
+			id: "6FAB35F6ECB86808"
+			shape: "hexagon"
+			tasks: [{
+				id: "4424D120088D8D9D"
+				item: "cosmiccore:resonant_virtue_meld_coil_block"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["6FAB35F6ECB86808"]
+			id: "229022E2EDD1A191"
+			tasks: [{
+				id: "404ED8B8C80C5155"
+				item: {
+					Count: 1
+					id: "cosmiccore:kuvite_ingot"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["52DAB014D2101F02"]
+			id: "4AB99F0ED0E97D56"
+			tasks: [{
+				id: "2143EC824F294B0B"
+				item: "cosmiccore:dreamers_basin"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4AB99F0ED0E97D56"]
+			id: "3963DF51E15873E4"
+			tasks: [{
+				id: "41196297C69CF984"
+				item: "cosmiccore:iv_soul_input_hatch"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1F0C955173E4C96A"]
+			id: "5BD8E3AF6223E28C"
+			tasks: [{
+				id: "23678AAC73CF63E7"
+				item: "gtceu:nutrient_solution_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6DEC7553013E594A"]
+			id: "1F0C955173E4C96A"
+			tasks: [{
+				id: "78A2953E69C6F052"
+				item: "gtceu:nutrient_solution_base_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4B0096194D25CCA7"]
+			id: "6DEC7553013E594A"
+			tasks: [{
+				id: "05C547248063D99E"
+				item: "gtceu:lake_water_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
+			id: "4B0096194D25CCA7"
+			shape: "pentagon"
+			tasks: [{
+				id: "40DFEF16276B8E82"
+				item: "gtceu:swamp_sediment_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
 		}
 	]
 	title: "Burning the Veil [IV]"

@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.arcane_crucible('frontiers:arcane_crucible/lumium_ingot')
         .itemInputs(['gtceu:palladium_ingot', 'minecraft:blaze_powder', 'minecraft:glowstone_dust', 'minecraft:honeycomb'])
-        .itemOutputs(['cosmiccore:lumium_ingot', 'forestry:beeswax'])
+        .itemOutputs(['cosmiccore:hot_lumium_ingot', 'forestry:beeswax'])
         .emberInput(32000)
         .duration(1500)
         .EUt(GTValues.VA[GTValues.EV]);
