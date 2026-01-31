@@ -193,6 +193,16 @@ ServerEvents.recipes(event => {
 
        event.remove({ mod: 'biomancy' })
 
+
+       event.shapeless('waystones:sharestone', [
+              'waystones:waystone'
+       ])
+
+       
+       event.shapeless('waystones:waystone', [
+              'waystones:sharestone'
+       ])
+
        //stone buttons bruh
        event.shaped('6x minecraft:stone_button', [
               '   ',
