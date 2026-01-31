@@ -1,59 +1,67 @@
 GTCEuServerEvents.oreVeins(event => {
 
-    event.add('kubejs:mars_naq_vein', vein => vein
-        .weight(20).clusterSize(30).density(0.3)
-        .layer('mars_stone')
-        .heightRangeUniform(20, 45)
-        .layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.get('naquadric_metallic_powder')).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Plutonium239).size(1, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.Beryllium).size(2, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.Uranium238).size(2, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.Uraninite).size(2, 3))
-            )
-        )
-        .surfaceIndicatorGenerator(indicator => indicator
+    // Mars Naquadah Vein - Fracture (rare radioactive geode)
+    event.add('kubejs:mars_naq_vein', vein => {
+        vein.weight(20).clusterSize(30).density(0.3)
+        vein.layer('mars_stone')
+        vein.heightRangeUniform(20, 45)
+        let gen = new FractureVeinGenerator()
+            .oreBlock(GTMaterials.get('naquadric_metallic_powder'), 3)
+            .oreBlock(GTMaterials.Plutonium239, 2)
+            .oreBlock(GTMaterials.Beryllium, 1)
+            .oreBlock(GTMaterials.Uranium238, 1)
+            .rareBlock(GTMaterials.Uraninite, 1)
+            .shellRadius(12.0)
+            .shellThickness(0.1)
+            .spikeCount(8)
+            .spikeLength(6.0)
+            .rareBlockChance(0.1)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.get('naquadric_metallic_powder'))
             .density(0.2)
-            .radius(4)
-        )
-    )
-    event.add('kubejs:pure_ilmenite', vein => vein
-        .weight(20).clusterSize(45).density(0.15)
-        .layer('mars_stone')
-        .heightRangeUniform(20, 45)
-        .layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Rutile).size(1, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Ilmenite).size(1, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.Bauxite).size(1, 3))
-            )
-        )
-        .surfaceIndicatorGenerator(indicator => indicator
+            .radius(4))
+    })
+
+    // Pure Ilmenite - Shell (titanium layers)
+    event.add('kubejs:pure_ilmenite', vein => {
+        vein.weight(20).clusterSize(45).density(0.15)
+        vein.layer('mars_stone')
+        vein.heightRangeUniform(20, 45)
+        let gen = new ShellVeinGenerator()
+            .coreBlock(GTMaterials.Ilmenite, 2)
+            .innerBlock(GTMaterials.Rutile, 3)
+            .outerBlock(GTMaterials.Bauxite, 1)
+            .innerRadiusRatio(0.25)
+            .outerRadiusRatio(0.55)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Rutile)
             .density(0.2)
-            .radius(4)
-        )
-    )
-    event.add('kubejs:rich_electrotine', vein => vein
-        .weight(35).clusterSize(25).density(0.6)
-        .layer('mars_stone')
-        .heightRangeUniform(30, 65)
-        .layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Electrotine).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Electrotine).size(1, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.Cobaltite).size(2, 3))
-            )
-        )
-        .surfaceIndicatorGenerator(indicator => indicator
+            .radius(4))
+    })
+
+    // Rich Electrotine - Cluster (dense pockets)
+    event.add('kubejs:rich_electrotine', vein => {
+        vein.weight(35).clusterSize(25).density(0.6)
+        vein.layer('mars_stone')
+        vein.heightRangeUniform(30, 65)
+        let gen = new ClusterVeinGenerator()
+            .oreBlock(GTMaterials.Electrotine, 5)
+            .rareBlock(GTMaterials.Cobaltite, 1)
+            .pocketCount(12)
+            .pocketRadius(0.065)
+            .channelRadius(0.025)
+            .pocketDensity(0.9)
+            .rareBlockChance(0.05)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Electrotine)
             .density(0.2)
-            .radius(4)
-        )
-    )
+            .radius(4))
+    })
 
+    // Tetrahedrite Vein Mars - Fracture
     event.add('kubejs:tetrahedrite_vein_mars', vein => {
         vein.layer('moon_stone')
         vein.weight(40)
@@ -61,22 +69,19 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.35)
         vein.discardChanceOnAirExposure(0)
         vein.heightRangeUniform(16, 60)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Tetrahedrite).size(2, 4))
-                .layer(l => l.weight(3).mat(GTMaterials.Copper).size(1, 3))
-                .layer(l => l.weight(2).mat(GTMaterials.Stibnite).size(1, 2))
-            )
-        )
-        .surfaceIndicatorGenerator(indicator => indicator
+        let gen = new FractureVeinGenerator()
+            .oreBlock(GTMaterials.Tetrahedrite, 3)
+            .oreBlock(GTMaterials.Copper, 3)
+            .rareBlock(GTMaterials.Stibnite, 2)
+            .shellRadius(13.0)
+            .shellThickness(0.12)
+            .spikeCount(9)
+            .spikeLength(6.5)
+            .rareBlockChance(0.1)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Tetrahedrite)
             .density(0.2)
-            .radius(4)
-        )
+            .radius(4))
     })
-   
 })
-
-
-
-//ad_astra:moon

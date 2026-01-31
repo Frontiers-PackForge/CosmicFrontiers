@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
     .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.suffering_chamber('suffering_chamber_villager_basic')
     .notConsumable('minecraft:villager_spawn_egg')
-    .soulOutput(32000)
+    .soulOutput(CosmicSoulTypes.Raw, 32000)
     .duration(600)
     .EUt(GTValues.VA[GTValues.EV]);
 

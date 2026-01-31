@@ -1,6 +1,8 @@
 const $CosmicMaterials = Java.loadClass("com.ghostipedia.cosmiccore.common.data.materials.CosmicMaterials")
+
 GTCEuServerEvents.oreVeins(event => {
 
+    // Dreamstone - Shell (cosmic materials layered)
     event.add('kubejs:dreamstone', vein => {
         vein.layer('aether_islands')
         vein.weight(60)
@@ -8,61 +10,68 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.55)
         vein.discardChanceOnAirExposure(1)
         vein.heightRangeUniform(16, 128)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat($CosmicMaterials.Somanone).size(2, 4))
-                .layer(l => l.weight(2).mat($CosmicMaterials.Moondrop).size(1, 3))
-                .layer(l => l.weight(3).mat(GTMaterials.Iron).size(1, 3))
-            )
-        )
-            .surfaceIndicatorGenerator(indicator => indicator
-                .surfaceRock($CosmicMaterials.Somanone)
-                .density(0.2)
-                .radius(4)
-            )
+        let gen = new ShellVeinGenerator()
+            .coreBlock($CosmicMaterials.Moondrop, 2)
+            .innerBlock($CosmicMaterials.Somanone, 3)
+            .outerBlock(GTMaterials.Iron, 3)
+            .innerRadiusRatio(0.25)
+            .outerRadiusRatio(0.55)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock($CosmicMaterials.Somanone)
+            .density(0.2)
+            .radius(4))
     })
 
-
+    // Zanite - Cluster (pockets of zanite)
     event.add('kubejs:zanite', vein => {
         vein.layer('aether_islands')
         vein.weight(60)
-        vein.clusterSize(50)
+        vein.clusterSize(120)
         vein.density(0.55)
         vein.discardChanceOnAirExposure(1)
         vein.heightRangeUniform(16, 128)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.get('zanite')).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Barite).size(1, 3))
-                .layer(l => l.weight(3).mat(GTMaterials.Trona).size(1, 3))
-            )
-        )
-            .surfaceIndicatorGenerator(indicator => indicator
-                .surfaceRock(GTMaterials.get('zanite'))
-                .density(0.2)
-                .radius(4)
-            )
+        let gen = new ClusterVeinGenerator()
+            .oreBlock(GTMaterials.get('zanite'), 3)
+            .oreBlock(GTMaterials.Barite, 2)
+            .oreBlock(GTMaterials.Trona, 3)
+            .pocketCount(12)
+            .pocketRadius(0.065)
+            .channelRadius(0.028)
+            .pocketDensity(0.85)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.get('zanite'))
+            .density(0.2)
+            .radius(4))
     })
+
+    // Ambrosium - Stringer (tendrils spreading out)
     event.add('kubejs:ambrosium', vein => {
         vein.layer('aether_islands')
         vein.weight(60)
-        vein.clusterSize(45)
+        vein.clusterSize(65)
         vein.density(0.55)
         vein.discardChanceOnAirExposure(1)
         vein.heightRangeUniform(16, 128)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.get('ambrosium')).size(2, 4))
-                .layer(l => l.weight(3).mat(GTMaterials.Trona).size(1, 3))
-                .layer(l => l.weight(2).mat(GTMaterials.Sphalerite).size(1, 2))
-            )
-        )
-            .surfaceIndicatorGenerator(indicator => indicator
-                .surfaceRock(GTMaterials.get('ambrosium'))
-                .density(0.2)
-                .radius(4)
-            )
+        let gen = new StringerVeinGenerator()
+            .oreBlock(GTMaterials.get('ambrosium'), 3)
+            .oreBlock(GTMaterials.Trona, 3)
+            .rareBlock(GTMaterials.Sphalerite, 2)
+            .tendrilCount(16)
+            .coreRadius(0.3)
+            .tendrilRadius(0.055)
+            .coreDensity(0.6)
+            .tendrilCurvature(0.5)
+            .rareBlockChance(0.04)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.get('ambrosium'))
+            .density(0.2)
+            .radius(4))
     })
+
+    // Tetrahedrite Vein Aether - Fracture
     event.add('kubejs:tetrahedrite_vein_aether', vein => {
         vein.layer('aether_islands')
         vein.weight(40)
@@ -70,41 +79,45 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.45)
         vein.discardChanceOnAirExposure(1)
         vein.heightRangeUniform(16, 128)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Tetrahedrite).size(2, 4))
-                .layer(l => l.weight(3).mat(GTMaterials.Copper).size(1, 3))
-                .layer(l => l.weight(2).mat(GTMaterials.Stibnite).size(1, 2))
-            )
-        )
-            .surfaceIndicatorGenerator(indicator => indicator
-                .surfaceRock(GTMaterials.Tetrahedrite)
-                .density(0.2)
-                .radius(4)
-            )
+        let gen = new FractureVeinGenerator()
+            .oreBlock(GTMaterials.Tetrahedrite, 3)
+            .oreBlock(GTMaterials.Copper, 3)
+            .rareBlock(GTMaterials.Stibnite, 2)
+            .shellRadius(11.0)
+            .shellThickness(0.1)
+            .spikeCount(8)
+            .spikeLength(5.5)
+            .rareBlockChance(0.08)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Tetrahedrite)
+            .density(0.2)
+            .radius(4))
     })
 
+    // Bauxite Vein Aether - Branching
     event.add('kubejs:bauxite_vein_aether', vein => {
         vein.layer('aether_islands')
         vein.weight(55)
-        vein.clusterSize(45)
+        vein.clusterSize(65)
         vein.density(0.45)
         vein.discardChanceOnAirExposure(1)
         vein.heightRangeUniform(16, 128)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Bauxite).size(2, 4))
-                .layer(l => l.weight(1).mat(GTMaterials.get('alumina')).size(1, 3))
-                .layer(l => l.weight(2).mat(GTMaterials.Sphalerite).size(1, 2))
-                .layer(l => l.weight(2).mat(GTMaterials.Cinnabar).size(1, 2))
-            )
-        )
-            .surfaceIndicatorGenerator(indicator => indicator
-                .surfaceRock(GTMaterials.Bauxite)
-                .density(0.2)
-                .radius(4)
-            )
+        let gen = new BranchingVeinGenerator()
+            .oreBlock(GTMaterials.Bauxite, 3)
+            .oreBlock(GTMaterials.get('alumina'), 1)
+            .oreBlock(GTMaterials.Sphalerite, 2)
+            .rareBlock(GTMaterials.Cinnabar, 2)
+            .branchCount(5)
+            .branchAngleVariance(0.13)
+            .branchSplitChance(0.18)
+            .widthDecay(0.4)
+            .lengthMultiplier(0.55)
+            .rareBlockChance(0.08)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Bauxite)
+            .density(0.2)
+            .radius(4))
     })
 })
-// .layer(l => l.weight(3).mat(GTMaterials.get('ambrosium')).size(2, 4))
-// .layer(l => l.weight(2).mat(GTMaterials.Quartzite).size(2, 4))

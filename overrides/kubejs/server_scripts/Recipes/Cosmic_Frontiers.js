@@ -44,6 +44,8 @@ ServerEvents.tags('item', event => {
        event.add('forestry:backpack/reject/miner', 'gtceu:diorite_dust')
        event.add('forestry:backpack/reject/miner', 'gtceu:andesite_dust')
        event.add('forestry:backpack/reject/miner', 'gtceu:stone_dust')
+       event.add('forestry:backpack/reject/miner', 'gtceu:tuff_dust')
+       event.add('forestry:backpack/reject/miner', 'gtceu:deepslate_dust')
 
        event.add('forestry:backpack/allow/digger', [
               '#create:stone_types/dripstone',
@@ -203,7 +205,7 @@ ServerEvents.recipes(event => {
               })
 
 
-       event.smelting('4x embers:ash','gtceu:coal_dust')
+       event.smelting('4x embers:ash', 'gtceu:coal_dust')
 
        event.remove({ id: 'paraglider:paraglider' })
        event.remove({ id: 'gtceu:alloy_smelter/rubber_bar' })
@@ -245,6 +247,16 @@ ServerEvents.recipes(event => {
               S: 'gtceu:ev_flora_nurturer',
               P: 'gtceu:palladium_plate'
        })
+
+       event.shaped('cosmiccore:air_bladder', [
+              ' LR',
+              'L L',
+              ' L ',
+       ], {
+              L: 'cosmiccore:waxed_leather',
+              R: 'minecraft:string'
+       })
+
 
        event.shaped('cosmiccore:simple_rebreather', [
               ' R ',

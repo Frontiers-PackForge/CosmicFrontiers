@@ -1,34 +1,21 @@
 GTCEuServerEvents.oreVeins(event => {
 
-    event.add('kubejs:mercury_uranium_vein', vein => vein
-        .weight(20).clusterSize(30).density(0.3)
-        .layer('mercury_stone')
-        .heightRangeUniform(20, 45)
-        .layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(2).mat(GTMaterials.Uraninite).size(1, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.Uranium238).size(2, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.Uraninite).size(2, 3))
-            )
-        )
-        .surfaceIndicatorGenerator(indicator => indicator
+    // Mercury Uranium Vein - Fracture (radioactive geode)
+    event.add('kubejs:mercury_uranium_vein', vein => {
+        vein.weight(20).clusterSize(30).density(0.3)
+        vein.layer('mercury_stone')
+        vein.heightRangeUniform(20, 45)
+        let gen = new FractureVeinGenerator()
+            .oreBlock(GTMaterials.Uraninite, 3)
+            .oreBlock(GTMaterials.Uranium238, 2)
+            .shellRadius(11.0)
+            .shellThickness(0.1)
+            .spikeCount(8)
+            .spikeLength(5.5)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Tetrahedrite)
             .density(0.2)
-            .radius(4)
-        )
-    )
-      
+            .radius(4))
+    })
 })
-
-
-
-/* 
-
-Germanium Ores? - Argyodite has it! Extraction time! ! ! Make it a bit rough ig? 
-
-Tellerium Ores? - Calaverite and Sylvanite has it! Extraction time! ! !
-
-Caesium Ores? - Already comes from lepidolite and, so just make a vein that contains it?
-
-
-*/

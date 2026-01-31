@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
   .itemOutputsRanged('gtceu:raw_platinum', 1000, 2500)
   .itemOutputsRanged('gtceu:raw_electrotine', 1000, 2500)
   .itemOutputsRanged('gtceu:raw_trinium_metallic', 1000, 2500)
-  .soulInput(13000000);
+  .soulInput(CosmicSoulTypes.Refined, 13000000);
 event.custom({
   "type": "bloodmagic:meteor",
   "explosion": 30.0,
@@ -63,7 +63,7 @@ event.recipes.gtceu.fake_meteor_ritual('plat_group_meteor')
   .itemOutputsRanged('gtceu:raw_chalcocite', 1000, 2500)
   .itemOutputsRanged('gtceu:raw_platinum', 1000, 2500)
   .itemOutputsRanged('gtceu:raw_palladium', 1000, 2500)
-  .soulInput(5000000);
+  .soulInput(CosmicSoulTypes.Refined, 5000000);
 event.custom({
   "type": "bloodmagic:meteor",
   "explosion": 30.0,
@@ -126,7 +126,7 @@ event.recipes.gtceu.fake_meteor_ritual('apatite_meteor_mv')
 .itemOutputsRanged('gtceu:raw_pyrochlore', 1000, 2500)
 .itemOutputsRanged('gtceu:raw_tricalcium_phosphate', 1000, 2500)
 .itemOutputsRanged('gtceu:raw_apatite', 1000, 2500)
-.soulInput(3000000);
+.soulInput(CosmicSoulTypes.Refined, 3000000);
 event.custom({
   "type": "bloodmagic:meteor",
   "explosion": 30.0,
@@ -174,7 +174,7 @@ event.recipes.gtceu.fake_meteor_ritual('luminite_fat_iv')
 .itemOutputsRanged('gtceu:raw_wolframite', 1000, 2500)
 .itemOutputsRanged('gtceu:raw_scheelite', 1000, 2500)
 .itemOutputsRanged('gtceu:raw_tungstate', 1000, 2500)
-.soulInput(8500000);
+.soulInput(CosmicSoulTypes.Refined, 8500000);
 event.custom({
   "type": "bloodmagic:meteor",
   "explosion": 30.0,
@@ -236,7 +236,7 @@ event.recipes.gtceu.fake_meteor_ritual('naq_luv_meteor')
 .itemOutputsRanged('minecraft:blackstone', 500, 1500)
 .itemOutputsRanged('gtceu:raw_naquadric_metallic_powder', 1000, 2500)
 .itemOutputsRanged('gtceu:raw_naquadah', 1000, 2500)
-.soulInput(25000000);
+.soulInput(CosmicSoulTypes.Refined, 25000000);
 event.custom({
   "type": "bloodmagic:meteor",
   "explosion": 30.0,
@@ -275,7 +275,7 @@ event.recipes.gtceu.fake_meteor_ritual('tin_meteor')
 .itemOutputsRanged('gtceu:raw_tin', 1000, 2500)
 .itemOutputsRanged('minecraft:raw_copper', 1000, 2500)
 .itemOutputsRanged('gtceu:raw_cassiterite_sand', 1000, 2500)
-.soulInput(2500000);
+.soulInput(CosmicSoulTypes.Refined, 2500000);
 event.custom({
   "type": "bloodmagic:meteor",
   "explosion": 30.0,
@@ -320,7 +320,7 @@ event.recipes.gtceu.fake_meteor_ritual('utherium_meteor')
 .itemOutputsRanged('gtceu:raw_ruby', 1000, 2500)
 .itemOutputsRanged('gtceu:raw_almandine', 1000, 2500)
 .itemOutputsRanged('gtceu:raw_chromite', 1000, 2500)
-.soulInput(5000000);
+.soulInput(CosmicSoulTypes.Refined, 5000000);
 event.custom({
   "type": "bloodmagic:meteor",
   "explosion": 30.0,
@@ -371,7 +371,7 @@ event.recipes.gtceu.fake_meteor_ritual('uranium_meteor')
 .itemOutputsRanged('gtceu:raw_uranium', 1000, 2500)
 .itemOutputsRanged('gtceu:raw_pitchblende', 1000, 2500)
 .itemOutputsRanged('gtceu:raw_uraninite', 1000, 2500)
-.soulInput(8000000);
+.soulInput(CosmicSoulTypes.Refined, 8000000);
 event.custom({
   "type": "bloodmagic:meteor",
   "explosion": 30.0,

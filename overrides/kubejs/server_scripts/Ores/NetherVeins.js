@@ -1,27 +1,26 @@
-
-
 GTCEuServerEvents.oreVeins(event => {
 
-    event.add('kubejs:emberite_two', vein => vein
-        .weight(40)
-        .clusterSize(60)
-        .density(0.2)
-        .layer('netherrack')
-        .heightRangeUniform(35, 50)
-        .layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.get('emberite')).size(2, 4))
-                .layer(l => l.weight(3).mat(GTMaterials.get('emberite')).size(1, 2))
-            )
-        )
-        .surfaceIndicatorGenerator(indicator => indicator
+    // Emberite Two - Cluster (pockets of emberite)
+    event.add('kubejs:emberite_two', vein => {
+        vein.weight(40)
+        vein.clusterSize(30)
+        vein.density(0.2)
+        vein.layer('netherrack')
+        vein.heightRangeUniform(35, 50)
+        let gen = new ClusterVeinGenerator()
+            .oreBlock(GTMaterials.get('emberite'), 6)
+            .pocketCount(10)
+            .pocketRadius(0.065)
+            .channelRadius(0.025)
+            .pocketDensity(0.85)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.get('emberite'))
             .density(0.2)
-            .radius(4)
-        )
-    )
+            .radius(4))
+    })
 
-
+    // Nickel Vein Nether - Shell (layered nickel)
     event.add('kubejs:nickel_vein_nether', vein => {
         vein.layer('netherrack')
         vein.weight(40)
@@ -29,23 +28,17 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.3)
         vein.discardChanceOnAirExposure(0)
         vein.heightRangeUniform(30, 70)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Garnierite).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Nickel).size(1, 1))
-                .layer(l => l.weight(2).mat(GTMaterials.Cobaltite).size(1, 1))
-                .layer(l => l.weight(1).mat(GTMaterials.Pentlandite).size(1, 1))
-            )
-        )
-            .surfaceIndicatorGenerator(indicator => indicator
-                .surfaceRock(GTMaterials.Garnierite)
-                .density(0.2)
-                .radius(4)
-            )
+        let gen = new ShellVeinGenerator()
+            .coreBlock(GTMaterials.Pentlandite, 1)
+            .innerBlock(GTMaterials.Garnierite, 3)
+            .innerBlock(GTMaterials.Nickel, 2)
+            .outerBlock(GTMaterials.Cobaltite, 2)
+            .innerRadiusRatio(0.28)
+            .outerRadiusRatio(0.58)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Garnierite)
+            .density(0.2)
+            .radius(4))
     })
-
 })
-
-
-
-//ad_astra:moon

@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.rock_breaker(`create:${CShoney}_rock_breaker`)
       .notConsumable(`create:${CShoney}`)
       .itemOutputs(`create:${CShoney}`)
-      .adjacentFluids(["minecraft:lava", "create:honey"])
+      .adjacentFluidTag(["forge:lava", "forge:honey"])
       .duration(16)
       .EUt(7);
   })

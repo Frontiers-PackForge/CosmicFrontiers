@@ -1,4 +1,6 @@
 GTCEuServerEvents.oreVeins(event => {
+
+    // Cooperite Vein - Shell (PGM layered)
     event.add('kubejs:cooperite_vein', vein => {
         vein.layer('undergarden')
         vein.weight(15)
@@ -6,15 +8,17 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.45)
         vein.discardChanceOnAirExposure(0)
         vein.heightRangeUniform(5, 40)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Cooperite).size(1, 4))
-                .layer(l => l.weight(1).mat(GTMaterials.Barite).size(1, 3))
-                .layer(l => l.weight(2).mat(GTMaterials.Bornite).size(2, 4))
-                .layer(l => l.weight(1).mat(GTMaterials.Tantalite).size(1, 3))
-            )
-        )
+        let gen = new ShellVeinGenerator()
+            .coreBlock(GTMaterials.Tantalite, 1)
+            .innerBlock(GTMaterials.Cooperite, 3)
+            .innerBlock(GTMaterials.Bornite, 2)
+            .outerBlock(GTMaterials.Barite, 1)
+            .innerRadiusRatio(0.25)
+            .outerRadiusRatio(0.55)
+        vein.generator(gen)
     })
+
+    // UG Iron - Branching
     event.add('kubejs:ug_iron', vein => {
         vein.layer('undergarden')
         vein.weight(30)
@@ -22,15 +26,21 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.35)
         vein.discardChanceOnAirExposure(0)
         vein.heightRangeUniform(5, 40)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Goethite).size(1, 1))
-                .layer(l => l.weight(1).mat(GTMaterials.YellowLimonite).size(1, 3))
-                .layer(l => l.weight(2).mat(GTMaterials.Hematite).size(2, 4))
-                .layer(l => l.weight(1).mat(GTMaterials.Gold).size(1, 3))
-            )
-        )
+        let gen = new BranchingVeinGenerator()
+            .oreBlock(GTMaterials.Goethite, 3)
+            .oreBlock(GTMaterials.YellowLimonite, 1)
+            .oreBlock(GTMaterials.Hematite, 2)
+            .rareBlock(GTMaterials.Gold, 1)
+            .branchCount(5)
+            .branchAngleVariance(0.14)
+            .branchSplitChance(0.18)
+            .widthDecay(0.35)
+            .lengthMultiplier(0.55)
+            .rareBlockChance(0.06)
+        vein.generator(gen)
     })
+
+    // UG Certus - Cluster
     event.add('kubejs:ug_certus', vein => {
         vein.layer('undergarden')
         vein.weight(45)
@@ -38,14 +48,18 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.35)
         vein.discardChanceOnAirExposure(0)
         vein.heightRangeUniform(5, 40)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Quartzite).size(1, 1))
-                .layer(l => l.weight(1).mat(GTMaterials.CertusQuartz).size(1, 3))
-                .layer(l => l.weight(2).mat(GTMaterials.Barite).size(2, 4))
-            )
-        )
+        let gen = new ClusterVeinGenerator()
+            .oreBlock(GTMaterials.Quartzite, 3)
+            .oreBlock(GTMaterials.CertusQuartz, 1)
+            .oreBlock(GTMaterials.Barite, 2)
+            .pocketCount(10)
+            .pocketRadius(0.06)
+            .channelRadius(0.025)
+            .pocketDensity(0.85)
+        vein.generator(gen)
     })
+
+    // UG Utherium Vein - Fracture (rare magic ore)
     event.add('kubejs:ug_utherium_vein', vein => {
         vein.layer('undergarden')
         vein.weight(20)
@@ -53,16 +67,20 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.35)
         vein.discardChanceOnAirExposure(0)
         vein.heightRangeUniform(5, 40)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.get('utherium')).size(3, 4))
-                .layer(l => l.weight(1).mat(GTMaterials.Almandine).size(1, 3))
-                .layer(l => l.weight(2).mat(GTMaterials.Ruby).size(2, 4))
-                .layer(l => l.weight(1).mat(GTMaterials.Chromite).size(1, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.get('utherium')).size(1, 2))
-            )
-        )
+        let gen = new FractureVeinGenerator()
+            .oreBlock(GTMaterials.get('utherium'), 4)
+            .oreBlock(GTMaterials.Almandine, 1)
+            .oreBlock(GTMaterials.Ruby, 2)
+            .rareBlock(GTMaterials.Chromite, 1)
+            .shellRadius(12.0)
+            .shellThickness(0.1)
+            .spikeCount(8)
+            .spikeLength(6.0)
+            .rareBlockChance(0.06)
+        vein.generator(gen)
     })
+
+    // UG Heavy Alu Vein - Stringer (alumina tendrils)
     event.add('kubejs:ug_heavy_alu_vein', vein => {
         vein.layer('undergarden')
         vein.weight(20)
@@ -70,15 +88,14 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.35)
         vein.discardChanceOnAirExposure(0)
         vein.heightRangeUniform(5, 40)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.get('alumina')).size(3, 4))
-                .layer(l => l.weight(1).mat(GTMaterials.Aluminium).size(2, 3))
-  
-            )
-        )
+        let gen = new StringerVeinGenerator()
+            .oreBlock(GTMaterials.get('alumina'), 3)
+            .oreBlock(GTMaterials.Aluminium, 2)
+            .tendrilCount(14)
+            .coreRadius(0.28)
+            .tendrilRadius(0.05)
+            .coreDensity(0.6)
+            .tendrilCurvature(0.5)
+        vein.generator(gen)
     })
-
 })
-// .layer(l => l.weight(3).mat(GTMaterials.get('ambrosium')).size(2, 4))
-// .layer(l => l.weight(2).mat(GTMaterials.Quartzite).size(2, 4))

@@ -1,149 +1,168 @@
 GTCEuServerEvents.oreVeins(event => {
-    event.add('kubejs:mars_phosphor_vein', vein => vein
-        .weight(30).clusterSize(30).density(0.2)
-        .layer('moon_stone')
-        .heightRangeUniform(35, 50)
-        .layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.TricalciumPhosphate).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Pyrochlore).size(2, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.Apatite).size(4, 6))
-            )
-        )
-        .surfaceIndicatorGenerator(indicator => indicator
+    // Mars Phosphor - Shell (layered materials, phosphate core)
+    event.add('kubejs:mars_phosphor_vein', vein => {
+        vein.weight(30).clusterSize(30).density(0.2)
+        vein.layer('moon_stone')
+        vein.heightRangeUniform(35, 50)
+        let gen = new ShellVeinGenerator()
+            .coreBlock(GTMaterials.TricalciumPhosphate, 3)
+            .innerBlock(GTMaterials.Pyrochlore, 2)
+            .outerBlock(GTMaterials.Apatite, 1)
+            .innerRadiusRatio(0.3)
+            .outerRadiusRatio(0.6)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Pyrochlore)
             .density(0.2)
-            .radius(4)
-        )
-    )
-    event.add('kubejs:desh_vein', vein => vein
-        .weight(20).clusterSize(30).density(0.2)
-        .layer('moon_stone')
-        .heightRangeUniform(30, 60)
-        .layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.get('uraninite')).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.get('desh')).size(1, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.get('luminite')).size(2, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.get('calcite')).size(1, 3))
-            )
-        )
-        .surfaceIndicatorGenerator(indicator => indicator
+            .radius(4))
+    })
+
+    // Desh Vein - Branching (uranium/desh tendrils)
+    event.add('kubejs:desh_vein', vein => {
+        vein.weight(20).clusterSize(30).density(0.2)
+        vein.layer('moon_stone')
+        vein.heightRangeUniform(30, 60)
+        let gen = new BranchingVeinGenerator()
+            .oreBlock(GTMaterials.get('uraninite'), 3)
+            .oreBlock(GTMaterials.get('desh'), 2)
+            .oreBlock(GTMaterials.get('luminite'), 1)
+            .oreBlock(GTMaterials.get('calcite'), 1)
+            .branchCount(4)
+            .branchAngleVariance(0.15)
+            .branchSplitChance(0.2)
+            .widthDecay(0.4)
+            .lengthMultiplier(0.6)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.get('luminite'))
             .density(0.2)
-            .radius(4)
-        )
-    )
-    event.add('kubejs:lunar_rutile', vein => vein
-        .weight(30).clusterSize(30).density(0.2)
-        .layer('moon_stone')
-        .heightRangeUniform(35, 50)
-        .layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Bauxite).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Ilmenite).size(1, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.Hematite).size(1, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.Bauxite).size(2, 3))
-            )
-        )
-        .surfaceIndicatorGenerator(indicator => indicator
+            .radius(4))
+    })
+
+    // Lunar Rutile - Shell (bauxite/ilmenite layers)
+    event.add('kubejs:lunar_rutile', vein => {
+        vein.weight(30).clusterSize(30).density(0.2)
+        vein.layer('moon_stone')
+        vein.heightRangeUniform(35, 50)
+        let gen = new ShellVeinGenerator()
+            .coreBlock(GTMaterials.Ilmenite, 2)
+            .innerBlock(GTMaterials.Bauxite, 3)
+            .outerBlock(GTMaterials.Hematite, 1)
+            .innerRadiusRatio(0.25)
+            .outerRadiusRatio(0.55)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Bauxite)
             .density(0.2)
-            .radius(4)
-        )
-    )
+            .radius(4))
+    })
 
-    event.add('kubejs:lunar_diamond_pure_mana', vein => vein
-        .weight(30).clusterSize(30).density(0.2)
-        .layer('moon_stone')
-        .heightRangeUniform(35, 50)
-        .layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Diamond).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Electrotine).size(1, 3))
-            )
-        )
-        .surfaceIndicatorGenerator(indicator => indicator
+    // Lunar Diamond - Shell (precious core)
+    event.add('kubejs:lunar_diamond_pure_mana', vein => {
+        vein.weight(30).clusterSize(30).density(0.2)
+        vein.layer('moon_stone')
+        vein.heightRangeUniform(35, 50)
+        let gen = new ShellVeinGenerator()
+            .coreBlock(GTMaterials.Diamond, 3)
+            .innerBlock(GTMaterials.Electrotine, 2)
+            .outerBlock(GTMaterials.Graphite, 1)
+            .innerRadiusRatio(0.2)
+            .outerRadiusRatio(0.5)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Diamond)
             .density(0.2)
-            .radius(4)
-        )
-    )
-    event.add('kubejs:lunar_maganese', vein => vein
-        .weight(30).clusterSize(30).density(0.2)
-        .layer('moon_stone')
-        .heightRangeUniform(20, 30)
-        .layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Grossular).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Pyrolusite).size(1, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.Tantalite).size(1, 3))
-                .layer(l => l.weight(2).mat(GTMaterials.get('luminite')).size(1, 1))
-            )
-        )
-        .surfaceIndicatorGenerator(indicator => indicator
+            .radius(4))
+    })
+
+    // Lunar Manganese - Branching
+    event.add('kubejs:lunar_maganese', vein => {
+        vein.weight(30).clusterSize(30).density(0.2)
+        vein.layer('moon_stone')
+        vein.heightRangeUniform(20, 30)
+        let gen = new BranchingVeinGenerator()
+            .oreBlock(GTMaterials.Grossular, 3)
+            .oreBlock(GTMaterials.Pyrolusite, 2)
+            .oreBlock(GTMaterials.Tantalite, 1)
+            .rareBlock(GTMaterials.get('luminite'), 1)
+            .branchCount(4)
+            .branchAngleVariance(0.12)
+            .branchSplitChance(0.15)
+            .widthDecay(0.45)
+            .lengthMultiplier(0.5)
+            .rareBlockChance(0.08)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Tantalite)
             .density(0.2)
-            .radius(4)
-        )
-    )
-    event.add('kubejs:pure_luminite', vein => vein
-        .weight(15).clusterSize(25).density(0.2)
-        .layer('moon_stone')
-        .heightRangeUniform(20, 30)
-        .layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(6).mat(GTMaterials.get('luminite')).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.get('desh')).size(1, 2))
-            )
-        )
-        .surfaceIndicatorGenerator(indicator => indicator
+            .radius(4))
+    })
+
+    // Pure Luminite - Cluster (pockets of luminite)
+    event.add('kubejs:pure_luminite', vein => {
+        vein.weight(15).clusterSize(25).density(0.2)
+        vein.layer('moon_stone')
+        vein.heightRangeUniform(20, 30)
+        let gen = new ClusterVeinGenerator()
+            .oreBlock(GTMaterials.get('luminite'), 6)
+            .rareBlock(GTMaterials.get('desh'), 2)
+            .pocketCount(10)
+            .pocketRadius(0.06)
+            .channelRadius(0.025)
+            .pocketDensity(0.85)
+            .rareBlockChance(0.06)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.get('luminite'))
             .density(0.2)
-            .radius(4)
-        )
-    )
-    event.add('kubejs:end_tungsten', vein => vein
-        .weight(30).clusterSize(35).density(0.2)
-        .layer('moon_stone')
-        .heightRangeUniform(15, 80)
-        .layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.get('wolframite')).size(3, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.get('scheelite')).size(2, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.get('tungstate')).size(3, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.get('lithium')).size(2, 3))
-            )
-        )
-        .surfaceIndicatorGenerator(indicator => indicator
+            .radius(4))
+    })
+
+    // End Tungsten - Stringer (tendrils of tungsten ores)
+    event.add('kubejs:end_tungsten', vein => {
+        vein.weight(30).clusterSize(35).density(0.2)
+        vein.layer('moon_stone')
+        vein.heightRangeUniform(15, 80)
+        let gen = new StringerVeinGenerator()
+            .oreBlock(GTMaterials.get('wolframite'), 3)
+            .oreBlock(GTMaterials.get('scheelite'), 2)
+            .oreBlock(GTMaterials.get('tungstate'), 1)
+            .rareBlock(GTMaterials.get('lithium'), 1)
+            .tendrilCount(16)
+            .coreRadius(0.28)
+            .tendrilRadius(0.05)
+            .coreDensity(0.6)
+            .tendrilCurvature(0.5)
+            .rareBlockChance(0.05)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Lithium)
             .density(0.2)
-            .radius(4)
-        )
-    )
-    event.add('kubejs:end_pitchblend', vein => vein
-        .weight(50).clusterSize(60).density(0.5)
-        .layer('moon_stone')
-        .heightRangeUniform(15, 80)
-        .veinedVeinGenerator(generator => generator
-            .oreBlock(GTMaterials.Pitchblende, 4)
+            .radius(4))
+    })
+
+    // End Pitchblende - Fracture (shattered radioactive geode)
+    event.add('kubejs:end_pitchblend', vein => {
+        vein.weight(50).clusterSize(60).density(0.5)
+        vein.layer('moon_stone')
+        vein.heightRangeUniform(15, 80)
+        let gen = new FractureVeinGenerator()
             .oreBlock(GTMaterials.Pitchblende, 4)
             .oreBlock(GTMaterials.Cobaltite, 2)
             .rareBlock(GTMaterials.Uraninite, 2)
-            .rareBlockChance(0.45)
-            .veininessThreshold(0.1)
-            .maxRichnessThreshold(0.7)
-            .minRichness(0.7)
-            .maxRichness(0.85)
-            .edgeRoundoffBegin(5)
-            .maxEdgeRoundoff(0.2)
-        )
-        .surfaceIndicatorGenerator(indicator => indicator
+            .shellRadius(14.0)
+            .shellThickness(0.1)
+            .spikeCount(10)
+            .spikeLength(7.0)
+            .rareBlockChance(0.15)
+        vein.generator(gen)
+        vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Lithium)
             .density(0.2)
-            .radius(4)
-        )
-    )
+            .radius(4))
+    })
+
+    // AA Pure Chromite - Shell
     event.add('kubejs:aa_pure_chromite', vein => {
         vein.layer('moon_stone')
         vein.weight(20)
@@ -151,23 +170,12 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.35)
         vein.discardChanceOnAirExposure(0)
         vein.heightRangeUniform(5, 40)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(1).mat(GTMaterials.Chromite).size(2, 4))
-                .layer(l => l.weight(1).mat(GTMaterials.Malachite).size(2, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.get('luminite')).size(1, 2))
-            )
-        )
+        let gen = new ShellVeinGenerator()
+            .coreBlock(GTMaterials.Chromite, 1)
+            .innerBlock(GTMaterials.Malachite, 1)
+            .outerBlock(GTMaterials.get('luminite'), 1)
+            .innerRadiusRatio(0.3)
+            .outerRadiusRatio(0.6)
+        vein.generator(gen)
     })
 })
-// GTCEuServerEvents.bedrockOreVeins(event => {
-//     event.add("kubejs:deep_luminite",  vein => {
-//       vein.weight(15).size(2).yield(1,3).material(GTMaterials.get('luminite'),10).dimensions("ad_astra:moon");
-//     })
-//     event.add("kubejs:deep_illmenite",  vein => {
-//         vein.weight(40).size(2).yield(1,3).material(GTMaterials.Ilmenite,10).dimensions("ad_astra:moon");
-//       })
-//   })
-
-
-// //ad_astra:moon

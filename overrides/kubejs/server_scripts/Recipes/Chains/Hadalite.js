@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:tau_plasma 250')
         .inputFluids('gtceu:fluorine 6000')
         .itemOutputs('9x gtceu:tauin_hexafluoroholmate_dust')
-        .soulInput(100000)
+        .soulInput(CosmicSoulTypes.Refined, 100000)
         .duration(150)
         .EUt(GTValues.VA[GTValues.UV]);
 
