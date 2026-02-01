@@ -1231,7 +1231,6 @@ ServerEvents.recipes(event => {
        event.recipes.gtceu.cutter('cosmiccore:iron_plated_deepslate_tile_slab')
               .itemInputs('cosmiccore:iron_plated_deepslate_tile')
               .itemOutputs('2x cosmiccore:iron_plated_deepslate_tile_slab')
-              .circuit(4)
               .duration(20 * 4)
               .EUt(GTValues.VHA[GTValues.ULV]);
        event.shapeless('cosmiccore:iron_plated_deepslate_tile',
