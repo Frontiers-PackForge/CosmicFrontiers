@@ -667,6 +667,81 @@ ServerEvents.recipes(event => {
     W: '#forge:tools/wrenches',
     H: '#forge:tools/hammers'
   })
+  //Superheavy Steel Casings
+  event.recipes.gtceu.assembler('frontiers:superheavy_steel_casing_assem')
+    .itemInputs(['gtceu:black_steel_frame', '6x gtceu:double_hsla_steel_plate'])
+    .itemOutputs('cosmiccore:superheavy_steel_casing')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('cosmiccore:superheavy_steel_casing', [
+    'AHA',
+    'AFA',
+    'AWA'
+  ], {
+    A: 'gtceu:double_hsla_steel_plate',
+    F: 'gtceu:black_steel_frame',
+    W: '#forge:tools/wrenches',
+    H: '#forge:tools/hammers'
+  })
+  //Soul Muted Casings
+  event.recipes.gtceu.assembler('frontiers:soul_muted_casing_assem')
+    .itemInputs(['gtceu:ruridit_frame', '6x gtceu:polytetrafluoroethylene_plate'])
+    .itemOutputs('cosmiccore:soul_muted_casing')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('cosmiccore:soul_muted_casing', [
+    'AHA',
+    'AFA',
+    'AWA'
+  ], {
+    A: 'gtceu:polytetrafluoroethylene_plate',
+    F: 'gtceu:ruridit_frame',
+    W: '#forge:tools/wrenches',
+    H: '#forge:tools/hammers'
+  })
+  //Somarust Casings
+  event.recipes.gtceu.assembler('frontiers:somarust_casing_assem')
+    .itemInputs(['gtceu:faded_dusk_alloy_frame', '6x gtceu:obsidian_plate'])
+    .itemOutputs('cosmiccore:somarust_casing')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('cosmiccore:somarust_casing', [
+    'AHA',
+    'AFA',
+    'AWA'
+  ], {
+    A: 'gtceu:obsidian_plate',
+    F: 'gtceu:faded_dusk_alloy_frame',
+    W: '#forge:tools/wrenches',
+    H: '#forge:tools/hammers'
+  })
+  //Rigid High Speed Steel Casings
+  event.recipes.gtceu.assembler('frontiers:rigid_hss_casing_assem')
+    .itemInputs(['gtceu:hsss_frame', '6x gtceu:hssg_plate'])
+    .itemOutputs('cosmiccore:rigid_high_speed_steel_casing')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+  event.shaped('cosmiccore:rigid_high_speed_steel_casing', [
+    'AHA',
+    'AFA',
+    'AWA'
+  ], {
+    A: 'gtceu:hssg_plate',
+    F: 'gtceu:hsss_frame',
+    W: '#forge:tools/wrenches',
+    H: '#forge:tools/hammers'
+  })
+  //Bolted Heavy Frame Casings (assembler only — screws don't fit 3x3)
+  event.recipes.gtceu.assembler('frontiers:bolted_heavy_frame_casing_assem')
+    .itemInputs(['cosmiccore:enderium_frame', '6x gtceu:maraging_steel_300_plate', '16x gtceu:runed_steel_screw'])
+    .itemOutputs('cosmiccore:bolted_heavy_frame_casing')
+    .circuit(6)
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
   //Oscillating Casings
   event.recipes.gtceu.assembler('gtceu:costly_osc_gilded_casing_assem')
     .itemInputs(['cosmiccore:gilded_pthanterum_casing', '4x gtceu:heavy_hsla_steel_beam', '4x gtceu:long_hsla_steel_rod'])
