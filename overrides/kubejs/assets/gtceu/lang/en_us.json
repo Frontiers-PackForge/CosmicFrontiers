@@ -900,6 +900,37 @@
   "gtceu.jei.bedrock_fluid.primordial_oil": "Primordial Oil Deposit",
   "gtceu.jei.bedrock_fluid.liquid_shadows": "Liquid Shadows Deposit",
   "gtceu.jei.bedrock_fluid.pyroflux": "Pyroflux Deposit",
-  "gtceu.jei.bedrock_fluid.swamp_sediment": "Swamp Sediment Deposit"
+  "gtceu.jei.bedrock_fluid.swamp_sediment": "Swamp Sediment Deposit",
+
+  "material.gtceu.hydroxybenzoic_acid": "Hydroxybenzoic Acid",
+  "material.gtceu.hydroxynaphtoic_acid": "Hydroxynaphtoic Acid",
+  "material.gtceu.potassium_naphthoxide": "Potassium Naphthoxide",
+  "material.gtceu.potassium_metabisulfite": "Potassium Metabisulfite",
+  "material.gtceu.hydrobromic_acid": "Hydrobromic Acid",
+  "material.gtceu.vectran": "Vectran",
+
+  "material.gtceu.para_xylene": "Para-Xylene",
+  "material.gtceu.terephthalic_acid": "Terephthalic Acid",
+  "material.gtceu.terephthalaldehyde": "Terephthalaldehyde",
+  "material.gtceu.thionyl_chloride": "Thionyl Chloride",
+  "material.gtceu.terephthaloyl_chloride": "Terephthaloyl Chloride",
+  "material.gtceu.para_phenylenediamine": "Para-Phenylenediamine",
+  "material.gtceu.crude_para_phenylenediamine": "Crude Para-Phenylenediamine",
+  "material.gtceu.ketene": "Ketene",
+  "material.gtceu.di_ketene": "Di-Ketene",
+  "material.gtceu.beta_butyrolactone": "Beta-Butyrolactone",
+  "material.gtceu.n_methyl_2_pyrrolidone": "N-Methyl-2-Pyrrolidone",
+  "material.gtceu.methylamine": "Methylamine",
+  "material.gtceu.two_naphthol": "2-Naphthol",
+  "material.gtceu.binol": "BINOL",
+  "material.gtceu.chlorodiphenylphosphine": "Chlorodiphenylphosphine",
+  "material.gtceu.butyllithium": "Butyllithium",
+  "material.gtceu.binap": "BINAP",
+  "material.gtceu.cyclopentadiene": "Cyclopentadiene",
+  "material.gtceu.crude_terephthalic_acid": "Crude Terephthalic Acid",
+  "material.gtceu.carboxybenzaldehyde": "4-Carboxybenzaldehyde",
+  "material.gtceu.racemic_binap": "Racemic BINAP",
+  "material.gtceu.sodium_sulfite": "Sodium Sulfite",
+  "material.gtceu.kevlar": "Kevlar"
 
 }
