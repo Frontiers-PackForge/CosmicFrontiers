@@ -740,12 +740,6 @@ ServerEvents.recipes(event => {
               .circuit(2)
               .duration(160)
               .EUt(GTValues.VA[GTValues.EV]);
-       event.recipes.gtceu.assembler('virtue_casing')
-              .itemInputs(['cosmiccore:resonant_virtue_meld_frame', '6x cosmiccore:resonant_virtue_meld_plate'])
-              .itemOutputs('cosmiccore:highly_conductive_fission_casing')
-              .circuit(6)
-              .duration(320)
-              .EUt(GTValues.VA[GTValues.IV]);
        event.recipes.gtceu.assembler('naq_pressure_casing')
               .itemInputs(['gtceu:naquadah_alloy_frame', '6x gtceu:synthetic_pthanterum_plate'])
               .itemOutputs('cosmiccore:naquadah_pressure_resistant_casing')

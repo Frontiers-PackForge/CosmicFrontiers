@@ -669,7 +669,7 @@ ServerEvents.recipes(event => {
   })
   //Superheavy Steel Casings
   event.recipes.gtceu.assembler('frontiers:superheavy_steel_casing_assem')
-    .itemInputs(['gtceu:black_steel_frame', '6x gtceu:double_hsla_steel_plate'])
+    .itemInputs(['gtceu:black_steel_frame', '6x gtceu:hsla_steel_plate'])
     .itemOutputs('cosmiccore:superheavy_steel_casing')
     .circuit(6)
     .duration(50)
@@ -679,7 +679,7 @@ ServerEvents.recipes(event => {
     'AFA',
     'AWA'
   ], {
-    A: 'gtceu:double_hsla_steel_plate',
+    A: 'gtceu:hsla_steel_plate',
     F: 'gtceu:black_steel_frame',
     W: '#forge:tools/wrenches',
     H: '#forge:tools/hammers'
@@ -720,7 +720,7 @@ ServerEvents.recipes(event => {
   })
   //Rigid High Speed Steel Casings
   event.recipes.gtceu.assembler('frontiers:rigid_hss_casing_assem')
-    .itemInputs(['gtceu:hsss_frame', '6x gtceu:hssg_plate'])
+    .itemInputs(['gtceu:hsss_frame', '6x gtceu:manasteel_plate'])
     .itemOutputs('cosmiccore:rigid_high_speed_steel_casing')
     .circuit(6)
     .duration(50)
@@ -730,7 +730,7 @@ ServerEvents.recipes(event => {
     'AFA',
     'AWA'
   ], {
-    A: 'gtceu:hssg_plate',
+    A: 'gtceu:manasteel_plate',
     F: 'gtceu:hsss_frame',
     W: '#forge:tools/wrenches',
     H: '#forge:tools/hammers'
