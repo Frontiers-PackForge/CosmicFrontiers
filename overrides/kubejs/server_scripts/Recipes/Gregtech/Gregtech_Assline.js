@@ -18,13 +18,13 @@ ServerEvents.recipes(event => {
     'BDB'
   ], {
     S: 'gtceu:hpic_chip',
-    C: 'gtceu:tungsten_carbide_frame',
+    C: 'cosmiccore:tenbrium_frame',
     D: '#gtceu:circuits/zpm',
     B: 'gtceu:iv_electric_motor',
     M: 'cosmiccore:iv_radio_module'
   })
   event.recipes.gtceu.assembler('assembly_line_casing')
-    .itemInputs(['gtceu:tungsten_carbide_frame', 'cosmiccore:iv_radio_module', '2x gtceu:hpic_chip', '2x gtceu:iv_electric_motor', '3x #gtceu:circuits/zpm'])
+    .itemInputs(['cosmiccore:tenbrium_frame', 'cosmiccore:iv_radio_module', '2x gtceu:hpic_chip', '2x gtceu:iv_electric_motor', '3x #gtceu:circuits/zpm'])
     .itemOutputs('gtceu:assembly_line_casing')
     .circuit(2)
     .duration(200)

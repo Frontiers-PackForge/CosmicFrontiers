@@ -45,10 +45,17 @@ ServerEvents.recipes(event => {
     .itemOutputs('4x minecraft:honey_block', '4x minecraft:honeycomb_block')
     .duration(3000)
     .EUt(GTValues.VA[GTValues.HV]);
-  event.recipes.gtceu.suffering_chamber('suffering_chamber_villager_basic')
+  event.recipes.gtceu.dream_basin('suffering_chamber_villager_basic')
     .notConsumable('minecraft:villager_spawn_egg')
-    .soulOutput(CosmicSoulTypes.Raw, 32000)
+    .soulOutput(CosmicSoulTypes.Raw, 8000)
     .duration(600)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+  event.recipes.gtceu.oneiric_sieve('conversion_of_raw_to_refined')
+    .notConsumable('embers:ember_crystal_cluster')
+    .soulInput(CosmicSoulTypes.Raw, 8000)
+    .soulOutput(CosmicSoulTypes.Refined, 6000)
+    .duration(300)
     .EUt(GTValues.VA[GTValues.EV]);
 
   event.recipes.gtceu.drygmy_grove('sculk_outbreak')
@@ -109,7 +116,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('8x minecraft:pearlescent_froglight')
     .duration(6000)
     .EUt(GTValues.VA[GTValues.EV]);
-  
+
   event.recipes.gtceu.drygmy_grove('grove_ghast')
     .notConsumable('ars_nouveau:drygmy_charm')
     .notConsumable('minecraft:diamond')
@@ -140,5 +147,5 @@ ServerEvents.recipes(event => {
     .outputFluids('gtceu:glue 1000')
     .duration(6000)
     .EUt(GTValues.VA[GTValues.EV]);
-  
+
 })

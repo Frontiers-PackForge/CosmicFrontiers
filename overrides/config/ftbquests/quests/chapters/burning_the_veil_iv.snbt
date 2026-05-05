@@ -77,7 +77,7 @@
 			]
 			description: ["Striking various materials with various flavors of high intensity beams in the presence of temporal essence will cause rapid shifts in the molecular structures of seemingly stable materials."]
 			id: "52A19C845A5BD42B"
-			subtitle: "Zap Zap"
+			subtitle: "Not Yet Implemented"
 			tasks: [{
 				id: "6B98FE6EC9A3B13C"
 				item: "cosmiccore:atomic_reconstructor"
@@ -224,10 +224,7 @@
 			y: -6.5d
 		}
 		{
-			dependencies: [
-				"0736BF9BB4A993A8"
-				"62334F5A41307FD1"
-			]
+			dependencies: ["0736BF9BB4A993A8"]
 			id: "20F2ADF25368606E"
 			tasks: [{
 				id: "40981FE12A5F8005"
@@ -505,10 +502,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"0F12F880B94DD02B"
-				"3102A9DF9E420300"
-			]
+			dependencies: ["0F12F880B94DD02B"]
 			id: "1F53F5783FED6FA9"
 			tasks: [{
 				id: "65EAB5F722C46F24"
@@ -641,18 +635,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["52DAB014D2101F02"]
-			id: "3102A9DF9E420300"
-			shape: "hexagon"
-			tasks: [{
-				id: "2E202430FCD4D452"
-				item: "cosmiccore:halizine_ingot"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 0.0d
-		}
-		{
 			dependencies: [
 				"7BD375990F402C7E"
 				"0EB887FF13AB1458"
@@ -684,7 +666,14 @@
 		}
 		{
 			dependencies: ["52DAB014D2101F02"]
+			description: [
+				"Currently Dreamers basins are a *work in progress* and the EMI panel for it is also insane."
+				""
+				""
+				"Basically, just put a villager spawn egg in a *painted* input hatch, and it'll start working."
+			]
 			id: "4AB99F0ED0E97D56"
+			subtitle: "Check the usages for a villager spawn egg"
 			tasks: [{
 				id: "2143EC824F294B0B"
 				item: "cosmiccore:dreamers_basin"
@@ -795,6 +784,11 @@
 		}
 		{
 			dependencies: ["4AB99F0ED0E97D56"]
+			description: [
+				"This is the unrefined stuff, you'll have to sieve it in the next multi to make it into usable soul essence"
+				""
+				"(Flavored Soul essences NYI)"
+			]
 			icon: "chipped:iron_bowl_soul_lantern"
 			id: "77D9B688814498FF"
 			tasks: [{
@@ -883,6 +877,7 @@
 		{
 			dependencies: ["6822B200A4FC247A"]
 			id: "62334F5A41307FD1"
+			shape: "hexagon"
 			tasks: [{
 				id: "16D24E9E8631AC84"
 				item: "gtceu:grading_fluid_2_bucket"
@@ -946,6 +941,18 @@
 			}]
 			x: 5.5d
 			y: -11.5d
+		}
+		{
+			dependencies: ["4AB99F0ED0E97D56"]
+			id: "3C6EF6FFAF69FD10"
+			subtitle: "Getting the Soul out into the network"
+			tasks: [{
+				id: "2541F6093B999E0F"
+				item: "cosmiccore:iv_soul_output_hatch"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
 		}
 	]
 	title: "Burning the Veil [IV]"

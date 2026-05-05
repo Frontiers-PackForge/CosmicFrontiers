@@ -701,7 +701,22 @@ ServerEvents.recipes(event => {
     W: '#forge:tools/wrenches',
     H: '#forge:tools/hammers'
   })
+  //Atomic Reconstructor
+  event.shaped('cosmiccore:atomic_reconstructor', [
+    'AWA',
+    'AFA',
+    'AWA'
+  ], {
+    F: 'gtceu:mv_laser_engraver',
+    A: 'gtceu:energy_crystal',
+    W: '#gtceu:circuits/zpm'
+  })
   //Somarust Casings
+  event.recipes.gtceu.reconstructor('frontiers:that_stupid_shadow_ingtot_recipe')
+    .itemInputs(['gtceu:naquadah_ingot', 'cosmiccore:pyretic_ichor'])
+    .itemOutputs('cosmiccore:tenbrium_ingot')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.IV],4);
   event.recipes.gtceu.assembler('frontiers:somarust_casing_assem')
     .itemInputs(['gtceu:faded_dusk_alloy_frame', '6x gtceu:obsidian_plate'])
     .itemOutputs('cosmiccore:somarust_casing')

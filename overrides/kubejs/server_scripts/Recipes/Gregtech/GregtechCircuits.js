@@ -130,6 +130,8 @@ ServerEvents.recipes(event => {
 
     //Nano Circuits
     //Processor Changes
+    event.remove({ id: 'gtceu:circuit_assembler/nano_processor_hv_soc_soldering_alloy' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_processor_hv_soc' })
     event.remove({ id: 'gtceu:circuit_assembler/nano_processor_hv_asmd' })
     event.remove({ id: 'gtceu:circuit_assembler/nano_processor_hv_asmd_soldering_alloy' })
     event.remove({ id: 'gtceu:circuit_assembler/nano_processor_hv' })
@@ -214,18 +216,18 @@ ServerEvents.recipes(event => {
     //Also Have to now remove the SOC recipes as they need the next tier of solder.
     event.remove({ id: 'gtceu:circuit_assembler/quantum_processor_ev_soc' })
     event.remove({ id: 'gtceu:circuit_assembler/quantum_processor_ev_soc_soldering_alloy' })
-    event.recipes.gtceu.circuit_assembler('quantum_processor_ev_frontiers')
-        .itemInputs(['gtceu:fiber_reinforced_printed_circuit_board', 'gtceu:qbit_cpu_chip', '2x gtceu:nano_cpu_chip', '12x gtceu:smd_capacitor', '12x gtceu:smd_transistor', '16x gtceu:fine_americium_wire'])
+    event.recipes.gtceu.circuit_assembler('lucidic_processor_ev_frontiers')
+        .itemInputs(['gtceu:fiber_reinforced_printed_circuit_board', 'gtceu:qbit_cpu_chip', '2x gtceu:nano_cpu_chip', '12x gtceu:smd_capacitor', '12x gtceu:smd_transistor', '16x cosmiccore:fine_lumium_wire'])
         .inputFluids('gtceu:high_grade_solder 144')
-        .itemOutputs('2x gtceu:quantum_processor')
+        .itemOutputs('2x cosmiccore:lucidic_processor')
         .duration(200)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.IV]);
 
-    event.recipes.gtceu.circuit_assembler('quantum_processor_ev_frontiers_soc')
-        .itemInputs(['gtceu:fiber_reinforced_printed_circuit_board', 'gtceu:advanced_soc', '16x gtceu:fine_americium_wire', '8x gtceu:osmium_bolt'])
+    event.recipes.gtceu.circuit_assembler('lucidic_processor_ev_frontiers_soc')
+        .itemInputs(['gtceu:fiber_reinforced_printed_circuit_board', 'gtceu:advanced_soc', '16x cosmiccore:fine_lumium_wire', '8x gtceu:osmium_bolt'])
         .inputFluids('gtceu:high_grade_solder 144')
-        .itemOutputs('4x gtceu:quantum_processor')
+        .itemOutputs('4x cosmiccore:lucidic_processor')
         .duration(50)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.ZPM]);
@@ -235,10 +237,10 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:circuit_assembler/quantum_assembly_iv_asmd_soldering_alloy' })
     event.remove({ id: 'gtceu:circuit_assembler/quantum_assembly_iv_soldering_alloy' })
     event.remove({ id: 'gtceu:circuit_assembler/quantum_assembly_iv_asmd' })
-    event.recipes.gtceu.circuit_assembler('quantum_assembly_iv_frontiers')
-        .itemInputs(['gtceu:fiber_reinforced_printed_circuit_board', '2x gtceu:quantum_processor', '12x gtceu:smd_inductor', '16x gtceu:smd_capacitor', '4x cosmiccore:aram_chip', '16x gtceu:fine_americium_wire'])
+    event.recipes.gtceu.circuit_assembler('lucidic_assembly_iv_frontiers')
+        .itemInputs(['gtceu:fiber_reinforced_printed_circuit_board', '2x cosmiccore:lucidic_processor', '12x gtceu:smd_inductor', '16x gtceu:smd_capacitor', '4x cosmiccore:aram_chip', '16x cosmiccore:fine_lumium_wire'])
         .inputFluids('gtceu:high_grade_solder 144')
-        .itemOutputs('gtceu:quantum_processor_assembly')
+        .itemOutputs('cosmiccore:lucidic_processor_assembly')
         .duration(200)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.IV]);
@@ -248,10 +250,11 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:circuit_assembler/quantum_computer_luv_soldering_alloy' })
     event.remove({ id: 'gtceu:circuit_assembler/quantum_computer_luv_asmd_soldering_alloy' })
     event.remove({ id: 'gtceu:circuit_assembler/quantum_computer_luv' })
-    event.recipes.gtceu.circuit_assembler('quantum_supercomputer_luv_frontiers')
-        .itemInputs(['gtceu:fiber_reinforced_printed_circuit_board', '4x gtceu:quantum_processor_assembly', '16x gtceu:smd_diode', '8x gtceu:nor_memory_chip', '8x cosmiccore:aram_chip', '16x gtceu:fine_curium_wire'])
+    event.remove({ id: 'gtceu:circuit_assembler/quantum_processor_ev_frontiers_soc' })
+    event.recipes.gtceu.circuit_assembler('lucidic_supercomputer_luv_frontiers')
+        .itemInputs(['gtceu:fiber_reinforced_printed_circuit_board', '4x cosmiccore:lucidic_processor_assembly', '16x gtceu:smd_diode', '8x gtceu:nor_memory_chip', '8x cosmiccore:aram_chip', '16x gtceu:fine_curium_wire'])
         .inputFluids('gtceu:high_grade_solder 288')
-        .itemOutputs('gtceu:quantum_processor_computer')
+        .itemOutputs('cosmiccore:lucidic_processor_supercomputer')
         .duration(200)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.IV]);
@@ -261,10 +264,10 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:circuit_assembler/quantum_mainframe_zpm_asmd' })
     event.remove({ id: 'gtceu:circuit_assembler/quantum_mainframe_zpm_soldering_alloy' })
     event.remove({ id: 'gtceu:circuit_assembler/quantum_mainframe_zpm_asmd_soldering_alloy' })
-    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_frontiers')
-        .itemInputs(['2x cosmiccore:prismatic_tungstensteel_frame', '6x gtceu:quantum_processor_computer', '64x gtceu:smd_capacitor', '32x gtceu:smd_inductor', '12x cosmiccore:aram_chip', '32x gtceu:hssg_single_wire'])
+    event.recipes.gtceu.circuit_assembler('lucidic_mainframe_zpm_frontiers')
+        .itemInputs(['2x cosmiccore:prismatic_tungstensteel_frame', '6x cosmiccore:lucidic_processor_supercomputer', '64x gtceu:smd_capacitor', '32x gtceu:smd_inductor', '12x cosmiccore:aram_chip', '32x gtceu:hssg_single_wire'])
         .inputFluids('gtceu:high_grade_solder 576')
-        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .itemOutputs('cosmiccore:lucidic_processor_mainframe')
         .duration(300)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.IV]);

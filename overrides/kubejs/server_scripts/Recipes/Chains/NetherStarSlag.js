@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV]);
     event.recipes.gtceu.cutter('boule_processing')
         .itemInputs('kubejs:chromatically_doped_nether_star_boule')
-        .itemOutputs(['4x minecraft:nether_star','4x gtceu:nether_star_dust'])//remove comment when you find a way to have multiple outputs
+        .itemOutputs(['4x minecraft:nether_star'])//remove comment when you find a way to have multiple outputs
         .dimension('minecraft:the_nether')
         .duration(150)
         .EUt(GTValues.VA[GTValues.EV]);

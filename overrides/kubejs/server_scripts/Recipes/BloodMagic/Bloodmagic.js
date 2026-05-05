@@ -67,6 +67,13 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.assembler('iv_soul_input')
     .itemInputs(['gtceu:iv_machine_hull', '16x kubejs:resplendent_sylvan_nanolattice', '8x cosmiccore:faint_mote', 'gtceu:steel_fluid_cell', 'gtceu:iv_sensor'])
     .itemOutputs('cosmiccore:iv_soul_input_hatch')
+    .circuit(1)
+    .duration(240)
+    .EUt(GTValues.VA[GTValues.IV]);
+  event.recipes.gtceu.assembler('iv_soul_output')
+    .itemInputs(['gtceu:iv_machine_hull', '16x kubejs:resplendent_sylvan_nanolattice', '8x cosmiccore:faint_mote', 'gtceu:steel_fluid_cell', 'gtceu:iv_sensor'])
+    .itemOutputs('cosmiccore:iv_soul_output_hatch')
+    .circuit(2)
     .duration(240)
     .EUt(GTValues.VA[GTValues.IV]);
 
