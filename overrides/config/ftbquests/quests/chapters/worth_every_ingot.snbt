@@ -18,7 +18,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2AF737CA4D527559"]
 			dependency_requirement: "one_completed"
 			description: [
 				"I seriously recommend you upgrade your Naqline, as there is SEVERAL Naquadah sinks in LuV."
@@ -580,9 +579,9 @@
 		}
 		{
 			dependencies: [
-				"6CFEE9FDE64A56F5"
 				"48EA04671E16859B"
 				"5F7196C657801DBD"
+				"2C231CE663DDA562"
 			]
 			description: [
 				"Fusing &eTau Oil&r onto &eTrinium&r creates a metal capable of rapid expansion and compression without the typical shortcomings associated with rapid material changes."
@@ -601,24 +600,6 @@
 			}]
 			x: -3.5d
 			y: -4.5d
-		}
-		{
-			dependencies: ["75A4495610653B26"]
-			description: [
-				"As Mentioned, demonic will as a mechanic sees very little use in frontiers currently."
-				""
-				"Will Crystals and their attuned variations will be more used later on with their own aquisition methods beyond the standard bloodmagic rituals"
-			]
-			id: "2FE7FBD01B53D1F2"
-			shape: "gear"
-			tasks: [{
-				id: "2AA63336D902D92F"
-				item: "bloodmagic:defaultcrystal"
-				type: "item"
-			}]
-			title: "Will Crystals Without Will?"
-			x: 9.0d
-			y: -3.0d
 		}
 		{
 			dependencies: ["433CFBEBF8EFB418"]
@@ -659,10 +640,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"52FDB03D36E94054"
-				"333F819E70468E50"
-			]
+			dependencies: ["333F819E70468E50"]
 			description: [
 				"Welcome to Crystal CPU's, a much harder CPU core than Nano or Quantum. And require a multi-dimensional setup to fully automate. Some pointers before you start."
 				""
@@ -1144,27 +1122,6 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["3706DAF22D0DE870"]
-			description: [
-				"Why are we caring about lake water of all things?"
-				"Couldn't you just get this in the overworld????"
-				""
-				"This lake water comes directly from the undergarden, it's rich in microbes and other plant matter not found in any other dimension. This has mostly been cleaned but let's shove even more plant matter inside it to encourage the bacterium to grow."
-				""
-				"They unfortunately will die if you take the solution outside of the undergarden, so you must process the entire chain locally before exporting the finished &aNutrient Solution&r"
-			]
-			icon: "gtceu:lake_water_bucket"
-			id: "6354D6CB595585EA"
-			subtitle: "Wait, what?"
-			tasks: [{
-				id: "24B25F3F5F952D03"
-				item: "gtceu:lake_water_bucket"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -6.0d
-		}
-		{
 			dependencies: [
 				"2B37981D5212AB24"
 				"41FB19EBE16E5EDD"
@@ -1354,21 +1311,6 @@
 			y: -11.0d
 		}
 		{
-			dependencies: [
-				"5F7196C657801DBD"
-				"7B7B30CED0ECA8E0"
-				"2C231CE663DDA562"
-			]
-			id: "6CFEE9FDE64A56F5"
-			tasks: [{
-				id: "0AA056EB77C7126C"
-				item: "bloodmagic:demonslate"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -4.5d
-		}
-		{
 			dependencies: ["635C885360A8A8A9"]
 			hide_dependency_lines: true
 			id: "592DE900A5586BF0"
@@ -1403,28 +1345,6 @@
 			y: -14.0d
 		}
 		{
-			dependencies: [
-				"5E7BEAA0EA55C758"
-				"7B772D4F47A1390C"
-			]
-			description: [
-				"You can now automatically insert LP into your Soul Network."
-				""
-				"If you want fully automatic life essence generation, consider investing into a Sanguine Sufferage Chamber."
-			]
-			id: "3F638ACC2A023574"
-			shape: "hexagon"
-			size: 1.0d
-			subtitle: "Life Injection"
-			tasks: [{
-				id: "66B0F62327432B0A"
-				item: "cosmiccore:luv_soul_output_hatch"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -3.0d
-		}
-		{
 			dependencies: ["75E3A149361EA931"]
 			icon: "gtceu:grading_fluid_3_bucket"
 			id: "2C231CE663DDA562"
@@ -1435,7 +1355,7 @@
 				item: "gtceu:grading_fluid_3_bucket"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.5d
 			y: -4.5d
 		}
 		{
@@ -1448,8 +1368,8 @@
 				item: "gtceu:grading_fluid_2_bucket"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -1.0d
+			x: 2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1460,126 +1380,16 @@
 			shape: "hexagon"
 			subtitle: "Better Binding Recipe"
 			tasks: [{
-				id: "5CAB9ED23EDE2D9F"
-				item: "bloodmagic:reagentbinding"
+				id: "0DFD87893FE5DF4E"
+				item: "cosmiccore:tethering_resin"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["720CCC24CB7E693F"]
-			id: "20B72AA21636E2E6"
-			tasks: [{
-				id: "421F7A45F50F1BDD"
-				item: "bloodmagic:ritualdivinerdusk"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["75E3A149361EA931"]
-			icon: "bloodmagic:ritualdiviner"
-			id: "4E823028C4B3309D"
-			tasks: [{
-				id: "1E8AF94020657DC7"
-				item: "bloodmagic:ritualdiviner"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"4E823028C4B3309D"
-				"435441F1145C9166"
-			]
-			description: [
-				"You'll have to adventure into a new dimension to locate the shards required for T4 progression."
-				""
-				""
-				"This is a dungeon, so prepare well!"
-				""
-				"Do note you can just like, also break out of it, rooms will not spawn unless you use keys."
-			]
-			icon: "bloodmagic:dungeon_alternator"
-			id: "44290011E2FA4181"
-			shape: "hexagon"
-			size: 1.0d
-			subtitle: "Edge of the Hidden Realm"
-			tasks: [
-				{
-					id: "25581CA2DCC6592F"
-					item: "bloodmagic:masterritualstone"
-					type: "item"
-				}
-				{
-					count: 36L
-					id: "247A5D3B899AC7DB"
-					item: { Count: 36, id: "bloodmagic:ritualstone" }
-					type: "item"
-				}
-			]
-			title: "Break out of Bounds"
-			x: 0.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["44290011E2FA4181"]
-			id: "7B7B30CED0ECA8E0"
-			shape: "hexagon"
-			subtitle: "Demonic Plants"
-			tasks: [{
-				id: "1476006707E95F73"
-				item: "bloodmagic:weak_tau"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"5F7196C657801DBD"
-				"197EA5F24A4344F5"
-				"75E3A149361EA931"
-			]
-			description: [
-				"Ritual Stones will require T3 slates to produce. "
-				""
-				"You have access to Grading Catalyst T2 now, go make some T3 slates and upgrade your altar!"
-			]
-			hide_until_deps_visible: true
-			id: "435441F1145C9166"
-			subtitle: "Tier 3 Slates"
-			tasks: [
-				{
-					id: "4BF584B3A75245F4"
-					item: "bloodmagic:ritualstone"
-					type: "item"
-				}
-				{
-					id: "320CBC70B55F3A0A"
-					item: "bloodmagic:masterritualstone"
-					type: "item"
-				}
-			]
 			x: 0.0d
 			y: -2.0d
 		}
 		{
-			dependencies: ["7F7D6A88A4870EE1"]
-			description: [
-				"From \"&nTier 5&r\" Blood Orb and higher you will instead use the \"&eHemophagic Transfuser&r\" to automate blood infusions &busing LP&r."
-				""
-				"You can generate LP with &cSuffering Chambers&r OR &cWell of Suffering&r, though WOS will always be capped by &6orb tier&r- while SSC's are capped by &6soul output hatch tier&r."
-				""
-				"Each Tier of Blood Orb higher than T5 (T6-T9) allows you to make upgradable components for your Sanguine Infusers to increase their &emax recipe tier&r."
-				""
-				""
-				""
-				"Triva; Blood Magic for T6+ is meant to use a upgraded version of the blood altar. Do to current technical limitations, that Idea has been shelved and instead saved for future updates."
-			]
+			dependencies: ["4F63BA33F7F4C5EA"]
+			description: ["TODO : SOULWEAVER QB DESC"]
 			icon: "cosmiccore:hemophagic_transfuser"
 			id: "15FA1625BC0CB121"
 			shape: "hexagon"
@@ -1595,45 +1405,11 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["5E7BEAA0EA55C758"]
-			description: [
-				"Device Capable of Extracting Raw LP from a contained entity."
-				""
-				""
-				"Can Accept Mechanical Runes to Upgrade its base strength (NYI)"
-			]
-			id: "75A4495610653B26"
-			subtitle: "Big, Scary, Bloody."
-			tasks: [{
-				id: "42A2C26A984EACF0"
-				item: "cosmiccore:suffering_chamber"
-				type: "item"
-			}]
-			title: "Suffering Chamber"
-			x: 7.5d
-			y: -3.0d
-		}
-		{
 			dependencies: ["2C231CE663DDA562"]
-			icon: "bloodmagic:masterbloodorb"
-			id: "7B772D4F47A1390C"
-			shape: "hexagon"
-			size: 1.25d
-			subtitle: "Tier 4 and onwards"
-			tasks: [{
-				id: "2AD2737BCEDBF9D4"
-				item: "bloodmagic:masterbloodorb"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["7B772D4F47A1390C"]
 			icon: "gtceu:grading_fluid_4_bucket"
 			id: "5E7BEAA0EA55C758"
 			shape: "hexagon"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "Shiny, and very expensive"
 			tasks: [{
 				id: "37D6885C44AD332A"
@@ -1641,7 +1417,7 @@
 				type: "item"
 			}]
 			title: "Tier 4 Grading Catalyst"
-			x: 7.5d
+			x: 6.5d
 			y: -4.5d
 		}
 		{
@@ -1650,111 +1426,13 @@
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
-				id: "25CA208980EA6A7D"
-				item: "bloodmagic:archmagebloodorb"
+				id: "1354241151540EDF"
+				item: "cosmiccore:clear_mote"
 				type: "item"
 			}]
 			title: "Tier 5 Blood Orb"
 			x: 10.0d
 			y: -4.5d
-		}
-		{
-			dependencies: ["20B72AA21636E2E6"]
-			description: [
-				"Bloodmagic Meteors Offer you rare and Unique Materials generally off the beaten path."
-				""
-				""
-				"Most Meteors are too costly for your current SoulHatches/Blood Orbs, so you will need to proceed to ZPM first"
-			]
-			icon: "rechiseled:netherite_block_meteoric"
-			id: "27DAD4B0E8BDA6B5"
-			shape: "octagon"
-			size: 2.0d
-			subtitle: "Pull down the Sky"
-			tasks: [{
-				id: "2BC147682A52FD81"
-				type: "checkmark"
-			}]
-			title: "Meteor Rituals"
-			x: 5.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["27DAD4B0E8BDA6B5"]
-			description: [
-				"A naturally occuring form of trinium, able to be processed down into pure trinium metal."
-				""
-				"NOTICE; TRINIUM HAS A MINING LEVEL OF 5, MEANING CREATE DRILLS CAN NOT MINE THIS."
-			]
-			id: "7E7B1E305933DFE5"
-			subtitle: "Dedicated Trinium"
-			tasks: [{
-				id: "6A44888F6C11A664"
-				item: "gtceu:raw_trinium_metallic"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -10.0d
-		}
-		{
-			dependencies: ["27DAD4B0E8BDA6B5"]
-			description: ["Look at the recipes in the 'Meteor Rituals' Category in EMI for more precise listings of what each meteor can drop"]
-			icon: "gtceu:max_meteor_recipe_dummy"
-			id: "1D17E79C204F3DD5"
-			shape: "gear"
-			subtitle: "Meteors in EMI"
-			tasks: [{
-				id: "272E048A826A990F"
-				type: "checkmark"
-			}]
-			x: 5.800680272108863d
-			y: -5.77908163265311d
-		}
-		{
-			dependencies: ["27DAD4B0E8BDA6B5"]
-			description: [
-				"Helps with any platinum shortages you may have."
-				""
-				"Note; is it still recommended to process cooperite for the PGM Metals"
-			]
-			id: "73C9D1DF5AE3460B"
-			tasks: [{
-				id: "4B162402BDA3C95D"
-				item: "gtceu:raw_platinum"
-				type: "item"
-			}]
-			title: "Pure Platinum"
-			x: 6.0d
-			y: -10.0d
-		}
-		{
-			dependencies: ["27DAD4B0E8BDA6B5"]
-			description: [
-				"This should help with any palladium shortages you may be having."
-				""
-				"Note; is it still recommended to process cooperite for the PGM Metals and palladium"
-			]
-			id: "6DE0281898693C6C"
-			tasks: [{
-				count: 2L
-				id: "538669EE73E26EA2"
-				item: { Count: 2, id: "gtceu:raw_palladium" }
-				type: "item"
-			}]
-			title: "Pure Palladium"
-			x: 7.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["27DAD4B0E8BDA6B5"]
-			id: "756DA8B06A25D9EF"
-			tasks: [{
-				id: "7F60E48235E9CEE7"
-				item: "gtceu:raw_naquadah"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -1841,26 +1519,6 @@
 			}]
 			x: -3.0d
 			y: 4.5d
-		}
-		{
-			dependencies: ["6354D6CB595585EA"]
-			description: [
-				"While Nutrient Solution isn't required for progression in LuV, it can provide you with a valuable boost to all your crop growing."
-				""
-				""
-				"Maybe this will solve your chlorine problems after all.."
-			]
-			id: "585524C706B8667B"
-			shape: "hexagon"
-			size: 1.25d
-			subtitle: "Better Fertilizer"
-			tasks: [{
-				id: "5A8F9FEDE7FCD64E"
-				item: "gtceu:nutrient_solution_base_bucket"
-				type: "item"
-			}]
-			x: -8.75d
-			y: -6.25d
 		}
 		{
 			dependencies: ["5C557676D480C3BA"]
@@ -1959,13 +1617,13 @@
 			shape: "hexagon"
 			subtitle: "Whoa!"
 			tasks: [{
-				id: "51F86BDF86E92EB8"
-				item: "bloodmagic:infusedslate"
+				id: "7B14599689BBCD7C"
+				item: "cosmiccore:pale_mote"
 				type: "item"
 			}]
 			title: "Tier 3 Slates"
-			x: 1.5d
-			y: -2.0d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4281EF4DD50CB701"]
@@ -2021,48 +1679,6 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["7B7B30CED0ECA8E0"]
-			id: "331A3E9B7203865E"
-			tasks: [{
-				id: "632CE4FCAF9BF3BD"
-				item: "bloodmagic:weakbloodshard"
-				type: "item"
-			}]
-			x: 0.004761904761913627d
-			y: -3.8488095238095283d
-		}
-		{
-			dependencies: ["2C231CE663DDA562"]
-			id: "720CCC24CB7E693F"
-			tasks: [{
-				id: "309A409726D45269"
-				item: {
-					Count: 1
-					id: "bloodmagic:duskscribetool"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 2.5d
-			y: -5.5d
-		}
-		{
-			dependencies: [
-				"3822951EF3C8636E"
-				"4F63BA33F7F4C5EA"
-			]
-			id: "7F7D6A88A4870EE1"
-			tasks: [{
-				id: "361AB8B42BEAAACD"
-				item: "bloodmagic:lightritualstone"
-				type: "item"
-			}]
-			x: 10.0d
-			y: -6.0d
-		}
-		{
 			dependencies: ["669EB7FC0C6A0756"]
 			description: [
 				"Allows the use or laser target/source hatches to move energy around in massive quantities."
@@ -2103,25 +1719,6 @@
 			y: -15.0d
 		}
 		{
-			dependencies: ["720CCC24CB7E693F"]
-			description: [
-				"The ritual 'well of suffering' allows you to damage mobs nearby the ritual to automatically refill the LP of the blood altar, this is your first serious way to generate LP until later."
-				""
-				"Later on (After T5 Blood Orb) you'll be able to craft machines capable of outputing LP into your soul network automatically"
-			]
-			icon: "bloodmagic:daggerofsacrifice"
-			id: "1DF89B293781586D"
-			shape: "gear"
-			subtitle: "Early Automated Blood Collection"
-			tasks: [{
-				id: "5A2371BEADB4B927"
-				type: "checkmark"
-			}]
-			title: "The Well of Suffering"
-			x: 2.0d
-			y: -6.5d
-		}
-		{
 			dependencies: ["3822951EF3C8636E"]
 			id: "4F63BA33F7F4C5EA"
 			tasks: [{
@@ -2129,7 +1726,7 @@
 				item: "gtceu:grading_fluid_5_bucket"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 10.0d
 			y: -6.0d
 		}
 		{
@@ -2215,6 +1812,17 @@
 			}]
 			x: 10.0d
 			y: -12.5d
+		}
+		{
+			dependencies: ["6EA6009DEC0F3345"]
+			id: "0FF0C9E7F2A996F8"
+			tasks: [{
+				id: "38DB44589572DD59"
+				item: "cosmiccore:superheavy_bedrock_alloy_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -7.0d
 		}
 	]
 	title: "A Factory Soaked In Blood [&dLuV&r]"

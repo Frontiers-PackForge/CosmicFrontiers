@@ -187,7 +187,6 @@ ServerEvents.recipes(event => {
        event.remove({ id: 'bhc:god_apple' })
        event.remove({ id: 'create:industrial_iron_block_from_ingots_iron_stonecutting' })
        event.remove({ id: 'biomesoplenty:tnt_from_bop_sand' })
-       event.remove({ id: 'minecraft:kjs/bloodmagic_alchemytable' })
        // Remove all of Terralith's alt recipes for vanilla blocks (e.g Dropper, Observer, Lever, Dispenser, Piston)
        event.remove({ id: /terralith:(.*)_alt/ })
 
@@ -1143,7 +1142,7 @@ ServerEvents.recipes(event => {
               .itemOutputs('8x gtceu:tempered_iesnium_ingot')
               .emberInput(8000)
               .duration(1600)
-              .EUt(GTValues.VA[GTValues.EV]);
+              .EUt(GTValues.VA[GTValues.HV]);
 
        event.recipes.gtceu.arcane_crucible('frontiers:arcane_crucible/luminized_titanium_ingot')
               .itemInputs(['2x gtceu:titanium_ingot', 'gtceu:luminite_ingot', 'gtceu:platinum_ingot'])

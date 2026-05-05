@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     // event.remove({ output: Fluid.of(itemName) })
     event.recipes.gtceu.essence_reactor(`prisma_acid`)
-        .itemInputs(['bloodmagic:reagentwater', 'bloodmagic:reagentlava'])
+        .itemInputs(['cosmiccore:somnolent_dew', 'cosmiccore:pyretic_ichor'])
         .inputFluids('gtceu:hydrofluoric_acid 8000')
         .inputFluids('gtceu:sulfuric_acid 8000')
         .outputFluids('gtceu:astraline_corrosion_agent 16000')
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         .itemInputs('4x botania:mana_powder')
         .inputFluids('gtceu:potent_mana 500')
         .inputFluids('gtceu:source_oils 500')
-        .itemOutputs('8x bloodmagic:reagentwater')
+        .itemOutputs('8x cosmiccore:somnolent_dew')
         .duration(240)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.essence_reactor(`lava_reagent`)
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         .inputFluids('minecraft:lava 2000')
         .inputFluids('gtceu:potent_mana 500')
         .inputFluids('gtceu:source_oils 500')
-        .itemOutputs('8x bloodmagic:reagentlava')
+        .itemOutputs('8x cosmiccore:pyretic_ichor')
         .duration(240)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.essence_reactor(`air_reagent`)
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:tears_of_the_sky 1000')
         .inputFluids('gtceu:potent_mana 500')
         .inputFluids('gtceu:source_oils 500')
-        .itemOutputs('8x bloodmagic:reagentair')
+        .itemOutputs('8x cosmiccore:ether_wisp')
         .duration(240)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.essence_reactor(`growth_reagent`)
@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
         .itemInputs('4x botania:mana_powder')
         .inputFluids('gtceu:potent_mana 500')
         .inputFluids('gtceu:source_oils 500')
-        .itemOutputs('8x bloodmagic:reagentgrowth')
+        .itemOutputs('8x cosmiccore:verdant_anima')
         .duration(240)
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.assembler(`essence_reactor_controller`)

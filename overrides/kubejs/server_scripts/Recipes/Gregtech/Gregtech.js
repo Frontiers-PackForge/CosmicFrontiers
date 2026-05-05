@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
   //Beacon Replacement
   event.remove({ id: 'tconstruct:common/glass/vanilla/beacon' })
   event.recipes.gtceu.mana_engraver('frontiers:bad_beacon_recipe')
-    .itemInputs(['16x bloodmagic:reagentwater', '16x bloodmagic:reagentlava', '16x bloodmagic:reagentgrowth', '16x bloodmagic:reagentair', '8x malum:arcane_spirited_glass', '16x malum:infernal_spirit', '6x gtceu:dense_obsidian_plate'])
+    .itemInputs(['16x cosmiccore:somnolent_dew', '16x cosmiccore:pyretic_ichor', '16x cosmiccore:verdant_anima', '16x cosmiccore:ether_wisp', '8x malum:arcane_spirited_glass', '16x malum:infernal_spirit', '6x gtceu:dense_obsidian_plate'])
     .itemOutputs(['minecraft:beacon'])
     .duration(40)
     .circuit(2)
@@ -1384,7 +1384,7 @@ ServerEvents.recipes(event => {
     L: 'kubejs:resplendent_sylvan_nanolattice',
     W: 'cosmiccore:highly_conductive_fission_casing',
     C: '#gtceu:circuits/luv',
-    R: 'bloodmagic:blankrune',
+    R: 'cosmiccore:blank_rune',
   })
   event.shaped('cosmiccore:steam_fluid_input_hatch', [
     ' G ',

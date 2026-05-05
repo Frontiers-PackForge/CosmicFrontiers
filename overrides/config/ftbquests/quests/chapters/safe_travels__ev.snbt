@@ -337,12 +337,6 @@
 			description: [
 				"If you've gotten here, you've most likely made everything you need for IV."
 				""
-				"- Elementium"
-				"- Virtue Meld"
-				"- Tungsten Steel"
-				"- Praseodymium"
-				"- Nano Circuits"
-				""
 				"It is most likely a good time to set up permanent power infrastructure, if you haven't already as power cost will inflate from here onwards"
 			]
 			id: "44DE661BAA434766"
@@ -849,29 +843,29 @@
 		}
 		{
 			dependencies: ["151A9B2F42C9284E"]
-			icon: "bloodmagic:reagentgrowth"
+			icon: "cosmiccore:verdant_anima"
 			id: "627303BD04BDAC20"
 			shape: "hexagon"
 			subtitle: "Yes, make them all."
 			tasks: [
 				{
-					id: "0542068DA882357D"
-					item: "bloodmagic:reagentwater"
+					id: "0774C2591F98A4F6"
+					item: "cosmiccore:somnolent_dew"
 					type: "item"
 				}
 				{
-					id: "6CF17616B6F08423"
-					item: "bloodmagic:reagentlava"
+					id: "22692CBFAF21207E"
+					item: "cosmiccore:pyretic_ichor"
 					type: "item"
 				}
 				{
-					id: "45F6EC044F39FC32"
-					item: "bloodmagic:reagentgrowth"
+					id: "1DC0BD57B218248F"
+					item: "cosmiccore:ether_wisp"
 					type: "item"
 				}
 				{
-					id: "6CC97E82C539C3C1"
-					item: "bloodmagic:reagentair"
+					id: "69D95D96A9A8BBD3"
+					item: "cosmiccore:verdant_anima"
 					type: "item"
 				}
 			]

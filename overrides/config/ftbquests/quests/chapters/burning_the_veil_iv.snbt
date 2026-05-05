@@ -46,22 +46,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"0EB887FF13AB1458"
-				"4BD17BFAAA55E17D"
-			]
-			id: "2AF737CA4D527559"
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "25165FB4F2B3E22D"
-				item: "gtceu:luv_machine_hull"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -12.0d
-		}
-		{
 			dependencies: ["20F2ADF25368606E"]
 			id: "6F1CDA84C100FA72"
 			tasks: [{
@@ -240,7 +224,10 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["0736BF9BB4A993A8"]
+			dependencies: [
+				"0736BF9BB4A993A8"
+				"62334F5A41307FD1"
+			]
 			id: "20F2ADF25368606E"
 			tasks: [{
 				id: "40981FE12A5F8005"
@@ -267,23 +254,6 @@
 			]
 			x: 2.5d
 			y: 0.0d
-		}
-		{
-			dependencies: ["52DAB014D2101F02"]
-			hide_dependency_lines: true
-			id: "4BD17BFAAA55E17D"
-			shape: "hexagon"
-			tasks: [{
-				id: "39D5459C11FE9295"
-				item: {
-					Count: 1
-					id: "cosmiccore:halizine_alloy_ingot"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 1.5d
-			y: -10.5d
 		}
 		{
 			dependencies: [
@@ -373,7 +343,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["12FD20955C24A831"]
+			dependencies: [
+				"12FD20955C24A831"
+				"146D7317973F5808"
+			]
 			icon: "gtceu:hpic_wafer"
 			id: "585032A07826E40E"
 			tasks: [
@@ -721,13 +694,15 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["4AB99F0ED0E97D56"]
+			dependencies: ["77D9B688814498FF"]
 			id: "3963DF51E15873E4"
+			subtitle: "It's like pollution but good?"
 			tasks: [{
 				id: "41196297C69CF984"
 				item: "cosmiccore:iv_soul_input_hatch"
 				type: "item"
 			}]
+			title: "Putting the Essence Somewhere that Matters"
 			x: 5.5d
 			y: 2.5d
 		}
@@ -776,6 +751,197 @@
 			}]
 			x: 4.5d
 			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0EB887FF13AB1458"
+				"71B03DE1C51C6040"
+			]
+			description: [
+				"[Authorizing]"
+				""
+				"Establishing Connection with Orbital Hub."
+				""
+				""
+				""
+				"This machine whirrs deeply, like something is watching."
+				""
+				"This might not go over well."
+			]
+			id: "57003172615D5C1D"
+			subtitle: "A Pillar Into Heaven"
+			tasks: [{
+				id: "3C3115EB57A76F62"
+				item: "cosmiccore:star_ladder"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["3963DF51E15873E4"]
+			id: "35C3470DA313D40E"
+			tasks: [{
+				id: "537E93DE03256B2E"
+				item: "cosmiccore:oneiric_sieve"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4AB99F0ED0E97D56"]
+			icon: "chipped:iron_bowl_soul_lantern"
+			id: "77D9B688814498FF"
+			tasks: [{
+				id: "14F4CA397E9618F2"
+				title: "I got it!"
+				type: "checkmark"
+			}]
+			title: "Raw Soul Essence"
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"7658729357877BBE"
+				"3E4604CDD73E13C3"
+			]
+			id: "6822B200A4FC247A"
+			tasks: [{
+				id: "6C82A6174F0561E3"
+				item: "gtceu:grading_fluid_1_bucket"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["35C3470DA313D40E"]
+			id: "7658729357877BBE"
+			tasks: [{
+				id: "50DD7943BFF16AB4"
+				item: "gtceu:essence_reactor"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3963DF51E15873E4"]
+			id: "1BFFBCD9EE7C14EC"
+			subtitle: "A Cluster of Soul"
+			tasks: [{
+				id: "344885DC89E4C04C"
+				item: "cosmiccore:faint_mote"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["34CAC04DBFDFEFA3"]
+			id: "146D7317973F5808"
+			tasks: [{
+				id: "578B39D639221CDE"
+				item: "cosmiccore:dim_mote"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1BFFBCD9EE7C14EC"
+				"6822B200A4FC247A"
+			]
+			id: "34CAC04DBFDFEFA3"
+			tasks: [{
+				id: "6549FCAC79968E3A"
+				item: "cosmiccore:wrapped_faint_mote"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["52DAB014D2101F02"]
+			hide_dependency_lines: true
+			id: "3E4604CDD73E13C3"
+			tasks: [{
+				id: "066FDC2AD2BD774C"
+				item: "cosmiccore:oneiric_signet_t1"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6822B200A4FC247A"]
+			id: "62334F5A41307FD1"
+			tasks: [{
+				id: "16D24E9E8631AC84"
+				item: "gtceu:grading_fluid_2_bucket"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2351B7B891771BE4"]
+			id: "71B03DE1C51C6040"
+			tasks: [{
+				id: "393B6E77B30D25A3"
+				item: "gtceu:fine_vectran_wire"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"02DE86C23C6A9E51"
+				"4D67B518EE125AAC"
+			]
+			id: "2351B7B891771BE4"
+			tasks: [{
+				id: "1480B2B03F2A51A9"
+				item: "gtceu:vectran_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -10.5d
+		}
+		{
+			id: "4D67B518EE125AAC"
+			tasks: [{
+				id: "343BA877F7C376B5"
+				item: "gtceu:hydroxybenzoic_acid_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["043120D48405BC84"]
+			id: "02DE86C23C6A9E51"
+			tasks: [{
+				id: "7170ECD7B357945D"
+				item: "gtceu:hydroxynaphtoic_acid_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -11.5d
+		}
+		{
+			id: "043120D48405BC84"
+			tasks: [{
+				id: "57DAC5B2B7AAF204"
+				item: "gtceu:potassium_naphthoxide_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -11.5d
 		}
 	]
 	title: "Burning the Veil [IV]"

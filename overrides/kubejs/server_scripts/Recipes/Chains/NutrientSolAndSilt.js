@@ -206,7 +206,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV]);
     event.recipes.gtceu.gravity_float_crucible('chiplet_sealing')
         .itemInputs(['cosmiccore:masked_crystal_chiplet_package', '16x gtceu:europium_silicide_dust'])
-        .notConsumable('bloodmagic:lavacrystal')
+        .notConsumable('cosmiccore:tau_oil')
         .itemOutputs('cosmiccore:unsealed_crystal_cpu')
         .dimension('ad_astra:earth_orbit')
         .duration(480)
@@ -219,7 +219,7 @@ ServerEvents.recipes(event => {
     //     .EUt(GTValues.VA[GTValues.ZPM]);
     event.recipes.gtceu.assembly_line('chiplet_assembly')
         // .notConsumable('gtceu:iv_emitter')
-        .itemInputs(['cosmiccore:unsealed_crystal_cpu', '4x gtceu:emerald_plate', '2x bloodmagic:defaultcrystal', '2x gtceu:tempered_iesnium_plate'])
+        .itemInputs(['cosmiccore:unsealed_crystal_cpu', '4x gtceu:emerald_plate', '2x cosmiccore:clear_mote', '2x gtceu:tempered_iesnium_plate'])
         .itemOutputs('gtceu:crystal_cpu')
         .inputFluids(
             Fluid.of('cosmiccore:prisma', 288),

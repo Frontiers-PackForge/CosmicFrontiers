@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         .duration(1100)
         .EUt(GTValues.VA[GTValues.EV]);
     event.recipes.gtceu.industrial_chemvat('frontiers:nylon_jelly')
-        .itemInputs('4x gtceu:hexamethylenediamine_dust', 'bloodmagic:tauoil')
+        .itemInputs('4x gtceu:hexamethylenediamine_dust', 'cosmiccore:tau_oil')
         .inputFluids('gtceu:source_oils 1000')
         .inputFluids('gtceu:adipic_acid 1000')
         .outputFluids('gtceu:nylon_jelly_polymer 4000')

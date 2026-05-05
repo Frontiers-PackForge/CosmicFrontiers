@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
         .duration(120)
         .EUt(GTValues.VA[GTValues.IV])
     event.recipes.gtceu.large_chemical_reactor('prisma_naquahine')
-        .notConsumable('32x bloodmagic:reagentbinding')
+        .notConsumable('32x cosmiccore:tethering_resin')
         .inputFluids('gtceu:hydrofluoric_acid 2000')
         .inputFluids('gtceu:raw_naquahine 2000')
         .inputFluids('cosmiccore:prisma 2000')
@@ -121,14 +121,14 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.brewery('rhenium_rich_complex')
         .inputFluids('gtceu:rhenium_saturated_naquahine 250')
-        .chancedInput('bloodmagic:tauoil', 1500, 0)
+        .chancedInput('cosmiccore:tau_oil', 1500, 0)
         .outputFluids('gtceu:rhenium_rich_complex 125')
         .duration(450)
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.chemical_bath('rhenium_slag')
         .inputFluids('gtceu:rhenium_rich_complex 500')
-        .chancedInput('bloodmagic:reagentholding', 1111, 0)
+        .chancedInput('cosmiccore:stasis_brine', 1111, 0)
         .itemOutputs('gtceu:rhenium_rich_slag_dust')
         .duration(360)
         .EUt(GTValues.VA[GTValues.IV] * 0.8)
@@ -163,7 +163,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
 
     event.recipes.gtceu.industrial_chemvat('frontiers:complex_to_rhenium_dust')
-        .notConsumable('bloodmagic:reagentholding')
+        .notConsumable('cosmiccore:stasis_brine')
         .inputFluids('gtceu:rhenium_rich_complex 500')
         .itemOutputs('5x gtceu:rhenium_dust')
         .stationResearch(b => b
@@ -192,13 +192,13 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.gtceu.extractor('frontiers:extract_raw_tau')
-        .itemInputs('64x bloodmagic:weak_tau')
+        .itemInputs('64x cosmiccore:tau_fruit')
         .outputFluids('gtceu:extracted_tau 1000')
         .duration(430)
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.fermenter('frontiers:distill_pure_tau_oil')
-        .chancedInput('bloodmagic:reagentbinding', 500, 0)
+        .chancedInput('cosmiccore:tethering_resin', 500, 0)
         .inputFluids('gtceu:extracted_tau 16000')
         .outputFluids('gtceu:tau_oil 1000')
         .duration(300)
@@ -207,7 +207,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.canner('frontiers:tau_oil_to_tau_oil_bottle')
         .itemInputs('gtceu:glass_vial')
         .inputFluids('gtceu:tau_oil 100')
-        .itemOutputs('bloodmagic:tauoil')
+        .itemOutputs('cosmiccore:tau_oil')
         .duration(10)
         .EUt(GTValues.VA[GTValues.UV], 16)
 

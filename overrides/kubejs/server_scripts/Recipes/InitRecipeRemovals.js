@@ -24,11 +24,8 @@ ServerEvents.recipes(event => {
     event.remove({id: 'aether:skyroot_crafting_table'})
 
     event.remove({id: 'occultism:smelting/iron_ingot_from_dust'})
-    event.remove({id: 'bloodmagic:smelting/ingot_iron'})
     event.remove({id: 'occultism:smelting/gold_ingot_from_dust'})
-    event.remove({id: 'bloodmagic:smelting/ingot_gold'})
     event.remove({id: 'occultism:smelting/copper_ingot_from_dust'})
-    event.remove({id: 'bloodmagic:smelting/ingot_copper'})
     event.remove({id: 'occultism:smelting/iesnium_ingot_from_dust'})
     event.remove({id: 'occultism:smelting/iesnium_ingot_from_raw'})
     event.remove({id: 'aether:holystone_stonecutter'})

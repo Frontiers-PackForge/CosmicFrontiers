@@ -40,19 +40,6 @@ ServerEvents.recipes(event => {
   ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('occultism:chalk_red', '{Damage:0}')).EUt(GTValues.VA[GTValues.LuV]).duration(3200))
     .duration(1200)
     .EUt(GTValues.VA[GTValues.LuV])
-  event.remove({ id: 'bloodmagic:ritual_diviner_0' })
-  event.recipes.gtceu.assembly_line('inscriber_recipe')
-    .itemInputs(['16x bloodmagic:infusedslate', 'botania:exchange_rod', Item.of('occultism:chalk_red', '{Damage:0}'), Item.of('occultism:chalk_purple', '{Damage:0}'), Item.of('occultism:chalk_gold', '{Damage:0}'), Item.of('occultism:chalk_white', '{Damage:0}'), Item.of('bloodmagic:airscribetool', '{Damage:0}'), Item.of('bloodmagic:firescribetool', '{Damage:0}'), Item.of('bloodmagic:waterscribetool', '{Damage:0}'), Item.of('bloodmagic:earthscribetool', '{Damage:0}')])
-    .itemOutputs('bloodmagic:ritualdiviner')
-    .inputFluids(
-      'gtceu:4_4_oxydianiline_pyromellitimide 9216',
-      'gtceu:grading_fluid_1 32000',
-      'gtceu:grading_fluid_2 16000'
-    )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('occultism:chalk_red', '{Damage:0}')).EUt(GTValues.VA[GTValues.LuV]).duration(3200))
-    .duration(1200)
-    .EUt(GTValues.VA[GTValues.LuV])
-
   event.recipes.gtceu.assembly_line('luv_hull_assline')
     .itemInputs(['gtceu:iridium_frame', '16x gtceu:rhodium_plated_palladium_plate', '8x cosmiccore:double_prismatic_tungstensteel_plate', '16x gtceu:osmiridium_screw', '#gtceu:circuits/hv', '2x gtceu:niobium_titanium_quadruple_cable'])
     .itemOutputs('gtceu:luv_machine_hull')
@@ -396,58 +383,8 @@ ServerEvents.recipes(event => {
     .duration(300)
     .EUt(GTValues.VA[GTValues.ZPM])
 
-  event.remove({ id: 'bloodmagic:blood_rune_speed' })
-  event.remove({ id: 'bloodmagic:blood_rune_capacity' })
-  event.remove({ id: 'bloodmagic:blood_rune_sacrifice' })
-  event.remove({ id: 'bloodmagic:blood_rune_self_sacrifice' })
-
-  event.recipes.gtceu.assembly_line('frontiers:speed_rune')
-    .itemInputs(['bloodmagic:blankrune', '4x botania:rune_spring', '4x botania:rune_air', '64x minecraft:sugar', 'botania:cosmetic_clock_eye'])
-    .itemOutputs('bloodmagic:speedrune')
-    .inputFluids(
-      'gtceu:4_4_oxydianiline_pyromellitimide 288',
-      'gtceu:grading_fluid_1 250'
-    )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
-    .duration(300)
-    .EUt(GTValues.VA[GTValues.LuV])
-
-  // event.recipes.gtceu.assembly_line('frontiers:capacity_rune')
-  //   .itemInputs(['bloodmagic:blankrune', '4x botania:rune_summer', '4x botania:rune_water', 'gtceu:steel_fluid_cell', 'gtceu:aluminium_fluid_cell', 'gtceu:stainless_steel_fluid_cell', 'gtceu:titanium_fluid_cell', 'gtceu:tungstensteel_fluid_cell'])
-  //   .itemOutputs('bloodmagic:altarcapacityrune')
-  //   .inputFluids(
-  //     'gtceu:4_4_oxydianiline_pyromellitimide 288',
-  //     'gtceu:grading_fluid_2 250'
-  //   )
-  // ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
-  //   .duration(300)
-  //   .EUt(GTValues.VA[GTValues.LuV])
-
-
-
-  event.recipes.gtceu.assembly_line('frontiers:sacrifice_rune')
-    .itemInputs(['bloodmagic:blankrune', 'gtceu:slicing_blades', '4x botania:rune_autumn', '4x botania:rune_fire', 'gtceu:tungsten_steel_buzz_saw_blade', 'gtceu:titanium_buzz_saw_blade'])
-    .itemOutputs('bloodmagic:sacrificerune')
-    .inputFluids(
-      'gtceu:4_4_oxydianiline_pyromellitimide 288',
-      'gtceu:grading_fluid_2 250'
-    )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
-    .duration(300)
-    .EUt(GTValues.VA[GTValues.LuV])
-
-  event.recipes.gtceu.assembly_line('frontiers:self_sac_rune')
-    .itemInputs(['bloodmagic:blankrune', '4x botania:rune_earth', '4x botania:rune_winter', 'bloodmagic:sacrificialdagger', 'bloodmagic:sacrificialdagger', 'bloodmagic:sacrificialdagger'])
-    .itemOutputs('bloodmagic:selfsacrificerune')
-    .inputFluids(
-      'gtceu:4_4_oxydianiline_pyromellitimide 288',
-      'gtceu:grading_fluid_2 250'
-    )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:blankrune').EUt(GTValues.VA[GTValues.IV]).duration(3200))
-    .duration(300)
-    .EUt(GTValues.VA[GTValues.LuV])
   event.recipes.gtceu.assembly_line('frontiers:mechanical_altar')
-    .itemInputs(['bloodmagic:altar', '4x gtceu:europium_frame', '4x cosmiccore:luv_radio_module', '4x #gtceu:circuits/zpm', '16x bloodmagic:etherealslate', '16x bloodmagic:demonslate', '16x bloodmagic:infusedslate', '16x bloodmagic:reinforcedslate', '16x bloodmagic:blankslate'])
+    .itemInputs(['gtceu:essence_reactor', '4x gtceu:europium_frame', '4x cosmiccore:luv_radio_module', '4x #gtceu:circuits/zpm', '16x cosmiccore:bright_mote', '16x cosmiccore:clear_mote', '16x cosmiccore:pale_mote', '16x cosmiccore:dim_mote', '16x cosmiccore:faint_mote'])
     .itemOutputs('cosmiccore:hemophagic_transfuser')
     .inputFluids(
       'gtceu:4_4_oxydianiline_pyromellitimide 36884',
@@ -455,11 +392,11 @@ ServerEvents.recipes(event => {
       'gtceu:grading_fluid_3 16000',
       'gtceu:grading_fluid_2 16000'
     )
-  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('bloodmagic:altar').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
+  ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:essence_reactor').EUt(GTValues.VA[GTValues.LuV]).duration(3200))
     .duration(300)
     .EUt(GTValues.VA[GTValues.LuV])
   event.recipes.gtceu.assembly_line('frontiers:suffering_chamber')
-    .itemInputs(['gtceu:luv_macerator', '16x bloodmagic:etherealslate', '4x #gtceu:circuits/zpm', '4x gtceu:luv_field_generator', '4x cosmiccore:luv_radio_module'])
+    .itemInputs(['gtceu:luv_macerator', '16x cosmiccore:bright_mote', '4x #gtceu:circuits/zpm', '4x gtceu:luv_field_generator', '4x cosmiccore:luv_radio_module'])
     .itemOutputs('cosmiccore:suffering_chamber')
     .inputFluids(
       'gtceu:4_4_oxydianiline_pyromellitimide 36884',
@@ -762,22 +699,6 @@ ServerEvents.recipes(event => {
     .duration(240)
     .EUt(GTValues.VA[GTValues.ZPM])
   event.remove({ id: 'gtceu:assembly_line/electric_motor_uv' })
-
-  event.recipes.gtceu.assembly_line('frontiers:t6_orb')
-    .itemInputs(['8x bloodmagic:lightritualstone', 'kubejs:archmagebloodorb_frame', '8x kubejs:wrapped_slate_tier_5', 'kubejs:masterbloodorb_frame', '8x kubejs:wrapped_slate_tier_4', 'kubejs:magicianbloodorb_frame', '8x kubejs:wrapped_slate_tier_3', 'kubejs:apprenticebloodorb_frame', '8x kubejs:wrapped_slate_tier_2'])
-    .itemOutputs('cosmiccore:asc_blood_orb')
-    .inputFluids(
-      'gtceu:grading_fluid_5 16000',
-      'gtceu:grading_fluid_4 16000',
-      'gtceu:grading_fluid_3 16000'
-    )
-    .stationResearch(b => b
-      .researchStack('kubejs:archmagebloodorb_frame')
-      .CWUt(32)
-      .EUt(GTValues.VA[GTValues.ZPM]))
-    .duration(240)
-    .EUt(GTValues.VA[GTValues.ZPM])
-
   //Sanguine Armors
 
 
