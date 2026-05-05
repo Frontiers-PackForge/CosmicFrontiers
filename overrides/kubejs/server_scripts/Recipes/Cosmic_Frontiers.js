@@ -101,6 +101,7 @@ yeet('gtceu:naquadah_coil_block')
 yeet('gtceu:trinium_coil_block')
 yeet('gtceu:tritanium_coil_block')
 yeet('trials:crafter')
+yeet('forestry:worktable')
 
 ServerEvents.recipes(event => {
 

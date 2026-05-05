@@ -1198,16 +1198,16 @@ ServerEvents.recipes(event => {
     }).id('frontiers:humus_gt_fertilizer')
 
     event.remove({ output: 'forestry:worktable' })
-    event.shaped('forestry:worktable', [
-        ' A ',
-        'BCB',
-        ' D '
-    ], {
-        A: '#forge:tools/screwdrivers',
-        B: 'gtceu:wood_screw',
-        C: 'minecraft:crafting_table',
-        D: '#forge:chests/wooden'
-    })
+    // event.shaped('forestry:worktable', [
+    //     ' A ',
+    //     'BCB',
+    //     ' D '
+    // ], {
+    //     A: '#forge:tools/screwdrivers',
+    //     B: 'gtceu:wood_screw',
+    //     C: 'minecraft:crafting_table',
+    //     D: '#forge:chests/wooden'
+    // })
 
     event.remove({ output: 'forestry:analyzer' })
     event.shaped('forestry:analyzer', [
