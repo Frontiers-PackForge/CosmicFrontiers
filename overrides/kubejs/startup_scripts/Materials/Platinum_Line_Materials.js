@@ -153,7 +153,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        .formula('(3RuO4)(4OsO4)(2NaOH)(2NaCl)(14H2O)')
+        .formula('3(RuO4)4(OsO4)2(NaOH)2(NaCl)14(H2O)')
     event.create('impure_osmium_tetroxide')
         .dust()
         .color(0x496287).iconSet(GTMaterialIconSet.DULL)
@@ -169,6 +169,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+	.formula('H2RuCl6')
     event.create('ammonium_hexachlororuthenate')
         .dust()
         .color(0x444159).iconSet(GTMaterialIconSet.DULL)
@@ -200,6 +201,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+	.formula('H2IrCl6')
     event.create('ammonium_hexachloroiridate')
         .dust()
         .color(0x46729e).iconSet(GTMaterialIconSet.DULL)
@@ -207,6 +209,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+	.formula('(NH4)2IrCl6')
     event.create('cerium_oxide')
         .dust()
         .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
