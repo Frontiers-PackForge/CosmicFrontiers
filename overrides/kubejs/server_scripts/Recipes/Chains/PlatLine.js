@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV]);
     event.recipes.gtceu.chemical_reactor('hydrazine_craft')
         .inputFluids('gtceu:hydrogen_peroxide 1000')
-        .inputFluids('gtceu:ammonia 6000')
+        .inputFluids('gtceu:ammonia 2000')
         .outputFluids('gtceu:hydrazine 1000')
         .outputFluids('minecraft:water 2000')
         .duration(320)
