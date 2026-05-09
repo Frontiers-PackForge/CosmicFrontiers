@@ -371,16 +371,18 @@ ServerEvents.recipes(event => {
     // i hate solutions
     // OsO4 + HCl + NaOH -> (OsO4)(NaCl) + H2O
     // RuO4 + 10 HCl -> (H2O)2H2RuCl6 + 2 H2O + 4 Cl
-    // (RuO4)3(OsO4)4(NaOH)4(H2O)4 + 34HCl -> 4(OsO4)(NaCl) + 14 H2O + 12 Cl + 3 (H2O)2(H2RuCl6)
+    // (RuO4)3(OsO4)4(NaOH)4(H2O)4 + 34HCl ->
+    // (RuO4)3(OsO4)4(NaCl)4(HCl)30(H2O)8 -> 
+    // 4(OsO4)(NaCl) + 14 H2O + 12 Cl + 3 (H2O)2(H2RuCl6)
     event.recipes.gtceu.mixer('tetroxide_to_chlororuthenic')
         .inputFluids('gtceu:ruthenium_osmium_tetroxides 100')
         .inputFluids('gtceu:hydrochloric_acid 3400')
-        .outputFluids('gtceu:chlororuthenic_acid_osmium_tetroxide_solution 3400')
+        .outputFluids('gtceu:chlororuthenic_acid_osmium_tetroxide_solution 3500')
         .duration(50)
         .EUt(GTValues.VA[GTValues.EV]);
         
     event.recipes.gtceu.distillation_tower('chlororuthenic_to_pure_ruthenic')
-        .inputFluids('gtceu:chlororuthenic_acid_osmium_tetroxide_solution 33000')
+        .inputFluids('gtceu:chlororuthenic_acid_osmium_tetroxide_solution 35000')
         .itemOutputs('20x gtceu:impure_osmium_tetroxide_dust')
         .outputFluids('gtceu:chlororuthenic_acid 9000')
         .outputFluids('gtceu:chlorine 12000')
