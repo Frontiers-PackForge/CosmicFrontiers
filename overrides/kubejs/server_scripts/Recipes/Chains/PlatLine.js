@@ -248,7 +248,7 @@ ServerEvents.recipes(event => {
         .itemInputs('9x gtceu:insoluble_plat_group_residue_dust')
         .itemInputs('21x gtceu:sodium_bisulfate_dust')
         .inputFluids('minecraft:water 7000')
-        .blastFurnaceTemp(4500)
+        .blastFurnaceTemp(3600)
         .itemOutputs('8x gtceu:rhodium_depleted_plat_group_residue_dust')
         .outputFluids('gtceu:rhodium_sulfate_solution 1000')
         .duration(128)
