@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
         .itemInputs('14x gtceu:chromite_dust')
         .inputFluids('gtceu:oxygen 7000')
         .inputFluids('gtceu:sodium_carbonate_solution 4000')
-        .itemOutputs('7x gtceu:magnetite_dust')
+        .itemOutputs('5x gtceu:hematite_dust')
         .outputFluids('gtceu:carbon_dioxide 4000')
         .outputFluids('gtceu:sodium_chromate_solution 4000')
         .duration(120)
