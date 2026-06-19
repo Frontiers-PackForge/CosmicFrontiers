@@ -1,0 +1,5 @@
+remove_creative_tab_tooltip = true
+remove_component_count_tooltip = true
+fuel_tooltip = true
+tag_tooltip = true
+component_tooltip = true

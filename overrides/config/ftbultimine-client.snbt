@@ -27,6 +27,10 @@
 		# Valid values: "top_left", "top", "top_right", "right", "bottom_right", "bottom", "bottom_left", "left"
 		overlay_pos: "top_left"
 		
+		# Default: 1.0
+		# Range: -∞ ~ +∞
+		overlay_scale: 1.0d
+		
 		# When holding the Ultimine key, must the player also be sneaking to show the shapes menu?
 		# Default: true
 		require_sneak_for_menu: true

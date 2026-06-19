@@ -18,5 +18,9 @@
   "forceHeapDumpOnOOM": {
     "desc:": "Enables creating a heap dump automatically once the game crashes with an out of memory issue, use with care heapdumps take a lot of space. default:false",
     "forceHeapDumpOnOOM": false
+  },
+  "displayConfigReload": {
+    "desc:": "Displays a chat message on the client on reloading a config file after changes were detected to the clients config file. default:true",
+    "displayConfigReload": true
   }
 }

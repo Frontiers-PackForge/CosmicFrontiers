@@ -11,7 +11,3 @@
 	# Default: 6
 	# Range: 0 ~ 15
 	flashingLeavesLight = 6
-
-["Beta Features"]
-	#Enable the wip armor rework, which changes how elemental armors work by adding an heavy and light variant. Requires a restart to take effect.
-	enableArmorReworkTest = false

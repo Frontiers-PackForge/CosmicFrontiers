@@ -17,6 +17,8 @@
 		experience_per_block: 0.0d
 		
 		# Max amount of blocks that can be ultimined at once
+		# If FTB Ranks is installed, the 'ftbultimine.max_blocks' ranks node can override this
+		# This value can also be modified with the 'ftbultimine:max_blocks_modifier' entity attribute
 		# Default: 64
 		# Range: 0 ~ 32768
 		max_blocks: 64
@@ -29,7 +31,9 @@
 		# Default: false
 		require_valid_tool_for_block: false
 		
-		# Cooldown in ticks between successive uses of the Ultimine feature
+		# Cooldown in ticks between successive uses of the ultimine feature
+		# If FTB Ranks is installed, the 'ftbultimine.ultimine_cooldown' ranks node can override this
+		# This value can also be modified with the 'ftbultimine:cooldown_modifier' entity attribute
 		# Default: 0
 		# Range: 0 ~ 9223372036854775807
 		ultimine_cooldown: 0L

@@ -14,23 +14,6 @@
 		# Range: 0.0 ~ 1.0
 		dropChance = 1.0
 
-	[enchantments.repellent]
-		# Default: 0.35
-		# Range: 0.0 ~ 1.0
-		chanceBase = 0.35
-		# Default: 0.1
-		# Range: 0.0 ~ 1.0
-		chancePerLevel = 0.1
-		# Default: 8.0
-		# Range: 4.0 ~ 1.7976931348623157E308
-		rangeBase = 8.0
-		# Default: 8.0
-		# Range: 0.0 ~ 1.7976931348623157E308
-		rangePerLevel = 8.0
-		# Default: 0.75
-		# Range: 0.0 ~ 1.0
-		nonPlayerChance = 0.75
-
 	[items.food]
 		#The chance of enderios teleporting the player
 		# Default: 0.3
@@ -84,6 +67,10 @@
 		# Range: 4 ~ 512
 		blockToBlockRange = 96
 
+	[items.soulVials]
+		#If true, soul vials can change spawners
+		allowSpawners = false
+
 [grainsOfInfinity]
 	#Should it make a sound when Grains of Infinity drops from a fire?
 	makesSound = true
@@ -91,3 +78,7 @@
 	# Default: 260
 	# Range: 1 ~ 1000
 	fireMinAge = 260
+	#The maximum number of fires being tracked for fire crafting per-dimension. Once exceeded, older fires are pruned first.
+	# Default: 500
+	# Range: > 1
+	maxTrackedFires = 500

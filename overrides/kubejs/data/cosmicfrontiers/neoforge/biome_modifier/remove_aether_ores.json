@@ -1,0 +1,10 @@
+{
+	"type": "neoforge:remove_features",
+	"biomes": "#aether:is_aether",
+	"features": [
+		"aether:ambrosium_ore",
+		"aether:zanite_ore",
+		"aether:gravitite_ore",
+		"aether:gravitite_ore_buried"
+	]
+}

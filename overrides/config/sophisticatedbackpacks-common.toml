@@ -1,0 +1,4 @@
+#Common Settings
+[common]
+	#Turns on/off loot added to various vanilla chest loot tables
+	chestLootEnabled = false

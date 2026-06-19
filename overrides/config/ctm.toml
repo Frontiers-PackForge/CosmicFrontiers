@@ -2,4 +2,3 @@
 disableCTM = false
 #Choose whether the inside corner is disconnected on a CTM block - https://imgur.com/eUywLZ4
 connectInsideCTM = false
-

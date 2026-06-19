@@ -1,28 +1,28 @@
 {
 	"ignoreSilencedStatusEffects": true,
 	"positiveStatusEffectGainSoundEffect": {
-		"shouldPlay": true,
+		"shouldPlay": false,
 		"pitch": 2.0,
 		"volume": 0.1,
 		"id": "positiveStatusEffectGain",
 		"soundEvent": "minecraft:item.trident.thunder"
 	},
 	"negativeStatusEffectGainSoundEffect": {
-		"shouldPlay": true,
+		"shouldPlay": false,
 		"pitch": 0.3,
 		"volume": 0.2,
 		"id": "negativeStatusEffectGain",
 		"soundEvent": "minecraft:entity.illusioner.mirror_move"
 	},
 	"positiveStatusEffectLoseSoundEffect": {
-		"shouldPlay": true,
+		"shouldPlay": false,
 		"pitch": 0.5,
 		"volume": 0.1,
 		"id": "positiveStatusEffectLose",
 		"soundEvent": "minecraft:item.trident.riptide_1"
 	},
 	"negativeStatusEffectLoseSoundEffect": {
-		"shouldPlay": true,
+		"shouldPlay": false,
 		"pitch": 0.5,
 		"volume": 0.1,
 		"id": "negativeStatusEffectLose",

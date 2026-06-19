@@ -1,0 +1,22 @@
+{
+  "catalystSpawnChance": 0.15,
+  "shouldSpawnCatalyst": true,
+  "lootTables": [
+    "minecraft:chests/abandoned_mineshaft",
+    "minecraft:chests/ancient_city",
+    "minecraft:chests/buried_treasure",
+    "minecraft:chests/end_city_treasure",
+    "minecraft:chests/ruined_portal",
+    "minecraft:chests/nether_bridge"
+  ],
+  "canReturnWithoutCatalyst": true,
+  "shouldGrassBurn": false,
+  "GrassBlocks": [
+    "minecraft:short_grass",
+    "minecraft:tall_grass"
+  ],
+  "SafeTeleportCheckRadius": 20,
+  "TeleportCatalystUses": 5,
+  "shouldTeleportReturnToSetWorld": false,
+  "returnSetWorld": "minecraft:overworld"
+}

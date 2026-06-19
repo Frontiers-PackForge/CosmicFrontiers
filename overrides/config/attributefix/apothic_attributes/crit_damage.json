@@ -1,0 +1,17 @@
+{
+  "modify_range": {
+    "//": "Determines if the range for the attribute should be modified or not.",
+    "//default": false,
+    "value": false
+  },
+  "min": {
+    "//": "The lowest possible value for the attribute.",
+    "//default": 1.0,
+    "value": 1.0
+  },
+  "max": {
+    "//": "The highest possible value for the attribute.",
+    "//default": 100.0,
+    "value": 100.0
+  }
+}

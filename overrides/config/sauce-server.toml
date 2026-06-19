@@ -2,3 +2,12 @@
 [spell_crit]
 	#Enable Spell Critical Hits, if another mod doesn't enable it already.
 	enable_spell_crit = true
+
+#Big Source Jars
+[big_source_jars]
+	#Enable the blocks to make dynamic source jars, which can be scaled up to hold more source than the classic counterpart.
+	enable_big_jars = false
+	#How much each source jar frame increase the overall capacity of a source jar multiblock
+	# Default: 15000
+	# Range: 100 ~ 1000000
+	source_capacity_per_frame = 15000

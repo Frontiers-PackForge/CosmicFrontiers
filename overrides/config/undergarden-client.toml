@@ -2,3 +2,5 @@
 "Toggle Undergarden Fog" = true
 #Displays the numerical value of the player's Utheric Infection value.
 "Toggle Utheric Infection Number Display" = false
+#Toggles the screen overlay that appears when the player has Utheric Infection.
+"Toggle Utheric Infection Overlay" = true

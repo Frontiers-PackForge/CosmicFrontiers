@@ -32,6 +32,11 @@ batteryDischargeRPM = 64
 # Range: 0.0 ~ 8192.0
 batteryCapacity = 512.0
 #.
+#Minimum su consumption per tick of a discharging Kinetic Battery
+# Default: 1.0
+# Range: 0.0 ~ 8192.0
+batteryMinDischarge = 1.0
+#.
 #Allow Redstone Links to have wildcards in both slots [restart required]
 allowDualWildcardLink = false
 

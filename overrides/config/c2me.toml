@@ -199,6 +199,12 @@ globalExecutorParallelism = "default"
 	# (Default: false) Whether to ensure correct chunks within normal render distance 
 	#  This will send chunks twice increasing network load
 	ensureChunkCorrectness = "default"
+	# (Default: 200) Applies a multiplier *in percentage* to the target chunk sending rate from vanilla
+	# Setting this to 0 disables rate limiting
+	# 
+	# Defaults to 200, which is 200%
+	# 
+	chunkSendingSpeedMultiplierPercentage = "default"
 
 	[clientSideConfig.modifyMaxVDConfig]
 		# (Default: true) Whether to modify maximum view distance

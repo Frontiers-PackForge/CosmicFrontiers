@@ -1,0 +1,16 @@
+# Server-specific configuration for FTB Teams
+# Modpack defaults should be defined in <instance>/config/ftbteams-server.snbt
+#   (may be overwritten on modpack update)
+# Server admins may locally override this by copying into <instance>/world/serverconfig/ftbteams-server.snbt
+#   (will NOT be overwritten on modpack update)
+
+{
+	# If >0, party teams have this many limited lives:
+	# When members die, a party life is lost.
+	# If a member dies when the party has no lives remaining, they are kicked from the party.
+	# If the party owner dies, a random member is promoted to owner (officers have priority).
+	# Parties with no lives remaining cannot invite new members.
+	# Default: 0
+	# Range: 0 ~ 2147483647
+	limited_lives: 0
+}

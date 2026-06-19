@@ -1,0 +1,8 @@
+#Use a fallback rendertype for certain objects that normally use custom core shaders. Improves compatibility with shader mods but might not look as good.
+render_fallback = false
+#The amount of millibuckets one nugget is worth when molten, only affects fluid tooltips.
+nugget_fluid_value = 10
+#The amount of ticks it takes to open the codex by holding ctrl while hovering over an item.
+ticks_to_open_codex = 10
+#If the codex is required in the hotbar to open a codex entry from the inventory.
+codex_required_for_lookup = true

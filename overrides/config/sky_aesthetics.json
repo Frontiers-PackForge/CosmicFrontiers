@@ -1,0 +1,20 @@
+{
+  "disabledSkies": [
+    "bad_sky:sky_to_disable"
+  ],
+  "disabledDimensions": [
+    "bad_mod:bad_dimension"
+  ],
+  "disableCustomSkies": false,
+  "disableCustomCloud": false,
+  "disableCustomWeather": false,
+  "modDisablingMainSkyRender": [
+    "astrocraft"
+  ],
+  "modDisablingCloudRender": [
+    "distanthorizons"
+  ],
+  "modDisablingWeather": [
+    "bad_weather_mod"
+  ]
+}

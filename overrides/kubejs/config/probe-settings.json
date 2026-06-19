@@ -2,5 +2,6 @@
     "probejs.classScanning": false,
     "probejs.complete": false,
     "probejs.modHash": -3777906481626101793,
-    "probejs.generateBeans": true
+    "probejs.generateBeans": true,
+    "probejs.newGame": false
 }

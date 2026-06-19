@@ -4,3 +4,8 @@
 	vanilla_textures = false
 	#set to true to use the new Lootr textures
 	new_textures = true
+
+[particles]
+	#configuration options for particles
+	#set to true to enable 'unopened particles' to spawn from containers that the player has not yet opened
+	unopened_particles = true

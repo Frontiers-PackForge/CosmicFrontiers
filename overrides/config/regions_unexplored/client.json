@@ -1,0 +1,13 @@
+{
+  // Controls the colors of the rainbow Eucalyptus logs
+  "eucalyptus_colors": {
+    "brightness": 0.8,
+    "saturation": 0.5,
+    "transition_size": 25.0
+  },
+  // Controls the spawn rate of various particles. Default value for all is 1.
+  "particle_rates": {
+    "leaves": 1.0,
+    "prismarite": 1.0
+  }
+}

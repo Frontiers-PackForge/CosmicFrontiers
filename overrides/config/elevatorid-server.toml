@@ -5,6 +5,10 @@
 	# Default: 384
 	# Range: 3 ~ 4064
 	range = 384
+	#Elevator activation range
+	# Default: 6
+	# Range: 1 ~ 64
+	activationRange = 6
 	#Realign players to the center of elevator ?
 	precisionTarget = true
 	#Can mobs spawn on elevators ?
@@ -20,7 +24,3 @@
 	# Default: 1
 	# Range: > 1
 	XPPointsAmount = 1
-	#Elevator activation range
-	# Default: 6
-	# Range: 1 ~ 64
-	activationRange = 6

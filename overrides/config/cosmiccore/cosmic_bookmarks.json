@@ -1,0 +1,30 @@
+{
+  "activeGroup": 0,
+  "groups": [
+    {
+      "name": "Default",
+      "type": "REGULAR",
+      "favorites": [
+        {
+          "stack": "item:gtceu:raw_zanite"
+        },
+        {
+          "stack": {
+            "type": "item",
+            "id": "gtceu:raw_zanite",
+            "amount": 9
+          }
+        },
+        {
+          "stack": "item:gtceu:prospector.luv"
+        },
+        {
+          "stack": "item:gtceu:steel_ingot"
+        },
+        {
+          "stack": "item:cosmiccore:donk"
+        }
+      ]
+    }
+  ]
+}

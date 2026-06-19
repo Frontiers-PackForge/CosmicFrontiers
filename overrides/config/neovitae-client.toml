@@ -1,0 +1,5 @@
+#Visual Effects Configuration
+[effects]
+	#Replace custom stream and particle effects with vanilla-style particles.
+	#Enable this for better performance or if you prefer simpler visuals.
+	use_simple_effects = false

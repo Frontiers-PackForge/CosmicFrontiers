@@ -117,11 +117,12 @@
 		ambientVolumeCap = 0.10000000149011612
 
 	#.
-	#Mod Integration and JEI
-	[client.jeiIntegration]
+	#Mod Integration and Recipe Viewer
+	[client.recipeViewerIntegration]
 		#.
-		#Whether to auto-update the JEI search when searching in the stock keeper UI
-		syncJeiSearch = true
+		#How Recipe Viewer search should interact with Stock Keepers
+		#Allowed Values: SYNC_BOTH, SYNC_FROM_JEI, SYNC_FROM_STOCK_KEEPER, NONE
+		syncRecipeViewerSearch = "SYNC_BOTH"
 
 	#.
 	#Railway related settings

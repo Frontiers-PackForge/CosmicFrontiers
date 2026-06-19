@@ -1,0 +1,16 @@
+{
+	"type": "neoforge:remove_features",
+	"biomes": "#undergarden:is_undergarden",
+	"features": [
+		"undergarden:iron_ore",
+		"undergarden:gold_ore",
+		"undergarden:diamond_ore",
+		"undergarden:cloggrum_ore",
+		"undergarden:froststeel_ore",
+		"undergarden:utherium_ore",
+		"undergarden:regalium_ore",
+		"undergarden:rogdorium_ore",
+		"undergarden:rogdorium_ore_extra",
+		"undergarden:coal_ore"
+	]
+}

@@ -4,3 +4,5 @@
 	# Default: 10
 	# Range: > 0
 	potionRegen = 10
+	#If shady villagers can be converted by placing an Arcane Core near a villager. Does not remove or disable existing villagers.
+	shadyVillagerEnabled = true

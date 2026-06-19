@@ -21,7 +21,7 @@
 	augment_limits = ["ars_nouveau:glyph_amplify=3"]
 	#How much an augment should cost when used on this effect or form. This overrides the default cost in the augment config.
 	#Example entry: "glyph_amplify=50"
-	augment_cost_overrides = []
+	augment_cost_overrides = ["ars_nouveau:glyph_split=100"]
 	#Prevents the given glyph from being used in the same spell as the given glyph
 	#Example entry: "glyph_burst"
 	invalid_combos = []

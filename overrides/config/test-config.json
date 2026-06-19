@@ -1,0 +1,16 @@
+{
+  "name": "TestConfig",
+  "rangedNumber": {
+    "min": 0,
+    "max": 100,
+    "value": 50
+  },
+  "location": "minecraft:example",
+  "side": "COMMON",
+  "debug": false,
+  "secretEntry": true,
+  "innerConfig": {
+    "innerValue": "Inner Value",
+    "innerNumber": 42
+  }
+}

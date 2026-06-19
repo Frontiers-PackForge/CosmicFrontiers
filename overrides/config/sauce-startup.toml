@@ -1,0 +1,9 @@
+#Source Fluid
+[source_fluid]
+	#Show the liquid source bucket and fluid in JEI and Creative Tabs, valid only if another mod doesn't enable it already.
+	show_source_fluid = false
+
+#Debug Numbers
+[debug_numbers]
+	#Show numeric values overlays for source and mana.
+	show_debug_numbers = false

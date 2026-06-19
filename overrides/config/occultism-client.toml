@@ -15,18 +15,6 @@
 	# Default: 16777215
 	# Range: 0 ~ 16777215
 	whiteChalkGlyphColor = 16777215
-	#The integer code of the color of the purple chalk glyph in world.
-	#This is intended to allow people with color blindness to change the color of the glyph.
-	#For most types of color blindness it should not be necessary to change this.
-	# Default: 10224531
-	# Range: 0 ~ 16777215
-	purpleChalkGlyphColor = 10224531
-	#The integer code of the  color of the red chalk glyph in world.
-	#This is intended to allow people with color blindness to change the color of the glyph.
-	#For most types of color blindness this value should be changed to a green color, we recommend 33289 (= Hex 0x008209)
-	# Default: 13369601
-	# Range: 0 ~ 16777215
-	redChalkGlyphColor = 13369601
 	#The integer code of the color of the light gray chalk glyph in world.
 	#This is intended to allow people with color blindness to change the color of the glyph.
 	#For most types of color blindness it should not be necessary to change this.
@@ -51,6 +39,12 @@
 	# Default: 8606770
 	# Range: 0 ~ 16777215
 	brownChalkGlyphColor = 8606770
+	#The integer code of the  color of the red chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness this value should be changed to a green color, we recommend 33289 (= Hex 0x008209)
+	# Default: 13369601
+	# Range: 0 ~ 16777215
+	redChalkGlyphColor = 13369601
 	#The integer code of the color of the orange chalk glyph in world.
 	#This is intended to allow people with color blindness to change the color of the glyph.
 	#For most types of color blindness it should not be necessary to change this.
@@ -93,6 +87,12 @@
 	# Default: 3949738
 	# Range: 0 ~ 16777215
 	blueChalkGlyphColor = 3949738
+	#The integer code of the color of the purple chalk glyph in world.
+	#This is intended to allow people with color blindness to change the color of the glyph.
+	#For most types of color blindness it should not be necessary to change this.
+	# Default: 10224531
+	# Range: 0 ~ 16777215
+	purpleChalkGlyphColor = 10224531
 	#The integer code of the color of the magenta chalk glyph in world.
 	#This is intended to allow people with color blindness to change the color of the glyph.
 	#For most types of color blindness it should not be necessary to change this.
@@ -110,6 +110,12 @@
 [misc]
 	#Sync JEI search in storage actuator.
 	syncJeiSearch = false
+	#Enables EMI sync for the storage actuator.
+	enableEMISync = true
+	#How many rows show at one time on storage controller
+	# Default: 4
+	# Range: 1 ~ 9
+	storageRows = 4
 	#If true, divination rod will render all matching blocks with an outline. Disable if it causes lag.
 	#This setting will be unused, if Theurgy is installed alongside, as Occultism will use Theurgy's divination rod result rendering instead.
 	divinationRodHighlightAllResults = false
@@ -119,8 +125,6 @@
 	divinationRodScanRange = 129
 	#Disables the sound played when a spirit fire successfully crafted an item.
 	disableSpiritFireSuccessSound = false
-	#Enables EMI sync for the storage actuator.
-	enableEMISync = true
 	#How many pentagrams to show at one time on the bowl information
 	# Default: 3
 	# Range: > 1

@@ -1,4 +1,3 @@
-
 [general]
 	#Colors must be specified in #RRGGBB format
 	"color values" = ["#FFFFFF", "#FF5500", "#FFC747", "#27FFE3", "#00FF00", "#7F00FF"]
@@ -6,4 +5,3 @@
 	"Always show bar" = false
 	#Show empty armor icons?
 	"Show empty icons" = false
-

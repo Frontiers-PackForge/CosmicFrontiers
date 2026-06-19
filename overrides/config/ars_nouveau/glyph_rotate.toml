@@ -18,7 +18,7 @@
 	glyph_tier = 1
 	#Limits the number of times a given augment may be applied to a given effect
 	#Example entry: "glyph_amplify=5"
-	augment_limits = ["ars_nouveau:glyph_sensitive=1"]
+	augment_limits = ["ars_nouveau:glyph_sensitive=1", "ars_nouveau:glyph_randomize=1"]
 	#How much an augment should cost when used on this effect or form. This overrides the default cost in the augment config.
 	#Example entry: "glyph_amplify=50"
 	augment_cost_overrides = []

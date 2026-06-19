@@ -52,6 +52,8 @@
 	showSpecialCubeTypeOverlay = true
 	#If true, framed blocks will be rendered with their camo in Jade, otherwise they will be rendered blank
 	renderCamoInJade = true
+	#If true, camo application recipes will be shown in JEI
+	showCamoCraftingInJei = true
 
 [overlay]
 	#Controls the maximum visibility of all overlays

@@ -1,9 +1,9 @@
 {
 	# Select the currency implementation to use
 	# Note: currently Neoforge-only
-	# DEFAULT: use Magic Coins if installed, otherwise no currency plugin
+	# DEFAULT: use SG Economy if installed, otherwise no currency plugin
 	# Default: "default"
-	# Valid values: "default", "magic_coins"
+	# Valid values: "default", "sg_economy_api"
 	currency_selector: "default"
 	
 	# Only show waystones that have been discovered

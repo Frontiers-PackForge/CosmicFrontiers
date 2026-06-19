@@ -32,6 +32,14 @@
 	# Default: 4096000
 	# Range: 0 ~ 9223372036854775807
 	stabilizerTier4AdditionalMaxTotalItemCount = 4096000
+	#The amount of slots the storage stabilizer tier 5 provides.
+	# Default: 1024
+	# Range: > 0
+	stabilizerTier5AdditionalMaxItemTypes = 1024
+	#The amount by which the stabilizer increases the maximum total item count the controller can hold. This is not per slot but the total amount of all items combined.
+	# Default: 8192000
+	# Range: 0 ~ 9223372036854775807
+	stabilizerTier5AdditionalMaxTotalItemCount = 8192000
 	#The amount of slots the storage actuator provides.
 	# Default: 128
 	# Range: > 0
@@ -40,131 +48,35 @@
 	# Default: 256000
 	# Range: 0 ~ 9223372036854775807
 	controllerMaxTotalItemCount = 256000
-	#True to use the configured controllerStackSize for all items, instead of the stack sizes provided by item type (such as 16 for ender pearls, 64 for iron ingot). WARNING: Setting this to false may have a negative impact on performance.
-	unlinkWormholeOnBreak = false
-	#The amount of stabilizers tier 4 in the stabilized storage actuator. (Don't auto change the recipe)
-	# Default: 7
+	#The amount of stabilizers tier 5 in the stabilized storage actuator. (Don't auto change the recipe)
+	# Default: 8
 	# Range: > 0
-	stabilizedControllerStabilizers = 7
+	stabilizedControllerStabilizers = 8
+	#True to unlink the wormhole when break (so it doesn't function as a cheaper Storage Accessor).
+	unlinkWormholeOnBreak = false
 
 #Spirit Job Settings
 [spirit_job]
-	#The duration for the slow falling effect applied by a drikwing.
-	# Default: 15
-	# Range: > 0
-	drikwingFamiliarSlowFallingSeconds = 15
-	#The multiplier to each crushing recipe's crushing_time for Tier 1 (Foliot) Crusher Spirits.
-	# Default: 2.0
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier1CrusherTimeMultiplier = 2.0
-	#The multiplier to each crushing recipe's crushing_time for Tier 2 (Djinni) Crusher Spirits.
-	# Default: 1.0
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier2CrusherTimeMultiplier = 1.0
-	#The multiplier to each crushing recipe's crushing_time for Tier 3 (Afrit) Crusher Spirits.
-	# Default: 0.5
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier3CrusherTimeMultiplier = 0.5
-	#The multiplier to each crushing recipe's crushing_time for Tier 4 (Marid) Crusher Spirits.
-	# Default: 0.2
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier4CrusherTimeMultiplier = 0.2
-	#The multiplier to each crushing recipe's output count for Tier 1 (Foliot) Crusher Spirits.
-	# Default: 1.0
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier1CrusherOutputMultiplier = 1.0
-	#The multiplier to each crushing recipe's output count for Tier 2 (Djinni) Crusher Spirits.
-	# Default: 1.5
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier2CrusherOutputMultiplier = 1.5
-	#The multiplier to each crushing recipe's output count for Tier 3 (Afrit) Crusher Spirits.
-	# Default: 2.0
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier3CrusherOutputMultiplier = 2.0
-	#The multiplier to each crushing recipe's output count for Tier 4 (Marid) Crusher Spirits.
-	# Default: 3.0
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier4CrusherOutputMultiplier = 3.0
 	#The minimum ticks before a crusher can pick up an item it dropped. Default is 3 Seconds = 3 * 20 Ticks.
 	# Default: 60
 	# Range: > 0
 	crusherResultPickupDelay = 60
-	#The chance for a blacksmith familiar to repair an item (by 2 durability) whenever stone is picked up. 1.0 = 100%, 0.0 = 0%.
-	# Default: 0.33
-	# Range: 0.0 ~ 1.7976931348623157E308
-	blacksmithFamiliarRepairChance = 0.05
-	#The amount of iron required for a blacksmith familiar to upgrade another familiar.
-	# Default: 18
-	# Range: > 0
-	blacksmithFamiliarUpgradeCost = 18
-	#The cooldown for a blacksmith familiar to upgrade another familiar.
-	# Default: 400
-	# Range: > 0
-	blacksmithFamiliarUpgradeCooldown = 400
-	#The multiplier to each crystallize recipe's crystallize_time for Tier 1 (Foliot) Crystallizer Spirits.
-	# Default: 1.0
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier1CrystallizerTimeMultiplier = 1.0
-	#The multiplier to each crystallize recipe's crystallize_time for Tier 2 (Djinni) Crystallizer Spirits.
-	# Default: 0.5
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier2CrystallizerTimeMultiplier = 0.5
-	#The multiplier to each crystallize recipe's crystallize_time for Tier 3 (Afrit) Crystallizer Spirits.
-	# Default: 0.3
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier3CrystallizerTimeMultiplier = 0.3
-	#The multiplier to each crystallize recipe's crystallize_time for Tier 4 (Marid) Crystallizer Spirits.
-	# Default: 0.1
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier4CrystallizerTimeMultiplier = 0.1
-	#The multiplier to each crystallize recipe's output count for Tier 1 (Foliot) Crystallizer Spirits.
-	# Default: 1.0
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier1CrystallizerOutputMultiplier = 1.0
-	#The multiplier to each crystallize recipe's output count for Tier 2 (Djinni) Crystallizer Spirits.
-	# Default: 1.5
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier2CrystallizerOutputMultiplier = 1.5
-	#The multiplier to each crystallize recipe's output count for Tier 3 (Afrit) Crystallizer Spirits.
-	# Default: 2.0
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier3CrystallizerOutputMultiplier = 2.0
-	#The multiplier to each crystallize recipe's output count for Tier 4 (Marid) Crystallizer Spirits.
-	# Default: 3.0
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier4CrystallizerOutputMultiplier = 3.0
 	#The minimum ticks before a crystallizer can pick up an item it dropped. Default is 3 Seconds = 3 * 20 Ticks.
 	# Default: 60
 	# Range: > 0
 	crystallizerResultPickupDelay = 60
-	#The multiplier to each smelting recipe's cooking_time for Tier 1 (Foliot) Smelter Spirits.
-	# Default: 1.0
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier1SmelterTimeMultiplier = 1.0
-	#The multiplier to each smelting recipe's cooking_time for Tier 2 (Djinni) Smelter Spirits.
-	# Default: 0.5
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier2SmelterTimeMultiplier = 0.5
-	#The multiplier to each smelting recipe's cooking_time for Tier 3 (Afrit) Smelter Spirits.
-	# Default: 0.1
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier3SmelterTimeMultiplier = 0.1
-	#The multiplier to each smelting recipe's cooking_time for Tier 4 (Marid) Smelter Spirits.
-	# Default: 0.01
-	# Range: 0.0 ~ 1.7976931348623157E308
-	tier4SmelterTimeMultiplier = 0.01
 	#The minimum ticks before a smelter can pick up an item it dropped. Default is 3 Seconds = 3 * 20 Ticks.
 	# Default: 60
 	# Range: > 0
 	smelterResultPickupDelay = 60
-	#The horizontal value that the upgraded greedy familiar will seek blocks. (Large distances can cause delays in finding)
-	# Default: 32
+	#The minimum ticks before a trader can pick up an item it dropped. Default is 3 Seconds = 3 * 20 Ticks.
+	# Default: 60
 	# Range: > 0
-	greedySearchRange = 32
-	#The vertical value that the upgraded greedy familiar will seek blocks. (Large distances can cause delays in finding)
-	# Default: 16
-	# Range: > 0
-	greedyVerticalSearchRange = 16
+	traderResultPickupDelay = 60
+	#The percentage of Wondering Trader replace the Wandering Trader when spawn.
+	# Default: 5
+	# Range: 0 ~ 100
+	traderWonderingChance = 5
 	#The time in ticks it takes to cast the day time ritual.
 	# Default: 100
 	# Range: > 0
@@ -185,6 +97,273 @@
 	# Default: 100
 	# Range: > 0
 	clearWeatherTimeToCast = 100
+
+	#Worker Spirit Settings
+	[spirit_job.crusher_tier1]
+		#The tier of Foliot Crusher
+		# Default: 1
+		# Range: > 0
+		tier = 1
+		#The multiplier to each recipe's time for Foliot Crusher
+		# Default: 2.0
+		# Range: 0.0 ~ 2.147483647E9
+		timeMultiplier = 2.0
+		#The multiplier to each recipe's output count for Foliot Crusher
+		# Default: 1.0
+		# Range: 0.0 ~ 2.147483647E9
+		outputMultiplier = 1.0
+		#Max number of recipes that Foliot Crusher make per operation.
+		# Default: 1
+		# Range: 0 ~ 64
+		operationCount = 1
+
+	#Worker Spirit Settings
+	[spirit_job.crusher_tier2]
+		#The tier of Djinni Crusher
+		# Default: 2
+		# Range: > 0
+		tier = 2
+		#The multiplier to each recipe's time for Djinni Crusher
+		# Default: 1.0
+		# Range: 0.0 ~ 2.147483647E9
+		timeMultiplier = 1.0
+		#The multiplier to each recipe's output count for Djinni Crusher
+		# Default: 1.5
+		# Range: 0.0 ~ 2.147483647E9
+		outputMultiplier = 1.5
+		#Max number of recipes that Djinni Crusher make per operation.
+		# Default: 1
+		# Range: 0 ~ 64
+		operationCount = 1
+
+	#Worker Spirit Settings
+	[spirit_job.crusher_tier3]
+		#The tier of Afrit Crusher
+		# Default: 3
+		# Range: > 0
+		tier = 3
+		#The multiplier to each recipe's time for Afrit Crusher
+		# Default: 0.5
+		# Range: 0.0 ~ 2.147483647E9
+		timeMultiplier = 0.5
+		#The multiplier to each recipe's output count for Afrit Crusher
+		# Default: 2.0
+		# Range: 0.0 ~ 2.147483647E9
+		outputMultiplier = 2.0
+		#Max number of recipes that Afrit Crusher make per operation.
+		# Default: 1
+		# Range: 0 ~ 64
+		operationCount = 1
+
+	#Worker Spirit Settings
+	[spirit_job.crusher_tier4]
+		#The tier of Marid Crusher
+		# Default: 4
+		# Range: > 0
+		tier = 4
+		#The multiplier to each recipe's time for Marid Crusher
+		# Default: 0.3
+		# Range: 0.0 ~ 2.147483647E9
+		timeMultiplier = 0.3
+		#The multiplier to each recipe's output count for Marid Crusher
+		# Default: 3.0
+		# Range: 0.0 ~ 2.147483647E9
+		outputMultiplier = 3.0
+		#Max number of recipes that Marid Crusher make per operation.
+		# Default: 1
+		# Range: 0 ~ 64
+		operationCount = 1
+
+	#Worker Spirit Settings
+	[spirit_job.crystal_tier1]
+		#The tier of Foliot Crystallizer
+		# Default: 1
+		# Range: > 0
+		tier = 1
+		#The multiplier to each recipe's time for Foliot Crystallizer
+		# Default: 1.0
+		# Range: 0.0 ~ 2.147483647E9
+		timeMultiplier = 1.0
+		#The multiplier to each recipe's output count for Foliot Crystallizer
+		# Default: 1.0
+		# Range: 0.0 ~ 2.147483647E9
+		outputMultiplier = 1.0
+		#Max number of recipes that Foliot Crystallizer make per operation.
+		# Default: 1
+		# Range: 0 ~ 64
+		operationCount = 1
+
+	#Worker Spirit Settings
+	[spirit_job.crystal_tier2]
+		#The tier of Djinni Crystallizer
+		# Default: 2
+		# Range: > 0
+		tier = 2
+		#The multiplier to each recipe's time for Djinni Crystallizer
+		# Default: 0.5
+		# Range: 0.0 ~ 2.147483647E9
+		timeMultiplier = 0.5
+		#The multiplier to each recipe's output count for Djinni Crystallizer
+		# Default: 1.5
+		# Range: 0.0 ~ 2.147483647E9
+		outputMultiplier = 1.5
+		#Max number of recipes that Djinni Crystallizer make per operation.
+		# Default: 1
+		# Range: 0 ~ 64
+		operationCount = 1
+
+	#Worker Spirit Settings
+	[spirit_job.crystal_tier3]
+		#The tier of Afrit Crystallizer
+		# Default: 3
+		# Range: > 0
+		tier = 3
+		#The multiplier to each recipe's time for Afrit Crystallizer
+		# Default: 0.3
+		# Range: 0.0 ~ 2.147483647E9
+		timeMultiplier = 0.3
+		#The multiplier to each recipe's output count for Afrit Crystallizer
+		# Default: 2.0
+		# Range: 0.0 ~ 2.147483647E9
+		outputMultiplier = 2.0
+		#Max number of recipes that Afrit Crystallizer make per operation.
+		# Default: 1
+		# Range: 0 ~ 64
+		operationCount = 1
+
+	#Worker Spirit Settings
+	[spirit_job.crystal_tier4]
+		#The tier of Marid Crystallizer
+		# Default: 4
+		# Range: > 0
+		tier = 4
+		#The multiplier to each recipe's time for Marid Crystallizer
+		# Default: 0.1
+		# Range: 0.0 ~ 2.147483647E9
+		timeMultiplier = 0.1
+		#The multiplier to each recipe's output count for Marid Crystallizer
+		# Default: 3.0
+		# Range: 0.0 ~ 2.147483647E9
+		outputMultiplier = 3.0
+		#Max number of recipes that Marid Crystallizer make per operation.
+		# Default: 1
+		# Range: 0 ~ 64
+		operationCount = 1
+
+	#Worker Spirit Settings
+	[spirit_job.smelter_tier1]
+		#The multiplier to each recipe's time for Foliot Smelter
+		# Default: 1.0
+		# Range: 0.0 ~ 2.147483647E9
+		timeMultiplier = 1.0
+		#Max number of recipes that Foliot Smelter make per operation.
+		# Default: 1
+		# Range: 0 ~ 64
+		operationCount = 1
+
+	#Worker Spirit Settings
+	[spirit_job.smelter_tier2]
+		#The multiplier to each recipe's time for Djinni Smelter
+		# Default: 0.5
+		# Range: 0.0 ~ 2.147483647E9
+		timeMultiplier = 0.5
+		#Max number of recipes that Djinni Smelter make per operation.
+		# Default: 1
+		# Range: 0 ~ 64
+		operationCount = 1
+
+	#Worker Spirit Settings
+	[spirit_job.smelter_tier3]
+		#The multiplier to each recipe's time for Afrit Smelter
+		# Default: 0.1
+		# Range: 0.0 ~ 2.147483647E9
+		timeMultiplier = 0.1
+		#Max number of recipes that Afrit Smelter make per operation.
+		# Default: 1
+		# Range: 0 ~ 64
+		operationCount = 1
+
+	#Worker Spirit Settings
+	[spirit_job.smelter_tier4]
+		#The multiplier to each recipe's time for Marid Smelter
+		# Default: 0.01
+		# Range: 0.0 ~ 2.147483647E9
+		timeMultiplier = 0.01
+		#Max number of recipes that Marid Smelter make per operation.
+		# Default: 1
+		# Range: 0 ~ 64
+		operationCount = 1
+
+	#Trader Spirit Settings
+	[spirit_job.trader_sapling]
+		#The time to each operation for Otherworld Sapling Trader
+		# Default: 20
+		# Range: > 0
+		operationTimer = 20
+		#Max number of recipes thatOtherworld Sapling Tradermake per operation.
+		# Default: 1
+		# Range: 0 ~ 64
+		operationCount = 1
+
+	#Trader Spirit Settings
+	[spirit_job.trader_otherstone]
+		#The time to each operation for Otherstone Trader
+		# Default: 10
+		# Range: > 0
+		operationTimer = 10
+		#Max number of recipes thatOtherstone Tradermake per operation.
+		# Default: 4
+		# Range: 0 ~ 64
+		operationCount = 4
+
+	#Trader Spirit Settings
+	[spirit_job.trader_otherrock]
+		#The time to each operation for Otherrock Trader
+		# Default: 10
+		# Range: > 0
+		operationTimer = 10
+		#Max number of recipes thatOtherrock Tradermake per operation.
+		# Default: 4
+		# Range: 0 ~ 64
+		operationCount = 4
+
+	#Trader Spirit Settings
+	[spirit_job.trader_gem]
+		#The time to each operation for Gambler
+		# Default: 200
+		# Range: > 0
+		operationTimer = 200
+		#Max number of recipes thatGamblermake per operation.
+		# Default: 16
+		# Range: 0 ~ 64
+		operationCount = 16
+
+#Familiar Settings
+[familiar]
+	#The duration of slow falling effect given by Drikwing Familiar in seconds.
+	# Default: 15
+	# Range: > 0
+	drikwingFamiliarSlowFallingSeconds = 15
+	#The chance for a blacksmith familiar to repair an item (by 2 durability) whenever stone is picked up. 1.0 = 100%, 0.0 = 0%.
+	# Default: 0.33
+	# Range: 0.0 ~ 1.7976931348623157E308
+	blacksmithFamiliarRepairChance = 0.33
+	#The amount of iron required for a blacksmith familiar to upgrade another familiar.
+	# Default: 18
+	# Range: > 0
+	blacksmithFamiliarUpgradeCost = 18
+	#The cooldown for a blacksmith familiar to upgrade another familiar.
+	# Default: 400
+	# Range: > 0
+	blacksmithFamiliarUpgradeCooldown = 400
+	#The horizontal value that the upgraded greedy familiar will seek blocks. (Large distances can cause delays in finding)
+	# Default: 32
+	# Range: > 0
+	greedySearchRange = 32
+	#The vertical value that the upgraded greedy familiar will seek blocks. (Large distances can cause delays in finding)
+	# Default: 16
+	# Range: > 0
+	greedyVerticalSearchRange = 16
 
 #Ritual Settings
 [rituals]
@@ -215,6 +394,20 @@
 	minerEfficiency = true
 	#Allow miners enchanted with fortune to has a chance of mine extra results each operation
 	minerFortune = true
+	#Allow miners enchanted with silk touch to has a chance of multiply results each operation
+	minerSilk = true
+	#Chance of damaging the weapon with each advance on the dimensional battlefield.
+	# Default: 0.03999999910593033
+	# Range: 0.0 ~ 1.0
+	butcherHurtChance = 0.03999999910593033
+	#Entity life multiplier when calculating processing time in the dimensional battlefield.
+	# Default: 20
+	# Range: > 1
+	butcherLifeMultiplier = 20
+	#Chance per level of the Fracture Soul enchantment to drop a Shattered Soul.
+	# Default: 0.17000000178813934
+	# Range: 0.0 ~ 1.0
+	shatteredSoulChance = 0.17000000178813934
 	#Don't damage chalks on use
 	unbreakableChalks = false
 	#Maximum distance the Entity Wormhole random teleport (RTP) feature can reach.

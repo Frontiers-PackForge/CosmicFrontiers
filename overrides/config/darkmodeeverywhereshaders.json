@@ -4,11 +4,13 @@
     {
       "texShaderLocation": {
         "namespace": "darkmodeeverywhere",
-        "path": "dark_position_tex"
+        "path": "dark_position_tex",
+        "cachedString": "darkmodeeverywhere:dark_position_tex"
       },
       "texColorShaderLocation": {
         "namespace": "darkmodeeverywhere",
-        "path": "dark_position_tex_color"
+        "path": "dark_position_tex_color",
+        "cachedString": "darkmodeeverywhere:dark_position_tex_color"
       },
       "displayName": {
         "translate": "gui.darkmodeeverywhere.perfect_dark"

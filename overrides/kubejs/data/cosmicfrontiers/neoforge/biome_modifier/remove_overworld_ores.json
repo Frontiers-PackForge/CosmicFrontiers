@@ -1,0 +1,18 @@
+{
+	"type": "neoforge:remove_features",
+	"biomes": "#minecraft:is_overworld",
+	"features": [
+		"create:zinc_ore",
+		"embers:ore_lead_placer",
+		"embers:ore_silver_placer",
+		"occultism:ore_silver",
+		"occultism:ore_silver_deepslate",
+		"malum:ore_soulstone",
+		"malum:ore_natural_quartz",
+		"malum:cthonic_gold_ore",
+		"malum:ore_brilliant",
+		"malum:quartz_geode",
+		"malum:deepslate_quartz_geode",
+		"expandeddelight:salt_ore"
+	]
+}

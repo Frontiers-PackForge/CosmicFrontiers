@@ -20,9 +20,8 @@ StartupEvents.registry('gtceu:material', event => {
 
 
     // THIS material is broken, in the context the fluidbuilder is now dead...
-    // event.create('gtceu:source_oils')
-    //     .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-    //     .color(0xe642f5)
+    event.create('gtceu:source_oils')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 })
 
 // Material Modifications (The Registered Material Should Work above it)

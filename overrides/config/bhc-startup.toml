@@ -1,9 +1,53 @@
 [General]
 	#The maximum stacksize for heart canisters, also the maximum amount of full hearts you can get per heart container type
+	# Default: 10
+	# Range: 0 ~ 99
 	heartStackSize = 10
 	#How often do wither bones Drop? (1.0 = 100 % and 0.0 means 0%)
-	boneDropRate = 0.15
+	# Default: 0.18
+	# Range: 0.0 ~ 1.0
+	boneDropRate = 0.18
 	#How often do echo shards drop from Warden? (1.0 = 100 % and 0.0 means 0%)
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
 	echoShardDropRate = 0.5
 	#Chance for the Soul Heart to return a Blue Heart Canister after being broken
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
 	soulHeartReturnChance = 1.0
+
+["Heart Patches"]
+	#Heal amounts are in half-hearts (e.g. 2 = 1 full heart)
+	#Amount of health restored by the Red Heart Patch
+	# Default: 2
+	# Range: > 0
+	redPatchHealAmount = 2
+	#Amount of health restored by the Yellow Heart Patch
+	# Default: 6
+	# Range: > 0
+	yellowPatchHealAmount = 6
+	#Amount of health restored by the Green Heart Patch
+	# Default: 10
+	# Range: > 0
+	greenPatchHealAmount = 10
+	#Amount of health restored by the Blue Heart Patch
+	# Default: 20
+	# Range: > 0
+	bluePatchHealAmount = 20
+	#Cooldowns are in seconds
+	#Cooldown in seconds for the Red Heart Patch
+	# Default: 5
+	# Range: > 0
+	redPatchCooldown = 5
+	#Cooldown in seconds for the Yellow Heart Patch
+	# Default: 10
+	# Range: > 0
+	yellowPatchCooldown = 10
+	#Cooldown in seconds for the Green Heart Patch
+	# Default: 20
+	# Range: > 0
+	greenPatchCooldown = 20
+	#Cooldown in seconds for the Blue Heart Patch
+	# Default: 30
+	# Range: > 0
+	bluePatchCooldown = 30

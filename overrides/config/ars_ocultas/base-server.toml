@@ -1,0 +1,5 @@
+	[containment_jar.soul_gem]
+		#Allow empty Soul Gems to be used on filled Containment Jars to pickup the contained mob
+		pickup = true
+		#Allow filled Soul Gems to be used on empty Containment Jars to place the mob into the jar
+		place = true

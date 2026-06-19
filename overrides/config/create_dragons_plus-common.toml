@@ -15,7 +15,10 @@
 		#If Dragon's Breath Fluid should be enabled
 		"fluid/dragon_breath" = true
 		#.
-		#If colored concrete should be generated when Fye Fluid meets Lava
+		#If Dragon's Breath Fluid should slowly fill cauldrons through Pointed Dripstone
+		"fluid/dragon_breath/dripstone_duplication" = true
+		#.
+		#If colored concrete should be generated when Dye Fluid meets Lava
 		"fluid/dye/lava_interaction_generate_colored_concrete" = true
 
 	#.
@@ -47,3 +50,9 @@
 		#.
 		#If Sand Paper Polishing Recipes for Waxed Blocks should be generated
 		"recipe/sand_paper_polishing/waxed_blocks" = true
+		#.
+		#If block interaction of air current through fluid should be enabled (sable integration)
+		"fluid/air_current_block_interaction" = true
+		#.
+		#If Fragile Fluid Tank should be enabled (sable integration)
+		"fluid/fragile_fluid_tank" = true

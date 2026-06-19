@@ -1,4 +1,3 @@
-
 #These settings affects both server and client
 [Common]
 	#Whether or not to keep items in cosmetic armor slots in the event of player death
@@ -7,4 +6,3 @@
 	CosArmorDisableRecipeBook = false
 	#Whether or not to disable the coshat command
 	CosArmorDisableCosHatCommand = false
-

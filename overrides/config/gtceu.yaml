@@ -10,7 +10,7 @@ recipes:
 
   # Change the recipe of Rods in the Lathe to 1 Rod and 2 Small Piles of Dust, instead of 2 Rods.
   # Default: true
-  harderRods: false
+  harderRods: true
 
   # Whether to make crafting recipes for Bricks, Firebricks, Nether Bricks, and Coke Bricks harder.
   # Default: false
@@ -51,7 +51,7 @@ recipes:
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
   # Default: true
-  hardAdvancedIronRecipes: false
+  hardAdvancedIronRecipes: true
 
   # Whether to make coloring blocks like Concrete or Glass harder.
   # Default: false
@@ -87,7 +87,7 @@ recipes:
 
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
   # Default: false
-  enchantedTools: true
+  enchantedTools: false
 
   # Whether to enable macerator decomposition recycling
   # Default: true
@@ -175,7 +175,7 @@ worldgen:
 machines:
   # Whether to require a Wrench, Wirecutter, or other GregTech tools to break machines, casings, wires, and more.
   # Default: true
-  requireGTToolsForBlocks: false
+  requireGTToolsForBlocks: true
 
   # Whether machines explode in rainy weather or when placed next to certain terrain, such as fire or lava
   # Default: false
@@ -307,14 +307,11 @@ machines:
   # Whether the Assembly Line should require the fluid inputs to be in order.
   # (Requires Ordered Assembly Line Item Inputs to be enabled.)
   # Default: true
-  orderedAssemblyLineFluids: false
+  orderedAssemblyLineFluids: true
 
   # Default maximum parallel of steam multiblocks
   # Default: 8
   steamMultiParallelAmount: 8
-
-  # Whether the Drums can input fluids from the output side (bottom).
-  allowDrumsInputFluidsFromOutputSide: false
 
   # Small Steam Boiler Options
   smallBoilers:
@@ -381,6 +378,9 @@ machines:
     tungstensteelBoilerHeatSpeed: 2
 
 client:
+  # Whether or not to display all temperatures in Celsius instead of Kelvin
+  temperaturesInCelsius: false
+
   # Whether or not to enable Emissive Textures for GregTech Machines.
   # Default: true
   machinesEmissiveTextures: true
@@ -447,11 +447,15 @@ client:
     # Default: true
     renderGrowingPlants: true
 
+    # Whether or not to color material/ore block highlights in the material color
+    # Default: true
+    coloredMaterialBlockOutline: true
+
     # Whether or not to color tiered machine highlights in the tier color
     # Default: true
     coloredTieredMachineOutline: true
 
-    # Whether or not to color wire/cable highlights based on voltage tier
+    # Whether or not to color wire/cable highlights based on voltage tier or material color
     # Default: true
     coloredWireOutline: true
 
@@ -533,19 +537,21 @@ gameplay:
 
   # Whether environmental hazards like pollution or radiation are active
   # Default: false
-  environmentalHazards: true
+  environmentalHazards: false
 
   # How much environmental hazards decay per chunk, per tick.
   # Default: 0.001
   environmentalHazardDecayRate: 0.001
 
+  # List of domains that are allowed in the image module
+  allowedImageDomains:
+    - imgur.com
+    - discord.com
+    - github.com
+    - raw.githubusercontent.com
+
 # Config options for Mod Compatibility
 compat:
-  # Whether to run datafixers on world load.
-  # Do note that mods like ModernFix will interfere with this.
-  # Default: true
-  doDatafixers: true
-
   # Config options regarding GTEU compatibility with other energy systems
   energy:
     # Enable Native GTEU to Forge Energy (RF and alike) on GT Cables and Wires.
@@ -576,7 +582,7 @@ compat:
 
     # The energy consumption of ME Hatch/Bus.
     # Default: 4.0AE/t
-    meHatchEnergyUsage: 1.0
+    meHatchEnergyUsage: 4.0
 
   # Config options regarding GTCEu compatibility with minimap mods
   minimap:
@@ -686,4 +692,9 @@ dev:
   # Dump all registered GT models/blockstates/etc?
   # Default: false
   dumpAssets: false
+
+  # Executes ./gradlew :processResources when F3+T is pressed
+  # Only works in a development environment
+  # Default: false
+  autoRebuildResources: false
 

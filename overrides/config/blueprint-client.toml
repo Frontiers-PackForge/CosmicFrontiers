@@ -10,6 +10,8 @@ maxScreenShakers = 256
 disableExperimentalSettingsScreen = true
 #If no Slabfish hats should render at all, including on other players
 disableSlabfishHats = false
+#Whether the Slabfish Plush Campaign button should appear on the title screen. Ends May 11th.
+disableSlabfishPlushCampaign = false
 
 #Slabfish patron hat settings.
 [slabfishSettings]

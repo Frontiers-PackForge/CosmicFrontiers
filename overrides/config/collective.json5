@@ -1,4 +1,6 @@
 {
+	// Whether Collective should show a message in the console if a dependent mod has an update available. Update checks are optional and async.
+	"enableUpdateChecker": true,
 	// When enabled, transfer the held items and armour from replaced entities by any of the Entity Spawn mods which depend on Collective.
 	"transferItemsBetweenReplacedEntities": true,
 	// The amount of times Collective loops through possible mob drops to get them all procedurally. Drops are only generated when a dependent mod uses them. Lowering this can increase world load time but decrease accuracy.
@@ -7,8 +9,16 @@
 	// The delay of the is-there-a-block-around-check around entities in ms. Used in mods which depends on a specific blockstate in the world. Increasing this number can increase TPS if needed.
 	// min: 0, max: 3600000
 	"findABlockCheckAroundEntitiesDelayMs": 30000,
-	// Please check out https://stopmodreposts.org/ for more information on why this feature exists.
-	"enableAntiRepostingCheck": true,
 	// Enables pets for Patrons. Will be added in a future release.
-	"enablePatronPets": true
+	"enablePatronPets": true,
+	// Whether Collective should attempt to download translations if the client language is set to something other than English. Uses files from https://github.com/Serilum/.translations, downloaded via https://translations.serilum.com/. Hosted via CloudFlare Pages.
+	"downloadNonEnglishTranslations": true,
+	// On a server, sends connecting players without Collective a resource pack so custom item names from server-side Serilum mods show up in their own language. Off by default; without it they see the server language instead (see serverLanguage).
+	"pushTranslationResourcePack": false,
+	// Marks the resource pack as required, so an accidental decline only kicks the player and asks again next join instead of being remembered for good. Turn off to make it optional.
+	"requireTranslationResourcePack": true,
+	// The language Serilum mod text shows in for players without Collective who aren't sent the resource pack. Uses locale codes like en_us or de_de.
+	"serverLanguage": "en_us",
+	// How custom item names show for players without Collective when the resource pack is off. 'auto' copies the first player to join and remembers it; 'server' always uses the server language; 'client' uses each player's own language, but those without Collective then see raw keys.
+	"itemNameTranslationMode": "auto"
 }

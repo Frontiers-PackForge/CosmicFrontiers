@@ -72,3 +72,9 @@
 	# Default: 30
 	# Range: -9 ~ 1000
 	infiniteSpellLimit = 30
+
+[planarium]
+	#The number of game ticks the planarium will batch notifying nearby players if the dimension was changed.
+	# Default: 5
+	# Range: 1 ~ 200
+	planariumUpdateRate = 5

@@ -14,6 +14,20 @@
 	# Default: false
 	disable_protection: false
 	
+	# If true, fire is prevented from spreading across claims owned by different teams
+	# (unless the target claim has public 'edit block' permissions defined).
+	# False by default; enabling this can potentially lead to server performance issues,
+	# especially when many blocks are on fire
+	# If 'disable_protection' is set to true, this setting is ignored.
+	# Default: false
+	fire_spread_protection: false
+	
+	# If true, fluids are prevented from flowing horizontally across claims owned by different teams (unless the target claim has public 'edit block' permissions defined).
+	# False by default; enabling this can potentially lead to server performance issues, since fluid flow ticks are checked very frequently, especially for large bodies of flowing fluids
+	# If 'disable_protection' is set to true, this setting is ignored.
+	# Default: false
+	flowing_fluid_protection: false
+	
 	# Minimap for clients connecting to this server will be disabled
 	# Default: false
 	force_disable_minimap: false
@@ -90,18 +104,6 @@
 		# Default: "largest"
 		# Valid values: "largest", "owner", "sum", "average"
 		party_limit_mode: "largest"
-	}
-	custom_behaviour: {
-		chunks_with_custom_y: [ ]
-		
-		# Custom minimum Y level to scan when rendering map, used if use_custom_min_y_level is true
-		# Default: -32768
-		# Range: -32768 ~ 32767
-		custom_min_y_level: -32768
-		
-		# Override minimum Y level used when rendering map
-		# Default: false
-		use_custom_min_y_level: false
 	}
 	dev: {
 		# Enable dev commands
