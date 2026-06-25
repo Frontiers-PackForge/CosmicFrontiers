@@ -1,0 +1,85 @@
+StartupEvents.registry('gtceu:material', event => {
+    event.create('gtceu:fused_naquadah_emulsion')
+        .dust()
+        .color(0x1d4f04)
+        .flags(
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_UNIFICATION,
+            GTMaterialFlags.NO_WORKING
+        )
+    event.create('gtceu:raw_naquahine')
+        .liquid()
+        .color(0x315c04)
+    event.create('gtceu:prisma_doped_raw_naquahine')
+        .liquid(new GTFluidBuilder().customStill())
+        .color(0x292929)
+    event.create('gtceu:inert_naquahine')
+        .dust()
+        .color(0x872509)
+        .flags(
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_UNIFICATION,
+            GTMaterialFlags.NO_WORKING
+        )
+    event.create('gtceu:source_cut_naquahine_solution')
+        .liquid()
+        .color(0x7A116F)
+    event.create('gtceu:naquahine_rich_mixture')
+        .liquid()
+        .color(0xc4085d)
+    event.create('gtceu:naquahine')
+        .gas()
+        .dust()
+        .color(0xc4083d)
+        .blastTemp(5000)
+        .flags(
+            GTMaterialFlags.FORCE_GENERATE_BLOCK,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_RING,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_ROTOR,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.IS_MAGNETIC
+        )
+    event.create('gtceu:thunder_charged_naquahine_mixture')
+        .liquid()
+        .color(0x681C76)
+    event.create('gtceu:critically_steam_cracked_thundering_naquahine')
+        .gas()
+        .color(0xd075e0)
+    event.create('gtceu:energized_naquahine_fuel_preperation')
+        .gas()
+        .color(0x7a3665)
+    event.create('gtceu:aerated_naquahine')
+        .gas()
+        .color(0x634659)
+    event.create('gtceu:naquahine_superfuel_mk_one')
+        .liquid(new GTFluidBuilder().customStill())
+    event.create('gtceu:naquahine_superfuel_mk_two')
+        .liquid(new GTFluidBuilder().customStill())
+    event.create('gtceu:naquahine_superfuel_mk_three')
+        .liquid(new GTFluidBuilder().customStill())
+
+
+    event.create('gtceu:extracted_tau')
+        .color(0xbf3d55)
+        .liquid()
+    event.create('gtceu:tau_oil')
+        .color(0xba0b2b)
+        .liquid()
+    event.create('gtceu:tau')
+        .color(0xf23a5c)
+        .plasma()
+})

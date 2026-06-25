@@ -6,7 +6,7 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:impure_ancient_debris_solution')
         .liquid()
         .color(0x635033)
-    
+
     event.create('gtceu:netherite_lava_mixture')
         .liquid()
         .color(0x997845)

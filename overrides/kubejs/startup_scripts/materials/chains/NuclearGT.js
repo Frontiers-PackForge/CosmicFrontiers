@@ -1,15 +1,7 @@
-
 StartupEvents.registry('gtceu:material', event => {
-    //Molten Salt Nuclear
-    // Oxide -> Hexafluoride -> Split into depleted and enriched -> turned into fuel
-    //Reprocessing T1
-    // Superheated X waste fuel -> Cooled -> Centrifuged
-    //Reproc T2
-    //Cool Superheated Waste Fuel -> Splitting Agent of some kind -> break away the nuclear products from the flinak and fluoride
     event.create('gtceu:flinak')
         .liquid()
         .color(0x2b2b2b)
-    //Hexafluorides and Oxides
     event.create('gtceu:americium_oxide')
         .dust()
         .color(0x02402d)
@@ -24,7 +16,6 @@ StartupEvents.registry('gtceu:material', event => {
         .color(0x02402d)
 
 
-    //Normal Fuel Salts
     event.create('gtceu:uranium_fuel_salt')
         .liquid()
         .color(0x224224)
@@ -43,7 +34,6 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:lawrencium_fuel_salt')
         .liquid()
         .color(0x1d2623)
-    //SuperHeated Fuel Salts
     event.create('gtceu:superheated_uranium_fuel_salt')
         .liquid()
         .color(0x53a158)
@@ -59,7 +49,6 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:superheated_lawrencium_fuel_salt')
         .liquid()
         .color(0x607e74)
-    //Superheated Waste Fuel Salts
     event.create('gtceu:superheated_waste_uranium_fuel_salt')
         .liquid()
         .color(0x3e7842)
@@ -75,7 +64,6 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:superheated_waste_lawrencium_fuel_salt')
         .liquid()
         .color(0x435851)
-    //Waste Fuel Salts
     event.create('gtceu:waste_uranium_fuel_salt')
         .liquid()
         .color(0x3e7842)

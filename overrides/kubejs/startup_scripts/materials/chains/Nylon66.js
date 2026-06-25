@@ -1,4 +1,3 @@
-// const $CosmicMaterialSet = Java.loadClass("com.ghostipedia.cosmiccore.common.data.materials.CosmicMaterialSet")
 StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:ka_oil')
         .liquid()
@@ -38,7 +37,6 @@ StartupEvents.registry('gtceu:material', event => {
         .formula('(C12H22N2O2)n')
         .color(0xd4804c)
 
-    //Nylon reinforced with trinavine, much more stretchy and durable.
     event.create('gtceu:trinanylon_6_6')
         .liquid()
         .ingot()
@@ -50,5 +48,5 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FINE_WIRE
         )
         .formula('(C12H22N2O2)16⋖Tv⋗')
-        .color(0xdea740).secondaryColor(0xd4804c)//.iconSet($CosmicMaterialSet.TRINAVINE)
+        .color(0xdea740).secondaryColor(0xd4804c).iconSet('trinavine')
 })

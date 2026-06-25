@@ -1,4 +1,3 @@
-
 StartupEvents.registry('gtceu:material', event => {
 
     event.create('gtceu:1_4_dichlorobutadiene')
@@ -10,7 +9,7 @@ StartupEvents.registry('gtceu:material', event => {
         .liquid()
         .formula('C4H6Cl2')
         .color(0xa7f2c4)
-        
+
     event.create('gtceu:chloroprene')
         .liquid()
         .formula('C4H5Cl')

@@ -49,7 +49,7 @@ StartupEvents.registry('gtceu:material', event => {
         )
         .formula('(NH4)2PtCl6')
     event.create('gtceu:ammonium_hexachloropalladate')
-        .dust() 
+        .dust()
         .element(GTElements.get('ammonium_hexachloropalladate'))
         .color(0x8E9190).iconSet(GTMaterialIconSet.DULL)
         .flags(
@@ -228,20 +228,6 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-    // event.create('gtceu:potassium_sulfate')
-    //     .dust()
-    //     .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
-    //     .flags(
-    //         GTMaterialFlags.DISABLE_DECOMPOSITION,
-    //         GTMaterialFlags.NO_UNIFICATION
-    //     )
-    // event.create('gtceu:iron_ii_chloride')
-    //     .liquid()
-    //     .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
-    //     .flags(
-    //         GTMaterialFlags.DISABLE_DECOMPOSITION,
-    //         GTMaterialFlags.NO_UNIFICATION
-    //     )
 
     event.create('gtceu:sodium_dioxide')
         .dust()
@@ -253,13 +239,11 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:sodium_oxide')
         .dust()
         .color(0x3474eb).iconSet(GTMaterialIconSet.DULL)
-        .components('2x sodium', '1x oxygen')
-        // .flags()
+        .components('2x gtceu:sodium', '1x gtceu:oxygen')
     event.create('gtceu:sodium_peroxide')
         .dust()
         .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
-        .components('2x sodium', '2x oxygen')
-        // .flags()
+        .components('2x gtceu:sodium', '2x gtceu:oxygen')
     event.create('gtceu:barium_peroxide')
         .dust()
         .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
@@ -292,6 +276,3 @@ StartupEvents.registry('gtceu:material', event => {
         .formula('CH3COONa')
 
 })
-
-
-

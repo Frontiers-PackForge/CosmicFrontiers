@@ -1,33 +1,10 @@
 StartupEvents.registry('gtceu:material', event => {
-    //Chlorides
     event.create('gtceu:mre_chlorides')
         .liquid()
         .color(0x108277).iconSet(GTMaterialIconSet.DULL)
-    //     event.create('gtceu:hre_chlorides')
-    //         .dust()
-    //         .color(0xb55d1f).iconSet(GTMaterialIconSet.DULL)
-    //Oxides
-    //     event.create('gtceu:lre_oxides')
-    //         .dust()
-    //         .color(0x15b35c).iconSet(GTMaterialIconSet.DULL)
     event.create('gtceu:mre_oxides')
         .dust()
         .color(0x108277).iconSet(GTMaterialIconSet.DULL)
-    //     event.create('gtceu:hre_oxides')
-    //         .dust()
-    //         .color(0xb55d1f).iconSet(GTMaterialIconSet.DULL)
-    // Nitrate Solution
-    //     event.create('gtceu:lre_nitrate_solution')
-    //         .liquid()
-    //         .color(0x15b35c).iconSet(GTMaterialIconSet.DULL)
-    //     event.create('gtceu:mre_nitrate_solution')
-    //         .liquid()
-    //         .color(0x108277).iconSet(GTMaterialIconSet.DULL)
-    //     event.create('gtceu:hre_nitrate_solution')
-    //         .liquid()
-    //         .color(0xb55d1f).iconSet(GTMaterialIconSet.DULL)
-
-    //Slags from undergarden
     event.create('gtceu:monasite_slag')
         .liquid()
         .color(0xf22f11).iconSet(GTMaterialIconSet.DULL)
@@ -46,7 +23,6 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:hre_slag')
         .liquid()
         .color(0x836234).iconSet(GTMaterialIconSet.DULL)
-    //Xenotime extraction tier 1
     event.create('gtceu:monasite_concentrate')
         .liquid()
         .color(0x9e1500).iconSet(GTMaterialIconSet.DULL)
@@ -71,13 +47,6 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:dried_mixed_lre_precipitate')
         .dust()
         .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
-    //Xenotime extraction tier 2
-
-    //Xenotime extraction tier 3
-
-    //Monazite extraction tier 2
-    //TODO : Proper Colors
-
     event.create('gtceu:calcium_carbide')
         .dust()
         .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
@@ -99,14 +68,11 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:sodium_phosphate')
         .dust()
         .color(0x357a76).iconSet(GTMaterialIconSet.DULL)
-
-    //Monazite extraction tier 3
-
 })
 
 
-// GTCEuStartupEvents.materialModification(event => {
-//     GTMaterials.get('oxalic_acid').setFormula('C2H2O4', true)
-//     GTMaterials.get('di_2_ethylhexyl_phosphoric_acid').setFormula('(C8H17O)2PO2H', true)
-//     GTMaterials.get('sodium_phosphate').setFormula('Na3PO4', true)
-// })
+StartupEvents.postInit(event => {
+    GTMaterials.get('gtceu:oxalic_acid').setFormula('C2H2O4', true)
+    GTMaterials.get('gtceu:di_2_ethylhexyl_phosphoric_acid').setFormula('(C8H17O)2PO2H', true)
+    GTMaterials.get('gtceu:sodium_phosphate').setFormula('Na3PO4', true)
+})

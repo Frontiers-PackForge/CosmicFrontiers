@@ -4,7 +4,7 @@ StartupEvents.registry('gtceu:dimension_marker', event => {
         .tier(0)
         .overrideName('Earth Orbit')
     event.create('undergarden:undergarden')
-        .iconSupplier(() => Item.of('kubejs:undergarden_dim').getItem())
+        .iconSupplier(() => Item.of('cosmiccore:undergarden_dim').getItem())
         .tier(0)
         .overrideName('The Undergarden')
     event.create('frontiers:sun_orbit')

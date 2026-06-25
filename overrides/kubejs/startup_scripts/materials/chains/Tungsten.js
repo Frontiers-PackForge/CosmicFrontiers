@@ -56,46 +56,14 @@ StartupEvents.registry('gtceu:material', event => {
 
 
     event.create('gtceu:triethylaluminium')
-        // .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .liquid(new GTFluidBuilder().customStill())
         .color(0x76f593).iconSet(GTMaterialIconSet.DULL)
     event.create('gtceu:trioctylaluminium')
-        // .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .liquid(new GTFluidBuilder().customStill())
         .color(0x76f5c4).iconSet(GTMaterialIconSet.DULL)
     event.create('gtceu:one_dash_octanol')
-        // .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .liquid(new GTFluidBuilder().customStill())
         .color(0xf2af6f).iconSet(GTMaterialIconSet.DULL)
 
 
 })
-
-
-/*
-
-Trioctylamine - aq
-
-Trioctylammonium Isopolytungstate -aq
-
-Ammonium Hydroxide - aq
-
-Ammonium Paratungstate (APT) - dust 
-
-Tungstic Acid - dust
-
-Tungsten Trioxide - dust
-
-
-# Trioctlyamine
-
-Triethylaluminium - aq
-
-Trioctylaluminium - aq
-
-1-Octanol - aq
-
-Trioctylamine - aq
-
-
-
-
-
-*/

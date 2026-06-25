@@ -34,16 +34,15 @@ StartupEvents.registry('gtceu:material', event => {
         .color(0x709483)
 })
 
-
-// GTCEuStartupEvents.materialModification(event => {
-//     GTMaterials.get('naquadric_metallic_powder').setFormula('Nq-', true)
-//     GTMaterials.get('naquadric_solution').setFormula('NqNO2', true)
-//     GTMaterials.get('fluoronaquadric_acid').setFormula('H2NqF4', true)
-//     GTMaterials.get('naquadah_difluoride').setFormula('NqF2', true)
-//     GTMaterials.get('naquadah_concentrate').setFormula('Nq?', true)
-//     GTMaterials.get('potassium_peroxymonosulfate').setFormula('KHSO5', true)
-//     GTMaterials.get('indium_trifluoride').setFormula('InF3', true)
-//     GTMaterials.get('prismaline_thermal_catalyst').setFormula('Piꬿ', true)
-//     GTMaterials.get('diluted_nitric_acid').setFormula('(H2O)HNO3', true)
-//     GTMaterials.get('potassium_fluoride').setFormula('KF', true)
-// })
+StartupEvents.postInit(event => {
+    GTMaterials.get('gtceu:naquadric_metallic_powder').setFormula('Nq-', true)
+    GTMaterials.get('gtceu:naquadric_solution').setFormula('NqNO2', true)
+    GTMaterials.get('gtceu:fluoronaquadric_acid').setFormula('H2NqF4', true)
+    GTMaterials.get('gtceu:naquadah_difluoride').setFormula('NqF2', true)
+    GTMaterials.get('gtceu:naquadah_concentrate').setFormula('Nq?', true)
+    GTMaterials.get('gtceu:potassium_peroxymonosulfate').setFormula('KHSO5', true)
+    GTMaterials.get('gtceu:indium_trifluoride').setFormula('InF3', true)
+    GTMaterials.get('gtceu:prismaline_thermal_catalyst').setFormula('Piꬿ', true)
+    GTMaterials.get('gtceu:diluted_nitric_acid').setFormula('(H2O)HNO3', true)
+    GTMaterials.get('gtceu:potassium_fluoride').setFormula('KF', true)
+})
