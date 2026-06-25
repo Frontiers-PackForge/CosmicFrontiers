@@ -1,0 +1,26 @@
+{
+  "type": "embers:mixing",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/invar"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "amount": 2,
+      "fluid": "gtceu:iron"
+    },
+    {
+      "amount": 1,
+      "fluid": "gtceu:nickel"
+    }
+  ],
+  "output": {
+    "amount": 3,
+    "fluid": "gtceu:invar"
+  }
+}

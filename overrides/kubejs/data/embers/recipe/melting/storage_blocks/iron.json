@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:storage_blocks/iron"
+      }
+    }
+  ],
+  "input": {
+    "tag": "c:storage_blocks/iron"
+  },
+  "output": {
+    "amount": 1296,
+    "fluid": "gtceu:iron"
+  }
+}

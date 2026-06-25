@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/silver"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 144,
+    "fluid": "gtceu:silver"
+  },
+  "output": {
+    "tag": "c:ingots/silver"
+  },
+  "stamp": {
+    "item": "embers:ingot_stamp"
+  }
+}

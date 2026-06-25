@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/electrum"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 144,
+    "fluid": "gtceu:electrum"
+  },
+  "output": {
+    "tag": "c:ingots/electrum"
+  },
+  "stamp": {
+    "item": "embers:ingot_stamp"
+  }
+}

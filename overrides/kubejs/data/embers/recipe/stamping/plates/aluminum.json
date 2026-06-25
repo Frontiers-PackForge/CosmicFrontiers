@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/aluminum"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 144,
+    "fluid": "gtceu:aluminium"
+  },
+  "output": {
+    "tag": "c:plates/aluminum"
+  },
+  "stamp": {
+    "item": "embers:plate_stamp"
+  }
+}

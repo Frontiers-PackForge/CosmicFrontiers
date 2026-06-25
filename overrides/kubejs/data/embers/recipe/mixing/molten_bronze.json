@@ -1,0 +1,26 @@
+{
+  "type": "embers:mixing",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/bronze"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "amount": 3,
+      "fluid": "gtceu:copper"
+    },
+    {
+      "amount": 1,
+      "fluid": "gtceu:tin"
+    }
+  ],
+  "output": {
+    "amount": 4,
+    "fluid": "gtceu:bronze"
+  }
+}

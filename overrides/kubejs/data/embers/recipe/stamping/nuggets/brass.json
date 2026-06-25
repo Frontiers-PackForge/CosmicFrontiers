@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:nuggets/brass"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 16,
+    "fluid": "gtceu:brass"
+  },
+  "output": {
+    "tag": "c:nuggets/brass"
+  },
+  "stamp": {
+    "item": "embers:nugget_stamp"
+  }
+}

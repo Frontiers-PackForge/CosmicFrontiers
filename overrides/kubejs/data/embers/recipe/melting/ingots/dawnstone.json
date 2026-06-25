@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/dawnstone"
+      }
+    }
+  ],
+  "input": {
+    "tag": "c:ingots/dawnstone"
+  },
+  "output": {
+    "amount": 144,
+    "fluid": "embers:molten_dawnstone"
+  }
+}

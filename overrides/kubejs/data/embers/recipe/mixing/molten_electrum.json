@@ -1,0 +1,26 @@
+{
+  "type": "embers:mixing",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/electrum"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "amount": 2,
+      "fluid": "gtceu:silver"
+    },
+    {
+      "amount": 2,
+      "fluid": "gtceu:gold"
+    }
+  ],
+  "output": {
+    "amount": 4,
+    "fluid": "gtceu:electrum"
+  }
+}

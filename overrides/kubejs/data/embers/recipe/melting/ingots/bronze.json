@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/bronze"
+      }
+    }
+  ],
+  "input": {
+    "tag": "c:ingots/bronze"
+  },
+  "output": {
+    "amount": 144,
+    "fluid": "gtceu:bronze"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "embers:mixing",
+  "inputs": [
+    {
+      "amount": 8,
+      "fluid": "gtceu:copper"
+    },
+    {
+      "amount": 2,
+      "fluid": "gtceu:gold"
+    }
+  ],
+  "output": {
+    "amount": 10,
+    "fluid": "embers:molten_dawnstone"
+  }
+}

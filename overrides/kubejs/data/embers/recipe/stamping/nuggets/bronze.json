@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:nuggets/bronze"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 16,
+    "fluid": "gtceu:bronze"
+  },
+  "output": {
+    "tag": "c:nuggets/bronze"
+  },
+  "stamp": {
+    "item": "embers:nugget_stamp"
+  }
+}

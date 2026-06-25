@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/lead"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 144,
+    "fluid": "gtceu:lead"
+  },
+  "output": {
+    "tag": "c:ingots/lead"
+  },
+  "stamp": {
+    "item": "embers:ingot_stamp"
+  }
+}

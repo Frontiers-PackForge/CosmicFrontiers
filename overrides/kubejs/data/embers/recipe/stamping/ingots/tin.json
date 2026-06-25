@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/tin"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 144,
+    "fluid": "gtceu:tin"
+  },
+  "output": {
+    "tag": "c:ingots/tin"
+  },
+  "stamp": {
+    "item": "embers:ingot_stamp"
+  }
+}

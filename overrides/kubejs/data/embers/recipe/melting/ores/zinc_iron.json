@@ -1,0 +1,28 @@
+{
+  "type": "embers:melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:tag_empty",
+          "tag": "c:ingots/tin"
+        },
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "c:ores/zinc"
+          }
+        }
+      ]
+    }
+  ],
+  "input": {
+    "tag": "c:ores/zinc"
+  },
+  "output": {
+    "amount": 288,
+    "fluid": "gtceu:zinc"
+  }
+}

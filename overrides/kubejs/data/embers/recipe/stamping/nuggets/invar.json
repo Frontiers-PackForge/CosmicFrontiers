@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:nuggets/invar"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 16,
+    "fluid": "gtceu:invar"
+  },
+  "output": {
+    "tag": "c:nuggets/invar"
+  },
+  "stamp": {
+    "item": "embers:nugget_stamp"
+  }
+}

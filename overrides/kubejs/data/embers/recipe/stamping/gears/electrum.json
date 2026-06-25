@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:gears/electrum"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 576,
+    "fluid": "gtceu:electrum"
+  },
+  "output": {
+    "tag": "c:gears/electrum"
+  },
+  "stamp": {
+    "item": "embers:gear_stamp"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:nuggets/iron"
+      }
+    }
+  ],
+  "input": {
+    "tag": "c:nuggets/iron"
+  },
+  "output": {
+    "amount": 16,
+    "fluid": "gtceu:iron"
+  }
+}

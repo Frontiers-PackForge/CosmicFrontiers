@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:gears/lead"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 576,
+    "fluid": "gtceu:lead"
+  },
+  "output": {
+    "tag": "c:gears/lead"
+  },
+  "stamp": {
+    "item": "embers:gear_stamp"
+  }
+}

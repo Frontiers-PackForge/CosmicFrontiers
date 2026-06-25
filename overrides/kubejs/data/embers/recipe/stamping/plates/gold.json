@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/gold"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 144,
+    "fluid": "gtceu:gold"
+  },
+  "output": {
+    "tag": "c:plates/gold"
+  },
+  "stamp": {
+    "item": "embers:plate_stamp"
+  }
+}

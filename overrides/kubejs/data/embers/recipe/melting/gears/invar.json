@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:gears/invar"
+      }
+    }
+  ],
+  "input": {
+    "tag": "c:gears/invar"
+  },
+  "output": {
+    "amount": 576,
+    "fluid": "gtceu:invar"
+  }
+}

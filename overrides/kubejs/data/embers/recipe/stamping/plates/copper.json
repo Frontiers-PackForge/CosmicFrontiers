@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/copper"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 144,
+    "fluid": "gtceu:copper"
+  },
+  "output": {
+    "tag": "c:plates/copper"
+  },
+  "stamp": {
+    "item": "embers:plate_stamp"
+  }
+}

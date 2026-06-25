@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:nuggets/dawnstone"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 16,
+    "fluid": "embers:molten_dawnstone"
+  },
+  "output": {
+    "tag": "c:nuggets/dawnstone"
+  },
+  "stamp": {
+    "item": "embers:nugget_stamp"
+  }
+}

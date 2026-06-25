@@ -1,0 +1,35 @@
+{
+  "type": "embers:melting",
+  "bonus": {
+    "amount": 16,
+    "fluid": "gtceu:tin"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "c:raw_materials/zinc"
+          }
+        },
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "c:ingots/tin"
+          }
+        }
+      ]
+    }
+  ],
+  "input": {
+    "tag": "c:raw_materials/zinc"
+  },
+  "output": {
+    "amount": 144,
+    "fluid": "gtceu:zinc"
+  }
+}

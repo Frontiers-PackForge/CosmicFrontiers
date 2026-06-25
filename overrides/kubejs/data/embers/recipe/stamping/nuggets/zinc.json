@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:nuggets/zinc"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 16,
+    "fluid": "gtceu:zinc"
+  },
+  "output": {
+    "tag": "c:nuggets/zinc"
+  },
+  "stamp": {
+    "item": "embers:nugget_stamp"
+  }
+}

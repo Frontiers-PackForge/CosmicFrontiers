@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/uranium"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 144,
+    "fluid": "gtceu:uranium_238"
+  },
+  "output": {
+    "tag": "c:ingots/uranium"
+  },
+  "stamp": {
+    "item": "embers:ingot_stamp"
+  }
+}

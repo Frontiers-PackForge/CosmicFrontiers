@@ -1,0 +1,28 @@
+{
+  "type": "embers:melting",
+  "bonus": {
+    "amount": 16,
+    "fluid": "gtceu:lead"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "c:raw_materials/uranium"
+          }
+        }
+      ]
+    }
+  ],
+  "input": {
+    "tag": "c:raw_materials/uranium"
+  },
+  "output": {
+    "amount": 144,
+    "fluid": "gtceu:uranium_238"
+  }
+}

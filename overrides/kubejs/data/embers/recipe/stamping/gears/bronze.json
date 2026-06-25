@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:gears/bronze"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 576,
+    "fluid": "gtceu:bronze"
+  },
+  "output": {
+    "tag": "c:gears/bronze"
+  },
+  "stamp": {
+    "item": "embers:gear_stamp"
+  }
+}

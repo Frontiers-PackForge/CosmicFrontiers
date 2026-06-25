@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:nuggets/silver"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 16,
+    "fluid": "gtceu:silver"
+  },
+  "output": {
+    "tag": "c:nuggets/silver"
+  },
+  "stamp": {
+    "item": "embers:nugget_stamp"
+  }
+}

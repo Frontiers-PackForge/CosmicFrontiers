@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:gears/gold"
+      }
+    }
+  ],
+  "input": {
+    "tag": "c:gears/gold"
+  },
+  "output": {
+    "amount": 576,
+    "fluid": "gtceu:gold"
+  }
+}

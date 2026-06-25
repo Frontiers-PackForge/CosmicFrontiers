@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:nuggets/uranium"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 16,
+    "fluid": "gtceu:uranium_238"
+  },
+  "output": {
+    "tag": "c:nuggets/uranium"
+  },
+  "stamp": {
+    "item": "embers:nugget_stamp"
+  }
+}

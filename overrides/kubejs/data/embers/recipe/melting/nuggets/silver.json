@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:nuggets/silver"
+      }
+    }
+  ],
+  "input": {
+    "tag": "c:nuggets/silver"
+  },
+  "output": {
+    "amount": 16,
+    "fluid": "gtceu:silver"
+  }
+}

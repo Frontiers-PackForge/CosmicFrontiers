@@ -1,0 +1,10 @@
+{
+  "type": "embers:melting",
+  "input": {
+    "item": "minecraft:snowball"
+  },
+  "output": {
+    "amount": 250,
+    "fluid": "minecraft:water"
+  }
+}

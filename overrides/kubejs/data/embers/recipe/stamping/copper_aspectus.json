@@ -1,0 +1,16 @@
+{
+  "type": "embers:stamping",
+  "fluid": {
+    "amount": 144,
+    "fluid": "gtceu:copper"
+  },
+  "input": {
+    "item": "embers:ember_shard"
+  },
+  "output": {
+    "id": "embers:copper_aspectus"
+  },
+  "stamp": {
+    "item": "embers:ingot_stamp"
+  }
+}

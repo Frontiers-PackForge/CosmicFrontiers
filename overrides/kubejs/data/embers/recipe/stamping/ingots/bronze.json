@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/bronze"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 144,
+    "fluid": "gtceu:bronze"
+  },
+  "output": {
+    "tag": "c:ingots/bronze"
+  },
+  "stamp": {
+    "item": "embers:ingot_stamp"
+  }
+}

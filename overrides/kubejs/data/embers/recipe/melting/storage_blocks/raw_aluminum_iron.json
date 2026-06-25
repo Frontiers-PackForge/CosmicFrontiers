@@ -1,0 +1,28 @@
+{
+  "type": "embers:melting",
+  "bonus": {
+    "amount": 144,
+    "fluid": "gtceu:iron"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "c:storage_blocks/raw_aluminum"
+          }
+        }
+      ]
+    }
+  ],
+  "input": {
+    "tag": "c:storage_blocks/raw_aluminum"
+  },
+  "output": {
+    "amount": 1296,
+    "fluid": "gtceu:aluminium"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "embers:melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "c:ores/platinum"
+          }
+        }
+      ]
+    }
+  ],
+  "input": {
+    "tag": "c:ores/platinum"
+  },
+  "output": {
+    "amount": 288,
+    "fluid": "gtceu:platinum"
+  }
+}

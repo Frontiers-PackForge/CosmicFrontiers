@@ -1,0 +1,28 @@
+{
+  "type": "embers:melting",
+  "bonus": {
+    "amount": 16,
+    "fluid": "gtceu:iron"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "c:raw_materials/nickel"
+          }
+        }
+      ]
+    }
+  ],
+  "input": {
+    "tag": "c:raw_materials/nickel"
+  },
+  "output": {
+    "amount": 144,
+    "fluid": "gtceu:nickel"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/silver"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 144,
+    "fluid": "gtceu:silver"
+  },
+  "output": {
+    "tag": "c:plates/silver"
+  },
+  "stamp": {
+    "item": "embers:plate_stamp"
+  }
+}

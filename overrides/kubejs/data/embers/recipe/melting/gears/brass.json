@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:gears/brass"
+      }
+    }
+  ],
+  "input": {
+    "tag": "c:gears/brass"
+  },
+  "output": {
+    "amount": 576,
+    "fluid": "gtceu:brass"
+  }
+}

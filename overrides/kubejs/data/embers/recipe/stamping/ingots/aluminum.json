@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/aluminum"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 144,
+    "fluid": "gtceu:aluminium"
+  },
+  "output": {
+    "tag": "c:ingots/aluminum"
+  },
+  "stamp": {
+    "item": "embers:ingot_stamp"
+  }
+}

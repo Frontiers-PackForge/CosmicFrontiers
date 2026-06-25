@@ -1,0 +1,22 @@
+{
+  "type": "embers:stamping",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/nickel"
+      }
+    }
+  ],
+  "fluid": {
+    "amount": 144,
+    "fluid": "gtceu:nickel"
+  },
+  "output": {
+    "tag": "c:plates/nickel"
+  },
+  "stamp": {
+    "item": "embers:plate_stamp"
+  }
+}

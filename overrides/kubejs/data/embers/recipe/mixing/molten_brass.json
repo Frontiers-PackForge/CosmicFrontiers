@@ -1,0 +1,26 @@
+{
+  "type": "embers:mixing",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/brass"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "amount": 2,
+      "fluid": "gtceu:copper"
+    },
+    {
+      "amount": 2,
+      "fluid": "gtceu:zinc"
+    }
+  ],
+  "output": {
+    "amount": 4,
+    "fluid": "gtceu:brass"
+  }
+}

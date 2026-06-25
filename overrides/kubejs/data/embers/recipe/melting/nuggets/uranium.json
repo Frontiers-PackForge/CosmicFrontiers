@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:nuggets/uranium"
+      }
+    }
+  ],
+  "input": {
+    "tag": "c:nuggets/uranium"
+  },
+  "output": {
+    "amount": 16,
+    "fluid": "gtceu:uranium_238"
+  }
+}

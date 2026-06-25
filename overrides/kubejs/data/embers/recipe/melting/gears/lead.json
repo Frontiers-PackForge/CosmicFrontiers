@@ -1,0 +1,19 @@
+{
+  "type": "embers:melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:gears/lead"
+      }
+    }
+  ],
+  "input": {
+    "tag": "c:gears/lead"
+  },
+  "output": {
+    "amount": 576,
+    "fluid": "gtceu:lead"
+  }
+}
