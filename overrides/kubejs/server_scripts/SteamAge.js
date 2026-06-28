@@ -16,29 +16,75 @@ ServerEvents.recipes(event => {
     event.shaped('2x gtceu:wood_plate', ['A', 'B'], { A: '#gtceu:crafting_tools/saw', B: '#minecraft:wooden_slabs' })
     event.shaped('gtceu:bronze_brick_casing', ['AAA', 'ABA', 'CCC'], { A: 'gtceu:bronze_plate', B: '#gtceu:crafting_tools/hammer', C: 'gtceu:coke_oven_bricks' })
     event.shaped('cosmiccore:steam_mixing_vessel', ['ABA', 'ABA', 'CCC'], { A: 'gtceu:bronze_turbine_blade', B: 'gtceu:bronze_pipe_casing', C: 'gtceu:bronze_brick_casing' })
+    event.recipes.occultism.spirit_fire('gtceu:tempered_iesnium_ingot', 'occultism:iesnium_ingot')
+    event.shaped('gtceu:hp_steam_solid_boiler', ['AAA', 'ABA', 'CDC'], { A: 'gtceu:wrought_iron_plate', B: '#gtceu:crafting_tools/hammer', C: 'gtceu:firebricks', D: 'ironfurnaces:iron_furnace' })
     event.recipes.gtceu.compressor()
         .itemInputs('4x gtceu:sticky_resin')
         .itemOutputs('cosmiccore:hardened_resin')
         .EUt(GTValues.VA[GTValues.LV], 1)
         .duration(50)
-
+    event.shaped('2x create:factory_gauge', ['AB', 'CD'], { A: 'gtceu:vacuum_tube', B: '#gtceu:crafting_tools/file', C: '#gtceu:crafting_tools/screwdriver', D: 'create:precision_mechanism' })
+    event.shaped('2x create:package_frogport', ['ABA', 'CDC', 'EFE'], { A: 'copycats:copycat_cogwheel', B: 'minecraft:slime_ball', C: 'gtceu:vacuum_tube', D: 'create:item_vault', E: 'create:andesite_alloy', F: 'gtceu:steel_brick_casing' })
+    event.shaped('cosmiccore:hp_steam_wiremill', ['ABA', 'B B', 'CDC'], { A: 'cosmiccore:sturdy_plates', B: 'create_connected:encased_chain_cogwheel', C: 'gtceu:double_steel_plate', D: 'gtceu:steel_brick_casing' })
+    event.shaped('cosmiccore:hp_steam_bender', ['ABA', 'CDC', 'EFE'], { A: 'gtceu:wrought_iron_plate', B: 'gtceu:hp_steam_forge_hammer', C: 'create:mechanical_piston', D: 'minecraft:anvil', E: 'gtceu:double_steel_plate', F: 'gtceu:steel_brick_casing' })
+    event.shaped('create:precision_mechanism', ['AAA', 'BCD', 'BBB'], { A: 'createdeco:andesite_sheet', B: 'create:golden_sheet', C: 'copycats:copycat_large_cogwheel', D: 'copycats:copycat_cogwheel' })
+    event.shaped('gtceu:empty_mold', ['AB', 'CC', 'CC'], { A: '#gtceu:crafting_tools/hammer', B: '#gtceu:crafting_tools/file', C: 'gtceu:wrought_iron_plate' })
     event.shaped('cosmiccore:hardened_resin', ['AAA', 'ABA', 'AAA'], { A: 'gtceu:sticky_resin', B: '#gtceu:crafting_tools/hammer' })
     event.shaped('cosmiccore:steam_caster', ['ABA', 'ACA', 'ADA'], { A: 'gtceu:coke_oven_bricks', B: 'create:spout', C: 'minecraft:cauldron', D: 'gtceu:bronze_crate' })
-
-
-
-
-
-    event.recipes.occultism.spirit_fire('gtceu:tempered_iesnium_ingot', 'occultism:iesnium_ingot')
-
-
-
-
-
-
-
-
-
+    event.shaped('cosmiccore:dowsing_rod', ['AB', 'C '], { A: 'minecraft:flint', B: 'minecraft:stick', C: 'minecraft:string' })
+    event.shaped('cosmiccore:compactified_rod', ['ABA', 'ABA', 'ABA'], { A: 'createdeco:andesite_sheet', B: 'gtceu:long_wrought_iron_rod' })
+    event.shaped('cosmiccore:heavy_bindings', ['ABA', 'B B', 'ABA'], { A: 'createdeco:andesite_sheet', B: 'gtceu:long_wrought_iron_rod' })
+    event.shaped('cosmiccore:steam_fluid_output_hatch', ['AAA'], { A: 'cosmiccore:steam_mixing_vessel' })
+    event.shapeless('gtceu:tiny_tin_dust', ['gtceu:tin_nugget', '#gtceu:crafting_tools/mortar'])
+    event.recipes.cosmiccore.industrial_primitive_blast_furnace()
+        .itemInputs('4x gtceu:sulfur_dust', '8x cosmiccore:hardened_resin')
+        .itemOutputs('12x gtceu:rubber_ingot')
+        .inputFluids('gtceu:creosote 250')
+        .duration(1200)
+    event.recipes.gtceu.fluid_solidifier()
+        .itemInputs('6x gtceu:firebrick')
+        .itemOutputs('gtceu:firebricks')
+        .inputFluids('gtceu:concrete 1000')
+        .EUt(GTValues.VHA[GTValues.LV], 1)
+        .duration(100)
+    event.recipes.gtceu.mixer()
+        .itemInputs('minecraft:clay_ball', 'gtceu:brick_dust', 'create:wheat_flour')
+        .itemOutputs('4x cosmiccore:fireclay_ball')
+        .inputFluids('minecraft:lava 250')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.recipes.gtceu.compressor()
+        .itemInputs('cosmiccore:fireclay_ball')
+        .itemOutputs('gtceu:firebrick')
+        .EUt(GTValues.V[GTValues.LV], 1)
+        .duration(100)
+    event.shaped('cosmiccore:reinforced_dawnstone_casing', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:iron_plate', B: 'gtceu:dawnstone_foil', C: 'gtceu:bronze_frame' })
+    event.shaped('cosmiccore:light_dawnstone_casing', [' A ', 'BCB', ' A '], { A: 'gtceu:double_iron_plate', B: 'gtceu:dawnstone_foil', C: 'gtceu:bronze_frame' })
+    event.recipes.gtceu.alloy_smelter()
+        .itemInputs('8x minecraft:copper_ingot', '2x minecraft:gold_ingot')
+        .itemOutputs('10x embers:dawnstone_ingot')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.recipes.create.mixing(Fluid.of('embers:molten_dawnstone', 1000), [Fluid.of('gtceu:copper', 800), Fluid.of('gtceu:gold', 200)]).heated()
+    event.shaped('gtceu:steel_firebox_casing', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:steel_plate', B: 'gtceu:steel_rod', C: 'gtceu:dawnstone_frame' })
+    event.recipes.gtceu.assembler()
+        .itemInputs('3x gtceu:steel_plate', '3x gtceu:steel_rod', 'gtceu:dawnstone_frame')
+        .itemOutputs('gtceu:steel_firebox_casing')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.shaped('cosmiccore:dawn_forge', ['ABA', 'ABA', 'CDC'], { A: 'gtceu:double_dawnstone_plate', B: 'embers:ember_activator', C: 'gtceu:vacuum_tube', D: 'gtceu:ulv_machine_casing' })
+    event.recipes.gtceu.fluid_solidifier()
+        .itemInputs('embers:ember_shard')
+        .itemOutputs('embers:dawnstone_aspectus')
+        .inputFluids('embers:molten_dawnstone 144')
+        .input('cosmiccore:ember', 1750)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.recipes.gtceu.compressor()
+        .itemInputs('9x embers:ember_shard')
+        .itemOutputs('embers:ember_crystal_cluster')
+        .EUt(2)
+        .duration(100)
 
 
     event.recipes.gtceu.mixer()
@@ -47,7 +93,12 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:concrete 500')
         .EUt(GTValues.VA[GTValues.LV], 1)
         .duration(640)
-
+    event.recipes.cosmiccore.dawn_forge()
+        .itemInputs('embers:dawnstone_aspectus', 'embers:ember_crystal_cluster', '6x gtceu:dawnstone_foil')
+        .itemOutputs('embers:wildfire_core')
+        .input('cosmiccore:ember', 1000)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(300)
 
 
 

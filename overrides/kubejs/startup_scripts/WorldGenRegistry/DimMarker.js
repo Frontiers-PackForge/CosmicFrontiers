@@ -8,7 +8,7 @@ StartupEvents.registry('gtceu:dimension_marker', event => {
         .tier(0)
         .overrideName('The Undergarden')
     event.create('frontiers:sun_orbit')
-        .iconSupplier(() => Item.of('ad_astra:sun_globe').getItem())
+        .iconSupplier(() => Item.of('cosmiccore:auric_asteroid').getItem())
         .tier(4)
         .overrideName('Sun Orbit')
     event.create('ad_astra:moon')

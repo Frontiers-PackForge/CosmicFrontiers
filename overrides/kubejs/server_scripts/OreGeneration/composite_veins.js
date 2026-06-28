@@ -6,3 +6,4 @@ GTCEuServerEvents.oreVeins(event => {
     })
     event.removeAll((id, vein) => CosmicOreVeins.shouldRemove(id))
 })
+//Passes oreveins to CosmicCores ore Field Orchestrator
