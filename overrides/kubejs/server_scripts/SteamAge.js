@@ -146,6 +146,23 @@ ServerEvents.recipes(event => {
 
     event.shaped('cosmiccore:seal_shards', ['ABA', 'BCB', 'ABA'], { A: 'embers:ember_shard', B: 'waystones:deepslate_shard', C: 'bhc:red_heart' })
     event.shaped('cosmiccore:industrial_primitive_blast_furnace', ['ABA', 'BCB', 'DDD'], { A: 'gtceu:vacuum_tube', B: 'gtceu:double_steel_plate', C: 'gtceu:primitive_blast_furnace', D: 'gtceu:bronze_firebox_casing' })
+    event.shapeless('cosmiccore:crushed_ferosine_ore', ['#gtceu:crafting_tools/hammer', 'cosmiccore:raw_ferosine'])
+    event.shapeless('cosmiccore:crushed_cuprosiva_ore', ['#gtceu:crafting_tools/hammer', 'cosmiccore:raw_cuprosiva'])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })
 
 
