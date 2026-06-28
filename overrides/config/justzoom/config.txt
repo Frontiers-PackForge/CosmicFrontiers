@@ -13,5 +13,5 @@ B:normalize_mouse_sensitivity_on_zoom = 'true';
 
 ##[gui]
 
-I:options_button_corner = '0';
+I:options_button_corner = '1';
 B:show_options_button_in_pause_screen = 'true';
