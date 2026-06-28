@@ -85,8 +85,8 @@ ServerEvents.recipes(event => {
         .itemOutputs('embers:ember_crystal_cluster')
         .EUt(2)
         .duration(100)
-
-
+    event.shapeless('cosmiccore:lv_ember_input_hatch', ['gtceu:ulv_machine_casing', 'embers:ember_shard'])
+    event.shaped('cosmiccore:high_pressure_assembler', ['AAA', 'ABA', 'CDC'], { A: 'gtceu:rubber_foil', B: 'gtceu:steel_machine_casing', C: 'gtceu:vacuum_tube', D: 'gtceu:steel_firebox_casing' })
     event.recipes.gtceu.mixer()
         .itemInputs('4x gtceu:calcite_dust', '4x occultism:burnt_otherstone', '4x occultism:burnt_otherrock')
         .itemOutputs('occultism:chalk_white_impure')
@@ -100,8 +100,52 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV], 1)
         .duration(300)
 
+    event.custom({
+        "ritual_dummy": {
+            "id": "cosmiccore:nether_permit",
+            "count": 1
+        },
+        "result": {
+            "id": "cosmiccore:nether_permit",
+            "count": 1
+        },
+        "ritual_type": "occultism:craft",
+        "pentacle_id": "occultism:craft_foliot",
+        "ingredients": [
+            {
+                "item": "embers:dawnstone_aspectus"
+            },
+            {
+                "item": "embers:dawnstone_aspectus"
+            },
+            {
+                "item": "embers:dawnstone_aspectus"
+            },
+            {
+                "item": "embers:dawnstone_aspectus"
+            },
+            {
+                "item": "minecraft:echo_shard"
+            },
+            {
+                "item": "minecraft:echo_shard"
+            },
+            {
+                "item": "minecraft:echo_shard"
+            },
+            {
+                "item": "minecraft:echo_shard"
+            }
+        ],
+        "activation_item": {
+            "item": "cosmiccore:seal_shards"
+        },
+        "duration": 300,
+        "type": "occultism:ritual"
+    })
 
-
+    event.shaped('cosmiccore:seal_shards', ['ABA', 'BCB', 'ABA'], { A: 'embers:ember_shard', B: 'waystones:deepslate_shard', C: 'bhc:red_heart' })
+    event.shaped('cosmiccore:industrial_primitive_blast_furnace', ['ABA', 'BCB', 'DDD'], { A: 'gtceu:vacuum_tube', B: 'gtceu:double_steel_plate', C: 'gtceu:primitive_blast_furnace', D: 'gtceu:bronze_firebox_casing' })
 })
 
 
