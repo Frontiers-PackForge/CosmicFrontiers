@@ -1,0 +1,55 @@
+[ui]
+	#Amount of pixels scrolled
+	# Default: 30
+	# Range: 1 ~ 100
+	defaultScrollSpeed = 30
+	#If progress bars should step in texture pixels or screen pixels. (Screen pixels are way smaller and therefore smoother)
+	smoothProgressBars = false
+	#Duration of UI animations in ms.
+	#Default: 100
+	# Default: 100
+	# Range: 0 ~ 500
+	animationTime = 100
+	#Default tooltip position around the widget or its panel.
+	#Allowed Values: ABOVE, BELOW, LEFT, RIGHT, VERTICAL, HORIZONTAL, NEXT_TO_MOUSE, FIXED
+	tooltipPos = "NEXT_TO_MOUSE"
+	#If true, pressing ESC key in the text field will restore the last text instead of confirming current one.
+	escRestoresLastText = false
+	#If true and not specified otherwise, screens will try to use the 'vanilla_dark' theme.
+	useDarkThemeByDefault = false
+	#Enables a test block, test item with a test gui and opening a gui by right clicking a diamond.
+	enableTestGuis = false
+	#Enables a test overlay shown on title screen and watermark shown on every GuiContainer.
+	enableTestOverlays = false
+	#If true, vanilla tooltip will be replaced with MUI's RichTooltip
+	replaceVanillaTooltips = false
+	#The format prefix of the mod name tooltip line.
+	#Default: 'blue italic' (converted to §9§o)
+	modNameFormat = "blue italic"
+	#Debug text color. Prefix Hex values with a #. Common colors can be referred by their name.
+	debugTextColor = "#FFAAAAAA"
+	#Debug outline color. Prefix Hex values with a #. Common colors can be referred by their name.
+	debugOutlineColor = "#DCB42873"
+
+[dev]
+	#Debug UI? (Will draw widget outlines and widget information)
+	#Default: false
+	debugUI = false
+	#Color for cursor in debug mode, in #AARRGGBB
+	cursorColor = "#FF4CAF50"
+	#Scale of debug text
+	#Default: 0.8f
+	# Default: 0.8
+	# Range: 0.1 ~ 10.0
+	scale = 0.8
+	showHovered = true
+	showPos = true
+	showSize = true
+	showWidgetTheme = true
+	showExtra = true
+	showOutline = true
+	showParent = true
+	showParentPos = true
+	showParentSize = true
+	showParentWidgetTheme = true
+	showParentOutline = true

@@ -1,0 +1,6 @@
+#Allows create to interact with blocks that provide block capability, even though they have no block entity
+blockCapabilityFix = true
+#Determines how many times a factory panel can be updated in the same tick
+# Default: 16
+# Range: > 0
+factoryPanelMaxCyclesPerTick = 16

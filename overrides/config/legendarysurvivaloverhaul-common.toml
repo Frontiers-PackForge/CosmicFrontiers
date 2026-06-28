@@ -66,7 +66,7 @@
 	"Dangerous Cold Temperature Effects" = true
 	# Chance of the ferns to become a gold fern when grow mature.
 	# Default: 0.01
-	# Range: 0.0 ~ 1.0
+	# Range: 0.0 ~ 2.0
 	"Gold Fern Chance" = 0.05
 	# How much of an effect being on fire has on a player's temperature.
 	# Default: 12.5
@@ -83,6 +83,10 @@
 	# Default: -6.0
 	# Range: -1000.0 ~ 1000.0
 	"Altitude Modifier" = -5.0
+	# Chance of the ferns to become a gold fern when generated in the world.
+	# Default: 2.0E-4
+	# Range: 0.0 ~ 2.0
+	"Gold Fern Worldgen Chance" = 2.0E-4
 
 	[temperature.temperature-immunity]
 		# If enabled, players will be immune to temperature effects after death.

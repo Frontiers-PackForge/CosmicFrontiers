@@ -86,7 +86,7 @@
 		
 		# Only show entities that are on the surface
 		# Default: true
-		only_surface_entities: true
+		only_surface_entities: false
 		
 		# Show your own claimed chunks on the map
 		# Default: true
@@ -137,7 +137,38 @@
 		# Show entity heads on minimap
 		# Default: true
 		entity_heads: true
-		entity_icon: { }
+		entity_icon: {
+			"embers:ancient_golem": true
+			"minecraft:pig": true
+			"minecraft:chicken": true
+			"ars_nouveau:alakarkinos": true
+			"minecraft:cod": false
+			"minecraft:skeleton": true
+			"minecraft:spider": true
+			"minecraft:zombie": true
+			"minecraft:villager": true
+			"ars_nouveau:whirlisprig": true
+			"minecraft:horse": true
+			"minecraft:sheep": true
+			"minecraft:witch": true
+			"ars_nouveau:starbuncle": true
+			"minecraft:cat": true
+			"ars_elemental:flashjack_entity": true
+			"minecraft:glow_squid": true
+			"ars_nouveau:drygmy": true
+			"minecraft:iron_golem": true
+			"minecraft:cow": true
+			"upgrade_aquatic:nautilus": true
+			"minecraft:parrot": true
+			"minecraft:creeper": true
+			"minecraft:bat": true
+			"minecraft:turtle": true
+			"minecraft:squid": true
+			"minecraft:donkey": true
+			"minecraft:salmon": false
+			"minecraft:armadillo": true
+			"upgrade_aquatic:perch": true
+		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
 		# Default: 0.5
@@ -257,11 +288,11 @@
 		
 		# Enables creation of death waypoints
 		# Default: true
-		death_waypoints: true
+		death_waypoints: false
 		
 		# Show waypoints in world
 		# Default: true
-		in_world_waypoints: true
+		in_world_waypoints: false
 		
 		# Minimum distance before waypoint dots start to fade
 		# Default: 1.0

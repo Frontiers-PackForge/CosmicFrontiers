@@ -1,0 +1,10 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "fto_the_skies_r_esteam7"
+	group: "7EA3F68BE56F2314"
+	id: "68A4490D81087CDD"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+}

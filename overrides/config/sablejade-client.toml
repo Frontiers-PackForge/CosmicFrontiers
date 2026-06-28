@@ -1,0 +1,5 @@
+[tooltips]
+	#Controls whether Sable Jade adds extra tooltip lines beyond fixing Jade's targeting.
+	#Allowed values: NEVER, ALWAYS, WITH_GOGGLES
+	#Allowed Values: NEVER, ALWAYS, WITH_GOGGLES
+	tooltipInfoMode = "WITH_GOGGLES"

@@ -1,0 +1,8 @@
+line_before = false
+line_after = false
+# Default: 7829367
+# Range: > -2147483648
+default_color = 7829367
+# Default: 2
+# Range: 0 ~ 10
+spaces_before_tooltip = 2

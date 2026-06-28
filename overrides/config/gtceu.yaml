@@ -14,16 +14,16 @@ recipes:
 
   # Whether to make crafting recipes for Bricks, Firebricks, Nether Bricks, and Coke Bricks harder.
   # Default: false
-  harderBrickRecipes: false
+  harderBrickRecipes: true
 
   # Whether to nerf Wood crafting to 2 Planks from 1 Log, and 2 Sticks from 2 Planks.
   # Default: false
-  nerfWoodCrafting: false
+  nerfWoodCrafting: true
 
   # Whether to make Wood related recipes harder.
   # Excludes sticks and planks.
   # Default: false
-  hardWoodRecipes: false
+  hardWoodRecipes: true
 
   # Recipes for Buckets, Cauldrons, Hoppers, and Iron Bars require Iron Plates, Rods, and more.
   # Default: true
@@ -36,11 +36,11 @@ recipes:
   # Whether to make Vanilla Tools and Armor recipes harder.
   # Excludes Flint and Steel, and Buckets.
   # Default: false
-  hardToolArmorRecipes: false
+  hardToolArmorRecipes: true
 
   # Whether to make miscellaneous recipes harder.
   # Default: false
-  hardMiscRecipes: false
+  hardMiscRecipes: true
 
   # Whether to make Glass related recipes harder. Default: true
   hardGlassRecipes: true
@@ -55,7 +55,7 @@ recipes:
 
   # Whether to make coloring blocks like Concrete or Glass harder.
   # Default: false
-  hardDyeRecipes: false
+  hardDyeRecipes: true
 
   # Whether to remove charcoal smelting recipes from the vanilla furnace.
   # Default: true
@@ -67,7 +67,7 @@ recipes:
 
   # Whether to remove Vanilla Block Recipes from the Crafting Table.
   # Default: false
-  removeVanillaBlockRecipes: false
+  removeVanillaBlockRecipes: true
 
   # Whether to remove Vanilla TNT Recipe from the Crafting Table.
   # Default: true
@@ -75,15 +75,15 @@ recipes:
 
   # How many Multiblock Casings to make per craft. Either 1, 2, or 3.
   # Default: 2
-  casingsPerCraft: 2
+  casingsPerCraft: 1
 
   # Whether to nerf the output amounts of the first circuit in a set to 1 (from 2) and SoC to 2 (from 4).
   # Default: false
-  harderCircuitRecipes: false
+  harderCircuitRecipes: true
 
   # Whether to nerf machine controller recipes.
   # Default: false
-  hardMultiRecipes: false
+  hardMultiRecipes: true
 
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
   # Default: false
@@ -135,7 +135,7 @@ worldgen:
   oreVeins:
     # The grid size (in chunks) for ore vein generation
     # Default: 3
-    oreVeinGridSize: 3
+    oreVeinGridSize: 5
 
     # The maximum random offset (in blocks) from the grid for generating an ore vein.
     # Default: 12
@@ -164,12 +164,12 @@ worldgen:
     # Sets the maximum number of chunks that may be cached for ore vein generation.
     # Higher values may improve world generation performance, but at the cost of more RAM usage.
     # If you substantially increase the ore vein grid size, random vein offset, or have very large (custom) veins, you may need to increase this value as well.
-    # Default: 512 (requires restarting the server / re-opening the world)
+    # Default: 512
     oreGenerationChunkCacheSize: 512
 
     # Sets the maximum number of chunks for which ore indicators may be cached.
     # If you register any custom veins with very large indicator ranges (or modify existing ones that way), you may need to increase this value.
-    # Default: 2048 (requires restarting the server / re-opening the world)
+    # Default: 2048
     oreIndicatorChunkCacheSize: 2048
 
 machines:
@@ -179,7 +179,7 @@ machines:
 
   # Whether machines explode in rainy weather or when placed next to certain terrain, such as fire or lava
   # Default: false
-  shouldWeatherOrTerrainExplosion: false
+  shouldWeatherOrTerrainExplosion: true
 
   # Energy use multiplier for electric items.
   # Default: 100
@@ -298,7 +298,7 @@ machines:
   # This is intended for modpack developers only, and is not playable without custom tweaks or addons.
   # Other mods can override this to true, regardless of the config file.
   # Default: false
-  highTierContent: false
+  highTierContent: true
 
   # Whether the Assembly Line should require the item inputs to be in order.
   # Default: true
@@ -403,23 +403,14 @@ client:
   # #D2DCFF is the classic blue from GT5.
   defaultPaintingColor: #FFFFFF
 
-  # The default color to overlay onto Machine (and other) UIs.
-  # #FFFFFF is no coloring (like GTCE) (default).
-  # #D2DCFF is the classic blue from GT5.
-  defaultUIColor: #FFFFFF
-
   # Use VBO cache for multiblock preview.
   # Disable if you have issues with rendering multiblocks.
   # Default: true
   useVBO: true
 
-  # Duration of the multiblock in-world preview (s)
+  # Duration of the multiblock in-world preview (in seconds)
   # Default: 10
   inWorldPreviewDuration: 10
-
-  # Duration of UI animations in ms
-  # Default: 300
-  animationTime: 300
 
   armorHud:
     # Sets HUD location
@@ -459,12 +450,99 @@ client:
     # Default: true
     coloredWireOutline: true
 
+  # Config options for bloom and other post-processing effects
+  bloom:
+    # Bloom Algorithm
+    # Requires reloading all chunks 
+    # UNITY - Unity-like Bloom (rescale)
+    # UNREAL - Unreal-like Bloom (gaussian blur)
+    # DISABLED - No bloom
+    # Default: UNREAL
+    # Allowed values:
+    # - UNITY
+    # - UNREAL
+    # - DISABLED
+    type: DISABLED
+
+    # Whether or not to add bloom to emissive textures
+    # Default: true
+    emissiveTexturesHaveBloom: true
+
+    # The brightness after bloom should not exceed this value. It can be used to limit the brightness of highlights (e.g., daytime)
+    # This value should be greater than minBrightness.
+    # OUTPUT = BACKGROUND + BLOOM * strength * (base + min + (1 - BACKGROUND_BRIGHTNESS) * ({max} - min)))
+    # Default: 0.5
+    maxBrightness: 0.5
+
+    # The brightness after bloom should not smaller than this value. It can be used to limit the brightness of dusky parts (e.g., night/caves)
+    # This value should be lower than maxBrightness.
+    # OUTPUT = BACKGROUND + BLOOM * strength * (base + {min} + (1 - BACKGROUND_BRIGHTNESS) * (max - {min})))
+    # Default: 0.2
+    minBrightness: 0.2
+
+    # The base brightness of the bloom.
+    # It is similar to strength
+    # This value should be lower than maxBrightness.
+    # OUTPUT = BACKGROUND + BLOOM * strength * ({base} + min + (1 - BACKGROUND_BRIGHTNESS) * (max - min)))
+    # Default: 0.1
+    baseBrightness: 0.1
+
+    # Bloom Strength
+    # OUTPUT = BACKGROUND + BLOOM * {strength} * (base + min + (1 - BACKGROUND_BRIGHTNESS) * (max - min)))
+    # Default: 1.5
+    strength: 1.5
+
+    # Blur Step (bloom range)
+    # Default: 1
+    step: 1.0
+
   tankItemFluidPreview:
     # Set true to render the including fluid icons to GT Drums
+    # Default: false
     drum: false
 
-    # Set true to render the including fluid icons to Super (Quantum) Tanks
+    # Set true to render the including fluid icons to Super and Quantum Tanks
+    # Default: false
     quantumTank: false
+
+  ui:
+    # If progress bar should step in texture pixels or screen pixels. (Screen pixels are way smaller and therefore smoother)
+    # Default: true
+    smoothProgressBar: true
+
+    # Duration of UI animations in ms.
+    # Default: 100
+    animationTime: 100
+
+    # Default tooltip position around the widget or its panel.
+    # Default: VERTICAL
+    # Allowed values:
+    # - ABOVE
+    # - BELOW
+    # - LEFT
+    # - RIGHT
+    # - VERTICAL
+    # - HORIZONTAL
+    # - NEXT_TO_MOUSE
+    # - FIXED
+    tooltipPos: NEXT_TO_MOUSE
+
+    # The default color to overlay onto Machine (and other) UIs.
+    # #FFFFFF is no coloring (like GTCE) (default).
+    # #D2DCFF is the classic blue from GT5.
+    defaultUIColor: #FFFFFF
+
+    # If true, pressing the ESC key in a text field will restore the last text instead of confirming current one.
+    # Default: fakse
+    escRestoresLastText: false
+
+    # If true and not specified otherwise, screens will try to use the 'vanilla_dark' theme.
+    # Default: false
+    useDarkThemeByDefault: false
+
+    # If true, vanilla tooltips will be replaced with MUI's RichTooltip
+    # Default: false
+    replaceVanillaTooltips: false
 
 # Config options for Tools and Armor
 tools:
@@ -586,7 +664,7 @@ compat:
 
   # Config options regarding GTCEu compatibility with minimap mods
   minimap:
-    # Toggle specific map mod integration on/off (need to restart for this to take effect)
+    # Toggle specific map mod integration on/off
     toggle:
       # FTB Chunks integration enabled
       ftbChunksIntegration: false
@@ -598,12 +676,12 @@ compat:
       xaerosMapIntegration: true
 
     # The radius, in blocks, that picking up a surface rock will search for veins in.
-    # -1 to disable.
+    # 0 to disable.
     # Default: 24
     surfaceRockProspectRange: 24
 
     # The radius, in blocks, that clicking an ore block will search for veins in.
-    # -1 to disable
+    # 0 to disable
     # Default: 24
     oreBlockProspectRange: 24
 
@@ -621,7 +699,7 @@ compat:
     borderColor: #00000000
 
     # Which part of the screen to anchor buttons to
-    # Default: "BOTTOM_LEFT"
+    # Default: BOTTOM_LEFT
     # Allowed values:
     # - TOP_LEFT
     # - TOP_CENTER
@@ -634,7 +712,7 @@ compat:
     buttonAnchor: BOTTOM_LEFT
 
     # Which direction the buttons will go
-    # Default: "VERTICAL"
+    # Default: VERTICAL
     # Allowed values:
     # - VERTICAL
     # - HORIZONTAL
@@ -658,7 +736,7 @@ compat:
 
   # Whether to hide the ore processing diagrams in JEI
   # Default: false
-  hideOreProcessingDiagrams: false
+  hideOreProcessingDiagrams: true
 
   # Whether Gregtech should remove smelting recipes from the vanilla furnace for ingots requiring the Electric Blast Furnace.
   # Default: true
@@ -666,7 +744,7 @@ compat:
 
   # Whether dimension markers should show the dimension tier value.
   # Default: false
-  showDimensionTier: false
+  showDimensionTier: true
 
   # Whether Create compatibility will be available.
   # Default: true

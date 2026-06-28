@@ -1,0 +1,4 @@
+#Adjusts the selling bin sell rates globally
+# Default: 1.0
+# Range: 0.0 ~ 9999999.0
+selling_bin_multiplier = 1.0

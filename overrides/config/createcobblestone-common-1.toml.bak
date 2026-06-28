@@ -1,0 +1,50 @@
+#.
+#Common config
+[common]
+	#.
+	#stress * rpm = total stress
+	#(Can be overridden by custom generator types)
+	# Default: 8
+	# Range: > 0
+	generatorStress = 8
+	#.
+	#(Can be overridden by custom generator types)
+	# Default: 2.5
+	# Range: 0.0 ~ 3.4028234663852886E38
+	outputPerSecondPerRpm = 2.5
+	#.
+	#(Can be overridden by custom generator types)
+	# Default: 256
+	# Range: > 1
+	maxGeneratorStorage = 256
+	#.
+	#Log information that may be usefull for reporting a problem and debugging it.
+	#THIS WILL SPAM YOUR LOGS
+	enableDebugLogging = false
+
+	#.
+	#Cobblestone generator types
+	[common.generatorsEnabled]
+		#.
+		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
+		cobblestoneGeneratorEnabled = true
+		#.
+		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
+		basaltGeneratorEnabled = true
+		#.
+		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
+		stoneGeneratorEnabled = true
+		#.
+		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
+		limestoneGeneratorEnabled = true
+		#.
+		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
+		scoriaGeneratorEnabled = true
+		#.
+		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
+		#(Also requires deepslate generators datapack, https://modrinth.com/datapack/create-cobblestone-deepslate-generators)
+		deepslateGeneratorEnabled = true
+		#.
+		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
+		#(Also requires deepslate generators datapack, https://modrinth.com/datapack/create-cobblestone-deepslate-generators)
+		cobbledDeepslateGeneratorEnabled = true

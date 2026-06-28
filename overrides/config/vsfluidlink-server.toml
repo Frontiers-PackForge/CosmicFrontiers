@@ -1,0 +1,17 @@
+[general]
+	#Maximum distance between connected blocks before the link breaks.
+	# Default: 10.0
+	# Range: 1.0 ~ 300.0
+	maxLinkDistance = 10.0
+	#Maximum distance in front of the Magnet Connector to scan for other connectors.
+	# Default: 5
+	# Range: 1 ~ 100
+	magnetScanDistance = 5
+	#Radius around the scan line to check for connectors (Scan box size will be 1 + radius * 2).
+	# Default: 1
+	# Range: 0 ~ 10
+	magnetScanRadius = 1
+	#If true, connections between two blocks that are both NOT on a ship (i.e., on the ground) will be blocked.
+	restrictWorldToWorldConnection = false
+	#If true, connections between two blocks that are on the SAME ship will be blocked.
+	restrictIntraShipConnection = false

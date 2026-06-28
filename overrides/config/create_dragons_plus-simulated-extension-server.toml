@@ -1,0 +1,81 @@
+#.
+#Parameters and abilities of fluids and fluid operating components
+[fluids]
+	#.
+	#.
+	#The amount of liquid a Fragile Fluid Tank can hold (mB).
+	#[@cui:RequiresReload:server]
+	# Default: 1000
+	# Range: > 500
+	fragileFluidTankCapacity = 1000
+	#.
+	#The amount of liquid makes effect of breaking Fragile Fluid Tank amplified. (such as potion, tea)For example: x (mB) of potion gives y ticks of duration, then 2x (mB) gives 2y ticks of duration-"x" is this option. Specific effect alters by implementation of specific fluid.
+	#[@cui:RequiresReload:server]
+	# Default: 250
+	# Range: > 1
+	fragileFluidTankEffectAmplifiedUnit = 250
+	#.
+	#The maximum radius of the area affected when a full Fragile Fluid Tank breaks on impact
+	# Default: 8
+	# Range: > 2
+	fragileFluidTankAffectMaxRadius = 8
+	#.
+	#Should Fragile Fluid Tank containing lava ignite block when it breaks
+	fragileFluidTankLavaIgniteBlock = true
+	#.
+	#Should Fragile Fluid Tank containing lava spread fire when it breaks
+	fragileFluidTankLavaSpreadFire = true
+	#.
+	#Should Fragile Fluid Tank containing dye fluid color block when it breaks
+	fragileFluidTankDyeColorBlock = true
+	#.
+	#Should Fragile Fluid Tank containing explosive fluid explode when it breaks
+	fragileFluidTankExplosiveFluidExplosion = true
+	#.
+	#Should explosions from Fragile Fluid Tank containing explosive fluid cause fire
+	fragileFluidTankExplosiveFluidCausesFire = true
+	#.
+	#The explosion power of a Fragile Fluid Tank containing a very small amount of explosive fluid
+	# Default: 1.0
+	# Range: 0.0 ~ 128.0
+	fragileFluidTankExplosiveFluidMinPower = 1.0
+	#.
+	#The explosion power of a full Fragile Fluid Tank containing explosive fluid
+	# Default: 4.0
+	# Range: 0.0 ~ 128.0
+	fragileFluidTankExplosiveFluidMaxPower = 4.0
+
+#.
+#Control panel for block Interaction of air current through fluid should be enabled
+[recipes]
+	#.
+	#.
+	#If air current block interaction of Bulk Blasting should be enabled
+	enableBulkBlastingBlockInteraction = true
+	#.
+	#If air current block interaction of Bulk Smoking should be enabled
+	enableBulkSmokingBlockInteraction = false
+	#.
+	#If air current of Bulk Blasting ignite block when possible
+	bulkBlastingIgniteBlock = false
+	#.
+	#If air current of Bulk Blasting spread fire on flammable block when possible
+	bulkBlastingSpreadFire = true
+	#.
+	#If air current block interaction of Bulk Splashing should be enabled
+	enableBulkSplashingBlockInteraction = true
+	#.
+	#If air current block interaction of Bulk Haunting should be enabled
+	enableBulkHauntingBlockInteraction = false
+	#.
+	#If air current block interaction of Bulk Freezing should be enabled
+	enableBulkFreezingBlockInteraction = true
+	#.
+	#If air current block interaction of Bulk Ending should be enabled
+	enableBulkEndingBlockInteraction = false
+	#.
+	#If air current block interaction of Bulk Sanding should be enabled
+	enableBulkSandingBlockInteraction = false
+	#.
+	#If air current block interaction of Bulk Coloring should be enabled
+	enableBulkColoringBlockInteraction = true

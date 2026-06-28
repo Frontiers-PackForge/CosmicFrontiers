@@ -4,7 +4,7 @@
 	#On world creation, the player is given an Aether Portal Frame item to automatically go to the Aether with
 	"Gives player Aether Portal Frame item" = false
 	#When the player enters the Aether, they are given a Book of Lore and Golden Parachutes as starting loot
-	"Gives starting loot on entry" = true
+	"Gives starting loot on entry" = false
 	#Moves the message for when a player attacks the Slider with an incorrect item to be above the hotbar instead of in chat
 	"Reposition attack message above hotbar" = false
 	#Determines whether the Sun Spirit's dialogue when meeting him should play through every time you meet him

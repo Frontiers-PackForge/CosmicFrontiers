@@ -1,0 +1,10 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "fpaint_the_galaxy_red_r_azpm7"
+	group: "1E0EC9D191725D6D"
+	id: "648321DD3530A17B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+}

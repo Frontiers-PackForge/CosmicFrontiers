@@ -1,0 +1,44 @@
+#Whether sub-levels can split when parts are separated
+sub_level_splitting = true
+#Sub-level splitting heatmap steps that take place per tick
+# Default: 200
+# Range: > 1
+sub_level_splitting_heatmap_steps = 200
+#The distance to network sub-levels to players at
+# Default: 320.0
+# Range: 1.0 ~ 1.7976931348623157E308
+sub_level_tracking_range = 320.0
+#Keeps sub-levels with intersecting players from unloading at all
+sub_levels_with_players_cannot_unload = true
+#The minimum y coordinate sub-levels can exist at
+# Default: -10000.0
+# Range: -Infinity ~ Infinity
+sub_level_remove_min = -10000.0
+#The maximum y coordinate sub-levels can exist at
+# Default: 100000.0
+# Range: -Infinity ~ Infinity
+sub_level_remove_max = 100000.0
+#The fraction of velocity that is retained when a sub-level is loaded in. A value of 0.0 will indicate that no velocity should be carried over, while a value of 1.0 would carry over 100% of velocity on load.
+# Default: 0.9
+# Range: 0.0 ~ 1.0
+sub_level_velocity_retained_on_load = 0.9
+#The strength multiplier applied to sub-level punching impulses
+# Default: 2.1
+# Range: 0.0 ~ Infinity
+sub_level_punch_strength_multiplier = 2.1
+#The strength multiplier applied to the vertical component of downward sub-level punching impulses (to prevent jumping by punching the ground while standing on something light)
+# Default: 0.175
+# Range: 0.0 ~ Infinity
+sub_level_punch_downward_strength_multiplier = 0.175
+#The cooldown in ticks between sub-level punches
+# Default: 3
+# Range: > 0
+sub_level_punch_cooldown_ticks = 3
+#If the entire Sable UDP Networking pipeline should be disabled. This can improve compatibility with certain mods like Replay mod and certain networking setups, but will have worse performance and latency for networking sub-levels.
+disable_udp_pipeline = false
+#If Sable should attempt to authenticate with clients and send them sub-level movement data over UDP
+attempt_udp_networking = true
+#If Sable should log when saving sub-levels for a dimension.
+sub_level_saving_log_message = true
+#If Sable should use verbose logging for its serialization system and the holding chunk-map. Not recommended- for debugging purposes only.
+verbose_serialization_logging = false

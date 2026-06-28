@@ -1,0 +1,8 @@
+#Defines the max length of a string collected by a string gauge. Increase at your own risk
+# Default: 256
+# Range: > 0
+stringGaugeMaxLength = 256
+#Defines the regex used by string gauge to convert from string to number
+stringGaugeToFloatRegex = "-?\\d+(\\.\\d+)?"
+#Defines the regex used by string gauge to convert from string to redstone
+stringGaugeToRedstoneRegex = "\\s*(true|1|on|yes|active|y)\\s*"

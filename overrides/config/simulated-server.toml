@@ -1,0 +1,234 @@
+#.
+#Parameters and abilities of Simulated's kinetic mechanisms
+[kinetics]
+
+		#.
+		#.
+		#Fine tune the kinetic stats of individual components
+		[kinetics.stressValues.v2]
+
+			#.
+			#.
+			#[in Stress Units]
+			#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
+			[kinetics.stressValues.v2.impact]
+				rope_winch = 4.0
+				auger_shaft = 0.5
+				torsion_spring = 16.0
+				auger_cog = 0.5
+				swivel_bearing = 4.0
+
+			#.
+			#[in Stress Units]
+			#Configure how much stress a source can accommodate for.
+			[kinetics.stressValues.v2.capacity]
+				light_blue_portable_engine = 64.0
+				yellow_portable_engine = 64.0
+				gray_portable_engine = 64.0
+				black_portable_engine = 64.0
+				red_portable_engine = 64.0
+				lime_portable_engine = 64.0
+				light_gray_portable_engine = 64.0
+				pink_portable_engine = 64.0
+				green_portable_engine = 64.0
+				cyan_portable_engine = 64.0
+				torsion_spring = 8.0
+				brown_portable_engine = 64.0
+				magenta_portable_engine = 64.0
+				purple_portable_engine = 64.0
+				steering_wheel = 16.0
+				white_portable_engine = 64.0
+				blue_portable_engine = 64.0
+				orange_portable_engine = 64.0
+
+#.
+#Settings for sub-level assembly
+[assembly]
+	#.
+	#.
+	#Maximum amount of blocks in a structure assemble-able by Physics Assemblers, Swivel Bearings, or other means.
+	# Default: 128000
+	# Range: > 1
+	maxBlocksMoved = 128000
+	#.
+	#Maximum range in blocks which honey glue may initially be placed
+	# Default: 48
+	# Range: > 1
+	honeyGlueRange = 48
+	#.
+	#Maximum range in blocks which merging glue may be placed by items such as slime balls
+	# Default: 4.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	mergingGlueRange = 4.0
+	#.
+	#The amount of ticks that disassembly alignment is allowed to take before failing.
+	# Default: 20
+	# Range: > 5
+	maxDisassemblyTicks = 20
+	#.
+	#The maximum amount of degrees a Simulated Contraption is allowed to be tilted to fully disassemble
+	# Default: 4.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	disassemblyDegreeTolerance = 4.0
+	#.
+	#The maximum velocity a Simulated Contraption is allowed to disassemble at in m/s
+	# Default: 5.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	disassemblyMaxVelocity = 5.0
+	#.
+	#The maximum angular velocity a Simulated Contraption is allowed to disassemble at in rad/s
+	# Default: 1.5707963705062866
+	# Range: 0.0 ~ 3.4028234663852886E38
+	disassemblyMaxAngularVelocity = 1.5707963705062866
+	#.
+	#Disallow disassembly of Simulated Contraptions in mid-air, requiring them to be within a few chunk sections of terrain
+	disallowMidAirDisassembly = true
+	#.
+	#Whether only the original Physics Assembler can disassemble the Sub-Level it assembled
+	#Disabling allows *ALL* Physics Assemblers to disassemble any Sub-Level
+	"Primary Disassembly" = false
+
+#.
+#Parameters related to the physics of Simulated Contraptions
+[physics]
+	#.
+	#.
+	#The maximum force two magnets will apply towards each other
+	# Default: 1000.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	redstoneMagnetStrength = 1000.0
+	#.
+	#The maximum force two docking connectors will apply towards each other
+	# Default: 1000.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	dockingConnectorStrength = 1000.0
+	#.
+	#Limit for linear acceleration for a magnet pair
+	# Default: 500.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	redstoneMagnetLinearAccelerationClamping = 500.0
+	#.
+	#Limit for angular acceleration for a magnet pair
+	# Default: 50.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	redstoneMagnetAngularAccelerationClamping = 50.0
+	#.
+	#Limit for linear acceleration for a docking connector pair
+	# Default: 500.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	dockingConnectorLinearAccelerationClamping = 500.0
+	#.
+	#Limit for angular acceleration for a docking connector pair
+	# Default: 50.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	dockingConnectorAngularAccelerationClamping = 50.0
+	#.
+	#The stiffness of locked swivel bearing joints
+	# Default: 1600.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	swivel_stiffness = 1600.0
+	#.
+	#The friction / damping of unlocked swivel bearing joints
+	# Default: 0.30000001192092896
+	# Range: 0.0 ~ 3.4028234663852886E38
+	swivel_friction = 0.30000001192092896
+	#.
+	#The damping of locked swivel bearing joints
+	# Default: 40.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	swivel_damping = 40.0
+	#.
+	#The angle tolerance in degrees for docking connectors to link
+	# Default: 20.0
+	# Range: 0.0 ~ 365.0
+	docking_connector_angle = 20.0
+	#.
+	#The distance tolerance in blocks for docking connectors to link
+	# Default: 0.5
+	# Range: 0.0 ~ 4.0
+	docking_connector_distance = 0.5
+	#.
+	#The maximum force handles are allowed to apply to the contraption they are attached to
+	# Default: 120.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	handleMaxForce = 120.0
+	#.
+	#The linear stiffness of the joint motors used to hold sub-levels by the Creative Physics Staff
+	# Default: 2650.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	physics_staff_linear_stiffness = 2650.0
+	#.
+	#The linear damping of the joint motors used to hold sub-levels by the Creative Physics Staff
+	# Default: 125.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	physics_staff_linear_damping = 125.0
+	#.
+	#The angular stiffness of the joint motors used to hold sub-levels by the Creative Physics Staff
+	# Default: 10000.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	physics_staff_angular_stiffness = 10000.0
+	#.
+	#The angular damping of the joint motors used to hold sub-levels by the Creative Physics Staff
+	# Default: 850.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	physics_staff_angular_damping = 850.0
+
+#.
+#Parameters and abilities of Simulated Blocks
+[blocks]
+	#.
+	#.
+	#Maximum range for the Optical Sensor
+	# Default: 15
+	# Range: > 0
+	optical_sensor_max_range = 15
+	#.
+	#Maximum range for the Laser Pointer
+	# Default: 100
+	# Range: > 0
+	laser_pointer_max_range = 100
+	#.
+	#Maximum range for rope connections
+	# Default: 40.0
+	# Range: 0.0 ~ 1000.0
+	max_rope_range = 40.0
+	#.
+	#Maximum percent the rope mounted on a Rope Winch is allowed to stretch before not accepting input
+	# Default: 25.0
+	# Range: 0.0 ~ 100.0
+	max_rope_winch_stretch_allowed = 25.0
+	#.
+	#Steepest angle at which a rope can be grabbed onto using a wrench in degrees
+	# Default: 85.0
+	# Range: 0.0 ~ 90.0
+	max_rope_zipline_angle = 85.0
+	#.
+	#The maximum RPM a Swivel Bearing is allowed to rotate at
+	# Default: 96.0
+	# Range: 0.0 ~ 256.0
+	max_swivel_bearing_speed = 96.0
+	#.
+	#The maximum FE capacity of Docking Connectors
+	# Default: 10000
+	# Range: > 0
+	docking_connector_fe_capacity = 10000
+	#.
+	#The maximum FE/t throughput of Docking Connectors
+	# Default: 10000
+	# Range: > 0
+	docking_connector_fe_throughput = 10000
+
+#.
+#Equipment and gadgets added by Simulated
+[equipment]
+	#.
+	#.
+	#Amount of free Plunger Launcher shots provided by one filled Backtank. Set to 0 makes Plunger Launchers unbreakable
+	# Default: 100
+	# Range: > 0
+	maxPlungerLauncherShots = 100
+	#.
+	#The max range that launched plungers can be from each other
+	# Default: 64
+	# Range: > 0
+	maxPlungerLauncherRange = 64

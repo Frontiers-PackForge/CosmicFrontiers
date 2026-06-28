@@ -1,0 +1,65 @@
+{
+  "structurePlacementLogging": {
+    "desc:": "Enables debug logging of structure placement. Warning: This will spam the logs and is only recommended for debugging purposes. Default: false",
+    "structurePlacementLogging": false
+  },
+  "structureSearchTimeout": {
+    "desc:": "The maximum time (in seconds) a structure search is allowed to take. Default: 50",
+    "structureSearchTimeout": 50
+  },
+  "useFastStructureLookup": {
+    "desc:": "Enables faster structure search. Default: true",
+    "useFastStructureLookup": true
+  },
+  "mapSearchRadius": {
+    "desc:": "Specifies the maximum radius map items can search for structures. Lowering this value reduces the time structure searches stall the server but decreases the range in which structures are found. Vanilla: 50, Default: 40",
+    "mapSearchRadius": 40
+  },
+  "locateSearchRadius": {
+    "desc:": "Sets the search radius for the locate structure command. Vanilla: 100, Default: 110",
+    "locateSearchRadius": 110
+  },
+  "globalSearchRadius": {
+    "desc:": "Sets the global maximum structure search radius. The vanilla locate command uses 100. Lowering this value reduces the time structure searches stall the server but decreases the range in which structures are found. Default: 70",
+    "globalSearchRadius": 70
+  },
+  "spacingSeparationModifier": {
+    "desc:": "Adjusts the structure spacing (average spawn distance) and separation (minimum spawn distance). Increasing the value makes structures spawn farther apart, while decreasing it makes them spawn closer together. Vanilla Default: 1.0",
+    "spacingSeparationModifier": 1.0
+  },
+  "logDuplicatedSalt": {
+    "desc:": "Structure sets use a salt value to determine the randomness of their placement. Duplicated use of the same salt value can cause structures to spawn on the same place, this config enables logging duplicated salt values. Default: true",
+    "logDuplicatedSalt": true
+  },
+  "minimumStructureDistance": {
+    "desc:": "Set a minimum distance in blocks between structures generated which prevents structure overlaps(not 100% but close). Not recommended to use higher values, as that may strain the worldgen due to repeated structure retries and can prevent surfaces structures when there is some in a cave below. If you want structures more spaced out than this use the spacing/seperation modifier. Default: 32 blocks, range 16-512",
+    "minimumStructureDistance": 32,
+    "enabled": false,
+    "logOverlaps": false
+  },
+  "autoBiomeCompat": {
+    "desc:": "Automatically analyzes present biomes and adjust structure spawning to include fitting ones, Note that this may also spawn structures in undesired biomes, check the logging and adjust the strictness up/down to achieve a good result. Default: false",
+    "enableBiomeCompat": false,
+    "enableLogging": true,
+    "strictness": {
+      "desc:": "Sets a modifier for how strict the autoBiomeCompat is, lower allows adding less similar biomes to be added. E.g. 0.5 decreases the similarity requirements by 50% . Default: 1.2",
+      "autoBiomeCompatStrictness": 1.2
+    },
+    "dimensionWhitelist": {
+      "desc:": "List of allowed dimensions for automatic structure compat, by default only vanilla dimensions",
+      "dimensions": [
+        "minecraft:overworld",
+        "minecraft:the_nether",
+        "minecraft:the_end"
+      ]
+    }
+  },
+  "warnMissingRegistryEntry": {
+    "desc:": "Prevents crashes due to missing registry entries (e.g., changes in mod structure IDs) by converting them into log error messages instead. Default: true",
+    "warnMissingRegistryEntry": true
+  },
+  "disableLegacyRandomCrashes": {
+    "desc:": "Prevents crashes caused by multithreaded access to thread-specific random number generators. Default: true",
+    "disableLegacyRandomCrashes": true
+  }
+}

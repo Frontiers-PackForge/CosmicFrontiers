@@ -1,0 +1,108 @@
+#.
+#Parameters related to the physics of Aeronautics blocks
+[physics]
+	#.
+	#.
+	#The recoil magnitude used whenever the Mounted Potato Cannon shoots
+	# Default: 0.20000000298023224
+	# Range: 0.0 ~ 3.4028234663852886E38
+	recoil_magnitude = 0.20000000298023224
+	#.
+	#Thrust scaling for Propeller Bearings
+	# Default: 0.20000000298023224
+	# Range: 0.0 ~ 3.4028234663852886E38
+	propellerBearingThrust = 0.20000000298023224
+	#.
+	#Airflow scaling for Propeller Bearings
+	# Default: 0.05000000074505806
+	# Range: 0.0 ~ 3.4028234663852886E38
+	propellerBearingAirflow = 0.05000000074505806
+	#.
+	#Thrust scaling for Wooden Propellers
+	# Default: 1.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	woodenPropellerThrust = 1.0
+	#.
+	#Airflow scaling for Wooden Propellers
+	# Default: 0.10000000149011612
+	# Range: 0.0 ~ 3.4028234663852886E38
+	woodenPropellerAirflow = 0.10000000149011612
+	#.
+	#Thrust scaling for Andesite Propellers
+	# Default: 1.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	andesitePropellerThrust = 1.0
+	#.
+	#Airflow scaling for Andesite Propellers
+	# Default: 0.10000000149011612
+	# Range: 0.0 ~ 3.4028234663852886E38
+	andesitePropellerAirflow = 0.10000000149011612
+	#.
+	#Thrust scaling for Smart Propellers
+	# Default: 1.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	smartPropellerThrust = 1.0
+	#.
+	#Airflow scaling for Smart Propellers
+	# Default: 0.10000000149011612
+	# Range: 0.0 ~ 3.4028234663852886E38
+	smartPropellerAirflow = 0.10000000149011612
+	#.
+	#kpg lifted per cubic meter of Hot Air
+	# Default: 1.5
+	# Range: 0.0 ~ 3.4028234663852886E38
+	hotAirStrength = 1.5
+	#.
+	#kpg lifted per cubic meter of Steam
+	# Default: 1.5
+	# Range: 0.0 ~ 3.4028234663852886E38
+	steamStrength = 1.5
+
+#.
+#Parameters and abilities of Aeronautics Blocks
+[blocks]
+	#.
+	#.
+	#If Levitite Blend should break adjacent blocks with the appropriate tag
+	break_blocks_on_levitite_crystallize = true
+	#.
+	#The maximum hot air a Hot Air Burner can output
+	# Default: 500
+	# Range: > -2147483648
+	hot_air_burner_max = 500
+	#.
+	#The maximum distance a Hot Air Burner is allowed to search to find a balloon
+	# Default: 80
+	# Range: > -2147483648
+	hot_air_burner_max_range = 80
+	#.
+	#The maximum steam a Steam Vent can output
+	# Default: 5000
+	# Range: > 0
+	steam_vent_hot_air_amount = 5000
+	#.
+	#The maximum distance a Steam Vent is allowed to search to find a balloon
+	# Default: 80
+	# Range: > -2147483648
+	steam_vent_max_range = 80
+
+#.
+#Parameters and abilities of Aeronautics's kinetic mechanisms
+[kinetics]
+
+		#.
+		#.
+		#Fine tune the kinetic stats of individual components
+		[kinetics.stressValues.v2]
+
+			#.
+			#.
+			#[in Stress Units]
+			#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
+			[kinetics.stressValues.v2.impact]
+				smart_propeller = 4.0
+				gyroscopic_propeller_bearing = 2.0
+				mounted_potato_cannon = 2.0
+				propeller_bearing = 2.0
+				andesite_propeller = 4.0
+				wooden_propeller = 4.0

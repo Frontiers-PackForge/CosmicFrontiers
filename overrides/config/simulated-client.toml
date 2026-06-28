@@ -1,0 +1,36 @@
+#.
+#Settings of Simulated Items
+[items]
+	#.
+	#.
+	#When to display physics properties in block tooltips
+	#Allowed Values: ALWAYS, SHIFT, GOGGLES, SHIFT_GOGGLES, NEVER
+	displayProperties = "GOGGLES"
+	#.
+	#The sensitivity of scrolling when holding a sub-level with the Creative Physics Staff
+	# Default: 0.6000000238418579
+	# Range: 0.0 ~ 3.4028234663852886E38
+	physics_staff_scroll_sensitivity = 0.6000000238418579
+	#.
+	#The sensitivity of rotation when holding a sub-level with the Creative Physics Staff
+	# Default: 0.3499999940395355
+	# Range: 0.0 ~ 3.4028234663852886E38
+	physics_staff_rotate_sensitivity = 0.3499999940395355
+	#.
+	#If ponders that have new additions should display the "(New!)" text
+	show_new_ponders = true
+
+#.
+#Settings of Simulated Blocks
+[block]
+	#.
+	#.
+	#Offsets the Steering Wheel GUI on the X axis.
+	# Default: 0
+	# Range: -1000 ~ 1000
+	steering_wheel_x_offset = 0
+	#.
+	#Offsets the Steering Wheel GUI on the Y axis.
+	# Default: 0
+	# Range: -1000 ~ 1000
+	steering_wheel_y_offset = 0

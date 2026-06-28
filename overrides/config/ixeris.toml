@@ -1,0 +1,39 @@
+#Specifies whether to enable the mod on Windows
+enabledOnWindows = true
+#Specifies whether to enable the mod on macOS
+enabledOnMacOS = false
+#Specifies whether to enable the mod on Linux
+enabledOnLinux = true
+#Specifies whether to enable the mod on other platforms
+enabledOnOtherPlatforms = true
+#Enable to use some experimental GLFW state cache, which may improve performance with some mods
+aggressiveCaching = false
+#Enable to use a more flexible threading model, which improves performance while obeying threading requirements of the underlying operating system.
+flexibleThreading = true
+#Enable to disallow delaying of any GLFW call. Might reduce performance considerably.
+fullyBlockingMode = false
+#Specifies the priority of the event polling thread. Valid values are 0~10, where 0 = auto decide.
+eventPollingThreadPriority = 0
+#Enables logging of GLFW event polling calls and stacktrace. Debug Only.
+logPollingCalls = false
+#Enables logging of blocking calls and stacktrace. Debug Only.
+logBlockingCalls = false
+#Enables logging of cache issues. Debug Only.
+logCacheIssues = false
+
+[bufferedRawInput]
+	#Enable to use buffered raw input for the mouse when supported, which can greatly improve event polling performance and reduce CPU usage.
+	mouse = true
+	#Enable to use buffered raw input for the keyboard when supported, which can offer a small performance boost to event polling performance.
+	keyboard = false
+	#Specifies the initial raw input buffer size.
+	minRawInputBufferSize = 32
+	#Specifies the maximum raw input buffer size.
+	maxRawInputBufferSize = 1024
+	#Specifies the optimization strategy for legacy messages. Valid values:
+	#DEFAULT: uses the default strategy. Currently, this translates to NOLEGACY.
+	#UNOPTIMIZED: uses a basic event loop.
+	#THROTTLED: similar to UNOPTIMIZED, but with a limit on the number of messages read during each event polling to improve performance.
+	#NOLEGACY: disables legacy messages completely. Best performance.
+	#If you experience compatibility issues with external programs, try setting this to THROTTLED.
+	messageOptimizationStrategy = "DEFAULT"

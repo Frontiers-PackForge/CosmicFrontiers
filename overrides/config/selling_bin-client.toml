@@ -1,0 +1,2 @@
+#Always shows the selling bin price of the item hovered instead of only when holding shift
+always_show_selling_bin_price = false

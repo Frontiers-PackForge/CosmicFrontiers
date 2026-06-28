@@ -1,0 +1,71 @@
+#Award guide when joining the world/server once per player
+give_guide = true
+show_exclamation_mark_particle = false
+#Enables/disables the ability to bonemeal farmland for worms.
+enable_worms = true
+enable_minigame = true
+#Enables/disables fishes caught being unlocked for all online team members.
+#Offline players won't be awarded the entry.
+enable_ftb_team_sharing = true
+#Enables/disables fishes being restricted by seasons.
+#Useful if you want to play with a seasons mod but don't like the built-in restrictions.
+enable_seasons = true
+#Adjusts the vanishing rate, useful if you want to adjust the fishes' difficulty globally.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+vanishing_rate_multiplier = 1.0
+#Adjusts the moving sweet-spots speed, useful if you want to adjust the fishes' difficulty globally.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+moving_speed_multiplier = 1.0
+#Adjusts the penalty for missing rate, useful if you want to adjust the fishes' difficulty globally.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+penalty_multiplier = 1.0
+#Adjusts the fish decay rate, useful if you want to adjust the fishes' difficulty globally.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+decay_multiplier = 1.0
+#Adjusts the fish's HP, useful if you want to adjust the fishes' difficulty globally.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+hp_multiplier = 1.0
+#Adjusts the pointer speed rate, useful if you want to adjust the fishes' difficulty globally.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+pointer_speed_multiplier = 1.0
+#Hides entries in the guide book until one has been caught.
+hide_entries_until_found = true
+#Controls the chance of fishing up messages-in-a-bottle left by other players of the server. Does not affect built-in Secrets
+# Default: 0.05
+# Range: 0.0 ~ 1.0
+fish_player_messages_chance = 0.05
+#If enabled the size, weight, percentile, rarity & golden values will be saved to the item for displaying
+save_data_to_items = true
+#How many ticks should the bobber bobble for before being allowed to catch a fish (excluding modifiers)
+# Default: 100
+# Range: 0 ~ 999999
+base_min_ticks = 100
+#How many ticks at the maximum should the bobber bob for (excluding modifiers)
+# Default: 300
+# Range: 0 ~ 999999
+base_max_ticks = 300
+#The base chance to fish every tick (out of 1)
+# Default: 0.005
+# Range: 0.0 ~ 1.0
+base_chance = 0.005
+#Restricts items placeable inside the tackle box to #starcatcher:placeable_in_tacle_box
+restrict_tackle_box_to_tag = true
+enable_rod_menu = false
+#Controls the maximum scale of the fish model based on the size and weight percentile
+# Default: 1.5
+# Range: 0.0 ~ 100.0
+fish_percentile_size_max_scale = 1.5
+#Controls the minimum scale of the fish model based on the size and weight percentile
+# Default: 0.5
+# Range: 0.0 ~ 100.0
+fish_percentile_size_min_scale = 0.5
+#Sets the maximum number of fishes the tackle box can store in it's 'infinite slot'
+# Default: 900
+# Range: 0 ~ 999
+max_tackle_box_fish_storage = 900

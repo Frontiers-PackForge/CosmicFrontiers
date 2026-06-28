@@ -27,6 +27,10 @@ evolution_upgrade_points = 300
 	# Default: 100.0
 	# Range: 1.0 ~ 10000.0
 	max_invictus = 100.0
+	#Spiritus a Spiritus Gem spends to capture a spawner or trial spawner via sneak + right-click
+	# Default: 200.0
+	# Range: 0.0 ~ 100000.0
+	spawner_capture_cost = 200.0
 
 #Spiritus Crystal Growth Configuration
 #These values control how spiritus crystals form and grow.

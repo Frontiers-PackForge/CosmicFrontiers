@@ -1,0 +1,79 @@
+[rendering]
+	#Render Sable sub-level block surfaces on Xaero World Map.
+	renderWorldMap = true
+	#Render Sable sub-level block surfaces on Xaero Minimap.
+	renderMinimap = true
+	#Draw sub-level labels on the world map when the rendered surface is large enough.
+	drawWorldMapLabels = true
+	#Draw sub-level labels on the minimap. Disabled by default to keep the minimap readable.
+	drawMinimapLabels = false
+	#Alpha used for rendered sub-level block surfaces.
+	# Default: 232
+	# Range: 32 ~ 255
+	surfaceAlpha = 232
+	#Scale for rendered sub-level names on Xaero World Map.
+	# Default: 1.0
+	# Range: 0.25 ~ 4.0
+	worldMapLabelScale = 1.0
+	#Scale for rendered sub-level names on Xaero Minimap.
+	# Default: 1.0
+	# Range: 0.25 ~ 4.0
+	minimapLabelScale = 1.0
+	#Minimum projected screen area before sub-level labels are drawn.
+	# Default: 140.0
+	# Range: 0.0 ~ 10000.0
+	labelMinArea = 140.0
+	#Maximum sub-level label length before it is shortened with ellipsis.
+	# Default: 22
+	# Range: 4 ~ 128
+	maxLabelLength = 22
+
+[geometry]
+	#Use voxel-shape based geometry for non-full special blocks and better wheel/tire footprints.
+	detailedSpecialGeometry = true
+	#Scale applied to mounted Offroad/Aeronautics tire footprints.
+	# Default: 1.0
+	# Range: 0.5 ~ 2.0
+	tireFootprintScale = 1.0
+
+[performance]
+	#Cache surfaces aggressively and rescan less often. Disable for more reactive block-update rendering.
+	performanceCache = true
+	#Minimum ticks between prepared overlay snapshots. Performance cache enforces at least 5 ticks to avoid minimap spikes.
+	# Default: 5
+	# Range: 1 ~ 40
+	overlayUpdateIntervalTicks = 5
+	#Surface cache lifetime when performanceCache is disabled.
+	# Default: 10
+	# Range: 1 ~ 200
+	reactiveCacheTtlTicks = 10
+	#Safety rescan interval when performanceCache is enabled.
+	# Default: 80
+	# Range: 10 ~ 1200
+	performanceRescanTicks = 80
+	#Maximum surface patches drawn per sub-level on the minimap while performanceCache is enabled.
+	# Default: 512
+	# Range: 128 ~ 20000
+	minimapPatchBudget = 512
+	#Use sampled surface geometry for very large sub-levels instead of exact full-volume scans.
+	largeSubLevelFastMode = true
+	#Maximum AABB volume scanned exactly before largeSubLevelFastMode switches to sampled geometry.
+	# Default: 524288
+	# Range: 4096 ~ 100000000
+	detailedScanVolumeLimit = 524288
+	#Target sampled X/Z columns for very large sub-levels. Higher values preserve more detail at higher cost.
+	# Default: 1024
+	# Range: 128 ~ 65536
+	largeSubLevelColumnBudget = 1024
+
+[compat]
+	#Resolve Copycats+ material colors. Empty copycat blocks use emptyCopycatColor.
+	copycatCompat = true
+	#Use custom fallback colors for Create: Aeronautics/Trackwork/Offroad blocks.
+	aeronauticsCompat = true
+	#Render tires assembled in Offroad/Aeronautics wheel mounts as map geometry.
+	offroadWheelMountTires = true
+	#RGB color for empty Copycats+ blocks. Default 0x808080 is exact medium gray.
+	# Default: 8421504
+	# Range: 0 ~ 16777215
+	emptyCopycatColor = 8421504

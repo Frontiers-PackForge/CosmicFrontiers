@@ -1,0 +1,135 @@
+self_sacrifice_conversion = 100
+default_upgrade_points = 100
+evolution_upgrade_points = 300
+
+#Spiritus System Configuration
+#These values define the base maximum spiritus that can be stored per chunk.
+#Different aspects can have different maximum capacities.
+#Rituals and other effects can add bonuses on top of these base values.
+[spiritus]
+	#Base maximum Raw Spiritus per chunk
+	# Default: 100.0
+	# Range: 1.0 ~ 10000.0
+	max_raw = 100.0
+	#Base maximum Spiritus Ruina per chunk
+	# Default: 100.0
+	# Range: 1.0 ~ 10000.0
+	max_ruina = 100.0
+	#Base maximum Spiritus Nihilum per chunk
+	# Default: 100.0
+	# Range: 1.0 ~ 10000.0
+	max_nihilum = 100.0
+	#Base maximum Spiritus Vindicta per chunk
+	# Default: 100.0
+	# Range: 1.0 ~ 10000.0
+	max_vindicta = 100.0
+	#Base maximum Spiritus Invictus per chunk
+	# Default: 100.0
+	# Range: 1.0 ~ 10000.0
+	max_invictus = 100.0
+
+#Spiritus Crystal Growth Configuration
+#These values control how spiritus crystals form and grow.
+#Crystals are created by Crystallarium Maleficums and grow based on chunk spiritus.
+[spiritus_crystal]
+	#Amount of spiritus required to form a new crystal
+	# Default: 99.0
+	# Range: 1.0 ~ 1000.0
+	spiritus_to_form = 99.0
+	#Total time (in ticks) for crystal formation in the Crystallizer
+	# Default: 1000.0
+	# Range: 100.0 ~ 10000.0
+	formation_time = 1000.0
+	#Spiritus consumption rate when crystal type matches chunk dominant aspect
+	# Default: 45.0
+	# Range: 1.0 ~ 500.0
+	same_spiritus_rate = 45.0
+	#Spiritus consumption rate when crystal type differs from chunk dominant aspect
+	# Default: 90.0
+	# Range: 1.0 ~ 500.0
+	different_spiritus_rate = 90.0
+	#Growth speed multiplier when consuming non-matching aspect (0.0-1.0, lower = slower)
+	# Default: 0.6
+	# Range: 0.0 ~ 1.0
+	wrong_spiritus_delay = 0.6
+	#Base growth speed multiplier (higher = faster crystal growth)
+	# Default: 1.0
+	# Range: 0.1 ~ 10.0
+	growth_speed = 1.0
+	#Minimum spiritus in chunk before crystals start growing (200 = vanilla)
+	# Default: 200.0
+	# Range: 1.0 ~ 1000.0
+	growth_threshold = 200.0
+	#Maximum number of crystal segments per cluster
+	# Default: 7
+	# Range: 1 ~ 20
+	max_count = 7
+
+#Blood Mending Configuration
+#Controls costs for repairing items through Blood Mending.
+[blood_mending]
+	#EV cost per point of durability restored
+	# Default: 100
+	# Range: 1 ~ 100000
+	repair_cost_per_durability = 100
+
+#Demon Lantern Configuration
+[demon_lantern]
+	#EV drained from the bound player's network each second while the Demon Lantern is running
+	# Default: 20
+	# Range: 0 ~ 1000000
+	upkeep_per_second = 20
+
+#Blood Attribute Configuration
+#Configure EV multipliers for Blood Siphon and Blood Shield attributes.
+[blood_attributes]
+	#EV multiplier when Blood Siphon drains from a player target
+	# Default: 100
+	# Range: 1 ~ 10000
+	siphon_player_multiplier = 100
+	#EV multiplier when Blood Siphon drains from a non-player target
+	# Default: 10
+	# Range: 1 ~ 10000
+	siphon_mob_multiplier = 10
+	#EV cost per point of damage prevented by Blood Shield
+	# Default: 100
+	# Range: 1 ~ 10000
+	shield_lp_cost_multiplier = 100
+	#EV drained per second while the Sanguine Ward is active
+	# Default: 50
+	# Range: 0 ~ 10000
+	sanguine_ward_drain_per_second = 50
+	#Minimum EV required to activate the Sanguine Ward
+	# Default: 200
+	# Range: 0 ~ 100000
+	sanguine_ward_min_ev = 200
+
+#Torment Nexus Configuration
+#Controls the EV upkeep and EV-yield modifier for the Torment Nexus ritual,
+#which simulates kills from caged spawners and trial spawners in its area.
+[torment_nexus]
+	#EV cost charged per simulated mob kill (paid out of the network each kill).
+	# Default: 75
+	# Range: 0 ~ 1000000
+	ev_per_kill = 75
+	#Maximum total EV cost charged from the network to run the ritual in a single operation.
+	#Kills are never capped: once this cost ceiling is reached the remaining kills run free,
+	#still producing loot, experience, and EV yield. 0 disables the cap.
+	# Default: 8000
+	# Range: 0 ~ 100000000
+	max_ev_per_operation = 8000
+	#Percent modifier on the EV produced per simulated kill.
+	#1 = 1% of the mob's natural sacrifice value, 100 = unchanged, 1000 = 10x.
+	# Default: 100
+	# Range: 1 ~ 1000
+	ev_modifier_percent = 100
+	#Default horizontal radius (in blocks) of the spawner-scan area centered on the Master Ritual Stone.
+	#5 produces an 11x11 area on the XZ plane.
+	# Default: 5
+	# Range: 1 ~ 64
+	horizontal_range = 5
+	#Default vertical radius (in blocks) of the spawner-scan area centered on the Master Ritual Stone.
+	#5 produces an 11-block-tall area.
+	# Default: 5
+	# Range: 1 ~ 64
+	vertical_range = 5

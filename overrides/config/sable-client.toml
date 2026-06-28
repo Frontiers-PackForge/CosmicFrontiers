@@ -1,0 +1,21 @@
+#Whether sub-levels should apply block shading dynamically
+sub_level_dynamic_shading = true
+#Whether sub-levels can occlude the water surface
+sub_level_water_occlusion = true
+#Whether sub-levels should cast a shadow on the world
+sub_level_skylight_shadows = false
+#Whether to draw loaded chunks on the client in the chunk debug renderer
+debug_draw_loaded_chunks = false
+#The distance back in game-ticks that the snapshot interpolation should operate
+# Default: 1.5
+# Range: 0.0 ~ 100.0
+sub_level_snapshot_interpolation_delay_ticks = 1.5
+#The renderer to use for sub-levels
+#Allowed Values: SODIUM_REACHAROUND
+sub_level_renderer = "SODIUM_REACHAROUND"
+#The zoom sensitivity for sub-level camera types
+# Default: 0.2
+# Range: 0.0 ~ 100.0
+sub_level_zoom_sensitivity = 0.2
+#If Sable should attempt to establish a UDP connection with the server, to receive sub-level movement data over a UDP channel
+attempt_udp_networking = true

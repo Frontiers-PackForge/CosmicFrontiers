@@ -1,0 +1,10 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lights_camera_action__elv"
+	group: "3E75F0EECED54564"
+	id: "2041768F4C2CACBD"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+}

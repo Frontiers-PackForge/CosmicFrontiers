@@ -10,8 +10,8 @@
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
     "energy_storage.style": "PROGRESS_BAR",
-    "item_storage.normal_amount": 9,
     "item_storage": true,
+    "item_storage.normal_amount": 9,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
@@ -69,6 +69,31 @@
   "ftbquests": {
     "barrier": true
   },
+  "gtceu": {
+    "primitive_pump": true,
+    "auto_output_info": true,
+    "workable_provider": true,
+    "transformer": true,
+    "energy_converter_provider": true,
+    "ldp_endpoint": true,
+    "controllable_provider": true,
+    "me_pattern_buffer": true,
+    "exhaust_vent_info": true,
+    "me_pattern_buffer_proxy": true,
+    "multiblock_structure": true,
+    "recipe_logic_provider": true,
+    "maintenance_info": true,
+    "machine_mode": true,
+    "battery_info": true,
+    "electric_container_provider": true,
+    "steam_boiler_info": true,
+    "recipe_output_info": true,
+    "stained_color": true,
+    "hazard_cleaner_provider": true,
+    "cable_info": true,
+    "parallel_info": true,
+    "data_bank": true
+  },
   "jade": {
     "coordinates.rel": false,
     "registry_name.special": false,
@@ -83,6 +108,9 @@
   "quality_food": {
     "quality": true
   },
+  "embers": {
+    "machine_details": true
+  },
   "extendedae": {
     "jade_chamber": true,
     "jade_wireless": true
@@ -91,11 +119,11 @@
     "foliot": true,
     "sacrificial": true
   },
-  "balm": {
-    "jade": true
-  },
   "apothic_enchanting": {
     "ench": true
+  },
+  "balm": {
+    "jade": true
   },
   "ae2": {
     "part_icon": true,
@@ -108,6 +136,9 @@
     "power_storage": true,
     "crafting_monitor": true,
     "part_name": true
+  },
+  "cosmiccore": {
+    "ember_details": true
   },
   "ars_nouveau": {
     "mob_jar": true

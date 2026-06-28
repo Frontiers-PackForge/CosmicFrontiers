@@ -1,0 +1,9 @@
+#Makes so vanilla crafters respect order context from packaging requests
+vanillaCrafterUnpacking = true
+#Makes so boxes always unpack in the correct order, even without passing through a re-packager
+boxOrderFix = true
+#Defines the max amount of energy a battery can contain
+#REQUIRES RESTART!
+# Default: 500000
+# Range: > 1
+maxBatteryEnergy = 500000

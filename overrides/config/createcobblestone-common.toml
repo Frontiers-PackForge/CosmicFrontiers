@@ -21,6 +21,11 @@
 	#Log information that may be usefull for reporting a problem and debugging it.
 	#THIS WILL SPAM YOUR LOGS
 	enableDebugLogging = false
+	#.
+	#(Does not scale with mining tool)
+	# Default: 0.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	breakTime = 0.0
 
 	#.
 	#Cobblestone generator types

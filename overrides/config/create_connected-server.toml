@@ -32,7 +32,7 @@ batteryDischargeRPM = 64
 # Range: 0.0 ~ 8192.0
 batteryCapacity = 512.0
 #.
-#Minimum su consumption per tick of a discharging Kinetic Battery
+#Minimum su consumption per tick of a discharging Kinetic Battery when powering belts
 # Default: 1.0
 # Range: 0.0 ~ 8192.0
 batteryMinDischarge = 1.0

@@ -1,0 +1,23 @@
+# Default: 0.0
+# Range: -20.0 ~ 20.0
+hit_delay = 0.0
+#If enabled the new fish notifications will be removed when hovering on the index, instead of only when visiting the specific fish entry
+remove_notif_on_hover = true
+#Allowed Values: METRIC, IMPERIAL, CHEESEBURGER, FOOTBALL, DEVELOPER_HEIGHT, BANANA, DUCK, SPACE_WHALE, SCIENTIFIC
+units = "METRIC"
+#Allowed Values: ALPHABETICAL_UP, ALPHABETICAL_DOWN, MOD_UP, MOD_DOWN, RARITY_UP, RARITY_DOWN, CAUGHT_UP, CAUGHT_DOWN
+sort = "ALPHABETICAL_DOWN"
+enable_villager_sound = true
+enable_hit_sound = true
+enable_miss_sound = true
+
+[minigame_window]
+	# Default: 1.5
+	# Range: 0.1 ~ 6.0
+	minigame_scale = 1.5
+	# Default: 0
+	# Range: -10000 ~ 10000
+	minigame_x_offset = 0
+	# Default: 0
+	# Range: -10000 ~ 10000
+	minigame_y_offset = 0

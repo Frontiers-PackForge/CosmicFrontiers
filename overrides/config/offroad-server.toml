@@ -1,0 +1,39 @@
+#.
+#Parameters and abilities of Offroad Blocks
+[blocks]
+	#.
+	#.
+	#The block gathering search radius of the borehead bearing
+	# Default: 1.5
+	# Range: 0.0 ~ 10.0
+	borehead_bearing_search_radius = 1.5
+	#.
+	#The amount of ticks it takes for the borehead bearing to recover from an item stall
+	# Default: 10
+	# Range: > 0
+	borehead_bearing_stall_recovery_ticks = 10
+	#.
+	#Whether the borehead bearing should stall when it doesn't have enough room to accept a mined block
+	borehead_bearing_stalling_enabled = true
+	#.
+	#The divisor used to determine the max speed of the attached borehead contraption contraption
+	# Default: 4.0
+	# Range: 1.0 ~ 3.4028234663852886E38
+	borehead_bearing_rotation_divisor = 4.0
+
+#.
+#Parameters and abilities of Offroad's kinetic mechanisms
+[kinetics]
+
+		#.
+		#.
+		#Fine tune the kinetic stats of individual components
+		[kinetics.stressValues.v2]
+
+			#.
+			#.
+			#[in Stress Units]
+			#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
+			[kinetics.stressValues.v2.impact]
+				wheel_mount = 16.0
+				borehead_bearing = 8.0

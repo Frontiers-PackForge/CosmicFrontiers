@@ -67,6 +67,10 @@
 		#The time in ticks it takes to cook 1 item at the lowest heat.
 		max_cook_time = 300
 
+	[parameters.create]
+		#Enables experimental Create-powered Embers machine upgrades and their recipes. Requires Create to be installed.
+		enable_experimental_create_mechanics = true
+
 		[parameters.create.blaze_burner]
 			#The amount of ember a Create blaze burner consumes each tick while sustained by ember.
 			ember_cost = 1.0
@@ -129,6 +133,20 @@
 		#Syntax is 'damagetype:rate'. Specifies a separate damage rate for depleting the scales.
 		damageRates = []
 
+	[parameters.alchemy]
+		#If true, alchemy recipes choose hidden aspectus requirements from the recipe's aspectus pool using the world seed. If false, recipes use their listed aspectus order and JEI shows the exact pedestal positions.
+		randomize_aspectus = true
+		#If true, failed alchemy consumes pedestal input items. If false, failed alchemy only consumes the Exchange Tablet item and turns it into the failure result.
+		consume_items_on_failure = true
+
+	[parameters.crystal_seed]
+		#If true, crystal seeds use square-root level scaling for extra nugget drop roll segments instead of the original stepped scaling.
+		use_experimental_scaling = true
+		#Multiplier used by experimental crystal seed scaling. Extra roll segments are floor(sqrt(level * scalar)).
+		# Default: 2.0
+		# Range: 0.0 ~ 1024.0
+		level_bonus_scalar = 2.0
+
 #Miscellaneous settings
 [misc]
 	#Codex entries need to be completed before the next one unlocks.
@@ -139,3 +157,15 @@
 	tagPreferences = ["minecraft", "embers"]
 	#Which items are preferred as the result of breaking down a tool on an anvil.
 	itemPreferences = ["minecraft:oak_planks", "minecraft:cobblestone"]
+
+	[misc.redstone]
+		#If true, redstone-controlled Embers blocks run without a signal and turn off while powered. If false, they require a redstone signal like classic Embers.
+		inverted_controls = false
+
+#World generation settings
+[worldgen]
+	#Controls Embers lead and silver ore generation.
+	#NEVER disables both ores. ALWAYS generates both ores.
+	#AUTO disables each Embers ore when another mod adds a matching ore feature to an Overworld biome.
+	#Allowed Values: NEVER, ALWAYS, AUTO
+	generate_ores = "AUTO"
