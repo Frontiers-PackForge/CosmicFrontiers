@@ -177,12 +177,12 @@
 	/**
 	 * How many columns and rows of ingredients to limit the left sidebar to
 	 */
-	left-sidebar-size: 10, 100;
+	left-sidebar-size: 12, 100;
 
 	/**
 	 * How much space to maintain between the left sidebar and obstructions, in pixels
 	 */
-	left-sidebar-margins: 2, 2, 2, 2;
+	left-sidebar-margins: 2, 15, 2, 2;
 
 	/**
 	 * Where to position the left sidebar
@@ -430,7 +430,7 @@
 	/**
 	 * Copies the hovered recipe's ID to the clipboard
 	 */
-	copy-recipe-id: "key.keyboard.unknown";
+	copy-recipe-id: "key.keyboard.f8";
 
 	/**
 	 * In edit mode, hide the hovered stack
