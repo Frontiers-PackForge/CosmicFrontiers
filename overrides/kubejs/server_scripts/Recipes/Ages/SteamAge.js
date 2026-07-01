@@ -148,19 +148,36 @@ ServerEvents.recipes(event => {
     event.shaped('cosmiccore:industrial_primitive_blast_furnace', ['ABA', 'BCB', 'DDD'], { A: 'gtceu:vacuum_tube', B: 'gtceu:double_steel_plate', C: 'gtceu:primitive_blast_furnace', D: 'gtceu:bronze_firebox_casing' })
     event.shapeless('cosmiccore:crushed_ferosine_ore', ['#gtceu:crafting_tools/hammer', 'cosmiccore:raw_ferosine'])
     event.shapeless('cosmiccore:crushed_cuprosiva_ore', ['#gtceu:crafting_tools/hammer', 'cosmiccore:raw_cuprosiva'])
+    event.recipes.gtceu.alloy_smelter()
+        .itemInputs('gtceu:sticky_resin', 'mynethersdelight:pepper_powder')
+        .itemOutputs('gtceu:cinderwax_ingot')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+
+    event.shaped('minecraft:mud_bricks', [' A ', 'ABA', ' A '], { A: 'minecraft:packed_mud', B: 'gtceu:brick_wooden_form' })
+    event.recipes.gtceu.bender()
+        .itemInputs('gtceu:cinderwax_plate', 'gtceu:wood_dust')
+        .itemOutputs('gtceu:resin_circuit_board')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+
+    event.shaped('gtceu:resin_printed_circuit_board', ['AAA', 'ABA', 'AAA'], { A: 'gtceu:copper_single_wire', B: 'gtceu:resin_circuit_board' })
 
 
+    event.recipes.gtceu.assembler()
+        .itemInputs('6x gtceu:copper_foil', 'gtceu:resin_circuit_board')
+        .itemOutputs('gtceu:resin_printed_circuit_board')
+        .inputFluids('gtceu:soulresin 250')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(400)
 
+    event.recipes.gtceu.assembler()
+        .itemInputs('minecraft:paper', '2x gtceu:tempered_iesnium_bolt')
+        .itemOutputs('2x gtceu:resistor')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
 
-
-
-
-
-
-
-
-
-
+    event.shaped('gtceu:basic_electronic_circuit', ['ABA', 'CDC', 'EEE'], { A: 'gtceu:resistor', B: 'gtceu:runed_steel_plate', C: 'gtceu:vacuum_tube', D: 'gtceu:resin_printed_circuit_board', E: 'gtceu:lead_single_cable' })
 
 
 })

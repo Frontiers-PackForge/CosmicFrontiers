@@ -111,12 +111,7 @@ StartupEvents.registry('gtceu:material', event => {
 
 })
 
-StartupEvents.postInit(event => {
-    // TODO restore when Botania ships for 1.21.1 (not on CurseForge yet); GT resolves these suppliers at world-load and Item.of crashes on the missing ids
-    // TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:manasteel'), () => Item.of('botania:manasteel_ingot').getItem())
-    // TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:terrasteel'), () => Item.of('botania:terrasteel_ingot').getItem())
-    // TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:elementium'), () => Item.of('botania:elementium_ingot').getItem())
-
+GTCEuStartupEvents.materialModification(event => {
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:dawnstone'), () => Item.of('embers:dawnstone_ingot').getItem())
     TagPrefix.plate['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:dawnstone'), () => Item.of('embers:dawnstone_plate').getItem())
 })

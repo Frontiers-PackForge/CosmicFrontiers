@@ -44,6 +44,7 @@ ServerEvents.recipes(event => {
 
 
     event.remove({ id: 'occultism:crafting/chalk_yellow_impure' })
+    event.remove({ id: 'occultism:crafting/chalk_purple_impure' })
     event.remove({ id: 'gtceu:shapeless/fireclay_dust' })
     event.remove({ id: 'gtceu:shaped/casing_primitive_bricks' })
     event.remove({ output: 'gtceu:smelting/fireclay_brick' })
@@ -69,11 +70,13 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'gtceu:resistor' })
     event.remove({ output: 'neovitae:ara_vitae' })
     event.remove({ type: 'embers:alchemy' })
+    event.remove({ id: 'gtceu:shaped/coated_board' })
+    event.remove({ id: 'gtceu:shapeless/coated_board_1x' })
+    event.remove({ id: 'gtceu:shaped/electronic_circuit_lv' })
 
+    event.shaped('4x cosmiccore:lv_cogwork_magicapacitor', ['ABA', 'CDC', 'ABA'], { A: 'gtceu:steel_plate', B: 'cosmiccore:cogwork_units', C: 'gtceu:runed_steel_foil', D: 'cosmiccore:overloaded_pearls' })
 
-    //   event.remove({ id: '' })
-    //   event.remove({ id: '' })
-    //   event.remove({ id: '' })
+    //   event.remove({ id: 'occultism:crafting/chalk_purple_impure' })
     //   event.remove({ id: '' })
     //   event.remove({ id: '' })
     //   event.remove({ id: '' })
