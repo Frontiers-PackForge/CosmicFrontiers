@@ -86,7 +86,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('embers:ember_crystal_cluster')
         .EUt(2)
         .duration(100)
-    event.shapeless('cosmiccore:lv_ember_input_hatch', ['gtceu:ulv_machine_casing', 'embers:ember_shard'])
     event.shaped('cosmiccore:high_pressure_assembler', ['AAA', 'ABA', 'CDC'], { A: 'gtceu:rubber_foil', B: 'gtceu:steel_machine_casing', C: 'gtceu:vacuum_tube', D: 'gtceu:steel_firebox_casing' })
     event.recipes.gtceu.mixer()
         .itemInputs('4x gtceu:calcite_dust', '4x occultism:burnt_otherstone', '4x occultism:burnt_otherrock')
