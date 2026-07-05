@@ -2,6 +2,7 @@
 
 
 ServerEvents.recipes(event => {
+    event.shaped('4x cosmiccore:lv_cogwork_magicapacitor', ['ABA', 'CDC', 'ABA'], { A: 'gtceu:steel_plate', B: 'cosmiccore:cogwork_units', C: 'gtceu:tempered_iesnium_foil', D: 'cosmiccore:overloaded_pearls' })
     event.shaped('4x gtceu:compressed_coke_clay', ['ABA', 'BAB', ' C '], { A: 'minecraft:clay_ball', B: 'minecraft:wheat', C: 'gtceu:brick_wooden_form' })
     event.shaped('gtceu:coke_oven_bricks', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:coke_oven_brick', B: 'create:andesite_alloy', C: 'minecraft:mud_bricks' })
     event.shaped('gtceu:lv_machine_casing', ['ABA', 'CDC', 'ACA'], { A: 'cosmiccore:riveted_straps', B: 'cosmiccore:lv_cogwork_magicapacitor', C: 'cosmiccore:lv_cladding', D: 'cosmiccore:lv_modular_frameworks' })
@@ -99,7 +100,11 @@ ServerEvents.recipes(event => {
         .input('cosmiccore:ember', 1000)
         .EUt(GTValues.VA[GTValues.LV], 1)
         .duration(300)
-
+    event.recipes.gtceu.macerator()
+        .itemInputs('gtceu:treated_wood_planks')
+        .itemOutputs('gtceu:treated_wood_dust')
+        .EUt(2, 1)
+        .duration(100)
     event.custom({
         "ritual_dummy": {
             "id": "cosmiccore:nether_permit",
@@ -163,7 +168,7 @@ ServerEvents.recipes(event => {
 
     event.shaped('gtceu:resin_printed_circuit_board', ['AAA', 'ABA', 'AAA'], { A: 'gtceu:copper_single_wire', B: 'gtceu:resin_circuit_board' })
 
-
+    event.shaped('occultism:chalk_purple_impure', ['ABB', 'C  '], { A: 'occultism:chalk_white_impure', B: 'gtceu:soulresin_ingot', C: 'gtceu:cinderwax_ingot' })
     event.recipes.gtceu.assembler()
         .itemInputs('6x gtceu:copper_foil', 'gtceu:resin_circuit_board')
         .itemOutputs('gtceu:resin_printed_circuit_board')
@@ -177,7 +182,186 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV], 1)
         .duration(100)
 
-    event.shaped('gtceu:basic_electronic_circuit', ['ABA', 'CDC', 'EEE'], { A: 'gtceu:resistor', B: 'gtceu:runed_steel_plate', C: 'gtceu:vacuum_tube', D: 'gtceu:resin_printed_circuit_board', E: 'gtceu:lead_single_cable' })
+    event.shaped('gtceu:basic_electronic_circuit', ['ABA', 'CDC', 'EEE'], { A: 'gtceu:resistor', B: 'gtceu:tempered_iesnium_plate', C: 'gtceu:vacuum_tube', D: 'gtceu:resin_printed_circuit_board', E: 'gtceu:lead_single_cable' })
+    event.recipes.gtceu.primitive_blast_furnace()
+        .itemInputs('occultism:iesnium_dust')
+        .itemOutputs('occultism:iesnium_ingot')
+        .duration(100)
+    event.recipes.cosmiccore.industrial_primitive_blast_furnace()
+        .itemInputs('occultism:iesnium_dust')
+        .itemOutputs('occultism:iesnium_ingot')
+        .duration(600)
+
+    event.shaped('cosmiccore:ulv_ember_input_hatch', ['ABA', 'CDC', 'ABA'], { A: 'gtceu:double_bronze_plate', B: 'gtceu:bronze_foil', C: 'embers:dawnstone_plate', D: 'embers:ember_crystal_cluster' })
+
+    event.shaped('cosmiccore:steam_ember_emitter', [' A ', ' B ', 'CDE'], { A: 'embers:ember_shard', B: 'embers:dawnstone_plate', C: '#gtceu:crafting_tools/wrench', D: 'gtceu:steel_frame', E: '#gtceu:crafting_tools/hammer' })
+    event.shaped('cosmiccore:steam_ember_receptor', ['A A', 'B B', 'CDE'], { A: 'gtceu:wrought_iron_rod', B: 'embers:dawnstone_plate', C: '#gtceu:crafting_tools/wrench', D: 'gtceu:steel_frame', E: '#gtceu:crafting_tools/hammer' })
+
+
+    event.custom({
+        "type": "occultism:miner",
+        "ingredient": {
+            "tag": "occultism:miners/basic_resources"
+        },
+        "result": {
+            "type": "occultism:weighted_item",
+            "stack": {
+                "count": 1,
+                "id": 'occultism:raw_iesnium'
+            },
+            "weight": 7000
+        }
+    })
+    event.recipes.gtceu.assembler()
+        .itemInputs('2x gtceu:brass_plate', 'gtceu:small_iron_gear', 'gtceu:brass_screw')
+        .itemOutputs('4x cosmiccore:cogwork_units')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.recipes.occultism.spirit_fire('cosmiccore:overloaded_pearls', 'mynethersdelight:bullet_pepper')
+    event.shaped('3x cosmiccore:lv_modular_frameworks', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:tempered_iesnium_bolt', B: 'gtceu:steel_rod', C: 'gtceu:small_steel_gear' })
+    event.recipes.gtceu.macerator()
+        .itemInputs('gtceu:treated_wood_dust')
+        .itemOutputs('gtceu:treated_wood_planks')
+        .EUt(2, 1)
+        .duration(40)
+    event.recipes.gtceu.compressor()
+        .itemInputs('gtceu:treated_wood_dust')
+        .itemOutputs('gtceu:treated_wood_plate')
+        .EUt(2, 1)
+        .duration(40)
+    event.shaped('2x cosmiccore:lv_cladding', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:lead_bolt', B: 'gtceu:rubber_foil', C: 'gtceu:treated_wood_plate' })
+    event.recipes.gtceu.bender()
+        .itemInputs('minecraft:honeycomb', 'minecraft:leather')
+        .itemOutputs('cosmiccore:waxed_leather')
+        .EUt(32, 1)
+        .duration(100)
+    event.shaped('8x cosmiccore:riveted_straps', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:lead_bolt', B: 'cosmiccore:waxed_leather', C: 'gtceu:steel_foil' })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 })

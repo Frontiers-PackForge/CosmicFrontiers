@@ -23,7 +23,7 @@ recipes:
   # Whether to make Wood related recipes harder.
   # Excludes sticks and planks.
   # Default: false
-  hardWoodRecipes: true
+  hardWoodRecipes: false
 
   # Recipes for Buckets, Cauldrons, Hoppers, and Iron Bars require Iron Plates, Rods, and more.
   # Default: true

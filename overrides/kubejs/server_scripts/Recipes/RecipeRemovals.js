@@ -21,7 +21,10 @@ let yeet_f = (itemName) => {
 // yeet('')
 
 yeet('embers:dynamic_crystal_seed')
-
+yeet('occultism:miner_djinni_ores')
+yeet('occultism:miner_afrit_deeps')
+yeet('occultism:miner_marid_master')
+yeet('occultism:miner_ancient_eldritch')
 
 
 
@@ -52,6 +55,7 @@ ServerEvents.recipes(event => {
 
     // Embers: disable dynamic crystal seed auto-generation
     event.remove({ type: 'embers:dynamic_metal_seed_alchemy' })
+    event.remove({ type: 'occultism:miner' })
 
     // Malum: remove all impetus -> node recipes
     const malumNodeMetals = ['aluminum', 'cobalt', 'copper', 'gold', 'iron', 'lead', 'nickel', 'osmium', 'silver', 'tin', 'uranium', 'zinc']
@@ -68,16 +72,21 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:shaped/casing_steel_firebox' })
     event.remove({ output: 'gtceu:lv_machine_casing' })
     event.remove({ output: 'gtceu:resistor' })
+    event.remove({ output: 'occultism:iesnium_ingot' })
     event.remove({ output: 'neovitae:ara_vitae' })
     event.remove({ type: 'embers:alchemy' })
     event.remove({ id: 'gtceu:shaped/coated_board' })
     event.remove({ id: 'gtceu:shapeless/coated_board_1x' })
     event.remove({ id: 'gtceu:shaped/electronic_circuit_lv' })
 
-    event.shaped('4x cosmiccore:lv_cogwork_magicapacitor', ['ABA', 'CDC', 'ABA'], { A: 'gtceu:steel_plate', B: 'cosmiccore:cogwork_units', C: 'gtceu:runed_steel_foil', D: 'cosmiccore:overloaded_pearls' })
+    //   event.remove({ id: 'embers:iron_plate_hammering' })
+    //   event.remove({ id: 'embers:copper_plate_hammering' })
+    //   event.remove({ id: 'embers:lead_plate_hammering' })
+    //   event.remove({ id: 'embers:silver_plate_hammering' })
+    //   event.remove({ id: '' })
+    //   event.remove({ id: '' })
 
     //   event.remove({ id: 'occultism:crafting/chalk_purple_impure' })
-    //   event.remove({ id: '' })
     //   event.remove({ id: '' })
     //   event.remove({ id: '' })
     //   event.remove({ id: '' })
