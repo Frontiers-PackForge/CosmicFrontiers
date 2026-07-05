@@ -32,6 +32,7 @@
 		"Please take caution using them, make constant backups, with a phyiscs mod like this even though it is almost perfect, it still will have edgecase issues we'll most likely find."
 	]
 	quest.0584A322CC8C1A28.quest_subtitle: "Redefining the game."
+	quest.0FA8D92F9734C77C.quest_subtitle: "The Sulfur Ore Field"
 	quest.130F6EE5889B7ADE.quest_desc: [
 		"Cart Assemblers are quite frankly way too strong."
 		""
@@ -58,8 +59,13 @@
 		" &o\"&aImpressive, dimensional awareness&r\"&r, &7She utters, with interest piqued."
 		""
 		"&7You march onward, into the mouth of hell; unaware of who observes you."
+		""
+		""
+		"[ Nightly 001 ] - End of Current Content"
 	]
 	quest.16EE5D3DB14F4331.quest_subtitle: "Granting Access to Hell"
+	quest.18153CD2A0487F03.quest_desc: ["Spirit Fire can be created by throwing a demons dream fruit on the ground, and lighting it on fire."]
+	quest.18153CD2A0487F03.quest_subtitle: "Calm Flames"
 	quest.1B387FD15E883317.quest_desc: [
 		"You'll need materials, lots of them, and that starts with *you* extracting them."
 		""
@@ -122,6 +128,12 @@
 	]
 	quest.35B7A194BB34BA44.quest_subtitle: "The unsual that is willed to be. "
 	quest.35B7A194BB34BA44.title: "An Indestructable Ally"
+	quest.38473AAE9EFA91C7.quest_desc: [
+		"Ember is easy to move!"
+		""
+		"Just place an Ember Emitter onto your source of embers, and connected it to an ember receptor with a tinker hammer."
+	]
+	quest.38473AAE9EFA91C7.quest_subtitle: "Moving Ember"
 	quest.3FB852AA4A2FBB8B.quest_desc: [
 		"Primitive Pumps allow passive collection of water."
 		""
@@ -161,9 +173,17 @@
 		"Best combo (Wrought Iron Block + Coke Block) will result in about a 50% duration cut per steel ingot!"
 	]
 	quest.50930E8761259EFD.quest_subtitle: "The tooltip lies"
-	quest.534DBCED4E339D89.quest_desc: ["Might not work"]
+	quest.534DBCED4E339D89.quest_desc: [
+		"Stick an Ember receptor on it, and an ember emitter on your ember source."
+		""
+		"Use the Tinkering Hammer to connect them."
+		""
+		""
+		"This is a pretty temporary recipe until i can be asked to make Steam Ember Hatches."
+	]
 	quest.534DBCED4E339D89.quest_subtitle: "Getting Embers into a Gregtech Machine"
 	quest.5505401B1E8344EB.quest_subtitle: "The Key to Steel"
+	quest.5973534E85F5D126.quest_subtitle: "Better Iesnium"
 	quest.5B91A99F1F8B588D.quest_subtitle: "Oh hey, brass!"
 	quest.6E8D634B042DB26F.quest_desc: [
 		""
@@ -180,6 +200,13 @@
 	quest.6E8D634B042DB26F.title: "Thermal Woes"
 	quest.6ED6791358655950.quest_desc: ["Holds as much stuff as a double chest in one block, awesome!"]
 	quest.6ED6791358655950.quest_subtitle: "Better Storage"
+	quest.6EF94519E4BCBE72.quest_desc: [
+		"Occultism Got updated..."
+		""
+		""
+		"Packdev doesn't know the new content. please hold while i learn it lol"
+	]
+	quest.6EF94519E4BCBE72.quest_subtitle: "Soooo"
 	quest.70C78D038EBF6CA6.quest_desc: [
 		"Rock Cutting wheels will cleave large areas of material away when active."
 		""
@@ -209,10 +236,14 @@
 		"For now, you can directly smelt curposiva for copper."
 		""
 		"You can get &6Tin Nuggets&r by \"Manually Sorting\" Cuprosiva, hold right click on Crushed Cuprosiva to find some tin nuggets."
+		""
+		"Also worth noting, you can do this to Fersosine as well to get gold nuggets"
 	]
 	quest.7BAA63BF7EE181C3.quest_subtitle: "Copper and Tin"
+	quest.7FE634D65F26BB7A.quest_desc: ["Ghost : Genuinely no idea where this spawns, go figure it out for me ty!"]
 	quest.7FE634D65F26BB7A.quest_subtitle: "Foods of the Nether"
 	task.454A92A4FCC0F185.title: "Any #c:tools/mining_tool"
 	task.5C1CE51AFE90BD57.title: "Craft Any Mortar"
+	task.6663702BE6CE1EEA.title: "Spirit Fires"
 	task.77609A3D829D9910.title: "Any Log"
 }

@@ -419,16 +419,6 @@
 			y: 3.145238095238099d
 		}
 		{
-			id: "2B3375B51BA86BB6"
-			tasks: [{
-				id: "4416BBBDC44AA81A"
-				item: { count: 1, id: "minecraft:birch_planks" }
-				type: "item"
-			}]
-			x: -24.0d
-			y: -4.0d
-		}
-		{
 			dependencies: [
 				"69467329644E160D"
 				"194C6A5A0002FF5C"
@@ -445,7 +435,10 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["320B71BE79B4BC06"]
+			dependencies: [
+				"320B71BE79B4BC06"
+				"3C8498EB6A158E35"
+			]
 			id: "581145B56BCEB344"
 			shape: "hexagon"
 			size: 2.0d
@@ -646,8 +639,8 @@
 			dependencies: ["16EE5D3DB14F4331"]
 			id: "0FA8D92F9734C77C"
 			tasks: [{
-				id: "654BDE5AC5DDD9BA"
-				item: { count: 1, id: "gtceu:raw_sulfur" }
+				id: "48B6C91FB4B8A2C7"
+				item: { count: 1, id: "cosmiccore:raw_pyroltic" }
 				type: "item"
 			}]
 			x: -9.5d
@@ -749,7 +742,7 @@
 				item: { count: 1, id: "cosmiccore:hp_steam_bender" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -3.5d
 			y: 11.5d
 		}
 		{
@@ -796,6 +789,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["194C6A5A0002FF5C"]
 			id: "3E814BEF0F9709DF"
 			tasks: [{
 				id: "63953AEDD1BDBA07"
@@ -806,10 +800,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"0CE73F521E970A82"
-				"3C942F0A002979CB"
-			]
+			dependencies: ["3C942F0A002979CB"]
 			id: "20110B288860AB9D"
 			tasks: [{
 				id: "0D4AD9468CA9402B"
@@ -828,19 +819,7 @@
 				type: "item"
 			}]
 			x: -22.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["3471B2B107BD8510"]
-			hide_dependency_lines: true
-			id: "0CE73F521E970A82"
-			tasks: [{
-				id: "398269F7F13A487D"
-				item: { count: 1, id: "gtceu:steel_screw" }
-				type: "item"
-			}]
-			x: -20.5d
-			y: 5.5d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -852,7 +831,7 @@
 				type: "checkmark"
 			}]
 			x: -22.0d
-			y: 11.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["733582199AB1E7B7"]
@@ -863,7 +842,7 @@
 				type: "item"
 			}]
 			x: -22.0d
-			y: 9.75d
+			y: 8.0d
 		}
 		{
 			dependencies: ["194C6A5A0002FF5C"]
@@ -877,10 +856,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: [
-				"27511ADDB495D14D"
-				"64F703DC26C9B9BF"
-			]
+			dependencies: ["27511ADDB495D14D"]
 			id: "194C6A5A0002FF5C"
 			tasks: [{
 				id: "700026FAAEF6BAE2"
@@ -1082,6 +1058,7 @@
 		{
 			dependencies: ["6CD224F26209A645"]
 			id: "5973534E85F5D126"
+			shape: "gear"
 			tasks: [{
 				id: "7431779768FE2FDC"
 				item: { count: 1, id: "occultism:miner_foliot_unspecialized" }
@@ -1091,7 +1068,7 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["5973534E85F5D126"]
+			dependencies: ["18153CD2A0487F03"]
 			id: "07A3009B253FF22E"
 			tasks: [{
 				id: "4E853BE735B28164"
@@ -1126,7 +1103,7 @@
 				type: "item"
 			}]
 			x: -20.5d
-			y: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["27511ADDB495D14D"]
@@ -1374,8 +1351,8 @@
 			dependencies: ["24CA333213C97FC6"]
 			id: "534DBCED4E339D89"
 			tasks: [{
-				id: "0F3D1D6C09B21EB8"
-				item: { count: 1, id: "cosmiccore:lv_ember_input_hatch" }
+				id: "2D75B54FD7DC987A"
+				item: { count: 1, id: "cosmiccore:ulv_ember_input_hatch" }
 				type: "item"
 			}]
 			x: -9.5d
@@ -1424,6 +1401,58 @@
 			}]
 			x: -5.5d
 			y: 8.5d
+		}
+		{
+			dependencies: ["3471B2B107BD8510"]
+			id: "3416FF866DB19A3F"
+			tasks: [{
+				id: "5C373698F00D60B3"
+				item: { count: 1, id: "cosmiccore:hp_steam_wiremill" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["24CA333213C97FC6"]
+			id: "38473AAE9EFA91C7"
+			tasks: [
+				{
+					id: "6965D48B7070BC54"
+					item: { count: 1, id: "cosmiccore:steam_ember_receptor" }
+					type: "item"
+				}
+				{
+					id: "2314019EF56A4506"
+					item: { count: 1, id: "cosmiccore:steam_ember_emitter" }
+					type: "item"
+				}
+				{
+					id: "459F1FE375316419"
+					item: { count: 1, id: "embers:tinker_hammer" }
+					type: "item"
+				}
+			]
+			x: -13.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2AA6F78DB2ED60F2"]
+			hide_dependency_lines: true
+			id: "18153CD2A0487F03"
+			tasks: [{
+				icon: {
+					id: "occultism:datura"
+				}
+				id: "6663702BE6CE1EEA"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "occultism:spirit_fire"
+				type: "observation"
+			}]
+			x: -20.5d
+			y: -3.5d
 		}
 	]
 }
