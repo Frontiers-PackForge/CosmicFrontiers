@@ -14,7 +14,7 @@
 	#Makes the extra hearts given by life shards display as silver colored
 	"Enables silver life shard hearts" = true
 	#Disables the Aether's accessories button from appearing in GUIs
-	"Disables the accessories button" = false
+	"Disables the accessories button" = true
 	#Disables the Aether's Moa Skins button from appearing in GUIs
 	"Disables the Moa Skins button" = false
 	#The y-coordinate of the Ascending to the Aether and Descending from the Aether text in loading screens

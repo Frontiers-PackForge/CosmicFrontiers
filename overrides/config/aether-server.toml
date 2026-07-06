@@ -18,7 +18,7 @@
 	#Determines the cooldown in ticks for the Cloud Staff's ability
 	"Cooldown for the Cloud Staff" = 40
 	#Makes armor abilities depend on wearing the respective gloves belonging to an armor set
-	"Require gloves for set abilities" = true
+	"Require gloves for set abilities" = false
 
 [Loot]
 	#Allows the Golden Feather to spawn in the Silver Dungeon loot table
