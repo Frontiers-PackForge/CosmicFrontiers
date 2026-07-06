@@ -4,11 +4,11 @@
 
 	[hud.general]
 		# If enabled, the food saturation will be rendered on the Food Bar while the player suffers Cold Hunger Effect (secondary temperature effect).
-		"Show Food Saturation Bar" = true
+		"Show Food Saturation Bar" = false
 		# Whether the vanilla animation of the Food bar and Hydration bar is rendered. The bar shakes more the lower they are.
 		# This mod render a new food bar as a secondary effect of a cold temperature.
 		# Disable this animation if the temperature secondary effect is enabled to allow a compatibility with other mods rendering the food bar (for example Appleskin).
-		"Show Vanilla Bar Animation Overlay" = true
+		"Show Vanilla Bar Animation Overlay" = false
 
 	[hud.temperature]
 		# How temperature is displayed. Accepted values are as follows:
@@ -36,7 +36,7 @@
 		# If enabled, player will see a frost effect when the cold is low.
 		"Cold Temperature Overlay" = true
 		# If enabled, breathing sound can be heard while player faces harsh temperatures.
-		"Breathing Sound Enabled" = true
+		"Breathing Sound Enabled" = false
 		# Temperature threshold below which a cold breath effect is rendered by the player. -1000 disable the feature.
 		# Default: 10.0
 		# Range: -1000.0 ~ 1000.0

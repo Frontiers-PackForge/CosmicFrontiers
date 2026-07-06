@@ -698,11 +698,6 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:pure_cinder_gas')
         .liquid(new GTFluidBuilder().customStill())
 
-    event.create('gtceu:emberite')
-        .gem()
-        .ore()
-        .color(0xff7300).iconSet(GTMaterialIconSet.CERTUS)
-
     event.create('gtceu:infernal_rosin_emulsion')
         .liquid(new GTFluidBuilder().customStill())
 
