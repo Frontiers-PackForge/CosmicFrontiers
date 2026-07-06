@@ -2,7 +2,7 @@
 
 
 ServerEvents.recipes(event => {
-    event.shaped('4x cosmiccore:lv_cogwork_magicapacitor', ['ABA', 'CDC', 'ABA'], { A: 'gtceu:steel_plate', B: 'cosmiccore:cogwork_units', C: 'gtceu:tempered_iesnium_foil', D: 'cosmiccore:overloaded_pearls' })
+    event.shaped('4x cosmiccore:lv_cogwork_magicapacitor', ['ABA', 'CDC', 'ABA'], { A: 'gtceu:steel_plate', B: 'gtceu:tempered_iesnium_foil', C: 'gtceu:tempered_iesnium_foil', D: 'cosmiccore:overloaded_pearls' })
     event.shaped('4x gtceu:compressed_coke_clay', ['ABA', 'BAB', ' C '], { A: 'minecraft:clay_ball', B: 'minecraft:wheat', C: 'gtceu:brick_wooden_form' })
     event.shaped('gtceu:coke_oven_bricks', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:coke_oven_brick', B: 'create:andesite_alloy', C: 'minecraft:mud_bricks' })
     event.shaped('gtceu:lv_machine_casing', ['ABA', 'CDC', 'ACA'], { A: 'cosmiccore:riveted_straps', B: 'cosmiccore:lv_cogwork_magicapacitor', C: 'cosmiccore:lv_cladding', D: 'cosmiccore:lv_modular_frameworks' })
@@ -232,10 +232,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.bender()
         .itemInputs('minecraft:honeycomb', 'minecraft:leather')
         .itemOutputs('cosmiccore:waxed_leather')
-        .EUt(32, 1)
+        .EUt(16, 1)
         .duration(100)
     event.shaped('8x cosmiccore:riveted_straps', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:lead_bolt', B: 'cosmiccore:waxed_leather', C: 'gtceu:steel_foil' })
-
+    event.recipes.gtceu.bender()
+        .itemInputs('16x cosmiccore:creosote_grease', 'minecraft:leather')
+        .itemOutputs('cosmiccore:waxed_leather')
+        .EUt(16, 1)
+        .duration(100)
 
 
 
