@@ -105,10 +105,10 @@
 	[temperature.secondary_effects]
 		# If enabled, players will also receive other effects from their current temperature state.
 		# If the player is too hot, hydration will deplete faster.
-		"Heat Temperature Secondary Effects" = true
+		"Heat Temperature Secondary Effects" = false
 		# If enabled, players will also receive other effects from their current temperature state.
 		# If the player is too cold, hunger will deplete faster.
-		"Cold Temperature Secondary Effects" = true
+		"Cold Temperature Secondary Effects" = false
 		# How much thirst exhaustion will be added every 50 ticks with no amplification effect, when the player suffers from heat.
 		# Default: 0.2
 		# Range: 0.0 ~ 1000.0
