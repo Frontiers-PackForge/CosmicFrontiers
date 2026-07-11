@@ -1,5 +1,5 @@
 StartupEvents.registry('gtceu:material', event => {
-    event.create('gtceu:soul_stained_alumina')
+    event.create('gtceu:soul_stained_steel')
         .color(0xdb3dff).secondaryColor(0xe683fc)
         .ingot()
         .liquid()
@@ -18,7 +18,7 @@ StartupEvents.registry('gtceu:material', event => {
 })
 
 GTCEuStartupEvents.materialModification(event => {
-    TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:soul_stained_alumina'), () => Item.of('malum:block_of_soul_stained_steel').getItem())
-    TagPrefix.plate['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:soul_stained_alumina'), () => Item.of('malum:soul_stained_steel_plating').getItem())
-    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:soul_stained_alumina'), () => Item.of('malum:soul_stained_steel_ingot').getItem())
+    TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:soul_stained_steel'), () => Item.of('malum:block_of_soul_stained_steel').getItem())
+    TagPrefix.plate['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:soul_stained_steel'), () => Item.of('malum:soul_stained_steel_plating').getItem())
+    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:soul_stained_steel'), () => Item.of('malum:soul_stained_steel_ingot').getItem())
 })

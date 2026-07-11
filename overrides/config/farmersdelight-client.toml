@@ -3,4 +3,4 @@ enableNourishmentHungerOverlay = true
 #If enabled, a scrolling overlay will be shown over the health meter when the player has the Comfort effect.
 enableComfortHealthOverlay = true
 #If enabled, food items will display tooltips showing which effects they grant when eaten, if any. Applies to foods from both Minecraft and this mod.
-enableFoodEffectTooltip = true
+enableFoodEffectTooltip = false

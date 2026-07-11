@@ -1,9 +1,9 @@
 ServerEvents.recipes(event => {
-
+    event.shaped('cosmiccore:lv_ember_input_hatch', ['ABA', 'CDC', 'ABA'], { A: 'gtceu:double_steel_plate', B: 'gtceu:aluminium_foil', C: 'embers:wildfire_core', D: 'embers:ember_crystal_cluster' })
     event.recipes.gtceu.chemical_reactor()
         .itemInputs('occultism:otherworld_ashes', 'minecraft:amethyst_shard')
         .itemOutputs('malum:refined_soulstone')
-        .inputFluids('gtceu:hydrochloric_acid 250')
+        .inputFluids('250x gtceu:hydrochloric_acid')
         .EUt(GTValues.VA[GTValues.LV], 1)
         .duration(100)
     event.recipes.gtceu.macerator()
@@ -11,7 +11,12 @@ ServerEvents.recipes(event => {
         .itemOutputs('2x occultism:iesnium_dust')
         .EUt(2, 1)
         .duration(100)
-
+    event.recipes.gtceu.bender()
+        .itemInputs('4x gtceu:wrought_iron_plate')
+        .itemOutputs('gtceu:empty_mold')
+        .EUt(12, 1)
+        .circuit(4)
+        .duration(100)
 
     event.recipes.gtceu.electric_blast_furnace()
         .itemInputs('gtceu:steel_ingot', 'occultism:iesnium_dust', 'malum:refined_soulstone')

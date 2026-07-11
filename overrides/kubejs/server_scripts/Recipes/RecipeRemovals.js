@@ -29,6 +29,8 @@ yeet('occultism:miner_ancient_eldritch')
 
 
 ServerEvents.recipes(event => {
+    
+    event.remove({ id: 'embers:hearth_coil' })
     event.remove({ id: 'gtceu:shaped/compressed_coke_clay' })
     event.remove({ id: 'gtceu:compressor/coke_bricks' })
     event.remove({ id: 'gtceu:shaped/casing_coke_bricks' })
@@ -42,7 +44,7 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'gtceu:ore_washer' })
     event.remove({ type: 'gtceu:thermal_centrifuge' })
     event.remove({ type: 'embers:dawnstone_plate_hammering' })
-    event.remove({ id: 'create:andesite_alloy' })
+    event.remove({ output: 'create:andesite_alloy' })
     event.remove({ id: 'gtceu:compressor/compress_plate_dust_wood' })
     event.remove({ id: 'gtceu:shaped/bronze_bricks_hull' })
     event.remove({ output: 'gtceu:lv_field_generator' })
@@ -59,11 +61,22 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'embers:dynamic_metal_seed_alchemy' })
     event.remove({ type: 'occultism:miner' })
 
-    // Malum: remove all impetus -> node recipes
     const malumNodeMetals = ['aluminum', 'cobalt', 'copper', 'gold', 'iron', 'lead', 'nickel', 'osmium', 'silver', 'tin', 'uranium', 'zinc']
-    malumNodeMetals.forEach(metal => event.remove({ id: 'malum:node_focusing_' + metal }))
-    event.remove({ id: 'malum:crush_zephyr_impetus' })
-    event.remove({ id: 'malum:crush_fractured_zephyr_impetus' })
+    malumNodeMetals.forEach(metal => {
+        event.remove({ id: 'malum:spirit_crucible/node_focusing_' + metal })
+        event.remove({ id: 'malum:spirit_infusion/' + metal + '_impetus' })
+        event.remove({ id: 'malum:spirit_repair/fractured_' + metal + '_impetus_restoration' })
+        event.remove({ id: 'malum:' + metal + '_from_node_smelting' })
+        event.remove({ id: 'malum:' + metal + '_from_node_blasting' })
+    })
+    event.remove({ id: 'malum:create/washing/copper_node' })
+    event.remove({ id: 'malum:create/washing/gold_node' })
+    event.remove({ id: 'malum:create/washing/iron_node' })
+    event.remove({ id: 'malum:create/washing/zinc_node' })
+    event.remove({ id: 'malum:create/crushing/impetus/crush_metal_impetus' })
+    event.remove({ id: 'malum:create/crushing/impetus/crush_fractured_metal_impetus' })
+    event.remove({ id: 'malum:create/crushing/impetus/crush_zephyr_impetus' })
+    event.remove({ id: 'malum:create/crushing/impetus/crush_fractured_zephyr_impetus' })
 
     event.remove({ output: 'malum:soul_stained_steel_ingot', type: 'malum:spirit_infusion' })
     event.remove({ id: 'gtceu:macerator/macerate_raw_iesnium_ore_to_crushed_ore' })
@@ -83,6 +96,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'gtceu:hssg_coil_block' })
     event.remove({ output: 'gtceu:naquadah_coil_block' })
     event.remove({ output: 'gtceu:trinium_coil_block' })
+    event.remove({ output: 'gtceu:empty_mold' })
     event.remove({ type: 'embers:alchemy' })
     event.remove({ id: 'gtceu:shaped/coated_board' })
     event.remove({ id: 'gtceu:shapeless/coated_board_1x' })
@@ -93,6 +107,18 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'embers:lead_plate_hammering' })
     event.remove({ id: 'embers:silver_plate_hammering' })
     event.remove({ id: 'undergarden:catalyst' })
+    event.remove({ id: 'gtceu:forge_hammer/hammer_raw_redstona_to_crushed' })
+    event.remove({ id: 'gtceu:forge_hammer/hammer_raw_lazuric_to_crushed' })
+    event.remove({ id: 'gtceu:forge_hammer/hammer_raw_carbonic_to_crushed' })
+    event.remove({ id: 'gtceu:forge_hammer/hammer_raw_earthen_salts_to_crushed' })
+    event.remove({ id: 'gtceu:compressor/compress_plate_dust_treated_wood' })
+    event.remove({ id: 'gtceu:shaped/shape_empty' })
+
+
+
+    //   event.remove({ id: '' })
+    //   event.remove({ id: '' })
+    //   event.remove({ id: '' })
     //   event.remove({ id: '' })
 
     //   event.remove({ id: 'occultism:crafting/chalk_purple_impure' })
@@ -165,4 +191,18 @@ ServerEvents.recipes(event => {
         'minecraft:bricks',
         "gtceu:coke_oven_bricks"
     )
+    event.replaceInput(
+        { output: 'gtceu:lp_steam_macerator' },
+        'minecraft:diamond',
+        "minecraft:flint"
+    )
+})
+
+ServerEvents.tags('item', event => {
+    const malumNodeMetals = ['aluminum', 'cobalt', 'copper', 'gold', 'iron', 'lead', 'nickel', 'osmium', 'silver', 'tin', 'uranium', 'zinc']
+    malumNodeMetals.forEach(metal => {
+        event.add('c:hidden_from_recipe_viewers', 'malum:' + metal + '_node')
+        event.add('c:hidden_from_recipe_viewers', 'malum:' + metal + '_impetus')
+        event.add('c:hidden_from_recipe_viewers', 'malum:fractured_' + metal + '_impetus')
+    })
 })

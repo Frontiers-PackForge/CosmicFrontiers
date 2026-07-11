@@ -1,9 +1,36 @@
 ServerEvents.recipes(event => {
 
+    const spoolingMachineTiers = [
+        { tier: 'lv', cable: 'tin' },
+        { tier: 'mv', cable: 'copper' },
+        { tier: 'hv', cable: 'gold' },
+        { tier: 'ev', cable: 'aluminium' },
+        { tier: 'iv', cable: 'platinum' },
+        { tier: 'luv', cable: 'niobium_titanium' },
+        { tier: 'zpm', cable: 'vanadium_gallium' },
+        { tier: 'uv', cable: 'yttrium_barium_cuprate' }
+    ]
+
+    spoolingMachineTiers.forEach(machine => {
+        event.shaped(`cosmiccore:${machine.tier}_spooling_machine`, [
+            'CAC',
+            'RHP',
+            'ZAZ'
+        ], {
+            A: 'gtceu:steel_rod',
+            P: `gtceu:${machine.tier}_electric_motor`,
+            R: `gtceu:${machine.tier}_robot_arm`,
+            C: `#gtceu:circuits/${machine.tier}`,
+            H: `gtceu:${machine.tier}_machine_hull`,
+            Z: `gtceu:${machine.cable}_single_cable`
+        })
+    })
+    //TODO : Add some kind of Multi-Tiered Stealth Thread String Thingy... I don't know what to call it though!
+    event.shaped('cosmiccore:stealth_coating_1', ['ABC', 'BCB', 'CBD'], { A: 'legendarysurvivaloverhaul:warm_string', B: 'cosmiccore:murk_kelp', C: 'gtceu:long_soul_stained_steel_rod', D: 'legendarysurvivaloverhaul:cold_string' })
     event.remove({ id: 'gtceu:assembler/coil_cupronickel' })
     event.recipes.cosmiccore.spooling_machine('coil_cupronickel')
         .itemInputs(['8x gtceu:cupronickel_double_wire', '8x gtceu:bronze_foil'])
-        .inputFluids('gtceu:tin_alloy 144')
+        .inputFluids('144x gtceu:tin_alloy')
         .itemOutputs('gtceu:cupronickel_coil_block')
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
@@ -11,7 +38,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:assembler/coil_kanthal' })
     event.recipes.cosmiccore.spooling_machine('coil_kanthal')
         .itemInputs(['8x gtceu:kanthal_double_wire', '8x gtceu:stainless_steel_foil'])
-        .inputFluids('gtceu:cupronickel 144')
+        .inputFluids('144x gtceu:cupronickel')
         .itemOutputs('gtceu:kanthal_coil_block')
         .duration(300)
         .EUt(GTValues.VA[GTValues.MV])
@@ -19,14 +46,14 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:assembler/coil_nichrome' })
     event.recipes.cosmiccore.spooling_machine('coil_nichrome')
         .itemInputs(['8x gtceu:nichrome_double_wire', '8x gtceu:galvanized_ethersteel_foil'])
-        .inputFluids('gtceu:kanthal 144')
+        .inputFluids('144x gtceu:kanthal')
         .itemOutputs('gtceu:nichrome_coil_block')
         .duration(400)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.cosmiccore.spooling_machine('prisma_tungstensteel_coil')
         .itemInputs(['8x cosmiccore:prismatic_tungstensteel_double_wire', '8x gtceu:platinum_foil'])
-        .inputFluids('gtceu:nichrome 144')
+        .inputFluids('144x gtceu:nichrome')
         .itemOutputs('cosmiccore:prismatic_tungstensteel_coil_block')
         .duration(500)
         .EUt(GTValues.VA[GTValues.EV])

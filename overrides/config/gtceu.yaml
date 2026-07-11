@@ -126,11 +126,11 @@ worldgen:
   # Whether to increase number of rolls for dungeon chests. Increases dungeon loot drastically.
   # Default: true
   # WARNING: Currently unimplemented.
-  increaseDungeonLoot: true
+  increaseDungeonLoot: false
 
   # Allow GregTech to add additional GregTech Items as loot in various structures.
   # Default: true
-  addLoot: true
+  addLoot: false
 
   oreVeins:
     # The grid size (in chunks) for ore vein generation
