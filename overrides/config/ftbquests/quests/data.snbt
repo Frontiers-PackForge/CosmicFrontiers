@@ -13,10 +13,7 @@
 	grid_scale: 0.5d
 	hide_excluded_quests: false
 	icon: {
-		components: {
-			"ftbquests:missing_item": "chipped:alchemy_book"
-		}
-		id: "ftbquests:missing_item"
+		id: "minecraft:writable_book"
 	}
 	lock_message: ""
 	loot_crate_no_drop: {

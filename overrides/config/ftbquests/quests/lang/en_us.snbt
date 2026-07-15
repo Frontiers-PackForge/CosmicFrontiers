@@ -1,15 +1,17 @@
 {
-	chapter.2041768F4C2CACBD.title: "&fLights, Camera, Action!&r - [&eLV&7]"
+	chapter.2041768F4C2CACBD.title: "&fLights, Camera, Action!&r - [&eLV&7&r]"
 	chapter.208B6A32E147B069.title: "&fNegative Simulative Space&r- [&c&lUHV&7]"
 	chapter.2581DD8D257503F2.title: "&fAn Unstoppable Threat &r- [&9IV&7]"
 	chapter.2BFE3D121C4938C6.title: "&fFate Lost&r- [&5EV&7]"
 	chapter.2D7501C36E4E217A.title: "&fThe 8th Circle &r- [&dLuV&7]"
+	chapter.33E6132E4C81BC80.title: "&eNew? Start Here!"
 	chapter.41ACB8C2AA9CE9F1.title: "&fThe First Steps &r- [&eSteam&r]"
 	chapter.4AA04C0FE00BCA64.title: "&fDark Matter &r- [&3UV&7]"
 	chapter.535ED57C622DDD96.title: "&fThe Grid &r- [&6HV&7]"
 	chapter.648321DD3530A17B.title: "&fPaint the Galaxy Red &r- [&cZPM&7]"
 	chapter.68A4490D81087CDD.title: "&fTo the Skies! &r- [&bMV&7]"
 	chapter_group.09ADD253FB82D7A0.title: "&fAeon 3 - The Wrath of Time"
+	chapter_group.1654AF685B58AF60.title: "Questbook Info"
 	chapter_group.1E0EC9D191725D6D.title: "&fAeon 4 - A Godsent War"
 	chapter_group.1FAAA626E8FA46B7.title: "&fAeon 9 - Sol"
 	chapter_group.2096464D7A380E94.title: "&fAeon 8 - Fall of Titans"
@@ -32,6 +34,24 @@
 		"Please take caution using them, make constant backups, with a phyiscs mod like this even though it is almost perfect, it still will have edgecase issues we'll most likely find."
 	]
 	quest.0584A322CC8C1A28.quest_subtitle: "Redefining the game."
+	quest.072350DCC099E9C9.quest_subtitle: "Flocculation (Tier 3 Ore Processing)"
+	quest.07D19BDB1D7C756D.quest_desc: ["to be able to sort your ores into more useful products, the crushed ore mush first be washed and seperated in a flotation plant"]
+	quest.07D19BDB1D7C756D.quest_subtitle: "Washing your ores (Tier 1 Ore Processing)"
+	quest.07D8585C88A58A28.quest_desc: [
+		"To refine oil unto usable products, you must first start by distilling oil into the sulfuric material of your choice; in our case we will be distilling raw oil for sulfuric Naphtha"
+		""
+		""
+		"next take that sulfuric naphtha and desulfurize it with hydrogen. You will always get back hydrogen sulfidee, which contains all the hydrogen you used to desulfurize."
+		""
+		"If you process the hydrogen sulfide with an electrolyzer, you can get your hydrogen back and loop it for this process"
+	]
+	quest.07D8585C88A58A28.quest_subtitle: "Desulfurized"
+	quest.081F8227DD6E3430.title: "Tier 2 Nether Resources"
+	quest.0874866212F96185.title: "Tier 1 Nether Resources"
+	quest.0DB00A1D52F060D1.quest_desc: ["I don't understand how this works. let alone if you use creosote grease to make waxed leather, but, sure, whatever man LMAO."]
+	quest.0DB00A1D52F060D1.quest_subtitle: "An Alternate to Leather"
+	quest.0E9F869D3359D0C2.title: "Tier 2 Overworld Resources"
+	quest.0EC4D52E2252406D.quest_subtitle: "Gregtech Oxygen Tank"
 	quest.0FA8D92F9734C77C.quest_subtitle: "The Sulfur Ore Field"
 	quest.130F6EE5889B7ADE.quest_desc: [
 		"Cart Assemblers are quite frankly way too strong."
@@ -39,6 +59,8 @@
 		"However, for now they will remain teired here, if they need to be uptiered then we'll handle it then."
 	]
 	quest.130F6EE5889B7ADE.quest_subtitle: "Pretty Defined"
+	quest.168A6B3A2FD0CC45.quest_subtitle: "For the simple machines"
+	quest.168A6B3A2FD0CC45.title: "Basic LV Parts"
 	quest.16EE5D3DB14F4331.quest_desc: [
 		""
 		"          &l&f Craft a Nether permit, unlocking nether Access."
@@ -66,6 +88,12 @@
 	quest.16EE5D3DB14F4331.quest_subtitle: "Granting Access to Hell"
 	quest.18153CD2A0487F03.quest_desc: ["Spirit Fire can be created by throwing a demons dream fruit on the ground, and lighting it on fire."]
 	quest.18153CD2A0487F03.quest_subtitle: "Calm Flames"
+	quest.1B1ACF0C38147836.quest_desc: [
+		"This column contains all the different unique ores you can acquire from the different ore sorting steps."
+		""
+		"Some materials you need only come from higher tier sorting, so always be checking EMI"
+	]
+	quest.1B1ACF0C38147836.title: "Overworld Ores"
 	quest.1B387FD15E883317.quest_desc: [
 		"You'll need materials, lots of them, and that starts with *you* extracting them."
 		""
@@ -75,6 +103,21 @@
 	]
 	quest.1B387FD15E883317.quest_subtitle: "First Tools"
 	quest.1B387FD15E883317.title: "Get Some Sort of Tool"
+	quest.1FECA1C0E8B233D5.quest_subtitle: "Complete this quest to Unlock the LV Quest Chapter!"
+	quest.1FECA1C0E8B233D5.title: "Onward to LV!"
+	quest.233D177DD5A470E9.quest_desc: [
+		"This column contains all the different unique ores you can acquire from the different ore sorting steps."
+		""
+		"Some materials you need only come from higher tier sorting, so always be checking EMI"
+	]
+	quest.233D177DD5A470E9.quest_subtitle: "More Ores!"
+	quest.24C8852F25520072.quest_desc: [
+		"Future Ore Sorting Tiers will involve fluid logistics, and the recipes are still a wip."
+		""
+		"For now, they aren't needed, and as such no recipes will be provided for now until i balance their recipes correctly!"
+	]
+	quest.24C8852F25520072.quest_subtitle: "T4 / 5"
+	quest.24C8852F25520072.title: "Coming Soon"
 	quest.2631A613ADCD302E.quest_desc: ["Notice, try to avoid putting tools/armor/things with NBT into your stock ticker system, the stock ticker seems to have problems extracting them sometimes."]
 	quest.2631A613ADCD302E.quest_subtitle: "A centralized storage"
 	quest.2700DA7ED10B4664.quest_desc: [
@@ -93,6 +136,16 @@
 	]
 	quest.2700DA7ED10B4664.quest_subtitle: "How to find resources"
 	quest.2700DA7ED10B4664.title: "Ore Fields"
+	quest.2928EF0DCF970AE4.quest_desc: [
+		"Fans are extremely powerful in base create."
+		""
+		"You can wash composite ore with a Create fan to bulk-sift for tiny-dusts from ores if you wish to not manually sift every stack of ore you crush."
+		""
+		"&cSmelting/Smoking abilities have been disabled&r, as Create fans allow abnormally powerful processing capabilities compared to most if not all GT multis."
+		""
+		"This was the compromise for letting them be used for literally everything else (including aircraft) instead of gating them to Mid MV like before."
+	]
+	quest.2928EF0DCF970AE4.quest_subtitle: "A note about Fans."
 	quest.2AA6F78DB2ED60F2.quest_desc: [
 		" &7&oYou have dreamed."
 		""
@@ -108,6 +161,12 @@
 	]
 	quest.2AA6F78DB2ED60F2.quest_subtitle: "We all start somewhere"
 	quest.2AA6F78DB2ED60F2.title: "Gather Some Wood"
+	quest.2ABEE21EB889B7DD.quest_desc: [
+		"Did you know you can throw iron ingots and coal/charcoal dust into lava to batch craft wrought iron?"
+		""
+		"Give it a try! Wrought Iron is wonderful for early tools!"
+	]
+	quest.2ABEE21EB889B7DD.quest_subtitle: "Easier Wrought Iron"
 	quest.31B6D09FBE2173EF.quest_desc: [
 		"Get down near the bedrock layer and place an ember bore ontop of bedrock, with a mechanical core on the center block, insert coal (or other fuels, haven't tried) into the mechanical core with your logistics of choice (hopper will do). The bore will start to run and produce ember as long as there is ember available for extraction in the chunk"
 		""
@@ -115,6 +174,8 @@
 		"Before you find a place for your bore, you should make an atmospheric gauge, the more the dial increases, the more ember there is"
 	]
 	quest.31B6D09FBE2173EF.quest_subtitle: "Gathering your First Ember"
+	quest.32CBFA838C794C01.quest_desc: ["Allows you to build rituals easier, and that will help in the future."]
+	quest.32CBFA838C794C01.quest_subtitle: "Something you might want"
 	quest.35B7A194BB34BA44.quest_desc: [
 		"The \"&6Weirdly Durable Hammer&r\" has infinite durability and can mine obsidian."
 		""
@@ -128,12 +189,28 @@
 	]
 	quest.35B7A194BB34BA44.quest_subtitle: "The unsual that is willed to be. "
 	quest.35B7A194BB34BA44.title: "An Indestructable Ally"
+	quest.3733906CF47B1C06.quest_subtitle: "Multipurpose and cheap"
 	quest.38473AAE9EFA91C7.quest_desc: [
 		"Ember is easy to move!"
 		""
 		"Just place an Ember Emitter onto your source of embers, and connected it to an ember receptor with a tinker hammer."
 	]
 	quest.38473AAE9EFA91C7.quest_subtitle: "Moving Ember"
+	quest.3945947DBE1D85A0.quest_subtitle: "Tier 3 Overworld Resources"
+	quest.3A755F7B8012AB1A.quest_subtitle: "Create Oxygen Tank"
+	quest.3E42DDEBA9DBB13C.quest_desc: [
+		"The second layer of the abyss seems to be populated more densely with biomass than the first layer."
+		""
+		"This indicates the first layer is notably some kind of &nfeeding ground&r for a large organism or many smaller organisms."
+		""
+		"I would assume the Murkbloom consumes biomass at the surface and then sinks back down to deeper layers and &9provides nutrients to the rockbed&r."
+		""
+		"I should be careful, my passive sonars are detecting &6unusual spikes of activity in the water&r. It's safe to assume the density of Murkbloom here is higher, and more agressive to the sounds I make."
+		""
+		"I should consider researching the plantlife within the first layer of the Hollowed Abyss, they may allow me to mimic their sound supressing biology."
+	]
+	quest.3E42DDEBA9DBB13C.quest_subtitle: "Biodiversity in the fog. (Y-200 to Y-400)"
+	quest.3E42DDEBA9DBB13C.title: "The Hollow Abyss - Layer 2 : Muted Shelves"
 	quest.3FB852AA4A2FBB8B.quest_desc: [
 		"Primitive Pumps allow passive collection of water."
 		""
@@ -141,6 +218,38 @@
 		"If you haven't i'd recommend making one to automatically fill your boilers before you start!"
 	]
 	quest.3FB852AA4A2FBB8B.quest_subtitle: "Did you make a pump?"
+	quest.448F8668DD3AEB72.quest_desc: [
+		"As you've been playing, you most likely noticed many foods have a stat on them that says something like..."
+		""
+		"&e\"Main Course\""
+		"&e\"Side\""
+		"&e\"Drink\""
+		""
+		""
+		"These are the 3 Food Classifications that exist for &ocreating meals&r, and all meals start with a &emain course&r."
+		""
+		"Right click your main course of choice onto the hearth plate, and optionally add a side and drink."
+		"When you are ready. Eat your food by &nright clicking&r. Your meal will become a great memory!"
+		""
+		"You may have 1 memorized meal active at a time, and it will last until you die or eat another meal. You will get the combined stats of the entire meal as a permanent buff until then. (A way to see the combined buff will be in a future UI addition, most likely hovering over the icon itself)"
+		""
+		""
+		"Eating a variety of meals increases your taste profile, the more unique meals you've consumed oveer time, the stronger the impact of meals becomes. New meals only get added to your taste profile once per minecraft day, so you can only improve this by trying meals often."
+		""
+		"Eating the same meal over and over will eventually make it a \"Signature Meal\", which will prompt the player to shift-right-click their empty plate after a qualifiying meal, Signature meals are permanent and will grant you a portion of their stats forever, even after dying."
+		""
+		"&6"
+		"UIs for tracking your pallete/taste profile and Signature meals will come in a future update along with another system which can house their GUI elements.&r"
+	]
+	quest.448F8668DD3AEB72.quest_subtitle: "A meal to remember"
+	quest.469D5D2740B79048.quest_desc: [
+		"The powderizer will convert purified ores into a finely ground dust for chemical sepperation."
+		""
+		"Sorting the ground dust will give you the same outputs as regular purified ore sorting does."
+		""
+		"So make sure you run it through flotation again!"
+	]
+	quest.469D5D2740B79048.quest_subtitle: "Finely Ground (Tier 2 Ore Processing)"
 	quest.46A8D660ABEB83FA.quest_desc: [
 		"&eBronze&r is useful for crafting rudimentary frames and parts for machines."
 		""
@@ -163,6 +272,25 @@
 		"use the tinkers hammer on ember emitters/receptors to link them together."
 	]
 	quest.4A90C6B25FC79EAC.quest_subtitle: "Activating Ember"
+	quest.4C8AB307C45DBC3C.quest_subtitle: "Content Blocker"
+	quest.4C8AB307C45DBC3C.title: "Below Hell, The Undergarden"
+	quest.4CBACE925D480CAA.quest_desc: [
+		"When entering the deepslate level of the world, the air will become too thin to breathe normally."
+		""
+		"To aide in this, you can craft several items that counter air loss"
+		""
+		"Rebreather : Will double your air-capacity in thin-air environments"
+		""
+		"Reinforced Rebreather : Will halt oxygen loss in thin air and no air environments as long as you have a valid Oxygen Supply Tank (Bronze or Steel) "
+		""
+		"Create Backtank : Also compatible with the Reinforced Rebreather for pre-oxygen usage."
+		""
+		""
+		""
+		"For environments inside of water, you will have to use a Diving Helmet + Tanks of your choice."
+		"This might not work/apply in all cases, please let me know if you find strange places you can/can't breathe when you should/shouldn't be able to!"
+	]
+	quest.4CBACE925D480CAA.quest_subtitle: "Breathing in places you can't"
 	quest.50930E8761259EFD.quest_desc: [
 		"It says parallel, but it's more like 'batch processing'"
 		""
@@ -173,6 +301,7 @@
 		"Best combo (Wrought Iron Block + Coke Block) will result in about a 50% duration cut per steel ingot!"
 	]
 	quest.50930E8761259EFD.quest_subtitle: "The tooltip lies"
+	quest.50A60E8F488274DF.quest_subtitle: "Flocculation Solution"
 	quest.534DBCED4E339D89.quest_desc: [
 		"Stick an Ember receptor on it, and an ember emitter on your ember source."
 		""
@@ -182,9 +311,67 @@
 		"This is a pretty temporary recipe until i can be asked to make Steam Ember Hatches."
 	]
 	quest.534DBCED4E339D89.quest_subtitle: "Getting Embers into a Gregtech Machine"
+	quest.547989FC1806F95F.quest_desc: [
+		"You can get these ore chunks by first washing your crushed ore in a flotation plant."
+		""
+		"After which you then run through an ore sorter to get the chunks, these chunks can be processed into their respective materials"
+		""
+		""
+		"First Sources of : "
+		""
+		"Aluminium (From Saphire dust elecytrolysis)"
+		"Bauxite (For Titanium in the Future)"
+	]
+	quest.547989FC1806F95F.title: "Tier 1 Overworld Resources"
 	quest.5505401B1E8344EB.quest_subtitle: "The Key to Steel"
+	quest.57E59B0060EAB2C7.quest_desc: [
+		"Welcome to Cosmic Frontiers, we're glad to have you here."
+		""
+		"This quest is to get some housekeeping and information out of the way that's important to remember while playing Frontiers."
+		""
+		"1. &6We heavily modify the content of many mods, to the point that bug reports should not be submitted to mod devs. Please report &lALL&r &6issues to the modpack Github Firstly.&r"
+		"Reporting issues/crashes from this pack to mod devs may waste their time on mechanics that are pack exclusive and aren't relevant anywhere else."
+		""
+		"&bModpack Github&r : https://github.com/Frontiers-PackForge/CosmicFrontiers/issues"
+		"&bModpack Discord&r : https://discord.com/invite/fkxPAq9VQp"
+		""
+		"2. &eThis modpack has a built in narrative and story, quest chapters automatically appear when you reach major goals in the previous chapter.&r"
+		"&4&lBE WARNED: Enabling Edit Mode in the questbook may spoil the suprise."
+		""
+		"3. When you are ready to begin, head over to the Steam Age Chapter"
+		""
+		"Dev Note :"
+		"&aThe pack is currently in active development, and has recently migrated to 1.21."
+		"&aQuestbook will be improved as development goes along!&r"
+		"&aCore Mechanics and descriptions of them will be added here in time."
+	]
+	quest.57E59B0060EAB2C7.quest_subtitle: "Welcome to Frontiers"
+	quest.57E59B0060EAB2C7.title: "Welcome to Cosmic Frontiers"
 	quest.5973534E85F5D126.quest_subtitle: "Better Iesnium"
 	quest.5B91A99F1F8B588D.quest_subtitle: "Oh hey, brass!"
+	quest.601F4BCD183CC077.quest_subtitle: "A mundane but durable metal"
+	quest.67110A5418804D33.quest_desc: [
+		"You can't harvest pure nether quartz yourself, and gold is something only found in small amounts now."
+		""
+		""
+		"I suggest you either raid bastions and trade with piglins, or consider getting to LV :^)"
+	]
+	quest.67110A5418804D33.quest_subtitle: "Piglin Economics 101"
+	quest.687032030F774208.title: "Breathing in the Abyss"
+	quest.6E3EDA485D3AD5F7.quest_desc: [
+		"In the waters of the undergarden you have discovered a strange, lightless chasm into the depths."
+		""
+		"The water rumbles as if it's alive and waiting for something."
+		""
+		"The topmost layer seeems to be mostly empty, with some landmasses poking up above what seems to be a thick fog."
+		""
+		"This fog threshold seems to be either holding something back, or keeping something out."
+		""
+		"Before Leaving, I heard some sort of clicking sound, aimed at me."
+		"Something else is waiting for me down there."
+	]
+	quest.6E3EDA485D3AD5F7.quest_subtitle: "The only way forward, is down. (Y-64 to Y-200)"
+	quest.6E3EDA485D3AD5F7.title: "The Hollow Abyss - Layer 1 : The Shaded Sea"
 	quest.6E8D634B042DB26F.quest_desc: [
 		""
 		""
@@ -216,6 +403,12 @@
 		"These are useful, strictly because you can automate mining with massive airships if you are so inclined. and attaching huge harvester arms to simulated contraptions for early game mining really changes how you play."
 	]
 	quest.70C78D038EBF6CA6.quest_subtitle: "Mass Contraption Mining"
+	quest.725672ED730CE824.quest_desc: [
+		"creosote grease can act as a fill in for honeycomb in a few recipes."
+		""
+		"it requires a lot more than honeycomb, however"
+	]
+	quest.725672ED730CE824.quest_subtitle: "A saving grace - Alternate to Honey"
 	quest.72A429BEF13F8845.quest_desc: [
 		"You can attune it to netherrack to scan for iesnium in the nether."
 		""
@@ -225,6 +418,25 @@
 	]
 	quest.72A429BEF13F8845.quest_subtitle: "Click Netherack"
 	quest.733582199AB1E7B7.quest_subtitle: "Find some bees"
+	quest.7A016FB22E827915.quest_desc: [
+		"Diving below the heavy fog, the clicking seems to be more of a faint but persisting chittering."
+		""
+		"Something is moving through all of the water around me, some kind of &#9B3F9Dpathogen bloom&r, large dark masses of it float around."
+		""
+		"Off in the distance, I see a Gloomper Toad sink below the fog, out in the open water."
+		""
+		"In less than &#FF050A15 seconds&r the entire water turned into a chorus of clicking, chittering, and what I can only describe as a grotesque gurgling sound as the &#FF0505entire creature was dissolved whole&r."
+		""
+		"I will name this phenomena, \"&#D203E5The Murkbloom&r\", It is within my best interest that I stay as quiet, if not more quiet, as I would if dealing with a Warden."
+		""
+		"Something tells me I should &cavoid open water as often as possible&r, and listen to my surroundings &nvery closely&r"
+		""
+		"I tried to establish a warp point near the abyss, to find that this place is the source of &dAnti-magic emissions&r I've been dealing with. Seems Teleporting into the depths will be impossible for now."
+		""
+		"If I dive &cdeep enough&r, I might discover how to get my &aspell book&r working again."
+	]
+	quest.7A016FB22E827915.quest_subtitle: "Silence is the standard."
+	quest.7A016FB22E827915.title: "An Unseen Threat: The Murkbloom"
 	quest.7BAA63BF7EE181C3.quest_desc: [
 		"Cuprosiva ore is one of the many Composite Ores that exist across the overworld."
 		""
@@ -240,9 +452,17 @@
 		"Also worth noting, you can do this to Fersosine as well to get gold nuggets"
 	]
 	quest.7BAA63BF7EE181C3.quest_subtitle: "Copper and Tin"
-	quest.7FE634D65F26BB7A.quest_desc: ["Ghost : Genuinely no idea where this spawns, go figure it out for me ty!"]
+	quest.7F43598A6495BC40.quest_subtitle: "Your First Coil"
+	quest.7FE634D65F26BB7A.quest_desc: [
+		"Bullet Peppers spawn throughout Crimson Forests or can be traded from Piglins!"
+		""
+		"You need to use a knife to harvest them."
+		"Only the bottom block can be collected, rest will convert to sticks."
+	]
 	quest.7FE634D65F26BB7A.quest_subtitle: "Foods of the Nether"
 	task.454A92A4FCC0F185.title: "Any #c:tools/mining_tool"
+	task.4C54D581D667FD7F.title: "Nether Ores"
+	task.5BAFF29E38F526BB.title: "Move Forward"
 	task.5C1CE51AFE90BD57.title: "Craft Any Mortar"
 	task.6663702BE6CE1EEA.title: "Spirit Fires"
 	task.77609A3D829D9910.title: "Any Log"

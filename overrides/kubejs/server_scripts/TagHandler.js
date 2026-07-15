@@ -50,7 +50,9 @@ ServerEvents.tags('item', event => {
     strip('c:dusts/salt', 'expandeddelight:salt')
     strip('c:dusts/ash', 'embers:ash')
 
-    strip('c:ingots/titanium', 'rocketnautics:titanium_ingot')
+    strip('c:ingots/silver', 'embers:silver_ingot', 'occultism:silver_ingot')
+    strip('c:ingots/zinc',  'create:zinc_ingot')
+    strip('c:ingots/lead',  'embers:lead_ingot')
     strip('c:ingots/titanium_alloy', 'rocketnautics:titanium_alloy')
     strip('c:nuggets/titanium', 'rocketnautics:titanium_nugget')
     strip('c:nuggets/titanium_alloy', 'rocketnautics:titanium_alloy_nugget')

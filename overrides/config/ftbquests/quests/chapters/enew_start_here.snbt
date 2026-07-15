@@ -1,0 +1,29 @@
+{
+	default_hide_dependency_lines: false
+	default_min_width: 350
+	default_quest_shape: ""
+	filename: "enew_start_here"
+	group: "1654AF685B58AF60"
+	id: "33E6132E4C81BC80"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		hide_until_deps_visible: false
+		icon: {
+			components: {
+				"ftbquests:icon": "ars_nouveau:item/worn_notebook"
+			}
+			id: "ftbquests:custom_icon"
+		}
+		id: "57E59B0060EAB2C7"
+		min_width: 450
+		shape: "heart"
+		size: 3.0d
+		tasks: [{
+			id: "08DF90AD1DBB87F5"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

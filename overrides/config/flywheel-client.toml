@@ -5,7 +5,7 @@ limitUpdates = true
 #The number of worker threads to use. Set to -1 to let Flywheel decide. Set to 0 to disable parallelism. Requires a game restart to take effect.
 # Default: -1
 # Range: -1 ~ 16
-workerThreads = -1
+workerThreads = 4
 
 #Config options for Flywheel's built-in backends.
 [flw_backends]

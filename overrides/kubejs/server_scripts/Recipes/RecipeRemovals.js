@@ -30,6 +30,7 @@ yeet('occultism:miner_ancient_eldritch')
 
 ServerEvents.recipes(event => {
     
+    event.remove({ id: 'minecraft:netherite_ingot' })
     event.remove({ id: 'embers:hearth_coil' })
     event.remove({ id: 'gtceu:shaped/compressed_coke_clay' })
     event.remove({ id: 'gtceu:compressor/coke_bricks' })
@@ -41,14 +42,24 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:assembler/basic_circuit_board' })
     event.remove({ id: 'gtceu:shapeless/programmed_circuit' })
     event.remove({ id: 'gtceu:alloy_smelter/rubber_bar' })
+    event.remove({ id: 'gtceu:shaped/implosion_compressor' })
     event.remove({ type: 'gtceu:ore_washer' })
     event.remove({ type: 'gtceu:thermal_centrifuge' })
     event.remove({ type: 'embers:dawnstone_plate_hammering' })
+    event.remove({ type: 'enderio:alloy_smelting' })
+    event.remove({ type: 'enderio:smelting' })
     event.remove({ output: 'create:andesite_alloy' })
     event.remove({ id: 'gtceu:compressor/compress_plate_dust_wood' })
     event.remove({ id: 'gtceu:shaped/bronze_bricks_hull' })
     event.remove({ output: 'gtceu:lv_field_generator' })
     event.remove({ output: 'neovitae:blood_orb_weak' })
+
+    event.remove({ output: 'waystones:end_stone_waystone' })
+    event.remove({ output: 'waystones:blackstone_waystone' })
+    event.remove({ output: 'waystones:deepslate_waystone' })
+    event.remove({ output: 'waystones:sandy_waystone' })
+    event.remove({ output: 'waystones:mossy_waystone' })
+    event.remove({ output: 'waystones:waystone' })
 
     event.remove({ id: 'occultism:crafting/chalk_yellow_impure' })
     event.remove({ id: 'occultism:crafting/chalk_purple_impure' })

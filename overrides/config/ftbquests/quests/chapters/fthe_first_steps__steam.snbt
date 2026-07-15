@@ -74,17 +74,20 @@
 			size: 2.0d
 			tasks: [
 				{
+					consume_items: true
 					count: 4L
 					id: "7EB9DFDCFC636F56"
 					item: { count: 1, id: "cosmiccore:sturdy_plates" }
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "669AB128C6D86411"
 					item: { count: 1, id: "cosmiccore:heavy_bindings" }
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 2L
 					id: "7647BE77F1E26FCB"
 					item: { count: 1, id: "cosmiccore:compactified_rod" }
@@ -727,8 +730,8 @@
 				item: { count: 1, id: "gtceu:lp_steam_forge_hammer" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 8.5d
+			x: -3.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -754,7 +757,7 @@
 				item: { count: 1, id: "minecraft:anvil" }
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.5d
 			y: 8.5d
 		}
 		{
@@ -811,7 +814,12 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["3086786076FE1D21"]
+			dependencies: [
+				"3086786076FE1D21"
+				"725672ED730CE824"
+				"0DB00A1D52F060D1"
+			]
+			dependency_requirement: "one_completed"
 			id: "3C942F0A002979CB"
 			tasks: [{
 				id: "4350EFF1D772B83A"
@@ -937,10 +945,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"3471B2B107BD8510"
-				"500A9D5EDA492C5D"
-			]
+			dependencies: ["3471B2B107BD8510"]
 			hide_dependency_lines: true
 			id: "74923FA0D830E33B"
 			shape: "rsquare"
@@ -1081,7 +1086,6 @@
 		{
 			dependencies: [
 				"07A3009B253FF22E"
-				"39A51F5663188588"
 				"6757A6CA4855F64C"
 			]
 			id: "4EAF13E3E6637002"
@@ -1102,8 +1106,8 @@
 				item: { count: 1, id: "cosmiccore:cogwork_units" }
 				type: "item"
 			}]
-			x: -20.5d
-			y: -2.0d
+			x: -22.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["27511ADDB495D14D"]
@@ -1156,8 +1160,8 @@
 			dependencies: ["16EE5D3DB14F4331"]
 			id: "5B91A99F1F8B588D"
 			tasks: [{
-				id: "55589A3D2AE540EC"
-				item: { count: 1, id: "create:brass_ingot" }
+				id: "6E93F241D740E4DD"
+				item: { count: 1, id: "gtceu:brass_ingot" }
 				type: "item"
 			}]
 			x: -8.25d
@@ -1203,7 +1207,7 @@
 				}
 				{
 					id: "0584F2D56BF78E49"
-					item: { count: 1, id: "gtceu:tin_nugget" }
+					item: { count: 1, id: "gtceu:tiny_tin_dust" }
 					type: "item"
 				}
 			]
@@ -1453,6 +1457,119 @@
 			}]
 			x: -20.5d
 			y: -3.5d
+		}
+		{
+			dependencies: ["2AA6F78DB2ED60F2"]
+			hide_dependency_lines: true
+			id: "725672ED730CE824"
+			shape: "gear"
+			tasks: [{
+				id: "6F826ED1049138F5"
+				item: { count: 1, id: "cosmiccore:creosote_grease" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 6.0d
+		}
+		{
+			id: "0DB00A1D52F060D1"
+			shape: "gear"
+			tasks: [{
+				id: "20C4EE1B37F14079"
+				item: { count: 1, id: "farmersdelight:canvas" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"581145B56BCEB344"
+				"73731AE01E78FE55"
+			]
+			icon: {
+				id: "createdeco:decal_up"
+			}
+			id: "1FECA1C0E8B233D5"
+			shape: "octagon"
+			size: 2.5d
+			tasks: [{
+				id: "5BAFF29E38F526BB"
+				type: "checkmark"
+			}]
+			x: -17.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["64F703DC26C9B9BF"]
+			id: "32CBFA838C794C01"
+			tasks: [{
+				id: "2C5EE4C7AEBC9885"
+				item: { count: 1, id: "occultism:ritual_satchel_t1" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["35B7A194BB34BA44"]
+			id: "2ABEE21EB889B7DD"
+			shape: "gear"
+			tasks: [{
+				id: "2DE25FCB662F318D"
+				item: { count: 1, id: "gtceu:wrought_iron_ingot" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["16EE5D3DB14F4331"]
+			id: "67110A5418804D33"
+			tasks: [{
+				id: "4E53F9CAD6A28637"
+				item: { count: 1, id: "minecraft:quartz" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["67110A5418804D33"]
+			id: "448F8668DD3AEB72"
+			min_width: 400
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "191B4A0F13C97851"
+				item: { count: 1, id: "cosmiccore:hearth_plate" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5BC3A390C1834322"]
+			id: "2928EF0DCF970AE4"
+			shape: "gear"
+			tasks: [{
+				id: "06202C80073C5B27"
+				item: { count: 1, id: "create:encased_fan" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2AA6F78DB2ED60F2"]
+			id: "4CBACE925D480CAA"
+			tasks: [{
+				id: "0F4A3E0EA11A9D08"
+				item: { count: 1, id: "cosmiccore:simple_rebreather" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
 		}
 	]
 }
