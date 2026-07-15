@@ -200,6 +200,7 @@ ServerEvents.recipes(event => {
         "duration": 300,
         "type": "occultism:ritual"
     })
+    event.recipes.occultism.spirit_fire('occultism:spirit_attuned_gem', 'minecraft:amethyst_shard')
     event.shapeless('waystones:black_sharestone', ['#waystones:waystones'])
     event.shaped('cosmiccore:rainbow_cane', ['ABC', 'DEF', 'GHI'], { A: 'minecraft:black_dye', B: 'minecraft:brown_dye', C: 'minecraft:red_dye', D: 'minecraft:yellow_dye', E: 'minecraft:sugar_cane', F: 'minecraft:orange_dye', G: 'minecraft:green_dye', H: 'minecraft:blue_dye', I: 'minecraft:white_dye' })
     event.shaped('cosmiccore:steel_plated_bronze_casing', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:steel_plate', B: 'gtceu:bronze_rod', C: 'gtceu:bronze_machine_casing' })
@@ -412,7 +413,37 @@ ServerEvents.recipes(event => {
         },
         "type": "minecraft:smelting"
     })
+    const sharestoneColors = [
+        'orange',
+        'magenta',
+        'light_blue',
+        'yellow',
+        'lime',
+        'pink',
+        'gray',
+        'light_gray',
+        'cyan',
+        'purple',
+        'blue',
+        'brown',
+        'green',
+        'red',
+        'black'
+    ]
 
+    const sharestones = sharestoneColors.map(color =>
+        `waystones:${color}_sharestone`
+    )
+
+    sharestoneColors.forEach(color => {
+        event.shapeless(
+            `waystones:${color}_sharestone`,
+            [
+                Ingredient.of(sharestones),
+                `minecraft:${color}_dye`
+            ]
+        ).id(`cosmicfrontiers:sharestone_recoloring/${color}`)
+    })
 
 
 

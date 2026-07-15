@@ -29,7 +29,7 @@ yeet('occultism:miner_ancient_eldritch')
 
 
 ServerEvents.recipes(event => {
-    
+
     event.remove({ id: 'minecraft:netherite_ingot' })
     event.remove({ id: 'embers:hearth_coil' })
     event.remove({ id: 'gtceu:shaped/compressed_coke_clay' })
@@ -124,6 +124,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:forge_hammer/hammer_raw_earthen_salts_to_crushed' })
     event.remove({ id: 'gtceu:compressor/compress_plate_dust_treated_wood' })
     event.remove({ id: 'gtceu:shaped/shape_empty' })
+    event.remove({ id: 'occultism:spirit_fire/spirit_attuned_gem' })
 
 
 
@@ -207,6 +208,27 @@ ServerEvents.recipes(event => {
         'minecraft:diamond',
         "minecraft:flint"
     )
+    const sharestones = [
+        'waystones:orange_sharestone',
+        'waystones:magenta_sharestone',
+        'waystones:light_blue_sharestone',
+        'waystones:yellow_sharestone',
+        'waystones:lime_sharestone',
+        'waystones:pink_sharestone',
+        'waystones:gray_sharestone',
+        'waystones:light_gray_sharestone',
+        'waystones:cyan_sharestone',
+        'waystones:purple_sharestone',
+        'waystones:blue_sharestone',
+        'waystones:brown_sharestone',
+        'waystones:green_sharestone',
+        'waystones:red_sharestone',
+        'waystones:black_sharestone'
+    ]
+
+    sharestones.forEach(item => {
+        event.remove({ output: item })
+    })
 })
 
 ServerEvents.tags('item', event => {

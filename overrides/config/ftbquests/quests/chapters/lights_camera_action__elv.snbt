@@ -773,5 +773,27 @@
 			x: 12.0d
 			y: -6.5d
 		}
+		{
+			dependencies: ["7F0D22395A2F8985"]
+			id: "406723668ED647BF"
+			tasks: [{
+				id: "15CDD2C9936F0BA0"
+				item: { count: 1, id: "cosmiccore:rainbow_cane" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["61F2E48EEF38C362"]
+			id: "3F9E4F1CC420E8B0"
+			tasks: [{
+				id: "254F0AE80409861C"
+				item: { count: 1, id: "gtceu:lv_chemical_reactor" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
 	]
 }
