@@ -17,6 +17,15 @@ let yeet_f = (itemName) => {
     })
 }
 
+RecipeViewerEvents.removeCategories(event => {
+    event.remove('create:fan_blasting')
+    event.remove('create:fan_smoking')
+    event.remove('enderio:alloy_smelting')
+    event.remove('ironfurnaces:generator_regular')
+    event.remove('ironfurnaces:generator_blasting')
+    event.remove('ironfurnaces:generator_smoking')
+})
+
 
 // yeet('')
 
@@ -30,6 +39,34 @@ yeet('occultism:miner_ancient_eldritch')
 
 ServerEvents.recipes(event => {
 
+    event.remove({ mod: 'ae2' })
+
+    event.remove({ id: 'rocketnautics:pressing/titanium_alloy_ingot' })
+    event.remove({ id: 'rocketnautics:pressing/titanium_ingot' })
+    event.remove({ id: 'create:pressing/brass_ingot' })
+    event.remove({ id: 'embers:create:pressing/iron_plate' })
+    event.remove({ id: 'embers:create:pressing/copper_plate' })
+    event.remove({ id: 'createdeco:pressing/andesite_sheet' })
+    event.remove({ id: 'createdeco:pressing/zinc_sheet' })
+    event.remove({ id: 'embers:create/pressing/dawnstone_plate' })
+    event.remove({ id: 'create:pressing/gold_ingot' })
+    event.remove({ id: 'embers:create/pressing/silver_plate' })
+    event.remove({ id: 'embers:create/pressing/lead_plate' })
+    event.remove({ id: 'create:pressing/copper_ingot' })
+    event.remove({ id: 'embers:create/pressing/dwarven_mithril_plate' })
+    event.remove({ id: 'create:pressing/iron_ingot' })
+    event.remove({ id: 'simulated:physics_assembler' })
+    event.remove({ id: 'create:crafting/kinetics/cart_assembler' })
+    event.remove({ id: 'malum:spirit_altar' })
+    event.remove({ id: 'gtceu:mixer/concrete_from_calcite' })
+    event.remove({ id: 'gtceu:mixer/concrete_from_marble' })
+    event.remove({ id: 'gtceu:shaped/bucket_of_concrete' })
+    event.remove({ id: 'malum:arcane_charcoal_from_runewood' })
+    event.remove({ id: 'malum:arcane_charcoal_from_soulwood' })
+    event.remove({ id: 'occultism:crafting/chalk_lime_impure' })
+    event.remove({ id: 'occultism:ritual/craft_research_fragment_dust' })
+    event.remove({ id: 'create:crafting/logistics/package_frogport' })
+    event.remove({ id: 'occultism:smelting/silver_ingot_from_dust' })
     event.remove({ id: 'minecraft:netherite_ingot' })
     event.remove({ id: 'embers:hearth_coil' })
     event.remove({ id: 'gtceu:shaped/compressed_coke_clay' })

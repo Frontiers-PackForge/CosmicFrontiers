@@ -148,7 +148,7 @@
 				item: { count: 1, id: "cosmiccore:lv_spooling_machine" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: 0.0d
 		}
 		{
@@ -658,15 +658,15 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["38D949291F0E780F"]
+			dependencies: ["33A577DB6CA4CEDB"]
 			id: "511193BD765C32B3"
 			tasks: [{
 				id: "3A8E4D99EA62B774"
 				item: { count: 1, id: "malum:runewood_totem_base" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -2.0d
+			x: 2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["511193BD765C32B3"]
@@ -676,8 +676,8 @@
 				item: { count: 1, id: "malum:blighted_gunk" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -4.0d
+			x: 2.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["6E3EDA485D3AD5F7"]
@@ -696,7 +696,11 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["687032030F774208"]
+			dependencies: [
+				"687032030F774208"
+				"2675C878C130E580"
+			]
+			dependency_requirement: "one_completed"
 			id: "3A755F7B8012AB1A"
 			tasks: [{
 				id: "097B09620F857106"
@@ -781,8 +785,8 @@
 				item: { count: 1, id: "cosmiccore:rainbow_cane" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -5.5d
+			x: 0.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["61F2E48EEF38C362"]
@@ -794,6 +798,80 @@
 			}]
 			x: -3.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["3F9E4F1CC420E8B0"]
+			id: "7BAF71B8957633BA"
+			tasks: [{
+				id: "145ABE05AB61D926"
+				item: { count: 1, id: "neovitae:blood_orb_weak" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7BAF71B8957633BA"
+				"7E0EAF453286A1BF"
+			]
+			id: "5E380EE48FCB8769"
+			tasks: [{
+				id: "27B44F0D886206F4"
+				item: { count: 1, id: "neovitae:ara_vitae" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["38D949291F0E780F"]
+			id: "33A577DB6CA4CEDB"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "5FAFC957CF46301F"
+				item: { count: 1, id: "malum:spirit_altar" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["33A577DB6CA4CEDB"]
+			id: "4C0C9EB65FCAB42C"
+			tasks: [{
+				id: "54537F3771E99BB1"
+				item: { count: 1, id: "malum:hallowed_gold_ingot" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4C0C9EB65FCAB42C"]
+			id: "2675C878C130E580"
+			tasks: [{
+				id: "64F3C6BCB4488C12"
+				item: { count: 1, id: "minecraft:netherite_ingot" }
+				type: "item"
+			}]
+			x: 5.75d
+			y: -5.5d
+		}
+		{
+			dependencies: ["38D949291F0E780F"]
+			hide_dependency_lines: true
+			id: "7E0EAF453286A1BF"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "7F9ED0B2DAEFA5BD"
+				item: { count: 1, id: "malum:spirit_altar" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.5d
 		}
 	]
 }

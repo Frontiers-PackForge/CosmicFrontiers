@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
     event.shaped('cosmiccore:pressurized_rebreather', [' A ', 'ABA', 'CCC'], { A: 'minecraft:string', B: 'cosmiccore:simple_rebreather', C: 'gtceu:double_steel_plate' })
     event.shaped('cosmiccore:simple_rebreather', [' A ', 'ABA', 'BCB'], { A: 'minecraft:string', B: 'minecraft:paper', C: 'gtceu:charcoal_dust' })
     event.shaped('cosmiccore:hearth_plate', ['AAA', 'BBB'], { A: 'gtceu:wrought_iron_plate', B: 'minecraft:smooth_quartz_slab' })
-    event.shaped('4x cosmiccore:lv_cogwork_magicapacitor', ['ABA', 'CDC', 'ABA'], { A: 'gtceu:steel_plate', B: 'gtceu:tempered_iesnium_foil', C: 'gtceu:tempered_iesnium_foil', D: 'cosmiccore:overloaded_pearls' })
+    event.shaped('4x cosmiccore:lv_cogwork_magicapacitor', ['ABA', 'CDC', 'ABA'], { A: 'gtceu:steel_plate', B: 'malum:mnemonic_fragment', C: 'gtceu:tempered_iesnium_foil', D: 'cosmiccore:overloaded_pearls' })
     event.shaped('8x gtceu:compressed_coke_clay', ['ABA', 'ACA', 'ADA'], { A: 'minecraft:clay_ball', B: 'minecraft:wheat', C: 'gtceu:brick_wooden_form', D: 'minecraft:sand' })
     event.shaped('gtceu:coke_oven_bricks', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:coke_oven_brick', B: 'create:andesite_alloy', C: 'minecraft:mud_bricks' })
     event.shaped('gtceu:lv_machine_casing', ['ABA', 'CDC', 'ACA'], { A: 'cosmiccore:riveted_straps', B: 'cosmiccore:lv_cogwork_magicapacitor', C: 'cosmiccore:lv_cladding', D: 'cosmiccore:lv_modular_frameworks' })
@@ -29,6 +29,8 @@ ServerEvents.recipes(event => {
         .itemOutputs('cosmiccore:hardened_resin')
         .EUt(GTValues.VA[GTValues.LV], 1)
         .duration(50)
+    event.shaped('simulated:physics_assembler', [' A ', 'BCB'], { A: 'create:analog_lever', B: 'gtceu:vacuum_tube', C: 'create:andesite_casing' })
+    event.shaped('create:cart_assembler', ['ABA', 'CDC'], { A: 'gtceu:vacuum_tube', B: 'gtceu:double_steel_plate', C: 'gtceu:small_andesite_alloy_gear', D: 'create:andesite_casing' })
     event.shaped('undergarden:catalyst', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:dark_steel_foil', B: 'malum:soul_stained_steel_plating', C: 'cosmiccore:lv_wildfire_core' })
     event.shaped('2x create:factory_gauge', ['AB', 'CD'], { A: 'gtceu:vacuum_tube', B: '#gtceu:crafting_tools/file', C: '#gtceu:crafting_tools/screwdriver', D: 'create:precision_mechanism' })
     event.shaped('2x create:package_frogport', ['ABA', 'CDC', 'EFE'], { A: 'copycats:copycat_cogwheel', B: 'minecraft:slime_ball', C: 'gtceu:vacuum_tube', D: 'create:item_vault', E: 'create:andesite_alloy', F: 'gtceu:steel_brick_casing' })
@@ -86,11 +88,63 @@ ServerEvents.recipes(event => {
         recipe.inputFluids(`${creosote}x gtceu:creosote`)
             .duration(duration)
     })
+    event.shaped('occultism:chalk_yellow_impure', ['ABC'], { A: 'occultism:chalk_white_impure', B: 'gtceu:gold_sulfide_amalgam_dust', C: 'minecraft:yellow_dye' })
+    event.shaped('occultism:chalk_lime_impure', ['ABC', 'D  '], { A: 'occultism:chalk_light_gray', B: 'occultism:research_fragment_dust', C: 'gtceu:emerald_dust', D: 'minecraft:slime_ball' })
+    event.custom({
+        "ritual_dummy": {
+            "id": "occultism:ritual_dummy/craft_research_fragment_dust",
+            "count": 1
+        },
+        "result": {
+            "id": "occultism:research_fragment_dust",
+            "count": 1
+        },
+        "ritual_type": "occultism:craft",
+        "pentacle_id": "occultism:possess_foliot",
+        "ingredients": [
+            {
+                "item": 'mynethersdelight:pepper_powder'
+            },
+            {
+                "item": "minecraft:lime_dye"
+            },
+            {
+                "item": 'mynethersdelight:pepper_powder'
+            },
+            {
+                "item": "minecraft:lime_dye"
+            },
+            {
+                "item": "minecraft:brush"
+            },
+            {
+                "item": "occultism:brush"
+            },
+            {
+                "item": "minecraft:writable_book"
+            },
+            {
+                "item": "minecraft:bookshelf"
+            }
+        ],
+        "activation_item": {
+            "item": "occultism:book_of_binding_bound_foliot"
+        },
+        "duration": 30,
+        "type": "occultism:ritual"
+    })
+
     event.recipes.gtceu.fluid_solidifier()
         .itemInputs('6x gtceu:firebrick')
         .itemOutputs('gtceu:firebricks')
         .inputFluids('1000x gtceu:concrete')
         .EUt(GTValues.VHA[GTValues.LV], 1)
+        .duration(100)
+    event.recipes.gtceu.fluid_solidifier()
+        .itemInputs('4x gtceu:coke_oven_brick')
+        .itemOutputs('gtceu:coke_oven_bricks')
+        .inputFluids('125x gtceu:concrete')
+        .EUt(16, 1)
         .duration(100)
     event.recipes.gtceu.mixer()
         .itemInputs('minecraft:clay_ball', 'gtceu:brick_dust', 'create:wheat_flour')
@@ -101,8 +155,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.compressor()
         .itemInputs('cosmiccore:fireclay_ball')
         .itemOutputs('gtceu:firebrick')
-        .EUt(GTValues.V[GTValues.LV], 1)
-        .duration(100)
+        .EUt(16, 1)
+        .duration(50)
     event.shaped('cosmiccore:reinforced_dawnstone_casing', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:iron_plate', B: 'gtceu:dawnstone_foil', C: 'gtceu:bronze_frame' })
     event.shaped('cosmiccore:light_dawnstone_casing', [' A ', 'BCB', ' A '], { A: 'gtceu:double_iron_plate', B: 'gtceu:dawnstone_foil', C: 'gtceu:bronze_frame' })
     event.recipes.gtceu.alloy_smelter()
@@ -138,7 +192,7 @@ ServerEvents.recipes(event => {
 
     event.smithing('cosmiccore:netherite_travelers_boots', 'cosmiccore:steel_travelers_boots', 'minecraft:netherite_ingot')
     event.shaped('cosmiccore:steel_travelers_boots', ['ABA', 'CDC', 'EBE'], { A: 'minecraft:green_wool', B: 'legendarysurvivaloverhaul:warm_string', C: 'legendarysurvivaloverhaul:cold_string', D: 'minecraft:chainmail_boots', E: 'gtceu:double_steel_plate' })
-    event.shaped('cosmiccore:high_pressure_assembler', ['AAA', 'ABA', 'CDC'], { A: 'gtceu:rubber_foil', B: 'gtceu:steel_machine_casing', C: 'gtceu:vacuum_tube', D: 'gtceu:steel_firebox_casing' })
+    event.shaped('cosmiccore:high_pressure_assembler', ['ABA', 'BCB', 'DDD'], { A: 'embers:wildfire_core', B: 'gtceu:vacuum_tube', C: 'gtceu:steel_machine_casing', D: 'gtceu:steel_firebox_casing' })
     event.recipes.gtceu.mixer()
         .itemInputs('4x gtceu:calcite_dust', '4x occultism:burnt_otherstone', '4x occultism:burnt_otherrock')
         .itemOutputs('occultism:chalk_white_impure')
@@ -245,7 +299,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.primitive_blast_furnace()
         .itemInputs('occultism:iesnium_dust')
         .itemOutputs('occultism:iesnium_ingot')
-        .duration(100)
+        .duration(900)
     event.recipes.cosmiccore.industrial_primitive_blast_furnace()
         .itemInputs('occultism:iesnium_dust')
         .itemOutputs('occultism:iesnium_ingot')
@@ -256,11 +310,27 @@ ServerEvents.recipes(event => {
     event.shaped('cosmiccore:steam_ember_emitter', [' A ', ' B ', 'CDE'], { A: 'embers:ember_shard', B: 'embers:dawnstone_plate', C: '#gtceu:crafting_tools/wrench', D: 'gtceu:steel_frame', E: '#gtceu:crafting_tools/hammer' })
     event.shaped('cosmiccore:steam_ember_receptor', ['A A', 'B B', 'CDE'], { A: 'gtceu:wrought_iron_rod', B: 'embers:dawnstone_plate', C: '#gtceu:crafting_tools/wrench', D: 'gtceu:steel_frame', E: '#gtceu:crafting_tools/hammer' })
     event.shaped('cosmiccore:palms_of_the_globestrider', ['ABA', 'B B'], { A: 'minecraft:string', B: 'cosmiccore:waxed_leather' })
-
+    event.recipes.gtceu.extractor()
+        .itemInputs('cosmiccore:soul_gourd')
+        .outputFluids('1000x gtceu:soulresin')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(400)
+    event.custom({
+        "type": "embers:melting",
+        "input": [
+            {
+                "item": 'cosmiccore:soul_gourd'
+            }
+        ],
+        "output": {
+            "amount": 1000,
+            "fluid": "gtceu:soulresin"
+        }
+    })
     event.custom({
         "type": "occultism:miner",
         "ingredient": {
-            "tag": "occultism:miners/basic_resources"
+            "item": 'occultism:iesnium_pickaxe'
         },
         "result": {
             "type": "occultism:weighted_item",
@@ -271,6 +341,94 @@ ServerEvents.recipes(event => {
             "weight": 7000
         }
     })
+
+    event.custom({
+        "type": "occultism:miner",
+        "ingredient": {
+            "tag": "occultism:miners/basic_resources"
+        },
+        "result": {
+            "type": "occultism:weighted_item",
+            "stack": {
+                "count": 1,
+                "id": 'malum:null_slate'
+            },
+            "weight": 2500
+        }
+    })
+
+
+    event.custom({
+        "type": "occultism:miner",
+        "ingredient": {
+            "tag": "occultism:miners/basic_resources"
+        },
+        "result": {
+            "type": "occultism:weighted_item",
+            "stack": {
+                "count": 1,
+                "id": 'malum:mnemonic_fragment'
+            },
+            "weight": 2500
+        }
+    })
+
+
+    event.custom({
+        "type": "occultism:miner",
+        "ingredient": {
+            "tag": "occultism:miners/basic_resources"
+        },
+        "result": {
+            "type": "occultism:weighted_item",
+            "stack": {
+                "count": 1,
+                "id": 'malum:auric_embers'
+            },
+            "weight": 2500
+        }
+    })
+
+    event.custom({
+        "type": "occultism:miner",
+        "ingredient": {
+            "tag": "occultism:miners/basic_resources"
+        },
+        "result": {
+            "type": "occultism:weighted_item",
+            "stack": {
+                "count": 1,
+                "id": 'malum:malignant_lead'
+            },
+            "weight": 2500
+        }
+    })
+
+    event.custom({
+        "type": "occultism:miner",
+        "ingredient": {
+            "tag": "occultism:miners/basic_resources"
+        },
+        "result": {
+            "type": "occultism:weighted_item",
+            "stack": {
+                "count": 1,
+                "id": 'malum:void_salts'
+            },
+            "weight": 2500
+        }
+    })
+
+    event.recipes.gtceu.coke_oven()
+        .itemInputs('#malum:soulwood_logs')
+        .itemOutputs('malum:arcane_charcoal')
+        .outputFluids('250x embers:dwarven_oil')
+        .duration(900)
+    event.recipes.gtceu.coke_oven()
+        .itemInputs('#malum:runewood_logs')
+        .itemOutputs('malum:arcane_charcoal')
+        .outputFluids('250x embers:dwarven_oil')
+        .duration(900)
     event.recipes.gtceu.assembler()
         .itemInputs('2x gtceu:brass_plate', 'gtceu:small_iron_gear', 'gtceu:brass_screw')
         .itemOutputs('4x cosmiccore:cogwork_units')
@@ -283,13 +441,19 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:treated_wood_plate')
         .EUt(2, 1)
         .duration(40)
+    event.shaped('8x cosmiccore:riveted_straps', [' A ', 'ABA', ' A '], { A: 'gtceu:lead_bolt', B: 'gtceu:steel_foil' })
+    event.recipes.gtceu.mixer()
+        .itemInputs('gtceu:gold_dust', 'gtceu:sulfur_dust')
+        .itemOutputs('2x gtceu:gold_sulfide_amalgam_dust')
+        .inputFluids('500x gtceu:soulresin')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(150)
     event.shaped('2x cosmiccore:lv_cladding', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:lead_bolt', B: 'gtceu:rubber_foil', C: 'gtceu:treated_wood_plate' })
     event.recipes.gtceu.bender()
         .itemInputs('minecraft:honeycomb', 'minecraft:leather')
         .itemOutputs('cosmiccore:waxed_leather')
         .EUt(16, 1)
         .duration(100)
-    event.shaped('8x cosmiccore:riveted_straps', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:lead_bolt', B: 'cosmiccore:waxed_leather', C: 'gtceu:steel_foil' })
     event.recipes.gtceu.bender()
         .itemInputs('16x cosmiccore:creosote_grease', 'minecraft:leather')
         .itemOutputs('cosmiccore:waxed_leather')

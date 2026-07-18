@@ -48,8 +48,13 @@
 	quest.07D8585C88A58A28.quest_subtitle: "Desulfurized"
 	quest.081F8227DD6E3430.title: "Tier 2 Nether Resources"
 	quest.0874866212F96185.title: "Tier 1 Nether Resources"
-	quest.0DB00A1D52F060D1.quest_desc: ["I don't understand how this works. let alone if you use creosote grease to make waxed leather, but, sure, whatever man LMAO."]
-	quest.0DB00A1D52F060D1.quest_subtitle: "An Alternate to Leather"
+	quest.0C0E3F2E637DA0A9.quest_desc: [
+		"You've been able to alloy smelt dawnstone, but you need some in molten form to create aspecti."
+		""
+		""
+		"Use a melter powered with a small amount of ember to makee your first molten dawnstone."
+	]
+	quest.0C0E3F2E637DA0A9.quest_subtitle: "Dawnstone but Molten"
 	quest.0E9F869D3359D0C2.title: "Tier 2 Overworld Resources"
 	quest.0EC4D52E2252406D.quest_subtitle: "Gregtech Oxygen Tank"
 	quest.0FA8D92F9734C77C.quest_subtitle: "The Sulfur Ore Field"
@@ -103,6 +108,14 @@
 	]
 	quest.1B387FD15E883317.quest_subtitle: "First Tools"
 	quest.1B387FD15E883317.title: "Get Some Sort of Tool"
+	quest.1FD7F7A22E29CFF5.quest_desc: [
+		"Soul Gourd Stems spawn on soul sand or soil in the nether. "
+		""
+		"This makes Soulsand Valleys a great place to find these!"
+		""
+		"If you don't have one near your nether access, i'd suggest looking around for soulsand patches near the lava layer"
+	]
+	quest.1FD7F7A22E29CFF5.quest_subtitle: "Found on soulsand and soil"
 	quest.1FECA1C0E8B233D5.quest_subtitle: "Complete this quest to Unlock the LV Quest Chapter!"
 	quest.1FECA1C0E8B233D5.title: "Onward to LV!"
 	quest.233D177DD5A470E9.quest_desc: [
@@ -120,6 +133,7 @@
 	quest.24C8852F25520072.title: "Coming Soon"
 	quest.2631A613ADCD302E.quest_desc: ["Notice, try to avoid putting tools/armor/things with NBT into your stock ticker system, the stock ticker seems to have problems extracting them sometimes."]
 	quest.2631A613ADCD302E.quest_subtitle: "A centralized storage"
+	quest.2675C878C130E580.quest_subtitle: "Better Netherite"
 	quest.2700DA7ED10B4664.quest_desc: [
 		"Normally, gregtech spawns veins wildly all over the world at a constant fixed distance in a grid."
 		""
@@ -266,6 +280,16 @@
 		"...or an Cuprosiva Ore Field."
 	]
 	quest.46A8D660ABEB83FA.quest_subtitle: "The First Alloy"
+	quest.4978BF804A8975F5.quest_desc: [
+		"SU is still produced normally as it would be in standard create."
+		""
+		"Waterwheels, Wind Mills, and Steam Engines."
+		""
+		""
+		"Hold W to ponder most anything from create for more detailed info on the block itself."
+	]
+	quest.4978BF804A8975F5.quest_subtitle: "Base Create Behavior"
+	quest.4978BF804A8975F5.title: "Generating SU"
 	quest.4A90C6B25FC79EAC.quest_desc: [
 		"Stick this down, hopper ember shards/crystals in, watch it turn into ember"
 		""
@@ -291,6 +315,8 @@
 		"This might not work/apply in all cases, please let me know if you find strange places you can/can't breathe when you should/shouldn't be able to!"
 	]
 	quest.4CBACE925D480CAA.quest_subtitle: "Breathing in places you can't"
+	quest.4E3A7CB013A59A37.quest_desc: ["You can now use concrete to produce coke bricks more efficiently!"]
+	quest.4E3A7CB013A59A37.quest_subtitle: "Better Coke Brick Recipe"
 	quest.50930E8761259EFD.quest_desc: [
 		"It says parallel, but it's more like 'batch processing'"
 		""
@@ -349,6 +375,7 @@
 	quest.57E59B0060EAB2C7.title: "Welcome to Cosmic Frontiers"
 	quest.5973534E85F5D126.quest_subtitle: "Better Iesnium"
 	quest.5B91A99F1F8B588D.quest_subtitle: "Oh hey, brass!"
+	quest.5E380EE48FCB8769.quest_subtitle: "NYI"
 	quest.601F4BCD183CC077.quest_subtitle: "A mundane but durable metal"
 	quest.67110A5418804D33.quest_desc: [
 		"You can't harvest pure nether quartz yourself, and gold is something only found in small amounts now."
@@ -387,12 +414,7 @@
 	quest.6E8D634B042DB26F.title: "Thermal Woes"
 	quest.6ED6791358655950.quest_desc: ["Holds as much stuff as a double chest in one block, awesome!"]
 	quest.6ED6791358655950.quest_subtitle: "Better Storage"
-	quest.6EF94519E4BCBE72.quest_desc: [
-		"Occultism Got updated..."
-		""
-		""
-		"Packdev doesn't know the new content. please hold while i learn it lol"
-	]
+	quest.6EF94519E4BCBE72.quest_desc: ["Another Color to add to the pile, this time it's lime"]
 	quest.6EF94519E4BCBE72.quest_subtitle: "Soooo"
 	quest.70C78D038EBF6CA6.quest_desc: [
 		"Rock Cutting wheels will cleave large areas of material away when active."
@@ -403,12 +425,6 @@
 		"These are useful, strictly because you can automate mining with massive airships if you are so inclined. and attaching huge harvester arms to simulated contraptions for early game mining really changes how you play."
 	]
 	quest.70C78D038EBF6CA6.quest_subtitle: "Mass Contraption Mining"
-	quest.725672ED730CE824.quest_desc: [
-		"creosote grease can act as a fill in for honeycomb in a few recipes."
-		""
-		"it requires a lot more than honeycomb, however"
-	]
-	quest.725672ED730CE824.quest_subtitle: "A saving grace - Alternate to Honey"
 	quest.72A429BEF13F8845.quest_desc: [
 		"You can attune it to netherrack to scan for iesnium in the nether."
 		""
@@ -417,7 +433,6 @@
 		"If you have an AMD graphics card, you will need to modify the Occultism config file to enable AMD compatibility"
 	]
 	quest.72A429BEF13F8845.quest_subtitle: "Click Netherack"
-	quest.733582199AB1E7B7.quest_subtitle: "Find some bees"
 	quest.7A016FB22E827915.quest_desc: [
 		"Diving below the heavy fog, the clicking seems to be more of a faint but persisting chittering."
 		""
@@ -452,6 +467,8 @@
 		"Also worth noting, you can do this to Fersosine as well to get gold nuggets"
 	]
 	quest.7BAA63BF7EE181C3.quest_subtitle: "Copper and Tin"
+	quest.7BAF71B8957633BA.quest_subtitle: "Life shall be spilt"
+	quest.7C5DB25564510E87.quest_subtitle: "the base of better chalks"
 	quest.7F43598A6495BC40.quest_subtitle: "Your First Coil"
 	quest.7FE634D65F26BB7A.quest_desc: [
 		"Bullet Peppers spawn throughout Crimson Forests or can be traded from Piglins!"

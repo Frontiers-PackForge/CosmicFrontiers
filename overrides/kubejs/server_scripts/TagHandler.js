@@ -51,8 +51,8 @@ ServerEvents.tags('item', event => {
     strip('c:dusts/ash', 'embers:ash')
 
     strip('c:ingots/silver', 'embers:silver_ingot', 'occultism:silver_ingot')
-    strip('c:ingots/zinc',  'create:zinc_ingot')
-    strip('c:ingots/lead',  'embers:lead_ingot')
+    strip('c:ingots/zinc', 'create:zinc_ingot')
+    strip('c:ingots/lead', 'embers:lead_ingot')
     strip('c:ingots/titanium_alloy', 'rocketnautics:titanium_alloy')
     strip('c:nuggets/titanium', 'rocketnautics:titanium_nugget')
     strip('c:nuggets/titanium_alloy', 'rocketnautics:titanium_alloy_nugget')
@@ -63,4 +63,11 @@ ServerEvents.tags('item', event => {
     strip('c:storage_blocks/titanium', 'rocketnautics:titanium_block')
     strip('c:storage_blocks/titanium_alloy', 'rocketnautics:titanium_alloy_block')
     strip('create:crushed_raw_materials', 'rocketnautics:crushed_raw_titanium')
+})
+
+ServerEvents.tags('item', event => {
+    GTRegistries.MATERIALS.forEach(mat => {
+        event.add('farmersdelight:tools/knives', [`gtceu:${mat.name}_knife`])
+        event.add('occultism:tools/knife', [`gtceu:${mat.name}_knife`])
+    })
 })

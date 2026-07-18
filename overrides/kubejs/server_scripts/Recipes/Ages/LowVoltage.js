@@ -1,4 +1,28 @@
 ServerEvents.recipes(event => {
+    const rainbowCaneDyeColors = [
+        'white', 'orange', 'magenta', 'light_blue',
+        'yellow', 'lime', 'pink', 'gray',
+        'light_gray', 'cyan', 'purple', 'blue',
+        'brown', 'green', 'red', 'black'
+    ]
+
+    rainbowCaneDyeColors.forEach((color, index) => {
+        event.recipes.gtceu.chemical_reactor()
+            .itemInputs('4x cosmiccore:rainbow_cane')
+            .inputFluids('1000x gtceu:sulfuric_acid')
+            .inputFluids('1000x minecraft:water')
+            .outputFluids(`1440x gtceu:${color}_dye`)
+            .circuit(index + 1)
+            .EUt(GTValues.VA[GTValues.LV], 1)
+            .duration(300)
+    })
+    event.recipes.gtceu.chemical_reactor()
+        .itemInputs('occultism:spirit_attuned_gem')
+        .itemOutputs('neovitae:blood_orb_weak')
+        .inputFluids('1000x biomesoplenty:blood')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(1400)
+    event.shaped('malum:spirit_altar', ['ABA', 'CDC', 'DDD'], { A: 'malum:soul_stained_steel_plating', B: 'occultism:soul_gem', C: 'gtceu:double_rose_gold_plate', D: '#malum:runewood_planks' })
     event.shaped('cosmiccore:lv_ember_input_hatch', ['ABA', 'CDC', 'ABA'], { A: 'gtceu:double_steel_plate', B: 'gtceu:aluminium_foil', C: 'embers:wildfire_core', D: 'embers:ember_crystal_cluster' })
     event.recipes.gtceu.chemical_reactor()
         .itemInputs('occultism:otherworld_ashes', 'minecraft:amethyst_shard')
@@ -47,9 +71,13 @@ ServerEvents.recipes(event => {
         .itemOutputs('minecraft:netherite_ingot')
         .EUt(GTValues.VA[GTValues.LV], 1)
         .duration(2400)
-
+    event.recipes.gtceu.assembler()
+        .itemInputs('minecraft:paper', '2x gtceu:aluminium_bolt')
+        .itemOutputs('6x gtceu:resistor')
+        .inputFluids('250x gtceu:redstone')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(240)
     event.shaped('8x cosmiccore:lightweight_dark_steel_casing', ['ABA', 'ACA', 'ABA'], { A: 'gtceu:dark_steel_foil', B: 'gtceu:long_dark_steel_rod', C: 'gtceu:dark_steel_frame' })
-
     event.shaped('cosmiccore:industrial_ore_sorter', ['AAA', 'BCB', 'DED'], { A: 'gtceu:lv_robot_arm', B: 'gtceu:lv_conveyor_module', C: 'cosmiccore:lightweight_dark_steel_casing', D: 'gtceu:tin_single_cable', E: 'gtceu:basic_electronic_circuit' })
     event.shaped('gtceu:implosion_compressor', ['AAA', 'BCB', 'DBD'], { A: 'enderio:reinforced_obsidian_block', B: '#gtceu:circuits/mv', C: 'cosmiccore:steel_plated_bronze_casing', D: 'gtceu:annealed_copper_double_cable' })
     event.shaped('cosmiccore:industrial_flotation_plant', ['AAA', 'BCB', 'DED'], { A: 'minecraft:cauldron', B: 'gtceu:lv_electric_pump', C: 'cosmiccore:lightweight_dark_steel_casing', D: 'gtceu:tin_single_cable', E: 'gtceu:basic_electronic_circuit' })
