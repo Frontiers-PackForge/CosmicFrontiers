@@ -67,7 +67,17 @@ yeet('occultism:ritual_dummy/summon_djinni_crusher')
 yeet('occultism:ritual_dummy/summon_afrit_crusher')
 yeet('occultism:ritual_dummy/summon_marid_crusher')
 yeet('occultism:wormhole_frame')
-
+yeet('gtceu:lp_steam_miner')
+yeet('gtceu:hp_steam_miner')
+yeet('gtceu:lv_miner')
+yeet('gtceu:mv_miner')
+yeet('gtceu:hv_miner')
+yeet('gtceu:ev_large_miner')
+yeet('gtceu:iv_large_miner')
+yeet('gtceu:luv_large_miner')
+yeet('gtceu:mv_bedrock_ore_miner')
+yeet('gtceu:hv_bedrock_ore_miner')
+yeet('gtceu:ev_bedrock_ore_miner')
 
 
 ServerEvents.recipes(event => {
