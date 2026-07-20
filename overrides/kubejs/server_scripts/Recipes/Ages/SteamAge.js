@@ -1,6 +1,13 @@
 
 
-
+ServerEvents.compostableRecipes(event => {
+    event.add(Item.of('legendarysurvivaloverhaul:ice_fern_seeds'), 0.3)
+    event.add(Item.of('legendarysurvivaloverhaul:sun_fern_seeds'), 0.3)
+    event.add(Item.of('legendarysurvivaloverhaul:ice_fern_leaf'), 0.65)
+    event.add(Item.of('legendarysurvivaloverhaul:sun_fern_leaf'), 0.65)
+    event.add(Item.of('legendarysurvivaloverhaul:ice_fern_gold_leaf'), 1.0)
+    event.add(Item.of('legendarysurvivaloverhaul:sun_fern_gold_leaf'), 1.0)
+})
 ServerEvents.recipes(event => {
     event.shaped('cosmiccore:steel_supply_tank', [' A ', 'BCB', 'BBB'], { A: 'gtceu:steel_tiny_fluid_pipe', B: 'gtceu:double_steel_plate', C: 'gtceu:steel_drum' })
     event.shaped('cosmiccore:bronze_supply_tank', [' A ', 'BCB', 'BBB'], { A: 'gtceu:bronze_tiny_fluid_pipe', B: 'gtceu:double_bronze_plate', C: 'gtceu:bronze_drum' })
@@ -48,10 +55,10 @@ ServerEvents.recipes(event => {
     event.shaped('cosmiccore:steam_fluid_input_hatch', ['A', 'B'], { A: 'minecraft:glass', B: 'gtceu:bronze_machine_casing' })
     event.shaped('cosmiccore:steam_fluid_output_hatch', ['A', 'B'], { A: 'gtceu:bronze_machine_casing', B: 'minecraft:glass' })
 
-    event.recipes.create.splashing(Item.of("gtceu:tiny_gold_dust", 3), "cosmiccore:crushed_ferosine_ore")
+    event.recipes.create.splashing(Item.of("gtceu:tiny_gold_dust", 2), "cosmiccore:crushed_ferosine_ore")
     event.recipes.create.splashing(Item.of("gtceu:tiny_sphalerite_dust", 3), "cosmiccore:crushed_pyroltic_ore")
     event.recipes.create.splashing(Item.of("gtceu:tiny_tin_dust", 3), "cosmiccore:crushed_cuprosiva_ore")
-    event.recipes.create.splashing(Item.of("gtceu:tiny_silver_dust", 3), "cosmiccore:crushed_galenite_ore")
+    event.recipes.create.splashing(Item.of("gtceu:tiny_silver_dust", 2), "cosmiccore:crushed_galenite_ore")
 
     event.shapeless('gtceu:tiny_tin_dust', ['gtceu:tin_nugget', '#gtceu:crafting_tools/mortar'])
     event.recipes.cosmiccore.industrial_primitive_blast_furnace()
@@ -133,7 +140,17 @@ ServerEvents.recipes(event => {
         "duration": 30,
         "type": "occultism:ritual"
     })
-
+    event.recipes.gtceu.mixer()
+        .itemInputs('4x #create:pulpifiable')
+        .itemOutputs('create:pulp')
+        .inputFluids('250x minecraft:water')
+        .EUt(16, 1)
+        .duration(100)
+    event.recipes.gtceu.compressor()
+        .itemInputs('create:pulp')
+        .itemOutputs('create:cardboard')
+        .EUt(16, 1)
+        .duration(100)
     event.recipes.gtceu.fluid_solidifier()
         .itemInputs('6x gtceu:firebrick')
         .itemOutputs('gtceu:firebricks')
