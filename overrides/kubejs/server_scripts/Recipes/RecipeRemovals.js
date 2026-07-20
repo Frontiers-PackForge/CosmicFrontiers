@@ -95,6 +95,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'occultism:ritual/craft_stable_wormhole' })
     event.remove({ id: 'occultism:crafting/storage_remote_inert' })
     event.remove({ id: 'occultism:ritual/craft_storage_remote' })
+    event.remove({ mod: 'cognition' })
     event.remove({ mod: 'ae2' })
     event.remove({ id: 'occultism:crafting/lens_frame' })
     event.remove({ id: 'occultism:crafting/iesnium_pickaxe' })
