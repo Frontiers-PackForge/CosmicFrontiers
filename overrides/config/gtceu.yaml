@@ -462,7 +462,7 @@ client:
     # - UNITY
     # - UNREAL
     # - DISABLED
-    type: DISABLED
+    type: UNREAL
 
     # Whether or not to add bloom to emissive textures
     # Default: true
