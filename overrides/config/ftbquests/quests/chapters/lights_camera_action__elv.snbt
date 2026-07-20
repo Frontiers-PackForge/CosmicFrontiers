@@ -72,19 +72,25 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["61F2E48EEF38C362"]
+			dependencies: [
+				"61F2E48EEF38C362"
+				"1C295BB0A0CEBF57"
+				"7A2A4EDFC4DA7997"
+			]
 			id: "4DC18C0FADFA9CD2"
 			tasks: [{
 				id: "271FF2B318237D58"
 				item: { count: 1, id: "gtceu:lv_field_generator" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.5d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7F43598A6495BC40"]
 			id: "666A77BC58F33CD0"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "50A029D49905B353"
 				item: { count: 1, id: "gtceu:electric_blast_furnace" }
@@ -616,7 +622,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 8.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -800,7 +806,10 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["3F9E4F1CC420E8B0"]
+			dependencies: [
+				"3F9E4F1CC420E8B0"
+				"4DC18C0FADFA9CD2"
+			]
 			id: "7BAF71B8957633BA"
 			tasks: [{
 				id: "145ABE05AB61D926"
@@ -816,6 +825,8 @@
 				"7E0EAF453286A1BF"
 			]
 			id: "5E380EE48FCB8769"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "27B44F0D886206F4"
 				item: { count: 1, id: "neovitae:ara_vitae" }
@@ -872,6 +883,81 @@
 			}]
 			x: -8.5d
 			y: -4.5d
+		}
+		{
+			dependencies: ["5E380EE48FCB8769"]
+			id: "4AAF6D55648BB708"
+			tasks: [{
+				id: "686A6A446C14ED54"
+				item: { count: 1, id: "occultism:chalk_red" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5E380EE48FCB8769"]
+			id: "141E15551A346422"
+			tasks: [{
+				id: "5FE953F427F58EE9"
+				item: { count: 1, id: "occultism:chalk_orange" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4AAF6D55648BB708"
+				"141E15551A346422"
+			]
+			id: "04DA983E94F91361"
+			tasks: [{
+				id: "031578D9BBD19F5D"
+				item: { count: 1, id: "occultism:chalk_black" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["666A77BC58F33CD0"]
+			hide_dependency_lines: true
+			id: "7A2A4EDFC4DA7997"
+			shape: "rsquare"
+			tasks: [{
+				id: "08C6FD713A885495"
+				item: { count: 1, id: "malum:soul_stained_steel_ingot" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["666A77BC58F33CD0"]
+			hide_dependency_lines: true
+			id: "1C295BB0A0CEBF57"
+			shape: "rsquare"
+			tasks: [{
+				id: "47D6CE3046F8B482"
+				item: { count: 1, id: "enderio:dark_steel_ingot" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["04DA983E94F91361"]
+			id: "1817CE7B36F6A650"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "58A3800640E3EE98"
+				item: { count: 1, id: "gtceu:runed_steel_ingot" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 3.5d
 		}
 	]
 }

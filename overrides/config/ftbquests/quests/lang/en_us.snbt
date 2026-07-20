@@ -188,6 +188,19 @@
 		"Before you find a place for your bore, you should make an atmospheric gauge, the more the dial increases, the more ember there is"
 	]
 	quest.31B6D09FBE2173EF.quest_subtitle: "Gathering your First Ember"
+	quest.323FAC202CADB824.quest_desc: [
+		"Alloys making bronze ingots 4 at a time at the cost of taking steam and time"
+		""
+		"Same case for Coke Bricks, but also makes them vastly cheaper so it is strongly recommended!"
+	]
+	quest.323FAC202CADB824.quest_subtitle: "Better Bronze and Coke bricks"
+	quest.32A39BA7119B0CB9.quest_desc: [
+		"Otherworld Goggles allow you to see the funny invisible ore with your EYES..."
+		""
+		""
+		":)"
+	]
+	quest.32A39BA7119B0CB9.quest_subtitle: "Useful"
 	quest.32CBFA838C794C01.quest_desc: ["Allows you to build rituals easier, and that will help in the future."]
 	quest.32CBFA838C794C01.quest_subtitle: "Something you might want"
 	quest.35B7A194BB34BA44.quest_desc: [
@@ -203,6 +216,16 @@
 	]
 	quest.35B7A194BB34BA44.quest_subtitle: "The unsual that is willed to be. "
 	quest.35B7A194BB34BA44.title: "An Indestructable Ally"
+	quest.369DE54ABB07E98A.quest_desc: [
+		"The coke oven allows you to convert logs into charcoal, and coal into coal coke."
+		""
+		""
+		"Worth noting, you will need to make more coke bricks than what you need for assembling a coke oven, as coke bricks are used in a variety of early steam tech."
+		""
+		"Don't worry, you get better recipes as you go, so the 3x3 shaped craft is only for starting out."
+	]
+	quest.369DE54ABB07E98A.quest_subtitle: "Coking coals"
+	quest.369DE54ABB07E98A.title: "Coke Oven and Coke Bricks"
 	quest.3733906CF47B1C06.quest_subtitle: "Multipurpose and cheap"
 	quest.38473AAE9EFA91C7.quest_desc: [
 		"Ember is easy to move!"
@@ -212,6 +235,8 @@
 	quest.38473AAE9EFA91C7.quest_subtitle: "Moving Ember"
 	quest.3945947DBE1D85A0.quest_subtitle: "Tier 3 Overworld Resources"
 	quest.3A755F7B8012AB1A.quest_subtitle: "Create Oxygen Tank"
+	quest.3E03C13CAE570D80.quest_desc: ["You can also get quartz blocks from stone masons, which allows you to make this pre-nether!"]
+	quest.3E03C13CAE570D80.quest_subtitle: "Stone Mason Source"
 	quest.3E42DDEBA9DBB13C.quest_desc: [
 		"The second layer of the abyss seems to be populated more densely with biomass than the first layer."
 		""
@@ -232,6 +257,8 @@
 		"If you haven't i'd recommend making one to automatically fill your boilers before you start!"
 	]
 	quest.3FB852AA4A2FBB8B.quest_subtitle: "Did you make a pump?"
+	quest.4425184AA625FA4E.quest_desc: ["Looks like it'd taste like extremely tart blue raspberry"]
+	quest.4425184AA625FA4E.quest_subtitle: "This looks edible"
 	quest.448F8668DD3AEB72.quest_desc: [
 		"As you've been playing, you most likely noticed many foods have a stat on them that says something like..."
 		""

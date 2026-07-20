@@ -130,18 +130,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"369DE54ABB07E98A"
-				"46A8D660ABEB83FA"
-			]
+			dependencies: ["369DE54ABB07E98A"]
 			id: "323FAC202CADB824"
 			tasks: [{
 				id: "5437FEA4471ECB4D"
 				item: { count: 1, id: "gtceu:lp_steam_alloy_smelter" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 4.0d
+			x: 7.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["46A8D660ABEB83FA"]
@@ -155,18 +152,18 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["323FAC202CADB824"]
+			dependencies: ["369DE54ABB07E98A"]
 			id: "3DB50B6AD89CBB9D"
 			tasks: [{
-				id: "24B601FF831BC16D"
-				item: { count: 1, id: "cosmiccore:hardened_resin" }
+				id: "5A8B4D2937C34D3D"
+				item: { count: 1, id: "gtceu:lp_steam_compressor" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 4.0d
+			x: 7.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["3DB50B6AD89CBB9D"]
+			dependencies: ["369DE54ABB07E98A"]
 			id: "1B801262A2CADD36"
 			tasks: [{
 				id: "6DD86249F76C9EA0"
@@ -418,8 +415,8 @@
 				item: { count: 1, id: "gtceu:bronze_crate" }
 				type: "item"
 			}]
-			x: 2.5428571428571587d
-			y: 3.145238095238099d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -434,7 +431,7 @@
 				item: { count: 1, id: "gtceu:lv_machine_hull" }
 				type: "item"
 			}]
-			x: -19.0d
+			x: -20.0d
 			y: 7.0d
 		}
 		{
@@ -450,7 +447,7 @@
 				item: { count: 1, id: "gtceu:basic_electronic_circuit" }
 				type: "item"
 			}]
-			x: -16.0d
+			x: -17.0d
 			y: 7.0d
 		}
 		{
@@ -475,7 +472,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["323FAC202CADB824"]
+			dependencies: ["369DE54ABB07E98A"]
 			id: "5461D8E87350BBA2"
 			tasks: [{
 				id: "11405FF9D65281C3"
@@ -501,24 +498,13 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["695AF909BE64F9F9"]
-			id: "14F90F08733EA42B"
-			tasks: [{
-				id: "49B8980FA6BF01AB"
-				item: { count: 1, id: "minecraft:pointed_dripstone" }
-				type: "item"
-			}]
-			x: -2.5d
-			y: 7.5d
-		}
-		{
 			id: "1EBB2FD1DB4A60E5"
 			tasks: [{
 				id: "49DE299BE457E76C"
 				item: { count: 1, id: "occultism:otherstone" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -4.0d
 			y: 5.5d
 		}
 		{
@@ -528,7 +514,7 @@
 				item: { count: 1, id: "occultism:otherrock" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -4.0d
 			y: 7.0d
 		}
 		{
@@ -724,7 +710,7 @@
 				item: { count: 1, id: "gtceu:lp_steam_forge_hammer" }
 				type: "item"
 			}]
-			x: -3.5d
+			x: -4.0d
 			y: 10.0d
 		}
 		{
@@ -739,7 +725,7 @@
 				item: { count: 1, id: "cosmiccore:hp_steam_bender" }
 				type: "item"
 			}]
-			x: -3.5d
+			x: -4.0d
 			y: 11.5d
 		}
 		{
@@ -751,7 +737,7 @@
 				item: { count: 1, id: "minecraft:anvil" }
 				type: "item"
 			}]
-			x: -3.5d
+			x: -4.0d
 			y: 8.5d
 		}
 		{
@@ -769,7 +755,7 @@
 				item: { count: 1, id: "gtceu:lv_machine_casing" }
 				type: "item"
 			}]
-			x: -19.0d
+			x: -20.0d
 			y: 2.0d
 		}
 		{
@@ -782,7 +768,7 @@
 				item: { count: 1, id: "cosmiccore:lv_cladding" }
 				type: "item"
 			}]
-			x: -22.0d
+			x: -23.0d
 			y: 2.0d
 		}
 		{
@@ -793,7 +779,7 @@
 				item: { count: 1, id: "cosmiccore:lv_modular_frameworks" }
 				type: "item"
 			}]
-			x: -17.5d
+			x: -18.5d
 			y: 2.0d
 		}
 		{
@@ -803,7 +789,7 @@
 				item: { count: 1, id: "cosmiccore:riveted_straps" }
 				type: "item"
 			}]
-			x: -22.0d
+			x: -23.0d
 			y: 4.0d
 		}
 		{
@@ -814,7 +800,7 @@
 				item: { count: 1, id: "gtceu:resistor" }
 				type: "item"
 			}]
-			x: -16.0d
+			x: -17.0d
 			y: 4.5d
 		}
 		{
@@ -825,7 +811,7 @@
 				item: { count: 1, id: "gtceu:tempered_iesnium_ingot" }
 				type: "item"
 			}]
-			x: -16.0d
+			x: -17.0d
 			y: 2.0d
 		}
 		{
@@ -999,6 +985,7 @@
 			dependencies: [
 				"1C34FFE7528A8265"
 				"72A429BEF13F8845"
+				"32A39BA7119B0CB9"
 			]
 			id: "4425184AA625FA4E"
 			tasks: [{
@@ -1046,8 +1033,8 @@
 		{
 			dependencies: [
 				"07A3009B253FF22E"
-				"6757A6CA4855F64C"
 				"2944767D5CF38669"
+				"27511ADDB495D14D"
 			]
 			id: "4EAF13E3E6637002"
 			tasks: [{
@@ -1056,17 +1043,6 @@
 				type: "item"
 			}]
 			x: -22.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["27511ADDB495D14D"]
-			id: "6757A6CA4855F64C"
-			tasks: [{
-				id: "2B2B235E16A85D10"
-				item: { count: 1, id: "gtceu:iesnium_spring" }
-				type: "item"
-			}]
-			x: -19.0d
 			y: -0.5d
 		}
 		{
@@ -1430,7 +1406,7 @@
 				id: "5BAFF29E38F526BB"
 				type: "checkmark"
 			}]
-			x: -17.0d
+			x: -18.0d
 			y: 11.5d
 		}
 		{
@@ -1468,7 +1444,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["67110A5418804D33"]
+			dependencies: [
+				"67110A5418804D33"
+				"3E03C13CAE570D80"
+			]
+			dependency_requirement: "one_completed"
 			id: "448F8668DD3AEB72"
 			min_width: 400
 			shape: "octagon"
@@ -1654,7 +1634,9 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["1D2C76D5AAD0964E"]
 			id: "4E3A7CB013A59A37"
+			shape: "gear"
 			tasks: [{
 				id: "2DDCB763C1C5AFEA"
 				item: { count: 1, id: "gtceu:coke_oven_bricks" }
@@ -1662,6 +1644,31 @@
 			}]
 			x: 1.5d
 			y: 7.0d
+		}
+		{
+			dependencies: ["2AA6F78DB2ED60F2"]
+			hide_dependency_lines: true
+			id: "3E03C13CAE570D80"
+			tasks: [{
+				id: "245F62040B46E661"
+				item: { count: 1, id: "minecraft:quartz_block" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["16EE5D3DB14F4331"]
+			hide_dependency_lines: true
+			id: "32A39BA7119B0CB9"
+			shape: "gear"
+			tasks: [{
+				id: "3D3B216B4FC2FFD9"
+				item: { count: 1, id: "occultism:otherworld_goggles" }
+				type: "item"
+			}]
+			x: -16.0d
+			y: 0.5d
 		}
 	]
 }
