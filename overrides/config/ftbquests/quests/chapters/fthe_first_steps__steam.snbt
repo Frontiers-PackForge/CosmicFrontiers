@@ -1581,10 +1581,15 @@
 			y: 6.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				dependency: 6080379464805563298L
+				style: "default"
+				visible: 0b
+			}]
 			dependencies: [
 				"3D5622E2480AE73A"
 				"1FD7F7A22E29CFF5"
-				"2BF11BCC1106D1E1"
+				"5461D8E87350BBA2"
 			]
 			id: "0FDE4203D468D05F"
 			tasks: [{
@@ -1609,18 +1614,6 @@
 			}]
 			x: -3.5d
 			y: 13.0d
-		}
-		{
-			dependencies: ["323FAC202CADB824"]
-			hide_dependency_lines: true
-			id: "2BF11BCC1106D1E1"
-			tasks: [{
-				id: "0A8A7D3DBEA3295A"
-				item: { count: 1, id: "cosmiccore:steam_caster" }
-				type: "item"
-			}]
-			x: -15.0d
-			y: 4.5d
 		}
 		{
 			dependencies: ["5973534E85F5D126"]
