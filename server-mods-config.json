@@ -1,42 +1,18 @@
 {
+  "required_manifest_projects": [
+    {"name": "CosmicCore", "id": 946941}
+  ],
   "blacklist": [
-    {"name": "Better Smithing UI", "id": 875744},
-    {"name": "Blur", "id": 823106},
     {"name": "Chloride", "id": 931925},
-    {"name": "Colorful Hearts", "id": 854213},
     {"name": "Colorwheel", "id": 1254143},
     {"name": "Colorwheel Patcher", "id": 1285475},
-    {"name": "Controlling", "id": 250398},
-    {"name": "Crash Assistant", "id": 1154099},
-    {"name": "CullLessLeaves Reforged", "id": 840788},
-    {"name": "Ding", "id": 231275},
+    {"name": "Distraction Free Recipes", "id": 1167848},
     {"name": "Drippy Loading Screen", "id": 511770},
-    {"name": "e4mc", "id": 849519},
-    {"name": "Embeddium", "id": 908741},
-    {"name": "Entity Model Features", "id": 844662},
-    {"name": "Entity Texture Feature", "id": 568563},
-    {"name": "Euphoria Patcher", "id": 915902},
-    {"name": "Extreme Sound Muffler", "id": 363363},
     {"name": "FancyMenu", "id": 367706},
-    {"name": "fix GPU memory leak", "id": 882495},
-    {"name": "Forgematica", "id": 912441},
-    {"name": "Forgematica Printer", "id": 1223456},
-    {"name": "ImmediatelyFast", "id": 686911},
-    {"name": "JourneyMap Integration", "id": 525447},
-    {"name": "MaFgLib", "id": 910766},
-    {"name": "Mod Name Tooltip", "id": 238747},
-    {"name": "Oculus", "id": 581495},
-    {"name": "Ok Zoomer", "id": 631278},
-    {"name": "SeasonHUD", "id": 690971},
-    {"name": "Simple Discord Rich Presence", "id": 334853},
-    {"name": "Sound Physics Remastered", "id": 535489},
-    {"name": "The Sound of Rain", "id": 1302230},
-    {"name": "Tips", "id": 306549},
-    {"name": "World Play Time", "id": 968891},
-    {"name": "World Preview", "id": 891429}
+    {"name": "Iris", "id": 455508},
+    {"name": "Sodium", "id": 394468}
   ],
-  "manual_download": [
-  ],
-  "server_only": []
+  "manual_download": [],
+  "server_only": [],
+  "override_mods": []
 }
-

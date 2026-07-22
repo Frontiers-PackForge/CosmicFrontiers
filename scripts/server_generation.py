@@ -1,289 +1,291 @@
+import hashlib
 import os
 import shutil
-import zipfile
-import json
-from bs4 import BeautifulSoup
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from urllib.parse import urlparse
+
+import requests
+from bs4 import BeautifulSoup
 
 sys.path.append(os.path.dirname(__file__))
 
-from utils import copy_any, load_json, save_json
-from curse_client import get_mod_website_url, get_mod_download_url, get_api_key, get_headers
+from curse_client import get_mod_download_url, get_mod_file
+from utils import apply_release_version, copy_any, load_json, save_json, zip_directory
 
 SERVERPACK_DIRECTORY = "serverpack"
 MAX_CONCURRENT_DOWNLOADS = 8
+DOWNLOAD_TIMEOUT = (30, 300)
 
-def generate_serverpack_zip(version=None, curseforge_api_key=None):
+
+def generate_serverpack_zip(
+    version, archive_name, curseforge_api_key=None, download_mods=True
+):
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    root_dir = os.path.abspath(os.path.join(base_dir, '..'))
+    root_dir = os.path.abspath(os.path.join(base_dir, ".."))
     serverpack_dir = os.path.join(root_dir, SERVERPACK_DIRECTORY)
 
-    # Clean up previous serverpack dir if exists
     if os.path.exists(serverpack_dir):
         shutil.rmtree(serverpack_dir)
     os.makedirs(serverpack_dir)
 
-    # Copy overrides (copy content, not the folder itself)
-    overrides_src = os.path.join(root_dir, 'overrides')
-    if os.path.exists(overrides_src):
-        for item in os.listdir(overrides_src):
-            s = os.path.join(overrides_src, item)
-            d = os.path.join(serverpack_dir, item)
-            copy_any(s, d)
+    overrides_src = os.path.join(root_dir, "overrides")
+    if not os.path.isdir(overrides_src):
+        raise RuntimeError("Required pack input is missing: overrides")
+    for name in os.listdir(overrides_src):
+        copy_any(os.path.join(overrides_src, name), os.path.join(serverpack_dir, name))
+    apply_override_mod_policy(root_dir, serverpack_dir)
 
-    # Copy server-files content into serverpack directory
-    server_files_src = os.path.join(root_dir, 'server-files')
-    if os.path.exists(server_files_src):
-        for item in os.listdir(server_files_src):
-            s = os.path.join(server_files_src, item)
-            d = os.path.join(serverpack_dir, item)
-            copy_any(s, d)
+    server_files_src = os.path.join(root_dir, "server-files")
+    if not os.path.isdir(server_files_src):
+        raise RuntimeError("Required pack input is missing: server-files")
+    for name in os.listdir(server_files_src):
+        copy_any(os.path.join(server_files_src, name), os.path.join(serverpack_dir, name))
 
-    # Copy manifest.json (if needed for serverpack)
-    generate_filtered_manifest(root_dir, serverpack_dir)
-
-    # Generate filtered modlist.html for serverpack
-    generate_filtered_modlist(root_dir, serverpack_dir)
-
-    # Replace MINECRAFT_VERSION and FORGE_VERSION in startserver.bat and startserver.sh
+    generate_filtered_manifest(root_dir, serverpack_dir, version)
+    generate_filtered_modlist(root_dir, serverpack_dir, curseforge_api_key)
     update_server_scripts_with_versions(serverpack_dir)
+    if download_mods:
+        download_mods_from_curseforge(serverpack_dir, curseforge_api_key)
+    update_readme(root_dir, serverpack_dir, curseforge_api_key)
 
-    # Download mods from CurseForge API
-    download_mods_from_curseforge(serverpack_dir, curseforge_api_key=curseforge_api_key)
-
-    # Append manual download links to README
-    readme_update(root_dir, serverpack_dir)
-
-    # Zip the directory (only include the contents, not the root folder)
-    zip_name = f'Cosmic.Frontiers.Server.{version}.zip' if version else f'Cosmic.Frontiers.Server.zip'
-    zip_path = os.path.join(root_dir, zip_name)
-    with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
-        for root, dirs, files in os.walk(serverpack_dir):
-            for file in files:
-                abs_path = os.path.join(root, file)
-                rel_path = os.path.relpath(abs_path, serverpack_dir)
-                zipf.write(abs_path, rel_path)
-    print(f'Serverpack zipped at: {zip_path}')
+    zip_path = os.path.join(root_dir, archive_name)
+    zip_directory(serverpack_dir, zip_path)
+    print(f"Server pack zipped at: {zip_path}")
+    return zip_path
 
 
-def generate_filtered_modlist(root_dir, serverpack_dir):
-    modlist_path = os.path.join(root_dir, 'modlist.html')
-    config_path = os.path.join(root_dir, 'server-mods-config.json')
-    output_path = os.path.join(serverpack_dir, 'modlist.html')
-
-    config = load_json(config_path)
-    blacklist_ids = {str(entry['id']) for entry in config.get('blacklist', [])}
-    server_only_mods = config.get('server_only', [])
-
-    with open(modlist_path, 'r', encoding='utf-8') as f:
-        soup = BeautifulSoup(f, 'html.parser')
-
-    filtered_lis = []
-    for li in soup.find_all('li'):
-        a = li.find('a', href=True)
-        if a and any(black_id in a['href'] for black_id in blacklist_ids):
+def apply_override_mod_policy(root_dir, serverpack_dir):
+    config = load_json(os.path.join(root_dir, "server-mods-config.json"))
+    mods_dir = os.path.join(serverpack_dir, "mods")
+    for entry in config.get("override_mods", []):
+        if entry["server"]:
             continue
-        filtered_lis.append(li)
-
-    # Add server-only mods to modlist
-    for mod in server_only_mods:
-        mod_url = get_mod_website_url(mod['id'])
-        if mod_url:
-            new_li = soup.new_tag('li')
-            a_tag = soup.new_tag('a', href=mod_url)
-            a_tag.string = mod['name']
-            new_li.append(a_tag)
-            filtered_lis.append(new_li)
-
-    new_soup = BeautifulSoup('<ul></ul>', 'html.parser')
-    ul = new_soup.ul
-    for li in filtered_lis:
-        ul.append(li)
-
-    with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(str(new_soup))
-    print(f'Filtered modlist.html generated at: {output_path}')
+        path = os.path.join(mods_dir, entry["filename"])
+        if os.path.isfile(path):
+            os.remove(path)
 
 
-def generate_filtered_manifest(root_dir, serverpack_dir):
-    manifest_path = os.path.join(root_dir, 'manifest.json')
-    config_path = os.path.join(root_dir, 'server-mods-config.json')
-    output_path = os.path.join(serverpack_dir, 'manifest.json')
+def project_id_from_url(url):
+    parts = [part for part in urlparse(url).path.split("/") if part]
+    if "projects" not in parts:
+        return None
+    index = parts.index("projects") + 1
+    if index >= len(parts) or not parts[index].isdigit():
+        return None
+    return int(parts[index])
 
-    config = load_json(config_path)
-    blacklist_ids = {str(entry['id']) for entry in config.get('blacklist', [])}
-    manifest = load_json(manifest_path)
 
-    # Add server-only mods to manifest
-    server_only_mods = config.get('server_only', [])
-    if 'files' in manifest and isinstance(manifest['files'], list):
-        filtered_files = [obj for obj in manifest['files'] if str(obj.get('projectID')) not in blacklist_ids]
-        # Add server-only mods if not already present
-        server_only_ids = {mod['id'] for mod in server_only_mods}
-        present_ids = {obj.get('projectID') for obj in filtered_files}
-        for mod in server_only_mods:
-            if mod['id'] not in present_ids:
-                filtered_files.append({
-                    'projectID': mod['id'],
-                    'fileID': mod['file_id'],
-                    'required': True
-                })
-        manifest['files'] = filtered_files
+def generate_filtered_modlist(root_dir, serverpack_dir, api_key=None):
+    modlist_path = os.path.join(root_dir, "modlist.html")
+    output_path = os.path.join(serverpack_dir, "modlist.html")
+    config = load_json(os.path.join(root_dir, "server-mods-config.json"))
+    blacklist_ids = {entry["id"] for entry in config.get("blacklist", [])}
 
+    with open(modlist_path, "r", encoding="utf-8") as file:
+        soup = BeautifulSoup(file, "html.parser")
+
+    filtered = []
+    for item in soup.find_all("li"):
+        link = item.find("a", href=True)
+        if link and project_id_from_url(link["href"]) in blacklist_ids:
+            continue
+        filtered.append(item)
+
+    for mod in config.get("server_only", []):
+        mod_url = f"https://www.curseforge.com/projects/{mod['id']}"
+        item = soup.new_tag("li")
+        link = soup.new_tag("a", href=mod_url)
+        link.string = mod["name"]
+        item.append(link)
+        filtered.append(item)
+
+    output = BeautifulSoup("<ul></ul>", "html.parser")
+    for item in filtered:
+        output.ul.append(item)
+    with open(output_path, "w", encoding="utf-8") as file:
+        file.write(str(output))
+    print(f"Filtered modlist generated at: {output_path}")
+
+
+def generate_filtered_manifest(root_dir, serverpack_dir, version):
+    manifest = apply_release_version(
+        load_json(os.path.join(root_dir, "manifest.json")), version
+    )
+    config = load_json(os.path.join(root_dir, "server-mods-config.json"))
+    blacklist_ids = {entry["id"] for entry in config.get("blacklist", [])}
+    files = [
+        entry for entry in manifest["files"] if entry.get("projectID") not in blacklist_ids
+    ]
+    present_ids = {entry.get("projectID") for entry in files}
+    for mod in config.get("server_only", []):
+        if mod["id"] in present_ids:
+            continue
+        files.append(
+            {
+                "projectID": mod["id"],
+                "fileID": mod["file_id"],
+                "required": True,
+            }
+        )
+    manifest["files"] = files
+    output_path = os.path.join(serverpack_dir, "manifest.json")
     save_json(manifest, output_path)
-    print(f'Filtered manifest.json generated at: {output_path}')
+    print(f"Filtered manifest generated at: {output_path}")
 
 
 def update_server_scripts_with_versions(serverpack_dir):
-    import re
-    manifest_path = os.path.join(serverpack_dir, 'manifest.json')
-    with open(manifest_path, 'r', encoding='utf-8') as f:
-        manifest = json.load(f)
-    # Parse Minecraft version
-    mc_version = manifest.get('minecraft', {}).get('version', None)
-    # Parse Forge version (modLoaders is a list of dicts with id like 'forge-47.2.20')
-    forge_version = None
-    for loader in manifest.get('minecraft', {}).get('modLoaders', []):
-        if loader.get('id', '').startswith('forge-'):
-            forge_version = loader['id'].split('-')[1]
-            break
+    manifest = load_json(os.path.join(serverpack_dir, "manifest.json"))
+    game_version = manifest["minecraft"]["version"]
+    primary = next(
+        loader for loader in manifest["minecraft"]["modLoaders"] if loader.get("primary")
+    )
+    loader_id = primary["id"]
+    if not loader_id.startswith("neoforge-"):
+        raise RuntimeError(f"Unsupported server loader: {loader_id}")
+    loader_version = loader_id.removeprefix("neoforge-")
+    replacements = {
+        "{{MINECRAFT_VERSION}}": game_version,
+        "{{NEOFORGE_VERSION}}": loader_version,
+    }
 
-    # Replace in startserver.bat
-    bat_path = os.path.join(serverpack_dir, 'startserver.bat')
-    if os.path.exists(bat_path):
-        with open(bat_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        if mc_version:
-            content = re.sub(r'set MINECRAFT_VERSION=\{\{MINECRAFT_VERSION\}\}', f'set MINECRAFT_VERSION={mc_version}', content)
-        if forge_version:
-            content = re.sub(r'set FORGE_VERSION=\{\{FORGE_VERSION\}\}', f'set FORGE_VERSION={forge_version}', content)
-        with open(bat_path, 'w', encoding='utf-8') as f:
-            f.write(content)
+    for filename in ("startserver.bat", "startserver.sh"):
+        path = os.path.join(serverpack_dir, filename)
+        with open(path, "r", encoding="utf-8") as file:
+            content = file.read()
+        for token, value in replacements.items():
+            content = content.replace(token, value)
+        if "{{" in content or "}}" in content:
+            raise RuntimeError(f"Unresolved template value in {filename}")
+        with open(path, "w", encoding="utf-8", newline="") as file:
+            file.write(content)
 
-    # Replace in startserver.sh
-    sh_path = os.path.join(serverpack_dir, 'startserver.sh')
-    if os.path.exists(sh_path):
-        with open(sh_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        if mc_version:
-            content = re.sub(r'MINECRAFT_VERSION=\{\{MINECRAFT_VERSION\}\}', f'MINECRAFT_VERSION={mc_version}', content)
-        if forge_version:
-            content = re.sub(r'FORGE_VERSION=\{\{FORGE_VERSION\}\}', f'FORGE_VERSION={forge_version}', content)
-        with open(sh_path, 'w', encoding='utf-8') as f:
-            f.write(content)
+
+def expected_hash(file_data):
+    for entry in file_data.get("hashes", []):
+        if entry.get("algo") == 1:
+            return "sha1", entry.get("value")
+    for entry in file_data.get("hashes", []):
+        if entry.get("algo") == 2:
+            return "md5", entry.get("value")
+    return None, None
+
+
+def hash_file(path, algorithm):
+    digest = hashlib.new(algorithm)
+    with open(path, "rb") as file:
+        for chunk in iter(lambda: file.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def download_mods_from_curseforge(serverpack_dir, curseforge_api_key=None):
-    from concurrent.futures import ThreadPoolExecutor, as_completed
-    import requests
-    # Use the passed API key instead of the one from the environment
-    api_key = curseforge_api_key or os.environ.get('CURSEFORGE_API_KEY')
-    if not api_key:
-        raise RuntimeError('CURSEFORGE_API_KEY must be provided.')
-    mods_dir = os.path.join(serverpack_dir, 'mods')
-    os.makedirs(mods_dir, exist_ok=True)
-    manifest_path = os.path.join(serverpack_dir, 'manifest.json')
-    config_path = os.path.join(os.path.dirname(serverpack_dir), 'server-mods-config.json')
-    with open(manifest_path, 'r', encoding='utf-8') as f:
-        manifest = json.load(f)
-    files = manifest.get('files', [])
-    config = load_json(config_path)
-    manual_download_ids = {mod['id'] for mod in config.get('manual_download', [])}
-    server_only_mods = {mod['id']: mod for mod in config.get('server_only', [])}
+    if not curseforge_api_key:
+        raise RuntimeError("CURSEFORGE_API_KEY must be provided to build the server pack")
 
-    def download_mod(mod):
-        project_id = mod.get('projectID')
-        file_id = mod.get('fileID')
-        # Skip mods that are not required
-        if not mod.get('required', True):
-            print(f"Skipping optional mod {project_id} (required: false)")
+    manifest = load_json(os.path.join(serverpack_dir, "manifest.json"))
+    root_dir = os.path.dirname(serverpack_dir)
+    config = load_json(os.path.join(root_dir, "server-mods-config.json"))
+    manual_ids = {entry["id"] for entry in config.get("manual_download", [])}
+    server_only = {entry["id"]: entry for entry in config.get("server_only", [])}
+    mods_dir = os.path.join(serverpack_dir, "mods")
+    os.makedirs(mods_dir, exist_ok=True)
+
+    def download(entry):
+        project_id = entry["projectID"]
+        if not entry.get("required", True):
+            print(f"Skipping optional mod {project_id}")
             return
-        # Skip mods that are in the manual download section
-        if project_id in manual_download_ids:
+        if project_id in manual_ids:
             print(f"Skipping manual download mod {project_id}")
             return
-        # Only download server-only mods if they are in the config or regular mods
-        if project_id in server_only_mods:
-            file_id = server_only_mods[project_id]['fileID']
-        if not project_id or not file_id:
-            raise RuntimeError(f"ERROR: Failed to parse project id or file id for mod '{mod}'")
-        # Use the passed API key
-        file_url = get_mod_download_url(project_id, file_id, api_key=api_key)
-        if not file_url:
-            raise RuntimeError(f"ERROR: No download url found for mod {project_id} {file_id}")
-        print(f"\tDownloading {file_url}")
-        mod_resp = requests.get(file_url, stream=True)
-        if mod_resp.status_code == 200:
-            filename = file_url.split('/')[-1]
-            out_path = os.path.join(mods_dir, filename)
-            with open(out_path, 'wb') as out_file:
-                for chunk in mod_resp.iter_content(chunk_size=8192):
-                    out_file.write(chunk)
-        else:
-            raise RuntimeError(f"ERROR: Failed to download mod {project_id} {file_id}")
 
-    max_workers = min(MAX_CONCURRENT_DOWNLOADS, len(files))
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        futures = [executor.submit(download_mod, mod) for mod in files]
+        file_id = server_only.get(project_id, {}).get("file_id", entry["fileID"])
+        file_data = get_mod_file(project_id, file_id, curseforge_api_key)
+        if not file_data:
+            raise RuntimeError(f"CurseForge returned no metadata for {project_id}/{file_id}")
+        filename = file_data.get("fileName")
+        if not filename:
+            raise RuntimeError(f"CurseForge returned no filename for {project_id}/{file_id}")
+        destination = os.path.join(mods_dir, filename)
+        algorithm, digest = expected_hash(file_data)
+        if os.path.isfile(destination):
+            if algorithm and hash_file(destination, algorithm).lower() == digest.lower():
+                print(f"Using packaged override {filename}")
+                return
+            raise RuntimeError(f"Existing server mod conflicts with CurseForge file {filename}")
+
+        download_url = file_data.get("downloadUrl") or get_mod_download_url(
+            project_id, file_id, curseforge_api_key
+        )
+        if not download_url:
+            raise RuntimeError(
+                f"No CurseForge download URL for {project_id}/{file_id}; declare it in manual_download and provide an override jar"
+            )
+
+        temporary = f"{destination}.part"
+        print(f"Downloading {filename}")
+        response = requests.get(download_url, stream=True, timeout=DOWNLOAD_TIMEOUT)
+        response.raise_for_status()
+        with open(temporary, "wb") as output:
+            for chunk in response.iter_content(chunk_size=1024 * 1024):
+                if chunk:
+                    output.write(chunk)
+        if algorithm and hash_file(temporary, algorithm).lower() != digest.lower():
+            os.remove(temporary)
+            raise RuntimeError(f"Downloaded file failed its CurseForge hash check: {filename}")
+        os.replace(temporary, destination)
+
+    files = manifest.get("files", [])
+    workers = min(MAX_CONCURRENT_DOWNLOADS, max(1, len(files)))
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = [executor.submit(download, entry) for entry in files]
         for future in as_completed(futures):
             future.result()
 
 
-def readme_update(root_dir, serverpack_dir):
-    config_path = os.path.join(root_dir, 'server-mods-config.json')
-    manifest_path = os.path.join(serverpack_dir, 'manifest.json')
-    readme_path = os.path.join(serverpack_dir, 'README.md')
-    config = load_json(config_path)
-    manual_download_mods = config.get('manual_download', [])
-    server_only_mods = config.get('server_only', [])
-    with open(manifest_path, 'r', encoding='utf-8') as f:
-        manifest = json.load(f)
-    root_manifest_path = os.path.join(root_dir, 'manifest.json')
-    with open(root_manifest_path, 'r', encoding='utf-8') as f:
-        root_manifest = json.load(f)
-    root_mod_ids = {f['projectID'] for f in root_manifest.get('files', [])}
-    files = manifest.get('files', [])
+def update_readme(root_dir, serverpack_dir, api_key=None):
+    config = load_json(os.path.join(root_dir, "server-mods-config.json"))
+    manifest = load_json(os.path.join(serverpack_dir, "manifest.json"))
+    root_manifest = load_json(os.path.join(root_dir, "manifest.json"))
+    root_ids = {entry["projectID"] for entry in root_manifest.get("files", [])}
+    manifest_files = {entry["projectID"]: entry for entry in manifest.get("files", [])}
+
     manual_links = []
-    for mod in manual_download_mods:
-        mod_id = mod['id']
-        if mod_id not in root_mod_ids:
+    for mod in config.get("manual_download", []):
+        if mod["id"] not in root_ids:
             continue
-        file_id = None
-        for f in files:
-            if f.get('projectID') == mod_id:
-                file_id = f.get('fileID')
-                break
-        if not file_id:
-            continue
-        mod_url = get_mod_website_url(mod_id)
-        if not mod_url:
-            continue
-        file_url = f"{mod_url}/download/{file_id}"
-        manual_links.append(f"- {file_url}\n")
+        link = mod.get("url")
+        if not link:
+            file_entry = manifest_files.get(mod["id"])
+            if file_entry:
+                link = f"https://www.curseforge.com/projects/{mod['id']}/download/{file_entry['fileID']}"
+        if link:
+            manual_links.append(f"- {mod['name']}: {link}\n")
+
     optional_links = []
-    for f in files:
-        if not f.get('required', True):
-            mod_id = f.get('projectID')
-            file_id = f.get('fileID')
-            mod_url = get_mod_website_url(mod_id)
-            if not mod_url:
-                continue
-            file_url = f"{mod_url}/download/{file_id}"
-            optional_links.append(f"- {file_url}\n")
-    server_only_links = []
-    for mod in server_only_mods:
-        mod_url = get_mod_website_url(mod['id'])
-        if not mod_url:
+    for entry in manifest.get("files", []):
+        if entry.get("required", True):
             continue
-        server_only_links.append(f"- {mod['name']}: {mod_url}\n")
-    with open(readme_path, 'a', encoding='utf-8') as readme:
+        optional_links.append(
+            f"- https://www.curseforge.com/projects/{entry['projectID']}/download/{entry['fileID']}\n"
+        )
+
+    server_only_links = []
+    for mod in config.get("server_only", []):
+        server_only_links.append(
+            f"- {mod['name']}: https://www.curseforge.com/projects/{mod['id']}\n"
+        )
+
+    readme_path = os.path.join(serverpack_dir, "README.md")
+    with open(readme_path, "a", encoding="utf-8") as readme:
         if manual_links:
-            readme.write('\n## Manual Downloads\n')
+            readme.write("\n## Manual Downloads\n")
             readme.writelines(manual_links)
         if optional_links:
-            readme.write('\n## Optional Mods\n')
+            readme.write("\n## Optional Mods\n")
             readme.writelines(optional_links)
         if server_only_links:
-            readme.write('\n## Server Only Mods\n')
+            readme.write("\n## Server Only Mods\n")
             readme.writelines(server_only_links)
-    print(f'READEME.md updated at: {readme_path}')
+    print(f"README updated at: {readme_path}")

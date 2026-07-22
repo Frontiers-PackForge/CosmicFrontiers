@@ -1,12 +1,38 @@
-name: Curseforge Release
+name: CurseForge Release
 
 on:
   release:
-    types: [ published ]
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      release_version:
+        description: Release tag to simulate, such as 0.8.0-nightly.001+1.21.1
+        required: true
+        type: string
+      build_server_pack:
+        description: Build the full CurseForge server archive
+        required: true
+        default: true
+        type: boolean
+
+concurrency:
+  group: cosmic-frontiers-release-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      game_version: ${{ steps.release.outputs.game_version }}
+      loader: ${{ steps.release.outputs.loader }}
+      loader_version: ${{ steps.release.outputs.loader_version }}
+      release_version: ${{ steps.release.outputs.release_version }}
+      display_version: ${{ steps.release.outputs.display_version }}
+      client_archive: ${{ steps.release.outputs.client_archive }}
+      server_archive: ${{ steps.release.outputs.server_archive }}
+      curseforge_version_type: ${{ steps.release.outputs.curseforge_version_type }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -14,31 +40,34 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-          cache: 'pip'
+          python-version: "3.13"
+          cache: pip
 
       - name: Install Python dependencies
-        run: pip install -r scripts/requirements.txt
+        run: pip install --requirement scripts/requirements.txt
 
-      - name: Run release script
+      - name: Build and validate release archives
+        id: release
         env:
-          RELEASE_VERSION: ${{ github.event.release.tag_name }}
+          RELEASE_VERSION: ${{ github.event.release.tag_name || inputs.release_version }}
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
-          IS_PRERELEASE: ${{ github.event.release.prerelease }}
-        run: |
-          python scripts/release.py
+          BUILD_SERVER_PACK: ${{ github.event_name == 'workflow_dispatch' && inputs.build_server_pack || github.event_name == 'release' }}
+        run: python scripts/release.py
 
-      - name: Upload Build Artifacts
+      - name: Upload validated build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: build-artifacts-${{ github.event.release.tag_name }}
-          path: Cosmic.Frontiers*.zip
+          name: build-artifacts-${{ steps.release.outputs.release_version }}
+          path: |
+            ${{ steps.release.outputs.client_archive }}
+            ${{ steps.release.outputs.server_archive }}
           if-no-files-found: error
           retention-days: 3
 
-  upload-release-artifacts:
-    name: Upload Artifacts
+  upload-release-artifact:
+    name: Upload client archive to GitHub release
     needs: build
+    if: ${{ github.event_name == 'release' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -46,36 +75,39 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
-          name: build-artifacts-${{ github.event.release.tag_name }}
-      - name: Upload artifacts to release
+          name: build-artifacts-${{ needs.build.outputs.release_version }}
+
+      - name: Upload client archive
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.event.release.tag_name }}
-          files: ./Cosmic.Frontiers.${{ github.event.release.tag_name }}.zip
+          tag_name: ${{ needs.build.outputs.release_version }}
+          files: ./${{ needs.build.outputs.client_archive }}
           fail_on_unmatched_files: true
 
   publish-curseforge:
-    name: Publish to Curseforge
+    name: Publish client and server archives to CurseForge
     needs: build
-    if: ${{ !github.event.release.prerelease && (github.repository_owner == 'Frontiers-PackForge' || !startsWith(github.event.release.name, 'simulate'))  }}
+    if: ${{ github.event_name == 'release' && github.repository_owner == 'Frontiers-PackForge' && !startsWith(github.event.release.name, 'simulate') }}
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
-          name: build-artifacts-${{ github.event.release.tag_name }}
+          name: build-artifacts-${{ needs.build.outputs.release_version }}
 
-      - name: Upload to Curseforge
+      - name: Upload to CurseForge
         uses: Kir-Antipov/mc-publish@v3.3.0
         with:
           curseforge-id: ${{ vars.CURSE_ID }}
           curseforge-token: ${{ secrets.CURSE_TOKEN }}
-          files: ./Cosmic.Frontiers*.zip
-          name: "Cosmic Frontiers ${{ github.event.release.tag_name }}"
-          version: ${{ github.event.release.tag_name }}
+          files: |
+            ./${{ needs.build.outputs.client_archive }}
+            ./${{ needs.build.outputs.server_archive }}
+          name: Cosmic Frontiers ${{ needs.build.outputs.display_version }}
+          version: ${{ needs.build.outputs.release_version }}
           changelog: ${{ github.event.release.body }}
-          version-type: release
-          loaders: forge
-          game-versions: 1.20.1
+          version-type: ${{ needs.build.outputs.curseforge_version_type }}
+          loaders: ${{ needs.build.outputs.loader }}
+          game-versions: ${{ needs.build.outputs.game_version }}

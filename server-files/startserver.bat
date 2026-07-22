@@ -1,36 +1,49 @@
 @echo off
-set MINECRAFT_VERSION={{MINECRAFT_VERSION}}
-set FORGE_VERSION={{FORGE_VERSION}}
-:: To use a specific Java runtime, set an environment variable named CC_JAVA to the full path of java.exe.
-:: To disable automatic restarts, set an environment variable named CC_RESTART to false.
-:: To install the pack without starting the server, set an environment variable named CC_INSTALL_ONLY to true.
+setlocal EnableExtensions
+set "MINECRAFT_VERSION={{MINECRAFT_VERSION}}"
+set "NEOFORGE_VERSION={{NEOFORGE_VERSION}}"
+set "INSTALLER=%~dp0neoforge-%NEOFORGE_VERSION%-installer.jar"
+set "NEOFORGE_URL=https://maven.neoforged.net/releases/net/neoforged/neoforge/%NEOFORGE_VERSION%/neoforge-%NEOFORGE_VERSION%-installer.jar"
+set "ARGS_FILE=%~dp0libraries\net\neoforged\neoforge\%NEOFORGE_VERSION%\win_args.txt"
 
-set INSTALLER="%~dp0forge-%MINECRAFT_VERSION%-%FORGE_VERSION%-installer.jar"
-set FORGE_URL="https://maven.minecraftforge.net/net/minecraftforge/forge/%MINECRAFT_VERSION%-%FORGE_VERSION%/forge-%MINECRAFT_VERSION%-%FORGE_VERSION%-installer.jar"
-
-:JAVA
-if not defined CC_JAVA (
-    set CC_JAVA=java
-)
-
+if not defined CC_JAVA set "CC_JAVA=java"
 "%CC_JAVA%" -version 1>nul 2>nul || (
-   echo Minecraft %MINECRAFT_VERSION% requires Java 17 - Java not found
-   pause
-   exit /b 1
+    echo Minecraft %MINECRAFT_VERSION% requires Java 21 or newer, but Java was not found.
+    pause
+    exit /b 1
 )
 
-:FORGE
-setlocal
+for /f tokens^=2^ delims^=^" %%v in ('"%CC_JAVA%" -version 2^>^&1 ^| findstr /i "version"') do set "JAVA_FULL=%%v"
+for /f "tokens=1 delims=." %%v in ("%JAVA_FULL%") do set "JAVA_MAJOR=%%v"
+if not defined JAVA_MAJOR (
+    echo Unable to determine the Java version.
+    pause
+    exit /b 1
+)
+if %JAVA_MAJOR% LSS 21 (
+    echo Minecraft %MINECRAFT_VERSION% requires Java 21 or newer, but Java %JAVA_MAJOR% was found.
+    pause
+    exit /b 1
+)
+
 cd /D "%~dp0"
-if not exist "libraries" (
-    echo Forge not installed, installing now.
-    if not exist %INSTALLER% (
-        echo No Forge installer found, downloading from %FORGE_URL%
-        bitsadmin.exe /rawreturn /nowrap /transfer forgeinstaller /download /priority FOREGROUND %FORGE_URL% %INSTALLER%
+if not exist "%ARGS_FILE%" (
+    echo NeoForge %NEOFORGE_VERSION% is not installed. Installing now.
+    if not exist "%INSTALLER%" (
+        echo Downloading %NEOFORGE_URL%
+        curl.exe -fL "%NEOFORGE_URL%" -o "%INSTALLER%"
+        if errorlevel 1 (
+            echo Failed to download the NeoForge installer.
+            pause
+            exit /b 1
+        )
     )
-    
-    echo Running Forge installer.
-    "%CC_JAVA%" -jar %INSTALLER% -installServer
+    "%CC_JAVA%" -jar "%INSTALLER%" --installServer
+    if errorlevel 1 (
+        echo NeoForge installation failed.
+        pause
+        exit /b 1
+    )
 )
 
 if not exist "server.properties" (
@@ -38,28 +51,17 @@ if not exist "server.properties" (
         echo allow-flight=true
         echo motd=Cosmic Frontiers
         echo max-tick-time=180000
-    )> "server.properties"
+    ) > "server.properties"
 )
 
-if "%CC_INSTALL_ONLY%" == "true" (
-    echo INSTALL_ONLY: complete
-    goto:EOF
+if /I "%CC_INSTALL_ONLY%" == "true" (
+    echo Installation complete.
+    exit /b 0
 )
-
-for /f tokens^=2-5^ delims^=.-_^" %%j in ('"%CC_JAVA%" -fullversion 2^>^&1') do set "jver=%%j"
-if not %jver% geq 17  (
-    echo Minecraft 1.20.1 requires Java 17 - found Java %jver%
-    pause
-    exit /b 1
-) 
 
 :START
-"%CC_JAVA%" @user_jvm_args.txt @libraries/net/minecraftforge/forge/1.20.1-%FORGE_VERSION%/win_args.txt nogui
-
-if "%CC_RESTART%" == "false" ( 
-    goto:EOF 
-)
-
-echo Restarting automatically in 10 seconds (press Ctrl + C to cancel)
-timeout /t 10 /nobreak > NUL
-goto:START
+"%CC_JAVA%" @user_jvm_args.txt @"%ARGS_FILE%" nogui
+if /I "%CC_RESTART%" == "false" exit /b %ERRORLEVEL%
+echo Restarting automatically in 10 seconds. Press Ctrl+C to cancel.
+timeout /t 10 /nobreak >nul
+goto START

@@ -1,13 +1,13 @@
-# Cosmic Frontiers Server Info
+# Cosmic Frontiers Server
 
-## Disclaimer
-Before we go any further it's important to know that ***this server pack has been automatically generated and might not have been tested***
-If you encounter any issues please report them on our [Discord Server](https://discord.com/channels/738517355537236129/1183288084771643452) we will try to help tou and fix the issue in the best of our abilities.
+This server archive is generated from the same manifest and overrides as the client pack.
 
-## Installation instructions
+## Installation
 
-- Before installing the server pack, make sure you have added the Manual Downloads mods from the section [below](#manual-doawnloads) to your mod folder. if empty or absent nothing needs to be done
-- To use a specific Java runtime, set an environment variable named ***CC_JAVA*** to the full path of java.exe.
-- To disable automatic restarts, set an environment variable named ***CC_RESTART*** to false.
-- To install the pack without starting the server, set an environment variable named ***CC_INSTALL_ONLY*** to true.
-- simply run the `startserver` file corresponding to your OS. It wil download forge if missing and start the server except if parameterized otherwise.
+1. Install Java 21 or newer.
+2. Add anything listed under Manual Downloads to the `mods` directory.
+3. Run `startserver.bat` on Windows or `startserver.sh` on Linux and macOS.
+4. The first launch installs NeoForge and creates `eula.txt`.
+5. Read the Minecraft EULA, set `eula=true` if you agree, and launch again.
+
+Set `CC_JAVA` to a Java executable when Java 21 is not the system default. Set `CC_RESTART=false` to disable automatic restarts. Set `CC_INSTALL_ONLY=true` to install NeoForge without starting Minecraft.
