@@ -1,5 +1,6 @@
 import os
 from collections import Counter
+from urllib.parse import urlparse
 
 from utils import get_display_version, load_json, sha256_file
 
@@ -121,6 +122,46 @@ def validate_release(root_dir, expected_version):
     )
     if missing_manual:
         errors.append(f"manual_download contains projects absent from the manifest: {missing_manual}")
+
+    manifest_file_ids = {
+        entry.get("projectID"): entry.get("fileID") for entry in files
+    }
+    download_mirrors = config.get("download_mirrors", [])
+    mirror_ids = [entry.get("id") for entry in download_mirrors]
+    duplicate_mirrors = sorted(
+        project_id
+        for project_id, count in Counter(mirror_ids).items()
+        if isinstance(project_id, int) and count > 1
+    )
+    if duplicate_mirrors:
+        errors.append(f"download_mirrors contains duplicate project IDs: {duplicate_mirrors}")
+
+    for entry in download_mirrors:
+        project_id = entry.get("id")
+        file_id = entry.get("file_id")
+        filename = entry.get("filename")
+        url = entry.get("url")
+        sha512 = entry.get("sha512")
+        if not isinstance(project_id, int) or not isinstance(file_id, int):
+            errors.append("every download_mirrors entry must contain integer id and file_id values")
+            continue
+        if project_id not in manifest_file_ids:
+            errors.append(f"download mirror project {project_id} is absent from the manifest")
+        elif manifest_file_ids[project_id] != file_id:
+            errors.append(
+                f"download mirror project {project_id} targets file {file_id}, but the manifest uses {manifest_file_ids[project_id]}"
+            )
+        if not isinstance(filename, str) or not filename.lower().endswith(".jar"):
+            errors.append(f"download mirror project {project_id} must declare a jar filename")
+        parsed_url = urlparse(url) if isinstance(url, str) else None
+        if not parsed_url or parsed_url.scheme != "https" or not parsed_url.netloc:
+            errors.append(f"download mirror project {project_id} must declare an HTTPS URL")
+        if (
+            not isinstance(sha512, str)
+            or len(sha512) != 128
+            or any(character not in "0123456789abcdefABCDEF" for character in sha512)
+        ):
+            errors.append(f"download mirror project {project_id} must declare a SHA-512 hash")
 
     for entry in config.get("server_only", []):
         if not isinstance(entry.get("id"), int) or not isinstance(entry.get("file_id"), int):

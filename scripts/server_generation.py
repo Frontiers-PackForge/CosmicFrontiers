@@ -188,6 +188,9 @@ def download_mods_from_curseforge(serverpack_dir, curseforge_api_key=None):
     config = load_json(os.path.join(root_dir, "server-mods-config.json"))
     manual_ids = {entry["id"] for entry in config.get("manual_download", [])}
     server_only = {entry["id"]: entry for entry in config.get("server_only", [])}
+    download_mirrors = {
+        entry["id"]: entry for entry in config.get("download_mirrors", [])
+    }
     mods_dir = os.path.join(serverpack_dir, "mods")
     os.makedirs(mods_dir, exist_ok=True)
 
@@ -201,30 +204,48 @@ def download_mods_from_curseforge(serverpack_dir, curseforge_api_key=None):
             return
 
         file_id = server_only.get(project_id, {}).get("file_id", entry["fileID"])
-        file_data = get_mod_file(project_id, file_id, curseforge_api_key)
-        if not file_data:
-            raise RuntimeError(f"CurseForge returned no metadata for {project_id}/{file_id}")
-        filename = file_data.get("fileName")
-        if not filename:
-            raise RuntimeError(f"CurseForge returned no filename for {project_id}/{file_id}")
+        mirror = download_mirrors.get(project_id)
+        if mirror:
+            if mirror["file_id"] != file_id:
+                raise RuntimeError(
+                    f"Declared mirror for {project_id} targets file {mirror['file_id']}, expected {file_id}"
+                )
+            filename = mirror["filename"]
+            algorithm = "sha512"
+            digest = mirror["sha512"]
+            download_url = mirror["url"]
+            source = "declared mirror"
+        else:
+            file_data = get_mod_file(project_id, file_id, curseforge_api_key)
+            if not file_data:
+                raise RuntimeError(
+                    f"CurseForge returned no metadata for {project_id}/{file_id}"
+                )
+            filename = file_data.get("fileName")
+            if not filename:
+                raise RuntimeError(
+                    f"CurseForge returned no filename for {project_id}/{file_id}"
+                )
+            algorithm, digest = expected_hash(file_data)
+            download_url = file_data.get("downloadUrl") or get_mod_download_url(
+                project_id, file_id, curseforge_api_key
+            )
+            source = "CurseForge"
+
         destination = os.path.join(mods_dir, filename)
-        algorithm, digest = expected_hash(file_data)
         if os.path.isfile(destination):
             if algorithm and hash_file(destination, algorithm).lower() == digest.lower():
                 print(f"Using packaged override {filename}")
                 return
             raise RuntimeError(f"Existing server mod conflicts with CurseForge file {filename}")
 
-        download_url = file_data.get("downloadUrl") or get_mod_download_url(
-            project_id, file_id, curseforge_api_key
-        )
         if not download_url:
             raise RuntimeError(
                 f"No CurseForge download URL for {project_id}/{file_id}; declare it in manual_download and provide an override jar"
             )
 
         temporary = f"{destination}.part"
-        print(f"Downloading {filename}")
+        print(f"Downloading {filename} from {source}")
         response = requests.get(download_url, stream=True, timeout=DOWNLOAD_TIMEOUT)
         response.raise_for_status()
         with open(temporary, "wb") as output:
@@ -233,15 +254,30 @@ def download_mods_from_curseforge(serverpack_dir, curseforge_api_key=None):
                     output.write(chunk)
         if algorithm and hash_file(temporary, algorithm).lower() != digest.lower():
             os.remove(temporary)
-            raise RuntimeError(f"Downloaded file failed its CurseForge hash check: {filename}")
+            raise RuntimeError(f"Downloaded file failed its hash check: {filename}")
         os.replace(temporary, destination)
 
     files = manifest.get("files", [])
     workers = min(MAX_CONCURRENT_DOWNLOADS, max(1, len(files)))
+    failures = []
     with ThreadPoolExecutor(max_workers=workers) as executor:
-        futures = [executor.submit(download, entry) for entry in files]
+        futures = {executor.submit(download, entry): entry for entry in files}
         for future in as_completed(futures):
-            future.result()
+            entry = futures[future]
+            try:
+                future.result()
+            except Exception as error:
+                project_id = entry.get("projectID")
+                file_id = server_only.get(project_id, {}).get(
+                    "file_id", entry.get("fileID")
+                )
+                failures.append(
+                    f"{project_id}/{file_id}: {type(error).__name__}: {error}"
+                )
+
+    if failures:
+        formatted = "\n".join(f"  - {failure}" for failure in sorted(failures))
+        raise RuntimeError(f"Server mod downloads failed:\n{formatted}")
 
 
 def update_readme(root_dir, serverpack_dir, api_key=None):

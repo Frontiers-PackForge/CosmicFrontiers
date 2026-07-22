@@ -13,6 +13,16 @@
     {"name": "Sodium", "id": 394468}
   ],
   "manual_download": [],
+  "download_mirrors": [
+    {
+      "name": "Create Aeronautics",
+      "id": 676721,
+      "file_id": 8240058,
+      "filename": "create-aeronautics-bundled-1.21.1-1.3.0.jar",
+      "url": "https://cdn.modrinth.com/data/oWaK0Q19/versions/w7zlLnea/create-aeronautics-bundled-1.21.1-1.3.0.jar",
+      "sha512": "2abba2e166a0ec8d42ab06108b63070d61f985420ecca8739c5b2300561b31486b69b3ad13310b0c459edb9edebeffb55a4cdf4ce493805833d32f5bde9ce778"
+    }
+  ],
   "server_only": [],
   "override_mods": []
 }
