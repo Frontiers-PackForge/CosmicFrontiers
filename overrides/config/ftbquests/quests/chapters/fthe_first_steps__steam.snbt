@@ -35,6 +35,11 @@
 			y: 0.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 3073415983691292914L
+				visible: 1b
+			}]
 			dependencies: ["2AA6F78DB2ED60F2"]
 			id: "1B387FD15E883317"
 			tasks: [{
@@ -98,6 +103,11 @@
 			y: 4.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 8911044486824559043L
+				visible: 1b
+			}]
 			dependencies: ["7BAA63BF7EE181C3"]
 			dependency_requirement: "one_completed"
 			id: "46A8D660ABEB83FA"
@@ -112,8 +122,14 @@
 			y: 2.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 5091555089431888890L
+				visible: 1b
+			}]
 			dependencies: ["46A8D660ABEB83FA"]
 			id: "369DE54ABB07E98A"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "6099065C7A6FE5EF"
@@ -163,8 +179,14 @@
 			y: 4.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 3935553758519880074L
+				visible: 1b
+			}]
 			dependencies: ["369DE54ABB07E98A"]
 			id: "1B801262A2CADD36"
+			shape: "hexagon"
 			tasks: [{
 				id: "6DD86249F76C9EA0"
 				item: { count: 1, id: "cosmiccore:steam_mixing_vessel" }
@@ -174,6 +196,11 @@
 			y: 6.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 1981604050890317110L
+				visible: 1b
+			}]
 			dependencies: ["1B801262A2CADD36"]
 			id: "1D2C76D5AAD0964E"
 			tasks: [{
@@ -206,11 +233,17 @@
 			y: 2.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/optional_quest_line.png"
+				dependency: 6612308520027243298L
+				visible: 1b
+			}]
 			dependencies: ["5BC3A390C1834322"]
 			icon: {
 				id: "create:cogwheel"
 			}
 			id: "391A834FBA98B236"
+			shape: "gear"
 			tasks: [{
 				id: "29929FE2DD6D7B10"
 				item: { count: 1, id: "create:cogwheel" }
@@ -451,6 +484,23 @@
 			y: 7.0d
 		}
 		{
+			cosmiccore_dependency_lines: [
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 1513699401057994393L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 6990611960627784304L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 7325260714573554923L
+					visible: 1b
+				}
+			]
 			dependencies: [
 				"6103A48A53D0EA70"
 				"1501BD95D8C88699"
@@ -472,8 +522,14 @@
 			y: 1.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 3935553758519880074L
+				visible: 1b
+			}]
 			dependencies: ["369DE54ABB07E98A"]
 			id: "5461D8E87350BBA2"
+			shape: "hexagon"
 			tasks: [{
 				id: "11405FF9D65281C3"
 				item: { count: 1, id: "cosmiccore:steam_caster" }
@@ -518,6 +574,11 @@
 			y: 7.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 2102185786141087310L
+				visible: 1b
+			}]
 			dependencies: [
 				"1EBB2FD1DB4A60E5"
 				"7B03988015A26629"
@@ -543,6 +604,11 @@
 			y: 6.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 7591653942130702841L
+				visible: 1b
+			}]
 			dependencies: ["695AF909BE64F9F9"]
 			id: "6103A48A53D0EA70"
 			tasks: [{
@@ -576,6 +642,23 @@
 			y: 8.0d
 		}
 		{
+			cosmiccore_dependency_lines: [
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 1981604050890317110L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 6080379464805563298L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 7793193702882126574L
+					visible: 1b
+				}
+			]
 			dependencies: [
 				"6C26FC61F619AAEE"
 				"5461D8E87350BBA2"
@@ -592,6 +675,11 @@
 			y: 8.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 8112210409533229730L
+				visible: 1b
+			}]
 			dependencies: ["70945C631B744AA2"]
 			id: "5505401B1E8344EB"
 			shape: "hexagon"
@@ -605,8 +693,14 @@
 			y: 8.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 6126373353327641835L
+				visible: 1b
+			}]
 			dependencies: ["5505401B1E8344EB"]
 			id: "3471B2B107BD8510"
+			shape: "hexagon"
 			tasks: [{
 				id: "10AD1F8C2AADA2EA"
 				item: { count: 1, id: "gtceu:steel_ingot" }
@@ -859,6 +953,11 @@
 			y: 7.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 2869012589649904635L
+				visible: 1b
+			}]
 			dependencies: [
 				"50930E8761259EFD"
 				"74923FA0D830E33B"
@@ -1117,6 +1216,11 @@
 			y: 14.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 1961458174930727703L
+				visible: 1b
+			}]
 			dependencies: ["1B387FD15E883317"]
 			id: "7BAA63BF7EE181C3"
 			tasks: [
@@ -1136,7 +1240,7 @@
 					type: "item"
 				}
 			]
-			x: 1.25d
+			x: 1.0d
 			y: 2.0d
 		}
 		{
@@ -1421,6 +1525,11 @@
 			y: 4.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/optional_quest_line.png"
+				dependency: 3870740064916257348L
+				visible: 1b
+			}]
 			dependencies: ["35B7A194BB34BA44"]
 			id: "2ABEE21EB889B7DD"
 			shape: "gear"
@@ -1462,6 +1571,11 @@
 			y: 4.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/optional_quest_line.png"
+				dependency: 6612308520027243298L
+				visible: 1b
+			}]
 			dependencies: ["5BC3A390C1834322"]
 			id: "2928EF0DCF970AE4"
 			shape: "gear"
@@ -1474,6 +1588,11 @@
 			y: -2.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/optional_quest_line.png"
+				dependency: 3073415983691292914L
+				visible: 1b
+			}]
 			dependencies: ["2AA6F78DB2ED60F2"]
 			id: "4CBACE925D480CAA"
 			tasks: [{
@@ -1583,7 +1702,6 @@
 		{
 			cosmiccore_dependency_lines: [{
 				dependency: 6080379464805563298L
-				style: "default"
 				visible: 0b
 			}]
 			dependencies: [

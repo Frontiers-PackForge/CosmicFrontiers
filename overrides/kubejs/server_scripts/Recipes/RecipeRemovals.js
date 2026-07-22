@@ -117,6 +117,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'embers:create/pressing/lead_plate' })
     event.remove({ id: 'create:pressing/copper_ingot' })
     event.remove({ id: 'embers:create/pressing/dwarven_mithril_plate' })
+    event.remove({ id: 'embers:create/pressing/copper_plate' })
+    event.remove({ id: 'embers:create/pressing/iron_plate' })
     event.remove({ id: 'create:pressing/iron_ingot' })
     event.remove({ id: 'simulated:physics_assembler' })
     event.remove({ id: 'create:crafting/kinetics/cart_assembler' })

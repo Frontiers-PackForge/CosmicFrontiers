@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
     F: '#c:tools/file',
     C: '#c:tools/wire_cutter'
   })
-  
+
   event.recipes.occultism.miner(
     WeightedRecipeResult.of('cosmiccore:rune_slate_arklys', 1, 50),
     'occultism:miner_foliot_unspecialized'
@@ -126,7 +126,7 @@ ServerEvents.recipes(event => {
       'embers:eldritch_insignia',
       'occultism:magic_lamp_empty',
       'occultism:iesnium_pickaxe',
-      'minecraft:raw_iron',
+      'cosmiccore:raw_ferosine',
       'gtceu:double_gold_plate'],
     'occultism:book_of_binding_bound_foliot',
     'occultism:craft_foliot'

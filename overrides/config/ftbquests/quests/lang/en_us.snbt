@@ -233,6 +233,7 @@
 		"Just place an Ember Emitter onto your source of embers, and connected it to an ember receptor with a tinker hammer."
 	]
 	quest.38473AAE9EFA91C7.quest_subtitle: "Moving Ember"
+	quest.391A834FBA98B236.quest_subtitle: "Moving Rotation"
 	quest.3945947DBE1D85A0.quest_subtitle: "Tier 3 Overworld Resources"
 	quest.3A755F7B8012AB1A.quest_subtitle: "Create Oxygen Tank"
 	quest.3E03C13CAE570D80.quest_desc: ["You can also get quartz blocks from stone masons, which allows you to make this pre-nether!"]
