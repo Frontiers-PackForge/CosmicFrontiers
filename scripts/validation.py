@@ -180,6 +180,6 @@ def validate_release(root_dir, expected_version):
         "client_archive": f"Cosmic Frontiers {display_version}.zip",
         "server_archive": f"Cosmic Frontiers {display_version} Server Files.zip",
         "curseforge_version_type": (
-            "alpha" if "nightly" in expected_version.lower() else "release"
+            "beta" if "nightly" in expected_version.lower() else "release"
         ),
     }
