@@ -1,8 +1,8 @@
 <p align="center"><img src="https://github.com/Frontiers-PackForge/CosmicFrontiers/assets/46772882/be7e0694-9b1b-473d-a3cc-adcf04661689" alt="Logo"></p>
-<p align="center"><b>A minecraft 1.20.1 Modpack centered around Arcane & Sci-fi themes.</b></p>
-<p align="center"><b>LATEST MAJOR UPDATE : 0.7.0 - SCARLET STREAMS</b></p>
+<p align="center"><b>A minecraft 1.21.1 Story Modpack centered around Arcane & Sci-fi themes.</b></p>
+<p align="center"><b>LATEST MAJOR UPDATE : 0.8.0-nightly : 1.21.1 Overhaul In dev</b></p>
 <h1 align="center">
-    <a href="https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial"><img src="https://img.shields.io/badge/Available%20for-MC%201.20.1+%20-informational?style=for-the-badge" alt="Supported Versions"></a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial"><img src="https://img.shields.io/badge/Available%20for-MC%201.21.1%20-informational?style=for-the-badge" alt="Supported Versions"></a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial"><img src="https://img.shields.io/github/license/GregTechCEu/GregTech?style=for-the-badge" alt="License"></a>
     <a href="https://discord.gg/fkxPAq9VQp"><img src="https://img.shields.io/discord/738517355537236129?color=5464ec&label=Discord&style=for-the-badge" alt="Discord"></a>
     <br>
