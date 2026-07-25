@@ -24,5 +24,12 @@
     }
   ],
   "server_only": [],
-  "override_mods": []
+  "override_mods": [],
+  "server_property_overrides": [
+    {
+      "path": "config/modernfix-mixins.properties",
+      "key": "mixin.perf.clear_mixin_classinfo",
+      "value": "false"
+    }
+  ]
 }

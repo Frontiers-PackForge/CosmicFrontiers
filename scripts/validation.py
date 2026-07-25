@@ -167,6 +167,21 @@ def validate_release(root_dir, expected_version):
         if not isinstance(entry.get("id"), int) or not isinstance(entry.get("file_id"), int):
             errors.append("every server_only entry must contain integer id and file_id values")
 
+    for entry in config.get("server_property_overrides", []):
+        path = entry.get("path")
+        key = entry.get("key")
+        value = entry.get("value")
+        if not all(isinstance(field, str) and field for field in (path, key, value)):
+            errors.append(
+                "every server_property_overrides entry must contain non-empty path, key, and value strings"
+            )
+            continue
+        normalized = os.path.normpath(path)
+        if os.path.isabs(normalized) or normalized == ".." or normalized.startswith(
+            f"..{os.sep}"
+        ):
+            errors.append(f"server property override path must stay inside the pack: {path}")
+
     if errors:
         formatted = "\n".join(f"  - {error}" for error in errors)
         raise RuntimeError(f"Release validation failed:\n{formatted}")

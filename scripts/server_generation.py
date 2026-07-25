@@ -41,6 +41,7 @@ def generate_serverpack_zip(
         raise RuntimeError("Required pack input is missing: server-files")
     for name in os.listdir(server_files_src):
         copy_any(os.path.join(server_files_src, name), os.path.join(serverpack_dir, name))
+    apply_server_property_overrides(root_dir, serverpack_dir)
 
     generate_filtered_manifest(root_dir, serverpack_dir, version)
     generate_filtered_modlist(root_dir, serverpack_dir, curseforge_api_key)
@@ -53,6 +54,35 @@ def generate_serverpack_zip(
     zip_directory(serverpack_dir, zip_path)
     print(f"Server pack zipped at: {zip_path}")
     return zip_path
+
+
+def apply_server_property_overrides(root_dir, serverpack_dir):
+    config = load_json(os.path.join(root_dir, "server-mods-config.json"))
+    for entry in config.get("server_property_overrides", []):
+        relative_path = os.path.normpath(entry["path"])
+        if os.path.isabs(relative_path) or relative_path == ".." or relative_path.startswith(
+            f"..{os.sep}"
+        ):
+            raise RuntimeError(f"Invalid server property override path: {entry['path']}")
+        path = os.path.join(serverpack_dir, relative_path)
+        if not os.path.isfile(path):
+            raise RuntimeError(f"Server property override file is missing: {entry['path']}")
+        key = entry["key"]
+        value = entry["value"]
+        prefix = f"{key}="
+        with open(path, "r", encoding="utf-8", newline="") as file:
+            lines = file.readlines()
+        matches = [index for index, line in enumerate(lines) if line.startswith(prefix)]
+        if len(matches) != 1:
+            raise RuntimeError(
+                f"Expected exactly one {key} property in {entry['path']}, found {len(matches)}"
+            )
+        index = matches[0]
+        body = lines[index].rstrip("\r\n")
+        ending = lines[index][len(body) :]
+        lines[index] = f"{prefix}{value}{ending}"
+        with open(path, "w", encoding="utf-8", newline="") as file:
+            file.writelines(lines)
 
 
 def apply_override_mod_policy(root_dir, serverpack_dir):
