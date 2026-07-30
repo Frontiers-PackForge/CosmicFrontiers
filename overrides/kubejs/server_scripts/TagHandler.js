@@ -71,3 +71,7 @@ ServerEvents.tags('item', event => {
         event.add('occultism:tools/knife', [`gtceu:${mat.name}_knife`])
     })
 })
+ServerEvents.tags('block', event => {
+    event.add('minecraft:logs', 'malum:runewood_log')
+    event.add('minecraft:logs', 'malum:exposed_runewood_log')
+})

@@ -6,12 +6,33 @@
 	group: "3E75F0EECED54564"
 	id: "2041768F4C2CACBD"
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "47AE23771146D41B"
+			linked_quest: "3F9E4F1CC420E8B0"
+			x: -3.5d
+			y: 7.5d
+		}
+		{
+			id: "609829E71AD34D00"
+			linked_quest: "3F9E4F1CC420E8B0"
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			id: "1C41B50035BF7546"
+			linked_quest: "6CE8C80587A22B88"
+			x: 0.0d
+			y: -6.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["1FECA1C0E8B233D5"]
 			hide_until_deps_complete: true
 			id: "61F2E48EEF38C362"
+			shape: "pentagon"
+			size: 2.0d
 			tasks: [{
 				id: "2CD8FA4DE4681F9F"
 				item: { count: 1, id: "gtceu:lv_machine_hull" }
@@ -23,6 +44,7 @@
 		{
 			dependencies: ["61F2E48EEF38C362"]
 			id: "168A6B3A2FD0CC45"
+			shape: "gear"
 			tasks: [
 				{
 					id: "3277AFA2876C7287"
@@ -50,11 +72,11 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 2.5d
+			x: -2.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["61F2E48EEF38C362"]
+			dependencies: ["342375DEAD63F295"]
 			id: "6FF2994E5A964135"
 			tasks: [
 				{
@@ -68,10 +90,15 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: -2.5d
+			x: 1.5d
+			y: 9.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 7057954868592952162L
+				visible: 1b
+			}]
 			dependencies: [
 				"61F2E48EEF38C362"
 				"1C295BB0A0CEBF57"
@@ -87,19 +114,41 @@
 			y: 0.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 9170271717184355392L
+				visible: 1b
+			}]
 			dependencies: ["7F43598A6495BC40"]
+			icon: {
+				id: "gtceu:electric_blast_furnace"
+			}
 			id: "666A77BC58F33CD0"
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [{
-				id: "50A029D49905B353"
-				item: { count: 1, id: "gtceu:electric_blast_furnace" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "55AB273E9F128E62"
+					item: { count: 1, id: "gtceu:electric_blast_furnace" }
+					type: "item"
+				}
+				{
+					deed: "cosmiccore:first_flame"
+					disclosure: "visible"
+					id: "71CDC1CEC4DC85C2"
+					presentation: "quest"
+					type: "cosmiccore:deed"
+				}
+			]
 			x: 7.0d
 			y: 0.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 6080675371917379329L
+				visible: 1b
+			}]
 			dependencies: [
 				"5462E608B19A0701"
 				"5B5D6E9434C5EDDE"
@@ -122,7 +171,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -3.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6FF2994E5A964135"]
@@ -132,10 +181,15 @@
 				item: { components: { "gtceu:energy_content": { charge: 0L, discharge_mode: 0b, infinite: 0b, max_charge: 100000L } }, count: 1, id: "cosmiccore:vein_survey_scanner_lv" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
+			x: 1.0d
+			y: 8.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 7379842590229871824L
+				visible: 1b
+			}]
 			dependencies: ["666A77BC58F33CD0"]
 			id: "38D949291F0E780F"
 			tasks: [{
@@ -147,6 +201,11 @@
 			y: -2.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 7057954868592952162L
+				visible: 1b
+			}]
 			dependencies: ["61F2E48EEF38C362"]
 			id: "5462E608B19A0701"
 			tasks: [{
@@ -168,9 +227,14 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 1.5d
+			y: -1.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 7379842590229871824L
+				visible: 1b
+			}]
 			dependencies: ["666A77BC58F33CD0"]
 			id: "75091C42FAF10291"
 			tasks: [{
@@ -182,6 +246,11 @@
 			y: 1.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 8433302851231482513L
+				visible: 1b
+			}]
 			dependencies: ["75091C42FAF10291"]
 			id: "3733906CF47B1C06"
 			shape: "hexagon"
@@ -195,6 +264,11 @@
 			y: 1.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 3977681693530856454L
+				visible: 1b
+			}]
 			dependencies: ["3733906CF47B1C06"]
 			id: "07D19BDB1D7C756D"
 			shape: "hexagon"
@@ -224,6 +298,11 @@
 			y: 0.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 3977681693530856454L
+				visible: 1b
+			}]
 			dependencies: ["3733906CF47B1C06"]
 			id: "1B4E42BE6EF7A4F3"
 			tasks: [{
@@ -277,6 +356,11 @@
 			y: 1.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 563402793792861549L
+				visible: 1b
+			}]
 			dependencies: ["07D19BDB1D7C756D"]
 			id: "469D5D2740B79048"
 			shape: "hexagon"
@@ -313,11 +397,6 @@
 			id: "3945947DBE1D85A0"
 			shape: "pentagon"
 			tasks: [
-				{
-					id: "3A2B8E24E8399859"
-					item: { count: 1, id: "gtceu:cobaltite_ore_chunk" }
-					type: "item"
-				}
 				{
 					id: "6FED220354531691"
 					item: { count: 1, id: "gtceu:spessartine_ore_chunk" }
@@ -414,6 +493,11 @@
 			y: 3.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 5088325577169408072L
+				visible: 1b
+			}]
 			dependencies: [
 				"469D5D2740B79048"
 				"50A60E8F488274DF"
@@ -450,6 +534,11 @@
 				{
 					id: "3AB04F734609F8A8"
 					item: { count: 1, id: "gtceu:grossular_ore_chunk" }
+					type: "item"
+				}
+				{
+					id: "49421F9402EDDB52"
+					item: { count: 1, id: "gtceu:cobaltite_ore_chunk" }
 					type: "item"
 				}
 			]
@@ -500,13 +589,14 @@
 			dependencies: ["61F2E48EEF38C362"]
 			hide_dependency_lines: true
 			id: "142E630146522E09"
+			size: 1.25d
 			tasks: [{
 				id: "2438D8A75C71680E"
 				item: { count: 1, id: "gtceu:lv_pump" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.5d
+			x: 5.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["142E630146522E09"]
@@ -516,14 +606,19 @@
 				item: { count: 1, id: "gtceu:raw_oil_bucket" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.5d
+			x: 7.0d
+			y: 7.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				dependency: 4584188455677913264L
+				target_link: 6960359296665341184L
+				visible: 1b
+			}]
 			dependencies: [
 				"29D9ADD4DB314E5E"
-				"7ED9271C30A62157"
 				"7E599592D75268AC"
+				"3F9E4F1CC420E8B0"
 			]
 			id: "07D8585C88A58A28"
 			min_width: 350
@@ -532,32 +627,21 @@
 				item: { count: 1, id: "gtceu:naphtha_bucket" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.5d
+			x: 7.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["61F2E48EEF38C362"]
 			hide_dependency_lines: true
 			id: "7E599592D75268AC"
+			size: 1.25d
 			tasks: [{
 				id: "00CCDD621C1E5A51"
 				item: { count: 1, id: "gtceu:lv_distillery" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["61F2E48EEF38C362"]
-			hide_dependency_lines: true
-			id: "7ED9271C30A62157"
-			tasks: [{
-				id: "05DF1B10248DDA95"
-				item: { count: 1, id: "gtceu:lv_chemical_reactor" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 6.0d
+			x: 5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6CE8C80587A22B88"]
@@ -578,7 +662,7 @@
 				}
 			]
 			x: 8.5d
-			y: 6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["70B3AAFA82B777E9"]
@@ -589,7 +673,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["151E0F259ECF9EAF"]
@@ -610,7 +694,7 @@
 				}
 			]
 			x: 5.5d
-			y: 6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["61F2E48EEF38C362"]
@@ -621,10 +705,22 @@
 				item: { count: 1, id: "gtceu:lv_gas_collector" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 7.5d
+			x: 6.285714285714285d
+			y: 2.1964285714285694d
 		}
 		{
+			cosmiccore_dependency_lines: [
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 4096385777033705487L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 8433302851231482513L
+					visible: 1b
+				}
+			]
 			dependencies: [
 				"38D949291F0E780F"
 				"75091C42FAF10291"
@@ -640,6 +736,11 @@
 			y: -2.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 5515417539609214012L
+				visible: 1b
+			}]
 			dependencies: ["4C8AB307C45DBC3C"]
 			icon: {
 				id: "neovitae:sigil_water"
@@ -650,6 +751,11 @@
 			y: -4.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 7944026797064771063L
+				visible: 1b
+			}]
 			dependencies: ["6E3EDA485D3AD5F7"]
 			icon: {
 				id: "cosmiccore:sculk_myofibroblast"
@@ -661,9 +767,14 @@
 				type: "checkmark"
 			}]
 			x: 10.0d
-			y: -6.5d
+			y: -7.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 3721512451395866331L
+				visible: 1b
+			}]
 			dependencies: ["33A577DB6CA4CEDB"]
 			id: "511193BD765C32B3"
 			tasks: [{
@@ -675,6 +786,11 @@
 			y: -4.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 5841612633620099763L
+				visible: 1b
+			}]
 			dependencies: ["511193BD765C32B3"]
 			id: "7F0D22395A2F8985"
 			tasks: [{
@@ -750,6 +866,18 @@
 			y: -1.0d
 		}
 		{
+			cosmiccore_dependency_lines: [
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 8791430758679083285L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 8844017547138540869L
+					visible: 1b
+				}
+			]
 			dependencies: [
 				"7A016FB22E827915"
 				"7ABC4319FC83A545"
@@ -758,10 +886,43 @@
 				id: "neovitae:sigil_teleposition"
 			}
 			id: "3E42DDEBA9DBB13C"
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [
+				{
+					dimension: "undergarden:undergarden"
+					id: "2627A4C621E3C941"
+					ignore_dimension: false
+					position: [I;
+						0
+						-350
+						0
+					]
+					size: [I;
+						1
+						50
+						1
+					]
+					type: "location"
+				}
+				{
+					deed: "frontiers:depth_call"
+					disable_toast: true
+					disclosure: "sealed"
+					id: "67DCDF19C59717DC"
+					presentation: "quest"
+					type: "cosmiccore:deed"
+				}
+			]
 			x: 10.0d
-			y: -8.5d
+			y: -9.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 7944026797064771063L
+				visible: 1b
+			}]
 			dependencies: ["6E3EDA485D3AD5F7"]
 			id: "0B51D83A7E824956"
 			tasks: [{
@@ -773,6 +934,11 @@
 			y: -4.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 815670753272940886L
+				visible: 1b
+			}]
 			dependencies: ["0B51D83A7E824956"]
 			id: "7ABC4319FC83A545"
 			tasks: [{
@@ -781,36 +947,73 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -6.5d
+			y: -9.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/optional_quest_line.png"
+				dependency: 9155011247235631493L
+				visible: 1b
+			}]
 			dependencies: ["7F0D22395A2F8985"]
 			id: "406723668ED647BF"
+			shape: "gear"
 			tasks: [{
 				id: "15CDD2C9936F0BA0"
 				item: { count: 1, id: "cosmiccore:rainbow_cane" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: -8.0d
+			x: 3.5d
+			y: -6.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 7057954868592952162L
+				visible: 1b
+			}]
 			dependencies: ["61F2E48EEF38C362"]
 			id: "3F9E4F1CC420E8B0"
+			shape: "hexagon"
+			size: 1.25d
 			tasks: [{
 				id: "254F0AE80409861C"
 				item: { count: 1, id: "gtceu:lv_chemical_reactor" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.0d
 			y: -2.5d
 		}
 		{
+			cosmiccore_dependency_lines: [
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 4584188455677913264L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 5602913410396888274L
+					visible: 1b
+				}
+			]
 			dependencies: [
 				"3F9E4F1CC420E8B0"
 				"4DC18C0FADFA9CD2"
 			]
 			id: "7BAF71B8957633BA"
+			rewards: [{
+				id: "723A1DB9B7F7F6BD"
+				item: {
+					components: {
+						"modonomicon:book_id": "neovitae:guide"
+						"modonomicon:book_open": 1b
+					}
+					count: 1
+					id: "neovitae:guide_book"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "145ABE05AB61D926"
 				item: { count: 1, id: "neovitae:blood_orb_weak" }
@@ -820,6 +1023,18 @@
 			y: -2.5d
 		}
 		{
+			cosmiccore_dependency_lines: [
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 8912467225184973754L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 9083390210188157375L
+					visible: 1b
+				}
+			]
 			dependencies: [
 				"7BAF71B8957633BA"
 				"7E0EAF453286A1BF"
@@ -836,6 +1051,11 @@
 			y: -2.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 4096385777033705487L
+				visible: 1b
+			}]
 			dependencies: ["38D949291F0E780F"]
 			id: "33A577DB6CA4CEDB"
 			shape: "hexagon"
@@ -849,6 +1069,11 @@
 			y: -3.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 3721512451395866331L
+				visible: 1b
+			}]
 			dependencies: ["33A577DB6CA4CEDB"]
 			id: "4C0C9EB65FCAB42C"
 			tasks: [{
@@ -871,6 +1096,11 @@
 			y: -5.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 4096385777033705487L
+				visible: 1b
+			}]
 			dependencies: ["38D949291F0E780F"]
 			hide_dependency_lines: true
 			id: "7E0EAF453286A1BF"
@@ -881,10 +1111,15 @@
 				item: { count: 1, id: "malum:spirit_altar" }
 				type: "item"
 			}]
-			x: -8.5d
-			y: -4.5d
+			x: -11.0d
+			y: -2.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 6789192813088835433L
+				visible: 1b
+			}]
 			dependencies: ["5E380EE48FCB8769"]
 			id: "4AAF6D55648BB708"
 			tasks: [{
@@ -896,6 +1131,11 @@
 			y: -1.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 6789192813088835433L
+				visible: 1b
+			}]
 			dependencies: ["5E380EE48FCB8769"]
 			id: "141E15551A346422"
 			tasks: [{
@@ -907,6 +1147,18 @@
 			y: -1.0d
 		}
 		{
+			cosmiccore_dependency_lines: [
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 1449619585315922978L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 5381640293257557768L
+					visible: 1b
+				}
+			]
 			dependencies: [
 				"4AAF6D55648BB708"
 				"141E15551A346422"
@@ -947,6 +1199,11 @@
 			y: 1.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 349759315629380449L
+				visible: 1b
+			}]
 			dependencies: ["04DA983E94F91361"]
 			id: "1817CE7B36F6A650"
 			shape: "hexagon"
@@ -958,6 +1215,714 @@
 			}]
 			x: -8.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["3F9E4F1CC420E8B0"]
+			id: "31C9B8A33BD4DB08"
+			shape: "gear"
+			tasks: [{
+				id: "534B9345E76217BE"
+				item: { count: 1, id: "gtceu:raw_rubber_dust" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 7379842590229871824L
+				visible: 1b
+			}]
+			dependencies: [
+				"49421F9402EDDB52"
+				"666A77BC58F33CD0"
+			]
+			hide_until_deps_visible: true
+			id: "46025BCA76960F68"
+			tasks: [{
+				id: "56EF6718CF5D0696"
+				item: { count: 1, id: "gtceu:cobaltite_dust" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 5044695457739444072L
+				visible: 1b
+			}]
+			dependencies: ["46025BCA76960F68"]
+			id: "2FB02A12F94FFB3E"
+			tasks: [{
+				id: "48E6EFCE3499CE59"
+				item: { count: 1, id: "gtceu:arsenic_trioxide_dust" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 3436292776664234814L
+				visible: 1b
+			}]
+			dependencies: ["2FB02A12F94FFB3E"]
+			id: "715013B20736F4AA"
+			tasks: [{
+				id: "4474C124D98DA390"
+				item: { count: 1, id: "gtceu:arsenic_dust" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			cosmiccore_dependency_lines: [
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 8165047779768857770L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 8174523802657707556L
+					visible: 1b
+				}
+			]
+			dependencies: [
+				"715013B20736F4AA"
+				"7171BE1689635624"
+			]
+			id: "7FDDE9A02952F818"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "3F0189FADC042357"
+				item: { count: 1, id: "gtceu:gallium_arsenide_dust" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			cosmiccore_dependency_lines: [
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 2912189594220328432L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 3377104699808795650L
+					visible: 1b
+				}
+			]
+			dependencies: [
+				"2EDDE2D4F167CC02"
+				"286A2D01AA1775F0"
+			]
+			id: "7171BE1689635624"
+			tasks: [{
+				id: "20A51FDD87917DF5"
+				item: { count: 1, id: "gtceu:gallium_dust" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"51E69437CF0DCFDC"
+				"61F2E48EEF38C362"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "2EDDE2D4F167CC02"
+			tasks: [{
+				id: "608D196BDAC955E8"
+				item: { count: 1, id: "gtceu:sphalerite_dust" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["072350DCC099E9C9"]
+			id: "032DE7CBA8FCB4C8"
+			shape: "pentagon"
+			tasks: [{
+				id: "51E69437CF0DCFDC"
+				item: { count: 1, id: "gtceu:sphalerite_ore_chunk" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 4.5d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 7057954868592952162L
+				visible: 1b
+			}]
+			dependencies: ["61F2E48EEF38C362"]
+			hide_dependency_lines: true
+			id: "286A2D01AA1775F0"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "01FCA377B3F76887"
+				item: { count: 1, id: "gtceu:lv_electrolyzer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"07D8585C88A58A28"
+				"286A2D01AA1775F0"
+			]
+			dependency_requirement: "one_completed"
+			id: "0BDABE8C11A47ABB"
+			shape: "gear"
+			tasks: [{
+				id: "3213C18C8108BC14"
+				item: { count: 1, id: "gtceu:hydrogen_sulfide_bucket" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 9213777286767245336L
+				visible: 1b
+			}]
+			dependencies: ["7FDDE9A02952F818"]
+			id: "13B93C1E944B2BC4"
+			tasks: [{
+				id: "2AC65D83CD29435E"
+				item: { count: 1, id: "gtceu:diode" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			cosmiccore_dependency_lines: [
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 1421233259446741956L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 1736083209973048912L
+					visible: 0b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 6925596308886551937L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 7057954868592952162L
+					visible: 1b
+				}
+			]
+			dependencies: [
+				"61F2E48EEF38C362"
+				"601CA92648F07D81"
+				"13B93C1E944B2BC4"
+				"1817CE7B36F6A650"
+			]
+			icon: {
+				id: "gtceu:good_electronic_circuit"
+			}
+			id: "373DE13547832AB8"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "499BA6964FD278BB"
+				item: { count: 1, id: "gtceu:good_electronic_circuit" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"4A608CA30FD3D86D"
+				"7621976F82BCC814"
+				"4C6420829C67E0C6"
+			]
+			icon: {
+				id: "gtceu:phenolic_printed_circuit_board"
+			}
+			id: "601CA92648F07D81"
+			tasks: [
+				{
+					id: "6ABABB20400B398F"
+					item: { count: 1, id: "gtceu:phenolic_printed_circuit_board" }
+					type: "item"
+				}
+				{
+					id: "5E964F04D04E3129"
+					item: { count: 1, id: "gtceu:phenolic_circuit_board" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["61F2E48EEF38C362"]
+			hide_dependency_lines: true
+			id: "4A608CA30FD3D86D"
+			tasks: [{
+				id: "681402008014ECE7"
+				item: { count: 1, id: "gtceu:silver_dust" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				dependency: 4584188455677913264L
+				target_link: 5165104816938472475L
+				visible: 1b
+			}]
+			dependencies: ["3F9E4F1CC420E8B0"]
+			hide_dependency_lines: false
+			id: "4C6420829C67E0C6"
+			shape: "square"
+			tasks: [{
+				id: "269BA3AB70FA6C99"
+				item: { count: 1, id: "gtceu:iron_iii_chloride_bucket" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.0d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				dependency: 4584188455677913264L
+				target_link: 5165104816938472475L
+				visible: 1b
+			}]
+			dependencies: ["3F9E4F1CC420E8B0"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: false
+			id: "7621976F82BCC814"
+			shape: "square"
+			tasks: [{
+				id: "6B6C451241437475"
+				item: { count: 1, id: "gtceu:sodium_persulfate_bucket" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"373DE13547832AB8"
+				"6FF2994E5A964135"
+			]
+			id: "09F5DDB99D6FC836"
+			tasks: [{
+				id: "1E050DB65F0F49C6"
+				item: { count: 1, id: "gtceu:lv_circuit_assembler" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			id: "40646DECFE17F19E"
+			tasks: [{
+				id: "27D281EF8CD4F6D7"
+				item: { count: 1, id: "gtceu:implosion_compressor" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["40646DECFE17F19E"]
+			id: "342375DEAD63F295"
+			tasks: [{
+				id: "03181C349FCD7763"
+				item: { count: 1, id: "gtceu:quartzite_gem" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["61F2E48EEF38C362"]
+			id: "20B57C1FF5037C74"
+			shape: "gear"
+			size: 2.5d
+			tasks: [{
+				id: "1B611E179BDDC444"
+				type: "checkmark"
+			}]
+			x: 1.7857142857142918d
+			y: -2.2589285714285623d
+		}
+		{
+			cosmiccore_dependency_lines: [
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 4486392183051235644L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 6022170928031618255L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 9155011247235631493L
+					visible: 1b
+				}
+			]
+			dependencies: [
+				"7F0D22395A2F8985"
+				"3E42DDEBA9DBB13C"
+				"53930C8D5E0254CF"
+			]
+			id: "55175CA92EB687C4"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "58573A40E65E18AA"
+				item: { count: 1, id: "cosmiccore:bloomwyrm_heart" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["55175CA92EB687C4"]
+			id: "14BDA3F607AECA0F"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "401DC7729A35D5A3"
+				item: { count: 1, id: "cosmiccore:sculk_biochamber" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["6E3EDA485D3AD5F7"]
+			id: "28CFA2142307F7DC"
+			tasks: [{
+				id: "2E30EABD0AFBB509"
+				item: { count: 1, id: "cosmiccore:raw_utherite" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -6.5d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 2940747289066993628L
+				visible: 1b
+			}]
+			dependencies: ["28CFA2142307F7DC"]
+			id: "5E52D9ECB6805C81"
+			tasks: [{
+				id: "1581E739B39D2887"
+				item: { count: 1, id: "gtceu:utherium_gem" }
+				type: "item"
+			}]
+			x: 5.75d
+			y: -6.5d
+		}
+		{
+			cosmiccore_dependency_lines: [
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 598307023654382666L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 5479929352731407404L
+					visible: 1b
+				}
+				{
+					asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+					dependency: 6796734398352874625L
+					visible: 1b
+				}
+			]
+			dependencies: [
+				"4C0C9EB65FCAB42C"
+				"5E52D9ECB6805C81"
+				"084D9D116B8A6C4A"
+			]
+			id: "53930C8D5E0254CF"
+			tasks: [{
+				id: "0500EC69FEE0E177"
+				item: { count: 1, id: "gtceu:chrysanthium_ingot" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4C8AB307C45DBC3C"]
+			id: "0B34B5CE7CCBAE72"
+			shape: "gear"
+			tasks: [{
+				id: "677509BDC6B481FC"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: -2.0d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 4486392183051235644L
+				visible: 1b
+			}]
+			dependencies: ["3E42DDEBA9DBB13C"]
+			id: "084D9D116B8A6C4A"
+			tasks: [{
+				id: "0CC085FB8F430BD7"
+				item: { count: 1, id: "cosmiccore:bloomscrap" }
+				type: "item"
+			}]
+			x: 5.75d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"26CB92086BBC5867"
+				"2C1AA8AC7761C55A"
+				"037997B7B2760C66"
+			]
+			id: "6F0EB4BB758B4308"
+			size: 2.0d
+			tasks: [{
+				id: "0CD413CB5B0AA853"
+				item: { count: 1, id: "cosmiccore:nostium_ingot" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"7188512D6BDE6D5A"
+				"6F0EB4BB758B4308"
+			]
+			id: "28D8DB7637614A86"
+			tasks: [{
+				id: "186FE0F756C5F7B7"
+				item: { count: 1, id: "cosmiccore:mv_cogwork_magicapacitor" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6F0EB4BB758B4308"]
+			id: "104CF8CD85779676"
+			tasks: [{
+				id: "75373D38C6C3FD83"
+				item: { count: 1, id: "cosmiccore:mv_modular_frameworks" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6F0EB4BB758B4308"]
+			id: "782A4BBDABD84CE0"
+			tasks: [{
+				id: "7FD7DB830BAB6396"
+				item: { count: 1, id: "cosmiccore:mv_cladding" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -8.0d
+		}
+		{
+			id: "113A3705DE9B7DAD"
+			tasks: [{
+				id: "358B7EFEE572A709"
+				item: { count: 1, id: "malum:soulwoven_silk" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"104CF8CD85779676"
+				"28D8DB7637614A86"
+				"782A4BBDABD84CE0"
+				"113A3705DE9B7DAD"
+			]
+			id: "670865E54B4F9140"
+			tasks: [{
+				id: "5185A07B516E704F"
+				item: { count: 1, id: "gtceu:mv_machine_casing" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5E380EE48FCB8769"]
+			id: "7188512D6BDE6D5A"
+			tasks: [{
+				id: "07F3ED7942017811"
+				item: { count: 1, id: "neovitae:tabula_rasa" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["55175CA92EB687C4"]
+			id: "5932B46BC3A3AF35"
+			tasks: [{
+				id: "61CDC17680B7EA14"
+				item: { count: 1, id: "cosmiccore:abyssal_culture_vat" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"14BDA3F607AECA0F"
+				"680025BB4D6B7A9C"
+			]
+			id: "037997B7B2760C66"
+			tasks: [{
+				id: "5FDEECB753165E02"
+				item: { count: 1, id: "cosmiccore:green_algae" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"14BDA3F607AECA0F"
+				"680025BB4D6B7A9C"
+			]
+			id: "26CB92086BBC5867"
+			tasks: [{
+				id: "114A924DFCDD4B18"
+				item: { count: 1, id: "cosmiccore:red_algae" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"14BDA3F607AECA0F"
+				"680025BB4D6B7A9C"
+			]
+			id: "2C1AA8AC7761C55A"
+			tasks: [{
+				id: "0C7E7692767E80B9"
+				item: { count: 1, id: "cosmiccore:blue_algae" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["14BDA3F607AECA0F"]
+			id: "37AF2E053A24D8F3"
+			tasks: [{
+				id: "50F3E5B6710D5210"
+				item: { count: 1, id: "cosmiccore:bloomwyrm_algae" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -11.0d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				dependency: 7847742276769033096L
+				target_link: 2036107519054542150L
+				visible: 1b
+			}]
+			dependencies: [
+				"6CE8C80587A22B88"
+				"5932B46BC3A3AF35"
+				"213A7A4F59E10ACF"
+			]
+			id: "680025BB4D6B7A9C"
+			tasks: [
+				{
+					id: "2EF54CA847C2BF2F"
+					item: { count: 1, id: "cosmiccore:green_proto_algae" }
+					type: "item"
+				}
+				{
+					id: "34581FD99B50DCA4"
+					item: { count: 1, id: "cosmiccore:blue_proto_algae" }
+					type: "item"
+				}
+				{
+					id: "040BEC955D528DC8"
+					item: { count: 1, id: "cosmiccore:red_proto_algae" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["61F2E48EEF38C362"]
+			id: "095C657127F72D36"
+			tasks: [{
+				id: "28D9126EEA278246"
+				item: { count: 1, id: "gtceu:lv_chemical_bath" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				dependency: 598307023654382666L
+				visible: 0b
+			}]
+			dependencies: [
+				"095C657127F72D36"
+				"084D9D116B8A6C4A"
+			]
+			id: "213A7A4F59E10ACF"
+			tasks: [{
+				id: "54FE0E2EAC6438DE"
+				item: { count: 1, id: "cosmiccore:bloom_rich_algae_solution_bucket" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.0d
 		}
 	]
 }

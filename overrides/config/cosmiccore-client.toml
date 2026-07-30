@@ -1,0 +1,5 @@
+#WARNING! WARNING! WARNING!
+#This config enables editing aspects of the pack not normally allowed by default. This can cause potentially damaging effects to your progression, save, team, or otherwise anything in the pack.
+#Using this means you have CLEARLY READ THIS, and ACCEPT FAULT for enabling it.
+#If you are requesting support with this config on, there is a high chance developers will not be happy.
+devVisor = false

@@ -9,6 +9,8 @@ ServerEvents.compostableRecipes(event => {
     event.add(Item.of('legendarysurvivaloverhaul:sun_fern_gold_leaf'), 1.0)
 })
 ServerEvents.recipes(event => {
+
+    event.shapeless('4x cosmiccore:soul_gourd_seeds', ['cosmiccore:soul_gourd'])
     event.shaped('cosmiccore:steel_supply_tank', [' A ', 'BCB', 'BBB'], { A: 'gtceu:steel_tiny_fluid_pipe', B: 'gtceu:double_steel_plate', C: 'gtceu:steel_drum' })
     event.shaped('cosmiccore:bronze_supply_tank', [' A ', 'BCB', 'BBB'], { A: 'gtceu:bronze_tiny_fluid_pipe', B: 'gtceu:double_bronze_plate', C: 'gtceu:bronze_drum' })
     event.shaped('cosmiccore:pressurized_rebreather', [' A ', 'ABA', 'CCC'], { A: 'minecraft:string', B: 'cosmiccore:simple_rebreather', C: 'gtceu:double_steel_plate' })
@@ -43,7 +45,7 @@ ServerEvents.recipes(event => {
     event.shaped('2x create:package_frogport', ['ABA', 'CDC', 'EFE'], { A: 'copycats:copycat_cogwheel', B: 'minecraft:slime_ball', C: 'gtceu:vacuum_tube', D: 'create:item_vault', E: 'create:andesite_alloy', F: 'gtceu:steel_brick_casing' })
     event.shaped('cosmiccore:hp_steam_wiremill', ['ABA', 'B B', 'CDC'], { A: 'cosmiccore:sturdy_plates', B: 'create_connected:encased_chain_cogwheel', C: 'gtceu:double_steel_plate', D: 'gtceu:steel_brick_casing' })
     event.shaped('cosmiccore:hp_steam_bender', ['ABA', 'CDC', 'EFE'], { A: 'gtceu:wrought_iron_plate', B: 'gtceu:hp_steam_forge_hammer', C: 'create:mechanical_piston', D: 'minecraft:anvil', E: 'gtceu:double_steel_plate', F: 'gtceu:steel_brick_casing' })
-    event.shaped('create:precision_mechanism', ['AAA', 'BCD', 'BBB'], { A: 'createdeco:andesite_sheet', B: 'create:golden_sheet', C: 'copycats:copycat_large_cogwheel', D: 'copycats:copycat_cogwheel' })
+    event.shaped('create:precision_mechanism', ['AAA', 'BCD', 'BBB'], { A: 'createdeco:andesite_sheet', B: 'gtceu:gold_plate', C: 'copycats:copycat_large_cogwheel', D: 'copycats:copycat_cogwheel' })
     event.shaped('gtceu:empty_mold', ['AB', 'CC', 'CC'], { A: '#gtceu:crafting_tools/hammer', B: '#gtceu:crafting_tools/file', C: 'gtceu:wrought_iron_plate' })
     event.shaped('cosmiccore:hardened_resin', ['AAA', 'ABA', 'AAA'], { A: 'gtceu:sticky_resin', B: '#gtceu:crafting_tools/hammer' })
     event.shaped('cosmiccore:steam_caster', ['ABA', 'ACA', 'ADA'], { A: 'gtceu:coke_oven_bricks', B: 'create:spout', C: 'minecraft:cauldron', D: 'gtceu:bronze_crate' })
@@ -59,6 +61,18 @@ ServerEvents.recipes(event => {
     event.recipes.create.splashing(Item.of("gtceu:tiny_sphalerite_dust", 3), "cosmiccore:crushed_pyroltic_ore")
     event.recipes.create.splashing(Item.of("gtceu:tiny_tin_dust", 3), "cosmiccore:crushed_cuprosiva_ore")
     event.recipes.create.splashing(Item.of("gtceu:tiny_silver_dust", 2), "cosmiccore:crushed_galenite_ore")
+
+    const temperatureFernTypes = ['ice', 'sun']
+    temperatureFernTypes.forEach(fern => {
+        const leaf = `legendarysurvivaloverhaul:${fern}_fern_leaf`
+        const seeds = `legendarysurvivaloverhaul:${fern}_fern_seeds`
+        event.recipes.create.milling(seeds, leaf)
+        event.recipes.gtceu.macerator()
+            .itemInputs(leaf)
+            .itemOutputs(seeds)
+            .EUt(2, 1)
+            .duration(50)
+    })
 
     event.shapeless('gtceu:tiny_tin_dust', ['gtceu:tin_nugget', '#gtceu:crafting_tools/mortar'])
     event.recipes.cosmiccore.industrial_primitive_blast_furnace()
@@ -151,6 +165,12 @@ ServerEvents.recipes(event => {
         .itemOutputs('create:cardboard')
         .EUt(16, 1)
         .duration(100)
+    event.recipes.gtceu.mixer()
+        .itemInputs('minecraft:sand')
+        .itemOutputs('cosmiccore:creosote_grease')
+        .inputFluids('1000x gtceu:creosote')
+        .EUt(16, 1)
+        .duration(60)
     event.recipes.gtceu.fluid_solidifier()
         .itemInputs('6x gtceu:firebrick')
         .itemOutputs('gtceu:firebricks')

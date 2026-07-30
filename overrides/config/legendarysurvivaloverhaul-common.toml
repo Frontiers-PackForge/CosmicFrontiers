@@ -67,7 +67,7 @@
 	# Chance of the ferns to become a gold fern when grow mature.
 	# Default: 0.01
 	# Range: 0.0 ~ 2.0
-	"Gold Fern Chance" = 0.05
+	"Gold Fern Chance" = 0.0
 	# How much of an effect being on fire has on a player's temperature.
 	# Default: 12.5
 	# Range: -1000.0 ~ 1000.0

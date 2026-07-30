@@ -27,6 +27,7 @@
 		"This could help you early on when it comes to routing items and fluid."
 	]
 	quest.00557FB9FEF4A039.quest_subtitle: "Simple Stockpile Automation"
+	quest.032DE7CBA8FCB4C8.quest_subtitle: "Tier 3 Nether Resources"
 	quest.0584A322CC8C1A28.quest_desc: [
 		"Sable and Create Aeronautics allow for creation of contraptions with real time simulated physics."
 		"These contraptions are amazing for creating flying ships/cars/drills"
@@ -47,7 +48,22 @@
 	]
 	quest.07D8585C88A58A28.quest_subtitle: "Desulfurized"
 	quest.081F8227DD6E3430.title: "Tier 2 Nether Resources"
+	quest.084D9D116B8A6C4A.quest_subtitle: "Biological Scrap Metals"
 	quest.0874866212F96185.title: "Tier 1 Nether Resources"
+	quest.0B34B5CE7CCBAE72.quest_desc: [
+		"Note : GT Miners do not work in the Undergarden or Abyss."
+		""
+		"Mining Ores in the Abyss will require specalized infrastructure at a later date, but most products you need to progress are automation chains once you've collected a initial bounty from a specific layer."
+	]
+	quest.0B34B5CE7CCBAE72.title: "Why isn't my miner working?"
+	quest.0BDABE8C11A47ABB.quest_desc: [
+		"Hydrogen Sulfide electrolyzes into hydrogen and sulfur."
+		""
+		"You can then loop the hydrogeen back into your desulfurizer setup."
+		""
+		"And as a bonus, a free source of sulfur too!"
+	]
+	quest.0BDABE8C11A47ABB.quest_subtitle: "Getting your hydrogen back."
 	quest.0C0E3F2E637DA0A9.quest_desc: [
 		"You've been able to alloy smelt dawnstone, but you need some in molten form to create aspecti."
 		""
@@ -116,8 +132,33 @@
 		"If you don't have one near your nether access, i'd suggest looking around for soulsand patches near the lava layer"
 	]
 	quest.1FD7F7A22E29CFF5.quest_subtitle: "Found on soulsand and soil"
-	quest.1FECA1C0E8B233D5.quest_subtitle: "Complete this quest to Unlock the LV Quest Chapter!"
-	quest.1FECA1C0E8B233D5.title: "Onward to LV!"
+	quest.1FECA1C0E8B233D5.quest_desc: [":3 - Lore Here Soon:tm:"]
+	quest.1FECA1C0E8B233D5.quest_subtitle: "{\"translate\":\"deed.cosmiccore.current_flow.subtitle\"}"
+	quest.1FECA1C0E8B233D5.title: "{\"translate\":\"deed.cosmiccore.current_flow\"}"
+	quest.20B57C1FF5037C74.quest_desc: [
+		"&7This quest desc is a WIP with 90% of them in LV.&r"
+		""
+		"GregTech Energy (&bEU&r) is split into two features \"&aAmps&r\" and \"&eVolts&r\""
+		""
+		"&eVoltage&r is the capacity one \"&aAmp&r\" can contain per package of energy."
+		""
+		"When producing EU, all that matters to you is your EU/t, which is calculated by"
+		""
+		"(&bEU&r = &eV&r * &aA&r)  "
+		"ex, (&b128Eu/t&r = &e32&r * &a4&r) "
+		""
+		"&l&4NEVER. MIX. VOLTAGES.&r Plugging a higher base voltage into lower-tiered machines will cause an explosion."
+		"Example&r : Do not plug a cable carrying &nMV&r &eVoltage&r (&e128 EU per amp&r) into an &nLV&r machine (&e32 EU per amp&r) this will end &cpoorly.&r "
+		""
+		"{@pagebreak}"
+		""
+		"&aAmperage&r (\"&aAmps&r\") is a limit to how much energy a cable can carry."
+		"Drawing more than the maximum amps a cable can support will cause it to melt shortly after or start fires. This is &4Also bad&r"
+		""
+		"If it isn't evident at first, Max &eAmps&r on Wires multiplied by the &avoltage tier&r is the Max &bEU/t&r a cable can support."
+	]
+	quest.20B57C1FF5037C74.quest_subtitle: "Power Warnings."
+	quest.20B57C1FF5037C74.title: "Read this or Explode"
 	quest.233D177DD5A470E9.quest_desc: [
 		"This column contains all the different unique ores you can acquire from the different ore sorting steps."
 		""
@@ -150,6 +191,8 @@
 	]
 	quest.2700DA7ED10B4664.quest_subtitle: "How to find resources"
 	quest.2700DA7ED10B4664.title: "Ore Fields"
+	quest.28CFA2142307F7DC.quest_desc: ["Utherite spawns everywhere in the first abyss layer, harvesting it requires manual mining as"]
+	quest.28CFA2142307F7DC.quest_subtitle: "The First Bounty"
 	quest.2928EF0DCF970AE4.quest_desc: [
 		"Fans are extremely powerful in base create."
 		""
@@ -181,6 +224,20 @@
 		"Give it a try! Wrought Iron is wonderful for early tools!"
 	]
 	quest.2ABEE21EB889B7DD.quest_subtitle: "Easier Wrought Iron"
+	quest.2EDDE2D4F167CC02.quest_desc: [
+		"You'll need to get some sphalerite first before you can start this step."
+		""
+		"If you haven't already, look into ore sorting and the tiered progression surrounding it."
+		""
+		""
+		"Also, you can see what ores yield different pure ore chunks in EMI"
+		""
+		"Yes, this is a mirror of the cobaltite quest description"
+		""
+		""
+		"(Hold a Sphalerite Ore Chunk to Unlock this/Check the Dependencies)"
+	]
+	quest.2EDDE2D4F167CC02.quest_subtitle: "Have you done ore sorting?"
 	quest.31B6D09FBE2173EF.quest_desc: [
 		"Get down near the bedrock layer and place an ember bore ontop of bedrock, with a mechanical core on the center block, insert coal (or other fuels, haven't tried) into the mechanical core with your logistics of choice (hopper will do). The bore will start to run and produce ember as long as there is ember available for extraction in the chunk"
 		""
@@ -188,6 +245,12 @@
 		"Before you find a place for your bore, you should make an atmospheric gauge, the more the dial increases, the more ember there is"
 	]
 	quest.31B6D09FBE2173EF.quest_subtitle: "Gathering your First Ember"
+	quest.31C9B8A33BD4DB08.quest_desc: [
+		"You can extract raw rubber pulp from stick resin, and use some sulfur to create liquid rubber."
+		""
+		"Infinitely easier to coat cables this way, and it can be fluid solidified into bars/sheets as needed."
+	]
+	quest.31C9B8A33BD4DB08.quest_subtitle: "Better Rubber Yields"
 	quest.323FAC202CADB824.quest_desc: [
 		"Alloys making bronze ingots 4 at a time at the cost of taking steam and time"
 		""
@@ -227,6 +290,7 @@
 	quest.369DE54ABB07E98A.quest_subtitle: "Coking coals"
 	quest.369DE54ABB07E98A.title: "Coke Oven and Coke Bricks"
 	quest.3733906CF47B1C06.quest_subtitle: "Multipurpose and cheap"
+	quest.373DE13547832AB8.quest_subtitle: "Getting your first MV Circuit!"
 	quest.38473AAE9EFA91C7.quest_desc: [
 		"Ember is easy to move!"
 		""
@@ -258,6 +322,12 @@
 		"If you haven't i'd recommend making one to automatically fill your boilers before you start!"
 	]
 	quest.3FB852AA4A2FBB8B.quest_subtitle: "Did you make a pump?"
+	quest.40646DECFE17F19E.quest_desc: [
+		"You can create pure gemstones by using a pile of explosives inside of an implosion compressor."
+		""
+		"You can automate tnt early on with powdercane before you have access to toluene"
+	]
+	quest.40646DECFE17F19E.quest_subtitle: "Where's all the gems?"
 	quest.4425184AA625FA4E.quest_desc: ["Looks like it'd taste like extremely tart blue raspberry"]
 	quest.4425184AA625FA4E.quest_subtitle: "This looks edible"
 	quest.448F8668DD3AEB72.quest_desc: [
@@ -284,6 +354,19 @@
 		"UIs for tracking your pallete/taste profile and Signature meals will come in a future update along with another system which can house their GUI elements.&r"
 	]
 	quest.448F8668DD3AEB72.quest_subtitle: "A meal to remember"
+	quest.46025BCA76960F68.quest_desc: [
+		"You'll need to get some cobaltite first before you can start this step."
+		""
+		"If you haven't already, look into ore sorting and the tiered progression surrounding it."
+		""
+		""
+		"Also, you can see what ores yield different pure ore chunks in EMI"
+		""
+		"Yes this is a mirror of the sphalerite quest description."
+		""
+		"(Hold a Cobaltite Ore Chunk to Unlock this/Check the Dependencies)"
+	]
+	quest.46025BCA76960F68.quest_subtitle: "Have you done ore sorting?"
 	quest.469D5D2740B79048.quest_desc: [
 		"The powderizer will convert purified ores into a finely ground dust for chemical sepperation."
 		""
@@ -318,13 +401,21 @@
 	]
 	quest.4978BF804A8975F5.quest_subtitle: "Base Create Behavior"
 	quest.4978BF804A8975F5.title: "Generating SU"
+	quest.4A608CA30FD3D86D.quest_desc: [
+		"Silver can be hand sorted from Crushed Galenite ore by hand or washed with a create fan."
+		""
+		""
+		"It is, however, strongly recommended to set up ore sorting. As ore sorting, even just the first few tiers, vastly increases acquisition sources on many materials you will need from this point on."
+	]
+	quest.4A608CA30FD3D86D.quest_subtitle: "Sources of Silver"
 	quest.4A90C6B25FC79EAC.quest_desc: [
 		"Stick this down, hopper ember shards/crystals in, watch it turn into ember"
 		""
 		"use the tinkers hammer on ember emitters/receptors to link them together."
 	]
 	quest.4A90C6B25FC79EAC.quest_subtitle: "Activating Ember"
-	quest.4C8AB307C45DBC3C.quest_subtitle: "Content Blocker"
+	quest.4C8AB307C45DBC3C.quest_desc: [""]
+	quest.4C8AB307C45DBC3C.quest_subtitle: "Into the Undergarden"
 	quest.4C8AB307C45DBC3C.title: "Below Hell, The Undergarden"
 	quest.4CBACE925D480CAA.quest_desc: [
 		"When entering the deepslate level of the world, the air will become too thin to breathe normally."
@@ -403,7 +494,18 @@
 	quest.57E59B0060EAB2C7.title: "Welcome to Cosmic Frontiers"
 	quest.5973534E85F5D126.quest_subtitle: "Better Iesnium"
 	quest.5B91A99F1F8B588D.quest_subtitle: "Oh hey, brass!"
-	quest.5E380EE48FCB8769.quest_subtitle: "NYI"
+	quest.5E380EE48FCB8769.quest_desc: [
+		"The Ara Vitae is the parallel to BloodMagic's Blood Altar."
+		""
+		"It can be filled by shift+clicking on it with an orb"
+		""
+		"It will damage the player for 1 Heart and fill the altar with Essentia Vitae."
+		""
+		"Be careful! This can &ckill you&r! I'd strongly recommend loading up on the &ahighest quality foods&r you can make (For more HP/Faster Regen when it triggers) as well as investing into some form of &dhealing/regen&r that isn't strictly your passive recovery."
+		""
+		"This is the difference between this being &ctedious as hell&r and &emildly managable&r until you an automate Essentia Vitae."
+	]
+	quest.5E380EE48FCB8769.quest_subtitle: "The Altar of Life"
 	quest.601F4BCD183CC077.quest_subtitle: "A mundane but durable metal"
 	quest.67110A5418804D33.quest_desc: [
 		"You can't harvest pure nether quartz yourself, and gold is something only found in small amounts now."
@@ -444,6 +546,8 @@
 	quest.6ED6791358655950.quest_subtitle: "Better Storage"
 	quest.6EF94519E4BCBE72.quest_desc: ["Another Color to add to the pile, this time it's lime"]
 	quest.6EF94519E4BCBE72.quest_subtitle: "Soooo"
+	quest.6F0EB4BB758B4308.quest_desc: ["&o&7Ten feet twenty the flower man..."]
+	quest.6F0EB4BB758B4308.quest_subtitle: "Lend me your power!"
 	quest.70C78D038EBF6CA6.quest_desc: [
 		"Rock Cutting wheels will cleave large areas of material away when active."
 		""
@@ -453,6 +557,7 @@
 		"These are useful, strictly because you can automate mining with massive airships if you are so inclined. and attaching huge harvester arms to simulated contraptions for early game mining really changes how you play."
 	]
 	quest.70C78D038EBF6CA6.quest_subtitle: "Mass Contraption Mining"
+	quest.7171BE1689635624.quest_subtitle: "Your first source of Gallium"
 	quest.72A429BEF13F8845.quest_desc: [
 		"You can attune it to netherrack to scan for iesnium in the nether."
 		""
@@ -480,6 +585,12 @@
 	]
 	quest.7A016FB22E827915.quest_subtitle: "Silence is the standard."
 	quest.7A016FB22E827915.title: "An Unseen Threat: The Murkbloom"
+	quest.7ABC4319FC83A545.quest_desc: [
+		"The plantlife in the abyss has naturally adapted to not attracting huge murkbloom masses."
+		""
+		"Using these plants you can make a coating for your tools and armor. This coating will help reduce the disturbance caused to murkbloom. The higher the level the deeper the effect and potency is."
+	]
+	quest.7ABC4319FC83A545.quest_subtitle: "Hiding from Murkbloom "
 	quest.7BAA63BF7EE181C3.quest_desc: [
 		"Cuprosiva ore is one of the many Composite Ores that exist across the overworld."
 		""
@@ -495,6 +606,15 @@
 		"Also worth noting, you can do this to Fersosine as well to get gold nuggets"
 	]
 	quest.7BAA63BF7EE181C3.quest_subtitle: "Copper and Tin"
+	quest.7BAF71B8957633BA.quest_desc: [
+		"Gonna Be real with you, Neo Vitae is the Neoforge Version of BloodMagic and I've never used it"
+		""
+		"There are going to be some rough patches while I figure out everything."
+		""
+		"Have the guidebook on the house, you're gonna be reading it as much as I am to figure this out haha."
+		""
+		"&eOrbs are still the same, craft this thing, it's your knife as well as a crafting tool and you'll &eneed to use it to drain life essence from your player into the altar.&r"
+	]
 	quest.7BAF71B8957633BA.quest_subtitle: "Life shall be spilt"
 	quest.7C5DB25564510E87.quest_subtitle: "the base of better chalks"
 	quest.7F43598A6495BC40.quest_subtitle: "Your First Coil"
@@ -505,10 +625,12 @@
 		"Only the bottom block can be collected, rest will convert to sticks."
 	]
 	quest.7FE634D65F26BB7A.quest_subtitle: "Foods of the Nether"
+	task.1B611E179BDDC444.title: "Yeah"
+	task.2627A4C621E3C941.title: "Visit Layer 2 of the Abyss (Y:~ -300)"
 	task.454A92A4FCC0F185.title: "Any #c:tools/mining_tool"
 	task.4C54D581D667FD7F.title: "Nether Ores"
-	task.5BAFF29E38F526BB.title: "Move Forward"
 	task.5C1CE51AFE90BD57.title: "Craft Any Mortar"
 	task.6663702BE6CE1EEA.title: "Spirit Fires"
+	task.677509BDC6B481FC.title: "Got It."
 	task.77609A3D829D9910.title: "Any Log"
 }

@@ -320,6 +320,7 @@
   "material.gtceu.soulresin": "Soul Resin",
   "material.gtceu.industrial_iron": "Industrial Iron",
   "material.gtceu.runed_steel": "Runed Steel",
+  "material.gtceu.magnetic_runed_steel": "Magnetic Runed Steel",
   "material.gtceu.soul_stained_steel": "Soul Stained Steel",
   "material.gtceu.white_gold": "White Gold",
   "material.gtceu.rhenium_rich_complex": "Rhenium Rich Complex",
@@ -700,6 +701,7 @@
   "material.gtceu.trinium_waste": "Trinium Waste",
   "material.gtceu.trinium_oxide": "Trinium Oxide",
   "material.gtceu.dawnstone": "Dawnstone",
+  "material.gtceu.chrysanthium": "Chrysanthium",
   "material.gtceu.faded_dusk_alloy": "Faded Dusk Alloy",
   "material.gtceu.ashdew_steam": "Ashdew Steam",
   "material.gtceu.smoldering_steam": "Smoldering Steam"

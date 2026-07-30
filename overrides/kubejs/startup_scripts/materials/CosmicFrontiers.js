@@ -324,6 +324,15 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.NO_ORE_SMELTING
         )
+    event.create('gtceu:magnetic_runed_steel')
+        .ingot()
+        .color(0x5d466b).secondaryColor(0x241a2c)
+        .iconSet(GTMaterialIconSet.MAGNETIC)
+        .components('1x gtceu:runed_steel')
+        .flags(
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.IS_MAGNETIC
+        )
     event.create('gtceu:cinderwax')
         .liquid()
         .ingot()
@@ -372,7 +381,28 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:dawnstone')
         .color(0xfa9d32)
         .ingot()
+        .formula('Cu8Au2')
         .iconSet(GTMaterialIconSet.SHINY)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR
+        )
+
+    event.create('gtceu:chrysanthium')
+        .color(0x494149).secondaryColor(0x2F2C2F)
+        .ingot()
+        .liquid()
+        .iconSet(GTMaterialIconSet.SHINY)
+        .cableProperties(GTValues.V[GTValues.HV], 4, 4, false)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_BOLT_SCREW,
@@ -791,6 +821,15 @@ StartupEvents.registry('gtceu:material', event => {
 })
 
 GTCEuStartupEvents.materialModification(event => {
+    const runedSteel = GTMaterials.get('gtceu:runed_steel')
+    const magneticRunedSteel = GTMaterials.get('gtceu:magnetic_runed_steel')
+    const magneticRunedSteelIngot = magneticRunedSteel.getProperty(PropertyKey.INGOT)
+
+    runedSteel.getProperty(PropertyKey.INGOT).setMagneticMaterial(magneticRunedSteel)
+    magneticRunedSteelIngot.setSmeltingInto(runedSteel)
+    magneticRunedSteelIngot.setArcSmeltingInto(runedSteel)
+    magneticRunedSteelIngot.setMacerateInto(runedSteel)
+
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:andesite_alloy'), () => Item.getItem('create:andesite_alloy'))
     TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:andesite_alloy'), () => Item.getItem('create:andesite_alloy_block'))
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:industrial_iron'), () => Item.getItem('createdeco:industrial_iron_ingot'))

@@ -82,6 +82,146 @@ ServerEvents.recipes(event => {
         .inputFluids('250x gtceu:redstone')
         .EUt(GTValues.VA[GTValues.LV], 1)
         .duration(240)
+    event.recipes.gtceu.chemical_reactor()
+        .itemInputs('9x gtceu:raw_rubber_dust', 'gtceu:sulfur_dust')
+        .outputFluids('1296x gtceu:rubber')
+        .EUt(24, 1)
+        .duration(300)
+    event.recipes.gtceu.forming_press()
+        .itemInputs('occultism:otherrock', 'gtceu:gold_foil', 'occultism:otherworld_ashes')
+        .itemOutputs('4x occultism:otherstone_tablet')
+        .EUt(16, 1)
+        .duration(260)
+    event.recipes.gtceu.forming_press()
+        .itemInputs('occultism:otherstone', 'gtceu:gold_foil', 'occultism:otherworld_ashes')
+        .itemOutputs('4x occultism:otherstone_tablet')
+        .EUt(16, 1)
+        .duration(260)
+    event.recipes.gtceu.electric_blast_furnace()
+        .itemInputs('malum:hallowed_gold_ingot', 'gtceu:utherium_gem', 'cosmiccore:bloomscrap')
+        .itemOutputs('gtceu:chrysanthium_ingot')
+        .EUt(GTValues.VA[GTValues.MV], 1)
+        .blastFurnaceTemp(1700)
+        .duration(700)
+    event.shaped('cosmiccore:bloomwyrm_heart', ['ABA', 'BCB', 'DED'], { A: 'gtceu:double_chrysanthium_plate', B: '#gtceu:circuits/mv', C: 'gtceu:steel_drum', D: 'cosmiccore:somarust_casing', E: 'gtceu:chrysanthium_frame' })
+    event.custom({
+        "bloodNeeded": 1000,
+        "craftSpeed": 5,
+        "drainSpeed": 5,
+        "input": {
+            "item": "occultism:otherstone_tablet"
+        },
+        "output": {
+            "id": "neovitae:tabula_rasa",
+            "count": 1
+        },
+        "minTier": 0,
+        "type": "neovitae:ara_vitae_recipe"
+    })
+    event.custom({
+        "spirits": [
+            {
+                "type": "malum:wicked",
+                "count": 16
+            },
+            {
+                "type": "malum:eldritch",
+                "count": 16
+            },
+            {
+                "type": "malum:arcane",
+                "count": 16
+            },
+            {
+                "type": "malum:sacred",
+                "count": 16
+            },
+            {
+                "type": "malum:aqueous",
+                "count": 16
+            }
+        ],
+        "extraInputs": [
+            {
+                "item": "minecraft:deepslate",
+                "count": 4
+            },
+            {
+                "item": "gtceu:double_dark_steel_plate",
+                "count": 4
+            },
+            {
+                "item": "simplylight:rodlamp_red",
+                "count": 4
+            },
+            {
+                "item": "malum:imitation_flesh",
+                "count": 4
+            },
+            {
+                "item": "malum:hex_ash",
+                "count": 4
+            },
+            {
+                "item": "gtceu:basic_electronic_circuit",
+                "count": 4
+            }
+        ],
+        "input": {
+            "item": "malum:block_of_soul_stained_steel",
+            "count": 1
+        },
+        "result": {
+            "id": "neovitae:ara_vitae",
+            "count": 1
+        },
+        "type": "malum:spirit_infusion"
+    })
+    event.recipes.gtceu.chemical_bath()
+        .itemInputs('4x cosmiccore:bloomscrap')
+        .inputFluids('1000x minecraft:water')
+        .outputFluids('1000x cosmiccore:bloom_rich_algae_solution')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+
+    event.recipes.cosmiccore.abyssal_culture_vat()
+        .itemInputs('cosmiccore:red_proto_algae')
+        .itemOutputs('64x cosmiccore:red_algae')
+        .biopowerOutput(16)
+        .bloomwyrmChargeOutput(1000)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(1200)
+
+
+    event.recipes.cosmiccore.abyssal_culture_vat()
+        .itemInputs('cosmiccore:blue_proto_algae')
+        .itemOutputs('64x cosmiccore:blue_algae')
+        .biopowerOutput(16)
+        .bloomwyrmChargeOutput(1000)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(1200)
+
+
+    event.recipes.cosmiccore.abyssal_culture_vat()
+        .itemInputs('cosmiccore:green_proto_algae')
+        .itemOutputs('64x cosmiccore:green_algae')
+        .biopowerOutput(16)
+        .bloomwyrmChargeOutput(1000)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(1200)
+    event.recipes.gtceu.centrifuge()
+        .itemOutputs('cosmiccore:blue_proto_algae', 'cosmiccore:green_proto_algae', 'cosmiccore:red_proto_algae')
+        .inputFluids('250x cosmiccore:bloom_rich_algae_solution')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.recipes.cosmiccore.sculk_biochamber()
+        .itemInputs('8x cosmiccore:blue_algae', '8x cosmiccore:red_algae', '8x cosmiccore:green_algae', '4x cosmiccore:aphotite_dust')
+        .itemOutputs('4x cosmiccore:nostium_ingot')
+        .biopowerInput(32)
+        .maxCampusParallel(16)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(1200)
+    event.shaped('gtceu:good_electronic_circuit', ['ABA', 'CDC', 'ECE'], { A: 'gtceu:diode', B: 'gtceu:runed_steel_plate', C: 'gtceu:basic_electronic_circuit', D: 'gtceu:phenolic_printed_circuit_board', E: 'gtceu:copper_double_wire' })
     event.shaped('8x cosmiccore:lightweight_dark_steel_casing', ['ABA', 'ACA', 'ABA'], { A: 'gtceu:dark_steel_foil', B: 'gtceu:long_dark_steel_rod', C: 'gtceu:dark_steel_frame' })
     event.shaped('cosmiccore:industrial_ore_sorter', ['AAA', 'BCB', 'DED'], { A: 'gtceu:lv_robot_arm', B: 'gtceu:lv_conveyor_module', C: 'cosmiccore:lightweight_dark_steel_casing', D: 'gtceu:tin_single_cable', E: 'gtceu:basic_electronic_circuit' })
     event.shaped('gtceu:implosion_compressor', ['AAA', 'BCB', 'DBD'], { A: 'enderio:reinforced_obsidian_block', B: '#gtceu:circuits/mv', C: 'cosmiccore:steel_plated_bronze_casing', D: 'gtceu:annealed_copper_double_cable' })
@@ -95,10 +235,8 @@ ServerEvents.recipes(event => {
     //     .inputFluids('1000x minecraft:water')
     //     .EUt(32, 1)
     //     .duration(1200)
-    //     .biopowerInput(4)
     //     .biopowerOutput(16)
-    //     .bloomwyrmChargeOutput(100, 2)
-    //     .seasonalEssenceOutput(40, 2)
+    //     .bloomwyrmChargeOutput(100)
 
     // event.recipes.cosmiccore.sculk_biochamber()
     //     .itemInputs('minecraft:rotten_flesh')
@@ -107,7 +245,6 @@ ServerEvents.recipes(event => {
     //     .duration(100)
     //     .biopowerInput(8)
     //     .bloomwyrmChargeInput(25)
-    //     .seasonalEssenceInput(10, 2)
     //     .maxCampusParallel(8)
 
 

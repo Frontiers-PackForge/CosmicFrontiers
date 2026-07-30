@@ -60,9 +60,19 @@ jobs:
           name: build-artifacts-${{ steps.release.outputs.release_version }}
           path: |
             ${{ steps.release.outputs.client_archive }}
-            ${{ steps.release.outputs.server_archive }}
+            ${{ (github.event_name == 'release' || inputs.build_server_pack) && steps.release.outputs.server_archive || '' }}
           if-no-files-found: error
-          retention-days: 3
+          retention-days: 7
+
+      - name: Report manual server upload artifact
+        if: ${{ github.event_name == 'release' || inputs.build_server_pack }}
+        shell: bash
+        run: |
+          {
+            echo "### Manual CurseForge server upload"
+            echo "Download artifact \`build-artifacts-${{ steps.release.outputs.release_version }}\`."
+            echo "Upload \`${{ steps.release.outputs.server_archive }}\` as the server-pack additional file in CurseForge."
+          } >> "$GITHUB_STEP_SUMMARY"
 
   upload-release-artifact:
     name: Upload client archive to GitHub release
@@ -85,7 +95,7 @@ jobs:
           fail_on_unmatched_files: true
 
   publish-curseforge:
-    name: Publish client and server archives to CurseForge
+    name: Publish client archive to CurseForge
     needs: build
     if: ${{ github.event_name == 'release' && github.repository_owner == 'Frontiers-PackForge' && !startsWith(github.event.release.name, 'simulate') }}
     runs-on: ubuntu-latest
@@ -102,9 +112,7 @@ jobs:
         with:
           curseforge-id: ${{ vars.CURSE_ID }}
           curseforge-token: ${{ secrets.CURSE_TOKEN }}
-          files: |
-            ./${{ needs.build.outputs.client_archive }}
-            ./${{ needs.build.outputs.server_archive }}
+          files: ./${{ needs.build.outputs.client_archive }}
           name: Cosmic Frontiers ${{ needs.build.outputs.display_version }}
           version: ${{ needs.build.outputs.release_version }}
           changelog: ${{ github.event.release.body }}
