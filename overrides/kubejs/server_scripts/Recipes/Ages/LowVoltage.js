@@ -221,6 +221,7 @@ ServerEvents.recipes(event => {
         .maxCampusParallel(16)
         .EUt(GTValues.VA[GTValues.LV], 1)
         .duration(1200)
+    event.shaped('cosmiccore:lv_bloomwyrm_power_root', ['ABA', 'CDC', 'AEA'], { A: 'cosmiccore:riveted_straps', B: 'gtceu:lv_voltage_coil', C: '#gtceu:batteries/lv', D: 'gtceu:lv_energy_input_hatch', E: 'gtceu:lv_transformer_1a' })
     event.shaped('gtceu:good_electronic_circuit', ['ABA', 'CDC', 'ECE'], { A: 'gtceu:diode', B: 'gtceu:runed_steel_plate', C: 'gtceu:basic_electronic_circuit', D: 'gtceu:phenolic_printed_circuit_board', E: 'gtceu:copper_double_wire' })
     event.shaped('8x cosmiccore:lightweight_dark_steel_casing', ['ABA', 'ACA', 'ABA'], { A: 'gtceu:dark_steel_foil', B: 'gtceu:long_dark_steel_rod', C: 'gtceu:dark_steel_frame' })
     event.shaped('cosmiccore:industrial_ore_sorter', ['AAA', 'BCB', 'DED'], { A: 'gtceu:lv_robot_arm', B: 'gtceu:lv_conveyor_module', C: 'cosmiccore:lightweight_dark_steel_casing', D: 'gtceu:tin_single_cable', E: 'gtceu:basic_electronic_circuit' })
