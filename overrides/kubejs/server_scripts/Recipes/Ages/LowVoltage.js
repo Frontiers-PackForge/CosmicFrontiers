@@ -221,6 +221,43 @@ ServerEvents.recipes(event => {
         .maxCampusParallel(16)
         .EUt(GTValues.VA[GTValues.LV], 1)
         .duration(1200)
+    event.recipes.gtceu.electric_blast_furnace()
+        .itemInputs('occultism:iesnium_dust')
+        .itemOutputs('occultism:iesnium_ingot')
+        .circuit(2)
+        .blastFurnaceTemp(1700)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.shaped('occultism:chalk_black_impure', ['ABC', 'DDD'], { A: 'occultism:chalk_yellow_impure', B: 'occultism:chalk_orange_impure', C: 'occultism:chalk_red_impure', D: 'occultism:witherite_dust' })
+    event.shaped('neovitae:rune_blank', ['ABA', 'ACA', 'ABA'], { A: 'cosmiccore:riveted_straps', B: 'neovitae:tabula_rasa', C: 'cosmiccore:lightweight_dark_steel_casing' })
+    event.custom({
+        "bloodNeeded": 1000,
+        "craftSpeed": 5,
+        "drainSpeed": 5,
+        "input": {
+            "item": "occultism:chalk_yellow_impure"
+        },
+        "output": {
+            "id": "occultism:chalk_orange_impure",
+            "count": 1
+        },
+        "minTier": 1,
+        "type": "neovitae:ara_vitae_recipe"
+    })
+    event.custom({
+        "bloodNeeded": 1000,
+        "craftSpeed": 5,
+        "drainSpeed": 5,
+        "input": {
+            "item": "gtceu:utherium_gem"
+        },
+        "output": {
+            "id": "occultism:chalk_red_impure",
+            "count": 1
+        },
+        "minTier": 2,
+        "type": "neovitae:ara_vitae_recipe"
+    })
     event.shaped('cosmiccore:lv_bloomwyrm_power_root', ['ABA', 'CDC', 'AEA'], { A: 'cosmiccore:riveted_straps', B: 'gtceu:lv_voltage_coil', C: '#gtceu:batteries/lv', D: 'gtceu:lv_energy_input_hatch', E: 'gtceu:lv_transformer_1a' })
     event.shaped('gtceu:good_electronic_circuit', ['ABA', 'CDC', 'ECE'], { A: 'gtceu:diode', B: 'gtceu:runed_steel_plate', C: 'gtceu:basic_electronic_circuit', D: 'gtceu:phenolic_printed_circuit_board', E: 'gtceu:copper_double_wire' })
     event.shaped('8x cosmiccore:lightweight_dark_steel_casing', ['ABA', 'ACA', 'ABA'], { A: 'gtceu:dark_steel_foil', B: 'gtceu:long_dark_steel_rod', C: 'gtceu:dark_steel_frame' })
