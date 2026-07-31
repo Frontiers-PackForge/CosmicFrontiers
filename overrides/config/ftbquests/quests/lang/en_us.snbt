@@ -27,6 +27,14 @@
 		"This could help you early on when it comes to routing items and fluid."
 	]
 	quest.00557FB9FEF4A039.quest_subtitle: "Simple Stockpile Automation"
+	quest.008703F2EB317107.quest_desc: [
+		"Many sources of Silicon and other materials require access to an MV electrolyzer."
+		""
+		""
+		"Silicon, just like Aluminium, has a few recipes available at LV tier, but it is STRONGLY RECOMMENDED to upgrade your electrolyzer firstly!"
+	]
+	quest.008703F2EB317107.quest_subtitle: "The Products for Boules"
+	quest.008703F2EB317107.title: "Boule Prepwork"
 	quest.0404FA9ACCD11D51.quest_desc: [
 		"You can make Hulls and Casings Cheaper with a small cost of Rubber or Plastics."
 		""
@@ -34,6 +42,7 @@
 	]
 	quest.0404FA9ACCD11D51.quest_subtitle: "Cheaper Hulls and Casings"
 	quest.0404FA9ACCD11D51.title: "Got some Rubbers and Plastics?"
+	quest.0407A0291D69959D.quest_subtitle: "You could cause a produce shortage with this..."
 	quest.04D15703B3D383E2.quest_desc: [
 		"You may have noticed you produce a large amount of chunks, which need to be crushed into powders to be used further."
 		""
@@ -52,6 +61,24 @@
 		"Please take caution using them, make constant backups, with a phyiscs mod like this even though it is almost perfect, it still will have edgecase issues we'll most likely find."
 	]
 	quest.0584A322CC8C1A28.quest_subtitle: "Redefining the game."
+	quest.068F151533C124CD.quest_desc: [
+		"Applied Energistics 2 is your mainstay source of fluid and item logistics from here on out."
+		""
+		""
+		"While you've had access to create logistics for automatic setups. It is time to start to consider AE2 as the objective upgrade. "
+		""
+		""
+		"AE2 is not only stronger throughput wise, but offers a lot more flexibility and throughput which is vital for GT setups to function without stalling or delay."
+		""
+		""
+		"AE2 also has a host of addons to assist in building your base."
+		""
+		""
+		"Cosmic Frontiers also heavily edits behaviors of AE2 to fit the pack and the needs more comfortably. As with all other mods in the pack, please report issues to the Cosmic Frontiers Repository. Reporting issues to other mods repositories, while on the surface seems good, will flood them with issues unreleated to the default builds of most mods."
+		""
+		"With that notice out of the way, AE2 also has an amazing guidebook to explain you the basics of the mod. I would strongly recommend you check it out for my advanced reading, however, I will make efforts to explain the basics for you in the following quests ahead"
+	]
+	quest.068F151533C124CD.quest_subtitle: "The Titan of the Digital Age"
 	quest.072350DCC099E9C9.quest_desc: [
 		"Using a flocculant you can help seperate materials further. The resulting ore yields have more unique products and a slight material yield bonus. "
 		""
@@ -70,6 +97,14 @@
 	]
 	quest.07D8585C88A58A28.quest_subtitle: "Desulfurized"
 	quest.084D9D116B8A6C4A.quest_subtitle: "Biological Scrap Metals"
+	quest.0A5E16599EAFAEC6.quest_desc: [
+		"Terminals allow you to access your linked storage inside of AE2."
+		""
+		"Terminals will natively display all available fluids and items, which you can extract/insert from the terminal itself."
+		""
+		"Terminals take up 1 channel per terminal."
+	]
+	quest.0A5E16599EAFAEC6.quest_subtitle: "Seeing into AE2"
 	quest.0B34B5CE7CCBAE72.quest_desc: [
 		"Note : GT Miners do not work in the Undergarden or Abyss."
 		""
@@ -188,6 +223,13 @@
 	]
 	quest.20B57C1FF5037C74.quest_subtitle: "Power Warnings."
 	quest.20B57C1FF5037C74.title: "Read this or Explode"
+	quest.24A51AFDD86B98CA.quest_subtitle: "You know the drill by now."
+	quest.24B46F4F68610400.quest_desc: [
+		"Will be required to make the first 'Circuit class', Hex Circuits, in HV."
+		""
+		"For now it's just a faster circuit assembler."
+	]
+	quest.24B46F4F68610400.quest_subtitle: "Another Circuit Assembler"
 	quest.24C8852F25520072.quest_desc: [
 		"Future Ore Sorting Tiers will involve fluid logistics, and the recipes are still a wip."
 		""
@@ -214,6 +256,14 @@
 	]
 	quest.2700DA7ED10B4664.quest_subtitle: "How to find resources"
 	quest.2700DA7ED10B4664.title: "Ore Fields"
+	quest.286F950918F4817C.quest_desc: [
+		"Vanachrome is located within the 2nd layer of the abyss."
+		""
+		"Currently you have no reliable way to automatically mine this material as all drills fail in the undergarden due to heavy moisture."
+		""
+		"For now harvesting ores from the floating stone masses is sufficient, but in the future better sources must be located."
+	]
+	quest.286F950918F4817C.quest_subtitle: "Raw Chromite Source"
 	quest.28CFA2142307F7DC.quest_desc: ["Utherite spawns everywhere in the first abyss layer, harvesting it requires manual mining as"]
 	quest.28CFA2142307F7DC.quest_subtitle: "The First Bounty"
 	quest.2928EF0DCF970AE4.quest_desc: [
@@ -247,6 +297,8 @@
 		"Give it a try! Wrought Iron is wonderful for early tools!"
 	]
 	quest.2ABEE21EB889B7DD.quest_subtitle: "Easier Wrought Iron"
+	quest.2C681CEA5813573D.quest_subtitle: "Arcane Interference. (Y-400 to Y-600)"
+	quest.2C681CEA5813573D.title: "The Hollow Abyss - Layer 3 : Arcantide Sump"
 	quest.2EDDE2D4F167CC02.quest_desc: [
 		"You'll need to get some sphalerite first before you can start this step."
 		""
@@ -302,6 +354,8 @@
 	]
 	quest.35B7A194BB34BA44.quest_subtitle: "The unsual that is willed to be. "
 	quest.35B7A194BB34BA44.title: "An Indestructable Ally"
+	quest.369A6B80AED9D741.quest_subtitle: "Did you think it'd be that easy?"
+	quest.369A6B80AED9D741.title: "To HV!"
 	quest.369DE54ABB07E98A.quest_desc: [
 		"The coke oven allows you to convert logs into charcoal, and coal into coal coke."
 		""
@@ -388,6 +442,12 @@
 		"UIs for tracking your pallete/taste profile and Signature meals will come in a future update along with another system which can house their GUI elements.&r"
 	]
 	quest.448F8668DD3AEB72.quest_subtitle: "A meal to remember"
+	quest.44F40A00C61EFE54.quest_desc: [
+		"Silicon Ingots Require Kanthal Coils as well as a way to cool the hot ingots down."
+		""
+		"If you haven't already, this would be the time to make an MV Chemical Bath."
+	]
+	quest.44F40A00C61EFE54.quest_subtitle: "Requires Kanthal Coils"
 	quest.46025BCA76960F68.quest_desc: [
 		"You'll need to get some cobaltite first before you can start this step."
 		""
@@ -448,6 +508,26 @@
 		"use the tinkers hammer on ember emitters/receptors to link them together."
 	]
 	quest.4A90C6B25FC79EAC.quest_subtitle: "Activating Ember"
+	quest.4B8BB9D41D0D0652.quest_desc: [
+		"AE2 devices, when attached to a AE2 network, consume 'channels'. "
+		""
+		"Channels are provided by faces of an ME Controller in bundles of &e32&r. The largest AE2 cable, the &aDense ME Smart Cables&r, can transfer the data of a single face of the controller without issues (as each controller face can accept 32 channels, the dense cable can accept 32... you see how that lines up cleanly!)."
+		""
+		"&aME Smart Cables&r, and devices that &ntransfer channels&r (eg. interfaces/providers) will transfer up to &e8&r channels before overloading."
+		""
+		"Overloading a cable (be it dense or normal) will result in components on that cable &cfailing&r to connect to your AE2 network, this means they &ccan not function and are not discoverable&r from any UIs that may expose them. This only applies to components over the limit, and that are the farthest away from the source of channels (the controller)."
+		""
+		"The easiest fix to this is to &osplit up your cables&r to carry exclusively at most, &e32&r or &e8&r channels respectively. "
+		""
+		""
+		"There are more advanced manners of moving channels around, but for now this will get you quite far, just be prepared to either to do some self-learning ahead of time to figure out how to use &bME P2P tunnels&r, or accept you will need to rewire your base in the future as your controller starts to slowly convert into a rats nest of wires."
+		""
+		""
+		"If you wish to play without channels, you have the option to disable them. "
+		"This is not me saying you should, as the pack is designed around them. However, if you wish to disable them regardless, this will prevent you from getting the shinest of victory roles in discord when you beat the pack. If you don't care about this, then do whatever you wish."
+	]
+	quest.4B8BB9D41D0D0652.quest_subtitle: "Importance of channels"
+	quest.4B8BB9D41D0D0652.title: "Channels and You."
 	quest.4C8AB307C45DBC3C.quest_desc: [""]
 	quest.4C8AB307C45DBC3C.quest_subtitle: "Into the Undergarden"
 	quest.4C8AB307C45DBC3C.title: "Below Hell, The Undergarden"
@@ -491,6 +571,15 @@
 		"This is a pretty temporary recipe until i can be asked to make Steam Ember Hatches."
 	]
 	quest.534DBCED4E339D89.quest_subtitle: "Getting Embers into a Gregtech Machine"
+	quest.5409781BE86F8DA3.quest_desc: [
+		"You already spent the energy making ethylene in LV or at least sometime in MV."
+		""
+		"You'll need PVC to make the cladding used for HV Casings."
+		""
+		""
+		"So what are you waiting for, go make some! It's also useful for some cable recipes too!"
+	]
+	quest.5409781BE86F8DA3.quest_subtitle: "You should be able to make this"
 	quest.5505401B1E8344EB.quest_subtitle: "The Key to Steel"
 	quest.57E59B0060EAB2C7.quest_desc: [
 		"Welcome to Cosmic Frontiers, we're glad to have you here."
@@ -516,6 +605,12 @@
 	quest.57E59B0060EAB2C7.quest_subtitle: "Welcome to Frontiers"
 	quest.57E59B0060EAB2C7.title: "Welcome to Cosmic Frontiers"
 	quest.5973534E85F5D126.quest_subtitle: "Better Iesnium"
+	quest.5AF279015C476CC6.quest_desc: [
+		"Vanadium Steel requires a small amount of chromium to produce, meaning it is gated by doing at least a few crafts of chromium by hand or setting up chromite line proper."
+		""
+		"Once you have chromium, you'll need to make this metal for your MV cutter."
+	]
+	quest.5AF279015C476CC6.quest_subtitle: "Onwards to a cutter"
 	quest.5B91A99F1F8B588D.quest_subtitle: "Oh hey, brass!"
 	quest.5E380EE48FCB8769.quest_desc: [
 		"The Ara Vitae is the parallel to BloodMagic's Blood Altar."
@@ -606,6 +701,20 @@
 		"If you have an AMD graphics card, you will need to modify the Occultism config file to enable AMD compatibility"
 	]
 	quest.72A429BEF13F8845.quest_subtitle: "Click Netherack"
+	quest.73BC5E9DE8B0CE61.quest_desc: [
+		"Some higher power notices your presence in the abyss and allows the natural magic of source to flow once again."
+		""
+		""
+		"Spellbooks now function normally. Rather than failing to cast spells."
+	]
+	quest.73BC5E9DE8B0CE61.quest_subtitle: "Spellbook Release"
+	quest.7875FAA7C1745D0F.quest_desc: [
+		"Come back here once you have access to Kanthal Coils and Stainless Steel."
+		""
+		""
+		"Notably, you'll need access to an Arcane Crucible capable of [redacted](NYI)"
+	]
+	quest.7875FAA7C1745D0F.quest_subtitle: "Future Processing"
 	quest.7A016FB22E827915.quest_desc: [
 		"Diving below the heavy fog, the clicking seems to be more of a faint but persisting chittering."
 		""
@@ -625,6 +734,13 @@
 	]
 	quest.7A016FB22E827915.quest_subtitle: "Silence is the standard."
 	quest.7A016FB22E827915.title: "An Unseen Threat: The Murkbloom"
+	quest.7A7BBC9EBEAEFBD2.quest_desc: [
+		"You will need at least an MV cutter to continue this questline."
+		""
+		""
+		"Check out producing Chromium and the relevant MV cutter elsewhere in this chapter."
+		"Once you have an MV Cutter, return to here!"
+	]
 	quest.7ABC4319FC83A545.quest_desc: [
 		"The plantlife in the abyss has naturally adapted to not attracting huge murkbloom masses."
 		""
@@ -670,6 +786,7 @@
 	task.454A92A4FCC0F185.title: "Any #c:tools/mining_tool"
 	task.4F2DCF87BF14A5A0.title: "To Somewhere Beyond"
 	task.5C1CE51AFE90BD57.title: "Craft Any Mortar"
+	task.5CF3523293ABF984.title: "Reach Y:-500 in the Abyss"
 	task.6663702BE6CE1EEA.title: "Spirit Fires"
 	task.677509BDC6B481FC.title: "Got It."
 	task.6845F4E5F89C3C23.title: "Reach Y: -100 of the Abyss"

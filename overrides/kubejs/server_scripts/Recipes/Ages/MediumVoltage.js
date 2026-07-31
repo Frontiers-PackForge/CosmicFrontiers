@@ -78,7 +78,12 @@ ServerEvents.recipes(event => {
         .inputFluids('576x gtceu:polyethylene')
         .EUt(GTValues.VA[GTValues.MV], 1)
         .duration(100)
-        
+    event.recipes.gtceu.assembler()
+        .itemInputs('4x cosmiccore:nostium_plate', '2x #gtceu:circuits/lv', '2x gtceu:lv_robot_arm', 'gtceu:mv_machine_hull')
+        .itemOutputs('4x ae2:interface')
+        .EUt(GTValues.VH[GTValues.MV], 1)
+        .duration(300)
+    event.shaped('ae2:controller', ['ABA', 'CDC', 'ABA'], { A: 'gtceu:double_stainless_steel_plate', B: '#gtceu:circuits/mv', C: 'gtceu:annealed_copper_quadruple_cable', D: 'gtceu:mv_machine_hull' })
     event.shaped('2x cosmiccore:mv_cladding', ['ABA', 'BCB', 'ABA'], { A: 'cosmiccore:energetic_aluminium_bolt', B: 'gtceu:rubber_foil', C: 'gtceu:stone_plate' })
     event.shaped('3x cosmiccore:mv_modular_frameworks', ['ABA', 'BCB', 'ABA'], { A: 'cosmiccore:energetic_aluminium_bolt', B: 'cosmiccore:nostium_rod', C: 'cosmiccore:small_nostium_gear' })
     event.shaped('4x cosmiccore:mv_cogwork_magicapacitor', ['ABA', 'CDC', 'ABA'], { A: 'cosmiccore:nostium_plate', B: 'malum:mnemonic_fragment', C: 'cosmiccore:energetic_aluminium_foil', D: '#gtceu:circuits/lv' })

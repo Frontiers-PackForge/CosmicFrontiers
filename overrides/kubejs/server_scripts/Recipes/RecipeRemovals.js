@@ -217,10 +217,13 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:macerator/macerate_raw_iesnium_ore_to_crushed_ore' })
     event.remove({ id: 'gtceu:shaped/steam_boiler_coal_steel' })
 
+    event.remove({ id: 'gtceu:shaped/casing_hv' })
+    event.remove({ id: 'gtceu:assembler/casing_hv' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_nostium_gas' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_nostium' })
     event.remove({ id: 'occultism:crafting/chalk_black_impure' })
     event.remove({ id: 'aeronautics:mixing/levitite_blend' })
+    event.remove({ id: 'ars_nouveau:magebloom_crop' })
     event.remove({ id: 'neovitae:rune_blank' })
     event.remove({ id: 'occultism:crafting/chalk_orange_impure' })
     event.remove({ id: 'occultism:crafting/lens_frame_alt' })

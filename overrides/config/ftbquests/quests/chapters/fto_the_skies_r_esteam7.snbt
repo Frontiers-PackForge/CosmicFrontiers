@@ -1,13 +1,22 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 350
 	default_quest_shape: ""
 	filename: "fto_the_skies_r_esteam7"
 	group: "7EA3F68BE56F2314"
 	id: "68A4490D81087CDD"
 	order_index: 0
-	quest_links: [ ]
+	quest_links: [{
+		id: "3457FA3AAE8E4ED0"
+		linked_quest: "6D9249DE13CBEB39"
+		x: -5.0d
+		y: 1.0d
+	}]
 	quests: [
 		{
+			icon: {
+				id: "gtceu:mv_machine_hull"
+			}
 			id: "7BD151701A8DF088"
 			size: 2.0d
 			tasks: [{
@@ -19,54 +28,807 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"3BC775BBDE9286BF"
+				"6D9249DE13CBEB39"
+			]
 			id: "3162B5D4D16183B7"
 			tasks: [{
 				id: "34A334FF9E3FCB2C"
 				item: { count: 1, id: "gtceu:galvanized_ethersteel_ingot" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 7.5d
 			y: 5.0d
 		}
 		{
+			dependencies: [
+				"6D9249DE13CBEB39"
+				"13D3FAFCB1D5861D"
+			]
 			id: "597E2D324D5A073A"
 			tasks: [{
 				id: "31DA610D88322545"
 				item: { count: 1, id: "gtceu:terrasteel_ingot" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 5.0d
+			x: 10.0d
+			y: 2.5d
 		}
 		{
+			dependencies: ["654F2B3B0CD1F42F"]
 			id: "6D9249DE13CBEB39"
+			shape: "hexagon"
+			size: 1.75d
 			tasks: [{
 				id: "0023BD37E4F04517"
 				item: { count: 1, id: "cosmiccore:arcane_crucible" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 7.5d
 			y: 2.5d
 		}
 		{
+			dependencies: ["7A7BBC9EBEAEFBD2"]
 			id: "717E27F2BC2B2FF3"
 			tasks: [{
 				id: "066E8B3142036275"
 				item: { count: 1, id: "cosmiccore:mv_ember_input_hatch" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 2.5d
+			x: -6.5d
+			y: -2.0d
 		}
 		{
+			dependencies: [
+				"762D3321F43C0589"
+				"65CEDBA805B38B14"
+				"0975CA11110DC9FB"
+			]
 			id: "654F2B3B0CD1F42F"
+			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "517D5610C82228D9"
 				item: { count: 1, id: "gtceu:stainless_steel_ingot" }
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1BC8E85866579CF2"]
+			id: "5CAF8B02C3FE99ED"
+			tasks: [{
+				id: "7AE95BC503B3228C"
+				item: { count: 1, id: "gtceu:chromium_iii_oxide_dust" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E1DF9CD2C9197EB"]
+			id: "1BC8E85866579CF2"
+			tasks: [{
+				id: "36CD7A9DA7BB44CA"
+				item: { count: 1, id: "gtceu:sodium_dichromate_solution_bucket" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["05D76DF50301384D"]
+			id: "5E1DF9CD2C9197EB"
+			tasks: [{
+				id: "78A9AC4B4140E7AE"
+				item: { count: 1, id: "gtceu:sodium_chromate_solution_bucket" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["286F950918F4817C"]
+			id: "05D76DF50301384D"
+			tasks: [{
+				id: "35B882FF30803E3C"
+				item: { count: 1, id: "gtceu:chromite_dust" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7BD151701A8DF088"]
+			id: "286F950918F4817C"
+			tasks: [{
+				id: "4BDC294924BAAB92"
+				item: { count: 1, id: "cosmiccore:raw_vanachrome" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5CAF8B02C3FE99ED"]
+			id: "762D3321F43C0589"
+			tasks: [{
+				id: "6BAA7E5AF72AF74B"
+				item: { count: 1, id: "gtceu:chromium_dust" }
+				type: "item"
+			}]
+			x: 2.5d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"762D3321F43C0589"
+				"31C1E94CBC397D98"
+			]
+			id: "0975CA11110DC9FB"
+			tasks: [{
+				id: "26D9B07D35CDCCD0"
+				item: { count: 1, id: "gtceu:kanthal_coil_block" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7BD151701A8DF088"]
+			id: "31C1E94CBC397D98"
+			tasks: [{
+				id: "06FC6B942D0F818A"
+				item: { count: 1, id: "cosmiccore:mv_spooling_machine" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["31C1E94CBC397D98"]
+			id: "77D25A4BBEBD9F69"
+			tasks: [{
+				id: "0F1FB4CF14CF2DE4"
+				item: { count: 1, id: "gtceu:mv_voltage_coil" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"77D25A4BBEBD9F69"
+				"6286BBDCED944054"
+			]
+			id: "65CEDBA805B38B14"
+			tasks: [{
+				id: "05D4794AAC9DFA53"
+				item: { count: 1, id: "gtceu:mv_energy_input_hatch" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				dependency: 8515518691351987593L
+				visible: 0b
+			}]
+			dependencies: ["762D3321F43C0589"]
+			id: "5AF279015C476CC6"
+			tasks: [{
+				id: "178D80194FFF6345"
+				item: { count: 1, id: "gtceu:vanadium_steel_ingot" }
+				type: "item"
+			}]
+			x: -1.75d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5AF279015C476CC6"]
+			id: "35E5B25522F55FFF"
+			tasks: [{
+				id: "4DC1A2DC38016C4B"
+				item: { count: 1, id: "gtceu:vanadium_steel_buzz_saw_blade" }
+				type: "item"
+			}]
+			x: -1.75d
+			y: 5.0d
+		}
+		{
+			dependencies: ["52B44FB6A10C090D"]
+			id: "6286BBDCED944054"
+			tasks: [
+				{
+					id: "5D4DC47BBEC3D367"
+					item: { count: 1, id: "gtceu:ulpic_wafer" }
+					type: "item"
+				}
+				{
+					id: "04060113318C8364"
+					item: { count: 1, id: "gtceu:sapphire_lens" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["35E5B25522F55FFF"]
+			id: "52B44FB6A10C090D"
+			tasks: [{
+				id: "7B34FED7BDC72B53"
+				item: { count: 1, id: "gtceu:mv_cutter" }
+				type: "item"
+			}]
+			x: -1.75d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7BD151701A8DF088"]
+			id: "56335BE808B77702"
+			tasks: [{
+				id: "63B1E22191788068"
+				item: { count: 1, id: "gtceu:mv_electrolyzer" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7BD151701A8DF088"
+				"56335BE808B77702"
+			]
+			dependency_requirement: "one_completed"
+			id: "008703F2EB317107"
+			min_width: 300
+			tasks: [
+				{
+					id: "18751B04978ADB5F"
+					item: { count: 1, id: "gtceu:silicon_dust" }
+					type: "item"
+				}
+				{
+					id: "72ADEC578C6D48F7"
+					item: { count: 1, id: "gtceu:aluminium_dust" }
+					type: "item"
+				}
+				{
+					id: "23CA08E31DF0D346"
+					item: { count: 1, id: "gtceu:gallium_arsenide_dust" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["008703F2EB317107"]
+			id: "37BDEA4FF6C6ECF1"
+			tasks: [{
+				id: "20BFEDE2F56FF0CB"
+				item: { count: 1, id: "gtceu:silicon_boule" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				dependency: 7895454314897599289L
+				target_link: 3771758342889688784L
+				visible: 1b
+			}]
+			dependencies: [
+				"008703F2EB317107"
+				"6D9249DE13CBEB39"
+			]
+			id: "7875FAA7C1745D0F"
+			tasks: [{
+				id: "41F20235ABD03B2E"
+				item: { count: 1, id: "cosmiccore:livingrock_aluminate_boule" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7875FAA7C1745D0F"]
+			icon: {
+				id: "cosmiccore:latent_efficacy_wafer"
+			}
+			id: "7A7BBC9EBEAEFBD2"
+			tasks: [
+				{
+					id: "620CF2A5E471DF0B"
+					item: { count: 1, id: "cosmiccore:latent_efficacy_wafer" }
+					type: "item"
+				}
+				{
+					id: "22611BE7726D4832"
+					item: { count: 1, id: "cosmiccore:efficacy_chip" }
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"52B44FB6A10C090D"
+				"37BDEA4FF6C6ECF1"
+			]
+			id: "44503C71CC992EF4"
+			tasks: [{
+				id: "65472476375F7546"
+				item: { count: 1, id: "gtceu:silicon_wafer" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7BD151701A8DF088"]
+			dependency_requirement: "all_started"
+			hide_dependency_lines: true
+			id: "48A0BD00F0670D38"
+			tasks: [{
+				id: "78015CD11C666DA7"
+				item: { count: 1, id: "gtceu:mv_laser_engraver" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"44503C71CC992EF4"
+				"48A0BD00F0670D38"
+			]
+			icon: {
+				id: "gtceu:ilc_wafer"
+			}
+			id: "0292F63DC3EC6E1F"
+			tasks: [
+				{
+					id: "397D8A3700145C23"
+					item: { count: 1, id: "gtceu:ilc_wafer" }
+					type: "item"
+				}
+				{
+					id: "3CBF482DFA0BE844"
+					item: { count: 1, id: "gtceu:amethyst_lens" }
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"44503C71CC992EF4"
+				"48A0BD00F0670D38"
+			]
+			icon: {
+				id: "gtceu:ram_wafer"
+			}
+			id: "0407A0291D69959D"
+			tasks: [
+				{
+					id: "161ED1A4D8E91E6D"
+					item: { count: 1, id: "gtceu:ram_wafer" }
+					type: "item"
+				}
+				{
+					id: "03A8D3B18BFE5E64"
+					item: { count: 1, id: "gtceu:emerald_lens" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0292F63DC3EC6E1F"]
+			id: "24753A2388735E52"
+			tasks: [{
+				id: "70674A9C769268D4"
+				item: { count: 1, id: "gtceu:basic_integrated_circuit" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["24753A2388735E52"]
+			id: "3E5A361309AE38E9"
+			tasks: [{
+				id: "0FB61AFB2946C87C"
+				item: { count: 1, id: "gtceu:good_integrated_circuit" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"0407A0291D69959D"
+				"3E5A361309AE38E9"
+				"5985A246A201A80F"
+			]
+			id: "3018E2B38213B435"
+			tasks: [{
+				id: "0E39906EBFE88FFB"
+				item: { count: 1, id: "gtceu:advanced_integrated_circuit" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3018E2B38213B435"]
+			id: "7855173D0EB0818C"
+			tasks: [{
+				id: "4AB66F7676C3C316"
+				item: { count: 1, id: "gtceu:multi_smelter" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["3018E2B38213B435"]
+			id: "24B46F4F68610400"
+			tasks: [{
+				id: "26FA8830DA37A6B5"
+				item: { count: 1, id: "gtceu:mv_circuit_assembler" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0975CA11110DC9FB"]
+			hide_dependency_lines: true
+			id: "44F40A00C61EFE54"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "68287403E1C5B7BA"
+				item: { count: 1, id: "gtceu:silicon_ingot" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["44F40A00C61EFE54"]
+			id: "5985A246A201A80F"
+			tasks: [{
+				id: "344AE4ED4E1E89F9"
+				item: { count: 1, id: "gtceu:transistor" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7BD151701A8DF088"]
+			id: "18E7E410A967C57C"
+			tasks: [{
+				id: "7A25BEF252439486"
+				item: { count: 1, id: "gtceu:mv_mixer" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["18E7E410A967C57C"]
+			id: "022BA699AAF4642A"
+			tasks: [{
+				id: "59B32CD64FF8D10E"
+				item: { count: 1, id: "gtceu:rose_gold_ingot" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["022BA699AAF4642A"]
+			id: "184972E80D9D1F2C"
+			tasks: [{
+				id: "58EB2C79B2F089C0"
+				item: { count: 1, id: "ars_nouveau:arcane_core" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7BD151701A8DF088"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			icon: {
+				id: "neovitae:sigil_seer"
+			}
+			id: "2C681CEA5813573D"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					dimension: "undergarden:undergarden"
+					id: "5CF3523293ABF984"
+					ignore_dimension: false
+					position: [I;
+						0
+						-500
+						0
+					]
+					size: [I;
+						1
+						1
+						1
+					]
+					type: "location"
+				}
+				{
+					deed: "frontiers:depth_call_2"
+					disclosure: "visible"
+					id: "588F48600769EB6D"
+					presentation: "quest"
+					type: "cosmiccore:deed"
+				}
+			]
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"184972E80D9D1F2C"
+				"2C681CEA5813573D"
+			]
+			id: "4994B932F264D4E2"
+			tasks: [{
+				id: "6769AA4A857BC4C1"
+				item: { count: 1, id: "ars_nouveau:magebloom_crop" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2C681CEA5813573D"]
+			id: "73BC5E9DE8B0CE61"
+			tasks: [{
+				id: "500A75D186402FE9"
+				item: { count: 1, id: "ars_nouveau:novice_spell_book" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["654F2B3B0CD1F42F"]
+			id: "4B6C5108309A0926"
+			tasks: [{
+				id: "6E934B804502BCEA"
+				item: { count: 1, id: "cosmiccore:biomana_digestor" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B6C5108309A0926"]
+			id: "092C81D9C5064065"
+			tasks: [{
+				id: "2920275248807910"
+				item: { count: 1, id: "cosmiccore:biomana_slurry_bucket" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["092C81D9C5064065"]
+			id: "142A4F7E8D1A72B3"
+			tasks: [{
+				id: "52C550493F0C0C5F"
+				item: { count: 1, id: "gtceu:potent_mana_bucket" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["142A4F7E8D1A72B3"]
+			id: "67637F7973709974"
+			tasks: [{
+				id: "25BDEA96B26B3732"
+				item: { count: 1, id: "gtceu:source_oils_bucket" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["67637F7973709974"]
+			id: "69800C44051C3AA9"
+			tasks: [{
+				id: "32C2860C657EA4FD"
+				item: { count: 1, id: "gtceu:source_enhanced_bio_fuel_bucket" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4B6C5108309A0926"
+				"142A4F7E8D1A72B3"
+			]
+			id: "13D3FAFCB1D5861D"
+			tasks: [{
+				id: "33C01B4ED76A9897"
+				item: { count: 1, id: "gtceu:terrasteel_dust" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7BD151701A8DF088"]
+			hide_dependency_lines: true
+			id: "3BC775BBDE9286BF"
+			tasks: [{
+				id: "7698394A7D33A686"
+				item: { count: 1, id: "gtceu:electrotine_dust" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["24A51AFDD86B98CA"]
+			id: "6E0CAEC939C3995F"
+			tasks: [{
+				id: "67FE8C71D5E4936F"
+				item: { count: 1, id: "gtceu:hv_machine_hull" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"67A67B4785475DF6"
+				"57B3AB5BB5C7E9F4"
+				"3AEB7708B4F7C46B"
+			]
+			id: "24A51AFDD86B98CA"
+			tasks: [{
+				id: "1D3440EDA9CB64F7"
+				item: { count: 1, id: "gtceu:hv_machine_casing" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3162B5D4D16183B7"]
+			id: "57B3AB5BB5C7E9F4"
+			tasks: [{
+				id: "4D5A2A9FB8114D00"
+				item: { count: 1, id: "cosmiccore:hv_cogwork_magicapacitor" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3162B5D4D16183B7"]
+			id: "67A67B4785475DF6"
+			tasks: [{
+				id: "6127538C78E4CEFA"
+				item: { count: 1, id: "cosmiccore:hv_modular_frameworks" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"3162B5D4D16183B7"
+				"5409781BE86F8DA3"
+			]
+			id: "3AEB7708B4F7C46B"
+			tasks: [{
+				id: "307CE515CF7961BB"
+				item: { count: 1, id: "cosmiccore:hv_cladding" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"6E0CAEC939C3995F"
+				"3018E2B38213B435"
+			]
+			id: "369A6B80AED9D741"
+			tasks: [{
+				id: "09D6B1DB6F056381"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7BD151701A8DF088"]
+			hide_dependency_lines: true
+			id: "5409781BE86F8DA3"
+			tasks: [{
+				id: "5D3B2ACD285F04A2"
+				item: { count: 1, id: "gtceu:polyvinyl_chloride_ingot" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["654F2B3B0CD1F42F"]
+			id: "068F151533C124CD"
+			min_width: 450
+			rewards: [{
+				id: "256C210135F8825C"
+				item: {
+					count: 1
+					id: "ae2:guide"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "385EC048DEF520B3"
+				item: { count: 1, id: "ae2:controller" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["068F151533C124CD"]
+			id: "0A5E16599EAFAEC6"
+			tasks: [{
+				id: "2A4AB5CAAF37FB22"
+				item: { count: 1, id: "ae2:crafting_terminal" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["068F151533C124CD"]
+			id: "4B8BB9D41D0D0652"
+			min_width: 450
+			tasks: [
+				{
+					id: "10E2F29E1BD27223"
+					item: { count: 1, id: "ae2:fluix_smart_cable" }
+					type: "item"
+				}
+				{
+					id: "1D1E8B2FB53706E3"
+					item: { count: 1, id: "ae2:fluix_smart_dense_cable" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -4.5d
 		}
 	]
 }
