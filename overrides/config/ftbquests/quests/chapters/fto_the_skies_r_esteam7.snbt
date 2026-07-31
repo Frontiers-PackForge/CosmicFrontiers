@@ -6,5 +6,67 @@
 	id: "68A4490D81087CDD"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "7BD151701A8DF088"
+			size: 2.0d
+			tasks: [{
+				id: "515F0929F8B878C9"
+				item: { count: 1, id: "gtceu:mv_machine_hull" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "3162B5D4D16183B7"
+			tasks: [{
+				id: "34A334FF9E3FCB2C"
+				item: { count: 1, id: "gtceu:galvanized_ethersteel_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			id: "597E2D324D5A073A"
+			tasks: [{
+				id: "31DA610D88322545"
+				item: { count: 1, id: "gtceu:terrasteel_ingot" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			id: "6D9249DE13CBEB39"
+			tasks: [{
+				id: "0023BD37E4F04517"
+				item: { count: 1, id: "cosmiccore:arcane_crucible" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			id: "717E27F2BC2B2FF3"
+			tasks: [{
+				id: "066E8B3142036275"
+				item: { count: 1, id: "cosmiccore:mv_ember_input_hatch" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			id: "654F2B3B0CD1F42F"
+			tasks: [{
+				id: "517D5610C82228D9"
+				item: { count: 1, id: "gtceu:stainless_steel_ingot" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+	]
 }

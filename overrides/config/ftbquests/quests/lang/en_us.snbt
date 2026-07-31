@@ -9,7 +9,7 @@
 	chapter.4AA04C0FE00BCA64.title: "&fDark Matter &r- [&3UV&7]"
 	chapter.535ED57C622DDD96.title: "&fThe Grid &r- [&6HV&7]"
 	chapter.648321DD3530A17B.title: "&fPaint the Galaxy Red &r- [&cZPM&7]"
-	chapter.68A4490D81087CDD.title: "&fTo the Skies! &r- [&bMV&7]"
+	chapter.68A4490D81087CDD.title: "&fEven Deeper! &r- [&bMV&7]"
 	chapter_group.09ADD253FB82D7A0.title: "&fAeon 3 - The Wrath of Time"
 	chapter_group.1654AF685B58AF60.title: "Questbook Info"
 	chapter_group.1E0EC9D191725D6D.title: "&fAeon 4 - A Godsent War"
@@ -27,7 +27,24 @@
 		"This could help you early on when it comes to routing items and fluid."
 	]
 	quest.00557FB9FEF4A039.quest_subtitle: "Simple Stockpile Automation"
-	quest.032DE7CBA8FCB4C8.quest_subtitle: "Tier 3 Nether Resources"
+	quest.0404FA9ACCD11D51.quest_desc: [
+		"You can make Hulls and Casings Cheaper with a small cost of Rubber or Plastics."
+		""
+		"Notably, check out the MV Hull shortcut recipe, as well as previous tiers."
+	]
+	quest.0404FA9ACCD11D51.quest_subtitle: "Cheaper Hulls and Casings"
+	quest.0404FA9ACCD11D51.title: "Got some Rubbers and Plastics?"
+	quest.04D15703B3D383E2.quest_desc: [
+		"You may have noticed you produce a large amount of chunks, which need to be crushed into powders to be used further."
+		""
+		"Macerators are useful for this task, but are also slow and offer no parallel beyond the early game steam grinder. Asking players to make quads of these or use a steam-tier machine in a scaled ore sorter setup sounded absurd, so the result is the powderizer can also macerate only ore chunks."
+		""
+		"Powderizers spend more EU than macerators to shred chunks into dusts. But also gains the 8 Pure Parallels of the powderizer (eg. spending only 1 recipes worth of eu on 8 recipes)"
+		""
+		"Powderizers are arguably more expensive than a steam grinder, but offer more flexibility overall and are faster."
+	]
+	quest.04D15703B3D383E2.quest_subtitle: "A better industrial macerator"
+	quest.04D15703B3D383E2.title: "Powderizer Secondary Uses"
 	quest.0584A322CC8C1A28.quest_desc: [
 		"Sable and Create Aeronautics allow for creation of contraptions with real time simulated physics."
 		"These contraptions are amazing for creating flying ships/cars/drills"
@@ -35,6 +52,11 @@
 		"Please take caution using them, make constant backups, with a phyiscs mod like this even though it is almost perfect, it still will have edgecase issues we'll most likely find."
 	]
 	quest.0584A322CC8C1A28.quest_subtitle: "Redefining the game."
+	quest.072350DCC099E9C9.quest_desc: [
+		"Using a flocculant you can help seperate materials further. The resulting ore yields have more unique products and a slight material yield bonus. "
+		""
+		"Flocculant solution (Polyethylene Oxide) rates have been mostly made on guesswork of how bad it'd be. I was going to do 25mb per but it felt pretty unforgiving. 10mb seems the best option but if we need to nudge it around to 5mb or 15mb I am not opposed to it. Let me know your feedback on Github or Discord."
+	]
 	quest.072350DCC099E9C9.quest_subtitle: "Flocculation (Tier 3 Ore Processing)"
 	quest.07D19BDB1D7C756D.quest_desc: ["to be able to sort your ores into more useful products, the crushed ore mush first be washed and seperated in a flotation plant"]
 	quest.07D19BDB1D7C756D.quest_subtitle: "Washing your ores (Tier 1 Ore Processing)"
@@ -47,9 +69,7 @@
 		"If you process the hydrogen sulfide with an electrolyzer, you can get your hydrogen back and loop it for this process"
 	]
 	quest.07D8585C88A58A28.quest_subtitle: "Desulfurized"
-	quest.081F8227DD6E3430.title: "Tier 2 Nether Resources"
 	quest.084D9D116B8A6C4A.quest_subtitle: "Biological Scrap Metals"
-	quest.0874866212F96185.title: "Tier 1 Nether Resources"
 	quest.0B34B5CE7CCBAE72.quest_desc: [
 		"Note : GT Miners do not work in the Undergarden or Abyss."
 		""
@@ -71,7 +91,6 @@
 		"Use a melter powered with a small amount of ember to makee your first molten dawnstone."
 	]
 	quest.0C0E3F2E637DA0A9.quest_subtitle: "Dawnstone but Molten"
-	quest.0E9F869D3359D0C2.title: "Tier 2 Overworld Resources"
 	quest.0EC4D52E2252406D.quest_subtitle: "Gregtech Oxygen Tank"
 	quest.0FA8D92F9734C77C.quest_subtitle: "The Sulfur Ore Field"
 	quest.130F6EE5889B7ADE.quest_desc: [
@@ -109,12 +128,6 @@
 	quest.16EE5D3DB14F4331.quest_subtitle: "Granting Access to Hell"
 	quest.18153CD2A0487F03.quest_desc: ["Spirit Fire can be created by throwing a demons dream fruit on the ground, and lighting it on fire."]
 	quest.18153CD2A0487F03.quest_subtitle: "Calm Flames"
-	quest.1B1ACF0C38147836.quest_desc: [
-		"This column contains all the different unique ores you can acquire from the different ore sorting steps."
-		""
-		"Some materials you need only come from higher tier sorting, so always be checking EMI"
-	]
-	quest.1B1ACF0C38147836.title: "Overworld Ores"
 	quest.1B387FD15E883317.quest_desc: [
 		"You'll need materials, lots of them, and that starts with *you* extracting them."
 		""
@@ -124,6 +137,22 @@
 	]
 	quest.1B387FD15E883317.quest_subtitle: "First Tools"
 	quest.1B387FD15E883317.title: "Get Some Sort of Tool"
+	quest.1B4E42BE6EF7A4F3.quest_desc: [
+		"Ore Sorters will take various versions of processed ore and seperate them into valuable materials."
+		""
+		""
+		""
+		"Ore Sorting replaces the entire functional ore-processing system of GTCEu:Modern with something closer resembling Angels Ore Processing from Factorio with some liberties taken on design."
+		""
+		""
+		"Ore Chunks (The products of sorting ores at different stages) are your primary sources of materials, and EMI will show you an Ore-Sort diagram any time you click on pure dusts that come from sorting or chunks themselves."
+		""
+		"I've also removed most of the old raw ores that would have confused you in EMI, so hopefully it's easy to understand and navigate."
+		""
+		""
+		"Ore sorting starts off mildly lossy for T1 and T2 in terms of how many raw ores you put in verses chunks you get out, but as you get higher stages of sorting you also get increased yields. This was notably done because ore fields are massive and offering flat objective multipliers early on and in general caused a lot of resource bloat. (There still is resource bloat regarding how much you get but I'll have to address that over time or just use more materials per craft.)"
+	]
+	quest.1B4E42BE6EF7A4F3.quest_subtitle: "The heart of ore processing"
 	quest.1FD7F7A22E29CFF5.quest_desc: [
 		"Soul Gourd Stems spawn on soul sand or soil in the nether. "
 		""
@@ -149,7 +178,7 @@
 		""
 		"&l&4NEVER. MIX. VOLTAGES.&r Plugging a higher base voltage into lower-tiered machines will cause an explosion."
 		"Example&r : Do not plug a cable carrying &nMV&r &eVoltage&r (&e128 EU per amp&r) into an &nLV&r machine (&e32 EU per amp&r) this will end &cpoorly.&r "
-		""
+		"Continued on Page 2 : -> (Scroll or Click the Arrow)"
 		"{@pagebreak}"
 		""
 		"&aAmperage&r (\"&aAmps&r\") is a limit to how much energy a cable can carry."
@@ -159,12 +188,6 @@
 	]
 	quest.20B57C1FF5037C74.quest_subtitle: "Power Warnings."
 	quest.20B57C1FF5037C74.title: "Read this or Explode"
-	quest.233D177DD5A470E9.quest_desc: [
-		"This column contains all the different unique ores you can acquire from the different ore sorting steps."
-		""
-		"Some materials you need only come from higher tier sorting, so always be checking EMI"
-	]
-	quest.233D177DD5A470E9.quest_subtitle: "More Ores!"
 	quest.24C8852F25520072.quest_desc: [
 		"Future Ore Sorting Tiers will involve fluid logistics, and the recipes are still a wip."
 		""
@@ -290,6 +313,18 @@
 	quest.369DE54ABB07E98A.quest_subtitle: "Coking coals"
 	quest.369DE54ABB07E98A.title: "Coke Oven and Coke Bricks"
 	quest.3733906CF47B1C06.quest_subtitle: "Multipurpose and cheap"
+	quest.373DE13547832AB8.quest_desc: [
+		"One of your goals this chapter is reaching MV circuits. This will require some extensive work to get to."
+		""
+		""
+		"1. &bEBF&r : You will need for creating Dark Steel and Soul Stained Steel needed for LV Field Gens."
+		"2. &bAra Vitae&r : Required to make some of the chalks needed for Runed Steel."
+		"3. &bOre Sorting&r : While not strictly required to get gallium, it is strictly required for arsenic for diodes."
+		""
+		""
+		""
+		"Once you have made your first &aMV circuits&r, it is strongly recommended to invest them into the &eCircuit Assembler&r, which is the most expensive singleblock of any tier, usually granting higher tier circuit crafts or shortcuts for current circuit recipes."
+	]
 	quest.373DE13547832AB8.quest_subtitle: "Getting your first MV Circuit!"
 	quest.38473AAE9EFA91C7.quest_desc: [
 		"Ember is easy to move!"
@@ -298,7 +333,6 @@
 	]
 	quest.38473AAE9EFA91C7.quest_subtitle: "Moving Ember"
 	quest.391A834FBA98B236.quest_subtitle: "Moving Rotation"
-	quest.3945947DBE1D85A0.quest_subtitle: "Tier 3 Overworld Resources"
 	quest.3A755F7B8012AB1A.quest_subtitle: "Create Oxygen Tank"
 	quest.3E03C13CAE570D80.quest_desc: ["You can also get quartz blocks from stone masons, which allows you to make this pre-nether!"]
 	quest.3E03C13CAE570D80.quest_subtitle: "Stone Mason Source"
@@ -372,7 +406,7 @@
 		""
 		"Sorting the ground dust will give you the same outputs as regular purified ore sorting does."
 		""
-		"So make sure you run it through flotation again!"
+		"At this point most of the mechanical seperation steps you can take have been done. The next step requires chemical treatments. I would recommend you get a reliable source of Polyethylene before upgrading further"
 	]
 	quest.469D5D2740B79048.quest_subtitle: "Finely Ground (Tier 2 Ore Processing)"
 	quest.46A8D660ABEB83FA.quest_desc: [
@@ -434,6 +468,7 @@
 		"This might not work/apply in all cases, please let me know if you find strange places you can/can't breathe when you should/shouldn't be able to!"
 	]
 	quest.4CBACE925D480CAA.quest_subtitle: "Breathing in places you can't"
+	quest.4D779318D62835EC.quest_subtitle: "Victory of LV"
 	quest.4E3A7CB013A59A37.quest_desc: ["You can now use concrete to produce coke bricks more efficiently!"]
 	quest.4E3A7CB013A59A37.quest_subtitle: "Better Coke Brick Recipe"
 	quest.50930E8761259EFD.quest_desc: [
@@ -456,18 +491,6 @@
 		"This is a pretty temporary recipe until i can be asked to make Steam Ember Hatches."
 	]
 	quest.534DBCED4E339D89.quest_subtitle: "Getting Embers into a Gregtech Machine"
-	quest.547989FC1806F95F.quest_desc: [
-		"You can get these ore chunks by first washing your crushed ore in a flotation plant."
-		""
-		"After which you then run through an ore sorter to get the chunks, these chunks can be processed into their respective materials"
-		""
-		""
-		"First Sources of : "
-		""
-		"Aluminium (From Saphire dust elecytrolysis)"
-		"Bauxite (For Titanium in the Future)"
-	]
-	quest.547989FC1806F95F.title: "Tier 1 Overworld Resources"
 	quest.5505401B1E8344EB.quest_subtitle: "The Key to Steel"
 	quest.57E59B0060EAB2C7.quest_desc: [
 		"Welcome to Cosmic Frontiers, we're glad to have you here."
@@ -506,7 +529,24 @@
 		"This is the difference between this being &ctedious as hell&r and &emildly managable&r until you an automate Essentia Vitae."
 	]
 	quest.5E380EE48FCB8769.quest_subtitle: "The Altar of Life"
+	quest.601F4BCD183CC077.quest_desc: ["You'll need an Electric Blast Furnace to process this metal, if you haven't made one already. I'd recommend you do so."]
 	quest.601F4BCD183CC077.quest_subtitle: "A mundane but durable metal"
+	quest.666A77BC58F33CD0.quest_desc: [
+		"The Electric Blast furnace uses high heat and plenty of EU to smelt dusts into usable products."
+		""
+		"The EBF like many of the multiblocks you've made before has some new behaviors."
+		""
+		"Coil Temperature : Is a gate on what materials can be smelted alongside minimum EU. Coil temp is also gained from overclocks. "
+		""
+		""
+		"Worth noting, any EBF recipe will gain a free overclock for every 2 coil tiers above the base tier listed. Example: A Cupronickel heat level recipe (1700K) will gain a free OC on an EBF with Nichrome Coils. "
+		""
+		"Standard Voltage Overclocks also apply."
+		""
+		""
+		"Note about the quest itself : This is a deed quest, it will trigger a story sequence upon completing and viewing. Please wait for the cutscene to conclude fully!"
+	]
+	quest.666A77BC58F33CD0.quest_subtitle: "The First Big Furnace"
 	quest.67110A5418804D33.quest_desc: [
 		"You can't harvest pure nether quartz yourself, and gold is something only found in small amounts now."
 		""
@@ -626,11 +666,12 @@
 	]
 	quest.7FE634D65F26BB7A.quest_subtitle: "Foods of the Nether"
 	task.1B611E179BDDC444.title: "Yeah"
-	task.2627A4C621E3C941.title: "Visit Layer 2 of the Abyss (Y:~ -300)"
+	task.2627A4C621E3C941.title: "Reach Y: -300 of the Abyss"
 	task.454A92A4FCC0F185.title: "Any #c:tools/mining_tool"
-	task.4C54D581D667FD7F.title: "Nether Ores"
+	task.4F2DCF87BF14A5A0.title: "To Somewhere Beyond"
 	task.5C1CE51AFE90BD57.title: "Craft Any Mortar"
 	task.6663702BE6CE1EEA.title: "Spirit Fires"
 	task.677509BDC6B481FC.title: "Got It."
+	task.6845F4E5F89C3C23.title: "Reach Y: -100 of the Abyss"
 	task.77609A3D829D9910.title: "Any Log"
 }
