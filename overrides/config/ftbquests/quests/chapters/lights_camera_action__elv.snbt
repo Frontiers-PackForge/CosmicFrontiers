@@ -908,6 +908,14 @@
 			}]
 			dependencies: ["38D949291F0E780F"]
 			id: "33A577DB6CA4CEDB"
+			rewards: [{
+				id: "2EFC280FD1A83AED"
+				item: {
+					count: 1
+					id: "malum:encyclopedia_arcana"
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{

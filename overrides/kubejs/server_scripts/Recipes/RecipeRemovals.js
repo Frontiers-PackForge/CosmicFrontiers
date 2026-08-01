@@ -218,6 +218,9 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:shaped/steam_boiler_coal_steel' })
 
     event.remove({ id: 'gtceu:shaped/casing_hv' })
+    event.remove({ id: 'gtceu:assembler/hull_mv_annealed' })
+    event.remove({ id: 'gtceu:assembler/hull_mv' })
+    event.remove({ id: 'gtceu:shaped/casing_hv' })
     event.remove({ id: 'gtceu:assembler/casing_hv' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_nostium_gas' })
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_nostium' })

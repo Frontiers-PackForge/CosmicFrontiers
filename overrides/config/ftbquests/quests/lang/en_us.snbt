@@ -376,6 +376,13 @@
 	quest.32A39BA7119B0CB9.quest_subtitle: "Useful"
 	quest.32CBFA838C794C01.quest_desc: ["Allows you to build rituals easier, and that will help in the future."]
 	quest.32CBFA838C794C01.quest_subtitle: "Something you might want"
+	quest.33A577DB6CA4CEDB.quest_desc: [
+		"Malums book is a bit vague at times. the general idea of malum is that you use spirits to make trinkets and rituals that augment the player or world."
+		""
+		""
+		"Firstly your goal is to make some ritual totems, to make the unchained rite to get access to blighted earth."
+	]
+	quest.33A577DB6CA4CEDB.quest_subtitle: "Crafting Altar of Malum"
 	quest.35B7A194BB34BA44.quest_desc: [
 		"The \"&6Weirdly Durable Hammer&r\" has infinite durability and can mine obsidian."
 		""
@@ -888,6 +895,7 @@
 	]
 	quest.7BAF71B8957633BA.quest_subtitle: "Life shall be spilt"
 	quest.7C5DB25564510E87.quest_subtitle: "the base of better chalks"
+	quest.7F0D22395A2F8985.quest_desc: ["Worth noting you can farm this with the soul wood totem version of the unchained rite."]
 	quest.7F43598A6495BC40.quest_subtitle: "Your First Coil"
 	quest.7FE634D65F26BB7A.quest_desc: [
 		"Bullet Peppers spawn throughout Crimson Forests or can be traded from Piglins!"
