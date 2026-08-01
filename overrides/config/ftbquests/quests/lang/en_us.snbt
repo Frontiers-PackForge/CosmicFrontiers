@@ -35,6 +35,14 @@
 	]
 	quest.008703F2EB317107.quest_subtitle: "The Products for Boules"
 	quest.008703F2EB317107.title: "Boule Prepwork"
+	quest.027BFC59C42DA1AC.quest_desc: [
+		"1k storages allow you to do one thing early on other storage sizes done, spam out a bunch of drives for types. "
+		""
+		"It is common when first building your AE2 network you will always have more item types than item volume, 1k storage cells are perfect for soaking this type-bloat cost."
+		""
+		"Once you got the majority of random junk in your system, you can make bigger drives to fill them with your bulk materials/resources."
+	]
+	quest.027BFC59C42DA1AC.quest_subtitle: "Early digital storage"
 	quest.0404FA9ACCD11D51.quest_desc: [
 		"You can make Hulls and Casings Cheaper with a small cost of Rubber or Plastics."
 		""
@@ -97,6 +105,12 @@
 	]
 	quest.07D8585C88A58A28.quest_subtitle: "Desulfurized"
 	quest.084D9D116B8A6C4A.quest_subtitle: "Biological Scrap Metals"
+	quest.0975CA11110DC9FB.quest_desc: [
+		"Kanthal and Silicon require being cooled down with water before use."
+		""
+		"If you haven't already while your kanthal smelts, make a chemical bath and get the hot ingots cooling as they exit your EBFs."
+	]
+	quest.0975CA11110DC9FB.quest_subtitle: "You probably want a chemical bath too..."
 	quest.0A5E16599EAFAEC6.quest_desc: [
 		"Terminals allow you to access your linked storage inside of AE2."
 		""
@@ -163,6 +177,27 @@
 	quest.16EE5D3DB14F4331.quest_subtitle: "Granting Access to Hell"
 	quest.18153CD2A0487F03.quest_desc: ["Spirit Fire can be created by throwing a demons dream fruit on the ground, and lighting it on fire."]
 	quest.18153CD2A0487F03.quest_subtitle: "Calm Flames"
+	quest.184972E80D9D1F2C.quest_desc: [
+		"Gonna be honest Its like, basically just like the malum spirit altar but with more whacky placement restrictions"
+		""
+		"The worn notebook has more info on it, if that's for some reason needed."
+		""
+		"If i'm being for real, might just make this a multi, cause idk if this thing still obliterates FPS or not..."
+	]
+	quest.184972E80D9D1F2C.quest_subtitle: "This uh, thing."
+	quest.1A6796453259700D.quest_desc: [
+		"Storage busses are one of the few blocks from AE2 you will become very familiar with by the end of this game. Storage busses as their name implies will expose any storage they're attached to to the ME network."
+		""
+		"This is immediately useful for when you have large item storages, like silos or vaults, and want to interface them with AE2."
+		""
+		"Storage busses can also push items, this is useful on subnets notably with the setup below"
+		""
+		"Item output -- into an interface -> on a subnet with a storage bus -> storage bus pushes the contents to your main network."
+		""
+		""
+		"This allows you to make very high throughput item movement with simple parts. Subnets as a whole will most likely have their own quest as well, but this is an extra tip. "
+	]
+	quest.1A6796453259700D.quest_subtitle: "A whole world of possibilities"
 	quest.1B387FD15E883317.quest_desc: [
 		"You'll need materials, lots of them, and that starts with *you* extracting them."
 		""
@@ -528,6 +563,20 @@
 	]
 	quest.4B8BB9D41D0D0652.quest_subtitle: "Importance of channels"
 	quest.4B8BB9D41D0D0652.title: "Channels and You."
+	quest.4BA1283454E50D62.quest_desc: [
+		"ME Drives are used to house all your ME Drives, the things that hold your items and fluids digitally."
+		""
+		""
+		"You will notice they have a few numbers, a 'byte' value and a 'type value"
+		""
+		"types - each unique item in a drive consumes 1 type count, unstackables consume 1 type per."
+		""
+		"bytes - the total storage of the drive, more bytes means more items can be held."
+		""
+		""
+		"One thing to note: Drives store items more efficiently if there are less types in the drive. Each unique item in a drive reserves a portion of the drive for that type and lowers the max total stacks a drive can store. This matters if you want to store large volumes of singular items/fluids in drives."
+	]
+	quest.4BA1283454E50D62.quest_subtitle: "Digital Storage Storage"
 	quest.4C8AB307C45DBC3C.quest_desc: [""]
 	quest.4C8AB307C45DBC3C.quest_subtitle: "Into the Undergarden"
 	quest.4C8AB307C45DBC3C.title: "Below Hell, The Undergarden"
@@ -601,6 +650,7 @@
 		"&aThe pack is currently in active development, and has recently migrated to 1.21."
 		"&aQuestbook will be improved as development goes along!&r"
 		"&aCore Mechanics and descriptions of them will be added here in time."
+		"&aCheck back on this page as I will add guides here over time!"
 	]
 	quest.57E59B0060EAB2C7.quest_subtitle: "Welcome to Frontiers"
 	quest.57E59B0060EAB2C7.title: "Welcome to Cosmic Frontiers"
@@ -626,6 +676,15 @@
 	quest.5E380EE48FCB8769.quest_subtitle: "The Altar of Life"
 	quest.601F4BCD183CC077.quest_desc: ["You'll need an Electric Blast Furnace to process this metal, if you haven't made one already. I'd recommend you do so."]
 	quest.601F4BCD183CC077.quest_subtitle: "A mundane but durable metal"
+	quest.634610E99CF32EB2.quest_desc: [
+		"4k drives are what most players turn to early game for general storage."
+		""
+		"4k's are usually a sign your resource or crafting stockpiles can shoulder the extra circuit demand for these. If you struggle to make these it is worth considering what you are doing and process more things at once. "
+		""
+		""
+		"No like seriously, how the hell did you get here without batch crafting. Seriously, craft stuff in like multiples of 16 to 64 or something unless it's brutally expensive lol"
+	]
+	quest.634610E99CF32EB2.quest_subtitle: "Earlygame bread and butter"
 	quest.666A77BC58F33CD0.quest_desc: [
 		"The Electric Blast furnace uses high heat and plenty of EU to smelt dusts into usable products."
 		""
@@ -649,7 +708,33 @@
 		"I suggest you either raid bastions and trade with piglins, villagers, or consider getting to LV :^)"
 	]
 	quest.67110A5418804D33.quest_subtitle: "Piglin Economics 101"
+	quest.685F89265F6746A7.quest_desc: [
+		"No get your mind out of the gutter. Stop."
+		""
+		"The atmosphere of various dimensions in frontiers are not naturally permissive to the idea of living. This is a fun way to say you'll &6suffocate&r in &acertain dimensions&r or &aat certain Y &alevels."
+		""
+		""
+		"In the overworld, this is notably defined by around the &bdeepslate layer&r, going below this will trigger your characters &boxygen supply&r to start depleting"
+		""
+		"Speaking of, your oxygen supply is no longer 10 little bubbles on your hotbar. It is a full timer with a bar that visibly depeletes as you run out of air. You also naturally have &bmore air &bcapacity&r than normal."
+		""
+		""
+		"There is also several ways to combat this hazard system."
+		""
+		"&eRebreathers&r, the simple rebreather will make you immune to low air environments like below the deeplsate layer. The Reinforced rebreather will make you immune to any environmental air hazard as long as you have a valid air supply, which can be Create backtanks or CosmicCore Bronze/Steel Supply Tanks."
+		""
+		"This system is also compatible with &ecreates diving helmet&r and will be once spacesuits are relevant."
+	]
+	quest.685F89265F6746A7.quest_subtitle: "Suffocation and you"
+	quest.685F89265F6746A7.title: "Oxygen, Thin Air, Air Hazards"
 	quest.687032030F774208.title: "Breathing in the Abyss"
+	quest.6D9249DE13CBEB39.quest_desc: [
+		"This is basically just an EBF that uses Ember instead of coils for heat."
+		""
+		""
+		"Eventually I wanna make this like... more engaging and require supplying it with a steady source of uh, source lol"
+	]
+	quest.6D9249DE13CBEB39.quest_subtitle: "TODO : MAKE THE THING GOOD AND COOL YEAH MHM"
 	quest.6E3EDA485D3AD5F7.quest_desc: [
 		"In the waters of the undergarden you have discovered a strange, lightless chasm into the depths."
 		""
@@ -664,6 +749,7 @@
 	]
 	quest.6E3EDA485D3AD5F7.quest_subtitle: "The only way forward, is down. (Y-64 to Y-200)"
 	quest.6E3EDA485D3AD5F7.title: "The Hollow Abyss - Layer 1 : The Shaded Sea"
+	quest.6E8CEE8F298636E8.quest_subtitle: "WIP Content"
 	quest.6E8D634B042DB26F.quest_desc: [
 		""
 		""
@@ -683,6 +769,13 @@
 	quest.6EF94519E4BCBE72.quest_subtitle: "Soooo"
 	quest.6F0EB4BB758B4308.quest_desc: ["&o&7Ten feet twenty the flower man..."]
 	quest.6F0EB4BB758B4308.quest_subtitle: "Lend me your power!"
+	quest.701373D09D99A565.quest_desc: [
+		"Interfaces serve two purposes, as an input point for ME networks(by inserting items/fluids into them), or as extraction points for ME networks (by setting the filter and extracting the item/fluid that was filtered)."
+		""
+		""
+		"This is much more efficient than using export/import busses, as the items are always immediately available. Import/export busses have their uses, but there's a good chance the interface may do it better."
+	]
+	quest.701373D09D99A565.quest_subtitle: "Interfacing with Interfaces"
 	quest.70C78D038EBF6CA6.quest_desc: [
 		"Rock Cutting wheels will cleave large areas of material away when active."
 		""
@@ -693,6 +786,27 @@
 	]
 	quest.70C78D038EBF6CA6.quest_subtitle: "Mass Contraption Mining"
 	quest.7171BE1689635624.quest_subtitle: "Your first source of Gallium"
+	quest.71E4C3FB3C4C06E9.quest_desc: [
+		"Food is Frontiers is a &asoft-requirement&r system for progression."
+		""
+		"By default, you do not need food to heal, or food to stay alive, or infact use FTB Ultimine."
+		""
+		"The benefit of this is it removes the annoyance of having to eat food to stay topped up at home."
+		""
+		"However, to explore and survive other dimensions, you most likely will want some &eextra hearts&r, this is where food comes in to play."
+		""
+		""
+		"Eating food applies &ball displayed values&r to the player, which is &6Bonus HP&r and &6Bonus &6Passive Regen&r."
+		""
+		"Any effects that &odo not show a timer beside them in brackets&r will last the &aentire meal&r &aduration&r. If there is a timer besides the effect, it will last as long as displayed."
+		""
+		"This turns food and meals into a &nbuffing tool for exploring&r, and some foods will be designed to aid you in these exploratory phases in Frontiers."
+		""
+		""
+		"There is more to this system, like a taste pallet system for home eaten meals. But this is explained as you unlock and discover them through the QB.(And still in dev/testing partly) There's plenty of ways to augment your player through food while not having home feel annoying. And even some cool semi-permanent buffs you can apply to yourself."
+	]
+	quest.71E4C3FB3C4C06E9.quest_subtitle: "Custom Foods Inspired by Spice of Life Valheim."
+	quest.71E4C3FB3C4C06E9.title: "Custom Meals and Hunger"
 	quest.72A429BEF13F8845.quest_desc: [
 		"You can attune it to netherrack to scan for iesnium in the nether."
 		""

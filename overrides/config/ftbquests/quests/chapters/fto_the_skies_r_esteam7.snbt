@@ -1,17 +1,34 @@
 {
+	autofocus_id: "7BD151701A8DF088"
 	default_hide_dependency_lines: false
 	default_min_width: 350
 	default_quest_shape: ""
 	filename: "fto_the_skies_r_esteam7"
 	group: "7EA3F68BE56F2314"
 	id: "68A4490D81087CDD"
-	order_index: 0
-	quest_links: [{
-		id: "3457FA3AAE8E4ED0"
-		linked_quest: "6D9249DE13CBEB39"
-		x: -5.0d
-		y: 1.0d
+	images: [{
+		height: 2.5d
+		image: "frontiers:textures/questimages/miscicons/mv.png"
+		rotation: 0.0d
+		width: 7.0d
+		x: -5.5d
+		y: -6.5d
 	}]
+	order_index: 0
+	quest_links: [
+		{
+			id: "3457FA3AAE8E4ED0"
+			linked_quest: "6D9249DE13CBEB39"
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			id: "1CEC27502DB0445D"
+			linked_quest: "4994B932F264D4E2"
+			x: 13.0d
+			y: -4.5d
+		}
+	]
 	quests: [
 		{
 			icon: {
@@ -541,11 +558,18 @@
 		{
 			dependencies: ["022BA699AAF4642A"]
 			id: "184972E80D9D1F2C"
-			tasks: [{
-				id: "58EB2C79B2F089C0"
-				item: { count: 1, id: "ars_nouveau:arcane_core" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "58EB2C79B2F089C0"
+					item: { count: 1, id: "ars_nouveau:arcane_core" }
+					type: "item"
+				}
+				{
+					id: "6B505E4C55C3ED3E"
+					item: { count: 1, id: "ars_nouveau:enchanting_apparatus" }
+					type: "item"
+				}
+			]
 			x: -5.0d
 			y: -2.0d
 		}
@@ -646,7 +670,15 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["142A4F7E8D1A72B3"]
+			cosmiccore_dependency_lines: [{
+				dependency: 5302066289788114146L
+				target_link: 2084083952883090525L
+				visible: 1b
+			}]
+			dependencies: [
+				"142A4F7E8D1A72B3"
+				"4994B932F264D4E2"
+			]
 			id: "67637F7973709974"
 			tasks: [{
 				id: "25BDEA96B26B3732"
@@ -798,7 +830,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["068F151533C124CD"]
@@ -827,8 +859,88 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
+			x: 6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4B8BB9D41D0D0652"]
+			id: "4BA1283454E50D62"
+			tasks: [{
+				id: "38DC59B44F561983"
+				item: { count: 1, id: "ae2:drive" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4B8BB9D41D0D0652"]
+			id: "1A6796453259700D"
+			tasks: [{
+				id: "7931963905ED20E1"
+				item: { count: 1, id: "ae2:storage_bus" }
+				type: "item"
+			}]
+			x: 8.5d
 			y: -4.5d
+		}
+		{
+			dependencies: ["4B8BB9D41D0D0652"]
+			id: "701373D09D99A565"
+			tasks: [{
+				id: "064D997D96A79EBB"
+				item: { count: 1, id: "ae2:interface" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4BA1283454E50D62"]
+			id: "027BFC59C42DA1AC"
+			tasks: [
+				{
+					id: "35CAB207B29B3D36"
+					item: { count: 1, id: "ae2:item_storage_cell_1k" }
+					type: "item"
+				}
+				{
+					id: "2FBDD25D222C4285"
+					item: { count: 1, id: "ae2:fluid_storage_cell_1k" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4BA1283454E50D62"]
+			id: "634610E99CF32EB2"
+			tasks: [
+				{
+					id: "27C61BF0778A36E9"
+					item: { count: 1, id: "ae2:item_storage_cell_4k" }
+					type: "item"
+				}
+				{
+					id: "69EE4BD639A14BA4"
+					item: { count: 1, id: "ae2:fluid_storage_cell_4k" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2C681CEA5813573D"]
+			id: "6E8CEE8F298636E8"
+			tasks: [{
+				id: "53A5D65CCDF9D1B7"
+				item: { count: 1, id: "cosmiccore:raw_phycolite" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.5d
 		}
 	]
 }

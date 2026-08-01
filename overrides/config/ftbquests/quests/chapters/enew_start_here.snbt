@@ -1,29 +1,64 @@
 {
 	default_hide_dependency_lines: false
-	default_min_width: 350
+	default_min_width: 400
 	default_quest_shape: ""
 	filename: "enew_start_here"
 	group: "1654AF685B58AF60"
 	id: "33E6132E4C81BC80"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		hide_until_deps_visible: false
-		icon: {
-			components: {
-				"ftbquests:icon": "ars_nouveau:item/worn_notebook"
+	quests: [
+		{
+			hide_until_deps_visible: false
+			icon: {
+				components: {
+					"ftbquests:icon": "ars_nouveau:item/worn_notebook"
+				}
+				id: "ftbquests:custom_icon"
 			}
-			id: "ftbquests:custom_icon"
+			id: "57E59B0060EAB2C7"
+			min_width: 450
+			shape: "heart"
+			size: 3.0d
+			tasks: [{
+				id: "08DF90AD1DBB87F5"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
 		}
-		id: "57E59B0060EAB2C7"
-		min_width: 450
-		shape: "heart"
-		size: 3.0d
-		tasks: [{
-			id: "08DF90AD1DBB87F5"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+		{
+			icon: {
+				id: "farmersdelight:honey_glazed_ham"
+			}
+			id: "71E4C3FB3C4C06E9"
+			min_width: 450
+			rewards: [{
+				id: "1D0AB482AE24CB7C"
+				item: {
+					count: 1
+					id: "minecraft:apple"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1DF2ABB02E373A70"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			icon: {
+				id: "cosmiccore:simple_rebreather"
+			}
+			id: "685F89265F6746A7"
+			tasks: [{
+				id: "3454EA334BA78791"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+	]
 }
