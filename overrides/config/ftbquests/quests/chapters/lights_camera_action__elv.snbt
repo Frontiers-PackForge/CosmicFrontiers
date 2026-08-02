@@ -174,7 +174,7 @@
 					type: "item"
 				}
 				{
-					deed: "cosmiccore:first_flame"
+					deed: "frontiers:industrial_flame"
 					disclosure: "visible"
 					id: "71CDC1CEC4DC85C2"
 					presentation: "quest"
@@ -1517,8 +1517,8 @@
 			dependencies: ["28CFA2142307F7DC"]
 			id: "5E52D9ECB6805C81"
 			tasks: [{
-				id: "1581E739B39D2887"
-				item: { count: 1, id: "gtceu:utherium_gem" }
+				id: "28A40F59CE6BEEE5"
+				item: { count: 1, id: "cosmiccore:utherium_gem" }
 				type: "item"
 			}]
 			x: 5.75d
@@ -1953,19 +1953,10 @@
 			id: "4D779318D62835EC"
 			shape: "hexagon"
 			size: 2.0d
-			tasks: [
-				{
-					id: "4F2DCF87BF14A5A0"
-					type: "checkmark"
-				}
-				{
-					deed: "cosmiccore:first_machine"
-					disclosure: "ascension"
-					id: "4ED1A0E35351F63F"
-					presentation: "ascension"
-					type: "cosmiccore:deed"
-				}
-			]
+			tasks: [{
+				id: "4F2DCF87BF14A5A0"
+				type: "checkmark"
+			}]
 			x: -7.0d
 			y: 5.0d
 		}

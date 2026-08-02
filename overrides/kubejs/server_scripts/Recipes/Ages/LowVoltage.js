@@ -99,8 +99,8 @@ ServerEvents.recipes(event => {
         .EUt(16, 1)
         .duration(260)
     event.recipes.gtceu.electric_blast_furnace()
-        .itemInputs('malum:hallowed_gold_ingot', 'gtceu:utherium_gem', 'cosmiccore:bloomscrap')
-        .itemOutputs('gtceu:chrysanthium_ingot')
+        .itemInputs('malum:hallowed_gold_ingot', 'cosmiccore:utherium_gem', '4x cosmiccore:bloomscrap')
+        .itemOutputs('4x gtceu:chrysanthium_ingot')
         .EUt(GTValues.VA[GTValues.MV], 1)
         .blastFurnaceTemp(1700)
         .duration(700)
@@ -250,7 +250,7 @@ ServerEvents.recipes(event => {
         "craftSpeed": 5,
         "drainSpeed": 5,
         "input": {
-            "item": "gtceu:utherium_gem"
+            "item": "cosmiccore:utherium_gem"
         },
         "output": {
             "id": "occultism:chalk_red_impure",
@@ -280,6 +280,7 @@ ServerEvents.recipes(event => {
         .circuit(6)
         .EUt(GTValues.VH[GTValues.LV], 1)
         .duration(50)
+    event.shaped('cosmiccore:rust_stained_casing', [' A ', 'ABA', ' A '], { A: 'gtceu:chrysanthium_foil', B: 'cosmiccore:steel_plated_bronze_casing' })
     event.shaped('cosmiccore:sculk_biochamber', ['AAA', 'BCB', 'DDD'], { A: '#gtceu:circuits/mv', B: 'gtceu:chrysanthium_frame', C: 'minecraft:sculk_catalyst', D: 'cosmiccore:somarust_casing' })
     event.shaped('cosmiccore:abyssal_culture_vat', ['ABA', 'ABA', 'CDC'], { A: 'gtceu:chrysanthium_frame', B: 'gtceu:aluminium_drum', C: '#gtceu:circuits/mv', D: 'cosmiccore:somarust_casing' })
     event.shaped('cosmiccore:somarust_casing', ['ABA', 'ACA', 'ADA'], { A: 'gtceu:chrysanthium_plate', B: '#gtceu:crafting_tools/hammer', C: 'gtceu:chrysanthium_frame', D: '#gtceu:crafting_tools/wrench' })

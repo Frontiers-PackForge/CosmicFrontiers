@@ -7,7 +7,12 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:fluix')
         .gem()
         .dust()
-        .flags(GTMaterialFlags.CRYSTALLIZABLE)
+        .flags(
+            GTMaterialFlags.CRYSTALLIZABLE,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        )
         .color(0x7921c2).iconSet(GTMaterialIconSet.DIAMOND)
     event.create('gtceu:zanite')
         .gem()
@@ -121,22 +126,6 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.NO_ORE_SMELTING,
             GTMaterialFlags.GENERATE_FINE_WIRE
-        )
-    event.create('gtceu:utherium')
-        .color(0xc3434c)
-        .gem()
-        .ore()
-
-        .iconSet('utherium')
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_SPRING,
-            GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.NO_ORE_SMELTING
         )
     event.create('gtceu:luminescent_utherium')
         .color(0x6A40B8)

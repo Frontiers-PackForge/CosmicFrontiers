@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('3x cosmiccore:lv_cladding')
         .EUt(GTValues.VA[GTValues.HV], 1)
         .duration(200)
-    event.recipes.gtceu.assembler()
+    event.recipes.gtceu.assembler('frontiers:ae2/pattern_provider_hv')
         .itemInputs('4x gtceu:luminized_titanium_plate', '#gtceu:circuits/mv', '2x gtceu:hv_robot_arm', 'gtceu:hv_machine_hull')
         .itemOutputs('4x ae2:pattern_provider')
         .EUt(GTValues.VH[GTValues.HV], 1)

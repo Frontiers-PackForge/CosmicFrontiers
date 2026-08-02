@@ -31,6 +31,8 @@
 	]
 	quests: [
 		{
+			dependencies: ["4D779318D62835EC"]
+			hide_until_deps_complete: true
 			icon: {
 				id: "gtceu:mv_machine_hull"
 			}
@@ -814,6 +816,9 @@
 		}
 		{
 			dependencies: ["654F2B3B0CD1F42F"]
+			icon: {
+				id: "ae2:controller"
+			}
 			id: "068F151533C124CD"
 			min_width: 450
 			rewards: [{
@@ -824,11 +829,22 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "385EC048DEF520B3"
-				item: { count: 1, id: "ae2:controller" }
-				type: "item"
-			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "385EC048DEF520B3"
+					item: { count: 1, id: "ae2:controller" }
+					type: "item"
+				}
+				{
+					deed: "frontiers:digital_age"
+					disclosure: "visible"
+					id: "4A647A743FB5E3FE"
+					presentation: "quest"
+					type: "cosmiccore:deed"
+				}
+			]
 			x: 5.0d
 			y: -6.0d
 		}
@@ -941,6 +957,71 @@
 			}]
 			x: -3.5d
 			y: -3.5d
+		}
+		{
+			dependencies: ["068F151533C124CD"]
+			id: "24234FDC4A206DA5"
+			min_width: 400
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "07B410E8F6E106D5"
+					item: { count: 1, id: "cosmiccore:me_computation_array" }
+					type: "item"
+				}
+				{
+					id: "35CB5F181EE9CACB"
+					item: { count: 1, id: "cosmiccore:me_computation_uplink" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["24234FDC4A206DA5"]
+			id: "12BEB88ECEFDBBBA"
+			tasks: [{
+				id: "6F3BD13CD46F3274"
+				item: { count: 1, id: "cosmiccore:me_computation_core" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["12BEB88ECEFDBBBA"]
+			id: "528AF5D74F7E0CAE"
+			tasks: [{
+				id: "70FFCD1B66D4F25A"
+				item: { count: 1, id: "cosmiccore:mv_me_computation_core" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["24234FDC4A206DA5"]
+			id: "28DD3480F177CBC7"
+			tasks: [{
+				id: "517A3474F857AAD5"
+				item: { count: 1, id: "cosmiccore:me_power_relay" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["28DD3480F177CBC7"]
+			id: "2DC8FFA230C54D01"
+			tasks: [{
+				id: "023E9D5733A3CD3D"
+				item: { count: 1, id: "cosmiccore:mv_me_power_relay" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -10.0d
 		}
 	]
 }

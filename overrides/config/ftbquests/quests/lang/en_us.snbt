@@ -9,7 +9,7 @@
 	chapter.4AA04C0FE00BCA64.title: "&fDark Matter &r- [&3UV&7]"
 	chapter.535ED57C622DDD96.title: "&fThe Grid &r- [&6HV&7]"
 	chapter.648321DD3530A17B.title: "&fPaint the Galaxy Red &r- [&cZPM&7]"
-	chapter.68A4490D81087CDD.title: "&fEven Deeper! &r- [&bMV&7]"
+	chapter.68A4490D81087CDD.title: "&fEven Deeper! &r- [&bMV&7&r]"
 	chapter_group.09ADD253FB82D7A0.title: "&fAeon 3 - The Wrath of Time"
 	chapter_group.1654AF685B58AF60.title: "Questbook Info"
 	chapter_group.1E0EC9D191725D6D.title: "&fAeon 4 - A Godsent War"
@@ -81,10 +81,10 @@
 		""
 		"AE2 also has a host of addons to assist in building your base."
 		""
+		"&6"
+		"&6NOTICE : AE2 in Frontiers has multiple custom mechanics that heavily alter AE2 gameplay, &6guides may not help as much with some systems. Please report all bugs directly to the &6Fronteirs repo, rather than AE2, Firstly.&r"
 		""
-		"Cosmic Frontiers also heavily edits behaviors of AE2 to fit the pack and the needs more comfortably. As with all other mods in the pack, please report issues to the Cosmic Frontiers Repository. Reporting issues to other mods repositories, while on the surface seems good, will flood them with issues unreleated to the default builds of most mods."
-		""
-		"With that notice out of the way, AE2 also has an amazing guidebook to explain you the basics of the mod. I would strongly recommend you check it out for my advanced reading, however, I will make efforts to explain the basics for you in the following quests ahead"
+		"&cNo like seriously, AE2 is drastically changed, do not report bugs to mod authors!"
 	]
 	quest.068F151533C124CD.quest_subtitle: "The Titan of the Digital Age"
 	quest.072350DCC099E9C9.quest_desc: [
@@ -142,6 +142,8 @@
 	quest.0C0E3F2E637DA0A9.quest_subtitle: "Dawnstone but Molten"
 	quest.0EC4D52E2252406D.quest_subtitle: "Gregtech Oxygen Tank"
 	quest.0FA8D92F9734C77C.quest_subtitle: "The Sulfur Ore Field"
+	quest.12BEB88ECEFDBBBA.quest_desc: ["Compute Cores convert energy into CWU for your network components to run."]
+	quest.12BEB88ECEFDBBBA.quest_subtitle: "Adding CWU to AE"
 	quest.130F6EE5889B7ADE.quest_desc: [
 		"Cart Assemblers are quite frankly way too strong."
 		""
@@ -258,6 +260,20 @@
 	]
 	quest.20B57C1FF5037C74.quest_subtitle: "Power Warnings."
 	quest.20B57C1FF5037C74.title: "Read this or Explode"
+	quest.24234FDC4A206DA5.quest_desc: [
+		"Computation Arrays allow you to convert &bEU&r (and potentially other resources) into &eComputer Work Units&r. Which we will informally call either &aCWU&r or &aCompute&r."
+		""
+		""
+		"&aCWU&r serves multiple roles, it allows you to connect devices to the network. As well as let those devices run. Passive &aCWU&r demand will always be prioritized before active demand can allocate &aCWU&r"
+		""
+		""
+		"When there is space &aCWU&r and a craft is requested, the craft will attempt to use more than the required &aCWU&r to &bboost production speed&r. This notably means it will attempt to push crafting packages to machines more often. If your machine can keep up, it will keep pushing resources faster and faster."
+		""
+		""
+		"This works great with pattern butters as well(Not actually, it will in the future is the goal, this is mostly to remind myself for that compat later)"
+	]
+	quest.24234FDC4A206DA5.quest_subtitle: "You need to make one of these."
+	quest.24234FDC4A206DA5.title: "Computation for the Network"
 	quest.24A51AFDD86B98CA.quest_subtitle: "You know the drill by now."
 	quest.24B46F4F68610400.quest_desc: [
 		"Will be required to make the first 'Circuit class', Hex Circuits, in HV."
@@ -301,6 +317,8 @@
 	quest.286F950918F4817C.quest_subtitle: "Raw Chromite Source"
 	quest.28CFA2142307F7DC.quest_desc: ["Utherite spawns everywhere in the first abyss layer, harvesting it requires manual mining as"]
 	quest.28CFA2142307F7DC.quest_subtitle: "The First Bounty"
+	quest.28DD3480F177CBC7.quest_desc: ["Power Relays allow you to insert power into your AE2 grid, as controllers and energy acceptors no longer serve this function."]
+	quest.28DD3480F177CBC7.quest_subtitle: "Adding Power to AE"
 	quest.2928EF0DCF970AE4.quest_desc: [
 		"Fans are extremely powerful in base create."
 		""
@@ -550,26 +568,25 @@
 		"use the tinkers hammer on ember emitters/receptors to link them together."
 	]
 	quest.4A90C6B25FC79EAC.quest_subtitle: "Activating Ember"
+	quest.4B6C5108309A0926.quest_subtitle: "NYI"
 	quest.4B8BB9D41D0D0652.quest_desc: [
 		"AE2 devices, when attached to a AE2 network, consume 'channels'. "
 		""
-		"Channels are provided by faces of an ME Controller in bundles of &e32&r. The largest AE2 cable, the &aDense ME Smart Cables&r, can transfer the data of a single face of the controller without issues (as each controller face can accept 32 channels, the dense cable can accept 32... you see how that lines up cleanly!)."
+		"Channels are a &6soft-limiter&r to how many devices can be on a cable at once."
 		""
-		"&aME Smart Cables&r, and devices that &ntransfer channels&r (eg. interfaces/providers) will transfer up to &e8&r channels before overloading."
-		""
-		"Overloading a cable (be it dense or normal) will result in components on that cable &cfailing&r to connect to your AE2 network, this means they &ccan not function and are not discoverable&r from any UIs that may expose them. This only applies to components over the limit, and that are the farthest away from the source of channels (the controller)."
-		""
-		"The easiest fix to this is to &osplit up your cables&r to carry exclusively at most, &e32&r or &e8&r channels respectively. "
+		"For smart cables this is &a16&r, and dense cables this is &a64&r. You may connect as many devices to a cable as you wish, the only cost is extra CWU demand."
 		""
 		""
-		"There are more advanced manners of moving channels around, but for now this will get you quite far, just be prepared to either to do some self-learning ahead of time to figure out how to use &bME P2P tunnels&r, or accept you will need to rewire your base in the future as your controller starts to slowly convert into a rats nest of wires."
+		"Going over the soft cap will incur a &ncompounding CWU cost&r for every new component."
+		"As a result, it's recommended you &npractice good cable managment&r to keep your channels split and capacity under overload thresholds."
+		""
+		"Granted, this is a suggestion if you are willing to scale CWU hard enough... (Like, really hard)"
 		""
 		""
-		"If you wish to play without channels, you have the option to disable them. "
-		"This is not me saying you should, as the pack is designed around them. However, if you wish to disable them regardless, this will prevent you from getting the shinest of victory roles in discord when you beat the pack. If you don't care about this, then do whatever you wish."
+		"&7Due to the nature and complexity of the entire CWU system being a cornerstone mechanic of the pack, you can no longer control/disable the size/state of channels.&r"
 	]
 	quest.4B8BB9D41D0D0652.quest_subtitle: "Importance of channels"
-	quest.4B8BB9D41D0D0652.title: "Channels and You."
+	quest.4B8BB9D41D0D0652.title: "New Channel System: Cable Overloads"
 	quest.4BA1283454E50D62.quest_desc: [
 		"ME Drives are used to house all your ME Drives, the things that hold your items and fluids digitally."
 		""
@@ -604,6 +621,7 @@
 		"This might not work/apply in all cases, please let me know if you find strange places you can/can't breathe when you should/shouldn't be able to!"
 	]
 	quest.4CBACE925D480CAA.quest_subtitle: "Breathing in places you can't"
+	quest.4D779318D62835EC.quest_desc: ["TODO : Deed Cutscene"]
 	quest.4D779318D62835EC.quest_subtitle: "Victory of LV"
 	quest.4E3A7CB013A59A37.quest_desc: ["You can now use concrete to produce coke bricks more efficiently!"]
 	quest.4E3A7CB013A59A37.quest_subtitle: "Better Coke Brick Recipe"
@@ -627,6 +645,14 @@
 		"This is a pretty temporary recipe until i can be asked to make Steam Ember Hatches."
 	]
 	quest.534DBCED4E339D89.quest_subtitle: "Getting Embers into a Gregtech Machine"
+	quest.53930C8D5E0254CF.quest_desc: [
+		"You will need, a LOT of this stuff."
+		""
+		"Like, a few hours worth of smelting a lot of this stuff."
+		""
+		"It may be within your best interests to make a 2nd or 3rd EBF if you haven't."
+	]
+	quest.53930C8D5E0254CF.quest_subtitle: "Oh boy"
 	quest.5409781BE86F8DA3.quest_desc: [
 		"You already spent the energy making ethylene in LV or at least sometime in MV."
 		""
@@ -830,12 +856,7 @@
 		"Spellbooks now function normally. Rather than failing to cast spells."
 	]
 	quest.73BC5E9DE8B0CE61.quest_subtitle: "Spellbook Release"
-	quest.7875FAA7C1745D0F.quest_desc: [
-		"Come back here once you have access to Kanthal Coils and Stainless Steel."
-		""
-		""
-		"Notably, you'll need access to an Arcane Crucible capable of [redacted](NYI)"
-	]
+	quest.7875FAA7C1745D0F.quest_desc: ["Note, this quest and related items are probably going to get removed, i just used them to plot a rough idea of what I want"]
 	quest.7875FAA7C1745D0F.quest_subtitle: "Future Processing"
 	quest.7A016FB22E827915.quest_desc: [
 		"Diving below the heavy fog, the clicking seems to be more of a faint but persisting chittering."
