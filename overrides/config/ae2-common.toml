@@ -4,9 +4,9 @@
 	matterCannonBlockDamage = true
 	#Enables the ability of Tiny TNT to break blocks.
 	tinyTntBlockDamage = true
-	#Changes the channel capacity that cables provide in AE2.
+	#Channels are drastically changed for Cosmic Frontiers : This setting does nothing as device capacity is based on CWU
 	#Allowed Values: INFINITE, DEFAULT, X2, X3, X4
-	channels = "DEFAULT"
+	channels = "X2"
 	#Whether Spatial Anchors should force random chunk ticks and entity spawning.
 	spatialAnchorEnableRandomTicks = true
 
