@@ -15,20 +15,12 @@
 		y: -6.5d
 	}]
 	order_index: 0
-	quest_links: [
-		{
-			id: "3457FA3AAE8E4ED0"
-			linked_quest: "6D9249DE13CBEB39"
-			x: -5.0d
-			y: 1.0d
-		}
-		{
-			id: "1CEC27502DB0445D"
-			linked_quest: "4994B932F264D4E2"
-			x: 13.0d
-			y: -4.5d
-		}
-	]
+	quest_links: [{
+		id: "1CEC27502DB0445D"
+		linked_quest: "4994B932F264D4E2"
+		x: 13.0d
+		y: -4.5d
+	}]
 	quests: [
 		{
 			dependencies: ["4D779318D62835EC"]
@@ -47,17 +39,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"3BC775BBDE9286BF"
-				"6D9249DE13CBEB39"
-			]
 			id: "3162B5D4D16183B7"
 			tasks: [{
 				id: "34A334FF9E3FCB2C"
 				item: { count: 1, id: "gtceu:galvanized_ethersteel_ingot" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 13.0d
 			y: 5.0d
 		}
 		{
@@ -86,17 +74,6 @@
 			}]
 			x: 7.5d
 			y: 2.5d
-		}
-		{
-			dependencies: ["7A7BBC9EBEAEFBD2"]
-			id: "717E27F2BC2B2FF3"
-			tasks: [{
-				id: "066E8B3142036275"
-				item: { count: 1, id: "cosmiccore:mv_ember_input_hatch" }
-				type: "item"
-			}]
-			x: -6.5d
-			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -335,46 +312,6 @@
 			}]
 			x: -3.5d
 			y: 5.0d
-		}
-		{
-			cosmiccore_dependency_lines: [{
-				dependency: 7895454314897599289L
-				target_link: 3771758342889688784L
-				visible: 1b
-			}]
-			dependencies: [
-				"008703F2EB317107"
-				"6D9249DE13CBEB39"
-			]
-			id: "7875FAA7C1745D0F"
-			tasks: [{
-				id: "41F20235ABD03B2E"
-				item: { count: 1, id: "cosmiccore:livingrock_aluminate_boule" }
-				type: "item"
-			}]
-			x: -6.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["7875FAA7C1745D0F"]
-			icon: {
-				id: "cosmiccore:latent_efficacy_wafer"
-			}
-			id: "7A7BBC9EBEAEFBD2"
-			tasks: [
-				{
-					id: "620CF2A5E471DF0B"
-					item: { count: 1, id: "cosmiccore:latent_efficacy_wafer" }
-					type: "item"
-				}
-				{
-					id: "22611BE7726D4832"
-					item: { count: 1, id: "cosmiccore:efficacy_chip" }
-					type: "item"
-				}
-			]
-			x: -6.5d
-			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -705,6 +642,7 @@
 			dependencies: [
 				"4B6C5108309A0926"
 				"142A4F7E8D1A72B3"
+				"49333623243658CB"
 			]
 			id: "13D3FAFCB1D5861D"
 			tasks: [{
@@ -716,18 +654,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["7BD151701A8DF088"]
-			hide_dependency_lines: true
-			id: "3BC775BBDE9286BF"
-			tasks: [{
-				id: "7698394A7D33A686"
-				item: { count: 1, id: "gtceu:electrotine_dust" }
-				type: "item"
-			}]
-			x: 5.0d
-			y: 5.0d
-		}
-		{
 			dependencies: ["24A51AFDD86B98CA"]
 			id: "6E0CAEC939C3995F"
 			tasks: [{
@@ -735,7 +661,7 @@
 				item: { count: 1, id: "gtceu:hv_machine_hull" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 13.0d
 			y: 10.5d
 		}
 		{
@@ -750,7 +676,7 @@
 				item: { count: 1, id: "gtceu:hv_machine_casing" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 13.0d
 			y: 8.5d
 		}
 		{
@@ -761,7 +687,7 @@
 				item: { count: 1, id: "cosmiccore:hv_cogwork_magicapacitor" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 14.0d
 			y: 7.0d
 		}
 		{
@@ -772,7 +698,7 @@
 				item: { count: 1, id: "cosmiccore:hv_modular_frameworks" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 13.0d
 			y: 7.0d
 		}
 		{
@@ -786,7 +712,7 @@
 				item: { count: 1, id: "cosmiccore:hv_cladding" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 12.0d
 			y: 7.0d
 		}
 		{
@@ -811,7 +737,7 @@
 				item: { count: 1, id: "gtceu:polyvinyl_chloride_ingot" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 10.0d
 			y: 7.0d
 		}
 		{
@@ -1022,6 +948,40 @@
 			}]
 			x: 1.0d
 			y: -10.0d
+		}
+		{
+			dependencies: ["7BD151701A8DF088"]
+			hide_dependency_lines: true
+			id: "49333623243658CB"
+			tasks: [{
+				id: "2D22534DDA05F9B2"
+				item: { count: 1, id: "cosmiccore:arcanite_dust" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B7430A91F55FD83"]
+			id: "6B0B3DD3B757259D"
+			tasks: [{
+				id: "6B21A8E60ABE4C39"
+				item: { count: 1, id: "cosmiccore:plated_aerocloud" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["654F2B3B0CD1F42F"]
+			id: "7B7430A91F55FD83"
+			tasks: [{
+				id: "5789A596AF1E80DB"
+				item: { count: 1, id: "cosmiccore:aether_permit" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.0d
 		}
 	]
 }

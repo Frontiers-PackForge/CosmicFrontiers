@@ -112,36 +112,6 @@ ItemEvents.modification(event => {
 
     resist('minecraft:turtle_helmet', COLD, 2)
 
-    resist('aether:zanite_helmet', COLD, 3)
-    resist('aether:zanite_chestplate', COLD, 3)
-    resist('aether:zanite_leggings', COLD, 3)
-    resist('aether:zanite_boots', COLD, 3)
-
-    resist('aether:gravitite_helmet', COLD, 4)
-    resist('aether:gravitite_chestplate', COLD, 4)
-    resist('aether:gravitite_leggings', COLD, 4)
-    resist('aether:gravitite_boots', COLD, 4)
-
-    resist('aether:neptune_helmet', COLD, 4)
-    resist('aether:neptune_chestplate', COLD, 4)
-    resist('aether:neptune_leggings', COLD, 4)
-    resist('aether:neptune_boots', COLD, 4)
-
-    resist('aether:valkyrie_helmet', THERMAL, 4)
-    resist('aether:valkyrie_chestplate', THERMAL, 4)
-    resist('aether:valkyrie_leggings', THERMAL, 4)
-    resist('aether:valkyrie_boots', THERMAL, 4)
-
-    resist('aether:phoenix_helmet', COLD, 5)
-    resist('aether:phoenix_chestplate', COLD, 5)
-    resist('aether:phoenix_leggings', COLD, 5)
-    resist('aether:phoenix_boots', COLD, 5)
-
-    resist('aether:obsidian_helmet', HEAT, 5)
-    resist('aether:obsidian_chestplate', HEAT, 5)
-    resist('aether:obsidian_leggings', HEAT, 5)
-    resist('aether:obsidian_boots', HEAT, 5)
-
     resist('undergarden:cloggrum_helmet', HEAT, 3)
     resist('undergarden:cloggrum_chestplate', HEAT, 3)
     resist('undergarden:cloggrum_leggings', HEAT, 3)

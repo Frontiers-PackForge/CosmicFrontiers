@@ -36,5 +36,30 @@ ServerEvents.recipes(event => {
             Z: `gtceu:${machine.cable}_single_cable`,
             P: `gtceu:${machine.tier}_electric_pump`
         }).id(`frontiers:machines/${machine.tier}_chemical_dehydrator`)
+
+        event.shaped(`cosmiccore:${machine.tier}_vacuum_bubbler`, [
+            'ABA',
+            'CDC',
+            'EFE'
+        ], {
+            A: `gtceu:${machine.tier}_electric_pump`,
+            B: `gtceu:${machine.tier}_voltage_coil`,
+            C: 'gtceu:double_steel_plate',
+            D: `gtceu:${machine.tier}_machine_hull`,
+            E: `#gtceu:circuits/${machine.tier}`,
+            F: 'minecraft:glass'
+        }).id(`frontiers:machines/${machine.tier}_vacuum_bubbler`)
+
+        event.shaped(`cosmiccore:${machine.tier}_mana_leaching_tub`, [
+            'ABA',
+            'CDC',
+            'EAE'
+        ], {
+            A: `#gtceu:circuits/${machine.tier}`,
+            B: 'minecraft:cauldron',
+            C: 'cosmiccore:sturdy_plates',
+            D: `gtceu:${machine.tier}_machine_hull`,
+            E: `gtceu:${machine.cable}_single_cable`
+        }).id(`frontiers:machines/${machine.tier}_mana_leaching_tub`)
     })
 })

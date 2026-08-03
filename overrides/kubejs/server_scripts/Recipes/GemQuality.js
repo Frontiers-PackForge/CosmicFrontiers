@@ -1,8 +1,6 @@
 ServerEvents.recipes(event => {
     const materials = [
         { name: 'fluix', input: 'gtceu:fluix_gem' },
-        { name: 'zanite', input: 'aether:zanite_gemstone' },
-        { name: 'ambrosium', input: 'aether:ambrosium_shard' },
         { name: 'cosmolite', input: 'gtceu:cosmolite_gem' },
         { name: 'neutronium_crystals', input: 'gtceu:neutronium_crystals_gem' }
     ]

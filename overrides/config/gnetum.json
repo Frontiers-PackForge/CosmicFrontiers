@@ -12,12 +12,6 @@
   "maxFps": 120,
   "screenMaxFps": 60,
   "mapVanillaElements": {
-    "aether:aether_portal_overlay": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 3
-    },
     "minecraft:spectator_tooltip": {
       "enabled": {
         "value": "AUTO"
@@ -72,12 +66,6 @@
       },
       "pass": 3
     },
-    "aether:remedy_vignette": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 3
-    },
     "eternal_starlight:orb_of_prophecy_use": {
       "enabled": {
         "value": "AUTO"
@@ -91,12 +79,6 @@
       "pass": 2
     },
     "stevescarts:cart_overlay": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 3
-    },
-    "aether:moa_jumps": {
       "enabled": {
         "value": "AUTO"
       },
@@ -162,12 +144,6 @@
       },
       "pass": 1
     },
-    "aether:inebriation_vignette": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 3
-    },
     "malum:staff_charges": {
       "enabled": {
         "value": "AUTO"
@@ -215,12 +191,6 @@
         "value": "AUTO"
       },
       "pass": 1
-    },
-    "aether:hammer_cooldown": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 3
     },
     "seasonhud:seasonhud": {
       "enabled": {
@@ -391,12 +361,6 @@
       "pass": 3
     },
     "occultism:third_eye": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 3
-    },
-    "aether:shield_of_repulsion_vignette": {
       "enabled": {
         "value": "AUTO"
       },

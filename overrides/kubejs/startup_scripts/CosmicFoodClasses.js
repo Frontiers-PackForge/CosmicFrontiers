@@ -72,7 +72,6 @@ let produce = [
     'minecraft:beetroot',
     'undergarden:blisterberry',
     'undergarden:blood_globule',
-    'aether:blue_berry',
     'farmersdelight:cabbage',
     'farmersdelight:cabbage_leaf',
     'minecraft:carrot',
@@ -90,7 +89,6 @@ let produce = [
     'regions_unexplored:hanging_earlight_fruit',
     'regions_unexplored:meadow_sage',
     'regions_unexplored:salmonberry',
-    'aether:white_apple'
 ]
 produce.forEach(id => CosmicFood.assign(id, 'produce'))
 
@@ -283,12 +281,10 @@ CosmicFood.archetype('treat', a => {
 })
 
 let treat = [
-    'aether:gingerbread_man',
     'farmersdelight:cod_roll',
     'create:bar_of_chocolate',
     'mynethersdelight:boiled_egg',
     'farmersdelight:cake_slice',
-    'aether:candy_cane',
     'create:chocolate_glazed_berries',
     'farmersdelight:chocolate_pie_slice',
     'farmersdelight:apple_pie_slice',
@@ -299,7 +295,6 @@ let treat = [
     'mynethersdelight:slices_of_bread',
     'farmersdelight:pumpkin_pie_slice',
     'ars_nouveau:source_berry_roll',
-    'aether:enchanted_berry',
     'minecraft:cookie',
     'minecraft:dried_kelp',
     'upgrade_aquatic:boiled_pickerelweed',
@@ -456,7 +451,6 @@ let staple = [
 staple.forEach(id => CosmicFood.assign(id, 'staple'))
 
 CosmicFood.assign('minecraft:milk_bucket', 'chilled')
-CosmicFood.assign('aether:skyroot_milk_bucket', 'chilled')
 
 CosmicFood.archetype('gilded', a => {
     a.nutrition(4, 20)
@@ -472,8 +466,6 @@ let gilded = [
     'minecraft:enchanted_golden_apple',
     'mynethersdelight:golden_egg',
     'mynethersdelight:enchanted_golden_egg',
-    'aether:blue_gummy_swet',
-    'aether:golden_gummy_swet'
 ]
 gilded.forEach(id => CosmicFood.assign(id, 'gilded'))
 
@@ -517,9 +509,6 @@ StartupEvents.postInit(event => {
         'legendarysurvivaloverhaul:large_canteen',
         'legendarysurvivaloverhaul:canteen',
         'occultism:beaver_nugget',
-        'aether:skyroot_poison_bucket',
-        'aether:skyroot_remedy_bucket',
-        'aether:healing_stone',
         'malum:concentrated_gluttony',
         'neovitae:bottled_spite'
     ]

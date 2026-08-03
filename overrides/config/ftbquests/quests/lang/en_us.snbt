@@ -856,8 +856,6 @@
 		"Spellbooks now function normally. Rather than failing to cast spells."
 	]
 	quest.73BC5E9DE8B0CE61.quest_subtitle: "Spellbook Release"
-	quest.7875FAA7C1745D0F.quest_desc: ["Note, this quest and related items are probably going to get removed, i just used them to plot a rough idea of what I want"]
-	quest.7875FAA7C1745D0F.quest_subtitle: "Future Processing"
 	quest.7A016FB22E827915.quest_desc: [
 		"Diving below the heavy fog, the clicking seems to be more of a faint but persisting chittering."
 		""
@@ -877,19 +875,14 @@
 	]
 	quest.7A016FB22E827915.quest_subtitle: "Silence is the standard."
 	quest.7A016FB22E827915.title: "An Unseen Threat: The Murkbloom"
-	quest.7A7BBC9EBEAEFBD2.quest_desc: [
-		"You will need at least an MV cutter to continue this questline."
-		""
-		""
-		"Check out producing Chromium and the relevant MV cutter elsewhere in this chapter."
-		"Once you have an MV Cutter, return to here!"
-	]
 	quest.7ABC4319FC83A545.quest_desc: [
 		"The plantlife in the abyss has naturally adapted to not attracting huge murkbloom masses."
 		""
 		"Using these plants you can make a coating for your tools and armor. This coating will help reduce the disturbance caused to murkbloom. The higher the level the deeper the effect and potency is."
 	]
 	quest.7ABC4319FC83A545.quest_subtitle: "Hiding from Murkbloom "
+	quest.7B7430A91F55FD83.quest_desc: ["Future Content, The Aether is presently being overhauled (in dev)"]
+	quest.7B7430A91F55FD83.quest_subtitle: "A Sea In the Sky"
 	quest.7BAA63BF7EE181C3.quest_desc: [
 		"Cuprosiva ore is one of the many Composite Ores that exist across the overworld."
 		""

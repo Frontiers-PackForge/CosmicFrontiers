@@ -1,6 +1,4 @@
 StartupEvents.registry('gtceu:tag_prefix', e => {
-    const JBoolean = Java.loadClass("java.lang.Boolean")
-
     function asId(s) {
         s = String(s)
         let i = s.indexOf(':')
@@ -41,29 +39,8 @@ StartupEvents.registry('gtceu:tag_prefix', e => {
     createStoneTypeOre('minecraft:soul_soil')
 
 
-    createStoneTypeOre('aether:holystone', {
-        blockState: () => {
-            const state = Block.getBlock('aether:holystone').defaultBlockState()
-            const props = state.getProperties()
-            for (let p of props) {
-                if (String(p.getName()) == "double_drops") return state.setValue(p, JBoolean.TRUE)
-            }
-            return state
-        }
-    })
-
-    createStoneTypeOre('aether:mossy_holystone', {
-        blockState: () => {
-            const state = Block.getBlock('aether:mossy_holystone').defaultBlockState()
-            const props = state.getProperties()
-            for (let p of props) {
-                if (String(p.getName()) == "double_drops") return state.setValue(p, JBoolean.TRUE)
-            }
-            return state
-        }
-    })
-
-    createStoneTypeOre('aether:icestone')
+    createStoneTypeOre('cosmiccore:firmament_saprolite')
+    createStoneTypeOre('cosmiccore:astral_regolith')
 
     // Create stones
     createStoneTypeOre('create:asurine', { baseModel: 'create:block/asurine_natural_0' })

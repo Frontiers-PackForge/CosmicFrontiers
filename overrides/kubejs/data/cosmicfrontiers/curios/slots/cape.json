@@ -1,6 +1,0 @@
-{
-  "order": 190,
-  "icon": "aether:slot/cape",
-  "validators": ["curios:tag"],
-  "size": 1
-}
