@@ -9,23 +9,41 @@ StartupEvents.registry('gtceu:material', event => {
         .dust()
         .ore()
         .color(0x09474a).iconSet(GTMaterialIconSet.DULL)
-        .element(GTElements.get('alumina'))
+        .components('2x gtceu:aluminium', '3x gtceu:oxygen')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
     event.create('gtceu:chromium_iii_oxide')
         .dust()
         .color(0x3dc34d).iconSet(GTMaterialIconSet.DULL)
-        .element(GTElements.get('chromium_iii_oxide'))
+        .components('2x gtceu:chromium', '3x gtceu:oxygen')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
     event.create('gtceu:sodium_carbonate_solution')
         .liquid(new GTFluidBuilder().customStill())
-        .formula('Na2CO3')
+        .formula('Na2CO3(H2O)')
         .color(0x636389)
+        .components('1x gtceu:soda_ash', '1x gtceu:water')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
     event.create('gtceu:sodium_chromate_solution')
         .liquid(new GTFluidBuilder().customStill())
-        .formula('Na2CrO4')
+        .formula('Na2CrO4(H2O)')
         .color(0xbbb310)
+        .components(
+            '2x gtceu:sodium',
+            '1x gtceu:chromium',
+            '5x gtceu:oxygen',
+            '2x gtceu:hydrogen'
+        )
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
     event.create('gtceu:sodium_dichromate_solution')
         .liquid(new GTFluidBuilder().customStill())
-        .formula('Na2Cr2O7')
+        .formula('Na2Cr2O7(H2O)3')
         .color(0xb55a10)
+        .components(
+            '2x gtceu:sodium',
+            '2x gtceu:chromium',
+            '10x gtceu:oxygen',
+            '6x gtceu:hydrogen'
+        )
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
     event.create('gtceu:sodium_sulfate')
         .dust()
         .color(0xc6c6c6)

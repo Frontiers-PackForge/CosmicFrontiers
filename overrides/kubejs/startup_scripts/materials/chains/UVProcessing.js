@@ -22,7 +22,7 @@ StartupEvents.registry('gtceu:material', event => {
 
 
     event.create('gtceu:hadalite_sludge')
-        .formula('Tl2S3(MgFeSi2O4)4(H20)')
+        .formula('Tl2S3(MgFeSi2O4)4(H2O)')
         .liquid(new GTFluidBuilder().customStill())
 
     event.create('gtceu:sparkling_hadalite')
