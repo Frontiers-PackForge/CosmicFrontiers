@@ -546,8 +546,8 @@
 				item: { count: 1, id: "gtceu:lv_gas_collector" }
 				type: "item"
 			}]
-			x: 6.285714285714285d
-			y: 2.1964285714285694d
+			x: 5.5d
+			y: 2.0d
 		}
 		{
 			cosmiccore_dependency_lines: [

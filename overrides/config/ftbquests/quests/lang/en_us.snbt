@@ -9,7 +9,7 @@
 	chapter.4AA04C0FE00BCA64.title: "&fDark Matter &r- [&3UV&7]"
 	chapter.535ED57C622DDD96.title: "&fThe Grid &r- [&6HV&7]"
 	chapter.648321DD3530A17B.title: "&fPaint the Galaxy Red &r- [&cZPM&7]"
-	chapter.68A4490D81087CDD.title: "&fEven Deeper! &r- [&bMV&7&r]"
+	chapter.68A4490D81087CDD.title: "&fEven Deeper! And Higher! &r- [&bMV&7&r]"
 	chapter_group.09ADD253FB82D7A0.title: "&fAeon 3 - The Wrath of Time"
 	chapter_group.1654AF685B58AF60.title: "Questbook Info"
 	chapter_group.1E0EC9D191725D6D.title: "&fAeon 4 - A Godsent War"
@@ -881,8 +881,6 @@
 		"Using these plants you can make a coating for your tools and armor. This coating will help reduce the disturbance caused to murkbloom. The higher the level the deeper the effect and potency is."
 	]
 	quest.7ABC4319FC83A545.quest_subtitle: "Hiding from Murkbloom "
-	quest.7B7430A91F55FD83.quest_desc: ["Future Content, The Aether is presently being overhauled (in dev)"]
-	quest.7B7430A91F55FD83.quest_subtitle: "A Sea In the Sky"
 	quest.7BAA63BF7EE181C3.quest_desc: [
 		"Cuprosiva ore is one of the many Composite Ores that exist across the overworld."
 		""

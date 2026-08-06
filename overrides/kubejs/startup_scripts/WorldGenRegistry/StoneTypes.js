@@ -39,7 +39,6 @@ StartupEvents.registry('gtceu:tag_prefix', e => {
     createStoneTypeOre('minecraft:soul_soil')
 
 
-    createStoneTypeOre('cosmiccore:firmament_saprolite')
     createStoneTypeOre('cosmiccore:astral_regolith')
 
     // Create stones

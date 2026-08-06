@@ -141,6 +141,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'occultism:ritual/summon_unbound_afrit' })
     event.remove({ id: 'simulated:physics_assembler' })
     event.remove({ id: 'create:crafting/kinetics/cart_assembler' })
+    event.remove({ id: 'gtceu:circuit_assembler/data_stick_soldering_alloy' })
+    event.remove({ id: 'gtceu:circuit_assembler/data_stick' })
     event.remove({ id: 'malum:spirit_altar' })
     event.remove({ id: 'gtceu:mixer/concrete_from_calcite' })
     event.remove({ id: 'gtceu:mixer/concrete_from_marble' })
