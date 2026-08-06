@@ -18,6 +18,7 @@ ServerEvents.recipes(event => {
         .duration(60)
         .EUt(GTValues.VA[GTValues.LV])
 
+    // 2FeCr2O4 + 4Na2CO3(H2O) + 7O -> Fe2O3 + 4Na2CrO4(H2O) + 4CO2 (oxidative chromate fusion)
     event.recipes.gtceu.chemical_reactor('frontiers:chains/chromite/sodium_chromate_solution')
         .itemInputs('14x gtceu:chromite_dust')
         .inputFluids(['7000x gtceu:oxygen', '4000x gtceu:sodium_carbonate_solution'])
@@ -33,6 +34,7 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
 
+    // Na2Cr2O7(H2O)3 + 2C -> Na2CO3 + Cr2O3 + CO + 3H2O(g) (dehydrating reduction)
     event.recipes.cosmiccore.chemical_dehydrator('frontiers:chains/chromite/chromium_iii_oxide')
         .itemInputs('2x gtceu:carbon_dust')
         .inputFluids('1000x gtceu:sodium_dichromate_solution')
