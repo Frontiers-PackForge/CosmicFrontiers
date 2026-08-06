@@ -24,17 +24,6 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VH[GTValues.LV])
     })
 
-    // Hex Circuit Stuff
-
-    event.recipes.gtceu.chemical_reactor('frontiers:circuits/hex/zano_aluminate')
-        .itemInputs('4x gtceu:zanite_dust', '4x gtceu:ambrosium_dust')
-        .inputFluids('576x gtceu:aluminium')
-        .itemOutputs('12x gtceu:zano_aluminate_dust')
-        .duration(390)
-        .EUt(GTValues.VA[GTValues.MV])
-
-    
-
     event.recipes.cosmiccore.mana_etching('frontiers:circuits/hex/runic_hex_cpu_wafer')
         .notConsumableItem('malum:prismatic_focus_lens')
         .itemInputs('cosmiccore:livirock_aluminite_wafer', 'cosmiccore:energetic_aluminium_foil')
