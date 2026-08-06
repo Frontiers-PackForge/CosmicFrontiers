@@ -1,0 +1,20 @@
+StartupEvents.registry('gtceu:material', event => {
+    event.create('gtceu:zanite')
+        .gem()
+        .ore()
+        .element(GTElements.get('zanite'))
+        .flags(GTMaterialFlags.GENERATE_LENS, GTMaterialFlags.GENERATE_PLATE)
+        .color(0xa521fc).iconSet(GTMaterialIconSet.DIAMOND)
+
+    event.create('gtceu:ambrosium')
+        .gem()
+        .ore()
+        .element(GTElements.get('ambrosium'))
+        .color(0xfbff00).iconSet(GTMaterialIconSet.CERTUS)
+
+    event.create('gtceu:zano_aluminate')
+        .dust()
+        .color(0x8e46fa).iconSet(GTMaterialIconSet.SHINY)
+        .components('gtceu:zanite', 'gtceu:ambrosium', 'gtceu:aluminium')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+})
