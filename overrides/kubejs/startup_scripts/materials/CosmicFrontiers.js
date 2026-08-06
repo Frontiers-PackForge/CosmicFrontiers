@@ -14,17 +14,6 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION
         )
         .color(0x7921c2).iconSet(GTMaterialIconSet.DIAMOND)
-    event.create('gtceu:zanite')
-        .gem()
-        .ore()
-        .element(GTElements.get('zanite'))
-        .flags(GTMaterialFlags.GENERATE_LENS, GTMaterialFlags.GENERATE_PLATE)
-        .color(0xa521fc).iconSet(GTMaterialIconSet.DIAMOND)
-    event.create('gtceu:ambrosium')
-        .gem()
-        .ore()
-        .element(GTElements.get('ambrosium'))
-        .color(0xfbff00).iconSet(GTMaterialIconSet.CERTUS)
     event.create('gtceu:nether_sediment_sludge')
         .liquid()
         .color(0x511515)
@@ -74,10 +63,6 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:unstable_terrasteel')
         .liquid()
         .color(0x00731f).iconSet(GTMaterialIconSet.SHINY)
-    event.create('gtceu:zano_aluminate')
-        .dust()
-        .color(0x8e46fa).iconSet(GTMaterialIconSet.SHINY)
-        .element(GTElements.get('zano_alumate'))
     event.create('gtceu:luminite')
         .color(0x85ffad).secondaryColor(0x6ac49d)
         .liquid(new GTFluidBuilder().customStill())
@@ -325,20 +310,24 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:cinderwax')
         .liquid()
         .ingot()
+        .formula('C18H27NO3')
         .color(0xa84c32).secondaryColor(0xbd6500).iconSet(GTMaterialIconSet.SHINY)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.DISABLE_DECOMPOSITION
         )
     event.create('gtceu:soulresin')
         .liquid()
         .ingot()
+        .formula('C20H30O2')
         .color(0x00add4).secondaryColor(0x39b1cc).iconSet(GTMaterialIconSet.ROUGH)
         .flags(
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.NO_SMELTING
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.DISABLE_DECOMPOSITION
         )
     event.create('gtceu:undergarden_smog')
         .gas()
