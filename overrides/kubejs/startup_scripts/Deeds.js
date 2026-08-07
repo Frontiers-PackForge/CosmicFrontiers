@@ -27,6 +27,22 @@
  * Yeah if you need more help with this just ask ghost i'm too fucking lazy to explain more
  */
 
+Deeds.register("frontiers:sky_runner")
+    .name("The Ocean of Ammonia")
+    .subtitle("What the Sky hid")
+    .sealedHint("The only way is up?")
+    .prelude("A wonderful orange glow casts across the entire Firmament")
+    .prelude("Something so peaceful yet so hostile as it sears flesh.")
+    .coil("the winds near the stars rage and howl like a tempest untold to the land below")
+    .ring("With the right love, one could imagine this place thriving with life")
+    .ring("What a paradox, a place so fit yet so hostile by the glow of the sun")
+    .knot("The sky above looks so peaceful, the stars shine so bright")
+    .knot("One must wonder what lies beyond")
+    .knot("I look above as I cast my line into the stars. Curiousity is a powerful thing...")
+    .post("A song echos louder, calling you higher.")
+    .unlock("Your soul and being have grown.")
+    .build()
+
 Deeds.register("frontiers:depth_call")
     .name("The Call of Murkbloom")
     .subtitle("What the water kept")
@@ -42,8 +58,6 @@ Deeds.register("frontiers:depth_call")
     .post("A song echos faintly, a sound familiar and distant all the same.")
     .unlock("Your soul and being have grown.")
     .build()
-
-
 
 Deeds.register("frontiers:depth_call_2")
     .name("The Bloom of Magic and Omission")
