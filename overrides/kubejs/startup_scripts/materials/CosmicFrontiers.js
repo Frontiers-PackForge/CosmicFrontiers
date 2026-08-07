@@ -803,6 +803,8 @@ GTCEuStartupEvents.materialModification(event => {
     const magneticRunedSteel = GTMaterials.get('gtceu:magnetic_runed_steel')
     const magneticRunedSteelIngot = magneticRunedSteel.getProperty(PropertyKey.INGOT)
 
+    GTMaterials.get('gtceu:sterling_silver').addFlags(GTMaterialFlags.GENERATE_FOIL)
+
     runedSteel.getProperty(PropertyKey.INGOT).setMagneticMaterial(magneticRunedSteel)
     magneticRunedSteelIngot.setSmeltingInto(runedSteel)
     magneticRunedSteelIngot.setArcSmeltingInto(runedSteel)

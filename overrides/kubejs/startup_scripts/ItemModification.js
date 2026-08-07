@@ -17,6 +17,11 @@ ItemEvents.modification(event => {
     function mod(item, attr, amount) {
         let holder = $Registries.ATTRIBUTE.getHolder($RL.parse(attr)).orElse(null)
         if (holder === null) return
+        for (const entry of item.item().getDefaultAttributeModifiers().modifiers()) {
+            if (!item.hasAttributeModifier(entry.attribute(), entry.modifier().id())) {
+                item.addAttributeModifier(entry.attribute(), entry.modifier(), entry.slot())
+            }
+        }
         let path = attr.substring(attr.indexOf(':') + 1)
         item.addAttributeModifier(holder, new $AttributeModifier($RL.fromNamespaceAndPath('cosmiccore', path), amount, $Operation.ADD_VALUE), $SlotGroup.ARMOR)
     }

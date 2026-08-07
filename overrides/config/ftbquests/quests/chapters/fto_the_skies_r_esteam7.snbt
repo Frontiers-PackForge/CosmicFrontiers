@@ -57,6 +57,18 @@
 			x: 11.5d
 			y: -1.5d
 		}
+		{
+			id: "16CF6C4A35BDBC64"
+			linked_quest: "597E2D324D5A073A"
+			x: 3.5d
+			y: 8.5d
+		}
+		{
+			id: "758E547B74B70E82"
+			linked_quest: "34AA6DE07FA9C2C4"
+			x: 5.0d
+			y: 9.5d
+		}
 	]
 	quests: [
 		{
@@ -284,7 +296,7 @@
 			id: "35E5B25522F55FFF"
 			tasks: [{
 				id: "4DC1A2DC38016C4B"
-				item: { count: 1, id: "gtceu:vanadium_steel_buzz_saw_blade" }
+				item: { count: 1, id: "gtceu:vanadium_steel_buzzsaw_blade" }
 				type: "item"
 			}]
 			x: -1.75d
@@ -739,6 +751,7 @@
 				"67A67B4785475DF6"
 				"57B3AB5BB5C7E9F4"
 				"3AEB7708B4F7C46B"
+				"52B441F9C3EE2D6E"
 			]
 			id: "24A51AFDD86B98CA"
 			tasks: [{
@@ -1476,6 +1489,43 @@
 			}]
 			x: 5.0d
 			y: 5.0d
+		}
+		{
+			cosmiccore_dependency_lines: [
+				{
+					dependency: 3794966446994997956L
+					target_link: 8470800838346346114L
+					visible: 1b
+				}
+				{
+					dependency: 6448641410510489402L
+					target_link: 1643651454998527076L
+					visible: 1b
+				}
+			]
+			dependencies: [
+				"597E2D324D5A073A"
+				"34AA6DE07FA9C2C4"
+			]
+			id: "52B441F9C3EE2D6E"
+			tasks: [{
+				id: "2ECF770B361D4CC0"
+				item: { count: 1, id: "cosmiccore:terraweave_cloth" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["4994B932F264D4E2"]
+			id: "34AA6DE07FA9C2C4"
+			tasks: [{
+				id: "0BACFCE82F24FDB8"
+				item: { count: 1, id: "ars_nouveau:magebloom_fiber" }
+				type: "item"
+			}]
+			x: -3.75d
+			y: -4.5d
 		}
 	]
 }
