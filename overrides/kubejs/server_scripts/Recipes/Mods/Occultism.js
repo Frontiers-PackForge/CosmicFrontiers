@@ -180,4 +180,34 @@ ServerEvents.recipes(event => {
     "gtceu:steel_crate",
     'occultism:craft_djinni'
   ).dummy("occultism:ritual_dummy/custom_ritual_craft").id("occultism:frontiers.fusion_ritual.satchel")
+
+  event.custom({
+    type: 'occultism:ritual',
+    ritual_type: 'cosmiccore:firmament_ascent',
+    pentacle_id: 'occultism:summon_marid',
+    duration: 10,
+    activation_item: {
+      item: 'minecraft:gunpowder'
+    },
+    ingredients: [
+      { item: 'occultism:iesnium_ingot' },
+      { item: 'occultism:iesnium_ingot' },
+      { item: 'cosmiccore:bloomscrap' },
+      { item: 'cosmiccore:bloomscrap' },
+      { item: 'cosmiccore:bloomscrap' },
+      { item: 'cosmiccore:bloomscrap' },
+      { item: 'neovitae:reagent_air' },
+      { item: 'neovitae:reagent_air' },
+      { item: 'neovitae:reagent_air' },
+      { item: 'neovitae:reagent_air' }
+    ],
+    result: {
+      id: 'occultism:jei_dummy/none',
+      count: 1
+    },
+    ritual_dummy: {
+      id: 'cosmiccore:firmament_ascent_ritual',
+      count: 1
+    }
+  }).id('cosmiccore:firmament_ascent')
 })
