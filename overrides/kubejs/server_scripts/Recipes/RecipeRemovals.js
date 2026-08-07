@@ -138,6 +138,8 @@ ServerEvents.recipes(event => {
         event.remove({ id: `create:crushing/${stone}` })
         event.remove({ id: `create:crushing/${stone}_recycling` })
     })
+    event.remove({ output: 'occultism:crafting/chalk_blue_impure' })
+    event.remove({ output: 'gtceu:mv_field_generator' })
     event.remove({ id: 'occultism:ritual/summon_unbound_afrit' })
     event.remove({ id: 'simulated:physics_assembler' })
     event.remove({ id: 'create:crafting/kinetics/cart_assembler' })
