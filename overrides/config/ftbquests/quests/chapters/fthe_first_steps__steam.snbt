@@ -5,6 +5,13 @@
 	default_quest_shape: ""
 	filename: "fthe_first_steps__steam"
 	group: "3E75F0EECED54564"
+	icon: {
+		components: {
+			"minecraft:custom_name": "\"Weirdly Durable Hammer\""
+			"minecraft:unbreakable": { }
+		}
+		id: "gtceu:steel_mining_hammer"
+	}
 	id: "41ACB8C2AA9CE9F1"
 	images: [{
 		height: 2.5d

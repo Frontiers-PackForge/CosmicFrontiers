@@ -5,6 +5,9 @@
 	default_quest_shape: ""
 	filename: "lights_camera_action__elv"
 	group: "3E75F0EECED54564"
+	icon: {
+		id: "gtceu:lv_steam_turbine"
+	}
 	id: "2041768F4C2CACBD"
 	images: [{
 		height: 2.5d

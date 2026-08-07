@@ -3,8 +3,22 @@
 	default_quest_shape: ""
 	filename: "fthe_grid_r_6hv7"
 	group: "7EA3F68BE56F2314"
+	icon: {
+		id: "cosmiccore:firmament_permit"
+	}
 	id: "535ED57C622DDD96"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		dependencies: ["369A6B80AED9D741"]
+		hide_until_deps_complete: true
+		id: "1C1BDD18E2D05FCF"
+		tasks: [{
+			id: "3D4FC791E811EBEB"
+			item: { count: 1, id: "gtceu:hv_machine_hull" }
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 }

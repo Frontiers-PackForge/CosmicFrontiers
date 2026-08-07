@@ -60,5 +60,27 @@
 			x: -1.5d
 			y: 2.5d
 		}
+		{
+			icon: {
+				id: "cosmiccore:raw_reclaimed_pale_ore"
+			}
+			id: "3986D39DC5DCFEE1"
+			tasks: [{
+				id: "6829A48DC42004F8"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3986D39DC5DCFEE1"]
+			id: "570227B4F11F6917"
+			tasks: [{
+				id: "0CCA75F497CDD42E"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
 	]
 }
