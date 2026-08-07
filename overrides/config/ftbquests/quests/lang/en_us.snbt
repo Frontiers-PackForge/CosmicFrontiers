@@ -7,7 +7,7 @@
 	chapter.33E6132E4C81BC80.title: "&eNew? Start Here!"
 	chapter.41ACB8C2AA9CE9F1.title: "&fThe First Steps &r- [&eSteam&r]"
 	chapter.4AA04C0FE00BCA64.title: "&fDark Matter &r- [&3UV&7]"
-	chapter.535ED57C622DDD96.title: "&fThe Grid &r- [&6HV&7]"
+	chapter.535ED57C622DDD96.title: "&fSkies of Storm and Sea &r- [&6HV&7]"
 	chapter.648321DD3530A17B.title: "&fPaint the Galaxy Red &r- [&cZPM&7]"
 	chapter.68A4490D81087CDD.title: "&fEven Deeper! And Higher! &r- [&bMV&7&r]"
 	chapter_group.09ADD253FB82D7A0.title: "&fAeon 3 - The Wrath of Time"
@@ -69,6 +69,15 @@
 		"Please take caution using them, make constant backups, with a phyiscs mod like this even though it is almost perfect, it still will have edgecase issues we'll most likely find."
 	]
 	quest.0584A322CC8C1A28.quest_subtitle: "Redefining the game."
+	quest.05D76DF50301384D.quest_desc: [
+		"Welcome to your first(?) significant chemical setup, &bChromium&r."
+		""
+		"This chain aims to teach you basic automation skills like recycling and looping intermediate products. While also being one of the few things seperating you from AE2. "
+		""
+		""
+		"&o&7This dust seems to have a much more valuable material trapped inside it, I should process this.&r"
+	]
+	quest.05D76DF50301384D.quest_subtitle: "The Start"
 	quest.068F151533C124CD.quest_desc: [
 		"Applied Energistics 2 is your mainstay source of fluid and item logistics from here on out."
 		""
@@ -105,6 +114,26 @@
 	]
 	quest.07D8585C88A58A28.quest_subtitle: "Desulfurized"
 	quest.084D9D116B8A6C4A.quest_subtitle: "Biological Scrap Metals"
+	quest.09743DE5EC36B7A3.quest_desc: [
+		"To Reach the Firmament you must use the \"&eAscension to the Firmament&r\" Ritual (Check for it in EMI!)"
+		""
+		"The Ritual Type it uses is called &bFatma's Incentivized Attraction&r and requires the following chalks"
+		""
+		"- Black (LV)"
+		"- White (Steam)"
+		"- Lime (Steam)"
+		"- Red (LV)"
+		"- Orange (LV)"
+		"- Blue (MV)"
+		""
+		"Upon ritual activation and subsequent, players will be sent upwards to the firmament."
+		"You can leave the firmament by jumping into the ammonia sea below and holding shift."
+		""
+		"It is recommended to bring some kind of teleporter with you so you can get back easier than using a ritual every time."
+		""
+		"&6Ritual must be able to see the sky&r"
+	]
+	quest.09743DE5EC36B7A3.title: "How to reach the Firmament"
 	quest.0975CA11110DC9FB.quest_desc: [
 		"Kanthal and Silicon require being cooled down with water before use."
 		""
@@ -142,6 +171,14 @@
 	quest.0C0E3F2E637DA0A9.quest_subtitle: "Dawnstone but Molten"
 	quest.0EC4D52E2252406D.quest_subtitle: "Gregtech Oxygen Tank"
 	quest.0FA8D92F9734C77C.quest_subtitle: "The Sulfur Ore Field"
+	quest.1109F476F38A663D.quest_desc: ["Required to make HV Hulls"]
+	quest.1109F476F38A663D.quest_subtitle: "You'll need this"
+	quest.11A80F269275F15D.quest_desc: [
+		"The deeper you decend, the more agressive murkbloom seems to become."
+		""
+		"Your earlier stealth fiber won't keep you hidden as effectively so it is time for an upgrade!"
+	]
+	quest.11A80F269275F15D.quest_subtitle: "Not really a suggestion"
 	quest.12BEB88ECEFDBBBA.quest_desc: ["Compute Cores convert energy into CWU for your network components to run."]
 	quest.12BEB88ECEFDBBBA.quest_subtitle: "Adding CWU to AE"
 	quest.130F6EE5889B7ADE.quest_desc: [
@@ -150,6 +187,12 @@
 		"However, for now they will remain teired here, if they need to be uptiered then we'll handle it then."
 	]
 	quest.130F6EE5889B7ADE.quest_subtitle: "Pretty Defined"
+	quest.14D6F3083E2DD469.quest_desc: [
+		"Shadebloom Armor is the only armor that can survive in layer 3 of the abyss."
+		""
+		"Without it you will take constant pressure crush damage and alert murkbloom extremely fast."
+	]
+	quest.14D6F3083E2DD469.quest_subtitle: "Tier Three Armor"
 	quest.168A6B3A2FD0CC45.quest_subtitle: "For the simple machines"
 	quest.168A6B3A2FD0CC45.title: "Basic LV Parts"
 	quest.16EE5D3DB14F4331.quest_desc: [
@@ -225,6 +268,8 @@
 		"Ore sorting starts off mildly lossy for T1 and T2 in terms of how many raw ores you put in verses chunks you get out, but as you get higher stages of sorting you also get increased yields. This was notably done because ore fields are massive and offering flat objective multipliers early on and in general caused a lot of resource bloat. (There still is resource bloat regarding how much you get but I'll have to address that over time or just use more materials per craft.)"
 	]
 	quest.1B4E42BE6EF7A4F3.quest_subtitle: "The heart of ore processing"
+	quest.1BC8E85866579CF2.quest_desc: ["Next, Take your &eSodium Chromate Solution&r and some &eSulfuric Acid&r and slap that inside a &aChemical Dehydrator&r. You'll end up with &bSodium Dichromate Solution&r and some &6Sodium Sulfate&r as a byproduct."]
+	quest.1BC8E85866579CF2.quest_subtitle: "Getting there!"
 	quest.1FD7F7A22E29CFF5.quest_desc: [
 		"Soul Gourd Stems spawn on soul sand or soil in the nether. "
 		""
@@ -260,6 +305,14 @@
 	]
 	quest.20B57C1FF5037C74.quest_subtitle: "Power Warnings."
 	quest.20B57C1FF5037C74.title: "Read this or Explode"
+	quest.2324271DEDC92B2E.quest_desc: [
+		"These Molds linked here are not all of them! These are just some of the more notable ones you may want to use with access to the MV Extruder."
+		""
+		""
+		"Check out the other Mold types in EMI."
+	]
+	quest.2324271DEDC92B2E.quest_subtitle: "More Molds!"
+	quest.2324271DEDC92B2E.title: "What goes in the extruder"
 	quest.24234FDC4A206DA5.quest_desc: [
 		"Computation Arrays allow you to convert &bEU&r (and potentially other resources) into &eComputer Work Units&r. Which we will informally call either &aCWU&r or &aCompute&r."
 		""
@@ -366,6 +419,12 @@
 		"(Hold a Sphalerite Ore Chunk to Unlock this/Check the Dependencies)"
 	]
 	quest.2EDDE2D4F167CC02.quest_subtitle: "Have you done ore sorting?"
+	quest.309B9C6A20CE437C.quest_desc: [
+		"Just as Going down has required some sort of charm to allow passage, throwing myself into the skies most likely carries the same risk."
+		""
+		"Rather than figuring this out as it happens, I will procure a permit to the skies now rather than later."
+	]
+	quest.309B9C6A20CE437C.quest_subtitle: "Allowing Passage"
 	quest.31B6D09FBE2173EF.quest_desc: [
 		"Get down near the bedrock layer and place an ember bore ontop of bedrock, with a mechanical core on the center block, insert coal (or other fuels, haven't tried) into the mechanical core with your logistics of choice (hopper will do). The bore will start to run and produce ember as long as there is ember available for extraction in the chunk"
 		""
@@ -414,7 +473,7 @@
 	]
 	quest.35B7A194BB34BA44.quest_subtitle: "The unsual that is willed to be. "
 	quest.35B7A194BB34BA44.title: "An Indestructable Ally"
-	quest.369A6B80AED9D741.quest_subtitle: "Did you think it'd be that easy?"
+	quest.369A6B80AED9D741.quest_subtitle: "The Infinite Sunset"
 	quest.369A6B80AED9D741.title: "To HV!"
 	quest.369DE54ABB07E98A.quest_desc: [
 		"The coke oven allows you to convert logs into charcoal, and coal into coal coke."
@@ -447,6 +506,23 @@
 	]
 	quest.38473AAE9EFA91C7.quest_subtitle: "Moving Ember"
 	quest.391A834FBA98B236.quest_subtitle: "Moving Rotation"
+	quest.3986D39DC5DCFEE1.quest_desc: [
+		"Frontiers foregos the standard GTModern Worldgen for something closer to massive ore fields roughly inspired by Factorio."
+		""
+		"Ores now spawn in 'Fields' massive zones of ore that are usually at the center of the drawn field."
+		""
+		"Fields are marked on the map when prospected, and can be toggled for depletion."
+		"Fields are automatically shared between team members."
+		"Fields generally try to spawn in a way that eliminates pure RNG by using the concept of a shuffle bag (Inspired off Tetris) to keep roughly all the ores spawning within a specific region."
+		"You can make a &bDowsing Rod&r the moment you find some string! Use it as it is very helpful early on!"
+		""
+		"&l&eLocating the Ore, a quick crashcourse&r:"
+		""
+		"Generally, the logical '&bcenter&r' of an ore blob has an extremely high chance to intersect with the ore field in some way."
+		"Personally i &alocate the center then dig down directly&r, but you can also dig tunnels down to the center. You can check &eEMI&r to see a rough area where yeah field will spawn. Once you've found some of the field you most likely will never need to hunt for any other piece of it as fields are HUGE."
+	]
+	quest.3986D39DC5DCFEE1.quest_subtitle: "Ore Fields and You"
+	quest.3986D39DC5DCFEE1.title: "Reworked Ore Generation"
 	quest.3A755F7B8012AB1A.quest_subtitle: "Create Oxygen Tank"
 	quest.3E03C13CAE570D80.quest_desc: ["You can also get quartz blocks from stone masons, which allows you to make this pre-nether!"]
 	quest.3E03C13CAE570D80.quest_subtitle: "Stone Mason Source"
@@ -692,9 +768,20 @@
 		"Vanadium Steel requires a small amount of chromium to produce, meaning it is gated by doing at least a few crafts of chromium by hand or setting up chromite line proper."
 		""
 		"Once you have chromium, you'll need to make this metal for your MV cutter."
+		""
+		"You'll also need some vanadium, which happens to come from the same ore Chromite does."
 	]
 	quest.5AF279015C476CC6.quest_subtitle: "Onwards to a cutter"
 	quest.5B91A99F1F8B588D.quest_subtitle: "Oh hey, brass!"
+	quest.5CAF8B02C3FE99ED.quest_desc: ["After that get your &eSodium Dichromate Solution&r, and add some &eCarbon&r with it inside a &achemical dehydrator&r again. This should yield you some &bChromium (III) Oxide&r as well as byproducts of &6Soda Ash&r and &6Carbon Monoxide&r"]
+	quest.5CAF8B02C3FE99ED.quest_subtitle: "Almost..."
+	quest.5E1DF9CD2C9197EB.quest_desc: [
+		"First up we need to make the chromite a solution."
+		"Take &eChromite&r, &eOxygen&r, and &eSodium Cabonate Solution&r and react them in a &achemical reactor&r."
+		""
+		"This will give you &bSodium Chromate Solution&r, as well as &6Magnetite&r and &6CO2&r as Byproducts."
+	]
+	quest.5E1DF9CD2C9197EB.quest_subtitle: "Needs some more work."
 	quest.5E380EE48FCB8769.quest_desc: [
 		"The Ara Vitae is the parallel to BloodMagic's Blood Altar."
 		""
@@ -718,6 +805,7 @@
 		"No like seriously, how the hell did you get here without batch crafting. Seriously, craft stuff in like multiples of 16 to 64 or something unless it's brutally expensive lol"
 	]
 	quest.634610E99CF32EB2.quest_subtitle: "Earlygame bread and butter"
+	quest.654F2B3B0CD1F42F.quest_subtitle: "Make a lot of this"
 	quest.666A77BC58F33CD0.quest_desc: [
 		"The Electric Blast furnace uses high heat and plenty of EU to smelt dusts into usable products."
 		""
@@ -761,6 +849,7 @@
 	quest.685F89265F6746A7.quest_subtitle: "Suffocation and you"
 	quest.685F89265F6746A7.title: "Oxygen, Thin Air, Air Hazards"
 	quest.687032030F774208.title: "Breathing in the Abyss"
+	quest.6984F04E09CE50E5.quest_subtitle: "Chalk."
 	quest.6D9249DE13CBEB39.quest_desc: [
 		"This is basically just an EBF that uses Ember instead of coils for heat."
 		""
@@ -856,6 +945,19 @@
 		"Spellbooks now function normally. Rather than failing to cast spells."
 	]
 	quest.73BC5E9DE8B0CE61.quest_subtitle: "Spellbook Release"
+	quest.762D3321F43C0589.quest_desc: [
+		"Last step! Take your &eChromium (III) Oxide&r and some &eAluminium&r and toss it into an &aEBF&r."
+		"You'll get your &bChromium&r and some &bAlumina&r! Congrats, you've now (hopefully) automated Chromium"
+	]
+	quest.762D3321F43C0589.quest_subtitle: "Finally! Chrome!"
+	quest.7886325B74847F55.quest_desc: [
+		"Reaching the Firmament is a requirement to unlock major parts of HV. "
+		"As such, you are required to make an initial expedition to the Firmament before you can grasp"
+		"what is needed to proceed."
+		""
+		"Note: This dimension is currently under Functional Development, new features for Gravity Behavior and Content will show up in future Nightlies, but for now this quest and recipes to access the firmament are so you can check out what exists"
+	]
+	quest.7886325B74847F55.quest_subtitle: "The Skies Above"
 	quest.7A016FB22E827915.quest_desc: [
 		"Diving below the heavy fog, the clicking seems to be more of a faint but persisting chittering."
 		""
@@ -920,10 +1022,12 @@
 	task.2627A4C621E3C941.title: "Reach Y: -300 of the Abyss"
 	task.454A92A4FCC0F185.title: "Any #c:tools/mining_tool"
 	task.4F2DCF87BF14A5A0.title: "To Somewhere Beyond"
+	task.5BADA7689FDD8595.title: "Any Shadebloom Boots"
 	task.5C1CE51AFE90BD57.title: "Craft Any Mortar"
 	task.5CF3523293ABF984.title: "Reach Y:-500 in the Abyss"
 	task.6663702BE6CE1EEA.title: "Spirit Fires"
 	task.677509BDC6B481FC.title: "Got It."
 	task.6845F4E5F89C3C23.title: "Reach Y: -100 of the Abyss"
+	task.6A308EFE8BFF09DB.title: "Reach the Sea in the Clouds, The Firmament"
 	task.77609A3D829D9910.title: "Any Log"
 }
