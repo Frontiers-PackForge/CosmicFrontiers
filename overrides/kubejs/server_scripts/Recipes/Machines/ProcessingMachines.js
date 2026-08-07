@@ -1,16 +1,31 @@
 ServerEvents.recipes(event => {
     const machines = [
-        { tier: 'lv', cable: 'tin', laminatorSpring: 'tin', dehydratorSpring: 'copper' },
-        { tier: 'mv', cable: 'copper', laminatorSpring: 'copper', dehydratorSpring: 'cupronickel' },
-        { tier: 'hv', cable: 'gold', laminatorSpring: 'gold', dehydratorSpring: 'kanthal' },
-        { tier: 'ev', cable: 'aluminium', laminatorSpring: 'aluminium', dehydratorSpring: 'nichrome' },
-        { tier: 'iv', cable: 'platinum', laminatorSpring: 'hsla_steel', dehydratorSpring: 'tungsten_steel' },
-        { tier: 'luv', cable: 'niobium_titanium', laminatorSpring: 'niobium_titanium', dehydratorSpring: 'hssg' },
-        { tier: 'zpm', cable: 'vanadium_gallium', laminatorSpring: 'vanadium_gallium', dehydratorSpring: 'naquadah' },
-        { tier: 'uv', cable: 'yttrium_barium_cuprate', laminatorSpring: 'yttrium_barium_cuprate', dehydratorSpring: 'naquadah_alloy' }
+        { tier: 'lv', cable: 'tin', plate: 'steel', glass: 'tempered_glass', laminatorSpring: 'tin', dehydratorSpring: 'copper' },
+        { tier: 'mv', cable: 'copper', plate: 'aluminium', glass: 'tempered_glass', laminatorSpring: 'copper', dehydratorSpring: 'cupronickel' },
+        { tier: 'hv', cable: 'gold', plate: 'stainless_steel', glass: 'tempered_glass', laminatorSpring: 'gold', dehydratorSpring: 'kanthal' },
+        { tier: 'ev', cable: 'aluminium', plate: 'titanium', glass: 'tempered_glass', laminatorSpring: 'aluminium', dehydratorSpring: 'nichrome' },
+        { tier: 'iv', cable: 'platinum', plate: 'tungsten_steel', glass: 'laminated_glass', laminatorSpring: 'hsla_steel', dehydratorSpring: 'tungsten_steel' },
+        { tier: 'luv', cable: 'niobium_titanium', plate: 'rhodium_plated_palladium', glass: 'laminated_glass', laminatorSpring: 'niobium_titanium', dehydratorSpring: 'hssg' },
+        { tier: 'zpm', cable: 'vanadium_gallium', plate: 'naquadah_alloy', glass: 'fusion_glass', laminatorSpring: 'vanadium_gallium', dehydratorSpring: 'naquadah' },
+        { tier: 'uv', cable: 'yttrium_barium_cuprate', plate: 'darmstadtium', glass: 'fusion_glass', laminatorSpring: 'yttrium_barium_cuprate', dehydratorSpring: 'naquadah_alloy' }
     ]
 
     machines.forEach(machine => {
+        if (machine.tier !== 'lv') {
+            event.shaped(`cosmiccore:${machine.tier}_crystallizer`, [
+                'ABA',
+                'CDC',
+                'EFE'
+            ], {
+                A: `#gtceu:circuits/${machine.tier}`,
+                B: `gtceu:${machine.glass}`,
+                C: `gtceu:${machine.plate}_plate`,
+                D: `gtceu:${machine.tier}_hermetic_casing`,
+                E: `gtceu:${machine.cable}_single_cable`,
+                F: `gtceu:${machine.tier}_machine_hull`
+            })
+        }
+
         event.shaped(`cosmiccore:${machine.tier}_laminator`, [
             'CAC',
             'BHB',

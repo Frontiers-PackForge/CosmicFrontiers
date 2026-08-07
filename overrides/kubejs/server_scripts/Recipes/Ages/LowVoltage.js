@@ -341,6 +341,16 @@ ServerEvents.recipes(event => {
     //     .bloomwyrmChargeInput(25)
     //     .maxCampusParallel(8)
 
+    event.recipes.gtceu.assembler('frontiers:ages/low_voltage/steel_rose_light')
+        .itemInputs('gtceu:steel_frame', 'create:rose_quartz_lamp')
+        .itemOutputs('cosmiccore:steel_rose_light')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.combustion_generator('frontiers:ages/low_voltage/turpentine_fuel')
+        .inputFluids('1x gtceu:turpentine')
+        .duration(8)
+        .EUt(-GTValues.V[GTValues.LV])
 
 
 
@@ -380,4 +390,9 @@ ServerEvents.recipes(event => {
 
 
 
+    event.recipes.gtceu.macerator('frontiers:chains/emberite_binder/cannon_powder')
+        .itemInputs('mynethersdelight:powder_cannon')
+        .itemOutputs('4x cosmiccore:cannon_powder')
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.LV])
 })
