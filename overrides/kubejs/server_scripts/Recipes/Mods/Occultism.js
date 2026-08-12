@@ -2,15 +2,6 @@
 console.info('[CosmicFrontiers] - Loaded KubeJS Scripts for Occultism')
 ServerEvents.recipes(event => {
   event.recipes.occultism.spirit_fire('occultism:spirit_attuned_gem', 'gtceu:certus_quartz_gem')
-  event.shaped('occultism:chalk_white_impure', [
-    'TC ',
-    'TC ',
-    'TC ',
-  ], {
-    T: 'gtceu:talc_dust',
-    C: '#c:dusts/ash'
-  })
-
   event.shaped('occultism:magic_lamp_empty', [
     ' C ',
     'CTC',

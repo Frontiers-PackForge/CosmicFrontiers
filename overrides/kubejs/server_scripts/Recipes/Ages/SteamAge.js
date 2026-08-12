@@ -9,7 +9,14 @@ ServerEvents.compostableRecipes(event => {
     event.add(Item.of('legendarysurvivaloverhaul:sun_fern_gold_leaf'), 1.0)
 })
 ServerEvents.recipes(event => {
-
+    event.shaped('4x cosmiccore:paper_ring', ['A', 'B'], { A: '#gtceu:crafting_tools/knife', B: 'minecraft:paper' })
+    event.shaped('cosmiccore:steam_motor', ['CWR', 'WMW', 'RWC'], { C: 'gtceu:lead_single_wire', W: 'gtceu:tin_single_wire', R: 'gtceu:copper_rod', M: 'gtceu:magnetic_iron_rod' }).id('frontiers:steam_motor')
+    event.shaped('cosmiccore:steam_piston', ['PPP', 'CRR', 'CMG'], { P: 'gtceu:copper_plate', C: 'gtceu:lead_single_wire', R: 'gtceu:copper_rod', M: 'cosmiccore:steam_motor', G: 'gtceu:small_bronze_gear' }).id('frontiers:steam_piston')
+    event.shaped('cosmiccore:steam_conveyor', ['RRR', 'MCM', 'RRR'], { R: 'gtceu:sticky_resin', M: 'cosmiccore:steam_motor', C: 'gtceu:lead_single_wire' }).id('frontiers:steam_conveyor')
+    event.shaped('cosmiccore:steam_pump', ['ABC', 'DEF', 'CGA'], { A: 'gtceu:lead_single_wire', B: 'gtceu:small_iron_gear', C: 'gtceu:rubber_ring', D: '#gtceu:crafting_tools/screwdriver', E: 'gtceu:copper_normal_fluid_pipe', F: '#gtceu:crafting_tools/wrench', G: 'cosmiccore:steam_motor' })
+    event.shaped('cosmiccore:steam_pump', ['ABC', 'DEF', 'CGA'], { A: 'gtceu:lead_single_wire', B: 'gtceu:small_iron_gear', C: 'cosmiccore:paper_ring', D: '#gtceu:crafting_tools/screwdriver', E: 'gtceu:copper_normal_fluid_pipe', F: '#gtceu:crafting_tools/wrench', G: 'cosmiccore:steam_motor' })
+    event.shaped('cosmiccore:steam_robot_arm', ['CCC', 'MRM', 'PVR'], { C: 'gtceu:lead_single_wire', M: 'cosmiccore:steam_motor', R: 'gtceu:copper_rod', P: 'cosmiccore:steam_piston', V: '#gtceu:circuits/ulv' }).id('frontiers:steam_robot_arm')
+    event.shaped('cosmiccore:steam_fluid_regulator', ['SFR', 'sPw', 'RMC'], { S: 'gtceu:copper_screw', F: 'gtceu:copper_rotor', R: '#gtceu:circuits/ulv', s: '#gtceu:crafting_tools/screwdriver', P: 'cosmiccore:steam_pump', w: '#gtceu:crafting_tools/wrench', M: 'cosmiccore:steam_motor', C: 'gtceu:lead_single_wire' }).id('frontiers:steam_fluid_regulator')
     event.shapeless('4x cosmiccore:soul_gourd_seeds', ['cosmiccore:soul_gourd'])
     event.shaped('cosmiccore:steel_supply_tank', [' A ', 'BCB', 'BBB'], { A: 'gtceu:steel_tiny_fluid_pipe', B: 'gtceu:double_steel_plate', C: 'gtceu:steel_drum' })
     event.shaped('cosmiccore:bronze_supply_tank', [' A ', 'BCB', 'BBB'], { A: 'gtceu:bronze_tiny_fluid_pipe', B: 'gtceu:double_bronze_plate', C: 'gtceu:bronze_drum' })
@@ -87,27 +94,34 @@ ServerEvents.recipes(event => {
         ['minecraft:iron_ingot', '2x gtceu:charcoal_dust', 'gtceu:steel_ingot', '2x gtceu:tiny_dark_ash_dust', 1800, 250, false],
         ['minecraft:iron_ingot', 'gtceu:coke_gem', 'gtceu:steel_ingot', 'gtceu:ash_dust', 1125, 250, true],
         ['minecraft:iron_ingot', 'gtceu:coke_dust', 'gtceu:steel_ingot', 'gtceu:ash_dust', 1125, 250, true],
+        ['minecraft:iron_ingot', 'malum:arcane_charcoal', 'gtceu:steel_ingot', null, 1200, 250, false],
         ['minecraft:iron_block', '2x minecraft:coal_block', 'gtceu:steel_block', '2x gtceu:dark_ash_dust', 12150, 2000, false],
         ['minecraft:iron_block', '2x gtceu:charcoal_block', 'gtceu:steel_block', '2x gtceu:dark_ash_dust', 12150, 2000, false],
         ['minecraft:iron_block', 'gtceu:coke_block', 'gtceu:steel_block', 'gtceu:ash_dust', 10125, 2000, false],
+        ['minecraft:iron_block', 'malum:block_of_arcane_charcoal', 'gtceu:steel_block', null, 10800, 2000, false],
         ['gtceu:wrought_iron_ingot', '2x minecraft:coal', 'gtceu:steel_ingot', '2x gtceu:tiny_dark_ash_dust', 600, 250, false],
         ['gtceu:wrought_iron_ingot', '2x gtceu:coal_dust', 'gtceu:steel_ingot', '2x gtceu:tiny_dark_ash_dust', 600, 250, false],
         ['gtceu:wrought_iron_ingot', '2x minecraft:charcoal', 'gtceu:steel_ingot', '2x gtceu:tiny_dark_ash_dust', 600, 250, false],
         ['gtceu:wrought_iron_ingot', '2x gtceu:charcoal_dust', 'gtceu:steel_ingot', '2x gtceu:tiny_dark_ash_dust', 600, 250, false],
         ['gtceu:wrought_iron_ingot', 'gtceu:coke_gem', 'gtceu:steel_ingot', 'gtceu:ash_dust', 450, 250, true],
         ['gtceu:wrought_iron_ingot', 'gtceu:coke_dust', 'gtceu:steel_ingot', 'gtceu:ash_dust', 450, 250, true],
+        ['gtceu:wrought_iron_ingot', 'malum:arcane_charcoal', 'gtceu:steel_ingot', null, 540, 250, false],
         ['gtceu:wrought_iron_block', '2x minecraft:coal_block', 'gtceu:steel_block', '2x gtceu:dark_ash_dust', 5400, 2000, false],
         ['gtceu:wrought_iron_block', '2x gtceu:charcoal_block', 'gtceu:steel_block', '2x gtceu:dark_ash_dust', 5400, 2000, false],
-        ['gtceu:wrought_iron_block', 'gtceu:coke_block', 'gtceu:steel_block', 'gtceu:ash_dust', 4050, 2000, false]
+        ['gtceu:wrought_iron_block', 'gtceu:coke_block', 'gtceu:steel_block', 'gtceu:ash_dust', 4050, 2000, false],
+        ['gtceu:wrought_iron_block', 'malum:block_of_arcane_charcoal', 'gtceu:steel_block', null, 4860, 2000, false]
     ]
-    ipbfSteelRecipes.forEach(([metal, fuel, output, byproduct, duration, creosote, chanced]) => {
-        const recipe = event.recipes.cosmiccore.industrial_primitive_blast_furnace()
-            .itemInputs(metal, fuel)
-            .itemOutputs(output)
-        if (chanced) recipe.chancedOutput(byproduct, '1/9')
-        else recipe.itemOutputs(byproduct)
-        recipe.inputFluids(`${creosote}x gtceu:creosote`)
-            .duration(duration)
+    const ipbfSteelFluids = [['gtceu:creosote', 1], ['embers:dwarven_oil', 0.5]]
+    ipbfSteelRecipes.forEach(([metal, fuel, output, byproduct, duration, baseFluidAmount, chanced]) => {
+        ipbfSteelFluids.forEach(([fluid, amountMultiplier]) => {
+            const recipe = event.recipes.cosmiccore.industrial_primitive_blast_furnace()
+                .itemInputs(metal, fuel)
+                .itemOutputs(output)
+            if (byproduct && chanced) recipe.chancedOutput(byproduct, '1/9')
+            else if (byproduct) recipe.itemOutputs(byproduct)
+            recipe.inputFluids(`${baseFluidAmount * amountMultiplier}x ${fluid}`)
+                .duration(duration)
+        })
     })
     event.shaped('occultism:chalk_yellow_impure', ['ABC'], { A: 'occultism:chalk_white_impure', B: 'gtceu:gold_sulfide_amalgam_dust', C: 'minecraft:yellow_dye' })
     event.shaped('occultism:chalk_lime_impure', ['ABC', 'D  '], { A: 'occultism:chalk_light_gray', B: 'occultism:research_fragment_dust', C: 'gtceu:emerald_dust', D: 'minecraft:slime_ball' })
@@ -165,6 +179,22 @@ ServerEvents.recipes(event => {
         .itemOutputs('create:cardboard')
         .EUt(16, 1)
         .duration(100)
+    event.recipes.gtceu.primitive_blast_furnace()
+        .itemInputs('minecraft:iron_ingot', 'malum:arcane_charcoal')
+        .itemOutputs('gtceu:steel_ingot')
+        .duration(1600)
+    event.recipes.gtceu.primitive_blast_furnace()
+        .itemInputs('gtceu:wrought_iron_ingot', 'malum:arcane_charcoal')
+        .itemOutputs('gtceu:steel_ingot')
+        .duration(720)
+    event.recipes.gtceu.primitive_blast_furnace()
+        .itemInputs('minecraft:iron_block', 'malum:block_of_arcane_charcoal')
+        .itemOutputs('gtceu:steel_block')
+        .duration(14400)
+    event.recipes.gtceu.primitive_blast_furnace()
+        .itemInputs('gtceu:wrought_iron_block', 'malum:block_of_arcane_charcoal')
+        .itemOutputs('gtceu:steel_block')
+        .duration(6480)
     event.recipes.gtceu.mixer()
         .itemInputs('minecraft:sand')
         .itemOutputs('cosmiccore:creosote_grease')
@@ -294,13 +324,58 @@ ServerEvents.recipes(event => {
         "activation_item": {
             "item": "cosmiccore:seal_shards"
         },
-        "duration": 300,
+        "duration": 30,
         "type": "occultism:ritual"
     })
     event.recipes.occultism.spirit_fire('occultism:spirit_attuned_gem', 'minecraft:amethyst_shard')
     event.shapeless('waystones:black_sharestone', ['#waystones:waystones'])
     event.shaped('cosmiccore:rainbow_cane', ['ABC', 'DEF', 'GHI'], { A: 'minecraft:black_dye', B: 'minecraft:brown_dye', C: 'minecraft:red_dye', D: 'minecraft:yellow_dye', E: 'minecraft:sugar_cane', F: 'minecraft:orange_dye', G: 'minecraft:green_dye', H: 'minecraft:blue_dye', I: 'minecraft:white_dye' })
     event.shaped('cosmiccore:steel_plated_bronze_casing', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:steel_plate', B: 'gtceu:bronze_rod', C: 'gtceu:bronze_machine_casing' })
+    event.recipes.gtceu.alloy_smelter('frontiers:copper_ingot_and_tin_dust_into_bronze')
+        .itemInputs('3x minecraft:copper_ingot', 'gtceu:tin_dust')
+        .itemOutputs('4x gtceu:bronze_ingot')
+        .duration(80)
+        .EUt(16)
+    event.recipes.gtceu.alloy_smelter('frontiers:copper_dust_and_tin_ingot_into_bronze')
+        .itemInputs('3x gtceu:copper_dust', 'gtceu:tin_ingot')
+        .itemOutputs('4x gtceu:bronze_ingot')
+        .duration(80)
+        .EUt(16)
+    event.recipes.gtceu.alloy_smelter('frontiers:copper_ingot_and_tin_ingot_into_bronze')
+        .itemInputs('3x minecraft:copper_ingot', 'gtceu:tin_ingot')
+        .itemOutputs('4x gtceu:bronze_ingot')
+        .duration(80)
+        .EUt(16)
+    event.recipes.gtceu.alloy_smelter('frontiers:copper_dust_and_tin_dust_into_bronze')
+        .itemInputs('3x gtceu:copper_dust', 'gtceu:tin_dust')
+        .itemOutputs('4x gtceu:bronze_ingot')
+        .duration(80)
+        .EUt(16)
+    event.recipes.gtceu.alloy_smelter('frontiers:annealed_copper_ingot_and_tin_dust_into_bronze')
+        .itemInputs('3x gtceu:annealed_copper_ingot', 'gtceu:tin_dust')
+        .itemOutputs('4x gtceu:bronze_ingot')
+        .duration(80)
+        .EUt(16)
+    event.recipes.gtceu.alloy_smelter('frontiers:annealed_copper_dust_and_tin_ingot_into_bronze')
+        .itemInputs('3x gtceu:annealed_copper_dust', 'gtceu:tin_ingot')
+        .itemOutputs('4x gtceu:bronze_ingot')
+        .duration(80)
+        .EUt(16)
+    event.recipes.gtceu.alloy_smelter('frontiers:annealed_copper_ingot_and_tin_ingot_into_bronze')
+        .itemInputs('3x gtceu:annealed_copper_ingot', 'gtceu:tin_ingot')
+        .itemOutputs('4x gtceu:bronze_ingot')
+        .duration(80)
+        .EUt(16)
+    event.recipes.gtceu.alloy_smelter('frontiers:annealed_copper_dust_and_tin_dust_into_bronze')
+        .itemInputs('3x gtceu:annealed_copper_dust', 'gtceu:tin_dust')
+        .itemOutputs('4x gtceu:bronze_ingot')
+        .duration(80)
+        .EUt(16)
+    event.recipes.cosmiccore.industrial_primitive_blast_furnace()
+        .itemInputs('occultism:iesnium_dust')
+        .itemOutputs('occultism:iesnium_ingot')
+        .inputFluids('125x embers:dwarven_oil')
+        .duration(1000)
     event.recipes.gtceu.assembler()
         .itemInputs('bhc:red_heart', '4x waystones:deepslate_shard', 'embers:ember_crystal_cluster')
         .itemOutputs('cosmiccore:seal_shards')
@@ -339,15 +414,6 @@ ServerEvents.recipes(event => {
         .duration(100)
 
     event.shaped('gtceu:basic_electronic_circuit', ['ABA', 'CDC', 'EEE'], { A: 'gtceu:resistor', B: 'gtceu:tempered_iesnium_plate', C: 'gtceu:vacuum_tube', D: 'gtceu:resin_printed_circuit_board', E: 'gtceu:lead_single_cable' })
-    event.recipes.gtceu.primitive_blast_furnace()
-        .itemInputs('occultism:iesnium_dust')
-        .itemOutputs('occultism:iesnium_ingot')
-        .duration(900)
-    event.recipes.cosmiccore.industrial_primitive_blast_furnace()
-        .itemInputs('occultism:iesnium_dust')
-        .itemOutputs('occultism:iesnium_ingot')
-        .duration(600)
-
     event.shaped('cosmiccore:ulv_ember_input_hatch', ['ABA', 'CDC', 'ABA'], { A: 'gtceu:double_bronze_plate', B: 'gtceu:bronze_foil', C: 'embers:dawnstone_plate', D: 'embers:ember_crystal_cluster' })
 
     event.shaped('cosmiccore:steam_ember_emitter', [' A ', ' B ', 'CDE'], { A: 'embers:ember_shard', B: 'embers:dawnstone_plate', C: '#gtceu:crafting_tools/wrench', D: 'gtceu:steel_frame', E: '#gtceu:crafting_tools/hammer' })
