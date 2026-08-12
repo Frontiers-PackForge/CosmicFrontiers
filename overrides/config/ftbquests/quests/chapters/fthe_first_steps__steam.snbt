@@ -164,14 +164,14 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["46A8D660ABEB83FA"]
+			dependencies: ["2AA6F78DB2ED60F2"]
 			id: "15E83FF40983A8F5"
 			tasks: [{
 				id: "034768A35A7D4131"
 				item: { components: { "sophisticatedcore:number_of_inventory_slots": 18, "sophisticatedcore:number_of_upgrade_slots": 1 }, count: 1, id: "sophisticatedbackpacks:backpack" }
 				type: "item"
 			}]
-			x: 3.5d
+			x: 1.5d
 			y: 1.0d
 		}
 		{
@@ -833,8 +833,8 @@
 				item: { count: 1, id: "gtceu:lp_steam_macerator" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 10.0d
+			x: 2.5d
+			y: 11.5d
 		}
 		{
 			id: "133B2F1BE7CD0BA0"
@@ -846,8 +846,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:crafting_tools/mortar)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 11.5d
+			x: 5.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["0C7FB369E093BDC4"]
@@ -1069,7 +1069,6 @@
 				visible: 1b
 			}]
 			dependencies: [
-				"50930E8761259EFD"
 				"74923FA0D830E33B"
 				"27D0C7BFE634C3FB"
 			]
@@ -1231,7 +1230,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["27511ADDB495D14D"]
+			dependencies: ["66B6EFDC74821576"]
 			id: "6CD224F26209A645"
 			tasks: [{
 				id: "75936A28F7B2AD54"
@@ -1988,6 +1987,43 @@
 			}]
 			x: -16.0d
 			y: 0.5d
+		}
+		{
+			dependencies: ["46A8D660ABEB83FA"]
+			id: "0EC5D1285DF63FF4"
+			shape: "gear"
+			tasks: [{
+				id: "499B7D911565AA38"
+				item: { count: 1, id: "cosmiccore:steam_motor" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["084C3F2B9FD82800"]
+			id: "5C931C1E3917BC14"
+			min_width: 400
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "7B688D4C231D4584"
+				item: { count: 1, id: "gtceu:steam_grinder" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["27511ADDB495D14D"]
+			id: "66B6EFDC74821576"
+			tasks: [{
+				id: "0F46BFA74891AA57"
+				item: { count: 1, id: "occultism:dimensional_mineshaft" }
+				type: "item"
+			}]
+			x: -17.0d
+			y: -2.0d
 		}
 	]
 }

@@ -170,6 +170,13 @@
 	]
 	quest.0C0E3F2E637DA0A9.quest_subtitle: "Dawnstone but Molten"
 	quest.0EC4D52E2252406D.quest_subtitle: "Gregtech Oxygen Tank"
+	quest.0EC5D1285DF63FF4.quest_desc: [
+		"Steam Components are rather useful for logistics early on, allowing you a source of extraction/insertion for items and fluids."
+		""
+		""
+		"While not strictly required to craft any machines (still undecided on that), the early game logistics and reduced cost compared to constantly using LV conveyors/pumps is much easier."
+	]
+	quest.0EC5D1285DF63FF4.quest_subtitle: "Steam Parts"
 	quest.0FA8D92F9734C77C.quest_subtitle: "The Sulfur Ore Field"
 	quest.1109F476F38A663D.quest_desc: ["Required to make HV Hulls"]
 	quest.1109F476F38A663D.quest_subtitle: "You'll need this"
@@ -193,6 +200,12 @@
 		"Without it you will take constant pressure crush damage and alert murkbloom extremely fast."
 	]
 	quest.14D6F3083E2DD469.quest_subtitle: "Tier Three Armor"
+	quest.15E83FF40983A8F5.quest_desc: [
+		"Allows you to carry a little extra 'stuff' (abstract) on your player."
+		""
+		"Useful when going mining to carry more ores home :)"
+	]
+	quest.15E83FF40983A8F5.quest_subtitle: "Backpacks"
 	quest.168A6B3A2FD0CC45.quest_subtitle: "For the simple machines"
 	quest.168A6B3A2FD0CC45.title: "Basic LV Parts"
 	quest.16EE5D3DB14F4331.quest_desc: [
@@ -578,6 +591,19 @@
 		"UIs for tracking your pallete/taste profile and Signature meals will come in a future update along with another system which can house their GUI elements.&r"
 	]
 	quest.448F8668DD3AEB72.quest_subtitle: "A meal to remember"
+	quest.44E9E456C064F01F.quest_desc: [
+		"Now that you have access to Somarust casings and Stainless steel, it's worth considering upgrading your EBFS to the 2nd tier."
+		""
+		"Tier 2 EBFS take more space and materials to construct their larger frame, but come with multiple benefits"
+		""
+		"1. Every recipe that runs will reduce the total duration of the next recipe by 5% up to a max of 50% (half duration)."
+		"2. This duration cut also cuts total EU demand in half, saving you 50% of your power, or 2 ingots for the price of one in EU!"
+		"3. Upon Reaching Max Discount, it will also grant 1 free parallel, useful when you're smelting on-tier voltage ingots that you can do 2 at a time with a standard energy hatch."
+		""
+		"The T2 EBF is larger than its sibling T1 EBF, so make sure you got enough space (free in minecraft) "
+	]
+	quest.44E9E456C064F01F.quest_subtitle: "A Better EBF"
+	quest.44E9E456C064F01F.title: "Tier 2 EBF"
 	quest.44F40A00C61EFE54.quest_desc: [
 		"Silicon Ingots Require Kanthal Coils as well as a way to cool the hot ingots down."
 		""
@@ -773,6 +799,23 @@
 	]
 	quest.5AF279015C476CC6.quest_subtitle: "Onwards to a cutter"
 	quest.5B91A99F1F8B588D.quest_subtitle: "Oh hey, brass!"
+	quest.5C931C1E3917BC14.quest_desc: [
+		"For the Cost of 28mb/t of steam, you can shred down 8 items at a time with a Steam Grinder."
+		"A single steam ginder allows you to effectively double your resource yield, given you have the steam to power it! Useful for stretching your resources farther :)"
+		""
+		"This is a Multiblock, Check EMI for building instructions on what hatches you need, or shift-right-click the controller in world to see a ghost preview and a layer by layer guide (duration may be controlled in GT's Config settings)"
+		""
+		""
+		"For the Steam Grinder you will need"
+		"- A &aSteam Input Hatch&r (Not a &cFluid Input Hatch (Steam)&r)"
+		"- A &aSteam Input Bus&r"
+		"- A &aSteam Output Bus&r"
+		"- The Actual &aSteam Grinder Controller&r"
+		"- 22 &aSteam Machine Casings&r (&eNot including casings used in crafts!&r)"
+		""
+		"&bNOTE&r: &eJust like all &r<&6HV&r &eMacerators, it does not yield byproducts &r(&bSlots 2-4 in EMI&r)"
+	]
+	quest.5C931C1E3917BC14.quest_subtitle: "A Bigger Macerator"
 	quest.5CAF8B02C3FE99ED.quest_desc: ["After that get your &eSodium Dichromate Solution&r, and add some &eCarbon&r with it inside a &achemical dehydrator&r again. This should yield you some &bChromium (III) Oxide&r as well as byproducts of &6Soda Ash&r and &6Carbon Monoxide&r"]
 	quest.5CAF8B02C3FE99ED.quest_subtitle: "Almost..."
 	quest.5E1DF9CD2C9197EB.quest_desc: [
@@ -822,6 +865,7 @@
 		"Note about the quest itself : This is a deed quest, it will trigger a story sequence upon completing and viewing. Please wait for the cutscene to conclude fully!"
 	]
 	quest.666A77BC58F33CD0.quest_subtitle: "The First Big Furnace"
+	quest.66B6EFDC74821576.quest_subtitle: "Getting More of It. Part 1."
 	quest.67110A5418804D33.quest_desc: [
 		"You can't harvest pure nether quartz yourself, and gold is something only found in small amounts now."
 		""
@@ -850,6 +894,7 @@
 	quest.685F89265F6746A7.title: "Oxygen, Thin Air, Air Hazards"
 	quest.687032030F774208.title: "Breathing in the Abyss"
 	quest.6984F04E09CE50E5.quest_subtitle: "Chalk."
+	quest.6CD224F26209A645.quest_subtitle: "Actually getting more of it. Part 2."
 	quest.6D9249DE13CBEB39.quest_desc: [
 		"This is basically just an EBF that uses Ember instead of coils for heat."
 		""

@@ -447,7 +447,7 @@
 			id: "29D9ADD4DB314E5E"
 			tasks: [{
 				id: "2BE0803A91E8DD97"
-				item: { count: 1, id: "gtceu:raw_oil_bucket" }
+				item: { count: 1, id: "gtceu:multi_phase_oil_bucket" }
 				type: "item"
 			}]
 			x: 7.0d
@@ -468,7 +468,7 @@
 			min_width: 350
 			tasks: [{
 				id: "5074C455C8899AA3"
-				item: { count: 1, id: "gtceu:naphtha_bucket" }
+				item: { count: 1, id: "gtceu:light_naphtha_bucket" }
 				type: "item"
 			}]
 			x: 7.0d

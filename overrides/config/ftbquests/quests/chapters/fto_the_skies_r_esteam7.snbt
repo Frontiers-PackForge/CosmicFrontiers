@@ -1282,6 +1282,11 @@
 			y: 7.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				dependency: 8922001878721360008L
+				visible: 0b
+			}]
+			dependencies: ["7BD151701A8DF088"]
 			id: "0E3CB3E90521CD0C"
 			tasks: [{
 				id: "6B18C30249416FB3"
@@ -1292,6 +1297,11 @@
 			y: 7.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				dependency: 8922001878721360008L
+				visible: 0b
+			}]
+			dependencies: ["7BD151701A8DF088"]
 			id: "5BB48F9198C041EF"
 			tasks: [{
 				id: "53902100908426C5"
@@ -1526,6 +1536,31 @@
 			}]
 			x: -3.75d
 			y: -4.5d
+		}
+		{
+			dependencies: ["654F2B3B0CD1F42F"]
+			id: "4F3C876D9EEA1ED7"
+			tasks: [{
+				id: "6AEE927C2DB4BFE6"
+				item: { count: 1, id: "gtceu:stainless_steel_frame" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.75d
+		}
+		{
+			dependencies: ["4F3C876D9EEA1ED7"]
+			icon: {
+				id: "gtceu:electric_blast_furnace"
+			}
+			id: "44E9E456C064F01F"
+			shape: "gear"
+			tasks: [{
+				id: "71A5CCC268F4434B"
+				type: "checkmark"
+			}]
+			x: 1.25d
+			y: 3.75d
 		}
 	]
 }
