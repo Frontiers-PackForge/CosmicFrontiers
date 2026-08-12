@@ -1,0 +1,38 @@
+ServerEvents.recipes(event => {
+    event.recipes.gtceu.pyrolyse_oven('frontiers:petrochem/coal_carbonization')
+        .itemInputs('16x minecraft:coal')
+        .itemOutputs('16x gtceu:coke_gem')
+        .outputFluids('8000x cosmiccore:hot_coking_vapors')
+        .duration(320)
+        .EUt(96)
+
+    event.recipes.cosmiccore.fractional_condenser('frontiers:petrochem/hot_coking_vapor_condensation')
+        .inputFluids('8000x cosmiccore:hot_coking_vapors')
+        .outputFluids(['4400x gtceu:raw_coking_gas', '2400x gtceu:coal_tar', '1200x cosmiccore:ammonia_rich_liquor'])
+        .duration(120)
+        .EUt(120)
+
+    event.recipes.cosmiccore.phase_separator('frontiers:petrochem/raw_coking_gas_aromatic_wash')
+        .inputFluids('4400x gtceu:raw_coking_gas')
+        .outputFluids(['4000x gtceu:sour_refinery_gas', '400x cosmiccore:aromatic_oil'])
+        .duration(80)
+        .EUt(120)
+
+    event.recipes.gtceu.distillation_tower('frontiers:petrochem/coal_tar_primary_fractionation')
+        .inputFluids('2400x gtceu:coal_tar')
+        .outputFluids(['600x cosmiccore:light_tar_oils', '400x cosmiccore:phenolic_oils', '900x cosmiccore:naphthalene_oils', '500x cosmiccore:tar_pitch'])
+        .duration(80)
+        .EUt(240)
+
+    event.recipes.cosmiccore.phase_separator('frontiers:petrochem/ammonia_rich_liquor_separation')
+        .inputFluids('1200x cosmiccore:ammonia_rich_liquor')
+        .outputFluids(['200x gtceu:ammonia', '1000x cosmiccore:sour_process_water'])
+        .duration(80)
+        .EUt(120)
+
+    event.recipes.gtceu.distillation_tower('frontiers:petrochem/naphthalene_oil_fractionation')
+        .inputFluids('900x cosmiccore:naphthalene_oils')
+        .outputFluids(['600x gtceu:naphthalene', '300x cosmiccore:tar_pitch'])
+        .duration(60)
+        .EUt(120)
+})

@@ -1,0 +1,21 @@
+ServerEvents.recipes(event => {
+    event.recipes.gtceu.mixer('frontiers:petrochem/starter_diesel_blending')
+        .inputFluids(['5000x gtceu:middle_fraction_distillates', '1000x gtceu:gas_oils'])
+        .outputFluids('6000x gtceu:diesel')
+        .duration(16)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.cosmiccore.fluid_catalytic_cracking('frontiers:petrochem/c4_octane_alkylation')
+        .itemInputs('16x cosmiccore:purple_zeolite_catalyst')
+        .inputFluids(['1000x gtceu:butane', '1000x gtceu:butene'])
+        .itemOutputs('16x cosmiccore:coked_purple_zeolite_catalyst')
+        .outputFluids('1000x gtceu:octane')
+        .duration(200)
+        .EUt(1920)
+
+    event.recipes.gtceu.large_chemical_reactor('frontiers:petrochem/ev_refinery_gasoline_blending')
+        .inputFluids(['8000x gtceu:raw_gasoline', '2000x cosmiccore:high_octane_reformate', '500x gtceu:octane', '500x gtceu:toluene'])
+        .outputFluids('11000x gtceu:gasoline')
+        .duration(160)
+        .EUt(1920)
+})

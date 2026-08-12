@@ -15,8 +15,8 @@ ServerEvents.recipes(event => {
         .EUt(-GTValues.V[GTValues.LV])
     event.remove({ id: 'gtceu:gas_turbine/benzene' })
 
-    event.recipes.gtceu.gas_turbine('worse_benzene')
-        .inputFluids('2x gtceu:benzene')
+    event.recipes.gtceu.gas_turbine('frontiers:crude_benzene_fuel')
+        .inputFluids('2x cosmiccore:crude_benzene')
         .duration(11)
         .EUt(-GTValues.V[GTValues.LV])
 
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
     //Cinder Gas
     event.recipes.gtceu.mixer('frontiers:ember_gas_unrefined')
         .itemInputs('embers:ember_grit')
-        .inputFluids('750x gtceu:naphtha')
+        .inputFluids('750x gtceu:light_naphtha')
         .inputFluids('250x gtceu:steam')
         .outputFluids('1000x gtceu:inert_cinder_gas')
         .duration(40)
@@ -90,7 +90,40 @@ ServerEvents.recipes(event => {
         .duration(40)
         .EUt(GTValues.VH[GTValues.MV]);
 
+    event.recipes.gtceu.gas_turbine('frontiers:petrochem/natural_gas_early_turbine_fuel')
+        .inputFluids('8x gtceu:natural_gas')
+        .duration(5)
+        .EUt(-GTValues.V[GTValues.LV])
 
+    event.recipes.gtceu.combustion_generator('frontiers:petrochem/middle_distillate_early_combustion_fuel')
+        .inputFluids('1x gtceu:middle_fraction_distillates')
+        .duration(10)
+        .EUt(-GTValues.V[GTValues.LV])
+
+    event.recipes.gtceu.gas_turbine('frontiers:petrochem/tail_gas_emergency_fuel')
+        .inputFluids('20x cosmiccore:tail_gas')
+        .duration(2)
+        .EUt(-GTValues.V[GTValues.LV])
+
+    event.recipes.gtceu.combustion_generator('frontiers:petrochem/middle_distillate_relief_fuel')
+        .inputFluids('1x gtceu:middle_fraction_distillates')
+        .duration(10)
+        .EUt(-32)
+
+    event.recipes.gtceu.combustion_generator('frontiers:petrochem/light_oil_relief_fuel')
+        .inputFluids('32x gtceu:light_oil')
+        .duration(5)
+        .EUt(-32)
+
+    event.recipes.gtceu.gas_turbine('frontiers:petrochem/wood_gas_relief_fuel')
+        .inputFluids('8x gtceu:wood_gas')
+        .duration(6)
+        .EUt(-32)
+
+    event.recipes.gtceu.gas_turbine('frontiers:petrochem/refinery_gas_relief_fuel')
+        .inputFluids('1x gtceu:refinery_gas')
+        .duration(5)
+        .EUt(-32)
 })
 
 

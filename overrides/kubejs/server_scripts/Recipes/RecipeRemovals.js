@@ -138,6 +138,13 @@ ServerEvents.recipes(event => {
         event.remove({ id: `create:crushing/${stone}` })
         event.remove({ id: `create:crushing/${stone}_recycling` })
     })
+    event.remove({ id: 'gtceu:electrolyzer/butane_electrolysis' })
+    event.remove({ id: 'gtceu:electrolyzer/butene_electrolysis' })
+
+    event.remove({ id: 'gtceu:industrial_chemvat/gasoline' })
+    event.remove({ id: 'gtceu:large_chemical_reactor/gasoline' })
+    event.remove({ id: 'gtceu:chemical_reactor/gasoline' })
+    event.remove({ id: 'gtceu:electrolyzer/propane_electrolysis' })
     event.remove({ id: 'occultism:crafting/chalk_blue_impure' })
     event.remove({ id: 'gtceu:shaped/hv_machine_hull' })
     event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_tenbrium_ingot' })
@@ -300,6 +307,14 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:autoclave/autoclave_dust_lazurite_water' })
     event.remove({ id: 'gtceu:autoclave/autoclave_dust_monazite_water' })
     event.remove({ id: 'gtceu:large_boiler/minecraft_lava' })
+    event.remove({ id: 'gtceu:alloy_smelter/copper_ingot_and_tin_dust_into_bronze' })
+    event.remove({ id: 'gtceu:alloy_smelter/copper_dust_and_tin_ingot_into_bronze' })
+    event.remove({ id: 'gtceu:alloy_smelter/copper_ingot_and_tin_ingot_into_bronze' })
+    event.remove({ id: 'gtceu:alloy_smelter/copper_dust_and_tin_dust_into_bronze' })
+    event.remove({ id: 'gtceu:alloy_smelter/annealed_copper_ingot_and_tin_dust_into_bronze' })
+    event.remove({ id: 'gtceu:alloy_smelter/annealed_copper_dust_and_tin_ingot_into_bronze' })
+    event.remove({ id: 'gtceu:alloy_smelter/annealed_copper_ingot_and_tin_ingot_into_bronze' })
+    event.remove({ id: 'gtceu:alloy_smelter/annealed_copper_dust_and_tin_dust_into_bronze' })
 
 
     //   event.remove({ id: '' })
