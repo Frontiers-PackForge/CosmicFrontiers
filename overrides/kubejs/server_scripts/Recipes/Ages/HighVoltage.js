@@ -1,4 +1,11 @@
 ServerEvents.recipes(event => {
+    event.recipes.gtceu.mixer('frontiers:ember_gas_unrefined')
+        .itemInputs('embers:ember_grit')
+        .inputFluids('750x gtceu:light_naphtha')
+        .inputFluids('250x gtceu:steam')
+        .outputFluids('1000x gtceu:inert_cinder_gas')
+        .duration(40)
+        .EUt(GTValues.VH[GTValues.LV])
 
     event.recipes.gtceu.assembler()
         .itemInputs('4x gtceu:steel_rod', '2x gtceu:tempered_iesnium_bolt', 'gtceu:small_steel_gear')

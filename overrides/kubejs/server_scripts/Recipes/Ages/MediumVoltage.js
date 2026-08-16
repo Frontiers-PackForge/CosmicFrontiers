@@ -58,13 +58,6 @@ ServerEvents.recipes(event => {
         'gtceu:copper_single_cable',
         'gtceu:copper_double_cable'
     )
-    event.recipes.gtceu.mixer()
-        .itemInputs('embers:ember_grit')
-        .inputFluids('1000x embers:dwarven_oil')
-        .inputFluids('250x gtceu:steam')
-        .outputFluids('1000x gtceu:inert_cinder_gas')
-        .EUt(GTValues.VA[GTValues.LV], 1)
-        .duration(100)
     event.recipes.gtceu.assembler()
         .itemInputs('cosmiccore:mv_cogwork_magicapacitor', 'cosmiccore:mv_modular_frameworks', '3x cosmiccore:mv_cladding', '2x malum:soulwoven_silk')
         .itemOutputs('gtceu:mv_machine_casing')

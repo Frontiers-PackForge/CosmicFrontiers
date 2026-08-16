@@ -19,3 +19,6 @@ ServerEvents.recipes(event => {
         .duration(160)
         .EUt(1920)
 })
+// General Fuel Recipes created from the EV section of the tree, may be extremely unbalanced or stupidly rated, since i've added the MPS these values might just suck too.
+// Ugh.
+// Updated Aug 2026 (If i forget about this script and suddenly power becomes overpowered in EV, hopefully this will remind me cause god I hate balancing power numbers...)
