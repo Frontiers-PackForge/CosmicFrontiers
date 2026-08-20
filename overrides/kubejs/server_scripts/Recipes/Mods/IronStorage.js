@@ -136,28 +136,28 @@ ServerEvents.recipes(event => {
     X: 'minecraft:diamond',
   })
 
-  event.recipes.gtceu.assembler("frontiers:skip_copper_chest")
+  event.recipes.gtceu.assembler('frontiers:copper_chest')
     .itemInputs('4x gtceu:copper_plate', 'minecraft:chest')
     .itemOutputs('ironchest:copper_chest')
     .circuit(3)
     .duration(100)
     .EUt(32);
 
-  event.recipes.gtceu.assembler("frontiers:skip_iron_chest")
+  event.recipes.gtceu.assembler('frontiers:iron_chest')
     .itemInputs('4x gtceu:iron_plate', 'minecraft:chest')
     .itemOutputs('ironchest:iron_chest')
     .circuit(3)
     .duration(100)
     .EUt(32);
 
-  event.recipes.gtceu.assembler("frontiers:skip_gold_chest")
+  event.recipes.gtceu.assembler('frontiers:gold_chest')
     .itemInputs('4x gtceu:gold_plate', 'minecraft:chest')
     .itemOutputs('ironchest:gold_chest')
     .circuit(3)
     .duration(100)
     .EUt(32);
 
-  event.recipes.gtceu.assembler("frontiers:skip_diamond_chest")
+  event.recipes.gtceu.assembler('frontiers:diamond_chest')
     .itemInputs('4x gtceu:diamond_plate', 'minecraft:chest')
     .itemOutputs('ironchest:diamond_chest')
     .circuit(3)

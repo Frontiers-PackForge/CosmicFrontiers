@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('16x cosmiccore:coked_purple_zeolite_catalyst')
         .outputFluids(['600x gtceu:refinery_gas', '2200x cosmiccore:cracked_gasoline', '900x cosmiccore:light_cycle_oil', '300x cosmiccore:slurry_oils'])
         .duration(160)
-        .EUt(480)
+        .EUt(GTValues.V[GTValues.HV], 2)
 
     event.recipes.cosmiccore.fluid_catalytic_cracking('frontiers:petrochem/vacuum_gas_oil_fcc')
         .itemInputs('16x cosmiccore:purple_zeolite_catalyst')
@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('16x cosmiccore:coked_purple_zeolite_catalyst')
         .outputFluids(['400x gtceu:refinery_gas', '1800x cosmiccore:cracked_gasoline', '1100x cosmiccore:light_cycle_oil', '700x cosmiccore:slurry_oils'])
         .duration(140)
-        .EUt(960)
+        .EUt(GTValues.V[GTValues.EV], 2)
 
     event.recipes.cosmiccore.hydrocracking('frontiers:petrochem/gas_oil_hydrocracking')
         .itemInputs('16x cosmiccore:blue_hydro_catalyst')
@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(['15x cosmiccore:blue_hydro_catalyst', 'cosmiccore:yellow_hydro_catalyst'])
         .outputFluids(['800x gtceu:refinery_gas', '1200x gtceu:light_naphtha', '800x cosmiccore:heavy_naphtha', '1200x gtceu:middle_fraction_distillates'])
         .duration(180)
-        .EUt(1200)
+        .EUt(GTValues.V[GTValues.EV], 2)
 
     event.recipes.cosmiccore.hydrocracking('frontiers:petrochem/vacuum_gas_oil_hydrocracking')
         .itemInputs('16x cosmiccore:blue_hydro_catalyst')
@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(['15x cosmiccore:blue_hydro_catalyst', 'cosmiccore:yellow_hydro_catalyst'])
         .outputFluids(['500x gtceu:refinery_gas', '1300x gtceu:light_naphtha', '800x cosmiccore:heavy_naphtha', '1400x gtceu:middle_fraction_distillates', '500x gtceu:hydrogen_sulfide'])
         .duration(280)
-        .EUt(1800)
+        .EUt(GTValues.V[GTValues.EV], 8)
 
     event.recipes.cosmiccore.catalytic_reforming('frontiers:petrochem/heavy_naphtha_catalytic_reforming')
         .itemInputs('16x cosmiccore:orange_recovery_catalyst')
@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(['15x cosmiccore:orange_recovery_catalyst', 'cosmiccore:depleted_orange_recovery_catalyst'])
         .outputFluids(['3050x cosmiccore:high_octane_reformate', '600x cosmiccore:aromatic_oil', '150x gtceu:hydrogen', '200x gtceu:refinery_gas'])
         .duration(180)
-        .EUt(480)
+        .EUt(GTValues.V[GTValues.HV], 2)
 
     event.recipes.cosmiccore.hydrocracking('frontiers:petrochem/middle_distillate_hydrocracking')
         .itemInputs('16x cosmiccore:blue_hydro_catalyst')
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(['15x cosmiccore:blue_hydro_catalyst', 'cosmiccore:yellow_hydro_catalyst'])
         .outputFluids(['3200x gtceu:light_naphtha', '1600x gtceu:refinery_gas', '1200x gtceu:ethane', '1200x gtceu:propane', '800x gtceu:butane'])
         .duration(240)
-        .EUt(1440)
+        .EUt(GTValues.V[GTValues.EV], 2)
 
     event.recipes.cosmiccore.fluid_catalytic_cracking('frontiers:petrochem/middle_distillate_catalytic_cracking')
         .itemInputs('16x cosmiccore:purple_zeolite_catalyst')
@@ -53,5 +53,5 @@ ServerEvents.recipes(event => {
         .itemOutputs('16x cosmiccore:coked_purple_zeolite_catalyst')
         .outputFluids(['2400x cosmiccore:cracked_gasoline', '2800x cosmiccore:olefin_gases', '1600x cosmiccore:light_cycle_oil', '1200x cosmiccore:slurry_oils'])
         .duration(180)
-        .EUt(480)
+        .EUt(GTValues.V[GTValues.HV], 4)
 })

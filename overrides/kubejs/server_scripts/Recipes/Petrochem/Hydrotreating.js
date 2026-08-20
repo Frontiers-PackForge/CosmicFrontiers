@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(['15x cosmiccore:blue_hydro_catalyst', 'cosmiccore:yellow_hydro_catalyst'])
         .outputFluids(['2400x gtceu:light_naphtha', '1600x cosmiccore:heavy_naphtha', '500x gtceu:hydrogen_sulfide'])
         .duration(120)
-        .EUt(320)
+        .EUt(GTValues.V[GTValues.HV], 2)
 
     event.recipes.cosmiccore.hydrotreating('frontiers:petrochem/sour_middle_distillate_hydrotreating')
         .itemInputs('16x cosmiccore:blue_hydro_catalyst')
@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(['15x cosmiccore:blue_hydro_catalyst', 'cosmiccore:yellow_hydro_catalyst'])
         .outputFluids(['4000x gtceu:middle_fraction_distillates', '500x gtceu:hydrogen_sulfide'])
         .duration(130)
-        .EUt(240)
+        .EUt(GTValues.V[GTValues.HV], 2)
 
     event.recipes.cosmiccore.hydrotreating('frontiers:petrochem/sour_gas_oil_hydrotreating')
         .itemInputs('16x cosmiccore:blue_hydro_catalyst')
@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(['15x cosmiccore:blue_hydro_catalyst', 'cosmiccore:yellow_hydro_catalyst'])
         .outputFluids(['4000x gtceu:gas_oils', '750x gtceu:hydrogen_sulfide'])
         .duration(150)
-        .EUt(360)
+        .EUt(GTValues.V[GTValues.HV], 2)
 
     event.recipes.cosmiccore.hydrotreating('frontiers:petrochem/cracked_naphtha_hydrotreating')
         .itemInputs('16x cosmiccore:blue_hydro_catalyst')
@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(['15x cosmiccore:blue_hydro_catalyst', 'cosmiccore:yellow_hydro_catalyst'])
         .outputFluids(['4000x gtceu:light_naphtha', '250x gtceu:hydrogen_sulfide'])
         .duration(180)
-        .EUt(360)
+        .EUt(GTValues.V[GTValues.HV], 2)
 
     event.recipes.cosmiccore.hydrotreating('frontiers:petrochem/cracked_gasoline_hydrotreating')
         .itemInputs('16x cosmiccore:blue_hydro_catalyst')
@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(['15x cosmiccore:blue_hydro_catalyst', 'cosmiccore:yellow_hydro_catalyst'])
         .outputFluids(['4000x gtceu:raw_gasoline', '250x gtceu:hydrogen_sulfide'])
         .duration(200)
-        .EUt(480)
+        .EUt(GTValues.V[GTValues.HV], 4)
 
     event.recipes.cosmiccore.hydrotreating('frontiers:petrochem/light_cycle_oil_hydrotreating')
         .itemInputs('16x cosmiccore:blue_hydro_catalyst')
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(['15x cosmiccore:blue_hydro_catalyst', 'cosmiccore:yellow_hydro_catalyst'])
         .outputFluids(['4000x gtceu:middle_fraction_distillates', '500x gtceu:hydrogen_sulfide'])
         .duration(220)
-        .EUt(480)
+        .EUt(GTValues.V[GTValues.HV], 8)
 
     event.recipes.cosmiccore.hydrotreating('frontiers:petrochem/waxy_distillate_hydrofinishing')
         .itemInputs('16x cosmiccore:blue_hydro_catalyst')
@@ -54,5 +54,5 @@ ServerEvents.recipes(event => {
         .outputFluids(['4000x gtceu:lubricant', '500x gtceu:hydrogen_sulfide'])
         .circuit(21)
         .duration(180)
-        .EUt(360)
+        .EUt(GTValues.V[GTValues.HV], 2)
 })

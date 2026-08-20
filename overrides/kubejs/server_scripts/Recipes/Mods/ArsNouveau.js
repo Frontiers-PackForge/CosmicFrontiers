@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
         .itemInputs('ars_nouveau:magebloom')
         .itemOutputs('ars_nouveau:magebloom_fiber')
         .duration(60)
-        .EUt(4)
+        .EUt(GTValues.V[GTValues.ULV], 1)
 
     event.remove({ output: 'ars_nouveau:blank_thread' })
     event.recipes.cosmiccore.spooling_machine('blank_thread')

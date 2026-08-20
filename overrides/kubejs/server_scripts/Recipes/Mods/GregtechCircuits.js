@@ -16,12 +16,12 @@ ServerEvents.recipes(event => {
     ]
 
     omniaTiers.forEach(tier => {
-        event.recipes.gtceu.forming_press(`omnia_${tier}`)
+        event.recipes.gtceu.forming_press(`frontiers:omnia_circuit_${tier}`)
             .itemInputs(`#gtceu:circuits/${tier}`)
             .itemOutputs(`cosmiccore:omnia_circuit_${tier}`)
             .circuit(27)
             .duration(10)
-            .EUt(GTValues.VH[GTValues.LV])
+            .EUt(GTValues.V[GTValues.LV], 1)
     })
 
     event.recipes.cosmiccore.mana_etching('frontiers:circuits/hex/runic_hex_cpu_wafer')
@@ -31,14 +31,14 @@ ServerEvents.recipes(event => {
         .itemOutputs('cosmiccore:runic_hex_cpu_wafer')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(320)
-        .EUt(GTValues.VA[GTValues.HV])
+        .EUt(GTValues.V[GTValues.HV], 8)
 
-    event.recipes.gtceu.cutter('frontiers:circuits/hex/runic_hex_cpu')
+    event.recipes.gtceu.cutter('frontiers:runic_hex_cpu')
         .itemInputs('cosmiccore:runic_hex_cpu_wafer')
         .itemOutputs('4x cosmiccore:runic_hex_cpu')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(100)
-        .EUt(GTValues.VH[GTValues.LV])
+        .EUt(GTValues.V[GTValues.LV], 1)
 
     event.recipes.cosmiccore.mana_etching('frontiers:circuits/hex/plastic_circuit_board')
         .itemInputs('4x ars_nouveau:magebloom_fiber', '2x gtceu:gold_foil')
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('cosmiccore:plastic_circuit_board')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(120)
-        .EUt(GTValues.VA[GTValues.HV])
+        .EUt(GTValues.V[GTValues.HV], 2)
 
     const etchants = [
         { fluid: 'iron_iii_chloride', amount: 250 },
@@ -54,14 +54,14 @@ ServerEvents.recipes(event => {
     ]
 
     etchants.forEach(etchant => {
-        event.recipes.gtceu.large_chemical_reactor(`frontiers:circuits/hex/runewoven_plastic_circuit_board_${etchant.fluid}`)
+        event.recipes.gtceu.large_chemical_reactor(`frontiers:runewoven_plastic_circuit_board/with_${etchant.fluid}`)
             .notConsumableItem('cosmiccore:rune_conjunction_arklythar')
             .itemInputs('cosmiccore:plastic_circuit_board', '6x cosmiccore:energetic_aluminium_foil')
             .inputFluids(`${etchant.amount}x gtceu:${etchant.fluid}`)
             .itemOutputs('cosmiccore:runewoven_plastic_circuit_board')
             .cleanroom(CleanroomType.CLEANROOM)
             .duration(600)
-            .EUt(GTValues.VA[GTValues.LV])
+            .EUt(GTValues.V[GTValues.LV], 4)
     })
 
     const removedHexRecipes = [
@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
         ]
 
         solders.forEach(([solder, amount]) => {
-            event.recipes.gtceu.circuit_assembler(`frontiers:circuits/hex/${name}_${solder}`)
+            event.recipes.gtceu.circuit_assembler(`frontiers:${name}/with_${solder}`)
                 .itemInputs(inputs)
                 .inputFluids(`${amount}x gtceu:${solder}`)
                 .itemOutputs(output)

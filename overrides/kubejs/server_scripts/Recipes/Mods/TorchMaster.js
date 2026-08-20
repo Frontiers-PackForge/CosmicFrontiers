@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ id: 'torchmaster:frozen_pearl' })
-    event.recipes.gtceu.chemical_bath('torchmaster:frozen_pearl')
+    event.recipes.gtceu.chemical_bath('frontiers:frozen_pearl')
         .itemInputs(
             '#c:ender_pearls'
         )
