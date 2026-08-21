@@ -208,6 +208,24 @@
 	quest.15E83FF40983A8F5.quest_subtitle: "Backpacks"
 	quest.168A6B3A2FD0CC45.quest_subtitle: "For the simple machines"
 	quest.168A6B3A2FD0CC45.title: "Basic LV Parts"
+	quest.16B7E08679F3FA97.quest_desc: [
+		"This multi is your pathway forwards to permanent power infrastructure."
+		""
+		"Each MPS can be built at dynamic lengths to generate anywhere from 4 to 16 Amps of power."
+		""
+		"The stator coils used inside of the MPS will determine what hatch you may place as an output."
+		""
+		"And the type of internal component you use will determine if the MPS uses steam/gas fuels or liquid combustion fuels."
+		""
+		""
+		"EMI and terminal in-wold preview can be configured to the length you desire."
+		""
+		"For further information/visualization, check out the ponder as well as read various tooltips."
+		""
+		"The MPS can also be throttled within the multiblocks menu, reducing production but also reducing fuel consumption"
+	]
+	quest.16B7E08679F3FA97.quest_subtitle: "The Modular Power Station"
+	quest.16B7E08679F3FA97.title: "The Most Important Power Multiblock"
 	quest.16EE5D3DB14F4331.quest_desc: [
 		""
 		"          &l&f Craft a Nether permit, unlocking nether Access."
@@ -848,6 +866,19 @@
 		"No like seriously, how the hell did you get here without batch crafting. Seriously, craft stuff in like multiples of 16 to 64 or something unless it's brutally expensive lol"
 	]
 	quest.634610E99CF32EB2.quest_subtitle: "Earlygame bread and butter"
+	quest.6504044E7910A105.quest_desc: [
+		"Any multiblock that accepts two+ energy hatches to boost recipe tier may also optionally just use a single 4A or 16A energy hatch."
+		""
+		"In short you need at least &e4 amps&r of power to boost the Recipe tier from one to the next"
+		""
+		"Eg. you need 4A LV to unlock a recipe Tier of MV (instead of LV)"
+		""
+		"Any power >&e4A&r will instead be routed to &bboost recipe speed&r rather than a 2nd Recipe Tier boost (In the case of 16A hatches)"
+		""
+		"Machines that accept only one energy hatch will never tier-boost with 4A or 16A hatches and will instead use the recipe tier of the hatch itself."
+	]
+	quest.6504044E7910A105.quest_subtitle: "How to run higher grade recipes."
+	quest.6504044E7910A105.title: "Recipe Tier Boosting"
 	quest.654F2B3B0CD1F42F.quest_subtitle: "Make a lot of this"
 	quest.666A77BC58F33CD0.quest_desc: [
 		"The Electric Blast furnace uses high heat and plenty of EU to smelt dusts into usable products."
@@ -1065,6 +1096,7 @@
 	quest.7FE634D65F26BB7A.quest_subtitle: "Foods of the Nether"
 	task.1B611E179BDDC444.title: "Yeah"
 	task.2627A4C621E3C941.title: "Reach Y: -300 of the Abyss"
+	task.3D403FABBBC01CED.title: "Got it!"
 	task.454A92A4FCC0F185.title: "Any #c:tools/mining_tool"
 	task.4F2DCF87BF14A5A0.title: "To Somewhere Beyond"
 	task.5BADA7689FDD8595.title: "Any Shadebloom Boots"
