@@ -136,6 +136,23 @@ ServerEvents.recipes(event => {
     X: 'minecraft:diamond',
   })
 
+  event.shaped('metalbarrels:copper_barrel', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:copper_plate', B: 'gtceu:double_copper_plate', C: 'minecraft:barrel' })
+  event.shaped('metalbarrels:iron_barrel', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:iron_plate', B: 'gtceu:double_iron_plate', C: 'metalbarrels:copper_barrel' })
+  event.shaped('metalbarrels:silver_barrel', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:silver_plate', B: 'gtceu:double_silver_plate', C: 'metalbarrels:iron_barrel' })
+  event.shaped('metalbarrels:gold_barrel', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:gold_plate', B: 'gtceu:double_gold_plate', C: 'metalbarrels:silver_barrel' })
+  event.shaped('metalbarrels:diamond_barrel', ['AAA', 'ABA', 'AAA'], { A: 'gtceu:diamond_plate', B: 'metalbarrels:gold_barrel' })
+  event.shaped('metalbarrels:obsidian_barrel', ['AAA', 'ABA', 'AAA'], { A: 'gtceu:dense_obsidian_plate', B: 'metalbarrels:diamond_barrel'})
+  event.shaped('metalbarrels:netherite_barrel', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:chrysanthium_plate', B: 'gtceu:double_chrysanthium_plate', C: 'metalbarrels:obsidian_barrel' })
+
+  event.shaped('metalbarrels:obsidian_to_netherite', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:chrysanthium_plate', B: 'gtceu:double_chrysanthium_plate', C: 'create:andesite_casing' })
+  event.shaped('metalbarrels:diamond_to_obsidian', ['AAA', 'ABA', 'AAA'], { A: 'gtceu:dense_obsidian_plate', B: 'create:andesite_casing' })
+  event.shaped('metalbarrels:gold_to_diamond', ['AAA', 'ABA', 'AAA'], { A: 'gtceu:diamond_plate', B: 'create:andesite_casing' })
+  event.shaped('metalbarrels:silver_to_gold', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:gold_plate', B: 'gtceu:double_gold_plate', C: 'create:andesite_casing' })
+  event.shaped('metalbarrels:iron_to_silver', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:silver_plate', B: 'gtceu:double_silver_plate', C: 'create:andesite_casing' })
+  event.shaped('metalbarrels:copper_to_iron', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:iron_plate', B: 'gtceu:double_iron_plate', C: 'create:andesite_casing' })
+  event.shaped('metalbarrels:wood_to_copper', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:copper_plate', B: 'gtceu:double_copper_plate', C: 'create:andesite_casing' })
+
+
   event.recipes.gtceu.assembler('frontiers:copper_chest')
     .itemInputs('4x gtceu:copper_plate', 'minecraft:chest')
     .itemOutputs('ironchest:copper_chest')
