@@ -188,6 +188,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'create:andesite_alloy' })
     event.remove({ id: 'gtceu:compressor/compress_plate_dust_wood' })
     event.remove({ id: 'gtceu:shaped/bronze_bricks_hull' })
+    event.remove({ id: 'gtceu:centrifuge/air_separation' })
     event.remove({ output: 'gtceu:lv_field_generator' })
     event.remove({ output: 'neovitae:blood_orb_weak' })
 

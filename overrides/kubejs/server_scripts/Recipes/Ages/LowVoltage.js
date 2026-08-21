@@ -147,6 +147,12 @@ ServerEvents.recipes(event => {
         .circuit(6)
         .EUt(GTValues.VA[GTValues.LV], 2)
         .duration(100)
+    event.recipes.gtceu.centrifuge('frontiers:nitrogen/from_air_centri')
+        .inputFluids('10000x gtceu:air')
+        .outputFluids('3900x gtceu:nitrogen')
+        .outputFluids('1000x gtceu:oxygen')
+        .EUt(GTValues.V[GTValues.LV], 2)
+        .duration(400)
     event.shaped('cosmiccore:modular_power_station', ['ABA', 'CDE', 'AFA'], { A: 'cosmiccore:lv_cladding', B: 'gtceu:lv_combustion', C: 'gtceu:lv_steam_turbine', D: 'cosmiccore:lv_modular_frameworks', E: 'gtceu:lv_gas_turbine', F: 'cosmiccore:lightweight_dark_steel_casing' })
     event.shaped('cosmiccore:industrial_converter_shell', ['AAA', 'BBB', 'AAA'], { A: 'cosmiccore:lv_cladding', B: 'gtceu:long_wrought_iron_rod' })
 
