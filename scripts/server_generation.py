@@ -32,7 +32,13 @@ def generate_serverpack_zip(
     overrides_src = os.path.join(root_dir, "overrides")
     if not os.path.isdir(overrides_src):
         raise RuntimeError("Required pack input is missing: overrides")
+    config = load_json(os.path.join(root_dir, "server-mods-config.json"))
+    client_only_directories = set(
+        config.get("client_only_override_directories", [])
+    )
     for name in os.listdir(overrides_src):
+        if name in client_only_directories:
+            continue
         copy_any(os.path.join(overrides_src, name), os.path.join(serverpack_dir, name))
     apply_override_mod_policy(root_dir, serverpack_dir)
 

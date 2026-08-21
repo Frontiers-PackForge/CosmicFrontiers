@@ -98,6 +98,38 @@ def validate_release(root_dir, expected_version):
     if missing:
         errors.append(f"declared override jars are missing: {missing}")
 
+    client_only_directories = config.get("client_only_override_directories", [])
+    if not isinstance(client_only_directories, list):
+        errors.append("client_only_override_directories must be a list")
+        client_only_directories = []
+    valid_client_only_directory_names = [
+        name for name in client_only_directories if isinstance(name, str)
+    ]
+    duplicate_client_only_directories = sorted(
+        name
+        for name, count in Counter(valid_client_only_directory_names).items()
+        if count > 1
+    )
+    if duplicate_client_only_directories:
+        errors.append(
+            "client_only_override_directories contains duplicate names: "
+            f"{duplicate_client_only_directories}"
+        )
+    for name in client_only_directories:
+        if (
+            not isinstance(name, str)
+            or not name
+            or name in {".", ".."}
+            or os.path.basename(name) != name
+        ):
+            errors.append(
+                "every client_only_override_directories entry must be a top-level directory name"
+            )
+            continue
+        path = os.path.join(root_dir, "overrides", name)
+        if not os.path.isdir(path):
+            errors.append(f"client-only override directory is missing: {name}")
+
     for entry in declared_overrides:
         filename = entry.get("filename")
         if not filename or not filename.lower().endswith(".jar"):
