@@ -361,6 +361,13 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'metalbarrels:diamond_barrel' })
     event.remove({ output: 'metalbarrels:obsidian_barrel' })
     event.remove({ output: 'metalbarrels:netherite_barrel' })
+    event.remove({ id: 'gtceu:distillery/distill_biomass_to_ethanol' })
+    event.remove({ id: 'gtceu:distillery/distill_biomass_to_water' })
+    event.remove({ id: 'gtceu:distillery/distill_water_small' })
+    event.remove({ id: 'gtceu:distillery/distill_water_large_to_distilled_water' })
+    event.remove({ id: 'gtceu:assembler/cover_infinite_water' })
+    event.remove({ id: 'gtceu:distillation_tower/distill_water_large' })
+    
 
     //   event.remove({ id: '' })
     //   event.remove({ id: '' })

@@ -1562,5 +1562,57 @@
 			x: 1.25d
 			y: 3.75d
 		}
+		{
+			id: "5FC9534817A442EA"
+			tasks: [{
+				id: "6EEA13EFD352D4AB"
+				item: { count: 1, id: "gtceu:mv_canner" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5FC9534817A442EA"]
+			id: "1AB5A5EFAE74D076"
+			tasks: [{
+				id: "7E4D9AD5CEC53E54"
+				item: { count: 1, id: "cosmiccore:lv_capacitor_battery" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5FC9534817A442EA"]
+			id: "400AE9FA07D9F107"
+			tasks: [{
+				id: "18BE6ACAD7FB2F7A"
+				item: { count: 1, id: "cosmiccore:mv_capacitor_battery" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				dependency: 8922001878721360008L
+				visible: 0b
+			}]
+			dependencies: [
+				"7BD151701A8DF088"
+				"1AB5A5EFAE74D076"
+				"400AE9FA07D9F107"
+			]
+			dependency_requirement: "one_completed"
+			id: "35410493D650E8B5"
+			tasks: [{
+				id: "0B4542D46241FB22"
+				item: { count: 1, id: "cosmiccore:capacitor_array" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 3.0d
+		}
 	]
 }

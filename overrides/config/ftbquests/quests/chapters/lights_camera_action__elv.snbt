@@ -26,12 +26,6 @@
 			y: 7.5d
 		}
 		{
-			id: "609829E71AD34D00"
-			linked_quest: "3F9E4F1CC420E8B0"
-			x: 8.5d
-			y: 6.0d
-		}
-		{
 			id: "1C41B50035BF7546"
 			linked_quest: "6CE8C80587A22B88"
 			x: 0.0d
@@ -43,7 +37,7 @@
 			shape: "rsquare"
 			size: 1.5d
 			x: -5.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			id: "2FD2407CFACF0837"
@@ -51,7 +45,13 @@
 			shape: "rsquare"
 			size: 1.5d
 			x: -9.0d
-			y: 5.0d
+			y: 4.5d
+		}
+		{
+			id: "08828AB44ED9115B"
+			linked_quest: "286A2D01AA1775F0"
+			x: -5.0d
+			y: 7.5d
 		}
 	]
 	quests: [
@@ -391,10 +391,9 @@
 		}
 		{
 			dependencies: [
-				"7E599592D75268AC"
-				"07D8585C88A58A28"
 				"70B3AAFA82B777E9"
 				"18E0AFF44EE3DEEC"
+				"4EC14E444BA1DE40"
 			]
 			dependency_requirement: "one_completed"
 			id: "2326B949825927BF"
@@ -405,7 +404,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2326B949825927BF"]
@@ -426,7 +425,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 8.75d
+			x: 9.0d
 			y: 4.5d
 		}
 		{
@@ -440,55 +439,14 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
-			dependencies: ["142E630146522E09"]
-			id: "29D9ADD4DB314E5E"
-			tasks: [{
-				id: "2BE0803A91E8DD97"
-				item: { count: 1, id: "gtceu:multi_phase_oil_bucket" }
-				type: "item"
-			}]
-			x: 7.0d
-			y: 7.5d
-		}
-		{
-			cosmiccore_dependency_lines: [{
-				dependency: 4584188455677913264L
-				target_link: 6960359296665341184L
-				visible: 1b
-			}]
 			dependencies: [
-				"29D9ADD4DB314E5E"
-				"7E599592D75268AC"
-				"3F9E4F1CC420E8B0"
+				"6CE8C80587A22B88"
+				"70B3AAFA82B777E9"
 			]
-			id: "07D8585C88A58A28"
-			min_width: 350
-			tasks: [{
-				id: "5074C455C8899AA3"
-				item: { count: 1, id: "gtceu:light_naphtha_bucket" }
-				type: "item"
-			}]
-			x: 7.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["61F2E48EEF38C362"]
-			hide_dependency_lines: true
-			id: "7E599592D75268AC"
-			size: 1.25d
-			tasks: [{
-				id: "00CCDD621C1E5A51"
-				item: { count: 1, id: "gtceu:lv_distillery" }
-				type: "item"
-			}]
-			x: 5.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["6CE8C80587A22B88"]
+			dependency_requirement: "one_completed"
 			icon: {
 				id: "gtceu:oxygen_bucket"
 			}
@@ -505,19 +463,18 @@
 					type: "checkmark"
 				}
 			]
-			x: 8.5d
+			x: 7.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["70B3AAFA82B777E9"]
 			id: "6CE8C80587A22B88"
 			tasks: [{
 				id: "756AEDA261ACCB52"
 				item: { count: 1, id: "gtceu:lv_centrifuge" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 2.9107142857142847d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["151E0F259ECF9EAF"]
@@ -538,7 +495,7 @@
 				}
 			]
 			x: 5.5d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["61F2E48EEF38C362"]
@@ -601,9 +558,9 @@
 					0
 				]
 				size: [I;
+					300000000
 					1
-					1
-					1
+					300000000
 				]
 				type: "location"
 			}]
@@ -1224,22 +1181,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"07D8585C88A58A28"
-				"286A2D01AA1775F0"
-			]
-			dependency_requirement: "one_completed"
-			id: "0BDABE8C11A47ABB"
-			shape: "gear"
-			tasks: [{
-				id: "3213C18C8108BC14"
-				item: { count: 1, id: "gtceu:hydrogen_sulfide_bucket" }
-				type: "item"
-			}]
-			x: 5.0d
-			y: 6.0d
-		}
-		{
 			cosmiccore_dependency_lines: [{
 				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
 				dependency: 9213777286767245336L
@@ -1316,6 +1257,7 @@
 				"7621976F82BCC814"
 				"4C6420829C67E0C6"
 			]
+			dependency_requirement: "one_completed"
 			icon: {
 				id: "gtceu:phenolic_printed_circuit_board"
 			}
@@ -1353,7 +1295,10 @@
 				target_link: 5165104816938472475L
 				visible: 1b
 			}]
-			dependencies: ["3F9E4F1CC420E8B0"]
+			dependencies: [
+				"3F9E4F1CC420E8B0"
+				"40E9979B215578FF"
+			]
 			hide_dependency_lines: false
 			id: "4C6420829C67E0C6"
 			shape: "square"
@@ -1961,7 +1906,7 @@
 				type: "checkmark"
 			}]
 			x: -7.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			cosmiccore_dependency_lines: [
@@ -2069,24 +2014,193 @@
 			y: 1.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/optional_quest_line.png"
+				dependency: 7379842590229871824L
+				visible: 1b
+			}]
 			dependencies: ["666A77BC58F33CD0"]
 			icon: {
 				id: "gtceu:high_voltage_hazard_sign_block"
 			}
 			id: "6504044E7910A105"
-			tasks: [
-				{
-					id: "3D403FABBBC01CED"
-					type: "checkmark"
-				}
-				{
-					id: "5457EA746232372A"
-					item: { count: 1, id: "gtceu:high_voltage_hazard_sign_block" }
-					type: "item"
-				}
-			]
+			shape: "gear"
+			tasks: [{
+				id: "3D403FABBBC01CED"
+				type: "checkmark"
+			}]
 			x: 8.0d
 			y: -1.0d
+		}
+		{
+			id: "21EC2FF351067FFF"
+			tasks: [{
+				id: "0D01F536B707CFE2"
+				item: { count: 1, id: "cosmiccore:lv_desalter" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["142E630146522E09"]
+			icon: {
+				id: "gtceu:multi_phase_oil_bucket"
+			}
+			id: "586869B01BCA15E9"
+			tasks: [
+				{
+					id: "0FDF9D7ED30D4CDD"
+					item: { count: 1, id: "gtceu:multi_phase_oil_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3DBBA01FDF1D49EF"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"586869B01BCA15E9"
+				"21EC2FF351067FFF"
+			]
+			icon: {
+				id: "gtceu:oil_bucket"
+			}
+			id: "0B1C1CC8B96E4AFC"
+			tasks: [
+				{
+					id: "1AF97786CADE17B2"
+					item: { count: 1, id: "gtceu:oil_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "45FA7A4D240096FE"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"0B1C1CC8B96E4AFC"
+				"20EB753AB406564A"
+			]
+			id: "2F5E6FC176A68A97"
+			shape: "hexagon"
+			tasks: [{
+				id: "0E1D1784BFB34831"
+				item: { count: 1, id: "gtceu:middle_fraction_distillates_bucket" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 11.0d
+		}
+		{
+			id: "20EB753AB406564A"
+			tasks: [{
+				id: "65A4F07D843B03C6"
+				item: { count: 1, id: "gtceu:lv_distillery" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 11.0d
+		}
+		{
+			icon: {
+				id: "gtceu:ethanol_bucket"
+			}
+			id: "5156A433A39D8C82"
+			tasks: [
+				{
+					id: "4547223B242AD261"
+					item: { count: 1, id: "gtceu:ethanol_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0B02CD38DF68DF8F"
+					type: "checkmark"
+				}
+			]
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "gtceu:sulfuric_acid_bucket"
+			}
+			id: "0C77536FF23F6946"
+			tasks: [
+				{
+					id: "1788F81EAB9D212F"
+					item: { count: 1, id: "gtceu:sulfuric_acid_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7F07B0AEDE42B142"
+					type: "checkmark"
+				}
+			]
+			x: 5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0C77536FF23F6946"
+				"5156A433A39D8C82"
+			]
+			icon: {
+				id: "gtceu:ethylene_bucket"
+			}
+			id: "4EC14E444BA1DE40"
+			tasks: [
+				{
+					id: "2C4C6C8AD19059E1"
+					item: { count: 1, id: "gtceu:ethylene_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4F4BFC83A4D1702D"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				dependency: 2912189594220328432L
+				target_link: 613205006297403739L
+				visible: 1b
+			}]
+			dependencies: ["286A2D01AA1775F0"]
+			icon: {
+				id: "gtceu:chlorine_bucket"
+			}
+			id: "40E9979B215578FF"
+			tasks: [
+				{
+					id: "75CE521DB1CAEA1B"
+					item: { count: 1, id: "gtceu:chlorine_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0E1433F1F6F1D30C"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: 6.0d
 		}
 	]
 }

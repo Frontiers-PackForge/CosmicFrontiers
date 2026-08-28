@@ -2025,5 +2025,17 @@
 			x: -17.0d
 			y: -2.0d
 		}
+		{
+			dependencies: ["323FAC202CADB824"]
+			id: "677379DC62A11400"
+			shape: "gear"
+			tasks: [{
+				id: "2F7EE50A1E05EA63"
+				item: { count: 1, id: "minecraft:glass" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.5d
+		}
 	]
 }

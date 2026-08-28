@@ -66,6 +66,8 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.tags('item', event => {
+    event.add('cosmiccore:pressure_rated/1', 'minecraft:netherite_chestplate')
+    event.add('cosmiccore:pressure_rated/1', 'cosmiccore:netherite_travelers_boots')
     GTRegistries.MATERIALS.forEach(mat => {
         event.add('farmersdelight:tools/knives', [`gtceu:${mat.name}_knife`])
         event.add('occultism:tools/knife', [`gtceu:${mat.name}_knife`])

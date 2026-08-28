@@ -104,15 +104,6 @@
 	quest.072350DCC099E9C9.quest_subtitle: "Flocculation (Tier 3 Ore Processing)"
 	quest.07D19BDB1D7C756D.quest_desc: ["to be able to sort your ores into more useful products, the crushed ore mush first be washed and seperated in a flotation plant"]
 	quest.07D19BDB1D7C756D.quest_subtitle: "Washing your ores (Tier 1 Ore Processing)"
-	quest.07D8585C88A58A28.quest_desc: [
-		"To refine oil unto usable products, you must first start by distilling oil into the sulfuric material of your choice; in our case we will be distilling raw oil for sulfuric Naphtha"
-		""
-		""
-		"next take that sulfuric naphtha and desulfurize it with hydrogen. You will always get back hydrogen sulfidee, which contains all the hydrogen you used to desulfurize."
-		""
-		"If you process the hydrogen sulfide with an electrolyzer, you can get your hydrogen back and loop it for this process"
-	]
-	quest.07D8585C88A58A28.quest_subtitle: "Desulfurized"
 	quest.084D9D116B8A6C4A.quest_subtitle: "Biological Scrap Metals"
 	quest.09743DE5EC36B7A3.quest_desc: [
 		"To Reach the Firmament you must use the \"&eAscension to the Firmament&r\" Ritual (Check for it in EMI!)"
@@ -154,14 +145,6 @@
 		"Mining Ores in the Abyss will require specalized infrastructure at a later date, but most products you need to progress are automation chains once you've collected a initial bounty from a specific layer."
 	]
 	quest.0B34B5CE7CCBAE72.title: "Why isn't my miner working?"
-	quest.0BDABE8C11A47ABB.quest_desc: [
-		"Hydrogen Sulfide electrolyzes into hydrogen and sulfur."
-		""
-		"You can then loop the hydrogeen back into your desulfurizer setup."
-		""
-		"And as a bonus, a free source of sulfur too!"
-	]
-	quest.0BDABE8C11A47ABB.quest_subtitle: "Getting your hydrogen back."
 	quest.0C0E3F2E637DA0A9.quest_desc: [
 		"You've been able to alloy smelt dawnstone, but you need some in molten form to create aspecti."
 		""
@@ -169,6 +152,13 @@
 		"Use a melter powered with a small amount of ember to makee your first molten dawnstone."
 	]
 	quest.0C0E3F2E637DA0A9.quest_subtitle: "Dawnstone but Molten"
+	quest.0C77536FF23F6946.quest_desc: [
+		"Made with that yellow dust you got from the nether, Sulfuric, and a pile of basic elements like hydrogen and oxygen (or water in some cases)"
+		""
+		""
+		"There's several methods you can take to reach Sulfuric Acid, I will let you decide which works for you."
+	]
+	quest.0C77536FF23F6946.quest_subtitle: "The other orange fluid, besides Ethanol"
 	quest.0EC4D52E2252406D.quest_subtitle: "Gregtech Oxygen Tank"
 	quest.0EC5D1285DF63FF4.quest_desc: [
 		"Steam Components are rather useful for logistics early on, allowing you a source of extraction/insertion for items and fluids."
@@ -261,6 +251,12 @@
 		"If i'm being for real, might just make this a multi, cause idk if this thing still obliterates FPS or not..."
 	]
 	quest.184972E80D9D1F2C.quest_subtitle: "This uh, thing."
+	quest.18E0AFF44EE3DEEC.quest_desc: [
+		"One early way of getting oxygen is from centrifuging air."
+		""
+		"It's generally lower power draw than other methods make it a nice starting source for both nitrogen and oxygen."
+	]
+	quest.18E0AFF44EE3DEEC.quest_subtitle: "Air Centrifuging and Others"
 	quest.1A6796453259700D.quest_desc: [
 		"Storage busses are one of the few blocks from AE2 you will become very familiar with by the end of this game. Storage busses as their name implies will expose any storage they're attached to to the ME network."
 		""
@@ -274,6 +270,7 @@
 		"This allows you to make very high throughput item movement with simple parts. Subnets as a whole will most likely have their own quest as well, but this is an extra tip. "
 	]
 	quest.1A6796453259700D.quest_subtitle: "A whole world of possibilities"
+	quest.1AB5A5EFAE74D076.quest_subtitle: "The minimum."
 	quest.1B387FD15E883317.quest_desc: [
 		"You'll need materials, lots of them, and that starts with *you* extracting them."
 		""
@@ -336,6 +333,7 @@
 	]
 	quest.20B57C1FF5037C74.quest_subtitle: "Power Warnings."
 	quest.20B57C1FF5037C74.title: "Read this or Explode"
+	quest.21EC2FF351067FFF.quest_subtitle: "How to get your first (proper) combustion fuels"
 	quest.2324271DEDC92B2E.quest_desc: [
 		"These Molds linked here are not all of them! These are just some of the more notable ones you may want to use with access to the MV Extruder."
 		""
@@ -450,6 +448,15 @@
 		"(Hold a Sphalerite Ore Chunk to Unlock this/Check the Dependencies)"
 	]
 	quest.2EDDE2D4F167CC02.quest_subtitle: "Have you done ore sorting?"
+	quest.2F5E6FC176A68A97.quest_desc: [
+		"Yes I know there are things like creosote and whatnot or even just the multi-phase oil that can also be burned."
+		""
+		"Hush, this is the first real deal."
+		""
+		""
+		"Can be useful in Modular Power Substations, as well as it's upgraded Diesel form you may make as soon as you reach an MV mixer."
+	]
+	quest.2F5E6FC176A68A97.quest_subtitle: "The Earliest Burnable Combustion Fuel"
 	quest.309B9C6A20CE437C.quest_desc: [
 		"Just as Going down has required some sort of charm to allow passage, throwing myself into the skies most likely carries the same risk."
 		""
@@ -491,6 +498,22 @@
 		"Firstly your goal is to make some ritual totems, to make the unchained rite to get access to blighted earth."
 	]
 	quest.33A577DB6CA4CEDB.quest_subtitle: "Crafting Altar of Malum"
+	quest.35410493D650E8B5.quest_desc: [
+		"The Power Capacitor is a large power buffer that will act as a cushion for many of your hungry production demands."
+		""
+		"There are times where you simply consume more power than you produce for a breif moment, before you would experience the annoyances of machines shutting off or multiblocks stalling out."
+		""
+		"A power capacitor fixes this problem by allowing you to push out more amperage than you produce for a limited period of time."
+		""
+		""
+		"Each layer of the power capacitor can house 9 battery blocks that each add individual capacity to the multiblock itself. Eg. 1 LV capacitor will give the multi a capacity of 5 Million EU storage, neat!"
+		""
+		"You may build up to 5 layers of batteries for a total of 45 battery blocks."
+		""
+		""
+		"In the future, you will have access to a superior version of this multiblock (The Power Substation), but for now this will do."
+	]
+	quest.35410493D650E8B5.quest_subtitle: "Central Power in earlygame"
 	quest.35B7A194BB34BA44.quest_desc: [
 		"The \"&6Weirdly Durable Hammer&r\" has infinite durability and can mine obsidian."
 		""
@@ -577,12 +600,19 @@
 		"If you haven't i'd recommend making one to automatically fill your boilers before you start!"
 	]
 	quest.3FB852AA4A2FBB8B.quest_subtitle: "Did you make a pump?"
+	quest.400AE9FA07D9F107.quest_subtitle: "Optionally, Denser Storage"
 	quest.40646DECFE17F19E.quest_desc: [
 		"You can create pure gemstones by using a pile of explosives inside of an implosion compressor."
 		""
 		"You can automate tnt early on with powdercane before you have access to toluene"
 	]
 	quest.40646DECFE17F19E.quest_subtitle: "Where's all the gems?"
+	quest.40E9979B215578FF.quest_desc: [
+		"There's a few ways to get chlorine, but one of your earliest options is electrolyzing salt from earthen salt veins."
+		""
+		"By now you most likely have a variety of salt types from ore sorting, any one that contains Chlorine will do fine. Otherwise you may smelt earthen salts directly into rock salt and use that in dust form."
+	]
+	quest.40E9979B215578FF.quest_subtitle: "How do I get this stuff?"
 	quest.4425184AA625FA4E.quest_desc: ["Looks like it'd taste like extremely tart blue raspberry"]
 	quest.4425184AA625FA4E.quest_subtitle: "This looks edible"
 	quest.448F8668DD3AEB72.quest_desc: [
@@ -675,6 +705,7 @@
 	]
 	quest.4978BF804A8975F5.quest_subtitle: "Base Create Behavior"
 	quest.4978BF804A8975F5.title: "Generating SU"
+	quest.49A607F0508C8F58.quest_subtitle: "TODO: WIP CONTENT"
 	quest.4A608CA30FD3D86D.quest_desc: [
 		"Silver can be hand sorted from Crushed Galenite ore by hand or washed with a create fan."
 		""
@@ -741,10 +772,11 @@
 		"This might not work/apply in all cases, please let me know if you find strange places you can/can't breathe when you should/shouldn't be able to!"
 	]
 	quest.4CBACE925D480CAA.quest_subtitle: "Breathing in places you can't"
-	quest.4D779318D62835EC.quest_desc: ["TODO : Deed Cutscene"]
+	quest.4D779318D62835EC.quest_desc: ["TODO: WIP CONTENT"]
 	quest.4D779318D62835EC.quest_subtitle: "Victory of LV"
 	quest.4E3A7CB013A59A37.quest_desc: ["You can now use concrete to produce coke bricks more efficiently!"]
 	quest.4E3A7CB013A59A37.quest_subtitle: "Better Coke Brick Recipe"
+	quest.4EC14E444BA1DE40.quest_subtitle: "The first source"
 	quest.50930E8761259EFD.quest_desc: [
 		"It says parallel, but it's more like 'batch processing'"
 		""
@@ -756,6 +788,8 @@
 	]
 	quest.50930E8761259EFD.quest_subtitle: "The tooltip lies"
 	quest.50A60E8F488274DF.quest_subtitle: "Flocculation Solution"
+	quest.5156A433A39D8C82.quest_desc: ["Can be distilled from biomass at a distillery. There are multiple methods to produce biomass, I will leave it up to you to figure out what works for you the best."]
+	quest.5156A433A39D8C82.quest_subtitle: "The other orange fluid, besides Sulfuric Acid"
 	quest.534DBCED4E339D89.quest_desc: [
 		"Stick an Ember receptor on it, and an ember emitter on your ember source."
 		""
@@ -855,6 +889,7 @@
 		"This is the difference between this being &ctedious as hell&r and &emildly managable&r until you an automate Essentia Vitae."
 	]
 	quest.5E380EE48FCB8769.quest_subtitle: "The Altar of Life"
+	quest.5FC9534817A442EA.quest_subtitle: "Making larger batteries"
 	quest.601F4BCD183CC077.quest_desc: ["You'll need an Electric Blast Furnace to process this metal, if you haven't made one already. I'd recommend you do so."]
 	quest.601F4BCD183CC077.quest_subtitle: "A mundane but durable metal"
 	quest.634610E99CF32EB2.quest_desc: [
@@ -904,6 +939,18 @@
 		"I suggest you either raid bastions and trade with piglins, villagers, or consider getting to LV :^)"
 	]
 	quest.67110A5418804D33.quest_subtitle: "Piglin Economics 101"
+	quest.677379DC62A11400.quest_desc: [
+		"Tired of the summer and winter seasons!? Yeah me too! Make some glass, "
+		"they'll make your crops &aimmune to the weather&r (as long as the glass is within &e16 bloocks&r AND can &esee the sky&r.)"
+		""
+		""
+		"This seasonal immunity behavior also counts from crops below y-48 deep undervground."
+		""
+		""
+		""
+		"It's also pretty and glass is needed for progression, so you'll probably have spare glass for farms at some point :)"
+	]
+	quest.677379DC62A11400.quest_subtitle: "Making your crops stronger"
 	quest.685F89265F6746A7.quest_desc: [
 		"No get your mind out of the gutter. Stop."
 		""

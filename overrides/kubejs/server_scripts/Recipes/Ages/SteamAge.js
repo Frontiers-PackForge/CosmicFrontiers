@@ -532,7 +532,12 @@ ServerEvents.recipes(event => {
             "weight": 2500
         }
     })
-
+    event.recipes.gtceu.bender('frontiers:andesite_sheet')
+        .itemInputs('create:andesite_alloy')
+        .itemOutputs('createdeco:andesite_sheet')
+        .EUt(GTValues.VA[GTValues.LV], 2)
+        .circuit(1)
+        .duration(100)
     event.recipes.gtceu.coke_oven('frontiers:arcane_charcoal/from_soulwood')
         .itemInputs('#malum:soulwood_logs')
         .itemOutputs('malum:arcane_charcoal')
