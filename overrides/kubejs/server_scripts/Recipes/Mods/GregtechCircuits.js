@@ -154,7 +154,7 @@ ServerEvents.recipes(event => {
     addHexCircuitRecipes(
         'mainframe_iv',
         [
-            '2x gtceu:galvanized_ethersteel_frame',
+            '2x cosmiccore:galvanized_ethersteel_frame',
             '6x cosmiccore:hex_processor_supercomputer',
             '8x gtceu:smd_inductor',
             '16x gtceu:smd_capacitor',

@@ -88,28 +88,6 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.NO_SMELTING
         )
-    event.create('gtceu:galvanized_ethersteel')
-        .color(0xeb4258).secondaryColor(0x8f0e5c)
-        .ingot()
-        .liquid()
-        .element(GTElements.get('ether_steel'))
-        .iconSet(GTMaterialIconSet.SHINY)
-        .cableProperties(GTValues.V[GTValues.HV], 4, 4, false)
-        .flags(
-            GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_BOLT_SCREW,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.GENERATE_SPRING,
-            GTMaterialFlags.GENERATE_SPRING_SMALL,
-            GTMaterialFlags.GENERATE_FOIL,
-            GTMaterialFlags.GENERATE_FINE_WIRE,
-            GTMaterialFlags.NO_SMELTING,
-            GTMaterialFlags.GENERATE_FRAME,
-            GTMaterialFlags.GENERATE_GEAR,
-            GTMaterialFlags.GENERATE_SMALL_GEAR
-        )
-
-
 })
 
 GTCEuStartupEvents.materialModification(event => {

@@ -553,14 +553,14 @@
 				id: "6845F4E5F89C3C23"
 				ignore_dimension: false
 				position: [I;
-					0
-					-100
-					0
+					-30000000
+					-1024
+					-30000000
 				]
 				size: [I;
-					300000000
-					1
-					300000000
+					60000000
+					925
+					60000000
 				]
 				type: "location"
 			}]
@@ -704,14 +704,14 @@
 					id: "2627A4C621E3C941"
 					ignore_dimension: false
 					position: [I;
-						0
-						-300
-						0
+						-30000000
+						-1024
+						-30000000
 					]
 					size: [I;
-						1
-						1
-						1
+						60000000
+						725
+						60000000
 					]
 					type: "location"
 				}
@@ -773,8 +773,8 @@
 				item: { count: 1, id: "cosmiccore:rainbow_cane" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -6.5d
+			x: 3.0d
+			y: -5.0d
 		}
 		{
 			cosmiccore_dependency_lines: [{
@@ -2201,6 +2201,23 @@
 			]
 			x: -5.0d
 			y: 6.0d
+		}
+		{
+			dependencies: [
+				"44E9E456C064F01F"
+				"6F0EB4BB758B4308"
+			]
+			icon: {
+				id: "gtceu:electric_blast_furnace"
+			}
+			id: "230BE17C3009554C"
+			shape: "gear"
+			tasks: [{
+				id: "17B983221BA1B305"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -3.0d
 		}
 	]
 }

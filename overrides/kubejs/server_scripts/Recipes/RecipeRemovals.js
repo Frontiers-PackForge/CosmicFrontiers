@@ -140,6 +140,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'occultism:ritual/craft_storage_remote' })
     event.remove({ mod: 'cognition' })
     event.remove({ mod: 'ae2' })
+    event.custom({ type: 'ae2:facade' }).id('ae2:special/facade')
     event.remove({ id: 'occultism:crafting/lens_frame' })
     event.remove({ id: 'occultism:crafting/iesnium_pickaxe' })
     event.remove({ type: 'occultism:crushing' })
@@ -367,6 +368,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:distillery/distill_water_large_to_distilled_water' })
     event.remove({ id: 'gtceu:assembler/cover_infinite_water' })
     event.remove({ id: 'gtceu:distillation_tower/distill_water_large' })
+    event.remove({ id: 'enderio:powered_spawner' })
     
 
     //   event.remove({ id: '' })

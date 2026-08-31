@@ -1,5 +1,4 @@
 StartupEvents.registry('gtceu:element', event => {
-    event.create('ether_steel').protons(27).neutrons(177).symbol('Ma₂FeMnNi(Si(Fe₂S₂)₅(Cr₂ZiAbAl)Hg₃)')
     event.create('manasteel').protons(20).neutrons(80).symbol('Ma*(Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AuAg)')
     event.create('runesteel').protons(20).neutrons(80).symbol('FeC*?')
     event.create('zanite').protons(134).neutrons(335).symbol('Zi')

@@ -414,7 +414,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.V[GTValues.MV], 2)
 
     event.recipes.gtceu.assembler('frontiers:dense_energy_cell')
-        .itemInputs('8x ae2:energy_cell', '16x gtceu:galvanized_ethersteel_plate', '32x gtceu:electrum_foil', '8x gtceu:terrasteel_double_wire')
+        .itemInputs('8x ae2:energy_cell', '16x cosmiccore:galvanized_ethersteel_plate', '32x gtceu:electrum_foil', '8x gtceu:terrasteel_double_wire')
         .itemOutputs('ae2:dense_energy_cell')
         .duration(320)
         .EUt(GTValues.V[GTValues.HV], 4)
@@ -446,19 +446,19 @@ ServerEvents.recipes(event => {
     }).id('frontiers:ae2/quantum/entangled_singularity_from_pearl')
 
     event.recipes.gtceu.assembler('frontiers:crafting_unit')
-        .itemInputs('gtceu:stainless_steel_frame', '4x gtceu:stainless_steel_plate', '4x gtceu:galvanized_ethersteel_plate', '4x gtceu:galvanized_ethersteel_screw', '#gtceu:circuits/hv')
+        .itemInputs('gtceu:stainless_steel_frame', '4x gtceu:stainless_steel_plate', '4x cosmiccore:galvanized_ethersteel_plate', '4x cosmiccore:galvanized_ethersteel_screw', '#gtceu:circuits/hv')
         .itemOutputs('ae2:crafting_unit')
         .duration(160)
         .EUt(GTValues.V[GTValues.HV], 2)
 
     event.recipes.gtceu.assembler('frontiers:molecular_assembler')
-        .itemInputs('gtceu:stainless_steel_frame', '6x gtceu:glass_plate', '4x gtceu:galvanized_ethersteel_screw', 'gtceu:hv_robot_arm', 'minecraft:crafting_table')
+        .itemInputs('gtceu:stainless_steel_frame', '6x gtceu:glass_plate', '4x cosmiccore:galvanized_ethersteel_screw', 'gtceu:hv_robot_arm', 'minecraft:crafting_table')
         .itemOutputs('ae2:molecular_assembler')
         .duration(160)
         .EUt(GTValues.V[GTValues.HV], 2)
 
     event.recipes.gtceu.assembler('frontiers:blank_pattern')
-        .itemInputs('32x gtceu:fine_galvanized_ethersteel_wire', '16x gtceu:stainless_steel_plate', '2x #gtceu:circuits/hv', 'gtceu:diamond_lens')
+        .itemInputs('32x cosmiccore:fine_galvanized_ethersteel_wire', '16x gtceu:stainless_steel_plate', '2x #gtceu:circuits/hv', 'gtceu:diamond_lens')
         .inputFluids('576x gtceu:soldering_alloy')
         .itemOutputs('8x ae2:blank_pattern')
         .duration(90)

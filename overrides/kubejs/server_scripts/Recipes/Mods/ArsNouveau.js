@@ -270,7 +270,7 @@ ServerEvents.recipes(event => {
         carryOverComponentData: true,
         extraInputs: [
             { count: 8, item: 'cosmiccore:terraweave_cloth' },
-            { count: 8, item: 'gtceu:galvanized_ethersteel_ingot' },
+            { count: 8, item: 'cosmiccore:galvanized_ethersteel_ingot' },
             { count: 1, item: 'ars_nouveau:wilden_tribute' }
         ],
         input: {

@@ -334,6 +334,20 @@
 	quest.20B57C1FF5037C74.quest_subtitle: "Power Warnings."
 	quest.20B57C1FF5037C74.title: "Read this or Explode"
 	quest.21EC2FF351067FFF.quest_subtitle: "How to get your first (proper) combustion fuels"
+	quest.230BE17C3009554C.quest_desc: [
+		"Now that you have access to Somarust casings and Stainless steel, it's worth considering upgrading your EBFS to the 2nd tier."
+		""
+		"Tier 2 EBFS take more space and materials to construct their larger frame, but come with multiple benefits"
+		""
+		"1. Every recipe that runs will reduce the total duration of the next recipe by 5% up to a max of 50% (half duration)."
+		"2. This duration cut also cuts total EU demand in half, saving you 50% of your power, or 2 ingots for the price of one in EU!"
+		"3. Upon Reaching Max Discount, it will also grant 1 free parallel, useful when you're smelting on-tier voltage ingots that you can do 2 at a time with a standard energy hatch. (I keep forgetting to do this someone remind me eventually please lol)"
+		""
+		""
+		"The T2 EBF is larger than its sibling T1 EBF, so make sure you got enough space (free in minecraft) "
+	]
+	quest.230BE17C3009554C.quest_subtitle: "Tier 2"
+	quest.230BE17C3009554C.title: "A Better EBF"
 	quest.2324271DEDC92B2E.quest_desc: [
 		"These Molds linked here are not all of them! These are just some of the more notable ones you may want to use with access to the MV Extruder."
 		""
@@ -1081,6 +1095,8 @@
 		"Note: This dimension is currently under Functional Development, new features for Gravity Behavior and Content will show up in future Nightlies, but for now this quest and recipes to access the firmament are so you can check out what exists"
 	]
 	quest.7886325B74847F55.quest_subtitle: "The Skies Above"
+	quest.79797A9CA0D22B2A.quest_desc: ["Not Sure how I really want to 'integrate' or 'theme' ars into progression, Neo Vitae already feels alienated atm"]
+	quest.79797A9CA0D22B2A.quest_subtitle: "A Dev Fiasco"
 	quest.7A016FB22E827915.quest_desc: [
 		"Diving below the heavy fog, the clicking seems to be more of a faint but persisting chittering."
 		""

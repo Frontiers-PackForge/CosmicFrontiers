@@ -22,7 +22,7 @@
 		{
 			id: "1CEC27502DB0445D"
 			linked_quest: "4994B932F264D4E2"
-			x: 13.0d
+			x: 15.5d
 			y: -4.5d
 		}
 		{
@@ -35,39 +35,45 @@
 			id: "35E50DA02FE0BCF4"
 			linked_quest: "142A4F7E8D1A72B3"
 			shape: "rsquare"
-			x: 10.75d
+			x: 13.25d
 			y: 8.5d
 		}
 		{
 			id: "03AEC1449142EFB3"
 			linked_quest: "1109F476F38A663D"
-			x: 16.0d
-			y: 5.5d
+			x: 18.5d
+			y: 8.5d
 		}
 		{
 			id: "361CDFE2B464AF38"
 			linked_quest: "43C63859BA47960F"
-			x: 16.0d
-			y: 3.0d
+			x: 21.5d
+			y: -3.0d
 		}
 		{
 			id: "32330F37681CF496"
 			linked_quest: "40377B4F3EF1743E"
 			shape: "rsquare"
-			x: 11.5d
-			y: -1.5d
+			x: 17.0d
+			y: -0.5d
 		}
 		{
 			id: "16CF6C4A35BDBC64"
 			linked_quest: "597E2D324D5A073A"
-			x: 3.5d
+			x: 6.0d
 			y: 8.5d
 		}
 		{
 			id: "758E547B74B70E82"
 			linked_quest: "34AA6DE07FA9C2C4"
-			x: 5.0d
+			x: 7.5d
 			y: 9.5d
+		}
+		{
+			id: "3C4286AF7C4CBC03"
+			linked_quest: "654F2B3B0CD1F42F"
+			x: 11.5d
+			y: -1.5d
 		}
 	]
 	quests: [
@@ -91,17 +97,17 @@
 			dependencies: [
 				"1CC4E2D9AC744F6E"
 				"597E2D324D5A073A"
-				"654F2B3B0CD1F42F"
+				"7E1D47DC8C1598F0"
 			]
 			id: "3162B5D4D16183B7"
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
-				id: "34A334FF9E3FCB2C"
-				item: { count: 1, id: "gtceu:galvanized_ethersteel_ingot" }
+				id: "3B01A4F4E375159C"
+				item: { count: 1, id: "cosmiccore:galvanized_ethersteel_ingot" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 10.0d
 			y: 5.0d
 		}
 		{
@@ -118,7 +124,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["654F2B3B0CD1F42F"]
@@ -131,7 +137,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -608,14 +614,14 @@
 					id: "5CF3523293ABF984"
 					ignore_dimension: false
 					position: [I;
-						0
-						-500
-						0
+						-30000000
+						-1024
+						-30000000
 					]
 					size: [I;
-						1
-						1
-						1
+						60000000
+						525
+						60000000
 					]
 					type: "location"
 				}
@@ -704,7 +710,7 @@
 				item: { count: 1, id: "gtceu:source_oils_bucket" }
 				type: "item"
 			}]
-			x: 13.0d
+			x: 15.5d
 			y: -3.0d
 		}
 		{
@@ -715,7 +721,7 @@
 				item: { count: 1, id: "gtceu:source_enhanced_bio_fuel_bucket" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 17.5d
 			y: -3.0d
 		}
 		{
@@ -743,7 +749,7 @@
 				item: { count: 1, id: "gtceu:hv_machine_hull" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 10.0d
 			y: 10.5d
 		}
 		{
@@ -759,7 +765,7 @@
 				item: { count: 1, id: "gtceu:hv_machine_casing" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 10.0d
 			y: 8.5d
 		}
 		{
@@ -773,7 +779,7 @@
 				item: { count: 1, id: "cosmiccore:hv_cogwork_magicapacitor" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 11.0d
 			y: 7.0d
 		}
 		{
@@ -784,7 +790,7 @@
 				item: { count: 1, id: "cosmiccore:hv_modular_frameworks" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 10.0d
 			y: 7.0d
 		}
 		{
@@ -798,7 +804,7 @@
 				item: { count: 1, id: "cosmiccore:hv_cladding" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 9.0d
 			y: 7.0d
 		}
 		{
@@ -832,7 +838,7 @@
 				item: { count: 1, id: "gtceu:polyvinyl_chloride_ingot" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 7.5d
 			y: 7.0d
 		}
 		{
@@ -1069,7 +1075,7 @@
 				item: { count: 1, id: "gtceu:zano_aluminate_dust" }
 				type: "item"
 			}]
-			x: 13.0d
+			x: 15.5d
 			y: 5.0d
 		}
 		{
@@ -1239,7 +1245,7 @@
 				item: { count: 1, id: "cosmiccore:electret_blank" }
 				type: "item"
 			}]
-			x: 13.0d
+			x: 15.5d
 			y: 7.0d
 		}
 		{
@@ -1258,7 +1264,7 @@
 				item: { count: 1, id: "cosmiccore:polarized_bathyst_electret" }
 				type: "item"
 			}]
-			x: 10.75d
+			x: 13.25d
 			y: 7.0d
 		}
 		{
@@ -1278,7 +1284,7 @@
 				item: { count: 1, id: "gtceu:bathyst_electret_compound_dust" }
 				type: "item"
 			}]
-			x: 14.5d
+			x: 17.0d
 			y: 7.0d
 		}
 		{
@@ -1293,8 +1299,8 @@
 				item: { count: 1, id: "gtceu:soulresin_bucket" }
 				type: "item"
 			}]
-			x: 16.0d
-			y: 7.0d
+			x: 17.0d
+			y: 9.0d
 		}
 		{
 			cosmiccore_dependency_lines: [{
@@ -1308,7 +1314,7 @@
 				item: { count: 1, id: "gtceu:cinderwax_bucket" }
 				type: "item"
 			}]
-			x: 16.0d
+			x: 15.5d
 			y: 8.5d
 		}
 		{
@@ -1430,8 +1436,8 @@
 				item: { count: 1, id: "gtceu:alkaline_nyctophyte_extract_bucket" }
 				type: "item"
 			}]
-			x: 16.0d
-			y: 1.5d
+			x: 20.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2FC9C8F260048894"]
@@ -1441,8 +1447,8 @@
 				item: { count: 1, id: "gtceu:nyctophytic_chelant_bucket" }
 				type: "item"
 			}]
-			x: 16.0d
-			y: 0.0d
+			x: 18.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["04FAD1DACBEC819C"]
@@ -1452,7 +1458,7 @@
 				item: { count: 1, id: "cosmiccore:functionalized_nyctophyte_media" }
 				type: "item"
 			}]
-			x: 16.0d
+			x: 18.5d
 			y: -1.5d
 		}
 		{
@@ -1472,7 +1478,7 @@
 				item: { count: 1, id: "gtceu:zanite_dust" }
 				type: "item"
 			}]
-			x: 13.0d
+			x: 15.5d
 			y: -1.5d
 		}
 		{
@@ -1485,7 +1491,7 @@
 				item: { count: 1, id: "cosmiccore:sludge_digestor" }
 				type: "item"
 			}]
-			x: 19.0d
+			x: 21.5d
 			y: -1.5d
 		}
 		{
@@ -1498,7 +1504,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			cosmiccore_dependency_lines: [
@@ -1523,7 +1529,7 @@
 				item: { count: 1, id: "cosmiccore:terraweave_cloth" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 7.5d
 			y: 8.5d
 		}
 		{
@@ -1538,18 +1544,6 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["654F2B3B0CD1F42F"]
-			id: "4F3C876D9EEA1ED7"
-			tasks: [{
-				id: "6AEE927C2DB4BFE6"
-				item: { count: 1, id: "gtceu:stainless_steel_frame" }
-				type: "item"
-			}]
-			x: 2.5d
-			y: 3.75d
-		}
-		{
-			dependencies: ["4F3C876D9EEA1ED7"]
 			icon: {
 				id: "gtceu:electric_blast_furnace"
 			}
@@ -1613,6 +1607,62 @@
 			}]
 			x: -6.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["184972E80D9D1F2C"]
+			id: "79797A9CA0D22B2A"
+			tasks: [{
+				id: "07323933BE7B5B3F"
+				type: "custom"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				dependency: 7300101053609014319L
+				target_link: 4342181079001381891L
+				visible: 1b
+			}]
+			dependencies: ["654F2B3B0CD1F42F"]
+			id: "61F2F0FF046CA573"
+			tasks: [{
+				id: "6ABB95222A9F10EF"
+				item: { count: 1, id: "cosmiccore:biomeld_vivarium" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.0d
+		}
+		{
+			id: "2224F1AEBCC59835"
+			tasks: [{
+				id: "222DDAB285CD43AA"
+				item: { count: 1, id: "malum:imitation_flesh" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			id: "1B15278C77223BF4"
+			tasks: [{
+				id: "062E9EFD6CC42A2D"
+				item: { count: 1, id: "cosmiccore:mv_output_quintessentia_hatch" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			id: "7E1D47DC8C1598F0"
+			tasks: [{
+				id: "4698342AC5B0DD66"
+				item: { count: 1, id: "cosmiccore:kuvite_ingot" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 3.5d
 		}
 	]
 }

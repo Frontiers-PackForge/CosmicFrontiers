@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'gtceu:assembler/coil_nichrome' })
     event.recipes.cosmiccore.spooling_machine('coil_nichrome')
-        .itemInputs(['8x gtceu:nichrome_double_wire', '8x gtceu:galvanized_ethersteel_foil'])
+        .itemInputs(['8x gtceu:nichrome_double_wire', '8x cosmiccore:galvanized_ethersteel_foil'])
         .inputFluids('144x gtceu:kanthal')
         .itemOutputs('gtceu:nichrome_coil_block')
         .duration(400)
