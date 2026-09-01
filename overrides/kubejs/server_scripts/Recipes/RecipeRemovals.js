@@ -362,6 +362,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'metalbarrels:obsidian_barrel' })
     event.remove({ output: 'metalbarrels:netherite_barrel' })
 
+    event.remove({ id: 'bhc:enchanted_golden_apple' })
+
     //   event.remove({ id: '' })
     //   event.remove({ id: '' })
     //   event.remove({ id: '' })
