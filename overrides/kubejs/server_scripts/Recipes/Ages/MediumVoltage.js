@@ -162,12 +162,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('cosmiccore:mv_me_computation_core')
         .EUt(GTValues.V[GTValues.MV], 1)
         .duration(100)
-    event.recipes.cosmiccore.arcane_crucible()
-        .itemInputs('4x gtceu:stainless_steel_ingot', '2x gtceu:terrasteel_ingot', '6x gtceu:zano_aluminate_dust')
-        .itemOutputs('8x cosmiccore:galvanized_ethersteel_ingot', '5x gtceu:alumina_dust', '2x gtceu:electrum_ingot')
-        .input('cosmiccore:ember', 4000)
-        .EUt(GTValues.V[GTValues.MV], 8)
-        .duration(600)
     event.recipes.cosmiccore.biomana_digestor()
         .itemInputs('16x cosmiccore:blue_algae', '16x cosmiccore:green_algae', '16x cosmiccore:red_algae')
         .inputFluids('250x gtceu:benzene')
@@ -181,7 +175,7 @@ ServerEvents.recipes(event => {
 
 
     event.shaped('enderio:powered_spawner', ['ABA', 'ACA', 'DED'], { A: 'cosmiccore:double_energetic_aluminium_plate', B: 'enderio:dark_steel_bars', C: 'gtceu:dark_steel_frame', D: '#gtceu:circuits/hv', E: 'gtceu:mv_machine_hull' })
-    event.recipes.gtceu.chemical_reactor('frontiers:biomeld_nutrient').itemInputs('4x cosmiccore:blue_algae', '4x cosmiccore:green_algae', '4x cosmiccore:red_algae', 'malum:living_flesh').inputFluids('1000x gtceu:distilled_water').outputFluids('1000x cosmiccore:biomeld_nutrient').circuit(21).EUt(GTValues.V[GTValues.MV], 1).duration(200)
+    event.recipes.gtceu.chemical_reactor('frontiers:biomeld_nutrient').itemInputs('1x cosmiccore:blue_algae', '3x cosmiccore:driftweed').inputFluids('1000x gtceu:distilled_water').outputFluids('1000x cosmiccore:biomeld_nutrient').EUt(GTValues.V[GTValues.MV], 1).duration(200)
     event.recipes.gtceu.assembler('frontiers:mv_input_quintessentia_hatch').itemInputs('gtceu:mv_input_hatch', '2x cosmiccore:nostium_plate', '2x neovitae:tabula_rasa', '#gtceu:circuits/mv').notConsumableItem('neovitae:blood_orb_apprentice').itemOutputs('cosmiccore:mv_input_quintessentia_hatch').EUt(GTValues.V[GTValues.MV], 1).duration(200)
     event.recipes.gtceu.assembler('frontiers:mv_output_quintessentia_hatch').itemInputs('gtceu:mv_output_hatch', '2x cosmiccore:nostium_plate', '2x neovitae:tabula_rasa', '#gtceu:circuits/mv').notConsumableItem('neovitae:blood_orb_apprentice').itemOutputs('cosmiccore:mv_output_quintessentia_hatch').EUt(GTValues.V[GTValues.MV], 1).duration(200)
     event.recipes.gtceu.assembler('frontiers:mv_spawner_hatch').itemInputs('gtceu:mv_input_bus', 'enderio:powered_spawner', '4x malum:imitation_flesh', '2x cosmiccore:nostium_plate').notConsumableItem('neovitae:blood_orb_apprentice').itemOutputs('cosmiccore:mv_spawner_hatch').EUt(GTValues.V[GTValues.MV], 1).duration(300)

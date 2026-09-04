@@ -1,4 +1,14 @@
 ServerEvents.recipes(event => {
+    event.recipes.cosmiccore.sculk_biochamber('frontiers:magebloom_crop')
+        .itemInputs('minecraft:wheat_seeds', 'cosmiccore:bloomwyrm_algae')
+        .inputFluids('250x gtceu:potent_mana')
+        .itemOutputs('ars_nouveau:magebloom_crop')
+        .biopowerInput(8)
+        .bloomwyrmChargeInput(25)
+        .maxCampusParallel(16)
+        .EUt(GTValues.V[GTValues.MV], 1)
+        .duration(1200)
+
     event.recipes.gtceu.ore_washer('frontiers:washed_magebloom')
         .itemInputs('ars_nouveau:magebloom')
         .inputFluids('100x minecraft:water')

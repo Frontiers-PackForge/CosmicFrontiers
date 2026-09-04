@@ -53,16 +53,6 @@ ServerEvents.tags('item', event => {
     strip('c:ingots/silver', 'embers:silver_ingot', 'occultism:silver_ingot')
     strip('c:ingots/zinc', 'create:zinc_ingot')
     strip('c:ingots/lead', 'embers:lead_ingot')
-    strip('c:ingots/titanium_alloy', 'rocketnautics:titanium_alloy')
-    strip('c:nuggets/titanium', 'rocketnautics:titanium_nugget')
-    strip('c:nuggets/titanium_alloy', 'rocketnautics:titanium_alloy_nugget')
-    strip('c:plates/titanium', 'rocketnautics:titanium_sheet')
-    strip('c:plates/titanium_alloy', 'rocketnautics:titanium_alloy_sheet')
-    strip('c:raw_materials/titanium', 'rocketnautics:raw_titanium')
-    strip('c:storage_blocks/raw_titanium', 'rocketnautics:raw_titanium_block')
-    strip('c:storage_blocks/titanium', 'rocketnautics:titanium_block')
-    strip('c:storage_blocks/titanium_alloy', 'rocketnautics:titanium_alloy_block')
-    strip('create:crushed_raw_materials', 'rocketnautics:crushed_raw_titanium')
 })
 
 ServerEvents.tags('item', event => {
