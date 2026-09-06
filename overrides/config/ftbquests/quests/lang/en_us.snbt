@@ -810,7 +810,7 @@
 		""
 		"Leyline packages (name pending) allow you to store entire pre-built multiblocks ready for rapid deployment and keeping inventory clutter free."
 		""
-		"For now it only is available for the &bPower Tower&r but will come to almost &eall multiblocks&r, eventually, with the ability to &6save hatch presets at a later date as well&r."
+		"You can access this feature in HV, with Autocrafting, it is currently here to serve as a reminder for when i build HV LOL"
 	]
 	quest.5345A254BA73F18E.quest_subtitle: "The Ultimate Deployment Tool"
 	quest.5345A254BA73F18E.title: "Leyline Packages"

@@ -366,6 +366,9 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:assembler/cover_infinite_water' })
     event.remove({ id: 'gtceu:distillation_tower/distill_water_large' })
     event.remove({ id: 'enderio:powered_spawner' })
+    event.remove({ id: 'gtceu:distillery/distill_biomass_to_ethanol' })
+    event.remove({ id: 'ars_nouveau:novice_spellbook_alt' })
+    event.remove({ id: 'ars_nouveau:novice_spell_book' })
     
 
     event.remove({ id: 'bhc:enchanted_golden_apple' })

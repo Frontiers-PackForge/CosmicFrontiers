@@ -1740,24 +1740,11 @@
 			y: 5.5d
 		}
 		{
-			dependencies: [
-				"59470D3A58AB94B4"
-				"72F223DBE0BBFB8C"
-			]
+			dependencies: ["72F223DBE0BBFB8C"]
 			id: "5345A254BA73F18E"
 			tasks: [{
 				id: "63722F768AFFA36C"
 				item: { count: 1, id: "cosmiccore:power_tower_deployment_package" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 6.0d
-		}
-		{
-			id: "59470D3A58AB94B4"
-			tasks: [{
-				id: "5574D693CE345A5E"
-				item: { count: 1, id: "cosmiccore:oneiric_sieve" }
 				type: "item"
 			}]
 			x: 5.0d

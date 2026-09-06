@@ -10,6 +10,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:turbine_power_station/nitrobenzene' })
     event.recipes.gtceu.gas_turbine('frontiers:nitrobenzene').inputFluids('1x gtceu:nitrobenzene').duration(90).EUt(-GTValues.V[GTValues.LV])
     event.remove({ id: 'gtceu:gas_turbine/benzene' })
+    event.remove({ id: 'frontiers:gas_turbine/benzene' })
+    event.remove({ id: 'frontiers:turbine_power_station/benzene' })
     event.remove({ id: 'gtceu:turbine_power_station/benzene' })
     event.recipes.gtceu.gas_turbine('frontiers:benzene').inputFluids('2x gtceu:benzene').duration(75).EUt(-GTValues.V[GTValues.LV])
 
