@@ -805,6 +805,15 @@
 	quest.50A60E8F488274DF.quest_subtitle: "Flocculation Solution"
 	quest.5156A433A39D8C82.quest_desc: ["Can be distilled from biomass at a distillery. There are multiple methods to produce biomass, I will leave it up to you to figure out what works for you the best."]
 	quest.5156A433A39D8C82.quest_subtitle: "The other orange fluid, besides Sulfuric Acid"
+	quest.5345A254BA73F18E.quest_desc: [
+		"After learning you can spatially compress materials into denser forms, you imagined the same for &6Multiblocks&r."
+		""
+		"Leyline packages (name pending) allow you to store entire pre-built multiblocks ready for rapid deployment and keeping inventory clutter free."
+		""
+		"For now it only is available for the &bPower Tower&r but will come to almost &eall multiblocks&r, eventually, with the ability to &6save hatch presets at a later date as well&r."
+	]
+	quest.5345A254BA73F18E.quest_subtitle: "The Ultimate Deployment Tool"
+	quest.5345A254BA73F18E.title: "Leyline Packages"
 	quest.534DBCED4E339D89.quest_desc: [
 		"Stick an Ember receptor on it, and an ember emitter on your ember source."
 		""

@@ -391,7 +391,7 @@ ServerEvents.recipes(event => {
         .circuit(5)
         .duration(100)
     event.recipes.gtceu.assembler('frontiers:industrial_partwork')
-        .itemInputs('gtceu:steel_gearbox', 'gtceu:solid_machine_casing', 'gtceu:lv_electric_motor')
+        .itemInputs('gtceu:dark_steel_frame', 'gtceu:solid_machine_casing', 'gtceu:lv_electric_motor')
         .itemOutputs('cosmiccore:industrial_partwork')
         .EUt(GTValues.V[GTValues.LV], 1)
         .circuit(6)
