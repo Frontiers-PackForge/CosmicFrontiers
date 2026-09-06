@@ -1,6 +1,6 @@
 {
   "required_manifest_projects": [
-    {"name": "CosmicCore", "id": 946941}
+    {"name": "CosmicCore", "id": 946941, "override_patterns": ["cosmiccore.jar", "cosmiccore-*.jar"]}
   ],
   "blacklist": [
     {"name": "Chloride", "id": 931925},

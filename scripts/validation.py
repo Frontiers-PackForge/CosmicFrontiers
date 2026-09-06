@@ -1,5 +1,6 @@
 import os
 from collections import Counter
+from fnmatch import fnmatchcase
 from urllib.parse import urlparse
 
 from utils import get_display_version, load_json, sha256_file
@@ -41,10 +42,35 @@ def validate_release(root_dir, expected_version):
     if duplicate_projects:
         errors.append(f"manifest contains duplicate project IDs: {duplicate_projects}")
 
+    override_dir = os.path.join(root_dir, "overrides", "mods")
+    actual_overrides = set()
+    if os.path.isdir(override_dir):
+        actual_overrides = {
+            filename
+            for filename in os.listdir(override_dir)
+            if filename.lower().endswith(".jar")
+            and os.path.isfile(os.path.join(override_dir, filename))
+        }
+    alternative_overrides = set()
     for required in config.get("required_manifest_projects", []):
-        if required.get("id") not in project_ids:
+        alternatives = {
+            filename
+            for filename in actual_overrides
+            if any(
+                fnmatchcase(filename, pattern)
+                for pattern in required.get("override_patterns", [])
+            )
+        }
+        alternative_overrides.update(alternatives)
+        name = required.get("name", required.get("id"))
+        if len(alternatives) > 1:
+            errors.append(f"multiple override jars provide {name}: {sorted(alternatives)}")
+        if required.get("id") in project_ids and alternatives:
+            errors.append(f"{name} must be supplied by the manifest or an override jar, not both")
+        if required.get("id") not in project_ids and not alternatives:
             errors.append(
                 f"required manifest project {required.get('name', required.get('id'))} ({required.get('id')}) is missing"
+                + (f" and no override matches {required['override_patterns']}" if required.get("override_patterns") else "")
             )
 
     minecraft = manifest.get("minecraft", {})
@@ -82,16 +108,8 @@ def validate_release(root_dir, expected_version):
     if duplicate_overrides:
         errors.append(f"override_mods contains duplicate filenames: {duplicate_overrides}")
 
-    override_dir = os.path.join(root_dir, "overrides", "mods")
-    actual_overrides = set()
-    if os.path.isdir(override_dir):
-        actual_overrides = {
-            filename
-            for filename in os.listdir(override_dir)
-            if filename.lower().endswith(".jar")
-        }
     declared_set = {name for name in declared_names if name}
-    undeclared = sorted(actual_overrides - declared_set)
+    undeclared = sorted(actual_overrides - declared_set - alternative_overrides)
     missing = sorted(declared_set - actual_overrides)
     if undeclared:
         errors.append(f"undeclared override jars: {undeclared}")
