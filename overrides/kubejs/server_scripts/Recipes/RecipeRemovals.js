@@ -368,6 +368,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'enderio:powered_spawner' })
     
 
+    event.remove({ id: 'bhc:enchanted_golden_apple' })
+
     //   event.remove({ id: '' })
     //   event.remove({ id: '' })
     //   event.remove({ id: '' })

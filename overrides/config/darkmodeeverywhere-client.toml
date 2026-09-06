@@ -11,11 +11,11 @@ METHOD_SHADER_DUMP = false
 	#Pixels away from the left of the GUI in the x axis
 	# Default: 32
 	# Range: > 0
-	X = 2
+	X = 46
 	#Pixels away from the bottom of the GUI in the y axis
 	# Default: 2
 	# Range: > 0
-	Y = 24
+	Y = 3
 
 ["Main Menu Button"]
 	#Enabled
