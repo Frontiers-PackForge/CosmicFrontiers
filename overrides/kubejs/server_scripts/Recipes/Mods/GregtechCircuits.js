@@ -23,15 +23,20 @@ ServerEvents.recipes(event => {
             .duration(10)
             .EUt(GTValues.V[GTValues.LV], 1)
     })
-
-    event.recipes.cosmiccore.mana_etching('frontiers:circuits/hex/runic_hex_cpu_wafer')
+    event.recipes.cosmiccore.aio_lithography_processor('frontiers:new_circuit_board')
+        .itemInputs(['gtceu:4_4_oxydianiline_pyromellitimide_plate', 'gtceu:carbon_fibers'])
+        .inputFluids('144x gtceu:fluorinated_ethylene_propylene')
+        .itemOutputs('4x gtceu:fiber_reinforced_circuit_board')
+        .duration(660)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.cosmiccore.aio_lithography_processor('frontiers:circuits/hex/runic_hex_cpu_wafer')
         .notConsumableItem('malum:prismatic_focus_lens')
-        .itemInputs('cosmiccore:livirock_aluminite_wafer', 'cosmiccore:energetic_aluminium_foil')
+        .itemInputs('cosmiccore:otherworldy_silicon_wafer', 'cosmiccore:energetic_aluminium_foil')
         .inputFluids('16x cosmiccore:nostium')
         .itemOutputs('cosmiccore:runic_hex_cpu_wafer')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(320)
-        .EUt(GTValues.V[GTValues.HV], 8)
+        .EUt(GTValues.V[GTValues.HV], 4)
 
     event.recipes.gtceu.cutter('frontiers:runic_hex_cpu')
         .itemInputs('cosmiccore:runic_hex_cpu_wafer')
@@ -40,7 +45,7 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.V[GTValues.LV], 1)
 
-    event.recipes.cosmiccore.mana_etching('frontiers:circuits/hex/plastic_circuit_board')
+    event.recipes.cosmiccore.aio_lithography_processor('frontiers:circuits/hex/plastic_circuit_board')
         .itemInputs('4x ars_nouveau:magebloom_fiber', '2x gtceu:gold_foil')
         .inputFluids('144x gtceu:polyethylene')
         .itemOutputs('cosmiccore:plastic_circuit_board')
@@ -55,7 +60,6 @@ ServerEvents.recipes(event => {
 
     etchants.forEach(etchant => {
         event.recipes.gtceu.large_chemical_reactor(`frontiers:runewoven_plastic_circuit_board/with_${etchant.fluid}`)
-            .notConsumableItem('cosmiccore:rune_conjunction_arklythar')
             .itemInputs('cosmiccore:plastic_circuit_board', '6x cosmiccore:energetic_aluminium_foil')
             .inputFluids(`${etchant.amount}x gtceu:${etchant.fluid}`)
             .itemOutputs('cosmiccore:runewoven_plastic_circuit_board')
