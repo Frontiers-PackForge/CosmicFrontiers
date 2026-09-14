@@ -124,6 +124,48 @@ yeet('metalbarrels:silver_to_netherite')
 
 
 ServerEvents.recipes(event => {
+    const removedNanoQuantumCircuitRecipes = [
+        'nano_processor_hv_soc_soldering_alloy',
+        'nano_processor_hv_soc',
+        'nano_processor_hv_asmd',
+        'nano_processor_hv_asmd_soldering_alloy',
+        'nano_processor_hv',
+        'nano_processor_hv_soldering_alloy',
+        'nano_processor_assembly_ev_asmd_soldering_alloy',
+        'nano_processor_assembly_ev_soldering_alloy',
+        'nano_processor_assembly_ev_asmd',
+        'nano_processor_assembly_ev',
+        'nano_computer_iv_asmd',
+        'nano_computer_iv_soldering_alloy',
+        'nano_computer_iv_asmd_soldering_alloy',
+        'nano_computer_iv',
+        'nano_mainframe_luv',
+        'nano_mainframe_luv_soldering_alloy',
+        'nano_mainframe_luv_asmd',
+        'nano_mainframe_luv_asmd_soldering_alloy',
+        'quantum_processor_ev_soldering_alloy',
+        'quantum_processor_ev',
+        'quantum_processor_ev_asmd_soldering_alloy',
+        'quantum_processor_ev_asmd',
+        'quantum_processor_ev_soc',
+        'quantum_processor_ev_soc_soldering_alloy',
+        'quantum_assembly_iv',
+        'quantum_assembly_iv_asmd_soldering_alloy',
+        'quantum_assembly_iv_soldering_alloy',
+        'quantum_assembly_iv_asmd',
+        'quantum_computer_luv_asmd',
+        'quantum_computer_luv_soldering_alloy',
+        'quantum_computer_luv_asmd_soldering_alloy',
+        'quantum_computer_luv',
+        'quantum_mainframe_zpm',
+        'quantum_mainframe_zpm_asmd',
+        'quantum_mainframe_zpm_soldering_alloy',
+        'quantum_mainframe_zpm_asmd_soldering_alloy'
+    ]
+    removedNanoQuantumCircuitRecipes.forEach(recipe => {
+        event.remove({ id: `gtceu:circuit_assembler/${recipe}` })
+    })
+
     event.remove({ id: 'occultism:ritual/craft_satchel' })
     event.remove({ id: 'occultism:ritual/craft_dimensional_mineshaft' })
     event.remove({ id: 'occultism:ritual/craft_miner_foliot_unspecialized' })
@@ -369,6 +411,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:distillery/distill_biomass_to_ethanol' })
     event.remove({ id: 'ars_nouveau:novice_spellbook_alt' })
     event.remove({ id: 'ars_nouveau:novice_spell_book' })
+    event.remove({ id: 'gtceu:distillation_tower/distill_biomass' })
+    event.remove({ id: 'gtceu:distillery/distill_acetone_to_methane' })
+    event.remove({ id: 'gtceu:distillery/distill_acetone_to_ethenone' })
+    event.remove({ id: 'gtceu:distillation_tower/distill_acetone' })
+    event.remove({ id: 'gtceu:assembler/plascrete' })
+    event.remove({ id: 'gtceu:assembler/cleanroom_glass' })
     
 
     event.remove({ id: 'bhc:enchanted_golden_apple' })
