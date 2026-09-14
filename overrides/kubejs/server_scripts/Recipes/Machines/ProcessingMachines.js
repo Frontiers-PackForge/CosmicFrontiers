@@ -39,6 +39,19 @@ ServerEvents.recipes(event => {
             P: `gtceu:${machine.tier}_electric_pump`
         }).id(`frontiers:machines/${machine.tier}_laminator`)
 
+        event.shaped(`cosmiccore:${machine.tier}_aio_lithography_processor`, [
+            'CAC',
+            'RHR',
+            'ZBZ'
+        ], {
+            A: `gtceu:${machine.laminatorSpring}_spring`,
+            B: `gtceu:${machine.tier}_conveyor_module`,
+            C: `#gtceu:circuits/${machine.tier}`,
+            H: `gtceu:${machine.tier}_machine_hull`,
+            R: `gtceu:${machine.tier}_robot_arm`,
+            Z: `gtceu:${machine.cable}_single_cable`
+        }).id(`frontiers:machines/${machine.tier}_aio_lithography_processor`)
+
         event.shaped(`cosmiccore:${machine.tier}_chemical_dehydrator`, [
             'CAC',
             'BHB',
