@@ -1,0 +1,25 @@
+ServerEvents.recipes(event => {
+    event.recipes.gtceu.mixer('frontiers:petrochem/nickel_molybdenum_catalyst_dust')
+        .itemInputs('gtceu:nickel_dust', 'gtceu:molybdenum_dust')
+        .itemOutputs('2x gtceu:nickel_molybdenum_catalyst_dust')
+        .duration(100)
+        .EUt(GTValues.V[GTValues.MV], 1)
+
+    event.recipes.gtceu.canner('frontiers:petrochem/purple_zeolite_catalyst_manufacture')
+        .itemInputs('gtceu:zeolite_dust', 'gtceu:steel_fluid_cell')
+        .itemOutputs('cosmiccore:purple_zeolite_catalyst')
+        .duration(100)
+        .EUt(GTValues.V[GTValues.MV], 1)
+
+    event.recipes.gtceu.canner('frontiers:petrochem/blue_hydro_catalyst_manufacture')
+        .itemInputs('gtceu:nickel_molybdenum_catalyst_dust', 'gtceu:steel_fluid_cell')
+        .itemOutputs('cosmiccore:blue_hydro_catalyst')
+        .duration(100)
+        .EUt(GTValues.V[GTValues.MV], 1)
+
+    event.recipes.gtceu.canner('frontiers:petrochem/orange_recovery_catalyst_manufacture')
+        .itemInputs('gtceu:platinum_dust', 'gtceu:steel_fluid_cell')
+        .itemOutputs('cosmiccore:orange_recovery_catalyst')
+        .duration(100)
+        .EUt(GTValues.V[GTValues.MV], 1)
+})
