@@ -484,6 +484,4 @@ ServerEvents.recipes(event => {
     event.shapeless('ae2:crafting_monitor', ['ae2:crafting_unit', 'ae2:semi_dark_monitor'])
         .id('frontiers:ae2/crafting/crafting_monitor')
 
-    event.shapeless('ae2:crafting_accelerator', ['ae2:crafting_unit', '#gtceu:circuits/ev'])
-        .id('frontiers:ae2/crafting/crafting_accelerator')
 })
