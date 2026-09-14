@@ -13,7 +13,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'frontiers:gas_turbine/benzene' })
     event.remove({ id: 'frontiers:turbine_power_station/benzene' })
     event.remove({ id: 'gtceu:turbine_power_station/benzene' })
-    event.recipes.gtceu.gas_turbine('frontiers:benzene').inputFluids('2x gtceu:benzene').duration(75).EUt(-GTValues.V[GTValues.LV])
 
     event.recipes.gtceu.gas_turbine('frontiers:crude_benzene').inputFluids('1x cosmiccore:crude_benzene').duration(25).EUt(-GTValues.V[GTValues.LV])
 
