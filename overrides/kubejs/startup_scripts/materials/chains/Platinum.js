@@ -137,7 +137,7 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        .formula('(RuO4)(OsO4)(NaOH)(NaCl)(H2O)')
+        .formula('Na4(RuO4)3(OsO4)4(H2O)6')
     event.create('gtceu:ruthenium_osmium_tetroxides')
         .liquid()
         .color(0x364a5c).iconSet(GTMaterialIconSet.DULL)
@@ -145,7 +145,7 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        .formula('(RuO4)(OsO4)(NaOH)(NaCl)(H2O)')
+        .formula('(RuO4)3(OsO4)4(NaOH)4(H2O)4')
     event.create('gtceu:chlororuthenic_acid_osmium_tetroxide_solution')
         .liquid()
         .color(0x436c91).iconSet(GTMaterialIconSet.DULL)
@@ -153,7 +153,7 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        .formula('(3RuO4)(4OsO4)(2NaOH)(2NaCl)(14H2O)')
+        .formula('(RuO4)3(OsO4)4(NaCl)4(HCl)30(H2O)8')
     event.create('gtceu:impure_osmium_tetroxide')
         .dust()
         .color(0x496287).iconSet(GTMaterialIconSet.DULL)
@@ -169,6 +169,7 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('H2RuCl6(H2O)2')
     event.create('gtceu:ammonium_hexachlororuthenate')
         .dust()
         .color(0x444159).iconSet(GTMaterialIconSet.DULL)
@@ -200,6 +201,7 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('H2IrCl6(H2O)2')
     event.create('gtceu:ammonium_hexachloroiridate')
         .dust()
         .color(0x46729e).iconSet(GTMaterialIconSet.DULL)
@@ -207,6 +209,7 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('(NH4)2IrCl6')
     event.create('gtceu:cerium_oxide')
         .dust()
         .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
@@ -251,6 +254,7 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('BaO2')
     event.create('gtceu:barium_oxide')
         .dust()
         .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
@@ -258,6 +262,7 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
+        .formula('BaO')
     event.create('gtceu:carbon_tetrachloride')
         .gas()
         .color(0x6b90b5).iconSet(GTMaterialIconSet.DULL)
@@ -273,6 +278,6 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.DISABLE_DECOMPOSITION,
             GTMaterialFlags.NO_UNIFICATION
         )
-        .formula('CH3COONa')
+        .formula('NaC2H3O2')
 
 })

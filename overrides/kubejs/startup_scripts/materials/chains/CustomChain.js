@@ -1,5 +1,10 @@
 StartupEvents.registry('gtceu:material', event => {
-
+    event.create('gtceu:nickel_molybdenum_catalyst')
+        .dust()
+        .color(0x547da8)
+        .iconSet(GTMaterialIconSet.DULL)
+        .components('1x gtceu:nickel', '1x gtceu:molybdenum')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
     event.create('gtceu:trinium_tetraoxide_dichloride')
         .dust()
         .formula("KeO4Cl2")
