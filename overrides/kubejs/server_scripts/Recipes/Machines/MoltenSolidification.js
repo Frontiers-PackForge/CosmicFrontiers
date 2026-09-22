@@ -1,0 +1,22 @@
+ServerEvents.recipes(event => {
+    event.recipes.gtceu.vacuum_freezer('cosmiccore:molten_luminized_titanium_to_ingot')
+        .inputFluids('144x gtceu:molten_luminized_titanium')
+        .notConsumableItem('gtceu:ingot_casting_mold')
+        .itemOutputs('gtceu:luminized_titanium_ingot')
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.MV], 1)
+
+    event.recipes.gtceu.vacuum_freezer('cosmiccore:molten_starstruck_halite_to_ingot')
+        .inputFluids('144x cosmiccore:molten_starstruck_halite')
+        .notConsumableItem('gtceu:ingot_casting_mold')
+        .itemOutputs('cosmiccore:starstruck_halite_ingot')
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.MV], 1)
+
+    event.recipes.gtceu.vacuum_freezer('cosmiccore:molten_pale_steel_to_ingot')
+        .inputFluids('144x cosmiccore:molten_pale_steel')
+        .notConsumableItem('gtceu:ingot_casting_mold')
+        .itemOutputs('cosmiccore:pale_steel_ingot')
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.MV], 1)
+})

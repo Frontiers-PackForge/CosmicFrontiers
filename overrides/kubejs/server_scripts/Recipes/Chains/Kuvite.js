@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     })
 
     event.recipes.cosmiccore.sculk_biochamber('frontiers:chains/kuvite/meshgrown_flesh_framework')
-        .itemInputs('malum:imitation_flesh')
+        .chancedInput('malum:imitation_flesh', 2500)
         .chancedInput('cosmiccore:fiber_mesh_ingot_frame', 500)
         .inputFluids('250x cosmiccore:biomeld_nutrient')
         .itemOutputs('cosmiccore:meshgrown_flesh_framework')

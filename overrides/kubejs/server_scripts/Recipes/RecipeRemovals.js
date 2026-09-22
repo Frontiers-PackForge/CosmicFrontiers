@@ -120,7 +120,26 @@ yeet('metalbarrels:copper_to_gold')
 yeet('metalbarrels:copper_to_diamond')
 yeet('metalbarrels:diamond_to_netherite')
 yeet('metalbarrels:silver_to_netherite')
-
+yeet('gtceu:me_input_bus')
+yeet('gtceu:me_input_hatch')
+yeet('extendedae:entro_crystal')
+yeet('extendedae:entro_seed')
+yeet('extendedae:entro_dust')
+yeet('extendedae:entro_ingot')
+yeet('extendedae:concurrent_processor')
+yeet('extendedae:concurrent_processor_press')
+yeet('extendedae:concurrent_processor_print')
+yeet('extendedae:entro_shard')
+yeet('extendedae:entro_cluster_small')
+yeet('extendedae:entro_cluster_medium')
+yeet('extendedae:entro_cluster_large')
+yeet('extendedae:entro_cluster')
+yeet('extendedae:entro_budding_fully')
+yeet('extendedae:entro_budding_mostly')
+yeet('extendedae:entro_budding_half')
+yeet('extendedae:entro_budding_hardly')
+yeet('extendedae:entro_block')
+yeet('extendedae:machine_frame')
 
 
 ServerEvents.recipes(event => {
@@ -165,6 +184,39 @@ ServerEvents.recipes(event => {
     removedNanoQuantumCircuitRecipes.forEach(recipe => {
         event.remove({ id: `gtceu:circuit_assembler/${recipe}` })
     })
+
+    event.remove({ id: 'extendedae:assembler/ex_pattern_access_terminal' })
+    event.remove({ id: 'extendedae:assembler/caner' })
+    event.remove({ id: 'extendedae:assembler/oversize_interface' })
+    event.remove({ id: 'extendedae:assembler/crystal_fixer' })
+    event.remove({ id: 'extendedae:assembler/smart_annihilation_plane' })
+    event.remove({ id: 'extendedae:assembler/ex_import_bus' })
+    event.remove({ id: 'extendedae:assembler/ex_drive' })
+    event.remove({ id: 'extendedae:assembler/circuit_cutter' })
+    event.remove({ id: 'extendedae:assembler/ex_export_bus' })
+    event.remove({ id: 'extendedae:assembler/ex_pattern_provider' })
+    event.remove({ id: 'extendedae:assembler/entro_ingot_transformation' })
+    event.remove({ id: 'extendedae:assembler/ex_interface' })
+    event.remove({ id: 'extendedae:assembler/wireless_kit' })
+    event.remove({ id: 'extendedae:assembler/wireless_hub' })
+    event.remove({ id: 'extendedae:assembler/budding' })
+    event.remove({ id: 'extendedae:assembler/ex_io_port' })
+    event.remove({ id: 'extendedae:assembler/active_formation_plane' })
+    event.remove({ id: 'extendedae:assembler/concurrent_press' })
+    event.remove({ id: 'extendedae:assembler/concurrent_processor' })
+    event.remove({ id: 'extendedae:assembler/ex_molecular_assembler' })
+    event.remove({ id: 'extendedae:assembler/ex_charger' })
+
+
+
+
+    event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer' })
+    event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer_proxy' })
+    event.remove({ id: 'gtceu:assembler/me_export_bus' })
+    event.remove({ id: 'gtceu:assembler/me_export_hatch' })
+    event.remove({ id: 'gtceu:assembler/me_stocking_import_bus' })
+    event.remove({ id: 'gtceu:assembler/me_stocking_import_hatch' })
+    event.remove({ id: 'gtceu:centrifuge/rare_earth_separation' })
 
     event.remove({ id: 'occultism:ritual/craft_satchel' })
     event.remove({ id: 'occultism:ritual/craft_dimensional_mineshaft' })
@@ -418,6 +470,11 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:assembler/plascrete' })
     event.remove({ id: 'gtceu:assembler/cleanroom_glass' })
     
+    event.remove({ id: 'gtceu:assembler/hull_ev' })
+    event.remove({ id: 'gtceu:shaped/ev_machine_hull' })
+
+
+
 
     event.remove({ id: 'bhc:enchanted_golden_apple' })
 

@@ -41,6 +41,7 @@ StartupEvents.registry('gtceu:material', event => {
         .color(0x8A8FA6).secondaryColor(0x7C8595)
         .ingot()
         .dust()
+        ["fluid(com.gregtechceu.gtceu.api.fluids.store.FluidStorageKey,com.gregtechceu.gtceu.api.fluids.FluidBuilder)"](GTFluidStorageKeys.MOLTEN, new GTFluidBuilder().temperature(1941))
         .iconSet(GTMaterialIconSet.SHINY)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,

@@ -33,7 +33,9 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.combustion_generator('frontiers:gasoline').inputFluids('1x gtceu:gasoline').duration(75).EUt(-GTValues.V[GTValues.LV])
 
     //Misc Power Gen Recipes
-    event.recipes.gtceu.combustion_generator('frontiers:source_enhanced_bio_fuel').inputFluids("1x gtceu:source_enhanced_bio_fuel").duration(60).EUt(-32);
+    event.recipes.gtceu.combustion_generator('frontiers:source_enhanced_bio_fuel').inputFluids("1x gtceu:source_enhanced_bio_fuel").duration(20).EUt(-32);
+
+    event.recipes.gtceu.combustion_generator('frontiers:source_enhanced_bio_fuel').inputFluids("1x gtceu:thunder_boosted_source_diesel").duration(55).EUt(-32);
 
     event.recipes.gtceu.gas_turbine('frontiers:cinder_gas').inputFluids('1x gtceu:cinder_gas').duration(20).EUt(-GTValues.V[GTValues.LV])
 

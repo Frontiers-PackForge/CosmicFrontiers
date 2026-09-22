@@ -1,0 +1,48 @@
+ServerEvents.recipes(event => {
+    //Honestly this is not the best folder to put this script in, I might want to add some kind of generic "Frontiers Progress" Folder, meh, i'll worry later ig.
+    event.recipes.gtceu.macerator('cosmiccore:ammonia_rime_to_ammonium_chloride')
+        .itemInputs('cosmiccore:ammonia_rime')
+        .itemOutputs('gtceu:ammonium_chloride_dust')
+        .duration(150)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+
+    event.recipes.gtceu.macerator('cosmiccore:gravitic_faultstone_to_gravisomantic_powder')
+        .itemInputs('cosmiccore:gravitic_faultstone')
+        .itemOutputs('cosmiccore:gravisomantic_powder')
+        .duration(150)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+
+    event.recipes.gtceu.implosion_compressor('cosmiccore:gravisomantic_powder_to_gravglass_shards')
+        .itemInputs('4x cosmiccore:gravisomantic_powder')
+        .itemOutputs('3x cosmiccore:gravglass_shards')
+        .explosivesType('2x gtceu:dynamite')
+        .duration(5)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+
+    event.recipes.gtceu.forge_hammer('cosmiccore:stormglass_to_pale_scrap')
+        .itemInputs('cosmiccore:stormglass')
+        .chancedOutput('cosmiccore:pale_scrap', 7500)
+        .duration(10)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+
+    event.recipes.gtceu.chemical_reactor('cosmiccore:primordial_remnant_to_primordial_soup')
+        .itemInputs('cosmiccore:primordial_remnant')
+        .inputFluids('1000x gtceu:hydrofluoric_acid')
+        .outputFluids('1000x cosmiccore:primordial_soup')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV], 1)
+
+    event.recipes.gtceu.distillery('cosmiccore:primordial_soup_to_pale_oil')
+        .inputFluids('1000x cosmiccore:primordial_soup')
+        .outputFluids('1000x cosmiccore:pale_oil')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV], 1)
+
+    event.recipes.cosmiccore.alloy_blasting_kiln('cosmiccore:pale_steel')
+        .itemInputs('cosmiccore:pale_scrap')
+        .inputFluids('144x cosmiccore:pale_oil')
+        .outputFluids('144x cosmiccore:molten_pale_steel')
+        .blastFurnaceTemp(3600)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV], 4)
+})
