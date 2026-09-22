@@ -6,82 +6,14 @@ ServerEvents.recipes(event => {
         .duration(60)
         .EUt(GTValues.V[GTValues.HV], 1)
 
-    event.recipes.gtceu.centrifuge('frontiers:pyrolitic_cadmium_sulfide_fraction')
-        .inputFluids('1000x gtceu:sphalerite_slurry')
-        .outputFluids(
-            '1000x gtceu:pyrolitic_cadmium_sulfide_fraction',
-            '1000x gtceu:pyrolitic_gallium_sulfide_fraction',
-            '1000x gtceu:pyrolitic_germanium_sulfide_fraction',
-            '1000x gtceu:pyrolitic_indium_sulfide_fraction'
-        )
-        .duration(100)
-        .EUt(GTValues.V[GTValues.HV], 1)
-
-    // (ZnS)(CdS)(H2O) + 6O -> ZnO + CdO + 2SO2 + H2O (oxidative roasting)
-    event.recipes.cosmiccore.large_roaster('frontiers:chains/pyroltic/cadmium_sulfide_roasting')
-        .inputFluids('1000x gtceu:pyrolitic_cadmium_sulfide_fraction', '6000x gtceu:oxygen')
-        .itemOutputs('2x gtceu:zincite_dust', '2x gtceu:cadmium_oxide_dust')
-        .outputFluids('2000x gtceu:sulfur_dioxide', '1000x gtceu:distilled_water')
-        .duration(180)
-        .EUt(GTValues.V[GTValues.HV], 2)
-
-    // (ZnS)(Ga2S3)(H2O) + 12O -> ZnO + Ga2O3 + 4SO2 + H2O (oxidative roasting)
-    event.recipes.cosmiccore.large_roaster('frontiers:chains/pyroltic/gallium_sulfide_roasting')
-        .inputFluids('1000x gtceu:pyrolitic_gallium_sulfide_fraction', '12000x gtceu:oxygen')
-        .itemOutputs('2x gtceu:zincite_dust', '5x gtceu:gallium_oxide_dust')
-        .outputFluids('4000x gtceu:sulfur_dioxide', '1000x gtceu:distilled_water')
-        .duration(280)
-        .EUt(GTValues.V[GTValues.HV], 4)
-
-    // (ZnS)(GeS2)(H2O) + 9O -> ZnO + GeO2 + 3SO2 + H2O (oxidative roasting)
-    event.recipes.cosmiccore.large_roaster('frontiers:chains/pyroltic/germanium_sulfide_roasting')
-        .inputFluids('1000x gtceu:pyrolitic_germanium_sulfide_fraction', '9000x gtceu:oxygen')
-        .itemOutputs('2x gtceu:zincite_dust', '3x gtceu:germanium_dioxide_dust')
-        .outputFluids('3000x gtceu:sulfur_dioxide', '1000x gtceu:distilled_water')
-        .duration(220)
-        .EUt(GTValues.V[GTValues.HV], 2)
-
-    // (ZnS)(In2S3)(H2O) + 12O -> ZnO + In2O3 + 4SO2 + H2O (oxidative roasting)
-    event.recipes.cosmiccore.large_roaster('frontiers:chains/pyroltic/indium_sulfide_roasting')
-        .inputFluids('1000x gtceu:pyrolitic_indium_sulfide_fraction', '12000x gtceu:oxygen')
-        .itemOutputs('2x gtceu:zincite_dust', '5x gtceu:indium_oxide_dust')
-        .outputFluids('4000x gtceu:sulfur_dioxide', '1000x gtceu:distilled_water')
-        .duration(280)
-        .EUt(GTValues.V[GTValues.HV], 4)
-
-    // 4ZnO + CdO + Ga2O3 + GeO2 + In2O3 -> (ZnO)4(CdO)(Ga2O3)(GeO2)(In2O3)
-    event.recipes.gtceu.mixer('frontiers:sphaleritic_mixed_oxide_concentrate_dust')
-        .itemInputs(
-            '8x gtceu:zincite_dust',
-            '2x gtceu:cadmium_oxide_dust',
-            '5x gtceu:gallium_oxide_dust',
-            '3x gtceu:germanium_dioxide_dust',
-            '5x gtceu:indium_oxide_dust'
-        )
-        .itemOutputs('23x gtceu:sphaleritic_mixed_oxide_concentrate_dust')
-        .duration(120)
-        .EUt(GTValues.V[GTValues.HV], 1)
-
-    // (ZnO)4(CdO)(Ga2O3)(GeO2)(In2O3) + 13H2SO4 -> (ZnSO4)4(CdSO4)(Ga2(SO4)3)(Ge(SO4)2)(In2(SO4)3)(H2O)13
-    event.recipes.gtceu.large_chemical_reactor('frontiers:sphaleritic_mixed_sulfate_liquor')
-        .itemInputs('23x gtceu:sphaleritic_mixed_oxide_concentrate_dust')
-        .inputFluids('13000x gtceu:sulfuric_acid')
-        .outputFluids('1000x gtceu:sphaleritic_mixed_sulfate_liquor')
-        .duration(300)
-        .EUt(GTValues.V[GTValues.HV], 2)
-
-    // (ZnSO4)4(CdSO4)(Ga2(SO4)3)(Ge(SO4)2)(In2(SO4)3)(H2O)13 + X[H18] -> 4ZnSO4(H2O) + 9H2SO4(H2O) + X[CdGa2GeIn2]
+    // 4ZnS + CdS + Ga2S3 + GeS2 + In2S3 + 4H2O + 39O + 4H2SO4 + X[H18] -> 4ZnSO4(H2O) + 13SO2 + 13H2O + X[CdGa2GeIn2]
     event.recipes.gtceu.large_chemical_reactor('frontiers:metal_loaded_nyctophyte_media')
         .itemInputs('cosmiccore:functionalized_nyctophyte_media')
-        .inputFluids('1000x gtceu:sphaleritic_mixed_sulfate_liquor')
+        .inputFluids('1000x gtceu:sphalerite_slurry', '39000x gtceu:oxygen', '4000x gtceu:sulfuric_acid')
         .itemOutputs('cosmiccore:metal_loaded_nyctophyte_media')
-        .outputFluids(
-            '4000x gtceu:sphaleritic_zinc_sulfate_solution',
-            '13500x gtceu:diluted_sulfuric_acid',
-            '4500x gtceu:distilled_water'
-        )
-        .duration(240)
-        .EUt(GTValues.V[GTValues.HV], 2)
+        .outputFluids('4000x gtceu:sphaleritic_zinc_sulfate_solution', '13000x gtceu:sulfur_dioxide', '13000x gtceu:distilled_water')
+        .duration(1080)
+        .EUt(GTValues.V[GTValues.HV], 4)
 
     // ZnSO4(H2O) -> Zn + H2SO4 + O
     event.recipes.gtceu.electrolyzer('frontiers:zinc_dust')
