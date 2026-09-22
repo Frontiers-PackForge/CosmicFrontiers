@@ -1851,7 +1851,7 @@
 				item: { count: 1, id: "gtceu:lv_chemical_bath" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.0d
 			y: -4.5d
 		}
 		{

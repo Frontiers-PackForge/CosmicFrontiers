@@ -256,8 +256,8 @@
 				item: { count: 1, id: "create:cogwheel" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 2.0d
+			x: -4.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1872,6 +1872,11 @@
 			y: 1.5d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 4055274511136362951L
+				visible: 1b
+			}]
 			dependencies: ["38473AAE9EFA91C7"]
 			id: "369F4EE8B47CD89F"
 			tasks: [{
@@ -1883,6 +1888,11 @@
 			y: 8.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 3935951360712562847L
+				visible: 1b
+			}]
 			dependencies: ["369F4EE8B47CD89F"]
 			id: "0C0E3F2E637DA0A9"
 			shape: "rsquare"

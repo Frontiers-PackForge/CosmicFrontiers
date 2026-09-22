@@ -111,10 +111,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"6D9249DE13CBEB39"
-				"13D3FAFCB1D5861D"
-			]
+			dependencies: ["13D3FAFCB1D5861D"]
 			id: "597E2D324D5A073A"
 			shape: "hexagon"
 			size: 1.5d
@@ -124,19 +121,6 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["654F2B3B0CD1F42F"]
-			id: "6D9249DE13CBEB39"
-			shape: "hexagon"
-			size: 1.75d
-			tasks: [{
-				id: "0023BD37E4F04517"
-				item: { count: 1, id: "cosmiccore:arcane_crucible" }
-				type: "item"
-			}]
-			x: 7.5d
 			y: 3.5d
 		}
 		{
@@ -637,10 +621,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: [
-				"184972E80D9D1F2C"
-				"2C681CEA5813573D"
-			]
+			dependencies: ["184972E80D9D1F2C"]
 			id: "4994B932F264D4E2"
 			tasks: [{
 				id: "6769AA4A857BC4C1"
@@ -672,7 +653,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4B6C5108309A0926"]
@@ -1743,8 +1724,8 @@
 			dependencies: ["72F223DBE0BBFB8C"]
 			id: "5345A254BA73F18E"
 			tasks: [{
-				id: "63722F768AFFA36C"
-				item: { count: 1, id: "cosmiccore:power_tower_deployment_package" }
+				id: "2FA373E4F3389CDF"
+				item: { count: 1, id: "cosmiccore:leyline_package" }
 				type: "item"
 			}]
 			x: 5.0d

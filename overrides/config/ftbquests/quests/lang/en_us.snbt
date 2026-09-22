@@ -1,15 +1,16 @@
 {
 	chapter.2041768F4C2CACBD.title: "&fLights, Camera, Action!&r - [&eLV&7&r]"
 	chapter.208B6A32E147B069.title: "&fNegative Simulative Space&r- [&c&lUHV&7]"
-	chapter.2581DD8D257503F2.title: "&fAn Unstoppable Threat &r- [&9IV&7]"
-	chapter.2BFE3D121C4938C6.title: "&fFate Lost&r- [&5EV&7]"
+	chapter.2581DD8D257503F2.title: "&fThe Goddess of the Moon&r- [&9IV&7]"
+	chapter.2BFE3D121C4938C6.title: "&fA Lone Thread&r- [&5EV&7]"
 	chapter.2D7501C36E4E217A.title: "&fThe 8th Circle &r- [&dLuV&7]"
 	chapter.33E6132E4C81BC80.title: "&eNew? Start Here!"
 	chapter.41ACB8C2AA9CE9F1.title: "&fThe First Steps &r- [&eSteam&r]"
 	chapter.4AA04C0FE00BCA64.title: "&fDark Matter &r- [&3UV&7]"
-	chapter.535ED57C622DDD96.title: "&fSkies of Storm and Sea &r- [&6HV&7]"
+	chapter.535ED57C622DDD96.title: "&fSkies of Storm and Sea &r- [&6HV&7&r]"
 	chapter.648321DD3530A17B.title: "&fPaint the Galaxy Red &r- [&cZPM&7]"
 	chapter.68A4490D81087CDD.title: "&fEven Deeper! And Higher! &r- [&bMV&7&r]"
+	chapter.6CB6C72AFD18B5EA.title: "Power Problems"
 	chapter_group.09ADD253FB82D7A0.title: "&fAeon 3 - The Wrath of Time"
 	chapter_group.1654AF685B58AF60.title: "Questbook Info"
 	chapter_group.1E0EC9D191725D6D.title: "&fAeon 4 - A Godsent War"
@@ -35,6 +36,22 @@
 	]
 	quest.008703F2EB317107.quest_subtitle: "The Products for Boules"
 	quest.008703F2EB317107.title: "Boule Prepwork"
+	quest.011BFFD7A89C98EE.quest_desc: [
+		"You may have noticed your distillation towers can swap modes to vac distillation."
+		""
+		"This is where the configuration itself is used. You'll need to attach an aluminium vacuum module to your DT"
+	]
+	quest.011BFFD7A89C98EE.quest_subtitle: "Mode Switching Time!"
+	quest.011BFFD7A89C98EE.title: "About your DT"
+	quest.02049F5FDD7273A7.quest_desc: [
+		"Less annoyances in terms of source oil production."
+		""
+		""
+		"However, *why*, i mean i guess it's not bad, 960EU/mb is extremely strong for an LV fuel."
+		""
+		"Just uh, seed and fish oil are rather annoying to get at scale, keep that in mind."
+	]
+	quest.02049F5FDD7273A7.quest_subtitle: "Just... go make source diesel."
 	quest.027BFC59C42DA1AC.quest_desc: [
 		"1k storages allow you to do one thing early on other storage sizes done, spam out a bunch of drives for types. "
 		""
@@ -43,6 +60,14 @@
 		"Once you got the majority of random junk in your system, you can make bigger drives to fill them with your bulk materials/resources."
 	]
 	quest.027BFC59C42DA1AC.quest_subtitle: "Early digital storage"
+	quest.02DDCF50B2E0BF28.quest_desc: [
+		"This allows you to recover sodium hydroxide and silicon dioxide, both things you used to produce your bauxite slurry earlier."
+		""
+		""
+		"It is recommended to recycle this to avoid wasting all your sodium hydroxide"
+	]
+	quest.02DDCF50B2E0BF28.quest_subtitle: "Get your sodium hydroxide back"
+	quest.0327682C5CD80700.quest_subtitle: "Smells..."
 	quest.0404FA9ACCD11D51.quest_desc: [
 		"You can make Hulls and Casings Cheaper with a small cost of Rubber or Plastics."
 		""
@@ -62,6 +87,33 @@
 	]
 	quest.04D15703B3D383E2.quest_subtitle: "A better industrial macerator"
 	quest.04D15703B3D383E2.title: "Powderizer Secondary Uses"
+	quest.04E6BCCDEBBE8555.quest_desc: [
+		"Uh, it makes 1920eu/t"
+		""
+		"This puts it at a fuel density nearly as strong as HV's Cetane Boosted Diesel."
+		""
+		"I will, probably have to nerf this. "
+		""
+		"*edits scripts*"
+		""
+		"Okay, you probably see it as 640eu/t Still rather strong for an LV fuel, but uh..."
+		""
+		"Lord have mercy sometimes I'm horrible at balancing lol."
+		""
+		""
+		"Anyway, this requires a lot of extra setup for the yield it gives, it does however grant Glycerol, useful for early chemistry if electrolyzed into hydrogen and oxygen and carbon."
+	]
+	quest.04E6BCCDEBBE8555.quest_subtitle: "Possibly Overtuned"
+	quest.055130CDCBE6BB25.quest_desc: [
+		"You can directly smelt cooperite into platinum nuggets for early platinum."
+		""
+		""
+		"This is an valid option considering that the normal platinum chain is rather lossy on nitric and hydrochloric acids until you can build palladium, and later, the insoluable plat group metals."
+		""
+		""
+		"Realistically you will most likely have enough basic gasses + chlorine to tank this outright for the first few hundreds of ingots you need. Considering this is an abyss exclusive material...."
+	]
+	quest.055130CDCBE6BB25.quest_subtitle: "The bad way."
 	quest.0584A322CC8C1A28.quest_desc: [
 		"Sable and Create Aeronautics allow for creation of contraptions with real time simulated physics."
 		"These contraptions are amazing for creating flying ships/cars/drills"
@@ -102,9 +154,26 @@
 		"Flocculant solution (Polyethylene Oxide) rates have been mostly made on guesswork of how bad it'd be. I was going to do 25mb per but it felt pretty unforgiving. 10mb seems the best option but if we need to nudge it around to 5mb or 15mb I am not opposed to it. Let me know your feedback on Github or Discord."
 	]
 	quest.072350DCC099E9C9.quest_subtitle: "Flocculation (Tier 3 Ore Processing)"
+	quest.073308BA37C957AF.quest_desc: [
+		"Welcome to the real deal, Autocrafting!"
+		""
+		"Autocrafting allows you to send materials directly to machines from your terminal, and even chain steps together."
+		""
+		"Just make sure your AE2 grid has enough spare CWU for the craft, as crafts consume CWU and Bytes the larger they get."
+		""
+		"If you haven't been keeping your system supplied with CWU properly yet, now you'll have to as crafts can not be started with a CWU overload, and providers will stop if CWU overloads during an active craft."
+	]
+	quest.073308BA37C957AF.quest_subtitle: "The King of Autocrafting"
 	quest.07D19BDB1D7C756D.quest_desc: ["to be able to sort your ores into more useful products, the crushed ore mush first be washed and seperated in a flotation plant"]
 	quest.07D19BDB1D7C756D.quest_subtitle: "Washing your ores (Tier 1 Ore Processing)"
 	quest.084D9D116B8A6C4A.quest_subtitle: "Biological Scrap Metals"
+	quest.09051494F3867278.quest_desc: [
+		"You had to (most likely) make one of these for PTFE."
+		""
+		"If you haven't probably go do that first, lol"
+	]
+	quest.09051494F3867278.quest_subtitle: "You should be familiar with this one"
+	quest.095B0A02540AE6B1.quest_subtitle: "The Primary Ore Source (in HV)"
 	quest.09743DE5EC36B7A3.quest_desc: [
 		"To Reach the Firmament you must use the \"&eAscension to the Firmament&r\" Ritual (Check for it in EMI!)"
 		""
@@ -139,12 +208,33 @@
 		"Terminals take up 1 channel per terminal."
 	]
 	quest.0A5E16599EAFAEC6.quest_subtitle: "Seeing into AE2"
+	quest.0AB55A192BC06F35.quest_subtitle: "Late SMD Components"
 	quest.0B34B5CE7CCBAE72.quest_desc: [
 		"Note : GT Miners do not work in the Undergarden or Abyss."
 		""
 		"Mining Ores in the Abyss will require specalized infrastructure at a later date, but most products you need to progress are automation chains once you've collected a initial bounty from a specific layer."
 	]
 	quest.0B34B5CE7CCBAE72.title: "Why isn't my miner working?"
+	quest.0BFB4FBAD5FE77F1.quest_desc: [
+		"Okay, to give you a breakdown of the power changes within this pack. It's easy to bullet them out and then explain each."
+		""
+		""
+		"1. Cable loss removal"
+		"2. Increased amperage capacity"
+		"3. Multiamp power consumption"
+		""
+		""
+		"Most recipes take anywhere from 1-4 Amps, with some even exceeding this into 6-16 Amps (For extremely powerful machines). This means to start LV, you most likely want 4 Steam Turbines."
+		""
+		"All wires and cables have had cable loss removed, effectively acting like classic GT Superconductors."
+		""
+		"The difference here is, cables that were low loss or lossless now boast huge Amperage limits."
+		"Wires still will damage mobs and players if not made into a cable, Superconductor class wires do not."
+		""
+		"In short, you'll be making a lot, and i mean A LOT, more power. Part of the challenge will be managing your wire networks to avoid over-amperage."
+	]
+	quest.0BFB4FBAD5FE77F1.quest_subtitle: "A bit of reading before we start."
+	quest.0BFB4FBAD5FE77F1.title: "A Crashcourse on the new power systems"
 	quest.0C0E3F2E637DA0A9.quest_desc: [
 		"You've been able to alloy smelt dawnstone, but you need some in molten form to create aspecti."
 		""
@@ -152,6 +242,7 @@
 		"Use a melter powered with a small amount of ember to makee your first molten dawnstone."
 	]
 	quest.0C0E3F2E637DA0A9.quest_subtitle: "Dawnstone but Molten"
+	quest.0C2BE4EC08B241F1.quest_subtitle: "The 'efficient' way"
 	quest.0C77536FF23F6946.quest_desc: [
 		"Made with that yellow dust you got from the nether, Sulfuric, and a pile of basic elements like hydrogen and oxygen (or water in some cases)"
 		""
@@ -159,6 +250,28 @@
 		"There's several methods you can take to reach Sulfuric Acid, I will let you decide which works for you."
 	]
 	quest.0C77536FF23F6946.quest_subtitle: "The other orange fluid, besides Ethanol"
+	quest.0DC63A0B32F403DE.quest_desc: [
+		"Unfortunately, unlike MV where you could quickly get access to the tiers energy hatch, this one is a little (see: a LOT) more involved."
+		""
+		"You'll need to make a cleanroom, a multiblock which requires multiple polymers, concrete, and plenty of metals to assemble. Notably, &ePolytetrafluoroethylene&r is required, and &eMethane&r is only produced via &aWood Gas phase seperation&r at these early stages. "
+		""
+		""
+		"In short, your first goal is to look southward of this quest on how to get PTFE and Methane."
+		"Some of these machines are quite large, and may get cramped inside of buildings unless you build ahead. Don't forget, rain sealant spraycans exist!"
+		""
+		"Dev note: I built part of my petrochemical refinement stuff outdoors, which is what gave me this idea. "
+	]
+	quest.0DC63A0B32F403DE.quest_subtitle: "Uh Oh! Surprise!"
+	quest.0DE75C5D598B331B.quest_desc: [
+		"Distill Wood Vinegar again to get Spirits and Liqour"
+		""
+		"Both of those can then be distilled once again into their final products."
+		""
+		"I trust you can use EMI by now to see those products, if you somehow made it here without EMI..."
+		"How? Better yet, why?"
+	]
+	quest.0DE75C5D598B331B.quest_subtitle: "Double Distillation Trouble"
+	quest.0E46D7EB999D3897.quest_subtitle: "The easy part"
 	quest.0EC4D52E2252406D.quest_subtitle: "Gregtech Oxygen Tank"
 	quest.0EC5D1285DF63FF4.quest_desc: [
 		"Steam Components are rather useful for logistics early on, allowing you a source of extraction/insertion for items and fluids."
@@ -167,9 +280,21 @@
 		"While not strictly required to craft any machines (still undecided on that), the early game logistics and reduced cost compared to constantly using LV conveyors/pumps is much easier."
 	]
 	quest.0EC5D1285DF63FF4.quest_subtitle: "Steam Parts"
+	quest.0F51CE9E96545226.quest_desc: [
+		"Vac Residuals lead you towards multiple different routes of processing. It is up to you to decide what suits your base"
+		""
+		""
+		"Notable options would be to phase seperate it and recycle the outputs"
+		""
+		"You could optionally convert it towards syngas and produce a metric amount of hydrogen."
+		""
+		"This also loops back out towards general out products again, so hopefully by now you've gotten the hang of this"
+	]
+	quest.0F51CE9E96545226.quest_subtitle: "Scary"
 	quest.0FA8D92F9734C77C.quest_subtitle: "The Sulfur Ore Field"
 	quest.1109F476F38A663D.quest_desc: ["Required to make HV Hulls"]
 	quest.1109F476F38A663D.quest_subtitle: "You'll need this"
+	quest.1198F042E7F71D7F.quest_subtitle: "FUTURE CONTENT: 0.9.0+"
 	quest.11A80F269275F15D.quest_desc: [
 		"The deeper you decend, the more agressive murkbloom seems to become."
 		""
@@ -178,24 +303,60 @@
 	quest.11A80F269275F15D.quest_subtitle: "Not really a suggestion"
 	quest.12BEB88ECEFDBBBA.quest_desc: ["Compute Cores convert energy into CWU for your network components to run."]
 	quest.12BEB88ECEFDBBBA.quest_subtitle: "Adding CWU to AE"
+	quest.12D1C8CC27AE39B2.quest_desc: [
+		"Pattern Buffers basically act like a Pattern Provider, with some extra QOL quirks to make machine crafting easier."
+		""
+		"1. Each pattern in an ME Buffer has it's own isolated inventory for fluids/items, meaning &apatterns can not conflict&r."
+		"1.1 However, this means patterns must contain all ingredients, shared resources (like EBF gasses) included!"
+		"1.2 There are \"shared\" inventory slots inside of each ME Buffer, this can hold items like non-consumable catalysts/molds"
+		""
+		"2. Pattern proxies are bound to pattern buffers with data sticks, shift right click your pattern buffer, and then right click a proxy. Proxies mirror the contents of a pattern buffer, making automation arrays for crafts easier."
+		""
+		"3. Pattern Buffers also can store a quite frankly titanic amount of internal storage, this means machines will run at their full force when possible. This matters greatly when you have mechanics that rely on it, such as parallel."
+		""
+		"4. Buffers are exposed like normal to AE2 pattern terminals, meaning you can access your patterns as normal."
+	]
+	quest.12D1C8CC27AE39B2.quest_subtitle: "The King and Queen of Autocrafting"
 	quest.130F6EE5889B7ADE.quest_desc: [
 		"Cart Assemblers are quite frankly way too strong."
 		""
 		"However, for now they will remain teired here, if they need to be uptiered then we'll handle it then."
 	]
 	quest.130F6EE5889B7ADE.quest_subtitle: "Pretty Defined"
+	quest.14B068EF3C3192DB.quest_desc: [
+		"Stormglass seems like an unrefined crystal useful in making weather resistant glassware"
+		""
+		"There's a bounty of other materials in the Firmament, I've gathered what I can for now..."
+		""
+		""
+		"Many of the basic blocks in the firmament have a use at establishing yourself in the Firmament, look through EMI to figure out a path forward along with future quests!"
+	]
+	quest.14B068EF3C3192DB.quest_subtitle: "New Materials to Exploit"
+	quest.14B068EF3C3192DB.title: "Firmament Geology"
 	quest.14D6F3083E2DD469.quest_desc: [
 		"Shadebloom Armor is the only armor that can survive in layer 3 of the abyss."
 		""
 		"Without it you will take constant pressure crush damage and alert murkbloom extremely fast."
 	]
 	quest.14D6F3083E2DD469.quest_subtitle: "Tier Three Armor"
+	quest.15DCE4A5DE87DF3A.quest_subtitle: "To the souls who were never found"
+	quest.15DCE4A5DE87DF3A.title: "The Bottom of the Abyss?"
 	quest.15E83FF40983A8F5.quest_desc: [
 		"Allows you to carry a little extra 'stuff' (abstract) on your player."
 		""
 		"Useful when going mining to carry more ores home :)"
 	]
 	quest.15E83FF40983A8F5.quest_subtitle: "Backpacks"
+	quest.15F0753A300EE4E9.quest_desc: [
+		"allows you to expose items/fluids to machines for crafting. Useful for passive multiblocks or specialized crafting setups."
+		""
+		""
+		"NOTE: These blocks are currently being Optimized on GTM's side, we've applied the patch to the pack to test it."
+		"If you notice your base starts to lag with many of these, please provide us a spark profile so we can look into it farther."
+		""
+		"In general, you should be able to freely use this without much issue, but please keep in mind these may show up on Observable/Spark readouts if you use thousands and thousands of them"
+	]
+	quest.15F0753A300EE4E9.quest_subtitle: "Stocking what's needed"
 	quest.168A6B3A2FD0CC45.quest_subtitle: "For the simple machines"
 	quest.168A6B3A2FD0CC45.title: "Basic LV Parts"
 	quest.16B7E08679F3FA97.quest_desc: [
@@ -271,6 +432,14 @@
 	]
 	quest.1A6796453259700D.quest_subtitle: "A whole world of possibilities"
 	quest.1AB5A5EFAE74D076.quest_subtitle: "The minimum."
+	quest.1ADD84CA84189352.quest_desc: [
+		"You'll need at least the following of these machines"
+		""
+		"- Pyrolyse Oven"
+		"- Phase Separator"
+		"- Fractional Condensor"
+	]
+	quest.1ADD84CA84189352.quest_subtitle: "Getting prepared for wood processing"
 	quest.1B15278C77223BF4.quest_subtitle: "Turning Essentia Vitae into Anima"
 	quest.1B387FD15E883317.quest_desc: [
 		"You'll need materials, lots of them, and that starts with *you* extracting them."
@@ -299,6 +468,12 @@
 	quest.1B4E42BE6EF7A4F3.quest_subtitle: "The heart of ore processing"
 	quest.1BC8E85866579CF2.quest_desc: ["Next, Take your &eSodium Chromate Solution&r and some &eSulfuric Acid&r and slap that inside a &aChemical Dehydrator&r. You'll end up with &bSodium Dichromate Solution&r and some &6Sodium Sulfate&r as a byproduct."]
 	quest.1BC8E85866579CF2.quest_subtitle: "Getting there!"
+	quest.1E348A557ECB9BEA.quest_desc: [
+		"Will automatically push the contents stored within to your AE2 grid."
+		""
+		"Basically this removes the step of needing to place an external interface, and avoids the throughput limits of such setups as well."
+	]
+	quest.1E348A557ECB9BEA.quest_subtitle: "Digital Outputs"
 	quest.1FD7F7A22E29CFF5.quest_desc: [
 		"Soul Gourd Stems spawn on soul sand or soil in the nether. "
 		""
@@ -310,6 +485,7 @@
 	quest.1FECA1C0E8B233D5.quest_desc: [":3 - Lore Here Soon:tm:"]
 	quest.1FECA1C0E8B233D5.quest_subtitle: "{\"translate\":\"deed.cosmiccore.current_flow.subtitle\"}"
 	quest.1FECA1C0E8B233D5.title: "{\"translate\":\"deed.cosmiccore.current_flow\"}"
+	quest.203685214E5EDF41.quest_subtitle: "A permanent source of Fluorine"
 	quest.20B57C1FF5037C74.quest_desc: [
 		"&7This quest desc is a WIP with 90% of them in LV.&r"
 		""
@@ -334,6 +510,35 @@
 	]
 	quest.20B57C1FF5037C74.quest_subtitle: "Power Warnings."
 	quest.20B57C1FF5037C74.title: "Read this or Explode"
+	quest.213495FF52025FAE.quest_desc: [
+		"Now, before you run off and craft all of them, listen for a moment."
+		""
+		"Singleblock generators don't really hold as much purpose here with how heavy power production is. You will most likely be transforming up from LV power -> MV power when it's needed."
+		""
+		""
+		"These generators are great for bootstrapping outputs or very early LV. But you should consider the &eModular Power Station&r, as soon as you can produce &aDark Steel Ingots&r"
+		""
+		""
+		"&6This quest only requires you to craft a steam turbine, the other generators are optional!&r"
+	]
+	quest.213495FF52025FAE.quest_subtitle: "Early Singleblock Generators"
+	quest.2167B11F04291D87.quest_desc: [
+		"Abyss ores form due to the murkblooms digestive behaviors and extreme pressures of the abyss."
+		""
+		"Access to &dTitanium&r and &ePlatinum&r have allowed you to produce catalysts that allow your Bloomwyrm algae strand to emulate a similar behavior, crystalizing into metallic formations loosely resembling &aabyssal ores&r."
+		""
+		"This should allow you to &eautomate them comfortably in your own factory&r, rather than having to continue to &edive for materials&r."
+		""
+		"While this comes as a relief to you, you suspect you will be back to the abyss in time."
+	]
+	quest.2167B11F04291D87.quest_subtitle: "Renewability of the Abyss"
+	quest.2167B11F04291D87.title: "Industrial Abyss Ores"
+	quest.216BBFB436BC4713.quest_desc: [
+		"You may use umbral crust alongside some malum spirits to make the same primordial soup, just wastes more hydrofluoric in the process."
+		""
+		"It's a small sacrifice for the time it spends you hunting the lower Firmament for primordial remnants"
+	]
+	quest.216BBFB436BC4713.quest_subtitle: "Making the hard part, easier"
 	quest.21EC2FF351067FFF.quest_subtitle: "How to get your first (proper) combustion fuels"
 	quest.230BE17C3009554C.quest_desc: [
 		"Now that you have access to Somarust casings and Stainless steel, it's worth considering upgrading your EBFS to the 2nd tier."
@@ -404,6 +609,15 @@
 	]
 	quest.2700DA7ED10B4664.quest_subtitle: "How to find resources"
 	quest.2700DA7ED10B4664.title: "Ore Fields"
+	quest.27C5FA2490846E4B.quest_desc: [
+		"Take coal and shove it into your pyro ovens. This will produce Coking vapors."
+		""
+		""
+		"Coking Vapors then need to be condensed, their byproducts distilled."
+		""
+		"Refining coal is generally for Naphthalene which is used later on for various high tier chemistry in EV and IV"
+	]
+	quest.27C5FA2490846E4B.quest_subtitle: "The root"
 	quest.286F950918F4817C.quest_desc: [
 		"Vanachrome is located within the 2nd layer of the abyss."
 		""
@@ -449,6 +663,14 @@
 	quest.2ABEE21EB889B7DD.quest_subtitle: "Easier Wrought Iron"
 	quest.2C681CEA5813573D.quest_subtitle: "Arcane Interference. (Y-400 to Y-600)"
 	quest.2C681CEA5813573D.title: "The Hollow Abyss - Layer 3 : Arcantide Sump"
+	quest.2CC42A9D4EAB03FF.quest_desc: [
+		"Possible in HV with HV Energy Hatches."
+		""
+		"However, requires a rather well designed petrochemical plant to produce reliably at scale."
+		""
+		"Gasoline exists, but it's more of a precursor fuel to this or Stardust Infused Gasoline"
+	]
+	quest.2CC42A9D4EAB03FF.quest_subtitle: "Serious Power Production"
 	quest.2EDDE2D4F167CC02.quest_desc: [
 		"You'll need to get some sphalerite first before you can start this step."
 		""
@@ -463,6 +685,12 @@
 		"(Hold a Sphalerite Ore Chunk to Unlock this/Check the Dependencies)"
 	]
 	quest.2EDDE2D4F167CC02.quest_subtitle: "Have you done ore sorting?"
+	quest.2F4C9EE57087AF0E.quest_desc: [
+		"You can produce high pressure steam from Large Bronze Boilers."
+		""
+		"This can be very useful considering how cheap steam power is, it is however not dense enough to use at scale in most cases."
+	]
+	quest.2F4C9EE57087AF0E.quest_subtitle: "From Large Boilers"
 	quest.2F5E6FC176A68A97.quest_desc: [
 		"Yes I know there are things like creosote and whatnot or even just the multi-phase oil that can also be burned."
 		""
@@ -491,6 +719,27 @@
 		"Infinitely easier to coat cables this way, and it can be fluid solidified into bars/sheets as needed."
 	]
 	quest.31C9B8A33BD4DB08.quest_subtitle: "Better Rubber Yields"
+	quest.31F17F4736AEEAA6.quest_desc: [
+		"The &6Hephaestus Cauldron&r is the core of your foundry setup."
+		""
+		"*slaps roof* this thing produces&b Pyroflux&r, a valuable molten chemical used to refine &eprecious metals into molten alloy mixtures&r."
+		""
+		"&bAlloy Blast Kilns&r are linked the to cauldron and will consume&b Pyroflux&r steadily while running. "
+		""
+		""
+		"The Cauldron also has several tiers, you can change the preview tier in the structures GUI. "
+		"Each tier &eallows more Kilns and other furnances to be linked&r."
+		""
+		"Tier 1 - &b4 Foundry Devices&r "
+		"Tier 2 - &a8 Foundry Devices&r"
+		"Tier 3 - &e20 Foundry Devices&r"
+		""
+		""
+		"Each Kiln is as strong as &e4 classic GTCEU Alloy Blast Smelters&r. They are able to parallel, so make sure to &egive them plenty of energy&r!"
+		""
+		"Heads up, Kilns can also take &afour&r energy hatches! You can feed them a whopping &664A&r of power!"
+	]
+	quest.31F17F4736AEEAA6.quest_subtitle: "The Foundry of Molten Metals"
 	quest.323FAC202CADB824.quest_desc: [
 		"Alloys making bronze ingots 4 at a time at the cost of taking steam and time"
 		""
@@ -513,6 +762,15 @@
 		"Firstly your goal is to make some ritual totems, to make the unchained rite to get access to blighted earth."
 	]
 	quest.33A577DB6CA4CEDB.quest_subtitle: "Crafting Altar of Malum"
+	quest.34651919AADD1315.quest_desc: [
+		"In short, this page shows"
+		""
+		"- New Generators above the hull tier they are unlocked at."
+		"- Fuel unlocked around a specific energy tier will be listed below their respective hull."
+		"- Fuels that are a new tier of the previous will be placed to the right of it's predecessor"
+		"- Each fuel has some remark about how it's made, where it sits in progression, and probably some mention on how I neglected it lol. I'll clean this up as I go."
+	]
+	quest.34651919AADD1315.quest_subtitle: "less confusion, easier understanding!"
 	quest.35410493D650E8B5.quest_desc: [
 		"The Power Capacitor is a large power buffer that will act as a cushion for many of your hungry production demands."
 		""
@@ -542,6 +800,16 @@
 	]
 	quest.35B7A194BB34BA44.quest_subtitle: "The unsual that is willed to be. "
 	quest.35B7A194BB34BA44.title: "An Indestructable Ally"
+	quest.35E4FB722A8CA395.quest_desc: [
+		"There is currently only one industrial scale power multiblock in Frontiers."
+		""
+		"The modular power station"
+		""
+		"Can produce a maximum of 16 Amps, based on the tier of stator contained inside."
+		""
+		"These will be your bread and butter generators until EV+"
+	]
+	quest.35E4FB722A8CA395.quest_subtitle: "The Big Power Generator."
 	quest.369A6B80AED9D741.quest_subtitle: "The Infinite Sunset"
 	quest.369A6B80AED9D741.title: "To HV!"
 	quest.369DE54ABB07E98A.quest_desc: [
@@ -593,6 +861,13 @@
 	quest.3986D39DC5DCFEE1.quest_subtitle: "Ore Fields and You"
 	quest.3986D39DC5DCFEE1.title: "Reworked Ore Generation"
 	quest.3A755F7B8012AB1A.quest_subtitle: "Create Oxygen Tank"
+	quest.3B848C1CC6779862.quest_desc: [
+		"This for the time being is a byproduct until you are more situated into EV."
+		""
+		""
+		"This is where you start getting materials like Iridium, Osmium, Ruthenium, and Rhodium."
+	]
+	quest.3B848C1CC6779862.quest_subtitle: "IMPORTANT, SAVE IT! ! !"
 	quest.3E03C13CAE570D80.quest_desc: ["You can also get quartz blocks from stone masons, which allows you to make this pre-nether!"]
 	quest.3E03C13CAE570D80.quest_subtitle: "Stone Mason Source"
 	quest.3E42DDEBA9DBB13C.quest_desc: [
@@ -628,6 +903,15 @@
 		"By now you most likely have a variety of salt types from ore sorting, any one that contains Chlorine will do fine. Otherwise you may smelt earthen salts directly into rock salt and use that in dust form."
 	]
 	quest.40E9979B215578FF.quest_subtitle: "How do I get this stuff?"
+	quest.426AD0428F04EB96.quest_desc: [
+		"Cetane Boosted Diesel takes your diesel even farther by nearly doubling the power density."
+		""
+		"I'd recommend making this before starting proper oil refinement, or look into Pure Cinder Gas (once i give it a recipe)."
+	]
+	quest.426AD0428F04EB96.quest_subtitle: "Oh thats... Quite powerful."
+	quest.4290CE767687C140.title: "Oils, So many, Oils!?!?!"
+	quest.435306F53E3CCA44.quest_subtitle: "The Gamechanger"
+	quest.43C63859BA47960F.quest_desc: ["Worth noting, you'll be able to make this renewably late HV, so keep that in mind!"]
 	quest.4425184AA625FA4E.quest_desc: ["Looks like it'd taste like extremely tart blue raspberry"]
 	quest.4425184AA625FA4E.quest_subtitle: "This looks edible"
 	quest.448F8668DD3AEB72.quest_desc: [
@@ -686,6 +970,22 @@
 		"(Hold a Cobaltite Ore Chunk to Unlock this/Check the Dependencies)"
 	]
 	quest.46025BCA76960F68.quest_subtitle: "Have you done ore sorting?"
+	quest.4640766C36B5DCE4.quest_desc: [
+		"Hi, if you managed to reach this quest, congrats you beat the- wait no."
+		""
+		""
+		"You've completed the pack to the current development tier associated with the release 0.8.0."
+		""
+		"From this point forward, anything past here is considered extremely in dev or alpha content that may"
+		""
+		"- Break"
+		"- Vanish without warning"
+		"- Be changed without warning"
+		"- Any combination of the above, and thensome."
+		""
+		"Note: If you would like to follow along with the live in-dev version of the pack, head over to the discord (or github) and pick up an 0.9.0-Nightly-### release to try out content and updates beyond this point. Otherwise you will have to wait for 8.X for patches/updates/etc, which will come out as deemed relevant"
+	]
+	quest.4640766C36B5DCE4.quest_subtitle: "0.9.0 Content"
 	quest.469D5D2740B79048.quest_desc: [
 		"The powderizer will convert purified ores into a finely ground dust for chemical sepperation."
 		""
@@ -710,6 +1010,22 @@
 		"...or an Cuprosiva Ore Field."
 	]
 	quest.46A8D660ABEB83FA.quest_subtitle: "The First Alloy"
+	quest.48EB53B52F2FC7D5.quest_desc: [
+		"Indium is usually very difficult to source, a bonus yield of indium from Sphalarite extraction should help you stockpile enough before it is needed in IV+"
+		""
+		"The Cadmium and Gallium are also nice bonuses"
+	]
+	quest.48EB53B52F2FC7D5.quest_subtitle: "Oh nice!"
+	quest.48EB53B52F2FC7D5.title: "Extra Goodies!"
+	quest.491CDA85270DF154.quest_desc: [
+		"While not strictly required, this helps you recover various inputs you just spent producing red mud."
+		""
+		"When I mean it's not strictly required, there is a good chance both Silicon Dixoide and Sodium Hydroxide you can fully passive at fast enough speeds for the waste of it to not matter."
+		""
+		""
+		"It is up to you if you wish to extra the extra aluminium or gallium this yields."
+	]
+	quest.491CDA85270DF154.quest_subtitle: "Recycling options"
 	quest.4978BF804A8975F5.quest_desc: [
 		"SU is still produced normally as it would be in standard create."
 		""
@@ -721,6 +1037,16 @@
 	quest.4978BF804A8975F5.quest_subtitle: "Base Create Behavior"
 	quest.4978BF804A8975F5.title: "Generating SU"
 	quest.49A607F0508C8F58.quest_subtitle: "TODO: WIP CONTENT"
+	quest.49FC9BA649059B12.quest_desc: [
+		"That wasn't so hard, was it?"
+		""
+		"PTFE brings you closer to one of the best machines in the game"
+		""
+		"The \"&6Large Chemical Reactor&r\""
+		""
+		"Let's work on making one now"
+	]
+	quest.49FC9BA649059B12.quest_subtitle: "PTFE"
 	quest.4A608CA30FD3D86D.quest_desc: [
 		"Silver can be hand sorted from Crushed Galenite ore by hand or washed with a create fan."
 		""
@@ -734,6 +1060,13 @@
 		"use the tinkers hammer on ember emitters/receptors to link them together."
 	]
 	quest.4A90C6B25FC79EAC.quest_subtitle: "Activating Ember"
+	quest.4AA12DEF3B9ED6D2.quest_desc: [
+		"Sit's on par with Cetane Boosted Diesel, if only falling behind a little short at 1760 EU/mb verses Cetanes 2160."
+		""
+		""
+		"Both are renewable, just one is much easier to scale, and it's most likely TBSD.(Thunder Boosted Source Diesel) compared to cetane"
+	]
+	quest.4AA12DEF3B9ED6D2.quest_subtitle: "Oh."
 	quest.4B6C5108309A0926.quest_subtitle: "NYI"
 	quest.4B8BB9D41D0D0652.quest_desc: [
 		"AE2 devices, when attached to a AE2 network, consume 'channels'. "
@@ -803,6 +1136,7 @@
 	]
 	quest.50930E8761259EFD.quest_subtitle: "The tooltip lies"
 	quest.50A60E8F488274DF.quest_subtitle: "Flocculation Solution"
+	quest.51300168EE4A12AB.quest_subtitle: "Optionally, another source"
 	quest.5156A433A39D8C82.quest_desc: ["Can be distilled from biomass at a distillery. There are multiple methods to produce biomass, I will leave it up to you to figure out what works for you the best."]
 	quest.5156A433A39D8C82.quest_subtitle: "The other orange fluid, besides Sulfuric Acid"
 	quest.5345A254BA73F18E.quest_desc: [
@@ -814,6 +1148,8 @@
 	]
 	quest.5345A254BA73F18E.quest_subtitle: "The Ultimate Deployment Tool"
 	quest.5345A254BA73F18E.title: "Leyline Packages"
+	quest.53497D07DA7DC94B.quest_desc: ["Loaded Metal Medium is not too difficult, bar the consumption of nyctophyte..."]
+	quest.53497D07DA7DC94B.quest_subtitle: "Heavy Metals"
 	quest.534DBCED4E339D89.quest_desc: [
 		"Stick an Ember receptor on it, and an ember emitter on your ember source."
 		""
@@ -841,6 +1177,16 @@
 	]
 	quest.5409781BE86F8DA3.quest_subtitle: "You should be able to make this"
 	quest.5505401B1E8344EB.quest_subtitle: "The Key to Steel"
+	quest.569024DB10BE8F59.quest_desc: ["If you are unaware of what fuels exist, go check out the fuel tab in the general advice tab at the bottom of the questbook!"]
+	quest.569024DB10BE8F59.quest_subtitle: "Fuel choices"
+	quest.57BB16A689D2F0B2.quest_desc: [
+		"You will need at least HV Energy hatches to work with this material."
+		""
+		"It also is much more looped and produces many byproducts you have already encountered."
+		""
+		"I will save you the trouble of making you handle more quests with it."
+	]
+	quest.57BB16A689D2F0B2.quest_subtitle: "EV power required!"
 	quest.57E59B0060EAB2C7.quest_desc: [
 		"Welcome to Cosmic Frontiers, we're glad to have you here."
 		""
@@ -866,6 +1212,20 @@
 	quest.57E59B0060EAB2C7.quest_subtitle: "Welcome to Frontiers"
 	quest.57E59B0060EAB2C7.title: "Welcome to Cosmic Frontiers"
 	quest.5973534E85F5D126.quest_subtitle: "Better Iesnium"
+	quest.599DB6B01E4EA14D.quest_desc: [
+		"You quite literally just put a chili pepper in hydrochloric and mixed it into your fuel."
+		""
+		"What? Sure whatever, it makes more EU per milibucket."
+	]
+	quest.599DB6B01E4EA14D.quest_subtitle: "Making it Spicy"
+	quest.59AE67A4364865C2.quest_desc: [
+		"Diesel can be made with Middle Fraction Distillates and Gas Oils, both of which can come from the simple desalter. "
+		""
+		""
+		"Just until now you lacked the braincells and machine tier to mix them together."
+		"Do that now, go make some gas oils and blend it into Diesel, it'll make your fuel last MUCH longer."
+	]
+	quest.59AE67A4364865C2.quest_subtitle: "MV Mixer Gated"
 	quest.5AF279015C476CC6.quest_desc: [
 		"Vanadium Steel requires a small amount of chromium to produce, meaning it is gated by doing at least a few crafts of chromium by hand or setting up chromite line proper."
 		""
@@ -901,6 +1261,12 @@
 		"This will give you &bSodium Chromate Solution&r, as well as &6Magnetite&r and &6CO2&r as Byproducts."
 	]
 	quest.5E1DF9CD2C9197EB.quest_subtitle: "Needs some more work."
+	quest.5E23F46CA23B9EF0.quest_desc: [
+		"if you haven't already, you might be sitting on a huge backlog of dwarven oils."
+		""
+		"You can optionally turn it into inert cinder gas, which is the precursor to this, Cindergas."
+	]
+	quest.5E23F46CA23B9EF0.quest_subtitle: "Using all that Dwarven Oil"
 	quest.5E380EE48FCB8769.quest_desc: [
 		"The Ara Vitae is the parallel to BloodMagic's Blood Altar."
 		""
@@ -916,6 +1282,12 @@
 	quest.5FC9534817A442EA.quest_subtitle: "Making larger batteries"
 	quest.601F4BCD183CC077.quest_desc: ["You'll need an Electric Blast Furnace to process this metal, if you haven't made one already. I'd recommend you do so."]
 	quest.601F4BCD183CC077.quest_subtitle: "A mundane but durable metal"
+	quest.60A1D50F6D8A1F40.quest_desc: [
+		"Can be Hydrotreated for much higher lube outputs."
+		""
+		"Optioncally can be shoved in a vac freezer, lmao"
+	]
+	quest.60A1D50F6D8A1F40.quest_subtitle: "Lubricant Source"
 	quest.634610E99CF32EB2.quest_desc: [
 		"4k drives are what most players turn to early game for general storage."
 		""
@@ -955,7 +1327,22 @@
 		"Note about the quest itself : This is a deed quest, it will trigger a story sequence upon completing and viewing. Please wait for the cutscene to conclude fully!"
 	]
 	quest.666A77BC58F33CD0.quest_subtitle: "The First Big Furnace"
+	quest.667FB6442C929BC0.quest_desc: [
+		"This stuff comes from steam cracking Light Naphtha, which can be acquired by hydrotreating Sour Naphtha, or Cracked Naphtha."
+		""
+		"The key product is &aOlefin Gasses&r, this distills into several simple hydrocarbons you may frequently use."
+		""
+		"Funnily enough, you get more cracked Naphtha from this back, it's not a perfect conversion, you'll want to recycle this back to process out more materials."
+	]
+	quest.667FB6442C929BC0.quest_subtitle: "Light Naphtha"
 	quest.66B6EFDC74821576.quest_subtitle: "Getting More of It. Part 1."
+	quest.66EAF78E0061AE13.quest_desc: [
+		"For now your only source of primordial remnants is from harvesting it from outcrops in the lower layer of the firmament."
+		""
+		""
+		"Once you can establish your own hardware within this dimension, you can automate this with new farming methods."
+	]
+	quest.66EAF78E0061AE13.quest_subtitle: "the hard part"
 	quest.67110A5418804D33.quest_desc: [
 		"You can't harvest pure nether quartz yourself, and gold is something only found in small amounts now."
 		""
@@ -975,6 +1362,15 @@
 		"It's also pretty and glass is needed for progression, so you'll probably have spare glass for farms at some point :)"
 	]
 	quest.677379DC62A11400.quest_subtitle: "Making your crops stronger"
+	quest.682E33E33C306E5E.quest_desc: [
+		"Cooperite is your first proper source of Platinum and Palladium."
+		""
+		"This process is extremely lossy on Chlorine and other basic chemical precursors unti EV/IV where you can fully process all byproducts, so keep this in mind as you produce platinum."
+		""
+		"You can recover a decent amount, but some does get trapped in the insoluable plat metal dust."
+		"(the large hexagon quest a little lower on this page)"
+	]
+	quest.682E33E33C306E5E.quest_subtitle: "Plat and Palladium Processing"
 	quest.685F89265F6746A7.quest_desc: [
 		"No get your mind out of the gutter. Stop."
 		""
@@ -994,16 +1390,15 @@
 	]
 	quest.685F89265F6746A7.quest_subtitle: "Suffocation and you"
 	quest.685F89265F6746A7.title: "Oxygen, Thin Air, Air Hazards"
+	quest.687032030F774208.quest_desc: [
+		"You basically have two options, either use a backtank or a steel air tank."
+		""
+		"you need a diving helment or advanced rebreather to use the steel air tank"
+	]
 	quest.687032030F774208.title: "Breathing in the Abyss"
+	quest.688796D0E9E54832.quest_subtitle: "Early SMD Components"
 	quest.6984F04E09CE50E5.quest_subtitle: "Chalk."
 	quest.6CD224F26209A645.quest_subtitle: "Actually getting more of it. Part 2."
-	quest.6D9249DE13CBEB39.quest_desc: [
-		"This is basically just an EBF that uses Ember instead of coils for heat."
-		""
-		""
-		"Eventually I wanna make this like... more engaging and require supplying it with a steady source of uh, source lol"
-	]
-	quest.6D9249DE13CBEB39.quest_subtitle: "TODO : MAKE THE THING GOOD AND COOL YEAH MHM"
 	quest.6E3EDA485D3AD5F7.quest_desc: [
 		"In the waters of the undergarden you have discovered a strange, lightless chasm into the depths."
 		""
@@ -1039,6 +1434,24 @@
 	quest.6EF94519E4BCBE72.quest_subtitle: "Soooo"
 	quest.6F0EB4BB758B4308.quest_desc: ["&o&7Ten feet twenty the flower man..."]
 	quest.6F0EB4BB758B4308.quest_subtitle: "Lend me your power!"
+	quest.6F15E6A210A0F091.quest_desc: [
+		"Wood Tar can then be distilled into &eLight Tar Oils&r, &ePhenolic Oils&r, &6Creosote&r, and &cTar Pitch&r"
+		""
+		"Tar Oils and Phenolic Oils can be distilled once again for their final products, Creosote is just... Creosote, and Tar Pitch is still not implemented; so keep it stored around for now."
+		""
+		"I trust you can use EMI by now to see those products, if you somehow made it here without EMI..."
+		"How? Better yet, why?"
+	]
+	quest.6F15E6A210A0F091.quest_subtitle: "Double Distillation Trouble"
+	quest.6FEE469CCF433312.quest_desc: [
+		"Can be produced from Gas Oils or Heavy Pyrolysis Oils."
+		""
+		""
+		"The key product is &aOlefin Gasses&r, this distills into several simple hydrocarbons you may frequently use."
+		""
+		"This also gives you a variety of materials that can be recycled elsewhere."
+	]
+	quest.6FEE469CCF433312.quest_subtitle: "Gas Oils"
 	quest.701373D09D99A565.quest_desc: [
 		"Interfaces serve two purposes, as an input point for ME networks(by inserting items/fluids into them), or as extraction points for ME networks (by setting the filter and extracting the item/fluid that was filtered)."
 		""
@@ -1046,6 +1459,14 @@
 		"This is much more efficient than using export/import busses, as the items are always immediately available. Import/export busses have their uses, but there's a good chance the interface may do it better."
 	]
 	quest.701373D09D99A565.quest_subtitle: "Interfacing with Interfaces"
+	quest.70B26F634810EE5E.quest_desc: [
+		"This will allow an MPS to run at HV Voltage."
+		""
+		"Upgrading all your current MPS's with these with give you a flat 4x'ing of your power generation and fuel usage. Useful for climbing into the next tier, but not enough."
+		""
+		"You Believe an even bigger engine is in store, soon..."
+	]
+	quest.70B26F634810EE5E.quest_subtitle: "Another MPS Upgrade"
 	quest.70C78D038EBF6CA6.quest_desc: [
 		"Rock Cutting wheels will cleave large areas of material away when active."
 		""
@@ -1055,7 +1476,14 @@
 		"These are useful, strictly because you can automate mining with massive airships if you are so inclined. and attaching huge harvester arms to simulated contraptions for early game mining really changes how you play."
 	]
 	quest.70C78D038EBF6CA6.quest_subtitle: "Mass Contraption Mining"
+	quest.71331803888BB83C.quest_subtitle: "The Endgoal"
 	quest.7171BE1689635624.quest_subtitle: "Your first source of Gallium"
+	quest.71E1FB669BEB0D4C.quest_desc: [
+		"Unlike Kanthal and other MV hot metals, HV+ Hot metals require the use of a Vacuum Freezer."
+		""
+		"If you haven't started working on EV circuits yet, return here once you have and also have assembled a Vacuum Freezer."
+	]
+	quest.71E1FB669BEB0D4C.quest_subtitle: "You'll need a vac freezer"
 	quest.71E4C3FB3C4C06E9.quest_desc: [
 		"Food is Frontiers is a &asoft-requirement&r system for progression."
 		""
@@ -1092,11 +1520,28 @@
 		"Spellbooks now function normally. Rather than failing to cast spells."
 	]
 	quest.73BC5E9DE8B0CE61.quest_subtitle: "Spellbook Release"
+	quest.750F45A555ED46F1.quest_subtitle: "The start of coal chemistry"
+	quest.75D7B3EAD5BAE28D.quest_desc: [
+		"Look at the early LV Desalter. These blocks only exist for LV+MV tiers, but can help you produce earlygame liquid fuel that is more dense to transport around."
+		""
+		"Good power density, great for outputs, not too difficult to make and is renewable"
+	]
+	quest.75D7B3EAD5BAE28D.quest_subtitle: "Early Oil"
 	quest.762D3321F43C0589.quest_desc: [
 		"Last step! Take your &eChromium (III) Oxide&r and some &eAluminium&r and toss it into an &aEBF&r."
 		"You'll get your &bChromium&r and some &bAlumina&r! Congrats, you've now (hopefully) automated Chromium"
 	]
 	quest.762D3321F43C0589.quest_subtitle: "Finally! Chrome!"
+	quest.76CE8187246B0746.quest_desc: [
+		"the first recovery process for this material makes you produce aluminium hydroxide."
+		""
+		"once you have a small batch of Aluminium Hydroxide, you can use it as a non-consumable to produce Sodium Hydroxide as a byproduct, rather than soda ask."
+	]
+	quest.76CE8187246B0746.quest_subtitle: "Even more hydroxide recovery"
+	quest.7718E125AD134AA2.title: "Get Your Amine Back."
+	quest.773E2ABCB902CA25.quest_subtitle: "Abyss Layer 4: The Ecological Dead Zone"
+	quest.773E2ABCB902CA25.title: "Reach the, bottom?"
+	quest.77DABAF71C391FA3.quest_subtitle: "Robust Automation"
 	quest.7886325B74847F55.quest_desc: [
 		"Reaching the Firmament is a requirement to unlock major parts of HV. "
 		"As such, you are required to make an initial expedition to the Firmament before you can grasp"
@@ -1105,6 +1550,14 @@
 		"Note: This dimension is currently under Functional Development, new features for Gravity Behavior and Content will show up in future Nightlies, but for now this quest and recipes to access the firmament are so you can check out what exists"
 	]
 	quest.7886325B74847F55.quest_subtitle: "The Skies Above"
+	quest.78EEB9C6ED09C95E.quest_desc: [
+		"I am so sorry for bucket hell."
+		""
+		"I'll clean this up eventually."
+		""
+		":')"
+	]
+	quest.78EEB9C6ED09C95E.quest_subtitle: "The start of wood refinements"
 	quest.79797A9CA0D22B2A.quest_desc: ["Not Sure how I really want to 'integrate' or 'theme' ars into progression, Neo Vitae already feels alienated atm"]
 	quest.79797A9CA0D22B2A.quest_subtitle: "A Dev Fiasco"
 	quest.7A016FB22E827915.quest_desc: [
@@ -1126,6 +1579,12 @@
 	]
 	quest.7A016FB22E827915.quest_subtitle: "Silence is the standard."
 	quest.7A016FB22E827915.title: "An Unseen Threat: The Murkbloom"
+	quest.7A0405D8C766C3C2.quest_desc: [
+		"Worth noting: now that you have Nichrome coils, any recipe that only required Cupronickle coils will gain +1 free overclocks. "
+		""
+		"This is due to coil overclocking, to keep it simple, every +2 heat tiers above the base heat tier, you will gain +1 Free Overclocks. This can help massively speed up smelt times if maximized."
+	]
+	quest.7A0405D8C766C3C2.quest_subtitle: "Stronger heating. (3600k)"
 	quest.7ABC4319FC83A545.quest_desc: [
 		"The plantlife in the abyss has naturally adapted to not attracting huge murkbloom masses."
 		""
@@ -1158,6 +1617,24 @@
 	]
 	quest.7BAF71B8957633BA.quest_subtitle: "Life shall be spilt"
 	quest.7C5DB25564510E87.quest_subtitle: "the base of better chalks"
+	quest.7DC3441B47B3E2E8.quest_desc: [
+		"HV multiblock hatches means access to EV power tier recipes, and upgrading speeds of anything you've been running so far"
+		""
+		"I would recommend you invest these into your EBF's"
+	]
+	quest.7DC3441B47B3E2E8.quest_subtitle: "Time to tier up again!"
+	quest.7E41FC728C5BA186.quest_desc: [
+		"This comes from &eRefinery Gas&r, which requires some special processing to desulphurize."
+		""
+		"I'd recommend you set up a passive &6Lean Amine Solution&r setup, somewhere in your processing line. And also take the time to clean any &6Rich Amine Solution&r you make."
+		""
+		"This one yields several other byproducts, including &eCracked Naphtha&r, which can be reprocessed into other materials as well."
+		""
+		"This recipe is one of the higher yields for &aOlefin Gasses&r."
+	]
+	quest.7E41FC728C5BA186.quest_subtitle: "Refinery Gas"
+	quest.7ECF1D3CAA70ACD2.quest_desc: ["For future content, just store it for now."]
+	quest.7ECF1D3CAA70ACD2.quest_subtitle: "NYI"
 	quest.7F0D22395A2F8985.quest_desc: ["Worth noting you can farm this with the soul wood totem version of the unchained rite."]
 	quest.7F43598A6495BC40.quest_subtitle: "Your First Coil"
 	quest.7FE634D65F26BB7A.quest_desc: [
@@ -1168,10 +1645,14 @@
 	]
 	quest.7FE634D65F26BB7A.quest_subtitle: "Foods of the Nether"
 	task.1B611E179BDDC444.title: "Yeah"
+	task.20F081CB45B26E49.title: "Any HV Tier Energy Hatch"
 	task.2627A4C621E3C941.title: "Reach Y: -300 of the Abyss"
+	task.3337EE4D07C864D9.title: "Yeah"
 	task.3D403FABBBC01CED.title: "Got it!"
 	task.454A92A4FCC0F185.title: "Any #c:tools/mining_tool"
+	task.48E30DE36555C7BC.title: "How to read this page"
 	task.4F2DCF87BF14A5A0.title: "To Somewhere Beyond"
+	task.5181B5648B30F4E4.title: "Any early AE2 Crafting CPU"
 	task.5BADA7689FDD8595.title: "Any Shadebloom Boots"
 	task.5C1CE51AFE90BD57.title: "Craft Any Mortar"
 	task.5CF3523293ABF984.title: "Reach Y:-500 in the Abyss"
@@ -1180,4 +1661,5 @@
 	task.6845F4E5F89C3C23.title: "Reach Y: -100 of the Abyss"
 	task.6A308EFE8BFF09DB.title: "Reach the Sea in the Clouds, The Firmament"
 	task.77609A3D829D9910.title: "Any Log"
+	task.7C4DD74DC0A26CAA.title: "If you haven't already"
 }

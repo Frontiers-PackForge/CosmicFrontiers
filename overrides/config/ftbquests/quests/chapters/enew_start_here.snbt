@@ -62,7 +62,7 @@
 		}
 		{
 			icon: {
-				id: "cosmiccore:raw_reclaimed_pale_ore"
+				id: "cosmiccore:raw_redstona"
 			}
 			id: "3986D39DC5DCFEE1"
 			tasks: [{

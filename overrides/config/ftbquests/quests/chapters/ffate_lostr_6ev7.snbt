@@ -1,10 +1,61 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 300
 	default_quest_shape: ""
 	filename: "ffate_lostr_6ev7"
 	group: "09ADD253FB82D7A0"
 	id: "2BFE3D121C4938C6"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "4640766C36B5DCE4"
+			size: 2.0d
+			tasks: [{
+				id: "4A3DB2BD51B88F15"
+				item: { count: 1, id: "gtceu:ev_machine_hull" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4640766C36B5DCE4"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: false
+			icon: {
+				id: "neovitae:enhanced_teleposer_focus"
+			}
+			id: "15DCE4A5DE87DF3A"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					dimension: "undergarden:undergarden"
+					id: "1A19722A189FF450"
+					ignore_dimension: false
+					position: [I;
+						-30000000
+						-1024
+						-30000000
+					]
+					size: [I;
+						60000000
+						950
+						60000000
+					]
+					type: "location"
+				}
+				{
+					deed: "frontiers:sky_runner"
+					disclosure: "sealed"
+					id: "2EFAD542925BC6D6"
+					presentation: "standard"
+					type: "cosmiccore:deed"
+				}
+			]
+			x: 0.0d
+			y: -3.5d
+		}
+	]
 }

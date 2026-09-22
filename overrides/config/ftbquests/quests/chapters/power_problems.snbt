@@ -1,0 +1,297 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "power_problems"
+	group: "1654AF685B58AF60"
+	id: "6CB6C72AFD18B5EA"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["34651919AADD1315"]
+			icon: {
+				id: "createdeco:decal_electrical"
+			}
+			id: "0BFB4FBAD5FE77F1"
+			min_width: 450
+			tasks: [{
+				id: "4871F0D2854F9D56"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0BFB4FBAD5FE77F1"]
+			id: "3BE695E5EC2001C2"
+			tasks: [{
+				id: "6268C35DDD8AB410"
+				item: { count: 1, id: "gtceu:lv_machine_hull" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0BFB4FBAD5FE77F1"]
+			id: "13370A41E2319453"
+			tasks: [{
+				id: "0F3A84284E42FB30"
+				item: { count: 1, id: "gtceu:mv_machine_hull" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0BFB4FBAD5FE77F1"]
+			id: "74328AFD9553E4EA"
+			tasks: [{
+				id: "323A260548CF8B0A"
+				item: { count: 1, id: "gtceu:hv_machine_hull" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0BFB4FBAD5FE77F1"]
+			id: "1198F042E7F71D7F"
+			tasks: [{
+				id: "6AA2C6FC99E50CC2"
+				item: { count: 1, id: "gtceu:ev_machine_hull" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0BFB4FBAD5FE77F1"]
+			id: "64D7FF655E62D398"
+			tasks: [{
+				id: "4E699787DC42048B"
+				item: { count: 1, id: "gtceu:iv_machine_hull" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3BE695E5EC2001C2"]
+			id: "35E4FB722A8CA395"
+			tasks: [{
+				id: "6D76976B0A8D48B5"
+				item: { count: 1, id: "cosmiccore:modular_power_station" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3BE695E5EC2001C2"]
+			id: "213495FF52025FAE"
+			tasks: [
+				{
+					id: "43B23F78B8F3007C"
+					item: { count: 1, id: "gtceu:lv_steam_turbine" }
+					type: "item"
+				}
+				{
+					id: "5166D2B30CDE5EE4"
+					item: { count: 1, id: "gtceu:lv_combustion" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1845801D8B270613"
+					item: { count: 1, id: "gtceu:lv_gas_turbine" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3BE695E5EC2001C2"]
+			id: "5E23F46CA23B9EF0"
+			tasks: [{
+				id: "0058FC6973DE1509"
+				item: { count: 1, id: "gtceu:cinder_gas_bucket" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3BE695E5EC2001C2"]
+			id: "75D7B3EAD5BAE28D"
+			shape: "circle"
+			tasks: [{
+				id: "4ED87949471608D4"
+				item: { count: 1, id: "gtceu:middle_fraction_distillates_bucket" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3BE695E5EC2001C2"]
+			id: "2F4C9EE57087AF0E"
+			tasks: [{
+				id: "39D5CED928AA20AB"
+				item: { count: 1, id: "cosmiccore:high_pressure_steam_bucket" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 6783534211165560560L
+				visible: 1b
+			}]
+			dependencies: [
+				"13370A41E2319453"
+				"5E23F46CA23B9EF0"
+			]
+			id: "599DB6B01E4EA14D"
+			tasks: [{
+				id: "7C1DA074D1A39BB6"
+				item: { count: 1, id: "gtceu:awakened_cinder_gas_bucket" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 8491453443619873421L
+				visible: 1b
+			}]
+			dependencies: [
+				"13370A41E2319453"
+				"75D7B3EAD5BAE28D"
+			]
+			id: "59AE67A4364865C2"
+			shape: "circle"
+			tasks: [{
+				id: "17E426811C744781"
+				item: { count: 1, id: "gtceu:diesel_bucket" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 6462216470306252226L
+				visible: 1b
+			}]
+			dependencies: [
+				"74328AFD9553E4EA"
+				"59AE67A4364865C2"
+			]
+			id: "426AD0428F04EB96"
+			tasks: [{
+				id: "394BB05E9039604C"
+				item: { count: 1, id: "gtceu:cetane_boosted_diesel_bucket" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 6457518308258128205L
+				visible: 1b
+			}]
+			dependencies: [
+				"74328AFD9553E4EA"
+				"599DB6B01E4EA14D"
+			]
+			id: "3256B9FF13096329"
+			tasks: [{
+				id: "69A51609F79D414D"
+				item: { count: 1, id: "gtceu:pure_cinder_gas_bucket" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1FECA1C0E8B233D5"]
+			hide_until_deps_complete: true
+			id: "34651919AADD1315"
+			min_width: 300
+			tasks: [{
+				id: "48E30DE36555C7BC"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: -5.0d
+		}
+		{
+			id: "04E6BCCDEBBE8555"
+			tasks: [{
+				id: "02BE0CBFF1380AAE"
+				item: { count: 1, id: "gtceu:source_enhanced_bio_fuel_bucket" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			id: "02049F5FDD7273A7"
+			tasks: [{
+				id: "369E223D09B5D008"
+				item: { count: 1, id: "gtceu:bio_diesel_bucket" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				asset: "cosmiccore:textures/gui/ftbquests/dependency_lines/main_quest_line.png"
+				dependency: 353177213404611925L
+				visible: 1b
+			}]
+			dependencies: ["04E6BCCDEBBE8555"]
+			id: "4AA12DEF3B9ED6D2"
+			tasks: [{
+				id: "435F478E90E110C0"
+				item: { count: 1, id: "gtceu:thunder_boosted_source_diesel_bucket" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1198F042E7F71D7F"]
+			id: "2CC42A9D4EAB03FF"
+			tasks: [{
+				id: "4BAF36AC9FCB1B95"
+				item: { count: 1, id: "gtceu:high_octane_gasoline_bucket" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["64D7FF655E62D398"]
+			id: "334446F54BB4AC91"
+			tasks: [{
+				id: "6504284BA6711CCA"
+				item: { count: 1, id: "gtceu:stardust_infused_gasoline_bucket" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+	]
+}
