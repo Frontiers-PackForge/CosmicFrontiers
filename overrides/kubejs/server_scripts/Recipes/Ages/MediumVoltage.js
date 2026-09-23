@@ -140,11 +140,10 @@ ServerEvents.recipes(event => {
         .inputFluids('1000x gtceu:potent_mana')
         .EUt(GTValues.V[GTValues.LV], 4)
         .duration(1200)
-    event.recipes.cosmiccore.arcane_crucible()
+    event.recipes.gtceu.electric_blast_furnace()
         .itemInputs('gtceu:terrasteel_dust', 'malum:raw_brilliance', 'malum:malignant_lead')
         .itemOutputs('gtceu:terrasteel_ingot')
         .inputFluids('500x gtceu:potent_mana')
-        .input('cosmiccore:ember', 4000)
         .EUt(GTValues.V[GTValues.MV], 2)
         .duration(300)
     event.recipes.gtceu.assembler('frontiers:me_computation_bay_casing')
@@ -221,7 +220,8 @@ ServerEvents.recipes(event => {
         .circuit(6)
         .EUt(GTValues.V[GTValues.LV], 1)
         .duration(100)
-    event.recipes.ars_nouveau.enchanting_apparatus(['cosmiccore:soul_stained_steel_aluminium_plated_casing', 'cosmiccore:soul_stained_steel_aluminium_plated_casing', 'cosmiccore:soul_stained_steel_aluminium_plated_casing', 'cosmiccore:soul_stained_steel_aluminium_plated_casing', 'gtceu:cupronickel_double_cable', 'gtceu:cupronickel_double_cable', '#gtceu:circuits/mv', '#gtceu:circuits/mv'], ['neovitae:ara_vitae'], 'cosmiccore:arcane_crucible', 20000, true)
+    event.shaped('cosmiccore:soul_muted_casing', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:runed_steel_foil', B: 'gtceu:chrysanthium_plate', C: 'gtceu:chrysanthium_frame' })
+    event.shaped('cosmiccore:leyline_orrery', ['ABA', 'CDC', 'ACA'], { A: '#gtceu:circuits/ev', B: 'ae2:wireless_access_point', C: 'cosmiccore:energetic_aluminium_plate', D: 'ars_nouveau:enchanters_gauntlet' })
     event.shaped('cosmiccore:soul_stained_steel_aluminium_plated_casing', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:aluminium_plate', B: 'malum:soul_stained_steel_plating', C: '#gtceu:crafting_tools/hammer' })
     event.shaped('cosmiccore:mv_ember_input_hatch', ['ABA', 'CDC', 'ABA'], { A: 'cosmiccore:double_nostium_plate', B: 'cosmiccore:energetic_aluminium_foil', C: 'cosmiccore:lv_wildfire_core', D: 'gtceu:mv_machine_hull' })
     event.shaped('gtceu:mv_machine_hull', ['ABA', 'CDC', 'AEA'], { A: 'cosmiccore:energetic_aluminium_foil', B: 'gtceu:runed_steel_plate', C: 'gtceu:annealed_copper_single_cable', D: 'gtceu:mv_machine_casing', E: 'cosmiccore:small_nostium_spring' })
@@ -247,7 +247,7 @@ ServerEvents.recipes(event => {
     event.shaped('8x cosmiccore:lightweight_industrial_casing', ['ABA', 'ACA', 'ABA'], { A: 'gtceu:aluminium_plate', B: 'gtceu:long_steel_rod', C: 'gtceu:aluminium_frame' })
     event.shaped('cosmiccore:biomana_digestor', ['ABA', 'CDC', 'EFE'], { A: 'cosmiccore:somarust_casing', B: 'gtceu:mv_electric_pump', C: 'cosmiccore:lightweight_industrial_casing', D: 'cosmiccore:nostium_frame', E: '#gtceu:circuits/mv', F: 'cosmiccore:lightweight_dark_steel_casing' })
     event.shaped('cosmiccore:biomeld_vivarium', ['ABA', 'CDC', 'EFE'], { A: 'malum:imitation_flesh', B: 'cosmiccore:mv_spawner_hatch', C: 'cosmiccore:somarust_casing', D: 'enderio:powered_spawner', E: '#gtceu:circuits/mv', F: 'gtceu:mv_machine_hull' })
-    event.recipes.cosmiccore.arcane_crucible('frontiers:ages/medium_voltage/cinder_fuel_pellets')
+    event.recipes.cosmiccore.dawn_forge('frontiers:ages/medium_voltage/cinder_fuel_pellets')
         .itemInputs('16x embers:ember_grit')
         .itemOutputs('64x cosmiccore:cinder_fuel_pellets')
         .inputFluids('1000x gtceu:cinder_pellet_binder')
@@ -331,4 +331,21 @@ ServerEvents.recipes(event => {
     event.smithing('cosmiccore:shadebloom_leggings', 'minecraft:netherite_leggings', 'cosmiccore:double_tenbrium_plate')
     event.smithing('cosmiccore:shadebloom_chestplate', 'minecraft:netherite_chestplate', 'cosmiccore:double_tenbrium_plate')
     event.smithing('cosmiccore:shadebloom_diving_helmet', 'create:netherite_diving_helmet', 'cosmiccore:double_tenbrium_plate')
+    event.shaped('cosmiccore:power_tower', ['ABA', 'ACA', 'DDD'], {A: 'gtceu:stainless_steel_frame', B: '#gtceu:circuits/hv', C: 'gtceu:mv_machine_hull', D: 'cosmiccore:refractory_structural_casing'})
+    event.recipes.gtceu.fluid_solidifier('frontiers:refractory_containment_casing')
+        .itemInputs('cosmiccore:lightweight_dark_steel_casing')
+        .itemOutputs('cosmiccore:refractory_containment_casing')
+        .inputFluids('16x gtceu:stainless_steel')
+        .EUt(GTValues.VA[GTValues.MV], 2)
+        .duration(100)
+
+
+
+
+
+
+
+
+
+
 })

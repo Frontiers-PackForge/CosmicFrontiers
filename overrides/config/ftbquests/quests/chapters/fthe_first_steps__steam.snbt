@@ -134,7 +134,11 @@
 				dependency: 5091555089431888890L
 				visible: 1b
 			}]
-			dependencies: ["46A8D660ABEB83FA"]
+			dependencies: [
+				"46A8D660ABEB83FA"
+				"00E576A121E8BDF8"
+			]
+			dependency_requirement: "one_completed"
 			id: "369DE54ABB07E98A"
 			shape: "hexagon"
 			tasks: [
@@ -2046,6 +2050,27 @@
 			}]
 			x: 8.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["2AA6F78DB2ED60F2"]
+			hide_dependency_lines: true
+			id: "00E576A121E8BDF8"
+			shape: "gear"
+			tasks: [
+				{
+					count: 64L
+					id: "0283FDAC2B649651"
+					item: { count: 1, id: "farmersdelight:straw" }
+					type: "item"
+				}
+				{
+					id: "6144B53CA84756DA"
+					item: { count: 1, id: "gtceu:iron_knife" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
 		}
 	]
 }

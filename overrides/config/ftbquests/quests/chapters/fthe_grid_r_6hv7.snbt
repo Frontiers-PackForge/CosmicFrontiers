@@ -51,7 +51,8 @@
 			id: "6ED8EB7EBCBA5C55"
 			linked_quest: "21C27B949DF85C09"
 			shape: "rsquare"
-			x: -9.5d
+			size: 1.5d
+			x: -9.0d
 			y: -9.5d
 		}
 		{
@@ -1485,6 +1486,8 @@
 			y: -9.5d
 		}
 		{
+			dependencies: ["1C1BDD18E2D05FCF"]
+			hide_dependency_lines: true
 			id: "23D2F14DD2A597DB"
 			tasks: [{
 				id: "60174F2400412BA3"
@@ -1835,10 +1838,10 @@
 					type: "location"
 				}
 				{
-					deed: "frontiers:sky_runner"
-					disclosure: "sealed"
+					deed: "frontiers:depth_call_4"
+					disclosure: "visible"
 					id: "30D4C194F974CD1A"
-					presentation: "standard"
+					presentation: "quest"
 					type: "cosmiccore:deed"
 				}
 			]
@@ -1865,6 +1868,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["1C1BDD18E2D05FCF"]
 			id: "31B41BDB3296BCF0"
 			tasks: [{
 				id: "5270905DC54CD39C"
@@ -2017,6 +2021,66 @@
 			]
 			x: 6.0d
 			y: -4.0d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				dependency: 2432642626969164809L
+				target_link: 7987392868706311253L
+				visible: 1b
+			}]
+			dependencies: [
+				"21C27B949DF85C09"
+				"16207443D5974CEA"
+			]
+			icon: {
+				id: "cosmiccore:leyline_compressor"
+			}
+			id: "7162A0976D025116"
+			min_width: 450
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [
+				{
+					id: "1F781315816AACD6"
+					item: { count: 1, id: "cosmiccore:leyline_compressor" }
+					type: "item"
+				}
+				{
+					id: "023A231097314EEF"
+					item: { count: 1, id: "cosmiccore:leyline_me_hatch" }
+					type: "item"
+				}
+				{
+					id: "4D21ABBAC06F910E"
+					item: { count: 1, id: "cosmiccore:blank_leyline_pattern" }
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["7162A0976D025116"]
+			id: "3D236794B8757616"
+			shape: "hexagon"
+			size: 2.5d
+			tasks: [{
+				id: "2A9CAA5D51C438FA"
+				item: { count: 1, id: "cosmiccore:leyline_orrery" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -13.5d
+		}
+		{
+			id: "2390E1406098CDCE"
+			tasks: [{
+				id: "0ECDDFDEFB2DCA8C"
+				item: { count: 1, id: "neovitae:ritual_stone" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: -3.0d
 		}
 	]
 }

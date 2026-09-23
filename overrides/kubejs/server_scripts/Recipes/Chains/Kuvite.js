@@ -41,10 +41,9 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.V[GTValues.MV], 1)
         .duration(1200)
 
-    event.recipes.cosmiccore.arcane_crucible('frontiers:chains/kuvite/galvanized_ethersteel')
+    event.recipes.gtceu.electric_blast_furnace('frontiers:chains/kuvite/galvanized_ethersteel')
         .itemInputs(['4x cosmiccore:kuvite_ingot','2x gtceu:terrasteel_ingot','6x gtceu:zano_aluminate_dust'])
         .itemOutputs(['8x cosmiccore:galvanized_ethersteel_ingot','5x gtceu:alumina_dust','2x gtceu:electrum_ingot'])
-        .input('cosmiccore:ember', 4000)
-        .EUt(GTValues.V[GTValues.MV], 8)
+        .EUt(GTValues.V[GTValues.MV], 2)
         .duration(600)
 })

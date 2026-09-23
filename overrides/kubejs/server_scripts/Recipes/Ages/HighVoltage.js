@@ -198,7 +198,31 @@ ServerEvents.recipes(event => {
     event.shaped('cosmiccore:large_roaster', ['ABA', 'CDC', 'EFE'], { A: 'gtceu:heatproof_machine_casing', B: 'gtceu:hv_electric_pump', C: 'gtceu:black_steel_frame', D: 'gtceu:hv_machine_hull', E: '#gtceu:circuits/hv', F: 'gtceu:hv_electric_motor' })
     event.shaped('2x cosmiccore:hv_cladding', ['ABA', 'BCB', 'ABA'], { A: 'cosmiccore:galvanized_ethersteel_bolt', B: 'gtceu:polyvinyl_chloride_foil', C: 'gtceu:double_andesite_alloy_plate' })
     event.shaped('cosmiccore:hv_modular_frameworks', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:sterling_silver_bolt', B: 'cosmiccore:galvanized_ethersteel_rod', C: 'cosmiccore:small_galvanized_ethersteel_gear' })
-
+    event.shaped('cosmiccore:bloodsteel_kuvite_plating', ['ABA', 'ACA', 'ADA'], { A: 'cosmiccore:kuvite_plate', B: '#gtceu:crafting_tools/hammer', C: 'cosmiccore:kuvite_frame', D: '#gtceu:crafting_tools/wrench' })
+    event.recipes.gtceu.assembler('frontiers:bloodsteel_kuvite_plating')
+        .itemInputs('6x cosmiccore:kuvite_plate', 'cosmiccore:kuvite_frame')
+        .itemOutputs('cosmiccore:bloodsteel_kuvite_plating')
+        .circuit(6)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.recipes.gtceu.assembler('frontiers:biomana_reflective_tenbrium_casing')
+        .itemInputs('gtceu:titanium_frame', '3x cosmiccore:nostium_plate', '3x cosmiccore:tenbrium_plate')
+        .itemOutputs('cosmiccore:biomana_reflective_tenbrium_casing')
+        .circuit(6)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.recipes.gtceu.assembler('frontiers:pale_rose_structural_casing')
+        .itemInputs('gtceu:stainless_steel_frame', '3x cosmiccore:pale_steel_plate', '3x gtceu:rose_gold_plate')
+        .itemOutputs('cosmiccore:pale_rose_structural_casing')
+        .circuit(6)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.recipes.gtceu.assembler('frontiers:verdigris_nostium_casing')
+        .itemInputs('cosmiccore:nostium_frame', '6x cosmiccore:nostium_plate')
+        .itemOutputs('cosmiccore:verdigris_nostium_casing')
+        .circuit(6)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
     event.recipes.cosmiccore.manawomb_leeching_pond('frontiers:raw_utherite')
         .itemInputs('16x cosmiccore:green_algae', '16x cosmiccore:bloomwyrm_algae')
         .notConsumableItem('gtceu:platinum_plate')
@@ -210,7 +234,7 @@ ServerEvents.recipes(event => {
         .duration(400)
 
     event.recipes.cosmiccore.manawomb_leeching_pond('frontiers:raw_vanachrome')
-        .itemInputs('16x cosmiccore:blue_algae', '16x cosmiccore:bloomwyrm_algae','4x malum:blighted_gunk')
+        .itemInputs('16x cosmiccore:blue_algae', '16x cosmiccore:bloomwyrm_algae', '4x malum:blighted_gunk')
         .notConsumableItem('gtceu:platinum_plate')
         .itemOutputs('16x cosmiccore:raw_vanachrome')
         .inputFluids('8000x cosmiccore:biomeld_nutrient')
@@ -220,7 +244,7 @@ ServerEvents.recipes(event => {
         .duration(400)
 
     event.recipes.cosmiccore.manawomb_leeching_pond('frontiers:raw_phycolite')
-        .itemInputs('8x cosmiccore:red_algae', '16x cosmiccore:bloomwyrm_algae','4x malum:blighted_gunk')
+        .itemInputs('8x cosmiccore:red_algae', '16x cosmiccore:bloomwyrm_algae', '4x malum:blighted_gunk')
         .notConsumableItem('gtceu:titanium_plate')
         .itemOutputs('16x cosmiccore:raw_phycolite')
         .inputFluids('8000x cosmiccore:biomeld_nutrient')
@@ -230,7 +254,7 @@ ServerEvents.recipes(event => {
         .duration(400)
 
     event.recipes.cosmiccore.manawomb_leeching_pond('frontiers:raw_agarlite')
-        .itemInputs('8x cosmiccore:red_algae', '16x cosmiccore:bloomwyrm_algae','4x malum:blighted_gunk')
+        .itemInputs('8x cosmiccore:red_algae', '16x cosmiccore:bloomwyrm_algae', '4x malum:blighted_gunk')
         .notConsumableItem('gtceu:titanium_plate')
         .itemOutputs('16x cosmiccore:raw_agarlite')
         .inputFluids('8000x cosmiccore:biomeld_nutrient')
@@ -238,6 +262,93 @@ ServerEvents.recipes(event => {
         .biopowerInput(4)
         .EUt(GTValues.VA[GTValues.HV], 2)
         .duration(400)
+
+    event.recipes.gtceu.assembler('frontiers:drone_frame_1')
+        .itemInputs('gtceu:lv_electric_motor', '4x gtceu:long_steel_rod', '4x gtceu:steel_plate')
+        .itemOutputs('8x cosmiccore:drone_frame_1')
+        .EUt(GTValues.VA[GTValues.LV], 2)
+        .duration(100)
+
+    event.recipes.gtceu.assembler('frontiers:drone_frame_2')
+        .itemInputs('gtceu:mv_electric_motor', '4x cosmiccore:long_energetic_aluminium_rod', '4x cosmiccore:energetic_aluminium_plate')
+        .itemOutputs('8x cosmiccore:drone_frame_2')
+        .EUt(GTValues.VA[GTValues.MV], 2)
+        .duration(100)
+
+    event.recipes.gtceu.assembler('frontiers:drone_frame_3')
+        .itemInputs('gtceu:hv_electric_motor', '4x cosmiccore:long_galvanized_ethersteel_rod', '4x cosmiccore:galvanized_ethersteel_plate')
+        .itemOutputs('8x cosmiccore:drone_frame_3')
+        .EUt(GTValues.VA[GTValues.HV], 2)
+        .duration(100)
+
+    event.recipes.gtceu.assembler('frontiers:rusty_drone')
+        .itemInputs('cosmiccore:drone_frame_1', 'simulated:gyroscopic_mechanism', '2x gtceu:duct_tape', 'gtceu:power_thruster')
+        .itemOutputs('8x cosmiccore:rusty_drone')
+        .circuit(3)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+
+    event.recipes.gtceu.assembler('frontiers:robust_drone')
+        .itemInputs('cosmiccore:drone_frame_2', 'simulated:gyroscopic_mechanism', '4x gtceu:duct_tape', 'gtceu:power_thruster')
+        .itemOutputs('8x cosmiccore:robust_drone')
+        .circuit(3)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+
+    event.recipes.gtceu.assembler('frontiers:industrial_drone')
+        .itemInputs('cosmiccore:drone_frame_2', 'simulated:gyroscopic_mechanism', '8x gtceu:duct_tape', 'gtceu:advanced_power_thruster')
+        .itemOutputs('8x cosmiccore:industrial_drone')
+        .circuit(3)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.recipes.gtceu.assembler('frontiers:hv_me_computation_core')
+        .itemInputs('cosmiccore:me_computation_bay_casing', '16x #gtceu:circuits/hv')
+        .itemOutputs('cosmiccore:hv_me_computation_core')
+        .EUt(GTValues.VA[GTValues.HV], 1)
+        .duration(100)
+    event.recipes.gtceu.assembler('frontiers:high_temperature_smelting_casing')
+        .itemInputs('gtceu:hsla_steel_frame', '4x gtceu:long_hsla_steel_rod', '4x gtceu:double_hsla_steel_plate')
+        .itemOutputs('gtceu:high_temperature_smelting_casing')
+        .circuit(6)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.shaped('cosmiccore:alloy_blasting_kiln', ['ABA', 'BCB', 'DDD'], { A: '#gtceu:circuits/ev', B: 'cosmiccore:double_pale_steel_plate', C: 'gtceu:primitive_blast_furnace', D: 'cosmiccore:refractory_structural_casing' })
+    event.shaped('cosmiccore:conversion_complex', ['ABA', 'CDE', 'FGF'], { A: '#gtceu:circuits/ev', B: 'gtceu:hv_electric_piston', C: 'gtceu:hv_robot_arm', D: 'cosmiccore:lightweight_stainless_steel_casing', E: 'gtceu:hv_fluid_regulator', F: 'gtceu:kanthal_single_cable', G: 'cosmiccore:refractory_structural_casing' })
+    event.shaped('cosmiccore:fractional_condenser', ['ABA', 'BCB', 'DDD'], { A: 'gtceu:micro_processor_assembly', B: 'cosmiccore:lightweight_stainless_steel_casing', C: 'gtceu:hv_fluid_regulator', D: 'cosmiccore:refractory_structural_casing' })
+    event.shaped('cosmiccore:steam_cracking_furnace', ['ABA', 'ACA', 'DDD'], { A: 'gtceu:cupronickel_coil_block', B: '#gtceu:circuits/ev', C: 'cosmiccore:lightweight_stainless_steel_casing', D: 'cosmiccore:refractory_structural_casing' })
+    event.shaped('cosmiccore:desalter', ['ABA', 'BCB', 'DDD'], { A: 'cosmiccore:lightweight_stainless_steel_casing', B: '#gtceu:circuits/hv', C: 'gtceu:hsla_steel_frame', D: 'cosmiccore:refractory_structural_casing' })
+    event.shaped('cosmiccore:phase_separator', ['ABA', 'BCB', 'BDB'], { A: 'cosmiccore:lightweight_stainless_steel_casing', B: 'cosmiccore:refractory_structural_casing', C: 'gtceu:hsla_steel_frame', D: '#gtceu:circuits/hv' })
+
+
+    event.shaped('cosmiccore:hephaestus_cauldron', ['ABA', 'ACA', 'DDD'], { A: 'cosmiccore:double_pale_steel_plate', B: '#gtceu:circuits/ev', C: 'cosmiccore:alloy_blasting_kiln', D: 'gtceu:high_temperature_smelting_casing' })
+    event.shapeless('cosmiccore:crafting_parallel_core', ['ae2:crafting_unit', '#gtceu:circuits/hv'])
+    event.shapeless('cosmiccore:crafting_acceleration_core', ['ae2:crafting_unit', '#gtceu:circuits/hv'])
+    event.shaped('cosmiccore:firmament_permit', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:mv_sensor', B: '#gtceu:circuits/hv', C: 'cosmiccore:nether_permit' })
+    event.shapeless('cosmiccore:hv_me_power_relay', ['cosmiccore:me_computation_bay_casing', 'gtceu:hv_diode'])
+    event.shapeless('cosmiccore:leyline_me_hatch', ['ae2:pattern_provider', 'cosmiccore:lv_wildfire_core', 'gtceu:hv_machine_hull'])
+    event.shaped('cosmiccore:leyline_compressor', ['ABA', 'CDC', 'AEA'], { A: '#gtceu:circuits/ev', B: 'occultism:research_fragment_dust', C: 'occultism:witherite_dust', D: 'gtceu:hv_compressor', E: 'ars_nouveau:arcane_core' })
+    event.shaped('cosmiccore:superheavy_steel_casing', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:long_steel_rod', B: 'gtceu:dense_steel_plate', C: 'gtceu:solid_machine_casing' })
+    event.recipes.ars_nouveau.enchanting_apparatus(['#gtceu:circuits/ev', '#gtceu:circuits/ev', '#gtceu:circuits/ev', '#gtceu:circuits/ev', 'occultism:research_fragment_dust', 'occultism:spirit_attuned_gem', 'occultism:otherstone_tablet', 'occultism:otherstone_tablet'], ['ars_nouveau:enchanters_gauntlet'], 'cosmiccore:leyline_orrery', 0, true)
+    event.shaped('cosmiccore:mechanical_mineshaft', ['ABA', 'CDC', 'EFE'], { A: 'neovitae:tabula_robur', B: 'occultism:magic_lamp_empty', C: 'occultism:otherrock_frame', D: 'cosmiccore:ore_extraction_drill_lv', E: 'cosmiccore:omnia_circuit_ev', F: 'gtceu:titanium_drill_head' })
+    event.shaped('cosmiccore:mechanical_mineshaft', ['ABA', 'BCB', 'DED'], { A: 'gtceu:hv_sensor', B: 'minecraft:beehive', C: 'gtceu:stainless_steel_frame', D: '#gtceu:circuits/ev', E: 'gtceu:hv_machine_hull' })
+    event.shaped('cosmiccore:essence_reactor', ['ABA', 'CDE', 'FGF'], { A: 'cosmiccore:lv_wildfire_core', B: 'neovitae:melee_anointment', C: 'neovitae:hidden_knowledge_anointment', D: 'neovitae:tabula_vitae', E: 'neovitae:voiding_anointment', F: 'cosmiccore:omnia_circuit_hv', G: 'gtceu:hv_machine_hull' })
+    event.shaped('cosmiccore:drone_maintenance_interface', ['ABA', 'CDC', 'AEA'], { A: 'gtceu:stainless_steel_plate', B: 'gtceu:maintenance_hatch', C: 'gtceu:shutter_module_cover', D: 'gtceu:hv_machine_hull', E: 'cosmiccore:omnia_circuit_hv' })
+    event.shapeless('cosmiccore:power_tower_me_output', ['#gtceu:crafting_tools/screwdriver', 'cosmiccore:power_tower_me_input'])
+    event.shapeless('cosmiccore:power_tower_me_input', ['#gtceu:crafting_tools/screwdriver', 'cosmiccore:power_tower_me_output'])
+    event.shaped('cosmiccore:power_tower_me_input', ['A', 'B'], { A: 'ae2:me_p2p_tunnel', B: 'gtceu:hv_machine_hull' })
+    event.shaped('cosmiccore:power_tower_me_output', ['A', 'B'], { A: 'gtceu:hv_machine_hull', B: 'ae2:me_p2p_tunnel' })
+    event.shaped('cosmiccore:bolted_heavy_frame_casing', ['ABA', 'ACA', 'ABA'], { A: 'gtceu:steel_bolt', B: 'gtceu:dark_steel_foil', C: 'gtceu:solid_machine_casing' })
+    event.shaped('cosmiccore:manawomb_leeching_pond', ['ABA', 'CDC', 'ACA'], { A: '#gtceu:circuits/ev', B: 'cosmiccore:large_arcanite_cluster', C: 'gtceu:double_titanium_plate', D: 'cosmiccore:superheavy_steel_casing' })
+
+
+
+
+
+
+
+
+
+
 
 
 

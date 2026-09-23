@@ -66,7 +66,6 @@ yeet('occultism:ritual_dummy/summon_foliot_crusher')
 yeet('occultism:ritual_dummy/summon_djinni_crusher')
 yeet('occultism:ritual_dummy/summon_afrit_crusher')
 yeet('occultism:ritual_dummy/summon_marid_crusher')
-yeet('occultism:wormhole_frame')
 yeet('gtceu:lp_steam_miner')
 yeet('gtceu:hp_steam_miner')
 yeet('gtceu:lv_miner')
@@ -140,6 +139,7 @@ yeet('extendedae:entro_budding_half')
 yeet('extendedae:entro_budding_hardly')
 yeet('extendedae:entro_block')
 yeet('extendedae:machine_frame')
+yeet('gtceu:auto_maintenance_hatch')
 
 
 ServerEvents.recipes(event => {
@@ -472,6 +472,13 @@ ServerEvents.recipes(event => {
     
     event.remove({ id: 'gtceu:assembler/hull_ev' })
     event.remove({ id: 'gtceu:shaped/ev_machine_hull' })
+    event.remove({ id: 'gtceu:assembler/casing_high_temperature_smelting' })
+
+
+
+    event.remove({ id: 'create:crafting/kinetics/fluid_pipe_vertical' })
+    event.remove({ id: 'create:crafting/kinetics/fluid_pipe' })
+
 
 
 

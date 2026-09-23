@@ -36,6 +36,13 @@
 	]
 	quest.008703F2EB317107.quest_subtitle: "The Products for Boules"
 	quest.008703F2EB317107.title: "Boule Prepwork"
+	quest.00E576A121E8BDF8.quest_desc: [
+		"Knives can be used on tall grass to occasionally get straw alongside seeds."
+		""
+		"This could be useful for making your packed mud, if you're struggling to farm it."
+	]
+	quest.00E576A121E8BDF8.quest_subtitle: "A solution!"
+	quest.00E576A121E8BDF8.title: "Straw Problems?"
 	quest.011BFFD7A89C98EE.quest_desc: [
 		"You may have noticed your distillation towers can swap modes to vac distillation."
 		""
@@ -868,6 +875,7 @@
 		"This is where you start getting materials like Iridium, Osmium, Ruthenium, and Rhodium."
 	]
 	quest.3B848C1CC6779862.quest_subtitle: "IMPORTANT, SAVE IT! ! !"
+	quest.3D236794B8757616.quest_subtitle: "Bind to the will of Magic"
 	quest.3E03C13CAE570D80.quest_desc: ["You can also get quartz blocks from stone masons, which allows you to make this pre-nether!"]
 	quest.3E03C13CAE570D80.quest_subtitle: "Stone Mason Source"
 	quest.3E42DDEBA9DBB13C.quest_desc: [
@@ -1477,6 +1485,22 @@
 	]
 	quest.70C78D038EBF6CA6.quest_subtitle: "Mass Contraption Mining"
 	quest.71331803888BB83C.quest_subtitle: "The Endgoal"
+	quest.7162A0976D025116.quest_desc: [
+		"The &6Leyline compressor&r is one of the strongest multiblocks in the pack for strictly QOL functions."
+		""
+		"The &6Leyline compressor&r works by defining &epreconfigured structure patterns&r inside of the controller, this is the Pattern Encoding Page for Leyline Patterns."
+		"Think of it like making an &bAE2 Crafting Pattern&r, but instead it's the &aexact layout of a multiblock&r."
+		""
+		"Once you have configured your multiblock as you desired, use \"&bValidate&r\" to double check it can even form to begin with, this is a requirement before you are allowed to \"&bEncode&r\" to avoid damaged/partial structure patterns."
+		""
+		"Once a pattern is encoded, place it inside of a &eME Leyline Hatch that is attached to a Leyline Compressor&r."
+		""
+		"&bRequesting that leyline package pattern from AE2&r will craft &nall blocks&r a structure needs, and then go a step further by compressing the block list into a '&6leyline package&r', this package may then be right clicked to place the &lentire structure&r at once in world. With a satisfying visual."
+		""
+		""
+		"This is very useful for making common multiblocks easier to set up, it's up to you to figure out what works the best for your playstyle."
+	]
+	quest.7162A0976D025116.quest_subtitle: "Automatic Spatial Compression Rituals"
 	quest.7171BE1689635624.quest_subtitle: "Your first source of Gallium"
 	quest.71E1FB669BEB0D4C.quest_desc: [
 		"Unlike Kanthal and other MV hot metals, HV+ Hot metals require the use of a Vacuum Freezer."
@@ -1539,6 +1563,11 @@
 	]
 	quest.76CE8187246B0746.quest_subtitle: "Even more hydroxide recovery"
 	quest.7718E125AD134AA2.title: "Get Your Amine Back."
+	quest.773E2ABCB902CA25.quest_desc: [
+		"Reach the 4th layer of the abyss, Y:-700"
+		""
+		"The Ecological Dead Zone."
+	]
 	quest.773E2ABCB902CA25.quest_subtitle: "Abyss Layer 4: The Ecological Dead Zone"
 	quest.773E2ABCB902CA25.title: "Reach the, bottom?"
 	quest.77DABAF71C391FA3.quest_subtitle: "Robust Automation"

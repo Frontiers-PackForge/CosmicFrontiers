@@ -33,9 +33,9 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.combustion_generator('frontiers:gasoline').inputFluids('1x gtceu:gasoline').duration(75).EUt(-GTValues.V[GTValues.LV])
 
     //Misc Power Gen Recipes
-    event.recipes.gtceu.combustion_generator('frontiers:source_enhanced_bio_fuel').inputFluids("1x gtceu:source_enhanced_bio_fuel").duration(20).EUt(-32);
+    event.recipes.gtceu.combustion_generator('frontiers:source_enhanced_bio_fuel').inputFluids("1x gtceu:source_enhanced_bio_fuel").duration(30).EUt(-32);
 
-    event.recipes.gtceu.combustion_generator('frontiers:source_enhanced_bio_fuel').inputFluids("1x gtceu:thunder_boosted_source_diesel").duration(55).EUt(-32);
+    event.recipes.gtceu.combustion_generator('frontiers:thundering_source_enhanced_bio_fuel').inputFluids("1x gtceu:thunder_boosted_source_diesel").duration(55).EUt(-32);
 
     event.recipes.gtceu.gas_turbine('frontiers:cinder_gas').inputFluids('1x gtceu:cinder_gas').duration(20).EUt(-GTValues.V[GTValues.LV])
 
@@ -70,6 +70,29 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.gas_turbine('frontiers:wood_gas').inputFluids('8x gtceu:wood_gas').duration(6).EUt(-32)
 
     event.recipes.gtceu.gas_turbine('frontiers:refinery_gas').inputFluids('1x gtceu:refinery_gas').duration(5).EUt(-32)
+
+
+    //Power Tower Spool Recipes
+    event.recipes.cosmiccore.spooling_machine('frontiers:lv_power_tower_coil')
+        .itemInputs('8x gtceu:lv_voltage_coil')
+        .itemOutputs('cosmiccore:lv_power_tower_coil')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(200)
+    event.recipes.cosmiccore.spooling_machine('frontiers:mv_power_tower_coil')
+        .itemInputs('8x gtceu:mv_voltage_coil')
+        .itemOutputs('cosmiccore:mv_power_tower_coil')
+        .EUt(GTValues.VA[GTValues.MV], 1)
+        .duration(200)
+    event.recipes.cosmiccore.spooling_machine('frontiers:hv_power_tower_coil')
+        .itemInputs('8x gtceu:hv_voltage_coil')
+        .itemOutputs('cosmiccore:hv_power_tower_coil')
+        .EUt(GTValues.VA[GTValues.HV], 1)
+        .duration(200)
+    event.recipes.cosmiccore.spooling_machine('frontiers:ev_power_tower_coil')
+        .itemInputs('8x gtceu:ev_voltage_coil')
+        .itemOutputs('cosmiccore:ev_power_tower_coil')
+        .EUt(GTValues.VA[GTValues.EV], 1)
+        .duration(200)
 })
 
 
