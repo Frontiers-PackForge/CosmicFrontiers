@@ -1353,28 +1353,11 @@
 				id: "cosmiccore:shadebloom_diving_helmet"
 			}
 			id: "14D6F3083E2DD469"
-			tasks: [
-				{
-					id: "6ADEBE0427096979"
-					item: { count: 1, id: "cosmiccore:shadebloom_diving_helmet" }
-					type: "item"
-				}
-				{
-					id: "7D1B21FB07653537"
-					item: { count: 1, id: "cosmiccore:shadebloom_chestplate" }
-					type: "item"
-				}
-				{
-					id: "716F0F4F61643C4E"
-					item: { count: 1, id: "cosmiccore:shadebloom_leggings" }
-					type: "item"
-				}
-				{
-					id: "5BADA7689FDD8595"
-					item: { components: { "ftbfiltersystem:filter": "or(item(cosmiccore:shadebloom_travelers_boots)item(cosmiccore:shadebloom_diving_boots))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5BADA7689FDD8595"
+				item: { components: { "ftbfiltersystem:filter": "or(item(cosmiccore:shadebloom_travelers_boots)item(cosmiccore:shadebloom_diving_boots))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
 			x: -5.0d
 			y: -6.0d
 		}
