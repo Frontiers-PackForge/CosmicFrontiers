@@ -91,9 +91,9 @@ def validate_release(root_dir, expected_version):
         errors.append("manifest is missing the NeoForge version")
 
     version_parts = expected_version.rsplit("+", 1)
-    if len(version_parts) != 2 or not version_parts[0] or not version_parts[1]:
-        errors.append("release version must end with +<minecraft-version>")
-    elif game_version and version_parts[1] != game_version:
+    if not version_parts[0] or (len(version_parts) == 2 and not version_parts[1]):
+        errors.append("release version must be non-empty, with a non-empty Minecraft suffix if '+' is used")
+    elif len(version_parts) == 2 and game_version and version_parts[1] != game_version:
         errors.append(
             f"release version targets Minecraft {version_parts[1]!r}, but the manifest targets {game_version!r}"
         )
