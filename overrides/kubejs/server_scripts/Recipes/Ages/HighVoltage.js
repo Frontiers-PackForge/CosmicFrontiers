@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('4x cognition:fluorescent_jelly')
         .EUt(GTValues.VA[GTValues.MV], 2)
         .duration(420)
-    event.recipes.cosmiccore.alloy_blasting_kiln('frontiers:molten_luminized_titanium')
+    event.recipes.cosmiccore.alloy_blasting_kiln('frontiers:molten_luminized_titanium/nitrogen')
         .itemInputs('gtceu:titanium_dust', '3x cosmiccore:pale_steel_dust', '5x cosmiccore:lumium_dust')
         .inputFluids('1000x gtceu:nitrogen')
         .outputFluids('1296x gtceu:molten_luminized_titanium')

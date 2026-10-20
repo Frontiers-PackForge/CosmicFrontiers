@@ -375,9 +375,8 @@
 	quest.14B068EF3C3192DB.quest_subtitle: "New Materials to Exploit"
 	quest.14B068EF3C3192DB.title: "Firmament Geology"
 	quest.14D6F3083E2DD469.quest_desc: [
-		"Shadebloom Armor is the only armor that can survive in layer 3 of the abyss."
-		""
-		"Without it you will take constant pressure crush damage and alert murkbloom extremely fast."
+		"This pressure module will allow you to survive deeper in the Hollowed Abyss "
+		"up to -600m"
 	]
 	quest.14D6F3083E2DD469.quest_subtitle: "Tier Three Armor"
 	quest.15DCE4A5DE87DF3A.quest_subtitle: "To the souls who were never found"
@@ -1526,14 +1525,6 @@
 		"Do that now, go make some gas oils and blend it into Diesel, it'll make your fuel last MUCH longer."
 	]
 	quest.59AE67A4364865C2.quest_subtitle: "MV Mixer Gated"
-	quest.5AF279015C476CC6.quest_desc: [
-		"Vanadium Steel requires a small amount of chromium to produce, meaning it is gated by doing at least a few crafts of chromium by hand or setting up chromite line proper."
-		""
-		"Once you have chromium, you'll need to make this metal for your MV cutter."
-		""
-		"You'll also need some vanadium, which happens to come from the same ore Chromite does."
-	]
-	quest.5AF279015C476CC6.quest_subtitle: "Onwards to a cutter"
 	quest.5B91A99F1F8B588D.quest_desc: [
 		"You now have access to a source of sphalerite (zinc) in the nether, and can create brass."
 		""
@@ -2149,7 +2140,6 @@
 	task.587BB018EB5B4CAE.title: "I got it! (Skip)"
 	task.58DEF4B86A217B25.title: "I got it! (Skip)"
 	task.59ED645CACAAF358.title: "I got it! (Skip)"
-	task.5BADA7689FDD8595.title: "Any Shadebloom Boots"
 	task.5C1CE51AFE90BD57.title: "Craft Any Mortar"
 	task.5CF3523293ABF984.title: "Reach Y:-500 in the Abyss"
 	task.6053434F4C727B20.title: "I got it! (Skip)"
