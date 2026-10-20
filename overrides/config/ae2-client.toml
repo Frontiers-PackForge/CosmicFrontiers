@@ -1,5 +1,5 @@
 [recipeViewers]
-	disableColoredCableRecipesInRecipeViewer = true
+	disableColoredCableRecipesInRecipeViewer = false
 	#Show facades in REI/JEI/EMI item list
 	enableFacadesInRecipeViewer = false
 	#Show facade recipes in REI/JEI/EMI for supported blocks
