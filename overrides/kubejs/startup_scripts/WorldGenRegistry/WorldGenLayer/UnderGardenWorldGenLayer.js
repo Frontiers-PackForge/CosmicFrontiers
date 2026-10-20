@@ -1,6 +1,5 @@
-GTCEuStartupEvents.worldGenLayers(event => {
-    event.create('undergarden', layer => {
-        layer.targets('undergarden:depthrock', 'undergarden:shiverstone')
-        layer.dimensions('undergarden:undergarden')
-    })
+StartupEvents.registry('gtceu:world_gen_layer', event => {
+    event.create('minecraft:undergarden')
+        .targets('undergarden:depthrock', 'undergarden:shiverstone')
+        .dimensions(['undergarden:undergarden'])
 })

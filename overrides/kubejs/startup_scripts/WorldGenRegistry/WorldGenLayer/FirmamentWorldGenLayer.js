@@ -1,9 +1,8 @@
-GTCEuStartupEvents.worldGenLayers(event => {
-  event.create('firmament_islands', layer => {
-    layer.targets(
+StartupEvents.registry('gtceu:world_gen_layer', event => {
+  event.create('minecraft:firmament_islands')
+    .targets(
       'cosmiccore:firmament_saprolite',
       'cosmiccore:astral_regolith'
     )
-    layer.dimensions('frontiers:firmament')
-  })
+    .dimensions(['frontiers:firmament'])
 })

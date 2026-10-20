@@ -1,4 +1,6 @@
 ServerEvents.recipes(event => {
+    event.replaceInput({ output: 'gtceu:mv_cutter' }, 'gtceu:vanadium_steel_buzz_saw_blade', 'gtceu:cobalt_brass_buzz_saw_blade')
+
     event.replaceInput(
         { output: 'gtceu:mv_electric_motor' },
         'gtceu:aluminium_rod',
@@ -70,9 +72,10 @@ ServerEvents.recipes(event => {
         .itemOutputs('cosmiccore:empty_tier_0_capacitor')
         .EUt(GTValues.VA[GTValues.LV], 4)
         .duration(100)
-    event.recipes.cosmiccore.spooling_machine('frontiers:medium_voltage_stator_housing')
+    event.recipes.gtceu.spooling('frontiers:medium_voltage_stator_housing')
         .itemInputs('4x gtceu:mv_voltage_coil', '16x gtceu:electrum_double_wire')
         .itemOutputs('cosmiccore:medium_voltage_stator_housing')
+        .circuit(2)
         .EUt(GTValues.VA[GTValues.LV], 1)
         .duration(100)
     event.recipes.gtceu.canner('frontiers:lv_capacitor_battery')
@@ -321,17 +324,16 @@ ServerEvents.recipes(event => {
         .inputFluids(['1000x gtceu:distilled_water', '250x gtceu:source_oils'])
         .EUt(GTValues.V[GTValues.MV], 2)
         .duration(100)
-    event.recipes.cosmiccore.spooling_machine('frontiers:terraweave_cloth')
+    event.recipes.gtceu.spooling('frontiers:terraweave_cloth')
         .itemInputs('gtceu:terrasteel_foil', '6x ars_nouveau:magebloom_fiber')
         .itemOutputs('cosmiccore:terraweave_cloth')
         .EUt(GTValues.V[GTValues.MV], 1)
         .duration(100)
-    event.smithing('cosmiccore:shadebloom_travelers_boots', 'cosmiccore:netherite_travelers_boots', 'cosmiccore:double_tenbrium_plate')
     event.smithing('cosmiccore:shadebloom_diving_boots', 'create:netherite_diving_boots', 'cosmiccore:double_tenbrium_plate')
     event.smithing('cosmiccore:shadebloom_leggings', 'minecraft:netherite_leggings', 'cosmiccore:double_tenbrium_plate')
     event.smithing('cosmiccore:shadebloom_chestplate', 'minecraft:netherite_chestplate', 'cosmiccore:double_tenbrium_plate')
     event.smithing('cosmiccore:shadebloom_diving_helmet', 'create:netherite_diving_helmet', 'cosmiccore:double_tenbrium_plate')
-    event.shaped('cosmiccore:power_tower', ['ABA', 'ACA', 'DDD'], {A: 'gtceu:stainless_steel_frame', B: '#gtceu:circuits/hv', C: 'gtceu:mv_machine_hull', D: 'cosmiccore:refractory_structural_casing'})
+    event.shaped('cosmiccore:power_tower', ['ABA', 'ACA', 'DDD'], { A: 'gtceu:stainless_steel_frame', B: '#gtceu:circuits/hv', C: 'gtceu:mv_machine_hull', D: 'cosmiccore:refractory_structural_casing' })
     event.recipes.gtceu.fluid_solidifier('frontiers:refractory_containment_casing')
         .itemInputs('cosmiccore:lightweight_dark_steel_casing')
         .itemOutputs('cosmiccore:refractory_containment_casing')
@@ -339,13 +341,38 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MV], 2)
         .duration(100)
 
+    event.recipes.gtceu.chemical_bath('frontiers:vanadium_ingot/water')
+        .itemInputs('gtceu:hot_vanadium_ingot')
+        .itemOutputs('gtceu:vanadium_ingot')
+        .inputFluids('250x minecraft:water')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(300)
+    event.recipes.gtceu.chemical_bath('frontiers:vanadium_ingot/distilled_water')
+        .itemInputs('gtceu:hot_vanadium_ingot')
+        .itemOutputs('gtceu:vanadium_ingot')
+        .inputFluids('250x gtceu:distilled_water')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(150)
 
 
+    event.recipes.gtceu.chemical_reactor('frontiers:alumina_dust')
+        .itemInputs('2x gtceu:aluminium_dust')
+        .itemOutputs('5x gtceu:alumina_dust')
+        .inputFluids('3000x gtceu:oxygen')
+        .circuit(3)
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(840)
 
 
+    event.recipes.gtceu.forming_press('frontiers:chalk_light_blue_impure')
+        .itemInputs('occultism:chalk_white_impure', '4x gtceu:apatite_dust', '4x cosmiccore:gloomarcine_dust', '4x gtceu:calcite_dust')
+        .itemOutputs('occultism:chalk_light_blue_impure')
+        .EUt(GTValues.VA[GTValues.MV], 4)
+        .duration(250)
+    event.shaped('cosmiccore:stealth_module_2', ['ABC', 'BDB', 'CBA'], { A: 'cosmiccore:dense_tenbrium_plate', B: 'cosmiccore:shimmer_tuft', C: 'cosmiccore:gloom_fan', D: 'cosmiccore:stealth_module_1' })
+    event.shaped('cosmiccore:stealth_module_3', ['ABC', 'DED', 'CBA'], { A: 'gtceu:carbon_fiber_plate', B: 'cosmiccore:arcanite_cluster', C: 'cosmiccore:bloomrot_growth', D: 'cosmiccore:lantern_bulb', E: 'cosmiccore:stealth_module_2' })
 
-
-
-
-
+    event.shaped('cosmiccore:pressure_module_1', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:double_steel_plate', B: 'minecraft:netherite_ingot', C: 'gtceu:stainless_steel_frame' })
+    event.shaped('cosmiccore:pressure_module_2', ['ABA', 'BCB', 'ABA'], { A: 'cosmiccore:dense_tenbrium_plate', B: 'cosmiccore:dense_nostium_plate', C: 'cosmiccore:pressure_module_1' })
+    event.shaped('cosmiccore:pressure_module_3', ['ABA', 'BCB', 'ABA'], { A: 'cosmiccore:dense_kuvite_plate', B: 'gtceu:double_titanium_plate', C: 'cosmiccore:pressure_module_2' })
 })

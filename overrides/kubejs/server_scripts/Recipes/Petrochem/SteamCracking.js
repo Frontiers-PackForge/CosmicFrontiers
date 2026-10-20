@@ -2,28 +2,24 @@ ServerEvents.recipes(event => {
     event.recipes.cosmiccore.steam_cracking_furnace('frontiers:petrochem/refinery_gas_steam_cracking')
         .inputFluids(['4000x gtceu:refinery_gas', '25x minecraft:water'])
         .outputFluids('4000x cosmiccore:hot_light_effluents')
-        .circuit(1)
         .duration(80)
         .EUt(GTValues.V[GTValues.HV], 2)
 
     event.recipes.cosmiccore.steam_cracking_furnace('frontiers:petrochem/light_naphtha_steam_cracking')
         .inputFluids(['4000x gtceu:light_naphtha', '25x minecraft:water'])
         .outputFluids('4000x cosmiccore:hot_naphtha_effluents')
-        .circuit(2)
         .duration(100)
         .EUt(GTValues.V[GTValues.HV], 2)
 
     event.recipes.cosmiccore.steam_cracking_furnace('frontiers:petrochem/gas_oil_steam_cracking')
         .inputFluids(['4000x gtceu:gas_oils', '25x minecraft:water'])
         .outputFluids('4000x cosmiccore:hot_gas_oil_effluents')
-        .circuit(3)
         .duration(140)
         .EUt(GTValues.V[GTValues.HV], 4)
 
     event.recipes.cosmiccore.steam_cracking_furnace('frontiers:petrochem/heavy_pyrolysis_oil_recracking')
         .inputFluids(['4000x cosmiccore:heavy_pyrolysis_oils', '25x minecraft:water'])
         .outputFluids('4000x cosmiccore:hot_gas_oil_effluents')
-        .circuit(4)
         .duration(160)
         .EUt(GTValues.V[GTValues.HV], 8)
 

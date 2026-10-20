@@ -45,5 +45,6 @@ ServerEvents.recipes(event => {
         .itemInputs(['4x cosmiccore:kuvite_ingot','2x gtceu:terrasteel_ingot','6x gtceu:zano_aluminate_dust'])
         .itemOutputs(['8x cosmiccore:galvanized_ethersteel_ingot','5x gtceu:alumina_dust','2x gtceu:electrum_ingot'])
         .EUt(GTValues.V[GTValues.MV], 2)
+        .blastFurnaceTemp(2700)
         .duration(600)
 })

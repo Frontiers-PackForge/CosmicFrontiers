@@ -91,6 +91,6 @@ StartupEvents.registry('gtceu:material', event => {
 })
 
 GTCEuStartupEvents.materialModification(event => {
-    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:dawnstone'), () => Item.of('embers:dawnstone_ingot').getItem())
-    TagPrefix.plate['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:dawnstone'), () => Item.of('embers:dawnstone_plate').getItem())
+    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTRegistries.MATERIALS.get(GTCEu.id('dawnstone')), () => Item.of('embers:dawnstone_ingot').getItem())
+    TagPrefix.plate['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTRegistries.MATERIALS.get(GTCEu.id('dawnstone')), () => Item.of('embers:dawnstone_plate').getItem())
 })

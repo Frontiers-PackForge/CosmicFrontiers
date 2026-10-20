@@ -12,7 +12,8 @@ ServerEvents.recipes(event => {
     ]
 
     spoolingMachineTiers.forEach(machine => {
-        event.shaped(`cosmiccore:${machine.tier}_spooling_machine`, [
+        event.remove({ output: `gtceu:${machine.tier}_spooler` })
+        event.shaped(`gtceu:${machine.tier}_spooler`, [
             'CAC',
             'RHP',
             'ZAZ'
@@ -26,9 +27,10 @@ ServerEvents.recipes(event => {
         })
     })
     //TODO : Add some kind of Multi-Tiered Stealth Thread String Thingy... I don't know what to call it though!
-    event.shaped('cosmiccore:stealth_coating_1', ['ABC', 'BCB', 'CBD'], { A: 'legendarysurvivaloverhaul:warm_string', B: 'cosmiccore:murk_kelp', C: 'gtceu:long_soul_stained_steel_rod', D: 'legendarysurvivaloverhaul:cold_string' })
+    event.shaped('cosmiccore:stealth_module_1', ['ABC', 'BCB', 'CBD'], { A: 'legendarysurvivaloverhaul:warm_string', B: 'cosmiccore:murk_kelp', C: 'gtceu:long_soul_stained_steel_rod', D: 'legendarysurvivaloverhaul:cold_string' })
     event.remove({ id: 'gtceu:assembler/coil_cupronickel' })
-    event.recipes.cosmiccore.spooling_machine('coil_cupronickel')
+    event.remove({ id: 'gtceu:spooling/coil_cupronickel' })
+    event.recipes.gtceu.spooling('coil_cupronickel')
         .itemInputs(['8x gtceu:cupronickel_double_wire', '8x gtceu:bronze_foil'])
         .inputFluids('144x gtceu:tin_alloy')
         .itemOutputs('gtceu:cupronickel_coil_block')
@@ -36,7 +38,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.V[GTValues.LV], 1)
 
     event.remove({ id: 'gtceu:assembler/coil_kanthal' })
-    event.recipes.cosmiccore.spooling_machine('coil_kanthal')
+    event.remove({ id: 'gtceu:spooling/coil_kanthal' })
+    event.recipes.gtceu.spooling('coil_kanthal')
         .itemInputs(['8x gtceu:kanthal_double_wire', '8x gtceu:stainless_steel_foil'])
         .inputFluids('144x gtceu:cupronickel')
         .itemOutputs('gtceu:kanthal_coil_block')
@@ -44,14 +47,15 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.V[GTValues.MV], 2)
 
     event.remove({ id: 'gtceu:assembler/coil_nichrome' })
-    event.recipes.cosmiccore.spooling_machine('coil_nichrome')
+    event.remove({ id: 'gtceu:spooling/coil_nichrome' })
+    event.recipes.gtceu.spooling('coil_nichrome')
         .itemInputs(['8x gtceu:nichrome_double_wire', '8x cosmiccore:galvanized_ethersteel_foil'])
         .inputFluids('144x gtceu:kanthal')
         .itemOutputs('gtceu:nichrome_coil_block')
         .duration(400)
         .EUt(GTValues.V[GTValues.HV], 2)
 
-    event.recipes.cosmiccore.spooling_machine('prisma_tungstensteel_coil')
+    event.recipes.gtceu.spooling('prisma_tungstensteel_coil')
         .itemInputs(['8x cosmiccore:prismatic_tungstensteel_double_wire', '8x gtceu:platinum_foil'])
         .inputFluids('144x gtceu:nichrome')
         .itemOutputs('cosmiccore:prismatic_tungstensteel_coil_block')
@@ -59,56 +63,64 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.V[GTValues.EV], 2)
 
     event.remove({ id: 'gtceu:assembler/voltage_coil_ulv' })
-    event.recipes.cosmiccore.spooling_machine('voltage_coil_ulv')
+    event.remove({ id: 'gtceu:spooling/voltage_coil_ulv' })
+    event.recipes.gtceu.spooling('voltage_coil_ulv')
         .itemInputs(['gtceu:magnetic_iron_rod', '16x gtceu:fine_lead_wire'])
         .itemOutputs('gtceu:ulv_voltage_coil')
         .duration(200)
         .EUt(GTValues.V[GTValues.ULV], 1)
 
     event.remove({ id: 'gtceu:assembler/voltage_coil_lv' })
-    event.recipes.cosmiccore.spooling_machine('voltage_coil_lv')
+    event.remove({ id: 'gtceu:spooling/voltage_coil_lv' })
+    event.recipes.gtceu.spooling('voltage_coil_lv')
         .itemInputs(['gtceu:magnetic_iron_rod', '16x gtceu:fine_steel_wire'])
         .itemOutputs('gtceu:lv_voltage_coil')
         .duration(200)
         .EUt(GTValues.V[GTValues.LV], 1)
 
     event.remove({ id: 'gtceu:assembler/voltage_coil_mv' })
-    event.recipes.cosmiccore.spooling_machine('voltage_coil_mv')
+    event.remove({ id: 'gtceu:spooling/voltage_coil_mv' })
+    event.recipes.gtceu.spooling('voltage_coil_mv')
         .itemInputs(['gtceu:magnetic_steel_rod', '16x gtceu:fine_aluminium_wire'])
         .itemOutputs('gtceu:mv_voltage_coil')
         .duration(200)
         .EUt(GTValues.V[GTValues.MV], 1)
 
     event.remove({ id: 'gtceu:assembler/voltage_coil_hv' })
-    event.recipes.cosmiccore.spooling_machine('voltage_coil_hv')
+    event.remove({ id: 'gtceu:spooling/voltage_coil_hv' })
+    event.recipes.gtceu.spooling('voltage_coil_hv')
         .itemInputs(['gtceu:magnetic_steel_rod', '16x gtceu:fine_black_steel_wire'])
         .itemOutputs('gtceu:hv_voltage_coil')
         .duration(200)
         .EUt(GTValues.V[GTValues.HV], 1)
 
     event.remove({ id: 'gtceu:assembler/voltage_coil_ev' })
-    event.recipes.cosmiccore.spooling_machine('voltage_coil_ev')
+    event.remove({ id: 'gtceu:spooling/voltage_coil_ev' })
+    event.recipes.gtceu.spooling('voltage_coil_ev')
         .itemInputs(['gtceu:magnetic_neodymium_rod', '16x gtceu:fine_platinum_wire'])
         .itemOutputs('gtceu:ev_voltage_coil')
         .duration(200)
         .EUt(GTValues.V[GTValues.EV], 1)
 
     event.remove({ id: 'gtceu:assembler/voltage_coil_iv' })
-    event.recipes.cosmiccore.spooling_machine('voltage_coil_iv')
+    event.remove({ id: 'gtceu:spooling/voltage_coil_iv' })
+    event.recipes.gtceu.spooling('voltage_coil_iv')
         .itemInputs(['gtceu:magnetic_neodymium_rod', '16x gtceu:fine_iridium_wire'])
         .itemOutputs('gtceu:iv_voltage_coil')
         .duration(200)
         .EUt(GTValues.V[GTValues.IV], 1)
 
     event.remove({ id: 'gtceu:assembler/voltage_coil_luv' })
-    event.recipes.cosmiccore.spooling_machine('voltage_coil_luv')
+    event.remove({ id: 'gtceu:spooling/voltage_coil_luv' })
+    event.recipes.gtceu.spooling('voltage_coil_luv')
         .itemInputs(['gtceu:magnetic_samarium_rod', '16x gtceu:fine_naquadah_wire'])
         .itemOutputs('gtceu:luv_voltage_coil')
         .duration(200)
         .EUt(GTValues.V[GTValues.LuV], 1)
 
     event.remove({ id: 'gtceu:assembler/voltage_coil_zpm' })
-    event.recipes.cosmiccore.spooling_machine('voltage_coil_zpm')
+    event.remove({ id: 'gtceu:spooling/voltage_coil_zpm' })
+    event.recipes.gtceu.spooling('voltage_coil_zpm')
         .itemInputs(['gtceu:long_magnetic_samarium_rod', '16x cosmiccore:fine_neutronite_wire'])
         .itemOutputs('gtceu:zpm_voltage_coil')
         .duration(200)

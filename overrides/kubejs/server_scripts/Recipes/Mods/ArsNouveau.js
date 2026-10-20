@@ -17,18 +17,18 @@ ServerEvents.recipes(event => {
     }).id('kubejs:ars_nouveau/rune_conjunction_arklythar')
 
     event.remove({ id: 'ars_nouveau:magebloom_fiber' })
-    event.recipes.cosmiccore.spooling_machine('magebloom_fiber')
+    event.recipes.gtceu.spooling('magebloom_fiber')
         .itemInputs('ars_nouveau:magebloom')
         .itemOutputs('ars_nouveau:magebloom_fiber')
         .duration(60)
         .EUt(GTValues.V[GTValues.ULV], 1)
 
     event.remove({ output: 'ars_nouveau:blank_thread' })
-    event.recipes.cosmiccore.spooling_machine('blank_thread')
+    event.recipes.gtceu.spooling('blank_thread')
         .itemInputs('4x ars_nouveau:magebloom_fiber', 'gtceu:gold_rod')
         .itemOutputs('ars_nouveau:blank_thread')
         .duration(60)
-        .EUt(4)
+        .EUt(4, 1)
 
     event.remove({ id: 'ars_nouveau:arcane_core' })
     event.shaped('ars_nouveau:arcane_core', [

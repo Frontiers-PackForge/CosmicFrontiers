@@ -21,5 +21,5 @@ StartupEvents.registry('gtceu:material', event => {
 })
 
 GTCEuStartupEvents.materialModification(event => {
-    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:dark_steel'), () => Item.of('enderio:dark_steel_ingot').getItem())
+    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTRegistries.MATERIALS.get(GTCEu.id('dark_steel')), () => Item.of('enderio:dark_steel_ingot').getItem())
 })

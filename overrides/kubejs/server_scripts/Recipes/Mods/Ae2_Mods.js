@@ -17,11 +17,10 @@ const frontiersAe2Colors = [
     'pink'
 ]
 
-const frontiersAe2RetiredCableItems = [
-    'ae2:fluix_glass_cable',
-    'ae2:fluix_covered_cable',
-    'ae2:fluix_covered_dense_cable'
-]
+const frontiersAe2GlassCableItems = ['fluix'].concat(frontiersAe2Colors).map(color => `ae2:${color}_glass_cable`)
+const frontiersAe2CoveredCableItems = ['fluix'].concat(frontiersAe2Colors).map(color => `ae2:${color}_covered_cable`)
+
+const frontiersAe2CoveredDenseCableItems = ['fluix'].concat(frontiersAe2Colors).map(color => `ae2:${color}_covered_dense_cable`)
 
 const frontiersAe2ParkedItems = [
     'ae2:spatial_anchor',
@@ -62,13 +61,7 @@ const frontiersAe2BaselineRecipeOutputs = [
     'ae2:fluid_storage_cell_256k',
     'ae2:64k_crafting_storage',
     'ae2:256k_crafting_storage'
-]
-
-frontiersAe2Colors.forEach(color => {
-    frontiersAe2RetiredCableItems.push(`ae2:${color}_glass_cable`)
-    frontiersAe2RetiredCableItems.push(`ae2:${color}_covered_cable`)
-    frontiersAe2RetiredCableItems.push(`ae2:${color}_covered_dense_cable`)
-})
+].concat(frontiersAe2CoveredCableItems, frontiersAe2CoveredDenseCableItems)
 
 const frontiersAe2RetiredItems = [
     'ae2:fluix_crystal',
@@ -102,7 +95,7 @@ const frontiersAe2RetiredItems = [
     'megacells:accumulation_processor_press',
     'megacells:printed_accumulation_processor',
     'megacells:accumulation_processor'
-].concat(frontiersAe2RetiredCableItems, frontiersAe2ParkedItems)
+].concat(frontiersAe2ParkedItems)
 
 const frontiersAe2RetiredIngredients = [
     'ae2:fluix_crystal',
@@ -115,7 +108,7 @@ const frontiersAe2RetiredIngredients = [
     'ae2:energy_acceptor',
     'ae2:cable_energy_acceptor',
     'megacells:accumulation_processor'
-].concat(frontiersAe2RetiredCableItems, frontiersAe2ParkedItems)
+].concat(frontiersAe2CoveredCableItems, frontiersAe2CoveredDenseCableItems, frontiersAe2GlassCableItems, frontiersAe2ParkedItems)
 
 ServerEvents.tags('item', event => {
     event.add('c:hidden_from_recipe_viewers', frontiersAe2RetiredItems)
@@ -219,6 +212,13 @@ ServerEvents.recipes(event => {
             .itemOutputs(`${tier.output}x ae2:cable_anchor`)
             .duration(100)
             .EUt(GTValues.VA[tier.voltage])
+    })
+
+    frontiersAe2Colors.concat('fluix').forEach(color => {
+        event.remove({ output: `ae2:${color}_glass_cable` })
+        event.recipes.gtceu.lathe(`frontiers:ae2/cables/${color}_smart_to_covered`).itemInputs(`ae2:${color}_smart_cable`).itemOutputs(`ae2:${color}_covered_cable`).duration(20).EUt(GTValues.V[GTValues.LV], 1)
+        event.recipes.gtceu.lathe(`frontiers:ae2/cables/${color}_covered_to_glass`).itemInputs(`ae2:${color}_covered_cable`).itemOutputs(`ae2:${color}_glass_cable`).duration(20).EUt(GTValues.V[GTValues.LV], 1)
+        event.recipes.gtceu.lathe(`frontiers:ae2/cables/${color}_smart_dense_to_covered_dense`).itemInputs(`ae2:${color}_smart_dense_cable`).itemOutputs(`ae2:${color}_covered_dense_cable`).duration(20).EUt(GTValues.V[GTValues.LV], 1)
     })
 
     event.recipes.gtceu.lathe('frontiers:quartz_fiber')

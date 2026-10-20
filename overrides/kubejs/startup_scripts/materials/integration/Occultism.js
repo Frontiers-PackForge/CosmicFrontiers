@@ -59,8 +59,8 @@ StartupEvents.registry('gtceu:material', event => {
 })
 
 GTCEuStartupEvents.materialModification(event => {
-    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:iesnium'), () => Item.of('occultism:iesnium_ingot').getItem())
-    TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:iesnium'), () => Item.of('occultism:iesnium_block').getItem())
-    TagPrefix.rawOre['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:iesnium'), () => Item.of('occultism:raw_iesnium').getItem())
-    TagPrefix.dust['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTMaterials.get('gtceu:iesnium'), () => Item.of('occultism:iesnium_dust').getItem())
+    TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTRegistries.MATERIALS.get(GTCEu.id('iesnium')), () => Item.of('occultism:iesnium_ingot').getItem())
+    TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTRegistries.MATERIALS.get(GTCEu.id('iesnium')), () => Item.of('occultism:iesnium_block').getItem())
+    TagPrefix.rawOre['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTRegistries.MATERIALS.get(GTCEu.id('iesnium')), () => Item.of('occultism:raw_iesnium').getItem())
+    TagPrefix.dust['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTRegistries.MATERIALS.get(GTCEu.id('iesnium')), () => Item.of('occultism:iesnium_dust').getItem())
 })

@@ -1,0 +1,26 @@
+ServerEvents.recipes(event => {
+    event.shaped('gtceu:lv_voltage_coil', ['WWW', 'WRW', 'WWW'], { W: 'gtceu:steel_double_wire', R: 'gtceu:long_copper_rod' }).id('frontiers:manual_lv_voltage_coil')
+    event.shaped('cosmiccore:lv_rotor_holder', ['SGS', 'GHG', 'SGS'], { S: 'gtceu:small_steel_gear', G: 'gtceu:bronze_gear', H: 'gtceu:lv_machine_hull' }).id('frontiers:lv_rotor_holder')
+    event.shaped('cosmiccore:mv_rotor_holder', ['SGS', 'GHG', 'SGS'], { S: 'gtceu:small_aluminium_gear', G: 'gtceu:steel_gear', H: 'gtceu:mv_machine_hull' }).id('frontiers:mv_rotor_holder')
+
+    event.remove({ id: 'gtceu:shaped/diesel_generator_lv' })
+    event.shaped('gtceu:lv_combustion', ['PCP', 'EME', 'GWG'], { P: 'gtceu:mv_electric_piston', C: '#gtceu:circuits/mv', E: 'gtceu:mv_electric_motor', M: 'gtceu:lv_machine_hull', G: 'gtceu:aluminium_gear', W: 'gtceu:copper_single_cable' }).id('frontiers:next_tier_diesel_generator_lv')
+    event.remove({ id: 'gtceu:shaped/diesel_generator_mv' })
+    event.shaped('gtceu:mv_combustion', ['PCP', 'EME', 'GWG'], { P: 'gtceu:hv_electric_piston', C: '#gtceu:circuits/hv', E: 'gtceu:hv_electric_motor', M: 'gtceu:mv_machine_hull', G: 'gtceu:stainless_steel_gear', W: 'gtceu:gold_single_cable' }).id('frontiers:next_tier_diesel_generator_mv')
+    event.remove({ id: 'gtceu:shaped/diesel_generator_hv' })
+    event.shaped('gtceu:hv_combustion', ['PCP', 'EME', 'GWG'], { P: 'gtceu:ev_electric_piston', C: '#gtceu:circuits/ev', E: 'gtceu:ev_electric_motor', M: 'gtceu:hv_machine_hull', G: 'gtceu:titanium_gear', W: 'gtceu:aluminium_single_cable' }).id('frontiers:next_tier_diesel_generator_hv')
+
+    event.remove({ id: 'gtceu:shaped/gas_turbine_lv' })
+    event.shaped('gtceu:lv_gas_turbine', ['CRC', 'RMR', 'EWE'], { C: '#gtceu:circuits/mv', R: 'gtceu:bronze_rotor', M: 'gtceu:lv_machine_hull', E: 'gtceu:mv_electric_motor', W: 'gtceu:copper_single_cable' }).id('frontiers:next_tier_gas_turbine_lv')
+    event.remove({ id: 'gtceu:shaped/gas_turbine_mv' })
+    event.shaped('gtceu:mv_gas_turbine', ['CRC', 'RMR', 'EWE'], { C: '#gtceu:circuits/hv', R: 'gtceu:steel_rotor', M: 'gtceu:mv_machine_hull', E: 'gtceu:hv_electric_motor', W: 'gtceu:gold_single_cable' }).id('frontiers:next_tier_gas_turbine_mv')
+    event.remove({ id: 'gtceu:shaped/gas_turbine_hv' })
+    event.shaped('gtceu:hv_gas_turbine', ['CRC', 'RMR', 'EWE'], { C: '#gtceu:circuits/ev', R: 'gtceu:stainless_steel_rotor', M: 'gtceu:hv_machine_hull', E: 'gtceu:ev_electric_motor', W: 'gtceu:aluminium_single_cable' }).id('frontiers:next_tier_gas_turbine_hv')
+
+    event.remove({ id: 'gtceu:shaped/steam_turbine_lv' })
+    event.shaped('gtceu:lv_steam_turbine', ['PCP', 'RMR', 'EWE'], { P: 'gtceu:steel_normal_fluid_pipe', C: '#gtceu:circuits/mv', R: 'gtceu:bronze_rotor', M: 'gtceu:lv_machine_hull', E: 'gtceu:mv_electric_motor', W: 'gtceu:copper_single_cable' }).id('frontiers:next_tier_steam_turbine_lv')
+    event.remove({ id: 'gtceu:shaped/steam_turbine_mv' })
+    event.shaped('gtceu:mv_steam_turbine', ['PCP', 'RMR', 'EWE'], { P: 'gtceu:stainless_steel_normal_fluid_pipe', C: '#gtceu:circuits/hv', R: 'gtceu:steel_rotor', M: 'gtceu:mv_machine_hull', E: 'gtceu:hv_electric_motor', W: 'gtceu:gold_single_cable' }).id('frontiers:next_tier_steam_turbine_mv')
+    event.remove({ id: 'gtceu:shaped/steam_turbine_hv' })
+    event.shaped('gtceu:hv_steam_turbine', ['PCP', 'RMR', 'EWE'], { P: 'gtceu:titanium_normal_fluid_pipe', C: '#gtceu:circuits/ev', R: 'gtceu:stainless_steel_rotor', M: 'gtceu:hv_machine_hull', E: 'gtceu:ev_electric_motor', W: 'gtceu:aluminium_single_cable' }).id('frontiers:next_tier_steam_turbine_hv')
+})

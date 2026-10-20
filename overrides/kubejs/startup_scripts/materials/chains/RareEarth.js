@@ -72,7 +72,7 @@ StartupEvents.registry('gtceu:material', event => {
 
 
 StartupEvents.postInit(event => {
-    GTMaterials.get('gtceu:oxalic_acid').setFormula('C2H2O4', true)
-    GTMaterials.get('gtceu:di_2_ethylhexyl_phosphoric_acid').setFormula('(C8H17O)2PO2H', true)
-    GTMaterials.get('gtceu:sodium_phosphate').setFormula('Na3PO4', true)
+    GTRegistries.MATERIALS.get(GTCEu.id('oxalic_acid')).setFormula('C2H2O4', true)
+    GTRegistries.MATERIALS.get(GTCEu.id('di_2_ethylhexyl_phosphoric_acid')).setFormula('(C8H17O)2PO2H', true)
+    GTRegistries.MATERIALS.get(GTCEu.id('sodium_phosphate')).setFormula('Na3PO4', true)
 })

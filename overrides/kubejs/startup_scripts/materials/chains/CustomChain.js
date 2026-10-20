@@ -150,7 +150,7 @@ StartupEvents.registry('gtceu:material', event => {
 })
 
 StartupEvents.postInit(event => {
-    GTMaterials.get('gtceu:ammonium_fluoride').setFormula('NH₄F', true)
-    GTMaterials.get('gtceu:sodium_hypophosphite').setFormula('NaPO₂H₂', true)
-    GTMaterials.get('gtceu:ferric_alumina').setFormula('FeAl₂O₃', true)
+    GTRegistries.MATERIALS.get(GTCEu.id('ammonium_fluoride')).setFormula('NH₄F', true)
+    GTRegistries.MATERIALS.get(GTCEu.id('sodium_hypophosphite')).setFormula('NaPO₂H₂', true)
+    GTRegistries.MATERIALS.get(GTCEu.id('ferric_alumina')).setFormula('FeAl₂O₃', true)
 })

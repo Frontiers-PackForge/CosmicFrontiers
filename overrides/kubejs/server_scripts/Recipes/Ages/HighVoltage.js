@@ -39,12 +39,12 @@ ServerEvents.recipes(event => {
         .outputFluids('1000x gtceu:oxygen')
         .outputFluids('4000x gtceu:hydrogen')
         .EUt(GTValues.VA[GTValues.HV], 4)
-        .duration(850)
+        .duration(220)
     event.recipes.cosmiccore.bio_lab('frontiers:fluorescent_jelly')
-        .itemInputs('2x cosmiccore:red_algae', '2x undergarden:glitterkelp', '2x minecraft:kelp')
-        .itemOutputs('8x cognition:fluorescent_jelly')
+        .itemInputs('8x cosmiccore:red_algae', '8x undergarden:glitterkelp', '4x minecraft:kelp')
+        .itemOutputs('4x cognition:fluorescent_jelly')
         .EUt(GTValues.VA[GTValues.MV], 2)
-        .duration(320)
+        .duration(420)
     event.recipes.cosmiccore.alloy_blasting_kiln('frontiers:molten_luminized_titanium')
         .itemInputs('gtceu:titanium_dust', '3x cosmiccore:pale_steel_dust', '5x cosmiccore:lumium_dust')
         .inputFluids('1000x gtceu:nitrogen')
@@ -159,9 +159,10 @@ ServerEvents.recipes(event => {
         .itemOutputs('7x gtceu:vanadium_pentoxide_dust')
         .duration(120)
         .EUt(GTValues.V[GTValues.HV], 2)
-    event.recipes.cosmiccore.spooling_machine('frontiers:high_voltage_stator_housing')
+    event.recipes.gtceu.spooling('frontiers:high_voltage_stator_housing')
         .itemInputs('4x gtceu:hv_voltage_coil', '16x gtceu:kanthal_double_wire')
         .itemOutputs('cosmiccore:high_voltage_stator_housing')
+        .circuit(2)
         .EUt(GTValues.V[GTValues.LV], 1)
         .duration(100)
     event.recipes.gtceu.assembler('frontiers:pyroltic_contact_catalyst')
@@ -312,6 +313,14 @@ ServerEvents.recipes(event => {
         .circuit(6)
         .EUt(GTValues.VA[GTValues.LV], 1)
         .duration(100)
+
+    event.recipes.cosmiccore.alloy_blasting_kiln('frontiers:molten_starstruck_halite')
+        .itemInputs('6x gtceu:platinum_dust', '3x cosmiccore:hadalite_dust', '2x gtceu:germanium_dust')
+        .outputFluids('1584x cosmiccore:molten_starstruck_halite')
+        .blastFurnaceTemp(3600)
+        .EUt(GTValues.VA[GTValues.EV], 4)
+        .duration(850)
+
     event.shaped('cosmiccore:alloy_blasting_kiln', ['ABA', 'BCB', 'DDD'], { A: '#gtceu:circuits/ev', B: 'cosmiccore:double_pale_steel_plate', C: 'gtceu:primitive_blast_furnace', D: 'cosmiccore:refractory_structural_casing' })
     event.shaped('cosmiccore:conversion_complex', ['ABA', 'CDE', 'FGF'], { A: '#gtceu:circuits/ev', B: 'gtceu:hv_electric_piston', C: 'gtceu:hv_robot_arm', D: 'cosmiccore:lightweight_stainless_steel_casing', E: 'gtceu:hv_fluid_regulator', F: 'gtceu:kanthal_single_cable', G: 'cosmiccore:refractory_structural_casing' })
     event.shaped('cosmiccore:fractional_condenser', ['ABA', 'BCB', 'DDD'], { A: 'gtceu:micro_processor_assembly', B: 'cosmiccore:lightweight_stainless_steel_casing', C: 'gtceu:hv_fluid_regulator', D: 'cosmiccore:refractory_structural_casing' })
@@ -342,16 +351,123 @@ ServerEvents.recipes(event => {
 
 
 
+    event.recipes.cosmiccore.imbument_pylon('frontiers:tabula_rasa')
+        .itemInputs('16x occultism:otherstone_tablet')
+        .itemOutputs('16x neovitae:tabula_rasa')
+        .altarTier(4)
+        .animaInput(16000)
+        .EUt(GTValues.V[GTValues.LV], 1)
+        .duration(360)
+    event.recipes.cosmiccore.imbument_pylon('frontiers:tabula_robur')
+        .itemInputs('16x neovitae:tabula_rasa')
+        .itemOutputs('16x neovitae:tabula_robur')
+        .altarTier(4)
+        .animaInput(32000)
+        .EUt(GTValues.V[GTValues.MV], 1)
+        .duration(360)
+    event.recipes.cosmiccore.imbument_pylon('frontiers:tabula_animata')
+        .itemInputs('16x neovitae:tabula_robur')
+        .itemOutputs('16x neovitae:tabula_animata')
+        .altarTier(4)
+        .animaInput(32000)
+        .EUt(GTValues.V[GTValues.HV], 1)
+        .duration(360)
+    event.recipes.cosmiccore.imbument_pylon('frontiers:tabula_spiritus')
+        .itemInputs('16x neovitae:tabula_animata')
+        .itemOutputs('16x neovitae:tabula_spiritus')
+        .altarTier(4)
+        .animaInput(64000)
+        .EUt(GTValues.V[GTValues.EV], 1)
+        .duration(360)
+    event.recipes.cosmiccore.imbument_pylon('frontiers:tabula_aetherea')
+        .itemInputs('16x neovitae:tabula_spiritus')
+        .itemOutputs('16x neovitae:tabula_aetherea')
+        .altarTier(5)
+        .animaInput(128000)
+        .EUt(GTValues.V[GTValues.EV], 1)
+        .duration(360)
+
+    event.recipes.cosmiccore.imbument_pylon('frontiers:carbon_ethersteel_lattice')
+        .itemInputs('neovitae:tabula_animata', 'cosmiccore:galvanized_ethersteel_foil', 'gtceu:carbon_fibers')
+        .itemOutputs('cosmiccore:carbon_ethersteel_lattice')
+        .altarTier(4)
+        .animaInput(12000)
+        .EUt(GTValues.VA[GTValues.EV], 1)
+        .duration(500)
 
 
+    event.custom({
+        "bloodNeeded": 25000,
+        "craftSpeed": 5,
+        "drainSpeed": 5,
+        "input": {
+            "item": "cosmiccore:gravglass_shards"
+        },
+        "output": {
+            "id": "neovitae:weak_blood_shard",
+            "count": 1
+        },
+        "minTier": 2,
+        "type": "neovitae:ara_vitae_recipe"
+    })
 
+    event.recipes.cosmiccore.imbument_pylon('frontiers:weak_blood_shard')
+        .itemInputs('cosmiccore:gravglass_shards')
+        .itemOutputs('neovitae:weak_blood_shard')
+        .altarTier(4)
+        .animaInput(25000)
+        .EUt(GTValues.VA[GTValues.HV], 2)
+        .duration(500)
+    event.recipes.cosmiccore.laminator('frontiers:primordial_remnant')
+        .itemInputs('cosmiccore:umbral_crust', 'cosmiccore:arcanite_dust')
+        .itemOutputs('cosmiccore:primordial_remnant')
+        .inputFluids('125x gtceu:nitration_mixture')
+        .EUt(GTValues.VA[GTValues.HV], 4)
+        .duration(100)
+    event.recipes.cosmiccore.laminator('frontiers:pattern_provider_upgrade')
+        .itemInputs('gtceu:plastic_circuit_board', 'gtceu:soc')
+        .itemOutputs('extendedae:pattern_provider_upgrade')
+        .circuit(1)
+        .EUt(GTValues.VA[GTValues.HV], 4)
+        .duration(100)
 
+    event.recipes.cosmiccore.laminator('frontiers:interface_upgrade')
+        .itemInputs('gtceu:plastic_circuit_board', 'gtceu:soc')
+        .itemOutputs('extendedae:interface_upgrade')
+        .circuit(2)
+        .EUt(GTValues.VA[GTValues.HV], 4)
+        .duration(100)
 
+    event.recipes.cosmiccore.laminator('frontiers:io_bus_upgrade')
+        .itemInputs('gtceu:plastic_circuit_board', 'gtceu:soc')
+        .itemOutputs('extendedae:io_bus_upgrade')
+        .circuit(3)
+        .EUt(GTValues.VA[GTValues.HV], 4)
+        .duration(100)
 
-
-
-
-
-
-
+    event.recipes.gtceu.forming_press('frontiers:ex_pattern_provider')
+        .itemInputs('ae2:pattern_provider', 'extendedae:pattern_provider_upgrade')
+        .itemOutputs('extendedae:ex_pattern_provider')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.recipes.gtceu.forming_press('frontiers:ex_interface')
+        .itemInputs('ae2:interface', 'extendedae:interface_upgrade')
+        .itemOutputs('extendedae:ex_interface')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.recipes.gtceu.forming_press('frontiers:ex_export_bus_part')
+        .itemInputs('ae2:export_bus', 'extendedae:io_bus_upgrade')
+        .itemOutputs('extendedae:ex_export_bus_part')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.recipes.gtceu.forming_press('frontiers:ex_import_bus_part')
+        .itemInputs('ae2:import_bus', 'extendedae:io_bus_upgrade')
+        .itemOutputs('extendedae:ex_import_bus_part')
+        .EUt(GTValues.VA[GTValues.LV], 1)
+        .duration(100)
+    event.recipes.gtceu.circuit_assembler('frontiers:pattern_p2p_tunnel')
+        .itemInputs('4x ae2:me_p2p_tunnel', 'extendedae:ex_pattern_provider')
+        .itemOutputs('6x nebulaeae2:pattern_p2p_tunnel')
+        .EUt(GTValues.VA[GTValues.HV], 2)
+        .duration(200)
 })
