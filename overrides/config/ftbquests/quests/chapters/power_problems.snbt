@@ -236,6 +236,7 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["3BE695E5EC2001C2"]
 			id: "04E6BCCDEBBE8555"
 			tasks: [{
 				id: "02BE0CBFF1380AAE"
@@ -246,6 +247,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["3BE695E5EC2001C2"]
 			id: "02049F5FDD7273A7"
 			tasks: [{
 				id: "369E223D09B5D008"

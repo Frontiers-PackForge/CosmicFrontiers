@@ -4,6 +4,9 @@
 	default_quest_shape: ""
 	filename: "enew_start_here"
 	group: "1654AF685B58AF60"
+	icon: {
+		id: "minecraft:writable_book"
+	}
 	id: "33E6132E4C81BC80"
 	order_index: 0
 	quest_links: [ ]
@@ -50,7 +53,7 @@
 		}
 		{
 			icon: {
-				id: "cosmiccore:simple_rebreather"
+				id: "cosmiccore:simple_rebreather_module"
 			}
 			id: "685F89265F6746A7"
 			tasks: [{

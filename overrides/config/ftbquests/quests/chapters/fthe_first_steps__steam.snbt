@@ -22,7 +22,20 @@
 		y: -3.1904761904762218d
 	}]
 	order_index: 0
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "4B4478B8B7B88438"
+			linked_quest: "54B49FEDB84237C0"
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			id: "435D890ABBA98C8C"
+			linked_quest: "369F4EE8B47CD89F"
+			x: -15.0d
+			y: 4.5d
+		}
+	]
 	quests: [
 		{
 			icon_scale: 0.9d
@@ -213,12 +226,23 @@
 				visible: 1b
 			}]
 			dependencies: ["1B801262A2CADD36"]
+			icon: {
+				id: "gtceu:concrete_bucket"
+			}
 			id: "1D2C76D5AAD0964E"
-			tasks: [{
-				id: "5B6B3A5723E0AE6D"
-				item: { count: 1, id: "gtceu:concrete_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5B6B3A5723E0AE6D"
+					item: { count: 1, id: "gtceu:concrete_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3A22560142B0ECF7"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 0.0d
 			y: 6.0d
 		}
@@ -236,8 +260,8 @@
 			dependencies: ["5BC3A390C1834322"]
 			id: "35B8BCE0A3C4431A"
 			tasks: [{
-				id: "4632A8EF98C819FF"
-				item: { count: 1, id: "createdeco:andesite_sheet" }
+				id: "19D171E18BFC6602"
+				item: { count: 1, id: "gtceu:andesite_alloy_plate" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -306,6 +330,7 @@
 		{
 			id: "54B49FEDB84237C0"
 			tasks: [{
+				count: 256L
 				id: "2076E71D6958C31D"
 				item: { count: 1, id: "minecraft:clay_ball" }
 				type: "item"
@@ -365,12 +390,23 @@
 		}
 		{
 			dependencies: ["369DE54ABB07E98A"]
+			icon: {
+				id: "gtceu:creosote_bucket"
+			}
 			id: "69AD7281BC7FC038"
-			tasks: [{
-				id: "23E0D5990F7F3142"
-				item: { count: 1, id: "gtceu:creosote_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "23E0D5990F7F3142"
+					item: { count: 1, id: "gtceu:creosote_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "329811AADB57CCED"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 5.0d
 			y: -4.0d
 		}
@@ -511,6 +547,7 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
+				count: 64L
 				id: "39923DBDA837876D"
 				item: { count: 1, id: "gtceu:basic_electronic_circuit" }
 				type: "item"
@@ -574,10 +611,15 @@
 			y: 6.0d
 		}
 		{
+			cosmiccore_dependency_lines: [{
+				dependency: 6103679238341277632L
+				target_link: 5423592586012558392L
+				visible: 1b
+			}]
 			dependencies: [
 				"353BC261237385D0"
 				"108FD4BC662C8E83"
-				"69F38353AB11550C"
+				"54B49FEDB84237C0"
 			]
 			id: "721AB809107498EB"
 			tasks: [{
@@ -707,6 +749,7 @@
 			id: "70945C631B744AA2"
 			size: 1.5d
 			tasks: [{
+				count: 64L
 				id: "484F2225EE455F04"
 				item: { count: 1, id: "gtceu:firebricks" }
 				type: "item"
@@ -819,16 +862,6 @@
 			y: 11.5d
 		}
 		{
-			id: "69F38353AB11550C"
-			tasks: [{
-				id: "0D3F33D0A5895075"
-				item: { count: 1, id: "minecraft:clay_ball" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 9.0d
-		}
-		{
 			dependencies: ["46A8D660ABEB83FA"]
 			hide_dependency_lines: true
 			id: "084C3F2B9FD82800"
@@ -861,7 +894,7 @@
 				item: { count: 1, id: "gtceu:lp_steam_forge_hammer" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -2.5d
 			y: 10.0d
 		}
 		{
@@ -876,7 +909,7 @@
 				item: { count: 1, id: "cosmiccore:hp_steam_bender" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -2.5d
 			y: 11.5d
 		}
 		{
@@ -888,7 +921,7 @@
 				item: { count: 1, id: "minecraft:anvil" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -2.5d
 			y: 8.5d
 		}
 		{
@@ -1031,7 +1064,7 @@
 				item: { count: 1, id: "gtceu:cinderwax_ingot" }
 				type: "item"
 			}]
-			x: -9.5d
+			x: -11.5d
 			y: 3.0d
 		}
 		{
@@ -1047,8 +1080,8 @@
 				item: { count: 1, id: "gtceu:resin_circuit_board" }
 				type: "item"
 			}]
-			x: -11.0d
-			y: 4.0d
+			x: -11.5d
+			y: 5.0d
 		}
 		{
 			cosmiccore_dependency_lines: [{
@@ -1063,7 +1096,7 @@
 				item: { count: 1, id: "gtceu:resin_printed_circuit_board" }
 				type: "item"
 			}]
-			x: -11.0d
+			x: -11.5d
 			y: 7.0d
 		}
 		{
@@ -1099,7 +1132,7 @@
 				type: "item"
 			}]
 			x: -8.25d
-			y: 4.0d
+			y: 5.303571428571431d
 		}
 		{
 			dependencies: ["3471B2B107BD8510"]
@@ -1112,7 +1145,7 @@
 				type: "item"
 			}]
 			x: -8.214285714285715d
-			y: 5.035714285714278d
+			y: 4.0d
 		}
 		{
 			icon: {
@@ -1131,7 +1164,7 @@
 					type: "item"
 				}
 			]
-			x: -6.5d
+			x: -5.0d
 			y: 11.5d
 		}
 		{
@@ -1148,8 +1181,8 @@
 				item: { count: 1, id: "gtceu:rubber_ingot" }
 				type: "item"
 			}]
-			x: -9.5d
-			y: 4.0d
+			x: -8.25d
+			y: 6.517857142857146d
 		}
 		{
 			cosmiccore_dependency_lines: [{
@@ -1236,6 +1269,7 @@
 		{
 			dependencies: ["66B6EFDC74821576"]
 			id: "6CD224F26209A645"
+			shape: "gear"
 			tasks: [{
 				id: "75936A28F7B2AD54"
 				item: { count: 1, id: "occultism:iesnium_pickaxe" }
@@ -1245,7 +1279,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["6CD224F26209A645"]
+			dependencies: ["66B6EFDC74821576"]
 			id: "5973534E85F5D126"
 			shape: "gear"
 			tasks: [{
@@ -1320,7 +1354,7 @@
 				item: { count: 1, id: "create:factory_gauge" }
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.0d
 			y: 14.0d
 		}
 		{
@@ -1343,7 +1377,7 @@
 				item: { count: 1, id: "create:package_frogport" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.0d
 			y: 14.0d
 		}
 		{
@@ -1355,7 +1389,7 @@
 				item: { count: 1, id: "create:stock_ticker" }
 				type: "item"
 			}]
-			x: -3.5d
+			x: -2.5d
 			y: 14.0d
 		}
 		{
@@ -1508,7 +1542,7 @@
 				item: { count: 1, id: "embers:ember_crystal" }
 				type: "item"
 			}]
-			x: -12.0d
+			x: -11.5d
 			y: 11.5d
 		}
 		{
@@ -1533,7 +1567,7 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
+			x: -11.5d
 			y: 14.0d
 		}
 		{
@@ -1550,7 +1584,7 @@
 				item: { count: 1, id: "embers:ember_activator" }
 				type: "item"
 			}]
-			x: -12.0d
+			x: -11.5d
 			y: 8.5d
 		}
 		{
@@ -1593,7 +1627,7 @@
 				item: { count: 1, id: "simulated:physics_assembler" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.0d
 			y: 10.0d
 		}
 		{
@@ -1604,7 +1638,7 @@
 				item: { count: 1, id: "create:cart_assembler" }
 				type: "item"
 			}]
-			x: -7.0d
+			x: -5.5d
 			y: 10.0d
 		}
 		{
@@ -1615,7 +1649,7 @@
 				item: { count: 1, id: "offroad:rockcutting_wheel" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.0d
 			y: 8.5d
 		}
 		{
@@ -1722,7 +1756,7 @@
 				item: { count: 1, id: "occultism:ritual_satchel_t1" }
 				type: "item"
 			}]
-			x: -12.5d
+			x: -13.5d
 			y: 4.5d
 		}
 		{
@@ -1798,7 +1832,7 @@
 			id: "4CBACE925D480CAA"
 			tasks: [{
 				id: "0F4A3E0EA11A9D08"
-				item: { count: 1, id: "cosmiccore:simple_rebreather" }
+				item: { count: 1, id: "cosmiccore:simple_rebreather_module" }
 				type: "item"
 			}]
 			x: -1.0d
@@ -1813,8 +1847,8 @@
 				item: { count: 1, id: "cosmiccore:soul_gourd" }
 				type: "item"
 			}]
-			x: -14.0d
-			y: 6.0d
+			x: -16.0d
+			y: 3.0d
 		}
 		{
 			cosmiccore_dependency_lines: [{
@@ -1860,7 +1894,7 @@
 				item: { count: 1, id: "occultism:chalk_gold" }
 				type: "item"
 			}]
-			x: -9.5d
+			x: -11.5d
 			y: -0.5d
 		}
 		{
@@ -1888,7 +1922,7 @@
 				item: { count: 1, id: "embers:melter" }
 				type: "item"
 			}]
-			x: -8.214285714285715d
+			x: -9.5d
 			y: 8.0d
 		}
 		{
@@ -1898,37 +1932,43 @@
 				visible: 1b
 			}]
 			dependencies: ["369F4EE8B47CD89F"]
+			icon: {
+				id: "embers:molten_dawnstone_bucket"
+			}
 			id: "0C0E3F2E637DA0A9"
 			shape: "rsquare"
-			tasks: [{
-				id: "7C8E5F3AA02F5C84"
-				item: { count: 1, id: "embers:molten_dawnstone_bucket" }
-				type: "item"
-			}]
-			x: -8.214285714285715d
+			tasks: [
+				{
+					id: "7C8E5F3AA02F5C84"
+					item: { count: 1, id: "embers:molten_dawnstone_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2DB0B154398B330A"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
+			x: -9.5d
 			y: 6.5d
 		}
 		{
-			dependencies: ["38473AAE9EFA91C7"]
-			hide_dependency_lines: true
-			id: "3D5622E2480AE73A"
-			tasks: [{
-				id: "6AD53BF46CEAE862"
-				item: { count: 1, id: "embers:melter" }
-				type: "item"
-			}]
-			x: -12.5d
-			y: 6.0d
-		}
-		{
-			cosmiccore_dependency_lines: [{
-				dependency: 6080379464805563298L
-				visible: 0b
-			}]
+			cosmiccore_dependency_lines: [
+				{
+					dependency: 3935951360712562847L
+					target_link: 4854186652566391948L
+					visible: 1b
+				}
+				{
+					dependency: 6080379464805563298L
+					visible: 0b
+				}
+			]
 			dependencies: [
-				"3D5622E2480AE73A"
 				"1FD7F7A22E29CFF5"
 				"5461D8E87350BBA2"
+				"369F4EE8B47CD89F"
 			]
 			id: "0FDE4203D468D05F"
 			tasks: [{
@@ -1936,8 +1976,8 @@
 				item: { count: 1, id: "gtceu:soulresin_ingot" }
 				type: "item"
 			}]
-			x: -14.0d
-			y: 4.5d
+			x: -15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2AA6F78DB2ED60F2"]
@@ -1951,7 +1991,7 @@
 				id: "5D17A4FBB6383596"
 				type: "checkmark"
 			}]
-			x: -3.5d
+			x: -2.5d
 			y: 13.0d
 		}
 		{

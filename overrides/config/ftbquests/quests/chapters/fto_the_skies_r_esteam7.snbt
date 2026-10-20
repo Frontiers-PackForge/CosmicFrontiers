@@ -153,23 +153,45 @@
 		}
 		{
 			dependencies: ["5E1DF9CD2C9197EB"]
+			icon: {
+				id: "gtceu:sodium_dichromate_solution_bucket"
+			}
 			id: "1BC8E85866579CF2"
-			tasks: [{
-				id: "36CD7A9DA7BB44CA"
-				item: { count: 1, id: "gtceu:sodium_dichromate_solution_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "36CD7A9DA7BB44CA"
+					item: { count: 1, id: "gtceu:sodium_dichromate_solution_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1BA2B9FA942054A0"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 2.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["05D76DF50301384D"]
+			icon: {
+				id: "gtceu:sodium_chromate_solution_bucket"
+			}
 			id: "5E1DF9CD2C9197EB"
-			tasks: [{
-				id: "78A9AC4B4140E7AE"
-				item: { count: 1, id: "gtceu:sodium_chromate_solution_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "78A9AC4B4140E7AE"
+					item: { count: 1, id: "gtceu:sodium_chromate_solution_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3851D20AF0EBA4EB"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 2.5d
 			y: -4.5d
 		}
@@ -226,7 +248,7 @@
 			id: "31C1E94CBC397D98"
 			tasks: [{
 				id: "06FC6B942D0F818A"
-				item: { count: 1, id: "cosmiccore:mv_spooling_machine" }
+				item: { count: 1, id: "gtceu:mv_spooler" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -657,23 +679,45 @@
 		}
 		{
 			dependencies: ["4B6C5108309A0926"]
+			icon: {
+				id: "cosmiccore:biomana_slurry_bucket"
+			}
 			id: "092C81D9C5064065"
-			tasks: [{
-				id: "2920275248807910"
-				item: { count: 1, id: "cosmiccore:biomana_slurry_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2920275248807910"
+					item: { count: 1, id: "cosmiccore:biomana_slurry_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3294E5BBE89D75F4"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 7.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["092C81D9C5064065"]
+			icon: {
+				id: "gtceu:potent_mana_bucket"
+			}
 			id: "142A4F7E8D1A72B3"
-			tasks: [{
-				id: "52C550493F0C0C5F"
-				item: { count: 1, id: "gtceu:potent_mana_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "52C550493F0C0C5F"
+					item: { count: 1, id: "gtceu:potent_mana_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "722ACB07BC49DB67"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 7.5d
 			y: -3.0d
 		}
@@ -687,23 +731,45 @@
 				"142A4F7E8D1A72B3"
 				"4994B932F264D4E2"
 			]
+			icon: {
+				id: "gtceu:source_oils_bucket"
+			}
 			id: "67637F7973709974"
-			tasks: [{
-				id: "25BDEA96B26B3732"
-				item: { count: 1, id: "gtceu:source_oils_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "25BDEA96B26B3732"
+					item: { count: 1, id: "gtceu:source_oils_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "522672FFDC254398"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 17.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["67637F7973709974"]
+			icon: {
+				id: "gtceu:source_enhanced_bio_fuel_bucket"
+			}
 			id: "69800C44051C3AA9"
-			tasks: [{
-				id: "32C2860C657EA4FD"
-				item: { count: 1, id: "gtceu:source_enhanced_bio_fuel_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "32C2860C657EA4FD"
+					item: { count: 1, id: "gtceu:source_enhanced_bio_fuel_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2F54DF3A410B7FC6"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 19.0d
 			y: -3.0d
 		}
@@ -875,13 +941,19 @@
 			min_width: 450
 			tasks: [
 				{
-					id: "10E2F29E1BD27223"
-					item: { count: 1, id: "ae2:fluix_smart_cable" }
+					icon: {
+						id: "ae2:blue_smart_cable"
+					}
+					id: "4FD397E447E2AB0D"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(ae2:smart_cable)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 				{
-					id: "1D1E8B2FB53706E3"
-					item: { count: 1, id: "ae2:fluix_smart_dense_cable" }
+					icon: {
+						id: "ae2:blue_smart_dense_cable"
+					}
+					id: "564BA802F56F8773"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(ae2:smart_dense_cable)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 			]
@@ -1062,64 +1134,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["7BD151701A8DF088"]
-			hide_dependency_lines: true
-			id: "22795EC1D5481B46"
-			tasks: [{
-				id: "72CE4C818A1E6ABE"
-				item: { count: 1, id: "gtceu:mv_extruder" }
-				type: "item"
-			}]
-			x: -5.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["22795EC1D5481B46"]
-			icon: {
-				id: "gtceu:rhodium_gear"
-			}
-			id: "2324271DEDC92B2E"
-			tasks: [{
-				id: "7FF7D9ED2B40A7D4"
-				type: "checkmark"
-			}]
-			x: -6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2324271DEDC92B2E"]
-			id: "4AA28888D878E4FB"
-			tasks: [{
-				id: "0E0AAD12F9948349"
-				item: { count: 1, id: "gtceu:rod_extruder_mold" }
-				type: "item"
-			}]
-			x: -7.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2324271DEDC92B2E"]
-			id: "6162C24A2971586E"
-			tasks: [{
-				id: "079F994B1C9DE7DF"
-				item: { count: 1, id: "gtceu:small_gear_extruder_mold" }
-				type: "item"
-			}]
-			x: -6.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["2324271DEDC92B2E"]
-			id: "107EFDACA94E2262"
-			tasks: [{
-				id: "5E8BBBA5547065BB"
-				item: { count: 1, id: "gtceu:rotor_extruder_mold" }
-				type: "item"
-			}]
-			x: -7.0d
-			y: 1.0d
-		}
-		{
 			cosmiccore_dependency_lines: [{
 				dependency: 7603466288870871269L
 				target_link: 1998012850706150629L
@@ -1276,12 +1290,23 @@
 				visible: 0b
 			}]
 			dependencies: ["7BD151701A8DF088"]
+			icon: {
+				id: "gtceu:soulresin_bucket"
+			}
 			id: "0E3CB3E90521CD0C"
-			tasks: [{
-				id: "6B18C30249416FB3"
-				item: { count: 1, id: "gtceu:soulresin_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6B18C30249416FB3"
+					item: { count: 1, id: "gtceu:soulresin_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "710CD98B569064F0"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 18.5d
 			y: 9.0d
 		}
@@ -1291,25 +1316,25 @@
 				visible: 0b
 			}]
 			dependencies: ["7BD151701A8DF088"]
+			icon: {
+				id: "gtceu:cinderwax_bucket"
+			}
 			id: "5BB48F9198C041EF"
-			tasks: [{
-				id: "53902100908426C5"
-				item: { count: 1, id: "gtceu:cinderwax_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "53902100908426C5"
+					item: { count: 1, id: "gtceu:cinderwax_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "616B0CC685B37B11"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 17.0d
 			y: 8.5d
-		}
-		{
-			dependencies: ["22795EC1D5481B46"]
-			id: "445B0C4038F4F304"
-			tasks: [{
-				id: "1C8DC9A2D758A342"
-				item: { count: 1, id: "gtceu:storage_cover" }
-				type: "item"
-			}]
-			x: -5.0d
-			y: 2.5d
 		}
 		{
 			dependencies: ["286F950918F4817C"]
@@ -1358,7 +1383,7 @@
 			id: "11A80F269275F15D"
 			tasks: [{
 				id: "686A1BBC60794099"
-				item: { count: 1, id: "cosmiccore:stealth_coating_2" }
+				item: { count: 1, id: "cosmiccore:stealth_module_2" }
 				type: "item"
 			}]
 			x: -5.0d
@@ -1413,23 +1438,45 @@
 				visible: 1b
 			}]
 			dependencies: ["43C63859BA47960F"]
+			icon: {
+				id: "gtceu:alkaline_nyctophyte_extract_bucket"
+			}
 			id: "2FC9C8F260048894"
-			tasks: [{
-				id: "0E7C07536303D897"
-				item: { count: 1, id: "gtceu:alkaline_nyctophyte_extract_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0E7C07536303D897"
+					item: { count: 1, id: "gtceu:alkaline_nyctophyte_extract_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "50B9B726584E65C1"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 21.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["2FC9C8F260048894"]
+			icon: {
+				id: "gtceu:nyctophytic_chelant_bucket"
+			}
 			id: "04FAD1DACBEC819C"
-			tasks: [{
-				id: "3A55580025EE23E2"
-				item: { count: 1, id: "gtceu:nyctophytic_chelant_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3A55580025EE23E2"
+					item: { count: 1, id: "gtceu:nyctophytic_chelant_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "23FE2830C40D87DA"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 20.0d
 			y: -3.0d
 		}
@@ -1541,6 +1588,8 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["7BD151701A8DF088"]
+			hide_dependency_lines: true
 			id: "5FC9534817A442EA"
 			tasks: [{
 				id: "6EEA13EFD352D4AB"
@@ -1619,6 +1668,8 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["7BD151701A8DF088"]
+			hide_dependency_lines: true
 			id: "2224F1AEBCC59835"
 			tasks: [{
 				id: "222DDAB285CD43AA"
@@ -1674,12 +1725,23 @@
 			]
 			dependency_requirement: "one_completed"
 			hide_lock_icon: true
+			icon: {
+				id: "neovitae:essentia_vitae_bucket"
+			}
 			id: "2A5492144B12CDF5"
-			tasks: [{
-				id: "05AA9E41B871F4CF"
-				item: { count: 1, id: "neovitae:essentia_vitae_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "05AA9E41B871F4CF"
+					item: { count: 1, id: "neovitae:essentia_vitae_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "184EE31FC6B40717"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			x: 12.0d
 			y: 1.5d
 		}

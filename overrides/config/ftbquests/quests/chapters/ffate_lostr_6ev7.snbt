@@ -4,11 +4,15 @@
 	default_quest_shape: ""
 	filename: "ffate_lostr_6ev7"
 	group: "09ADD253FB82D7A0"
+	icon: {
+		id: "neovitae:enhanced_teleposer_focus"
+	}
 	id: "2BFE3D121C4938C6"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["7C2F955386C9378D"]
 			id: "4640766C36B5DCE4"
 			size: 2.0d
 			tasks: [{

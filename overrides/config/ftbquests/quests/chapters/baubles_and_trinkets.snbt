@@ -1,0 +1,298 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "baubles_and_trinkets"
+	group: "1654AF685B58AF60"
+	id: "27EE1201299A812F"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3640333A3E21701A"]
+			id: "2EA3989614A583CE"
+			tasks: [{
+				id: "296596A42A7D39FF"
+				item: { count: 1, id: "gtceu:lv_machine_hull" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2EA3989614A583CE"]
+			id: "39B07B1E4F3ACE14"
+			tasks: [{
+				id: "6F2A95BA46F7A840"
+				item: { count: 1, id: "gtceu:mv_machine_hull" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39B07B1E4F3ACE14"]
+			id: "14A35C46125BDAE4"
+			tasks: [{
+				id: "704D50EBFA632B60"
+				item: { count: 1, id: "gtceu:hv_machine_hull" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["14A35C46125BDAE4"]
+			id: "56E35EFC2D38112E"
+			tasks: [{
+				id: "1811A86FCBD5AE08"
+				item: { count: 1, id: "gtceu:ev_machine_hull" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "gtceu:bronze_brick_casing"
+			}
+			id: "3640333A3E21701A"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3640333A3E21701A"]
+			id: "715C3E258CBEB490"
+			tasks: [{
+				id: "7D3229DA178A4A41"
+				item: { count: 1, id: "cosmiccore:palms_of_the_globestrider" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3640333A3E21701A"]
+			id: "052CFC7F5FF6EEE9"
+			tasks: [{
+				id: "3E89DDDC31799A73"
+				item: { count: 1, id: "cosmiccore:steel_travelers_boots" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3640333A3E21701A"]
+			id: "5A8E4E236615568B"
+			tasks: [{
+				id: "0B98F9653549BC99"
+				item: { count: 1, id: "ars_nouveau:void_jar" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3640333A3E21701A"]
+			id: "4C718CC5E9FC9400"
+			tasks: [{
+				id: "08CB376DC49548A7"
+				item: { count: 1, id: "hooked:wood_hook" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4C718CC5E9FC9400"]
+			id: "66AC7270DFF71320"
+			tasks: [{
+				id: "4F7CDAD4B030803A"
+				item: { count: 1, id: "hooked:iron_hook" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["66AC7270DFF71320"]
+			id: "31A2753178851D96"
+			tasks: [{
+				id: "5A305063C839C9B1"
+				item: { count: 1, id: "hooked:diamond_hook" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2EA3989614A583CE"]
+			id: "0460663F2DAB8071"
+			tasks: [{
+				id: "2E5A1F8E18DBC7DF"
+				item: { count: 1, id: "cosmiccore:stealth_module_1" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["39B07B1E4F3ACE14"]
+			id: "5634B474743DD86D"
+			tasks: [{
+				id: "496FAF2C28E5D3A5"
+				item: { count: 1, id: "cosmiccore:stealth_module_2" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3640333A3E21701A"]
+			id: "3BABFFD412C16938"
+			tasks: [{
+				icon: {
+					id: "legendarysurvivaloverhaul:thermal_coat_3"
+				}
+				id: "7D5B24F2FE0AB79A"
+				item: { components: { "ftbfiltersystem:filter": "or(item(legendarysurvivaloverhaul:thermal_coat_1)item(legendarysurvivaloverhaul:thermal_coat_2)item(legendarysurvivaloverhaul:thermal_coat_3)item(legendarysurvivaloverhaul:heating_coat_1)item(legendarysurvivaloverhaul:heating_coat_2)item(legendarysurvivaloverhaul:heating_coat_3)item(legendarysurvivaloverhaul:cooling_coat_1)item(legendarysurvivaloverhaul:cooling_coat_2)item(legendarysurvivaloverhaul:cooling_coat_3))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["052CFC7F5FF6EEE9"]
+			id: "3FEBD76FDC06E6AC"
+			tasks: [{
+				id: "1C1E13C68D204CF7"
+				item: { count: 1, id: "cosmiccore:netherite_travelers_boots" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"2EA3989614A583CE"
+				"3FEBD76FDC06E6AC"
+			]
+			id: "613D6A4F82BD58AB"
+			tasks: [{
+				id: "0396F584095C702F"
+				item: { count: 1, id: "cosmiccore:shadebloom_travelers_boots" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["39B07B1E4F3ACE14"]
+			id: "5E43547DDF3ABBE0"
+			tasks: [{
+				id: "080A63955DDDC156"
+				item: { count: 1, id: "ars_nouveau:novice_spell_book" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E43547DDF3ABBE0"]
+			id: "373BAD549DA306BB"
+			tasks: [{
+				id: "3296C65B6A9D36C1"
+				item: { count: 1, id: "ars_nouveau:apprentice_spell_book" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["373BAD549DA306BB"]
+			id: "0282B1772E8EBEBE"
+			tasks: [{
+				id: "756FE15935BF1069"
+				item: { count: 1, id: "ars_nouveau:archmage_spell_book" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2EA3989614A583CE"]
+			id: "00A347D11CF2C268"
+			tasks: [{
+				id: "317DF66DA9C1DB1E"
+				item: { count: 1, id: "gtceu:machine_memory_card" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2EA3989614A583CE"]
+			id: "099BF99A3F6D253B"
+			tasks: [{
+				id: "33592B888CB9337A"
+				item: { count: 1, id: "occultism:satchel" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2EA3989614A583CE"]
+			id: "3FBD4AB9B4828A79"
+			tasks: [{
+				id: "5D5857DE084FAD5D"
+				item: { components: { "gtceu:energy_content": { charge: 0L, discharge_mode: 0b, infinite: 0b, max_charge: 100000L } }, count: 1, id: "gtceu:lv_item_magnet" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			cosmiccore_dependency_lines: [{
+				dependency: 4592909356445633145L
+				visible: 0b
+			}]
+			dependencies: [
+				"3FBD4AB9B4828A79"
+				"14A35C46125BDAE4"
+			]
+			id: "0CEC20703247FB89"
+			tasks: [{
+				id: "0441D4D81A98961A"
+				item: { components: { "gtceu:energy_content": { charge: 0L, discharge_mode: 0b, infinite: 0b, max_charge: 1600000L } }, count: 1, id: "gtceu:hv_item_magnet" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["31A2753178851D96"]
+			id: "2953C8BD173BCD0E"
+			tasks: [{
+				id: "6449DB846B9D84E2"
+				item: { count: 1, id: "hooked:redstone_hook" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["14A35C46125BDAE4"]
+			icon_scale: 1.25d
+			id: "3099662548BA3F01"
+			shape: "hexagon"
+			tasks: [{
+				id: "5C91889B38DFD0CB"
+				item: { count: 1, id: "cosmiccore:leyline_orrery" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+	]
+}
