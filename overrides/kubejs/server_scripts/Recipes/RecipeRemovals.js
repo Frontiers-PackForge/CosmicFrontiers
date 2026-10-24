@@ -168,6 +168,16 @@ yeet('gtceu:auto_maintenance_hatch')
 
 
 ServerEvents.recipes(event => {
+    event.remove({ type: 'neovitae:meteor' })
+    const unreplacedComponentTiers = ['ev', 'iv', 'luv', 'zpm', 'uv', 'uhv']
+    const unreplacedComponentTypes = ['electric_motor', 'electric_pump', 'fluid_regulator', 'conveyor_module', 'electric_piston', 'robot_arm', 'field_generator', 'emitter', 'sensor']
+    unreplacedComponentTiers.forEach(tier => {
+        unreplacedComponentTypes.forEach(component => event.remove({ output: `gtceu:${tier}_${component}` }))
+    })
+    event.remove({ output: 'gtceu:uv_voltage_coil' })
+    const unreplacedMachineCasingTiers = ['iv', 'luv', 'zpm', 'uv', 'uhv']
+    unreplacedMachineCasingTiers.forEach(tier => event.remove({ output: `gtceu:${tier}_machine_casing` }))
+
     event.remove({ type: 'extendedae:crystal_assembler' })
     event.remove({ type: 'extendedae:crystal_fixer' })
     event.remove({ type: 'extendedae:circuit_cutter' })

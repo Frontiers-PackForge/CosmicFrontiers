@@ -261,5 +261,5 @@ StartupEvents.registry('gtceu:material', event => {
 })
 
 StartupEvents.postInit(event => {
-    GTMaterials.Agar.setFormula('C₁₄H₂₄O₉', true)
+    GTMaterials.Agar.value().setFormula('C₁₄H₂₄O₉', true)
 })

@@ -484,4 +484,38 @@ ServerEvents.recipes(event => {
     event.shapeless('ae2:crafting_monitor', ['ae2:crafting_unit', 'ae2:semi_dark_monitor'])
         .id('frontiers:ae2/crafting/crafting_monitor')
 
+    event.recipes.gtceu.welder('frontiers:me_stockpile_topper')
+        .itemInputs('gtceu:me_stocking_input_bus', 'extendedae:threshold_level_emitter', 'gtceu:me_stocking_input_hatch')
+        .itemOutputs('nebulaeae2:me_stockpile_topper')
+        .EUt(GTValues.VA[GTValues.HV], 1)
+        .duration(840)
+
+    const filteredBusRecipes = [
+        'tag_storage_bus',
+        'mod_storage_bus',
+        'precise_storage_bus',
+        'tag_export_bus',
+        'mod_export_bus',
+        'precise_export_bus',
+        'threshold_export_bus'
+    ]
+    filteredBusRecipes.forEach(bus => event.remove({ id: `extendedae:${bus}` }))
+
+    event.shapeless('extendedae:tag_storage_bus', ['ae2:storage_bus', 'gtceu:item_tag_filter'])
+        .id('frontiers:ae2/buses/tag_storage_bus')
+    event.shapeless('extendedae:mod_storage_bus', ['ae2:storage_bus', 'gtceu:item_tag_filter', 'create:attribute_filter'])
+        .id('frontiers:ae2/buses/mod_storage_bus')
+    event.shapeless('extendedae:precise_storage_bus', ['ae2:storage_bus', 'gtceu:smart_item_filter'])
+        .id('frontiers:ae2/buses/precise_storage_bus')
+
+    event.shapeless('extendedae:tag_export_bus', ['ae2:export_bus', 'gtceu:item_tag_filter'])
+        .id('frontiers:ae2/buses/tag_export_bus')
+    event.shapeless('extendedae:mod_export_bus', ['ae2:export_bus', 'gtceu:item_tag_filter', 'create:attribute_filter'])
+        .id('frontiers:ae2/buses/mod_export_bus')
+    event.shapeless('extendedae:precise_export_bus', ['ae2:export_bus', 'gtceu:smart_item_filter'])
+        .id('frontiers:ae2/buses/precise_export_bus')
+    event.shapeless('extendedae:threshold_export_bus', ['ae2:export_bus', 'extendedae:threshold_level_emitter'])
+        .id('frontiers:ae2/buses/threshold_export_bus')
+    event.shapeless('extendedae:threshold_level_emitter', ['ae2:level_emitter', 'gtceu:soc']).id('frontiers:ae2/buses/threshold_level_emitter')
+
 })

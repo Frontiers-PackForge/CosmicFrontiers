@@ -1,7 +1,7 @@
 StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:roasted_cooperite')
         .dust()
-        .element(GTElements.get('roasted_cooperite'))
+        .element('kubejs:roasted_cooperite')
         .color(0x99a37a).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -9,7 +9,7 @@ StartupEvents.registry('gtceu:material', event => {
         )
     event.create('gtceu:nickel_depleted_cooperite')
         .dust()
-        .element(GTElements.get('nickel_depleted_cooperite'))
+        .element('kubejs:nickel_depleted_cooperite')
         .color(0x988B88).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -17,7 +17,7 @@ StartupEvents.registry('gtceu:material', event => {
         )
     event.create('gtceu:nickel_carbonyl')
         .liquid()
-        .element(GTElements.get('nickel_carbonyl'))
+        .element('kubejs:nickel_carbonyl')
         .color(0x666A72).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -25,7 +25,7 @@ StartupEvents.registry('gtceu:material', event => {
         )
     event.create('gtceu:cooperite_solution')
         .liquid()
-        .element(GTElements.get('cooperite_solution'))
+        .element('kubejs:cooperite_solution')
         .color(0xe9ffa7).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -33,7 +33,7 @@ StartupEvents.registry('gtceu:material', event => {
         )
     event.create('gtceu:plat_depleted_cooperite_solution')
         .liquid()
-        .element(GTElements.get('plat_depleted_cooperite_solution'))
+        .element('kubejs:plat_depleted_cooperite_solution')
         .color(0x766D6B).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -41,7 +41,7 @@ StartupEvents.registry('gtceu:material', event => {
         )
     event.create('gtceu:ammonium_hexachloroplatinate')
         .dust()
-        .element(GTElements.get('ammonium_hexachloroplatinate'))
+        .element('kubejs:ammonium_hexachloroplatinate')
         .color(0xCDC8A6).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -50,7 +50,7 @@ StartupEvents.registry('gtceu:material', event => {
         .formula('(NH4)2PtCl6')
     event.create('gtceu:ammonium_hexachloropalladate')
         .dust()
-        .element(GTElements.get('ammonium_hexachloropalladate'))
+        .element('kubejs:ammonium_hexachloropalladate')
         .color(0x8E9190).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -59,7 +59,7 @@ StartupEvents.registry('gtceu:material', event => {
         .formula('(NH4)2PdCl6')
     event.create('gtceu:tetraammine_palladium_chloride')
         .dust()
-        .element(GTElements.get('tetraammine_palladium_chloride'))
+        .element('kubejs:tetraammine_palladium_chloride')
         .color(0x81948d).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -68,7 +68,7 @@ StartupEvents.registry('gtceu:material', event => {
         .formula('Pd(NH3)4Cl2')
     event.create('gtceu:diamine_dichloropalladium')
         .dust()
-        .element(GTElements.get('diamine_dichloropalladium'))
+        .element('kubejs:diamine_dichloropalladium')
         .color(0x81948d).iconSet(GTMaterialIconSet.DULL)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,
@@ -77,7 +77,7 @@ StartupEvents.registry('gtceu:material', event => {
         .formula('Pd(NH3)2Cl2')
     event.create('gtceu:insoluble_plat_group_residue')
         .dust()
-        .element(GTElements.get('insoluble_plat_group_residue'))
+        .element('kubejs:insoluble_plat_group_residue')
         .color(0x634a2d).iconSet(GTMaterialIconSet.SHINY)
         .flags(
             GTMaterialFlags.DISABLE_DECOMPOSITION,

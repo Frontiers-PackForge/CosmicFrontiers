@@ -25,7 +25,6 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:terrasteel')
         .color(0x78ff62).secondaryColor(0x0e8f31)
         .ingot()
-        .element(GTElements.get('terrasteel'))
         .iconSet('magic')
         .cableProperties(GTValues.V[GTValues.MV], 8, 1, false)
         .flags(
@@ -43,7 +42,7 @@ StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:manasteel')
         .liquid()
         .color(0x6fb6ff).secondaryColor(0x1e1fff)
-        .element(GTElements.get('manasteel'))
+        .element('kubejs:manasteel')
         .cableProperties(GTValues.V[GTValues.LV], 8, 0, false)
         .iconSet('magic')
         .flags(
@@ -59,7 +58,7 @@ StartupEvents.registry('gtceu:material', event => {
         .liquid()
         .color(0xafeffd).secondaryColor(0x0842ea)
         .components('1x gtceu:manasteel')
-        .element(GTElements.get('manasteel'))
+        .element('kubejs:manasteel')
         .cableProperties(GTValues.V[GTValues.MV], 2, 3, false)
         .iconSet('magic')
         .flags(

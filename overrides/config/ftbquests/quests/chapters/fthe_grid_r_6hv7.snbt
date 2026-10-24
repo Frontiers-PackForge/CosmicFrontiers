@@ -1751,24 +1751,35 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["5F068ED6DCE61809"]
+			cosmiccore_dependency_lines: [{
+				dependency: 2025455556387430351L
+				visible: 0b
+			}]
+			dependencies: ["1C1BDD18E2D05FCF"]
 			id: "31F17F4736AEEAA6"
 			shape: "hexagon"
 			size: 2.0d
-			tasks: [{
-				id: "625C19BFE01F2124"
-				item: { count: 1, id: "cosmiccore:hephaestus_cauldron" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "625C19BFE01F2124"
+					item: { count: 1, id: "cosmiccore:hephaestus_cauldron" }
+					type: "item"
+				}
+				{
+					id: "05EE3EED49198DE1"
+					item: { count: 1, id: "cosmiccore:alloy_blasting_kiln" }
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: -7.5d
 		}
 		{
 			dependencies: [
-				"14B068EF3C3192DB"
 				"66EAF78E0061AE13"
 				"0E46D7EB999D3897"
 				"7A0405D8C766C3C2"
+				"31F17F4736AEEAA6"
 			]
 			id: "5F068ED6DCE61809"
 			tasks: [{
@@ -1776,7 +1787,7 @@
 				item: { count: 1, id: "cosmiccore:pale_steel_ingot" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: -5.5d
 		}
 		{
@@ -1787,7 +1798,7 @@
 				item: { count: 1, id: "cosmiccore:primordial_remnant" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.0d
 			y: -4.0d
 		}
 		{
@@ -1810,6 +1821,7 @@
 				"31F17F4736AEEAA6"
 				"7A0405D8C766C3C2"
 				"16207443D5974CEA"
+				"5F068ED6DCE61809"
 			]
 			id: "3A2E4C6564F8342C"
 			shape: "hexagon"
@@ -2092,7 +2104,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4BB082AACAC70423"]

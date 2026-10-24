@@ -321,7 +321,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV], 4)
         .duration(850)
 
-    event.shaped('cosmiccore:alloy_blasting_kiln', ['ABA', 'BCB', 'DDD'], { A: '#gtceu:circuits/ev', B: 'cosmiccore:double_pale_steel_plate', C: 'gtceu:primitive_blast_furnace', D: 'cosmiccore:refractory_structural_casing' })
+    event.shaped('cosmiccore:alloy_blasting_kiln', ['ABA', 'BCB', 'DDD'], { A: '#gtceu:circuits/ev', B: 'gtceu:double_titanium_plate', C: 'gtceu:primitive_blast_furnace', D: 'cosmiccore:refractory_structural_casing' })
     event.shaped('cosmiccore:conversion_complex', ['ABA', 'CDE', 'FGF'], { A: '#gtceu:circuits/ev', B: 'gtceu:hv_electric_piston', C: 'gtceu:hv_robot_arm', D: 'cosmiccore:lightweight_stainless_steel_casing', E: 'gtceu:hv_fluid_regulator', F: 'gtceu:kanthal_single_cable', G: 'cosmiccore:refractory_structural_casing' })
     event.shaped('cosmiccore:fractional_condenser', ['ABA', 'BCB', 'DDD'], { A: 'gtceu:micro_processor_assembly', B: 'cosmiccore:lightweight_stainless_steel_casing', C: 'gtceu:hv_fluid_regulator', D: 'cosmiccore:refractory_structural_casing' })
     event.shaped('cosmiccore:steam_cracking_furnace', ['ABA', 'ACA', 'DDD'], { A: 'gtceu:cupronickel_coil_block', B: '#gtceu:circuits/ev', C: 'cosmiccore:lightweight_stainless_steel_casing', D: 'cosmiccore:refractory_structural_casing' })
@@ -329,7 +329,7 @@ ServerEvents.recipes(event => {
     event.shaped('cosmiccore:phase_separator', ['ABA', 'BCB', 'BDB'], { A: 'cosmiccore:lightweight_stainless_steel_casing', B: 'cosmiccore:refractory_structural_casing', C: 'gtceu:hsla_steel_frame', D: '#gtceu:circuits/hv' })
 
 
-    event.shaped('cosmiccore:hephaestus_cauldron', ['ABA', 'ACA', 'DDD'], { A: 'cosmiccore:double_pale_steel_plate', B: '#gtceu:circuits/ev', C: 'cosmiccore:alloy_blasting_kiln', D: 'gtceu:high_temperature_smelting_casing' })
+    event.shaped('cosmiccore:hephaestus_cauldron', ['ABA', 'ACA', 'DDD'], { A: 'gtceu:double_titanium_plate', B: '#gtceu:circuits/ev', C: 'cosmiccore:alloy_blasting_kiln', D: 'gtceu:high_temperature_smelting_casing' })
     event.shapeless('cosmiccore:crafting_parallel_core', ['ae2:crafting_unit', '#gtceu:circuits/hv'])
     event.shapeless('cosmiccore:crafting_acceleration_core', ['ae2:crafting_unit', '#gtceu:circuits/hv'])
     event.shaped('cosmiccore:firmament_permit', ['ABA', 'BCB', 'ABA'], { A: 'gtceu:mv_sensor', B: '#gtceu:circuits/hv', C: 'cosmiccore:nether_permit' })
@@ -470,4 +470,9 @@ ServerEvents.recipes(event => {
         .itemOutputs('6x nebulaeae2:pattern_p2p_tunnel')
         .EUt(GTValues.VA[GTValues.HV], 2)
         .duration(200)
+    event.recipes.gtceu.assembler('frontiers:heat_fan')
+        .itemInputs('gtceu:stainless_steel_frame', '6x gtceu:dark_steel_plate', 'gtceu:turbine_rotor')
+        .itemOutputs('cosmiccore:heat_fan')
+        .EUt(GTValues.VA[GTValues.MV], 2)
+        .duration(250)
 })

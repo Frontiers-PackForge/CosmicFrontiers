@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
         .outputFluids('1000x gtceu:salt_water')
         .EUt(GTValues.VA[GTValues.LV], 4)
         .duration(100)
-    event.shaped('cosmiccore:modular_power_station', ['ABA', 'CDE', 'AFA'], { A: 'cosmiccore:lv_cladding', B: 'gtceu:lv_combustion', C: 'gtceu:lv_steam_turbine', D: 'cosmiccore:lv_modular_frameworks', E: 'gtceu:lv_gas_turbine', F: 'cosmiccore:lightweight_dark_steel_casing' })
+    event.shaped('cosmiccore:modular_power_station', ['ABA', 'CDC', 'AFA'], { A: 'cosmiccore:lv_cladding', B: 'gtceu:lv_machine_hull', C: '#gtceu:circuits/lv', D: 'cosmiccore:lv_modular_frameworks', F: 'cosmiccore:lightweight_dark_steel_casing' })
     event.shaped('cosmiccore:industrial_converter_shell', ['AAA', 'BBB', 'AAA'], { A: 'cosmiccore:lv_cladding', B: 'gtceu:long_wrought_iron_rod' })
 
     event.shaped('cosmiccore:bloomwyrm_heart', ['ABA', 'BCB', 'DED'], { A: 'gtceu:double_chrysanthium_plate', B: '#gtceu:circuits/mv', C: 'gtceu:steel_drum', D: 'cosmiccore:somarust_casing', E: 'gtceu:chrysanthium_frame' })

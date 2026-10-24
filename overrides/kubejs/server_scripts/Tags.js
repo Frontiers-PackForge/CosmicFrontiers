@@ -1,8 +1,9 @@
 ServerEvents.tags('item', event => {
-    event.add('frontiers:ordinary_coke_oven_logs', '#minecraft:logs_that_burn')
-    event.remove('frontiers:ordinary_coke_oven_logs', '#malum:soulwood_logs')
-    event.remove('frontiers:ordinary_coke_oven_logs', '#malum:runewood_logs')
-    event.remove('frontiers:ordinary_coke_oven_logs', 'occultism:otherworld_log')
+    event.removeAll('frontiers:ordinary_coke_oven_logs')
+    event.add('frontiers:ordinary_coke_oven_logs', event.get('minecraft:logs_that_burn').getObjectIds())
+    event.remove('frontiers:ordinary_coke_oven_logs', event.get('malum:soulwood_logs').getObjectIds())
+    event.remove('frontiers:ordinary_coke_oven_logs', event.get('malum:runewood_logs').getObjectIds())
+    event.remove('frontiers:ordinary_coke_oven_logs', event.get('occultism:otherworld_logs').getObjectIds())
 })
 
 ServerEvents.tags('block', event => {

@@ -11,9 +11,9 @@ const $MaterialFlags = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.m
 
 
 
-StartupEvents.registry('gtceu:material', event => {
+GTCEuStartupEvents.materialModification(event => {
     GTMaterials.Carbon.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Carbon.addFlags($MaterialFlags.GENERATE_ROD, $MaterialFlags.GENERATE_LONG_ROD);
+    GTMaterials.Carbon.value().addFlags($MaterialFlags.GENERATE_ROD, $MaterialFlags.GENERATE_LONG_ROD);
     GTMaterials.Scandium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Strontium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Caesium.setProperty(PropertyKey.INGOT, new $IngotProperty());
@@ -28,7 +28,7 @@ StartupEvents.registry('gtceu:material', event => {
     GTMaterials.Technetium.setProperty(PropertyKey.INGOT, new $IngotProperty());
 
     GTMaterials.Rhenium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Rhenium.addFlags(
+    GTMaterials.Rhenium.value().addFlags(
         $MaterialFlags.FORCE_GENERATE_BLOCK,
         $MaterialFlags.GENERATE_BOLT_SCREW,
         $MaterialFlags.GENERATE_FINE_WIRE,
@@ -84,16 +84,16 @@ StartupEvents.registry('gtceu:material', event => {
     GTMaterials.Lawrencium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Holmium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Holmium.setProperty(PropertyKey.BLAST, new $BlastProperty(9500))
-    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_PLATE)
-    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW)
-    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_ROD)
-    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_SPRING)
-    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_SPRING_SMALL)
-    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FOIL)
-    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FRAME)
-    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_GEAR)
-    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_SMALL_GEAR)
+    GTMaterials.Holmium.value().addFlags(GTMaterialFlags.GENERATE_PLATE)
+    GTMaterials.Holmium.value().addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW)
+    GTMaterials.Holmium.value().addFlags(GTMaterialFlags.GENERATE_ROD)
+    GTMaterials.Holmium.value().addFlags(GTMaterialFlags.GENERATE_SPRING)
+    GTMaterials.Holmium.value().addFlags(GTMaterialFlags.GENERATE_SPRING_SMALL)
+    GTMaterials.Holmium.value().addFlags(GTMaterialFlags.GENERATE_FOIL)
+    GTMaterials.Holmium.value().addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    GTMaterials.Holmium.value().addFlags(GTMaterialFlags.GENERATE_FRAME)
+    GTMaterials.Holmium.value().addFlags(GTMaterialFlags.GENERATE_GEAR)
+    GTMaterials.Holmium.value().addFlags(GTMaterialFlags.GENERATE_SMALL_GEAR)
 
 
 
@@ -103,7 +103,7 @@ StartupEvents.registry('gtceu:material', event => {
     GTMaterials.Germanium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Livermorium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Tennessine.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Tennessine.addFlags(
+    GTMaterials.Tennessine.value().addFlags(
         $MaterialFlags.FORCE_GENERATE_BLOCK,
         $MaterialFlags.GENERATE_BOLT_SCREW,
         $MaterialFlags.GENERATE_FINE_WIRE,

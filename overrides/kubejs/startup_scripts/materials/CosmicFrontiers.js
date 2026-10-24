@@ -92,13 +92,13 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.NO_ORE_SMELTING
         )
-        .element(GTElements.get('desh'))
+        .element('kubejs:desh')
         .iconSet('starry')
     event.create('gtceu:virtue_meld')
         .color(0xff8400)
         .ingot()
         .liquid()
-        .element(GTElements.get('virtue'))
+        .element('kubejs:virtue')
         .cableProperties(GTValues.V[GTValues.IV], 4, 2, true)
         .iconSet(GTMaterialIconSet.SHINY)
         .flags(
@@ -270,7 +270,7 @@ StartupEvents.registry('gtceu:material', event => {
         .color(0x4614a3)
         .ingot()
         .liquid()
-        .iconSet('luminite')
+        .iconSet(GTMaterialIconSet.DULL)
         .cableProperties(GTValues.V[GTValues.UV], 12, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -286,7 +286,7 @@ StartupEvents.registry('gtceu:material', event => {
         .ingot()
         .liquid()
         .color(0x5d466b)
-        .element(GTElements.get('rune_steel'))
+        .element('kubejs:runesteel')
         .iconSet('rune_steel')
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -539,18 +539,6 @@ StartupEvents.registry('gtceu:material', event => {
         .gem()
         .color(0xd6d6d6).iconSet(GTMaterialIconSet.EMERALD)
 
-    GTRegistries.MATERIALS.get(GTCEu.id('neptunium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTMaterials.Plutonium239.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTRegistries.MATERIALS.get(GTCEu.id('curium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTRegistries.MATERIALS.get(GTCEu.id('berkelium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTRegistries.MATERIALS.get(GTCEu.id('californium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTRegistries.MATERIALS.get(GTCEu.id('einsteinium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTRegistries.MATERIALS.get(GTCEu.id('fermium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTRegistries.MATERIALS.get(GTCEu.id('mendelevium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTRegistries.MATERIALS.get(GTCEu.id('nobelium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTRegistries.MATERIALS.get(GTCEu.id('lawrencium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTRegistries.MATERIALS.get(GTCEu.id('praseodymium')).addFlags(GTMaterialFlags.GENERATE_ROD)
-
     event.create('gtceu:andesite_alloy')
         .ingot()
         .color(0xa7ad9f).iconSet(GTMaterialIconSet.DULL)
@@ -574,7 +562,6 @@ StartupEvents.registry('gtceu:material', event => {
             GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.DISABLE_DECOMPOSITION
         )
-    GTMaterials.Aluminium.addFlags(GTMaterialFlags.GENERATE_ROTOR)
     event.create('gtceu:trinium_metallic')
         .ore()
         .color(0x7f6c82).iconSet(GTMaterialIconSet.SHINY)
@@ -800,16 +787,29 @@ StartupEvents.registry('gtceu:material', event => {
 })
 
 GTCEuStartupEvents.materialModification(event => {
+    GTRegistries.MATERIALS.get(GTCEu.id('neptunium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    GTRegistries.MATERIALS.get(GTCEu.id('curium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    GTRegistries.MATERIALS.get(GTCEu.id('berkelium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    GTRegistries.MATERIALS.get(GTCEu.id('californium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    GTRegistries.MATERIALS.get(GTCEu.id('einsteinium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    GTRegistries.MATERIALS.get(GTCEu.id('fermium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    GTRegistries.MATERIALS.get(GTCEu.id('mendelevium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    GTRegistries.MATERIALS.get(GTCEu.id('nobelium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    GTRegistries.MATERIALS.get(GTCEu.id('lawrencium')).addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    GTRegistries.MATERIALS.get(GTCEu.id('praseodymium')).addFlags(GTMaterialFlags.GENERATE_ROD)
+    GTMaterials.Plutonium239.value().addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    GTMaterials.Aluminium.value().addFlags(GTMaterialFlags.GENERATE_ROTOR)
     const runedSteel = GTRegistries.MATERIALS.get(GTCEu.id('runed_steel'))
     const magneticRunedSteel = GTRegistries.MATERIALS.get(GTCEu.id('magnetic_runed_steel'))
     const magneticRunedSteelIngot = magneticRunedSteel.getProperty(PropertyKey.INGOT)
 
     GTRegistries.MATERIALS.get(GTCEu.id('sterling_silver')).addFlags(GTMaterialFlags.GENERATE_FOIL)
 
-    runedSteel.getProperty(PropertyKey.INGOT).setMagneticMaterial(magneticRunedSteel)
-    magneticRunedSteelIngot.setSmeltingInto(runedSteel)
-    magneticRunedSteelIngot.setArcSmeltingInto(runedSteel)
-    magneticRunedSteelIngot.setMacerateInto(runedSteel)
+    runedSteel.getProperty(PropertyKey.INGOT).setMagneticMaterial(GTRegistries.MATERIALS.wrapAsHolder(magneticRunedSteel))
+    const runedSteelHolder = GTRegistries.MATERIALS.wrapAsHolder(runedSteel)
+    magneticRunedSteelIngot.setSmeltingInto(runedSteelHolder)
+    magneticRunedSteelIngot.setArcSmeltingInto(runedSteelHolder)
+    magneticRunedSteelIngot.setMacerateInto(runedSteelHolder)
 
     TagPrefix.ingot['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTRegistries.MATERIALS.get(GTCEu.id('andesite_alloy')), () => Item.getItem('create:andesite_alloy'))
     TagPrefix.block['setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])'](GTRegistries.MATERIALS.get(GTCEu.id('andesite_alloy')), () => Item.getItem('create:andesite_alloy_block'))

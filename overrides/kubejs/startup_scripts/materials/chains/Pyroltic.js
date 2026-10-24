@@ -1,6 +1,8 @@
-StartupEvents.registry('gtceu:material', event => {
-    GTMaterials.Zincite.addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+GTCEuStartupEvents.materialModification(event => {
+    GTMaterials.Zincite.value().addFlags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+})
 
+StartupEvents.registry('gtceu:material', event => {
     event.create('gtceu:vanadium_pentoxide')
         .dust()
         .formula('V2O5')
