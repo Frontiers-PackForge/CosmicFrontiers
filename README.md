@@ -10,7 +10,15 @@
     <a href="https://github.com/Frontiers-PackForge/CosmicFrontiers/releases"><img src="https://img.shields.io/github/downloads/Frontiers-PackForge/CosmicFrontiers/total?sort=semver&logo=github&label=&style=for-the-badge&color=2d2d2d&labelColor=545454&logoColor=FFFFFF" alt="GitHub"></a>
 </h1>
 
-# Notice : Frontiers is currently in the process of migrating to 1.21.1, this page will be updated when deemed relevant
+# What is Cosmic Frontiers
+
+Cosmic Frontiers is a modpack I started work on back in the winter of 2023. It's been a mostly personal project that a variety of people have helped or contributed to over the years.
+
+Frontiers, for starters, is a story and automation pack at its core. There is some amount of exploration, but I've done my best to make all the exploration feel interesting or engaging with brand new dimension mechanics and behaviors.
+
+Frontiers drastically changes how Gregtech progression plays, all tech tiers are filled with extra content and new machines, many chemistry chains are expanded upon for complex resource production, and there's plenty of fun magitech themed structures as well. Each tier has you engaging we new mods, worlds and mechanics to proceed to the next tier, everything is overhauled so be prepared!
+
+I'll clean up this description as I improve the pack, but just wanted to put something updated here
 
 
 # Credits; 
